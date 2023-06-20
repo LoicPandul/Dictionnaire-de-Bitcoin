@@ -1,5 +1,16 @@
 # Licence publique Creative Commons Attribution - Utilisation non commerciale - Partage dans les mêmes conditions 4.0 International
 
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+[cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
+
 Lorsque Vous exercez les Droits accordés par la licence (définis ci-dessous), Vous acceptez d'être lié par les termes et conditions de la présente Licence publique Creative Commons Attribution - Utilisation non commerciale - Partage dans les mêmes conditions 4.0 International (la « Licence publique »). Dans la mesure où la présente Licence publique peut être interprétée comme un contrat, Vous bénéficiez des Droits accordés par la licence en contrepartie de Votre acceptation des présents termes et conditions, et le Donneur de licence Vous accorde ces droits en contrepartie des avantages que lui procure le fait de mettre à disposition l’Œuvre sous licence en vertu des présents termes et conditions.
 
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
