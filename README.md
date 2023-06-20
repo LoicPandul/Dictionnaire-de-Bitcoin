@@ -7,7 +7,7 @@ Le Dictionnaire de Bitcoin est un projet ouvert. Vous êtes libre de proposer to
 * La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
 * La correction d'une définition qui vous semble éronnée ou imprécise ;
 * La correction d'une faute d'orthographe ou d'une coquille ;
-* 
+* Toute autre suggestion de modification.
 
 Pour qu'un nouveau terme soit accepté dans Le Dictionnaire de Bitcoin, il suffit qu'il soit en rapport avec Bitcoin ou son environnement. Il faut simplement faire preuve de bon sens, et estimer si oui ou non, ce terme peut être utile aux personnes qui étudient ou utilisent Bitcoin et son environnement. 
 
