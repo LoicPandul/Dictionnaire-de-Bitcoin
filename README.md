@@ -4,6 +4,8 @@ Tout le vocabulaire technique de Bitcoin et de son environnement.
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+Copyright (c) 2023 Loïc Morel (Pandul)
+
 Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
 
 This work is licensed under a CC BY-NC-SA 4.0
