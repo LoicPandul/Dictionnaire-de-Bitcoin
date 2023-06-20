@@ -18,7 +18,9 @@ Pour qu'un nouveau terme soit accepté dans Le Dictionnaire de Bitcoin, il suffi
 
 Mon objectif sur ce projet de dictionnaire sera de publier une nouvelle version chaque année. Les modifications ajoutées au document principal ne sont donc pas présentes immédiatement sur le document vendu à l'impression sur Amazon. Toutes les modifications effectuées durant l'année seront ajoutées d'un coup lors de la publication du nouveau tome. Par exemple, si Le Dictionnaire de Bitcoin 2024 est publié en novembre 2023, et que votre proposition de modification est acceptée en février 2024, alors cette dernière ne sera présente sur la version vendue sur Amazon uniquement sur Le Dictionnaire de Bitcoin 2025. Cette nouvelle édition sera publiée l'année suivante, par exemple en novembre 2024.
 
-Par défaut, en remerciement, le nom de contributeur sera ajouté sur la page dédiée sur le livre. Cela inclut, notamment, la future édition physique de chaque livre. Le nom utilisé est celui noté  Par exemple, si vous avez 
+Sur le template de Pull Request, vous avez la possibilité d'indiquer si vous souhaitez que votre nom ou pseudo apparaisse sur le livre. Vous pouvez choisir de publier votre pseudo GitHub, le nomde votre choix, ou bien de refuser la publication de votre nom. Si vous acceptez, le nom choisi apparaitra à la fois sur la version en ligne du livre, et sur la version imprimée et brochée, distribuée sur Amazon.fr. Si vous souhaitez supprimer votre nom magré le consentement au crédit sur la Pull Request, merci d'en faire la demande à info@pandul.fr. Si aucun choix n'est fait sur la Pull Request, par défaut, votre nom n'apparaitra pas sur le livre.
+
+
 
 
 # Licence et réutilisation
