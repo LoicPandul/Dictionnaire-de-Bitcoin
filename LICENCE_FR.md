@@ -1,5 +1,7 @@
 # Licence publique Creative Commons Attribution - Utilisation non commerciale - Partage dans les mêmes conditions 4.0 International
 
+Copyright (c) 2023 Loïc Morel (Pandul)
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
