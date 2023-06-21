@@ -32,6 +32,8 @@ Une adresse est encodée en Bech32 pour les adresses SegWit V0, en Bech32m pour 
 
 D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
+&nbsp;
+
 ### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin.
