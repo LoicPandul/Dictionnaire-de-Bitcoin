@@ -2,9 +2,6 @@
 
 Indiquez un titre concis et descriptif de la pull request.
 
-## Résumé des Changements
-
-Donnez un aperçu des modifications apportées par cette pull request.
 
 ## Type de Changements
 
@@ -16,7 +13,7 @@ Donnez un aperçu des modifications apportées par cette pull request.
 
 ## Consentement au crédit du contributeur
 
-Voulez-vous que votre nom ou votre pseudo apparaisse sur la page des contributeurs, à la fois sur la version en ligne de l'ouvrage, et sur la version papier imprimée et brochée, vendue sur Amazon.fr ?
+Voulez-vous que votre nom ou votre pseudo apparaisse sur la page de remerciement des contributeurs, à la fois sur la version en ligne de l'ouvrage, et sur la version papier imprimée et brochée, vendue sur Amazon.fr ?
 - [ ] Oui, afficher mon nom d'utilisater Github ;
 - [ ] Oui, afficher un autre nom ou pseudo (préciser) ;
 - [ ] Non, ne PAS afficher mon nom ou mon pseudo.

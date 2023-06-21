@@ -1,23 +1,23 @@
-# Le Dictionnaire de Bitcoin
+# *Le Dictionnaire de Bitcoin*
 Tout le vocabulaire technique de Bitcoin et de son environnement.
 
 # Description du projet
 Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. C’est un ouvrage rédigé par Loïc Morel, de Pandul, disponible à la consultation gratuitement en version numérique sur ce GitHub, ou en PDF sur mon site web https://www.pandul.fr/. Ce livre est également vendu imprimé et broché sur Amazon.fr.
 
-Je gagne une petite marge sur chaque livre physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre Le Dictionnaire de Bitcoin afin de me soutenir.
+Je gagne une petite marge sur chaque livre physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Le Dictionnaire de Bitcoin* afin de me soutenir.
 
-La première publication du livre sera sa version de 2024. Si le projet intéresse et suscite de l'engagement, je publierai chaque année une nouvelle version actualisée du Dictionnaire de Bitcoin. Chaque nouvelle version incluera les modifications suggérées entre-temps par la communauté de contributeurs, ainsi que les nouveaux termes apparus lors de l’année précédente.
+La première publication du livre sera sa version de 2024. Si le projet intéresse et suscite de l'engagement, je publierai chaque année une nouvelle version actualisée de *Le Dictionnaire de Bitcoin*. Chaque nouvelle version incluera les modifications suggérées entre-temps par la communauté de contributeurs, ainsi que les nouveaux termes apparus lors de l’année précédente.
 
 Si vous ne souhaitez pas acheter le livre sur Amazon, mais que vous désirez tout de même soutenir le projet, vous pouvez également choisir de faire un don sur mon BIP47 : [+throbbingpond8B1​](https://paynym.is/+throbbingpond8B1)
 
 # Demandes de modification et contributions
-Le Dictionnaire de Bitcoin est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
+*Le Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
 * La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
 * La correction d'une définition qui vous semble erronée ou imprécise ;
 * La correction d'une faute d'orthographe ou d'une coquille ;
 * Toute autre suggestion de modification.
 
-Pour qu'un nouveau terme soit accepté dans Le Dictionnaire de Bitcoin, il suffit qu'il soit en rapport avec Bitcoin ou son environnement. Il faut simplement faire preuve de bon sens, et estimer si oui ou non, ce terme peut être utile aux personnes qui étudient ou utilisent Bitcoin et son environnement. 
+Pour qu'un nouveau terme soit accepté dans *Le Dictionnaire de Bitcoin*, il suffit qu'il soit en rapport avec Bitcoin ou son environnement. Il faut simplement faire preuve de bon sens, et estimer si oui ou non, ce terme peut être utile aux personnes qui étudient ou utilisent Bitcoin et son environnement. 
 
 Pour contribuer, merci de bien vouloir écrire la modification et utiliser une Pull Request pour la soumettre à vérification face à [la branche de rédaction](https://github.com/LoicPandul/Dictionnaire/tree/R%C3%A9daction). Si vous effectuez de nombreuses modifications, merci de bien vouloir effectuer un commit pour chacune d'entre elles afin de pouvoir choisir individuellement les modifications.
 
@@ -25,12 +25,12 @@ Sur le template de Pull Request, vous avez la possibilité d'indiquer si vous so
 
 Vous pouvez également ouvrir une Issue pour décrire votre suggestion de modification, ou pour demander l'ajout d'un terme. Si vous souhaitez réaliser des modifications plus importantes sur l'ouvrage, merci de bien vouloir me contacter directement. Vous retrouverez mes contacts sur https://www.pandul.fr/ 
 
-Mon objectif sur ce projet de dictionnaire sera de publier une nouvelle version chaque année. Les modifications ajoutées au document principal ne sont donc pas présentes immédiatement sur le document vendu à l'impression sur Amazon. Toutes les modifications effectuées durant l'année seront ajoutées d'un coup lors de la publication du nouveau tome. Par exemple, si Le Dictionnaire de Bitcoin 2024 est publié en novembre 2023, et que votre proposition de modification est acceptée en février 2024, alors cette dernière sera présente sur la version vendue sur Amazon uniquement sur Le Dictionnaire de Bitcoin 2025. Cette nouvelle édition sera publiée l'année suivante, par exemple, en novembre 2024.
+Mon objectif sur ce projet de dictionnaire sera de publier une nouvelle version chaque année. Les modifications ajoutées au document principal ne sont donc pas présentes immédiatement sur le document vendu à l'impression sur Amazon. Toutes les modifications effectuées durant l'année seront ajoutées d'un coup lors de la publication du nouveau tome. Par exemple, si *Le Dictionnaire de Bitcoin 2024* est publié en novembre 2023, et que votre proposition de modification est acceptée en février 2024, alors cette dernière sera présente sur la version vendue sur Amazon uniquement sur *Le Dictionnaire de Bitcoin 2025*. Cette nouvelle édition sera publiée l'année suivante, par exemple, en novembre 2024.
 
-# Lire Le Dictionnaire de Bitcoin
-Vous pouvez découvrir gratuitement la version en ligne du Dictionnaire de Bitcoin sur le document __insérer lien document__. Une version PDF est également disponible sur https://www.pandul.fr/. La version en PDF n’est actualisée qu’une seule fois par an, et correspond à [la branche main](https://github.com/LoicPandul/Dictionnaire/tree/main). La [branche Rédaction](https://github.com/LoicPandul/Dictionnaire/tree/R%C3%A9daction) correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont ajoutées. Elle est fusionnée une fois par an avec la branche main lors de la publication de la nouvelle version du livre.
+# Lire *Le Dictionnaire de Bitcoin*
+Vous pouvez découvrir gratuitement la version en ligne de *Le Dictionnaire de Bitcoin* sur le document __insérer lien document__. Une version PDF est également disponible sur https://www.pandul.fr/. La version en PDF n’est actualisée qu’une seule fois par an, et correspond à [la branche main](https://github.com/LoicPandul/Dictionnaire/tree/main). La [branche Rédaction](https://github.com/LoicPandul/Dictionnaire/tree/R%C3%A9daction) correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont ajoutées. Elle est fusionnée une fois par an avec la branche main lors de la publication de la nouvelle version du livre.
 
-Vous pouvez retrouver une version imprimée et brochée du Dictionnaire de Bitcoin sur Amazon.fr. 
+Vous pouvez retrouver une version imprimée et brochée de *Le Dictionnaire de Bitcoin* sur Amazon.fr. 
 
 # Licence et réutilisation
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
