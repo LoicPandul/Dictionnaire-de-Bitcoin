@@ -1,11 +1,12 @@
 # Le Dicitonnaire de Bitcoin 2024
 
-
-
-
+&nbsp;
 
 # A
-## **ADRESSE DE RÉCEPTION -**
+
+&nbsp;
+
+### **ADRESSE DE RÉCEPTION -**
 
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de SHA256 et de RIMPEMD160, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine.
 
@@ -24,7 +25,7 @@ D'un point de vue technique, une adresse ne permet pas réellement de recevoir d
 
 &nbsp;
 
-## **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
+### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin.
 
@@ -37,14 +38,25 @@ Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines
 
 &nbsp;
 
-## **ARBRE DE MERKLE -**
+### **ARBRE DE MERKLE -**
 
 Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pour justifier l’appartenance d’une information donnée à un ensemble plus grand. C'est une structure de données qui facilite la vérification d’informations dans un format compact.
 
 Dans le système Bitcoin, les arbres de Merkle sont utilisés pour regrouper et condenser les transactions d'un bloc en un unique hachage, appelé la racine de Merkle (ou « Top Hash »). Chaque transaction est hachée, puis les hachages adjacents sont hachés ensemble de façon hiérarchique jusqu'à ce que la racine de Merkle soit obtenue.
 ![Schéma arbre de Merkle](/Sch%C3%A9mas/Arbre%20de%20Merkle.png)
 
+Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la TX7 fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
+* TX7 ;
+* HASH 8 ;
+* HASH 5-6 ;
+* HASH 1-2-3-4.
 
+Grâce à ces quelques informations, je suis en capacité de calculer les nœuds intermédiaires jusqu'à la racine de Merkle.
+![Schéma 2 arbre de Merkle](/Le%20Dictionnaire%20de%20Bitcoin%202024/Sch%C3%A9mas/Arbre%20de%20Merkle%202.png)
+
+Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « SPV Node », qui ne conservent que les entêtes de blocs, mais pas les transactions.
+
+>*L'arbre de Merkle porte le nom de Ralph Merkle, un cryptographe pionnier qui a conçu cette structure en 1979. Un arbre de Merkle peut également être nommé « arbre de hachage ». En anglais, on dit « Merkle Tree » ou « Hash Tree ».*
 
 
 
