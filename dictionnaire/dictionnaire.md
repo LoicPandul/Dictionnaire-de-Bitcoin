@@ -1,4 +1,7 @@
 # Le Dicitonnaire de Bitcoin 2024
+Tout le vocabulaire technique de Bitcoin et de son environnement.
+
+> Afin de naviguer facilement dans le dictionnaire, vous pouvez utiliser la commande **ctrl + F** ou **commande + F** 
 
 &nbsp;
 
