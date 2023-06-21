@@ -37,6 +37,7 @@ Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines
 Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pour justifier l’appartenance d’une information donnée à un ensemble plus grand. C'est une structure de données qui facilite la vérification d’informations dans un format compact.
 
 Dans le système Bitcoin, les arbres de Merkle sont utilisés pour regrouper et condenser les transactions d'un bloc en un unique hachage, appelé la racine de Merkle (ou « Top Hash »). Chaque transaction est hachée, puis les hachages adjacents sont hachés ensemble de façon hiérarchique jusqu'à ce que la racine de Merkle soit obtenue.
+![Schéma arbre de Merkle](/Sch%C3%A9mas/Arbre%20de%20Merkle.png)
 
 
 
