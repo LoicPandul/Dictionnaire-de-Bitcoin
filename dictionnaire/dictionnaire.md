@@ -1,7 +1,16 @@
 # Le Dicitonnaire de Bitcoin 2024
 Tout le vocabulaire technique de Bitcoin et de son environnement.
 
-> Afin de naviguer facilement dans le dictionnaire, vous pouvez utiliser la commande **ctrl + F** ou **commande + F** 
+
+&nbsp;
+
+
+# Version en ligne
+Afin de naviguer facilement dans *Le Dictionnaire de Bitcoin* sur cette version en ligne, vous pouvez utiliser la commande **ctrl + F** ou **commande + F**.
+
+Vous lisez actuellement la version en ligne du livre *Le Dictionnaire de Bitcoin*, un ouvrage rédigé par Loïc Morel, publié sous licence [CC-BY-NC-SA 4.0](/README.md#licence-et-réutilisation). Si ce projet vous plait, vous êtes libre d'y [contribuer pour l'améliorer](/README.md#demandes-de-modification-et-contributions). Vous pouvez également me soutenir en achetant la version imprimée et brochée de cet ouvrage sur Amazon.fr.
+
+Merci et bonne lecture !
 
 &nbsp;
 
