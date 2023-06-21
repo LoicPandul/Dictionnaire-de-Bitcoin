@@ -15,7 +15,7 @@ Merci et bonne lecture !
 &nbsp;
 
 # A
-#### **ADRESSE DE RÉCEPTION -**
+### **ADRESSE DE RÉCEPTION -**
 
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de SHA256 et de RIMPEMD160, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine.
 
@@ -32,7 +32,7 @@ Une adresse est encodée en Bech32 pour les adresses SegWit V0, en Bech32m pour 
 
 D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
-#### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
+### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin.
 
@@ -45,7 +45,7 @@ Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines
 
 &nbsp;
 
-#### **ARBRE DE MERKLE -**
+### **ARBRE DE MERKLE -**
 
 Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pour justifier l’appartenance d’une information donnée à un ensemble plus grand. C'est une structure de données qui facilite la vérification d’informations dans un format compact.
 
