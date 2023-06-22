@@ -67,5 +67,38 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 >*L'arbre de Merkle porte le nom de Ralph Merkle, un cryptographe pionnier qui a conçu cette structure en 1979. Un arbre de Merkle peut également être nommé « arbre de hachage ». En anglais, on dit « Merkle Tree » ou « Hash Tree ».*
 
+&nbsp;
+
+### **ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION) -**
+Un ASIC est un composant électronique conçu pour exécuter une fonction spécifique avec une efficacité optimale. Dans le contexte du minage de Bitcoin, les ASIC sont des circuits intégrés spécialisés qui effectuent des opérations de hachage à haute vitesse et faible consommation d'énergie. Ils sont spécialisés dans l'exécution de la fonction de hachage SHA256 utilisée dans le mécanisme de la preuve de travail.
+
+L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » vise souvent à désigner également la machine qui héberge cette puce. Ainsi, les ordinateurs spécialisés dans le minage de Bitcoin sont parfois appelés des « ASIC », ou bien des « mineurs ».
+
+Les ASIC ont progressivement remplacé les autres méthodes de minage, telles que l'utilisation de processeurs (CPU) et de cartes graphiques (GPU), en raison de leur efficacité énergétique supérieure et de leur taux de hachage bien plus élevé.
+
+>*L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
+
+&nbsp;
 
 
+# B
+
+### **BASE (ARITHMÉTIQUE) -**
+Une base est un système de numération positionnel qui utilise un nombre fixe de caractères pour représenter tous les nombres possibles. La base détermine le nombre de symboles distincts disponibles pour représenter les chiffres dans ce système.
+
+Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10, également appelée système décimal. Elle utilise dix symboles distincts (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) pour représenter tous les nombres. D'autres systèmes de numération couramment utilisés dans les domaines informatique et mathématique incluent le système binaire (base 2), avec deux symboles (0, 1), et le système hexadécimal (base 16), avec seize symboles (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
+
+Dans le cadre de Bitcoin, vous rencontrerez parfois des encodages en base 58 ou en base 32 adaptée (nommée Bech32).
+
+
+&nbsp;
+
+
+### **BASE58CHECK -**
+La Base58Check est un encodage utilisé dans le système Bitcoin pour représenter les adresses de réception Legacy et certaines autres données, telles que les clés étendues, sous forme de chaînes de caractères lisibles par l'homme. C’est une variante du système Base58, une représentation positionnelle de base 58 conçue pour minimiser les erreurs de transcription humaine. Elle utilise un ensemble de 58 caractères alphanumériques, composé des chiffres de 1 à 9, des lettres majuscules A à Z (à l'exception des lettres « I » et « O » pour éviter la confusion avec les chiffres « 1 » et « 0 ») et des lettres minuscules de a à z (à l'exception de la lettre « l » pour éviter la confusion avec le chiffre « 1 »).
+
+La Base58Check se distingue de la Base58 par l'ajout d'une somme de contrôle (checksum). Elle est représentée par une version réduite d'un double hachage SHA-256 des données originales (SHA256d ou HASH256), à la fin des données encodées en Base58. Lors de la vérification, la somme de contrôle est recalculée et comparée à celle qui a été ajoutée lors de l'encodage. Si les deux empreintes correspondent, les données sont considérées comme valides, sinon une erreur de corruption ou de transcription est signalée.
+
+L'utilisation de la Base58Check dans les adresses Bitcoin et les clés privées procure plusieurs avantages. Premièrement, elle permet de réduire les erreurs humaines lors de la transcription et de la lecture en évitant les caractères ambigus. Deuxièmement, elle protège contre les erreurs de saisie en détectant et signalant les erreurs grâce au hachage de vérification. Enfin, la représentation compacte des données en Base58Check permet de réduire l'espace requis pour stocker et partager les adresses et les clés.
+
+Les adresses de réception les plus récentes (post-SegWit) ont abandonné cet encodage Base58check pour des encodages Bech32 et Bech32m, disposant d'une somme de contrôle plus évoluée (code BCH).
