@@ -16,6 +16,10 @@ Merci et bonne lecture !
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
 # **A**
 **ADRESSE DE RÉCEPTION -**
 
@@ -80,6 +84,10 @@ L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » 
 Les ASIC ont progressivement remplacé les autres méthodes de minage, telles que l'utilisation de processeurs (CPU) et de cartes graphiques (GPU), en raison de leur efficacité énergétique supérieure et de leur taux de hachage bien plus élevé.
 
 >*L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
