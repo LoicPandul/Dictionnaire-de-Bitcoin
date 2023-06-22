@@ -14,8 +14,11 @@ Merci et bonne lecture !
 
 &nbsp;
 
+&nbsp;
+
 # **A**
-### **ADRESSE DE RÉCEPTION -**
+**ADRESSE DE RÉCEPTION -**
+
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de SHA256 et de RIMPEMD160, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine.
 
 Les adresses SegWit sont composées des informations suivantes : 
@@ -31,8 +34,10 @@ Une adresse est encodée en Bech32 pour les adresses SegWit V0, en Bech32m pour 
 
 D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
+&nbsp;
 
-### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
+**AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
+
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin.
 
 Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. Le calcul qu'effectuent les nœuds pour calculer la nouvelle cible est le suivant : *N = A * (T / 1 209 600)*. Où :
@@ -42,8 +47,9 @@ Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines
 * 1 209 600 : Correspond au temps cible, en secondes, pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
 > *En français, on parle parfois également de « reciblage » pour évoquer l'ajustement. En anglais, on parle de « Difficulty Adjustment ».*
 
+&nbsp;
 
-### **ARBRE DE MERKLE -**
+**ARBRE DE MERKLE -**
 
 Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pour justifier l’appartenance d’une information donnée à un ensemble plus grand. C'est une structure de données qui facilite la vérification d’informations dans un format compact.
 
@@ -63,8 +69,10 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 >*L'arbre de Merkle porte le nom de Ralph Merkle, un cryptographe pionnier qui a conçu cette structure en 1979. Un arbre de Merkle peut également être nommé « arbre de hachage ». En anglais, on dit « Merkle Tree » ou « Hash Tree ».*
 
+&nbsp;
 
-### **ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION) -**
+**ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION) -**
+
 Un ASIC est un composant électronique conçu pour exécuter une fonction spécifique avec une efficacité optimale. Dans le contexte du minage de Bitcoin, les ASIC sont des circuits intégrés spécialisés qui effectuent des opérations de hachage à haute vitesse et faible consommation d'énergie. Ils sont spécialisés dans l'exécution de la fonction de hachage SHA256 utilisée dans le mécanisme de la preuve de travail.
 
 L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » vise souvent à désigner également la machine qui héberge cette puce. Ainsi, les ordinateurs spécialisés dans le minage de Bitcoin sont parfois appelés des « ASIC », ou bien des « mineurs ».
@@ -72,6 +80,8 @@ L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » 
 Les ASIC ont progressivement remplacé les autres méthodes de minage, telles que l'utilisation de processeurs (CPU) et de cartes graphiques (GPU), en raison de leur efficacité énergétique supérieure et de leur taux de hachage bien plus élevé.
 
 >*L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
+
+&nbsp;
 
 &nbsp;
 
@@ -129,6 +139,7 @@ Chaque BIP est un document détaillé qui décrit précisément les objectifs de
 
 > *BIP est l'acronyme anglais pour « Bitcoin Improvment Proposal ». En français, on peut le traduire par « Proposition d'amélioration de Bitcoin ». Toutefois, la plupart des textes français utilisent directement l'acronyme « BIP » comme un nom commun, parfois au féminin, parfois au masculin.*
 
+&nbsp;
 
 ### **BIT**
 Le mot « bit » est la contraction des termes « binary » et « digit » en anglais. Dans le contexte des sciences informatiques et de la cryptologie, un bit est l'unité fondamentale d'information numérique et représente la plus petite quantité d'information possible.
@@ -141,8 +152,9 @@ Le nom de « Bitcoin » provient sûrement de la concaténation du terme « Bit 
 
 Dans le contexte de Bitcoin, le terme « bit » est aussi utilisé pour désigner une subdivision monétaire du bitcoin. Un bit est égal à 100 satoshis, qui représentent la plus petite unité indivisible de bitcoin. Ainsi, un bitcoin est égal à 1 000 000 de bits ou 100 000 000 de satoshis. Cependant, l'utilisation de ce terme comme subdivision monétaire est sujet à controverse. La majorité des bitcoiners utilisent soit le « sats », soit le « btc », mais pas le « bit ».
 
+&nbsp;
 
-### **BITCOIN (« B » MAJUSCULE) -**
+**BITCOIN (« B » MAJUSCULE) -**
 Bitcoin est le nom du système de cash électronique pair-à-pair créé par Satoshi Nakamoto en 2009.
 
 L'utilisation du terme Bitcoin avec un « B » majuscule peut vouloir évoquer trois choses différentes :
@@ -152,16 +164,18 @@ L'utilisation du terme Bitcoin avec un « B » majuscule peut vouloir évoquer t
 
 Le terme de bitcoin avec un « b » minuscule est généralement réservé pour évoquer l'unité monétaire échangée sur ce système.
 
+&nbsp;
 
-### **BITCOIN (« B » MINUSCULE) -**
+**BITCOIN (« B » MINUSCULE) -**
 Le bitcoin (écrit avec un « b » minuscule) fait référence à l'unité monétaire utilisée pour les échanges sur le système de cash électronique Bitcoin (avec un "B" majuscule).
 
 Le bitcoin est souvent abrégé en « BTC » ou « XBT » et sert de moyen d'échange, de réserve de valeur et d'unité de compte au sein du réseau. Chaque bitcoin est divisible en 100 millions d'unités plus petites, appelées « satoshis » ou « sats », en l'honneur de son créateur, Satoshi Nakamoto.
 
 Les bitcoins sont émis par le processus de la preuve de travail (minage). Le nombre total de bitcoins est limité à 21 millions, assurant une offre finie et prévisible.
 
+&nbsp;
 
-### **BITCOIN.CONF -**
+**BITCOIN.CONF -**
 
 
 
