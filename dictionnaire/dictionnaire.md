@@ -102,3 +102,85 @@ La Base58Check se distingue de la Base58 par l'ajout d'une somme de contrôle (c
 L'utilisation de la Base58Check dans les adresses Bitcoin et les clés privées procure plusieurs avantages. Premièrement, elle permet de réduire les erreurs humaines lors de la transcription et de la lecture en évitant les caractères ambigus. Deuxièmement, elle protège contre les erreurs de saisie en détectant et signalant les erreurs grâce au hachage de vérification. Enfin, la représentation compacte des données en Base58Check permet de réduire l'espace requis pour stocker et partager les adresses et les clés.
 
 Les adresses de réception les plus récentes (post-SegWit) ont abandonné cet encodage Base58check pour des encodages Bech32 et Bech32m, disposant d'une somme de contrôle plus évoluée (code BCH).
+
+
+&nbsp;
+
+### **BECH32 ET BECH32M -**
+Bech32 et Bech32m sont deux formats d'encodage d'adresse pour recevoir des bitcoins. Ils sont établis sur une base 32 légèrement modifiée. Ils embarquent une somme de contrôle établie sur un algorithme de correction d'erreurs appelé BCH (Bose-Chaudhuri-Hocquenghem).
+
+Par rapport aux adresses Legacy, encodées en Base58check, les adresses Bech32 et Bech32m disposent d'une somme de contrôle plus performante, permettant de détecter et potentiellement de modifier automatiquement les fautes de frappe. Leur format dispose également d'une meilleure lisibilité, avec uniquement des caractères minuscules. Voici la table de conversion de ce format depuis la base 10 : 
+
+| + | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|----|---|---|---|---|---|---|---|---|
+| 0  | q | p | z | r | y | 9 | x | 8 |
+| 8  | g | f | 2 | t | v | d | w | 0 |
+| 16 | s | 3 | j | n | 5 | 4 | k | h |
+| 24 | c | e | 6 | m | u | a | 7 | l |
+
+
+Bech32 et Bech32m sont des formats d'encodage utilisés pour représenter les adresses SegWit. Bech32 est un format d'encodage d'adresse introduit par la BIP173 en 2017. Il utilise un ensemble de caractères spécifiques, composé de chiffres et de lettres minuscules, pour minimiser les erreurs de frappe et faciliter la lecture. Les adresses Bech32 commencent généralement par "bc1" pour indiquer qu'elles sont natives de SegWit. Ce format est uniquement utilisé sur les adresses SegWit V0, avec les scripts P2WPKH (Pay to Witness Public Key Hash) et P2WSH (Pay to Witness Script Hash).
+
+Toutefois, il existe une petite faille inattendue propre au format Bech32. Chaque fois que le dernier caractère de l'adresse est un « p », l'ajout ou la suppression d'un nombre quelconque de symboles « q » le précédant immédiatement n'invalide pas la somme de contrôle. Cela n'affecte pas les utilisations existantes des adresses SegWit V0 (BIP173) en raison de leur restriction à deux longueurs définies. Cependant, cela pourrait affecter des utilisations futures de l'encodage Bech32. Le format Bech32m est simplement un format Bech32 avec cette erreur rectifiée. Il a été introduit avec le BIP350 en 2020. Les adresses Bech32m commencent également par "bc1", mais elles sont spécifiquement conçues pour être compatibles avec la version SegWit V1 (Taproot) et les versions ultérieures, avec le script P2TR (Pay to TapRoot).
+
+
+
+&nbsp;
+
+### **BIP (BITCOIN IMPROVEMENT PROPOSAL) -**
+Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes.
+
+Inspiré par le processus des Python Enhancement Proposals (PEP), le BIP vise à faciliter la communication et la collaboration entre les développeurs, les chercheurs, les utilisateurs et les parties prenantes de l'écosystème Bitcoin. Le processus BIP assure une approche structurée et transparente pour l'évaluation et l'adoption de nouvelles fonctionnalités, optimisations et mises à jour.
+
+Chaque BIP est un document détaillé qui décrit précisément les objectifs de l'amélioration proposée, la justification de sa mise en œuvre, les éventuels problèmes de compatibilité, les avantages et les inconvénients. Il décrit également les étapes techniques nécessaires pour réaliser l'amélioration. Les BIP peuvent être rédigés par n'importe qui. Ils doivent cependant être soumis à un examen approfondi et à l'approbation d'autres membres de la communauté Bitcoin.
+
+> *BIP est l'acronyme anglais pour « Bitcoin Improvment Proposal ». En français, on peut le traduire par « Proposition d'amélioration de Bitcoin ». Toutefois, la plupart des textes français utilisent directement l'acronyme « BIP » comme un nom commun, parfois au féminin, parfois au masculin.*
+
+
+&nbsp;
+
+
+### **BIT**
+Le mot « bit » est la contraction des termes « binary » et « digit » en anglais. Dans le contexte des sciences informatiques et de la cryptologie, un bit est l'unité fondamentale d'information numérique et représente la plus petite quantité d'information possible.
+
+Un bit ne peut prendre que deux valeurs distinctes : 0 ou 1. Ces valeurs sont également appelées états binaires et peuvent représenter diverses choses, telles que les réponses « oui » ou « non », « vrai » ou « faux » et « on » ou « off ». Les bits sont la base des systèmes numériques et sont utilisés pour stocker et transmettre de l'information dans les ordinateurs et les réseaux.
+
+Le nom de « Bitcoin » provient sûrement de la concaténation du terme « Bit », pour évoquer la nature électronique du système de paiement, et du terme « Coin », pour évoquer son objectif monétaire.
+
+> *En français, on utilise souvent directement le mot « bit ». La traduction de ce terme anglais pourrait être « chiffre binaire ».*
+
+Dans le contexte de Bitcoin, le terme « bit » est aussi utilisé pour désigner une subdivision monétaire du bitcoin. Un bit est égal à 100 satoshis, qui représentent la plus petite unité indivisible de bitcoin. Ainsi, un bitcoin est égal à 1 000 000 de bits ou 100 000 000 de satoshis. Cependant, l'utilisation de ce terme comme subdivision monétaire est sujet à controverse. La majorité des bitcoiners utilisent soit le « sats », soit le « btc », mais pas le « bit ».
+
+
+&nbsp;
+
+
+### **BITCOIN (« B » MAJUSCULE) -**
+Bitcoin est le nom du système de cash électronique pair-à-pair créé par Satoshi Nakamoto en 2009.
+
+L'utilisation du terme Bitcoin avec un « B » majuscule peut vouloir évoquer trois choses différentes :
+* Le système Bitcoin ;
+* Le protocole Bitcoin ;
+* Le réseau Bitcoin.
+
+Le terme de bitcoin avec un « b » minuscule est généralement réservé pour évoquer l'unité monétaire échangée sur ce système.
+
+
+&nbsp;
+
+### **BITCOIN (« B » MINUSCULE) -**
+Le bitcoin (écrit avec un « b » minuscule) fait référence à l'unité monétaire utilisée pour les échanges sur le système de cash électronique Bitcoin (avec un "B" majuscule).
+
+Le bitcoin est souvent abrégé en « BTC » ou « XBT » et sert de moyen d'échange, de réserve de valeur et d'unité de compte au sein du réseau. Chaque bitcoin est divisible en 100 millions d'unités plus petites, appelées « satoshis » ou « sats », en l'honneur de son créateur, Satoshi Nakamoto.
+
+Les bitcoins sont émis par le processus de la preuve de travail (minage). Le nombre total de bitcoins est limité à 21 millions, assurant une offre finie et prévisible.
+
+
+&nbsp;
+
+### **BITCOIN.CONF -**
+Fichier de configuration essentiel pour personnaliser le fonctionnement d'un nœud Bitcoin exécutant le client Bitcoin Core. Situé dans le répertoire de données de Bitcoin Core, ce fichier texte permet aux opérateurs de nœuds de spécifier divers paramètres et options qui influencent le comportement du nœud. Parmi les paramètres que l'on peut définir dans bitcoin.conf, on trouve des éléments tels que la taille de la Mempool, les restrictions sur les connexions réseau, les frais de transaction minimum de relai, ainsi que d'autres options de sécurité et de performances. La personnalisation via bitcoin.conf est essentielle pour adapter un nœud aux besoins spécifiques de l'opérateur.
+
+
+
+
