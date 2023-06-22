@@ -14,9 +14,8 @@ Merci et bonne lecture !
 
 &nbsp;
 
-# A
+# **A**
 ### **ADRESSE DE RÉCEPTION -**
-
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de SHA256 et de RIMPEMD160, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine.
 
 Les adresses SegWit sont composées des informations suivantes : 
@@ -32,10 +31,8 @@ Une adresse est encodée en Bech32 pour les adresses SegWit V0, en Bech32m pour 
 
 D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
-&nbsp;
 
 ### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
-
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin.
 
 Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. Le calcul qu'effectuent les nœuds pour calculer la nouvelle cible est le suivant : *N = A * (T / 1 209 600)*. Où :
@@ -45,7 +42,6 @@ Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines
 * 1 209 600 : Correspond au temps cible, en secondes, pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
 > *En français, on parle parfois également de « reciblage » pour évoquer l'ajustement. En anglais, on parle de « Difficulty Adjustment ».*
 
-&nbsp;
 
 ### **ARBRE DE MERKLE -**
 
@@ -67,7 +63,6 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 >*L'arbre de Merkle porte le nom de Ralph Merkle, un cryptographe pionnier qui a conçu cette structure en 1979. Un arbre de Merkle peut également être nommé « arbre de hachage ». En anglais, on dit « Merkle Tree » ou « Hash Tree ».*
 
-&nbsp;
 
 ### **ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION) -**
 Un ASIC est un composant électronique conçu pour exécuter une fonction spécifique avec une efficacité optimale. Dans le contexte du minage de Bitcoin, les ASIC sont des circuits intégrés spécialisés qui effectuent des opérations de hachage à haute vitesse et faible consommation d'énergie. Ils sont spécialisés dans l'exécution de la fonction de hachage SHA256 utilisée dans le mécanisme de la preuve de travail.
@@ -80,8 +75,8 @@ Les ASIC ont progressivement remplacé les autres méthodes de minage, telles qu
 
 &nbsp;
 
+# **B**
 
-# B
 
 ### **BASE (ARITHMÉTIQUE) -**
 Une base est un système de numération positionnel qui utilise un nombre fixe de caractères pour représenter tous les nombres possibles. La base détermine le nombre de symboles distincts disponibles pour représenter les chiffres dans ce système.
@@ -89,9 +84,6 @@ Une base est un système de numération positionnel qui utilise un nombre fixe d
 Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10, également appelée système décimal. Elle utilise dix symboles distincts (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) pour représenter tous les nombres. D'autres systèmes de numération couramment utilisés dans les domaines informatique et mathématique incluent le système binaire (base 2), avec deux symboles (0, 1), et le système hexadécimal (base 16), avec seize symboles (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
 
 Dans le cadre de Bitcoin, vous rencontrerez parfois des encodages en base 58 ou en base 32 adaptée (nommée Bech32).
-
-
-&nbsp;
 
 
 ### **BASE58CHECK -**
@@ -103,8 +95,6 @@ L'utilisation de la Base58Check dans les adresses Bitcoin et les clés privées 
 
 Les adresses de réception les plus récentes (post-SegWit) ont abandonné cet encodage Base58check pour des encodages Bech32 et Bech32m, disposant d'une somme de contrôle plus évoluée (code BCH).
 
-
-&nbsp;
 
 ### **BECH32 ET BECH32M -**
 Bech32 et Bech32m sont deux formats d'encodage d'adresse pour recevoir des bitcoins. Ils sont établis sur une base 32 légèrement modifiée. Ils embarquent une somme de contrôle établie sur un algorithme de correction d'erreurs appelé BCH (Bose-Chaudhuri-Hocquenghem).
@@ -124,9 +114,6 @@ Bech32 et Bech32m sont des formats d'encodage utilisés pour représenter les ad
 Toutefois, il existe une petite faille inattendue propre au format Bech32. Chaque fois que le dernier caractère de l'adresse est un « p », l'ajout ou la suppression d'un nombre quelconque de symboles « q » le précédant immédiatement n'invalide pas la somme de contrôle. Cela n'affecte pas les utilisations existantes des adresses SegWit V0 (BIP173) en raison de leur restriction à deux longueurs définies. Cependant, cela pourrait affecter des utilisations futures de l'encodage Bech32. Le format Bech32m est simplement un format Bech32 avec cette erreur rectifiée. Il a été introduit avec le BIP350 en 2020. Les adresses Bech32m commencent également par "bc1", mais elles sont spécifiquement conçues pour être compatibles avec la version SegWit V1 (Taproot) et les versions ultérieures, avec le script P2TR (Pay to TapRoot).
 
 
-
-&nbsp;
-
 ### **BIP (BITCOIN IMPROVEMENT PROPOSAL) -**
 Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes.
 
@@ -135,9 +122,6 @@ Inspiré par le processus des Python Enhancement Proposals (PEP), le BIP vise à
 Chaque BIP est un document détaillé qui décrit précisément les objectifs de l'amélioration proposée, la justification de sa mise en œuvre, les éventuels problèmes de compatibilité, les avantages et les inconvénients. Il décrit également les étapes techniques nécessaires pour réaliser l'amélioration. Les BIP peuvent être rédigés par n'importe qui. Ils doivent cependant être soumis à un examen approfondi et à l'approbation d'autres membres de la communauté Bitcoin.
 
 > *BIP est l'acronyme anglais pour « Bitcoin Improvment Proposal ». En français, on peut le traduire par « Proposition d'amélioration de Bitcoin ». Toutefois, la plupart des textes français utilisent directement l'acronyme « BIP » comme un nom commun, parfois au féminin, parfois au masculin.*
-
-
-&nbsp;
 
 
 ### **BIT**
@@ -152,9 +136,6 @@ Le nom de « Bitcoin » provient sûrement de la concaténation du terme « Bit 
 Dans le contexte de Bitcoin, le terme « bit » est aussi utilisé pour désigner une subdivision monétaire du bitcoin. Un bit est égal à 100 satoshis, qui représentent la plus petite unité indivisible de bitcoin. Ainsi, un bitcoin est égal à 1 000 000 de bits ou 100 000 000 de satoshis. Cependant, l'utilisation de ce terme comme subdivision monétaire est sujet à controverse. La majorité des bitcoiners utilisent soit le « sats », soit le « btc », mais pas le « bit ».
 
 
-&nbsp;
-
-
 ### **BITCOIN (« B » MAJUSCULE) -**
 Bitcoin est le nom du système de cash électronique pair-à-pair créé par Satoshi Nakamoto en 2009.
 
@@ -166,12 +147,13 @@ L'utilisation du terme Bitcoin avec un « B » majuscule peut vouloir évoquer t
 Le terme de bitcoin avec un « b » minuscule est généralement réservé pour évoquer l'unité monétaire échangée sur ce système.
 
 
-&nbsp;
-
 ### **BITCOIN (« B » MINUSCULE) -**
 Le bitcoin (écrit avec un « b » minuscule) fait référence à l'unité monétaire utilisée pour les échanges sur le système de cash électronique Bitcoin (avec un "B" majuscule).
+
 Le bitcoin est souvent abrégé en « BTC » ou « XBT » et sert de moyen d'échange, de réserve de valeur et d'unité de compte au sein du réseau. Chaque bitcoin est divisible en 100 millions d'unités plus petites, appelées « satoshis » ou « sats », en l'honneur de son créateur, Satoshi Nakamoto.
+
 Les bitcoins sont émis par le processus de la preuve de travail (minage). Le nombre total de bitcoins est limité à 21 millions, assurant une offre finie et prévisible.
+
 
 ### **BITCOIN.CONF -**
 
