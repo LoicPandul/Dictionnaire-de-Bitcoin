@@ -182,7 +182,11 @@ Les bitcoins sont émis par le processus de la preuve de travail (minage). Le no
 Fichier de configuration essentiel pour personnaliser le fonctionnement d'un nœud Bitcoin exécutant le client Bitcoin Core. Situé dans le répertoire de données de Bitcoin Core, ce fichier texte permet aux opérateurs de nœuds de spécifier divers paramètres et options qui influencent le comportement du nœud. 
 
 
-Parmi les paramètres que l'on peut définir dans bitcoin.conf, on trouve des éléments tels que la taille de la Mempool, les restrictions sur les connexions réseau, les frais de transaction minimum de relai, ainsi que d'autres options de sécurité et de performances. La personnalisation via bitcoin.conf est essentielle pour adapter un nœud aux besoins spécifiques de l'opérateur.
+Parmi les paramètres que l'on peut définir dans bitcoin.conf, on trouve des éléments tels que la taille de la Mempool, les restrictions sur les connexions réseau, les frais de transaction minimum de relai, ainsi que d'autres options de sécurité et de performances. 
+
+
+
+La personnalisation via bitcoin.conf est essentielle pour adapter un nœud aux besoins spécifiques de l'opérateur.
 
 Test de modification avec le nouvel éditeur.
 
