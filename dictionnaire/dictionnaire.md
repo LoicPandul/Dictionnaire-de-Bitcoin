@@ -78,7 +78,7 @@ Les ASIC ont progressivement remplacé les autres méthodes de minage, telles qu
 # **B**
 
 
-### **BASE (ARITHMÉTIQUE) -**
+**BASE (ARITHMÉTIQUE) -**
 Une base est un système de numération positionnel qui utilise un nombre fixe de caractères pour représenter tous les nombres possibles. La base détermine le nombre de symboles distincts disponibles pour représenter les chiffres dans ce système.
 
 Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10, également appelée système décimal. Elle utilise dix symboles distincts (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) pour représenter tous les nombres. D'autres systèmes de numération couramment utilisés dans les domaines informatique et mathématique incluent le système binaire (base 2), avec deux symboles (0, 1), et le système hexadécimal (base 16), avec seize symboles (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
@@ -86,7 +86,7 @@ Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10
 Dans le cadre de Bitcoin, vous rencontrerez parfois des encodages en base 58 ou en base 32 adaptée (nommée Bech32).
 
 
-### **BASE58CHECK -**
+**BASE58CHECK -**
 La Base58Check est un encodage utilisé dans le système Bitcoin pour représenter les adresses de réception Legacy et certaines autres données, telles que les clés étendues, sous forme de chaînes de caractères lisibles par l'homme. C’est une variante du système Base58, une représentation positionnelle de base 58 conçue pour minimiser les erreurs de transcription humaine. Elle utilise un ensemble de 58 caractères alphanumériques, composé des chiffres de 1 à 9, des lettres majuscules A à Z (à l'exception des lettres « I » et « O » pour éviter la confusion avec les chiffres « 1 » et « 0 ») et des lettres minuscules de a à z (à l'exception de la lettre « l » pour éviter la confusion avec le chiffre « 1 »).
 
 La Base58Check se distingue de la Base58 par l'ajout d'une somme de contrôle (checksum). Elle est représentée par une version réduite d'un double hachage SHA-256 des données originales (SHA256d ou HASH256), à la fin des données encodées en Base58. Lors de la vérification, la somme de contrôle est recalculée et comparée à celle qui a été ajoutée lors de l'encodage. Si les deux empreintes correspondent, les données sont considérées comme valides, sinon une erreur de corruption ou de transcription est signalée.
@@ -96,7 +96,7 @@ L'utilisation de la Base58Check dans les adresses Bitcoin et les clés privées 
 Les adresses de réception les plus récentes (post-SegWit) ont abandonné cet encodage Base58check pour des encodages Bech32 et Bech32m, disposant d'une somme de contrôle plus évoluée (code BCH).
 
 
-### **BECH32 ET BECH32M -**
+**BECH32 ET BECH32M -**
 Bech32 et Bech32m sont deux formats d'encodage d'adresse pour recevoir des bitcoins. Ils sont établis sur une base 32 légèrement modifiée. Ils embarquent une somme de contrôle établie sur un algorithme de correction d'erreurs appelé BCH (Bose-Chaudhuri-Hocquenghem).
 
 Par rapport aux adresses Legacy, encodées en Base58check, les adresses Bech32 et Bech32m disposent d'une somme de contrôle plus performante, permettant de détecter et potentiellement de modifier automatiquement les fautes de frappe. Leur format dispose également d'une meilleure lisibilité, avec uniquement des caractères minuscules. Voici la table de conversion de ce format depuis la base 10 : 
