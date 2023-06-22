@@ -180,7 +180,7 @@ Les bitcoins sont émis par le processus de la preuve de travail (minage). Le no
 
 ### **BITCOIN.CONF -**
 
-
+Test de la modification à distance du livre. 
 
 
 
