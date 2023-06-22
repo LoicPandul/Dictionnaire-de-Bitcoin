@@ -186,7 +186,7 @@ Parmi les paramètres que l'on peut définir dans bitcoin.conf, on trouve des é
 
 
 
-La personnalisation via bitcoin.conf est essentielle pour adapter un nœud aux besoins spécifiques de l'opérateur.
+*> La personnalisation via bitcoin.conf est essentielle pour adapter un nœud aux besoins spécifiques de l'opérateur.*
 
 Test de modification avec le nouvel éditeur.
 
