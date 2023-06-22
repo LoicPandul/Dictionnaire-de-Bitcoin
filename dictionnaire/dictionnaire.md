@@ -86,6 +86,7 @@ Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10
 
 Dans le cadre de Bitcoin, vous rencontrerez parfois des encodages en base 58 ou en base 32 adaptée (nommée Bech32).
 
+&nbsp;
 
 **BASE58CHECK -**
 
@@ -97,6 +98,7 @@ L'utilisation de la Base58Check dans les adresses Bitcoin et les clés privées 
 
 Les adresses de réception les plus récentes (post-SegWit) ont abandonné cet encodage Base58check pour des encodages Bech32 et Bech32m, disposant d'une somme de contrôle plus évoluée (code BCH).
 
+&nbsp;
 
 **BECH32 ET BECH32M -**
 
@@ -116,8 +118,9 @@ Bech32 et Bech32m sont des formats d'encodage utilisés pour représenter les ad
 
 Toutefois, il existe une petite faille inattendue propre au format Bech32. Chaque fois que le dernier caractère de l'adresse est un « p », l'ajout ou la suppression d'un nombre quelconque de symboles « q » le précédant immédiatement n'invalide pas la somme de contrôle. Cela n'affecte pas les utilisations existantes des adresses SegWit V0 (BIP173) en raison de leur restriction à deux longueurs définies. Cependant, cela pourrait affecter des utilisations futures de l'encodage Bech32. Le format Bech32m est simplement un format Bech32 avec cette erreur rectifiée. Il a été introduit avec le BIP350 en 2020. Les adresses Bech32m commencent également par "bc1", mais elles sont spécifiquement conçues pour être compatibles avec la version SegWit V1 (Taproot) et les versions ultérieures, avec le script P2TR (Pay to TapRoot).
 
+&nbsp;
 
-### **BIP (BITCOIN IMPROVEMENT PROPOSAL) -**
+**BIP (BITCOIN IMPROVEMENT PROPOSAL) -**
 Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes.
 
 Inspiré par le processus des Python Enhancement Proposals (PEP), le BIP vise à faciliter la communication et la collaboration entre les développeurs, les chercheurs, les utilisateurs et les parties prenantes de l'écosystème Bitcoin. Le processus BIP assure une approche structurée et transparente pour l'évaluation et l'adoption de nouvelles fonctionnalités, optimisations et mises à jour.
