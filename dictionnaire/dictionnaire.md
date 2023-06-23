@@ -34,9 +34,9 @@ ___
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de SHA256 et de RIMPEMD160, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine.
 
 Les adresses SegWit sont composées des informations suivantes : 
-* Un HRP pour désigner « bitcoin » : bc ; 
-* Un séparateur : 1 ; 
-* La version de SegWit utilisée : q ou p ; 
+* Un HRP pour désigner « bitcoin » : `bc` ; 
+* Un séparateur : `1` ; 
+* La version de SegWit utilisée : `q` ou `p` ; 
 * La charge utile : le condensat de la clé publique ; 
 * La somme de contrôle : un code BCH.
 
@@ -56,10 +56,10 @@ Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines
 
 
 Où :
-* N : La nouvelle cible ;
-* A : L'ancienne cible des 2016 derniers blocs ;
-* T : Le temps total réel des 2016 derniers blocs en secondes ;
-* 1 209 600 : Correspond au temps cible, en secondes, pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
+* $N$ : La nouvelle cible ;
+* $A$ : L'ancienne cible des 2016 derniers blocs ;
+* $T$ : Le temps total réel des 2016 derniers blocs en secondes ;
+* $1,209,600$ : Le temps cible en secondes pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
 > *En français, on parle parfois également de « reciblage » pour évoquer l'ajustement. En anglais, on parle de « Difficulty Adjustment ».*
 
 &nbsp;
