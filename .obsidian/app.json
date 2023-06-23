@@ -1,5 +1,8 @@
 {
   "showLineNumber": false,
   "strictLineBreaks": false,
-  "spellcheck": false
+  "spellcheck": false,
+  "spellcheckDictionary": [
+    "&nbsp"
+  ]
 }
