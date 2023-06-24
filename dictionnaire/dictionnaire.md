@@ -71,11 +71,11 @@ Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pou
 Dans le système Bitcoin, les arbres de Merkle sont utilisés pour regrouper et condenser les transactions d'un bloc en un unique hachage, appelé la racine de Merkle (ou « Top Hash »). Chaque transaction est hachée, puis les hachages adjacents sont hachés ensemble de façon hiérarchique jusqu'à ce que la racine de Merkle soit obtenue.
 ![Schéma arbre de Merkle](/dictionnaire/images/Arbre%20de%20Merkle.png)
 
-Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la TX7 fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
-* TX7 ;
-* HASH 8 ;
-* HASH 5-6 ;
-* HASH 1-2-3-4.
+Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la `TX 7` fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
+* `TX 7` ;
+* `HASH 8` ;
+* `HASH 5-6` ;
+* `HASH 1-2-3-4`.
 
 Grâce à ces quelques informations, je suis en capacité de calculer les nœuds intermédiaires jusqu'à la racine de Merkle.
 ![Schéma 2 arbre de Merkle](/dictionnaire/images/Arbre%20de%20Merkle%202.png)
