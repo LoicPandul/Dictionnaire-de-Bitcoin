@@ -3,6 +3,9 @@
   "strictLineBreaks": false,
   "spellcheck": false,
   "spellcheckDictionary": [
-    "&nbsp"
+    "&nbsp",
+    "Base58Check",
+    "ASIC",
+    "ASIC"
   ]
 }
