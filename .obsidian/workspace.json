@@ -71,8 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "258075645d91d402",
@@ -82,23 +81,6 @@
         "id": "b9d2220a59dd3dfa",
         "type": "tabs",
         "children": [
-          {
-            "id": "b329b10173adc423",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "dictionnaire/dictionnaire.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
           {
             "id": "0c6c211f897fd5f7",
             "type": "leaf",
@@ -149,6 +131,6 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "7f01eb1e3ee05c45",
+  "active": "061ba76b3a1502ee",
   "lastOpenFiles": []
 }

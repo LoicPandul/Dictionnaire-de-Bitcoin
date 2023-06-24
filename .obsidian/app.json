@@ -7,5 +7,7 @@
     "Base58Check",
     "ASIC",
     "ASIC"
-  ]
+  ],
+  "showFrontmatter": true,
+  "livePreview": true
 }
