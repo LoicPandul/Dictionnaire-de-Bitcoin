@@ -17,9 +17,16 @@ Si vous ne souhaitez pas acheter le livre sur Amazon, mais que vous désirez tou
 * La correction d'une faute d'orthographe ou d'une coquille ;
 * Toute autre suggestion de modification.
 
+Pour contribuer, voici la marche à suivre : 
+1. Créez une nouvelle branche à partir de la branche de rédaction actuelle ; 
+2. 
+
+merci de bien vouloir écrire la modification et utiliser une Pull Request pour la soumettre à vérification face à [la branche de rédaction](https://github.com/LoicPandul/Dictionnaire/tree/redaction2024). Si vous effectuez de nombreuses modifications, merci de bien vouloir effectuer un commit pour chacune d'entre elles afin de pouvoir choisir individuellement les modifications.
+
+
 Pour qu'un nouveau terme soit accepté dans *Le Dictionnaire de Bitcoin*, il suffit qu'il soit en rapport avec Bitcoin ou son environnement. Il faut simplement faire preuve de bon sens, et estimer si oui ou non, ce terme peut être utile aux personnes qui étudient ou utilisent Bitcoin et son environnement. 
 
-Pour contribuer, merci de bien vouloir écrire la modification et utiliser une Pull Request pour la soumettre à vérification face à [la branche de rédaction](https://github.com/LoicPandul/Dictionnaire/tree/redaction2024). Si vous effectuez de nombreuses modifications, merci de bien vouloir effectuer un commit pour chacune d'entre elles afin de pouvoir choisir individuellement les modifications.
+
 
 Sur le template de Pull Request, vous avez la possibilité d'indiquer si vous souhaitez que votre nom ou pseudo apparaisse sur le livre. Vous pouvez choisir de publier votre pseudo GitHub, le nom de votre choix, ou bien de refuser la publication de votre nom. Si vous acceptez, le nom choisi apparaitra à la fois sur la version en ligne du livre, et sur la version imprimée et brochée, distribuée sur Amazon.fr. Si vous souhaitez supprimer votre nom malgré le consentement au crédit sur la Pull Request, merci d'en faire la demande à info@pandul.fr. Si aucun choix n'est fait sur la Pull Request, par défaut, votre nom n'apparaitra pas sur le livre.
 
