@@ -98,7 +98,11 @@ Les ASIC ont progressivement remplacé les autres méthodes de minage, telles qu
 
 &nbsp;
 
-___ 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
