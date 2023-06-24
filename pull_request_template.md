@@ -1,7 +1,3 @@
-# Titre de la Pull Request
-
-Indiquez un titre concis et descriptif de la pull request.
-
 
 ## Type de Changements
 
@@ -20,4 +16,4 @@ Voulez-vous que votre nom ou votre pseudo apparaisse sur la page de remerciement
 
 ## Informations Additionnelles
 
-Ajoutez toute autre information pertinente concernant cette pull request ici.
+Ajoutez toute autre information pertinente concernant cette pull request ici si nécessaire.
