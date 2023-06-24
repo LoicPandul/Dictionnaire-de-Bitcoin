@@ -103,7 +103,7 @@ ___
 &nbsp;
 
 
-# <div align="center" style="font-family: Times New Roman; font-size:102px;">B</div>
+# <div align="center">**B**</div>
 
 &nbsp;
 
