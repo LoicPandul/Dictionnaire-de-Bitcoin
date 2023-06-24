@@ -1,6 +1,8 @@
 # Le Dictionnaire de Bitcoin 2024
 Tout le vocabulaire technique de Bitcoin et de son environnement.
 
+Tout le vocabulaire technique de Bitcoin et de son environnement.
+
 
 &nbsp;
 
