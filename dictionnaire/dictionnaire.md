@@ -104,7 +104,8 @@ ___
 
 &nbsp;
 
-# **B**
+# <div align="center">**B**</div>
+**B**
 
 
 **BASE (ARITHMÉTIQUE) -**
