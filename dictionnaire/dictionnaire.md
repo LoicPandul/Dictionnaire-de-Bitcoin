@@ -102,11 +102,10 @@ ___
 
 &nbsp;
 
+
+# <div align="center" style="font-family: Times New Roman; font-size:102px;">B</div>
+
 &nbsp;
-
-# <div align="center">**B**</div>
-**B**
-
 
 **BASE (ARITHMÉTIQUE) -**
 
