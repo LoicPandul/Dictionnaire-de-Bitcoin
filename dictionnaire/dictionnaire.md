@@ -41,7 +41,7 @@ ___
 &nbsp;
 
 
-## **ADRESSE DE RÉCEPTION -**
+### **ADRESSE DE RÉCEPTION -**
 
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine.
 
@@ -60,7 +60,7 @@ D'un point de vue technique, une adresse ne permet pas réellement de recevoir d
 
 &nbsp;
 
-## **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
+### **AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE) -**
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin.
 
