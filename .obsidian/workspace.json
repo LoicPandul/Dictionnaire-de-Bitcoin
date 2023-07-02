@@ -21,8 +21,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "447a60b2240180e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dictionnaire/dictionnaire.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dictionnaire/dictionnaire.md"
+                "file": "README.md"
               }
             }
           }
@@ -132,11 +146,11 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "7f01eb1e3ee05c45",
+  "active": "447a60b2240180e3",
   "lastOpenFiles": [
+    "dictionnaire/dictionnaire.md",
     "pull_request_template.md",
     "README.md",
-    "dictionnaire/dictionnaire.md",
     "Sans titre",
     "main.md"
   ]
