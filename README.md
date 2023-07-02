@@ -24,6 +24,8 @@ Pour contribuer, voici la marche à suivre :
 
 Si vous n'êtes pas à l'aise avec Git, ou bien si vous souhaitez simplement demander une petite modification (ajout d'un terme, petit faut d'ortographe...) vous pouvez plutôt ouvrir une issue.
 
+OUI MODIF
+
 Si vous souhaitez réaliser des modifications très importantes sur l'ouvrage, merci de bien vouloir me contacter directement. Vous retrouverez mes contacts sur https://www.pandul.fr/ 
 
 Pour qu'un nouveau terme soit accepté dans *Le Dictionnaire de Bitcoin*, il suffit qu'il soit en rapport avec Bitcoin ou son environnement. Il faut simplement faire preuve de bon sens, et estimer si oui ou non, ce terme peut être utile aux personnes qui étudient ou utilisent Bitcoin et son environnement. 
