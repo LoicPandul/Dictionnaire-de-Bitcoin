@@ -1,0 +1,13 @@
+{
+  "showLineNumber": false,
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "spellcheckDictionary": [
+    "&nbsp",
+    "Base58Check",
+    "ASIC",
+    "ASIC"
+  ],
+  "showFrontmatter": true,
+  "livePreview": true
+}

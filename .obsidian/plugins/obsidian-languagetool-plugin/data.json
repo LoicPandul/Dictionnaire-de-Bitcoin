@@ -1,0 +1,10 @@
+{
+  "serverUrl": "https://api.languagetoolplus.com",
+  "urlMode": "premium",
+  "glassBg": false,
+  "shouldAutoCheck": true,
+  "pickyMode": true,
+  "staticLanguage": "fr",
+  "username": "info@pandul.fr",
+  "apikey": "pit-RL2CNQop1OXE"
+}
