@@ -6,7 +6,12 @@
     "&nbsp",
     "Base58Check",
     "ASIC",
-    "ASIC"
+    "ASIC",
+    "préimages",
+    "préimage",
+    "hash",
+    "mempools",
+    "dépensables"
   ],
   "showFrontmatter": true,
   "livePreview": true
