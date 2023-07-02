@@ -23,7 +23,8 @@
             }
           },
           {
-            "id": "020624c8f161671a",
+            "id": "043263e951b520b1",
+
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,9 +147,13 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "020624c8f161671a",
+  "active": "061ba76b3a1502ee",
   "lastOpenFiles": [
-    "pull_request_template.md",
-    "dictionnaire/dictionnaire.md"
+    "Sans titre",
+    "dictionnaire/dictionnaire.md",
+    "main.md",
+    "README.md",
+    "pull_request_template.md"
+
   ]
 }
