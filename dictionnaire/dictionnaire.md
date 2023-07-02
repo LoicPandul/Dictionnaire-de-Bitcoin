@@ -1,5 +1,6 @@
-# Le Dictionnaire de Bitcoin 2024
-Tout le vocabulaire technique de Bitcoin et de son environnement.
+# <div align="center">***Le Dictionnaire de Bitcoin 2024***</div>
+
+<div align="center"> **Tout le vocabulaire technique de Bitcoin et de son environnement.**</div>
 
 
 &nbsp;
@@ -782,8 +783,9 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 
 
+&nbsp;
 
-
+**OUTPUT -** Voir définition du terme « Sortie ».
 
 
 
