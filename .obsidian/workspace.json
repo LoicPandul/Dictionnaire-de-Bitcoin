@@ -8,6 +8,21 @@
         "type": "tabs",
         "children": [
           {
+            "id": "447a60b2240180e3",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
             "id": "7f01eb1e3ee05c45",
             "type": "leaf",
             "pinned": true,
@@ -20,19 +35,6 @@
                 "source": false
               },
               "pinned": true
-            }
-          },
-          {
-            "id": "447a60b2240180e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
             }
           }
         ],
@@ -102,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "dictionnaire/dictionnaire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "dictionnaire/dictionnaire.md"
               }
             }
           }
@@ -146,11 +148,11 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "447a60b2240180e3",
+  "active": "7f01eb1e3ee05c45",
   "lastOpenFiles": [
+    "README.md",
     "dictionnaire/dictionnaire.md",
     "pull_request_template.md",
-    "README.md",
     "Sans titre",
     "main.md"
   ]
