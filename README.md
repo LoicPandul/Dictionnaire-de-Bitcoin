@@ -22,7 +22,6 @@ Pour contribuer, voici la marche à suivre :
 2. Rédigez vos suggestions de modification directement sur votre branche ;
 3. Proposez une Pull Request pour merge votre branche face à la branche « main ».
 
-
 Si vous n'êtes pas à l'aise avec Git, ou bien si vous souhaitez simplement demander une petite modification (ajout d'un terme, petit faut d'ortographe...) vous pouvez plutôt ouvrir une issue.
 
 Si vous souhaitez réaliser des modifications très importantes sur l'ouvrage, merci de bien vouloir me contacter directement. Vous retrouverez mes contacts sur https://www.pandul.fr/ 
