@@ -1423,7 +1423,3 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 
 
-
-
-
-
