@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "pull_request_template.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "pull_request_template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "pull_request_template.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "043263e951b520b1",
   "lastOpenFiles": [
+    "README.md",
+    "pull_request_template.md",
     "dictionnaire/dictionnaire.md",
     "Sans titre",
-    "main.md",
-    "README.md",
-    "pull_request_template.md"
+    "main.md"
   ]
 }
