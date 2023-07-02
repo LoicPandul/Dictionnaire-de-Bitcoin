@@ -18,19 +18,20 @@ Si vous ne souhaitez pas acheter le livre sur Amazon, mais que vous désirez tou
 * Toute autre suggestion de modification.
 
 Pour contribuer, voici la marche à suivre : 
-1. Créez une nouvelle branche à partir de la branche de rédaction actuelle ; 
-2. 
+1. Créez une nouvelle branche à partir de la branche « main » ; 
+2. Rédigez vos suggestions de modification directement sur votre branche ;
+3. Proposez une Pull Request pour merge votre branche face à la branche « main ».
 
-merci de bien vouloir écrire la modification et utiliser une Pull Request pour la soumettre à vérification face à [la branche de rédaction](https://github.com/LoicPandul/Dictionnaire/tree/redaction2024). Si vous effectuez de nombreuses modifications, merci de bien vouloir effectuer un commit pour chacune d'entre elles afin de pouvoir choisir individuellement les modifications.
+Si vous n'êtes pas à l'aise avec Git, ou bien si vous souhaitez simplement demander une petite modification (ajout d'un terme, petit faut d'ortographe...) vous pouvez plutôt ouvrir une issue.
 
+Si vous souhaitez réaliser des modifications très importantes sur l'ouvrage, merci de bien vouloir me contacter directement. Vous retrouverez mes contacts sur https://www.pandul.fr/ 
 
 Pour qu'un nouveau terme soit accepté dans *Le Dictionnaire de Bitcoin*, il suffit qu'il soit en rapport avec Bitcoin ou son environnement. Il faut simplement faire preuve de bon sens, et estimer si oui ou non, ce terme peut être utile aux personnes qui étudient ou utilisent Bitcoin et son environnement. 
 
-
-
 Sur le template de Pull Request, vous avez la possibilité d'indiquer si vous souhaitez que votre nom ou pseudo apparaisse sur le livre. Vous pouvez choisir de publier votre pseudo GitHub, le nom de votre choix, ou bien de refuser la publication de votre nom. Si vous acceptez, le nom choisi apparaitra à la fois sur la version en ligne du livre, et sur la version imprimée et brochée, distribuée sur Amazon.fr. Si vous souhaitez supprimer votre nom malgré le consentement au crédit sur la Pull Request, merci d'en faire la demande à info@pandul.fr. Si aucun choix n'est fait sur la Pull Request, par défaut, votre nom n'apparaitra pas sur le livre.
 
-Vous pouvez également ouvrir une Issue pour décrire votre suggestion de modification, ou pour demander l'ajout d'un terme. Si vous souhaitez réaliser des modifications plus importantes sur l'ouvrage, merci de bien vouloir me contacter directement. Vous retrouverez mes contacts sur https://www.pandul.fr/ 
+Si vous ouvrez simplement une issue, merci d'y préciser 
+
 
 Mon objectif sur ce projet de dictionnaire sera de publier une nouvelle version chaque année. Les modifications ajoutées au document principal ne sont donc pas présentes immédiatement sur le document vendu à l'impression sur Amazon. Toutes les modifications effectuées durant l'année seront ajoutées d'un coup lors de la publication du nouveau tome. Par exemple, si *Le Dictionnaire de Bitcoin 2024* est publié en novembre 2023, et que votre proposition de modification est acceptée en février 2024, alors cette dernière sera présente sur la version vendue sur Amazon uniquement sur *Le Dictionnaire de Bitcoin 2025*. Cette nouvelle édition sera publiée l'année suivante, par exemple, en novembre 2024.
 
