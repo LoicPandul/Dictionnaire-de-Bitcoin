@@ -11,7 +11,8 @@
     "préimage",
     "hash",
     "mempools",
-    "dépensables"
+    "dépensables",
+    "wrappés"
   ],
   "showFrontmatter": true,
   "livePreview": true
