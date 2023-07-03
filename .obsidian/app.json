@@ -1,7 +1,7 @@
 {
   "showLineNumber": false,
   "strictLineBreaks": false,
-  "spellcheck": false,
+  "spellcheck": true,
   "spellcheckDictionary": [
     "&nbsp",
     "Base58Check",
