@@ -1,6 +1,6 @@
 {
   "showLineNumber": false,
-  "strictLineBreaks": false,
+  "strictLineBreaks": true,
   "spellcheck": true,
   "spellcheckDictionary": [
     "&nbsp",
