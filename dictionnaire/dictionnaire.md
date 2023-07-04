@@ -30,6 +30,11 @@ Merci et bonne lecture !
 &nbsp;
 
 
+
+# <div align="center">Contributeurs</div>
+
+
+
 # <div align="center">Sommaire</div>
 
 
@@ -1156,6 +1161,12 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
+**RÉUTILISATION D'ADRESSE -** 
+
+> *En anglais, on dit « Address Reuse ».*
+
+&nbsp;
+
 **RÉSEAU BITCOIN -** 
 
 &nbsp;
@@ -1669,8 +1680,6 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 **ZPUB -** Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
 
 &nbsp;
-
-
 
 
 
