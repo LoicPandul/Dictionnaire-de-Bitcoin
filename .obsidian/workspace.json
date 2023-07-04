@@ -132,12 +132,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,7 +149,7 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "7f01eb1e3ee05c45",
+  "active": "42ae521c98f4a3ee",
   "lastOpenFiles": [
     "dictionnaire/dictionnaire.md",
     "README.md",
