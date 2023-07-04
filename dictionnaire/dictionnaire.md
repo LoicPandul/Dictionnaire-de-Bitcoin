@@ -78,7 +78,7 @@ Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pou
 
 <table align="center">
   <tr>
-    <td align="center" width="200">
+    <td align="center" width="550">
       <img src="/dictionnaire/images/Arbre%20de%20Merkle.png" width="550"><br/>
     </td>
   </tr>
