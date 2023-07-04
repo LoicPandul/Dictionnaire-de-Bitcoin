@@ -1,11 +1,14 @@
-# <div align="center">***Le Dictionnaire de Bitcoin 2024***</div>
+# <div align="center">Le Dictionnaire de Bitcoin 2024</div>
 
 <div align="center">
 
 *Tout le vocabulaire technique de Bitcoin et de son environnement.*
 
-</div>
+Loïc Morel
 
+[Logo Pandul](/dictionnaire/images/Sch%C3%A9ma%20coinjoin%20wp.png)
+
+</div>
 
 &nbsp;
 
@@ -219,14 +222,9 @@ Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**C**</div>
+# <div align="center">C</div>
 
 &nbsp;
 
@@ -338,14 +336,9 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**D**</div>
+# <div align="center">D</div>
 
 &nbsp;
 
@@ -400,14 +393,9 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**E**</div>
+# <div align="center">E</div>
 
 &nbsp;
 
@@ -480,14 +468,8 @@ Dans le contexte spécifique de l'analyse de chaîne, l'entropie est également 
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**F**</div>
+# <div align="center">F</div>
 
 &nbsp;
 
@@ -545,14 +527,9 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**G**</div>
+# <div align="center">G</div>
 
 &nbsp;
 
@@ -595,14 +572,9 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**H**</div>
+# <div align="center">H</div>
 
 &nbsp;
 
@@ -666,14 +638,8 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**I**</div>
+# <div align="center">I</div>
 
 &nbsp;
 
@@ -708,14 +674,8 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**J**</div>
+# <div align="center">J</div>
 
 &nbsp;
 
@@ -739,14 +699,8 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**K**</div>
+# <div align="center">K</div>
 
 &nbsp;
 
@@ -768,14 +722,8 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**L**</div>
+# <div align="center">L</div>
 
 &nbsp;
 
@@ -819,14 +767,9 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**M**</div>
+# <div align="center">M</div>
 
 &nbsp;
 
@@ -877,14 +820,8 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**N**</div>
+# <div align="center">N</div>
 
 &nbsp;
 
@@ -950,14 +887,9 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**O**</div>
+# <div align="center">O</div>
 
 &nbsp;
 
@@ -998,14 +930,8 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**P**</div>
+# <div align="center">P</div>
 
 &nbsp;
 
@@ -1148,14 +1074,9 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**Q**</div>
+# <div align="center">Q</div>
 
 &nbsp;
 
@@ -1188,14 +1109,9 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**R**</div>
+# <div align="center">R</div>
 
 &nbsp;
 
@@ -1255,14 +1171,9 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**S**</div>
+# <div align="center">S</div>
 
 &nbsp;
 
@@ -1399,14 +1310,9 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**T**</div>
+# <div align="center">T</div>
 
 &nbsp;
 
@@ -1470,14 +1376,9 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
-# <div align="center">**U**</div>
+# <div align="center">U</div>
 
 &nbsp;
 
@@ -1527,19 +1428,12 @@ UTXO SET - Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existan
 
 
 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 &nbsp;
 
 &nbsp;
 
 
-# <div align="center">**V**</div>
+# <div align="center">V</div>
 
 &nbsp;
 
@@ -1576,19 +1470,12 @@ UTXO SET - Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existan
 
 
 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 &nbsp;
 
 &nbsp;
 
 
-# <div align="center">**W**</div>
+# <div align="center">W</div>
 
 &nbsp;
 
@@ -1645,14 +1532,8 @@ WATCH-ONLY WALLET -
 
 &nbsp;
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-# <div align="center">**X**</div>
+# <div align="center">X</div>
 
 &nbsp;
 
@@ -1703,22 +1584,12 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 
 
-
-
-
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 &nbsp;
 
 &nbsp;
 
 
-# <div align="center">**Y**</div>
+# <div align="center">Y</div>
 
 &nbsp;
 
@@ -1759,19 +1630,12 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 
 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 &nbsp;
 
 &nbsp;
 
 
-# <div align="center">**Z**</div>
+# <div align="center">Z</div>
 
 &nbsp;
 
