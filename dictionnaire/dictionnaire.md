@@ -6,7 +6,8 @@
 
 Loïc Morel
 
-[Logo Pandul](/dictionnaire/images/Sch%C3%A9ma%20coinjoin%20wp.png)
+<img src="/dictionnaire/images/Logo%20Pandul%20NOIR%20point%20bleu.png" width="200">
+
 
 </div>
 
