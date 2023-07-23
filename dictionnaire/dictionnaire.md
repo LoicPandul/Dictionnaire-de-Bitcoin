@@ -513,6 +513,10 @@ Dans le contexte spécifique de l'analyse de chaîne, l'entropie est également 
 
 &nbsp;
 
+**FEE SNIPING -**
+
+&nbsp;
+
 **FIAT -**
 
 &nbsp;
