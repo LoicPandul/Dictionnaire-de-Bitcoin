@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "dictionnaire/dictionnaire.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "dictionnaire/dictionnaire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "dictionnaire/dictionnaire.md"
               }
             }
           }
@@ -163,11 +163,11 @@
   },
   "active": "7d3f971dce5fa5bb",
   "lastOpenFiles": [
+    "README.md",
     "dictionnaire/dictionnaire.md",
     "dictionnaire/images/Logo Pandul NOIR point bleu.png",
     "dictionnaire/LICENSE_ENG.md",
     "dictionnaire/LICENCE_FR.md",
-    "README.md",
     "().md",
     "pull_request_template.md",
     "Sans titre",
