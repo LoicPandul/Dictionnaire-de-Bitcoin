@@ -36,9 +36,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "7d3f971dce5fa5bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dictionnaire/dictionnaire.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dictionnaire/dictionnaire.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,13 +161,13 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "7f01eb1e3ee05c45",
+  "active": "7d3f971dce5fa5bb",
   "lastOpenFiles": [
+    "dictionnaire/dictionnaire.md",
     "dictionnaire/images/Logo Pandul NOIR point bleu.png",
     "dictionnaire/LICENSE_ENG.md",
     "dictionnaire/LICENCE_FR.md",
     "README.md",
-    "dictionnaire/dictionnaire.md",
     "().md",
     "pull_request_template.md",
     "Sans titre",
