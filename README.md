@@ -8,7 +8,7 @@ Je gagne une petite marge sur chaque livre physique vendu via Amazon. Si vous tr
 
 La première publication du livre sera sa version de 2024. Si le projet intéresse et suscite de l'engagement, je publierai chaque année une nouvelle version actualisée de *Le Dictionnaire de Bitcoin*. Chaque nouvelle version incluera les modifications suggérées entre-temps par la communauté de contributeurs, ainsi que les nouveaux termes apparus lors de l’année précédente.
 
-Si vous ne souhaitez pas acheter le livre sur Amazon, mais que vous désirez tout de même soutenir le projet, vous pouvez également choisir de faire un don sur mon BIP47 : [+throbbingpond8B1​](https://paynym.is/+throbbingpond8B1)
+Si vous ne souhaitez pas acheter le livre sur Amazon, mais que vous désirez tout de même soutenir le projet, vous pouvez également choisir de me faire un don à [+throbbingpond8B1](https://paynym.is/+throbbingpond8B1) (BIP47) ou [loic@sats.pandul.fr](https://www.pandul.fr) (LN adresse).
 
 # Demandes de modification et contributions
 *Le Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :

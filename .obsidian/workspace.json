@@ -38,12 +38,12 @@
             }
           },
           {
-            "id": "7d3f971dce5fa5bb",
+            "id": "3a0d4b140940733d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dictionnaire/dictionnaire.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dictionnaire/dictionnaire.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dictionnaire/dictionnaire.md"
+                "file": "README.md"
               }
             }
           }
@@ -161,10 +161,13 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "7d3f971dce5fa5bb",
+  "active": "3a0d4b140940733d",
   "lastOpenFiles": [
+    "www.pandul.fr.md",
     "README.md",
     "dictionnaire/dictionnaire.md",
+    "LICENSE_ENG.md",
+    "LICENCE_FR.md",
     "dictionnaire/images/Logo Pandul NOIR point bleu.png",
     "dictionnaire/LICENSE_ENG.md",
     "dictionnaire/LICENCE_FR.md",
