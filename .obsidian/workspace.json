@@ -49,9 +49,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c39adc7d4a7c0a24",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.7"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -161,7 +171,7 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "3a0d4b140940733d",
+  "active": "c39adc7d4a7c0a24",
   "lastOpenFiles": [
     "www.pandul.fr.md",
     "README.md",
