@@ -924,7 +924,7 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-**MASTER FINGERPRINT -** 
+**MASTER FINGERPRINT -** Empreinte de 4 octets (32 bits) de la clé privée maîtresse dans un portefeuille hiérarchique déterministe (HD). Elle est obtenue en calculant le hash `SHA256` de la clé privée maîtresse, suivi d'un hash `RIPEMD160`, procédé désigné par `HASH160` sur Bitcoin. La Master Fingerprint sert à identifier un portefeuille HD, indépendamment des chemins de dérivation, mais en prenant en compte la présence ou non d'une passphrase. C'est une information concise qui permet de faire référence à l'origine d'un ensemble de clés, sans pour autant dévoiler des informations sensibles sur le portefeuille.
 
 &nbsp;
 
@@ -1005,7 +1005,11 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
-**NSEQUENCE -** 
+**NSEQUENCE -** (A RETRAVAILLER, JECROIS QUE C'EST PAS BIEN VRAI LOIC)
+
+Le champ `nSequence` (ou « input sequence ») dans une transaction Bitcoin est utilisé pour indiquer la manière dont une entrée est verrouillée dans le temps. À l'origine, il visait à permettre le remplacement dynamique de transactions dans les mempools afin de permettre un système de paiement en surcouche similaire à Lightning. Toutefois, son utilisation a évolué avec l'introduction de nouvelles fonctionnalités, telles que le verrouillage relatif via le BIP68. Le champ `nSequence` peut désormais spécifier un délai avant qu'une transaction soit incluse dans un bloc ou un numéro de bloc avant lequel la transaction ne peut être incluse.
+
+Ce champ est également utilisé pour le signalement de RBF. Si une transaction inclue un `nSequence` inférieur à `0xfffffffe`, alors elle pourra être remplacée via RBF.
 
 &nbsp;
 
@@ -1553,7 +1557,7 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**TXID (TRANSACTION IDENTIFIER)-** Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »).
+**TXID (TRANSACTION IDENTIFIER)-** Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité. Pour plus d'information, voir la définition de **WTXID**.
 
 
 
@@ -1679,7 +1683,7 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**WABISABI -**
+**WABISABI -** Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi. Pour plus d'informations, voir la définition de **CoinJoin**.
 
 &nbsp;
 
@@ -1687,11 +1691,11 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**WALLET IMPORT FORMAT (WIF) -**
+**WALLET IMPORT FORMAT (WIF) -** Méthode pour encoder une clé privée Bitcoin de manière à ce qu'elle puisse être importée ou exportée plus facilement entre différents portefeuilles. Le WIF est établi sur un encodage Base58Check, qui inclut des informations sur la version, la compression de la clé publique correspondante et une somme de contrôle pour la détection d'erreurs de saisie. Une clé privée WIF commence par les caractères `5` pour les clés non compressées, ou `K` et `L` pour les clés compressées, et contient tous les caractères nécessaires pour reconstituer la clé privée originale. Le format WIF fournit un moyen standardisé pour transférer une clé privée entre différents logiciels de portefeuille.
 
 &nbsp;
 
-**WASABI WALLET -**
+**WASABI WALLET -** Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités telles que le CoinJoin.
 
 &nbsp;
 
@@ -1703,7 +1707,12 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**WTXID -** 
+**WTXID -** Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction. Pour plus d'information, voir la définition de **TXID**.
+
+
+
+
+
 
 
 
