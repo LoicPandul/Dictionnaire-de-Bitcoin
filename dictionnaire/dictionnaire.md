@@ -1083,7 +1083,7 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 <table align="center">
   <tr>
     <td align="center" width="600">
-      <img src="/dictionnaire/images/" width="600"><br/>
+      <img src="/dictionnaire/images/Bloc obsolète.png" width="600"><br/>
     </td>
   </tr>
 </table>
