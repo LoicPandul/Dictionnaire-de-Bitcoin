@@ -1087,7 +1087,8 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
     </td>
   </tr>
 </table>
->*En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète.*
+
+> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète.*
 
 Pour plus d'informations, voir la définition de **ORPHELIN (BLOC)**.
 
