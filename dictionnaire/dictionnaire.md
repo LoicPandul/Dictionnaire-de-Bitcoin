@@ -57,26 +57,21 @@ Merci et bonne lecture !
 &nbsp;
 
 **ADAPTOR SIGNATURE -** Méthode cryptographique permettant de combiner une vraie signature avec une signature supplémentaire (appelée « adaptor signature ») pour révéler une donnée secrète. Cette méthode fonctionne telle que la connaissance de deux éléments parmi la signature valide, l'adaptor signature et le secret permet de déduire le troisième manquant. Une des propriétés intéressantes de cette méthode est que si nous connaissons l'adaptor signature de notre pair et le point spécifique sur la courbe elliptique lié au secret utilisé pour calculer cette adaptor signature, nous pouvons alors dériver notre propre adaptor signature qui correspondra avec le même secret, et ce, sans jamais avoir accédé directement au secret lui-même. Dans un échange entre deux parties prenantes ne se faisant pas confiance, cette technique permet un dévoilement simultané de deux informations sensibles entre les participants. Ce processus élimine la nécessité de confiance lors de transactions instantanées telles qu'un Coin Swap ou un Atomic Swap. Prenons un exemple pour bien comprendre. Alice et Bob souhaitent s'envoyer 1 BTC chacun, mais ils ne se font pas confiance. Ils vont donc utiliser des adaptors signatures pour annihiler le besoin de confiance envers l'autre partie dans cet échange (c'est donc un échange « atomique »). Ils procèdent comme ceci :
-- Alice initie cet échange atomique. Elle crée une transaction $mA$ qui envoie 1 BTC vers Bob. Elle crée une signature $sA$ qui permet de valider cette transaction grâce à sa clé privée $pA$ ($PA = pA \cdot G$), et en utilisant un nonce $nA$ et un secret $t$ ($NA = nA \cdot G$ et $T = t \cdot G$) : $$sA = nA + t + H(NA + T \parallel PA \parallel mA) \cdot pA$$
-- Alice calcule l'adaptor signature $sA'$ à partir du secret $t$ et de sa vraie signature $sA$ : $$
-sA' = sA - t
-$$
+- Alice initie cet échange atomique. Elle crée une transaction $mA$ qui envoie 1 BTC vers Bob. Elle crée une signature $sA$ qui permet de valider cette transaction grâce à sa clé privée $pA$ ($PA = pA \cdot G$), et en utilisant un nonce $nA$ et un secret $t$ ($NA = nA \cdot G$ et $T = t \cdot G$) : 
+$$sA = nA + t + H(NA + T \parallel PA \parallel mA) \cdot pA$$
+- Alice calcule l'adaptor signature $sA'$ à partir du secret $t$ et de sa vraie signature $sA$ :  
+$$ sA' = sA - t $$
 - Alice envoie à Bob son adaptor signature $sA'$, sa transaction non signée $mA$, le point correspondant au secret $T$ et le point correspondant au nonce $NA$. Nous appelons ces informations un « adaptor ». Notons qu'avec simplement ces informations, Bob n'est pas en capacité de récupérer le BTC d'Alice.
-- En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $sA'$ correspond bien à la transaction promise $mA$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide : $$
-sA' \cdot G = NA + H(NA + T \parallel PA \parallel mA) \cdot PA
-$$
-- Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $mB$ envoyant 1 BTC à Alice et sa propre adaptor signature $sB'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) : $$
-sB' = nB + H(NB + T \parallel PB \parallel mB) \cdot pB
-$$
-- Bob envoie à Alice son adaptor signature $sB'$, sa transaction non signée $mB$, le point correspondant au secret $T$ et le point correspondant au nonce $NB$. Alice peut désormais combiner l'adaptor signature de Bob $sB'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $sB$ pour la transaction $mB$ qui lui envoie le BTC de Bob : $$sB = sB' + t$$$$
-(sB' + t) \cdot G = NB + T + H(NB + T \parallel PB \parallel mB) \cdot PB
-$$
-- Alice diffuse cette transaction $mB$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $sB = sB' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :$$
-t = (sB' + t) - sB' = sB - sB'
-$$
-- Or, ce secret $t$ était la seule information manquante à Bob afin de produire la signature valide $sA$, à partir de l'adaptor signature d'Alice $sA'$, qui lui permettra de valider la transaction $mA$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $sA$ et diffuse à son tour la transaction $mA$ : $$sA = sA' + t$$ $$
-(sA' + t) \cdot G = NA + T + H(NA + T \parallel PA \parallel mA) \cdot PA
-$$
+- En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $sA'$ correspond bien à la transaction promise $mA$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide : 
+$$ sA' \cdot G = NA + H(NA + T \parallel PA \parallel mA) \cdot PA $$
+- Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $mB$ envoyant 1 BTC à Alice et sa propre adaptor signature $sB'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) : 
+$$sB' = nB + H(NB + T \parallel PB \parallel mB) \cdot pB$$
+- Bob envoie à Alice son adaptor signature $sB'$, sa transaction non signée $mB$, le point correspondant au secret $T$ et le point correspondant au nonce $NB$. Alice peut désormais combiner l'adaptor signature de Bob $sB'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $sB$ pour la transaction $mB$ qui lui envoie le BTC de Bob : 
+$$sB = sB' + t$$$$ (sB' + t) \cdot G = NB + T + H(NB + T \parallel PB \parallel mB) \cdot PB $$
+- Alice diffuse cette transaction $mB$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $sB = sB' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :
+$$t = (sB' + t) - sB' = sB - sB'$$
+- Or, ce secret $t$ était la seule information manquante à Bob afin de produire la signature valide $sA$, à partir de l'adaptor signature d'Alice $sA'$, qui lui permettra de valider la transaction $mA$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $sA$ et diffuse à son tour la transaction $mA$ : $$sA = sA' + t$$
+$$(sA' + t) \cdot G = NA + T + H(NA + T \parallel PA \parallel mA) \cdot PA$$
 
 &nbsp;
 
