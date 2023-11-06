@@ -986,13 +986,19 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**MINITAPSCRIPT -** 
+
+> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ».*
+
+&nbsp;
+
 **MODÈLE DE SCRIPT -** Template permettant l'utilisation de scripts standards. Un modèle de script est essentiellement une petite liste d'OPcodes mis ensembles pour former une norme qui spécifie une manière d'établir des conditions de dépenses sur des bitcoins. Exemples de modèles de script : P2PK, P2PKH, P2WPKH, P2SH...  
 
+&nbsp;
 
+**M-OF-N -** 
 
-
-
-
+&nbsp;
 
 
 
@@ -1455,6 +1461,10 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 &nbsp;
 
 **SCRIPT -** Langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Script est essentiellement une liste d'instructions, composée d'opérateurs logiques et de commandes pour manipuler la pile (stack). Il se matérialise par l'utilisation d'OPcodes qui donnent des instructions spécifiques qui sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
+
+&nbsp;
+
+**SCRIPTLESS SCRIPTS -**
 
 &nbsp;
 
