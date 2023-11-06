@@ -99,8 +99,8 @@ Où :
 **ANONSETS (ENSEMBLES D'ANONYMAT) -** Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d'un UTXO particulier. Plus spécifiquement, ils mesurent le nombre d'UTXOs indistinguables au sein de l'ensemble qui inclut la pièce en étudiée. Puisqu'il faut disposer d'un groupe d'UTXOs identiques, les anonsets sont généralement calculés au sein d'un cycle de CoinJoins. Il permettent, le cas échéant, de juger de la qualité des CoinJoins. Un anonset de grande taille signifie un niveau d'anonymat accru, car il devient difficile de distinguer un UTXO spécifique au sein de l'ensemble. Deux types d'anonsets existent :
 - L'ensemble d'anonymat prospectif ;
 - L'ensemble d'anonymat rétrospectif.
-Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en sortie, sachant l'UTXO en entrée. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse passé vers présent (entrée vers sortie). En anglais, le nom de cet indicateur est « forward anonset », ou « forward-looking metrics ». Le second indique le nombre de sources possibles pour une pièce donnée, sachant l'UTXO en sortie. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse présent vers passé (sortie vers entrée). En anglais, le nom de cet indicateur est « backward anonset », ou « backward-looking metrics ». Pour plus d'information, voir la définition « CoinJoin ».
-> *En anglais et en français, on parle parfois également de « score » pour évoquer l'anonset (score prospectif et score rétrospectif).*
+Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en sortie, sachant l'UTXO en entrée. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse passé vers présent (entrée vers sortie). En anglais, le nom de cet indicateur est « forward anonset », ou « forward-looking metrics ». Le second indique le nombre de sources possibles pour une pièce donnée, sachant l'UTXO en sortie. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse présent vers passé (sortie vers entrée). En anglais, le nom de cet indicateur est « backward anonset », ou « backward-looking metrics ».
+> *En anglais et en français, on parle parfois également de « score » pour évoquer l'anonset (score prospectif et score rétrospectif). Pour plus d'informations, voir la définition **COINJOIN**.*
 
 &nbsp;
 
@@ -158,7 +158,7 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 &nbsp;
 
-**BARE-MULTISIG -** Script de type P2MS. Voir définition de « P2MS ».
+**BARE-MULTISIG -** Script de type P2MS. Voir la définition de **P2MS**.
 
 &nbsp;
 
@@ -206,7 +206,8 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 &nbsp;
 
-**BIP39 -** Le BIP39 introduit une méthode pour convertir la graine aléatoire d'un portefeuille en une suite de mots mémorisables et lisibles par l'Homme, connue sous le nom de phrase mnémonique. Cette phrase, généralement composée de 12 ou de 24 mots, permet de regénérer l'ensemble des clés privées d'un portefeuille de manière déterministe. Ainsi, au lieu de devoir mémoriser ou stocker une graine cryptographique complexe, les utilisateurs peuvent sauvegarder leurs bitcoins via une phrase de quelques mots. Le BIP39 a ainsi contribué à simplifier la gestion d'un portefeuille Bitcoin. Pour plus de détails, voir la définition de **PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)**.
+**BIP39 -** Le BIP39 introduit une méthode pour convertir la graine aléatoire d'un portefeuille en une suite de mots mémorisables et lisibles par l'Homme, connue sous le nom de phrase mnémonique. Cette phrase, généralement composée de 12 ou de 24 mots, permet de regénérer l'ensemble des clés privées d'un portefeuille de manière déterministe. Ainsi, au lieu de devoir mémoriser ou stocker une graine cryptographique complexe, les utilisateurs peuvent sauvegarder leurs bitcoins via une phrase de quelques mots. Le BIP39 a ainsi contribué à simplifier la gestion d'un portefeuille Bitcoin.
+> *Pour plus d'informations, voir la définition **PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)**.*
 
 &nbsp;
 
@@ -431,7 +432,7 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 **CONDENSAT (HASH) -** Le condensat, dans le contexte de la cryptographie, désigne le résultat (ou l'output) produit par l'application d'une fonction de hachage cryptographique à un ensemble de données. Le condensat est une chaîne de caractères de taille fixe généralement représentée sous forme d'une série de chiffres et de lettres en notation hexadécimale (base 16). Ce résultat a la particularité d'être presque unique et spécifique aux données d'entrée, de sorte qu'un changement minime dans l'entrée produira un condensat complètement différent. Les fonctions de hachage cryptographiques sont conçues pour être unidirectionnelles et résistantes aux collisions, rendant très difficile de retrouver les données initiales à partir du condensat ou de trouver deux entrées distinctes produisant le même condensat.
 
-> *Voir la définition de « fonction de hachage » pour plus de précisions sur ce sujet.*
+> *Pour plus d'informations, voir la définition **FONCTION DE HACHAGE**.*
 
 &nbsp;
 
@@ -636,7 +637,8 @@ Dans le contexte spécifique de l'analyse de chaîne, l'entropie est également 
 
 &nbsp;
 
-**FIAT -**
+**FIAT -** Monnaie, souvent étatique, dont le cours est imposé par la force publique.
+> *Le terme de « fiat » est parfois traduit par « fiduciaire » bien que ce dernier terme ne prenne pas en compte la dimension de violence légitime qu'incarne le terme « fiat ». En français, il est souvent admis d'utiliser directement le terme anglais de « fiat ».*
 
 &nbsp;
 
@@ -825,7 +827,7 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-**INPUT -** Voir définition du terme « Entrée ».
+**INPUT -** Voir la définition du terme **ENTRÉE**.
 
 
 
@@ -953,11 +955,12 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-**MAPPER (TO MAP) -** Dans le contexte de l'informatique et du traitement des données, mapper désigne le processus d'associer des éléments d'un ensemble de données à des éléments d'un autre ensemble de données de manière systématique et cohérente. Cette association permet aux données du premier ensemble de se substituer à celles du second ensemble ou de transitionner de l'un à l'autre. Cette technique est souvent utilisée dans les opérations de transformation de données, la programmation orientée objet, et le mappage objet-relationnel, où il est essentiel de convertir et de correspondre les données entre différents formats ou structures.
+**MAPPER (TO MAP) -** Dans le contexte de l'informatique, mapper désigne le processus d'associer des éléments d'un ensemble de données à des éléments d'un autre ensemble de données de manière systématique. Cette association permet aux données du premier ensemble de se substituer à celles du second ensemble ou de transitionner de l'un à l'autre. Cette technique est souvent utilisée dans les opérations de transformation de données.
 
 &nbsp;
 
 **MAST (MERKELISED ALTERNATIVE SCRIPT TREE)-** Technique employant un arbre de Merkle pour résumer un nombre arbitraire de conditions de dépenses sélectionnées par l'utilisateur dans une adresse de réception, dont une doit être remplie pour dépenser les bitcoins concernés. L'utilisation d'un arbre de Merkle permet à l'utilisateur de choisir quelle condition il souhaite remplir sans révéler les détails des autres conditions sur la blockchain. Cela permet de réduire les frais liés à ces scripts, de créer des conditions beaucoup plus lourdes et, sur un temps plus long, d'améliorer la confidentialité de l'utilisateur (en plus de l'utilisation conjointe de Schnorr). Ce concept a fait l'objet de plusieurs propositions, mais il a finalement était ajouté à Bitcoin via le soft fork Taproot en 2021.
+> *Initialement, « MAST » était l'acronyme de « Merklized Abstract Syntax Tree ». L'utilisation qui en est faite dans le cadre de Taproot n'a plus rien à voir avec un « Abstract Syntax Tree ». Toutefois, les utilisateurs continuaient d'employer ce terme de MAST. Anthony Towns a donc proposé de modifier la signification initiale tout en conservant cet acronyme largement employé avec : « Merklized Alternative Script Trees ».*
 
 &nbsp;
 
@@ -986,9 +989,9 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
-**MINITAPSCRIPT -** 
+**MINITAPSCRIPT -** Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript.
 
-> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ».*
+> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **MINISCRIPT** et de **TAPSCRIPT**.*
 
 &nbsp;
 
@@ -1052,7 +1055,8 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
-**NVERSION -** Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du format de transaction utilisé. Il permet au réseau de distinguer les différentes évolutions du format de transaction au fil du temps, et d'appliquer les règles correspondantes. Ce champ n'a aucun impact au niveau des règles de consensus. Cela signifie que toute valeur attribuée à ce champ n'entraîne pas l'invalidation de la transaction. En revanche, le champ `nVersion` dispose de règles de standardisation qui n'acceptent que la valeur de `1` et de `2` actuellement. Pour le moment, ce champ est seulement utile pour l'activation du champ `nSequence`. Pour plus d'informations, voir la définition de **NSEQUENCE**.
+**NVERSION -** Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du format de transaction utilisé. Il permet au réseau de distinguer les différentes évolutions du format de transaction au fil du temps, et d'appliquer les règles correspondantes. Ce champ n'a aucun impact au niveau des règles de consensus. Cela signifie que toute valeur attribuée à ce champ n'entraîne pas l'invalidation de la transaction. En revanche, le champ `nVersion` dispose de règles de standardisation qui n'acceptent que la valeur de `1` et de `2` actuellement. Pour le moment, ce champ est seulement utile pour l'activation du champ `nSequence`.
+> *Pour plus d'informations, voir la définition **NSEQUENCE**.*
 
 &nbsp;
 
@@ -1105,9 +1109,7 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
   </tr>
 </table>
 
-> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète.*
-
-Pour plus d'informations, voir la définition de **ORPHELIN (BLOC)**.
+> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **ORPHELIN (BLOC)**.*
 
 &nbsp;
 
@@ -1134,17 +1136,15 @@ Pour plus d'informations, voir la définition de **ORPHELIN (BLOC)**.
 &nbsp;
 
 **ORPHELIN (BLOC) -** Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin. Cependant, dans l'usage courant, l'expression « bloc orphelin » fait souvent référence à un bloc sans enfant : un bloc valide mais non retenu dans la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Le réseau finit par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ».
->*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage.*
-
-Pour plus d'informations, voir la définition de **OBSOLÈTE (BLOC)**.
+>*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de **OBSOLÈTE (BLOC)**.*
 
 &nbsp;
 
-**OU EXCLUSIF -** Voir la définition du terme « Xor ».
+**OU EXCLUSIF -** Voir la définition du terme **XOR**.
 
 &nbsp;
 
-**OUTPUT -** Voir définition du terme « Sortie ».
+**OUTPUT -** Voir définition du terme **SORTIE**.
 
 
 
@@ -1282,7 +1282,7 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 
 &nbsp;
 
-**PORTEFEUILLE FROID -** Voir la définition de « Hardware Wallet ».
+**PORTEFEUILLE FROID -** Voir la définition de **HARDWARE WALLET**.
 
 &nbsp;
 
@@ -1364,7 +1364,7 @@ PSBT
 
 **RACINE DE MERKLE -** Condensat ou « top hash » d'un arbre de Merkle, qui représente un résumé de toutes les informations présentes dans l'arbre. Un arbre de Merkle est une structure d'accumulateur cryptographique, parfois également nommée « arbre de hachage ». Dans le cadre de Bitcoin, des arbres de Merkle sont utilisés pour organiser les transactions dans un bloc et pour faciliter la vérification rapide de l'inclusion d'une transaction spécifique. Ainsi, dans les blocs de Bitcoin, la racine de Merkle est obtenue en hachant de manière successive les transactions par paires jusqu'à ce qu'il ne reste qu'un seul hachage (la racine de Merkle). Cette dernière est ensuite incluse dans l'en-tête du bloc correspondant. On retrouve également cette structure dans UTREEXO, une structure permettant de condenser l'UTXO set des nœuds, et dans le MAST Taproot.
 
-> *Voir la définition d'« Arbre de Merkle » pour plus d'informations.*
+> *Voir la définition d'**ARBRE DE MERKLE** pour plus d'informations.*
 
 &nbsp;
 
@@ -1406,7 +1406,7 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 **RIPEMD160 -** Acronyme de *Research and development in Advanced Communications technologies in Europe Integrity Primitives Evaluation Message Digest 160*, est une fonction de hachage cryptographique qui génère un condensat de 160 bits à partir d'une entrée arbitraire. Elle est utilisée sur Bitcoin pour transformer une clé publique en une adresse de réception. Le processus implique d'abord l'application de la fonction de hachage `SHA256` sur la clé publique, suivie de l'application de `RIPEMD160` sur le résultat. Cette combinaison de deux fonctions de hachage distinctes est connue sous le nom de `HASH160` dans le contexte de Bitcoin. `RIPEMD160` est également utilisé dans les portefeuilles déterministes et hiérarchiques pour calculer des empreintes de clés. On utilise notamment `HASH160` pour calculer l'empreinte d'une clé parent, ensuite incluse dans les métadonnées d'une clé étendue (xpub).
 
-> *Pour en savoir plus, voir la définition de « Fonction de hachage ».*
+> *Pour plus d'informations, voir la définition **FONCTION DE HACHAGE**.*
 
 &nbsp;
 
@@ -1500,13 +1500,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 **SHA256 -** Sigle pour « Secure Hash Algorithm 256 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 256 bits. Conçue par la *National Security Agency* (NSA) au début des années 2000, elle est devenue une norme fédérale pour le traitement des données sensibles. Dans le protocole Bitcoin, la fonction `SHA256` est omniprésente. Elle est employée pour hacher les entêtes des blocs dans le cadre de la preuve de travail. `SHA256` est également utilisée dans le processus de dérivation d'une adresse de réception à partir d'une clé publique. On l'utilise également pour l'agrégation des transactions et des témoins au sein des arbres de Merkle dans les blocs. On retrouve aussi `SHA256` dans le calcul d'empreinte de clés, le calcul de certaines sommes de contrôle et dans de nombreux autres processus autour de Bitcoin. Lorsqu'elle est appliquée deux fois de suite, on parle d'un `HASH256`. Cette double application est celle utilisée majoritairement sur Bitcoin. Lorsque `SHA256` est utilisé conjointement à la fonction `RIPEMD160`, on parle d'un `HASH160`. Ce double hachage est utilisé pour les empreintes de clés et pour le hachage de clés publiques. La fonction `SHA256` fait partie de la famille des SHA 2.
 
-> *Pour en savoir plus, voir la définition de « Fonction de hachage ».*
+> *Pour plus d'informations, voir la définition **FONCTION DE HACHAGE**.*
 
 &nbsp;
 
 **SHA512 -** Sigle pour « Secure Hash Algorithm 512 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 512 bits. Elle a été conçue par la *National Security Agency* (NSA) au début des années 2000. Dans le protocole Bitcoin, la fonction `SHA512` est exclusivement utilisée dans le cadre des dérivations de clés enfants. Dans ce processus, elle est utilisée plusieurs fois dans l'algorithme `HMAC`, ainsi que dans la fonction de dérivation de clés `PBKDF2`. La fonction `SHA512` fait partie de la famille des SHA 2, comme `SHA256`. Son fonctionnement est d'ailleurs très similaire à cette dernière.
 
-> *Pour en savoir plus, voir la définition de « Fonction de hachage ».*
+> *Pour plus d'informations, voir la définition **FONCTION DE HACHAGE**.*
 
 &nbsp;
 
@@ -1560,7 +1560,7 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**Synchronisation initiale d'un nœud (IBD) -** Voir la définition de « Initial Block Download (IBD) ».
+**Synchronisation initiale d'un nœud (IBD) -** Voir la définition de **INITIAL BLOCK DOWNLOAD (IBD)**.
 
 
 
@@ -1595,13 +1595,17 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**TAPROOT -** Mise à jour majeure du protocole Bitcoin, adoptée par le biais d'un soft fork en novembre 2021. Cette mise à jour apporte des améliorations significatives en termes de confidentialité, d'efficacité et de flexibilité. Elle permet l'utilisation du protocole de Schnorr et l'utilisation d'un script qui peut être révélé lors de la dépense. Le protocole de Schnorr, intégré à cette mise à jour, est un algorithme de signature numérique établi sur la cryptographie sur les courbes elliptiques (ECC), comme ECDSA. Dans le contexte de Bitcoin, Schnorr est utilisé pour générer une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Comme ECDSA sur Bitcoin, Schnorr utilise la courbe elliptique `secp256k1`, définie par l'équation $y^2 = x^3 + 7$. Les bitcoins bloqués avec Taproot peuvent être dépensés soit en satisfaisant l'un des scripts, soit en fournissant une signature valide correspondant à la clé publique, ce qui permet de garder les scripts privés. On y utilise MAST pour permettre l'utilisation de plusieurs scripts. N'importe lequel peut-être utiliser pour dépenser les bitcoins associés. Cela permet des fonctionnalités plus complexes et des contrats intelligents plus sophistiqués.
+**TAPROOT -** Mise à jour majeure du protocole Bitcoin, adoptée par le biais d'un soft fork en novembre 2021. Cette mise à jour apporte des améliorations significatives en termes de confidentialité, d'efficacité et de flexibilité. Elle permet l'utilisation du protocole de Schnorr et l'utilisation d'un script qui peut être révélé lors de la dépense. Le protocole de Schnorr, intégré à cette mise à jour, est un algorithme de signature numérique établi sur la cryptographie sur les courbes elliptiques (ECC), comme ECDSA. Dans le contexte de Bitcoin, Schnorr est utilisé pour générer une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Comme ECDSA sur Bitcoin, Schnorr utilise la courbe elliptique `secp256k1`, définie par l'équation $y^2 = x^3 + 7$. Les bitcoins bloqués avec Taproot peuvent être dépensés soit en satisfaisant l'un des scripts, soit en fournissant une signature valide correspondant à la clé publique, ce qui permet de garder les scripts privés. On y utilise un MAST pour permettre l'utilisation de plusieurs scripts. N'importe lequel peut-être utiliser pour dépenser les bitcoins associés. Cela permet des fonctionnalités plus complexes et des contrats intelligents plus sophistiqués.
 
-> *Pour plus d'informations, voir la définition de « Schnorr (protocole) ».*
+> *Pour plus d'informations, voir la définition de **SCHNORR (PROTOCOLE)**.*
 
 &nbsp;
 
-**TAPSCRIPT -**
+**TAPSCRIPT -** Mise à jour qui a pour objet de modifier certains opcodes du langage de script classique de Bitcoin, afin de définir le nouveau langage de script utilisé pour les dépenses Taproot. Tapscript a été introduit par le BIP342 au sein du soft fork SegWit.
+
+Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'est avéré nécessaire de revisiter le langage de script. C'est là l'objet de Tapscript qui désactive ou modifie certains opcodes, et vient en ajouter de nouveaux. 
+
+> *Pour plus d'informations, voir la définition de **SCHNORR (PROTOCOLE)** et de **TAPROOT**.*
 
 &nbsp;
 
@@ -1621,11 +1625,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**TPRV -** Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. Pour plus d'information, voir la définition « Clé étendue ».
+**TPRV -** Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet.
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
-**TPUB -** Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. Pour plus d'information, voir la définition « Clé étendue ».
+**TPUB -** Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
@@ -1641,7 +1647,8 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**TXID (TRANSACTION IDENTIFIER)-** Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité. Pour plus d'information, voir la définition de **WTXID**.
+**TXID (TRANSACTION IDENTIFIER)-** Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité.
+> *Pour plus d'informations, voir la définition **WTXID**.*
 
 
 
@@ -1666,11 +1673,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**UPRV -** Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin Testnet. Pour plus d'information, voir la définition « Clé étendue ».
+**UPRV -** Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
-**UPUB -** Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin Testnet. Pour plus d'information, voir la définition « Clé étendue ».
+**UPUB -** Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
@@ -1689,7 +1698,7 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 **UTXO SET -** Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un moment donné. Autrement dit, c'est une grosse liste de tous les différents morceaux de bitcoins qui attendent d'être dépensés. Si l'on additionne les montants de tous les UTXOs de l'UTXO set, cela nous donne la masse monétaire totale de bitcoins en circulation. Chaque nœud du réseau Bitcoin conserve son propre UTXO set en temps réel. Il l'actualise au fur et à mesure de la confirmation de nouveaux blocs valides, avec les transactions qu'ils incluent, qui consomment certains UTXOs de l'UTXO set, et qui en créent de nouveaux en contrepartie. Cet UTXO set est conservé par chaque nœud afin de pouvoir vérifier rapidement si les UTXOs dépensés dans les transactions sont bien légitimes. Cela leur permet de détecter et de rejeter les tentatives de doubles dépenses. L'UTXO set est souvent au cœur d'inquiétudes sur la décentralisation de Bitcoin, car sa taille augmente naturellement très rapidement. Puisqu'il faut en conserver une partie en RAM pour pouvoir procéder à la vérification des transactions en temps raisonnable, il est possible que l'UTXO set rende progressivement l'opération d'un nœud complet trop couteuse. L'UTXO set a également un fort impact sur l'IBD (Initial Block Download). Au plus on peut mettre une grande part de l'UTXO en RAM, au plus l'IBD est rapide.
 
-> *Voir la définition du terme « UTXO » pour plus de précisions.*
+> *Voir la définition du terme **UTXO** pour plus de précisions.*
 
 
 
@@ -1725,11 +1734,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**VPRV -** Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin Testnet. Pour plus d'information, voir la définition « Clé étendue ».
+**VPRV -** Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
-**VPUB -** Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testnet. Pour plus d'information, voir la définition « Clé étendue ».
+**VPUB -** Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
@@ -1767,11 +1778,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**WABISABI -** Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi. Pour plus d'informations, voir la définition de **CoinJoin**.
+**WABISABI -** Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi.
+> *Pour plus d'informations, voir la définition **COINJOIN**.*
 
 &nbsp;
 
-**WALLET -** Traduction anglaise de « portefeuille ». Voir la définition de « portefeuille » pour plus d'informations.
+**WALLET -** Traduction anglaise de « portefeuille ».
+> *Pour plus d'informations, voir la définition **PORTEFEUILLE**.*
 
 &nbsp;
 
@@ -1787,11 +1800,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**WHIRLPOOL -** Protocole de CoinJoin développé par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android). Pour plus d'information, voir la définition « CoinJoin ».
+**WHIRLPOOL -** Protocole de CoinJoin développé par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
+> *Pour plus d'informations, voir la définition **COINJOIN**.*
 
 &nbsp;
 
-**WTXID -** Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction. Pour plus d'information, voir la définition de **TXID**.
+**WTXID -** Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction.
+> *Pour plus d'informations, voir la définition **TXID**.*
 
 
 
@@ -1853,11 +1868,13 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 &nbsp;
 
-**XPRV -** Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
+**XPRV -** Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
-**XPUB -** Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
+**XPUB -** Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
@@ -1886,11 +1903,13 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 &nbsp;
 
-**YPRV -** Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
+**YPRV -** Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
-**YPUB -** Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
+**YPUB -** Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
@@ -1932,11 +1951,13 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 &nbsp;
 
-**ZPRV -** Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
+**ZPRV -** Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
-**ZPUB -** Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin. Pour plus d'information, voir la définition « Clé étendue ».
+**ZPUB -** Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin. 
+> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
 
 &nbsp;
 
