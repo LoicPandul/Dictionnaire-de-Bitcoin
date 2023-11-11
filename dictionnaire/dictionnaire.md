@@ -226,6 +226,10 @@ Assume UTXO permet donc d'accélérer la préparation d'un nouveau nœud Bitcoin
 
 &nbsp;
 
+**BIG-ENDIAN -** gros-boutiste
+
+&nbsp;
+
 **BIP (BITCOIN IMPROVEMENT PROPOSAL) -** Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes. Inspiré du processus des Python Enhancement Proposals (PEP), le BIP vise à faciliter la communication et la collaboration entre les développeurs, les chercheurs, les utilisateurs et les parties prenantes de l'écosystème Bitcoin. Le processus BIP assure une approche structurée et transparente pour l'évaluation et l'adoption de nouvelles fonctionnalités, optimisations et mises à jour. Chaque BIP est un document détaillé qui décrit précisément les objectifs de l'amélioration proposée, la justification de sa mise en œuvre, les éventuels problèmes de compatibilité, les avantages et les inconvénients. Il décrit également les étapes techniques nécessaires pour réaliser l'amélioration. Les BIP peuvent être rédigés par n'importe qui. Ils doivent cependant être soumis à un examen approfondi et à l'approbation d'autres membres de la communauté Bitcoin.
 
 > *BIP est l'acronyme anglais pour « Bitcoin Improvment Proposal ». En français, on peut le traduire par « Proposition d'amélioration de Bitcoin ». Toutefois, la plupart des textes français utilisent directement l'acronyme « BIP » comme un nom commun, parfois au féminin, parfois au masculin.*
@@ -329,6 +333,10 @@ Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec 
 &nbsp;
 
 **BLOCKSTREAM -** Entreprise spécialisée dans le développement de solutions autour de Bitcoin. Blockstream est la base de la side chain Liquid, de l'implémentation du Lightning Network Core Lightning ou encore des portefeuilles Jade et Green. Elle est également connue pour employer un grand nombre de développeurs Bitcoin Core. La société Blockstream est actuellement dirigée par le cypherpunk et cryptographe Adam Back, l'inventeur de Hashcash, le protocole qui a inspiré la preuve de travail sur Bitcoin.
+
+&nbsp;
+
+**BOUTISME -** endianness 
 
 &nbsp;
 
@@ -596,6 +604,10 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
+**ENDIANNESS -** boutisme 
+
+&nbsp;
+
 **ENTÊTE DE BLOC -** 
 L'entête de bloc est une structure de données servant de composant principal dans la construction d'un bloc Bitcoin. Chaque bloc est composé d'un entête et d'une liste de transactions. L'entête de bloc contient les informations cruciales qui permettent d'assurer l'intégrité et la validité d'un bloc au sein de la chaîne de blocs (blockchain). L'entête de bloc contient 80 octets de métadonnées et se compose des éléments suivants :
 * La version du bloc ;
@@ -759,9 +771,13 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
+**GROS-BOUTISTE -** big endian
+
+&nbsp;
+
 **GUI -** Acronyme de « Graphical user interface », ou « interface graphique utilisateur » en français. C'est une forme d'interface utilisateur qui permet d'interagir avec des logiciels à travers des éléments visuels interactifs (boutons, icônes, images, fenêtres...) et qui privilégie l'utilisation de dispositifs de pointage (la souris) plutôt que de commandes textuelles comme avec la CLI.
 
-
+&nbsp;
 
 
 
@@ -956,6 +972,10 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 &nbsp;
 
 **LIGHTNING NETWORK -** Protocole de couche supérieure, construit au-dessus du protocole Bitcoin, visant à permettre des transactions rapides et à faible coût. Il permet la création de canaux de paiement entre les participants, au sein desquels les transactions peuvent être effectuées presque instantanément et avec des frais minimes, sans avoir à enregistrer chaque transaction individuellement sur la blockchain. Les canaux peuvent rester ouverts quasi indéfiniment, et ne nécessitent des transactions sur la blockchain que lors de leur ouverture et de leur clôture. Le Lightning Network vise à améliorer la scalabilité de Bitcoin et à rendre possible son utilisation pour des paiements de faible valeur. Toutefois, le Lightning Network n’est pas une solution parfaite. Ce protocole a une tendance naturelle à la centralisation sur de gros nœuds institutionnels. Il peut également être difficile de l’utiliser durant les périodes de très fortes congestions, comme on a pu le voir durant l’épisode BRC-20 en mai 2023. Aussi, sa structure rend très complexe la confidentialité des paiements.
+
+&nbsp;
+
+**LITTLE-ENDIAN -** Petit-boutiste.
 
 &nbsp;
 
@@ -1159,6 +1179,10 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**OCTET (BYTE) -** 
+
+&nbsp;
+
 **OFFCHAIN -** 
 
 &nbsp;
@@ -1167,7 +1191,25 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**OP_0 (`0X00`) -** Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
+> *OP_0 est identique à **OP_FALSE**.*
+
+&nbsp;
+
 **OP_BOOLAND (`0X9A`) -** Reproduit le comportement d'une porte logique `AND`. Il prend deux valeurs au sommet de la pile et renvoie `1` seulement si les deux valeurs sont non nulles. Dans le cas contraire, il renvoie `0`.
+
+&nbsp;
+
+**OP_EQUAL (`0X87`) -** Compare les deux valeurs les plus hautes de la pile et pousse 1 sur la pile si elles sont égales, sinon pousse 0. OP_EQUAL permet de vérifier l'égalité des données dans les scripts de transaction.
+
+&nbsp;
+
+**OP_EQUALVERIFY (`0X88`) -** Combine les fonctions de OP_EQUAL et OP_VERIFY. Il vérifie d'abord l'égalité des deux valeurs supérieures de la pile, puis exige que le résultat soit non nul, faute de quoi la transaction est invalide. OP_EQUALVERIFY est notamment utilisé dans les scripts de vérification d'adresse.
+
+&nbsp;
+
+**OP_FALSE (`0X00`) -** Identique à OP_0.
+> *Pour plus d'informations, voir la définition de **OP_0**.*
 
 &nbsp;
 
@@ -1175,7 +1217,23 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**OP_PUSHDATA1 (`0x4C`) -** Pousse une certaine quantité de données sur la pile. Il est suivi d'un octet qui indique la longueur des données à pousser (jusqu'à 255 octets). Cet opcode est utilisé pour inclure des données de taille variable dans les scripts.
+
+&nbsp;
+
+**OP_PUSHDATA2 (`0x4D`) -** Permet de pousser une grande quantité de données sur la pile. Il est suivi de deux octets (petit-boutistes) qui spécifient la longueur des données à pousser (jusqu'à 65535 octets). Il est utilisé pour insérer des données plus volumineuses dans les scripts.
+
+&nbsp;
+
+**OP_PUSHDATA4 (`0x4E`) -** Permet de pousser une très grande quantité de données sur la pile. Il est suivi de quatre octets (petit-boutistes) qui indiquent la longueur des données à pousser (jusqu'à 4 294 967 295 octets). Cet opcode est utilisé pour insérer de très grandes données dans les scripts, bien que son usage soit extrêmement rare en raison des limitations pratiques de la taille des transactions.
+
+&nbsp;
+
 **OP_RETURN (`0X6A`) -** Signale un script invalide, ce qui rend l'output qui le contient comme non dépensable de manière prouvée. Les nœuds du réseau peuvent donc supprimer cet output de leurs UTXO set. L'OP_RETURN est souvent utilisé pour inscrire des données arbitraires dans la blockchain.
+
+&nbsp;
+
+**OP_VERIFY (`0X69`)-** Exige que la valeur du sommet de la pile soit non nulle (vraie). La transaction est invalide si ce n'est pas le cas. OP_VERIFY est utilisé pour confirmer les conditions des scripts.
 
 &nbsp;
 
@@ -1299,6 +1357,10 @@ Techniquement, le script `P2PK` contient une clé publique et une instruction qu
 &nbsp;
 
 **PÉRIODE DE MATURITÉ -** 
+
+&nbsp;
+
+**PETIT-BOUTISTE -** little endian
 
 &nbsp;
 
