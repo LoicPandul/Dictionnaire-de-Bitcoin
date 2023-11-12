@@ -1207,7 +1207,21 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 &nbsp;
 
 **OP_0 (`0X00`) -** Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
-> *OP_0 est identique à **OP_FALSE**.*
+> *OP_0 est identique à **OP_FALSE** et **OP_PUSHNUM_0**.*
+
+&nbsp;
+
+**OP_1 (`0X51`) -** Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
+> *OP_1 est identique à **OP_TRUE** et **OP_PUSHNUM_1**.*
+
+&nbsp;
+
+**OP_1NEGATE (`0X4F`) -** Pousse la valeur `-1` sur la pile. Cet opcode est utilisé dans les scripts pour représenter la valeur négative `-1`.
+
+&nbsp;
+
+**OP_2 - OP_16 (`0X52` - `0X60`) -** Les opcodes de OP_2 jusqu'à OP_16 poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de ScriptPubKey pour un multisig 2/3 : `OP_2 Clé publique A Clé publique B Clé publique C OP_3 OP_CHECKMULTISIG`
+> *Tous ces opcodes sont parfois également nommés **OP_PUSHNUM_N**.*
 
 &nbsp;
 
@@ -1245,6 +1259,11 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 &nbsp;
 
 **OP_RETURN (`0X6A`) -** Signale un script invalide, ce qui rend l'output qui le contient comme non dépensable de manière prouvée. Les nœuds du réseau peuvent donc supprimer cet output de leurs UTXO set. L'OP_RETURN est souvent utilisé pour inscrire des données arbitraires dans la blockchain.
+
+&nbsp;
+
+**OP_TRUE (`0X51`) -** Identique à OP_1.
+> *Pour plus d'informations, voir la définition de **OP_1**.*
 
 &nbsp;
 
