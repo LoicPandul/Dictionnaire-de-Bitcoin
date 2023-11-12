@@ -109,6 +109,10 @@ Notons que les deux premières heuristiques sur Bitcoin ont été formulées par
 
 &nbsp;
 
+**ANCRAGE BILATÉRAL -** 
+
+&nbsp;
+
 **ANONSETS (ENSEMBLES D'ANONYMAT) -** Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d'un UTXO particulier. Plus spécifiquement, ils mesurent le nombre d'UTXOs indistinguables au sein de l'ensemble qui inclut la pièce en étudiée. Puisqu'il faut disposer d'un groupe d'UTXOs identiques, les anonsets sont généralement calculés au sein d'un cycle de CoinJoins. Il permettent, le cas échéant, de juger de la qualité des CoinJoins. Un anonset de grande taille signifie un niveau d'anonymat accru, car il devient difficile de distinguer un UTXO spécifique au sein de l'ensemble. Deux types d'anonsets existent :
 - L'ensemble d'anonymat prospectif ;
 - L'ensemble d'anonymat rétrospectif.
@@ -547,8 +551,11 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 **DOUBLE-DÉPENSE -** 
 
+&nbsp;
 
+**DRIVECHAIN -** 
 
+&nbsp;
 
 
 
@@ -693,6 +700,10 @@ Dans le contexte spécifique de l'analyse de chaîne, l'entropie est également 
 
 **FIAT -** Monnaie, souvent étatique, dont le cours est imposé par la force publique.
 > *Le terme de « fiat » est parfois traduit par « fiduciaire » bien que ce dernier terme ne prenne pas en compte la dimension de violence légitime qu'incarne le terme « fiat ». En français, il est souvent admis d'utiliser directement le terme anglais de « fiat ».*
+
+&nbsp;
+
+**FIDELITY BONDS -** 
 
 &nbsp;
 
@@ -1031,6 +1042,10 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 &nbsp;
 
 **MASTER FINGERPRINT -** Empreinte de 4 octets (32 bits) de la clé privée maîtresse dans un portefeuille hiérarchique déterministe (HD). Elle est obtenue en calculant le hash `SHA256` de la clé privée maîtresse, suivi d'un hash `RIPEMD160`, procédé désigné par `HASH160` sur Bitcoin. La Master Fingerprint sert à identifier un portefeuille HD, indépendamment des chemins de dérivation, mais en prenant en compte la présence ou non d'une passphrase. C'est une information concise qui permet de faire référence à l'origine d'un ensemble de clés, sans pour autant dévoiler des informations sensibles sur le portefeuille.
+
+&nbsp;
+
+**MAX_BLOC_SIZE -** constante
 
 &nbsp;
 
@@ -1630,6 +1645,10 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
+**SIDECHAIN -** 
+
+&nbsp;
+
 **SIGNATURE NUMÉRIQUE -** Preuve cryptographique qui démontre la possession d'une clé privée spécifique, associée à une clé publique unique, sans avoir à la divulguer. Sur Bitcoin, on la construit à l'aide de la clé privée et du hash d'une transaction. Elle atteste la propriété des bitcoins concernés et permet de satisfaire les conditions de dépense. Elle est générée grâce à un algorithme de signature numérique sur courbe elliptique tel qu'ECDSA ou le protocole de Schnorr.
 
 &nbsp;
@@ -1763,10 +1782,14 @@ Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'
 
 &nbsp;
 
+**TWO-WAY PEG -** 
+
+&nbsp;
+
 **TXID (TRANSACTION IDENTIFIER)-** Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité.
 > *Pour plus d'informations, voir la définition **WTXID**.*
 
-
+&nbsp;
 
 
 
@@ -1809,6 +1832,14 @@ Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'
 &nbsp;
 
 **UTXO -** Sigle de *Unspent Transaction Output*. Un UTXO est une sortie de transaction qui n'a pas encore été dépensée ou utilisée comme entrée pour une nouvelle transaction. Les UTXOs représentent la fraction de bitcoins que possède un utilisateur et qui sont actuellement disponibles pour être dépensés. Chaque UTXO est associé à un script de sortie spécifique, qui définit les conditions nécessaires pour dépenser les bitcoins. Les transactions dans Bitcoin consomment ces UTXOs en entrées (inputs) et créent de nouveaux UTXOs en sorties (outputs). Le modèle d'UTXO est fondamental sur Bitcoin, car il permet de vérifier facilement que les transactions n'essaient pas de dépenser des bitcoins qui n'existent pas ou qui ont déjà été dépensés.
+
+&nbsp;
+
+**UTXO COMMITMENTS -** 
+
+&nbsp;
+
+**UTXO HASH SET (UHS) -** 
 
 &nbsp;
 
