@@ -1229,16 +1229,20 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
-**OP_EQUAL (`0X87`) -** Compare les deux valeurs les plus hautes de la pile et pousse 1 sur la pile si elles sont égales, sinon pousse 0. OP_EQUAL permet de vérifier l'égalité des données dans les scripts de transaction.
+**OP_EQUAL (`0X87`) -** Compare les deux valeurs les plus hautes de la pile et pousse `1` sur la pile si elles sont égales, sinon pousse 0. `OP_EQUAL` permet de vérifier l'égalité des données dans les scripts de transaction.
 
 &nbsp;
 
-**OP_EQUALVERIFY (`0X88`) -** Combine les fonctions de OP_EQUAL et OP_VERIFY. Il vérifie d'abord l'égalité des deux valeurs supérieures de la pile, puis exige que le résultat soit non nul, faute de quoi la transaction est invalide. OP_EQUALVERIFY est notamment utilisé dans les scripts de vérification d'adresse.
+**OP_EQUALVERIFY (`0X88`) -** Combine les fonctions de `OP_EQUAL` et `OP_VERIFY`. Il vérifie d'abord l'égalité des deux valeurs supérieures de la pile, puis exige que le résultat soit non nul, faute de quoi la transaction est invalide. `OP_EQUALVERIFY` est notamment utilisé dans les scripts de vérification d'adresse.
 
 &nbsp;
 
-**OP_FALSE (`0X00`) -** Identique à OP_0.
+**OP_FALSE (`0X00`) -** Identique à `OP_0`.
 > *Pour plus d'informations, voir la définition de **OP_0**.*
+
+&nbsp;
+
+**OP_NOP (`0X61`) -** Ne produit aucun effet sur la pile ou l'état du script. Il ne fait aucun déplacement, aucune vérification, ni aucune modification. Il ne fait juste rien, à moins que l'on ait décidé qu'il fasse quelque chose via un soft fork. En effet, depuis leurs modifications par Satoshi Nakamoto en 2010, les commandes `OP_NOP` (`OP_NOP1` (`0XB0`) jusqu'à `OP_NOP10` (`0XB9`)) sont utilisées pour ajouter de nouveaux opcodes sous forme de soft fork. Ainsi, l'`OP_NOP2` (`0XB1`) et l'`OP_NOP3` (`0XB2`) ont déjà été utilisés pour implémenter respectivement l'`OP_CHECKLOCKTIMEVERIFY` et l'`OP_CHECKSEQUENCEVERIFY`. On les utilise en combinaison avec `OP_DROP` afin de supprimer de la pile les valeurs temporelles associées, et ainsi pouvoir continuer l'exécution du script, que le nœud soit à jour ou non. Les `OP_NOP` permettent donc d'insérer un point d'interruption dans un script pour vérifier des conditions supplémentaires déjà existantes ou pouvant être ajoutées avec de futurs soft fork.
 
 &nbsp;
 
