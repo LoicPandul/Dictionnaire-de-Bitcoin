@@ -261,6 +261,22 @@ Assume UTXO permet donc d'accélérer la préparation d'un nouveau nœud Bitcoin
 
 &nbsp;
 
+**BIP65 -** Voir la définition de **OP_CHECKLOCKTIMEVERIFY**.
+
+&nbsp;
+
+**BIP68 -** Voir la définition de **NSEQUENCE**.
+
+&nbsp;
+
+**BIP112 -** Voir la définition de **OP_CHECKSEQUENCEVERIFY**.
+
+&nbsp;
+
+**BIP113 -** A introduit une modification dans le calcul de toutes les opérations de timelock (`nLockTime`, `OP_CHECKLOCKTIMEVERIFY`, `nSequence` et `OP_CHECKSEQUENCEVERIFY`). Il spécifie que pour évaluer la validité des timelocks, il faut désormais les comparer au MTP (*Median Time Past*), c'est-à-dire la médiane des horodatages des 11 derniers blocs. Auparavant, on utilisait seulement l'horodatage du bloc précédent. Cette méthode rend le système plus prévisible et évite la manipulation du référentiel de temps par les mineurs.
+
+&nbsp;
+
 **BIP125 -** Voir la définition de **RBF (REPLACE-BY-FEE)**.
 
 &nbsp;
@@ -703,7 +719,7 @@ Dans le contexte spécifique de l'analyse de chaîne, l'entropie est également 
 
 &nbsp;
 
-**FIDELITY BONDS -** 
+**FIDELITY BONDS -** Peter Todd
 
 &nbsp;
 
@@ -1084,8 +1100,9 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**MTP (MEDIAN TIME PAST) -** 
 
-
+&nbsp;
 
 
 
@@ -1105,6 +1122,11 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 &nbsp;
 
 **NESTED SEGWIT -** Standard de scripts utilisés pour envelopper des scripts SegWit natifs, au sein d'un script P2SH. Les scripts Nested SegWit ont été inventé au lancement de SegWit pour faciliter son adoption. Ils permettent d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif (voir « P2SH-P2WPKH »).
+
+&nbsp;
+
+**NLOCKTIME -** Champ intégré dans les transactions qui définit une condition temporelle avant laquelle la transaction ne peut être ajoutée à un bloc valide. Ce paramètre permet de spécifier un temps précis (timestamp Unix) ou un nombre de blocs spécifique comme condition pour que la transaction soit considérée comme valide. C'est donc un timelock absolu (pas relatif). Le `nLockTime` agit sur l'intégralité de la transaction et permet effectivement de vérifier le temps, alors que l'opcode `OP_CHECKLOCKTIMEVERIFY` permet uniquement de comparer la valeur en haut de la pile avec la valeur du `nLockTime`.
+> *Pour plus d'informations, voir les définitions de **OP_CHECKLOCKTIMEVERIFY** et de **TIMELOCK**.*
 
 &nbsp;
 
@@ -1132,7 +1154,8 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
-**NSEQUENCE -** Le champ `nSequence` dans une entrée de transaction Bitcoin est utilisé pour indiquer la manière dont cette entrée est verrouillée dans le temps. À l'origine, il visait à permettre le remplacement dynamique de transactions dans les mempools afin de permettre un système de paiement en surcouche similaire à Lightning. Toutefois, son utilisation a évolué avec l'introduction du verrouillage relatif via le BIP68. Le champ `nSequence` peut désormais spécifier un délai avant qu'une transaction soit incluse dans un bloc. Ce délai peut être défini en terme de nombre de bloc, ou bien comme un multiple de 512 secondes (c'est-à-dire, du temps réel). Notons que cette nouvelle interprétation du champs `nSequence` est uniquement valide si le champs `nVersion` est supérieur ou égal à `2`. Cette interprétation du champs `nSequence` se fait au niveau des règles de consensus de Bitcoin. Par ailleurs, au niveau des règles de standardisation, ce champ est également utilisé pour le signalement de RBF. Si une transaction inclue un `nSequence` inférieur à `0xfffffffe`, alors elle pourra être remplacée via RBF sur les nœuds qui suivent cette politique.
+**NSEQUENCE -** Le champ `nSequence` dans une entrée de transaction Bitcoin est utilisé pour indiquer la manière dont cette entrée est verrouillée dans le temps. À l'origine, il visait à permettre le remplacement dynamique de transactions dans les mempools afin de permettre un système de paiement en surcouche similaire à Lightning. Toutefois, son utilisation a évolué avec l'introduction du timelock relatif via le BIP68. Le champ `nSequence` peut désormais spécifier un délai relatif avant qu'une transaction soit incluse dans un bloc. Ce délai peut être défini en terme de nombre de bloc, ou bien comme un multiple de 512 secondes (c'est-à-dire, du temps réel). Notons que cette nouvelle interprétation du champs `nSequence` est uniquement valide si le champs `nVersion` est supérieur ou égal à `2`. Cette interprétation du champs `nSequence` se fait au niveau des règles de consensus de Bitcoin. Par ailleurs, au niveau des règles de standardisation, ce champ est également utilisé pour le signalement de RBF. Si une transaction inclue un `nSequence` inférieur à `0xfffffffe`, alors elle pourra être remplacée via RBF sur les nœuds qui suivent cette politique.
+> *Pour plus d'informations, voir les définitions de **OP_CHECKSEQUENCEVERIFY** et de **TIMELOCK**.*
 
 &nbsp;
 
@@ -1226,6 +1249,30 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 &nbsp;
 
 **OP_BOOLAND (`0X9A`) -** Reproduit le comportement d'une porte logique `AND`. Il prend deux valeurs au sommet de la pile et renvoie `1` seulement si les deux valeurs sont non nulles. Dans le cas contraire, il renvoie `0`.
+
+&nbsp;
+
+**OP_CHECKLOCKTIMEVERIFY (`0XB1`) -** Rend la transaction invalide sauf si toutes ces conditions sont réunies :
+- La pile n'est pas vide ;
+- La valeur du haut de la pile est supérieure ou égale à `0` ;
+- Le type de timelock est le même entre le champ `nLockTime` et la valeur du haut de la pile (temps réel ou numéro de bloc) ;
+- Le champ `nSequence` de l'input n'est pas égal à `0xffffffff` ;
+- La valeur du haut de la pile est supérieure ou égale à la valeur du champ `nLockTime` de la transaction.
+Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHECKLOCKTIMEVERIFY` ne peut être satisfait. Si toutes ces conditions sont valides, alors `OP_CHECKLOCKTIMEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKLOCKTIMEVERIFY` impose donc une contrainte de temps sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Pour ce faire, il restreint les valeurs possibles pour le champs `nLockTime` de la transaction qui le dépense, et ce champs `nLockTime` restreint lui-même le moment où la transaction peut être incluse dans un bloc.
+> *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP2`. Il est souvent appelé par con acronyme « CLTV ». Attention, `OP_CLTV` ne doit pas être confondu avec le champs `nLockTime` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
+
+&nbsp;
+
+**OP_CHECKSEQUENCEVERIFY (`0XB2`) -** Rend la transaction invalide si une seule de ces caractéristiques est observée :
+- La pile est vide ;
+- La valeur du haut de la pile est inférieure à `0` ;
+- L'indicateur de désactivation de la valeur en haut de la pile est non défini et ;
+	- La version de la transaction est inférieure à `2` ou ;
+	- L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ;
+	- Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ;
+	- La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
+Si une ou plusieurs de ces caractéristiques est observée, le script contenant l'`OP_CHECKSEQUENCEVERIFY` ne peut être satisfait. Si toutes les conditions sont valides, alors `OP_CHECKSEQUENCEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKSEQUENCEVERIFY` impose donc une contrainte de temps relative sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'un temps réel, soit sous la forme d'un nombre de blocs. Pour ce faire, il restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc.
+> *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP3`. Il est souvent appelé par con acronyme « CSV ». Attention, `OP_CSV` ne doit pas être confondu avec le champs `nSequence` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
 
 &nbsp;
 
@@ -1779,7 +1826,11 @@ Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'
 
 &nbsp;
 
-**TIMELOCKS -**
+**TIMELOCK -** Primitive de contrat intelligent qui permet de définir une condition temporelle à remplir pour qu'une transaction puisse être ajoutée à un bloc. Il existe deux types de timelocks sur Bitcoin : 
+- Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ; 
+- Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
+Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
+> *Pour plus d'informations, voir les définitions de **OP_CHECKLOCKTIMEVERIFY**, **OP_CHECKSEQUENCEVERIFY**, **NLOCKTIME** et **NSEQUENCE**.*
 
 &nbsp;
 
