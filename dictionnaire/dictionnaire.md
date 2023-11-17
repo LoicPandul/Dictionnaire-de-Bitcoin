@@ -1292,6 +1292,30 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**OP_2DROP (`0XD6`) -** Supprime les deux éléments en haut de la pile. Autrement dit, `OP_2DROP` supprime le sommet de la pile et le deuxième élément de la pile. Cet opcode est l'équivalent de l'enchainement de deux `OP_DROP`.
+
+&nbsp;
+
+**OP_2DUP (`0X6E`) -** Duplique les deux éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_2DUP` produira : `D C B A B A`.
+
+&nbsp;
+
+**OP_2OVER (`0X70`) -** Copie les deux éléments qui se trouvent à la quatrième et à la troisième place en partant du haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_2OVER` produira : `D C B A D C`.
+
+&nbsp;
+
+**OP_2ROT (`0X71`) -** Déplace les deux éléments qui se trouvent à la sixième et à la cinquième place du sommet de la pile vers le sommet. Par exemple, si la pile est `F E D C B A`, `OP_2ROT` produira : `D C B A F E`.
+
+&nbsp;
+
+**OP_2SWAP (`0X72`) -** Échange les deux éléments situés au sommet de la pile avec les deux éléments situés juste en dessous d'eux. Par exemple, si la pile est `D C B A`, `OP_2SWAP` produira : `B A D C`.
+
+&nbsp;
+
+**OP_3DUP (`0X6F`) -** Duplique les trois éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_3DUP` produira : `D C B A C B A`.
+
+&nbsp;
+
 **OP_BOOLAND (`0X9A`) -** Reproduit le comportement d'une porte logique `AND`. Il prend deux valeurs au sommet de la pile et renvoie `1` seulement si les deux valeurs sont non nulles. Dans le cas contraire, il renvoie `0`.
 
 &nbsp;
@@ -1330,6 +1354,10 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_DUP (`0X76`) -** Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et la copie est placée en haut de la pile.
+
+&nbsp;
+
 **OP_ELSE (`0X67`) -** Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
 > *Pour plus d'informations, voir la définition de **OP_IF**.*
 
@@ -1365,6 +1393,10 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_NIP (`0x77`) -** Supprime l'élément situé juste en dessous du sommet de la pile (le second en partant du haut).
+
+&nbsp;
+
 **OP_NOP (`0X61`) -** Ne produit aucun effet sur la pile ou l'état du script. Il ne fait aucun déplacement, aucune vérification, ni aucune modification. Il ne fait juste rien, à moins que l'on ait décidé qu'il fasse quelque chose via un soft fork. En effet, depuis leurs modifications par Satoshi Nakamoto en 2010, les commandes `OP_NOP` (`OP_NOP1` (`0XB0`) jusqu'à `OP_NOP10` (`0XB9`)) sont utilisées pour ajouter de nouveaux opcodes sous forme de soft fork. Ainsi, l'`OP_NOP2` (`0XB1`) et l'`OP_NOP3` (`0XB2`) ont déjà été utilisés pour implémenter respectivement l'`OP_CHECKLOCKTIMEVERIFY` et l'`OP_CHECKSEQUENCEVERIFY`. On les utilise en combinaison avec `OP_DROP` afin de supprimer de la pile les valeurs temporelles associées, et ainsi pouvoir continuer l'exécution du script, que le nœud soit à jour ou non. Les `OP_NOP` permettent donc d'insérer un point d'interruption dans un script pour vérifier des conditions supplémentaires déjà existantes ou pouvant être ajoutées avec de futurs soft fork.
 
 &nbsp;
@@ -1375,6 +1407,14 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 **OP_NOTIF (`0X64`) -** Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
 > *Pour plus d'informations, voir la définition de **OP_IF**.* 
+
+&nbsp;
+
+**OP_OVER (`0X78`) -** Duplique le deuxième élément à partir du haut de la pile et le place sur le haut de la pile.
+
+&nbsp;
+
+**OP_PICK (`0X79`) -** Duplique un élément de la pile et le place en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_PICK` va dupliquer le quatrième élément de la pile en partant du sommet, et il va placer cette copie au sommet.
 
 &nbsp;
 
@@ -1394,12 +1434,28 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_ROLL (`0X7A`) -** Déplace un élément de la pile et en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_ROLL` va sélectionner le quatrième élément de la pile en partant du sommet, et il va déplacer cette valeur au sommet. `OP_ROLL` joue le même rôle que `OP_PICK`, mis à part qu'il retire l'élément de sa position initiale.
+
+&nbsp;
+
+**OP_ROT (`0X7B`) -** Déplace au sommet de la pile le troisième élément à partir du sommet de la pile. Les deux éléments qui étaient au-dessus de lui sont poussés en dessous dans l'ordre inverse.
+
+&nbsp;
+
+**OP_SWAP (`0X7C`) -** Échange les deux éléments en haut de la pile. L'élément qui était au sommet est déplacé en deuxième position, et l'élément qui était en deuxième position est placé au sommet de la pile.
+
+&nbsp;
+
 **OP_TOALTSTACK (`0X6B`) -** Prend le sommet de la pile principale (main stack) et le déplace vers la pile alternative (alt stack). Cet opcode permet de stocker temporairement des données à part pour une utilisation ultérieure dans le script. L'élément déplacé est donc supprimé de la pile principale. On utilisera ensuite `OP_FROMALTSTACK` pour le remettre au sommet de la pile principale.
 
 &nbsp;
 
 **OP_TRUE (`0X51`) -** Identique à OP_1.
 > *Pour plus d'informations, voir la définition de **OP_1**.*
+
+&nbsp;
+
+**OP_TUCK (`0X7D`) -** Copie l'élément situé au sommet de la pile et l'insère entre le deuxième élément et le troisième élément de la pile. Par exemple, si la pile est `D C B A`, `OP_TUCK` va dupliquer le sommet `A` et le placer en troisième position. La pile en sortie sera : `D C A B A`.
 
 &nbsp;
 
