@@ -1282,12 +1282,24 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**OP_0NOTEQUAL (`0X92`) -** Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élément est autre que zéro, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+
+&nbsp;
+
 **OP_1 (`0X51`) -** Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
 > *OP_1 est identique à **OP_TRUE** et **OP_PUSHNUM_1**.*
 
 &nbsp;
 
+**OP_1ADD (`0X8B`) -** Ajoute `1` à la valeur en haut de la pile.
+
+&nbsp;
+
 **OP_1NEGATE (`0X4F`) -** Pousse la valeur `-1` sur la pile. Cet opcode est utilisé dans les scripts pour représenter la valeur négative `-1`.
+
+&nbsp;
+
+**OP_1SUB (`0X8C`) -** Soustrait `1` à la valeur en haut de la pile.
 
 &nbsp;
 
@@ -1320,7 +1332,27 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 &nbsp;
 
+**OP_ABS (`0X90`) -** Remplace l'élément supérieur de la pile par sa valeur absolue. Cette opération supprime le signe de l'élément, transformant toute valeur négative en positive, sans changer les valeurs positives.
+
+&nbsp;
+
+**OP_ADD (`0X93`) -** Additionne les deux éléments au sommet de la pile. Il prend les deux valeurs en haut de la pile, il les additionne et il les remplace par le résultat.
+
+&nbsp;
+
 **OP_BOOLAND (`0X9A`) -** Reproduit le comportement d'une porte logique `AND`. Il prend deux valeurs au sommet de la pile et renvoie `1` seulement si les deux valeurs sont non nulles. Dans le cas contraire, il renvoie `0`.
+
+&nbsp;
+
+**OP_BOOLOR (`0X9B`) -** Reproduit le comportement d'une porte logique `OR`. Il prend deux valeurs au sommet de la pile et renvoie `1` si l'un ou l'autre des éléments ou les deux sont non nuls. Dans le cas contraire, il renvoie `0`.
+
+&nbsp;
+
+**OP_CAT (`0X7E`) -** Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de les mettre bout-à-bout). Cet opcode a été désactivé, il est donc actuellement impossible de l'utiliser. Toutefois, il est récemment revenu sur le devant de la scène. Certains souhaiteraient pouvoir l'ajouter à Tapscript afin de permettre la combinaison d'objets sur la pile et ainsi améliorer l'expressivité de ce langage. Ce simple outil supplémentaire pourrait permettre :
+- L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
+- La mise en place de Vaults ;
+- L'utilisation de covenants ;
+- Ou encore, l'utilisation de contrat de non équivocation.
 
 &nbsp;
 
@@ -1389,11 +1421,39 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_GREATERTHAN (`0XA0`) -** Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur au deuxième. Si le premier élément est supérieur au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+
+&nbsp;
+
+**OP_GREATERTHANOREQUAL (`0XA2`) -** Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur ou égal au deuxième. Si le premier élément est supérieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+
+&nbsp;
+
 **OP_IF (`0X63`) -** Exécute la portion suivante du script si la valeur au sommet de la pile est non nulle (vraie). Si la valeur est nulle (fausse), ces opérations sont sautées, passant directement à celles après `OP_ELSE`, s'il est présent. `OP_IF` permet d'initier une structure de contrôle conditionnelle dans un script. Il détermine le flux de contrôle dans un script en fonction d'une condition fournie au moment de l'exécution de la transaction. `OP_IF` s'utilise avec `OP_ELSE` et `OP_ENDIF` de la manière suivante : `<condition> OP_IF <opérations si la condition est vraie> OP_ELSE <opérations si la condition est fausse> OP_ENDIF`.
 
 &nbsp;
 
 **OP_IFDUP (`0x73`) -** Duplique le sommet de la pile si celui-ci est non nul. Si la valeur en haut de la pile est vraie (c'est-à-dire non nulle), cette valeur est dupliquée sur la pile ; sinon, la pile reste inchangée.
+
+&nbsp;
+
+**OP_LESSTHAN (`0X9F`) -** Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur au deuxième. Si le premier élément est inférieur au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+
+&nbsp;
+
+**OP_LESSTHANOREQUAL (`0XA1`) -** Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur ou égal au deuxième. Si le premier élément est inférieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+
+&nbsp;
+
+**OP_MAX (`0XA4`) -** Sélectionne le plus grand des deux éléments en haut de la pile et le pousse sur la pile. Cette opération conserve uniquement la plus grande des deux valeurs au sommet.
+
+&nbsp;
+
+**OP_MIN (`0XA3`) -** Sélectionne le plus petit des deux éléments en haut de la pile et le pousse sur la pile. Cette opération conserve uniquement la plus petite des deux valeurs au sommet.
+
+&nbsp;
+
+**OP_NEGATE (`0X8F`) -** Inverse le signe de l'élément supérieur de la pile. Si la valeur est positive, elle devient négative, et vice versa.
 
 &nbsp;
 
@@ -1411,6 +1471,18 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 **OP_NOTIF (`0X64`) -** Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
 > *Pour plus d'informations, voir la définition de **OP_IF**.* 
+
+&nbsp;
+
+**OP_NUMEQUAL (`0X9C`) -** Compare les deux éléments au sommet de la pile pour vérifier s'ils sont numériquement égaux. Si les valeurs sont égales, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux). 
+
+&nbsp;
+
+**OP_NUMEQUALVERIFY (`0X9D`) -** Combine les opérations `OP_NUMEQUAL` et `OP_VERIFY`. Il compare numériquement les deux éléments au sommet de la pile. Si les valeurs sont égales, `OP_NUMEQUALVERIFY` supprime le résultat `vrai` de la pile et continue l'exécution du script. Si les valeurs ne sont pas égales, le résultat est `faux` et le script échoue immédiatement. 
+
+&nbsp;
+
+**OP_NUMNOTEQUAL (`0X9E`) -** Compare les deux éléments au sommet de la pile pour vérifier s'ils sont numériquement non égaux. Si les valeurs ne sont pas égales, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux). C'est l'inverse de `OP_NUMEQUAL`.
 
 &nbsp;
 
@@ -1446,6 +1518,14 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_SIZE (`0X82`) -** Mesure la taille en nombre d'octets de l'élément en haut de la pile et renvoie cette taille au sommet de la pile, sans pour autant modifier l'élément analysé en lui-même.
+
+&nbsp;
+
+**OP_SUB (`0X94`) -** Soustrait les deux éléments au sommet de la pile. Il prend les deux valeurs en haut de la pile, il les soustrait et il les remplace par le résultat.
+
+&nbsp;
+
 **OP_SWAP (`0X7C`) -** Échange les deux éléments en haut de la pile. L'élément qui était au sommet est déplacé en deuxième position, et l'élément qui était en deuxième position est placé au sommet de la pile.
 
 &nbsp;
@@ -1464,6 +1544,10 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 &nbsp;
 
 **OP_VERIFY (`0X69`)-** Exige que la valeur du sommet de la pile soit non nulle (vraie). La transaction est invalide si ce n'est pas le cas. `OP_VERIFY` est utilisé pour confirmer les conditions des scripts.
+
+&nbsp;
+
+**OP_WITHIN (`0XA5`) -** Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle défini par les deuxième et troisième éléments supérieurs. Autrement dit, `OP_WITHIN` vérifie si le premier élément est supérieur ou égal au deuxième et inférieur au troisième. Si cette condition est vraie, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
 &nbsp;
 
