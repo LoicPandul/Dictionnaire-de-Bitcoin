@@ -1387,6 +1387,18 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_CHECKSIG (`0XAC`) -** Vérifie la validité d'une signature par rapport à une clé publique donnée. Il prend les deux éléments du sommet de la pile : la signature et la clé publique, et évalue si la signature est correcte pour le hachage de la transaction et la clé publique spécifiée. Si la vérification est réussie, il pousse la valeur `1` (`vrai`) sur la pile, sinon `0` (`faux`).
+
+&nbsp;
+
+**OP_CHECKSIGVERIFY (`0XAD`) -** Effectue la même opération que `OP_CHECKSIG`, mais si la vérification de la signature échoue, le script s'arrête immédiatement avec une erreur et la transaction est donc invalide. Si la vérification réussit, le script continue sans pousser de valeur `1` (`vrai`) sur la pile. Pour résumer, `OP_CHECKSIGVERIFY` réalise l'opération `OP_CHECKSIG` suivie de `OP_VERIFY`.
+
+&nbsp;
+
+**OP_CODESEPARATOR (`0XAB`) -** Modifie le script de sortie en cours, en indiquant que seules les opérations qui suivent cet opcode seront prises en compte dans la vérification des signatures des entrées correspondantes. Cela permet de segmenter un script complexe en plusieurs parties, où chaque segment peut être signé indépendamment.
+
+&nbsp;
+
 **OP_DEPTH (`0X74`) -** Pousse le nombre d'éléments dans la pile sur la pile elle-même. Si la pile contient `N` éléments, `OP_DEPTH` ajoutera le nombre `N` en tant que nouvel élément en haut de la pile.
 
 &nbsp;
@@ -1431,6 +1443,16 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 &nbsp;
 
 **OP_GREATERTHANOREQUAL (`0XA2`) -** Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur ou égal au deuxième. Si le premier élément est supérieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+
+&nbsp;
+
+**OP_HASH160 (`0XA9`) -** Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
+> *Pour plus d'informations, voir la définition de **SHA256** et de **RIPEMD160**.*
+
+&nbsp;
+
+**OP_HASH256 (`0XAA`) -** Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
+> *Pour plus d'informations, voir la définition de **SHA256**.*
 
 &nbsp;
 
