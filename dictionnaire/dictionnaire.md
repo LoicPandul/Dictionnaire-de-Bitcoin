@@ -35,6 +35,11 @@ Merci et bonne lecture !
 
 
 
+
+# <div align="center">Ressources</div>
+
+https://en.bitcoin.it/wiki/Script
+
 # <div align="center">Sommaire</div>
 
 
@@ -1510,11 +1515,25 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 &nbsp;
 
+**OP_RIPEMD160 (`0XA6`) -** Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `RIPEMD160`.
+> *Pour plus d'informations, voir la définition de **RIPEMD160**.*
+
+&nbsp;
+
 **OP_ROLL (`0X7A`) -** Déplace un élément de la pile et en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_ROLL` va sélectionner le quatrième élément de la pile en partant du sommet, et il va déplacer cette valeur au sommet. `OP_ROLL` joue le même rôle que `OP_PICK`, mis à part qu'il retire l'élément de sa position initiale.
 
 &nbsp;
 
 **OP_ROT (`0X7B`) -** Déplace au sommet de la pile le troisième élément à partir du sommet de la pile. Les deux éléments qui étaient au-dessus de lui sont poussés en dessous dans l'ordre inverse.
+
+&nbsp;
+
+**OP_SHA1 (`0XA7`) -** Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA1`. L'utilisation de cette fonction est aujourd'hui déconseillée dans un cadre sécurisé.
+
+&nbsp;
+
+**OP_SHA256 (`0XA8`) -** Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
+> *Pour plus d'informations, voir la définition de **SHA256**.*
 
 &nbsp;
 
