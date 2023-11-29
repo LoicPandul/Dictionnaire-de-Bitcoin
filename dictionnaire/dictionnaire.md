@@ -39,6 +39,9 @@ Merci et bonne lecture !
 # <div align="center">Ressources</div>
 
 https://en.bitcoin.it/wiki/Script
+https://docs.liquid.net/docs/
+
+
 
 # <div align="center">Sommaire</div>
 
@@ -118,7 +121,11 @@ Notons que les deux premières heuristiques sur Bitcoin ont été formulées par
 
 &nbsp;
 
-**ANCRAGE BILATÉRAL -** 
+**ANCRAGE BILATÉRAL -** Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. L'ancrage bilatéral assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
+- Un tiers de confiance unique ;
+- Une fédération d'entités ;
+- Les mineurs de la chaîne principale (drivechain).
+> *En anglais, on parle d'un « two-way peg » ou « 2WP ».*
 
 &nbsp;
 
@@ -358,6 +365,11 @@ Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec 
 **BLOCKCHAIN -** La blockchain est le nom communément donné au serveur d'horodatage distribué du système Bitcoin. C'est une chaîne de blocs. Chaque bloc est lié au suivant par son empreinte cryptographique. Pour éviter la double dépense sur Bitcoin sans recourir à une autorité centrale, il faut que chaque utilisateur vérifie la non-existence d'une transaction dans le système. Le seul moyen de s'assurer de l'absence d'une transaction est d'être au courant de toutes les transactions Bitcoin passées. Dans cet objectif, les transactions sont horodatées au sein de blocs, et chaque utilisateur dispose de l'entièreté de la blockchain.
 
 > *Suite aux nombreuses utilisations marketing abusives du terme de « Blockchain », notamment à la fin des années 2010, beaucoup de bitcoiners refusent l'emploi de ce mot. Certains préfèrent parler de « TimeChain » pour évoquer ce concept. D'autres, se référant au White Paper de Satoshi Nakamoto, évoquent une « Proof-of-Work Chain ». En français, le terme anglais de « Blockchain » est globalement admis. On peut également utiliser la traduction « chaîne de blocs ».*
+
+&nbsp;
+
+**BLOCKSIGNERS -** Dans le contexte de Liquid (sidechain de Bitcoin), ce sont les entités responsables de la construction et de la validation des blocs au sein de cette chaîne. Liquid utilise un modèle de fédération où les blocksigners, sélectionnés parmi les membres de la fédération, opèrent conjointement pour confirmer les transactions et créer de nouveaux blocs afin de former le consensus de la sidechain. Le rôle de blocksigner fait partie des fonctionnaires dans Liquid. Ces derniers assurent à la fois ce rôle, et celui de watchmen (gardien).
+> *En français, on peut traduire « blocksigners » par « signataires de blocs ».*
 
 &nbsp;
 
@@ -772,6 +784,10 @@ Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieu
 * `HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception et dans le calcul des empreintes de clés parents pour les clés étendues.
 
 > *En anglais, on parle de « hash function ».*
+
+&nbsp;
+
+**FONCTIONNAIRE -** Dans le cadre de la sidechain Liquid, les fonctionnaires sont des nœuds pilotés par des entités chargées de gérer le système. Ils ont principalement deux rôles : établir le consensus et exécuter des transactions en tant que signataire de bloc (blocksigners) et sécuriser les bitcoins détenus par le réseau afin d'assurer l'ancrage bilatéral (watchmen).
 
 &nbsp;
 
@@ -2020,7 +2036,9 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
-**SIDECHAIN -** 
+**SIDECHAIN -** Blockchain conçue pour fonctionner en parallèle avec la blockchain principale de Bitcoin. Les deux chaînes sont connectées à l'aide d'un ancrage bilatéral qui permet de faire en sorte que l'actif qui circule sur la sidechain conserve la même valeur que le bitcoin sur la chaîne principale. La sidechain dispose de son propre mécanisme de consensus qui peut être indépendant ou qui peut reposer en partie sur celui de la chaîne principale. Elle permet généralement d'utiliser des fonctionnalités qui ne sont pas disponibles directement sur la chaîne principale ou bien de bénéficier de fonctionnalités améliorées, comme par exemple : plus de flexibilité dans le développement, des transactions plus rapides et/ou plus confidentielles, ou encore, une capacité transactionnelle plus élevée. Pour ce faire, la sidechain fait des compromis par rapport à la chaîne principale. Ce concept de sidechain a initialement été présenté en 2014 par Adam Back, Matt Corallo, Luke Dashjr, Mark Friedenbach, Gregory Maxwell, Andrew Miller, Andrew Poelstra Jorge Timon et Pieter Wuille. Actuellement, les sidechains les plus connues sur Bitcoin sont Liquid et RSK (Rootstock). Ces dernières demeurent toutefois très peu utilisées par à d'autres solutions de surcouche avec un modèle différent comme le Lightning Network.
+
+> *En français, on parle d'une « chaîne latérale » ou d'une « chaîne parallèle ».*
 
 &nbsp;
 
@@ -2063,6 +2081,10 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 &nbsp;
 
 **SRC-20 -** 
+
+&nbsp;
+
+**STRONG FEDERATION -** Liquid
 
 &nbsp;
 
@@ -2165,7 +2187,7 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 
 &nbsp;
 
-**TWO-WAY PEG -** 
+**TWO-WAY PEG (2WP) -** Voir la définition d'**ANCRAGE BILATÉRAL**.
 
 &nbsp;
 
@@ -2192,6 +2214,10 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 
 
 # <div align="center">U</div>
+
+&nbsp;
+
+**UASF -** 
 
 &nbsp;
 
@@ -2323,6 +2349,11 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 &nbsp;
 
 **WASABI WALLET -** Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités telles que le CoinJoin.
+
+&nbsp;
+
+**WATCHMEN -** Dans le cadre de Liquid (sidechain de Bitcoin), ce sont des entités chargées de maintenir l'ancrage du L-BTC, le jeton natif de Liquid, en gérant et sécurisant les BTC utilisés en sous-jacent. Ils s'assurent que les actifs transférés entre la blockchain Bitcoin principale et la sidechain Liquid sont correctement verrouillés et débloqués. L'objectif de leurs actions est de maintenir la même valeur entre le L-BTC circulant sur Liquid et le BTC circulant sur Bitcoin. Dans Liquid, les watchmen font partie des fonctionnaires avec les blocksigners.
+> *En français, on peut traduire « watchmen » par « gardiens ».*
 
 &nbsp;
 
