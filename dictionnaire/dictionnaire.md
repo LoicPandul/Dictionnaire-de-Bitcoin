@@ -517,7 +517,35 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 
 &nbsp;
 
+**COINBASE (TRANSACTION) -** Type spécifique de transaction Bitcoin, unique pour chaque bloc et toujours la première de celui-ci. Elle permet au mineur ayant trouvé une preuve de travail valide de recevoir sa récompense de bloc. Cette récompense se compose de deux éléments : la subvention de bloc, qui génère de nouveaux BTC conformément au calendrier d'émission défini par les règles de consensus, et les frais de transaction, qui correspondent à la différence entre le total des entrées et des sorties de toutes les transactions incluses dans le bloc. La particularité de la transaction Coinbase est qu'elle est la seule à ne pas requérir d'entrée (input), ce qui signifie qu'elle crée des bitcoins ex nihilo. Elle inclut également parfois des informations de gestion choisies par le mineur ou la pool de minage, telles que des messages ou des données sur la version du logiciel utilisé. Les bitcoins générés par une transaction Coinbase sont soumis à une période de maturité de 100 blocs pendant laquelle ils ne peuvent pas être dépensés par le mineur.
+
+> *Il n'existe aucune traduction de « Coinbase » en français. Il est donc admis d'utiliser directement ce terme.*
+
+&nbsp;
+
+**COIN CONTROL -** 
+
+&nbsp;
+
+**COLD WALLET -** Synonyme de « hardware wallet ». Pour plus d'informations, voir la définition de **HARDWARE WALLET**.
+
+&nbsp;
+
 **COMPATIBILITÉ RÉTROSPECTIVE (RÉTROCOMPATIBILITÉ) -** Dans le contexte de Bitcoin, fait référence à la capacité d'une mise à jour des règles du protocole à maintenir la compatibilité avec les versions antérieures. Cela signifie que les modifications sont conçues de manière à ce que les anciens nœuds (les nœuds exécutant des versions antérieures au changement de règles) puissent toujours interagir avec le réseau et suivre la chaîne avec le plus de preuve travail accumulée. Il faut donc que les anciens nœuds ne rejettent ni les nouveaux blocs, ni les nouvelles transactions. La compatibilité rétrospective permet de réduire fortement la probabilité qu'une mise à jour fragmente le réseau, évitant ainsi la division du réseau en sous-groupes sur des chaînes différentes. Pour assurer une compatibilité avec les versions antérieures du protocole, une mise à jour doit rendre les règles existantes plus strictes ou en introduire de nouvelles. C'est ce principe qui définit un « soft fork ». À l'inverse, si une mise à jour assouplit les règles existantes ou en élimine certaines, alors elle ne sera pas rétrocompatible. Ce sera donc un « hard fork ».
+
+&nbsp;
+
+**CONSENSUS -** Désigne le mécanisme par lequel les différents acteurs du réseau Bitcoin s'accordent sur l'état actuel de la blockchain et sur la validité des transactions et des blocs. Ce processus garantit l'uniformité et la validité des transactions enregistrées sur la blockchain, malgré l'absence d'autorité centrale. Le mécanisme de consensus sur Bitcoin est parfois nommé « Consensus de Nakamoto ». Il est atteint en s'appuyant sur le mécanisme de la preuve de travail. Les règles de consensus définissent les critères qu'une transaction ou un bloc doivent respecter pour être considérés comme valides.
+
+&nbsp;
+
+**CONSOLIDATION -** 
+
+&nbsp;
+
+**CONTRAT INTELLIGENT -** 
+
+> *En anglais, on parle de « Smart Contract ».*
 
 &nbsp;
 
@@ -645,11 +673,21 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
+**CPU (CENTRAL PROCESSING UNIT) -** Composant principal d'un ordinateur responsable de l'exécution des instructions machines des logiciels. Dans le contexte de Bitcoin, le CPU était initialement utilisé pour le minage par les nœuds avant d'être surpassé par le minage par GPU (cartes graphiques), puis par l'utilisation de puces spécialisées que l'on appelle des « ASIC ».
+
+> *En français, on peut parler d'une « unité centrale de calcul » ou bien simplement d'un « processeur ».*
+
+&nbsp;
+
 **CRYPTANALYSE -** Étude des techniques mathématiques pour tenter de casser les techniques cryptographiques. Cela inclut les processus de recherche d'erreurs ou de faiblesses dans l'implémentation d'une méthode cryptographique ou dans la méthode cryptographique elle-même.
 
 &nbsp;
 
 **CRYPTER -** Ce terme n'existe pas. On dit « chiffrer ».
+
+&nbsp;
+
+**CRYPTO-ACTIF -** Terme utilisé dans un contexte juridique et réglementaire pour désigner les divers types de cryptomonnaies, dont le bitcoin.
 
 &nbsp;
 
@@ -706,7 +744,7 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
-**DOUBLE-DÉPENSE -** 
+**DOUBLE DÉPENSE (ATTAQUE) -** Attaque où un utilisateur malveillant tente d'utiliser le même UTXO (*Unspent Transaction Output*) plus d'une fois afin de s'enrichir sur les contreparties des transactions impliquées. En principe, une fois qu'une transaction est confirmée dans un bloc et ajoutée à la blockchain, l'utilisation de ces bitcoins est enregistrée de manière permanente, empêchant toute dépense ultérieure de ces mêmes bitcoins. Prévenir la double dépense est même l'utilité première de la blockchain. Dans le cadre d'une attaque de double dépense, l'attaquant effectue d'abord une transaction légitime auprès d'un commerçant, puis crée une seconde transaction concurrente qui dépense les mêmes pièces, soit en les renvoyant vers lui-même pour récupérer la somme, soit en les utilisant pour acheter un autre bien ou service auprès d'un autre commerçant. Deux scénarios principaux peuvent permettre cette attaque. Le premier, et le plus simple pour l'attaquant, consiste à exécuter la transaction frauduleuse avant que la transaction légitime ne soit incluse dans un bloc. Pour permettre la confirmation de sa transaction frauduleuse en première, l'attaquant y associe des frais de transaction nettement plus élevés que la transaction légitime. C'est une sorte de « RBF » frauduleux. Ce scénario n'est possible que si le commerçant accepte de finaliser la vente en « zeroconf », c'est-à-dire sans aucune confirmation pour la transaction de paiement. C'est pourquoi il est fortement recommandé d'attendre plusieurs confirmations avant de considérer une transaction comme immuable. Le second scénario, beaucoup plus complexe, est celui d'une attaque à 51 %. Si l'attaquant contrôle une part importante de la puissance de calcul du réseau, il peut miner une chaîne concurrente à celle contenant la transaction légitime, mais incluant sa transaction frauduleuse. Lorsque le commerçant a accepté la vente et que l'attaquant a réussi à créer une chaîne plus longue (avec plus de travail accumulé) que la chaîne légitime, il peut alors diffuser sa chaîne frauduleuse qui sera reconnue par les nœuds du réseau comme étant celle valide.
 
 &nbsp;
 
@@ -714,28 +752,23 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
+**DUST -** Fait référence à des montants de pièces bitcoin extrêmement petits qui sont trop minimes pour être envoyés dans une transaction, car les frais de transaction nécessaires pour les inclure dans un bloc seraient proportionnellement plus élevés que leur valeur. La définition précise de « dust » peut varier selon le contexte, mais il s'agit généralement de toute sortie de transaction qui nécessite plus de frais pour être dépensée qu'elle n'incarne de valeur. Pour l'utilisateur de Bitcoin, il est important de gérer ses UTXO et de pratiquer la consolidation de ceux-ci afin qu'ils ne deviennent pas du Dust.
 
+> *En français, on pourrait parler de « poussière ».*
 
+&nbsp;
 
+**DUSTING ATTACK -** 
 
+&nbsp;
 
+**DUST LIMIT -** Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la « poussière » (dust) par un nœud du réseau. Ce seuil fait partie des règles de standardisation qui peuvent être modifiées indépendamment par chaque nœud. Dans Bitcoin Core, cette limite est déterminée par un taux de frais spécifique, fixé par défaut à 3000 sats par kilo-octet virtuel (sats/kvB). Cette limite vise à restreindre la propagation de transactions comprenant de très petits montants en bitcoins. En effet, un UTXO qualifié de poussière implique que son utilisation n'est pas économiquement rationnelle : dépenser cet UTXO coûterait plus cher que de simplement l'abandonner. Si dépenser de la poussière n'est pas rationnel, cela suggère que de telles dépenses ne peuvent être motivées que par des incitations externes, souvent malveillantes. Cela peut notamment poser un problème si un acteur malintentionné cherche à saturer le réseau avec des transactions contenant des montants infimes, dans le but d'accroître la charge opérationnelle des nœuds et potentiellement les empêcher de traiter d'autres transactions légitimes. Pour donner une analogie (un peu bancale, je vous l'accorde), c'est un peu comme si quelqu'un tentait de payer un panier de courses de 100 € uniquement en pièces de 1 centimes. Pour en savoir plus, je vous recommande de lire les définitions de **DUST**, **DUSTING ATTACK** et de **DUSTRELAYFEE**.
 
+&nbsp;
 
+**DUSTRELAYFEE -** Règle de standardisation utilisée par les nœuds du réseau pour déterminer ce qu'ils considèrent comme la « limite de poussière » (dust limit). Ce paramètre fixe un taux de frais en sats par kilo-octet virtuel (sats/kvB) qui sert de référence pour calculer si la valeur d'un UTXO est inférieure aux frais nécessaires pour l'inclure dans une transaction. En effet, un UTXO est considéré comme « dust » (poussière) sur Bitcoin s'il requiert plus de frais pour être transféré que la valeur qu'il représente lui-même. Le calcul de cette limite est le suivant : `limite de poussière = (taille de l'entrée + taille de la sortie) * taux de frais`. Comme le taux de frais requis pour qu'une transaction soit incluse dans un bloc Bitcoin varie constamment, le paramètre `DustRelayFee` permet de définir le taux de frais utilisé dans ce calcul par chaque nœud. Par défaut, sur Bitcoin Core, cette valeur est fixée à 3000 sats/kvB. Par exemple, pour calculer la limite de poussière d'une entrée et d'une sortie P2PKH, qui mesurent respectivement 148 et 34 octets, le calcul serait : `limite de poussière = (148+34)*3000/1000 = 546 sats`. Cela signifie que le nœud en question ne relayera pas les transactions incluant un UTXO sécurisé en P2PKH dont la valeur est inférieure à 546 sats.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+&nbsp;
 
 
 
@@ -910,6 +943,12 @@ Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieu
 &nbsp;
 
 **FONCTIONNAIRE -** Dans le cadre de la sidechain Liquid, les fonctionnaires sont des nœuds pilotés par des entités chargées de gérer le système. Ils ont principalement deux rôles : établir le consensus et exécuter des transactions en tant que signataire de bloc (blocksigners) et sécuriser les bitcoins détenus par le réseau afin d'assurer l'ancrage bilatéral (watchmen).
+
+&nbsp;
+
+**FORCE BRUTE (ATTAQUE) -** Méthode de cryptanalyse pour trouver un mot de passe ou une clé qui consiste à essayer par tâtonnement toutes les combinaisons possibles de clés ou de mots de passe jusqu'à trouver celle qui permet d'accéder à un privilège ou une information protégée. Cette technique repose sur du calcul intensif et peut être extrêmement longue, surtout face à des clés de grande taille. Pour faire face à ce type attaque, il faut utiliser des séquences de mot de passe et de clés plus longues afin de multiplier le nombre d'opérations nécessaires pour l'attaquant. En théorie, la complexité d'une telle attaque est exponentielle en la longueur de la cible.
+
+> *En anglais, on parle d'une « brute-force attack ».*
 
 &nbsp;
 
@@ -2356,6 +2395,12 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
+**SORTIE NON RENTABLE -** Synonyme de « dust » ou « poussière » en français. Pour plus d'informations, voir la définition de **DUST**.
+
+> *En anglais, on croise parfois le terme de « uneconomical outputs » pour désigner du dust.*
+
+&nbsp;
+
 **SPARSE MERKLE TREE (SMT) -** 
 
 &nbsp;
@@ -2605,6 +2650,16 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 
 &nbsp;
 
+**VANITY (ADDRESS) -** Adresse de réception personnalisée qui contient une séquence spécifique de caractères choisie par l'utilisateur, généralement pour des raisons esthétiques. Ces adresses sont générées en exécutant un processus de calcul, où de multiples clés privées sont créées jusqu'à ce que l'une d'entre elles corresponde à une adresse de réception contenant la séquence désirée. Ce processus ne compromet pas la sécurité de l'adresse, mais peut nécessiter un temps et des ressources de calcul considérables, surtout pour des séquences plus longues ou plus spécifiques. C'est une sorte de processus de brute force.
+
+> *En français, on parle d'une « adresse personnalisée ».*
+
+&nbsp;
+
+**VANITYGEN -** Premier logiciel open source en ligne de commande utilisé pour créer des adresses de réception personnalisées (vanity address). Il fonctionne en générant et en testant par tâtonnement des paires de clés jusqu'à ce qu'une adresse de réception correspondant aux critères spécifiés par l'utilisateur (comme une certaine séquence de caractères spécifiques) soit trouvée. Vanitygen nécessite un processus de calcul intensif, particulièrement pour des séquences longues.
+
+&nbsp;
+
 **VOUT -** 
 
 &nbsp;
@@ -2840,6 +2895,10 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 
 # <div align="center">Z</div>
+
+&nbsp;
+
+**ZEROCONF -** Pratique risquée consistant à considérer une transaction Bitcoin comme définitive, et à procéder à l'exécution de l'acte associé en contrepartie (tel que la vente d'un bien ou d'un service), avant que la transaction ne soit réellement incluse dans un bloc sur la blockchain. Les transactions non confirmées, ou en zeroconf, sont vulnérables à des attaques de double dépense, car elles ne sont pas encore irrévocablement inscrites dans le registre. Le zeroconf peut éventuellement être envisagé dans des contextes très spécifiques, où la rapidité est prioritaire, comme dans le cas de petites transactions commerciales ou dans le cas d'une transaction entre proches. Dans ces situations, le risque de double dépense est souvent considéré comme acceptable en comparaison de l'avantage d'une transaction rapide. Néanmoins, pour des transactions importantes, en particulier lorsqu'on ne connaît pas l'expéditeur, il est crucial d'attendre plusieurs confirmations avant de considérer la transaction comme immuable. La norme généralement acceptée est d'attendre 6 confirmations, ce qui signifie que 5 blocs supplémentaires doivent être minés après celui incluant la transaction, pour la considérer comme définitive.
 
 &nbsp;
 
