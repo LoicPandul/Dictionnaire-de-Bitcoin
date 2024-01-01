@@ -221,7 +221,7 @@ Assume UTXO permet donc d'accélérer la préparation d'un nouveau nœud Bitcoin
 
 &nbsp;
 
-**BANLIST.JSON -** 
+**BANLIST.JSON -** Nom du fichier utilisé par le logiciel Bitcoin Core pour enregistrer les adresses IP des nœuds qui ont été bannis par l'utilisateur. Ce fichier contient donc une liste des nœuds bannis avec lesquels le nœud ne se connectera pas. Cette fonctionnalité permet d'empêcher les interactions avec des nœuds potentiellement nuisibles ou malveillants.
 
 &nbsp;
 
@@ -376,7 +376,7 @@ Le terme de bitcoin avec un « b » minuscule est généralement réservé pour 
 
 &nbsp;
 
-**BITCOIND.PID -** 
+**BITCOIND.PID -** Fichier généré par le logiciel bitcoind (Bitcoin Daemon) lors de son exécution. Ce fichier contient l'identifiant de processus (PID) de l'instance bitcoind en cours d'exécution. Il est utilisé pour suivre et gérer le processus du logiciel, permettant à d'autres applications ou scripts de l'identifier facilement et d'interagir avec lui si nécessaire.
 
 &nbsp;
 
@@ -439,7 +439,7 @@ Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec 
 
 &nbsp;
 
-**BLOCKS/BLK000??.DAT -** 
+**BLOCKS/BLK?????.DAT -** Nom des fichiers dans Bitcoin Core qui stockent les données brutes des blocs de la blockchain. Chaque fichier est identifié par un numéro unique dans son nom. Ainsi, les blocs sont enregistrés dans l'ordre chronologique, en commençant avec le fichier blk00000.dat. Lorsque ce fichier atteint sa capacité maximale, les blocs suivants sont enregistrés dans blk00001.dat, puis blk00002.dat, et ainsi de suite. Chaque fichier blk a une capacité maximale de 128 mébioctets (MiB), ce qui équivaut à un peu plus de 134 mégaoctets (Mo).
 
 &nbsp;
 
@@ -447,7 +447,7 @@ Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec 
 
 &nbsp;
 
-**BLOCKS/REV000??.DAT -** 
+**BLOCKS/REV?????.DAT -** Nom des fichiers dans Bitcoin Core qui stockent les informations nécessaires pour éventuellement annuler les modifications apportées à l'UTXO set par les blocs précédemment ajoutés. Chaque fichier est identifié par un numéro unique qui est le même que le fichier blk?????.dat auquel il correspond. Les fichier rev?????.dat contiennent les données d'annulation correspondant aux blocs stockés dans les fichiers blk?????.dat. Ces données sont essentiellement une liste de tous les UTXO dépensés en input dans un bloc. Ces fichiers d'annulation permettent au nœud de revenir à un état antérieur en cas de réorganisation de la blockchain provocant l'abandon de blocs préalablement valides.
 
 &nbsp;
 
@@ -738,15 +738,15 @@ Il existe de très nombreuses propositions qui permettraient l'utilisation de co
 
 &nbsp;
 
-**DATABASE/ -** 
+**DATABASE/ -** Ancien dossier contenant des bases de données pour le portefeuille Bitcoin Core. Depuis la version 0.16, cette base de données a été déplacée dans le dossier wallet/.
 
 &nbsp;
 
-**DB.LOG -** 
+**DB.LOG -** Ancien fichier log (historique des événements) du portefeuille Bitcoin Core déplacé dans le dossier wallet/ depuis la version 0.16.
 
 &nbsp;
 
-**DEBUG.LOG -** 
+**DEBUG.LOG -** Fichier contenant l'historique des événements de Bitcoin Core. Il contient des données de journalisation, telles que les messages d'erreur, les avertissements et d'autres informations de débogage. Ce fichier est utilisé pour résoudre des éventuels problèmes techniques.
 
 &nbsp;
 
@@ -786,7 +786,7 @@ Il existe de très nombreuses propositions qui permettraient l'utilisation de co
 
 &nbsp;
 
-**DUST LIMIT -** Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la « poussière » (dust) par un nœud du réseau. Ce seuil fait partie des règles de standardisation qui peuvent être modifiées indépendamment par chaque nœud. Dans Bitcoin Core, cette limite est déterminée par un taux de frais spécifique, fixé par défaut à 3000 sats par kilo-octet virtuel (sats/kvB). Cette limite vise à restreindre la propagation de transactions comprenant de très petits montants en bitcoins. En effet, un UTXO qualifié de poussière implique que son utilisation n'est pas économiquement rationnelle : dépenser cet UTXO coûterait plus cher que de simplement l'abandonner. Si dépenser de la poussière n'est pas rationnel, cela suggère que de telles dépenses ne peuvent être motivées que par des incitations externes, souvent malveillantes. Cela peut notamment poser un problème si un acteur malintentionné cherche à saturer le réseau avec des transactions contenant des montants infimes, dans le but d'accroître la charge opérationnelle des nœuds et potentiellement les empêcher de traiter d'autres transactions légitimes. Pour donner une analogie (un peu bancale, je vous l'accorde), c'est un peu comme si quelqu'un tentait de payer un panier de courses de 100 € uniquement en pièces de 1 centimes. Pour en savoir plus, je vous recommande de lire les définitions de **DUST**, **DUSTING ATTACK** et de **DUSTRELAYFEE**.
+**DUST LIMIT -** Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la « poussière » (dust) par un nœud du réseau. Ce seuil fait partie des règles de standardisation qui peuvent être modifiées indépendamment par chaque nœud. Dans Bitcoin Core, cette limite est déterminée par un taux de frais spécifique, fixé par défaut à 3000 sats par kilo-octet virtuel (sats/kvB). Cette limite vise à restreindre la propagation de transactions comprenant de très petits montants en bitcoins. En effet, un UTXO qualifié de poussière implique que son utilisation n'est économiquement pas rationnelle : dépenser cet UTXO coûterait plus cher que de simplement l'abandonner. Si dépenser de la poussière n'est pas rationnel, cela suggère que de telles dépenses ne peuvent être motivées que par des incitations externes, souvent malveillantes. Cela peut notamment poser un problème si un acteur malintentionné cherche à saturer le réseau avec des transactions contenant des montants infimes, dans le but d'accroître la charge opérationnelle des nœuds et potentiellement les empêcher de traiter d'autres transactions légitimes. Pour donner une analogie (un peu bancale, je vous l'accorde), c'est un peu comme si quelqu'un tentait de payer un panier de courses de 100 € uniquement en pièces de 1 centimes. Pour en savoir plus, je vous recommande de lire les définitions de **DUST**, **DUSTING ATTACK** et de **DUSTRELAYFEE**.
 
 &nbsp;
 
@@ -1414,7 +1414,7 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-**MEMPOOL.DAT -** 
+**MEMPOOL.DAT -**  Nom du fichier de données utilisé par le logiciel Bitcoin Core pour stocker l'état actuel de la mempool, qui est l'ensemble des transactions non confirmées en attente d'être ajoutées à un bloc.
 
 &nbsp;
 
