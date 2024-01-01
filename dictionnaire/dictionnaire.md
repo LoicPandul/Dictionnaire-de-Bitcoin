@@ -945,7 +945,7 @@ Cette attaque constitue un risque pour le système Bitcoin, car plus les mineurs
 
 &nbsp;
 
-**FEE_ESTIMATES.DAT -** 
+**FEE_ESTIMATES.DAT -** Fichier dans Bitcoin Core qui stocke des données estimées sur les frais de transaction, compilées par le logiciel à partir des transactions récentes et de l'état actuel de la mempool. Ces statistiques aident l'utilisateur à déterminer des frais appropriés à inclure dans ses transactions pour qu'elles soient confirmées en fonction de ses attentes. Ce fichier existe depuis la version 0.10.
 
 &nbsp;
 
@@ -1199,7 +1199,7 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 &nbsp;
 
-**INDEXES/TXINDEX/ -** 
+**INDEXES/TXINDEX/ -** Fichiers dans Bitcoin Core qui sont dédiés à l'indexation de toutes les transactions présentes dans la blockchain. Cette indexation permet de rechercher rapidement des informations détaillées sur n'importe quelle transaction en utilisant son identifiant (TXID), sans avoir à parcourir l'intégralité de la blockchain. La création de ces fichiers d'indexation est une option non activée par défaut dans Bitcoin Core. Si cette fonctionnalité n'est pas activée, votre nœud indexera uniquement les transactions associées aux portefeuilles rattachés à votre nœud. Pour activer l'indexation de toutes les transactions, il faut régler le paramètre `-txindex=1` dans le fichier bitcoin.conf. Cette option est particulièrement utile pour les applications et services qui font des recherches fréquentes dans l'historique des transactions de Bitcoin.
 
 &nbsp;
 
@@ -2486,6 +2486,12 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 &nbsp;
 
+**SPREAD (WST) -** Dans le logiciel Whirlpool Stat Tool, le spread est un indicateur permettant de mesurer l'homogénéité du processus de mixage du point de vue d'une pièce donnée. On différenciera 2 spread : le prospectif et le rétrospectif. Le spread prospectif est calculé en tant que ratio entre l'anonset prospectif de votre pièce et le nombre total de pièces créées après votre Tx0. Par exemple, si dans votre pool il y a 100 pièces et que votre pièce a un anonset de 70, le spread prospectif de votre pièce est alors de 70%. Le spread rétrospectif, quant à lui, est le ratio entre l'anonset rétrospectif de votre pièce et le nombre total de Tx0 créées avant le dernier mix de votre pièce. Ainsi, si l'anonset rétrospectif de votre pièce est de 95 et qu'il y a eu 100 Tx0 avant votre dernier mix, alors le spread rétrospectif de votre pièce est de 95%. Ces deux indicateurs permettent d'évaluer l'efficacité du mixage de votre pièce par rapport au potentiel offert par la pool. Un spread prospectif faible, comme 5% par exemple, indique une importante marge d'amélioration possible par des mixages supplémentaires. Inversement, un spread prospectif élevé, comme par exemple 97%, signifie que peu d'anonset supplémentaire peut être gagné.
+
+> *En français, on pourrait traduire « spread » par « taux de diffusion » ou « taux de propagation ».*
+
+&nbsp;
+
 **STALE BLOCK -** Voir la définition de **OBSOLÈTE (BLOC)**.
 
 &nbsp;
@@ -2820,6 +2826,10 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 
 **WHIRLPOOL -** Protocole de CoinJoin développé par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
 > *Pour plus d'informations, voir la définition **COINJOIN**.*
+
+&nbsp;
+
+**WHIRLPOOL STAT TOOL -** Logiciel en ligne de commandes développé par Samourai Wallet qui permet de fournir les anonsets prospectifs et rétrospectifs d'une pièce mixée au sein de Whirlpool, ainsi que son taux de diffusion dans la pool. WST utilise l'algorithme HyperLogLogPlusPlus qui permet d'estimer le nombre de valeurs distinctes dans un très grand ensemble de données.
 
 &nbsp;
 
