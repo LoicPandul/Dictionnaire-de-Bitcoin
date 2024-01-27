@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -174,12 +174,12 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "87792d11507da68a",
+  "active": "b67ab2f2fa28460c",
   "lastOpenFiles": [
+    "README.md",
     "dictionnaire/dictionnaire.md",
     "Sans titre.md",
     "dictionnaire/images/Bloc obsolète.png",
-    "README.md",
     "www.pandul.fr.md",
     "LICENSE_ENG.md",
     "LICENCE_FR.md",
