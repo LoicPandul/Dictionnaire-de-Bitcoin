@@ -51,7 +51,7 @@
             }
           },
           {
-            "id": "b67ab2f2fa28460c",
+            "id": "b856675ba9032470",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -174,10 +174,13 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "b67ab2f2fa28460c",
+  "active": "b856675ba9032470",
   "lastOpenFiles": [
-    "README.md",
     "dictionnaire/dictionnaire.md",
+    "images/Transaction.md",
+    "images",
+    "dictionnaire/images/Transaction Stonewall x2.png",
+    "README.md",
     "Sans titre.md",
     "dictionnaire/images/Bloc obsolète.png",
     "www.pandul.fr.md",
