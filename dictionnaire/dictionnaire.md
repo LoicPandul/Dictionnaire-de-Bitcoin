@@ -1,4 +1,4 @@
-# <div align="center">Dictionnaire de Bitcoin 2024</div>
+# <div align="center">Dictionnaire de Bitcoin</div>
 
 <div align="center">
 
@@ -7,18 +7,18 @@
 
 Loïc Morel
 
+</div>
+
 &nbsp;
 
 
-# <div align="center">Version en ligne</div>
+# <div align="center">Version en ligne </div>
 
-Afin de naviguer facilement dans *Dictionnaire de Bitcoin* sur cette version en ligne, vous pouvez utiliser la commande **ctrl + F** ou **commande + F**.
+Afin de naviguer facilement dans *Dictionnaire de Bitcoin* sur cette version en ligne, vous pouvez utiliser la commande `**ctrl + F**` ou `**commande + F**`.
 
 Vous lisez actuellement la version en ligne du livre *Dictionnaire de Bitcoin*, un ouvrage rédigé par Loïc Morel, publié sous licence [CC-BY-NC-SA 4.0](/README.md#licence-et-réutilisation). Si ce projet vous plait, vous êtes libre d'y [contribuer pour l'améliorer](/README.md#demandes-de-modification-et-contributions). Vous pouvez également me soutenir en achetant la version imprimée et brochée de cet ouvrage sur Amazon.fr, ou en faisant un don à [+throbbingpond8B1](https://paynym.is/+throbbingpond8B1) (BIP47) ou [loic@sats.pandul.fr](https://www.pandul.fr) (LN adresse).
 
 Merci et bonne lecture !
-
-&nbsp;
 
 &nbsp;
 
@@ -29,18 +29,6 @@ Merci et bonne lecture !
 - 
 
 
-# <div align="center">Sommaire</div>
-
-
-
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -3542,20 +3530,9 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 # <div align="center">Ressources</div>
 
-https://en.bitcoin.it/wiki/Script
-https://docs.liquid.net/docs/
-https://en.wikipedia.org/wiki/Mining_pool
-
-
-
-
-
-
-
-
-
-
-
+- https://en.bitcoin.it/wiki/Script
+- https://docs.liquid.net/docs/
+- https://en.wikipedia.org/wiki/Mining_pool
 
 
 
