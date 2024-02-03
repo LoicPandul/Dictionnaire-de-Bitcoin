@@ -4,10 +4,17 @@
 
 *Tout le vocabulaire technique de Bitcoin et de son environnement.*
 
+&nbsp;
+
+&nbsp;
+
 Loïc Morel
 
-<img src="/dictionnaire/images/Logo-Pandul-NOIR.png" width="200">
+&nbsp;
 
+&nbsp;
+
+<img src="/dictionnaire/images/Logo-Pandul-NOIR.png" width="200">
 
 </div>
 
