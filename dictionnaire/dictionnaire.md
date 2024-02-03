@@ -6,7 +6,7 @@
 
 Loïc Morel
 
-<img src="/dictionnaire/images/Logo%20Pandul%20NOIR%20point%20bleu.png" width="200">
+<img src="/dictionnaire/images/Logo-Pandul-NOIR.png" width="200">
 
 
 </div>
