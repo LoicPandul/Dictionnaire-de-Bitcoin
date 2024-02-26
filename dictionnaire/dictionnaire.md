@@ -90,7 +90,12 @@ Où :
 * $A$ : L'ancienne cible des 2016 derniers blocs ;
 * $T$ : Le temps total réel des 2016 derniers blocs en secondes ;
 * $1,209,600$ : Le temps cible en secondes pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
+
 > *En français, on parle parfois également de « reciblage » pour évoquer l'ajustement. En anglais, on parle de « Difficulty Adjustment ».*
+
+&nbsp;
+
+**ALGORITHME -**  Suite finie et non ambiguë d'instructions permettant de réaliser une tâche. Dans le cadre de l'informatique, il s'agit d'un processus écrit dans un langage de programmation qui indique à un ordinateur comment effectuer une mission.
 
 &nbsp;
 
@@ -850,7 +855,10 @@ Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs
 
 &nbsp;
 
-**CAHOOTS -** 
+**CAHOOTS -** Dans le cadre du portefeuille Samourai Wallet et des autres logiciels de portefeuilles qui l'implémente, un Cahoot désigne tous les types de transactions réalisées en collaboration entre plusieurs utilisateurs. Procéder à un Cahoot signifie donc participer conjointement à une transaction. Cette collaboration s'articule autour de l'échange de transactions partiellement signées. Ces échanges peuvent se faire soit manuellement, via des codes QR, soit de manière automatisée, via le réseau de communication Soroban.
+- Les transactions Stowaway (Payjoin) ;
+- Les transactions Stonewall x2 ;
+- Les transactions Joinbot.
 
 &nbsp;
 
@@ -861,6 +869,12 @@ Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs
 **CASHU -** Protocole open-source de monnaie électronique chaumienne, similaire au système eCash de David Chaum, mais qui fonctionne sur Bitcoin et le Lightning Network. Plus précisément, Cashu est inspiré d'une variante d'eCash proposée en 1996 par David Wagner nommée « *Chaumian ecash without RSA* ». Cashu peut être utilisé sur des portefeuilles custodiaux afin que le serveur ne puisse identifier ni les propriétaires des fonds, ni les détails des transactions, offrant ainsi une amélioration de la confidentialité. Les utilisateurs peuvent générer des jetons Cashu en échange de bitcoins, qui sont signés par le serveur sans connaitre l'utilisateur. Les jetons peuvent ensuite être transférés entre utilisateurs de manière instantanée, privée et sans frais. 
 
 > *Pour plus d'informations, voir la définition de **ECASH**.*
+
+&nbsp;
+
+**CET (CONTRACT EXECUTION TRANSACTION) -** Transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
+
+> *Pour plus d'informations, voir la définition de **DLC (DISCREET LOG CONTRACT)**.*
 
 &nbsp;
 
@@ -1034,9 +1048,9 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 &nbsp;
 
-**CONTRAT INTELLIGENT -** 
+**CONTRAT INTELLIGENT -** Programme qui s'exécute automatiquement lorsque certaines conditions prédéfinies sont remplies. Un contrat intelligent est donc un ensemble de clauses entre plusieurs parties qui peuvent se réaliser sans nécessiter l'intervention d'un tiers de confiance. Ces contrats déclenchent généralement des actions spécifiques comme un transfert de bitcoins.
 
-> *En anglais, on parle de « Smart Contract ».*
+> *En anglais, on parle de « Smart Contract ». En français, on parle également parfois de « contrat autonome ».*
 
 &nbsp;
 
@@ -1163,9 +1177,15 @@ Pour bien comprendre le concept de covenant, je vous propose une analogie : imag
 
 **DIVISION -**
 
+Split ?
+
 &nbsp;
 
-**DLC -** 
+**DLC (DISCREET LOG CONTRACT) -** Type de contrat intelligent sur Bitcoin qui permet l'exécution de conditions contractuelles à partir du résultat d'événements externes, validés par un ou plusieurs oracles, sans que ces derniers ne connaissent les détails du contrat. Les DLC ont été inventés par Tadge Dryja en 2018. Ces contrats intelligents sont principalement utiles dans des applications financières, permettant par exemple de créer des instruments financiers ou des paris conditionnels, tout en réduisant les risques de contrepartie. Pour construire un DLC, plusieurs parties bloquent des bitcoins sur une adresse multisig. Ces bitcoins ne peuvent être débloqués que lorsque l'oracle publie les informations spécifiées à un moment donné. 
+
+&nbsp;
+
+**DLP (DISCREET LOG PROBLEME) -** Voir la définition de **LOGARITHME DISCRET (PROBLÈME)**.
 
 &nbsp;
 
@@ -1268,6 +1288,10 @@ Les DNS seeds représentent le second moyen, par ordre de priorité, pour un nœ
 &nbsp;
 
 **ECLIPSE (ATTAQUE) -** Attaque qui consiste à isoler et contrôler les communications d'un nœud dans un réseau en créant un environnement artificiel autour de lui. L'objectif est de filtrer ou de manipuler les informations reçues et envoyées par ce nœud, le coupant ainsi de ses pairs légitimes. Dans le cadre de Bitcoin, cette technique peut être utilisée pour induire en erreur un nœud, censurer ou altérer les données qu'il reçoit ou envoie, ou pour mener des attaques de doubles dépenses.
+
+&nbsp;
+
+**ÉCOLE AUTRICHIENNE -** École de pensée économique qui théorise le marché comme un ensemble d'interactions individuelles volontaires, souligne la spontanéité de l'ordre économique et critique les interventions étatiques. L'École Autrichienne défend le rôle de la propriété privée, de la liberté contractuelle, et du libre-échange, tout en critiquant les effets perturbateurs de la création monétaire sur l'économie. Ses contributeurs, tels que Carl Menger, Ludwig von Mises ou Friedrich Hayek, ont travaillé des concepts tels que la formation des prix, la fonction de la monnaie, les dynamiques du capital ou encore la théorie subjective de la valeur. L'École Autrichienne critique le socialisme pour son incapacité à réaliser des calculs économiques efficaces, et favorise une approche libérale. Elle valorise le marché libre et voit dans l'interventionnisme étatique une source de déséquilibres économiques.
 
 &nbsp;
 
@@ -2520,6 +2544,12 @@ Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECK
 
 &nbsp;
 
+**ORACLE -** Source d'informations tierce qui fournit des données du monde réel pouvant être interprétées sur Bitcoin. Les oracles permettent aux contrats intelligents, tels que les DLC, d'exécuter des conditions contractuelles en fonction d'événements extérieurs. En général, ils fournissent une signature spécifique qui correspond au résultat d'un événement. Cette signature est ensuite utilisée pour compléter et rendre valide une transaction d'exécution qui envoie les bitcoins à la partie qui est censée les recevoir selon les conditions du contrat intelligent.
+
+> *Pour plus d'informations, voir la définition de **DLC (DISCREET LOG CONTRACT)**.*
+
+&nbsp;
+
 **ORDINALS -** 
 
 &nbsp;
@@ -3190,6 +3220,10 @@ Dans les scripts Taproot, les sigops sont traitées de manière différente par 
 &nbsp;
 
 **SRC-20 -** 
+
+&nbsp;
+
+**STABLECOIN -** Catégorie de cryptomonnaie conçue pour maintenir une valeur stable par rapport à un actif référence, souvent une monnaie fiduciaire comme le dollar américain.
 
 &nbsp;
 
