@@ -1,4 +1,4 @@
-# Le Dictionnaire de Bitcoin
+# Dictionnaire de Bitcoin
 Tout le vocabulaire technique de Bitcoin et de son environnement.
 
 # Description du projet
