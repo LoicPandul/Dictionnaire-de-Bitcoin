@@ -1,3 +1,7 @@
+## KEYSTORE
+
+
+
 ## KYC (KNOW YOUR CUSTOMER)
 
 Procédure réglementaire utilisée par certaines entreprises opérant sur Bitcoin pour vérifier l'identité de leurs clients dans le cadre de la lutte contre le blanchiment d'argent et le financement du terrorisme. Le KYC implique la collecte et la vérification de données personnelles. Dans le cadre de l'achat de bitcoins, le KYC amène plusieurs risques pour l'utilisateur, notamment :

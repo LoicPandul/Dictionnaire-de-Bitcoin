@@ -1,14 +1,28 @@
 ## LABEL
 
-Étiquette ou annotation attribuée à un UTXO afin de se souvenir de sa provenance.
+Étiquette ou annotation attribuée à un UTXO afin de se souvenir de sa provenance. 
+
+> *Pour plus d'informations, voir la définition de **ÉTIQUETAGE**.*
 
 ## LCB/FT
 
 La lutte contre le blanchiment des capitaux et le financement du terrorisme (LCB/FT) fait référence aux mesures réglementaires adoptées pour prévenir l'utilisation de Bitcoin dans des activités illégales. Ces mesures incluent l'identification et la vérification de l'identité des clients (KYC), la surveillance des transactions pour détecter des schémas « suspects », et la collaboration avec les autorités pour signaler des activités considérées comme illégales. Les plateformes d'échange régulées sont tenues de s'y conformer pour opérer dans de nombreuses juridictions, notamment en France.
 
+## LDB (.LDB)
+
+
+
+## LDK
+
+
+
 ## LEVELDB
 
 Bibliothèque de stockage de clés-valeurs légère, rapide et open-source, conçue par Google. On l'utilise sur Bitcoin pour stocker l'UTXO set, l'index des transactions et l'index des blocs. Ce système de base de données a été introduit en 2012 dans le cadre de la Pull Request « *Ultraprune* » visant à remplacer BerkeleyDB. Ce changement a eu des répercussions significatives, notamment la création d'une première division de la blockchain avec une réorganisation majeure de 24 blocs le 12 mars 2013. Cet incident a été détaillé dans le BIP50. Plus tard, ce changement de système a même conduit à un hard fork non intentionnel le 15 mai 2013.
+
+## LIBSECP256K1
+
+
 
 ## LIGHTNING LABS
 
@@ -33,6 +47,10 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 ## LOCK (.LOCK)
 
 Fichier utilisé dans Bitcoin Core pour le verrouillage du répertoire de données. Il est créé lorsque bitcoind ou Bitcoin-qt démarre pour éviter que plusieurs instances du logiciel accèdent simultanément au même répertoire de données. Le but est de prévenir les conflits et les corruptions de données. Si le logiciel s'arrête de manière inattendue, le fichier .lock peut éventuellement rester et doit être supprimé manuellement avant de redémarrer Bitcoin Core.
+
+## LOCKTIME
+
+
 
 ## LOGARITHME DISCRET (PROBLÈME)
 
