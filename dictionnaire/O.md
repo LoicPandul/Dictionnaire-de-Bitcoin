@@ -198,12 +198,12 @@ Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et
 ## OP_ELSE (`0X67`)
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
-> *Pour plus d'informations, voir la définition de **OP_IF**.*
+> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if).*
 
 ## OP_ENDIF (`0X68`)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
-> *Pour plus d'informations, voir la définition de **OP_IF**.*
+> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if).*
 
 ## OP_EQUAL (`0X87`)
 
@@ -220,7 +220,7 @@ Opcode proposé par Gavin Andresen en 2011. Il prend le script situé au sommet 
 ## OP_FALSE (`0X00`)
 
 Identique à `OP_0`.
-> *Pour plus d'informations, voir la définition de **OP_0**.*
+> *Pour plus d'informations, voir la définition de [**OP_0**](./O.md#op_0).*
 
 ## OP_FROMALTSTACK (`0X6C`)
 
@@ -237,12 +237,12 @@ Compare les deux éléments au sommet de la pile et vérifie si le premier élé
 ## OP_HASH160 (`0XA9`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
-> *Pour plus d'informations, voir la définition de **SHA256** et de **RIPEMD160**.*
+> *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256) et [**RIPEMD160**](./R.md#ripemd160).*
 
 ## OP_HASH256 (`0XAA`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
-> *Pour plus d'informations, voir la définition de **SHA256**.*
+> *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
 
 ## OP_IF (`0X63`)
 
@@ -280,7 +280,7 @@ Supprime l'élément situé juste en dessous du sommet de la pile (le second en 
 
 Ne produit aucun effet sur la pile ou l'état du script. Il ne fait aucun déplacement, aucune vérification, ni aucune modification. Il ne fait juste rien, à moins que l'on ait décidé qu'il fasse quelque chose via un soft fork. En effet, depuis leurs modifications par Satoshi Nakamoto en 2010, les commandes `OP_NOP` (`OP_NOP1` (`0XB0`) jusqu'à `OP_NOP10` (`0XB9`)) sont utilisées pour ajouter de nouveaux opcodes sous forme de soft fork. Ainsi, l'`OP_NOP2` (`0XB1`) et l'`OP_NOP3` (`0XB2`) ont déjà été utilisés pour implémenter respectivement l'`OP_CHECKLOCKTIMEVERIFY` et l'`OP_CHECKSEQUENCEVERIFY`. On les utilise en combinaison avec `OP_DROP` afin de supprimer de la pile les valeurs temporelles associées, et ainsi pouvoir continuer l'exécution du script, que le nœud soit à jour ou non. Les `OP_NOP` permettent donc d'insérer un point d'interruption dans un script pour vérifier des conditions supplémentaires déjà existantes ou pouvant être ajoutées avec de futurs soft fork. Depuis Tapscript, l'utilisation des `OP_NOP` a été remplacée par l'utilisation des `OP_SUCCESS` étant plus efficace.
 
-> *Pour plus d'informations, voir la définition de **OP_SUCCESS**.*
+> *Pour plus d'informations, voir la définition de [**OP_SUCCESS**](./O.md#op_success).*
 
 ## OP_NOT (`0X91`)
 
@@ -289,7 +289,7 @@ Inverse la valeur booléenne du sommet de la pile : si cette valeur est non null
 ## OP_NOTIF (`0X64`)
 
 Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
-> *Pour plus d'informations, voir la définition de **OP_IF**.*
+> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if).*
 
 ## OP_NUMEQUAL (`0X9C`)
 
@@ -330,7 +330,7 @@ Signale un script invalide, ce qui rend l'output qui le contient comme non dépe
 ## OP_RIPEMD160 (`0XA6`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `RIPEMD160`.
-> *Pour plus d'informations, voir la définition de **RIPEMD160**.*
+> *Pour plus d'informations, voir la définition de [**RIPEMD160**](./R.md#ripemd160).*
 
 ## OP_ROLL (`0X7A`)
 
@@ -347,7 +347,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 ## OP_SHA256 (`0XA8`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
-> *Pour plus d'informations, voir la définition de **SHA256**.*
+> *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
 
 ## OP_SIZE (`0X82`)
 
@@ -372,7 +372,7 @@ Prend le sommet de la pile principale (main stack) et le déplace vers la pile a
 ## OP_TRUE (`0X51`)
 
 Identique à OP_1.
-> *Pour plus d'informations, voir la définition de **OP_1**.*
+> *Pour plus d'informations, voir la définition de [**OP_1**](./O.md#op_1).*
 
 ## OP_TUCK (`0X7D`)
 
@@ -400,7 +400,7 @@ Ensemble des commandes utilisées dans le système Script de Bitcoin. Script est
 
 Source d'informations tierce qui fournit des données du monde réel pouvant être interprétées sur Bitcoin. Les oracles permettent aux contrats intelligents, tels que les DLC, d'exécuter des conditions contractuelles en fonction d'événements extérieurs. En général, ils fournissent une signature spécifique qui correspond au résultat d'un événement. Cette signature est ensuite utilisée pour compléter et rendre valide une transaction d'exécution qui envoie les bitcoins à la partie qui est censée les recevoir selon les conditions du contrat intelligent.
 
-> *Pour plus d'informations, voir la définition de **DLC (DISCREET LOG CONTRACT)**.*
+> *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-(discreet-log-contract)).*
 
 ## ORDINALS
 

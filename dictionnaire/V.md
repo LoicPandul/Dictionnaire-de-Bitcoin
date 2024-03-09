@@ -15,9 +15,9 @@ Premier logiciel open source en ligne de commande utilisé pour créer des adres
 ## VPRV
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
+> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## VPUB
 
 Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition **CLÉ ÉTENDUE**.*
+> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*

@@ -18,7 +18,7 @@ Total des bitcoins récupérés par un mineur lorsqu'il trouve un bloc valide su
 
 Un covenant récursif sur Bitcoin est un type de contrat intelligent qui impose des conditions non seulement sur la transaction actuelle mais aussi sur les transactions futures qui dépensent les sorties de cette transaction. Cela permet de créer des chaînes de transactions où chacune doit respecter certaines règles définies par la première de la chaîne. La récursivité crée une séquence de transactions où chacune hérite des restrictions de sa transaction parent. Cela permettrait d'établir un contrôle complexe et à long terme sur la manière dont les bitcoins peuvent être dépensés, mais cela introduirait également des risques au niveau de la liberté de dépense et de la fongibilité. Pour résumer, un covenant non récursif se limitera uniquement à la transaction qui succède immédiatement à celle qui a établi les règles. Et au contraire, un covenant récursif aura la capacité d'imposer des conditions spécifiques à un bitcoin de manière indéfinie. Les transactions pourront se succéder, mais le bitcoin en question conservera toujours les conditions initiales qui lui sont attachées. De manière plus générale, en informatique, ce que l’on appelle la « récursivité » est la capacité d’une fonction à s'appeler elle-même, ce qui crée une sorte de mise en abyme.
 
-> *Pour plus d'informations, voir la définition de **COVENANT**.*
+> *Pour plus d'informations, voir la définition de [**COVENANT**](./C.md#covenant).*
 
 ## REDEEMSCRIPT
 
@@ -52,7 +52,7 @@ Désigne l'infrastructure globale du système Bitcoin. Le réseau est constitué
 
 Synonyme plus juste de « réorganisation » bien que peu employé.
 
-> *Pour plus d'informations, voir la définition de **RÉORGANISATION**.*
+> *Pour plus d'informations, voir la définition de [**RÉORGANISATION**](./R.md#réorganisation).*
 
 ## RÉUTILISATION D'ADRESSE
 
@@ -72,7 +72,7 @@ Technique consistant à réaliser plusieurs transactions fictives vers soi-mêm
 
 Acronyme de *Research and development in Advanced Communications technologies in Europe Integrity Primitives Evaluation Message Digest 160*, est une fonction de hachage cryptographique qui génère un condensat de 160 bits à partir d'une entrée arbitraire. Elle est utilisée sur Bitcoin pour transformer une clé publique en une adresse de réception. Le processus implique d'abord l'application de la fonction de hachage `SHA256` sur la clé publique, suivie de l'application de `RIPEMD160` sur le résultat. Cette combinaison de deux fonctions de hachage distinctes est connue sous le nom de `HASH160` dans le contexte de Bitcoin. `RIPEMD160` est également utilisé dans les portefeuilles déterministes et hiérarchiques pour calculer des empreintes de clés. On utilise notamment `HASH160` pour calculer l'empreinte d'une clé parent, ensuite incluse dans les métadonnées d'une clé étendue (xpub).
 
-> *Pour plus d'informations, voir la définition **FONCTION DE HACHAGE**.*
+> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](./F.md#fonction-de-hachage).*
 
 ## RPC (REMOTE PROCEDURE CALL)
 

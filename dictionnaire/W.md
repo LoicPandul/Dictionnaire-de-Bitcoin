@@ -1,12 +1,12 @@
 ## WABISABI
 
 Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi.
-> *Pour plus d'informations, voir la définition **COINJOIN**.*
+> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
 ## WALLET
 
 Traduction anglaise de « portefeuille ».
-> *Pour plus d'informations, voir la définition **PORTEFEUILLE**.*
+> *Pour plus d'informations, voir la définition de [**PORTEFEUILLE**](./P.md#portefeuille).*
 
 ## WALLET.DAT
 
@@ -38,7 +38,7 @@ Un watch-only wallet (ou « portefeuille en lecture seule ») est un type de log
 
 Protocole de CoinJoin développé par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
 
-> *Pour plus d'informations, voir la définition **COINJOIN**.*
+> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
 ## WHIRLPOOL STAT TOOL
 
@@ -54,4 +54,4 @@ Script qui spécifie les conditions sous lesquelles les bitcoins peuvent être d
 
 Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction.
 
-> *Pour plus d'informations, voir les définitions **TXID** et de **SEGWIT**.*
+> *Pour plus d'informations, voir la définition de [**TXID**](./T.md#txid) et [**SEGWIT**](./S.md#segwit).*
