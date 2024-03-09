@@ -25,19 +25,19 @@ Dans le cadre du Lightning Network, un canal de paiement est une connexion bidir
 
 Protocole open-source de monnaie électronique chaumienne, similaire au système eCash de David Chaum, mais qui fonctionne sur Bitcoin et le Lightning Network. Plus précisément, Cashu est inspiré d'une variante d'eCash proposée en 1996 par David Wagner nommée « *Chaumian ecash without RSA* ». Cashu peut être utilisé sur des portefeuilles custodiaux afin que le serveur ne puisse identifier ni les propriétaires des fonds, ni les détails des transactions, offrant ainsi une amélioration de la confidentialité. Les utilisateurs peuvent générer des jetons Cashu en échange de bitcoins, qui sont signés par le serveur sans connaitre l'utilisateur. Les jetons peuvent ensuite être transférés entre utilisateurs de manière instantanée, privée et sans frais. 
 
-> *Pour plus d'informations, voir la définition de **ECASH**.*
+> *Pour plus d'informations, voir la définition de [**ECASH**](./E.md#ecash).*
 
 ## CET (CONTRACT EXECUTION TRANSACTION)
 
 Transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
 
-> *Pour plus d'informations, voir la définition de **DLC (DISCREET LOG CONTRACT)**.*
+> *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-(discreet-log-contract)).*
 
 ## CHAINSTATE/
 
 Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. C'est donc en réalité un synonyme d'« UTXO set ». 
 
-> *Pour plus d'informations, voir la définition de **UTXO SET**.*
+> *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
 
 ## CHARGE UTILE (PAYLOAD)
 
@@ -157,7 +157,7 @@ Pour permettre le CoinJoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 Nom de l'ancien dossier utilisé dans Bitcoin Core pour stocker l'UTXO set remplacé par le fichier chainstate/ dans la version 0.8.0.
 
-> *Pour plus d'informations, voir la définition de **UTXO SET**.*
+> *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
 
 ## COLD WALLET
 
@@ -187,7 +187,7 @@ La concaténation, dans le contexte de la cryptographie et des systèmes informa
 
 Le condensat, dans le contexte de la cryptographie, désigne le résultat (ou l'output) produit par l'application d'une fonction de hachage cryptographique à un ensemble de données. Le condensat est une chaîne de caractères de taille fixe généralement représentée sous forme d'une série de chiffres et de lettres en notation hexadécimale (base 16). Ce résultat a la particularité d'être presque unique et spécifique aux données d'entrée, de sorte qu'un changement minime dans l'entrée produira un condensat complètement différent. Les fonctions de hachage cryptographiques sont conçues pour être unidirectionnelles et résistantes aux collisions, rendant très difficile de retrouver les données initiales à partir du condensat ou de trouver deux entrées distinctes produisant le même condensat.
 
-> *Pour plus d'informations, voir la définition **FONCTION DE HACHAGE**.*
+> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](./F.md#fonction-de-hachage).*
 
 ## CONFIRMATION
 
