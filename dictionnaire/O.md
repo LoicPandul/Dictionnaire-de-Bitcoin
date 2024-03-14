@@ -382,7 +382,7 @@ Copie l'élément situé au sommet de la pile et l'insère entre le deuxième é
 
 Permettait de pousser la version du client sur la pile. Cet opcode a été désactivé car s'il avait été utilisé, chaque mise à jour aurait conduit à un hard fork. Le BIP342 a modifié cet opcode en `OP_SUCCESS`.
 
-## OP_VERIFY (`0X69`)-
+## OP_VERIFY (`0X69`)
 
 Exige que la valeur du sommet de la pile soit non nulle (vraie). La transaction est invalide si ce n'est pas le cas. `OP_VERIFY` est utilisé pour confirmer les conditions des scripts.
 
