@@ -81,7 +81,7 @@ Action de participer à la preuve de travail (Proof-of-Work) du système Bitcoin
 
 ## MINAGE ÉGOÏSTE
 
-Voir la définition de **SELFISH MINING**.
+Voir la définition de [**SELFISH MINING**](./S.md#selfish-mining).
 
 ## MINAGE FUSIONNÉ
 
@@ -116,7 +116,7 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript.
 
-> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **MINISCRIPT** et de **TAPSCRIPT**.*
+> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[MINISCRIPT](./M.md#miniscript)** et de **[TAPSCRIPT](./T.md#tapscript)**.*
 
 ## MODÈLE DE SCRIPT
 
