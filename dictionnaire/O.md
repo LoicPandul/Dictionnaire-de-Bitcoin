@@ -2,7 +2,7 @@
 
 Erreur de logique où une boucle itère une fois de trop ou de moins, souvent due à une mauvaise utilisation des opérateurs de comparaison ou de mauvais indices dans la gestion des structures de données. Dans le contexte de Bitcoin, on retrouve ce bug dans le cas du « *dummy element* » dans `OP_CHECKMULTISIG`, où un élément supplémentaire est consommé par erreur.
 
-> *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de **DUMMY ELEMENT** et **BIP147**.*
+> *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
 
 ## OBSOLÈTE (BLOC)
 
@@ -22,7 +22,7 @@ Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîn
   </tr>
 </table>
 
-> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **ORPHELIN (BLOC)**.*
+> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN (BLOC)](./O.md#orphelin-bloc)**.*
 
 ## OCTET (BYTE)
 
@@ -47,7 +47,8 @@ Fichier utilisé dans Bitcoin Core pour stocker une clé privée associée à un
 ## OP_0 (`0X00`)
 
 Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
-> *OP_0 est identique à **OP_FALSE** et **OP_PUSHNUM_0**.*
+
+> *OP_0 est identique à **[OP_FALSE](./O.md#op_false-0x00)** et **OP_PUSHNUM_0**.*
 
 ## OP_0NOTEQUAL (`0X92`)
 
@@ -56,7 +57,7 @@ Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élé
 ## OP_1 (`0X51`)
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
-> *OP_1 est identique à **OP_TRUE** et **OP_PUSHNUM_1**.*
+> *OP_1 est identique à **[OP_TRUE](./O.md#op_true-0x51)** et **OP_PUSHNUM_1**.*
 
 ## OP_1ADD (`0X8B`)
 
@@ -198,12 +199,12 @@ Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et
 ## OP_ELSE (`0X67`)
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
-> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if).*
+> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_ENDIF (`0X68`)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
-> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if).*
+> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_EQUAL (`0X87`)
 
@@ -220,7 +221,8 @@ Opcode proposé par Gavin Andresen en 2011. Il prend le script situé au sommet 
 ## OP_FALSE (`0X00`)
 
 Identique à `OP_0`.
-> *Pour plus d'informations, voir la définition de [**OP_0**](./O.md#op_0).*
+
+> *Pour plus d'informations, voir la définition de [**OP_0**](./O.md#op_0-0x00).*
 
 ## OP_FROMALTSTACK (`0X6C`)
 
@@ -289,7 +291,8 @@ Inverse la valeur booléenne du sommet de la pile : si cette valeur est non null
 ## OP_NOTIF (`0X64`)
 
 Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
-> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if).*
+
+> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_NUMEQUAL (`0X9C`)
 
@@ -372,7 +375,8 @@ Prend le sommet de la pile principale (main stack) et le déplace vers la pile a
 ## OP_TRUE (`0X51`)
 
 Identique à OP_1.
-> *Pour plus d'informations, voir la définition de [**OP_1**](./O.md#op_1).*
+
+> *Pour plus d'informations, voir la définition de [**OP_1**](./O.md#op_1-0x51).*
 
 ## OP_TUCK (`0X7D`)
 
@@ -382,7 +386,7 @@ Copie l'élément situé au sommet de la pile et l'insère entre le deuxième é
 
 Permettait de pousser la version du client sur la pile. Cet opcode a été désactivé car s'il avait été utilisé, chaque mise à jour aurait conduit à un hard fork. Le BIP342 a modifié cet opcode en `OP_SUCCESS`.
 
-## OP_VERIFY (`0X69`)-
+## OP_VERIFY (`0X69`)
 
 Exige que la valeur du sommet de la pile soit non nulle (vraie). La transaction est invalide si ce n'est pas le cas. `OP_VERIFY` est utilisé pour confirmer les conditions des scripts.
 
@@ -400,7 +404,7 @@ Ensemble des commandes utilisées dans le système Script de Bitcoin. Script est
 
 Source d'informations tierce qui fournit des données du monde réel pouvant être interprétées sur Bitcoin. Les oracles permettent aux contrats intelligents, tels que les DLC, d'exécuter des conditions contractuelles en fonction d'événements extérieurs. En général, ils fournissent une signature spécifique qui correspond au résultat d'un événement. Cette signature est ensuite utilisée pour compléter et rendre valide une transaction d'exécution qui envoie les bitcoins à la partie qui est censée les recevoir selon les conditions du contrat intelligent.
 
-> *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-(discreet-log-contract)).*
+> *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
 
 ## ORDINALS
 
@@ -409,12 +413,15 @@ Source d'informations tierce qui fournit des données du monde réel pouvant êt
 ## ORPHELIN (BLOC)
 
 Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin. Cependant, dans l'usage courant, l'expression « bloc orphelin » fait souvent référence à un bloc sans enfant : un bloc valide mais non retenu dans la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Le réseau finit par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ».
->*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de **OBSOLÈTE (BLOC)**.*
+
+>*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de [**OBSOLÈTE (BLOC)**](./O.md#obsolète-bloc).*
 
 ## OU EXCLUSIF
 
-Voir la définition du terme **XOR**.
+Traduction française du terme « *exclusive or* » (XOR).
+
+> *Pour plus d'informations, voir la définition du terme [**XOR**](./X.md#xor).***
 
 ## OUTPUT
 
-Voir définition du terme **SORTIE**.
+Traduction anglaise de « sortie ». Dans le contexte de Bitcoin, une « sortie » au sein d’une transaction fait référence aux _Unspent Transaction Outputs_ (UTXO) qui sont créés comme fonds de destination pour le paiement. Plus précisément, il s'agit d'un mécanisme par lequel une transaction distribue des fonds. Une transaction prend des UTXO, c’est-à-dire des morceaux de bitcoins, comme « inputs » (entrées) et crée de nouveaux UTXO comme « outputs » (sorties). Ces outputs stipulent une certaine quantité de bitcoins, souvent attribués à une adresse spécifique, ainsi que les conditions sous lesquelles ces fonds peuvent être dépensés ultérieurement. Le rôle de la transaction Bitcoin est donc de consommer des UTXO en entrées, et de créer des nouveaux UTXO en sorties. La différence entre les deux correspond aux frais de transactions qui peuvent être récupérés par le mineur gagnant du bloc. Un UTXO est, en essence, la sortie d'une transaction précédente qui n'a pas encore été dépensée. Les outputs de transaction sont donc les créations de nouveaux UTXO qui seront, à leur tour, potentiellement utilisés comme inputs dans les transactions futures. D'un point de vue plus large, en informatique, le terme « output » ou « sortie » désigne généralement les données en résultat d’une fonction, d’un algorithme, ou d’un système. Par exemple, lorsque l’on passe une donnée dans une fonction de hachage cryptographique, cette information est nommée « entrée » ou « input », et le résultat est nommé « sortie » ou « output ».
