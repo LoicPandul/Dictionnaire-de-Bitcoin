@@ -34,8 +34,11 @@ En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en li
 Mon objectif pour ce projet de dictionnaire est de publier une nouvelle édition annuellement. Ainsi, les modifications apportées au document principal ne se refléteront pas immédiatement dans la version imprimée disponible sur Amazon.
 
 # Lire le *Dictionnaire de Bitcoin*
-Vous pouvez découvrir gratuitement la version en ligne du *Dictionnaire de Bitcoin* dans le dossier :
+Vous pouvez découvrir gratuitement la version en ligne du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markedown correspond à une lettre.
 
+Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, vous permettant d'accéder directement à l'information recherchée.
+
+[Accéder au sommaire](./INDEX.md)
 
 Une version PDF est également disponible sur https://www.pandul.fr/. La [branche main](/dictionnaire/dictionnaire.md) correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
