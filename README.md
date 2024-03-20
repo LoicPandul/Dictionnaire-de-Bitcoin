@@ -40,7 +40,7 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
 
 [Accéder au sommaire](./INDEX.md)
 
-Une version PDF est également disponible sur https://www.pandul.fr/. La [branche main](/dictionnaire/dictionnaire.md) correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
+Une version PDF est également disponible sur https://www.pandul.fr/. La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
 # Licence et réutilisation
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]

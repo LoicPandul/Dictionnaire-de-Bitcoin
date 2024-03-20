@@ -24,12 +24,18 @@ def get_definitions_from_file(filepath):
 def generate_definitions_content(dictionnaire_folder):
     definitions_content = ""
     definitions = {}
+    total_definitions = 0  
     
     for filename in os.listdir(dictionnaire_folder):
         if filename.endswith(".md"):
             letter = filename.split('.')[0]
             filepath = os.path.join(dictionnaire_folder, filename)
-            definitions[letter] = get_definitions_from_file(filepath)
+            titles = get_definitions_from_file(filepath)
+            definitions[letter] = titles
+            total_definitions += len(titles)  
+    
+    intro_text = f"**Nombre total de définitions : ` {total_definitions} `**\n\n"
+    definitions_content += intro_text
     
     for letter, titles in sorted(definitions.items()):
         definitions_content += f"### {letter.upper()}\n\n"
@@ -38,6 +44,7 @@ def generate_definitions_content(dictionnaire_folder):
             definitions_content += f"- [{title}](./dictionnaire/{letter}.md#{anchor})\n"
         definitions_content += "\n"
     return definitions_content
+
 
 def update_index(dictionnaire_folder, index_file):
     definitions_content = generate_definitions_content(dictionnaire_folder)

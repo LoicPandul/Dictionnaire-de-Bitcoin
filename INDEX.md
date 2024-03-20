@@ -1,3 +1,5 @@
+**Nombre total de définitions : ` 613 `**
+
 ### A
 
 - [ACINQ](./dictionnaire/A.md#acinq)
