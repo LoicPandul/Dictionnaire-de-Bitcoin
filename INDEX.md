@@ -1,4 +1,3 @@
-<!-- AUTO-INDEX START -->
 ### A
 
 - [ACINQ](./dictionnaire/A.md#acinq)
@@ -690,4 +689,3 @@
 - [ZPRV](./dictionnaire/Z.md#zprv)
 - [ZPUB](./dictionnaire/Z.md#zpub)
 
-<!-- AUTO-INDEX END -->
