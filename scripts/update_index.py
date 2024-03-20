@@ -49,4 +49,9 @@ def update_index_with_markers(dictionnaire_folder, index_file):
         file.write(new_content)
 
 if __name__ == "__main__":
-    update_index_with_markers('dictionnaire', 'INDEX.md')
+    script_dir = os.path.dirname(__file__) 
+    project_root = os.path.abspath(os.path.join(script_dir, os.pardir)) 
+    dictionnaire_folder = os.path.join(project_root, 'dictionnaire')  
+    index_file = os.path.join(project_root, 'INDEX.md') 
+    
+    update_index_with_markers(dictionnaire_folder, index_file)
