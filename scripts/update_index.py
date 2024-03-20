@@ -2,7 +2,12 @@ import os
 import re
 
 def slugify(title):
-    return re.sub(r'[^0-9a-zA-Z-.]+', '', title.replace(' ', '-').lower())
+    title = title.lower()
+    title = title.replace('.', '')
+    title = title.replace(' ', '-')
+    title = re.sub(r'[^\w-]', '', title)
+    title = re.sub(r'-+', '-', title)
+    return title
 
 def get_definitions_from_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
