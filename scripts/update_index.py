@@ -2,6 +2,7 @@ import os
 import re
 
 def slugify(title):
+    title = title.replace('«', '--').replace('»', '--')
     title = title.lower()
     title = title.replace('.', '')
     title = title.replace(' ', '-')
