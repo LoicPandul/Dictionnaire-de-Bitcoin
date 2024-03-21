@@ -153,7 +153,9 @@ Nom de l'ancien dossier utilisé dans Bitcoin Core pour stocker l'UTXO set rempl
 
 ## COLD WALLET
 
-Synonyme de « hardware wallet ». Pour plus d'informations, voir la définition de [**HARDWARE WALLET**](./H.md#hardware-wallet).
+Synonyme de « hardware wallet ».
+
+> *Pour plus d'informations, voir la définition de [**HARDWARE WALLET**](./H.md#hardware-wallet).*
 
 ## COMMERÇANT
 
@@ -194,6 +196,7 @@ Mécanisme par lequel tous les nœuds du réseau Bitcoin parviennent à s'accord
 ## CONSOLIDATION
 
 Transaction spécifique dans laquelle plusieurs petits UTXO sont fusionnés en entrée pour former un seul et plus gros UTXO en sortie. Cette opération est une transaction effectuée vers son propre portefeuille. L'objectif de la consolidation est de tirer profit des périodes où les frais sur le réseau Bitcoin sont bas pour fusionner plusieurs petits UTXO en un seul plus grand en valeur. Ainsi, on anticipe les dépenses obligatoires en cas de hausse des frais, permettant d'économiser sur les frais de transaction futurs. En effet, les transactions comportant de nombreuses entrées sont plus lourdes et, par conséquent, plus coûteuses. Outre l'économie réalisable sur les frais de transaction, la consolidation est aussi une forme de planification à long terme. Si votre portefeuille contient de très petits UTXO, ceux-ci peuvent devenir inutilisables si le réseau Bitcoin entre dans une période prolongée de frais élevés. Par exemple, si vous devez dépenser un UTXO de 10 000 satoshis mais que les frais de minage minimums s'élèvent à 15 000 satoshis, la dépense excéderait la valeur de l'UTXO lui-même. Ces petits UTXO deviennent alors économiquement non rationnels à utiliser et restent inutilisables tant que les frais ne baissent pas. Ces UTXO sont communément appelés « dust » (poussière). En consolidant régulièrement vos petits UTXOs, vous réduisez ce risque associé aux augmentations de frais. Cependant, il est important de noter que les transactions de consolidation sont reconnaissables lors d'une analyse de chaîne. Une telle transaction indique une CIOH (*Common Input Ownership Heuristic*), c'est-à-dire que les entrées de la transaction de consolidation sont possédées par une seule entité. Cela peut avoir des implications en termes de confidentialité pour l'utilisateur.
+![](assets/C/7.png)
 
 ## CONTRAT INTELLIGENT
 
@@ -229,7 +232,7 @@ Pour bien comprendre le concept de covenant, je vous propose une analogie : imag
 
 > *En français, il n'existe aucun terme pour capturer précisément la signification du mot « covenant ». On pourrait parler de « clause », de « pacte » ou d' « engagement », mais cela ne correspondrait pas exactement au terme « covenant ». Ce dernier est d'ailleurs emprunté d'une terminologie juridique qui permet de décrire une clause contractuelle imposant des obligations persistantes sur un bien.*
 
-## CPFP (Child Pay For Parent)
+## CPFP (CHILD PAY FOR PARENT)
 
 Mécanisme transactionnel visant à accélérer la confirmation d'une transaction Bitcoin, tout comme le fait Replace-by-Fee (RBF), mais du côté du destinataire. Lorsqu'une transaction avec des frais trop faibles par rapport au marché reste bloquée dans les mempools des nœuds et ne se confirme pas assez rapidement, le destinataire peut initier une nouvelle transaction, dépensant les bitcoins reçus dans la transaction bloquée, bien qu'elle ne soit pas encore confirmée. Cette seconde transaction nécessite forcément que la première soit minée pour être confirmée. Les mineurs sont donc obligés d'inclure les deux transactions ensemble. La seconde va allouer beaucoup plus de frais de transaction que la première, de telle sorte que la moyenne de frais incite les mineurs à inclure les deux transactions. La transaction enfant (la seconde) paie pour la transaction parent qui est bloquée (la première). C'est pour cela que l'on parle d'un « CPFP ». Ainsi, CPFP permet au destinataire d'obtenir plus rapidement ses fonds malgré les faibles frais initiaux engagés par l'expéditeur.
 
