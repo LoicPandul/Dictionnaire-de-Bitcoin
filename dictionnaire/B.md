@@ -8,7 +8,9 @@ Nom du fichier utilisé par le logiciel Bitcoin Core pour enregistrer les adress
 
 ## BARE-MULTISIG
 
-Script de type P2MS. Voir la définition de **P2MS**.
+Script de type P2MS. 
+
+> *Pour plus d'informations, voir la définition de **[P2MS](./P.md#p2ms)**.*
 
 ## BASE (ARITHMÉTIQUE)
 
@@ -20,7 +22,7 @@ La `Base58Check` est un encodage utilisé dans le système Bitcoin pour représe
 
 ## BDK (BITCOIN DEV KIT)
 
-Collection de bibliothèques et d'outils destinés aux développeurs, permettant de simplifier la création d'applications de portefeuilles Bitcoin. BDK fournit des modules de fonctionnalités essentielles telles que la gestion de portefeuilles, la construction de transactions, la signature de transactions ou encore la gestion des clés. Les développeurs peuvent ensuite s'appuyer sur ces modules pour concevoir leurs propres logiciels. Les composants de BDK sont élaborés dans un souci de légèreté et de modularité, afin de les rendre ajustables à la plupart des possibilités d'utilisation. L'objectif de cet outil est de centraliser le développement de portefeuilles Bitcoin afin de concentrer les efforts.
+Kit de développement (SDK) pour les portefeuilles sur Bitcoin. BDK est une collection de bibliothèques et d'outils destinés aux développeurs, permettant de simplifier la création d'applications de portefeuilles Bitcoin. BDK fournit des modules de fonctionnalités essentielles telles que la gestion de portefeuilles, la construction de transactions, la signature de transactions ou encore la gestion des clés. Les développeurs peuvent ensuite s'appuyer sur ces modules pour concevoir leurs propres logiciels. Les composants de BDK sont élaborés dans un souci de légèreté et de modularité, afin de les rendre ajustables à la plupart des possibilités d'utilisation. L'objectif de cet outil est de centraliser le développement de portefeuilles Bitcoin afin de concentrer les efforts.
 
 > *BDK était auparavant appelé « Magical Bitcoin ».*
 
@@ -319,9 +321,10 @@ Introduit le concept de témoin séparé (*Segregated Witness*) qui donnera son 
 
 > *Pour plus d'informations, voir la définition de [**SEGWIT**](./S.md#segwit).*
 
-&nbsp
 
-**BIP143 -** Introduit une nouvelle manière de hacher la transaction pour la vérification des signatures dans les scripts post-SegWit. L'objectif est de minimiser les opérations redondantes lors de la vérification et d'inclure la valeur des UTXO en entrée dans la signature. Cela résout deux problèmes majeurs de l'algorithme de hachage de transaction original : 
+## BIP143
+
+Introduit une nouvelle manière de hacher la transaction pour la vérification des signatures dans les scripts post-SegWit. L'objectif est de minimiser les opérations redondantes lors de la vérification et d'inclure la valeur des UTXO en entrée dans la signature. Cela résout deux problèmes majeurs de l'algorithme de hachage de transaction original : 
 - La croissance quadratique du hachage des données avec le nombre de signatures ; 
 - L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.
 Puisque la mise à jour SegWit, expliquée dans le BIP141, introduit une nouvelle forme de transactions dont le script ne sera pas vérifié par les vieux nœuds, le BIP143 en profite pour résoudre ce problème sans nécessiter de hard fork. Le BIP143 fait donc partie du soft fork SegWit.
@@ -457,7 +460,7 @@ Système de cryptomonnaie créé à partir d'un hard fork de Bitcoin (BTC), qui 
 
 ## BITCOIN INQUISITION
 
-
+Fork logiciel de Bitcoin Core qui vise à tester l'intégration de nouvelles propositions d'amélioration de Bitcoin dans un environnement contrôlé sur des réseaux de test comme un Signet. Il inclut par exemple le support pour le BIP118 (ANYPREVOUT) et le BIP119 (CHECKTEMPLATEVERIFY). Le but de Bitcoin Inquisition est d'expérimenter, afin d'avoir une meilleure compréhension des applications, des avantages, des risques et des compromis liés à ces modifications. Bitcoin Inquisition est maintenu par Anthony Towns.
 
 ## BITCOIN JESUS
 
@@ -552,7 +555,7 @@ Dans le contexte de Liquid (sidechain de Bitcoin), ce sont les entités responsa
 
 ## BLOCKSTREAM
 
-Entreprise spécialisée dans le développement de solutions autour de Bitcoin. Blockstream est la base de la side chain Liquid, de l'implémentation du Lightning Network Core Lightning ou encore des portefeuilles Jade et Green. Elle est également connue pour employer un grand nombre de développeurs Bitcoin Core. La société Blockstream est actuellement dirigée par le cypherpunk et cryptographe Adam Back, l'inventeur de Hashcash, le protocole qui a inspiré la preuve de travail sur Bitcoin.
+Entreprise spécialisée dans le développement de solutions autour de Bitcoin. Blockstream est à l'initiative de la sidechain Liquid, de l'implémentation du Lightning Network Core Lightning ou encore des portefeuilles Jade et Green. Elle est également connue pour employer des développeurs Bitcoin Core. La société Blockstream est actuellement dirigée par le cypherpunk et cryptographe Adam Back, l'inventeur de Hashcash, le protocole qui a inspiré la preuve de travail sur Bitcoin.
 
 ## BLOCK TEMPLATE
 
