@@ -45,7 +45,7 @@ Une version PDF sera également disponible sur https://www.pandul.fr/. La branch
 # Licence et réutilisation
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-Copyright (c) 2023 Loïc Morel (Pandul)
+Copyright (c) 2024 Loïc Morel (Pandul)
 
 Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
 
