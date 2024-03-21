@@ -1,7 +1,7 @@
 # Dictionnaire de Bitcoin
 Tout le vocabulaire technique de Bitcoin et de son environnement.
 
-# Description du projet
+## Description du projet
 Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur GitHub, ou sous format PDF sur le site [https://www.pandul.fr/](https://www.pandul.fr/). Ce livre sera également vendu imprimé et broché sur Amazon à partir de fin 2024.
 
 Je gagne une petite marge sur chaque exemplaire physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
@@ -10,7 +10,7 @@ La première édition de l'ouvrage est prévue pour 2024. Si le projet intéress
 
 Pour ceux qui ne désirent pas acheter le livre sur Amazon mais souhaitent néanmoins soutenir le projet, il est possible de faire un don sur [+throbbingpond8B1](https://paynym.is/+throbbingpond8B1) (BIP47) ou à [loic@sats.pandul.fr](https://www.pandul.fr/) (adresse LN).
 
-# Demandes de modification et contributions
+## Demandes de modification et contributions
 *Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
 * La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
 * La correction d'une définition qui vous semble erronée ou imprécise ;
@@ -33,7 +33,7 @@ En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en li
 
 Mon objectif pour ce projet de dictionnaire est de publier une nouvelle édition annuellement. Ainsi, les modifications apportées au document principal ne se refléteront pas immédiatement dans la version imprimée disponible sur Amazon.
 
-# Lire le *Dictionnaire de Bitcoin*
+## Lire le *Dictionnaire de Bitcoin*
 Vous pouvez découvrir gratuitement la version en ligne du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
@@ -42,7 +42,7 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
 
 Une version PDF sera également disponible sur https://www.pandul.fr/. La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
-# Licence et réutilisation
+## Licence et réutilisation
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 Copyright (c) 2024 Loïc Morel (Pandul)
