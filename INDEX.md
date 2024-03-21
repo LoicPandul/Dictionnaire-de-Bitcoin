@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 613 `**
+**Nombre total de définitions : ` 619 `**
 
 ### A
 
@@ -36,7 +36,7 @@
 - [BARE-MULTISIG](./dictionnaire/B.md#bare-multisig)
 - [BASE (ARITHMÉTIQUE)](./dictionnaire/B.md#base-arithmétique)
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
-- [BDK](./dictionnaire/B.md#bdk)
+- [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
 - [BIG-ENDIAN](./dictionnaire/B.md#big-endian)
@@ -92,6 +92,7 @@
 - [BIP125](./dictionnaire/B.md#bip125)
 - [BIP137](./dictionnaire/B.md#bip137)
 - [BIP141](./dictionnaire/B.md#bip141)
+- [BIP143](./dictionnaire/B.md#bip143)
 - [BIP144](./dictionnaire/B.md#bip144)
 - [BIP145](./dictionnaire/B.md#bip145)
 - [BIP147](./dictionnaire/B.md#bip147)
@@ -284,6 +285,7 @@
 
 ### H
 
+- [HASHCASH](./dictionnaire/H.md#hashcash)
 - [HAL FINNEY](./dictionnaire/H.md#hal-finney)
 - [HALVING](./dictionnaire/H.md#halving)
 - [HARD FORK](./dictionnaire/H.md#hard-fork)
@@ -326,7 +328,7 @@
 - [LABEL](./dictionnaire/L.md#label)
 - [LCB/FT](./dictionnaire/L.md#lcbft)
 - [LDB (.LDB)](./dictionnaire/L.md#ldb-ldb)
-- [LDK](./dictionnaire/L.md#ldk)
+- [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
 - [LEVELDB](./dictionnaire/L.md#leveldb)
 - [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING LABS](./dictionnaire/L.md#lightning-labs)
@@ -341,6 +343,7 @@
 
 ### M
 
+- [MAGICAL BITCOIN](./dictionnaire/M.md#magical-bitcoin)
 - [MAINTENEUR](./dictionnaire/M.md#mainteneur)
 - [MAINTENEUR PRINCIPAL](./dictionnaire/M.md#mainteneur-principal)
 - [MAJORITÉ ÉCONOMIQUE](./dictionnaire/M.md#majorité-économique)
@@ -567,6 +570,7 @@
 - [SCRIPTPUBKEY](./dictionnaire/S.md#scriptpubkey)
 - [SCRIPTSIG](./dictionnaire/S.md#scriptsig)
 - [SCRIPTWITNESS](./dictionnaire/S.md#scriptwitness)
+- [SDK (SOFTWARE DEVELOPMENT KIT)](./dictionnaire/S.md#sdk-software-development-kit)
 - [SECP256K1](./dictionnaire/S.md#secp256k1)
 - [SECP256R1](./dictionnaire/S.md#secp256r1)
 - [SEED](./dictionnaire/S.md#seed)
@@ -688,6 +692,8 @@
 ### Z
 
 - [ZEROCONF](./dictionnaire/Z.md#zeroconf)
+- [ZEROSYNC](./dictionnaire/Z.md#zerosync)
+- [ZKP (ZERO-KNOWLEDGE PROOF)](./dictionnaire/Z.md#zkp-zero-knowledge-proof)
 - [ZPRV](./dictionnaire/Z.md#zprv)
 - [ZPUB](./dictionnaire/Z.md#zpub)
 
