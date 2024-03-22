@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 623 `**
+**Nombre total de définitions : ` 628 `**
 
 ### A
 
@@ -493,6 +493,7 @@
 - [P2TR](./dictionnaire/P.md#p2tr)
 - [P2WPKH](./dictionnaire/P.md#p2wpkh)
 - [P2WSH](./dictionnaire/P.md#p2wsh)
+- [PAIEMENT ROND](./dictionnaire/P.md#paiement-rond)
 - [PAIEMENT SIMPLIFIÉ](./dictionnaire/P.md#paiement-simplifié)
 - [PAIR-À-PAIR (P2P)](./dictionnaire/P.md#pair-à-pair-p2p)
 - [PAPER WALLET (PORTEFEUILLE PAPIER)](./dictionnaire/P.md#paper-wallet-portefeuille-papier)
@@ -552,6 +553,7 @@
 - [RÉSEAU BITCOIN](./dictionnaire/R.md#réseau-bitcoin)
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
 - [RÉUTILISATION D'ADRESSE](./dictionnaire/R.md#réutilisation-dadresse)
+- [RÉUTILISATION D'ADRESSE INTERNE](./dictionnaire/R.md#réutilisation-dadresse-interne)
 - [RICOCHET](./dictionnaire/R.md#ricochet)
 - [RIPEMD160](./dictionnaire/R.md#ripemd160)
 - [RPC (REMOTE PROCEDURE CALL)](./dictionnaire/R.md#rpc-remote-procedure-call)
@@ -606,6 +608,7 @@
 - [SOMME DE CONTRÔLE (CHECKSUM)](./dictionnaire/S.md#somme-de-contrôle-checksum)
 - [SOROBAN](./dictionnaire/S.md#soroban)
 - [SORTIE (OUTPUT)](./dictionnaire/S.md#sortie-output)
+- [SORTIE LA PLUS GRANDE](./dictionnaire/S.md#sortie-la-plus-grande)
 - [SORTIE NON RENTABLE](./dictionnaire/S.md#sortie-non-rentable)
 - [SPARSE MERKLE TREE (SMT)](./dictionnaire/S.md#sparse-merkle-tree-smt)
 - [SPEEDY TRIAL](./dictionnaire/S.md#speedy-trial)
@@ -642,6 +645,7 @@
 - [TPUB](./dictionnaire/T.md#tpub)
 - [TRANSACTION (TX)](./dictionnaire/T.md#transaction-tx)
 - [TRANSACTION COINBASE](./dictionnaire/T.md#transaction-coinbase)
+- [TRANSACTION COLLABORATIVE](./dictionnaire/T.md#transaction-collaborative)
 - [TRANSACTION D'ENGAGEMENT](./dictionnaire/T.md#transaction-dengagement)
 - [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
 - [TXID (TRANSACTION IDENTIFIER)](./dictionnaire/T.md#txid-transaction-identifier)
@@ -663,6 +667,7 @@
 
 - [VANITY (ADDRESS)](./dictionnaire/V.md#vanity-address)
 - [VANITYGEN](./dictionnaire/V.md#vanitygen)
+- [VERSIONNAGE](./dictionnaire/V.md#versionnage)
 - [VOUT](./dictionnaire/V.md#vout)
 - [VPRV](./dictionnaire/V.md#vprv)
 - [VPUB](./dictionnaire/V.md#vpub)
