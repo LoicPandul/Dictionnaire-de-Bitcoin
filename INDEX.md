@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 619 `**
+**Nombre total de définitions : ` 623 `**
 
 ### A
 
@@ -36,6 +36,7 @@
 - [BARE-MULTISIG](./dictionnaire/B.md#bare-multisig)
 - [BASE (ARITHMÉTIQUE)](./dictionnaire/B.md#base-arithmétique)
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
+- [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
@@ -117,6 +118,7 @@
 - [BITCOIND](./dictionnaire/B.md#bitcoind)
 - [BITCOIND.PID](./dictionnaire/B.md#bitcoindpid)
 - [BITCOIN GOLD (BTG)](./dictionnaire/B.md#bitcoin-gold-btg)
+- [BITCOIN KNOTS](./dictionnaire/B.md#bitcoin-knots)
 - [BITCOIN INQUISITION](./dictionnaire/B.md#bitcoin-inquisition)
 - [BITCOIN JESUS](./dictionnaire/B.md#bitcoin-jesus)
 - [BITCOIN POOLED MINING (BPM)](./dictionnaire/B.md#bitcoin-pooled-mining-bpm)
@@ -190,7 +192,7 @@
 - [CORE-LIGHTNING (CLN)](./dictionnaire/C.md#core-lightning-cln)
 - [COURBE ELLIPTIQUE](./dictionnaire/C.md#courbe-elliptique)
 - [COVENANT](./dictionnaire/C.md#covenant)
-- [CPFP (Child Pay For Parent)](./dictionnaire/C.md#cpfp-child-pay-for-parent)
+- [CPFP (CHILD PAY FOR PARENT)](./dictionnaire/C.md#cpfp-child-pay-for-parent)
 - [CPPSRB (CAPPED PAY PER SHARE RECENT BACKPAY)](./dictionnaire/C.md#cppsrb-capped-pay-per-share-recent-backpay)
 - [CPU (CENTRAL PROCESSING UNIT)](./dictionnaire/C.md#cpu-central-processing-unit)
 - [CRYPTANALYSE](./dictionnaire/C.md#cryptanalyse)
@@ -491,6 +493,7 @@
 - [P2TR](./dictionnaire/P.md#p2tr)
 - [P2WPKH](./dictionnaire/P.md#p2wpkh)
 - [P2WSH](./dictionnaire/P.md#p2wsh)
+- [PAIEMENT SIMPLIFIÉ](./dictionnaire/P.md#paiement-simplifié)
 - [PAIR-À-PAIR (P2P)](./dictionnaire/P.md#pair-à-pair-p2p)
 - [PAPER WALLET (PORTEFEUILLE PAPIER)](./dictionnaire/P.md#paper-wallet-portefeuille-papier)
 - [PARTIALLY SIGNED BITCOIN TRANSACTION (PSBT)](./dictionnaire/P.md#partially-signed-bitcoin-transaction-psbt)
@@ -619,7 +622,8 @@
 - [STRONG FEDERATION](./dictionnaire/S.md#strong-federation)
 - [SUBVENTION DE BLOC](./dictionnaire/S.md#subvention-de-bloc)
 - [SURCOUCHE (LAYER)](./dictionnaire/S.md#surcouche-layer)
-- [Synchronisation initiale d'un nœud (IBD)](./dictionnaire/S.md#synchronisation-initiale-dun-nœud-ibd)
+- [SWEEP TRANSACTION](./dictionnaire/S.md#sweep-transaction)
+- [SYNCHRONISATION INITIALE D'UN NŒUD (IBD)](./dictionnaire/S.md#synchronisation-initiale-dun-nœud-ibd)
 
 ### T
 

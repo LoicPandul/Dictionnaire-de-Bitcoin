@@ -10,6 +10,15 @@ La première édition de l'ouvrage est prévue pour 2024. Si le projet intéress
 
 Pour ceux qui ne désirent pas acheter le livre sur Amazon mais souhaitent néanmoins soutenir le projet, il est possible de faire un don sur [+throbbingpond8B1](https://paynym.is/+throbbingpond8B1) (BIP47) ou à [loic@sats.pandul.fr](https://www.pandul.fr/) (adresse LN).
 
+## Lire le *Dictionnaire de Bitcoin*
+Vous pouvez découvrir gratuitement la version en ligne du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
+
+Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
+
+[Accéder au sommaire](./INDEX.md)
+
+Une version PDF sera également disponible sur https://www.pandul.fr/. La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
+
 ## Demandes de modification et contributions
 *Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
 * La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
@@ -27,20 +36,26 @@ Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez 
 
 Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement. Mes coordonnées sont disponibles sur [https://www.pandul.fr/](https://www.pandul.fr/).
 
-L'intégration d'un nouveau terme dans *Dictionnaire de Bitcoin* nécessite simplement qu'il soit pertinent pour Bitcoin ou son écosystème. Utilisez votre discernement pour juger de l'utilité potentielle du terme pour ceux qui étudient ou utilisent Bitcoin et son environnement.
-
 En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en ligne que dans la version imprimée du dictionnaire**. Si vous préférez ne pas être cité, ou si vous souhaitez apparaître sous un autre nom que votre pseudo GitHub, veuillez le préciser explicitement dans votre issue ou votre PR.
 
-Mon objectif pour ce projet de dictionnaire est de publier une nouvelle édition annuellement. Ainsi, les modifications apportées au document principal ne se refléteront pas immédiatement dans la version imprimée disponible sur Amazon.
+Mon objectif pour ce projet de dictionnaire est de publier une nouvelle édition toutes les N années. Ainsi, les modifications apportées au document principal ne se refléteront pas immédiatement dans la version imprimée disponible sur Amazon.
 
-## Lire le *Dictionnaire de Bitcoin*
-Vous pouvez découvrir gratuitement la version en ligne du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
+## Termes acceptés dans le Dictionnaire
+L'intégration d'un nouveau terme dans le *Dictionnaire de Bitcoin* nécessite simplement qu'il soit pertinent pour Bitcoin ou son écosystème. Utilisez votre discernement pour juger de l'utilité potentielle du terme pour ceux qui étudient ou utilisent Bitcoin et son environnement. 
 
-Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
+L'ambition de ce dictionnaire est de couvrir le champ lexical de Bitcoin avec la plus grande exhaustivité possible, dans le même esprit que les dictionnaires professionnels d'autres domaines. Ainsi, même les termes d'intérêt limité doivent être considérés.
 
-[Accéder au sommaire](./INDEX.md)
+Un terme est accepté si la réponse à la question suivante est affirmative : **« _Un débutant qui étudie Bitcoin pourrait-il croiser ce terme durant ses recherches et désirer en comprendre la signification ?_ »**
 
-Une version PDF sera également disponible sur https://www.pandul.fr/. La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
+Tous les termes techniques, logiciels, algorithmes et protocoles sont acceptés s'ils se rapportent, de manière directe ou indirecte, à Bitcoin ou à un protocole s'appuyant sur Bitcoin (comme Lightning, RGB, Liquid, Ark...).
+
+Les termes généraux liés à l'informatique et à la cryptographie sont uniquement inclus s'ils sont susceptibles d'être rencontrés et nécessaires à la compréhension de Bitcoin. L'objectif est d'offrir un dictionnaire complet sans pour autant devenir un dictionnaire informatique généraliste.
+
+Quant aux noms d'entreprises et de marques, j'accepte de les ajouter uniquement si elles ont eu un rôle historique dans l'évolution technique de Bitcoin. Il faut également qu'elles soient connues à l'échelle internationale. La préférence est donnée à l'intégration des logiciels et des protocoles développés par ces entreprises, plutôt qu'aux entreprises en elles-mêmes. Les propositions d'ajout de définition contre rémunération ne sont pas acceptées. 
+
+En ce qui concerne les individus, seules les contributions historiquement significatives à Bitcoin justifient une mention. Plutôt que de nommer directement une personne, il est préférable de référencer le logiciel ou le protocole sur lequel elle a travaillé, en la mentionnant dans la définition correspondante.
+
+On ne parle évidemment pas de shitcoins dans ce dictionnaire, sauf si le shitcoin en question fait partie de l'histoire de Bitcoin (par exemple, les forks de Bitcoin).
 
 ## Licence et réutilisation
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
