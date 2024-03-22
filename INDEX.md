@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 628 `**
+**Nombre total de définitions : ` 631 `**
 
 ### A
 
@@ -161,6 +161,7 @@
 - [CET (CONTRACT EXECUTION TRANSACTION)](./dictionnaire/C.md#cet-contract-execution-transaction)
 - [CHAINSTATE/](./dictionnaire/C.md#chainstate)
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
+- [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
 - [CIBLE DE DIFFICULTÉ](./dictionnaire/C.md#cible-de-difficulté)
 - [CIOH (COMMON INPUT OWNERSHIP HEURISTIC)](./dictionnaire/C.md#cioh-common-input-ownership-heuristic)
@@ -371,6 +372,7 @@
 - [MINIMINT](./dictionnaire/M.md#minimint)
 - [MINISCRIPT](./dictionnaire/M.md#miniscript)
 - [MINITAPSCRIPT](./dictionnaire/M.md#minitapscript)
+- [MIXAGE](./dictionnaire/M.md#mixage)
 - [MODÈLE DE SCRIPT](./dictionnaire/M.md#modèle-de-script)
 - [M-OF-N](./dictionnaire/M.md#m-of-n)
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
@@ -701,6 +703,7 @@
 ### Z
 
 - [ZEROCONF](./dictionnaire/Z.md#zeroconf)
+- [ZEROLINK](./dictionnaire/Z.md#zerolink)
 - [ZEROSYNC](./dictionnaire/Z.md#zerosync)
 - [ZKP (ZERO-KNOWLEDGE PROOF)](./dictionnaire/Z.md#zkp-zero-knowledge-proof)
 - [ZPRV](./dictionnaire/Z.md#zprv)
