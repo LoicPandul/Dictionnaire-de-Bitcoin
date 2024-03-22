@@ -40,6 +40,8 @@ En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en li
 
 Mon objectif pour ce projet de dictionnaire est de publier une nouvelle édition toutes les N années. Ainsi, les modifications apportées au document principal ne se refléteront pas immédiatement dans la version imprimée disponible sur Amazon.
 
+Si vous le souhaitez, vous pouvez joindre un schéma à votre définition pour faciliter la compréhension. Vous pouvez envoyer un schéma brouillon que je reprendrai en l'adaptant à la charte graphique du projet.
+
 ## Termes acceptés dans le Dictionnaire
 L'intégration d'un nouveau terme dans le *Dictionnaire de Bitcoin* nécessite simplement qu'il soit pertinent pour Bitcoin ou son écosystème. Utilisez votre discernement pour juger de l'utilité potentielle du terme pour ceux qui étudient ou utilisent Bitcoin et son environnement. 
 
