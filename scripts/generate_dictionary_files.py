@@ -1,4 +1,5 @@
 import os
+import re
 
 def nettoyer_nom_fichier(nom):
     caracteres_interdits = '<>:"/\\|*'
@@ -7,12 +8,22 @@ def nettoyer_nom_fichier(nom):
     nom = nom.replace('?', '0')  # Remplace '?' par '0'
     return nom
 
+def ajuster_chemins_images_et_liens(contenu):
+    # Ajuster les chemins des images
+    motif_image = r'!\[.*?\]\((assets\/.*?\..*?)\)'
+    contenu = re.sub(motif_image, r'![](\1)', contenu)
+
+    # Ajuster les liens hypertextes vers d'autres définitions (si nécessaire)
+    # motif_lien = r'\[.*?\]\((.*?)\)'
+    # contenu = re.sub(motif_lien, r'[lien hypertexte](nouveau chemin vers les fichiers md/\1)', contenu)
+    return contenu
+
 # Chemin vers le dossier contenant les fichiers md initiaux
 chemin_dossier_dictionnaire = '../dictionnaire'
-# Chemin pour le fichier md unique compilé
-chemin_dictionnaire_complet = '../dictionnaire_complet/dictionnaire_complet.md'
-# Chemin pour les fichiers de définitions individuelles
-chemin_definitions_individuelles = '../definitions_individuelles'
+# Chemin pour les dossiers de sortie dans autres_formats
+chemin_autres_formats = '../autres_formats'
+chemin_dictionnaire_complet = os.path.join(chemin_autres_formats, 'dictionnaire_complet/dictionnaire_complet.md')
+chemin_definitions_individuelles = os.path.join(chemin_autres_formats, 'definitions_individuelles')
 
 # S'assurer que les dossiers de sortie existent
 os.makedirs(os.path.dirname(chemin_dictionnaire_complet), exist_ok=True)
@@ -26,6 +37,7 @@ with open(chemin_dictionnaire_complet, 'w', encoding='utf-8') as fichier_complet
         if os.path.isfile(chemin_complet):
             with open(chemin_complet, 'r', encoding='utf-8') as fichier:
                 contenu = fichier.read()
+                contenu = ajuster_chemins_images_et_liens(contenu)
                 fichier_complet.write(contenu + '\n\n')
 
 # Extraction et création des fichiers de définitions individuelles
@@ -34,6 +46,7 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
     if os.path.isfile(chemin_complet):  # De nouveau, vérifier si c'est un fichier
         with open(chemin_complet, 'r', encoding='utf-8') as fichier:
             contenu = fichier.read()
+            contenu = ajuster_chemins_images_et_liens(contenu)
             definitions = contenu.split('## ')[1:]  # Ignorer le premier élément vide
             for defi in definitions:
                 titre = defi.split('\n', 1)[0].strip()
