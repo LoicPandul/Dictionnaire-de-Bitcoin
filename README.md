@@ -42,6 +42,13 @@ Pour contribuer, voici la marche à suivre :
 3. Rédigez vos suggestions de modification directement sur votre branche ;
 4. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
 
+Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
+- [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
+- [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
+- [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
+
+**Les contributions doivent se faire uniquement sur le dossier de travail [/dictionnaire](/dictionnaire).** Un script permet de mettre à jour automatiquement les autres formats.
+
 Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez en tête une modification mineure à apporter (telle que l'ajout d'un terme ou la correction d'une petite erreur d'orthographe), il serait plus approprié de créer une issue sur GitHub plutôt qu'une PR.
 
 Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement. Mes coordonnées sont disponibles sur [https://www.pandul.fr/](https://www.pandul.fr/).
