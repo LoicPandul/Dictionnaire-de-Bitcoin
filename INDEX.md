@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 635 `**
+**Nombre total de définitions : ` 642 `**
 
 ### A
 
@@ -117,6 +117,7 @@
 - [BITCOIN CORE](./dictionnaire/B.md#bitcoin-core)
 - [BITCOIND](./dictionnaire/B.md#bitcoind)
 - [BITCOIND.PID](./dictionnaire/B.md#bitcoindpid)
+- [BITCOIN FOG](./dictionnaire/B.md#bitcoin-fog)
 - [BITCOIN GOLD (BTG)](./dictionnaire/B.md#bitcoin-gold-btg)
 - [BITCOIN KNOTS](./dictionnaire/B.md#bitcoin-knots)
 - [BITCOIN INQUISITION](./dictionnaire/B.md#bitcoin-inquisition)
@@ -176,8 +177,11 @@
 - [COINBASE (TRANSACTION)](./dictionnaire/C.md#coinbase-transaction)
 - [COIN CONTROL](./dictionnaire/C.md#coin-control)
 - [COINJOIN](./dictionnaire/C.md#coinjoin)
+- [COINJUMBLE](./dictionnaire/C.md#coinjumble)
+- [COINMUX](./dictionnaire/C.md#coinmux)
 - [COINS/](./dictionnaire/C.md#coins)
 - [COINSHUFFLE](./dictionnaire/C.md#coinshuffle)
+- [COINSWAP](./dictionnaire/C.md#coinswap)
 - [COLD WALLET](./dictionnaire/C.md#cold-wallet)
 - [COMMERÇANT](./dictionnaire/C.md#commerçant)
 - [COMMIT](./dictionnaire/C.md#commit)
@@ -208,6 +212,7 @@
 ### D
 
 - [DANDELION](./dictionnaire/D.md#dandelion)
+- [DARKWALLET](./dictionnaire/D.md#darkwallet)
 - [DATABASE/](./dictionnaire/D.md#database)
 - [DB.LOG](./dictionnaire/D.md#dblog)
 - [DDOS](./dictionnaire/D.md#ddos)
@@ -283,6 +288,8 @@
 - [GOLDFINGER (ATTAQUE)](./dictionnaire/G.md#goldfinger-attaque)
 - [GOSSIP](./dictionnaire/G.md#gossip)
 - [GRAINE (SEED)](./dictionnaire/G.md#graine-seed)
+- [GREEN ADDRESS](./dictionnaire/G.md#green-address)
+- [GREEN WALLET](./dictionnaire/G.md#green-wallet)
 - [GROS-BOUTISTE](./dictionnaire/G.md#gros-boutiste)
 - [GUI](./dictionnaire/G.md#gui)
 - [GUISETTINGS.INI.BAK](./dictionnaire/G.md#guisettingsinibak)
