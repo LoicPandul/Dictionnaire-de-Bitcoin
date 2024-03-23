@@ -1,0 +1,4 @@
+## DLP (DISCREET LOG PROBLEME)
+
+Voir la définition de [**LOGARITHME DISCRET (PROBLÈME)**](./L.md#logarithme-discret-problème).
+
