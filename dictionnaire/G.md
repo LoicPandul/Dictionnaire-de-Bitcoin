@@ -38,6 +38,15 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 > *La traduction anglaise de « graine » est « seed ». En français, beaucoup utilisent directement le mot anglais pour désigner la graine.*
 
+## GREEN ADDRESS
+
+
+
+## GREEN WALLET
+
+
+
+
 ## GROS-BOUTISTE
 
 Voir la définition de **BIG-ENDIAN**.
