@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 642 `**
+**Nombre total de définitions : ` 645 `**
 
 ### A
 
@@ -144,7 +144,7 @@
 - [BLOCK WITHHOLDING](./dictionnaire/B.md#block-withholding)
 - [BLOOM FILTER](./dictionnaire/B.md#bloom-filter)
 - [B-MONEY](./dictionnaire/B.md#b-money)
-- [BOLT](./dictionnaire/B.md#bolt)
+- [BOLT (BASIS OF LIGHTNING TECHNOLOGY)](./dictionnaire/B.md#bolt-basis-of-lightning-technology)
 - [BOUTISME](./dictionnaire/B.md#boutisme)
 - [BRANCHE](./dictionnaire/B.md#branche)
 - [BRC-20](./dictionnaire/B.md#brc-20)
@@ -390,6 +390,7 @@
 
 - [NESTED SEGWIT](./dictionnaire/N.md#nested-segwit)
 - [NETWORK-ADJUSTED TIME (NAT)](./dictionnaire/N.md#network-adjusted-time-nat)
+- [NEW YORK AGREEMENT (NYA)](./dictionnaire/N.md#new-york-agreement-nya)
 - [NLOCKTIME](./dictionnaire/N.md#nlocktime)
 - [NŒUD](./dictionnaire/N.md#nœud)
 - [NŒUD COMPLET](./dictionnaire/N.md#nœud-complet)
@@ -592,6 +593,7 @@
 - [SEED](./dictionnaire/S.md#seed)
 - [SEED NODES](./dictionnaire/S.md#seed-nodes)
 - [SEGWIT](./dictionnaire/S.md#segwit)
+- [SEGWIT2X](./dictionnaire/S.md#segwit2x)
 - [SEGWIT V0](./dictionnaire/S.md#segwit-v0)
 - [SEGWIT V1](./dictionnaire/S.md#segwit-v1)
 - [SELF-CUSTODY](./dictionnaire/S.md#self-custody)
@@ -615,6 +617,7 @@
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
 - [SIMPLIFIED PAYMENT VERIFICATION (SPV)](./dictionnaire/S.md#simplified-payment-verification-spv)
+- [SLIP (SATOSHI LABS IMPROVEMENT PROPOSALS)](./dictionnaire/S.md#slip-satoshi-labs-improvement-proposals)
 - [SMPPS (SHARED MAXIMUM PAY PER SHARE)](./dictionnaire/S.md#smpps-shared-maximum-pay-per-share)
 - [SOFT FORK](./dictionnaire/S.md#soft-fork)
 - [SOMME DE CONTRÔLE (CHECKSUM)](./dictionnaire/S.md#somme-de-contrôle-checksum)
