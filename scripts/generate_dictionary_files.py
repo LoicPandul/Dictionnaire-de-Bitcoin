@@ -8,14 +8,13 @@ def nettoyer_nom_fichier(nom):
     nom = nom.replace('?', '0')  # Remplace '?' par '0'
     return nom
 
-def ajuster_chemins_images_et_liens(contenu):
-    # Ajuster les chemins des images, si nécessaire
-    motif_image = r'!\[.*?\]\((.*?)\)'
-    contenu = re.sub(motif_image, lambda match: f"![](/dictionnaire/{match.group(1)})", contenu)
-    
-    # Ajuster les liens hypertextes vers d'autres définitions
-    motif_lien = r'\[.*?\]\((.*?)\)'
-    contenu = re.sub(motif_lien, lambda match: f"[](/dictionnaire/{match.group(1)})", contenu)
+def ajuster_liens(contenu, type_document):
+    if type_document == 'complet':
+        # Pour dictionnaire_complet, conserver uniquement le texte et l'ancre
+        contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
+    elif type_document == 'individuel':
+        # Pour definitions_individuelles, ajuster directement sans le formatage markdown intermédiaire
+        contenu = re.sub(r'\[([^\]]+)\]\(\.\/(.*?)\.md#(.*?)\)', r'[\1](/dictionnaire/\2.md#\3)', contenu)
     return contenu
 
 # Chemin vers le dossier contenant les fichiers md initiaux
@@ -33,21 +32,20 @@ os.makedirs(chemin_definitions_individuelles, exist_ok=True)
 with open(chemin_dictionnaire_complet, 'w', encoding='utf-8') as fichier_complet:
     for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
         chemin_complet = os.path.join(chemin_dossier_dictionnaire, fichier_lettre)
-        # Vérifier si le chemin pointe vers un fichier avant de tenter de l'ouvrir
         if os.path.isfile(chemin_complet):
             with open(chemin_complet, 'r', encoding='utf-8') as fichier:
                 contenu = fichier.read()
-                contenu = ajuster_chemins_images_et_liens(contenu)
+                contenu = ajuster_liens(contenu, 'complet')
                 fichier_complet.write(contenu + '\n\n')
 
 # Extraction et création des fichiers de définitions individuelles
 for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
     chemin_complet = os.path.join(chemin_dossier_dictionnaire, fichier_lettre)
-    if os.path.isfile(chemin_complet):  # De nouveau, vérifier si c'est un fichier
+    if os.path.isfile(chemin_complet):
         with open(chemin_complet, 'r', encoding='utf-8') as fichier:
             contenu = fichier.read()
-            contenu = ajuster_chemins_images_et_liens(contenu)
-            definitions = contenu.split('## ')[1:]  # Ignorer le premier élément vide
+            contenu = ajuster_liens(contenu, 'individuel')
+            definitions = contenu.split('## ')[1:] 
             for defi in definitions:
                 titre = defi.split('\n', 1)[0].strip()
                 titre_nettoye = nettoyer_nom_fichier(titre)

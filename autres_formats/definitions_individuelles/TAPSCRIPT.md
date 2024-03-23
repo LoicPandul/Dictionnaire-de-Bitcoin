@@ -4,5 +4,5 @@ Mise à jour qui a pour objet de modifier certains opcodes du langage de script 
 
 Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'est avéré nécessaire de revisiter le langage de script. C'est là l'objet de Tapscript qui désactive ou modifie certains opcodes, et vient en ajouter de nouveaux. 
 
-> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#schnorr-protocole) et [](/dictionnaire/./T.md#taproot).*
+> *Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](/dictionnaire/S.md#schnorr-protocole) et [**TAPROOT**](/dictionnaire/T.md#taproot).*
 
