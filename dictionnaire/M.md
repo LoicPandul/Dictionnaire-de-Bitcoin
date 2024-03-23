@@ -1,3 +1,5 @@
+## MACAROON
+
 
 ## MAGICAL BITCOIN
 
@@ -44,6 +46,10 @@ Technique employant un arbre de Merkle pour résumer un nombre arbitraire de con
 ## MASTER FINGERPRINT
 
 Empreinte de 4 octets (32 bits) de la clé privée maîtresse dans un portefeuille hiérarchique déterministe (HD). Elle est obtenue en calculant le hash `SHA256` de la clé privée maîtresse, suivi d'un hash `RIPEMD160`, procédé désigné par `HASH160` sur Bitcoin. La Master Fingerprint sert à identifier un portefeuille HD, indépendamment des chemins de dérivation, mais en prenant en compte la présence ou non d'une passphrase. C'est une information concise qui permet de faire référence à l'origine d'un ensemble de clés, sans pour autant dévoiler des informations sensibles sur le portefeuille.
+
+## MATT
+
+
 
 ## MAX_BLOC_SIZE
 
@@ -142,3 +148,5 @@ Template permettant l'utilisation de scripts standards. Un modèle de script est
 ## MTP (MEDIAN TIME PAST)
 
 Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horodatage consensuel du réseau. Le MTP est défini comme la médiane des horodatages des 11 derniers blocs minés. L'utilisation de cet indicateur permet d'éviter les désaccords entre les nœuds sur l'heure exacte en cas de décalage. Le MTP était initialement utilisé pour vérifier la validité de l'horodatage des blocs par rapport au passé. Depuis le BIP113, il est également utilisé comme référentiel du temps du réseau pour vérifier la validité des opérations de verrouillages temporels (`nLockTime`, `OP_CHECKLOCKTIMEVERIFY`, `nSequence` et `OP_CHECKSEQUENCEVERIFY`).
+
+## MULTIPATH PAYMENTS (MPP)

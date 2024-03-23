@@ -1,3 +1,7 @@
+## L402
+
+
+
 ## LABEL
 
 Étiquette ou annotation attribuée à un UTXO afin de se souvenir de sa provenance. 
@@ -35,6 +39,14 @@ Protocole de couche supérieure, construit au-dessus du protocole Bitcoin, visan
 ## LIGHTNING NETWORK DAEMON (LND)
 
 Implémentation majeure du protocole Lightning Network écrite en langage Go. Développée par Lightning Labs, LND permet la création et la gestion de canaux de paiement et de nœuds sur le réseau Lightning.
+
+## LIGHTNING SERVICE PROVIDER (LSP)
+
+
+## LIQUIDITÉS (LIGHTNING)
+
+
+
 
 ## LIQUID NETWORK
 

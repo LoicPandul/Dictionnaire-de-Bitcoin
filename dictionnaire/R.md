@@ -82,6 +82,13 @@ Acronyme de *Research and development in Advanced Communications technologies in
 
 > *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](./F.md#fonction-de-hachage-cryptographique).*
 
+## ROUTAGE LIGHTNING
+
+
+
+
+> *En anglais, on parle de « routing ».*
+
 ## RPC (REMOTE PROCEDURE CALL)
 
 Protocole informatique permettant à un programme d'exécuter une procédure sur un autre ordinateur distant, comme si elle était exécutée localement. Spécifiquement dans le cadre de Bitcoin, on l'utilise pour permettre aux applications d'interagir avec bitcoind. Il peut être utilisé pour exécuter des commandes sur un nœud Bitcoin, telles que l'envoi de transactions, la gestion de portefeuilles ou encore l'accès à des informations sur la blockchain. La sécurité de cette interaction est assurée par une authentification via un fichier `.cookie` ou des identifiants, afin que seuls les clients autorisés puissent effectuer des RPC sur le nœud.
@@ -103,3 +110,6 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 ## RUST
 
 Langage de programmation moderne axé sur la sécurité et la performance. Conçu pour éviter les erreurs courantes de programmation, Rust est utilisé dans les systèmes embarqués, les applications Web, et pour le développement de logiciels nécessitant de hautes performances et une grande fiabilité. Ce langage est de plus en plus populaire dans l'environnement de Bitcoin.
+
+## RUST BITCOIN
+

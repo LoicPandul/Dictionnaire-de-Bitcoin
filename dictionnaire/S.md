@@ -256,6 +256,10 @@ Méthode d'activation de soft fork initialement conceptualisée pour Taproot dé
 
 > *« Speedy Trial » est emprunté d'une terminologie juridique qui indique un « procès expéditif ». Cela invoque le fait que la proposition d'amélioration est envoyée rapidement devant le tribunal des mineurs, afin d'être fixé sur leurs intensions. Il est généralement admis d'utiliser directement le terme anglais en français.*
 
+## SPLICING
+
+
+
 ## SPOF (POINT DE DÉFAILLANCE UNIQUE)
 
 Un point de défaillance unique (SPOF, de l'anglais « Single Point of Failure ») désigne dans le domaine informatique un composant ou un élément d’un système dont la défaillance entraînerait l’arrêt complet ou une perte significative de fonctionnalités de l'ensemble du système. Il peut s'agir d'une pièce matérielle, d'une information, d'un logiciel, ou d'une partie d’un réseau. Par exemple, dans le contexte spécifique des portefeuilles HD Bitcoin, la phrase de récupération de 12 ou de 24 mots constitue souvent un SPOF pour le portefeuille. Si son secret n’est pas assuré, l’intégralité du portefeuille pourrait être subtilisé. De la même manière, sa simple perte pourrait entrainer la perte de l'intégralité des bitcoins du portefeuille.
@@ -309,6 +313,11 @@ Protocole réseau superposé à Bitcoin spécifiquement conçu pour optimiser la
 
 Liquid
 
+
+## SUBMARINE SWAP
+
+
+
 ## SUBVENTION DE BLOC
 
 Quantité de nouvelles unités pouvant être créées par le mineur qui résout un bloc. Cette subvention fait partie de la récompense de bloc avec les frais de transaction. Elle est distribuée au sein d'une transaction spécifique que l'on appelle « coinbase ». Initialement fixée à 50 bitcoins par bloc en 2009, cette subvention est réduite de moitié tous les 210 000 blocs (soit environ tous les quatre ans) grâce à un processus connu sous le nom de halving. Lorsque la subvention passera en dessous du montant de 1 sat, elle ne pourra plus être collectée, et la récompense de bloc reposera uniquement sur els frais de transaction. Sauf s'il y a une modification du protocole, la masse monétaire en circulation ne pourra plus être augmentée.
@@ -325,6 +334,11 @@ Une « surcouche » (ou « layer » en anglais) est un protocole ou un réseau c
 ![](assets/S/6.png)
 
 > *En français, on pourrait traduire « sweep transaction » par « transaction de balayage ».*
+
+## SWEEPING (LIGHTNING)
+
+
+
 
 ## SYNCHRONISATION INITIALE D'UN NŒUD (IBD)
 

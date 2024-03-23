@@ -93,6 +93,11 @@ Concept de hub de paiement anonyme compatible avec Bitcoin proposé en 2016 par 
 
 > *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
+## TURBO CHANNEL
+
+
+
+
 ## TWO-WAY PEG (2WP)
 
 Traduction anglaise d'ancrage bilatéral.

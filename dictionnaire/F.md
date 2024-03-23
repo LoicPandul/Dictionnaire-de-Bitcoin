@@ -67,6 +67,10 @@ Méthode de cryptanalyse pour trouver un mot de passe ou une clé qui consiste �
 
 > *En anglais, on parle d'une « brute-force attack ».*
 
+## FORCE CLOSE
+
+
+
 ## FORCED ADDRESS REUSE
 
 Certains bitcoiners suggèrent d'utiliser ce terme pour décrire une dusting attack, car ils trouvent que le terme de « dust » est ici inapproprié.
