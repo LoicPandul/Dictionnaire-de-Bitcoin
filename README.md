@@ -25,8 +25,8 @@ Sur ce dépôt, vous avez 3 formats différents du dictionnaire qui disposent to
 - Et le dossier de travail par défaut dictionnaire dans lequel les définitions sont réunies dans des fichiers mardown par lettre.
 
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
-- [Un fichier markdown unique rassemblant l'ensemble des définitions](/dictionnaire_complet/dictionnaire_complet.md) ;
-- [Un dossier contenant un fichier markdown séparé pour chaque définition](/definitions_individuelles) ;
+- [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
+- [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
 - [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
 
 ## Demandes de modification et contributions
