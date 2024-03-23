@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 645 `**
+**Nombre total de définitions : ` 671 `**
 
 ### A
 
@@ -158,8 +158,10 @@
 - [C++](./dictionnaire/C.md#c)
 - [CAHOOTS](./dictionnaire/C.md#cahoots)
 - [CANAL DE PAIMENT](./dictionnaire/C.md#canal-de-paiment)
+- [CAPACITÉ DE CANAL LIGHTNING](./dictionnaire/C.md#capacité-de-canal-lightning)
 - [CASHU](./dictionnaire/C.md#cashu)
 - [CET (CONTRACT EXECUTION TRANSACTION)](./dictionnaire/C.md#cet-contract-execution-transaction)
+- [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
 - [CHAINSTATE/](./dictionnaire/C.md#chainstate)
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
 - [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
@@ -228,6 +230,7 @@
 - [DOS (DENIAL OF SERVICE)](./dictionnaire/D.md#dos-denial-of-service)
 - [DOUBLE DÉPENSE (ATTAQUE)](./dictionnaire/D.md#double-dépense-attaque)
 - [DRIVECHAIN](./dictionnaire/D.md#drivechain)
+- [DUAL FUNDING](./dictionnaire/D.md#dual-funding)
 - [DUMMY ELEMENT](./dictionnaire/D.md#dummy-element)
 - [DUST](./dictionnaire/D.md#dust)
 - [DUSTING ATTACK](./dictionnaire/D.md#dusting-attack)
@@ -270,6 +273,7 @@
 - [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](./dictionnaire/F.md#fonction-de-hachage-cryptographique)
 - [FONCTIONNAIRE](./dictionnaire/F.md#fonctionnaire)
 - [FORCE BRUTE (ATTAQUE)](./dictionnaire/F.md#force-brute-attaque)
+- [FORCE CLOSE](./dictionnaire/F.md#force-close)
 - [FORCED ADDRESS REUSE](./dictionnaire/F.md#forced-address-reuse)
 - [FORK](./dictionnaire/F.md#fork)
 - [FORK (GIT)](./dictionnaire/F.md#fork-git)
@@ -319,6 +323,7 @@
 - [INDEX (NUMÉRO DE CLÉ)](./dictionnaire/I.md#index-numéro-de-clé)
 - [INPUT](./dictionnaire/I.md#input)
 - [INSCRIPTIONS](./dictionnaire/I.md#inscriptions)
+- [INVOICE LIGHTNING](./dictionnaire/I.md#invoice-lightning)
 - [IP_ASN.MAP](./dictionnaire/I.md#ip_asnmap)
 - [ISSUE](./dictionnaire/I.md#issue)
 
@@ -337,6 +342,7 @@
 
 ### L
 
+- [L402](./dictionnaire/L.md#l402)
 - [LABEL](./dictionnaire/L.md#label)
 - [LCB/FT](./dictionnaire/L.md#lcbft)
 - [LDB (.LDB)](./dictionnaire/L.md#ldb-ldb)
@@ -346,6 +352,8 @@
 - [LIGHTNING LABS](./dictionnaire/L.md#lightning-labs)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
 - [LIGHTNING NETWORK DAEMON (LND)](./dictionnaire/L.md#lightning-network-daemon-lnd)
+- [LIGHTNING SERVICE PROVIDER (LSP)](./dictionnaire/L.md#lightning-service-provider-lsp)
+- [LIQUIDITÉS (LIGHTNING)](./dictionnaire/L.md#liquidités-lightning)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
 - [LITTLE-ENDIAN](./dictionnaire/L.md#little-endian)
 - [LOCK (.LOCK)](./dictionnaire/L.md#lock-lock)
@@ -355,6 +363,7 @@
 
 ### M
 
+- [MACAROON](./dictionnaire/M.md#macaroon)
 - [MAGICAL BITCOIN](./dictionnaire/M.md#magical-bitcoin)
 - [MAINTENEUR](./dictionnaire/M.md#mainteneur)
 - [MAINTENEUR PRINCIPAL](./dictionnaire/M.md#mainteneur-principal)
@@ -365,6 +374,7 @@
 - [MASF (MINER-ACTIVATED SOFT FORK)](./dictionnaire/M.md#masf-miner-activated-soft-fork)
 - [MAST (MERKELISED ALTERNATIVE SCRIPT TREE)](./dictionnaire/M.md#mast-merkelised-alternative-script-tree)
 - [MASTER FINGERPRINT](./dictionnaire/M.md#master-fingerprint)
+- [MATT](./dictionnaire/M.md#matt)
 - [MAX_BLOC_SIZE](./dictionnaire/M.md#max_bloc_size)
 - [MEMPOOL](./dictionnaire/M.md#mempool)
 - [MEMPOOL.DAT](./dictionnaire/M.md#mempooldat)
@@ -385,6 +395,7 @@
 - [MODÈLE DE SCRIPT](./dictionnaire/M.md#modèle-de-script)
 - [M-OF-N](./dictionnaire/M.md#m-of-n)
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
+- [MULTIPATH PAYMENTS (MPP)](./dictionnaire/M.md#multipath-payments-mpp)
 
 ### N
 
@@ -395,6 +406,7 @@
 - [NŒUD](./dictionnaire/N.md#nœud)
 - [NŒUD COMPLET](./dictionnaire/N.md#nœud-complet)
 - [NŒUD ÉLAGUÉ](./dictionnaire/N.md#nœud-élagué)
+- [NŒUD LIGHTNING](./dictionnaire/N.md#nœud-lightning)
 - [NŒUD SPV (OU NŒUD LÉGER)](./dictionnaire/N.md#nœud-spv-ou-nœud-léger)
 - [NONCE](./dictionnaire/N.md#nonce)
 - [NSEQUENCE](./dictionnaire/N.md#nsequence)
@@ -436,6 +448,7 @@
 - [OP_CHECKSIG (`0XAC`)](./dictionnaire/O.md#op_checksig-0xac)
 - [OP_CHECKSIGADD (`0XBA`)](./dictionnaire/O.md#op_checksigadd-0xba)
 - [OP_CHECKSIGVERIFY (`0XAD`)](./dictionnaire/O.md#op_checksigverify-0xad)
+- [OP_CHECKTEMPLATEVERIFY](./dictionnaire/O.md#op_checktemplateverify)
 - [OP_CODESEPARATOR (`0XAB`)](./dictionnaire/O.md#op_codeseparator-0xab)
 - [OP_DEPTH (`0X74`)](./dictionnaire/O.md#op_depth-0x74)
 - [OP_DROP (`0X75`)](./dictionnaire/O.md#op_drop-0x75)
@@ -483,6 +496,7 @@
 - [OP_TOALTSTACK (`0X6B`)](./dictionnaire/O.md#op_toaltstack-0x6b)
 - [OP_TRUE (`0X51`)](./dictionnaire/O.md#op_true-0x51)
 - [OP_TUCK (`0X7D`)](./dictionnaire/O.md#op_tuck-0x7d)
+- [OP_VAULT](./dictionnaire/O.md#op_vault)
 - [OP_VER (`0X62`)](./dictionnaire/O.md#op_ver-0x62)
 - [OP_VERIFY (`0X69`)](./dictionnaire/O.md#op_verify-0x69)
 - [OP_WITHIN (`0XA5`)](./dictionnaire/O.md#op_within-0xa5)
@@ -511,6 +525,7 @@
 - [PAPER WALLET (PORTEFEUILLE PAPIER)](./dictionnaire/P.md#paper-wallet-portefeuille-papier)
 - [PARTIALLY SIGNED BITCOIN TRANSACTION (PSBT)](./dictionnaire/P.md#partially-signed-bitcoin-transaction-psbt)
 - [PASSPHRASE (BIP39)](./dictionnaire/P.md#passphrase-bip39)
+- [PATHFINDING](./dictionnaire/P.md#pathfinding)
 - [PATOSHI](./dictionnaire/P.md#patoshi)
 - [PAYJOIN](./dictionnaire/P.md#payjoin)
 - [PAYNYM](./dictionnaire/P.md#paynym)
@@ -545,6 +560,7 @@
 - [PTLC](./dictionnaire/P.md#ptlc)
 - [PULL REQUEST](./dictionnaire/P.md#pull-request)
 - [PURGE](./dictionnaire/P.md#purge)
+- [PYBLOCK](./dictionnaire/P.md#pyblock)
 - [PYTHON](./dictionnaire/P.md#python)
 
 ### Q
@@ -568,11 +584,13 @@
 - [RÉUTILISATION D'ADRESSE INTERNE](./dictionnaire/R.md#réutilisation-dadresse-interne)
 - [RICOCHET](./dictionnaire/R.md#ricochet)
 - [RIPEMD160](./dictionnaire/R.md#ripemd160)
+- [ROUTAGE LIGHTNING](./dictionnaire/R.md#routage-lightning)
 - [RPC (REMOTE PROCEDURE CALL)](./dictionnaire/R.md#rpc-remote-procedure-call)
 - [RPOW (REUSABLE PROOFS OF WORK)](./dictionnaire/R.md#rpow-reusable-proofs-of-work)
 - [RSK](./dictionnaire/R.md#rsk)
 - [RSMPPS (RECENT SHARED MAXIMUM PAY PER SHARE)](./dictionnaire/R.md#rsmpps-recent-shared-maximum-pay-per-share)
 - [RUST](./dictionnaire/R.md#rust)
+- [RUST BITCOIN](./dictionnaire/R.md#rust-bitcoin)
 
 ### S
 
@@ -627,6 +645,7 @@
 - [SORTIE NON RENTABLE](./dictionnaire/S.md#sortie-non-rentable)
 - [SPARSE MERKLE TREE (SMT)](./dictionnaire/S.md#sparse-merkle-tree-smt)
 - [SPEEDY TRIAL](./dictionnaire/S.md#speedy-trial)
+- [SPLICING](./dictionnaire/S.md#splicing)
 - [SPOF (POINT DE DÉFAILLANCE UNIQUE)](./dictionnaire/S.md#spof-point-de-défaillance-unique)
 - [SPREAD (WST)](./dictionnaire/S.md#spread-wst)
 - [SRC-20](./dictionnaire/S.md#src-20)
@@ -638,9 +657,11 @@
 - [STRATUM](./dictionnaire/S.md#stratum)
 - [STRATUM V2](./dictionnaire/S.md#stratum-v2)
 - [STRONG FEDERATION](./dictionnaire/S.md#strong-federation)
+- [SUBMARINE SWAP](./dictionnaire/S.md#submarine-swap)
 - [SUBVENTION DE BLOC](./dictionnaire/S.md#subvention-de-bloc)
 - [SURCOUCHE (LAYER)](./dictionnaire/S.md#surcouche-layer)
 - [SWEEP TRANSACTION](./dictionnaire/S.md#sweep-transaction)
+- [SWEEPING (LIGHTNING)](./dictionnaire/S.md#sweeping-lightning)
 - [SYNCHRONISATION INITIALE D'UN NŒUD (IBD)](./dictionnaire/S.md#synchronisation-initiale-dun-nœud-ibd)
 
 ### T
@@ -663,6 +684,7 @@
 - [TRANSACTION COLLABORATIVE](./dictionnaire/T.md#transaction-collaborative)
 - [TRANSACTION D'ENGAGEMENT](./dictionnaire/T.md#transaction-dengagement)
 - [TUMBLEBIT](./dictionnaire/T.md#tumblebit)
+- [TURBO CHANNEL](./dictionnaire/T.md#turbo-channel)
 - [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
 - [TXID (TRANSACTION IDENTIFIER)](./dictionnaire/T.md#txid-transaction-identifier)
 
@@ -698,10 +720,12 @@
 - [WASABI WALLET](./dictionnaire/W.md#wasabi-wallet)
 - [WATCHMEN](./dictionnaire/W.md#watchmen)
 - [WATCH-ONLY WALLET](./dictionnaire/W.md#watch-only-wallet)
+- [WATCHTOWER](./dictionnaire/W.md#watchtower)
 - [WHIRLPOOL](./dictionnaire/W.md#whirlpool)
 - [WHIRLPOOL STAT TOOL](./dictionnaire/W.md#whirlpool-stat-tool)
 - [WITNESSSCRIPT](./dictionnaire/W.md#witnessscript)
 - [WTXID](./dictionnaire/W.md#wtxid)
+- [WUMBO CHANNEL](./dictionnaire/W.md#wumbo-channel)
 
 ### X
 
@@ -720,6 +744,8 @@
 - [ZEROLINK](./dictionnaire/Z.md#zerolink)
 - [ZEROSYNC](./dictionnaire/Z.md#zerosync)
 - [ZKP (ZERO-KNOWLEDGE PROOF)](./dictionnaire/Z.md#zkp-zero-knowledge-proof)
+- [ZKSNARK](./dictionnaire/Z.md#zksnark)
+- [ZOMBIE CHANNEL](./dictionnaire/Z.md#zombie-channel)
 - [ZPRV](./dictionnaire/Z.md#zprv)
 - [ZPUB](./dictionnaire/Z.md#zpub)
 
