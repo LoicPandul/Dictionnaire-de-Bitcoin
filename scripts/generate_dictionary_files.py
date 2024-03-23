@@ -9,13 +9,13 @@ def nettoyer_nom_fichier(nom):
     return nom
 
 def ajuster_chemins_images_et_liens(contenu):
-    # Ajuster les chemins des images
-    motif_image = r'!\[.*?\]\((assets\/.*?\..*?)\)'
-    contenu = re.sub(motif_image, r'![](\1)', contenu)
-
-    # Ajuster les liens hypertextes vers d'autres définitions (si nécessaire)
-    # motif_lien = r'\[.*?\]\((.*?)\)'
-    # contenu = re.sub(motif_lien, r'[lien hypertexte](nouveau chemin vers les fichiers md/\1)', contenu)
+    # Ajuster les chemins des images, si nécessaire
+    motif_image = r'!\[.*?\]\((.*?)\)'
+    contenu = re.sub(motif_image, lambda match: f"![](/dictionnaire/{match.group(1)})", contenu)
+    
+    # Ajuster les liens hypertextes vers d'autres définitions
+    motif_lien = r'\[.*?\]\((.*?)\)'
+    contenu = re.sub(motif_lien, lambda match: f"[](/dictionnaire/{match.group(1)})", contenu)
     return contenu
 
 # Chemin vers le dossier contenant les fichiers md initiaux

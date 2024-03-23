@@ -1,4 +1,4 @@
 ## BATCHED SPENDING
 
-![](assets/B/8.png)
+![](/dictionnaire//dictionnaire/assets/B/8.png)
 

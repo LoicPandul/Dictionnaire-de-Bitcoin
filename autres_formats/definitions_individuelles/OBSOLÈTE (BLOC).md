@@ -8,6 +8,6 @@ Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîn
 - Il diffuse `Bloc B+1` aux nœuds du réseau ;
 - Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
 - Ils vont donc abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
-![](assets/O/9.png)
-> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN (BLOC)](./O.md#orphelin-bloc)**.*
+![](/dictionnaire//dictionnaire/assets/O/9.png)
+> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[](/dictionnaire/./O.md#orphelin-bloc)**.*
 

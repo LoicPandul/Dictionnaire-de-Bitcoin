@@ -97,7 +97,7 @@ Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d
 - L'ensemble d'anonymat rétrospectif.
 Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en sortie, sachant l'UTXO en entrée. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse passé vers présent (entrée vers sortie). En anglais, le nom de cet indicateur est « forward anonset », ou « forward-looking metrics ». Le second indique le nombre de sources possibles pour une pièce donnée, sachant l'UTXO en sortie. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse présent vers passé (sortie vers entrée). En anglais, le nom de cet indicateur est « backward anonset », ou « backward-looking metrics ».
 
-> *En français, il est globalement admis d'utiliser le terme « anonset ». On pourrait toutefois le traduire par « ensemble d'anonymat » ou « potentiel d'anonymat ». En anglais et en français, on parle également parfois de « score » pour évoquer les anonsets (score prospectif et score rétrospectif). Pour plus d'informations, voir la définition [**COINJOIN**](./C.md#coinjoin).*
+> *En français, il est globalement admis d'utiliser le terme « anonset ». On pourrait toutefois le traduire par « ensemble d'anonymat » ou « potentiel d'anonymat ». En anglais et en français, on parle également parfois de « score » pour évoquer les anonsets (score prospectif et score rétrospectif). Pour plus d'informations, voir la définition [](/dictionnaire/./C.md#coinjoin).*
 
 ## ANYPREVOUT (APO)
 
@@ -116,14 +116,14 @@ Dans le contexte général de l'informatique, une API est un ensemble de règles
 ## ARBRE DE MERKLE
 
 Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pour justifier l’appartenance d’une information donnée à un ensemble plus grand. C'est une structure de données qui facilite la vérification d’informations dans un format compact. Dans le système Bitcoin, les arbres de Merkle sont utilisés pour regrouper et condenser les transactions d'un bloc en un unique hachage, appelé la racine de Merkle (ou « Top Hash »). Chaque transaction est hachée, puis les hachages adjacents sont hachés ensemble de façon hiérarchique jusqu'à ce que la racine de Merkle soit obtenue.
-![](assets/A/1.png)
+![](/dictionnaire//dictionnaire/assets/A/1.png)
 Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la `TX 7` fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
 * `TX 7` ;
 * `HASH 8` ;
 * `HASH 5-6` ;
 * `HASH 1-2-3-4`.
 Grâce à ces quelques informations, je suis en capacité de calculer les nœuds intermédiaires jusqu'à la racine de Merkle.
-![](assets/A/2.png)
+![](/dictionnaire//dictionnaire/assets/A/2.png)
 Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « SPV Node », qui ne conservent que les entêtes de blocs, mais pas les transactions. On retrouve également cette structure dans le protocole UTREEXO, une structure permettant de condenser l'UTXO set des nœuds, et dans le MAST Taproot.
 
 >*L'arbre de Merkle porte le nom de Ralph Merkle, un cryptographe pionnier qui a conçu cette structure en 1979. Un arbre de Merkle peut également être nommé « arbre de hachage ». En anglais, on dit « Merkle Tree » ou « Hash Tree ».*
@@ -161,7 +161,7 @@ Désigne le niveau le plus élevé jamais atteint par l'élément étudié. Souv
 
 Paiements conditionnels utilisés dans le cadre du protocole Ark pour fournir un calendrier de paiement atomique à un hub, grâce à des connecteurs permettant de former ce que l'on appelle un « txlock ». L'objectif d'un ATLC est sensiblement le même que celui d'un HTLC sur Lightning.
 
-> *Pour plus d'informations, voir la définition de [**ARK**](./A.md#ark).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./A.md#ark).*
 
 ## ATOMIC SWAP
 
@@ -190,7 +190,7 @@ Nom du fichier utilisé par le logiciel Bitcoin Core pour enregistrer les adress
 
 Script de type P2MS. 
 
-> *Pour plus d'informations, voir la définition de **[P2MS](./P.md#p2ms)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./P.md#p2ms)**.*
 
 ## BASE (ARITHMÉTIQUE)
 
@@ -202,7 +202,7 @@ La `Base58Check` est un encodage utilisé dans le système Bitcoin pour représe
 
 ## BATCHED SPENDING
 
-![](assets/B/8.png)
+![](/dictionnaire//dictionnaire/assets/B/8.png)
 
 ## BDK (BITCOIN DEV KIT)
 
@@ -330,7 +330,7 @@ Proposition permettant à un nœud Bitcoin d'ouvrir les informations relatives �
 
 Proposition introduite pour permettre aux portefeuilles légers (*Simplified Payment Verification*) de filtrer les transactions sans avoir à télécharger la blockchain complète. Cette méthode repose sur le concept de Bloom Filters, des structures de données probabilistes qui sont utilisées pour tester l'appartenance à un ensemble. Ces filtres permettent aux clients SPV de recevoir uniquement les transactions pertinentes pour leur portefeuille, afin de réduire la bande passante et la mémoire vive requise pour la synchronisation, notamment sur les téléphones portables. Les Bloom Filters sont transmis à un nœud complet, lequel renvoie en réponse des « Merkle blocks », contenant uniquement les transactions filtrées, l'en-tête avec la racine de Merkle, et les branches nécessaires pour associer ces transactions à la racine de l'arbre de Merkle. Le BIP37 a été critiqué pour ses lacunes en matière de confidentialité, car il expose notamment les adresses et les transactions des utilisateurs aux nœuds complets utilisés. Pour tenter de remédier à cette faille, il est possible d'intégrer des transactions supplémentaires, les « faux positifs », afin de créer du déni plausible. Néanmoins, le volume de faux positifs nécessaire pour atteindre un niveau de déni plausible satisfaisant reste considérablement élevé. Par ailleurs, le BIP37 a aussi été critiqué pour la charge de calcul imposée aux nœuds complets et pour l'introduction d'un nouveau vecteur d'attaque de type DoS. Cette option est donc par défaut désactivée dans Bitcoin Core. Pour l'activer, il faut entrer le paramètre `peerbloomfilters=1` dans le fichier de configuration. 
 
-> *Pour plus d'informations, voir la définition de [**BLOOM FILTER**](./B.md#bloom-filter).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bloom-filter).*
 
 ## BIP38
 
@@ -342,7 +342,7 @@ Proposition d'amélioration de Bitcoin qui introduit un mécanisme de chiffremen
 
 Le BIP39 introduit une méthode pour convertir la graine aléatoire d'un portefeuille en une suite de mots mémorisables et lisibles par l'Homme, connue sous le nom de phrase mnémonique. Cette phrase, généralement composée de 12 ou de 24 mots, permet de regénérer l'ensemble des clés privées d'un portefeuille de manière déterministe. Ainsi, au lieu de devoir mémoriser ou stocker une graine cryptographique complexe, les utilisateurs peuvent sauvegarder leurs bitcoins via une phrase de quelques mots. Le BIP39 a ainsi contribué à simplifier la gestion d'un portefeuille Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)**](./P.md#phrase-de-récupération-mnémonique).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#phrase-de-récupération-mnémonique).*
 
 ## BIP42
 
@@ -377,13 +377,13 @@ Proposé par Justus Ranvier en 2015, ce protocole vise à résoudre le problème
 
 BIP informatif qui introduit la méthode de dérivation utilisée pour générer des adresses Nested SegWit dans un portefeuille HD. Le chemin de dérivation proposé suit les standards du BIP43 et du BIP44, avec l'index `49'` (dérivation renforcée) à la profondeur de l'objectif. Par exemple, la première adresse d'un compte P2SH-P2WPKH serait issue du chemin : `m/49'/0'/0'/0/0`. Les scripts Nested SegWit ont été inventé au lancement de SegWit pour faciliter son adoption. Ils permettent d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit.
 
-> *Pour plus d'informations, voir la définition de [**P2SH-P2WPKH**](./P.md#p2sh-p2wpkh).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#p2sh-p2wpkh).*
 
 ## BIP50
 
 BIP informatif faisant état d'un bug lié au passage de Berkeley DB à Level DB provoquant une division de la blockchain Bitcoin puis un réorganisation majeure de 24 blocs le 12 mars 2013. Ce BIP détaille l'incident et les actions correctives implémentées.
 
-> *Pour plus d'informations, voir la définition de [**LEVELDB**](./L.md#leveldb) et [**BERKELEYDB**](./B.md#berkeleydb).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./L.md#leveldb) et [](/dictionnaire/./B.md#berkeleydb).*
 
 ## BIP61
 
@@ -393,7 +393,7 @@ Introduit un message de rejet dans le protocole de communication entre les nœud
 
 Introduit un nouvel opcode nommé `OP_CHECKLOCKTIMEVERIFY` qui permet de rendre un UTXO inutilisable jusqu'à un moment donné dans le futur. L'application de ce BIP a nécessité un soft fork, qui est intervenu le 14 décembre 2015. Il a également introduit la version 4 des blocs.
 
-> *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](./O.md#op_checklocktimeverify-0xb1).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_checklocktimeverify-0xb1).*
 
 ## BIP66
 
@@ -403,7 +403,7 @@ Introduit une standardisation du format des signatures dans les transactions. Ce
 
 Introduit la possibilité d'utiliser des blocages temporel relatifs (*relative lock-time*) grâce au champ `nSequence`. Cela permet à une transaction de spécifier un délai relatif avant qu'elle soit incluse dans un bloc. Ce délai peut être défini en terme de nombre de bloc, ou bien comme un multiple de 512 secondes (c'est-à-dire, du temps réel). Notons que cette nouvelle interprétation du champs `nSequence` est uniquement valide si le champs `nVersion` est supérieur ou égal à `2`. Cette interprétation du champs `nSequence` se fait au niveau des règles de consensus de Bitcoin. Le timelock relatif définit un délai à partir de l'acceptation d'une transaction antérieure alors que le timelock absolu spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc. Le BIP68 a été introduit via un soft fork le 4 juillet 2016 en même temps que le BIP112 et le BIP113, activé pour la première fois grâce à la méthode du BIP9.
 
-> *Pour plus d'informations, voir la définition de [**NSEQUENCE**](./N.md#nsequence).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./N.md#nsequence).*
 
 ## BIP70
 
@@ -425,13 +425,13 @@ Extension qui améliore le protocole de paiement BIP70 en introduisant deux inno
 
 Introduit un protocole pour utiliser des Payjoin sur Bitcoin, une structure de transaction qui améliore la confidentialité des paiements en faisant intervenir le destinataire auprès du payeur dans les inputs. Ce BIP s'inspire du BIP79, qui avait déjà présenté un concept semblable. Toutefois, ces deux BIP ne marquent pas l'origine du concept de Payjoin. En effet, l'implémentation Stowaway de Samourai Wallet existait déjà auparavant, et cette structure de transaction avait été mentionnée pour la première fois par LaurentMT en 2015, sous le nom de « *steganographic transaction* ».
 
-> *Pour plus d'informations, voir la définition de [**PAYJOIN**](./P.md#payjoin).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#payjoin).*
 
 ## BIP84
 
 Définit le standard de dérivation des adresses SegWit V0 (`bc1q...`) au sein d'un portefeuille déterministe et hiérarchique. Il définit l'index `84'` qui doit désormais être utilisé à la profondeur `purpose` du portefeuille HD pour les modèles de script P2WPHK.
 
-> *Pour plus d'informations, voir la définition de [**BIP32**](./B.md#bip32), [**BIP43**](./B.md#bip43) et [**P2WPKH**](./P.md#p2wpkh).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip32), [](/dictionnaire/./B.md#bip43) et [](/dictionnaire/./P.md#p2wpkh).*
 
 ## BIP85
 
@@ -441,7 +441,7 @@ Solution pour unifier la dérivation de différents portefeuilles Bitcoin en uti
 
 Définit le standard de dérivation des adresses SegWit V1 ou Taproot (`bc1p...`) au sein d'un portefeuille déterministe et hiérarchique. Il définit l'index `86'` qui doit désormais être utilisé à la profondeur `purpose` du portefeuille HD pour les modèles de script P2TR.
 
-> *Pour plus d'informations, voir la définition de [**BIP32**](./B.md#bip32), [**BIP43**](./B.md#bip43) et [**P2TR**](./P.md#p2tr).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip32), [](/dictionnaire/./B.md#bip43) et [](/dictionnaire/./P.md#p2tr).*
 
 ## BIP90
 
@@ -451,19 +451,19 @@ Proposition pour simplifier le traitement de l'activation des soft forks antéri
 
 Proposition de James Hilliard (ingénieur chez Bitmain) pour faciliter l'activation du soft fork SegWit, défini dans les BIP141, BIP143 et BIP147, via un MASF sans atteindre directement le seuil requis de 95 % de la puissance de calcul signalant le soutien via le bit 1. BIP91 permet aux mineurs de signaler indirectement leur soutien à SegWit en utilisant le bit 4 dans les blocs minés. Une fois que 269 blocs sur une fenêtre de 336 blocs ont inclus le bit 4 (soit 80% de la puissance de calcul), le BIP91 se verrouille, obligeant ensuite tous les nœuds compatibles à rejeter les blocs n'incluant pas le bit 1. Cette méthode visait à rendre le BIP148 (UASF) obsolète et à éviter une scission potentielle de la blockchain le 1er août 2017. Le BIP91 a finalement été activé le 23 juillet 2017 (au bloc 477 120), juste avant la date fatidique du 1er août imposée dans le BIP148. Cela a permis de forcer le signalement de SegWit par les mineurs, qui sera finalement verrouillé le 9 août au bloc 479 808, puis activé le 24 août au bloc 481 824. Pour résumer, le BIP148 (UASF) a été créé en réaction au fait que les mineurs ne signalaient pas suffisamment SegWit, mais n'a finalement jamais été mis en œuvre. Le BIP91 (MASF) a été créé en réaction au BIP148 afin de forcer la main aux mineurs, sans pour autant risquer l'UASF du BIP148. Le BIP91 représente lui-même un soft fork, qui forcera finalement les mineurs à verrouiller le soft fork SegWit via la méthode de base (MASF BIP9).
 
-> *Pour plus d'informations, voir la définition de [**MASF**](./M.md#masf-miner-activated-soft-fork) et [**BIP148**](./B.md#bip148).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./M.md#masf-miner-activated-soft-fork) et [](/dictionnaire/./B.md#bip148).*
 
 ## BIP111
 
 Propose l'ajout d'un bit de service nommé `NODE_BLOOM` pour permettre aux nœuds de signaler explicitement leur prise en charge des Bloom Filters tels que décris dans le BIP37. L'introduction de `NODE_BLOOM` permet aux opérateurs de nœuds de désactiver ce service afin de réduire les risques de DoS. L'option du BIP37 est par défaut désactivée dans Bitcoin Core. Pour l'activer, il faut entrer le paramètre `peerbloomfilters=1` dans le fichier de configuration.
 
-> *Pour plus d'informations, voir la définition de [**DOS**](./D.md#dos-denial-of-service).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./D.md#dos-denial-of-service).*
 
 ## BIP112
 
 Introduit l'opcode `OP_CHECKSEQUENCEVERIFY` (CSV) dans le langage Script de Bitcoin. Cette opération permet de créer des transactions dont la validité ne devient effective qu'après un certain délai relatif à une transaction antérieure, défini soit en nombre de blocs, soit en durée de temps. `OP_CHECKSEQUENCEVERIFY` compare la valeur en haut de la pile avec la valeur du champ `nSequence` de l'input. Si elle est supérieure et que toutes les autres conditions sont respectée, le script est valide. Ainsi, `OP_CHECKSEQUENCEVERIFY` restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc. Le BIP112 a été introduit via un soft fork le 4 juillet 2016 en même temps que le BIP68 et le BIP113, activé pour la première fois grâce à la méthode du BIP9.
 
-> *Pour plus d'informations, voir la définition de [**OP_CHECKSEQUENCEVERIFY**](./O.md#op_checksequenceverify-0xb2).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_checksequenceverify-0xb2).*
 
 ## BIP113
 
@@ -473,13 +473,13 @@ A introduit une modification dans le calcul de toutes les opérations de timeloc
 
 Proposition d'amélioration de Bitcoin visant à introduire deux nouveaux SigHash Flag modificateurs : `SIGHASH_ANYPREVOUT` et `SIGHASH_ANYPREVOUTANYSCRIPT`. Ces fonctionnalités étendent les capacités des transactions Bitcoin, en particulier en ce qui concerne les contrats intelligents et les solutions de surcouches comme le Lightning Network. Le BIP118 permettrait notamment l'utilisation d'Eltoo. Le principal avantage du `SIGHASH_ANYPREVOUT` est de permettre la réutilisation des signatures dans plusieurs transactions, ce qui offre plus de flexibilité. Concrètement, ces SigHash permettent d'obtenir une signature qui ne couvre aucun input de la transaction.
 
-> *Pour plus d'informations, voir la définition de [**SIGHASH FLAG**](./S.md#sighash-flag).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#sighash-flag).*
 
 ## BIP119
 
 Introduit un nouvel opcode nommé `OP_CHECKTEMPLATEVERIFY` (CTV). CTV permettrait de créer des covenants non récursifs dans les transactions, afin d'imposer des conditions spécifiques sur la manière dont une pièce donnée peut être dépensée, y compris dans des transactions futures. Plus concrètement, il permettrait de définir des conditions sur le `scriptPubKey` des sorties d'une transaction à partir du `scriptPubKey` de l'UTXO dépensé en entrée. CheckTemplateVerify est conçu pour être simple et sans état dynamique. Sa mise en œuvre vise à étendre les capacités de script de Bitcoin pour faciliter diverses applications telles que le contrôle de congestion des transactions, la création de canaux de paiement non interactifs, les DLC, les pools de paiement... Ce nouvel opcode serait introduit en remplacement de l'`OP_NOP4`. Cette modification impliquerait un soft fork.
 
-> *Pour plus d'informations, voir la définition de [**COVENANT**](./C.md#covenant).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#covenant).*
 
 ## BIP123
 
@@ -493,7 +493,7 @@ Introduit un nouvel opcode nommé `OP_CHECKTEMPLATEVERIFY` (CTV). CTV permettrai
 
 Définit le concept de *Replace-by-Fee* (RBF), permettant à l'émetteur de remplacer une transaction non confirmée par une autre version qui inclut des frais de transaction plus élevés. Le BIP125 offre un cadre pour le signalement de RBF dans une transaction et pour son acceptation par les nœuds du réseau.
 
-> *Pour plus d'informations, voir la définition de [**RBF (REPLACE-BY-FEE)**](./R.md#rbf-replace-by-fee).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./R.md#rbf-replace-by-fee).*
 
 ## BIP137
 
@@ -503,7 +503,7 @@ Propose un format standardisé pour signer des messages avec des clés privées 
 
 Introduit le concept de témoin séparé (*Segregated Witness*) qui donnera son nom au soft fork SegWit. Le BIP141 introduit dans le protocole Bitcoin une modification majeure visant à résoudre le problème de malléabilité des transactions. SegWit sépare les témoins (données de signatures) du reste des données de transaction. Cette séparation est réalisée en insérant les témoins dans une structure de données distincte, engagée dans un nouvel arbre de Merkle, qui est lui-même référencé dans le bloc via la transaction coinbase, ce qui rend SegWit compatible avec les anciennes versions du protocole.
 
-> *Pour plus d'informations, voir la définition de [**SEGWIT**](./S.md#segwit).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#segwit).*
 
 
 ## BIP143
@@ -525,31 +525,31 @@ Met à jour l'appel JSON-RPC `getblocktemplate` pour intégrer le support de Seg
 
 Proposition incluse dans le soft fork SegWit visant à résoudre un vecteur de malléabilité lié à l'élément fictif (« *dummy element* ») consommé par les opérations `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY`. En raison d'un bug off-by-one historique (erreur de décalage unitaire), ces 2 opcodes suppriment un élément supplémentaire sur la pile en plus de leur fonction de base. Pour éviter une erreur, il est donc obligatoire d'inclure une valeur factice au début du `ScriptSig` afin de satisfaire la suppression et outrepasser le bug. Cette valeur est inutile, mais elle doit forcément être là pour que le script soit valide. Le BIP11, qui a introduit le standard P2MS, conseillait de mettre un `OP_0` comme valeur inutile. Mais ce standard n'était pas imposé au niveau des règles de consensus, ce qui veut dire que n'importe quelle valeur pouvait y être placée, sans invalider la transaction. C'est en ça que `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` contenaient un vecteur de malléabilité. Le BIP147 introduit une nouvelle règle de consensus, désignée sous le nom de `NULLDUMMY`, exigeant que cet élément fictif soit un tableau d'octets vide (`OP_0`). Toute autre valeur entraîne l'échec immédiat de l'évaluation du script. Cette modification s'applique aux scripts pré-SegWit ainsi qu'aux scripts P2WSH et nécessitait un soft fork.
 
-> *Pour plus d'informations, voir la définition de [**OP_CHECKMULTISIG**](./O.md#op_checkmultisig-0xae).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_checkmultisig-0xae).*
 
 ## BIP148
 
 Proposition introduite en mars 2017 par un développeur sous le pseudonyme de Shaolin Fry. L'objectif du BIP148 était de forcer l'activation de la mise à jour SegWit sur le protocole Bitcoin, face à la stagnation de la signalisation de ce soft fork par les mineurs via la méthode du BIP9. Le BIP148 suggérait la mise en œuvre d'un UASF (*User-Activated Soft Fork*) pour activer SegWit de force par les nœuds le 15 novembre 2017, si les mineurs n'avaient pas verrouillé SegWit d'ici le 1er août 2017. Si l'adoption de l'UASF du BIP148 avait eu lieu, les nœuds du réseau Bitcoin auraient refusé les blocs ne signalant pas le support à SegWit, exerçant ainsi une pression sur les mineurs pour qu'ils adoptent la mise à jour. Bien que ce BIP historique n'ait finalement pas été activé, il a joué un rôle déterminant dans la réussite de l'adoption de SegWit, en contraignant les mineurs à verrouiller le soft fork via le BIP91. À plus long terme, le BIP148 a établi un précédent important, démontrant l'influence que peuvent exercer les utilisateurs via leurs nœuds complets sur les décisions de gouvernance du protocole Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**UASF (USER-ACTIVATED SOFT FORK)**](./U.md#uasf-user-activated-soft-fork).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./U.md#uasf-user-activated-soft-fork).*
 
 ## BIP149
 
 Proposition de Shaolin Fry pour un nouveau déploiement de SegWit (BIP141, BIP143 et BIP147) en utilisant la méthode d'activation du BIP8 avec `LOT=true`, si le déploiement initial de SegWit via le BIP9 échouait à s'activer avant le 15 novembre 2017. Contrairement à la méthode du BIP9, où un échec de signalisation entraîne l'abandon de l'activation, le BIP149 visait à activer SegWit le 4 juillet 2018, que les mineurs aient atteint le seuil de signalisation de 95% ou non. Pendant la période de huit mois entre novembre et juillet, les nœuds auraient eu la possibilité d'implémenter le BIP149, afin d'assurer une activation de SegWit par la majorité économique du réseau si l'activation par les mineurs ne se produisait pas (UASF). Une fois le premier ajustement de difficulté atteint après le 4 juillet 2018, l'activation serait passée en `LOCKED_IN`, et SegWit aurait été activé au cycle d'ajustement suivant. Contrairement au BIP148, qui prévoyait une activation de SegWit imposée par les utilisateurs ou une majorité de mineurs, le BIP149 suggérait une méthode d'activation plus progressive et mesurée, bien qu'elle demeurât résolument offensive, selon les principes du BIP8. Alors que le BIP148 laissait présager un conflit avec une séparation de la blockchain, le BIP149 écartait cette éventualité, en acceptant les blocs ne signalant pas SegWit, sauf action délibérée d'un mineur (sans incitation). Le BIP149 était donc un mécanisme d'activation de SegWit moins conflictuel que le BIP148, favorisant une adoption plus progressive et moins risquée pour le système. Ni le BIP148 ni le BIP149 n'ont finalement été mis en œuvre, SegWit ayant été activé grâce à un MASF, notamment sous l'impulsion du BIP91.
 
-> *Pour plus d'informations, voir la définition de [**BIP8**](./B.md#bip8), [**BIP9**](./B.md#bip9), [**BIP91**](./B.md#bip91), [**BIP148**](./B.md#bip148), [**UASF**](./U.md#uasf-user-activated-soft-fork), [**MASF**](./M.md#masf-miner-activated-soft-fork) et [**MÉTHODE D'ACTIVATION**](./M.md#méthode-dactivation).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip8), [](/dictionnaire/./B.md#bip9), [](/dictionnaire/./B.md#bip91), [](/dictionnaire/./B.md#bip148), [](/dictionnaire/./U.md#uasf-user-activated-soft-fork), [](/dictionnaire/./M.md#masf-miner-activated-soft-fork) et [](/dictionnaire/./M.md#méthode-dactivation).*
 
 ## BIP150
 
 Propose un mécanisme d'authentification entre les pairs sur le réseau Bitcoin pour renforcer la sécurité et garantir la propriété des nœuds. Il permet aux opérateurs de nœuds de restreindre l'accès à certains services ou d'accorder des priorités de flux de données uniquement à des pairs spécifiques, en s'authentifiant mutuellement pour éviter les attaques de type MITM. Ce BIP restera à l'état de brouillon, mais il servira d'enseignement pour le BIP324 (P2P transport V2) qui est aujourd'hui implémenté en option dans Bitcoin Core.
 
-> *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](./P.md#p2p-transport-v2).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#p2p-transport-v2).*
 
 ## BIP151
 
 Propose un protocole pour chiffrer les communications P2P entre pairs sur le réseau Bitcoin, afin de renforcer la sécurité et la confidentialité. Son objectif est notamment de prévenir les manipulations du trafic et les attaques de surveillance de masse. Finalement, le BIP151 a été remplacé par le BIP324 (P2P transport V2) qui est aujourd'hui implémenté en option dans Bitcoin Core.
 
-> *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](./P.md#p2p-transport-v2).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#p2p-transport-v2).*
 
 ## BIP152
 
@@ -563,7 +563,7 @@ Proposition d'amélioration de Bitcoin introduisant un nouveau format pour les m
 
 Proposition, connue sous le nom de Dandelion, qui vise à améliorer la confidentialité du routage des transactions dans le réseau Bitcoin pour contrer la désanonymisation. Dans le fonctionnement classique de Bitcoin, les transactions sont immédiatement diffusées à de multiples nœuds. Si un observateur est en capacité de voir chaque transaction relayée par chaque nœud sur le réseau, il peut supposer que le premier nœud à envoyer une transaction est également le nœud d'origine de cette transaction, et donc que celle-ci provient de l'opérateur du nœud. Ce phénomène peut potentiellement permettre à des observateurs de lier des transactions, normalement anonymes, avec des adresses IP. L'objectif du BIP156 est de traiter ce problème. Pour ce faire, il introduit une phase supplémentaire dans la diffusion permettant de préserver l'anonymat avant la propagation publique. Ainsi, Dandelion utilise d'abord une phase de « tige » où la transaction est envoyée à travers un chemin aléatoire de nœuds, avant d'être diffusée à l'ensemble du réseau dans la phase de « capitule ». La tige et le capitule sont des références au comportement de la propagation de la transaction à travers le réseau, qui ressemble à la forme d'un pissenlit (« *a dandelion* » en anglais). Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine. Dandelion améliore donc la confidentialité en limitant la capacité des adversaires à désanonymiser le réseau. Cette méthode est d'autant plus efficace lorsque la transaction croise durant la phase de « tige » un noeud qui chiffre ses communications réseau, comme avec Tor ou P2P Transport V2. Le BIP156 n'a pour le moment pas été ajouté à Bitcoin Core.
 
-> *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](./P.md#p2p-transport-v2).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#p2p-transport-v2).*
 
 ## BIP173
 
@@ -573,7 +573,7 @@ Introduit le format d'adresse Bech32 pour les adresses SegWit V0. Ce format d'ad
 - Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
 Ces caractéristiques facilitent l'utilisation des adresses de réception tout en minimisant les risques d'erreurs.
 
-> *Pour plus d'informations, voir la définition de [**BECH32 ET BECH32M**](./B.md#bech32-et-bech32m).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bech32-et-bech32m).*
 
 ## BIP322
 
@@ -583,13 +583,13 @@ Propose un nouveau standard en remplacement du BIP137 pour la signature de messa
 
 Introduit un nouvelle version du protocole de transport Bitcoin P2P intégrant le chiffrement opportuniste pour améliorer la confidentialité et la sécurité des communications entre les nœuds. Le transport P2P V2 du BIP324 a été inclus en option (désactivé par défaut) dans la version 26.0 de Bitcoin Core, déployée en décembre 2023. Il peut être activé avec l'option `v2transport=1` dans le fichier de configuration. Cette amélioration est inspirée du BIP150 et du BIP151.
 
-> *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](./P.md#p2p-transport-v2).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#p2p-transport-v2).*
 
 ## BIP326
 
 Proposition d'amélioration destinée aux développeurs de logiciels de portefeuille Bitcoin prenant en charge les transactions Taproot. Son but principal est de renforcer la confidentialité des protocoles de seconde couche qui pourraient utiliser des PTLC (*Point Time Locked Contracts*), comme les CoinSwap, le Lightning Network ou les DLC (*Discreet Log Contracts*). Pour ce faire, cette proposition vise à créer du déni plausible en configurant automatiquement le champ `nSequence` des transactions Taproot de la même manière que le champ `nLocktime` était configuré dans les autres types de transactions afin de décourager les attaques de fee sniping. Autrement dit, le BIP326 demande aux logiciels de portefeuille d'utiliser le champ `nSequence` plutôt que le champ `nLocktime` pour prévenir les attaques de fee sniping, afin d'offrir une confidentialité accrue pour tous les protocoles off-chain utilisant ce champ de manière similaire. Ainsi, une transaction Taproot avec une valeur spécifique dans le champ `nSequence` pourrait être soit une dépense somme toute classique d'un portefeuille, soit une transaction de règlement d'un protocole de seconde couche avec un verrouillage temporel, rendant ces deux cas indiscernables. Si cette proposition d'amélioration est appliquée massivement par les développeurs de logiciels de portefeuille Bitcoin, cela améliorerait grandement la confidentialité et la fongibilité de Bitcoin au global.
 
-> *Pour plus d'informations, voir la définition de [**FEE SNIPING**](./F.md#fee-sniping).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./F.md#fee-sniping).*
 
 ## BIT
 
@@ -663,7 +663,7 @@ Surnom donné à l'entrepreneur et investisseur Roger Ver, qui a été un promot
 
 Autre nom donné à la méthode « SCORE BASED METHOD » pour le calcul de la rémunération des mineurs dans le contexte des pools de minage. 
 
-> *Pour plus d'informations, voir la définition de **[SCORE (SCORE BASED METHOD)](./S.md#score-score-based-method)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./S.md#score-score-based-method)**.*
 
 ## BITCOIN QT
 
@@ -734,7 +734,7 @@ Nom des fichiers dans Bitcoin Core qui stockent les données brutes des blocs de
 
 ## BLOCKS/INDEX/
 
-Voir la définition de [**BLOCKS INDEX**](./B.md#blocks-index).
+Voir la définition de [](/dictionnaire/./B.md#blocks-index).
 
 ## BLOCKS/REV?????.DAT
 
@@ -762,7 +762,7 @@ Attaque spécifique au minage dans une pool. C'est une pratique malveillante où
 
 Structure de données probabiliste utilisée pour tester si un élément fait partie d'un ensemble. Les Bloom Filters permettent de vérifier rapidement l'appartenance sans tester l'ensemble des données. Ils sont particulièrement utiles dans les contextes où l'espace et la vitesse sont critiques, mais où un taux d'erreur faible et contrôlé est acceptable. En effet, les Bloom Filters ne produisent pas de faux négatifs, mais ils produisent une certaine quantité de faux positifs. Lorsqu'un élément est ajouté au filtre, plusieurs fonctions de hachage génèrent des positions dans un tableau de bits. Pour vérifier l'appartenance, les mêmes fonctions de hachage sont utilisées. Si tous les bits correspondants sont définis, l'élément est probablement dans l'ensemble, mais avec un risque de faux positifs. Les filtres de Bloom sont largement utilisés dans le domaine des bases de données et des réseaux. On sait notamment que Google les utilise pour son système de gestion de base de données compressées *BigTable*. Dans le protocole Bitcoin, on les utilise notamment pour les portefeuilles SPV selon le BIP37.
 
-> *Lorsque l'on parle spécifiquement de l'utilisation des Bloom Filters dans le cadre des transactions Bitcoin, on retrouve parfois le terme de « Transaction Bloom Filtering ». Pour plus d'informations, voir la définition de [**BIP37**](./B.md#BIP37).*
+> *Lorsque l'on parle spécifiquement de l'utilisation des Bloom Filters dans le cadre des transactions Bitcoin, on retrouve parfois le terme de « Transaction Bloom Filtering ». Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#BIP37).*
 
 ## B-MONEY
 
@@ -825,19 +825,19 @@ Dans le cadre du Lightning Network, un canal de paiement est une connexion bidir
 
 Protocole open-source de monnaie électronique chaumienne, similaire au système eCash de David Chaum, mais qui fonctionne sur Bitcoin et le Lightning Network. Plus précisément, Cashu est inspiré d'une variante d'eCash proposée en 1996 par David Wagner nommée « *Chaumian ecash without RSA* ». Cashu peut être utilisé sur des portefeuilles custodiaux afin que le serveur ne puisse identifier ni les propriétaires des fonds, ni les détails des transactions, offrant ainsi une amélioration de la confidentialité. Les utilisateurs peuvent générer des jetons Cashu en échange de bitcoins, qui sont signés par le serveur sans connaitre l'utilisateur. Les jetons peuvent ensuite être transférés entre utilisateurs de manière instantanée, privée et sans frais. 
 
-> *Pour plus d'informations, voir la définition de [**ECASH**](./E.md#ecash-david-chaum).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./E.md#ecash-david-chaum).*
 
 ## CET (CONTRACT EXECUTION TRANSACTION)
 
 Transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
 
-> *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./D.md#dlc-discreet-log-contract).*
 
 ## CHAINSTATE/
 
 Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. C'est donc en réalité un synonyme d'« UTXO set ». 
 
-> *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./U.md#utxo-set).*
 
 ## CHARGE UTILE (PAYLOAD)
 
@@ -852,7 +852,7 @@ Dans le contexte général de l'informatique, une charge utile désigne les donn
 
 Amélioration du concept de coinjoin, introduit pour la première fois en 2013 par Gregory Maxwell, qui utilise les signatures aveugles de Chaum pour renforcer l'anonymat des transactions coinjoins. Dans ce protocole, les utilisateurs soumettent des entrées et une adresse de réception cryptographiquement aveuglées à un coordinateur. Cette adresse privée est destinée à recevoir les bitcoins en sortie de coinjoin. Le coordinateur signe ces tokens et les renvoie aux utilisateurs. Les utilisateurs se reconnectent ensuite de manière anonyme au serveur du coordinateur et révèlent ensuite leurs adresses de sortie en clair pour la construction de la transaction. Le coordinateur peut vérifier que toutes ces adresses de réception proviennent bien d'utilisateurs légitimes, puisqu'il a signé leur version aveuglée auparavant. En revanche, il ne peut pas associer une adresse de sortie spécifique à un utilisateur donné en entrée. Il n'y a donc aucun lien entre les entrées et les sorties, même du point de vue du coordinateur. Cette méthode garantit que le coordinateur ne peut ni compromettre l'anonymat des participants, ni voler les bitcoins durant tout le processus de coinjoin.
 
-> *Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./C.md#coinjoin)**.*
 
 ## CHIFFRER (CHIFFREMENT)
 
@@ -871,7 +871,7 @@ Heuristique utilisée dans le domaine de l'analyse et du traçage des transactio
 > « *Toutefois, la liaison est inévitable avec les transactions multi-entrées, qui révèlent nécessairement que leurs entrées étaient détenues par un même propriétaire. Le risque est que si le propriétaire d'une clef est révélé, les liaisons peuvent révéler d'autres transactions qui ont appartenu au même propriétaire.* » - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Consulté à l'adresse https://bitcoin.org/bitcoin.pdf.
 
 Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les sociétés d'analyse de chaîne, avec la réutilisation d'adresse.
-![](assets/C/13.png)
+![](/dictionnaire//dictionnaire/assets/C/13.png)
 > *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 
 ## CLÉ ÉTENDUE
@@ -912,7 +912,7 @@ Acronyme de « Command Line Interface », ou « interface en ligne de commande �
 
 ## C-LIGHTNING (CLN)
 
-Ancien nom de l'implémentation Core-Lightning. Pour plus d'informations, voir la définition de [**CORE-LIGHTNING**](./C.md#core-lightning-cln).
+Ancien nom de l'implémentation Core-Lightning. Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#core-lightning-cln).
 
 ## CLONE
 
@@ -948,12 +948,12 @@ Fonctionnalité présente dans certains logiciels de portefeuille Bitcoin, qui d
 ## COINJOIN
 
 Le Coinjoin est une technique permettant de casser le traçage des bitcoins. Il repose sur une transaction collaborative à la structure spécifique de même nom : la transaction Coinjoin. Les transactions Coinjoin permettent d'améliorer la protection de la vie privée des utilisateurs de Bitcoin en rendant l'analyse des transactions plus difficile pour les observateurs extérieurs. Cette structure permet la combinaison de plusieurs transactions indépendantes en une seule transaction, rendant difficile la détermination des liens entre les adresses d'entrée et de sortie. Le fonctionnement général du Coinjoin est le suivant : différents utilisateurs souhaitant mixer déposent un montant en input d'une transaction. Ces inputs ressortiront en différents outputs de même montant. À la sortie de la transaction, il est donc impossible de déterminer quel output appartient à quel utilisateur. Il n'y a techniquement aucun lien entre les entrées et les sorties de la transaction Coinjoin. Le lien entre chaque utilisateur et chaque UTXO est cassé, de la même manière que l'historique de chaque pièce.
-![](assets/C/4.png)
+![](/dictionnaire//dictionnaire/assets/C/4.png)
 Pour permettre le Coinjoin sans qu'aucun utilisateur ne perde la main sur ses fonds à aucun moment, la transaction est d'abord construite par un coordinateur puis transmise à chaque utilisateur. Chacun d'eux signe alors la transaction de son côté en vérifiant qu'elle lui convient, puis toutes les signatures sont ajoutées à la transaction. Si un utilisateur ou le coordinateur tente de voler les fonds des autres en modifiant les outputs de la transaction Coinjoin, alors les signatures seront invalides et la transaction sera refusée par les nœuds. Ce protocole spécifique avec un coordinateur central s'appelle « *Chaumian Coinjoin* ».
 
-Ce mécanisme augmente la confidentialité des transactions sans nécessiter de modifications du protocole Bitcoin. Des implémentations spécifiques de Coinjoin, telles que Whirlpool, JoinMarket ou Wabisabi, proposent des solutions pour faciliter le processus de coordination entre les participants et renforcer l'efficacité de la transaction Coinjoin. Exemple de transaction Coinjoin : [323df21f0b0756f98336437aa3d2fb87e02b59f1946b714a7b09df04d429dec2](https://mempool.space/fr/tx/323df21f0b0756f98336437aa3d2fb87e02b59f1946b714a7b09df04d429dec2)
+Ce mécanisme augmente la confidentialité des transactions sans nécessiter de modifications du protocole Bitcoin. Des implémentations spécifiques de Coinjoin, telles que Whirlpool, JoinMarket ou Wabisabi, proposent des solutions pour faciliter le processus de coordination entre les participants et renforcer l'efficacité de la transaction Coinjoin. Exemple de transaction Coinjoin : [](/dictionnaire/https://mempool.space/fr/tx/323df21f0b0756f98336437aa3d2fb87e02b59f1946b714a7b09df04d429dec2)
 
-> *Le terme de « Coinjoin » ne dispose pas de traduction française. Certains bitcoiners utilisent également les termes de « mix », de « mixing » ou encore de « mixage » pour évoquer la transaction Coinjoin. Le mixage est plutôt le processus utilisé au cœur du Coinjoin. Aussi, il ne faut pas confondre le mixage par Coinjoins et le mixage par un acteur central qui prend possession des bitcoins durant le processus. Cela n'a rien à voir avec le Coinjoin où l'utilisateur ne perd à aucun moment la main sur ses bitcoins durant le processus. Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
+> *Le terme de « Coinjoin » ne dispose pas de traduction française. Certains bitcoiners utilisent également les termes de « mix », de « mixing » ou encore de « mixage » pour évoquer la transaction Coinjoin. Le mixage est plutôt le processus utilisé au cœur du Coinjoin. Aussi, il ne faut pas confondre le mixage par Coinjoins et le mixage par un acteur central qui prend possession des bitcoins durant le processus. Cela n'a rien à voir avec le Coinjoin où l'utilisateur ne perd à aucun moment la main sur ses bitcoins durant le processus. Pour plus d'informations, voir la définition de **[](/dictionnaire/./C.md#chaumian-coinjoin)**.*
 
 ## COINJUMBLE
 
@@ -963,19 +963,19 @@ Ce mécanisme augmente la confidentialité des transactions sans nécessiter de 
 
 Implémentation de coinjoin développée en 2014. Coinmux est un protocole de mixage de bitcoins qui repose sur la confiance réciproque entre les participants, sans nécessiter l'intervention d'un tiers de confiance. Le logiciel regroupe les bitcoins de plusieurs utilisateurs dans une transaction unique, où chaque sortie dispose de montants identiques, ce qui permet de casser les liens entre les ins et les outputs. Le protocole de Coinmux assure que les utilisateurs conservent le contrôle de leurs fonds durant tout le processus, en ne faisant signer les transactions que lorsque les entrées et les sorties correspondent exactement à ce qui a été convenu.
 
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#coinjoin).*
 
 ## COINS/
 
 Nom de l'ancien dossier utilisé dans Bitcoin Core pour stocker l'UTXO set remplacé par le fichier chainstate/ dans la version 0.8.0.
 
-> *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./U.md#utxo-set).*
 
 ## COINSHUFFLE
 
 Protocole de mixage de pièces bitcoins proposé en 2014 par Tim Ruffing, Pedro Moreno-Sanchez, and Aniket Kate, inspiré de l'idée du Coinjoin de Gregory Maxwell. Coinshuffle permet de couper l'historique de pièces sans nécessiter de tiers de confiance. Le protocole assure que même l'intermédiaire ne peut pas relier le payeur au bénéficiaire. Ce concept n'a jamais été largement adopté, les techniques de confidentialité telles que le Chaumian Coinjoin lui étant préférées.
 
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#coinjoin).*
 
 ## COINSWAP
 
@@ -985,7 +985,7 @@ Protocole de mixage de pièces bitcoins proposé en 2014 par Tim Ruffing, Pedro 
 
 Synonyme de « hardware wallet ».
 
-> *Pour plus d'informations, voir la définition de [**HARDWARE WALLET**](./H.md#hardware-wallet).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./H.md#hardware-wallet).*
 
 ## COMMERÇANT
 
@@ -1011,7 +1011,7 @@ La concaténation, dans le contexte de la cryptographie et des systèmes informa
 
 Le condensat, dans le contexte de la cryptographie, désigne le résultat (ou l'output) produit par l'application d'une fonction de hachage cryptographique à un ensemble de données. Le condensat est une chaîne de caractères de taille fixe généralement représentée sous forme d'une série de chiffres et de lettres en notation hexadécimale (base 16). Ce résultat a la particularité d'être presque unique et spécifique aux données d'entrée, de sorte qu'un changement minime dans l'entrée produira un condensat complètement différent. Les fonctions de hachage cryptographiques sont conçues pour être unidirectionnelles et résistantes aux collisions, rendant très difficile de retrouver les données initiales à partir du condensat ou de trouver deux entrées distinctes produisant le même condensat.
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](./F.md#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./F.md#fonction-de-hachage-cryptographique).*
 
 ## CONFIRMATION
 
@@ -1026,7 +1026,7 @@ Mécanisme par lequel tous les nœuds du réseau Bitcoin parviennent à s'accord
 ## CONSOLIDATION
 
 Transaction spécifique dans laquelle plusieurs petits UTXO sont fusionnés en entrée pour former un seul et plus gros UTXO en sortie. Cette opération est une transaction effectuée vers son propre portefeuille. L'objectif de la consolidation est de tirer profit des périodes où les frais sur le réseau Bitcoin sont bas pour fusionner plusieurs petits UTXO en un seul plus grand en valeur. Ainsi, on anticipe les dépenses obligatoires en cas de hausse des frais, permettant d'économiser sur les frais de transaction futurs. En effet, les transactions comportant de nombreuses entrées sont plus lourdes et, par conséquent, plus coûteuses. Outre l'économie réalisable sur les frais de transaction, la consolidation est aussi une forme de planification à long terme. Si votre portefeuille contient de très petits UTXO, ceux-ci peuvent devenir inutilisables si le réseau Bitcoin entre dans une période prolongée de frais élevés. Par exemple, si vous devez dépenser un UTXO de 10 000 satoshis mais que les frais de minage minimums s'élèvent à 15 000 satoshis, la dépense excéderait la valeur de l'UTXO lui-même. Ces petits UTXO deviennent alors économiquement non rationnels à utiliser et restent inutilisables tant que les frais ne baissent pas. Ces UTXO sont communément appelés « dust » (poussière). En consolidant régulièrement vos petits UTXOs, vous réduisez ce risque associé aux augmentations de frais. Cependant, il est important de noter que les transactions de consolidation sont reconnaissables lors d'une analyse de chaîne. Une telle transaction indique une CIOH (*Common Input Ownership Heuristic*), c'est-à-dire que les entrées de la transaction de consolidation sont possédées par une seule entité. Cela peut avoir des implications en termes de confidentialité pour l'utilisateur.
-![](assets/C/7.png)
+![](/dictionnaire//dictionnaire/assets/C/7.png)
 
 ## CONTRAT INTELLIGENT
 
@@ -1109,7 +1109,7 @@ Communauté informelle et internationale de personnes intéressées par l'utilis
 
 Proposition qui vise à améliorer la confidentialité du routage des transactions dans le réseau Bitcoin pour contrer la désanonymisation. Dans le fonctionnement classique de Bitcoin, les transactions sont immédiatement diffusées à de multiples nœuds. Ce phénomène peut potentiellement permettre à des observateurs de lier des transactions, normalement anonymes, avec des adresses IP. L'objectif du BIP156 est de traiter ce problème. Pour ce faire, il introduit une phase supplémentaire dans la diffusion permettant de préserver l'anonymat avant la propagation publique. Ainsi, Dandelion utilise d'abord une phase de « tige » où la transaction est envoyée à travers un chemin aléatoire de nœuds, avant d'être diffusée à l'ensemble du réseau dans la phase de « capitule ». La tige et le capitule sont des références au comportement de la propagation de la transaction à travers le réseau, qui ressemble à la forme d'un pissenlit (« *a dandelion* » en anglais). Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine.
 
-> *Pour plus d'informations, voir la définition de [**BIP156**](./B.md#bip156).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip156).*
 
 ## DARKWALLET
 
@@ -1163,7 +1163,7 @@ Type de contrat intelligent sur Bitcoin qui permet l'exécution de conditions co
 
 ## DLP (DISCREET LOG PROBLEME)
 
-Voir la définition de [**LOGARITHME DISCRET (PROBLÈME)**](./L.md#logarithme-discret-problème).
+Voir la définition de [](/dictionnaire/./L.md#logarithme-discret-problème).
 
 ## DNS SEEDS
 
@@ -1180,7 +1180,7 @@ Points de connexion initiaux pour les nouveaux nœuds Bitcoin qui rejoignent le 
 
 Les DNS seeds représentent le second moyen, par ordre de priorité, pour un nœud de Bitcoin d'établir des connexions. Le premier moyen consiste à utiliser le fichier peers.dat que le nœud a lui-même créé. Ce fichier est naturellement vide dans le cas d'un nouveau nœud, à moins que l'utilisateur l'ai modifié manuellement.
 
-> *Attention, les DNS seeds ne doivent pas être confondus avec les « seed nodes », qui sont eux la troisième manière d'établir des connexions. Pour plus d'informations, voir la définition de [**SEED NODES**](./S.md#seed-nodes).*
+> *Attention, les DNS seeds ne doivent pas être confondus avec les « seed nodes », qui sont eux la troisième manière d'établir des connexions. Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#seed-nodes).*
 
 ## DOS (DENIAL OF SERVICE)
 
@@ -1200,7 +1200,7 @@ Forme spécifique de sidechain où les mineurs de la blockchain principale (Bitc
 
 Fait référence à un élément supplémentaire et inutile consommé par les opcodes `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` lors de la vérification des signatures dans une transaction. En raison d'un bug off-by-one historique (erreur de décalage unitaire), ces 2 opcodes suppriment un élément supplémentaire sur la pile en plus de leur fonction de base. Pour éviter une erreur, il est donc obligatoire d'inclure une valeur factice au début du `ScriptSig` afin de satisfaire la suppression et outrepasser le bug. Cette valeur inutile, c'est ce que l'on appelle le « *dummy element* ». Le BIP11, qui a introduit le standard P2MS, conseillait de mettre un `OP_0` comme valeur inutile. Mais ce standard n'était pas imposé au niveau des règles de consensus, ce qui veut dire que n'importe quelle valeur pouvait y être placée, sans invalider la transaction. Le dummy element était donc un vecteur de malléabilité des transactions. Le BIP147, introduit avec le soft fork SegWit, a imposé que cet élément factice soit strictement un tableau d'octets vide (`OP_0`), éliminant ainsi la malléabilité associée à cet élément en rendant toute transaction non conforme invalide selon les règles de consensus. Cette règle, nommée `NULLDUMMY`, s'applique à la fois aux transactions SegWit et pré-SegWit.
 
-> *Pour plus d'informations, voir la définition de [**BIP147**](./B.md#bip147) et [**OP_CHECKMULTISIG**](./O.md#op_checkmultisig-0xae).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip147) et [](/dictionnaire/./O.md#op_checkmultisig-0xae).*
 
 ## DUST
 
@@ -1216,7 +1216,7 @@ Attaque qui consiste à envoyer de minuscules quantités de bitcoins à un grand
 
 ## DUST LIMIT
 
-Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la « poussière » (dust) par un nœud du réseau. Ce seuil fait partie des règles de standardisation qui peuvent être modifiées indépendamment par chaque nœud. Dans Bitcoin Core, cette limite est déterminée par un taux de frais spécifique, fixé par défaut à 3000 sats par kilo-octet virtuel (sats/kvB). Cette limite vise à restreindre la propagation de transactions comprenant de très petits montants en bitcoins. En effet, un UTXO qualifié de poussière implique que son utilisation n'est économiquement pas rationnelle : dépenser cet UTXO coûterait plus cher que de simplement l'abandonner. Si dépenser de la poussière n'est pas rationnel, cela suggère que de telles dépenses ne peuvent être motivées que par des incitations externes, souvent malveillantes. Cela peut notamment poser un problème si un acteur malintentionné cherche à saturer le réseau avec des transactions contenant des montants infimes, dans le but d'accroître la charge opérationnelle des nœuds et potentiellement les empêcher de traiter d'autres transactions légitimes. Pour donner une analogie (un peu bancale, je vous l'accorde), c'est un peu comme si quelqu'un tentait de payer un panier de courses de 100 € uniquement en pièces de 1 centimes. Pour en savoir plus, je vous recommande de lire les définitions de [**DUST**](./D.md#dust), [**DUSTING ATTACK**](./D.md#dusting-attack) et de [**DUSTRELAYFEE**](./D.md#dustrelayfee).
+Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la « poussière » (dust) par un nœud du réseau. Ce seuil fait partie des règles de standardisation qui peuvent être modifiées indépendamment par chaque nœud. Dans Bitcoin Core, cette limite est déterminée par un taux de frais spécifique, fixé par défaut à 3000 sats par kilo-octet virtuel (sats/kvB). Cette limite vise à restreindre la propagation de transactions comprenant de très petits montants en bitcoins. En effet, un UTXO qualifié de poussière implique que son utilisation n'est économiquement pas rationnelle : dépenser cet UTXO coûterait plus cher que de simplement l'abandonner. Si dépenser de la poussière n'est pas rationnel, cela suggère que de telles dépenses ne peuvent être motivées que par des incitations externes, souvent malveillantes. Cela peut notamment poser un problème si un acteur malintentionné cherche à saturer le réseau avec des transactions contenant des montants infimes, dans le but d'accroître la charge opérationnelle des nœuds et potentiellement les empêcher de traiter d'autres transactions légitimes. Pour donner une analogie (un peu bancale, je vous l'accorde), c'est un peu comme si quelqu'un tentait de payer un panier de courses de 100 € uniquement en pièces de 1 centimes. Pour en savoir plus, je vous recommande de lire les définitions de [](/dictionnaire/./D.md#dust), [](/dictionnaire/./D.md#dusting-attack) et de [](/dictionnaire/./D.md#dustrelayfee).
 
 ## DUSTRELAYFEE
 
@@ -1279,7 +1279,7 @@ L'entête de bloc est une structure de données servant de composant principal d
 * La cible de difficulté ;
 * Le nonce (Number only used ONCE).
 
-Par exemple, voici l'entête du [bloc n° 785 530](https://mempool.space/fr/block/000000000000000000039a294df2039d5fc759f5fd4dde06f09a17efc29a01e4) au format hexadécimal, miné par Foundry USA le 15 avril 2023 : `00e0ff3f5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000206bde3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0bcb13a64b2e0051743f09a40`
+Par exemple, voici l'entête du [](/dictionnaire/https://mempool.space/fr/block/000000000000000000039a294df2039d5fc759f5fd4dde06f09a17efc29a01e4) au format hexadécimal, miné par Foundry USA le 15 avril 2023 : `00e0ff3f5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000206bde3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0bcb13a64b2e0051743f09a40`
 
 Si l'on décompose cet entête, on peut reconnaitre :
 * La version : `00e0ff3f` ;
@@ -1359,7 +1359,7 @@ Monnaie, souvent étatique, dont le cours est imposé par la force publique.
 
 Protocole conçu par Matt Corallo en 2016 pour accélérer la propagation des blocs Bitcoin à travers le monde. Son objectif était de réduire les délais de propagation au plus près des limites physiques. FIBRE visait à garantir une distribution plus équitable des opportunités de minage, en s'assurant que la proportion de blocs minés par un participant reflète fidèlement sa contribution en termes de puissance de calcul, peu importe sa situation sur le réseau. En effet, la latence dans la transmission des blocs peut favoriser les grands groupes de mineurs bien connectés au détriment des plus modestes. Ce phénomène pourrait, à terme, augmenter la centralisation du minage et réduire la sécurité globale du système. Pour pallier ce problème, FIBRE introduisait des codes de correction d'erreur et l'envoi de données supplémentaires pour contrebalancer les pertes de paquets, ainsi que l'utilisation de blocs compactés similaires à ceux décrits dans le BIP152, le tout opérant via UDP pour contourner certaines limitations de TCP. Néanmoins, FIBRE fut délaissé en 2020, principalement en raison de sa dépendance à l'égard d'un unique mainteneur et du fait que l'adoption du BIP152 a rendu un tel système moins indispensable.
 
-> *Pour plus d'informations, voir la définition de [**BIP152**](./B.md#bip152).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip152).*
 
 ## FIDELITY BONDS
 
@@ -1398,7 +1398,7 @@ Méthode de cryptanalyse pour trouver un mot de passe ou une clé qui consiste �
 
 Certains bitcoiners suggèrent d'utiliser ce terme pour décrire une dusting attack, car ils trouvent que le terme de « dust » est ici inapproprié.
 
-> *Pour plus d'informations, voir la définition de [**DUST**](./D.md#dust) et [**DUST LIMIT**](./D.md#dust-limit).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./D.md#dust) et [](/dictionnaire/./D.md#dust-limit).*
 
 ## FORK
 
@@ -1408,7 +1408,7 @@ Le terme de « fork » revêt plusieurs significations dans le cadre de Bitcoin.
 - **Le hard fork** : représente une modification du protocole Bitcoin, incompatible avec les versions antérieures, en retirant des règles ou en allégeant celles existantes. Cela résulte en la création de deux chaînes distinctes et incompatibles si tous les nœuds ne sont pas mis à jours. Le réseau se scinde alors en deux : ceux qui adoptent les nouvelles règles et ceux qui conservent les anciennes ;
 - **Le soft fork** : implique des modifications rétrocompatibles qui ajoutent des règles ou rendent plus restrictives celles existantes, sans provoquer de division du réseau. Les nœuds qui n'adoptent pas les nouvelles règles peuvent continuer à suivre la même chaîne que les autres, à condition que la majorité de la puissance de calcul du réseau soutienne la chaîne mise à jour.
 
-> *Pour plus d'informations, voir la définition de [**HARD FORK**](./H.md#hard-fork) et [**SOFT FORK**](./S.md#soft-fork).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./H.md#hard-fork) et [](/dictionnaire/./S.md#soft-fork).*
 
 ## FORK (GIT)
 
@@ -1430,7 +1430,7 @@ Ils sont exprimés en `sats/vBytes`, ce qui veut dire que les frais ne dépenden
 
 Les transactions avec des frais plus élevés, en fonction de leur taille, sont traitées en priorité par les mineurs, ce qui peut accélérer le processus de confirmation. Inversement, les transactions avec des frais plus faibles peuvent être retardées lors des périodes de forte congestion. Il convient de noter que les frais de transaction Bitcoin sont distincts de la subvention de bloc, qui est une incitation supplémentaire pour les mineurs. La récompense de bloc est composée de nouveaux bitcoins créés à chaque bloc miné (subvention de bloc), ainsi que des frais de transaction collectés. Tandis que la subvention de bloc diminue au fil du temps en raison de la limitation de l'offre totale de bitcoins, les frais de transaction, eux, continueront de jouer un rôle crucial pour encourager les mineurs à participer. 
 
-Au niveau protocolaire, rien n'empêche les utilisateurs d’inclure des transactions sans aucuns frais dans un bloc. En réalité, ce type de transaction sans frais fait exception. Par défaut, les nœuds Bitcoin ne relaient pas les transactions disposant de frais inférieurs à `1 sat/vBytes`. Si certaines transactions sans frais ont pu passer, c'est parce qu'elles ont été intégrées directement par le mineur gagnant, sans parcourir le réseau de nœuds. Par exemple, la transaction [`fd456524104a6674693c29946543f8a0befccce5a352bda55ec8559fc630f5f3`](https://mempool.space/tx/fd456524104a6674693c29946543f8a0befccce5a352bda55ec8559fc630f5f3) n'inclut aucuns frais. Dans cet exemple précis, c'était une transaction initiée par le directeur de la pool de minage F2Pool. En tant qu'utilisateur normal, la limite inférieure est donc actuellement de `1 sat/vBytes`.
+Au niveau protocolaire, rien n'empêche les utilisateurs d’inclure des transactions sans aucuns frais dans un bloc. En réalité, ce type de transaction sans frais fait exception. Par défaut, les nœuds Bitcoin ne relaient pas les transactions disposant de frais inférieurs à `1 sat/vBytes`. Si certaines transactions sans frais ont pu passer, c'est parce qu'elles ont été intégrées directement par le mineur gagnant, sans parcourir le réseau de nœuds. Par exemple, la transaction [](/dictionnaire/https://mempool.space/tx/fd456524104a6674693c29946543f8a0befccce5a352bda55ec8559fc630f5f3) n'inclut aucuns frais. Dans cet exemple précis, c'était une transaction initiée par le directeur de la pool de minage F2Pool. En tant qu'utilisateur normal, la limite inférieure est donc actuellement de `1 sat/vBytes`.
 Il convient également de tenir compte les limites de purge. En période de forte congestion, les mempools des nœuds purgent leurs transactions en attente en dessous d'un certain seuil, afin de respecter leur limite de RAM attribuée. Cette limite est librement choisie par l'utilisateur, mais beaucoup laissent la valeur Bitcoin Core par défaut. Pour le moment, cette limite est de 300 Go par défaut, elle peut être modifiée dans le fichier `bitcoin.conf` avec le paramètre `maxmempool`.
 
 > *En anglais, on parle de « transaction fees ».*
@@ -1442,7 +1442,7 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 ## GENÈSE (BLOC)
 
-Le bloc de genèse Bitcoin, également connu sous le nom de bloc Genesis ou bloc #0, est le premier bloc du système Bitcoin. Il incarne le lancement concret de Bitcoin. Le bloc de genèse a été créé par le fondateur anonyme de Bitcoin, Satoshi Nakamoto, le 3 janvier 2009. Son hash est [`000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f`](https://mempool.space/fr/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f). Ce bloc contient seulement une transaction coinbase qui génère 50 bitcoins en récompense pour le mineur (dans ce cas, Satoshi Nakamoto lui-même). Il est particulièrement significatif en raison de son message incorporé dans la transaction coinbase : `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks`. Cette citation est une référence à un article du journal *The Times*. Le message est interprété comme une critique du système financier traditionnel et de ses dérives, ce qui a en partie motivé la création de Bitcoin en tant qu'alternative. Puisqu’il incarne le tout premier bloc de la blockchain Bitcoin, le bloc de genèse ne possède évidemment pas de champ contenant le hachage du bloc antérieur (car il n'y en pas). Par ailleurs, les 50 bitcoins générés en récompense dans ce bloc ne sont pas dépensables au niveau protocolaire.
+Le bloc de genèse Bitcoin, également connu sous le nom de bloc Genesis ou bloc #0, est le premier bloc du système Bitcoin. Il incarne le lancement concret de Bitcoin. Le bloc de genèse a été créé par le fondateur anonyme de Bitcoin, Satoshi Nakamoto, le 3 janvier 2009. Son hash est [](/dictionnaire/https://mempool.space/fr/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f). Ce bloc contient seulement une transaction coinbase qui génère 50 bitcoins en récompense pour le mineur (dans ce cas, Satoshi Nakamoto lui-même). Il est particulièrement significatif en raison de son message incorporé dans la transaction coinbase : `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks`. Cette citation est une référence à un article du journal *The Times*. Le message est interprété comme une critique du système financier traditionnel et de ses dérives, ce qui a en partie motivé la création de Bitcoin en tant qu'alternative. Puisqu’il incarne le tout premier bloc de la blockchain Bitcoin, le bloc de genèse ne possède évidemment pas de champ contenant le hachage du bloc antérieur (car il n'y en pas). Par ailleurs, les 50 bitcoins générés en récompense dans ce bloc ne sont pas dépensables au niveau protocolaire.
 
 > *J’aime différencier les bitcoins perdus pour cause protocolaire, des bitcoins perdus pour cause applicative. Par définition, les bitcoins perdus au niveau protocolaire ne seront jamais dépensables, sauf à refaire la preuve de travail postérieure. J’y inclus notamment les pertes liées à la non-réclamation de la récompense coinbase, ou celles liées à un script OP_RETURN. Au contraire, les bitcoins perdus au niveau applicatif, souvent pour cause de perte de clés, seront sûrement un jour débloqués à cause des limitations de la cryptographie employée.*
 
@@ -1591,7 +1591,7 @@ Dans le contexte d'un portefeuille HD (Hierarchical Deterministic), fait référ
 
 Fait référence aux *Unspent Transaction Outputs* (UTXO) utilisés comme fonds d'origine pour une transaction.
 
-> *Pour plus d'informations voir la définition d'[**ENTRÉE**](./E.md#entrée-input).*
+> *Pour plus d'informations voir la définition d'[](/dictionnaire/./E.md#entrée-input).*
 
 ## INSCRIPTIONS
 
@@ -1644,7 +1644,7 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 
 Étiquette ou annotation attribuée à un UTXO afin de se souvenir de sa provenance. 
 
-> *Pour plus d'informations, voir la définition de [**ÉTIQUETAGE**](./E.md#étiquetage).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./E.md#étiquetage).*
 
 ## LCB/FT
 
@@ -1708,7 +1708,7 @@ Service développé par Lightning Labs conçu pour faciliter l'équilibrage de l
 
 Ancien nom de la collection d'outils et de bibliothèques pour développeurs BDK.
 
-> *Pour plus d'informations, voir la définition de [BDK (BITCOIN DEV KIT)](./B.md#bdk-bitcoin-dev-kit).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bdk-bitcoin-dev-kit).*
 
 ## MAINTENEUR
 
@@ -1793,7 +1793,7 @@ Action de participer à la preuve de travail (Proof-of-Work) du système Bitcoin
 
 ## MINAGE ÉGOÏSTE
 
-Voir la définition de [**SELFISH MINING**](./S.md#selfish-mining).
+Voir la définition de [](/dictionnaire/./S.md#selfish-mining).
 
 ## MINAGE FUSIONNÉ
 
@@ -1828,7 +1828,7 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript.
 
-> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[MINISCRIPT](./M.md#miniscript)** et de **[TAPSCRIPT](./T.md#tapscript)**.*
+> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[](/dictionnaire/./M.md#miniscript)** et de **[](/dictionnaire/./T.md#tapscript)**.*
 
 
 ## MIXAGE
@@ -1852,7 +1852,7 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 ## NESTED SEGWIT
 
 Standard de scripts utilisés pour envelopper des scripts SegWit natifs, au sein d'un script P2SH. Les scripts Nested SegWit ont été inventé au lancement de SegWit pour faciliter son adoption. Ils permettent d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif.
-> *Pour plus d'informations, voir la définition de [**P2SH-P2WPKH**](./P.md#p2sh-p2wpkh).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#p2sh-p2wpkh).*
 
 ## NETWORK-ADJUSTED TIME (NAT)
 
@@ -1861,7 +1861,7 @@ Estimation du temps universel basée sur les horloges des nœuds du réseau. Cha
 ## NLOCKTIME
 
 Champ intégré dans les transactions qui définit une condition temporelle avant laquelle la transaction ne peut être ajoutée à un bloc valide. Ce paramètre permet de spécifier un temps précis (timestamp Unix) ou un nombre de blocs spécifique comme condition pour que la transaction soit considérée comme valide. C'est donc un timelock absolu (pas relatif). Le `nLockTime` agit sur l'intégralité de la transaction et permet effectivement de vérifier le temps, alors que l'opcode `OP_CHECKLOCKTIMEVERIFY` permet uniquement de comparer la valeur en haut de la pile avec la valeur du `nLockTime`.
-> *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](./O.md#op_checklocktimeverify-0xb1) et [**TIMELOCK**](./T.md#timelock).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_checklocktimeverify-0xb1) et [](/dictionnaire/./T.md#timelock).*
 
 ## NŒUD
 
@@ -1891,26 +1891,26 @@ Dans le contexte de l’informatique, le terme « nonce » désigne un nombre ut
 
 Le champ `nSequence` dans une entrée de transaction Bitcoin est utilisé pour indiquer la manière dont cette entrée est verrouillée dans le temps. À l'origine, il visait à permettre le remplacement dynamique de transactions dans les mempools afin de permettre un système de paiement en surcouche similaire à Lightning. Toutefois, son utilisation a évolué avec l'introduction du timelock relatif via le BIP68. Le champ `nSequence` peut désormais spécifier un délai relatif avant qu'une transaction soit incluse dans un bloc. Ce délai peut être défini en terme de nombre de bloc, ou bien comme un multiple de 512 secondes (c'est-à-dire, du temps réel). Notons que cette nouvelle interprétation du champs `nSequence` est uniquement valide si le champs `nVersion` est supérieur ou égal à `2`. Cette interprétation du champs `nSequence` se fait au niveau des règles de consensus de Bitcoin. Par ailleurs, au niveau des règles de standardisation, ce champ est également utilisé pour le signalement de RBF. Si une transaction inclue un `nSequence` inférieur à `0xfffffffe`, alors elle pourra être remplacée via RBF sur les nœuds qui suivent cette politique.
 
-> *Pour plus d'informations, voir la définition de [**OP_CHECKSEQUENCEVERIFY**](./O.md#op_checksequenceverify-0xb2) et [**TIMELOCK**](./T.md#timelock).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_checksequenceverify-0xb2) et [](/dictionnaire/./T.md#timelock).*
 
 ## NULLDUMMY
 
 Règle de consensus introduite avec le BIP147 dans le soft fork SegWit qui exige que l'élément factice (« *dummy element* ») utilisé dans les opcodes `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` soit un tableau d'octets vide (`OP_0`). Cette mesure a été mise en place pour éliminer un vecteur de malléabilité en interdisant toute valeur autre que `OP_0` pour cet élément.
 
-> *Pour plus d'informations, voir la définition de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./D.md#dummy-element) et [](/dictionnaire/./B.md#bip147).*
 
 ## NVERSION
 
 Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du format de transaction utilisé. Il permet au réseau de distinguer les différentes évolutions du format de transaction au fil du temps, et d'appliquer les règles correspondantes. Ce champ n'a aucun impact au niveau des règles de consensus. Cela signifie que toute valeur attribuée à ce champ n'entraîne pas l'invalidation de la transaction. En revanche, le champ `nVersion` dispose de règles de standardisation qui n'acceptent que la valeur de `1` et de `2` actuellement. Pour le moment, ce champ est seulement utile pour l'activation du champ `nSequence`.
 
-> *Pour plus d'informations, voir la définition de [**NSEQUENCE**](./N.md#nsequence).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./N.md#nsequence).*
 
 
 ## OBOE (OFF-BY-ONE ERROR)
 
 Erreur de logique où une boucle itère une fois de trop ou de moins, souvent due à une mauvaise utilisation des opérateurs de comparaison ou de mauvais indices dans la gestion des structures de données. Dans le contexte de Bitcoin, on retrouve ce bug dans le cas du « *dummy element* » dans `OP_CHECKMULTISIG`, où un élément supplémentaire est consommé par erreur.
 
-> *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
+> *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [](/dictionnaire/./D.md#dummy-element) et [](/dictionnaire/./B.md#bip147).*
 
 ## OBSOLÈTE (BLOC)
 
@@ -1922,8 +1922,8 @@ Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîn
 - Il diffuse `Bloc B+1` aux nœuds du réseau ;
 - Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
 - Ils vont donc abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
-![](assets/O/9.png)
-> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN (BLOC)](./O.md#orphelin-bloc)**.*
+![](/dictionnaire//dictionnaire/assets/O/9.png)
+> *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[](/dictionnaire/./O.md#orphelin-bloc)**.*
 
 ## OCTET (BYTE)
 
@@ -1949,7 +1949,7 @@ Fichier utilisé dans Bitcoin Core pour stocker une clé privée associée à un
 
 Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
 
-> *OP_0 est identique à **[OP_FALSE](./O.md#op_false-0x00)** et **OP_PUSHNUM_0**.*
+> *OP_0 est identique à **[](/dictionnaire/./O.md#op_false-0x00)** et **OP_PUSHNUM_0**.*
 
 ## OP_0NOTEQUAL (`0X92`)
 
@@ -1958,7 +1958,7 @@ Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élé
 ## OP_1 (`0X51`)
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
-> *OP_1 est identique à **[OP_TRUE](./O.md#op_true-0x51)** et **OP_PUSHNUM_1**.*
+> *OP_1 est identique à **[](/dictionnaire/./O.md#op_true-0x51)** et **OP_PUSHNUM_1**.*
 
 ## OP_1ADD (`0X8B`)
 
@@ -2100,12 +2100,12 @@ Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et
 ## OP_ELSE (`0X67`)
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
-> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_if-0x63).*
 
 ## OP_ENDIF (`0X68`)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
-> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_if-0x63).*
 
 ## OP_EQUAL (`0X87`)
 
@@ -2123,7 +2123,7 @@ Opcode proposé par Gavin Andresen en 2011. Il prend le script situé au sommet 
 
 Identique à `OP_0`.
 
-> *Pour plus d'informations, voir la définition de [**OP_0**](./O.md#op_0-0x00).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_0-0x00).*
 
 ## OP_FROMALTSTACK (`0X6C`)
 
@@ -2140,12 +2140,12 @@ Compare les deux éléments au sommet de la pile et vérifie si le premier élé
 ## OP_HASH160 (`0XA9`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
-> *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256) et [**RIPEMD160**](./R.md#ripemd160).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#sha256) et [](/dictionnaire/./R.md#ripemd160).*
 
 ## OP_HASH256 (`0XAA`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
-> *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#sha256).*
 
 ## OP_IF (`0X63`)
 
@@ -2183,7 +2183,7 @@ Supprime l'élément situé juste en dessous du sommet de la pile (le second en 
 
 Ne produit aucun effet sur la pile ou l'état du script. Il ne fait aucun déplacement, aucune vérification, ni aucune modification. Il ne fait juste rien, à moins que l'on ait décidé qu'il fasse quelque chose via un soft fork. En effet, depuis leurs modifications par Satoshi Nakamoto en 2010, les commandes `OP_NOP` (`OP_NOP1` (`0XB0`) jusqu'à `OP_NOP10` (`0XB9`)) sont utilisées pour ajouter de nouveaux opcodes sous forme de soft fork. Ainsi, l'`OP_NOP2` (`0XB1`) et l'`OP_NOP3` (`0XB2`) ont déjà été utilisés pour implémenter respectivement l'`OP_CHECKLOCKTIMEVERIFY` et l'`OP_CHECKSEQUENCEVERIFY`. On les utilise en combinaison avec `OP_DROP` afin de supprimer de la pile les valeurs temporelles associées, et ainsi pouvoir continuer l'exécution du script, que le nœud soit à jour ou non. Les `OP_NOP` permettent donc d'insérer un point d'interruption dans un script pour vérifier des conditions supplémentaires déjà existantes ou pouvant être ajoutées avec de futurs soft fork. Depuis Tapscript, l'utilisation des `OP_NOP` a été remplacée par l'utilisation des `OP_SUCCESS` étant plus efficace.
 
-> *Pour plus d'informations, voir la définition de [**OP_SUCCESS**](./O.md#op_success).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_success).*
 
 ## OP_NOT (`0X91`)
 
@@ -2193,7 +2193,7 @@ Inverse la valeur booléenne du sommet de la pile : si cette valeur est non null
 
 Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
 
-> *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_if-0x63).*
 
 ## OP_NUMEQUAL (`0X9C`)
 
@@ -2234,7 +2234,7 @@ Signale un script invalide, ce qui rend l'output qui le contient comme non dépe
 ## OP_RIPEMD160 (`0XA6`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `RIPEMD160`.
-> *Pour plus d'informations, voir la définition de [**RIPEMD160**](./R.md#ripemd160).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./R.md#ripemd160).*
 
 ## OP_ROLL (`0X7A`)
 
@@ -2251,7 +2251,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 ## OP_SHA256 (`0XA8`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
-> *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#sha256).*
 
 ## OP_SIZE (`0X82`)
 
@@ -2277,7 +2277,7 @@ Prend le sommet de la pile principale (main stack) et le déplace vers la pile a
 
 Identique à OP_1.
 
-> *Pour plus d'informations, voir la définition de [**OP_1**](./O.md#op_1-0x51).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_1-0x51).*
 
 ## OP_TUCK (`0X7D`)
 
@@ -2305,7 +2305,7 @@ Ensemble des commandes utilisées dans le système Script de Bitcoin. Script est
 
 Source d'informations tierce qui fournit des données du monde réel pouvant être interprétées sur Bitcoin. Les oracles permettent aux contrats intelligents, tels que les DLC, d'exécuter des conditions contractuelles en fonction d'événements extérieurs. En général, ils fournissent une signature spécifique qui correspond au résultat d'un événement. Cette signature est ensuite utilisée pour compléter et rendre valide une transaction d'exécution qui envoie les bitcoins à la partie qui est censée les recevoir selon les conditions du contrat intelligent.
 
-> *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./D.md#dlc-discreet-log-contract).*
 
 ## ORDINALS
 
@@ -2314,14 +2314,14 @@ Source d'informations tierce qui fournit des données du monde réel pouvant êt
 ## ORPHELIN (BLOC)
 
 Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin. Cependant, dans l'usage courant, l'expression « bloc orphelin » fait souvent référence à un bloc sans enfant : un bloc valide mais non retenu dans la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Le réseau finit par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ».
-![](assets/O/9.png)
->*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de [**OBSOLÈTE (BLOC)**](./O.md#obsolète-bloc).*
+![](/dictionnaire//dictionnaire/assets/O/9.png)
+>*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#obsolète-bloc).*
 
 ## OU EXCLUSIF
 
 Traduction française du terme « *exclusive or* » (XOR).
 
-> *Pour plus d'informations, voir la définition du terme [**XOR**](./X.md#xor).***
+> *Pour plus d'informations, voir la définition du terme [](/dictionnaire/./X.md#xor).***
 
 ## OUTPUT
 
@@ -2374,14 +2374,14 @@ Nouvelle version du protocole de transport Bitcoin P2P intégrant le chiffrement
 
 ## PAIEMENT ROND
 
-![](assets/P/11.png)
+![](/dictionnaire//dictionnaire/assets/P/11.png)
 
 
 ## PAIEMENT SIMPLIFIÉ
 
 
 
-![](assets/P/5.png)
+![](/dictionnaire//dictionnaire/assets/P/5.png)
 
 ## PAIR-À-PAIR (P2P)
 
@@ -2399,7 +2399,7 @@ Fait référence à un modèle de communication et de distribution de données d
 
 Mot de passe optionnel qui, combiné à la phrase de récupération, offre une couche de sécurité supplémentaire pour les portefeuilles Bitcoin déterministes et hiérarchiques. Les portefeuilles HD sont généralement générés à partir d’une phrase de récupération constituée de 12 ou de 24 mots. Cette phrase de récupération est cruciale, car elle permet de restaurer l'ensemble des clés d'un portefeuille en cas de perte. Cependant, elle constitue un point de défaillance unique (SPOF). Si elle est compromise, les actifs sont en danger. C'est là qu'intervient la passphrase. C'est un mot de passe optionnel, choisi par l'utilisateur, qui s'ajoute à la phrase de récupération pour renforcer la sécurité du portefeuille. À ne pas confondre avec un code PIN ou un mot de passe ordinaire, la passphrase joue un rôle dans la dérivation des clés cryptographiques. Elle fonctionne en tandem avec la phrase de récupération, modifiant la graine à partir de laquelle sont générées les clés. Ainsi, même si une personne obtient votre phrase de récupération, sans la passphrase, elle ne peut pas accéder à vos fonds. L'utilisation d'une passphrase crée essentiellement un nouveau portefeuille avec des clés distinctes. Modifier (même légèrement) la passphrase générera un portefeuille différent. La passphrase est arbitraire et peut-être n'importe quelle combinaison de caractères choisie par l'utilisateur. L'utilisation d'une passphrase offre plusieurs avantages. Tout d'abord, elle réduit les risques liés à la compromission de la phrase de récupération en nécessitant un second facteur pour accéder aux fonds. Ensuite, elle peut être utilisée stratégiquement pour créer des portefeuilles d’appât contenant de petites quantités de bitcoins, dans le cas d'une contrainte physique pour voler vos bitcoins. Enfin, son utilisation est intéressante lorsque l’on souhaite maitriser le caractère aléatoire de la génération de la graine du portefeuille HD. La passphrase doit être suffisamment complexe pour résister aux attaques par brute force et doit être sauvegardée de manière fiable. La perte de la passphrase peut entraîner l'incapacité d'accéder aux fonds, tout comme la perte de la phrase de récupération.
 
-> *La passphrase est parfois également nommée : « two-factor seed phrase », « password », « seed extension », « extention word » ou encore « 13ème ou 25ème mot ». Notons qu’il existe deux types de passphrases sur Bitcoin. La plus connue est celle décrite ci-dessus, qui dépend du BIP39, et qui permet de sécuriser tout un portefeuille HD entier. Toutefois, le BIP38 avait également spécifié une manière de sécuriser une clé privée unique à l’aide d’une passphrase. Ce second type de passphrase n’est presque plus utilisé aujourd’hui. Pour plus d'informations sur cette autre passphrase, voir la définition de **[BIP38](./B.md#BIP38)**.*
+> *La passphrase est parfois également nommée : « two-factor seed phrase », « password », « seed extension », « extention word » ou encore « 13ème ou 25ème mot ». Notons qu’il existe deux types de passphrases sur Bitcoin. La plus connue est celle décrite ci-dessus, qui dépend du BIP39, et qui permet de sécuriser tout un portefeuille HD entier. Toutefois, le BIP38 avait également spécifié une manière de sécuriser une clé privée unique à l’aide d’une passphrase. Ce second type de passphrase n’est presque plus utilisé aujourd’hui. Pour plus d'informations sur cette autre passphrase, voir la définition de **[](/dictionnaire/./B.md#BIP38)**.*
 
 ## PATOSHI
 
@@ -2408,14 +2408,14 @@ Fait référence à un motif distinct de nonces et d’horodatages observés dan
 ## PAYJOIN
 
 Structure spécifique de transaction Bitcoin qui permet d'améliorer la confidentialité des utilisateurs lors d'une dépense en collaborant avec le destinataire du paiement. La particularité du Payjoin réside dans sa capacité à générer une transaction qui paraît ordinaire à première vue, mais qui est en réalité un mini Coinjoin entre deux personnes. Pour cela, la structure de la transaction fait intervenir le destinataire du paiement dans les entrées aux côtés de l'expéditeur réel. Le destinataire inclut donc un paiement vers lui-même au milieu de la transaction qui permet elle-même de le payer. Par exemple, si vous achetez une baguette pour `6 000 sats` à l'aide d'un UTXO de `10 000 sats`, et que vous optez pour un Payjoin, votre boulanger ajoutera un UTXO de `15 000 sats` lui appartenant en entrée, qu'il récupèrera en intégralité en sortie, en plus de vos `6 000 sats`. La transaction Payjoin remplit deux objectifs. Tout d'abord, elle vise à induire en erreur un observateur extérieur en créant un leurre dans l'analyse de chaîne sur l'heuristique CIOH (*Common Input Ownership Heuristic*). Habituellement, lorsqu'une transaction sur la blockchain présente plusieurs entrées, on suppose que toutes ces entrées appartiennent vraisemblablement à une même entité. Ainsi, lorsqu'un analyste examine une transaction Payjoin, il est amené à croire que toutes les entrées proviennent d'une même personne. Toutefois, cette perception est erronée, car le destinataire du paiement contribue également aux entrées aux côtés du payeur réel. Ensuite, le Payjoin permet également de tromper un observateur extérieur sur le montant réel du paiement qui a été opéré. En examinant la structure de la transaction, l'analyste pourrait croire que le paiement est équivalent au montant d'une des sorties. En réalité, le montant du paiement ne correspond à aucun des outputs. Il est en fait la différence entre l'UTXO du destinataire en sortie et l'UTXO du destinataire en entrée. En ça, la transaction Payjoin rentre dans le domaine de la stéganographie. Elle permet de cacher le montant réel d’une transaction au sein d’une fausse transaction qui agit comme un leurre.
-![](assets/P/14.png)
+![](/dictionnaire//dictionnaire/assets/P/14.png)
 > *Le Payjoin est également parfois nommé « P2EP (Pay-to-End-Point) », « Stowaway » ou « transaction stéganographique ».*
 
 ## PAYNYM
 
 Identifiant unique lié à un portefeuille Bitcoin qui implémente cette option. Les Paynyms sont disponibles sur Samourai Wallet et sur Sparrow Wallet. À l'origine, ces identifiants sont générés à partir du code de paiement du portefeuille, conformément au BIP47. Ils offrent ainsi la possibilité de se connecter avec un autre utilisateur afin de générer des adresses de réception vierges et uniques, et ce, sans nécessiter d'interaction directe. L'usage des Paynyms a ensuite été élargi pour soutenir diverses autres fonctionnalités de l'écosystème Samourai. Ils sont notamment employés pour permettre des échanges chiffrés sur le protocole de communication Soroban, afin de mettre en œuvre facilement des transactions collaboratives. Les Paynyms peuvent aussi servir à l'authentification sur des systèmes compatibles avec le protocole AUTH47. Chaque Paynym se caractérise par un identifiant unique et est représenté par une illustration de robot.
 
-> *Pour plus d'informations, voir la définition de [**BIP47**](./B.md#bip47).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./B.md#bip47).*
 
 ## PBKDF2
 
@@ -2532,7 +2532,7 @@ Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la m
 
 Traduction anglaise de « Preuve de travail ». 
 
-> *Pour plus d'informations, voir la définition de **[PREUVE DE TRAVAIL](./P.md#preuve-de-travail)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./P.md#preuve-de-travail)**.*
 
 ## PROP (PROPORTIONAL)
 
@@ -2574,7 +2574,7 @@ Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent pre
 
 Condensat ou « top hash » d'un arbre de Merkle, qui représente un résumé de toutes les informations présentes dans l'arbre. Un arbre de Merkle est une structure d'accumulateur cryptographique, parfois également nommée « arbre de hachage ». Dans le cadre de Bitcoin, des arbres de Merkle sont utilisés pour organiser les transactions dans un bloc et pour faciliter la vérification rapide de l'inclusion d'une transaction spécifique. Ainsi, dans les blocs de Bitcoin, la racine de Merkle est obtenue en hachant de manière successive les transactions par paires jusqu'à ce qu'il ne reste qu'un seul hachage (la racine de Merkle). Cette dernière est ensuite incluse dans l'en-tête du bloc correspondant. On retrouve également cette structure dans UTREEXO, une structure permettant de condenser l'UTXO set des nœuds, et dans le MAST Taproot.
 
-> *Pour plus d'informations, voir la définition d'**[ARBRE DE MERKLE](./A.md#arbre-de-merkle)***
+> *Pour plus d'informations, voir la définition d'**[](/dictionnaire/./A.md#arbre-de-merkle)***
 
 ## RBF (REPLACE-BY-FEE)
 
@@ -2590,7 +2590,7 @@ Total des bitcoins récupérés par un mineur lorsqu'il trouve un bloc valide su
 
 Un covenant récursif sur Bitcoin est un type de contrat intelligent qui impose des conditions non seulement sur la transaction actuelle mais aussi sur les transactions futures qui dépensent les sorties de cette transaction. Cela permet de créer des chaînes de transactions où chacune doit respecter certaines règles définies par la première de la chaîne. La récursivité crée une séquence de transactions où chacune hérite des restrictions de sa transaction parent. Cela permettrait d'établir un contrôle complexe et à long terme sur la manière dont les bitcoins peuvent être dépensés, mais cela introduirait également des risques au niveau de la liberté de dépense et de la fongibilité. Pour résumer, un covenant non récursif se limitera uniquement à la transaction qui succède immédiatement à celle qui a établi les règles. Et au contraire, un covenant récursif aura la capacité d'imposer des conditions spécifiques à un bitcoin de manière indéfinie. Les transactions pourront se succéder, mais le bitcoin en question conservera toujours les conditions initiales qui lui sont attachées. De manière plus générale, en informatique, ce que l’on appelle la « récursivité » est la capacité d’une fonction à s'appeler elle-même, ce qui crée une sorte de mise en abyme.
 
-> *Pour plus d'informations, voir la définition de [**COVENANT**](./C.md#covenant).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#covenant).*
 
 ## REDEEMSCRIPT
 
@@ -2624,7 +2624,7 @@ Désigne l'infrastructure globale du système Bitcoin. Le réseau est constitué
 
 Synonyme plus juste de « réorganisation » bien que peu employé.
 
-> *Pour plus d'informations, voir la définition de [**RÉORGANISATION**](./R.md#réorganisation).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./R.md#réorganisation).*
 
 ## RÉUTILISATION D'ADRESSE
 
@@ -2640,7 +2640,7 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 
 
-![](assets/R/10.png)
+![](/dictionnaire//dictionnaire/assets/R/10.png)
 
 
 
@@ -2652,7 +2652,7 @@ Technique consistant à réaliser plusieurs transactions fictives vers soi-mêm
 
 Acronyme de *Research and development in Advanced Communications technologies in Europe Integrity Primitives Evaluation Message Digest 160*, est une fonction de hachage cryptographique qui génère un condensat de 160 bits à partir d'une entrée arbitraire. Elle est utilisée sur Bitcoin pour transformer une clé publique en une adresse de réception. Le processus implique d'abord l'application de la fonction de hachage `SHA256` sur la clé publique, suivie de l'application de `RIPEMD160` sur le résultat. Cette combinaison de deux fonctions de hachage distinctes est connue sous le nom de `HASH160` dans le contexte de Bitcoin. `RIPEMD160` est également utilisé dans les portefeuilles déterministes et hiérarchiques pour calculer des empreintes de clés. On utilise notamment `HASH160` pour calculer l'empreinte d'une clé parent, ensuite incluse dans les métadonnées d'une clé étendue (xpub).
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](./F.md#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./F.md#fonction-de-hachage-cryptographique).*
 
 ## RPC (REMOTE PROCEDURE CALL)
 
@@ -2734,7 +2734,7 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 
 Ensemble d'outils logiciels fournissant les ressources nécessaires aux développeurs pour créer des applications sur une plateforme spécifique. Un SDK inclut des bibliothèques, des guides de développement, des exemples de code ou encore des processus de compilation. Les SDK facilitent et accélèrent le développement en offrant des modules réutilisables. Sur Bitcoin, il existe le BDK (*Bitcoin Dev Kit*) et le LDK (*Lightning Dev Kit*).
 
-> *En anglais, les SDK sont également parfois appelés « devkit ». Pour plus d'informations, voir les définitions de [BDK](./B.md#bdk-bitcoin-dev-kit) et de [LDK](./L.md#ldk-lightning-dev-kit).*
+> *En anglais, les SDK sont également parfois appelés « devkit ». Pour plus d'informations, voir les définitions de [](/dictionnaire/./B.md#bdk-bitcoin-dev-kit) et de [](/dictionnaire/./L.md#ldk-lightning-dev-kit).*
 
 ## SECP256K1
 
@@ -2754,7 +2754,7 @@ Nom
 
 Liste statique de nœuds Bitcoin publics, intégrée directement dans le code source de Bitcoin Core (bitcoin/src/chainparamsseeds.h). Cette liste sert de points de connexion pour les nouveaux nœuds Bitcoin qui rejoignent le réseau, mais elle n'est utilisée que si les DNS seeds ne fournissent pas de réponse dans les 60 secondes suivant leur sollicitation. Dans ce cas, le nouveau nœud Bitcoin se connectera à ces seed nodes pour établir une première connexion au réseau et demander des adresses IP d'autres nœuds. L'objectif final est d'acquérir les informations nécessaires pour effectuer l'IBD et se synchroniser avec la chaîne qui a le plus de travail accumulé. La liste des seed nodes comprend près de 1000 nœuds, identifiés conformément à la norme établie par le BIP155. Ainsi, les seed nodes représentent la troisième méthode de connexion au réseau pour un nœud Bitcoin, après l'éventuelle utilisation du fichier peers.dat, créé par le nœud lui-même, et la sollicitation des DNS seeds.
 
-> *Attention, les seed nodes ne doivent pas être confondus avec les « DNS seeds », qui sont eux la deuxième manière d'établir des connexions. Pour plus d'informations, voir la définition de **[DNS SEEDS](./D.md#dns-seeds)**.*
+> *Attention, les seed nodes ne doivent pas être confondus avec les « DNS seeds », qui sont eux la deuxième manière d'établir des connexions. Pour plus d'informations, voir la définition de **[](/dictionnaire/./D.md#dns-seeds)**.*
 
 ## SEGWIT
 
@@ -2786,19 +2786,19 @@ Stratégie (ou attaque) dans le minage, où un mineur ou un groupe de mineurs co
 
 Sigle pour « Secure Hash Algorithm 256 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 256 bits. Conçue par la *National Security Agency* (NSA) au début des années 2000, elle est devenue une norme fédérale pour le traitement des données sensibles. Dans le protocole Bitcoin, la fonction `SHA256` est omniprésente. Elle est employée pour hacher les entêtes des blocs dans le cadre de la preuve de travail. `SHA256` est également utilisée dans le processus de dérivation d'une adresse de réception à partir d'une clé publique. On l'utilise également pour l'agrégation des transactions et des témoins au sein des arbres de Merkle dans les blocs. On retrouve aussi `SHA256` dans le calcul d'empreinte de clés, le calcul de certaines sommes de contrôle et dans de nombreux autres processus autour de Bitcoin. Lorsqu'elle est appliquée deux fois de suite, on parle d'un `HASH256`. Cette double application est celle utilisée majoritairement sur Bitcoin. Lorsque `SHA256` est utilisé conjointement à la fonction `RIPEMD160`, on parle d'un `HASH160`. Ce double hachage est utilisé pour les empreintes de clés et pour le hachage de clés publiques. La fonction `SHA256` fait partie de la famille des SHA 2.
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](./F.md#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./F.md#fonction-de-hachage-cryptographique).*
 
 ## SHA512
 
 Sigle pour « Secure Hash Algorithm 512 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 512 bits. Elle a été conçue par la *National Security Agency* (NSA) au début des années 2000. Dans le protocole Bitcoin, la fonction `SHA512` est exclusivement utilisée dans le cadre des dérivations de clés enfants. Dans ce processus, elle est utilisée plusieurs fois dans l'algorithme `HMAC`, ainsi que dans la fonction de dérivation de clés `PBKDF2`. La fonction `SHA512` fait partie de la famille des SHA 2, comme `SHA256`. Son fonctionnement est d'ailleurs très similaire à cette dernière.
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](./F.md#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./F.md#fonction-de-hachage-cryptographique).*
 
 ## SHAREDCOIN
 
 Service de mixage de pièces Bitcoin lancé en 2013 par Blockchain.info, mais qui n'est plus en service aujourd'hui. Ce service proposait aux utilisateurs d'améliorer leur confidentialité sur Bitcoin en combinant leurs transactions avec celles d'autres personnes, grâce à une technique de mixage similaire aux coinjoins. SharedCoin apportait une forme de confidentialité sans nécessiter de faire confiance au coordinateur, car les pièces des utilisateurs restaient sous leur contrôle tout au long du processus. Contrairement aux services de mixage centralisés de l'époque, les bitcoins ne pouvaient pas être volés par l'intermédiaire. SharedCoin a par la suite fait face à des problèmes menant à la désanonymisassions de certains de leurs mixages au début de l'été 2014. 
 
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#coinjoin).*
 
 ## SHOR (ALGORITHME)
 
@@ -2905,7 +2905,7 @@ Dans le contexte de Bitcoin, une « sortie » (ou « output » en anglais) au se
 
 
 
-![](assets/S/12.png)
+![](/dictionnaire//dictionnaire/assets/S/12.png)
 
 
 
@@ -2948,7 +2948,7 @@ Catégorie de cryptomonnaie conçue pour maintenir une valeur stable par rapport
 
 Fait référence à un bloc sans enfant (bloc obsolète) : un bloc valide mais exclu de la chaîne principale de Bitcoin.
 
-> *Pour plus d'informations, voir la définition de **[OBSOLÈTE (BLOC)](./O.md#obsolète-bloc)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./O.md#obsolète-bloc)**.*
 
 ## STAMPS
 
@@ -2964,7 +2964,7 @@ Forme spécifique de transaction Bitcoin visant à accroître la confidentialit�
 - L'émetteur, qui réalise le paiement effectif ;
 - Le collaborateur, qui met des bitcoins à disposition afin d'améliorer l'ensemble d'anonymat de la transaction, tout en récupérant intégralement ses fonds à la fin ;
 - Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.
-![](assets/S/3.png)
+![](/dictionnaire//dictionnaire/assets/S/3.png)
 La structure Stonewall x2 ajoute énormément d'entropie à la transaction et vient brouiller les pistes de l'analyse de chaîne. Vue de l'extérieur, une telle transaction peut être interprétée comme un petit Coinjoin entre deux personnes. Mais en réalité, il s'agit d'un paiement. Cette méthode génère donc des incertitudes dans l'analyse de chaîne, voire oriente vers de fausses pistes. Même si l'observateur extérieur parvient à identifier le paterne de la transaction Stonewall x2, il ne disposera pas de toutes les informations. Il ne pourra pas déterminer lequel des deux UTXO de mêmes montants correspond au paiement. De plus, il ne sera pas en mesure de savoir qui a effectué le paiement. Enfin, il ne pourra pas déterminer si les deux UTXO en entrée proviennent de deux personnes différentes ou s'ils appartiennent à une seule personne qui les a fusionnés. Ce dernier point est dû au fait que les transactions Stonewall classiques suivent exactement le même paterne que les transactions Stonewall x2. Vu de l'extérieur et sans informations supplémentaires sur le contexte, il est impossible de différencier une transaction Stonewall d'une transaction Stonewall x2. Or, les premières ne sont pas des transactions collaboratives, alors que les secondes le sont. Cela permet d'ajouter encore plus de doutes sur la dépense.
 
 ## STRATUM
@@ -2992,7 +2992,7 @@ Une « surcouche » (ou « layer » en anglais) est un protocole ou un réseau c
 ## SWEEP TRANSACTION
 
 
-![](assets/S/6.png)
+![](/dictionnaire//dictionnaire/assets/S/6.png)
 
 > *En français, on pourrait traduire « sweep transaction » par « transaction de balayage ».*
 
@@ -3000,14 +3000,14 @@ Une « surcouche » (ou « layer » en anglais) est un protocole ou un réseau c
 
 Traduction française de « *Initial Block Download* ». Fait référence au processus par lequel un nœud télécharge et vérifie la blockchain depuis le bloc Genesis, et se synchronise aux autres nœuds du réseau Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**INITIAL BLOCK DOWNLOAD (IBD)**](./I.md#initial-block-download-ibd).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./I.md#initial-block-download-ibd).*
 
 
 ## TAPROOT
 
 Mise à jour majeure du protocole Bitcoin, adoptée par le biais d'un soft fork en novembre 2021. Cette mise à jour apporte des améliorations significatives en termes de confidentialité, d'efficacité et de flexibilité. Elle permet l'utilisation du protocole de Schnorr et l'utilisation d'un script qui peut être révélé lors de la dépense. Le protocole de Schnorr, intégré à cette mise à jour, est un algorithme de signature numérique établi sur la cryptographie sur les courbes elliptiques (ECC), comme ECDSA. Dans le contexte de Bitcoin, Schnorr est utilisé pour générer une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Comme ECDSA sur Bitcoin, Schnorr utilise la courbe elliptique `secp256k1`, définie par l'équation $y^2 = x^3 + 7$. Les bitcoins bloqués avec Taproot peuvent être dépensés soit en satisfaisant l'un des scripts, soit en fournissant une signature valide correspondant à la clé publique, ce qui permet de garder les scripts privés. On y utilise un MAST pour permettre l'utilisation de plusieurs scripts. N'importe lequel peut-être utiliser pour dépenser les bitcoins associés. Cela permet des fonctionnalités plus complexes et des contrats intelligents plus sophistiqués.
 
-> *Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](./S.md#schnorr-protocole).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#schnorr-protocole).*
 
 ## TAPROOT ASSETS PROTOCOL
 
@@ -3021,19 +3021,19 @@ Mise à jour qui a pour objet de modifier certains opcodes du langage de script 
 
 Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'est avéré nécessaire de revisiter le langage de script. C'est là l'objet de Tapscript qui désactive ou modifie certains opcodes, et vient en ajouter de nouveaux. 
 
-> *Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](./S.md#schnorr-protocole) et [**TAPROOT**](./T.md#taproot).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./S.md#schnorr-protocole) et [](/dictionnaire/./T.md#taproot).*
 
 ## TARO
 
 Ancien nom du protocole Taproot Assets Protocol. 
 
-> *Pour plus d'informations, voir la définition de [**TAPROOT ASSETS PROTOCOL**](./T.md#taproot-assets-protocol).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./T.md#taproot-assets-protocol).*
 
 ## TAUX DE HACHAGE
 
 Traduction française de « *Hashrate* ».
 
-> *Pour plus d'informations, voir la définition de **[HASHRATE](./H.md#hashrate)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./H.md#hashrate)**.*
 
 ## TCP (TRANSMISSION CONTROL PROTOCOL)
 
@@ -3043,7 +3043,7 @@ Protocole de communication fondamental dans les réseaux, conçu pour assurer un
 
 Fait référence à une composante des transactions Bitcoin qui a été déplacée avec le soft fork SegWit afin de résoudre le problème de la malléabilité des transactions. Le témoin contient les signatures et les clés publiques nécessaires pour déverrouiller les bitcoins dépensés dans une transaction. Dans les transactions Legacy, le témoin représentait la somme des `ScriptSig` de tous les inputs. Dans les transactions SegWit, le témoin représente la somme des `ScriptWitness` de chaque input, et cette partie de la transaction est dorénavant déplacée dans un arbre de Merkle séparé au sein du bloc. Avant SegWit, les signatures pouvaient être légèrement modifiées sans être invalidées avant qu'une transaction ne soit confirmée, ce qui changeait l'identifiant de la transaction. Cela rendait difficile la construction de divers protocoles, car une transaction non confirmée pouvait voir son identifiant changer. En séparant les témoins, SegWit rend les transactions non malléables, car tout changement dans les signatures n'affecte plus l'identifiant de la transaction (TXID), mais uniquement l'identifiant du témoin (WTXID). En plus de résoudre le problème de la malléabilité, cette séparation permet d'augmenter la capacité de chaque bloc.
 
-> *En anglais, « témoin » se traduit par « witness ». Pour plus d'informations, voir la définition de **[SEGWIT](./S.md#segwit)**.*
+> *En anglais, « témoin » se traduit par « witness ». Pour plus d'informations, voir la définition de **[](/dictionnaire/./S.md#segwit)**.*
 
 ## TESTNET
 
@@ -3060,7 +3060,7 @@ Primitive de contrat intelligent qui permet de définir une condition temporelle
 - Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
 Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
 
-> *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](./O.md#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](./O.md#op_checksequenceverify-0xb2), [**NLOCKTIME**](./N.md#nlocktime) et [**NSEQUENCE**](./N.md#nsequence).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./O.md#op_checklocktimeverify-0xb1), [](/dictionnaire/./O.md#op_checksequenceverify-0xb2), [](/dictionnaire/./N.md#nlocktime) et [](/dictionnaire/./N.md#nsequence).*
 
 ## TOR (THE ONION ROUTER)
 
@@ -3069,12 +3069,12 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 ## TPRV
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet.
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## TPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## TRANSACTION (TX)
 
@@ -3096,19 +3096,19 @@ Dans le contexte d'un canal bidirectionnel au sein de Lightning, la transaction 
 
 Concept de hub de paiement anonyme compatible avec Bitcoin proposé en 2016 par Ethan Heilman, Leen AlShenibr, Foteini Baldimtsi, Alessandra Scafuro et Sharon Goldberg. TumbleBit est un système de mixage de bitcoins qui ne requiert pas la confiance en un intermédiaire. Il permet à des utilisateurs de réaliser des paiements rapides, anonymes et hors-chaîne via un coordinateur appelé le Tumbler. TumbleBit garantit l'anonymat en s'assurant que même le Tumbler ne peut pas lier le paiement d'un payeur à son bénéficiaire. Le protocole TumbleBit assure que le Tumbler ne peut ni voler des bitcoins, ni imprimer de faux bitcoins en s'émettant des paiements à lui-même. L'anonymat offert par TumbleBit est comparable à celui d'un système eCash de Chaum. Cependant, ce concept n'a jamais été largement adopté, les techniques de confidentialité telles que le Chaumian Coinjoin lui étant préférées.
 
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#coinjoin).*
 
 ## TWO-WAY PEG (2WP)
 
 Traduction anglaise d'ancrage bilatéral.
 
-> *Pour plus d'informations, voir la définition d'[**ANCRAGE BILATÉRAL**](./A.md#ancrage-bilatéral).*
+> *Pour plus d'informations, voir la définition d'[](/dictionnaire/./A.md#ancrage-bilatéral).*
 
 ## TXID (TRANSACTION IDENTIFIER)
 
 Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité.
 
-> *Pour plus d'informations, voir la définition de [**WTXID**](./W.md#wtxid).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./W.md#wtxid).*
 
 
 ## UASF (USER-ACTIVATED SOFT FORK)
@@ -3119,17 +3119,17 @@ Qualifie un soft fork dans Bitcoin lorsqu'il est initié et appliqué par les ut
 
 Protocole de communication utilisé sur Internet qui permet l'envoi de messages (datagrammes) entre ordinateurs sans établir de connexion préalable (contrairement à TCP). UDP est une méthode de transfert rapide mais sans garantie de livraison, d'ordre des paquets, ou de gestion d'erreur. On l'utilise plutôt pour des applications nécessitant une diffusion rapide et en temps réel. Ce protocole avait été utilisé au sein du projet FIBRE pour accélérer la propagation de blocs Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)**](./F.md#fibre-fast-internet-bitcoin-relay-engine).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./F.md#fibre-fast-internet-bitcoin-relay-engine).*
 
 ## UPRV
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## UPUB
 
 Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## URI (UNIFORM RESOURCE IDENTIFIER)
 
@@ -3155,7 +3155,7 @@ Sigle de *Unspent Transaction Output*. Un UTXO est une sortie de transaction qui
 
 Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un moment donné. Autrement dit, c'est une grosse liste de tous les différents morceaux de bitcoins qui attendent d'être dépensés. Si l'on additionne les montants de tous les UTXOs de l'UTXO set, cela nous donne la masse monétaire totale de bitcoins en circulation. Chaque nœud du réseau Bitcoin conserve son propre UTXO set en temps réel. Il l'actualise au fur et à mesure de la confirmation de nouveaux blocs valides, avec les transactions qu'ils incluent, qui consomment certains UTXOs de l'UTXO set, et qui en créent de nouveaux en contrepartie. Cet UTXO set est conservé par chaque nœud afin de pouvoir vérifier rapidement si les UTXOs dépensés dans les transactions sont bien légitimes. Cela leur permet de détecter et de rejeter les tentatives de doubles dépenses. L'UTXO set est souvent au cœur d'inquiétudes sur la décentralisation de Bitcoin, car sa taille augmente naturellement très rapidement. Puisqu'il faut en conserver une partie en RAM pour pouvoir procéder à la vérification des transactions en temps raisonnable, il est possible que l'UTXO set rende progressivement l'opération d'un nœud complet trop couteuse. L'UTXO set a également un fort impact sur l'IBD (Initial Block Download). Au plus on peut mettre une grande part de l'UTXO en RAM, au plus l'IBD est rapide. Sur Bitcoin Core, l'UTXO set est stocké dans le dossier nommé « chainstate ».
 
-> *En français, on pourrait traduire « UTXO set » par « ensemble d'UTXO ». Pour plus d'informations, voir la définition d'[**UTXO**](.U.md#utxo).
+> *En français, on pourrait traduire « UTXO set » par « ensemble d'UTXO ». Pour plus d'informations, voir la définition d'[](/dictionnaire/.U.md#utxo).
 
 
 ## VANITY (ADDRESS)
@@ -3180,23 +3180,23 @@ Premier logiciel open source en ligne de commande utilisé pour créer des adres
 ## VPRV
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## VPUB
 
 Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 
 ## WABISABI
 
 Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi.
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#coinjoin).*
 
 ## WALLET
 
 Traduction anglaise de « portefeuille ».
-> *Pour plus d'informations, voir la définition de [**PORTEFEUILLE**](./P.md#portefeuille).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./P.md#portefeuille).*
 
 ## WALLET.DAT
 
@@ -3228,7 +3228,7 @@ Un watch-only wallet (ou « portefeuille en lecture seule ») est un type de log
 
 Implémentation du protocole de coinjoins chaumiens ZeroLink, développée par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
 
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin) et de [**ZEROLINK**](./Z.md#zerolink).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#coinjoin) et de [](/dictionnaire/./Z.md#zerolink).*
 
 ## WHIRLPOOL STAT TOOL
 
@@ -3244,7 +3244,7 @@ Script qui spécifie les conditions sous lesquelles les bitcoins peuvent être d
 
 Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction.
 
-> *Pour plus d'informations, voir la définition de [**TXID**](./T.md#txid-transaction-identifier) et [**SEGWIT**](./S.md#segwit).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./T.md#txid-transaction-identifier) et [](/dictionnaire/./S.md#segwit).*
 
 
 ## XOR
@@ -3273,23 +3273,23 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 ## XPRV
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## XPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 
 ## YPRV
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## YPUB
 
 Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin. 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 
 ## ZEROCONF
@@ -3300,7 +3300,7 @@ Pratique risquée consistant à considérer une transaction Bitcoin comme défin
 
 Protocole de Chaumian Coinjoin qui vise à briser toutes les liaisons entre des ensembles de pièces séparées à travers des techniques avancées de mixage. Le protocole ZeroLink se distingue par sa capacité à protéger l’anonymat des utilisateurs contre diverses formes d'analyse de chaîne au niveau de la transaction et du réseau. ZeroLink introduit un cadre pour les portefeuilles de coinjoin, avec l'utilisation de comptes pré-mix et post-mix ségrégués, ainsi qu’une technique de mixage propre : le Chaumian Coinjoin. À ce jour, la seule implémentation de coinjoins ZeroLink est Whirlpool, disponible sur Samourai Wallet et Sparrow Wallet.
 
-> *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
+> *Pour plus d'informations, voir la définition de **[](/dictionnaire/./C.md#chaumian-coinjoin)**.*
 
 ## ZEROSYNC
 
@@ -3316,12 +3316,12 @@ Méthode cryptographique permettant à une partie (le prouveur) de prouver à un
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 ## ZPUB
 
 Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> *Pour plus d'informations, voir la définition de [](/dictionnaire/./C.md#clé-étendue).*
 
 

@@ -2,7 +2,7 @@
 
 
 
-![](assets/S/12.png)
+![](/dictionnaire//dictionnaire/assets/S/12.png)
 
 
 

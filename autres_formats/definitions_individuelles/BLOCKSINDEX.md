@@ -1,4 +1,4 @@
 ## BLOCKS/INDEX/
 
-Voir la définition de [**BLOCKS INDEX**](./B.md#blocks-index).
+Voir la définition de [](/dictionnaire/./B.md#blocks-index).
 
