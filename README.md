@@ -19,11 +19,6 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
 
 Une version PDF sera également disponible sur https://www.pandul.fr/. La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
-Sur ce dépôt, vous avez 3 formats différents du dictionnaire qui disposent tous des mêmes définitions. Ce sont des copies avec des formats différents pour que chacun puisse trouver ce qu'il préfère en fonction de s'il souhaite intégrer le dictionnaire à un site web ou bien tout simplement le télécharger pour un usage personnel. Les 3 formats sont : 
-- Un fichier markdown avec l'intégralité des définitions dans le même fichier ;
-- Un dossier qui inclus un fichier markdown indépendant par définition ;
-- Et le dossier de travail par défaut dictionnaire dans lequel les définitions sont réunies dans des fichiers mardown par lettre.
-
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
 - [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
@@ -42,7 +37,7 @@ Pour contribuer, voici la marche à suivre :
 3. Rédigez vos suggestions de modification directement sur votre branche ;
 4. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
 
-Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
+Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
 - [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
 - [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
