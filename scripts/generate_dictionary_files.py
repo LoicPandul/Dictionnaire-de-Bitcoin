@@ -8,13 +8,14 @@ def nettoyer_nom_fichier(nom):
     nom = nom.replace('?', '0')  # Remplace '?' par '0'
     return nom
 
-def ajuster_liens(contenu, type_document):
+def ajuster_liens_et_images(contenu, type_document):
+    # Ajustement des liens
     if type_document == 'complet':
-        # Pour dictionnaire_complet, conserver uniquement le texte et l'ancre
         contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
     elif type_document == 'individuel':
-        # Pour definitions_individuelles, ajuster directement sans le formatage markdown intermédiaire
         contenu = re.sub(r'\[([^\]]+)\]\(\.\/(.*?)\.md#(.*?)\)', r'[\1](/dictionnaire/\2.md#\3)', contenu)
+    # Ajustement des chemins des images
+    contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](/dictionnaire/\1)', contenu)
     return contenu
 
 # Chemin vers le dossier contenant les fichiers md initiaux
@@ -35,7 +36,7 @@ with open(chemin_dictionnaire_complet, 'w', encoding='utf-8') as fichier_complet
         if os.path.isfile(chemin_complet):
             with open(chemin_complet, 'r', encoding='utf-8') as fichier:
                 contenu = fichier.read()
-                contenu = ajuster_liens(contenu, 'complet')
+                contenu = ajuster_liens_et_images(contenu, 'complet')
                 fichier_complet.write(contenu + '\n\n')
 
 # Extraction et création des fichiers de définitions individuelles
@@ -44,8 +45,8 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
     if os.path.isfile(chemin_complet):
         with open(chemin_complet, 'r', encoding='utf-8') as fichier:
             contenu = fichier.read()
-            contenu = ajuster_liens(contenu, 'individuel')
-            definitions = contenu.split('## ')[1:] 
+            contenu = ajuster_liens_et_images(contenu, 'individuel')
+            definitions = contenu.split('## ')[1:]
             for defi in definitions:
                 titre = defi.split('\n', 1)[0].strip()
                 titre_nettoye = nettoyer_nom_fichier(titre)
