@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 631 `**
+**Nombre total de définitions : ` 635 `**
 
 ### A
 
@@ -177,6 +177,7 @@
 - [COIN CONTROL](./dictionnaire/C.md#coin-control)
 - [COINJOIN](./dictionnaire/C.md#coinjoin)
 - [COINS/](./dictionnaire/C.md#coins)
+- [COINSHUFFLE](./dictionnaire/C.md#coinshuffle)
 - [COLD WALLET](./dictionnaire/C.md#cold-wallet)
 - [COMMERÇANT](./dictionnaire/C.md#commerçant)
 - [COMMIT](./dictionnaire/C.md#commit)
@@ -320,6 +321,7 @@
 - [JAVASCRIPT (NODE.JS)](./dictionnaire/J.md#javascript-nodejs)
 - [JBOK (PORTEFEUILLE)](./dictionnaire/J.md#jbok-portefeuille)
 - [JOINBOT](./dictionnaire/J.md#joinbot)
+- [JOINMARKET](./dictionnaire/J.md#joinmarket)
 
 ### K
 
@@ -590,6 +592,7 @@
 - [SETTINGS.JSON](./dictionnaire/S.md#settingsjson)
 - [SHA256](./dictionnaire/S.md#sha256)
 - [SHA512](./dictionnaire/S.md#sha512)
+- [SHAREDCOIN](./dictionnaire/S.md#sharedcoin)
 - [SHOR (ALGORITHME)](./dictionnaire/S.md#shor-algorithme)
 - [SIDECHAIN](./dictionnaire/S.md#sidechain)
 - [SIGHASH_ALL (0X01)](./dictionnaire/S.md#sighash_all-0x01)
@@ -649,6 +652,7 @@
 - [TRANSACTION COINBASE](./dictionnaire/T.md#transaction-coinbase)
 - [TRANSACTION COLLABORATIVE](./dictionnaire/T.md#transaction-collaborative)
 - [TRANSACTION D'ENGAGEMENT](./dictionnaire/T.md#transaction-dengagement)
+- [TUMBLEBIT](./dictionnaire/T.md#tumblebit)
 - [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
 - [TXID (TRANSACTION IDENTIFIER)](./dictionnaire/T.md#txid-transaction-identifier)
 
