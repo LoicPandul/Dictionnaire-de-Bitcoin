@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 671 `**
+**Nombre total de définitions : ` 684 `**
 
 ### A
 
@@ -329,11 +329,14 @@
 
 ### J
 
+- [JAMMING ATTACK](./dictionnaire/J.md#jamming-attack)
 - [JAVA](./dictionnaire/J.md#java)
 - [JAVASCRIPT (NODE.JS)](./dictionnaire/J.md#javascript-nodejs)
 - [JBOK (PORTEFEUILLE)](./dictionnaire/J.md#jbok-portefeuille)
+- [JIT CHANNEL (JUST-IN-TIME)](./dictionnaire/J.md#jit-channel-just-in-time)
 - [JOINBOT](./dictionnaire/J.md#joinbot)
 - [JOINMARKET](./dictionnaire/J.md#joinmarket)
+- [JOINPOOLS](./dictionnaire/J.md#joinpools)
 
 ### K
 
@@ -348,6 +351,7 @@
 - [LDB (.LDB)](./dictionnaire/L.md#ldb-ldb)
 - [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
 - [LEVELDB](./dictionnaire/L.md#leveldb)
+- [LIBBITCOIN](./dictionnaire/L.md#libbitcoin)
 - [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING LABS](./dictionnaire/L.md#lightning-labs)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
@@ -396,6 +400,7 @@
 - [M-OF-N](./dictionnaire/M.md#m-of-n)
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
 - [MULTIPATH PAYMENTS (MPP)](./dictionnaire/M.md#multipath-payments-mpp)
+- [MUSIG2](./dictionnaire/M.md#musig2)
 
 ### N
 
@@ -419,6 +424,7 @@
 - [OBSOLÈTE (BLOC)](./dictionnaire/O.md#obsolète-bloc)
 - [OCTET (BYTE)](./dictionnaire/O.md#octet-byte)
 - [OFFCHAIN](./dictionnaire/O.md#offchain)
+- [OFFERS (LIGHTNING)](./dictionnaire/O.md#offers-lightning)
 - [ONCHAIN](./dictionnaire/O.md#onchain)
 - [ONION_PRIVATE_KEY](./dictionnaire/O.md#onion_private_key)
 - [ONION_V3_PRIVATE_KEY](./dictionnaire/O.md#onion_v3_private_key)
@@ -447,6 +453,7 @@
 - [OP_CHECKSEQUENCEVERIFY (`0XB2`)](./dictionnaire/O.md#op_checksequenceverify-0xb2)
 - [OP_CHECKSIG (`0XAC`)](./dictionnaire/O.md#op_checksig-0xac)
 - [OP_CHECKSIGADD (`0XBA`)](./dictionnaire/O.md#op_checksigadd-0xba)
+- [OP_CHECKSIGFROMSTACK](./dictionnaire/O.md#op_checksigfromstack)
 - [OP_CHECKSIGVERIFY (`0XAD`)](./dictionnaire/O.md#op_checksigverify-0xad)
 - [OP_CHECKTEMPLATEVERIFY](./dictionnaire/O.md#op_checktemplateverify)
 - [OP_CODESEPARATOR (`0XAB`)](./dictionnaire/O.md#op_codeseparator-0xab)
@@ -496,6 +503,7 @@
 - [OP_TOALTSTACK (`0X6B`)](./dictionnaire/O.md#op_toaltstack-0x6b)
 - [OP_TRUE (`0X51`)](./dictionnaire/O.md#op_true-0x51)
 - [OP_TUCK (`0X7D`)](./dictionnaire/O.md#op_tuck-0x7d)
+- [OP_TXHASH](./dictionnaire/O.md#op_txhash)
 - [OP_VAULT](./dictionnaire/O.md#op_vault)
 - [OP_VER (`0X62`)](./dictionnaire/O.md#op_ver-0x62)
 - [OP_VERIFY (`0X69`)](./dictionnaire/O.md#op_verify-0x69)
@@ -506,6 +514,7 @@
 - [ORPHELIN (BLOC)](./dictionnaire/O.md#orphelin-bloc)
 - [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
 - [OUTPUT](./dictionnaire/O.md#output)
+- [OUTPUT LINKING](./dictionnaire/O.md#output-linking)
 
 ### P
 
@@ -536,6 +545,8 @@
 - [PÉRIMÉ (BLOC)](./dictionnaire/P.md#périmé-bloc)
 - [PÉRIODE DE MATURITÉ](./dictionnaire/P.md#période-de-maturité)
 - [PETIT-BOUTISTE](./dictionnaire/P.md#petit-boutiste)
+- [PHOENIX](./dictionnaire/P.md#phoenix)
+- [PHOENIXD](./dictionnaire/P.md#phoenixd)
 - [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](./dictionnaire/P.md#phrase-de-récupération-mnémonique)
 - [PILE (STACK)](./dictionnaire/P.md#pile-stack)
 - [POLICY (MINISCRIPT)](./dictionnaire/P.md#policy-miniscript)
@@ -577,6 +588,7 @@
 - [RÈGLES DE CONSENSUS](./dictionnaire/R.md#règles-de-consensus)
 - [RÈGLES DE STANDARDISATION](./dictionnaire/R.md#règles-de-standardisation)
 - [REGTEST](./dictionnaire/R.md#regtest)
+- [RENDEZ-VOUS ROUTING](./dictionnaire/R.md#rendez-vous-routing)
 - [RÉORGANISATION](./dictionnaire/R.md#réorganisation)
 - [RÉSEAU BITCOIN](./dictionnaire/R.md#réseau-bitcoin)
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
@@ -634,6 +646,7 @@
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
+- [SILENT PAYMENTS](./dictionnaire/S.md#silent-payments)
 - [SIMPLIFIED PAYMENT VERIFICATION (SPV)](./dictionnaire/S.md#simplified-payment-verification-spv)
 - [SLIP (SATOSHI LABS IMPROVEMENT PROPOSALS)](./dictionnaire/S.md#slip-satoshi-labs-improvement-proposals)
 - [SMPPS (SHARED MAXIMUM PAY PER SHARE)](./dictionnaire/S.md#smpps-shared-maximum-pay-per-share)
