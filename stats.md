@@ -31,13 +31,13 @@
 26. **Q**: 1
 
 ## Termes les plus fréquents
-1. **bitcoin**: 893
-2. **transaction**: 742
+1. **bitcoin**: 899
+2. **transaction**: 748
 3. **bloc**: 465
 4. **script**: 248
 5. **information**: 214
 6. **mineur**: 203
-7. **adresse**: 199
+7. **adresse**: 201
 8. **signature**: 189
 9. **réseau**: 189
 10. **protocole**: 180

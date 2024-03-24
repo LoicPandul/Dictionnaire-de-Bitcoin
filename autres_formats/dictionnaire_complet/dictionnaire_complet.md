@@ -825,8 +825,7 @@ Dans le cadre du Lightning Network, un canal de paiement est une connexion bidir
 
 ## CAPACITÉ DE CANAL LIGHTNING
 
-
-
+Quantité de bitcoins bloqués sur une adresse multisignatures qui représente un canal de paiement sur le Lightning Network. La capacité d'un canal est donc la quantité maximale de sats qui peut être transmise via ce canal spécifique. Elle est définie au moment de la création du canal par la somme des fonds qu'une partie engage dans le canal. L'« *inbound capacity* », ou « capacité entrante », désigne la quantité maximale de bitcoins qu'un nœud peut recevoir via un canal. L'« *outbound capacity* », ou « capacité sortante » représente la quantité maximale de bitcoins qu'un nœud peut envoyer à travers un canal spécifique.
 
 ## CASHU
 
@@ -842,6 +841,7 @@ Transaction spécifique au sein d'un DLC qui permet le règlement final entre le
 
 ## CHANNEL FACTORIES
 
+Mécanisme avancé en cours de travail sur Lightning, permettant la création et la gestion de plusieurs canaux de paiement à partir d'un seul UTXO. Les channel factories utilisent des adresses multisig `n-of-n` pour qu'un groupe d'utilisateurs puisse détenir collectivement un seul UTXO. De là, ils peuvent ouvrir et fermer des canaux de paiement entre eux sans transactions supplémentaires on-chain, sauf lorsqu'ils souhaitent retirer leurs fonds de la factory. Cette méthode permettrait de réduire considérablement les coûts et l'espace occupé sur Bitcoin pour des transactions Lightning. En pratique, cela signifie que des opérations qui nécessiteraient normalement des transactions on-chain pour chaque ouverture ou fermeture de canal peuvent être effectuées hors chaîne, avec la sécurité garantie par la capacité de publier les transactions non-publiées si nécessaire. Pour reprendre les mots de David A. Harding, les channel factories peuvent être décrites comme des canaux Lightning utilisés pour générer d'autres canaux Lightning.
 
 ## CHAINSTATE/
 
@@ -975,7 +975,7 @@ Ce mécanisme augmente la confidentialité des transactions sans nécessiter de 
 
 ## COINJUMBLE
 
-
+Logiciel développé par Chris Belcher et lancée en août 2014 conçu pour faciliter l'utilisation de coinjoins avec une GUI. À la différence d'autres implémentations de coinjoins de l'époque nécessitant que les participants souhaitent effectuer un coinjoin simultanément, CoinJumble permettait de partager les parties de transaction de manière asynchrone. Les utilisateurs pouvaient communiquer via des canaux de communications externes pour échanger ces parties de transaction encodées. Aujourd'hui, CoinJumble n'est plus utilisé.
 
 ## COINMUX
 
@@ -1599,6 +1599,12 @@ L'horodatage, ou « timestamp » en anglais, est un mécanisme qui consiste à a
 ## I2P
 
 
+
+## INBOUND CAPACITY
+
+Désigne la quantité maximale de bitcoins qu'un nœud peut recevoir à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud pair a engagés dans le canal lors de son ouverture, ou que l'on a envoyé lors d'un paiement Lightning sortant.
+
+> *En français, on peut le traduire par « capacité entrante ».*
 
 ## INDEXES/TXINDEX/
 
@@ -2420,6 +2426,12 @@ Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un n�
 Traduction française du terme « *exclusive or* » (XOR).
 
 > *Pour plus d'informations, voir la définition du terme [**XOR**](#xor).***
+
+## OUTBOUND CAPACITY
+
+Désigne la quantité maximale de bitcoins qu'un nœud peut envoyer à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud a engagés dans le canal lors de son ouverture, ou qu'il a reçus lors d'un paiement Lightning.
+
+> *En français, on peut le traduire par « capacité sortante ».*
 
 ## OUTPUT
 

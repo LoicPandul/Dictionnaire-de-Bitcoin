@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 684 `**
+**Nombre total de définitions : ` 686 `**
 
 ### A
 
@@ -318,6 +318,7 @@
 ### I
 
 - [I2P](./dictionnaire/I.md#i2p)
+- [INBOUND CAPACITY](./dictionnaire/I.md#inbound-capacity)
 - [INDEXES/TXINDEX/](./dictionnaire/I.md#indexestxindex)
 - [INITIAL BLOCK DOWNLOAD (IBD)](./dictionnaire/I.md#initial-block-download-ibd)
 - [INDEX (NUMÉRO DE CLÉ)](./dictionnaire/I.md#index-numéro-de-clé)
@@ -513,6 +514,7 @@
 - [ORDINALS](./dictionnaire/O.md#ordinals)
 - [ORPHELIN (BLOC)](./dictionnaire/O.md#orphelin-bloc)
 - [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
+- [OUTBOUND CAPACITY](./dictionnaire/O.md#outbound-capacity)
 - [OUTPUT](./dictionnaire/O.md#output)
 - [OUTPUT LINKING](./dictionnaire/O.md#output-linking)
 
