@@ -37,6 +37,11 @@ Règles adoptées individuellement par chaque nœud Bitcoin, en plus des règles
 ## REGTEST
 
 
+## RENDEZ-VOUS ROUTING
+
+
+
+> *Ces techniques sont parfois également appelées « hidden destinations », « blinded paths », « Route blinding » ou encore « routage aveugle » en français.*
 
 ## RÉORGANISATION
 
