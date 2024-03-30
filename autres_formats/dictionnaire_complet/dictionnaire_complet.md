@@ -874,15 +874,23 @@ Transaction spécifique au sein d'un DLC qui permet le règlement final entre le
 
 > *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](#dlc-discreet-log-contract).*
 
-## CHANNEL FACTORIES
+## CHAINE EXTERNE
 
-Mécanisme avancé en cours de travail sur Lightning, permettant la création et la gestion de plusieurs canaux de paiement à partir d'un seul UTXO. Les channel factories utilisent des adresses multisig `n-of-n` pour qu'un groupe d'utilisateurs puisse détenir collectivement un seul UTXO. De là, ils peuvent ouvrir et fermer des canaux de paiement entre eux sans transactions supplémentaires on-chain, sauf lorsqu'ils souhaitent retirer leurs fonds de la factory. Cette méthode permettrait de réduire considérablement les coûts et l'espace occupé sur Bitcoin pour des transactions Lightning. En pratique, cela signifie que des opérations qui nécessiteraient normalement des transactions on-chain pour chaque ouverture ou fermeture de canal peuvent être effectuées hors chaîne, avec la sécurité garantie par la capacité de publier les transactions non-publiées si nécessaire. Pour reprendre les mots de David A. Harding, les channel factories peuvent être décrites comme des canaux Lightning utilisés pour générer d'autres canaux Lightning.
+Portefeuille HD profondeur 4
+
+## CHAINE INTERNE
+
+Portefeuille HD profondeur 4
 
 ## CHAINSTATE/
 
 Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. C'est donc en réalité un synonyme d'« UTXO set ». 
 
 > *Pour plus d'informations, voir la définition de [**UTXO SET**](#utxo-set).*
+
+## CHANNEL FACTORIES
+
+Mécanisme avancé en cours de travail sur Lightning, permettant la création et la gestion de plusieurs canaux de paiement à partir d'un seul UTXO. Les channel factories utilisent des adresses multisig `n-of-n` pour qu'un groupe d'utilisateurs puisse détenir collectivement un seul UTXO. De là, ils peuvent ouvrir et fermer des canaux de paiement entre eux sans transactions supplémentaires on-chain, sauf lorsqu'ils souhaitent retirer leurs fonds de la factory. Cette méthode permettrait de réduire considérablement les coûts et l'espace occupé sur Bitcoin pour des transactions Lightning. En pratique, cela signifie que des opérations qui nécessiteraient normalement des transactions on-chain pour chaque ouverture ou fermeture de canal peuvent être effectuées hors chaîne, avec la sécurité garantie par la capacité de publier les transactions non-publiées si nécessaire. Pour reprendre les mots de David A. Harding, les channel factories peuvent être décrites comme des canaux Lightning utilisés pour générer d'autres canaux Lightning.
 
 ## CHARGE UTILE (PAYLOAD)
 
@@ -1056,6 +1064,10 @@ Protocole introduit dans Bitcoin Core en 2016 via le BIP152 qui propose une mét
 
 Dans le contexte de Bitcoin, fait référence à la capacité d'une mise à jour des règles du protocole à maintenir la compatibilité avec les versions antérieures. Cela signifie que les modifications sont conçues de manière à ce que les anciens nœuds (les nœuds exécutant des versions antérieures au changement de règles) puissent toujours interagir avec le réseau et suivre la chaîne avec le plus de preuve travail accumulée. Il faut donc que les anciens nœuds ne rejettent ni les nouveaux blocs, ni les nouvelles transactions. La compatibilité rétrospective permet de réduire fortement la probabilité qu'une mise à jour fragmente le réseau, évitant ainsi la division du réseau en sous-groupes sur des chaînes différentes. Pour assurer une compatibilité avec les versions antérieures du protocole, une mise à jour doit rendre les règles existantes plus strictes ou en introduire de nouvelles. C'est ce principe qui définit un « soft fork ». À l'inverse, si une mise à jour assouplit les règles existantes ou en élimine certaines, alors elle ne sera pas rétrocompatible. Ce sera donc un « hard fork ».
 
+## COMPTE
+
+Portefeuille HD profondeur 3
+
 ## CONCATÉNATION
 
 La concaténation, dans le contexte de la cryptographie et des systèmes informatiques, désigne le processus d'assemblage de deux opérandes, en les mettant bout à bout, formant ainsi une nouvelle chaîne de caractères ou de données. Cette opération se note généralement avec un symbole de deux barres verticales $\Vert$, ou avec le symbôle $\circ$. Par exemple, la concaténation de $45$ avec $87$ sera égale à $4587$. Nous noterons : $45 \Vert 87 = 4587$. On a mis bout à bout les deux opérandes.
@@ -1201,6 +1213,21 @@ Fichier contenant l'historique des événements de Bitcoin Core. Il contient des
 Structure de données centrale utilisée dans Git où sont stockées les informations de versionnage d'un projet. Un dépôt contient l'historique complet de toutes les modifications, les branches et les tags. Chaque dépôt est une collection indépendante de fichiers et de dossiers, accompagnée d'un historique des commits, permettant la collaboration et le suivi des changements au fil du temps. Par exemple, le dépôt de Bitcoin Core est stocké sur Github ici : https://github.com/bitcoin/bitcoin.
 
 > *En anglais, on parle d'un « repository ». Il est courant d'employer la troncation « repo » pour désigner un dépôt Git.*
+
+## DÉRIVATION
+
+Portefeuille HD
+
+
+## DÉRIVATION ENDURCIE
+
+
+## DÉRIVATION NORMALE 
+
+
+## DEVISE
+
+Portefeuille HD profondeur 2
 
 ## DGM (DOUBLE GEOMETRIC METHOD)
 
@@ -1650,6 +1677,8 @@ Indicateur de la puissance de calcul du réseau, mesurée en hachages par second
 ## HEADERS FIRST SYNC
 
 
+## HEXADÉCIMAL
+
 
 ## HMAC-SHA512
 
@@ -2079,6 +2108,10 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 
 > *Pour plus d'informations, voir la définition de [**NSEQUENCE**](#nsequence).*
 
+
+## OBJECTIF
+
+Dérivation portefeuille HD
 
 ## OBOE (OFF-BY-ONE ERROR)
 
@@ -2757,6 +2790,10 @@ Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la m
 
 ## PROBLÈME DES GÉNÉRAUX BYZANTINS
 
+
+## PROFONDEUR
+
+Portefeuille HD
 
 ## PROOF-OF-WORK
 

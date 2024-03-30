@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 723 `**
+**Nombre total de définitions : ` 733 `**
 
 ### A
 
@@ -171,8 +171,10 @@
 - [CAPACITÉ DE CANAL LIGHTNING](./dictionnaire/C.md#capacité-de-canal-lightning)
 - [CASHU](./dictionnaire/C.md#cashu)
 - [CET (CONTRACT EXECUTION TRANSACTION)](./dictionnaire/C.md#cet-contract-execution-transaction)
-- [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
+- [CHAINE EXTERNE](./dictionnaire/C.md#chaine-externe)
+- [CHAINE INTERNE](./dictionnaire/C.md#chaine-interne)
 - [CHAINSTATE/](./dictionnaire/C.md#chainstate)
+- [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
 - [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
@@ -199,6 +201,7 @@
 - [COMMIT](./dictionnaire/C.md#commit)
 - [COMPACT BLOCK RELAY](./dictionnaire/C.md#compact-block-relay)
 - [COMPATIBILITÉ RÉTROSPECTIVE (RÉTROCOMPATIBILITÉ)](./dictionnaire/C.md#compatibilité-rétrospective-rétrocompatibilité)
+- [COMPTE](./dictionnaire/C.md#compte)
 - [CONCATÉNATION](./dictionnaire/C.md#concaténation)
 - [CONDENSAT (HASH)](./dictionnaire/C.md#condensat-hash)
 - [CONFIRMATION](./dictionnaire/C.md#confirmation)
@@ -233,6 +236,10 @@
 - [DEBUG.LOG](./dictionnaire/D.md#debuglog)
 - [DEPEG](./dictionnaire/D.md#depeg)
 - [DÉPÔT](./dictionnaire/D.md#dépôt)
+- [DÉRIVATION](./dictionnaire/D.md#dérivation)
+- [DÉRIVATION ENDURCIE](./dictionnaire/D.md#dérivation-endurcie)
+- [DÉRIVATION NORMALE ](./dictionnaire/D.md#dérivation-normale-)
+- [DEVISE](./dictionnaire/D.md#devise)
 - [DGM (DOUBLE GEOMETRIC METHOD)](./dictionnaire/D.md#dgm-double-geometric-method)
 - [DIFFICULTÉ](./dictionnaire/D.md#difficulté)
 - [DIFFIE-HELLMAN](./dictionnaire/D.md#diffie-hellman)
@@ -331,6 +338,7 @@
 - [HAUTEUR DE BLOC](./dictionnaire/H.md#hauteur-de-bloc)
 - [HD (HIERARCHICAL-DETERMINISTIC)](./dictionnaire/H.md#hd-hierarchical-deterministic)
 - [HEADERS FIRST SYNC](./dictionnaire/H.md#headers-first-sync)
+- [HEXADÉCIMAL](./dictionnaire/H.md#hexadécimal)
 - [HMAC-SHA512](./dictionnaire/H.md#hmac-sha512)
 - [HODL](./dictionnaire/H.md#hodl)
 - [HORODATAGE (TIMESTAMP)](./dictionnaire/H.md#horodatage-timestamp)
@@ -447,6 +455,7 @@
 
 ### O
 
+- [OBJECTIF](./dictionnaire/O.md#objectif)
 - [OBOE (OFF-BY-ONE ERROR)](./dictionnaire/O.md#oboe-off-by-one-error)
 - [OBSOLÈTE (BLOC)](./dictionnaire/O.md#obsolète-bloc)
 - [OCTET (BYTE)](./dictionnaire/O.md#octet-byte)
@@ -597,6 +606,7 @@
 - [PREUVE DE RÉSERVES](./dictionnaire/P.md#preuve-de-réserves)
 - [PREUVE DE TRAVAIL](./dictionnaire/P.md#preuve-de-travail)
 - [PROBLÈME DES GÉNÉRAUX BYZANTINS](./dictionnaire/P.md#problème-des-généraux-byzantins)
+- [PROFONDEUR](./dictionnaire/P.md#profondeur)
 - [PROOF-OF-WORK](./dictionnaire/P.md#proof-of-work)
 - [PROP (PROPORTIONAL)](./dictionnaire/P.md#prop-proportional)
 - [PSBT](./dictionnaire/P.md#psbt)
