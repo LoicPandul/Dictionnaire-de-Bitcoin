@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 743 `**
+**Nombre total de définitions : ` 746 `**
 
 ### A
 
@@ -27,6 +27,7 @@
 - [ARK](./dictionnaire/A.md#ark)
 - [ASCII](./dictionnaire/A.md#ascii)
 - [ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION)](./dictionnaire/A.md#asic-circuit-intégré-spécifique-à-une-application)
+- [ASIC BOOST](./dictionnaire/A.md#asic-boost)
 - [ASMAP](./dictionnaire/A.md#asmap)
 - [ASSUME UTXO](./dictionnaire/A.md#assume-utxo)
 - [ASSUME VALID](./dictionnaire/A.md#assume-valid)
@@ -615,6 +616,7 @@
 - [PROFONDEUR](./dictionnaire/P.md#profondeur)
 - [PROOF-OF-WORK](./dictionnaire/P.md#proof-of-work)
 - [PROP (PROPORTIONAL)](./dictionnaire/P.md#prop-proportional)
+- [PROPAGATION](./dictionnaire/P.md#propagation)
 - [PSBT](./dictionnaire/P.md#psbt)
 - [PSEUDO-ALÉATOIRE](./dictionnaire/P.md#pseudo-aléatoire)
 - [PTLC](./dictionnaire/P.md#ptlc)
@@ -649,6 +651,7 @@
 - [RICOCHET](./dictionnaire/R.md#ricochet)
 - [RIPEMD160](./dictionnaire/R.md#ripemd160)
 - [ROUTAGE LIGHTNING](./dictionnaire/R.md#routage-lightning)
+- [ROUTING ATTACKS](./dictionnaire/R.md#routing-attacks)
 - [RPC (REMOTE PROCEDURE CALL)](./dictionnaire/R.md#rpc-remote-procedure-call)
 - [RPOW (REUSABLE PROOFS OF WORK)](./dictionnaire/R.md#rpow-reusable-proofs-of-work)
 - [RSK](./dictionnaire/R.md#rsk)

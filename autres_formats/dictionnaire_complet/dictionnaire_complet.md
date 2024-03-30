@@ -159,6 +159,9 @@ Un ASIC est un composant électronique conçu pour exécuter une fonction spéci
 
 >*L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
 
+## ASIC BOOST
+
+
 ## ASMAP
 
 Outil inventé par Gleb Naumenko et utilisé par Bitcoin Core pour améliorer la sécurité et la topologie du réseau Bitcoin en diversifiant les connexions entre les nœuds. Il s'agit d'une carte d'adressage IP vers les numéros de systèmes autonomes (ASN), permettant une meilleure répartition des connexions sortantes en fonction de l'ASN plutôt que des préfixes IP. Cela aide à prévenir les attaques Eclipse (notamment l'attaque Erebus) en rendant plus difficile pour un attaquant de simuler plusieurs nœuds.
@@ -2823,6 +2826,12 @@ Traduction anglaise de « Preuve de travail ».
 
 Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. PROP répartit simplement la récompense de bloc parmi les mineurs proportionnellement à leur contribution en parts. Le calcul des parts débute au dernier bloc trouvé par la pool et termine lorsqu'un nouveau bloc est trouvé. Chaque nouveau bloc remet le compteur de parts à zéro. Cette méthode de rémunération permet de refléter directement les efforts par chacun.
 
+## PROPAGATION
+
+
+> *Diffusion*
+
+
 ## PSBT
 
 
@@ -2958,9 +2967,11 @@ Acronyme de *Research and development in Advanced Communications technologies in
 ## ROUTAGE LIGHTNING
 
 
-
-
 > *En anglais, on parle de « routing ».*
+
+## ROUTING ATTACKS
+
+
 
 ## RPC (REMOTE PROCEDURE CALL)
 
