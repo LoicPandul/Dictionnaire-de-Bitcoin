@@ -1,23 +1,23 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-## Nombre total de définitions: 723
+## Nombre total de définitions: 733
 
 ## Nombre de définitions par lettre
 1. **B**: 123
-2. **O**: 96
+2. **O**: 97
 3. **S**: 73
-4. **P**: 60
-5. **C**: 58
+4. **C**: 61
+5. **P**: 61
 6. **M**: 38
 7. **A**: 32
-8. **D**: 27
+8. **D**: 31
 9. **R**: 24
 10. **F**: 22
 11. **T**: 22
 12. **E**: 19
 13. **L**: 19
-14. **G**: 16
-15. **H**: 16
+14. **H**: 17
+15. **G**: 16
 16. **W**: 15
 17. **N**: 13
 18. **I**: 10
