@@ -95,9 +95,11 @@ Acronyme de *Research and development in Advanced Communications technologies in
 ## ROUTAGE LIGHTNING
 
 
-
-
 > *En anglais, on parle de « routing ».*
+
+## ROUTING ATTACKS
+
+
 
 ## RPC (REMOTE PROCEDURE CALL)
 
