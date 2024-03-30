@@ -1,15 +1,15 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-## Nombre total de définitions: 686
+## Nombre total de définitions: 689
 
 ## Nombre de définitions par lettre
 1. **B**: 119
 2. **O**: 96
-3. **S**: 70
+3. **S**: 71
 4. **C**: 57
 5. **P**: 55
 6. **M**: 34
-7. **A**: 26
+7. **A**: 28
 8. **D**: 23
 9. **R**: 23
 10. **T**: 21
@@ -33,7 +33,7 @@
 ## Termes les plus fréquents
 1. **bitcoin**: 899
 2. **transaction**: 748
-3. **bloc**: 465
+3. **bloc**: 466
 4. **script**: 248
 5. **information**: 214
 6. **mineur**: 203

@@ -1,0 +1,3 @@
+## DOLLAR COST AVERAGING (DCA)
+
+
