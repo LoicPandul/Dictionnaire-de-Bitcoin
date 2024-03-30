@@ -50,6 +50,8 @@ Indicateur de la puissance de calcul du réseau, mesurée en hachages par second
 ## HEADERS FIRST SYNC
 
 
+## HEXADÉCIMAL
+
 
 ## HMAC-SHA512
 

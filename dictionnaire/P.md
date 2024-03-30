@@ -226,6 +226,10 @@ Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la m
 ## PROBLÈME DES GÉNÉRAUX BYZANTINS
 
 
+## PROFONDEUR
+
+Portefeuille HD
+
 ## PROOF-OF-WORK
 
 Traduction anglaise de « Preuve de travail ». 
