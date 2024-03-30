@@ -26,6 +26,7 @@ Installation où de nombreuses machines de minage (souvent, des ASICs) sont regr
 ## FIAT
 
 Monnaie, souvent étatique, dont le cours est imposé par la force publique.
+
 > *Le terme de « fiat » est parfois traduit par « fiduciaire » bien que ce dernier terme ne prenne pas en compte la dimension de violence légitime qu'incarne le terme « fiat ». En français, il est souvent admis d'utiliser directement le terme anglais de « fiat ».*
 
 ## FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)
@@ -37,6 +38,10 @@ Protocole conçu par Matt Corallo en 2016 pour accélérer la propagation des bl
 ## FIDELITY BONDS
 
 Peter Todd
+
+
+## FINNEY ATTACK
+
 
 ## FLAG DAY
 
@@ -60,6 +65,9 @@ Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieu
 ## FONCTIONNAIRE
 
 Dans le cadre de la sidechain Liquid, les fonctionnaires sont des nœuds pilotés par des entités chargées de gérer le système. Ils ont principalement deux rôles : établir le consensus et exécuter des transactions en tant que signataire de bloc (blocksigners) et sécuriser les bitcoins détenus par le réseau afin d'assurer l'ancrage bilatéral (watchmen).
+
+## FONGIBILITÉ
+
 
 ## FORCE BRUTE (ATTAQUE)
 
@@ -95,6 +103,9 @@ Dans le cadre de Git, représente la création d'une copie d'un dépôt existant
 
 Langage de programmation impératif, conçu pour être simple et efficace, surtout dans les systèmes embarqués et les applications où les ressources sont limitées. Forth se distingue par son style de programmation. Il utilise une pile pour le stockage des données et des calculs. Le langage Script utilisé sur Bitcoin a un fonctionnement similaire à Forth.
 
+## FOSS (FREE OPEN SOURCE SOFTWARE)
+
+
 ## FPPS (FULL PAY PER SHARE)
 
 Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une évolution de la méthode Pay Per Share (PPS). Elle rémunère les mineurs non seulement pour chaque part valide qu'ils soumettent, mais inclut également une part des frais de transaction du réseau. La rémunération est calculée sur la base des transactions moyennes précédentes et du hashrate de la pool. Ainsi, les mineurs reçoivent une rétribution pour les parts soumises, qu'un bloc soit trouvé ou non. Cette méthode rémunère la valeur attendue. Elle offre une rémunération stable et prévisible pour les mineurs, car elle élimine la variabilité liée à la probabilité de trouver un bloc. Toutefois, elle est plus risquée pour les opérateurs de pool, car ils doivent payer les mineurs même lorsqu'aucun bloc n'est trouvé, absorbant ainsi le risque de variance.
@@ -112,6 +123,5 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 > *En anglais, on parle de « transaction fees ».*
 
-## FORK
 
 

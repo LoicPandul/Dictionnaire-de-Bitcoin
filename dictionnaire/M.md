@@ -7,6 +7,9 @@ Ancien nom de la collection d'outils et de bibliothèques pour développeurs BDK
 
 > *Pour plus d'informations, voir la définition de [BDK (BITCOIN DEV KIT)](./B.md#bdk-bitcoin-dev-kit).*
 
+## MAINNET
+
+
 ## MAINTENEUR
 
 
@@ -32,6 +35,9 @@ Attaque dans laquelle un acteur malveillant se place clandestinement entre deux 
 ## MAPPER (TO MAP)
 
 Dans le contexte de l'informatique, mapper désigne le processus d'associer des éléments d'un ensemble de données à des éléments d'un autre ensemble de données de manière systématique. Cette association permet aux données du premier ensemble de se substituer à celles du second ensemble ou de transitionner de l'un à l'autre. Cette technique est souvent utilisée dans les opérations de transformation de données.
+
+## MARKET CAP (CAPITALIZATION)
+
 
 ## MASF (MINER-ACTIVATED SOFT FORK)
 
@@ -75,6 +81,8 @@ Structure de données utilisée dans le cadre du BIP37 (*Transaction Bloom Filte
 
 ## MERKLE SUM TREE
 
+
+## MÉTADONNÉES
 
 
 ## MÉTHODE D'ACTIVATION
@@ -151,6 +159,8 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 
 ## MULTIPATH PAYMENTS (MPP)
 
+
+## MULTISIG (MULTISIGNATURE)
 
 
 ## MUSIG2

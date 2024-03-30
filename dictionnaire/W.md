@@ -37,6 +37,8 @@ Un watch-only wallet (ou « portefeuille en lecture seule ») est un type de log
 ## WATCHTOWER
 
 
+## WHALE
+
 
 ## WHIRLPOOL
 
