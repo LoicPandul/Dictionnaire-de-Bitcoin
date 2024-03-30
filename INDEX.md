@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 686 `**
+**Nombre total de définitions : ` 689 `**
 
 ### A
 
@@ -6,6 +6,8 @@
 - [ADAPTOR SIGNATURE](./dictionnaire/A.md#adaptor-signature)
 - [ADDR](./dictionnaire/A.md#addr)
 - [ADDR.DAT](./dictionnaire/A.md#addrdat)
+- [ADDRESS SPOOFING](./dictionnaire/A.md#address-spoofing)
+- [ADDRESS SWAPPING](./dictionnaire/A.md#address-swapping)
 - [ADDRV2](./dictionnaire/A.md#addrv2)
 - [ADRESSE DE RÉCEPTION](./dictionnaire/A.md#adresse-de-réception)
 - [AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE)](./dictionnaire/A.md#ajustement-de-la-difficulté-ou-reciblage)
@@ -646,6 +648,7 @@
 - [SIGHASH_SINGLE (0X03)](./dictionnaire/S.md#sighash_single-0x03)
 - [SIGHASH_SINGLE | SIGHASH_ANYONECANPAY (0X83)](./dictionnaire/S.md#sighash_single-sighash_anyonecanpay-0x83)
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
+- [SIGNER À L'AVEUGLE](./dictionnaire/S.md#signer-à-laveugle)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
 - [SILENT PAYMENTS](./dictionnaire/S.md#silent-payments)
