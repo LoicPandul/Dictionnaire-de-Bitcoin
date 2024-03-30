@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 733 `**
+**Nombre total de définitions : ` 743 `**
 
 ### A
 
@@ -25,6 +25,7 @@
 - [ARBITRAGE](./dictionnaire/A.md#arbitrage)
 - [ARBRE DE MERKLE](./dictionnaire/A.md#arbre-de-merkle)
 - [ARK](./dictionnaire/A.md#ark)
+- [ASCII](./dictionnaire/A.md#ascii)
 - [ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION)](./dictionnaire/A.md#asic-circuit-intégré-spécifique-à-une-application)
 - [ASMAP](./dictionnaire/A.md#asmap)
 - [ASSUME UTXO](./dictionnaire/A.md#assume-utxo)
@@ -43,6 +44,7 @@
 - [BASE (ARITHMÉTIQUE)](./dictionnaire/B.md#base-arithmétique)
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
 - [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
+- [BCH (BOSE CHAUDHURI HOCQUENGHEM)](./dictionnaire/B.md#bch-bose-chaudhuri-hocquenghem)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
@@ -183,6 +185,7 @@
 - [CLÉ ÉTENDUE](./dictionnaire/C.md#clé-étendue)
 - [CLÉ PRIVÉE](./dictionnaire/C.md#clé-privée)
 - [CLÉ PUBLIQUE](./dictionnaire/C.md#clé-publique)
+- [CLÉ PUBLIQUE COMPRESSÉE](./dictionnaire/C.md#clé-publique-compressée)
 - [CLI](./dictionnaire/C.md#cli)
 - [C-LIGHTNING (CLN)](./dictionnaire/C.md#c-lightning-cln)
 - [CLONE](./dictionnaire/C.md#clone)
@@ -197,6 +200,7 @@
 - [COINSHUFFLE](./dictionnaire/C.md#coinshuffle)
 - [COINSWAP](./dictionnaire/C.md#coinswap)
 - [COLD WALLET](./dictionnaire/C.md#cold-wallet)
+- [COLORED COINS](./dictionnaire/C.md#colored-coins)
 - [COMMERÇANT](./dictionnaire/C.md#commerçant)
 - [COMMIT](./dictionnaire/C.md#commit)
 - [COMPACT BLOCK RELAY](./dictionnaire/C.md#compact-block-relay)
@@ -332,6 +336,8 @@
 - [HARD FORK](./dictionnaire/H.md#hard-fork)
 - [HARDWARE WALLET](./dictionnaire/H.md#hardware-wallet)
 - [HARDWARE WALLET INTERFACE (HWI)](./dictionnaire/H.md#hardware-wallet-interface-hwi)
+- [HASH160](./dictionnaire/H.md#hash160)
+- [HASH256](./dictionnaire/H.md#hash256)
 - [HASHCASH](./dictionnaire/H.md#hashcash)
 - [HASHLOCKS](./dictionnaire/H.md#hashlocks)
 - [HASHRATE](./dictionnaire/H.md#hashrate)
@@ -342,7 +348,7 @@
 - [HMAC-SHA512](./dictionnaire/H.md#hmac-sha512)
 - [HODL](./dictionnaire/H.md#hodl)
 - [HORODATAGE (TIMESTAMP)](./dictionnaire/H.md#horodatage-timestamp)
-- [HRP](./dictionnaire/H.md#hrp)
+- [HRP (HUMAN READABLE PART)](./dictionnaire/H.md#hrp-human-readable-part)
 - [HTLC](./dictionnaire/H.md#htlc)
 
 ### I
@@ -619,6 +625,7 @@
 
 ### Q
 
+- [QR CODE](./dictionnaire/Q.md#qr-code)
 - [QUBIT](./dictionnaire/Q.md#qubit)
 
 ### R
@@ -638,6 +645,7 @@
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
 - [RÉUTILISATION D'ADRESSE](./dictionnaire/R.md#réutilisation-dadresse)
 - [RÉUTILISATION D'ADRESSE INTERNE](./dictionnaire/R.md#réutilisation-dadresse-interne)
+- [RGB](./dictionnaire/R.md#rgb)
 - [RICOCHET](./dictionnaire/R.md#ricochet)
 - [RIPEMD160](./dictionnaire/R.md#ripemd160)
 - [ROUTAGE LIGHTNING](./dictionnaire/R.md#routage-lightning)
@@ -654,6 +662,7 @@
 - [SATOSHI (SAT)](./dictionnaire/S.md#satoshi-sat)
 - [SATOSHI NAKAMOTO](./dictionnaire/S.md#satoshi-nakamoto)
 - [SCALA](./dictionnaire/S.md#scala)
+- [SCALABILITÉ](./dictionnaire/S.md#scalabilité)
 - [SCHNORR (PROTOCOLE)](./dictionnaire/S.md#schnorr-protocole)
 - [SCORE (SCORE BASED METHOD)](./dictionnaire/S.md#score-score-based-method)
 - [SCRIPT](./dictionnaire/S.md#script)
@@ -784,6 +793,7 @@
 - [WATCHTOWER](./dictionnaire/W.md#watchtower)
 - [WHALE](./dictionnaire/W.md#whale)
 - [WHIRLPOOL](./dictionnaire/W.md#whirlpool)
+- [WHITE PAPER](./dictionnaire/W.md#white-paper)
 - [WHIRLPOOL STAT TOOL](./dictionnaire/W.md#whirlpool-stat-tool)
 - [WITNESSSCRIPT](./dictionnaire/W.md#witnessscript)
 - [WTXID](./dictionnaire/W.md#wtxid)

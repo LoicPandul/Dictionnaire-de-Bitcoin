@@ -5,4 +5,3 @@
 ![](/dictionnaire/assets/R/10.png)
 
 
-
