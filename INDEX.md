@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 746 `**
+**Nombre total de définitions : ` 748 `**
 
 ### A
 
@@ -50,6 +50,7 @@
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
+- [BGP HIJACKING](./dictionnaire/B.md#bgp-hijacking)
 - [BIG-ENDIAN](./dictionnaire/B.md#big-endian)
 - [BIP (BITCOIN IMPROVEMENT PROPOSAL)](./dictionnaire/B.md#bip-bitcoin-improvement-proposal)
 - [BIP1](./dictionnaire/B.md#bip1)
@@ -687,6 +688,7 @@
 - [SETTINGS.JSON](./dictionnaire/S.md#settingsjson)
 - [SHA256](./dictionnaire/S.md#sha256)
 - [SHA512](./dictionnaire/S.md#sha512)
+- [SHARES](./dictionnaire/S.md#shares)
 - [SHAREDCOIN](./dictionnaire/S.md#sharedcoin)
 - [SHOR (ALGORITHME)](./dictionnaire/S.md#shor-algorithme)
 - [SIDECHAIN](./dictionnaire/S.md#sidechain)
