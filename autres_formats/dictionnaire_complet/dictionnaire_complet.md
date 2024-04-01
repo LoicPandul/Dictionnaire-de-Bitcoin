@@ -939,6 +939,9 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 ![](/dictionnaire/assets/C/13.png)
 > *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 
+## CISA (CROSS-INPUT SIGNATURE AGGREGATION)
+
+
 ## CLÉ ÉTENDUE
 
 Suite de caractère qui combine une clé (publique ou privée), son code de chaîne associé et une série de métadonnées. Une clé étendue rassemble en une seule chaîne de caractère tous les éléments nécessaires à la dérivation de clés enfants. Elles sont utilisées dans les portefeuilles déterministes et hiérarchiques, et peuvent être de deux types : une clé publique étendue (utilisée pour dériver des clés publiques enfants) ou une clé privée étendue (utilisée pour dériver à la fois des clés privées et des clés publiques enfants). Une clé étendue inclut donc plusieurs données différentes, décrites au sein du BIP32, dans l'ordre : 

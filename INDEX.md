@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 748 `**
+**Nombre total de définitions : ` 749 `**
 
 ### A
 
@@ -184,6 +184,7 @@
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
 - [CIBLE DE DIFFICULTÉ](./dictionnaire/C.md#cible-de-difficulté)
 - [CIOH (COMMON INPUT OWNERSHIP HEURISTIC)](./dictionnaire/C.md#cioh-common-input-ownership-heuristic)
+- [CISA (CROSS-INPUT SIGNATURE AGGREGATION)](./dictionnaire/C.md#cisa-cross-input-signature-aggregation)
 - [CLÉ ÉTENDUE](./dictionnaire/C.md#clé-étendue)
 - [CLÉ PRIVÉE](./dictionnaire/C.md#clé-privée)
 - [CLÉ PUBLIQUE](./dictionnaire/C.md#clé-publique)
