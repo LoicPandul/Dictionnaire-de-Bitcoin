@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 749 `**
+**Nombre total de définitions : ` 750 `**
 
 ### A
 
@@ -707,6 +707,7 @@
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
 - [SILENT PAYMENTS](./dictionnaire/S.md#silent-payments)
+- [SILK ROAD](./dictionnaire/S.md#silk-road)
 - [SIMPLIFIED PAYMENT VERIFICATION (SPV)](./dictionnaire/S.md#simplified-payment-verification-spv)
 - [SLIP (SATOSHI LABS IMPROVEMENT PROPOSALS)](./dictionnaire/S.md#slip-satoshi-labs-improvement-proposals)
 - [SMPPS (SHARED MAXIMUM PAY PER SHARE)](./dictionnaire/S.md#smpps-shared-maximum-pay-per-share)
