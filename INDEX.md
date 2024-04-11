@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 751 `**
+**Nombre total de définitions : ` 757 `**
 
 ### A
 
@@ -160,6 +160,7 @@
 - [BOLT (BASIS OF LIGHTNING TECHNOLOGY)](./dictionnaire/B.md#bolt-basis-of-lightning-technology)
 - [BOUNTY](./dictionnaire/B.md#bounty)
 - [BOUTISME](./dictionnaire/B.md#boutisme)
+- [BRANCH-AND-BOUND](./dictionnaire/B.md#branch-and-bound)
 - [BRANCHE](./dictionnaire/B.md#branche)
 - [BRC-20](./dictionnaire/B.md#brc-20)
 - [BTC](./dictionnaire/B.md#btc)
@@ -382,6 +383,7 @@
 ### K
 
 - [KEYSTORE](./dictionnaire/K.md#keystore)
+- [KNAPSACK SOLVER](./dictionnaire/K.md#knapsack-solver)
 - [KYC (KNOW YOUR CUSTOMER)](./dictionnaire/K.md#kyc-know-your-customer)
 
 ### L
@@ -579,6 +581,8 @@
 - [PAIEMENT ROND](./dictionnaire/P.md#paiement-rond)
 - [PAIEMENT SIMPLIFIÉ](./dictionnaire/P.md#paiement-simplifié)
 - [PAIR-À-PAIR (P2P)](./dictionnaire/P.md#pair-à-pair-p2p)
+- [PAIR ENTRANT](./dictionnaire/P.md#pair-entrant)
+- [PAIR SORTANT](./dictionnaire/P.md#pair-sortant)
 - [PAPER WALLET (PORTEFEUILLE PAPIER)](./dictionnaire/P.md#paper-wallet-portefeuille-papier)
 - [PARTIALLY SIGNED BITCOIN TRANSACTION (PSBT)](./dictionnaire/P.md#partially-signed-bitcoin-transaction-psbt)
 - [PASSPHRASE (BIP39)](./dictionnaire/P.md#passphrase-bip39)
@@ -647,6 +651,7 @@
 - [RENDEZ-VOUS ROUTING](./dictionnaire/R.md#rendez-vous-routing)
 - [RÉORGANISATION](./dictionnaire/R.md#réorganisation)
 - [RÉSEAU BITCOIN](./dictionnaire/R.md#réseau-bitcoin)
+- [RÉSISTANCE AU PARTITIONNEMENT](./dictionnaire/R.md#résistance-au-partitionnement)
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
 - [RÉUTILISATION D'ADRESSE](./dictionnaire/R.md#réutilisation-dadresse)
 - [RÉUTILISATION D'ADRESSE INTERNE](./dictionnaire/R.md#réutilisation-dadresse-interne)
@@ -685,6 +690,7 @@
 - [SEGWIT2X](./dictionnaire/S.md#segwit2x)
 - [SEGWIT V0](./dictionnaire/S.md#segwit-v0)
 - [SEGWIT V1](./dictionnaire/S.md#segwit-v1)
+- [SÉLECTION DES PIÈCES](./dictionnaire/S.md#sélection-des-pièces)
 - [SELF-CUSTODY](./dictionnaire/S.md#self-custody)
 - [SELFISH MINING](./dictionnaire/S.md#selfish-mining)
 - [SETTINGS.JSON](./dictionnaire/S.md#settingsjson)
