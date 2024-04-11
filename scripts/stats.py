@@ -43,9 +43,9 @@ with open(chemin_stats, 'w', encoding='utf-8') as fichier_stats:
     fichier_stats.write(f"### Nombre total de définitions : \n**-> {total_definitions}**\n\n")
     fichier_stats.write("### Nombre de définitions par lettre :\n")
     for i, (lettre, nombre) in enumerate(stats_lettres.items(), start=1):
-        fichier_stats.write(f"{i}.  ***{lettre}*** - {nombre}\n")
+        fichier_stats.write(f"{i} - ***{lettre}*** : {nombre}\n")
     fichier_stats.write("\n### Termes techniques les plus rencontrés :\n")
     for i, (mot, compteur) in enumerate(termes_frequents, start=1):
-        fichier_stats.write(f"{i}.  ***{mot}*** - {compteur}\n")
+        fichier_stats.write(f"{i} - ***{mot}*** : {compteur}\n")
 
 print(f"Statistiques générées dans {chemin_stats}")
