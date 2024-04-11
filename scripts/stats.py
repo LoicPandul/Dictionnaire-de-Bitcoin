@@ -39,7 +39,7 @@ termes_frequents = termes_les_plus_frequents(chemin_dictionnaire_complet)
 total_definitions = sum(stats_lettres.values())
 
 with open(chemin_stats, 'w', encoding='utf-8') as fichier_stats:
-    fichier_stats.write("## Statistiques du Dictionnaire de Bitcoin\n\n")
+    fichier_stats.write("## Statistiques du *Dictionnaire de Bitcoin*\n\n")
     fichier_stats.write(f"### Nombre total de définitions : {total_definitions}\n\n")
     fichier_stats.write("### Nombre de définitions par lettre :\n")
     for i, (lettre, nombre) in enumerate(stats_lettres.items(), start=1):
