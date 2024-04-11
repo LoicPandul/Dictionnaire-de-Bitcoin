@@ -42,9 +42,9 @@ Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats diffé
 - [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
 - [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
 
-**Les contributions doivent se faire uniquement sur le dossier de travail [/dictionnaire](/dictionnaire).** Un script permet de mettre à jour automatiquement les autres formats.
+**Les contributions doivent se faire uniquement sur le dossier de travail [/dictionnaire](/dictionnaire).** Un script python permet de mettre à jour automatiquement les autres formats.
 
-Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez en tête une modification mineure à apporter (telle que l'ajout d'un terme ou la correction d'une petite erreur d'orthographe), il serait plus approprié de créer une issue sur GitHub plutôt qu'une PR.
+Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez en tête une modification mineure à apporter (telle que l'ajout d'un terme ou la correction d'une petite erreur d'orthographe), vous pouvez également créer une issue sur GitHub plutôt qu'une PR.
 
 Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement. Mes coordonnées sont disponibles sur [https://www.pandul.fr/](https://www.pandul.fr/).
 
@@ -70,6 +70,8 @@ Quant aux noms d'entreprises et de marques, j'accepte de les ajouter uniquement 
 En ce qui concerne les individus, seules les contributions historiquement significatives à Bitcoin justifient une mention. Plutôt que de nommer directement une personne, il est préférable de référencer le logiciel ou le protocole sur lequel elle a travaillé, en la mentionnant dans la définition correspondante.
 
 On ne parle évidemment pas de shitcoins dans ce dictionnaire, sauf si le shitcoin en question fait partie de l'histoire de Bitcoin (par exemple, les forks de Bitcoin).
+
+Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une définition exhaustive, même si elle doit être longue, plutôt qu'une définition courte et imprécise.
 
 ## Licence et réutilisation
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
