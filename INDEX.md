@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 757 `**
+**Nombre total de définitions : ` 758 `**
 
 ### A
 
@@ -562,6 +562,7 @@
 - [ORPHELIN (BLOC)](./dictionnaire/O.md#orphelin-bloc)
 - [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
 - [OUTBOUND CAPACITY](./dictionnaire/O.md#outbound-capacity)
+- [OUTPOINT](./dictionnaire/O.md#outpoint)
 - [OUTPUT](./dictionnaire/O.md#output)
 - [OUTPUT LINKING](./dictionnaire/O.md#output-linking)
 
