@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 771 `**
+**Nombre total de définitions : ` 783 `**
 
 ### A
 
@@ -54,6 +54,7 @@
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
 - [BGP HIJACKING](./dictionnaire/B.md#bgp-hijacking)
 - [BIG-ENDIAN](./dictionnaire/B.md#big-endian)
+- [BINAIRE](./dictionnaire/B.md#binaire)
 - [BIP (BITCOIN IMPROVEMENT PROPOSAL)](./dictionnaire/B.md#bip-bitcoin-improvement-proposal)
 - [BIP1](./dictionnaire/B.md#bip1)
 - [BIP2](./dictionnaire/B.md#bip2)
@@ -167,6 +168,7 @@
 - [BTC](./dictionnaire/B.md#btc)
 - [BTCPAY SERVER](./dictionnaire/B.md#btcpay-server)
 - [BULL MARKET](./dictionnaire/B.md#bull-market)
+- [BYZANTINE FAULT TOLERANCE (BFT)](./dictionnaire/B.md#byzantine-fault-tolerance-bft)
 
 ### C
 
@@ -183,8 +185,10 @@
 - [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
 - [CHAINSPLIT](./dictionnaire/C.md#chainsplit)
 - [CHAINSTATE/](./dictionnaire/C.md#chainstate)
+- [CHANGE (MONNAIE)](./dictionnaire/C.md#change-monnaie)
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
 - [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
+- [CHEMIN DE DÉRIVATION](./dictionnaire/C.md#chemin-de-dérivation)
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
 - [CIBLE DE DIFFICULTÉ](./dictionnaire/C.md#cible-de-difficulté)
 - [CIOH (COMMON INPUT OWNERSHIP HEURISTIC)](./dictionnaire/C.md#cioh-common-input-ownership-heuristic)
@@ -366,6 +370,7 @@
 ### I
 
 - [I2P](./dictionnaire/I.md#i2p)
+- [IMPLÉMENTATION DE BITCOIN](./dictionnaire/I.md#implémentation-de-bitcoin)
 - [INBOUND CAPACITY](./dictionnaire/I.md#inbound-capacity)
 - [INDEXES/TXINDEX/](./dictionnaire/I.md#indexestxindex)
 - [INITIAL BLOCK DOWNLOAD (IBD)](./dictionnaire/I.md#initial-block-download-ibd)
@@ -407,6 +412,7 @@
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
 - [LIGHTNING NETWORK DAEMON (LND)](./dictionnaire/L.md#lightning-network-daemon-lnd)
 - [LIGHTNING SERVICE PROVIDER (LSP)](./dictionnaire/L.md#lightning-service-provider-lsp)
+- [LIMITE D'ÉMISSION](./dictionnaire/L.md#limite-démission)
 - [LIQUIDITÉS (LIGHTNING)](./dictionnaire/L.md#liquidités-lightning)
 - [LIQUIDITY ADVERTISEMENTS](./dictionnaire/L.md#liquidity-advertisements)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
@@ -420,6 +426,7 @@
 
 - [MACAROON](./dictionnaire/M.md#macaroon)
 - [MAGICAL BITCOIN](./dictionnaire/M.md#magical-bitcoin)
+- [MAGIC NETWORK](./dictionnaire/M.md#magic-network)
 - [MAINNET](./dictionnaire/M.md#mainnet)
 - [MAINTENEUR](./dictionnaire/M.md#mainteneur)
 - [MAINTENEUR PRINCIPAL](./dictionnaire/M.md#mainteneur-principal)
@@ -459,6 +466,7 @@
 
 ### N
 
+- [NBITS](./dictionnaire/N.md#nbits)
 - [NESTED SEGWIT](./dictionnaire/N.md#nested-segwit)
 - [NETWORK-ADJUSTED TIME (NAT)](./dictionnaire/N.md#network-adjusted-time-nat)
 - [NEW YORK AGREEMENT (NYA)](./dictionnaire/N.md#new-york-agreement-nya)
@@ -470,6 +478,7 @@
 - [NŒUD SPV (OU NŒUD LÉGER)](./dictionnaire/N.md#nœud-spv-ou-nœud-léger)
 - [NONCE](./dictionnaire/N.md#nonce)
 - [NSEQUENCE](./dictionnaire/N.md#nsequence)
+- [NULL DATA](./dictionnaire/N.md#null-data)
 - [NULLDUMMY](./dictionnaire/N.md#nulldummy)
 - [NVERSION](./dictionnaire/N.md#nversion)
 
@@ -652,6 +661,7 @@
 
 - [RACE ATTACK](./dictionnaire/R.md#race-attack)
 - [RACINE DE MERKLE](./dictionnaire/R.md#racine-de-merkle)
+- [RAW TRANSACTION](./dictionnaire/R.md#raw-transaction)
 - [RBF (REPLACE-BY-FEE)](./dictionnaire/R.md#rbf-replace-by-fee)
 - [RÉCOMPENSE DE BLOC](./dictionnaire/R.md#récompense-de-bloc)
 - [RÉCURSIF (COVENANT)](./dictionnaire/R.md#récursif-covenant)
@@ -781,6 +791,8 @@
 - [TRANSACTION COINBASE](./dictionnaire/T.md#transaction-coinbase)
 - [TRANSACTION COLLABORATIVE](./dictionnaire/T.md#transaction-collaborative)
 - [TRANSACTION D'ENGAGEMENT](./dictionnaire/T.md#transaction-dengagement)
+- [TRANSACTION NON CONFIRMÉE](./dictionnaire/T.md#transaction-non-confirmée)
+- [TRANSACTION STANDARD](./dictionnaire/T.md#transaction-standard)
 - [TUMBLEBIT](./dictionnaire/T.md#tumblebit)
 - [TURBO CHANNEL](./dictionnaire/T.md#turbo-channel)
 - [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
