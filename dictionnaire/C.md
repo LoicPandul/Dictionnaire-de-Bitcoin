@@ -58,6 +58,9 @@ Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Cor
 
 > *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
 
+## CHANGE (MONNAIE)
+
+
 ## CHARGE UTILE (PAYLOAD)
 
 Dans le contexte général de l'informatique, une charge utile désigne les données essentielles transportées dans un paquet de données plus large. Par exemple, dans une adresse SegWit V0 sur Bitcoin, la charge utile correspond au hachage de la clé publique, sans les diverses métadonnées (le HRP, le séparateur, la version de SegWit et la somme de contrôle). Par exemple, sur l'adresse `bc1qc2eukw7reasfcmrafevp5dhv8635yuqays50gj`, nous avons : 
@@ -72,6 +75,9 @@ Dans le contexte général de l'informatique, une charge utile désigne les donn
 Amélioration du concept de coinjoin, introduit pour la première fois en 2013 par Gregory Maxwell, qui utilise les signatures aveugles de Chaum pour renforcer l'anonymat des transactions coinjoins. Dans ce protocole, les utilisateurs soumettent des entrées et une adresse de réception cryptographiquement aveuglées à un coordinateur. Cette adresse privée est destinée à recevoir les bitcoins en sortie de coinjoin. Le coordinateur signe ces tokens et les renvoie aux utilisateurs. Les utilisateurs se reconnectent ensuite de manière anonyme au serveur du coordinateur et révèlent ensuite leurs adresses de sortie en clair pour la construction de la transaction. Le coordinateur peut vérifier que toutes ces adresses de réception proviennent bien d'utilisateurs légitimes, puisqu'il a signé leur version aveuglée auparavant. En revanche, il ne peut pas associer une adresse de sortie spécifique à un utilisateur donné en entrée. Il n'y a donc aucun lien entre les entrées et les sorties, même du point de vue du coordinateur. Cette méthode garantit que le coordinateur ne peut ni compromettre l'anonymat des participants, ni voler les bitcoins durant tout le processus de coinjoin.
 
 > *Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
+
+## CHEMIN DE DÉRIVATION
+
 
 ## CHIFFRER (CHIFFREMENT)
 

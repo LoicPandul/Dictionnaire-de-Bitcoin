@@ -46,6 +46,10 @@ Implémentation majeure du protocole Lightning Network écrite en langage Go. D�
 ## LIGHTNING SERVICE PROVIDER (LSP)
 
 
+## LIMITE D'ÉMISSION
+
+21 millions
+
 ## LIQUIDITÉS (LIGHTNING)
 
 
