@@ -11,5 +11,3 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 > *En anglais, on parle de « transaction fees ».*
 
-
-

@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 758 `**
+**Nombre total de définitions : ` 771 `**
 
 ### A
 
@@ -15,6 +15,7 @@
 - [ALGORITHME](./dictionnaire/A.md#algorithme)
 - [ALTCOIN](./dictionnaire/A.md#altcoin)
 - [ANALYSE DE CHAINE](./dictionnaire/A.md#analyse-de-chaine)
+- [ANCESTOR MINING](./dictionnaire/A.md#ancestor-mining)
 - [ANCHOR OUTPUTS](./dictionnaire/A.md#anchor-outputs)
 - [ANCHORS.DAT](./dictionnaire/A.md#anchorsdat)
 - [ANCRAGE BILATÉRAL](./dictionnaire/A.md#ancrage-bilatéral)
@@ -179,8 +180,9 @@
 - [CET (CONTRACT EXECUTION TRANSACTION)](./dictionnaire/C.md#cet-contract-execution-transaction)
 - [CHAINE EXTERNE](./dictionnaire/C.md#chaine-externe)
 - [CHAINE INTERNE](./dictionnaire/C.md#chaine-interne)
-- [CHAINSTATE/](./dictionnaire/C.md#chainstate)
 - [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
+- [CHAINSPLIT](./dictionnaire/C.md#chainsplit)
+- [CHAINSTATE/](./dictionnaire/C.md#chainstate)
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
 - [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
@@ -277,6 +279,9 @@
 - [ECLAIR](./dictionnaire/E.md#eclair)
 - [ECLIPSE (ATTAQUE)](./dictionnaire/E.md#eclipse-attaque)
 - [ÉCOLE AUTRICHIENNE](./dictionnaire/E.md#école-autrichienne)
+- [ELECTRUM](./dictionnaire/E.md#electrum)
+- [ELECTRUM LIGHTNING](./dictionnaire/E.md#electrum-lightning)
+- [ELECTRUM SERVER (ELECTRS)](./dictionnaire/E.md#electrum-server-electrs)
 - [ELTOO](./dictionnaire/E.md#eltoo)
 - [EMBRANCHEMENT NATUREL](./dictionnaire/E.md#embranchement-naturel)
 - [EMPREINTE DE PORTEFEUILLE (ANALYSE)](./dictionnaire/E.md#empreinte-de-portefeuille-analyse)
@@ -314,6 +319,7 @@
 - [FOSS (FREE OPEN SOURCE SOFTWARE)](./dictionnaire/F.md#foss-free-open-source-software)
 - [FPPS (FULL PAY PER SHARE)](./dictionnaire/F.md#fpps-full-pay-per-share)
 - [FRAIS DE TRANSACTION](./dictionnaire/F.md#frais-de-transaction)
+- [FULCRUM](./dictionnaire/F.md#fulcrum)
 
 ### G
 
@@ -330,6 +336,7 @@
 - [GRAINE (SEED)](./dictionnaire/G.md#graine-seed)
 - [GREEN ADDRESS](./dictionnaire/G.md#green-address)
 - [GREEN WALLET](./dictionnaire/G.md#green-wallet)
+- [GRIEFING ATTACK](./dictionnaire/G.md#griefing-attack)
 - [GROS-BOUTISTE](./dictionnaire/G.md#gros-boutiste)
 - [GUI](./dictionnaire/G.md#gui)
 - [GUISETTINGS.INI.BAK](./dictionnaire/G.md#guisettingsinibak)
@@ -401,6 +408,7 @@
 - [LIGHTNING NETWORK DAEMON (LND)](./dictionnaire/L.md#lightning-network-daemon-lnd)
 - [LIGHTNING SERVICE PROVIDER (LSP)](./dictionnaire/L.md#lightning-service-provider-lsp)
 - [LIQUIDITÉS (LIGHTNING)](./dictionnaire/L.md#liquidités-lightning)
+- [LIQUIDITY ADVERTISEMENTS](./dictionnaire/L.md#liquidity-advertisements)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
 - [LITTLE-ENDIAN](./dictionnaire/L.md#little-endian)
 - [LOCK (.LOCK)](./dictionnaire/L.md#lock-lock)
@@ -565,6 +573,7 @@
 - [OUTPOINT](./dictionnaire/O.md#outpoint)
 - [OUTPUT](./dictionnaire/O.md#output)
 - [OUTPUT LINKING](./dictionnaire/O.md#output-linking)
+- [OUTPUT SCRIPT DESCRIPTORS](./dictionnaire/O.md#output-script-descriptors)
 
 ### P
 
@@ -602,6 +611,7 @@
 - [PHOENIXD](./dictionnaire/P.md#phoenixd)
 - [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](./dictionnaire/P.md#phrase-de-récupération-mnémonique)
 - [PILE (STACK)](./dictionnaire/P.md#pile-stack)
+- [PINNING ATTACK](./dictionnaire/P.md#pinning-attack)
 - [PIZZA DAY](./dictionnaire/P.md#pizza-day)
 - [POLICY (MINISCRIPT)](./dictionnaire/P.md#policy-miniscript)
 - [POOL](./dictionnaire/P.md#pool)
@@ -667,6 +677,7 @@
 - [RSMPPS (RECENT SHARED MAXIMUM PAY PER SHARE)](./dictionnaire/R.md#rsmpps-recent-shared-maximum-pay-per-share)
 - [RUST](./dictionnaire/R.md#rust)
 - [RUST BITCOIN](./dictionnaire/R.md#rust-bitcoin)
+- [RUST-LIGHTNING](./dictionnaire/R.md#rust-lightning)
 
 ### S
 
@@ -727,6 +738,7 @@
 - [SORTIE NON RENTABLE](./dictionnaire/S.md#sortie-non-rentable)
 - [SPARSE MERKLE TREE (SMT)](./dictionnaire/S.md#sparse-merkle-tree-smt)
 - [SPEEDY TRIAL](./dictionnaire/S.md#speedy-trial)
+- [SPHINX](./dictionnaire/S.md#sphinx)
 - [SPLICING](./dictionnaire/S.md#splicing)
 - [SPOF (POINT DE DÉFAILLANCE UNIQUE)](./dictionnaire/S.md#spof-point-de-défaillance-unique)
 - [SPREAD (WST)](./dictionnaire/S.md#spread-wst)
@@ -764,6 +776,7 @@
 - [TOR (THE ONION ROUTER)](./dictionnaire/T.md#tor-the-onion-router)
 - [TPRV](./dictionnaire/T.md#tprv)
 - [TPUB](./dictionnaire/T.md#tpub)
+- [TRAMPOLINE ROUTING](./dictionnaire/T.md#trampoline-routing)
 - [TRANSACTION (TX)](./dictionnaire/T.md#transaction-tx)
 - [TRANSACTION COINBASE](./dictionnaire/T.md#transaction-coinbase)
 - [TRANSACTION COLLABORATIVE](./dictionnaire/T.md#transaction-collaborative)
