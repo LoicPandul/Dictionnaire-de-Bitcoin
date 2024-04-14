@@ -280,6 +280,10 @@ Méthode d'activation de soft fork initialement conceptualisée pour Taproot dé
 
 > *« Speedy Trial » est emprunté d'une terminologie juridique qui indique un « procès expéditif ». Cela invoque le fait que la proposition d'amélioration est envoyée rapidement devant le tribunal des mineurs, afin d'être fixé sur leurs intensions. Il est généralement admis d'utiliser directement le terme anglais en français.*
 
+## SPHINX
+
+onion encryption
+
 ## SPLICING
 
 

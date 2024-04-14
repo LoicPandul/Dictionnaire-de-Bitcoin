@@ -154,6 +154,9 @@ Une phrase de récupération, également parfois nommée comme mnémonique, seed
 ## PILE (STACK)
 
 
+## PINNING ATTACK
+
+
 ## PIZZA DAY
 
 
