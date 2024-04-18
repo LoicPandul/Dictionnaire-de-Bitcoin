@@ -1,8 +1,3 @@
-## I2P
-
-
-## IMPLÉMENTATION DE BITCOIN
-
 
 ## INBOUND CAPACITY
 
@@ -29,16 +24,6 @@ Dans le contexte d'un portefeuille HD (Hierarchical Deterministic), fait référ
 Fait référence aux *Unspent Transaction Outputs* (UTXO) utilisés comme fonds d'origine pour une transaction.
 
 > *Pour plus d'informations voir la définition d'[**ENTRÉE**](./E.md#entrée-input).*
-
-## INSCRIPTIONS
-
-
-
-## INVOICE LIGHTNING
-
-
-
-> *En français, on pourrait traduire « invoice » par « facture », mais on utilise généralement le terme anglais même en français.*
 
 ## IP_ASN.MAP
 

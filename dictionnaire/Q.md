@@ -1,6 +1,3 @@
-## QR CODE
-
-
 
 ## QUBIT
 

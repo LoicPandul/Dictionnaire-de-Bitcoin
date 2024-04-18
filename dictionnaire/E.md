@@ -28,16 +28,9 @@ Attaque qui consiste à isoler et contrôler les communications d'un nœud dans 
 
 École de pensée économique qui théorise le marché comme un ensemble d'interactions individuelles volontaires, souligne la spontanéité de l'ordre économique et critique les interventions étatiques. L'École Autrichienne défend le rôle de la propriété privée, de la liberté contractuelle, et du libre-échange, tout en critiquant les effets perturbateurs de la création monétaire sur l'économie. Ses contributeurs, tels que Carl Menger, Ludwig von Mises ou Friedrich Hayek, ont travaillé des concepts tels que la formation des prix, la fonction de la monnaie, les dynamiques du capital ou encore la théorie subjective de la valeur. L'École Autrichienne critique le socialisme pour son incapacité à réaliser des calculs économiques efficaces, et favorise une approche libérale. Elle valorise le marché libre et voit dans l'interventionnisme étatique une source de déséquilibres économiques.
 
-## ELECTRUM
-
-
 ## ELECTRUM LIGHTNING
 
 Implémentation du Lightning Network écrite en python spécifiquement pour le logiciel Electrum.
-
-## ELECTRUM SERVER (ELECTRS)
-
-
 
 ## ELTOO
 
@@ -48,10 +41,6 @@ Protocole généraliste pour les secondes couches de Bitcoin qui permet de défi
 ## EMBRANCHEMENT NATUREL
 
 Séparation temporaire de la blockchain résultant de la diffusion quasi simultanée de plusieurs blocs par différents mineurs à une même hauteur. Cette situation se produit lorsque deux blocs, désignés comme A et B, sont trouvés presque simultanément, entraînant une division temporaire du réseau. Puisque chaque nœud considère comme valide le premier bloc qu'il a reçu, mais que tout le monde n'a pas reçu le même bloc en premier, une partie des nœuds suit la chaîne contenant le bloc A, tandis que l'autre suit celle avec le bloc B. Cet embranchement est résolu lorsqu'une des deux chaînes concurrentes dépasse l'autre en termes de travail accumulé. À ce moment, tous les nœuds du réseau s'accordent automatiquement sur la chaîne la plus longue (avec le plus de travail accumulé), un processus que l'on appelle la réorganisation ou la resynchronisation. Ces embranchements naturels sont inhérents au fonctionnement distribué de Bitcoin. Il sont parfaitement normaux et se résolvent spontanément au bout de quelques blocs (généralement un seul).
-
-## EMPREINTE DE PORTEFEUILLE (ANALYSE)
-
-
 
 ## ENDIANNESS
 
@@ -107,7 +96,3 @@ Pratique qui consiste à attribuer une annotation ou une étiquette à un UTXO s
 ## EXPLORATEUR DE BLOC
 
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser aisément un bloc, une transaction ou une adresse spécifiques.
-
-## EXTRA-NONCE
-
-

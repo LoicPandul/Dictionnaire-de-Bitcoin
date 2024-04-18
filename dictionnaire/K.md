@@ -1,5 +1,3 @@
-## KEYSTORE
-
 
 ## KNAPSACK SOLVER
 

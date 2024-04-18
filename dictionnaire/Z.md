@@ -18,13 +18,6 @@ Méthode cryptographique permettant à une partie (le prouveur) de prouver à un
 
 > *En français, on traduit Zero-Knowledge Proof par « Preuve à divulgation nulle de connaissance ».*
 
-## ZKSNARK
-
-
-## ZOMBIE CHANNEL
-
-
-
 ## ZPRV
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin.
