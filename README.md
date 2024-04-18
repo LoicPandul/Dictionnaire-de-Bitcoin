@@ -33,14 +33,14 @@ Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats diffé
 
 Pour contribuer, voici la marche à suivre : 
 1. Créez votre fork du projet ;
-2. Créez une nouvelle branche établie sur la branche `main` ; 
+2. Créez une nouvelle branche établie sur la branche `edit` ; 
 3. Rédigez vos suggestions de modification directement sur votre branche ;
-4. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
+4. Proposez une Pull Request pour fusionner votre branche face à la branche `edit` du dépôt source.
 
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
 - [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
-- [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
+- [Un dossier de travail `/dictionnaire` organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
 
 **Les contributions doivent se faire uniquement sur le dossier de travail [/dictionnaire](/dictionnaire).** Un script python permet de mettre à jour automatiquement les autres formats.
 
