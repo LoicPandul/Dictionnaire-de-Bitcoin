@@ -8,13 +8,17 @@ def nettoyer_nom_fichier(nom):
     nom = nom.replace('?', '0')  
     return nom
 
+
 def ajuster_liens_et_images(contenu, type_document):
+    # Ajustement des liens selon le type de document
     if type_document == 'complet':
         contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
     elif type_document == 'individuel':
         contenu = re.sub(r'\[([^\]]+)\]\(\.\/(.*?)\.md#(.*?)\)', r'[\1](/dictionnaire/\2.md#\3)', contenu)
-    contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](../../\1)', contenu)
+    # Ajustement des chemins des images pour qu'ils soient relatifs avec le dossier /dictionnaire inclus
+    contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](../../dictionnaire/\1)', contenu)
     return contenu
+
 
 
 chemin_dossier_dictionnaire = '../dictionnaire'
