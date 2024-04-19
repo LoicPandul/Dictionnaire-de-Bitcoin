@@ -13,8 +13,9 @@ def ajuster_liens_et_images(contenu, type_document):
         contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
     elif type_document == 'individuel':
         contenu = re.sub(r'\[([^\]]+)\]\(\.\/(.*?)\.md#(.*?)\)', r'[\1](/dictionnaire/\2.md#\3)', contenu)
-    contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](/dictionnaire/\1)', contenu)
+    contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](../../\1)', contenu)
     return contenu
+
 
 chemin_dossier_dictionnaire = '../dictionnaire'
 chemin_autres_formats = '../autres_formats'
