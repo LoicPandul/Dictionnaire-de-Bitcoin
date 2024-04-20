@@ -1,4 +1,12 @@
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{A}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## ACINQ
 
 Entreprise basée en France spécialisée dans le développement de solutions pour le Lightning Network. Fondée en 2014, ACINQ est très actif dans le développement du protocole. Ils sont notamment connus pour avoir créé Eclair, une des 3 implémentations majeures du Lightning Network (avec Core-Lightning et LND). Ils sont également à l'initiative du portefeuille Phoenix.
@@ -187,6 +195,14 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 > *Cette attaque est également nommée « Attaque Goldfinger ».*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{B}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## BANLIST.DAT
 
 Nom de l'ancien fichier utilisé par le logiciel Bitcoin Core pour enregistrer les adresses IP des nœuds qui ont été bannis par l'utilisateur. Depuis la version 22.0, on utilise le fichier banlist.json à la place.
@@ -818,6 +834,14 @@ Symbole boursier ou monétaire (ticker) utilisé pour représenter une unité de
 Processeur de paiement open-source qui permet aux commerçants et aux utilisateurs d'accepter des paiements en bitcoins sans dépendre d'un tiers pour le traitement des transactions. Lancé en 2017, BTCPay Server offre une solution d'intégration de paiements en cryptomonnaies pour les sites e-commerce, avec des fonctionnalités avancées comme le support de hardware wallets, des outils de facturation et de comptabilité, ainsi que la compatibilité avec le Lightning Network. Son développement a été initié par Nicolas Dorier, en réaction aux actions de Bitpay qui, selon lui, avaient induit en erreur ses utilisateurs en les poussant vers l'adoption de SegWit2x, considéré à tort comme le "vrai" bitcoin. Cette opposition s'est cristallisée dans un tweet désormais célèbre de Nicolas Dorier en août 2017 : « _This is lies, my trust in you is broken, I will make you obsolete_ ».
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{C}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## C
 
 Langage de programmation de haut niveau, créé dans les années 1970 par Dennis Ritchie. Il est connu pour sa performance, sa flexibilité et sa portabilité, ce qui en fait un choix populaire pour le développement de logiciels. Sa syntaxe a servi de base à de nombreux autres langages, y compris C++, Java et C#.
@@ -1140,6 +1164,14 @@ Communauté informelle et internationale de personnes intéressées par l'utilis
 
 
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{D}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## DANDELION
 
 Proposition qui vise à améliorer la confidentialité du routage des transactions dans le réseau Bitcoin pour contrer la désanonymisation. Dans le fonctionnement classique de Bitcoin, les transactions sont immédiatement diffusées à de multiples nœuds. Ce phénomène peut potentiellement permettre à des observateurs de lier des transactions, normalement anonymes, avec des adresses IP. L'objectif du BIP156 est de traiter ce problème. Pour ce faire, il introduit une phase supplémentaire dans la diffusion permettant de préserver l'anonymat avant la propagation publique. Ainsi, Dandelion utilise d'abord une phase de « tige » où la transaction est envoyée à travers un chemin aléatoire de nœuds, avant d'être diffusée à l'ensemble du réseau dans la phase de « capitule ». La tige et le capitule sont des références au comportement de la propagation de la transaction à travers le réseau, qui ressemble à la forme d'un pissenlit (« *a dandelion* » en anglais). Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine.
@@ -1254,6 +1286,14 @@ Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la �
 Règle de standardisation utilisée par les nœuds du réseau pour déterminer ce qu'ils considèrent comme la « limite de poussière » (dust limit). Ce paramètre fixe un taux de frais en sats par kilo-octet virtuel (sats/kvB) qui sert de référence pour calculer si la valeur d'un UTXO est inférieure aux frais nécessaires pour l'inclure dans une transaction. En effet, un UTXO est considéré comme « dust » (poussière) sur Bitcoin s'il requiert plus de frais pour être transféré que la valeur qu'il représente lui-même. Le calcul de cette limite est le suivant : `limite de poussière = (taille de l'entrée + taille de la sortie) * taux de frais`. Comme le taux de frais requis pour qu'une transaction soit incluse dans un bloc Bitcoin varie constamment, le paramètre `DustRelayFee` permet de définir le taux de frais utilisé dans ce calcul par chaque nœud. Par défaut, sur Bitcoin Core, cette valeur est fixée à 3000 sats/kvB. Par exemple, pour calculer la limite de poussière d'une entrée et d'une sortie P2PKH, qui mesurent respectivement 148 et 34 octets, le calcul serait : `limite de poussière = (148+34)*3000/1000 = 546 sats`. Cela signifie que le nœud en question ne relayera pas les transactions incluant un UTXO sécurisé en P2PKH dont la valeur est inférieure à 546 sats.
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{E}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## ECASH (DAVID CHAUM)
 
 Protocole proposé par David Chaum en 1982, qui est un des premiers systèmes de monnaie numérique conçu pour préserver l'anonymat des utilisateurs. Il repose sur des principes de cryptographie à clé publique pour créer une monnaie numérique qui peut être échangée de manière sécurisée et anonyme. eCash fonctionne par la création de jetons numériques signés par une banque. C'est donc une évolution des banques de dépôt, sans pour autant être décentralisée. Lors des transactions, ces jetons sont transférés entre les parties sans révéler l'identité des utilisateurs, préservant ainsi leur vie privée. eCash est considéré comme un précurseur des cryptomonnaies. Il revient d'ailleurs souvent dans les discussions autour de Bitcoin, certains voulant utiliser des systèmes similaires à eCash en surcouche. Aujourd'hui, la mode est plutôt aux systèmes dits « chaumiens fédérés » comme Fedimint.
@@ -1354,6 +1394,14 @@ Pratique qui consiste à attribuer une annotation ou une étiquette à un UTXO s
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser aisément un bloc, une transaction ou une adresse spécifiques.
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{F}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## FARADAY
 
 Outil développé par Lightning Labs conçu pour extraire des données d'un nœud LND et les analyser afin d'assister son opérateur. Il offre des recommandations pour la fermeture des canaux non performants et fournit des informations détaillées sur le comportement de routage du nœud. Faraday aide à identifier les canaux à faible volume et ceux ayant des problèmes de disponibilité (uptime). Cet outil vise à assister les opérateurs de nœuds dans l'allocation de leur capital dans leurs canaux.
@@ -1463,6 +1511,14 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{G}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## GENÈSE (BLOC)
 
 Le bloc de genèse Bitcoin, également connu sous le nom de bloc Genesis ou bloc #0, est le premier bloc du système Bitcoin. Il incarne le lancement concret de Bitcoin. Le bloc de genèse a été créé par le fondateur anonyme de Bitcoin, Satoshi Nakamoto, le 3 janvier 2009. Son hash est [`000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f`](https://mempool.space/fr/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f). Ce bloc contient seulement une transaction coinbase qui génère 50 bitcoins en récompense pour le mineur (dans ce cas, Satoshi Nakamoto lui-même). Il est particulièrement significatif en raison de son message incorporé dans la transaction coinbase : `The Times 03/Jan/2009 Chancellor on brink of second bailout for banks`. Cette citation est une référence à un article du journal *The Times*. Le message est interprété comme une critique du système financier traditionnel et de ses dérives, ce qui a en partie motivé la création de Bitcoin en tant qu'alternative. Puisqu’il incarne le tout premier bloc de la blockchain Bitcoin, le bloc de genèse ne possède évidemment pas de champ contenant le hachage du bloc antérieur (car il n'y en pas). Par ailleurs, les 50 bitcoins générés en récompense dans ce bloc ne sont pas dépensables au niveau protocolaire.
@@ -1508,6 +1564,14 @@ Acronyme de « Graphical user interface », ou « interface graphique utilisateu
 Fichier dans Bitcoin Core utilisé pour stocker une sauvegarde des paramètres de l'interface graphique (GUI). Cette sauvegarde est créée lors de l'utilisation de l'option `-resetguisettings`, qui réinitialise les paramètres de la GUI à leurs valeurs par défaut. Ce fichier permet à l'utilisateur de restaurer ses configurations précédentes si nécessaire.
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{H}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## HAL FINNEY
 
 Cryptographe et développeur informatique de renom, Hal Finney est célèbre pour son rôle crucial dans les débuts de Bitcoin et ses contributions à la cryptographie. Dès la publication du White Paper de Bitcoin en 2008, il fut l'un des premiers à interagir avec Satoshi Nakamoto. Il apporte des retours, signale des bugs et propose des améliorations après le lancement du logiciel en janvier 2009. Il a marqué l'histoire de Bitcoin en étant le destinataire de la première transaction Bitcoin, recevant 10 BTC de Satoshi dans le bloc n°170. Hal Finney est aussi probablement la première personne, après Satoshi, à avoir miné un bloc : le bloc n°78. Plus que cela, Hal Finney a été le premier promoteur de Bitcoin durant une période où le projet était encore méconnu. En dehors de Bitcoin, il est reconnu pour son invention de RPoW (*Reusable Proofs of Work*), un système de monnaie électronique lancé en 2004. Bien que RPoW n'ait pas rencontré le succès attendu, il demeure l'un des précurseurs les plus aboutis de Bitcoin. En tant que cypherpunk engagé, Hal Finney a également joué un rôle déterminant dans l'élaboration et l'amélioration de PGP (*Pretty Good Privacy*). Hal Finney nous a quittés le 28 août 2014, emporté par la sclérose latérale amyotrophique (maladie de Charcot). Il a été cryogénisé par la fondation Alcor. Il restera une figure majeure de l'histoire de la cryptographie et de Bitcoin.
@@ -1556,6 +1620,14 @@ L'horodatage, ou « timestamp » en anglais, est un mécanisme qui consiste à a
 
 
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{I}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## INBOUND CAPACITY
 
 Désigne la quantité maximale de bitcoins qu'un nœud peut recevoir à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud pair a engagés dans le canal lors de son ouverture, ou que l'on a envoyé lors d'un paiement Lightning sortant.
@@ -1592,6 +1664,14 @@ Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issu
 
 
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{J}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## JAVA
 
 Langage de programmation polyvalent orienté objet, célèbre pour sa philosophie « écrire une fois, exécuter partout ». Java est largement utilisé pour le développement d'applications d'entreprise, de logiciels mobiles (en particulier pour Android), et dans des systèmes embarqués ou d'applications serveur.
@@ -1606,6 +1686,14 @@ Les portefeuilles JBOK, acronyme pour « Just a Bunch Of Keys » (en français �
 
 
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{K}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## KNAPSACK SOLVER
 
 Ancienne méthode utilisée pour la sélection de pièces dans le portefeuille de Bitcoin Core avant la version 0.17. Le Knapsack Solver tente de résoudre le problème de sélection de pièces en sélectionnant de manière itérative et aléatoire des UTXO et en les additionnant par sous-ensembles, dans l'objectif de minimiser les frais et la taille de la transaction.
@@ -1618,6 +1706,14 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 - La facilitation du traçage on-chain : La réalisation d'un KYC crée un lien direct entre l'identité de l'utilisateur et ses transactions sur la blockchain, permettant d'établir un point d'entrée pour une analyse de chaîne.
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{L}
+\end{center}
+\vspace*{\fill}
+\newpage
 
 ## LABEL
 
@@ -1670,6 +1766,14 @@ Le logarithme discret est un problème mathématique qui est utilisé dans certa
 Service développé par Lightning Labs conçu pour faciliter l'équilibrage de liquidités dans les canaux Lightning. Loop permet aux utilisateurs de transférer des fonds entre Bitcoin et le Lightning Network, sans avoir à fermer ou ouvrir un canal. Loop aide ainsi à optimiser sa liquidité et à réduire les frais de gestion de ses canaux.
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{M}
+\end{center}
+\vspace*{\fill}
+\newpage
 
 ## MAGICAL BITCOIN
 
@@ -1802,6 +1906,14 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 
 
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{N}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## NESTED SEGWIT
 
 Standard de scripts utilisés pour envelopper des scripts SegWit natifs, au sein d'un script P2SH. Les scripts Nested SegWit ont été inventé au lancement de SegWit pour faciliter son adoption. Ils permettent d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif.
@@ -1872,6 +1984,14 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 > *Pour plus d'informations, voir la définition de [**NSEQUENCE**](#nsequence).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{O}
+\end{center}
+\vspace*{\fill}
+\newpage
 
 ## OBOE (OFF-BY-ONE ERROR)
 
@@ -2308,6 +2428,14 @@ Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output link
 > *Pour plus d'informations, voir la définition de [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{P}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## P2PK
 
 `P2PK` est le sigle pour *Pay to Public Key* (en français « payer à une clé publique »). C’est un modèle de script standard utilisé sur Bitcoin pour établir des conditions de dépenses sur un UTXO. Il permet de bloquer des bitcoins directement sur une clé publique, plutôt que sur une adresse. 
@@ -2515,11 +2643,27 @@ Langage de programmation de haut niveau, connu pour sa syntaxe claire et sa lisi
 
 
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{Q}
+\end{center}
+\vspace*{\fill}
+\newpage
+
 ## QUBIT
 
 Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent prendre la valeur de 0, la valeur de 1, ou bien une superposition du 0 et du 1. En utilisant cette superposition d'états avec d'autres phénomènes quantiques tels que l'intrication et l'interférence quantique, un ordinateur quantique peut paralléliser les processus de calculs, et donc résoudre certains problèmes spécifiques beaucoup plus rapidement.
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{R}
+\end{center}
+\vspace*{\fill}
+\newpage
 
 ## RACINE DE MERKLE
 
@@ -2622,6 +2766,14 @@ Langage de programmation moderne axé sur la sécurité et la performance. Conç
 Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en collaboration avec Square. Rust-Lightning fournit une implémentation de Lightning. Elle sert de base au Lightning Development Kit (LDK).
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{S}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## SAMOURAI WALLET
 
 Logiciel de portefeuille Bitcoin pour appareils mobiles Android axé sur la confidentialité. Il offre des fonctionnalités avancées telles que les coinjoins Whirlpool, Stonewall, StonewallX2, Ricochet ou encore Stowaway (payjoin). Samourai implémente également de nombreuses protections pour aider l'utilisateur à protéger sa vie privée face à l'analyse de chaîne.
@@ -2914,6 +3066,14 @@ Traduction française de « *Initial Block Download* ». Fait référence au pro
 > *Pour plus d'informations, voir la définition de [**INITIAL BLOCK DOWNLOAD (IBD)**](#initial-block-download-ibd).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{T}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## TAPROOT
 
 Mise à jour majeure du protocole Bitcoin, adoptée par le biais d'un soft fork en novembre 2021. Cette mise à jour apporte des améliorations significatives en termes de confidentialité, d'efficacité et de flexibilité. Elle permet l'utilisation du protocole de Schnorr et l'utilisation d'un script qui peut être révélé lors de la dépense. Le protocole de Schnorr, intégré à cette mise à jour, est un algorithme de signature numérique établi sur la cryptographie sur les courbes elliptiques (ECC), comme ECDSA. Dans le contexte de Bitcoin, Schnorr est utilisé pour générer une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Comme ECDSA sur Bitcoin, Schnorr utilise la courbe elliptique `secp256k1`, définie par l'équation $y^2 = x^3 + 7$. Les bitcoins bloqués avec Taproot peuvent être dépensés soit en satisfaisant l'un des scripts, soit en fournissant une signature valide correspondant à la clé publique, ce qui permet de garder les scripts privés. On y utilise un MAST pour permettre l'utilisation de plusieurs scripts. N'importe lequel peut-être utiliser pour dépenser les bitcoins associés. Cela permet des fonctionnalités plus complexes et des contrats intelligents plus sophistiqués.
@@ -3014,6 +3174,14 @@ Identifiant unique associé à chaque transaction Bitcoin. Il est généré en c
 > *Pour plus d'informations, voir la définition de [**WTXID**](#wtxid).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{U}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## UASF (USER-ACTIVATED SOFT FORK)
 
 Qualifie un soft fork dans Bitcoin lorsqu'il est initié et appliqué par les utilisateurs du réseau via leurs nœuds, sans dépendre de l'approbation des mineurs. Les nœuds du réseau mettent à jour leur logiciel pour adopter les nouvelles règles du soft fork et advienne que pourra. Typiquement utilisé en cas d'urgence, notamment lorsque les mineurs sont majoritairement opposés à l'adoption d'un soft fork, l'UASF sert de moyen de pression pour éviter une concentration excessive de pouvoir chez les mineurs. Dans les faits, l'UASF est même devenu un outil de dissuasion, agité par les opérateurs de nœuds lorsque les mineurs abusent de leur pouvoir. Toutefois, si l'UASF est réellement appliqué, il présente des risques, notamment la possibilité d'une scission de la blockchain, créant une nouvelle chaîne qui peut manquer de valeur économique et de sécurité. La première proposition formelle d'UASF provient du développeur Shaolin Fry, qui a poussé le BIP148 en mars 2017 pour faire pression sur les mineurs qui refusaient de signaler SegWit.
@@ -3049,6 +3217,14 @@ Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un mo
 > *En français, on pourrait traduire « UTXO set » par « ensemble d'UTXO ». Pour plus d'informations, voir la définition d'[**UTXO**](.U.md#utxo).
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{V}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## VANITY (ADDRESS)
 
 Adresse de réception personnalisée qui contient une séquence spécifique de caractères choisie par l'utilisateur, généralement pour des raisons esthétiques. Ces adresses sont générées en exécutant un processus de calcul, où de multiples clés privées sont créées jusqu'à ce que l'une d'entre elles corresponde à une adresse de réception contenant la séquence désirée. Ce processus ne compromet pas la sécurité de l'adresse, mais peut nécessiter un temps et des ressources de calcul considérables, surtout pour des séquences plus longues ou plus spécifiques. C'est une sorte de processus de brute force.
@@ -3070,6 +3246,14 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{W}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## WABISABI
 
 Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi.
@@ -3129,6 +3313,14 @@ Extension du TXID traditionnel, incluant les données de témoin (witness) intro
 > *Pour plus d'informations, voir la définition de [**TXID**](#txid-transaction-identifier) et [**SEGWIT**](#segwit).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{X}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## XOR
 
 Sigle de l'opération « Exclusive or », en français « Ou exclusif ». C'est une fonction fondamentale de la logique booléenne. Cette opération prend deux opérandes booléens, chacun étant `vrai` ou `faux`, et produit une sortie `vraie` uniquement lorsque les deux opérandes diffèrent. Autrement dit, la sortie de l'opération `XOR` est `vraie` si exactement un (mais pas les deux) des opérandes est `vrai`. Par exemple, l'opération `XOR` entre `1` et `0` donnera comme résultat `1`. Nous noterons : $1 \oplus 0 = 1$. De même, l'opération `XOR` peut être effectuée sur des séquences plus longues de bits. Par exemple, $10110 \oplus 01110 = 11000$. Chaque bit de la séquence est comparé à son homologue et l'opération `XOR` est appliquée. Voici la table de vérité de l'opération `XOR` :
@@ -3163,6 +3355,14 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{Y}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## YPRV
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin. 
@@ -3174,6 +3374,14 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin.
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{Z}
+\end{center}
+\vspace*{\fill}
+\newpage
 ## ZEROCONF
 
 Pratique risquée consistant à considérer une transaction Bitcoin comme définitive, et à procéder à l'exécution de l'acte associé en contrepartie (tel que la vente d'un bien ou d'un service), avant que la transaction ne soit réellement incluse dans un bloc sur la blockchain. Les transactions non confirmées, ou en zeroconf, sont vulnérables à des attaques de double dépense, car elles ne sont pas encore irrévocablement inscrites dans le registre. Le zeroconf peut éventuellement être envisagé dans des contextes très spécifiques, où la rapidité est prioritaire, comme dans le cas de petites transactions commerciales ou dans le cas d'une transaction entre proches. Dans ces situations, le risque de double dépense est souvent considéré comme acceptable en comparaison de l'avantage d'une transaction rapide. Néanmoins, pour des transactions importantes, en particulier lorsqu'on ne connaît pas l'expéditeur, il est crucial d'attendre plusieurs confirmations avant de considérer la transaction comme immuable. La norme généralement acceptée est d'attendre 6 confirmations, ce qui signifie que 5 blocs supplémentaires doivent être minés après celui incluant la transaction, pour la considérer comme définitive.
@@ -3207,3 +3415,11 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin.
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\fontsize{95}{105}\selectfont\textbf{ASSETS}
+\end{center}
+\vspace*{\fill}
+\newpage
