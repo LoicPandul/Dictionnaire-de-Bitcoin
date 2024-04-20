@@ -1,8 +1,9 @@
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{A}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{A}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -45,11 +46,13 @@ Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations
 ## ADRESSE DE RÉCEPTION
 
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Les adresses SegWit sont composées des informations suivantes : 
-* Un HRP pour désigner « bitcoin » : `bc` ; 
-* Un séparateur : `1` ; 
-* La version de SegWit utilisée : `q` ou `p` ; 
-* La charge utile : le condensat de la clé publique ; 
-* La somme de contrôle : un code BCH.
+\begin{itemize}
+  \item Un HRP pour désigner « bitcoin » : `bc` ;
+  \item Un séparateur : `1` ;
+  \item La version de SegWit utilisée : `q` ou `p` ;
+  \item La charge utile : le condensat de la clé publique ;
+  \item La somme de contrôle : un code BCH.
+\end{itemize}
 
 Une adresse de réception peut être représentée sous la forme d'une chaîne de caractères alphanumériques ou sous la forme d'un QR code. Chaque adresse peut être utilisée plusieurs fois, mais c'est une pratique très déconseillée. En effet, dans le but de maintenir un certain niveau de confidentialité, il est conseillé de n'utiliser chaque adresse Bitcoin qu'une seule fois. Il faut en générer une nouvelle pour tout paiement entrant vers son portefeuille. Une adresse est encodée en `Bech32` pour les adresses SegWit V0, en `Bech32m` pour les adresses SegWit V1, et en `Base58check` pour les adresses Legacy. D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
@@ -57,10 +60,12 @@ Une adresse de réception peut être représentée sous la forme d'une chaîne d
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin. Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. Le calcul qu'effectuent les nœuds pour calculer la nouvelle cible est le suivant : $N = A \cdot \left(\frac{T}{1,209,600}\right)$
 Où :
-* $N$ : La nouvelle cible ;
-* $A$ : L'ancienne cible des 2016 derniers blocs ;
-* $T$ : Le temps total réel des 2016 derniers blocs en secondes ;
-* $1,209,600$ : Le temps cible en secondes pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
+\begin{itemize}
+  \item $N$ : La nouvelle cible ;
+  \item $A$ : L'ancienne cible des 2016 derniers blocs ;
+  \item $T$ : Le temps total réel des 2016 derniers blocs en secondes ;
+  \item $1,209,600$ : Le temps cible en secondes pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
+\end{itemize}
 
 > *En français, on parle parfois également de « reciblage » pour évoquer l'ajustement. En anglais, on parle de « Difficulty Adjustment ».*
 
@@ -134,10 +139,12 @@ Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pou
 ![](../../dictionnaire/assets/1.png)
 
 Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la `TX 7` fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
-* `TX 7` ;
-* `HASH 8` ;
-* `HASH 5-6` ;
-* `HASH 1-2-3-4`.
+\begin{itemize}
+  \item `TX 7` ;
+  \item `HASH 8` ;
+  \item `HASH 5-6` ;
+  \item `HASH 1-2-3-4`.
+\end{itemize}
 Grâce à ces quelques informations, je suis en capacité de calculer les nœuds intermédiaires jusqu'à la racine de Merkle.
 
 ![](../../dictionnaire/assets/2.png)
@@ -197,9 +204,10 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{B}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{B}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -631,9 +639,11 @@ Dans le contexte de Bitcoin, le terme « bit » est aussi utilisé pour désigne
 ## BITCOIN (« B » MAJUSCULE)
 
 Bitcoin est le nom du système de cash électronique pair-à-pair créé par Satoshi Nakamoto en 2009. L'utilisation du terme Bitcoin avec un « B » majuscule peut vouloir évoquer trois choses différentes :
-* Le système Bitcoin ;
-* Le protocole Bitcoin ;
-* Le réseau Bitcoin.
+\begin{itemize}
+  \item Le système Bitcoin ;
+  \item Le protocole Bitcoin ;
+  \item Le réseau Bitcoin.
+\end{itemize}
 
 Le terme de bitcoin avec un « b » minuscule est généralement réservé pour évoquer l'unité monétaire échangée sur ce système.
 
@@ -733,12 +743,14 @@ Nom de l'ancien dossier utilisé dans Bitcoin Core pour cataloguer les métadonn
 ## BLOC
 
 Un bloc est une structure de données dans le système Bitcoin. Un bloc contient un ensemble de transactions valides et des métadonnées contenues dans son entête. Chaque bloc est lié au suivant par le hachage de son entête, formant ainsi la blockchain (chaîne de blocs). La blockchain agit comme un serveur d'horodatage qui permet à chaque utilisateur de connaître l'ensemble des transactions passées, afin de vérifier la non-existence d'une transaction et éviter la double dépense. Les transactions sont organisées dans un arbre de Merkle. Cet accumulateur cryptographique permet de produire un condensat de toutes les transactions d'un bloc, appelé « Racine de Merkle » (Merkle root). L'entête d'un bloc contient 6 éléments :
-* La version du bloc ;
-* L'empreinte du bloc précédent ;
-* La racine de l'arbre de Merkle des transactions ;
-* L'horodatage du bloc ;
-* La cible de difficulté ;
-* Le nonce (« *Number only used ONCE* »).
+\begin{itemize}
+  \item La version du bloc ;
+  \item L'empreinte du bloc précédent ;
+  \item La racine de l'arbre de Merkle des transactions ;
+  \item L'horodatage du bloc ;
+  \item La cible de difficulté ;
+  \item Le nonce (« *Number only used ONCE* »).
+\end{itemize}
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
 
@@ -819,9 +831,11 @@ Dans le cadre de Git, représente une séparation du flux de travail principal, 
 ## BRC-20
 
 BRC-20 définit un ensemble de règles et de méthodes à respecter pour permettre une interaction avec des jetons non natifs sur Bitcoin. Il s'appuie sur les inscriptions du protocole Ordinals afin de définir des fonctions interprétées en dehors de la chaine. Ce standard a été créé par le développeur Domo, au début du mois de mars 2023. Selon son créateur, ce standard n'est qu'une expérimentation. Cela n'a pas empêché la machine spéculative de prendre le dessus durant les mois d'avril et de mai 2023. Des milliers d'investisseurs se sont emparés de ce standard, en achetant massivement les jetons BRC-20, créant au passage une hausse soudaine et historique des frais de transaction sur Bitcoin. Les jetons BRC-20 sont dénués d'existence concrète sur Bitcoin. Ils sont off-chain. Ce protocole utilise simplement Bitcoin, à travers le protocole Ordinals, pour stocker et horodater des fonctions permettant la gestion des jetons BRC-20. Ces fonctions sont encodées dans un format texte JSON, puis elles sont diffusées sous forme d’inscription Ordinals sur Bitcoin. Il en existe trois :
-* `deploy`, qui permet de créer un nouveau jeton BRC-20 et de définir ses conditions d'utilisation ;
-* `mint`, qui permet de réclamer des jetons BRC-20 spécifiques. Cela représente leur émission ;
-* `transfer`, qui permet de transférer des jetons BRC-20 entre plusieurs utilisateurs.
+\begin{itemize}
+  \item `deploy`, qui permet de créer un nouveau jeton BRC-20 et de définir ses conditions d'utilisation ;
+  \item `mint`, qui permet de réclamer des jetons BRC-20 spécifiques. Cela représente leur émission ;
+  \item `transfer`, qui permet de transférer des jetons BRC-20 entre plusieurs utilisateurs.
+\end{itemize}
 
 Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs qui recensent l'intégralité des fonctions. Le standard BRC-20 est alors une utilisation très peu optimisée de Bitcoin par rapport à un protocole tel que RGB.
 
@@ -836,9 +850,10 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{C}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{C}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -931,20 +946,22 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 ## CLÉ ÉTENDUE
 
 Suite de caractère qui combine une clé (publique ou privée), son code de chaîne associé et une série de métadonnées. Une clé étendue rassemble en une seule chaîne de caractère tous les éléments nécessaires à la dérivation de clés enfants. Elles sont utilisées dans les portefeuilles déterministes et hiérarchiques, et peuvent être de deux types : une clé publique étendue (utilisée pour dériver des clés publiques enfants) ou une clé privée étendue (utilisée pour dériver à la fois des clés privées et des clés publiques enfants). Une clé étendue inclut donc plusieurs données différentes, décrites au sein du BIP32, dans l'ordre : 
-* Le préfixe. `prv` et `pub` sont des HRP permettant d'indiquer si l'on a à faire à une clé privée étendue (`prv`) ou à une clé publique étendue (`pub`). La première lettre du préfixe permet, elle, de désigner la version de la clé étendue : 
-	* `x` permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin ;
-	* `t` permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin Testnet ;
-	* `y` permet d'indiquer un objectif Nested SegWit sur Bitcoin ;
-	* `u` permet d'indiquer un objectif Nested SegWit sur Bitcoin Testnet ;
-	* `z` permet d'indiquer un objectif SegWit V0 sur Bitcoin ;
-	* `v` permet d'indiquer un objectif SegWit V0 sur Bitcoin Testnet.
-* La profondeur, qui indique le nombre de dérivations intervenues depuis la clé maîtresse pour arriver jusqu'à la clé étendue ;
-* L'empreinte du parent. Cela représente les 4 premiers octets du `HASH160` de la clé publique parent ;
-* L'index. C'est le numéro de la paire parmi ses sœurs dont est issue la clé étendue ;
-* Le code de chaîne ;
-* Un octet de rembourrage si c'est une clé privée `0x00` ;
-* La clé privée ou la clé publique ;
-* Une somme de contrôle. Elle incarne les 4 premiers octets du `HASH256` de tout le reste de la clé étendue.
+\begin{itemize}
+  \item Le préfixe. `prv` et `pub` sont des HRP permettant d'indiquer si l'on a à faire à une clé privée étendue (`prv`) ou à une clé publique étendue (`pub`). La première lettre du préfixe permet, elle, de désigner la version de la clé étendue :
+  \item `x` permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin ;
+  \item `t` permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin Testnet ;
+  \item `y` permet d'indiquer un objectif Nested SegWit sur Bitcoin ;
+  \item `u` permet d'indiquer un objectif Nested SegWit sur Bitcoin Testnet ;
+  \item `z` permet d'indiquer un objectif SegWit V0 sur Bitcoin ;
+  \item `v` permet d'indiquer un objectif SegWit V0 sur Bitcoin Testnet.
+  \item La profondeur, qui indique le nombre de dérivations intervenues depuis la clé maîtresse pour arriver jusqu'à la clé étendue ;
+  \item L'empreinte du parent. Cela représente les 4 premiers octets du `HASH160` de la clé publique parent ;
+  \item L'index. C'est le numéro de la paire parmi ses sœurs dont est issue la clé étendue ;
+  \item Le code de chaîne ;
+  \item Un octet de rembourrage si c'est une clé privée `0x00` ;
+  \item La clé privée ou la clé publique ;
+  \item Une somme de contrôle. Elle incarne les 4 premiers octets du `HASH256` de tout le reste de la clé étendue.
+\end{itemize}
 
 Dans la pratique, la clé publique étendue est utilisée pour générer des adresses de réception et pour observer les transactions d'un compte, sans exposer les clés privées associées. Cela peut permettre, par exemple, la création d'un portefeuille dit « watch-only ». Il est toutefois important de noter que la clé publique étendue est une information sensible pour la confidentialité de l'utilisateur, car sa divulgation peut permettre à des tiers de tracer les transactions et de visualiser le solde du compte associé.
 
@@ -1165,9 +1182,10 @@ Communauté informelle et internationale de personnes intéressées par l'utilis
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{D}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{D}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1288,9 +1306,10 @@ Règle de standardisation utilisée par les nœuds du réseau pour déterminer c
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{E}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{E}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1345,23 +1364,29 @@ Désigne l'ordre dans lequel une séquence d'octets est arrangée et interprét�
 ## ENTÊTE DE BLOC
 
 L'entête de bloc est une structure de données servant de composant principal dans la construction d'un bloc Bitcoin. Chaque bloc est composé d'un entête et d'une liste de transactions. L'entête de bloc contient les informations cruciales qui permettent d'assurer l'intégrité et la validité d'un bloc au sein de la chaîne de blocs (blockchain). L'entête de bloc contient 80 octets de métadonnées et se compose des éléments suivants :
-* La version du bloc ;
-* L'empreinte du bloc précédent ;
-* La racine de l'arbre de Merkle des transactions ;
-* L'horodatage du bloc ;
-* La cible de difficulté ;
-* Le nonce (Number only used ONCE).
+\begin{itemize}
+  \item La version du bloc ;
+  \item L'empreinte du bloc précédent ;
+  \item La racine de l'arbre de Merkle des transactions ;
+  \item L'horodatage du bloc ;
+  \item La cible de difficulté ;
+  \item Le nonce (Number only used ONCE).
+\end{itemize}
 
 Par exemple, voici l'entête du [bloc n° 785 530](https://mempool.space/fr/block/000000000000000000039a294df2039d5fc759f5fd4dde06f09a17efc29a01e4) au format hexadécimal, miné par Foundry USA le 15 avril 2023 : `00e0ff3f5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000206bde3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0bcb13a64b2e0051743f09a40`
 
 Si l'on décompose cet entête, on peut reconnaitre :
-* La version : `00e0ff3f` ;
-* L'empreinte précédente : `5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000` ;
-* La racine de Merkle : 
+\begin{itemize}
+  \item La version : `00e0ff3f` ;
+  \item L'empreinte précédente : `5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000` ;
+  \item La racine de Merkle :
+\end{itemize}
 `206bde3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0` ;
-* L'horodatage : `bcb13a64` ;
-* La cible : `b2e00517` ;
-* Le nonce : `43f09a40`.
+\begin{itemize}
+  \item L'horodatage : `bcb13a64` ;
+  \item La cible : `b2e00517` ;
+  \item Le nonce : `43f09a40`.
+\end{itemize}
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
 
@@ -1396,9 +1421,10 @@ Outil en ligne ou en local qui permet de transformer les données brutes de la b
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{F}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{F}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1446,15 +1472,19 @@ Vielle méthode d'activation de soft fork utilisée dans les premières années 
 ## FONCTION DE HACHAGE CRYPTOGRAPHIQUE
 
 Une fonction de hachage, également appelée algorithme de hachage, est une fonction mathématique qui prend une entrée de taille variable (appelée message) et produit une sortie de taille fixe (appelée hash, hachage, condensat ou empreinte). Les fonctions de hachage sont des primitives largement utilisées en cryptographie. Elles présentent des propriétés spécifiques qui les rendent appropriées pour une utilisation dans des contextes sécurisés :
-* Résistance aux préimages : Il doit être très difficile de trouver un message donnant un hachage spécifique, c'est-à-dire de trouver une préimage $m$ pour un hash $h$ tel que $h = H(m)$, où $H$ est la fonction de hachage ;
-* Résistance aux secondes préimages : Étant donné un message $m_1$, il doit être très difficile de trouver un autre message $m_2$ (différent de $m_1$) tel que $H(m_1) = H(m_2)$ ;
-* Résistance aux collisions : Il doit être très difficile de trouver deux messages distincts $m_1$ et $m_2$ tels que $H(m_1) = H(m_2)$ ;
-* Résistance à la falsification : De petites modifications dans l'entrée doivent provoquer des changements significatifs et imprévisibles dans la sortie.
+\begin{itemize}
+  \item Résistance aux préimages : Il doit être très difficile de trouver un message donnant un hachage spécifique, c'est-à-dire de trouver une préimage $m$ pour un hash $h$ tel que $h = H(m)$, où $H$ est la fonction de hachage ;
+  \item Résistance aux secondes préimages : Étant donné un message $m_1$, il doit être très difficile de trouver un autre message $m_2$ (différent de $m_1$) tel que $H(m_1) = H(m_2)$ ;
+  \item Résistance aux collisions : Il doit être très difficile de trouver deux messages distincts $m_1$ et $m_2$ tels que $H(m_1) = H(m_2)$ ;
+  \item Résistance à la falsification : De petites modifications dans l'entrée doivent provoquer des changements significatifs et imprévisibles dans la sortie.
+\end{itemize}
 
 Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieurs fins, notamment pour le mécanisme de preuve de travail (Proof-of-Work), les identifiants de transaction, la génération d'adresses, le calcul de sommes de contrôle et la création de structures de données telles que les arbres de Merkle. Sur la partie protocolaire, Bitcoin utilise exclusivement la fonction `SHA256d`, également nommée `HASH256`, qui consiste en un double hachage `SHA256`. On utilise aussi `HASH256` dans le calcul de certaines sommes de contrôle, notamment pour les clés étendues (`xpub`, `xprv`...). Sur la partie portefeuille, on utilise également :
-* `SHA256` simple pour les sommes de contrôle des phrases mnémoniques ;
-* `SHA512` au sein des algorithmes `HMAC` et `PBKDF2` utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
-* `HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception et dans le calcul des empreintes de clés parents pour les clés étendues.
+\begin{itemize}
+  \item `SHA256` simple pour les sommes de contrôle des phrases mnémoniques ;
+  \item `SHA512` au sein des algorithmes `HMAC` et `PBKDF2` utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
+  \item `HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception et dans le calcul des empreintes de clés parents pour les clés étendues.
+\end{itemize}
 
 > *En anglais, on parle de « hash function ».*
 
@@ -1513,9 +1543,10 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{G}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{G}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1566,9 +1597,10 @@ Fichier dans Bitcoin Core utilisé pour stocker une sauvegarde des paramètres d
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{H}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{H}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1621,9 +1653,10 @@ L'horodatage, ou « timestamp » en anglais, est un mécanisme qui consiste à a
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{I}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{I}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1665,9 +1698,10 @@ Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issu
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{J}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{J}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1687,9 +1721,10 @@ Les portefeuilles JBOK, acronyme pour « Just a Bunch Of Keys » (en français �
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{K}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{K}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1708,9 +1743,10 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{L}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{L}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1768,9 +1804,10 @@ Service développé par Lightning Labs conçu pour faciliter l'équilibrage de l
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{M}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{M}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1884,10 +1921,12 @@ Dans le contexte de Bitcoin, un mineur fait référence à un ordinateur engagé
 ## MINISCRIPT
 
 Framework permettant de fournir un cadre pour programmer des scripts de manière sécurisée sur Bitcoin. Le langage natif de Bitcoin s'appelle script. Celui-ci est assez complexe à utiliser en pratique, notamment pour des applications sophistiquées et personnalisées. Notamment, il est très difficile de vérifier les limitations d'un script. Miniscript utilise un sous-ensemble de scripts Bitcoin pour simplifier leur création, leur analyse et leur vérification. Chaque miniscript est équivalent 1 pour 1 avec un script natif. On utilise un langage de Policies facile à utiliser, qui est ensuite compilé en Miniscript, pour enfin correspondre à un Script natif. Miniscript permet ainsi aux développeurs de construire des scripts sophistiqués d'une manière plus sûre et plus fiable. Les propriétés essentielles de Miniscript sont les suivantes : 
-* Il permet une analyse statique du script, notamment des conditions de dépenses qu'il permet et de son coût en termes de ressources ;
-* Il permet de réaliser des scripts qui respectent le Consensus ;
-* Il permet d'analyser si oui ou non, les différents chemins de dépense respectent les règles standards des nœuds ;
-* Il permet de mettre en place un standard général, compréhensible et composable, pour l'ensemble des logiciels et matériels de portefeuille.
+\begin{itemize}
+  \item Il permet une analyse statique du script, notamment des conditions de dépenses qu'il permet et de son coût en termes de ressources ;
+  \item Il permet de réaliser des scripts qui respectent le Consensus ;
+  \item Il permet d'analyser si oui ou non, les différents chemins de dépense respectent les règles standards des nœuds ;
+  \item Il permet de mettre en place un standard général, compréhensible et composable, pour l'ensemble des logiciels et matériels de portefeuille.
+\end{itemize}
 Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et Sanket Kanjalkar, via l'entreprise Blockstream. Miniscript est ajouté au wallet Bitcoin Core en mode watch-only en décembre 2022 avec la version 24.0, puis complètement en mai 2023 avec la version 25.0.
 
 ## MINITAPSCRIPT
@@ -1907,9 +1946,10 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{N}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{N}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1986,9 +2026,10 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{O}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{O}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2430,9 +2471,10 @@ Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output link
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{P}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{P}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2644,9 +2686,10 @@ Langage de programmation de haut niveau, connu pour sa syntaxe claire et sa lisi
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{Q}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{Q}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2658,9 +2701,10 @@ Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent pre
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{R}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{R}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2768,9 +2812,10 @@ Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en 
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{S}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{S}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3068,9 +3113,10 @@ Traduction française de « *Initial Block Download* ». Fait référence au pro
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{T}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{T}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3176,9 +3222,10 @@ Identifiant unique associé à chaque transaction Bitcoin. Il est généré en c
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{U}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{U}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3219,9 +3266,10 @@ Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un mo
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{V}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{V}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3248,9 +3296,10 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{W}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{W}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3315,9 +3364,10 @@ Extension du TXID traditionnel, incluant les données de témoin (witness) intro
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{X}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{X}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3337,10 +3387,12 @@ Sigle de l'opération « Exclusive or », en français « Ou exclusif ». C'est 
 </div>
 
 L'opération `XOR` est utilisée dans de nombreux domaines de l'informatique, notamment dans la cryptographie, pour ses attributs intéressants comme : 
-* Sa commutativité : L'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
-* Son associativité : Le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
-* Il dispose d'un élément neutre `0` : Une opérande xorée à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
-* Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
+\begin{itemize}
+  \item Sa commutativité : L'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
+  \item Son associativité : Le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
+  \item Il dispose d'un élément neutre `0` : Une opérande xorée à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
+  \item Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
+\end{itemize}
 
 Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreux endroits. Par exemple, le `XOR` est massivement utilisé dans la fonction `SHA256`, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission. Dans le domaine plus général de la cryptographie, le `XOR` peut être utilisé tel quel comme un algorithme de chiffrement symétrique. On appelle cet algorithme le « Masque Jetable » ou le « Chiffre Vernam » du nom de son inventeur. Cet algorithme, bien qu'inutile en pratique du fait de la longueur de la clé, est un des seuls algorithmes de chiffrement reconnus comme inconditionnellement sûrs.
 
@@ -3357,9 +3409,10 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{Y}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{Y}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3376,9 +3429,10 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin.
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{Z}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{Z}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3417,9 +3471,10 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin.
 
 
 \newpage
+\thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-\fontsize{95}{105}\selectfont\textbf{ASSETS}
+{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{ASSETS}}
 \end{center}
 \vspace*{\fill}
 \newpage
