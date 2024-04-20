@@ -7,7 +7,7 @@ def convert_md_to_pdf(md_file_path, pdf_output_path):
         format='md',
         to='pdf',
         outputfile=pdf_output_path,
-        extra_args=['--pdf-engine=xelatex', '-V geometry:margin=1in']
+        extra_args=['--pdf-engine=xelatex', '-V geometry:margin=0.60in']
     )
 
     print(f"Le fichier PDF a été créé : {pdf_output_path}")
