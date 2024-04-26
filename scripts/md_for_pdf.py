@@ -16,7 +16,15 @@ def markdown_to_latex_lists(contenu):
             if not in_list:
                 new_content.append('\\begin{itemize}') 
                 in_list = True
-            new_content.append('  \\item ' + line.strip()[2:])
+            if '`' in line:
+                parts = line.split('`')
+                new_content.append('  \\item ' + parts[0].strip().lstrip('* '))
+                for i in range(1, len(parts), 2):
+                    new_content.append('  \\texttt{' + parts[i] + '}')
+                    if i + 1 < len(parts):
+                        new_content.append('  ' + parts[i+1].strip())
+            else:
+                new_content.append('  \\item ' + line.strip().lstrip('* '))
         else:
             if in_list:
                 new_content.append('\\end{itemize}') 
@@ -25,6 +33,8 @@ def markdown_to_latex_lists(contenu):
     if in_list:
         new_content.append('\\end{itemize}')
     return '\n'.join(new_content)
+
+
 
 def creer_page_titre(lettre):
     return f"""

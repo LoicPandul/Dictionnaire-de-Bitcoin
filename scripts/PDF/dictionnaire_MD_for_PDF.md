@@ -47,9 +47,17 @@ Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations
 
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Les adresses SegWit sont composées des informations suivantes : 
 \begin{itemize}
-  \item Un HRP pour désigner « bitcoin » : `bc` ;
-  \item Un séparateur : `1` ;
-  \item La version de SegWit utilisée : `q` ou `p` ;
+  \item Un HRP pour désigner « bitcoin » :
+  \texttt{bc}
+  ;
+  \item Un séparateur :
+  \texttt{1}
+  ;
+  \item La version de SegWit utilisée :
+  \texttt{q}
+  ou
+  \texttt{p}
+  ;
   \item La charge utile : le condensat de la clé publique ;
   \item La somme de contrôle : un code BCH.
 \end{itemize}
@@ -112,8 +120,10 @@ Mécanisme qui permet d'établir une connexion entre le système principal de Bi
 ## ANONSETS (ANONYMITY SETS)
 
 Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d'un UTXO particulier. Plus spécifiquement, ils mesurent le nombre d'UTXOs indistinguables au sein de l'ensemble qui inclut la pièce en étudiée. Puisqu'il faut disposer d'un groupe d'UTXOs identiques, les anonsets sont généralement calculés au sein d'un cycle de CoinJoins. Il permettent, le cas échéant, de juger de la qualité des CoinJoins. Un anonset de grande taille signifie un niveau d'anonymat accru, car il devient difficile de distinguer un UTXO spécifique au sein de l'ensemble. Deux types d'anonsets existent :
-- L'ensemble d'anonymat prospectif ;
-- L'ensemble d'anonymat rétrospectif.
+\begin{itemize}
+  \item L'ensemble d'anonymat prospectif ;
+  \item L'ensemble d'anonymat rétrospectif.
+\end{itemize}
 
 Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en sortie, sachant l'UTXO en entrée. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse passé vers présent (entrée vers sortie). En anglais, le nom de cet indicateur est « forward anonset », ou « forward-looking metrics ». Le second indique le nombre de sources possibles pour une pièce donnée, sachant l'UTXO en sortie. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse présent vers passé (sortie vers entrée). En anglais, le nom de cet indicateur est « backward anonset », ou « backward-looking metrics ».
 
@@ -141,10 +151,18 @@ Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pou
 
 Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la `TX 7` fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
 \begin{itemize}
-  \item `TX 7` ;
-  \item `HASH 8` ;
-  \item `HASH 5-6` ;
-  \item `HASH 1-2-3-4`.
+  \item 
+  \texttt{TX 7}
+  ;
+  \item 
+  \texttt{HASH 8}
+  ;
+  \item 
+  \texttt{HASH 5-6}
+  ;
+  \item 
+  \texttt{HASH 1-2-3-4}
+  .
 \end{itemize}
 Grâce à ces quelques informations, je suis en capacité de calculer les nœuds intermédiaires jusqu'à la racine de Merkle.
 
@@ -833,9 +851,15 @@ Dans le cadre de Git, représente une séparation du flux de travail principal, 
 
 BRC-20 définit un ensemble de règles et de méthodes à respecter pour permettre une interaction avec des jetons non natifs sur Bitcoin. Il s'appuie sur les inscriptions du protocole Ordinals afin de définir des fonctions interprétées en dehors de la chaine. Ce standard a été créé par le développeur Domo, au début du mois de mars 2023. Selon son créateur, ce standard n'est qu'une expérimentation. Cela n'a pas empêché la machine spéculative de prendre le dessus durant les mois d'avril et de mai 2023. Des milliers d'investisseurs se sont emparés de ce standard, en achetant massivement les jetons BRC-20, créant au passage une hausse soudaine et historique des frais de transaction sur Bitcoin. Les jetons BRC-20 sont dénués d'existence concrète sur Bitcoin. Ils sont off-chain. Ce protocole utilise simplement Bitcoin, à travers le protocole Ordinals, pour stocker et horodater des fonctions permettant la gestion des jetons BRC-20. Ces fonctions sont encodées dans un format texte JSON, puis elles sont diffusées sous forme d’inscription Ordinals sur Bitcoin. Il en existe trois :
 \begin{itemize}
-  \item `deploy`, qui permet de créer un nouveau jeton BRC-20 et de définir ses conditions d'utilisation ;
-  \item `mint`, qui permet de réclamer des jetons BRC-20 spécifiques. Cela représente leur émission ;
-  \item `transfer`, qui permet de transférer des jetons BRC-20 entre plusieurs utilisateurs.
+  \item 
+  \texttt{deploy}
+  , qui permet de créer un nouveau jeton BRC-20 et de définir ses conditions d'utilisation ;
+  \item 
+  \texttt{mint}
+  , qui permet de réclamer des jetons BRC-20 spécifiques. Cela représente leur émission ;
+  \item 
+  \texttt{transfer}
+  , qui permet de transférer des jetons BRC-20 entre plusieurs utilisateurs.
 \end{itemize}
 
 Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs qui recensent l'intégralité des fonctions. Le standard BRC-20 est alors une utilisation très peu optimisée de Bitcoin par rapport à un protocole tel que RGB.
@@ -948,20 +972,46 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 
 Suite de caractère qui combine une clé (publique ou privée), son code de chaîne associé et une série de métadonnées. Une clé étendue rassemble en une seule chaîne de caractère tous les éléments nécessaires à la dérivation de clés enfants. Elles sont utilisées dans les portefeuilles déterministes et hiérarchiques, et peuvent être de deux types : une clé publique étendue (utilisée pour dériver des clés publiques enfants) ou une clé privée étendue (utilisée pour dériver à la fois des clés privées et des clés publiques enfants). Une clé étendue inclut donc plusieurs données différentes, décrites au sein du BIP32, dans l'ordre : 
 \begin{itemize}
-  \item Le préfixe. `prv` et `pub` sont des HRP permettant d'indiquer si l'on a à faire à une clé privée étendue (`prv`) ou à une clé publique étendue (`pub`). La première lettre du préfixe permet, elle, de désigner la version de la clé étendue :
-  \item `x` permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin ;
-  \item `t` permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin Testnet ;
-  \item `y` permet d'indiquer un objectif Nested SegWit sur Bitcoin ;
-  \item `u` permet d'indiquer un objectif Nested SegWit sur Bitcoin Testnet ;
-  \item `z` permet d'indiquer un objectif SegWit V0 sur Bitcoin ;
-  \item `v` permet d'indiquer un objectif SegWit V0 sur Bitcoin Testnet.
+  \item Le préfixe.
+  \texttt{prv}
+  et
+  \texttt{pub}
+  sont des HRP permettant d'indiquer si l'on a à faire à une clé privée étendue (
+  \texttt{prv}
+  ) ou à une clé publique étendue (
+  \texttt{pub}
+  ). La première lettre du préfixe permet, elle, de désigner la version de la clé étendue :
+  \item 
+  \texttt{x}
+  permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin ;
+  \item 
+  \texttt{t}
+  permet d'indiquer un objectif Legacy ou SegWit V1 sur Bitcoin Testnet ;
+  \item 
+  \texttt{y}
+  permet d'indiquer un objectif Nested SegWit sur Bitcoin ;
+  \item 
+  \texttt{u}
+  permet d'indiquer un objectif Nested SegWit sur Bitcoin Testnet ;
+  \item 
+  \texttt{z}
+  permet d'indiquer un objectif SegWit V0 sur Bitcoin ;
+  \item 
+  \texttt{v}
+  permet d'indiquer un objectif SegWit V0 sur Bitcoin Testnet.
   \item La profondeur, qui indique le nombre de dérivations intervenues depuis la clé maîtresse pour arriver jusqu'à la clé étendue ;
-  \item L'empreinte du parent. Cela représente les 4 premiers octets du `HASH160` de la clé publique parent ;
+  \item L'empreinte du parent. Cela représente les 4 premiers octets du
+  \texttt{HASH160}
+  de la clé publique parent ;
   \item L'index. C'est le numéro de la paire parmi ses sœurs dont est issue la clé étendue ;
   \item Le code de chaîne ;
-  \item Un octet de rembourrage si c'est une clé privée `0x00` ;
+  \item Un octet de rembourrage si c'est une clé privée
+  \texttt{0x00}
+  ;
   \item La clé privée ou la clé publique ;
-  \item Une somme de contrôle. Elle incarne les 4 premiers octets du `HASH256` de tout le reste de la clé étendue.
+  \item Une somme de contrôle. Elle incarne les 4 premiers octets du
+  \texttt{HASH256}
+  de tout le reste de la clé étendue.
 \end{itemize}
 
 Dans la pratique, la clé publique étendue est utilisée pour générer des adresses de réception et pour observer les transactions d'un compte, sans exposer les clés privées associées. Cela peut permettre, par exemple, la création d'un portefeuille dit « watch-only ». Il est toutefois important de noter que la clé publique étendue est une information sensible pour la confidentialité de l'utilisateur, car sa divulgation peut permettre à des tiers de tracer les transactions et de visualiser le solde du compte associé.
@@ -1378,15 +1428,25 @@ Par exemple, voici l'entête du [bloc n° 785 530](https://mempool.space/fr/bloc
 
 Si l'on décompose cet entête, on peut reconnaitre :
 \begin{itemize}
-  \item La version : `00e0ff3f` ;
-  \item L'empreinte précédente : `5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000` ;
+  \item La version :
+  \texttt{00e0ff3f}
+  ;
+  \item L'empreinte précédente :
+  \texttt{5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000}
+  ;
   \item La racine de Merkle :
 \end{itemize}
 `206bde3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0` ;
 \begin{itemize}
-  \item L'horodatage : `bcb13a64` ;
-  \item La cible : `b2e00517` ;
-  \item Le nonce : `43f09a40`.
+  \item L'horodatage :
+  \texttt{bcb13a64}
+  ;
+  \item La cible :
+  \texttt{b2e00517}
+  ;
+  \item Le nonce :
+  \texttt{43f09a40}
+  .
 \end{itemize}
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
@@ -1482,9 +1542,25 @@ Une fonction de hachage, également appelée algorithme de hachage, est une fonc
 
 Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieurs fins, notamment pour le mécanisme de preuve de travail (Proof-of-Work), les identifiants de transaction, la génération d'adresses, le calcul de sommes de contrôle et la création de structures de données telles que les arbres de Merkle. Sur la partie protocolaire, Bitcoin utilise exclusivement la fonction `SHA256d`, également nommée `HASH256`, qui consiste en un double hachage `SHA256`. On utilise aussi `HASH256` dans le calcul de certaines sommes de contrôle, notamment pour les clés étendues (`xpub`, `xprv`...). Sur la partie portefeuille, on utilise également :
 \begin{itemize}
-  \item `SHA256` simple pour les sommes de contrôle des phrases mnémoniques ;
-  \item `SHA512` au sein des algorithmes `HMAC` et `PBKDF2` utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
-  \item `HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception et dans le calcul des empreintes de clés parents pour les clés étendues.
+  \item 
+  \texttt{SHA256}
+  simple pour les sommes de contrôle des phrases mnémoniques ;
+  \item 
+  \texttt{SHA512}
+  au sein des algorithmes
+  \texttt{HMAC}
+  et
+  \texttt{PBKDF2}
+  utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
+  \item 
+  \texttt{HASH160}
+  , qui décrit une utilisation successive d'un
+  \texttt{SHA256}
+  et d'un
+  \texttt{RIPEMD160}
+  .
+  \texttt{HASH160}
+  est utilisé dans le processus de génération des adresses de réception et dans le calcul des empreintes de clés parents pour les clés étendues.
 \end{itemize}
 
 > *En anglais, on parle de « hash function ».*
@@ -3393,7 +3469,9 @@ L'opération `XOR` est utilisée dans de nombreux domaines de l'informatique, no
 \begin{itemize}
   \item Sa commutativité : L'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
   \item Son associativité : Le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
-  \item Il dispose d'un élément neutre `0` : Une opérande xorée à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
+  \item Il dispose d'un élément neutre
+  \texttt{0}
+  : Une opérande xorée à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
   \item Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
 \end{itemize}
 
