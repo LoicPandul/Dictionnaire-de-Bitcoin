@@ -3073,11 +3073,13 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 ## WABISABI
 
 Protocole de coordination de CoinJoins utilisé sur le portefeuille Wasabi.
+
 > *Pour plus d'informations, voir la définition de [**COINJOIN**](#coinjoin).*
 
 ## WALLET
 
 Traduction anglaise de « portefeuille ».
+
 > *Pour plus d'informations, voir la définition de [**PORTEFEUILLE**](#portefeuille).*
 
 ## WALLET.DAT
