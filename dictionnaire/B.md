@@ -69,9 +69,9 @@ Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de prop
 ## BIP1
 
 Document qui définit le processus d'élaboration et de mise en œuvre des améliorations proposées au protocole Bitcoin. Rédigé par Amir Taaki en août 2011, il établit une méthodologie standard pour proposer et documenter des modifications potentielles. Les propositions de BIP sont alors classées en trois catégories : 
-- Standards Track : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;
-- Informational : ceux qui offrent des informations générales mais n'impactent pas directement le protocole ; 
-- Process : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.
+* Standards Track : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;
+* Informational : ceux qui offrent des informations générales mais n'impactent pas directement le protocole ; 
+* Process : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.
 Ce cadre systématise le développement de Bitcoin, afin d'assurer une approche coordonnée et transparente de ses évolutions. La méthodologie du BIP1 sera par la suite remplacée par celle du BIP2.
 
 ## BIP2
@@ -81,8 +81,8 @@ Document rédigé par Luke Dashjr en juin 2012 qui établit des critères préci
 ## BIP8
 
 Élaboré suite aux débats sur SegWit qui utilisait le BIP9 pour son activation, le BIP8 est une méthode d'activation de soft forks qui incorpore nativement un mécanisme d'UASF (*User-Activated Soft Fork*) automatique. Comme le BIP9, le BIP8 utilise la signalisation des mineurs, mais ajoute le paramètre `LOT` (*Lock-in On Time out*). Si `LOT` est réglé sur `vrai`, à l'expiration de la période de signalisation sans atteindre le seuil requis, un UASF est automatiquement déclenché, forçant l'activation du soft fork. Cette approche contraint les mineurs à être coopératifs ou risquer un UASF imposé par les utilisateurs. De plus, contrairement au BIP9, le BIP8 définit la période de signalisation basée sur la hauteur des blocs, éliminant les manipulations potentielles via le taux de hachage par les mineurs. Le BIP8 permet également de fixer un seuil de vote variable et introduit un paramètre pour une hauteur de bloc minimale pour l'activation, donnant aux mineurs le temps de se préparer et de signaler leur accord en avance sans forcément être prêts. Lorsqu'un soft fork est activé via le BIP8 avec le paramètre `LOT=vrai`, on utilise ici une méthode très agressive contre les mineurs qui sont immédiatement mis sous la pression d'un éventuel UASF. En effet, cela leur laisse seulement 2 choix :
-- Être coopératifs, et ainsi faciliter le processus d'activation ;
-- Être non coopératifs, auquel cas les utilisateurs font un UASF automatiquement pour imposer le soft fork.
+* Être coopératifs, et ainsi faciliter le processus d'activation ;
+* Être non coopératifs, auquel cas les utilisateurs font un UASF automatiquement pour imposer le soft fork.
 
 ## BIP9
 
@@ -179,19 +179,19 @@ Proposition d'amélioration qui introduit l'utilisation d'un étage de dérivati
 ## BIP44
 
 Proposition d'amélioration qui introduit une structure de dérivation hiérarchique standard pour les portefeuilles HD. LE BIP44 s'appuie sur les principes établis par le BIP32 pour la dérivation des clés et sur le BIP43 pour l'utilisation du champ « purpose ». Il introduit une structure de cinq niveaux de dérivation : `m / purpose' / coin_type' / account' / change / address_index`. Voici le détail de chaque profondeur :
-- `m /` indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur ;
-- `m / purpose' /` indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champs est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors `84'` ;
-- `m / purpose' / coin_type' /` indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au Bitcoin est le `0'` ;
-- `m / purpose' / coin_type' / account' /` indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de `0'`. les clés étendues (`xpub`, `xprv`...) se trouvent à ce niveau de profondeur ;
-- `m / purpose' / coin_type' / account' / change /` indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index `0` et la chaîne interne est identifiée avec l'index `1`. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur `xpub` ;
-- `m / purpose' / coin_type' / account' / change / address_index` indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index `0`, la deuxième adresse dispose de l’index `1`, etc...
+* `m /` indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur ;
+* `m / purpose' /` indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champs est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors `84'` ;
+* `m / purpose' / coin_type' /` indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au Bitcoin est le `0'` ;
+* `m / purpose' / coin_type' / account' /` indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de `0'`. les clés étendues (`xpub`, `xprv`...) se trouvent à ce niveau de profondeur ;
+* `m / purpose' / coin_type' / account' / change /` indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index `0` et la chaîne interne est identifiée avec l'index `1`. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur `xpub` ;
+* `m / purpose' / coin_type' / account' / change / address_index` indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index `0`, la deuxième adresse dispose de l’index `1`, etc...
 
 Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 86' / 0' / 0' / 0 / 5`, on peut en déduire les informations suivantes :
-- `86'` indique que nous suivons le standard de dérivation du BIP86 (Taproot ou SegWitV1) ;
-- `0'` indique que c'est une adresse Bitcoin ;
-- `0'` indique que l'on est sur le premier compte du portefeuille ;
-- `0` indique que c'est une adresse externe ;
-- `5` indique que c'est la sixième adresse externe de ce compte.
+* `86'` indique que nous suivons le standard de dérivation du BIP86 (Taproot ou SegWitV1) ;
+* `0'` indique que c'est une adresse Bitcoin ;
+* `0'` indique que l'on est sur le premier compte du portefeuille ;
+* `0` indique que c'est une adresse externe ;
+* `5` indique que c'est la sixième adresse externe de ce compte.
 
 ## BIP47
 
@@ -308,10 +308,10 @@ Introduit un nouvel opcode nommé `OP_CHECKTEMPLATEVERIFY` (CTV). CTV permettrai
 ## BIP123
 
 Établit un nouveau processus standardisé pour la classification des propositions d'amélioration de Bitcoin. Les BIP doivent dorénavant être classifiés selon 4 catégories :
-- Consensus : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
-- Peer Services : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
-- API/RPC : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
-- Applications : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
+* Consensus : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
+* Peer Services : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
+* API/RPC : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
+* Applications : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
 
 ## BIP125
 
@@ -333,8 +333,8 @@ Introduit le concept de témoin séparé (*Segregated Witness*) qui donnera son 
 ## BIP143
 
 Introduit une nouvelle manière de hacher la transaction pour la vérification des signatures dans les scripts post-SegWit. L'objectif est de minimiser les opérations redondantes lors de la vérification et d'inclure la valeur des UTXO en entrée dans la signature. Cela résout deux problèmes majeurs de l'algorithme de hachage de transaction original : 
-- La croissance quadratique du hachage des données avec le nombre de signatures ; 
-- L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.
+* La croissance quadratique du hachage des données avec le nombre de signatures ; 
+* L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.
 Puisque la mise à jour SegWit, expliquée dans le BIP141, introduit une nouvelle forme de transactions dont le script ne sera pas vérifié par les vieux nœuds, le BIP143 en profite pour résoudre ce problème sans nécessiter de hard fork. Le BIP143 fait donc partie du soft fork SegWit.
 
 ## BIP144
@@ -392,9 +392,9 @@ Proposition, connue sous le nom de Dandelion, qui vise à améliorer la confiden
 ## BIP173
 
 Introduit le format d'adresse Bech32 pour les adresses SegWit V0. Ce format d'adresse est caractérisé par le préfixe `bc1q`. Le format Bech32 offre plusieurs avantages : 
-- Il demande moins d'espace dans les codes QR ;
-- Il est plus facilement interprétable par les humains ;
-- Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
+* Il demande moins d'espace dans les codes QR ;
+* Il est plus facilement interprétable par les humains ;
+* Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
 Ces caractéristiques facilitent l'utilisation des adresses de réception tout en minimisant les risques d'erreurs.
 
 > *Pour plus d'informations, voir la définition de [**BECH32 ET BECH32M**](./B.md#bech32-et-bech32m).*
@@ -497,8 +497,8 @@ Bitcoin QT est un client Bitcoin intégrant une interface graphique publié en m
 ## BITCOIN SATOSHI VISION (BSV)
 
 Système de cryptomonnaie issu d'un hard fork de Bitcoin Cash (BCH), lui-même dérivé de Bitcoin (BTC). Le fork de Bitcoin SV s'est produit le 15 novembre 2018 au bloc 556 766 en raison de désaccords au sein de la communauté Bitcoin Cash, notamment concernant la taille des blocs et la supposée vision de Satoshi Nakamoto, le créateur de Bitcoin. Deux camps se sont affrontés : 
-- Les partisans du fork « Bitcoin Cash ABC », qui est devenu Bitcoin Cash (BCH). Ce groupe était notamment soutenu par le célèbre entrepreneur Roger Ver ;
-- Les promoteurs du fork « Bitcoin Cash Satoshi Vision », qui a abouti à la création de Bitcoin Satoshi Vision (BSV). Ce camp était entre autres soutenu par Craig Wright.
+* Les partisans du fork « Bitcoin Cash ABC », qui est devenu Bitcoin Cash (BCH). Ce groupe était notamment soutenu par le célèbre entrepreneur Roger Ver ;
+* Les promoteurs du fork « Bitcoin Cash Satoshi Vision », qui a abouti à la création de Bitcoin Satoshi Vision (BSV). Ce camp était entre autres soutenu par Craig Wright.
 Bitcoin SV se distingue de Bitcoin Cash, et encore plus de Bitcoin, par sa limite de taille de bloc considérablement élevée. Cette spécificité vise à s'aligner sur ce que ses partisans considèrent être la vision initiale de Satoshi Nakamoto pour Bitcoin.
 
 ## BITCOINTALK

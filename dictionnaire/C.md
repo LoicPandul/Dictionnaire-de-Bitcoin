@@ -13,9 +13,9 @@ Langage de programmation polyvalent, évoluant du C, connu pour sa puissance et 
 ## CAHOOTS
 
 Dans le cadre du portefeuille Samourai Wallet et des autres logiciels de portefeuilles qui l'implémente, un Cahoot désigne tous les types de transactions réalisées en collaboration entre plusieurs utilisateurs. Procéder à un Cahoot signifie donc participer conjointement à une transaction. Cette collaboration s'articule autour de l'échange de transactions partiellement signées. Ces échanges peuvent se faire soit manuellement, via des codes QR, soit de manière automatisée, via le réseau de communication Soroban.
-- Les transactions Stowaway (Payjoin) ;
-- Les transactions Stonewall x2 ;
-- Les transactions Joinbot.
+* Les transactions Stowaway (Payjoin) ;
+* Les transactions Stonewall x2 ;
+* Les transactions Joinbot.
 
 ## CANAL DE PAIMENT
 
@@ -50,11 +50,11 @@ Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Cor
 ## CHARGE UTILE (PAYLOAD)
 
 Dans le contexte général de l'informatique, une charge utile désigne les données essentielles transportées dans un paquet de données plus large. Par exemple, dans une adresse SegWit V0 sur Bitcoin, la charge utile correspond au hachage de la clé publique, sans les diverses métadonnées (le HRP, le séparateur, la version de SegWit et la somme de contrôle). Par exemple, sur l'adresse `bc1qc2eukw7reasfcmrafevp5dhv8635yuqays50gj`, nous avons : 
-- `bc` : la partie lisible par l'homme (HRP) ;
-- `1` : le séparateur ;
-- `q` : la version de SegWit. Ici, c'est la version 0 ;
-- `c2eukw7reasfcmrafevp5dhv8635yuqa` : la charge utile, ici, le hachage de la clé publique ;
-- `ys50gj` : la somme de contrôle.
+* `bc` : la partie lisible par l'homme (HRP) ;
+* `1` : le séparateur ;
+* `q` : la version de SegWit. Ici, c'est la version 0 ;
+* `c2eukw7reasfcmrafevp5dhv8635yuqa` : la charge utile, ici, le hachage de la clé publique ;
+* `ys50gj` : la somme de contrôle.
 
 ## CHAUMIAN COINJOIN
 
@@ -139,12 +139,12 @@ Dans le contexte de la dérivation hiérarchique et déterministe (HD) des porte
 ## CODE DE PAIMENT RÉUTILISABLE
 
 Dans le BIP47, un code de paiement réutilisable est une information générée à partir d'un portefeuille Bitcoin permettant d'engager une transaction de notification et de dériver des adresses uniques. Cela permet de ne pas faire de réutilisation d'adresses, qui mènent à une perte de la confidentialité, sans pour autant devoir dériver et transmettre manuellement de nouvelles adresses vierges à chaque paiement. Dans le BIP47, les codes de paiement réutilisables sont construits de la manière suivante :
-- L'octet 0 correspond à la version ;
-- L'octet 1 est un champ de bits permettant d'ajouter des informations en cas d'utilisation spécifique ;
-- L'octet 2 permet d'indiquer la parité du `y` de la clé publique ;
-- De l'octet 3 à l'octet 34, on retrouvera la valeur `x` de la clé publique ;
-- De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;
-- De l'octet 67 à l'octet 79, c'est du rembourrage de zéros.
+* L'octet 0 correspond à la version ;
+* L'octet 1 est un champ de bits permettant d'ajouter des informations en cas d'utilisation spécifique ;
+* L'octet 2 permet d'indiquer la parité du `y` de la clé publique ;
+* De l'octet 3 à l'octet 34, on retrouvera la valeur `x` de la clé publique ;
+* De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;
+* De l'octet 67 à l'octet 79, c'est du rembourrage de zéros.
 
 On ajoute généralement un HRP au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en base58. La construction d'une code de paiement est donc assez proche de celle d'une clé étendue. Voici mon propre code de paiement BIP47 en base58 : 
 ```
@@ -267,9 +267,9 @@ Dans le contexte de la cryptographie, une courbe elliptique est une courbe algé
 ## COVENANT
 
 Mécanisme qui permet d'imposer des conditions spécifiques sur la manière dont une pièce donnée peut être dépensée, y compris dans des transactions futures. Au-delà des conditions usuellement autorisées par le langage script sur un UTXO, le covenant force des contraintes supplémentaires sur la manière de dépenser cette pièce Bitcoin dans des transactions ultérieures. Techniquement, l'instauration d'un covenant intervient lorsque le `scriptPubKey` d'un UTXO définit des restrictions sur le `scriptPubKey` des sorties d'une transaction qui dépense ledit UTXO. En élargissant la portée de script, les covenants permettraient de nombreuses évolutions sur Bitcoin comme l'ancrage bilatéral des drivechains, la mise en place de vaults ou encore l'amélioration des systèmes de surcouche comme Lightning. On différencie les propositions de covenants en fonction de trois critères :
-- Leur porté ;
-- Leur implémentation ;
-- Leur récursivité.
+* Leur porté ;
+* Leur implémentation ;
+* Leur récursivité.
 Il existe de très nombreuses propositions qui permettraient l'utilisation de covenants sur Bitcoin. Les plus avancées dans le processus d'implémentation sont : OP_CHECKTEMPLATEVERIFY (CTV), SIGHASH_ANYPREVOUT (APO) et OP_VAULT. Parmi les autres propositions, il y a : OP_TX, OP_TAPLEAFUPDATEVERIFY (TLUV), OP_EVICT, OP_CHECKSIGFROMSTACKVERIFY, etc.
 
 Pour bien comprendre le concept de covenant, je vous propose une analogie : imaginez un coffre-fort contenant 500 € en petites coupures. Si vous parvenez à déverrouiller ce coffre avec la clé adéquate, alors vous êtes libre d'utiliser cet argent comme bon vous semble. Ça, c’est la situation normale de Bitcoin. Maintenant, imaginez que ce même coffre-fort ne contient pas 500 € en billets de banque, mais plutôt des tickets restaurants d'une valeur équivalente. Si vous réussissez à ouvrir ce coffre, vous pouvez disposer de cette somme. Cependant, votre liberté de dépense est restreinte :vous ne pouvez utiliser ces tickets pour payer que dans certains restaurants. Ainsi, il y a une première condition pour dépenser cet argent, qui est de parvenir à ouvrir le coffre avec la clé appropriée. Mais il y a aussi une condition supplémentaire quant à l'usage futur de cette somme : elle doit être dépensée exclusivement dans des restaurants partenaires, et non pas en toute liberté. Ce système de contraintes sur les transactions futures, c’est ce que l’on appelle un covenant.

@@ -51,8 +51,8 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 ## TIMELOCK
 
 Primitive de contrat intelligent qui permet de définir une condition temporelle à remplir pour qu'une transaction puisse être ajoutée à un bloc. Il existe deux types de timelocks sur Bitcoin : 
-- Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ; 
-- Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
+* Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ; 
+* Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
 Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
 
 > *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](./O.md#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](./O.md#op_checksequenceverify-0xb2), [**NLOCKTIME**](./N.md#nlocktime) et [**NSEQUENCE**](./N.md#nsequence).*
@@ -60,11 +60,13 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 ## TPRV
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet.
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## TPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## TRANSACTION (TX)

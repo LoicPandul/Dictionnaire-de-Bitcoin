@@ -8,13 +8,13 @@ Erreur de logique où une boucle itère une fois de trop ou de moins, souvent du
 ## OBSOLÈTE (BLOC)
 
 Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ». Le processus menant à la production d'un bloc obsolète est le suivant :
-- Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons les `Bloc A` et `Bloc B` ;
-- Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;
-- Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le `Bloc A` et le `Bloc B` au-dessus duquel ils vont miner ;
-- Un mineur trouve finalement un bloc valide au-dessus du `Bloc B`. Appelons le `Bloc B+1` ;
-- Il diffuse `Bloc B+1` aux nœuds du réseau ;
-- Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
-- Ils vont donc abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
+* Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons les `Bloc A` et `Bloc B` ;
+* Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;
+* Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le `Bloc A` et le `Bloc B` au-dessus duquel ils vont miner ;
+* Un mineur trouve finalement un bloc valide au-dessus du `Bloc B`. Appelons le `Bloc B+1` ;
+* Il diffuse `Bloc B+1` aux nœuds du réseau ;
+* Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
+* Ils vont donc abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
 
 ![](assets/9.png)
 
@@ -53,6 +53,7 @@ Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élé
 ## OP_1 (`0X51`)
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
+
 > *OP_1 est identique à **[OP_TRUE](./O.md#op_true-0x51)** et **OP_PUSHNUM_1**.*
 
 ## OP_1ADD (`0X8B`)
@@ -116,10 +117,10 @@ Reproduit le comportement d'une porte logique `OR`. Il prend deux valeurs au som
 ## OP_CAT (`0X7E`)
 
 Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de les mettre bout-à-bout). Cet opcode a été désactivé, il est donc actuellement impossible de l'utiliser. Toutefois, il est récemment revenu sur le devant de la scène. Certains souhaiteraient pouvoir l'ajouter à Tapscript afin de permettre la combinaison d'objets sur la pile et ainsi améliorer l'expressivité de ce langage. Ce simple outil supplémentaire pourrait permettre :
-- L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
-- La mise en place de Vaults ;
-- L'utilisation de covenants ;
-- Ou encore, l'utilisation de contrat de non équivocation.
+* L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
+* La mise en place de Vaults ;
+* L'utilisation de covenants ;
+* Ou encore, l'utilisation de contrat de non équivocation.
 
 ## OP_CHECKHASHVERIFY (CHV)
 
@@ -128,11 +129,11 @@ Nouvel opcode proposé en 2012 dans le BIP17 par Luke Dashjr qui permet de dispo
 ## OP_CHECKLOCKTIMEVERIFY (`0XB1`)
 
 Rend la transaction invalide sauf si toutes ces conditions sont réunies :
-- La pile n'est pas vide ;
-- La valeur du haut de la pile est supérieure ou égale à `0` ;
-- Le type de timelock est le même entre le champ `nLockTime` et la valeur du haut de la pile (temps réel ou numéro de bloc) ;
-- Le champ `nSequence` de l'input n'est pas égal à `0xffffffff` ;
-- La valeur du haut de la pile est supérieure ou égale à la valeur du champ `nLockTime` de la transaction.
+* La pile n'est pas vide ;
+* La valeur du haut de la pile est supérieure ou égale à `0` ;
+* Le type de timelock est le même entre le champ `nLockTime` et la valeur du haut de la pile (temps réel ou numéro de bloc) ;
+* Le champ `nSequence` de l'input n'est pas égal à `0xffffffff` ;
+* La valeur du haut de la pile est supérieure ou égale à la valeur du champ `nLockTime` de la transaction.
 
 Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHECKLOCKTIMEVERIFY` ne peut être satisfait. Si toutes ces conditions sont valides, alors `OP_CHECKLOCKTIMEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKLOCKTIMEVERIFY` impose donc une contrainte de temps sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Pour ce faire, il restreint les valeurs possibles pour le champs `nLockTime` de la transaction qui le dépense, et ce champs `nLockTime` restreint lui-même le moment où la transaction peut être incluse dans un bloc.
 
@@ -149,13 +150,13 @@ Combine un `OP_CHECKMULTISIG` et un `OP_VERIFY`. Il prend plusieurs signatures e
 ## OP_CHECKSEQUENCEVERIFY (`0XB2`)
 
 Rend la transaction invalide si une seule de ces caractéristiques est observée :
-- La pile est vide ;
-- La valeur du haut de la pile est inférieure à `0` ;
-- L'indicateur de désactivation de la valeur en haut de la pile est non défini et ;
-	- La version de la transaction est inférieure à `2` ou ;
-	- L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ;
-	- Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ;
-	- La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
+* La pile est vide ;
+* La valeur du haut de la pile est inférieure à `0` ;
+* L'indicateur de désactivation de la valeur en haut de la pile est non défini et ;
+*- La version de la transaction est inférieure à `2` ou ;
+*- L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ;
+*- Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ;
+*- La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
 
 Si une ou plusieurs de ces caractéristiques est observée, le script contenant l'`OP_CHECKSEQUENCEVERIFY` ne peut être satisfait. Si toutes les conditions sont valides, alors `OP_CHECKSEQUENCEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKSEQUENCEVERIFY` impose donc une contrainte de temps relative sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'un temps réel, soit sous la forme d'un nombre de blocs. Pour ce faire, il restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc.
 
@@ -168,8 +169,8 @@ Vérifie la validité d'une signature par rapport à une clé publique donnée. 
 ## OP_CHECKSIGADD (`0XBA`)
 
 Extrait les trois valeurs en haut de la pile : une `clé publique`, un `CScriptNum` `n` et une `signature`. Si la signature n'est pas le vecteur vide et n'est pas valide, le script se termine avec une erreur. Si la signature est valide ou est le vecteur vide (`OP_0`), deux cas de figure se présente :
-- Si la signature est le vecteur vide : un `CScriptNum` avec la valeur de `n` est poussé sur la pile et l'exécution continue ;
-- Si la signature n'est pas le vecteur vide et demeure valide : un `CScriptNum` avec la valeur de `n + 1` est poussé sur la pile et l'exécution continue.
+* Si la signature est le vecteur vide : un `CScriptNum` avec la valeur de `n` est poussé sur la pile et l'exécution continue ;
+* Si la signature n'est pas le vecteur vide et demeure valide : un `CScriptNum` avec la valeur de `n + 1` est poussé sur la pile et l'exécution continue.
 Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECKSIG`, mais au lieu de pousser `vrai` ou `faux` sur la pile, il ajoute `1` à la deuxième valeur en haut de la pile si la signature est valide, ou laisse cette valeur inchangée si la signature représente le vecteur vide.`OP_CHECKSIGADD` permet de créer les mêmes politiques multisignatures dans Tapscript qu'avec `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` mais de manière vérifiable par lots, c'est-à-dire qu'il supprime le processus de recherche dans la vérification d'un multisig traditionnel et accélère donc la vérification tout en réduisant la charge opérationnelle sur les CPU des nœuds. Cet opcode a été ajouté dans Tapscript uniquement pour les besoins de Taproot.
 
 ## OP_CHECKSIGVERIFY (`0XAD`)
@@ -195,11 +196,13 @@ Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et
 ## OP_ELSE (`0X67`)
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
+
 > *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_ENDIF (`0X68`)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
+
 > *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_EQUAL (`0X87`)
@@ -235,11 +238,13 @@ Compare les deux éléments au sommet de la pile et vérifie si le premier élé
 ## OP_HASH160 (`0XA9`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
+
 > *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256) et [**RIPEMD160**](./R.md#ripemd160).*
 
 ## OP_HASH256 (`0XAA`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
+
 > *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
 
 ## OP_IF (`0X63`)
@@ -347,6 +352,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 ## OP_SHA256 (`0XA8`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
+
 > *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
 
 ## OP_SIZE (`0X82`)
