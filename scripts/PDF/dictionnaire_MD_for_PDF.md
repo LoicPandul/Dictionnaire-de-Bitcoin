@@ -15,20 +15,34 @@ Entreprise basée en France spécialisée dans le développement de solutions po
 ## ADAPTOR SIGNATURE
 
 Méthode cryptographique permettant de combiner une vraie signature avec une signature supplémentaire (appelée « adaptor signature ») pour révéler une donnée secrète. Cette méthode fonctionne telle que la connaissance de deux éléments parmi la signature valide, l'adaptor signature et le secret permet de déduire le troisième manquant. Une des propriétés intéressantes de cette méthode est que si nous connaissons l'adaptor signature de notre pair et le point spécifique sur la courbe elliptique lié au secret utilisé pour calculer cette adaptor signature, nous pouvons alors dériver notre propre adaptor signature qui correspondra avec le même secret, et ce, sans jamais avoir accédé directement au secret lui-même. Dans un échange entre deux parties prenantes ne se faisant pas confiance, cette technique permet un dévoilement simultané de deux informations sensibles entre les participants. Ce processus élimine la nécessité de confiance lors de transactions instantanées telles qu'un Coin Swap ou un Atomic Swap. Prenons un exemple pour bien comprendre. Alice et Bob souhaitent s'envoyer 1 BTC chacun, mais ils ne se font pas confiance. Ils vont donc utiliser des adaptors signatures pour annihiler le besoin de confiance envers l'autre partie dans cet échange (c'est donc un échange « atomique »). Ils procèdent comme ceci :
-- Alice initie cet échange atomique. Elle crée une transaction $m_A$ qui envoie 1 BTC vers Bob. Elle crée une signature $s_A$ qui permet de valider cette transaction grâce à sa clé privée $p_A$ ($P_A = p_A \cdot G$), et en utilisant un nonce $n_A$ et un secret $t$ ($N_A = n_A \cdot G$ et $T = t \cdot G$) : 
+\begin{itemize}
+  \item Alice initie cet échange atomique. Elle crée une transaction $m_A$ qui envoie 1 BTC vers Bob. Elle crée une signature $s_A$ qui permet de valider cette transaction grâce à sa clé privée $p_A$ ($P_A = p_A \cdot G$), et en utilisant un nonce $n_A$ et un secret $t$ ($N_A = n_A \cdot G$ et $T = t \cdot G$) :
+\end{itemize}
 $$s_A = n_A + t + H(N_A + T \parallel P_A \parallel m_A) \cdot p_A$$
-- Alice calcule l'adaptor signature $s_A'$ à partir du secret $t$ et de sa vraie signature $s_A$ :  
+\begin{itemize}
+  \item Alice calcule l'adaptor signature $s_A'$ à partir du secret $t$ et de sa vraie signature $s_A$ :
+\end{itemize}
 $$s_A' = s_A - t$$
-- Alice envoie à Bob son adaptor signature $sA'$, sa transaction non signée $m_A$, le point correspondant au secret $T$ et le point correspondant au nonce $N_A$. Nous appelons ces informations un « adaptor ». Notons qu'avec simplement ces informations, Bob n'est pas en capacité de récupérer le BTC d'Alice.
-- En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $s_A'$ correspond bien à la transaction promise $m_A$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide : 
+\begin{itemize}
+  \item Alice envoie à Bob son adaptor signature $sA'$, sa transaction non signée $m_A$, le point correspondant au secret $T$ et le point correspondant au nonce $N_A$. Nous appelons ces informations un « adaptor ». Notons qu'avec simplement ces informations, Bob n'est pas en capacité de récupérer le BTC d'Alice.
+  \item En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $s_A'$ correspond bien à la transaction promise $m_A$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide :
+\end{itemize}
 $$s_A' \cdot G = N_A + H(N_A + T \parallel P_A \parallel m_A) \cdot P_A$$
-- Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $m_B$ envoyant 1 BTC à Alice et sa propre adaptor signature $s_B'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) : 
+\begin{itemize}
+  \item Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $m_B$ envoyant 1 BTC à Alice et sa propre adaptor signature $s_B'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) :
+\end{itemize}
 $$s_B' = n_B + H(N_B + T \parallel P_B \parallel m_B) \cdot p_B$$
-- Bob envoie à Alice son adaptor signature $s_B'$, sa transaction non signée $m_B$, le point correspondant au secret $T$ et le point correspondant au nonce $N_B$. Alice peut désormais combiner l'adaptor signature de Bob $s_B'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $s_B$ pour la transaction $m_B$ qui lui envoie le BTC de Bob : 
+\begin{itemize}
+  \item Bob envoie à Alice son adaptor signature $s_B'$, sa transaction non signée $m_B$, le point correspondant au secret $T$ et le point correspondant au nonce $N_B$. Alice peut désormais combiner l'adaptor signature de Bob $s_B'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $s_B$ pour la transaction $m_B$ qui lui envoie le BTC de Bob :
+\end{itemize}
 $$s_B = s_B' + t$$$$(s_B' + t) \cdot G = N_B + T + H(N_B + T \parallel P_B \parallel m_B) \cdot P_B$$
-- Alice diffuse cette transaction $m_B$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $s_B = s_B' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :
+\begin{itemize}
+  \item Alice diffuse cette transaction $m_B$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $s_B = s_B' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :
+\end{itemize}
 $$t = (s_B' + t) - s_B' = s_B - s_B'$$
-- Or, ce secret $t$ était la seule information manquante à Bob afin de produire la signature valide $s_A$, à partir de l'adaptor signature d'Alice $s_A'$, qui lui permettra de valider la transaction $m_A$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $s_A$ et diffuse à son tour la transaction $m_A$ : $$s_A = s_A' + t$$
+\begin{itemize}
+  \item Or, ce secret $t$ était la seule information manquante à Bob afin de produire la signature valide $s_A$, à partir de l'adaptor signature d'Alice $s_A'$, qui lui permettra de valider la transaction $m_A$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $s_A$ et diffuse à son tour la transaction $m_A$ : $$s_A = s_A' + t$$
+\end{itemize}
 $$(s_A' + t) \cdot G = N_A + T + H(N_A + T \parallel P_A \parallel m_A) \cdot P_A$$
 
 ## ADDR
@@ -84,15 +98,21 @@ Suite finie et non ambiguë d'instructions permettant de réaliser une tâche. D
 ## ANALYSE DE CHAINE
 
 Pratique qui regroupe toutes les méthodes permettant de tracer les flux de bitcoins sur la blockchain. De façon générale, l’analyse de chaîne s’appuie sur l’observation de caractéristiques sur des échantillons de transactions antérieures. Elle consiste ensuite à repérer ces mêmes caractéristiques sur une transaction que l’on souhaite analyser, et à en déduire des interprétations vraisemblables. Cette méthode de résolution de problème à partir d’une approche pratique, pour trouver une solution suffisamment bonne, c’est ce que l’on appelle une heuristique. Pour vulgariser, l’analyse de chaîne se fait en deux grandes étapes : 
-- Le repérage de caractéristiques connues ;
-- La déduction d’hypothèses.
+\begin{itemize}
+  \item Le repérage de caractéristiques connues ;
+  \item La déduction d’hypothèses.
+\end{itemize}
 Un des objectifs de l’analyse de chaîne consiste à regrouper diverses activités sur Bitcoin en vue de déterminer l'unicité de l'utilisateur les ayant effectuées. Par la suite, il sera possible de tenter de rattacher ce faisceau d'activités à une identité réelle grâce à un point d'entrée. Il est primordial de comprendre que l'analyse de chaîne n'est pas une science exacte. Elle repose sur des heuristiques dérivées d'observations antérieures ou d’interprétations logiques. Ces règles permettent d'obtenir des résultats assez fiables, mais jamais d'une précision absolue. En d'autres termes, l'analyse de chaîne implique toujours une dimension de vraisemblabilité dans les conclusions émises. On pourra estimer avec plus ou moins de certitude que deux adresses appartiennent à une même entité, mais une certitude totale sera toujours hors de portée. Tout l’objectif de l'analyse de chaîne réside précisément dans l'agrégation de diverses heuristiques en vue de minimiser le risque d'erreur. Il s'agit en quelque sorte d'une accumulation de preuves qui nous permet de nous approcher davantage de la réalité. Ces fameuses heuristiques peuvent être regroupées en différentes catégories : 
-- Les patterns de transaction (ou modèles de transaction) ;
-- Les heuristiques internes à la transaction ;
-- Les heuristiques externes à la transaction. 
+\begin{itemize}
+  \item Les patterns de transaction (ou modèles de transaction) ;
+  \item Les heuristiques internes à la transaction ;
+  \item Les heuristiques externes à la transaction.
+\end{itemize}
 Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont : 
-- la CIOH (Common Input Ownership Heuristic) ;
-- et la réutilisation d’adresse.
+\begin{itemize}
+  \item la CIOH (Common Input Ownership Heuristic) ;
+  \item et la réutilisation d’adresse.
+\end{itemize}
 
 ## ANCESTOR MINING
 
@@ -111,9 +131,11 @@ Fichier utilisé dans le client Bitcoin Core pour stocker les adresses IP des n�
 ## ANCRAGE BILATÉRAL
 
 Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. L'ancrage bilatéral assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
-- Un tiers de confiance unique ;
-- Une fédération d'entités ;
-- Les mineurs de la chaîne principale (drivechain).
+\begin{itemize}
+  \item Un tiers de confiance unique ;
+  \item Une fédération d'entités ;
+  \item Les mineurs de la chaîne principale (drivechain).
+\end{itemize}
 
 > *En anglais, on parle d'un « two-way peg » ou « 2WP ».*
 
@@ -189,8 +211,10 @@ Outil inventé par Gleb Naumenko et utilisé par Bitcoin Core pour améliorer la
 ## ASSUME UTXO
 
 Paramètre de configuration dans le client majoritaire Bitcoin Core qui permet à un nœud qui vient d'être initialisé (mais qui n'a pas encore fait l'IBD) de reporter la vérification des transactions et de l'UTXO set avant un snapshot donné. Le concept repose sur l'utilisation d'un UTXO set (liste de tous les UTXOs existants à un moment donné) fourni par Core et présumé exact, ce qui permet au nœud d'être synchronisé très rapidement sur la chaîne avec le plus de preuve de travail accumulée. Puisque le nœud saute la longue étape de l'IBD, il est très rapidement fonctionnel pour son utilisateur. Assume UTXO divise la synchronisation (IBD) en deux parties : 
-- Tout d'abord, le nœud réalise le Header First Sync (vérification des en-têtes seulement) et il considère comme valide l'UTXO set qui lui est fourni par Core ;
-- Puis, une fois qu'il est fonctionnel, le nœud va vérifier l'historique complet des blocs en arrière-plan, en actualisant un nouvel UTXO set qu'il aura vérifié lui-même. Si ce dernier ne correspond pas à l'UTXO set fourni par Core, il fournira un message d'erreur.
+\begin{itemize}
+  \item Tout d'abord, le nœud réalise le Header First Sync (vérification des en-têtes seulement) et il considère comme valide l'UTXO set qui lui est fourni par Core ;
+  \item Puis, une fois qu'il est fonctionnel, le nœud va vérifier l'historique complet des blocs en arrière-plan, en actualisant un nouvel UTXO set qu'il aura vérifié lui-même. Si ce dernier ne correspond pas à l'UTXO set fourni par Core, il fournira un message d'erreur.
+\end{itemize}
 Assume UTXO permet donc d'accélérer la préparation d'un nouveau nœud Bitcoin en reportant le processus de vérification des transactions et de l'UTXO set grâce à un snapshot actualisé fourni dans Core.
 
 ## ASSUME VALID
@@ -210,8 +234,10 @@ Paiements conditionnels utilisés dans le cadre du protocole Ark pour fournir un
 ## ATOMIC SWAP
 
 Technologie permettant un échange de cryptomonnaies directement entre deux parties sans besoin de confiance et sans nécessiter d'intermédiaire. Ces échanges sont dits « atomiques » car ils ne peuvent donner que deux résultats :
-- Soit l'échange réussi et les deux participants se sont effectivement échangé leurs cryptomonnaies ;
-- Soit l'échange échoue et les deux participants repartent avec leurs cryptomonnaies de départ.
+\begin{itemize}
+  \item Soit l'échange réussi et les deux participants se sont effectivement échangé leurs cryptomonnaies ;
+  \item Soit l'échange échoue et les deux participants repartent avec leurs cryptomonnaies de départ.
+\end{itemize}
 Les Atomic Swaps peuvent s'effectuer soit avec une même cryptomonnaie, dans ce cas on parle également de « Coin Swap », soit entre des cryptomonnaies différentes. Historiquement, ils s'appuyaient sur des « *Hash Time-Locked Contracts* » (HTLC), un système de verrouillage temporel qui garantie la complétude ou l'annulation totale de l'échange, préservant ainsi l'intégrité des fonds des parties impliquées. Cette méthode exigeait des protocoles capables de gérer à la fois les scripts et les timelocks. Toutefois, ces dernières années, la tendance s'est orientée vers l'utilisation des Adaptor Signatures. Cette seconde approche présente l'avantage de se passer de scripts, réduisant ainsi les coûts opérationnels. Son autre atout majeur réside dans le fait qu'elle n'exige pas l'emploi d'un hachage identique pour les deux volets de la transaction, évitant ainsi de révéler un lien entre elles.
 
 ## ATTAQUE DES 51%
@@ -301,9 +327,11 @@ Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de prop
 ## BIP1
 
 Document qui définit le processus d'élaboration et de mise en œuvre des améliorations proposées au protocole Bitcoin. Rédigé par Amir Taaki en août 2011, il établit une méthodologie standard pour proposer et documenter des modifications potentielles. Les propositions de BIP sont alors classées en trois catégories : 
-- Standards Track : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;
-- Informational : ceux qui offrent des informations générales mais n'impactent pas directement le protocole ; 
-- Process : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.
+\begin{itemize}
+  \item Standards Track : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;
+  \item Informational : ceux qui offrent des informations générales mais n'impactent pas directement le protocole ;
+  \item Process : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.
+\end{itemize}
 Ce cadre systématise le développement de Bitcoin, afin d'assurer une approche coordonnée et transparente de ses évolutions. La méthodologie du BIP1 sera par la suite remplacée par celle du BIP2.
 
 ## BIP2
@@ -313,8 +341,10 @@ Document rédigé par Luke Dashjr en juin 2012 qui établit des critères préci
 ## BIP8
 
 Élaboré suite aux débats sur SegWit qui utilisait le BIP9 pour son activation, le BIP8 est une méthode d'activation de soft forks qui incorpore nativement un mécanisme d'UASF (*User-Activated Soft Fork*) automatique. Comme le BIP9, le BIP8 utilise la signalisation des mineurs, mais ajoute le paramètre `LOT` (*Lock-in On Time out*). Si `LOT` est réglé sur `vrai`, à l'expiration de la période de signalisation sans atteindre le seuil requis, un UASF est automatiquement déclenché, forçant l'activation du soft fork. Cette approche contraint les mineurs à être coopératifs ou risquer un UASF imposé par les utilisateurs. De plus, contrairement au BIP9, le BIP8 définit la période de signalisation basée sur la hauteur des blocs, éliminant les manipulations potentielles via le taux de hachage par les mineurs. Le BIP8 permet également de fixer un seuil de vote variable et introduit un paramètre pour une hauteur de bloc minimale pour l'activation, donnant aux mineurs le temps de se préparer et de signaler leur accord en avance sans forcément être prêts. Lorsqu'un soft fork est activé via le BIP8 avec le paramètre `LOT=vrai`, on utilise ici une méthode très agressive contre les mineurs qui sont immédiatement mis sous la pression d'un éventuel UASF. En effet, cela leur laisse seulement 2 choix :
-- Être coopératifs, et ainsi faciliter le processus d'activation ;
-- Être non coopératifs, auquel cas les utilisateurs font un UASF automatiquement pour imposer le soft fork.
+\begin{itemize}
+  \item Être coopératifs, et ainsi faciliter le processus d'activation ;
+  \item Être non coopératifs, auquel cas les utilisateurs font un UASF automatiquement pour imposer le soft fork.
+\end{itemize}
 
 ## BIP9
 
@@ -411,19 +441,65 @@ Proposition d'amélioration qui introduit l'utilisation d'un étage de dérivati
 ## BIP44
 
 Proposition d'amélioration qui introduit une structure de dérivation hiérarchique standard pour les portefeuilles HD. LE BIP44 s'appuie sur les principes établis par le BIP32 pour la dérivation des clés et sur le BIP43 pour l'utilisation du champ « purpose ». Il introduit une structure de cinq niveaux de dérivation : `m / purpose' / coin_type' / account' / change / address_index`. Voici le détail de chaque profondeur :
-- `m /` indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur ;
-- `m / purpose' /` indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champs est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors `84'` ;
-- `m / purpose' / coin_type' /` indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au Bitcoin est le `0'` ;
-- `m / purpose' / coin_type' / account' /` indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de `0'`. les clés étendues (`xpub`, `xprv`...) se trouvent à ce niveau de profondeur ;
-- `m / purpose' / coin_type' / account' / change /` indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index `0` et la chaîne interne est identifiée avec l'index `1`. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur `xpub` ;
-- `m / purpose' / coin_type' / account' / change / address_index` indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index `0`, la deuxième adresse dispose de l’index `1`, etc...
+\begin{itemize}
+  \item 
+  \texttt{m /}
+  indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur ;
+  \item 
+  \texttt{m / purpose' /}
+  indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champs est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors
+  \texttt{84'}
+  ;
+  \item 
+  \texttt{m / purpose' / coin_type' /}
+  indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au Bitcoin est le
+  \texttt{0'}
+  ;
+  \item 
+  \texttt{m / purpose' / coin_type' / account' /}
+  indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de
+  \texttt{0'}
+  . les clés étendues (
+  \texttt{xpub}
+  ,
+  \texttt{xprv}
+  ...) se trouvent à ce niveau de profondeur ;
+  \item 
+  \texttt{m / purpose' / coin_type' / account' / change /}
+  indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index
+  \texttt{0}
+  et la chaîne interne est identifiée avec l'index
+  \texttt{1}
+  . Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur
+  \texttt{xpub}
+  ;
+  \item 
+  \texttt{m / purpose' / coin_type' / account' / change / address_index}
+  indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index
+  \texttt{0}
+  , la deuxième adresse dispose de l’index
+  \texttt{1}
+  , etc...
+\end{itemize}
 
 Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 86' / 0' / 0' / 0 / 5`, on peut en déduire les informations suivantes :
-- `86'` indique que nous suivons le standard de dérivation du BIP86 (Taproot ou SegWitV1) ;
-- `0'` indique que c'est une adresse Bitcoin ;
-- `0'` indique que l'on est sur le premier compte du portefeuille ;
-- `0` indique que c'est une adresse externe ;
-- `5` indique que c'est la sixième adresse externe de ce compte.
+\begin{itemize}
+  \item 
+  \texttt{86'}
+  indique que nous suivons le standard de dérivation du BIP86 (Taproot ou SegWitV1) ;
+  \item 
+  \texttt{0'}
+  indique que c'est une adresse Bitcoin ;
+  \item 
+  \texttt{0'}
+  indique que l'on est sur le premier compte du portefeuille ;
+  \item 
+  \texttt{0}
+  indique que c'est une adresse externe ;
+  \item 
+  \texttt{5}
+  indique que c'est la sixième adresse externe de ce compte.
+\end{itemize}
 
 ## BIP47
 
@@ -540,10 +616,12 @@ Introduit un nouvel opcode nommé `OP_CHECKTEMPLATEVERIFY` (CTV). CTV permettrai
 ## BIP123
 
 Établit un nouveau processus standardisé pour la classification des propositions d'amélioration de Bitcoin. Les BIP doivent dorénavant être classifiés selon 4 catégories :
-- Consensus : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
-- Peer Services : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
-- API/RPC : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
-- Applications : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
+\begin{itemize}
+  \item Consensus : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
+  \item Peer Services : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
+  \item API/RPC : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
+  \item Applications : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
+\end{itemize}
 
 ## BIP125
 
@@ -565,8 +643,10 @@ Introduit le concept de témoin séparé (*Segregated Witness*) qui donnera son 
 ## BIP143
 
 Introduit une nouvelle manière de hacher la transaction pour la vérification des signatures dans les scripts post-SegWit. L'objectif est de minimiser les opérations redondantes lors de la vérification et d'inclure la valeur des UTXO en entrée dans la signature. Cela résout deux problèmes majeurs de l'algorithme de hachage de transaction original : 
-- La croissance quadratique du hachage des données avec le nombre de signatures ; 
-- L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.
+\begin{itemize}
+  \item La croissance quadratique du hachage des données avec le nombre de signatures ;
+  \item L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.
+\end{itemize}
 Puisque la mise à jour SegWit, expliquée dans le BIP141, introduit une nouvelle forme de transactions dont le script ne sera pas vérifié par les vieux nœuds, le BIP143 en profite pour résoudre ce problème sans nécessiter de hard fork. Le BIP143 fait donc partie du soft fork SegWit.
 
 ## BIP144
@@ -624,9 +704,11 @@ Proposition, connue sous le nom de Dandelion, qui vise à améliorer la confiden
 ## BIP173
 
 Introduit le format d'adresse Bech32 pour les adresses SegWit V0. Ce format d'adresse est caractérisé par le préfixe `bc1q`. Le format Bech32 offre plusieurs avantages : 
-- Il demande moins d'espace dans les codes QR ;
-- Il est plus facilement interprétable par les humains ;
-- Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
+\begin{itemize}
+  \item Il demande moins d'espace dans les codes QR ;
+  \item Il est plus facilement interprétable par les humains ;
+  \item Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
+\end{itemize}
 Ces caractéristiques facilitent l'utilisation des adresses de réception tout en minimisant les risques d'erreurs.
 
 > *Pour plus d'informations, voir la définition de [**BECH32 ET BECH32M**](#bech32-et-bech32m).*
@@ -731,8 +813,10 @@ Bitcoin QT est un client Bitcoin intégrant une interface graphique publié en m
 ## BITCOIN SATOSHI VISION (BSV)
 
 Système de cryptomonnaie issu d'un hard fork de Bitcoin Cash (BCH), lui-même dérivé de Bitcoin (BTC). Le fork de Bitcoin SV s'est produit le 15 novembre 2018 au bloc 556 766 en raison de désaccords au sein de la communauté Bitcoin Cash, notamment concernant la taille des blocs et la supposée vision de Satoshi Nakamoto, le créateur de Bitcoin. Deux camps se sont affrontés : 
-- Les partisans du fork « Bitcoin Cash ABC », qui est devenu Bitcoin Cash (BCH). Ce groupe était notamment soutenu par le célèbre entrepreneur Roger Ver ;
-- Les promoteurs du fork « Bitcoin Cash Satoshi Vision », qui a abouti à la création de Bitcoin Satoshi Vision (BSV). Ce camp était entre autres soutenu par Craig Wright.
+\begin{itemize}
+  \item Les partisans du fork « Bitcoin Cash ABC », qui est devenu Bitcoin Cash (BCH). Ce groupe était notamment soutenu par le célèbre entrepreneur Roger Ver ;
+  \item Les promoteurs du fork « Bitcoin Cash Satoshi Vision », qui a abouti à la création de Bitcoin Satoshi Vision (BSV). Ce camp était entre autres soutenu par Craig Wright.
+\end{itemize}
 Bitcoin SV se distingue de Bitcoin Cash, et encore plus de Bitcoin, par sa limite de taille de bloc considérablement élevée. Cette spécificité vise à s'aligner sur ce que ses partisans considèrent être la vision initiale de Satoshi Nakamoto pour Bitcoin.
 
 ## BITCOINTALK
@@ -897,9 +981,11 @@ Langage de programmation polyvalent, évoluant du C, connu pour sa puissance et 
 ## CAHOOTS
 
 Dans le cadre du portefeuille Samourai Wallet et des autres logiciels de portefeuilles qui l'implémente, un Cahoot désigne tous les types de transactions réalisées en collaboration entre plusieurs utilisateurs. Procéder à un Cahoot signifie donc participer conjointement à une transaction. Cette collaboration s'articule autour de l'échange de transactions partiellement signées. Ces échanges peuvent se faire soit manuellement, via des codes QR, soit de manière automatisée, via le réseau de communication Soroban.
-- Les transactions Stowaway (Payjoin) ;
-- Les transactions Stonewall x2 ;
-- Les transactions Joinbot.
+\begin{itemize}
+  \item Les transactions Stowaway (Payjoin) ;
+  \item Les transactions Stonewall x2 ;
+  \item Les transactions Joinbot.
+\end{itemize}
 
 ## CANAL DE PAIMENT
 
@@ -934,11 +1020,23 @@ Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Cor
 ## CHARGE UTILE (PAYLOAD)
 
 Dans le contexte général de l'informatique, une charge utile désigne les données essentielles transportées dans un paquet de données plus large. Par exemple, dans une adresse SegWit V0 sur Bitcoin, la charge utile correspond au hachage de la clé publique, sans les diverses métadonnées (le HRP, le séparateur, la version de SegWit et la somme de contrôle). Par exemple, sur l'adresse `bc1qc2eukw7reasfcmrafevp5dhv8635yuqays50gj`, nous avons : 
-- `bc` : la partie lisible par l'homme (HRP) ;
-- `1` : le séparateur ;
-- `q` : la version de SegWit. Ici, c'est la version 0 ;
-- `c2eukw7reasfcmrafevp5dhv8635yuqa` : la charge utile, ici, le hachage de la clé publique ;
-- `ys50gj` : la somme de contrôle.
+\begin{itemize}
+  \item 
+  \texttt{bc}
+  : la partie lisible par l'homme (HRP) ;
+  \item 
+  \texttt{1}
+  : le séparateur ;
+  \item 
+  \texttt{q}
+  : la version de SegWit. Ici, c'est la version 0 ;
+  \item 
+  \texttt{c2eukw7reasfcmrafevp5dhv8635yuqa}
+  : la charge utile, ici, le hachage de la clé publique ;
+  \item 
+  \texttt{ys50gj}
+  : la somme de contrôle.
+\end{itemize}
 
 ## CHAUMIAN COINJOIN
 
@@ -1051,12 +1149,18 @@ Dans le contexte de la dérivation hiérarchique et déterministe (HD) des porte
 ## CODE DE PAIMENT RÉUTILISABLE
 
 Dans le BIP47, un code de paiement réutilisable est une information générée à partir d'un portefeuille Bitcoin permettant d'engager une transaction de notification et de dériver des adresses uniques. Cela permet de ne pas faire de réutilisation d'adresses, qui mènent à une perte de la confidentialité, sans pour autant devoir dériver et transmettre manuellement de nouvelles adresses vierges à chaque paiement. Dans le BIP47, les codes de paiement réutilisables sont construits de la manière suivante :
-- L'octet 0 correspond à la version ;
-- L'octet 1 est un champ de bits permettant d'ajouter des informations en cas d'utilisation spécifique ;
-- L'octet 2 permet d'indiquer la parité du `y` de la clé publique ;
-- De l'octet 3 à l'octet 34, on retrouvera la valeur `x` de la clé publique ;
-- De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;
-- De l'octet 67 à l'octet 79, c'est du rembourrage de zéros.
+\begin{itemize}
+  \item L'octet 0 correspond à la version ;
+  \item L'octet 1 est un champ de bits permettant d'ajouter des informations en cas d'utilisation spécifique ;
+  \item L'octet 2 permet d'indiquer la parité du
+  \texttt{y}
+  de la clé publique ;
+  \item De l'octet 3 à l'octet 34, on retrouvera la valeur
+  \texttt{x}
+  de la clé publique ;
+  \item De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;
+  \item De l'octet 67 à l'octet 79, c'est du rembourrage de zéros.
+\end{itemize}
 
 On ajoute généralement un HRP au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en base58. La construction d'une code de paiement est donc assez proche de celle d'une clé étendue. Voici mon propre code de paiement BIP47 en base58 : 
 ```
@@ -1179,9 +1283,11 @@ Dans le contexte de la cryptographie, une courbe elliptique est une courbe algé
 ## COVENANT
 
 Mécanisme qui permet d'imposer des conditions spécifiques sur la manière dont une pièce donnée peut être dépensée, y compris dans des transactions futures. Au-delà des conditions usuellement autorisées par le langage script sur un UTXO, le covenant force des contraintes supplémentaires sur la manière de dépenser cette pièce Bitcoin dans des transactions ultérieures. Techniquement, l'instauration d'un covenant intervient lorsque le `scriptPubKey` d'un UTXO définit des restrictions sur le `scriptPubKey` des sorties d'une transaction qui dépense ledit UTXO. En élargissant la portée de script, les covenants permettraient de nombreuses évolutions sur Bitcoin comme l'ancrage bilatéral des drivechains, la mise en place de vaults ou encore l'amélioration des systèmes de surcouche comme Lightning. On différencie les propositions de covenants en fonction de trois critères :
-- Leur porté ;
-- Leur implémentation ;
-- Leur récursivité.
+\begin{itemize}
+  \item Leur porté ;
+  \item Leur implémentation ;
+  \item Leur récursivité.
+\end{itemize}
 Il existe de très nombreuses propositions qui permettraient l'utilisation de covenants sur Bitcoin. Les plus avancées dans le processus d'implémentation sont : OP_CHECKTEMPLATEVERIFY (CTV), SIGHASH_ANYPREVOUT (APO) et OP_VAULT. Parmi les autres propositions, il y a : OP_TX, OP_TAPLEAFUPDATEVERIFY (TLUV), OP_EVICT, OP_CHECKSIGFROMSTACKVERIFY, etc.
 
 Pour bien comprendre le concept de covenant, je vous propose une analogie : imaginez un coffre-fort contenant 500 € en petites coupures. Si vous parvenez à déverrouiller ce coffre avec la clé adéquate, alors vous êtes libre d'utiliser cet argent comme bon vous semble. Ça, c’est la situation normale de Bitcoin. Maintenant, imaginez que ce même coffre-fort ne contient pas 500 € en billets de banque, mais plutôt des tickets restaurants d'une valeur équivalente. Si vous réussissez à ouvrir ce coffre, vous pouvez disposer de cette somme. Cependant, votre liberté de dépense est restreinte :vous ne pouvez utiliser ces tickets pour payer que dans certains restaurants. Ainsi, il y a une première condition pour dépenser cet argent, qui est de parvenir à ouvrir le coffre avec la clé appropriée. Mais il y a aussi une condition supplémentaire quant à l'usage futur de cette somme : elle doit être dépensée exclusivement dans des restaurants partenaires, et non pas en toute liberté. Ce système de contraintes sur les transactions futures, c’est ce que l’on appelle un covenant.
@@ -1300,15 +1406,17 @@ Voir la définition de [**LOGARITHME DISCRET (PROBLÈME)**](#logarithme-discret-
 ## DNS SEEDS
 
 Points de connexion initiaux pour les nouveaux nœuds Bitcoin qui rejoignent le réseau. Ces seeds, qui sont en fait des serveurs DNS spécifiques, ont leur adresse intégrée de façon permanente dans le code de Bitcoin Core. Lorsqu'un nouveau nœud se lance, il contacte ces serveurs pour obtenir une liste aléatoire d'adresses IP de nœuds Bitcoin à priori actifs. Le nouveau nœud pourra ainsi établir des connexions avec les nœuds de cette liste afin d'obtenir les informations pour faire son IBD et se synchroniser sur la chaîne avec le plus de travail accumulé. En 2023, voici la liste des DNS seeds de Bitcoin Core et les personnes responsables de leur maintenance (bitcoin/src/kernel/chainparams.cpp) :
-- seed.bitcoin.sipa.be : Pieter Wuille ;
-- dnsseed.bluematt.me : Matt Corallo ;
-- dnsseed.bitcoin.dashjr.org : Luke Dashjr ;
-- seed.bitcoinstats.com : Christian Decker ;
-- seed.bitcoin.jonasschnelli.ch : Jonas Schnelli ;
-- seed.btc.petertodd.net : Peter Todd ;
-- seed.bitcoin.sprovoost.nl : Sjors Provoost ;
-- dnsseed.emzy.de : Stephan Oeste ;
-- seed.bitcoin.wiz.biz : Jason Maurice.
+\begin{itemize}
+  \item seed.bitcoin.sipa.be : Pieter Wuille ;
+  \item dnsseed.bluematt.me : Matt Corallo ;
+  \item dnsseed.bitcoin.dashjr.org : Luke Dashjr ;
+  \item seed.bitcoinstats.com : Christian Decker ;
+  \item seed.bitcoin.jonasschnelli.ch : Jonas Schnelli ;
+  \item seed.btc.petertodd.net : Peter Todd ;
+  \item seed.bitcoin.sprovoost.nl : Sjors Provoost ;
+  \item dnsseed.emzy.de : Stephan Oeste ;
+  \item seed.bitcoin.wiz.biz : Jason Maurice.
+\end{itemize}
 
 Les DNS seeds représentent le second moyen, par ordre de priorité, pour un nœud de Bitcoin d'établir des connexions. Le premier moyen consiste à utiliser le fichier peers.dat que le nœud a lui-même créé. Ce fichier est naturellement vide dans le cas d'un nouveau nœud, à moins que l'utilisateur l'ai modifié manuellement.
 
@@ -1500,8 +1608,10 @@ Protocole de paiement et de gestion de bitcoins conçu pour améliorer la confid
 ## FEE SNIPING
 
 Scénario d'attaque dans lequel des mineurs cherchent à réécrire un bloc récemment confirmé dans le but de récupérer les frais de transaction qu'il contient, tout en y ajoutant des transactions à frais élevés arrivées entre-temps dans la mempool. L'objectif final de cette attaque pour le mineur est d'augmenter sa rentabilité. Le fee sniping peut devenir de plus en plus profitable à mesure que la récompense de bloc diminue et que les frais de transaction représentent une part plus importante dans les revenus des mineurs. Elle peut également être avantageuse lorsque les frais contenus dans le bloc précédent sont nettement supérieurs à ceux du meilleur bloc candidat suivant. Pour simplifier, le mineur est face à ce choix en termes d'incitations :
-- Miner de manière normale à la suite du dernier bloc, avec une forte probabilité de remporter une récompense faible ;
-- Tenter de miner un bloc antérieur (fee sniping), avec une faible probabilité de remporter une récompense élevée.
+\begin{itemize}
+  \item Miner de manière normale à la suite du dernier bloc, avec une forte probabilité de remporter une récompense faible ;
+  \item Tenter de miner un bloc antérieur (fee sniping), avec une faible probabilité de remporter une récompense élevée.
+\end{itemize}
 
 Cette attaque constitue un risque pour le système Bitcoin, car plus les mineurs l'adoptent, plus les autres mineurs, initialement honnêtes, sont incités à en faire autant. En effet, chaque fois qu'un nouveau mineur s'ajoute à ceux qui tentent un fee sniping, la probabilité qu'une des mineurs attaquants réussisse augmente, et la probabilité qu'un des mineurs honnêtes étende la chaîne diminue en contrepartie. Si cette attaque est menée de manière massive et maintenue dans le temps, les confirmations de bloc ne seraient plus un indicateur fiable de l'immuabilité d'une transaction Bitcoin. Cela rendrait potentiellement le système inutilisable. Pour contrer ce risque, la plupart des logiciels de portefeuille remplissent automatiquement le champ `nLocktime` afin qu'il conditionne la validation de la transaction à l'inclusion dans la prochaine hauteur de bloc. Ainsi, il devient impossible d'inclure la transaction dans une réécriture du bloc précédent. Si l'utilisation massive du `nLocktime` est adoptée par les utilisateurs de Bitcoin, cela réduit considérablement les incitations au fee sniping. En effet, cela encourage la progression de la blockchain plutôt que sa réécriture en réduisant les potentiels bénéfices de celle-ci. Pour les transactions Taproot, le BIP326 propose d'utiliser le champ `nSequence` de manière similaire pour obtenir l'effet équivalent à celui du champ `nLocktime` pour les autres types de transactions. Cette utilisation permettrait de faire d'une pierre deux coups en améliorant également la confidentialité des protocoles de seconde couche qui utilisent ce champs.
 
@@ -1512,6 +1622,7 @@ Fichier dans Bitcoin Core qui stocke des données estimées sur les frais de tra
 ## FERME DE MINAGE
 
 Installation où de nombreuses machines de minage (souvent, des ASICs) sont regroupées pour miner du bitcoin en participant au processus de la preuve de travail. Le but de ce regroupement est de faciliter la gestion du parc de machines et de faire des économies d'échelles, notamment pour la mise en place, l'entretien, le refroidissement, la fourniture en électricité et la connexion au réseau.
+
 > *Attention, la ferme de minage ne doit pas être confondue avec la pool de minage.*
 
 ## FIAT
@@ -1584,10 +1695,12 @@ Certains bitcoiners suggèrent d'utiliser ce terme pour décrire une dusting att
 ## FORK
 
 Le terme de « fork » revêt plusieurs significations dans le cadre de Bitcoin. Il désigne soit une scission du réseau de nœuds en plusieurs groupes séparés, entraînant la création de plusieurs blockchains différentes, soit une modification des règles du protocole, voire les deux simultanément. Pour simplifier, on distingue 4 grandes catégories de forks :
-- **L'embranchement naturel** : se produit lorsqu'il y a une concurrence temporaire entre deux blocs découverts en même temps à une même hauteur. Cet embranchement peut s'étendre sur plusieurs blocs. Ce type de fork se résout naturellement quand une des chaînes devient plus longue que l'autre (avec plus de travail accumulé), menant à une réorganisation. Cette réorganisation se manifeste avec l'intégralité des nœuds qui s'accordent de nouveau sur une blockchain unique ;
-- **Le fork de code** : consiste à créer une toute nouvelle cryptomonnaie à partir du code source de Bitcoin, en démarrant une nouvelle blockchain depuis le bloc de genèse ;
-- **Le hard fork** : représente une modification du protocole Bitcoin, incompatible avec les versions antérieures, en retirant des règles ou en allégeant celles existantes. Cela résulte en la création de deux chaînes distinctes et incompatibles si tous les nœuds ne sont pas mis à jours. Le réseau se scinde alors en deux : ceux qui adoptent les nouvelles règles et ceux qui conservent les anciennes ;
-- **Le soft fork** : implique des modifications rétrocompatibles qui ajoutent des règles ou rendent plus restrictives celles existantes, sans provoquer de division du réseau. Les nœuds qui n'adoptent pas les nouvelles règles peuvent continuer à suivre la même chaîne que les autres, à condition que la majorité de la puissance de calcul du réseau soutienne la chaîne mise à jour.
+\begin{itemize}
+  \item L'embranchement naturel** : se produit lorsqu'il y a une concurrence temporaire entre deux blocs découverts en même temps à une même hauteur. Cet embranchement peut s'étendre sur plusieurs blocs. Ce type de fork se résout naturellement quand une des chaînes devient plus longue que l'autre (avec plus de travail accumulé), menant à une réorganisation. Cette réorganisation se manifeste avec l'intégralité des nœuds qui s'accordent de nouveau sur une blockchain unique ;
+  \item Le fork de code** : consiste à créer une toute nouvelle cryptomonnaie à partir du code source de Bitcoin, en démarrant une nouvelle blockchain depuis le bloc de genèse ;
+  \item Le hard fork** : représente une modification du protocole Bitcoin, incompatible avec les versions antérieures, en retirant des règles ou en allégeant celles existantes. Cela résulte en la création de deux chaînes distinctes et incompatibles si tous les nœuds ne sont pas mis à jours. Le réseau se scinde alors en deux : ceux qui adoptent les nouvelles règles et ceux qui conservent les anciennes ;
+  \item Le soft fork** : implique des modifications rétrocompatibles qui ajoutent des règles ou rendent plus restrictives celles existantes, sans provoquer de division du réseau. Les nœuds qui n'adoptent pas les nouvelles règles peuvent continuer à suivre la même chaîne que les autres, à condition que la majorité de la puissance de calcul du réseau soutienne la chaîne mise à jour.
+\end{itemize}
 
 > *Pour plus d'informations, voir la définition de [**HARD FORK**](#hard-fork) et [**SOFT FORK**](#soft-fork).*
 
@@ -1706,15 +1819,18 @@ Interface standardisée permettant l'intégration et l'interaction entre des log
 ## HASHCASH
 
 Système de preuve de travail conçu par Adam Back en 1997, principalement pour lutter contre le spam et les attaques DoS. Il repose sur le principe qu'un expéditeur doit effectuer un travail de calcul (spécifiquement, la recherche d'une collision partielle sur une fonction de hachage cryptographique) pour prouver son travail. Cette tâche est coûteuse en temps et en énergie pour l'expéditeur, mais la vérification du résultat par le destinataire est rapide et simple. Ce protocole s'est révélé particulièrement adapté à la lutte contre le spam dans les messageries électroniques, car il est peu contraignant pour les utilisateurs légitimes, tout en constituant un obstacle majeur pour les spammeurs. En effet, l'envoi d'un seul courriel requiert quelques secondes de calcul, mais reproduire cette opération des millions de fois rend l'opération extrêmement coûteuse en termes d'énergie et de temps, ce qui vient souvent annuler l'intérêt économique des campagnes de spam, qu'elles soient à but marketing ou malveillant. De plus, il permet de préserver l'anonymat de l'expéditeur. HashCash a rapidement été adopté par des cypherpunks qui cherchaient à développer un système de monnaie électronique anonyme sans intermédiaire. En effet, l'innovation d'Adam Back a introduit pour la première fois la notion de rareté dans le monde numérique. On retrouve alors le concept de preuve de travail dans plusieurs propositions de monnaie électronique antérieures à Bitcoin, dont :
-- b-money de Wei Dai publié en 1998 ;
-- R-POW de Hal Finney publié en 2004 ;
-- BitGold de Nick Szabo publié en 2005.
+\begin{itemize}
+  \item b-money de Wei Dai publié en 1998 ;
+  \item R-POW de Hal Finney publié en 2004 ;
+  \item BitGold de Nick Szabo publié en 2005.
+\end{itemize}
 
 Le principe de HashCash se retrouve également au sein du protocole, où il est utilisé comme mécanisme de protection face aux attaques Sybil.
 
 ## HASHRATE
 
 Indicateur de la puissance de calcul du réseau, mesurée en hachages par seconde (H/s). Il indique la capacité des mineurs à exécuter des opérations de hachage dans le cadre de la preuve de travail. Un hashrate élevé signifie une plus grande sécurité de l'historique économique de Bitcoin et une plus grande résistance aux attaques, car il faudrait une quantité substantielle de puissance de calcul pour compromettre le réseau. Le hashrate est également indicatif de la concurrence entre les mineurs : plus le hashrate est élevé, plus la difficulté de minage est grande, ce qui influence la récompense et donc la rentabilité des mineurs. C'est donc un indicateur clé de la santé et de la sécurité du système Bitcoin. De la même manière que le hashrate sert à mesure le taux de hachage global du réseau Bitcoin, il peut également être utilisé pour mesurer le taux de hachage d'une machine, d'une ferme de minage ou encore d'une pool de minage.
+
 > *En français, on parle de « taux de hachage », bien que le terme de « hashrate » soit largement utilisé dans le langage courant.*
 
 ## HMAC-SHA512
@@ -1813,9 +1929,11 @@ Ancienne méthode utilisée pour la sélection de pièces dans le portefeuille d
 ## KYC (KNOW YOUR CUSTOMER)
 
 Procédure réglementaire utilisée par certaines entreprises opérant sur Bitcoin pour vérifier l'identité de leurs clients dans le cadre de la lutte contre le blanchiment d'argent et le financement du terrorisme. Le KYC implique la collecte et la vérification de données personnelles. Dans le cadre de l'achat de bitcoins, le KYC amène plusieurs risques pour l'utilisateur, notamment :
-- Le risque de fuite de données personnelles en lien avec une activité sur Bitcoin : Le stockage d'informations sur les serveurs d'entreprises peut entraîner des fuites, exposant les données des utilisateurs à des tentatives d'hameçonnage, des attaques physiques, ou une usurpation d'identité, notamment en raison de leur association avec l'environnement de Bitcoin ;
-- L'exposition à la surveillance étatique : L'achat de BTC via des acteurs régulés peut révéler à l'État que l'utilisateur a possédé du bitcoin à un moment donné, ce qui pourrait avoir des répercutions futures en cas de bouleversement politiques ou économiques ;
-- La facilitation du traçage on-chain : La réalisation d'un KYC crée un lien direct entre l'identité de l'utilisateur et ses transactions sur la blockchain, permettant d'établir un point d'entrée pour une analyse de chaîne.
+\begin{itemize}
+  \item Le risque de fuite de données personnelles en lien avec une activité sur Bitcoin : Le stockage d'informations sur les serveurs d'entreprises peut entraîner des fuites, exposant les données des utilisateurs à des tentatives d'hameçonnage, des attaques physiques, ou une usurpation d'identité, notamment en raison de leur association avec l'environnement de Bitcoin ;
+  \item L'exposition à la surveillance étatique : L'achat de BTC via des acteurs régulés peut révéler à l'État que l'utilisateur a possédé du bitcoin à un moment donné, ce qui pourrait avoir des répercutions futures en cas de bouleversement politiques ou économiques ;
+  \item La facilitation du traçage on-chain : La réalisation d'un KYC crée un lien direct entre l'identité de l'utilisateur et ses transactions sur la blockchain, permettant d'établir un point d'entrée pour une analyse de chaîne.
+\end{itemize}
 
 
 
@@ -1898,9 +2016,17 @@ Ancien nom de la collection d'outils et de bibliothèques pour développeurs BDK
 ## MAGIC NETWORK
 
 Constantes utilisées dans le protocole Bitcoin pour identifier le réseau spécifique (mainnet, testnet, regtest...) d'un message échangé entre nœuds. Ces valeurs sont inscrites au début de chaque message pour faciliter l'identification des messages liés à Bitcoin dans le flux de données. Les Magic Network sont conçus pour être rarement présents dans des données de communication ordinaires. En effet, ces 4 octets sont peu fréquents dans l'ASCII, sont invalides en UTF-8 et génèrent un très grand entier de 32 bits, peu importe le format de stockage des données. Les Magic Network sont (en format little-endian) :
-- Mainnet : `f9beb4d9` ;
-- Testnet : `0b110907` ;
-- Regtest : `fabfb5da`.
+\begin{itemize}
+  \item Mainnet :
+  \texttt{f9beb4d9}
+  ;
+  \item Testnet :
+  \texttt{0b110907}
+  ;
+  \item Regtest :
+  \texttt{fabfb5da}
+  .
+\end{itemize}
 
 > *C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
 
@@ -1963,8 +2089,10 @@ Structure de données utilisée dans le cadre du BIP37 (*Transaction Bloom Filte
 ## MÉTHODE D'ACTIVATION
 
 Processus par lequel la communauté d'utilisateurs décide de l'implémentation d'un soft fork sur le protocole Bitcoin, en cherchant à éviter une séparation de la blockchain. Ce processus consiste à solliciter l'opinion des mineurs pour approuver un soft fork avant son activation. Si une majorité importante accepte le soft fork, le risque de scission de la blockchain est minimisé. Ce consensus est crucial car, si une majorité de mineurs refusent de faire la modification, le soft fork pourrait créer deux chaînes distinctes - une avec les règles modifiées et l'autre sans. Il existe 2 grandes catégories de méthodes d'activation : 
-- Les UASF (*User-Activated Soft Fork*) lorsque ce sont les nœuds qui imposent la mise à jour ;
-- Les MASF (*Miner-Activated Soft Fork*) lorsque ce sont les mineurs qui déclenchent l'activation.
+\begin{itemize}
+  \item Les UASF (*User-Activated Soft Fork*) lorsque ce sont les nœuds qui imposent la mise à jour ;
+  \item Les MASF (*Miner-Activated Soft Fork*) lorsque ce sont les mineurs qui déclenchent l'activation.
+\end{itemize}
 Il existe de nombreuses méthodes d'activation différentes qui ont été testées au fur et à mesure de l'évolution de Bitcoin. À l'époque de Satoshi, le processus d'activation n'était pas formellement établi. Les modifications étaient souvent arbitraires et parfois même réalisées sans informer la communauté. Plus tard, la méthode du « Flag Day » a été adoptée. Après le retrait de Satoshi, d'autres méthodes ont été successivement utilisées, notamment le BIP34, le BIP9, le BIP8, et enfin le Speedy Trial.
 
 ## MÉTHODE GÉOMÉTRIQUE
@@ -2044,14 +2172,17 @@ Estimation du temps universel basée sur les horloges des nœuds du réseau. Cha
 ## NEW YORK AGREEMENT (NYA)
 
 Réunion privée qui s'est tenue en 2017, rassemblant plus de 50 entreprises de l'écosystème Bitcoin, à la suite de la conférence Consensus 2017. L'objectif de cette réunion était de finir le débat de longue date sur le passage à l'échelle de Bitcoin en parvenant à un accord. De cette rencontre est née la proposition SegWit2x, s'inspirant de la précédente proposition SegWit2Mb. Elle prévoyait deux modifications majeures du protocole Bitcoin : 
-- L'adoption de SegWit avec un seuil d'activation fixé à 80 % de signalisation ;
-- Un hard fork destiné à augmenter la taille maximale des blocs de 1 Mo à 2 Mo.
+\begin{itemize}
+  \item L'adoption de SegWit avec un seuil d'activation fixé à 80 % de signalisation ;
+  \item Un hard fork destiné à augmenter la taille maximale des blocs de 1 Mo à 2 Mo.
+\end{itemize}
 
 Malgré le signalement positif de plus de 80 % des mineurs, le projet n'a pas su rallier un consensus suffisant, aboutissant à son abandon. Cet événement a été interprété par de nombreux utilisateurs et développeurs comme une tentative d'attaque de Bitcoin.
 
 ## NLOCKTIME
 
 Champ intégré dans les transactions qui définit une condition temporelle avant laquelle la transaction ne peut être ajoutée à un bloc valide. Ce paramètre permet de spécifier un temps précis (timestamp Unix) ou un nombre de blocs spécifique comme condition pour que la transaction soit considérée comme valide. C'est donc un timelock absolu (pas relatif). Le `nLockTime` agit sur l'intégralité de la transaction et permet effectivement de vérifier le temps, alors que l'opcode `OP_CHECKLOCKTIMEVERIFY` permet uniquement de comparer la valeur en haut de la pile avec la valeur du `nLockTime`.
+
 > *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](#op_checklocktimeverify-0xb1) et [**TIMELOCK**](#timelock).*
 
 ## NŒUD
@@ -2120,13 +2251,33 @@ Erreur de logique où une boucle itère une fois de trop ou de moins, souvent du
 ## OBSOLÈTE (BLOC)
 
 Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ». Le processus menant à la production d'un bloc obsolète est le suivant :
-- Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons les `Bloc A` et `Bloc B` ;
-- Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;
-- Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le `Bloc A` et le `Bloc B` au-dessus duquel ils vont miner ;
-- Un mineur trouve finalement un bloc valide au-dessus du `Bloc B`. Appelons le `Bloc B+1` ;
-- Il diffuse `Bloc B+1` aux nœuds du réseau ;
-- Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
-- Ils vont donc abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
+\begin{itemize}
+  \item Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons les
+  \texttt{Bloc A}
+  et
+  \texttt{Bloc B}
+  ;
+  \item Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;
+  \item Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le
+  \texttt{Bloc A}
+  et le
+  \texttt{Bloc B}
+  au-dessus duquel ils vont miner ;
+  \item Un mineur trouve finalement un bloc valide au-dessus du
+  \texttt{Bloc B}
+  . Appelons le
+  \texttt{Bloc B+1}
+  ;
+  \item Il diffuse
+  \texttt{Bloc B+1}
+  aux nœuds du réseau ;
+  \item Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la
+  \texttt{Chaîne B}
+  est celle qu'il faut suivre ;
+  \item Ils vont donc abandonner le
+  \texttt{Bloc A}
+  qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
+\end{itemize}
 
 ![](../../dictionnaire/assets/9.png)
 
@@ -2165,6 +2316,7 @@ Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élé
 ## OP_1 (`0X51`)
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
+
 > *OP_1 est identique à **[OP_TRUE](#op_true-0x51)** et **OP_PUSHNUM_1**.*
 
 ## OP_1ADD (`0X8B`)
@@ -2228,10 +2380,12 @@ Reproduit le comportement d'une porte logique `OR`. Il prend deux valeurs au som
 ## OP_CAT (`0X7E`)
 
 Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de les mettre bout-à-bout). Cet opcode a été désactivé, il est donc actuellement impossible de l'utiliser. Toutefois, il est récemment revenu sur le devant de la scène. Certains souhaiteraient pouvoir l'ajouter à Tapscript afin de permettre la combinaison d'objets sur la pile et ainsi améliorer l'expressivité de ce langage. Ce simple outil supplémentaire pourrait permettre :
-- L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
-- La mise en place de Vaults ;
-- L'utilisation de covenants ;
-- Ou encore, l'utilisation de contrat de non équivocation.
+\begin{itemize}
+  \item L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
+  \item La mise en place de Vaults ;
+  \item L'utilisation de covenants ;
+  \item Ou encore, l'utilisation de contrat de non équivocation.
+\end{itemize}
 
 ## OP_CHECKHASHVERIFY (CHV)
 
@@ -2240,11 +2394,23 @@ Nouvel opcode proposé en 2012 dans le BIP17 par Luke Dashjr qui permet de dispo
 ## OP_CHECKLOCKTIMEVERIFY (`0XB1`)
 
 Rend la transaction invalide sauf si toutes ces conditions sont réunies :
-- La pile n'est pas vide ;
-- La valeur du haut de la pile est supérieure ou égale à `0` ;
-- Le type de timelock est le même entre le champ `nLockTime` et la valeur du haut de la pile (temps réel ou numéro de bloc) ;
-- Le champ `nSequence` de l'input n'est pas égal à `0xffffffff` ;
-- La valeur du haut de la pile est supérieure ou égale à la valeur du champ `nLockTime` de la transaction.
+\begin{itemize}
+  \item La pile n'est pas vide ;
+  \item La valeur du haut de la pile est supérieure ou égale à
+  \texttt{0}
+  ;
+  \item Le type de timelock est le même entre le champ
+  \texttt{nLockTime}
+  et la valeur du haut de la pile (temps réel ou numéro de bloc) ;
+  \item Le champ
+  \texttt{nSequence}
+  de l'input n'est pas égal à
+  \texttt{0xffffffff}
+  ;
+  \item La valeur du haut de la pile est supérieure ou égale à la valeur du champ
+  \texttt{nLockTime}
+  de la transaction.
+\end{itemize}
 
 Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHECKLOCKTIMEVERIFY` ne peut être satisfait. Si toutes ces conditions sont valides, alors `OP_CHECKLOCKTIMEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKLOCKTIMEVERIFY` impose donc une contrainte de temps sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Pour ce faire, il restreint les valeurs possibles pour le champs `nLockTime` de la transaction qui le dépense, et ce champs `nLockTime` restreint lui-même le moment où la transaction peut être incluse dans un bloc.
 
@@ -2261,13 +2427,17 @@ Combine un `OP_CHECKMULTISIG` et un `OP_VERIFY`. Il prend plusieurs signatures e
 ## OP_CHECKSEQUENCEVERIFY (`0XB2`)
 
 Rend la transaction invalide si une seule de ces caractéristiques est observée :
-- La pile est vide ;
-- La valeur du haut de la pile est inférieure à `0` ;
-- L'indicateur de désactivation de la valeur en haut de la pile est non défini et ;
-	- La version de la transaction est inférieure à `2` ou ;
-	- L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ;
-	- Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ;
-	- La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
+\begin{itemize}
+  \item La pile est vide ;
+  \item La valeur du haut de la pile est inférieure à
+  \texttt{0}
+  ;
+  \item L'indicateur de désactivation de la valeur en haut de la pile est non défini et ;
+\end{itemize}
+*- La version de la transaction est inférieure à `2` ou ;
+*- L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ;
+*- Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ;
+*- La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
 
 Si une ou plusieurs de ces caractéristiques est observée, le script contenant l'`OP_CHECKSEQUENCEVERIFY` ne peut être satisfait. Si toutes les conditions sont valides, alors `OP_CHECKSEQUENCEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKSEQUENCEVERIFY` impose donc une contrainte de temps relative sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'un temps réel, soit sous la forme d'un nombre de blocs. Pour ce faire, il restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc.
 
@@ -2280,8 +2450,18 @@ Vérifie la validité d'une signature par rapport à une clé publique donnée. 
 ## OP_CHECKSIGADD (`0XBA`)
 
 Extrait les trois valeurs en haut de la pile : une `clé publique`, un `CScriptNum` `n` et une `signature`. Si la signature n'est pas le vecteur vide et n'est pas valide, le script se termine avec une erreur. Si la signature est valide ou est le vecteur vide (`OP_0`), deux cas de figure se présente :
-- Si la signature est le vecteur vide : un `CScriptNum` avec la valeur de `n` est poussé sur la pile et l'exécution continue ;
-- Si la signature n'est pas le vecteur vide et demeure valide : un `CScriptNum` avec la valeur de `n + 1` est poussé sur la pile et l'exécution continue.
+\begin{itemize}
+  \item Si la signature est le vecteur vide : un
+  \texttt{CScriptNum}
+  avec la valeur de
+  \texttt{n}
+  est poussé sur la pile et l'exécution continue ;
+  \item Si la signature n'est pas le vecteur vide et demeure valide : un
+  \texttt{CScriptNum}
+  avec la valeur de
+  \texttt{n + 1}
+  est poussé sur la pile et l'exécution continue.
+\end{itemize}
 Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECKSIG`, mais au lieu de pousser `vrai` ou `faux` sur la pile, il ajoute `1` à la deuxième valeur en haut de la pile si la signature est valide, ou laisse cette valeur inchangée si la signature représente le vecteur vide.`OP_CHECKSIGADD` permet de créer les mêmes politiques multisignatures dans Tapscript qu'avec `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` mais de manière vérifiable par lots, c'est-à-dire qu'il supprime le processus de recherche dans la vérification d'un multisig traditionnel et accélère donc la vérification tout en réduisant la charge opérationnelle sur les CPU des nœuds. Cet opcode a été ajouté dans Tapscript uniquement pour les besoins de Taproot.
 
 ## OP_CHECKSIGVERIFY (`0XAD`)
@@ -2307,11 +2487,13 @@ Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et
 ## OP_ELSE (`0X67`)
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
+
 > *Pour plus d'informations, voir la définition de [**OP_IF**](#op_if-0x63).*
 
 ## OP_ENDIF (`0X68`)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
+
 > *Pour plus d'informations, voir la définition de [**OP_IF**](#op_if-0x63).*
 
 ## OP_EQUAL (`0X87`)
@@ -2347,11 +2529,13 @@ Compare les deux éléments au sommet de la pile et vérifie si le premier élé
 ## OP_HASH160 (`0XA9`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
+
 > *Pour plus d'informations, voir la définition de [**SHA256**](#sha256) et [**RIPEMD160**](#ripemd160).*
 
 ## OP_HASH256 (`0XAA`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
+
 > *Pour plus d'informations, voir la définition de [**SHA256**](#sha256).*
 
 ## OP_IF (`0X63`)
@@ -2459,6 +2643,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 ## OP_SHA256 (`0XA8`)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
+
 > *Pour plus d'informations, voir la définition de [**SHA256**](#sha256).*
 
 ## OP_SIZE (`0X82`)
@@ -2580,13 +2765,61 @@ Nouvelle version du protocole de transport Bitcoin P2P intégrant le chiffrement
 
 ## P2SH-P2WPKH
 
-- `P2SH-P2WPKH` est le sigle pour *Pay to Script Hash - Pay to Witness Public Key Hash* (en français « payer au hachage du script - payer au témoin du hachage de la clé publique »). C’est un modèle de script standard utilisé pour établir des conditions de dépenses sur un UTXO, également connu sous le nom de « Nested SegWit ». `P2SH-P2WPKH` a été introduit avec l'implémentation de SegWit en août 2017. Ce script décrit un `P2WPKH` enveloppé au sein d'un `P2SH`. Il verrouille des bitcoins sur la base du hachage d'une clé publique. La différence avec `P2WPKH` simple est que le script est enveloppé dans le `redeemScript` d'un `P2SH` classique. Ce script a été créé au lancement de SegWit pour faciliter son adoption. Il permet d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif. Les adresses `P2SH-P2WPKH` sont écrites en utilisant l'encodage `Base58Check` et commencent toujours par `3`, comme n'importe quelle adresse `P2SH`.
+\begin{itemize}
+  \item 
+  \texttt{P2SH-P2WPKH}
+  est le sigle pour *Pay to Script Hash - Pay to Witness Public Key Hash* (en français « payer au hachage du script - payer au témoin du hachage de la clé publique »). C’est un modèle de script standard utilisé pour établir des conditions de dépenses sur un UTXO, également connu sous le nom de « Nested SegWit ».
+  \texttt{P2SH-P2WPKH}
+  a été introduit avec l'implémentation de SegWit en août 2017. Ce script décrit un
+  \texttt{P2WPKH}
+  enveloppé au sein d'un
+  \texttt{P2SH}
+  . Il verrouille des bitcoins sur la base du hachage d'une clé publique. La différence avec
+  \texttt{P2WPKH}
+  simple est que le script est enveloppé dans le
+  \texttt{redeemScript}
+  d'un
+  \texttt{P2SH}
+  classique. Ce script a été créé au lancement de SegWit pour faciliter son adoption. Il permet d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif. Les adresses
+  \texttt{P2SH-P2WPKH}
+  sont écrites en utilisant l'encodage
+  \texttt{Base58Check}
+  et commencent toujours par
+  \texttt{3}
+  , comme n'importe quelle adresse
+  \texttt{P2SH}
+  .
+\end{itemize}
 
 > *« P2SH-P2WPKH » est également parfois appelé « P2WPKH-nested-in-P2SH ».*
 
 ## P2SH-P2WSH
 
-- `P2SH-P2WSH` est le sigle pour *Pay to Script Hash - Pay to Witness Script Hash* (en français « payer au hachage du script - payer au témoin du hachage du script »). C’est un modèle de script standard utilisé pour établir des conditions de dépenses sur un UTXO, également connu sous le nom de « Nested SegWit ». `P2SH-P2WSH` a été introduit avec l'implémentation de SegWit en août 2017. Ce script décrit un `P2WSH` enveloppé au sein d'un `P2SH`. Il verrouille des bitcoins sur la base du hachage d'un script. La différence avec `P2WSH` simple est que le script est enveloppé dans le `redeemScript` d'un `P2SH` classique. Ce script a été créé au lancement de SegWit pour faciliter son adoption. Il permet d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif. Les adresses `P2SH-P2WSH` sont écrites en utilisant l'encodage `Base58Check` et commencent toujours par `3`, comme n'importe quelle adresse `P2SH`.
+\begin{itemize}
+  \item 
+  \texttt{P2SH-P2WSH}
+  est le sigle pour *Pay to Script Hash - Pay to Witness Script Hash* (en français « payer au hachage du script - payer au témoin du hachage du script »). C’est un modèle de script standard utilisé pour établir des conditions de dépenses sur un UTXO, également connu sous le nom de « Nested SegWit ».
+  \texttt{P2SH-P2WSH}
+  a été introduit avec l'implémentation de SegWit en août 2017. Ce script décrit un
+  \texttt{P2WSH}
+  enveloppé au sein d'un
+  \texttt{P2SH}
+  . Il verrouille des bitcoins sur la base du hachage d'un script. La différence avec
+  \texttt{P2WSH}
+  simple est que le script est enveloppé dans le
+  \texttt{redeemScript}
+  d'un
+  \texttt{P2SH}
+  classique. Ce script a été créé au lancement de SegWit pour faciliter son adoption. Il permet d'utiliser ce nouveau standard, même sur des wallets pas encore compatibles nativement avec SegWit. C'est une sorte de script de transition vers la nouvelle norme. Aujourd'hui, il n'est donc plus très pertinent d'utiliser ce type de scripts SegWit wrappés, puisque la plupart des wallets ont implémenté du SegWit natif. Les adresses
+  \texttt{P2SH-P2WSH}
+  sont écrites en utilisant l'encodage
+  \texttt{Base58Check}
+  et commencent toujours par
+  \texttt{3}
+  , comme n'importe quelle adresse
+  \texttt{P2SH}
+  .
+\end{itemize}
 
 ## P2TR
 
@@ -2647,10 +2880,16 @@ Identifiant unique lié à un portefeuille Bitcoin qui implémente cette option.
 ## PEER DISCOVERY
 
 Processus par lequel les nœuds du réseau Bitcoin se connectent à d'autres nœuds pour obtenir des informations. Lorsqu'un nœud Bitcoin est lancé pour la première fois, il ne possède aucune information sur les autres nœuds du réseau. Pourtant, il doit établir des connexions pour se synchroniser sur la blockchain avec le plus de travail accumulé. Plusieurs mécanismes sont utilisés pour découvrir ces pairs, par ordre de priorité :
-- Le nœud commence par consulter son fichier local `peers.dat`, qui stocke des informations sur les nœuds avec lesquels il a précédemment interagi. Si le nœud est nouveau, ce fichier sera vide, et le processus passera à l'étape suivante ;
-- En l'absence d'informations dans le fichier `peers.dat` (ce qui est normal pour un nœud nouvellement lancé), le nœud effectue des requêtes DNS auprès des DNS seeds. Ces serveurs fournissent une liste d'adresses IP de nœuds à priori actifs pour établir des connexions. Les adresses des DNS seeds sont codées en dur dans le code de Bitcoin Core. Cette étape est généralement suffisante pour compléter la découverte des pairs ;
-- Si les DNS seeds ne répondent pas dans les 60 secondes, le nœud peut alors se tourner vers les seed nodes. Ce sont des nœuds Bitcoin publics répertoriés dans une liste statique de près d'un millier d'entrées intégrée directement dans le code source de Bitcoin Core. Le nouveau nœud utilisera cette liste pour établir une première connexion au réseau et obtenir des adresses IP d'autres nœuds ;
-- Dans le cas très peu probable où toutes les méthodes précédentes échouent, l'opérateur du nœud a toujours la possibilité d'ajouter manuellement des adresses IP de nœuds pour établir une première connexion.
+\begin{itemize}
+  \item Le nœud commence par consulter son fichier local
+  \texttt{peers.dat}
+  , qui stocke des informations sur les nœuds avec lesquels il a précédemment interagi. Si le nœud est nouveau, ce fichier sera vide, et le processus passera à l'étape suivante ;
+  \item En l'absence d'informations dans le fichier
+  \texttt{peers.dat}
+  (ce qui est normal pour un nœud nouvellement lancé), le nœud effectue des requêtes DNS auprès des DNS seeds. Ces serveurs fournissent une liste d'adresses IP de nœuds à priori actifs pour établir des connexions. Les adresses des DNS seeds sont codées en dur dans le code de Bitcoin Core. Cette étape est généralement suffisante pour compléter la découverte des pairs ;
+  \item Si les DNS seeds ne répondent pas dans les 60 secondes, le nœud peut alors se tourner vers les seed nodes. Ce sont des nœuds Bitcoin publics répertoriés dans une liste statique de près d'un millier d'entrées intégrée directement dans le code source de Bitcoin Core. Le nouveau nœud utilisera cette liste pour établir une première connexion au réseau et obtenir des adresses IP d'autres nœuds ;
+  \item Dans le cas très peu probable où toutes les méthodes précédentes échouent, l'opérateur du nœud a toujours la possibilité d'ajouter manuellement des adresses IP de nœuds pour établir une première connexion.
+\end{itemize}
 
 ## PEERS.DAT
 
@@ -3050,14 +3289,42 @@ Variante du SigHash Flag modificateur `SIGHASH_ANYPREVOUT` dans Bitcoin. Ce SigH
 ## SIGHASH FLAG
 
 Paramètre dans une transaction Bitcoin permettant de déterminer les composants d'une transaction (inputs et outputs) couvertes par la signature associée et deviennent donc immuables. Le SigHash Flag est un octet ajouté à la signature numérique de chaque entrée. Le choix du SigHash Flag affecte donc directement les parties de la transaction qui sont figées par la signature et celles qui peuvent encore être encore modifiées par la suite. Ce mécanisme assure que les signatures engagent les données de transaction de manière précise et sécurisée, selon l'intention du signataire. Trois principaux SigHash Flags existent :
-- `SIGHASH_ALL` (`0x01`) : La signature s'applique à tous les inputs et outputs de la transaction, les verrouillant ainsi intégralement ;
-- `SIGHASH_NONE` (`0x02`) : La signature s'applique à tous les inputs mais aucun output, permettant la modification des outputs après la signature ;
-- `SIGHASH_SINGLE` (`0x03`) : La signature couvre tous les inputs et seulement un output correspondant à l'index de l'input signé.
+\begin{itemize}
+  \item 
+  \texttt{SIGHASH_ALL}
+  (
+  \texttt{0x01}
+  ) : La signature s'applique à tous les inputs et outputs de la transaction, les verrouillant ainsi intégralement ;
+  \item 
+  \texttt{SIGHASH_NONE}
+  (
+  \texttt{0x02}
+  ) : La signature s'applique à tous les inputs mais aucun output, permettant la modification des outputs après la signature ;
+  \item 
+  \texttt{SIGHASH_SINGLE}
+  (
+  \texttt{0x03}
+  ) : La signature couvre tous les inputs et seulement un output correspondant à l'index de l'input signé.
+\end{itemize}
 
 En complément de ces trois SigHash Flags, le modificateur `SIGHASH_ANYONECANPAY` (`0x80`) peut être combiné avec chacun des types précédents. Quand ce modificateur est utilisé, seule une partie des inputs est signée, laissant les autres ouverts à modification. Voici les combinaisons existantes avec le modificateur :
-- `SIGHASH_ALL | SIGHASH_ANYONECANPAY` (`0x81`) : La signature s'applique à un seul input tout en couvrant tous les outputs de la transaction ;
-- `SIGHASH_NONE | SIGHASH_ANYONECANPAY` (`0x82`) : La signature couvre un seul input, sans engager aucun output ;
-- `SIGHASH_SINGLE | SIGHASH_ANYONECANPAY` (`0x83`) : La signature s'applique à un seul input et uniquement à l'output ayant le même index que cet input.
+\begin{itemize}
+  \item 
+  \texttt{SIGHASH_ALL | SIGHASH_ANYONECANPAY}
+  (
+  \texttt{0x81}
+  ) : La signature s'applique à un seul input tout en couvrant tous les outputs de la transaction ;
+  \item 
+  \texttt{SIGHASH_NONE | SIGHASH_ANYONECANPAY}
+  (
+  \texttt{0x82}
+  ) : La signature couvre un seul input, sans engager aucun output ;
+  \item 
+  \texttt{SIGHASH_SINGLE | SIGHASH_ANYONECANPAY}
+  (
+  \texttt{0x83}
+  ) : La signature s'applique à un seul input et uniquement à l'output ayant le même index que cet input.
+\end{itemize}
 
 > *Un synonyme parfois utilisé de « SigHash » est « Signature Hash Types ».*
 
@@ -3088,9 +3355,49 @@ Versions spécifiques du réseau Bitcoin conçues pour le développement et les 
 ## SIGOPS (SIGNATURE OPERATIONS)
 
 Désigne les opérations de signature numérique nécessaires pour valider les transactions. Chaque transaction Bitcoin peut contenir plusieurs inputs, chacun pouvant nécessiter une ou plusieurs signatures pour être considéré comme valide. La vérification de ces signatures se fait grâce à l'utilisation d'opcodes spécifiques que l'on nomme les « sigops ». Concrètement, cela inclut `OP_CHECKSIG`, `OP_CHECKSIGVERIFY`, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY`. Ces opérations font peser une certaine charge de travail sur les nœuds du réseau qui doivent les vérifier. Pour éviter des attaques DoS par inflation artificielle du nombre de sigops, le protocole impose donc une limite sur le nombre de sigops autorisées par bloc, afin de garantir que la charge de validation reste gérable pour les nœuds. Cette limite est actuellement de 80 000 sigops maximum par bloc. Pour compter, les nœuds suivent les règles suivantes :
-- Dans le `scriptPubKey`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` comptent pour 4 sigops. `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY`comptent pour 80 sigops. Lors du comptage, ces opérations sont en effet multipliées par 4 lorsqu'elles ne font pas partie d'un input SegWit (pour un P2WPKH, le nombre de sigops sera donc de 1) ;
-- Dans le `redeemScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent également 4 sigops, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptabilisés pour `4n` s'ils précèdent `OP_n`, ou 80 sigops dans le cas contraire ;
-- Pour le `witnessScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent 1 sigop, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptés pour `n` s'ils sont introduits par `OP_n`, ou 20 sigops autrement.
+\begin{itemize}
+  \item Dans le
+  \texttt{scriptPubKey}
+  ,
+  \texttt{OP_CHECKSIG}
+  et
+  \texttt{OP_CHECKSIGVERIFY}
+  comptent pour 4 sigops.
+  \texttt{OP_CHECKMULTISIG}
+  et
+  \texttt{OP_CHECKMULTISIGVERIFY}
+  comptent pour 80 sigops. Lors du comptage, ces opérations sont en effet multipliées par 4 lorsqu'elles ne font pas partie d'un input SegWit (pour un P2WPKH, le nombre de sigops sera donc de 1) ;
+  \item Dans le
+  \texttt{redeemScript}
+  ,
+  \texttt{OP_CHECKSIG}
+  et
+  \texttt{OP_CHECKSIGVERIFY}
+  valent également 4 sigops,
+  \texttt{OP_CHECKMULTISIG}
+  et
+  \texttt{OP_CHECKMULTISIGVERIFY}
+  sont comptabilisés pour
+  \texttt{4n}
+  s'ils précèdent
+  \texttt{OP_n}
+  , ou 80 sigops dans le cas contraire ;
+  \item Pour le
+  \texttt{witnessScript}
+  ,
+  \texttt{OP_CHECKSIG}
+  et
+  \texttt{OP_CHECKSIGVERIFY}
+  valent 1 sigop,
+  \texttt{OP_CHECKMULTISIG}
+  et
+  \texttt{OP_CHECKMULTISIGVERIFY}
+  sont comptés pour
+  \texttt{n}
+  s'ils sont introduits par
+  \texttt{OP_n}
+  , ou 20 sigops autrement.
+\end{itemize}
 
 Dans les scripts Taproot, les sigops sont traitées de manière différente par rapport aux scripts traditionnels. Au lieu de compter directement chaque opération de signature, Taproot introduit un budget de sigops pour chaque entrée de transaction, qui est proportionnel à la taille de cette entrée. Ce budget est de 50 sigops plus la taille en octets du témoin de l'input. Chaque opération de signature réduit ce budget de 50. Si l'exécution d'une opération de signature fait chuter le budget en dessous de zéro, le script est invalide. Cette méthode permet plus de flexibilité dans les scripts Taproot, tout en maintenant une protection contre les abus potentiels liés aux sigops, en les liant directement au poids de l'entrée. Ainsi, les scripts Taproot ne sont pas pris en compte dans la limite des 80 000 sigops par bloc.
 
@@ -3155,9 +3462,11 @@ Fait référence à un bloc sans enfant (bloc obsolète) : un bloc valide mais e
 ## STONEWALL X2
 
 Forme spécifique de transaction Bitcoin visant à accroître la confidentialité des utilisateurs lors d'une dépense, par la collaboration avec une tierce personne non impliquée dans cette dépense. Cette méthode simule un mini-coinjoin entre deux participants, tout en effectuant un paiement à une troisième partie. Les transactions Stonewall x2 sont disponibles à la fois sur l'application Samourai Wallet et sur le logiciel Sparrow Wallet (les deux sont interopérables). Son fonctionnement est relativement simple : on utilise un UTXO en notre possession pour effectuer le paiement et on sollicite l'aide d'une tierce personne qui contribue également avec un UTXO lui appartenant. La transaction se solde avec quatre outputs : deux d'entre eux de montants égaux, l'un destiné à l'adresse du bénéficiaire du paiement, l'autre à une adresse appartenant au collaborateur. Un troisième UTXO est renvoyé à une autre adresse du collaborateur, lui permettant de récupérer le montant initial (une action neutre pour lui, modulo les frais de minage), et un dernier UTXO revient à une adresse nous appartenant, qui constitue le change du paiement. On définit ainsi trois rôles différents dans les transactions Stonewall x2 :
-- L'émetteur, qui réalise le paiement effectif ;
-- Le collaborateur, qui met des bitcoins à disposition afin d'améliorer l'ensemble d'anonymat de la transaction, tout en récupérant intégralement ses fonds à la fin ;
-- Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.
+\begin{itemize}
+  \item L'émetteur, qui réalise le paiement effectif ;
+  \item Le collaborateur, qui met des bitcoins à disposition afin d'améliorer l'ensemble d'anonymat de la transaction, tout en récupérant intégralement ses fonds à la fin ;
+  \item Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.
+\end{itemize}
 
 ![](../../dictionnaire/assets/3.png)
 
@@ -3250,8 +3559,10 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 ## TIMELOCK
 
 Primitive de contrat intelligent qui permet de définir une condition temporelle à remplir pour qu'une transaction puisse être ajoutée à un bloc. Il existe deux types de timelocks sur Bitcoin : 
-- Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ; 
-- Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
+\begin{itemize}
+  \item Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ;
+  \item Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure.
+\end{itemize}
 Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
 
 > *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](#op_checksequenceverify-0xb2), [**NLOCKTIME**](#nlocktime) et [**NSEQUENCE**](#nsequence).*
@@ -3259,11 +3570,13 @@ Le timelock peut être défini soit sous la forme d'une date exprimée en temps 
 ## TPRV
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet.
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## TPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## TRANSACTION (TX)
@@ -3319,11 +3632,13 @@ Protocole de communication utilisé sur Internet qui permet l'envoi de messages 
 ## UPRV
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## UPUB
 
 Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## URI (UNIFORM RESOURCE IDENTIFIER)
@@ -3363,11 +3678,13 @@ Premier logiciel open source en ligne de commande utilisé pour créer des adres
 ## VPRV
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## VPUB
 
 Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
@@ -3480,11 +3797,13 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 ## XPRV
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## XPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
@@ -3500,11 +3819,13 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 ## YPRV
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 ## YPUB
 
 Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin. 
+
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
