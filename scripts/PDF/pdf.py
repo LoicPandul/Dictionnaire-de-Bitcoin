@@ -7,9 +7,7 @@ def convert_md_to_pdf(md_file_path, pdf_output_path):
         '-V', 'geometry:bottom=1.2in',
         '-V', 'geometry:left=1.2in',
         '-V', 'geometry:right=1.2in',
-        '-V', 'mainfont=Arial',  # Applique Arial au contenu principal
-        r'-V', r'header-includes=\usepackage{sectsty}',  # Permet de personnaliser les sections, notez le préfixe r
-        r'-V', r'header-includes=\sectionfont{\usefont{T1}{qtm}{m}{n}}',  # Utilise TeX Gyre Termes pour les titres de section, notez le préfixe r
+        '-V', 'mainfont=Arial',
     ]
 
     output = pypandoc.convert_file(
