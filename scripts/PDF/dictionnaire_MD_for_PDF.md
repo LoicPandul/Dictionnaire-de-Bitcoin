@@ -3471,12 +3471,3 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin.
 > *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\vspace*{\fill}
-\begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{ASSETS}}
-\end{center}
-\vspace*{\fill}
-\newpage
