@@ -451,12 +451,12 @@ Proposition d'amélioration qui introduit une structure de dérivation hiérarch
   \texttt{84'}
   ;
   \item 
-  \texttt{m / purpose' / coin_type' /}
+  \texttt{m / purpose' / coin-type' /}
   indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au Bitcoin est le
   \texttt{0'}
   ;
   \item 
-  \texttt{m / purpose' / coin_type' / account' /}
+  \texttt{m / purpose' / coin-type' / account' /}
   indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de
   \texttt{0'}
   . les clés étendues (
@@ -465,7 +465,7 @@ Proposition d'amélioration qui introduit une structure de dérivation hiérarch
   \texttt{xprv}
   ...) se trouvent à ce niveau de profondeur ;
   \item 
-  \texttt{m / purpose' / coin_type' / account' / change /}
+  \texttt{m / purpose' / coin-type' / account' / change /}
   indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index
   \texttt{0}
   et la chaîne interne est identifiée avec l'index
@@ -474,7 +474,7 @@ Proposition d'amélioration qui introduit une structure de dérivation hiérarch
   \texttt{xpub}
   ;
   \item 
-  \texttt{m / purpose' / coin_type' / account' / change / address_index}
+  \texttt{m / purpose' / coin-type' / account' / change / address-index}
   indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index
   \texttt{0}
   , la deuxième adresse dispose de l’index
@@ -3289,42 +3289,20 @@ Variante du SigHash Flag modificateur `SIGHASH_ANYPREVOUT` dans Bitcoin. Ce SigH
 ## SIGHASH FLAG
 
 Paramètre dans une transaction Bitcoin permettant de déterminer les composants d'une transaction (inputs et outputs) couvertes par la signature associée et deviennent donc immuables. Le SigHash Flag est un octet ajouté à la signature numérique de chaque entrée. Le choix du SigHash Flag affecte donc directement les parties de la transaction qui sont figées par la signature et celles qui peuvent encore être encore modifiées par la suite. Ce mécanisme assure que les signatures engagent les données de transaction de manière précise et sécurisée, selon l'intention du signataire. Trois principaux SigHash Flags existent :
-\begin{itemize}
-  \item 
-  \texttt{SIGHASH_ALL}
-  (
-  \texttt{0x01}
-  ) : La signature s'applique à tous les inputs et outputs de la transaction, les verrouillant ainsi intégralement ;
-  \item 
-  \texttt{SIGHASH_NONE}
-  (
-  \texttt{0x02}
-  ) : La signature s'applique à tous les inputs mais aucun output, permettant la modification des outputs après la signature ;
-  \item 
-  \texttt{SIGHASH_SINGLE}
-  (
-  \texttt{0x03}
-  ) : La signature couvre tous les inputs et seulement un output correspondant à l'index de l'input signé.
-\end{itemize}
+
+-`SIGHASH_ALL` (`0x01`) : La signature s'applique à tous les inputs et outputs de la transaction, les verrouillant ainsi intégralement ;
+
+-`SIGHASH_NONE` (`0x02`) : La signature s'applique à tous les inputs mais aucun output, permettant la modification des outputs après la signature ;
+
+-`SIGHASH_SINGLE` (`0x03`) : La signature couvre tous les inputs et seulement un output correspondant à l'index de l'input signé.
 
 En complément de ces trois SigHash Flags, le modificateur `SIGHASH_ANYONECANPAY` (`0x80`) peut être combiné avec chacun des types précédents. Quand ce modificateur est utilisé, seule une partie des inputs est signée, laissant les autres ouverts à modification. Voici les combinaisons existantes avec le modificateur :
-\begin{itemize}
-  \item 
-  \texttt{SIGHASH_ALL | SIGHASH_ANYONECANPAY}
-  (
-  \texttt{0x81}
-  ) : La signature s'applique à un seul input tout en couvrant tous les outputs de la transaction ;
-  \item 
-  \texttt{SIGHASH_NONE | SIGHASH_ANYONECANPAY}
-  (
-  \texttt{0x82}
-  ) : La signature couvre un seul input, sans engager aucun output ;
-  \item 
-  \texttt{SIGHASH_SINGLE | SIGHASH_ANYONECANPAY}
-  (
-  \texttt{0x83}
-  ) : La signature s'applique à un seul input et uniquement à l'output ayant le même index que cet input.
-\end{itemize}
+
+-`SIGHASH_ALL | SIGHASH_ANYONECANPAY` (`0x81`) : La signature s'applique à un seul input tout en couvrant tous les outputs de la transaction ;
+
+-`SIGHASH_NONE | SIGHASH_ANYONECANPAY` (`0x82`) : La signature couvre un seul input, sans engager aucun output ;
+
+-`SIGHASH_SINGLE | SIGHASH_ANYONECANPAY` (`0x83`) : La signature s'applique à un seul input et uniquement à l'output ayant le même index que cet input.
 
 > *Un synonyme parfois utilisé de « SigHash » est « Signature Hash Types ».*
 
@@ -3355,49 +3333,12 @@ Versions spécifiques du réseau Bitcoin conçues pour le développement et les 
 ## SIGOPS (SIGNATURE OPERATIONS)
 
 Désigne les opérations de signature numérique nécessaires pour valider les transactions. Chaque transaction Bitcoin peut contenir plusieurs inputs, chacun pouvant nécessiter une ou plusieurs signatures pour être considéré comme valide. La vérification de ces signatures se fait grâce à l'utilisation d'opcodes spécifiques que l'on nomme les « sigops ». Concrètement, cela inclut `OP_CHECKSIG`, `OP_CHECKSIGVERIFY`, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY`. Ces opérations font peser une certaine charge de travail sur les nœuds du réseau qui doivent les vérifier. Pour éviter des attaques DoS par inflation artificielle du nombre de sigops, le protocole impose donc une limite sur le nombre de sigops autorisées par bloc, afin de garantir que la charge de validation reste gérable pour les nœuds. Cette limite est actuellement de 80 000 sigops maximum par bloc. Pour compter, les nœuds suivent les règles suivantes :
-\begin{itemize}
-  \item Dans le
-  \texttt{scriptPubKey}
-  ,
-  \texttt{OP_CHECKSIG}
-  et
-  \texttt{OP_CHECKSIGVERIFY}
-  comptent pour 4 sigops.
-  \texttt{OP_CHECKMULTISIG}
-  et
-  \texttt{OP_CHECKMULTISIGVERIFY}
-  comptent pour 80 sigops. Lors du comptage, ces opérations sont en effet multipliées par 4 lorsqu'elles ne font pas partie d'un input SegWit (pour un P2WPKH, le nombre de sigops sera donc de 1) ;
-  \item Dans le
-  \texttt{redeemScript}
-  ,
-  \texttt{OP_CHECKSIG}
-  et
-  \texttt{OP_CHECKSIGVERIFY}
-  valent également 4 sigops,
-  \texttt{OP_CHECKMULTISIG}
-  et
-  \texttt{OP_CHECKMULTISIGVERIFY}
-  sont comptabilisés pour
-  \texttt{4n}
-  s'ils précèdent
-  \texttt{OP_n}
-  , ou 80 sigops dans le cas contraire ;
-  \item Pour le
-  \texttt{witnessScript}
-  ,
-  \texttt{OP_CHECKSIG}
-  et
-  \texttt{OP_CHECKSIGVERIFY}
-  valent 1 sigop,
-  \texttt{OP_CHECKMULTISIG}
-  et
-  \texttt{OP_CHECKMULTISIGVERIFY}
-  sont comptés pour
-  \texttt{n}
-  s'ils sont introduits par
-  \texttt{OP_n}
-  , ou 20 sigops autrement.
-\end{itemize}
+
+-Dans le `scriptPubKey`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` comptent pour 4 sigops. `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY`comptent pour 80 sigops. Lors du comptage, ces opérations sont en effet multipliées par 4 lorsqu'elles ne font pas partie d'un input SegWit (pour un P2WPKH, le nombre de sigops sera donc de 1) ;
+
+-Dans le `redeemScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent également 4 sigops, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptabilisés pour `4n` s'ils précèdent `OP_n`, ou 80 sigops dans le cas contraire ;
+
+-Pour le `witnessScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent 1 sigop, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptés pour `n` s'ils sont introduits par `OP_n`, ou 20 sigops autrement.
 
 Dans les scripts Taproot, les sigops sont traitées de manière différente par rapport aux scripts traditionnels. Au lieu de compter directement chaque opération de signature, Taproot introduit un budget de sigops pour chaque entrée de transaction, qui est proportionnel à la taille de cette entrée. Ce budget est de 50 sigops plus la taille en octets du témoin de l'input. Chaque opération de signature réduit ce budget de 50. Si l'exécution d'une opération de signature fait chuter le budget en dessous de zéro, le script est invalide. Cette méthode permet plus de flexibilité dans les scripts Taproot, tout en maintenant une protection contre les abus potentiels liés aux sigops, en les liant directement au poids de l'entrée. Ainsi, les scripts Taproot ne sont pas pris en compte dans la limite des 80 000 sigops par bloc.
 
