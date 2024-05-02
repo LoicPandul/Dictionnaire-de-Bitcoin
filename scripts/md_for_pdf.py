@@ -57,7 +57,6 @@ titres = {}
 
 os.makedirs(os.path.dirname(chemin_markdown_final), exist_ok=True)
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
-    # Créer l'index
     fichier_complet.write("# Index\n\n")
     for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
         if fichier_lettre.endswith(".md"):
@@ -73,7 +72,6 @@ with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
                     fichier_complet.write(f"- [{titre}](#{anchor})\n")
                 fichier_complet.write("\n")
 
-    # Écrire le contenu des dictionnaires avec les titres de page
     for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
         if fichier_lettre.endswith(".md"):
             lettre = fichier_lettre.upper().replace('.MD', '')
