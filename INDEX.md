@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 598 `**
+**Nombre total de définitions : ` 599 `**
 
 ### A
 
@@ -278,6 +278,7 @@
 
 ### G
 
+- [GAP LIMIT](./dictionnaire/G.md#gap-limit)
 - [GENÈSE (BLOC)](./dictionnaire/G.md#genèse-bloc)
 - [GETWORK](./dictionnaire/G.md#getwork)
 - [GIT](./dictionnaire/G.md#git)
