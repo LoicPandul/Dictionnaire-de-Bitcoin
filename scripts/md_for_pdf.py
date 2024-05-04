@@ -36,10 +36,11 @@ def markdown_to_latex_lists(contenu):
     return '\n'.join(new_content)
 
 def creer_page_titre(lettre):
-    """Crée une page de titre pour chaque lettre sans spécifier la police."""
+    """Crée une page de titre pour chaque lettre sans spécifier la police et configure l'en-tête."""
     return f"""
 \\newpage
-\\thispagestyle{{empty}}
+\\fancyhead[C]{{{lettre}}}
+\\thispagestyle{{fancy}}
 \\vspace*{{\\fill}}
 \\begin{{center}}
 \\fontsize{{80}}{{95}}\\selectfont\\textbf{{{lettre}}}
@@ -47,6 +48,7 @@ def creer_page_titre(lettre):
 \\vspace*{{\\fill}}
 \\newpage
 """
+
 
 
 def generer_tableau_index_par_lettre(lettre, titres):
@@ -103,13 +105,25 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
                 titre_avec_page = ajouter_numeros_page(titre, page_num)
                 titres_par_lettre[lettre].append(titre_avec_page)
 
-# Écrire la table des matières en utilisant des commandes LaTeX
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
+    # Ajoutez un en-tête YAML au début du fichier pour inclure `fancyhdr`
+    fichier_complet.write("""---
+header-includes:
+  - \\usepackage{fancyhdr}
+  - \\pagestyle{fancy}
+  - \\fancyhead[C]{}
+  - \\fancyfoot[C]{\\thepage}
+  - \\renewcommand{\\headrulewidth}{0pt}
+  - \\renewcommand{\\footrulewidth}{0pt}
+---
+""")
+
     # "Table des matières" en utilisant LaTeX pour augmenter la taille
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n\\vspace*{\\fill}\n")
     fichier_complet.write("\\begin{center}\n")
     fichier_complet.write("\\Huge \\textbf{Table des matières}\n")
     fichier_complet.write("\\end{center}\n\\vspace*{\\fill}\n\\newpage\n\n")
+
     
     for lettre, titres in sorted(titres_par_lettre.items()):
         # Lettres en utilisant LaTeX pour augmenter la taille, sans saut de page
