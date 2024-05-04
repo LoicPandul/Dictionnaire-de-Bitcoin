@@ -128,18 +128,26 @@ header-includes:
     fichier_complet.write("\\Huge \\textbf{Table des matières}\n")
     fichier_complet.write("\\end{center}\n\\vspace*{\\fill}\n\\newpage\n\n")
 
-    for lettre, titres in sorted(titres_par_lettre.items()):
-        # Ajouter un saut de page avant chaque partie de lettre
+    # Ordre alphabétique spécifique demandé
+    ordre_specifique = [
+        ['A'], ['B'], ['C'], ['D', 'E'], ['F', 'G', 'H'], 
+        ['I', 'J', 'K', 'L'], ['M', 'N'], ['O'], ['P'], 
+        ['Q', 'R'], ['S'], ['T', 'U', 'V'], ['W', 'X', 'Y', 'Z']
+    ]
+
+    # Ajouter chaque groupe ou lettre individuelle dans l'ordre
+    for groupe in ordre_specifique:
         fichier_complet.write("\\newpage\n")
-        
-        # Lettres en utilisant LaTeX pour augmenter la taille, sans saut de page
-        fichier_complet.write(f"\\begin{{center}}\n\\Huge \\textbf{{{lettre}}}\n\\end{{center}}\n")
-        fichier_complet.write(generer_tableau_index_par_lettre(lettre, titres) + "\n")
-    
+        for lettre in groupe:
+            if lettre in titres_par_lettre:
+                fichier_complet.write(f"\\begin{{center}}\n\\Huge \\textbf{{{lettre}}}\n\\end{{center}}\n")
+                fichier_complet.write(generer_tableau_index_par_lettre(lettre, titres_par_lettre[lettre]) + "\n")
+
+    # Ajouter les sections de contenu détaillé pour chaque lettre
     for lettre, titres in sorted(titres_par_lettre.items()):
         page_titre = creer_page_titre(lettre)
         fichier_complet.write(page_titre)
-        
+
         chemin_complet = os.path.join(chemin_dossier_dictionnaire, f"{lettre.lower()}.md")
         with open(chemin_complet, 'r', encoding='utf-8') as fichier:
             contenu = fichier.read()

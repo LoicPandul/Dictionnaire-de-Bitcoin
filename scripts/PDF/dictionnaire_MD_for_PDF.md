@@ -168,7 +168,6 @@ header-includes:
 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    11 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{E}
 \end{center}
@@ -206,7 +205,6 @@ header-includes:
 | [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique) |     9 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{G}
 \end{center}
@@ -221,7 +219,6 @@ header-includes:
 | [GO (GOLANG)](#go-golang)      |     5 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |    10 |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{H}
 \end{center}
@@ -250,7 +247,6 @@ header-includes:
 | [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |     4 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{J}
 \end{center}
@@ -262,7 +258,6 @@ header-includes:
 | [JAVASCRIPT (NODE.JS)](#javascript-node.js) |     2 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{K}
 \end{center}
@@ -273,7 +268,6 @@ header-includes:
 | [KNAPSACK SOLVER](#knapsack-solver) |     1 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |     2 |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{L}
 \end{center}
@@ -312,7 +306,6 @@ header-includes:
 | [MERGE](#merge)                |    13 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{N}
 \end{center}
@@ -426,7 +419,6 @@ header-includes:
 | [QUBIT](#qubit)                |     1 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{R}
 \end{center}
@@ -503,7 +495,6 @@ header-includes:
 | [TIDES](#tides)                |     9 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |    18 |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{U}
 \end{center}
@@ -517,7 +508,6 @@ header-includes:
 | [UPUB](#upub)                  |     4 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{V}
 \end{center}
@@ -545,7 +535,6 @@ header-includes:
 | [WASABI WALLET](#wasabi-wallet) |     6 | [WTXID](#wtxid)                |    12 |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{X}
 \end{center}
@@ -557,7 +546,6 @@ header-includes:
 | [XPRV](#xprv)                  |     2 |                                |       |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{Y}
 \end{center}
@@ -568,7 +556,6 @@ header-includes:
 | [YPRV](#yprv)                  |     1 | [YPUB](#ypub)                  |     2 |
 | | | | |
 
-\newpage
 \begin{center}
 \Huge \textbf{Z}
 \end{center}
