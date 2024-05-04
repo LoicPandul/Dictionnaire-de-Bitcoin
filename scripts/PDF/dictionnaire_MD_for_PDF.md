@@ -15,12 +15,14 @@ header-includes:
 \vspace*{\fill}
 \newpage
 
+\newpage
 \begin{center}
 \Huge \textbf{A}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [ACINQ](#acinq)                |     1 | [ANYPREVOUT (APO)](#anyprevout-apo) |    15 |
 | [ADAPTOR SIGNATURE](#adaptor-signature) |     2 | [AOPP](#aopp)                  |    16 |
 | [ADDR](#addr)                  |     3 | [API](#api)                    |    17 |
@@ -35,13 +37,16 @@ header-includes:
 | [ANCHORS.DAT](#anchors.dat)    |    12 | [ATOMIC SWAP](#atomic-swap)    |    26 |
 | [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    13 | [ATTAQUE DES 51%](#attaque-des-51) |    27 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    14 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{B}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [BANLIST.DAT](#banlist.dat)    |     1 | [BIP137](#bip137)              |    61 |
 | [BANLIST.JSON](#banlist.json)  |     2 | [BIP141](#bip141)              |    62 |
 | [BARE-MULTISIG](#bare-multisig) |     3 | [BIP143](#bip143)              |    63 |
@@ -102,13 +107,16 @@ header-includes:
 | [BIP119](#bip119)              |    58 | [BRC-20](#brc-20)              |   118 |
 | [BIP123](#bip123)              |    59 | [BTC](#btc)                    |   119 |
 | [BIP125](#bip125)              |    60 | [BTCPAY SERVER](#btcpay-server) |   120 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{C}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [C](#c)                        |     1 | [COINS/](#coins)               |    29 |
 | [C# (C SHARP)](#c-c-sharp)     |     2 | [COINSHUFFLE](#coinshuffle)    |    30 |
 | [C++](#c)                      |     3 | [COLD WALLET](#cold-wallet)    |    31 |
@@ -137,13 +145,16 @@ header-includes:
 | [COINJOIN](#coinjoin)          |    26 | [CRYPTOMONNAIE](#cryptomonnaie) |    54 |
 | [COINJUMBLE](#coinjumble)      |    27 | [CYPHERPUNK](#cypherpunk)      |    55 |
 | [COINMUX](#coinmux)            |    28 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{D}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [DANDELION](#dandelion)        |     1 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |    12 |
 | [DARKWALLET](#darkwallet)      |     2 | [DNS SEEDS](#dns-seeds)        |    13 |
 | [DATABASE/](#database)         |     3 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |    14 |
@@ -155,13 +166,16 @@ header-includes:
 | [DIFFIE-HELLMAN](#diffie-hellman) |     9 | [DUST LIMIT](#dust-limit)      |    20 |
 | [DISTRIBUÉ](#distribué)        |    10 | [DUSTRELAYFEE](#dustrelayfee)  |    21 |
 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    11 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{E}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [ECASH (DAVID CHAUM)](#ecash-david-chaum) |     1 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |    10 |
 | [ECASH (XEC)](#ecash-xec)      |     2 | [ENDIANNESS](#endianness)      |    11 |
 | [ECDH](#ecdh)                  |     3 | [ENTÊTE DE BLOC](#entête-de-bloc) |    12 |
@@ -171,13 +185,16 @@ header-includes:
 | [ÉCOLE AUTRICHIENNE](#école-autrichienne) |     7 | [ESMPPS](#esmpps)              |    16 |
 | [ELECTRUM LIGHTNING](#electrum-lightning) |     8 | [ÉTIQUETAGE](#étiquetage)      |    17 |
 | [ELTOO](#eltoo)                |     9 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |    18 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{F}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [FARADAY](#faraday)            |     1 | [FONCTIONNAIRE](#fonctionnaire) |    10 |
 | [FEDIMINT](#fedimint)          |     2 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |    11 |
 | [FEE SNIPING](#fee-sniping)    |     3 | [FORCED ADDRESS REUSE](#forced-address-reuse) |    12 |
@@ -187,78 +204,99 @@ header-includes:
 | [FIBRE](#fibre)                |     7 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |    16 |
 | [FLAG DAY](#flag-day)          |     8 | [FRAIS DE TRANSACTION](#frais-de-transaction) |    17 |
 | [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique) |     9 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{G}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [GAP LIMIT](#gap-limit)        |     1 | [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |     6 |
 | [GENÈSE (BLOC)](#genèse-bloc)  |     2 | [GOSSIP](#gossip)              |     7 |
 | [GETWORK](#getwork)            |     3 | [GRAINE (SEED)](#graine-seed)  |     8 |
 | [GIT](#git)                    |     4 | [GUI](#gui)                    |     9 |
 | [GO (GOLANG)](#go-golang)      |     5 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |    10 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{H}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [HAL FINNEY](#hal-finney)      |     1 | [HASHRATE](#hashrate)          |     6 |
 | [HALVING](#halving)            |     2 | [HMAC-SHA512](#hmac-sha512)    |     7 |
 | [HARD FORK](#hard-fork)        |     3 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |     8 |
 | [HARDWARE WALLET](#hardware-wallet) |     4 | [HWI](#hwi)                    |     9 |
 | [HASHCASH](#hashcash)          |     5 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{I}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [INBOUND CAPACITY](#inbound-capacity) |     1 | [INPUT](#input)                |     5 |
 | [INDEXES/TXINDEX/](#indexestxindex) |     2 | [IP_ASN.MAP](#ip_asn.map)      |     6 |
 | [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |     3 | [ISSUE](#issue)                |     7 |
 | [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |     4 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{J}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [JAVA](#java)                  |     1 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |     3 |
 | [JAVASCRIPT (NODE.JS)](#javascript-node.js) |     2 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{K}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [KNAPSACK SOLVER](#knapsack-solver) |     1 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |     2 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{L}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [LABEL](#label)                |     1 | [LIQUID NETWORK](#liquid-network) |     7 |
 | [LCB/FT](#lcbft)               |     2 | [LITTLE-ENDIAN](#little-endian) |     8 |
 | [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |     3 | [LND](#lnd)                    |     9 |
 | [LEVELDB](#leveldb)            |     4 | [LOCK (.LOCK)](#lock-.lock)    |    10 |
 | [LIGHTNING LABS](#lightning-labs) |     5 | [LOGARITHME DISCRET (PROBLÈME)](#logarithme-discret-problème) |    11 |
 | [LIGHTNING NETWORK](#lightning-network) |     6 | [LOOP](#loop)                  |    12 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{M}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [MAGICAL BITCOIN](#magical-bitcoin) |     1 | [MERKLE BLOCK](#merkle-block)  |    14 |
 | [MAGIC NETWORK](#magic-network) |     2 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |    15 |
 | [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |     3 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |    16 |
@@ -272,13 +310,16 @@ header-includes:
 | [MEMPOOL](#mempool)            |    11 | [MODÈLE DE SCRIPT](#modèle-de-script) |    24 |
 | [MEMPOOL.DAT](#mempool.dat)    |    12 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |    25 |
 | [MERGE](#merge)                |    13 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{N}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [NESTED SEGWIT](#nested-segwit) |     1 | [NŒUD SPV (OU NŒUD LÉGER)](#nœud-spv-ou-nœud-léger) |     8 |
 | [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |     2 | [NONCE](#nonce)                |     9 |
 | [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |     3 | [NSEQUENCE](#nsequence)        |    10 |
@@ -286,13 +327,16 @@ header-includes:
 | [NŒUD](#nœud)                  |     5 | [NULLDUMMY](#nulldummy)        |    12 |
 | [NŒUD COMPLET](#nœud-complet)  |     6 | [NVERSION](#nversion)          |    13 |
 | [NŒUD ÉLAGUÉ](#nœud-élagué)    |     7 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{O}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |     1 | [OP_GREATERTHANOREQUAL (`0XA2`)](#op_greaterthanorequal-0xa2) |    46 |
 | [OBSOLÈTE (BLOC)](#obsolète-bloc) |     2 | [OP_HASH160 (`0XA9`)](#op_hash160-0xa9) |    47 |
 | [OCTET (BYTE)](#octet-byte)    |     3 | [OP_HASH256 (`0XAA`)](#op_hash256-0xaa) |    48 |
@@ -338,16 +382,19 @@ header-includes:
 | [OP_FALSE (`0X00`)](#op_false-0x00) |    43 | [OUTBOUND CAPACITY](#outbound-capacity) |    88 |
 | [OP_FROMALTSTACK (`0X6C`)](#op_fromaltstack-0x6c) |    44 | [OUTPUT](#output)              |    89 |
 | [OP_GREATERTHAN (`0XA0`)](#op_greaterthan-0xa0) |    45 | [OUTPUT LINKING](#output-linking) |    90 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{P}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [P2PK](#p2pk)                  |     1 | [PÉRIODE DE MATURITÉ](#période-de-maturité) |    22 |
 | [P2PKH](#p2pkh)                |     2 | [PETIT-BOUTISTE](#petit-boutiste) |    23 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |     3 | [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](#phrase-de-récupération-mnémonique) |    24 |
+| [P2P TRANSPORT V2](#p2p-transport-v2) |     3 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |    24 |
 | [P2MS](#p2ms)                  |     4 | [POOL](#pool)                  |    25 |
 | [P2SH](#p2sh)                  |     5 | [POOL DE MINAGE](#pool-de-minage) |    26 |
 | [P2SH-P2WPKH](#p2sh-p2wpkh)    |     6 | [POOL HOPPING](#pool-hopping)  |    27 |
@@ -366,21 +413,27 @@ header-includes:
 | [PEER DISCOVERY](#peer-discovery) |    19 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |    40 |
 | [PEERS.DAT](#peers.dat)        |    20 | [PULL REQUEST](#pull-request)  |    41 |
 | [PERCOLATION](#percolation)    |    21 | [PYTHON](#python)              |    42 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{Q}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [QUBIT](#qubit)                |     1 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{R}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [RACINE DE MERKLE](#racine-de-merkle) |     1 | [RESYNCHRONISATION](#resynchronisation) |    11 |
 | [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |     2 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |    12 |
 | [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |     3 | [RICOCHET](#ricochet)          |    13 |
@@ -391,13 +444,16 @@ header-includes:
 | [RÉORGANISATION](#réorganisation) |     8 | [RUST](#rust)                  |    18 |
 | [RÉSEAU BITCOIN](#réseau-bitcoin) |     9 | [RUST-LIGHTNING](#rust-lightning) |    19 |
 | [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |    10 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{S}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [SAMOURAI WALLET](#samourai-wallet) |     1 | [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |    29 |
 | [SATOSHI (SAT)](#satoshi-sat)  |     2 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |    30 |
 | [SATOSHI NAKAMOTO](#satoshi-nakamoto) |     3 | [SIGHASH FLAG](#sighash-flag)  |    31 |
@@ -426,13 +482,16 @@ header-includes:
 | [SIDECHAIN](#sidechain)        |    26 | [SUBVENTION DE BLOC](#subvention-de-bloc) |    54 |
 | [SIGHASH_ALL (0X01)](#sighash_all-0x01) |    27 | [SURCOUCHE (LAYER)](#surcouche-layer) |    55 |
 | [SIGHASH_ALL SIGHASH_ACP](#sighash_all-sighash_acp) |    28 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |    56 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{T}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [TAPROOT](#taproot)            |     1 | [TIMELOCK](#timelock)          |    10 |
 | [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |     2 | [TPRV](#tprv)                  |    11 |
 | [TAPSCRIPT](#tapscript)        |     3 | [TPUB](#tpub)                  |    12 |
@@ -442,66 +501,85 @@ header-includes:
 | [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |     7 | [TUMBLEBIT](#tumblebit)        |    16 |
 | [TESTNET](#testnet)            |     8 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |    17 |
 | [TIDES](#tides)                |     9 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |    18 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{U}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [UASF](#uasf)                  |     1 | [URI](#uri)                    |     5 |
 | [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |     2 | [UTXO](#utxo)                  |     6 |
 | [UPRV](#uprv)                  |     3 | [UTXO SET](#utxo-set)          |     7 |
 | [UPUB](#upub)                  |     4 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{V}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [VANITY (ADDRESS)](#vanity-address) |     1 | [VPRV](#vprv)                  |     3 |
 | [VANITYGEN](#vanitygen)        |     2 | [VPUB](#vpub)                  |     4 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{W}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [WABISABI](#wabisabi)          |     1 | [WATCHMEN](#watchmen)          |     7 |
 | [WALLET](#wallet)              |     2 | [WATCH-ONLY WALLET](#watch-only-wallet) |     8 |
 | [WALLET.DAT](#wallet.dat)      |     3 | [WHIRLPOOL](#whirlpool)        |     9 |
 | [WALLETS/DB.LOG](#walletsdb.log) |     4 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |    10 |
 | [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |     5 | [WITNESSSCRIPT](#witnessscript) |    11 |
 | [WASABI WALLET](#wasabi-wallet) |     6 | [WTXID](#wtxid)                |    12 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{X}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [XOR](#xor)                    |     1 | [XPUB](#xpub)                  |     3 |
 | [XPRV](#xprv)                  |     2 |                                |       |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{Y}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [YPRV](#yprv)                  |     1 | [YPUB](#ypub)                  |     2 |
+| | | | |
 
+\newpage
 \begin{center}
 \Huge \textbf{Z}
 \end{center}
 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
+| | | | |
 | [ZEROCONF](#zeroconf)          |     1 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |     4 |
 | [ZEROLINK](#zerolink)          |     2 | [ZPRV](#zprv)                  |     5 |
 | [ZEROSYNC](#zerosync)          |     3 | [ZPUB](#zpub)                  |     6 |
+| | | | |
 
 
 \newpage
@@ -949,7 +1027,7 @@ Proposition d'amélioration de Bitcoin qui introduit un mécanisme de chiffremen
 
 Le BIP39 introduit une méthode pour convertir la graine aléatoire d'un portefeuille en une suite de mots mémorisables et lisibles par l'Homme, connue sous le nom de phrase mnémonique. Cette phrase, généralement composée de 12 ou de 24 mots, permet de regénérer l'ensemble des clés privées d'un portefeuille de manière déterministe. Ainsi, au lieu de devoir mémoriser ou stocker une graine cryptographique complexe, les utilisateurs peuvent sauvegarder leurs bitcoins via une phrase de quelques mots. Le BIP39 a ainsi contribué à simplifier la gestion d'un portefeuille Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)**](#phrase-de-récupération-mnémonique).*
+> *Pour plus d'informations, voir la définition de [**PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)**](#phrase-de-récupération).*
 
 ## BIP42
 
@@ -3455,7 +3533,7 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 > *En anglais, petit-boutiste se traduit par « Little-Endian ».*
 
-## PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)
+## PHRASE DE RÉCUPÉRATION
 
 Une phrase de récupération, également parfois nommée comme mnémonique, seed phrase, ou phrase secrète, est une séquence composée habituellement de 12 ou 24 mots, qui est générée de manière pseudo-aléatoire à partir d'une source d'entropie. La séquence pseudo-aléatoire est toujours complétée d'une somme de contrôle (checksum). La phrase mnémonique, conjointement avec une passphrase optionnelle, est utilisée pour dériver de façon déterministe l'intégralité des clés associées à un portefeuille HD (déterministe et hiérarchique). Cela signifie qu’à partir de cette phrase, il est possible de générer et de recréer déterministiquement l'ensemble des clés privées et publiques du portefeuille Bitcoin, et par conséquent d'accéder aux fonds qui y sont associés. La raison d'être de la phrase de récupération est de fournir un moyen de sauvegarde et de récupération des bitcoins qui est à la fois sécurisé et facile à utiliser. Il est impératif de conserver cette phrase en lieu sûr et de manière sécurisée, car toute personne en possession de cette phrase aurait accès aux fonds du portefeuille correspondant. Si elle est utilisée dans le cadre d’un portefeuille classique, et sans passphrase optionnelle, elle constitue souvent un SPOF (point de défaillance unique). La phrase de récupération est donc un encodage de la séquence pseudo aléatoire et de la checksum dans des mots du quotidien afin de faciliter sa notation et sa lisibilité par l’Homme. Elle est construite en fonction du standard BIP39, qui défini et ordonne une liste de 2048 mots utilisés pour cet encodage.
 

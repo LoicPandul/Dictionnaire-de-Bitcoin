@@ -499,7 +499,7 @@
 - [PERCOLATION](./dictionnaire/P.md#percolation)
 - [PÉRIODE DE MATURITÉ](./dictionnaire/P.md#période-de-maturité)
 - [PETIT-BOUTISTE](./dictionnaire/P.md#petit-boutiste)
-- [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](./dictionnaire/P.md#phrase-de-récupération-mnémonique)
+- [PHRASE DE RÉCUPÉRATION](./dictionnaire/P.md#phrase-de-récupération)
 - [POOL](./dictionnaire/P.md#pool)
 - [POOL DE MINAGE](./dictionnaire/P.md#pool-de-minage)
 - [POOL HOPPING](./dictionnaire/P.md#pool-hopping)

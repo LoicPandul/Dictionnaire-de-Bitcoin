@@ -68,11 +68,18 @@ def generer_tableau_index_par_lettre(lettre, titres):
     while len(colonne_2) < len(colonne_1):
         colonne_2.append(("", ""))
 
+    # Ajouter une ligne vide au début et à la fin de chaque tableau
+    index += "| | | | |\n"
+
     # Ajouter les lignes au tableau, les numéros de page alignés à droite
     for (titre_1, page_1), (titre_2, page_2) in zip(colonne_1, colonne_2):
         index += f"| {titre_1:<30} | {page_1:>5} | {titre_2:<30} | {page_2:>5} |\n"
 
+    # Ajouter une ligne vide à la fin de chaque tableau
+    index += "| | | | |\n"
+
     return index
+
 
 
 def ajouter_numeros_page(titre, page_num):
@@ -121,8 +128,10 @@ header-includes:
     fichier_complet.write("\\Huge \\textbf{Table des matières}\n")
     fichier_complet.write("\\end{center}\n\\vspace*{\\fill}\n\\newpage\n\n")
 
-    
     for lettre, titres in sorted(titres_par_lettre.items()):
+        # Ajouter un saut de page avant chaque partie de lettre
+        fichier_complet.write("\\newpage\n")
+        
         # Lettres en utilisant LaTeX pour augmenter la taille, sans saut de page
         fichier_complet.write(f"\\begin{{center}}\n\\Huge \\textbf{{{lettre}}}\n\\end{{center}}\n")
         fichier_complet.write(generer_tableau_index_par_lettre(lettre, titres) + "\n")
@@ -139,7 +148,3 @@ header-includes:
             fichier_complet.write(contenu + '\n\n')
 
 print(f'Le fichier Markdown a été créé avec succès : {chemin_markdown_final}')
-
-
-
-
