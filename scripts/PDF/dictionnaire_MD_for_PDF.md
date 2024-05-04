@@ -12,7 +12,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [ACINQ](#acinq)                |     1 | [ANYPREVOUT (APO)](#anyprevout-apo) |    15 |
 | [ADAPTOR SIGNATURE](#adaptor-signature) |     2 | [AOPP](#aopp)                  |    16 |
 | [ADDR](#addr)                  |     3 | [API](#api)                    |    17 |
@@ -33,7 +33,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [BANLIST.DAT](#banlist.dat)    |     1 | [BIP137](#bip137)              |    61 |
 | [BANLIST.JSON](#banlist.json)  |     2 | [BIP141](#bip141)              |    62 |
 | [BARE-MULTISIG](#bare-multisig) |     3 | [BIP143](#bip143)              |    63 |
@@ -100,7 +100,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [C](#c)                        |     1 | [COINS/](#coins)               |    29 |
 | [C# (C SHARP)](#c-c-sharp)     |     2 | [COINSHUFFLE](#coinshuffle)    |    30 |
 | [C++](#c)                      |     3 | [COLD WALLET](#cold-wallet)    |    31 |
@@ -135,7 +135,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [DANDELION](#dandelion)        |     1 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |    12 |
 | [DARKWALLET](#darkwallet)      |     2 | [DNS SEEDS](#dns-seeds)        |    13 |
 | [DATABASE/](#database)         |     3 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |    14 |
@@ -153,7 +153,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [ECASH (DAVID CHAUM)](#ecash-david-chaum) |     1 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |    10 |
 | [ECASH (XEC)](#ecash-xec)      |     2 | [ENDIANNESS](#endianness)      |    11 |
 | [ECDH](#ecdh)                  |     3 | [ENTÊTE DE BLOC](#entête-de-bloc) |    12 |
@@ -169,7 +169,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [FARADAY](#faraday)            |     1 | [FONCTIONNAIRE](#fonctionnaire) |    10 |
 | [FEDIMINT](#fedimint)          |     2 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |    11 |
 | [FEE SNIPING](#fee-sniping)    |     3 | [FORCED ADDRESS REUSE](#forced-address-reuse) |    12 |
@@ -185,7 +185,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [GAP LIMIT](#gap-limit)        |     1 | [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |     6 |
 | [GENÈSE (BLOC)](#genèse-bloc)  |     2 | [GOSSIP](#gossip)              |     7 |
 | [GETWORK](#getwork)            |     3 | [GRAINE (SEED)](#graine-seed)  |     8 |
@@ -197,7 +197,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [HAL FINNEY](#hal-finney)      |     1 | [HASHRATE](#hashrate)          |     6 |
 | [HALVING](#halving)            |     2 | [HMAC-SHA512](#hmac-sha512)    |     7 |
 | [HARD FORK](#hard-fork)        |     3 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |     8 |
@@ -209,7 +209,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [INBOUND CAPACITY](#inbound-capacity) |     1 | [INPUT](#input)                |     5 |
 | [INDEXES/TXINDEX/](#indexestxindex) |     2 | [IP_ASN.MAP](#ip_asn.map)      |     6 |
 | [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |     3 | [ISSUE](#issue)                |     7 |
@@ -220,7 +220,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [JAVA](#java)                  |     1 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |     3 |
 | [JAVASCRIPT (NODE.JS)](#javascript-node.js) |     2 |                                |       |
 
@@ -229,7 +229,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [KNAPSACK SOLVER](#knapsack-solver) |     1 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |     2 |
 
 \begin{center}
@@ -237,7 +237,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [LABEL](#label)                |     1 | [LIQUID NETWORK](#liquid-network) |     7 |
 | [LCB/FT](#lcbft)               |     2 | [LITTLE-ENDIAN](#little-endian) |     8 |
 | [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |     3 | [LND](#lnd)                    |     9 |
@@ -250,7 +250,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [MAGICAL BITCOIN](#magical-bitcoin) |     1 | [MERKLE BLOCK](#merkle-block)  |    14 |
 | [MAGIC NETWORK](#magic-network) |     2 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |    15 |
 | [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |     3 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |    16 |
@@ -270,7 +270,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [NESTED SEGWIT](#nested-segwit) |     1 | [NŒUD SPV (OU NŒUD LÉGER)](#nœud-spv-ou-nœud-léger) |     8 |
 | [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |     2 | [NONCE](#nonce)                |     9 |
 | [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |     3 | [NSEQUENCE](#nsequence)        |    10 |
@@ -284,7 +284,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |     1 | [OP_GREATERTHANOREQUAL (`0XA2`)](#op_greaterthanorequal-0xa2) |    46 |
 | [OBSOLÈTE (BLOC)](#obsolète-bloc) |     2 | [OP_HASH160 (`0XA9`)](#op_hash160-0xa9) |    47 |
 | [OCTET (BYTE)](#octet-byte)    |     3 | [OP_HASH256 (`0XAA`)](#op_hash256-0xaa) |    48 |
@@ -336,7 +336,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [P2PK](#p2pk)                  |     1 | [PÉRIODE DE MATURITÉ](#période-de-maturité) |    22 |
 | [P2PKH](#p2pkh)                |     2 | [PETIT-BOUTISTE](#petit-boutiste) |    23 |
 | [P2P TRANSPORT V2](#p2p-transport-v2) |     3 | [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](#phrase-de-récupération-mnémonique) |    24 |
@@ -364,7 +364,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [QUBIT](#qubit)                |     1 |                                |       |
 
 \begin{center}
@@ -372,7 +372,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [RACINE DE MERKLE](#racine-de-merkle) |     1 | [RESYNCHRONISATION](#resynchronisation) |    11 |
 | [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |     2 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |    12 |
 | [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |     3 | [RICOCHET](#ricochet)          |    13 |
@@ -389,7 +389,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [SAMOURAI WALLET](#samourai-wallet) |     1 | [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |    29 |
 | [SATOSHI (SAT)](#satoshi-sat)  |     2 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |    30 |
 | [SATOSHI NAKAMOTO](#satoshi-nakamoto) |     3 | [SIGHASH FLAG](#sighash-flag)  |    31 |
@@ -424,7 +424,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [TAPROOT](#taproot)            |     1 | [TIMELOCK](#timelock)          |    10 |
 | [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |     2 | [TPRV](#tprv)                  |    11 |
 | [TAPSCRIPT](#tapscript)        |     3 | [TPUB](#tpub)                  |    12 |
@@ -440,7 +440,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [UASF](#uasf)                  |     1 | [URI](#uri)                    |     5 |
 | [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |     2 | [UTXO](#utxo)                  |     6 |
 | [UPRV](#uprv)                  |     3 | [UTXO SET](#utxo-set)          |     7 |
@@ -451,7 +451,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [VANITY (ADDRESS)](#vanity-address) |     1 | [VPRV](#vprv)                  |     3 |
 | [VANITYGEN](#vanitygen)        |     2 | [VPUB](#vpub)                  |     4 |
 
@@ -460,7 +460,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [WABISABI](#wabisabi)          |     1 | [WATCHMEN](#watchmen)          |     7 |
 | [WALLET](#wallet)              |     2 | [WATCH-ONLY WALLET](#watch-only-wallet) |     8 |
 | [WALLET.DAT](#wallet.dat)      |     3 | [WHIRLPOOL](#whirlpool)        |     9 |
@@ -473,7 +473,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [XOR](#xor)                    |     1 | [XPUB](#xpub)                  |     3 |
 | [XPRV](#xprv)                  |     2 |                                |       |
 
@@ -482,7 +482,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [YPRV](#yprv)                  |     1 | [YPUB](#ypub)                  |     2 |
 
 \begin{center}
@@ -490,7 +490,7 @@
 \end{center}
 
 | | | | |
-|:---------------------------|:--|:---------------------------|:--|
+|:---------------------------|--:|:---------------------------|--:|
 | [ZEROCONF](#zeroconf)          |     1 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |     4 |
 | [ZEROLINK](#zerolink)          |     2 | [ZPRV](#zprv)                  |     5 |
 | [ZEROSYNC](#zerosync)          |     3 | [ZPUB](#zpub)                  |     6 |

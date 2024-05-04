@@ -50,28 +50,30 @@ def creer_page_titre(lettre):
 
 
 def generer_tableau_index_par_lettre(lettre, titres):
-    """Génère un index en tableau à quatre colonnes avec une première ligne vide."""
-    index = "\n| | | | |\n|:---------------------------|:--|:---------------------------|:--|\n"
-    
+    """Génère un index en tableau à quatre colonnes avec une première ligne vide, les numéros alignés à droite."""
+    # Définir les colonnes des numéros de page alignées à droite
+    index = "\n| | | | |\n|:---------------------------|--:|:---------------------------|--:|\n"
+
     # Séparer les titres des numéros de page
     titres_separes = [titre.rsplit(' ', 1) for titre in titres]
-    
+
     # Organiser en deux colonnes de titres avec leurs numéros respectifs
     mi_point = (len(titres_separes) + 1) // 2
     colonne_1 = titres_separes[:mi_point]
     colonne_2 = titres_separes[mi_point:]
-    
+
     # Compléter avec des cases vides si nécessaire
     while len(colonne_1) < len(colonne_2):
         colonne_1.append(("", ""))
     while len(colonne_2) < len(colonne_1):
         colonne_2.append(("", ""))
 
-    # Ajouter les lignes au tableau
+    # Ajouter les lignes au tableau, les numéros de page alignés à droite
     for (titre_1, page_1), (titre_2, page_2) in zip(colonne_1, colonne_2):
         index += f"| {titre_1:<30} | {page_1:>5} | {titre_2:<30} | {page_2:>5} |\n"
-    
+
     return index
+
 
 def ajouter_numeros_page(titre, page_num):
     """Crée une ancre correcte et associe le numéro de page."""
