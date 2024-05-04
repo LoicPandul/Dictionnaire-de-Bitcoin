@@ -2,7 +2,6 @@
 header-includes:
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
-  - \fancyhead[C]{}
   - \fancyfoot[C]{\thepage}
   - \renewcommand{\headrulewidth}{0pt}
   - \renewcommand{\footrulewidth}{0pt}
@@ -506,8 +505,8 @@ header-includes:
 
 
 \newpage
-\fancyhead[C]{A}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{A}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{A}
@@ -766,8 +765,8 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 
 \newpage
-\fancyhead[C]{B}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{B}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{B}
@@ -1481,8 +1480,8 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 
 
 \newpage
-\fancyhead[C]{C}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{C}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{C}
@@ -1864,8 +1863,8 @@ Communauté informelle et internationale de personnes intéressées par l'utilis
 
 
 \newpage
-\fancyhead[C]{D}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{D}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{D}
@@ -1991,8 +1990,8 @@ Règle de standardisation utilisée par les nœuds du réseau pour déterminer c
 
 
 \newpage
-\fancyhead[C]{E}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{E}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{E}
@@ -2123,8 +2122,8 @@ Outil en ligne ou en local qui permet de transformer les données brutes de la b
 
 
 \newpage
-\fancyhead[C]{F}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{F}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{F}
@@ -2267,8 +2266,8 @@ Il convient également de tenir compte les limites de purge. En période de fort
 
 
 \newpage
-\fancyhead[C]{G}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{G}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{G}
@@ -2326,8 +2325,8 @@ Fichier dans Bitcoin Core utilisé pour stocker une sauvegarde des paramètres d
 
 
 \newpage
-\fancyhead[C]{H}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{H}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{H}
@@ -2385,8 +2384,8 @@ Sigle de « *Hardware Wallet Interface* ». C'est une interface standardisée pe
 
 
 \newpage
-\fancyhead[C]{I}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{I}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{I}
@@ -2431,8 +2430,8 @@ Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issu
 
 
 \newpage
-\fancyhead[C]{J}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{J}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{J}
@@ -2455,8 +2454,8 @@ Les portefeuilles JBOK, acronyme pour « Just a Bunch Of Keys » (en français �
 
 
 \newpage
-\fancyhead[C]{K}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{K}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{K}
@@ -2480,8 +2479,8 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 
 
 \newpage
-\fancyhead[C]{L}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{L}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{L}
@@ -2542,8 +2541,8 @@ Service développé par Lightning Labs conçu pour faciliter l'équilibrage de l
 
 
 \newpage
-\fancyhead[C]{M}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{M}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{M}
@@ -2695,8 +2694,8 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 
 
 \newpage
-\fancyhead[C]{N}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{N}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{N}
@@ -2779,8 +2778,8 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 
 
 \newpage
-\fancyhead[C]{O}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{O}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{O}
@@ -3279,8 +3278,8 @@ Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output link
 
 
 \newpage
-\fancyhead[C]{P}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{P}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{P}
@@ -3549,8 +3548,8 @@ Langage de programmation de haut niveau, connu pour sa syntaxe claire et sa lisi
 
 
 \newpage
-\fancyhead[C]{Q}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{Q}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{Q}
@@ -3565,8 +3564,8 @@ Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent pre
 
 
 \newpage
-\fancyhead[C]{R}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{R}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{R}
@@ -3677,8 +3676,8 @@ Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en 
 
 
 \newpage
-\fancyhead[C]{S}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{S}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{S}
@@ -3990,8 +3989,8 @@ Traduction française de « *Initial Block Download* ». Fait référence au pro
 
 
 \newpage
-\fancyhead[C]{T}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{T}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{T}
@@ -4104,8 +4103,8 @@ Identifiant unique associé à chaque transaction Bitcoin. Il est généré en c
 
 
 \newpage
-\fancyhead[C]{U}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{U}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{U}
@@ -4151,8 +4150,8 @@ Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un mo
 
 
 \newpage
-\fancyhead[C]{V}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{V}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{V}
@@ -4184,8 +4183,8 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 
 
 \newpage
-\fancyhead[C]{W}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{W}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{W}
@@ -4255,8 +4254,8 @@ Extension du TXID traditionnel, incluant les données de témoin (witness) intro
 
 
 \newpage
-\fancyhead[C]{X}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{X}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{X}
@@ -4305,8 +4304,8 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 
 
 \newpage
-\fancyhead[C]{Y}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{Y}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{Y}
@@ -4328,8 +4327,8 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin.
 
 
 \newpage
-\fancyhead[C]{Z}
-\thispagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[C]{\textbf{\textit{Z}}}
 \vspace*{\fill}
 \begin{center}
 \fontsize{80}{95}\selectfont\textbf{Z}

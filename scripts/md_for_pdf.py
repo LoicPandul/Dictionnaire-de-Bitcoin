@@ -36,11 +36,11 @@ def markdown_to_latex_lists(contenu):
     return '\n'.join(new_content)
 
 def creer_page_titre(lettre):
-    """Crée une page de titre pour chaque lettre sans spécifier la police et configure l'en-tête."""
+    """Crée une page de titre pour chaque lettre et configure l'en-tête."""
     return f"""
 \\newpage
-\\fancyhead[C]{{{lettre}}}
-\\thispagestyle{{fancy}}
+\\thispagestyle{{empty}}
+\\fancyhead[C]{{\\textbf{{\\textit{{{lettre}}}}}}}
 \\vspace*{{\\fill}}
 \\begin{{center}}
 \\fontsize{{80}}{{95}}\\selectfont\\textbf{{{lettre}}}
@@ -48,8 +48,6 @@ def creer_page_titre(lettre):
 \\vspace*{{\\fill}}
 \\newpage
 """
-
-
 
 def generer_tableau_index_par_lettre(lettre, titres):
     """Génère un index en tableau à quatre colonnes avec une première ligne vide, les numéros alignés à droite."""
@@ -111,7 +109,6 @@ with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
 header-includes:
   - \\usepackage{fancyhdr}
   - \\pagestyle{fancy}
-  - \\fancyhead[C]{}
   - \\fancyfoot[C]{\\thepage}
   - \\renewcommand{\\headrulewidth}{0pt}
   - \\renewcommand{\\footrulewidth}{0pt}
