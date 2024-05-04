@@ -49,8 +49,8 @@ def creer_page_titre(lettre):
 """
 
 def generer_tableau_index_par_lettre(lettre, titres):
-    """ Génère un index en tableau à quatre colonnes avec gestion correcte des liens. """
-    index = "\n| | | | |\n|---|:--|---|:--|\n"
+    """ Génère un index en tableau à quatre colonnes avec des colonnes de titres plus larges. """
+    index = "\n| Titre | Page | Titre | Page |\n|:---------------------------|:--|:---------------------------|:--|\n"
     
     # Séparer les titres des numéros de page
     titres_separes = [titre.rsplit(' ', 1) for titre in titres]
@@ -68,7 +68,7 @@ def generer_tableau_index_par_lettre(lettre, titres):
 
     # Ajouter les lignes au tableau
     for (titre_1, page_1), (titre_2, page_2) in zip(colonne_1, colonne_2):
-        index += f"| {titre_1} | {page_1:>5} | {titre_2} | {page_2:>5} |\n"
+        index += f"| {titre_1:<27} | {page_1:>5} | {titre_2:<27} | {page_2:>5} |\n"
     
     return index
 
