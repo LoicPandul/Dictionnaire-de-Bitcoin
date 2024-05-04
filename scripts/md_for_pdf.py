@@ -2,13 +2,13 @@ import os
 import re
 
 def ajuster_liens_et_images(contenu):
-    """ Ajuste les liens internes et les chemins des images. """
+    """Ajuste les liens internes et les chemins des images."""
     contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
     contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](../../dictionnaire/\1)', contenu)
     return contenu
 
 def markdown_to_latex_lists(contenu):
-    """ Convertit les listes Markdown en listes LaTeX. """
+    """Convertit les listes Markdown en listes LaTeX."""
     lines = contenu.split('\n')
     new_content = []
     in_list = False
@@ -36,7 +36,7 @@ def markdown_to_latex_lists(contenu):
     return '\n'.join(new_content)
 
 def creer_page_titre(lettre):
-    """ Crée une page de titre pour chaque lettre. """
+    """Crée une page de titre pour chaque lettre."""
     return f"""
 \\newpage
 \\thispagestyle{{empty}}
@@ -49,8 +49,8 @@ def creer_page_titre(lettre):
 """
 
 def generer_tableau_index_par_lettre(lettre, titres):
-    """ Génère un index en tableau à quatre colonnes avec des colonnes de titres plus larges. """
-    index = "\n| Titre | Page | Titre | Page |\n|:---------------------------|:--|:---------------------------|:--|\n"
+    """Génère un index en tableau à quatre colonnes avec une première ligne vide."""
+    index = "\n| | | | |\n|:---------------------------|:--|:---------------------------|:--|\n"
     
     # Séparer les titres des numéros de page
     titres_separes = [titre.rsplit(' ', 1) for titre in titres]
@@ -73,7 +73,7 @@ def generer_tableau_index_par_lettre(lettre, titres):
     return index
 
 def ajouter_numeros_page(titre, page_num):
-    """ Crée une ancre correcte et associe le numéro de page. """
+    """Crée une ancre correcte et associe le numéro de page."""
     anchor = titre.lower().replace(' ', '-').replace('.', '.')
     anchor = re.sub(r'[«»|]', ' ', anchor)
     anchor = re.sub(r'\s+', '-', anchor.strip())
