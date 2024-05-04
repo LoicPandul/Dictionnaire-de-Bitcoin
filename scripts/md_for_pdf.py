@@ -2,13 +2,13 @@ import os
 import re
 
 def ajuster_liens_et_images(contenu):
-    """ Ajuste les liens internes et les chemins des images. """
+    """Ajuste les liens internes et les chemins des images."""
     contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
     contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](../../dictionnaire/\1)', contenu)
     return contenu
 
 def markdown_to_latex_lists(contenu):
-    """ Convertit les listes Markdown en listes LaTeX. """
+    """Convertit les listes Markdown en listes LaTeX."""
     lines = contenu.split('\n')
     new_content = []
     in_list = False
@@ -36,20 +36,21 @@ def markdown_to_latex_lists(contenu):
     return '\n'.join(new_content)
 
 def creer_page_titre(lettre):
-    """ Crée une page de titre pour chaque lettre. """
+    """Crée une page de titre pour chaque lettre sans spécifier la police."""
     return f"""
 \\newpage
 \\thispagestyle{{empty}}
 \\vspace*{{\\fill}}
 \\begin{{center}}
-{{\\fontfamily{{cmr}}\\selectfont \\fontsize{{105}}{{115}}\\selectfont\\textbf{{{lettre}}}}}
+\\fontsize{{80}}{{95}}\\selectfont\\textbf{{{lettre}}}
 \\end{{center}}
 \\vspace*{{\\fill}}
 \\newpage
 """
 
+
 def generer_tableau_index_par_lettre(lettre, titres):
-    """ Génère un index en tableau à quatre colonnes avec une première ligne vide. """
+    """Génère un index en tableau à quatre colonnes avec une première ligne vide."""
     index = "\n| | | | |\n|:---------------------------|:--|:---------------------------|:--|\n"
     
     # Séparer les titres des numéros de page
@@ -73,7 +74,7 @@ def generer_tableau_index_par_lettre(lettre, titres):
     return index
 
 def ajouter_numeros_page(titre, page_num):
-    """ Crée une ancre correcte et associe le numéro de page. """
+    """Crée une ancre correcte et associe le numéro de page."""
     anchor = titre.lower().replace(' ', '-').replace('.', '.')
     anchor = re.sub(r'[«»|]', ' ', anchor)
     anchor = re.sub(r'\s+', '-', anchor.strip())
@@ -100,13 +101,19 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
                 titre_avec_page = ajouter_numeros_page(titre, page_num)
                 titres_par_lettre[lettre].append(titre_avec_page)
 
-# Écrire la table des matières organisée par lettre
+# Écrire la table des matières en utilisant des commandes LaTeX
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
-    fichier_complet.write("# Table des matières\n\n")
+    # "Table des matières" en utilisant LaTeX pour augmenter la taille
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n\\vspace*{\\fill}\n")
+    fichier_complet.write("\\begin{center}\n")
+    fichier_complet.write("\\Huge \\textbf{Table des matières}\n")
+    fichier_complet.write("\\end{center}\n\\vspace*{\\fill}\n\\newpage\n\n")
+    
     for lettre, titres in sorted(titres_par_lettre.items()):
-        fichier_complet.write(f"## {lettre}\n")
+        # Lettres en utilisant LaTeX pour augmenter la taille, sans saut de page
+        fichier_complet.write(f"\\begin{{center}}\n\\Huge \\textbf{{{lettre}}}\n\\end{{center}}\n")
         fichier_complet.write(generer_tableau_index_par_lettre(lettre, titres) + "\n")
-
+    
     for lettre, titres in sorted(titres_par_lettre.items()):
         page_titre = creer_page_titre(lettre)
         fichier_complet.write(page_titre)
@@ -119,3 +126,7 @@ with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
             fichier_complet.write(contenu + '\n\n')
 
 print(f'Le fichier Markdown a été créé avec succès : {chemin_markdown_final}')
+
+
+
+

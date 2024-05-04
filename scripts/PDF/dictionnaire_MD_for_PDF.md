@@ -1,6 +1,15 @@
-# Table des matières
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\Huge \textbf{Table des matières}
+\end{center}
+\vspace*{\fill}
+\newpage
 
-## A
+\begin{center}
+\Huge \textbf{A}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -19,7 +28,9 @@
 | [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    13 | [ATTAQUE DES 51%](#attaque-des-51) |    27 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    14 |                                |       |
 
-## B
+\begin{center}
+\Huge \textbf{B}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -84,7 +95,9 @@
 | [BIP123](#bip123)              |    59 | [BTC](#btc)                    |   119 |
 | [BIP125](#bip125)              |    60 | [BTCPAY SERVER](#btcpay-server) |   120 |
 
-## C
+\begin{center}
+\Huge \textbf{C}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -117,7 +130,9 @@
 | [COINJUMBLE](#coinjumble)      |    27 | [CYPHERPUNK](#cypherpunk)      |    55 |
 | [COINMUX](#coinmux)            |    28 |                                |       |
 
-## D
+\begin{center}
+\Huge \textbf{D}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -133,7 +148,9 @@
 | [DISTRIBUÉ](#distribué)        |    10 | [DUSTRELAYFEE](#dustrelayfee)  |    21 |
 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    11 |                                |       |
 
-## E
+\begin{center}
+\Huge \textbf{E}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -147,7 +164,9 @@
 | [ELECTRUM LIGHTNING](#electrum-lightning) |     8 | [ÉTIQUETAGE](#étiquetage)      |    17 |
 | [ELTOO](#eltoo)                |     9 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |    18 |
 
-## F
+\begin{center}
+\Huge \textbf{F}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -161,7 +180,9 @@
 | [FLAG DAY](#flag-day)          |     8 | [FRAIS DE TRANSACTION](#frais-de-transaction) |    17 |
 | [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique) |     9 |                                |       |
 
-## G
+\begin{center}
+\Huge \textbf{G}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -171,7 +192,9 @@
 | [GIT](#git)                    |     4 | [GUI](#gui)                    |     9 |
 | [GO (GOLANG)](#go-golang)      |     5 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |    10 |
 
-## H
+\begin{center}
+\Huge \textbf{H}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -181,7 +204,9 @@
 | [HARDWARE WALLET](#hardware-wallet) |     4 | [HWI](#hwi)                    |     9 |
 | [HASHCASH](#hashcash)          |     5 |                                |       |
 
-## I
+\begin{center}
+\Huge \textbf{I}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -190,20 +215,26 @@
 | [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |     3 | [ISSUE](#issue)                |     7 |
 | [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |     4 |                                |       |
 
-## J
+\begin{center}
+\Huge \textbf{J}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [JAVA](#java)                  |     1 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |     3 |
 | [JAVASCRIPT (NODE.JS)](#javascript-node.js) |     2 |                                |       |
 
-## K
+\begin{center}
+\Huge \textbf{K}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [KNAPSACK SOLVER](#knapsack-solver) |     1 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |     2 |
 
-## L
+\begin{center}
+\Huge \textbf{L}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -214,7 +245,9 @@
 | [LIGHTNING LABS](#lightning-labs) |     5 | [LOGARITHME DISCRET (PROBLÈME)](#logarithme-discret-problème) |    11 |
 | [LIGHTNING NETWORK](#lightning-network) |     6 | [LOOP](#loop)                  |    12 |
 
-## M
+\begin{center}
+\Huge \textbf{M}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -232,7 +265,9 @@
 | [MEMPOOL.DAT](#mempool.dat)    |    12 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |    25 |
 | [MERGE](#merge)                |    13 |                                |       |
 
-## N
+\begin{center}
+\Huge \textbf{N}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -244,7 +279,9 @@
 | [NŒUD COMPLET](#nœud-complet)  |     6 | [NVERSION](#nversion)          |    13 |
 | [NŒUD ÉLAGUÉ](#nœud-élagué)    |     7 |                                |       |
 
-## O
+\begin{center}
+\Huge \textbf{O}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -294,7 +331,9 @@
 | [OP_FROMALTSTACK (`0X6C`)](#op_fromaltstack-0x6c) |    44 | [OUTPUT](#output)              |    89 |
 | [OP_GREATERTHAN (`0XA0`)](#op_greaterthan-0xa0) |    45 | [OUTPUT LINKING](#output-linking) |    90 |
 
-## P
+\begin{center}
+\Huge \textbf{P}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -320,13 +359,17 @@
 | [PEERS.DAT](#peers.dat)        |    20 | [PULL REQUEST](#pull-request)  |    41 |
 | [PERCOLATION](#percolation)    |    21 | [PYTHON](#python)              |    42 |
 
-## Q
+\begin{center}
+\Huge \textbf{Q}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [QUBIT](#qubit)                |     1 |                                |       |
 
-## R
+\begin{center}
+\Huge \textbf{R}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -341,7 +384,9 @@
 | [RÉSEAU BITCOIN](#réseau-bitcoin) |     9 | [RUST-LIGHTNING](#rust-lightning) |    19 |
 | [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |    10 |                                |       |
 
-## S
+\begin{center}
+\Huge \textbf{S}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -374,7 +419,9 @@
 | [SIGHASH_ALL (0X01)](#sighash_all-0x01) |    27 | [SURCOUCHE (LAYER)](#surcouche-layer) |    55 |
 | [SIGHASH_ALL SIGHASH_ACP](#sighash_all-sighash_acp) |    28 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |    56 |
 
-## T
+\begin{center}
+\Huge \textbf{T}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -388,7 +435,9 @@
 | [TESTNET](#testnet)            |     8 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |    17 |
 | [TIDES](#tides)                |     9 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |    18 |
 
-## U
+\begin{center}
+\Huge \textbf{U}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -397,14 +446,18 @@
 | [UPRV](#uprv)                  |     3 | [UTXO SET](#utxo-set)          |     7 |
 | [UPUB](#upub)                  |     4 |                                |       |
 
-## V
+\begin{center}
+\Huge \textbf{V}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [VANITY (ADDRESS)](#vanity-address) |     1 | [VPRV](#vprv)                  |     3 |
 | [VANITYGEN](#vanitygen)        |     2 | [VPUB](#vpub)                  |     4 |
 
-## W
+\begin{center}
+\Huge \textbf{W}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -415,20 +468,26 @@
 | [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |     5 | [WITNESSSCRIPT](#witnessscript) |    11 |
 | [WASABI WALLET](#wasabi-wallet) |     6 | [WTXID](#wtxid)                |    12 |
 
-## X
+\begin{center}
+\Huge \textbf{X}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [XOR](#xor)                    |     1 | [XPUB](#xpub)                  |     3 |
 | [XPRV](#xprv)                  |     2 |                                |       |
 
-## Y
+\begin{center}
+\Huge \textbf{Y}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [YPRV](#yprv)                  |     1 | [YPUB](#ypub)                  |     2 |
 
-## Z
+\begin{center}
+\Huge \textbf{Z}
+\end{center}
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
@@ -441,7 +500,7 @@
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{A}}
+\fontsize{80}{95}\selectfont\textbf{A}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -457,31 +516,41 @@ Méthode cryptographique permettant de combiner une vraie signature avec une sig
   \item Alice initie cet échange atomique. Elle crée une transaction $m_A$ qui envoie 1 BTC vers Bob. Elle crée une signature $s_A$ qui permet de valider cette transaction grâce à sa clé privée $p_A$ ($P_A = p_A \cdot G$), et en utilisant un nonce $n_A$ et un secret $t$ ($N_A = n_A \cdot G$ et $T = t \cdot G$) :
 \end{itemize}
 $$s_A = n_A + t + H(N_A + T \parallel P_A \parallel m_A) \cdot p_A$$
+&nbsp;
 \begin{itemize}
   \item Alice calcule l'adaptor signature $s_A'$ à partir du secret $t$ et de sa vraie signature $s_A$ :
 \end{itemize}
 $$s_A' = s_A - t$$
+&nbsp;
 \begin{itemize}
   \item Alice envoie à Bob son adaptor signature $sA'$, sa transaction non signée $m_A$, le point correspondant au secret $T$ et le point correspondant au nonce $N_A$. Nous appelons ces informations un « adaptor ». Notons qu'avec simplement ces informations, Bob n'est pas en capacité de récupérer le BTC d'Alice.
   \item En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $s_A'$ correspond bien à la transaction promise $m_A$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide :
 \end{itemize}
 $$s_A' \cdot G = N_A + H(N_A + T \parallel P_A \parallel m_A) \cdot P_A$$
+&nbsp;
 \begin{itemize}
   \item Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $m_B$ envoyant 1 BTC à Alice et sa propre adaptor signature $s_B'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) :
 \end{itemize}
 $$s_B' = n_B + H(N_B + T \parallel P_B \parallel m_B) \cdot p_B$$
+&nbsp;
 \begin{itemize}
   \item Bob envoie à Alice son adaptor signature $s_B'$, sa transaction non signée $m_B$, le point correspondant au secret $T$ et le point correspondant au nonce $N_B$. Alice peut désormais combiner l'adaptor signature de Bob $s_B'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $s_B$ pour la transaction $m_B$ qui lui envoie le BTC de Bob :
 \end{itemize}
-$$s_B = s_B' + t$$$$(s_B' + t) \cdot G = N_B + T + H(N_B + T \parallel P_B \parallel m_B) \cdot P_B$$
+$$s_B = s_B' + t$$
+&nbsp;
+$$(s_B' + t) \cdot G = N_B + T + H(N_B + T \parallel P_B \parallel m_B) \cdot P_B$$
+&nbsp;
 \begin{itemize}
   \item Alice diffuse cette transaction $m_B$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $s_B = s_B' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :
 \end{itemize}
 $$t = (s_B' + t) - s_B' = s_B - s_B'$$
+&nbsp;
 \begin{itemize}
   \item Or, ce secret $t$ était la seule information manquante à Bob afin de produire la signature valide $s_A$, à partir de l'adaptor signature d'Alice $s_A'$, qui lui permettra de valider la transaction $m_A$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $s_A$ et diffuse à son tour la transaction $m_A$ : $$s_A = s_A' + t$$
 \end{itemize}
+&nbsp;
 $$(s_A' + t) \cdot G = N_A + T + H(N_A + T \parallel P_A \parallel m_A) \cdot P_A$$
+&nbsp;
 
 ## ADDR
 
@@ -690,7 +759,7 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{B}}
+\fontsize{80}{95}\selectfont\textbf{B}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -734,6 +803,8 @@ Kit de développement (SDK) pour les portefeuilles sur Bitcoin. BDK est une coll
 
 `Bech32` et `Bech32m` sont deux formats d'encodage d'adresse pour recevoir des bitcoins. Ils sont établis sur une base 32 légèrement modifiée. Ils embarquent une somme de contrôle établie sur un algorithme de correction d'erreurs appelé BCH (Bose-Chaudhuri-Hocquenghem). Par rapport aux adresses Legacy, encodées en `Base58check`, les adresses `Bech32` et `Bech32m` disposent d'une somme de contrôle plus performante, permettant de détecter et potentiellement de modifier automatiquement les fautes de frappe. Leur format dispose également d'une meilleure lisibilité, avec uniquement des caractères minuscules. Voici la matrice d'addition de ce format depuis la base 10 : 
 
+&nbsp;
+
 <div align="center">
 
 |   $+$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ |
@@ -745,6 +816,8 @@ Kit de développement (SDK) pour les portefeuilles sur Bitcoin. BDK est une coll
 
 </div>
 
+
+&nbsp;
 
 `Bech32` et `Bech32m` sont des formats d'encodage utilisés pour représenter les adresses SegWit. `Bech32` est un format d'encodage d'adresse introduit par la BIP173 en 2017. Il utilise un ensemble de caractères spécifiques, composé de chiffres et de lettres minuscules, pour minimiser les erreurs de frappe et faciliter la lecture. Les adresses `Bech32` commencent généralement par `bc1` pour indiquer qu'elles sont natives de SegWit. Ce format est uniquement utilisé sur les adresses SegWit V0, avec les scripts `P2WPKH` (Pay to Witness Public Key Hash) et `P2WSH` (Pay to Witness Script Hash). Toutefois, il existe une petite faille inattendue propre au format `Bech32`. Chaque fois que le dernier caractère de l'adresse est un `p`, l'ajout ou la suppression d'un nombre quelconque de caractères `q` le précédant immédiatement n'invalide pas la somme de contrôle. Cela n'affecte pas les utilisations existantes des adresses SegWit V0 (BIP173) en raison de leur restriction à deux longueurs définies. Cependant, cela pourrait affecter des utilisations futures de l'encodage `Bech32`. Le format `Bech32m` est simplement un format `Bech32` avec cette erreur rectifiée. Il a été introduit avec le BIP350 en 2020. Les adresses `Bech32m` commencent également par `bc1`, mais elles sont spécifiquement conçues pour être compatibles avec la version SegWit V1 (Taproot) et les versions ultérieures, avec le script `P2TR` (Pay to TapRoot).
 
@@ -1400,7 +1473,7 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{C}}
+\fontsize{80}{95}\selectfont\textbf{C}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1782,7 +1855,7 @@ Communauté informelle et internationale de personnes intéressées par l'utilis
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{D}}
+\fontsize{80}{95}\selectfont\textbf{D}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1908,7 +1981,7 @@ Règle de standardisation utilisée par les nœuds du réseau pour déterminer c
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{E}}
+\fontsize{80}{95}\selectfont\textbf{E}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2039,7 +2112,7 @@ Outil en ligne ou en local qui permet de transformer les données brutes de la b
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{F}}
+\fontsize{80}{95}\selectfont\textbf{F}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2182,7 +2255,7 @@ Il convient également de tenir compte les limites de purge. En période de fort
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{G}}
+\fontsize{80}{95}\selectfont\textbf{G}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2240,7 +2313,7 @@ Fichier dans Bitcoin Core utilisé pour stocker une sauvegarde des paramètres d
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{H}}
+\fontsize{80}{95}\selectfont\textbf{H}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2298,7 +2371,7 @@ Sigle de « *Hardware Wallet Interface* ». C'est une interface standardisée pe
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{I}}
+\fontsize{80}{95}\selectfont\textbf{I}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2343,7 +2416,7 @@ Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issu
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{J}}
+\fontsize{80}{95}\selectfont\textbf{J}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2366,7 +2439,7 @@ Les portefeuilles JBOK, acronyme pour « Just a Bunch Of Keys » (en français �
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{K}}
+\fontsize{80}{95}\selectfont\textbf{K}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2390,7 +2463,7 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{L}}
+\fontsize{80}{95}\selectfont\textbf{L}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2451,7 +2524,7 @@ Service développé par Lightning Labs conçu pour faciliter l'équilibrage de l
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{M}}
+\fontsize{80}{95}\selectfont\textbf{M}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2603,7 +2676,7 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{N}}
+\fontsize{80}{95}\selectfont\textbf{N}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2686,7 +2759,7 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{O}}
+\fontsize{80}{95}\selectfont\textbf{O}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3185,7 +3258,7 @@ Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output link
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{P}}
+\fontsize{80}{95}\selectfont\textbf{P}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3454,7 +3527,7 @@ Langage de programmation de haut niveau, connu pour sa syntaxe claire et sa lisi
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{Q}}
+\fontsize{80}{95}\selectfont\textbf{Q}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3469,7 +3542,7 @@ Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent pre
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{R}}
+\fontsize{80}{95}\selectfont\textbf{R}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3580,7 +3653,7 @@ Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en 
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{S}}
+\fontsize{80}{95}\selectfont\textbf{S}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3892,7 +3965,7 @@ Traduction française de « *Initial Block Download* ». Fait référence au pro
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{T}}
+\fontsize{80}{95}\selectfont\textbf{T}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4005,7 +4078,7 @@ Identifiant unique associé à chaque transaction Bitcoin. Il est généré en c
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{U}}
+\fontsize{80}{95}\selectfont\textbf{U}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4051,7 +4124,7 @@ Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un mo
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{V}}
+\fontsize{80}{95}\selectfont\textbf{V}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4083,7 +4156,7 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{W}}
+\fontsize{80}{95}\selectfont\textbf{W}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4153,7 +4226,7 @@ Extension du TXID traditionnel, incluant les données de témoin (witness) intro
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{X}}
+\fontsize{80}{95}\selectfont\textbf{X}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4202,7 +4275,7 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{Y}}
+\fontsize{80}{95}\selectfont\textbf{Y}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4224,7 +4297,7 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin.
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{Z}}
+\fontsize{80}{95}\selectfont\textbf{Z}
 \end{center}
 \vspace*{\fill}
 \newpage

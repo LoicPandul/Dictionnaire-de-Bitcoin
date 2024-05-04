@@ -32,7 +32,7 @@
 26. ***Q*** - 1
 
 ### Termes techniques les plus rencontrés :
-1. ***bitcoin*** - 910
+1. ***bitcoin*** - 909
 2. ***transaction*** - 757
 3. ***bloc*** - 464
 4. ***script*** - 249
