@@ -49,33 +49,37 @@ def creer_page_titre(lettre):
 """
 
 def generer_tableau_index_par_lettre(lettre, titres):
-    """ Génère un index en tableau à deux colonnes verticales avec alignement. """
-    index = "\n| | |\n|---|---|\n"
+    """ Génère un index en tableau à quatre colonnes avec gestion correcte des liens. """
+    index = "\n| | | | |\n|---|:--|---|:--|\n"
     
-    # Réduire la taille de la police des titres
-    titres = [f"\\small {titre}" for titre in titres]
-
-    # Organiser les titres en deux colonnes verticales
-    mi_point = (len(titres) + 1) // 2
-    colonne_1 = titres[:mi_point]
-    colonne_2 = titres[mi_point:]
-
+    # Séparer les titres des numéros de page
+    titres_separes = [titre.rsplit(' ', 1) for titre in titres]
+    
+    # Organiser en deux colonnes de titres avec leurs numéros respectifs
+    mi_point = (len(titres_separes) + 1) // 2
+    colonne_1 = titres_separes[:mi_point]
+    colonne_2 = titres_separes[mi_point:]
+    
     # Compléter avec des cases vides si nécessaire
     while len(colonne_1) < len(colonne_2):
-        colonne_1.append("")
+        colonne_1.append(("", ""))
     while len(colonne_2) < len(colonne_1):
-        colonne_2.append("")
+        colonne_2.append(("", ""))
 
     # Ajouter les lignes au tableau
-    for titre_1, titre_2 in zip(colonne_1, colonne_2):
-        index += f"| {titre_1} | {titre_2} |\n"
+    for (titre_1, page_1), (titre_2, page_2) in zip(colonne_1, colonne_2):
+        index += f"| {titre_1} | {page_1:>5} | {titre_2} | {page_2:>5} |\n"
     
     return index
 
 def ajouter_numeros_page(titre, page_num):
-    """ Ajoute le numéro de page avec une ligne de points entre le titre et le numéro. """
-    points = '.' * (50 - len(titre))
-    return f"{titre} {points} {page_num}"
+    """ Crée une ancre correcte et associe le numéro de page. """
+    anchor = titre.lower().replace(' ', '-').replace('.', '.')
+    anchor = re.sub(r'[«»|]', ' ', anchor)
+    anchor = re.sub(r'\s+', '-', anchor.strip())
+    anchor = re.sub(r'--+', '-', anchor)
+    anchor = re.sub(r'[^\w.-]', '', anchor)
+    return f"[{titre}](#{anchor}) {page_num}"
 
 chemin_dossier_dictionnaire = '../dictionnaire'
 chemin_markdown_final = 'PDF/dictionnaire_MD_for_PDF.md'
@@ -93,15 +97,10 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
             contenu = fichier.read()
             titres = re.findall(r'^##\s*(.*)$', contenu, flags=re.MULTILINE)
             for page_num, titre in enumerate(titres, start=1):
-                anchor = titre.lower().replace(' ', '-').replace('.', '.')
-                anchor = re.sub(r'[«»|]', ' ', anchor)
-                anchor = re.sub(r'\s+', '-', anchor.strip())
-                anchor = re.sub(r'--+', '-', anchor)
-                anchor = re.sub(r'[^\w.-]', '', anchor)
-                titre_avec_page = ajouter_numeros_page(f"[{titre}](#{anchor})", page_num)
+                titre_avec_page = ajouter_numeros_page(titre, page_num)
                 titres_par_lettre[lettre].append(titre_avec_page)
 
-# Écrire l'index organisé par lettre avec deux colonnes et numéros de page
+# Écrire l'index organisé par lettre
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
     fichier_complet.write("# Index\n\n")
     for lettre, titres in sorted(titres_par_lettre.items()):
