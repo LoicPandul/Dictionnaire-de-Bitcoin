@@ -5,16 +5,16 @@
 | | |
 |---|---|
 | \small [ACINQ](#acinq) ................................... 1 | \small [ANYPREVOUT (APO)](#anyprevout-apo) ............... 15 |
-| \small [ADAPTOR SIGNATURE](#adaptor-signature) ........... 2 | \small [AOPP (ADDRESS OWNERSHIP PROOF PROTOCOL)](#aopp-address-ownership-proof-protocol)  16 |
-| \small [ADDR](#addr) ..................................... 3 | \small [API (APPLICATION PROGRAMMING INTERFACE)](#api-application-programming-interface)  17 |
+| \small [ADAPTOR SIGNATURE](#adaptor-signature) ........... 2 | \small [AOPP](#aopp) ..................................... 16 |
+| \small [ADDR](#addr) ..................................... 3 | \small [API](#api) ....................................... 17 |
 | \small [ADDR.DAT](#addr.dat) ............................. 4 | \small [ARBRE DE MERKLE](#arbre-de-merkle) ............... 18 |
 | \small [ADDRV2](#addrv2) ................................. 5 | \small [ARK](#ark) ....................................... 19 |
-| \small [ADRESSE DE RÉCEPTION](#adresse-de-réception) ..... 6 | \small [ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION)](#asic-circuit-intégré-spécifique-à-une-application)  20 |
-| \small [AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE)](#ajustement-de-la-difficulté-ou-reciblage)  7 | \small [ASMAP](#asmap) ................................... 21 |
+| \small [ADRESSE DE RÉCEPTION](#adresse-de-réception) ..... 6 | \small [ASIC](#asic) ..................................... 20 |
+| \small [AJUSTEMENT DE DIFFICULTÉ](#ajustement-de-difficulté)  7 | \small [ASMAP](#asmap) ................................... 21 |
 | \small [ALGORITHME](#algorithme) ......................... 8 | \small [ASSUME UTXO](#assume-utxo) ....................... 22 |
 | \small [ANALYSE DE CHAINE](#analyse-de-chaine) ........... 9 | \small [ASSUME VALID](#assume-valid) ..................... 23 |
 | \small [ANCESTOR MINING](#ancestor-mining) ............... 10 | \small [ATH (ALL-TIME HIGH)](#ath-all-time-high) ......... 24 |
-| \small [ANCHOR OUTPUTS](#anchor-outputs) ................. 11 | \small [ATLC (ANCHOR TIMELOCK CONTRACTS)](#atlc-anchor-timelock-contracts)  25 |
+| \small [ANCHOR OUTPUTS](#anchor-outputs) ................. 11 | \small [ATLC](#atlc) ..................................... 25 |
 | \small [ANCHORS.DAT](#anchors.dat) ....................... 12 | \small [ATOMIC SWAP](#atomic-swap) ....................... 26 |
 | \small [ANCRAGE BILATÉRAL](#ancrage-bilatéral) ........... 13 | \small [ATTAQUE DES 51%](#attaque-des-51) ................ 27 |
 | \small [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets)  14 |  |
@@ -76,7 +76,7 @@
 | \small [BIP86](#bip86) ................................... 51 | \small [BLOCK WITHHOLDING](#block-withholding) ........... 111 |
 | \small [BIP90](#bip90) ................................... 52 | \small [BLOOM FILTER](#bloom-filter) ..................... 112 |
 | \small [BIP91](#bip91) ................................... 53 | \small [B-MONEY](#b-money) ............................... 113 |
-| \small [BIP111](#bip111) ................................. 54 | \small [BOLT (BASIS OF LIGHTNING TECHNOLOGY)](#bolt-basis-of-lightning-technology)  114 |
+| \small [BIP111](#bip111) ................................. 54 | \small [BOLT](#bolt) ..................................... 114 |
 | \small [BIP112](#bip112) ................................. 55 | \small [BOUTISME](#boutisme) ............................. 115 |
 | \small [BIP113](#bip113) ................................. 56 | \small [BRANCH-AND-BOUND](#branch-and-bound) ............. 116 |
 | \small [BIP118](#bip118) ................................. 57 | \small [BRANCHE](#branche) ............................... 117 |
@@ -94,19 +94,19 @@
 | \small [CAHOOTS](#cahoots) ............................... 4 | \small [COMMERÇANT](#commerçant) ......................... 32 |
 | \small [CANAL DE PAIMENT](#canal-de-paiment) ............. 5 | \small [COMMIT](#commit) ................................. 33 |
 | \small [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning)  6 | \small [COMPACT BLOCK RELAY](#compact-block-relay) ....... 34 |
-| \small [CASHU](#cashu) ................................... 7 | \small [COMPATIBILITÉ RÉTROSPECTIVE (RÉTROCOMPATIBILITÉ)](#compatibilité-rétrospective-rétrocompatibilité)  35 |
-| \small [CET (CONTRACT EXECUTION TRANSACTION)](#cet-contract-execution-transaction)  8 | \small [CONCATÉNATION](#concaténation) ................... 36 |
+| \small [CASHU](#cashu) ................................... 7 | \small [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective)  35 |
+| \small [CET](#cet) ....................................... 8 | \small [CONCATÉNATION](#concaténation) ................... 36 |
 | \small [CHANNEL FACTORIES](#channel-factories) ........... 9 | \small [CONDENSAT (HASH)](#condensat-hash) ............... 37 |
 | \small [CHAINSTATE/](#chainstate) ........................ 10 | \small [CONFIRMATION](#confirmation) ..................... 38 |
 | \small [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) ... 11 | \small [CONSENSUS](#consensus) ........................... 39 |
 | \small [CHAUMIAN COINJOIN](#chaumian-coinjoin) ........... 12 | \small [CONSOLIDATION](#consolidation) ................... 40 |
 | \small [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) ... 13 | \small [CONTRAT INTELLIGENT](#contrat-intelligent) ....... 41 |
 | \small [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) ....... 14 | \small [COOKIE (.COOKIE)](#cookie-.cookie) ............... 42 |
-| \small [CIOH (COMMON INPUT OWNERSHIP HEURISTIC)](#cioh-common-input-ownership-heuristic)  15 | \small [CORE-LIGHTNING (CLN)](#core-lightning-cln) ....... 43 |
+| \small [CIOH](#cioh) ..................................... 15 | \small [CORE-LIGHTNING (CLN)](#core-lightning-cln) ....... 43 |
 | \small [CLÉ ÉTENDUE](#clé-étendue) ....................... 16 | \small [COURBE ELLIPTIQUE](#courbe-elliptique) ........... 44 |
 | \small [CLÉ PRIVÉE](#clé-privée) ......................... 17 | \small [COVENANT](#covenant) ............................. 45 |
 | \small [CLÉ PUBLIQUE](#clé-publique) ..................... 18 | \small [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent)  46 |
-| \small [CLI](#cli) ....................................... 19 | \small [CPPSRB (CAPPED PAY PER SHARE RECENT BACKPAY)](#cppsrb-capped-pay-per-share-recent-backpay)  47 |
+| \small [CLI](#cli) ....................................... 19 | \small [CPPSRB](#cppsrb) ................................. 47 |
 | \small [C-LIGHTNING (CLN)](#c-lightning-cln) ............. 20 | \small [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit)  48 |
 | \small [CLONE](#clone) ................................... 21 | \small [CRYPTANALYSE](#cryptanalyse) ..................... 49 |
 | \small [CODE DE CHAÎNE](#code-de-chaîne) ................. 22 | \small [CRYPTER](#crypter) ............................... 50 |
@@ -128,7 +128,7 @@
 | \small [DDOS](#ddos) ..................................... 5 | \small [DRIVECHAIN](#drivechain) ......................... 16 |
 | \small [DEBUG.LOG](#debug.log) ........................... 6 | \small [DUMMY ELEMENT](#dummy-element) ................... 17 |
 | \small [DÉPÔT](#dépôt) ................................... 7 | \small [DUST](#dust) ..................................... 18 |
-| \small [DGM (DOUBLE GEOMETRIC METHOD)](#dgm-double-geometric-method)  8 | \small [DUSTING ATTACK](#dusting-attack) ................. 19 |
+| \small [DGM](#dgm) ....................................... 8 | \small [DUSTING ATTACK](#dusting-attack) ................. 19 |
 | \small [DIFFIE-HELLMAN](#diffie-hellman) ................. 9 | \small [DUST LIMIT](#dust-limit) ......................... 20 |
 | \small [DISTRIBUÉ](#distribué) ........................... 10 | \small [DUSTRELAYFEE](#dustrelayfee) ..................... 21 |
 | \small [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract)  11 |  |
@@ -516,7 +516,7 @@ ou
 
 Une adresse de réception peut être représentée sous la forme d'une chaîne de caractères alphanumériques ou sous la forme d'un QR code. Chaque adresse peut être utilisée plusieurs fois, mais c'est une pratique très déconseillée. En effet, dans le but de maintenir un certain niveau de confidentialité, il est conseillé de n'utiliser chaque adresse Bitcoin qu'une seule fois. Il faut en générer une nouvelle pour tout paiement entrant vers son portefeuille. Une adresse est encodée en `Bech32` pour les adresses SegWit V0, en `Bech32m` pour les adresses SegWit V1, et en `Base58check` pour les adresses Legacy. D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
-## AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE)
+## AJUSTEMENT DE DIFFICULTÉ
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin. Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. Le calcul qu'effectuent les nœuds pour calculer la nouvelle cible est le suivant : $N = A \cdot \left(\frac{T}{1,209,600}\right)$
 Où :
@@ -593,13 +593,13 @@ Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en 
 
 Nom donné au BIP118 qui propose d'ajouter deux nouveaux SigHash Flag modificateurs, nommés `SIGHASH_ANYPREVOUT` et `SIGHASH_ANYPREVOUTANYSCRIPT`. Le terme « *AnyPrevOut* » provient de la contraction de « *Any Previous Output* » que l'on pourrait traduire en français par « toute sortie précédente ». Pour plus d'informations, voir les définitions correspondantes.
 
-## AOPP (ADDRESS OWNERSHIP PROOF PROTOCOL)
+## AOPP
 
-Protocole controversé, conçu pour prouver automatiquement la propriété d'adresses Bitcoin. Ce mécanisme permet aux utilisateurs de démontrer qu'ils contrôlent une adresse spécifique, directement à travers leur logiciel de portefeuille compatible. Initialement, l'AOPP a été créé pour simplifier la vérification de possession d'adresses, une exigence légale pour les clients désirant transférer leurs bitcoins hors des plateformes d'échange dans certaines juridictions, telles que la Suisse. Néanmoins, ce protocole a été l'objet de critiques importantes au sein de la communauté Bitcoin, car il pourrait établir un précédent où les utilisateurs devraient demander l'autorisation pour exercer leur droit de possession sur leurs propres fonds (self-custody). Face à ces critiques, de nombreux logiciels de portefeuille ont choisi de ne pas adopter ce protocole.
+Sigle de « *Address Ownership Proof Protocol* ». C'est un protocole controversé, conçu pour prouver automatiquement la propriété d'adresses Bitcoin. Ce mécanisme permet aux utilisateurs de démontrer qu'ils contrôlent une adresse spécifique, directement à travers leur logiciel de portefeuille compatible. Initialement, l'AOPP a été créé pour simplifier la vérification de possession d'adresses, une exigence légale pour les clients désirant transférer leurs bitcoins hors des plateformes d'échange dans certaines juridictions, telles que la Suisse. Néanmoins, ce protocole a été l'objet de critiques importantes au sein de la communauté Bitcoin, car il pourrait établir un précédent où les utilisateurs devraient demander l'autorisation pour exercer leur droit de possession sur leurs propres fonds (self-custody). Face à ces critiques, de nombreux logiciels de portefeuille ont choisi de ne pas adopter ce protocole.
 
-## API (APPLICATION PROGRAMMING INTERFACE)
+## API
 
-Dans le contexte général de l'informatique, une API est un ensemble de règles et de spécifications que les logiciels peuvent suivre pour communiquer entre eux. Elles permettent aux développeurs d'accéder à des fonctionnalités ou à des données d'une application, d'un système d'exploitation ou d'un autre service pour leur propre logiciel.
+Sigle de « *Application Programming Interface* ». Dans le contexte général de l'informatique, une API est un ensemble de règles et de spécifications que les logiciels peuvent suivre pour communiquer entre eux. Elles permettent aux développeurs d'accéder à des fonctionnalités ou à des données d'une application, d'un système d'exploitation ou d'un autre service pour leur propre logiciel.
 
 > *En français, on peut le traduire par « interface de programmation d'applications » ou directement « interface de programmation ».*
 
@@ -636,7 +636,7 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 Nouveau protocole de seconde couche dévoilé par Burak en mai 2023. Comme le Lightning Network, Ark est un système se déployant par-dessus la chaîne principale de Bitcoin. Il permettrait de faire des paiements en bitcoins en dehors de la chaîne de manière rapide, anonyme et à bas frais. Par rapport à Lightning, Ark ne nécessite pas d’avoir des liquidités entrantes pour recevoir des paiements, ce qui permet d’améliorer considérablement l’expérience utilisateur. De plus, il procure une confidentialité se rapprochant des transactions coinjoins, alors que Lightning est un très mauvais modèle pour préserver sa vie privée. Enfin, Ark pourrait également être non interactif si des covenants sont ajoutés à Bitcoin. Burak critique souvent la capacité de Lightning à passer à l’échelle en raison de sa dépendance à la chaîne principale et suggère qu'Ark pourrait théoriquement intégrer toute la population mondiale en self-custody. Même si Ark peut être vu comme un protocole concurrent au Lightning Network, les deux peuvent en réalité coexister. Ils pourraient même être plutôt complémentaires. Notons toutefois que pour le moment, Ark n’est qu’une simple idée. Burak n’a pas encore dévoilé le code de son invention.
 
-## ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION)
+## ASIC
 
 Un ASIC est un composant électronique conçu pour exécuter une fonction spécifique avec une efficacité optimale. Dans le contexte du minage de Bitcoin, les ASIC sont des circuits intégrés spécialisés qui effectuent des opérations de hachage à haute vitesse et faible consommation d'énergie. Ils sont spécialisés dans l'exécution de la fonction de hachage `SHA256` utilisée dans le mécanisme de la preuve de travail. L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » vise souvent à désigner également la machine qui héberge cette puce. Ainsi, les ordinateurs spécialisés dans le minage de Bitcoin sont parfois appelés des « ASIC », ou bien des « mineurs ». Les ASIC ont progressivement remplacé les autres méthodes de minage, telles que l'utilisation de processeurs (CPU) et de cartes graphiques (GPU), en raison de leur efficacité énergétique supérieure et de leur taux de hachage bien plus élevé.
 
@@ -663,9 +663,9 @@ Paramètre de configuration dans le client majoritaire Bitcoin Core qui permet �
 
 Désigne le niveau le plus élevé jamais atteint par l'élément étudié. Souvent, l'ATH désigne le plus haut niveau de prix du bitcoin en comparaison avec une monnaie étatique sur une période donnée.
 
-## ATLC (ANCHOR TIMELOCK CONTRACTS)
+## ATLC
 
-Paiements conditionnels utilisés dans le cadre du protocole Ark pour fournir un calendrier de paiement atomique à un hub, grâce à des connecteurs permettant de former ce que l'on appelle un « txlock ». L'objectif d'un ATLC est sensiblement le même que celui d'un HTLC sur Lightning.
+Sigle de « *Anchor Timelock Contracts* ». C'est un paiements conditionnels utilisés dans le cadre du protocole Ark pour fournir un calendrier de paiement atomique à un hub, grâce à des connecteurs permettant de former ce que l'on appelle un « txlock ». L'objectif d'un ATLC est sensiblement le même que celui d'un HTLC sur Lightning.
 
 > *Pour plus d'informations, voir la définition de [**ARK**](#ark).*
 
@@ -1349,9 +1349,9 @@ Structure de données probabiliste utilisée pour tester si un élément fait pa
 
 Prototype de cryptomonnaie décentralisée conçue par Wei Dai en 1998. Ce système imaginait un réseau où les participants seraient identifiés uniquement par des clés publiques, et où chaque transaction seraient signée par l'expéditeur. B-money était établi sur un modèle de comptes plutôt que d'UTXO, comme pour Bitcoin actuellement. Il permettait la création de monnaie par une sorte de preuve de travail liée à un panier de marchandises. C'était donc un précurseur au principe actuel de stablecoin. Ce concept n'a jamais été mis en œuvre.
 
-## BOLT (BASIS OF LIGHTNING TECHNOLOGY)
+## BOLT
 
-Série de spécifications destinées à permettre l'interopérabilité de Lightning entre les différentes implémentations de ce protocole de seconde couche. Ces spécifications détaillent les règles et les normes à respecter afin que les nœuds Lightning forment un seul et même réseau.
+Sigle de « *Basis Of Lightning Technology* ». C'est une série de spécifications destinées à permettre l'interopérabilité de Lightning entre les différentes implémentations de ce protocole de seconde couche. Ces spécifications détaillent les règles et les normes à respecter afin que les nœuds Lightning forment un seul et même réseau.
 
 ## BOUTISME
 
@@ -1439,9 +1439,9 @@ Protocole open-source de monnaie électronique chaumienne, similaire au système
 
 > *Pour plus d'informations, voir la définition de [**ECASH**](#ecash-david-chaum).*
 
-## CET (CONTRACT EXECUTION TRANSACTION)
+## CET
 
-Transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
+Sigle de « *Contract Execution Transaction* ». C'est une transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
 
 > *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](#dlc-discreet-log-contract).*
 
@@ -1492,9 +1492,9 @@ Le facteur de difficulté, aussi connu sous le nom de cible de difficulté, est 
 
 > *La cible de difficulté est parfois également nommée « facteur de difficulté ». Par extension, on peut l'évoquer avec son encodage dans les entêtes de bloc avec le terme « nBits ».*
 
-## CIOH (COMMON INPUT OWNERSHIP HEURISTIC)
+## CIOH
 
-Heuristique utilisée dans le domaine de l'analyse et du traçage des transactions sur Bitcoin qui suppose que toutes les entrées d'une transaction appartiennent à une même entité ou à un même utilisateur. Lorsque l'on observe les données publiques d'une transaction Bitcoin, et que l'on y repère plusieurs entrées (inputs), alors, s'il n'y a pas de paternes où d'autres informations qui viendraient infirmer cela, on peut estimer que toutes les entrées de cette transaction appartenaient à une seule et même personne (ou entité). Cette heuristique d'analyse on-chain a été découverte par Satoshi Nakamoto lui-même, qui en parle dans la partie 10 du White Paper :
+Sigle de « *Common Input Ownership Heuristic* ». C'est une heuristique utilisée dans le domaine de l'analyse et du traçage des transactions sur Bitcoin qui suppose que toutes les entrées d'une transaction appartiennent à une même entité ou à un même utilisateur. Lorsque l'on observe les données publiques d'une transaction Bitcoin, et que l'on y repère plusieurs entrées (inputs), alors, s'il n'y a pas de paternes où d'autres informations qui viendraient infirmer cela, on peut estimer que toutes les entrées de cette transaction appartenaient à une seule et même personne (ou entité). Cette heuristique d'analyse on-chain a été découverte par Satoshi Nakamoto lui-même, qui en parle dans la partie 10 du White Paper :
 
 > « *Toutefois, la liaison est inévitable avec les transactions multi-entrées, qui révèlent nécessairement que leurs entrées étaient détenues par un même propriétaire. Le risque est que si le propriétaire d'une clef est révélé, les liaisons peuvent révéler d'autres transactions qui ont appartenu au même propriétaire.* » - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Consulté à l'adresse https://bitcoin.org/bitcoin.pdf.
 
@@ -1671,7 +1671,7 @@ Dans le cadre de Git, représente une capture instantanée des modifications app
 
 Protocole introduit dans Bitcoin Core en 2016 via le BIP152 qui propose une méthode d'économie de bande passante pour les nœuds du réseau. Compact Block Relay permet de communiquer les informations des blocs de manière compacte, en se basant sur l'hypothèse que les nœuds ont déjà une grande partie des transactions d'un bloc récent dans leur mempool. Plutôt que de transmettre chaque transaction intégralement, ce qui constituerait un doublon, Compact Block Relay propose d'envoyer uniquement de courts identifiants pour les transactions déjà connues des pairs, accompagnés de quelques transactions sélectionnées (notamment la transaction coinbase et celles que le nœud est susceptible de ne pas connaître). Le nœud peut ensuite demander à ses pairs les éventuelles transactions manquantes. Compact Block Relay permet ainsi de diminuer la quantité de données échangées lors de la propagation des blocs, ce qui réduit ainsi les pics de bande passante et améliore l'efficacité globale du réseau.
 
-## COMPATIBILITÉ RÉTROSPECTIVE (RÉTROCOMPATIBILITÉ)
+## COMPATIBILITÉ RÉTROSPECTIVE
 
 Dans le contexte de Bitcoin, fait référence à la capacité d'une mise à jour des règles du protocole à maintenir la compatibilité avec les versions antérieures. Cela signifie que les modifications sont conçues de manière à ce que les anciens nœuds (les nœuds exécutant des versions antérieures au changement de règles) puissent toujours interagir avec le réseau et suivre la chaîne avec le plus de preuve travail accumulée. Il faut donc que les anciens nœuds ne rejettent ni les nouveaux blocs, ni les nouvelles transactions. La compatibilité rétrospective permet de réduire fortement la probabilité qu'une mise à jour fragmente le réseau, évitant ainsi la division du réseau en sous-groupes sur des chaînes différentes. Pour assurer une compatibilité avec les versions antérieures du protocole, une mise à jour doit rendre les règles existantes plus strictes ou en introduire de nouvelles. C'est ce principe qui définit un « soft fork ». À l'inverse, si une mise à jour assouplit les règles existantes ou en élimine certaines, alors elle ne sera pas rétrocompatible. Ce sera donc un « hard fork ».
 
@@ -1738,9 +1738,9 @@ Pour bien comprendre le concept de covenant, je vous propose une analogie : imag
 
 Mécanisme transactionnel visant à accélérer la confirmation d'une transaction Bitcoin, tout comme le fait Replace-by-Fee (RBF), mais du côté du destinataire. Lorsqu'une transaction avec des frais trop faibles par rapport au marché reste bloquée dans les mempools des nœuds et ne se confirme pas assez rapidement, le destinataire peut initier une nouvelle transaction, dépensant les bitcoins reçus dans la transaction bloquée, bien qu'elle ne soit pas encore confirmée. Cette seconde transaction nécessite forcément que la première soit minée pour être confirmée. Les mineurs sont donc obligés d'inclure les deux transactions ensemble. La seconde va allouer beaucoup plus de frais de transaction que la première, de telle sorte que la moyenne de frais incite les mineurs à inclure les deux transactions. La transaction enfant (la seconde) paie pour la transaction parent qui est bloquée (la première). C'est pour cela que l'on parle d'un « CPFP ». Ainsi, CPFP permet au destinataire d'obtenir plus rapidement ses fonds malgré les faibles frais initiaux engagés par l'expéditeur.
 
-## CPPSRB (CAPPED PAY PER SHARE RECENT BACKPAY)
+## CPPSRB
 
-Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. Dans ce système, la pool paie autant de parts (shares) qu'elle le peut à chaque fois qu'un bloc est trouvé, en donnant la priorité aux parts les plus récentes. Cette méthode garantit que la probabilité de trouver un bloc reste constante, indépendamment de la durée du cycle de minage en cours, offrant ainsi une certaine protection contre le pool hopping.
+Sigle de « *Capped Pay Per Share Recent Backpay* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. Dans ce système, la pool paie autant de parts (shares) qu'elle le peut à chaque fois qu'un bloc est trouvé, en donnant la priorité aux parts les plus récentes. Cette méthode garantit que la probabilité de trouver un bloc reste constante, indépendamment de la durée du cycle de minage en cours, offrant ainsi une certaine protection contre le pool hopping.
 
 ## CPU (CENTRAL PROCESSING UNIT)
 
@@ -1821,9 +1821,9 @@ Structure de données centrale utilisée dans Git où sont stockées les informa
 
 > *En anglais, on parle d'un « repository ». Il est courant d'employer la troncation « repo » pour désigner un dépôt Git.*
 
-## DGM (DOUBLE GEOMETRIC METHOD)
+## DGM
 
-Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une méthodes hybride, qui est sensée combiner les avantages de PPLNS et de la méthode dite « géométrique ». Elle dispose d'une faible variance sur les parts, à la manière de PPLNS, puis permet au mineur d'absorber de la variance pour réduire celle de la pool dans un second temps. DGM est résistant au pool hopping en garantissant que le paiement attendu par part reste constant. La méthode est basée sur des scores, rendant les paiements indépendants de l'historique de la pool et presque totalement indépendants des changements futurs de difficulté.
+Sigle de « *Double Geometric Method* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une méthodes hybride, qui est sensée combiner les avantages de PPLNS et de la méthode dite « géométrique ». Elle dispose d'une faible variance sur les parts, à la manière de PPLNS, puis permet au mineur d'absorber de la variance pour réduire celle de la pool dans un second temps. DGM est résistant au pool hopping en garantissant que le paiement attendu par part reste constant. La méthode est basée sur des scores, rendant les paiements indépendants de l'historique de la pool et presque totalement indépendants des changements futurs de difficulté.
 
 ## DIFFIE-HELLMAN
 
