@@ -25,16 +25,16 @@ header-includes:
 | [ACINQ](#acinq)                |    13 | [ANYPREVOUT (APO)](#anyprevout-apo) |    18 |
 | [ADAPTOR SIGNATURE](#adaptor-signature) |    13 | [AOPP](#aopp)                  |    18 |
 | [ADDR](#addr)                  |    14 | [API](#api)                    |    18 |
-| [ADDR.DAT](#addr.dat)          |     ? | [ARBRE DE MERKLE](#arbre-de-merkle) |    19 |
+| [ADDR DOT DAT](#addr-dot-dat)  |    14 | [ARBRE DE MERKLE](#arbre-de-merkle) |    19 |
 | [ADDRV2](#addrv2)              |    15 | [ARK](#ark)                    |    20 |
-| [ADRESSE DE RÉCEPTION](#adresse-de-réception) |     ? | [ASIC](#asic)                  |    20 |
-| [AJUSTEMENT DE LA DIFFICULTÉ](#ajustement-de-la-difficulté) |     ? | [ASMAP](#asmap)                |    21 |
+| [ADRESSE DE RECEPTION](#adresse-de-reception) |    15 | [ASIC](#asic)                  |    20 |
+| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    15 | [ASMAP](#asmap)                |    21 |
 | [ALGORITHME](#algorithme)      |    16 | [ASSUME UTXO](#assume-utxo)    |    21 |
 | [ANALYSE DE CHAINE](#analyse-de-chaine) |    16 | [ASSUME VALID](#assume-valid)  |    21 |
 | [ANCESTOR MINING](#ancestor-mining) |    17 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    22 |
 | [ANCHOR OUTPUTS](#anchor-outputs) |    17 | [ATLC](#atlc)                  |    22 |
-| [ANCHORS.DAT](#anchors.dat)    |     ? | [ATOMIC SWAP](#atomic-swap)    |    22 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |     ? | [ATTAQUE DES 51%](#attaque-des-51) |     ? |
+| [ANCHORS DOT DAT](#anchors-dot-dat) |    17 | [ATOMIC SWAP](#atomic-swap)    |    22 |
+| [ANCRAGE BILATERAL](#ancrage-bilateral) |    17 | [ATTAQUE DES 51 POURCENT](#attaque-des-51-pourcent) |    23 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    18 |                                |       |
 | | | | |
 
@@ -568,7 +568,7 @@ $$(s_A' + t) \cdot G = N_A + T + H(N_A + T \parallel P_A \parallel m_A) \cdot P_
 
 Message réseau anciennement utilisé sur Bitcoin pour communiquer les adresses des nœuds acceptant des connexions entrantes. Cet ancien format, se limitant à 128 bits par adresse, était seulement adapté aux adresses IPv6, IPv4 et aux adresses Tor de version 2. Face à l'arrivée de nouveaux protocoles comme Tor V3 et la nécessité de disposer d'une meilleure évolutivité pour de futur protocoles réseau, le format `addr` a été supplanté par `addrv2`, introduit dans le BIP155.
 
-## ADDR.DAT
+## ADDR DOT DAT
 
 Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations sur les pairs (c'est-à-dire, les nœuds) du réseau avec lesquels le nœud de l'utilisateur a interagi ou peut potentiellement interagir. Ce fichier a été remplacé par le fichier peers.dat depuis la version 0.7.0.
 
@@ -576,7 +576,7 @@ Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations
 
 Évolution proposée avec le BIP155 du message `addr` sur le réseau de Bitcoin. Le message `addr` servait à diffuser les adresses de nœuds acceptant des connexions entrantes, mais il était limité à des adresses de 128 bits. Cette taille était adéquate pour les adresses IPv6, IPv4, et Tor V2, mais insuffisante pour d'autres protocoles. La version mise à jour `addrv2` est conçue pour supporter des adresses plus longues, notamment les services cachés Tor v3 de 256 bits, ainsi que d'autres protocoles réseau tels que I2P ou de futurs protocoles.
 
-## ADRESSE DE RÉCEPTION
+## ADRESSE DE RECEPTION
 
 Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Les adresses SegWit sont composées des informations suivantes : 
 \begin{itemize}
@@ -597,7 +597,7 @@ ou
 
 Une adresse de réception peut être représentée sous la forme d'une chaîne de caractères alphanumériques ou sous la forme d'un QR code. Chaque adresse peut être utilisée plusieurs fois, mais c'est une pratique très déconseillée. En effet, dans le but de maintenir un certain niveau de confidentialité, il est conseillé de n'utiliser chaque adresse Bitcoin qu'une seule fois. Il faut en générer une nouvelle pour tout paiement entrant vers son portefeuille. Une adresse est encodée en `Bech32` pour les adresses SegWit V0, en `Bech32m` pour les adresses SegWit V1, et en `Base58check` pour les adresses Legacy. D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
-## AJUSTEMENT DE LA DIFFICULTÉ
+## AJUSTEMENT DE LA DIFFICULTE
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin. Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. Le calcul qu'effectuent les nœuds pour calculer la nouvelle cible est le suivant : $N = A \cdot \left(\frac{T}{1,209,600}\right)$
 Où :
@@ -643,11 +643,11 @@ Autre nom parfois donné à CPFP (Child-Pay-For-Parent). Le minage des ancêtres
 
 Proposition qui vise à améliorer la gestion des frais de transaction dans le cadre des canaux Lightning. À chaque changement d'état dans un canal Lightning, les parties prenantes créent et signent une nouvelle transaction d'engagement, reflétant la nouvelle répartition des fonds au sein du canal. Le problème de ce mécanisme réside dans la détermination des frais de transaction au moment de sa création. En effet, les frais de transaction sur le réseau Bitcoin sont sujets à de fortes fluctuations, tant à la hausse qu'à la baisse. Si les frais fixés pour la dernière transaction d'engagement sont insuffisants au moment de la fermeture unilatérale du canal, non seulement la transaction prendra un temps considérable à se confirmer, mais les mécanismes de verrouillage temporel (timelocks) pourraient également permettre un vol des fonds. Les anchor outputs permettent de réserver une petite partie des fonds dans une transaction d'engagement pour couvrir les frais futurs. En cas de congestion du réseau et d'augmentation des frais, les anchor outputs permettent de modifier les frais de transaction après la création de la transaction d'engagement, garantissant ainsi une fermeture suffisamment rapide du canal Lightning.
 
-## ANCHORS.DAT
+## ANCHORS DOT DAT
 
 Fichier utilisé dans le client Bitcoin Core pour stocker les adresses IP des nœuds sortants auxquels un client était connecté avant d'être éteint. Anchors.dat est donc créé à chaque fois que le nœud est arrêté et supprimé lorsqu'il est relancé. Les nœuds dont les adresses IP sont contenues dans ce fichier sont utilisés pour aider à établir rapidement des connexions lors du redémarrage du client.
 
-## ANCRAGE BILATÉRAL
+## ANCRAGE BILATERAL
 
 Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. L'ancrage bilatéral assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
 \begin{itemize}
@@ -759,7 +759,7 @@ Technologie permettant un échange de cryptomonnaies directement entre deux part
 \end{itemize}
 Les Atomic Swaps peuvent s'effectuer soit avec une même cryptomonnaie, dans ce cas on parle également de « Coin Swap », soit entre des cryptomonnaies différentes. Historiquement, ils s'appuyaient sur des « *Hash Time-Locked Contracts* » (HTLC), un système de verrouillage temporel qui garantie la complétude ou l'annulation totale de l'échange, préservant ainsi l'intégrité des fonds des parties impliquées. Cette méthode exigeait des protocoles capables de gérer à la fois les scripts et les timelocks. Toutefois, ces dernières années, la tendance s'est orientée vers l'utilisation des Adaptor Signatures. Cette seconde approche présente l'avantage de se passer de scripts, réduisant ainsi les coûts opérationnels. Son autre atout majeur réside dans le fait qu'elle n'exige pas l'emploi d'un hachage identique pour les deux volets de la transaction, évitant ainsi de révéler un lien entre elles.
 
-## ATTAQUE DES 51%
+## ATTAQUE DES 51 POURCENT
 
 Scénario hypothétique sur le système Bitcoin où un acteur malveillant contrôle plus de 50% de la puissance de calcul totale du minage (hashrate). Avec une telle dominance, l'attaquant peut manipuler le processus de consensus, permettant des actions malveillantes telles que la double dépense, où les mêmes bitcoins sont dépensés une première fois sur une chaîne finalement rendue désuète, puis une seconde fois sur la chaîne valide. Une autre finalité d'une attaque des 51% est la censure des transactions. Cependant, réaliser une attaque des 51% nécessite des ressources financières, humaines, énergétiques et techniques considérables, et rend l'acteur malveillant susceptible d'être découvert avant que l'attaque n'ait lieu. Bien que théoriquement possible, une attaque des 51% sur Bitcoin est considérée comme très peu probable en raison de la décentralisation du minage et de la grande puissance de calcul actuellement déployée.
 
