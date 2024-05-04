@@ -2,13 +2,13 @@ import os
 import re
 
 def ajuster_liens_et_images(contenu):
-    """Ajuste les liens internes et les chemins des images."""
+    """ Ajuste les liens internes et les chemins des images. """
     contenu = re.sub(r'\[([^\]]+)\]\(\.\/(?:.*?)\.md#(.*?)\)', r'[\1](#\2)', contenu)
     contenu = re.sub(r'\!\[\]\((assets\/.*?)\)', r'![](../../dictionnaire/\1)', contenu)
     return contenu
 
 def markdown_to_latex_lists(contenu):
-    """Convertit les listes Markdown en listes LaTeX."""
+    """ Convertit les listes Markdown en listes LaTeX. """
     lines = contenu.split('\n')
     new_content = []
     in_list = False
@@ -36,20 +36,20 @@ def markdown_to_latex_lists(contenu):
     return '\n'.join(new_content)
 
 def creer_page_titre(lettre):
-    """Crée une page de titre pour chaque lettre."""
+    """ Crée une page de titre pour chaque lettre. """
     return f"""
 \\newpage
 \\thispagestyle{{empty}}
 \\vspace*{{\\fill}}
 \\begin{{center}}
-{{\\fontfamily{{cmr}}\\selectfont \\fontsize{{95}}{{105}}\\selectfont\\textbf{{{lettre}}}}}
+{{\\fontfamily{{cmr}}\\selectfont \\fontsize{{105}}{{115}}\\selectfont\\textbf{{{lettre}}}}}
 \\end{{center}}
 \\vspace*{{\\fill}}
 \\newpage
 """
 
 def generer_tableau_index_par_lettre(lettre, titres):
-    """Génère un index en tableau à quatre colonnes avec une première ligne vide."""
+    """ Génère un index en tableau à quatre colonnes avec une première ligne vide. """
     index = "\n| | | | |\n|:---------------------------|:--|:---------------------------|:--|\n"
     
     # Séparer les titres des numéros de page
@@ -68,12 +68,12 @@ def generer_tableau_index_par_lettre(lettre, titres):
 
     # Ajouter les lignes au tableau
     for (titre_1, page_1), (titre_2, page_2) in zip(colonne_1, colonne_2):
-        index += f"| {titre_1:<27} | {page_1:>5} | {titre_2:<27} | {page_2:>5} |\n"
+        index += f"| {titre_1:<30} | {page_1:>5} | {titre_2:<30} | {page_2:>5} |\n"
     
     return index
 
 def ajouter_numeros_page(titre, page_num):
-    """Crée une ancre correcte et associe le numéro de page."""
+    """ Crée une ancre correcte et associe le numéro de page. """
     anchor = titre.lower().replace(' ', '-').replace('.', '.')
     anchor = re.sub(r'[«»|]', ' ', anchor)
     anchor = re.sub(r'\s+', '-', anchor.strip())
@@ -100,9 +100,9 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
                 titre_avec_page = ajouter_numeros_page(titre, page_num)
                 titres_par_lettre[lettre].append(titre_avec_page)
 
-# Écrire l'index organisé par lettre
+# Écrire la table des matières organisée par lettre
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
-    fichier_complet.write("# Index\n\n")
+    fichier_complet.write("# Table des matières\n\n")
     for lettre, titres in sorted(titres_par_lettre.items()):
         fichier_complet.write(f"## {lettre}\n")
         fichier_complet.write(generer_tableau_index_par_lettre(lettre, titres) + "\n")

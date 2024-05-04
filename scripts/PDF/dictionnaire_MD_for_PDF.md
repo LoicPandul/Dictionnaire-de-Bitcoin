@@ -1,201 +1,201 @@
-# Index
+# Table des matières
 
 ## A
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [ACINQ](#acinq)             |     1 | [ANYPREVOUT (APO)](#anyprevout-apo) |    15 |
-| [ADAPTOR SIGNATURE](#adaptor-signature) |     2 | [AOPP](#aopp)               |    16 |
-| [ADDR](#addr)               |     3 | [API](#api)                 |    17 |
-| [ADDR.DAT](#addr.dat)       |     4 | [ARBRE DE MERKLE](#arbre-de-merkle) |    18 |
-| [ADDRV2](#addrv2)           |     5 | [ARK](#ark)                 |    19 |
-| [ADRESSE DE RÉCEPTION](#adresse-de-réception) |     6 | [ASIC](#asic)               |    20 |
-| [AJUSTEMENT DE LA DIFFICULTÉ](#ajustement-de-la-difficulté) |     7 | [ASMAP](#asmap)             |    21 |
-| [ALGORITHME](#algorithme)   |     8 | [ASSUME UTXO](#assume-utxo) |    22 |
-| [ANALYSE DE CHAINE](#analyse-de-chaine) |     9 | [ASSUME VALID](#assume-valid) |    23 |
+| [ACINQ](#acinq)                |     1 | [ANYPREVOUT (APO)](#anyprevout-apo) |    15 |
+| [ADAPTOR SIGNATURE](#adaptor-signature) |     2 | [AOPP](#aopp)                  |    16 |
+| [ADDR](#addr)                  |     3 | [API](#api)                    |    17 |
+| [ADDR.DAT](#addr.dat)          |     4 | [ARBRE DE MERKLE](#arbre-de-merkle) |    18 |
+| [ADDRV2](#addrv2)              |     5 | [ARK](#ark)                    |    19 |
+| [ADRESSE DE RÉCEPTION](#adresse-de-réception) |     6 | [ASIC](#asic)                  |    20 |
+| [AJUSTEMENT DE LA DIFFICULTÉ](#ajustement-de-la-difficulté) |     7 | [ASMAP](#asmap)                |    21 |
+| [ALGORITHME](#algorithme)      |     8 | [ASSUME UTXO](#assume-utxo)    |    22 |
+| [ANALYSE DE CHAINE](#analyse-de-chaine) |     9 | [ASSUME VALID](#assume-valid)  |    23 |
 | [ANCESTOR MINING](#ancestor-mining) |    10 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    24 |
-| [ANCHOR OUTPUTS](#anchor-outputs) |    11 | [ATLC](#atlc)               |    25 |
-| [ANCHORS.DAT](#anchors.dat) |    12 | [ATOMIC SWAP](#atomic-swap) |    26 |
+| [ANCHOR OUTPUTS](#anchor-outputs) |    11 | [ATLC](#atlc)                  |    25 |
+| [ANCHORS.DAT](#anchors.dat)    |    12 | [ATOMIC SWAP](#atomic-swap)    |    26 |
 | [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    13 | [ATTAQUE DES 51%](#attaque-des-51) |    27 |
-| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    14 |                             |       |
+| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    14 |                                |       |
 
 ## B
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [BANLIST.DAT](#banlist.dat) |     1 | [BIP137](#bip137)           |    61 |
-| [BANLIST.JSON](#banlist.json) |     2 | [BIP141](#bip141)           |    62 |
-| [BARE-MULTISIG](#bare-multisig) |     3 | [BIP143](#bip143)           |    63 |
-| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |     4 | [BIP144](#bip144)           |    64 |
-| [BASE58CHECK](#base58check) |     5 | [BIP145](#bip145)           |    65 |
-| [BATCHED SPENDING](#batched-spending) |     6 | [BIP147](#bip147)           |    66 |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |     7 | [BIP148](#bip148)           |    67 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |     8 | [BIP149](#bip149)           |    68 |
-| [BERKELEYDB](#berkeleydb)   |     9 | [BIP150](#bip150)           |    69 |
-| [BIG-ENDIAN](#big-endian)   |    10 | [BIP151](#bip151)           |    70 |
-| [BIP](#bip)                 |    11 | [BIP152](#bip152)           |    71 |
-| [BIP1](#bip1)               |    12 | [BIP155](#bip155)           |    72 |
-| [BIP2](#bip2)               |    13 | [BIP156](#bip156)           |    73 |
-| [BIP8](#bip8)               |    14 | [BIP173](#bip173)           |    74 |
-| [BIP9](#bip9)               |    15 | [BIP322](#bip322)           |    75 |
-| [BIP10](#bip10)             |    16 | [BIP324](#bip324)           |    76 |
-| [BIP11](#bip11)             |    17 | [BIP326](#bip326)           |    77 |
-| [BIP12](#bip12)             |    18 | [BIT](#bit)                 |    78 |
-| [BIP13](#bip13)             |    19 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    79 |
-| [BIP14](#bip14)             |    20 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    80 |
-| [BIP16](#bip16)             |    21 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    81 |
-| [BIP17](#bip17)             |    22 | [BITCOIN-CLI](#bitcoin-cli) |    82 |
-| [BIP21](#bip21)             |    23 | [BITCOIN.CONF](#bitcoin.conf) |    83 |
-| [BIP22](#bip22)             |    24 | [BITCOIN CORE](#bitcoin-core) |    84 |
-| [BIP23](#bip23)             |    25 | [BITCOIND](#bitcoind)       |    85 |
-| [BIP30](#bip30)             |    26 | [BITCOIND.PID](#bitcoind.pid) |    86 |
-| [BIP31](#bip31)             |    27 | [BITCOIN FOG](#bitcoin-fog) |    87 |
-| [BIP32](#bip32)             |    28 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    88 |
-| [BIP34](#bip34)             |    29 | [BITCOIN KNOTS](#bitcoin-knots) |    89 |
-| [BIP35](#bip35)             |    30 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    90 |
-| [BIP37](#bip37)             |    31 | [BITCOIN JESUS](#bitcoin-jesus) |    91 |
-| [BIP38](#bip38)             |    32 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    92 |
-| [BIP39](#bip39)             |    33 | [BITCOIN QT](#bitcoin-qt)   |    93 |
-| [BIP42](#bip42)             |    34 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    94 |
-| [BIP43](#bip43)             |    35 | [BITCOINTALK](#bitcointalk) |    95 |
-| [BIP44](#bip44)             |    36 | [BIT GOLD](#bit-gold)       |    96 |
-| [BIP47](#bip47)             |    37 | [BITVM](#bitvm)             |    97 |
-| [BIP49](#bip49)             |    38 | [BLK????.DAT](#blk.dat)     |    98 |
-| [BIP50](#bip50)             |    39 | [BLKINDEX.DAT](#blkindex.dat) |    99 |
-| [BIP61](#bip61)             |    40 | [BLKTREE/](#blktree)        |   100 |
-| [BIP65](#bip65)             |    41 | [BLOC](#bloc)               |   101 |
-| [BIP66](#bip66)             |    42 | [BLOC CANDIDAT](#bloc-candidat) |   102 |
-| [BIP68](#bip68)             |    43 | [BLOCKCHAIN](#blockchain)   |   103 |
-| [BIP70](#bip70)             |    44 | [BLOCKS INDEX](#blocks-index) |   104 |
-| [BIP71](#bip71)             |    45 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |   105 |
-| [BIP72](#bip72)             |    46 | [BLOCKS/INDEX/](#blocksindex) |   106 |
-| [BIP75](#bip75)             |    47 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |   107 |
-| [BIP78](#bip78)             |    48 | [BLOCKSIGNERS](#blocksigners) |   108 |
-| [BIP84](#bip84)             |    49 | [BLOCKSTREAM](#blockstream) |   109 |
-| [BIP85](#bip85)             |    50 | [BLOCK TEMPLATE](#block-template) |   110 |
-| [BIP86](#bip86)             |    51 | [BLOCK WITHHOLDING](#block-withholding) |   111 |
-| [BIP90](#bip90)             |    52 | [BLOOM FILTER](#bloom-filter) |   112 |
-| [BIP91](#bip91)             |    53 | [B-MONEY](#b-money)         |   113 |
-| [BIP111](#bip111)           |    54 | [BOLT](#bolt)               |   114 |
-| [BIP112](#bip112)           |    55 | [BOUTISME](#boutisme)       |   115 |
-| [BIP113](#bip113)           |    56 | [BRANCH-AND-BOUND](#branch-and-bound) |   116 |
-| [BIP118](#bip118)           |    57 | [BRANCHE](#branche)         |   117 |
-| [BIP119](#bip119)           |    58 | [BRC-20](#brc-20)           |   118 |
-| [BIP123](#bip123)           |    59 | [BTC](#btc)                 |   119 |
-| [BIP125](#bip125)           |    60 | [BTCPAY SERVER](#btcpay-server) |   120 |
+| [BANLIST.DAT](#banlist.dat)    |     1 | [BIP137](#bip137)              |    61 |
+| [BANLIST.JSON](#banlist.json)  |     2 | [BIP141](#bip141)              |    62 |
+| [BARE-MULTISIG](#bare-multisig) |     3 | [BIP143](#bip143)              |    63 |
+| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |     4 | [BIP144](#bip144)              |    64 |
+| [BASE58CHECK](#base58check)    |     5 | [BIP145](#bip145)              |    65 |
+| [BATCHED SPENDING](#batched-spending) |     6 | [BIP147](#bip147)              |    66 |
+| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |     7 | [BIP148](#bip148)              |    67 |
+| [BECH32 ET BECH32M](#bech32-et-bech32m) |     8 | [BIP149](#bip149)              |    68 |
+| [BERKELEYDB](#berkeleydb)      |     9 | [BIP150](#bip150)              |    69 |
+| [BIG-ENDIAN](#big-endian)      |    10 | [BIP151](#bip151)              |    70 |
+| [BIP](#bip)                    |    11 | [BIP152](#bip152)              |    71 |
+| [BIP1](#bip1)                  |    12 | [BIP155](#bip155)              |    72 |
+| [BIP2](#bip2)                  |    13 | [BIP156](#bip156)              |    73 |
+| [BIP8](#bip8)                  |    14 | [BIP173](#bip173)              |    74 |
+| [BIP9](#bip9)                  |    15 | [BIP322](#bip322)              |    75 |
+| [BIP10](#bip10)                |    16 | [BIP324](#bip324)              |    76 |
+| [BIP11](#bip11)                |    17 | [BIP326](#bip326)              |    77 |
+| [BIP12](#bip12)                |    18 | [BIT](#bit)                    |    78 |
+| [BIP13](#bip13)                |    19 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    79 |
+| [BIP14](#bip14)                |    20 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    80 |
+| [BIP16](#bip16)                |    21 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    81 |
+| [BIP17](#bip17)                |    22 | [BITCOIN-CLI](#bitcoin-cli)    |    82 |
+| [BIP21](#bip21)                |    23 | [BITCOIN.CONF](#bitcoin.conf)  |    83 |
+| [BIP22](#bip22)                |    24 | [BITCOIN CORE](#bitcoin-core)  |    84 |
+| [BIP23](#bip23)                |    25 | [BITCOIND](#bitcoind)          |    85 |
+| [BIP30](#bip30)                |    26 | [BITCOIND.PID](#bitcoind.pid)  |    86 |
+| [BIP31](#bip31)                |    27 | [BITCOIN FOG](#bitcoin-fog)    |    87 |
+| [BIP32](#bip32)                |    28 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    88 |
+| [BIP34](#bip34)                |    29 | [BITCOIN KNOTS](#bitcoin-knots) |    89 |
+| [BIP35](#bip35)                |    30 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    90 |
+| [BIP37](#bip37)                |    31 | [BITCOIN JESUS](#bitcoin-jesus) |    91 |
+| [BIP38](#bip38)                |    32 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    92 |
+| [BIP39](#bip39)                |    33 | [BITCOIN QT](#bitcoin-qt)      |    93 |
+| [BIP42](#bip42)                |    34 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    94 |
+| [BIP43](#bip43)                |    35 | [BITCOINTALK](#bitcointalk)    |    95 |
+| [BIP44](#bip44)                |    36 | [BIT GOLD](#bit-gold)          |    96 |
+| [BIP47](#bip47)                |    37 | [BITVM](#bitvm)                |    97 |
+| [BIP49](#bip49)                |    38 | [BLK????.DAT](#blk.dat)        |    98 |
+| [BIP50](#bip50)                |    39 | [BLKINDEX.DAT](#blkindex.dat)  |    99 |
+| [BIP61](#bip61)                |    40 | [BLKTREE/](#blktree)           |   100 |
+| [BIP65](#bip65)                |    41 | [BLOC](#bloc)                  |   101 |
+| [BIP66](#bip66)                |    42 | [BLOC CANDIDAT](#bloc-candidat) |   102 |
+| [BIP68](#bip68)                |    43 | [BLOCKCHAIN](#blockchain)      |   103 |
+| [BIP70](#bip70)                |    44 | [BLOCKS INDEX](#blocks-index)  |   104 |
+| [BIP71](#bip71)                |    45 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |   105 |
+| [BIP72](#bip72)                |    46 | [BLOCKS/INDEX/](#blocksindex)  |   106 |
+| [BIP75](#bip75)                |    47 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |   107 |
+| [BIP78](#bip78)                |    48 | [BLOCKSIGNERS](#blocksigners)  |   108 |
+| [BIP84](#bip84)                |    49 | [BLOCKSTREAM](#blockstream)    |   109 |
+| [BIP85](#bip85)                |    50 | [BLOCK TEMPLATE](#block-template) |   110 |
+| [BIP86](#bip86)                |    51 | [BLOCK WITHHOLDING](#block-withholding) |   111 |
+| [BIP90](#bip90)                |    52 | [BLOOM FILTER](#bloom-filter)  |   112 |
+| [BIP91](#bip91)                |    53 | [B-MONEY](#b-money)            |   113 |
+| [BIP111](#bip111)              |    54 | [BOLT](#bolt)                  |   114 |
+| [BIP112](#bip112)              |    55 | [BOUTISME](#boutisme)          |   115 |
+| [BIP113](#bip113)              |    56 | [BRANCH-AND-BOUND](#branch-and-bound) |   116 |
+| [BIP118](#bip118)              |    57 | [BRANCHE](#branche)            |   117 |
+| [BIP119](#bip119)              |    58 | [BRC-20](#brc-20)              |   118 |
+| [BIP123](#bip123)              |    59 | [BTC](#btc)                    |   119 |
+| [BIP125](#bip125)              |    60 | [BTCPAY SERVER](#btcpay-server) |   120 |
 
 ## C
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [C](#c)                     |     1 | [COINS/](#coins)            |    29 |
-| [C# (C SHARP)](#c-c-sharp)  |     2 | [COINSHUFFLE](#coinshuffle) |    30 |
-| [C++](#c)                   |     3 | [COLD WALLET](#cold-wallet) |    31 |
-| [CAHOOTS](#cahoots)         |     4 | [COMMERÇANT](#commerçant)   |    32 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |     5 | [COMMIT](#commit)           |    33 |
+| [C](#c)                        |     1 | [COINS/](#coins)               |    29 |
+| [C# (C SHARP)](#c-c-sharp)     |     2 | [COINSHUFFLE](#coinshuffle)    |    30 |
+| [C++](#c)                      |     3 | [COLD WALLET](#cold-wallet)    |    31 |
+| [CAHOOTS](#cahoots)            |     4 | [COMMERÇANT](#commerçant)      |    32 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |     5 | [COMMIT](#commit)              |    33 |
 | [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |     6 | [COMPACT BLOCK RELAY](#compact-block-relay) |    34 |
-| [CASHU](#cashu)             |     7 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    35 |
-| [CET](#cet)                 |     8 | [CONCATÉNATION](#concaténation) |    36 |
+| [CASHU](#cashu)                |     7 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    35 |
+| [CET](#cet)                    |     8 | [CONCATÉNATION](#concaténation) |    36 |
 | [CHANNEL FACTORIES](#channel-factories) |     9 | [CONDENSAT (HASH)](#condensat-hash) |    37 |
-| [CHAINSTATE/](#chainstate)  |    10 | [CONFIRMATION](#confirmation) |    38 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    11 | [CONSENSUS](#consensus)     |    39 |
+| [CHAINSTATE/](#chainstate)     |    10 | [CONFIRMATION](#confirmation)  |    38 |
+| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    11 | [CONSENSUS](#consensus)        |    39 |
 | [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    12 | [CONSOLIDATION](#consolidation) |    40 |
 | [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    13 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    41 |
 | [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    14 | [COOKIE (.COOKIE)](#cookie-.cookie) |    42 |
-| [CIOH](#cioh)               |    15 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    43 |
-| [CLÉ ÉTENDUE](#clé-étendue) |    16 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    44 |
-| [CLÉ PRIVÉE](#clé-privée)   |    17 | [COVENANT](#covenant)       |    45 |
-| [CLÉ PUBLIQUE](#clé-publique) |    18 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    46 |
-| [CLI](#cli)                 |    19 | [CPPSRB](#cppsrb)           |    47 |
+| [CIOH](#cioh)                  |    15 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    43 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    16 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    44 |
+| [CLÉ PRIVÉE](#clé-privée)      |    17 | [COVENANT](#covenant)          |    45 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    18 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    46 |
+| [CLI](#cli)                    |    19 | [CPPSRB](#cppsrb)              |    47 |
 | [C-LIGHTNING (CLN)](#c-lightning-cln) |    20 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    48 |
-| [CLONE](#clone)             |    21 | [CRYPTANALYSE](#cryptanalyse) |    49 |
-| [CODE DE CHAÎNE](#code-de-chaîne) |    22 | [CRYPTER](#crypter)         |    50 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    23 | [CRYPTO-ACTIF](#crypto-actif) |    51 |
+| [CLONE](#clone)                |    21 | [CRYPTANALYSE](#cryptanalyse)  |    49 |
+| [CODE DE CHAÎNE](#code-de-chaîne) |    22 | [CRYPTER](#crypter)            |    50 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    23 | [CRYPTO-ACTIF](#crypto-actif)  |    51 |
 | [COINBASE (TRANSACTION)](#coinbase-transaction) |    24 | [CRYPTOGRAPHIE](#cryptographie) |    52 |
-| [COIN CONTROL](#coin-control) |    25 | [CRYPTOLOGIE](#cryptologie) |    53 |
-| [COINJOIN](#coinjoin)       |    26 | [CRYPTOMONNAIE](#cryptomonnaie) |    54 |
-| [COINJUMBLE](#coinjumble)   |    27 | [CYPHERPUNK](#cypherpunk)   |    55 |
-| [COINMUX](#coinmux)         |    28 |                             |       |
+| [COIN CONTROL](#coin-control)  |    25 | [CRYPTOLOGIE](#cryptologie)    |    53 |
+| [COINJOIN](#coinjoin)          |    26 | [CRYPTOMONNAIE](#cryptomonnaie) |    54 |
+| [COINJUMBLE](#coinjumble)      |    27 | [CYPHERPUNK](#cypherpunk)      |    55 |
+| [COINMUX](#coinmux)            |    28 |                                |       |
 
 ## D
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [DANDELION](#dandelion)     |     1 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |    12 |
-| [DARKWALLET](#darkwallet)   |     2 | [DNS SEEDS](#dns-seeds)     |    13 |
-| [DATABASE/](#database)      |     3 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |    14 |
-| [DB.LOG](#db.log)           |     4 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |    15 |
-| [DDOS](#ddos)               |     5 | [DRIVECHAIN](#drivechain)   |    16 |
-| [DEBUG.LOG](#debug.log)     |     6 | [DUMMY ELEMENT](#dummy-element) |    17 |
-| [DÉPÔT](#dépôt)             |     7 | [DUST](#dust)               |    18 |
-| [DGM](#dgm)                 |     8 | [DUSTING ATTACK](#dusting-attack) |    19 |
-| [DIFFIE-HELLMAN](#diffie-hellman) |     9 | [DUST LIMIT](#dust-limit)   |    20 |
-| [DISTRIBUÉ](#distribué)     |    10 | [DUSTRELAYFEE](#dustrelayfee) |    21 |
-| [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    11 |                             |       |
+| [DANDELION](#dandelion)        |     1 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |    12 |
+| [DARKWALLET](#darkwallet)      |     2 | [DNS SEEDS](#dns-seeds)        |    13 |
+| [DATABASE/](#database)         |     3 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |    14 |
+| [DB.LOG](#db.log)              |     4 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |    15 |
+| [DDOS](#ddos)                  |     5 | [DRIVECHAIN](#drivechain)      |    16 |
+| [DEBUG.LOG](#debug.log)        |     6 | [DUMMY ELEMENT](#dummy-element) |    17 |
+| [DÉPÔT](#dépôt)                |     7 | [DUST](#dust)                  |    18 |
+| [DGM](#dgm)                    |     8 | [DUSTING ATTACK](#dusting-attack) |    19 |
+| [DIFFIE-HELLMAN](#diffie-hellman) |     9 | [DUST LIMIT](#dust-limit)      |    20 |
+| [DISTRIBUÉ](#distribué)        |    10 | [DUSTRELAYFEE](#dustrelayfee)  |    21 |
+| [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    11 |                                |       |
 
 ## E
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [ECASH (DAVID CHAUM)](#ecash-david-chaum) |     1 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |    10 |
-| [ECASH (XEC)](#ecash-xec)   |     2 | [ENDIANNESS](#endianness)   |    11 |
-| [ECDH](#ecdh)               |     3 | [ENTÊTE DE BLOC](#entête-de-bloc) |    12 |
-| [ECDSA](#ecdsa)             |     4 | [ENTRÉE (INPUT)](#entrée-input) |    13 |
-| [ECLAIR](#eclair)           |     5 | [ENTROPIE](#entropie)       |    14 |
+| [ECASH (XEC)](#ecash-xec)      |     2 | [ENDIANNESS](#endianness)      |    11 |
+| [ECDH](#ecdh)                  |     3 | [ENTÊTE DE BLOC](#entête-de-bloc) |    12 |
+| [ECDSA](#ecdsa)                |     4 | [ENTRÉE (INPUT)](#entrée-input) |    13 |
+| [ECLAIR](#eclair)              |     5 | [ENTROPIE](#entropie)          |    14 |
 | [ECLIPSE (ATTAQUE)](#eclipse-attaque) |     6 | [EREBUS (ATTAQUE)](#erebus-attaque) |    15 |
-| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |     7 | [ESMPPS](#esmpps)           |    16 |
-| [ELECTRUM LIGHTNING](#electrum-lightning) |     8 | [ÉTIQUETAGE](#étiquetage)   |    17 |
-| [ELTOO](#eltoo)             |     9 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |    18 |
+| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |     7 | [ESMPPS](#esmpps)              |    16 |
+| [ELECTRUM LIGHTNING](#electrum-lightning) |     8 | [ÉTIQUETAGE](#étiquetage)      |    17 |
+| [ELTOO](#eltoo)                |     9 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |    18 |
 
 ## F
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [FARADAY](#faraday)         |     1 | [FONCTIONNAIRE](#fonctionnaire) |    10 |
-| [FEDIMINT](#fedimint)       |     2 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |    11 |
-| [FEE SNIPING](#fee-sniping) |     3 | [FORCED ADDRESS REUSE](#forced-address-reuse) |    12 |
-| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |     4 | [FORK](#fork)               |    13 |
-| [FERME DE MINAGE](#ferme-de-minage) |     5 | [FORK (GIT)](#fork-git)     |    14 |
-| [FIAT](#fiat)               |     6 | [FORTH](#forth)             |    15 |
-| [FIBRE](#fibre)             |     7 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |    16 |
-| [FLAG DAY](#flag-day)       |     8 | [FRAIS DE TRANSACTION](#frais-de-transaction) |    17 |
-| [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique) |     9 |                             |       |
+| [FARADAY](#faraday)            |     1 | [FONCTIONNAIRE](#fonctionnaire) |    10 |
+| [FEDIMINT](#fedimint)          |     2 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |    11 |
+| [FEE SNIPING](#fee-sniping)    |     3 | [FORCED ADDRESS REUSE](#forced-address-reuse) |    12 |
+| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |     4 | [FORK](#fork)                  |    13 |
+| [FERME DE MINAGE](#ferme-de-minage) |     5 | [FORK (GIT)](#fork-git)        |    14 |
+| [FIAT](#fiat)                  |     6 | [FORTH](#forth)                |    15 |
+| [FIBRE](#fibre)                |     7 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |    16 |
+| [FLAG DAY](#flag-day)          |     8 | [FRAIS DE TRANSACTION](#frais-de-transaction) |    17 |
+| [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique) |     9 |                                |       |
 
 ## G
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [GAP LIMIT](#gap-limit)     |     1 | [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |     6 |
-| [GENÈSE (BLOC)](#genèse-bloc) |     2 | [GOSSIP](#gossip)           |     7 |
-| [GETWORK](#getwork)         |     3 | [GRAINE (SEED)](#graine-seed) |     8 |
-| [GIT](#git)                 |     4 | [GUI](#gui)                 |     9 |
-| [GO (GOLANG)](#go-golang)   |     5 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |    10 |
+| [GAP LIMIT](#gap-limit)        |     1 | [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |     6 |
+| [GENÈSE (BLOC)](#genèse-bloc)  |     2 | [GOSSIP](#gossip)              |     7 |
+| [GETWORK](#getwork)            |     3 | [GRAINE (SEED)](#graine-seed)  |     8 |
+| [GIT](#git)                    |     4 | [GUI](#gui)                    |     9 |
+| [GO (GOLANG)](#go-golang)      |     5 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |    10 |
 
 ## H
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [HAL FINNEY](#hal-finney)   |     1 | [HASHRATE](#hashrate)       |     6 |
-| [HALVING](#halving)         |     2 | [HMAC-SHA512](#hmac-sha512) |     7 |
-| [HARD FORK](#hard-fork)     |     3 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |     8 |
-| [HARDWARE WALLET](#hardware-wallet) |     4 | [HWI](#hwi)                 |     9 |
-| [HASHCASH](#hashcash)       |     5 |                             |       |
+| [HAL FINNEY](#hal-finney)      |     1 | [HASHRATE](#hashrate)          |     6 |
+| [HALVING](#halving)            |     2 | [HMAC-SHA512](#hmac-sha512)    |     7 |
+| [HARD FORK](#hard-fork)        |     3 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |     8 |
+| [HARDWARE WALLET](#hardware-wallet) |     4 | [HWI](#hwi)                    |     9 |
+| [HASHCASH](#hashcash)          |     5 |                                |       |
 
 ## I
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [INBOUND CAPACITY](#inbound-capacity) |     1 | [INPUT](#input)             |     5 |
-| [INDEXES/TXINDEX/](#indexestxindex) |     2 | [IP_ASN.MAP](#ip_asn.map)   |     6 |
-| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |     3 | [ISSUE](#issue)             |     7 |
-| [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |     4 |                             |       |
+| [INBOUND CAPACITY](#inbound-capacity) |     1 | [INPUT](#input)                |     5 |
+| [INDEXES/TXINDEX/](#indexestxindex) |     2 | [IP_ASN.MAP](#ip_asn.map)      |     6 |
+| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |     3 | [ISSUE](#issue)                |     7 |
+| [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |     4 |                                |       |
 
 ## J
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [JAVA](#java)               |     1 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |     3 |
-| [JAVASCRIPT (NODE.JS)](#javascript-node.js) |     2 |                             |       |
+| [JAVA](#java)                  |     1 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |     3 |
+| [JAVASCRIPT (NODE.JS)](#javascript-node.js) |     2 |                                |       |
 
 ## K
 
@@ -207,42 +207,42 @@
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [LABEL](#label)             |     1 | [LIQUID NETWORK](#liquid-network) |     7 |
-| [LCB/FT](#lcbft)            |     2 | [LITTLE-ENDIAN](#little-endian) |     8 |
-| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |     3 | [LND](#lnd)                 |     9 |
-| [LEVELDB](#leveldb)         |     4 | [LOCK (.LOCK)](#lock-.lock) |    10 |
+| [LABEL](#label)                |     1 | [LIQUID NETWORK](#liquid-network) |     7 |
+| [LCB/FT](#lcbft)               |     2 | [LITTLE-ENDIAN](#little-endian) |     8 |
+| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |     3 | [LND](#lnd)                    |     9 |
+| [LEVELDB](#leveldb)            |     4 | [LOCK (.LOCK)](#lock-.lock)    |    10 |
 | [LIGHTNING LABS](#lightning-labs) |     5 | [LOGARITHME DISCRET (PROBLÈME)](#logarithme-discret-problème) |    11 |
-| [LIGHTNING NETWORK](#lightning-network) |     6 | [LOOP](#loop)               |    12 |
+| [LIGHTNING NETWORK](#lightning-network) |     6 | [LOOP](#loop)                  |    12 |
 
 ## M
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [MAGICAL BITCOIN](#magical-bitcoin) |     1 | [MERKLE BLOCK](#merkle-block) |    14 |
+| [MAGICAL BITCOIN](#magical-bitcoin) |     1 | [MERKLE BLOCK](#merkle-block)  |    14 |
 | [MAGIC NETWORK](#magic-network) |     2 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |    15 |
 | [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |     3 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |    16 |
-| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |     4 | [MINAGE](#minage)           |    17 |
+| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |     4 | [MINAGE](#minage)              |    17 |
 | [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |     5 | [MINAGE ÉGOÏSTE](#minage-égoïste) |    18 |
 | [MAPPER (TO MAP)](#mapper-to-map) |     6 | [MINAGE FUSIONNÉ](#minage-fusionné) |    19 |
-| [MASF](#masf)               |     7 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |    20 |
-| [MAST](#mast)               |     8 | [MINEUR](#mineur)           |    21 |
-| [MASTER FINGERPRINT](#master-fingerprint) |     9 | [MINISCRIPT](#miniscript)   |    22 |
+| [MASF](#masf)                  |     7 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |    20 |
+| [MAST](#mast)                  |     8 | [MINEUR](#mineur)              |    21 |
+| [MASTER FINGERPRINT](#master-fingerprint) |     9 | [MINISCRIPT](#miniscript)      |    22 |
 | [MAX_BLOC_SIZE](#max_bloc_size) |    10 | [MINITAPSCRIPT](#minitapscript) |    23 |
-| [MEMPOOL](#mempool)         |    11 | [MODÈLE DE SCRIPT](#modèle-de-script) |    24 |
-| [MEMPOOL.DAT](#mempool.dat) |    12 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |    25 |
-| [MERGE](#merge)             |    13 |                             |       |
+| [MEMPOOL](#mempool)            |    11 | [MODÈLE DE SCRIPT](#modèle-de-script) |    24 |
+| [MEMPOOL.DAT](#mempool.dat)    |    12 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |    25 |
+| [MERGE](#merge)                |    13 |                                |       |
 
 ## N
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [NESTED SEGWIT](#nested-segwit) |     1 | [NŒUD SPV (OU NŒUD LÉGER)](#nœud-spv-ou-nœud-léger) |     8 |
-| [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |     2 | [NONCE](#nonce)             |     9 |
-| [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |     3 | [NSEQUENCE](#nsequence)     |    10 |
-| [NLOCKTIME](#nlocktime)     |     4 | [NULL DATA](#null-data)     |    11 |
-| [NŒUD](#nœud)               |     5 | [NULLDUMMY](#nulldummy)     |    12 |
-| [NŒUD COMPLET](#nœud-complet) |     6 | [NVERSION](#nversion)       |    13 |
-| [NŒUD ÉLAGUÉ](#nœud-élagué) |     7 |                             |       |
+| [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |     2 | [NONCE](#nonce)                |     9 |
+| [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |     3 | [NSEQUENCE](#nsequence)        |    10 |
+| [NLOCKTIME](#nlocktime)        |     4 | [NULL DATA](#null-data)        |    11 |
+| [NŒUD](#nœud)                  |     5 | [NULLDUMMY](#nulldummy)        |    12 |
+| [NŒUD COMPLET](#nœud-complet)  |     6 | [NVERSION](#nversion)          |    13 |
+| [NŒUD ÉLAGUÉ](#nœud-élagué)    |     7 |                                |       |
 
 ## O
 
@@ -250,14 +250,14 @@
 |:---------------------------|:--|:---------------------------|:--|
 | [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |     1 | [OP_GREATERTHANOREQUAL (`0XA2`)](#op_greaterthanorequal-0xa2) |    46 |
 | [OBSOLÈTE (BLOC)](#obsolète-bloc) |     2 | [OP_HASH160 (`0XA9`)](#op_hash160-0xa9) |    47 |
-| [OCTET (BYTE)](#octet-byte) |     3 | [OP_HASH256 (`0XAA`)](#op_hash256-0xaa) |    48 |
-| [OFFCHAIN](#offchain)       |     4 | [OP_IF (`0X63`)](#op_if-0x63) |    49 |
-| [ONCHAIN](#onchain)         |     5 | [OP_IFDUP (`0x73`)](#op_ifdup-0x73) |    50 |
+| [OCTET (BYTE)](#octet-byte)    |     3 | [OP_HASH256 (`0XAA`)](#op_hash256-0xaa) |    48 |
+| [OFFCHAIN](#offchain)          |     4 | [OP_IF (`0X63`)](#op_if-0x63)  |    49 |
+| [ONCHAIN](#onchain)            |     5 | [OP_IFDUP (`0x73`)](#op_ifdup-0x73) |    50 |
 | [ONION_PRIVATE_KEY](#onion_private_key) |     6 | [OP_LESSTHAN (`0X9F`)](#op_lessthan-0x9f) |    51 |
 | [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |     7 | [OP_LESSTHANOREQUAL (`0XA1`)](#op_lessthanorequal-0xa1) |    52 |
-| [OP_0 (`0X00`)](#op_0-0x00) |     8 | [OP_MAX (`0XA4`)](#op_max-0xa4) |    53 |
+| [OP_0 (`0X00`)](#op_0-0x00)    |     8 | [OP_MAX (`0XA4`)](#op_max-0xa4) |    53 |
 | [OP_0NOTEQUAL (`0X92`)](#op_0notequal-0x92) |     9 | [OP_MIN (`0XA3`)](#op_min-0xa3) |    54 |
-| [OP_1 (`0X51`)](#op_1-0x51) |    10 | [OP_NEGATE (`0X8F`)](#op_negate-0x8f) |    55 |
+| [OP_1 (`0X51`)](#op_1-0x51)    |    10 | [OP_NEGATE (`0X8F`)](#op_negate-0x8f) |    55 |
 | [OP_1ADD (`0X8B`)](#op_1add-0x8b) |    11 | [OP_NIP (`0x77`)](#op_nip-0x77) |    56 |
 | [OP_1NEGATE (`0X4F`)](#op_1negate-0x4f) |    12 | [OP_NOP (`0X61`)](#op_nop-0x61) |    57 |
 | [OP_1SUB (`0X8C`)](#op_1sub-0x8c) |    13 | [OP_NOT (`0X91`)](#op_not-0x91) |    58 |
@@ -278,7 +278,7 @@
 | [OP_CHECKMULTISIG (`0XAE`)](#op_checkmultisig-0xae) |    28 | [OP_SHA256 (`0XA8`)](#op_sha256-0xa8) |    73 |
 | [OP_CHECKMULTISIGVERIFY (`0XAF`)](#op_checkmultisigverify-0xaf) |    29 | [OP_SIZE (`0X82`)](#op_size-0x82) |    74 |
 | [OP_CHECKSEQUENCEVERIFY (`0XB2`)](#op_checksequenceverify-0xb2) |    30 | [OP_SUB (`0X94`)](#op_sub-0x94) |    75 |
-| [OP_CHECKSIG (`0XAC`)](#op_checksig-0xac) |    31 | [OP_SUCCESS](#op_success)   |    76 |
+| [OP_CHECKSIG (`0XAC`)](#op_checksig-0xac) |    31 | [OP_SUCCESS](#op_success)      |    76 |
 | [OP_CHECKSIGADD (`0XBA`)](#op_checksigadd-0xba) |    32 | [OP_SWAP (`0X7C`)](#op_swap-0x7c) |    77 |
 | [OP_CHECKSIGVERIFY (`0XAD`)](#op_checksigverify-0xad) |    33 | [OP_TOALTSTACK (`0X6B`)](#op_toaltstack-0x6b) |    78 |
 | [OP_CODESEPARATOR (`0XAB`)](#op_codeseparator-0xab) |    34 | [OP_TRUE (`0X51`)](#op_true-0x51) |    79 |
@@ -286,45 +286,45 @@
 | [OP_DROP (`0X75`)](#op_drop-0x75) |    36 | [OP_VER (`0X62`)](#op_ver-0x62) |    81 |
 | [OP_DUP (`0X76`)](#op_dup-0x76) |    37 | [OP_VERIFY (`0X69`)](#op_verify-0x69) |    82 |
 | [OP_ELSE (`0X67`)](#op_else-0x67) |    38 | [OP_WITHIN (`0XA5`)](#op_within-0xa5) |    83 |
-| [OP_ENDIF (`0X68`)](#op_endif-0x68) |    39 | [OPCODES](#opcodes)         |    84 |
-| [OP_EQUAL (`0X87`)](#op_equal-0x87) |    40 | [ORACLE](#oracle)           |    85 |
+| [OP_ENDIF (`0X68`)](#op_endif-0x68) |    39 | [OPCODES](#opcodes)            |    84 |
+| [OP_EQUAL (`0X87`)](#op_equal-0x87) |    40 | [ORACLE](#oracle)              |    85 |
 | [OP_EQUALVERIFY (`0X88`)](#op_equalverify-0x88) |    41 | [ORPHELIN (BLOC)](#orphelin-bloc) |    86 |
-| [OP_EVAL](#op_eval)         |    42 | [OU EXCLUSIF](#ou-exclusif) |    87 |
+| [OP_EVAL](#op_eval)            |    42 | [OU EXCLUSIF](#ou-exclusif)    |    87 |
 | [OP_FALSE (`0X00`)](#op_false-0x00) |    43 | [OUTBOUND CAPACITY](#outbound-capacity) |    88 |
-| [OP_FROMALTSTACK (`0X6C`)](#op_fromaltstack-0x6c) |    44 | [OUTPUT](#output)           |    89 |
+| [OP_FROMALTSTACK (`0X6C`)](#op_fromaltstack-0x6c) |    44 | [OUTPUT](#output)              |    89 |
 | [OP_GREATERTHAN (`0XA0`)](#op_greaterthan-0xa0) |    45 | [OUTPUT LINKING](#output-linking) |    90 |
 
 ## P
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [P2PK](#p2pk)               |     1 | [PÉRIODE DE MATURITÉ](#période-de-maturité) |    22 |
-| [P2PKH](#p2pkh)             |     2 | [PETIT-BOUTISTE](#petit-boutiste) |    23 |
+| [P2PK](#p2pk)                  |     1 | [PÉRIODE DE MATURITÉ](#période-de-maturité) |    22 |
+| [P2PKH](#p2pkh)                |     2 | [PETIT-BOUTISTE](#petit-boutiste) |    23 |
 | [P2P TRANSPORT V2](#p2p-transport-v2) |     3 | [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](#phrase-de-récupération-mnémonique) |    24 |
-| [P2MS](#p2ms)               |     4 | [POOL](#pool)               |    25 |
-| [P2SH](#p2sh)               |     5 | [POOL DE MINAGE](#pool-de-minage) |    26 |
-| [P2SH-P2WPKH](#p2sh-p2wpkh) |     6 | [POOL HOPPING](#pool-hopping) |    27 |
-| [P2SH-P2WSH](#p2sh-p2wsh)   |     7 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |    28 |
-| [P2TR](#p2tr)               |     8 | [PORTEFEUILLE](#portefeuille) |    29 |
-| [P2WPKH](#p2wpkh)           |     9 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |    30 |
-| [P2WSH](#p2wsh)             |    10 | [PORTEFEUILLE FROID](#portefeuille-froid) |    31 |
+| [P2MS](#p2ms)                  |     4 | [POOL](#pool)                  |    25 |
+| [P2SH](#p2sh)                  |     5 | [POOL DE MINAGE](#pool-de-minage) |    26 |
+| [P2SH-P2WPKH](#p2sh-p2wpkh)    |     6 | [POOL HOPPING](#pool-hopping)  |    27 |
+| [P2SH-P2WSH](#p2sh-p2wsh)      |     7 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |    28 |
+| [P2TR](#p2tr)                  |     8 | [PORTEFEUILLE](#portefeuille)  |    29 |
+| [P2WPKH](#p2wpkh)              |     9 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |    30 |
+| [P2WSH](#p2wsh)                |    10 | [PORTEFEUILLE FROID](#portefeuille-froid) |    31 |
 | [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |    11 | [POT (PAY ON TARGET)](#pot-pay-on-target) |    32 |
-| [PAIR ENTRANT](#pair-entrant) |    12 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |    33 |
-| [PAIR SORTANT](#pair-sortant) |    13 | [PPLNSG](#pplnsg)           |    34 |
+| [PAIR ENTRANT](#pair-entrant)  |    12 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |    33 |
+| [PAIR SORTANT](#pair-sortant)  |    13 | [PPLNSG](#pplnsg)              |    34 |
 | [PASSPHRASE (BIP39)](#passphrase-bip39) |    14 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |    35 |
-| [PATOSHI](#patoshi)         |    15 | [PRÉFIXES BINAIRES](#préfixes-binaires) |    36 |
-| [PAYJOIN](#payjoin)         |    16 | [PREUVE DE TRAVAIL](#preuve-de-travail) |    37 |
-| [PAYNYM](#paynym)           |    17 | [PROOF-OF-WORK](#proof-of-work) |    38 |
-| [PBKDF2](#pbkdf2)           |    18 | [PROP (PROPORTIONAL)](#prop-proportional) |    39 |
+| [PATOSHI](#patoshi)            |    15 | [PRÉFIXES BINAIRES](#préfixes-binaires) |    36 |
+| [PAYJOIN](#payjoin)            |    16 | [PREUVE DE TRAVAIL](#preuve-de-travail) |    37 |
+| [PAYNYM](#paynym)              |    17 | [PROOF-OF-WORK](#proof-of-work) |    38 |
+| [PBKDF2](#pbkdf2)              |    18 | [PROP (PROPORTIONAL)](#prop-proportional) |    39 |
 | [PEER DISCOVERY](#peer-discovery) |    19 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |    40 |
-| [PEERS.DAT](#peers.dat)     |    20 | [PULL REQUEST](#pull-request) |    41 |
-| [PERCOLATION](#percolation) |    21 | [PYTHON](#python)           |    42 |
+| [PEERS.DAT](#peers.dat)        |    20 | [PULL REQUEST](#pull-request)  |    41 |
+| [PERCOLATION](#percolation)    |    21 | [PYTHON](#python)              |    42 |
 
 ## Q
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [QUBIT](#qubit)             |     1 |                             |       |
+| [QUBIT](#qubit)                |     1 |                                |       |
 
 ## R
 
@@ -332,116 +332,116 @@
 |:---------------------------|:--|:---------------------------|:--|
 | [RACINE DE MERKLE](#racine-de-merkle) |     1 | [RESYNCHRONISATION](#resynchronisation) |    11 |
 | [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |     2 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |    12 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |     3 | [RICOCHET](#ricochet)       |    13 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |     4 | [RIPEMD160](#ripemd160)     |    14 |
-| [REDEEMSCRIPT](#redeemscript) |     5 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |    15 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |     6 | [RPOW](#rpow)               |    16 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |     7 | [RSMPPS](#rsmpps)           |    17 |
-| [RÉORGANISATION](#réorganisation) |     8 | [RUST](#rust)               |    18 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |     3 | [RICOCHET](#ricochet)          |    13 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |     4 | [RIPEMD160](#ripemd160)        |    14 |
+| [REDEEMSCRIPT](#redeemscript)  |     5 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |    15 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |     6 | [RPOW](#rpow)                  |    16 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |     7 | [RSMPPS](#rsmpps)              |    17 |
+| [RÉORGANISATION](#réorganisation) |     8 | [RUST](#rust)                  |    18 |
 | [RÉSEAU BITCOIN](#réseau-bitcoin) |     9 | [RUST-LIGHTNING](#rust-lightning) |    19 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |    10 |                             |       |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |    10 |                                |       |
 
 ## S
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
 | [SAMOURAI WALLET](#samourai-wallet) |     1 | [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |    29 |
-| [SATOSHI (SAT)](#satoshi-sat) |     2 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |    30 |
-| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |     3 | [SIGHASH FLAG](#sighash-flag) |    31 |
-| [SCALA](#scala)             |     4 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |    32 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |     5 | [SIGHASH_NONE SIGHASH_ACP (0X82)](#sighash_none-sighash_acp-0x82) |    33 |
+| [SATOSHI (SAT)](#satoshi-sat)  |     2 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |    30 |
+| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |     3 | [SIGHASH FLAG](#sighash-flag)  |    31 |
+| [SCALA](#scala)                |     4 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |    32 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |     5 | [SIGHASH_NONE SIGHASH_ACP](#sighash_none-sighash_acp) |    33 |
 | [SCORE (SCORE BASED METHOD)](#score-score-based-method) |     6 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |    34 |
-| [SCRIPT](#script)           |     7 | [SIGHASH_SINGLE SIGHASH_ACP (0X83)](#sighash_single-sighash_acp-0x83) |    35 |
+| [SCRIPT](#script)              |     7 | [SIGHASH_SINGLE SIGHASH_ACP](#sighash_single-sighash_acp) |    35 |
 | [SCRIPTLESS SCRIPTS](#scriptless-scripts) |     8 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |    36 |
-| [SCRIPTPUBKEY](#scriptpubkey) |     9 | [SIGNET](#signet)           |    37 |
-| [SCRIPTSIG](#scriptsig)     |    10 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |    38 |
-| [SCRIPTWITNESS](#scriptwitness) |    11 | [SLIP](#slip)               |    39 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |    12 | [SMPPS](#smpps)             |    40 |
-| [SECP256K1](#secp256k1)     |    13 | [SOFT FORK](#soft-fork)     |    41 |
-| [SEED NODES](#seed-nodes)   |    14 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |    42 |
-| [SEGWIT](#segwit)           |    15 | [SOROBAN](#soroban)         |    43 |
-| [SEGWIT2X](#segwit2x)       |    16 | [SORTIE (OUTPUT)](#sortie-output) |    44 |
-| [SEGWIT V0](#segwit-v0)     |    17 | [SORTIE NON RENTABLE](#sortie-non-rentable) |    45 |
-| [SEGWIT V1](#segwit-v1)     |    18 | [SPEEDY TRIAL](#speedy-trial) |    46 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |    19 | [SPOF](#spof)               |    47 |
-| [SELF-CUSTODY](#self-custody) |    20 | [SPREAD (WST)](#spread-wst) |    48 |
-| [SELFISH MINING](#selfish-mining) |    21 | [STABLECOIN](#stablecoin)   |    49 |
-| [SHA256](#sha256)           |    22 | [STALE BLOCK](#stale-block) |    50 |
-| [SHA512](#sha512)           |    23 | [STONEWALL X2](#stonewall-x2) |    51 |
-| [SHAREDCOIN](#sharedcoin)   |    24 | [STRATUM](#stratum)         |    52 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |    25 | [STRATUM V2](#stratum-v2)   |    53 |
-| [SIDECHAIN](#sidechain)     |    26 | [SUBVENTION DE BLOC](#subvention-de-bloc) |    54 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |     9 | [SIGNET](#signet)              |    37 |
+| [SCRIPTSIG](#scriptsig)        |    10 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |    38 |
+| [SCRIPTWITNESS](#scriptwitness) |    11 | [SLIP](#slip)                  |    39 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |    12 | [SMPPS](#smpps)                |    40 |
+| [SECP256K1](#secp256k1)        |    13 | [SOFT FORK](#soft-fork)        |    41 |
+| [SEED NODES](#seed-nodes)      |    14 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |    42 |
+| [SEGWIT](#segwit)              |    15 | [SOROBAN](#soroban)            |    43 |
+| [SEGWIT2X](#segwit2x)          |    16 | [SORTIE (OUTPUT)](#sortie-output) |    44 |
+| [SEGWIT V0](#segwit-v0)        |    17 | [SORTIE NON RENTABLE](#sortie-non-rentable) |    45 |
+| [SEGWIT V1](#segwit-v1)        |    18 | [SPEEDY TRIAL](#speedy-trial)  |    46 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |    19 | [SPOF](#spof)                  |    47 |
+| [SELF-CUSTODY](#self-custody)  |    20 | [SPREAD (WST)](#spread-wst)    |    48 |
+| [SELFISH MINING](#selfish-mining) |    21 | [STABLECOIN](#stablecoin)      |    49 |
+| [SHA256](#sha256)              |    22 | [STALE BLOCK](#stale-block)    |    50 |
+| [SHA512](#sha512)              |    23 | [STONEWALL X2](#stonewall-x2)  |    51 |
+| [SHAREDCOIN](#sharedcoin)      |    24 | [STRATUM](#stratum)            |    52 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |    25 | [STRATUM V2](#stratum-v2)      |    53 |
+| [SIDECHAIN](#sidechain)        |    26 | [SUBVENTION DE BLOC](#subvention-de-bloc) |    54 |
 | [SIGHASH_ALL (0X01)](#sighash_all-0x01) |    27 | [SURCOUCHE (LAYER)](#surcouche-layer) |    55 |
-| [SIGHASH_ALL SIGHASH_ACP (0X81)](#sighash_all-sighash_acp-0x81) |    28 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |    56 |
+| [SIGHASH_ALL SIGHASH_ACP](#sighash_all-sighash_acp) |    28 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |    56 |
 
 ## T
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [TAPROOT](#taproot)         |     1 | [TIMELOCK](#timelock)       |    10 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |     2 | [TPRV](#tprv)               |    11 |
-| [TAPSCRIPT](#tapscript)     |     3 | [TPUB](#tpub)               |    12 |
-| [TARO](#taro)               |     4 | [TRANSACTION (TX)](#transaction-tx) |    13 |
+| [TAPROOT](#taproot)            |     1 | [TIMELOCK](#timelock)          |    10 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |     2 | [TPRV](#tprv)                  |    11 |
+| [TAPSCRIPT](#tapscript)        |     3 | [TPUB](#tpub)                  |    12 |
+| [TARO](#taro)                  |     4 | [TRANSACTION (TX)](#transaction-tx) |    13 |
 | [TAUX DE HACHAGE](#taux-de-hachage) |     5 | [TRANSACTION COINBASE](#transaction-coinbase) |    14 |
-| [TCP](#tcp)                 |     6 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |    15 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |     7 | [TUMBLEBIT](#tumblebit)     |    16 |
-| [TESTNET](#testnet)         |     8 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |    17 |
-| [TIDES](#tides)             |     9 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |    18 |
+| [TCP](#tcp)                    |     6 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |    15 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |     7 | [TUMBLEBIT](#tumblebit)        |    16 |
+| [TESTNET](#testnet)            |     8 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |    17 |
+| [TIDES](#tides)                |     9 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |    18 |
 
 ## U
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [UASF](#uasf)               |     1 | [URI](#uri)                 |     5 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |     2 | [UTXO](#utxo)               |     6 |
-| [UPRV](#uprv)               |     3 | [UTXO SET](#utxo-set)       |     7 |
-| [UPUB](#upub)               |     4 |                             |       |
+| [UASF](#uasf)                  |     1 | [URI](#uri)                    |     5 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |     2 | [UTXO](#utxo)                  |     6 |
+| [UPRV](#uprv)                  |     3 | [UTXO SET](#utxo-set)          |     7 |
+| [UPUB](#upub)                  |     4 |                                |       |
 
 ## V
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [VANITY (ADDRESS)](#vanity-address) |     1 | [VPRV](#vprv)               |     3 |
-| [VANITYGEN](#vanitygen)     |     2 | [VPUB](#vpub)               |     4 |
+| [VANITY (ADDRESS)](#vanity-address) |     1 | [VPRV](#vprv)                  |     3 |
+| [VANITYGEN](#vanitygen)        |     2 | [VPUB](#vpub)                  |     4 |
 
 ## W
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [WABISABI](#wabisabi)       |     1 | [WATCHMEN](#watchmen)       |     7 |
-| [WALLET](#wallet)           |     2 | [WATCH-ONLY WALLET](#watch-only-wallet) |     8 |
-| [WALLET.DAT](#wallet.dat)   |     3 | [WHIRLPOOL](#whirlpool)     |     9 |
+| [WABISABI](#wabisabi)          |     1 | [WATCHMEN](#watchmen)          |     7 |
+| [WALLET](#wallet)              |     2 | [WATCH-ONLY WALLET](#watch-only-wallet) |     8 |
+| [WALLET.DAT](#wallet.dat)      |     3 | [WHIRLPOOL](#whirlpool)        |     9 |
 | [WALLETS/DB.LOG](#walletsdb.log) |     4 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |    10 |
 | [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |     5 | [WITNESSSCRIPT](#witnessscript) |    11 |
-| [WASABI WALLET](#wasabi-wallet) |     6 | [WTXID](#wtxid)             |    12 |
+| [WASABI WALLET](#wasabi-wallet) |     6 | [WTXID](#wtxid)                |    12 |
 
 ## X
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [XOR](#xor)                 |     1 | [XPUB](#xpub)               |     3 |
-| [XPRV](#xprv)               |     2 |                             |       |
+| [XOR](#xor)                    |     1 | [XPUB](#xpub)                  |     3 |
+| [XPRV](#xprv)                  |     2 |                                |       |
 
 ## Y
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [YPRV](#yprv)               |     1 | [YPUB](#ypub)               |     2 |
+| [YPRV](#yprv)                  |     1 | [YPUB](#ypub)                  |     2 |
 
 ## Z
 
 | | | | |
 |:---------------------------|:--|:---------------------------|:--|
-| [ZEROCONF](#zeroconf)       |     1 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |     4 |
-| [ZEROLINK](#zerolink)       |     2 | [ZPRV](#zprv)               |     5 |
-| [ZEROSYNC](#zerosync)       |     3 | [ZPUB](#zpub)               |     6 |
+| [ZEROCONF](#zeroconf)          |     1 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |     4 |
+| [ZEROLINK](#zerolink)          |     2 | [ZPRV](#zprv)                  |     5 |
+| [ZEROSYNC](#zerosync)          |     3 | [ZPUB](#zpub)                  |     6 |
 
 
 \newpage
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{A}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{A}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -690,7 +690,7 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{B}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{B}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1021,7 +1021,7 @@ Proposition pour simplifier le traitement de l'activation des soft forks antéri
 
 Proposition de James Hilliard (ingénieur chez Bitmain) pour faciliter l'activation du soft fork SegWit, défini dans les BIP141, BIP143 et BIP147, via un MASF sans atteindre directement le seuil requis de 95 % de la puissance de calcul signalant le soutien via le bit 1. BIP91 permet aux mineurs de signaler indirectement leur soutien à SegWit en utilisant le bit 4 dans les blocs minés. Une fois que 269 blocs sur une fenêtre de 336 blocs ont inclus le bit 4 (soit 80% de la puissance de calcul), le BIP91 se verrouille, obligeant ensuite tous les nœuds compatibles à rejeter les blocs n'incluant pas le bit 1. Cette méthode visait à rendre le BIP148 (UASF) obsolète et à éviter une scission potentielle de la blockchain le 1er août 2017. Le BIP91 a finalement été activé le 23 juillet 2017 (au bloc 477 120), juste avant la date fatidique du 1er août imposée dans le BIP148. Cela a permis de forcer le signalement de SegWit par les mineurs, qui sera finalement verrouillé le 9 août au bloc 479 808, puis activé le 24 août au bloc 481 824. Pour résumer, le BIP148 (UASF) a été créé en réaction au fait que les mineurs ne signalaient pas suffisamment SegWit, mais n'a finalement jamais été mis en œuvre. Le BIP91 (MASF) a été créé en réaction au BIP148 afin de forcer la main aux mineurs, sans pour autant risquer l'UASF du BIP148. Le BIP91 représente lui-même un soft fork, qui forcera finalement les mineurs à verrouiller le soft fork SegWit via la méthode de base (MASF BIP9).
 
-> *Pour plus d'informations, voir la définition de [**MASF**](#masf-miner-activated-soft-fork) et [**BIP148**](#bip148).*
+> *Pour plus d'informations, voir la définition de [**MASF**](#masf) et [**BIP148**](#bip148).*
 
 ## BIP111
 
@@ -1105,13 +1105,13 @@ Proposition incluse dans le soft fork SegWit visant à résoudre un vecteur de m
 
 Proposition introduite en mars 2017 par un développeur sous le pseudonyme de Shaolin Fry. L'objectif du BIP148 était de forcer l'activation de la mise à jour SegWit sur le protocole Bitcoin, face à la stagnation de la signalisation de ce soft fork par les mineurs via la méthode du BIP9. Le BIP148 suggérait la mise en œuvre d'un UASF (*User-Activated Soft Fork*) pour activer SegWit de force par les nœuds le 15 novembre 2017, si les mineurs n'avaient pas verrouillé SegWit d'ici le 1er août 2017. Si l'adoption de l'UASF du BIP148 avait eu lieu, les nœuds du réseau Bitcoin auraient refusé les blocs ne signalant pas le support à SegWit, exerçant ainsi une pression sur les mineurs pour qu'ils adoptent la mise à jour. Bien que ce BIP historique n'ait finalement pas été activé, il a joué un rôle déterminant dans la réussite de l'adoption de SegWit, en contraignant les mineurs à verrouiller le soft fork via le BIP91. À plus long terme, le BIP148 a établi un précédent important, démontrant l'influence que peuvent exercer les utilisateurs via leurs nœuds complets sur les décisions de gouvernance du protocole Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**UASF (USER-ACTIVATED SOFT FORK)**](#uasf-user-activated-soft-fork).*
+> *Pour plus d'informations, voir la définition de [**UASF (USER-ACTIVATED SOFT FORK)**](#uasf).*
 
 ## BIP149
 
 Proposition de Shaolin Fry pour un nouveau déploiement de SegWit (BIP141, BIP143 et BIP147) en utilisant la méthode d'activation du BIP8 avec `LOT=true`, si le déploiement initial de SegWit via le BIP9 échouait à s'activer avant le 15 novembre 2017. Contrairement à la méthode du BIP9, où un échec de signalisation entraîne l'abandon de l'activation, le BIP149 visait à activer SegWit le 4 juillet 2018, que les mineurs aient atteint le seuil de signalisation de 95% ou non. Pendant la période de huit mois entre novembre et juillet, les nœuds auraient eu la possibilité d'implémenter le BIP149, afin d'assurer une activation de SegWit par la majorité économique du réseau si l'activation par les mineurs ne se produisait pas (UASF). Une fois le premier ajustement de difficulté atteint après le 4 juillet 2018, l'activation serait passée en `LOCKED_IN`, et SegWit aurait été activé au cycle d'ajustement suivant. Contrairement au BIP148, qui prévoyait une activation de SegWit imposée par les utilisateurs ou une majorité de mineurs, le BIP149 suggérait une méthode d'activation plus progressive et mesurée, bien qu'elle demeurât résolument offensive, selon les principes du BIP8. Alors que le BIP148 laissait présager un conflit avec une séparation de la blockchain, le BIP149 écartait cette éventualité, en acceptant les blocs ne signalant pas SegWit, sauf action délibérée d'un mineur (sans incitation). Le BIP149 était donc un mécanisme d'activation de SegWit moins conflictuel que le BIP148, favorisant une adoption plus progressive et moins risquée pour le système. Ni le BIP148 ni le BIP149 n'ont finalement été mis en œuvre, SegWit ayant été activé grâce à un MASF, notamment sous l'impulsion du BIP91.
 
-> *Pour plus d'informations, voir la définition de [**BIP8**](#bip8), [**BIP9**](#bip9), [**BIP91**](#bip91), [**BIP148**](#bip148), [**UASF**](#uasf-user-activated-soft-fork), [**MASF**](#masf-miner-activated-soft-fork) et [**MÉTHODE D'ACTIVATION**](#méthode-dactivation).*
+> *Pour plus d'informations, voir la définition de [**BIP8**](#bip8), [**BIP9**](#bip9), [**BIP91**](#bip91), [**BIP148**](#bip148), [**UASF**](#uasf), [**MASF**](#masf) et [**MÉTHODE D'ACTIVATION**](#méthode-dactivation).*
 
 ## BIP150
 
@@ -1400,7 +1400,7 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{C}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{C}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1782,7 +1782,7 @@ Communauté informelle et internationale de personnes intéressées par l'utilis
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{D}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{D}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -1908,7 +1908,7 @@ Règle de standardisation utilisée par les nœuds du réseau pour déterminer c
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{E}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{E}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2039,7 +2039,7 @@ Outil en ligne ou en local qui permet de transformer les données brutes de la b
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{F}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{F}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2182,7 +2182,7 @@ Il convient également de tenir compte les limites de purge. En période de fort
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{G}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{G}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2240,7 +2240,7 @@ Fichier dans Bitcoin Core utilisé pour stocker une sauvegarde des paramètres d
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{H}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{H}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2298,7 +2298,7 @@ Sigle de « *Hardware Wallet Interface* ». C'est une interface standardisée pe
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{I}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{I}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2343,7 +2343,7 @@ Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issu
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{J}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{J}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2366,7 +2366,7 @@ Les portefeuilles JBOK, acronyme pour « Just a Bunch Of Keys » (en français �
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{K}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{K}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2390,7 +2390,7 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{L}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{L}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2451,7 +2451,7 @@ Service développé par Lightning Labs conçu pour faciliter l'équilibrage de l
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{M}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{M}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2603,7 +2603,7 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{N}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{N}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -2686,7 +2686,7 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{O}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{O}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3185,7 +3185,7 @@ Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output link
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{P}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{P}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3454,7 +3454,7 @@ Langage de programmation de haut niveau, connu pour sa syntaxe claire et sa lisi
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{Q}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{Q}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3469,7 +3469,7 @@ Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent pre
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{R}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{R}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3580,7 +3580,7 @@ Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en 
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{S}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{S}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -3721,9 +3721,9 @@ Blockchain conçue pour fonctionner en parallèle avec la blockchain principale 
 
 Type de SigHash Flag utilisé dans les signatures des transactions Bitcoin pour indiquer que la signature s'applique à tous les composants de la transaction. En utilisant `SIGHASH_ALL`, le signataire couvre tous les inputs et tous les outputs. Cela signifie que ni les inputs ni les outputs ne peuvent être modifiés après la signature sans invalider celle-ci. Ce type de SigHash Flag est le plus courant dans les transactions Bitcoin, car il assure une finalité et une intégrité complètes de la transaction.
 
-## SIGHASH_ALL SIGHASH_ACP (0X81)
+## SIGHASH_ALL SIGHASH_ACP
 
-Type de SigHash Flag combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison spécifie que la signature s'applique à tous les outputs et uniquement à un input spécifique de la transaction. `SIGHASH_ALL | SIGHASH_ANYONECANPAY` permet à d'autres participants d'ajouter des inputs supplémentaires à la transaction après sa signature initiale. Elle est particulièrement utile dans des scénarios collaboratifs, comme les transactions de financement participatif, où différents contributeurs peuvent ajouter leurs propres inputs tout en préservant l'intégrité des outputs engagés par le signataire initial.
+Type de SigHash Flag (`0x81`) combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison spécifie que la signature s'applique à tous les outputs et uniquement à un input spécifique de la transaction. `SIGHASH_ALL | SIGHASH_ANYONECANPAY` permet à d'autres participants d'ajouter des inputs supplémentaires à la transaction après sa signature initiale. Elle est particulièrement utile dans des scénarios collaboratifs, comme les transactions de financement participatif, où différents contributeurs peuvent ajouter leurs propres inputs tout en préservant l'intégrité des outputs engagés par le signataire initial.
 
 ## SIGHASH_ANYPREVOUT
 
@@ -3759,17 +3759,17 @@ En complément de ces trois SigHash Flags, le modificateur `SIGHASH_ANYONECANPAY
 
 Type de SigHash Flag utilisé dans les signatures des transactions Bitcoin pour indiquer que la signature s'applique à tous les inputs de la transaction, mais à aucun de ses outputs. L'utilisation de `SIGHASH_NONE` implique que le signataire s'engage uniquement sur les entrées, mais permet que les sorties restent indéterminées ou modifiables après la signature. Ce type de signature est utile dans les cas où le signataire souhaite autoriser d'autres parties à décider de la manière dont les bitcoins seront distribués dans cette transaction.
 
-## SIGHASH_NONE SIGHASH_ACP (0X82)
+## SIGHASH_NONE SIGHASH_ACP
 
-Type de SigHash Flag combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison indique que la signature s'applique seulement à un input spécifique, sans engager aucun output. Cela permet aux autres participants de rajouter librement des inputs supplémentaires et de modifier tous les outputs de la transaction.
+Type de SigHash Flag (`0x82`) combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison indique que la signature s'applique seulement à un input spécifique, sans engager aucun output. Cela permet aux autres participants de rajouter librement des inputs supplémentaires et de modifier tous les outputs de la transaction.
 
 ## SIGHASH_SINGLE (0X03)
 
 Type de SigHash Flag utilisé dans les signatures des transactions Bitcoin pour indiquer que la signature s'applique à tous les inputs de la transaction et à un seul output, correspondant à l'index du même input signé. Ainsi, chaque input signé avec `SIGHASH_SINGLE` est lié spécifiquement à un output particulier. Les autres outputs ne sont pas engagés par la signature et peuvent donc être modifiés ultérieurement. Ce type de signature est utile dans des transactions complexes, où les participants veulent lier certains inputs à des outputs spécifiques, tout en laissant de la flexibilité pour les autres outputs de la transaction.
 
-## SIGHASH_SINGLE SIGHASH_ACP (0X83)
+## SIGHASH_SINGLE SIGHASH_ACP
 
-Type de SigHash Flag combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison spécifie que la signature s'applique à un seul input spécifique et uniquement à l'output ayant le même index que cet input. Les autres inputs et outputs peuvent être ajoutés ou modifiés par d'autres parties. Cette configuration est utile pour des transactions collaboratives où les participants peuvent ajouter leurs propres inputs pour financer un output spécifique.
+Type de SigHash Flag (`0x83`) combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison spécifie que la signature s'applique à un seul input spécifique et uniquement à l'output ayant le même index que cet input. Les autres inputs et outputs peuvent être ajoutés ou modifiés par d'autres parties. Cette configuration est utile pour des transactions collaboratives où les participants peuvent ajouter leurs propres inputs pour financer un output spécifique.
 
 ## SIGNATURE NUMÉRIQUE
 
@@ -3892,7 +3892,7 @@ Traduction française de « *Initial Block Download* ». Fait référence au pro
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{T}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{T}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4005,7 +4005,7 @@ Identifiant unique associé à chaque transaction Bitcoin. Il est généré en c
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{U}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{U}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4017,7 +4017,7 @@ Sigle de « *User-Activated Soft Fork* ». Qualifie un soft fork dans Bitcoin lo
 
 Protocole de communication utilisé sur Internet qui permet l'envoi de messages (datagrammes) entre ordinateurs sans établir de connexion préalable (contrairement à TCP). UDP est une méthode de transfert rapide mais sans garantie de livraison, d'ordre des paquets, ou de gestion d'erreur. On l'utilise plutôt pour des applications nécessitant une diffusion rapide et en temps réel. Ce protocole avait été utilisé au sein du projet FIBRE pour accélérer la propagation de blocs Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)**](#fibre-fast-internet-bitcoin-relay-engine).*
+> *Pour plus d'informations, voir la définition de [**FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)**](#fibre).*
 
 ## UPRV
 
@@ -4051,7 +4051,7 @@ Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un mo
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{V}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{V}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4083,7 +4083,7 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{W}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{W}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4153,7 +4153,7 @@ Extension du TXID traditionnel, incluant les données de témoin (witness) intro
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{X}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{X}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4202,7 +4202,7 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{Y}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{Y}}
 \end{center}
 \vspace*{\fill}
 \newpage
@@ -4224,7 +4224,7 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin.
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{center}
-{\fontfamily{cmr}\selectfont \fontsize{95}{105}\selectfont\textbf{Z}}
+{\fontfamily{cmr}\selectfont \fontsize{105}{115}\selectfont\textbf{Z}}
 \end{center}
 \vspace*{\fill}
 \newpage
