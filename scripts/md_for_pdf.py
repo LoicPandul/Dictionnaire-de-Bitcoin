@@ -48,38 +48,65 @@ def creer_page_titre(lettre):
 \\newpage
 """
 
+def generer_tableau_index_par_lettre(lettre, titres):
+    """ Génère un index en tableau à deux colonnes et vertical. """
+    index = "\n| | |\n|---|---|\n"
+    
+    # Organiser les titres en deux colonnes verticales
+    colonne_1 = titres[:len(titres)//2]
+    colonne_2 = titres[len(titres)//2:]
+    
+    # Compléter avec des cases vides si nécessaire
+    while len(colonne_1) < len(colonne_2):
+        colonne_1.append("")
+    while len(colonne_2) < len(colonne_1):
+        colonne_2.append("")
+
+    # Ajouter les lignes au tableau
+    for titre_1, titre_2 in zip(colonne_1, colonne_2):
+        index += f"| {titre_1} | {titre_2} |\n"
+    
+    return index
+
 chemin_dossier_dictionnaire = '../dictionnaire'
 chemin_markdown_final = 'PDF/dictionnaire_MD_for_PDF.md'
 
 os.makedirs(os.path.dirname(chemin_markdown_final), exist_ok=True)
 
+# Dictionnaire contenant les titres organisés par lettre
+titres_par_lettre = {}
+
+for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
+    if fichier_lettre.endswith(".md"):
+        lettre = fichier_lettre.upper().replace('.MD', '')[0]
+        titres_par_lettre.setdefault(lettre, [])
+        with open(os.path.join(chemin_dossier_dictionnaire, fichier_lettre), 'r', encoding='utf-8') as fichier:
+            contenu = fichier.read()
+            titres = re.findall(r'^##\s*(.*)$', contenu, flags=re.MULTILINE)
+            for titre in titres:
+                anchor = titre.lower().replace(' ', '-').replace('.', '.')
+                anchor = re.sub(r'[«»|]', ' ', anchor)
+                anchor = re.sub(r'\s+', '-', anchor.strip())
+                anchor = re.sub(r'--+', '-', anchor)
+                anchor = re.sub(r'[^\w.-]', '', anchor)
+                titres_par_lettre[lettre].append(f"[{titre}](#{anchor})")
+
+# Écrire l'index organisé par lettre avec deux colonnes
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
     fichier_complet.write("# Index\n\n")
-    for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
-        if fichier_lettre.endswith(".md"):
-            with open(os.path.join(chemin_dossier_dictionnaire, fichier_lettre), 'r', encoding='utf-8') as fichier:
-                contenu = fichier.read()
-                titres = re.findall(r'^##\s*(.*)$', contenu, flags=re.MULTILINE)
-                for titre in titres:
-                    anchor = titre.lower().replace(' ', '-').replace('.', '.')
-                    anchor = re.sub(r'[«»|]', ' ', anchor)
-                    anchor = re.sub(r'\s+', '-', anchor.strip())
-                    anchor = re.sub(r'--+', '-', anchor)
-                    anchor = re.sub(r'[^\w.-]', '', anchor)
-                    fichier_complet.write(f"- [{titre}](#{anchor})\n")
-                fichier_complet.write("\n")
+    for lettre, titres in sorted(titres_par_lettre.items()):
+        fichier_complet.write(f"## {lettre}\n")
+        fichier_complet.write(generer_tableau_index_par_lettre(lettre, titres) + "\n")
 
-    for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
-        if fichier_lettre.endswith(".md"):
-            lettre = fichier_lettre.upper().replace('.MD', '')
-            page_titre = creer_page_titre(lettre)
-            fichier_complet.write(page_titre)
-            
-            chemin_complet = os.path.join(chemin_dossier_dictionnaire, fichier_lettre)
-            with open(chemin_complet, 'r', encoding='utf-8') as fichier:
-                contenu = fichier.read()
-                contenu = ajuster_liens_et_images(contenu)
-                contenu = markdown_to_latex_lists(contenu)
-                fichier_complet.write(contenu + '\n\n')
+    for lettre, titres in sorted(titres_par_lettre.items()):
+        page_titre = creer_page_titre(lettre)
+        fichier_complet.write(page_titre)
+        
+        chemin_complet = os.path.join(chemin_dossier_dictionnaire, f"{lettre.lower()}.md")
+        with open(chemin_complet, 'r', encoding='utf-8') as fichier:
+            contenu = fichier.read()
+            contenu = ajuster_liens_et_images(contenu)
+            contenu = markdown_to_latex_lists(contenu)
+            fichier_complet.write(contenu + '\n\n')
 
 print(f'Le fichier Markdown a été créé avec succès : {chemin_markdown_final}')
