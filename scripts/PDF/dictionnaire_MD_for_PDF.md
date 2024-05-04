@@ -4,437 +4,437 @@
 
 | | |
 |---|---|
-| [ACINQ](#acinq) | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |
-| [ADAPTOR SIGNATURE](#adaptor-signature) | [ANYPREVOUT (APO)](#anyprevout-apo) |
-| [ADDR](#addr) | [AOPP (ADDRESS OWNERSHIP PROOF PROTOCOL)](#aopp-address-ownership-proof-protocol) |
-| [ADDR.DAT](#addr.dat) | [API (APPLICATION PROGRAMMING INTERFACE)](#api-application-programming-interface) |
-| [ADDRV2](#addrv2) | [ARBRE DE MERKLE](#arbre-de-merkle) |
-| [ADRESSE DE RÉCEPTION](#adresse-de-réception) | [ARK](#ark) |
-| [AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE)](#ajustement-de-la-difficulté-ou-reciblage) | [ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION)](#asic-circuit-intégré-spécifique-à-une-application) |
-| [ALGORITHME](#algorithme) | [ASMAP](#asmap) |
-| [ANALYSE DE CHAINE](#analyse-de-chaine) | [ASSUME UTXO](#assume-utxo) |
-| [ANCESTOR MINING](#ancestor-mining) | [ASSUME VALID](#assume-valid) |
-| [ANCHOR OUTPUTS](#anchor-outputs) | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |
-| [ANCHORS.DAT](#anchors.dat) | [ATLC (ANCHOR TIMELOCK CONTRACTS)](#atlc-anchor-timelock-contracts) |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) | [ATOMIC SWAP](#atomic-swap) |
-|  | [ATTAQUE DES 51%](#attaque-des-51) |
+| \small [ACINQ](#acinq) ................................... 1 | \small [ANYPREVOUT (APO)](#anyprevout-apo) ............... 15 |
+| \small [ADAPTOR SIGNATURE](#adaptor-signature) ........... 2 | \small [AOPP (ADDRESS OWNERSHIP PROOF PROTOCOL)](#aopp-address-ownership-proof-protocol)  16 |
+| \small [ADDR](#addr) ..................................... 3 | \small [API (APPLICATION PROGRAMMING INTERFACE)](#api-application-programming-interface)  17 |
+| \small [ADDR.DAT](#addr.dat) ............................. 4 | \small [ARBRE DE MERKLE](#arbre-de-merkle) ............... 18 |
+| \small [ADDRV2](#addrv2) ................................. 5 | \small [ARK](#ark) ....................................... 19 |
+| \small [ADRESSE DE RÉCEPTION](#adresse-de-réception) ..... 6 | \small [ASIC (CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION)](#asic-circuit-intégré-spécifique-à-une-application)  20 |
+| \small [AJUSTEMENT DE LA DIFFICULTÉ (OU RECIBLAGE)](#ajustement-de-la-difficulté-ou-reciblage)  7 | \small [ASMAP](#asmap) ................................... 21 |
+| \small [ALGORITHME](#algorithme) ......................... 8 | \small [ASSUME UTXO](#assume-utxo) ....................... 22 |
+| \small [ANALYSE DE CHAINE](#analyse-de-chaine) ........... 9 | \small [ASSUME VALID](#assume-valid) ..................... 23 |
+| \small [ANCESTOR MINING](#ancestor-mining) ............... 10 | \small [ATH (ALL-TIME HIGH)](#ath-all-time-high) ......... 24 |
+| \small [ANCHOR OUTPUTS](#anchor-outputs) ................. 11 | \small [ATLC (ANCHOR TIMELOCK CONTRACTS)](#atlc-anchor-timelock-contracts)  25 |
+| \small [ANCHORS.DAT](#anchors.dat) ....................... 12 | \small [ATOMIC SWAP](#atomic-swap) ....................... 26 |
+| \small [ANCRAGE BILATÉRAL](#ancrage-bilatéral) ........... 13 | \small [ATTAQUE DES 51%](#attaque-des-51) ................ 27 |
+| \small [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets)  14 |  |
 
 ## B
 
 | | |
 |---|---|
-| [BANLIST.DAT](#banlist.dat) | [BIP137](#bip137) |
-| [BANLIST.JSON](#banlist.json) | [BIP141](#bip141) |
-| [BARE-MULTISIG](#bare-multisig) | [BIP143](#bip143) |
-| [BASE (ARITHMÉTIQUE)](#base-arithmétique) | [BIP144](#bip144) |
-| [BASE58CHECK](#base58check) | [BIP145](#bip145) |
-| [BATCHED SPENDING](#batched-spending) | [BIP147](#bip147) |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) | [BIP148](#bip148) |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) | [BIP149](#bip149) |
-| [BERKELEYDB](#berkeleydb) | [BIP150](#bip150) |
-| [BIG-ENDIAN](#big-endian) | [BIP151](#bip151) |
-| [BIP (BITCOIN IMPROVEMENT PROPOSAL)](#bip-bitcoin-improvement-proposal) | [BIP152](#bip152) |
-| [BIP1](#bip1) | [BIP155](#bip155) |
-| [BIP2](#bip2) | [BIP156](#bip156) |
-| [BIP8](#bip8) | [BIP173](#bip173) |
-| [BIP9](#bip9) | [BIP322](#bip322) |
-| [BIP10](#bip10) | [BIP324](#bip324) |
-| [BIP11](#bip11) | [BIP326](#bip326) |
-| [BIP12](#bip12) | [BIT](#bit) |
-| [BIP13](#bip13) | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |
-| [BIP14](#bip14) | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |
-| [BIP16](#bip16) | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |
-| [BIP17](#bip17) | [BITCOIN-CLI](#bitcoin-cli) |
-| [BIP21](#bip21) | [BITCOIN.CONF](#bitcoin.conf) |
-| [BIP22](#bip22) | [BITCOIN CORE](#bitcoin-core) |
-| [BIP23](#bip23) | [BITCOIND](#bitcoind) |
-| [BIP30](#bip30) | [BITCOIND.PID](#bitcoind.pid) |
-| [BIP31](#bip31) | [BITCOIN FOG](#bitcoin-fog) |
-| [BIP32](#bip32) | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |
-| [BIP34](#bip34) | [BITCOIN KNOTS](#bitcoin-knots) |
-| [BIP35](#bip35) | [BITCOIN INQUISITION](#bitcoin-inquisition) |
-| [BIP37](#bip37) | [BITCOIN JESUS](#bitcoin-jesus) |
-| [BIP38](#bip38) | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |
-| [BIP39](#bip39) | [BITCOIN QT](#bitcoin-qt) |
-| [BIP42](#bip42) | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |
-| [BIP43](#bip43) | [BITCOINTALK](#bitcointalk) |
-| [BIP44](#bip44) | [BIT GOLD](#bit-gold) |
-| [BIP47](#bip47) | [BITVM](#bitvm) |
-| [BIP49](#bip49) | [BLK????.DAT](#blk.dat) |
-| [BIP50](#bip50) | [BLKINDEX.DAT](#blkindex.dat) |
-| [BIP61](#bip61) | [BLKTREE/](#blktree) |
-| [BIP65](#bip65) | [BLOC](#bloc) |
-| [BIP66](#bip66) | [BLOC CANDIDAT](#bloc-candidat) |
-| [BIP68](#bip68) | [BLOCKCHAIN](#blockchain) |
-| [BIP70](#bip70) | [BLOCKS INDEX](#blocks-index) |
-| [BIP71](#bip71) | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |
-| [BIP72](#bip72) | [BLOCKS/INDEX/](#blocksindex) |
-| [BIP75](#bip75) | [BLOCKS/REV?????.DAT](#blocksrev.dat) |
-| [BIP78](#bip78) | [BLOCKSIGNERS](#blocksigners) |
-| [BIP84](#bip84) | [BLOCKSTREAM](#blockstream) |
-| [BIP85](#bip85) | [BLOCK TEMPLATE](#block-template) |
-| [BIP86](#bip86) | [BLOCK WITHHOLDING](#block-withholding) |
-| [BIP90](#bip90) | [BLOOM FILTER](#bloom-filter) |
-| [BIP91](#bip91) | [B-MONEY](#b-money) |
-| [BIP111](#bip111) | [BOLT (BASIS OF LIGHTNING TECHNOLOGY)](#bolt-basis-of-lightning-technology) |
-| [BIP112](#bip112) | [BOUTISME](#boutisme) |
-| [BIP113](#bip113) | [BRANCH-AND-BOUND](#branch-and-bound) |
-| [BIP118](#bip118) | [BRANCHE](#branche) |
-| [BIP119](#bip119) | [BRC-20](#brc-20) |
-| [BIP123](#bip123) | [BTC](#btc) |
-| [BIP125](#bip125) | [BTCPAY SERVER](#btcpay-server) |
+| \small [BANLIST.DAT](#banlist.dat) ....................... 1 | \small [BIP137](#bip137) ................................. 61 |
+| \small [BANLIST.JSON](#banlist.json) ..................... 2 | \small [BIP141](#bip141) ................................. 62 |
+| \small [BARE-MULTISIG](#bare-multisig) ................... 3 | \small [BIP143](#bip143) ................................. 63 |
+| \small [BASE (ARITHMÉTIQUE)](#base-arithmétique) ......... 4 | \small [BIP144](#bip144) ................................. 64 |
+| \small [BASE58CHECK](#base58check) ....................... 5 | \small [BIP145](#bip145) ................................. 65 |
+| \small [BATCHED SPENDING](#batched-spending) ............. 6 | \small [BIP147](#bip147) ................................. 66 |
+| \small [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) ..... 7 | \small [BIP148](#bip148) ................................. 67 |
+| \small [BECH32 ET BECH32M](#bech32-et-bech32m) ........... 8 | \small [BIP149](#bip149) ................................. 68 |
+| \small [BERKELEYDB](#berkeleydb) ......................... 9 | \small [BIP150](#bip150) ................................. 69 |
+| \small [BIG-ENDIAN](#big-endian) ......................... 10 | \small [BIP151](#bip151) ................................. 70 |
+| \small [BIP (BITCOIN IMPROVEMENT PROPOSAL)](#bip-bitcoin-improvement-proposal)  11 | \small [BIP152](#bip152) ................................. 71 |
+| \small [BIP1](#bip1) ..................................... 12 | \small [BIP155](#bip155) ................................. 72 |
+| \small [BIP2](#bip2) ..................................... 13 | \small [BIP156](#bip156) ................................. 73 |
+| \small [BIP8](#bip8) ..................................... 14 | \small [BIP173](#bip173) ................................. 74 |
+| \small [BIP9](#bip9) ..................................... 15 | \small [BIP322](#bip322) ................................. 75 |
+| \small [BIP10](#bip10) ................................... 16 | \small [BIP324](#bip324) ................................. 76 |
+| \small [BIP11](#bip11) ................................... 17 | \small [BIP326](#bip326) ................................. 77 |
+| \small [BIP12](#bip12) ................................... 18 | \small [BIT](#bit) ....................................... 78 |
+| \small [BIP13](#bip13) ................................... 19 | \small [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) ..... 79 |
+| \small [BIP14](#bip14) ................................... 20 | \small [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) ..... 80 |
+| \small [BIP16](#bip16) ................................... 21 | \small [BITCOIN CASH (BCH)](#bitcoin-cash-bch) ........... 81 |
+| \small [BIP17](#bip17) ................................... 22 | \small [BITCOIN-CLI](#bitcoin-cli) ....................... 82 |
+| \small [BIP21](#bip21) ................................... 23 | \small [BITCOIN.CONF](#bitcoin.conf) ..................... 83 |
+| \small [BIP22](#bip22) ................................... 24 | \small [BITCOIN CORE](#bitcoin-core) ..................... 84 |
+| \small [BIP23](#bip23) ................................... 25 | \small [BITCOIND](#bitcoind) ............................. 85 |
+| \small [BIP30](#bip30) ................................... 26 | \small [BITCOIND.PID](#bitcoind.pid) ..................... 86 |
+| \small [BIP31](#bip31) ................................... 27 | \small [BITCOIN FOG](#bitcoin-fog) ....................... 87 |
+| \small [BIP32](#bip32) ................................... 28 | \small [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) ........... 88 |
+| \small [BIP34](#bip34) ................................... 29 | \small [BITCOIN KNOTS](#bitcoin-knots) ................... 89 |
+| \small [BIP35](#bip35) ................................... 30 | \small [BITCOIN INQUISITION](#bitcoin-inquisition) ....... 90 |
+| \small [BIP37](#bip37) ................................... 31 | \small [BITCOIN JESUS](#bitcoin-jesus) ................... 91 |
+| \small [BIP38](#bip38) ................................... 32 | \small [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm)  92 |
+| \small [BIP39](#bip39) ................................... 33 | \small [BITCOIN QT](#bitcoin-qt) ......................... 93 |
+| \small [BIP42](#bip42) ................................... 34 | \small [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv)  94 |
+| \small [BIP43](#bip43) ................................... 35 | \small [BITCOINTALK](#bitcointalk) ....................... 95 |
+| \small [BIP44](#bip44) ................................... 36 | \small [BIT GOLD](#bit-gold) ............................. 96 |
+| \small [BIP47](#bip47) ................................... 37 | \small [BITVM](#bitvm) ................................... 97 |
+| \small [BIP49](#bip49) ................................... 38 | \small [BLK????.DAT](#blk.dat) ........................... 98 |
+| \small [BIP50](#bip50) ................................... 39 | \small [BLKINDEX.DAT](#blkindex.dat) ..................... 99 |
+| \small [BIP61](#bip61) ................................... 40 | \small [BLKTREE/](#blktree) .............................. 100 |
+| \small [BIP65](#bip65) ................................... 41 | \small [BLOC](#bloc) ..................................... 101 |
+| \small [BIP66](#bip66) ................................... 42 | \small [BLOC CANDIDAT](#bloc-candidat) ................... 102 |
+| \small [BIP68](#bip68) ................................... 43 | \small [BLOCKCHAIN](#blockchain) ......................... 103 |
+| \small [BIP70](#bip70) ................................... 44 | \small [BLOCKS INDEX](#blocks-index) ..................... 104 |
+| \small [BIP71](#bip71) ................................... 45 | \small [BLOCKS/BLK?????.DAT](#blocksblk.dat) ............. 105 |
+| \small [BIP72](#bip72) ................................... 46 | \small [BLOCKS/INDEX/](#blocksindex) ..................... 106 |
+| \small [BIP75](#bip75) ................................... 47 | \small [BLOCKS/REV?????.DAT](#blocksrev.dat) ............. 107 |
+| \small [BIP78](#bip78) ................................... 48 | \small [BLOCKSIGNERS](#blocksigners) ..................... 108 |
+| \small [BIP84](#bip84) ................................... 49 | \small [BLOCKSTREAM](#blockstream) ....................... 109 |
+| \small [BIP85](#bip85) ................................... 50 | \small [BLOCK TEMPLATE](#block-template) ................. 110 |
+| \small [BIP86](#bip86) ................................... 51 | \small [BLOCK WITHHOLDING](#block-withholding) ........... 111 |
+| \small [BIP90](#bip90) ................................... 52 | \small [BLOOM FILTER](#bloom-filter) ..................... 112 |
+| \small [BIP91](#bip91) ................................... 53 | \small [B-MONEY](#b-money) ............................... 113 |
+| \small [BIP111](#bip111) ................................. 54 | \small [BOLT (BASIS OF LIGHTNING TECHNOLOGY)](#bolt-basis-of-lightning-technology)  114 |
+| \small [BIP112](#bip112) ................................. 55 | \small [BOUTISME](#boutisme) ............................. 115 |
+| \small [BIP113](#bip113) ................................. 56 | \small [BRANCH-AND-BOUND](#branch-and-bound) ............. 116 |
+| \small [BIP118](#bip118) ................................. 57 | \small [BRANCHE](#branche) ............................... 117 |
+| \small [BIP119](#bip119) ................................. 58 | \small [BRC-20](#brc-20) ................................. 118 |
+| \small [BIP123](#bip123) ................................. 59 | \small [BTC](#btc) ....................................... 119 |
+| \small [BIP125](#bip125) ................................. 60 | \small [BTCPAY SERVER](#btcpay-server) ................... 120 |
 
 ## C
 
 | | |
 |---|---|
-| [C](#c) | [COINMUX](#coinmux) |
-| [C# (C SHARP)](#c-c-sharp) | [COINS/](#coins) |
-| [C++](#c) | [COINSHUFFLE](#coinshuffle) |
-| [CAHOOTS](#cahoots) | [COLD WALLET](#cold-wallet) |
-| [CANAL DE PAIMENT](#canal-de-paiment) | [COMMERÇANT](#commerçant) |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) | [COMMIT](#commit) |
-| [CASHU](#cashu) | [COMPACT BLOCK RELAY](#compact-block-relay) |
-| [CET (CONTRACT EXECUTION TRANSACTION)](#cet-contract-execution-transaction) | [COMPATIBILITÉ RÉTROSPECTIVE (RÉTROCOMPATIBILITÉ)](#compatibilité-rétrospective-rétrocompatibilité) |
-| [CHANNEL FACTORIES](#channel-factories) | [CONCATÉNATION](#concaténation) |
-| [CHAINSTATE/](#chainstate) | [CONDENSAT (HASH)](#condensat-hash) |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) | [CONFIRMATION](#confirmation) |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) | [CONSENSUS](#consensus) |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) | [CONSOLIDATION](#consolidation) |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) | [CONTRAT INTELLIGENT](#contrat-intelligent) |
-| [CIOH (COMMON INPUT OWNERSHIP HEURISTIC)](#cioh-common-input-ownership-heuristic) | [COOKIE (.COOKIE)](#cookie-.cookie) |
-| [CLÉ ÉTENDUE](#clé-étendue) | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |
-| [CLÉ PRIVÉE](#clé-privée) | [COURBE ELLIPTIQUE](#courbe-elliptique) |
-| [CLÉ PUBLIQUE](#clé-publique) | [COVENANT](#covenant) |
-| [CLI](#cli) | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) | [CPPSRB (CAPPED PAY PER SHARE RECENT BACKPAY)](#cppsrb-capped-pay-per-share-recent-backpay) |
-| [CLONE](#clone) | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |
-| [CODE DE CHAÎNE](#code-de-chaîne) | [CRYPTANALYSE](#cryptanalyse) |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) | [CRYPTER](#crypter) |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) | [CRYPTO-ACTIF](#crypto-actif) |
-| [COIN CONTROL](#coin-control) | [CRYPTOGRAPHIE](#cryptographie) |
-| [COINJOIN](#coinjoin) | [CRYPTOLOGIE](#cryptologie) |
-| [COINJUMBLE](#coinjumble) | [CRYPTOMONNAIE](#cryptomonnaie) |
-|  | [CYPHERPUNK](#cypherpunk) |
+| \small [C](#c) ........................................... 1 | \small [COINS/](#coins) .................................. 29 |
+| \small [C# (C SHARP)](#c-c-sharp) ........................ 2 | \small [COINSHUFFLE](#coinshuffle) ....................... 30 |
+| \small [C++](#c) ......................................... 3 | \small [COLD WALLET](#cold-wallet) ....................... 31 |
+| \small [CAHOOTS](#cahoots) ............................... 4 | \small [COMMERÇANT](#commerçant) ......................... 32 |
+| \small [CANAL DE PAIMENT](#canal-de-paiment) ............. 5 | \small [COMMIT](#commit) ................................. 33 |
+| \small [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning)  6 | \small [COMPACT BLOCK RELAY](#compact-block-relay) ....... 34 |
+| \small [CASHU](#cashu) ................................... 7 | \small [COMPATIBILITÉ RÉTROSPECTIVE (RÉTROCOMPATIBILITÉ)](#compatibilité-rétrospective-rétrocompatibilité)  35 |
+| \small [CET (CONTRACT EXECUTION TRANSACTION)](#cet-contract-execution-transaction)  8 | \small [CONCATÉNATION](#concaténation) ................... 36 |
+| \small [CHANNEL FACTORIES](#channel-factories) ........... 9 | \small [CONDENSAT (HASH)](#condensat-hash) ............... 37 |
+| \small [CHAINSTATE/](#chainstate) ........................ 10 | \small [CONFIRMATION](#confirmation) ..................... 38 |
+| \small [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) ... 11 | \small [CONSENSUS](#consensus) ........................... 39 |
+| \small [CHAUMIAN COINJOIN](#chaumian-coinjoin) ........... 12 | \small [CONSOLIDATION](#consolidation) ................... 40 |
+| \small [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) ... 13 | \small [CONTRAT INTELLIGENT](#contrat-intelligent) ....... 41 |
+| \small [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) ....... 14 | \small [COOKIE (.COOKIE)](#cookie-.cookie) ............... 42 |
+| \small [CIOH (COMMON INPUT OWNERSHIP HEURISTIC)](#cioh-common-input-ownership-heuristic)  15 | \small [CORE-LIGHTNING (CLN)](#core-lightning-cln) ....... 43 |
+| \small [CLÉ ÉTENDUE](#clé-étendue) ....................... 16 | \small [COURBE ELLIPTIQUE](#courbe-elliptique) ........... 44 |
+| \small [CLÉ PRIVÉE](#clé-privée) ......................... 17 | \small [COVENANT](#covenant) ............................. 45 |
+| \small [CLÉ PUBLIQUE](#clé-publique) ..................... 18 | \small [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent)  46 |
+| \small [CLI](#cli) ....................................... 19 | \small [CPPSRB (CAPPED PAY PER SHARE RECENT BACKPAY)](#cppsrb-capped-pay-per-share-recent-backpay)  47 |
+| \small [C-LIGHTNING (CLN)](#c-lightning-cln) ............. 20 | \small [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit)  48 |
+| \small [CLONE](#clone) ................................... 21 | \small [CRYPTANALYSE](#cryptanalyse) ..................... 49 |
+| \small [CODE DE CHAÎNE](#code-de-chaîne) ................. 22 | \small [CRYPTER](#crypter) ............................... 50 |
+| \small [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable)  23 | \small [CRYPTO-ACTIF](#crypto-actif) ..................... 51 |
+| \small [COINBASE (TRANSACTION)](#coinbase-transaction) ... 24 | \small [CRYPTOGRAPHIE](#cryptographie) ................... 52 |
+| \small [COIN CONTROL](#coin-control) ..................... 25 | \small [CRYPTOLOGIE](#cryptologie) ....................... 53 |
+| \small [COINJOIN](#coinjoin) ............................. 26 | \small [CRYPTOMONNAIE](#cryptomonnaie) ................... 54 |
+| \small [COINJUMBLE](#coinjumble) ......................... 27 | \small [CYPHERPUNK](#cypherpunk) ......................... 55 |
+| \small [COINMUX](#coinmux) ............................... 28 |  |
 
 ## D
 
 | | |
 |---|---|
-| [DANDELION](#dandelion) | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |
-| [DARKWALLET](#darkwallet) | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |
-| [DATABASE/](#database) | [DNS SEEDS](#dns-seeds) |
-| [DB.LOG](#db.log) | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |
-| [DDOS](#ddos) | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |
-| [DEBUG.LOG](#debug.log) | [DRIVECHAIN](#drivechain) |
-| [DÉPÔT](#dépôt) | [DUMMY ELEMENT](#dummy-element) |
-| [DGM (DOUBLE GEOMETRIC METHOD)](#dgm-double-geometric-method) | [DUST](#dust) |
-| [DIFFIE-HELLMAN](#diffie-hellman) | [DUSTING ATTACK](#dusting-attack) |
-| [DISTRIBUÉ](#distribué) | [DUST LIMIT](#dust-limit) |
-|  | [DUSTRELAYFEE](#dustrelayfee) |
+| \small [DANDELION](#dandelion) ........................... 1 | \small [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme)  12 |
+| \small [DARKWALLET](#darkwallet) ......................... 2 | \small [DNS SEEDS](#dns-seeds) ........................... 13 |
+| \small [DATABASE/](#database) ............................ 3 | \small [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) . 14 |
+| \small [DB.LOG](#db.log) ................................. 4 | \small [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque)  15 |
+| \small [DDOS](#ddos) ..................................... 5 | \small [DRIVECHAIN](#drivechain) ......................... 16 |
+| \small [DEBUG.LOG](#debug.log) ........................... 6 | \small [DUMMY ELEMENT](#dummy-element) ................... 17 |
+| \small [DÉPÔT](#dépôt) ................................... 7 | \small [DUST](#dust) ..................................... 18 |
+| \small [DGM (DOUBLE GEOMETRIC METHOD)](#dgm-double-geometric-method)  8 | \small [DUSTING ATTACK](#dusting-attack) ................. 19 |
+| \small [DIFFIE-HELLMAN](#diffie-hellman) ................. 9 | \small [DUST LIMIT](#dust-limit) ......................... 20 |
+| \small [DISTRIBUÉ](#distribué) ........................... 10 | \small [DUSTRELAYFEE](#dustrelayfee) ..................... 21 |
+| \small [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract)  11 |  |
 
 ## E
 
 | | |
 |---|---|
-| [ECASH (DAVID CHAUM)](#ecash-david-chaum) | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |
-| [ECASH (XEC)](#ecash-xec) | [ENDIANNESS](#endianness) |
-| [ECDH](#ecdh) | [ENTÊTE DE BLOC](#entête-de-bloc) |
-| [ECDSA (ELLIPTIC CURVE DIGITAL SIGNATURE ALGORITHM)](#ecdsa-elliptic-curve-digital-signature-algorithm) | [ENTRÉE (INPUT)](#entrée-input) |
-| [ECLAIR](#eclair) | [ENTROPIE](#entropie) |
-| [ECLIPSE (ATTAQUE)](#eclipse-attaque) | [EREBUS (ATTAQUE)](#erebus-attaque) |
-| [ÉCOLE AUTRICHIENNE](#école-autrichienne) | [ESMPPS (EQUALIZED SHARED MAXIMUM PAY PER SHARE)](#esmpps-equalized-shared-maximum-pay-per-share) |
-| [ELECTRUM LIGHTNING](#electrum-lightning) | [ÉTIQUETAGE](#étiquetage) |
-| [ELTOO](#eltoo) | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |
+| \small [ECASH (DAVID CHAUM)](#ecash-david-chaum) ......... 1 | \small [EMBRANCHEMENT NATUREL](#embranchement-naturel) ... 10 |
+| \small [ECASH (XEC)](#ecash-xec) ......................... 2 | \small [ENDIANNESS](#endianness) ......................... 11 |
+| \small [ECDH](#ecdh) ..................................... 3 | \small [ENTÊTE DE BLOC](#entête-de-bloc) ................. 12 |
+| \small [ECDSA (ELLIPTIC CURVE DIGITAL SIGNATURE ALGORITHM)](#ecdsa-elliptic-curve-digital-signature-algorithm)  4 | \small [ENTRÉE (INPUT)](#entrée-input) ................... 13 |
+| \small [ECLAIR](#eclair) ................................. 5 | \small [ENTROPIE](#entropie) ............................. 14 |
+| \small [ECLIPSE (ATTAQUE)](#eclipse-attaque) ............. 6 | \small [EREBUS (ATTAQUE)](#erebus-attaque) ............... 15 |
+| \small [ÉCOLE AUTRICHIENNE](#école-autrichienne) ......... 7 | \small [ESMPPS (EQUALIZED SHARED MAXIMUM PAY PER SHARE)](#esmpps-equalized-shared-maximum-pay-per-share)  16 |
+| \small [ELECTRUM LIGHTNING](#electrum-lightning) ......... 8 | \small [ÉTIQUETAGE](#étiquetage) ......................... 17 |
+| \small [ELTOO](#eltoo) ................................... 9 | \small [EXPLORATEUR DE BLOC](#explorateur-de-bloc) ....... 18 |
 
 ## F
 
 | | |
 |---|---|
-| [FARADAY](#faraday) | [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique) |
-| [FEDIMINT](#fedimint) | [FONCTIONNAIRE](#fonctionnaire) |
-| [FEE SNIPING](#fee-sniping) | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |
-| [FEE_ESTIMATES.DAT](#fee_estimates.dat) | [FORCED ADDRESS REUSE](#forced-address-reuse) |
-| [FERME DE MINAGE](#ferme-de-minage) | [FORK](#fork) |
-| [FIAT](#fiat) | [FORK (GIT)](#fork-git) |
-| [FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)](#fibre-fast-internet-bitcoin-relay-engine) | [FORTH](#forth) |
-| [FLAG DAY](#flag-day) | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |
-|  | [FRAIS DE TRANSACTION](#frais-de-transaction) |
+| \small [FARADAY](#faraday) ............................... 1 | \small [FONCTIONNAIRE](#fonctionnaire) ................... 10 |
+| \small [FEDIMINT](#fedimint) ............................. 2 | \small [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) ..... 11 |
+| \small [FEE SNIPING](#fee-sniping) ....................... 3 | \small [FORCED ADDRESS REUSE](#forced-address-reuse) ..... 12 |
+| \small [FEE_ESTIMATES.DAT](#fee_estimates.dat) ........... 4 | \small [FORK](#fork) ..................................... 13 |
+| \small [FERME DE MINAGE](#ferme-de-minage) ............... 5 | \small [FORK (GIT)](#fork-git) ........................... 14 |
+| \small [FIAT](#fiat) ..................................... 6 | \small [FORTH](#forth) ................................... 15 |
+| \small [FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)](#fibre-fast-internet-bitcoin-relay-engine)  7 | \small [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share)  16 |
+| \small [FLAG DAY](#flag-day) ............................. 8 | \small [FRAIS DE TRANSACTION](#frais-de-transaction) ..... 17 |
+| \small [FONCTION DE HACHAGE CRYPTOGRAPHIQUE](#fonction-de-hachage-cryptographique)  9 |  |
 
 ## G
 
 | | |
 |---|---|
-| [GAP LIMIT](#gap-limit) | [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |
-| [GENÈSE (BLOC)](#genèse-bloc) | [GOSSIP](#gossip) |
-| [GETWORK](#getwork) | [GRAINE (SEED)](#graine-seed) |
-| [GIT](#git) | [GUI](#gui) |
-| [GO (GOLANG)](#go-golang) | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |
+| \small [GAP LIMIT](#gap-limit) ........................... 1 | \small [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) ....... 6 |
+| \small [GENÈSE (BLOC)](#genèse-bloc) ..................... 2 | \small [GOSSIP](#gossip) ................................. 7 |
+| \small [GETWORK](#getwork) ............................... 3 | \small [GRAINE (SEED)](#graine-seed) ..................... 8 |
+| \small [GIT](#git) ....................................... 4 | \small [GUI](#gui) ....................................... 9 |
+| \small [GO (GOLANG)](#go-golang) ......................... 5 | \small [GUISETTINGS.INI.BAK](#guisettings.ini.bak) ....... 10 |
 
 ## H
 
 | | |
 |---|---|
-| [HAL FINNEY](#hal-finney) | [HARDWARE WALLET INTERFACE (HWI)](#hardware-wallet-interface-hwi) |
-| [HALVING](#halving) | [HASHCASH](#hashcash) |
-| [HARD FORK](#hard-fork) | [HASHRATE](#hashrate) |
-| [HARDWARE WALLET](#hardware-wallet) | [HMAC-SHA512](#hmac-sha512) |
-|  | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |
+| \small [HAL FINNEY](#hal-finney) ......................... 1 | \small [HASHCASH](#hashcash) ............................. 6 |
+| \small [HALVING](#halving) ............................... 2 | \small [HASHRATE](#hashrate) ............................. 7 |
+| \small [HARD FORK](#hard-fork) ........................... 3 | \small [HMAC-SHA512](#hmac-sha512) ....................... 8 |
+| \small [HARDWARE WALLET](#hardware-wallet) ............... 4 | \small [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) ... 9 |
+| \small [HARDWARE WALLET INTERFACE (HWI)](#hardware-wallet-interface-hwi)  5 |  |
 
 ## I
 
 | | |
 |---|---|
-| [INBOUND CAPACITY](#inbound-capacity) | [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |
-| [INDEXES/TXINDEX/](#indexestxindex) | [INPUT](#input) |
-| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) | [IP_ASN.MAP](#ip_asn.map) |
-|  | [ISSUE](#issue) |
+| \small [INBOUND CAPACITY](#inbound-capacity) ............. 1 | \small [INPUT](#input) ................................... 5 |
+| \small [INDEXES/TXINDEX/](#indexestxindex) ............... 2 | \small [IP_ASN.MAP](#ip_asn.map) ......................... 6 |
+| \small [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd)  3 | \small [ISSUE](#issue) ................................... 7 |
+| \small [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) ..... 4 |  |
 
 ## J
 
 | | |
 |---|---|
-| [JAVA](#java) | [JAVASCRIPT (NODE.JS)](#javascript-node.js) |
-|  | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |
+| \small [JAVA](#java) ..................................... 1 | \small [JBOK (PORTEFEUILLE)](#jbok-portefeuille) ......... 3 |
+| \small [JAVASCRIPT (NODE.JS)](#javascript-node.js) ....... 2 |  |
 
 ## K
 
 | | |
 |---|---|
-| [KNAPSACK SOLVER](#knapsack-solver) | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |
+| \small [KNAPSACK SOLVER](#knapsack-solver) ............... 1 | \small [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer)  2 |
 
 ## L
 
 | | |
 |---|---|
-| [LABEL](#label) | [LIGHTNING NETWORK DAEMON (LND)](#lightning-network-daemon-lnd) |
-| [LCB/FT](#lcbft) | [LIQUID NETWORK](#liquid-network) |
-| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) | [LITTLE-ENDIAN](#little-endian) |
-| [LEVELDB](#leveldb) | [LOCK (.LOCK)](#lock-.lock) |
-| [LIGHTNING LABS](#lightning-labs) | [LOGARITHME DISCRET (PROBLÈME)](#logarithme-discret-problème) |
-| [LIGHTNING NETWORK](#lightning-network) | [LOOP](#loop) |
+| \small [LABEL](#label) ................................... 1 | \small [LIGHTNING NETWORK DAEMON (LND)](#lightning-network-daemon-lnd)  7 |
+| \small [LCB/FT](#lcbft) .................................. 2 | \small [LIQUID NETWORK](#liquid-network) ................. 8 |
+| \small [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) . 3 | \small [LITTLE-ENDIAN](#little-endian) ................... 9 |
+| \small [LEVELDB](#leveldb) ............................... 4 | \small [LOCK (.LOCK)](#lock-.lock) ....................... 10 |
+| \small [LIGHTNING LABS](#lightning-labs) ................. 5 | \small [LOGARITHME DISCRET (PROBLÈME)](#logarithme-discret-problème)  11 |
+| \small [LIGHTNING NETWORK](#lightning-network) ........... 6 | \small [LOOP](#loop) ..................................... 12 |
 
 ## M
 
 | | |
 |---|---|
-| [MAGICAL BITCOIN](#magical-bitcoin) | [MERGE](#merge) |
-| [MAGIC NETWORK](#magic-network) | [MERKLE BLOCK](#merkle-block) |
-| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |
-| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |
-| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) | [MINAGE](#minage) |
-| [MAPPER (TO MAP)](#mapper-to-map) | [MINAGE ÉGOÏSTE](#minage-égoïste) |
-| [MASF (MINER-ACTIVATED SOFT FORK)](#masf-miner-activated-soft-fork) | [MINAGE FUSIONNÉ](#minage-fusionné) |
-| [MAST (MERKELISED ALTERNATIVE SCRIPT TREE)](#mast-merkelised-alternative-script-tree) | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |
-| [MASTER FINGERPRINT](#master-fingerprint) | [MINEUR](#mineur) |
-| [MAX_BLOC_SIZE](#max_bloc_size) | [MINISCRIPT](#miniscript) |
-| [MEMPOOL](#mempool) | [MINITAPSCRIPT](#minitapscript) |
-| [MEMPOOL.DAT](#mempool.dat) | [MODÈLE DE SCRIPT](#modèle-de-script) |
-|  | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |
+| \small [MAGICAL BITCOIN](#magical-bitcoin) ............... 1 | \small [MERKLE BLOCK](#merkle-block) ..................... 14 |
+| \small [MAGIC NETWORK](#magic-network) ................... 2 | \small [MÉTHODE D'ACTIVATION](#méthode-dactivation) ...... 15 |
+| \small [MAJORITÉ ÉCONOMIQUE](#majorité-économique) ....... 3 | \small [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) ....... 16 |
+| \small [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction)  4 | \small [MINAGE](#minage) ................................. 17 |
+| \small [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm)  5 | \small [MINAGE ÉGOÏSTE](#minage-égoïste) ................. 18 |
+| \small [MAPPER (TO MAP)](#mapper-to-map) ................. 6 | \small [MINAGE FUSIONNÉ](#minage-fusionné) ............... 19 |
+| \small [MASF (MINER-ACTIVATED SOFT FORK)](#masf-miner-activated-soft-fork)  7 | \small [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle)  20 |
+| \small [MAST (MERKELISED ALTERNATIVE SCRIPT TREE)](#mast-merkelised-alternative-script-tree)  8 | \small [MINEUR](#mineur) ................................. 21 |
+| \small [MASTER FINGERPRINT](#master-fingerprint) ......... 9 | \small [MINISCRIPT](#miniscript) ......................... 22 |
+| \small [MAX_BLOC_SIZE](#max_bloc_size) ................... 10 | \small [MINITAPSCRIPT](#minitapscript) ................... 23 |
+| \small [MEMPOOL](#mempool) ............................... 11 | \small [MODÈLE DE SCRIPT](#modèle-de-script) ............. 24 |
+| \small [MEMPOOL.DAT](#mempool.dat) ....................... 12 | \small [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) ... 25 |
+| \small [MERGE](#merge) ................................... 13 |  |
 
 ## N
 
 | | |
 |---|---|
-| [NESTED SEGWIT](#nested-segwit) | [NŒUD ÉLAGUÉ](#nœud-élagué) |
-| [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) | [NŒUD SPV (OU NŒUD LÉGER)](#nœud-spv-ou-nœud-léger) |
-| [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) | [NONCE](#nonce) |
-| [NLOCKTIME](#nlocktime) | [NSEQUENCE](#nsequence) |
-| [NŒUD](#nœud) | [NULL DATA](#null-data) |
-| [NŒUD COMPLET](#nœud-complet) | [NULLDUMMY](#nulldummy) |
-|  | [NVERSION](#nversion) |
+| \small [NESTED SEGWIT](#nested-segwit) ................... 1 | \small [NŒUD SPV (OU NŒUD LÉGER)](#nœud-spv-ou-nœud-léger)  8 |
+| \small [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat)  2 | \small [NONCE](#nonce) ................................... 9 |
+| \small [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya)  3 | \small [NSEQUENCE](#nsequence) ........................... 10 |
+| \small [NLOCKTIME](#nlocktime) ........................... 4 | \small [NULL DATA](#null-data) ........................... 11 |
+| \small [NŒUD](#nœud) ..................................... 5 | \small [NULLDUMMY](#nulldummy) ........................... 12 |
+| \small [NŒUD COMPLET](#nœud-complet) ..................... 6 | \small [NVERSION](#nversion) ............................. 13 |
+| \small [NŒUD ÉLAGUÉ](#nœud-élagué) ....................... 7 |  |
 
 ## O
 
 | | |
 |---|---|
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) | [OP_GREATERTHANOREQUAL (`0XA2`)](#op_greaterthanorequal-0xa2) |
-| [OBSOLÈTE (BLOC)](#obsolète-bloc) | [OP_HASH160 (`0XA9`)](#op_hash160-0xa9) |
-| [OCTET (BYTE)](#octet-byte) | [OP_HASH256 (`0XAA`)](#op_hash256-0xaa) |
-| [OFFCHAIN](#offchain) | [OP_IF (`0X63`)](#op_if-0x63) |
-| [ONCHAIN](#onchain) | [OP_IFDUP (`0x73`)](#op_ifdup-0x73) |
-| [ONION_PRIVATE_KEY](#onion_private_key) | [OP_LESSTHAN (`0X9F`)](#op_lessthan-0x9f) |
-| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) | [OP_LESSTHANOREQUAL (`0XA1`)](#op_lessthanorequal-0xa1) |
-| [OP_0 (`0X00`)](#op_0-0x00) | [OP_MAX (`0XA4`)](#op_max-0xa4) |
-| [OP_0NOTEQUAL (`0X92`)](#op_0notequal-0x92) | [OP_MIN (`0XA3`)](#op_min-0xa3) |
-| [OP_1 (`0X51`)](#op_1-0x51) | [OP_NEGATE (`0X8F`)](#op_negate-0x8f) |
-| [OP_1ADD (`0X8B`)](#op_1add-0x8b) | [OP_NIP (`0x77`)](#op_nip-0x77) |
-| [OP_1NEGATE (`0X4F`)](#op_1negate-0x4f) | [OP_NOP (`0X61`)](#op_nop-0x61) |
-| [OP_1SUB (`0X8C`)](#op_1sub-0x8c) | [OP_NOT (`0X91`)](#op_not-0x91) |
-| [OP_2 à OP_16 (`0X52` à `0X60`)](#op_2-à-op_16-0x52-à-0x60) | [OP_NOTIF (`0X64`)](#op_notif-0x64) |
-| [OP_2DROP (`0XD6`)](#op_2drop-0xd6) | [OP_NUMEQUAL (`0X9C`)](#op_numequal-0x9c) |
-| [OP_2DUP (`0X6E`)](#op_2dup-0x6e) | [OP_NUMEQUALVERIFY (`0X9D`)](#op_numequalverify-0x9d) |
-| [OP_2OVER (`0X70`)](#op_2over-0x70) | [OP_NUMNOTEQUAL (`0X9E`)](#op_numnotequal-0x9e) |
-| [OP_2ROT (`0X71`)](#op_2rot-0x71) | [OP_OVER (`0X78`)](#op_over-0x78) |
-| [OP_2SWAP (`0X72`)](#op_2swap-0x72) | [OP_PICK (`0X79`)](#op_pick-0x79) |
-| [OP_3DUP (`0X6F`)](#op_3dup-0x6f) | [OP_PUSHDATA1 (`0x4C`)](#op_pushdata1-0x4c) |
-| [OP_ABS (`0X90`)](#op_abs-0x90) | [OP_PUSHDATA2 (`0x4D`)](#op_pushdata2-0x4d) |
-| [OP_ADD (`0X93`)](#op_add-0x93) | [OP_PUSHDATA4 (`0x4E`)](#op_pushdata4-0x4e) |
-| [OP_BOOLAND (`0X9A`)](#op_booland-0x9a) | [OP_RETURN (`0X6A`)](#op_return-0x6a) |
-| [OP_BOOLOR (`0X9B`)](#op_boolor-0x9b) | [OP_RIPEMD160 (`0XA6`)](#op_ripemd160-0xa6) |
-| [OP_CAT (`0X7E`)](#op_cat-0x7e) | [OP_ROLL (`0X7A`)](#op_roll-0x7a) |
-| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) | [OP_ROT (`0X7B`)](#op_rot-0x7b) |
-| [OP_CHECKLOCKTIMEVERIFY (`0XB1`)](#op_checklocktimeverify-0xb1) | [OP_SHA1 (`0XA7`)](#op_sha1-0xa7) |
-| [OP_CHECKMULTISIG (`0XAE`)](#op_checkmultisig-0xae) | [OP_SHA256 (`0XA8`)](#op_sha256-0xa8) |
-| [OP_CHECKMULTISIGVERIFY (`0XAF`)](#op_checkmultisigverify-0xaf) | [OP_SIZE (`0X82`)](#op_size-0x82) |
-| [OP_CHECKSEQUENCEVERIFY (`0XB2`)](#op_checksequenceverify-0xb2) | [OP_SUB (`0X94`)](#op_sub-0x94) |
-| [OP_CHECKSIG (`0XAC`)](#op_checksig-0xac) | [OP_SUCCESS](#op_success) |
-| [OP_CHECKSIGADD (`0XBA`)](#op_checksigadd-0xba) | [OP_SWAP (`0X7C`)](#op_swap-0x7c) |
-| [OP_CHECKSIGVERIFY (`0XAD`)](#op_checksigverify-0xad) | [OP_TOALTSTACK (`0X6B`)](#op_toaltstack-0x6b) |
-| [OP_CODESEPARATOR (`0XAB`)](#op_codeseparator-0xab) | [OP_TRUE (`0X51`)](#op_true-0x51) |
-| [OP_DEPTH (`0X74`)](#op_depth-0x74) | [OP_TUCK (`0X7D`)](#op_tuck-0x7d) |
-| [OP_DROP (`0X75`)](#op_drop-0x75) | [OP_VER (`0X62`)](#op_ver-0x62) |
-| [OP_DUP (`0X76`)](#op_dup-0x76) | [OP_VERIFY (`0X69`)](#op_verify-0x69) |
-| [OP_ELSE (`0X67`)](#op_else-0x67) | [OP_WITHIN (`0XA5`)](#op_within-0xa5) |
-| [OP_ENDIF (`0X68`)](#op_endif-0x68) | [OPCODES](#opcodes) |
-| [OP_EQUAL (`0X87`)](#op_equal-0x87) | [ORACLE](#oracle) |
-| [OP_EQUALVERIFY (`0X88`)](#op_equalverify-0x88) | [ORPHELIN (BLOC)](#orphelin-bloc) |
-| [OP_EVAL](#op_eval) | [OU EXCLUSIF](#ou-exclusif) |
-| [OP_FALSE (`0X00`)](#op_false-0x00) | [OUTBOUND CAPACITY](#outbound-capacity) |
-| [OP_FROMALTSTACK (`0X6C`)](#op_fromaltstack-0x6c) | [OUTPUT](#output) |
-| [OP_GREATERTHAN (`0XA0`)](#op_greaterthan-0xa0) | [OUTPUT LINKING](#output-linking) |
+| \small [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) . 1 | \small [OP_GREATERTHANOREQUAL (`0XA2`)](#op_greaterthanorequal-0xa2)  46 |
+| \small [OBSOLÈTE (BLOC)](#obsolète-bloc) ................. 2 | \small [OP_HASH160 (`0XA9`)](#op_hash160-0xa9) ........... 47 |
+| \small [OCTET (BYTE)](#octet-byte) ....................... 3 | \small [OP_HASH256 (`0XAA`)](#op_hash256-0xaa) ........... 48 |
+| \small [OFFCHAIN](#offchain) ............................. 4 | \small [OP_IF (`0X63`)](#op_if-0x63) ..................... 49 |
+| \small [ONCHAIN](#onchain) ............................... 5 | \small [OP_IFDUP (`0x73`)](#op_ifdup-0x73) ............... 50 |
+| \small [ONION_PRIVATE_KEY](#onion_private_key) ........... 6 | \small [OP_LESSTHAN (`0X9F`)](#op_lessthan-0x9f) ......... 51 |
+| \small [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) ..... 7 | \small [OP_LESSTHANOREQUAL (`0XA1`)](#op_lessthanorequal-0xa1)  52 |
+| \small [OP_0 (`0X00`)](#op_0-0x00) ....................... 8 | \small [OP_MAX (`0XA4`)](#op_max-0xa4) ................... 53 |
+| \small [OP_0NOTEQUAL (`0X92`)](#op_0notequal-0x92) ....... 9 | \small [OP_MIN (`0XA3`)](#op_min-0xa3) ................... 54 |
+| \small [OP_1 (`0X51`)](#op_1-0x51) ....................... 10 | \small [OP_NEGATE (`0X8F`)](#op_negate-0x8f) ............. 55 |
+| \small [OP_1ADD (`0X8B`)](#op_1add-0x8b) ................. 11 | \small [OP_NIP (`0x77`)](#op_nip-0x77) ................... 56 |
+| \small [OP_1NEGATE (`0X4F`)](#op_1negate-0x4f) ........... 12 | \small [OP_NOP (`0X61`)](#op_nop-0x61) ................... 57 |
+| \small [OP_1SUB (`0X8C`)](#op_1sub-0x8c) ................. 13 | \small [OP_NOT (`0X91`)](#op_not-0x91) ................... 58 |
+| \small [OP_2 à OP_16 (`0X52` à `0X60`)](#op_2-à-op_16-0x52-à-0x60)  14 | \small [OP_NOTIF (`0X64`)](#op_notif-0x64) ............... 59 |
+| \small [OP_2DROP (`0XD6`)](#op_2drop-0xd6) ............... 15 | \small [OP_NUMEQUAL (`0X9C`)](#op_numequal-0x9c) ......... 60 |
+| \small [OP_2DUP (`0X6E`)](#op_2dup-0x6e) ................. 16 | \small [OP_NUMEQUALVERIFY (`0X9D`)](#op_numequalverify-0x9d)  61 |
+| \small [OP_2OVER (`0X70`)](#op_2over-0x70) ............... 17 | \small [OP_NUMNOTEQUAL (`0X9E`)](#op_numnotequal-0x9e) ... 62 |
+| \small [OP_2ROT (`0X71`)](#op_2rot-0x71) ................. 18 | \small [OP_OVER (`0X78`)](#op_over-0x78) ................. 63 |
+| \small [OP_2SWAP (`0X72`)](#op_2swap-0x72) ............... 19 | \small [OP_PICK (`0X79`)](#op_pick-0x79) ................. 64 |
+| \small [OP_3DUP (`0X6F`)](#op_3dup-0x6f) ................. 20 | \small [OP_PUSHDATA1 (`0x4C`)](#op_pushdata1-0x4c) ....... 65 |
+| \small [OP_ABS (`0X90`)](#op_abs-0x90) ................... 21 | \small [OP_PUSHDATA2 (`0x4D`)](#op_pushdata2-0x4d) ....... 66 |
+| \small [OP_ADD (`0X93`)](#op_add-0x93) ................... 22 | \small [OP_PUSHDATA4 (`0x4E`)](#op_pushdata4-0x4e) ....... 67 |
+| \small [OP_BOOLAND (`0X9A`)](#op_booland-0x9a) ........... 23 | \small [OP_RETURN (`0X6A`)](#op_return-0x6a) ............. 68 |
+| \small [OP_BOOLOR (`0X9B`)](#op_boolor-0x9b) ............. 24 | \small [OP_RIPEMD160 (`0XA6`)](#op_ripemd160-0xa6) ....... 69 |
+| \small [OP_CAT (`0X7E`)](#op_cat-0x7e) ................... 25 | \small [OP_ROLL (`0X7A`)](#op_roll-0x7a) ................. 70 |
+| \small [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv)  26 | \small [OP_ROT (`0X7B`)](#op_rot-0x7b) ................... 71 |
+| \small [OP_CHECKLOCKTIMEVERIFY (`0XB1`)](#op_checklocktimeverify-0xb1)  27 | \small [OP_SHA1 (`0XA7`)](#op_sha1-0xa7) ................. 72 |
+| \small [OP_CHECKMULTISIG (`0XAE`)](#op_checkmultisig-0xae)  28 | \small [OP_SHA256 (`0XA8`)](#op_sha256-0xa8) ............. 73 |
+| \small [OP_CHECKMULTISIGVERIFY (`0XAF`)](#op_checkmultisigverify-0xaf)  29 | \small [OP_SIZE (`0X82`)](#op_size-0x82) ................. 74 |
+| \small [OP_CHECKSEQUENCEVERIFY (`0XB2`)](#op_checksequenceverify-0xb2)  30 | \small [OP_SUB (`0X94`)](#op_sub-0x94) ................... 75 |
+| \small [OP_CHECKSIG (`0XAC`)](#op_checksig-0xac) ......... 31 | \small [OP_SUCCESS](#op_success) ......................... 76 |
+| \small [OP_CHECKSIGADD (`0XBA`)](#op_checksigadd-0xba) ... 32 | \small [OP_SWAP (`0X7C`)](#op_swap-0x7c) ................. 77 |
+| \small [OP_CHECKSIGVERIFY (`0XAD`)](#op_checksigverify-0xad)  33 | \small [OP_TOALTSTACK (`0X6B`)](#op_toaltstack-0x6b) ..... 78 |
+| \small [OP_CODESEPARATOR (`0XAB`)](#op_codeseparator-0xab)  34 | \small [OP_TRUE (`0X51`)](#op_true-0x51) ................. 79 |
+| \small [OP_DEPTH (`0X74`)](#op_depth-0x74) ............... 35 | \small [OP_TUCK (`0X7D`)](#op_tuck-0x7d) ................. 80 |
+| \small [OP_DROP (`0X75`)](#op_drop-0x75) ................. 36 | \small [OP_VER (`0X62`)](#op_ver-0x62) ................... 81 |
+| \small [OP_DUP (`0X76`)](#op_dup-0x76) ................... 37 | \small [OP_VERIFY (`0X69`)](#op_verify-0x69) ............. 82 |
+| \small [OP_ELSE (`0X67`)](#op_else-0x67) ................. 38 | \small [OP_WITHIN (`0XA5`)](#op_within-0xa5) ............. 83 |
+| \small [OP_ENDIF (`0X68`)](#op_endif-0x68) ............... 39 | \small [OPCODES](#opcodes) ............................... 84 |
+| \small [OP_EQUAL (`0X87`)](#op_equal-0x87) ............... 40 | \small [ORACLE](#oracle) ................................. 85 |
+| \small [OP_EQUALVERIFY (`0X88`)](#op_equalverify-0x88) ... 41 | \small [ORPHELIN (BLOC)](#orphelin-bloc) ................. 86 |
+| \small [OP_EVAL](#op_eval) ............................... 42 | \small [OU EXCLUSIF](#ou-exclusif) ....................... 87 |
+| \small [OP_FALSE (`0X00`)](#op_false-0x00) ............... 43 | \small [OUTBOUND CAPACITY](#outbound-capacity) ........... 88 |
+| \small [OP_FROMALTSTACK (`0X6C`)](#op_fromaltstack-0x6c) . 44 | \small [OUTPUT](#output) ................................. 89 |
+| \small [OP_GREATERTHAN (`0XA0`)](#op_greaterthan-0xa0) ... 45 | \small [OUTPUT LINKING](#output-linking) ................. 90 |
 
 ## P
 
 | | |
 |---|---|
-| [P2PK](#p2pk) | [PÉRIODE DE MATURITÉ](#période-de-maturité) |
-| [P2PKH](#p2pkh) | [PETIT-BOUTISTE](#petit-boutiste) |
-| [P2P TRANSPORT V2](#p2p-transport-v2) | [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](#phrase-de-récupération-mnémonique) |
-| [P2MS](#p2ms) | [POOL](#pool) |
-| [P2SH](#p2sh) | [POOL DE MINAGE](#pool-de-minage) |
-| [P2SH-P2WPKH](#p2sh-p2wpkh) | [POOL HOPPING](#pool-hopping) |
-| [P2SH-P2WSH](#p2sh-p2wsh) | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |
-| [P2TR](#p2tr) | [PORTEFEUILLE](#portefeuille) |
-| [P2WPKH](#p2wpkh) | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |
-| [P2WSH](#p2wsh) | [PORTEFEUILLE FROID](#portefeuille-froid) |
-| [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) | [POT (PAY ON TARGET)](#pot-pay-on-target) |
-| [PAIR ENTRANT](#pair-entrant) | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |
-| [PAIR SORTANT](#pair-sortant) | [PPLNSG (PAY PER LAST N SHARES GROUPED)](#pplnsg-pay-per-last-n-shares-grouped) |
-| [PASSPHRASE (BIP39)](#passphrase-bip39) | [PPS (PAY PER SHARE)](#pps-pay-per-share) |
-| [PATOSHI](#patoshi) | [PRÉFIXES BINAIRES](#préfixes-binaires) |
-| [PAYJOIN](#payjoin) | [PREUVE DE TRAVAIL](#preuve-de-travail) |
-| [PAYNYM](#paynym) | [PROOF-OF-WORK](#proof-of-work) |
-| [PBKDF2](#pbkdf2) | [PROP (PROPORTIONAL)](#prop-proportional) |
-| [PEER DISCOVERY](#peer-discovery) | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |
-| [PEERS.DAT](#peers.dat) | [PULL REQUEST](#pull-request) |
-| [PERCOLATION](#percolation) | [PYTHON](#python) |
+| \small [P2PK](#p2pk) ..................................... 1 | \small [PÉRIODE DE MATURITÉ](#période-de-maturité) ....... 22 |
+| \small [P2PKH](#p2pkh) ................................... 2 | \small [PETIT-BOUTISTE](#petit-boutiste) ................. 23 |
+| \small [P2P TRANSPORT V2](#p2p-transport-v2) ............. 3 | \small [PHRASE DE RÉCUPÉRATION (MNÉMONIQUE)](#phrase-de-récupération-mnémonique)  24 |
+| \small [P2MS](#p2ms) ..................................... 4 | \small [POOL](#pool) ..................................... 25 |
+| \small [P2SH](#p2sh) ..................................... 5 | \small [POOL DE MINAGE](#pool-de-minage) ................. 26 |
+| \small [P2SH-P2WPKH](#p2sh-p2wpkh) ....................... 6 | \small [POOL HOPPING](#pool-hopping) ..................... 27 |
+| \small [P2SH-P2WSH](#p2sh-p2wsh) ......................... 7 | \small [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor)  28 |
+| \small [P2TR](#p2tr) ..................................... 8 | \small [PORTEFEUILLE](#portefeuille) ..................... 29 |
+| \small [P2WPKH](#p2wpkh) ................................. 9 | \small [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel)  30 |
+| \small [P2WSH](#p2wsh) ................................... 10 | \small [PORTEFEUILLE FROID](#portefeuille-froid) ......... 31 |
+| \small [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) ............. 11 | \small [POT (PAY ON TARGET)](#pot-pay-on-target) ......... 32 |
+| \small [PAIR ENTRANT](#pair-entrant) ..................... 12 | \small [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares)  33 |
+| \small [PAIR SORTANT](#pair-sortant) ..................... 13 | \small [PPLNSG (PAY PER LAST N SHARES GROUPED)](#pplnsg-pay-per-last-n-shares-grouped)  34 |
+| \small [PASSPHRASE (BIP39)](#passphrase-bip39) ........... 14 | \small [PPS (PAY PER SHARE)](#pps-pay-per-share) ......... 35 |
+| \small [PATOSHI](#patoshi) ............................... 15 | \small [PRÉFIXES BINAIRES](#préfixes-binaires) ........... 36 |
+| \small [PAYJOIN](#payjoin) ............................... 16 | \small [PREUVE DE TRAVAIL](#preuve-de-travail) ........... 37 |
+| \small [PAYNYM](#paynym) ................................. 17 | \small [PROOF-OF-WORK](#proof-of-work) ................... 38 |
+| \small [PBKDF2](#pbkdf2) ................................. 18 | \small [PROP (PROPORTIONAL)](#prop-proportional) ......... 39 |
+| \small [PEER DISCOVERY](#peer-discovery) ................. 19 | \small [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) ............. 40 |
+| \small [PEERS.DAT](#peers.dat) ........................... 20 | \small [PULL REQUEST](#pull-request) ..................... 41 |
+| \small [PERCOLATION](#percolation) ....................... 21 | \small [PYTHON](#python) ................................. 42 |
 
 ## Q
 
 | | |
 |---|---|
-|  | [QUBIT](#qubit) |
+| \small [QUBIT](#qubit) ................................... 1 |  |
 
 ## R
 
 | | |
 |---|---|
-| [RACINE DE MERKLE](#racine-de-merkle) | [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) | [RESYNCHRONISATION](#resynchronisation) |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) | [RICOCHET](#ricochet) |
-| [REDEEMSCRIPT](#redeemscript) | [RIPEMD160](#ripemd160) |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) | [RPOW (REUSABLE PROOFS OF WORK)](#rpow-reusable-proofs-of-work) |
-| [RÉORGANISATION](#réorganisation) | [RSMPPS (RECENT SHARED MAXIMUM PAY PER SHARE)](#rsmpps-recent-shared-maximum-pay-per-share) |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) | [RUST](#rust) |
-|  | [RUST-LIGHTNING](#rust-lightning) |
+| \small [RACINE DE MERKLE](#racine-de-merkle) ............. 1 | \small [RESYNCHRONISATION](#resynchronisation) ........... 11 |
+| \small [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) ....... 2 | \small [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse)  12 |
+| \small [RÉCOMPENSE DE BLOC](#récompense-de-bloc) ......... 3 | \small [RICOCHET](#ricochet) ............................. 13 |
+| \small [RÉCURSIF (COVENANT)](#récursif-covenant) ......... 4 | \small [RIPEMD160](#ripemd160) ........................... 14 |
+| \small [REDEEMSCRIPT](#redeemscript) ..................... 5 | \small [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call)  15 |
+| \small [RÈGLES DE CONSENSUS](#règles-de-consensus) ....... 6 | \small [RPOW (REUSABLE PROOFS OF WORK)](#rpow-reusable-proofs-of-work)  16 |
+| \small [RÈGLES DE STANDARDISATION](#règles-de-standardisation)  7 | \small [RSMPPS (RECENT SHARED MAXIMUM PAY PER SHARE)](#rsmpps-recent-shared-maximum-pay-per-share)  17 |
+| \small [RÉORGANISATION](#réorganisation) ................. 8 | \small [RUST](#rust) ..................................... 18 |
+| \small [RÉSEAU BITCOIN](#réseau-bitcoin) ................. 9 | \small [RUST-LIGHTNING](#rust-lightning) ................. 19 |
+| \small [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement)  10 |  |
 
 ## S
 
 | | |
 |---|---|
-| [SAMOURAI WALLET](#samourai-wallet) | [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |
-| [SATOSHI (SAT)](#satoshi-sat) | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |
-| [SATOSHI NAKAMOTO](#satoshi-nakamoto) | [SIGHASH FLAG](#sighash-flag) |
-| [SCALA](#scala) | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) | [SIGHASH_NONE | SIGHASH_ANYONECANPAY (0X82)](#sighash_none-sighash_anyonecanpay-0x82) |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |
-| [SCRIPT](#script) | [SIGHASH_SINGLE | SIGHASH_ANYONECANPAY (0X83)](#sighash_single-sighash_anyonecanpay-0x83) |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) | [SIGNATURE NUMÉRIQUE](#signature-numérique) |
-| [SCRIPTPUBKEY](#scriptpubkey) | [SIGNET](#signet) |
-| [SCRIPTSIG](#scriptsig) | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |
-| [SCRIPTWITNESS](#scriptwitness) | [SLIP (SATOSHI LABS IMPROVEMENT PROPOSALS)](#slip-satoshi-labs-improvement-proposals) |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) | [SMPPS (SHARED MAXIMUM PAY PER SHARE)](#smpps-shared-maximum-pay-per-share) |
-| [SECP256K1](#secp256k1) | [SOFT FORK](#soft-fork) |
-| [SEED NODES](#seed-nodes) | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |
-| [SEGWIT](#segwit) | [SOROBAN](#soroban) |
-| [SEGWIT2X](#segwit2x) | [SORTIE (OUTPUT)](#sortie-output) |
-| [SEGWIT V0](#segwit-v0) | [SORTIE NON RENTABLE](#sortie-non-rentable) |
-| [SEGWIT V1](#segwit-v1) | [SPEEDY TRIAL](#speedy-trial) |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) | [SPOF (POINT DE DÉFAILLANCE UNIQUE)](#spof-point-de-défaillance-unique) |
-| [SELF-CUSTODY](#self-custody) | [SPREAD (WST)](#spread-wst) |
-| [SELFISH MINING](#selfish-mining) | [STABLECOIN](#stablecoin) |
-| [SHA256](#sha256) | [STALE BLOCK](#stale-block) |
-| [SHA512](#sha512) | [STONEWALL X2](#stonewall-x2) |
-| [SHAREDCOIN](#sharedcoin) | [STRATUM](#stratum) |
-| [SHOR (ALGORITHME)](#shor-algorithme) | [STRATUM V2](#stratum-v2) |
-| [SIDECHAIN](#sidechain) | [SUBVENTION DE BLOC](#subvention-de-bloc) |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) | [SURCOUCHE (LAYER)](#surcouche-layer) |
-| [SIGHASH_ALL | SIGHASH_ANYONECANPAY (0X81)](#sighash_all-sighash_anyonecanpay-0x81) | [SYNCHRONISATION INITIALE D'UN NŒUD (IBD)](#synchronisation-initiale-dun-nœud-ibd) |
+| \small [SAMOURAI WALLET](#samourai-wallet) ............... 1 | \small [SIGHASH_ANYPREVOUT](#sighash_anyprevout) ......... 29 |
+| \small [SATOSHI (SAT)](#satoshi-sat) ..................... 2 | \small [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript)  30 |
+| \small [SATOSHI NAKAMOTO](#satoshi-nakamoto) ............. 3 | \small [SIGHASH FLAG](#sighash-flag) ..................... 31 |
+| \small [SCALA](#scala) ................................... 4 | \small [SIGHASH_NONE (0X02)](#sighash_none-0x02) ......... 32 |
+| \small [SCHNORR (PROTOCOLE)](#schnorr-protocole) ......... 5 | \small [SIGHASH_NONE | SIGHASH_ANYONECANPAY (0X82)](#sighash_none-sighash_anyonecanpay-0x82)  33 |
+| \small [SCORE (SCORE BASED METHOD)](#score-score-based-method)  6 | \small [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) ..... 34 |
+| \small [SCRIPT](#script) ................................. 7 | \small [SIGHASH_SINGLE | SIGHASH_ANYONECANPAY (0X83)](#sighash_single-sighash_anyonecanpay-0x83)  35 |
+| \small [SCRIPTLESS SCRIPTS](#scriptless-scripts) ......... 8 | \small [SIGNATURE NUMÉRIQUE](#signature-numérique) ....... 36 |
+| \small [SCRIPTPUBKEY](#scriptpubkey) ..................... 9 | \small [SIGNET](#signet) ................................. 37 |
+| \small [SCRIPTSIG](#scriptsig) ........................... 10 | \small [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations)  38 |
+| \small [SCRIPTWITNESS](#scriptwitness) ................... 11 | \small [SLIP (SATOSHI LABS IMPROVEMENT PROPOSALS)](#slip-satoshi-labs-improvement-proposals)  39 |
+| \small [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit)  12 | \small [SMPPS (SHARED MAXIMUM PAY PER SHARE)](#smpps-shared-maximum-pay-per-share)  40 |
+| \small [SECP256K1](#secp256k1) ........................... 13 | \small [SOFT FORK](#soft-fork) ........................... 41 |
+| \small [SEED NODES](#seed-nodes) ......................... 14 | \small [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum)  42 |
+| \small [SEGWIT](#segwit) ................................. 15 | \small [SOROBAN](#soroban) ............................... 43 |
+| \small [SEGWIT2X](#segwit2x) ............................. 16 | \small [SORTIE (OUTPUT)](#sortie-output) ................. 44 |
+| \small [SEGWIT V0](#segwit-v0) ........................... 17 | \small [SORTIE NON RENTABLE](#sortie-non-rentable) ....... 45 |
+| \small [SEGWIT V1](#segwit-v1) ........................... 18 | \small [SPEEDY TRIAL](#speedy-trial) ..................... 46 |
+| \small [SÉLECTION DES PIÈCES](#sélection-des-pièces) ..... 19 | \small [SPOF (POINT DE DÉFAILLANCE UNIQUE)](#spof-point-de-défaillance-unique)  47 |
+| \small [SELF-CUSTODY](#self-custody) ..................... 20 | \small [SPREAD (WST)](#spread-wst) ....................... 48 |
+| \small [SELFISH MINING](#selfish-mining) ................. 21 | \small [STABLECOIN](#stablecoin) ......................... 49 |
+| \small [SHA256](#sha256) ................................. 22 | \small [STALE BLOCK](#stale-block) ....................... 50 |
+| \small [SHA512](#sha512) ................................. 23 | \small [STONEWALL X2](#stonewall-x2) ..................... 51 |
+| \small [SHAREDCOIN](#sharedcoin) ......................... 24 | \small [STRATUM](#stratum) ............................... 52 |
+| \small [SHOR (ALGORITHME)](#shor-algorithme) ............. 25 | \small [STRATUM V2](#stratum-v2) ......................... 53 |
+| \small [SIDECHAIN](#sidechain) ........................... 26 | \small [SUBVENTION DE BLOC](#subvention-de-bloc) ......... 54 |
+| \small [SIGHASH_ALL (0X01)](#sighash_all-0x01) ........... 27 | \small [SURCOUCHE (LAYER)](#surcouche-layer) ............. 55 |
+| \small [SIGHASH_ALL | SIGHASH_ANYONECANPAY (0X81)](#sighash_all-sighash_anyonecanpay-0x81)  28 | \small [SYNCHRONISATION INITIALE D'UN NŒUD (IBD)](#synchronisation-initiale-dun-nœud-ibd)  56 |
 
 ## T
 
 | | |
 |---|---|
-| [TAPROOT](#taproot) | [TIMELOCK](#timelock) |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) | [TPRV](#tprv) |
-| [TAPSCRIPT](#tapscript) | [TPUB](#tpub) |
-| [TARO](#taro) | [TRANSACTION (TX)](#transaction-tx) |
-| [TAUX DE HACHAGE](#taux-de-hachage) | [TRANSACTION COINBASE](#transaction-coinbase) |
-| [TCP (TRANSMISSION CONTROL PROTOCOL)](#tcp-transmission-control-protocol) | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) | [TUMBLEBIT](#tumblebit) |
-| [TESTNET](#testnet) | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |
-| [TIDES (TRANSPARENT INDEX OF DISTINCT EXTENDED SHARES)](#tides-transparent-index-of-distinct-extended-shares) | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |
+| \small [TAPROOT](#taproot) ............................... 1 | \small [TIMELOCK](#timelock) ............................. 10 |
+| \small [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol)  2 | \small [TPRV](#tprv) ..................................... 11 |
+| \small [TAPSCRIPT](#tapscript) ........................... 3 | \small [TPUB](#tpub) ..................................... 12 |
+| \small [TARO](#taro) ..................................... 4 | \small [TRANSACTION (TX)](#transaction-tx) ............... 13 |
+| \small [TAUX DE HACHAGE](#taux-de-hachage) ............... 5 | \small [TRANSACTION COINBASE](#transaction-coinbase) ..... 14 |
+| \small [TCP (TRANSMISSION CONTROL PROTOCOL)](#tcp-transmission-control-protocol)  6 | \small [TRANSACTION D'ENGAGEMENT](#transaction-dengagement)  15 |
+| \small [TÉMOIN DE TRANSACTION](#témoin-de-transaction) ... 7 | \small [TUMBLEBIT](#tumblebit) ........................... 16 |
+| \small [TESTNET](#testnet) ............................... 8 | \small [TWO-WAY PEG (2WP)](#two-way-peg-2wp) ............. 17 |
+| \small [TIDES (TRANSPARENT INDEX OF DISTINCT EXTENDED SHARES)](#tides-transparent-index-of-distinct-extended-shares)  9 | \small [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier)  18 |
 
 ## U
 
 | | |
 |---|---|
-| [UASF (USER-ACTIVATED SOFT FORK)](#uasf-user-activated-soft-fork) | [UPUB](#upub) |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) | [URI (UNIFORM RESOURCE IDENTIFIER)](#uri-uniform-resource-identifier) |
-| [UPRV](#uprv) | [UTXO](#utxo) |
-|  | [UTXO SET](#utxo-set) |
+| \small [UASF (USER-ACTIVATED SOFT FORK)](#uasf-user-activated-soft-fork)  1 | \small [URI (UNIFORM RESOURCE IDENTIFIER)](#uri-uniform-resource-identifier)  5 |
+| \small [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol)  2 | \small [UTXO](#utxo) ..................................... 6 |
+| \small [UPRV](#uprv) ..................................... 3 | \small [UTXO SET](#utxo-set) ............................. 7 |
+| \small [UPUB](#upub) ..................................... 4 |  |
 
 ## V
 
 | | |
 |---|---|
-| [VANITY (ADDRESS)](#vanity-address) | [VPRV](#vprv) |
-| [VANITYGEN](#vanitygen) | [VPUB](#vpub) |
+| \small [VANITY (ADDRESS)](#vanity-address) ............... 1 | \small [VPRV](#vprv) ..................................... 3 |
+| \small [VANITYGEN](#vanitygen) ........................... 2 | \small [VPUB](#vpub) ..................................... 4 |
 
 ## W
 
 | | |
 |---|---|
-| [WABISABI](#wabisabi) | [WATCHMEN](#watchmen) |
-| [WALLET](#wallet) | [WATCH-ONLY WALLET](#watch-only-wallet) |
-| [WALLET.DAT](#wallet.dat) | [WHIRLPOOL](#whirlpool) |
-| [WALLETS/DB.LOG](#walletsdb.log) | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) | [WITNESSSCRIPT](#witnessscript) |
-| [WASABI WALLET](#wasabi-wallet) | [WTXID](#wtxid) |
+| \small [WABISABI](#wabisabi) ............................. 1 | \small [WATCHMEN](#watchmen) ............................. 7 |
+| \small [WALLET](#wallet) ................................. 2 | \small [WATCH-ONLY WALLET](#watch-only-wallet) ........... 8 |
+| \small [WALLET.DAT](#wallet.dat) ......................... 3 | \small [WHIRLPOOL](#whirlpool) ........................... 9 |
+| \small [WALLETS/DB.LOG](#walletsdb.log) .................. 4 | \small [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) ....... 10 |
+| \small [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif)  5 | \small [WITNESSSCRIPT](#witnessscript) ................... 11 |
+| \small [WASABI WALLET](#wasabi-wallet) ................... 6 | \small [WTXID](#wtxid) ................................... 12 |
 
 ## X
 
 | | |
 |---|---|
-| [XOR](#xor) | [XPRV](#xprv) |
-|  | [XPUB](#xpub) |
+| \small [XOR](#xor) ....................................... 1 | \small [XPUB](#xpub) ..................................... 3 |
+| \small [XPRV](#xprv) ..................................... 2 |  |
 
 ## Y
 
 | | |
 |---|---|
-| [YPRV](#yprv) | [YPUB](#ypub) |
+| \small [YPRV](#yprv) ..................................... 1 | \small [YPUB](#ypub) ..................................... 2 |
 
 ## Z
 
 | | |
 |---|---|
-| [ZEROCONF](#zeroconf) | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |
-| [ZEROLINK](#zerolink) | [ZPRV](#zprv) |
-| [ZEROSYNC](#zerosync) | [ZPUB](#zpub) |
+| \small [ZEROCONF](#zeroconf) ............................. 1 | \small [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof)  4 |
+| \small [ZEROLINK](#zerolink) ............................. 2 | \small [ZPRV](#zprv) ..................................... 5 |
+| \small [ZEROSYNC](#zerosync) ............................. 3 | \small [ZPUB](#zpub) ..................................... 6 |
 
 
 \newpage
