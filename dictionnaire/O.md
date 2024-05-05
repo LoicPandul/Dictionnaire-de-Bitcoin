@@ -68,7 +68,7 @@ Pousse la valeur `-1` sur la pile. Cet opcode est utilisé dans les scripts pour
 
 Soustrait `1` à la valeur en haut de la pile.
 
-## OP 2 à OP 16 (0X52 à 0X60)
+## OP 2 - OP 16 (0X52 - 0X60)
 
 Les opcodes de OP_2 jusqu'à OP_16 poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `ScriptPubKey` pour un multisig 2/3 : `OP_2 Clé publique A Clé publique B Clé publique C OP_3 OP_CHECKMULTISIG`
 
@@ -251,7 +251,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 
 Exécute la portion suivante du script si la valeur au sommet de la pile est non nulle (vraie). Si la valeur est nulle (fausse), ces opérations sont sautées, passant directement à celles après `OP_ELSE`, s'il est présent. `OP_IF` permet d'initier une structure de contrôle conditionnelle dans un script. Il détermine le flux de contrôle dans un script en fonction d'une condition fournie au moment de l'exécution de la transaction. `OP_IF` s'utilise avec `OP_ELSE` et `OP_ENDIF` de la manière suivante : `<condition> OP_IF <opérations si la condition est vraie> OP_ELSE <opérations si la condition est fausse> OP_ENDIF`.
 
-## OP IFDUP (0x73)
+## OP IFDUP (0X73)
 
 Duplique le sommet de la pile si celui-ci est non nul. Si la valeur en haut de la pile est vraie (c'est-à-dire non nulle), cette valeur est dupliquée sur la pile ; sinon, la pile reste inchangée.
 
@@ -275,7 +275,7 @@ Sélectionne le plus petit des deux éléments en haut de la pile et le pousse s
 
 Inverse le signe de l'élément supérieur de la pile. Si la valeur est positive, elle devient négative, et vice versa.
 
-## OP NIP (0x77)
+## OP NIP (0X77)
 
 Supprime l'élément situé juste en dessous du sommet de la pile (le second en partant du haut).
 
@@ -315,15 +315,15 @@ Duplique le deuxième élément à partir du haut de la pile et le place sur le 
 
 Duplique un élément de la pile et le place en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_PICK` va dupliquer le quatrième élément de la pile en partant du sommet, et il va placer cette copie au sommet.
 
-## OP PUSHDATA1 (0x4C)
+## OP PUSHDATA1 (0X4C)
 
 Pousse une certaine quantité de données sur la pile. Il est suivi d'un octet qui indique la longueur des données à pousser (jusqu'à 255 octets). Cet opcode est utilisé pour inclure des données de taille variable dans les scripts.
 
-## OP PUSHDATA2 (0x4D)
+## OP PUSHDATA2 (0X4D)
 
 Permet de pousser une grande quantité de données sur la pile. Il est suivi de deux octets (petit-boutistes) qui spécifient la longueur des données à pousser (jusqu'à 65535 octets). Il est utilisé pour insérer des données plus volumineuses dans les scripts.
 
-## OP PUSHDATA4 (0x4E)
+## OP PUSHDATA4 (0X4E)
 
 Permet de pousser une très grande quantité de données sur la pile. Il est suivi de quatre octets (petit-boutistes) qui indiquent la longueur des données à pousser (jusqu'à 4 294 967 295 octets). Cet opcode est utilisé pour insérer de très grandes données dans les scripts, bien que son usage soit extrêmement rare en raison des limitations pratiques de la taille des transactions.
 
