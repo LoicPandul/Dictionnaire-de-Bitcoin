@@ -34,7 +34,7 @@ header-includes:
 | [ANCESTOR MINING](#ancestor-mining) |    17 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    22 |
 | [ANCHOR OUTPUTS](#anchor-outputs) |    17 | [ATLC](#atlc)                  |    22 |
 | [ANCHORS DOT DAT](#anchors-dot-dat) |    17 | [ATOMIC SWAP](#atomic-swap)    |    22 |
-| [ANCRAGE BILATERAL](#ancrage-bilateral) |    17 | [ATTAQUE DES 51 POURCENT](#attaque-des-51-pourcent) |    23 |
+| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |     ? | [ATTAQUE DES 51 POURCENT](#attaque-des-51-pourcent) |    23 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    18 |                                |       |
 | | | | |
 
@@ -121,9 +121,9 @@ header-includes:
 | [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    57 | [CONSENSUS](#consensus)        |    66 |
 | [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    58 | [CONSOLIDATION](#consolidation) |    67 |
 | [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    58 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    67 |
-| [CIBLE DE DIFFICULTE](#cible-de-difficulte) |    58 | [COOKIE ( DOT COOKIE)](#cookie--dot-cookie) |    68 |
+| [CIBLE DE DIFFICULTE](#cible-de-difficulte) |    58 | [COOKIE (DOT COOKIE)](#cookie-dot-cookie) |    68 |
 | [CIOH](#cioh)                  |    59 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    68 |
-| [CLE ETENDUE](#cle-etendue)    |    59 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    68 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |     ? | [COURBE ELLIPTIQUE](#courbe-elliptique) |    68 |
 | [CLE PRIVEE](#cle-privee)      |    60 | [COVENANT](#covenant)          |    68 |
 | [CLE PUBLIQUE](#cle-publique)  |    61 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    69 |
 | [CLI](#cli)                    |    61 | [C PLUS PLUS](#c-plus-plus)    |    69 |
@@ -166,11 +166,11 @@ header-includes:
 | [ECASH (DAVID CHAUM)](#ecash-david-chaum) |    80 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |    81 |
 | [ECASH (XEC)](#ecash-xec)      |    80 | [ENDIANNESS](#endianness)      |    82 |
 | [ECDH](#ecdh)                  |    80 | [ENTETE DE BLOC](#entete-de-bloc) |    82 |
-| [ECDSA](#ecdsa)                |    80 | [ENTREE (INPUT)](#entree-input) |    82 |
+| [ECDSA](#ecdsa)                |    80 | [ENTRÉE (INPUT)](#entrée-input) |     ? |
 | [ECLAIR](#eclair)              |    80 | [ENTROPIE](#entropie)          |    83 |
 | [ECLIPSE (ATTAQUE)](#eclipse-attaque) |    81 | [EREBUS (ATTAQUE)](#erebus-attaque) |    83 |
 | [ECOLE AUTRICHIENNE](#ecole-autrichienne) |    81 | [ESMPPS](#esmpps)              |    83 |
-| [ELECTRUM LIGHTNING](#electrum-lightning) |    81 | [ETIQUETAGE](#etiquetage)      |    84 |
+| [ELECTRUM LIGHTNING](#electrum-lightning) |    81 | [ÉTIQUETAGE](#étiquetage)      |     ? |
 | [ELTOO](#eltoo)                |    81 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |    84 |
 | | | | |
 
@@ -187,7 +187,7 @@ header-includes:
 | [FIAT](#fiat)                  |    87 | [FORTH](#forth)                |    90 |
 | [FIBRE](#fibre)                |    87 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |    90 |
 | [FLAG DAY](#flag-day)          |    87 | [FRAIS DE TRANSACTION](#frais-de-transaction) |    91 |
-| [FONCTION DE HACHAGE](#fonction-de-hachage) |     5 |                                |       |
+| [FONCTION DE HACHAGE](#fonction-de-hachage) |    88 |                                |       |
 | | | | |
 
 
@@ -250,8 +250,8 @@ header-includes:
 | [LABEL](#label)                |   109 | [LIQUID NETWORK](#liquid-network) |   110 |
 | [LCB/FT](#lcbft)               |   109 | [LITTLE-ENDIAN](#little-endian) |   110 |
 | [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |   109 | [LND](#lnd)                    |   110 |
-| [LEVELDB](#leveldb)            |   109 | [LOCK ( DOT LOCK)](#lock--dot-lock) |   110 |
-| [LIGHTNING LABS](#lightning-labs) |   109 | [LOGARITHME DISCRET (PROBLEME)](#logarithme-discret-probleme) |   110 |
+| [LEVELDB](#leveldb)            |   109 | [LOCK (DOT LOCK)](#lock-dot-lock) |   110 |
+| [LIGHTNING LABS](#lightning-labs) |   109 | [LOGARITHME DISCRET](#logarithme-discret) |   110 |
 | [LIGHTNING NETWORK](#lightning-network) |   109 | [LOOP](#loop)                  |   111 |
 | | | | |
 
@@ -261,8 +261,8 @@ header-includes:
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [MAGICAL BITCOIN](#magical-bitcoin) |   113 | [MERKLE BLOCK](#merkle-block)  |   115 |
-| [MAGIC NETWORK](#magic-network) |   113 | [METHODE ACTIVATION](#methode-activation) |   115 |
-| [MAJORITE ECONOMIQUE](#majorite-economique) |   113 | [METHODE GEOMETRIQUE](#methode-geometrique) |   116 |
+| [MAGIC NETWORK](#magic-network) |   113 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |     ? |
+| [MAJORITE ECONOMIQUE](#majorite-economique) |   113 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |     ? |
 | [MALLEABILITE (TRANSACTION)](#malleabilite-transaction) |   113 | [MINAGE](#minage)              |   116 |
 | [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   113 | [MINAGE EGOISTE](#minage-egoiste) |   116 |
 | [MAPPER (TO MAP)](#mapper-to-map) |   114 | [MINAGE FUSIONNE](#minage-fusionne) |   116 |
@@ -294,51 +294,51 @@ header-includes:
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   125 | [OP GREATERTHANOREQUAL (0XA2)](#op-greaterthanorequal-0xa2) |   133 |
-| [OBSOLETE (BLOC)](#obsolete-bloc) |   125 | [OP HASH160 (0XA9)](#op-hash160-0xa9) |   133 |
-| [OCTET (BYTE)](#octet-byte)    |   126 | [OP HASH256 (0XAA)](#op-hash256-0xaa) |   133 |
-| [OFFCHAIN](#offchain)          |   126 | [OP IF (0X63)](#op-if-0x63)    |   133 |
-| [ONCHAIN](#onchain)            |   126 | [OP IFDUP (0X73)](#op-ifdup-0x73) |   133 |
-| [ONION PRIVATE KEY](#onion-private-key) |   126 | [OP LESSTHAN (0X9F)](#op-lessthan-0x9f) |   133 |
-| [ONION V3 PRIVATE KEY](#onion-v3-private-key) |   127 | [OP LESSTHANOREQUAL (0XA1)](#op-lessthanorequal-0xa1) |   134 |
-| [OP 0 (0X00)](#op-0-0x00)      |   127 | [OP MAX (0XA4)](#op-max-0xa4)  |   134 |
-| [OP 0NOTEQUAL (0X92)](#op-0notequal-0x92) |   127 | [OP MIN (0XA3)](#op-min-0xa3)  |   134 |
-| [OP 1 (0X51)](#op-1-0x51)      |   127 | [OP NEGATE (0X8F)](#op-negate-0x8f) |   134 |
-| [OP 1ADD (0X8B)](#op-1add-0x8b) |   127 | [OP NIP (0X77)](#op-nip-0x77)  |   134 |
-| [OP 1NEGATE (0X4F)](#op-1negate-0x4f) |   127 | [OP NOP (0X61)](#op-nop-0x61)  |   134 |
-| [OP 1SUB (0X8C)](#op-1sub-0x8c) |   127 | [OP NOT (0X91)](#op-not-0x91)  |   134 |
-| [OP 2 - OP 16 (0X52 - 0X60)](#op-2-op-16-0x52-0x60) |   127 | [OP NOTIF (0X64)](#op-notif-0x64) |   134 |
-| [OP 2DROP (0XD6)](#op-2drop-0xd6) |   128 | [OP NUMEQUAL (0X9C)](#op-numequal-0x9c) |   135 |
-| [OP 2DUP (0X6E)](#op-2dup-0x6e) |   128 | [OP NUMEQUALVERIFY (0X9D)](#op-numequalverify-0x9d) |   135 |
-| [OP 2OVER (0X70)](#op-2over-0x70) |   128 | [OP NUMNOTEQUAL (0X9E)](#op-numnotequal-0x9e) |   135 |
-| [OP 2ROT (0X71)](#op-2rot-0x71) |   128 | [OP OVER (0X78)](#op-over-0x78) |   135 |
-| [OP 2SWAP (0X72)](#op-2swap-0x72) |   128 | [OP PICK (0X79)](#op-pick-0x79) |   135 |
-| [OP 3DUP (0X6F)](#op-3dup-0x6f) |   128 | [OP PUSHDATA1 (0X4C)](#op-pushdata1-0x4c) |   135 |
-| [OP ABS (0X90)](#op-abs-0x90)  |   128 | [OP PUSHDATA2 (0X4D)](#op-pushdata2-0x4d) |   135 |
-| [OP ADD (0X93)](#op-add-0x93)  |   128 | [OP PUSHDATA4 (0X4E)](#op-pushdata4-0x4e) |   135 |
-| [OP BOOLAND (0X9A)](#op-booland-0x9a) |   128 | [OP RETURN (0X6A)](#op-return-0x6a) |   136 |
-| [OP BOOLOR (0X9B)](#op-boolor-0x9b) |   129 | [OP RIPEMD160 (0XA6)](#op-ripemd160-0xa6) |   136 |
-| [OP CAT (0X7E)](#op-cat-0x7e)  |   129 | [OP ROLL (0X7A)](#op-roll-0x7a) |   136 |
-| [OP CHECKHASHVERIFY (CHV)](#op-checkhashverify-chv) |   129 | [OP ROT (0X7B)](#op-rot-0x7b)  |   136 |
-| [OP CHECKLOCKTIMEVERIFY (0XB1)](#op-checklocktimeverify-0xb1) |   129 | [OP SHA1 (0XA7)](#op-sha1-0xa7) |   136 |
-| [OP CHECKMULTISIG (0XAE)](#op-checkmultisig-0xae) |   130 | [OP SHA256 (0XA8)](#op-sha256-0xa8) |   136 |
-| [OP CHECKMULTISIGVERIFY (0XAF)](#op-checkmultisigverify-0xaf) |   130 | [OP SIZE (0X82)](#op-size-0x82) |   136 |
-| [OP CHECKSEQUENCEVERIFY (0XB2)](#op-checksequenceverify-0xb2) |   130 | [OP SUB (0X94)](#op-sub-0x94)  |   136 |
-| [OP CHECKSIG (0XAC)](#op-checksig-0xac) |   131 | [OP SUCCESS](#op-success)      |   136 |
-| [OP CHECKSIGADD (0XBA)](#op-checksigadd-0xba) |   131 | [OP SWAP (0X7C)](#op-swap-0x7c) |   137 |
-| [OP CHECKSIGVERIFY (0XAD)](#op-checksigverify-0xad) |   131 | [OP TOALTSTACK (0X6B)](#op-toaltstack-0x6b) |   137 |
-| [OP CODESEPARATOR (0XAB)](#op-codeseparator-0xab) |   131 | [OP TRUE (0X51)](#op-true-0x51) |   137 |
-| [OP DEPTH (0X74)](#op-depth-0x74) |   131 | [OP TUCK (0X7D)](#op-tuck-0x7d) |   137 |
-| [OP DROP (0X75)](#op-drop-0x75) |   131 | [OP VER (0X62)](#op-ver-0x62)  |   137 |
-| [OP DUP (0X76)](#op-dup-0x76)  |   132 | [OP VERIFY (0X69)](#op-verify-0x69) |   137 |
-| [OP ELSE (0X67)](#op-else-0x67) |   132 | [OP WITHIN (0XA5)](#op-within-0xa5) |   138 |
-| [OP ENDIF (0X68)](#op-endif-0x68) |   132 | [OPCODES](#opcodes)            |   138 |
-| [OP EQUAL (0X87)](#op-equal-0x87) |   132 | [ORACLE](#oracle)              |   138 |
-| [OP EQUALVERIFY (0X88)](#op-equalverify-0x88) |   132 | [ORPHELIN (BLOC)](#orphelin-bloc) |   138 |
-| [OP EVAL](#op-eval)            |   132 | [OU EXCLUSIF](#ou-exclusif)    |   139 |
-| [OP FALSE (0X00)](#op-false-0x00) |   132 | [OUTBOUND CAPACITY](#outbound-capacity) |   139 |
-| [OP FROMALTSTACK (0X6C)](#op-fromaltstack-0x6c) |   132 | [OUTPUT](#output)              |   139 |
-| [OP GREATERTHAN (0XA0)](#op-greaterthan-0xa0) |   133 | [OUTPUT LINKING](#output-linking) |   140 |
+| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   125 | [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |     ? |
+| [OBSOLÈTE (BLOC)](#obsolète-bloc) |     ? | [OP_HASH160 (0XA9)](#op_hash160-0xa9) |     ? |
+| [OCTET (BYTE)](#octet-byte)    |   126 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |     ? |
+| [OFFCHAIN](#offchain)          |   126 | [OP_IF (0X63)](#op_if-0x63)    |     ? |
+| [ONCHAIN](#onchain)            |   126 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |     ? |
+| [ONION PRIVATE KEY](#onion-private-key) |   126 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |     ? |
+| [ONION V3 PRIVATE KEY](#onion-v3-private-key) |   127 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |     ? |
+| [OP_0 (0X00)](#op_0-0x00)      |     ? | [OP_MAX (0XA4)](#op_max-0xa4)  |     ? |
+| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |     ? | [OP_MIN (0XA3)](#op_min-0xa3)  |     ? |
+| [OP_1 (0X51)](#op_1-0x51)      |     ? | [OP_NEGATE (0X8F)](#op_negate-0x8f) |     ? |
+| [OP_1ADD (0X8B)](#op_1add-0x8b) |     ? | [OP_NIP (0X77)](#op_nip-0x77)  |     ? |
+| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |     ? | [OP_NOP (0X61)](#op_nop-0x61)  |     ? |
+| [OP_1SUB (0X8C)](#op_1sub-0x8c) |     ? | [OP_NOT (0X91)](#op_not-0x91)  |     ? |
+| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |     ? | [OP_NOTIF (0X64)](#op_notif-0x64) |     ? |
+| [OP_2DROP (0XD6)](#op_2drop-0xd6) |     ? | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |     ? |
+| [OP_2DUP (0X6E)](#op_2dup-0x6e) |     ? | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |     ? |
+| [OP_2OVER (0X70)](#op_2over-0x70) |     ? | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |     ? |
+| [OP_2ROT (0X71)](#op_2rot-0x71) |     ? | [OP_OVER (0X78)](#op_over-0x78) |     ? |
+| [OP_2SWAP (0X72)](#op_2swap-0x72) |     ? | [OP_PICK (0X79)](#op_pick-0x79) |     ? |
+| [OP_3DUP (0X6F)](#op_3dup-0x6f) |     ? | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |     ? |
+| [OP_ABS (0X90)](#op_abs-0x90)  |     ? | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |     ? |
+| [OP_ADD (0X93)](#op_add-0x93)  |     ? | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |     ? |
+| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |     ? | [OP_RETURN (0X6A)](#op_return-0x6a) |     ? |
+| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |     ? | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |     ? |
+| [OP_CAT (0X7E)](#op_cat-0x7e)  |     ? | [OP_ROLL (0X7A)](#op_roll-0x7a) |     ? |
+| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |     ? | [OP_ROT (0X7B)](#op_rot-0x7b)  |     ? |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |     ? | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |     ? |
+| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |     ? | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |     ? |
+| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |     ? | [OP_SIZE (0X82)](#op_size-0x82) |     ? |
+| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |     ? | [OP_SUB (0X94)](#op_sub-0x94)  |     ? |
+| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |     ? | [OP_SUCCESS](#op_success)      |     ? |
+| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |     ? | [OP_SWAP (0X7C)](#op_swap-0x7c) |     ? |
+| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |     ? | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |     ? |
+| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |     ? | [OP_TRUE (0X51)](#op_true-0x51) |     ? |
+| [OP_DEPTH (0X74)](#op_depth-0x74) |     ? | [OP_TUCK (0X7D)](#op_tuck-0x7d) |     ? |
+| [OP_DROP (0X75)](#op_drop-0x75) |     ? | [OP_VER (0X62)](#op_ver-0x62)  |     ? |
+| [OP_DUP (0X76)](#op_dup-0x76)  |     ? | [OP_VERIFY (0X69)](#op_verify-0x69) |     ? |
+| [OP_ELSE (0X67)](#op_else-0x67) |     ? | [OP_WITHIN (0XA5)](#op_within-0xa5) |     ? |
+| [OP_ENDIF (0X68)](#op_endif-0x68) |     ? | [OPCODES](#opcodes)            |   138 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |     ? | [ORACLE](#oracle)              |   138 |
+| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |     ? | [ORPHELIN (BLOC)](#orphelin-bloc) |   138 |
+| [OP_EVAL](#op_eval)            |     ? | [OU EXCLUSIF](#ou-exclusif)    |   139 |
+| [OP_FALSE (0X00)](#op_false-0x00) |     ? | [OUTBOUND CAPACITY](#outbound-capacity) |   139 |
+| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |     ? | [OUTPUT](#output)              |   139 |
+| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |     ? | [OUTPUT LINKING](#output-linking) |   140 |
 | | | | |
 
 
@@ -348,7 +348,7 @@ header-includes:
 | | | | |
 | [P2PK](#p2pk)                  |   142 | [PERIODE DE MATURITE](#periode-de-maturite) |   150 |
 | [P2PKH](#p2pkh)                |   142 | [PETIT-BOUTISTE](#petit-boutiste) |   150 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |   142 | [PHRASE DE RECUPERATION](#phrase-de-recuperation) |   150 |
+| [P2P TRANSPORT V2](#p2p-transport-v2) |   142 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |     ? |
 | [P2MS](#p2ms)                  |   142 | [POOL](#pool)                  |   150 |
 | [P2SH](#p2sh)                  |   143 | [POOL DE MINAGE](#pool-de-minage) |   151 |
 | [P2SH-P2WPKH](#p2sh-p2wpkh)    |   143 | [POOL HOPPING](#pool-hopping)  |   151 |
@@ -383,13 +383,13 @@ header-includes:
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [RACINE DE MERKLE](#racine-de-merkle) |   158 | [RESYNCHRONISATION](#resynchronisation) |   160 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   158 | [REUTILISATION ADRESSE](#reutilisation-adresse) |   161 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   158 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |     ? |
 | [RECOMPENSE DE BLOC](#recompense-de-bloc) |   158 | [RICOCHET](#ricochet)          |   161 |
 | [RECURSIF (COVENANT)](#recursif-covenant) |   158 | [RIPEMD160](#ripemd160)        |   161 |
 | [REDEEMSCRIPT](#redeemscript)  |   159 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   162 |
 | [REGLES DE CONSENSUS](#regles-de-consensus) |   159 | [RPOW](#rpow)                  |   162 |
 | [REGLES DE STANDARDISATION](#regles-de-standardisation) |   159 | [RSMPPS](#rsmpps)              |   162 |
-| [REORGANISATION](#reorganisation) |   159 | [RUST](#rust)                  |   162 |
+| [RÉORGANISATION](#réorganisation) |     ? | [RUST](#rust)                  |   162 |
 | [RESEAU BITCOIN](#reseau-bitcoin) |   160 | [RUST-LIGHTNING](#rust-lightning) |   163 |
 | [RESISTANCE AU PARTITIONNEMENT](#resistance-au-partitionnement) |   160 |                                |       |
 | | | | |
@@ -410,7 +410,7 @@ header-includes:
 | [SCRIPTPUBKEY](#scriptpubkey)  |   166 | [SIGNET](#signet)              |   173 |
 | [SCRIPTSIG](#scriptsig)        |   166 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   174 |
 | [SCRIPTWITNESS](#scriptwitness) |   167 | [SLIP](#slip)                  |   174 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   167 | [SMPPS](#smpps)                |   175 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   167 | [SMPPS](#smpps)                |   174 |
 | [SECP256K1](#secp256k1)        |   167 | [SOFT FORK](#soft-fork)        |   175 |
 | [SEED NODES](#seed-nodes)      |   168 | [SOMME DE CONTROLE (CHECKSUM)](#somme-de-controle-checksum) |   175 |
 | [SEGWIT](#segwit)              |   168 | [SOROBAN](#soroban)            |   175 |
@@ -418,7 +418,7 @@ header-includes:
 | [SEGWIT V0](#segwit-v0)        |   169 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   176 |
 | [SEGWIT V1](#segwit-v1)        |   169 | [SPEEDY TRIAL](#speedy-trial)  |   176 |
 | [SELECTION DES PIECES](#selection-des-pieces) |   169 | [SPOF](#spof)                  |   176 |
-| [SELF-CUSTODY](#self-custody)  |   169 | [SPREAD (WST)](#spread-wst)    |   177 |
+| [SELF-CUSTODY](#self-custody)  |   169 | [SPREAD (WST)](#spread-wst)    |   176 |
 | [SELFISH MINING](#selfish-mining) |   169 | [STABLECOIN](#stablecoin)      |   177 |
 | [SHA256](#sha256)              |   170 | [STALE BLOCK](#stale-block)    |   177 |
 | [SHA512](#sha512)              |   170 | [STONEWALL X2](#stonewall-x2)  |   177 |
@@ -647,7 +647,7 @@ Proposition qui vise à améliorer la gestion des frais de transaction dans le c
 
 Fichier utilisé dans le client Bitcoin Core pour stocker les adresses IP des nœuds sortants auxquels un client était connecté avant d'être éteint. Anchors.dat est donc créé à chaque fois que le nœud est arrêté et supprimé lorsqu'il est relancé. Les nœuds dont les adresses IP sont contenues dans ce fichier sont utilisés pour aider à établir rapidement des connexions lors du redémarrage du client.
 
-## ANCRAGE BILATERAL
+## ANCRAGE BILATÉRAL
 
 Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. L'ancrage bilatéral assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
 \begin{itemize}
@@ -1583,7 +1583,7 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 
 > *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 
-## CLE ETENDUE
+## CLÉ ÉTENDUE
 
 Suite de caractère qui combine une clé (publique ou privée), son code de chaîne associé et une série de métadonnées. Une clé étendue rassemble en une seule chaîne de caractère tous les éléments nécessaires à la dérivation de clés enfants. Elles sont utilisées dans les portefeuilles déterministes et hiérarchiques, et peuvent être de deux types : une clé publique étendue (utilisée pour dériver des clés publiques enfants) ou une clé privée étendue (utilisée pour dériver à la fois des clés privées et des clés publiques enfants). Une clé étendue inclut donc plusieurs données différentes, décrites au sein du BIP32, dans l'ordre : 
 \begin{itemize}
@@ -1762,7 +1762,7 @@ La concaténation, dans le contexte de la cryptographie et des systèmes informa
 
 Le condensat, dans le contexte de la cryptographie, désigne le résultat (ou l'output) produit par l'application d'une fonction de hachage cryptographique à un ensemble de données. Le condensat est une chaîne de caractères de taille fixe généralement représentée sous forme d'une série de chiffres et de lettres en notation hexadécimale (base 16). Ce résultat a la particularité d'être presque unique et spécifique aux données d'entrée, de sorte qu'un changement minime dans l'entrée produira un condensat complètement différent. Les fonctions de hachage cryptographiques sont conçues pour être unidirectionnelles et résistantes aux collisions, rendant très difficile de retrouver les données initiales à partir du condensat ou de trouver deux entrées distinctes produisant le même condensat.
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage).*
 
 ## CONFIRMATION
 
@@ -1787,7 +1787,7 @@ Programme qui s'exécute automatiquement lorsque certaines conditions prédéfin
 
 > *En anglais, on parle de « Smart Contract ». En français, on parle également parfois de « contrat autonome ».*
 
-## COOKIE ( DOT COOKIE)
+## COOKIE (DOT COOKIE)
 
 Fichier utilisé pour l'authentification RPC (*Remote Procedure Call*) dans Bitcoin Core. Lorsque bitcoind démarre, il génère un cookie d'authentification unique et le stocke dans ce fichier. Les clients ou les scripts qui souhaitent interagir avec bitcoind via l'interface RPC peuvent utiliser ce cookie pour s'authentifier de manière sécurisée. Ce mécanisme permet une communication sûre entre le bitcoind et les applications externes, sans nécessiter une gestion manuelle des noms d'utilisateur et des mots de passe. Le fichier .cookie est régénéré à chaque redémarrage de bitcoind et supprimé à l'arrêt.
 
@@ -1929,7 +1929,7 @@ Type de contrat intelligent sur Bitcoin qui permet l'exécution de conditions co
 
 ## DLP (DISCREET LOG PROBLEME)
 
-Voir la définition de [**LOGARITHME DISCRET (PROBLÈME)**](#logarithme-discret-problème).
+Voir la définition de [**LOGARITHME DISCRET**](#logarithme-discret).
 
 ## DNS SEEDS
 
@@ -2096,7 +2096,7 @@ Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec 
 
 > *En anglais, on parle d'un « Block Header ».*
 
-## ENTREE (INPUT)
+## ENTRÉE (INPUT)
 
 Dans le contexte de Bitcoin, une « entrée » (ou « input » en anglais) au sein d’une transaction fait référence aux *Unspent Transaction Outputs* (UTXO) utilisés comme fonds d'origine pour une transaction. Chaque entrée contient des références aux UTXO précédents, qui seront alors « consommés » par la transaction. Ces entrées sont utilisées pour alimenter de nouveaux UTXO qui seront créés comme « sorties » (ou « outputs » en anglais) de la transaction, et qui peuvent ensuite être dépensés dans des transactions futures. Le rôle de la transaction Bitcoin est donc de consommer des UTXO en entrées, et de créer des nouveaux UTXO en sorties. La différence entre les deux correspond aux frais de transactions qui peuvent être récupérés par le mineur gagnant du bloc. D'un point de vue plus large, en informatique, le terme « input » ou « entrée » désigne généralement les données fournies à une fonction, un algorithme, ou un système en tant qu'opérandes ou informations requises pour effectuer une opération ou un calcul. Dans ce sens, le terme est utilisé de manière plus générique pour décrire tout ce qui est fourni à un processus en vue d'obtenir un résultat ou une « sortie » (output). Par exemple, lorsque l’on passe une donnée dans une fonction de hachage cryptographique, cette information est nommée « entrée » ou « input ».
 
@@ -2114,7 +2114,7 @@ Forme très sophistiquée d'attaque contre le réseau Bitcoin qui permet à un f
 
 Sigle de « *Equalized Shared Maximum Pay Per Share* ».C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. ESMPPS vise à répartir la récompense de manière équitable entre toutes les parts, indépendamment du moment de leur soumission ou de la chance de la pool. Cela fonctionne essentiellement comme SMPPS, mais avec cette notion d'égalité pour les parts soumises en plus.
 
-## ETIQUETAGE
+## ÉTIQUETAGE
 
 Pratique qui consiste à attribuer une annotation ou une étiquette à un UTXO spécifique dans un portefeuille Bitcoin. Par exemple, si je possède un UTXO provenant d'un achat P2P sur Bisq avec Charles, je pourrais luis attribuer l'étiquette `Non-KYC Bisq Charles`. C'est une bonne pratique qui aide à se rappeler de l'origine ou de la destination prévue de cet UTXO, facilitant ainsi la gestion des fonds et l'optimisation de la confidentialité. L'étiquetage est d'autant plus important lorsqu'il est utilisé avec le coin control. En effet, en permettant aux utilisateurs de différencier et de sélectionner précisément les UTXO pour leurs transactions, cette pratique aide à éviter la fusion d'UTXO provenant de sources différentes. Cela limite les risques associés à l'heuristique d'analyse de chaîne CIOH (*Common Input Ownership Heuristic*), qui peut révéler la propriété commune des entrées d'une transaction.
 
@@ -2529,11 +2529,11 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 Sigle de « *Lightning Network Daemon* ». C'est une implémentation majeure du protocole Lightning Network écrite en langage Go. Développée par Lightning Labs, LND permet la création et la gestion de canaux de paiement et de nœuds sur le réseau Lightning.
 
-## LOCK ( DOT LOCK)
+## LOCK (DOT LOCK)
 
 Fichier utilisé dans Bitcoin Core pour le verrouillage du répertoire de données. Il est créé lorsque bitcoind ou Bitcoin-qt démarre pour éviter que plusieurs instances du logiciel accèdent simultanément au même répertoire de données. Le but est de prévenir les conflits et les corruptions de données. Si le logiciel s'arrête de manière inattendue, le fichier .lock peut éventuellement rester et doit être supprimé manuellement avant de redémarrer Bitcoin Core.
 
-## LOGARITHME DISCRET (PROBLEME)
+## LOGARITHME DISCRET
 
 Le logarithme discret est un problème mathématique qui est utilisé dans certains algorithmes cryptographiques à clé publique. Dans un groupe cyclique d’ordre $q$, avec un générateur $g$, si l'on a une équation de la forme $g^x = h$, alors $x$ est appelé le logarithme discret de $h$ par rapport à la base $g$, modulo $q$. En termes simples, il s’agit de déterminer l’exposant $x$ lorsqu’on connaît $g$, $h$, et $q$. Le logarithme discret est donc la réciproque de l'exponentielle dans un groupe cyclique fini. Cependant, pour de grandes valeurs de $q$, résoudre le problème du logarithme discret est considéré comme algorithmiquement difficile. Cette propriété est exploitée pour assurer la sécurité de nombreux protocoles cryptographiques, tels que le protocole de Diffie-Hellman pour l'échange de clés. Le logarithme discret est aussi utilisé dans la cryptographie à courbes elliptiques (ECC), entre autres dans l'algorithme ECDSA (Elliptic Curve Digital Signature Algorithm). Dans le contexte des courbes elliptiques, le problème du logarithme discret s'étend à la recherche d'un scalaire $k$ tel que $k \cdot G = K$, où $G$ et $K$ sont des points sur la courbe, et $\cdot$ représente l'opération de multiplication de points. Dans le contexte de Bitcoin, les transactions standards utilisent soit ECDSA, soit le protocole de Schnorr, afin de bloquer des UTXO. Ils reposent tous deux sur l’impossibilité de calculer le logarithme discret.
 
@@ -2632,7 +2632,7 @@ Dans le cadre de Git, représente l'action d'intégrer les modifications d'une b
 
 Structure de données utilisée dans le cadre du BIP37 (*Transaction Bloom Filtering*) pour fournir une preuve compacte de l'inclusion de transactions spécifiques dans un bloc. C'est notamment utilisé pour les portefeuilles SPV. Le Merkle Block contient les en-têtes de bloc, les transactions filtrées et un arbre de Merkle partiel, permettant aux clients légers de vérifier rapidement si une transaction appartient à un bloc sans télécharger toutes les transactions.
 
-## METHODE ACTIVATION
+## MÉTHODE D'ACTIVATION
 
 Une méthode d'activation est le processus par lequel la communauté d'utilisateurs décide de l'implémentation d'un soft fork sur le protocole Bitcoin, en cherchant à éviter une séparation de la blockchain. Ce processus consiste à solliciter l'opinion des mineurs pour approuver un soft fork avant son activation. Si une majorité importante accepte le soft fork, le risque de scission de la blockchain est minimisé. Ce consensus est crucial car, si une majorité de mineurs refusent de faire la modification, le soft fork pourrait créer deux chaînes distinctes - une avec les règles modifiées et l'autre sans. Il existe 2 grandes catégories de méthodes d'activation : 
 \begin{itemize}
@@ -2641,7 +2641,7 @@ Une méthode d'activation est le processus par lequel la communauté d'utilisate
 \end{itemize}
 Il existe de nombreuses méthodes d'activation différentes qui ont été testées au fur et à mesure de l'évolution de Bitcoin. À l'époque de Satoshi, le processus d'activation n'était pas formellement établi. Les modifications étaient souvent arbitraires et parfois même réalisées sans informer la communauté. Plus tard, la méthode du « Flag Day » a été adoptée. Après le retrait de Satoshi, d'autres méthodes ont été successivement utilisées, notamment le BIP34, le BIP9, le BIP8, et enfin le Speedy Trial.
 
-## METHODE GEOMETRIQUE
+## MÉTHODE GÉOMÉTRIQUE
 
 Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. Ce système de paiement est basé sur un score, conçu pour contrer le phénomène de pool hopping. Elle assure que le paiement par part soumise reste constant, indépendamment du moment de soumission. Les mineurs accumulent des scores, calculés avec un facteur de décroissance, et les paiements sont calculés à la fin du cycle. Ils sont proportionnels à leur score. Cette méthode implique des frais variables et fixes pour le mineur, et réduit la variance des paiements par part.
 
@@ -2796,7 +2796,7 @@ Erreur de logique où une boucle itère une fois de trop ou de moins, souvent du
 
 > *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](#dummy-element) et [**BIP147**](#bip147).*
 
-## OBSOLETE (BLOC)
+## OBSOLÈTE (BLOC)
 
 Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ». Le processus menant à la production d'un bloc obsolète est le suivant :
 \begin{itemize}
@@ -2851,81 +2851,81 @@ Fichier anciennement utilisé dans Bitcoin Core pour stocker une clé privée as
 
 Fichier utilisé dans Bitcoin Core pour stocker une clé privée associée à un service caché Tor pour l'option `-listenonion`. Lorsque cette option est activée, bitcoind crée automatiquement un service caché Tor, permettant au nœud de communiquer sur le réseau Tor.
 
-## OP 0 (0X00)
+## OP_0 (0X00)
 
 Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
 
 > *OP_0 est identique à **[OP_FALSE](#op_false-0x00)** et **OP_PUSHNUM_0**.*
 
-## OP 0NOTEQUAL (0X92)
+## OP_0NOTEQUAL (0X92)
 
 Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élément est autre que zéro, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
-## OP 1 (0X51)
+## OP_1 (0X51)
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
 
 > *OP_1 est identique à **[OP_TRUE](#op_true-0x51)** et **OP_PUSHNUM_1**.*
 
-## OP 1ADD (0X8B)
+## OP_1ADD (0X8B)
 
 Ajoute `1` à la valeur en haut de la pile.
 
-## OP 1NEGATE (0X4F)
+## OP_1NEGATE (0X4F)
 
 Pousse la valeur `-1` sur la pile. Cet opcode est utilisé dans les scripts pour représenter la valeur négative `-1`.
 
-## OP 1SUB (0X8C)
+## OP_1SUB (0X8C)
 
 Soustrait `1` à la valeur en haut de la pile.
 
-## OP 2 - OP 16 (0X52 - 0X60)
+## OP_2 À OP_16 (0X52 À 0X60)
 
 Les opcodes de OP_2 jusqu'à OP_16 poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `ScriptPubKey` pour un multisig 2/3 : `OP_2 Clé publique A Clé publique B Clé publique C OP_3 OP_CHECKMULTISIG`
 
 > *Tous ces opcodes sont parfois également nommés **OP_PUSHNUM_N**.*
 
-## OP 2DROP (0XD6)
+## OP_2DROP (0XD6)
 
 Supprime les deux éléments en haut de la pile. Autrement dit, `OP_2DROP` supprime le sommet de la pile et le deuxième élément de la pile. Cet opcode est l'équivalent de l'enchainement de deux `OP_DROP`.
 
-## OP 2DUP (0X6E)
+## OP_2DUP (0X6E)
 
 Duplique les deux éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_2DUP` produira : `D C B A B A`.
 
-## OP 2OVER (0X70)
+## OP_2OVER (0X70)
 
 Copie les deux éléments qui se trouvent à la quatrième et à la troisième place en partant du haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_2OVER` produira : `D C B A D C`.
 
-## OP 2ROT (0X71)
+## OP_2ROT (0X71)
 
 Déplace les deux éléments qui se trouvent à la sixième et à la cinquième place du sommet de la pile vers le sommet. Par exemple, si la pile est `F E D C B A`, `OP_2ROT` produira : `D C B A F E`.
 
-## OP 2SWAP (0X72)
+## OP_2SWAP (0X72)
 
 Échange les deux éléments situés au sommet de la pile avec les deux éléments situés juste en dessous d'eux. Par exemple, si la pile est `D C B A`, `OP_2SWAP` produira : `B A D C`.
 
-## OP 3DUP (0X6F)
+## OP_3DUP (0X6F)
 
 Duplique les trois éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_3DUP` produira : `D C B A C B A`.
 
-## OP ABS (0X90)
+## OP_ABS (0X90)
 
 Remplace l'élément supérieur de la pile par sa valeur absolue. Cette opération supprime le signe de l'élément, transformant toute valeur négative en positive, sans changer les valeurs positives.
 
-## OP ADD (0X93)
+## OP_ADD (0X93)
 
 Additionne les deux éléments au sommet de la pile. Il prend les deux valeurs en haut de la pile, il les additionne et il les remplace par le résultat.
 
-## OP BOOLAND (0X9A)
+## OP_BOOLAND (0X9A)
 
 Reproduit le comportement d'une porte logique `AND`. Il prend deux valeurs au sommet de la pile et renvoie `1` seulement si les deux valeurs sont non nulles. Dans le cas contraire, il renvoie `0`.
 
-## OP BOOLOR (0X9B)
+## OP_BOOLOR (0X9B)
 
 Reproduit le comportement d'une porte logique `OR`. Il prend deux valeurs au sommet de la pile et renvoie `1` si l'un ou l'autre des éléments ou les deux sont non nuls. Dans le cas contraire, il renvoie `0`.
 
-## OP CAT (0X7E)
+## OP_CAT (0X7E)
 
 Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de les mettre bout-à-bout). Cet opcode a été désactivé, il est donc actuellement impossible de l'utiliser. Toutefois, il est récemment revenu sur le devant de la scène. Certains souhaiteraient pouvoir l'ajouter à Tapscript afin de permettre la combinaison d'objets sur la pile et ainsi améliorer l'expressivité de ce langage. Ce simple outil supplémentaire pourrait permettre :
 \begin{itemize}
@@ -2935,11 +2935,11 @@ Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de l
   \item Ou encore, l'utilisation de contrat de non équivocation.
 \end{itemize}
 
-## OP CHECKHASHVERIFY (CHV)
+## OP_CHECKHASHVERIFY (CHV)
 
 Nouvel opcode proposé en 2012 dans le BIP17 par Luke Dashjr qui permet de disposer des mêmes fonctionnalités que `OP_EVAL` ou P2SH. Il aurait dû permettre de hacher la fin du `scriptSig`, de comparer le résultat avec le haut de la pile et rendre la transaction invalide si les deux hachages ne correspondaient pas. Cet opcode n'a jamais été implémenté.
 
-## OP CHECKLOCKTIMEVERIFY (0XB1)
+## OP_CHECKLOCKTIMEVERIFY (0XB1)
 
 Rend la transaction invalide sauf si toutes ces conditions sont réunies :
 \begin{itemize}
@@ -2964,15 +2964,15 @@ Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHEC
 
 > *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP2`. Il est souvent appelé par con acronyme « CLTV ». Attention, `OP_CLTV` ne doit pas être confondu avec le champs `nLockTime` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
 
-## OP CHECKMULTISIG (0XAE)
+## OP_CHECKMULTISIG (0XAE)
 
 Vérifie plusieurs signatures contre plusieurs clés publiques. Il prend en entrée une série de `N` clés publiques et `M` signatures, où `M` peut être inférieur ou égal à `N`. `OP_CHECKMULTISIG` vérifie si au moins `M` signatures correspondent à `M` des `N` clés publiques. À noter qu'en raison d'un bug off-by-one historique, un élément supplémentaire est supprimé par `OP_CHECKMULTISIG` sur la pile. Cet élément est appelé « *dummy element* ». Pour éviter une erreur dans le `ScriptSig`, on inclue donc un `OP_0` qui est un élément inutile afin de satisfaire la suppression et outrepasser le bug. Depuis le BIP147 (introduit avec SegWit en 2017), l'élément inutile consommé à cause du bug doit forcément être `0` pour que le script soit valide, car c'était un vecteur de malléabilité. Cet opcode a été supprimé dans Tapscript.
 
-## OP CHECKMULTISIGVERIFY (0XAF)
+## OP_CHECKMULTISIGVERIFY (0XAF)
 
 Combine un `OP_CHECKMULTISIG` et un `OP_VERIFY`. Il prend plusieurs signatures et clés publiques pour vérifier que `M` parmi `N` signatures sont valides, comme le fait `OP_CHECKMULTISIG`. Puis, à l'instar d'`OP_VERIFY`, si la vérification échoue, le script s'arrête immédiatement avec une erreur. Si la vérification est réussie, le script continue sans pousser de valeur sur la pile. Cet opcode a été supprimé dans Tapscript.
 
-## OP CHECKSEQUENCEVERIFY (0XB2)
+## OP_CHECKSEQUENCEVERIFY (0XB2)
 
 Rend la transaction invalide si une seule de ces caractéristiques est observée :
 \begin{itemize}
@@ -2991,11 +2991,11 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 > *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP3`. Il est souvent appelé par con acronyme « CSV ». Attention, `OP_CSV` ne doit pas être confondu avec le champs `nSequence` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
 
-## OP CHECKSIG (0XAC)
+## OP_CHECKSIG (0XAC)
 
 Vérifie la validité d'une signature par rapport à une clé publique donnée. Il prend les deux éléments du sommet de la pile : la signature et la clé publique, et évalue si la signature est correcte pour le hachage de la transaction et la clé publique spécifiée. Si la vérification est réussie, il pousse la valeur `1` (`vrai`) sur la pile, sinon `0` (`faux`). Cet opcode a été modifié dans Tapscript afin de vérifier des signatures de Schnorr.
 
-## OP CHECKSIGADD (0XBA)
+## OP_CHECKSIGADD (0XBA)
 
 Extrait les trois valeurs en haut de la pile : une `clé publique`, un `CScriptNum` `n` et une `signature`. Si la signature n'est pas le vecteur vide et n'est pas valide, le script se termine avec une erreur. Si la signature est valide ou est le vecteur vide (`OP_0`), deux cas de figure se présente :
 \begin{itemize}
@@ -3012,227 +3012,227 @@ est poussé sur la pile et l'exécution continue.
 \end{itemize}
 Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECKSIG`, mais au lieu de pousser `vrai` ou `faux` sur la pile, il ajoute `1` à la deuxième valeur en haut de la pile si la signature est valide, ou laisse cette valeur inchangée si la signature représente le vecteur vide.`OP_CHECKSIGADD` permet de créer les mêmes politiques multisignatures dans Tapscript qu'avec `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` mais de manière vérifiable par lots, c'est-à-dire qu'il supprime le processus de recherche dans la vérification d'un multisig traditionnel et accélère donc la vérification tout en réduisant la charge opérationnelle sur les CPU des nœuds. Cet opcode a été ajouté dans Tapscript uniquement pour les besoins de Taproot.
 
-## OP CHECKSIGVERIFY (0XAD)
+## OP_CHECKSIGVERIFY (0XAD)
 
 Effectue la même opération que `OP_CHECKSIG`, mais si la vérification de la signature échoue, le script s'arrête immédiatement avec une erreur et la transaction est donc invalide. Si la vérification réussit, le script continue sans pousser de valeur `1` (`vrai`) sur la pile. Pour résumer, `OP_CHECKSIGVERIFY` réalise l'opération `OP_CHECKSIG` suivie de `OP_VERIFY`. Cet opcode a été modifié dans Tapscript afin de vérifier des signatures de Schnorr.
 
-## OP CODESEPARATOR (0XAB)
+## OP_CODESEPARATOR (0XAB)
 
 Modifie le script de sortie en cours, en indiquant que seules les opérations qui suivent cet opcode seront prises en compte dans la vérification des signatures des entrées correspondantes. Cela permet de segmenter un script complexe en plusieurs parties, où chaque segment peut être signé indépendamment.
 
-## OP DEPTH (0X74)
+## OP_DEPTH (0X74)
 
 Pousse le nombre d'éléments dans la pile sur la pile elle-même. Si la pile contient `N` éléments, `OP_DEPTH` ajoutera le nombre `N` en tant que nouvel élément en haut de la pile.
 
-## OP DROP (0X75)
+## OP_DROP (0X75)
 
 Supprime l'élément situé au sommet de la pile. `OP_DROP` permet d'enlever des données devenues inutiles au cours de l'exécution du script.
 
-## OP DUP (0X76)
+## OP_DUP (0X76)
 
 Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et la copie est placée en haut de la pile.
 
-## OP ELSE (0X67)
+## OP_ELSE (0X67)
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
 
 > *Pour plus d'informations, voir la définition de [**OP_IF**](#op_if-0x63).*
 
-## OP ENDIF (0X68)
+## OP_ENDIF (0X68)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
 
 > *Pour plus d'informations, voir la définition de [**OP_IF**](#op_if-0x63).*
 
-## OP EQUAL (0X87)
+## OP_EQUAL (0X87)
 
 Compare les deux valeurs les plus hautes de la pile et pousse `1` sur la pile si elles sont égales, sinon pousse 0. `OP_EQUAL` permet de vérifier l'égalité des données dans les scripts de transaction.
 
-## OP EQUALVERIFY (0X88)
+## OP_EQUALVERIFY (0X88)
 
 Combine les fonctions de `OP_EQUAL` et `OP_VERIFY`. Il vérifie d'abord l'égalité des deux valeurs supérieures de la pile, puis exige que le résultat soit non nul, faute de quoi la transaction est invalide. `OP_EQUALVERIFY` est notamment utilisé dans les scripts de vérification d'adresse.
 
-## OP EVAL
+## OP_EVAL
 
 Opcode proposé par Gavin Andresen en 2011. Il prend le script situé au sommet de la pile, l'exécute comme s'il faisait partie du `scriptPubKey`, et place son résultat sur la pile. `OP_EVAL` a été abandonné en raison de préoccupations liées à la complexité de cet opcode, qui sera finalement supplanté par `P2SH`.
 
-## OP FALSE (0X00)
+## OP_FALSE (0X00)
 
 Identique à `OP_0`.
 
 > *Pour plus d'informations, voir la définition de [**OP_0**](#op_0-0x00).*
 
-## OP FROMALTSTACK (0X6C)
+## OP_FROMALTSTACK (0X6C)
 
 Retire le sommet de la pile alternative (alt stack) et le place sur le sommet de la pile principale (main stack). Cet opcode est utilisé pour récupérer des données stockées temporairement sur la pile alternative. Pour simplifier, c'est l'opération inverse de `OP_TOALTSTACK`.
 
-## OP GREATERTHAN (0XA0)
+## OP_GREATERTHAN (0XA0)
 
 Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur au deuxième. Si le premier élément est supérieur au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
-## OP GREATERTHANOREQUAL (0XA2)
+## OP_GREATERTHANOREQUAL (0XA2)
 
 Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur ou égal au deuxième. Si le premier élément est supérieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
-## OP HASH160 (0XA9)
+## OP_HASH160 (0XA9)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
 
 > *Pour plus d'informations, voir la définition de [**SHA256**](#sha256) et [**RIPEMD160**](#ripemd160).*
 
-## OP HASH256 (0XAA)
+## OP_HASH256 (0XAA)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
 
 > *Pour plus d'informations, voir la définition de [**SHA256**](#sha256).*
 
-## OP IF (0X63)
+## OP_IF (0X63)
 
 Exécute la portion suivante du script si la valeur au sommet de la pile est non nulle (vraie). Si la valeur est nulle (fausse), ces opérations sont sautées, passant directement à celles après `OP_ELSE`, s'il est présent. `OP_IF` permet d'initier une structure de contrôle conditionnelle dans un script. Il détermine le flux de contrôle dans un script en fonction d'une condition fournie au moment de l'exécution de la transaction. `OP_IF` s'utilise avec `OP_ELSE` et `OP_ENDIF` de la manière suivante : `<condition> OP_IF <opérations si la condition est vraie> OP_ELSE <opérations si la condition est fausse> OP_ENDIF`.
 
-## OP IFDUP (0X73)
+## OP_IFDUP (0X73)
 
 Duplique le sommet de la pile si celui-ci est non nul. Si la valeur en haut de la pile est vraie (c'est-à-dire non nulle), cette valeur est dupliquée sur la pile ; sinon, la pile reste inchangée.
 
-## OP LESSTHAN (0X9F)
+## OP_LESSTHAN (0X9F)
 
 Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur au deuxième. Si le premier élément est inférieur au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
-## OP LESSTHANOREQUAL (0XA1)
+## OP_LESSTHANOREQUAL (0XA1)
 
 Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur ou égal au deuxième. Si le premier élément est inférieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
-## OP MAX (0XA4)
+## OP_MAX (0XA4)
 
 Sélectionne le plus grand des deux éléments en haut de la pile et le pousse sur la pile. Cette opération conserve uniquement la plus grande des deux valeurs au sommet.
 
-## OP MIN (0XA3)
+## OP_MIN (0XA3)
 
 Sélectionne le plus petit des deux éléments en haut de la pile et le pousse sur la pile. Cette opération conserve uniquement la plus petite des deux valeurs au sommet.
 
-## OP NEGATE (0X8F)
+## OP_NEGATE (0X8F)
 
 Inverse le signe de l'élément supérieur de la pile. Si la valeur est positive, elle devient négative, et vice versa.
 
-## OP NIP (0X77)
+## OP_NIP (0X77)
 
 Supprime l'élément situé juste en dessous du sommet de la pile (le second en partant du haut).
 
-## OP NOP (0X61)
+## OP_NOP (0X61)
 
 Ne produit aucun effet sur la pile ou l'état du script. Il ne fait aucun déplacement, aucune vérification, ni aucune modification. Il ne fait juste rien, à moins que l'on ait décidé qu'il fasse quelque chose via un soft fork. En effet, depuis leurs modifications par Satoshi Nakamoto en 2010, les commandes `OP_NOP` (`OP_NOP1` (`0XB0`) jusqu'à `OP_NOP10` (`0XB9`)) sont utilisées pour ajouter de nouveaux opcodes sous forme de soft fork. Ainsi, l'`OP_NOP2` (`0XB1`) et l'`OP_NOP3` (`0XB2`) ont déjà été utilisés pour implémenter respectivement l'`OP_CHECKLOCKTIMEVERIFY` et l'`OP_CHECKSEQUENCEVERIFY`. On les utilise en combinaison avec `OP_DROP` afin de supprimer de la pile les valeurs temporelles associées, et ainsi pouvoir continuer l'exécution du script, que le nœud soit à jour ou non. Les `OP_NOP` permettent donc d'insérer un point d'interruption dans un script pour vérifier des conditions supplémentaires déjà existantes ou pouvant être ajoutées avec de futurs soft fork. Depuis Tapscript, l'utilisation des `OP_NOP` a été remplacée par l'utilisation des `OP_SUCCESS` étant plus efficace.
 
 > *Pour plus d'informations, voir la définition de [**OP_SUCCESS**](#op_success).*
 
-## OP NOT (0X91)
+## OP_NOT (0X91)
 
 Inverse la valeur booléenne du sommet de la pile : si cette valeur est non nulle, l'opérateur la remplace par 0, sinon par 1.
 
-## OP NOTIF (0X64)
+## OP_NOTIF (0X64)
 
 Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
 
 > *Pour plus d'informations, voir la définition de [**OP_IF**](#op_if-0x63).*
 
-## OP NUMEQUAL (0X9C)
+## OP_NUMEQUAL (0X9C)
 
 Compare les deux éléments au sommet de la pile pour vérifier s'ils sont numériquement égaux. Si les valeurs sont égales, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
-## OP NUMEQUALVERIFY (0X9D)
+## OP_NUMEQUALVERIFY (0X9D)
 
 Combine les opérations `OP_NUMEQUAL` et `OP_VERIFY`. Il compare numériquement les deux éléments au sommet de la pile. Si les valeurs sont égales, `OP_NUMEQUALVERIFY` supprime le résultat `vrai` de la pile et continue l'exécution du script. Si les valeurs ne sont pas égales, le résultat est `faux` et le script échoue immédiatement.
 
-## OP NUMNOTEQUAL (0X9E)
+## OP_NUMNOTEQUAL (0X9E)
 
 Compare les deux éléments au sommet de la pile pour vérifier s'ils sont numériquement non égaux. Si les valeurs ne sont pas égales, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux). C'est l'inverse de `OP_NUMEQUAL`.
 
-## OP OVER (0X78)
+## OP_OVER (0X78)
 
 Duplique le deuxième élément à partir du haut de la pile et le place sur le haut de la pile.
 
-## OP PICK (0X79)
+## OP_PICK (0X79)
 
 Duplique un élément de la pile et le place en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_PICK` va dupliquer le quatrième élément de la pile en partant du sommet, et il va placer cette copie au sommet.
 
-## OP PUSHDATA1 (0X4C)
+## OP_PUSHDATA1 (0X4C)
 
 Pousse une certaine quantité de données sur la pile. Il est suivi d'un octet qui indique la longueur des données à pousser (jusqu'à 255 octets). Cet opcode est utilisé pour inclure des données de taille variable dans les scripts.
 
-## OP PUSHDATA2 (0X4D)
+## OP_PUSHDATA2 (0X4D)
 
 Permet de pousser une grande quantité de données sur la pile. Il est suivi de deux octets (petit-boutistes) qui spécifient la longueur des données à pousser (jusqu'à 65535 octets). Il est utilisé pour insérer des données plus volumineuses dans les scripts.
 
-## OP PUSHDATA4 (0X4E)
+## OP_PUSHDATA4 (0X4E)
 
 Permet de pousser une très grande quantité de données sur la pile. Il est suivi de quatre octets (petit-boutistes) qui indiquent la longueur des données à pousser (jusqu'à 4 294 967 295 octets). Cet opcode est utilisé pour insérer de très grandes données dans les scripts, bien que son usage soit extrêmement rare en raison des limitations pratiques de la taille des transactions.
 
-## OP RETURN (0X6A)
+## OP_RETURN (0X6A)
 
 Signale un script invalide, ce qui rend l'output qui le contient comme non dépensable de manière prouvée. Les nœuds du réseau peuvent donc supprimer cet output de leurs UTXO set. `OP_RETURN` est souvent utilisé pour inscrire des données arbitraires dans la blockchain.
 
-## OP RIPEMD160 (0XA6)
+## OP_RIPEMD160 (0XA6)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `RIPEMD160`.
 
 > *Pour plus d'informations, voir la définition de [**RIPEMD160**](#ripemd160).*
 
-## OP ROLL (0X7A)
+## OP_ROLL (0X7A)
 
 Déplace un élément de la pile et en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_ROLL` va sélectionner le quatrième élément de la pile en partant du sommet, et il va déplacer cette valeur au sommet. `OP_ROLL` joue le même rôle que `OP_PICK`, mis à part qu'il retire l'élément de sa position initiale.
 
-## OP ROT (0X7B)
+## OP_ROT (0X7B)
 
 Déplace au sommet de la pile le troisième élément à partir du sommet de la pile. Les deux éléments qui étaient au-dessus de lui sont poussés en dessous dans l'ordre inverse.
 
-## OP SHA1 (0XA7)
+## OP_SHA1 (0XA7)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA1`. L'utilisation de cette fonction est aujourd'hui déconseillée dans un cadre sécurisé.
 
-## OP SHA256 (0XA8)
+## OP_SHA256 (0XA8)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
 
 > *Pour plus d'informations, voir la définition de [**SHA256**](#sha256).*
 
-## OP SIZE (0X82)
+## OP_SIZE (0X82)
 
 Mesure la taille en nombre d'octets de l'élément en haut de la pile et renvoie cette taille au sommet de la pile, sans pour autant modifier l'élément analysé en lui-même.
 
-## OP SUB (0X94)
+## OP_SUB (0X94)
 
 Soustrait les deux éléments au sommet de la pile. Il prend les deux valeurs en haut de la pile, il les soustrait et il les remplace par le résultat.
 
-## OP SUCCESS
+## OP_SUCCESS
 
 Les `OP_SUCCESS` représentent une série d'opcodes qui ont été désactivés par le passé et qui sont dorénavant réservés pour une utilisation future dans Tapscript. Leur but final est de faciliter des mises à jour et des extensions du langage script, en permettant l'introduction de nouvelles fonctionnalités via des soft forks. Lorsqu'un de ces opcodes est rencontré dans un script, il indique un succès automatique de cette partie du script, peu importe les données ou les conditions présentes. Cela signifie que le script continue son exécution sans échec, indépendamment des opérations précédentes. Ainsi, lorsque l'on ajoute un nouvel opcode sur un `OP_SUCCESS`, cela représente forcément l'ajout d'une règle plus restrictive que la règle précédente. Les nœuds à jour peuvent alors vérifier le respect de cette règle et les nœuds pas à jour ne refuseront pas les transactions associées et les blocs qui les incluent, car l'`OP_SUCCESS` valide cette partie du script. Il n'y a donc pas de hard fork. En comparaison, les `OP_NOP` (*No Operation*) servent également de marqueurs de place dans le script, mais ils n'ont aucun effet sur l'exécution du script. Lorsqu'un `OP_NOP` est rencontré, le script continue simplement sans modifier l'état de la pile ou le déroulement du script. La différence clé est donc dans leur impact sur l'exécution : `OP_SUCCESS` garantit un passage réussi à travers cette portion du script, tandis que `OP_NOP` est neutre, n'affectant ni la pile ni le flux du script. Ces opcodes sont désignés par `OP_SUCCESSN` où `N` est un numéro permettant de différencier les `OP_SUCCESS`.
 
-## OP SWAP (0X7C)
+## OP_SWAP (0X7C)
 
 Échange les deux éléments en haut de la pile. L'élément qui était au sommet est déplacé en deuxième position, et l'élément qui était en deuxième position est placé au sommet de la pile.
 
-## OP TOALTSTACK (0X6B)
+## OP_TOALTSTACK (0X6B)
 
 Prend le sommet de la pile principale (main stack) et le déplace vers la pile alternative (alt stack). Cet opcode permet de stocker temporairement des données à part pour une utilisation ultérieure dans le script. L'élément déplacé est donc supprimé de la pile principale. On utilisera ensuite `OP_FROMALTSTACK` pour le remettre au sommet de la pile principale.
 
-## OP TRUE (0X51)
+## OP_TRUE (0X51)
 
 Identique à OP_1.
 
 > *Pour plus d'informations, voir la définition de [**OP_1**](#op_1-0x51).*
 
-## OP TUCK (0X7D)
+## OP_TUCK (0X7D)
 
 Copie l'élément situé au sommet de la pile et l'insère entre le deuxième élément et le troisième élément de la pile. Par exemple, si la pile est `D C B A`, `OP_TUCK` va dupliquer le sommet `A` et le placer en troisième position. La pile en sortie sera : `D C A B A`.
 
-## OP VER (0X62)
+## OP_VER (0X62)
 
 Permettait de pousser la version du client sur la pile. Cet opcode a été désactivé car s'il avait été utilisé, chaque mise à jour aurait conduit à un hard fork. Le BIP342 a modifié cet opcode en `OP_SUCCESS`.
 
-## OP VERIFY (0X69)
+## OP_VERIFY (0X69)
 
 Exige que la valeur du sommet de la pile soit non nulle (vraie). La transaction est invalide si ce n'est pas le cas. `OP_VERIFY` est utilisé pour confirmer les conditions des scripts.
 
-## OP WITHIN (0XA5)
+## OP_WITHIN (0XA5)
 
 Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle défini par les deuxième et troisième éléments supérieurs. Autrement dit, `OP_WITHIN` vérifie si le premier élément est supérieur ou égal au deuxième et inférieur au troisième. Si cette condition est vraie, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
 
@@ -3458,7 +3458,7 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 > *En anglais, petit-boutiste se traduit par « Little-Endian ».*
 
-## PHRASE DE RECUPERATION
+## PHRASE DE RÉCUPÉRATION
 
 Une phrase de récupération, également parfois nommée comme mnémonique, seed phrase, ou phrase secrète, est une séquence composée habituellement de 12 ou 24 mots, qui est générée de manière pseudo-aléatoire à partir d'une source d'entropie. La séquence pseudo-aléatoire est toujours complétée d'une somme de contrôle (checksum). La phrase mnémonique, conjointement avec une passphrase optionnelle, est utilisée pour dériver de façon déterministe l'intégralité des clés associées à un portefeuille HD (déterministe et hiérarchique). Cela signifie qu’à partir de cette phrase, il est possible de générer et de recréer déterministiquement l'ensemble des clés privées et publiques du portefeuille Bitcoin, et par conséquent d'accéder aux fonds qui y sont associés. La raison d'être de la phrase de récupération est de fournir un moyen de sauvegarde et de récupération des bitcoins qui est à la fois sécurisé et facile à utiliser. Il est impératif de conserver cette phrase en lieu sûr et de manière sécurisée, car toute personne en possession de cette phrase aurait accès aux fonds du portefeuille correspondant. Si elle est utilisée dans le cadre d’un portefeuille classique, et sans passphrase optionnelle, elle constitue souvent un SPOF (point de défaillance unique). La phrase de récupération est donc un encodage de la séquence pseudo aléatoire et de la checksum dans des mots du quotidien afin de faciliter sa notation et sa lisibilité par l’Homme. Elle est construite en fonction du standard BIP39, qui défini et ordonne une liste de 2048 mots utilisés pour cet encodage.
 
@@ -3612,7 +3612,7 @@ Règles adoptées individuellement par chaque nœud Bitcoin, en plus des règles
 
 > *On parle également parfois de « règles de mempool ».*
 
-## REORGANISATION
+## RÉORGANISATION
 
 Se réfère à un phénomène où la blockchain subit une modification de sa structure à cause de l'existence de blocs concurrents à une même hauteur. Cela survient lorsqu'une portion de la chaîne de blocs est remplacée par une autre chaîne ayant une quantité de preuve de travail accumulée plus importante. Ces réorganisations font partie du fonctionnement naturel de Bitcoin, où différents mineurs peuvent trouver de nouveaux blocs presque simultanément, venant ainsi couper le réseau Bitcoin en deux. Dans de tels cas, le réseau peut se diviser temporairement en chaînes concurrentes. Finalement, lorsque l'une de ces chaînes accumule plus de preuve de travail, les autres chaînes sont abandonnées par les nœuds, et leurs blocs deviennent ce que l'on appelle des « blocs périmés ». Ce processus de remplacement d'une chaîne par une autre est la réorganisation. Les réorganisations peuvent avoir diverses conséquences. Tout d'abord, si un utilisateur avait une transaction confirmée dans un bloc qui s'avère être périmé, mais que celle-ci ne se retrouve pas dans la chaîne finalement valide, alors sa transaction redevient non confirmée. C'est pour cette raison que l'on vous conseille de toujours attendre au moins 6 confirmations pour considérer une transaction comme réellement immuable. Passé 6 blocs de profondeur, les réorganisations sont tellement improbables que la chance qu'il y en ait une peut être considérée comme nulle. Ensuite, au niveau du système global, les réorganisations impliquent un gaspillage de la puissance de calcul des mineurs. En effet, lorsqu'une division intervient, une partie des mineurs seront sur la chaîne `A`, et une autre partie sur la chaîne `B`. Si la chaîne `B` est finalement abandonnée lors d'une réorganisation, alors toute la puissance de calcul déployée par les mineurs sur cette chaîne est par définition gaspillée. Si il y a trop de réorganisations sur le réseau Bitcoin, la sécurité globale de celui-ci est donc réduite. C'est notamment pour cette raison, en partie, que l'augmentation de la taille des blocs ou la réduction de l'intervalle entre chaque bloc (10 minutes) peuvent être dangereuses.
 
@@ -3634,7 +3634,7 @@ Synonyme plus juste de « réorganisation » bien que peu employé.
 
 > *Pour plus d'informations, voir la définition de [**RÉORGANISATION**](#réorganisation).*
 
-## REUTILISATION ADRESSE
+## RÉUTILISATION D'ADRESSE
 
 La réutilisation d'adresse se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXO, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut raisonnablement imaginer que tous les UTXO associés appartiennent à une même entité. La réutilisation d'adresse pause donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXO, ainsi que de perpétuer un traçage de fonds on-chain. Satoshi Nakamoto évoquait déjà ce problème dans son White Paper :
 
@@ -3652,7 +3652,7 @@ Technique consistant à réaliser plusieurs transactions fictives vers soi-mêm
 
 Acronyme de *Research and development in Advanced Communications technologies in Europe Integrity Primitives Evaluation Message Digest 160*, est une fonction de hachage cryptographique qui génère un condensat de 160 bits à partir d'une entrée arbitraire. Elle est utilisée sur Bitcoin pour transformer une clé publique en une adresse de réception. Le processus implique d'abord l'application de la fonction de hachage `SHA256` sur la clé publique, suivie de l'application de `RIPEMD160` sur le résultat. Cette combinaison de deux fonctions de hachage distinctes est connue sous le nom de `HASH160` dans le contexte de Bitcoin. `RIPEMD160` est également utilisé dans les portefeuilles déterministes et hiérarchiques pour calculer des empreintes de clés. On utilise notamment `HASH160` pour calculer l'empreinte d'une clé parent, ensuite incluse dans les métadonnées d'une clé étendue (xpub).
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage).*
 
 ## RPC (REMOTE PROCEDURE CALL)
 
@@ -3796,13 +3796,13 @@ Stratégie (ou attaque) dans le minage, où un mineur ou un groupe de mineurs co
 
 Sigle pour « Secure Hash Algorithm 256 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 256 bits. Conçue par la *National Security Agency* (NSA) au début des années 2000, elle est devenue une norme fédérale pour le traitement des données sensibles. Dans le protocole Bitcoin, la fonction `SHA256` est omniprésente. Elle est employée pour hacher les entêtes des blocs dans le cadre de la preuve de travail. `SHA256` est également utilisée dans le processus de dérivation d'une adresse de réception à partir d'une clé publique. On l'utilise également pour l'agrégation des transactions et des témoins au sein des arbres de Merkle dans les blocs. On retrouve aussi `SHA256` dans le calcul d'empreinte de clés, le calcul de certaines sommes de contrôle et dans de nombreux autres processus autour de Bitcoin. Lorsqu'elle est appliquée deux fois de suite, on parle d'un `HASH256`. Cette double application est celle utilisée majoritairement sur Bitcoin. Lorsque `SHA256` est utilisé conjointement à la fonction `RIPEMD160`, on parle d'un `HASH160`. Ce double hachage est utilisé pour les empreintes de clés et pour le hachage de clés publiques. La fonction `SHA256` fait partie de la famille des SHA 2.
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage).*
 
 ## SHA512
 
 Sigle pour « Secure Hash Algorithm 512 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 512 bits. Elle a été conçue par la *National Security Agency* (NSA) au début des années 2000. Dans le protocole Bitcoin, la fonction `SHA512` est exclusivement utilisée dans le cadre des dérivations de clés enfants. Dans ce processus, elle est utilisée plusieurs fois dans l'algorithme `HMAC`, ainsi que dans la fonction de dérivation de clés `PBKDF2`. La fonction `SHA512` fait partie de la famille des SHA 2, comme `SHA256`. Son fonctionnement est d'ailleurs très similaire à cette dernière.
 
-> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE CRYPTOGRAPHIQUE**](#fonction-de-hachage-cryptographique).*
+> *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage).*
 
 ## SHAREDCOIN
 

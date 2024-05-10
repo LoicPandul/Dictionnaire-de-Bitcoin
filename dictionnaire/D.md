@@ -53,7 +53,7 @@ Type de contrat intelligent sur Bitcoin qui permet l'exécution de conditions co
 
 ## DLP (DISCREET LOG PROBLEME)
 
-Voir la définition de [**LOGARITHME DISCRET (PROBLÈME)**](./L.md#logarithme-discret-problème).
+Voir la définition de [**LOGARITHME DISCRET**](./L.md#logarithme-discret).
 
 ## DNS SEEDS
 
