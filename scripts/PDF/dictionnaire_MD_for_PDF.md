@@ -34,7 +34,7 @@ header-includes:
 | [ANCESTOR MINING](#ancestor-mining) |    17 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    22 |
 | [ANCHOR OUTPUTS](#anchor-outputs) |    17 | [ATLC](#atlc)                  |    22 |
 | [ANCHORS DOT DAT](#anchors-dot-dat) |    17 | [ATOMIC SWAP](#atomic-swap)    |    22 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |     ? | [ATTAQUE DES 51 POURCENT](#attaque-des-51-pourcent) |    23 |
+| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    17 | [ATTAQUE DES 51 POURCENT](#attaque-des-51-pourcent) |    23 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    18 |                                |       |
 | | | | |
 
@@ -123,7 +123,7 @@ header-includes:
 | [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    58 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    67 |
 | [CIBLE DE DIFFICULTE](#cible-de-difficulte) |    58 | [COOKIE (DOT COOKIE)](#cookie-dot-cookie) |    68 |
 | [CIOH](#cioh)                  |    59 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    68 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |     ? | [COURBE ELLIPTIQUE](#courbe-elliptique) |    68 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    59 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    68 |
 | [CLE PRIVEE](#cle-privee)      |    60 | [COVENANT](#covenant)          |    68 |
 | [CLE PUBLIQUE](#cle-publique)  |    61 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    69 |
 | [CLI](#cli)                    |    61 | [C PLUS PLUS](#c-plus-plus)    |    69 |
@@ -166,11 +166,11 @@ header-includes:
 | [ECASH (DAVID CHAUM)](#ecash-david-chaum) |    80 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |    81 |
 | [ECASH (XEC)](#ecash-xec)      |    80 | [ENDIANNESS](#endianness)      |    82 |
 | [ECDH](#ecdh)                  |    80 | [ENTETE DE BLOC](#entete-de-bloc) |    82 |
-| [ECDSA](#ecdsa)                |    80 | [ENTRÉE (INPUT)](#entrée-input) |     ? |
+| [ECDSA](#ecdsa)                |    80 | [ENTRÉE (INPUT)](#entrée-input) |    82 |
 | [ECLAIR](#eclair)              |    80 | [ENTROPIE](#entropie)          |    83 |
 | [ECLIPSE (ATTAQUE)](#eclipse-attaque) |    81 | [EREBUS (ATTAQUE)](#erebus-attaque) |    83 |
 | [ECOLE AUTRICHIENNE](#ecole-autrichienne) |    81 | [ESMPPS](#esmpps)              |    83 |
-| [ELECTRUM LIGHTNING](#electrum-lightning) |    81 | [ÉTIQUETAGE](#étiquetage)      |     ? |
+| [ELECTRUM LIGHTNING](#electrum-lightning) |    81 | [ÉTIQUETAGE](#étiquetage)      |    84 |
 | [ELTOO](#eltoo)                |    81 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |    84 |
 | | | | |
 
@@ -261,8 +261,8 @@ header-includes:
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [MAGICAL BITCOIN](#magical-bitcoin) |   113 | [MERKLE BLOCK](#merkle-block)  |   115 |
-| [MAGIC NETWORK](#magic-network) |   113 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |     ? |
-| [MAJORITE ECONOMIQUE](#majorite-economique) |   113 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |     ? |
+| [MAGIC NETWORK](#magic-network) |   113 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   115 |
+| [MAJORITE ECONOMIQUE](#majorite-economique) |   113 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   116 |
 | [MALLEABILITE (TRANSACTION)](#malleabilite-transaction) |   113 | [MINAGE](#minage)              |   116 |
 | [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   113 | [MINAGE EGOISTE](#minage-egoiste) |   116 |
 | [MAPPER (TO MAP)](#mapper-to-map) |   114 | [MINAGE FUSIONNE](#minage-fusionne) |   116 |
@@ -294,51 +294,51 @@ header-includes:
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   125 | [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |     ? |
-| [OBSOLÈTE (BLOC)](#obsolète-bloc) |     ? | [OP_HASH160 (0XA9)](#op_hash160-0xa9) |     ? |
-| [OCTET (BYTE)](#octet-byte)    |   126 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |     ? |
-| [OFFCHAIN](#offchain)          |   126 | [OP_IF (0X63)](#op_if-0x63)    |     ? |
-| [ONCHAIN](#onchain)            |   126 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |     ? |
-| [ONION PRIVATE KEY](#onion-private-key) |   126 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |     ? |
-| [ONION V3 PRIVATE KEY](#onion-v3-private-key) |   127 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |     ? |
-| [OP_0 (0X00)](#op_0-0x00)      |     ? | [OP_MAX (0XA4)](#op_max-0xa4)  |     ? |
-| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |     ? | [OP_MIN (0XA3)](#op_min-0xa3)  |     ? |
-| [OP_1 (0X51)](#op_1-0x51)      |     ? | [OP_NEGATE (0X8F)](#op_negate-0x8f) |     ? |
-| [OP_1ADD (0X8B)](#op_1add-0x8b) |     ? | [OP_NIP (0X77)](#op_nip-0x77)  |     ? |
-| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |     ? | [OP_NOP (0X61)](#op_nop-0x61)  |     ? |
-| [OP_1SUB (0X8C)](#op_1sub-0x8c) |     ? | [OP_NOT (0X91)](#op_not-0x91)  |     ? |
-| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |     ? | [OP_NOTIF (0X64)](#op_notif-0x64) |     ? |
-| [OP_2DROP (0XD6)](#op_2drop-0xd6) |     ? | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |     ? |
-| [OP_2DUP (0X6E)](#op_2dup-0x6e) |     ? | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |     ? |
-| [OP_2OVER (0X70)](#op_2over-0x70) |     ? | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |     ? |
-| [OP_2ROT (0X71)](#op_2rot-0x71) |     ? | [OP_OVER (0X78)](#op_over-0x78) |     ? |
-| [OP_2SWAP (0X72)](#op_2swap-0x72) |     ? | [OP_PICK (0X79)](#op_pick-0x79) |     ? |
-| [OP_3DUP (0X6F)](#op_3dup-0x6f) |     ? | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |     ? |
-| [OP_ABS (0X90)](#op_abs-0x90)  |     ? | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |     ? |
-| [OP_ADD (0X93)](#op_add-0x93)  |     ? | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |     ? |
-| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |     ? | [OP_RETURN (0X6A)](#op_return-0x6a) |     ? |
-| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |     ? | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |     ? |
-| [OP_CAT (0X7E)](#op_cat-0x7e)  |     ? | [OP_ROLL (0X7A)](#op_roll-0x7a) |     ? |
-| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |     ? | [OP_ROT (0X7B)](#op_rot-0x7b)  |     ? |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |     ? | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |     ? |
-| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |     ? | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |     ? |
-| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |     ? | [OP_SIZE (0X82)](#op_size-0x82) |     ? |
-| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |     ? | [OP_SUB (0X94)](#op_sub-0x94)  |     ? |
-| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |     ? | [OP_SUCCESS](#op_success)      |     ? |
-| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |     ? | [OP_SWAP (0X7C)](#op_swap-0x7c) |     ? |
-| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |     ? | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |     ? |
-| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |     ? | [OP_TRUE (0X51)](#op_true-0x51) |     ? |
-| [OP_DEPTH (0X74)](#op_depth-0x74) |     ? | [OP_TUCK (0X7D)](#op_tuck-0x7d) |     ? |
-| [OP_DROP (0X75)](#op_drop-0x75) |     ? | [OP_VER (0X62)](#op_ver-0x62)  |     ? |
-| [OP_DUP (0X76)](#op_dup-0x76)  |     ? | [OP_VERIFY (0X69)](#op_verify-0x69) |     ? |
-| [OP_ELSE (0X67)](#op_else-0x67) |     ? | [OP_WITHIN (0XA5)](#op_within-0xa5) |     ? |
-| [OP_ENDIF (0X68)](#op_endif-0x68) |     ? | [OPCODES](#opcodes)            |   138 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |     ? | [ORACLE](#oracle)              |   138 |
-| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |     ? | [ORPHELIN (BLOC)](#orphelin-bloc) |   138 |
-| [OP_EVAL](#op_eval)            |     ? | [OU EXCLUSIF](#ou-exclusif)    |   139 |
-| [OP_FALSE (0X00)](#op_false-0x00) |     ? | [OUTBOUND CAPACITY](#outbound-capacity) |   139 |
-| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |     ? | [OUTPUT](#output)              |   139 |
-| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |     ? | [OUTPUT LINKING](#output-linking) |   140 |
+| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   125 | [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   133 |
+| [OBSOLÈTE (BLOC)](#obsolète-bloc) |   125 | [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   133 |
+| [OCTET (BYTE)](#octet-byte)    |   126 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   133 |
+| [OFFCHAIN](#offchain)          |   126 | [OP_IF (0X63)](#op_if-0x63)    |   133 |
+| [ONCHAIN](#onchain)            |   126 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   133 |
+| [ONION PRIVATE KEY](#onion-private-key) |   126 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   133 |
+| [ONION V3 PRIVATE KEY](#onion-v3-private-key) |   127 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   134 |
+| [OP_0 (0X00)](#op_0-0x00)      |   127 | [OP_MAX (0XA4)](#op_max-0xa4)  |   134 |
+| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   127 | [OP_MIN (0XA3)](#op_min-0xa3)  |   134 |
+| [OP_1 (0X51)](#op_1-0x51)      |   127 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   134 |
+| [OP_1ADD (0X8B)](#op_1add-0x8b) |   127 | [OP_NIP (0X77)](#op_nip-0x77)  |   134 |
+| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   127 | [OP_NOP (0X61)](#op_nop-0x61)  |   134 |
+| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   127 | [OP_NOT (0X91)](#op_not-0x91)  |   134 |
+| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   127 | [OP_NOTIF (0X64)](#op_notif-0x64) |   134 |
+| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   128 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   135 |
+| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   128 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   135 |
+| [OP_2OVER (0X70)](#op_2over-0x70) |   128 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   135 |
+| [OP_2ROT (0X71)](#op_2rot-0x71) |   128 | [OP_OVER (0X78)](#op_over-0x78) |   135 |
+| [OP_2SWAP (0X72)](#op_2swap-0x72) |   128 | [OP_PICK (0X79)](#op_pick-0x79) |   135 |
+| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   128 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   135 |
+| [OP_ABS (0X90)](#op_abs-0x90)  |   128 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   135 |
+| [OP_ADD (0X93)](#op_add-0x93)  |   128 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   135 |
+| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   128 | [OP_RETURN (0X6A)](#op_return-0x6a) |   136 |
+| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   129 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   136 |
+| [OP_CAT (0X7E)](#op_cat-0x7e)  |   129 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   136 |
+| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   129 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   136 |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   129 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   136 |
+| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   130 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   136 |
+| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   130 | [OP_SIZE (0X82)](#op_size-0x82) |   136 |
+| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   130 | [OP_SUB (0X94)](#op_sub-0x94)  |   136 |
+| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   131 | [OP_SUCCESS](#op_success)      |   136 |
+| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   131 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   137 |
+| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   131 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   137 |
+| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   131 | [OP_TRUE (0X51)](#op_true-0x51) |   137 |
+| [OP_DEPTH (0X74)](#op_depth-0x74) |   131 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   137 |
+| [OP_DROP (0X75)](#op_drop-0x75) |   131 | [OP_VER (0X62)](#op_ver-0x62)  |   137 |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   132 | [OP_VERIFY (0X69)](#op_verify-0x69) |   137 |
+| [OP_ELSE (0X67)](#op_else-0x67) |   132 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   138 |
+| [OP_ENDIF (0X68)](#op_endif-0x68) |   132 | [OPCODES](#opcodes)            |   138 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |   132 | [ORACLE](#oracle)              |   138 |
+| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   132 | [ORPHELIN (BLOC)](#orphelin-bloc) |   138 |
+| [OP_EVAL](#op_eval)            |   132 | [OU EXCLUSIF](#ou-exclusif)    |   139 |
+| [OP_FALSE (0X00)](#op_false-0x00) |   132 | [OUTBOUND CAPACITY](#outbound-capacity) |   139 |
+| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   132 | [OUTPUT](#output)              |   139 |
+| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   133 | [OUTPUT LINKING](#output-linking) |   140 |
 | | | | |
 
 
@@ -348,7 +348,7 @@ header-includes:
 | | | | |
 | [P2PK](#p2pk)                  |   142 | [PERIODE DE MATURITE](#periode-de-maturite) |   150 |
 | [P2PKH](#p2pkh)                |   142 | [PETIT-BOUTISTE](#petit-boutiste) |   150 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |   142 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |     ? |
+| [P2P TRANSPORT V2](#p2p-transport-v2) |   142 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |   150 |
 | [P2MS](#p2ms)                  |   142 | [POOL](#pool)                  |   150 |
 | [P2SH](#p2sh)                  |   143 | [POOL DE MINAGE](#pool-de-minage) |   151 |
 | [P2SH-P2WPKH](#p2sh-p2wpkh)    |   143 | [POOL HOPPING](#pool-hopping)  |   151 |
@@ -383,13 +383,13 @@ header-includes:
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [RACINE DE MERKLE](#racine-de-merkle) |   158 | [RESYNCHRONISATION](#resynchronisation) |   160 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   158 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |     ? |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   158 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   161 |
 | [RECOMPENSE DE BLOC](#recompense-de-bloc) |   158 | [RICOCHET](#ricochet)          |   161 |
 | [RECURSIF (COVENANT)](#recursif-covenant) |   158 | [RIPEMD160](#ripemd160)        |   161 |
 | [REDEEMSCRIPT](#redeemscript)  |   159 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   162 |
 | [REGLES DE CONSENSUS](#regles-de-consensus) |   159 | [RPOW](#rpow)                  |   162 |
 | [REGLES DE STANDARDISATION](#regles-de-standardisation) |   159 | [RSMPPS](#rsmpps)              |   162 |
-| [RÉORGANISATION](#réorganisation) |     ? | [RUST](#rust)                  |   162 |
+| [RÉORGANISATION](#réorganisation) |   159 | [RUST](#rust)                  |   162 |
 | [RESEAU BITCOIN](#reseau-bitcoin) |   160 | [RUST-LIGHTNING](#rust-lightning) |   163 |
 | [RESISTANCE AU PARTITIONNEMENT](#resistance-au-partitionnement) |   160 |                                |       |
 | | | | |

@@ -98,8 +98,7 @@ def ajouter_numeros_page(titre, page_num):
 def extraire_pages_definitions(pdf_path):
     doc = fitz.open(pdf_path)
     page_mapping = {}
-    definition_regex = r'^[A-Z][A-Z0-9 /()-]+$'
-    current_letter = None
+    definition_regex = r'^[A-ZÀÉÈÊËA-Z0-9 /()\'’_-]+$'
 
     # Locate pages where the grand letter appears
     grand_letters = {}
