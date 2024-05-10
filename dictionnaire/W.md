@@ -10,11 +10,11 @@ Traduction anglaise de « portefeuille ».
 
 > *Pour plus d'informations, voir la définition de [**PORTEFEUILLE**](./P.md#portefeuille).*
 
-## WALLET DOT DAT
+## WALLET.DAT
 
 Fichier dans Bitcoin Core qui stocke des informations sur le portefeuille de l'utilisateur, telles que les clés privées et les transactions effectuées. Le fichier wallet.dat est chiffré pour assurer la sécurité des fonds. Depuis la version 0.16.0, ce fichier a été déplacé dans le dossier wallets.
 
-## WALLETS/DB DOT LOG
+## WALLETS/DB.LOG
 
 Fichier journal dans Bitcoin Core spécifique à la base de données des portefeuilles. Il enregistre les opérations et les événements liés à la base de données des portefeuilles pour la résolution de problèmes.
 
