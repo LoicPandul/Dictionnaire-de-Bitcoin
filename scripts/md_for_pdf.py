@@ -2,6 +2,9 @@ import os
 import re
 import fitz  # PyMuPDF
 import unicodedata
+import datetime
+import locale
+
 
 # Paths and constants
 pdf_path = '../Dictionnaire de Bitcoin.pdf'
@@ -144,6 +147,15 @@ for fichier_lettre in sorted(os.listdir(chemin_dossier_dictionnaire)):
 # Generate the final Markdown file
 os.makedirs(os.path.dirname(chemin_markdown_final), exist_ok=True)
 
+# Définir la locale à Français
+locale.setlocale(locale.LC_TIME, 'fr_FR')
+
+# Define the current date
+date_aujourdhui = datetime.datetime.now().strftime('%d %B %Y')
+
+# Generate the final Markdown file
+os.makedirs(os.path.dirname(chemin_markdown_final), exist_ok=True)
+
 with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
     fichier_complet.write("""---
 header-includes:
@@ -156,6 +168,22 @@ header-includes:
   - \\arrayrulecolor{white}
 ---
 """)
+    # Add a custom page before the table of contents
+    # Début de la nouvelle page et préparation pour le texte en bas
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
+    fichier_complet.write("\\begin{minipage}[b][\\textheight][b]{\\textwidth}\n")  # Démarre une minipage en bas de la page
+    fichier_complet.write("\\textbf{© 2024 Loïc Morel} (pandul.fr)\\newline\n")
+    fichier_complet.write("\\textbf{\\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Version du " + date_aujourdhui + "\\newline\n")
+    fichier_complet.write("\\texttt{https://github.com/LoicPandul/Dictionnaire-de-Bitcoin}\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
+    fichier_complet.write("\\texttt{https://creativecommons.org/licenses/by-nc-sa/4.0/}\n")
+    fichier_complet.write("\\end{minipage}\n")
+    fichier_complet.write("\\newpage\n\n")
+
+
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n\\vspace*{\\fill}\n")
     fichier_complet.write("\\begin{center}\n")
     fichier_complet.write("\\Huge \\textbf{Table des matières}\n")

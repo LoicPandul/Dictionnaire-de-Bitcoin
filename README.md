@@ -1,5 +1,5 @@
 # Dictionnaire de Bitcoin
-Tout le vocabulaire technique de Bitcoin et de son environnement.
+Tout le vocabulaire technique de Bitcoin.
 
 ## Description du projet
 Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur GitHub, ou sous format PDF sur le site [https://www.pandul.fr/](https://www.pandul.fr/). Ce livre sera également vendu imprimé et broché sur Amazon à partir de fin 2024.
@@ -74,7 +74,8 @@ On ne parle évidemment pas de shitcoins dans ce dictionnaire, sauf si le shitco
 Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une définition exhaustive, même si elle doit être longue, plutôt qu'une définition courte et imprécise.
 
 ## Licence et réutilisation
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+**Shield:** [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
 **Crédit:**
 Cette définition est extraite du « Dictionnaire de Bitcoin », un ouvrage libre rédigé par Loïc Morel (Pandul) disponible sur GitHub : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/tree/main
 
