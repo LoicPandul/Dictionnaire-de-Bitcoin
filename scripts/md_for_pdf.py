@@ -183,6 +183,31 @@ header-includes:
     fichier_complet.write("\\end{minipage}\n")
     fichier_complet.write("\\newpage\n\n")
 
+    # Début de la nouvelle page pour "Dictionnaire de Bitcoin" avec minipage
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
+    fichier_complet.write("\\begin{minipage}[c][\\textheight]{\\textwidth}\n")
+    fichier_complet.write("\\vspace*{\\fill}\n")
+    fichier_complet.write("\\centering\n")  # Assure que le texte est centré horizontalement
+    # Augmenter la taille du titre principal avec un facteur d'échelle
+    fichier_complet.write("{\\fontsize{40}{50} \\selectfont \\textbf{Dictionnaire de Bitcoin}}\\newline\n")  # 1.5 fois plus gros que \\Huge
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n")     
+    fichier_complet.write("{\\Large \\textrm{TOUT LE VOCABULAIRE TECHNIQUE DE BITCOIN}}\\newline\n")  # Plus petit pour la sous-ligne en police avec empattement
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n") 
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("\\newline\n") 
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("{\\Large \\textbf{\\textit{Loïc Morel}}}\n")  # Italic et gras pour le nom
+    fichier_complet.write("\\vspace*{\\fill}\n")
+    fichier_complet.write("\\end{minipage}\n")
+    fichier_complet.write("\\newpage\n\n")
+
+
 
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n\\vspace*{\\fill}\n")
     fichier_complet.write("\\begin{center}\n")
