@@ -135,7 +135,7 @@ Blockchain conçue pour fonctionner en parallèle avec la blockchain principale 
 
 Type de SigHash Flag utilisé dans les signatures des transactions Bitcoin pour indiquer que la signature s'applique à tous les composants de la transaction. En utilisant `SIGHASH_ALL`, le signataire couvre tous les inputs et tous les outputs. Cela signifie que ni les inputs ni les outputs ne peuvent être modifiés après la signature sans invalider celle-ci. Ce type de SigHash Flag est le plus courant dans les transactions Bitcoin, car il assure une finalité et une intégrité complètes de la transaction.
 
-## SIGHASH_ALL / SIGHASH_ACP
+## SIGHASH_ALL/SIGHASH_ACP
 
 Type de SigHash Flag (`0x81`) combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison spécifie que la signature s'applique à tous les outputs et uniquement à un input spécifique de la transaction. `SIGHASH_ALL | SIGHASH_ANYONECANPAY` permet à d'autres participants d'ajouter des inputs supplémentaires à la transaction après sa signature initiale. Elle est particulièrement utile dans des scénarios collaboratifs, comme les transactions de financement participatif, où différents contributeurs peuvent ajouter leurs propres inputs tout en préservant l'intégrité des outputs engagés par le signataire initial.
 
@@ -173,7 +173,7 @@ En complément de ces trois SigHash Flags, le modificateur `SIGHASH_ANYONECANPAY
 
 Type de SigHash Flag utilisé dans les signatures des transactions Bitcoin pour indiquer que la signature s'applique à tous les inputs de la transaction, mais à aucun de ses outputs. L'utilisation de `SIGHASH_NONE` implique que le signataire s'engage uniquement sur les entrées, mais permet que les sorties restent indéterminées ou modifiables après la signature. Ce type de signature est utile dans les cas où le signataire souhaite autoriser d'autres parties à décider de la manière dont les bitcoins seront distribués dans cette transaction.
 
-## SIGHASH_NONE / SIGHASH_ACP
+## SIGHASH_NONE/SIGHASH_ACP
 
 Type de SigHash Flag (`0x82`) combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison indique que la signature s'applique seulement à un input spécifique, sans engager aucun output. Cela permet aux autres participants de rajouter librement des inputs supplémentaires et de modifier tous les outputs de la transaction.
 
@@ -181,7 +181,7 @@ Type de SigHash Flag (`0x82`) combiné avec le modificateur `SIGHASH_ANYONECANPA
 
 Type de SigHash Flag utilisé dans les signatures des transactions Bitcoin pour indiquer que la signature s'applique à tous les inputs de la transaction et à un seul output, correspondant à l'index du même input signé. Ainsi, chaque input signé avec `SIGHASH_SINGLE` est lié spécifiquement à un output particulier. Les autres outputs ne sont pas engagés par la signature et peuvent donc être modifiés ultérieurement. Ce type de signature est utile dans des transactions complexes, où les participants veulent lier certains inputs à des outputs spécifiques, tout en laissant de la flexibilité pour les autres outputs de la transaction.
 
-## SIGHASH_SINGLE / SIGHASH_ACP
+## SIGHASH_SINGLE/SIGHASH_ACP
 
 Type de SigHash Flag (`0x83`) combiné avec le modificateur `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) utilisé dans les signatures des transactions Bitcoin. Cette combinaison spécifie que la signature s'applique à un seul input spécifique et uniquement à l'output ayant le même index que cet input. Les autres inputs et outputs peuvent être ajoutés ou modifiés par d'autres parties. Cette configuration est utile pour des transactions collaboratives où les participants peuvent ajouter leurs propres inputs pour financer un output spécifique.
 
@@ -233,9 +233,9 @@ Dans le contexte de Bitcoin, une « sortie » (ou « output » en anglais) au se
 
 ## SORTIE NON RENTABLE
 
-Synonyme de « dust » ou « poussière » en français. Pour plus d'informations, voir la définition de **DUST**.
+Synonyme de « dust » ou « poussière » en français.
 
-> *En anglais, on croise parfois le terme de « uneconomical outputs » pour désigner du dust.*
+> *En anglais, on croise parfois le terme de « uneconomical outputs » pour désigner du dust. Pour plus d'informations, voir la définition de **[DUST](./D.md#dust)**.* 
 
 ## SPEEDY TRIAL
 
@@ -261,7 +261,7 @@ Catégorie de cryptomonnaie conçue pour maintenir une valeur stable par rapport
 
 Fait référence à un bloc sans enfant (bloc obsolète) : un bloc valide mais exclu de la chaîne principale de Bitcoin.
 
-> *Pour plus d'informations, voir la définition de **[OBSOLÈTE (BLOC)](./O.md#obsolète-bloc)**.*
+> *Pour plus d'informations, voir la définition de **[OBSOLÈTE](./O.md#obsolète)**.*
 
 ## STONEWALL X2
 

@@ -155,8 +155,8 @@
 
 ### C
 
-- [C++](./dictionnaire/C.md#c)
 - [C (LANGAGE)](./dictionnaire/C.md#c-langage)
+- [C++ (PLUS PLUS)](./dictionnaire/C.md#c-plus-plus)
 - [CAHOOTS](./dictionnaire/C.md#cahoots)
 - [CANAL DE PAIMENT](./dictionnaire/C.md#canal-de-paiment)
 - [CAPACITÉ DE CANAL LIGHTNING](./dictionnaire/C.md#capacité-de-canal-lightning)
@@ -384,7 +384,7 @@
 ### O
 
 - [OBOE (OFF-BY-ONE ERROR)](./dictionnaire/O.md#oboe-off-by-one-error)
-- [OBSOLÈTE (BLOC)](./dictionnaire/O.md#obsolète-bloc)
+- [OBSOLÈTE](./dictionnaire/O.md#obsolète)
 - [OCTET (BYTE)](./dictionnaire/O.md#octet-byte)
 - [OFFCHAIN](./dictionnaire/O.md#offchain)
 - [ONCHAIN](./dictionnaire/O.md#onchain)
@@ -468,7 +468,7 @@
 - [OP_WITHIN (0XA5)](./dictionnaire/O.md#op_within-0xa5)
 - [OPCODES](./dictionnaire/O.md#opcodes)
 - [ORACLE](./dictionnaire/O.md#oracle)
-- [ORPHELIN (BLOC)](./dictionnaire/O.md#orphelin-bloc)
+- [ORPHELIN](./dictionnaire/O.md#orphelin)
 - [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
 - [OUTBOUND CAPACITY](./dictionnaire/O.md#outbound-capacity)
 - [OUTPUT](./dictionnaire/O.md#output)
@@ -574,14 +574,14 @@
 - [SHOR (ALGORITHME)](./dictionnaire/S.md#shor-algorithme)
 - [SIDECHAIN](./dictionnaire/S.md#sidechain)
 - [SIGHASH_ALL (0X01)](./dictionnaire/S.md#sighash_all-0x01)
-- [SIGHASH_ALL / SIGHASH_ACP](./dictionnaire/S.md#sighash_all-sighash_acp)
+- [SIGHASH_ALL/SIGHASH_ACP](./dictionnaire/S.md#sighash_allsighash_acp)
 - [SIGHASH_ANYPREVOUT](./dictionnaire/S.md#sighash_anyprevout)
 - [SIGHASH_ANYPREVOUTANYSCRIPT](./dictionnaire/S.md#sighash_anyprevoutanyscript)
 - [SIGHASH FLAG](./dictionnaire/S.md#sighash-flag)
 - [SIGHASH_NONE (0X02)](./dictionnaire/S.md#sighash_none-0x02)
-- [SIGHASH_NONE / SIGHASH_ACP](./dictionnaire/S.md#sighash_none-sighash_acp)
+- [SIGHASH_NONE/SIGHASH_ACP](./dictionnaire/S.md#sighash_nonesighash_acp)
 - [SIGHASH_SINGLE (0X03)](./dictionnaire/S.md#sighash_single-0x03)
-- [SIGHASH_SINGLE / SIGHASH_ACP](./dictionnaire/S.md#sighash_single-sighash_acp)
+- [SIGHASH_SINGLE/SIGHASH_ACP](./dictionnaire/S.md#sighash_singlesighash_acp)
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
