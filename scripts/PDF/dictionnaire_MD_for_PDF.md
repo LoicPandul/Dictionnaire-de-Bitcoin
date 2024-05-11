@@ -31,7 +31,31 @@ Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
 \newline
 \newline
 \newline
-{\Large \textrm{TOUT LE VOCABULAIRE TECHNIQUE DE BITCOIN}}\newline
+{\Large TOUT LE VOCABULAIRE TECHNIQUE DE BITCOIN}\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
 \newline
 \newline
 \newline
