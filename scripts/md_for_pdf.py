@@ -4,12 +4,17 @@ import fitz  # PyMuPDF
 import unicodedata
 import datetime
 import locale
+import requests
 
 
 # Paths and constants
 pdf_path = '../Dictionnaire de Bitcoin.pdf'
 chemin_dossier_dictionnaire = '../dictionnaire'
 chemin_markdown_final = 'PDF/dictionnaire_MD_for_PDF.md'
+
+def read_contributor_paragraph():
+    with open('PDF/contributeurs_paragraphe.md', 'r', encoding='utf-8') as file:
+        return file.read()
 
 # Normalize titles by removing special characters and accents
 def normalize_title(title):
@@ -168,20 +173,6 @@ header-includes:
   - \\arrayrulecolor{white}
 ---
 """)
-    # Add a custom page before the table of contents
-    # Début de la nouvelle page et préparation pour le texte en bas
-    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
-    fichier_complet.write("\\begin{minipage}[b][\\textheight][b]{\\textwidth}\n")  # Démarre une minipage en bas de la page
-    fichier_complet.write("\\textbf{© 2024 Loïc Morel} (pandul.fr)\\newline\n")
-    fichier_complet.write("\\textbf{\\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\\newline\n")
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("Version du " + date_aujourdhui + "\\newline\n")
-    fichier_complet.write("\\texttt{https://github.com/LoicPandul/Dictionnaire-de-Bitcoin}\\newline\n")
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
-    fichier_complet.write("\\texttt{https://creativecommons.org/licenses/by-nc-sa/4.0/}\n")
-    fichier_complet.write("\\end{minipage}\n")
-    fichier_complet.write("\\newpage\n\n")
 
     # Début de la nouvelle page pour "Dictionnaire de Bitcoin" avec minipage
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
@@ -231,11 +222,39 @@ header-includes:
     fichier_complet.write("\\end{minipage}\n")
     fichier_complet.write("\\newpage\n\n")
 
+    # Add a custom page before the table of contents
+    # Début de la nouvelle page et préparation pour le texte en bas
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
+    fichier_complet.write("\\begin{minipage}[b][\\textheight][b]{\\textwidth}\n")  # Démarre une minipage en bas de la page
+    fichier_complet.write("\\textbf{© 2024 Loïc Morel} (pandul.fr)\\newline\n")
+    fichier_complet.write("\\textbf{\\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Version du " + date_aujourdhui + "\\newline\n")
+    fichier_complet.write("\\texttt{https://github.com/LoicPandul/Dictionnaire-de-Bitcoin}\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
+    fichier_complet.write("\\texttt{https://creativecommons.org/licenses/by-nc-sa/4.0/}\n")
+    fichier_complet.write("\\end{minipage}\n")
+    fichier_complet.write("\\newpage\n\n")
+
+
+    # Récupérer le paragraphe
+    contributor_paragraph = read_contributor_paragraph()
+    formatted_paragraph = markdown_to_latex_lists(contributor_paragraph)
+
+
+    # Commencer une nouvelle page et écrire la section Contributeurs
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
+    fichier_complet.write("\\begin{center}\n\\Huge \\textbf{CONTRIBUTEURS}\n\\end{center}\n")
+    fichier_complet.write("\\vspace*{1cm}\n")
+
+    # Écrire le paragraphe des contributeurs
+    fichier_complet.write(formatted_paragraph + "\\newline\n")
 
 
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n\\vspace*{\\fill}\n")
     fichier_complet.write("\\begin{center}\n")
-    fichier_complet.write("\\Huge \\textbf{Table des matières}\n")
+    fichier_complet.write("\\Huge \\textbf{TABLE DES MATIÈRES}\n")
     fichier_complet.write("\\end{center}\n\\vspace*{\\fill}\n\\newpage\n\n")
 
     # Create the index in alphabetical order
