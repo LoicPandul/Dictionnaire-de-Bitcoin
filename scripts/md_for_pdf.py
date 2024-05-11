@@ -166,6 +166,7 @@ with open(chemin_markdown_final, 'w', encoding='utf-8') as fichier_complet:
 header-includes:
   - \\usepackage{fancyhdr}
   - \\usepackage{colortbl}
+  - \\usepackage{pdfpages}
   - \\pagestyle{fancy}
   - \\fancyfoot[C]{\\thepage}
   - \\renewcommand{\\headrulewidth}{0pt}
@@ -173,6 +174,30 @@ header-includes:
   - \\arrayrulecolor{white}
 ---
 """)
+
+    fichier_complet.write("\\clearpage\n")
+    fichier_complet.write("\\pagecolor{black}\n")
+    fichier_complet.write("""\\includepdf{cover_front.png}\n""")
+    fichier_complet.write("\\nopagecolor\n")
+
+    # Add a custom page before the table of contents
+    # Début de la nouvelle page et préparation pour le texte en bas
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
+    fichier_complet.write("\\begin{minipage}[b][\\textheight][b]{\\textwidth}\n")  # Démarre une minipage en bas de la page
+    fichier_complet.write("\\textbf{© 2024 Loïc Morel}\\newline\n")
+    fichier_complet.write("\\textbf{\\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Version du " + date_aujourdhui + "\\newline\n")
+    fichier_complet.write("https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
+    fichier_complet.write("https://creativecommons.org/licenses/by-nc-sa/4.0/\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Email : loic@pandul.fr\\newline\n")  
+    fichier_complet.write("Site web : https://www.pandul.fr/\\newline\n")  
+    fichier_complet.write("GitHub : https://github.com/LoicPandul/\\newline\n")
+    fichier_complet.write("\\end{minipage}\n")
+    fichier_complet.write("\\newpage\n\n")
 
     # Début de la nouvelle page pour "Dictionnaire de Bitcoin" avec minipage
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
@@ -219,26 +244,6 @@ header-includes:
     fichier_complet.write("\\end{minipage}\n")
     fichier_complet.write("\\newpage\n\n")
 
-    # Add a custom page before the table of contents
-    # Début de la nouvelle page et préparation pour le texte en bas
-    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
-    fichier_complet.write("\\begin{minipage}[b][\\textheight][b]{\\textwidth}\n")  # Démarre une minipage en bas de la page
-    fichier_complet.write("\\textbf{© 2024 Loïc Morel}\\newline\n")
-    fichier_complet.write("\\textbf{\\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\\newline\n")
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("Version du " + date_aujourdhui + "\\newline\n")
-    fichier_complet.write("https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\\newline\n")
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
-    fichier_complet.write("https://creativecommons.org/licenses/by-nc-sa/4.0/\\newline\n")
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("Email : loic@pandul.fr\\newline\n")  
-    fichier_complet.write("Site web : https://www.pandul.fr/\\newline\n")  
-    fichier_complet.write("GitHub : https://github.com/LoicPandul/\\newline\n")
-    fichier_complet.write("\\end{minipage}\n")
-    fichier_complet.write("\\newpage\n\n")
-
-
     # Récupérer le paragraphe
     contributor_paragraph = read_contributor_paragraph()
     formatted_paragraph = markdown_to_latex_lists(contributor_paragraph)
@@ -277,5 +282,10 @@ header-includes:
             contenu = ajuster_liens_et_images(contenu)
             contenu = markdown_to_latex_lists(contenu)
             fichier_complet.write(contenu + '\n\n')
+
+    fichier_complet.write("\\clearpage\n")
+    fichier_complet.write("\\pagecolor{black}\n")
+    fichier_complet.write("""\\includepdf{cover_back.png}\n""")
+    fichier_complet.write("\\nopagecolor\n")
 
 print(f'Le fichier Markdown a été créé avec succès : {chemin_markdown_final}')
