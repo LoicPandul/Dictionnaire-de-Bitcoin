@@ -183,8 +183,8 @@ header-includes:
     fichier_complet.write("{\\fontsize{40}{50} \\selectfont \\textbf{Dictionnaire de Bitcoin}}\\newline\n")  # 1.5 fois plus gros que \\Huge
     fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n")
-    fichier_complet.write("\\newline\n")     
-    fichier_complet.write("{\\Large TOUT LE VOCABULAIRE TECHNIQUE DE BITCOIN}\\newline\n")  # Plus petit pour la sous-ligne
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("{\\fontsize{15}{25} \\selectfont{TOUT LE VOCABULAIRE TECHNIQUE DE BITCOIN}}\\newline\n")
     fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n") 
@@ -204,9 +204,6 @@ header-includes:
     fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n") 
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("\\newline\n")
-    fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n") 
     fichier_complet.write("\\newline\n")
     fichier_complet.write("\\newline\n")
@@ -226,14 +223,18 @@ header-includes:
     # Début de la nouvelle page et préparation pour le texte en bas
     fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
     fichier_complet.write("\\begin{minipage}[b][\\textheight][b]{\\textwidth}\n")  # Démarre une minipage en bas de la page
-    fichier_complet.write("\\textbf{© 2024 Loïc Morel} (pandul.fr)\\newline\n")
+    fichier_complet.write("\\textbf{© 2024 Loïc Morel}\\newline\n")
     fichier_complet.write("\\textbf{\\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\\newline\n")
     fichier_complet.write("\\newline\n")
     fichier_complet.write("Version du " + date_aujourdhui + "\\newline\n")
-    fichier_complet.write("\\texttt{https://github.com/LoicPandul/Dictionnaire-de-Bitcoin}\\newline\n")
+    fichier_complet.write("https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\\newline\n")
     fichier_complet.write("\\newline\n")
     fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
-    fichier_complet.write("\\texttt{https://creativecommons.org/licenses/by-nc-sa/4.0/}\n")
+    fichier_complet.write("https://creativecommons.org/licenses/by-nc-sa/4.0/\\newline\n")
+    fichier_complet.write("\\newline\n")
+    fichier_complet.write("Email : loic@pandul.fr\\newline\n")  
+    fichier_complet.write("Site web : https://www.pandul.fr/\\newline\n")  
+    fichier_complet.write("GitHub : https://github.com/LoicPandul/\\newline\n")
     fichier_complet.write("\\end{minipage}\n")
     fichier_complet.write("\\newpage\n\n")
 
