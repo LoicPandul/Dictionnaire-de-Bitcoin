@@ -252,10 +252,11 @@ header-includes:
     fichier_complet.write(formatted_paragraph + "\\newline\n")
 
 
-    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n\\vspace*{\\fill}\n")
+    fichier_complet.write("\\newpage\n\\thispagestyle{empty}\n")
     fichier_complet.write("\\begin{center}\n")
     fichier_complet.write("\\Huge \\textbf{TABLE DES MATIÈRES}\n")
-    fichier_complet.write("\\end{center}\n\\vspace*{\\fill}\n\\newpage\n\n")
+    fichier_complet.write("\\end{center}\n")
+    fichier_complet.write("\\vspace*{0.5cm}\n")
 
     # Create the index in alphabetical order
     for lettre, titres in sorted(titres_par_lettre.items()):
