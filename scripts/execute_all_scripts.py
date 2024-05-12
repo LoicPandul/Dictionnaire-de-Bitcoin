@@ -6,7 +6,9 @@ chemin_dossier_scripts = '.'
 script_actuel = os.path.basename(__file__)
 
 scripts_prioritaires = [
+    'puces_et_citations.py'
     'generate_dictionary_files.py',
+    'md_for_pdf.py',
     'update_index.py',
     'stats.py'
 ]

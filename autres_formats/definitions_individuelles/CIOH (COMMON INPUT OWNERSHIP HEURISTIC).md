@@ -5,6 +5,8 @@ Heuristique utilisée dans le domaine de l'analyse et du traçage des transactio
 > « *Toutefois, la liaison est inévitable avec les transactions multi-entrées, qui révèlent nécessairement que leurs entrées étaient détenues par un même propriétaire. Le risque est que si le propriétaire d'une clef est révélé, les liaisons peuvent révéler d'autres transactions qui ont appartenu au même propriétaire.* » - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Consulté à l'adresse https://bitcoin.org/bitcoin.pdf.
 
 Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les sociétés d'analyse de chaîne, avec la réutilisation d'adresse.
-![](/dictionnaire/assets/C/13.png)
+
+![](../../dictionnaire/assets/13.png)
+
 > *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 

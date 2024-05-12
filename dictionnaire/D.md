@@ -1,5 +1,3 @@
-## DAEMON
-
 
 ## DANDELION
 
@@ -29,36 +27,15 @@ Forme de DOS où l'attaque provient de multiples sources simultanément, rendant
 
 Fichier contenant l'historique des événements de Bitcoin Core. Il contient des données de journalisation, telles que les messages d'erreur, les avertissements et d'autres informations de débogage. Ce fichier est utilisé pour résoudre des éventuels problèmes techniques.
 
-## DEPEG
-
-
 ## DÉPÔT
 
 Structure de données centrale utilisée dans Git où sont stockées les informations de versionnage d'un projet. Un dépôt contient l'historique complet de toutes les modifications, les branches et les tags. Chaque dépôt est une collection indépendante de fichiers et de dossiers, accompagnée d'un historique des commits, permettant la collaboration et le suivi des changements au fil du temps. Par exemple, le dépôt de Bitcoin Core est stocké sur Github ici : https://github.com/bitcoin/bitcoin.
 
 > *En anglais, on parle d'un « repository ». Il est courant d'employer la troncation « repo » pour désigner un dépôt Git.*
 
-## DÉRIVATION
+## DGM
 
-Portefeuille HD
-
-
-## DÉRIVATION ENDURCIE
-
-
-## DÉRIVATION NORMALE 
-
-
-## DEVISE
-
-Portefeuille HD profondeur 2
-
-## DGM (DOUBLE GEOMETRIC METHOD)
-
-Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une méthodes hybride, qui est sensée combiner les avantages de PPLNS et de la méthode dite « géométrique ». Elle dispose d'une faible variance sur les parts, à la manière de PPLNS, puis permet au mineur d'absorber de la variance pour réduire celle de la pool dans un second temps. DGM est résistant au pool hopping en garantissant que le paiement attendu par part reste constant. La méthode est basée sur des scores, rendant les paiements indépendants de l'historique de la pool et presque totalement indépendants des changements futurs de difficulté.
-
-## DIFFICULTÉ
-
+Sigle de « *Double Geometric Method* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une méthodes hybride, qui est sensée combiner les avantages de PPLNS et de la méthode dite « géométrique ». Elle dispose d'une faible variance sur les parts, à la manière de PPLNS, puis permet au mineur d'absorber de la variance pour réduire celle de la pool dans un second temps. DGM est résistant au pool hopping en garantissant que le paiement attendu par part reste constant. La méthode est basée sur des scores, rendant les paiements indépendants de l'historique de la pool et presque totalement indépendants des changements futurs de difficulté.
 
 ## DIFFIE-HELLMAN
 
@@ -70,37 +47,30 @@ Attribut d'un réseau informatique dans lequel le pouvoir de décision et le con
 
 > *Certaines personnes parlent de Bitcoin comme d'un système décentralisé. En effet, il n'est pas rare d'observer une interchangeabilité de ces deux termes. Un synonyme plus évocateur de l'adjectif « distribué » pourrait être « pair-à-pair », parfois abrégé « P2P », le sigle de la traduction anglaise « Peer-to-Peer ».*
 
-## DIVISION
-
-Split ?
-
 ## DLC (DISCREET LOG CONTRACT)
 
 Type de contrat intelligent sur Bitcoin qui permet l'exécution de conditions contractuelles à partir du résultat d'événements externes, validés par un ou plusieurs oracles, sans que ces derniers ne connaissent les détails du contrat. Les DLC ont été inventés par Tadge Dryja en 2018. Ces contrats intelligents sont principalement utiles dans des applications financières, permettant par exemple de créer des instruments financiers ou des paris conditionnels, tout en réduisant les risques de contrepartie. Pour construire un DLC, plusieurs parties bloquent des bitcoins sur une adresse multisig. Ces bitcoins ne peuvent être débloqués que lorsque l'oracle publie les informations spécifiées à un moment donné.
 
 ## DLP (DISCREET LOG PROBLEME)
 
-Voir la définition de [**LOGARITHME DISCRET (PROBLÈME)**](./L.md#logarithme-discret-problème).
+Voir la définition de [**LOGARITHME DISCRET**](./L.md#logarithme-discret).
 
 ## DNS SEEDS
 
 Points de connexion initiaux pour les nouveaux nœuds Bitcoin qui rejoignent le réseau. Ces seeds, qui sont en fait des serveurs DNS spécifiques, ont leur adresse intégrée de façon permanente dans le code de Bitcoin Core. Lorsqu'un nouveau nœud se lance, il contacte ces serveurs pour obtenir une liste aléatoire d'adresses IP de nœuds Bitcoin à priori actifs. Le nouveau nœud pourra ainsi établir des connexions avec les nœuds de cette liste afin d'obtenir les informations pour faire son IBD et se synchroniser sur la chaîne avec le plus de travail accumulé. En 2023, voici la liste des DNS seeds de Bitcoin Core et les personnes responsables de leur maintenance (bitcoin/src/kernel/chainparams.cpp) :
-- seed.bitcoin.sipa.be : Pieter Wuille ;
-- dnsseed.bluematt.me : Matt Corallo ;
-- dnsseed.bitcoin.dashjr.org : Luke Dashjr ;
-- seed.bitcoinstats.com : Christian Decker ;
-- seed.bitcoin.jonasschnelli.ch : Jonas Schnelli ;
-- seed.btc.petertodd.net : Peter Todd ;
-- seed.bitcoin.sprovoost.nl : Sjors Provoost ;
-- dnsseed.emzy.de : Stephan Oeste ;
-- seed.bitcoin.wiz.biz : Jason Maurice.
+* seed.bitcoin.sipa.be : Pieter Wuille ;
+* dnsseed.bluematt.me : Matt Corallo ;
+* dnsseed.bitcoin.dashjr.org : Luke Dashjr ;
+* seed.bitcoinstats.com : Christian Decker ;
+* seed.bitcoin.jonasschnelli.ch : Jonas Schnelli ;
+* seed.btc.petertodd.net : Peter Todd ;
+* seed.bitcoin.sprovoost.nl : Sjors Provoost ;
+* dnsseed.emzy.de : Stephan Oeste ;
+* seed.bitcoin.wiz.biz : Jason Maurice.
 
 Les DNS seeds représentent le second moyen, par ordre de priorité, pour un nœud de Bitcoin d'établir des connexions. Le premier moyen consiste à utiliser le fichier peers.dat que le nœud a lui-même créé. Ce fichier est naturellement vide dans le cas d'un nouveau nœud, à moins que l'utilisateur l'ai modifié manuellement.
 
 > *Attention, les DNS seeds ne doivent pas être confondus avec les « seed nodes », qui sont eux la troisième manière d'établir des connexions. Pour plus d'informations, voir la définition de [**SEED NODES**](./S.md#seed-nodes).*
-
-## DOLLAR COST AVERAGING (DCA)
-
 
 ## DOS (DENIAL OF SERVICE)
 
@@ -115,9 +85,6 @@ Attaque où un utilisateur malveillant tente d'utiliser le même UTXO (*Unspent 
 ## DRIVECHAIN
 
 Forme spécifique de sidechain où les mineurs de la blockchain principale (Bitcoin) ont un rôle direct dans la gouvernance de l'ancrage bilatéral et éventuellement dans le mécanisme de consensus de la sidechain. Ce protocole a été inventé par Paul Sztorc et pourrait être mis en place grâce aux controversés BIP300, qui permettrait le two-way peg auprès des mineurs, et BIP301, qui permettrait d'utiliser le minage fusionné (merged mining) de manière optimale.
-
-## DUAL FUNDING
-
 
 ## DUMMY ELEMENT
 
