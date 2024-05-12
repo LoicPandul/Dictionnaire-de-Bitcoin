@@ -39,8 +39,9 @@ Dans le cadre de Lightning, c'est un protocole de communication entre les nœuds
 
 > *En français, on pourrait traduire « gossip protocol » par « protocole de bavardage ».*
 
-## GPL (GNU GENERAL PUBLIC LICENCE)
+## GPL
 
+GNU licence
 
 ## GRAINE (SEED)
 

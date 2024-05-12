@@ -97,9 +97,9 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 
 > *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 
-## CISA 
+## CISA
 
-(CROSS-INPUT SIGNATURE AGGREGATION)
+Cross input signature aggregation
 
 ## CLÉ ÉTENDUE
 

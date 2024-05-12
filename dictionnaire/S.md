@@ -230,7 +230,7 @@ Dans les scripts Taproot, les sigops sont traitées de manière différente par 
 ## SILK ROAD
 
 
-## SIMPLIFIED PAYMENT VERIFICATION (SPV)
+## SIMPLIFIED PAYMENT VERIFICATION
 
 
 ## SLIP

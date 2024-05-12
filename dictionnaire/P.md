@@ -74,11 +74,9 @@ Nœud vers lequel votre propre nœud Bitcoin établit activement une connexion. 
 
 > *La traduction anglaise de « pair sortant » est « outbound peer » ou « outgoing connection ».*
 
-## PAPER WALLET (PORTEFEUILLE PAPIER)
+## PAPER WALLET
 
 
-
-## PARTIALLY SIGNED BITCOIN TRANSACTION (PSBT)
 
 
 
@@ -239,7 +237,7 @@ Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la m
 
 > *En anglais, on parle de « Proof-of-Work », parfois abrégé avec le sigle « PoW ».*
 
-## PROBLÈME DES GÉNÉRAUX BYZANTINS
+## PROBLÈME GÉNÉRAUX BYZANTINS
 
 
 ## PROFONDEUR
