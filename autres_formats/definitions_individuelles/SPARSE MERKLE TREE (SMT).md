@@ -1,4 +1,3 @@
 ## SPARSE MERKLE TREE (SMT)
 
 
-

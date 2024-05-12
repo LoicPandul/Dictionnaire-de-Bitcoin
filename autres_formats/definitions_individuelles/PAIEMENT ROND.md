@@ -1,5 +1,5 @@
 ## PAIEMENT ROND
 
-![](/dictionnaire/assets/P/11.png)
+![](../../dictionnaire/assets/11.png)
 
 

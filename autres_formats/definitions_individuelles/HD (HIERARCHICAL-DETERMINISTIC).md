@@ -1,6 +1,3 @@
 ## HD (HIERARCHICAL-DETERMINISTIC)
 
 
-
-
-

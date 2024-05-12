@@ -1,0 +1,4 @@
+## GPL
+
+GNU licence
+

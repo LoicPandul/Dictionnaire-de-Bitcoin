@@ -2,8 +2,5 @@
 
 
 
-![](/dictionnaire/assets/S/12.png)
-
-
-
+![](../../dictionnaire/assets/12.png)
 
