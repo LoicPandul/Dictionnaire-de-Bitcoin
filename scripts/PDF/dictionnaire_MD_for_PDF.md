@@ -96,7 +96,7 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
   \item 200KEKS (https://twitter.com/200KEKS) ;
   \item Fanis Michalakis (https://twitter.com/FanisMichalakis) ;
   \item AcidBunny (https://twitter.com/acidbunny21) ;
-  \item Sosthène (https://twitter.com/Sosthene/\_\_\_)
+  \item Sosthène (https://twitter.com/Sosthene\_\_\_)
   \item Théo Pantamis (https://twitter.com/TheoPantamis) ;
   \item Louferlou (https://twitter.com/Louferlou) ;
   \item JohnOnChain (https://twitter.com/JohnOnChain) ;
@@ -130,20 +130,24 @@ Un grand merci aussi à tous ceux qui ont contribué à mes différents projets 
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ACINQ](#acinq)                |    17 | [ANYPREVOUT (APO)](#anyprevout-apo) |    22 |
-| [ADAPTOR SIGNATURE](#adaptor-signature) |    17 | [AOPP](#aopp)                  |    22 |
-| [ADDR](#addr)                  |    18 | [API](#api)                    |    22 |
-| [ADDR.DAT](#addr.dat)          |    18 | [ARBRE DE MERKLE](#arbre-de-merkle) |    23 |
+| [ACINQ](#acinq)                |    17 | [ANTI MONEY LAUNDERING (AML)](#anti-money-laundering-aml) |    22 |
+| [ADAPTOR SIGNATURE](#adaptor-signature) |    17 | [ANYPREVOUT (APO)](#anyprevout-apo) |    22 |
+| [ADDR](#addr)                  |    18 | [AOPP](#aopp)                  |    22 |
+| [ADDR.DAT](#addr.dat)          |    18 | [API](#api)                    |    23 |
+| [ADDRESS SPOOFING](#address-spoofing) |    19 | [ARBITRAGE](#arbitrage)        |    23 |
+| [ADDRESS SWAPPING](#address-swapping) |    19 | [ARBRE DE MERKLE](#arbre-de-merkle) |    23 |
 | [ADDRV2](#addrv2)              |    19 | [ARK](#ark)                    |    24 |
-| [ADRESSE DE RECEPTION](#adresse-de-reception) |    19 | [ASIC](#asic)                  |    24 |
-| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    19 | [ASMAP](#asmap)                |    25 |
-| [ALGORITHME](#algorithme)      |    20 | [ASSUME UTXO](#assume-utxo)    |    25 |
+| [ADRESSE DE RECEPTION](#adresse-de-reception) |    19 | [ASCII](#ascii)                |    25 |
+| [AGORISME](#agorisme)          |    19 | [ASIC](#asic)                  |    25 |
+| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    19 | [ASIC BOOST](#asic-boost)      |    25 |
+| [ALGORITHME](#algorithme)      |    20 | [ASMAP](#asmap)                |    25 |
+| [ALTCOIN](#altcoin)            |    20 | [ASSUME UTXO](#assume-utxo)    |    25 |
 | [ANALYSE DE CHAINE](#analyse-de-chaine) |    20 | [ASSUME VALID](#assume-valid)  |    25 |
 | [ANCESTOR MINING](#ancestor-mining) |    21 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    26 |
 | [ANCHOR OUTPUTS](#anchor-outputs) |    21 | [ATLC](#atlc)                  |    26 |
 | [ANCHORS.DAT](#anchors.dat)    |    21 | [ATOMIC SWAP](#atomic-swap)    |    26 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    21 | [ATTAQUE DES 51 POURCENT](#attaque-des-51-pourcent) |    27 |
-| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    22 |                                |       |
+| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    21 | [ATTAQUE DES 51 POURCENTS](#attaque-des-51-pourcents) |    27 |
+| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    22 | [ATTAQUE PAR REJEU](#attaque-par-rejeu) |    27 |
 | | | | |
 
 
@@ -157,60 +161,61 @@ Un grand merci aussi à tous ceux qui ont contribué à mes différents projets 
 | [BASE (ARITHMETIQUE)](#base-arithmetique) |    29 | [BIP144](#bip144)              |    45 |
 | [BASE58CHECK](#base58check)    |    29 | [BIP145](#bip145)              |    45 |
 | [BATCHED SPENDING](#batched-spending) |    30 | [BIP147](#bip147)              |    45 |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    30 | [BIP148](#bip148)              |    46 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |    31 | [BIP149](#bip149)              |    46 |
-| [BERKELEYDB](#berkeleydb)      |    31 | [BIP150](#bip150)              |    46 |
-| [BIG-ENDIAN](#big-endian)      |    31 | [BIP151](#bip151)              |    47 |
-| [BIP](#bip)                    |    32 | [BIP152](#bip152)              |    47 |
-| [BIP1](#bip1)                  |    32 | [BIP155](#bip155)              |    47 |
-| [BIP2](#bip2)                  |    32 | [BIP156](#bip156)              |    47 |
-| [BIP8](#bip8)                  |    32 | [BIP173](#bip173)              |    48 |
-| [BIP9](#bip9)                  |    33 | [BIP322](#bip322)              |    48 |
-| [BIP10](#bip10)                |    33 | [BIP324](#bip324)              |    48 |
-| [BIP11](#bip11)                |    33 | [BIP326](#bip326)              |    48 |
-| [BIP12](#bip12)                |    34 | [BIT](#bit)                    |    49 |
-| [BIP13](#bip13)                |    34 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    49 |
-| [BIP14](#bip14)                |    34 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    49 |
-| [BIP16](#bip16)                |    34 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    50 |
-| [BIP17](#bip17)                |    34 | [BITCOIN-CLI](#bitcoin-cli)    |    50 |
-| [BIP21](#bip21)                |    35 | [BITCOIN.CONF](#bitcoin.conf)  |    50 |
-| [BIP22](#bip22)                |    35 | [BITCOIN CORE](#bitcoin-core)  |    50 |
-| [BIP23](#bip23)                |    35 | [BITCOIND](#bitcoind)          |    50 |
-| [BIP30](#bip30)                |    35 | [BITCOIND.PID](#bitcoind.pid)  |    51 |
-| [BIP31](#bip31)                |    36 | [BITCOIN FOG](#bitcoin-fog)    |    51 |
-| [BIP32](#bip32)                |    36 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    51 |
-| [BIP34](#bip34)                |    36 | [BITCOIN KNOTS](#bitcoin-knots) |    51 |
-| [BIP35](#bip35)                |    36 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    51 |
-| [BIP37](#bip37)                |    56 | [BITCOIN JESUS](#bitcoin-jesus) |    52 |
-| [BIP38](#bip38)                |    37 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    52 |
-| [BIP39](#bip39)                |    37 | [BITCOIN QT](#bitcoin-qt)      |    52 |
-| [BIP42](#bip42)                |    37 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    52 |
-| [BIP43](#bip43)                |    38 | [BITCOINTALK](#bitcointalk)    |    52 |
-| [BIP44](#bip44)                |    38 | [BIT GOLD](#bit-gold)          |    52 |
-| [BIP47](#bip47)                |    39 | [BITVM](#bitvm)                |    53 |
-| [BIP49](#bip49)                |    39 | [BLK?????.DAT](#blk.dat)       |    53 |
-| [BIP50](#bip50)                |    39 | [BLKINDEX.DAT](#blkindex.dat)  |    53 |
-| [BIP61](#bip61)                |    40 | [BLKTREE/](#blktree)           |    53 |
-| [BIP65](#bip65)                |    40 | [BLOC](#bloc)                  |    53 |
-| [BIP66](#bip66)                |    40 | [BLOC CANDIDAT](#bloc-candidat) |    54 |
-| [BIP68](#bip68)                |    40 | [BLOCKCHAIN](#blockchain)      |    54 |
-| [BIP70](#bip70)                |    40 | [BLOCKS INDEX](#blocks-index)  |    55 |
-| [BIP71](#bip71)                |    41 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    55 |
-| [BIP72](#bip72)                |    41 | [BLOCKS/INDEX/](#blocksindex)  |    55 |
-| [BIP75](#bip75)                |    41 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |    55 |
-| [BIP78](#bip78)                |    41 | [BLOCKSIGNERS](#blocksigners)  |    55 |
-| [BIP84](#bip84)                |    42 | [BLOCKSTREAM](#blockstream)    |    55 |
-| [BIP85](#bip85)                |    42 | [BLOCK TEMPLATE](#block-template) |    55 |
-| [BIP86](#bip86)                |    42 | [BLOCK WITHHOLDING](#block-withholding) |    56 |
-| [BIP90](#bip90)                |    42 | [BLOOM FILTER](#bloom-filter)  |    56 |
-| [BIP91](#bip91)                |    42 | [B-MONEY](#b-money)            |    56 |
-| [BIP111](#bip111)              |    43 | [BOLT](#bolt)                  |    56 |
-| [BIP112](#bip112)              |    43 | [BOUTISME](#boutisme)          |    56 |
-| [BIP113](#bip113)              |    43 | [BRANCH-AND-BOUND](#branch-and-bound) |    57 |
-| [BIP118](#bip118)              |    43 | [BRANCHE](#branche)            |    57 |
-| [BIP119](#bip119)              |    43 | [BRC-20](#brc-20)              |    57 |
-| [BIP123](#bip123)              |    44 | [BTC](#btc)                    |    57 |
-| [BIP125](#bip125)              |    44 | [BTCPAY SERVER](#btcpay-server) |    58 |
+| [BCH CODES](#bch-codes)        |     ? | [BIP148](#bip148)              |    46 |
+| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    30 | [BIP149](#bip149)              |    46 |
+| [BECH32 ET BECH32M](#bech32-et-bech32m) |    31 | [BIP150](#bip150)              |    46 |
+| [BERKELEYDB](#berkeleydb)      |    31 | [BIP151](#bip151)              |    47 |
+| [BIG-ENDIAN](#big-endian)      |    31 | [BIP152](#bip152)              |    47 |
+| [BIP](#bip)                    |    32 | [BIP155](#bip155)              |    47 |
+| [BIP1](#bip1)                  |    32 | [BIP156](#bip156)              |    47 |
+| [BIP2](#bip2)                  |    32 | [BIP173](#bip173)              |    48 |
+| [BIP8](#bip8)                  |    32 | [BIP322](#bip322)              |    48 |
+| [BIP9](#bip9)                  |    33 | [BIP324](#bip324)              |    48 |
+| [BIP10](#bip10)                |    33 | [BIP326](#bip326)              |    48 |
+| [BIP11](#bip11)                |    33 | [BIT](#bit)                    |    49 |
+| [BIP12](#bip12)                |    34 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    49 |
+| [BIP13](#bip13)                |    34 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    49 |
+| [BIP14](#bip14)                |    34 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    50 |
+| [BIP16](#bip16)                |    34 | [BITCOIN-CLI](#bitcoin-cli)    |    50 |
+| [BIP17](#bip17)                |    34 | [BITCOIN.CONF](#bitcoin.conf)  |    50 |
+| [BIP21](#bip21)                |    35 | [BITCOIN CORE](#bitcoin-core)  |    50 |
+| [BIP22](#bip22)                |    35 | [BITCOIND](#bitcoind)          |    50 |
+| [BIP23](#bip23)                |    35 | [BITCOIND.PID](#bitcoind.pid)  |    51 |
+| [BIP30](#bip30)                |    35 | [BITCOIN FOG](#bitcoin-fog)    |    51 |
+| [BIP31](#bip31)                |    36 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    51 |
+| [BIP32](#bip32)                |    36 | [BITCOIN KNOTS](#bitcoin-knots) |    51 |
+| [BIP34](#bip34)                |    36 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    51 |
+| [BIP35](#bip35)                |    36 | [BITCOIN JESUS](#bitcoin-jesus) |    52 |
+| [BIP37](#bip37)                |    56 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    52 |
+| [BIP38](#bip38)                |    37 | [BITCOIN QT](#bitcoin-qt)      |    52 |
+| [BIP39](#bip39)                |    37 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    52 |
+| [BIP42](#bip42)                |    37 | [BITCOINTALK](#bitcointalk)    |    52 |
+| [BIP43](#bip43)                |    38 | [BIT GOLD](#bit-gold)          |    52 |
+| [BIP44](#bip44)                |    38 | [BITVM](#bitvm)                |    53 |
+| [BIP47](#bip47)                |    39 | [BLK?????.DAT](#blk.dat)       |    53 |
+| [BIP49](#bip49)                |    39 | [BLKINDEX.DAT](#blkindex.dat)  |    53 |
+| [BIP50](#bip50)                |    39 | [BLKTREE/](#blktree)           |    53 |
+| [BIP61](#bip61)                |    40 | [BLOC](#bloc)                  |    53 |
+| [BIP65](#bip65)                |    40 | [BLOC CANDIDAT](#bloc-candidat) |    54 |
+| [BIP66](#bip66)                |    40 | [BLOCKCHAIN](#blockchain)      |    54 |
+| [BIP68](#bip68)                |    40 | [BLOCKS INDEX](#blocks-index)  |    55 |
+| [BIP70](#bip70)                |    40 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    55 |
+| [BIP71](#bip71)                |    41 | [BLOCKS/INDEX/](#blocksindex)  |    55 |
+| [BIP72](#bip72)                |    41 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |    55 |
+| [BIP75](#bip75)                |    41 | [BLOCKSIGNERS](#blocksigners)  |    55 |
+| [BIP78](#bip78)                |    41 | [BLOCKSTREAM](#blockstream)    |    55 |
+| [BIP84](#bip84)                |    42 | [BLOCK TEMPLATE](#block-template) |    55 |
+| [BIP85](#bip85)                |    42 | [BLOCK WITHHOLDING](#block-withholding) |    56 |
+| [BIP86](#bip86)                |    42 | [BLOOM FILTER](#bloom-filter)  |    56 |
+| [BIP90](#bip90)                |    42 | [B-MONEY](#b-money)            |    56 |
+| [BIP91](#bip91)                |    42 | [BOLT](#bolt)                  |    56 |
+| [BIP111](#bip111)              |    43 | [BOUTISME](#boutisme)          |    56 |
+| [BIP112](#bip112)              |    43 | [BRANCH-AND-BOUND](#branch-and-bound) |    57 |
+| [BIP113](#bip113)              |    43 | [BRANCHE](#branche)            |    57 |
+| [BIP118](#bip118)              |    43 | [BRC-20](#brc-20)              |    57 |
+| [BIP119](#bip119)              |    43 | [BTC](#btc)                    |    57 |
+| [BIP123](#bip123)              |    44 | [BTCPAY SERVER](#btcpay-server) |    58 |
+| [BIP125](#bip125)              |    44 |                                |       |
 | | | | |
 
 
@@ -680,6 +685,16 @@ Message réseau anciennement utilisé sur Bitcoin pour communiquer les adresses 
 
 Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations sur les pairs (c'est-à-dire, les nœuds) du réseau avec lesquels le nœud de l'utilisateur a interagi ou peut potentiellement interagir. Ce fichier a été remplacé par le fichier peers.dat depuis la version 0.7.0.
 
+## ADDRESS SPOOFING
+
+
+> *Address Poisonning.*
+
+
+## ADDRESS SWAPPING
+
+
+
 ## ADDRV2
 
 Évolution proposée avec le BIP155 du message `addr` sur le réseau de Bitcoin. Le message `addr` servait à diffuser les adresses de nœuds acceptant des connexions entrantes, mais il était limité à des adresses de 128 bits. Cette taille était adéquate pour les adresses IPv6, IPv4, et Tor V2, mais insuffisante pour d'autres protocoles. La version mise à jour `addrv2` est conçue pour supporter des adresses plus longues, notamment les services cachés Tor v3 de 256 bits, ainsi que d'autres protocoles réseau tels que I2P ou de futurs protocoles.
@@ -705,6 +720,10 @@ ou
 
 Une adresse de réception peut être représentée sous la forme d'une chaîne de caractères alphanumériques ou sous la forme d'un QR code. Chaque adresse peut être utilisée plusieurs fois, mais c'est une pratique très déconseillée. En effet, dans le but de maintenir un certain niveau de confidentialité, il est conseillé de n'utiliser chaque adresse Bitcoin qu'une seule fois. Il faut en générer une nouvelle pour tout paiement entrant vers son portefeuille. Une adresse est encodée en `Bech32` pour les adresses SegWit V0, en `Bech32m` pour les adresses SegWit V1, et en `Base58check` pour les adresses Legacy. D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
+## AGORISME
+
+
+
 ## AJUSTEMENT DE LA DIFFICULTE
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin. Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. Le calcul qu'effectuent les nœuds pour calculer la nouvelle cible est le suivant : $N = A \cdot \left(\frac{T}{1,209,600}\right)$
@@ -721,6 +740,9 @@ Où :
 ## ALGORITHME
 
 Suite finie et non ambiguë d'instructions permettant de réaliser une tâche. Dans le cadre de l'informatique, il s'agit d'un processus écrit dans un langage de programmation qui indique à un ordinateur comment effectuer une mission.
+
+## ALTCOIN
+
 
 ## ANALYSE DE CHAINE
 
@@ -778,6 +800,9 @@ Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en 
 
 > *En français, il est globalement admis d'utiliser le terme « anonset ». On pourrait toutefois le traduire par « ensemble d'anonymat » ou « potentiel d'anonymat ». En anglais et en français, on parle également parfois de « score » pour évoquer les anonsets (score prospectif et score rétrospectif). Pour plus d'informations, voir la définition [**COINJOIN**](#coinjoin).*
 
+## ANTI MONEY LAUNDERING (AML)
+
+
 ## ANYPREVOUT (APO)
 
 Nom donné au BIP118 qui propose d'ajouter deux nouveaux SigHash Flag modificateurs, nommés `SIGHASH_ANYPREVOUT` et `SIGHASH_ANYPREVOUTANYSCRIPT`. Le terme « *AnyPrevOut* » provient de la contraction de « *Any Previous Output* » que l'on pourrait traduire en français par « toute sortie précédente ». Pour plus d'informations, voir les définitions correspondantes.
@@ -791,6 +816,9 @@ Sigle de « *Address Ownership Proof Protocol* ». C'est un protocole controvers
 Sigle de « *Application Programming Interface* ». Dans le contexte général de l'informatique, une API est un ensemble de règles et de spécifications que les logiciels peuvent suivre pour communiquer entre eux. Elles permettent aux développeurs d'accéder à des fonctionnalités ou à des données d'une application, d'un système d'exploitation ou d'un autre service pour leur propre logiciel.
 
 > *En français, on peut le traduire par « interface de programmation d'applications » ou directement « interface de programmation ».*
+
+## ARBITRAGE
+
 
 ## ARBRE DE MERKLE
 
@@ -825,11 +853,18 @@ Les arbres de Merkle sont notamment utilisés pour les nœuds légers, dits « S
 
 Nouveau protocole de seconde couche dévoilé par Burak en mai 2023. Comme le Lightning Network, Ark est un système se déployant par-dessus la chaîne principale de Bitcoin. Il permettrait de faire des paiements en bitcoins en dehors de la chaîne de manière rapide, anonyme et à bas frais. Par rapport à Lightning, Ark ne nécessite pas d’avoir des liquidités entrantes pour recevoir des paiements, ce qui permet d’améliorer considérablement l’expérience utilisateur. De plus, il procure une confidentialité se rapprochant des transactions coinjoins, alors que Lightning est un très mauvais modèle pour préserver sa vie privée. Enfin, Ark pourrait également être non interactif si des covenants sont ajoutés à Bitcoin. Burak critique souvent la capacité de Lightning à passer à l’échelle en raison de sa dépendance à la chaîne principale et suggère qu'Ark pourrait théoriquement intégrer toute la population mondiale en self-custody. Même si Ark peut être vu comme un protocole concurrent au Lightning Network, les deux peuvent en réalité coexister. Ils pourraient même être plutôt complémentaires. Notons toutefois que pour le moment, Ark n’est qu’une simple idée. Burak n’a pas encore dévoilé le code de son invention.
 
+## ASCII
+
+
 ## ASIC
 
 Un ASIC est un composant électronique conçu pour exécuter une fonction spécifique avec une efficacité optimale. Dans le contexte du minage de Bitcoin, les ASIC sont des circuits intégrés spécialisés qui effectuent des opérations de hachage à haute vitesse et faible consommation d'énergie. Ils sont spécialisés dans l'exécution de la fonction de hachage `SHA256` utilisée dans le mécanisme de la preuve de travail. L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » vise souvent à désigner également la machine qui héberge cette puce. Ainsi, les ordinateurs spécialisés dans le minage de Bitcoin sont parfois appelés des « ASIC », ou bien des « mineurs ». Les ASIC ont progressivement remplacé les autres méthodes de minage, telles que l'utilisation de processeurs (CPU) et de cartes graphiques (GPU), en raison de leur efficacité énergétique supérieure et de leur taux de hachage bien plus élevé.
 
 >*L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
+
+## ASIC BOOST
+
+
 
 ## ASMAP
 
@@ -867,12 +902,19 @@ Technologie permettant un échange de cryptomonnaies directement entre deux part
 \end{itemize}
 Les Atomic Swaps peuvent s'effectuer soit avec une même cryptomonnaie, dans ce cas on parle également de « Coin Swap », soit entre des cryptomonnaies différentes. Historiquement, ils s'appuyaient sur des « *Hash Time-Locked Contracts* » (HTLC), un système de verrouillage temporel qui garantie la complétude ou l'annulation totale de l'échange, préservant ainsi l'intégrité des fonds des parties impliquées. Cette méthode exigeait des protocoles capables de gérer à la fois les scripts et les timelocks. Toutefois, ces dernières années, la tendance s'est orientée vers l'utilisation des Adaptor Signatures. Cette seconde approche présente l'avantage de se passer de scripts, réduisant ainsi les coûts opérationnels. Son autre atout majeur réside dans le fait qu'elle n'exige pas l'emploi d'un hachage identique pour les deux volets de la transaction, évitant ainsi de révéler un lien entre elles.
 
-## ATTAQUE DES 51 POURCENT
+## ATTAQUE DES 51 POURCENTS
 
 Scénario hypothétique sur le système Bitcoin où un acteur malveillant contrôle plus de 50% de la puissance de calcul totale du minage (hashrate). Avec une telle dominance, l'attaquant peut manipuler le processus de consensus, permettant des actions malveillantes telles que la double dépense, où les mêmes bitcoins sont dépensés une première fois sur une chaîne finalement rendue désuète, puis une seconde fois sur la chaîne valide. Une autre finalité d'une attaque des 51% est la censure des transactions. Cependant, réaliser une attaque des 51% nécessite des ressources financières, humaines, énergétiques et techniques considérables, et rend l'acteur malveillant susceptible d'être découvert avant que l'attaque n'ait lieu. Bien que théoriquement possible, une attaque des 51% sur Bitcoin est considérée comme très peu probable en raison de la décentralisation du minage et de la grande puissance de calcul actuellement déployée.
 
 > *Cette attaque est également nommée « Attaque Goldfinger ».*
 
+
+## ATTAQUE PAR REJEU
+
+
+
+
+> *En anglais, on traduit cette attaque par « Replay Attack ».*
 
 
 \newpage
@@ -913,6 +955,10 @@ Technique de dépense employée principalement par les entités ayant un volume 
 ![](../../dictionnaire/assets/8.png)
 
 > *En français, on peut traduire « batched transaction » par « dépense groupée ».*
+
+## BCH CODES
+
+Bose, Ray-Chaudhuri et Hocquenghem
 
 ## BDK (BITCOIN DEV KIT)
 

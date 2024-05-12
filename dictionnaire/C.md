@@ -33,15 +33,29 @@ Sigle de « *Contract Execution Transaction* ». C'est une transaction spécifiq
 
 > *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
 
+## CHAINE EXTERNE
+
+Portefeuille HD profondeur 4
+
+## CHAINE INTERNE
+
+Portefeuille HD profondeur 4
+
 ## CHANNEL FACTORIES
 
 Mécanisme avancé en cours de travail sur Lightning, permettant la création et la gestion de plusieurs canaux de paiement à partir d'un seul UTXO. Les channel factories utilisent des adresses multisig `n-of-n` pour qu'un groupe d'utilisateurs puisse détenir collectivement un seul UTXO. De là, ils peuvent ouvrir et fermer des canaux de paiement entre eux sans transactions supplémentaires on-chain, sauf lorsqu'ils souhaitent retirer leurs fonds de la factory. Cette méthode permettrait de réduire considérablement les coûts et l'espace occupé sur Bitcoin pour des transactions Lightning. En pratique, cela signifie que des opérations qui nécessiteraient normalement des transactions on-chain pour chaque ouverture ou fermeture de canal peuvent être effectuées hors chaîne, avec la sécurité garantie par la capacité de publier les transactions non-publiées si nécessaire. Pour reprendre les mots de David A. Harding, les channel factories peuvent être décrites comme des canaux Lightning utilisés pour générer d'autres canaux Lightning.
+
+## CHAINSPLIT
+
 
 ## CHAINSTATE/
 
 Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. C'est donc en réalité un synonyme d'« UTXO set ». 
 
 > *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
+
+## CHANGE (MONNAIE)
+
 
 ## CHARGE UTILE (PAYLOAD)
 
@@ -57,6 +71,9 @@ Dans le contexte général de l'informatique, une charge utile désigne les donn
 Amélioration du concept de coinjoin, introduit pour la première fois en 2013 par Gregory Maxwell, qui utilise les signatures aveugles de Chaum pour renforcer l'anonymat des transactions coinjoins. Dans ce protocole, les utilisateurs soumettent des entrées et une adresse de réception cryptographiquement aveuglées à un coordinateur. Cette adresse privée est destinée à recevoir les bitcoins en sortie de coinjoin. Le coordinateur signe ces tokens et les renvoie aux utilisateurs. Les utilisateurs se reconnectent ensuite de manière anonyme au serveur du coordinateur et révèlent ensuite leurs adresses de sortie en clair pour la construction de la transaction. Le coordinateur peut vérifier que toutes ces adresses de réception proviennent bien d'utilisateurs légitimes, puisqu'il a signé leur version aveuglée auparavant. En revanche, il ne peut pas associer une adresse de sortie spécifique à un utilisateur donné en entrée. Il n'y a donc aucun lien entre les entrées et les sorties, même du point de vue du coordinateur. Cette méthode garantit que le coordinateur ne peut ni compromettre l'anonymat des participants, ni voler les bitcoins durant tout le processus de coinjoin.
 
 > *Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
+
+## CHEMIN DE DÉRIVATION
+
 
 ## CHIFFRER (CHIFFREMENT)
 
@@ -79,6 +96,10 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 ![](assets/13.png)
 
 > *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
+
+## CISA 
+
+(CROSS-INPUT SIGNATURE AGGREGATION)
 
 ## CLÉ ÉTENDUE
 
@@ -111,6 +132,9 @@ Une clé privée est un élément fondamental de la cryptographie asymétrique. 
 La clé publique est un élément essentiel de la cryptographie asymétrique. Elle est générée à partir d'une clé privée en utilisant une fonction mathématique irréversible. Sur Bitcoin, les clés publiques sont dérivées depuis leur clé privée associée grâce aux algorithmes de signature numérique à courbes elliptiques ECDSA ou Schnorr. La clé publique, contrairement à la clé privée, peut être partagée librement sans compromettre la sécurité des fonds. Dans le cadre du protocole Bitcoin, la clé publique sert de base pour créer une adresse Bitcoin, qui est ensuite utilisée pour créer des conditions de dépense sur un UTXO. Les clés publiques sont fréquemment confondues avec la clé maîtresse ou avec les clés étendues (xpub...). Pourtant, ces éléments sont bien différents.
 
 > *En anglais, une clé publique se dit « public key ». Ce terme est parfois abrégé avec « pubkey », ou « PK ».*
+
+## CLÉ PUBLIQUE COMPRESSÉE
+
 
 ## CLI
 
@@ -195,11 +219,17 @@ Protocole de mixage de pièces bitcoins proposé en 2014 par Tim Ruffing, Pedro 
 
 > *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
+## COINSWAP
+
+
 ## COLD WALLET
 
 Synonyme de « hardware wallet ».
 
 > *Pour plus d'informations, voir la définition de [**HARDWARE WALLET**](./H.md#hardware-wallet).*
+
+## COLORED COINS
+
 
 ## COMMERÇANT
 
@@ -215,7 +245,11 @@ Protocole introduit dans Bitcoin Core en 2016 via le BIP152 qui propose une mét
 
 ## COMPATIBILITÉ RÉTROSPECTIVE
 
-Dans le contexte de Bitcoin, fait référence à la capacité d'une mise à jour des règles du protocole à maintenir la compatibilité avec les versions antérieures. Cela signifie que les modifications sont conçues de manière à ce que les anciens nœuds (les nœuds exécutant des versions antérieures au changement de règles) puissent toujours interagir avec le réseau et suivre la chaîne avec le plus de preuve travail accumulée. Il faut donc que les anciens nœuds ne rejettent ni les nouveaux blocs, ni les nouvelles transactions. La compatibilité rétrospective permet de réduire fortement la probabilité qu'une mise à jour fragmente le réseau, évitant ainsi la division du réseau en sous-groupes sur des chaînes différentes. Pour assurer une compatibilité avec les versions antérieures du protocole, une mise à jour doit rendre les règles existantes plus strictes ou en introduire de nouvelles. C'est ce principe qui définit un « soft fork ». À l'inverse, si une mise à jour assouplit les règles existantes ou en élimine certaines, alors elle ne sera pas rétrocompatible. Ce sera donc un « hard fork ».
+Dans le contexte de Bitcoin, fait référence à la capacité d'une mise à jour des règles du protocole à maintenir la compatibilité avec les versions antérieures. Cela signifie que les modifications sont conçues de manière à ce que les anciens nœuds (les nœuds exécutant des versions antérieures au changement de règles) puissent toujours interagir avec le réseau et suivre la chaîne avec le plus de preuve travail accumulée. Il faut donc que les anciens nœuds ne rejettent ni les nouveaux blocs, ni les nouvelles transactions. La compatibilité rétrospective permet de réduire fortement la probabilité qu'une mise à jour fragmente le réseau, évitant ainsi la division du réseau en sous-groupes sur des chaînes différentes. Pour assurer une compatibilité avec les versions antérieures du protocole, une mise à jour doit rendre les règles existantes plus strictes ou en introduire de nouvelles. C'est ce principe qui définit un « soft fork ». À l'inverse, si une mise à jour assouplit les règles existantes ou en élimine certaines, alors elle ne sera pas rétrocompatible. Ce sera donc un « hard fork ». RÉTROCOMPATIBILITÉ
+
+## COMPTE
+
+Portefeuille HD profondeur 3
 
 ## CONCATÉNATION
 
@@ -250,7 +284,10 @@ Programme qui s'exécute automatiquement lorsque certaines conditions prédéfin
 
 > *En anglais, on parle de « Smart Contract ». En français, on parle également parfois de « contrat autonome ».*
 
-## COOKIE (DOT COOKIE)
+## CONTRIBUTEUR
+
+
+## COOKIE (.COOKIE)
 
 Fichier utilisé pour l'authentification RPC (*Remote Procedure Call*) dans Bitcoin Core. Lorsque bitcoind démarre, il génère un cookie d'authentification unique et le stocke dans ce fichier. Les clients ou les scripts qui souhaitent interagir avec bitcoind via l'interface RPC peuvent utiliser ce cookie pour s'authentifier de manière sécurisée. Ce mécanisme permet une communication sûre entre le bitcoind et les applications externes, sans nécessiter une gestion manuelle des noms d'utilisateur et des mots de passe. Le fichier .cookie est régénéré à chaque redémarrage de bitcoind et supprimé à l'arrêt.
 
@@ -315,6 +352,9 @@ Qualificatif générique donné à toute forme de monnaie, d'actif, de crédit o
 ## C SHARP
 
 Langage de programmation moderne, orienté objet, développé par Microsoft. Il est conçu pour être simple mais puissant.
+
+## CUSTODY
+
 
 ## CYPHERPUNK
 

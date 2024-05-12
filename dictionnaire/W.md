@@ -36,6 +36,12 @@ Dans le cadre de Liquid (sidechain de Bitcoin), ce sont des entités chargées d
 
 Un watch-only wallet (ou « portefeuille en lecture seule ») est un type de logiciel qui permet à un utilisateur de voir les transactions associées à une clé ou un ensemble de clés Bitcoin spécifiques, sans posséder les clés privées correspondantes. Il offre une visibilité sur le solde et l'historique des transactions, sans pour autant permettre de dépenser les fonds du portefeuilles. Par exemple, l'application Sentinel est un watch-only wallet.
 
+## WATCHTOWER
+
+
+## WHALE
+
+
 ## WHIRLPOOL
 
 Implémentation du protocole de coinjoins chaumiens ZeroLink, développée par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
@@ -45,6 +51,9 @@ Implémentation du protocole de coinjoins chaumiens ZeroLink, développée par l
 ## WHIRLPOOL STAT TOOL
 
 Logiciel en ligne de commandes développé par Samourai Wallet qui permet de fournir les anonsets prospectifs et rétrospectifs d'une pièce mixée au sein de Whirlpool, ainsi que son taux de diffusion dans la pool. WST utilise l'algorithme HyperLogLogPlusPlus qui permet d'estimer le nombre de valeurs distinctes dans un très grand ensemble de données.
+
+## WHITE PAPER
+
 
 ## WITNESSSCRIPT
 
@@ -57,3 +66,5 @@ Script qui spécifie les conditions sous lesquelles les bitcoins peuvent être d
 Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction.
 
 > *Pour plus d'informations, voir la définition de [**TXID**](./T.md#txid-transaction-identifier) et [**SEGWIT**](./S.md#segwit).*
+
+## WUMBO CHANNEL
