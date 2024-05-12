@@ -11,13 +11,15 @@ La première édition de l'ouvrage est prévue pour 2024. Si le projet intéress
 Pour ceux qui ne désirent pas acheter le livre sur Amazon mais souhaitent néanmoins soutenir le projet, il est possible de faire un don sur [+throbbingpond8B1](https://paynym.is/+throbbingpond8B1) (BIP47) ou à [loic@sats.pandul.fr](https://pandul.fr/) (adresse LN).
 
 ## Lire le *Dictionnaire de Bitcoin*
-Vous pouvez découvrir gratuitement la version en ligne du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
+Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou sur [mon site web](https://pandul.fr/). C'est la manière la plus simple de lire et de rechercher des définition.
+
+Vous pouvez également découvrir la version en makdown du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
 
 [Accéder au sommaire](./INDEX.md)
 
-Une version PDF est également disponible au téléchargement à la racine de ce dépôt ou sur https://pandul.fr/. La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
+La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
@@ -33,9 +35,9 @@ Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats diffé
 
 Pour contribuer, voici la marche à suivre : 
 1. Créez votre fork du projet ;
-2. Créez une nouvelle branche établie sur la branche `edit` ; 
+2. Créez une nouvelle branche établie sur la branche `main` ; 
 3. Rédigez vos suggestions de modification directement sur votre branche ;
-4. Proposez une Pull Request pour fusionner votre branche face à la branche `edit` du dépôt source.
+4. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
 
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
