@@ -19,7 +19,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 13 mai 2024\newline
+Version du 15 mai 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -100,6 +100,7 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
   \item Théo Pantamis (https://twitter.com/TheoPantamis) ;
   \item Louferlou (https://twitter.com/Louferlou) ;
   \item JohnOnChain (https://twitter.com/JohnOnChain) ;
+  \item Pythcoiner (https://twitter.com/pythcoiner) ;
   \item Rogzy (https://twitter.com/DecouvreBitcoin) ;
   \item Théo Mogenet (https://twitter.com/theomogenet) ;
   \item Gilles Cadignan (https://twitter.com/gillesCadignan) ;
@@ -107,18 +108,47 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
   \item Lounès Ksouri (https://twitter.com/louneskmt) ;
   \item WillKEKS (https://twitter.com/Satsmokers) ;
   \item Paul ADW (https://twitter.com/PaulADW) ;
+  \item TDevD (https://twitter.com/SamouraiDev) ;
   \item Trigger (https://twitter.com/Trigger\_jw) ;
   \item Bitcoiner Nomad (https://twitter.com/BitcoinerNomad) ;
   \item LaurentMT (https://twitter.com/LaurentMT) ;
   \item Guillaume Goualard (https://twitter.com/\_INITIO\_) ;
+  \item Science Genial (https://twitter.com/science\_genial) ;
+  \item Marc VALLEE (https://twitter.com/marcvallee13) ;
+  \item Meyga Vox (https://twitter.com/meygavox) ;
   \item L'équipe de Bitcoin.fr (https://bitcoin.fr/) ;
   \item L'équipe de Découvre Bitcoin (https://decouvrebitcoin.fr/) ;
   \item L'équipe de PlanB Network (https://planb.network/) ;
-  \item L'équipe de Bitstack (https://www.bitstack-app.com/).
+  \item L'équipe de Bitstack (https://www.bitstack-app.com/) ;
+  \item L'équipe de Parlons Bitcoin (https://twitter.com/parlonsbitcoin).
 \end{itemize}
 \
 \
-Un grand merci aussi à tous ceux qui ont contribué à mes différents projets et qui ont choisi de rester anonymes.\newline
+Un grand merci aussi à tous ceux qui ont contribué à mes différents projets et qui ont choisi de rester anonymes.\
+\
+\
+Merci également à toutes les personnes qui créent des contenus instructifs sur Bitcoin et son écosystème. Bien que je n'aie pas cité de sources directement, les nombreux contenus que j'ai consultés au fil des années ont enrichi mes connaissances et ont forcément inspiré la rédaction de ce dictionnaire. Un remerciement spécial à ceux que je lis ou écoute régulièrement :
+\begin{itemize}
+  \item Andreas Antonopoulos (https://twitter.com/aantonop) ;
+  \item Sjors Provoost (https://twitter.com/provoost) ;
+  \item Eric Voskuil (https://twitter.com/evoskuil) ;
+  \item Fanis Michalakis (https://twitter.com/FanisMichalakis) ;
+  \item Ludovic Lars (https://twitter.com/lugaxker) ;
+  \item JohnOnChain (https://twitter.com/JohnOnChain) ;
+  \item Théo Pantamis (https://twitter.com/TheoPantamis) ;
+  \item LaurentMT (https://twitter.com/LaurentMT) ;
+  \item Théo Mogenet (https://twitter.com/theomogenet) ;
+  \item Sosthène (https://twitter.com/Sosthene\_\_\_) ;
+  \item Lounès Ksouri (https://twitter.com/louneskmt) ;
+  \item Satoshi Nakamoto ;
+  \item Et pleins d'autres que j'oublie sûrement.
+\end{itemize}
+\
+\
+Et plus largement, merci à tous ceux qui contribuent au développement de Bitcoin, qu'ils soient développeurs ou chercheurs.\
+\
+\
+Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent sur les réseaux sociaux ou dans d'autres publications. Vos partages spontanés sont une source de motivation inestimable pour moi. Ils renforcent mon désir de continuer à écrire et à partager des informations utiles sur Bitcoin. Ils rendent mes créations de contenus non seulement possibles, mais également plus agréables.\newline
 \newpage
 \thispagestyle{empty}
 \begin{center}
