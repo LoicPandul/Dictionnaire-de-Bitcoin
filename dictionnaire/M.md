@@ -1,5 +1,6 @@
 ## MACAROON
 
+Mécanisme d'authentification conçu pour sécuriser l'accès à des services sur des systèmes distribués. Les macaroons sont notamment utilisés sur Lightning pour authentifier les utilisateurs lorsqu'ils accèdent à des services délégués. Par exemple, avec un nœud Lightning, il est possible de générer un macaroon qui autorise la réalisation de transactions à partir de votre smartphone via votre nœud distant. À la différence des cookies, les macaroons offrent l'avantage de pouvoir être validés cryptographiquement par l'émetteur ou d'être délégués pour vérification.
 
 ## MAGICAL BITCOIN
 
@@ -18,7 +19,7 @@ Constantes utilisées dans le protocole Bitcoin pour identifier le réseau spéc
 
 ## MAINNET
 
-
+Désigne le réseau principal où les transactions réelles de Bitcoin sont enregistrées et exécutées. Le mainnet est tout simplement le réseau Bitcoin. Contrairement aux testnets, regtests et signets, le mainnet implique l'utilisation de bitcoins ayant une valeur économique réelle.
 
 ## MAINTENEUR
 
