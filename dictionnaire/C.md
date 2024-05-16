@@ -35,11 +35,11 @@ Sigle de « *Contract Execution Transaction* ». C'est une transaction spécifiq
 
 ## CHAINE EXTERNE
 
-Portefeuille HD profondeur 4
+Dans la dérivation des portefeuilles déterministes et hiérarchiques, la chaîne externe est une branche de dérivation utilisée pour générer des adresses de réception destinées à recevoir des paiements venus de l'extérieur, c'est-à-dire d'un autre portefeuille. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaine externe est dérivée avec un index de `/0/`.  La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur le bouton « recevoir » dans notre logiciel de portefeuille.
 
 ## CHAINE INTERNE
 
-Portefeuille HD profondeur 4
+Dans la dérivation des portefeuilles déterministes et hiérarchiques, la chaîne interne est une branche de dérivation utilisée pour générer des adresses de réception destinées à recevoir des paiements venus du même portefeuille, c'est-à-dire uniquement des adresses de change. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « chaîne de change »). La chaine interne est dérivée avec un index de `/1/`.
 
 ## CHANNEL FACTORIES
 
@@ -47,6 +47,9 @@ Mécanisme avancé en cours de travail sur Lightning, permettant la création et
 
 ## CHAINSPLIT
 
+Nom parfois donné à un embranchement naturel, c'est-à-dire une séparation temporaire de la blockchain résultant de la diffusion quasi simultanée de plusieurs blocs par différents mineurs à une même hauteur.
+
+> *Pour plus d'informations, voir les définitions de [**EMBRANCHEMENT NATUREL**](./E.md#embranchement-naturel) et de **[FORK](./F.md#fork)**.*
 
 ## CHAINSTATE/
 
@@ -56,6 +59,11 @@ Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Cor
 
 ## CHANGE (MONNAIE)
 
+Dans le cadre des transactions Bitcoin, fait référence à l'UTXO créé avec les fonds restants après que le paiement effectif a été effectué. Lorsque l'utilisateur utilise en entrées des UTXOs avec une quantité de bitcoins supérieure au montant nécessaire pour le paiement effectif et les frais de transaction, le surplus est un UTXO renvoyé à une adresse interne du portefeuille, appelée adresse de change. Le change est cet UTXO. Par exemple, si vous souhaitez payer une baguette qui coute `4 000 sats` avec un UTXO de `10 000 sats`, vous allez créer dans votre transaction un change de `6 000 sats` (si l'on néglige les frais de transaction).
+
+![](assets/16.png)
+
+> *Même si c'est très peu utilisé, on pourrait également parler de « monnaie » (rendu de monnaie) pour évoquer le change.*
 
 ## CHARGE UTILE (PAYLOAD)
 
