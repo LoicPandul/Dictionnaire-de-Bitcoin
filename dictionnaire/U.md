@@ -35,16 +35,16 @@ Protocole conçu par Tadge Dryja pour compacter l'UTXO set des nœuds Bitcoin à
 ![](assets/15.png)
 
 Dans cet exemple, j’ai intentionnellement réduit l’UTXO set à 4 UTXOs pour faciliter la compréhension. En réalité, il faut imaginer qu’il existe presque 140 millions d’UTXOs sur Bitcoin à l'heure où j'écris ces lignes. Sur ce schéma, le nœud Utreexo devrait uniquement conserver en RAM la Racine de Merkle. S’il reçoit une transaction dépensant l’UTXO n° 3 (en noir), la preuve consisterait en les éléments suivants :
-- L’UTXO 3 ;
-- Le HASH 4 ;
-- Le HASH 1-2.
+* L’UTXO 3 ;
+* Le HASH 4 ;
+* Le HASH 1-2.
 
 Grâce à ces informations transmises par l’émetteur de la transaction, le nœud Utreexo effectue les vérifications suivantes :
-- Il calcule l’empreinte de l’UTXO 3, ce qui lui donne HASH 3 ;
-- Il concatène HASH 3 avec HASH 4 ;
-- Il calcule leur empreinte, ce qui lui donne HASH 3-4 ;
-- Il concatène HASH 3-4 avec HASH 1-2 ;
-- Il calcule leur empreinte, ce qui lui donne la racine de Merkle.
+* Il calcule l’empreinte de l’UTXO 3, ce qui lui donne HASH 3 ;
+* Il concatène HASH 3 avec HASH 4 ;
+* Il calcule leur empreinte, ce qui lui donne HASH 3-4 ;
+* Il concatène HASH 3-4 avec HASH 1-2 ;
+* Il calcule leur empreinte, ce qui lui donne la racine de Merkle.
 
 Si la racine de Merkle qu’il obtient par son processus est la même que la racine de Merkle qu’il stockait dans sa RAM, alors il est persuadé que l’UTXO n° 3 fait bien partie de l’UTXO set.
 

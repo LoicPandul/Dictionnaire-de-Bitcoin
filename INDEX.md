@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 780 `**
+**Nombre total de définitions : ` 782 `**
 
 ### A
 
@@ -333,6 +333,7 @@
 - [GETWORK](./dictionnaire/G.md#getwork)
 - [GIT](./dictionnaire/G.md#git)
 - [GITHUB](./dictionnaire/G.md#github)
+- [GITLAB](./dictionnaire/G.md#gitlab)
 - [GNPA (PRNG)](./dictionnaire/G.md#gnpa-prng)
 - [GNU](./dictionnaire/G.md#gnu)
 - [GO (GOLANG)](./dictionnaire/G.md#go-golang)
@@ -799,6 +800,7 @@
 
 - [UASF](./dictionnaire/U.md#uasf)
 - [UDP (USER DATAGRAM PROTOCOL)](./dictionnaire/U.md#udp-user-datagram-protocol)
+- [UNIX](./dictionnaire/U.md#unix)
 - [UPRV](./dictionnaire/U.md#uprv)
 - [UPUB](./dictionnaire/U.md#upub)
 - [URI](./dictionnaire/U.md#uri)
