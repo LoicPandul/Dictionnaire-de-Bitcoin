@@ -19,7 +19,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 16 mai 2024\newline
+Version du 26 mai 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -256,40 +256,40 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [C (LANGAGE)](#c-langage)      |    63 | [COINS/](#coins)               |    73 |
-| [C++ (PLUS PLUS)](#c-plus-plus) |    63 | [COINSHUFFLE](#coinshuffle)    |    73 |
-| [CAHOOTS](#cahoots)            |    63 | [COINSWAP](#coinswap)          |    73 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    63 | [COLD WALLET](#cold-wallet)    |    73 |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    63 | [COLORED COINS](#colored-coins) |    74 |
-| [CASHU](#cashu)                |    64 | [COMMERÇANT](#commerçant)      |    74 |
-| [CET](#cet)                    |    64 | [COMMIT](#commit)              |    74 |
-| [CHAINE EXTERNE](#chaine-externe) |    64 | [COMPACT BLOCK RELAY](#compact-block-relay) |    74 |
-| [CHAINE INTERNE](#chaine-interne) |    64 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    74 |
-| [CHANNEL FACTORIES](#channel-factories) |    64 | [COMPTE](#compte)              |    75 |
-| [CHAINSPLIT](#chainsplit)      |    65 | [CONCATÉNATION](#concaténation) |    75 |
-| [CHAINSTATE/](#chainstate)     |    65 | [CONDENSAT (HASH)](#condensat-hash) |    75 |
-| [CHANGE (MONNAIE)](#change-monnaie) |    65 | [CONFIRMATION](#confirmation)  |    75 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    66 | [CONSENSUS](#consensus)        |    75 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    66 | [CONSOLIDATION](#consolidation) |    76 |
-| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    66 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    76 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    66 | [CONTRIBUTEUR](#contributeur)  |    77 |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    66 | [COOKIE (.COOKIE)](#cookie-.cookie) |    77 |
-| [CIOH](#cioh)                  |    67 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    77 |
-| [CISA](#cisa)                  |    68 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    77 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    68 | [COVENANT](#covenant)          |    77 |
-| [CLÉ PRIVÉE](#clé-privée)      |    69 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    78 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    69 | [CPPSRB](#cppsrb)              |    78 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    70 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    78 |
-| [CLI](#cli)                    |    70 | [CRYPTANALYSE](#cryptanalyse)  |    79 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    70 | [CRYPTER](#crypter)            |    79 |
-| [CLONE](#clone)                |    70 | [CRYPTO-ACTIF](#crypto-actif)  |    79 |
+| [C (LANGAGE)](#c-langage)      |    63 | [COINMUX](#coinmux)            |    73 |
+| [C++ (PLUS PLUS)](#c-plus-plus) |    63 | [COINS/](#coins)               |    73 |
+| [CAHOOTS](#cahoots)            |    63 | [COINSHUFFLE](#coinshuffle)    |    73 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |    63 | [COINSWAP](#coinswap)          |    73 |
+| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    63 | [COLD WALLET](#cold-wallet)    |    73 |
+| [CASHU](#cashu)                |    64 | [COLORED COINS](#colored-coins) |    74 |
+| [CET](#cet)                    |    64 | [COMMERÇANT](#commerçant)      |    74 |
+| [CHAINE EXTERNE](#chaine-externe) |    64 | [COMMIT](#commit)              |    74 |
+| [CHAINE INTERNE](#chaine-interne) |    64 | [COMPACT BLOCK RELAY](#compact-block-relay) |    74 |
+| [CHANNEL FACTORIES](#channel-factories) |    64 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    74 |
+| [CHAINSPLIT](#chainsplit)      |    65 | [COMPTE](#compte)              |    75 |
+| [CHAINSTATE/](#chainstate)     |    65 | [CONCATÉNATION](#concaténation) |    75 |
+| [CHANGE (MONNAIE)](#change-monnaie) |    65 | [CONDENSAT (HASH)](#condensat-hash) |    75 |
+| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    66 | [CONFIRMATION](#confirmation)  |    75 |
+| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    66 | [CONSENSUS](#consensus)        |    75 |
+| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    66 | [CONSOLIDATION](#consolidation) |    76 |
+| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    66 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    76 |
+| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    66 | [CONTRIBUTEUR](#contributeur)  |    77 |
+| [CIOH](#cioh)                  |    67 | [COOKIE (.COOKIE)](#cookie-.cookie) |    77 |
+| [CISA](#cisa)                  |    68 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    77 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    68 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    77 |
+| [CLÉ PRIVÉE](#clé-privée)      |    69 | [COVENANT](#covenant)          |    77 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    69 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    78 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    70 | [CPPSRB](#cppsrb)              |    78 |
+| [CLI](#cli)                    |    70 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    78 |
+| [C-LIGHTNING (CLN)](#c-lightning-cln) |    70 | [CRYPTANALYSE](#cryptanalyse)  |    79 |
+| [CLONE](#clone)                |    70 | [CRYPTER](#crypter)            |    79 |
+| [CLUSTER](#cluster)            |     ? | [CRYPTO-ACTIF](#crypto-actif)  |    79 |
 | [CODE DE CHAINE](#code-de-chaine) |    70 | [CRYPTOGRAPHIE](#cryptographie) |    79 |
 | [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    70 | [CRYPTOLOGIE](#cryptologie)    |    79 |
 | [COINBASE (TRANSACTION)](#coinbase-transaction) |    71 | [CRYPTOMONNAIE](#cryptomonnaie) |    79 |
 | [COIN CONTROL](#coin-control)  |    71 | [C SHARP](#c-sharp)            |    79 |
 | [COINJOIN](#coinjoin)          |    72 | [CUSTODY](#custody)            |    79 |
 | [COINJUMBLE](#coinjumble)      |    73 | [CYPHERPUNK](#cypherpunk)      |    80 |
-| [COINMUX](#coinmux)            |    73 |                                |       |
 | | | | |
 
 
@@ -521,16 +521,16 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   142 | [OP_VERIFY (0X69)](#op_verify-0x69) |   149 |
 | [OP_DEPTH (0X74)](#op_depth-0x74) |   142 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   149 |
 | [OP_DROP (0X75)](#op_drop-0x75) |   143 | [OPCODES](#opcodes)            |   149 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   143 | [ORACLE](#oracle)              |   149 |
-| [OP_ELSE (0X67)](#op_else-0x67) |   143 | [ORDINALS](#ordinals)          |   149 |
-| [OP_ENDIF (0X68)](#op_endif-0x68) |   143 | [ORPHELIN](#orphelin)          |   149 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |   143 | [OU EXCLUSIF](#ou-exclusif)    |   150 |
-| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   143 | [OUTBOUND CAPACITY](#outbound-capacity) |   150 |
-| [OP_EVAL](#op_eval)            |   143 | [OUTPOINT](#outpoint)          |   150 |
-| [OP_FALSE (0X00)](#op_false-0x00) |   143 | [OUTPUT](#output)              |   150 |
-| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   144 | [OUTPUT LINKING](#output-linking) |   151 |
-| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   144 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   151 |
-| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   144 |                                |       |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   143 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |     ? |
+| [OP_ELSE (0X67)](#op_else-0x67) |   143 | [ORACLE](#oracle)              |   149 |
+| [OP_ENDIF (0X68)](#op_endif-0x68) |   143 | [ORDINALS](#ordinals)          |   149 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |   143 | [ORPHELIN](#orphelin)          |   149 |
+| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   143 | [OU EXCLUSIF](#ou-exclusif)    |   150 |
+| [OP_EVAL](#op_eval)            |   143 | [OUTBOUND CAPACITY](#outbound-capacity) |   150 |
+| [OP_FALSE (0X00)](#op_false-0x00) |   143 | [OUTPOINT](#outpoint)          |   150 |
+| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   144 | [OUTPUT](#output)              |   150 |
+| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   144 | [OUTPUT LINKING](#output-linking) |   151 |
+| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   144 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   151 |
 | | | | |
 
 
@@ -677,7 +677,7 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   204 | [UTXO](#utxo)                  |   206 |
 | [UNIX](#unix)                  |   204 | [UTXO COMMITMENTS](#utxo-commitments) |   206 |
 | [UPRV](#uprv)                  |   204 | [UTXO HASH SET (UHS)](#utxo-hash-set-uhs) |   206 |
-| [UPUB](#upub)                  |   204 | [UTXO SET](#utxo-set)          |   206 |
+| [UPUB](#upub)                  |   204 | [UTXO SET](#utxo-set)          |   207 |
 | [URI](#uri)                    |   204 |                                |       |
 | | | | |
 
@@ -686,9 +686,9 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   208 | [VOUT](#vout)                  |   208 |
-| [VANITYGEN](#vanitygen)        |   208 | [VPRV](#vprv)                  |   208 |
-| [VERSIONNAGE](#versionnage)    |   208 | [VPUB](#vpub)                  |   208 |
+| [VANITY (ADDRESS)](#vanity-address) |   209 | [VOUT](#vout)                  |   209 |
+| [VANITYGEN](#vanitygen)        |   209 | [VPRV](#vprv)                  |   209 |
+| [VERSIONNAGE](#versionnage)    |   209 | [VPUB](#vpub)                  |   209 |
 | | | | |
 
 
@@ -696,14 +696,14 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   210 | [WATCHTOWER](#watchtower)      |   211 |
-| [WALLET](#wallet)              |   210 | [WHALE](#whale)                |   211 |
-| [WALLET.DAT](#wallet.dat)      |   210 | [WHIRLPOOL](#whirlpool)        |   211 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   210 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   211 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   210 | [WHITE PAPER](#white-paper)    |   211 |
-| [WASABI WALLET](#wasabi-wallet) |   210 | [WITNESSSCRIPT](#witnessscript) |   211 |
-| [WATCHMEN](#watchmen)          |   210 | [WTXID](#wtxid)                |   211 |
-| [WATCH-ONLY WALLET](#watch-only-wallet) |   211 | [WUMBO CHANNEL](#wumbo-channel) |   212 |
+| [WABISABI](#wabisabi)          |   211 | [WATCHTOWER](#watchtower)      |   212 |
+| [WALLET](#wallet)              |   211 | [WHALE](#whale)                |   212 |
+| [WALLET.DAT](#wallet.dat)      |   211 | [WHIRLPOOL](#whirlpool)        |   212 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   211 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   212 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   211 | [WHITE PAPER](#white-paper)    |   212 |
+| [WASABI WALLET](#wasabi-wallet) |   211 | [WITNESSSCRIPT](#witnessscript) |   212 |
+| [WATCHMEN](#watchmen)          |   211 | [WTXID](#wtxid)                |   212 |
+| [WATCH-ONLY WALLET](#watch-only-wallet) |   212 | [WUMBO CHANNEL](#wumbo-channel) |   213 |
 | | | | |
 
 
@@ -711,8 +711,8 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XOR](#xor)                    |   214 | [XPUB](#xpub)                  |   214 |
-| [XPRV](#xprv)                  |   214 |                                |       |
+| [XOR](#xor)                    |   215 | [XPUB](#xpub)                  |   215 |
+| [XPRV](#xprv)                  |   215 |                                |       |
 | | | | |
 
 
@@ -720,7 +720,7 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   216 | [YPUB](#ypub)                  |   216 |
+| [YPRV](#yprv)                  |   217 | [YPUB](#ypub)                  |   217 |
 | | | | |
 
 
@@ -728,10 +728,10 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   218 | [ZPRV](#zprv)                  |   218 |
-| [ZEROLINK](#zerolink)          |   218 | [ZPUB](#zpub)                  |   219 |
-| [ZEROSYNC](#zerosync)          |   218 | [ZKSNARK](#zksnark)            |   219 |
-| [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   218 | [ZOMBIE CHANNEL](#zombie-channel) |   219 |
+| [ZEROCONF](#zeroconf)          |   219 | [ZPRV](#zprv)                  |   219 |
+| [ZEROLINK](#zerolink)          |   219 | [ZPUB](#zpub)                  |   220 |
+| [ZEROSYNC](#zerosync)          |   219 | [ZKSNARK](#zksnark)            |   220 |
+| [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   219 | [ZOMBIE CHANNEL](#zombie-channel) |   220 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -1303,6 +1303,8 @@ indique que c'est une adresse externe ;
 \texttt{5}
 indique que c'est la sixième adresse externe de ce compte.
 \end{itemize}
+
+![](../../dictionnaire/assets/18.png)
 
 ## BIP47
 
@@ -1983,6 +1985,10 @@ Ancien nom de l'implémentation Core-Lightning.
 
 Dans le cadre de Git, consiste à créer une copie locale d'un dépôt existant. Cette opération télécharge l'ensemble du dépôt, y compris toutes les branches et l'historique des commits. En tant qu'utilisateur de Bitcoin, il est possible d'avoir à faire à cette commande lorsque l'on télécharge un logiciel.
 
+## CLUSTER
+
+Dans le cadre de l'analyse de chaîne, un cluster est un ensemble d'adresses de réception qui sont associées à une même entité par un analyste. En utilisant diverses heuristiques, il est possible de détecter des activités onchain qui semblent émaner d'une unique personne ou organisation. Ce regroupement d'activités forme ce que l'on appelle un cluster. L'objectif de l'analyse de chaîne est souvent d'identifier un point d'entrée dans ce cluster, permettant ainsi de lier toutes ces activités à une forme d'identité dans le monde réel.
+
 ## CODE DE CHAINE
 
 Dans le contexte de la dérivation hiérarchique et déterministe (HD) des portefeuilles Bitcoin, le code de chaîne est une valeur de sel cryptographique de 256 bits utilisée pour générer des clés enfants à partir d'une clé parent, selon le standard BIP32. Le code de chaîne est utilisé en combinaison avec la clé parente et l’index de l’enfant pour générer de manière sécurisée et déterministe une nouvelle paire de clés (clé privée et clé publique) sans révéler la clé parente ou les autres clés enfants dérivées. Il existe donc un code de chaîne unique pour chaque paire de clés. Le code de chaîne est obtenu soit en hachant la graine du portefeuille, et en prenant la moitié des bits à droite. Dans ce cas, on parle d'un code de chaîne maître, associé à la clé privée maîtresse. Ou bien, il peut être obtenu en hachant une clé parent avec son code de chaîne parent et un index, et en conservant les bits à droite. On parle alors de code de chaîne enfant. Cette approche permet aux utilisateurs de gérer plusieurs adresses Bitcoin à partir d'une seule graine (seed), améliorant ainsi la confidentialité dans les transactions Bitcoin. Il est impossible de dériver des clés sans avoir la connaissance du code de chaîne associé à chaque paire parent. Il permet d'introduire des données pseudo-aléatoires dans le processus de dérivation pour garantir que la génération des clés cryptographiques reste imprévisible pour les attaquants tout en étant déterministe pour le détenteur du portefeuille.
@@ -2069,6 +2075,7 @@ Synonyme de « hardware wallet ».
 
 ## COLORED COINS
 
+Méthode proposée en 2012 par Yoni Assia, Vitalik Buterin et Meni Rosenfeld permettant de représenter et gérer des actifs non-natifs sur la blockchain Bitcoin. L'idée était d'attacher des métadonnées à des transactions spécifiques, afin de colorer des bitcoins pour indiquer leur association avec des actifs physiques. La première implémentation fonctionnelle, le protocole Open Assets, a été développée par Flavien Charlon en 2013. Ce protocole permettait de marquer des bitcoins en utilisant des `OP_RETURN`.
 
 ## COMMERÇANT
 
@@ -2088,7 +2095,9 @@ Dans le contexte de Bitcoin, fait référence à la capacité d'une mise à jour
 
 ## COMPTE
 
-Portefeuille HD profondeur 3
+Dans les portefeuilles HD (déterministes hiérarchiques), un compte représente une couche de dérivation à la profondeur 3 selon le BIP32. Chaque compte est numéroté séquentiellement à partir de `/0'/` (dérivation renforcée, donc en réalité `/2^31/` ou `/2 147 483 648/`). C'est à cette profondeur de dérivation que se trouvent les fameuses `xpub`. De nos jours, on utilise généralement un seul compte au sein d'un portefeuille HD. Mais initialement ils avaient été imaginés pour pouvoir ségréguer diverses catégories d'utilisation au sein d'un même portefeuille. Par exemple, si l'on prend un chemin de dérivation standard pour une adresse de réception Taproot externe (`P2TR`) : `m/86'/0'/0'/0/0`, l'index du compte est second `/0'/`.
+
+![](../../dictionnaire/assets/17.png)
 
 ## CONCATÉNATION
 
@@ -3833,6 +3842,10 @@ Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle 
 Ensemble des commandes utilisées dans le système Script de Bitcoin. Script est un langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Les instructions utilisées en langage Script sont appelées « OPcodes ». Ce sont des opérateurs logiques et des commandes pour manipuler la pile (stack). Ces instructions spécifiques sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
 
 > *« OPcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « OPcode » dans le langage courant.*
+
+## OPEN ASSETS PROTOCOL (OAP)
+
+Le Protocole Open Assets (OAP), conçu par Flavien Charlon en 2013, représente la première mise en œuvre fonctionnelle des Colored Coins. Ce protocole permettait de stocker et de transférer des actifs non natifs sur la blockchain Bitcoin, sous la forme de tokens dénommés « Colored Coins ». Ces derniers sont marqués spécifiquement pour symboliser une promesse, qu'elle soit formelle ou informelle, d'échange contre des biens ou services réels.
 
 ## ORACLE
 

@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 782 `**
+**Nombre total de définitions : ` 784 `**
 
 ### A
 
@@ -199,6 +199,7 @@
 - [CLI](./dictionnaire/C.md#cli)
 - [C-LIGHTNING (CLN)](./dictionnaire/C.md#c-lightning-cln)
 - [CLONE](./dictionnaire/C.md#clone)
+- [CLUSTER](./dictionnaire/C.md#cluster)
 - [CODE DE CHAINE](./dictionnaire/C.md#code-de-chaine)
 - [CODE DE PAIMENT RÉUTILISABLE](./dictionnaire/C.md#code-de-paiment-réutilisable)
 - [COINBASE (TRANSACTION)](./dictionnaire/C.md#coinbase-transaction)
@@ -574,6 +575,7 @@
 - [OP_VERIFY (0X69)](./dictionnaire/O.md#op_verify-0x69)
 - [OP_WITHIN (0XA5)](./dictionnaire/O.md#op_within-0xa5)
 - [OPCODES](./dictionnaire/O.md#opcodes)
+- [OPEN ASSETS PROTOCOL (OAP)](./dictionnaire/O.md#open-assets-protocol-oap)
 - [ORACLE](./dictionnaire/O.md#oracle)
 - [ORDINALS](./dictionnaire/O.md#ordinals)
 - [ORPHELIN](./dictionnaire/O.md#orphelin)
