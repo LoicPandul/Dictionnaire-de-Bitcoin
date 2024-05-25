@@ -185,70 +185,70 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [BANLIST.DAT](#banlist.dat)    |    32 | [BIP137](#bip137)              |    47 |
+| [BANLIST.DAT](#banlist.dat)    |    32 | [BIP137](#bip137)              |    48 |
 | [BANLIST.JSON](#banlist.json)  |    32 | [BIP141](#bip141)              |    48 |
 | [BARE-MULTISIG](#bare-multisig) |    32 | [BIP143](#bip143)              |    48 |
 | [BASE (ARITHMETIQUE)](#base-arithmetique) |    32 | [BIP144](#bip144)              |    48 |
-| [BASE58CHECK](#base58check)    |    32 | [BIP145](#bip145)              |    48 |
-| [BATCHED SPENDING](#batched-spending) |    33 | [BIP147](#bip147)              |    48 |
+| [BASE58CHECK](#base58check)    |    32 | [BIP145](#bip145)              |    49 |
+| [BATCHED SPENDING](#batched-spending) |    33 | [BIP147](#bip147)              |    49 |
 | [BCH CODES](#bch-codes)        |    33 | [BIP148](#bip148)              |    49 |
 | [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    33 | [BIP149](#bip149)              |    49 |
 | [BEAR MARKET](#bear-market)    |    34 | [BIP150](#bip150)              |    50 |
 | [BECH32 ET BECH32M](#bech32-et-bech32m) |    34 | [BIP151](#bip151)              |    50 |
 | [BERKELEYDB](#berkeleydb)      |    34 | [BIP152](#bip152)              |    50 |
-| [BGP HIJACKING](#bgp-hijacking) |    35 | [BIP155](#bip155)              |    50 |
-| [BIG-ENDIAN](#big-endian)      |    35 | [BIP156](#bip156)              |    50 |
+| [BGP HIJACKING](#bgp-hijacking) |    35 | [BIP155](#bip155)              |    51 |
+| [BIG-ENDIAN](#big-endian)      |    35 | [BIP156](#bip156)              |    51 |
 | [BINAIRE](#binaire)            |    35 | [BIP173](#bip173)              |    51 |
 | [BIP](#bip)                    |    35 | [BIP322](#bip322)              |    51 |
-| [BIP1](#bip1)                  |    35 | [BIP324](#bip324)              |    51 |
+| [BIP1](#bip1)                  |    35 | [BIP324](#bip324)              |    52 |
 | [BIP2](#bip2)                  |    35 | [BIP326](#bip326)              |    52 |
 | [BIP8](#bip8)                  |    36 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    52 |
 | [BIP9](#bip9)                  |    36 | [BIT](#bit)                    |    52 |
-| [BIP10](#bip10)                |    36 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    52 |
+| [BIP10](#bip10)                |    36 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    53 |
 | [BIP11](#bip11)                |    37 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    53 |
 | [BIP12](#bip12)                |    37 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    53 |
 | [BIP13](#bip13)                |    37 | [BITCOIN-CLI](#bitcoin-cli)    |    53 |
-| [BIP14](#bip14)                |    37 | [BITCOIN.CONF](#bitcoin.conf)  |    53 |
-| [BIP16](#bip16)                |    37 | [BITCOIN CORE](#bitcoin-core)  |    53 |
+| [BIP14](#bip14)                |    37 | [BITCOIN.CONF](#bitcoin.conf)  |    54 |
+| [BIP16](#bip16)                |    37 | [BITCOIN CORE](#bitcoin-core)  |    54 |
 | [BIP17](#bip17)                |    38 | [BITCOIND](#bitcoind)          |    54 |
 | [BIP21](#bip21)                |    38 | [BITCOIND.PID](#bitcoind.pid)  |    54 |
 | [BIP22](#bip22)                |    38 | [BITCOIN FOG](#bitcoin-fog)    |    54 |
-| [BIP23](#bip23)                |    38 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    54 |
+| [BIP23](#bip23)                |    38 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    55 |
 | [BIP30](#bip30)                |    39 | [BITCOIN KNOTS](#bitcoin-knots) |    55 |
 | [BIP31](#bip31)                |    39 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    55 |
 | [BIP32](#bip32)                |    39 | [BITCOIN JESUS](#bitcoin-jesus) |    55 |
 | [BIP34](#bip34)                |    39 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    55 |
 | [BIP35](#bip35)                |    39 | [BITCOIN QT](#bitcoin-qt)      |    55 |
-| [BIP37](#bip37)                |    59 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    55 |
+| [BIP37](#bip37)                |    60 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    56 |
 | [BIP38](#bip38)                |    40 | [BITCOINTALK](#bitcointalk)    |    56 |
 | [BIP39](#bip39)                |    40 | [BIT GOLD](#bit-gold)          |    56 |
 | [BIP42](#bip42)                |    40 | [BITVM](#bitvm)                |    56 |
-| [BIP43](#bip43)                |    41 | [BLK????.DAT](#blk.dat)        |    56 |
-| [BIP44](#bip44)                |    41 | [BLKINDEX.DAT](#blkindex.dat)  |    56 |
+| [BIP43](#bip43)                |    41 | [BLK????.DAT](#blk.dat)        |    57 |
+| [BIP44](#bip44)                |    41 | [BLKINDEX.DAT](#blkindex.dat)  |    57 |
 | [BIP47](#bip47)                |    42 | [BLKTREE/](#blktree)           |    57 |
-| [BIP49](#bip49)                |    42 | [BLOC](#bloc)                  |    57 |
+| [BIP49](#bip49)                |    43 | [BLOC](#bloc)                  |    57 |
 | [BIP50](#bip50)                |    43 | [BLOC CANDIDAT](#bloc-candidat) |    57 |
-| [BIP61](#bip61)                |    43 | [BLOCKCHAIN](#blockchain)      |    57 |
+| [BIP61](#bip61)                |    43 | [BLOCKCHAIN](#blockchain)      |    58 |
 | [BIP65](#bip65)                |    43 | [BLOCKS INDEX](#blocks-index)  |    58 |
-| [BIP66](#bip66)                |    43 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    58 |
-| [BIP68](#bip68)                |    43 | [BLOCKS/INDEX/](#blocksindex)  |    58 |
+| [BIP66](#bip66)                |    44 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    58 |
+| [BIP68](#bip68)                |    44 | [BLOCKS/INDEX/](#blocksindex)  |    58 |
 | [BIP70](#bip70)                |    44 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |    58 |
-| [BIP71](#bip71)                |    44 | [BLOCKSIGNERS](#blocksigners)  |    58 |
+| [BIP71](#bip71)                |    44 | [BLOCKSIGNERS](#blocksigners)  |    59 |
 | [BIP72](#bip72)                |    44 | [BLOCKSTREAM](#blockstream)    |    59 |
-| [BIP75](#bip75)                |    44 | [BLOCK TEMPLATE](#block-template) |    59 |
+| [BIP75](#bip75)                |    45 | [BLOCK TEMPLATE](#block-template) |    59 |
 | [BIP78](#bip78)                |    45 | [BLOCK WITHHOLDING](#block-withholding) |    59 |
 | [BIP84](#bip84)                |    45 | [BLOOM FILTER](#bloom-filter)  |    59 |
-| [BIP85](#bip85)                |    45 | [B-MONEY](#b-money)            |    59 |
+| [BIP85](#bip85)                |    45 | [B-MONEY](#b-money)            |    60 |
 | [BIP86](#bip86)                |    45 | [BOLT](#bolt)                  |    60 |
-| [BIP90](#bip90)                |    45 | [BOUNTY](#bounty)              |    60 |
-| [BIP91](#bip91)                |    45 | [BOUTISME](#boutisme)          |    60 |
+| [BIP90](#bip90)                |    46 | [BOUNTY](#bounty)              |    60 |
+| [BIP91](#bip91)                |    46 | [BOUTISME](#boutisme)          |    60 |
 | [BIP111](#bip111)              |    46 | [BRANCH-AND-BOUND](#branch-and-bound) |    60 |
 | [BIP112](#bip112)              |    46 | [BRANCHE](#branche)            |    60 |
-| [BIP113](#bip113)              |    46 | [BRC-20](#brc-20)              |    60 |
-| [BIP118](#bip118)              |    46 | [BTC](#btc)                    |    61 |
+| [BIP113](#bip113)              |    47 | [BRC-20](#brc-20)              |    61 |
+| [BIP118](#bip118)              |    47 | [BTC](#btc)                    |    61 |
 | [BIP119](#bip119)              |    47 | [BTCPAY SERVER](#btcpay-server) |    61 |
 | [BIP123](#bip123)              |    47 | [BULL MARKET](#bull-market)    |    61 |
-| [BIP125](#bip125)              |    47 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    61 |
+| [BIP125](#bip125)              |    48 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    61 |
 | | | | |
 
 
@@ -259,36 +259,36 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | [C (LANGAGE)](#c-langage)      |    63 | [COINMUX](#coinmux)            |    73 |
 | [C++ (PLUS PLUS)](#c-plus-plus) |    63 | [COINS/](#coins)               |    73 |
 | [CAHOOTS](#cahoots)            |    63 | [COINSHUFFLE](#coinshuffle)    |    73 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    63 | [COINSWAP](#coinswap)          |    73 |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    63 | [COLD WALLET](#cold-wallet)    |    73 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |    63 | [COINSWAP](#coinswap)          |    74 |
+| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    63 | [COLD WALLET](#cold-wallet)    |    74 |
 | [CASHU](#cashu)                |    64 | [COLORED COINS](#colored-coins) |    74 |
 | [CET](#cet)                    |    64 | [COMMERÇANT](#commerçant)      |    74 |
 | [CHAINE EXTERNE](#chaine-externe) |    64 | [COMMIT](#commit)              |    74 |
 | [CHAINE INTERNE](#chaine-interne) |    64 | [COMPACT BLOCK RELAY](#compact-block-relay) |    74 |
-| [CHANNEL FACTORIES](#channel-factories) |    64 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    74 |
+| [CHANNEL FACTORIES](#channel-factories) |    64 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    75 |
 | [CHAINSPLIT](#chainsplit)      |    65 | [COMPTE](#compte)              |    75 |
 | [CHAINSTATE/](#chainstate)     |    65 | [CONCATÉNATION](#concaténation) |    75 |
-| [CHANGE (MONNAIE)](#change-monnaie) |    65 | [CONDENSAT (HASH)](#condensat-hash) |    75 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    66 | [CONFIRMATION](#confirmation)  |    75 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    66 | [CONSENSUS](#consensus)        |    75 |
+| [CHANGE (MONNAIE)](#change-monnaie) |    65 | [CONDENSAT (HASH)](#condensat-hash) |    76 |
+| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    66 | [CONFIRMATION](#confirmation)  |    76 |
+| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    66 | [CONSENSUS](#consensus)        |    76 |
 | [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    66 | [CONSOLIDATION](#consolidation) |    76 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    66 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    76 |
+| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    66 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    77 |
 | [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    66 | [CONTRIBUTEUR](#contributeur)  |    77 |
 | [CIOH](#cioh)                  |    67 | [COOKIE (.COOKIE)](#cookie-.cookie) |    77 |
-| [CISA](#cisa)                  |    68 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    77 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    68 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    77 |
-| [CLÉ PRIVÉE](#clé-privée)      |    69 | [COVENANT](#covenant)          |    77 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    69 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    78 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    70 | [CPPSRB](#cppsrb)              |    78 |
-| [CLI](#cli)                    |    70 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    78 |
+| [CISA](#cisa)                  |    68 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    78 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    68 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    78 |
+| [CLÉ PRIVÉE](#clé-privée)      |    69 | [COVENANT](#covenant)          |    78 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    69 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    79 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    70 | [CPPSRB](#cppsrb)              |    79 |
+| [CLI](#cli)                    |    70 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    79 |
 | [C-LIGHTNING (CLN)](#c-lightning-cln) |    70 | [CRYPTANALYSE](#cryptanalyse)  |    79 |
 | [CLONE](#clone)                |    70 | [CRYPTER](#crypter)            |    79 |
-| [CLUSTER](#cluster)            |     ? | [CRYPTO-ACTIF](#crypto-actif)  |    79 |
-| [CODE DE CHAINE](#code-de-chaine) |    70 | [CRYPTOGRAPHIE](#cryptographie) |    79 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    70 | [CRYPTOLOGIE](#cryptologie)    |    79 |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) |    71 | [CRYPTOMONNAIE](#cryptomonnaie) |    79 |
-| [COIN CONTROL](#coin-control)  |    71 | [C SHARP](#c-sharp)            |    79 |
-| [COINJOIN](#coinjoin)          |    72 | [CUSTODY](#custody)            |    79 |
+| [CLUSTER](#cluster)            |    70 | [CRYPTO-ACTIF](#crypto-actif)  |    80 |
+| [CODE DE CHAINE](#code-de-chaine) |    70 | [CRYPTOGRAPHIE](#cryptographie) |    80 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    71 | [CRYPTOLOGIE](#cryptologie)    |    80 |
+| [COINBASE (TRANSACTION)](#coinbase-transaction) |    71 | [CRYPTOMONNAIE](#cryptomonnaie) |    80 |
+| [COIN CONTROL](#coin-control)  |    72 | [C SHARP](#c-sharp)            |    80 |
+| [COINJOIN](#coinjoin)          |    72 | [CUSTODY](#custody)            |    80 |
 | [COINJUMBLE](#coinjumble)      |    73 | [CYPHERPUNK](#cypherpunk)      |    80 |
 | | | | |
 
@@ -521,7 +521,7 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   142 | [OP_VERIFY (0X69)](#op_verify-0x69) |   149 |
 | [OP_DEPTH (0X74)](#op_depth-0x74) |   142 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   149 |
 | [OP_DROP (0X75)](#op_drop-0x75) |   143 | [OPCODES](#opcodes)            |   149 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   143 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |     ? |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   143 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   149 |
 | [OP_ELSE (0X67)](#op_else-0x67) |   143 | [ORACLE](#oracle)              |   149 |
 | [OP_ENDIF (0X68)](#op_endif-0x68) |   143 | [ORDINALS](#ordinals)          |   149 |
 | [OP_EQUAL (0X87)](#op_equal-0x87) |   143 | [ORPHELIN](#orphelin)          |   149 |
