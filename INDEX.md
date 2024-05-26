@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 784 `**
+**Nombre total de définitions : ` 789 `**
 
 ### A
 
@@ -193,6 +193,7 @@
 - [CIOH](./dictionnaire/C.md#cioh)
 - [CISA](./dictionnaire/C.md#cisa)
 - [CLÉ ÉTENDUE](./dictionnaire/C.md#clé-étendue)
+- [CLÉ MAITRESSE](./dictionnaire/C.md#clé-maitresse)
 - [CLÉ PRIVÉE](./dictionnaire/C.md#clé-privée)
 - [CLÉ PUBLIQUE](./dictionnaire/C.md#clé-publique)
 - [CLÉ PUBLIQUE COMPRESSÉE](./dictionnaire/C.md#clé-publique-compressée)
@@ -382,6 +383,7 @@
 - [INPUT](./dictionnaire/I.md#input)
 - [INSCRIPTIONS](./dictionnaire/I.md#inscriptions)
 - [INVOICE LIGHTNING](./dictionnaire/I.md#invoice-lightning)
+- [IOU](./dictionnaire/I.md#iou)
 - [IP_ASN.MAP](./dictionnaire/I.md#ip_asnmap)
 - [ISSUE](./dictionnaire/I.md#issue)
 
@@ -721,6 +723,7 @@
 - [SHA512](./dictionnaire/S.md#sha512)
 - [SHARES](./dictionnaire/S.md#shares)
 - [SHAREDCOIN](./dictionnaire/S.md#sharedcoin)
+- [SHITCOIN](./dictionnaire/S.md#shitcoin)
 - [SHOR (ALGORITHME)](./dictionnaire/S.md#shor-algorithme)
 - [SIDECHAIN](./dictionnaire/S.md#sidechain)
 - [SIGHASH_ALL (0X01)](./dictionnaire/S.md#sighash_all-0x01)
@@ -797,6 +800,7 @@
 - [TURBO CHANNEL](./dictionnaire/T.md#turbo-channel)
 - [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
 - [TXID (TRANSACTION IDENTIFIER)](./dictionnaire/T.md#txid-transaction-identifier)
+- [TYPE DE DEVISE](./dictionnaire/T.md#type-de-devise)
 
 ### U
 
@@ -817,6 +821,7 @@
 - [VANITY (ADDRESS)](./dictionnaire/V.md#vanity-address)
 - [VANITYGEN](./dictionnaire/V.md#vanitygen)
 - [VERSIONNAGE](./dictionnaire/V.md#versionnage)
+- [VIN](./dictionnaire/V.md#vin)
 - [VOUT](./dictionnaire/V.md#vout)
 - [VPRV](./dictionnaire/V.md#vprv)
 - [VPUB](./dictionnaire/V.md#vpub)
