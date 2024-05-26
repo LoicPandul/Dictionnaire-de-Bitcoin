@@ -280,6 +280,9 @@ Kit de développement (SDK) pour les portefeuilles sur Bitcoin. BDK est une coll
 
 ## BEAR MARKET
 
+Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, diminue par rapport à une monnaie fiat, typiquement le dollar américain. Depuis son introduction en 2009, le cycle des bear markets du BTC semble influencé par les halvings, des événements programmés qui réduisent de moitié la récompense des mineurs et qui interviennent approximativement tous les quatre ans.
+
+> *La traduction française de « bear market » est « marché baissier ».*
 
 ## BECH32 ET BECH32M
 
@@ -674,6 +677,48 @@ Proposition d'amélioration destinée aux développeurs de logiciels de portefeu
 
 > *Pour plus d'informations, voir la définition de [**FEE SNIPING**](#fee-sniping).*
 
+## BIP380
+
+Proposition d'amélioration qui introduit un langage standard pour décrire les collections de scripts de sortie (output scripts) des portefeuilles HD Bitcoin. Ce langage est appelé "Output Script Descriptors". Il vise à standardiser la manière de représenter et de gérer les scripts de sortie, afin de faciliter la sauvegarde, l'exportation et l'importation de portefeuilles. En plus des données privées comme la phrase de récupération, les descriptors fournissent toutes les informations nécessaires pour retrouver les paires de clés utilisées dans un portefeuille HD. Le BIP380 décrit le fonctionnement général des descriptors, tandis que les BIP381, BIP382, BIP383, BIP384, BIP385 et BIP386 spécifient les expressions utilisées. Le BIP380 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
+## BIP381
+
+Introduit des fonctions pour les descriptors, notamment `pk(KEY)` (Pay-to-PubKey), `pkh(KEY)` (Pay-to-PubKey-Hash), et `sh(SCRIPT)` (Pay-to-Script-Hash). Ces fonctions standardisent la manière de décrire les types de scripts Legacy dans les descriptors. Le BIP381 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
+## BIP382
+
+Introduit les fonctions `wpkh(KEY)` (Pay-to-Witness-PubKey-Hash) et `wsh(SCRIPT)` (Pay-to-Witness-Script-Hash) pour les descriptors. Ces fonctions standardisent la manière de décrire les types de scripts SegWit dans les descriptors. Le BIP382 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
+## BIP383
+
+Introduit les fonctions `multi(NUM, KEY, ..., KEY)` et `sortedmulti(NUM, KEY, ..., KEY)` pour les descriptors. Ces fonctions permettent de décrire les scripts multisignatures dans les descriptors, avec `sortedmulti` qui trie les clés publiques par ordre lexicographique pour assurer la compatibilité lors de l'import. Le BIP383 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
+## BIP384
+
+Introduit la fonction `combo(KEY)` pour les descriptors. Cette fonction décrit un ensemble de scripts de sortie possibles pour une clé publique donnée. Il permet donc de couvrir plusieurs types de scripts en même temps, notamment P2PK, P2PKH, P2WPKH et P2SH-P2WPKH. Si la clé donnée est compressée, les 4 types de script sont testés, et si elle ne l'est pas, seuls les 2 types de scripts Legacy sont testés. L'objectif est de simplifier la représentation des clés dans les descriptors en fournissant une méthode unique pour générer différentes variantes de scripts de sortie basées sur une même clé publique. Le BIP384 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
+## BIP385
+
+Introduit les fonctions de descriptors `addr(ADDR)` et `raw(HEX)`. La fonction `addr(ADDR)` permet de décrire un script de sortie en utilisant une adresse de réception, tandis que la fonction `raw(HEX)` permet de spécifier un script de sortie en utilisant une représentation hexadécimale brute de ce script. Le BIP385 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
+## BIP386
+
+Introduit les fonctions de descriptors pour Taproot. Il définit les fonctions `tr(KEY)` et `tr(KEY, TREE)` pour trouver des sorties Taproot, où `KEY` est la clé interne et `TREE` est une arborescence optionnelle de chemins de script. Le BIP386 a été implémenté dans la version 22.0 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](#output-script-descriptors).*
+
 ## BIRTH DATE (WALLET)
 
 
@@ -895,7 +940,9 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 
 ## BULL MARKET
 
+Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, monte par rapport à une monnaie fiat, typiquement le dollar américain. Depuis son introduction en 2009, le cycle des bull markets du BTC semble influencé par les halvings, des événements programmés qui réduisent de moitié la récompense des mineurs et qui interviennent approximativement tous les quatre ans.
 
+> *La traduction française de « bull market » est « marché haussier ».*
 
 ## BYZANTINE FAULT TOLERANCE (BFT)
 
@@ -1772,7 +1819,7 @@ Dans le cadre de Lightning, c'est un protocole de communication entre les nœuds
 
 ## GPL
 
-GNU licence
+Sigle de « *GNU General Public License* ». C'est une série de licences de logiciel libre initialement créée par la Free Software Foundation. Elle garantit aux utilisateurs la liberté d'utiliser, de modifier et de distribuer le logiciel. La GPL exige toutefois que tout logiciel dérivé ou modifié soit également distribué sous la même licence, ce qui permet d'assurer que les libertés initiales sont préservées dans toutes les versions du logiciel. La GPL est souvent utilisée pour les projets open source et on la retrouve parfois sur certains projets liés à Bitcoin. Toutefois, la licence initiale du client Bitcoin de Satoshi Nakamoto était une MIT X11. C'est d'ailleurs toujours le cas pour Bitcoin Core.
 
 ## GRAINE (SEED)
 
@@ -2211,6 +2258,10 @@ Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences
 
 > *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[MINISCRIPT](#miniscript)** et de **[TAPSCRIPT](#tapscript)**.*
 
+## MIT X11
+
+Licence de logiciel libre très permissive qui autorise les utilisateurs à copier, modifier, fusionner, publier, distribuer, sous-licencier et vendre le logiciel. Elle exige uniquement que la licence originale et les notifications de droits d'auteur soient conservées dans toutes les copies ou distributions substantielles du logiciel. Contrairement à la licence GPL, la licence MIT ne requiert pas que les adaptations ou les versions dérivées du logiciel soient distribuées sous la même licence. Cette flexibilité fait de la licence MIT X11 un choix populaire pour de nombreux projets open source, y compris dans l'environnement de Bitcoin. Satoshi Nakamoto a d'ailleurs choisi cette licence pour la première version de Bitcoin publiée en 2009, et elle reste en usage pour le projet Bitcoin Core aujourd'hui.
+
 ## MIXAGE
 
 
@@ -2220,6 +2271,7 @@ Template permettant l'utilisation de scripts standards. Un modèle de script est
 
 ## M-OF-N
 
+Désigne un portefeuille ou un script multisignatures à seuil. Pour renforcer la sécurité de bitcoins, on peut utiliser un système de sécurisation multisignatures à seuil qui exige que `m` parmi `n` signatures soient faites pour pouvoir dépenser les fonds. Dans un m-de-n, la lettre `m` désigne le seuil de signatures requis et la lettre `n` désigne le nombre total de clés existantes pouvant signer. Par exemple, dans une configuration 2-de-3, deux signatures sur trois possibles sont nécessaires pour exécuter une transaction.
 
 ## MTP (MEDIAN TIME PAST)
 
@@ -2227,6 +2279,12 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 
 ## MULTIPATH PAYMENTS (MPP)
 
+
+## MULTISIG
+
+Les portefeuilles multisignatures, souvent abrégés « multisig », sont conçus pour renforcer la sécurisation de bitcoins en exigeant plusieurs signatures provenant de différentes clés privées pour autoriser une dépense. Cette méthode répartit le risque entre plusieurs clés, ce qui permet de réduire à la fois le risque de perte et celui de vol (selon la configuration du multisig). Les portefeuilles multisig fonctionnent selon un modèle « m-de-n », où `m` désigne le nombre minimal de signatures requises pour valider une transaction, et `n` le nombre total de clés impliquées. Par exemple, une configuration 2-de-3 nécessite deux signatures sur trois possibles pour valider une transaction. Cette approche offre une sécurité supérieure par rapport aux portefeuilles à clé unique, mais elle introduit également plus de complexité en termes de gestion et de sauvegarde. De plus, les transactions utilisant les anciens standards de multisig sont moins confidentielles et plus coûteuses en frais que les transactions singlesig classiques. Cependant, des innovations récentes telles que Taproot et l'utilisation de descriptors ont permis de minimiser voire d'éliminer ces inconvénients des multisigs.
+
+> *Certains bitcoiners distinguent les termes « Multisig » et « Multisig à seuil ». En effet, certains affirment qu'un multisig est forcément un n-de-n, tandis qu'un multisig à seuil est un m-de-n. Toutefois, dans le langage courant, il est accepté de parler de « Multisig » même pour m-de-n.*
 
 ## MUSIG2
 

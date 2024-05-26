@@ -40,6 +40,9 @@ Kit de développement (SDK) pour les portefeuilles sur Bitcoin. BDK est une coll
 
 ## BEAR MARKET
 
+Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, diminue par rapport à une monnaie fiat, typiquement le dollar américain. Depuis son introduction en 2009, le cycle des bear markets du BTC semble influencé par les halvings, des événements programmés qui réduisent de moitié la récompense des mineurs et qui interviennent approximativement tous les quatre ans.
+
+> *La traduction française de « bear market » est « marché baissier ».*
 
 ## BECH32 ET BECH32M
 
@@ -434,6 +437,48 @@ Proposition d'amélioration destinée aux développeurs de logiciels de portefeu
 
 > *Pour plus d'informations, voir la définition de [**FEE SNIPING**](./F.md#fee-sniping).*
 
+## BIP380
+
+Proposition d'amélioration qui introduit un langage standard pour décrire les collections de scripts de sortie (output scripts) des portefeuilles HD Bitcoin. Ce langage est appelé "Output Script Descriptors". Il vise à standardiser la manière de représenter et de gérer les scripts de sortie, afin de faciliter la sauvegarde, l'exportation et l'importation de portefeuilles. En plus des données privées comme la phrase de récupération, les descriptors fournissent toutes les informations nécessaires pour retrouver les paires de clés utilisées dans un portefeuille HD. Le BIP380 décrit le fonctionnement général des descriptors, tandis que les BIP381, BIP382, BIP383, BIP384, BIP385 et BIP386 spécifient les expressions utilisées. Le BIP380 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
+## BIP381
+
+Introduit des fonctions pour les descriptors, notamment `pk(KEY)` (Pay-to-PubKey), `pkh(KEY)` (Pay-to-PubKey-Hash), et `sh(SCRIPT)` (Pay-to-Script-Hash). Ces fonctions standardisent la manière de décrire les types de scripts Legacy dans les descriptors. Le BIP381 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
+## BIP382
+
+Introduit les fonctions `wpkh(KEY)` (Pay-to-Witness-PubKey-Hash) et `wsh(SCRIPT)` (Pay-to-Witness-Script-Hash) pour les descriptors. Ces fonctions standardisent la manière de décrire les types de scripts SegWit dans les descriptors. Le BIP382 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
+## BIP383
+
+Introduit les fonctions `multi(NUM, KEY, ..., KEY)` et `sortedmulti(NUM, KEY, ..., KEY)` pour les descriptors. Ces fonctions permettent de décrire les scripts multisignatures dans les descriptors, avec `sortedmulti` qui trie les clés publiques par ordre lexicographique pour assurer la compatibilité lors de l'import. Le BIP383 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
+## BIP384
+
+Introduit la fonction `combo(KEY)` pour les descriptors. Cette fonction décrit un ensemble de scripts de sortie possibles pour une clé publique donnée. Il permet donc de couvrir plusieurs types de scripts en même temps, notamment P2PK, P2PKH, P2WPKH et P2SH-P2WPKH. Si la clé donnée est compressée, les 4 types de script sont testés, et si elle ne l'est pas, seuls les 2 types de scripts Legacy sont testés. L'objectif est de simplifier la représentation des clés dans les descriptors en fournissant une méthode unique pour générer différentes variantes de scripts de sortie basées sur une même clé publique. Le BIP384 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
+## BIP385
+
+Introduit les fonctions de descriptors `addr(ADDR)` et `raw(HEX)`. La fonction `addr(ADDR)` permet de décrire un script de sortie en utilisant une adresse de réception, tandis que la fonction `raw(HEX)` permet de spécifier un script de sortie en utilisant une représentation hexadécimale brute de ce script. Le BIP385 a été implémenté avec tous les autres BIP liés aux descriptors (sauf le BIP386) dans la version 0.17 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
+## BIP386
+
+Introduit les fonctions de descriptors pour Taproot. Il définit les fonctions `tr(KEY)` et `tr(KEY, TREE)` pour trouver des sorties Taproot, où `KEY` est la clé interne et `TREE` est une arborescence optionnelle de chemins de script. Le BIP386 a été implémenté dans la version 22.0 de Bitcoin Core.
+
+> *Pour plus d'informations, voir la définition de [**OUTPUT SCRIPT DESCRIPTORS**](./O.md#output-script-descriptors).*
+
 ## BIRTH DATE (WALLET)
 
 
@@ -655,6 +700,8 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 
 ## BULL MARKET
 
+Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, monte par rapport à une monnaie fiat, typiquement le dollar américain. Depuis son introduction en 2009, le cycle des bull markets du BTC semble influencé par les halvings, des événements programmés qui réduisent de moitié la récompense des mineurs et qui interviennent approximativement tous les quatre ans.
 
+> *La traduction française de « bull market » est « marché haussier ».*
 
 ## BYZANTINE FAULT TOLERANCE (BFT)

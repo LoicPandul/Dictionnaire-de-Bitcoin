@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 789 `**
+**Nombre total de définitions : ` 798 `**
 
 ### A
 
@@ -122,6 +122,13 @@
 - [BIP322](./dictionnaire/B.md#bip322)
 - [BIP324](./dictionnaire/B.md#bip324)
 - [BIP326](./dictionnaire/B.md#bip326)
+- [BIP380](./dictionnaire/B.md#bip380)
+- [BIP381](./dictionnaire/B.md#bip381)
+- [BIP382](./dictionnaire/B.md#bip382)
+- [BIP383](./dictionnaire/B.md#bip383)
+- [BIP384](./dictionnaire/B.md#bip384)
+- [BIP385](./dictionnaire/B.md#bip385)
+- [BIP386](./dictionnaire/B.md#bip386)
 - [BIRTH DATE (WALLET)](./dictionnaire/B.md#birth-date-wallet)
 - [BIT](./dictionnaire/B.md#bit)
 - [BITCOIN (B MAJUSCULE)](./dictionnaire/B.md#bitcoin-b-majuscule)
@@ -461,11 +468,13 @@
 - [MINIMINT](./dictionnaire/M.md#minimint)
 - [MINISCRIPT](./dictionnaire/M.md#miniscript)
 - [MINITAPSCRIPT](./dictionnaire/M.md#minitapscript)
+- [MIT X11](./dictionnaire/M.md#mit-x11)
 - [MIXAGE](./dictionnaire/M.md#mixage)
 - [MODÈLE DE SCRIPT](./dictionnaire/M.md#modèle-de-script)
 - [M-OF-N](./dictionnaire/M.md#m-of-n)
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
 - [MULTIPATH PAYMENTS (MPP)](./dictionnaire/M.md#multipath-payments-mpp)
+- [MULTISIG](./dictionnaire/M.md#multisig)
 - [MUSIG2](./dictionnaire/M.md#musig2)
 
 ### N
