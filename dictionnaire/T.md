@@ -119,3 +119,16 @@ Traduction anglaise d'ancrage bilatéral.
 Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité.
 
 > *Pour plus d'informations, voir la définition de [**WTXID**](./W.md#wtxid).*
+
+## TYPE DE DEVISE
+
+Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type de devise (*coin type* en anglais) est un niveau de dérivation qui permet de différencier les branches du portefeuille en fonction des différentes cryptomonnaies utilisées. Cette profondeur, définie par le BIP 44, se situe en profondeur 2 de la structure de dérivation, après la clé maîtresse et l'objectif. Par exemple, pour Bitcoin, l'index attribué est `0x80000000`, noté `/0'/` dans le chemin de dérivation. Cela signifie que toutes les adresses et comptes dérivés de ce chemin sont associés à Bitcoin. Cet étage de dérivation permet de bien séparer les différents actifs dans un portefeuille multi-devises. Voici les index utilisés pour différentes cryptomonnaies :
+* Bitcoin : `0x80000000` ;
+* Bitcoin Testnet : `0x80000001` ;
+* Litecoin : `0x80000002` ;
+* Dogecoin : `0x80000003` ;
+* Ethereum : `0x8000003c`...
+
+![](assets/21.png)
+
+> *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
