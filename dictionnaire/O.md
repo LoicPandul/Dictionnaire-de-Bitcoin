@@ -492,7 +492,7 @@ Un descriptor se compose de plusieurs éléments :
 * Des fonctions de script comme `pk` (Pay-to-PubKey), `pkh` (Pay-to-PubKey-Hash), `wpkh` (Pay-to-Witness-PubKey-Hash), `sh` (Pay-to-Script-Hash), `wsh` (Pay-to-Witness-Script-Hash), `tr` (Pay-to-Taproot), `multi` (Multisignature) et `sortedmulti` (Multisignature avec clés triées) ;
 * Des chemins de dérivation, par exemple `[d34db33f/44h/0h/0h]` qui indique un chemin dérivé et une empreinte de clé maîtresse spécifique ;
 * Des clés en divers formats tels que des clés publiques en hexadécimal ou des clés publiques étendues (`xpub`) ;
-* Une somme de contrôle, précédée d'un `#`, pour vérifier l'intégrité du descriptor.
+* Une somme de contrôle, précédée d'un dièse, pour vérifier l'intégrité du descriptor.
 
 Par exemple, un descriptor pour un portefeuille P2WPKH pourrait ressembler à :
 

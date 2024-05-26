@@ -9,8 +9,8 @@ Chaque "vout" encapsule principalement deux informations :
 La combinaison du "txid" et du "vout" d'une pièce spécifique forme ce que l'on appelle un UTXO, par exemple :
 
 ```bash
-"txid": "4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf"
-"vout": 0
+txid: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf
+vout: 0
 outpoint: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf:0
 ```
 
