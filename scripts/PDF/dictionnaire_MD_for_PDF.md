@@ -4061,8 +4061,9 @@ qui indique un chemin dérivé et une empreinte de clé maîtresse spécifique ;
 
 Par exemple, un descriptor pour un portefeuille P2WPKH pourrait ressembler à :
 
-```bash
-wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U/<0;1>/*)#jy0l7nr4
+```
+wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt
+7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U/<0;1>/*)#jy0l7nr4
 ```
 
 Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script Pay-to-Witness-Public-Key-Hash. Elle est suivie par le chemin de dérivation qui contient :
@@ -4081,7 +4082,12 @@ Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script 
 : qui fait référence au numéro de compte spécifique utilisé dans le portefeuille.
 \end{itemize}
 
-Le descriptor inclut également la clé publique étendue utilisée sur ce portefeuille : `xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U`.
+Le descriptor inclut également la clé publique étendue utilisée sur ce portefeuille : 
+
+```
+xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2
+mK1rMsJKhtRUPZz7MQtp3y6atC1U
+```
 
 Ensuite, la notation `/<0;1>/*` spécifie que le descriptor peut générer des adresses à partir de la chaîne externe (`0`) et interne (`1`), avec un wildcard (`*`) permettant la dérivation séquentielle de plusieurs adresses de manière paramétrable, similaire à la gestion d'un « gap limit » sur des logiciels de portefeuille classiques.
 
