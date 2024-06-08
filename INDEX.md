@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 798 `**
+**Nombre total de définitions : ` 804 `**
 
 ### A
 
@@ -371,6 +371,7 @@
 - [HAUTEUR DE BLOC](./dictionnaire/H.md#hauteur-de-bloc)
 - [HD (HIERARCHICAL-DETERMINISTIC)](./dictionnaire/H.md#hd-hierarchical-deterministic)
 - [HEADERS FIRST SYNC](./dictionnaire/H.md#headers-first-sync)
+- [HEURISTIQUE D'ANALYSE](./dictionnaire/H.md#heuristique-danalyse)
 - [HEXADÉCIMAL](./dictionnaire/H.md#hexadécimal)
 - [HMAC-SHA512](./dictionnaire/H.md#hmac-sha512)
 - [HODL](./dictionnaire/H.md#hodl)
@@ -471,6 +472,7 @@
 - [MIT X11](./dictionnaire/M.md#mit-x11)
 - [MIXAGE](./dictionnaire/M.md#mixage)
 - [MODÈLE DE SCRIPT](./dictionnaire/M.md#modèle-de-script)
+- [MODÈLE DE TRANSACTION](./dictionnaire/M.md#modèle-de-transaction)
 - [M-OF-N](./dictionnaire/M.md#m-of-n)
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
 - [MULTIPATH PAYMENTS (MPP)](./dictionnaire/M.md#multipath-payments-mpp)
@@ -590,6 +592,7 @@
 - [ORACLE](./dictionnaire/O.md#oracle)
 - [ORDINALS](./dictionnaire/O.md#ordinals)
 - [ORPHELIN](./dictionnaire/O.md#orphelin)
+- [OSINT](./dictionnaire/O.md#osint)
 - [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
 - [OUTBOUND CAPACITY](./dictionnaire/O.md#outbound-capacity)
 - [OUTPOINT](./dictionnaire/O.md#outpoint)
@@ -634,6 +637,7 @@
 - [PILE (STACK)](./dictionnaire/P.md#pile-stack)
 - [PINNING ATTACK](./dictionnaire/P.md#pinning-attack)
 - [PIZZA DAY](./dictionnaire/P.md#pizza-day)
+- [POINT D'ENTRÉE](./dictionnaire/P.md#point-dentrée)
 - [POLICY (MINISCRIPT)](./dictionnaire/P.md#policy-miniscript)
 - [POOL](./dictionnaire/P.md#pool)
 - [POOL DE MINAGE](./dictionnaire/P.md#pool-de-minage)
@@ -687,6 +691,7 @@
 - [RÉSISTANCE AU PARTITIONNEMENT](./dictionnaire/R.md#résistance-au-partitionnement)
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
 - [RÉUTILISATION D'ADRESSE](./dictionnaire/R.md#réutilisation-dadresse)
+- [RÉUTILISATION D'ADRESSE EXTERNE](./dictionnaire/R.md#réutilisation-dadresse-externe)
 - [RÉUTILISATION D'ADRESSE INTERNE](./dictionnaire/R.md#réutilisation-dadresse-interne)
 - [RGB](./dictionnaire/R.md#rgb)
 - [RICOCHET](./dictionnaire/R.md#ricochet)
@@ -810,6 +815,7 @@
 - [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
 - [TXID (TRANSACTION IDENTIFIER)](./dictionnaire/T.md#txid-transaction-identifier)
 - [TYPE DE DEVISE](./dictionnaire/T.md#type-de-devise)
+- [TWEAK (CLÉ PUBLIQUE)](./dictionnaire/T.md#tweak-clé-publique)
 
 ### U
 

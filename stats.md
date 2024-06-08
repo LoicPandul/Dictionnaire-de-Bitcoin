@@ -1,24 +1,24 @@
 ## Statistiques du *Dictionnaire de Bitcoin*
 
 ### Nombre total de définitions : 
-**-> 798**
+**-> 804**
 
 ### Nombre de définitions par lettre :
 1. ***B*** - 135
-2. ***O*** - 100
+2. ***O*** - 101
 3. ***S*** - 78
 4. ***C*** - 69
-5. ***P*** - 64
-6. ***M*** - 40
+5. ***P*** - 65
+6. ***M*** - 41
 7. ***A*** - 36
 8. ***D*** - 32
-9. ***R*** - 29
-10. ***T*** - 26
+9. ***R*** - 30
+10. ***T*** - 27
 11. ***F*** - 23
 12. ***E*** - 22
 13. ***L*** - 21
-14. ***G*** - 19
-15. ***H*** - 19
+14. ***H*** - 20
+15. ***G*** - 19
 16. ***W*** - 16
 17. ***N*** - 14
 18. ***I*** - 12
@@ -32,23 +32,23 @@
 26. ***Y*** - 2
 
 ### Termes techniques les plus rencontrés :
-1. ***bitcoin*** - 971
-2. ***transaction*** - 809
-3. ***bloc*** - 463
-4. ***script*** - 298
-5. ***information*** - 248
-6. ***adresse*** - 242
-7. ***portefeuille*** - 236
-8. ***utxo*** - 208
+1. ***bitcoin*** - 994
+2. ***transaction*** - 847
+3. ***bloc*** - 465
+4. ***script*** - 303
+5. ***adresse*** - 261
+6. ***information*** - 254
+7. ***portefeuille*** - 242
+8. ***utxo*** - 222
 9. ***mineur*** - 207
-10. ***réseau*** - 199
-11. ***signature*** - 197
-12. ***protocole*** - 188
-13. ***donnée*** - 169
-14. ***utilisateur*** - 169
+10. ***réseau*** - 201
+11. ***signature*** - 198
+12. ***protocole*** - 191
+13. ***utilisateur*** - 179
+14. ***donnée*** - 172
 15. ***clé*** - 161
-16. ***segwit*** - 150
+16. ***segwit*** - 151
 17. ***pile*** - 148
-18. ***valeur*** - 138
-19. ***système*** - 138
-20. ***méthode*** - 136
+18. ***publique*** - 143
+19. ***méthode*** - 140
+20. ***valeur*** - 140

@@ -19,7 +19,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 27 mai 2024\newline
+Version du 09 juin 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -379,16 +379,17 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [HAL FINNEY](#hal-finney)      |   115 | [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   117 |
-| [HALVING](#halving)            |   115 | [HEADERS FIRST SYNC](#headers-first-sync) |   117 |
-| [HARD FORK](#hard-fork)        |   115 | [HEXADÉCIMAL](#hexadécimal)    |   117 |
-| [HARDWARE WALLET](#hardware-wallet) |   116 | [HMAC-SHA512](#hmac-sha512)    |   117 |
-| [HASH160](#hash160)            |   116 | [HODL](#hodl)                  |   117 |
-| [HASH256](#hash256)            |   116 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |   117 |
-| [HASHCASH](#hashcash)          |   116 | [HRP (HUMAN READABLE PART)](#hrp-human-readable-part) |   118 |
-| [HASHLOCKS](#hashlocks)        |   117 | [HTLC](#htlc)                  |   118 |
-| [HASHRATE](#hashrate)          |   117 | [HWI](#hwi)                    |   118 |
-| [HAUTEUR DE BLOC](#hauteur-de-bloc) |   117 |                                |       |
+| [HAL FINNEY](#hal-finney)      |   115 | [HEADERS FIRST SYNC](#headers-first-sync) |   117 |
+| [HALVING](#halving)            |   115 | [HEURISTIQUE D'ANALYSE](#heuristique-danalyse) |     ? |
+| [HARD FORK](#hard-fork)        |   115 | [# Différence entre heuristiques et modèles de transaction](#-différence-entre-heuristiques-et-modèles-de-transaction) |     ? |
+| [HARDWARE WALLET](#hardware-wallet) |   116 | [HEXADÉCIMAL](#hexadécimal)    |   117 |
+| [HASH160](#hash160)            |   116 | [HMAC-SHA512](#hmac-sha512)    |   117 |
+| [HASH256](#hash256)            |   116 | [HODL](#hodl)                  |   117 |
+| [HASHCASH](#hashcash)          |   116 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |   117 |
+| [HASHLOCKS](#hashlocks)        |   117 | [HRP (HUMAN READABLE PART)](#hrp-human-readable-part) |   118 |
+| [HASHRATE](#hashrate)          |   117 | [HTLC](#htlc)                  |   118 |
+| [HAUTEUR DE BLOC](#hauteur-de-bloc) |   117 | [HWI](#hwi)                    |   118 |
+| [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   117 |                                |       |
 | | | | |
 
 
@@ -446,26 +447,27 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [MACAROON](#macaroon)          |   131 | [MERKLE SUM TREE](#merkle-sum-tree) |   134 |
-| [MAGICAL BITCOIN](#magical-bitcoin) |   131 | [MÉTADONNÉES](#métadonnées)    |   134 |
-| [MAGIC NETWORK](#magic-network) |   131 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   134 |
-| [MAINNET](#mainnet)            |   131 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   134 |
-| [MAINTENEUR](#mainteneur)      |   131 | [MINAGE](#minage)              |   134 |
-| [MAINTENEUR PRINCIPAL](#mainteneur-principal) |   131 | [MINAGE ÉGOÏSTE](#minage-égoïste) |   135 |
-| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   131 | [MINAGE FUSIONNÉ](#minage-fusionné) |   135 |
-| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   132 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   135 |
-| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   132 | [MINEUR](#mineur)              |   135 |
-| [MAPPER (TO MAP)](#mapper-to-map) |   132 | [MINIMINT](#minimint)          |   136 |
-| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   132 | [MINISCRIPT](#miniscript)      |   136 |
-| [MASF](#masf)                  |   132 | [MINITAPSCRIPT](#minitapscript) |   136 |
-| [MAST](#mast)                  |   132 | [MIT X11](#mit-x11)            |   136 |
-| [MASTER FINGERPRINT](#master-fingerprint) |   133 | [MIXAGE](#mixage)              |   137 |
-| [MATT](#matt)                  |   133 | [MODÈLE DE SCRIPT](#modèle-de-script) |   137 |
+| [MACAROON](#macaroon)          |   131 | [MÉTADONNÉES](#métadonnées)    |   134 |
+| [MAGICAL BITCOIN](#magical-bitcoin) |   131 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   134 |
+| [MAGIC NETWORK](#magic-network) |   131 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   134 |
+| [MAINNET](#mainnet)            |   131 | [MINAGE](#minage)              |   134 |
+| [MAINTENEUR](#mainteneur)      |   131 | [MINAGE ÉGOÏSTE](#minage-égoïste) |   135 |
+| [MAINTENEUR PRINCIPAL](#mainteneur-principal) |   131 | [MINAGE FUSIONNÉ](#minage-fusionné) |   135 |
+| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   131 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   135 |
+| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   132 | [MINEUR](#mineur)              |   135 |
+| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   132 | [MINIMINT](#minimint)          |   136 |
+| [MAPPER (TO MAP)](#mapper-to-map) |   132 | [MINISCRIPT](#miniscript)      |   136 |
+| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   132 | [MINITAPSCRIPT](#minitapscript) |   136 |
+| [MASF](#masf)                  |   132 | [MIT X11](#mit-x11)            |   136 |
+| [MAST](#mast)                  |   132 | [MIXAGE](#mixage)              |   137 |
+| [MASTER FINGERPRINT](#master-fingerprint) |   133 | [MODÈLE DE SCRIPT](#modèle-de-script) |   137 |
+| [MATT](#matt)                  |   133 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |     ? |
 | [MAX_BLOC_SIZE](#max_bloc_size) |   133 | [M-OF-N](#m-of-n)              |   137 |
 | [MEMPOOL](#mempool)            |   133 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   137 |
 | [MEMPOOL.DAT](#mempool.dat)    |   133 | [MULTIPATH PAYMENTS (MPP)](#multipath-payments-mpp) |   137 |
 | [MERGE](#merge)                |   134 | [MULTISIG](#multisig)          |   137 |
 | [MERKLE BLOCK](#merkle-block)  |   134 | [MUSIG2](#musig2)              |   137 |
+| [MERKLE SUM TREE](#merkle-sum-tree) |   134 |                                |       |
 | | | | |
 
 
@@ -487,56 +489,57 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [OBJECTIF](#objectif)          |   144 | [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   152 |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   144 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   153 |
-| [OBSOLÈTE](#obsolète)          |   145 | [OP_IF (0X63)](#op_if-0x63)    |   153 |
-| [OCTET (BYTE)](#octet-byte)    |   146 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   153 |
-| [OFFCHAIN](#offchain)          |   146 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   153 |
-| [OFFERS (LIGHTNING)](#offers-lightning) |   146 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   153 |
-| [ONCHAIN](#onchain)            |   146 | [OP_MAX (0XA4)](#op_max-0xa4)  |   153 |
-| [ONION_PRIVATE_KEY](#onion_private_key) |   146 | [OP_MIN (0XA3)](#op_min-0xa3)  |   153 |
-| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   146 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   153 |
-| [OP_0 (0X00)](#op_0-0x00)      |   146 | [OP_NIP (0X77)](#op_nip-0x77)  |   154 |
-| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   146 | [OP_NOP (0X61)](#op_nop-0x61)  |   154 |
-| [OP_1 (0X51)](#op_1-0x51)      |   146 | [OP_NOT (0X91)](#op_not-0x91)  |   154 |
-| [OP_1ADD (0X8B)](#op_1add-0x8b) |   147 | [OP_NOTIF (0X64)](#op_notif-0x64) |   154 |
-| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   147 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   154 |
-| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   147 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   154 |
-| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   147 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   154 |
-| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   147 | [OP_OVER (0X78)](#op_over-0x78) |   155 |
-| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   147 | [OP_PICK (0X79)](#op_pick-0x79) |   155 |
-| [OP_2OVER (0X70)](#op_2over-0x70) |   147 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   155 |
-| [OP_2ROT (0X71)](#op_2rot-0x71) |   147 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   155 |
-| [OP_2SWAP (0X72)](#op_2swap-0x72) |   147 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   155 |
-| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   148 | [OP_RETURN (0X6A)](#op_return-0x6a) |   155 |
-| [OP_ABS (0X90)](#op_abs-0x90)  |   148 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   155 |
-| [OP_ADD (0X93)](#op_add-0x93)  |   148 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   155 |
-| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   148 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   156 |
-| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   148 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   156 |
-| [OP_CAT (0X7E)](#op_cat-0x7e)  |   148 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   156 |
-| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   148 | [OP_SIZE (0X82)](#op_size-0x82) |   156 |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   149 | [OP_SUB (0X94)](#op_sub-0x94)  |   156 |
-| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   149 | [OP_SUCCESS](#op_success)      |   156 |
-| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   149 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   156 |
-| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   149 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   157 |
-| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   150 | [OP_TRUE (0X51)](#op_true-0x51) |   157 |
-| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   150 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   157 |
-| [OP_CHECKSIGFROMSTACK](#op_checksigfromstack) |   151 | [OP_TXHASH](#op_txhash)        |   157 |
-| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   151 | [OP_VAULT](#op_vault)          |   157 |
-| [OP_CHECKTEMPLATEVERIFY](#op_checktemplateverify) |   151 | [OP_VER (0X62)](#op_ver-0x62)  |   157 |
-| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   151 | [OP_VERIFY (0X69)](#op_verify-0x69) |   157 |
-| [OP_DEPTH (0X74)](#op_depth-0x74) |   151 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   157 |
-| [OP_DROP (0X75)](#op_drop-0x75) |   151 | [OPCODES](#opcodes)            |   157 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   151 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   158 |
-| [OP_ELSE (0X67)](#op_else-0x67) |   151 | [ORACLE](#oracle)              |   158 |
-| [OP_ENDIF (0X68)](#op_endif-0x68) |   151 | [ORDINALS](#ordinals)          |   158 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |   152 | [ORPHELIN](#orphelin)          |   158 |
+| [OBJECTIF](#objectif)          |   144 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   153 |
+| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   144 | [OP_IF (0X63)](#op_if-0x63)    |   153 |
+| [OBSOLÈTE](#obsolète)          |   145 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   153 |
+| [OCTET (BYTE)](#octet-byte)    |   146 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   153 |
+| [OFFCHAIN](#offchain)          |   146 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   153 |
+| [OFFERS (LIGHTNING)](#offers-lightning) |   146 | [OP_MAX (0XA4)](#op_max-0xa4)  |   153 |
+| [ONCHAIN](#onchain)            |   146 | [OP_MIN (0XA3)](#op_min-0xa3)  |   153 |
+| [ONION_PRIVATE_KEY](#onion_private_key) |   146 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   153 |
+| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   146 | [OP_NIP (0X77)](#op_nip-0x77)  |   154 |
+| [OP_0 (0X00)](#op_0-0x00)      |   146 | [OP_NOP (0X61)](#op_nop-0x61)  |   154 |
+| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   146 | [OP_NOT (0X91)](#op_not-0x91)  |   154 |
+| [OP_1 (0X51)](#op_1-0x51)      |   146 | [OP_NOTIF (0X64)](#op_notif-0x64) |   154 |
+| [OP_1ADD (0X8B)](#op_1add-0x8b) |   147 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   154 |
+| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   147 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   154 |
+| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   147 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   154 |
+| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   147 | [OP_OVER (0X78)](#op_over-0x78) |   155 |
+| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   147 | [OP_PICK (0X79)](#op_pick-0x79) |   155 |
+| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   147 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   155 |
+| [OP_2OVER (0X70)](#op_2over-0x70) |   147 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   155 |
+| [OP_2ROT (0X71)](#op_2rot-0x71) |   147 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   155 |
+| [OP_2SWAP (0X72)](#op_2swap-0x72) |   147 | [OP_RETURN (0X6A)](#op_return-0x6a) |   155 |
+| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   148 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   155 |
+| [OP_ABS (0X90)](#op_abs-0x90)  |   148 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   155 |
+| [OP_ADD (0X93)](#op_add-0x93)  |   148 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   156 |
+| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   148 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   156 |
+| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   148 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   156 |
+| [OP_CAT (0X7E)](#op_cat-0x7e)  |   148 | [OP_SIZE (0X82)](#op_size-0x82) |   156 |
+| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   148 | [OP_SUB (0X94)](#op_sub-0x94)  |   156 |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   149 | [OP_SUCCESS](#op_success)      |   156 |
+| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   149 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   156 |
+| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   149 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   157 |
+| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   149 | [OP_TRUE (0X51)](#op_true-0x51) |   157 |
+| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   150 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   157 |
+| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   150 | [OP_TXHASH](#op_txhash)        |   157 |
+| [OP_CHECKSIGFROMSTACK](#op_checksigfromstack) |   151 | [OP_VAULT](#op_vault)          |   157 |
+| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   151 | [OP_VER (0X62)](#op_ver-0x62)  |   157 |
+| [OP_CHECKTEMPLATEVERIFY](#op_checktemplateverify) |   151 | [OP_VERIFY (0X69)](#op_verify-0x69) |   157 |
+| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   151 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   157 |
+| [OP_DEPTH (0X74)](#op_depth-0x74) |   151 | [OPCODES](#opcodes)            |   157 |
+| [OP_DROP (0X75)](#op_drop-0x75) |   151 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   158 |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   151 | [ORACLE](#oracle)              |   158 |
+| [OP_ELSE (0X67)](#op_else-0x67) |   151 | [ORDINALS](#ordinals)          |   158 |
+| [OP_ENDIF (0X68)](#op_endif-0x68) |   151 | [ORPHELIN](#orphelin)          |   158 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |   152 | [OSINT](#osint)                |     ? |
 | [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   152 | [OU EXCLUSIF](#ou-exclusif)    |   159 |
 | [OP_EVAL](#op_eval)            |   152 | [OUTBOUND CAPACITY](#outbound-capacity) |   159 |
 | [OP_FALSE (0X00)](#op_false-0x00) |   152 | [OUTPOINT](#outpoint)          |   159 |
 | [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   152 | [OUTPUT](#output)              |   159 |
 | [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   152 | [OUTPUT LINKING](#output-linking) |   160 |
 | [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   152 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   161 |
+| [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   152 |                                |       |
 | | | | |
 
 
@@ -544,9 +547,9 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [P2PK](#p2pk)                  |   163 | [PILE (STACK)](#pile-stack)    |   173 |
-| [P2PKH](#p2pkh)                |   163 | [PINNING ATTACK](#pinning-attack) |   173 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |   163 | [PIZZA DAY](#pizza-day)        |   173 |
+| [P2PK](#p2pk)                  |   163 | [PINNING ATTACK](#pinning-attack) |   173 |
+| [P2PKH](#p2pkh)                |   163 | [PIZZA DAY](#pizza-day)        |   173 |
+| [P2P TRANSPORT V2](#p2p-transport-v2) |   163 | [POINT D'ENTRÉE](#point-dentrée) |     ? |
 | [P2MS](#p2ms)                  |   163 | [POLICY (MINISCRIPT)](#policy-miniscript) |   173 |
 | [P2SH](#p2sh)                  |   164 | [POOL](#pool)                  |   173 |
 | [P2SH-P2WPKH](#p2sh-p2wpkh)    |   164 | [POOL DE MINAGE](#pool-de-minage) |   173 |
@@ -576,6 +579,7 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | [PHOENIX](#phoenix)            |   172 | [PURGE](#purge)                |   177 |
 | [PHOENIXD](#phoenixd)          |   172 | [PYBLOCK](#pyblock)            |   177 |
 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |   172 | [PYTHON](#python)              |   177 |
+| [PILE (STACK)](#pile-stack)    |   173 |                                |       |
 | | | | |
 
 
@@ -592,20 +596,20 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [RACE ATTACK](#race-attack)    |   181 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   184 |
-| [RACINE DE MERKLE](#racine-de-merkle) |   181 | [RÉUTILISATION D'ADRESSE INTERNE](#réutilisation-dadresse-interne) |   185 |
-| [RAW TRANSACTION](#raw-transaction) |   181 | [RGB](#rgb)                    |   185 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   181 | [RICOCHET](#ricochet)          |   185 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   181 | [RIPEMD160](#ripemd160)        |   185 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   182 | [ROUTAGE LIGHTNING](#routage-lightning) |   186 |
-| [REDEEMSCRIPT](#redeemscript)  |   182 | [ROUTING ATTACKS](#routing-attacks) |   186 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   182 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   186 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   182 | [RPOW](#rpow)                  |   186 |
-| [REGTEST](#regtest)            |   183 | [RSK](#rsk)                    |   186 |
-| [RENDEZ-VOUS ROUTING](#rendez-vous-routing) |   183 | [RSMPPS](#rsmpps)              |   186 |
-| [RÉORGANISATION](#réorganisation) |   183 | [RUST](#rust)                  |   187 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   184 | [RUST BITCOIN](#rust-bitcoin)  |   187 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   184 | [RUST-LIGHTNING](#rust-lightning) |   187 |
-| [RESYNCHRONISATION](#resynchronisation) |   184 |                                |       |
+| [RACINE DE MERKLE](#racine-de-merkle) |   181 | [RÉUTILISATION D'ADRESSE EXTERNE](#réutilisation-dadresse-externe) |     ? |
+| [RAW TRANSACTION](#raw-transaction) |   181 | [RÉUTILISATION D'ADRESSE INTERNE](#réutilisation-dadresse-interne) |   185 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   181 | [RGB](#rgb)                    |   185 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   181 | [RICOCHET](#ricochet)          |   185 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   182 | [RIPEMD160](#ripemd160)        |   185 |
+| [REDEEMSCRIPT](#redeemscript)  |   182 | [ROUTAGE LIGHTNING](#routage-lightning) |   186 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   182 | [ROUTING ATTACKS](#routing-attacks) |   186 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   182 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   186 |
+| [REGTEST](#regtest)            |   183 | [RPOW](#rpow)                  |   186 |
+| [RENDEZ-VOUS ROUTING](#rendez-vous-routing) |   183 | [RSK](#rsk)                    |   186 |
+| [RÉORGANISATION](#réorganisation) |   183 | [RSMPPS](#rsmpps)              |   186 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   184 | [RUST](#rust)                  |   187 |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   184 | [RUST BITCOIN](#rust-bitcoin)  |   187 |
+| [RESYNCHRONISATION](#resynchronisation) |   184 | [RUST-LIGHTNING](#rust-lightning) |   187 |
 | | | | |
 
 
@@ -659,19 +663,20 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   209 | [TPUB](#tpub)                  |   211 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   209 | [TRAMPOLINE ROUTING](#trampoline-routing) |   211 |
-| [TAPSCRIPT](#tapscript)        |   209 | [TRANSACTION (TX)](#transaction-tx) |   211 |
-| [TARO](#taro)                  |   209 | [TRANSACTION COINBASE](#transaction-coinbase) |   211 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   209 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   212 |
-| [TCP](#tcp)                    |   210 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   212 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   210 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   212 |
-| [TESTNET](#testnet)            |   210 | [TRANSACTION STANDARD](#transaction-standard) |   212 |
-| [TIDES](#tides)                |   210 | [TUMBLEBIT](#tumblebit)        |   212 |
-| [TIMEJACKING (ATTAQUE)](#timejacking-attaque) |   210 | [TURBO CHANNEL](#turbo-channel) |   212 |
-| [TIMELOCK](#timelock)          |   210 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   212 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   211 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   212 |
-| [TPRV](#tprv)                  |   211 | [TYPE DE DEVISE](#type-de-devise) |   213 |
+| [TAPROOT](#taproot)            |   209 | [TRAMPOLINE ROUTING](#trampoline-routing) |   211 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   209 | [TRANSACTION (TX)](#transaction-tx) |   211 |
+| [TAPSCRIPT](#tapscript)        |   209 | [TRANSACTION COINBASE](#transaction-coinbase) |   211 |
+| [TARO](#taro)                  |   209 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   212 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   209 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   212 |
+| [TCP](#tcp)                    |   210 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   212 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   210 | [TRANSACTION STANDARD](#transaction-standard) |   212 |
+| [TESTNET](#testnet)            |   210 | [TUMBLEBIT](#tumblebit)        |   212 |
+| [TIDES](#tides)                |   210 | [TURBO CHANNEL](#turbo-channel) |   212 |
+| [TIMEJACKING (ATTAQUE)](#timejacking-attaque) |   210 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   212 |
+| [TIMELOCK](#timelock)          |   210 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   212 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   211 | [TYPE DE DEVISE](#type-de-devise) |   213 |
+| [TPRV](#tprv)                  |   211 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |     ? |
+| [TPUB](#tpub)                  |   211 |                                |       |
 | | | | |
 
 
@@ -824,7 +829,7 @@ Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations
 
 ## ADRESSE DE RECEPTION
 
-Information utilisée pour recevoir des bitcoins. Une adresse est construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Les adresses SegWit sont composées des informations suivantes : 
+Information utilisée pour recevoir des bitcoins. Une adresse est généralement construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Par exemple, les adresses SegWit sont composées des informations suivantes : 
 \begin{itemize}
   \item Un HRP pour désigner « bitcoin » :
 \texttt{bc}
@@ -840,6 +845,8 @@ ou
   \item La charge utile : le condensat de la clé publique ;
   \item La somme de contrôle : un code BCH.
 \end{itemize}
+
+Mais une adresse de réception peut également représenter autre chose en fonction du modèle de script utilisé. Par exemple, les adresses P2SH sont construite à l'aide du hachage du script. Les adresses Taproot, elles, contiennent directement la clé publique tordue (tweaked).
 
 Une adresse de réception peut être représentée sous la forme d'une chaîne de caractères alphanumériques ou sous la forme d'un QR code. Chaque adresse peut être utilisée plusieurs fois, mais c'est une pratique très déconseillée. En effet, dans le but de maintenir un certain niveau de confidentialité, il est conseillé de n'utiliser chaque adresse Bitcoin qu'une seule fois. Il faut en générer une nouvelle pour tout paiement entrant vers son portefeuille. Une adresse est encodée en `Bech32` pour les adresses SegWit V0, en `Bech32m` pour les adresses SegWit V1, et en `Base58check` pour les adresses Legacy. D'un point de vue technique, une adresse ne permet pas réellement de recevoir des bitcoins, mais plutôt de bloquer des bitcoins à l'aide d'un script, en mettant des contraintes sur leur dépense.
 
@@ -877,12 +884,14 @@ Pratique qui regroupe toutes les méthodes permettant de tracer les flux de bitc
   \item Le repérage de caractéristiques connues ;
   \item La déduction d’hypothèses.
 \end{itemize}
+
 Un des objectifs de l’analyse de chaîne consiste à regrouper diverses activités sur Bitcoin en vue de déterminer l'unicité de l'utilisateur les ayant effectuées. Par la suite, il sera possible de tenter de rattacher ce faisceau d'activités à une identité réelle grâce à un point d'entrée. Il est primordial de comprendre que l'analyse de chaîne n'est pas une science exacte. Elle repose sur des heuristiques dérivées d'observations antérieures ou d’interprétations logiques. Ces règles permettent d'obtenir des résultats assez fiables, mais jamais d'une précision absolue. En d'autres termes, l'analyse de chaîne implique toujours une dimension de vraisemblabilité dans les conclusions émises. On pourra estimer avec plus ou moins de certitude que deux adresses appartiennent à une même entité, mais une certitude totale sera toujours hors de portée. Tout l’objectif de l'analyse de chaîne réside précisément dans l'agrégation de diverses heuristiques en vue de minimiser le risque d'erreur. Il s'agit en quelque sorte d'une accumulation de preuves qui nous permet de nous approcher davantage de la réalité. Ces fameuses heuristiques peuvent être regroupées en différentes catégories : 
 \begin{itemize}
   \item Les patterns de transaction (ou modèles de transaction) ;
   \item Les heuristiques internes à la transaction ;
   \item Les heuristiques externes à la transaction.
 \end{itemize}
+
 Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont : 
 \begin{itemize}
   \item la CIOH (Common Input Ownership Heuristic) ;
@@ -1136,7 +1145,38 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 ## BIP
 
-Sigle de « *Bitcoin Improvement Proposal* ». Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes. Inspiré du processus des Python Enhancement Proposals (PEP), le BIP vise à faciliter la communication et la collaboration entre les développeurs, les chercheurs, les utilisateurs et les parties prenantes de l'écosystème Bitcoin. Le processus BIP assure une approche structurée et transparente pour l'évaluation et l'adoption de nouvelles fonctionnalités, optimisations et mises à jour. Chaque BIP est un document détaillé qui décrit précisément les objectifs de l'amélioration proposée, la justification de sa mise en œuvre, les éventuels problèmes de compatibilité, les avantages et les inconvénients. Il décrit également les étapes techniques nécessaires pour réaliser l'amélioration. Les BIP peuvent être rédigés par n'importe qui. Ils doivent cependant être soumis à un examen approfondi et à l'approbation d'autres membres de la communauté Bitcoin.
+Acronyme de « *Bitcoin Improvement Proposal* ». Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes. Étant donné que Bitcoin ne possède pas d'entité centrale pour décider des mises à jour, les BIPs permettent à la communauté de suggérer, discuter et mettre en œuvre des améliorations de manière structurée et transparente. Chaque BIP détaille les objectifs de l'amélioration proposée, les justifications, les impacts potentiels sur la compatibilité, ainsi que les avantages et inconvénients. Les BIPs peuvent être rédigés par n'importe quel membre de la communauté, mais doivent être approuvés par d'autres développeurs et les éditeurs qui maintiennent la base de donnée sur le GitHub de Bitcoin Core : Bryan Bishop, Jon Atack, Luke Dashjr, Mark Erhardt (Murch), Olaoluwa Osuntokun et Ruben Somsen. Cependant, il est important de comprendre que le rôle de ces individus dans l'édition des BIPs ne signifie pas pour autant qu'ils contrôlent Bitcoin. Si quelqu'un propose une amélioration qui n'est pas acceptée dans le cadre formel des BIPs, il peut toujours la présenter directement à la communauté Bitcoin, voire créer un fork incluant sa modification. L'avantage du processus des BIPs réside dans sa formalité et sa centralisation, qui facilitent le débat pour éviter la division parmi les utilisateurs de Bitcoin, en cherchant à implémenter des mises à jour de manière consensuelle. À la fin, c'est bien le principe de majorité économique qui détermine les jeux de pouvoir au sein du protocole.
+
+Les BIPs sont classés en trois catégories principales :
+\begin{itemize}
+  \item Standards Track BIPs : Concernent les modifications qui affectent directement les implémentations de Bitcoin, comme les règles de validation des transactions et des blocs ;
+  \item Informational BIPs : Fournissent des informations ou des recommandations sans proposer de changements directs au protocole ;
+  \item Process BIPs : Décrivent les changements dans les procédures entourant Bitcoin, comme les processus de gouvernance.
+\end{itemize}
+
+Les BIPs Standards Track et informationnels sont également classifiés par « Layer » ou couche :
+\begin{itemize}
+  \item Consensus Layer : Les BIPs de cette couche concernent les règles de consensus de Bitcoin, telles que les modifications des règles de validation des blocs ou des transactions. Ces propositions peuvent être soit des soft forks (modifications rétrocompatibles) soit des hard forks (modifications non rétrocompatibles). Par exemple, les BIPs de SegWit et Taproot appartiennent à cette catégorie ;
+  \item Peer Services : Cette couche concerne le fonctionnement du réseau de nœuds Bitcoin, c’est-à-dire comment les nœuds se trouvent et communiquent entre eux sur Internet ;
+  \item API/RPC : Les BIPs de cette couche concernent les interfaces de programmation applicative (API) et les appels de procédure à distance (RPC) qui permettent aux logiciels Bitcoin d'interagir avec les nœuds ;
+  \item Applications Layer : Cette couche concerne les applications construites par-dessus Bitcoin. Les BIPs de cette catégorie vont typiquement traiter les modifications au niveau des standards des portefeuilles Bitcoin.
+\end{itemize}
+
+Le processus de soumission d'un BIP commence par la conceptualisation et la discussion de l'idée sur la liste de diffusion *Bitcoin-dev*. Si l'idée est prometteuse, l'auteur rédige un BIP en respectant un format spécifique et le soumet via une Pull Request sur le dépôt GitHub de Core. Les éditeurs examinent cette proposition pour vérifier si elle respecte bien tous les critères. Le BIP doit être techniquement réalisable, bénéfique pour le protocole, conforme au formatage requis, et en accord avec la philosophie de Bitcoin. Si le BIP répond à ces conditions, il est officiellement intégré au dépôt GitHub des BIPs. Il se verra ensuite attribuer un numéro. Ce numéro est généralement décidé par l'éditeur, souvent Luke Dashjr, et est attribué de manière logique : les BIPs traitant de sujets similaires reçoivent souvent des numéros consécutifs.
+
+Les BIPs passent ensuite par différents statuts au cours de leur cycle de vie. Le statut actuel est précisé dans l’entête de chaque BIP :
+\begin{itemize}
+  \item Brouillon (Draft) : La proposition est encore en phase de rédaction et de débat ;
+  \item Proposé (Proposed) : Le BIP est considéré comme complet et prêt pour être examiné par la communauté ;
+  \item Différé (Deferred) : Le BIP est mis en attente pour plus tard par le champion ou par un éditeur ;
+  \item Rejeté (Rejected) : Un BIP est classé comme rejeté s'il n'a montré aucune activité pendant 3 ans. Son auteur peut choisir de le reprendre ultérieurement, ce qui lui permettrait de retourner au statut de brouillon ;
+  \item Retiré (Withdrawn) : Le BIP a été retiré par son auteur ;
+  \item Final (Final) : Le BIP est accepté et largement implémenté sur Bitcoin ;
+  \item Actif (Active) : Pour les BIPs de processus uniquement, ce statut est attribué une fois qu'un certain consensus est atteint ;
+  \item Remplacé / Obsolète (Replaced / Obsolete) : Le BIP n’est plus applicable ou a été remplacé par une proposition plus récente qui le rend inutile.
+\end{itemize}
+
+![](../../dictionnaire/assets/25.png)
 
 > *BIP est l'acronyme anglais pour « Bitcoin Improvement Proposal ». En français, on peut le traduire par « Proposition d'amélioration de Bitcoin ». Toutefois, la plupart des textes français utilisent directement l'acronyme « BIP » comme un nom commun, parfois au féminin, parfois au masculin.*
 
@@ -2021,7 +2061,9 @@ Le facteur de difficulté, aussi connu sous le nom de cible de difficulté, est 
 
 ## CIOH
 
-Sigle de « *Common Input Ownership Heuristic* ». C'est une heuristique utilisée dans le domaine de l'analyse et du traçage des transactions sur Bitcoin qui suppose que toutes les entrées d'une transaction appartiennent à une même entité ou à un même utilisateur. Lorsque l'on observe les données publiques d'une transaction Bitcoin, et que l'on y repère plusieurs entrées (inputs), alors, s'il n'y a pas de paternes où d'autres informations qui viendraient infirmer cela, on peut estimer que toutes les entrées de cette transaction appartenaient à une seule et même personne (ou entité). Cette heuristique d'analyse on-chain a été découverte par Satoshi Nakamoto lui-même, qui en parle dans la partie 10 du White Paper :
+Sigle de « *Common Input Ownership Heuristic* ». C'est une heuristique utilisée dans le domaine de l'analyse et du traçage des transactions sur Bitcoin qui suppose que toutes les entrées d'une transaction appartiennent à une même entité ou à un même utilisateur. Lorsque l'on observe les données publiques d'une transaction Bitcoin, et que l'on y repère plusieurs entrées (inputs), alors, s'il n'y a pas de paternes où d'autres informations qui viendraient infirmer cela, on peut estimer que toutes les entrées de cette transaction appartenaient à une seule et même personne (ou entité). 
+
+Cette heuristique d'analyse on-chain a été découverte par Satoshi Nakamoto lui-même, qui en parle dans la partie 10 du White Paper :
 
 > « *Toutefois, la liaison est inévitable avec les transactions multi-entrées, qui révèlent nécessairement que leurs entrées étaient détenues par un même propriétaire. Le risque est que si le propriétaire d'une clef est révélé, les liaisons peuvent révéler d'autres transactions qui ont appartenu au même propriétaire.* » - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Consulté à l'adresse https://bitcoin.org/bitcoin.pdf.
 
@@ -2589,7 +2631,7 @@ Séparation temporaire de la blockchain résultant de la diffusion quasi simulta
 
 ## EMPREINTE DE PORTEFEUILLE
 
-Analyse
+Ensemble de caractéristiques distinctives observables dans les transactions effectuées par un même portefeuille Bitcoin. Ces caractéristiques peuvent inclure des similitudes dans l'utilisation des types de scripts, la réutilisation d'adresses, l'ordre des UTXOs, la place des outputs de change, la signalisation de RBF (Replace-by-Fee), le numéro de version, le champ `nSequence` et le champ `nLockTime`. Les empreintes de portefeuille sont exploitées par les analystes pour tracer les activités d'une entité particulière sur la blockchain en identifiant des patterns récurrents dans les transactions. Par exemple, un utilisateur qui envoie systématiquement son change vers des adresses P2TR (`bc1p…`) crée une empreinte caractéristique qui peut être utilisée pour suivre ses transactions futures. Comme le précise @LaurentMT dans le Space Kek #19 (un podcast francophone), l'utilité des empreintes de portefeuille dans l'analyse de chaîne s'accroît de manière significative avec le temps. En effet, le nombre croissant de types de scripts et le déploiement de plus en plus progressif de ces nouvelles fonctionnalités par les logiciels de portefeuille accentuent les différences. Il arrive même que l'on puisse identifier avec exactitude le logiciel employé par l'entité tracée. Il faut donc comprendre que l’étude de l’empreinte d'un portefeuille s'avère particulièrement pertinente pour les transactions récentes, davantage que pour celles initiées au début des années 2010.
 
 ## ENDIANNESS
 
@@ -2990,6 +3032,24 @@ Indicateur de la puissance de calcul du réseau, mesurée en hachages par second
 
 
 ## HEADERS FIRST SYNC
+
+
+## HEURISTIQUE D'ANALYSE
+
+Une heuristique d'analyse de chaîne sur Bitcoin est une famille de méthodes empiriques utilisées pour tracer les flux de bitcoins sur la blockchain en se basant sur des caractéristiques observées dans les transactions. Une heuristique est une approche pratique qui permet de résoudre des problèmes, souvent par des méthodes approximatives, mais qui représente une solution suffisamment bonne pour atteindre un objectif donné. Ces heuristiques permettent d'obtenir des résultats assez fiables, mais jamais d'une précision absolue. En d'autres termes, l'analyse de chaîne implique toujours une dimension de vraisemblabilité dans les conclusions émises. Par exemple, on pourra estimer avec plus ou moins de certitude que deux adresses appartiennent à une même entité, mais une certitude totale sera toujours hors de portée. Tout l’objectif de l'analyse de chaîne réside précisément dans l'agrégation de diverses heuristiques en vue de minimiser le risque d'erreur. Il s'agit en quelque sorte d'une accumulation de preuves qui nous permet de nous approcher davantage de la réalité. Dans ce cadre, on différencie les heuristiques internes les heuristiques externes.
+
+Les heuristiques internes se concentrent sur les caractéristiques spécifiques à l'intérieur d'une transaction individuelle. Elles incluent dans leur analyse des éléments tels que les montants des UTXOs, les scripts utilisés, les versions ou encore les locktimes. Par exemple, l'heuristique du paiement rond permet d'identifier une sortie de transaction comme étant vraisemblablement un paiement si son montant est un nombre rond. Ces heuristiques permettent souvent d'identifier le change (rendu de monnaie qui revient vers le même utilisateur) et donc de continuer le traçage d'un utilisateur.
+
+Les heuristiques externes, quant à elles, analysent les similitudes et les caractéristiques au-delà de la transaction en elle-même. Ils englobent tout l'environnement de la transaction. Par exemple, la réutilisation d'adresse sur plusieurs transaction est une heuristique externe. La CIOH en est également une.
+
+### Différence entre heuristiques et modèles de transaction
+
+Les modèles de transaction, ou patterns de transaction, diffèrent des heuristiques en ce qu'ils se focalisent sur la structure globale d'une transaction, comme le nombre d'UTXOs en input et en output. Par exemple, un modèle de transaction simple consiste en un ou plusieurs UTXOs en input et deux UTXOs en output, indiquant un paiement simple. Les heuristiques, par contre, se basent sur des détails spécifiques à l'intérieur ou à l'extérieur de la transaction pour tirer des conclusions probables, mais non certaines.
+
+En somme, les heuristiques d'analyse de chaîne sont des outils puissants pour déduire des informations probables sur les flux de bitcoins, malgré l'absence de certitude absolue. Elles permettent d'identifier et de tracer les activités sur la blockchain, mais leur efficacité repose sur l'accumulation de preuves et la minimisation des risques d'erreur.
+
+
+
 
 
 ## HEXADÉCIMAL
@@ -3422,6 +3482,12 @@ Licence de logiciel libre très permissive qui autorise les utilisateurs à copi
 ## MODÈLE DE SCRIPT
 
 Template permettant l'utilisation de scripts standards. Un modèle de script est essentiellement une petite liste d'OPcodes mis ensembles pour former une norme qui spécifie une manière d'établir des conditions de dépenses sur des bitcoins. Exemples de modèles de script : P2PK, P2PKH, P2WPKH, P2SH...
+
+## MODÈLE DE TRANSACTION
+
+Un pattern de transaction est simplement un modèle ou une structure globale de transaction typique, que l’on peut retrouver sur la blockchain, et dont on connaît l’interprétation vraisemblable qui nous sera utile dans le cadre d'une analyse de chaîne. Lorsque l’on étudie les patterns, on va s’attarder sur une seule transaction que l’on va analyser à un niveau élevé (contrairement aux heuristiques internes et externes d'analyse de chaîne). En d’autres termes, nous allons uniquement regarder le nombre d’UTXOs en inputs et le nombre d'UTXOs en outputs, sans nous attarder sur les détails plus spécifiques ou l'environnement de la transaction. À partir du modèle observé, nous pourrons interpréter la nature de la transaction. On va alors rechercher des caractéristiques sur sa structure et en déduire une interprétation vraisemblable.
+
+> *En anglais, on parle de « patterns .*
 
 ## M-OF-N
 
@@ -4050,6 +4116,12 @@ Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un n�
 
 >*Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de [**OBSOLÈTE**](#obsolète).*
 
+## OSINT
+
+Acronyme de « *Open Source Intelligence* ». L'OSINT désigne la collecte et l'analyse d'informations disponibles publiquement à partir de sources accessibles à tous. Ces sources peuvent inclure des sites web, des forums, des réseaux sociaux, des bases de données publiques, des publications académiques, des documents gouvernementaux, etc... L'objectif principal de l'OSINT est de transformer des données brutes en informations exploitables, en identifiant des tendances, des corrélations, et des pistes d'investigation. Dans le cadre de Bitcoin, l'OSINT peut être utilisée dans le but d'appuyer une analyse de chaîne pour tracer des fonds, notamment afin d'identifier un point d'entrée, c'est-à-dire un lien entre une activité onchain et une forme d'identité appartenant à une entité réelle. Par exemple, si vous publiez votre adresse de réception sur Twitter sous votre nom, un analyste pourrait la retrouver et l'associer à votre identité.
+
+![](../../dictionnaire/assets/28.png)
+
 ## OU EXCLUSIF
 
 Traduction française du terme « *exclusive or* » (XOR).
@@ -4266,14 +4338,19 @@ et commencent toujours par
 
 ## PAIEMENT ROND
 
-![](../../dictionnaire/assets/11.png)
+Heuristique interne d'analyse de chaîne sur Bitcoin qui permet d'emmètre une hypothèse sur la nature des sorties d'une transaction en se basant sur les montants ronds. De manière générale, lorsque l’on se retrouve face à un pattern de paiement simple (1 input et 2 outputs), si une des sorties dépense un montant rond, alors celle-ci représente le paiement. Par élimination, si une sortie représente le paiement, l’autre représente le change. On peut donc interpréter qu’il est vraisemblable que l’utilisateur en entrée soit toujours en possession de la sortie identifiée comme étant le change.
 
+Il convient de souligner que cette heuristique n'est pas toujours applicable, puisque la majorité des paiements s'effectuent encore en unités de compte fiduciaires. En effet, lorsqu'un commerçant en France accepte le bitcoin, en général, il n’affiche pas des prix stables en sats. Il optera plutôt pour une conversion entre le prix en euros et le montant en bitcoins à régler grâce à son POS (comme BTCPay Server). Il ne devrait donc pas y avoir de nombre rond en sortie de la transaction. Néanmoins, un analyste pourrait tenter de réaliser cette conversion en tenant compte du taux de change en vigueur lorsque la transaction a été diffusée sur le réseau. Si un jour, le bitcoin devient l’unité de compte préférée dans nos échanges, cette heuristique pourrait devenir encore plus utile pour les analyses.
+
+![](../../dictionnaire/assets/11.png)
 
 ## PAIEMENT SIMPLIFIÉ
 
-
+Pattern (ou modèle) de transaction utilisé en analyse de chaîne qui se caractérise par la consommation d’un ou plusieurs UTXOs en inputs et la production de 2 UTXOs en outputs. Ce modèle va donc ressembler à cela :
 
 ![](../../dictionnaire/assets/5.png)
+
+Ce modèle du paiement simple indique que nous sommes vraisemblablement en présence d’une transaction d’envoi ou de paiement. L’utilisateur a consommé son propre UTXO en inputs pour satisfaire en outputs un UTXO de paiement et un UTXO de change (rendu de monnaie qui revient vers le même utilisateur). Nous savons donc que l’utilisateur observé n’est vraisemblablement plus en possession d’un des deux UTXOs en outputs (celui du paiement), mais qu’il est toujours en possession de l’autre UTXO (celui de change).
 
 ## PAIR-À-PAIR (P2P)
 
@@ -4381,6 +4458,12 @@ Une phrase de récupération, également parfois nommée comme mnémonique, seed
 
 ## PIZZA DAY
 
+
+## POINT D'ENTRÉE
+
+Information permettant de lier une activité onchain (une adresse, une transaction, un cluster...) à une forme d'identité appartenant à un utilisateur ou à une entité. Par exemple, si vous publiez votre adresse de réception sur Twitter sous votre nom, un analyste pourrait la retrouver et l'associer à votre identité. Dans ce cas, le tweet constituerait un point d'entrée pour une analyse de chaîne. Pour identifier un point d'entrée, les analystes peuvent utiliser l'OSINT, mais la méthode la plus répandue pour associer une activité onchain à une identité reste le KYC.
+
+![](../../dictionnaire/assets/28.png)
 
 ## POLICY (MINISCRIPT)
 
@@ -4617,16 +4700,25 @@ Synonyme plus juste de « réorganisation » bien que peu employé.
 
 ## RÉUTILISATION D'ADRESSE
 
-La réutilisation d'adresse se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXO, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut raisonnablement imaginer que tous les UTXO associés appartiennent à une même entité. La réutilisation d'adresse pause donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXO, ainsi que de perpétuer un traçage de fonds on-chain. Satoshi Nakamoto évoquait déjà ce problème dans son White Paper :
+La réutilisation d'adresse se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXOs, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut raisonnablement imaginer que tous les UTXO associés appartiennent à une même entité. La réutilisation d'adresse pause donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXO, ainsi que de perpétuer un traçage de fonds on-chain. Satoshi Nakamoto évoquait déjà ce problème dans son White Paper :
 
 > « *En guise de pare-feu additionnel, une nouvelle paire de clés pourrait être utilisée pour chaque transaction afin de les garder non liées à un propriétaire commun.* » - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Consulté à l'adresse https://bitcoin.org/bitcoin.pdf.
 
 Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utiliser chaque adresse de réception qu'une seule fois. À chaque nouveau paiement, il convient de générer une nouvelle adresse. Pour les outputs de change, il faut également utiliser une adresse vierge. Heureusement, grâce aux portefeuille déterministes et hiérarchiques, il est devenu très facile d'utiliser une multitudes d'adresses. Toutes les paires de clés associées à un portefeuille peuvent être facilement régénérées à partir de la graine. C'est d'ailleurs pour cette raison que les logiciels de portefeuille réputés vous génèrent toujours une nouvelle adresse différente lorsque vous cliquez sur le bouton « Recevoir ».
 
+![](../../dictionnaire/assets/10.png)
+
 > *En anglais, on dit « Address Reuse ».*
+
+## RÉUTILISATION D'ADRESSE EXTERNE
+
+On dit d'une réutilisation d'adresse qu'elle est "externe" lorsqu'elle survient sur plusieurs transactions différentes. Dans cette configuration, la réutilisation d'adresse externe est une heuristique d'analyse de chaîne qui permet d'émettre une hypothèse solide selon laquelle toutes ces adresses appartiennent à une même entité.
+
+![](../../dictionnaire/assets/27.png)
 
 ## RÉUTILISATION D'ADRESSE INTERNE
 
+On dit d'une réutilisation d'adresse qu'elle est "interne" lorsqu'elle survient au sein d'une même transaction en input et en output. Dans cette configuration, la réutilisation d'adresse interne est une heuristique d'analyse de chaîne qui permet d'emmètre une hypothèse solide sur le change de la transaction. En effet, s'il y a deux outputs et que l'un d'eux utilise la même adresse de réception qu'en input, alors il est vraisemblable que le second output quitte la possession de l'utilisateur initial. L'output avec l'adresse réutilisée représente vraisemblablement le change.
 
 ![](../../dictionnaire/assets/10.png)
 
@@ -5185,6 +5277,9 @@ La transaction coinbase est une transaction spéciale et unique incluse dans cha
 
 ## TRANSACTION COLLABORATIVE
 
+Transaction Bitcoin qui implique plusieurs entités différentes en input de la transaction. Il s'agit donc également d'un modèle de transaction qui peut être utilisé en analyse de chaîne. L'exemple typique d'une transaction collaborative est le coinjoin, où plusieurs utilisateurs regroupent des montants équivalents en inputs pour récupérer l'intégralité de la somme (moins les frais de transaction) dans des outputs de même montant, afin d'empêcher le traçage des pièces.
+
+> *Pour plus d'informations, voir la définition de **[COINJOIN](#coinjoin)**.*
 
 ## TRANSACTION D'ENGAGEMENT
 
@@ -5241,6 +5336,14 @@ Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type d
 ![](../../dictionnaire/assets/21.png)
 
 > *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](#chemin-de-dérivation).*
+
+## TWEAK (CLÉ PUBLIQUE)
+
+Dans le domaine de la cryptographie, « tweaker » une clé publique consiste à modifier cette clé en utilisant une valeur additive appelée le « tweak » de telle sorte qu'elle reste utilisable avec la connaissance de la clé privée d'origine et du tweak. Techniquement, un tweak est une valeur scalaire qui est ajoutée à la clé publique initiale. Si `P` est la clé publique et `t` est le tweak, la clé publique tweaked devient `P' = P + tG`, où G est le générateur de la courbe elliptique utilisée. Cette opération permet d'obtenir une nouvelle clé publique dérivée de la clé originale tout en conservant certaines propriétés cryptographiques permettant de l'utiliser. Par exemple, on utilise cette méthode pour les adresses Taproot (P2TR) afin de pouvoir dépenser soit en présentant une signature Schnorr de façon traditionnelle, soit en remplissant l'une des conditions énoncées dans un arbre de Merkle, également appelé « MAST ».
+
+![](../../dictionnaire/assets/26.png)
+
+
 
 
 \newpage
