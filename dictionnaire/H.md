@@ -35,9 +35,6 @@ Système de preuve de travail conçu par Adam Back en 1997, principalement pour 
 
 Le principe de HashCash se retrouve également au sein du protocole, où il est utilisé comme mécanisme de protection face aux attaques Sybil.
 
-## HASHLOCKS
-
-
 ## HASHRATE
 
 Indicateur de la puissance de calcul du réseau, mesurée en hachages par seconde (H/s). Il indique la capacité des mineurs à exécuter des opérations de hachage dans le cadre de la preuve de travail. Un hashrate élevé signifie une plus grande sécurité de l'historique économique de Bitcoin et une plus grande résistance aux attaques, car il faudrait une quantité substantielle de puissance de calcul pour compromettre le réseau. Le hashrate est également indicatif de la concurrence entre les mineurs : plus le hashrate est élevé, plus la difficulté de minage est grande, ce qui influence la récompense et donc la rentabilité des mineurs. C'est donc un indicateur clé de la santé et de la sécurité du système Bitcoin. De la même manière que le hashrate sert à mesure le taux de hachage global du réseau Bitcoin, il peut également être utilisé pour mesurer le taux de hachage d'une machine, d'une ferme de minage ou encore d'une pool de minage.
@@ -53,9 +50,6 @@ Désigne le numéro de séquence d'un bloc particulier par rapport au premier bl
 Se dit d'un portefeuille Bitcoin qui utilise une information unique (la graine ou « seed » en anglais) pour générer une multitude de paires de clés publiques et privées de manière séquentielle et reproductible. Cette manière de gérer des clés est définie par le standard BIP32. L'avantage principal des portefeuilles HD est qu'ils permettent aux utilisateurs d'utiliser une multitudes de paires de clés différentes, notamment afin d'éviter la réutilisation d'adresse, tout en pouvant toutes les regénérer depuis une information unique. On dit de cette structure qu'elle est hiérarchique, car elle permet de créer une organisation en arborescence de multiples clés et adresses à partir d'une seule graine. Et elle est déterministe dans le sens où chaque graine génère toujours la même séquence de clés dans n'importe quel portefeuille conforme à ce système.
 
 > *Pour plus d'informations, voir les définitions de **[BIP32](./B.md#bip32)** et [**BIP44**](./B.md#bip44).*
-
-## HEADERS FIRST SYNC
-
 
 ## HEURISTIQUE D'ANALYSE
 
@@ -89,9 +83,6 @@ HRP, pour « Human Readable Part » (partie lisible par l'homme), est un composa
 `bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwfqx5`
 
 Dans cette adresse, le `bc` initial est le HRP. Ce préfixe permet d'identifier en un coup d'œil que cette suite de caractères que l'on nous présente est une adresse Bitcoin et pas autre chose.
-
-## HTLC
-
 
 ## HWI
 

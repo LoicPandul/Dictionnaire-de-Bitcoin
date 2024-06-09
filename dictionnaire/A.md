@@ -224,9 +224,3 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 > *Cette attaque est également nommée « Attaque Goldfinger ».*
 
-## ATTAQUE PAR REJEU
-
-
-
-
-> *En anglais, on traduit cette attaque par « Replay Attack ».*

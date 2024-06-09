@@ -112,6 +112,3 @@ Pratique qui consiste à attribuer une annotation ou une étiquette à un UTXO s
 ## EXPLORATEUR DE BLOC
 
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser aisément un bloc, une transaction ou une adresse spécifiques.
-
-## EXTRA-NONCE
-

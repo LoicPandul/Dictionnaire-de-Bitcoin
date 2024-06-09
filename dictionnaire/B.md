@@ -8,7 +8,7 @@ Nom du fichier utilisé par le logiciel Bitcoin Core pour enregistrer les adress
 
 ## BARE-MULTISIG
 
-Script de type P2MS. 
+Script de type P2MS.
 
 > *Pour plus d'informations, voir la définition de **[P2MS](./P.md#p2ms)**.*
 
@@ -66,9 +66,6 @@ Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, dimi
 
 Système de gestion de base de données embarquable avec une architecture de stockage clé-valeur. Il a été utilisé dans les premières versions de Bitcoin et a été remplacé par LevelDB en 2012.
 
-## BGP HIJACKING
-
-
 ## BIG-ENDIAN
 
 Format de stockage de données dans les systèmes informatiques où les octets les plus significatifs (les « gros bouts ») sont placés en premier dans l'ordre des adresses. Cela signifie que dans une séquence avec plusieurs octets, l'octet ayant le plus grand poids (par exemple, les chiffres les plus à gauche en hexadécimale) est stocké en premier.
@@ -114,6 +111,7 @@ Document qui définit le processus d'élaboration et de mise en œuvre des amél
 * Standards Track : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;
 * Informational : ceux qui offrent des informations générales mais n'impactent pas directement le protocole ; 
 * Process : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.
+
 Ce cadre systématise le développement de Bitcoin, afin d'assurer une approche coordonnée et transparente de ses évolutions. La méthodologie du BIP1 sera par la suite remplacée par celle du BIP2.
 
 ## BIP2
@@ -372,7 +370,6 @@ Propose un format standardisé pour signer des messages avec des clés privées 
 Introduit le concept de témoin séparé (*Segregated Witness*) qui donnera son nom au soft fork SegWit. Le BIP141 introduit dans le protocole Bitcoin une modification majeure visant à résoudre le problème de malléabilité des transactions. SegWit sépare les témoins (données de signatures) du reste des données de transaction. Cette séparation est réalisée en insérant les témoins dans une structure de données distincte, engagée dans un nouvel arbre de Merkle, qui est lui-même référencé dans le bloc via la transaction coinbase, ce qui rend SegWit compatible avec les anciennes versions du protocole.
 
 > *Pour plus d'informations, voir la définition de [**SEGWIT**](./S.md#segwit).*
-
 
 ## BIP143
 
@@ -721,13 +718,8 @@ Symbole boursier ou monétaire (ticker) utilisé pour représenter une unité de
 
 Processeur de paiement open-source qui permet aux commerçants et aux utilisateurs d'accepter des paiements en bitcoins sans dépendre d'un tiers pour le traitement des transactions. Lancé en 2017, BTCPay Server offre une solution d'intégration de paiements en cryptomonnaies pour les sites e-commerce, avec des fonctionnalités avancées comme le support de hardware wallets, des outils de facturation et de comptabilité, ainsi que la compatibilité avec le Lightning Network. Son développement a été initié par Nicolas Dorier, en réaction aux actions de Bitpay qui, selon lui, avaient induit en erreur ses utilisateurs en les poussant vers l'adoption de SegWit2x, considéré à tort comme le "vrai" bitcoin. Cette opposition s'est cristallisée dans un tweet désormais célèbre de Nicolas Dorier en août 2017 : « _This is lies, my trust in you is broken, I will make you obsolete_ ».
 
-## BTC SUITE
-
-
 ## BULL MARKET
 
 Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, monte par rapport à une monnaie fiat, typiquement le dollar américain. Depuis son introduction en 2009, le cycle des bull markets du BTC semble influencé par les halvings, des événements programmés qui réduisent de moitié la récompense des mineurs et qui interviennent approximativement tous les quatre ans.
 
 > *La traduction française de « bull market » est « marché haussier ».*
-
-## BYZANTINE FAULT TOLERANCE (BFT)
