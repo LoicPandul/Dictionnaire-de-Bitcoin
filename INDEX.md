@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 809 `**
+**Nombre total de définitions : ` 811 `**
 
 ### A
 
@@ -48,6 +48,7 @@
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
 - [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
 - [BCH CODES](./dictionnaire/B.md#bch-codes)
+- [BCOIN](./dictionnaire/B.md#bcoin)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
@@ -174,6 +175,7 @@
 - [BRC-20](./dictionnaire/B.md#brc-20)
 - [BTC](./dictionnaire/B.md#btc)
 - [BTCPAY SERVER](./dictionnaire/B.md#btcpay-server)
+- [BTC SUITE](./dictionnaire/B.md#btc-suite)
 - [BULL MARKET](./dictionnaire/B.md#bull-market)
 - [BYZANTINE FAULT TOLERANCE (BFT)](./dictionnaire/B.md#byzantine-fault-tolerance-bft)
 
