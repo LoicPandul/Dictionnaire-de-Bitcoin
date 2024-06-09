@@ -82,6 +82,7 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 ## BINAIRE
 
+Système de numération en base 2, qui utilise le `0` et le `1` pour représenter l'information. Chaque chiffre dans ce système est appelé un bit, qui est l'abréviation de « binary digit ». Dans le contexte informatique, le binaire est la forme de représentation des données en mémoire. Les ordinateurs utilisent le binaire pour traiter toutes sortes d'informations, car il correspond aux deux états possibles d'un circuit électronique : éteint ou allumé.
 
 ## BIP
 
@@ -509,6 +510,7 @@ Introduit les fonctions de descriptors pour Taproot. Il définit les fonctions `
 
 ## BIRTH DATE (WALLET)
 
+Fait référence à la date à laquelle un portefeuille a été créé. Cette information est importante lors de la restauration d'un portefeuille, car elle permet au logiciel du portefeuille de savoir à partir de quel bloc il doit commencer à chercher les transactions associées à ce portefeuille. En connaissant la date de naissance, le logiciel peut efficacement synchroniser et récupérer l'historique des transactions sans avoir à analyser l'ensemble de la blockchain depuis le tout premier bloc.
 
 ## BIT
 
