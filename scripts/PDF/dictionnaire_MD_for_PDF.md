@@ -595,8 +595,8 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [RACE ATTACK](#race-attack)    |   186 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   189 |
-| [RACINE DE MERKLE](#racine-de-merkle) |   186 | [RÉUTILISATION D'ADRESSE EXTERNE](#réutilisation-dadresse-externe) |   190 |
-| [RAW TRANSACTION](#raw-transaction) |   186 | [RÉUTILISATION D'ADRESSE INTERNE](#réutilisation-dadresse-interne) |   191 |
+| [RACINE DE MERKLE](#racine-de-merkle) |   186 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |     ? |
+| [RAW TRANSACTION](#raw-transaction) |   186 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |     ? |
 | [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   186 | [RGB](#rgb)                    |   191 |
 | [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   186 | [RICOCHET](#ricochet)          |   191 |
 | [RÉCURSIF (COVENANT)](#récursif-covenant) |   187 | [RIPEMD160](#ripemd160)        |   192 |
@@ -4709,13 +4709,13 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 > *En anglais, on dit « Address Reuse ».*
 
-## RÉUTILISATION D'ADRESSE EXTERNE
+## RÉUTILISATION D'ADRESSE (EXT)
 
 On dit d'une réutilisation d'adresse qu'elle est "externe" lorsqu'elle survient sur plusieurs transactions différentes. Dans cette configuration, la réutilisation d'adresse externe est une heuristique d'analyse de chaîne qui permet d'émettre une hypothèse solide selon laquelle toutes ces adresses appartiennent à une même entité.
 
 ![](../../dictionnaire/assets/27.png)
 
-## RÉUTILISATION D'ADRESSE INTERNE
+## RÉUTILISATION D'ADRESSE (INT)
 
 On dit d'une réutilisation d'adresse qu'elle est "interne" lorsqu'elle survient au sein d'une même transaction en input et en output. Dans cette configuration, la réutilisation d'adresse interne est une heuristique d'analyse de chaîne qui permet d'emmètre une hypothèse solide sur le change de la transaction. En effet, s'il y a deux outputs et que l'un d'eux utilise la même adresse de réception qu'en input, alors il est vraisemblable que le second output quitte la possession de l'utilisateur initial. L'output avec l'adresse réutilisée représente vraisemblablement le change.
 
