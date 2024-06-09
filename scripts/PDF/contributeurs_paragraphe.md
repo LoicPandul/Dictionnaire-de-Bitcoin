@@ -10,7 +10,7 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
 * 200KEKS (https://twitter.com/200KEKS) ;
 * Fanis Michalakis (https://twitter.com/FanisMichalakis) ;
 * AcidBunny (https://twitter.com/acidbunny21) ;
-* Sosthène (https://twitter.com/Sosthene\_\_\_)
+* Sosthène (https://twitter.com/Sosthene\_\_\_) ;
 * Théo Pantamis (https://twitter.com/TheoPantamis) ;
 * Louferlou (https://twitter.com/Louferlou) ;
 * JohnOnChain (https://twitter.com/JohnOnChain) ;

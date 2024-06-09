@@ -4,4 +4,3 @@ On dit d'une réutilisation d'adresse qu'elle est "interne" lorsqu'elle survient
 
 ![](../../dictionnaire/assets/10.png)
 
-
