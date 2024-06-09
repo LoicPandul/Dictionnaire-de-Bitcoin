@@ -140,6 +140,12 @@ Sigle de « *Reusable Proofs Of Work* ». C'est un système de monnaie électron
 
 Sigle de « *Recent Shared Maximum Pay Per Share* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. RSMPPS est similaire à SMPPS, mais avec une priorité accordée aux mineurs ayant contribué récemment. Cette méthode vise à récompenser les contributions actuelles en augmentant la valeur des parts soumises dans les tours de minage les plus récents, favorisant ainsi les mineurs qui restent actifs.
 
+## RUNES
+
+Protocole développé par la même équipe que les Ordinals qui permet l'utilisation de transactions Bitcoin pour graver, frapper et transférer des actifs numériques fongibles autres que le BTC. Contrairement aux inscriptions Ordinals où chaque unité est unique, chaque rune est identique aux autres et donc interchangeable, ce qui permet de créer des cryptomonnaies différentes du BTC sur Bitcoin. Les messages du protocole Rune, appelés runestones, sont stockés dans des `OP_RETURN`.
+
+> *Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](./O.md#ordinals-theory)**, **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
+
 ## RUST
 
 Langage de programmation moderne axé sur la sécurité et la performance. Conçu pour éviter les erreurs courantes de programmation, Rust est utilisé dans les systèmes embarqués, les applications Web, et pour le développement de logiciels nécessitant de hautes performances et une grande fiabilité. Ce langage est de plus en plus populaire dans l'environnement de Bitcoin.

@@ -439,6 +439,12 @@ Source d'informations tierce qui fournit des données du monde réel pouvant êt
 
 > *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
 
+## ORDINAL NUMBER
+
+Dans le cadre du protocole Ordinals, c'est un identifiant unique attribué à chaque sat en fonction de son ordre de minage dans un bloc. Ces numéros permettent de rendre non fongibles ces sats selon le protocole Ordinals, et donc de suivre et de transférer ces sats spécifiques.
+
+> *En français, on peut traduire ce terme par « Nombre Ordinal ». Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](./O.md#ordinals-theory)**, **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
+
 ## ORDINALS THEORY
 
 Protocole externe à Bitcoin qui attribue des numéros de série aux sats (la plus petite unité de bitcoin), qui permettent de les tracer de manière individuelle et de les transférer via des transactions Bitcoin. Selon la théorie des Ordinals, chaque sat est numéroté selon l'ordre dans lequel il a été miné et est transféré de manière FIFO (*First-In-First-Out*). L'objectif de cette théorie est de rendre des sats non fongibles selon leur interprétation au sein du protocole Ordinals, afin de leur associer des informations externes comme des images (NFT) que l'on appelle des "inscriptions".

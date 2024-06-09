@@ -234,7 +234,6 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 > *Cette attaque est également nommée « Attaque Goldfinger ».*
 
-
 ## ATTAQUE PAR REJEU
 
 
@@ -258,7 +257,7 @@ Script de type P2MS.
 
 ## BASE (ARITHMETIQUE)
 
-Une base est un système de numération positionnel qui utilise un nombre fixe de caractères pour représenter tous les nombres possibles. La base détermine le nombre de symboles distincts disponibles pour représenter les chiffres dans ce système. Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10, également appelée système décimal. Elle utilise dix symboles distincts `(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)` pour représenter tous les nombres. D'autres systèmes de numération couramment utilisés dans les domaines informatique et mathématique incluent le système binaire (base 2), avec deux symboles `(0, 1)`, et le système hexadécimal (base 16), avec seize symboles `(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)`. Dans le cadre de Bitcoin, vous rencontrerez parfois des encodages en base 58 ou en base 32 adaptée (nommée `Bech32`).
+Une base est un système de numération qui utilise un nombre fixe de caractères pour représenter tous les nombres possibles. La base détermine le nombre de symboles distincts disponibles pour représenter les chiffres dans ce système. Par exemple, le système le plus connu dans nos vies quotidiennes est la base 10, également appelée système décimal. Elle utilise dix symboles distincts `(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)` pour représenter tous les nombres. D'autres systèmes de numération couramment utilisés dans les domaines informatique et mathématique incluent le système binaire (base 2), avec deux symboles `(0, 1)`, et le système hexadécimal (base 16), avec seize symboles `(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)`. Dans le cadre de Bitcoin, vous rencontrerez parfois des encodages en base 58 ou en base 32 adaptée (nommée `Bech32`).
 
 ## BASE58CHECK
 
@@ -1845,7 +1844,9 @@ Langage de programmation développé par Google, connu pour sa simplicité et so
 
 ## GOLDFINGER (ATTAQUE)
 
-Voir la définition de **ATTAQUE DES 51%**.
+Autre nom donné à une attaque des 51%. 
+
+> *Pour plus d'informations, voir la définition de **[ATTAQUE DES 51%](#attaque-des-51-pourcents)**.*
 
 ## GOSSIP
 
@@ -1867,9 +1868,15 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 ## GREEN ADDRESS
 
+Ancien logiciel de portefeuille Bitcoin racheté en juillet 2016 par Blockstream pour créer le logiciel actuel Green Wallet.
+
+## GREEN ADDRESSES
+
+Vielle proposition d'adresse Bitcoin dont les transactions qui y sont envoyées sont pré-approuvées par un tiers de confiance. Ce concept permet aux parties recevant des fonds via cette adresse de les considérer comme immédiatement fiables, sans attendre qu'elle soit incluse dans un bloc. Cela repose sur la confiance accordée au service qui contrôle la green address, car il garantit que les fonds envoyés n'ont pas été et ne seront pas double dépensés. Ce type de service était autrefois utilisé pour accélérer les transactions, mais il n'est plus utilisé de nos jours.
 
 ## GREEN WALLET
 
+Logiciel de portefeuille Bitcoin disponible sur PC, Android et IOS développé par Blockstream depuis l'acquisition du logiciel Green Address en 2016. Il intègre plusieurs fonctionnalités comme une protection multisignaturse avec une authentification à deux facteurs. Il est également compatible avec la plupart des hardware wallets. C'est un logiciel simple à prendre en main qui peut être utilisé par des débutants.
 
 ## GRIEFING ATTACK
 
@@ -1907,9 +1914,13 @@ Un hardware wallet, ou portefeuille matériel, est un dispositif électronique d
 
 ## HASH160
 
+Fonction cryptographique utilisée sur Bitcoin notamment pour générer des adresses de réception Legacy et SegWit v0. Elle combine deux fonctions de hachage qui s'exécute successivement sur l'input : d'abord SHA256, puis RIPEMD160. La sortie de cette fonction est donc de 160 bits.
+$$\text{HASH-160}(x) = \text{RIPEMD-160}(\text{SHA-256}(x))$$
 
 ## HASH256
 
+Fonction cryptographique utilisée pour diverses applications sur Bitcoin. Elle consiste en l'application double de la fonction SHA256 sur les données en entrée. Le message est passé une première fois dans SHA256, et le résultat de cette opération est utilisé comme entrée pour passer une seconde fois dans SHA256. La sortie de cette fonction est donc de 256 bits.
+$$\text{HASH-256}(x) = \text{SHA-256}(\text{SHA-256}(x))$$
 
 ## HASHCASH
 
@@ -1931,9 +1942,13 @@ Indicateur de la puissance de calcul du réseau, mesurée en hachages par second
 
 ## HAUTEUR DE BLOC
 
+Désigne le numéro de séquence d'un bloc particulier par rapport au premier bloc, connu sous le nom de « bloc de genèse », qui est indexé à la hauteur zéro. Cet indicateur nous donne le nombre de blocs qui précèdent le bloc étudié. Par exemple, si un bloc est à la hauteur 650 000, cela signifie qu'il y a 650 000 blocs qui le précèdent. La hauteur de bloc est souvent utilisée pour identifier un bloc spécifique au sein de la blockchain.
 
 ## HD (HIERARCHICAL-DETERMINISTIC)
 
+Se dit d'un portefeuille Bitcoin qui utilise une information unique (la graine ou « seed » en anglais) pour générer une multitude de paires de clés publiques et privées de manière séquentielle et reproductible. Cette manière de gérer des clés est définie par le standard BIP32. L'avantage principal des portefeuilles HD est qu'ils permettent aux utilisateurs d'utiliser une multitudes de paires de clés différentes, notamment afin d'éviter la réutilisation d'adresse, tout en pouvant toutes les regénérer depuis une information unique. On dit de cette structure qu'elle est hiérarchique, car elle permet de créer une organisation en arborescence de multiples clés et adresses à partir d'une seule graine. Et elle est déterministe dans le sens où chaque graine génère toujours la même séquence de clés dans n'importe quel portefeuille conforme à ce système.
+
+> *Pour plus d'informations, voir les définitions de **[BIP32](#bip32)** et [**BIP44**](#bip44).*
 
 ## HEADERS FIRST SYNC
 
@@ -1948,6 +1963,7 @@ Les heuristiques externes, quant à elles, analysent les similitudes et les cara
 
 ## HEXADÉCIMAL
 
+Système de numération en base 16, qui utilise donc 16 symboles distincts pour représenter les nombres. Les 10 premiers symboles sont les chiffres de 0 à 9, identiques à ceux du système décimal (base 10), et les six symboles suivants sont représentés par les lettres A à F. Ainsi, A représente le nombre 10, B représente 11, jusqu'à F qui représente 15. Ce système est particulièrement utilisé en informatique, car il offre une représentation plus concise des nombres binaires (base 2), et chaque chiffre hexadécimal représente exactement 4 bits, ce qui simplifie les conversions. On retrouve très souvent ce système de numération pour représenter les informations sur Bitcoin.
 
 ## HMAC-SHA512
 
@@ -1955,6 +1971,7 @@ Les heuristiques externes, quant à elles, analysent les similitudes et les cara
 
 ## HODL
 
+Terme populaire dans la communauté Bitcoin qui désigne le fait de conserver ses bitcoins sur le long terme, malgré la volatilité des marchés, et de ne pas les vendre. Le terme est né d'une faute de frappe dans [un message posté en 2013 sur le forum Bitcoin Talk](https://bitcointalk.org/index.php?topic=375643.msg4022997#msg4022997) par l'utilisateur *GameKyuubi* qui semblait être en état d'ébriété, dans lequel il écrit « I AM HODLING » au lieu de « I AM HOLDING », ce qui signifie « garder » en anglais. Ce mot est rapidement devenu un mème et un slogan.
 
 ## HORODATAGE (TIMESTAMP)
 
@@ -1964,6 +1981,10 @@ L'horodatage, ou « timestamp » en anglais, est un mécanisme qui consiste à a
 
 ## HRP (HUMAN READABLE PART)
 
+HRP, pour « Human Readable Part » (partie lisible par l'homme), est un composant des adresses de réception bech32 et bech32m (SegWit v0 et SegWit v1). Le HRP fait référence à la portion de l'adresse qui est spécifiquement formatée pour être facilement lue et interprétée par les humains. Prenons l'exemple d'une adresse Bitcoin bech32 : 
+`bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwfqx5`
+
+Dans cette adresse, le `bc` initial est le HRP. Ce préfixe permet d'identifier en un coup d'œil que cette suite de caractères que l'on nous présente est une adresse Bitcoin et pas autre chose.
 
 ## HTLC
 
@@ -2890,6 +2911,12 @@ Source d'informations tierce qui fournit des données du monde réel pouvant êt
 
 > *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](#dlc-discreet-log-contract).*
 
+## ORDINAL NUMBER
+
+Dans le cadre du protocole Ordinals, c'est un identifiant unique attribué à chaque sat en fonction de son ordre de minage dans un bloc. Ces numéros permettent de rendre non fongibles ces sats selon le protocole Ordinals, et donc de suivre et de transférer ces sats spécifiques.
+
+> *En français, on peut traduire ce terme par « Nombre Ordinal ». Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](#ordinals-theory)**, **[INSCRIPTIONS](#inscriptions)** et de **[DIGITAL ARTIFACTS](#digital-artifacts)**.*
+
 ## ORDINALS THEORY
 
 Protocole externe à Bitcoin qui attribue des numéros de série aux sats (la plus petite unité de bitcoin), qui permettent de les tracer de manière individuelle et de les transférer via des transactions Bitcoin. Selon la théorie des Ordinals, chaque sat est numéroté selon l'ordre dans lequel il a été miné et est transféré de manière FIFO (*First-In-First-Out*). L'objectif de cette théorie est de rendre des sats non fongibles selon leur interprétation au sein du protocole Ordinals, afin de leur associer des informations externes comme des images (NFT) que l'on appelle des "inscriptions".
@@ -3427,6 +3454,12 @@ Sigle de « *Reusable Proofs Of Work* ». C'est un système de monnaie électron
 ## RSMPPS
 
 Sigle de « *Recent Shared Maximum Pay Per Share* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. RSMPPS est similaire à SMPPS, mais avec une priorité accordée aux mineurs ayant contribué récemment. Cette méthode vise à récompenser les contributions actuelles en augmentant la valeur des parts soumises dans les tours de minage les plus récents, favorisant ainsi les mineurs qui restent actifs.
+
+## RUNES
+
+Protocole développé par la même équipe que les Ordinals qui permet l'utilisation de transactions Bitcoin pour graver, frapper et transférer des actifs numériques fongibles autres que le BTC. Contrairement aux inscriptions Ordinals où chaque unité est unique, chaque rune est identique aux autres et donc interchangeable, ce qui permet de créer des cryptomonnaies différentes du BTC sur Bitcoin. Les messages du protocole Rune, appelés runestones, sont stockés dans des `OP_RETURN`.
+
+> *Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](#ordinals-theory)**, **[INSCRIPTIONS](#inscriptions)** et de **[DIGITAL ARTIFACTS](#digital-artifacts)**.*
 
 ## RUST
 

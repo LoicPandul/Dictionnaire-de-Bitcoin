@@ -40,7 +40,9 @@ Langage de programmation développé par Google, connu pour sa simplicité et so
 
 ## GOLDFINGER (ATTAQUE)
 
-Voir la définition de **ATTAQUE DES 51%**.
+Autre nom donné à une attaque des 51%. 
+
+> *Pour plus d'informations, voir la définition de **[ATTAQUE DES 51%](./A.md#attaque-des-51-pourcents)**.*
 
 ## GOSSIP
 
@@ -62,9 +64,15 @@ De manière plus générale, en cryptographie, une graine est un morceau de donn
 
 ## GREEN ADDRESS
 
+Ancien logiciel de portefeuille Bitcoin racheté en juillet 2016 par Blockstream pour créer le logiciel actuel Green Wallet.
+
+## GREEN ADDRESSES
+
+Vielle proposition d'adresse Bitcoin dont les transactions qui y sont envoyées sont pré-approuvées par un tiers de confiance. Ce concept permet aux parties recevant des fonds via cette adresse de les considérer comme immédiatement fiables, sans attendre qu'elle soit incluse dans un bloc. Cela repose sur la confiance accordée au service qui contrôle la green address, car il garantit que les fonds envoyés n'ont pas été et ne seront pas double dépensés. Ce type de service était autrefois utilisé pour accélérer les transactions, mais il n'est plus utilisé de nos jours.
 
 ## GREEN WALLET
 
+Logiciel de portefeuille Bitcoin disponible sur PC, Android et IOS développé par Blockstream depuis l'acquisition du logiciel Green Address en 2016. Il intègre plusieurs fonctionnalités comme une protection multisignaturse avec une authentification à deux facteurs. Il est également compatible avec la plupart des hardware wallets. C'est un logiciel simple à prendre en main qui peut être utilisé par des débutants.
 
 ## GRIEFING ATTACK
 

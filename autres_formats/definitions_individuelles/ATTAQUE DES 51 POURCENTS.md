@@ -4,4 +4,3 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 > *Cette attaque est également nommée « Attaque Goldfinger ».*
 
-

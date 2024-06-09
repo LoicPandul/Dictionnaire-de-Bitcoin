@@ -18,9 +18,13 @@ Un hardware wallet, ou portefeuille matériel, est un dispositif électronique d
 
 ## HASH160
 
+Fonction cryptographique utilisée sur Bitcoin notamment pour générer des adresses de réception Legacy et SegWit v0. Elle combine deux fonctions de hachage qui s'exécute successivement sur l'input : d'abord SHA256, puis RIPEMD160. La sortie de cette fonction est donc de 160 bits.
+$$\text{HASH-160}(x) = \text{RIPEMD-160}(\text{SHA-256}(x))$$
 
 ## HASH256
 
+Fonction cryptographique utilisée pour diverses applications sur Bitcoin. Elle consiste en l'application double de la fonction SHA256 sur les données en entrée. Le message est passé une première fois dans SHA256, et le résultat de cette opération est utilisé comme entrée pour passer une seconde fois dans SHA256. La sortie de cette fonction est donc de 256 bits.
+$$\text{HASH-256}(x) = \text{SHA-256}(\text{SHA-256}(x))$$
 
 ## HASHCASH
 
@@ -42,9 +46,13 @@ Indicateur de la puissance de calcul du réseau, mesurée en hachages par second
 
 ## HAUTEUR DE BLOC
 
+Désigne le numéro de séquence d'un bloc particulier par rapport au premier bloc, connu sous le nom de « bloc de genèse », qui est indexé à la hauteur zéro. Cet indicateur nous donne le nombre de blocs qui précèdent le bloc étudié. Par exemple, si un bloc est à la hauteur 650 000, cela signifie qu'il y a 650 000 blocs qui le précèdent. La hauteur de bloc est souvent utilisée pour identifier un bloc spécifique au sein de la blockchain.
 
 ## HD (HIERARCHICAL-DETERMINISTIC)
 
+Se dit d'un portefeuille Bitcoin qui utilise une information unique (la graine ou « seed » en anglais) pour générer une multitude de paires de clés publiques et privées de manière séquentielle et reproductible. Cette manière de gérer des clés est définie par le standard BIP32. L'avantage principal des portefeuilles HD est qu'ils permettent aux utilisateurs d'utiliser une multitudes de paires de clés différentes, notamment afin d'éviter la réutilisation d'adresse, tout en pouvant toutes les regénérer depuis une information unique. On dit de cette structure qu'elle est hiérarchique, car elle permet de créer une organisation en arborescence de multiples clés et adresses à partir d'une seule graine. Et elle est déterministe dans le sens où chaque graine génère toujours la même séquence de clés dans n'importe quel portefeuille conforme à ce système.
+
+> *Pour plus d'informations, voir les définitions de **[BIP32](./B.md#bip32)** et [**BIP44**](./B.md#bip44).*
 
 ## HEADERS FIRST SYNC
 
@@ -59,6 +67,7 @@ Les heuristiques externes, quant à elles, analysent les similitudes et les cara
 
 ## HEXADÉCIMAL
 
+Système de numération en base 16, qui utilise donc 16 symboles distincts pour représenter les nombres. Les 10 premiers symboles sont les chiffres de 0 à 9, identiques à ceux du système décimal (base 10), et les six symboles suivants sont représentés par les lettres A à F. Ainsi, A représente le nombre 10, B représente 11, jusqu'à F qui représente 15. Ce système est particulièrement utilisé en informatique, car il offre une représentation plus concise des nombres binaires (base 2), et chaque chiffre hexadécimal représente exactement 4 bits, ce qui simplifie les conversions. On retrouve très souvent ce système de numération pour représenter les informations sur Bitcoin.
 
 ## HMAC-SHA512
 
@@ -66,6 +75,7 @@ Les heuristiques externes, quant à elles, analysent les similitudes et les cara
 
 ## HODL
 
+Terme populaire dans la communauté Bitcoin qui désigne le fait de conserver ses bitcoins sur le long terme, malgré la volatilité des marchés, et de ne pas les vendre. Le terme est né d'une faute de frappe dans [un message posté en 2013 sur le forum Bitcoin Talk](https://bitcointalk.org/index.php?topic=375643.msg4022997#msg4022997) par l'utilisateur *GameKyuubi* qui semblait être en état d'ébriété, dans lequel il écrit « I AM HODLING » au lieu de « I AM HOLDING », ce qui signifie « garder » en anglais. Ce mot est rapidement devenu un mème et un slogan.
 
 ## HORODATAGE (TIMESTAMP)
 
@@ -75,6 +85,10 @@ L'horodatage, ou « timestamp » en anglais, est un mécanisme qui consiste à a
 
 ## HRP (HUMAN READABLE PART)
 
+HRP, pour « Human Readable Part » (partie lisible par l'homme), est un composant des adresses de réception bech32 et bech32m (SegWit v0 et SegWit v1). Le HRP fait référence à la portion de l'adresse qui est spécifiquement formatée pour être facilement lue et interprétée par les humains. Prenons l'exemple d'une adresse Bitcoin bech32 : 
+`bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwfqx5`
+
+Dans cette adresse, le `bc` initial est le HRP. Ce préfixe permet d'identifier en un coup d'œil que cette suite de caractères que l'on nous présente est une adresse Bitcoin et pas autre chose.
 
 ## HTLC
 

@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 806 `**
+**Nombre total de définitions : ` 809 `**
 
 ### A
 
@@ -351,6 +351,7 @@
 - [GPL](./dictionnaire/G.md#gpl)
 - [GRAINE (SEED)](./dictionnaire/G.md#graine-seed)
 - [GREEN ADDRESS](./dictionnaire/G.md#green-address)
+- [GREEN ADDRESSES](./dictionnaire/G.md#green-addresses)
 - [GREEN WALLET](./dictionnaire/G.md#green-wallet)
 - [GRIEFING ATTACK](./dictionnaire/G.md#griefing-attack)
 - [GROS-BOUTISTE](./dictionnaire/G.md#gros-boutiste)
@@ -592,6 +593,7 @@
 - [OPCODES](./dictionnaire/O.md#opcodes)
 - [OPEN ASSETS PROTOCOL (OAP)](./dictionnaire/O.md#open-assets-protocol-oap)
 - [ORACLE](./dictionnaire/O.md#oracle)
+- [ORDINAL NUMBER](./dictionnaire/O.md#ordinal-number)
 - [ORDINALS THEORY](./dictionnaire/O.md#ordinals-theory)
 - [ORPHELIN](./dictionnaire/O.md#orphelin)
 - [OSINT](./dictionnaire/O.md#osint)
@@ -704,6 +706,7 @@
 - [RPOW](./dictionnaire/R.md#rpow)
 - [RSK](./dictionnaire/R.md#rsk)
 - [RSMPPS](./dictionnaire/R.md#rsmpps)
+- [RUNES](./dictionnaire/R.md#runes)
 - [RUST](./dictionnaire/R.md#rust)
 - [RUST BITCOIN](./dictionnaire/R.md#rust-bitcoin)
 - [RUST-LIGHTNING](./dictionnaire/R.md#rust-lightning)
