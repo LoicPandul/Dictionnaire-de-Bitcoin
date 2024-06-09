@@ -1941,16 +1941,6 @@ Les heuristiques internes se concentrent sur les caractéristiques spécifiques 
 
 Les heuristiques externes, quant à elles, analysent les similitudes et les caractéristiques au-delà de la transaction en elle-même. Ils englobent tout l'environnement de la transaction. Par exemple, la réutilisation d'adresse sur plusieurs transaction est une heuristique externe. La CIOH en est également une.
 
-### Différence entre heuristiques et modèles de transaction
-
-Les modèles de transaction, ou patterns de transaction, diffèrent des heuristiques en ce qu'ils se focalisent sur la structure globale d'une transaction, comme le nombre d'UTXOs en input et en output. Par exemple, un modèle de transaction simple consiste en un ou plusieurs UTXOs en input et deux UTXOs en output, indiquant un paiement simple. Les heuristiques, par contre, se basent sur des détails spécifiques à l'intérieur ou à l'extérieur de la transaction pour tirer des conclusions probables, mais non certaines.
-
-En somme, les heuristiques d'analyse de chaîne sont des outils puissants pour déduire des informations probables sur les flux de bitcoins, malgré l'absence de certitude absolue. Elles permettent d'identifier et de tracer les activités sur la blockchain, mais leur efficacité repose sur l'accumulation de preuves et la minimisation des risques d'erreur.
-
-
-
-
-
 ## HEXADÉCIMAL
 
 
@@ -2323,6 +2313,16 @@ Template permettant l'utilisation de scripts standards. Un modèle de script est
 Un pattern de transaction est simplement un modèle ou une structure globale de transaction typique, que l’on peut retrouver sur la blockchain, et dont on connaît l’interprétation vraisemblable qui nous sera utile dans le cadre d'une analyse de chaîne. Lorsque l’on étudie les patterns, on va s’attarder sur une seule transaction que l’on va analyser à un niveau élevé (contrairement aux heuristiques internes et externes d'analyse de chaîne). En d’autres termes, nous allons uniquement regarder le nombre d’UTXOs en inputs et le nombre d'UTXOs en outputs, sans nous attarder sur les détails plus spécifiques ou l'environnement de la transaction. À partir du modèle observé, nous pourrons interpréter la nature de la transaction. On va alors rechercher des caractéristiques sur sa structure et en déduire une interprétation vraisemblable.
 
 > *En anglais, on parle de « patterns .*
+
+## MODÈLE TEMPOREL
+
+On y pense moins, mais certains comportements humains sont reconnaissables onchain. Celui qui est le plus utile dans une analyse, c’est peut-être votre rythme de sommeil ! Et oui, lorsque vous dormez, à priori, vous ne diffusez pas de transactions Bitcoin. Or, vous dormez généralement à peu près aux mêmes horaires. Il est donc courant d’utiliser des analyses temporelles dans l’analyse de chaîne. Il s'agit tout simplement du recensement des heures auxquelles les transactions d'une entité donnée sont diffusées au réseau Bitcoin. L’analyse de ces modèles temporels nous permet de déduire de nombreuses informations. 
+
+Tout d’abord, une analyse temporelle permet parfois d’identifier la nature de l’entité tracée. Si l’on observe que les transactions sont diffusées de manière constante sur 24 heures, alors cela va trahir une forte activité économique. L’entité derrière ces transactions est vraisemblablement une entreprise, potentiellement internationale et peut-être avec des procédures automatisées en interne. Au contraire, si l’on voit que le pattern temporel est plutôt réparti sur 16 heures bien spécifiques, alors on peut estimer que l’on a affaire à un utilisateur individuel, ou peut-être à une entreprise locale en fonction des volumes échangés.
+
+Au-delà de la nature de l’entité observée, le pattern temporel peut également nous indiquer approximativement la localisation de l’utilisateur grâce aux fuseaux horaires. On pourra ainsi rapprocher d’autres transactions, et utiliser l’horodatage de celles-ci comme une heuristique supplémentaire pouvant s’ajouter dans une analyse de chaîne.
+
+Dans un registre différent, c'est également une analyse temporelle de ce type qui a permis de formuler l'hypothèse selon laquelle Satoshi Nakamoto n’opérait pas depuis le Japon, mais bien depuis les États-Unis : [_The Time Zones of Satoshi Nakamoto_](https://medium.com/@insearchofsatoshi/the-time-zones-of-satoshi-nakamoto-aa40f035178f).
 
 ## M-OF-N
 

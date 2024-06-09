@@ -6,4 +6,3 @@ Les heuristiques internes se concentrent sur les caractéristiques spécifiques 
 
 Les heuristiques externes, quant à elles, analysent les similitudes et les caractéristiques au-delà de la transaction en elle-même. Ils englobent tout l'environnement de la transaction. Par exemple, la réutilisation d'adresse sur plusieurs transaction est une heuristique externe. La CIOH en est également une.
 
-#
