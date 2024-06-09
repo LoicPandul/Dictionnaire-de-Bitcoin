@@ -459,11 +459,10 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | [NESTED SEGWIT](#nested-segwit) |   144 | [NOEUD LIGHTNING](#noeud-lightning) |   145 |
 | [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |   144 | [NOEUD SPV (OU NOEUD LÉGER)](#noeud-spv-ou-noeud-léger) |   146 |
 | [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |   144 | [NONCE](#nonce)                |   146 |
-| [NFT](#nft)                    |   144 | [NSEQUENCE](#nsequence)        |   146 |
-| [NLOCKTIME](#nlocktime)        |   144 | [NULL DATA](#null-data)        |   147 |
-| [NOEUD](#noeud)                |   145 | [NULLDUMMY](#nulldummy)        |   147 |
-| [NOEUD COMPLET](#noeud-complet) |   145 | [NVERSION](#nversion)          |   147 |
-| [NOEUD ÉLAGUÉ](#noeud-élagué)  |   145 |                                |       |
+| [NLOCKTIME](#nlocktime)        |   144 | [NSEQUENCE](#nsequence)        |   146 |
+| [NOEUD](#noeud)                |   144 | [NULL DATA](#null-data)        |   147 |
+| [NOEUD COMPLET](#noeud-complet) |   145 | [NULLDUMMY](#nulldummy)        |   147 |
+| [NOEUD ÉLAGUÉ](#noeud-élagué)  |   145 | [NVERSION](#nversion)          |   147 |
 | | | | |
 
 
@@ -3418,10 +3417,6 @@ Réunion privée qui s'est tenue en 2017, rassemblant plus de 50 entreprises de 
 \end{itemize}
 
 Malgré le signalement positif de plus de 80 % des mineurs, le projet n'a pas su rallier un consensus suffisant, aboutissant à son abandon. Cet événement a été interprété par de nombreux utilisateurs et développeurs comme une tentative d'attaque de Bitcoin.
-
-## NFT
-
-
 
 ## NLOCKTIME
 

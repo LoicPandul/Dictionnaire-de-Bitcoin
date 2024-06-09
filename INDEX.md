@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 733 `**
+**Nombre total de définitions : ` 732 `**
 
 ### A
 
@@ -445,7 +445,6 @@
 - [NESTED SEGWIT](./dictionnaire/N.md#nested-segwit)
 - [NETWORK-ADJUSTED TIME (NAT)](./dictionnaire/N.md#network-adjusted-time-nat)
 - [NEW YORK AGREEMENT (NYA)](./dictionnaire/N.md#new-york-agreement-nya)
-- [NFT](./dictionnaire/N.md#nft)
 - [NLOCKTIME](./dictionnaire/N.md#nlocktime)
 - [NOEUD](./dictionnaire/N.md#noeud)
 - [NOEUD COMPLET](./dictionnaire/N.md#noeud-complet)
