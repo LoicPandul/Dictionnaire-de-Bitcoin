@@ -595,8 +595,8 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [RACE ATTACK](#race-attack)    |   186 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   189 |
-| [RACINE DE MERKLE](#racine-de-merkle) |   186 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |     ? |
-| [RAW TRANSACTION](#raw-transaction) |   186 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |     ? |
+| [RACINE DE MERKLE](#racine-de-merkle) |   186 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   190 |
+| [RAW TRANSACTION](#raw-transaction) |   186 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   191 |
 | [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   186 | [RGB](#rgb)                    |   191 |
 | [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   186 | [RICOCHET](#ricochet)          |   191 |
 | [RÉCURSIF (COVENANT)](#récursif-covenant) |   187 | [RIPEMD160](#ripemd160)        |   192 |

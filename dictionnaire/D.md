@@ -64,9 +64,6 @@ Processus de génération de clés enfants dans les portefeuilles HD. La dériva
 ## DESCRIPTORS
 
 
-## DEVISE
-
-Portefeuille HD profondeur 2
 
 ## DGM
 
