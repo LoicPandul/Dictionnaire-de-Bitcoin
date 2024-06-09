@@ -1,7 +1,7 @@
 ## Statistiques du *Dictionnaire de Bitcoin*
 
 ### Nombre total de définitions : 
-**-> 805**
+**-> 804**
 
 ### Nombre de définitions par lettre :
 1. ***B*** - 135
@@ -11,7 +11,7 @@
 5. ***P*** - 65
 6. ***M*** - 42
 7. ***A*** - 36
-8. ***D*** - 32
+8. ***D*** - 31
 9. ***R*** - 30
 10. ***T*** - 27
 11. ***F*** - 23
@@ -38,7 +38,7 @@
 4. ***script*** - 303
 5. ***adresse*** - 261
 6. ***information*** - 254
-7. ***portefeuille*** - 242
+7. ***portefeuille*** - 241
 8. ***utxo*** - 219
 9. ***mineur*** - 207
 10. ***réseau*** - 202

@@ -302,22 +302,22 @@ Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes trav
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [DAEMON](#daemon)              |    91 | [DIFFIE-HELLMAN](#diffie-hellman) |    93 |
-| [DANDELION](#dandelion)        |    91 | [DISTRIBUÉ](#distribué)        |    93 |
-| [DARKWALLET](#darkwallet)      |    91 | [DIVISION](#division)          |    94 |
-| [DATABASE/](#database)         |    91 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    94 |
-| [DB.LOG](#db.log)              |    91 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |    94 |
-| [DDOS](#ddos)                  |    91 | [DNS SEEDS](#dns-seeds)        |    94 |
-| [DEBUG.LOG](#debug.log)        |    91 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |    95 |
-| [DEPEG](#depeg)                |    92 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |    95 |
-| [DÉPÔT](#dépôt)                |    92 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |    95 |
-| [DÉRIVATION](#dérivation)      |    92 | [DRIVECHAIN](#drivechain)      |    96 |
-| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |    92 | [DUAL FUNDING](#dual-funding)  |    96 |
-| [DÉRIVATION NORMALE](#dérivation-normale) |    93 | [DUMMY ELEMENT](#dummy-element) |    96 |
-| [DESCRIPTORS](#descriptors)    |    93 | [DUST](#dust)                  |    96 |
-| [DEVISE](#devise)              |    93 | [DUSTING ATTACK](#dusting-attack) |    96 |
+| [DAEMON](#daemon)              |    91 | [DISTRIBUÉ](#distribué)        |    93 |
+| [DANDELION](#dandelion)        |    91 | [DIVISION](#division)          |    94 |
+| [DARKWALLET](#darkwallet)      |    91 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |    94 |
+| [DATABASE/](#database)         |    91 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |    94 |
+| [DB.LOG](#db.log)              |    91 | [DNS SEEDS](#dns-seeds)        |    94 |
+| [DDOS](#ddos)                  |    91 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |    95 |
+| [DEBUG.LOG](#debug.log)        |    91 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |    95 |
+| [DEPEG](#depeg)                |    92 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |    95 |
+| [DÉPÔT](#dépôt)                |    92 | [DRIVECHAIN](#drivechain)      |    96 |
+| [DÉRIVATION](#dérivation)      |    92 | [DUAL FUNDING](#dual-funding)  |    96 |
+| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |    92 | [DUMMY ELEMENT](#dummy-element) |    96 |
+| [DÉRIVATION NORMALE](#dérivation-normale) |    93 | [DUST](#dust)                  |    96 |
+| [DESCRIPTORS](#descriptors)    |    93 | [DUSTING ATTACK](#dusting-attack) |    96 |
 | [DGM](#dgm)                    |    93 | [DUST LIMIT](#dust-limit)      |    97 |
 | [DIFFICULTÉ](#difficulté)      |    93 | [DUSTRELAYFEE](#dustrelayfee)  |    97 |
+| [DIFFIE-HELLMAN](#diffie-hellman) |    93 |                                |       |
 | | | | |
 
 
@@ -2469,9 +2469,6 @@ Processus de génération de clés enfants dans les portefeuilles HD. La dériva
 ## DESCRIPTORS
 
 
-## DEVISE
-
-Portefeuille HD profondeur 2
 
 ## DGM
 

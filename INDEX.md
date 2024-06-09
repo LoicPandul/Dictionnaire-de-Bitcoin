@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 805 `**
+**Nombre total de définitions : ` 804 `**
 
 ### A
 
@@ -264,7 +264,6 @@
 - [DÉRIVATION ENDURCIE](./dictionnaire/D.md#dérivation-endurcie)
 - [DÉRIVATION NORMALE](./dictionnaire/D.md#dérivation-normale)
 - [DESCRIPTORS](./dictionnaire/D.md#descriptors)
-- [DEVISE](./dictionnaire/D.md#devise)
 - [DGM](./dictionnaire/D.md#dgm)
 - [DIFFICULTÉ](./dictionnaire/D.md#difficulté)
 - [DIFFIE-HELLMAN](./dictionnaire/D.md#diffie-hellman)
