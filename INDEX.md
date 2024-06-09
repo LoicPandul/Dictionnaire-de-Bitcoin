@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 811 `**
+**Nombre total de définitions : ` 806 `**
 
 ### A
 
@@ -6,8 +6,6 @@
 - [ADAPTOR SIGNATURE](./dictionnaire/A.md#adaptor-signature)
 - [ADDR](./dictionnaire/A.md#addr)
 - [ADDR.DAT](./dictionnaire/A.md#addrdat)
-- [ADDRESS SPOOFING](./dictionnaire/A.md#address-spoofing)
-- [ADDRESS SWAPPING](./dictionnaire/A.md#address-swapping)
 - [ADDRV2](./dictionnaire/A.md#addrv2)
 - [ADRESSE DE RECEPTION](./dictionnaire/A.md#adresse-de-reception)
 - [AGORISME](./dictionnaire/A.md#agorisme)
@@ -47,8 +45,6 @@
 - [BASE (ARITHMETIQUE)](./dictionnaire/B.md#base-arithmetique)
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
 - [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
-- [BCH CODES](./dictionnaire/B.md#bch-codes)
-- [BCOIN](./dictionnaire/B.md#bcoin)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
@@ -710,7 +706,6 @@
 - [RSMPPS](./dictionnaire/R.md#rsmpps)
 - [RUNES](./dictionnaire/R.md#runes)
 - [RUST](./dictionnaire/R.md#rust)
-- [RUST BITCOIN](./dictionnaire/R.md#rust-bitcoin)
 - [RUST-LIGHTNING](./dictionnaire/R.md#rust-lightning)
 
 ### S

@@ -10,7 +10,8 @@ scripts_prioritaires = [
     'generate_dictionary_files.py',
     'md_for_pdf.py',
     'update_index.py',
-    'stats.py'
+    'stats.py',
+    'termes_manquants.py'
 ]
 
 print("Début de l'exécution des scripts Python :")
