@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 804 `**
+**Nombre total de définitions : ` 806 `**
 
 ### A
 
@@ -231,7 +231,7 @@
 - [CONSENSUS](./dictionnaire/C.md#consensus)
 - [CONSOLIDATION](./dictionnaire/C.md#consolidation)
 - [CONTRAT INTELLIGENT](./dictionnaire/C.md#contrat-intelligent)
-- [CONTRIBUTEUR](./dictionnaire/C.md#contributeur)
+- [CONTRIBUTEUR (CORE)](./dictionnaire/C.md#contributeur-core)
 - [COOKIE (.COOKIE)](./dictionnaire/C.md#cookie-cookie)
 - [CORE-LIGHTNING (CLN)](./dictionnaire/C.md#core-lightning-cln)
 - [COURBE ELLIPTIQUE](./dictionnaire/C.md#courbe-elliptique)
@@ -267,6 +267,7 @@
 - [DGM](./dictionnaire/D.md#dgm)
 - [DIFFICULTÉ](./dictionnaire/D.md#difficulté)
 - [DIFFIE-HELLMAN](./dictionnaire/D.md#diffie-hellman)
+- [DIGITAL ARTIFACTS](./dictionnaire/D.md#digital-artifacts)
 - [DISTRIBUÉ](./dictionnaire/D.md#distribué)
 - [DIVISION](./dictionnaire/D.md#division)
 - [DLC (DISCREET LOG CONTRACT)](./dictionnaire/D.md#dlc-discreet-log-contract)
@@ -440,8 +441,8 @@
 - [MAGICAL BITCOIN](./dictionnaire/M.md#magical-bitcoin)
 - [MAGIC NETWORK](./dictionnaire/M.md#magic-network)
 - [MAINNET](./dictionnaire/M.md#mainnet)
-- [MAINTENEUR](./dictionnaire/M.md#mainteneur)
-- [MAINTENEUR PRINCIPAL](./dictionnaire/M.md#mainteneur-principal)
+- [MAINTENEUR (CORE)](./dictionnaire/M.md#mainteneur-core)
+- [MAINTENEUR PRINCIPAL (CORE)](./dictionnaire/M.md#mainteneur-principal-core)
 - [MAJORITÉ ÉCONOMIQUE](./dictionnaire/M.md#majorité-économique)
 - [MALLÉABILITÉ (TRANSACTION)](./dictionnaire/M.md#malléabilité-transaction)
 - [MAN-IN-THE-MIDDLE (MITM)](./dictionnaire/M.md#man-in-the-middle-mitm)
@@ -484,6 +485,7 @@
 - [NESTED SEGWIT](./dictionnaire/N.md#nested-segwit)
 - [NETWORK-ADJUSTED TIME (NAT)](./dictionnaire/N.md#network-adjusted-time-nat)
 - [NEW YORK AGREEMENT (NYA)](./dictionnaire/N.md#new-york-agreement-nya)
+- [NFT](./dictionnaire/N.md#nft)
 - [NLOCKTIME](./dictionnaire/N.md#nlocktime)
 - [NOEUD](./dictionnaire/N.md#noeud)
 - [NOEUD COMPLET](./dictionnaire/N.md#noeud-complet)
@@ -590,7 +592,7 @@
 - [OPCODES](./dictionnaire/O.md#opcodes)
 - [OPEN ASSETS PROTOCOL (OAP)](./dictionnaire/O.md#open-assets-protocol-oap)
 - [ORACLE](./dictionnaire/O.md#oracle)
-- [ORDINALS](./dictionnaire/O.md#ordinals)
+- [ORDINALS THEORY](./dictionnaire/O.md#ordinals-theory)
 - [ORPHELIN](./dictionnaire/O.md#orphelin)
 - [OSINT](./dictionnaire/O.md#osint)
 - [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
