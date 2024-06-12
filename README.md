@@ -34,6 +34,8 @@ Pour ceux qui ne désirent pas acheter le livre sur Amazon mais souhaitent néan
 
 Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou sur [mon site web](https://pandul.fr/). C'est la manière la plus simple de lire et de rechercher des définition.
 
+![Présentation GIF](./img/README%20GIF.gif)
+
 Vous pouvez également découvrir la version en markdown du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
@@ -120,4 +122,7 @@ This work is licensed under a CC BY-NC-SA 4.0
 [cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
+<p align="center">
+  <img src="./img/Logo-Pandul-NOIR.png" alt="Logo Pandul" width="50%">
+</p>
 
