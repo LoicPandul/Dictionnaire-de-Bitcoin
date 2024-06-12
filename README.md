@@ -1,10 +1,25 @@
 # Dictionnaire de Bitcoin
 Tout le vocabulaire technique de Bitcoin.
 
-![GitHub contributors](https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin)
-![GitHub forks](https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin)
-![GitHub stars](https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin)
-![GitHub license](https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin)
+![Contributeurs](https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs)
+![Forks](https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks)
+![Étoiles](https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin?label=Étoiles)
+![Licence](https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence)
+
+<a href="https://x.com/Loic_Pandul">
+  <img src="https://img.shields.io/twitter/follow/Loic_Pandul?style=social" alt="Suivez-moi sur X">
+</a>
+
+<a href="https://www.pandul.fr/">
+  <img src="https://img.shields.io/badge/Site%20web-Visitez%20mon%20site-brightgreen?style=social&logo=internet-explorer" alt="Visitez mon site">
+</a>
+
+## Table des matières
+- [Description du projet](#description-du-projet)
+- [Lire le *Dictionnaire de Bitcoin*](#lire-le-dictionnaire-de-bitcoin)
+- [Demandes de modification et contributions](#demandes-de-modification-et-contributions)
+- [Termes acceptés dans le *Dictionnaire de Bitcoin*](#termes-acceptés-dans-le-dictionnaire-de-bitcoin)
+- [Licence et réutilisation](#licence-et-réutilisation)
 
 ## Description du projet
 Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur GitHub, ou sous format PDF sur le site [https://pandul.fr/](https://pandul.fr/). Ce livre sera également vendu imprimé et broché sur Amazon à partir de fin 2024.
@@ -15,14 +30,15 @@ La première édition de l'ouvrage est prévue pour 2024. Si le projet intéress
 
 Pour ceux qui ne désirent pas acheter le livre sur Amazon mais souhaitent néanmoins soutenir le projet, il est possible de faire un don sur [+throbbingpond8B1](https://paynym.is/+throbbingpond8B1) (BIP47) ou à [loic@sats.pandul.fr](https://pandul.fr/) (adresse LN).
 
-## Lire le *Dictionnaire de Bitcoin*
+## Lire le *Dictionnaire de Bitcoin* 📖
+
 Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou sur [mon site web](https://pandul.fr/). C'est la manière la plus simple de lire et de rechercher des définition.
 
-Vous pouvez également découvrir la version en makdown du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
+Vous pouvez également découvrir la version en markdown du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
 
-[Accéder au sommaire](./INDEX.md)
+[![Accéder au sommaire](https://img.shields.io/badge/Accéder%20au%20sommaire-Cliquez%20ici-green)](./INDEX.md)
 
 La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
@@ -31,7 +47,8 @@ Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats diffé
 - [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
 - [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
 
-## Demandes de modification et contributions
+## Demandes de modification et contributions ✍️
+
 *Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
 * La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
 * La correction d'une définition qui vous semble erronée ou imprécise ;
@@ -63,7 +80,8 @@ Mon objectif pour ce projet de dictionnaire est de publier une nouvelle édition
 
 Si vous le souhaitez, vous pouvez joindre un schéma à votre définition pour faciliter la compréhension. Vous pouvez envoyer un schéma brouillon que je reprendrai en l'adaptant à la charte graphique du projet.
 
-## Termes acceptés dans le *Dictionnaire de Bitcoin*
+## Termes acceptés dans le *Dictionnaire de Bitcoin* ✅
+
 L'intégration d'un nouveau terme dans le *Dictionnaire de Bitcoin* nécessite simplement qu'il soit pertinent pour Bitcoin ou son écosystème. Utilisez votre discernement pour juger de l'utilité potentielle du terme pour ceux qui étudient ou utilisent Bitcoin et son environnement. 
 
 L'ambition de ce dictionnaire est de couvrir le champ lexical de Bitcoin avec la plus grande exhaustivité possible, dans le même esprit que les dictionnaires professionnels d'autres domaines. Ainsi, même les termes d'intérêt limité doivent être considérés.
@@ -82,7 +100,8 @@ On ne parle évidemment pas de shitcoins dans ce dictionnaire, sauf si le shitco
 
 Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une définition exhaustive, même si elle doit être longue, plutôt qu'une définition courte et imprécise.
 
-## Licence et réutilisation
+## Licence et réutilisation 📜
+
 **Shield:** [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 **Crédit:**
@@ -94,22 +113,6 @@ This work is licensed under a CC BY-NC-SA 4.0
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
-
-[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
-[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
-[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
-[cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
-
-
-## Licence et réutilisation 📜
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-
-**Crédit:**
-Cette définition est extraite du « Dictionnaire de Bitcoin », un ouvrage libre rédigé par Loïc Morel (Pandul) disponible sur GitHub : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/tree/main
-
-Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
-
-![CC BY-NC-SA 4.0][cc-by-nc-sa-image]
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
