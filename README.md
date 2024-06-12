@@ -1,6 +1,11 @@
 # Dictionnaire de Bitcoin
 Tout le vocabulaire technique de Bitcoin.
 
+![GitHub contributors](https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin)
+![GitHub forks](https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin)
+![GitHub stars](https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin)
+![GitHub license](https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin)
+
 ## Description du projet
 Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur GitHub, ou sous format PDF sur le site [https://pandul.fr/](https://pandul.fr/). Ce livre sera également vendu imprimé et broché sur Amazon à partir de fin 2024.
 
@@ -94,3 +99,22 @@ This work is licensed under a CC BY-NC-SA 4.0
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 [cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
+
+
+## Licence et réutilisation 📜
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+**Crédit:**
+Cette définition est extraite du « Dictionnaire de Bitcoin », un ouvrage libre rédigé par Loïc Morel (Pandul) disponible sur GitHub : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/tree/main
+
+Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
+
+![CC BY-NC-SA 4.0][cc-by-nc-sa-image]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+[cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
+
+
+
