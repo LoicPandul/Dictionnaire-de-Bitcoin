@@ -59,7 +59,7 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
   </a>
 </p>
 
-La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
+La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement.
 
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
@@ -89,9 +89,9 @@ Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats diffé
 
 Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez en tête une modification mineure à apporter (telle que l'ajout d'un terme ou la correction d'une petite erreur d'orthographe), vous pouvez également créer une issue sur GitHub plutôt qu'une PR.
 
-Dans le fichier [Termes en attente.md](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Termes%20en%20attente.md), vous trouverez tous les termes auxquels j'ai déjà pensé, mais que je n'ai pas encore eu le temps de définir (c'est un peu ma mempool à moi !). Si vous souhaitez contribuer, vous pouvez piocher dans cette liste de mots pour écrire les définitions que vous connaissez. Si vous souhaitez demander l'ajout d'un nouveau terme, avant de me contacter ou d'ouvrir une issue, je vous remercie de bien vouloir vérifier qu'il ne se trouve pas dans cette liste.
+Dans le fichier [Termes en attente.md](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Termes%20en%20attente.md), vous trouverez tous les termes auxquels j'ai déjà pensé, mais que je n'ai pas encore eu le temps de définir (c'est un peu ma mempool à moi !). Si vous souhaitez contribuer, vous pouvez piocher dans cette liste de mots pour écrire les définitions que vous connaissez. Si vous souhaitez demander l'ajout d'un nouveau terme, avant de me contacter ou d'ouvrir une issue, je vous remercie de bien vouloir vérifier qu'il ne se trouve pas dans cette liste d'attente.
 
-Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement. Mes coordonnées sont disponibles sur [https://pandul.fr/](https://pandul.fr/).
+Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement à info@pandul.fr ou sur [mon Twitter](https://x.com/Loic_Pandul).
 
 En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en ligne que dans la version imprimée du dictionnaire**. Si vous préférez ne pas être cité, ou si vous souhaitez apparaître sous un autre nom que votre pseudo GitHub, veuillez le préciser explicitement dans votre issue ou votre PR.
 
@@ -101,15 +101,13 @@ Si vous le souhaitez, vous pouvez joindre un schéma à votre définition pour f
 
 ## Termes acceptés dans le *Dictionnaire de Bitcoin* ✅
 
-L'intégration d'un nouveau terme dans le *Dictionnaire de Bitcoin* nécessite simplement qu'il soit pertinent pour Bitcoin ou son écosystème. Utilisez votre discernement pour juger de l'utilité potentielle du terme pour ceux qui étudient ou utilisent Bitcoin et son environnement. 
-
-L'ambition de ce dictionnaire est de couvrir le champ lexical de Bitcoin avec la plus grande exhaustivité possible, dans le même esprit que les dictionnaires professionnels d'autres domaines. Ainsi, même les termes d'intérêt limité doivent être considérés.
+L'intégration d'un nouveau terme dans le *Dictionnaire de Bitcoin* nécessite simplement qu'il soit en lien avec Bitcoin ou son écosystème. L'ambition de ce dictionnaire est de couvrir le champ lexical de Bitcoin avec la plus grande exhaustivité possible, dans le même esprit que les dictionnaires professionnels d'autres domaines. Ainsi, même les termes d'intérêt limité doivent être considérés, car la qualité d'un dictionnaire ne repose pas sur la sélection et la synthèse des informations, comme ça peut être le cas pour un livre classique, mais plutôt sur l'étendue des termes qu'il couvre.
 
 Un terme est accepté si la réponse à la question suivante est affirmative : **« _Un débutant qui étudie Bitcoin pourrait-il croiser ce terme durant ses recherches et désirer en comprendre la signification ?_ »**
 
 Tous les termes techniques, logiciels, algorithmes et protocoles sont acceptés s'ils se rapportent, de manière directe ou indirecte, à Bitcoin ou à un protocole s'appuyant sur Bitcoin (comme Lightning, RGB, Liquid, Ark...).
 
-Les termes généraux liés à l'informatique et à la cryptographie sont uniquement inclus s'ils sont susceptibles d'être rencontrés et nécessaires à la compréhension de Bitcoin. L'objectif est d'offrir un dictionnaire complet sans pour autant devenir un dictionnaire informatique généraliste.
+Les termes généraux liés à l'informatique et à la cryptographie sont uniquement inclus s'ils sont susceptibles d'être rencontrés et nécessaires à la compréhension de Bitcoin. L'objectif est d'offrir un dictionnaire complet, sans pour autant devenir un dictionnaire informatique généraliste.
 
 Quant aux noms d'entreprises et de marques, j'accepte de les ajouter uniquement si elles ont eu un rôle historique dans l'évolution technique de Bitcoin. Il faut également qu'elles soient connues à l'échelle internationale. La préférence est donnée à l'intégration des logiciels et des protocoles développés par ces entreprises, plutôt qu'aux entreprises en elles-mêmes. Les propositions d'ajout de définition contre rémunération ne sont pas acceptées. 
 
