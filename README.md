@@ -7,9 +7,6 @@
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/fork">
     <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks" alt="Forks">
   </a>
-  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/stargazers">
-    <img src="https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin?label=Étoiles" alt="Étoiles">
-  </a>
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence" alt="Licence">
   </a>
