@@ -1,27 +1,58 @@
-# Dictionnaire de Bitcoin
-Tout le vocabulaire technique de Bitcoin.
+<p align="center">
+  <img src="./img/cover.png" alt="Cover Image">
+</p>
 
-![Contributeurs](https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs)
-![Forks](https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks)
-![Étoiles](https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin?label=Étoiles)
-![Licence](https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence)
+<p align="center">
+  ![Contributeurs](https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs)
+  ![Forks](https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks)
+  ![Étoiles](https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin?label=Étoiles)
+  ![Licence](https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence)
+</p>
 
-<a href="https://x.com/Loic_Pandul">
-  <img src="https://img.shields.io/twitter/follow/Loic_Pandul?style=social" alt="Suivez-moi sur X">
-</a>
-
-<a href="https://www.pandul.fr/">
-  <img src="https://img.shields.io/badge/Site%20web-Visitez%20mon%20site-brightgreen?style=social&logo=internet-explorer" alt="Visitez mon site">
-</a>
+<p align="center">
+  <a href="https://x.com/Loic_Pandul">
+    <img src="https://img.shields.io/twitter/follow/Loic_Pandul?style=social" alt="Suivez-moi sur X">
+  </a>
+  <a href="https://www.pandul.fr/">
+    <img src="https://img.shields.io/badge/Site%20web-Visitez%20mon%20site-brightgreen?style=social&logo=internet-explorer" alt="Visitez mon site">
+  </a>
+</p>
 
 ## Table des matières
-- [Description du projet](#description-du-projet)
-- [Lire le *Dictionnaire de Bitcoin*](#lire-le-dictionnaire-de-bitcoin)
-- [Demandes de modification et contributions](#demandes-de-modification-et-contributions)
-- [Termes acceptés dans le *Dictionnaire de Bitcoin*](#termes-acceptés-dans-le-dictionnaire-de-bitcoin)
-- [Licence et réutilisation](#licence-et-réutilisation)
+- [Description du projet 📝](#description-du-projet-)
+- [Structure du dépôt 🗂️](#structure-du-dépôt-)
+- [Lire le *Dictionnaire de Bitcoin* 📖](#lire-le-dictionnaire-de-bitcoin-)
+- [Demandes de modification et contributions ✍️](#demandes-de-modification-et-contributions-)
+- [Termes acceptés dans le *Dictionnaire de Bitcoin* ✅](#termes-acceptés-dans-le-dictionnaire-de-bitcoin-)
+- [Licence et réutilisation 📜](#licence-et-réutilisation-)
 
-## Description du projet
+## Structure du dépôt 🗂️
+
+```plaintext 
+Dictionnaire-de-Bitcoin/
+├── README.md
+├── img/
+│   ├── Logo-Pandul-NOIR.png
+│   ├── README GIF.gif
+│   └── cover.png
+├── dictionnaire/
+│   ├── A.md
+│   ├── B.md
+│   ├── ...
+│   └── Z.md
+├── autres_formats/
+│   ├── dictionnaire_complet/
+│   │   └── dictionnaire_complet.md
+│   └── definitions_individuelles/
+│       ├── definition1.md
+│       ├── ...
+│       └── definitionN.md
+└── scripts/
+    └── update_readme.py
+```
+
+## Description du projet 📝
+
 Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur GitHub, ou sous format PDF sur le site [https://pandul.fr/](https://pandul.fr/). Ce livre sera également vendu imprimé et broché sur Amazon à partir de fin 2024.
 
 Je gagne une petite marge sur chaque exemplaire physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
