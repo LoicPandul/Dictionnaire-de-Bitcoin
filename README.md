@@ -2,13 +2,13 @@
 
 <p align="center">
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin">
-    <img src="https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs" alt="Contributeurs">
+    <img src="https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs&color=black" alt="Contributeurs">
   </a>
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/fork">
-    <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks" alt="Forks">
+    <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks&color=black" alt="Forks">
   </a>
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence" alt="Licence">
+    <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence&color=black" alt="Licence">
   </a>
 </p>
 
@@ -51,7 +51,11 @@ Vous pouvez également découvrir la version en markdown du *Dictionnaire de Bit
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
 
-[![Accéder au sommaire](https://img.shields.io/badge/Accéder%20au%20sommaire-Cliquez%20ici-green)](./INDEX.md)
+<p align="center">
+  <a href="./INDEX.md">
+    <img src="https://img.shields.io/badge/Accéder%20au%20sommaire-Cliquez%20ici-black" alt="Accéder au sommaire">
+  </a>
+</p>
 
 La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement. Vous pourrez retrouver une version imprimée et brochée du *Dictionnaire de Bitcoin* sur Amazon à partir de la fin de l'année 2024.
 
