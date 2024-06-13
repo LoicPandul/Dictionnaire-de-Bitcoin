@@ -43,7 +43,9 @@ Pour ceux qui ne désirent pas acheter le livre sur Amazon mais souhaitent néan
 
 Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou sur [mon site web](https://pandul.fr/). C'est la manière la plus simple de lire et de rechercher des définition.
 
-![Présentation GIF](./img/README%20GIF.gif)
+<p align="center">
+  <img src="./img/README%20GIF.gif" alt="Présentation GIF" width="70%">
+</p>
 
 Vous pouvez également découvrir la version en markdown du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
 
