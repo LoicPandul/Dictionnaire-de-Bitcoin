@@ -1,4 +1,8 @@
-[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
+<p align="center">
+  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf">
+    <img src="./img/cover.png" alt="Cover Image" width="70%">
+  </a>
+</p>
 
 <p align="center">
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin">
