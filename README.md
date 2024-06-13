@@ -1,12 +1,18 @@
-<p align="center">
-  <img src="./img/cover.png" alt="Cover Image">
-</p>
+[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
 
 <p align="center">
-  ![Contributeurs](https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs)
-  ![Forks](https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks)
-  ![Étoiles](https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin?label=Étoiles)
-  ![Licence](https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence)
+  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin">
+    <img src="https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs" alt="Contributeurs">
+  </a>
+  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/fork">
+    <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks" alt="Forks">
+  </a>
+  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/stargazers">
+    <img src="https://img.shields.io/github/stars/LoicPandul/Dictionnaire-de-Bitcoin?label=Étoiles" alt="Étoiles">
+  </a>
+  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence" alt="Licence">
+  </a>
 </p>
 
 <p align="center">
