@@ -20,36 +20,11 @@
 
 ## Table des matières
 - [Description du projet 📝](#description-du-projet-)
-- [Structure du dépôt 🗂️](#structure-du-dépôt-)
 - [Lire le *Dictionnaire de Bitcoin* 📖](#lire-le-dictionnaire-de-bitcoin-)
 - [Demandes de modification et contributions ✍️](#demandes-de-modification-et-contributions-)
 - [Termes acceptés dans le *Dictionnaire de Bitcoin* ✅](#termes-acceptés-dans-le-dictionnaire-de-bitcoin-)
+- [Structure du dépôt 🗂️](#structure-du-dépôt-)
 - [Licence et réutilisation 📜](#licence-et-réutilisation-)
-
-## Structure du dépôt 🗂️
-
-```plaintext 
-Dictionnaire-de-Bitcoin/
-├── README.md
-├── img/
-│   ├── Logo-Pandul-NOIR.png
-│   ├── README GIF.gif
-│   └── cover.png
-├── dictionnaire/
-│   ├── A.md
-│   ├── B.md
-│   ├── ...
-│   └── Z.md
-├── autres_formats/
-│   ├── dictionnaire_complet/
-│   │   └── dictionnaire_complet.md
-│   └── definitions_individuelles/
-│       ├── definition1.md
-│       ├── ...
-│       └── definitionN.md
-└── scripts/
-    └── update_readme.py
-```
 
 ## Description du projet 📝
 
@@ -132,6 +107,50 @@ En ce qui concerne les individus, seules les contributions historiquement signif
 On ne parle évidemment pas de shitcoins dans ce dictionnaire, sauf si le shitcoin en question fait partie de l'histoire de Bitcoin (par exemple, les forks de Bitcoin).
 
 Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une définition exhaustive, même si elle doit être longue, plutôt qu'une définition courte et imprécise.
+
+## Structure du dépôt 🗂️
+
+```plaintext 
+Dictionnaire-de-Bitcoin/
+├── .gitignore
+├── Dictionnaire de Bitcoin.pdf
+├── INDEX.md
+├── LICENCE_FR.md
+├── LICENSE_ENG.md
+├── README.md
+├── Termes en attente.md
+├── stats.md
+├── img/
+├── dictionnaire/
+│   ├── A.md
+│   ├── B.md
+│   ├── C.md
+│   ├── ...
+│   └── Z.md
+├── autres_formats/
+│   ├── dictionnaire_complet/
+│   │   └── dictionnaire_complet.md
+│   └── definitions_individuelles/
+│       ├── definition_1.md
+│       ├── definition_2.md
+│       ├── definition_3.md
+│       ├── ...
+│       └── definition_N.md
+└── scripts/
+    ├── PDF/
+    │   ├── contributeurs_paragraphe.md
+    │   ├── cover_back.png
+    │   ├── cover_front.png
+    │   ├── dictionnaire_MD_for_PDF.md
+    │   └── pdf.py
+    ├── execute_all_scripts.py
+    ├── generate_dictionary_files.py
+    ├── md_for_pdf.py
+    ├── puces_et_citations.py
+    ├── stats.py
+    ├── termes_manquants.py
+    └── update_index.py
+```
 
 ## Licence et réutilisation 📜
 
