@@ -14,22 +14,20 @@ scripts_prioritaires = [
     'termes_manquants.py'
 ]
 
-print("Début de l'exécution des scripts Python :")
+print("Début de l'exécution des scripts Python :\n")
 
 for script in scripts_prioritaires:
     chemin_complet = os.path.join(chemin_dossier_scripts, script)
     if os.path.isfile(chemin_complet):
-        print(f"Exécution de {script}...")
         subprocess.run(['python', chemin_complet], check=True)
-        print(f"{script} exécuté avec succès.")
+        print(f" - {script}")
     else:
         print(f"Le fichier {script} n'a pas été trouvé et n'a pas pu être exécuté.")
 
 for fichier in os.listdir(chemin_dossier_scripts):
     if fichier.endswith('.py') and fichier not in scripts_prioritaires + [script_actuel]:
         chemin_complet = os.path.join(chemin_dossier_scripts, fichier)
-        print(f"Exécution de {fichier}...")
         subprocess.run(['python', chemin_complet], check=True)
-        print(f"{fichier} exécuté avec succès.")
+        print(f" - {fichier}")
 
-print("Tous les scripts ont été exécutés.")
+print("\nTous les scripts ont été exécutés.")
