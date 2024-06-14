@@ -19,6 +19,7 @@
   <a href="https://www.pandul.fr/">
     <img src="https://img.shields.io/badge/Site%20web-Visitez%20mon%20site-brightgreen?style=social&logo=internet-explorer" alt="Visitez mon site">
   </a>
+  <a href="lightning:pandul@sats.rn" style="text-decoration: none;"> <img src="https://img.shields.io/badge/Supporter_via_Lightning-Faire_une_donation-black" alt="Faire une donation"> </a>
 </p>
 
 ## Table des matières
@@ -37,7 +38,7 @@ Je gagne une petite marge sur chaque exemplaire physique vendu via Amazon. Si vo
 
 La première édition de l'ouvrage est prévue pour 2024. Si le projet intéresse et suscite de l'engagement, je publierai des nouvelles versions actualisées du *Dictionnaire de Bitcoin*. Ces mises à jour comprendront les modifications proposées par la communauté de contributeurs et les termes nouvellement apparus.
 
-Si vous souhaitez soutenir ce projet, vous pouvez également le partager sur les réseaux sociaux. Merci ! :)
+Si vous souhaitez soutenir ce projet, vous pouvez également le partager sur les réseaux sociaux ou me faire un don LN sur pandul@sats.rs. Merci ! :)
 
 ## Lire le *Dictionnaire de Bitcoin* 📖
 
