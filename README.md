@@ -21,10 +21,6 @@
   </a>
 </p>
 
-Adresse LN :
-
-pandul@sats.rs
-
 ## Table des matières
 - [Description du projet 📝](#description-du-projet-)
 - [Lire le *Dictionnaire de Bitcoin* 📖](#lire-le-dictionnaire-de-bitcoin-)
