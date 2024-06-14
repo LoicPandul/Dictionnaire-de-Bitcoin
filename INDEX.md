@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 732 `**
+**Nombre total de définitions : ` 734 `**
 
 ### A
 
@@ -27,7 +27,7 @@
 - [ARK](./dictionnaire/A.md#ark)
 - [ASCII](./dictionnaire/A.md#ascii)
 - [ASIC](./dictionnaire/A.md#asic)
-- [ASIC BOOST](./dictionnaire/A.md#asic-boost)
+- [ASICBOOST](./dictionnaire/A.md#asicboost)
 - [ASMAP](./dictionnaire/A.md#asmap)
 - [ASSUME UTXO](./dictionnaire/A.md#assume-utxo)
 - [ASSUME VALID](./dictionnaire/A.md#assume-valid)
@@ -228,6 +228,7 @@
 - [CORE-LIGHTNING (CLN)](./dictionnaire/C.md#core-lightning-cln)
 - [COURBE ELLIPTIQUE](./dictionnaire/C.md#courbe-elliptique)
 - [COVENANT](./dictionnaire/C.md#covenant)
+- [COVERT ASICBOOST](./dictionnaire/C.md#covert-asicboost)
 - [CPFP (CHILD PAY FOR PARENT)](./dictionnaire/C.md#cpfp-child-pay-for-parent)
 - [CPPSRB](./dictionnaire/C.md#cppsrb)
 - [CPU (CENTRAL PROCESSING UNIT)](./dictionnaire/C.md#cpu-central-processing-unit)
@@ -556,6 +557,7 @@
 - [OUTPUT](./dictionnaire/O.md#output)
 - [OUTPUT LINKING](./dictionnaire/O.md#output-linking)
 - [OUTPUT SCRIPT DESCRIPTORS](./dictionnaire/O.md#output-script-descriptors)
+- [OVERT ASICBOOST](./dictionnaire/O.md#overt-asicboost)
 
 ### P
 

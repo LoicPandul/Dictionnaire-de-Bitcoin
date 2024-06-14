@@ -23,7 +23,7 @@ def termes_les_plus_frequents(chemin_dictionnaire_complet):
         mots = re.findall(r'\b[a-zéèàêA-ZÉÈÀÊ]{4,}\b', contenu, re.IGNORECASE)
         mots_normalises = [normaliser_terme(mot) for mot in mots]
         compteur_mots = Counter(mots_normalises)
-        mots_ignores = {'dan', 'sont', 'pour', 'avec', 'san', 'sou', 'plu', 'permet', 'être', 'peut', 'Cette', 'comme', 'cette', 'elle', 'leur', 'même', 'utilisé', 'deux', 'autre', 'voir', 'définition'}
+        mots_ignores = {'dan', 'sont', 'pour', 'chaque', 'avec', 'san', 'sou', 'plu', 'permet', 'être', 'peut', 'Cette', 'comme', 'cette', 'elle', 'leur', 'même', 'utilisé', 'deux', 'autre', 'voir', 'définition'}
         for mot in list(compteur_mots):
             if mot in mots_ignores:
                 del compteur_mots[mot]
