@@ -21,26 +21,8 @@
   </a>
 </p>
 
-<div style="text-align: center;">
-  <button onclick="copyToClipboard('pandul@sats.rn')" style="background-color: black; color: white; border: none; padding: 7px 14px; font-size: 13px; cursor: pointer; border-radius: 3px;">
-    pandul@sats.rn
-  </button>
-</div>
-
-<p id="copyConfirmation" style="text-align: center; color: green; display: none;">Adresse copiée dans le presse-papiers !</p>
-
-<script>
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text).then(function() {
-    document.getElementById('copyConfirmation').style.display = 'block';
-    setTimeout(function() {
-      document.getElementById('copyConfirmation').style.display = 'none';
-    }, 2000);
-  }, function(err) {
-    console.error('Could not copy text: ', err);
-  });
-}
-</script>
+Adresse LN : 
+pandul@sats.rs
 
 ## Table des matières
 - [Description du projet 📝](#description-du-projet-)
