@@ -19,8 +19,28 @@
   <a href="https://www.pandul.fr/">
     <img src="https://img.shields.io/badge/Site%20web-Visitez%20mon%20site-brightgreen?style=social&logo=internet-explorer" alt="Visitez mon site">
   </a>
-  <a href="lightning:pandul@sats.rn" style="text-decoration: none;"> <img src="https://img.shields.io/badge/Supporter_via_Lightning-Faire_une_donation-black" alt="Faire une donation"> </a>
 </p>
+
+<div style="text-align: center;">
+  <button onclick="copyToClipboard('pandul@sats.rn')" style="background-color: black; color: white; border: none; padding: 7px 14px; font-size: 13px; cursor: pointer; border-radius: 3px;">
+    pandul@sats.rn
+  </button>
+</div>
+
+<p id="copyConfirmation" style="text-align: center; color: green; display: none;">Adresse copiée dans le presse-papiers !</p>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    document.getElementById('copyConfirmation').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('copyConfirmation').style.display = 'none';
+    }, 2000);
+  }, function(err) {
+    console.error('Could not copy text: ', err);
+  });
+}
+</script>
 
 ## Table des matières
 - [Description du projet 📝](#description-du-projet-)
