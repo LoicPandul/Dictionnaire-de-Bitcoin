@@ -18,7 +18,7 @@ def convert_md_to_pdf(md_file_path, pdf_output_path):
         extra_args=extra_args
     )
 
-    print(f"Le fichier PDF a été créé : {pdf_output_path}")
+    print(f"\nLe fichier PDF a été créé : {pdf_output_path}\n")
 
 markdown_path = "dictionnaire_MD_for_PDF.md"
 pdf_path = "../../Dictionnaire de Bitcoin.pdf"
