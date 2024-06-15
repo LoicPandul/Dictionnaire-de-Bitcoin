@@ -532,32 +532,32 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 | [P2PK](#p2pk)                  |   178 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |   188 |
 | [P2PKH](#p2pkh)                |   178 | [PILE (STACK)](#pile-stack)    |   188 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |   178 | [PIZZA DAY](#pizza-day)        |   188 |
-| [P2MS](#p2ms)                  |   178 | [POINT D'ENTRÉE](#point-dentrée) |   188 |
-| [P2SH](#p2sh)                  |   179 | [POLICY (MINISCRIPT)](#policy-miniscript) |   189 |
-| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   179 | [POOL](#pool)                  |   189 |
-| [P2SH-P2WSH](#p2sh-p2wsh)      |   179 | [POOL DE MINAGE](#pool-de-minage) |   189 |
-| [P2TR](#p2tr)                  |   180 | [POOL HOPPING](#pool-hopping)  |   190 |
-| [P2WPKH](#p2wpkh)              |   180 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   190 |
-| [P2WSH](#p2wsh)                |   181 | [PORTEFEUILLE](#portefeuille)  |   190 |
-| [PAIEMENT ROND](#paiement-rond) |   181 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   190 |
-| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   182 | [PORTEFEUILLE FROID](#portefeuille-froid) |   190 |
-| [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   183 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   191 |
-| [PAIR ENTRANT](#pair-entrant)  |   183 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   191 |
-| [PAIR SORTANT](#pair-sortant)  |   183 | [PPLNSG](#pplnsg)              |   191 |
-| [PASSPHRASE (BIP39)](#passphrase-bip39) |   183 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   191 |
-| [PATOSHI](#patoshi)            |   184 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   191 |
-| [PAYJOIN](#payjoin)            |   184 | [PREMIUM](#premium)            |   192 |
-| [PAYNYM](#paynym)              |   185 | [PREUVE DE RÉSERVES](#preuve-de-réserves) |   192 |
-| [PBKDF2](#pbkdf2)              |   186 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   192 |
-| [PEER DISCOVERY](#peer-discovery) |   186 | [PROFONDEUR](#profondeur)      |   192 |
-| [PEERS.DAT](#peers.dat)        |   186 | [PROOF-OF-WORK](#proof-of-work) |   192 |
-| [PERCOLATION](#percolation)    |   186 | [PROP (PROPORTIONAL)](#prop-proportional) |   192 |
-| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   187 | [PROPAGATION](#propagation)    |   192 |
-| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   187 | [PSBT](#psbt)                  |   193 |
-| [PETIT-BOUTISTE](#petit-boutiste) |   187 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   193 |
-| [PHOENIX](#phoenix)            |   188 | [PULL REQUEST](#pull-request)  |   193 |
-| [PHOENIXD](#phoenixd)          |   188 | [PYTHON](#python)              |   193 |
+| [P2P TRANSPORT V2](#p2p-transport-v2) |   178 | [PIZZA DAY](#pizza-day)        |   189 |
+| [P2MS](#p2ms)                  |   178 | [POINT D'ENTRÉE](#point-dentrée) |   189 |
+| [P2SH](#p2sh)                  |   179 | [POLICY (MINISCRIPT)](#policy-miniscript) |   190 |
+| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   179 | [POOL](#pool)                  |   190 |
+| [P2SH-P2WSH](#p2sh-p2wsh)      |   179 | [POOL DE MINAGE](#pool-de-minage) |   190 |
+| [P2TR](#p2tr)                  |   180 | [POOL HOPPING](#pool-hopping)  |   191 |
+| [P2WPKH](#p2wpkh)              |   180 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   191 |
+| [P2WSH](#p2wsh)                |   181 | [PORTEFEUILLE](#portefeuille)  |   191 |
+| [PAIEMENT ROND](#paiement-rond) |   181 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   191 |
+| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   182 | [PORTEFEUILLE FROID](#portefeuille-froid) |   191 |
+| [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   183 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   192 |
+| [PAIR ENTRANT](#pair-entrant)  |   183 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   192 |
+| [PAIR SORTANT](#pair-sortant)  |   183 | [PPLNSG](#pplnsg)              |   192 |
+| [PASSPHRASE (BIP39)](#passphrase-bip39) |   183 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   192 |
+| [PATOSHI](#patoshi)            |   184 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   192 |
+| [PAYJOIN](#payjoin)            |   184 | [PREMIUM](#premium)            |   193 |
+| [PAYNYM](#paynym)              |   185 | [PREUVE DE RÉSERVES](#preuve-de-réserves) |   193 |
+| [PBKDF2](#pbkdf2)              |   186 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   193 |
+| [PEER DISCOVERY](#peer-discovery) |   186 | [PROFONDEUR](#profondeur)      |   193 |
+| [PEERS.DAT](#peers.dat)        |   186 | [PROOF-OF-WORK](#proof-of-work) |   193 |
+| [PERCOLATION](#percolation)    |   186 | [PROP (PROPORTIONAL)](#prop-proportional) |   193 |
+| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   187 | [PROPAGATION](#propagation)    |   193 |
+| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   187 | [PSBT](#psbt)                  |   194 |
+| [PETIT-BOUTISTE](#petit-boutiste) |   187 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   194 |
+| [PHOENIX](#phoenix)            |   188 | [PULL REQUEST](#pull-request)  |   194 |
+| [PHOENIXD](#phoenixd)          |   188 | [PYTHON](#python)              |   194 |
 | | | | |
 
 
@@ -565,7 +565,7 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [QR CODE](#qr-code)            |   195 | [QUBIT](#qubit)                |   195 |
+| [QR CODE](#qr-code)            |   196 | [QUBIT](#qubit)                |   196 |
 | | | | |
 
 
@@ -573,18 +573,18 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   197 | [RESYNCHRONISATION](#resynchronisation) |   200 |
-| [RAW TRANSACTION](#raw-transaction) |   197 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   200 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   197 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   201 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   197 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   202 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   197 | [RICOCHET](#ricochet)          |   202 |
-| [REDEEMSCRIPT](#redeemscript)  |   198 | [RIPEMD160](#ripemd160)        |   203 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   198 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   203 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   198 | [RPOW](#rpow)                  |   203 |
-| [REGTEST](#regtest)            |   199 | [RSMPPS](#rsmpps)              |   203 |
-| [RÉORGANISATION](#réorganisation) |   199 | [RUNES](#runes)                |   204 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   199 | [RUST](#rust)                  |   204 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   200 | [RUST-LIGHTNING](#rust-lightning) |   204 |
+| [RACINE DE MERKLE](#racine-de-merkle) |   198 | [RESYNCHRONISATION](#resynchronisation) |   201 |
+| [RAW TRANSACTION](#raw-transaction) |   198 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   201 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   198 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   202 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   198 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   203 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   198 | [RICOCHET](#ricochet)          |   203 |
+| [REDEEMSCRIPT](#redeemscript)  |   199 | [RIPEMD160](#ripemd160)        |   204 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   199 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   204 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   199 | [RPOW](#rpow)                  |   204 |
+| [REGTEST](#regtest)            |   200 | [RSMPPS](#rsmpps)              |   204 |
+| [RÉORGANISATION](#réorganisation) |   200 | [RUNES](#runes)                |   205 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   200 | [RUST](#rust)                  |   205 |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   201 | [RUST-LIGHTNING](#rust-lightning) |   205 |
 | | | | |
 
 
@@ -592,42 +592,42 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [SAMOURAI WALLET](#samourai-wallet) |   206 | [SIGHASH FLAG](#sighash-flag)  |   213 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   206 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   214 |
-| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   206 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   214 |
-| [SCALA](#scala)                |   206 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   214 |
-| [SCALABILITÉ](#scalabilité)    |   206 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   215 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   206 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   215 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   206 | [SIGNER À L'AVEUGLE](#signer-à-laveugle) |   215 |
-| [SCRIPT](#script)              |   207 | [SIGNET](#signet)              |   215 |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   207 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   215 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   207 | [SILK ROAD](#silk-road)        |   216 |
-| [SCRIPTSIG](#scriptsig)        |   207 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   216 |
-| [SCRIPTWITNESS](#scriptwitness) |   208 | [SLIP](#slip)                  |   216 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   208 | [SMPPS](#smpps)                |   217 |
-| [SECP256K1](#secp256k1)        |   208 | [SOFT FORK](#soft-fork)        |   217 |
-| [SECP256R1](#secp256r1)        |   209 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   217 |
-| [SEED](#seed)                  |   209 | [SOROBAN](#soroban)            |   217 |
-| [SEED NODES](#seed-nodes)      |   209 | [SORTIE (OUTPUT)](#sortie-output) |   217 |
-| [SEGWIT](#segwit)              |   209 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   218 |
-| [SEGWIT2X](#segwit2x)          |   210 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   218 |
-| [SEGWIT V0](#segwit-v0)        |   210 | [SPEEDY TRIAL](#speedy-trial)  |   218 |
-| [SEGWIT V1](#segwit-v1)        |   210 | [SPOF](#spof)                  |   219 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   210 | [SPREAD (WST)](#spread-wst)    |   219 |
-| [SELF-CUSTODY](#self-custody)  |   210 | [STABLECOIN](#stablecoin)      |   219 |
-| [SELFISH MINING](#selfish-mining) |   210 | [STALE BLOCK](#stale-block)    |   220 |
-| [SETTINGS.JSON](#settings.json) |   211 | [STAMPS](#stamps)              |   220 |
-| [SHA256](#sha256)              |   211 | [STONEWALL](#stonewall)        |   220 |
-| [SHA512](#sha512)              |   211 | [STONEWALL X2](#stonewall-x2)  |   220 |
-| [SHARES](#shares)              |   212 | [STRATUM](#stratum)            |   221 |
-| [SHAREDCOIN](#sharedcoin)      |   212 | [STRATUM V2](#stratum-v2)      |   222 |
-| [SHITCOIN](#shitcoin)          |   212 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   222 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   212 | [SURCOUCHE (LAYER)](#surcouche-layer) |   222 |
-| [SIDECHAIN](#sidechain)        |   212 | [SURFACE D'ATTAQUE](#surface-dattaque) |   222 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   213 | [SWEEP TRANSACTION](#sweep-transaction) |   222 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   213 | [SYBIL (ATTAQUE)](#sybil-attaque) |   223 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   213 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   223 |
-| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   213 |                                |       |
+| [SAMOURAI WALLET](#samourai-wallet) |   207 | [SIGHASH FLAG](#sighash-flag)  |   214 |
+| [SATOSHI (SAT)](#satoshi-sat)  |   207 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   215 |
+| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   207 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   215 |
+| [SCALA](#scala)                |   207 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   215 |
+| [SCALABILITÉ](#scalabilité)    |   207 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   216 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   207 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   216 |
+| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   207 | [SIGNER À L'AVEUGLE](#signer-à-laveugle) |   216 |
+| [SCRIPT](#script)              |   208 | [SIGNET](#signet)              |   216 |
+| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   208 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   216 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   208 | [SILK ROAD](#silk-road)        |   217 |
+| [SCRIPTSIG](#scriptsig)        |   208 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   217 |
+| [SCRIPTWITNESS](#scriptwitness) |   209 | [SLIP](#slip)                  |   217 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   209 | [SMPPS](#smpps)                |   218 |
+| [SECP256K1](#secp256k1)        |   209 | [SOFT FORK](#soft-fork)        |   218 |
+| [SECP256R1](#secp256r1)        |   210 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   218 |
+| [SEED](#seed)                  |   210 | [SOROBAN](#soroban)            |   218 |
+| [SEED NODES](#seed-nodes)      |   210 | [SORTIE (OUTPUT)](#sortie-output) |   218 |
+| [SEGWIT](#segwit)              |   210 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   219 |
+| [SEGWIT2X](#segwit2x)          |   211 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   219 |
+| [SEGWIT V0](#segwit-v0)        |   211 | [SPEEDY TRIAL](#speedy-trial)  |   219 |
+| [SEGWIT V1](#segwit-v1)        |   211 | [SPOF](#spof)                  |   220 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   211 | [SPREAD (WST)](#spread-wst)    |   220 |
+| [SELF-CUSTODY](#self-custody)  |   211 | [STABLECOIN](#stablecoin)      |   220 |
+| [SELFISH MINING](#selfish-mining) |   211 | [STALE BLOCK](#stale-block)    |   221 |
+| [SETTINGS.JSON](#settings.json) |   212 | [STAMPS](#stamps)              |   221 |
+| [SHA256](#sha256)              |   212 | [STONEWALL](#stonewall)        |   221 |
+| [SHA512](#sha512)              |   212 | [STONEWALL X2](#stonewall-x2)  |   221 |
+| [SHARES](#shares)              |   213 | [STRATUM](#stratum)            |   222 |
+| [SHAREDCOIN](#sharedcoin)      |   213 | [STRATUM V2](#stratum-v2)      |   223 |
+| [SHITCOIN](#shitcoin)          |   213 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   223 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   213 | [SURCOUCHE (LAYER)](#surcouche-layer) |   223 |
+| [SIDECHAIN](#sidechain)        |   213 | [SURFACE D'ATTAQUE](#surface-dattaque) |   223 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   214 | [SWEEP TRANSACTION](#sweep-transaction) |   223 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   214 | [SYBIL (ATTAQUE)](#sybil-attaque) |   224 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   214 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   224 |
+| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   214 |                                |       |
 | | | | |
 
 
@@ -635,18 +635,18 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   225 | [TPUB](#tpub)                  |   227 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   225 | [TRANSACTION (TX)](#transaction-tx) |   227 |
-| [TAPSCRIPT](#tapscript)        |   225 | [TRANSACTION COINBASE](#transaction-coinbase) |   227 |
-| [TARO](#taro)                  |   225 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   228 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   225 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   228 |
-| [TCP](#tcp)                    |   226 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   228 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   226 | [TRANSACTION STANDARD](#transaction-standard) |   228 |
-| [TESTNET](#testnet)            |   226 | [TUMBLEBIT](#tumblebit)        |   228 |
-| [TIDES](#tides)                |   226 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   228 |
-| [TIMELOCK](#timelock)          |   226 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   229 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   227 | [TYPE DE DEVISE](#type-de-devise) |   229 |
-| [TPRV](#tprv)                  |   227 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   230 |
+| [TAPROOT](#taproot)            |   226 | [TPUB](#tpub)                  |   228 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   226 | [TRANSACTION (TX)](#transaction-tx) |   228 |
+| [TAPSCRIPT](#tapscript)        |   226 | [TRANSACTION COINBASE](#transaction-coinbase) |   228 |
+| [TARO](#taro)                  |   226 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   229 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   226 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   229 |
+| [TCP](#tcp)                    |   227 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   229 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   227 | [TRANSACTION STANDARD](#transaction-standard) |   229 |
+| [TESTNET](#testnet)            |   227 | [TUMBLEBIT](#tumblebit)        |   229 |
+| [TIDES](#tides)                |   227 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   229 |
+| [TIMELOCK](#timelock)          |   227 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   230 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   228 | [TYPE DE DEVISE](#type-de-devise) |   230 |
+| [TPRV](#tprv)                  |   228 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   231 |
 | | | | |
 
 
@@ -654,11 +654,11 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   232 | [URI](#uri)                    |   232 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   232 | [UTREEXO](#utreexo)            |   233 |
-| [UNIX](#unix)                  |   232 | [UTXO](#utxo)                  |   234 |
-| [UPRV](#uprv)                  |   232 | [UTXO SET](#utxo-set)          |   234 |
-| [UPUB](#upub)                  |   232 |                                |       |
+| [UASF](#uasf)                  |   233 | [URI](#uri)                    |   233 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   233 | [UTREEXO](#utreexo)            |   234 |
+| [UNIX](#unix)                  |   233 | [UTXO](#utxo)                  |   235 |
+| [UPRV](#uprv)                  |   233 | [UTXO SET](#utxo-set)          |   235 |
+| [UPUB](#upub)                  |   233 |                                |       |
 | | | | |
 
 
@@ -666,10 +666,10 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   236 | [VOUT](#vout)                  |   237 |
-| [VANITYGEN](#vanitygen)        |   236 | [VPRV](#vprv)                  |   237 |
-| [VERSIONNAGE](#versionnage)    |   236 | [VPUB](#vpub)                  |   237 |
-| [VIN](#vin)                    |   236 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   237 | [VOUT](#vout)                  |   238 |
+| [VANITYGEN](#vanitygen)        |   237 | [VPRV](#vprv)                  |   238 |
+| [VERSIONNAGE](#versionnage)    |   237 | [VPUB](#vpub)                  |   238 |
+| [VIN](#vin)                    |   237 |                                |       |
 | | | | |
 
 
@@ -677,14 +677,14 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   239 | [WATCHTOWER](#watchtower)      |   240 |
-| [WALLET](#wallet)              |   239 | [WHALE](#whale)                |   240 |
-| [WALLET.DAT](#wallet.dat)      |   239 | [WHIRLPOOL](#whirlpool)        |   240 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   239 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   240 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   239 | [WHITE PAPER](#white-paper)    |   240 |
-| [WASABI WALLET](#wasabi-wallet) |   239 | [WITNESSSCRIPT](#witnessscript) |   240 |
-| [WATCHMEN](#watchmen)          |   239 | [WTXID](#wtxid)                |   240 |
-| [WATCH-ONLY WALLET](#watch-only-wallet) |   240 | [WUMBO CHANNEL](#wumbo-channel) |   241 |
+| [WABISABI](#wabisabi)          |   240 | [WATCHTOWER](#watchtower)      |   241 |
+| [WALLET](#wallet)              |   240 | [WHALE](#whale)                |   241 |
+| [WALLET.DAT](#wallet.dat)      |   240 | [WHIRLPOOL](#whirlpool)        |   241 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   240 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   241 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   240 | [WHITE PAPER](#white-paper)    |   241 |
+| [WASABI WALLET](#wasabi-wallet) |   240 | [WITNESSSCRIPT](#witnessscript) |   241 |
+| [WATCHMEN](#watchmen)          |   240 | [WTXID](#wtxid)                |   241 |
+| [WATCH-ONLY WALLET](#watch-only-wallet) |   241 | [WUMBO CHANNEL](#wumbo-channel) |   242 |
 | | | | |
 
 
@@ -692,8 +692,8 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XOR](#xor)                    |   243 | [XPUB](#xpub)                  |   243 |
-| [XPRV](#xprv)                  |   243 |                                |       |
+| [XOR](#xor)                    |   244 | [XPUB](#xpub)                  |   244 |
+| [XPRV](#xprv)                  |   244 |                                |       |
 | | | | |
 
 
@@ -701,7 +701,7 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   245 | [YPUB](#ypub)                  |   245 |
+| [YPRV](#yprv)                  |   246 | [YPUB](#ypub)                  |   246 |
 | | | | |
 
 
@@ -709,9 +709,9 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   247 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   247 |
-| [ZEROLINK](#zerolink)          |   247 | [ZPRV](#zprv)                  |   247 |
-| [ZEROSYNC](#zerosync)          |   247 | [ZPUB](#zpub)                  |   248 |
+| [ZEROCONF](#zeroconf)          |   248 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   248 |
+| [ZEROLINK](#zerolink)          |   248 | [ZPRV](#zprv)                  |   248 |
+| [ZEROSYNC](#zerosync)          |   248 | [ZPUB](#zpub)                  |   249 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -4023,9 +4023,9 @@ Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle 
 
 ## OPCODES
 
-Ensemble des commandes utilisées dans le système Script de Bitcoin. Script est un langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Les instructions utilisées en langage Script sont appelées « OPcodes ». Ce sont des opérateurs logiques et des commandes pour manipuler la pile (stack). Ces instructions spécifiques sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
+Ensemble des commandes utilisées dans le système script de Bitcoin. Script est un langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Les instructions utilisées en langage script sont appelées « OPcodes ». Ce sont des opérateurs logiques et des commandes pour manipuler les piles (stacks). Ces instructions spécifiques sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
 
-> *« OPcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « OPcode » dans le langage courant.*
+> *« OPcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « OPcode » dans le langage courant. Pour plus d'informations, voir les définitions de **[PILE (STACK)](#pile-stack)** et **[SCRIPT](#script)**.*
 
 ## OPEN ASSETS PROTOCOL (OAP)
 
@@ -4399,9 +4399,11 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 ## PHOENIX
 
+Logiciel de portefeuille mobile sefl-custodial conçu pour simplifier et rendre plus accessible les transactions sur le protocole Lightning. Il permet aux utilisateurs de gérer leurs fonds directement depuis leurs appareils mobiles sans nécessiter la connexion à un nœud Lightning séparé. Phoenix fonctionne en fait comme un véritable nœud Lightning autonome sur le téléphone (implémentation éclair). Il prend en charge les transactions Bitcoin et Lightning, et offre des fonctionnalités pour faciliter la gestion du nœud telles que la gestion automatique des canaux avec le nœud d'Acinq. Contrairement aux autres applications de portefeuille Lightning, qui sont pour la plupart custodiales, Phoenix offre un compromis intéressant en combinant l'utilisation d'un nœud Lightning avec la commodité d'une application pour smartphone. C'est une des meilleures solution simples à prendre en main pour un débutant qui souhaite utiliser Lightning tout en conservant la pleine possession de ses bitcoins (self-custody). Phoenix est un projet développé et maintenu par l'entreprise française Acinq.
 
 ## PHOENIXD
 
+Implémentation spécialisée d'un nœud Lightning (éclair), conçue pour envoyer et recevoir des paiements depuis un serveur. Phoenixd utilise le même logiciel que le portefeuille/nœud mobile Phoenix, mais à la différence de ce dernier, qui est exclusivement destiné aux smartphones, phoenixd est capable de fonctionner sur un serveur sous forme de daemon. Au lieu de posséder une interface graphique utilisateur (GUI), il est équipé d'une interface API HTTP et prend en charge la gestion automatique des canaux et de la liquidité. Phoenixd est un projet développé et maintenu par l'entreprise française Acinq.
 
 ## PHRASE DE RÉCUPÉRATION
 
@@ -4409,9 +4411,17 @@ Une phrase de récupération, également parfois nommée comme mnémonique, seed
 
 ## PILE (STACK)
 
+Dans le contexte du langage script utilisé pour apposer des conditions de dépense sur des UTXOs Bitcoin, la pile est une structure de données de type « LIFO » (*Last In, First Out*) qui sert à stocker des éléments temporaires pendant l'exécution d'un script. Chaque opération dans le script manipule ces piles, où les éléments peuvent être ajoutés (*push*) ou retirés (*pop*). Les scripts utilisent les piles pour évaluer les expressions, stocker des variables temporaires, et gérer les conditions. 
+
+Dans l'exécution d'un script Bitcoin, 2 piles peuvent être utilisées : la pile principale et la pile alt (alternative). La pile principale est utilisée pour la majorité des opérations d'un script. C'est sur cette pile que les opérations de script ajoutent, retirent ou manipulent des données. La pile alternative, quant à elle, sert à stocker temporairement des données pendant l'exécution du script. Certains opcodes spécifiques, comme `OP_TOALTSTACK` et `OP_FROMALTSTACK`, permettent de transférer des éléments de la pile principale vers la pile alternative et vice versa.
+
+Par exemple, lors de la validation d'une transaction, les signatures et les clés publiques sont poussées sur la pile principale et traitées par des opcodes successifs pour vérifier que les signatures correspondent aux clés et aux données de la transaction.
+
+> *En anglais, la traduction de « pile » est « stack ». On utilise généralement le terme anglais même en français lors de discussions techniques. Pour plus d'informations, voir les définitions de **[SCRIPT](#script)** et **[OPCODES](#opcodes)**.*
 
 ## PIZZA DAY
 
+Évènement célébré chaque 22 mai par la communauté Bitcoin qui commémore la première transaction de bitcoins contre un bien physique. En 2010, Laszlo Hanyecz, développeur et pionnier de Bitcoin, [a proposé sur le forum BitcoinTalk](https://bitcointalk.org/index.php?topic=137.msg1141#msg1141) d'acheter deux grandes pizzas pour 10 000 BTC, alors équivalents à environ 40 dollars. Le 22 mai, il a confirmé que l'offre avait été acceptée par un étudiant californien de 19 ans, Jeremy Sturdivant, connu sous le pseudonyme de Jercos. Celui-ci a commandé et fait livrer les pizzas de chez Papa John's à Laszlo en Floride. Ce jour marque un moment important pour Bitcoin en démontrant son potentiel en tant que monnaie d'échange. Chaque année, la communauté célèbre cet événement en consommant des pizzas payées en bitcoins.
 
 ## POINT D'ENTRÉE
 
@@ -4730,7 +4740,9 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 
 ## SCRIPT
 
-Langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Script est essentiellement une liste d'instructions, composée d'opérateurs logiques et de commandes pour manipuler la pile (stack). Il se matérialise par l'utilisation d'OPcodes qui donnent des instructions spécifiques qui sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
+Langage de programmation à piles utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Script est essentiellement une liste d'instructions, composée d'opérateurs logiques et de commandes pour manipuler les piles (stacks). Il se matérialise par l'utilisation d'OPcodes qui donnent des instructions spécifiques qui sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
+
+> *Pour plus d'informations, voir les définitions de **[PILE (STACK)](#pile-stack)** et **[OPCODES](#opcodes)**.*
 
 ## SCRIPTLESS SCRIPTS
 
