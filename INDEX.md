@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 734 `**
+**Nombre total de définitions : ` 735 `**
 
 ### A
 
@@ -283,9 +283,10 @@
 - [ECLAIR](./dictionnaire/E.md#eclair)
 - [ECLIPSE (ATTAQUE)](./dictionnaire/E.md#eclipse-attaque)
 - [ÉCOLE AUTRICHIENNE](./dictionnaire/E.md#école-autrichienne)
+- [ELECTRS](./dictionnaire/E.md#electrs)
 - [ELECTRUM](./dictionnaire/E.md#electrum)
 - [ELECTRUM LIGHTNING](./dictionnaire/E.md#electrum-lightning)
-- [ELECTRUM SERVER (ELECTRS)](./dictionnaire/E.md#electrum-server-electrs)
+- [ELECTRUM SERVER](./dictionnaire/E.md#electrum-server)
 - [ELTOO](./dictionnaire/E.md#eltoo)
 - [EMBRANCHEMENT NATUREL](./dictionnaire/E.md#embranchement-naturel)
 - [EMPREINTE DE PORTEFEUILLE](./dictionnaire/E.md#empreinte-de-portefeuille)
