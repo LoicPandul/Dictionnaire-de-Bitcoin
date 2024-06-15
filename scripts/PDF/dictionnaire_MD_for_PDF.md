@@ -19,7 +19,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 15 juin 2024\newline
+Version du 16 juin 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -261,40 +261,41 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [C (LANGAGE)](#c-langage)      |    68 | [COINMUX](#coinmux)            |    83 |
-| [C++ (PLUS PLUS)](#c-plus-plus) |    68 | [COINS/](#coins)               |    83 |
-| [CAHOOTS](#cahoots)            |    68 | [COINSHUFFLE](#coinshuffle)    |    83 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    68 | [COLD WALLET](#cold-wallet)    |    84 |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    68 | [COLORED COINS](#colored-coins) |    84 |
-| [CASHU](#cashu)                |    69 | [COMMERÇANT](#commerçant)      |    84 |
-| [CET](#cet)                    |    69 | [COMMIT](#commit)              |    84 |
-| [CHAINE EXTERNE](#chaine-externe) |    69 | [COMPACT BLOCK RELAY](#compact-block-relay) |    84 |
-| [CHAINE INTERNE](#chaine-interne) |    70 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    85 |
-| [CHANNEL FACTORIES](#channel-factories) |    71 | [COMPTE](#compte)              |    85 |
-| [CHAINSPLIT](#chainsplit)      |    71 | [CONCATÉNATION](#concaténation) |    86 |
-| [CHAINSTATE/](#chainstate)     |    71 | [CONDENSAT (HASH)](#condensat-hash) |    86 |
-| [CHANGE (MONNAIE)](#change-monnaie) |    72 | [CONFIRMATION](#confirmation)  |    86 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    72 | [CONSENSUS](#consensus)        |    87 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    73 | [CONSOLIDATION](#consolidation) |    87 |
-| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    73 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    88 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    74 | [CONTRIBUTEUR (CORE)](#contributeur-core) |    88 |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    74 | [COOKIE (.COOKIE)](#cookie-.cookie) |    88 |
-| [CIOH](#cioh)                  |    75 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    89 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    76 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    89 |
-| [CLÉ MAITRESSE](#clé-maitresse) |    77 | [COVENANT](#covenant)          |    89 |
-| [CLÉ PRIVÉE](#clé-privée)      |    78 | [COVERT ASICBOOST](#covert-asicboost) |    90 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    78 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    90 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    79 | [CPPSRB](#cppsrb)              |    90 |
-| [CLI](#cli)                    |    80 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    90 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    80 | [CRYPTANALYSE](#cryptanalyse)  |    91 |
-| [CLONE](#clone)                |    80 | [CRYPTER](#crypter)            |    91 |
-| [CLUSTER](#cluster)            |    80 | [CRYPTO-ACTIF](#crypto-actif)  |    91 |
-| [CODE DE CHAINE](#code-de-chaine) |    80 | [CRYPTOGRAPHIE](#cryptographie) |    91 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    81 | [CRYPTOLOGIE](#cryptologie)    |    91 |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) |    81 | [CRYPTOMONNAIE](#cryptomonnaie) |    91 |
-| [COIN CONTROL](#coin-control)  |    81 | [C SHARP](#c-sharp)            |    91 |
-| [COINJOIN](#coinjoin)          |    82 | [CUSTODY](#custody)            |    91 |
-| [COINJUMBLE](#coinjumble)      |    83 | [CYPHERPUNK](#cypherpunk)      |    92 |
+| [C (LANGAGE)](#c-langage)      |    68 | [COINJUMBLE](#coinjumble)      |    83 |
+| [C++ (PLUS PLUS)](#c-plus-plus) |    68 | [COINMUX](#coinmux)            |    84 |
+| [CAHOOTS](#cahoots)            |    68 | [COINS/](#coins)               |    84 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |    68 | [COINSHUFFLE](#coinshuffle)    |    84 |
+| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    68 | [COLD WALLET](#cold-wallet)    |    84 |
+| [CASHU](#cashu)                |    69 | [COLORED COINS](#colored-coins) |    84 |
+| [CET](#cet)                    |    69 | [COMMERÇANT](#commerçant)      |    85 |
+| [CHAINE EXTERNE](#chaine-externe) |    69 | [COMMIT](#commit)              |    85 |
+| [CHAINE INTERNE](#chaine-interne) |    70 | [COMPACT BLOCK RELAY](#compact-block-relay) |    85 |
+| [CHANNEL FACTORIES](#channel-factories) |    71 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    85 |
+| [CHAINSPLIT](#chainsplit)      |    71 | [COMPTE](#compte)              |    86 |
+| [CHAINSTATE/](#chainstate)     |    71 | [CONCATÉNATION](#concaténation) |    86 |
+| [CHANGE (MONNAIE)](#change-monnaie) |    72 | [CONDENSAT (HASH)](#condensat-hash) |    86 |
+| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    72 | [CONFIRMATION](#confirmation)  |    87 |
+| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    73 | [CONSENSUS](#consensus)        |    87 |
+| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    73 | [CONSOLIDATION](#consolidation) |    87 |
+| [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    74 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    88 |
+| [CHEMIN PRIMAIRE](#chemin-primaire) |    75 | [CONTRIBUTEUR (CORE)](#contributeur-core) |    88 |
+| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    75 | [COOKIE (.COOKIE)](#cookie-.cookie) |    88 |
+| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    75 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    89 |
+| [CIOH](#cioh)                  |    75 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    89 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    76 | [COVENANT](#covenant)          |    89 |
+| [CLÉ MAITRESSE](#clé-maitresse) |    77 | [COVERT ASICBOOST](#covert-asicboost) |    90 |
+| [CLÉ PRIVÉE](#clé-privée)      |    78 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    90 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    78 | [CPPSRB](#cppsrb)              |    90 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    79 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    90 |
+| [CLI](#cli)                    |    80 | [CRYPTANALYSE](#cryptanalyse)  |    91 |
+| [C-LIGHTNING (CLN)](#c-lightning-cln) |    80 | [CRYPTER](#crypter)            |    91 |
+| [CLONE](#clone)                |    80 | [CRYPTO-ACTIF](#crypto-actif)  |    91 |
+| [CLUSTER](#cluster)            |    80 | [CRYPTOGRAPHIE](#cryptographie) |    91 |
+| [CODE DE CHAINE](#code-de-chaine) |    80 | [CRYPTOLOGIE](#cryptologie)    |    91 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    81 | [CRYPTOMONNAIE](#cryptomonnaie) |    91 |
+| [COINBASE (TRANSACTION)](#coinbase-transaction) |    81 | [C SHARP](#c-sharp)            |    91 |
+| [COIN CONTROL](#coin-control)  |    82 | [CUSTODY](#custody)            |    91 |
+| [COINJOIN](#coinjoin)          |    82 | [CYPHERPUNK](#cypherpunk)      |    92 |
 | | | | |
 
 
@@ -443,14 +444,14 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   142 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   146 |
 | [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   142 | [MINEUR](#mineur)              |   147 |
 | [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   142 | [MINISCRIPT](#miniscript)      |   147 |
-| [MAPPER (TO MAP)](#mapper-to-map) |   142 | [MINITAPSCRIPT](#minitapscript) |   147 |
-| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   143 | [MIT X11](#mit-x11)            |   147 |
+| [MAPPER (TO MAP)](#mapper-to-map) |   142 | [MINITAPSCRIPT](#minitapscript) |   148 |
+| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   143 | [MIT X11](#mit-x11)            |   148 |
 | [MASF](#masf)                  |   143 | [MIXAGE](#mixage)              |   148 |
 | [MAST](#mast)                  |   143 | [MODÈLE DE SCRIPT](#modèle-de-script) |   148 |
-| [MASTER FINGERPRINT](#master-fingerprint) |   143 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   148 |
-| [MAX_BLOC_SIZE](#max_bloc_size) |   143 | [MODÈLE TEMPOREL](#modèle-temporel) |   148 |
+| [MASTER FINGERPRINT](#master-fingerprint) |   143 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   149 |
+| [MAX_BLOC_SIZE](#max_bloc_size) |   143 | [MODÈLE TEMPOREL](#modèle-temporel) |   149 |
 | [MEMPOOL](#mempool)            |   144 | [M-OF-N](#m-of-n)              |   149 |
-| [MEMPOOL.DAT](#mempool.dat)    |   144 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   149 |
+| [MEMPOOL.DAT](#mempool.dat)    |   144 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   150 |
 | [MERGE](#merge)                |   144 | [MULTISIG](#multisig)          |   150 |
 | [MERKLE BLOCK](#merkle-block)  |   144 |                                |       |
 | | | | |
@@ -535,29 +536,29 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | [P2P TRANSPORT V2](#p2p-transport-v2) |   178 | [PIZZA DAY](#pizza-day)        |   189 |
 | [P2MS](#p2ms)                  |   178 | [POINT D'ENTRÉE](#point-dentrée) |   189 |
 | [P2SH](#p2sh)                  |   179 | [POLICY (MINISCRIPT)](#policy-miniscript) |   190 |
-| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   179 | [POOL](#pool)                  |   190 |
-| [P2SH-P2WSH](#p2sh-p2wsh)      |   179 | [POOL DE MINAGE](#pool-de-minage) |   190 |
+| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   179 | [POOL](#pool)                  |   191 |
+| [P2SH-P2WSH](#p2sh-p2wsh)      |   179 | [POOL DE MINAGE](#pool-de-minage) |   191 |
 | [P2TR](#p2tr)                  |   180 | [POOL HOPPING](#pool-hopping)  |   191 |
-| [P2WPKH](#p2wpkh)              |   180 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   191 |
-| [P2WSH](#p2wsh)                |   181 | [PORTEFEUILLE](#portefeuille)  |   191 |
-| [PAIEMENT ROND](#paiement-rond) |   181 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   191 |
-| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   182 | [PORTEFEUILLE FROID](#portefeuille-froid) |   191 |
+| [P2WPKH](#p2wpkh)              |   180 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   192 |
+| [P2WSH](#p2wsh)                |   181 | [PORTEFEUILLE](#portefeuille)  |   192 |
+| [PAIEMENT ROND](#paiement-rond) |   181 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   192 |
+| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   182 | [PORTEFEUILLE FROID](#portefeuille-froid) |   192 |
 | [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   183 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   192 |
-| [PAIR ENTRANT](#pair-entrant)  |   183 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   192 |
-| [PAIR SORTANT](#pair-sortant)  |   183 | [PPLNSG](#pplnsg)              |   192 |
-| [PASSPHRASE (BIP39)](#passphrase-bip39) |   183 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   192 |
-| [PATOSHI](#patoshi)            |   184 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   192 |
+| [PAIR ENTRANT](#pair-entrant)  |   183 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   193 |
+| [PAIR SORTANT](#pair-sortant)  |   183 | [PPLNSG](#pplnsg)              |   193 |
+| [PASSPHRASE (BIP39)](#passphrase-bip39) |   183 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   193 |
+| [PATOSHI](#patoshi)            |   184 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   193 |
 | [PAYJOIN](#payjoin)            |   184 | [PREMIUM](#premium)            |   193 |
-| [PAYNYM](#paynym)              |   185 | [PREUVE DE RÉSERVES](#preuve-de-réserves) |   193 |
-| [PBKDF2](#pbkdf2)              |   186 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   193 |
-| [PEER DISCOVERY](#peer-discovery) |   186 | [PROFONDEUR](#profondeur)      |   193 |
-| [PEERS.DAT](#peers.dat)        |   186 | [PROOF-OF-WORK](#proof-of-work) |   193 |
-| [PERCOLATION](#percolation)    |   186 | [PROP (PROPORTIONAL)](#prop-proportional) |   193 |
-| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   187 | [PROPAGATION](#propagation)    |   193 |
-| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   187 | [PSBT](#psbt)                  |   194 |
-| [PETIT-BOUTISTE](#petit-boutiste) |   187 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   194 |
-| [PHOENIX](#phoenix)            |   188 | [PULL REQUEST](#pull-request)  |   194 |
-| [PHOENIXD](#phoenixd)          |   188 | [PYTHON](#python)              |   194 |
+| [PAYNYM](#paynym)              |   185 | [PREUVE DE RÉSERVES](#preuve-de-réserves) |   194 |
+| [PBKDF2](#pbkdf2)              |   186 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   194 |
+| [PEER DISCOVERY](#peer-discovery) |   186 | [PROFONDEUR](#profondeur)      |   194 |
+| [PEERS.DAT](#peers.dat)        |   186 | [PROOF-OF-WORK](#proof-of-work) |   194 |
+| [PERCOLATION](#percolation)    |   186 | [PROP (PROPORTIONAL)](#prop-proportional) |   195 |
+| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   187 | [PROPAGATION](#propagation)    |   195 |
+| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   187 | [PSBT](#psbt)                  |   195 |
+| [PETIT-BOUTISTE](#petit-boutiste) |   187 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   195 |
+| [PHOENIX](#phoenix)            |   188 | [PULL REQUEST](#pull-request)  |   195 |
+| [PHOENIXD](#phoenixd)          |   188 | [PYTHON](#python)              |   195 |
 | | | | |
 
 
@@ -565,7 +566,7 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [QR CODE](#qr-code)            |   196 | [QUBIT](#qubit)                |   196 |
+| [QR CODE](#qr-code)            |   197 | [QUBIT](#qubit)                |   197 |
 | | | | |
 
 
@@ -573,18 +574,18 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   198 | [RESYNCHRONISATION](#resynchronisation) |   201 |
-| [RAW TRANSACTION](#raw-transaction) |   198 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   201 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   198 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   202 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   198 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   203 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   198 | [RICOCHET](#ricochet)          |   203 |
-| [REDEEMSCRIPT](#redeemscript)  |   199 | [RIPEMD160](#ripemd160)        |   204 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   199 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   204 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   199 | [RPOW](#rpow)                  |   204 |
-| [REGTEST](#regtest)            |   200 | [RSMPPS](#rsmpps)              |   204 |
-| [RÉORGANISATION](#réorganisation) |   200 | [RUNES](#runes)                |   205 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   200 | [RUST](#rust)                  |   205 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   201 | [RUST-LIGHTNING](#rust-lightning) |   205 |
+| [RACINE DE MERKLE](#racine-de-merkle) |   199 | [RESYNCHRONISATION](#resynchronisation) |   202 |
+| [RAW TRANSACTION](#raw-transaction) |   199 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   202 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   199 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   203 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   199 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   204 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   199 | [RICOCHET](#ricochet)          |   204 |
+| [REDEEMSCRIPT](#redeemscript)  |   200 | [RIPEMD160](#ripemd160)        |   205 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   200 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   205 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   200 | [RPOW](#rpow)                  |   205 |
+| [REGTEST](#regtest)            |   201 | [RSMPPS](#rsmpps)              |   205 |
+| [RÉORGANISATION](#réorganisation) |   201 | [RUNES](#runes)                |   206 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   201 | [RUST](#rust)                  |   206 |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   202 | [RUST-LIGHTNING](#rust-lightning) |   206 |
 | | | | |
 
 
@@ -592,42 +593,42 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [SAMOURAI WALLET](#samourai-wallet) |   207 | [SIGHASH FLAG](#sighash-flag)  |   214 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   207 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   215 |
-| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   207 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   215 |
-| [SCALA](#scala)                |   207 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   215 |
-| [SCALABILITÉ](#scalabilité)    |   207 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   216 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   207 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   216 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   207 | [SIGNER À L'AVEUGLE](#signer-à-laveugle) |   216 |
-| [SCRIPT](#script)              |   208 | [SIGNET](#signet)              |   216 |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   208 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   216 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   208 | [SILK ROAD](#silk-road)        |   217 |
-| [SCRIPTSIG](#scriptsig)        |   208 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   217 |
-| [SCRIPTWITNESS](#scriptwitness) |   209 | [SLIP](#slip)                  |   217 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   209 | [SMPPS](#smpps)                |   218 |
-| [SECP256K1](#secp256k1)        |   209 | [SOFT FORK](#soft-fork)        |   218 |
-| [SECP256R1](#secp256r1)        |   210 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   218 |
-| [SEED](#seed)                  |   210 | [SOROBAN](#soroban)            |   218 |
-| [SEED NODES](#seed-nodes)      |   210 | [SORTIE (OUTPUT)](#sortie-output) |   218 |
-| [SEGWIT](#segwit)              |   210 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   219 |
-| [SEGWIT2X](#segwit2x)          |   211 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   219 |
-| [SEGWIT V0](#segwit-v0)        |   211 | [SPEEDY TRIAL](#speedy-trial)  |   219 |
-| [SEGWIT V1](#segwit-v1)        |   211 | [SPOF](#spof)                  |   220 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   211 | [SPREAD (WST)](#spread-wst)    |   220 |
-| [SELF-CUSTODY](#self-custody)  |   211 | [STABLECOIN](#stablecoin)      |   220 |
-| [SELFISH MINING](#selfish-mining) |   211 | [STALE BLOCK](#stale-block)    |   221 |
-| [SETTINGS.JSON](#settings.json) |   212 | [STAMPS](#stamps)              |   221 |
-| [SHA256](#sha256)              |   212 | [STONEWALL](#stonewall)        |   221 |
-| [SHA512](#sha512)              |   212 | [STONEWALL X2](#stonewall-x2)  |   221 |
-| [SHARES](#shares)              |   213 | [STRATUM](#stratum)            |   222 |
-| [SHAREDCOIN](#sharedcoin)      |   213 | [STRATUM V2](#stratum-v2)      |   223 |
-| [SHITCOIN](#shitcoin)          |   213 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   223 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   213 | [SURCOUCHE (LAYER)](#surcouche-layer) |   223 |
-| [SIDECHAIN](#sidechain)        |   213 | [SURFACE D'ATTAQUE](#surface-dattaque) |   223 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   214 | [SWEEP TRANSACTION](#sweep-transaction) |   223 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   214 | [SYBIL (ATTAQUE)](#sybil-attaque) |   224 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   214 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   224 |
-| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   214 |                                |       |
+| [SAMOURAI WALLET](#samourai-wallet) |   208 | [SIGHASH FLAG](#sighash-flag)  |   215 |
+| [SATOSHI (SAT)](#satoshi-sat)  |   208 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   216 |
+| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   208 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   216 |
+| [SCALA](#scala)                |   208 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   216 |
+| [SCALABILITÉ](#scalabilité)    |   208 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   217 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   208 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   217 |
+| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   208 | [SIGNER À L'AVEUGLE](#signer-à-laveugle) |   217 |
+| [SCRIPT](#script)              |   209 | [SIGNET](#signet)              |   217 |
+| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   209 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   217 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   209 | [SILK ROAD](#silk-road)        |   218 |
+| [SCRIPTSIG](#scriptsig)        |   209 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   218 |
+| [SCRIPTWITNESS](#scriptwitness) |   210 | [SLIP](#slip)                  |   218 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   210 | [SMPPS](#smpps)                |   219 |
+| [SECP256K1](#secp256k1)        |   210 | [SOFT FORK](#soft-fork)        |   219 |
+| [SECP256R1](#secp256r1)        |   211 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   219 |
+| [SEED](#seed)                  |   211 | [SOROBAN](#soroban)            |   219 |
+| [SEED NODES](#seed-nodes)      |   211 | [SORTIE (OUTPUT)](#sortie-output) |   219 |
+| [SEGWIT](#segwit)              |   211 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   220 |
+| [SEGWIT2X](#segwit2x)          |   212 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   220 |
+| [SEGWIT V0](#segwit-v0)        |   212 | [SPEEDY TRIAL](#speedy-trial)  |   220 |
+| [SEGWIT V1](#segwit-v1)        |   212 | [SPOF](#spof)                  |   221 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   212 | [SPREAD (WST)](#spread-wst)    |   221 |
+| [SELF-CUSTODY](#self-custody)  |   212 | [STABLECOIN](#stablecoin)      |   221 |
+| [SELFISH MINING](#selfish-mining) |   212 | [STALE BLOCK](#stale-block)    |   222 |
+| [SETTINGS.JSON](#settings.json) |   213 | [STAMPS](#stamps)              |   222 |
+| [SHA256](#sha256)              |   213 | [STONEWALL](#stonewall)        |   222 |
+| [SHA512](#sha512)              |   213 | [STONEWALL X2](#stonewall-x2)  |   222 |
+| [SHARES](#shares)              |   214 | [STRATUM](#stratum)            |   223 |
+| [SHAREDCOIN](#sharedcoin)      |   214 | [STRATUM V2](#stratum-v2)      |   224 |
+| [SHITCOIN](#shitcoin)          |   214 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   224 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   214 | [SURCOUCHE (LAYER)](#surcouche-layer) |   224 |
+| [SIDECHAIN](#sidechain)        |   214 | [SURFACE D'ATTAQUE](#surface-dattaque) |   224 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   215 | [SWEEP TRANSACTION](#sweep-transaction) |   224 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   215 | [SYBIL (ATTAQUE)](#sybil-attaque) |   225 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   215 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   225 |
+| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   215 |                                |       |
 | | | | |
 
 
@@ -635,18 +636,18 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   226 | [TPUB](#tpub)                  |   228 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   226 | [TRANSACTION (TX)](#transaction-tx) |   228 |
-| [TAPSCRIPT](#tapscript)        |   226 | [TRANSACTION COINBASE](#transaction-coinbase) |   228 |
-| [TARO](#taro)                  |   226 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   229 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   226 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   229 |
-| [TCP](#tcp)                    |   227 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   229 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   227 | [TRANSACTION STANDARD](#transaction-standard) |   229 |
-| [TESTNET](#testnet)            |   227 | [TUMBLEBIT](#tumblebit)        |   229 |
-| [TIDES](#tides)                |   227 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   229 |
-| [TIMELOCK](#timelock)          |   227 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   230 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   228 | [TYPE DE DEVISE](#type-de-devise) |   230 |
-| [TPRV](#tprv)                  |   228 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   231 |
+| [TAPROOT](#taproot)            |   227 | [TPUB](#tpub)                  |   229 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   227 | [TRANSACTION (TX)](#transaction-tx) |   229 |
+| [TAPSCRIPT](#tapscript)        |   227 | [TRANSACTION COINBASE](#transaction-coinbase) |   229 |
+| [TARO](#taro)                  |   227 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   230 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   227 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   230 |
+| [TCP](#tcp)                    |   228 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   230 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   228 | [TRANSACTION STANDARD](#transaction-standard) |   230 |
+| [TESTNET](#testnet)            |   228 | [TUMBLEBIT](#tumblebit)        |   230 |
+| [TIDES](#tides)                |   228 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   230 |
+| [TIMELOCK](#timelock)          |   228 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   231 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   229 | [TYPE DE DEVISE](#type-de-devise) |   231 |
+| [TPRV](#tprv)                  |   229 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   232 |
 | | | | |
 
 
@@ -654,11 +655,11 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   233 | [URI](#uri)                    |   233 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   233 | [UTREEXO](#utreexo)            |   234 |
-| [UNIX](#unix)                  |   233 | [UTXO](#utxo)                  |   235 |
-| [UPRV](#uprv)                  |   233 | [UTXO SET](#utxo-set)          |   235 |
-| [UPUB](#upub)                  |   233 |                                |       |
+| [UASF](#uasf)                  |   234 | [URI](#uri)                    |   234 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   234 | [UTREEXO](#utreexo)            |   235 |
+| [UNIX](#unix)                  |   234 | [UTXO](#utxo)                  |   236 |
+| [UPRV](#uprv)                  |   234 | [UTXO SET](#utxo-set)          |   236 |
+| [UPUB](#upub)                  |   234 |                                |       |
 | | | | |
 
 
@@ -666,10 +667,10 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   237 | [VOUT](#vout)                  |   238 |
-| [VANITYGEN](#vanitygen)        |   237 | [VPRV](#vprv)                  |   238 |
-| [VERSIONNAGE](#versionnage)    |   237 | [VPUB](#vpub)                  |   238 |
-| [VIN](#vin)                    |   237 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   238 | [VOUT](#vout)                  |   239 |
+| [VANITYGEN](#vanitygen)        |   238 | [VPRV](#vprv)                  |   239 |
+| [VERSIONNAGE](#versionnage)    |   238 | [VPUB](#vpub)                  |   239 |
+| [VIN](#vin)                    |   238 |                                |       |
 | | | | |
 
 
@@ -677,14 +678,14 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   240 | [WATCHTOWER](#watchtower)      |   241 |
-| [WALLET](#wallet)              |   240 | [WHALE](#whale)                |   241 |
-| [WALLET.DAT](#wallet.dat)      |   240 | [WHIRLPOOL](#whirlpool)        |   241 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   240 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   241 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   240 | [WHITE PAPER](#white-paper)    |   241 |
-| [WASABI WALLET](#wasabi-wallet) |   240 | [WITNESSSCRIPT](#witnessscript) |   241 |
-| [WATCHMEN](#watchmen)          |   240 | [WTXID](#wtxid)                |   241 |
-| [WATCH-ONLY WALLET](#watch-only-wallet) |   241 | [WUMBO CHANNEL](#wumbo-channel) |   242 |
+| [WABISABI](#wabisabi)          |   241 | [WATCHTOWER](#watchtower)      |   242 |
+| [WALLET](#wallet)              |   241 | [WHALE](#whale)                |   242 |
+| [WALLET.DAT](#wallet.dat)      |   241 | [WHIRLPOOL](#whirlpool)        |   242 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   241 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   242 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   241 | [WHITE PAPER](#white-paper)    |   242 |
+| [WASABI WALLET](#wasabi-wallet) |   241 | [WITNESSSCRIPT](#witnessscript) |   242 |
+| [WATCHMEN](#watchmen)          |   241 | [WTXID](#wtxid)                |   242 |
+| [WATCH-ONLY WALLET](#watch-only-wallet) |   242 | [WUMBO CHANNEL](#wumbo-channel) |   243 |
 | | | | |
 
 
@@ -692,8 +693,8 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XOR](#xor)                    |   244 | [XPUB](#xpub)                  |   244 |
-| [XPRV](#xprv)                  |   244 |                                |       |
+| [XOR](#xor)                    |   245 | [XPUB](#xpub)                  |   245 |
+| [XPRV](#xprv)                  |   245 |                                |       |
 | | | | |
 
 
@@ -701,7 +702,7 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   246 | [YPUB](#ypub)                  |   246 |
+| [YPRV](#yprv)                  |   247 | [YPUB](#ypub)                  |   247 |
 | | | | |
 
 
@@ -709,9 +710,9 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   248 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   248 |
-| [ZEROLINK](#zerolink)          |   248 | [ZPRV](#zprv)                  |   248 |
-| [ZEROSYNC](#zerosync)          |   248 | [ZPUB](#zpub)                  |   249 |
+| [ZEROCONF](#zeroconf)          |   249 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   249 |
+| [ZEROLINK](#zerolink)          |   249 | [ZPRV](#zprv)                  |   249 |
+| [ZEROSYNC](#zerosync)          |   249 | [ZPUB](#zpub)                  |   250 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -2000,6 +2001,18 @@ indique que c'est la sixième adresse externe de ce compte.
 \end{itemize}
 
 ![](../../dictionnaire/assets/18.png)
+
+## CHEMIN DE RÉCUPÉRATION
+
+Dans un logiciel de portefeuille utilisant Miniscript, comme Liana par exemple, le ou les chemins de récupération désignent des ensembles de clés qui ne deviennent opérationnels qu'après une période d'inactivité définie dans le script qui bloque les bitcoins (timelock). Les chemins de récupération sont utilisables seulement une fois que les timelocks sont passés, et offrent ainsi une méthode de récupération des fonds lorsque le chemin primaire n'est pas disponible. Prenons l'exemple d'un script qui intègre 2 clés distinctes : la clé A, qui autorise la dépense immédiate des bitcoins, et la clé B, qui permet de les dépenser après un délai défini par un timelock de 52 560 blocs. Dans cet exemple, la clé A provient du chemin primaire, tandis que la clé B provient du chemin de récupération.
+
+> *Pour plus d'informations, voir la définition de [**MINISCRIPT**](#miniscript).*
+
+## CHEMIN PRIMAIRE
+
+Dans un logiciel de portefeuille utilisant Miniscript, comme Liana par exemple, le chemin primaire fait référence à l'ensemble de clés permettant des dépenses immédiates des fonds, sans aucune condition temporelle. Ce chemin est toujours accessible et est utilisé pour la gestion quotidienne des bitcoins, sans nécessiter d'attente (timelock) contrairement aux chemins de récupérations. Prenons l'exemple d'un script qui intègre 2 clés distinctes : la clé A, qui autorise la dépense immédiate des bitcoins, et la clé B, qui permet de les dépenser après un délai défini par un timelock de 52 560 blocs. Dans cet exemple, la clé A provient du chemin primaire, tandis que la clé B provient du chemin de récupération.
+
+> *Pour plus d'informations, voir la définition de [**MINISCRIPT**](#miniscript).*
 
 ## CHIFFRER (CHIFFREMENT)
 
@@ -3395,13 +3408,18 @@ Dans le contexte de Bitcoin, un mineur fait référence à un ordinateur engagé
 
 ## MINISCRIPT
 
-Framework permettant de fournir un cadre pour programmer des scripts de manière sécurisée sur Bitcoin. Le langage natif de Bitcoin s'appelle script. Celui-ci est assez complexe à utiliser en pratique, notamment pour des applications sophistiquées et personnalisées. Notamment, il est très difficile de vérifier les limitations d'un script. Miniscript utilise un sous-ensemble de scripts Bitcoin pour simplifier leur création, leur analyse et leur vérification. Chaque miniscript est équivalent 1 pour 1 avec un script natif. On utilise un langage de Policies facile à utiliser, qui est ensuite compilé en Miniscript, pour enfin correspondre à un Script natif. Miniscript permet ainsi aux développeurs de construire des scripts sophistiqués d'une manière plus sûre et plus fiable. Les propriétés essentielles de Miniscript sont les suivantes : 
+Framework permettant de fournir un cadre pour programmer des scripts de manière sécurisée sur Bitcoin. Le langage natif de Bitcoin s'appelle script. Celui-ci est assez complexe à utiliser en pratique, notamment pour des applications sophistiquées et personnalisées. Notamment, il est très difficile de vérifier les limitations d'un script. Miniscript utilise un sous-ensemble de scripts Bitcoin pour simplifier leur création, leur analyse et leur vérification. Chaque miniscript est équivalent 1 pour 1 avec un script natif. On utilise un langage de Policies facile à utiliser, qui est ensuite compilé en Miniscript, pour enfin correspondre à un Script natif. 
+
+![](../../dictionnaire/assets/30.png)
+
+Miniscript permet ainsi aux développeurs de construire des scripts sophistiqués d'une manière plus sûre et plus fiable. Les propriétés essentielles de Miniscript sont les suivantes : 
 \begin{itemize}
   \item Il permet une analyse statique du script, notamment des conditions de dépenses qu'il permet et de son coût en termes de ressources ;
-  \item Il permet de réaliser des scripts qui respectent le Consensus ;
+  \item Il permet de réaliser des scripts qui respectent le consensus ;
   \item Il permet d'analyser si oui ou non, les différents chemins de dépense respectent les règles standards des nœuds ;
   \item Il permet de mettre en place un standard général, compréhensible et composable, pour l'ensemble des logiciels et matériels de portefeuille.
 \end{itemize}
+
 Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et Sanket Kanjalkar, via l'entreprise Blockstream. Miniscript est ajouté au wallet Bitcoin Core en mode watch-only en décembre 2022 avec la version 24.0, puis complètement en mai 2023 avec la version 25.0.
 
 ## MINITAPSCRIPT
@@ -4431,6 +4449,33 @@ Information permettant de lier une activité onchain (une adresse, une transacti
 
 ## POLICY (MINISCRIPT)
 
+Langage de haut niveau orienté utilisateur permettant de spécifier simplement des conditions sous lesquelles un UTXO peut être débloqué dans le cadre de Miniscript. La policy est une description abstraite des règles de dépense. Elle peut ensuite être compilée en miniscript, qui est équivalent un pour un avec des opérations du langage script natif de Bitcoin. 
+
+![](../../dictionnaire/assets/30.png)
+
+Le langage de policies est légèrement différent du langage miniscript. Par exemple, imaginons un système de sécurisation avec en chemin primaire, la clé A, et en chemin de récupération, la clé B, mais sous un timelock d'un an (environ 52 560 blocs). En policy, cela donnerait :
+
+```plaintext
+or(pk(A),and(pk(B),older(52560)))
+```
+
+Une fois compilé en miniscript, cela donnerait : 
+
+```plaintext
+andor(pk(B),older(52560),pk(A))
+```
+
+Et une fois converti en script natif, cela donnerait :
+
+```plaintext
+<B> OP_CHECKSIG OP_NOTIF
+	<A> OP_CHECKSIG
+OP_ELSE
+	<50cd00> OP_CHECKSEQUENCEVERIFY
+OP_ENDIF
+```
+
+> *Pour plus d'informations, voir la définition de [**MINISCRIPT**](#miniscript).*
 
 ## POOL
 
@@ -4490,6 +4535,11 @@ Unités utilisées en informatique pour quantifier les multiples de tailles de d
 
 ## PREMIUM
 
+Montant supplémentaire payé au-dessus du prix standard ou nominal d'un actif. Dans le contexte de Bitcoin, un premium peut être observé lors des achats, notamment sur les plateformes d'échange, qui peuvent parfois utiliser cette technique pour faire leurs marges sur le service de courtage.
+
+On peut également retrouver cette notion de premium lors des achats de BTC en peer-to-peer. En effet, l'achat de bitcoins non-KYC va souvent avec un premium par rapport au prix standard du marché qui peut varier de 1 % jusqu'à parfois plus de 10 %. Plusieurs raisons expliquent cette différence de prix. D'abord, il s'agit d'une pratique courante chez les vendeurs P2P qui s'est installée au fil du temps. Ensuite, les vendeurs ont des frais associés à la transaction pour envoyer les fonds à l'acheteur. Il y a aussi un risque de vol accru lors de ventes en P2P par rapport aux transactions sur des plateformes régulées, ce qui justifie une compensation pour le risque pris. Enfin, le surcoût peut être lié à la demande et à la qualité de l'échange en termes de confidentialité. En tant qu'acheteur, le gain de confidentialité a un prix qui se reflète dans la majoration appliquée par le vendeur. Certains bitcoiners pensent également que le prix majoré du BTC acheté en P2P reflète son véritable cours, et avancent l'argument que les prix plus bas sur les plateformes régulées sont le résultat d'un compromis sur la confidentialité de vos données personnelles.
+
+> *En général, même en français, on utilise le terme anglais de « premium ». Sa traduction pourrait être « majoration ».*
 
 ## PREUVE DE RÉSERVES
 

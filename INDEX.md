@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 735 `**
+**Nombre total de définitions : ` 737 `**
 
 ### A
 
@@ -189,6 +189,8 @@
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
 - [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
 - [CHEMIN DE DÉRIVATION](./dictionnaire/C.md#chemin-de-dérivation)
+- [CHEMIN DE RÉCUPÉRATION](./dictionnaire/C.md#chemin-de-récupération)
+- [CHEMIN PRIMAIRE](./dictionnaire/C.md#chemin-primaire)
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
 - [CIBLE DE DIFFICULTÉ](./dictionnaire/C.md#cible-de-difficulté)
 - [CIOH](./dictionnaire/C.md#cioh)
