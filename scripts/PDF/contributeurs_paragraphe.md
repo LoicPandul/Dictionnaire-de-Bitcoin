@@ -59,4 +59,7 @@ Merci également à toutes les personnes qui créent des contenus instructifs su
 Et plus largement, merci à tous ceux qui contribuent au développement de Bitcoin, qu'ils soient développeurs ou chercheurs.\
 \
 \
-Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent sur les réseaux sociaux ou dans d'autres publications. Vos partages spontanés sont une source de motivation inestimable pour moi. Ils renforcent mon désir de continuer à écrire et à partager des informations utiles sur Bitcoin. Ils rendent mes créations de contenus non seulement possibles, mais également plus agréables.
+Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent sur les réseaux sociaux ou dans d'autres publications. Vos partages spontanés sont une source de motivation inestimable pour moi. Ils renforcent mon désir de continuer à écrire et à partager des informations utiles sur Bitcoin. Ils rendent mes créations de contenus non seulement possibles, mais également plus agréables.\
+\
+\
+Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur Amazon (disponible fin 2024), ou bien me faire un don sur mon adresse Lightning : pandul@sats.rs. Merci !

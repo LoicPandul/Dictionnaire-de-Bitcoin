@@ -193,6 +193,7 @@ header-includes:
     fichier_complet.write("Cet ouvrage est sous licence CC BY-NC-SA 4.0\\newline\n")
     fichier_complet.write("https://creativecommons.org/licenses/by-nc-sa/4.0/\\newline\n")
     fichier_complet.write("\\newline\n")
+    fichier_complet.write("Lightning : pandul@sats.rs\\newline\n")  
     fichier_complet.write("Email : loic@pandul.fr\\newline\n")  
     fichier_complet.write("Site web : https://www.pandul.fr/\\newline\n")  
     fichier_complet.write("GitHub : https://github.com/LoicPandul/\\newline\n")
