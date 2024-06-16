@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 737 `**
+**Nombre total de définitions : ` 739 `**
 
 ### A
 
@@ -261,6 +261,7 @@
 - [DGM](./dictionnaire/D.md#dgm)
 - [DIFFICULTÉ](./dictionnaire/D.md#difficulté)
 - [DIFFIE-HELLMAN](./dictionnaire/D.md#diffie-hellman)
+- [DIFFUSION](./dictionnaire/D.md#diffusion)
 - [DIGITAL ARTIFACTS](./dictionnaire/D.md#digital-artifacts)
 - [DISTRIBUÉ](./dictionnaire/D.md#distribué)
 - [DLC (DISCREET LOG CONTRACT)](./dictionnaire/D.md#dlc-discreet-log-contract)
@@ -610,9 +611,9 @@
 - [PPS (PAY PER SHARE)](./dictionnaire/P.md#pps-pay-per-share)
 - [PRÉFIXES BINAIRES](./dictionnaire/P.md#préfixes-binaires)
 - [PREMIUM](./dictionnaire/P.md#premium)
-- [PREUVE DE RÉSERVES](./dictionnaire/P.md#preuve-de-réserves)
 - [PREUVE DE TRAVAIL](./dictionnaire/P.md#preuve-de-travail)
 - [PROFONDEUR](./dictionnaire/P.md#profondeur)
+- [PROOF-OF-KEY DAY](./dictionnaire/P.md#proof-of-key-day)
 - [PROOF-OF-WORK](./dictionnaire/P.md#proof-of-work)
 - [PROP (PROPORTIONAL)](./dictionnaire/P.md#prop-proportional)
 - [PROPAGATION](./dictionnaire/P.md#propagation)
@@ -639,6 +640,7 @@
 - [REGTEST](./dictionnaire/R.md#regtest)
 - [RÉORGANISATION](./dictionnaire/R.md#réorganisation)
 - [RÉSEAU BITCOIN](./dictionnaire/R.md#réseau-bitcoin)
+- [RÉSERVES FRACTIONNAIRES](./dictionnaire/R.md#réserves-fractionnaires)
 - [RÉSISTANCE AU PARTITIONNEMENT](./dictionnaire/R.md#résistance-au-partitionnement)
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
 - [RÉUTILISATION D'ADRESSE](./dictionnaire/R.md#réutilisation-dadresse)

@@ -72,6 +72,10 @@ Peter Todd
 
 
 
+## FLAG
+
+
+
 ## FORCE CLOSE
 
 
@@ -133,13 +137,10 @@ Chris Belcher
 ## LDB (.LDB)
 
 
-## FLAG
+
 ## LIBBITCOIN
 
-## PREUVE DE RÉSERVES
 
-
-> *En anglais, ce terme est traduit « Proof of Reserves ».*
 
 ## LIBSECP256K1
 
@@ -230,6 +231,11 @@ LSP
 ## PREUVE DE FRAUDE
 
 > *En anglais, ce terme est traduit « Fraud Proof ».*
+
+
+## PREUVE DE RÉSERVES
+
+> *En anglais, ce terme est traduit « Proof of Reserves ».*
 
 
 ## PROBLÈME GÉNÉRAUX BYZANTINS
