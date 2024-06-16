@@ -133,10 +133,13 @@ Chris Belcher
 ## LDB (.LDB)
 
 
-
+## FLAG
 ## LIBBITCOIN
 
+## PREUVE DE RÉSERVES
 
+
+> *En anglais, ce terme est traduit « Proof of Reserves ».*
 
 ## LIBSECP256K1
 
