@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 750 `**
+**Nombre total de définitions : ` 754 `**
 
 ### A
 
@@ -121,6 +121,7 @@
 - [BIP322](./dictionnaire/B.md#bip322)
 - [BIP324](./dictionnaire/B.md#bip324)
 - [BIP326](./dictionnaire/B.md#bip326)
+- [BIP352](./dictionnaire/B.md#bip352)
 - [BIP380](./dictionnaire/B.md#bip380)
 - [BIP381](./dictionnaire/B.md#bip381)
 - [BIP382](./dictionnaire/B.md#bip382)
@@ -681,7 +682,8 @@
 - [SDK (SOFTWARE DEVELOPMENT KIT)](./dictionnaire/S.md#sdk-software-development-kit)
 - [SECP256K1](./dictionnaire/S.md#secp256k1)
 - [SECP256R1](./dictionnaire/S.md#secp256r1)
-- [SEED](./dictionnaire/S.md#seed)
+- [SEED (BITCOIN)](./dictionnaire/S.md#seed-bitcoin)
+- [SEED (CRYPTOGRAPHIE)](./dictionnaire/S.md#seed-cryptographie)
 - [SEED NODES](./dictionnaire/S.md#seed-nodes)
 - [SEGWIT](./dictionnaire/S.md#segwit)
 - [SEGWIT2X](./dictionnaire/S.md#segwit2x)
@@ -693,8 +695,9 @@
 - [SETTINGS.JSON](./dictionnaire/S.md#settingsjson)
 - [SHA256](./dictionnaire/S.md#sha256)
 - [SHA512](./dictionnaire/S.md#sha512)
-- [SHARES](./dictionnaire/S.md#shares)
 - [SHAREDCOIN](./dictionnaire/S.md#sharedcoin)
+- [SHARES](./dictionnaire/S.md#shares)
+- [SHARES DIFFICULTY](./dictionnaire/S.md#shares-difficulty)
 - [SHITCOIN](./dictionnaire/S.md#shitcoin)
 - [SHOR (ALGORITHME)](./dictionnaire/S.md#shor-algorithme)
 - [SIDECHAIN](./dictionnaire/S.md#sidechain)
@@ -711,6 +714,7 @@
 - [SIGNER À L'AVEUGLE](./dictionnaire/S.md#signer-à-laveugle)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
+- [SILENT PAYMENT](./dictionnaire/S.md#silent-payment)
 - [SILK ROAD](./dictionnaire/S.md#silk-road)
 - [SIMPLIFIED PAYMENT VERIFICATION](./dictionnaire/S.md#simplified-payment-verification)
 - [SLIP](./dictionnaire/S.md#slip)
