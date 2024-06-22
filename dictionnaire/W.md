@@ -6,9 +6,9 @@ Protocole de coordination de coinjoins utilisé sur le portefeuille Wasabi.
 
 ## WALLET
 
-Traduction anglaise de « portefeuille ».
+Outil logiciel spécialement conçu pour sécuriser et gérer les clés privées d'un utilisateur. Si le portefeuille est stocké et géré sur un dispositif logiciel lui-même installé sur une machine polyvalente, on parle alors de « portefeuille chaud ». En revanche, s'il est stocké dans un logiciel, lui-même installé sur un dispositif matériel dédié uniquement à cette tâche et non connecté à internet, on parle alors de « portefeuille froid ». Le portefeuille permet notamment d'utiliser les clés privées de l'utilisateur pour signer des transactions et ainsi remplir les conditions permettant la dépense des bitcoins.
 
-> *Pour plus d'informations, voir la définition de [**PORTEFEUILLE**](./P.md#portefeuille).*
+> *En français, on peut traduire « wallet » par « portefeuille ».*
 
 ## WALLET.DAT
 
@@ -36,11 +36,9 @@ Dans le cadre de Liquid (sidechain de Bitcoin), ce sont des entités chargées d
 
 Un watch-only wallet (ou « portefeuille en lecture seule ») est un type de logiciel qui permet à un utilisateur de voir les transactions associées à une clé ou un ensemble de clés Bitcoin spécifiques, sans posséder les clés privées correspondantes. Il offre une visibilité sur le solde et l'historique des transactions, sans pour autant permettre de dépenser les fonds du portefeuilles. Par exemple, l'application Sentinel est un watch-only wallet.
 
-## WATCHTOWER
-
-
 ## WHALE
 
+Désigne un individu ou une entité qui possède une quantité très importante de bitcoins.
 
 ## WHIRLPOOL
 
@@ -54,6 +52,9 @@ Logiciel en ligne de commandes développé par Samourai Wallet qui permet de fou
 
 ## WHITE PAPER
 
+Nom donné au document scientifique nommé « *Bitcoin: A Peer-to-Peer Electronic Cash System* » publié par Satoshi Nakamoto pour la première fois le 31 octobre 2008. Ce document décrit les principes fondamentaux de Bitcoin. Le White Paper que l'on présente de nos jours est une seconde version publiée le 24 mars 2009.
+
+> *Vous pouvez découvrir et télécharger le White Paper de Bitcoin ici : https://bitcoin.org/bitcoin.pdf.*
 
 ## WITNESSSCRIPT
 
@@ -66,5 +67,3 @@ Script qui spécifie les conditions sous lesquelles les bitcoins peuvent être d
 Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction.
 
 > *Pour plus d'informations, voir la définition de [**TXID**](./T.md#txid-transaction-identifier) et [**SEGWIT**](./S.md#segwit).*
-
-## WUMBO CHANNEL
