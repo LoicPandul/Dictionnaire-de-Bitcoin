@@ -1,6 +1,0 @@
-## PAPER WALLET
-
-
-
-
-

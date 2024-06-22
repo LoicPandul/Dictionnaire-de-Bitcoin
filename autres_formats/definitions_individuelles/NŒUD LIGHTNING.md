@@ -1,4 +1,0 @@
-## NŒUD LIGHTNING
-
-
-

@@ -1,4 +1,0 @@
-## SPHINX
-
-onion encryption
-

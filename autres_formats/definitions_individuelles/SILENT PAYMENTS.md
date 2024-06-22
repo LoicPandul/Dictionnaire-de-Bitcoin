@@ -1,3 +1,0 @@
-## SILENT PAYMENTS
-
-

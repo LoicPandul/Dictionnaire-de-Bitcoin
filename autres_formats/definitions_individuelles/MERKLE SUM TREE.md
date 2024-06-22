@@ -1,3 +1,0 @@
-## MERKLE SUM TREE
-
-

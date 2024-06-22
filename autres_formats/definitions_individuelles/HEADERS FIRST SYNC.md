@@ -1,3 +1,0 @@
-## HEADERS FIRST SYNC
-
-

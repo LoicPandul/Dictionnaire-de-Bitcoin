@@ -1,3 +1,0 @@
-## MULTIPATH PAYMENTS (MPP)
-
-

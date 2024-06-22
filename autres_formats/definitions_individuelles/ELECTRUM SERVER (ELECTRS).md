@@ -1,3 +1,0 @@
-## ELECTRUM SERVER (ELECTRS)
-
-

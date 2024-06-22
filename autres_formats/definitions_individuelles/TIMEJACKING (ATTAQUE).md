@@ -1,3 +1,0 @@
-## TIMEJACKING (ATTAQUE)
-
-

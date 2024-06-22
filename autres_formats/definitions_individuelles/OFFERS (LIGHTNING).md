@@ -1,3 +1,0 @@
-## OFFERS (LIGHTNING)
-
-

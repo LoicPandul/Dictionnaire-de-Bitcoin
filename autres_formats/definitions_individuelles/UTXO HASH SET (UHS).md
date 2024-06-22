@@ -1,4 +1,0 @@
-## UTXO HASH SET (UHS)
-
-
-

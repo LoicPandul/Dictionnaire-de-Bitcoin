@@ -1,5 +1,0 @@
-## STRONG FEDERATION
-
-Liquid
-
-

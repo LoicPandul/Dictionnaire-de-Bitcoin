@@ -1,6 +1,0 @@
-## ADDRESS SPOOFING
-
-
-> *Address Poisonning.*
-
-

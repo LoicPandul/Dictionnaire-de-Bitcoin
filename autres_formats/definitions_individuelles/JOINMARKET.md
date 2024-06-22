@@ -1,5 +1,0 @@
-## JOINMARKET
-
-Chris Belcher
-
-

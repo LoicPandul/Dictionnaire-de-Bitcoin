@@ -1,3 +1,0 @@
-## SWEEPING (LIGHTNING)
-
-

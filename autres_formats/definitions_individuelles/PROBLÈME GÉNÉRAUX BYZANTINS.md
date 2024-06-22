@@ -1,3 +1,0 @@
-## PROBLÈME GÉNÉRAUX BYZANTINS
-
-
