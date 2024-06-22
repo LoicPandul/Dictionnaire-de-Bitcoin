@@ -24,7 +24,7 @@ Méthode pour encoder une clé privée Bitcoin de manière à ce qu'elle puisse 
 
 ## WASABI WALLET
 
-Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités telles que le CoinJoin.
+Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités telles que le coinjoin.
 
 ## WATCHMEN
 
