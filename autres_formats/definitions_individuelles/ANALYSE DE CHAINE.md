@@ -9,7 +9,5 @@ Un des objectifs de l’analyse de chaîne consiste à regrouper diverses activi
 * Les heuristiques internes à la transaction ;
 * Les heuristiques externes à la transaction. 
 
-Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont : 
-* la CIOH (*Common Input Ownership Heuristic*) ;
-* et la réutilisation d’adresse.
+Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont la CIOH (*Common Input Ownership Heuristic*) et la réutilisation d’adresse.
 

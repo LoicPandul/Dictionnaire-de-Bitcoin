@@ -169,18 +169,18 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 | [ADAPTOR SIGNATURE](#adaptor-signature) |    20 | [AOPP](#aopp)                  |    26 |
 | [ADDR](#addr)                  |    21 | [API](#api)                    |    26 |
-| [ADDR.DAT](#addr.dat)          |    21 | [ARBITRAGE](#arbitrage)        |    27 |
+| [ADDR.DAT](#addr.dat)          |    21 | [ARBITRAGE](#arbitrage)        |    26 |
 | [ADDRV2](#addrv2)              |    21 | [ARBRE DE MERKLE](#arbre-de-merkle) |    27 |
 | [ADRESSE DE RECEPTION](#adresse-de-reception) |    22 | [ARK](#ark)                    |    28 |
-| [AGORISME](#agorisme)          |    23 | [ASCII](#ascii)                |    29 |
+| [AGORISME](#agorisme)          |    23 | [ASCII](#ascii)                |    28 |
 | [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    23 | [ASIC](#asic)                  |    29 |
 | [ALGORITHME](#algorithme)      |    23 | [ASICBOOST](#asicboost)        |    29 |
 | [ALTCOIN](#altcoin)            |    23 | [ASMAP](#asmap)                |    29 |
-| [ANALYSE DE CHAINE](#analyse-de-chaine) |    24 | [ASSUME UTXO](#assume-utxo)    |    30 |
+| [ANALYSE DE CHAINE](#analyse-de-chaine) |    24 | [ASSUME UTXO](#assume-utxo)    |    29 |
 | [ANCESTOR MINING](#ancestor-mining) |    24 | [ASSUME VALID](#assume-valid)  |    30 |
-| [ANCHOR OUTPUTS](#anchor-outputs) |    25 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    30 |
+| [ANCHOR OUTPUTS](#anchor-outputs) |    24 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    30 |
 | [ANCHORS.DAT](#anchors.dat)    |    25 | [ATLC](#atlc)                  |    30 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    25 | [ATOMIC SWAP](#atomic-swap)    |    31 |
+| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    25 | [ATOMIC SWAP](#atomic-swap)    |    30 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    25 | [ATTAQUE DES 51 POURCENTS](#attaque-des-51-pourcents) |    31 |
 | [ANTI MONEY LAUNDERING (AML)](#anti-money-laundering-aml) |    26 | [AVG. ROUND DURATION](#avg.-round-duration) |    32 |
 | [ANYPREVOUT (APO)](#anyprevout-apo) |    26 |                                |       |
@@ -859,11 +859,7 @@ Un des objectifs de l’analyse de chaîne consiste à regrouper diverses activi
   \item Les heuristiques externes à la transaction.
 \end{itemize}
 
-Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont : 
-\begin{itemize}
-  \item la CIOH (*Common Input Ownership Heuristic*) ;
-  \item et la réutilisation d’adresse.
-\end{itemize}
+Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont la CIOH (*Common Input Ownership Heuristic*) et la réutilisation d’adresse.
 
 ## ANCESTOR MINING
 
