@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 754 `**
+**Nombre total de définitions : ` 752 `**
 
 ### A
 
@@ -803,14 +803,12 @@
 - [WASABI WALLET](./dictionnaire/W.md#wasabi-wallet)
 - [WATCHMEN](./dictionnaire/W.md#watchmen)
 - [WATCH-ONLY WALLET](./dictionnaire/W.md#watch-only-wallet)
-- [WATCHTOWER](./dictionnaire/W.md#watchtower)
 - [WHALE](./dictionnaire/W.md#whale)
 - [WHIRLPOOL](./dictionnaire/W.md#whirlpool)
 - [WHIRLPOOL STAT TOOL](./dictionnaire/W.md#whirlpool-stat-tool)
 - [WHITE PAPER](./dictionnaire/W.md#white-paper)
 - [WITNESSSCRIPT](./dictionnaire/W.md#witnessscript)
 - [WTXID](./dictionnaire/W.md#wtxid)
-- [WUMBO CHANNEL](./dictionnaire/W.md#wumbo-channel)
 
 ### X
 

@@ -6,10 +6,10 @@ ___
 
 > *Address Poisonning.*
 
-## WUMBO CHANNEL
+
 ## ADDRESS SWAPPING
 
-## WATCHTOWER
+
 
 ## ATTAQUE PAR REJEU
 
@@ -344,6 +344,14 @@ Liquid
 
 
 ## UTXO HASH SET (UHS)
+
+
+
+## WATCHTOWER
+
+
+
+## WUMBO CHANNEL
 
 
 
