@@ -11,6 +11,13 @@ ___
 
 
 
+## BROLLUPS
+
+## SIGNER À L'AVEUGLE
+
+
+> *En anglais, on parle de « Blind Signing ».*
+
 ## ATTAQUE PAR REJEU
 
 > *En anglais, on traduit cette attaque par « Replay Attack ».*
