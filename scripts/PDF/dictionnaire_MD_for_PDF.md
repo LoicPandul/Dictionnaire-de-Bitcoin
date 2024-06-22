@@ -628,15 +628,15 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | [SETTINGS.JSON](#settings.json) |   224 | [STALE BLOCK](#stale-block)    |   235 |
 | [SHA256](#sha256)              |   224 | [STAMPS](#stamps)              |   235 |
 | [SHA512](#sha512)              |   224 | [STONEWALL](#stonewall)        |   235 |
-| [SHAREDCOIN](#sharedcoin)      |   224 | [STONEWALL X2](#stonewall-x2)  |   235 |
-| [SHARES](#shares)              |   225 | [STRATUM](#stratum)            |   236 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   226 | [STRATUM V2](#stratum-v2)      |   237 |
-| [SHITCOIN](#shitcoin)          |   226 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   237 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   226 | [SURCOUCHE (LAYER)](#surcouche-layer) |   237 |
-| [SIDECHAIN](#sidechain)        |   226 | [SURFACE D'ATTAQUE](#surface-dattaque) |   237 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   227 | [SWEEP TRANSACTION](#sweep-transaction) |   237 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   227 | [SYBIL (ATTAQUE)](#sybil-attaque) |   238 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   227 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   238 |
+| [SHAREDCOIN](#sharedcoin)      |   224 | [STONEWALL X2](#stonewall-x2)  |   236 |
+| [SHARES](#shares)              |   225 | [STRATUM](#stratum)            |   237 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   226 | [STRATUM V2](#stratum-v2)      |   238 |
+| [SHITCOIN](#shitcoin)          |   226 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   238 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   226 | [SURCOUCHE (LAYER)](#surcouche-layer) |   238 |
+| [SIDECHAIN](#sidechain)        |   226 | [SURFACE D'ATTAQUE](#surface-dattaque) |   238 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   227 | [SWEEP TRANSACTION](#sweep-transaction) |   239 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   227 | [SYBIL (ATTAQUE)](#sybil-attaque) |   239 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   227 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   240 |
 | | | | |
 
 
@@ -644,19 +644,19 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   240 | [TPUB](#tpub)                  |   242 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   240 | [TRANSACTION (TX)](#transaction-tx) |   242 |
-| [TAPSCRIPT](#tapscript)        |   240 | [TRANSACTION COINBASE](#transaction-coinbase) |   243 |
-| [TARO](#taro)                  |   240 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   243 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   240 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   243 |
-| [TCP](#tcp)                    |   241 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   243 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   241 | [TRANSACTION STANDARD](#transaction-standard) |   243 |
-| [TESTNET](#testnet)            |   241 | [TUMBLEBIT](#tumblebit)        |   243 |
-| [THE DAO](#the-dao)            |   241 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   244 |
-| [TIDES](#tides)                |   241 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   244 |
-| [TIMELOCK](#timelock)          |   242 | [TYPE DE DEVISE](#type-de-devise) |   244 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   242 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   246 |
-| [TPRV](#tprv)                  |   242 |                                |       |
+| [TAPROOT](#taproot)            |   242 | [TPUB](#tpub)                  |   244 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   242 | [TRANSACTION (TX)](#transaction-tx) |   244 |
+| [TAPSCRIPT](#tapscript)        |   242 | [TRANSACTION COINBASE](#transaction-coinbase) |   245 |
+| [TARO](#taro)                  |   242 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   245 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   242 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   245 |
+| [TCP](#tcp)                    |   243 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   245 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   243 | [TRANSACTION STANDARD](#transaction-standard) |   245 |
+| [TESTNET](#testnet)            |   243 | [TUMBLEBIT](#tumblebit)        |   245 |
+| [THE DAO](#the-dao)            |   243 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   246 |
+| [TIDES](#tides)                |   243 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   246 |
+| [TIMELOCK](#timelock)          |   244 | [TYPE DE DEVISE](#type-de-devise) |   246 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   244 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   248 |
+| [TPRV](#tprv)                  |   244 |                                |       |
 | | | | |
 
 
@@ -664,11 +664,11 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   248 | [URI](#uri)                    |   248 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   248 | [UTREEXO](#utreexo)            |   249 |
-| [UNIX](#unix)                  |   248 | [UTXO](#utxo)                  |   250 |
-| [UPRV](#uprv)                  |   248 | [UTXO SET](#utxo-set)          |   250 |
-| [UPUB](#upub)                  |   248 |                                |       |
+| [UASF](#uasf)                  |   250 | [URI](#uri)                    |   250 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   250 | [UTREEXO](#utreexo)            |   251 |
+| [UNIX](#unix)                  |   250 | [UTXO](#utxo)                  |   252 |
+| [UPRV](#uprv)                  |   250 | [UTXO SET](#utxo-set)          |   252 |
+| [UPUB](#upub)                  |   250 |                                |       |
 | | | | |
 
 
@@ -676,10 +676,10 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   252 | [VOUT](#vout)                  |   253 |
-| [VANITYGEN](#vanitygen)        |   252 | [VPRV](#vprv)                  |   253 |
-| [VERSIONNAGE](#versionnage)    |   252 | [VPUB](#vpub)                  |   253 |
-| [VIN](#vin)                    |   252 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   254 | [VOUT](#vout)                  |   255 |
+| [VANITYGEN](#vanitygen)        |   254 | [VPRV](#vprv)                  |   255 |
+| [VERSIONNAGE](#versionnage)    |   254 | [VPUB](#vpub)                  |   255 |
+| [VIN](#vin)                    |   254 |                                |       |
 | | | | |
 
 
@@ -687,14 +687,14 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   255 | [WATCHTOWER](#watchtower)      |   256 |
-| [WALLET](#wallet)              |   255 | [WHALE](#whale)                |   256 |
-| [WALLET.DAT](#wallet.dat)      |   255 | [WHIRLPOOL](#whirlpool)        |   256 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   255 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   256 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   255 | [WHITE PAPER](#white-paper)    |   256 |
-| [WASABI WALLET](#wasabi-wallet) |   255 | [WITNESSSCRIPT](#witnessscript) |   256 |
-| [WATCHMEN](#watchmen)          |   255 | [WTXID](#wtxid)                |   256 |
-| [WATCH-ONLY WALLET](#watch-only-wallet) |   256 | [WUMBO CHANNEL](#wumbo-channel) |   257 |
+| [WABISABI](#wabisabi)          |   257 | [WATCHTOWER](#watchtower)      |   258 |
+| [WALLET](#wallet)              |   257 | [WHALE](#whale)                |   258 |
+| [WALLET.DAT](#wallet.dat)      |   257 | [WHIRLPOOL](#whirlpool)        |   258 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   257 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   258 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   257 | [WHITE PAPER](#white-paper)    |   258 |
+| [WASABI WALLET](#wasabi-wallet) |   257 | [WITNESSSCRIPT](#witnessscript) |   258 |
+| [WATCHMEN](#watchmen)          |   257 | [WTXID](#wtxid)                |   258 |
+| [WATCH-ONLY WALLET](#watch-only-wallet) |   258 | [WUMBO CHANNEL](#wumbo-channel) |   259 |
 | | | | |
 
 
@@ -702,8 +702,8 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XOR](#xor)                    |   259 | [XPUB](#xpub)                  |   259 |
-| [XPRV](#xprv)                  |   259 |                                |       |
+| [XOR](#xor)                    |   261 | [XPUB](#xpub)                  |   261 |
+| [XPRV](#xprv)                  |   261 |                                |       |
 | | | | |
 
 
@@ -711,7 +711,7 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   261 | [YPUB](#ypub)                  |   261 |
+| [YPRV](#yprv)                  |   263 | [YPUB](#ypub)                  |   263 |
 | | | | |
 
 
@@ -719,9 +719,9 @@ Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique su
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   263 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   263 |
-| [ZEROLINK](#zerolink)          |   263 | [ZPRV](#zprv)                  |   263 |
-| [ZEROSYNC](#zerosync)          |   263 | [ZPUB](#zpub)                  |   264 |
+| [ZEROCONF](#zeroconf)          |   265 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   265 |
+| [ZEROLINK](#zerolink)          |   265 | [ZPRV](#zprv)                  |   265 |
+| [ZEROSYNC](#zerosync)          |   265 | [ZPUB](#zpub)                  |   266 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -5273,7 +5273,7 @@ Dans le logiciel Whirlpool Stat Tool, le spread est un indicateur permettant de 
 
 ## STABLECOIN
 
-Catégorie de cryptomonnaie conçue pour maintenir une valeur stable par rapport à un actif référence, souvent une monnaie fiduciaire comme le dollar américain.
+Catégorie de cryptomonnaie conçue pour maintenir une valeur stable par rapport à un actif référence, souvent une monnaie étatique comme le dollar américain.
 
 ## STALE BLOCK
 
@@ -5283,11 +5283,23 @@ Fait référence à un bloc sans enfant (bloc obsolète) : un bloc valide mais e
 
 ## STAMPS
 
+Protocole qui permet d'intégrer des données d'image formatées directement sur la blockchain Bitcoin via des transactions multisignatures brutes (P2MS). Il encode le contenu binaire d'une image en base 64 et l'ajoute dans les clés d’un « bare multisig » 1/3. Une clé est réelle et sert à dépenser les fonds, tandis que les deux autres sont des fausses clés (on ne connait pas la clé privée associée) qui stockent les données. En utilisant encodant les données directement sous forme de clés publiques plutôt qu'en utilisant des sorties `OP_RETURN`, les images stockées avec le protocole Stamps sont particulièrement intensives en terme de charge de travail pour les neouds. Cette méthode crée notamment de multiples UTXOs, ce qui augmente la taille de l'UTXO set et pose des problèmes pour les nœuds complets.
 
+> *Pour plus d'informations, voir les définitions d'**[UTREEXO](#utreexo)** et d'**[UTXO SET](#utxo-set)**.*
 
 ## STONEWALL
 
+Forme spécifique de transaction Bitcoin visant à accroître la confidentialité des utilisateurs lors d'une dépense en imitant un coinjoin entre deux personnes, sans pour autant en être un. En effet, cette transaction n'est pas collaborative. Un utilisateur peut la construire tout seul, en faisant uniquement intervenir les UTXOs lui appartenant en input. Vous pouvez donc créer une transaction Stonewall pour n'importe quelle occasion, sans avoir besoin de vous synchroniser avec un autre utilisateur. Le fonctionnement de la transaction Stonewall est le suivant : en entrée de la transaction, l'émetteur utilise 2 UTXO qui lui appartiennent. En sortie, la transaction produit 4 outputs, dont 2 qui seront exactement de même montant. Les 2 autres constitueront du change. Parmi les 2 outputs de même montant, un seul ira effectivement au destinataire du paiement.
 
+Il y a donc seulement 2 rôles dans une transaction Stonewall :
+\begin{itemize}
+  \item L'émetteur, qui réalise le paiement effectif ;
+  \item Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.
+\end{itemize}
+
+![](../../dictionnaire/assets/33.png)
+
+La structure Stonewall ajoute énormément d'entropie à la transaction et vient brouiller les pistes de l'analyse de chaîne. Vue de l'extérieur, une telle transaction peut être interprétée comme un petit coinjoin entre deux personnes. Mais en réalité, tout comme la transaction Stonewall x2, il s'agit d'un paiement. Cette méthode génère donc des incertitudes dans l'analyse de chaîne, voire oriente vers de fausses pistes. Même si l'observateur extérieur parvient à identifier le paterne de la transaction Stonewall, il ne disposera pas de toutes les informations. Il ne pourra pas déterminer lequel des deux UTXOs de mêmes montants correspond au paiement. De plus, il ne pourra pas déterminer si les deux UTXOs en entrée proviennent de deux personnes différentes ou s'ils appartiennent à une seule personne qui les a fusionnés. Ce dernier point est dû au fait que les transactions Stonewall x2 suivent exactement le même paterne que les transactions Stonewall. Vu de l'extérieur et sans informations supplémentaires sur le contexte, il est impossible de différencier une transaction Stonewall d'une transaction Stonewall x2. Or, les premières ne sont pas des transactions collaboratives, alors que les secondes le sont. Cela permet d'ajouter encore plus de doutes sur cette dépense.
 
 ## STONEWALL X2
 
@@ -5322,6 +5334,7 @@ Une « surcouche » (ou « layer » en anglais) est un protocole ou un réseau c
 
 ## SURFACE D'ATTAQUE
 
+Désigne l'ensemble des points d'entrée potentiels qu'un attaquant peut exploiter pour accéder à un système. La surface d'attaque inclut toutes les interfaces, services, ports , protocoles, et autres vecteurs de communication qui pourraient être exposés. Une surface d'attaque étendue augmente les vulnérabilités et rend donc le système plus susceptible d'être attaqué. Réduire la surface d'attaque est une bonne pratique de sécurité qui implique la désactivation des services non nécessaires. Par exemple, dans le cadre de Bitcoin, les hardware wallets ont une surface d'attaque beaucoup plus réduite que les software wallets. En effet, ils isolent les clés sur un dispositif non connecté à Internet, disposant de très peu d'interfaces et de services. À l'opposé, les software wallets sont installés sur des PC polyvalents, qui ont une surface d'attaque bien plus vaste en raison des nombreuses fonctionnalités et des connexions réseau qu'ils supportent.
 
 ## SWEEP TRANSACTION
 
