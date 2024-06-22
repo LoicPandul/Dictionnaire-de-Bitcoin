@@ -1,8 +1,7 @@
-**Nombre total de définitions : ` 755 `**
+**Nombre total de définitions : ` 754 `**
 
 ### A
 
-- [ACINQ](./dictionnaire/A.md#acinq)
 - [ADAPTOR SIGNATURE](./dictionnaire/A.md#adaptor-signature)
 - [ADDR](./dictionnaire/A.md#addr)
 - [ADDR.DAT](./dictionnaire/A.md#addrdat)
