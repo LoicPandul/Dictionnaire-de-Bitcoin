@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 754 `**
+**Nombre total de définitions : ` 755 `**
 
 ### A
 
@@ -35,6 +35,7 @@
 - [ATLC](./dictionnaire/A.md#atlc)
 - [ATOMIC SWAP](./dictionnaire/A.md#atomic-swap)
 - [ATTAQUE DES 51 POURCENTS](./dictionnaire/A.md#attaque-des-51-pourcents)
+- [AVG. ROUND DURATION](./dictionnaire/A.md#avg-round-duration)
 
 ### B
 
@@ -413,6 +414,7 @@
 - [LOCK (.LOCK)](./dictionnaire/L.md#lock-lock)
 - [LOGARITHME DISCRET](./dictionnaire/L.md#logarithme-discret)
 - [LOOP](./dictionnaire/L.md#loop)
+- [LUCK](./dictionnaire/L.md#luck)
 
 ### M
 
@@ -465,7 +467,7 @@
 - [NOEUD COMPLET](./dictionnaire/N.md#noeud-complet)
 - [NOEUD ÉLAGUÉ](./dictionnaire/N.md#noeud-élagué)
 - [NOEUD LIGHTNING](./dictionnaire/N.md#noeud-lightning)
-- [NOEUD SPV (OU NOEUD LÉGER)](./dictionnaire/N.md#noeud-spv-ou-noeud-léger)
+- [NOEUD SPV (NOEUD LÉGER)](./dictionnaire/N.md#noeud-spv-noeud-léger)
 - [NONCE](./dictionnaire/N.md#nonce)
 - [NSEQUENCE](./dictionnaire/N.md#nsequence)
 - [NULL DATA](./dictionnaire/N.md#null-data)
@@ -711,7 +713,6 @@
 - [SIGHASH_SINGLE (0X03)](./dictionnaire/S.md#sighash_single-0x03)
 - [SIGHASH_SINGLE/SIGHASH_ACP](./dictionnaire/S.md#sighash_singlesighash_acp)
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
-- [SIGNER À L'AVEUGLE](./dictionnaire/S.md#signer-à-laveugle)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
 - [SILENT PAYMENT](./dictionnaire/S.md#silent-payment)

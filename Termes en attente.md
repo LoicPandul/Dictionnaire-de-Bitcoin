@@ -11,13 +11,6 @@ ___
 
 
 
-## BROLLUPS
-
-## SIGNER À L'AVEUGLE
-
-
-> *En anglais, on parle de « Blind Signing ».*
-
 ## ATTAQUE PAR REJEU
 
 > *En anglais, on traduit cette attaque par « Replay Attack ».*
@@ -33,6 +26,10 @@ Bose, Ray-Chaudhuri et Hocquenghem
 
 
 ## BGP HIJACKING
+
+
+
+## BROLLUPS
 
 
 
@@ -289,6 +286,11 @@ LSP
 
 ## RUST BITCOIN
 
+
+
+## SIGNER À L'AVEUGLE
+
+> *En anglais, on parle de « Blind Signing ».*
 
 
 ## SPARSE MERKLE TREE (SMT)
