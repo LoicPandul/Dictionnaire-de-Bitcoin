@@ -31,17 +31,17 @@
 
 ## Description du projet 📝
 
-Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur ce dépôt GitHub. Ce livre sera également vendu imprimé et broché sur Amazon à partir de fin 2024.
+Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur ce dépôt GitHub. Ce livre sera également vendu imprimé sur Amazon à partir de fin 2024.
 
 Je gagne une petite marge sur chaque exemplaire physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
 
-La première édition de l'ouvrage est prévue pour 2024. Si le projet intéresse et suscite de l'engagement, je publierai des nouvelles versions actualisées du *Dictionnaire de Bitcoin*. Ces mises à jour comprendront les modifications proposées par la communauté de contributeurs et les termes nouvellement apparus.
+La première édition de l'ouvrage est prévue pour 2024. Si le projet intéresse et suscite de l'engagement, je publierai de nouvelles versions actualisées du *Dictionnaire de Bitcoin*. Ces mises à jour comprendront les modifications proposées par la communauté de contributeurs et les termes nouvellement apparus.
 
-Si vous souhaitez soutenir ce projet, vous pouvez également le partager sur les réseaux sociaux ou me faire un don LN sur pandul@sats.rs. Merci ! :)
+Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les réseaux sociaux ou me faire un don LN sur pandul@sats.rs. Merci ! :)
 
 ## Lire le *Dictionnaire de Bitcoin* 📖
 
-Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou sur [mon site web](https://pandul.fr/). C'est la manière la plus simple de lire et de rechercher des définition.
+Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt. C'est la manière la plus simple de lire et de rechercher des définitions.
 
 &nbsp;
 <p align="center">
@@ -59,12 +59,12 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
   </a>
 </p>
 
-La branche `main` correspond à la version intermédiaire de travail, sur laquelle les Pull Request sont fusionnées progressivement.
+La branche `main` correspond à la version intermédiaire de travail, sur laquelle les PR sont fusionnées progressivement.
 
 Sur ce dépôt, vous trouverez le dictionnaire décliné en trois formats différents, chacun contenant les mêmes définitions, afin de répondre aux préférences de chacun, que vous souhaitiez intégrer le dictionnaire à un site web ou simplement le télécharger pour un usage personnel. Les formats proposés sont les suivants :
 - [Un fichier markdown unique rassemblant l'ensemble des définitions](/autres_formats/dictionnaire_complet/dictionnaire_complet.md) ;
 - [Un dossier contenant un fichier markdown séparé pour chaque définition](/autres_formats/definitions_individuelles) ;
-- [Un dossier de travail « dictionnaire » organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
+- [Un dossier de travail `/dictionnaire` organisé de manière à regrouper les définitions dans des fichiers markdown par lettre de l'alphabet](/dictionnaire).
 
 ## Demandes de modification et contributions ✍️
 
@@ -111,7 +111,7 @@ Les termes généraux liés à l'informatique et à la cryptographie sont unique
 
 Quant aux noms d'entreprises et de marques, j'accepte de les ajouter uniquement si elles ont eu un rôle historique dans l'évolution technique de Bitcoin. Il faut également qu'elles soient connues à l'échelle internationale. La préférence est donnée à l'intégration des logiciels et des protocoles développés par ces entreprises, plutôt qu'aux entreprises en elles-mêmes. Les propositions d'ajout de définition contre rémunération ne sont pas acceptées. 
 
-En ce qui concerne les individus, seules les contributions historiquement significatives à Bitcoin justifient une mention. Plutôt que de nommer directement une personne, il est préférable de référencer le logiciel ou le protocole sur lequel elle a travaillé, en la mentionnant dans la définition correspondante.
+En ce qui concerne les individus, seules les contributions historiquement significatives à Bitcoin justifient une mention (Satoshi Nakamoto, Hal Finney...). Plutôt que de nommer directement une personne, il est préférable de référencer le logiciel ou le protocole sur lequel elle a travaillé, en la mentionnant dans la définition correspondante.
 
 On ne parle évidemment pas de shitcoins dans ce dictionnaire, sauf si le shitcoin en question fait partie de l'histoire de Bitcoin (par exemple, les forks de Bitcoin).
 
@@ -187,6 +187,9 @@ This work is licensed under a CC BY-NC-SA 4.0
 
 
 <p align="center">
-  <img src="./img/Logo-Pandul-NOIR.png" alt="Logo Pandul" width="50%">
+  <a href="https://www.pandul.fr/" target="_blank">
+    <img src="./img/Logo-Pandul-NOIR.png" alt="Logo Pandul" width="50%">
+  </a>
 </p>
+
 
