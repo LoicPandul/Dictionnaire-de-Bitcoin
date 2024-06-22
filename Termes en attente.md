@@ -23,7 +23,7 @@ Bose, Ray-Chaudhuri et Hocquenghem
 
 ## BCOIN
 
-## ERLAY
+
 
 ## BGP HIJACKING
 
@@ -64,6 +64,10 @@ Split ?
 
 
 ## DUAL FUNDING
+
+
+
+## ERLAY
 
 
 
@@ -352,9 +356,6 @@ Liquid
 
 
 ## WUMBO CHANNEL
-
-
-
 
 
 
