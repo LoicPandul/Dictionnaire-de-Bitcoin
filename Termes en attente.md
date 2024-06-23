@@ -9,6 +9,16 @@ ___
 
 ## ADDRESS SWAPPING
 
+## CHAMPION (BIP)
+
+## DER
+
+*Distinguished Encoding Rules* BIP66
+
+## PING (BIP31)
+
+
+## PONG (BIP31)
 
 
 ## ATTAQUE PAR REJEU
