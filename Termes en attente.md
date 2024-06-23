@@ -6,6 +6,11 @@ ___
 
 > *Address Poisonning.*
 
+## HEADER FIRST SYNC
+
+
+## SNAPSHOT
+
 
 ## ADDRESS SWAPPING
 
