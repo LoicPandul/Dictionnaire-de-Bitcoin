@@ -2,13 +2,13 @@
 
 Mise à jour majeure du protocole Bitcoin, adoptée par le biais d'un soft fork en novembre 2021. Cette mise à jour apporte des améliorations significatives en termes de confidentialité, d'efficacité et de flexibilité. Elle permet l'utilisation du protocole de Schnorr et l'utilisation d'un script qui peut être révélé lors de la dépense. Le protocole de Schnorr, intégré à cette mise à jour, est un algorithme de signature numérique établi sur la cryptographie sur les courbes elliptiques (ECC), comme ECDSA. Dans le contexte de Bitcoin, Schnorr est utilisé pour générer une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Comme ECDSA sur Bitcoin, Schnorr utilise la courbe elliptique `secp256k1`, définie par l'équation $y^2 = x^3 + 7$. Les bitcoins bloqués avec Taproot peuvent être dépensés soit en satisfaisant l'un des scripts, soit en fournissant une signature valide correspondant à la clé publique, ce qui permet de garder les scripts privés. On y utilise un MAST pour permettre l'utilisation de plusieurs scripts. N'importe lequel peut-être utiliser pour dépenser les bitcoins associés. Cela permet des fonctionnalités plus complexes et des contrats intelligents plus sophistiqués.
 
-> *Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](./S.md#schnorr-protocole).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](./S.md#schnorr-protocole).*
 
 ## TAPROOT ASSETS PROTOCOL
 
 Protocole développé par Lightning Labs permettant d'émettre des actifs sur la blockchain principale de Bitcoin, en tirant partie de la mise à jour Taproot. Taproot Assets permet la création d'actifs fongibles comme des stablecoins et non fongibles comme de NFT. Les Taproot Assets peuvent être transférés via des transactions Bitcoin classiques ou via le Lightning Network. Ce protocole utilise des Merkle-Sum Sparse Merkle Trees (MS-SMT), une sorte de combinaison des MST et des SMT, pour assurer la validité et l’audibilité des actifs.
 
-> *Taproot Assets Protocol s'appelait « TARO » auparavant.*
+► ***NOTE :** Taproot Assets Protocol s'appelait « TARO » auparavant.*
 
 ## TAPSCRIPT
 
@@ -16,19 +16,19 @@ Mise à jour qui a pour objet de modifier certains opcodes du langage de script 
 
 Afin de mettre en œuvre les diverses modifications associées à Taproot, il s'est avéré nécessaire de revisiter le langage de script. C'est là l'objet de Tapscript qui désactive ou modifie certains opcodes, et vient en ajouter de nouveaux. 
 
-> *Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](./S.md#schnorr-protocole) et [**TAPROOT**](./T.md#taproot).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**SCHNORR (PROTOCOLE)**](./S.md#schnorr-protocole) et [**TAPROOT**](./T.md#taproot).*
 
 ## TARO
 
 Ancien nom du protocole Taproot Assets Protocol. 
 
-> *Pour plus d'informations, voir la définition de [**TAPROOT ASSETS PROTOCOL**](./T.md#taproot-assets-protocol).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**TAPROOT ASSETS PROTOCOL**](./T.md#taproot-assets-protocol).*
 
 ## TAUX DE HACHAGE
 
 Indicateur de la puissance de calcul du réseau, mesurée en hachages par seconde (H/s). Il indique la capacité des mineurs à exécuter des opérations de hachage dans le cadre de la preuve de travail. Un taux de hachage élevé signifie une plus grande sécurité de l'historique économique de Bitcoin et une plus grande résistance aux attaques, car il faudrait une quantité substantielle de puissance de calcul pour compromettre le réseau. Le taux de hachage est également indicatif de la concurrence entre les mineurs : plus le taux de hachage est élevé, plus la difficulté de minage est grande, ce qui influence la récompense et donc la rentabilité des mineurs. C'est donc un indicateur clé de la santé et de la sécurité du système Bitcoin. De la même manière que le taux de hachage sert à mesure le taux de hachage global du réseau Bitcoin, il peut également être utilisé pour mesurer le taux de hachage d'une machine, d'une ferme de minage ou encore d'une pool de minage.
 
-> *En anglais, on parle de « hashrate ».*
+► ***NOTE :** En anglais, on parle de « hashrate ».*
 
 ## TCP
 
@@ -38,7 +38,7 @@ Sigle de « *Transmission Control Protocol* ». C'est un protocole de communicat
 
 Fait référence à une composante des transactions Bitcoin qui a été déplacée avec le soft fork SegWit afin de résoudre le problème de la malléabilité des transactions. Le témoin contient les signatures et les clés publiques nécessaires pour déverrouiller les bitcoins dépensés dans une transaction. Dans les transactions Legacy, le témoin représentait la somme des `ScriptSig` de tous les inputs. Dans les transactions SegWit, le témoin représente la somme des `ScriptWitness` de chaque input, et cette partie de la transaction est dorénavant déplacée dans un arbre de Merkle séparé au sein du bloc. Avant SegWit, les signatures pouvaient être légèrement modifiées sans être invalidées avant qu'une transaction ne soit confirmée, ce qui changeait l'identifiant de la transaction. Cela rendait difficile la construction de divers protocoles, car une transaction non confirmée pouvait voir son identifiant changer. En séparant les témoins, SegWit rend les transactions non malléables, car tout changement dans les signatures n'affecte plus l'identifiant de la transaction (TXID), mais uniquement l'identifiant du témoin (WTXID). En plus de résoudre le problème de la malléabilité, cette séparation permet d'augmenter la capacité de chaque bloc.
 
-> *En anglais, « témoin » se traduit par « witness ». Pour plus d'informations, voir la définition de **[SEGWIT](./S.md#segwit)**.*
+► ***NOTE :** En anglais, « témoin » se traduit par « witness ». Pour plus d'informations, voir la définition de **[SEGWIT](./S.md#segwit)**.*
 
 ## TESTNET
 
@@ -48,7 +48,7 @@ Version alternative de Bitcoin utilisée exclusivement à des fins de test et de
 
 Projet lancé en 2016 sur Ethereum, qui visait à créer un fonds d'investissement autonome géré par des smart contracts. Bien que principalement lié à Ethereum, The DAO a eu un impact important sur l'évolution de Bitcoin. En juin 2016, The DAO a été victime d'un piratage massif. En réaction, la communauté Ethereum a réalisé un hardfork, qui s'est avéré être un échec retentissant. Cet incident a consolidé les positions conservatrices des small blockers durant la Blocksize War de Bitcoin. Ils ont utilisé cet événement pour argumenter contre les changements rapides dans le protocole Bitcoin, comme ceux prônés par les big blockers, et contre l'idée de réaliser des hardforks, comme cela a été le cas sur Ethereum suite au hack de The DAO.
 
-> *Pour plus d'informations, voir la définition de **[BLOCKSIZE WAR](./B.md#blocksize-war)**.*
+► ***NOTE :** Pour plus d'informations, voir la définition de **[BLOCKSIZE WAR](./B.md#blocksize-war)**.*
 
 ## TIDES
 
@@ -61,25 +61,25 @@ Primitive de contrat intelligent qui permet de définir une condition temporelle
 * Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
 Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
 
-> *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](./O.md#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](./O.md#op_checksequenceverify-0xb2), [**NLOCKTIME**](./N.md#nlocktime) et [**NSEQUENCE**](./N.md#nsequence).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](./O.md#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](./O.md#op_checksequenceverify-0xb2), [**NLOCKTIME**](./N.md#nlocktime) et [**NSEQUENCE**](./N.md#nsequence).*
 
 ## TOR (THE ONION ROUTER)
 
 Réseau de serveurs relais (nodes) qui permet d'anonymiser l'origine des connexions TCP sur internet. Il fonctionne en encapsulant les données dans plusieurs couches de chiffrement. Chaque nœud de relais enlève une couche pour révéler l'adresse du nœud suivant, jusqu'à atteindre la destination finale. Le réseau Tor assure l'anonymat en empêchant les nœuds intermédiaires de connaître à la fois l'origine et la destination des données, ce qui rend très difficile pour un observateur de retracer l'activité de l'utilisateur. Le réseau TOR peut être utilisé dans le cadre de Bitcoin pour éviter d'associer son adresse IP à un nœud Bitcoin, et donc éviter de faire fuiter certaines informations personnelles.
 
-> *« TOR » signifie « The Onion Router ». Il est important de différencier TOR le réseau, et TOR Browser, un navigateur web établi sur Firefox qui est spécialement conçu pour utilise le réseau TOR.*
+► ***NOTE :** « TOR » signifie « The Onion Router ». Il est important de différencier TOR le réseau, et TOR Browser, un navigateur web établi sur Firefox qui est spécialement conçu pour utilise le réseau TOR.*
 
 ## TPRV
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet.
 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## TPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin Testnet. 
 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## TRANSACTION (TX)
 
@@ -93,7 +93,7 @@ La transaction coinbase est une transaction spéciale et unique incluse dans cha
 
 Transaction Bitcoin qui implique plusieurs entités différentes en input de la transaction. Il s'agit donc également d'un modèle de transaction qui peut être utilisé en analyse de chaîne. L'exemple typique d'une transaction collaborative est le coinjoin, où plusieurs utilisateurs regroupent des montants équivalents en inputs pour récupérer l'intégralité de la somme (moins les frais de transaction) dans des outputs de même montant, afin d'empêcher le traçage des pièces.
 
-> *Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
+► ***NOTE :** Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
 
 ## TRANSACTION D'ENGAGEMENT
 
@@ -115,7 +115,7 @@ Notons que la majorité des nœuds laissent les configurations par défaut telle
 
 Concept de hub de paiement anonyme compatible avec Bitcoin proposé en 2016 par Ethan Heilman, Leen AlShenibr, Foteini Baldimtsi, Alessandra Scafuro et Sharon Goldberg. TumbleBit est un système de mixage de bitcoins qui ne requiert pas la confiance en un intermédiaire. Il permet à des utilisateurs de réaliser des paiements rapides, anonymes et hors-chaîne via un coordinateur appelé le Tumbler. TumbleBit garantit l'anonymat en s'assurant que même le Tumbler ne peut pas lier le paiement d'un payeur à son bénéficiaire. Le protocole TumbleBit assure que le Tumbler ne peut ni voler des bitcoins, ni imprimer de faux bitcoins en s'émettant des paiements à lui-même. L'anonymat offert par TumbleBit est comparable à celui d'un système eCash de Chaum. Cependant, ce concept n'a jamais été largement adopté, les techniques de confidentialité telles que le Chaumian coinjoin lui étant préférées.
 
-> *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
 ## TWO-WAY PEG (2WP)
 
@@ -124,13 +124,13 @@ Mécanisme qui permet d'établir une connexion entre le système principal de Bi
 * Une fédération d'entités ;
 * Les mineurs de la chaîne principale (drivechain).
 
-> *En français, on parle d'un « ancrage bilatéral ».*
+► ***NOTE :** En français, on parle d'un « ancrage bilatéral ».*
 
 ## TXID (TRANSACTION IDENTIFIER)
 
 Identifiant unique associé à chaque transaction Bitcoin. Il est généré en calculant le hachage `SHA256d` des données de la transaction. Le TXID sert de référence pour retrouver une transaction spécifique au sein de la blockchain. Il est également utilisé pour pour faire référence à un UTXO, qui est essentiellement la concaténation du TXID d'une transaction précédente et de l'index de l'output désigné (également appelé « vout »). Pour les transaction post-SegWit, le TXID ne prend plus en compte le témoin de la transaction, ce qui permet de supprimer la malléabilité.
 
-> *Pour plus d'informations, voir la définition de [**WTXID**](./W.md#wtxid).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**WTXID**](./W.md#wtxid).*
 
 ## TYPE DE DEVISE
 
@@ -143,7 +143,7 @@ Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type d
 
 ![](assets/21.png)
 
-> *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
 
 ## TWEAK (CLÉ PUBLIQUE)
 

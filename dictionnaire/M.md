@@ -6,7 +6,7 @@ Mécanisme d'authentification conçu pour sécuriser l'accès à des services su
 
 Ancien nom de la collection d'outils et de bibliothèques pour développeurs BDK.
 
-> *Pour plus d'informations, voir la définition de [**BDK (BITCOIN DEV KIT)**](./B.md#bdk-bitcoin-dev-kit).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**BDK (BITCOIN DEV KIT)**](./B.md#bdk-bitcoin-dev-kit).*
 
 ## MAGIC NETWORK
 
@@ -15,7 +15,7 @@ Constantes utilisées dans le protocole Bitcoin pour identifier le réseau spéc
 * Testnet : `0b110907` ;
 * Regtest : `fabfb5da`.
 
-> *C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
+► ***NOTE :** C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
 
 ## MAINNET
 
@@ -37,13 +37,13 @@ Désigne la plus grande proportion de l'activité économique liée à la monnai
 
 Se réfère à la possibilité de modifier légèrement la structure d'une transaction Bitcoin, sans en altérer l'effet, mais tout en changeant l'identifiant de transaction (TxID). Cette propriété peut être exploitée malicieusement pour induire en erreur les parties prenantes sur le statut d'une transaction, causant ainsi des problèmes comme la double dépense. La malléabilité était rendue possible par la flexibilité de la transaction électronique utilisée. Le soft fork SegWit a notamment été introduit pour empêcher cette malléabilité des transactions Bitcoin, rendant compliquée une implémentation du Lightning Network. Il y parvient en écartant les données malléables de la transaction du calcul du TxID.
 
-> *Bien que ce soit rare, on retrouve parfois le terme de « mutabilité » pour évoquer le même concept.*
+► ***NOTE :** Bien que ce soit rare, on retrouve parfois le terme de « mutabilité » pour évoquer le même concept.*
 
 ## MAN-IN-THE-MIDDLE (MITM)
 
 Attaque dans laquelle un acteur malveillant se place clandestinement entre deux parties communiquant, interceptant et potentiellement modifiant les messages échangés, sans que les deux parties ne remarquent sa présence.
 
-> *En français, on parle d'une « attaque de l'homme du milieu » ou « HDM ».*
+► ***NOTE :** En français, on parle d'une « attaque de l'homme du milieu » ou « HDM ».*
 
 ## MAPPER (TO MAP)
 
@@ -53,7 +53,7 @@ Dans le contexte de l'informatique, mapper désigne le processus d'associer des 
 
 Représente la valeur totale d'un actif en circulation, comme le bitcoin. Elle est calculée en multipliant le nombre total de pièces en circulation par le prix actuel de chaque unité. Ce chiffre donne une indication de la taille globale et de la valeur de marché de Bitcoin.
 
-> *En français, on pourrait le traduire par « capitalisation boursière ».*
+► ***NOTE :** En français, on pourrait le traduire par « capitalisation boursière ».*
 
 ## MASF
 
@@ -63,7 +63,7 @@ Sigle de « *Miner-Activated Soft Fork* ». Qualifie un soft fork dans Bitcoin l
 
 Sigle de « *Merkelised Alternative Script Tree* ». Technique employant un arbre de Merkle pour résumer un nombre arbitraire de conditions de dépenses sélectionnées par l'utilisateur dans une adresse de réception, dont une doit être remplie pour dépenser les bitcoins concernés. L'utilisation d'un arbre de Merkle permet à l'utilisateur de choisir quelle condition il souhaite remplir sans révéler les détails des autres conditions sur la blockchain. Cela permet de réduire les frais liés à ces scripts, de créer des conditions beaucoup plus lourdes et, sur un temps plus long, d'améliorer la confidentialité de l'utilisateur (en plus de l'utilisation conjointe de Schnorr). Ce concept a fait l'objet de plusieurs propositions, mais il a finalement était ajouté à Bitcoin via le soft fork Taproot en 2021.
 
-> *Initialement, « MAST » était l'acronyme de « Merklized Abstract Syntax Tree ». L'utilisation qui en est faite dans le cadre de Taproot n'a plus rien à voir avec un « Abstract Syntax Tree ». Toutefois, les utilisateurs continuaient d'employer ce terme de MAST. Anthony Towns a donc proposé de modifier la signification initiale tout en conservant cet acronyme largement employé avec : « Merklized Alternative Script Trees ».*
+► ***NOTE :** Initialement, « MAST » était l'acronyme de « Merklized Abstract Syntax Tree ». L'utilisation qui en est faite dans le cadre de Taproot n'a plus rien à voir avec un « Abstract Syntax Tree ». Toutefois, les utilisateurs continuaient d'employer ce terme de MAST. Anthony Towns a donc proposé de modifier la signification initiale tout en conservant cet acronyme largement employé avec : « Merklized Alternative Script Trees ».*
 
 ## MASTER FINGERPRINT
 
@@ -85,7 +85,7 @@ Nom du fichier de données utilisé par le logiciel Bitcoin Core pour stocker l'
 
 Dans le cadre de Git, représente l'action d'intégrer les modifications d'une branche à une autre, typiquement de ramener les développements d'une branche secondaire dans la branche principale. Cette opération permet de combiner les historiques de commit des branches concernées et de résoudre les éventuels conflits pour maintenir l'intégrité du logiciel.
 
-> *En français, on peut traduire « merge » par « fusion ».*
+► ***NOTE :** En français, on peut traduire « merge » par « fusion ».*
 
 ## MERKLE BLOCK
 
@@ -115,19 +115,19 @@ Action de participer à la preuve de travail (Proof-of-Work) du système Bitcoin
 
 Stratégie (ou attaque) dans le minage, où un mineur ou un groupe de mineurs conserve intentionnellement des blocs avec une preuve de travail valide sans les diffuser immédiatement sur le réseau. L'objectif est de conserver une avance sur les autres mineurs en termes de preuve de travail, ce qui leur permet potentiellement de miner plusieurs blocs d'affilée et de les publier en une seule fois, maximisant ainsi leurs gains. Autrement dit, le groupe de mineur attaquants ne minent pas sur le dernier bloc validé par l'ensemble du réseau, mais plutôt sur un bloc qu'ils ont eux-mêmes créé, qui diffère de celui validé par le réseau. Ce procédé génère une sorte d'embranchement secret de la blockchain, qui reste inconnue de l'ensemble du réseau jusqu'à ce que cette chaîne alternative dépasse potentiellement la blockchain honnête. Une fois que la chaîne secrète des mineurs attaquants devient plus longue (c'est-à-dire qu'elle contient plus de preuve de travail accumulé) que la chaîne honnête et publique, elle est alors diffusée sur l'ensemble du réseau. À ce moment, les nœuds du réseau, qui suivent la chaîne la plus longue (avec le plus de travail de preuve de travail accumulé), vont se synchroniser sur cette nouvelle chaîne. Il y a donc une réorganisation. Le minage égoïste est embêtant car il diminue la sécurité du système en gaspillant une partie de la puissance de calcul du réseau. En cas de réussite, il conduit également à des réorganisations de la blockchain, affectant ainsi la fiabilité des confirmations de transaction pour les utilisateurs. Cette pratique reste tout de même risquée pour le groupe de mineur attaquant, car il est souvent plus rentable de miner normalement au-dessus du dernier bloc connu publiquement plutôt que d'allouer de la puissance de calcul à un embranchement secret qui ne dépassera probablement jamais la blockchain honnête. Au plus le nombre de blocs dans la réorganisation est grand, au plus la probabilité de réussite de l'attaque est basse.
 
-> *La traduction anglaise de « minage égoïste » est « selfish mining ». Attention, une attaque par selfish mining ne doit pas être confondue avec une attaque de block withholding (bloc retenu).*
+► ***NOTE :** La traduction anglaise de « minage égoïste » est « selfish mining ». Attention, une attaque par selfish mining ne doit pas être confondue avec une attaque de block withholding (bloc retenu).*
 
 ## MINAGE FUSIONNÉ
 
 Technique de consensus de sidechain permettant aux mineurs de Bitcoin de travailler simultanément sur la chaîne principale et sur une ou plusieurs sidechains, sans pour autant devoir fournir plus de travail de calcul. Il s'agit donc de réutiliser la preuve de travail de Bitcoin pour des applications tierces. Toutefois, le minage fusionné présente un désavantage notable pour le mineur : il nécessite l'installation et l'exécution d'un logiciel de nœud spécifique à chaque sidechain pour permettre la réutilisation de ses preuves de travail. De plus, la récompense obtenue pour le minage d'une sidechain est versée sur celle-ci et non directement en BTC sur la blockchain principale.
 
-> *En anglais, on parle de « Merged Mining » ou « MM ».*
+► ***NOTE :** En anglais, on parle de « Merged Mining » ou « MM ».*
 
 ## MINAGE FUSIONNÉ AVEUGLE
 
 Technique de consensus de sidechain permettant aux mineurs de Bitcoin de travailler simultanément sur la chaîne principale et sur une ou plusieurs sidechains, sans pour autant devoir fournir plus de travail de calcul. Contrairement au minage fusionné classique, cette méthode ne nécessite pas de configurer un nouveau nœud pour chaque sidechain exploitée. Dans le cadre du Blind Merged Mining (BMM), chaque sidechain est gérée par des opérateurs de nœud indépendants, responsables de la création des blocs et de la récolte des récompenses associées sur la sidechain. En contrepartie, ces opérateurs doivent acheter des preuves de travail auprès des mineurs de la blockchain principale pour valider leurs blocs sur la sidechain. Ainsi, les mineurs de Bitcoin reçoivent leurs récompenses du minage fusionné des sidechains en BTC, directement sur la chaîne principale. Cette méthode, développée par Paul Sztorc pour les drivechains, nécessite l'implémentation du BIP301 pour être opérationnelle sur le réseau Bitcoin.
 
-> *En anglais, on parle de « Blind Merged Mining » ou « BMM ».*
+► ***NOTE :** En anglais, on parle de « Blind Merged Mining » ou « BMM ».*
 
 ## MINEUR
 
@@ -151,7 +151,7 @@ Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et
 
 Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript.
 
-> *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[MINISCRIPT](./M.md#miniscript)** et de **[TAPSCRIPT](./T.md#tapscript)**.*
+► ***NOTE :** Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[MINISCRIPT](./M.md#miniscript)** et de **[TAPSCRIPT](./T.md#tapscript)**.*
 
 ## MIT X11
 
@@ -161,7 +161,7 @@ Licence de logiciel libre très permissive qui autorise les utilisateurs à copi
 
 Dans le domaine général des mathématiques, le mixage ou le mélange se réfère à la propriété d'un système dynamique où, après un certain temps, toutes les portions de l'espace initial peuvent en théorie se retrouver mêlées avec n'importe quelle autre portion. Le mixage implique que la position d'une particule ou l'état d'un système évolue de telle manière que sa distribution future soit indépendante de sa distribution initiale, atteignant ainsi un état où les caractéristiques de l'état initial sont uniformément distribuées dans tout l'espace du système. Dans le cadre de Bitcoin, on peut utiliser cette notion pour évaluer la qualité d'un processus de mélange de pièces comme un coinjoin.
 
-> *En anglais, on parle de « mixing ». Certains bitcoiners différencient la notion de mixage du processus de coinjoin. En effet, ils disent que le mixage se réfère au mélange de pièces effectué par une entité possédant les fonds, contrairement aux coinjoins où l'utilisateur conserve toujours la possession des fonds. Toutefois, selon moi, cette distinction est incorrecte, car le coinjoin implique nécessairement un mixage au sens mathématique du terme. Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)***
+► ***NOTE :** En anglais, on parle de « mixing ». Certains bitcoiners différencient la notion de mixage du processus de coinjoin. En effet, ils disent que le mixage se réfère au mélange de pièces effectué par une entité possédant les fonds, contrairement aux coinjoins où l'utilisateur conserve toujours la possession des fonds. Toutefois, selon moi, cette distinction est incorrecte, car le coinjoin implique nécessairement un mixage au sens mathématique du terme. Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)***
 
 ## MODÈLE DE SCRIPT
 
@@ -171,7 +171,7 @@ Template permettant l'utilisation de scripts standards. Un modèle de script est
 
 Un pattern de transaction est simplement un modèle ou une structure globale de transaction typique, que l’on peut retrouver sur la blockchain, et dont on connaît l’interprétation vraisemblable qui nous sera utile dans le cadre d'une analyse de chaîne. Lorsque l’on étudie les patterns, on va s’attarder sur une seule transaction que l’on va analyser à un niveau élevé (contrairement aux heuristiques internes et externes d'analyse de chaîne). En d’autres termes, nous allons uniquement regarder le nombre d’UTXOs en inputs et le nombre d'UTXOs en outputs, sans nous attarder sur les détails plus spécifiques ou l'environnement de la transaction. À partir du modèle observé, nous pourrons interpréter la nature de la transaction. On va alors rechercher des caractéristiques sur sa structure et en déduire une interprétation vraisemblable.
 
-> *En anglais, on parle de « patterns .*
+► ***NOTE :** En anglais, on parle de « patterns .*
 
 ## MODÈLE TEMPOREL
 
@@ -195,4 +195,4 @@ Concept utilisé dans le protocole Bitcoin pour déterminer une marge sur l'horo
 
 Les portefeuilles multisignatures, souvent abrégés « multisig », sont conçus pour renforcer la sécurisation de bitcoins en exigeant plusieurs signatures provenant de différentes clés privées pour autoriser une dépense. Cette méthode répartit le risque entre plusieurs clés, ce qui permet de réduire à la fois le risque de perte et celui de vol (selon la configuration du multisig). Les portefeuilles multisig fonctionnent selon un modèle « m-de-n », où `m` désigne le nombre minimal de signatures requises pour valider une transaction, et `n` le nombre total de clés impliquées. Par exemple, une configuration 2-de-3 nécessite deux signatures sur trois possibles pour valider une transaction. Cette approche offre une sécurité supérieure par rapport aux portefeuilles à clé unique, mais elle introduit également plus de complexité en termes de gestion et de sauvegarde. De plus, les transactions utilisant les anciens standards de multisig sont moins confidentielles et plus coûteuses en frais que les transactions singlesig classiques. Cependant, des innovations récentes telles que Taproot et l'utilisation de descriptors ont permis de minimiser voire d'éliminer ces inconvénients des multisigs.
 
-> *Certains bitcoiners distinguent les termes « Multisig » et « Multisig à seuil ». En effet, certains affirment qu'un multisig est forcément un n-de-n, tandis qu'un multisig à seuil est un m-de-n. Toutefois, dans le langage courant, il est accepté de parler de « Multisig » même pour m-de-n.*
+► ***NOTE :** Certains bitcoiners distinguent les termes « Multisig » et « Multisig à seuil ». En effet, certains affirment qu'un multisig est forcément un n-de-n, tandis qu'un multisig à seuil est un m-de-n. Toutefois, dans le langage courant, il est accepté de parler de « Multisig » même pour m-de-n.*

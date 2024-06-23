@@ -18,7 +18,7 @@ Sigle de « *Elliptic Curve Digital Signature Algorithm* ». C'est un algorithme
 
 Implémentation majeure du protocole Lightning Network écrite en langage Scala. Eclair est développé par la société française Acinq.
 
-> *Attention, « Eclair » était également le nom d'un portefeuille Lightning pour les appareils mobiles, développé par la même société. Aujourd'hui, ce portefeuille n'est plus maintenu.*
+► ***NOTE :** Attention, « Eclair » était également le nom d'un portefeuille Lightning pour les appareils mobiles, développé par la même société. Aujourd'hui, ce portefeuille n'est plus maintenu.*
 
 ## ECLIPSE (ATTAQUE)
 
@@ -32,7 +32,7 @@ Attaque qui consiste à isoler et contrôler les communications d'un nœud dans 
 
 Implémentation open-source d'Electrum Server écrite en Rust. Le rôle d'un electrs est donc de maintenir un index complet des adresses et transactions Bitcoin depuis la blockchain fournie par un nœud complet, afin de faire facilement et rapidement des requêtes depuis un logiciel de portefeuille (comme Electrum par exemple).
 
-> *Pour plus d'informations, voir la définition de [**ELECTRUM SERVER**](./E.md#electrum-server).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**ELECTRUM SERVER**](./E.md#electrum-server).*
 
 ## ELECTRUM
 
@@ -50,7 +50,7 @@ Indexeur implémenté sur un nœud complet Bitcoin qui permet aux logiciels de p
 
 Protocole généraliste pour les secondes couches de Bitcoin qui permet de définir la manière de gérer conjointement la propriété d'un UTXO. Eltoo a été conçu par Christian Decker, Rusty Russell et Olaoluwa Osuntokun, notamment pour résoudre les problèmes associés aux mécanismes de négociation de l'état des canaux Lightning, c'est-à-dire entre l'ouverture et la fermeture. L'architecture Eltoo simplifie le processus de négociation en introduisant un système de gestion des états linéaire, remplaçant l'approche basée sur la pénalité par une méthode de mise à jour plus flexible et moins punitive. Ce protocole nécessite l'utilisation d'un nouveau type de SigHash qui permette de ne prendre en compte aucune entrée dans la signature d'une transaction. Ce SigHash a d'abord été appelé `SIGHASH_NOINPUT`, puis `SIGHASH_ANYPREVOUT` (Any Previous Output). Son implémentation est prévue dans le BIP118.
 
-> *Eltoo est parfois également appelé « LN-Symmetry ».*
+► ***NOTE :** Eltoo est parfois également appelé « LN-Symmetry ».*
 
 ## EMBRANCHEMENT NATUREL
 
@@ -93,7 +93,7 @@ Si l'on décompose cet entête, on peut reconnaitre :
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
 
-> *En anglais, on parle d'un « Block Header ».*
+► ***NOTE :** En anglais, on parle d'un « Block Header ».*
 
 ## ENTRÉE (INPUT)
 

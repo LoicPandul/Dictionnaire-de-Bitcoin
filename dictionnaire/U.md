@@ -6,7 +6,7 @@ Sigle de « *User-Activated Soft Fork* ». Qualifie un soft fork dans Bitcoin lo
 
 Protocole de communication utilisé sur Internet qui permet l'envoi de messages (datagrammes) entre ordinateurs sans établir de connexion préalable (contrairement à TCP). UDP est une méthode de transfert rapide mais sans garantie de livraison, d'ordre des paquets, ou de gestion d'erreur. On l'utilise plutôt pour des applications nécessitant une diffusion rapide et en temps réel. Ce protocole avait été utilisé au sein du projet FIBRE pour accélérer la propagation de blocs Bitcoin.
 
-> *Pour plus d'informations, voir la définition de [**FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)**](./F.md#fibre).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)**](./F.md#fibre).*
 
 ## UNIX
 
@@ -16,13 +16,13 @@ Famille de systèmes d'exploitation multitâche développé dans les années 197
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## UPUB
 
 Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin Testnet. 
 
-> *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## URI
 
@@ -50,7 +50,7 @@ Si la racine de Merkle qu’il obtient par son processus est la même que la rac
 
 Cette méthode permet de réduire les besoins en RAM pour les opérateurs de nœuds complets. Cependant, Utreexo présente des limites, notamment l'augmentation de la taille des blocs en raison des preuves supplémentaires et la dépendance potentielle des nœuds Utreexo envers les "Bridge Nodes" pour obtenir les preuves manquantes. Les Bridge Nodes sont des nœuds complets traditionnels qui fournissent les preuves nécessaires aux nœuds Utreexo, permettant ainsi une vérification complète. Cette approche offre un compromis entre efficacité et décentralisation, facilitant l'accès à la validation des transactions pour des utilisateurs aux ressources limitées.
 
-> *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
 
 ## UTXO
 
