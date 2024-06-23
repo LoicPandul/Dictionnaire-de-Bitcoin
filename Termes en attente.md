@@ -9,16 +9,6 @@ ___
 
 ## ADDRESS SWAPPING
 
-## CHAMPION (BIP)
-
-## DER
-
-*Distinguished Encoding Rules* BIP66
-
-## PING (BIP31)
-
-
-## PONG (BIP31)
 
 
 ## ATTAQUE PAR REJEU
@@ -51,6 +41,10 @@ Bose, Ray-Chaudhuri et Hocquenghem
 
 
 
+## CHAMPION (BIP)
+
+
+
 ## CISA
 
 Cross input signature aggregation
@@ -62,6 +56,11 @@ Cross input signature aggregation
 
 ## COINSWAP
 
+
+
+## DER
+
+*Distinguished Encoding Rules* BIP66
 
 
 ## DESCRIPTORS
@@ -250,7 +249,15 @@ LSP
 
 
 
+## PING (BIP31)
+
+
+
 ## PINNING ATTACK
+
+
+
+## PONG (BIP31)
 
 
 
