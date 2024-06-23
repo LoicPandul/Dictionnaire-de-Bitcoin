@@ -6,11 +6,6 @@ ___
 
 > *Address Poisonning.*
 
-## HEADER FIRST SYNC
-
-
-## SNAPSHOT
-
 
 ## ADDRESS SWAPPING
 
@@ -110,6 +105,10 @@ Peter Todd
 
 
 ## HASHLOCKS
+
+
+
+## HEADER FIRST SYNC
 
 
 
@@ -304,6 +303,10 @@ LSP
 ## SIGNER À L'AVEUGLE
 
 > *En anglais, on parle de « Blind Signing ».*
+
+
+## SNAPSHOT
+
 
 
 ## SPARSE MERKLE TREE (SMT)

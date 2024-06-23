@@ -33,7 +33,7 @@
 - [ATH (ALL-TIME HIGH)](./dictionnaire/A.md#ath-all-time-high)
 - [ATLC](./dictionnaire/A.md#atlc)
 - [ATOMIC SWAP](./dictionnaire/A.md#atomic-swap)
-- [ATTAQUE DES 51 POURCENTS](./dictionnaire/A.md#attaque-des-51-pourcents)
+- [ATTAQUE DES 51 POUR CENT](./dictionnaire/A.md#attaque-des-51-pour-cent)
 - [AVG. ROUND DURATION](./dictionnaire/A.md#avg-round-duration)
 
 ### B
