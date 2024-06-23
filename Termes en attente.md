@@ -9,8 +9,6 @@ ___
 
 ## ADDRESS SWAPPING
 
-## NODE_BLOOM (BIP111)
-
 
 
 ## ATTAQUE PAR REJEU
@@ -216,6 +214,10 @@ LSP
 
 
 ## NFT
+
+
+
+## NODE_BLOOM (BIP111)
 
 
 

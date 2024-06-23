@@ -215,7 +215,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP13](#bip13)                |    41 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    59 |
 | [BIP14](#bip14)                |    41 | [BIT](#bit)                    |    59 |
 | [BIP16](#bip16)                |    42 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    59 |
-| [BIP17](#bip17)                |    42 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    59 |
+| [BIP17](#bip17)                |    42 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    60 |
 | [BIP21](#bip21)                |    42 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    60 |
 | [BIP22](#bip22)                |    42 | [BITCOIN CLASSIC](#bitcoin-classic) |    60 |
 | [BIP23](#bip23)                |    42 | [BITCOIN-CLI](#bitcoin-cli)    |    60 |
@@ -224,7 +224,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP32](#bip32)                |    43 | [BITCOIND](#bitcoind)          |    61 |
 | [BIP34](#bip34)                |    43 | [BITCOIND.PID](#bitcoind.pid)  |    61 |
 | [BIP35](#bip35)                |    43 | [BITCOIN FOG](#bitcoin-fog)    |    61 |
-| [BIP37](#bip37)                |    67 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    61 |
+| [BIP37](#bip37)                |    68 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    61 |
 | [BIP38](#bip38)                |    44 | [BITCOIN KNOTS](#bitcoin-knots) |    62 |
 | [BIP39](#bip39)                |    44 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    62 |
 | [BIP42](#bip42)                |    45 | [BITCOIN JESUS](#bitcoin-jesus) |    62 |
@@ -865,7 +865,7 @@ Notons que les deux premières heuristiques sur Bitcoin ont été formulées par
 
 Autre nom parfois donné à CPFP (*Child-Pay-For-Parent*). Le minage des ancêtres est le principe selon lequel un mineur ne choisit pas une transaction uniquement sur la base de ses propres frais de transaction, mais prend aussi en compte les frais des transactions ascendantes.
 
-> *Pour plus d'informations, voir la définition de [**CPFP (CHILD PAY FOR PARENT)**](#cpfp-child-pay-for-parent).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CPFP (CHILD PAY FOR PARENT)**](#cpfp-child-pay-for-parent).*
 
 ## ANCHOR OUTPUTS
 
@@ -1429,13 +1429,13 @@ Proposition pour simplifier le traitement de l'activation des soft forks antéri
 
 ## BIP91
 
-Proposition de James Hilliard (ingénieur chez Bitmain) pour faciliter l'activation du soft fork SegWit, défini dans les BIP141, BIP143 et BIP147, via un MASF sans atteindre directement le seuil requis de 95 % de la puissance de calcul signalant le soutien via le bit 1. BIP91 permet aux mineurs de signaler indirectement leur soutien à SegWit en utilisant le bit 4 dans les blocs minés. Une fois que 269 blocs sur une fenêtre de 336 blocs ont inclus le bit 4 (soit 80% de la puissance de calcul), le BIP91 se verrouille, obligeant ensuite tous les nœuds compatibles à rejeter les blocs n'incluant pas le bit 1. Cette méthode visait à rendre le BIP148 (UASF) obsolète et à éviter une scission potentielle de la blockchain le 1er août 2017. Le BIP91 a finalement été activé le 23 juillet 2017 (au bloc 477 120), juste avant la date fatidique du 1er août imposée dans le BIP148. Cela a permis de forcer le signalement de SegWit par les mineurs, qui sera finalement verrouillé le 9 août au bloc 479 808, puis activé le 24 août au bloc 481 824. Pour résumer, le BIP148 (UASF) a été créé en réaction au fait que les mineurs ne signalaient pas suffisamment SegWit, mais n'a finalement jamais été mis en œuvre. Le BIP91 (MASF) a été créé en réaction au BIP148 afin de forcer la main aux mineurs, sans pour autant risquer l'UASF du BIP148. Le BIP91 représente lui-même un soft fork, qui forcera finalement les mineurs à verrouiller le soft fork SegWit via la méthode de base (MASF BIP9).
+Proposition de James Hilliard (ingénieur chez Bitmain) pour faciliter l'activation du soft fork SegWit, défini dans les BIP141, BIP143 et BIP147, via un MASF sans atteindre directement le seuil requis de 95 % de la puissance de calcul signalant le soutien via le bit 1. Le BIP91 permet aux mineurs de signaler indirectement leur soutien à SegWit en utilisant le bit 4 dans les blocs minés. Une fois que 269 blocs sur une fenêtre de 336 blocs ont inclus le bit 4 (soit 80% de la puissance de calcul), le BIP91 se verrouille, obligeant ensuite tous les nœuds compatibles à rejeter les blocs n'incluant pas le bit 1. Cette méthode visait à rendre le BIP148 (UASF) obsolète et à éviter une scission potentielle de la blockchain le 1er août 2017. Le BIP91 a finalement été activé le 23 juillet 2017 (au bloc 477 120), juste avant la date fatidique du 1er août imposée dans le BIP148. Cela a permis de forcer le signalement de SegWit par les mineurs, qui sera finalement verrouillé le 9 août au bloc 479 808, puis activé le 24 août au bloc 481 824. Pour résumer, le BIP148 (UASF) a été créé en réaction au fait que les mineurs ne signalaient pas suffisamment SegWit, mais n'a finalement jamais été mis en œuvre. Le BIP91 (MASF) a été créé en réaction au BIP148 afin de forcer la main aux mineurs, sans pour autant risquer l'UASF du BIP148. Le BIP91 représente lui-même un soft fork, qui forcera finalement les mineurs à verrouiller le soft fork SegWit via la méthode de base (MASF BIP9).
 
 > *Pour plus d'informations, voir la définition de [**MASF**](#masf) et [**BIP148**](#bip148).*
 
 ## BIP101
 
-Proposition présentée par Gavin Andresen en 2015 qui visait à augmenter la taille maximale des blocs de 1 Mo à 8 Mo et à doubler cette limite tous les deux ans jusqu'à atteindre un peu plus de 8 Go en 2036. Cette proposition a été intégrée à l'implémentation Bitcoin XT en août 2015, qui est devenu de fait un fork de Bitcoin, mais n'a pas été suivi. Cette proposition n'a donc jamais été adoptée.
+Proposition présentée par Gavin Andresen en 2015 qui visait à augmenter la taille maximale des blocs de 1 Mo à 8 Mo et à doubler cette limite tous les deux ans jusqu'à atteindre un peu plus de 8 Go en 2036. Cette proposition a été intégrée à l'implémentation Bitcoin XT en août 2015, qui est devenu de fait un fork de Bitcoin, mais n'a pas été suivie. Cette proposition n'a donc jamais été adoptée. Certains considèrent l'implémentation du BIP101 sur Bitcoin XT comme le casus belli de la Blocksize War.
 
 > *Pour plus d'informations, voir la définition de **[BITCOIN XT](#bitcoin-xt)**.*
 
@@ -1459,7 +1459,7 @@ Propose l'ajout d'un bit de service nommé `NODE_BLOOM` pour permettre aux nœud
 
 ## BIP112
 
-Introduit l'opcode `OP_CHECKSEQUENCEVERIFY` (CSV) dans le langage Script de Bitcoin. Cette opération permet de créer des transactions dont la validité ne devient effective qu'après un certain délai relatif à une transaction antérieure, défini soit en nombre de blocs, soit en durée de temps. `OP_CHECKSEQUENCEVERIFY` compare la valeur en haut de la pile avec la valeur du champ `nSequence` de l'input. Si elle est supérieure et que toutes les autres conditions sont respectée, le script est valide. Ainsi, `OP_CHECKSEQUENCEVERIFY` restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc. Le BIP112 a été introduit via un soft fork le 4 juillet 2016 en même temps que le BIP68 et le BIP113, activé pour la première fois grâce à la méthode du BIP9.
+Introduit l'opcode `OP_CHECKSEQUENCEVERIFY` (CSV) dans le langage Script de Bitcoin. Cette opération permet de créer des transactions dont la validité ne devient effective qu'après un certain délai relatif à une transaction antérieure, défini soit en nombre de blocs, soit en durée de temps. `OP_CHECKSEQUENCEVERIFY` compare la valeur en haut de la pile avec la valeur du champ `nSequence` de l'input. Si elle est supérieure et que toutes les autres conditions sont respectées, le script est valide. Ainsi, `OP_CHECKSEQUENCEVERIFY` restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc. Le BIP112 a été introduit via un soft fork le 4 juillet 2016 en même temps que le BIP68 et le BIP113, activé pour la première fois grâce à la méthode du BIP9.
 
 > *Pour plus d'informations, voir la définition de [**OP_CHECKSEQUENCEVERIFY**](#op_checksequenceverify-0xb2).*
 
