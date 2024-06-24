@@ -29,10 +29,34 @@ def termes_les_plus_frequents(chemin_dictionnaire_complet):
                 del compteur_mots[mot]
         return compteur_mots.most_common(20)
 
+def mettre_a_jour_readme(chemin_readme, total_definitions):
+    with open(chemin_readme, 'r', encoding='utf-8') as fichier_readme:
+        contenu = fichier_readme.read()
+
+    badge_definitions = f'<p align="center">\n  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-{total_definitions}-black" alt="Nombre de définitions">\n</p>'
+
+    contenu = re.sub(
+        r'(\[!\[Cover Image\]\(./img/cover.png\)\]\(https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf\))\n<p align="center">\n  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-.*?-black" alt="Nombre de définitions">\n</p>',
+        r'\1\n' + badge_definitions,
+        contenu,
+        flags=re.DOTALL
+    )
+
+    if '<img src="https://img.shields.io/badge/Nombre%20de%20définitions-' not in contenu:
+        contenu = contenu.replace(
+            '[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)',
+            '[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)\n' + badge_definitions
+        )
+
+    with open(chemin_readme, 'w', encoding='utf-8') as fichier_readme:
+        fichier_readme.write(contenu)
+
+
 chemin_base = os.path.dirname(os.path.dirname(__file__))
 chemin_index = os.path.join(chemin_base, 'INDEX.md')
 chemin_dictionnaire_complet = os.path.join(chemin_base, 'autres_formats/dictionnaire_complet/dictionnaire_complet.md')
 chemin_stats = os.path.join(chemin_base, 'stats.md')
+chemin_readme = os.path.join(chemin_base, 'README.md')
 
 stats_lettres = compter_definitions_par_lettre(chemin_index)
 termes_frequents = termes_les_plus_frequents(chemin_dictionnaire_complet)
@@ -48,4 +72,7 @@ with open(chemin_stats, 'w', encoding='utf-8') as fichier_stats:
     for i, (mot, compteur) in enumerate(termes_frequents, start=1):
         fichier_stats.write(f"{i}. ***{mot}*** - {compteur}\n")
 
+mettre_a_jour_readme(chemin_readme, total_definitions)
+
 print(f"Statistiques générées dans {chemin_stats}")
+print(f"README.md mis à jour avec le nombre de définitions")
