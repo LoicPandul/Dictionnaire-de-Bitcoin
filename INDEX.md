@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 752 `**
+**Nombre total de définitions : ` 754 `**
 
 ### A
 
@@ -6,7 +6,7 @@
 - [ADDR](./dictionnaire/A.md#addr)
 - [ADDR.DAT](./dictionnaire/A.md#addrdat)
 - [ADDRV2](./dictionnaire/A.md#addrv2)
-- [ADRESSE DE RECEPTION](./dictionnaire/A.md#adresse-de-reception)
+- [ADRESSE DE RÉCEPTION](./dictionnaire/A.md#adresse-de-réception)
 - [AGORISME](./dictionnaire/A.md#agorisme)
 - [AJUSTEMENT DE LA DIFFICULTE](./dictionnaire/A.md#ajustement-de-la-difficulte)
 - [ALGORITHME](./dictionnaire/A.md#algorithme)
@@ -41,7 +41,7 @@
 - [BANLIST.DAT](./dictionnaire/B.md#banlistdat)
 - [BANLIST.JSON](./dictionnaire/B.md#banlistjson)
 - [BARE-MULTISIG](./dictionnaire/B.md#bare-multisig)
-- [BASE (ARITHMETIQUE)](./dictionnaire/B.md#base-arithmetique)
+- [BASE (ARITHMÉTIQUE)](./dictionnaire/B.md#base-arithmétique)
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
 - [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
@@ -152,6 +152,7 @@
 - [BITCOIN UNLIMITED](./dictionnaire/B.md#bitcoin-unlimited)
 - [BITCOIN XT](./dictionnaire/B.md#bitcoin-xt)
 - [BIT GOLD](./dictionnaire/B.md#bit-gold)
+- [BIT (UNITÉ)](./dictionnaire/B.md#bit-unité)
 - [BITVM](./dictionnaire/B.md#bitvm)
 - [BLK????.DAT](./dictionnaire/B.md#blkdat)
 - [BLKINDEX.DAT](./dictionnaire/B.md#blkindexdat)
@@ -812,6 +813,7 @@
 
 ### X
 
+- [XBT](./dictionnaire/X.md#xbt)
 - [XOR](./dictionnaire/X.md#xor)
 - [XPRV](./dictionnaire/X.md#xprv)
 - [XPUB](./dictionnaire/X.md#xpub)

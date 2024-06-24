@@ -10,14 +10,11 @@ ___
 ## ADDRESS SWAPPING
 
 
-## COMPACT FILTERS
-
 
 ## ATTAQUE PAR REJEU
 
 > *En anglais, on traduit cette attaque par « Replay Attack ».*
 
-## LABELBASE
 
 ## BCH CODES
 
@@ -27,8 +24,6 @@ Bose, Ray-Chaudhuri et Hocquenghem
 ## BCOIN
 
 
-
-## GUI QML (CORE)
 
 ## BGP HIJACKING
 
@@ -63,6 +58,10 @@ Cross input signature aggregation
 
 
 
+## COMPACT FILTERS
+
+
+
 ## DER
 
 *Distinguished Encoding Rules* BIP66
@@ -79,6 +78,11 @@ Split ?
 
 ## DUAL FUNDING
 
+
+
+## EQUIHASH
+
+Bitcoin Gold algorithme
 
 
 ## ERLAY
@@ -115,6 +119,10 @@ Peter Todd
 
 
 ## GRIEFING ATTACK
+
+
+
+## GUI QML (CORE)
 
 
 
@@ -161,6 +169,10 @@ Chris Belcher
 
 
 ## L402
+
+
+
+## LABELBASE
 
 
 
@@ -282,9 +294,7 @@ LSP
 
 ## PROBLÈME GÉNÉRAUX BYZANTINS
 
-## EQUIHASH
 
-Bitcoin Gold algorithme
 
 ## PTLC
 
