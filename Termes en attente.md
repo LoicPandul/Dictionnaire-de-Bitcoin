@@ -10,11 +10,14 @@ ___
 ## ADDRESS SWAPPING
 
 
+## COMPACT FILTERS
+
 
 ## ATTAQUE PAR REJEU
 
 > *En anglais, on traduit cette attaque par « Replay Attack ».*
 
+## LABELBASE
 
 ## BCH CODES
 
@@ -24,6 +27,8 @@ Bose, Ray-Chaudhuri et Hocquenghem
 ## BCOIN
 
 
+
+## GUI QML (CORE)
 
 ## BGP HIJACKING
 
@@ -277,7 +282,9 @@ LSP
 
 ## PROBLÈME GÉNÉRAUX BYZANTINS
 
+## EQUIHASH
 
+Bitcoin Gold algorithme
 
 ## PTLC
 
