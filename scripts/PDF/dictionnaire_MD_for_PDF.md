@@ -1132,31 +1132,31 @@ Acronyme de « *Bitcoin Improvement Proposal* ». Une proposition d'amélioratio
 
 Les BIPs sont classés en trois catégories principales :
 \begin{itemize}
-  \item Standards Track BIPs : Concernent les modifications qui affectent directement les implémentations de Bitcoin, comme les règles de validation des transactions et des blocs ;
-  \item Informational BIPs : Fournissent des informations ou des recommandations sans proposer de changements directs au protocole ;
-  \item Process BIPs : Décrivent les changements dans les procédures entourant Bitcoin, comme les processus de gouvernance.
+  \item Standards Track BIPs* : Concernent les modifications qui affectent directement les implémentations de Bitcoin, comme les règles de validation des transactions et des blocs ;
+  \item Informational BIPs* : Fournissent des informations ou des recommandations sans proposer de changements directs au protocole ;
+  \item Process BIPs* : Décrivent les changements dans les procédures entourant Bitcoin, comme les processus de gouvernance.
 \end{itemize}
 
 Les BIPs Standards Track et informationnels sont également classifiés par « Layer » ou couche :
 \begin{itemize}
-  \item Consensus Layer : Les BIPs de cette couche concernent les règles de consensus de Bitcoin, telles que les modifications des règles de validation des blocs ou des transactions. Ces propositions peuvent être soit des soft forks (modifications rétrocompatibles) soit des hard forks (modifications non rétrocompatibles). Par exemple, les BIPs de SegWit et Taproot appartiennent à cette catégorie ;
-  \item Peer Services : Cette couche concerne le fonctionnement du réseau de nœuds Bitcoin, c’est-à-dire comment les nœuds se trouvent et communiquent entre eux sur Internet ;
-  \item API/RPC : Les BIPs de cette couche concernent les interfaces de programmation applicative (API) et les appels de procédure à distance (RPC) qui permettent aux logiciels Bitcoin d'interagir avec les nœuds ;
-  \item Applications Layer : Cette couche concerne les applications construites par-dessus Bitcoin. Les BIPs de cette catégorie vont typiquement traiter les modifications au niveau des standards des portefeuilles Bitcoin.
+  \item Consensus Layer* : Les BIPs de cette couche concernent les règles de consensus de Bitcoin, telles que les modifications des règles de validation des blocs ou des transactions. Ces propositions peuvent être soit des soft forks (modifications rétrocompatibles) soit des hard forks (modifications non rétrocompatibles). Par exemple, les BIPs de SegWit et Taproot appartiennent à cette catégorie ;
+  \item Peer Services* : Cette couche concerne le fonctionnement du réseau de nœuds Bitcoin, c’est-à-dire comment les nœuds se trouvent et communiquent entre eux sur Internet ;
+  \item API/RPC* : Les BIPs de cette couche concernent les interfaces de programmation applicative (API) et les appels de procédure à distance (RPC) qui permettent aux logiciels Bitcoin d'interagir avec les nœuds ;
+  \item Applications Layer* : Cette couche concerne les applications construites par-dessus Bitcoin. Les BIPs de cette catégorie vont typiquement traiter les modifications au niveau des standards des portefeuilles Bitcoin.
 \end{itemize}
 
 Le processus de soumission d'un BIP commence par la conceptualisation et la discussion de l'idée sur la liste de diffusion *Bitcoin-dev*. Si l'idée est prometteuse, l'auteur rédige un BIP en respectant un format spécifique et le soumet via une Pull Request sur le dépôt GitHub de Core. Les éditeurs examinent cette proposition pour vérifier si elle respecte bien tous les critères. Le BIP doit être techniquement réalisable, bénéfique pour le protocole, conforme au formatage requis, et en accord avec la philosophie de Bitcoin. Si le BIP répond à ces conditions, il est officiellement intégré au dépôt GitHub des BIPs. Il se verra ensuite attribuer un numéro. Ce numéro est généralement décidé par l'éditeur, souvent Luke Dashjr, et est attribué de manière logique : les BIPs traitant de sujets similaires reçoivent souvent des numéros consécutifs.
 
 Les BIPs passent ensuite par différents statuts au cours de leur cycle de vie. Le statut actuel est précisé dans l’entête de chaque BIP :
 \begin{itemize}
-  \item Brouillon (Draft) : La proposition est encore en phase de rédaction et de débat ;
-  \item Proposé (Proposed) : Le BIP est considéré comme complet et prêt pour être examiné par la communauté ;
-  \item Différé (Deferred) : Le BIP est mis en attente pour plus tard par le champion ou par un éditeur ;
-  \item Rejeté (Rejected) : Un BIP est classé comme rejeté s'il n'a montré aucune activité pendant 3 ans. Son auteur peut choisir de le reprendre ultérieurement, ce qui lui permettrait de retourner au statut de brouillon ;
-  \item Retiré (Withdrawn) : Le BIP a été retiré par son auteur ;
-  \item Final (Final) : Le BIP est accepté et largement implémenté sur Bitcoin ;
-  \item Actif (Active) : Pour les BIPs de processus uniquement, ce statut est attribué une fois qu'un certain consensus est atteint ;
-  \item Remplacé / Obsolète (Replaced / Obsolete) : Le BIP n’est plus applicable ou a été remplacé par une proposition plus récente qui le rend inutile.
+  \item Brouillon (*Draft*) : La proposition est encore en phase de rédaction et de débat ;
+  \item Proposé (*Proposed*) : Le BIP est considéré comme complet et prêt pour être examiné par la communauté ;
+  \item Différé (*Deferred*) : Le BIP est mis en attente pour plus tard par le champion ou par un éditeur ;
+  \item Rejeté (*Rejected*) : Un BIP est classé comme rejeté s'il n'a montré aucune activité pendant 3 ans. Son auteur peut choisir de le reprendre ultérieurement, ce qui lui permettrait de retourner au statut de brouillon ;
+  \item Retiré (*Withdrawn*) : Le BIP a été retiré par son auteur ;
+  \item Final (*Final*) : Le BIP est accepté et largement implémenté sur Bitcoin ;
+  \item Actif (*Active*) : Pour les BIPs de processus uniquement, ce statut est attribué une fois qu'un certain consensus est atteint ;
+  \item Remplacé / Obsolète (*Replaced* / *Obsolete*) : Le BIP n’est plus applicable ou a été remplacé par une proposition plus récente qui le rend inutile.
 \end{itemize}
 
 ![](../../dictionnaire/assets/25.png)
@@ -1483,10 +1483,10 @@ Introduit un nouvel opcode nommé `OP_CHECKTEMPLATEVERIFY` (CTV). CTV permettrai
 
 Établit un nouveau processus standardisé pour la classification des propositions d'amélioration de Bitcoin. Les BIP doivent dorénavant être classifiés selon 4 catégories :
 \begin{itemize}
-  \item Consensus : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
-  \item Peer Services : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
-  \item API/RPC : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
-  \item Applications : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
+  \item Consensus* : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
+  \item Peer Services* : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
+  \item API/RPC* : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
+  \item Applications* : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
 \end{itemize}
 
 ## BIP125
