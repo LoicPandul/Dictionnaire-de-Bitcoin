@@ -32,7 +32,7 @@
 26. ***Y*** - 2
 
 ### Termes techniques les plus rencontrés :
-1. ***bitcoin*** - 1232
+1. ***bitcoin*** - 1234
 2. ***transaction*** - 957
 3. ***bloc*** - 581
 4. ***script*** - 327
@@ -41,9 +41,9 @@
 7. ***adresse*** - 296
 8. ***portefeuille*** - 278
 9. ***mineur*** - 261
-10. ***réseau*** - 250
+10. ***réseau*** - 251
 11. ***utxo*** - 232
-12. ***protocole*** - 220
+12. ***protocole*** - 221
 13. ***utilisateur*** - 214
 14. ***donnée*** - 205
 15. ***clé*** - 200
