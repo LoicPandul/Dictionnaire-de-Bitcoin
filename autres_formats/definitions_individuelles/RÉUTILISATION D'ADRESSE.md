@@ -8,5 +8,5 @@ Pour préserver au minimum sa vie privée, il est vivement conseillé de n'utili
 
 ![](../../dictionnaire/assets/10.png)
 
-> *En anglais, on dit « Address Reuse ».*
+► ***NOTE :** En anglais, on dit « Address Reuse ».*
 

@@ -14,4 +14,4 @@ En supposant qu'il faille, en moyenne, produire 1 million de shares pour trouver
 
 Concrètement, cela signifie qu'en moyenne, la pool de minage devrait trouver un bloc toutes les 21 minutes environ. Cet indicateur fluctue avec les variations du hashrate de la pool : une augmentation du hashrate réduit l'*Avg. Round Duration*, tandis qu'une diminution l'allonge. Il va également fluctuer à chaque évolution périodique de la cible de difficulté sur Bitcoin (tous les 2016 blocs). Cette mesure ne prend pas en compte les blocs trouvés par d'autres pools et se concentre uniquement sur la performance interne de la pool étudiée.
 
-> *Pour plus d'informations, voir les définitions de **[SHARES](/dictionnaire/S.md#shares)** et de **[LUCK](/dictionnaire/L.md#luck)**.*
+► ***NOTE :** Pour plus d'informations, voir les définitions de **[SHARES](/dictionnaire/S.md#shares)** et de **[LUCK](/dictionnaire/L.md#luck)**.*

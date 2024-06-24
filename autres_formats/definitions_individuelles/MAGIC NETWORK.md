@@ -5,5 +5,5 @@ Constantes utilisées dans le protocole Bitcoin pour identifier le réseau spéc
 * Testnet : `0b110907` ;
 * Regtest : `fabfb5da`.
 
-> *C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
+► ***NOTE :** C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
 

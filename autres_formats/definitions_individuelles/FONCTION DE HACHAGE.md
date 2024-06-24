@@ -11,5 +11,5 @@ Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieu
 * `SHA512` au sein des algorithmes `HMAC` et `PBKDF2` utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
 * `HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception et dans le calcul des empreintes de clés parents pour les clés étendues.
 
-> *En anglais, on parle de « hash function ».*
+► ***NOTE :** En anglais, on parle de « hash function ».*
 

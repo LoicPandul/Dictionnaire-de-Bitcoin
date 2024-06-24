@@ -10,5 +10,5 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 
 ![](../../dictionnaire/assets/13.png)
 
-> *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
+► ***NOTE :** En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 

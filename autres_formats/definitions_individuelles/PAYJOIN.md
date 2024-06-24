@@ -4,5 +4,5 @@ Structure spécifique de transaction Bitcoin qui permet d'améliorer la confiden
 
 ![](../../dictionnaire/assets/14.png)
 
-> *Le Payjoin est également parfois nommé « P2EP (Pay-to-End-Point) », « Stowaway » ou « transaction stéganographique ».*
+► ***NOTE :** Le Payjoin est également parfois nommé « P2EP (Pay-to-End-Point) », « Stowaway » ou « transaction stéganographique ».*
 

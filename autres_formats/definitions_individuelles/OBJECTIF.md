@@ -8,5 +8,5 @@ Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif (ou _pu
 
 ![](../../dictionnaire/assets/20.png)
 
-> *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](/dictionnaire/C.md#chemin-de-dérivation).*
+► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](/dictionnaire/C.md#chemin-de-dérivation).*
 

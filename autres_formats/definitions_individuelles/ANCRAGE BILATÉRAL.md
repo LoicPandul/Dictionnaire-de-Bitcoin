@@ -5,5 +5,5 @@ Mécanisme qui permet d'établir une connexion entre le système principal de Bi
 * Une fédération d'entités ;
 * Les mineurs de la chaîne principale (drivechain).
 
-> *En anglais, on parle d'un « two-way peg » ou « 2WP ».*
+► ***NOTE :** En anglais, on parle d'un « two-way peg » ou « 2WP ».*
 
