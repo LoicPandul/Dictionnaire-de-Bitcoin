@@ -30,7 +30,7 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
 * Science Genial (https://twitter.com/science\_genial) ;
 * Marc VALLEE (https://twitter.com/marcvallee13) ;
 * Meyga Vox (https://twitter.com/meygavox) ;
-* L'équipe de Bitcoin.fr (https://bitcoin.fr/) ;
+* Jean-Luc et Marco de Bitcoin.fr (https://bitcoin.fr/) ;
 * L'équipe de Découvre Bitcoin (https://decouvrebitcoin.fr/) ;
 * L'équipe de PlanB Network (https://planb.network/) ;
 * L'équipe de Bitstack (https://www.bitstack-app.com/) ;
@@ -56,10 +56,13 @@ Merci également à toutes les personnes qui créent des contenus instructifs su
 * Et pleins d'autres que j'oublie sûrement.
 \
 \
-Et plus largement, merci à tous ceux qui contribuent au développement de Bitcoin, qu'ils soient développeurs ou chercheurs.\
+Plus largement, merci à tous ceux qui contribuent au développement de Bitcoin, qu'ils soient développeurs ou chercheurs.\
 \
 \
-Enfin, je suis profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent sur les réseaux sociaux ou dans d'autres publications. Vos partages spontanés sont une source de motivation inestimable pour moi. Ils renforcent mon désir de continuer d'écrire et de partager des informations sur Bitcoin. Ils rendent mes créations de contenus non seulement possibles, mais également plus agréables.\
+Je suis aussi profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent sur les réseaux sociaux ou dans d'autres publications. Vos partages spontanés sont une source de motivation inestimable pour moi. Ils renforcent mon désir de continuer d'écrire et de partager des informations sur Bitcoin. Ils rendent mes créations de contenus non seulement possibles, mais également plus agréables.\
+\
+\
+Et évidemment, un immense merci à ma femme, Chloé, qui est à l'origine de l'idée de ce dictionnaire et qui m'a conseillé tout au long de sa rédaction.\
 \
 \
 Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur Amazon (disponible fin 2024), ou bien me faire un don sur mon adresse Lightning : pandul@sats.rs. Merci ! :)\
