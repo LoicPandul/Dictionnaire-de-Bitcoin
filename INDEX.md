@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 754 `**
+**Nombre total de définitions : ` 756 `**
 
 ### A
 
@@ -7,6 +7,7 @@
 - [ADDR.DAT](./dictionnaire/A.md#addrdat)
 - [ADDRV2](./dictionnaire/A.md#addrv2)
 - [ADRESSE DE RÉCEPTION](./dictionnaire/A.md#adresse-de-réception)
+- [ADRESSE STATIQUE](./dictionnaire/A.md#adresse-statique)
 - [AGORISME](./dictionnaire/A.md#agorisme)
 - [AJUSTEMENT DE LA DIFFICULTE](./dictionnaire/A.md#ajustement-de-la-difficulte)
 - [ALGORITHME](./dictionnaire/A.md#algorithme)
@@ -403,6 +404,7 @@
 ### L
 
 - [LABEL](./dictionnaire/L.md#label)
+- [LABEL (SILENT PAYMENTS)](./dictionnaire/L.md#label-silent-payments)
 - [LCB/FT](./dictionnaire/L.md#lcbft)
 - [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
 - [LEVELDB](./dictionnaire/L.md#leveldb)

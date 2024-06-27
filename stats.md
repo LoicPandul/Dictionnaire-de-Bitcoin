@@ -1,7 +1,7 @@
 ## Statistiques du *Dictionnaire de Bitcoin*
 
 ### Nombre total de définitions : 
-**-> 754**
+**-> 756**
 
 ### Nombre de définitions par lettre :
 1. ***B*** - 141
@@ -10,7 +10,7 @@
 4. ***C*** - 70
 5. ***P*** - 56
 6. ***M*** - 37
-7. ***A*** - 33
+7. ***A*** - 34
 8. ***D*** - 30
 9. ***R*** - 25
 10. ***T*** - 25
@@ -19,8 +19,8 @@
 13. ***F*** - 18
 14. ***H*** - 18
 15. ***N*** - 15
-16. ***W*** - 14
-17. ***L*** - 13
+16. ***L*** - 14
+17. ***W*** - 14
 18. ***I*** - 11
 19. ***U*** - 9
 20. ***V*** - 7
@@ -32,23 +32,23 @@
 26. ***Y*** - 2
 
 ### Termes techniques les plus rencontrés :
-1. ***bitcoin*** - 1234
-2. ***transaction*** - 957
+1. ***bitcoin*** - 1237
+2. ***transaction*** - 962
 3. ***bloc*** - 581
-4. ***script*** - 327
-5. ***information*** - 302
-6. ***note*** - 301
-7. ***adresse*** - 296
-8. ***portefeuille*** - 278
+4. ***adresse*** - 335
+5. ***script*** - 327
+6. ***information*** - 306
+7. ***note*** - 305
+8. ***portefeuille*** - 281
 9. ***mineur*** - 261
 10. ***réseau*** - 251
-11. ***utxo*** - 232
-12. ***protocole*** - 221
-13. ***utilisateur*** - 214
-14. ***donnée*** - 205
-15. ***clé*** - 200
+11. ***utxo*** - 238
+12. ***protocole*** - 223
+13. ***utilisateur*** - 215
+14. ***clé*** - 208
+15. ***donnée*** - 205
 16. ***signature*** - 199
-17. ***système*** - 176
-18. ***publique*** - 168
+17. ***publique*** - 180
+18. ***système*** - 175
 19. ***pile*** - 165
-20. ***segwit*** - 162
+20. ***entre*** - 162

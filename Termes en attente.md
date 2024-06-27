@@ -10,9 +10,6 @@ ___
 ## ADDRESS SWAPPING
 
 
-## TAGUÉE
-
-Fonction de hachage taguée.
 
 ## ATTAQUE PAR REJEU
 
@@ -378,6 +375,11 @@ Liquid
 
 ## SWEEPING (LIGHTNING)
 
+
+
+## TAGUÉE
+
+Fonction de hachage taguée.
 
 
 ## TIMEJACKING (ATTAQUE)
