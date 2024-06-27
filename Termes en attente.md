@@ -10,6 +10,9 @@ ___
 ## ADDRESS SWAPPING
 
 
+## TAGUÉE
+
+Fonction de hachage taguée.
 
 ## ATTAQUE PAR REJEU
 
