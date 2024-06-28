@@ -11,8 +11,8 @@ Cependant, dans le cadre de la cryptographie sur les courbes elliptiques, nous u
 
 Considérons l'exemple suivant d'une clé publique brute (un point sur la courbe elliptique) en hexadécimal :
 ```plaintext
-K = 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6
-bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+K = 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f
+6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
 ```
 
 On peut isoler le préfixe, `x`, et `y` :
@@ -24,9 +24,9 @@ y = 49f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
 
 Pour déterminer la parité de `y`, on examine le dernier caractère hexadécimal de `y` :
 ```plaintext
- → Base 16 (hexadécimal) : f
- → Base 10 (décimal) : 15
- → y est impair.
+Base 16 (hexadécimal) : f
+Base 10 (décimal) : 15
+y est impair.
 ```
 
 Le préfixe pour la clé publique compressée sera `03`. La clé publique compressée en hexadécimal devient :

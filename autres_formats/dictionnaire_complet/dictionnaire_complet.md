@@ -1245,8 +1245,8 @@ Cependant, dans le cadre de la cryptographie sur les courbes elliptiques, nous u
 
 Considérons l'exemple suivant d'une clé publique brute (un point sur la courbe elliptique) en hexadécimal :
 ```plaintext
-K = 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6
-bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+K = 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f
+6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
 ```
 
 On peut isoler le préfixe, `x`, et `y` :
@@ -1258,9 +1258,9 @@ y = 49f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
 
 Pour déterminer la parité de `y`, on examine le dernier caractère hexadécimal de `y` :
 ```plaintext
- → Base 16 (hexadécimal) : f
- → Base 10 (décimal) : 15
- → y est impair.
+Base 16 (hexadécimal) : f
+Base 10 (décimal) : 15
+y est impair.
 ```
 
 Le préfixe pour la clé publique compressée sera `03`. La clé publique compressée en hexadécimal devient :
@@ -1304,7 +1304,7 @@ Dans le BIP47, un code de paiement réutilisable est une information générée 
 
 On ajoute généralement un HRP au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en base58. La construction d'une code de paiement est donc assez proche de celle d'une clé étendue. Voici mon propre code de paiement BIP47 en base58 :
 
-```
+```text
 PM8TJSBiQmNQDwTogMAbyqJe2PE2kQXjtgh88MRTxsrnHC8zpEtJ8j7Aj628oUFk8X6P5rJ7P5qDudE4Hwq9
 JXSRzGcZJbdJAjM9oVQ1UKU5j2nr7VR5
 ```
@@ -1754,7 +1754,7 @@ L'entête de bloc est une structure de données servant de composant principal d
 
 Par exemple, voici l'entête du [bloc n° 785 530](https://mempool.space/fr/block/000000000000000000039a294df2039d5fc759f5fd4dde06f09a17efc29a01e4) au format hexadécimal, miné par Foundry USA le 15 avril 2023 :
 
-```
+```text
 00e0ff3f5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000206bde3a1082
 6e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0bcb13a64b2e0051743f09a40
 ```
@@ -2144,7 +2144,7 @@ Fait référence aux *Unspent Transaction Outputs* (UTXO) utilisés comme fonds 
 
 Dans le cadre de la théorie des Ordinals, les inscriptions sont des contenus arbitraires gravés sur des sats, transformant ces derniers en artefacts numériques natifs de Bitcoin. Les inscriptions sont effectuées via des transactions qui exposent le contenu de l'information dans le script d'un input Taproot de cette manière :
 
-```bitcoin-script
+```text
 OP_0
 OP_IF
 <la data ici>
@@ -3104,7 +3104,7 @@ Un descriptor se compose de plusieurs éléments :
 
 Par exemple, un descriptor pour un portefeuille P2WPKH pourrait ressembler à :
 
-```
+```text
 wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt
 7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U/<0;1>/*)#jy0l7nr4
 ```
@@ -3117,7 +3117,7 @@ Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script 
 
 Le descriptor inclut également la clé publique étendue utilisée sur ce portefeuille : 
 
-```
+```text
 xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2
 mK1rMsJKhtRUPZz7MQtp3y6atC1U
 ```
@@ -4365,7 +4365,7 @@ Chaque "vout" encapsule principalement deux informations :
 
 La combinaison du "txid" et du "vout" d'une pièce spécifique forme ce que l'on appelle un UTXO, par exemple :
 
-```bash
+```text
 txid: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf
 vout: 0
 outpoint: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf:0

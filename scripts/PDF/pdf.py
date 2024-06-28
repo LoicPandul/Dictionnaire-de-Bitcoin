@@ -8,9 +8,10 @@ def convert_md_to_pdf(md_file_path, pdf_output_path):
         '-V', 'geometry:left=1.2in',
         '-V', 'geometry:right=1.2in',
         '-V', 'mainfont=Arial',
+        '--pdf-engine-opt=-shell-escape'
     ]
 
-    output = pypandoc.convert_file(
+    pypandoc.convert_file(
         source_file=md_file_path,
         format='md',
         to='pdf',

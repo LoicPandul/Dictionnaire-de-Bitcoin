@@ -6,7 +6,6 @@ import datetime
 import locale
 import requests
 
-
 # Paths and constants
 pdf_path = '../Dictionnaire de Bitcoin.pdf'
 chemin_dossier_dictionnaire = '../dictionnaire'
@@ -58,6 +57,13 @@ def markdown_to_latex_lists(contenu):
     if in_list:
         new_content.append('\\end{itemize}')
     return '\n'.join(new_content)
+
+def markdown_to_latex_code_blocks(contenu):
+    def replacer(match):
+        language = match.group(1).strip() or "text"  # Utiliser "text" comme langage par défaut
+        code = match.group(2).strip()
+        return f'\\begin{{lstlisting}}[language={language}]\n{code}\n\\end{{lstlisting}}'
+    return re.sub(r'```(.*?)\n(.*?)```', replacer, contenu, flags=re.DOTALL)
 
 # Create a new title page for each letter
 def creer_page_titre(lettre):
@@ -167,6 +173,22 @@ header-includes:
   - \\usepackage{fancyhdr}
   - \\usepackage{colortbl}
   - \\usepackage{pdfpages}
+  - \\usepackage{listings}
+  - \\lstdefinelanguage{text}{
+      basicstyle=\\ttfamily,
+      morekeywords={}
+    }
+  - \\lstdefinelanguage{plaintext}{
+      basicstyle=\\ttfamily,
+      morekeywords={}
+    }
+  - \\lstset{
+      backgroundcolor=\\color{gray!15}, 
+      frame=single, 
+      basicstyle=\\ttfamily,
+      aboveskip=1em,
+      belowskip=1em
+    }
   - \\pagestyle{fancy}
   - \\fancyfoot[C]{\\thepage}
   - \\renewcommand{\\headrulewidth}{0pt}
@@ -282,6 +304,7 @@ header-includes:
             contenu = fichier.read()
             contenu = ajuster_liens_et_images(contenu)
             contenu = markdown_to_latex_lists(contenu)
+            contenu = markdown_to_latex_code_blocks(contenu)
             fichier_complet.write(contenu + '\n\n')
 
     fichier_complet.write("\\clearpage\n")

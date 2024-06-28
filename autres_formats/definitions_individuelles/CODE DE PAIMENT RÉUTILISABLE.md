@@ -10,7 +10,7 @@ Dans le BIP47, un code de paiement réutilisable est une information générée 
 
 On ajoute généralement un HRP au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en base58. La construction d'une code de paiement est donc assez proche de celle d'une clé étendue. Voici mon propre code de paiement BIP47 en base58 :
 
-```
+```text
 PM8TJSBiQmNQDwTogMAbyqJe2PE2kQXjtgh88MRTxsrnHC8zpEtJ8j7Aj628oUFk8X6P5rJ7P5qDudE4Hwq9
 JXSRzGcZJbdJAjM9oVQ1UKU5j2nr7VR5
 ```
