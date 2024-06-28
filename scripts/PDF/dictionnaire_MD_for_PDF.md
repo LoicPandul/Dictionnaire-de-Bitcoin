@@ -6,6 +6,7 @@ header-includes:
   - \usepackage{listings}
   - \usepackage{tcolorbox}
   - \usepackage{fontspec}
+  - \definecolor{customgray}{RGB}{246, 248, 250}
   - \lstdefinelanguage{text}{
       basicstyle=\ttfamily\small,
       morekeywords={}
@@ -15,7 +16,7 @@ header-includes:
       morekeywords={}
     }
   - \lstset{
-      backgroundcolor=\color{gray!12}, 
+      backgroundcolor=\color{customgray}, 
       frame=none, 
       basicstyle=\ttfamily\small,
       aboveskip=0.5em,
@@ -24,7 +25,7 @@ header-includes:
   - \tcbuselibrary{listingsutf8}
   - \tcbset{listing engine=listings}
   - \newtcblisting{codeblock}{
-      colback=gray!12,
+      colback=customgray,
       colframe=white,
       listing only,
       listing options={basicstyle=\ttfamily\small},
