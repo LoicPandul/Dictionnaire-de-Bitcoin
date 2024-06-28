@@ -191,42 +191,6 @@ Une clé publique est utilisée dans les scripts (soit directement sous la forme
 
 Si l'on simplifie cela au corps des réels, la courbe elliptique étant symétrique par rapport à l’axe des abscisses, pour tout point $P$ (`x, y`) sur la courbe, il existe un point $P'$ (`x, -y`) qui sera également sur cette même courbe. Cela signifie qu'à chaque `x` correspondent seulement deux valeurs possibles de `y`, positive et négative. Par exemple, pour une abscisse `x` donnée, il y aurait deux points $P1$ et $P2$ sur la courbe elliptique, qui partagent la même abscisse mais avec des ordonnées opposées :
 
-
-
-\documentclass{standalone}
-\usepackage{tikz}
-\usepackage{pgfplots}
-
-\begin{document}
-\begin{tikzpicture}
-  \begin{axis}[
-    axis lines=middle,
-    grid=both,
-    xmin=-6, xmax=6,
-    ymin=-5, ymax=5,
-    xtick={-6,-4,...,6},
-    ytick={-5,-3,...,5},
-    xlabel={$x$},
-    ylabel={$y$},
-    xlabel style={right},
-    ylabel style={above},
-    axis line style={->}
-  ]
-
-  % Courbe secp256k1 (approximation)
-  \addplot[domain=-4.5:4.5, samples=100, thick] ({x}, {x^3 - x}) node[above] {};
-
-  % Points P1, P2 et x
-  \addplot[only marks, mark=*, mark size=2, color=gray] coordinates { (2,4) (2,-4) (2,0) };
-  \node[right] at (axis cs:2,-4) {$P1$};
-  \node[right] at (axis cs:2,4) {$P2$};
-  \node[below] at (axis cs:2,0) {$x$};
-
-  \end{axis}
-\end{tikzpicture}
-\end{document}
-
-
 ![](assets/29.png)
 Pour choisir entre les deux points potentiels sur la courbe, on ajoute à `x` un préfixe spécifiant quel `y` choisir. Cette méthode permet de réduire la taille d'une clé publique de 520 bits à seulement 264 bits (8 bits de préfixe + 256 bits pour `x`). Cette représentation est connue sous le nom de forme compressée de la clé publique.
 

@@ -195,7 +195,7 @@
 - [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
 - [CHAINSPLIT](./dictionnaire/C.md#chainsplit)
 - [CHAINSTATE/](./dictionnaire/C.md#chainstate)
-- [CHANGE (MONNAIE)](./dictionnaire/C.md#change-monnaie)
+- [CHANGE](./dictionnaire/C.md#change)
 - [CHARGE UTILE (PAYLOAD)](./dictionnaire/C.md#charge-utile-payload)
 - [CHAUMIAN COINJOIN](./dictionnaire/C.md#chaumian-coinjoin)
 - [CHEMIN DE DÉRIVATION](./dictionnaire/C.md#chemin-de-dérivation)

@@ -9,8 +9,6 @@ ___
 
 ## ADDRESS SWAPPING
 
-## COORDINATEUR DE COINJOIN
-
 
 
 ## ATTAQUE PAR REJEU
@@ -61,6 +59,10 @@ Cross input signature aggregation
 
 
 ## COMPACT FILTERS
+
+
+
+## COORDINATEUR DE COINJOIN
 
 
 
