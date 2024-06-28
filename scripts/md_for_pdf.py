@@ -60,10 +60,11 @@ def markdown_to_latex_lists(contenu):
 
 def markdown_to_latex_code_blocks(contenu):
     def replacer(match):
-        language = match.group(1).strip() or "text"  # Utiliser "text" comme langage par défaut
         code = match.group(2).strip()
-        return f'\\begin{{lstlisting}}[language={language}]\n{code}\n\\end{{lstlisting}}'
+        return f'\\begin{{codeblock}}\n{code}\n\\end{{codeblock}}'
     return re.sub(r'```(.*?)\n(.*?)```', replacer, contenu, flags=re.DOTALL)
+
+
 
 # Create a new title page for each letter
 def creer_page_titre(lettre):
@@ -174,20 +175,35 @@ header-includes:
   - \\usepackage{colortbl}
   - \\usepackage{pdfpages}
   - \\usepackage{listings}
+  - \\usepackage{tcolorbox}
+  - \\usepackage{fontspec}
+  - \\setmonofont{Consolas}
   - \\lstdefinelanguage{text}{
-      basicstyle=\\ttfamily,
+      basicstyle=\\ttfamily\\small\\setmonofont{Consolas},
       morekeywords={}
     }
   - \\lstdefinelanguage{plaintext}{
-      basicstyle=\\ttfamily,
+      basicstyle=\\ttfamily\\small\\setmonofont{Consolas},
       morekeywords={}
     }
   - \\lstset{
       backgroundcolor=\\color{gray!15}, 
-      frame=single, 
-      basicstyle=\\ttfamily,
+      frame=none, 
+      basicstyle=\\ttfamily\\small\\setmonofont{Consolas},
       aboveskip=1em,
       belowskip=1em
+    }
+  - \\tcbuselibrary{listingsutf8}
+  - \\tcbset{listing engine=listings}
+  - \\newtcblisting{codeblock}{
+      colback=gray!15,
+      colframe=white,
+      listing only,
+      listing options={basicstyle=\\ttfamily\\small\\setmonofont{Consolas}},
+      left=1em,
+      right=1em,
+      top=1em,
+      bottom=1em
     }
   - \\pagestyle{fancy}
   - \\fancyfoot[C]{\\thepage}
