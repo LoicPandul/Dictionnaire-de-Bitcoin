@@ -177,33 +177,30 @@ header-includes:
   - \\usepackage{listings}
   - \\usepackage{tcolorbox}
   - \\usepackage{fontspec}
-  - \\setmonofont{Consolas}
   - \\lstdefinelanguage{text}{
-      basicstyle=\\ttfamily\\small\\setmonofont{Consolas},
+      basicstyle=\\ttfamily\\small,
       morekeywords={}
     }
   - \\lstdefinelanguage{plaintext}{
-      basicstyle=\\ttfamily\\small\\setmonofont{Consolas},
+      basicstyle=\\ttfamily\\small,
       morekeywords={}
     }
   - \\lstset{
-      backgroundcolor=\\color{gray!15}, 
+      backgroundcolor=\\color{gray!12}, 
       frame=none, 
-      basicstyle=\\ttfamily\\small\\setmonofont{Consolas},
-      aboveskip=1em,
-      belowskip=1em
+      basicstyle=\\ttfamily\\small,
+      aboveskip=0.5em,
+      belowskip=0.5em
     }
   - \\tcbuselibrary{listingsutf8}
   - \\tcbset{listing engine=listings}
   - \\newtcblisting{codeblock}{
-      colback=gray!15,
+      colback=gray!12,
       colframe=white,
       listing only,
-      listing options={basicstyle=\\ttfamily\\small\\setmonofont{Consolas}},
+      listing options={basicstyle=\\ttfamily\\small},
       left=1em,
-      right=1em,
-      top=1em,
-      bottom=1em
+      right=1em
     }
   - \\pagestyle{fancy}
   - \\fancyfoot[C]{\\thepage}

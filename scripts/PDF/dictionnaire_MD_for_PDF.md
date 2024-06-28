@@ -6,33 +6,30 @@ header-includes:
   - \usepackage{listings}
   - \usepackage{tcolorbox}
   - \usepackage{fontspec}
-  - \setmonofont{Consolas}
   - \lstdefinelanguage{text}{
-      basicstyle=\ttfamily\small\setmonofont{Consolas},
+      basicstyle=\ttfamily\small,
       morekeywords={}
     }
   - \lstdefinelanguage{plaintext}{
-      basicstyle=\ttfamily\small\setmonofont{Consolas},
+      basicstyle=\ttfamily\small,
       morekeywords={}
     }
   - \lstset{
-      backgroundcolor=\color{gray!15}, 
+      backgroundcolor=\color{gray!12}, 
       frame=none, 
-      basicstyle=\ttfamily\small\setmonofont{Consolas},
-      aboveskip=1em,
-      belowskip=1em
+      basicstyle=\ttfamily\small,
+      aboveskip=0.5em,
+      belowskip=0.5em
     }
   - \tcbuselibrary{listingsutf8}
   - \tcbset{listing engine=listings}
   - \newtcblisting{codeblock}{
-      colback=gray!15,
+      colback=gray!12,
       colframe=white,
       listing only,
-      listing options={basicstyle=\ttfamily\small\setmonofont{Consolas}},
+      listing options={basicstyle=\ttfamily\small},
       left=1em,
-      right=1em,
-      top=1em,
-      bottom=1em
+      right=1em
     }
   - \pagestyle{fancy}
   - \fancyfoot[C]{\thepage}
@@ -206,7 +203,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [ANCESTOR MINING](#ancestor-mining) |    25 | [ASSUME VALID](#assume-valid)  |    31 |
 | [ANCHOR OUTPUTS](#anchor-outputs) |    25 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    31 |
 | [ANCHORS.DAT](#anchors.dat)    |    25 | [ATLC](#atlc)                  |    31 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    25 | [ATOMIC SWAP](#atomic-swap)    |    32 |
+| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    25 | [ATOMIC SWAP](#atomic-swap)    |    31 |
 | [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    26 | [ATTAQUE DES 51 POUR CENT](#attaque-des-51-pour-cent) |    32 |
 | [ANTI MONEY LAUNDERING (AML)](#anti-money-laundering-aml) |    26 | [AVG. ROUND DURATION](#avg.-round-duration) |    33 |
 | | | | |
@@ -233,7 +230,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP1](#bip1)                  |    40 | [BIP381](#bip381)              |    59 |
 | [BIP2](#bip2)                  |    41 | [BIP382](#bip382)              |    59 |
 | [BIP8](#bip8)                  |    41 | [BIP383](#bip383)              |    59 |
-| [BIP9](#bip9)                  |    41 | [BIP384](#bip384)              |    60 |
+| [BIP9](#bip9)                  |    53 | [BIP384](#bip384)              |    60 |
 | [BIP10](#bip10)                |    41 | [BIP385](#bip385)              |    60 |
 | [BIP11](#bip11)                |    42 | [BIP386](#bip386)              |    60 |
 | [BIP12](#bip12)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
@@ -243,12 +240,12 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP17](#bip17)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    61 |
 | [BIP21](#bip21)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    61 |
 | [BIP22](#bip22)                |    43 | [BITCOIN-CLI](#bitcoin-cli)    |    61 |
-| [BIP23](#bip23)                |    44 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
+| [BIP23](#bip23)                |    43 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
 | [BIP30](#bip30)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    62 |
 | [BIP31](#bip31)                |    44 | [BITCOIND](#bitcoind)          |    62 |
 | [BIP32](#bip32)                |    44 | [BITCOIND.PID](#bitcoind.pid)  |    62 |
 | [BIP34](#bip34)                |    44 | [BITCOIN FOG](#bitcoin-fog)    |    62 |
-| [BIP35](#bip35)                |    45 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    63 |
+| [BIP35](#bip35)                |    44 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    63 |
 | [BIP37](#bip37)                |    69 | [BITCOIN KNOTS](#bitcoin-knots) |    63 |
 | [BIP38](#bip38)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    63 |
 | [BIP39](#bip39)                |    45 | [BITCOIN JESUS](#bitcoin-jesus) |    63 |
@@ -295,19 +292,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [C (LANGAGE)](#c-langage)      |    73 | [COINJUMBLE](#coinjumble)      |    89 |
-| [C++ (PLUS PLUS)](#c-plus-plus) |    73 | [COINMUX](#coinmux)            |    90 |
-| [CAHOOTS](#cahoots)            |    73 | [COINS/](#coins)               |    90 |
+| [C++ (PLUS PLUS)](#c-plus-plus) |    73 | [COINMUX](#coinmux)            |    89 |
+| [CAHOOTS](#cahoots)            |    73 | [COINS/](#coins)               |    89 |
 | [CANAL DE PAIMENT](#canal-de-paiment) |    73 | [COINSHUFFLE](#coinshuffle)    |    90 |
 | [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    73 | [COLD WALLET](#cold-wallet)    |    90 |
 | [CASHU](#cashu)                |    74 | [COLORED COINS](#colored-coins) |    90 |
-| [CET](#cet)                    |    74 | [COMMERÇANT](#commerçant)      |    91 |
+| [CET](#cet)                    |    74 | [COMMERÇANT](#commerçant)      |    90 |
 | [CHAINE EXTERNE](#chaine-externe) |    74 | [COMMIT](#commit)              |    91 |
 | [CHAINE INTERNE](#chaine-interne) |    75 | [COMPACT BLOCK RELAY](#compact-block-relay) |    91 |
 | [CHANNEL FACTORIES](#channel-factories) |    76 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    91 |
-| [CHAINSPLIT](#chainsplit)      |    76 | [COMPTE](#compte)              |    92 |
+| [CHAINSPLIT](#chainsplit)      |    76 | [COMPTE](#compte)              |    91 |
 | [CHAINSTATE/](#chainstate)     |    76 | [CONCATÉNATION](#concaténation) |    92 |
 | [CHANGE](#change)              |    77 | [CONDENSAT (HASH)](#condensat-hash) |    92 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    77 | [CONFIRMATION](#confirmation)  |    93 |
+| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    77 | [CONFIRMATION](#confirmation)  |    92 |
 | [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    89 | [CONSENSUS](#consensus)        |    93 |
 | [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    78 | [CONSOLIDATION](#consolidation) |    93 |
 | [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    79 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    94 |
@@ -495,11 +492,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [NESTED SEGWIT](#nested-segwit) |   162 | [NOEUD LIGHTNING](#noeud-lightning) |   164 |
+| [NESTED SEGWIT](#nested-segwit) |   162 | [NOEUD LIGHTNING](#noeud-lightning) |   163 |
 | [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |   162 | [NOEUD SPV (NOEUD LÉGER)](#noeud-spv-noeud-léger) |   164 |
 | [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |   162 | [NONCE](#nonce)                |   164 |
-| [NLOCKTIME](#nlocktime)        |   162 | [NSEQUENCE](#nsequence)        |   165 |
-| [NO2X](#no2x)                  |   163 | [NULL DATA](#null-data)        |   165 |
+| [NLOCKTIME](#nlocktime)        |   162 | [NSEQUENCE](#nsequence)        |   164 |
+| [NO2X](#no2x)                  |   162 | [NULL DATA](#null-data)        |   165 |
 | [NOEUD](#noeud)                |   163 | [NULLDUMMY](#nulldummy)        |   165 |
 | [NOEUD COMPLET](#noeud-complet) |   163 | [NVERSION](#nversion)          |   165 |
 | [NOEUD ÉLAGUÉ](#noeud-élagué)  |   163 |                                |       |
@@ -638,18 +635,18 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   224 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   236 |
 | [SCRIPT](#script)              |   224 | [SIGNET](#signet)              |   236 |
 | [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   224 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   236 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   225 | [SILENT PAYMENT](#silent-payment) |   238 |
-| [SCRIPTSIG](#scriptsig)        |   225 | [SILK ROAD](#silk-road)        |   239 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   225 | [SILENT PAYMENT](#silent-payment) |   237 |
+| [SCRIPTSIG](#scriptsig)        |   225 | [SILK ROAD](#silk-road)        |   238 |
 | [SCRIPTWITNESS](#scriptwitness) |   226 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   239 |
 | [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   226 | [SLIP](#slip)                  |   239 |
-| [SECP256K1](#secp256k1)        |   227 | [SMALL BLOCKERS](#small-blockers) |   240 |
+| [SECP256K1](#secp256k1)        |   227 | [SMALL BLOCKERS](#small-blockers) |   239 |
 | [SECP256R1](#secp256r1)        |   227 | [SMPPS](#smpps)                |   240 |
 | [SEED (BITCOIN)](#seed-bitcoin) |   227 | [SOFT FORK](#soft-fork)        |   240 |
 | [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   228 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   240 |
 | [SEED NODES](#seed-nodes)      |   228 | [SOROBAN](#soroban)            |   240 |
-| [SEGWIT](#segwit)              |   229 | [SORTIE (OUTPUT)](#sortie-output) |   241 |
+| [SEGWIT](#segwit)              |   229 | [SORTIE (OUTPUT)](#sortie-output) |   240 |
 | [SEGWIT2X](#segwit2x)          |   229 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   241 |
-| [SEGWIT V0](#segwit-v0)        |   229 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   242 |
+| [SEGWIT V0](#segwit-v0)        |   229 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   241 |
 | [SEGWIT V1](#segwit-v1)        |   230 | [SPEEDY TRIAL](#speedy-trial)  |   242 |
 | [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   230 | [SPOF](#spof)                  |   242 |
 | [SELF-CUSTODY](#self-custody)  |   230 | [SPREAD (WST)](#spread-wst)    |   242 |
@@ -662,9 +659,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [SHARES DIFFICULTY](#shares-difficulty) |   233 | [STRATUM V2](#stratum-v2)      |   246 |
 | [SHITCOIN](#shitcoin)          |   233 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   246 |
 | [SHOR (ALGORITHME)](#shor-algorithme) |   233 | [SURCOUCHE (LAYER)](#surcouche-layer) |   246 |
-| [SIDECHAIN](#sidechain)        |   233 | [SURFACE D'ATTAQUE](#surface-dattaque) |   247 |
+| [SIDECHAIN](#sidechain)        |   233 | [SURFACE D'ATTAQUE](#surface-dattaque) |   246 |
 | [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   234 | [SWEEP TRANSACTION](#sweep-transaction) |   247 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   234 | [SYBIL (ATTAQUE)](#sybil-attaque) |   248 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   234 | [SYBIL (ATTAQUE)](#sybil-attaque) |   247 |
 | [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   234 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   248 |
 | | | | |
 
