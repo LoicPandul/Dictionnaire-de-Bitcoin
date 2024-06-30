@@ -130,7 +130,9 @@ Sigle de « *Reusable Proofs Of Work* ». C'est un système de monnaie électron
 
 ## RSMPPS
 
-Sigle de « *Recent Shared Maximum Pay Per Share* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. RSMPPS est similaire à SMPPS, mais avec une priorité accordée aux mineurs ayant contribué récemment. Cette méthode vise à récompenser les contributions actuelles en augmentant la valeur des parts soumises dans les tours de minage les plus récents, favorisant ainsi les mineurs qui restent actifs.
+Sigle de « *Recent Shared Maximum Pay Per Share* ». C'est une méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. RSMPPS est similaire à SMPPS, mais avec une priorité accordée aux mineurs ayant contribué récemment. Cette méthode vise à récompenser les contributions actuelles en augmentant la valeur des shares soumises dans les tours de minage les plus récents, favorisant ainsi les mineurs qui restent actifs et fidèles.
+
+> ► *Pour plus d'informations, voir la définition de **[SHARES](./S.md#shares)**.*
 
 ## RUNES
 
