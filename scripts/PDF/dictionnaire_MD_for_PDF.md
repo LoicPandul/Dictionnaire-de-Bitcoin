@@ -222,68 +222,68 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BATCHED SPENDING](#batched-spending) |    36 | [BIP152](#bip152)              |    56 |
 | [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    37 | [BIP155](#bip155)              |    57 |
 | [BEAR MARKET](#bear-market)    |    37 | [BIP156](#bip156)              |    57 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP173](#bip173)              |    57 |
+| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP173](#bip173)              |    58 |
 | [BERKELEYDB](#berkeleydb)      |    38 | [BIP322](#bip322)              |    58 |
-| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP324](#bip324)              |    58 |
-| [BIG-ENDIAN](#big-endian)      |    38 | [BIP326](#bip326)              |    58 |
-| [BINAIRE](#binaire)            |    38 | [BIP352](#bip352)              |    58 |
-| [BIP](#bip)                    |    39 | [BIP380](#bip380)              |    59 |
-| [BIP1](#bip1)                  |    40 | [BIP381](#bip381)              |    59 |
-| [BIP2](#bip2)                  |    41 | [BIP382](#bip382)              |    59 |
-| [BIP8](#bip8)                  |    41 | [BIP383](#bip383)              |    59 |
+| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP324](#bip324)              |    59 |
+| [BIG-ENDIAN](#big-endian)      |    38 | [BIP326](#bip326)              |    59 |
+| [BINAIRE](#binaire)            |    38 | [BIP352](#bip352)              |    59 |
+| [BIP](#bip)                    |    39 | [BIP380](#bip380)              |    60 |
+| [BIP1](#bip1)                  |    40 | [BIP381](#bip381)              |    60 |
+| [BIP2](#bip2)                  |    41 | [BIP382](#bip382)              |    60 |
+| [BIP8](#bip8)                  |    41 | [BIP383](#bip383)              |    60 |
 | [BIP9](#bip9)                  |    53 | [BIP384](#bip384)              |    60 |
-| [BIP10](#bip10)                |    41 | [BIP385](#bip385)              |    60 |
-| [BIP11](#bip11)                |    42 | [BIP386](#bip386)              |    60 |
-| [BIP12](#bip12)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
-| [BIP13](#bip13)                |    42 | [BIT](#bit)                    |    60 |
+| [BIP10](#bip10)                |    41 | [BIP385](#bip385)              |    61 |
+| [BIP11](#bip11)                |    42 | [BIP386](#bip386)              |    61 |
+| [BIP12](#bip12)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    61 |
+| [BIP13](#bip13)                |    42 | [BIT](#bit)                    |    61 |
 | [BIP14](#bip14)                |    42 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    61 |
-| [BIP16](#bip16)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    61 |
-| [BIP17](#bip17)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    61 |
-| [BIP21](#bip21)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    61 |
-| [BIP22](#bip22)                |    43 | [BITCOIN-CLI](#bitcoin-cli)    |    61 |
+| [BIP16](#bip16)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    62 |
+| [BIP17](#bip17)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    62 |
+| [BIP21](#bip21)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    62 |
+| [BIP22](#bip22)                |    43 | [BITCOIN-CLI](#bitcoin-cli)    |    62 |
 | [BIP23](#bip23)                |    43 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
-| [BIP30](#bip30)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    62 |
-| [BIP31](#bip31)                |    44 | [BITCOIND](#bitcoind)          |    62 |
-| [BIP32](#bip32)                |    44 | [BITCOIND.PID](#bitcoind.pid)  |    62 |
-| [BIP34](#bip34)                |    44 | [BITCOIN FOG](#bitcoin-fog)    |    62 |
+| [BIP30](#bip30)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    63 |
+| [BIP31](#bip31)                |    44 | [BITCOIND](#bitcoind)          |    63 |
+| [BIP32](#bip32)                |    44 | [BITCOIND.PID](#bitcoind.pid)  |    63 |
+| [BIP34](#bip34)                |    44 | [BITCOIN FOG](#bitcoin-fog)    |    63 |
 | [BIP35](#bip35)                |    44 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    63 |
-| [BIP37](#bip37)                |    69 | [BITCOIN KNOTS](#bitcoin-knots) |    63 |
-| [BIP38](#bip38)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    63 |
-| [BIP39](#bip39)                |    45 | [BITCOIN JESUS](#bitcoin-jesus) |    63 |
-| [BIP42](#bip42)                |    46 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    63 |
+| [BIP37](#bip37)                |    70 | [BITCOIN KNOTS](#bitcoin-knots) |    64 |
+| [BIP38](#bip38)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    64 |
+| [BIP39](#bip39)                |    45 | [BITCOIN JESUS](#bitcoin-jesus) |    64 |
+| [BIP42](#bip42)                |    46 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    64 |
 | [BIP43](#bip43)                |    46 | [BITCOIN QT](#bitcoin-qt)      |    64 |
-| [BIP44](#bip44)                |    47 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    64 |
-| [BIP47](#bip47)                |    48 | [BITCOINTALK](#bitcointalk)    |    64 |
-| [BIP49](#bip49)                |    48 | [BITCOIN UNLIMITED](#bitcoin-unlimited) |    64 |
-| [BIP50](#bip50)                |    49 | [BITCOIN XT](#bitcoin-xt)      |    64 |
-| [BIP61](#bip61)                |    49 | [BIT GOLD](#bit-gold)          |    65 |
-| [BIP65](#bip65)                |    49 | [BIT (UNITÉ)](#bit-unité)      |    65 |
-| [BIP66](#bip66)                |    49 | [BITVM](#bitvm)                |    65 |
+| [BIP44](#bip44)                |    47 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    65 |
+| [BIP47](#bip47)                |    48 | [BITCOINTALK](#bitcointalk)    |    65 |
+| [BIP49](#bip49)                |    48 | [BITCOIN UNLIMITED](#bitcoin-unlimited) |    65 |
+| [BIP50](#bip50)                |    49 | [BITCOIN XT](#bitcoin-xt)      |    65 |
+| [BIP61](#bip61)                |    49 | [BIT GOLD](#bit-gold)          |    66 |
+| [BIP65](#bip65)                |    49 | [BIT (UNITÉ)](#bit-unité)      |    66 |
+| [BIP66](#bip66)                |    49 | [BITVM](#bitvm)                |    66 |
 | [BIP68](#bip68)                |    49 | [BLK????.DAT](#blk.dat)        |    66 |
 | [BIP70](#bip70)                |    50 | [BLKINDEX.DAT](#blkindex.dat)  |    66 |
-| [BIP71](#bip71)                |    50 | [BLKTREE/](#blktree)           |    66 |
-| [BIP72](#bip72)                |    50 | [BLOC](#bloc)                  |    66 |
-| [BIP75](#bip75)                |    50 | [BLOC CANDIDAT](#bloc-candidat) |    66 |
+| [BIP71](#bip71)                |    50 | [BLKTREE/](#blktree)           |    67 |
+| [BIP72](#bip72)                |    50 | [BLOC](#bloc)                  |    67 |
+| [BIP75](#bip75)                |    50 | [BLOC CANDIDAT](#bloc-candidat) |    67 |
 | [BIP78](#bip78)                |    50 | [BLOCKCHAIN](#blockchain)      |    67 |
-| [BIP84](#bip84)                |    51 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    67 |
-| [BIP85](#bip85)                |    51 | [BLOCKS INDEX](#blocks-index)  |    67 |
-| [BIP86](#bip86)                |    51 | [BLOCKSIZE WAR](#blocksize-war) |    67 |
-| [BIP90](#bip90)                |    51 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |    68 |
-| [BIP91](#bip91)                |    51 | [BLOCKSIGNERS](#blocksigners)  |    68 |
-| [BIP101](#bip101)              |    52 | [BLOCKSTREAM](#blockstream)    |    68 |
-| [BIP102](#bip102)              |    52 | [BLOCK TEMPLATE](#block-template) |    68 |
+| [BIP84](#bip84)                |    51 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    68 |
+| [BIP85](#bip85)                |    51 | [BLOCKS INDEX](#blocks-index)  |    68 |
+| [BIP86](#bip86)                |    51 | [BLOCKSIZE WAR](#blocksize-war) |    68 |
+| [BIP90](#bip90)                |    51 | [BLOCKS/REV?????.DAT](#blocksrev.dat) |    69 |
+| [BIP91](#bip91)                |    51 | [BLOCKSIGNERS](#blocksigners)  |    69 |
+| [BIP101](#bip101)              |    52 | [BLOCKSTREAM](#blockstream)    |    69 |
+| [BIP102](#bip102)              |    52 | [BLOCK TEMPLATE](#block-template) |    69 |
 | [BIP109](#bip109)              |    52 | [BLOCK WITHHOLDING](#block-withholding) |    69 |
-| [BIP111](#bip111)              |    52 | [BLOOM FILTER](#bloom-filter)  |    69 |
-| [BIP112](#bip112)              |    52 | [B-MONEY](#b-money)            |    69 |
-| [BIP113](#bip113)              |    53 | [BOLT](#bolt)                  |    69 |
+| [BIP111](#bip111)              |    52 | [BLOOM FILTER](#bloom-filter)  |    70 |
+| [BIP112](#bip112)              |    52 | [B-MONEY](#b-money)            |    70 |
+| [BIP113](#bip113)              |    53 | [BOLT](#bolt)                  |    70 |
 | [BIP118](#bip118)              |    53 | [BOUNTY](#bounty)              |    70 |
 | [BIP119](#bip119)              |    53 | [BOUTISME](#boutisme)          |    70 |
-| [BIP123](#bip123)              |    53 | [BRANCH-AND-BOUND](#branch-and-bound) |    70 |
-| [BIP125](#bip125)              |    54 | [BRANCHE](#branche)            |    70 |
-| [BIP137](#bip137)              |    54 | [BRC-20](#brc-20)              |    70 |
+| [BIP123](#bip123)              |    53 | [BRANCH-AND-BOUND](#branch-and-bound) |    71 |
+| [BIP125](#bip125)              |    54 | [BRANCHE](#branche)            |    71 |
+| [BIP137](#bip137)              |    54 | [BRC-20](#brc-20)              |    71 |
 | [BIP141](#bip141)              |    54 | [BTC](#btc)                    |    71 |
-| [BIP143](#bip143)              |    54 | [BTCPAY SERVER](#btcpay-server) |    71 |
-| [BIP144](#bip144)              |    55 | [BULL MARKET](#bull-market)    |    71 |
+| [BIP143](#bip143)              |    54 | [BTCPAY SERVER](#btcpay-server) |    72 |
+| [BIP144](#bip144)              |    55 | [BULL MARKET](#bull-market)    |    72 |
 | [BIP145](#bip145)              |    55 |                                |       |
 | | | | |
 
@@ -292,42 +292,42 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [C (LANGAGE)](#c-langage)      |    73 | [COINJUMBLE](#coinjumble)      |    89 |
-| [C++ (PLUS PLUS)](#c-plus-plus) |    73 | [COINMUX](#coinmux)            |    90 |
-| [CAHOOTS](#cahoots)            |    73 | [COINS/](#coins)               |    90 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    73 | [COINSHUFFLE](#coinshuffle)    |    90 |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    73 | [COLD WALLET](#cold-wallet)    |    90 |
-| [CASHU](#cashu)                |    74 | [COLORED COINS](#colored-coins) |    91 |
-| [CET](#cet)                    |    74 | [COMMERÇANT](#commerçant)      |    91 |
-| [CHAINE EXTERNE](#chaine-externe) |    74 | [COMMIT](#commit)              |    91 |
-| [CHAINE INTERNE](#chaine-interne) |    75 | [COMPACT BLOCK RELAY](#compact-block-relay) |    91 |
-| [CHANNEL FACTORIES](#channel-factories) |    76 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    91 |
-| [CHAINSPLIT](#chainsplit)      |    76 | [COMPTE](#compte)              |    92 |
-| [CHAINSTATE/](#chainstate)     |    76 | [CONCATÉNATION](#concaténation) |    92 |
-| [CHANGE](#change)              |    77 | [CONDENSAT (HASH)](#condensat-hash) |    92 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    77 | [CONFIRMATION](#confirmation)  |    93 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    78 | [CONSENSUS](#consensus)        |    93 |
-| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    78 | [CONSOLIDATION](#consolidation) |    93 |
-| [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    79 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    94 |
-| [CHEMIN PRIMAIRE](#chemin-primaire) |    80 | [CONTRIBUTEUR (CORE)](#contributeur-core) |    94 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    80 | [COOKIE (.COOKIE)](#cookie-.cookie) |    94 |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    80 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    95 |
-| [CIOH](#cioh)                  |    81 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    95 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    82 | [COVENANT](#covenant)          |    95 |
-| [CLÉ MAITRESSE](#clé-maitresse) |    83 | [COVERT ASICBOOST](#covert-asicboost) |    96 |
-| [CLÉ PRIVÉE](#clé-privée)      |    83 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    96 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    84 | [CPPSRB](#cppsrb)              |    96 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    85 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    97 |
-| [CLI](#cli)                    |    86 | [CRYPTANALYSE](#cryptanalyse)  |    97 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    86 | [CRYPTER](#crypter)            |    97 |
-| [CLONE](#clone)                |    86 | [CRYPTO-ACTIF](#crypto-actif)  |    97 |
-| [CLUSTER](#cluster)            |    86 | [CRYPTOGRAPHIE](#cryptographie) |    97 |
-| [CODE DE CHAINE](#code-de-chaine) |    86 | [CRYPTOLOGIE](#cryptologie)    |    97 |
-| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    87 | [CRYPTOMONNAIE](#cryptomonnaie) |    97 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    87 | [C SHARP](#c-sharp)            |    97 |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) |    88 | [CUSTODY](#custody)            |    98 |
-| [COIN CONTROL](#coin-control)  |    88 | [CYPHERPUNK](#cypherpunk)      |    98 |
-| [COINJOIN](#coinjoin)          |    88 |                                |       |
+| [C (LANGAGE)](#c-langage)      |    74 | [COINJUMBLE](#coinjumble)      |    90 |
+| [C++ (PLUS PLUS)](#c-plus-plus) |    74 | [COINMUX](#coinmux)            |    91 |
+| [CAHOOTS](#cahoots)            |    74 | [COINS/](#coins)               |    91 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |    74 | [COINSHUFFLE](#coinshuffle)    |    91 |
+| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    74 | [COLD WALLET](#cold-wallet)    |    91 |
+| [CASHU](#cashu)                |    75 | [COLORED COINS](#colored-coins) |    92 |
+| [CET](#cet)                    |    75 | [COMMERÇANT](#commerçant)      |    92 |
+| [CHAINE EXTERNE](#chaine-externe) |    75 | [COMMIT](#commit)              |    92 |
+| [CHAINE INTERNE](#chaine-interne) |    76 | [COMPACT BLOCK RELAY](#compact-block-relay) |    92 |
+| [CHANNEL FACTORIES](#channel-factories) |    77 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    92 |
+| [CHAINSPLIT](#chainsplit)      |    77 | [COMPTE](#compte)              |    93 |
+| [CHAINSTATE/](#chainstate)     |    77 | [CONCATÉNATION](#concaténation) |    93 |
+| [CHANGE](#change)              |    78 | [CONDENSAT (HASH)](#condensat-hash) |    93 |
+| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    78 | [CONFIRMATION](#confirmation)  |    94 |
+| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    79 | [CONSENSUS](#consensus)        |    94 |
+| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    79 | [CONSOLIDATION](#consolidation) |    94 |
+| [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    80 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    95 |
+| [CHEMIN PRIMAIRE](#chemin-primaire) |    81 | [CONTRIBUTEUR (CORE)](#contributeur-core) |    95 |
+| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    81 | [COOKIE (.COOKIE)](#cookie-.cookie) |    95 |
+| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    81 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    96 |
+| [CIOH](#cioh)                  |    82 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    96 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    83 | [COVENANT](#covenant)          |    96 |
+| [CLÉ MAITRESSE](#clé-maitresse) |    84 | [COVERT ASICBOOST](#covert-asicboost) |    97 |
+| [CLÉ PRIVÉE](#clé-privée)      |    84 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    97 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    85 | [CPPSRB](#cppsrb)              |    97 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    86 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    98 |
+| [CLI](#cli)                    |    87 | [CRYPTANALYSE](#cryptanalyse)  |    98 |
+| [C-LIGHTNING (CLN)](#c-lightning-cln) |    87 | [CRYPTER](#crypter)            |    98 |
+| [CLONE](#clone)                |    87 | [CRYPTO-ACTIF](#crypto-actif)  |    98 |
+| [CLUSTER](#cluster)            |    87 | [CRYPTOGRAPHIE](#cryptographie) |    98 |
+| [CODE DE CHAINE](#code-de-chaine) |    87 | [CRYPTOLOGIE](#cryptologie)    |    98 |
+| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    88 | [CRYPTOMONNAIE](#cryptomonnaie) |    98 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    88 | [C SHARP](#c-sharp)            |    98 |
+| [COINBASE (TRANSACTION)](#coinbase-transaction) |    89 | [CUSTODY](#custody)            |    99 |
+| [COIN CONTROL](#coin-control)  |    89 | [CYPHERPUNK](#cypherpunk)      |    99 |
+| [COINJOIN](#coinjoin)          |    89 |                                |       |
 | | | | |
 
 
@@ -335,21 +335,21 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [DAEMON](#daemon)              |   100 | [DIFFUSION](#diffusion)        |   103 |
-| [DANDELION](#dandelion)        |   100 | [DIGITAL ARTIFACTS](#digital-artifacts) |   103 |
-| [DARKWALLET](#darkwallet)      |   100 | [DISTRIBUÉ](#distribué)        |   103 |
-| [DATABASE/](#database)         |   100 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |   103 |
-| [DB.LOG](#db.log)              |   100 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |   104 |
-| [DDOS](#ddos)                  |   100 | [DNS SEEDS](#dns-seeds)        |   104 |
-| [DEBUG.LOG](#debug.log)        |   101 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |   105 |
-| [DEPEG](#depeg)                |   101 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |   105 |
-| [DÉPÔT](#dépôt)                |   101 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |   105 |
-| [DÉRIVATION](#dérivation)      |   101 | [DRIVECHAIN](#drivechain)      |   106 |
-| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |   101 | [DUMMY ELEMENT](#dummy-element) |   106 |
-| [DÉRIVATION NORMALE](#dérivation-normale) |   102 | [DUST](#dust)                  |   106 |
-| [DGM](#dgm)                    |   102 | [DUSTING ATTACK](#dusting-attack) |   106 |
-| [DIFFICULTÉ](#difficulté)      |   102 | [DUST LIMIT](#dust-limit)      |   107 |
-| [DIFFIE-HELLMAN](#diffie-hellman) |   103 | [DUSTRELAYFEE](#dustrelayfee)  |   107 |
+| [DAEMON](#daemon)              |   101 | [DIFFUSION](#diffusion)        |   104 |
+| [DANDELION](#dandelion)        |   101 | [DIGITAL ARTIFACTS](#digital-artifacts) |   104 |
+| [DARKWALLET](#darkwallet)      |   101 | [DISTRIBUÉ](#distribué)        |   105 |
+| [DATABASE/](#database)         |   102 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |   105 |
+| [DB.LOG](#db.log)              |   102 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |   105 |
+| [DDOS](#ddos)                  |   102 | [DNS SEEDS](#dns-seeds)        |   105 |
+| [DEBUG.LOG](#debug.log)        |   102 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |   106 |
+| [DEPEG](#depeg)                |   102 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |   106 |
+| [DÉPÔT](#dépôt)                |   102 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |   107 |
+| [DÉRIVATION](#dérivation)      |   103 | [DRIVECHAIN](#drivechain)      |   107 |
+| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |   103 | [DUMMY ELEMENT](#dummy-element) |   107 |
+| [DÉRIVATION NORMALE](#dérivation-normale) |   103 | [DUST](#dust)                  |   108 |
+| [DGM](#dgm)                    |   104 | [DUSTING ATTACK](#dusting-attack) |   108 |
+| [DIFFICULTÉ](#difficulté)      |   104 | [DUST LIMIT](#dust-limit)      |   108 |
+| [DIFFIE-HELLMAN](#diffie-hellman) |   104 | [DUSTRELAYFEE](#dustrelayfee)  |   109 |
 | | | | |
 
 
@@ -357,17 +357,17 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ECASH (DAVID CHAUM)](#ecash-david-chaum) |   109 | [ELTOO](#eltoo)                |   111 |
-| [ECASH (XEC)](#ecash-xec)      |   109 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |   111 |
-| [ECDH](#ecdh)                  |   109 | [EMPREINTE DE PORTEFEUILLE](#empreinte-de-portefeuille) |   111 |
-| [ECDSA](#ecdsa)                |   109 | [ENDIANNESS](#endianness)      |   111 |
-| [ECLAIR](#eclair)              |   109 | [ENTÊTE DE BLOC](#entête-de-bloc) |   112 |
-| [ECLIPSE (ATTAQUE)](#eclipse-attaque) |   110 | [ENTRÉE (INPUT)](#entrée-input) |   112 |
-| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |   110 | [ENTROPIE](#entropie)          |   113 |
-| [ELECTRS](#electrs)            |   110 | [EREBUS (ATTAQUE)](#erebus-attaque) |   113 |
-| [ELECTRUM](#electrum)          |   110 | [ESMPPS](#esmpps)              |   113 |
-| [ELECTRUM LIGHTNING](#electrum-lightning) |   110 | [ÉTIQUETAGE](#étiquetage)      |   114 |
-| [ELECTRUM SERVER](#electrum-server) |   110 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |   114 |
+| [ECASH (DAVID CHAUM)](#ecash-david-chaum) |   111 | [ELTOO](#eltoo)                |   113 |
+| [ECASH (XEC)](#ecash-xec)      |   111 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |   113 |
+| [ECDH](#ecdh)                  |   111 | [EMPREINTE DE PORTEFEUILLE](#empreinte-de-portefeuille) |   113 |
+| [ECDSA](#ecdsa)                |   111 | [ENDIANNESS](#endianness)      |   113 |
+| [ECLAIR](#eclair)              |   111 | [ENTÊTE DE BLOC](#entête-de-bloc) |   114 |
+| [ECLIPSE (ATTAQUE)](#eclipse-attaque) |   112 | [ENTRÉE (INPUT)](#entrée-input) |   114 |
+| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |   112 | [ENTROPIE](#entropie)          |   115 |
+| [ELECTRS](#electrs)            |   112 | [EREBUS (ATTAQUE)](#erebus-attaque) |   115 |
+| [ELECTRUM](#electrum)          |   112 | [ESMPPS](#esmpps)              |   115 |
+| [ELECTRUM LIGHTNING](#electrum-lightning) |   112 | [ÉTIQUETAGE](#étiquetage)      |   116 |
+| [ELECTRUM SERVER](#electrum-server) |   112 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |   116 |
 | | | | |
 
 
@@ -375,15 +375,15 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [FARADAY](#faraday)            |   116 | [FONCTIONNAIRE](#fonctionnaire) |   118 |
-| [FEDIMINT](#fedimint)          |   116 | [FONGIBILITÉ](#fongibilité)    |   118 |
-| [FEE SNIPING](#fee-sniping)    |   116 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |   119 |
-| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |   117 | [FORCED ADDRESS REUSE](#forced-address-reuse) |   119 |
-| [FERME DE MINAGE](#ferme-de-minage) |   117 | [FORK](#fork)                  |   119 |
-| [FIAT](#fiat)                  |   117 | [FORK (GIT)](#fork-git)        |   120 |
-| [FIBRE](#fibre)                |   117 | [FORTH](#forth)                |   120 |
-| [FLAG DAY](#flag-day)          |   117 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |   120 |
-| [FONCTION DE HACHAGE](#fonction-de-hachage) |   118 | [FRAIS DE TRANSACTION](#frais-de-transaction) |   121 |
+| [FARADAY](#faraday)            |   118 | [FONCTIONNAIRE](#fonctionnaire) |   120 |
+| [FEDIMINT](#fedimint)          |   118 | [FONGIBILITÉ](#fongibilité)    |   120 |
+| [FEE SNIPING](#fee-sniping)    |   118 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |   121 |
+| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |   119 | [FORCED ADDRESS REUSE](#forced-address-reuse) |   121 |
+| [FERME DE MINAGE](#ferme-de-minage) |   119 | [FORK](#fork)                  |   121 |
+| [FIAT](#fiat)                  |   119 | [FORK (GIT)](#fork-git)        |   122 |
+| [FIBRE](#fibre)                |   119 | [FORTH](#forth)                |   122 |
+| [FLAG DAY](#flag-day)          |   119 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |   122 |
+| [FONCTION DE HACHAGE](#fonction-de-hachage) |   120 | [FRAIS DE TRANSACTION](#frais-de-transaction) |   123 |
 | | | | |
 
 
@@ -391,16 +391,16 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [GAP LIMIT](#gap-limit)        |   123 | [GOSSIP](#gossip)              |   125 |
-| [GENÈSE (BLOC)](#genèse-bloc)  |   123 | [GPL](#gpl)                    |   125 |
-| [GETWORK](#getwork)            |   123 | [GRAINE (SEED)](#graine-seed)  |   125 |
-| [GIT](#git)                    |   124 | [GREEN ADDRESS](#green-address) |   126 |
-| [GITHUB](#github)              |   124 | [GREEN ADDRESSES](#green-addresses) |   126 |
-| [GITLAB](#gitlab)              |   124 | [GREEN WALLET](#green-wallet)  |   126 |
-| [GNPA (PRNG)](#gnpa-prng)      |   124 | [GROS-BOUTISTE](#gros-boutiste) |   126 |
-| [GNU](#gnu)                    |   124 | [GUI](#gui)                    |   127 |
-| [GO (GOLANG)](#go-golang)      |   125 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |   127 |
-| [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |   125 |                                |       |
+| [GAP LIMIT](#gap-limit)        |   125 | [GOSSIP](#gossip)              |   127 |
+| [GENÈSE (BLOC)](#genèse-bloc)  |   125 | [GPL](#gpl)                    |   127 |
+| [GETWORK](#getwork)            |   125 | [GRAINE (SEED)](#graine-seed)  |   127 |
+| [GIT](#git)                    |   126 | [GREEN ADDRESS](#green-address) |   128 |
+| [GITHUB](#github)              |   126 | [GREEN ADDRESSES](#green-addresses) |   128 |
+| [GITLAB](#gitlab)              |   126 | [GREEN WALLET](#green-wallet)  |   128 |
+| [GNPA (PRNG)](#gnpa-prng)      |   126 | [GROS-BOUTISTE](#gros-boutiste) |   128 |
+| [GNU](#gnu)                    |   126 | [GUI](#gui)                    |   129 |
+| [GO (GOLANG)](#go-golang)      |   127 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |   129 |
+| [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |   127 |                                |       |
 | | | | |
 
 
@@ -408,16 +408,16 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [HACHEUR](#hacheur)            |   129 | [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   132 |
-| [HAL FINNEY](#hal-finney)      |   129 | [HEURISTIQUE D'ANALYSE](#heuristique-danalyse) |   132 |
-| [HALVING](#halving)            |   129 | [HEXADÉCIMAL](#hexadécimal)    |   132 |
-| [HARD FORK](#hard-fork)        |   130 | [HMAC-SHA512](#hmac-sha512)    |   133 |
-| [HARDWARE WALLET](#hardware-wallet) |   130 | [HODL](#hodl)                  |   133 |
-| [HASH160](#hash160)            |   130 | [HONG-KONG ROUNDTABLE](#hong-kong-roundtable) |   133 |
-| [HASH256](#hash256)            |   130 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |   133 |
-| [HASHCASH](#hashcash)          |   131 | [HRP (HUMAN READABLE PART)](#hrp-human-readable-part) |   134 |
-| [HASHRATE](#hashrate)          |   131 | [HWI](#hwi)                    |   134 |
-| [HAUTEUR DE BLOC](#hauteur-de-bloc) |   131 |                                |       |
+| [HACHEUR](#hacheur)            |   131 | [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   134 |
+| [HAL FINNEY](#hal-finney)      |   131 | [HEURISTIQUE D'ANALYSE](#heuristique-danalyse) |   134 |
+| [HALVING](#halving)            |   131 | [HEXADÉCIMAL](#hexadécimal)    |   134 |
+| [HARD FORK](#hard-fork)        |   132 | [HMAC-SHA512](#hmac-sha512)    |   135 |
+| [HARDWARE WALLET](#hardware-wallet) |   132 | [HODL](#hodl)                  |   135 |
+| [HASH160](#hash160)            |   132 | [HONG-KONG ROUNDTABLE](#hong-kong-roundtable) |   135 |
+| [HASH256](#hash256)            |   132 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |   135 |
+| [HASHCASH](#hashcash)          |   133 | [HRP (HUMAN READABLE PART)](#hrp-human-readable-part) |   136 |
+| [HASHRATE](#hashrate)          |   133 | [HWI](#hwi)                    |   136 |
+| [HAUTEUR DE BLOC](#hauteur-de-bloc) |   133 |                                |       |
 | | | | |
 
 
@@ -425,12 +425,12 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [I2P](#i2p)                    |   136 | [INPUT](#input)                |   137 |
-| [IMPLÉMENTATION DE BITCOIN](#implémentation-de-bitcoin) |   136 | [INSCRIPTIONS](#inscriptions)  |   137 |
-| [INBOUND CAPACITY](#inbound-capacity) |   136 | [IOU](#iou)                    |   138 |
-| [INDEXES/TXINDEX/](#indexestxindex) |   136 | [IP_ASN.MAP](#ip_asn.map)      |   138 |
-| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   136 | [ISSUE](#issue)                |   138 |
-| [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |   137 |                                |       |
+| [I2P](#i2p)                    |   138 | [INPUT](#input)                |   139 |
+| [IMPLÉMENTATION DE BITCOIN](#implémentation-de-bitcoin) |   138 | [INSCRIPTIONS](#inscriptions)  |   139 |
+| [INBOUND CAPACITY](#inbound-capacity) |   138 | [IOU](#iou)                    |   140 |
+| [INDEXES/TXINDEX/](#indexestxindex) |   138 | [IP_ASN.MAP](#ip_asn.map)      |   140 |
+| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   138 | [ISSUE](#issue)                |   140 |
+| [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |   139 |                                |       |
 | | | | |
 
 
@@ -438,8 +438,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [JAVA](#java)                  |   140 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |   140 |
-| [JAVASCRIPT (NODE.JS)](#javascript-node.js) |   140 |                                |       |
+| [JAVA](#java)                  |   142 | [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |   142 |
+| [JAVASCRIPT (NODE.JS)](#javascript-node.js) |   142 |                                |       |
 | | | | |
 
 
@@ -447,7 +447,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [KNAPSACK SOLVER](#knapsack-solver) |   142 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |   142 |
+| [KNAPSACK SOLVER](#knapsack-solver) |   144 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |   144 |
 | | | | |
 
 
@@ -455,13 +455,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [LABEL](#label)                |   144 | [LIQUID NETWORK](#liquid-network) |   146 |
-| [LABEL (SILENT PAYMENTS)](#label-silent-payments) |   144 | [LITTLE-ENDIAN](#little-endian) |   146 |
-| [LCB/FT](#lcbft)               |   145 | [LND](#lnd)                    |   146 |
-| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |   145 | [LOCK (.LOCK)](#lock-.lock)    |   146 |
-| [LEVELDB](#leveldb)            |   145 | [LOGARITHME DISCRET](#logarithme-discret) |   147 |
-| [LIGHTNING LABS](#lightning-labs) |   146 | [LOOP](#loop)                  |   147 |
-| [LIGHTNING NETWORK](#lightning-network) |   146 | [LUCK](#luck)                  |   148 |
+| [LABEL](#label)                |   146 | [LIQUID NETWORK](#liquid-network) |   148 |
+| [LABEL (SILENT PAYMENTS)](#label-silent-payments) |   146 | [LITTLE-ENDIAN](#little-endian) |   148 |
+| [LCB/FT](#lcbft)               |   147 | [LND](#lnd)                    |   148 |
+| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |   147 | [LOCK (.LOCK)](#lock-.lock)    |   148 |
+| [LEVELDB](#leveldb)            |   147 | [LOGARITHME DISCRET](#logarithme-discret) |   149 |
+| [LIGHTNING LABS](#lightning-labs) |   148 | [LOOP](#loop)                  |   149 |
+| [LIGHTNING NETWORK](#lightning-network) |   148 | [LUCK](#luck)                  |   150 |
 | | | | |
 
 
@@ -469,25 +469,25 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [MACAROON](#macaroon)          |   150 | [MÉTADONNÉES](#métadonnées)    |   153 |
-| [MAGICAL BITCOIN](#magical-bitcoin) |   150 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   154 |
-| [MAGIC NETWORK](#magic-network) |   150 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   154 |
-| [MAINNET](#mainnet)            |   150 | [MINAGE](#minage)              |   154 |
-| [MAINTENEUR (CORE)](#mainteneur-core) |   150 | [MINAGE ÉGOÏSTE](#minage-égoïste) |   155 |
-| [MAINTENEUR PRINCIPAL (CORE)](#mainteneur-principal-core) |   151 | [MINAGE FUSIONNÉ](#minage-fusionné) |   156 |
-| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   151 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   156 |
-| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   151 | [MINEUR](#mineur)              |   156 |
-| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   151 | [MINISCRIPT](#miniscript)      |   156 |
-| [MAPPER (TO MAP)](#mapper-to-map) |   151 | [MINITAPSCRIPT](#minitapscript) |   157 |
-| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   152 | [MIT X11](#mit-x11)            |   157 |
-| [MASF](#masf)                  |   152 | [MIXAGE](#mixage)              |   158 |
-| [MAST](#mast)                  |   152 | [MODÈLE DE SCRIPT](#modèle-de-script) |   158 |
-| [MASTER FINGERPRINT](#master-fingerprint) |   152 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   158 |
-| [MAX_BLOC_SIZE](#max_bloc_size) |   152 | [MODÈLE TEMPOREL](#modèle-temporel) |   158 |
-| [MEMPOOL](#mempool)            |   153 | [M-OF-N](#m-of-n)              |   159 |
-| [MEMPOOL.DAT](#mempool.dat)    |   153 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   159 |
-| [MERGE](#merge)                |   153 | [MULTISIG](#multisig)          |   160 |
-| [MERKLE BLOCK](#merkle-block)  |   153 |                                |       |
+| [MACAROON](#macaroon)          |   152 | [MÉTADONNÉES](#métadonnées)    |   155 |
+| [MAGICAL BITCOIN](#magical-bitcoin) |   152 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   156 |
+| [MAGIC NETWORK](#magic-network) |   152 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   156 |
+| [MAINNET](#mainnet)            |   152 | [MINAGE](#minage)              |   156 |
+| [MAINTENEUR (CORE)](#mainteneur-core) |   152 | [MINAGE ÉGOÏSTE](#minage-égoïste) |   157 |
+| [MAINTENEUR PRINCIPAL (CORE)](#mainteneur-principal-core) |   153 | [MINAGE FUSIONNÉ](#minage-fusionné) |   158 |
+| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   153 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   158 |
+| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   153 | [MINEUR](#mineur)              |   158 |
+| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   153 | [MINISCRIPT](#miniscript)      |   158 |
+| [MAPPER (TO MAP)](#mapper-to-map) |   153 | [MINITAPSCRIPT](#minitapscript) |   159 |
+| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   154 | [MIT X11](#mit-x11)            |   159 |
+| [MASF](#masf)                  |   154 | [MIXAGE](#mixage)              |   160 |
+| [MAST](#mast)                  |   154 | [MODÈLE DE SCRIPT](#modèle-de-script) |   160 |
+| [MASTER FINGERPRINT](#master-fingerprint) |   154 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   160 |
+| [MAX_BLOC_SIZE](#max_bloc_size) |   154 | [MODÈLE TEMPOREL](#modèle-temporel) |   160 |
+| [MEMPOOL](#mempool)            |   155 | [M-OF-N](#m-of-n)              |   161 |
+| [MEMPOOL.DAT](#mempool.dat)    |   155 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   161 |
+| [MERGE](#merge)                |   155 | [MULTISIG](#multisig)          |   162 |
+| [MERKLE BLOCK](#merkle-block)  |   155 |                                |       |
 | | | | |
 
 
@@ -495,14 +495,14 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [NESTED SEGWIT](#nested-segwit) |   162 | [NOEUD LIGHTNING](#noeud-lightning) |   163 |
-| [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |   162 | [NOEUD SPV (NOEUD LÉGER)](#noeud-spv-noeud-léger) |   164 |
-| [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |   162 | [NONCE](#nonce)                |   164 |
-| [NLOCKTIME](#nlocktime)        |   162 | [NSEQUENCE](#nsequence)        |   164 |
-| [NO2X](#no2x)                  |   162 | [NULL DATA](#null-data)        |   165 |
-| [NOEUD](#noeud)                |   163 | [NULLDUMMY](#nulldummy)        |   165 |
-| [NOEUD COMPLET](#noeud-complet) |   163 | [NVERSION](#nversion)          |   165 |
-| [NOEUD ÉLAGUÉ](#noeud-élagué)  |   163 |                                |       |
+| [NESTED SEGWIT](#nested-segwit) |   164 | [NOEUD LIGHTNING](#noeud-lightning) |   165 |
+| [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |   164 | [NOEUD SPV (NOEUD LÉGER)](#noeud-spv-noeud-léger) |   166 |
+| [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |   164 | [NONCE](#nonce)                |   166 |
+| [NLOCKTIME](#nlocktime)        |   164 | [NSEQUENCE](#nsequence)        |   166 |
+| [NO2X](#no2x)                  |   164 | [NULL DATA](#null-data)        |   167 |
+| [NOEUD](#noeud)                |   165 | [NULLDUMMY](#nulldummy)        |   167 |
+| [NOEUD COMPLET](#noeud-complet) |   165 | [NVERSION](#nversion)          |   167 |
+| [NOEUD ÉLAGUÉ](#noeud-élagué)  |   165 |                                |       |
 | | | | |
 
 
@@ -510,55 +510,55 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [OBJECTIF](#objectif)          |   167 | [OP_IF (0X63)](#op_if-0x63)    |   176 |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   167 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   176 |
-| [OBSOLÈTE](#obsolète)          |   182 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   176 |
-| [OCTET (BYTE)](#octet-byte)    |   169 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   176 |
-| [OFFCHAIN](#offchain)          |   169 | [OP_MAX (0XA4)](#op_max-0xa4)  |   176 |
-| [ONCHAIN](#onchain)            |   169 | [OP_MIN (0XA3)](#op_min-0xa3)  |   176 |
-| [ONION_PRIVATE_KEY](#onion_private_key) |   169 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   176 |
-| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   169 | [OP_NIP (0X77)](#op_nip-0x77)  |   176 |
-| [OP_0 (0X00)](#op_0-0x00)      |   169 | [OP_NOP (0X61)](#op_nop-0x61)  |   176 |
-| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   169 | [OP_NOT (0X91)](#op_not-0x91)  |   177 |
-| [OP_1 (0X51)](#op_1-0x51)      |   169 | [OP_NOTIF (0X64)](#op_notif-0x64) |   177 |
-| [OP_1ADD (0X8B)](#op_1add-0x8b) |   170 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   177 |
-| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   170 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   177 |
-| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   170 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   177 |
-| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   170 | [OP_OVER (0X78)](#op_over-0x78) |   177 |
-| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   170 | [OP_PICK (0X79)](#op_pick-0x79) |   177 |
-| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   170 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   178 |
-| [OP_2OVER (0X70)](#op_2over-0x70) |   170 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   178 |
-| [OP_2ROT (0X71)](#op_2rot-0x71) |   170 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   178 |
-| [OP_2SWAP (0X72)](#op_2swap-0x72) |   170 | [OP_RETURN (0X6A)](#op_return-0x6a) |   178 |
-| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   171 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   178 |
-| [OP_ABS (0X90)](#op_abs-0x90)  |   171 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   178 |
-| [OP_ADD (0X93)](#op_add-0x93)  |   171 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   178 |
-| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   171 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   178 |
-| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   171 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   179 |
-| [OP_CAT (0X7E)](#op_cat-0x7e)  |   171 | [OP_SIZE (0X82)](#op_size-0x82) |   179 |
-| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   171 | [OP_SUB (0X94)](#op_sub-0x94)  |   179 |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   172 | [OP_SUCCESS](#op_success)      |   179 |
-| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   172 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   179 |
-| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   172 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   179 |
-| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   172 | [OP_TRUE (0X51)](#op_true-0x51) |   179 |
-| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   173 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   180 |
-| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   173 | [OP_VER (0X62)](#op_ver-0x62)  |   180 |
-| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   173 | [OP_VERIFY (0X69)](#op_verify-0x69) |   180 |
-| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   174 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   180 |
-| [OP_DEPTH (0X74)](#op_depth-0x74) |   174 | [OPCODES](#opcodes)            |   180 |
-| [OP_DROP (0X75)](#op_drop-0x75) |   174 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   180 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   174 | [ORACLE](#oracle)              |   180 |
-| [OP_ELSE (0X67)](#op_else-0x67) |   174 | [ORDINAL NUMBER](#ordinal-number) |   181 |
-| [OP_ENDIF (0X68)](#op_endif-0x68) |   174 | [ORDINALS THEORY](#ordinals-theory) |   181 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |   174 | [ORPHELIN](#orphelin)          |   181 |
-| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   175 | [OSINT](#osint)                |   182 |
-| [OP_EVAL](#op_eval)            |   175 | [OU EXCLUSIF](#ou-exclusif)    |   183 |
-| [OP_FALSE (0X00)](#op_false-0x00) |   175 | [OUTBOUND CAPACITY](#outbound-capacity) |   184 |
-| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   175 | [OUTPOINT](#outpoint)          |   184 |
-| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   175 | [OUTPUT](#output)              |   184 |
-| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   175 | [OUTPUT LINKING](#output-linking) |   185 |
-| [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   175 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   185 |
-| [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   175 | [OVERT ASICBOOST](#overt-asicboost) |   186 |
+| [OBJECTIF](#objectif)          |   169 | [OP_IF (0X63)](#op_if-0x63)    |   178 |
+| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   169 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   178 |
+| [OBSOLÈTE](#obsolète)          |   184 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   178 |
+| [OCTET (BYTE)](#octet-byte)    |   171 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   178 |
+| [OFFCHAIN](#offchain)          |   171 | [OP_MAX (0XA4)](#op_max-0xa4)  |   178 |
+| [ONCHAIN](#onchain)            |   171 | [OP_MIN (0XA3)](#op_min-0xa3)  |   178 |
+| [ONION_PRIVATE_KEY](#onion_private_key) |   171 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   178 |
+| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   171 | [OP_NIP (0X77)](#op_nip-0x77)  |   178 |
+| [OP_0 (0X00)](#op_0-0x00)      |   171 | [OP_NOP (0X61)](#op_nop-0x61)  |   178 |
+| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   171 | [OP_NOT (0X91)](#op_not-0x91)  |   179 |
+| [OP_1 (0X51)](#op_1-0x51)      |   171 | [OP_NOTIF (0X64)](#op_notif-0x64) |   179 |
+| [OP_1ADD (0X8B)](#op_1add-0x8b) |   172 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   179 |
+| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   172 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   179 |
+| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   172 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   179 |
+| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   172 | [OP_OVER (0X78)](#op_over-0x78) |   179 |
+| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   172 | [OP_PICK (0X79)](#op_pick-0x79) |   179 |
+| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   172 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   180 |
+| [OP_2OVER (0X70)](#op_2over-0x70) |   172 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   180 |
+| [OP_2ROT (0X71)](#op_2rot-0x71) |   172 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   180 |
+| [OP_2SWAP (0X72)](#op_2swap-0x72) |   172 | [OP_RETURN (0X6A)](#op_return-0x6a) |   180 |
+| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   173 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   180 |
+| [OP_ABS (0X90)](#op_abs-0x90)  |   173 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   180 |
+| [OP_ADD (0X93)](#op_add-0x93)  |   173 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   180 |
+| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   173 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   180 |
+| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   173 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   181 |
+| [OP_CAT (0X7E)](#op_cat-0x7e)  |   173 | [OP_SIZE (0X82)](#op_size-0x82) |   181 |
+| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   173 | [OP_SUB (0X94)](#op_sub-0x94)  |   181 |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   174 | [OP_SUCCESS](#op_success)      |   181 |
+| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   174 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   181 |
+| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   174 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   181 |
+| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   174 | [OP_TRUE (0X51)](#op_true-0x51) |   181 |
+| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   175 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   182 |
+| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   175 | [OP_VER (0X62)](#op_ver-0x62)  |   182 |
+| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   175 | [OP_VERIFY (0X69)](#op_verify-0x69) |   182 |
+| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   176 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   182 |
+| [OP_DEPTH (0X74)](#op_depth-0x74) |   176 | [OPCODES](#opcodes)            |   182 |
+| [OP_DROP (0X75)](#op_drop-0x75) |   176 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   182 |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   176 | [ORACLE](#oracle)              |   182 |
+| [OP_ELSE (0X67)](#op_else-0x67) |   176 | [ORDINAL NUMBER](#ordinal-number) |   183 |
+| [OP_ENDIF (0X68)](#op_endif-0x68) |   176 | [ORDINALS THEORY](#ordinals-theory) |   183 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |   176 | [ORPHELIN](#orphelin)          |   183 |
+| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   177 | [OSINT](#osint)                |   184 |
+| [OP_EVAL](#op_eval)            |   177 | [OU EXCLUSIF](#ou-exclusif)    |   185 |
+| [OP_FALSE (0X00)](#op_false-0x00) |   177 | [OUTBOUND CAPACITY](#outbound-capacity) |   186 |
+| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   177 | [OUTPOINT](#outpoint)          |   186 |
+| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   177 | [OUTPUT](#output)              |   186 |
+| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   177 | [OUTPUT LINKING](#output-linking) |   187 |
+| [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   177 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   187 |
+| [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   177 | [OVERT ASICBOOST](#overt-asicboost) |   188 |
 | | | | |
 
 
@@ -566,34 +566,34 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [P2PK](#p2pk)                  |   188 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |   198 |
-| [P2PKH](#p2pkh)                |   188 | [PILE (STACK)](#pile-stack)    |   198 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |   188 | [PIZZA DAY](#pizza-day)        |   199 |
-| [P2MS](#p2ms)                  |   188 | [POINT D'ENTRÉE](#point-dentrée) |   199 |
-| [P2SH](#p2sh)                  |   189 | [POLICY (MINISCRIPT)](#policy-miniscript) |   200 |
-| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   189 | [POOL](#pool)                  |   201 |
-| [P2SH-P2WSH](#p2sh-p2wsh)      |   189 | [POOL DE MINAGE](#pool-de-minage) |   201 |
-| [P2TR](#p2tr)                  |   190 | [POOL HOPPING](#pool-hopping)  |   202 |
-| [P2WPKH](#p2wpkh)              |   190 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   202 |
-| [P2WSH](#p2wsh)                |   191 | [PORTEFEUILLE](#portefeuille)  |   202 |
-| [PAIEMENT ROND](#paiement-rond) |   191 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   202 |
-| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   192 | [PORTEFEUILLE FROID](#portefeuille-froid) |   202 |
-| [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   193 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   203 |
-| [PAIR ENTRANT](#pair-entrant)  |   193 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   203 |
-| [PAIR SORTANT](#pair-sortant)  |   193 | [PPLNSG](#pplnsg)              |   203 |
-| [PASSPHRASE (BIP39)](#passphrase-bip39) |   193 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   203 |
-| [PATOSHI](#patoshi)            |   194 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   204 |
-| [PAYJOIN](#payjoin)            |   194 | [PREMIUM](#premium)            |   204 |
-| [PAYNYM](#paynym)              |   195 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   204 |
-| [PBKDF2](#pbkdf2)              |   196 | [PROFONDEUR](#profondeur)      |   205 |
-| [PEER DISCOVERY](#peer-discovery) |   196 | [PROOF-OF-KEY DAY](#proof-of-key-day) |   206 |
-| [PEERS.DAT](#peers.dat)        |   196 | [PROOF-OF-WORK](#proof-of-work) |   206 |
-| [PERCOLATION](#percolation)    |   196 | [PROP (PROPORTIONAL)](#prop-proportional) |   207 |
-| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   197 | [PROPAGATION](#propagation)    |   207 |
-| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   197 | [PSBT](#psbt)                  |   208 |
-| [PETIT-BOUTISTE](#petit-boutiste) |   197 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   208 |
-| [PHOENIX](#phoenix)            |   198 | [PULL REQUEST](#pull-request)  |   208 |
-| [PHOENIXD](#phoenixd)          |   198 | [PYTHON](#python)              |   209 |
+| [P2PK](#p2pk)                  |   190 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |   200 |
+| [P2PKH](#p2pkh)                |   190 | [PILE (STACK)](#pile-stack)    |   200 |
+| [P2P TRANSPORT V2](#p2p-transport-v2) |   190 | [PIZZA DAY](#pizza-day)        |   201 |
+| [P2MS](#p2ms)                  |   190 | [POINT D'ENTRÉE](#point-dentrée) |   201 |
+| [P2SH](#p2sh)                  |   191 | [POLICY (MINISCRIPT)](#policy-miniscript) |   202 |
+| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   191 | [POOL](#pool)                  |   203 |
+| [P2SH-P2WSH](#p2sh-p2wsh)      |   191 | [POOL DE MINAGE](#pool-de-minage) |   203 |
+| [P2TR](#p2tr)                  |   192 | [POOL HOPPING](#pool-hopping)  |   204 |
+| [P2WPKH](#p2wpkh)              |   192 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   204 |
+| [P2WSH](#p2wsh)                |   193 | [PORTEFEUILLE](#portefeuille)  |   204 |
+| [PAIEMENT ROND](#paiement-rond) |   193 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   204 |
+| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   194 | [PORTEFEUILLE FROID](#portefeuille-froid) |   204 |
+| [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   195 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   205 |
+| [PAIR ENTRANT](#pair-entrant)  |   195 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   205 |
+| [PAIR SORTANT](#pair-sortant)  |   195 | [PPLNSG](#pplnsg)              |   205 |
+| [PASSPHRASE (BIP39)](#passphrase-bip39) |   195 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   205 |
+| [PATOSHI](#patoshi)            |   196 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   206 |
+| [PAYJOIN](#payjoin)            |   196 | [PREMIUM](#premium)            |   206 |
+| [PAYNYM](#paynym)              |   197 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   206 |
+| [PBKDF2](#pbkdf2)              |   198 | [PROFONDEUR](#profondeur)      |   207 |
+| [PEER DISCOVERY](#peer-discovery) |   198 | [PROOF-OF-KEY DAY](#proof-of-key-day) |   208 |
+| [PEERS.DAT](#peers.dat)        |   198 | [PROOF-OF-WORK](#proof-of-work) |   208 |
+| [PERCOLATION](#percolation)    |   198 | [PROP (PROPORTIONAL)](#prop-proportional) |   209 |
+| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   199 | [PROPAGATION](#propagation)    |   209 |
+| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   199 | [PSBT](#psbt)                  |   210 |
+| [PETIT-BOUTISTE](#petit-boutiste) |   199 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   210 |
+| [PHOENIX](#phoenix)            |   200 | [PULL REQUEST](#pull-request)  |   210 |
+| [PHOENIXD](#phoenixd)          |   200 | [PYTHON](#python)              |   211 |
 | | | | |
 
 
@@ -601,7 +601,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [QR CODE](#qr-code)            |   211 | [QUBIT](#qubit)                |   211 |
+| [QR CODE](#qr-code)            |   213 | [QUBIT](#qubit)                |   213 |
 | | | | |
 
 
@@ -609,19 +609,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   213 | [RESYNCHRONISATION](#resynchronisation) |   216 |
-| [RAW TRANSACTION](#raw-transaction) |   213 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   217 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   213 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   217 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   214 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   218 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   214 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   219 |
-| [REDEEMSCRIPT](#redeemscript)  |   214 | [RICOCHET](#ricochet)          |   219 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   214 | [RIPEMD160](#ripemd160)        |   220 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   215 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   220 |
-| [REGTEST](#regtest)            |   215 | [RPOW](#rpow)                  |   220 |
-| [RÉORGANISATION](#réorganisation) |   215 | [RSMPPS](#rsmpps)              |   220 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   216 | [RUNES](#runes)                |   221 |
-| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   216 | [RUST](#rust)                  |   221 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   216 | [RUST-LIGHTNING](#rust-lightning) |   221 |
+| [RACINE DE MERKLE](#racine-de-merkle) |   215 | [RESYNCHRONISATION](#resynchronisation) |   218 |
+| [RAW TRANSACTION](#raw-transaction) |   215 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   219 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   215 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   219 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   216 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   220 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   216 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   221 |
+| [REDEEMSCRIPT](#redeemscript)  |   216 | [RICOCHET](#ricochet)          |   221 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   216 | [RIPEMD160](#ripemd160)        |   222 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   217 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   222 |
+| [REGTEST](#regtest)            |   217 | [RPOW](#rpow)                  |   222 |
+| [RÉORGANISATION](#réorganisation) |   217 | [RSMPPS](#rsmpps)              |   222 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   218 | [RUNES](#runes)                |   223 |
+| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   218 | [RUST](#rust)                  |   223 |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   218 | [RUST-LIGHTNING](#rust-lightning) |   223 |
 | | | | |
 
 
@@ -629,43 +629,43 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [SAMOURAI WALLET](#samourai-wallet) |   223 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   235 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   223 | [SIGHASH FLAG](#sighash-flag)  |   235 |
-| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   223 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   236 |
-| [SCALA](#scala)                |   223 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   236 |
-| [SCALABILITÉ](#scalabilité)    |   223 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   236 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   224 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   236 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   224 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   236 |
-| [SCRIPT](#script)              |   224 | [SIGNET](#signet)              |   236 |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   224 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   237 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   225 | [SILENT PAYMENT](#silent-payment) |   238 |
-| [SCRIPTSIG](#scriptsig)        |   225 | [SILK ROAD](#silk-road)        |   239 |
-| [SCRIPTWITNESS](#scriptwitness) |   226 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   240 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   226 | [SLIP](#slip)                  |   240 |
-| [SECP256K1](#secp256k1)        |   227 | [SMALL BLOCKERS](#small-blockers) |   240 |
-| [SECP256R1](#secp256r1)        |   227 | [SMPPS](#smpps)                |   240 |
-| [SEED (BITCOIN)](#seed-bitcoin) |   228 | [SOFT FORK](#soft-fork)        |   240 |
-| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   228 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   241 |
-| [SEED NODES](#seed-nodes)      |   229 | [SOROBAN](#soroban)            |   241 |
-| [SEGWIT](#segwit)              |   229 | [SORTIE (OUTPUT)](#sortie-output) |   241 |
-| [SEGWIT2X](#segwit2x)          |   229 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   241 |
-| [SEGWIT V0](#segwit-v0)        |   230 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   242 |
-| [SEGWIT V1](#segwit-v1)        |   230 | [SPEEDY TRIAL](#speedy-trial)  |   242 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   230 | [SPOF](#spof)                  |   243 |
-| [SELF-CUSTODY](#self-custody)  |   230 | [SPREAD (WST)](#spread-wst)    |   243 |
-| [SELFISH MINING](#selfish-mining) |   230 | [STABLECOIN](#stablecoin)      |   243 |
-| [SETTINGS.JSON](#settings.json) |   231 | [STALE BLOCK](#stale-block)    |   243 |
-| [SHA256](#sha256)              |   231 | [STAMPS](#stamps)              |   243 |
-| [SHA512](#sha512)              |   231 | [STONEWALL](#stonewall)        |   244 |
-| [SHAREDCOIN](#sharedcoin)      |   231 | [STONEWALL X2](#stonewall-x2)  |   245 |
-| [SHARES](#shares)              |   232 | [STRATUM](#stratum)            |   246 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   233 | [STRATUM V2](#stratum-v2)      |   247 |
-| [SHITCOIN](#shitcoin)          |   233 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   247 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   234 | [SURCOUCHE (LAYER)](#surcouche-layer) |   247 |
-| [SIDECHAIN](#sidechain)        |   234 | [SURFACE D'ATTAQUE](#surface-dattaque) |   247 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   234 | [SWEEP TRANSACTION](#sweep-transaction) |   248 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   234 | [SYBIL (ATTAQUE)](#sybil-attaque) |   248 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   235 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   249 |
+| [SAMOURAI WALLET](#samourai-wallet) |   225 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   237 |
+| [SATOSHI (SAT)](#satoshi-sat)  |   225 | [SIGHASH FLAG](#sighash-flag)  |   237 |
+| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   225 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   238 |
+| [SCALA](#scala)                |   225 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   238 |
+| [SCALABILITÉ](#scalabilité)    |   225 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   238 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   226 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   238 |
+| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   226 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   238 |
+| [SCRIPT](#script)              |   226 | [SIGNET](#signet)              |   238 |
+| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   226 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   239 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   227 | [SILENT PAYMENT](#silent-payment) |   240 |
+| [SCRIPTSIG](#scriptsig)        |   227 | [SILK ROAD](#silk-road)        |   241 |
+| [SCRIPTWITNESS](#scriptwitness) |   228 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   242 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   228 | [SLIP](#slip)                  |   242 |
+| [SECP256K1](#secp256k1)        |   229 | [SMALL BLOCKERS](#small-blockers) |   242 |
+| [SECP256R1](#secp256r1)        |   229 | [SMPPS](#smpps)                |   242 |
+| [SEED (BITCOIN)](#seed-bitcoin) |   230 | [SOFT FORK](#soft-fork)        |   242 |
+| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   230 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   243 |
+| [SEED NODES](#seed-nodes)      |   231 | [SOROBAN](#soroban)            |   243 |
+| [SEGWIT](#segwit)              |   231 | [SORTIE (OUTPUT)](#sortie-output) |   243 |
+| [SEGWIT2X](#segwit2x)          |   231 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   243 |
+| [SEGWIT V0](#segwit-v0)        |   232 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   244 |
+| [SEGWIT V1](#segwit-v1)        |   232 | [SPEEDY TRIAL](#speedy-trial)  |   244 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   232 | [SPOF](#spof)                  |   245 |
+| [SELF-CUSTODY](#self-custody)  |   232 | [SPREAD (WST)](#spread-wst)    |   245 |
+| [SELFISH MINING](#selfish-mining) |   232 | [STABLECOIN](#stablecoin)      |   245 |
+| [SETTINGS.JSON](#settings.json) |   233 | [STALE BLOCK](#stale-block)    |   245 |
+| [SHA256](#sha256)              |   233 | [STAMPS](#stamps)              |   245 |
+| [SHA512](#sha512)              |   233 | [STONEWALL](#stonewall)        |   246 |
+| [SHAREDCOIN](#sharedcoin)      |   233 | [STONEWALL X2](#stonewall-x2)  |   247 |
+| [SHARES](#shares)              |   234 | [STRATUM](#stratum)            |   248 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   235 | [STRATUM V2](#stratum-v2)      |   249 |
+| [SHITCOIN](#shitcoin)          |   235 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   249 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   236 | [SURCOUCHE (LAYER)](#surcouche-layer) |   249 |
+| [SIDECHAIN](#sidechain)        |   236 | [SURFACE D'ATTAQUE](#surface-dattaque) |   249 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   236 | [SWEEP TRANSACTION](#sweep-transaction) |   250 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   236 | [SYBIL (ATTAQUE)](#sybil-attaque) |   250 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   237 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   251 |
 | | | | |
 
 
@@ -673,19 +673,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   251 | [TPUB](#tpub)                  |   254 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   251 | [TRANSACTION (TX)](#transaction-tx) |   254 |
-| [TAPSCRIPT](#tapscript)        |   251 | [TRANSACTION COINBASE](#transaction-coinbase) |   254 |
-| [TARO](#taro)                  |   251 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   254 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   251 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   255 |
-| [TCP](#tcp)                    |   252 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   255 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   252 | [TRANSACTION STANDARD](#transaction-standard) |   255 |
-| [TESTNET](#testnet)            |   252 | [TUMBLEBIT](#tumblebit)        |   255 |
-| [THE DAO](#the-dao)            |   252 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   256 |
-| [TIDES](#tides)                |   253 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   256 |
-| [TIMELOCK](#timelock)          |   253 | [TYPE DE DEVISE](#type-de-devise) |   256 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   253 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   258 |
-| [TPRV](#tprv)                  |   253 |                                |       |
+| [TAPROOT](#taproot)            |   253 | [TPUB](#tpub)                  |   256 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   253 | [TRANSACTION (TX)](#transaction-tx) |   256 |
+| [TAPSCRIPT](#tapscript)        |   253 | [TRANSACTION COINBASE](#transaction-coinbase) |   256 |
+| [TARO](#taro)                  |   253 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   256 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   253 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   257 |
+| [TCP](#tcp)                    |   254 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   257 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   254 | [TRANSACTION STANDARD](#transaction-standard) |   257 |
+| [TESTNET](#testnet)            |   254 | [TUMBLEBIT](#tumblebit)        |   257 |
+| [THE DAO](#the-dao)            |   254 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   258 |
+| [TIDES](#tides)                |   255 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   258 |
+| [TIMELOCK](#timelock)          |   255 | [TYPE DE DEVISE](#type-de-devise) |   258 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   255 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   260 |
+| [TPRV](#tprv)                  |   255 |                                |       |
 | | | | |
 
 
@@ -693,11 +693,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   260 | [URI](#uri)                    |   260 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   260 | [UTREEXO](#utreexo)            |   261 |
-| [UNIX](#unix)                  |   260 | [UTXO](#utxo)                  |   262 |
-| [UPRV](#uprv)                  |   260 | [UTXO SET](#utxo-set)          |   262 |
-| [UPUB](#upub)                  |   260 |                                |       |
+| [UASF](#uasf)                  |   262 | [URI](#uri)                    |   262 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   262 | [UTREEXO](#utreexo)            |   263 |
+| [UNIX](#unix)                  |   262 | [UTXO](#utxo)                  |   264 |
+| [UPRV](#uprv)                  |   262 | [UTXO SET](#utxo-set)          |   264 |
+| [UPUB](#upub)                  |   262 |                                |       |
 | | | | |
 
 
@@ -705,10 +705,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   264 | [VOUT](#vout)                  |   265 |
-| [VANITYGEN](#vanitygen)        |   264 | [VPRV](#vprv)                  |   265 |
-| [VERSIONNAGE](#versionnage)    |   264 | [VPUB](#vpub)                  |   265 |
-| [VIN](#vin)                    |   264 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   266 | [VOUT](#vout)                  |   267 |
+| [VANITYGEN](#vanitygen)        |   266 | [VPRV](#vprv)                  |   267 |
+| [VERSIONNAGE](#versionnage)    |   266 | [VPUB](#vpub)                  |   267 |
+| [VIN](#vin)                    |   266 |                                |       |
 | | | | |
 
 
@@ -716,13 +716,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   267 | [WATCH-ONLY WALLET](#watch-only-wallet) |   268 |
-| [WALLET](#wallet)              |   267 | [WHALE](#whale)                |   268 |
-| [WALLET.DAT](#wallet.dat)      |   267 | [WHIRLPOOL](#whirlpool)        |   268 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   267 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   268 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   267 | [WHITE PAPER](#white-paper)    |   268 |
-| [WASABI WALLET](#wasabi-wallet) |   267 | [WITNESSSCRIPT](#witnessscript) |   268 |
-| [WATCHMEN](#watchmen)          |   267 | [WTXID](#wtxid)                |   269 |
+| [WABISABI](#wabisabi)          |   269 | [WATCH-ONLY WALLET](#watch-only-wallet) |   270 |
+| [WALLET](#wallet)              |   269 | [WHALE](#whale)                |   270 |
+| [WALLET.DAT](#wallet.dat)      |   269 | [WHIRLPOOL](#whirlpool)        |   270 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   269 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   270 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   269 | [WHITE PAPER](#white-paper)    |   270 |
+| [WASABI WALLET](#wasabi-wallet) |   269 | [WITNESSSCRIPT](#witnessscript) |   270 |
+| [WATCHMEN](#watchmen)          |   269 | [WTXID](#wtxid)                |   271 |
 | | | | |
 
 
@@ -730,8 +730,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XBT](#xbt)                    |   271 | [XPRV](#xprv)                  |   271 |
-| [XOR](#xor)                    |   271 | [XPUB](#xpub)                  |   272 |
+| [XBT](#xbt)                    |   273 | [XPRV](#xprv)                  |   273 |
+| [XOR](#xor)                    |   273 | [XPUB](#xpub)                  |   274 |
 | | | | |
 
 
@@ -739,7 +739,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   274 | [YPUB](#ypub)                  |   274 |
+| [YPRV](#yprv)                  |   276 | [YPUB](#ypub)                  |   276 |
 | | | | |
 
 
@@ -747,9 +747,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   276 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   276 |
-| [ZEROLINK](#zerolink)          |   276 | [ZPRV](#zprv)                  |   276 |
-| [ZEROSYNC](#zerosync)          |   276 | [ZPUB](#zpub)                  |   277 |
+| [ZEROCONF](#zeroconf)          |   278 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   278 |
+| [ZEROLINK](#zerolink)          |   278 | [ZPRV](#zprv)                  |   278 |
+| [ZEROSYNC](#zerosync)          |   278 | [ZPUB](#zpub)                  |   279 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -1591,7 +1591,13 @@ Proposition d'amélioration de Bitcoin introduisant un nouveau format pour les m
 
 ## BIP156
 
-Proposition, connue sous le nom de Dandelion, qui vise à améliorer la confidentialité du routage des transactions dans le réseau Bitcoin pour contrer la désanonymisation. Dans le fonctionnement classique de Bitcoin, les transactions sont immédiatement diffusées à de multiples nœuds. Si un observateur est en capacité de voir chaque transaction relayée par chaque nœud sur le réseau, il peut supposer que le premier nœud à envoyer une transaction est également le nœud d'origine de cette transaction, et donc que celle-ci provient de l'opérateur du nœud. Ce phénomène peut potentiellement permettre à des observateurs de lier des transactions, normalement anonymes, avec des adresses IP. L'objectif du BIP156 est de traiter ce problème. Pour ce faire, il introduit une phase supplémentaire dans la diffusion permettant de préserver l'anonymat avant la propagation publique. Ainsi, Dandelion utilise d'abord une phase de « tige » où la transaction est envoyée à travers un chemin aléatoire de nœuds, avant d'être diffusée à l'ensemble du réseau dans la phase de « capitule ». La tige et le capitule sont des références au comportement de la propagation de la transaction à travers le réseau, qui ressemble à la forme d'un pissenlit (« *a dandelion* » en anglais). Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine. Dandelion améliore donc la confidentialité en limitant la capacité des adversaires à désanonymiser le réseau. Cette méthode est d'autant plus efficace lorsque la transaction croise durant la phase de « tige » un nœud qui chiffre ses communications réseau, comme avec Tor ou *P2P Transport V2*. Le BIP156 n'a pour le moment pas été ajouté à Bitcoin Core.
+Proposition, connue sous le nom de Dandelion, qui vise à améliorer la confidentialité du routage des transactions dans le réseau Bitcoin pour contrer la désanonymisation. Dans le fonctionnement classique de Bitcoin, les transactions sont immédiatement diffusées à de multiples nœuds. Si un observateur est en capacité de voir chaque transaction relayée par chaque nœud sur le réseau, il peut supposer que le premier nœud à envoyer une transaction est également le nœud d'origine de cette transaction, et donc que celle-ci provient de l'opérateur du nœud. Ce phénomène peut potentiellement permettre à des observateurs de lier des transactions, normalement anonymes, avec des adresses IP. 
+
+L'objectif du BIP156 est de traiter ce problème. Pour ce faire, il introduit une phase supplémentaire dans la diffusion permettant de préserver l'anonymat avant la propagation publique. Ainsi, Dandelion utilise d'abord une phase de « tige » où la transaction est envoyée à travers un chemin aléatoire de nœuds, avant d'être diffusée à l'ensemble du réseau dans la phase de « capitule ». La tige et le capitule sont des références au comportement de la propagation de la transaction à travers le réseau, qui ressemble à la forme d'un pissenlit (« *a dandelion* » en anglais). 
+
+Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine. Dandelion améliore donc la confidentialité en limitant la capacité des adversaires à désanonymiser le réseau. Cette méthode est d'autant plus efficace lorsque la transaction croise durant la phase de « tige » un nœud qui chiffre ses communications réseau, comme avec Tor ou *P2P Transport V2*. Le BIP156 n'a pour le moment pas été ajouté à Bitcoin Core.
+
+![](../../dictionnaire/assets/36.png)
 
 > ► *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](#p2p-transport-v2).*
 
@@ -2566,6 +2572,8 @@ Type de programme informatique qui fonctionne en arrière-plan, indépendamment 
 
 Proposition qui vise à améliorer la confidentialité du routage des transactions dans le réseau Bitcoin pour contrer la désanonymisation. Dans le fonctionnement classique de Bitcoin, les transactions sont immédiatement diffusées à de multiples nœuds. Ce phénomène peut potentiellement permettre à des observateurs de lier des transactions, normalement anonymes, avec des adresses IP. L'objectif du BIP156 est de traiter ce problème. Pour ce faire, il introduit une phase supplémentaire dans la diffusion permettant de préserver l'anonymat avant la propagation publique. Ainsi, Dandelion utilise d'abord une phase de « tige » où la transaction est envoyée à travers un chemin aléatoire de nœuds, avant d'être diffusée à l'ensemble du réseau dans la phase de « capitule ». La tige et le capitule sont des références au comportement de la propagation de la transaction à travers le réseau, qui ressemble à la forme d'un pissenlit (« *a dandelion* » en anglais). Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine.
 
+![](../../dictionnaire/assets/36.png)
+
 > ► *Pour plus d'informations, voir la définition de [**BIP156**](#bip156).*
 
 ## DARKWALLET
@@ -2618,13 +2626,13 @@ Le résultat de HMAC-SHA512 est divisé en deux : les premiers 256 bits devienne
 
 ## DÉRIVATION ENDURCIE
 
-Processus de génération de clés enfants dans les portefeuilles HD. La dérivation endurcie utilise la clé privée parent comme entrée pour la fonction `HMAC-SHA512`, ce qui rend impossible la génération de clés publiques enfants à partir de la clé publique parent et du code de chaîne parent. Le processus implique la concaténation de la clé privée parent et d’un index supérieur ou égal à `2^31`, suivi de l'application de `HMAC-SHA512` avec le code de chaîne parent. Le résultat est divisé en deux parties : les premiers 256 bits sont additionnés à la clé privée parent pour obtenir la clé privée enfant, tandis que les 256 bits restants forment le code de chaîne enfant. Cette méthode garantit que même si une clé publique étendue est compromise, elle ne peut pas être utilisée pour dériver les clés publiques enfants. Dans une dérivation standard, on utilise la dérivation endurcie à tous les niveaux de dérivation jusqu'à la profondeur des comptes. Dans les notations de chemins de dérivation, on identifie une dérivation endurcie avec un apostrophe `'` ou plus rarement avec un `h`.
+Processus de génération de clés enfants dans les portefeuilles HD. La dérivation endurcie utilise la clé privée parent comme entrée pour la fonction `HMAC-SHA512`, ce qui rend impossible la génération de clés publiques enfants à partir de la clé publique parent et du code de chaîne parent. Le processus implique la concaténation de la clé privée parent et d’un index supérieur ou égal à $2^{31}$, suivi de l'application de `HMAC-SHA512` avec le code de chaîne parent. Le résultat est divisé en deux parties : les premiers 256 bits sont additionnés à la clé privée parent pour obtenir la clé privée enfant, tandis que les 256 bits restants forment le code de chaîne enfant. Cette méthode garantit que même si une clé publique étendue est compromise, elle ne peut pas être utilisée pour dériver les clés publiques enfants. Dans une dérivation standard, on utilise la dérivation endurcie à tous les niveaux de dérivation jusqu'à la profondeur des comptes. Dans les notations de chemins de dérivation, on identifie une dérivation endurcie avec un apostrophe `'` ou plus rarement avec un `h`.
 
 > ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](#chemin-de-dérivation).*
 
 ## DÉRIVATION NORMALE
 
-Processus de génération de clés enfants dans les portefeuilles HD. La dérivation normale utilise la clé publique parent comme entrée pour la fonction `HMAC-SHA512`, ce qui rend possible la génération de clés publiques enfants à partir de la clé publique parent et du code de chaîne parent. Le processus implique la concaténation de la clé publique parent et d’un index inférieur à `2^31`, suivi de l'application de `HMAC-SHA512` avec le code de chaîne parent. Le résultat est divisé en deux parties : les premiers 256 bits sont additionnés à la clé privée parent pour obtenir la clé privée enfant, tandis que les 256 bits restants forment le code de chaîne enfant. Cette méthode garantit que la clé publique étendue peut être utilisée pour dériver les clés publiques enfants. Dans une dérivation standard, on utilise la dérivation normale à tous les niveaux de dérivation à partir de la profondeur des comptes. Dans les notations de chemins de dérivation, on identifie une dérivation normale lorsqu'il n'y a juste l'index sans aucun apostrophe `'`.
+Processus de génération de clés enfants dans les portefeuilles HD. La dérivation normale utilise la clé publique parent comme entrée pour la fonction `HMAC-SHA512`, ce qui rend possible la génération de clés publiques enfants à partir de la clé publique parent et du code de chaîne parent. Le processus implique la concaténation de la clé publique parent et d’un index inférieur à $2^{31}$, suivi de l'application de `HMAC-SHA512` avec le code de chaîne parent. Le résultat est divisé en deux parties : les premiers 256 bits sont additionnés à la clé privée parent pour obtenir la clé privée enfant, tandis que les 256 bits restants forment le code de chaîne enfant. Cette méthode garantit que la clé publique étendue peut être utilisée pour dériver les clés publiques enfants. Dans une dérivation standard, on utilise la dérivation normale à tous les niveaux de dérivation à partir de la profondeur des comptes. Dans les notations de chemins de dérivation, on identifie une dérivation normale lorsqu'il n'y a juste l'index sans aucun apostrophe `'`.
 
 > ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](#chemin-de-dérivation).*
 

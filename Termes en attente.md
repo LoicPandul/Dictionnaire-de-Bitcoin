@@ -9,7 +9,6 @@ ___
 
 ## ADDRESS SWAPPING
 
-## MIMBLEWIMBLE
 
 
 ## ATTAQUE PAR REJEU
@@ -220,6 +219,10 @@ LSP
 
 
 ## MERKLE SUM TREE
+
+
+
+## MIMBLEWIMBLE
 
 
 
