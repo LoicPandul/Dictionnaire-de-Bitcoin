@@ -2,7 +2,7 @@
 
 Adresse de réception personnalisée qui contient une séquence spécifique de caractères choisie par l'utilisateur, généralement pour des raisons esthétiques. Ces adresses sont générées en exécutant un processus de calcul, où de multiples clés privées sont créées jusqu'à ce que l'une d'entre elles corresponde à une adresse de réception contenant la séquence désirée. Ce processus ne compromet pas la sécurité de l'adresse, mais peut nécessiter un temps et des ressources de calcul considérables, surtout pour des séquences plus longues ou plus spécifiques. C'est une sorte de processus de brute force.
 
-► ***NOTE :** En français, on parle d'une « adresse personnalisée ».*
+> ► *En français, on parle d'une « adresse personnalisée ».*
 
 ## VANITYGEN
 
@@ -22,7 +22,7 @@ Chaque "vin" inclut les informations suivantes :
 * `scriptSig` ou `scriptWitness` : un script de déverrouillage qui fournit les données nécessaires pour satisfaire les conditions posées par le `scriptPubKey` de la transaction précédente dont les fonds sont dépensés, généralement en fournissant une signature cryptographique ;
 * `nSequence` : un champs spécifique utilisé pour indiquer la manière dont cet input est verrouillé dans le temps, ainsi que d'autres options comme RBF.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**NSEQUENCE**](./N.md#nsequence).*
+> ► *Pour plus d'informations, voir la définition de [**NSEQUENCE**](./N.md#nsequence).*
 
 ## VOUT
 
@@ -44,10 +44,10 @@ outpoint: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf:0
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## VPUB
 
 Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testnet. 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*

@@ -8,13 +8,13 @@ Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif (ou _pu
 
 ![](assets/20.png)
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
 
 ## OBOE (OFF-BY-ONE ERROR)
 
 Erreur de logique où une boucle itère une fois de trop ou de moins, souvent due à une mauvaise utilisation des opérateurs de comparaison ou de mauvais indices dans la gestion des structures de données. Dans le contexte de Bitcoin, on retrouve ce bug dans le cas du « *dummy element* » dans `OP_CHECKMULTISIG`, où un élément supplémentaire est consommé par erreur.
 
-► ***NOTE :** En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
+> ► *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
 
 ## OBSOLÈTE
 
@@ -29,7 +29,7 @@ Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîn
 
 ![](assets/9.png)
 
-► ***NOTE :** En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN](./O.md#orphelin)**.*
+> ► *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN](./O.md#orphelin)**.*
 
 ## OCTET (BYTE)
 
@@ -55,7 +55,7 @@ Fichier utilisé dans Bitcoin Core pour stocker une clé privée associée à un
 
 Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
 
-► ***NOTE :** OP_0 est identique à **[OP_FALSE](./O.md#op_false-0x00)** et **OP_PUSHNUM_0**.*
+> ► *OP_0 est identique à **[OP_FALSE](./O.md#op_false-0x00)** et **OP_PUSHNUM_0**.*
 
 ## OP_0NOTEQUAL (0X92)
 
@@ -65,7 +65,7 @@ Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élé
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
 
-► ***NOTE :** OP_1 est identique à **[OP_TRUE](./O.md#op_true-0x51)** et **OP_PUSHNUM_1**.*
+> ► *OP_1 est identique à **[OP_TRUE](./O.md#op_true-0x51)** et **OP_PUSHNUM_1**.*
 
 ## OP_1ADD (0X8B)
 
@@ -83,7 +83,7 @@ Soustrait `1` à la valeur en haut de la pile.
 
 Les opcodes de OP_2 jusqu'à OP_16 poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `ScriptPubKey` pour un multisig 2/3 : `OP_2 Clé publique A Clé publique B Clé publique C OP_3 OP_CHECKMULTISIG`
 
-► ***NOTE :** Tous ces opcodes sont parfois également nommés **OP_PUSHNUM_N**.*
+> ► *Tous ces opcodes sont parfois également nommés **OP_PUSHNUM_N**.*
 
 ## OP_2DROP (0XD6)
 
@@ -148,7 +148,7 @@ Rend la transaction invalide sauf si toutes ces conditions sont réunies :
 
 Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHECKLOCKTIMEVERIFY` ne peut être satisfait. Si toutes ces conditions sont valides, alors `OP_CHECKLOCKTIMEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKLOCKTIMEVERIFY` impose donc une contrainte de temps sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Pour ce faire, il restreint les valeurs possibles pour le champs `nLockTime` de la transaction qui le dépense, et ce champs `nLockTime` restreint lui-même le moment où la transaction peut être incluse dans un bloc.
 
-► ***NOTE :** Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP2`. Il est souvent appelé par con acronyme « CLTV ». Attention, `OP_CLTV` ne doit pas être confondu avec le champs `nLockTime` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
+> ► *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP2`. Il est souvent appelé par con acronyme « CLTV ». Attention, `OP_CLTV` ne doit pas être confondu avec le champs `nLockTime` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
 
 ## OP_CHECKMULTISIG (0XAE)
 
@@ -171,7 +171,7 @@ Rend la transaction invalide si une seule de ces caractéristiques est observée
 
 Si une ou plusieurs de ces caractéristiques est observée, le script contenant l'`OP_CHECKSEQUENCEVERIFY` ne peut être satisfait. Si toutes les conditions sont valides, alors `OP_CHECKSEQUENCEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKSEQUENCEVERIFY` impose donc une contrainte de temps relative sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'un temps réel, soit sous la forme d'un nombre de blocs. Pour ce faire, il restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc.
 
-► ***NOTE :** Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP3`. Il est souvent appelé par con acronyme « CSV ». Attention, `OP_CSV` ne doit pas être confondu avec le champs `nSequence` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
+> ► *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP3`. Il est souvent appelé par con acronyme « CSV ». Attention, `OP_CSV` ne doit pas être confondu avec le champs `nSequence` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
 
 ## OP_CHECKSIG (0XAC)
 
@@ -208,13 +208,13 @@ Duplique le sommet de la pile. L'élément en haut de la pile est donc copié et
 
 Modifie le flux d'exécution dans un script conditionnel : il indique que les opérations qui le suivent doivent être exécutées si la condition précédente spécifiée par un `OP_IF`, un `OP_NOTIF` ou un autre `OP_ELSE` n'est pas remplie.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
+> ► *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_ENDIF (0X68)
 
 Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF` ou un `OP_NOTIF`, normalement suivis par un ou plusieurs `OP_ELSE`. Il indique que l'exécution du script doit continuer au-delà de la structure conditionnelle, quelle que soit la branche qui a été exécutée. Autrement dit, `OP_ENDIF` permet de délimiter la fin des blocs conditionnels dans les scripts.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
+> ► *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_EQUAL (0X87)
 
@@ -232,7 +232,7 @@ Opcode proposé par Gavin Andresen en 2011. Il prend le script situé au sommet 
 
 Identique à `OP_0`.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_0**](./O.md#op_0-0x00).*
+> ► *Pour plus d'informations, voir la définition de [**OP_0**](./O.md#op_0-0x00).*
 
 ## OP_FROMALTSTACK (0X6C)
 
@@ -250,13 +250,13 @@ Compare les deux éléments au sommet de la pile et vérifie si le premier élé
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant simultanément les fonctions `SHA256` et `RIPEMD160`. Ce processus en deux étapes génère une empreinte de 160 bits.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256) et [**RIPEMD160**](./R.md#ripemd160).*
+> ► *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256) et [**RIPEMD160**](./R.md#ripemd160).*
 
 ## OP_HASH256 (0XAA)
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant deux fois la fonction `SHA256`. L'entrée est hachée une première fois avec `SHA256` et le condensat est haché une seconde fois avec `SHA256`. Ce processus en deux étapes génère une empreinte de 256 bits.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
+> ► *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
 
 ## OP_IF (0X63)
 
@@ -294,7 +294,7 @@ Supprime l'élément situé juste en dessous du sommet de la pile (le second en 
 
 Ne produit aucun effet sur la pile ou l'état du script. Il ne fait aucun déplacement, aucune vérification, ni aucune modification. Il ne fait juste rien, à moins que l'on ait décidé qu'il fasse quelque chose via un soft fork. En effet, depuis leurs modifications par Satoshi Nakamoto en 2010, les commandes `OP_NOP` (`OP_NOP1` (`0XB0`) jusqu'à `OP_NOP10` (`0XB9`)) sont utilisées pour ajouter de nouveaux opcodes sous forme de soft fork. Ainsi, l'`OP_NOP2` (`0XB1`) et l'`OP_NOP3` (`0XB2`) ont déjà été utilisés pour implémenter respectivement l'`OP_CHECKLOCKTIMEVERIFY` et l'`OP_CHECKSEQUENCEVERIFY`. On les utilise en combinaison avec `OP_DROP` afin de supprimer de la pile les valeurs temporelles associées, et ainsi pouvoir continuer l'exécution du script, que le nœud soit à jour ou non. Les `OP_NOP` permettent donc d'insérer un point d'interruption dans un script pour vérifier des conditions supplémentaires déjà existantes ou pouvant être ajoutées avec de futurs soft fork. Depuis Tapscript, l'utilisation des `OP_NOP` a été remplacée par l'utilisation des `OP_SUCCESS` étant plus efficace.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_SUCCESS**](./O.md#op_success).*
+> ► *Pour plus d'informations, voir la définition de [**OP_SUCCESS**](./O.md#op_success).*
 
 ## OP_NOT (0X91)
 
@@ -304,7 +304,7 @@ Inverse la valeur booléenne du sommet de la pile : si cette valeur est non null
 
 Fonctionne de manière opposée à `OP_IF`, exécutant la portion suivante du script si la valeur au sommet de la pile est nulle (fausse).
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
+> ► *Pour plus d'informations, voir la définition de [**OP_IF**](./O.md#op_if-0x63).*
 
 ## OP_NUMEQUAL (0X9C)
 
@@ -346,7 +346,7 @@ Signale un script invalide, ce qui rend l'output qui le contient comme non dépe
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `RIPEMD160`.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**RIPEMD160**](./R.md#ripemd160).*
+> ► *Pour plus d'informations, voir la définition de [**RIPEMD160**](./R.md#ripemd160).*
 
 ## OP_ROLL (0X7A)
 
@@ -364,7 +364,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 
 Prend l'élément en haut de la pile et le remplace par son hachage en utilisant la fonction `SHA256`.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
+> ► *Pour plus d'informations, voir la définition de [**SHA256**](./S.md#sha256).*
 
 ## OP_SIZE (0X82)
 
@@ -390,7 +390,7 @@ Prend le sommet de la pile principale (main stack) et le déplace vers la pile a
 
 Identique à OP_1.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**OP_1**](./O.md#op_1-0x51).*
+> ► *Pour plus d'informations, voir la définition de [**OP_1**](./O.md#op_1-0x51).*
 
 ## OP_TUCK (0X7D)
 
@@ -412,7 +412,7 @@ Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle 
 
 Ensemble des commandes utilisées dans le système script de Bitcoin. Script est un langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Les instructions utilisées en langage script sont appelées « OPcodes ». Ce sont des opérateurs logiques et des commandes pour manipuler les piles (stacks). Ces instructions spécifiques sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
 
-► ***NOTE :** « OPcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « OPcode » dans le langage courant. Pour plus d'informations, voir les définitions de **[PILE (STACK)](./P.md#pile-stack)** et **[SCRIPT](./S.md#script)**.*
+> ► *« OPcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « OPcode » dans le langage courant. Pour plus d'informations, voir les définitions de **[PILE (STACK)](./P.md#pile-stack)** et **[SCRIPT](./S.md#script)**.*
 
 ## OPEN ASSETS PROTOCOL (OAP)
 
@@ -422,19 +422,19 @@ Le Protocole Open Assets (OAP), conçu par Flavien Charlon en 2013, représente 
 
 Source d'informations tierce qui fournit des données du monde réel pouvant être interprétées sur Bitcoin. Les oracles permettent aux contrats intelligents, tels que les DLC, d'exécuter des conditions contractuelles en fonction d'événements extérieurs. En général, ils fournissent une signature spécifique qui correspond au résultat d'un événement. Cette signature est ensuite utilisée pour compléter et rendre valide une transaction d'exécution qui envoie les bitcoins à la partie qui est censée les recevoir selon les conditions du contrat intelligent.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
+> ► *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
 
 ## ORDINAL NUMBER
 
 Dans le cadre du protocole Ordinals, c'est un identifiant unique attribué à chaque sat en fonction de son ordre de minage dans un bloc. Ces numéros permettent de rendre non fongibles ces sats selon le protocole Ordinals, et donc de suivre et de transférer ces sats spécifiques.
 
-► ***NOTE :** En français, on peut traduire ce terme par « Nombre Ordinal ». Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](./O.md#ordinals-theory)**, **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
+> ► *En français, on peut traduire ce terme par « Nombre Ordinal ». Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](./O.md#ordinals-theory)**, **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
 
 ## ORDINALS THEORY
 
 Protocole externe à Bitcoin qui attribue des numéros de série aux sats (la plus petite unité de bitcoin), qui permettent de les tracer de manière individuelle et de les transférer via des transactions Bitcoin. Selon la théorie des Ordinals, chaque sat est numéroté selon l'ordre dans lequel il a été miné et est transféré de manière FIFO (*First-In-First-Out*). L'objectif de cette théorie est de rendre des sats non fongibles selon leur interprétation au sein du protocole Ordinals, afin de leur associer des informations externes comme des images (NFT) que l'on appelle des "inscriptions".
 
-► ***NOTE :** En français, on peut traduire ce terme par « Théorie des Ordinals ». Pour plus d'informations, voir les définitions de **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
+> ► *En français, on peut traduire ce terme par « Théorie des Ordinals ». Pour plus d'informations, voir les définitions de **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
 
 ## ORPHELIN
 
@@ -442,7 +442,7 @@ Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un n�
 
 ![](assets/9.png)
 
-► ***NOTE :** Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de [**OBSOLÈTE**](./O.md#obsolète).*
+> ► *Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage. Pour plus d'informations, voir la définition de [**OBSOLÈTE**](./O.md#obsolète).*
 
 ## OSINT
 
@@ -477,7 +477,7 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 Désigne la quantité maximale de bitcoins qu'un nœud peut envoyer à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud a engagés dans le canal lors de son ouverture, ou qu'il a reçus lors d'un paiement Lightning.
 
-► ***NOTE :** En français, on peut le traduire par « capacité sortante ».*
+> ► *En français, on peut le traduire par « capacité sortante ».*
 
 ## OUTPOINT
 
@@ -487,7 +487,7 @@ Référence unique à une sortie de transaction non dépensé (UTXO). Il est con
 
 La combinaison de ces deux éléments permet d'identifier précisément un UTXO. Par exemple, si une transaction a un "txid" de `abc123` et que l'index de l'output est `0`, l'outpoint sera noté comme `abc123:0`. L'outpoint est utilisé dans les inputs ("vin") d'une nouvelle transaction pour indiquer quel UTXO est dépensé.
 
-► ***NOTE :** Le terme « outpoint » est souvent utilisé comme synonyme de « UTXO ».*
+> ► *Le terme « outpoint » est souvent utilisé comme synonyme de « UTXO ».*
 
 ## OUTPUT
 
@@ -497,7 +497,7 @@ Traduction anglaise de « sortie ». Dans le contexte de Bitcoin, une « sortie 
 
 Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output linking se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXO, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut raisonnablement imaginer que tous les UTXO associés appartiennent à une même entité. La réutilisation d'adresse pause donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXO, ainsi que de perpétuer un traçage de fonds on-chain.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [RÉUTILISATION D'ADRESSE](./R.md#réutilisation-dadresse).*
+> ► *Pour plus d'informations, voir la définition de [RÉUTILISATION D'ADRESSE](./R.md#réutilisation-dadresse).*
 
 ## OUTPUT SCRIPT DESCRIPTORS
 
@@ -539,4 +539,4 @@ Enfin, `#jy0l7nr4` représente la somme de contrôle pour vérifier l'intégrit�
 
 Version ouverte et transparente d'AsicBoost. AsicBoost est une technique d'optimisation algorithmique utilisée dans le minage de Bitcoin. Les mineurs utilisant la version Overt manipulent le champ `nVersion` du bloc candidat et utilisent cette modification comme un nonce supplémentaire. Cette méthode laisse le véritable champ `Nonce` du bloc inchangé lors de chaque tentative de hachage, ce qui réduit ainsi les calculs nécessaires pour chaque SHA256, en conservant certaines données identiques entre les tentatives. Cette version est détectable publiquement et ne dissimule pas ses modifications au reste du réseau, à l'inverse de la version Covert d'AsicBoost.
 
-► ***NOTE :** Pour plus d'informations, voir les définitions de **[ASICBOOST](./A.md#asicboost)** et **[COVERT ASICBOOST](./C.md#covert-asicboost)**.*
+> ► *Pour plus d'informations, voir les définitions de **[ASICBOOST](./A.md#asicboost)** et **[COVERT ASICBOOST](./C.md#covert-asicboost)**.*

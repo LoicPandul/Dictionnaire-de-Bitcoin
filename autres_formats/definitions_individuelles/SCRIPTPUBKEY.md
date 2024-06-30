@@ -4,5 +4,5 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 
 ![](../../dictionnaire/assets/35.png)
 
-► ***NOTE :** Pour nommé ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*
+> ► *Pour nommé ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*
 

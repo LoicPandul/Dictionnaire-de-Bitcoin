@@ -2,7 +2,7 @@
 
 Étiquette ou annotation attribuée à un UTXO dans un portefeuille Bitcoin pour se souvenir de sa provenance. Par exemple, si je possède un UTXO provenant d'un achat P2P sur Bisq avec Charles, je pourrais luis attribuer le label `Non-KYC Bisq Charles`. C'est une bonne pratique qui aide à se rappeler de l'origine ou de la destination prévue de cet UTXO, facilitant ainsi la gestion des fonds et l'optimisation de la confidentialité. Le labelling est d'autant plus important lorsqu'il est utilisé avec le coin control. En effet, en permettant aux utilisateurs de différencier et de sélectionner précisément les UTXO pour leurs transactions, cette pratique aide à éviter la fusion d'UTXO provenant de sources différentes. Cela limite les risques associés à l'heuristique d'analyse de chaîne CIOH (*Common Input Ownership Heuristic*), qui peut révéler la propriété commune des entrées d'une transaction.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**COIN CONTROL**](./C.md#coin-control).*
+> ► *Pour plus d'informations, voir la définition de [**COIN CONTROL**](./C.md#coin-control).*
 
 ## LABEL (SILENT PAYMENTS)
 
@@ -38,7 +38,7 @@ Grâce à cette méthode, Bob peut utiliser une multitude d'adresses statiques (
 
 Attention toutefois, cette séparation des adresses statiques vaut uniquement d'un point de vue de gestion personnelle du portefeuille, mais ne permet pas de séparer les identités. Puisqu'elles disposent toutes du même $B_{\text{scan}}$, il est très facile d'associer toutes les adresses statiques ensemble et de déduire qu'elles appartiennent à une unique entité.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](./S.md#silent-payment)**.*
+> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](./S.md#silent-payment)**.*
 
 ## LCB/FT
 
@@ -102,4 +102,4 @@ En mettant en rapport la difficulté sur Bitcoin avec son nombre de shares produ
 
 La luck est un indicateur qui ne peut être actualisé qu'après la découverte d'un bloc par la pool, ce qui en fait un indicateur statique mis à jour périodiquement.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[SHARES](./S.md#shares)**.*
+> ► *Pour plus d'informations, voir la définition de **[SHARES](./S.md#shares)**.*

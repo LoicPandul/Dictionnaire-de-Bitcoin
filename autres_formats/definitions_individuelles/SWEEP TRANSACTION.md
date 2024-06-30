@@ -4,5 +4,5 @@ Pattern ou modèle de transaction utilisé en analyse de chaîne pour détermine
 
 ![](../../dictionnaire/assets/6.png)
 
-► ***NOTE :** En français, on pourrait traduire « sweep transaction » par « transaction de balayage ».*
+> ► *En français, on pourrait traduire « sweep transaction » par « transaction de balayage ».*
 

@@ -6,5 +6,5 @@ Il existe donc un code de chaîne unique pour chaque paire de clés. Le code de 
 
 Il est impossible de dériver des clés sans avoir la connaissance du code de chaîne associé à chaque paire parent. Il permet d'introduire des données pseudo-aléatoires dans le processus de dérivation pour garantir que la génération des clés cryptographiques reste imprévisible pour les attaquants tout en étant déterministe pour le détenteur du portefeuille.
 
-► ***NOTE :** En anglais, un code de chaîne se dit « chain code », et un code de chaîne maître se dit « master chain code ».*
+> ► *En anglais, un code de chaîne se dit « chain code », et un code de chaîne maître se dit « master chain code ».*
 

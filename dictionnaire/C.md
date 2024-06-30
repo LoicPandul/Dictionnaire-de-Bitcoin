@@ -27,13 +27,13 @@ Quantité de bitcoins bloqués sur une adresse multisignatures qui représente u
 
 Protocole open-source de monnaie électronique chaumienne, similaire au système eCash de David Chaum, mais qui fonctionne sur Bitcoin et le Lightning Network. Plus précisément, Cashu est inspiré d'une variante d'eCash proposée en 1996 par David Wagner nommée « *Chaumian ecash without RSA* ». Cashu peut être utilisé sur des portefeuilles custodiaux afin que le serveur ne puisse identifier ni les propriétaires des fonds, ni les détails des transactions, offrant ainsi une amélioration de la confidentialité. Les utilisateurs peuvent générer des jetons Cashu en échange de bitcoins, qui sont signés par le serveur sans connaitre l'utilisateur. Les jetons peuvent ensuite être transférés entre utilisateurs de manière instantanée, privée et sans frais. 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**ECASH**](./E.md#ecash-david-chaum).*
+> ► *Pour plus d'informations, voir la définition de [**ECASH**](./E.md#ecash-david-chaum).*
 
 ## CET
 
 Sigle de « *Contract Execution Transaction* ». C'est une transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
+> ► *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
 
 ## CHAINE EXTERNE
 
@@ -41,7 +41,7 @@ Dans la dérivation des portefeuilles déterministes et hiérarchiques, la chaî
 
 ![](assets/22.png)
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
 
 ## CHAINE INTERNE
 
@@ -49,7 +49,7 @@ Dans la dérivation des portefeuilles déterministes et hiérarchiques, la chaî
 
 ![](assets/22.png)
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
 
 ## CHANNEL FACTORIES
 
@@ -59,13 +59,13 @@ Mécanisme avancé en cours de travail sur Lightning, permettant la création et
 
 Nom parfois donné à un embranchement naturel, c'est-à-dire une séparation temporaire de la blockchain résultant de la diffusion quasi simultanée de plusieurs blocs par différents mineurs à une même hauteur.
 
-► ***NOTE :** Pour plus d'informations, voir les définitions de [**EMBRANCHEMENT NATUREL**](./E.md#embranchement-naturel) et de **[FORK](./F.md#fork)**.*
+> ► *Pour plus d'informations, voir les définitions de [**EMBRANCHEMENT NATUREL**](./E.md#embranchement-naturel) et de **[FORK](./F.md#fork)**.*
 
 ## CHAINSTATE/
 
 Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. C'est donc en réalité un synonyme d'« UTXO set ». 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
+> ► *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
 
 ## CHANGE
 
@@ -73,7 +73,7 @@ Dans le cadre des transactions Bitcoin, fait référence à l'UTXO créé avec l
 
 ![](assets/16.png)
 
-► ***NOTE :** Même si c'est très peu utilisé, on pourrait également parler de « monnaie » (rendu de monnaie) pour évoquer le change.*
+> ► *Même si c'est très peu utilisé, on pourrait également parler de « monnaie » (rendu de monnaie) pour évoquer le change.*
 
 ## CHARGE UTILE (PAYLOAD)
 
@@ -88,7 +88,7 @@ Dans le contexte général de l'informatique, une charge utile désigne les donn
 
 Amélioration du concept de coinjoin, introduit pour la première fois en 2013 par Gregory Maxwell, qui utilise les signatures aveugles de Chaum pour renforcer l'anonymat des transactions coinjoins. Dans ce protocole, les utilisateurs soumettent des entrées et une adresse de réception cryptographiquement aveuglées à un coordinateur. Cette adresse privée est destinée à recevoir les bitcoins en sortie de coinjoin. Le coordinateur signe ces tokens et les renvoie aux utilisateurs. Les utilisateurs se reconnectent ensuite de manière anonyme au serveur du coordinateur et révèlent ensuite leurs adresses de sortie en clair pour la construction de la transaction. Le coordinateur peut vérifier que toutes ces adresses de réception proviennent bien d'utilisateurs légitimes, puisqu'il a signé leur version aveuglée auparavant. En revanche, il ne peut pas associer une adresse de sortie spécifique à un utilisateur donné en entrée. Il n'y a donc aucun lien entre les entrées et les sorties, même du point de vue du coordinateur. Cette méthode garantit que le coordinateur ne peut ni compromettre l'anonymat des participants, ni voler les bitcoins durant tout le processus de coinjoin.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
+> ► *Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
 
 ## CHEMIN DE DÉRIVATION
 
@@ -113,13 +113,13 @@ Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 
 
 Dans un logiciel de portefeuille utilisant Miniscript, comme Liana par exemple, le ou les chemins de récupération désignent des ensembles de clés qui ne deviennent opérationnels qu'après une période d'inactivité définie dans le script qui bloque les bitcoins (timelock). Les chemins de récupération sont utilisables seulement une fois que les timelocks sont passés, et offrent ainsi une méthode de récupération des fonds lorsque le chemin primaire n'est pas disponible. Prenons l'exemple d'un script qui intègre 2 clés distinctes : la clé A, qui autorise la dépense immédiate des bitcoins, et la clé B, qui permet de les dépenser après un délai défini par un timelock de 52 560 blocs. Dans cet exemple, la clé A provient du chemin primaire, tandis que la clé B provient du chemin de récupération.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**MINISCRIPT**](./M.md#miniscript).*
+> ► *Pour plus d'informations, voir la définition de [**MINISCRIPT**](./M.md#miniscript).*
 
 ## CHEMIN PRIMAIRE
 
 Dans un logiciel de portefeuille utilisant Miniscript, comme Liana par exemple, le chemin primaire fait référence à l'ensemble de clés permettant des dépenses immédiates des fonds, sans aucune condition temporelle. Ce chemin est toujours accessible et est utilisé pour la gestion quotidienne des bitcoins, sans nécessiter d'attente (timelock) contrairement aux chemins de récupérations. Prenons l'exemple d'un script qui intègre 2 clés distinctes : la clé A, qui autorise la dépense immédiate des bitcoins, et la clé B, qui permet de les dépenser après un délai défini par un timelock de 52 560 blocs. Dans cet exemple, la clé A provient du chemin primaire, tandis que la clé B provient du chemin de récupération.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**MINISCRIPT**](./M.md#miniscript).*
+> ► *Pour plus d'informations, voir la définition de [**MINISCRIPT**](./M.md#miniscript).*
 
 ## CHIFFRER (CHIFFREMENT)
 
@@ -135,7 +135,7 @@ Cette cible est ajustée tous les 2016 blocs (environ toutes les deux semaines),
 
 ![](assets/34.png)
 
-► ***NOTE :** La cible de difficulté est parfois également nommée « facteur de difficulté ». Par extension, on peut l'évoquer avec son encodage dans les entêtes de bloc avec le terme « nBits ».*
+> ► *La cible de difficulté est parfois également nommée « facteur de difficulté ». Par extension, on peut l'évoquer avec son encodage dans les entêtes de bloc avec le terme « nBits ».*
 
 ## CIOH
 
@@ -149,7 +149,7 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 
 ![](assets/13.png)
 
-► ***NOTE :** En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
+> ► *En français, on pourrait traduire « CIOH » par « Heuristique de propriété commune des entrée ».*
 
 ## CLÉ ÉTENDUE
 
@@ -177,13 +177,13 @@ Une clé privée est un élément fondamental de la cryptographie asymétrique. 
 
 Dans le système Bitcoin, la clé privée est liée à une clé publique par le biais d'un algorithme de signature numérique à courbes elliptiques (ECDSA ou Schnorr). La clé publique est dérivée de la clé privée, mais l'inverse est pratiquement impossible à réaliser en raison de la difficulté computationnelle inhérente à la résolution du problème mathématique sous-jacent (problème du logarithme discret). La clé publique est généralement utilisée pour générer une adresse Bitcoin, qui sert à bloquer des bitcoins à l'aide d'un script. En cryptographie, les clés privées sont souvent des nombres aléatoires ou pseudo-aléatoires. Dans le contexte spécifique des portefeuilles déterministes et hiérarchiques Bitcoin, les clés privées sont dérivées de manière déterministe depuis la graine (seed). Les clés privées sont fréquemment confondues avec la graine (seed) ou avec la phrase de récupération (mnémonique). Pourtant, ces éléments sont bien différents.
 
-► ***NOTE :** En anglais, une clé privée se dit « private key ». Ce terme est parfois abrégé avec « privkey », ou « PV ».*
+> ► *En anglais, une clé privée se dit « private key ». Ce terme est parfois abrégé avec « privkey », ou « PV ».*
 
 ## CLÉ PUBLIQUE
 
 La clé publique est un élément utilisé dans la cryptographie asymétrique. Elle est générée à partir d'une clé privée en utilisant une fonction mathématique irréversible. Sur Bitcoin, les clés publiques sont dérivées depuis leur clé privée associée grâce aux algorithmes de signature numérique à courbes elliptiques ECDSA ou Schnorr. La clé publique, contrairement à la clé privée, peut être partagée librement sans compromettre la sécurité des fonds. Dans le cadre du protocole Bitcoin, la clé publique sert de base pour créer une adresse Bitcoin, qui est ensuite utilisée pour créer des conditions de dépense sur un UTXO à l'aide d'un ScriptPubKey. Les clés publiques sont fréquemment confondues avec la clé maîtresse ou avec les clés étendues (xpub...). Pourtant, ces éléments sont bien différents.
 
-► ***NOTE :** En anglais, une clé publique se dit « public key ». Ce terme est parfois abrégé avec « pubkey », ou « PK ».*
+> ► *En anglais, une clé publique se dit « public key ». Ce terme est parfois abrégé avec « pubkey », ou « PK ».*
 
 ## CLÉ PUBLIQUE COMPRESSÉE
 
@@ -213,7 +213,7 @@ Pour déterminer la parité de `y`, on examine le dernier caractère hexadécima
 ```plaintext
 Base 16 (hexadécimal) : f
 Base 10 (décimal) : 15
-y est impair.
+y est impair
 ```
 
 Le préfixe pour la clé publique compressée sera `03`. La clé publique compressée en hexadécimal devient :
@@ -229,7 +229,7 @@ Acronyme de « Command Line Interface », ou « interface en ligne de commande �
 
 Ancien nom de l'implémentation Core-Lightning. 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CORE-LIGHTNING**](./C.md#core-lightning-cln).*
+> ► *Pour plus d'informations, voir la définition de [**CORE-LIGHTNING**](./C.md#core-lightning-cln).*
 
 ## CLONE
 
@@ -247,13 +247,13 @@ Il existe donc un code de chaîne unique pour chaque paire de clés. Le code de 
 
 Il est impossible de dériver des clés sans avoir la connaissance du code de chaîne associé à chaque paire parent. Il permet d'introduire des données pseudo-aléatoires dans le processus de dérivation pour garantir que la génération des clés cryptographiques reste imprévisible pour les attaquants tout en étant déterministe pour le détenteur du portefeuille.
 
-► ***NOTE :** En anglais, un code de chaîne se dit « chain code », et un code de chaîne maître se dit « master chain code ».*
+> ► *En anglais, un code de chaîne se dit « chain code », et un code de chaîne maître se dit « master chain code ».*
 
 ## CODE DE CHAINE MAITRE
 
 Désigne le code de chaîne associé à la clé maîtresse du portefeuille, à la base de l'arbre de dérivation de toutes les clés.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[CODE DE CHAINE](./C.md#code-de-chaine)**.
+> ► *Pour plus d'informations, voir la définition de **[CODE DE CHAINE](./C.md#code-de-chaine)**.
 
 ## CODE DE PAIMENT RÉUTILISABLE
 
@@ -288,7 +288,7 @@ Type spécifique de transaction Bitcoin, unique pour chaque bloc et toujours la 
 
 La particularité de la transaction Coinbase est qu'elle est la seule à ne pas requérir d'entrée (input), ce qui signifie qu'elle crée des bitcoins ex nihilo. Elle inclut également parfois des informations de gestion choisies par le mineur ou la pool de minage, telles que des messages ou des données sur la version du logiciel utilisé. Les bitcoins générés par une transaction Coinbase sont soumis à une période de maturité de 100 blocs pendant laquelle ils ne peuvent pas être dépensés par le mineur.
 
-► ***NOTE :** Il n'existe aucune traduction de « Coinbase » en français. Il est donc admis d'utiliser directement ce terme. Pour plus d'informations, voir la définition de [**PÉRIODE DE MATURITÉ**](./P.md#période-de-maturité).*
+> ► *Il n'existe aucune traduction de « Coinbase » en français. Il est donc admis d'utiliser directement ce terme. Pour plus d'informations, voir la définition de [**PÉRIODE DE MATURITÉ**](./P.md#période-de-maturité).*
 
 ## COIN CONTROL
 
@@ -310,7 +310,7 @@ Ce mécanisme augmente la confidentialité des transactions sans nécessiter de 
 323df21f0b0756f98336437aa3d2fb87e02b59f1946b714a7b09df04d429dec2
 ```
 
-► ***NOTE :** Le terme de « coinjoin » ne dispose pas de traduction française. Certains bitcoiners utilisent également les termes de « mix », de « mixing » ou encore de « mixage » pour évoquer la transaction coinjoin. Le mixage est plutôt le processus utilisé au cœur du coinjoin. Aussi, il ne faut pas confondre le mixage par coinjoins et le mixage par un acteur central qui prend possession des bitcoins durant le processus. Cela n'a rien à voir avec le coinjoin où l'utilisateur ne perd à aucun moment la main sur ses bitcoins durant le processus. Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
+> ► *Le terme de « coinjoin » ne dispose pas de traduction française. Certains bitcoiners utilisent également les termes de « mix », de « mixing » ou encore de « mixage » pour évoquer la transaction coinjoin. Le mixage est plutôt le processus utilisé au cœur du coinjoin. Aussi, il ne faut pas confondre le mixage par coinjoins et le mixage par un acteur central qui prend possession des bitcoins durant le processus. Cela n'a rien à voir avec le coinjoin où l'utilisateur ne perd à aucun moment la main sur ses bitcoins durant le processus. Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
 
 ## COINJUMBLE
 
@@ -320,25 +320,25 @@ Logiciel développé par Chris Belcher et lancée en août 2014 conçu pour faci
 
 Implémentation de coinjoin développée en 2014. Coinmux est un protocole de mixage de bitcoins qui repose sur la confiance réciproque entre les participants, sans nécessiter l'intervention d'un acteur central. Le logiciel regroupe les bitcoins de plusieurs utilisateurs dans une transaction unique, où chaque sortie dispose de montants identiques, ce qui permet de casser les liens entre les inputs et les outputs. Le protocole de Coinmux assure que les utilisateurs conservent le contrôle de leurs fonds durant tout le processus, en ne faisant signer les transactions que lorsque les entrées et les sorties correspondent exactement à ce qui a été convenu. Aujourd'hui, ce protocole n'est plus utilisé.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> ► *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
 ## COINS/
 
 Nom de l'ancien dossier utilisé dans Bitcoin Core pour stocker l'UTXO set, remplacé par le fichier `chainstate/` dans la version 0.8.0.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
+> ► *Pour plus d'informations, voir la définition de [**UTXO SET**](./U.md#utxo-set).*
 
 ## COINSHUFFLE
 
 Protocole de mixage de bitcoins proposé en 2014 par Tim Ruffing, Pedro Moreno-Sanchez, and Aniket Kate, inspiré de l'idée du coinjoin de Gregory Maxwell. Coinshuffle permet de couper l'historique de pièces sans nécessiter de tiers de confiance. Le protocole assure que même l'intermédiaire ne peut pas relier le payeur au bénéficiaire. Ce concept n'a jamais été largement adopté, les techniques de confidentialité telles que le Chaumian coinjoin lui étant préférées.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> ► *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
 ## COLD WALLET
 
 Synonyme de « hardware wallet ». Un hardware wallet, ou portefeuille matériel, est un dispositif électronique dédié à la sécurisation et à la gestion des clés privées d'un portefeuille Bitcoin. Ces périphériques sont conçus pour procurer une sécurité renforcée par rapport aux portefeuilles logiciels qui résident sur des machines polyvalentes et directement connectées à internet. Les hardwares wallets stockent la phrase mnémonique hors ligne, sur un matériel qui dispose d'une infime surface d'attaque, ce qui l'isole des environnements potentiellement vulnérables. Lorsqu'une transaction est effectuée, le portefeuille matériel signe la transaction à l'intérieur du dispositif lui-même, sans exposer la clé privée à l'extérieur. Une fois la transaction signée, elle est transmise au réseau Bitcoin pour être confirmée et incluse dans la blockchain. Parmi les modèles de hardwares wallets les plus populaires, on peut citer : Ledger, Trezor, Coldcard, Passport, BitBox, Satochip, Jade ou encore SeedSigner (liste non exhaustive).
 
-► ***NOTE :** Le hardware wallet peut être exprimé de différentes manières en français. Certains parlent de « portefeuille matériel » ou bien de « portefeuille froid ». D'autres préfèrent que l'on emploie le terme de « périphérique de signature », ou « signing device » en anglais, afin d'éviter de faire penser que les bitcoins se trouvent physiquement dans le portefeuille.*
+> ► *Le hardware wallet peut être exprimé de différentes manières en français. Certains parlent de « portefeuille matériel » ou bien de « portefeuille froid ». D'autres préfèrent que l'on emploie le terme de « périphérique de signature », ou « signing device » en anglais, afin d'éviter de faire penser que les bitcoins se trouvent physiquement dans le portefeuille.*
 
 ## COLORED COINS
 
@@ -366,7 +366,7 @@ Dans les portefeuilles HD (déterministes hiérarchiques), un compte représente
 
 ![](assets/17.png)
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
 
 ## CONCATÉNATION
 
@@ -376,7 +376,7 @@ Dans le contexte de la cryptographie et des systèmes informatiques, désigne le
 
 En cryptographie, désigne le résultat (ou l'output) produit par l'application d'une fonction de hachage cryptographique à un ensemble de données. Le condensat est une chaîne de caractères de taille fixe généralement représentée sous forme d'une série de chiffres et de lettres en notation hexadécimale (base 16). Ce résultat a la particularité d'être presque unique et spécifique aux données d'entrée, de sorte qu'un changement minime dans l'entrée produira un condensat complètement différent. Les fonctions de hachage cryptographiques sont conçues pour être unidirectionnelles et résistantes aux collisions, rendant très difficile de retrouver les données initiales à partir du condensat ou de trouver deux entrées distinctes produisant le même condensat.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](./F.md#fonction-de-hachage).*
+> ► *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](./F.md#fonction-de-hachage).*
 
 ## CONFIRMATION
 
@@ -386,7 +386,7 @@ Correspond au nombre de blocs pour lesquels une transaction bénéficie de leurs
 
 Mécanisme par lequel tous les nœuds du réseau Bitcoin parviennent à s'accorder sur l'état partagé de la blockchain. Le consensus permet que tous les utilisateurs s'alignent sur un même historique des transactions Bitcoin, afin notamment d'éviter la double dépense. Le mécanisme de consensus de Bitcoin est parfois appelé « Consensus de Nakamoto ». Il s'appuie sur la preuve de travail et spécifie que tous les nœuds du réseau acceptent la chaîne disposant de la plus grande quantité de travail accumulé. 
 
-► ***NOTE :** Par extension, certaines personnes appellent par « Consensus » les règles tacites du protocole Bitcoin.*
+> ► *Par extension, certaines personnes appellent par « Consensus » les règles tacites du protocole Bitcoin.*
 
 ## CONSOLIDATION
 
@@ -403,7 +403,7 @@ Cependant, il est important de noter que les transactions de consolidation sont 
 
 Programme qui s'exécute automatiquement lorsque certaines conditions prédéfinies sont remplies. Un contrat intelligent est donc un ensemble de clauses entre plusieurs parties qui peuvent se réaliser sans nécessiter l'intervention d'un tiers de confiance. Ces contrats déclenchent généralement des actions spécifiques comme un transfert de bitcoins.
 
-► ***NOTE :** En anglais, on parle de « Smart Contract ». En français, on parle également parfois de « contrat autonome ».*
+> ► *En anglais, on parle de « Smart Contract ». En français, on parle également parfois de « contrat autonome ».*
 
 ## CONTRIBUTEUR (CORE)
 
@@ -432,13 +432,13 @@ Il existe de très nombreuses propositions qui permettraient l'utilisation de co
 
 Pour bien comprendre le concept de covenant, je vous propose une analogie : imaginez un coffre-fort contenant 500 € en petites coupures. Si vous parvenez à déverrouiller ce coffre avec la clé adéquate, alors vous êtes libre d'utiliser cet argent comme bon vous semble. Ça, c’est la situation normale de Bitcoin. Maintenant, imaginez que ce même coffre-fort ne contient pas 500 € en billets de banque, mais plutôt des tickets restaurants d'une valeur équivalente. Si vous réussissez à ouvrir ce coffre, vous pouvez disposer de cette somme. Cependant, votre liberté de dépense est restreinte, car vous ne pouvez utiliser ces tickets pour payer que dans certains restaurants. Ainsi, il y a une première condition pour dépenser cet argent, qui est de parvenir à ouvrir le coffre avec la clé appropriée. Mais il y a aussi une condition supplémentaire quant à l'usage futur de cette somme : elle doit être dépensée exclusivement dans des restaurants partenaires, et non pas en toute liberté. Ce système de contraintes sur les transactions futures, c’est ce que l’on appelle un covenant.
 
-► ***NOTE :** En français, il n'existe aucun terme pour capturer précisément la signification du mot « covenant ». On pourrait parler de « clause », de « pacte » ou d' « engagement », mais cela ne correspondrait pas exactement au terme « covenant ». Ce dernier est d'ailleurs emprunté d'une terminologie juridique qui permet de décrire une clause contractuelle imposant des obligations persistantes sur un bien.*
+> ► *En français, il n'existe aucun terme pour capturer précisément la signification du mot « covenant ». On pourrait parler de « clause », de « pacte » ou d' « engagement », mais cela ne correspondrait pas exactement au terme « covenant ». Ce dernier est d'ailleurs emprunté d'une terminologie juridique qui permet de décrire une clause contractuelle imposant des obligations persistantes sur un bien.*
 
 ## COVERT ASICBOOST
 
 Version secrète d'AsicBoost. AsicBoost est une méthode d'optimisation algorithmique pour le minage de Bitcoin. Dans sa version Covert, les mineurs manipulent l'arbre de Merkle plutôt que le Nonce, ce qui réduit ainsi les calculs nécessaires pour chaque hachage SHA256 en conservant certaines données inchangées entre les tentatives de hachage. Contrairement à la version Overt d'AsicBoost, la version Covert dissimule l'utilisation d'AsicBoost durant le processus de minage. Cependant, depuis l'introduction de SegWit et son second arbre de Merkle, cette méthode n'est plus efficace, car le nombre de calculs requis pour son utilisation est devenu trop important par rapport à un processus de minage classique.
 
-► ***NOTE :** Pour plus d'informations, voir les définitions de **[ASICBOOST](./A.md#asicboost)** et **[OVERT ASICBOOST](./O.md#overt-asicboost)**.*
+> ► *Pour plus d'informations, voir les définitions de **[ASICBOOST](./A.md#asicboost)** et **[OVERT ASICBOOST](./O.md#overt-asicboost)**.*
 
 ## CPFP (CHILD PAY FOR PARENT)
 
@@ -452,7 +452,7 @@ Sigle de « *Capped Pay Per Share Recent Backpay* ». C'est une méthode de calc
 
 Composant principal d'un ordinateur responsable de l'exécution des instructions machines des logiciels. Dans le contexte de Bitcoin, le CPU était initialement utilisé pour le minage par les nœuds avant d'être surpassé par le minage par GPU (cartes graphiques), puis par l'utilisation de puces spécialisées que l'on appelle des « ASIC ».
 
-► ***NOTE :** En français, on peut parler d'une « unité centrale de calcul » ou bien simplement d'un « processeur ».*
+> ► *En français, on peut parler d'une « unité centrale de calcul » ou bien simplement d'un « processeur ».*
 
 ## CRYPTANALYSE
 
@@ -486,7 +486,7 @@ Langage de programmation moderne, orienté objet, développé par Microsoft. Il 
 
 Dans le contexte de Bitcoin, se réfère à la détention et à la gestion des clés privées qui permettent le contrôle de bitcoins. La custody de BTC peut être assurée de deux manières : soit personnellement par l'utilisateur, qui garde lui-même les clés privées nécessaires pour accéder à ses bitcoins (ce que l'on appelle « self-custody »), soit par un tiers, comme une plateforme d'échange, où l'entreprise détient les clés privées et gère les bitcoins au nom de l'utilisateur. Cette seconde option est plus risquée que la self-custody, car cela expose les fonds de l'utilisateur aux risques de piratage, de faillite ou de comportements frauduleux de la part du gestionnaire.
 
-► ***NOTE :** En français, on utilise généralement le terme anglais de « custody ». On pourrait également le traduire par « garde ».*
+> ► *En français, on utilise généralement le terme anglais de « custody ». On pourrait également le traduire par « garde ».*
 
 ## CYPHERPUNK
 

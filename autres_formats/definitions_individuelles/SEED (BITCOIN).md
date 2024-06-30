@@ -6,5 +6,5 @@ Pour obtenir la seed réelle, la phrase de récupération, éventuellement accom
 
 ![](../../dictionnaire/assets/31.png)
 
-► ***NOTE :** Cependant, dans le langage courant, la majorité des bitcoiners se réfèrent à la phrase mnémonique quand ils parlent de la « seed », et non à l'état intermédiaire de dérivation qui se situe entre la phrase mnémonique et la clé maîtresse.*
+> ► *Cependant, dans le langage courant, la majorité des bitcoiners se réfèrent à la phrase mnémonique quand ils parlent de la « seed », et non à l'état intermédiaire de dérivation qui se situe entre la phrase mnémonique et la clé maîtresse.*
 

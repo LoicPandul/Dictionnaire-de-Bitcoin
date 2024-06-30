@@ -26,7 +26,7 @@ Pour déterminer la parité de `y`, on examine le dernier caractère hexadécima
 ```plaintext
 Base 16 (hexadécimal) : f
 Base 10 (décimal) : 15
-y est impair.
+y est impair
 ```
 
 Le préfixe pour la clé publique compressée sera `03`. La clé publique compressée en hexadécimal devient :

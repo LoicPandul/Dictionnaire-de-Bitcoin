@@ -2,13 +2,13 @@
 
 Protocole de coordination de coinjoins utilisé sur le portefeuille Wasabi.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> ► *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
 
 ## WALLET
 
 Outil logiciel spécialement conçu pour sécuriser et gérer les clés privées d'un utilisateur. Si le portefeuille est stocké et géré sur un dispositif logiciel lui-même installé sur une machine polyvalente, on parle alors de « portefeuille chaud ». En revanche, s'il est stocké dans un logiciel, lui-même installé sur un dispositif matériel dédié uniquement à cette tâche et non connecté à internet, on parle alors de « portefeuille froid ». Le portefeuille permet notamment d'utiliser les clés privées de l'utilisateur pour signer des transactions et ainsi remplir les conditions permettant la dépense des bitcoins.
 
-► ***NOTE :** En français, on peut traduire « wallet » par « portefeuille ».*
+> ► *En français, on peut traduire « wallet » par « portefeuille ».*
 
 ## WALLET.DAT
 
@@ -30,7 +30,7 @@ Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités t
 
 Dans le cadre de Liquid (sidechain de Bitcoin), ce sont des entités chargées de maintenir l'ancrage du L-BTC, le jeton natif de Liquid, en gérant et sécurisant les BTC utilisés en sous-jacent. Ils s'assurent que les actifs transférés entre la blockchain Bitcoin principale et la sidechain Liquid sont correctement verrouillés et débloqués. L'objectif de leurs actions est de maintenir la même valeur entre le L-BTC circulant sur Liquid et le BTC circulant sur Bitcoin. Dans Liquid, les watchmen font partie des fonctionnaires avec les blocksigners.
 
-► ***NOTE :** En français, on peut traduire « watchmen » par « gardiens ».*
+> ► *En français, on peut traduire « watchmen » par « gardiens ».*
 
 ## WATCH-ONLY WALLET
 
@@ -44,7 +44,7 @@ Désigne un individu ou une entité qui possède une quantité très importante 
 
 Implémentation du protocole de coinjoins chaumiens ZeroLink, développée par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin) et de [**ZEROLINK**](./Z.md#zerolink).*
+> ► *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin) et de [**ZEROLINK**](./Z.md#zerolink).*
 
 ## WHIRLPOOL STAT TOOL
 
@@ -54,16 +54,16 @@ Logiciel en ligne de commandes développé par Samourai Wallet qui permet de fou
 
 Nom donné au document scientifique nommé « *Bitcoin: A Peer-to-Peer Electronic Cash System* » publié par Satoshi Nakamoto pour la première fois le 31 octobre 2008. Ce document décrit les principes fondamentaux de Bitcoin. Le White Paper que l'on présente de nos jours est une seconde version publiée le 24 mars 2009.
 
-► ***NOTE :** Vous pouvez découvrir et télécharger le White Paper de Bitcoin ici : https://bitcoin.org/bitcoin.pdf.*
+> ► *Vous pouvez découvrir et télécharger le White Paper de Bitcoin ici : https://bitcoin.org/bitcoin.pdf.*
 
 ## WITNESSSCRIPT
 
 Script qui spécifie les conditions sous lesquelles les bitcoins peuvent être dépensés dans les UTXO P2WSH ou P2SH-P2WSH. Typiquement, les `WitnessScript` déterminent les conditions d'un portefeuille multisignatures sous standard SegWit. Dans ces standards de script, le `scriptPubKey` de l'UTXO (la sortie) contient un hachage du `WitnessScript`. Pour utiliser cet UTXO comme entrée dans une nouvelle transaction, le détenteur doit révéler le `WitnessScript` original, afin de prouver sa correspondance avec l'empreinte dans le `scriptPubKey`. Le `WitnessScript` doit alors être inclus dans le `ScriptWitness` de la transaction, qui contient également les éléments nécessaires pour valider le script, comme par exemple les signatures.  Le `WitnessScript` est donc l'équivalent pour SegWit du `redeemScript` dans une transaction P2SH, à la différence près qu'il est placé dans le témoin de la transaction, et non dans le `ScriptSig`.
 
-► ***NOTE :** Attention, le WitnessScript ne doit pas être confondu avec le ScriptWitness. Tandis que le WitnessScript définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, le ScriptWitness contient les données de témoin de tout input SegWit.*
+> ► *Attention, le WitnessScript ne doit pas être confondu avec le ScriptWitness. Tandis que le WitnessScript définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, le ScriptWitness contient les données de témoin de tout input SegWit.*
 
 ## WTXID
 
 Extension du TXID traditionnel, incluant les données de témoin (witness) introduites avec SegWit. Alors que le TXID est un hachage des données de transaction hors témoin, le WTXID est le `SHA256d` de l'intégralité des données de la transaction, témoin inclus. Les WTXID sont stockés dans un second arbre de Merkle dont la racine est mise dans la transaction coinbase. Cette séparation permet de supprimer la malléabilité du TXID de la transaction.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**TXID**](./T.md#txid-transaction-identifier) et [**SEGWIT**](./S.md#segwit).*
+> ► *Pour plus d'informations, voir la définition de [**TXID**](./T.md#txid-transaction-identifier) et [**SEGWIT**](./S.md#segwit).*

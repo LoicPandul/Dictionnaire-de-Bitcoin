@@ -5,5 +5,5 @@ Mécanisme qui permet d'établir une connexion entre le système principal de Bi
 * Une fédération d'entités ;
 * Les mineurs de la chaîne principale (drivechain).
 
-► ***NOTE :** En français, on parle d'un « ancrage bilatéral ».*
+> ► *En français, on parle d'un « ancrage bilatéral ».*
 

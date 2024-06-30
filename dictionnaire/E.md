@@ -18,7 +18,7 @@ Sigle de « *Elliptic Curve Digital Signature Algorithm* ». C'est un algorithme
 
 Implémentation majeure du protocole Lightning Network écrite en langage Scala. Eclair est développé par la société française Acinq.
 
-► ***NOTE :** Attention, « Eclair » était également le nom d'un portefeuille Lightning pour les appareils mobiles, développé par la même société. Aujourd'hui, ce portefeuille n'est plus maintenu.*
+> ► *Attention, « Eclair » était également le nom d'un portefeuille Lightning pour les appareils mobiles, développé par la même société. Aujourd'hui, ce portefeuille n'est plus maintenu.*
 
 ## ECLIPSE (ATTAQUE)
 
@@ -32,7 +32,7 @@ Attaque qui consiste à isoler et contrôler les communications d'un nœud dans 
 
 Implémentation open-source d'Electrum Server écrite en Rust. Le rôle d'un electrs est donc de maintenir un index complet des adresses et transactions Bitcoin depuis la blockchain fournie par un nœud complet, afin de faire facilement et rapidement des requêtes depuis un logiciel de portefeuille (comme Electrum par exemple).
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**ELECTRUM SERVER**](./E.md#electrum-server).*
+> ► *Pour plus d'informations, voir la définition de [**ELECTRUM SERVER**](./E.md#electrum-server).*
 
 ## ELECTRUM
 
@@ -50,7 +50,7 @@ Indexeur implémenté sur un nœud complet Bitcoin qui permet aux logiciels de p
 
 Protocole généraliste pour les secondes couches de Bitcoin qui permet de définir la manière de gérer conjointement la propriété d'un UTXO. Eltoo a été conçu par Christian Decker, Rusty Russell et Olaoluwa Osuntokun, notamment pour résoudre les problèmes associés aux mécanismes de négociation de l'état des canaux Lightning, c'est-à-dire entre l'ouverture et la fermeture. L'architecture Eltoo simplifie le processus de négociation en introduisant un système de gestion des états linéaire, remplaçant l'approche basée sur la pénalité par une méthode de mise à jour plus flexible et moins punitive. Ce protocole nécessite l'utilisation d'un nouveau type de SigHash qui permette de ne prendre en compte aucune entrée dans la signature d'une transaction. Ce SigHash a d'abord été appelé `SIGHASH_NOINPUT`, puis `SIGHASH_ANYPREVOUT` (Any Previous Output). Son implémentation est prévue dans le BIP118.
 
-► ***NOTE :** Eltoo est parfois également appelé « LN-Symmetry ».*
+> ► *Eltoo est parfois également appelé « LN-Symmetry ».*
 
 ## EMBRANCHEMENT NATUREL
 
@@ -93,7 +93,7 @@ Si l'on décompose cet entête, on peut reconnaitre :
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
 
-► ***NOTE :** En anglais, on parle d'un « Block Header ».*
+> ► *En anglais, on parle d'un « Block Header ».*
 
 ## ENTRÉE (INPUT)
 
@@ -117,7 +117,7 @@ Sigle de « *Equalized Shared Maximum Pay Per Share* ».C'est une méthode de ca
 
 Pratique qui consiste à attribuer une annotation ou une étiquette à un UTXO spécifique dans un portefeuille Bitcoin. Par exemple, si je possède un UTXO provenant d'un achat P2P sur Bisq avec Charles, je pourrais luis attribuer l'étiquette `Non-KYC Bisq Charles`. C'est une bonne pratique qui aide à se rappeler de l'origine ou de la destination prévue de cet UTXO, facilitant ainsi la gestion des fonds et l'optimisation de la confidentialité. L'étiquetage est d'autant plus important lorsqu'il est utilisé avec le coin control. En effet, en permettant aux utilisateurs de différencier et de sélectionner précisément les UTXO pour leurs transactions, cette pratique aide à éviter la fusion d'UTXO provenant de sources différentes. Cela limite les risques associés à l'heuristique d'analyse de chaîne CIOH (*Common Input Ownership Heuristic*), qui peut révéler la propriété commune des entrées d'une transaction.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**COIN CONTROL**](./C.md#coin-control).*
+> ► *Pour plus d'informations, voir la définition de [**COIN CONTROL**](./C.md#coin-control).*
 
 ## EXPLORATEUR DE BLOC
 

@@ -11,5 +11,5 @@ OP_ENDIF
 
 Ces artefacts numériques, comme des NFTs, peuvent être échangés et conservés.
 
-► ***NOTE :** Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](/dictionnaire/O.md#ordinals-theory)** et de **[DIGITAL ARTIFACTS](/dictionnaire/D.md#digital-artifacts)**.*
+> ► *Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](/dictionnaire/O.md#ordinals-theory)** et de **[DIGITAL ARTIFACTS](/dictionnaire/D.md#digital-artifacts)**.*
 

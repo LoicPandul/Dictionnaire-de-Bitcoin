@@ -26,5 +26,5 @@ OP_ELSE
 OP_ENDIF
 ```
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**MINISCRIPT**](/dictionnaire/M.md#miniscript).*
+> ► *Pour plus d'informations, voir la définition de [**MINISCRIPT**](/dictionnaire/M.md#miniscript).*
 

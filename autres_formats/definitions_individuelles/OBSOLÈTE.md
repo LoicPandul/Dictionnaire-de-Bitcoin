@@ -11,5 +11,5 @@ Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîn
 
 ![](../../dictionnaire/assets/9.png)
 
-► ***NOTE :** En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN](/dictionnaire/O.md#orphelin)**.*
+> ► *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN](/dictionnaire/O.md#orphelin)**.*
 

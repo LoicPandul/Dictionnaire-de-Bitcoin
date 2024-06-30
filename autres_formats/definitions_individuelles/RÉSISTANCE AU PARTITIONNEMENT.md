@@ -2,5 +2,5 @@
 
 Capacité du réseau Bitcoin à rester unifier et à maintenir le consensus entre les utilisateurs, en maintenant des connexions et en évitant la séparation de certains nœuds du reste du réseau, malgré les tentatives de le fragmenter. Pour qu'un nœud demeure en consensus avec le réseau, il doit maintenir au moins une connexion active avec un ensemble de pairs partageant les mêmes règles de consensus.
 
-► ***NOTE :** En anglais, on dit « Partition Resistance ».*
+> ► *En anglais, on dit « Partition Resistance ».*
 

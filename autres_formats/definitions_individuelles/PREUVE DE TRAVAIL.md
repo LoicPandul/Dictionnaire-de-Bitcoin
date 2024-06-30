@@ -6,5 +6,5 @@ Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la m
 
 Ce travail effectué par les mineurs est récompensé à chaque bloc valide trouvé. Le mineur gagnant empoche une récompense pécuniaire, composée de la subvention de bloc (création de nouveaux bitcoins ex-nihilo), et des frais de transaction. Aujourd’hui, la difficulté de la preuve de travail sur Bitcoin est telle que le minage nécessite une grande puissance de calcul pour parvenir à gagner des blocs. En conséquence, il faut souvent disposer de puces électroniques spécialisées dans l’exécution de `SHA256`, c’est ce que l’on appelle un ASIC, et participer dans des pools de minage.
 
-► ***NOTE :** En anglais, on parle de « Proof-of-Work », parfois abrégé avec le sigle « PoW ».*
+> ► *En anglais, on parle de « Proof-of-Work », parfois abrégé avec le sigle « PoW ».*
 

@@ -6,5 +6,5 @@ Référence unique à une sortie de transaction non dépensé (UTXO). Il est con
 
 La combinaison de ces deux éléments permet d'identifier précisément un UTXO. Par exemple, si une transaction a un "txid" de `abc123` et que l'index de l'output est `0`, l'outpoint sera noté comme `abc123:0`. L'outpoint est utilisé dans les inputs ("vin") d'une nouvelle transaction pour indiquer quel UTXO est dépensé.
 
-► ***NOTE :** Le terme « outpoint » est souvent utilisé comme synonyme de « UTXO ».*
+> ► *Le terme « outpoint » est souvent utilisé comme synonyme de « UTXO ».*
 

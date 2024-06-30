@@ -27,5 +27,5 @@ Si l'on décompose cet entête, on peut reconnaitre :
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
 
-► ***NOTE :** En anglais, on parle d'un « Block Header ».*
+> ► *En anglais, on parle d'un « Block Header ».*
 

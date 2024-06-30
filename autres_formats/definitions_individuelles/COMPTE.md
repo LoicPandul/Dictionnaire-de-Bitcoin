@@ -4,5 +4,5 @@ Dans les portefeuilles HD (déterministes hiérarchiques), un compte représente
 
 ![](../../dictionnaire/assets/17.png)
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](/dictionnaire/C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](/dictionnaire/C.md#chemin-de-dérivation).*
 

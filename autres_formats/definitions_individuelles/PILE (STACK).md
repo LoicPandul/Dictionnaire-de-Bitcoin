@@ -6,5 +6,5 @@ Dans l'exécution d'un script Bitcoin, 2 piles peuvent être utilisées : la pil
 
 Par exemple, lors de la validation d'une transaction, les signatures et les clés publiques sont poussées sur la pile principale et traitées par des opcodes successifs pour vérifier que les signatures correspondent aux clés et aux données de la transaction.
 
-► ***NOTE :** En anglais, la traduction de « pile » est « stack ». On utilise généralement le terme anglais même en français lors de discussions techniques. Pour plus d'informations, voir les définitions de **[SCRIPT](/dictionnaire/S.md#script)** et **[OPCODES](/dictionnaire/O.md#opcodes)**.*
+> ► *En anglais, la traduction de « pile » est « stack ». On utilise généralement le terme anglais même en français lors de discussions techniques. Pour plus d'informations, voir les définitions de **[SCRIPT](/dictionnaire/S.md#script)** et **[OPCODES](/dictionnaire/O.md#opcodes)**.*
 

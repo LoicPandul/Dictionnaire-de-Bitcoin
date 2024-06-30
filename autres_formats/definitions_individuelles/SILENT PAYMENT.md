@@ -52,5 +52,5 @@ Avec :
 
 En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de ségréguer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[LABEL (SILENT PAYMENTS)](/dictionnaire/L.md#label-silent-payments)**.*
+> ► *Pour plus d'informations, voir la définition de **[LABEL (SILENT PAYMENTS)](/dictionnaire/L.md#label-silent-payments)**.*
 

@@ -15,5 +15,5 @@ Ce système de shares est utilisé pour estimer le travail réalisé par chaque 
 
 Les pools de minage ajustent la difficulté des shares pour équilibrer la charge de vérification et s'assurer que chaque mineur, qu'il soit petit ou grand, soumet des shares environ toutes les quelques secondes. Cela permet de calculer avec précision le hashrate de chaque mineur et de distribuer les récompenses selon la méthode de calcul de la rémunération choisie (PPS, PPLNS, TIDES...).
 
-► ***NOTE :** En français, on peut traduire « shares » par « part ».*
+> ► *En français, on peut traduire « shares » par « part ».*
 

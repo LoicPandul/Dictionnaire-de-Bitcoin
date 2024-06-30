@@ -2,5 +2,5 @@
 
 Fait référence aux *Unspent Transaction Outputs* (UTXO) utilisés comme fonds d'origine pour une transaction.
 
-► ***NOTE :** Pour plus d'informations voir la définition d'[**ENTRÉE**](/dictionnaire/E.md#entrée-input).*
+> ► *Pour plus d'informations voir la définition d'[**ENTRÉE**](/dictionnaire/E.md#entrée-input).*
 

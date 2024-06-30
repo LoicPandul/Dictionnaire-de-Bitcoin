@@ -6,7 +6,7 @@ Pratique risquée consistant à considérer une transaction Bitcoin comme défin
 
 Protocole de Chaumian coinjoin qui vise à briser toutes les liaisons entre des ensembles de pièces séparées à travers des techniques avancées de mixage. Le protocole ZeroLink se distingue par sa capacité à protéger l’anonymat des utilisateurs contre diverses formes d'analyse de chaîne au niveau de la transaction et du réseau. ZeroLink introduit un cadre pour les portefeuilles de coinjoin, avec l'utilisation de comptes pré-mix et post-mix ségrégués, ainsi qu’une technique de mixage propre : le Chaumian coinjoin. À ce jour, la seule implémentation de coinjoins ZeroLink est Whirlpool, disponible sur Samourai Wallet et Sparrow Wallet.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
+> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
 
 ## ZEROSYNC
 
@@ -16,16 +16,16 @@ Projet développé pour tirer partie des ZKP (preuves à divulgation nulle de co
 
 Méthode cryptographique permettant à une partie (le prouveur) de prouver à une autre partie (le vérificateur) qu'une information est vraie, sans révéler l'information ni aucun aspect de celle-ci. Une ZKP permet de garantir l'exactitude d'une affirmation, tout en préservant la confidentialité des données sous-jacente.
 
-► ***NOTE :** En français, on traduit Zero-Knowledge Proof par « Preuve à divulgation nulle de connaissance ».*
+> ► *En français, on traduit Zero-Knowledge Proof par « Preuve à divulgation nulle de connaissance ».*
 
 ## ZPRV
 
 Préfixe de clé privée étendue pour les comptes SegWit V0 sur Bitcoin.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## ZPUB
 
 Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*

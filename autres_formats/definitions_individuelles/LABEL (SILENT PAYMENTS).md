@@ -32,5 +32,5 @@ Grâce à cette méthode, Bob peut utiliser une multitude d'adresses statiques (
 
 Attention toutefois, cette séparation des adresses statiques vaut uniquement d'un point de vue de gestion personnelle du portefeuille, mais ne permet pas de séparer les identités. Puisqu'elles disposent toutes du même $B_{\text{scan}}$, il est très facile d'associer toutes les adresses statiques ensemble et de déduire qu'elles appartiennent à une unique entité.
 
-► ***NOTE :** Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](/dictionnaire/S.md#silent-payment)**.*
+> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](/dictionnaire/S.md#silent-payment)**.*
 

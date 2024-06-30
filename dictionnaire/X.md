@@ -29,10 +29,10 @@ Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreu
 
 Préfixe de clé privée étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
 
 ## XPUB
 
 Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitcoin. 
 
-► ***NOTE :** Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
+> ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](./C.md#clé-étendue).*
