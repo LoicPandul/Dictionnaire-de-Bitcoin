@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 759 `**
+**Nombre total de définitions : ` 760 `**
 
 ### A
 
@@ -308,6 +308,7 @@
 - [ENTÊTE DE BLOC](./dictionnaire/E.md#entête-de-bloc)
 - [ENTRÉE (INPUT)](./dictionnaire/E.md#entrée-input)
 - [ENTROPIE](./dictionnaire/E.md#entropie)
+- [ENTROPIE (ANALYSE)](./dictionnaire/E.md#entropie-analyse)
 - [EREBUS (ATTAQUE)](./dictionnaire/E.md#erebus-attaque)
 - [ESMPPS](./dictionnaire/E.md#esmpps)
 - [ÉTIQUETAGE](./dictionnaire/E.md#étiquetage)
