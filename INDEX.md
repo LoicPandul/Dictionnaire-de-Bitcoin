@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 758 `**
+**Nombre total de définitions : ` 759 `**
 
 ### A
 
@@ -358,6 +358,7 @@
 
 ### H
 
+- [HACHEUR](./dictionnaire/H.md#hacheur)
 - [HAL FINNEY](./dictionnaire/H.md#hal-finney)
 - [HALVING](./dictionnaire/H.md#halving)
 - [HARD FORK](./dictionnaire/H.md#hard-fork)
