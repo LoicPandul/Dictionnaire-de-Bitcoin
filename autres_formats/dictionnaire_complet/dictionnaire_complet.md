@@ -2140,11 +2140,11 @@ Ancien logiciel de portefeuille Bitcoin racheté en juillet 2016 par Blockstream
 
 ## GREEN ADDRESSES
 
-Vielle proposition d'adresse Bitcoin dont les transactions qui y sont envoyées sont pré-approuvées par un tiers de confiance. Ce concept permet aux parties recevant des fonds via cette adresse de les considérer comme immédiatement fiables, sans attendre qu'elle soit incluse dans un bloc. Cela repose sur la confiance accordée au service qui contrôle la green address, car il garantit que les fonds envoyés n'ont pas été et ne seront pas double dépensés. Ce type de service était autrefois utilisé pour accélérer les transactions, mais il n'est plus utilisé de nos jours.
+Vieille proposition d'adresse Bitcoin dont les transactions qui y sont envoyées sont pré-approuvées par un tiers de confiance. Ce concept permet aux parties recevant des fonds via cette adresse de les considérer comme immédiatement fiables, sans attendre qu'elle soit incluse dans un bloc. Cela repose sur la confiance accordée au service qui contrôle la green address, car il garantit que les fonds envoyés n'ont pas été et ne seront pas double dépensés. Ce type de service était autrefois utilisé pour accélérer les transactions (zero-conf), mais il n'est plus utilisé de nos jours.
 
 ## GREEN WALLET
 
-Logiciel de portefeuille Bitcoin disponible sur PC, Android et IOS développé par Blockstream depuis l'acquisition du logiciel Green Address en 2016. Il intègre plusieurs fonctionnalités comme une protection multisignaturse avec une authentification à deux facteurs. Il est également compatible avec la plupart des hardware wallets. C'est un logiciel simple à prendre en main qui peut être utilisé par des débutants.
+Logiciel de portefeuille Bitcoin disponible sur PC, Android et IOS développé par Blockstream depuis l'acquisition du logiciel Green Address en 2016. Il intègre plusieurs fonctionnalités comme une protection multisignatures avec une authentification à deux facteurs. Il est également compatible avec la plupart des hardware wallets. C'est un logiciel simple à prendre en main qui peut être utilisé par des débutants.
 
 ## GROS-BOUTISTE
 
@@ -2154,7 +2154,7 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 ## GUI
 
-Acronyme de « Graphical user interface », ou « interface graphique utilisateur » en français. C'est une forme d'interface utilisateur qui permet d'interagir avec des logiciels à travers des éléments visuels interactifs (boutons, icônes, images, fenêtres...) et qui privilégie l'utilisation de dispositifs de pointage (la souris) plutôt que de commandes textuelles comme avec la CLI.
+Acronyme de « *Graphical User Interface* », ou « interface graphique utilisateur » en français. C'est une forme d'interface utilisateur qui permet d'interagir avec des logiciels à travers des éléments visuels interactifs (boutons, icônes, images, fenêtres...) et qui privilégie l'utilisation de dispositifs de pointage (la souris) plutôt que de commandes textuelles comme avec la CLI.
 
 ## GUISETTINGS.INI.BAK
 
