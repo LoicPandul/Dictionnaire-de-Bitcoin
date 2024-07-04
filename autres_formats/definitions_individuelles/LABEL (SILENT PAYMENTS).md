@@ -8,11 +8,11 @@ Par exemple, la première clé $B_1$ est obtenue de cette manière :
 
 $$  B_1 = B_{\text{spend}} + \text{hash}(b_{\text{scan}} \text{ ‖ } 1) \cdot G  $$
 
-L'adresse statique publiée par Bob sera dorénavant composée de $B_{\text{scan}}$ et de $B_m$. Par exemple, la première adresse statique avec le label $1$ sera (on commence seulement à partir du label 1 car le label 0 est réservé pour le change) :
+L'adresse statique publiée par Bob sera dorénavant composée de $B_{\text{scan}}$ et de $B_m$. Par exemple, la première adresse statique avec le label $1$ sera :
 
 $$ B = B_{\text{scan}} \text{ ‖ } B_1 $$
 
-Alice, qui souhaite envoyer des bitcoins sur l'adresse statique labelisée transmise par Bob, va dériver l'adresse de paiement unique $P_0$ en utilisant la nouvelle $B_1$ à la place de $B_{\text{spend}}$ :
+On commence seulement à partir du label 1 car le label 0 est réservé pour le change. Alice, qui souhaite envoyer des bitcoins sur l'adresse statique labelisée transmise par Bob, va dériver l'adresse de paiement unique $P_0$ en utilisant la nouvelle $B_1$ à la place de $B_{\text{spend}}$ :
 
 $$  P_0 = B_1 + \text{hash}(\text{inputHash} \cdot a \cdot B_{\text{scan}} \text{ ‖ } 0) \cdot G  $$
 
