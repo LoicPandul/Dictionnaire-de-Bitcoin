@@ -9,10 +9,7 @@ ___
 
 ## ADDRESS SWAPPING
 
-## TAIL EMISSION
 
-
-## DEMEURAGE
 
 ## ATTAQUE PAR REJEU
 
@@ -66,6 +63,10 @@ Cross input signature aggregation
 
 
 ## COORDINATEUR DE COINJOIN
+
+
+
+## DEMEURAGE
 
 
 
@@ -395,6 +396,10 @@ Liquid
 ## TAGUÉE
 
 Fonction de hachage taguée.
+
+
+## TAIL EMISSION
+
 
 
 ## TIMEJACKING (ATTAQUE)
