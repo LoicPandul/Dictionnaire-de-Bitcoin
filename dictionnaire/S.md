@@ -56,13 +56,13 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 
 ![](assets/35.png)
 
-> ► *Le scriptSig est également parfois nommé « unlocking script » ou « script de déverrouillage » en français.*
+> ► *Le `scriptSig` est également parfois nommé « unlocking script » ou « script de déverrouillage » en français.*
 
 ## SCRIPTWITNESS
 
-Élément dans les entrées de transactions SegWit qui contient les signatures et les clés publiques nécessaires pour déverrouiller les bitcoins envoyés dans la transaction. Semblable au `ScriptSig` des transactions Legacy, le `ScriptWitness` n'est toutefois pas placé au même endroit. En effet, c'est cette partie, que l'on appelle le « témoin » (« witness » en anglais), qui est déplacée dans une base de données séparée afin de résoudre le problème de la malléabilité des transactions. Chaque input SegWit possède son propre `ScriptWitness`, et tous les `ScriptWitness` forment ensemble le champ `Witness` de la transaction.
+Élément dans les entrées de transactions SegWit qui contient les signatures et les clés publiques nécessaires pour déverrouiller les bitcoins envoyés dans la transaction. Semblable au `scriptSig` des transactions Legacy, le `scriptWitness` n'est toutefois pas placé au même endroit. En effet, c'est cette partie, que l'on appelle le « témoin » (« witness » en anglais), qui est déplacée dans une base de données séparée afin de résoudre le problème de la malléabilité des transactions. Chaque input SegWit possède son propre `scriptWitness`, et tous les `scriptWitness` forment ensemble le champ `Witness` de la transaction.
 
-> ► *Attention de ne pas confondre le ScriptWitness avec le WitnessScript. Tandis que le ScriptWitness contient les données de témoin de tout input SegWit, le WitnessScript définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, à la manière du redeemScript pour une sortie P2SH.*
+> ► *Attention de ne pas confondre le `scriptWitness` avec le `witnessScript`. Tandis que le scriptWitness contient les données de témoin de tout input SegWit, le witnessScript définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, à la manière du `redeemScript` pour une sortie P2SH.*
 
 ## SDK (SOFTWARE DEVELOPMENT KIT)
 
@@ -308,7 +308,7 @@ Avec :
 * $B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;
 * $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
 * $A$ : La somme des clés publiques en input (tweak) ;
-* $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `ScriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
+* $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
 * $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
 * $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
 * $G$ : Le point générateur de la courbe elliptique `secp256k1` ;
