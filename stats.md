@@ -33,14 +33,14 @@
 
 ### Termes techniques les plus rencontrés :
 1. ***bitcoin*** - 1236
-2. ***transaction*** - 967
+2. ***transaction*** - 966
 3. ***bloc*** - 587
 4. ***adresse*** - 340
 5. ***information*** - 329
 6. ***script*** - 327
 7. ***portefeuille*** - 283
 8. ***mineur*** - 266
-9. ***réseau*** - 247
+9. ***réseau*** - 246
 10. ***utxo*** - 244
 11. ***protocole*** - 222
 12. ***utilisateur*** - 213

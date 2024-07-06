@@ -527,7 +527,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [OP_1SUB (0X8C)](#op_1sub-0x8c) |   172 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   181 |
 | [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   172 | [OP_OVER (0X78)](#op_over-0x78) |   181 |
 | [OP_2DROP (0XD6)](#op_2drop-0xd6) |   172 | [OP_PICK (0X79)](#op_pick-0x79) |   181 |
-| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   172 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   181 |
+| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   172 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   182 |
 | [OP_2OVER (0X70)](#op_2over-0x70) |   173 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   182 |
 | [OP_2ROT (0X71)](#op_2rot-0x71) |   173 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   182 |
 | [OP_2SWAP (0X72)](#op_2swap-0x72) |   174 | [OP_RETURN (0X6A)](#op_return-0x6a) |   182 |
@@ -535,30 +535,30 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [OP_ABS (0X90)](#op_abs-0x90)  |   175 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   182 |
 | [OP_ADD (0X93)](#op_add-0x93)  |   175 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   182 |
 | [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   175 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   182 |
-| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   175 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   182 |
+| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   175 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   183 |
 | [OP_CAT (0X7E)](#op_cat-0x7e)  |   175 | [OP_SIZE (0X82)](#op_size-0x82) |   183 |
 | [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   175 | [OP_SUB (0X94)](#op_sub-0x94)  |   183 |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   175 | [OP_SUCCESS](#op_success)      |   183 |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   175 | [OP_SUCCESS](#op_success)      |   184 |
 | [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   176 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   183 |
 | [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   176 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   183 |
 | [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   176 | [OP_TRUE (0X51)](#op_true-0x51) |   183 |
-| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   177 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   183 |
+| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   177 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   184 |
 | [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   177 | [OP_VER (0X62)](#op_ver-0x62)  |   184 |
 | [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   177 | [OP_VERIFY (0X69)](#op_verify-0x69) |   184 |
 | [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   177 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   184 |
 | [OP_DEPTH (0X74)](#op_depth-0x74) |   178 | [OPCODES](#opcodes)            |   184 |
-| [OP_DROP (0X75)](#op_drop-0x75) |   178 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   184 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   178 | [ORACLE](#oracle)              |   184 |
+| [OP_DROP (0X75)](#op_drop-0x75) |   178 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   185 |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   178 | [ORACLE](#oracle)              |   185 |
 | [OP_ELSE (0X67)](#op_else-0x67) |   178 | [ORDINAL NUMBER](#ordinal-number) |   185 |
 | [OP_ENDIF (0X68)](#op_endif-0x68) |   178 | [ORDINALS THEORY](#ordinals-theory) |   185 |
 | [OP_EQUAL (0X87)](#op_equal-0x87) |   178 | [ORPHELIN](#orphelin)          |   185 |
 | [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   178 | [OSINT](#osint)                |   186 |
-| [OP_EVAL](#op_eval)            |   178 | [OU EXCLUSIF](#ou-exclusif)    |   186 |
-| [OP_FALSE (0X00)](#op_false-0x00) |   179 | [OUTBOUND CAPACITY](#outbound-capacity) |   187 |
-| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   179 | [OUTPOINT](#outpoint)          |   187 |
+| [OP_EVAL](#op_eval)            |   178 | [OU EXCLUSIF](#ou-exclusif)    |   187 |
+| [OP_FALSE (0X00)](#op_false-0x00) |   179 | [OUTBOUND CAPACITY](#outbound-capacity) |   188 |
+| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   179 | [OUTPOINT](#outpoint)          |   188 |
 | [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   179 | [OUTPUT](#output)              |   188 |
-| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   179 | [OUTPUT LINKING](#output-linking) |   188 |
-| [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   179 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   188 |
+| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   179 | [OUTPUT LINKING](#output-linking) |   189 |
+| [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   179 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   189 |
 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   179 | [OVERT ASICBOOST](#overt-asicboost) |   190 |
 | | | | |
 
@@ -4104,17 +4104,17 @@ Fichier utilisé dans Bitcoin Core pour stocker une clé privée associée à un
 
 ## OP_0 (0X00)
 
-Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. `OP_0` est également utilisé pour initialiser les scripts.
+Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne faux dans les scripts. `OP_0` est également utilisé pour initialiser les scripts.
 
 > ► *OP_0 est identique à **[OP_FALSE](#op_false-0x00)** et OP_PUSHNUM_0.*
 
 ## OP_0NOTEQUAL (0X92)
 
-Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élément est autre que zéro, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élément est autre que zéro, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
 ## OP_1 (0X51)
 
-Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
+Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne vrai dans les scripts.
 
 > ► *OP_1 est identique à **[OP_TRUE](#op_true-0x51)** et OP_PUSHNUM_1.*
 
@@ -4135,7 +4135,12 @@ Soustrait `1` à la valeur en haut de la pile.
 Les opcodes de `OP_2` jusqu'à `OP_16` poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `ScriptPubKey` pour un multisig 2/3 : 
 
 \begin{codeblock}
-OP_2 <Clé publique A> <Clé publique B> <Clé publique C> OP_3 OP_CHECKMULTISIG
+OP_2
+<Clé publique A>
+<Clé publique B>
+<Clé publique C>
+OP_3
+OP_CHECKMULTISIG
 \end{codeblock}
 
 > ► *Tous ces opcodes sont parfois également nommés OP_PUSHNUM_N.*
@@ -4343,7 +4348,7 @@ Si une ou plusieurs de ces caractéristiques est observée, le script contenant 
 
 ## OP_CHECKSIG (0XAC)
 
-Vérifie la validité d'une signature par rapport à une clé publique donnée. Il prend les deux éléments du sommet de la pile : la signature et la clé publique, et évalue si la signature est correcte pour le hachage de la transaction et la clé publique spécifiée. Si la vérification est réussie, il pousse la valeur `1` (`vrai`) sur la pile, sinon `0` (`faux`). Cet opcode a été modifié dans Tapscript afin de vérifier des signatures de Schnorr.
+Vérifie la validité d'une signature par rapport à une clé publique donnée. Il prend les deux éléments du sommet de la pile : la signature et la clé publique, et évalue si la signature est correcte pour le hachage de la transaction et la clé publique spécifiée. Si la vérification est réussie, il pousse la valeur `1` (vrai) sur la pile, sinon `0` (faux). Cet opcode a été modifié dans Tapscript afin de vérifier des signatures de Schnorr.
 
 ## OP_CHECKSIGADD (0XBA)
 
@@ -4360,11 +4365,11 @@ avec la valeur de
 \texttt{n + 1}
 est poussé sur la pile et l'exécution continue.
 \end{itemize}
-Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECKSIG`, mais au lieu de pousser `vrai` ou `faux` sur la pile, il ajoute `1` à la deuxième valeur en haut de la pile si la signature est valide, ou laisse cette valeur inchangée si la signature représente le vecteur vide.`OP_CHECKSIGADD` permet de créer les mêmes politiques multisignatures dans Tapscript qu'avec `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` mais de manière vérifiable par lots, c'est-à-dire qu'il supprime le processus de recherche dans la vérification d'un multisig traditionnel et accélère donc la vérification tout en réduisant la charge opérationnelle sur les CPU des nœuds. Cet opcode a été ajouté dans Tapscript uniquement pour les besoins de Taproot.
+Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECKSIG`, mais au lieu de pousser vrai ou faux sur la pile, il ajoute `1` à la deuxième valeur en haut de la pile si la signature est valide, ou laisse cette valeur inchangée si la signature représente le vecteur vide.`OP_CHECKSIGADD` permet de créer les mêmes politiques multisignatures dans Tapscript qu'avec `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` mais de manière vérifiable par lots, c'est-à-dire qu'il supprime le processus de recherche dans la vérification d'un multisig traditionnel et accélère donc la vérification tout en réduisant la charge opérationnelle sur les CPU des nœuds. Cet opcode a été ajouté dans Tapscript uniquement pour les besoins de Taproot.
 
 ## OP_CHECKSIGVERIFY (0XAD)
 
-Effectue la même opération que `OP_CHECKSIG`, mais si la vérification de la signature échoue, le script s'arrête immédiatement avec une erreur et la transaction est donc invalide. Si la vérification réussit, le script continue sans pousser de valeur `1` (`vrai`) sur la pile. Pour résumer, `OP_CHECKSIGVERIFY` réalise l'opération `OP_CHECKSIG` suivie de `OP_VERIFY`. Cet opcode a été modifié dans Tapscript afin de vérifier des signatures de Schnorr.
+Effectue la même opération que `OP_CHECKSIG`, mais si la vérification de la signature échoue, le script s'arrête immédiatement avec une erreur et la transaction est donc invalide. Si la vérification réussit, le script continue sans pousser de valeur `1` (vrai) sur la pile. Pour résumer, `OP_CHECKSIGVERIFY` réalise l'opération `OP_CHECKSIG` suivie de `OP_VERIFY`. Cet opcode a été modifié dans Tapscript afin de vérifier des signatures de Schnorr.
 
 ## OP_CODESEPARATOR (0XAB)
 
@@ -4396,7 +4401,7 @@ Marque la fin d'une structure de contrôle conditionnelle initiée par un `OP_IF
 
 ## OP_EQUAL (0X87)
 
-Compare les deux valeurs les plus hautes de la pile et pousse `1` sur la pile si elles sont égales, sinon pousse 0. `OP_EQUAL` permet de vérifier l'égalité des données dans les scripts de transaction.
+Compare les deux valeurs les plus hautes de la pile et pousse `1` sur la pile si elles sont égales, sinon pousse `0`. `OP_EQUAL` permet de vérifier l'égalité de données dans un script.
 
 ## OP_EQUALVERIFY (0X88)
 
@@ -4414,15 +4419,15 @@ Identique à `OP_0`.
 
 ## OP_FROMALTSTACK (0X6C)
 
-Retire le sommet de la pile alternative (alt stack) et le place sur le sommet de la pile principale (main stack). Cet opcode est utilisé pour récupérer des données stockées temporairement sur la pile alternative. Pour simplifier, c'est l'opération inverse de `OP_TOALTSTACK`.
+Retire le sommet de la pile alternative (*alt stack*) et le place sur le sommet de la pile principale (*main stack*). Cet opcode est utilisé pour récupérer des données stockées temporairement sur la pile alternative. Pour simplifier, c'est l'opération inverse de `OP_TOALTSTACK`.
 
 ## OP_GREATERTHAN (0XA0)
 
-Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur au deuxième. Si le premier élément est supérieur au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur au deuxième. Si le premier élément est supérieur au deuxième, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
 ## OP_GREATERTHANOREQUAL (0XA2)
 
-Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur ou égal au deuxième. Si le premier élément est supérieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur ou égal au deuxième. Si le premier élément est supérieur ou égal au deuxième, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
 ## OP_HASH160 (0XA9)
 
@@ -4438,7 +4443,16 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 
 ## OP_IF (0X63)
 
-Exécute la portion suivante du script si la valeur au sommet de la pile est non nulle (vraie). Si la valeur est nulle (fausse), ces opérations sont sautées, passant directement à celles après `OP_ELSE`, s'il est présent. `OP_IF` permet d'initier une structure de contrôle conditionnelle dans un script. Il détermine le flux de contrôle dans un script en fonction d'une condition fournie au moment de l'exécution de la transaction. `OP_IF` s'utilise avec `OP_ELSE` et `OP_ENDIF` de la manière suivante : `<condition> OP_IF <opérations si la condition est vraie> OP_ELSE <opérations si la condition est fausse> OP_ENDIF`.
+Exécute la portion suivante du script si la valeur au sommet de la pile est non nulle (vraie). Si la valeur est nulle (fausse), ces opérations sont sautées, passant directement à celles après `OP_ELSE`, s'il est présent. `OP_IF` permet d'initier une structure de contrôle conditionnelle dans un script. Il détermine le flux de contrôle dans un script en fonction d'une condition fournie au moment de l'exécution de la transaction. `OP_IF` s'utilise avec `OP_ELSE` et `OP_ENDIF` de la manière suivante : 
+
+\begin{codeblock}
+<condition>
+OP_IF
+<opérations si la condition est vraie>
+OP_ELSE
+<opérations si la condition est fausse>
+OP_ENDIF
+\end{codeblock}
 
 ## OP_IFDUP (0X73)
 
@@ -4446,11 +4460,11 @@ Duplique le sommet de la pile si celui-ci est non nul. Si la valeur en haut de l
 
 ## OP_LESSTHAN (0X9F)
 
-Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur au deuxième. Si le premier élément est inférieur au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur au deuxième. Si le premier élément est inférieur au deuxième, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
 ## OP_LESSTHANOREQUAL (0XA1)
 
-Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur ou égal au deuxième. Si le premier élément est inférieur ou égal au deuxième, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+Compare les deux éléments au sommet de la pile et vérifie si le premier élément est inférieur ou égal au deuxième. Si le premier élément est inférieur ou égal au deuxième, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
 ## OP_MAX (0XA4)
 
@@ -4462,7 +4476,7 @@ Sélectionne le plus petit des deux éléments en haut de la pile et le pousse s
 
 ## OP_NEGATE (0X8F)
 
-Inverse le signe de l'élément supérieur de la pile. Si la valeur est positive, elle devient négative, et vice versa.
+Inverse le signe de l'élément supérieur de la pile. Si la valeur est positive, elle devient négative, et inversement.
 
 ## OP_NIP (0X77)
 
@@ -4490,7 +4504,7 @@ Compare les deux éléments au sommet de la pile pour vérifier s'ils sont numé
 
 ## OP_NUMEQUALVERIFY (0X9D)
 
-Combine les opérations `OP_NUMEQUAL` et `OP_VERIFY`. Il compare numériquement les deux éléments au sommet de la pile. Si les valeurs sont égales, `OP_NUMEQUALVERIFY` supprime le résultat `vrai` de la pile et continue l'exécution du script. Si les valeurs ne sont pas égales, le résultat est `faux` et le script échoue immédiatement.
+Combine les opérations `OP_NUMEQUAL` et `OP_VERIFY`. Il compare numériquement les deux éléments au sommet de la pile. Si les valeurs sont égales, `OP_NUMEQUALVERIFY` supprime le résultat vrai de la pile et continue l'exécution du script. Si les valeurs ne sont pas égales, le résultat est faux et le script échoue immédiatement.
 
 ## OP_NUMNOTEQUAL (0X9E)
 
@@ -4510,11 +4524,11 @@ Pousse une certaine quantité de données sur la pile. Il est suivi d'un octet q
 
 ## OP_PUSHDATA2 (0X4D)
 
-Permet de pousser une grande quantité de données sur la pile. Il est suivi de deux octets (petit-boutistes) qui spécifient la longueur des données à pousser (jusqu'à 65535 octets). Il est utilisé pour insérer des données plus volumineuses dans les scripts.
+Permet de pousser une grande quantité de données sur la pile. Il est suivi de deux octets (petit-boutistes) qui spécifient la longueur des données à pousser (jusqu'à environ 65 Ko). Il est utilisé pour insérer des données plus volumineuses dans les scripts.
 
 ## OP_PUSHDATA4 (0X4E)
 
-Permet de pousser une très grande quantité de données sur la pile. Il est suivi de quatre octets (petit-boutistes) qui indiquent la longueur des données à pousser (jusqu'à 4 294 967 295 octets). Cet opcode est utilisé pour insérer de très grandes données dans les scripts, bien que son usage soit extrêmement rare en raison des limitations pratiques de la taille des transactions.
+Permet de pousser une très grande quantité de données sur la pile. Il est suivi de quatre octets (petit-boutistes) qui indiquent la longueur des données à pousser (jusqu'à environ 4,3 Go). Cet opcode est utilisé pour insérer de très grandes données dans les scripts, bien que son usage soit extrêmement rare en raison des limitations pratiques de la taille des transactions.
 
 ## OP_RETURN (0X6A)
 
@@ -4528,7 +4542,7 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 
 ## OP_ROLL (0X7A)
 
-Déplace un élément de la pile et en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_ROLL` va sélectionner le quatrième élément de la pile en partant du sommet, et il va déplacer cette valeur au sommet. `OP_ROLL` joue le même rôle que `OP_PICK`, mis à part qu'il retire l'élément de sa position initiale.
+Déplace un élément de la pile en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_ROLL` va sélectionner le quatrième élément de la pile en partant du sommet, et il va déplacer cette valeur au sommet. `OP_ROLL` joue le même rôle que `OP_PICK`, mis à part qu'il retire l'élément de sa position initiale.
 
 ## OP_ROT (0X7B)
 
@@ -4554,7 +4568,11 @@ Soustrait les deux éléments au sommet de la pile. Il prend les deux valeurs en
 
 ## OP_SUCCESS
 
-Les `OP_SUCCESS` représentent une série d'opcodes qui ont été désactivés par le passé et qui sont dorénavant réservés pour une utilisation future dans Tapscript. Leur but final est de faciliter des mises à jour et des extensions du langage script, en permettant l'introduction de nouvelles fonctionnalités via des soft forks. Lorsqu'un de ces opcodes est rencontré dans un script, il indique un succès automatique de cette partie du script, peu importe les données ou les conditions présentes. Cela signifie que le script continue son exécution sans échec, indépendamment des opérations précédentes. Ainsi, lorsque l'on ajoute un nouvel opcode sur un `OP_SUCCESS`, cela représente forcément l'ajout d'une règle plus restrictive que la règle précédente. Les nœuds à jour peuvent alors vérifier le respect de cette règle et les nœuds pas à jour ne refuseront pas les transactions associées et les blocs qui les incluent, car l'`OP_SUCCESS` valide cette partie du script. Il n'y a donc pas de hard fork. En comparaison, les `OP_NOP` (*No Operation*) servent également de marqueurs de place dans le script, mais ils n'ont aucun effet sur l'exécution du script. Lorsqu'un `OP_NOP` est rencontré, le script continue simplement sans modifier l'état de la pile ou le déroulement du script. La différence clé est donc dans leur impact sur l'exécution : `OP_SUCCESS` garantit un passage réussi à travers cette portion du script, tandis que `OP_NOP` est neutre, n'affectant ni la pile ni le flux du script. Ces opcodes sont désignés par `OP_SUCCESSN` où `N` est un numéro permettant de différencier les `OP_SUCCESS`.
+Les `OP_SUCCESS` représentent une série d'opcodes qui ont été désactivés par le passé et qui sont dorénavant réservés pour une utilisation future dans Tapscript. Leur but final est de faciliter des mises à jour et des extensions du langage script, en permettant l'introduction de nouvelles fonctionnalités via des soft forks. Lorsqu'un de ces opcodes est rencontré dans un script, il indique un succès automatique de cette partie du script, peu importe les données ou les conditions présentes. Cela signifie que le script continue son exécution sans échec, indépendamment des opérations précédentes. 
+
+Ainsi, lorsque l'on ajoute un nouvel opcode sur un `OP_SUCCESS`, cela représente forcément l'ajout d'une règle plus restrictive que la règle précédente. Les nœuds à jour peuvent alors vérifier le respect de cette règle et les nœuds pas à jour ne refuseront pas les transactions associées et les blocs qui les incluent, car l'`OP_SUCCESS` valide cette partie du script. Il n'y a donc pas de hard fork. 
+
+En comparaison, les `OP_NOP` (*No Operation*) servent également de marqueurs de place dans le script, mais ils n'ont aucun effet sur l'exécution du script. Lorsqu'un `OP_NOP` est rencontré, le script continue simplement sans modifier l'état de la pile ou le déroulement du script. La différence clé est donc dans leur impact sur l'exécution : `OP_SUCCESS` garantit un passage réussi à travers cette portion du script, tandis que `OP_NOP` est neutre, et n'affecte ni la pile ni le flux du script. Ces opcodes sont désignés par `OP_SUCCESSN` où `N` est un numéro permettant de différencier les `OP_SUCCESS`.
 
 ## OP_SWAP (0X7C)
 
@@ -4562,7 +4580,7 @@ Les `OP_SUCCESS` représentent une série d'opcodes qui ont été désactivés p
 
 ## OP_TOALTSTACK (0X6B)
 
-Prend le sommet de la pile principale (main stack) et le déplace vers la pile alternative (alt stack). Cet opcode permet de stocker temporairement des données à part pour une utilisation ultérieure dans le script. L'élément déplacé est donc supprimé de la pile principale. On utilisera ensuite `OP_FROMALTSTACK` pour le remettre au sommet de la pile principale.
+Prend le sommet de la pile principale (*main stack*) et le déplace vers la pile alternative (*alt stack*). Cet opcode permet de stocker temporairement des données à part pour une utilisation ultérieure dans le script. L'élément déplacé est donc supprimé de la pile principale. On utilisera ensuite `OP_FROMALTSTACK` pour le remettre au sommet de la pile principale.
 
 ## OP_TRUE (0X51)
 
@@ -4572,11 +4590,28 @@ Identique à OP_1.
 
 ## OP_TUCK (0X7D)
 
-Copie l'élément situé au sommet de la pile et l'insère entre le deuxième élément et le troisième élément de la pile. Par exemple, si la pile est `D C B A`, `OP_TUCK` va dupliquer le sommet `A` et le placer en troisième position. La pile en sortie sera : `D C A B A`.
+Copie l'élément situé au sommet de la pile et l'insère entre le deuxième élément et le troisième élément de la pile. Par exemple, si la pile est :
+
+\begin{codeblock}
+A
+B
+C
+D
+\end{codeblock}
+
+`OP_TUCK` va dupliquer le sommet `A` et le placer en troisième position. La pile en sortie sera :
+
+\begin{codeblock}
+A
+B
+A
+C
+D
+\end{codeblock}
 
 ## OP_VER (0X62)
 
-Permettait de pousser la version du client sur la pile. Cet opcode a été désactivé car s'il avait été utilisé, chaque mise à jour aurait conduit à un hard fork. Le BIP342 a modifié cet opcode en `OP_SUCCESS`.
+Permettait de pousser la version du client sur la pile. Cet opcode a été désactivé, car s'il avait été utilisé, chaque mise à jour aurait conduit à un hard fork. Le BIP342 a modifié cet opcode en `OP_SUCCESS`.
 
 ## OP_VERIFY (0X69)
 
@@ -4584,17 +4619,17 @@ Exige que la valeur du sommet de la pile soit non nulle (vraie). La transaction 
 
 ## OP_WITHIN (0XA5)
 
-Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle défini par les deuxième et troisième éléments supérieurs. Autrement dit, `OP_WITHIN` vérifie si le premier élément est supérieur ou égal au deuxième et inférieur au troisième. Si cette condition est vraie, il pousse `1` (`vrai`) sur la pile, sinon, il pousse `0` (`faux`).
+Vérifie si le premier élément en haut de la pile se trouve dans l'intervalle défini par les deuxième et troisième éléments supérieurs. Autrement dit, `OP_WITHIN` vérifie si le premier élément est supérieur ou égal au deuxième et inférieur au troisième. Si cette condition est vraie, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
 
 ## OPCODES
 
-Ensemble des commandes utilisées dans le système script de Bitcoin. Script est un langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Les instructions utilisées en langage script sont appelées « OPcodes ». Ce sont des opérateurs logiques et des commandes pour manipuler les piles (stacks). Ces instructions spécifiques sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
+Ensemble des commandes utilisées dans le système script de Bitcoin. Script est un langage de programmation à pile utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Les instructions utilisées en langage script sont appelées « opcodes ». Ce sont des opérateurs logiques et des commandes pour manipuler les piles (*stacks*). Ces instructions spécifiques sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
 
-> ► *« OPcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « OPcode » dans le langage courant. Pour plus d'informations, voir les définitions de **[PILE (STACK)](#pile-stack)** et **[SCRIPT](#script)**.*
+> ► *« Opcode » peut être traduit en français par « code opératoire ». Dans la pratique, on utilise directement le terme « opcode » dans le langage courant. Pour plus d'informations, voir les définitions de **[PILE (STACK)](#pile-stack)** et **[SCRIPT](#script)**.*
 
 ## OPEN ASSETS PROTOCOL (OAP)
 
-Le Protocole Open Assets (OAP), conçu par Flavien Charlon en 2013, représente la première mise en œuvre fonctionnelle des Colored Coins. Ce protocole permettait de stocker et de transférer des actifs non natifs sur la blockchain Bitcoin, sous la forme de tokens dénommés « Colored Coins ». Ces derniers sont marqués spécifiquement pour symboliser une promesse, qu'elle soit formelle ou informelle, d'échange contre des biens ou services réels.
+Le Protocole Open Assets (OAP), conçu par Flavien Charlon en 2013, représente la première mise en œuvre fonctionnelle des Colored Coins. Ce protocole permettait de stocker et de transférer des actifs non natifs sur la blockchain Bitcoin, sous la forme de tokens dénommés « Colored Coins ». Ces derniers sont marqués spécifiquement pour symboliser une promesse, qu'elle soit formelle ou informelle, d'échange contre des biens ou des services réels.
 
 ## ORACLE
 
@@ -4610,13 +4645,15 @@ Dans le cadre du protocole Ordinals, c'est un identifiant unique attribué à ch
 
 ## ORDINALS THEORY
 
-Protocole externe à Bitcoin qui attribue des numéros de série aux sats (la plus petite unité de bitcoin), qui permettent de les tracer de manière individuelle et de les transférer via des transactions Bitcoin. Selon la théorie des Ordinals, chaque sat est numéroté selon l'ordre dans lequel il a été miné et est transféré de manière FIFO (*First-In-First-Out*). L'objectif de cette théorie est de rendre des sats non fongibles selon leur interprétation au sein du protocole Ordinals, afin de leur associer des informations externes comme des images (NFT) que l'on appelle des "inscriptions".
+Protocole externe à Bitcoin qui attribue des numéros de série aux sats (la plus petite unité de bitcoin), qui permettent de les tracer de manière individuelle et de les transférer via des transactions Bitcoin. Selon la théorie des Ordinals, chaque sat est numéroté selon l'ordre dans lequel il a été miné et est transféré de manière FIFO (*First-In-First-Out*). L'objectif de cette théorie est de rendre des sats non fongibles selon leur interprétation au sein du protocole Ordinals, afin de leur associer des informations externes comme des images (NFT) que l'on appelle des « inscriptions ».
 
 > ► *En français, on peut traduire ce terme par « Théorie des Ordinals ». Pour plus d'informations, voir les définitions de **[INSCRIPTIONS](#inscriptions)** et de **[DIGITAL ARTIFACTS](#digital-artifacts)**.*
 
 ## ORPHELIN
 
-Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin. Cependant, dans l'usage courant, l'expression « bloc orphelin » fait souvent référence à un bloc sans enfant : un bloc valide mais non retenu dans la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Le réseau finit par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « orphelin ».
+Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin.
+
+Cependant, dans l'usage courant, l'expression « bloc orphelin » fait souvent référence à un bloc sans enfant : un bloc valide mais non retenu dans la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de travail accumulé, rendant l'autre « orphelin ».
 
 ![](../../dictionnaire/assets/9.png)
 
@@ -4624,13 +4661,15 @@ Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un n�
 
 ## OSINT
 
-Acronyme de « *Open Source Intelligence* ». L'OSINT désigne la collecte et l'analyse d'informations disponibles publiquement à partir de sources accessibles à tous. Ces sources peuvent inclure des sites web, des forums, des réseaux sociaux, des bases de données publiques, des publications académiques, des documents gouvernementaux, etc... L'objectif principal de l'OSINT est de transformer des données brutes en informations exploitables, en identifiant des tendances, des corrélations, et des pistes d'investigation. Dans le cadre de Bitcoin, l'OSINT peut être utilisée dans le but d'appuyer une analyse de chaîne pour tracer des fonds, notamment afin d'identifier un point d'entrée, c'est-à-dire un lien entre une activité on-chain et une forme d'identité appartenant à une entité réelle. Par exemple, si vous publiez votre adresse de réception sur Twitter sous votre nom, un analyste pourrait la retrouver et l'associer à votre identité.
+Acronyme de « *Open Source Intelligence* ». L'OSINT désigne la collecte et l'analyse d'informations disponibles publiquement à partir de sources accessibles à tous. Ces sources peuvent inclure des sites web, des forums, des réseaux sociaux, des bases de données publiques, des publications académiques, des documents gouvernementaux, etc... L'objectif principal de l'OSINT est de transformer des données brutes en informations exploitables, en identifiant des tendances, des corrélations, et des pistes d'investigation.
+
+Dans le cadre de Bitcoin, l'OSINT peut être utilisée dans le but d'appuyer une analyse de chaîne pour tracer des fonds, notamment afin d'identifier un point d'entrée, c'est-à-dire un lien entre une activité on-chain et une forme d'identité appartenant à une entité réelle. Par exemple, si vous publiez votre adresse de réception sur Twitter sous votre nom, un analyste pourrait la retrouver et l'associer à votre identité.
 
 ![](../../dictionnaire/assets/28.png)
 
 ## OU EXCLUSIF
 
-Fonction fondamentale de la logique booléenne. Le « Ou exclusif » ou XOR (« Exclusive or ») prend deux opérandes booléens, chacun étant `vrai` ou `faux`, et produit une sortie `vraie` uniquement lorsque les deux opérandes diffèrent. Autrement dit, la sortie de l'opération `XOR` est `vraie` si exactement un (mais pas les deux) des opérandes est `vrai`. Par exemple, l'opération `XOR` entre `1` et `0` donnera comme résultat `1`. Nous noterons : $1 \oplus 0 = 1$. De même, l'opération `XOR` peut être effectuée sur des séquences plus longues de bits. Par exemple, $10110 \oplus 01110 = 11000$. Chaque bit de la séquence est comparé à son homologue et l'opération `XOR` est appliquée. Voici la table de vérité de l'opération `XOR` :
+Fonction fondamentale de la logique booléenne. Le « Ou exclusif » ou XOR (« *Exclusive or* ») prend deux opérandes booléens, chacun étant vrai ou faux, et produit une sortie vraie uniquement lorsque les deux opérandes diffèrent. Autrement dit, la sortie de l'opération `XOR` est vraie si exactement un (mais pas les deux) des opérandes est vrai. Par exemple, l'opération `XOR` entre `1` et `0` donnera comme résultat `1`. Nous noterons : $1 \oplus 0 = 1$. De même, l'opération `XOR` peut être effectuée sur des séquences plus longues de bits. Par exemple, $10110 \oplus 01110 = 11000$. Chaque bit de la séquence est comparé à son homologue et l'opération `XOR` est appliquée. Voici la table de vérité de l'opération `XOR` :
 
 <div align="center">
 
@@ -4653,11 +4692,13 @@ L'opération `XOR` est utilisée dans de nombreux domaines de l'informatique, no
   \item Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
 \end{itemize}
 
-Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreux endroits. Par exemple, le `XOR` est massivement utilisé dans la fonction `SHA256`, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission. Dans le domaine plus général de la cryptographie, le `XOR` peut être utilisé tel quel comme un algorithme de chiffrement symétrique. On appelle cet algorithme le « Masque Jetable » ou le « Chiffre Vernam » du nom de son inventeur. Cet algorithme, bien qu'inutile en pratique du fait de la longueur de la clé, est un des seuls algorithmes de chiffrement reconnus comme inconditionnellement sûrs.
+Dans le cadre de Bitcoin, on utilise évidement l'opération `XOR` à de nombreux endroits. Par exemple, le `XOR` est massivement utilisé dans la fonction `SHA256`, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission. 
+
+Dans le domaine plus général de la cryptographie, le `XOR` peut être utilisé tel quel comme un algorithme de chiffrement symétrique. On appelle cet algorithme le « Masque Jetable » ou le « Chiffre Vernam » du nom de son inventeur. Cet algorithme, bien qu'inutile en pratique du fait de la longueur de la clé, est un des seuls algorithmes de chiffrement reconnus comme inconditionnellement sûrs.
 
 ## OUTBOUND CAPACITY
 
-Désigne la quantité maximale de bitcoins qu'un nœud peut envoyer à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud a engagés dans le canal lors de son ouverture, ou qu'il a reçus lors d'un paiement Lightning.
+Désigne la quantité maximale de bitcoins qu'un nœud peut envoyer à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud a engagés dans le canal lors de son ouverture, ou qu'il a reçus lors d'un paiement Lightning ou d'un routage.
 
 > ► *En français, on peut le traduire par « capacité sortante ».*
 
@@ -4673,23 +4714,33 @@ Référence unique à une sortie de transaction non dépensé (UTXO). Il est con
 : l'index de l'output dans la transaction.
 \end{itemize}
 
-La combinaison de ces deux éléments permet d'identifier précisément un UTXO. Par exemple, si une transaction a un "txid" de `abc123` et que l'index de l'output est `0`, l'outpoint sera noté comme `abc123:0`. L'outpoint est utilisé dans les inputs ("vin") d'une nouvelle transaction pour indiquer quel UTXO est dépensé.
+La combinaison de ces deux éléments permet d'identifier précisément un UTXO. Par exemple, si une transaction a un `txid` de `abc...123` et que l'index de l'output est `0`, l'outpoint sera noté :
+
+\begin{codeblock}
+abc...123:0
+\end{codeblock}
+
+L'outpoint est utilisé dans les inputs (`vin`) d'une nouvelle transaction pour indiquer quel UTXO est dépensé.
 
 > ► *Le terme « outpoint » est souvent utilisé comme synonyme de « UTXO ».*
 
 ## OUTPUT
 
-Traduction anglaise de « sortie ». Dans le contexte de Bitcoin, une « sortie » au sein d’une transaction fait référence aux _Unspent Transaction Outputs_ (UTXO) qui sont créés comme fonds de destination pour le paiement. Plus précisément, il s'agit d'un mécanisme par lequel une transaction distribue des fonds. Une transaction prend des UTXO, c’est-à-dire des morceaux de bitcoins, comme « inputs » (entrées) et crée de nouveaux UTXO comme « outputs » (sorties). Ces outputs stipulent une certaine quantité de bitcoins, souvent attribués à une adresse spécifique, ainsi que les conditions sous lesquelles ces fonds peuvent être dépensés ultérieurement. Le rôle de la transaction Bitcoin est donc de consommer des UTXO en entrées, et de créer des nouveaux UTXO en sorties. La différence entre les deux correspond aux frais de transactions qui peuvent être récupérés par le mineur gagnant du bloc. Un UTXO est, en essence, la sortie d'une transaction précédente qui n'a pas encore été dépensée. Les outputs de transaction sont donc les créations de nouveaux UTXO qui seront, à leur tour, potentiellement utilisés comme inputs dans les transactions futures. D'un point de vue plus large, en informatique, le terme « output » ou « sortie » désigne généralement les données en résultat d’une fonction, d’un algorithme, ou d’un système. Par exemple, lorsque l’on passe une donnée dans une fonction de hachage cryptographique, cette information est nommée « entrée » ou « input », et le résultat est nommé « sortie » ou « output ».
+Traduction anglaise de « sortie ». Dans le contexte de Bitcoin, un output au sein d’une transaction fait référence aux _Unspent Transaction Outputs_ (UTXOs) qui sont créés comme fonds de destination pour le paiement. Plus précisément, il s'agit d'un mécanisme par lequel une transaction distribue des fonds. Une transaction prend des UTXOs, c’est-à-dire des morceaux de bitcoins, comme « inputs » (entrées) et crée de nouveaux UTXOs comme « outputs » (sorties). Ces outputs stipulent une certaine quantité de bitcoins, souvent attribués à une adresse spécifique, ainsi que les conditions sous lesquelles ces fonds peuvent être dépensés ultérieurement.
+
+Le rôle de la transaction Bitcoin est donc de consommer des UTXOs en entrées, et de créer des nouveaux UTXOs en sorties. La différence entre les deux correspond aux frais de transactions qui peuvent être récupérés par le mineur gagnant du bloc. Un UTXO est, en essence, la sortie d'une transaction précédente qui n'a pas encore été dépensée. Les outputs de transaction sont donc les créations de nouveaux UTXOs qui seront, à leur tour, potentiellement utilisés comme inputs dans les transactions futures.
+
+D'un point de vue plus large, en informatique, le terme « output » désigne généralement les données en résultat d’une fonction, d’un algorithme, ou d’un système. Par exemple, lorsque l’on passe une donnée dans une fonction de hachage cryptographique, cette information est nommée « input », et le résultat est nommé « output ».
 
 ## OUTPUT LINKING
 
-Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output linking se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXO, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut raisonnablement imaginer que tous les UTXO associés appartiennent à une même entité. La réutilisation d'adresse pause donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXO, ainsi que de perpétuer un traçage de fonds on-chain.
+Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output linking se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXOs, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut imaginer que tous les UTXOs associés appartiennent à une même entité. La réutilisation d'adresse pause donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXOs, ainsi que de perpétuer un traçage de fonds on-chain.
 
-> ► *Pour plus d'informations, voir la définition de [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse).*
+> ► *Pour plus d'informations, voir la définition de [**RÉUTILISATION D'ADRESSE**](#réutilisation-dadresse).*
 
 ## OUTPUT SCRIPT DESCRIPTORS
 
-Les output script descriptors, ou simplement descriptors, sont des expressions structurées qui décrivent intégralement un script de sortie (scriptPubKey) et fournissent toutes les informations nécessaires pour suivre les transactions vers ou depuis un script particulier. Ces descriptors facilitent la gestion des clés dans les portefeuilles HD grâce à une description standard de la structure et des types d'adresses utilisés.
+Les output script descriptors, ou simplement descriptors, sont des expressions structurées qui décrivent intégralement un script de sortie (*scriptPubKey*) et fournissent toutes les informations nécessaires pour suivre les transactions vers ou depuis un script particulier. Ces descriptors facilitent la gestion des clés dans les portefeuilles HD grâce à une description standard de la structure et des types d'adresses utilisés.
 
 L'intérêt principal des descriptors réside dans leur capacité à encapsuler toutes les informations essentielles à la restauration d'un portefeuille dans une unique chaîne de caractères (en plus de la phrase de récupération). En sauvegardant un descriptor avec les phrases mnémonique correspondantes, il est possible de restaurer non seulement les clés privées, mais aussi la structure précise du portefeuille et les paramètres de script associés. En effet, la récupération d’un portefeuille requiert non seulement la connaissance de la graine initiale, mais aussi des index spécifiques pour la dérivation des paires de clés enfants, ainsi que des `xpub` de chaque facteur dans le cadre d'un portefeuille multisig. Autrefois, on présumait que ces informations étaient implicitement sues de tous. Cependant, avec la diversification des scripts et l'émergence de configurations plus complexes, ces informations pourraient devenir difficiles à extrapoler, transformant ainsi ces données en informations privées et difficilement bruteforçables. L'utilisation de descriptors simplifie grandement le processus : il suffit de connaître la ou les phrases de récupération et le descriptor correspondant pour tout restaurer de façon fiable et sécurisée.
 
@@ -4724,8 +4775,9 @@ qui indique un chemin dérivé et une empreinte de clé maîtresse spécifique ;
 Par exemple, un descriptor pour un portefeuille P2WPKH pourrait ressembler à :
 
 \begin{codeblock}
-wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt
-7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U/<0;1>/*)#jy0l7nr4
+wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17
+C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U/<0;1>/*)#jy0l7n
+r4
 \end{codeblock}
 
 Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script Pay-to-Witness-Public-Key-Hash. Elle est suivie par le chemin de dérivation qui contient :
@@ -4747,8 +4799,8 @@ Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script 
 Le descriptor inclut également la clé publique étendue utilisée sur ce portefeuille : 
 
 \begin{codeblock}
-xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2
-mK1rMsJKhtRUPZz7MQtp3y6atC1U
+xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6
+cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U
 \end{codeblock}
 
 Ensuite, la notation `/<0;1>/*` spécifie que le descriptor peut générer des adresses à partir de la chaîne externe (`0`) et interne (`1`), avec un wildcard (`*`) permettant la dérivation séquentielle de plusieurs adresses de manière paramétrable, similaire à la gestion d'un « gap limit » sur des logiciels de portefeuille classiques.
