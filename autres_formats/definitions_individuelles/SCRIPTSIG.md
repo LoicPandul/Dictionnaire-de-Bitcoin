@@ -4,5 +4,5 @@
 
 ![](../../dictionnaire/assets/35.png)
 
-> ► *Le scriptSig est également parfois nommé « unlocking script » ou « script de déverrouillage » en français.*
+> ► *Le `scriptSig` est également parfois nommé « unlocking script » ou « script de déverrouillage » en français.*
 
