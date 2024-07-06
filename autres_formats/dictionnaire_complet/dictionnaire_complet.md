@@ -2847,14 +2847,14 @@ Erreur de logique où une boucle itère une fois de trop ou de moins, souvent du
 
 ## OBSOLÈTE
 
-Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de quantité de travail accumulé, rendant l'autre « obsolète ». Le processus menant à la production d'un bloc obsolète est le suivant :
+Fait référence à un bloc sans enfant : un bloc valide mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de travail accumulé, rendant l'autre « obsolète ». Le processus menant à la production d'un bloc obsolète est le suivant :
 * Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons les `Bloc A` et `Bloc B` ;
 * Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;
 * Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le `Bloc A` et le `Bloc B` au-dessus duquel ils vont miner ;
 * Un mineur trouve finalement un bloc valide au-dessus du `Bloc B`. Appelons le `Bloc B+1` ;
 * Il diffuse `Bloc B+1` aux nœuds du réseau ;
-* Puisque les nœuds suivent la chaîne la plus longue (avec le plus de quantité de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
-* Ils vont donc abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
+* Puisque les nœuds suivent la chaîne la plus longue (avec le plus de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
+* Ils vont abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
 
 ![](../../dictionnaire/assets/9.png)
 
@@ -2866,11 +2866,11 @@ Unité de mesure de données informatiques équivalant à 8 bits. Chaque bit est
 
 ## OFF-CHAIN
 
-Fait référence aux transactions ou activités plus ou moins liées à Bitcoin qui se produisent en dehors de la blockchain principale, mais qui disposent d'un lien ou d'un ancrage avec celle-ci. Elles ne sont pas immédiatement enregistrées sur la blockchain, mais nécessitent des mécanismes supplémentaires pour assurer leur sécurité et leur finalité. Ces opérations se justifient souvent par un désir d'outre-passer les limitations techniques inhérentes à Bitcoin afin de disposer de transactions à finalité rapide, à bas frais, avec plus de capacité ou de fonctionnalités.
+Fait référence aux transactions ou activités plus ou moins liées à Bitcoin qui se produisent en dehors de la blockchain principale, mais qui disposent d'un lien ou d'un ancrage avec celle-ci. Elles ne sont pas immédiatement enregistrées sur la blockchain, mais nécessitent des mécanismes supplémentaires pour assurer leur sécurité et leur finalité. Ces opérations se justifient souvent par un désir d'outre-passer les limitations techniques inhérentes à Bitcoin, afin de disposer de transactions à finalité rapide, à bas frais, avec plus de capacité ou de fonctionnalités.
 
 ## ON-CHAIN
 
-Désigne les transactions enregistrées directement sur la blockchain Bitcoin. Ce terme s'oppose à « off-chain » qui désigne des opérations ayant un rapport plus ou moins prononcé avec la blockchain Bitcoin, mais qui se déroulent en dehors de la blockchain principale.
+Désigne les transactions enregistrées directement sur la blockchain Bitcoin. Ce terme s'oppose à « off-chain » qui désigne des opérations qui sont plus ou moins liées avec la blockchain Bitcoin, mais qui se déroulent en dehors de la blockchain principale.
 
 ## ONION_PRIVATE_KEY
 
@@ -2882,9 +2882,9 @@ Fichier utilisé dans Bitcoin Core pour stocker une clé privée associée à un
 
 ## OP_0 (0X00)
 
-Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. OP_0 est également utilisé pour initialiser les scripts.
+Pousse la valeur 0 sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `faux` dans les scripts. `OP_0` est également utilisé pour initialiser les scripts.
 
-> ► *OP_0 est identique à **[OP_FALSE](#op_false-0x00)** et **OP_PUSHNUM_0**.*
+> ► *OP_0 est identique à **[OP_FALSE](#op_false-0x00)** et OP_PUSHNUM_0.*
 
 ## OP_0NOTEQUAL (0X92)
 
@@ -2894,7 +2894,7 @@ Vérifie si l'élément au sommet de la pile est différent de zéro. Si l'élé
 
 Pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne `vrai` dans les scripts.
 
-> ► *OP_1 est identique à **[OP_TRUE](#op_true-0x51)** et **OP_PUSHNUM_1**.*
+> ► *OP_1 est identique à **[OP_TRUE](#op_true-0x51)** et OP_PUSHNUM_1.*
 
 ## OP_1ADD (0X8B)
 
@@ -2910,9 +2910,13 @@ Soustrait `1` à la valeur en haut de la pile.
 
 ## OP_2 À OP_16 (0X52 À 0X60)
 
-Les opcodes de OP_2 jusqu'à OP_16 poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `ScriptPubKey` pour un multisig 2/3 : `OP_2 Clé publique A Clé publique B Clé publique C OP_3 OP_CHECKMULTISIG`
+Les opcodes de `OP_2` jusqu'à `OP_16` poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `ScriptPubKey` pour un multisig 2/3 : 
 
-> ► *Tous ces opcodes sont parfois également nommés **OP_PUSHNUM_N**.*
+```text
+OP_2 <Clé publique A> <Clé publique B> <Clé publique C> OP_3 OP_CHECKMULTISIG
+```
+
+> ► *Tous ces opcodes sont parfois également nommés OP_PUSHNUM_N.*
 
 ## OP_2DROP (0XD6)
 
@@ -2920,23 +2924,114 @@ Supprime les deux éléments en haut de la pile. Autrement dit, `OP_2DROP` suppr
 
 ## OP_2DUP (0X6E)
 
-Duplique les deux éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_2DUP` produira : `D C B A B A`.
+Duplique les deux éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est :
+
+```text
+A
+B
+C
+D
+```
+
+`OP_2DUP` produira : 
+
+```text
+A
+B
+A
+B
+C
+D
+```
 
 ## OP_2OVER (0X70)
 
-Copie les deux éléments qui se trouvent à la quatrième et à la troisième place en partant du haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_2OVER` produira : `D C B A D C`.
+Copie les deux éléments qui se trouvent à la quatrième et à la troisième place en partant du haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est :
+
+```text
+A
+B
+C
+D
+```
+
+`OP_2OVER` produira :
+
+```text
+C
+D
+A
+B
+C
+D
+```
 
 ## OP_2ROT (0X71)
 
-Déplace les deux éléments qui se trouvent à la sixième et à la cinquième place du sommet de la pile vers le sommet. Par exemple, si la pile est `F E D C B A`, `OP_2ROT` produira : `D C B A F E`.
+Déplace les deux éléments qui se trouvent à la sixième et à la cinquième place du sommet de la pile vers le sommet. Par exemple, si la pile est :
+
+```text
+A
+B
+C
+D
+E
+F
+```
+
+`OP_2ROT` produira :
+
+```text
+E
+F
+A
+B
+C
+D
+```
 
 ## OP_2SWAP (0X72)
 
-Échange les deux éléments situés au sommet de la pile avec les deux éléments situés juste en dessous d'eux. Par exemple, si la pile est `D C B A`, `OP_2SWAP` produira : `B A D C`.
+Échange les deux éléments situés au sommet de la pile avec les deux éléments situés juste en dessous d'eux. Par exemple, si la pile est :
+
+```text
+A
+B
+C
+D
+```
+
+`OP_2SWAP` produira :
+
+```text
+C
+D
+A
+B
+```
 
 ## OP_3DUP (0X6F)
 
-Duplique les trois éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est `D C B A`, `OP_3DUP` produira : `D C B A C B A`.
+Duplique les trois éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est :
+
+```text
+A
+B
+C
+D
+```
+
+`OP_3DUP` produira :
+
+```text
+A
+B
+C
+A
+B
+C
+D
+```
 
 ## OP_ABS (0X90)
 
@@ -2960,7 +3055,7 @@ Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de l
 * L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
 * La mise en place de Vaults ;
 * L'utilisation de covenants ;
-* Ou encore, l'utilisation de contrat de non équivocation.
+* Ou encore, l'utilisation de contrats de non équivocation.
 
 ## OP_CHECKHASHVERIFY (CHV)
 
@@ -2977,11 +3072,11 @@ Rend la transaction invalide sauf si toutes ces conditions sont réunies :
 
 Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHECKLOCKTIMEVERIFY` ne peut être satisfait. Si toutes ces conditions sont valides, alors `OP_CHECKLOCKTIMEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKLOCKTIMEVERIFY` impose donc une contrainte de temps sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Pour ce faire, il restreint les valeurs possibles pour le champs `nLockTime` de la transaction qui le dépense, et ce champs `nLockTime` restreint lui-même le moment où la transaction peut être incluse dans un bloc.
 
-> ► *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP2`. Il est souvent appelé par con acronyme « CLTV ». Attention, `OP_CLTV` ne doit pas être confondu avec le champs `nLockTime` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
+> ► *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP2`. Il est souvent appelé par son acronyme « CLTV ». Attention, `OP_CLTV` ne doit pas être confondu avec le champs `nLockTime` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes. Pour plus d'informations, voir la définition de **[NLOCKTIME](#nlocktime)**.*
 
 ## OP_CHECKMULTISIG (0XAE)
 
-Vérifie plusieurs signatures contre plusieurs clés publiques. Il prend en entrée une série de `N` clés publiques et `M` signatures, où `M` peut être inférieur ou égal à `N`. `OP_CHECKMULTISIG` vérifie si au moins `M` signatures correspondent à `M` des `N` clés publiques. À noter qu'en raison d'un bug off-by-one historique, un élément supplémentaire est supprimé par `OP_CHECKMULTISIG` sur la pile. Cet élément est appelé « *dummy element* ». Pour éviter une erreur dans le `ScriptSig`, on inclue donc un `OP_0` qui est un élément inutile afin de satisfaire la suppression et outrepasser le bug. Depuis le BIP147 (introduit avec SegWit en 2017), l'élément inutile consommé à cause du bug doit forcément être `0` pour que le script soit valide, car c'était un vecteur de malléabilité. Cet opcode a été supprimé dans Tapscript.
+Vérifie plusieurs signatures contre plusieurs clés publiques. Il prend en entrée une série de `N` clés publiques et `M` signatures, où `M` peut être inférieur ou égal à `N`. `OP_CHECKMULTISIG` vérifie si au moins `M` signatures correspondent à `M` des `N` clés publiques. À noter qu'en raison d'un bug off-by-one historique, un élément supplémentaire est supprimé par `OP_CHECKMULTISIG` sur la pile. Cet élément est appelé « *dummy element* ». Pour éviter une erreur dans le `ScriptSig`, on inclue donc un `OP_0` qui est un élément inutile afin de satisfaire la suppression et outrepasser le bug. Depuis le BIP147 (introduit avec SegWit en 2017), l'élément inutile consommé à cause du bug doit forcément être `OP_0` pour que le script soit valide, car c'était un vecteur de malléabilité. Cet opcode a été supprimé dans Tapscript.
 
 ## OP_CHECKMULTISIGVERIFY (0XAF)
 
@@ -2992,15 +3087,11 @@ Combine un `OP_CHECKMULTISIG` et un `OP_VERIFY`. Il prend plusieurs signatures e
 Rend la transaction invalide si une seule de ces caractéristiques est observée :
 * La pile est vide ;
 * La valeur du haut de la pile est inférieure à `0` ;
-* L'indicateur de désactivation de la valeur en haut de la pile est non défini et ;
-*- La version de la transaction est inférieure à `2` ou ;
-*- L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ;
-*- Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ;
-*- La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
+* L'indicateur de désactivation de la valeur en haut de la pile est non défini et ; La version de la transaction est inférieure à `2` ou ; L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ; Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ou ; La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.
 
 Si une ou plusieurs de ces caractéristiques est observée, le script contenant l'`OP_CHECKSEQUENCEVERIFY` ne peut être satisfait. Si toutes les conditions sont valides, alors `OP_CHECKSEQUENCEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKSEQUENCEVERIFY` impose donc une contrainte de temps relative sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'un temps réel, soit sous la forme d'un nombre de blocs. Pour ce faire, il restreint les valeurs possibles pour le champs `nSequence` de l'input qui le dépense, et ce champs `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc.
 
-> ► *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP3`. Il est souvent appelé par con acronyme « CSV ». Attention, `OP_CSV` ne doit pas être confondu avec le champs `nSequence` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes.*
+> ► *Cet opcode est un remplaçant d'`OP_NOP`. Il a été placé sur l'`OP_NOP3`. Il est souvent appelé par con acronyme « CSV ». Attention, `OP_CSV` ne doit pas être confondu avec le champs `nSequence` d'une transaction. Le premier utilise le second, mais leurs natures et leurs actions sont différentes. Pour plus d'informations, voir la définition de **[NSEQUENCE](#nsequence)**.*
 
 ## OP_CHECKSIG (0XAC)
 
