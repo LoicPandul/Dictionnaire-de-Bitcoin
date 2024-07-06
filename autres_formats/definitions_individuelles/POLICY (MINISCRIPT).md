@@ -19,10 +19,14 @@ andor(pk(B),older(52560),pk(A))
 Et une fois converti en script natif, cela donnerait :
 
 ```plaintext
-<B> OP_CHECKSIG OP_NOTIF
-	<A> OP_CHECKSIG
+<B>
+OP_CHECKSIG
+OP_NOTIF
+<A>
+OP_CHECKSIG
 OP_ELSE
-	<50cd00> OP_CHECKSEQUENCEVERIFY
+<50cd00>
+OP_CHECKSEQUENCEVERIFY
 OP_ENDIF
 ```
 
