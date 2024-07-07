@@ -635,37 +635,37 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   228 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   241 |
 | [SCALA](#scala)                |   228 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   241 |
 | [SCALABILITÉ](#scalabilité)    |   228 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   241 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   229 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   241 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   229 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   241 |
-| [SCRIPT](#script)              |   229 | [SIGNET](#signet)              |   241 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   229 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   242 |
+| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   229 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   242 |
+| [SCRIPT](#script)              |   229 | [SIGNET](#signet)              |   242 |
 | [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   229 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   242 |
 | [SCRIPTPUBKEY](#scriptpubkey)  |   230 | [SILENT PAYMENT](#silent-payment) |   243 |
 | [SCRIPTSIG](#scriptsig)        |   230 | [SILK ROAD](#silk-road)        |   244 |
 | [SCRIPTWITNESS](#scriptwitness) |   231 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   245 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   231 | [SLIP](#slip)                  |   245 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   232 | [SLIP](#slip)                  |   245 |
 | [SECP256K1](#secp256k1)        |   232 | [SMALL BLOCKERS](#small-blockers) |   245 |
-| [SECP256R1](#secp256r1)        |   232 | [SMPPS](#smpps)                |   245 |
-| [SEED (BITCOIN)](#seed-bitcoin) |   233 | [SOFT FORK](#soft-fork)        |   245 |
-| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   233 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   246 |
+| [SECP256R1](#secp256r1)        |   232 | [SMPPS](#smpps)                |   246 |
+| [SEED (BITCOIN)](#seed-bitcoin) |   233 | [SOFT FORK](#soft-fork)        |   246 |
+| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   234 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   246 |
 | [SEED NODES](#seed-nodes)      |   234 | [SOROBAN](#soroban)            |   246 |
-| [SEGWIT](#segwit)              |   234 | [SORTIE (OUTPUT)](#sortie-output) |   246 |
-| [SEGWIT2X](#segwit2x)          |   234 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   246 |
+| [SEGWIT](#segwit)              |   235 | [SORTIE (OUTPUT)](#sortie-output) |   246 |
+| [SEGWIT2X](#segwit2x)          |   235 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   247 |
 | [SEGWIT V0](#segwit-v0)        |   235 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   247 |
-| [SEGWIT V1](#segwit-v1)        |   235 | [SPEEDY TRIAL](#speedy-trial)  |   247 |
+| [SEGWIT V1](#segwit-v1)        |   235 | [SPEEDY TRIAL](#speedy-trial)  |   248 |
 | [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   235 | [SPOF](#spof)                  |   248 |
-| [SELF-CUSTODY](#self-custody)  |   235 | [SPREAD (WST)](#spread-wst)    |   248 |
-| [SELFISH MINING](#selfish-mining) |   235 | [STABLECOIN](#stablecoin)      |   248 |
-| [SETTINGS.JSON](#settings.json) |   236 | [STALE BLOCK](#stale-block)    |   248 |
-| [SHA256](#sha256)              |   236 | [STAMPS](#stamps)              |   248 |
-| [SHA512](#sha512)              |   236 | [STONEWALL](#stonewall)        |   249 |
-| [SHAREDCOIN](#sharedcoin)      |   236 | [STONEWALL X2](#stonewall-x2)  |   250 |
-| [SHARES](#shares)              |   237 | [STRATUM](#stratum)            |   251 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   238 | [STRATUM V2](#stratum-v2)      |   252 |
-| [SHITCOIN](#shitcoin)          |   238 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   252 |
+| [SELF-CUSTODY](#self-custody)  |   236 | [SPREAD (WST)](#spread-wst)    |   248 |
+| [SELFISH MINING](#selfish-mining) |   236 | [STABLECOIN](#stablecoin)      |   249 |
+| [SETTINGS.JSON](#settings.json) |   236 | [STALE BLOCK](#stale-block)    |   249 |
+| [SHA256](#sha256)              |   237 | [STAMPS](#stamps)              |   249 |
+| [SHA512](#sha512)              |   237 | [STONEWALL](#stonewall)        |   249 |
+| [SHAREDCOIN](#sharedcoin)      |   237 | [STONEWALL X2](#stonewall-x2)  |   250 |
+| [SHARES](#shares)              |   238 | [STRATUM](#stratum)            |   251 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   239 | [STRATUM V2](#stratum-v2)      |   252 |
+| [SHITCOIN](#shitcoin)          |   239 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   252 |
 | [SHOR (ALGORITHME)](#shor-algorithme) |   239 | [SURCOUCHE (LAYER)](#surcouche-layer) |   252 |
 | [SIDECHAIN](#sidechain)        |   239 | [SURFACE D'ATTAQUE](#surface-dattaque) |   252 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   239 | [SWEEP TRANSACTION](#sweep-transaction) |   253 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   239 | [SYBIL (ATTAQUE)](#sybil-attaque) |   253 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   240 | [SWEEP TRANSACTION](#sweep-transaction) |   253 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   240 | [SYBIL (ATTAQUE)](#sybil-attaque) |   253 |
 | [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   240 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   254 |
 | | | | |
 
@@ -5479,7 +5479,7 @@ Logiciel de portefeuille Bitcoin pour appareils mobiles Android axé sur la conf
 
 ## SATOSHI (SAT)
 
-Le satoshi, souvent abrégé en « sat », est la plus petite subdivision du bitcoin qui peut être enregistrée sur la blockchain. Il est nommé en l'honneur de l'inventeur de Bitcoin, Satoshi Nakamoto. Un seul Bitcoin se divise en 100 000 000 sats, ce qui signifie qu'un satoshi équivant à 0,00000001 bitcoin. En raison de sa petite valeur unitaire, le sat est souvent utilisé pour établir des prix, en particulier dans les petites transactions. Son utilisation est souvent préférée au btc sur le Lightning Network.
+Le satoshi, souvent abrégé en « sat », est la plus petite subdivision du bitcoin qui peut être enregistrée sur la blockchain. Il est nommé en l'honneur de l'inventeur de Bitcoin, Satoshi Nakamoto. Un seul Bitcoin se divise en 100 000 000 sats, ce qui signifie qu'un satoshi équivaut à 0,00000001 bitcoin. En raison de sa petite valeur unitaire, le sat est souvent utilisé pour établir des prix, en particulier dans les petites transactions. Son utilisation est souvent préférée au btc sur le Lightning Network.
 
 ## SATOSHI NAKAMOTO
 
@@ -5487,7 +5487,7 @@ Pseudonyme de la personne ou du groupe qui a créé Bitcoin et écrit son livre 
 
 ## SCALA
 
-Langage de programmation conçu pour être concis, combinant programmation fonctionnelle et orientée objet. Scala est souvent utilisé pour les applications d'entreprise, le développement de systèmes complexes et le traitement de données.
+Langage de programmation conçu pour être concis, combinant programmation fonctionnelle et orientée objet. Scala est souvent utilisé pour les applications d'entreprise, le développement de systèmes complexes et le traitement de données. Ce langage est notamment celui utilisé pour l'implémentation Eclair du Lightning Network.
 
 ## SCALABILITÉ
 
@@ -5497,7 +5497,7 @@ Fait référence à la capacité de Bitcoin à gérer une augmentation du volume
 
 ## SCHNORR (PROTOCOLE)
 
-Le protocole de Schnorr est un algorithme de signatures électroniques établi sur la cryptographie sur les courbes elliptiques (ECC). Il est utilisé sur Bitcoin pour dériver une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Sur Bitcoin, tout comme ECDSA, Schnorr est établi sur l'exploitation de la courbe elliptique `secp256k1`, caractérisée par l'équation : $y^2 = x^3 + 7$. Le protocole de signature de Schnorr est implémenté dans le protocole Bitcoin depuis Novembre 2021 avec l'activation de la mise à jour de Taproot.
+Le protocole de Schnorr est un algorithme de signatures électroniques établi sur la cryptographie sur les courbes elliptiques (ECC). Il est utilisé sur Bitcoin pour dériver une clé publique à partir d'une clé privée et pour signer une transaction avec une clé privée. Sur Bitcoin, tout comme ECDSA, Schnorr est établi sur l'exploitation de la courbe elliptique `secp256k1`, caractérisée par l'équation : $y^2 = x^3 + 7$. Le protocole de signature de Schnorr est implémenté dans le protocole Bitcoin depuis Novembre 2021 avec l'activation de la mise à jour Taproot.
 
 ## SCORE (SCORE BASED METHOD)
 
@@ -5507,17 +5507,29 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 
 ## SCRIPT
 
-Langage de programmation à piles utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Script est essentiellement une liste d'instructions, composée d'opérateurs logiques et de commandes pour manipuler les piles (stacks). Il se matérialise par l'utilisation d'OPcodes qui donnent des instructions spécifiques qui sont exécutées par les nœuds du réseau lors de l'ajout d'une transaction à la blockchain. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
+Langage de programmation à piles utilisé pour établir des conditions de dépense, et donc, indirectement, sécuriser des bitcoins. Script est essentiellement une liste d'instructions, composée d'opérateurs logiques et de commandes pour manipuler les piles (*stacks*). Il se matérialise par l'utilisation d'opcodes qui donnent des instructions spécifiques qui sont exécutées par les nœuds pour vérifier la validité d'une transaction. Script est un langage non-Turing complet. Il peut-être catégorisé comme un langage de niveau intermédiaire (presque bas niveau) inspiré du Forth.
 
 > ► *Pour plus d'informations, voir les définitions de **[PILE (STACK)](#pile-stack)** et **[OPCODES](#opcodes)**.*
 
 ## SCRIPTLESS SCRIPTS
 
-Concept initialement développé par Andrew Poelstra qui permet l'exécution de contrats intelligents sans exposer explicitement la logique du contrat sur la blockchain Bitcoin. Comme le suggère l'appellation « script sans script », l'idée repose sur l'exécution de scripts (ou de contrats) sans recourir explicitement à des scripts. Ces contrats exploitent les propriétés des signatures de Schnorr qui permettent l'usage des Adaptors Signatures, notamment pour réaliser des Atomic Swaps. Les conditions du contrat sont appliquées et exécutées off-chain par les parties impliquées, qui sont les seules à en connaître les termes. Contrairement aux contrats intelligents classiques, les Scriptless Scripts minimisent leur empreinte sur la blockchain, réduisant ainsi le coût de l'opération. Ces contrats sont aussi plus discrets que les contrats intelligents classiques, qui laissent des traces sur la blockchain. Ils ressemblent donc à des transactions ordinaires, ce qui accroît leur potentiel d'anonymat.
+Concept initialement développé par Andrew Poelstra qui permet l'exécution de contrats intelligents sans exposer explicitement la logique du contrat sur la blockchain Bitcoin. Comme le suggère l'appellation « script sans script », l'idée repose sur l'exécution de scripts (ou de contrats) sans recourir explicitement à des scripts. Ces contrats exploitent les propriétés des signatures de Schnorr qui permettent l'usage des *Adaptors Signatures*, notamment pour réaliser des *Atomic Swaps*. Les conditions du contrat sont appliquées et exécutées off-chain par les parties impliquées, qui sont les seules à en connaître les termes. Contrairement aux contrats intelligents classiques, les *Scriptless Scripts* minimisent leur empreinte sur la blockchain, réduisant ainsi le coût de l'opération. Ces contrats sont aussi plus discrets que les contrats intelligents classiques, qui laissent des traces sur la blockchain. Ils ressemblent donc à des transactions ordinaires, ce qui accroît leur anonset.
 
 ## SCRIPTPUBKEY
 
-Script situé dans la partie sortie (output) d'une transaction Bitcoin qui définit les conditions sous lesquelles l'UTXO associé peut être dépensé. Ce script permet donc de sécuriser des bitcoins. Dans sa forme la plus courante, le `scriptPubKey` contient une condition qui exige que la prochaine transaction fournisse une preuve de possession de la clé privée correspondant à une adresse Bitcoin spécifiée. C'est souvent réalisé par un script qui demande une signature correspondant à la clé publique associée à l'adresse utilisée pour sécuriser ces fonds. Lorsqu'une transaction tente d'utiliser cet UTXO en entrée (input), elle doit fournir un `scriptSig` qui, une fois associé avec le `scriptPubKey`, satisfait les conditions posées et produit un script valide. Cela implique généralement de prouver la possession de la clé privée associée grâce à une signature. Par exemple, voici un `scriptPubKey` P2PKH classique : `OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG`. Le `scriptSig` correspondant serait : `<signature> <clé publique>`.
+Script situé dans la partie sortie (output) d'une transaction Bitcoin qui définit les conditions sous lesquelles l'UTXO associé peut être dépensé. Ce script permet donc de sécuriser des bitcoins. Dans sa forme la plus courante, le `scriptPubKey` contient une condition qui exige que la prochaine transaction fournisse une preuve de possession de la clé privée correspondant à une adresse Bitcoin spécifiée. C'est souvent réalisé par un script qui demande une signature correspondant à la clé publique associée à l'adresse utilisée pour sécuriser ces fonds. Lorsqu'une transaction tente d'utiliser cet UTXO en entrée (input), elle doit fournir un `scriptSig` qui, une fois associé avec le `scriptPubKey`, satisfait les conditions posées et produit un script valide. 
+
+Par exemple, voici un `scriptPubKey` P2PKH classique :
+
+\begin{codeblock}
+OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG
+\end{codeblock}
+
+Le `scriptSig` correspondant serait :
+
+\begin{codeblock}
+<signature> <clé publique>
+\end{codeblock}
 
 ![](../../dictionnaire/assets/35.png)
 
@@ -5525,7 +5537,21 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 
 ## SCRIPTSIG
 
-Élément dans une transaction Bitcoin, situé dans les entrées (input). Le `scriptSig` fournit les données nécessaires pour satisfaire les conditions posées par le `scriptPubKey` de la transaction précédente dont les fonds sont dépensés. Il joue donc un rôle complémentaire au `scriptPubKey`. Typiquement, le `scriptSig` contient une signature numérique et une clé publique. La signature est générée par le propriétaire des bitcoins à l'aide de sa clé privée et prouve qu'il a l'autorisation de dépenser l'UTXO. Dans ce cas, le `scriptSig` démontre que le détenteur de l'input possède la clé privée correspondant à la clé publique associée à l'adresse spécifiée dans le `scriptPubKey` de la transaction sortante précédente. Lorsque la transaction est vérifiée, les données du `scriptSig` sont exécutées dans le `scriptPubKey` correspondant. Si le résultat est valide, cela signifie que les conditions de dépense des fonds ont été remplies. Si toutes les entrées de la transaction fournissent un `scriptSig` qui valide leur `scriptPubKey`, la transaction est valide et pourra être ajoutée à un bloc pour son exécution. Par exemple, voici un `scriptSig` P2PKH classique : `<signature> <clé publique>`. Le `scriptPubKey` correspondant serait : `OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG`.
+Élément dans une transaction Bitcoin situé dans les inputs. Le `scriptSig` fournit les données nécessaires pour satisfaire les conditions posées par le `scriptPubKey` de la transaction précédente dont les fonds sont dépensés. Il joue donc un rôle complémentaire au `scriptPubKey`. Typiquement, le `scriptSig` contient une signature numérique et une clé publique. La signature est générée par le propriétaire des bitcoins à l'aide de sa clé privée et prouve qu'il a l'autorisation de dépenser l'UTXO. Dans ce cas, le `scriptSig` démontre que le détenteur de l'input possède la clé privée correspondant à la clé publique associée à l'adresse spécifiée dans le `scriptPubKey` de la transaction sortante précédente.
+
+Lorsque la transaction est vérifiée, les données du `scriptSig` sont exécutées dans le `scriptPubKey` correspondant. Si le résultat est valide, cela signifie que les conditions de dépense des fonds ont été remplies. Si toutes les entrées de la transaction fournissent un `scriptSig` qui valide leur `scriptPubKey`, la transaction est valide et pourra être ajoutée à un bloc pour son exécution.
+
+Par exemple, voici un `scriptSig` P2PKH classique :
+
+\begin{codeblock}
+<signature> <clé publique>
+\end{codeblock}
+
+Le `scriptPubKey` correspondant serait :
+
+\begin{codeblock}
+OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG
+\end{codeblock}
 
 ![](../../dictionnaire/assets/35.png)
 
@@ -5533,19 +5559,23 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 
 ## SCRIPTWITNESS
 
-Élément dans les entrées de transactions SegWit qui contient les signatures et les clés publiques nécessaires pour déverrouiller les bitcoins envoyés dans la transaction. Semblable au `scriptSig` des transactions Legacy, le `scriptWitness` n'est toutefois pas placé au même endroit. En effet, c'est cette partie, que l'on appelle le « témoin » (« witness » en anglais), qui est déplacée dans une base de données séparée afin de résoudre le problème de la malléabilité des transactions. Chaque input SegWit possède son propre `scriptWitness`, et tous les `scriptWitness` forment ensemble le champ `Witness` de la transaction.
+Élément dans les entrées de transactions SegWit qui contient les signatures et les clés publiques nécessaires pour déverrouiller les bitcoins envoyés dans la transaction. Semblable au `scriptSig` des transactions Legacy, le `scriptWitness` n'est toutefois pas placé au même endroit. En effet, c'est cette partie, que l'on appelle le « témoin » (« *witness* » en anglais), qui est déplacée dans une base de données séparée afin de résoudre le problème de la malléabilité des transactions. Chaque input SegWit possède son propre `scriptWitness`, et tous les `scriptWitness` forment ensemble le champ `Witness` de la transaction.
 
-> ► *Attention de ne pas confondre le `scriptWitness` avec le `witnessScript`. Tandis que le scriptWitness contient les données de témoin de tout input SegWit, le witnessScript définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, à la manière du `redeemScript` pour une sortie P2SH.*
+> ► *Attention de ne pas confondre le `scriptWitness` avec le `witnessScript`. Tandis que le `scriptWitness` contient les données de témoin de tout input SegWit, le `witnessScript` définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, à la manière du `redeemScript` pour une sortie P2SH.*
 
 ## SDK (SOFTWARE DEVELOPMENT KIT)
 
 Ensemble d'outils logiciels fournissant les ressources nécessaires aux développeurs pour créer des applications sur une plateforme spécifique. Un SDK inclut des bibliothèques, des guides de développement, des exemples de code ou encore des processus de compilation. Les SDK facilitent et accélèrent le développement en offrant des modules réutilisables. Sur Bitcoin, il existe le BDK (*Bitcoin Dev Kit*) et le LDK (*Lightning Dev Kit*).
 
-> ► *En anglais, les SDK sont également parfois appelés « devkit ». Pour plus d'informations, voir les définitions de [BDK](#bdk-bitcoin-dev-kit) et de [LDK](#ldk-lightning-dev-kit).*
+> ► *En anglais, les SDK sont également parfois appelés « devkit ». Pour plus d'informations, voir les définitions de [**BDK**](#bdk-bitcoin-dev-kit) et de [**LDK**](#ldk-lightning-dev-kit).*
 
 ## SECP256K1
 
-Nom donné à une courbe elliptique spécifique utilisée dans le cadre du protocole Bitcoin pour l'implémentation des algorithmes de signatures numériques ECDSA (*Elliptic Curve Digital Signature Algorithm*) et Schnorr. La courbe $secp256k1$ a été choisie par l’inventeur de Bitcoin, Satoshi Nakamoto. Elle présente certaines propriétés intéressantes, notamment des avantages en termes de performance. L'utilisation de $secp256k1$ sur Bitcoin implique que chaque clé privée (un nombre aléatoire de 256 bits) est mappée à une clé publique correspondante par addition et doublement de point de la clé privée par le point générateur de la courbe $secp256k1$. Cette opération est facile à réaliser dans un sens, mais pratiquement impossible à inverser, ce qui constitue la base de la sécurité des signatures numériques sur Bitcoin. La courbe $secp256k1$ est spécifiée par l'équation de la courbe elliptique $y^2 = x^3 + 7$, ce qui signifie qu'elle a des coefficients $a$ égal à $0$ et $b$ égal à $7$ dans la forme générale de l'équation d'une courbe elliptique $y^2 = x^3 + ax + b$. $Secp256k1$ est définie sur un corps fini dont l'ordre est un nombre premier très grand, spécifiquement $p = 2^{256} - 2^{32} - 977$. La courbe a également un ordre de groupe, qui est le nombre de points distincts sur la courbe, un point générateur (ou point $G$) prédéfini, qui est utilisé dans les opérations de cryptographie pour générer des paires de clés, et un cofacteur qui est égal à $1$.
+Nom donné à une courbe elliptique spécifique utilisée dans le cadre du protocole Bitcoin pour l'implémentation des algorithmes de signatures numériques ECDSA (*Elliptic Curve Digital Signature Algorithm*) et Schnorr. La courbe `secp256k1` a été choisie par l’inventeur de Bitcoin, Satoshi Nakamoto. Elle présente certaines propriétés intéressantes, notamment des avantages en termes de performance.
+
+L'utilisation de `secp256k1` sur Bitcoin implique que chaque clé privée (un nombre aléatoire de 256 bits) est mappée à une clé publique correspondante par addition et doublement de point de la clé privée par le point générateur de la courbe `secp256k1`. Cette opération est facile à réaliser dans un sens, mais pratiquement impossible à inverser, ce qui constitue la base de la sécurité des signatures numériques sur Bitcoin.
+
+La courbe `secp256k1` est spécifiée par l'équation de la courbe elliptique $y^2 = x^3 + 7$, ce qui signifie qu'elle a des coefficients $a$ égal à $0$ et $b$ égal à $7$ dans la forme générale de l'équation d'une courbe elliptique $y^2 = x^3 + ax + b$. `secp256k1` est définie sur un corps fini dont l'ordre est un nombre premier très grand, spécifiquement $p = 2^{256} - 2^{32} - 977$. La courbe a également un ordre de groupe, qui est le nombre de points distincts sur la courbe, un point générateur (ou point $G$) prédéfini, qui est utilisé dans les opérations de cryptographie pour générer des paires de clés, et un cofacteur qui est égal à $1$.
 
 > ► *« SEC » désigne « Standards for Efficient Cryptography ». « P256 » désigne le fait que la courbe est définie sur un corps $\mathbb{Z}_p$ où $p$ est un nombre premier de 256 bits. « K » désigne le nom de son inventeur, Neal Koblitz. Enfin, « 1 » désigne que c’est la première version de cette courbe.*
 
@@ -5553,11 +5583,17 @@ Nom donné à une courbe elliptique spécifique utilisée dans le cadre du proto
 
 Nom donné à une courbe elliptique définie par le standard NIST pour la cryptographie à clé publique. Elle utilise un champ premier de 256 bits et une équation de courbe elliptique $y^2 = x^3 + ax + b$ avec les constantes :
 
-$$ a = -3 $$
+\begin{codeblock}
+a = -3
+\end{codeblock}
 
-$$ b = 41058363725152142129326129780047268409114441015993725554854275561074932277127 $$
+et 
 
-La courbe $Secp256r1$ est largement utilisée dans de nombreux protocoles, mais elle n'est pas utilisée dans Bitcoin. En effet, Satoshi Nakamoto a opté pour la courbe $secp256k1$, qui était alors peu connue en 2009. La raison précise de ce choix est inconnue, mais il est possible que ce soit dans le but de minimiser le risque de présence de backdoors. Les paramètres de la courbe $k1$ sont en effet nettement plus simples que ceux de la courbe $r1$, en particulier la constante $b$.
+\begin{codeblock}
+b = 41058363725152142129326129780047268409114441015993725554854275561074932277127
+\end{codeblock}
+
+La courbe `secp256r1` est largement utilisée dans de nombreux protocoles, mais elle n'est pas utilisée dans Bitcoin. En effet, Satoshi Nakamoto a opté pour la courbe `secp256k1`, qui était alors peu connue en 2009. La raison précise de ce choix est inconnue, mais il est possible que ce soit dans le but de minimiser le risque de présence de backdoors. Les paramètres de la courbe $k1$ sont en effet nettement plus simples que ceux de la courbe $r1$, en particulier la constante $b$.
 
 > ► *Cette courbe est parfois également nommée « P-256 ».*
 
@@ -6405,7 +6441,7 @@ Nom donné au document scientifique nommé « *Bitcoin: A Peer-to-Peer Electroni
 
 Script qui spécifie les conditions sous lesquelles les bitcoins peuvent être dépensés dans les UTXO P2WSH ou P2SH-P2WSH. Typiquement, les `witnessScript` déterminent les conditions d'un portefeuille multisignatures sous standard SegWit. Dans ces standards de script, le `scriptPubKey` de l'UTXO (la sortie) contient un hachage du `witnessScript`. Pour utiliser cet UTXO comme entrée dans une nouvelle transaction, le détenteur doit révéler le `witnessScript` original, afin de prouver sa correspondance avec l'empreinte dans le `scriptPubKey`. Le `witnessScript` doit alors être inclus dans le `scriptWitness` de la transaction, qui contient également les éléments nécessaires pour valider le script, comme par exemple les signatures.  Le `witnessScript` est donc l'équivalent pour SegWit du `redeemScript` dans une transaction P2SH, à la différence près qu'il est placé dans le témoin de la transaction, et non dans le `scriptSig`.
 
-> ► *Attention, le witnessScript ne doit pas être confondu avec le scriptWitness. Tandis que le witnessScript définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, le scriptWitness contient les données de témoin de tout input SegWit.*
+> ► *Attention, le `witnessScript` ne doit pas être confondu avec le `scriptWitness`. Tandis que le `witnessScript` définit les conditions de dépense d'un UTXO P2WSH ou P2SH-P2WSH et constitue un script à part entière, le `scriptWitness` contient les données de témoin de tout input SegWit.*
 
 ## WTXID
 
