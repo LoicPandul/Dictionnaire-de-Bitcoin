@@ -610,19 +610,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   217 | [RESYNCHRONISATION](#resynchronisation) |   220 |
-| [RAW TRANSACTION](#raw-transaction) |   217 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   221 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   217 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   221 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   218 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   222 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   218 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   223 |
-| [REDEEMSCRIPT](#redeemscript)  |   218 | [RICOCHET](#ricochet)          |   223 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   218 | [RIPEMD160](#ripemd160)        |   224 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   219 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   224 |
-| [REGTEST](#regtest)            |   219 | [RPOW](#rpow)                  |   224 |
-| [RÉORGANISATION](#réorganisation) |   219 | [RSMPPS](#rsmpps)              |   224 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   220 | [RUNES](#runes)                |   225 |
-| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   220 | [RUST](#rust)                  |   225 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   220 | [RUST-LIGHTNING](#rust-lightning) |   225 |
+| [RACINE DE MERKLE](#racine-de-merkle) |   217 | [RESYNCHRONISATION](#resynchronisation) |   221 |
+| [RAW TRANSACTION](#raw-transaction) |   217 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   222 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   217 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   222 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   218 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   223 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   218 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   224 |
+| [REDEEMSCRIPT](#redeemscript)  |   218 | [RICOCHET](#ricochet)          |   224 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   219 | [RIPEMD160](#ripemd160)        |   225 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   219 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   225 |
+| [REGTEST](#regtest)            |   219 | [RPOW](#rpow)                  |   225 |
+| [RÉORGANISATION](#réorganisation) |   219 | [RSMPPS](#rsmpps)              |   225 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   220 | [RUNES](#runes)                |   226 |
+| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   221 | [RUST](#rust)                  |   226 |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   221 | [RUST-LIGHTNING](#rust-lightning) |   226 |
 | | | | |
 
 
@@ -630,43 +630,43 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [SAMOURAI WALLET](#samourai-wallet) |   227 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   239 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   227 | [SIGHASH FLAG](#sighash-flag)  |   239 |
-| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   227 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   240 |
-| [SCALA](#scala)                |   227 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   240 |
-| [SCALABILITÉ](#scalabilité)    |   227 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   240 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   228 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   240 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   228 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   240 |
-| [SCRIPT](#script)              |   228 | [SIGNET](#signet)              |   240 |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   228 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   241 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   229 | [SILENT PAYMENT](#silent-payment) |   242 |
-| [SCRIPTSIG](#scriptsig)        |   229 | [SILK ROAD](#silk-road)        |   243 |
-| [SCRIPTWITNESS](#scriptwitness) |   230 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   244 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   230 | [SLIP](#slip)                  |   244 |
-| [SECP256K1](#secp256k1)        |   231 | [SMALL BLOCKERS](#small-blockers) |   244 |
-| [SECP256R1](#secp256r1)        |   231 | [SMPPS](#smpps)                |   244 |
-| [SEED (BITCOIN)](#seed-bitcoin) |   232 | [SOFT FORK](#soft-fork)        |   244 |
-| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   232 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   245 |
-| [SEED NODES](#seed-nodes)      |   233 | [SOROBAN](#soroban)            |   245 |
-| [SEGWIT](#segwit)              |   233 | [SORTIE (OUTPUT)](#sortie-output) |   245 |
-| [SEGWIT2X](#segwit2x)          |   233 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   245 |
-| [SEGWIT V0](#segwit-v0)        |   234 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   246 |
-| [SEGWIT V1](#segwit-v1)        |   234 | [SPEEDY TRIAL](#speedy-trial)  |   246 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   234 | [SPOF](#spof)                  |   247 |
-| [SELF-CUSTODY](#self-custody)  |   234 | [SPREAD (WST)](#spread-wst)    |   247 |
-| [SELFISH MINING](#selfish-mining) |   234 | [STABLECOIN](#stablecoin)      |   247 |
-| [SETTINGS.JSON](#settings.json) |   235 | [STALE BLOCK](#stale-block)    |   247 |
-| [SHA256](#sha256)              |   235 | [STAMPS](#stamps)              |   247 |
-| [SHA512](#sha512)              |   235 | [STONEWALL](#stonewall)        |   248 |
-| [SHAREDCOIN](#sharedcoin)      |   235 | [STONEWALL X2](#stonewall-x2)  |   249 |
-| [SHARES](#shares)              |   236 | [STRATUM](#stratum)            |   250 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   237 | [STRATUM V2](#stratum-v2)      |   251 |
-| [SHITCOIN](#shitcoin)          |   237 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   251 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   238 | [SURCOUCHE (LAYER)](#surcouche-layer) |   251 |
-| [SIDECHAIN](#sidechain)        |   238 | [SURFACE D'ATTAQUE](#surface-dattaque) |   251 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   238 | [SWEEP TRANSACTION](#sweep-transaction) |   252 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   238 | [SYBIL (ATTAQUE)](#sybil-attaque) |   252 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   239 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   253 |
+| [SAMOURAI WALLET](#samourai-wallet) |   228 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   240 |
+| [SATOSHI (SAT)](#satoshi-sat)  |   228 | [SIGHASH FLAG](#sighash-flag)  |   240 |
+| [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   228 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   241 |
+| [SCALA](#scala)                |   228 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   241 |
+| [SCALABILITÉ](#scalabilité)    |   228 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   241 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   229 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   241 |
+| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   229 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   241 |
+| [SCRIPT](#script)              |   229 | [SIGNET](#signet)              |   241 |
+| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   229 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   242 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   230 | [SILENT PAYMENT](#silent-payment) |   243 |
+| [SCRIPTSIG](#scriptsig)        |   230 | [SILK ROAD](#silk-road)        |   244 |
+| [SCRIPTWITNESS](#scriptwitness) |   231 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   245 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   231 | [SLIP](#slip)                  |   245 |
+| [SECP256K1](#secp256k1)        |   232 | [SMALL BLOCKERS](#small-blockers) |   245 |
+| [SECP256R1](#secp256r1)        |   232 | [SMPPS](#smpps)                |   245 |
+| [SEED (BITCOIN)](#seed-bitcoin) |   233 | [SOFT FORK](#soft-fork)        |   245 |
+| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   233 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   246 |
+| [SEED NODES](#seed-nodes)      |   234 | [SOROBAN](#soroban)            |   246 |
+| [SEGWIT](#segwit)              |   234 | [SORTIE (OUTPUT)](#sortie-output) |   246 |
+| [SEGWIT2X](#segwit2x)          |   234 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   246 |
+| [SEGWIT V0](#segwit-v0)        |   235 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   247 |
+| [SEGWIT V1](#segwit-v1)        |   235 | [SPEEDY TRIAL](#speedy-trial)  |   247 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   235 | [SPOF](#spof)                  |   248 |
+| [SELF-CUSTODY](#self-custody)  |   235 | [SPREAD (WST)](#spread-wst)    |   248 |
+| [SELFISH MINING](#selfish-mining) |   235 | [STABLECOIN](#stablecoin)      |   248 |
+| [SETTINGS.JSON](#settings.json) |   236 | [STALE BLOCK](#stale-block)    |   248 |
+| [SHA256](#sha256)              |   236 | [STAMPS](#stamps)              |   248 |
+| [SHA512](#sha512)              |   236 | [STONEWALL](#stonewall)        |   249 |
+| [SHAREDCOIN](#sharedcoin)      |   236 | [STONEWALL X2](#stonewall-x2)  |   250 |
+| [SHARES](#shares)              |   237 | [STRATUM](#stratum)            |   251 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   238 | [STRATUM V2](#stratum-v2)      |   252 |
+| [SHITCOIN](#shitcoin)          |   238 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   252 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   239 | [SURCOUCHE (LAYER)](#surcouche-layer) |   252 |
+| [SIDECHAIN](#sidechain)        |   239 | [SURFACE D'ATTAQUE](#surface-dattaque) |   252 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   239 | [SWEEP TRANSACTION](#sweep-transaction) |   253 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   239 | [SYBIL (ATTAQUE)](#sybil-attaque) |   253 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   240 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   254 |
 | | | | |
 
 
@@ -674,19 +674,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   255 | [TPUB](#tpub)                  |   258 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   255 | [TRANSACTION (TX)](#transaction-tx) |   258 |
-| [TAPSCRIPT](#tapscript)        |   255 | [TRANSACTION COINBASE](#transaction-coinbase) |   258 |
-| [TARO](#taro)                  |   255 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   258 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   255 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   259 |
-| [TCP](#tcp)                    |   256 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   259 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   256 | [TRANSACTION STANDARD](#transaction-standard) |   259 |
-| [TESTNET](#testnet)            |   256 | [TUMBLEBIT](#tumblebit)        |   259 |
-| [THE DAO](#the-dao)            |   256 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   260 |
-| [TIDES](#tides)                |   257 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   260 |
-| [TIMELOCK](#timelock)          |   257 | [TYPE DE DEVISE](#type-de-devise) |   260 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   257 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   262 |
-| [TPRV](#tprv)                  |   257 |                                |       |
+| [TAPROOT](#taproot)            |   256 | [TPUB](#tpub)                  |   259 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   256 | [TRANSACTION (TX)](#transaction-tx) |   259 |
+| [TAPSCRIPT](#tapscript)        |   256 | [TRANSACTION COINBASE](#transaction-coinbase) |   259 |
+| [TARO](#taro)                  |   256 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   259 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   256 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   260 |
+| [TCP](#tcp)                    |   257 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   260 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   257 | [TRANSACTION STANDARD](#transaction-standard) |   260 |
+| [TESTNET](#testnet)            |   257 | [TUMBLEBIT](#tumblebit)        |   260 |
+| [THE DAO](#the-dao)            |   257 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   261 |
+| [TIDES](#tides)                |   258 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   261 |
+| [TIMELOCK](#timelock)          |   258 | [TYPE DE DEVISE](#type-de-devise) |   261 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   258 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   263 |
+| [TPRV](#tprv)                  |   258 |                                |       |
 | | | | |
 
 
@@ -694,11 +694,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   264 | [URI](#uri)                    |   264 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   264 | [UTREEXO](#utreexo)            |   265 |
-| [UNIX](#unix)                  |   264 | [UTXO](#utxo)                  |   266 |
-| [UPRV](#uprv)                  |   264 | [UTXO SET](#utxo-set)          |   266 |
-| [UPUB](#upub)                  |   264 |                                |       |
+| [UASF](#uasf)                  |   265 | [URI](#uri)                    |   265 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   265 | [UTREEXO](#utreexo)            |   266 |
+| [UNIX](#unix)                  |   265 | [UTXO](#utxo)                  |   267 |
+| [UPRV](#uprv)                  |   265 | [UTXO SET](#utxo-set)          |   267 |
+| [UPUB](#upub)                  |   265 |                                |       |
 | | | | |
 
 
@@ -706,10 +706,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   268 | [VOUT](#vout)                  |   269 |
-| [VANITYGEN](#vanitygen)        |   268 | [VPRV](#vprv)                  |   269 |
-| [VERSIONNAGE](#versionnage)    |   268 | [VPUB](#vpub)                  |   269 |
-| [VIN](#vin)                    |   268 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   269 | [VOUT](#vout)                  |   270 |
+| [VANITYGEN](#vanitygen)        |   269 | [VPRV](#vprv)                  |   270 |
+| [VERSIONNAGE](#versionnage)    |   269 | [VPUB](#vpub)                  |   270 |
+| [VIN](#vin)                    |   269 |                                |       |
 | | | | |
 
 
@@ -717,13 +717,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   271 | [WATCH-ONLY WALLET](#watch-only-wallet) |   272 |
-| [WALLET](#wallet)              |   271 | [WHALE](#whale)                |   272 |
-| [WALLET.DAT](#wallet.dat)      |   271 | [WHIRLPOOL](#whirlpool)        |   272 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   271 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   272 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   271 | [WHITE PAPER](#white-paper)    |   272 |
-| [WASABI WALLET](#wasabi-wallet) |   271 | [WITNESSSCRIPT](#witnessscript) |   272 |
-| [WATCHMEN](#watchmen)          |   271 | [WTXID](#wtxid)                |   273 |
+| [WABISABI](#wabisabi)          |   272 | [WATCH-ONLY WALLET](#watch-only-wallet) |   273 |
+| [WALLET](#wallet)              |   272 | [WHALE](#whale)                |   273 |
+| [WALLET.DAT](#wallet.dat)      |   272 | [WHIRLPOOL](#whirlpool)        |   273 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   272 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   273 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   272 | [WHITE PAPER](#white-paper)    |   273 |
+| [WASABI WALLET](#wasabi-wallet) |   272 | [WITNESSSCRIPT](#witnessscript) |   273 |
+| [WATCHMEN](#watchmen)          |   272 | [WTXID](#wtxid)                |   274 |
 | | | | |
 
 
@@ -731,8 +731,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XBT](#xbt)                    |   275 | [XPRV](#xprv)                  |   275 |
-| [XOR](#xor)                    |   275 | [XPUB](#xpub)                  |   276 |
+| [XBT](#xbt)                    |   276 | [XPRV](#xprv)                  |   276 |
+| [XOR](#xor)                    |   276 | [XPUB](#xpub)                  |   277 |
 | | | | |
 
 
@@ -740,7 +740,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   278 | [YPUB](#ypub)                  |   278 |
+| [YPRV](#yprv)                  |   279 | [YPUB](#ypub)                  |   279 |
 | | | | |
 
 
@@ -748,9 +748,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   280 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   280 |
-| [ZEROLINK](#zerolink)          |   280 | [ZPRV](#zprv)                  |   280 |
-| [ZEROSYNC](#zerosync)          |   280 | [ZPUB](#zpub)                  |   281 |
+| [ZEROCONF](#zeroconf)          |   281 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   281 |
+| [ZEROLINK](#zerolink)          |   281 | [ZPRV](#zprv)                  |   281 |
+| [ZEROSYNC](#zerosync)          |   281 | [ZPUB](#zpub)                  |   282 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -2500,7 +2500,9 @@ Version secrète d'AsicBoost. AsicBoost est une méthode d'optimisation algorith
 
 ## CPFP (CHILD PAY FOR PARENT)
 
-Mécanisme transactionnel visant à accélérer la confirmation d'une transaction Bitcoin, tout comme le fait Replace-by-Fee (RBF), mais du côté du destinataire. Lorsqu'une transaction avec des frais trop faibles par rapport au marché reste bloquée dans les mempools des nœuds et ne se confirme pas assez rapidement, le destinataire peut faire une nouvelle transaction, en dépensant les bitcoins reçus dans la transaction bloquée, bien qu'elle ne soit pas encore confirmée. Cette seconde transaction nécessite forcément que la première soit minée pour être confirmée. Les mineurs sont donc obligés d'inclure les deux transactions ensemble. La seconde va allouer beaucoup plus de frais de transaction que la première, de telle sorte que la moyenne de frais incite les mineurs à inclure les deux transactions. La transaction enfant (la seconde) paie pour la transaction parent qui est bloquée (la première). C'est pour cela que l'on parle d'un « CPFP ». Ainsi, CPFP permet au destinataire d'obtenir plus rapidement ses fonds malgré les faibles frais initiaux engagés par l'expéditeur.
+Mécanisme transactionnel visant à accélérer la confirmation d'une transaction Bitcoin, tout comme le fait Replace-by-Fee (RBF), mais du côté du destinataire. Lorsqu'une transaction avec des frais trop faibles par rapport au marché reste bloquée dans les mempools des nœuds et ne se confirme pas assez rapidement, le destinataire peut faire une nouvelle transaction, en dépensant les bitcoins reçus dans la transaction bloquée, bien qu'elle ne soit pas encore confirmée. Cette seconde transaction nécessite forcément que la première soit minée pour être confirmée. Les mineurs sont donc obligés d'inclure les deux transactions ensemble. La seconde va allouer beaucoup plus de frais de transaction que la première, de telle sorte que la moyenne de frais incite les mineurs à inclure les deux transactions. La transaction enfant (la seconde) paie pour la transaction parent qui est bloquée (la première). C'est pour cela que l'on parle d'un « CPFP ».
+
+Ainsi, CPFP permet au destinataire d'obtenir plus rapidement ses fonds malgré les faibles frais initiaux engagés par l'expéditeur, contrairement à RBF (*Replace-By-Fee*) qui permet à l'envoyeur de prendre l'initiative d'accélérer sa propre transaction en augmentant les frais.
 
 ## CPPSRB
 
@@ -5276,7 +5278,7 @@ Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent pre
 \newpage
 ## RACINE DE MERKLE
 
-Condensat ou « top hash » d'un arbre de Merkle, qui représente un résumé de toutes les informations présentes dans l'arbre. Un arbre de Merkle est une structure d'accumulateur cryptographique, parfois également nommée « arbre de hachage ». Dans le cadre de Bitcoin, des arbres de Merkle sont utilisés pour organiser les transactions dans un bloc et pour faciliter la vérification rapide de l'inclusion d'une transaction spécifique. Ainsi, dans les blocs de Bitcoin, la racine de Merkle est obtenue en hachant de manière successive les transactions par paires jusqu'à ce qu'il ne reste qu'un seul hachage (la racine de Merkle). Cette dernière est ensuite incluse dans l'en-tête du bloc correspondant. On retrouve également cette structure dans UTREEXO, une structure permettant de condenser l'UTXO set des nœuds, et dans le MAST Taproot.
+Condensat ou « top hash » d'un arbre de Merkle, qui représente un résumé de toutes les informations présentes dans l'arbre. Un arbre de Merkle est une structure d'accumulateur cryptographique, parfois également nommée « arbre de hachage ». Dans le cadre de Bitcoin, des arbres de Merkle sont utilisés pour organiser les transactions dans un bloc et pour faciliter la vérification rapide de l'inclusion d'une transaction spécifique. Ainsi, dans les blocs Bitcoin, la racine de Merkle est obtenue en hachant de manière successive les transactions par paires jusqu'à ce qu'il ne reste qu'un seul hachage (la racine de Merkle). Cette dernière est ensuite incluse dans l'entête du bloc correspondant. On retrouve également cet arbre de hachage dans UTREEXO, une structure permettant de condenser l'UTXO set des nœuds, et dans le MAST Taproot.
 
 > ► *Pour plus d'informations, voir la définition d'**[ARBRE DE MERKLE](#arbre-de-merkle)***
 
@@ -5292,29 +5294,39 @@ Transaction Bitcoin construite et signée, qui se trouve dans sa forme binaire. 
   \item Le witness.
 \end{itemize}
 
-Ce que l'on appelle « raw transaction », ce sont effectivement les données brutes qui sont passées deux fois dans la fonction de hachage SHA256 pour générer le TXID de la transaction. Ces données sont ensuite utilisées dans l'arbre de Merkle du bloc pour intégrer la transaction dans la blockchain.
+Ce que l'on appelle « *raw transaction* » représente les données brutes qui sont passées deux fois dans la fonction de hachage SHA256 pour générer le TXID de la transaction. Ces données sont ensuite utilisées dans l'arbre de Merkle du bloc pour intégrer la transaction dans la blockchain.
 
 > ► *Ce concept est également parfois nommé « Serialized Transaction ». En français, on pourrait traduire ces termes respectivement par « transaction brute » et « transaction sérialisée ».*
 
 ## RBF (REPLACE-BY-FEE)
 
-Mécanisme transactionnel permettant à l'expéditeur de remplacer une transaction par une autre avec des frais plus élevés, afin d'accélérer la confirmation de celle-ci. Si une transaction avec des frais trop faibles reste bloquée, l'expéditeur peut utiliser Replace-By-Fee (remplacement par les frais) pour augmenter les frais et privilégier sa transaction de remplacement dans les mempools. RBF est applicable tant que la transaction est dans les mempools ; une fois dans un bloc, elle ne peut plus être remplacée. Lors de l'envoi initial, la transaction doit spécifier sa disponibilité à être remplacée en ajustant la valeur de `nSequence` à une valeur inférieure à `0xfffffffe`. C'est ce que l'on appelle un « flag » RBF. Ce paramètre signale la possibilité de mise à jour de la transaction après sa diffusion, offrant ainsi la possibilité de faire un RBF. Cependant, il est parfois possible de remplacer une transaction n'ayant pas signalé RBF. Les nœuds utilisant le paramètre de configuration `mempoolfullrbf=1` acceptent ce remplacement même si RBF n'a pas été signalé initialement.
+Mécanisme transactionnel permettant à l'expéditeur de remplacer une transaction par une autre avec des frais plus élevés, afin d'accélérer la confirmation de celle-ci. Si une transaction avec des frais trop faibles reste bloquée, l'expéditeur peut utiliser *Replace-By-Fee* (remplacement par les frais) pour augmenter les frais et prioriser sa transaction de remplacement dans les mempools. 
+
+RBF est applicable tant que la transaction est dans les mempools ; une fois dans un bloc, elle ne peut plus être remplacée. Lors de l'envoi initial, la transaction doit spécifier sa disponibilité à être remplacée en ajustant la valeur de `nSequence` à une valeur inférieure à `0xfffffffe`. C'est ce que l'on appelle un « flag » RBF. Ce paramètre signale la possibilité de mise à jour de la transaction après sa diffusion, cequi permet par la suite de faire un RBF. Cependant, il est parfois possible de remplacer une transaction n'ayant pas signalé RBF. Les nœuds utilisant le paramètre de configuration `mempoolfullrbf=1` acceptent ce remplacement même si RBF n'a pas été signalé initialement.
+
+À la différence de CPFP (*Child Pays For Parent*), où c'est le destinataire qui peut agir pour accélérer la transaction, RBF (*Replace-By-Fee*) permet à l'envoyeur de prendre l'initiative d'accélérer sa propre transaction en augmentant les frais.
 
 ## RÉCOMPENSE DE BLOC
 
-Total des bitcoins récupérés par un mineur lorsqu'il trouve un bloc valide sur Bitcoin. Cette récompense est composée de deux éléments : la subvention de bloc et les frais de transaction. La subvention de bloc est une quantité fixe de bitcoins que le mineur peut créer ex nihilo. Cette quantité diminue progressivement au fil des halvings. Les frais de transaction sont les frais cumulés payés par les utilisateurs pour effectuer les transactions incluses dans le bloc miné. Les frais sont également des bitcoins « créés » par le mineur, mais leur quantité est limitée au montant des bitcoins « détruits » dans les transactions. En effet, les frais d'une transaction représentent la différence entre le total des entrées et le total des sorties. La récompense de bloc est distribuée au sein d'une transaction spécifique que l'on appelle « coinbase ». Les bitcoins qui en sont extraits sont automatiquement bloqués durant une période de 100 blocs. C'est ce que l'on appelle la période de maturité.
+Total des bitcoins récupérés par un mineur lorsqu'il trouve un bloc valide sur Bitcoin. Cette récompense est composée de deux éléments : la subvention de bloc et les frais de transaction. La subvention de bloc est une quantité fixe de bitcoins que le mineur peut créer ex nihilo. Cette quantité diminue progressivement au fil des halvings. Les frais de transaction sont les frais cumulés payés par les utilisateurs pour effectuer les transactions incluses dans le bloc miné. Les frais sont également des bitcoins créés par le mineur, mais leur quantité est limitée au montant des bitcoins détruits dans les transactions. En effet, les frais d'une transaction représentent la différence entre le total des inputs et le total des outputs.
+
+La récompense de bloc est distribuée au sein d'une transaction spécifique que l'on appelle « coinbase ». Les bitcoins qui en sont extraits sont automatiquement bloqués durant une période de 100 blocs. C'est ce que l'on appelle la période de maturité.
 
 > ► *La traduction anglaise est « Block Reward ».*
 
 ## RÉCURSIF (COVENANT)
 
-Un covenant récursif sur Bitcoin est un type de contrat intelligent qui impose des conditions non seulement sur la transaction actuelle mais aussi sur les transactions futures qui dépensent les sorties de cette transaction. Cela permet de créer des chaînes de transactions où chacune doit respecter certaines règles définies par la première de la chaîne. La récursivité crée une séquence de transactions où chacune hérite des restrictions de sa transaction parent. Cela permettrait d'établir un contrôle complexe et à long terme sur la manière dont les bitcoins peuvent être dépensés, mais cela introduirait également des risques au niveau de la liberté de dépense et de la fongibilité. Pour résumer, un covenant non récursif se limitera uniquement à la transaction qui succède immédiatement à celle qui a établi les règles. Et au contraire, un covenant récursif aura la capacité d'imposer des conditions spécifiques à un bitcoin de manière indéfinie. Les transactions pourront se succéder, mais le bitcoin en question conservera toujours les conditions initiales qui lui sont attachées. De manière plus générale, en informatique, ce que l’on appelle la « récursivité » est la capacité d’une fonction à s'appeler elle-même, ce qui crée une sorte de mise en abyme.
+Un covenant récursif sur Bitcoin est un type de contrat intelligent qui impose des conditions non seulement sur la transaction actuelle, mais aussi sur les transactions futures qui dépensent les sorties de cette transaction. Cela permet de créer des chaînes de transactions où chacune doit respecter certaines règles définies par la première de la chaîne. La récursivité crée une séquence de transactions où chacune hérite des restrictions de sa transaction parent. Cela permettrait d'établir un contrôle complexe et à long terme sur la manière dont les bitcoins peuvent être dépensés, mais cela introduirait également des risques au niveau de la liberté de dépense et de la fongibilité.
+
+Pour résumer, un covenant non récursif se limitera uniquement à la transaction qui succède immédiatement à celle qui a établi les règles. Et au contraire, un covenant récursif aura la capacité d'imposer des conditions spécifiques à un bitcoin de manière indéfinie. Les transactions pourront se succéder, mais le bitcoin en question conservera toujours les conditions initiales qui lui sont attachées. Techniquement, l'instauration d'un covenant non récursif intervient lorsque le `scriptPubKey` d'un UTXO définit des restrictions sur le `scriptPubKey` des sorties d'une transaction qui dépense ledit UTXO. En revanche, l'instauration d'un covenant récursif intervient lorsque le `scriptPubKey` d'un UTXO définit des restrictions sur le `scriptPubKey` des sorties d'une transaction qui dépense ledit UTXO, et de tous les `scriptPubKey` qui suivront la dépense de cet UTXO.
+
+De manière plus générale, en informatique, ce que l’on appelle la « récursivité » est la capacité d’une fonction à s'appeler elle-même, ce qui crée une sorte de mise en abyme.
 
 > ► *Pour plus d'informations, voir la définition de [**COVENANT**](#covenant).*
 
 ## REDEEMSCRIPT
 
-Script qui défini les conditions spécifiques que doivent remplir les inputs pour débloquer les fonds associés à un output P2SH. Dans un UTXO P2SH, le `scriptPubKey` contient le hachage du `redeemScript`. Lorsqu'une transaction souhaite dépenser cet UTXO en entrée, elle doit fournir le `redeemScript` en clair qui correspond au hachage contenu dans le `scriptPubKey`. Le `redeemScript` est donc donné dans le `scriptSig` de l'input, en plus des autres éléments nécessaires pour satisfaire les conditions du script, comme les signatures ou les clés publiques. Cette structure encapsulée garantit que les détails des conditions de dépense restent cachés jusqu'à ce que les bitcoins soient effectivement dépensés. On l'utilise notamment pour les portefeuilles multisignatures Legacy.
+Script qui défini les conditions spécifiques que doivent remplir les inputs pour débloquer les fonds associés à un output P2SH. Dans un UTXO P2SH, le `scriptPubKey` contient le hachage du `redeemScript`. Lorsqu'une transaction souhaite dépenser cet UTXO en entrée, elle doit fournir le `redeemScript` en clair qui correspond au hachage contenu dans le `scriptPubKey`. Le `redeemScript` est donc donné dans le `scriptSig` de l'input, en plus des autres éléments nécessaires pour satisfaire les conditions du script, comme les signatures ou les clés publiques. Cette structure encapsulée garantit que les détails des conditions de dépense restent cachés jusqu'à ce que les bitcoins soient effectivement dépensés. On l'utilise notamment pour les portefeuilles multisignatures Legacy P2SH.
 
 ## RÈGLES DE CONSENSUS
 
@@ -5322,9 +5334,13 @@ Règles fondamentales dans Bitcoin, assurant l'intégrité du réseau en dictant
 
 ## RÈGLES DE STANDARDISATION
 
-Règles adoptées individuellement par chaque nœud Bitcoin, en plus des règles de consensus, pour définir la structure des transactions non confirmées qu'il accepte dans sa mempool et diffuse à ses pairs. Ces règles sont donc configurées et exécutées en local par chaque nœud et peuvent varier d'un nœud à l'autre. Elles s'appliquent exclusivement sur les transactions non confirmées. Ainsi, un nœud n'acceptera une transaction qu'il jugerait non standard que si celle-ci est déjà incluse dans un bloc valide. Notons que la majorité des nœuds laissent les configurations par défaut telles que préétablies dans Bitcoin Core, engendrant de fait une homogénéité des règles de standardisation à travers le réseau. Une transaction qui, bien que conforme aux règles de consensus, ne respecte pas ces règles de standardisation, aura des difficultés à se propager sur le réseau. Elle pourra toutefois être incluse dans un bloc valide si jamais elle atteint un mineur. Dans la pratique, ces transactions, qualifiées de non standard, sont souvent transmise directement à un mineur par des voies externes au réseau pair-à-pair de Bitcoin. C'est souvent le seul moyen pour confirmer ce type de transaction. Par exemple, une transaction qui n'alloue aucun frais est à la fois valide selon les règles de consensus et non standard car la politique par défaut de Bitcoin Core pour le paramètre `minRelayTxFee` est de `0.00001` (en BTC/kB).
+Règles adoptées individuellement par chaque nœud Bitcoin, en plus des règles de consensus, pour définir la structure des transactions non confirmées qu'il accepte dans sa mempool et diffuse à ses pairs. Ces règles sont donc configurées et exécutées en local par chaque nœud et peuvent varier d'un nœud à l'autre. Elles s'appliquent exclusivement sur les transactions non confirmées. Ainsi, un nœud n'acceptera une transaction qu'il jugerait non standard que si celle-ci est déjà incluse dans un bloc valide.
 
-> ► *On parle également parfois de « règles de mempool ».*
+Notons que la majorité des nœuds laissent les configurations par défaut telles que préétablies dans Bitcoin Core, engendrant de fait une homogénéité des règles de standardisation à travers le réseau. Une transaction qui, bien que conforme aux règles de consensus, ne respecte pas ces règles de standardisation, aura des difficultés à être diffusée sur le réseau. Elle pourra toutefois être incluse dans un bloc valide si jamais elle atteint un mineur. Dans la pratique, ces transactions, qualifiées de « non standard », sont souvent transmise directement à un mineur par des voies externes au réseau pair-à-pair de Bitcoin. C'est souvent le seul moyen pour confirmer ce type de transaction.
+
+Par exemple, une transaction qui n'alloue aucun frais est à la fois valide selon les règles de consensus et non standard car la politique par défaut de Bitcoin Core pour le paramètre `minRelayTxFee` est de `0.00001` (en BTC/kB).
+
+> ► *On parle également parfois de « règles de mempool » pour désigner les règles de standardisation.*
 
 ## REGTEST
 
@@ -5334,17 +5350,25 @@ Environnement de test privé pour Bitcoin permettant aux développeurs de créer
 
 ## RÉORGANISATION
 
-Se réfère à un phénomène où la blockchain subit une modification de sa structure à cause de l'existence de blocs concurrents à une même hauteur. Cela survient lorsqu'une portion de la chaîne de blocs est remplacée par une autre chaîne ayant une quantité de travail accumulé plus importante. Ces réorganisations font partie du fonctionnement naturel de Bitcoin, où différents mineurs peuvent trouver de nouveaux blocs presque simultanément, venant ainsi couper le réseau Bitcoin en deux. Dans de tels cas, le réseau peut se diviser temporairement en chaînes concurrentes. Finalement, lorsque l'une de ces chaînes accumule plus de preuves de travail, les autres chaînes sont abandonnées par les nœuds, et leurs blocs deviennent ce que l'on appelle des « blocs périmés ». Ce processus de remplacement d'une chaîne par une autre est la réorganisation. Les réorganisations peuvent avoir diverses conséquences. Tout d'abord, si un utilisateur avait une transaction confirmée dans un bloc qui s'avère être périmé, mais que celle-ci ne se retrouve pas dans la chaîne finalement valide, alors sa transaction redevient non confirmée. C'est pour cette raison que l'on vous conseille de toujours attendre au moins 6 confirmations pour considérer une transaction comme réellement immuable. Passé 6 blocs de profondeur, les réorganisations sont tellement improbables que la chance qu'il y en ait une peut être considérée comme nulle. Ensuite, au niveau du système global, les réorganisations impliquent un gaspillage de la puissance de calcul des mineurs. En effet, lorsqu'une division intervient, une partie des mineurs seront sur la chaîne `A`, et une autre partie sur la chaîne `B`. Si la chaîne `B` est finalement abandonnée lors d'une réorganisation, alors toute la puissance de calcul déployée par les mineurs sur cette chaîne est par définition gaspillée. Si il y a trop de réorganisations sur le réseau Bitcoin, la sécurité globale de celui-ci est donc réduite. C'est notamment pour cette raison, en partie, que l'augmentation de la taille des blocs ou la réduction de l'intervalle entre chaque bloc (10 minutes) peuvent être dangereuses.
+Se réfère à un phénomène où la blockchain subit une modification de sa structure à cause de l'existence de blocs concurrents à une même hauteur. Cela survient lorsqu'une portion de la chaîne de blocs est remplacée par une autre chaîne ayant une quantité de travail accumulé plus importante.
 
-> ► *Certains bitcoiners préfèrent parler de « bloc orphelin » pour désigner un bloc périmé. Aussi, dans le langage courant, on parle d'une « réorg » pour désigner une « réorganisation ». Le terme de « réorganisation » est un anglicisme. Pour être plus juste, on pourrait parler d'une « resynchronisation.*
+Ces réorganisations font partie du fonctionnement naturel de Bitcoin, où différents mineurs peuvent trouver de nouveaux blocs presque simultanément, venant ainsi couper le réseau Bitcoin en deux. Dans de tels cas, le réseau peut se diviser temporairement en chaînes concurrentes. Finalement, lorsque l'une de ces chaînes accumule plus de travail, les autres chaînes sont abandonnées par les nœuds, et leurs blocs deviennent ce que l'on appelle des « blocs obsolètes » ou « blocs orphelins ». Ce processus de remplacement d'une chaîne par une autre est la réorganisation.
+
+![](../../dictionnaire/assets/9.png)
+
+Les réorganisations peuvent avoir diverses conséquences. Tout d'abord, si un utilisateur avait une transaction confirmée dans un bloc qui s'avère être abandonné, mais que celle-ci ne se retrouve pas dans la chaîne finalement valide, alors sa transaction redevient non confirmée. C'est pour cette raison que l'on vous conseille de toujours attendre au moins 6 confirmations pour considérer une transaction comme réellement immuable. Passé 6 blocs de profondeur, les réorganisations sont tellement improbables que la chance qu'il y en ait une peut être considérée comme nulle.
+
+Ensuite, au niveau du système global, les réorganisations impliquent un gaspillage de la puissance de calcul des mineurs. En effet, lorsqu'une division intervient, une partie des mineurs seront sur la chaîne `A`, et une autre partie sur la chaîne `B`. Si la chaîne `B` est finalement abandonnée lors d'une réorganisation, alors toute la puissance de calcul déployée par les mineurs sur cette chaîne est par définition gaspillée. Si il y a trop de réorganisations sur le réseau Bitcoin, la sécurité globale de celui-ci est donc réduite. C'est notamment pour cette raison, en partie, que l'augmentation de la taille des blocs ou la réduction de l'intervalle entre chaque bloc (10 minutes) peuvent être dangereuses.
+
+> ► *Certains bitcoiners préfèrent parler de « bloc orphelin » pour désigner un bloc périmé. Aussi, dans le langage courant, on parle d'une « réorg » pour désigner une « réorganisation ». Le terme de « réorganisation » est un anglicisme. Pour être plus juste, on pourrait parler d'une « resynchronisation ».*
 
 ## RÉSEAU BITCOIN
 
-Désigne l'infrastructure globale du système Bitcoin. Le réseau est constitué de l'ensemble des nœuds (ordinateurs) qui exécutent un logiciel implémentant le protocole Bitcoin, et qui se connectent à leurs pairs. Chaque nœud communique en pair-à-pair avec les autres nœuds afin de télécharger et de vérifier la blockchain, de vérifier et de diffuser les nouveaux blocs, et de vérifier et de diffuser les nouvelles transactions.
+Désigne l'infrastructure globale du système Bitcoin. Le réseau est constitué de l'ensemble des nœuds (ordinateurs) qui exécutent un logiciel implémentant le protocole Bitcoin, et qui se connectent à leurs pairs. Chaque nœud communique en pair-à-pair avec les autres nœuds, afin de télécharger et de vérifier la blockchain, de vérifier et de diffuser les nouveaux blocs, et de vérifier et de diffuser les nouvelles transactions.
 
 ## RÉSERVES FRACTIONNAIRES
 
-Principe de la finance traditionnelle selon lequel les banques ne gardent qu'une fraction des dépôts de leurs clients en tant que réserve disponible, et utilisent le reste pour accorder des prêts et générer des profits. Dans le contexte de Bitcoin, bien que la monnaie elle-même ne soit pas soumise à la création de crédit bancaire, le concept de réserve fractionnaire s'applique lorsqu'une plateforme d'échange conserve seulement une partie des BTC déposés par ses utilisateurs, et utilise le reste pour d'autres fins. Cela pose un risque de liquidité et de solvabilité si tous les utilisateurs décident de retirer leurs fonds simultanément.
+Principe de la finance traditionnelle selon lequel les banques ne gardent qu'une fraction des dépôts de leurs clients en tant que réserve disponible, et utilisent le reste pour accorder des prêts et générer des profits. Dans le contexte de Bitcoin, bien que la monnaie elle-même ne soit pas soumise à la création de crédit bancaire, le concept de réserve fractionnaire s'applique lorsqu'une plateforme d'échange conserve seulement une partie des BTC déposés par ses utilisateurs, et utilise le reste pour d'autres fins. Cela pose un risque de liquidité et de solvabilité si tous les utilisateurs décident de retirer leurs fonds simultanément. C'est notamment pour cela qu'il est essentiel de conserver soi-même ses bitcoins en self-custody.
 
 ## RÉSISTANCE AU PARTITIONNEMENT
 
