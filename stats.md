@@ -33,7 +33,7 @@
 
 ### Termes techniques les plus rencontrés :
 1. ***bitcoin*** - 1236
-2. ***transaction*** - 967
+2. ***transaction*** - 966
 3. ***bloc*** - 590
 4. ***adresse*** - 337
 5. ***information*** - 329
@@ -48,7 +48,7 @@
 14. ***donnée*** - 205
 15. ***signature*** - 200
 16. ***publique*** - 180
-17. ***système*** - 178
+17. ***système*** - 177
 18. ***segwit*** - 166
 19. ***méthode*** - 165
 20. ***pile*** - 165
