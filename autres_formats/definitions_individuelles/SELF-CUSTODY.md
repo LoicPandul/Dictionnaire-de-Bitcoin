@@ -1,4 +1,4 @@
 ## SELF-CUSTODY
 
-Désigne la pratique par laquelle les utilisateurs gardent le contrôle direct de leurs clés privées, et donc de leurs bitcoins, sans dépendre d'une entité externe pour la gestion de ces actifs.
+Désigne la pratique par laquelle un utilisateur garde le contrôle direct de ses clés privées, et donc de ses bitcoins, sans dépendre d'une entité externe pour la gestion de ses actifs.
 

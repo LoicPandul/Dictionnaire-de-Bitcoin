@@ -277,11 +277,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP112](#bip112)              |    52 | [B-MONEY](#b-money)            |    70 |
 | [BIP113](#bip113)              |    53 | [BOLT](#bolt)                  |    70 |
 | [BIP118](#bip118)              |    53 | [BOUNTY](#bounty)              |    70 |
-| [BIP119](#bip119)              |    53 | [BOUTISME](#boutisme)          |    70 |
+| [BIP119](#bip119)              |    53 | [BOUTISME](#boutisme)          |    71 |
 | [BIP123](#bip123)              |    53 | [BRANCH-AND-BOUND](#branch-and-bound) |    71 |
 | [BIP125](#bip125)              |    54 | [BRANCHE](#branche)            |    71 |
 | [BIP137](#bip137)              |    54 | [BRC-20](#brc-20)              |    71 |
-| [BIP141](#bip141)              |    54 | [BTC](#btc)                    |    71 |
+| [BIP141](#bip141)              |    54 | [BTC](#btc)                    |    72 |
 | [BIP143](#bip143)              |    54 | [BTCPAY SERVER](#btcpay-server) |    72 |
 | [BIP144](#bip144)              |    55 | [BULL MARKET](#bull-market)    |    72 |
 | [BIP145](#bip145)              |    55 |                                |       |
@@ -631,42 +631,42 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
 | [SAMOURAI WALLET](#samourai-wallet) |   228 | [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   240 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   228 | [SIGHASH FLAG](#sighash-flag)  |   240 |
+| [SATOSHI (SAT)](#satoshi-sat)  |   228 | [SIGHASH FLAG](#sighash-flag)  |   241 |
 | [SATOSHI NAKAMOTO](#satoshi-nakamoto) |   228 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   241 |
 | [SCALA](#scala)                |   228 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   241 |
-| [SCALABILITÉ](#scalabilité)    |   228 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   241 |
+| [SCALABILITÉ](#scalabilité)    |   228 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   242 |
 | [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   229 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   242 |
 | [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   229 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   242 |
 | [SCRIPT](#script)              |   229 | [SIGNET](#signet)              |   242 |
 | [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   229 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   242 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   230 | [SILENT PAYMENT](#silent-payment) |   243 |
-| [SCRIPTSIG](#scriptsig)        |   230 | [SILK ROAD](#silk-road)        |   244 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   230 | [SILENT PAYMENT](#silent-payment) |   244 |
+| [SCRIPTSIG](#scriptsig)        |   230 | [SILK ROAD](#silk-road)        |   245 |
 | [SCRIPTWITNESS](#scriptwitness) |   231 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   245 |
 | [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   232 | [SLIP](#slip)                  |   245 |
-| [SECP256K1](#secp256k1)        |   232 | [SMALL BLOCKERS](#small-blockers) |   245 |
+| [SECP256K1](#secp256k1)        |   232 | [SMALL BLOCKERS](#small-blockers) |   246 |
 | [SECP256R1](#secp256r1)        |   232 | [SMPPS](#smpps)                |   246 |
 | [SEED (BITCOIN)](#seed-bitcoin) |   233 | [SOFT FORK](#soft-fork)        |   246 |
 | [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   234 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   246 |
-| [SEED NODES](#seed-nodes)      |   234 | [SOROBAN](#soroban)            |   246 |
-| [SEGWIT](#segwit)              |   235 | [SORTIE (OUTPUT)](#sortie-output) |   246 |
+| [SEED NODES](#seed-nodes)      |   234 | [SOROBAN](#soroban)            |   247 |
+| [SEGWIT](#segwit)              |   235 | [SORTIE (OUTPUT)](#sortie-output) |   247 |
 | [SEGWIT2X](#segwit2x)          |   235 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   247 |
-| [SEGWIT V0](#segwit-v0)        |   235 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   247 |
+| [SEGWIT V0](#segwit-v0)        |   235 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   248 |
 | [SEGWIT V1](#segwit-v1)        |   235 | [SPEEDY TRIAL](#speedy-trial)  |   248 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   235 | [SPOF](#spof)                  |   248 |
-| [SELF-CUSTODY](#self-custody)  |   236 | [SPREAD (WST)](#spread-wst)    |   248 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   236 | [SPOF](#spof)                  |   249 |
+| [SELF-CUSTODY](#self-custody)  |   236 | [SPREAD (WST)](#spread-wst)    |   249 |
 | [SELFISH MINING](#selfish-mining) |   236 | [STABLECOIN](#stablecoin)      |   249 |
 | [SETTINGS.JSON](#settings.json) |   236 | [STALE BLOCK](#stale-block)    |   249 |
 | [SHA256](#sha256)              |   237 | [STAMPS](#stamps)              |   249 |
-| [SHA512](#sha512)              |   237 | [STONEWALL](#stonewall)        |   249 |
-| [SHAREDCOIN](#sharedcoin)      |   237 | [STONEWALL X2](#stonewall-x2)  |   250 |
-| [SHARES](#shares)              |   238 | [STRATUM](#stratum)            |   251 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   239 | [STRATUM V2](#stratum-v2)      |   252 |
-| [SHITCOIN](#shitcoin)          |   239 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   252 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   239 | [SURCOUCHE (LAYER)](#surcouche-layer) |   252 |
-| [SIDECHAIN](#sidechain)        |   239 | [SURFACE D'ATTAQUE](#surface-dattaque) |   252 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   240 | [SWEEP TRANSACTION](#sweep-transaction) |   253 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   240 | [SYBIL (ATTAQUE)](#sybil-attaque) |   253 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   240 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   254 |
+| [SHA512](#sha512)              |   237 | [STONEWALL](#stonewall)        |   250 |
+| [SHAREDCOIN](#sharedcoin)      |   237 | [STONEWALL X2](#stonewall-x2)  |   251 |
+| [SHARES](#shares)              |   238 | [STRATUM](#stratum)            |   252 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   239 | [STRATUM V2](#stratum-v2)      |   253 |
+| [SHITCOIN](#shitcoin)          |   239 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   253 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   239 | [SURCOUCHE (LAYER)](#surcouche-layer) |   253 |
+| [SIDECHAIN](#sidechain)        |   239 | [SURFACE D'ATTAQUE](#surface-dattaque) |   253 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   240 | [SWEEP TRANSACTION](#sweep-transaction) |   254 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   240 | [SYBIL (ATTAQUE)](#sybil-attaque) |   254 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   240 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   255 |
 | | | | |
 
 
@@ -674,19 +674,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   256 | [TPUB](#tpub)                  |   259 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   256 | [TRANSACTION (TX)](#transaction-tx) |   259 |
-| [TAPSCRIPT](#tapscript)        |   256 | [TRANSACTION COINBASE](#transaction-coinbase) |   259 |
-| [TARO](#taro)                  |   256 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   259 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   256 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   260 |
-| [TCP](#tcp)                    |   257 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   260 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   257 | [TRANSACTION STANDARD](#transaction-standard) |   260 |
-| [TESTNET](#testnet)            |   257 | [TUMBLEBIT](#tumblebit)        |   260 |
-| [THE DAO](#the-dao)            |   257 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   261 |
-| [TIDES](#tides)                |   258 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   261 |
-| [TIMELOCK](#timelock)          |   258 | [TYPE DE DEVISE](#type-de-devise) |   261 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   258 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   263 |
-| [TPRV](#tprv)                  |   258 |                                |       |
+| [TAPROOT](#taproot)            |   257 | [TPUB](#tpub)                  |   260 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   257 | [TRANSACTION (TX)](#transaction-tx) |   260 |
+| [TAPSCRIPT](#tapscript)        |   257 | [TRANSACTION COINBASE](#transaction-coinbase) |   260 |
+| [TARO](#taro)                  |   257 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   260 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   257 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   261 |
+| [TCP](#tcp)                    |   258 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   261 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   258 | [TRANSACTION STANDARD](#transaction-standard) |   261 |
+| [TESTNET](#testnet)            |   258 | [TUMBLEBIT](#tumblebit)        |   261 |
+| [THE DAO](#the-dao)            |   258 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   262 |
+| [TIDES](#tides)                |   259 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   262 |
+| [TIMELOCK](#timelock)          |   259 | [TYPE DE DEVISE](#type-de-devise) |   262 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   259 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   264 |
+| [TPRV](#tprv)                  |   259 |                                |       |
 | | | | |
 
 
@@ -694,11 +694,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   265 | [URI](#uri)                    |   265 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   265 | [UTREEXO](#utreexo)            |   266 |
-| [UNIX](#unix)                  |   265 | [UTXO](#utxo)                  |   267 |
-| [UPRV](#uprv)                  |   265 | [UTXO SET](#utxo-set)          |   267 |
-| [UPUB](#upub)                  |   265 |                                |       |
+| [UASF](#uasf)                  |   266 | [URI](#uri)                    |   266 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   266 | [UTREEXO](#utreexo)            |   267 |
+| [UNIX](#unix)                  |   266 | [UTXO](#utxo)                  |   268 |
+| [UPRV](#uprv)                  |   266 | [UTXO SET](#utxo-set)          |   268 |
+| [UPUB](#upub)                  |   266 |                                |       |
 | | | | |
 
 
@@ -706,10 +706,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   269 | [VOUT](#vout)                  |   270 |
-| [VANITYGEN](#vanitygen)        |   269 | [VPRV](#vprv)                  |   270 |
-| [VERSIONNAGE](#versionnage)    |   269 | [VPUB](#vpub)                  |   270 |
-| [VIN](#vin)                    |   269 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   270 | [VOUT](#vout)                  |   271 |
+| [VANITYGEN](#vanitygen)        |   270 | [VPRV](#vprv)                  |   271 |
+| [VERSIONNAGE](#versionnage)    |   270 | [VPUB](#vpub)                  |   271 |
+| [VIN](#vin)                    |   270 |                                |       |
 | | | | |
 
 
@@ -717,13 +717,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   272 | [WATCH-ONLY WALLET](#watch-only-wallet) |   273 |
-| [WALLET](#wallet)              |   272 | [WHALE](#whale)                |   273 |
-| [WALLET.DAT](#wallet.dat)      |   272 | [WHIRLPOOL](#whirlpool)        |   273 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   272 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   273 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   272 | [WHITE PAPER](#white-paper)    |   273 |
-| [WASABI WALLET](#wasabi-wallet) |   272 | [WITNESSSCRIPT](#witnessscript) |   273 |
-| [WATCHMEN](#watchmen)          |   272 | [WTXID](#wtxid)                |   274 |
+| [WABISABI](#wabisabi)          |   273 | [WATCH-ONLY WALLET](#watch-only-wallet) |   274 |
+| [WALLET](#wallet)              |   273 | [WHALE](#whale)                |   274 |
+| [WALLET.DAT](#wallet.dat)      |   273 | [WHIRLPOOL](#whirlpool)        |   274 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   273 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   274 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   273 | [WHITE PAPER](#white-paper)    |   274 |
+| [WASABI WALLET](#wasabi-wallet) |   273 | [WITNESSSCRIPT](#witnessscript) |   274 |
+| [WATCHMEN](#watchmen)          |   273 | [WTXID](#wtxid)                |   275 |
 | | | | |
 
 
@@ -731,8 +731,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XBT](#xbt)                    |   276 | [XPRV](#xprv)                  |   276 |
-| [XOR](#xor)                    |   276 | [XPUB](#xpub)                  |   277 |
+| [XBT](#xbt)                    |   277 | [XPRV](#xprv)                  |   277 |
+| [XOR](#xor)                    |   277 | [XPUB](#xpub)                  |   278 |
 | | | | |
 
 
@@ -740,7 +740,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   279 | [YPUB](#ypub)                  |   279 |
+| [YPRV](#yprv)                  |   280 | [YPUB](#ypub)                  |   280 |
 | | | | |
 
 
@@ -748,9 +748,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   281 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   281 |
-| [ZEROLINK](#zerolink)          |   281 | [ZPRV](#zprv)                  |   281 |
-| [ZEROSYNC](#zerosync)          |   281 | [ZPUB](#zpub)                  |   282 |
+| [ZEROCONF](#zeroconf)          |   282 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   282 |
+| [ZEROLINK](#zerolink)          |   282 | [ZPRV](#zprv)                  |   282 |
+| [ZEROSYNC](#zerosync)          |   282 | [ZPUB](#zpub)                  |   283 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -1854,7 +1854,7 @@ Désigne une période de débat intense et de conflit au sein de la communauté 
 
 Les partisans de l'augmentation de la taille des blocs (que l'on appelle les « *big blockers* »), menés par des figures de l'écosystème comme Roger Ver, des développeurs de la première heure comme Jeff Garzik, Gavin Andresen ou encore Mike Hearn, mais également beaucoup de grandes entreprises de minage, soutenaient que cette augmentation était nécessaire pour réduire les frais de transaction et améliorer la scalabilité de Bitcoin. Ils pensaient que cette modification pourrait se faire sans engendrer de conséquences sur la sécurité du système. D'autre part, les opposants à l'augmentation de la taille des blocs (que l'on appelle les « *small blockers* »), principalement des développeurs de Bitcoin Core (Pieter Wuille, Peter Todd, Gregory Maxwell, Wladimir van der Laan, Luke Dashjr...) et une partie de la communauté technique, avançaient que cette modification centraliserait le système à cause de l'augmentation de la charge opérationnelle sur les nœuds. Ils mettaient en avant des solutions d'évolutivité dites de seconde couche, comme le Lightning Network, qui permettraient de prendre en charge une grande quantité de transactions, sans pour autant devoir modifier le protocole de base.
 
-Le débat sur l'approche de Bitcoin en termes de scalabilité dure au moins depuis 2010, avec la première tentative d'augmentation de la taille des blocs en octobre de cette année via [un patch proposé par Jeff Garzik](https://bitcointalk.org/index.php?topic=1347.0). Mais c'est bien durant la période de la Blocksize War entre 2015 et 2017 que les conflits ont été les plus virulents avec la mise en place de plusieurs tentatives de forks (Bitcoin XT, Bitcoin Classic, Bitcoin Unlimited, SegWit, SegWit2X et Bitcoin Cash), avec des stratégies de propagande et d'influence, ainsi qu'avec des attaques personnelles. L'activation de SegWit le 24 août 2017 est souvent considérée comme l'évènement marquant la fin de la Blocksize War, tandis que le casus belli est parfois considéré comme étant la mise à jour 0.11A du client Bitcoin XT, qui a implémenté le BIP101 le 15 août 2015.
+Le débat sur l'approche de Bitcoin en termes de scalabilité dure au moins depuis 2010, avec la première tentative d'augmentation de la taille des blocs en octobre de cette année via [un patch proposé par Jeff Garzik](https://bitcointalk.org/index.php?topic=1347.0). Mais c'est bien durant la période de la Blocksize War entre 2015 et 2017 que les conflits ont été les plus virulents avec la mise en place de plusieurs tentatives de forks (Bitcoin XT, Bitcoin Classic, Bitcoin Unlimited, SegWit, SegWit2X et Bitcoin Cash), avec des stratégies de propagande et d'influence, ainsi qu'avec des attaques personnelles. L'activation de SegWit le 24 août 2017 est souvent considérée comme l'évènement marquant la fin de la Blocksize War, tandis que le casus belli est parfois considéré comme étant la mise à jour 0.11A du client Bitcoin XT, qui a implémenté le BIP101 le 15 août 2015. On pourrait également considéré que la fin de la Blocksize War a eu lieu le 8 novembre 2017, date à laquelle le hard fork SegWit2X a officiellement été abandonné suite à la campagne d'opposition « NO2X ».
 
 > ► *En français, on parle généralement de la « Blocksize War » comme un nom propre. Certains traduisent parfois ce terme par « guerre des blocs » ou « guerre de la taille des blocs ».*
 
@@ -5622,37 +5622,45 @@ Liste statique de nœuds Bitcoin publics, intégrée directement dans le code so
 
 ## SEGWIT
 
-SegWit, acronyme pour « Segregated Witness » (Témoin Séparé), est une mise à jour du protocole Bitcoin, introduite en août 2017. Elle vise à résoudre plusieurs problèmes techniques, dont la question de la capacité transactionnelle du réseau, le problème de malléabilité des transactions et la facilitation des modifications futures du protocole. Ce Soft Fork modifie la structure des transactions en déplaçant les données de signature de la transaction vers un répertoire séparé. Concrètement, avec SegWit, les signatures sont retirées du bloc principal et insérées dans une structure de données distincte à la fin du bloc, ce sont les témoins (witness). Cette séparation permet d'augmenter la capacité de chaque bloc sans modifier la taille maximale des blocs elle-même, qui est de 1 Mo sur Bitcoin. Cette modification résout également le problème de la malléabilité des transactions. Avant SegWit, les signatures pouvaient être modifiées avant qu'une transaction ne soit confirmée, ce qui changeait l'identifiant de la transaction. Cela rendait difficile la construction de transactions complexes, car une transaction non confirmée pouvait voir son identifiant changer. En séparant les signatures, SegWit rend les transactions non malléables, car tout changement dans les signatures n'affecte plus l'identifiant de la transaction (TXID), mais uniquement l'identifiant du témoin (WTXID). En résolvant le problème de la malléabilité, SegWit a ouvert la voie à d'autres développements en surcouche du système Bitcoin, notamment le réseau Lightning Network, qui permet des transactions rapides et à faible coût.
+SegWit, acronyme de « *Segregated Witness* » (Témoin Séparé), est une mise à jour du protocole Bitcoin introduite en août 2017. Elle vise à résoudre plusieurs problèmes techniques, dont la question de la capacité transactionnelle du réseau, le problème de malléabilité des transactions et la facilitation des modifications futures du protocole.
+
+Ce soft fork modifie la structure des transactions en déplaçant les données de signature vers un répertoire séparé. Concrètement, avec SegWit, les signatures sont retirées du bloc principal et insérées dans une structure de données distincte à la fin du bloc, ce sont les témoins (*witness*). Cette séparation permet d'augmenter la capacité de chaque bloc sans modifier la taille maximale des blocs elle-même, qui est de 1 Mo sur Bitcoin. Cette modification résout également le problème de la malléabilité des transactions. Avant SegWit, les signatures pouvaient être modifiées avant qu'une transaction ne soit confirmée, ce qui changeait l'identifiant de la transaction. Cela rendait difficile la construction de transactions complexes, car une transaction non confirmée pouvait voir son identifiant changer. En séparant les signatures, SegWit rend les transactions non malléables, car tout changement dans les signatures n'affecte plus l'identifiant de la transaction (TXID), mais uniquement l'identifiant du témoin (WTXID). En résolvant le problème de la malléabilité, SegWit a ouvert la voie à d'autres développements en surcouche du système Bitcoin, notamment le réseau Lightning Network, qui permet des transactions rapides et à faible coût.
 
 ## SEGWIT2X
 
-Tentative controversée de hard fork visant à doubler la limite de taille des blocs sur Bitcoin, tout en intégrant SegWit. SegWit2x a été introduit lors du New York Agreement en 2017, une réunion confidentielle entre plus de 50 entreprises de l'écosystème qui visait à trouver une solution pour le passage à l'échelle du système. SegWit2x a cherché à augmenter la capacité transactionnelle de Bitcoin en portant la taille maximale d'un bloc à 2 Mo, contre 1 Mo initialement. Malgré le signalement positif de plus de 80 % des mineurs, le projet n'a pas réussi à obtenir un consensus, ce qui a mené à son annulation. Cet épisode a été perçu par beaucoup d'utilisateurs et développeurs comme une attaque contre Bitcoin, dans le cadre de la Blocksize War.
+Tentative controversée de hard fork visant à doubler la limite de taille des blocs sur Bitcoin, tout en intégrant SegWit. SegWit2x a été introduit lors du New York Agreement en 2017, une réunion confidentielle entre plus de 50 entreprises de l'écosystème qui visait à trouver une solution pour le passage à l'échelle du système. SegWit2x a cherché à augmenter la capacité transactionnelle de Bitcoin en portant la taille maximale d'un bloc à 2 Mo, contre 1 Mo initialement. Le hard fork était prévu au bloc 494 784, soit durant le mois de novembre 2017.
+
+Malgré la mise en place de SegWit en août 2017, le projet 2X de doublement de la taille n'a pas réussi à obtenir un consensus, notamment à cause de la campagne d'opposition « NO2X », ce qui a mené à son annulation au début du mois de novembre. Cet épisode a été perçu par beaucoup d'utilisateurs et de développeurs comme une attaque contre Bitcoin, dans le cadre de la Blocksize War.
 
 > ► *SegWit2x est parfois également nommé « B2X » ou « S2X ». Initialement, son nom était « SegWit2Mb ». Pour plus d'informations, voir la définition de **[BLOCKSIZE WAR](#blocksize-war)**.*
 
 ## SEGWIT V0
 
-Version de script post-SegWit zéro. Les scripts SegWit V0 représentent la première famille de scripts introduite après la mise à jour SegWit de 2017. Les scripts `P2WPKH` et `P2WSH` incarnent la version SegWit V0. Les adresses correspondantes commencent toujours par `bc1q` et sont encodées en format `Bech32`.
+Version de script post-SegWit 0. Les scripts SegWit V0 représentent la première famille de scripts introduite après la mise à jour SegWit de 2017. Les scripts `P2WPKH` et `P2WSH` incarnent la version SegWit V0. Les adresses correspondantes commencent toujours par `bc1q` et sont encodées en format `Bech32`.
 
 ## SEGWIT V1
 
-Version de script post-SegWit un. Les scripts SegWit V1 représentent la seconde famille de scripts introduite après la mise à jour SegWit de 2017. En l'occurrence, les scripts SegWit V1 ont été présenté avec la mise à jour Taproot en 2021. Le script `P2TR` est de la version SegWit V1. Les adresses correspondantes commencent toujours par `bc1p` et sont encodées en format `Bech32m`.
+Version de script post-SegWit 1. Les scripts SegWit V1 représentent la seconde famille de scripts introduite après la mise à jour SegWit de 2017. En l'occurrence, les scripts SegWit V1 ont été présenté avec la mise à jour Taproot en 2021. Le script `P2TR` est de la version SegWit V1. Les adresses correspondantes commencent toujours par `bc1p` et sont encodées en format `Bech32m`.
 
 ## SÉLECTION DES PIÈCES
 
-Processus par lequel un logiciel de portefeuille Bitcoin choisit quels UTXO utiliser comme entrées pour satisfaire les sorties d'une transaction. La méthode de sélection des pièces est importante, car elle a des impacts sur le coût d'une transaction et la confidentialité de l'utilisateur. Elle vise souvent à minimiser le nombre d'entrées utilisées, afin de réduire la taille de la transaction et les frais associés, tout en tentant de préserver la confidentialité en évitant de fusionner des pièces provenant de sources différentes (CIOH). Plusieurs méthodes existes pour la sélections de pièce comme le Knapsack Solver ou le Branch-and-Bound. Lorsque la sélection des pièces est réalisée manuellement par l'utilisateur, on parle alors de « Coin Control ».
+Processus par lequel un logiciel de portefeuille Bitcoin choisit quels UTXOs utiliser comme entrées pour satisfaire les sorties d'une transaction. La méthode de sélection des pièces est importante, car elle a des conséquences sur le coût d'une transaction et la confidentialité de l'utilisateur. Elle vise souvent à minimiser le nombre d'entrées utilisées, afin de réduire la taille de la transaction et les frais associés, tout en tentant de préserver la confidentialité en évitant de fusionner des pièces provenant de sources différentes (CIOH). Plusieurs méthodes existent pour la sélections de pièce, comme le *Knapsack Solver* ou le *Branch-and-Bound*. Lorsque la sélection des pièces est réalisée manuellement par l'utilisateur, on parle alors de « *Coin Control* ».
 
 > ► *En anglais, on parle de « Coin Selection ».*
 
 ## SELF-CUSTODY
 
-Désigne la pratique par laquelle les utilisateurs gardent le contrôle direct de leurs clés privées, et donc de leurs bitcoins, sans dépendre d'une entité externe pour la gestion de ces actifs.
+Désigne la pratique par laquelle un utilisateur garde le contrôle direct de ses clés privées, et donc de ses bitcoins, sans dépendre d'une entité externe pour la gestion de ses actifs.
 
 ## SELFISH MINING
 
-Stratégie (ou attaque) dans le minage, où un mineur ou un groupe de mineurs conserve intentionnellement des blocs avec une preuve de travail valide sans les diffuser immédiatement sur le réseau. L'objectif est de conserver une avance sur les autres mineurs en termes de preuve de travail, ce qui leur permet potentiellement de miner plusieurs blocs d'affilée et de les publier en une seule fois, maximisant ainsi leurs gains. Autrement dit, le groupe de mineur attaquants ne minent pas sur le dernier bloc validé par l'ensemble du réseau, mais plutôt sur un bloc qu'ils ont eux-mêmes créé, qui diffère de celui validé par le réseau. Ce procédé génère une sorte d'embranchement secret de la blockchain, qui reste inconnue de l'ensemble du réseau jusqu'à ce que cette chaîne alternative dépasse potentiellement la blockchain honnête. Une fois que la chaîne secrète des mineurs attaquants devient plus longue (c'est-à-dire qu'elle contient plus de travail accumulé) que la chaîne honnête et publique, elle est alors diffusée sur l'ensemble du réseau. À ce moment, les nœuds du réseau, qui suivent la chaîne la plus longue (avec le plus de travail accumulé), vont se synchroniser sur cette nouvelle chaîne. Il y a donc une réorganisation. Le selfish mining est embêtant car il diminue la sécurité du système en gaspillant une partie de la puissance de calcul du réseau. En cas de réussite, il conduit également à des réorganisations de la blockchain, affectant ainsi la fiabilité des confirmations de transaction pour les utilisateurs. Cette pratique reste tout de même risquée pour le groupe de mineur attaquant, car il est souvent plus rentable de miner normalement au-dessus du dernier bloc connu publiquement plutôt que d'allouer de la puissance de calcul à un embranchement secret qui ne dépassera probablement jamais la blockchain honnête. Au plus le nombre de blocs dans la réorganisation est grand, au plus la probabilité de réussite de l'attaque est basse.
+Stratégie (ou attaque) dans le minage, où un mineur ou un groupe de mineurs conserve intentionnellement des blocs avec une preuve de travail valide sans les diffuser immédiatement sur le réseau. L'objectif est de conserver une avance sur les autres mineurs en termes de preuve de travail, ce qui leur permet potentiellement de miner plusieurs blocs d'affilée et de les publier en une seule fois, maximisant ainsi leurs gains. Autrement dit, le groupe de mineur attaquants ne minent pas sur le dernier bloc validé par l'ensemble du réseau, mais plutôt sur un bloc qu'ils ont eux-mêmes créé, qui diffère de celui validé par le réseau.
 
-> ► *La traduction française de « selfish mining » est « minage égoïste ». Attention, une attaque par selfish mining ne doit pas être confondue avec une attaque de block withholding (bloc retenu).*
+Ce procédé génère une sorte d'embranchement secret de la blockchain, qui reste inconnu de l'ensemble du réseau jusqu'à ce que cette chaîne alternative dépasse potentiellement la blockchain honnête. Une fois que la chaîne secrète des mineurs attaquants devient plus longue (c'est-à-dire qu'elle contient plus de travail accumulé) que la chaîne honnête et publique, elle est alors diffusée sur l'ensemble du réseau. À ce moment, les nœuds du réseau, qui suivent la chaîne la plus longue (avec le plus de travail accumulé), vont se synchroniser sur cette nouvelle chaîne. Il y a donc une réorganisation.
+
+Le selfish mining est embêtant pour les utilisateurs, car il diminue la sécurité du système en gaspillant une partie de la puissance de calcul du réseau. En cas de réussite, il conduit également à des réorganisations de la blockchain, affectant ainsi la fiabilité des confirmations de transaction pour les utilisateurs. Cette pratique reste tout de même risquée pour le groupe de mineur attaquant, car il est souvent plus rentable de miner normalement au-dessus du dernier bloc connu publiquement plutôt que d'allouer de la puissance de calcul à un embranchement secret qui ne dépassera probablement jamais la blockchain honnête. Au plus le nombre de blocs dans la réorganisation est grand, au plus la probabilité de réussite de l'attaque est basse.
+
+> ► *La traduction française de « selfish mining » est « minage égoïste ». Attention, une attaque par selfish mining ne doit pas être confondue avec une attaque de block withholding (bloc retenu). Pour plus d'informations, voir la définition de **[BLOCK WITHHOLDING](#block-withholding)**.*
 
 ## SETTINGS.JSON
 
@@ -5660,13 +5668,13 @@ Fichier utilisé dans Bitcoin Core pour stocker les paramètres de l'interface g
 
 ## SHA256
 
-Sigle pour « Secure Hash Algorithm 256 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 256 bits. Conçue par la *National Security Agency* (NSA) au début des années 2000, elle est devenue une norme fédérale pour le traitement des données sensibles. Dans le protocole Bitcoin, la fonction `SHA256` est omniprésente. Elle est employée pour hacher les entêtes des blocs dans le cadre de la preuve de travail. `SHA256` est également utilisée dans le processus de dérivation d'une adresse de réception à partir d'une clé publique. On l'utilise également pour l'agrégation des transactions et des témoins au sein des arbres de Merkle dans les blocs. On retrouve aussi `SHA256` dans le calcul d'empreinte de clés, le calcul de certaines sommes de contrôle et dans de nombreux autres processus autour de Bitcoin. Lorsqu'elle est appliquée deux fois de suite, on parle d'un `HASH256`. Cette double application est celle utilisée majoritairement sur Bitcoin. Lorsque `SHA256` est utilisé conjointement à la fonction `RIPEMD160`, on parle d'un `HASH160`. Ce double hachage est utilisé pour les empreintes de clés et pour le hachage de clés publiques. La fonction `SHA256` fait partie de la famille des SHA 2.
+Sigle pour « *Secure Hash Algorithm 256 bits* ». C'est une fonction de hachage cryptographique produisant un condensat de 256 bits. Conçue par la *National Security Agency* (NSA) au début des années 2000, elle est devenue une norme fédérale pour le traitement des données sensibles. Dans le protocole Bitcoin, la fonction `SHA256` est omniprésente. Elle est employée pour hacher les entêtes des blocs dans le cadre de la preuve de travail. `SHA256` est également utilisée dans le processus de dérivation d'une adresse de réception à partir d'une clé publique. On l'utilise également pour l'agrégation des transactions et des témoins au sein des arbres de Merkle dans les blocs. On retrouve aussi `SHA256` dans le calcul d'empreinte de clés, le calcul de certaines sommes de contrôle et dans de nombreux autres processus autour de Bitcoin. Lorsqu'elle est appliquée deux fois de suite, on parle d'un `HASH256`. Cette double application est celle utilisée majoritairement sur Bitcoin. Lorsque `SHA256` est utilisé conjointement à la fonction `RIPEMD160`, on parle d'un `HASH160`. Ce double hachage est utilisé pour les empreintes de clés et pour le hachage de clés publiques. La fonction `SHA256` fait partie de la famille des SHA 2.
 
 > ► *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage).*
 
 ## SHA512
 
-Sigle pour « Secure Hash Algorithm 512 bits ». C'est une fonction de hachage cryptographique produisant un condensat de 512 bits. Elle a été conçue par la *National Security Agency* (NSA) au début des années 2000. Dans le protocole Bitcoin, la fonction `SHA512` est exclusivement utilisée dans le cadre des dérivations de clés enfants. Dans ce processus, elle est utilisée plusieurs fois dans l'algorithme `HMAC`, ainsi que dans la fonction de dérivation de clés `PBKDF2`. La fonction `SHA512` fait partie de la famille des SHA 2, comme `SHA256`. Son fonctionnement est d'ailleurs très similaire à cette dernière.
+Sigle pour « *Secure Hash Algorithm 512 bits* ». C'est une fonction de hachage cryptographique produisant un condensat de 512 bits. Elle a été conçue par la *National Security Agency* (NSA) au début des années 2000. Pour Bitcoin, la fonction `SHA512` n'est pas utilisée directement dans le cadre du protocole, mais elle est utilisée dans le cadre des dérivations de clés enfants au niveau applicatif, selon le BIP32 et le BIP39. Dans ces processus, elle est utilisée plusieurs fois dans l'algorithme `HMAC`, ainsi que dans la fonction de dérivation de clés `PBKDF2`. La fonction `SHA512` fait partie de la famille des SHA 2, comme `SHA256`. Son fonctionnement est d'ailleurs très similaire à cette dernière.
 
 > ► *Pour plus d'informations, voir la définition de [**FONCTION DE HACHAGE**](#fonction-de-hachage).*
 
@@ -5678,11 +5686,11 @@ Service de mixage de pièces Bitcoin lancé en 2013 par Blockchain.info, mais qu
 
 ## SHARES
 
-Dans le cadre des pools de minage, une share est un indicateur utilisé pour quantifier la contribution d'un mineur individuel au sein du pool. Cette mesure sert de base pour le calcul de la récompense que la pool redistribue à chaque mineur. Chaque share correspond à un hash qui satisfait une cible de difficulté moins élevée que celle du réseau Bitcoin.
+Dans le cadre des pools de minage, une share est un indicateur utilisé pour quantifier la contribution d'un mineur individuel au sein de la pool. Cette mesure sert de base pour le calcul de la récompense que la pool redistribue à chaque mineur. Chaque share correspond à un hash qui satisfait une cible de difficulté moins élevée que celle du réseau Bitcoin.
 
-Pour expliquer avec une analogie, considérons un dé à 20 faces. Sur Bitcoin, supposons que la preuve de travail exige de faire un lancé inférieur à 3 pour valider un bloc (c'est-à-dire, obtenir un résultat de 1 ou 2). Maintenant, imaginons qu'au sein d'une pool de minage, la cible de difficulté pour une share est fixée à 10. Ainsi, pour un mineur individuel dans la pool, chaque lancé de dés qui donne un résultat inférieur à 10 compte comme une share valide. Ces shares sont ensuite transmises à la pool par le mineur, même si elles ne correspondent pas à un résultat valide pour un bloc sur Bitcoin.
+Pour expliquer avec une analogie, considérons un dé à 20 faces. Sur Bitcoin, supposons que la preuve de travail exige de faire un lancé inférieur à 3 pour valider un bloc (c'est-à-dire, obtenir un résultat de 1 ou 2). Maintenant, imaginons qu'au sein d'une pool de minage, la cible de difficulté pour une share est fixée à 10. Ainsi, pour un mineur individuel dans la pool, chaque lancé de dés qui donne un résultat inférieur à 10 compte comme une share valide. Ces shares sont ensuite transmises à la pool par le mineur, afin de réclamer sa rémunération, même si elles ne correspondent pas à un résultat valide pour un bloc sur Bitcoin.
 
-Pour chaque hash calculé, un mineur individuel peut rencontrer trois scénarios différents :
+Pour chaque hash calculé, un mineur individuel dans une pool peut rencontrer trois scénarios différents :
 \begin{itemize}
   \item Si la valeur du hash est supérieure ou égale à la cible de difficulté fixée par la pool pour une share, alors ce hash n'est d'aucune utilité. Le mineur modifie alors son nonce pour tenter un nouveau hash :
 \texttt{hash > share > bloc}
@@ -5705,7 +5713,7 @@ Les pools de minage ajustent la difficulté des shares pour équilibrer la charg
 
 ## SHARES DIFFICULTY
 
-Cible de difficulté inférieure à celle de Bitcoin, définie par une pool de minage pour qualifier un hash de share et évaluer la contribution de chaque mineur individuel dans la pool. Pour gérer efficacement la charge de vérification et garantir que chaque mineur, quel que soit sa puissance de calcul, soumette des shares régulièrement, les pools ajustent la difficulté des shares. La difficulté attribuée à chaque mineur détermine le nombre de shares qu'il accumule : par exemple, si un mineur a une difficulté assignée de 10 et qu'il soumet 5 preuves de travail valides à cette difficulté, il obtient 50 shares. Un mineur plus puissant avec une difficulté de 100 qui soumet 7 preuves de travail valides recevra 700 shares. Ce système permet de quantifier précisément le hashrate de chaque mineur et de distribuer les récompenses selon la méthode de récompense adoptée par la pool (PPS, PPLNS, TIDES...).
+Cible de difficulté supérieure à celle de Bitcoin (donc moins difficile), définie par une pool de minage pour qualifier un hash de share et évaluer la contribution de chaque mineur individuel dans la pool. Pour gérer efficacement la charge de vérification et garantir que chaque mineur, quel que soit sa puissance de calcul, soumette des shares régulièrement, les pools ajustent la difficulté des shares. La difficulté attribuée à chaque mineur détermine le nombre de shares qu'il accumule : par exemple, si un mineur a une difficulté assignée de 10 et qu'il soumet 5 preuves de travail valides à cette difficulté, il obtient 50 shares. Un mineur plus puissant avec une difficulté de 100 qui soumet 7 preuves de travail valides recevra 700 shares. Ce système permet de quantifier précisément le hashrate de chaque mineur et de distribuer les récompenses selon la méthode de calcul de la rémunération choisie (PPS, PPLNS, TIDES...).
 
 > ► *Pour plus d'informations, voir la définition de **[SHARES](#shares)**.*
 
@@ -5715,11 +5723,13 @@ Expression péjorative fréquemment employée dans le monde des cryptomonnaies p
 
 ## SHOR (ALGORITHME)
 
-Algorithme quantique inventé en 1994 par Peter Shor permettant de factoriser des grands entiers en produit de nombres premiers en temps polynomial. En réduisant le nombre d'opérations nécessaires pour factoriser des entiers, Shor pourrait rendre impraticable les algorithmes de cryptographie établis sur ce problème mathématique comme RSA. Shor peut être légèrement modifié pour agir sur presque tous les algorithmes qui utilisent une structure de groupe. Il dispose notamment déjà d'une variante efficace sur la cryptographie sur les courbes elliptiques (ECDSA, Schnorr...). À l'heure actuelle, nous ne disposons pas encore d'un ordinateur quantique suffisamment puissant et stable pour exécuter avec succès l'algorithme de Shor. Shor et ses proches variantes sont donc efficaces sur les algorithmes de cryptographie asymétrique.
+Algorithme quantique inventé en 1994 par Peter Shor permettant de factoriser des grands entiers en produit de nombres premiers en temps polynomial. En réduisant le nombre d'opérations nécessaires pour factoriser des entiers, Shor pourrait rendre impraticable les algorithmes de cryptographie établis sur ce problème mathématique comme RSA. Shor peut être légèrement modifié pour agir sur presque tous les algorithmes qui utilisent une structure de groupe. Il dispose notamment déjà d'une variante efficace sur la cryptographie sur les courbes elliptiques (ECDSA, Schnorr...). Shor et ses proches variantes sont donc efficaces sur les algorithmes de cryptographie asymétrique. À l'heure actuelle, nous ne disposons pas encore d'un ordinateur quantique suffisamment puissant et stable pour exécuter avec succès l'algorithme de Shor.
 
 ## SIDECHAIN
 
-Blockchain conçue pour fonctionner en parallèle avec la blockchain principale de Bitcoin. Les deux chaînes sont connectées à l'aide d'un ancrage bilatéral qui permet de faire en sorte que l'actif qui circule sur la sidechain conserve la même valeur que le bitcoin sur la chaîne principale. La sidechain dispose de son propre mécanisme de consensus qui peut être indépendant ou qui peut reposer en partie sur celui de la chaîne principale. Elle permet généralement d'utiliser des fonctionnalités qui ne sont pas disponibles directement sur la chaîne principale ou bien de bénéficier de fonctionnalités améliorées, comme par exemple : plus de flexibilité dans le développement, des transactions plus rapides et/ou plus confidentielles, ou encore, une capacité transactionnelle plus élevée. Pour ce faire, la sidechain fait des compromis par rapport à la chaîne principale. Ce concept de sidechain a initialement été présenté en 2014 par Adam Back, Matt Corallo, Luke Dashjr, Mark Friedenbach, Gregory Maxwell, Andrew Miller, Andrew Poelstra Jorge Timon et Pieter Wuille. Actuellement, les sidechains les plus connues sur Bitcoin sont Liquid et RSK (Rootstock). Ces dernières demeurent toutefois très peu utilisées par à d'autres solutions de surcouche avec un modèle différent comme le Lightning Network.
+Blockchain conçue pour fonctionner en parallèle avec la blockchain principale de Bitcoin. Les deux chaînes sont connectées à l'aide d'un ancrage bilatéral qui permet de faire en sorte que l'actif qui circule sur la sidechain conserve la même valeur que le bitcoin sur la chaîne principale. La sidechain dispose de son propre mécanisme de consensus qui peut être indépendant ou qui peut reposer en partie sur celui de la chaîne principale. Elle permet généralement d'utiliser des fonctionnalités qui ne sont pas disponibles directement sur la chaîne principale ou bien de bénéficier de fonctionnalités améliorées, comme par exemple : plus de flexibilité dans le développement, des transactions plus rapides et/ou plus confidentielles, ou encore, une capacité transactionnelle plus élevée. Pour ce faire, la sidechain fait des compromis par rapport à la chaîne principale.
+
+Le concept de sidechain a initialement été présenté en 2014 par Adam Back, Matt Corallo, Luke Dashjr, Mark Friedenbach, Gregory Maxwell, Andrew Miller, Andrew Poelstra, Jorge Timon et Pieter Wuille. Actuellement, les sidechains les plus connues sur Bitcoin sont Liquid et RSK (Rootstock). Ces dernières demeurent toutefois très peu utilisées par rapport à d'autres solutions de surcouche avec un modèle différent comme le Lightning Network.
 
 > ► *En français, on parle d'une « chaîne latérale » ou d'une « chaîne parallèle ».*
 
@@ -5743,11 +5753,11 @@ Variante du SigHash Flag modificateur `SIGHASH_ANYPREVOUT` dans Bitcoin. Ce SigH
 
 ## SIGHASH FLAG
 
-Paramètre dans une transaction Bitcoin permettant de déterminer les composants d'une transaction (inputs et outputs) couvertes par la signature associée et deviennent donc immuables. Le SigHash Flag est un octet ajouté à la signature numérique de chaque entrée. Le choix du SigHash Flag affecte donc directement les parties de la transaction qui sont figées par la signature et celles qui peuvent encore être encore modifiées par la suite. Ce mécanisme assure que les signatures engagent les données de transaction de manière précise et sécurisée, selon l'intention du signataire. Trois principaux SigHash Flags existent :
+Paramètre dans une transaction Bitcoin permettant de déterminer les composants d'une transaction (inputs et outputs) couvertes par la signature associée, qui deviennent donc immuables. Le SigHash Flag est un octet ajouté à la signature numérique de chaque entrée. Le choix du SigHash Flag affecte donc directement les parties de la transaction qui sont figées par la signature et celles qui peuvent encore être encore modifiées par la suite. Ce mécanisme assure que les signatures engagent les données de transaction de manière précise et sécurisée, selon l'intention du signataire. Trois principaux SigHash Flags existent :
 
 -`SIGHASH_ALL` (`0x01`) : La signature s'applique à tous les inputs et outputs de la transaction, les verrouillant ainsi intégralement ;
 
--`SIGHASH_NONE` (`0x02`) : La signature s'applique à tous les inputs mais aucun output, permettant la modification des outputs après la signature ;
+-`SIGHASH_NONE` (`0x02`) : La signature s'applique à tous les inputs, mais à aucun output, permettant la modification des outputs après la signature ;
 
 -`SIGHASH_SINGLE` (`0x03`) : La signature couvre tous les inputs et seulement un output correspondant à l'index de l'input signé.
 
@@ -5779,7 +5789,7 @@ Type de SigHash Flag (`0x83`) combiné avec le modificateur `SIGHASH_ANYONECANPA
 
 ## SIGNATURE NUMÉRIQUE
 
-Preuve cryptographique qui démontre la possession d'une clé privée spécifique, associée à une clé publique unique, sans avoir à la divulguer. Sur Bitcoin, on la construit à l'aide de la clé privée et du hash d'une transaction. Elle atteste la propriété des bitcoins concernés et permet de satisfaire les conditions de dépense. Elle est générée grâce à un algorithme de signature numérique sur courbe elliptique tel qu'ECDSA ou le protocole de Schnorr.
+Preuve cryptographique qui démontre la possession d'une clé privée spécifique, associée à une clé publique unique, sans avoir à la divulguer. Sur Bitcoin, on la construit à l'aide de la clé privée et du hash d'une transaction. Elle atteste la propriété des bitcoins concernés et permet de satisfaire un script qui déverrouille un UTXO. Elle est générée grâce à un algorithme de signature numérique sur courbe elliptique tel qu'ECDSA ou le protocole de Schnorr.
 
 ## SIGNET
 
@@ -5793,7 +5803,7 @@ Dans le `scriptPubKey`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` comptent pour 4 sig
 
 Dans le `redeemScript`, les opcodes `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent également 4 sigops, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptabilisés pour `4n` s'ils précèdent `OP_n`, ou 80 sigops dans le cas contraire ;
 
-Pour le `witnessScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent 1 sigop, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptés pour `n` s'ils sont introduits par `OP_n`, ou 20 sigops autrement.
+Pour le `witnessScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent 1 sigop, `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` sont comptés pour `n` s'ils sont introduits par `OP_n`, ou 20 sigops autrement ;
 
 Dans les scripts Taproot, les sigops sont traitées de manière différente par rapport aux scripts traditionnels. Au lieu de compter directement chaque opération de signature, Taproot introduit un budget de sigops pour chaque entrée de transaction, qui est proportionnel à la taille de cette entrée. Ce budget est de 50 sigops plus la taille en octets du témoin de l'input. Chaque opération de signature réduit ce budget de 50. Si l'exécution d'une opération de signature fait chuter le budget en dessous de zéro, le script est invalide. Cette méthode permet plus de flexibilité dans les scripts Taproot, tout en maintenant une protection contre les abus potentiels liés aux sigops, en les liant directement au poids de l'entrée. Ainsi, les scripts Taproot ne sont pas pris en compte dans la limite des 80 000 sigops par bloc.
 
