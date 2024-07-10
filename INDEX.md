@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 759 `**
+**Nombre total de définitions : ` 760 `**
 
 ### A
 
@@ -717,6 +717,7 @@
 - [SIGHASH_NONE/SIGHASH_ACP](./dictionnaire/S.md#sighash_nonesighash_acp)
 - [SIGHASH_SINGLE (0X03)](./dictionnaire/S.md#sighash_single-0x03)
 - [SIGHASH_SINGLE/SIGHASH_ACP](./dictionnaire/S.md#sighash_singlesighash_acp)
+- [SIGNATURE AVEUGLE](./dictionnaire/S.md#signature-aveugle)
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
