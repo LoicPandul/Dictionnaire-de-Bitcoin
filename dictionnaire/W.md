@@ -1,8 +1,8 @@
 ## WABISABI
 
-Protocole de coordination de coinjoins utilisé sur le portefeuille Wasabi.
+Protocole de coinjoins chaumiens avec un coordinateur central utilisé sur le portefeuille Wasabi 2.0. Ce modèle a été conçu Ádám Ficsór (nopara73), Yuval Kogman, Lucas Ontivero, et István András Seres en 2021, et a été intégré dans le logiciel Wasabi 2.0 l'année suivante.
 
-> ► *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin).*
+> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
 
 ## WALLET
 
@@ -42,9 +42,9 @@ Désigne un individu ou une entité qui possède une quantité très importante 
 
 ## WHIRLPOOL
 
-Implémentation du protocole de coinjoins chaumiens ZeroLink, développée par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
+Protocole de coinjoins chaumiens ZeroLink, développée par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
 
-> ► *Pour plus d'informations, voir la définition de [**COINJOIN**](./C.md#coinjoin) et de [**ZEROLINK**](./Z.md#zerolink).*
+> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)** et de [**ZEROLINK**](./Z.md#zerolink).*
 
 ## WHIRLPOOL STAT TOOL
 
