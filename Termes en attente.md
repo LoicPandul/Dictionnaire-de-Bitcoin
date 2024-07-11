@@ -6,9 +6,6 @@ ___
 
 > *Address Poisonning.*
 
-## MÉLANGEUR
-
-
 
 ## ADDRESS SWAPPING
 
@@ -173,6 +170,8 @@ Peter Todd
 ## JOINMARKET
 
 Chris Belcher
+ATTENTION : TERME DÉJÀ PRÉSENT !
+ATTENTION : TERME DÉJÀ PRÉSENT !
 
 
 ## JOINPOOLS
@@ -246,6 +245,10 @@ LSP
 
 
 ## MYSTERY SHOPPER PAYMENTS
+
+
+
+## MÉLANGEUR
 
 
 
