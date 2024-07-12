@@ -4,7 +4,7 @@
 
 Chaque `vout` encapsule principalement deux informations :
 * la valeur, exprimée en bitcoins, qui représente le montant envoyé ;
-* un script de verrouillage (`scriptPubKey`) qui stipule les conditions requises pour que les fonds puissent être dépensés à nouveau dans une prochaine transaction.
+* un script de verrouillage (`scriptPubKey`) qui stipule les conditions requises pour que les fonds puissent être dépensés de nouveau dans une prochaine transaction.
 
 La combinaison du `txid` et du `vout` d'une pièce spécifique forme ce que l'on appelle un UTXO, par exemple :
 
