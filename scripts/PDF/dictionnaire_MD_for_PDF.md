@@ -696,11 +696,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   268 | [URI](#uri)                    |   268 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   268 | [UTREEXO](#utreexo)            |   269 |
-| [UNIX](#unix)                  |   268 | [UTXO](#utxo)                  |   270 |
-| [UPRV](#uprv)                  |   268 | [UTXO SET](#utxo-set)          |   270 |
-| [UPUB](#upub)                  |   268 |                                |       |
+| [UASF](#uasf)                  |   268 | [UPUB](#upub)                  |   269 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   268 | [URI](#uri)                    |   269 |
+| [UNIX](#unix)                  |   268 | [UTREEXO](#utreexo)            |   270 |
+| [UNIX (HEURE)](#unix-heure)    |   268 | [UTXO](#utxo)                  |   271 |
+| [UPRV](#uprv)                  |   269 | [UTXO SET](#utxo-set)          |   271 |
 | | | | |
 
 
@@ -708,10 +708,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   272 | [VOUT](#vout)                  |   273 |
-| [VANITYGEN](#vanitygen)        |   272 | [VPRV](#vprv)                  |   273 |
-| [VERSIONNAGE](#versionnage)    |   272 | [VPUB](#vpub)                  |   273 |
-| [VIN](#vin)                    |   272 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   273 | [VOUT](#vout)                  |   274 |
+| [VANITYGEN](#vanitygen)        |   273 | [VPRV](#vprv)                  |   274 |
+| [VERSIONNAGE](#versionnage)    |   273 | [VPUB](#vpub)                  |   274 |
+| [VIN](#vin)                    |   273 |                                |       |
 | | | | |
 
 
@@ -719,13 +719,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   275 | [WATCH-ONLY WALLET](#watch-only-wallet) |   276 |
-| [WALLET](#wallet)              |   275 | [WHALE](#whale)                |   276 |
-| [WALLET.DAT](#wallet.dat)      |   275 | [WHIRLPOOL](#whirlpool)        |   276 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   275 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   276 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   275 | [WHITE PAPER](#white-paper)    |   276 |
-| [WASABI WALLET](#wasabi-wallet) |   275 | [WITNESSSCRIPT](#witnessscript) |   276 |
-| [WATCHMEN](#watchmen)          |   275 | [WTXID](#wtxid)                |   277 |
+| [WABISABI](#wabisabi)          |   276 | [WATCH-ONLY WALLET](#watch-only-wallet) |   277 |
+| [WALLET](#wallet)              |   276 | [WHALE](#whale)                |   277 |
+| [WALLET.DAT](#wallet.dat)      |   276 | [WHIRLPOOL](#whirlpool)        |   277 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   276 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   277 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   276 | [WHITE PAPER](#white-paper)    |   277 |
+| [WASABI WALLET](#wasabi-wallet) |   276 | [WITNESSSCRIPT](#witnessscript) |   277 |
+| [WATCHMEN](#watchmen)          |   276 | [WTXID](#wtxid)                |   278 |
 | | | | |
 
 
@@ -733,8 +733,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XBT](#xbt)                    |   279 | [XPRV](#xprv)                  |   279 |
-| [XOR](#xor)                    |   279 | [XPUB](#xpub)                  |   280 |
+| [XBT](#xbt)                    |   280 | [XPRV](#xprv)                  |   280 |
+| [XOR](#xor)                    |   280 | [XPUB](#xpub)                  |   281 |
 | | | | |
 
 
@@ -742,7 +742,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   282 | [YPUB](#ypub)                  |   282 |
+| [YPRV](#yprv)                  |   283 | [YPUB](#ypub)                  |   283 |
 | | | | |
 
 
@@ -750,9 +750,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   284 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   284 |
-| [ZEROLINK](#zerolink)          |   284 | [ZPRV](#zprv)                  |   284 |
-| [ZEROSYNC](#zerosync)          |   284 | [ZPUB](#zpub)                  |   285 |
+| [ZEROCONF](#zeroconf)          |   285 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   285 |
+| [ZEROLINK](#zerolink)          |   285 | [ZPRV](#zprv)                  |   285 |
+| [ZEROSYNC](#zerosync)          |   285 | [ZPUB](#zpub)                  |   286 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -6331,13 +6331,25 @@ Sigle de « *User-Activated Soft Fork* ». Qualifie un soft fork dans Bitcoin lo
 
 ## UDP (USER DATAGRAM PROTOCOL)
 
-Protocole de communication utilisé sur Internet qui permet l'envoi de messages (datagrammes) entre ordinateurs sans établir de connexion préalable (contrairement à TCP). UDP est une méthode de transfert rapide mais sans garantie de livraison, d'ordre des paquets, ou de gestion d'erreur. On l'utilise plutôt pour des applications nécessitant une diffusion rapide et en temps réel. Ce protocole avait été utilisé au sein du projet FIBRE pour accélérer la propagation de blocs Bitcoin.
+Protocole de communication utilisé sur Internet qui permet l'envoi de messages (datagrammes) entre ordinateurs sans établir de connexion préalable (contrairement à TCP). UDP est une méthode de transfert rapide mais sans garantie de livraison, d'ordre des paquets, ou de gestion d'erreur. On l'utilise plutôt pour des applications nécessitant une diffusion rapide et en temps réel. Ce protocole avait été utilisé au sein du projet FIBRE (*Fast Internet Bitcoin Relay Engine*) pour accélérer la propagation de blocs Bitcoin.
 
-> ► *Pour plus d'informations, voir la définition de [**FIBRE (FAST INTERNET BITCOIN RELAY ENGINE)**](#fibre).*
+> ► *Pour plus d'informations, voir la définition de [**FIBRE**](#fibre).*
 
 ## UNIX
 
 Famille de systèmes d'exploitation multitâche développé dans les années 1970 par Bell Labs. Conçu pour être simple, flexible et portable, UNIX a influencé de nombreux systèmes modernes. Ses principes fondamentaux incluent une structure de fichiers hiérarchique, l'utilisation de scripts shell et des utilitaires modulaires. UNIX est à l'origine de nombreuses variantes, dont Linux, et reste une référence en matière de stabilité et de performance.
+
+## UNIX (HEURE)
+
+L'Heure Unix ou Temps Unix représente le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC (Époque Unix). Ce système est utilisé dans les systèmes d'exploitation Unix et dérivés pour marquer le temps de manière universelle et standardisée. Il permet la synchronisation des horloges et la gestion des événements dans le temps, indépendamment des fuseaux horaires.
+
+Dans le cadre de Bitcoin, on l'utilise pour l'horloge locale des noeuds, et donc pour le calcul du NAT. Le network-adjusted time est une médiane du temps des nœuds calculée en local par chaque nœud, et ce référentiel est ensuite utilisé pour vérifier la validité des horodatages des blocs. En effet, pour qu'un bloc soit accepté par un nœud, son horodatage doit se situer entre le MTP (temps médian des 11 derniers blocs minés) et le NAT plus 2 heures :
+
+\begin{codeblock}
+MTP < Horodatage valide < (NAT + 2h)
+\end{codeblock}
+
+On utilise également l'Heure Unix pour établir des timelocks, lorsque ceux-ci se basent sur l'heure réelle, et non pas sur un nombre de blocs. 
 
 ## UPRV
 
@@ -6353,7 +6365,9 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin Te
 
 ## URI
 
-Sigle de « *Uniform Resource Identifier* ». C'est un format de chaîne de caractères standardisé utilisé pour identifier une ressource sur Internet. Un URI peut être soit un URL (*Uniform Resource Locator*), qui fournit un moyen d'accéder à une ressource en indiquant son emplacement sur un réseau informatique, soit un URN (*Uniform Resource Name*), qui nomme la ressource sans indiquer comment la localiser. Les URI sont centraux dans le fonctionnement du World Wide Web, car ils permettent d'accéder à des ressources comme des pages web, des documents et des services. Dans le contexte de Bitcoin, un URI est utilisé spécifiquement pour faciliter les transactions. Il permet d'encoder une adresse de réception, ainsi que d'autres paramètres d'une transaction comme le montant, dans un format standardisé selon le BIP21. Cela simplifie le processus de paiement en permettant aux utilisateurs de cliquer sur un lien ou de scanner un code QR, qui intègre automatiquement les informations nécessaires dans leur application de portefeuille Bitcoin.
+Sigle de « *Uniform Resource Identifier* ». C'est un format de chaîne de caractères standardisé utilisé pour identifier une ressource sur Internet. Un URI peut être soit un URL (*Uniform Resource Locator*), qui fournit un moyen d'accéder à une ressource en indiquant son emplacement sur un réseau informatique, soit un URN (*Uniform Resource Name*), qui nomme la ressource sans indiquer comment la localiser. Les URI sont importants dans le fonctionnement du *World Wide Web*, car ils permettent d'accéder à des ressources comme des pages web, des documents et des services. 
+
+Dans le contexte de Bitcoin, un URI est utilisé spécifiquement pour faciliter les transactions. Il permet d'encoder une adresse de réception, ainsi que d'autres paramètres d'une transaction comme le montant, dans un format standardisé selon le BIP21. Cela simplifie le processus de paiement en permettant aux utilisateurs de cliquer sur un lien ou de scanner un code QR, qui intègre automatiquement les informations nécessaires dans leur application de portefeuille Bitcoin.
 
 ## UTREEXO
 
@@ -6379,17 +6393,19 @@ Grâce à ces informations transmises par l’émetteur de la transaction, le n�
 
 Si la racine de Merkle qu’il obtient par son processus est la même que la racine de Merkle qu’il stockait dans sa RAM, alors il est persuadé que l’UTXO n° 3 fait bien partie de l’UTXO set.
 
-Cette méthode permet de réduire les besoins en RAM pour les opérateurs de nœuds complets. Cependant, Utreexo présente des limites, notamment l'augmentation de la taille des blocs en raison des preuves supplémentaires et la dépendance potentielle des nœuds Utreexo envers les "Bridge Nodes" pour obtenir les preuves manquantes. Les Bridge Nodes sont des nœuds complets traditionnels qui fournissent les preuves nécessaires aux nœuds Utreexo, permettant ainsi une vérification complète. Cette approche offre un compromis entre efficacité et décentralisation, facilitant l'accès à la validation des transactions pour des utilisateurs aux ressources limitées.
+Cette méthode permet de réduire les besoins en RAM pour les opérateurs de nœuds complets. Cependant, Utreexo présente des limites, notamment l'augmentation de la taille des blocs en raison des preuves supplémentaires et la dépendance potentielle des nœuds Utreexo envers les Bridge Nodes pour obtenir les preuves manquantes. Les Bridge Nodes sont des nœuds complets traditionnels qui fournissent les preuves nécessaires aux nœuds Utreexo, permettant ainsi une vérification complète. Cette approche offre un compromis entre efficacité et décentralisation, facilitant l'accès à la validation des transactions pour des utilisateurs aux ressources limitées.
 
 > ► *Pour plus d'informations, voir la définition de [**UTXO SET**](#utxo-set).*
 
 ## UTXO
 
-Sigle de *Unspent Transaction Output*. Un UTXO est une sortie de transaction qui n'a pas encore été dépensée ou utilisée comme entrée pour une nouvelle transaction. Les UTXOs représentent la fraction de bitcoins que possède un utilisateur et qui sont actuellement disponibles pour être dépensés. Chaque UTXO est associé à un script de sortie spécifique, qui définit les conditions nécessaires pour dépenser les bitcoins. Les transactions dans Bitcoin consomment ces UTXOs en entrées (inputs) et créent de nouveaux UTXOs en sorties (outputs). Le modèle d'UTXO est fondamental sur Bitcoin, car il permet de vérifier facilement que les transactions n'essaient pas de dépenser des bitcoins qui n'existent pas ou qui ont déjà été dépensés.
+Sigle de *Unspent Transaction Output*. Un UTXO est une sortie de transaction qui n'a pas encore été dépensée, c'est-à-dire utilisée comme entrée pour une nouvelle transaction. Les UTXOs représentent la fraction de bitcoins que possède un utilisateur et qui sont actuellement disponibles pour être dépensés. Chaque UTXO est associé à un script de sortie spécifique (`scriptPubKey`), qui définit les conditions nécessaires pour dépenser les bitcoins. Les transactions dans Bitcoin consomment ces UTXOs en entrées (inputs) et créent de nouveaux UTXOs en sorties (outputs). Le modèle d'UTXO est fondamental sur Bitcoin, car il permet de vérifier facilement que les transactions n'essaient pas de dépenser des bitcoins qui n'existent pas ou qui ont déjà été dépensés.
 
 ## UTXO SET
 
-Le terme « UTXO set » désigne l'ensemble de tous les UTXOs existants à un moment donné. Autrement dit, c'est une grosse liste de tous les différents morceaux de bitcoins qui attendent d'être dépensés. Si l'on additionne les montants de tous les UTXOs de l'UTXO set, cela nous donne la masse monétaire totale de bitcoins en circulation. Chaque nœud du réseau Bitcoin conserve son propre UTXO set en temps réel. Il l'actualise au fur et à mesure de la confirmation de nouveaux blocs valides, avec les transactions qu'ils incluent, qui consomment certains UTXOs de l'UTXO set, et qui en créent de nouveaux en contrepartie. Cet UTXO set est conservé par chaque nœud afin de pouvoir vérifier rapidement si les UTXOs dépensés dans les transactions sont bien légitimes. Cela leur permet de détecter et de rejeter les tentatives de doubles dépenses. L'UTXO set est souvent au cœur d'inquiétudes sur la décentralisation de Bitcoin, car sa taille augmente naturellement très rapidement. Puisqu'il faut en conserver une partie en RAM pour pouvoir procéder à la vérification des transactions en temps raisonnable, il est possible que l'UTXO set rende progressivement l'opération d'un nœud complet trop couteuse. L'UTXO set a également un fort impact sur l'IBD (Initial Block Download). Au plus on peut mettre une grande part de l'UTXO en RAM, au plus l'IBD est rapide. Sur Bitcoin Core, l'UTXO set est stocké dans le dossier nommé « chainstate ».
+Désigne l'ensemble de tous les UTXOs existants à un moment donné. Autrement dit, c'est une grosse liste de tous les différents morceaux de bitcoins qui attendent d'être dépensés. Si l'on additionne les montants de tous les UTXOs de l'UTXO set, cela nous donne la masse monétaire totale de bitcoins en circulation. Chaque nœud du réseau Bitcoin conserve son propre UTXO set en temps réel. Il l'actualise au fur et à mesure de la confirmation de nouveaux blocs valides, avec les transactions qu'ils incluent, qui consomment certains UTXOs de l'UTXO set, et qui en créent de nouveaux en contrepartie.
+
+Cet UTXO set est conservé par chaque nœud afin de pouvoir vérifier rapidement si les UTXOs dépensés dans les transactions sont bien légitimes. Cela leur permet de détecter et de rejeter les tentatives de doubles dépenses. L'UTXO set est souvent au cœur d'inquiétudes sur la décentralisation de Bitcoin, car sa taille augmente naturellement très rapidement. Puisqu'il faut en conserver une partie en RAM pour pouvoir procéder à la vérification des transactions en temps raisonnable, il est possible que l'UTXO set rende progressivement l'opération d'un nœud complet trop couteuse. L'UTXO set a également un fort impact sur l'IBD (*Initial Block Download*). Au plus on peut mettre une grande part de l'UTXO set en RAM, au plus l'IBD est rapide. Sur Bitcoin Core, l'UTXO set est stocké dans le dossier nommé `/chainstate`.
 
 > ► *En français, on pourrait traduire « UTXO set » par « ensemble d'UTXO ». Pour plus d'informations, voir la définition d'[**UTXO**](.U.md#utxo).*
 
