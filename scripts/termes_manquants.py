@@ -58,7 +58,7 @@ def mark_existing_terms(missing_terms, existing_terms):
     marked_terms = []
     for term in missing_terms:
         term_title = term[0].strip()
-        if term_title in existing_terms:
+        if term_title in existing_terms and 'ATTENTION : TERME DÉJÀ PRÉSENT !\n' not in term:
             term.append('ATTENTION : TERME DÉJÀ PRÉSENT !\n')
         marked_terms.append(term)
     return marked_terms
