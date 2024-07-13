@@ -25,9 +25,9 @@
 ## Table des matières
 - [Description du projet 📝](#description-du-projet-)
 - [Lire le *Dictionnaire de Bitcoin* 📖](#lire-le-dictionnaire-de-bitcoin-)
-- [Demandes de modification et contributions ✍️](#demandes-de-modification-et-contributions-)
+- [Demandes de modification et contributions ✍️](#demandes-de-modification-et-contributions-%EF%B8%8F)
 - [Termes acceptés dans le *Dictionnaire de Bitcoin* ✅](#termes-acceptés-dans-le-dictionnaire-de-bitcoin-)
-- [Structure du dépôt 🗂️](#structure-du-dépôt-)
+- [Structure du dépôt 🗂️](#structure-du-dépôt-%EF%B8%8F)
 - [Licence et réutilisation 📜](#licence-et-réutilisation-)
 
 ## Description du projet 📝
