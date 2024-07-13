@@ -26,6 +26,8 @@ Méthode pour encoder une clé privée Bitcoin de manière à ce qu'elle puisse 
 
 Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités telles que le coinjoin.
 
+![](assets/48.png)
+
 ## WATCHMEN
 
 Dans le cadre de Liquid (une sidechain de Bitcoin), ce sont des entités chargées de maintenir l'ancrage du L-BTC, le jeton natif de Liquid, en gérant et sécurisant les BTC utilisés en sous-jacent. Ils s'assurent que les actifs transférés entre la blockchain Bitcoin principale et la sidechain Liquid sont correctement verrouillés et déverrouillés. L'objectif de leurs actions est de maintenir la même valeur entre le L-BTC circulant sur Liquid et le BTC circulant sur Bitcoin. Dans Liquid, les watchmen font partie des fonctionnaires avec les blocksigners.
@@ -43,6 +45,8 @@ Désigne un individu ou une entité qui possède une quantité très importante 
 ## WHIRLPOOL
 
 Protocole de coinjoins chaumiens ZeroLink, développée par les équipes du portefeuille Samourai Wallet. Whirlpool est actuellement disponible sur les portefeuilles Samourai Wallet (Android), Sparrow Wallet (PC) et Bitcoin Keeper (IOS et Android).
+
+![](assets/44.png)
 
 > ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)** et de [**ZEROLINK**](./Z.md#zerolink).*
 
