@@ -397,7 +397,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [GETWORK](#getwork)            |   126 | [GRAINE (SEED)](#graine-seed)  |   129 |
 | [GIT](#git)                    |   127 | [GREEN ADDRESS](#green-address) |   129 |
 | [GITHUB](#github)              |   127 | [GREEN ADDRESSES](#green-addresses) |   129 |
-| [GITLAB](#gitlab)              |    11 | [GREEN WALLET](#green-wallet)  |   130 |
+| [GITLAB](#gitlab)              |   127 | [GREEN WALLET](#green-wallet)  |   130 |
 | [GNPA (PRNG)](#gnpa-prng)      |   128 | [GROS-BOUTISTE](#gros-boutiste) |   130 |
 | [GNU](#gnu)                    |   128 | [GUI](#gui)                    |   130 |
 | [GO (GOLANG)](#go-golang)      |   128 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |   130 |
@@ -3242,6 +3242,7 @@ Système de contrôle de version distribué conçu pour gérer tout type de proj
 Plateforme de gestion et d'hébergement de code source qui facilite la collaboration entre développeurs. Comme son nom l'indique, GitHub est établi sur le système de contrôle de version Git. Cette plateforme permet donc de suivre les changements de code, de gérer les versions et d'encourager la collaboration grâce à des outils comme les pull requests et les issues. GitHub est devenu un outil incontournable pour les développeurs, notamment dans la communauté Bitcoin où la majorité des projets, y compris Bitcoin Core, l'implémentation principale du protocole, y sont hébergés. En 2018, Microsoft a acquis GitHub pour 7,5 milliards de dollars.
 
 ![](../../dictionnaire/assets/46.png)
+
 ## GITLAB
 
 Plateforme de gestion et d'hébergement de code source qui facilite la collaboration entre développeurs. GitLab est la principale alternative à GitHub. La plateforme est assez similaire, mais elle offre également la possibilité d'être autohébergée. Comme son nom l'indique, GitLab est établi sur le système de contrôle de version Git. Cette plateforme permet donc de suivre les changements de code, de gérer les versions et d'encourager la collaboration grâce à des outils comme les pull requests et les issues. Certains projets liés à Bitcoin comme Samourai Wallet, Whirlpool ou encore RoninDojo utilisent GitLab.
