@@ -42,7 +42,7 @@ Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les rés
 
 ## Lire le *Dictionnaire de Bitcoin* 📖
 
-Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt. C'est la manière la plus simple de lire et de rechercher des définitions.
+Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions.
 
 &nbsp;
 <p align="center">
