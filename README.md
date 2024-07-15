@@ -2,14 +2,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Nombre%20de%20définitions-764-black" alt="Nombre de définitions">
 </p>
-<p align="center">
-  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin">
-    <img src="https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs&color=black&cacheBust=12345" alt="Contributeurs">
-  </a>
-  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/fork">
-    <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks&color=black&cacheBust=12345" alt="Forks">
-  </a>
-</p>
 
 <p align="center">
   <a href="https://x.com/Loic_Pandul">
