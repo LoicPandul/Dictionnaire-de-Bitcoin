@@ -4,15 +4,16 @@
 </p>
 <p align="center">
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin">
-    <img src="https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs&color=black" alt="Contributeurs">
+    <img src="https://img.shields.io/github/contributors/LoicPandul/Dictionnaire-de-Bitcoin?label=Contributeurs&color=black&cacheBust=12345" alt="Contributeurs">
   </a>
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/fork">
-    <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks&color=black" alt="Forks">
+    <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks&color=black&cacheBust=12345" alt="Forks">
   </a>
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence&color=black" alt="Licence">
+    <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence&color=black&cacheBust=12345" alt="Licence">
   </a>
 </p>
+
 <p align="center">
   <a href="https://x.com/Loic_Pandul">
     <img src="https://img.shields.io/twitter/follow/Loic_Pandul?style=social" alt="Suivez-moi sur X">
