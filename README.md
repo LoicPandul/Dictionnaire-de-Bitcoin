@@ -9,9 +9,6 @@
   <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/fork">
     <img src="https://img.shields.io/github/forks/LoicPandul/Dictionnaire-de-Bitcoin?label=Forks&color=black&cacheBust=12345" alt="Forks">
   </a>
-  <a href="https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/LoicPandul/Dictionnaire-de-Bitcoin?label=Licence&color=black&cacheBust=12345" alt="Licence">
-  </a>
 </p>
 
 <p align="center">
