@@ -1,4 +1,4 @@
 ## CRYPTER
 
-Ce terme n'existe pas. On dit « chiffrer ».
+Ce terme n'existe pas. On dit « chiffrer ».
 

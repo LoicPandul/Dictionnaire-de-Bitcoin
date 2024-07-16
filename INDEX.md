@@ -159,7 +159,6 @@
 - [BLKINDEX.DAT](./dictionnaire/B.md#blkindexdat)
 - [BLKTREE/](./dictionnaire/B.md#blktree)
 - [BLOC](./dictionnaire/B.md#bloc)
-- [BLOC CANDIDAT](./dictionnaire/B.md#bloc-candidat)
 - [BLOCKCHAIN](./dictionnaire/B.md#blockchain)
 - [BLOCKS/BLK?????.DAT](./dictionnaire/B.md#blocksblkdat)
 - [BLOCKS INDEX](./dictionnaire/B.md#blocks-index)
@@ -168,7 +167,6 @@
 - [BLOCKSIGNERS](./dictionnaire/B.md#blocksigners)
 - [BLOCKSTREAM](./dictionnaire/B.md#blockstream)
 - [BLOCK TEMPLATE](./dictionnaire/B.md#block-template)
-- [BLOCK WITHHOLDING](./dictionnaire/B.md#block-withholding)
 - [BLOOM FILTER](./dictionnaire/B.md#bloom-filter)
 - [B-MONEY](./dictionnaire/B.md#b-money)
 - [BOLT](./dictionnaire/B.md#bolt)
@@ -187,6 +185,7 @@
 - [C++ (PLUS PLUS)](./dictionnaire/C.md#c-plus-plus)
 - [CAHOOTS](./dictionnaire/C.md#cahoots)
 - [CANAL DE PAIMENT](./dictionnaire/C.md#canal-de-paiment)
+- [CANDIDAT (BLOC)](./dictionnaire/C.md#candidat-bloc)
 - [CAPACITÉ DE CANAL LIGHTNING](./dictionnaire/C.md#capacité-de-canal-lightning)
 - [CASHU](./dictionnaire/C.md#cashu)
 - [CET](./dictionnaire/C.md#cet)
@@ -323,6 +322,7 @@
 - [FERME DE MINAGE](./dictionnaire/F.md#ferme-de-minage)
 - [FIAT](./dictionnaire/F.md#fiat)
 - [FIBRE](./dictionnaire/F.md#fibre)
+- [FINNEY HAL](./dictionnaire/F.md#finney-hal)
 - [FLAG DAY](./dictionnaire/F.md#flag-day)
 - [FONCTION DE HACHAGE](./dictionnaire/F.md#fonction-de-hachage)
 - [FONCTIONNAIRE](./dictionnaire/F.md#fonctionnaire)
@@ -360,7 +360,6 @@
 ### H
 
 - [HACHEUR](./dictionnaire/H.md#hacheur)
-- [HAL FINNEY](./dictionnaire/H.md#hal-finney)
 - [HALVING](./dictionnaire/H.md#halving)
 - [HARD FORK](./dictionnaire/H.md#hard-fork)
 - [HARDWARE WALLET](./dictionnaire/H.md#hardware-wallet)
@@ -465,6 +464,7 @@
 
 ### N
 
+- [NAKAMOTO SATOSHI](./dictionnaire/N.md#nakamoto-satoshi)
 - [NESTED SEGWIT](./dictionnaire/N.md#nested-segwit)
 - [NETWORK-ADJUSTED TIME (NAT)](./dictionnaire/N.md#network-adjusted-time-nat)
 - [NEW YORK AGREEMENT (NYA)](./dictionnaire/N.md#new-york-agreement-nya)
@@ -485,7 +485,7 @@
 
 - [OBJECTIF](./dictionnaire/O.md#objectif)
 - [OBOE (OFF-BY-ONE ERROR)](./dictionnaire/O.md#oboe-off-by-one-error)
-- [OBSOLÈTE](./dictionnaire/O.md#obsolète)
+- [OBSOLÈTE (BLOC)](./dictionnaire/O.md#obsolète-bloc)
 - [OCTET (BYTE)](./dictionnaire/O.md#octet-byte)
 - [OFF-CHAIN](./dictionnaire/O.md#off-chain)
 - [ON-CHAIN](./dictionnaire/O.md#on-chain)
@@ -662,6 +662,7 @@
 - [RÉSERVES FRACTIONNAIRES](./dictionnaire/R.md#réserves-fractionnaires)
 - [RÉSISTANCE AU PARTITIONNEMENT](./dictionnaire/R.md#résistance-au-partitionnement)
 - [RESYNCHRONISATION](./dictionnaire/R.md#resynchronisation)
+- [RÉTENTION (DE BLOC)](./dictionnaire/R.md#rétention-de-bloc)
 - [RÉTROCOMPATIBILITÉ](./dictionnaire/R.md#rétrocompatibilité)
 - [RÉUTILISATION D'ADRESSE](./dictionnaire/R.md#réutilisation-dadresse)
 - [RÉUTILISATION D'ADRESSE (EXT)](./dictionnaire/R.md#réutilisation-dadresse-ext)
@@ -679,7 +680,6 @@
 
 - [SAMOURAI WALLET](./dictionnaire/S.md#samourai-wallet)
 - [SATOSHI (SAT)](./dictionnaire/S.md#satoshi-sat)
-- [SATOSHI NAKAMOTO](./dictionnaire/S.md#satoshi-nakamoto)
 - [SCALA](./dictionnaire/S.md#scala)
 - [SCALABILITÉ](./dictionnaire/S.md#scalabilité)
 - [SCHNORR (PROTOCOLE)](./dictionnaire/S.md#schnorr-protocole)

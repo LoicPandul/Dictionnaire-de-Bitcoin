@@ -1,6 +1,6 @@
 ## OU EXCLUSIF
 
-Fonction fondamentale de la logique booléenne. Le « Ou exclusif » ou XOR (« *Exclusive or* ») prend deux opérandes booléens, chacun étant vrai ou faux, et produit une sortie vraie uniquement lorsque les deux opérandes diffèrent. Autrement dit, la sortie de l'opération `XOR` est vraie si exactement un (mais pas les deux) des opérandes est vrai. Par exemple, l'opération `XOR` entre `1` et `0` donnera comme résultat `1`. Nous noterons : $1 \oplus 0 = 1$. De même, l'opération `XOR` peut être effectuée sur des séquences plus longues de bits. Par exemple, $10110 \oplus 01110 = 11000$. Chaque bit de la séquence est comparé à son homologue et l'opération `XOR` est appliquée. Voici la table de vérité de l'opération `XOR` :
+Fonction fondamentale de la logique booléenne. Le « Ou exclusif » ou XOR (« *Exclusive or* ») prend deux opérandes booléens, chacun étant vrai ou faux, et produit une sortie vraie uniquement lorsque les deux opérandes diffèrent. Autrement dit, la sortie de l'opération `XOR` est vraie si exactement un (mais pas les deux) des opérandes est vrai. Par exemple, l'opération `XOR` entre `1` et `0` donnera comme résultat `1`. Nous noterons : $1 \oplus 0 = 1$. De même, l'opération `XOR` peut être effectuée sur des séquences plus longues de bits. Par exemple, $10110 \oplus 01110 = 11000$. Chaque bit de la séquence est comparé à son homologue et l'opération `XOR` est appliquée. Voici la table de vérité de l'opération `XOR` :
 
 <div align="center">
 
@@ -21,5 +21,5 @@ L'opération `XOR` est utilisée dans de nombreux domaines de l'informatique, no
 
 Dans le cadre de Bitcoin, on utilise évidemment l'opération `XOR` à de nombreux endroits. Par exemple, le `XOR` est massivement utilisé dans la fonction `SHA256`, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission. 
 
-Dans le domaine plus général de la cryptographie, le `XOR` peut être utilisé tel quel comme un algorithme de chiffrement symétrique. On appelle cet algorithme le « Masque Jetable » ou le « Chiffre Vernam » du nom de son inventeur. Cet algorithme, bien qu'inutile en pratique du fait de la longueur de la clé, est un des seuls algorithmes de chiffrement reconnus comme inconditionnellement sûrs.
+Dans le domaine plus général de la cryptographie, le `XOR` peut être utilisé tel quel comme un algorithme de chiffrement symétrique. On appelle cet algorithme le « Masque Jetable » ou le « Chiffre Vernam » du nom de son inventeur. Cet algorithme, bien qu'inutile en pratique du fait de la longueur de la clé, est un des seuls algorithmes de chiffrement reconnus comme inconditionnellement sûrs.
 
