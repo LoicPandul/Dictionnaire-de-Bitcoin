@@ -2,7 +2,8 @@
 \
 Je tiens à remercier tous les contributeurs pour leur précieuse aide, leurs conseils d'experts, leurs contributions à la rédaction de nouvelles définitions ou à la correction de celles déjà existantes, ainsi que tous ceux qui ont participé à la relecture de cet ouvrage :
 * Psyduck07 (https://github.com/Psyduck07) ;
-* Adrien Lacombe (https://github.com/adrienlacombe).
+* Adrien Lacombe (https://github.com/adrienlacombe) ;
+* Ludovic Lars (https://twitter.com/lugaxker).
 \
 Je tiens également à remercier toutes les personnes qui m'ont aidé dans la rédaction de mes autres contenus, qui ont servi de fondement au _Dictionnaire de Bitcoin_ :
 * Grittoshi (https://twitter.com/Grittoshi) ;
