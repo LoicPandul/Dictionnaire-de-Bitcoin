@@ -6,5 +6,5 @@ La transaction Payjoin remplit deux objectifs. Tout d'abord, elle vise à induir
 
 ![](../../dictionnaire/assets/14.png)
 
-> ► *Le Payjoin est également parfois nommé « P2EP (Pay-to-End-Point) », « Stowaway » ou « transaction stéganographique ».*
+> ► *Le Payjoin est également parfois nommé « P2EP (Pay-to-End-Point) », « Stowaway » ou « transaction stéganographique ».*
 

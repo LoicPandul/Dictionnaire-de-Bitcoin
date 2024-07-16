@@ -1,7 +1,7 @@
 ## ADRESSE DE RÉCEPTION
 
 Information utilisée pour recevoir des bitcoins. Une adresse est généralement construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Par exemple, les adresses SegWit sont composées des informations suivantes : 
-* Un HRP pour désigner « bitcoin » : `bc` ; 
+* Un HRP pour désigner « bitcoin » : `bc` ;
 * Un séparateur : `1` ; 
 * La version de SegWit utilisée : `q` ou `p` ; 
 * La charge utile : le condensat de la clé publique (ou directement la clé publique dans le cas de Taproot) ; 

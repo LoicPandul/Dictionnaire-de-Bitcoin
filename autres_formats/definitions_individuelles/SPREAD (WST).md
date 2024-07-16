@@ -8,5 +8,5 @@ Le spread rétrospectif, quant à lui, est le ratio entre l'anonset rétrospecti
 
 Ces deux indicateurs permettent d'évaluer l'efficacité du mixage de votre pièce par rapport au potentiel offert par la pool. Un spread prospectif faible, comme 5 % par exemple, indique une importante marge d'amélioration possible par des mixages supplémentaires. Inversement, un spread prospectif élevé, comme par exemple 97 %, signifie que peu d'anonset supplémentaire peut être gagné avec des coinjoins supplémentaires.
 
-> ► *En français, on pourrait traduire « spread » par « taux de diffusion » ou « taux de propagation ».*
+> ► *En français, on pourrait traduire « spread » par « taux de diffusion » ou « taux de propagation ».*
 

@@ -55,5 +55,5 @@ b2e00517
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit une empreinte inférieure ou égale à la cible de difficulté.
 
-> ► *En anglais, on parle d'un « Block Header ».*
+> ► *En anglais, on parle d'un « Block Header ».*
 

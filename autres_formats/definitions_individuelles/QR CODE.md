@@ -4,5 +4,5 @@ Type de code-barres en deux dimensions pouvant être scanné rapidement par des 
 
 On utilise largement le QR code sur Bitcoin pour faciliter la transmission d'informations entre deux appareils. Il est principalement utilisé pour partager les adresses de réception, encodées au format URI conformément au BIP21. Mais son usage s'étend aussi aux clés étendues, aux PSBT, aux invoices Lightning, etc.
 
-> ► *QR code veut dire « Quick Response Code ». Pour plus d'informations, voir la définition de [**URI**](/dictionnaire/U.md#uri).*
+> ► *QR code veut dire « Quick Response Code ». Pour plus d'informations, voir la définition de [**URI**](/dictionnaire/U.md#uri).*
 

@@ -7,5 +7,5 @@ l'objectif (profondeur 1), le type de devise (profondeur 2), le compte (profonde
 
 Pour passer d'une profondeur à une suivante, on utilise un processus de dérivation depuis une paire de clés parents vers une paire de clés filles.
 
-> ► *On parle également parfois d' « étage de dérivation » plutôt que de profondeur.*
+> ► *On parle également parfois d' « étage de dérivation » plutôt que de profondeur.*
 
