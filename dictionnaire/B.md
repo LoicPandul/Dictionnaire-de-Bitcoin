@@ -794,3 +794,10 @@ Processeur de paiement open-source qui permet aux commerçants et aux utilisateu
 Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, monte par rapport à une monnaie fiat, typiquement le dollar américain. Depuis son introduction en 2009, le cycle des bull markets du BTC semble influencé par les halvings, des événements programmés qui réduisent de moitié la récompense des mineurs et qui interviennent approximativement tous les quatre ans.
 
 > ► *La traduction française de « bull market » est « marché haussier ».*
+
+## BYZANTINE FAULT TOLERANCE (BFT)
+
+Concept utilisé dans les systèmes distribués pour assurer un consensus fiable et sécurisé, même en présence de nœuds défectueux ou malveillants. 
+Ce concept est lié au problème du général byzantin, une métaphore utilisée pour illustrer les défis de la coordination et de la prise de décision dans un système distribué où les acteurs peuvent ne pas se faire confiance.
+
+> L'algorithme de preuve de travail (Proof of Work ou PoW)  utilisé par Bitcoin est un mécanisme de consensus dit *«Tolérant aux pannes byzantines»* ou *«Byzantine Fault Tolerant (BFT)»*.
