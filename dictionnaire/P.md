@@ -111,6 +111,16 @@ Nœud vers lequel votre propre nœud Bitcoin établit activement une connexion. 
 
 > ► *La traduction anglaise de « pair sortant » est « outbound peer » ou « outgoing connection ».*
 
+## PANNE BYZANTINE
+
+La panne byzantine, ou comportement byzantin, est tout comportement d'un système ne respectant pas ses propres spécifications, en donnant des résultats non conformes.
+
+Les « pannes byzantines naturelles » sont couramment distinguées des « pannes byzantines volontaires » : les premières provenant généralement d'erreurs physiques non détectées (mémoire, transmissions réseaux, etc.), tandis que les secondes sont principalement issues d'attaques visant à faire échouer le système (sabotage, malveillance, porte dérobée).
+
+L'authentification, la signature et le consensus par des moyens cryptographiques et des algorithmes « Tolérants au pannes byzantines » ou « Byzantine Fault Tolerant (BFT) » permettent de limiter ses dernières.
+
+> ► La panne byzantine fait référence problème des généraux byzantins, une métaphore traitant de la remise en cause de la fiabilité des transmissions et de l'intégrité des interlocuteurs.
+
 ## PASSPHRASE (BIP39)
 
 Mot de passe optionnel qui, combiné à la phrase de récupération, offre une couche de sécurité supplémentaire pour les portefeuilles Bitcoin déterministes et hiérarchiques. Les portefeuilles HD sont généralement générés à partir d’une phrase de récupération constituée de 12 ou de 24 mots. Cette phrase de récupération est très importante, car elle permet de restaurer l'ensemble des clés d'un portefeuille en cas de perte. Cependant, elle constitue un point de défaillance unique (SPOF). Si elle est compromise, les bitcoins sont en danger. C'est ici qu'intervient la passphrase. C'est un mot de passe optionnel, choisi par l'utilisateur, qui s'ajoute à la phrase de récupération pour renforcer la sécurité du portefeuille. À ne pas confondre avec un code PIN ou un mot de passe ordinaire, la passphrase joue un rôle dans la dérivation des clés cryptographiques. 
@@ -338,6 +348,24 @@ Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la m
 Ce travail effectué par les mineurs est récompensé à chaque bloc valide trouvé. Le mineur gagnant empoche une récompense pécuniaire, composée de la subvention de bloc (création de nouveaux bitcoins ex-nihilo), et des frais de transaction. Aujourd’hui, la difficulté de la preuve de travail sur Bitcoin est telle que le minage nécessite une grande puissance de calcul pour parvenir à gagner des blocs. En conséquence, il faut souvent disposer de puces électroniques spécialisées dans l’exécution de `SHA256d`, que l’on appelle des ASICs, et participer dans des pools de minage.
 
 > ► *En anglais, on parle de « Proof-of-Work », parfois abrégé avec le sigle « PoW ».*
+
+## PROBLEME DES GENERAUX BYZANTINS
+
+> ► Ou « Problème de la diffusion cohérente »
+
+Problème formulé pour la première fois par Leslie Lamport, Robert Shostak et Marshall Pease dans le magasine spécialisé *ACM Transactions on Programming Languages and Systems, vol 4, n°3* [« The Byzantine Generals Problem »](https://lamport.azurewebsites.net/pubs/byz.pdf) en juillet 1982. Il est utilisée aujourd'hui pour illustrer les défis en terme de prise de décision quand un système distribué ne peut faire confiance à aucun acteur.  
+
+Dans cette métaphore, un groupe de généraux byzantins et leurs armées respectives sont campés autour d'une ville qu'ils souhaitent attaquer ou assiéger. Les généraux sont géographiquement séparés les uns des autres et doivent communiquer par messager pour coordonner leur stratégie. Qu'ils attaquent ou qu'ils battent en retraite n'a pas d'importance, du moment que tous les généraux parviennent à un consensus. 
+
+Par conséquent, nous pouvons considérer les exigences suivantes :
+
+- Chaque général doit prendre une décision : attaquer ou battre en retraite (oui ou non) ;
+- Une fois la décision prise, elle ne peut plus être modifiée ;
+- Tous les généraux doivent se mettre d'accord sur la même décision et l'exécuter de manière synchronisée.
+
+De plus, un général ne peut communiquer avec un autre que par le biais de messages transmis par un coursier, pouvant être retardés, détruits, modifiés ou perdus. Et même si un message réussi à être délivré, un ou plusieurs généraux peuvent choisir (pour une raison quelconque) de trahir la confiance établie et d'envoyer un message frauduleux, et semer le chaos.
+
+> Si on applique le dilemme au contexte de la blockchain **Bitcoin**, chaque général représente un nœud du réseau, devant parvenir à un consensus sur l'état du système. En d'autres termes, La majorité des participants d'un réseau distribué doivent se mettre d'accord et exécuter la même action afin d'éviter une défaillance totale. Le seul moyen de parvenir à un consensus dans ce type de système distribué est d'avoir au moins ⅔ des nœuds de réseau fiables et honnêtes. Donc, si la majorité du réseau décide d'agir de manière malveillante, le système est vulnérable.
 
 ## PROFONDEUR
 
