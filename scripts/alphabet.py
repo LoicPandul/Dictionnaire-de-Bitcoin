@@ -3,6 +3,7 @@ import re
 import unicodedata
 from colorama import init, Fore, Style
 
+# Initialize colorama
 init()
 
 def normalize_title(title, is_o_file=False):
@@ -31,7 +32,7 @@ def verify_alphabetical_order(filepath, is_o_file=False):
     return misplaced_titles
 
 def main():
-    dict_dir = './dictionnaire'
+    dict_dir = 'C:\\Users\\loicm\\Documents\\GitHub\\Dictionnaire\\dictionnaire'
     md_files = [f for f in os.listdir(dict_dir) if f.endswith('.md')]
 
     all_misplaced_titles = {}
