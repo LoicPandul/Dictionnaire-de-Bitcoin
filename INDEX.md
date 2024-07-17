@@ -252,7 +252,7 @@
 - [CRYPTOMONNAIE](./dictionnaire/C.md#cryptomonnaie)
 - [C SHARP](./dictionnaire/C.md#c-sharp)
 - [CUSTODY](./dictionnaire/C.md#custody)
-- [CYPHERPUNK](./dictionnaire/C.md#cypherpunk)
+- [CYPHERPUNKS](./dictionnaire/C.md#cypherpunks)
 
 ### D
 
@@ -724,7 +724,7 @@
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
-- [SILENT PAYMENT](./dictionnaire/S.md#silent-payment)
+- [SILENT PAYMENTS](./dictionnaire/S.md#silent-payments)
 - [SILK ROAD](./dictionnaire/S.md#silk-road)
 - [SIMPLIFIED PAYMENT VERIFICATION](./dictionnaire/S.md#simplified-payment-verification)
 - [SLIP](./dictionnaire/S.md#slip)

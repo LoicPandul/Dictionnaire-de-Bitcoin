@@ -265,7 +265,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP70](#bip70)                |    49 | [BLK????.DAT](#blk.dat)        |    66 |
 | [BIP71](#bip71)                |    49 | [BLKINDEX.DAT](#blkindex.dat)  |    66 |
 | [BIP72](#bip72)                |    49 | [BLKTREE/](#blktree)           |    66 |
-| [BIP75](#bip75)                |    49 | [BLOC](#bloc)                  |   239 |
+| [BIP75](#bip75)                |    49 | [BLOC](#bloc)                  |   238 |
 | [BIP78](#bip78)                |    50 | [BLOCKCHAIN](#blockchain)      |    67 |
 | [BIP84](#bip84)                |    50 | [BLOCKS/BLK?????.DAT](#blocksblk.dat) |    67 |
 | [BIP85](#bip85)                |    50 | [BLOCKSIGNERS](#blocksigners)  |    67 |
@@ -328,7 +328,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    87 | [CRYPTOMONNAIE](#cryptomonnaie) |    98 |
 | [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    87 | [C SHARP](#c-sharp)            |    98 |
 | [COINBASE (TRANSACTION)](#coinbase-transaction) |    88 | [CUSTODY](#custody)            |    98 |
-| [COIN CONTROL](#coin-control)  |    88 | [CYPHERPUNK](#cypherpunk)      |    99 |
+| [COIN CONTROL](#coin-control)  |    88 | [CYPHERPUNKS](#cypherpunks)    |    99 |
 | | | | |
 
 
@@ -591,12 +591,12 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [PBKDF2](#pbkdf2)              |   203 | [PROFONDEUR](#profondeur)      |   212 |
 | [PEER DISCOVERY](#peer-discovery) |   203 | [PROOF-OF-KEY DAY](#proof-of-key-day) |   213 |
 | [PEERS.DAT](#peers.dat)        |   203 | [PROOF-OF-WORK](#proof-of-work) |   213 |
-| [PERCOLATION](#percolation)    |   203 | [PROP (PROPORTIONAL)](#prop-proportional) |   214 |
-| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   204 | [PROPAGATION](#propagation)    |   214 |
+| [PERCOLATION](#percolation)    |   203 | [PROP (PROPORTIONAL)](#prop-proportional) |   213 |
+| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   204 | [PROPAGATION](#propagation)    |   213 |
 | [PÉRIODE DE MATURITÉ](#période-de-maturité) |   204 | [PSBT](#psbt)                  |   214 |
-| [PETIT-BOUTISTE](#petit-boutiste) |   204 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   215 |
+| [PETIT-BOUTISTE](#petit-boutiste) |   204 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   214 |
 | [PHOENIX](#phoenix)            |   205 | [PULL REQUEST](#pull-request)  |   215 |
-| [PHOENIXD](#phoenixd)          |   205 | [PYTHON](#python)              |   216 |
+| [PHOENIXD](#phoenixd)          |   205 | [PYTHON](#python)              |   215 |
 | | | | |
 
 
@@ -604,7 +604,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [QR CODE](#qr-code)            |   218 | [QUBIT](#qubit)                |   218 |
+| [QR CODE](#qr-code)            |   217 | [QUBIT](#qubit)                |   217 |
 | | | | |
 
 
@@ -612,20 +612,20 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   220 | [RÉTENTION (DE BLOC)](#rétention-de-bloc) |   225 |
-| [RAW TRANSACTION](#raw-transaction) |   220 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   225 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   220 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   225 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   221 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   226 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   221 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   226 |
-| [REDEEMSCRIPT](#redeemscript)  |   221 | [RICOCHET](#ricochet)          |   227 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   222 | [RIPEMD160](#ripemd160)        |   227 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   222 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   228 |
-| [REGTEST](#regtest)            |   222 | [RPOW](#rpow)                  |   228 |
-| [RÉORGANISATION](#réorganisation) |   222 | [RSMPPS](#rsmpps)              |   228 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   223 | [RUNES](#runes)                |   228 |
-| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   223 | [RUST](#rust)                  |   229 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   224 | [RUST-LIGHTNING](#rust-lightning) |   229 |
-| [RESYNCHRONISATION](#resynchronisation) |   224 |                                |       |
+| [RACINE DE MERKLE](#racine-de-merkle) |   219 | [RÉTENTION (DE BLOC)](#rétention-de-bloc) |   224 |
+| [RAW TRANSACTION](#raw-transaction) |   219 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   224 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   219 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   224 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   220 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   225 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   220 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   225 |
+| [REDEEMSCRIPT](#redeemscript)  |   220 | [RICOCHET](#ricochet)          |   226 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   221 | [RIPEMD160](#ripemd160)        |   226 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   221 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   227 |
+| [REGTEST](#regtest)            |   221 | [RPOW](#rpow)                  |   227 |
+| [RÉORGANISATION](#réorganisation) |   221 | [RSMPPS](#rsmpps)              |   227 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   222 | [RUNES](#runes)                |   227 |
+| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   222 | [RUST](#rust)                  |   228 |
+| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   223 | [RUST-LIGHTNING](#rust-lightning) |   228 |
+| [RESYNCHRONISATION](#resynchronisation) |   223 |                                |       |
 | | | | |
 
 
@@ -633,43 +633,43 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [SAMOURAI WALLET](#samourai-wallet) |   231 | [SIGHASH FLAG](#sighash-flag)  |   243 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   231 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   243 |
-| [SCALA](#scala)                |   231 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   243 |
-| [SCALABILITÉ](#scalabilité)    |   231 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   244 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   232 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   244 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   232 | [SIGNATURE AVEUGLE](#signature-aveugle) |   244 |
-| [SCRIPT](#script)              |   232 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   244 |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   232 | [SIGNET](#signet)              |   245 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   233 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   245 |
-| [SCRIPTSIG](#scriptsig)        |   233 | [SILENT PAYMENT](#silent-payment) |   246 |
-| [SCRIPTWITNESS](#scriptwitness) |   234 | [SILK ROAD](#silk-road)        |   247 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   234 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   248 |
-| [SECP256K1](#secp256k1)        |   235 | [SLIP](#slip)                  |   248 |
-| [SECP256R1](#secp256r1)        |   235 | [SMALL BLOCKERS](#small-blockers) |   248 |
-| [SEED (BITCOIN)](#seed-bitcoin) |   236 | [SMPPS](#smpps)                |   248 |
-| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   236 | [SOFT FORK](#soft-fork)        |   248 |
-| [SEED NODES](#seed-nodes)      |   236 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   249 |
-| [SEGWIT](#segwit)              |   237 | [SOROBAN](#soroban)            |   249 |
-| [SEGWIT2X](#segwit2x)          |   237 | [SORTIE (OUTPUT)](#sortie-output) |   249 |
-| [SEGWIT V0](#segwit-v0)        |   237 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   249 |
-| [SEGWIT V1](#segwit-v1)        |   238 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   250 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   238 | [SPEEDY TRIAL](#speedy-trial)  |   250 |
-| [SELF-CUSTODY](#self-custody)  |   238 | [SPOF](#spof)                  |   251 |
-| [SELFISH MINING](#selfish-mining) |   238 | [SPREAD (WST)](#spread-wst)    |   251 |
-| [SETTINGS.JSON](#settings.json) |   239 | [STABLECOIN](#stablecoin)      |   251 |
-| [SHA256](#sha256)              |   239 | [STALE BLOCK](#stale-block)    |   251 |
-| [SHA512](#sha512)              |   239 | [STAMPS](#stamps)              |   251 |
-| [SHAREDCOIN](#sharedcoin)      |   239 | [STONEWALL](#stonewall)        |   252 |
-| [SHARES](#shares)              |   240 | [STONEWALL X2](#stonewall-x2)  |   253 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   241 | [STRATUM](#stratum)            |   254 |
-| [SHITCOIN](#shitcoin)          |   241 | [STRATUM V2](#stratum-v2)      |   254 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   241 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   254 |
-| [SIDECHAIN](#sidechain)        |   241 | [SURCOUCHE (LAYER)](#surcouche-layer) |   255 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   242 | [SURFACE D'ATTAQUE](#surface-dattaque) |   255 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   242 | [SWEEP TRANSACTION](#sweep-transaction) |   255 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   242 | [SYBIL (ATTAQUE)](#sybil-attaque) |   256 |
-| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   242 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   256 |
+| [SAMOURAI WALLET](#samourai-wallet) |   230 | [SIGHASH FLAG](#sighash-flag)  |   242 |
+| [SATOSHI (SAT)](#satoshi-sat)  |   230 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   242 |
+| [SCALA](#scala)                |   230 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   242 |
+| [SCALABILITÉ](#scalabilité)    |   230 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   243 |
+| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   231 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   243 |
+| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   231 | [SIGNATURE AVEUGLE](#signature-aveugle) |   243 |
+| [SCRIPT](#script)              |   231 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   243 |
+| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   231 | [SIGNET](#signet)              |   244 |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   232 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   244 |
+| [SCRIPTSIG](#scriptsig)        |   232 | [SILENT PAYMENTS](#silent-payments) |   245 |
+| [SCRIPTWITNESS](#scriptwitness) |   233 | [SILK ROAD](#silk-road)        |   246 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   233 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   247 |
+| [SECP256K1](#secp256k1)        |   234 | [SLIP](#slip)                  |   247 |
+| [SECP256R1](#secp256r1)        |   234 | [SMALL BLOCKERS](#small-blockers) |   247 |
+| [SEED (BITCOIN)](#seed-bitcoin) |   235 | [SMPPS](#smpps)                |   247 |
+| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   235 | [SOFT FORK](#soft-fork)        |   247 |
+| [SEED NODES](#seed-nodes)      |   235 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   248 |
+| [SEGWIT](#segwit)              |   236 | [SOROBAN](#soroban)            |   248 |
+| [SEGWIT2X](#segwit2x)          |   236 | [SORTIE (OUTPUT)](#sortie-output) |   248 |
+| [SEGWIT V0](#segwit-v0)        |   236 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   248 |
+| [SEGWIT V1](#segwit-v1)        |   237 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   249 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   237 | [SPEEDY TRIAL](#speedy-trial)  |   249 |
+| [SELF-CUSTODY](#self-custody)  |   237 | [SPOF](#spof)                  |   250 |
+| [SELFISH MINING](#selfish-mining) |   237 | [SPREAD (WST)](#spread-wst)    |   250 |
+| [SETTINGS.JSON](#settings.json) |   238 | [STABLECOIN](#stablecoin)      |   250 |
+| [SHA256](#sha256)              |   238 | [STALE BLOCK](#stale-block)    |   250 |
+| [SHA512](#sha512)              |   238 | [STAMPS](#stamps)              |   250 |
+| [SHAREDCOIN](#sharedcoin)      |   238 | [STONEWALL](#stonewall)        |   251 |
+| [SHARES](#shares)              |   239 | [STONEWALL X2](#stonewall-x2)  |   252 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   240 | [STRATUM](#stratum)            |   253 |
+| [SHITCOIN](#shitcoin)          |   240 | [STRATUM V2](#stratum-v2)      |   253 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   240 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   253 |
+| [SIDECHAIN](#sidechain)        |   240 | [SURCOUCHE (LAYER)](#surcouche-layer) |   254 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   241 | [SURFACE D'ATTAQUE](#surface-dattaque) |   254 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   241 | [SWEEP TRANSACTION](#sweep-transaction) |   254 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   241 | [SYBIL (ATTAQUE)](#sybil-attaque) |   255 |
+| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   241 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   255 |
 | | | | |
 
 
@@ -677,19 +677,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   258 | [TPUB](#tpub)                  |   261 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   258 | [TRANSACTION (TX)](#transaction-tx) |   261 |
-| [TAPSCRIPT](#tapscript)        |   258 | [TRANSACTION COINBASE](#transaction-coinbase) |   261 |
-| [TARO](#taro)                  |   258 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   262 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   259 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   262 |
-| [TCP](#tcp)                    |   259 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   262 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   259 | [TRANSACTION STANDARD](#transaction-standard) |   262 |
-| [TESTNET](#testnet)            |   259 | [TUMBLEBIT](#tumblebit)        |   263 |
-| [THE DAO](#the-dao)            |   260 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   263 |
-| [TIDES](#tides)                |   260 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   263 |
-| [TIMELOCK](#timelock)          |   260 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   264 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   260 | [TYPE DE DEVISE](#type-de-devise) |   265 |
-| [TPRV](#tprv)                  |   261 |                                |       |
+| [TAPROOT](#taproot)            |   257 | [TPUB](#tpub)                  |   260 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   257 | [TRANSACTION (TX)](#transaction-tx) |   260 |
+| [TAPSCRIPT](#tapscript)        |   257 | [TRANSACTION COINBASE](#transaction-coinbase) |   260 |
+| [TARO](#taro)                  |   257 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   261 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   258 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   261 |
+| [TCP](#tcp)                    |   258 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   261 |
+| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   258 | [TRANSACTION STANDARD](#transaction-standard) |   261 |
+| [TESTNET](#testnet)            |   258 | [TUMBLEBIT](#tumblebit)        |   262 |
+| [THE DAO](#the-dao)            |   259 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   262 |
+| [TIDES](#tides)                |   259 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   262 |
+| [TIMELOCK](#timelock)          |   259 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   263 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   259 | [TYPE DE DEVISE](#type-de-devise) |   264 |
+| [TPRV](#tprv)                  |   260 |                                |       |
 | | | | |
 
 
@@ -697,11 +697,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   267 | [UPUB](#upub)                  |   268 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   267 | [URI](#uri)                    |   268 |
-| [UNIX](#unix)                  |   267 | [UTREEXO](#utreexo)            |   268 |
-| [UNIX (HEURE)](#unix-heure)    |   267 | [UTXO](#utxo)                  |   269 |
-| [UPRV](#uprv)                  |   268 | [UTXO SET](#utxo-set)          |   270 |
+| [UASF](#uasf)                  |   266 | [UPUB](#upub)                  |   267 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   266 | [URI](#uri)                    |   267 |
+| [UNIX](#unix)                  |   266 | [UTREEXO](#utreexo)            |   267 |
+| [UNIX (HEURE)](#unix-heure)    |   266 | [UTXO](#utxo)                  |   268 |
+| [UPRV](#uprv)                  |   267 | [UTXO SET](#utxo-set)          |   269 |
 | | | | |
 
 
@@ -709,10 +709,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   272 | [VOUT](#vout)                  |   273 |
-| [VANITYGEN](#vanitygen)        |   272 | [VPRV](#vprv)                  |   273 |
-| [VERSIONNAGE](#versionnage)    |   272 | [VPUB](#vpub)                  |   273 |
-| [VIN](#vin)                    |   272 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   271 | [VOUT](#vout)                  |   272 |
+| [VANITYGEN](#vanitygen)        |   271 | [VPRV](#vprv)                  |   272 |
+| [VERSIONNAGE](#versionnage)    |   271 | [VPUB](#vpub)                  |   272 |
+| [VIN](#vin)                    |   271 |                                |       |
 | | | | |
 
 
@@ -720,13 +720,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   275 | [WATCH-ONLY WALLET](#watch-only-wallet) |   276 |
-| [WALLET](#wallet)              |   275 | [WHALE](#whale)                |   276 |
-| [WALLET.DAT](#wallet.dat)      |   275 | [WHIRLPOOL](#whirlpool)        |   276 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   275 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   276 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   275 | [WHITE PAPER](#white-paper)    |   276 |
-| [WASABI WALLET](#wasabi-wallet) |   275 | [WITNESSSCRIPT](#witnessscript) |   277 |
-| [WATCHMEN](#watchmen)          |   276 | [WTXID](#wtxid)                |   277 |
+| [WABISABI](#wabisabi)          |   274 | [WATCH-ONLY WALLET](#watch-only-wallet) |   275 |
+| [WALLET](#wallet)              |   274 | [WHALE](#whale)                |   275 |
+| [WALLET.DAT](#wallet.dat)      |   274 | [WHIRLPOOL](#whirlpool)        |   275 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   274 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   275 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   274 | [WHITE PAPER](#white-paper)    |   275 |
+| [WASABI WALLET](#wasabi-wallet) |   274 | [WITNESSSCRIPT](#witnessscript) |   276 |
+| [WATCHMEN](#watchmen)          |   275 | [WTXID](#wtxid)                |   276 |
 | | | | |
 
 
@@ -734,8 +734,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XBT](#xbt)                    |   279 | [XPRV](#xprv)                  |   280 |
-| [XOR](#xor)                    |   279 | [XPUB](#xpub)                  |   280 |
+| [XBT](#xbt)                    |   278 | [XPRV](#xprv)                  |   279 |
+| [XOR](#xor)                    |   278 | [XPUB](#xpub)                  |   279 |
 | | | | |
 
 
@@ -743,7 +743,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   282 | [YPUB](#ypub)                  |   282 |
+| [YPRV](#yprv)                  |   281 | [YPUB](#ypub)                  |   281 |
 | | | | |
 
 
@@ -751,9 +751,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   284 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   284 |
-| [ZEROLINK](#zerolink)          |   284 | [ZPRV](#zprv)                  |   284 |
-| [ZEROSYNC](#zerosync)          |   284 | [ZPUB](#zpub)                  |   285 |
+| [ZEROCONF](#zeroconf)          |   283 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   283 |
+| [ZEROLINK](#zerolink)          |   283 | [ZPRV](#zprv)                  |   283 |
+| [ZEROSYNC](#zerosync)          |   283 | [ZPUB](#zpub)                  |   284 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -853,7 +853,7 @@ Dans le cadre des Silent Payments, désigne un identifiant unique qui permet de 
 
 Cette adresse est composée de deux clés publiques : $B_{\text{scan}}$ pour le scan et $B_{\text{spend}}$ pour la dépense, concaténées pour former l'adresse statique $B = B_{\text{scan}} \text{ ‖ } B_{\text{spend}}$. Le destinataire publie cette adresse, permettant aux expéditeurs de dériver des adresses de paiement uniques sans interaction supplémentaire avec le destinataire. Pour gérer plusieurs sources de paiements distinctes, on peut ajouter un label à $B_{\text{spend}}$, créant ainsi plusieurs adresses statiques labellisées à partir de $B_1$, $B_2$, etc.). Cela permet de ségréguer les paiements tout en utilisant une seule adresse de base, réduisant ainsi la charge de travail pour le scan de la blockchain. Toutefois, toutes les adresses statiques d'une entité peuvent être facilement associées en raison de l'utilisation commune de $B_{\text{scan}}$.
 
-> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](#silent-payment)**.*
+> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](#silent-payments)**.*
 
 ## AGORISME
 
@@ -1808,7 +1808,7 @@ Bitcoin SV se distingue de Bitcoin Cash, et encore plus de Bitcoin, par sa limit
 
 ## BITCOINTALK
 
-Forum en ligne dédié aux discussions sur Bitcoin. Introduit le 22 novembre 2009 par Satoshi Nakamoto, ce forum prend la suite de l'espace de discussion dédié à Bitcoin sur sourceforge.net. BitcoinTalk sert de plateforme pour l'échange d'informations, de nouvelles, de débats techniques et d'analyses.
+Forum en ligne dédié aux discussions sur Bitcoin. Ouvert en novembre 2009 par Satoshi Nakamoto, ce forum prend la suite de l'espace de discussion dédié à Bitcoin sur sourceforge.net. Il acquiert son nom lors de la migration de bitcoin.org vers bitcointalk.org en août 2011. BitcoinTalk sert de plateforme pour l'échange d'informations, de nouvelles, de débats techniques et d'analyses.
 
 ## BITCOIN UNLIMITED
 
@@ -1824,7 +1824,7 @@ Fork de Bitcoin lancé en 2015 par le célèbre développeur Mike Hearn et soute
 
 ## BIT GOLD
 
-Système de monnaie numérique décentralisée conceptualisée par Nick Szabo en 1998 puis publiée en 2005. Bit gold été conçu pour générer et échanger une ressource virtuelle appelée le bit gold. Ce système ne reposait sur aucun bien physique, mais visait à créer une forme de rareté infalsifiable. Le protocole bit gold reposait sur la création monétaire par preuve de travail, où les morceaux de bit gold étaient créés via la puissance de calcul des ordinateurs, formant ainsi une chaîne de preuve de travail. Chaque preuve de travail était horodatée puis ajoutée à un registre de propriété. La vérification et le transfert de la propriété de bit gold étaient effectués via un registre public, où les utilisateurs étaient identifiés par des clés publiques. Bit gold est resté à l'état de concept et n'a jamais été implémenté. Ce système est un des précurseurs de Bitcoin avec b-money et RPoW, mais Satoshi semblait ne pas connaître son existence avant la création de Bitcoin. Il y fera mention plus tard sur le forum BitcoinTalk.
+Système de monnaie numérique décentralisée conceptualisé par Nick Szabo en 1998 et décrit publiquement en 2005. Bit gold été conçu pour générer et échanger une ressource virtuelle appelée le bit gold. Ce système ne reposait sur aucun bien physique, mais visait à créer une forme de rareté infalsifiable. Le protocole bit gold reposait sur la création monétaire par preuve de travail, où les morceaux de bit gold étaient créés via la puissance de calcul des ordinateurs, formant ainsi une chaîne de preuve de travail. Chaque preuve de travail était horodatée puis ajoutée à un registre de propriété. La vérification et le transfert de la propriété de bit gold étaient effectués via un registre public, où les utilisateurs étaient identifiés par des clés publiques. Bit gold est resté à l'état de concept et n'a jamais été implémenté. Ce système est un des précurseurs de Bitcoin avec b-money et RPoW, mais Satoshi semblait ne pas connaître son existence avant la création de Bitcoin. Il y a fait mention plus tard sur le site et sur le forum de Bitcoin.
 
 ## BITVM
 
@@ -1880,9 +1880,9 @@ Structure de données LevelDB dans Bitcoin Core qui catalogue des métadonnées 
 
 Désigne une période de débat intense et de conflit au sein de la communauté Bitcoin entre 2015 et 2017. Ce conflit portait sur la question de savoir si la taille des blocs, limitée à 1 mégaoctet depuis 2010 par Satoshi Nakamoto, devait être augmentée pour permettre à Bitcoin de traiter plus de transactions par bloc, et ainsi passer à l'échelle (scalabilité).
 
-Les partisans de l'augmentation de la taille des blocs (que l'on appelle les « *big blockers* »), menés par des figures de l'écosystème comme Roger Ver, des développeurs de la première heure comme Jeff Garzik, Gavin Andresen ou encore Mike Hearn, mais également beaucoup de grandes entreprises de minage, soutenaient que cette augmentation était nécessaire pour réduire les frais de transaction et améliorer la scalabilité de Bitcoin. Ils pensaient que cette modification pourrait se faire sans engendrer de conséquences sur la sécurité du système. D'autre part, les opposants à l'augmentation de la taille des blocs (que l'on appelle les « *small blockers* »), principalement des développeurs de Bitcoin Core (Pieter Wuille, Peter Todd, Gregory Maxwell, Wladimir van der Laan, Luke Dashjr...) et une partie de la communauté technique, avançaient que cette modification centraliserait le système à cause de l'augmentation de la charge opérationnelle sur les nœuds. Ils mettaient en avant des solutions d'évolutivité dites de seconde couche, comme le Lightning Network, qui permettraient de prendre en charge une grande quantité de transactions, sans pour autant devoir modifier le protocole de base.
+Les partisans de l'augmentation de la taille des blocs (que l'on appelle les « *big blockers* »), menés par des développeurs de la première heure comme Jeff Garzik, Gavin Andresen et Mike Hearn, des figures influentes de l'écosystème comme Roger Ver, ainsi qu'une bonne part des grandes entreprises de minage, soutenaient que cette augmentation était nécessaire pour réduire les frais de transaction et améliorer la scalabilité de Bitcoin. Ils pensaient que cette modification pourrait se faire sans engendrer de conséquences sur la sécurité du système. D'autre part, les opposants à l'augmentation de la taille des blocs (que l'on appelle les « *small blockers* »), principalement des développeurs de Bitcoin Core (Pieter Wuille, Peter Todd, Gregory Maxwell, Wladimir van der Laan, Luke Dashjr...) et une partie de la communauté technique, avançaient que cette modification centraliserait le système à cause de l'augmentation de la charge opérationnelle sur les nœuds. Ils mettaient en avant des solutions d'évolutivité dites de seconde couche, comme le Lightning Network, qui permettraient de prendre en charge une grande quantité de transactions, sans pour autant devoir modifier le protocole de base.
 
-Le débat sur l'approche de Bitcoin en termes de scalabilité dure au moins depuis 2010, avec la première tentative d'augmentation de la taille des blocs en octobre de cette année via [un patch proposé par Jeff Garzik](https://bitcointalk.org/index.php?topic=1347.0). Mais c'est bien durant la période de la Blocksize War entre 2015 et 2017 que les conflits ont été les plus virulents avec la mise en place de plusieurs tentatives de forks (Bitcoin XT, Bitcoin Classic, Bitcoin Unlimited, SegWit, SegWit2X et Bitcoin Cash), avec des stratégies de propagande et d'influence, ainsi qu'avec des attaques personnelles. L'activation de SegWit le 24 août 2017 est souvent considérée comme l'évènement marquant la fin de la Blocksize War, tandis que le casus belli est parfois considéré comme étant la mise à jour 0.11A du client Bitcoin XT, qui a implémenté le BIP101 le 15 août 2015. On pourrait également considéré que la fin de la Blocksize War a eu lieu le 8 novembre 2017, date à laquelle le hard fork SegWit2X a officiellement été abandonné suite à la campagne d'opposition « NO2X ».
+Le débat sur l'approche de Bitcoin en termes de scalabilité dure au moins depuis 2010, avec la première tentative d'augmentation de la taille des blocs en octobre de cette année via [un patch proposé par Jeff Garzik](https://bitcointalk.org/index.php?topic=1347.0). Mais c'est bien durant la période de la Blocksize War entre 2015 et 2017 que les conflits ont été les plus virulents avec la mise en place de plusieurs tentatives de forks (Bitcoin XT, Bitcoin Classic, Bitcoin Unlimited, SegWit, SegWit2X et Bitcoin Cash), avec des stratégies de propagande et d'influence, ainsi qu'avec des attaques personnelles. L'abandon du hard fork SegWit2X le 8 novembre 2017 faisant suite à l'opposition massive de la communauté (« NO2X ») est souvent vu comme l'évènement marquant la fin de la Blocksize War, tandis que le casus belli est parfois considéré comme étant la mise à jour 0.11A du client Bitcoin XT, qui a implémenté le BIP101 le 15 août 2015. On pourrait également estimer que la fin de la Blocksize War a eu lieu le 24 août 2017, date à laquelle le soft fork SegWit a été activé suite à la campagne en faveur de l'« UASF ».
 
 > ► *En français, on parle généralement de la « Blocksize War » comme un nom propre. Certains traduisent parfois ce terme par « guerre des blocs » ou « guerre de la taille des blocs ».*
 
@@ -2600,11 +2600,13 @@ Dans le contexte de Bitcoin, se réfère à la détention et à la gestion des c
 
 > ► *En français, on utilise généralement le terme anglais de « custody ». On pourrait également le traduire par « garde ».*
 
-## CYPHERPUNK
+## CYPHERPUNKS
 
-Communauté informelle et internationale de personnes intéressées par l'utilisation de la cryptographie comme moyen pour assurer les libertés individuelles. Les cypherpunks prônent l'utilisation de la cryptographie pour imposer son droit fondamental de protéger sa vie privée en tant qu'individu, en particulier dans un contexte d'augmentation de la surveillance gouvernementale et de l'exploitation des données par des entités privées. L'histoire des cypherpunks remonte aux années 1980 et 1990, lorsque des groupes de cryptographes, de programmeurs et de libertariens commencent à discuter et à promouvoir l'utilisation de la cryptographie pour protéger l'anonymat et les libertés individuelles. 
+Communauté informelle et internationale de personnes promouvant l'utilisation de la cryptographie comme moyen d'assurer les libertés individuelles sur Internet. Les cypherpunks défendent le droit fondamental pour l'individu de protéger sa vie privée, en particulier dans un contexte d'augmentation de la surveillance étatique et d'exploitation des données par des entités privées. Leur nom est issu des mots anglais *cypher*, « chiffre » (dans le sens de code secret), et *punk*. Il s'agit d'un calque du terme *cyberpunk*, qui désigne un genre littéraire décrivant un futur dystopique où la technologie de pointe se marie au vice et au crime d'une société déliquescente.
 
-Parmi les moments clés de l'histoire des cypherpunks, il y a la fondation, en 1992, de la « Cypherpunks mailing list », une liste de diffusion par courrier électronique qui a servi pour ces discussions. La publication en 1993 du *Cypherpunk's Manifesto* par Eric Hughes a également été un moment important. Ce document décrit les objectifs et les actions des cypherpunks. L'idée d'une monnaie électronique qui ne s'établit pas sur une entité centrale, comme Bitcoin, est enracinée dans la philosophie cypherpunk. La création de Bitcoin est souvent considérée comme une réalisation majeure de cette vision.
+Le mouvement des cypherpunks remonte au début des années 1990, lorsque des groupes de cryptographes, de programmeurs et de libertariens ont commencé à discuter des implications politiques de la cryptographie au cours de leurs premières réunions dans la Silicon Valley. La personnalité principale au sein de la communauté était Tim May, qui avait écrit le *Crypto Anarchist Manifesto* en 1988, texte fondateur du mouvement. Parmi les moments clés de l'histoire des cypherpunks, il y a la fondation, en 1992, de la « Cypherpunks mailing list », une liste de diffusion de courrier électronique qui a servi pour ces discussions. La publication par Eric Hughes en 1993 du *Cypherpunk's Manifesto*, document exposant les objectifs et les actions des cypherpunks, a également été un moment important.
+
+L'idée d'une monnaie électronique qui ne s'établit pas sur une entité centrale, comme Bitcoin, est enracinée dans la philosophie des cypherpunks. La création de Bitcoin est souvent considérée comme une réalisation majeure de cette vision, aux côtés de PGP, Tor et WikiLeaks.
 
 
 
@@ -3090,7 +3092,7 @@ En dehors de Bitcoin, il est également reconnu pour son invention de RPoW (*Reu
 
 ## FLAG DAY
 
-Vieille méthode d'activation de soft fork utilisée dans les premières années de Bitcoin. Ce processus défini simplement une date spécifique, connue sous le nom de « Flag Day », à laquelle la mise à jour du protocole doit être adoptée par l'ensemble du réseau. Cette approche est simple et directe : après cette date, les nœuds et les mineurs doivent avoir mis à jour leur logiciel pour se conformer aux nouvelles règles, sans quoi ils risquent de se retrouver sur une chaîne incompatible.
+Méthode d'activation de soft fork utilisée dans les premières années de Bitcoin. Ce processus définit simplement une date butoir, connue sous le nom de « Flag Day », avant laquelle la mise à jour du protocole doit être adoptée par l'ensemble du réseau. Cette approche est simple et directe : après cette date, les nœuds et les mineurs doivent avoir mis à jour leur logiciel pour se conformer aux nouvelles règles, sans quoi ils risquent de se retrouver sur une chaîne incompatible.
 
 Cependant, cette méthode est très risquée de nos jours, car elle nécessite une coordination et un consensus important au sein de la communauté, faute de quoi le réseau peut subir une scission, et la chaîne à jour peut ne pas être la plus longue (avec le plus de travail accumulé). La méthode du Flag Day peut toutefois être utilisée pour des changements non controversés ou des rectifications techniques urgentes.
 
@@ -3623,31 +3625,31 @@ Procédure réglementaire utilisée par certaines entreprises opérant sur Bitco
 
 ## LABEL (SILENT PAYMENTS)
 
-Dans le cadre du protocole Silent Payments, les labels sont des entiers utilisés pour modifier l'adresse statique initiale, afin de créer de nombreuses autres adresses statiques. L'utilisation de ces labels permet de ségréguer les paiements envoyés via Silent Payements, en employant des adresses statiques différentes pour chaque usage, sans augmenter excessivement la charge opérationnelle pour la détection de ces paiements (scanning). Bob utilise une adresse statique $B$, composée de deux clés publiques : $B_{\text{scan}}$ pour le scan et $B_{\text{spend}}$ pour la dépense. On ajoute le hachage de $b_{\text{scan}}$ et d'un entier $m$, multipliés scalairement par le point générateur $G$, à la clé publique de dépense $B_{\text{spend}}$ pour créer une sorte de nouvelle clé publique de dépense $B_m$ :
+Dans le cadre du protocole Silent Payments, les labels sont des entiers utilisés pour modifier l'adresse statique initiale, afin de créer de nombreuses autres adresses statiques. L'utilisation de ces labels permet de ségréguer les paiements envoyés via Silent Payments, en employant des adresses statiques différentes pour chaque usage, sans augmenter excessivement la charge opérationnelle pour la détection de ces paiements (scanning). Bob utilise une adresse statique $B$, composée de deux clés publiques : $B_{\text{scan}}$ pour le scan et $B_{\text{spend}}$ pour la dépense. On ajoute le hachage de $b_{\text{scan}}$ et d'un entier $m$, multipliés scalairement par le point générateur $G$, à la clé publique de dépense $B_{\text{spend}}$ pour créer une sorte de nouvelle clé publique de dépense $B_m$ :
 
 $$  B_m = B_{\text{spend}} + \text{hash}(b_{\text{scan}} \text{ ‖ } m) \cdot G  $$
 
-Par exemple, la première clé $B_1$ est obtenue de cette manière :
+Par exemple, la première clé $B_1$ est obtenue de cette manière :
 
 $$  B_1 = B_{\text{spend}} + \text{hash}(b_{\text{scan}} \text{ ‖ } 1) \cdot G  $$
 
-L'adresse statique publiée par Bob sera dorénavant composée de $B_{\text{scan}}$ et de $B_m$. Par exemple, la première adresse statique avec le label $1$ sera :
+L'adresse statique publiée par Bob sera dorénavant composée de $B_{\text{scan}}$ et de $B_m$. Par exemple, la première adresse statique avec le label $1$ sera :
 
 $$ B = B_{\text{scan}} \text{ ‖ } B_1 $$
 
-On commence seulement à partir du label $1$, car le label $0$ est réservé pour le change. Alice, qui souhaite envoyer des bitcoins sur l'adresse statique labellisée transmise par Bob, va dériver l'adresse de paiement unique $P_0$ en utilisant la nouvelle $B_1$ à la place de $B_{\text{spend}}$ :
+On commence seulement à partir du label $1$, car le label $0$ est réservé pour le change. Alice, qui souhaite envoyer des bitcoins sur l'adresse statique labellisée transmise par Bob, va dériver l'adresse de paiement unique $P_0$ en utilisant la nouvelle $B_1$ à la place de $B_{\text{spend}}$ :
 
 $$  P_0 = B_1 + \text{hash}(\text{inputHash} \cdot a \cdot B_{\text{scan}} \text{ ‖ } 0) \cdot G  $$
 
-En réalité, Alice ne sait même pas forcément que Bob dispose d'une adresse labelisée, car elle utilise simplement la seconde partie de l'adresse statique qu'il lui a fourni, et en l'occurrence, c'est la valeur $B_1$ plutôt que $B_{\text{spend}}$. Pour scanner les paiements, Bob va toujours utiliser la valeur de son adresse statique initiale avec $B_{\text{spend}}$ de cette manière :
+En réalité, Alice ne sait même pas forcément que Bob dispose d'une adresse labelisée, car elle utilise simplement la seconde partie de l'adresse statique qu'il lui a fourni, et en l'occurrence, c'est la valeur $B_1$ plutôt que $B_{\text{spend}}$. Pour scanner les paiements, Bob va toujours utiliser la valeur de son adresse statique initiale avec $B_{\text{spend}}$ de cette manière :
 
 $$   P_0 = B_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0) \cdot G  $$
 
-Puis, il va simplement soustraire la valeur qu'il trouve pour $P_0$ de chaque output un à un. Il vérifie ensuite si un des résultats de ces soustractions correspond à la valeur d'un des labels qu'il utilise sur son portefeuille. Si ça matche, par exemple, pour l'output #4 avec le label $1$, cela veut dire que cet output est un Silent Payment associé à son adresse statique labelisée $B_1$ :
+Puis, il va simplement soustraire la valeur qu'il trouve pour $P_0$ de chaque output un à un. Il vérifie ensuite si un des résultats de ces soustractions correspond à la valeur d'un des labels qu'il utilise sur son portefeuille. Si ça matche, par exemple, pour l'output #4 avec le label $1$, cela veut dire que cet output est un Silent Payment associé à son adresse statique labelisée $B_1$ :
 
 $$ Out_4 - P_0 = \text{hash}(b_{\text{scan}} \text{ ‖ } 1) \cdot G $$
 
-Cela fonctionne, car :
+Cela fonctionne, car :
 
 $$  B_1 = B_{\text{spend}} + \text{hash}(b_{\text{scan}} \text{ ‖ } 1) \cdot G  $$
 
@@ -3655,7 +3657,7 @@ Grâce à cette méthode, Bob peut utiliser une multitude d'adresses statiques (
 
 Attention toutefois, cette séparation des adresses statiques vaut uniquement d'un point de vue de gestion personnelle du portefeuille, mais ne permet pas de séparer les identités. Puisqu'elles disposent toutes du même $B_{\text{scan}}$, il est très facile d'associer toutes les adresses statiques ensemble et de déduire qu'elles appartiennent à une unique entité.
 
-> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](#silent-payment)**.*
+> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](#silent-payments)**.*
 
 ## LCB/FT
 
@@ -3789,7 +3791,7 @@ Désigne la plus grande proportion de l'activité économique liée à la monnai
 
 ## MALLÉABILITÉ (TRANSACTION)
 
-Se réfère à la possibilité de modifier légèrement la structure d'une transaction Bitcoin, sans en altérer l'effet, mais tout en changeant l'identifiant de transaction (*TXID*). Cette propriété peut être exploitée malicieusement pour induire en erreur les parties prenantes sur le statut d'une transaction, causant ainsi des problèmes comme la double dépense. La malléabilité était rendue possible par la flexibilité de la signature numérique utilisée. Le soft fork SegWit a notamment été introduit pour empêcher cette malléabilité des transactions Bitcoin, rendant compliquée une implémentation du Lightning Network. Il y parvient en écartant les données malléables de la transaction du calcul du TXID.
+Se réfère à la possibilité de modifier légèrement la structure d'une transaction Bitcoin, sans en altérer l'effet, mais tout en changeant l'identifiant de transaction (*TXID*). Cette propriété peut être exploitée de manière malveillante pour induire en erreur les parties prenantes sur le statut d'une transaction, causant ainsi des problèmes comme la double dépense. La malléabilité était rendue possible par la flexibilité de la signature numérique utilisée. Le soft fork SegWit a notamment été introduit pour empêcher cette malléabilité des transactions Bitcoin, rendant compliquée une implémentation du Lightning Network. Il y parvient en écartant les données malléables de la transaction du calcul du TXID.
 
 > ► *Bien que ce soit rare, on retrouve parfois le terme de « mutabilité » pour évoquer le même concept.*
 
@@ -5267,13 +5269,7 @@ Initiative annuelle observée chaque 3 janvier (le jour de l'anniversaire du blo
 
 ## PROOF-OF-WORK
 
-Mécanisme de protection face aux attaques Sybil, qui se caractérisent par la multiplication de fausses identités, dans le but de prendre un avantage illégitime. Ainsi, la preuve de travail permet d'établir un coût marginal non négligeable à la multiplication des votes sur Bitcoin. La preuve de travail est à la base du mécanisme de consensus de Nakamoto, qui est le principe utilisé pour établir un accord sur une version unique du registre distribué entre les différents nœuds du réseau. Concrètement, la preuve de travail est la recherche d’une valeur qui, une fois passée dans une fonction mathématique aléatoire, donne un résultat inférieur à un nombre cible. Cette cible de la preuve de travail est ajustée tous les 2016 blocs par les nœuds. C’est ce que l’on appelle l’ajustement de la difficulté. On abaisse le nombre cible pour augmenter la difficulté de minage, ou on l’augmente pour baisser la difficulté, en fonction de l’évolution de la puissance de calcul déployée par les mineurs durant la période précédente. 
-
-![](../../dictionnaire/assets/34.png)
-
-Ce travail effectué par les mineurs est récompensé à chaque bloc valide trouvé. Le mineur gagnant empoche une récompense pécuniaire, composée de la subvention de bloc (création de nouveaux bitcoins ex-nihilo), et des frais de transaction. Aujourd’hui, la difficulté de la preuve de travail sur Bitcoin est telle que le minage nécessite une grande puissance de calcul pour parvenir à gagner des blocs. En conséquence, il faut souvent disposer de puces électroniques spécialisées dans l’exécution de `SHA256d`, que l’on appelle des ASICs, et participer dans des pools de minage.
-
-> ► *En français, on parle de « Preuve de travail ».*
+> ► *Voir **[PREUVE DE TRAVAIL](#preuve-de-travail)**.*
 
 ## PROP (PROPORTIONAL)
 
@@ -5897,7 +5893,7 @@ Pour le `witnessScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent 1 sigop, `O
 
 Dans les scripts Taproot, les sigops sont traitées de manière différente par rapport aux scripts traditionnels. Au lieu de compter directement chaque opération de signature, Taproot introduit un budget de sigops pour chaque entrée de transaction, qui est proportionnel à la taille de cette entrée. Ce budget est de 50 sigops plus la taille en octets du témoin de l'input. Chaque opération de signature réduit ce budget de 50. Si l'exécution d'une opération de signature fait chuter le budget en dessous de zéro, le script est invalide. Cette méthode permet plus de flexibilité dans les scripts Taproot, tout en maintenant une protection contre les abus potentiels liés aux sigops, en les liant directement au poids de l'entrée. Ainsi, les scripts Taproot ne sont pas pris en compte dans la limite des 80 000 sigops par bloc.
 
-## SILENT PAYMENT
+## SILENT PAYMENTS
 
 Méthode pour utiliser des adresses Bitcoin statiques afin de recevoir des paiements sans pour autant produire de réutilisation d'adresse, sans interaction et sans lien visible on-chain entre les différents paiements et l'adresse statique. Cette technique élimine le besoin de générer de nouvelles adresses de réception vierges pour chaque transaction, ce qui permet d'éviter les interactions habituelles dans Bitcoin où le destinataire doit fournir une nouvelle adresse au payeur.
 
@@ -5907,69 +5903,69 @@ Par exemple, l'adresse statique de Bob $B$ représente la concaténation de sa c
 
 $$ B = B_{\text{scan}} \text{ ‖ } B_{\text{spend}} $$
 
-Ces clés sont simplement dérivées à partir du chemin suivant :
+Ces clés sont simplement dérivées à partir du chemin suivant :
 
 \begin{codeblock}
 scan : m / 352' / 0' / 0' / 1' / 0
 spend : m / 352' / 0' / 0' / 0' / 0
 \end{codeblock}
 
-Cette adresse statique est publiée par Bob. Alice la récupère pour faire un Silent Payment vers Bob. Elle calcule l'adresse de paiement $P_0$ appartenant à Bob de cette façon :
+Cette adresse statique est publiée par Bob. Alice la récupère pour faire un Silent Payment vers Bob. Elle calcule l'adresse de paiement $P_0$ appartenant à Bob de cette façon :
 
 $$  P_0 = B_{\text{spend}} + \text{hash}(\text{inputHash} \cdot a \cdot B_{\text{scan}} \text{ ‖ } 0) \cdot G  $$
 
-Où :
+Où :
 
 $$  \text{inputHash} = \text{hash}(\text{outpoint}_L \text{ ‖ } A)  $$
 
-Avec :
+Avec :
 \begin{itemize}
-  \item $B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;
-  \item $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
-  \item $A$ : La somme des clés publiques en input (tweak) ;
-  \item $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les
+  \item $B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;
+  \item $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
+  \item $A$ : La somme des clés publiques en input (tweak) ;
+  \item $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les
 \texttt{scriptPubKey}
-des UTXOs consommés en inputs de la transaction d'Alice ;
-  \item $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
-  \item $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
-  \item $G$ : Le point générateur de la courbe elliptique
+des UTXOs consommés en inputs de la transaction d'Alice ;
+  \item $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
+  \item $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
+  \item $G$ : Le point générateur de la courbe elliptique
 \texttt{secp256k1}
 ;
-  \item $\text{hash}$ : La fonction de hachage SHA256 taguée avec
+  \item $\text{hash}$ : La fonction de hachage SHA256 taguée avec
 \texttt{BIP0352/SharedSecret}
 ;
-  \item $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
-  \item $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
+  \item $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
+  \item $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
 \end{itemize}
 
-Bob scan la blockchain pour trouver son Silent Payment de cette manière : 
+Bob scanne la blockchain pour trouver son Silent Payment de cette manière :
 
 $$  P_0 = B_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0) \cdot G  $$
 
-Avec :
+Avec :
 \begin{itemize}
-  \item $b_{\text{scan}}$ : La clé privée de scan de Bob.
+  \item $b_{\text{scan}}$ : La clé privée de scan de Bob.
 \end{itemize}
 
-S'il trouve $P_0$ comme une adresse qui contient un Silent Payment lui étant adressé, il calcule $p_0$, la clé privée permettant de dépenser les fonds envoyés par Alice sur $P_0$ :
+S'il trouve $P_0$ comme une adresse qui contient un Silent Payment lui étant adressé, il calcule $p_0$, la clé privée permettant de dépenser les fonds envoyés par Alice sur $P_0$ :
 
 $$ p_0 = (b_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0)) \mod n $$
 
-Avec :
+Avec :
 \begin{itemize}
-  \item $b_{\text{spend}}$ : La clé privée de dépense de Bob ;
-  \item $n$ : l'ordre de la courbe elliptique
+  \item $b_{\text{spend}}$ : La clé privée de dépense de Bob ;
+  \item $n$ : l'ordre de la courbe elliptique
 \texttt{secp256k1}
 .
 \end{itemize}
 
-En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de ségréguer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
+En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de séparer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
 
 > ► *Pour plus d'informations, voir la définition de **[LABEL (SILENT PAYMENTS)](#label-silent-payments)**.*
 
 ## SILK ROAD
 
-Silk Road était une plateforme du dark web fondée par Ross Ulbricht, également connu sous le pseudonyme de Dread Pirate Roberts. Lancé en 2011, cette place de marché en ligne permettait aux utilisateurs d'acheter et de vendre des produits et services, tant licites qu'illicites, tout en préservant leur anonymat grâce à l'utilisation de Tor et des paiements en bitcoins. Silk Road proposait une gamme variée d'articles, principalement des drogues et des médicaments normalement sur ordonnance, mais excluait des activités jugées contraires aux principes jusnaturalistes, telles que la vente de services de tueurs à gages ou de contenus pédopornographiques.
+Silk Road était une plateforme du dark web fondée par Ross Ulbricht, également connu sous le pseudonyme de Dread Pirate Roberts. Lancée en 2011, cette place de marché en ligne permettait aux utilisateurs d'acheter et de vendre des produits et services, tant licites qu'illicites, tout en préservant leur anonymat grâce à l'utilisation de Tor et des paiements en bitcoins. Silk Road proposait une gamme variée d'articles, principalement des drogues et des médicaments normalement sur ordonnance, mais excluait des activités jugées contraires aux principes jusnaturalistes, telles que la vente de services de tueurs à gages ou de contenus pédopornographiques.
 
 La plateforme reflétait les convictions agoristes de Ross Ulbricht, en promouvant un marché libre et non régulé, échappant ainsi au contrôle des gouvernements et à la taxation. Silk Road a joué un rôle significatif dans l'adoption initiale de Bitcoin au début des années 2010, en contribuant à sa notoriété et à son utilisation au-delà des cercles cypherpunks.
 
@@ -6600,9 +6596,9 @@ Logiciel en ligne de commandes développé par Samourai Wallet qui permet de fou
 
 ## WHITE PAPER
 
-Nom donné au document scientifique nommé « *Bitcoin: A Peer-to-Peer Electronic Cash System* » publié par Satoshi Nakamoto pour la première fois le 31 octobre 2008. Ce document décrit les principes fondamentaux de Bitcoin. Le White Paper que l'on présente de nos jours est une seconde version publiée le 24 mars 2009.
+Rapport ou guide qui informe les lecteurs de manière concise sur une question complexe. Dans le cas de Bitcoin, il s'agit du nom donné au document scientifique nommé « *Bitcoin: A Peer-to-Peer Electronic Cash System* » publié par Satoshi Nakamoto pour la première fois le 31 octobre 2008. Ce document décrit les principes fondamentaux de Bitcoin. Le White Paper que l'on présente de nos jours est une seconde version publiée le 24 mars 2009.
 
-> ► *Pour télécharger le White Paper de Bitcoin : https://bitcoin.org/bitcoin.pdf.*
+> ► *En français, le terme est usuellement traduit par « livre blanc ». Pour télécharger le White Paper de Bitcoin : https://bitcoin.org/bitcoin.pdf.*
 
 ## WITNESSSCRIPT
 
