@@ -336,7 +336,7 @@ Pour le `witnessScript`, `OP_CHECKSIG` et `OP_CHECKSIGVERIFY` valent 1 sigop, `O
 
 Dans les scripts Taproot, les sigops sont traitées de manière différente par rapport aux scripts traditionnels. Au lieu de compter directement chaque opération de signature, Taproot introduit un budget de sigops pour chaque entrée de transaction, qui est proportionnel à la taille de cette entrée. Ce budget est de 50 sigops plus la taille en octets du témoin de l'input. Chaque opération de signature réduit ce budget de 50. Si l'exécution d'une opération de signature fait chuter le budget en dessous de zéro, le script est invalide. Cette méthode permet plus de flexibilité dans les scripts Taproot, tout en maintenant une protection contre les abus potentiels liés aux sigops, en les liant directement au poids de l'entrée. Ainsi, les scripts Taproot ne sont pas pris en compte dans la limite des 80 000 sigops par bloc.
 
-## SILENT PAYMENT
+## SILENT PAYMENTS
 
 Méthode pour utiliser des adresses Bitcoin statiques afin de recevoir des paiements sans pour autant produire de réutilisation d'adresse, sans interaction et sans lien visible on-chain entre les différents paiements et l'adresse statique. Cette technique élimine le besoin de générer de nouvelles adresses de réception vierges pour chaque transaction, ce qui permet d'éviter les interactions habituelles dans Bitcoin où le destinataire doit fournir une nouvelle adresse au payeur.
 
@@ -346,55 +346,55 @@ Par exemple, l'adresse statique de Bob $B$ représente la concaténation de sa c
 
 $$ B = B_{\text{scan}} \text{ ‖ } B_{\text{spend}} $$
 
-Ces clés sont simplement dérivées à partir du chemin suivant :
+Ces clés sont simplement dérivées à partir du chemin suivant :
 
 ```text
 scan : m / 352' / 0' / 0' / 1' / 0
 spend : m / 352' / 0' / 0' / 0' / 0
 ```
 
-Cette adresse statique est publiée par Bob. Alice la récupère pour faire un Silent Payment vers Bob. Elle calcule l'adresse de paiement $P_0$ appartenant à Bob de cette façon :
+Cette adresse statique est publiée par Bob. Alice la récupère pour faire un Silent Payment vers Bob. Elle calcule l'adresse de paiement $P_0$ appartenant à Bob de cette façon :
 
 $$  P_0 = B_{\text{spend}} + \text{hash}(\text{inputHash} \cdot a \cdot B_{\text{scan}} \text{ ‖ } 0) \cdot G  $$
 
-Où :
+Où :
 
 $$  \text{inputHash} = \text{hash}(\text{outpoint}_L \text{ ‖ } A)  $$
 
-Avec :
-* $B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;
-* $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
-* $A$ : La somme des clés publiques en input (tweak) ;
-* $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
-* $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
-* $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
-* $G$ : Le point générateur de la courbe elliptique `secp256k1` ;
-* $\text{hash}$ : La fonction de hachage SHA256 taguée avec `BIP0352/SharedSecret` ;
-* $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
-* $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
+Avec :
+* $B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;
+* $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
+* $A$ : La somme des clés publiques en input (tweak) ;
+* $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
+* $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
+* $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
+* $G$ : Le point générateur de la courbe elliptique `secp256k1` ;
+* $\text{hash}$ : La fonction de hachage SHA256 taguée avec `BIP0352/SharedSecret` ;
+* $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
+* $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
 
-Bob scan la blockchain pour trouver son Silent Payment de cette manière : 
+Bob scanne la blockchain pour trouver son Silent Payment de cette manière :
 
 $$  P_0 = B_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0) \cdot G  $$
 
-Avec :
-* $b_{\text{scan}}$ : La clé privée de scan de Bob.
+Avec :
+* $b_{\text{scan}}$ : La clé privée de scan de Bob.
 
-S'il trouve $P_0$ comme une adresse qui contient un Silent Payment lui étant adressé, il calcule $p_0$, la clé privée permettant de dépenser les fonds envoyés par Alice sur $P_0$ :
+S'il trouve $P_0$ comme une adresse qui contient un Silent Payment lui étant adressé, il calcule $p_0$, la clé privée permettant de dépenser les fonds envoyés par Alice sur $P_0$ :
 
 $$ p_0 = (b_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0)) \mod n $$
 
-Avec :
-* $b_{\text{spend}}$ : La clé privée de dépense de Bob ;
-* $n$ : l'ordre de la courbe elliptique `secp256k1`.
+Avec :
+* $b_{\text{spend}}$ : La clé privée de dépense de Bob ;
+* $n$ : l'ordre de la courbe elliptique `secp256k1`.
 
-En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de ségréguer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
+En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de séparer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
 
 > ► *Pour plus d'informations, voir la définition de **[LABEL (SILENT PAYMENTS)](./L.md#label-silent-payments)**.*
 
 ## SILK ROAD
 
-Silk Road était une plateforme du dark web fondée par Ross Ulbricht, également connu sous le pseudonyme de Dread Pirate Roberts. Lancé en 2011, cette place de marché en ligne permettait aux utilisateurs d'acheter et de vendre des produits et services, tant licites qu'illicites, tout en préservant leur anonymat grâce à l'utilisation de Tor et des paiements en bitcoins. Silk Road proposait une gamme variée d'articles, principalement des drogues et des médicaments normalement sur ordonnance, mais excluait des activités jugées contraires aux principes jusnaturalistes, telles que la vente de services de tueurs à gages ou de contenus pédopornographiques.
+Silk Road était une plateforme du dark web fondée par Ross Ulbricht, également connu sous le pseudonyme de Dread Pirate Roberts. Lancée en 2011, cette place de marché en ligne permettait aux utilisateurs d'acheter et de vendre des produits et services, tant licites qu'illicites, tout en préservant leur anonymat grâce à l'utilisation de Tor et des paiements en bitcoins. Silk Road proposait une gamme variée d'articles, principalement des drogues et des médicaments normalement sur ordonnance, mais excluait des activités jugées contraires aux principes jusnaturalistes, telles que la vente de services de tueurs à gages ou de contenus pédopornographiques.
 
 La plateforme reflétait les convictions agoristes de Ross Ulbricht, en promouvant un marché libre et non régulé, échappant ainsi au contrôle des gouvernements et à la taxation. Silk Road a joué un rôle significatif dans l'adoption initiale de Bitcoin au début des années 2010, en contribuant à sa notoriété et à son utilisation au-delà des cercles cypherpunks.
 

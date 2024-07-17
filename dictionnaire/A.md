@@ -60,7 +60,7 @@ Dans le cadre des Silent Payments, désigne un identifiant unique qui permet de 
 
 Cette adresse est composée de deux clés publiques : $B_{\text{scan}}$ pour le scan et $B_{\text{spend}}$ pour la dépense, concaténées pour former l'adresse statique $B = B_{\text{scan}} \text{ ‖ } B_{\text{spend}}$. Le destinataire publie cette adresse, permettant aux expéditeurs de dériver des adresses de paiement uniques sans interaction supplémentaire avec le destinataire. Pour gérer plusieurs sources de paiements distinctes, on peut ajouter un label à $B_{\text{spend}}$, créant ainsi plusieurs adresses statiques labellisées à partir de $B_1$, $B_2$, etc.). Cela permet de ségréguer les paiements tout en utilisant une seule adresse de base, réduisant ainsi la charge de travail pour le scan de la blockchain. Toutefois, toutes les adresses statiques d'une entité peuvent être facilement associées en raison de l'utilisation commune de $B_{\text{scan}}$.
 
-> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](./S.md#silent-payment)**.*
+> ► *Pour plus d'informations, voir la définition de **[SILENT PAYMENTS](./S.md#silent-payments)**.*
 
 ## AGORISME
 
