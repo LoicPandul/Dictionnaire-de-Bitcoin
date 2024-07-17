@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 764 `**
+**Nombre total de définitions : ` 767 `**
 
 ### A
 
@@ -178,6 +178,7 @@
 - [BTC](./dictionnaire/B.md#btc)
 - [BTCPAY SERVER](./dictionnaire/B.md#btcpay-server)
 - [BULL MARKET](./dictionnaire/B.md#bull-market)
+- [BYZANTINE FAULT TOLERANCE (BFT)](./dictionnaire/B.md#byzantine-fault-tolerance-bft)
 
 ### C
 
@@ -599,6 +600,7 @@
 - [PAIR-À-PAIR (P2P)](./dictionnaire/P.md#pair-à-pair-p2p)
 - [PAIR ENTRANT](./dictionnaire/P.md#pair-entrant)
 - [PAIR SORTANT](./dictionnaire/P.md#pair-sortant)
+- [PANNE BYZANTINE](./dictionnaire/P.md#panne-byzantine)
 - [PASSPHRASE (BIP39)](./dictionnaire/P.md#passphrase-bip39)
 - [PATOSHI](./dictionnaire/P.md#patoshi)
 - [PAYJOIN](./dictionnaire/P.md#payjoin)
@@ -631,6 +633,7 @@
 - [PRÉFIXES BINAIRES](./dictionnaire/P.md#préfixes-binaires)
 - [PREMIUM](./dictionnaire/P.md#premium)
 - [PREUVE DE TRAVAIL](./dictionnaire/P.md#preuve-de-travail)
+- [PROB. DES GÉNÉRAUX BYZANTINS](./dictionnaire/P.md#prob-des-généraux-byzantins)
 - [PROFONDEUR](./dictionnaire/P.md#profondeur)
 - [PROOF-OF-KEY DAY](./dictionnaire/P.md#proof-of-key-day)
 - [PROOF-OF-WORK](./dictionnaire/P.md#proof-of-work)

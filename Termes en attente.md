@@ -39,6 +39,7 @@ Bose, Ray-Chaudhuri et Hocquenghem
 
 ## BYZANTINE FAULT TOLERANCE (BFT)
 
+ATTENTION : TERME DÉJÀ PRÉSENT !
 
 
 ## CHAMPION (BIP)

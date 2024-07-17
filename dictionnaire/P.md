@@ -119,7 +119,7 @@ Les « pannes byzantines naturelles » sont couramment distinguées des « panne
 
 L'authentification, la signature et le consensus par des moyens cryptographiques et des algorithmes « Tolérants aux pannes byzantines » ou « Byzantine Fault Tolerant (BFT) » permettent de limiter ces dernières.
 
-> ► *La panne byzantine fait référence au problème des généraux byzantins, une métaphore traitant de la remise en cause de la fiabilité des transmissions et de l'intégrité des interlocuteurs. Pour plus d'informations, voir la définition de **[PROBLÈME DES GÉNÉRAUX BYZANTINS](./P.md#prob-des-généraux-byzantins)**.*
+> ► *La panne byzantine fait référence au problème des généraux byzantins, une métaphore traitant de la remise en cause de la fiabilité des transmissions et de l'intégrité des interlocuteurs. Pour plus d'informations, voir la définition de **[PROBLÈME DES GÉNÉRAUX BYZANTINS](./P.md#prob.-des-généraux-byzantins)**.*
 
 ## PASSPHRASE (BIP39)
 
