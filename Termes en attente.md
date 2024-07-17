@@ -37,9 +37,6 @@ Bose, Ray-Chaudhuri et Hocquenghem
 
 
 
-## BYZANTINE FAULT TOLERANCE (BFT)
-
-ATTENTION : TERME DÉJÀ PRÉSENT !
 
 
 ## CHAMPION (BIP)
@@ -307,7 +304,6 @@ LSP
 > *En anglais, ce terme est traduit « Proof of Reserves ».*
 
 
-## PROBLÈME GÉNÉRAUX BYZANTINS
 
 
 
