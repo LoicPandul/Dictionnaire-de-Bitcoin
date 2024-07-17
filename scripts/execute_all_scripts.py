@@ -11,7 +11,8 @@ scripts_prioritaires = [
     'md_for_pdf.py',
     'update_index.py',
     'stats.py',
-    'termes_manquants.py'
+    'termes_manquants.py',
+    'alphabet.py'
 ]
 
 print("Début de l'exécution des scripts Python :\n")
