@@ -10,4 +10,3 @@ Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type d
 ![](../../dictionnaire/assets/21.png)
 
 > ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](/dictionnaire/C.md#chemin-de-dérivation).*
-
