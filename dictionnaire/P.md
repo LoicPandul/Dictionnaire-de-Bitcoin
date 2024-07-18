@@ -85,7 +85,7 @@ Il convient de souligner que cette heuristique n'est pas toujours applicable, pu
 
 ![](assets/11.png)
 
-## PAIEMENT SIMPLIFIÉ
+## PAIEMENT SIMPLE
 
 Pattern (ou modèle) de transaction utilisé en analyse de chaîne qui se caractérise par la consommation d’un ou plusieurs UTXOs en inputs et la production de 2 UTXOs en outputs. Ce modèle va donc ressembler à cela :
 
