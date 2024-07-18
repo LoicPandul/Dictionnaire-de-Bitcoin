@@ -37,8 +37,6 @@ Bose, Ray-Chaudhuri et Hocquenghem
 
 
 
-
-
 ## CHAMPION (BIP)
 
 
@@ -302,9 +300,6 @@ LSP
 ## PREUVE DE RÉSERVES
 
 > *En anglais, ce terme est traduit « Proof of Reserves ».*
-
-
-
 
 
 ## PTLC

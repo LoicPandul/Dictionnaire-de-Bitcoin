@@ -113,7 +113,7 @@ def ajouter_numeros_page(titre, page_num):
 def extraire_pages_definitions(pdf_path):
     doc = fitz.open(pdf_path)
     page_mapping = {}
-    definition_regex = r'^[A-ZÀÉÈÊËÔÇÏA-Z0-9 /()\'’_.\-+?]+$'
+    definition_regex = r'^[A-ZÀÉÈÊËÔÇÏA-Z0-9 /()\'’_.\-+?*]+$'
 
 
 

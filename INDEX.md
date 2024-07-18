@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 767 `**
+**Nombre total de définitions : ` 766 `**
 
 ### A
 
@@ -155,16 +155,15 @@
 - [BITCOIN XT](./dictionnaire/B.md#bitcoin-xt)
 - [BIT GOLD](./dictionnaire/B.md#bit-gold)
 - [BITVM](./dictionnaire/B.md#bitvm)
-- [BLK????.DAT](./dictionnaire/B.md#blkdat)
+- [BLK*.DAT](./dictionnaire/B.md#blkdat)
 - [BLKINDEX.DAT](./dictionnaire/B.md#blkindexdat)
 - [BLKTREE/](./dictionnaire/B.md#blktree)
 - [BLOC](./dictionnaire/B.md#bloc)
 - [BLOCKCHAIN](./dictionnaire/B.md#blockchain)
-- [BLOCKS/BLK?????.DAT](./dictionnaire/B.md#blocksblkdat)
 - [BLOCKSIGNERS](./dictionnaire/B.md#blocksigners)
 - [BLOCKS INDEX](./dictionnaire/B.md#blocks-index)
 - [BLOCKSIZE WAR](./dictionnaire/B.md#blocksize-war)
-- [BLOCKS/REV?????.DAT](./dictionnaire/B.md#blocksrevdat)
+- [BLOCKS/REV*.DAT](./dictionnaire/B.md#blocksrevdat)
 - [BLOCKSTREAM](./dictionnaire/B.md#blockstream)
 - [BLOCK TEMPLATE](./dictionnaire/B.md#block-template)
 - [BLOOM FILTER](./dictionnaire/B.md#bloom-filter)
