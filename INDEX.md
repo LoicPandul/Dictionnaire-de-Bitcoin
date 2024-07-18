@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 766 `**
+**Nombre total de définitions : ` 757 `**
 
 ### A
 
@@ -181,7 +181,6 @@
 
 ### C
 
-- [C (LANGAGE)](./dictionnaire/C.md#c-langage)
 - [C++ (PLUS PLUS)](./dictionnaire/C.md#c-plus-plus)
 - [CAHOOTS](./dictionnaire/C.md#cahoots)
 - [CANAL DE PAIMENT](./dictionnaire/C.md#canal-de-paiment)
@@ -250,7 +249,6 @@
 - [CRYPTOGRAPHIE](./dictionnaire/C.md#cryptographie)
 - [CRYPTOLOGIE](./dictionnaire/C.md#cryptologie)
 - [CRYPTOMONNAIE](./dictionnaire/C.md#cryptomonnaie)
-- [C SHARP](./dictionnaire/C.md#c-sharp)
 - [CUSTODY](./dictionnaire/C.md#custody)
 - [CYPHERPUNKS](./dictionnaire/C.md#cypherpunks)
 
@@ -331,7 +329,6 @@
 - [FORCED ADDRESS REUSE](./dictionnaire/F.md#forced-address-reuse)
 - [FORK](./dictionnaire/F.md#fork)
 - [FORK (GIT)](./dictionnaire/F.md#fork-git)
-- [FORTH](./dictionnaire/F.md#forth)
 - [FPPS (FULL PAY PER SHARE)](./dictionnaire/F.md#fpps-full-pay-per-share)
 - [FRAIS DE TRANSACTION](./dictionnaire/F.md#frais-de-transaction)
 
@@ -345,7 +342,6 @@
 - [GITLAB](./dictionnaire/G.md#gitlab)
 - [GNPA (PRNG)](./dictionnaire/G.md#gnpa-prng)
 - [GNU](./dictionnaire/G.md#gnu)
-- [GO (GOLANG)](./dictionnaire/G.md#go-golang)
 - [GOLDFINGER (ATTAQUE)](./dictionnaire/G.md#goldfinger-attaque)
 - [GOSSIP](./dictionnaire/G.md#gossip)
 - [GPL](./dictionnaire/G.md#gpl)
@@ -395,8 +391,6 @@
 ### J
 
 - [JAM](./dictionnaire/J.md#jam)
-- [JAVA](./dictionnaire/J.md#java)
-- [JAVASCRIPT (NODE.JS)](./dictionnaire/J.md#javascript-nodejs)
 - [JBOK (PORTEFEUILLE)](./dictionnaire/J.md#jbok-portefeuille)
 - [JOININBOX](./dictionnaire/J.md#joininbox)
 - [JOINMARKET](./dictionnaire/J.md#joinmarket)
@@ -641,7 +635,6 @@
 - [PSBT](./dictionnaire/P.md#psbt)
 - [PSEUDO-ALÉATOIRE](./dictionnaire/P.md#pseudo-aléatoire)
 - [PULL REQUEST](./dictionnaire/P.md#pull-request)
-- [PYTHON](./dictionnaire/P.md#python)
 
 ### Q
 
@@ -675,14 +668,12 @@
 - [RPOW](./dictionnaire/R.md#rpow)
 - [RSMPPS](./dictionnaire/R.md#rsmpps)
 - [RUNES](./dictionnaire/R.md#runes)
-- [RUST](./dictionnaire/R.md#rust)
 - [RUST-LIGHTNING](./dictionnaire/R.md#rust-lightning)
 
 ### S
 
 - [SAMOURAI WALLET](./dictionnaire/S.md#samourai-wallet)
 - [SATOSHI (SAT)](./dictionnaire/S.md#satoshi-sat)
-- [SCALA](./dictionnaire/S.md#scala)
 - [SCALABILITÉ](./dictionnaire/S.md#scalabilité)
 - [SCHNORR (PROTOCOLE)](./dictionnaire/S.md#schnorr-protocole)
 - [SCORE (SCORE BASED METHOD)](./dictionnaire/S.md#score-score-based-method)

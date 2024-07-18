@@ -1069,10 +1069,6 @@ Ce concept est lié au [problème des généraux byzantins](#prob.-des-générau
 > ► *L'algorithme de preuve de travail (Proof-of-Work ou PoW) utilisé par Bitcoin est un mécanisme de consensus dit « Tolérant aux pannes byzantines » ou « Byzantine Fault Tolerant (BFT) ». Pour plus d'informations, voir la définition de **[PROBLÈME DES GÉNÉRAUX BYZANTINS](#prob.-des-généraux-byzantins)**.*
 
 
-## C (LANGAGE)
-
-Langage de programmation de haut niveau, créé dans les années 1970 par Dennis Ritchie. Il est connu pour sa performance, sa flexibilité et sa portabilité. Sa syntaxe a servi de base à de nombreux autres langages, y compris C++, Java et C#.
-
 ## C++ (PLUS PLUS)
 
 Langage de programmation polyvalent, évoluant du C, connu pour sa puissance et sa flexibilité. Utilisé pour le développement logiciel complexe, il prend en charge la programmation orientée objet et offre de riches fonctionnalités pour la gestion de la mémoire et des ressources système. 
@@ -1583,10 +1579,6 @@ Science mathématique qui traite de la cryptanalyse et de la cryptographie.
 
 Qualificatif générique donné à toute forme de monnaie, d'actif, de crédit ou d'unité numérique au sein d'un système informatique dans lequel on utilise de la cryptographie pour les échanges et les transactions entre les utilisateurs.
 
-## C SHARP
-
-Langage de programmation moderne, orienté objet, développé par Microsoft. Il est conçu pour être simple, mais complet.
-
 ## CUSTODY
 
 Dans le contexte de Bitcoin, se réfère à la détention et à la gestion des clés privées qui permettent le contrôle de bitcoins. La custody de BTC peut être assurée de deux manières : soit personnellement par l'utilisateur, qui garde lui-même les clés privées nécessaires pour accéder à ses bitcoins (ce que l'on appelle « self-custody »), soit par un tiers, comme une plateforme d'échange, où l'entreprise détient les clés privées et gère les bitcoins au nom de l'utilisateur. Cette seconde option est plus risquée que la self-custody, car cela expose les fonds de l'utilisateur aux risques de piratage, de faillite ou de comportements frauduleux de la part du gestionnaire.
@@ -2084,10 +2076,6 @@ Le terme de « fork » revêt plusieurs significations dans le cadre de Bitcoi
 
 Dans le cadre de Git, représente la création d'une copie d'un dépôt existant sur un nouveau compte, permettant ainsi à l'utilisateur de modifier, tester ou développer le projet indépendamment du dépôt original. Les forks permettent la collaboration open source et la contribution à des projets sans affecter le dépôt source.
 
-## FORTH
-
-Langage de programmation impératif, conçu pour être simple et efficace, surtout dans les systèmes embarqués et les applications où les ressources sont limitées. Forth se distingue par son style de programmation. Il utilise une pile pour le stockage des données et des calculs. Le langage Script utilisé sur Bitcoin a un fonctionnement similaire à Forth.
-
 ## FPPS (FULL PAY PER SHARE)
 
 Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une évolution de la méthode PPS (*Pay Per Share*). Elle rémunère les mineurs non seulement pour chaque share valide qu'ils soumettent, mais inclut également une part des récompenses de bloc. La rémunération est calculée sur la base des transactions moyennes précédentes et du hashrate de la pool. Ainsi, les mineurs reçoivent une rétribution pour les shares soumises, qu'un bloc soit trouvé ou non, mais cette méthode rémunère aussi la valeur attendue. Elle offre une rémunération stable et prévisible pour les mineurs, car elle élimine la variance liée à la probabilité de trouver un bloc, tout en les exposant aux fluctuations du marché de frais. Toutefois, elle est plus risquée pour les opérateurs de pool, car ils doivent payer les mineurs même lorsque aucun bloc n'est trouvé, absorbant ainsi le risque de variance.
@@ -2174,10 +2162,6 @@ Sigle de « Générateur de nombre pseudo-aléatoire ». Les GNPA sont une cat
 Projet initié en 1983 par Richard Stallman pour créer un système d'exploitation libre, compatible avec Unix. Le projet a développé de nombreux logiciels libres qui peuvent être utilisés comme un système d'exploitation ou en complément d'un autre système d'exploitation. GNU est à la base du mouvement du logiciel libre, largement repris dans la communauté Bitcoin. Combiné avec le noyau Linux, il forme les systèmes d'exploitation GNU/Linux.
 
 > ► *Le nom de « GNU » est un acronyme récursif signifiant « GNU's Not Unix », que l'on peut traduire en français « GNU n'est pas Unix ».*
-
-## GO (GOLANG)
-
-Langage de programmation développé par Google, qui est à la fois simple à comprendre et efficace.
 
 ## GOLDFINGER (ATTAQUE)
 
@@ -2427,14 +2411,6 @@ Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issu
 ## JAM
 
 JAM est une interface web pour JoinMarket axée sur la facilité d'utilisation. JoinMarket est une implémentation de coinjoin chaumien, mais son utilisation en ligne de commandes peut effrayer les utilisateurs débutants. JAM a justement été créé pour rendre les fonctionnalités avancées de JoinMarket accessibles aux débutants.
-
-## JAVA
-
-Langage de programmation polyvalent orienté objet, célèbre pour sa philosophie « écrire une fois, exécuter partout ». Java est largement utilisé pour le développement d'applications d'entreprise, de logiciels mobiles (en particulier pour Android), et dans des systèmes embarqués ou d'applications serveur.
-
-## JAVASCRIPT (NODE.JS)
-
-JavaScript est un langage de programmation principalement utilisé pour le développement web. Node.js est un environnement d'exécution JavaScript côté serveur, permettant de créer des applications web évolutives. Ensemble, ils offrent une solution complète pour la programmation d'applications web.
 
 ## JBOK (PORTEFEUILLE)
 
@@ -4018,10 +3994,6 @@ Dans le cadre de GitHub et d'autres plateformes d'hébergement de code, une Pull
 
 > ► *Le terme de « Pull Request » est souvent abrégé par le sigle « PR ».*
 
-## PYTHON
-
-Langage de programmation de haut niveau, connu pour sa syntaxe claire et sa lisibilité. Python est polyvalent, utilisé dans le développement web, l'analyse de données, l'intelligence artificielle, la science des données et l'automatisation. Il est apprécié pour sa simplicité et sa large communauté.
-
 
 ## QR CODE
 
@@ -4214,10 +4186,6 @@ Protocole développé par la même équipe que les Ordinals qui permet l'utilisa
 
 > ► *Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](#ordinals-theory)**, **[INSCRIPTIONS](#inscriptions)** et de **[DIGITAL ARTIFACTS](#digital-artifacts)**.*
 
-## RUST
-
-Langage de programmation moderne axé sur la sécurité et la performance. Il est conçu pour éviter les erreurs courantes de programmation. Rust est utilisé dans les systèmes embarqués, les applications Web, et pour le développement de logiciels nécessitant de hautes performances et une grande fiabilité. Ce langage est de plus en plus populaire dans l'environnement de Bitcoin.
-
 ## RUST-LIGHTNING
 
 Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en collaboration avec Square. Rust-Lightning fournit une implémentation de Lightning. Elle sert de base au *Lightning Development Kit* (LDK).
@@ -4236,10 +4204,6 @@ Logiciel de portefeuille Bitcoin pour appareils mobiles Android axé sur la conf
 ## SATOSHI (SAT)
 
 Le satoshi, souvent abrégé en « sat », est la plus petite subdivision du bitcoin qui peut être enregistrée sur la blockchain. Il est nommé en l'honneur de l'inventeur de Bitcoin, Satoshi Nakamoto. Un seul Bitcoin se divise en 100 000 000 sats, ce qui signifie qu'un satoshi équivaut à 0,00000001 bitcoin. En raison de sa petite valeur unitaire, le sat est souvent utilisé pour établir des prix, en particulier dans les petites transactions. Son utilisation est souvent préférée au BTC sur le Lightning Network.
-
-## SCALA
-
-Langage de programmation conçu pour être concis, combinant programmation fonctionnelle et orientée objet. Scala est souvent utilisé pour les applications d'entreprise, le développement de systèmes complexes et le traitement de données. Ce langage est notamment celui utilisé pour l'implémentation Eclair du Lightning Network.
 
 ## SCALABILITÉ
 
