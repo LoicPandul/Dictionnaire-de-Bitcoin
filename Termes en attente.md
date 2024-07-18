@@ -7,6 +7,10 @@ ___
 > *Address Poisonning.*
 
 
+## BITCOIN-DEV (MAILING LIST)
+
+Créée par Jeff Garzik en 2011, aujourd'hui hébergée sur Google Group https://groups.google.com/g/bitcoindev
+
 ## ADDRESS SWAPPING
 
 
