@@ -176,10 +176,6 @@ Protocole développé par la même équipe que les Ordinals qui permet l'utilisa
 
 > ► *Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](./O.md#ordinals-theory)**, **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
 
-## RUST
-
-Langage de programmation moderne axé sur la sécurité et la performance. Il est conçu pour éviter les erreurs courantes de programmation. Rust est utilisé dans les systèmes embarqués, les applications Web, et pour le développement de logiciels nécessitant de hautes performances et une grande fiabilité. Ce langage est de plus en plus populaire dans l'environnement de Bitcoin.
-
 ## RUST-LIGHTNING
 
 Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en collaboration avec Square. Rust-Lightning fournit une implémentation de Lightning. Elle sert de base au *Lightning Development Kit* (LDK).
