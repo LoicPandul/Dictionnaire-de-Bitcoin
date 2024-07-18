@@ -278,7 +278,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP109](#bip109)              |    51 | [B-MONEY](#b-money)            |    69 |
 | [BIP111](#bip111)              |    52 | [BOLT](#bolt)                  |    69 |
 | [BIP112](#bip112)              |    52 | [BOUNTY](#bounty)              |    69 |
-| [BIP113](#bip113)              |    52 | [BOUTISME](#boutisme)          |    69 |
+| [BIP113](#bip113)              |    52 | [BOUTISME](#boutisme)          |    70 |
 | [BIP118](#bip118)              |    52 | [BRANCH-AND-BOUND](#branch-and-bound) |    70 |
 | [BIP119](#bip119)              |    52 | [BRANCHE](#branche)            |    70 |
 | [BIP123](#bip123)              |    53 | [BRC-20](#brc-20)              |    70 |
@@ -296,7 +296,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 | [C++ (PLUS PLUS)](#c-plus-plus) |    73 | [COINJOIN](#coinjoin)          |    88 |
 | [CAHOOTS](#cahoots)            |    73 | [COINJUMBLE](#coinjumble)      |    89 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    73 | [COINMUX](#coinmux)            |    89 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |    73 | [COINMUX](#coinmux)            |    90 |
 | [CANDIDAT (BLOC)](#candidat-bloc) |    73 | [COINS/](#coins)               |    90 |
 | [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    74 | [COINSHUFFLE](#coinshuffle)    |    90 |
 | [CASHU](#cashu)                |    74 | [COLD WALLET](#cold-wallet)    |    90 |
@@ -305,10 +305,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [CHAINE INTERNE](#chaine-interne) |    75 | [COMMIT](#commit)              |    91 |
 | [CHAINSPLIT](#chainsplit)      |    76 | [COMPACT BLOCK RELAY](#compact-block-relay) |    91 |
 | [CHAINSTATE/](#chainstate)     |    76 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    91 |
-| [CHANGE](#change)              |    76 | [COMPTE](#compte)              |    91 |
+| [CHANGE](#change)              |    76 | [COMPTE](#compte)              |    92 |
 | [CHANNEL FACTORIES](#channel-factories) |    76 | [CONCATÉNATION](#concaténation) |    92 |
 | [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    77 | [CONDENSAT (HASH)](#condensat-hash) |    92 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    77 | [CONFIRMATION](#confirmation)  |    92 |
+| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    77 | [CONFIRMATION](#confirmation)  |    93 |
 | [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    78 | [CONSENSUS](#consensus)        |    93 |
 | [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    79 | [CONSOLIDATION](#consolidation) |    93 |
 | [CHEMIN PRIMAIRE](#chemin-primaire) |    80 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    94 |
@@ -328,7 +328,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    86 | [CRYPTOLOGIE](#cryptologie)    |    97 |
 | [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    86 | [CRYPTOMONNAIE](#cryptomonnaie) |    97 |
 | [COINBASE (TRANSACTION)](#coinbase-transaction) |    87 | [CUSTODY](#custody)            |    97 |
-| [COIN CONTROL](#coin-control)  |    87 | [CYPHERPUNKS](#cypherpunks)    |    98 |
+| [COIN CONTROL](#coin-control)  |    88 | [CYPHERPUNKS](#cypherpunks)    |    98 |
 | | | | |
 
 
@@ -577,7 +577,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [P2WPKH](#p2wpkh)              |   196 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   207 |
 | [P2WSH](#p2wsh)                |   196 | [PORTEFEUILLE](#portefeuille)  |   207 |
 | [PAIEMENT ROND](#paiement-rond) |   196 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   207 |
-| [PAIEMENT SIMPLIFIÉ](#paiement-simplifié) |   197 | [PORTEFEUILLE FROID](#portefeuille-froid) |   207 |
+| [PAIEMENT SIMPLE](#paiement-simple) |   197 | [PORTEFEUILLE FROID](#portefeuille-froid) |   207 |
 | [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   197 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   208 |
 | [PAIR ENTRANT](#pair-entrant)  |   198 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   208 |
 | [PAIR SORTANT](#pair-sortant)  |   198 | [PPLNSG](#pplnsg)              |   208 |
@@ -674,19 +674,18 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [TAPROOT](#taproot)            |   255 | [TPUB](#tpub)                  |   258 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   255 | [TRANSACTION (TX)](#transaction-tx) |   258 |
-| [TAPSCRIPT](#tapscript)        |   255 | [TRANSACTION COINBASE](#transaction-coinbase) |   258 |
-| [TARO](#taro)                  |   255 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   259 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   256 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   259 |
+| [TAPROOT](#taproot)            |   255 | [TPRV](#tprv)                  |   258 |
+| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   255 | [TPUB](#tpub)                  |   258 |
+| [TAPSCRIPT](#tapscript)        |   255 | [TRANSACTION (TX)](#transaction-tx) |   258 |
+| [TARO](#taro)                  |   255 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   258 |
+| [TAUX DE HACHAGE](#taux-de-hachage) |   256 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   258 |
 | [TCP](#tcp)                    |   256 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   259 |
 | [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   256 | [TRANSACTION STANDARD](#transaction-standard) |   259 |
-| [TESTNET](#testnet)            |   256 | [TUMBLEBIT](#tumblebit)        |   260 |
-| [THE DAO](#the-dao)            |   257 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   260 |
+| [TESTNET](#testnet)            |   256 | [TUMBLEBIT](#tumblebit)        |   259 |
+| [THE DAO](#the-dao)            |   257 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   259 |
 | [TIDES](#tides)                |   257 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   260 |
-| [TIMELOCK](#timelock)          |   257 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   261 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   257 | [TYPE DE DEVISE](#type-de-devise) |   262 |
-| [TPRV](#tprv)                  |   258 |                                |       |
+| [TIMELOCK](#timelock)          |   257 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   260 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   257 | [TYPE DE DEVISE](#type-de-devise) |   261 |
 | | | | |
 
 
@@ -694,11 +693,11 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [UASF](#uasf)                  |   264 | [UPUB](#upub)                  |   265 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   264 | [URI](#uri)                    |   265 |
-| [UNIX](#unix)                  |   264 | [UTREEXO](#utreexo)            |   265 |
-| [UNIX (HEURE)](#unix-heure)    |   264 | [UTXO](#utxo)                  |   266 |
-| [UPRV](#uprv)                  |   265 | [UTXO SET](#utxo-set)          |   267 |
+| [UASF](#uasf)                  |   263 | [UPUB](#upub)                  |   264 |
+| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   263 | [URI](#uri)                    |   264 |
+| [UNIX](#unix)                  |   263 | [UTREEXO](#utreexo)            |   264 |
+| [UNIX (HEURE)](#unix-heure)    |   263 | [UTXO](#utxo)                  |   265 |
+| [UPRV](#uprv)                  |   264 | [UTXO SET](#utxo-set)          |   266 |
 | | | | |
 
 
@@ -706,10 +705,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   269 | [VOUT](#vout)                  |   270 |
-| [VANITYGEN](#vanitygen)        |   269 | [VPRV](#vprv)                  |   270 |
-| [VERSIONNAGE](#versionnage)    |   269 | [VPUB](#vpub)                  |   270 |
-| [VIN](#vin)                    |   269 |                                |       |
+| [VANITY (ADDRESS)](#vanity-address) |   268 | [VOUT](#vout)                  |   269 |
+| [VANITYGEN](#vanitygen)        |   268 | [VPRV](#vprv)                  |   269 |
+| [VERSIONNAGE](#versionnage)    |   268 | [VPUB](#vpub)                  |   269 |
+| [VIN](#vin)                    |   268 |                                |       |
 | | | | |
 
 
@@ -717,13 +716,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [WABISABI](#wabisabi)          |   272 | [WATCH-ONLY WALLET](#watch-only-wallet) |   273 |
-| [WALLET](#wallet)              |   272 | [WHALE](#whale)                |   273 |
-| [WALLET.DAT](#wallet.dat)      |   272 | [WHIRLPOOL](#whirlpool)        |   273 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   272 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   273 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   272 | [WHITE PAPER](#white-paper)    |   273 |
-| [WASABI WALLET](#wasabi-wallet) |   272 | [WITNESSSCRIPT](#witnessscript) |   274 |
-| [WATCHMEN](#watchmen)          |   273 | [WTXID](#wtxid)                |   274 |
+| [WABISABI](#wabisabi)          |   271 | [WATCH-ONLY WALLET](#watch-only-wallet) |   272 |
+| [WALLET](#wallet)              |   271 | [WHALE](#whale)                |   272 |
+| [WALLET.DAT](#wallet.dat)      |   271 | [WHIRLPOOL](#whirlpool)        |   272 |
+| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   271 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   272 |
+| [WALLETS/DB.LOG](#walletsdb.log) |   271 | [WHITE PAPER](#white-paper)    |   272 |
+| [WASABI WALLET](#wasabi-wallet) |   271 | [WITNESSSCRIPT](#witnessscript) |   273 |
+| [WATCHMEN](#watchmen)          |   272 | [WTXID](#wtxid)                |   273 |
 | | | | |
 
 
@@ -731,8 +730,8 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [XBT](#xbt)                    |   276 | [XPRV](#xprv)                  |   277 |
-| [XOR](#xor)                    |   276 | [XPUB](#xpub)                  |   277 |
+| [XBT](#xbt)                    |   275 | [XPRV](#xprv)                  |   276 |
+| [XOR](#xor)                    |   275 | [XPUB](#xpub)                  |   276 |
 | | | | |
 
 
@@ -740,7 +739,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [YPRV](#yprv)                  |   279 | [YPUB](#ypub)                  |   279 |
+| [YPRV](#yprv)                  |   278 | [YPUB](#ypub)                  |   278 |
 | | | | |
 
 
@@ -748,9 +747,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ZEROCONF](#zeroconf)          |   281 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   281 |
-| [ZEROLINK](#zerolink)          |   281 | [ZPRV](#zprv)                  |   281 |
-| [ZEROSYNC](#zerosync)          |   281 | [ZPUB](#zpub)                  |   282 |
+| [ZEROCONF](#zeroconf)          |   280 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   280 |
+| [ZEROLINK](#zerolink)          |   280 | [ZPRV](#zprv)                  |   280 |
+| [ZEROSYNC](#zerosync)          |   280 | [ZPUB](#zpub)                  |   281 |
 | | | | |
 
 \arrayrulecolor{black}
@@ -1783,6 +1782,8 @@ Implémentation du protocole Bitcoin. Bitcoin Knots est une alternative au logic
 
 Autre nom donné à la méthode « SCORE BASED METHOD » pour le calcul de la rémunération des mineurs dans le contexte des pools de minage. C'est une méthode de récompense proportionnelle, mais pondérée par le moment auquel la share est soumise. Le BPM valorise les shares en fonction du temps écoulé depuis le début du cycle de minage. Plus une share est soumise tardivement dans le cycle, plus sa valeur est élevée. Cette méthode permet d'inciter les mineurs à rester, car à chaque arrêt du minage, le mineur voit son score stagner alors que celui des autres augmente de plus en plus rapidement.
 
+« *Bitcoin Pooled Mining* » était également le nom de la pool de minage de Slush en 2011, qui est à l'origine de la méthode de calcul des rémunération de même nom.
+
 > ► *Pour plus d'informations, voir la définition de **[SHARES](#shares)**.*
 
 ## BITCOIN QT
@@ -1925,20 +1926,7 @@ Dans le cadre de Git, représente une séparation du flux de travail principal, 
 
 ## BRC-20
 
-BRC-20 définit un ensemble de règles et de méthodes à respecter pour permettre une interaction avec des jetons non natifs sur Bitcoin. Il s'appuie sur les inscriptions du protocole Ordinals afin de définir des fonctions interprétées en dehors de la chaine. Ce standard a été créé par le développeur Domo, au début du mois de mars 2023. Selon son créateur, ce standard n'est qu'une expérimentation. Cela n'a pas empêché la machine spéculative de prendre le dessus durant les mois d'avril et de mai 2023. Des milliers d'investisseurs se sont emparés de ce standard, en achetant massivement les jetons BRC-20, créant au passage une hausse soudaine et historique des frais de transaction sur Bitcoin. Les jetons BRC-20 sont dénués d'existence concrète sur Bitcoin. Ils sont off-chain. Ce protocole utilise simplement Bitcoin, à travers le protocole Ordinals, pour stocker et horodater des fonctions permettant la gestion des jetons BRC-20. Ces fonctions sont encodées dans un format texte JSON, puis elles sont diffusées sous forme d’inscription Ordinals sur Bitcoin. Il en existe trois :
-\begin{itemize}
-  \item 
-\texttt{deploy}
-, qui permet de créer un nouveau jeton BRC-20 et de définir ses conditions ;
-  \item 
-\texttt{mint}
-, qui permet de réclamer des jetons BRC-20 spécifiques. Cela représente leur émission ;
-  \item 
-\texttt{transfer}
-, qui permet de transférer des jetons BRC-20 entre plusieurs utilisateurs.
-\end{itemize}
-
-Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs qui recensent l'intégralité des fonctions. Le standard BRC-20 est alors une utilisation très peu optimisée de Bitcoin par rapport à d'autres protocoles de création de jetons tels que RGB.
+Standard permettant l'interaction avec des jetons non natifs sur Bitcoin, basé sur les inscriptions du protocole Ordinals. Créé par Domo en mars 2023, ce standard expérimental a suscité un fort engouement spéculatif, entraînant une hausse historique des frais de transaction en avril et mai 2023. Les jetons BRC-20 utilisent Bitcoin pour stocker et horodater des fonctions JSON gérant ces actifs. Les fonctions sont `deploy` (création de jetons), `mint` (émission de jetons) et `transfer` (transfert de jetons). Pour exécuter ce protocole, il faut que des personnes maintiennent des serveurs qui recensent l'intégralité des fonctions. Le standard BRC-20 est alors une utilisation très peu optimisée de Bitcoin par rapport à d'autres protocoles de création de jetons tels que RGB.
 
 ## BTC
 
@@ -2373,13 +2361,11 @@ L'utilisation de codes de paiements avec l'implémentation PayNym est actuelleme
 
 ## COINBASE (TRANSACTION)
 
-Type spécifique de transaction Bitcoin, unique pour chaque bloc et toujours la première de celui-ci. Elle permet au mineur ayant trouvé une preuve de travail valide de recevoir sa récompense de bloc. Cette récompense se compose de deux éléments : 
-\begin{itemize}
-  \item La subvention de bloc, qui génère de nouveaux BTC conformément au calendrier d'émission défini par les règles de consensus ;
-  \item Les frais de transaction, qui correspondent à la différence entre le total des entrées et des sorties de toutes les transactions incluses dans le bloc.
-\end{itemize}
+La transaction coinbase est une transaction spéciale et unique incluse dans chaque bloc de la blockchain Bitcoin. Elle représente la première transaction d'un bloc et est créée par le mineur qui a réussi à trouver un entête validant la preuve de travail (*Proof-of-Work*), c'est-à-dire inférieur ou égal à la cible.
 
-La particularité de la transaction Coinbase est qu'elle est la seule à ne pas requérir d'entrée (input), ce qui signifie qu'elle crée des bitcoins ex nihilo. Elle inclut également parfois des informations de gestion choisies par le mineur ou la pool de minage, telles que des messages ou des données sur la version du logiciel utilisé. Les bitcoins générés par une transaction Coinbase sont soumis à une période de maturité de 100 blocs pendant laquelle ils ne peuvent pas être dépensés par le mineur.
+La transaction coinbase sert principalement deux objectifs : attribuer la récompense de bloc au mineur et ajouter de nouvelles unités de bitcoins à la masse monétaire en circulation. La récompense de bloc, qui est l'incitation économique pour les mineurs à contribuer à s'adonner à la preuve de travail, comprend les frais accumulés pour les transactions incluses dans le bloc et un montant déterminé de bitcoins nouvellement créés ex-nihilo (subvention de bloc). Ce montant, initialement fixé à 50 bitcoins par bloc en 2009, est réduit de moitié tous les 210 000 blocs (environ tous les 4 ans) lors d'un événement appelé « halving ».
+
+La transaction coinbase diffère des transactions régulières de plusieurs manières. Tout d'abord, elle n'a pas d'entrée (input), ce qui signifie qu'aucune sortie de transaction existante (UTXO) n'y est consommée. Ensuite, le script de signature (`scriptSig`) pour la transaction coinbase contient généralement un champ arbitraire permettant d'incorporer des données supplémentaires, telles que des messages personnalisés ou des informations de version de logiciel de minage. Enfin, les bitcoins générés par la transaction coinbase sont soumis à une période de maturité de 100 blocs (101 confirmations) avant de pouvoir être dépensés, afin de prévenir les dépenses potentielles de bitcoins non existants en cas de réorganisation de la chaîne.
 
 > ► *Il n'existe aucune traduction de « Coinbase » en français. Il est donc admis d'utiliser directement ce terme. Pour plus d'informations, voir la définition de [**PÉRIODE DE MATURITÉ**](#période-de-maturité).*
 
@@ -4969,7 +4955,7 @@ Il convient de souligner que cette heuristique n'est pas toujours applicable, pu
 
 ![](../../dictionnaire/assets/11.png)
 
-## PAIEMENT SIMPLIFIÉ
+## PAIEMENT SIMPLE
 
 Pattern (ou modèle) de transaction utilisé en analyse de chaîne qui se caractérise par la consommation d’un ou plusieurs UTXOs en inputs et la production de 2 UTXOs en outputs. Ce modèle va donc ressembler à cela :
 
@@ -6250,14 +6236,6 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 Dans le contexte de Bitcoin, une transaction (abrégée « TX ») est une opération enregistrée sur la blockchain qui transfère la propriété de bitcoins d'une ou plusieurs entrées (inputs) vers une ou plusieurs sorties (outputs). Chaque transaction consomme des UTXOs en entrées, qui sont des outputs de transactions précédentes, et crée de nouveaux UTXOs en sorties, qui peuvent être utilisés comme entrées dans des transactions futures.
 
 Chaque entrée comporte une référence à un output existant ainsi qu'un script de signature (`scriptSig`) qui rempli les conditions de dépense (`scriptPubKey`) établies par l'output auquel il fait référence. C'est ce qui permet de débloquer des bitcoins. Les outputs définissent de nouvelles conditions de dépense (`scriptPubKey`) pour les bitcoins transférés, souvent sous la forme d'une clé publique ou d'une adresse à laquelle les bitcoins sont maintenant associés.
-
-## TRANSACTION COINBASE
-
-La transaction coinbase est une transaction spéciale et unique incluse dans chaque bloc de la blockchain Bitcoin. Elle représente la première transaction d'un bloc et est créée par le mineur qui a réussi à trouver un entête validant la preuve de travail (*Proof-of-Work*), c'est-à-dire inférieur ou égal à la cible.
-
-La transaction coinbase sert principalement deux objectifs : attribuer la récompense de bloc au mineur et ajouter de nouvelles unités de bitcoins à la masse monétaire en circulation. La récompense de bloc, qui est l'incitation économique pour les mineurs à contribuer à s'adonner à la preuve de travail, comprend les frais accumulés pour les transactions incluses dans le bloc et un montant déterminé de bitcoins nouvellement créés ex-nihilo (subvention de bloc). Ce montant, initialement fixé à 50 bitcoins par bloc en 2009, est réduit de moitié tous les 210 000 blocs (environ tous les 4 ans) lors d'un événement appelé « halving ».
-
-La transaction coinbase diffère des transactions régulières de plusieurs manières. Tout d'abord, elle n'a pas d'entrée (input), ce qui signifie qu'aucune sortie de transaction existante (UTXO) n'y est consommée. Ensuite, le script de signature (`scriptSig`) pour la transaction coinbase contient généralement un champ arbitraire permettant d'incorporer des données supplémentaires, telles que des messages personnalisés ou des informations de version de logiciel de minage. Enfin, les bitcoins générés par la transaction coinbase sont soumis à une période de maturité de 100 blocs (101 confirmations) avant de pouvoir être dépensés, afin de prévenir les dépenses potentielles de bitcoins non existants en cas de réorganisation de la chaîne.
 
 ## TRANSACTION COLLABORATIVE
 

@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 757 `**
+**Nombre total de définitions : ` 756 `**
 
 ### A
 
@@ -589,7 +589,7 @@
 - [P2WPKH](./dictionnaire/P.md#p2wpkh)
 - [P2WSH](./dictionnaire/P.md#p2wsh)
 - [PAIEMENT ROND](./dictionnaire/P.md#paiement-rond)
-- [PAIEMENT SIMPLIFIÉ](./dictionnaire/P.md#paiement-simplifié)
+- [PAIEMENT SIMPLE](./dictionnaire/P.md#paiement-simple)
 - [PAIR-À-PAIR (P2P)](./dictionnaire/P.md#pair-à-pair-p2p)
 - [PAIR ENTRANT](./dictionnaire/P.md#pair-entrant)
 - [PAIR SORTANT](./dictionnaire/P.md#pair-sortant)
@@ -763,7 +763,6 @@
 - [TPRV](./dictionnaire/T.md#tprv)
 - [TPUB](./dictionnaire/T.md#tpub)
 - [TRANSACTION (TX)](./dictionnaire/T.md#transaction-tx)
-- [TRANSACTION COINBASE](./dictionnaire/T.md#transaction-coinbase)
 - [TRANSACTION COLLABORATIVE](./dictionnaire/T.md#transaction-collaborative)
 - [TRANSACTION D'ENGAGEMENT](./dictionnaire/T.md#transaction-dengagement)
 - [TRANSACTION NON CONFIRMÉE](./dictionnaire/T.md#transaction-non-confirmée)
