@@ -45,7 +45,7 @@ Structure de données centrale utilisée dans Git où sont stockées les informa
 ## DER
 #### Distinguished Encoding Rules (DER)
 
-Sous-ensemble stricte des règles d'encodage ASN.1 définies dans la spécification [ITU-T X.690, 2002.](https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf) et utilisée pour encoder n'importe quel type de données dans une séquence binaire. DER est surtout utilisé dans des domaines spécifiques, comme en **cryptographie**, ou les données doivent êtes encodées de manière prédictibles et standard.
+Sous-ensemble stricte des règles d'encodage ASN.1 définies dans la spécification [ITU-T X.690, 2002.](https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf) et utilisée pour encoder n'importe quel type de données dans une séquence binaire. DER est surtout utilisé dans des domaines spécifiques, comme en **cryptographie**, ou les données doivent êtes encodées de manière standard et prédictible.
 
 Sur Bitcoin, les signatures **ECDSA** ([bip 66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)) sont encodées au format **DER**. <br>
 Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de signature se compose des éléments suivants :
@@ -61,7 +61,7 @@ Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de
 - `s_length` (1 octet)   : longueur de la valeur `s` suivante (32 octets)
 - `s`        (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian)
 
-Notez que les valeurs r et s doivent être précédées de 0x00 si leur premier octet est supérieur à 0x7F. Cela entraîne des longueurs de signature variables dans le cas où la valeur r se situe dans la moitié supérieure de la plage (appelée « high r »). Les signatures avec des valeurs s élevées ne sont pas standard et n'apparaissent généralement pas dans la nature. Notez également que dans de rares cas, r ou s peuvent être inférieurs à 32 octets, ce qui est légal et permet d'obtenir des signatures plus courtes. Dans les transactions en bitcoins, un octet est ajouté à la fin d'une signature DER pour indiquer le type de `SigHash` utilisé.
+Notez que les valeurs r et s doivent être précédées de 0x00 si leur premier octet est supérieur à 0x7F. Cela entraîne des longueurs de signature variables dans le cas où la valeur r se situe dans la moitié supérieure de la plage (appelée « high r »). Les signatures avec des valeurs s élevées ne sont pas standard et n'apparaissent généralement pas dans la nature. Notez également que dans de rares cas, r ou s peuvent être inférieurs à 32 octets, ce qui est légal et permet d'obtenir des signatures plus courtes. Dans les transactions en bitcoins, un octet est ajouté à la fin d'une signature DER pour indiquer le type de [SigHash](./S.md#sighash-flag) utilisé.
 
 ## DÉRIVATION
 
