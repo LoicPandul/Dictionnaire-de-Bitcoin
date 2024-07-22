@@ -61,7 +61,7 @@ Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de
 - `s_length` (1 octet)   : longueur de la valeur `s` suivante (32 octets)
 - `s`        (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian)
 
-Notez que les valeurs r et s doivent être précédées de 0x00 si leur premier octet est supérieur à 0x7F. Cela entraîne des longueurs de signature variables dans le cas où la valeur r se situe dans la moitié supérieure de la plage (appelée « high r »). Les signatures avec des valeurs s élevées ne sont pas standard et n'apparaissent généralement pas dans la nature. Notez également que dans de rares cas, r ou s peuvent être inférieurs à 32 octets, ce qui est légal et permet d'obtenir des signatures plus courtes. Dans les transactions en bitcoins, un octet est ajouté à la fin d'une signature DER pour indiquer le type de [SigHash](./S.md#sighash-flag) utilisé.
+Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de [SigHash](./S.md#sighash-flag) utilisé.
 
 ## DÉRIVATION
 
