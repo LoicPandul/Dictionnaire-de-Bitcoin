@@ -42,6 +42,27 @@ Structure de données centrale utilisée dans Git où sont stockées les informa
 
 > ► *En anglais, on parle d'un « repository ». Il est courant d'employer la troncation « repo » pour désigner un dépôt Git.*
 
+## DER
+#### Distinguished Encoding Rules (DER)
+
+Sous-ensemble stricte des règles d'encodage ASN.1 définies dans la spécification [ITU-T X.690, 2002.](https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf) et utilisée pour encoder n'importe quel type de données dans une séquence binaire. DER est surtout utilisé dans des domaines spécifiques, comme en **cryptographie**, ou les données doivent êtes encodées de manière standard et prédictible.
+
+Sur Bitcoin, les signatures **ECDSA** ([bip 66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)) sont encodées au format **DER**. <br>
+Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de signature se compose des éléments suivants :
+
+`0x30 | length |  0x02 | r_length | r | 0x02 | s_length | s` (71 octets)
+
+- `0x30`     (1 octet)   : identifiant d'une **structure composée**
+- `length`   (1 octet)   : longueur des données suivantes
+- `0x02`     (1 octet)   : identifiant de donnée type `INTEGER` (nombre entier)
+- `r_length` (1 octet)   : longueur de la valeur `r` suivante (32 octets)
+- `r`        (32 octets) : valeur `r` entant qu'entier gros-boutiste (big-endian)
+- `0x02`     (1 octet)   : identifiant de donnée type `INTEGER` (nombre entier)
+- `s_length` (1 octet)   : longueur de la valeur `s` suivante (32 octets)
+- `s`        (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian)
+
+Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de [SigHash](./S.md#sighash-flag) utilisé.
+
 ## DÉRIVATION
 
 Désigne le processus de génération de paires de clés enfants à partir d'une paire de clés parent (clé privée et clé publique) et d'un code de chaîne au sein d'un portefeuille déterministe et hiérarchique (HD). Ce processus permet de segmenter des branches et d’organiser un portefeuille en différents niveaux avec de nombreuses paires de clés enfants, qui peuvent toutes être récupérées en connaissant uniquement les informations de récupération de base (la phrase mnémonique et l'éventuelle passphrase). Pour dériver une clé enfant, on utilise la fonction `HMAC-SHA512` avec le code de chaîne parent et la concaténation de la clé parent et d’un index de 32 bits. Il existe deux types de dérivations :
