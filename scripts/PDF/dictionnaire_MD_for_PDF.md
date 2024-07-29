@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 18 juillet 2024\newline
+Version du 29 juillet 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -336,21 +336,22 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [DAEMON](#daemon)              |   100 | [DIFFUSION](#diffusion)        |   103 |
-| [DANDELION](#dandelion)        |   100 | [DIGITAL ARTIFACTS](#digital-artifacts) |   103 |
-| [DARKWALLET](#darkwallet)      |   100 | [DISTRIBUÉ](#distribué)        |   103 |
+| [DAEMON](#daemon)              |   100 | [DIFFUSION](#diffusion)        |   104 |
+| [DANDELION](#dandelion)        |   100 | [DIGITAL ARTIFACTS](#digital-artifacts) |   104 |
+| [DARKWALLET](#darkwallet)      |   100 | [DISTRIBUÉ](#distribué)        |   104 |
 | [DATABASE/](#database)         |   100 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |   104 |
-| [DB.LOG](#db.log)              |   101 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |   104 |
-| [DDOS](#ddos)                  |   101 | [DNS SEEDS](#dns-seeds)        |   104 |
-| [DEBUG.LOG](#debug.log)        |   101 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |   105 |
-| [DEPEG](#depeg)                |   101 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |   105 |
-| [DÉPÔT](#dépôt)                |   101 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |   105 |
-| [DÉRIVATION](#dérivation)      |   101 | [DRIVECHAIN](#drivechain)      |   106 |
-| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |   102 | [DUMMY ELEMENT](#dummy-element) |   106 |
-| [DÉRIVATION NORMALE](#dérivation-normale) |   102 | [DUST](#dust)                  |   106 |
-| [DGM](#dgm)                    |   102 | [DUSTING ATTACK](#dusting-attack) |   107 |
-| [DIFFICULTÉ](#difficulté)      |   103 | [DUST LIMIT](#dust-limit)      |   107 |
-| [DIFFIE-HELLMAN](#diffie-hellman) |   103 | [DUSTRELAYFEE](#dustrelayfee)  |   108 |
+| [DB.LOG](#db.log)              |   101 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |   105 |
+| [DDOS](#ddos)                  |   101 | [DNS SEEDS](#dns-seeds)        |   105 |
+| [DEBUG.LOG](#debug.log)        |   101 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |   106 |
+| [DEPEG](#depeg)                |   101 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |   106 |
+| [DÉPÔT](#dépôt)                |   101 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |   106 |
+| [DER](#der)                    |   101 | [DRIVECHAIN](#drivechain)      |   107 |
+| [DÉRIVATION](#dérivation)      |   102 | [DUMMY ELEMENT](#dummy-element) |   107 |
+| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |   102 | [DUST](#dust)                  |   107 |
+| [DÉRIVATION NORMALE](#dérivation-normale) |   103 | [DUSTING ATTACK](#dusting-attack) |   107 |
+| [DGM](#dgm)                    |   103 | [DUST LIMIT](#dust-limit)      |   108 |
+| [DIFFICULTÉ](#difficulté)      |   103 | [DUSTRELAYFEE](#dustrelayfee)  |   108 |
+| [DIFFIE-HELLMAN](#diffie-hellman) |   103 |                                |       |
 | | | | |
 
 
@@ -2641,6 +2642,60 @@ Fait référence à la situation où la valeur d'un actif numérique, typiquemen
 Structure de données centrale utilisée dans Git où sont stockées les informations de versionnage d'un projet. Un dépôt contient l'historique complet de toutes les modifications, les branches et les tags. Chaque dépôt est une collection indépendante de fichiers et de dossiers, accompagnée d'un historique des commits, permettant la collaboration et le suivi des changements au fil du temps. Par exemple, le dépôt de Bitcoin Core est stocké sur GitHub ici : https://github.com/bitcoin/bitcoin.
 
 > ► *En anglais, on parle d'un « repository ». Il est courant d'employer la troncation « repo » pour désigner un dépôt Git.*
+
+## DER
+
+Acronyme de *Distinguished Encoding Rules*. C'est un sous-ensemble stricte des règles d'encodage ASN.1 définies dans la spécification [ITU-T X.690, 2002.](https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf) et utilisée pour encoder n'importe quel type de données dans une séquence binaire. DER est surtout utilisé dans des domaines spécifiques, comme en cryptographie, ou les données doivent êtes encodées de manière standard et prédictible.
+
+Sur Bitcoin, les signatures ECDSA sont encodées au format DER. Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de signature se compose des éléments suivants (71 octets) :
+
+\begin{codeblock}
+0x30 | length |  0x02 | r-length | r | 0x02 | s-length | s
+\end{codeblock}
+
+Avec :
+\begin{itemize}
+  \item 
+\texttt{0x30}
+(1 octet) : identifiant d'une structure composée ;
+  \item 
+\texttt{length}
+(1 octet) : longueur des données suivantes ;
+  \item 
+\texttt{0x02}
+(1 octet) : identifiant de donnée type
+\texttt{INTEGER}
+(nombre entier) ;
+  \item 
+\texttt{r-length}
+(1 octet) : longueur de la valeur
+\texttt{r}
+suivante (32 octets) ;
+  \item 
+\texttt{r}
+(32 octets) : valeur
+\texttt{r}
+entant qu'entier gros-boutiste (big-endian) ;
+  \item 
+\texttt{0x02}
+(1 octet) : identifiant de donnée type
+\texttt{INTEGER}
+(nombre entier) ;
+  \item 
+\texttt{s-length}
+(1 octet) : longueur de la valeur
+\texttt{s}
+suivante (32 octets) ;
+  \item 
+\texttt{s}
+(32 octets) : valeur
+\texttt{s}
+entant qu'entier gros-boutiste (big-endian).
+\end{itemize}
+
+Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de SigHash utilisé.
+
+> ► *Pour plus d'informations, voir les définitions de [**BIP66**](#bip66) et **[SIGHASH FLAG](#sighash-flag)**.*
 
 ## DÉRIVATION
 

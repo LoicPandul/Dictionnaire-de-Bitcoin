@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 756 `**
+**Nombre total de définitions : ` 757 `**
 
 ### A
 
@@ -263,6 +263,7 @@
 - [DEBUG.LOG](./dictionnaire/D.md#debuglog)
 - [DEPEG](./dictionnaire/D.md#depeg)
 - [DÉPÔT](./dictionnaire/D.md#dépôt)
+- [DER](./dictionnaire/D.md#der)
 - [DÉRIVATION](./dictionnaire/D.md#dérivation)
 - [DÉRIVATION ENDURCIE](./dictionnaire/D.md#dérivation-endurcie)
 - [DÉRIVATION NORMALE](./dictionnaire/D.md#dérivation-normale)
