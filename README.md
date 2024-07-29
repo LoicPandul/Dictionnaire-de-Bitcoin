@@ -177,11 +177,6 @@ This work is licensed under a CC BY-NC-SA 4.0
 [cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
-
-<p align="center">
-  <a href="https://www.pandul.fr/" target="_blank">
-    <img src="./img/Logo-Pandul-NOIR.png" alt="Logo Pandul" width="50%">
-  </a>
-</p>
+[![Cover Image](./img/Logo-Pandul-NOIR.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
 
 
