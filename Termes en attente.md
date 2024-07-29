@@ -10,9 +10,6 @@ ___
 ## ADDRESS SWAPPING
 
 
-## POOL (COINJOIN)
-
-
 
 ## ATTAQUE PAR REJEU
 
@@ -298,6 +295,10 @@ LSP
 
 
 ## PONG (BIP31)
+
+
+
+## POOL (COINJOIN)
 
 
 
