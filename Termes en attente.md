@@ -74,6 +74,7 @@ Cross input signature aggregation
 ## DER
 
 *Distinguished Encoding Rules* BIP66
+ATTENTION : TERME DÉJÀ PRÉSENT !
 
 
 ## DESCRIPTORS

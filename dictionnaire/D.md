@@ -49,17 +49,17 @@ Acronyme de *Distinguished Encoding Rules*. C'est un sous-ensemble stricte des r
 Sur Bitcoin, les signatures ECDSA sont encodées au format DER. Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de signature se compose des éléments suivants (71 octets) :
 
 ```text
-0x30 | length |  0x02 | r_length | r | 0x02 | s_length | s
+0x30 | length |  0x02 | r-length | r | 0x02 | s-length | s
 ```
 
 Avec :
 * `0x30` (1 octet) : identifiant d'une structure composée ;
 * `length` (1 octet) : longueur des données suivantes ;
 * `0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;
-* `r_length` (1 octet) : longueur de la valeur `r` suivante (32 octets) ;
+* `r-length` (1 octet) : longueur de la valeur `r` suivante (32 octets) ;
 * `r` (32 octets) : valeur `r` entant qu'entier gros-boutiste (big-endian) ;
 * `0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;
-* `s_length` (1 octet) : longueur de la valeur `s` suivante (32 octets) ;
+* `s-length` (1 octet) : longueur de la valeur `s` suivante (32 octets) ;
 * `s` (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian).
 
 Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de SigHash utilisé.
