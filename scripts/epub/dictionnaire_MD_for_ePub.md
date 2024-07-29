@@ -1,177 +1,89 @@
----
-header-includes:
-  - \usepackage{fancyhdr}
-  - \usepackage{colortbl}
-  - \usepackage{pdfpages}
-  - \usepackage{listings}
-  - \usepackage{tcolorbox}
-  - \usepackage{fontspec}
-  - \definecolor{customgray}{RGB}{246, 248, 250}
-  - \lstdefinelanguage{text}{
-      basicstyle=\ttfamily\small,
-      morekeywords={}
-    }
-  - \lstdefinelanguage{plaintext}{
-      basicstyle=\ttfamily\small,
-      morekeywords={}
-    }
-  - \lstset{
-      backgroundcolor=\color{customgray}, 
-      frame=none, 
-      basicstyle=\ttfamily\small,
-      aboveskip=0.5em,
-      belowskip=0.5em
-    }
-  - \tcbuselibrary{listingsutf8}
-  - \tcbset{listing engine=listings}
-  - \newtcblisting{codeblock}{
-      colback=customgray,
-      colframe=white,
-      listing only,
-      listing options={basicstyle=\ttfamily\small},
-      left=1em,
-      right=1em
-    }
-  - \pagestyle{fancy}
-  - \fancyfoot[C]{\thepage}
-  - \renewcommand{\headrulewidth}{0pt}
-  - \renewcommand{\footrulewidth}{0pt}
-  - \arrayrulecolor{white}
----
-\clearpage
-\pagecolor{black}
-\includepdf{cover_front.png}
-\nopagecolor
-\newpage
-\thispagestyle{empty}
-\begin{minipage}[b][\textheight][b]{\textwidth}
-\textbf{© 2024 Loïc Morel}\newline
-\textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
-\newline
-Version du 30 juillet 2024\newline
-https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
-\newline
-Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
-https://creativecommons.org/licenses/by-nc-sa/4.0/\newline
-\newline
-Lightning : pandul@sats.rs\newline
-Email : loic@pandul.fr\newline
-Site web : https://www.pandul.fr/\newline
-GitHub : https://github.com/LoicPandul/\newline
-\end{minipage}
-\newpage
+
+
+© 2024 Loïc Morel
+Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
+
+
+Version du 30 July 2024
+
+https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
+
+Cet ouvrage est sous licence CC BY-NC-SA 4.0
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Lightning : pandul@sats.rs
+
+Email : loic@pandul.fr
+
+Site web : https://www.pandul.fr/
+
+GitHub : https://github.com/LoicPandul/
+
 
 \newpage
-\thispagestyle{empty}
-\begin{minipage}[c][\textheight]{\textwidth}
-\vspace*{\fill}
-\centering
-{\fontsize{40}{50} \selectfont \textbf{Dictionnaire de Bitcoin}}\newline
-\newline
-\newline
-\newline
-{\fontsize{15}{25} \selectfont{TOUT LE VOCABULAIRE TECHNIQUE DE BITCOIN}}\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-{\Large \textbf{\textit{Loïc Morel}}}
-\vspace*{\fill}
-\end{minipage}
-\newpage
 
-\newpage
-\thispagestyle{empty}
-\begin{center}
-\Huge \textbf{CONTRIBUTEURS}
-\end{center}
-\vspace*{1cm}
-*Dictionnaire de Bitcoin* est un projet participatif ouvert à tous. Vous êtes libre de proposer des modifications, des corrections ou de soumettre de nouvelles définitions manquantes. Pour ce faire, rendez-vous sur le dépôt GitHub du projet : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/.\
+Dictionnaire de Bitcoin est un projet participatif ouvert à tous. Vous êtes libre de proposer des modifications, des corrections ou de soumettre de nouvelles définitions manquantes. Pour ce faire, rendez-vous sur le dépôt GitHub du projet : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/.\
 \
 Je tiens à remercier tous les contributeurs pour leur précieuse aide, leurs conseils d'experts, leurs contributions à la rédaction de nouvelles définitions ou à la correction de celles déjà existantes, ainsi que tous ceux qui ont participé à la relecture de cet ouvrage :
-\begin{itemize}
-  \item Psyduck07 (https://github.com/Psyduck07) ;
-  \item Adrien Lacombe (https://github.com/adrienlacombe) ;
-  \item Ludovic Lars (https://github.com/lugaxker) ;
-  \item Beemo (https://github.com/nflatrea).
-\end{itemize}
+<ul>
+<li>Psyduck07 (https://github.com/Psyduck07) ;</li>
+<li>Adrien Lacombe (https://github.com/adrienlacombe) ;</li>
+<li>Ludovic Lars (https://github.com/lugaxker) ;</li>
+<li>Beemo (https://github.com/nflatrea).</li>
+</ul>
 \
 Je tiens également à remercier toutes les personnes qui m'ont aidé dans la rédaction de mes autres contenus, qui ont servi de fondement au _Dictionnaire de Bitcoin_ :
-\begin{itemize}
-  \item Grittoshi (https://twitter.com/Grittoshi) ;
-  \item 200KEKS (https://twitter.com/200KEKS) ;
-  \item Fanis Michalakis (https://twitter.com/FanisMichalakis) ;
-  \item AcidBunny (https://twitter.com/acidbunny21) ;
-  \item Sosthène (https://twitter.com/Sosthene\_\_\_) ;
-  \item Théo Pantamis (https://twitter.com/TheoPantamis) ;
-  \item Louferlou (https://twitter.com/Louferlou) ;
-  \item JohnOnChain (https://twitter.com/JohnOnChain) ;
-  \item Pythcoiner (https://twitter.com/pythcoiner) ;
-  \item Rogzy (https://twitter.com/DecouvreBitcoin) ;
-  \item Théo Mogenet (https://twitter.com/theomogenet) ;
-  \item Gilles Cadignan (https://twitter.com/gillesCadignan) ;
-  \item Ludovic Lars (https://twitter.com/lugaxker) ;
-  \item Lounès Ksouri (https://twitter.com/louneskmt) ;
-  \item WillKEKS (https://twitter.com/Satsmokers) ;
-  \item Paul ADW (https://twitter.com/PaulADW) ;
-  \item TDevD (https://twitter.com/SamouraiDev) ;
-  \item Trigger (https://twitter.com/Trigger\_jw) ;
-  \item Bitcoiner Nomad (https://twitter.com/BitcoinerNomad) ;
-  \item LaurentMT (https://twitter.com/LaurentMT) ;
-  \item Guillaume Goualard (https://twitter.com/\_INITIO\_) ;
-  \item Science Genial (https://twitter.com/science\_genial) ;
-  \item Marc VALLEE (https://twitter.com/marcvallee13) ;
-  \item Meyga Vox (https://twitter.com/meygavox) ;
-  \item Jean-Luc et Marco de Bitcoin.fr (https://bitcoin.fr/) ;
-  \item L'équipe de Découvre Bitcoin (https://decouvrebitcoin.fr/) ;
-  \item L'équipe de PlanB Network (https://planb.network/) ;
-  \item L'équipe de Bitstack (https://www.bitstack-app.com/) ;
-  \item L'équipe de Parlons Bitcoin (https://twitter.com/parlonsbitcoin).
-\end{itemize}
+<ul>
+<li>Grittoshi (https://twitter.com/Grittoshi) ;</li>
+<li>200KEKS (https://twitter.com/200KEKS) ;</li>
+<li>Fanis Michalakis (https://twitter.com/FanisMichalakis) ;</li>
+<li>AcidBunny (https://twitter.com/acidbunny21) ;</li>
+<li>Sosthène (https://twitter.com/Sosthene\_\_\_) ;</li>
+<li>Théo Pantamis (https://twitter.com/TheoPantamis) ;</li>
+<li>Louferlou (https://twitter.com/Louferlou) ;</li>
+<li>JohnOnChain (https://twitter.com/JohnOnChain) ;</li>
+<li>Pythcoiner (https://twitter.com/pythcoiner) ;</li>
+<li>Rogzy (https://twitter.com/DecouvreBitcoin) ;</li>
+<li>Théo Mogenet (https://twitter.com/theomogenet) ;</li>
+<li>Gilles Cadignan (https://twitter.com/gillesCadignan) ;</li>
+<li>Ludovic Lars (https://twitter.com/lugaxker) ;</li>
+<li>Lounès Ksouri (https://twitter.com/louneskmt) ;</li>
+<li>WillKEKS (https://twitter.com/Satsmokers) ;</li>
+<li>Paul ADW (https://twitter.com/PaulADW) ;</li>
+<li>TDevD (https://twitter.com/SamouraiDev) ;</li>
+<li>Trigger (https://twitter.com/Trigger\_jw) ;</li>
+<li>Bitcoiner Nomad (https://twitter.com/BitcoinerNomad) ;</li>
+<li>LaurentMT (https://twitter.com/LaurentMT) ;</li>
+<li>Guillaume Goualard (https://twitter.com/\_INITIO\_) ;</li>
+<li>Science Genial (https://twitter.com/science\_genial) ;</li>
+<li>Marc VALLEE (https://twitter.com/marcvallee13) ;</li>
+<li>Meyga Vox (https://twitter.com/meygavox) ;</li>
+<li>Jean-Luc et Marco de Bitcoin.fr (https://bitcoin.fr/) ;</li>
+<li>L'équipe de Découvre Bitcoin (https://decouvrebitcoin.fr/) ;</li>
+<li>L'équipe de PlanB Network (https://planb.network/) ;</li>
+<li>L'équipe de Bitstack (https://www.bitstack-app.com/) ;</li>
+<li>L'équipe de Parlons Bitcoin (https://twitter.com/parlonsbitcoin).</li>
+</ul>
 \
 Un grand merci aussi à tous ceux qui ont contribué à mes différents projets et qui ont choisi de rester anonymes.\
 \
 Merci également à toutes les personnes qui créent des contenus instructifs sur Bitcoin et son écosystème. Je n'ai pas cité de sources directement, mais les nombreux contenus que j'ai consultés au fil des années ont enrichi mes connaissances et ont forcément inspiré la rédaction de ce dictionnaire. Un remerciement spécial à ceux que je lis ou écoute régulièrement :
-\begin{itemize}
-  \item Andreas Antonopoulos (https://twitter.com/aantonop) ;
-  \item Sjors Provoost (https://twitter.com/provoost) ;
-  \item Eric Voskuil (https://twitter.com/evoskuil) ;
-  \item Fanis Michalakis (https://twitter.com/FanisMichalakis) ;
-  \item Ludovic Lars (https://twitter.com/lugaxker) ;
-  \item JohnOnChain (https://twitter.com/JohnOnChain) ;
-  \item Théo Pantamis (https://twitter.com/TheoPantamis) ;
-  \item LaurentMT (https://twitter.com/LaurentMT) ;
-  \item Théo Mogenet (https://twitter.com/theomogenet) ;
-  \item Sosthène (https://twitter.com/Sosthene\_\_\_) ;
-  \item Lounès Ksouri (https://twitter.com/louneskmt) ;
-  \item Satoshi Nakamoto ;
-  \item Et pleins d'autres que j'oublie sûrement.
-\end{itemize}
+<ul>
+<li>Andreas Antonopoulos (https://twitter.com/aantonop) ;</li>
+<li>Sjors Provoost (https://twitter.com/provoost) ;</li>
+<li>Eric Voskuil (https://twitter.com/evoskuil) ;</li>
+<li>Fanis Michalakis (https://twitter.com/FanisMichalakis) ;</li>
+<li>Ludovic Lars (https://twitter.com/lugaxker) ;</li>
+<li>JohnOnChain (https://twitter.com/JohnOnChain) ;</li>
+<li>Théo Pantamis (https://twitter.com/TheoPantamis) ;</li>
+<li>LaurentMT (https://twitter.com/LaurentMT) ;</li>
+<li>Théo Mogenet (https://twitter.com/theomogenet) ;</li>
+<li>Sosthène (https://twitter.com/Sosthene\_\_\_) ;</li>
+<li>Lounès Ksouri (https://twitter.com/louneskmt) ;</li>
+<li>Satoshi Nakamoto ;</li>
+<li>Et pleins d'autres que j'oublie sûrement.</li>
+</ul>
 \
 Plus largement, merci à tous ceux qui contribuent au développement de Bitcoin, qu'ils soient développeurs ou chercheurs.\
 \
@@ -181,628 +93,49 @@ Et évidemment, un immense merci à ma femme, Chloé, qui est à l'origine de l'
 \
 Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur Amazon (disponible fin 2024), ou bien me faire un don sur mon adresse Lightning : pandul@sats.rs. Merci !\
 \
-Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement arrêtés pour avoir simplement écrit du code. Je tiens à leur exprimer mon soutien indéfectible. Leur engagement pour la protection de la vie privée et la liberté incarne les valeurs fondamentales de Bitcoin. Ces développeurs n'ont commis aucun crime ; ils ont seulement œuvré pour offrir des outils permettant à chacun de faire valoir ses droits naturels. Leur procès est d'une importance capitale à la fois pour Bitcoin et son écosystème, mais plus largement pour la liberté dans nos démocraties. Afin de les soutenir dans cette épreuve, j'invite chacun à contribuer à leur défense juridique. Vos dons permettront d'assurer la meilleure défense possible à ces développeurs qui œuvrent au quotidien pour nos libertés. Ils permettront également de créer un précédent qui dissuadera de futures intimidations à l'encontre des développeurs, et ainsi de ne pas freiner l'innovation technologique sur Bitcoin et son écosystème. **Pour donner :** https://p2prights.org/\newline
-\newpage
-\thispagestyle{empty}
-\begin{center}
-\Huge \textbf{TABLE DES MATIÈRES}
-\end{center}
-\vspace*{0.5cm}
-
-\section*{A}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [ADAPTOR SIGNATURE](#adaptor-signature) |    20 | [ANYPREVOUT (APO)](#anyprevout-apo) |    27 |
-| [ADDR](#addr)                  |    21 | [AOPP](#aopp)                  |    27 |
-| [ADDR.DAT](#addr.dat)          |    21 | [API](#api)                    |    28 |
-| [ADDRV2](#addrv2)              |    21 | [ARBITRAGE](#arbitrage)        |    28 |
-| [ADRESSE DE RÉCEPTION](#adresse-de-réception) |    22 | [ARBRE DE MERKLE](#arbre-de-merkle) |    28 |
-| [ADRESSE STATIQUE](#adresse-statique) |    23 | [ARK](#ark)                    |    29 |
-| [AGORISME](#agorisme)          |    23 | [ASCII](#ascii)                |    29 |
-| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    23 | [ASIC](#asic)                  |    29 |
-| [ALGORITHME](#algorithme)      |    24 | [ASICBOOST](#asicboost)        |    30 |
-| [ALTCOIN](#altcoin)            |    24 | [ASMAP](#asmap)                |    30 |
-| [ANALYSE DE CHAINE](#analyse-de-chaine) |    24 | [ASSUME UTXO](#assume-utxo)    |    30 |
-| [ANCESTOR MINING](#ancestor-mining) |    25 | [ASSUME VALID](#assume-valid)  |    31 |
-| [ANCHOR OUTPUTS](#anchor-outputs) |    25 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    31 |
-| [ANCHORS.DAT](#anchors.dat)    |    25 | [ATLC](#atlc)                  |    31 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    25 | [ATOMIC SWAP](#atomic-swap)    |    31 |
-| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    26 | [ATTAQUE DES 51 POUR CENT](#attaque-des-51-pour-cent) |    32 |
-| [ANTI MONEY LAUNDERING (AML)](#anti-money-laundering-aml) |    27 | [AVG. ROUND DURATION](#avg.-round-duration) |    33 |
-| | | | |
-
-
-\section*{B}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [BANLIST.DAT](#banlist.dat)    |    35 | [BIP145](#bip145)              |    54 |
-| [BANLIST.JSON](#banlist.json)  |    35 | [BIP147](#bip147)              |    54 |
-| [BARE-MULTISIG](#bare-multisig) |    35 | [BIP148](#bip148)              |    55 |
-| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    35 | [BIP149](#bip149)              |    55 |
-| [BASE58CHECK](#base58check)    |    35 | [BIP150](#bip150)              |    55 |
-| [BATCHED SPENDING](#batched-spending) |    36 | [BIP151](#bip151)              |    56 |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    36 | [BIP152](#bip152)              |    56 |
-| [BEAR MARKET](#bear-market)    |    37 | [BIP155](#bip155)              |    56 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP156](#bip156)              |    56 |
-| [BERKELEYDB](#berkeleydb)      |    37 | [BIP173](#bip173)              |    57 |
-| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP322](#bip322)              |    57 |
-| [BIG-ENDIAN](#big-endian)      |    38 | [BIP324](#bip324)              |    57 |
-| [BINAIRE](#binaire)            |    38 | [BIP326](#bip326)              |    58 |
-| [BIP](#bip)                    |    39 | [BIP352](#bip352)              |    58 |
-| [BIP1](#bip1)                  |    40 | [BIP380](#bip380)              |    58 |
-| [BIP2](#bip2)                  |    40 | [BIP381](#bip381)              |    59 |
-| [BIP8](#bip8)                  |    40 | [BIP382](#bip382)              |    59 |
-| [BIP9](#bip9)                  |    52 | [BIP383](#bip383)              |    59 |
-| [BIP10](#bip10)                |    41 | [BIP384](#bip384)              |    59 |
-| [BIP11](#bip11)                |    41 | [BIP385](#bip385)              |    59 |
-| [BIP12](#bip12)                |    42 | [BIP386](#bip386)              |    60 |
-| [BIP13](#bip13)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
-| [BIP14](#bip14)                |    42 | [BIT](#bit)                    |    60 |
-| [BIP16](#bip16)                |    42 | [BIT (UNITÉ)](#bit-unité)      |    60 |
-| [BIP17](#bip17)                |    42 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    60 |
-| [BIP21](#bip21)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    61 |
-| [BIP22](#bip22)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    61 |
-| [BIP23](#bip23)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    61 |
-| [BIP30](#bip30)                |    43 | [BITCOIN-CLI](#bitcoin-cli)    |    61 |
-| [BIP31](#bip31)                |    44 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
-| [BIP32](#bip32)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    62 |
-| [BIP34](#bip34)                |    44 | [BITCOIND](#bitcoind)          |    62 |
-| [BIP35](#bip35)                |    44 | [BITCOIND.PID](#bitcoind.pid)  |    62 |
-| [BIP37](#bip37)                |    69 | [BITCOIN FOG](#bitcoin-fog)    |    63 |
-| [BIP38](#bip38)                |    45 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    63 |
-| [BIP39](#bip39)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    63 |
-| [BIP42](#bip42)                |    45 | [BITCOIN JESUS](#bitcoin-jesus) |    63 |
-| [BIP43](#bip43)                |    46 | [BITCOIN KNOTS](#bitcoin-knots) |    63 |
-| [BIP44](#bip44)                |    46 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    64 |
-| [BIP47](#bip47)                |    47 | [BITCOIN QT](#bitcoin-qt)      |    64 |
-| [BIP49](#bip49)                |    48 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    64 |
-| [BIP50](#bip50)                |    48 | [BITCOINTALK](#bitcointalk)    |    65 |
-| [BIP61](#bip61)                |    48 | [BITCOIN UNLIMITED](#bitcoin-unlimited) |    65 |
-| [BIP65](#bip65)                |    48 | [BITCOIN XT](#bitcoin-xt)      |    65 |
-| [BIP66](#bip66)                |    48 | [BIT GOLD](#bit-gold)          |    65 |
-| [BIP68](#bip68)                |    49 | [BITVM](#bitvm)                |    66 |
-| [BIP70](#bip70)                |    49 | [BLK*.DAT](#blk.dat)           |    66 |
-| [BIP71](#bip71)                |    49 | [BLKINDEX.DAT](#blkindex.dat)  |    66 |
-| [BIP72](#bip72)                |    49 | [BLKTREE/](#blktree)           |    66 |
-| [BIP75](#bip75)                |    49 | [BLOC](#bloc)                  |    66 |
-| [BIP78](#bip78)                |    50 | [BLOCKCHAIN](#blockchain)      |    67 |
-| [BIP84](#bip84)                |    50 | [BLOCKSIGNERS](#blocksigners)  |    67 |
-| [BIP85](#bip85)                |    50 | [BLOCKS INDEX](#blocks-index)  |    67 |
-| [BIP86](#bip86)                |    50 | [BLOCKSIZE WAR](#blocksize-war) |    67 |
-| [BIP90](#bip90)                |    50 | [BLOCKS/REV*.DAT](#blocksrev.dat) |    68 |
-| [BIP91](#bip91)                |    51 | [BLOCKSTREAM](#blockstream)    |    68 |
-| [BIP101](#bip101)              |    51 | [BLOCK TEMPLATE](#block-template) |    68 |
-| [BIP102](#bip102)              |    51 | [BLOOM FILTER](#bloom-filter)  |    69 |
-| [BIP109](#bip109)              |    51 | [B-MONEY](#b-money)            |    69 |
-| [BIP111](#bip111)              |    52 | [BOLT](#bolt)                  |    69 |
-| [BIP112](#bip112)              |    52 | [BOUNTY](#bounty)              |    69 |
-| [BIP113](#bip113)              |    52 | [BOUTISME](#boutisme)          |    70 |
-| [BIP118](#bip118)              |    52 | [BRANCH-AND-BOUND](#branch-and-bound) |    70 |
-| [BIP119](#bip119)              |    52 | [BRANCHE](#branche)            |    70 |
-| [BIP123](#bip123)              |    53 | [BRC-20](#brc-20)              |    70 |
-| [BIP125](#bip125)              |    53 | [BTC](#btc)                    |    70 |
-| [BIP137](#bip137)              |    53 | [BTCPAY SERVER](#btcpay-server) |    71 |
-| [BIP141](#bip141)              |    53 | [BULL MARKET](#bull-market)    |    71 |
-| [BIP143](#bip143)              |    54 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    71 |
-| [BIP144](#bip144)              |    54 |                                |       |
-| | | | |
-
-
-\section*{C}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [C++ (PLUS PLUS)](#c-plus-plus) |    73 | [COINJOIN](#coinjoin)          |    88 |
-| [CAHOOTS](#cahoots)            |    73 | [COINJUMBLE](#coinjumble)      |    89 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    73 | [COINMUX](#coinmux)            |    90 |
-| [CANDIDAT (BLOC)](#candidat-bloc) |    73 | [COINS/](#coins)               |    90 |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    74 | [COINSHUFFLE](#coinshuffle)    |    90 |
-| [CASHU](#cashu)                |    74 | [COLD WALLET](#cold-wallet)    |    90 |
-| [CET](#cet)                    |    74 | [COLORED COINS](#colored-coins) |    90 |
-| [CHAINE EXTERNE](#chaine-externe) |    74 | [COMMERÇANT](#commerçant)      |    91 |
-| [CHAINE INTERNE](#chaine-interne) |    75 | [COMMIT](#commit)              |    91 |
-| [CHAINSPLIT](#chainsplit)      |    76 | [COMPACT BLOCK RELAY](#compact-block-relay) |    91 |
-| [CHAINSTATE/](#chainstate)     |    76 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    91 |
-| [CHANGE](#change)              |    76 | [COMPTE](#compte)              |    92 |
-| [CHANNEL FACTORIES](#channel-factories) |    76 | [CONCATÉNATION](#concaténation) |    92 |
-| [CHARGE UTILE (PAYLOAD)](#charge-utile-payload) |    77 | [CONDENSAT (HASH)](#condensat-hash) |    92 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    77 | [CONFIRMATION](#confirmation)  |    93 |
-| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    78 | [CONSENSUS](#consensus)        |    93 |
-| [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    79 | [CONSOLIDATION](#consolidation) |    93 |
-| [CHEMIN PRIMAIRE](#chemin-primaire) |    80 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    94 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    80 | [CONTRIBUTEUR (CORE)](#contributeur-core) |    94 |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    80 | [COOKIE (.COOKIE)](#cookie-.cookie) |    94 |
-| [CIOH](#cioh)                  |    81 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |    94 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    82 | [COURBE ELLIPTIQUE](#courbe-elliptique) |    95 |
-| [CLÉ MAITRESSE](#clé-maitresse) |    83 | [COVENANT](#covenant)          |    95 |
-| [CLÉ PRIVÉE](#clé-privée)      |    83 | [COVERT ASICBOOST](#covert-asicboost) |    96 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    84 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |    96 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    84 | [CPPSRB](#cppsrb)              |    96 |
-| [CLI](#cli)                    |    85 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |    96 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    85 | [CRYPTANALYSE](#cryptanalyse)  |    97 |
-| [CLONE](#clone)                |    86 | [CRYPTER](#crypter)            |    97 |
-| [CLUSTER](#cluster)            |    86 | [CRYPTO-ACTIF](#crypto-actif)  |    97 |
-| [CODE DE CHAINE](#code-de-chaine) |    86 | [CRYPTOGRAPHIE](#cryptographie) |    97 |
-| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    86 | [CRYPTOLOGIE](#cryptologie)    |    97 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    86 | [CRYPTOMONNAIE](#cryptomonnaie) |    97 |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) |    87 | [CUSTODY](#custody)            |    97 |
-| [COIN CONTROL](#coin-control)  |    88 | [CYPHERPUNKS](#cypherpunks)    |    98 |
-| | | | |
-
-
-\section*{D}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [DAEMON](#daemon)              |   100 | [DIFFUSION](#diffusion)        |   104 |
-| [DANDELION](#dandelion)        |   100 | [DIGITAL ARTIFACTS](#digital-artifacts) |   104 |
-| [DARKWALLET](#darkwallet)      |   100 | [DISTRIBUÉ](#distribué)        |   104 |
-| [DATABASE/](#database)         |   100 | [DLC (DISCREET LOG CONTRACT)](#dlc-discreet-log-contract) |   104 |
-| [DB.LOG](#db.log)              |   101 | [DLP (DISCREET LOG PROBLEME)](#dlp-discreet-log-probleme) |   105 |
-| [DDOS](#ddos)                  |   101 | [DNS SEEDS](#dns-seeds)        |   105 |
-| [DEBUG.LOG](#debug.log)        |   101 | [DOLLAR COST AVERAGING (DCA)](#dollar-cost-averaging-dca) |   106 |
-| [DEPEG](#depeg)                |   101 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |   106 |
-| [DÉPÔT](#dépôt)                |   101 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |   106 |
-| [DER](#der)                    |   101 | [DRIVECHAIN](#drivechain)      |   107 |
-| [DÉRIVATION](#dérivation)      |   102 | [DUMMY ELEMENT](#dummy-element) |   107 |
-| [DÉRIVATION ENDURCIE](#dérivation-endurcie) |   102 | [DUST](#dust)                  |   107 |
-| [DÉRIVATION NORMALE](#dérivation-normale) |   103 | [DUSTING ATTACK](#dusting-attack) |   107 |
-| [DGM](#dgm)                    |   103 | [DUST LIMIT](#dust-limit)      |   108 |
-| [DIFFICULTÉ](#difficulté)      |   103 | [DUSTRELAYFEE](#dustrelayfee)  |   108 |
-| [DIFFIE-HELLMAN](#diffie-hellman) |   103 |                                |       |
-| | | | |
-
-
-\section*{E}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [ECASH (DAVID CHAUM)](#ecash-david-chaum) |   110 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |   112 |
-| [ECASH (XEC)](#ecash-xec)      |   110 | [EMPREINTE DE PORTEFEUILLE](#empreinte-de-portefeuille) |   112 |
-| [ECDH](#ecdh)                  |   110 | [ENDIANNESS](#endianness)      |   113 |
-| [ECDSA](#ecdsa)                |   110 | [ENTÊTE DE BLOC](#entête-de-bloc) |   113 |
-| [ECLAIR](#eclair)              |   110 | [ENTRÉE (INPUT)](#entrée-input) |   114 |
-| [ECLIPSE (ATTAQUE)](#eclipse-attaque) |   111 | [ENTROPIE](#entropie)          |   114 |
-| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |   111 | [ENTROPIE (ANALYSE)](#entropie-analyse) |   115 |
-| [ELECTRS](#electrs)            |   111 | [EREBUS (ATTAQUE)](#erebus-attaque) |   115 |
-| [ELECTRUM](#electrum)          |   111 | [ESMPPS](#esmpps)              |   115 |
-| [ELECTRUM LIGHTNING](#electrum-lightning) |   111 | [ÉTIQUETAGE](#étiquetage)      |   116 |
-| [ELECTRUM SERVER](#electrum-server) |   111 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |   116 |
-| [ELTOO](#eltoo)                |   112 |                                |       |
-| | | | |
-
-
-\section*{F}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [FARADAY](#faraday)            |   118 | [FONCTION DE HACHAGE](#fonction-de-hachage) |   120 |
-| [FEDIMINT](#fedimint)          |   118 | [FONCTIONNAIRE](#fonctionnaire) |   121 |
-| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |   118 | [FONGIBILITÉ](#fongibilité)    |   121 |
-| [FEE SNIPING](#fee-sniping)    |   118 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |   121 |
-| [FERME DE MINAGE](#ferme-de-minage) |   119 | [FORCED ADDRESS REUSE](#forced-address-reuse) |   122 |
-| [FIAT](#fiat)                  |   119 | [FORK](#fork)                  |   122 |
-| [FIBRE](#fibre)                |   119 | [FORK (GIT)](#fork-git)        |   122 |
-| [FINNEY HAL](#finney-hal)      |   120 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |   123 |
-| [FLAG DAY](#flag-day)          |   120 | [FRAIS DE TRANSACTION](#frais-de-transaction) |   124 |
-| | | | |
-
-
-\section*{G}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [GAP LIMIT](#gap-limit)        |   126 | [GOSSIP](#gossip)              |   128 |
-| [GENÈSE (BLOC)](#genèse-bloc)  |   126 | [GPL](#gpl)                    |   128 |
-| [GETWORK](#getwork)            |   126 | [GRAINE (SEED)](#graine-seed)  |   129 |
-| [GIT](#git)                    |   127 | [GREEN ADDRESS](#green-address) |   129 |
-| [GITHUB](#github)              |   127 | [GREEN ADDRESSES](#green-addresses) |   129 |
-| [GITLAB](#gitlab)              |   127 | [GREEN WALLET](#green-wallet)  |   129 |
-| [GNPA (PRNG)](#gnpa-prng)      |   128 | [GROS-BOUTISTE](#gros-boutiste) |   130 |
-| [GNU](#gnu)                    |   128 | [GUI](#gui)                    |   130 |
-| [GOLDFINGER (ATTAQUE)](#goldfinger-attaque) |   128 | [GUISETTINGS.INI.BAK](#guisettings.ini.bak) |   130 |
-| | | | |
-
-
-\section*{H}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [HACHEUR](#hacheur)            |   132 | [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   134 |
-| [HALVING](#halving)            |   132 | [HEURISTIQUE D'ANALYSE](#heuristique-danalyse) |   135 |
-| [HARD FORK](#hard-fork)        |   132 | [HEXADÉCIMAL](#hexadécimal)    |   135 |
-| [HARDWARE WALLET](#hardware-wallet) |   133 | [HMAC-SHA512](#hmac-sha512)    |   135 |
-| [HASH160](#hash160)            |   133 | [HODL](#hodl)                  |   136 |
-| [HASH256](#hash256)            |   133 | [HONG-KONG ROUNDTABLE](#hong-kong-roundtable) |   136 |
-| [HASHCASH](#hashcash)          |   133 | [HORODATAGE (TIMESTAMP)](#horodatage-timestamp) |   136 |
-| [HASHRATE](#hashrate)          |   134 | [HRP (HUMAN READABLE PART)](#hrp-human-readable-part) |   137 |
-| [HAUTEUR DE BLOC](#hauteur-de-bloc) |   134 | [HWI](#hwi)                    |   137 |
-| | | | |
-
-
-\section*{I}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [I2P](#i2p)                    |   139 | [INPUT](#input)                |   140 |
-| [IMPLÉMENTATION DE BITCOIN](#implémentation-de-bitcoin) |   139 | [INSCRIPTIONS](#inscriptions)  |   140 |
-| [INBOUND CAPACITY](#inbound-capacity) |   139 | [IOU](#iou)                    |   141 |
-| [INDEX (NUMÉRO DE CLÉ)](#index-numéro-de-clé) |   139 | [IP_ASN.MAP](#ip_asn.map)      |   141 |
-| [INDEXES/TXINDEX/](#indexestxindex) |   139 | [ISSUE](#issue)                |   141 |
-| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   140 |                                |       |
-| | | | |
-
-
-\section*{J}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [JAM](#jam)                    |   143 | [JOININBOX](#joininbox)        |   143 |
-| [JBOK (PORTEFEUILLE)](#jbok-portefeuille) |   143 | [JOINMARKET](#joinmarket)      |   143 |
-| | | | |
-
-
-\section*{K}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [KNAPSACK SOLVER](#knapsack-solver) |   145 | [KYC (KNOW YOUR CUSTOMER)](#kyc-know-your-customer) |   145 |
-| | | | |
-
-
-\section*{L}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [LABEL](#label)                |   147 | [LITTLE-ENDIAN](#little-endian) |   149 |
-| [LABEL (SILENT PAYMENTS)](#label-silent-payments) |   147 | [LND](#lnd)                    |   149 |
-| [LCB/FT](#lcbft)               |   148 | [LOCK (.LOCK)](#lock-.lock)    |   149 |
-| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |   148 | [LOGARITHME DISCRET](#logarithme-discret) |   149 |
-| [LEVELDB](#leveldb)            |   148 | [LOOP](#loop)                  |   150 |
-| [LIGHTNING NETWORK](#lightning-network) |   149 | [LUCK](#luck)                  |   150 |
-| [LIQUID NETWORK](#liquid-network) |   149 |                                |       |
-| | | | |
-
-
-\section*{M}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [MACAROON](#macaroon)          |   152 | [MÉTADONNÉES](#métadonnées)    |   156 |
-| [MAGICAL BITCOIN](#magical-bitcoin) |   152 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   156 |
-| [MAGIC NETWORK](#magic-network) |   152 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   156 |
-| [MAINNET](#mainnet)            |   152 | [MINAGE](#minage)              |   156 |
-| [MAINTENEUR (CORE)](#mainteneur-core) |   153 | [MINAGE ÉGOÏSTE](#minage-égoïste) |   157 |
-| [MAINTENEUR PRINCIPAL (CORE)](#mainteneur-principal-core) |   153 | [MINAGE FUSIONNÉ](#minage-fusionné) |   158 |
-| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   153 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   158 |
-| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   153 | [MINEUR](#mineur)              |   158 |
-| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   154 | [MINISCRIPT](#miniscript)      |   159 |
-| [MAPPER (TO MAP)](#mapper-to-map) |   154 | [MINITAPSCRIPT](#minitapscript) |   159 |
-| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   154 | [MIT X11](#mit-x11)            |   159 |
-| [MASF](#masf)                  |   154 | [MIXAGE](#mixage)              |   160 |
-| [MAST](#mast)                  |   154 | [MODÈLE DE SCRIPT](#modèle-de-script) |   160 |
-| [MASTER FINGERPRINT](#master-fingerprint) |   155 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   160 |
-| [MAX_BLOC_SIZE](#max_bloc_size) |   155 | [MODÈLE TEMPOREL](#modèle-temporel) |   160 |
-| [MEMPOOL](#mempool)            |   155 | [M-OF-N](#m-of-n)              |   161 |
-| [MEMPOOL.DAT](#mempool.dat)    |   155 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   161 |
-| [MERGE](#merge)                |   155 | [MULTISIG](#multisig)          |   162 |
-| [MERKLE BLOCK](#merkle-block)  |   155 |                                |       |
-| | | | |
-
-
-\section*{N}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [NAKAMOTO SATOSHI](#nakamoto-satoshi) |   164 | [NOEUD ÉLAGUÉ](#noeud-élagué)  |   165 |
-| [NESTED SEGWIT](#nested-segwit) |   164 | [NOEUD LIGHTNING](#noeud-lightning) |   166 |
-| [NETWORK-ADJUSTED TIME (NAT)](#network-adjusted-time-nat) |   164 | [NOEUD SPV (NOEUD LÉGER)](#noeud-spv-noeud-léger) |   166 |
-| [NEW YORK AGREEMENT (NYA)](#new-york-agreement-nya) |   164 | [NONCE](#nonce)                |   166 |
-| [NLOCKTIME](#nlocktime)        |   164 | [NSEQUENCE](#nsequence)        |   167 |
-| [NO2X](#no2x)                  |   165 | [NULL DATA](#null-data)        |   167 |
-| [NOEUD](#noeud)                |   165 | [NULLDUMMY](#nulldummy)        |   167 |
-| [NOEUD COMPLET](#noeud-complet) |   165 | [NVERSION](#nversion)          |   168 |
-| | | | |
-
-
-\section*{O}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [OBJECTIF](#objectif)          |   170 | [OP_IF (0X63)](#op_if-0x63)    |   180 |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   170 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   180 |
-| [OBSOLÈTE (BLOC)](#obsolète-bloc) |   187 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   180 |
-| [OCTET (BYTE)](#octet-byte)    |   171 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   181 |
-| [OFF-CHAIN](#off-chain)        |   171 | [OP_MAX (0XA4)](#op_max-0xa4)  |   181 |
-| [ON-CHAIN](#on-chain)          |   172 | [OP_MIN (0XA3)](#op_min-0xa3)  |   181 |
-| [ONION_PRIVATE_KEY](#onion_private_key) |   172 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   181 |
-| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   172 | [OP_NIP (0X77)](#op_nip-0x77)  |   181 |
-| [OP_0 (0X00)](#op_0-0x00)      |   172 | [OP_NOP (0X61)](#op_nop-0x61)  |   181 |
-| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   172 | [OP_NOT (0X91)](#op_not-0x91)  |   181 |
-| [OP_1 (0X51)](#op_1-0x51)      |   172 | [OP_NOTIF (0X64)](#op_notif-0x64) |   181 |
-| [OP_1ADD (0X8B)](#op_1add-0x8b) |   172 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   182 |
-| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   172 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   182 |
-| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   172 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   182 |
-| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   173 | [OP_OVER (0X78)](#op_over-0x78) |   182 |
-| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   173 | [OP_PICK (0X79)](#op_pick-0x79) |   182 |
-| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   173 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   182 |
-| [OP_2OVER (0X70)](#op_2over-0x70) |   173 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   182 |
-| [OP_2ROT (0X71)](#op_2rot-0x71) |   174 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   182 |
-| [OP_2SWAP (0X72)](#op_2swap-0x72) |   174 | [OP_RETURN (0X6A)](#op_return-0x6a) |   183 |
-| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   175 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   183 |
-| [OP_ABS (0X90)](#op_abs-0x90)  |   175 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   183 |
-| [OP_ADD (0X93)](#op_add-0x93)  |   175 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   183 |
-| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   175 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   183 |
-| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   175 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   183 |
-| [OP_CAT (0X7E)](#op_cat-0x7e)  |   176 | [OP_SIZE (0X82)](#op_size-0x82) |   183 |
-| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   176 | [OP_SUB (0X94)](#op_sub-0x94)  |   183 |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   176 | [OP_SUCCESS](#op_success)      |   185 |
-| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   176 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   184 |
-| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   177 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   184 |
-| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   177 | [OP_TRUE (0X51)](#op_true-0x51) |   184 |
-| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   177 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   184 |
-| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   178 | [OP_VER (0X62)](#op_ver-0x62)  |   185 |
-| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   178 | [OP_VERIFY (0X69)](#op_verify-0x69) |   185 |
-| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   178 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   185 |
-| [OP_DEPTH (0X74)](#op_depth-0x74) |   178 | [OPCODES](#opcodes)            |   185 |
-| [OP_DROP (0X75)](#op_drop-0x75) |   178 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   185 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   178 | [ORACLE](#oracle)              |   186 |
-| [OP_ELSE (0X67)](#op_else-0x67) |   179 | [ORDINAL NUMBER](#ordinal-number) |   186 |
-| [OP_ENDIF (0X68)](#op_endif-0x68) |   179 | [ORDINALS THEORY](#ordinals-theory) |   186 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |   179 | [ORPHELIN](#orphelin)          |   186 |
-| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   179 | [OSINT](#osint)                |   187 |
-| [OP_EVAL](#op_eval)            |   179 | [OU EXCLUSIF](#ou-exclusif)    |   188 |
-| [OP_FALSE (0X00)](#op_false-0x00) |   179 | [OUTBOUND CAPACITY](#outbound-capacity) |   189 |
-| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   179 | [OUTPOINT](#outpoint)          |   189 |
-| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   179 | [OUTPUT](#output)              |   189 |
-| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   180 | [OUTPUT LINKING](#output-linking) |   190 |
-| [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   180 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   190 |
-| [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   180 | [OVERT ASICBOOST](#overt-asicboost) |   191 |
-| | | | |
-
-
-\section*{P}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [P2MS](#p2ms)                  |   193 | [PHRASE DE RÉCUPÉRATION](#phrase-de-récupération) |   203 |
-| [P2PK](#p2pk)                  |   193 | [PILE (STACK)](#pile-stack)    |   204 |
-| [P2PKH](#p2pkh)                |   193 | [PIZZA DAY](#pizza-day)        |   204 |
-| [P2P TRANSPORT V2](#p2p-transport-v2) |   194 | [POINT D'ENTRÉE](#point-dentrée) |   204 |
-| [P2SH](#p2sh)                  |   195 | [POLICY (MINISCRIPT)](#policy-miniscript) |   205 |
-| [P2SH-P2WPKH](#p2sh-p2wpkh)    |   194 | [POOL](#pool)                  |   206 |
-| [P2SH-P2WSH](#p2sh-p2wsh)      |   195 | [POOL DE MINAGE](#pool-de-minage) |   206 |
-| [P2TR](#p2tr)                  |   195 | [POOL HOPPING](#pool-hopping)  |   206 |
-| [P2WPKH](#p2wpkh)              |   196 | [PORTE DÉROBÉE (BACKDOOR)](#porte-dérobée-backdoor) |   207 |
-| [P2WSH](#p2wsh)                |   196 | [PORTEFEUILLE](#portefeuille)  |   207 |
-| [PAIEMENT ROND](#paiement-rond) |   196 | [PORTEFEUILLE CHAUD (LOGICIEL)](#portefeuille-chaud-logiciel) |   207 |
-| [PAIEMENT SIMPLE](#paiement-simple) |   197 | [PORTEFEUILLE FROID](#portefeuille-froid) |   207 |
-| [PAIR-À-PAIR (P2P)](#pair-à-pair-p2p) |   197 | [POT (PAY ON TARGET)](#pot-pay-on-target) |   208 |
-| [PAIR ENTRANT](#pair-entrant)  |   198 | [PPLNS (PAY PER LAST N SHARES)](#pplns-pay-per-last-n-shares) |   208 |
-| [PAIR SORTANT](#pair-sortant)  |   198 | [PPLNSG](#pplnsg)              |   208 |
-| [PANNE BYZANTINE](#panne-byzantine) |   198 | [PPS (PAY PER SHARE)](#pps-pay-per-share) |   208 |
-| [PASSPHRASE (BIP39)](#passphrase-bip39) |   198 | [PRÉFIXES BINAIRES](#préfixes-binaires) |   208 |
-| [PATOSHI](#patoshi)            |   199 | [PREMIUM](#premium)            |   209 |
-| [PAYJOIN](#payjoin)            |   200 | [PREUVE DE TRAVAIL](#preuve-de-travail) |   209 |
-| [PAYNYM](#paynym)              |   200 | [PROB. DES GÉNÉRAUX BYZANTINS](#prob.-des-généraux-byzantins) |   210 |
-| [PBKDF2](#pbkdf2)              |   201 | [PROFONDEUR](#profondeur)      |   211 |
-| [PEER DISCOVERY](#peer-discovery) |   201 | [PROOF-OF-KEY DAY](#proof-of-key-day) |   211 |
-| [PEERS.DAT](#peers.dat)        |   202 | [PROOF-OF-WORK](#proof-of-work) |   212 |
-| [PERCOLATION](#percolation)    |   202 | [PROP (PROPORTIONAL)](#prop-proportional) |   212 |
-| [PÉRIMÉ (BLOC)](#périmé-bloc)  |   202 | [PROPAGATION](#propagation)    |   212 |
-| [PÉRIODE DE MATURITÉ](#période-de-maturité) |   202 | [PSBT](#psbt)                  |   212 |
-| [PETIT-BOUTISTE](#petit-boutiste) |   203 | [PSEUDO-ALÉATOIRE](#pseudo-aléatoire) |   213 |
-| [PHOENIX](#phoenix)            |   203 | [PULL REQUEST](#pull-request)  |   213 |
-| [PHOENIXD](#phoenixd)          |   203 |                                |       |
-| | | | |
-
-
-\section*{Q}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [QR CODE](#qr-code)            |   215 | [QUBIT](#qubit)                |   215 |
-| | | | |
-
-
-\section*{R}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   217 | [RESYNCHRONISATION](#resynchronisation) |   221 |
-| [RAW TRANSACTION](#raw-transaction) |   217 | [RÉTENTION (DE BLOC)](#rétention-de-bloc) |   222 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   217 | [RÉTROCOMPATIBILITÉ](#rétrocompatibilité) |   222 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   218 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   222 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   218 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   223 |
-| [REDEEMSCRIPT](#redeemscript)  |   218 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   223 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   219 | [RICOCHET](#ricochet)          |   224 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   219 | [RIPEMD160](#ripemd160)        |   224 |
-| [REGTEST](#regtest)            |   219 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   225 |
-| [RÉORGANISATION](#réorganisation) |   219 | [RPOW](#rpow)                  |   225 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   220 | [RSMPPS](#rsmpps)              |   225 |
-| [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   220 | [RUNES](#runes)                |   225 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   221 | [RUST-LIGHTNING](#rust-lightning) |   226 |
-| | | | |
-
-
-\section*{S}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [SAMOURAI WALLET](#samourai-wallet) |   228 | [SIGHASH_NONE (0X02)](#sighash_none-0x02) |   240 |
-| [SATOSHI (SAT)](#satoshi-sat)  |   228 | [SIGHASH_NONE/SIGHASH_ACP](#sighash_nonesighash_acp) |   240 |
-| [SCALABILITÉ](#scalabilité)    |   228 | [SIGHASH_SINGLE (0X03)](#sighash_single-0x03) |   240 |
-| [SCHNORR (PROTOCOLE)](#schnorr-protocole) |   229 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   241 |
-| [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   229 | [SIGNATURE AVEUGLE](#signature-aveugle) |   241 |
-| [SCRIPT](#script)              |   229 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   241 |
-| [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   229 | [SIGNET](#signet)              |   241 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   229 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   242 |
-| [SCRIPTSIG](#scriptsig)        |   230 | [SILENT PAYMENTS](#silent-payments) |   243 |
-| [SCRIPTWITNESS](#scriptwitness) |   231 | [SILK ROAD](#silk-road)        |   244 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   231 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   244 |
-| [SECP256K1](#secp256k1)        |   231 | [SLIP](#slip)                  |   245 |
-| [SECP256R1](#secp256r1)        |   232 | [SMALL BLOCKERS](#small-blockers) |   245 |
-| [SEED (BITCOIN)](#seed-bitcoin) |   232 | [SMPPS](#smpps)                |   245 |
-| [SEED (CRYPTOGRAPHIE)](#seed-cryptographie) |   233 | [SOFT FORK](#soft-fork)        |   245 |
-| [SEED NODES](#seed-nodes)      |   233 | [SOMME DE CONTRÔLE (CHECKSUM)](#somme-de-contrôle-checksum) |   245 |
-| [SEGWIT](#segwit)              |   233 | [SOROBAN](#soroban)            |   246 |
-| [SEGWIT2X](#segwit2x)          |   234 | [SORTIE (OUTPUT)](#sortie-output) |   246 |
-| [SEGWIT V0](#segwit-v0)        |   234 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   246 |
-| [SEGWIT V1](#segwit-v1)        |   234 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   247 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   235 | [SPEEDY TRIAL](#speedy-trial)  |   247 |
-| [SELF-CUSTODY](#self-custody)  |   235 | [SPOF](#spof)                  |   247 |
-| [SELFISH MINING](#selfish-mining) |   235 | [SPREAD (WST)](#spread-wst)    |   248 |
-| [SETTINGS.JSON](#settings.json) |   235 | [STABLECOIN](#stablecoin)      |   248 |
-| [SHA256](#sha256)              |   236 | [STALE BLOCK](#stale-block)    |   248 |
-| [SHA512](#sha512)              |   236 | [STAMPS](#stamps)              |   248 |
-| [SHAREDCOIN](#sharedcoin)      |   236 | [STONEWALL](#stonewall)        |   249 |
-| [SHARES](#shares)              |   237 | [STONEWALL X2](#stonewall-x2)  |   250 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   238 | [STRATUM](#stratum)            |   251 |
-| [SHITCOIN](#shitcoin)          |   238 | [STRATUM V2](#stratum-v2)      |   251 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   238 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   251 |
-| [SIDECHAIN](#sidechain)        |   238 | [SURCOUCHE (LAYER)](#surcouche-layer) |   251 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   239 | [SURFACE D'ATTAQUE](#surface-dattaque) |   252 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   239 | [SWEEP TRANSACTION](#sweep-transaction) |   252 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   239 | [SYBIL (ATTAQUE)](#sybil-attaque) |   252 |
-| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   239 | [SYNCHRONISATION INITIALE (IBD)](#synchronisation-initiale-ibd) |   253 |
-| [SIGHASH FLAG](#sighash-flag)  |   239 |                                |       |
-| | | | |
-
-
-\section*{T}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [TAPROOT](#taproot)            |   255 | [TPRV](#tprv)                  |   258 |
-| [TAPROOT ASSETS PROTOCOL](#taproot-assets-protocol) |   255 | [TPUB](#tpub)                  |   258 |
-| [TAPSCRIPT](#tapscript)        |   255 | [TRANSACTION (TX)](#transaction-tx) |   258 |
-| [TARO](#taro)                  |   255 | [TRANSACTION COLLABORATIVE](#transaction-collaborative) |   258 |
-| [TAUX DE HACHAGE](#taux-de-hachage) |   256 | [TRANSACTION D'ENGAGEMENT](#transaction-dengagement) |   258 |
-| [TCP](#tcp)                    |   256 | [TRANSACTION NON CONFIRMÉE](#transaction-non-confirmée) |   259 |
-| [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   256 | [TRANSACTION STANDARD](#transaction-standard) |   259 |
-| [TESTNET](#testnet)            |   256 | [TUMBLEBIT](#tumblebit)        |   259 |
-| [THE DAO](#the-dao)            |   257 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   259 |
-| [TIDES](#tides)                |   257 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   260 |
-| [TIMELOCK](#timelock)          |   257 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   260 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   257 | [TYPE DE DEVISE](#type-de-devise) |   261 |
-| | | | |
-
-
-\section*{U}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [UASF](#uasf)                  |   263 | [UPUB](#upub)                  |   264 |
-| [UDP (USER DATAGRAM PROTOCOL)](#udp-user-datagram-protocol) |   263 | [URI](#uri)                    |   264 |
-| [UNIX](#unix)                  |   263 | [UTREEXO](#utreexo)            |   264 |
-| [UNIX (HEURE)](#unix-heure)    |   263 | [UTXO](#utxo)                  |   265 |
-| [UPRV](#uprv)                  |   264 | [UTXO SET](#utxo-set)          |   266 |
-| | | | |
-
-
-\section*{V}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [VANITY (ADDRESS)](#vanity-address) |   268 | [VOUT](#vout)                  |   269 |
-| [VANITYGEN](#vanitygen)        |   268 | [VPRV](#vprv)                  |   269 |
-| [VERSIONNAGE](#versionnage)    |   268 | [VPUB](#vpub)                  |   269 |
-| [VIN](#vin)                    |   268 |                                |       |
-| | | | |
-
-
-\section*{W}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [WABISABI](#wabisabi)          |   271 | [WATCH-ONLY WALLET](#watch-only-wallet) |   272 |
-| [WALLET](#wallet)              |   271 | [WHALE](#whale)                |   272 |
-| [WALLET.DAT](#wallet.dat)      |   271 | [WHIRLPOOL](#whirlpool)        |   272 |
-| [WALLET IMPORT FORMAT (WIF)](#wallet-import-format-wif) |   271 | [WHIRLPOOL STAT TOOL](#whirlpool-stat-tool) |   272 |
-| [WALLETS/DB.LOG](#walletsdb.log) |   271 | [WHITE PAPER](#white-paper)    |   272 |
-| [WASABI WALLET](#wasabi-wallet) |   271 | [WITNESSSCRIPT](#witnessscript) |   273 |
-| [WATCHMEN](#watchmen)          |   272 | [WTXID](#wtxid)                |   273 |
-| | | | |
-
-
-\section*{X}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [XBT](#xbt)                    |   275 | [XPRV](#xprv)                  |   276 |
-| [XOR](#xor)                    |   275 | [XPUB](#xpub)                  |   276 |
-| | | | |
-
-
-\section*{Y}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [YPRV](#yprv)                  |   278 | [YPUB](#ypub)                  |   278 |
-| | | | |
-
-
-\section*{Z}
-| | | | |
-|:---------------------------|--:|:---------------------------|--:|
-| | | | |
-| [ZEROCONF](#zeroconf)          |   280 | [ZKP (ZERO-KNOWLEDGE PROOF)](#zkp-zero-knowledge-proof) |   280 |
-| [ZEROLINK](#zerolink)          |   280 | [ZPRV](#zprv)                  |   280 |
-| [ZEROSYNC](#zerosync)          |   280 | [ZPUB](#zpub)                  |   281 |
-| | | | |
-
-\arrayrulecolor{black}
+Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement arrêtés pour avoir simplement écrit du code. Je tiens à leur exprimer mon soutien indéfectible. Leur engagement pour la protection de la vie privée et la liberté incarne les valeurs fondamentales de Bitcoin. Ces développeurs n'ont commis aucun crime ; ils ont seulement œuvré pour offrir des outils permettant à chacun de faire valoir ses droits naturels. Leur procès est d'une importance capitale à la fois pour Bitcoin et son écosystème, mais plus largement pour la liberté dans nos démocraties. Afin de les soutenir dans cette épreuve, j'invite chacun à contribuer à leur défense juridique. Vos dons permettront d'assurer la meilleure défense possible à ces développeurs qui œuvrent au quotidien pour nos libertés. Ils permettront également de créer un précédent qui dissuadera de futures intimidations à l'encontre des développeurs, et ainsi de ne pas freiner l'innovation technologique sur Bitcoin et son écosystème. **Pour donner :** https://p2prights.org/
 
 \newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{A}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{A}
-\end{center}
-\vspace*{\fill}
-\newpage
+
 ## ADAPTOR SIGNATURE
 
 Méthode cryptographique permettant de combiner une vraie signature avec une signature supplémentaire (appelée « adaptor signature ») pour révéler une donnée secrète. Cette méthode fonctionne telle que la connaissance de deux éléments parmi la signature valide, l'adaptor signature et le secret permet de déduire le troisième manquant. Une des propriétés intéressantes de cette méthode est que si nous connaissons l'adaptor signature de notre pair et le point spécifique sur la courbe elliptique lié au secret utilisé pour calculer cette adaptor signature, nous pouvons alors dériver notre propre adaptor signature qui correspondra avec le même secret, et ce, sans jamais avoir accédé directement au secret lui-même. Dans un échange entre deux parties prenantes ne se faisant pas confiance, cette technique permet un dévoilement simultané de deux informations sensibles entre les participants. Ce processus élimine la nécessité de confiance lors de transactions instantanées telles qu'un Coin Swap ou un Atomic Swap. Prenons un exemple pour bien comprendre. Alice et Bob souhaitent s'envoyer 1 BTC chacun, mais ils ne se font pas confiance. Ils vont donc utiliser des adaptors signatures pour annihiler le besoin de confiance envers l'autre partie dans cet échange (c'est donc un échange « atomique »). Ils procèdent comme ceci :
-\begin{itemize}
-  \item Alice lance cet échange atomique. Elle crée une transaction $m_A$ qui envoie 1 BTC vers Bob. Elle crée une signature $s_A$ qui permet de valider cette transaction grâce à sa clé privée $p_A$ ($P_A = p_A \cdot G$), et en utilisant un nonce $n_A$ et un secret $t$ ($N_A = n_A \cdot G$ et $T = t \cdot G$) :
-\end{itemize}
+<ul>
+<li>Alice lance cet échange atomique. Elle crée une transaction $m_A$ qui envoie 1 BTC vers Bob. Elle crée une signature $s_A$ qui permet de valider cette transaction grâce à sa clé privée $p_A$ ($P_A = p_A \cdot G$), et en utilisant un nonce $n_A$ et un secret $t$ ($N_A = n_A \cdot G$ et $T = t \cdot G$) :</li>
+</ul>
 $$s_A = n_A + t + H(N_A + T \parallel P_A \parallel m_A) \cdot p_A$$
 &nbsp;
-\begin{itemize}
-  \item Alice calcule l'adaptor signature $s_A'$ à partir du secret $t$ et de sa vraie signature $s_A$ :
-\end{itemize}
+<ul>
+<li>Alice calcule l'adaptor signature $s_A'$ à partir du secret $t$ et de sa vraie signature $s_A$ :</li>
+</ul>
 $$s_A' = s_A - t$$
 &nbsp;
-\begin{itemize}
-  \item Alice envoie à Bob son adaptor signature $sA'$, sa transaction non signée $m_A$, le point correspondant au secret $T$ et le point correspondant au nonce $N_A$. Nous appelons ces informations un « adaptor ». Notons qu'avec simplement ces informations, Bob n'est pas en capacité de récupérer le BTC d'Alice.
-  \item En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $s_A'$ correspond bien à la transaction promise $m_A$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide :
-\end{itemize}
+<ul>
+<li>Alice envoie à Bob son adaptor signature $sA'$, sa transaction non signée $m_A$, le point correspondant au secret $T$ et le point correspondant au nonce $N_A$. Nous appelons ces informations un « adaptor ». Notons qu'avec simplement ces informations, Bob n'est pas en capacité de récupérer le BTC d'Alice.</li>
+<li>En revanche, Bob peut vérifier qu'Alice n'est pas en train de l'entourlouper. Pour ce faire, il vérifie que l'adaptor signature d'Alice $s_A'$ correspond bien à la transaction promise $m_A$. Si l'équation suivante est juste, alors il est persuadé que l'adaptor signature d'Alice est valide :</li>
+</ul>
 $$s_A' \cdot G = N_A + H(N_A + T \parallel P_A \parallel m_A) \cdot P_A$$
 &nbsp;
-\begin{itemize}
-  \item Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $m_B$ envoyant 1 BTC à Alice et sa propre adaptor signature $s_B'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) :
-\end{itemize}
+<ul>
+<li>Cette vérification donne à Bob des garanties de la part d'Alice, de telle sorte qu'il peut continuer le processus d'échange atomique sereinement. Il va alors créer à son tour sa propre transaction $m_B$ envoyant 1 BTC à Alice et sa propre adaptor signature $s_B'$ qui sera liée avec le même secret $t$ que seule Alice connait pour le moment (Bob n'a pas connaissance de cette valeur $t$, mais uniquement de son point correspondant $T$ qu'Alice lui a fourni) :</li>
+</ul>
 $$s_B' = n_B + H(N_B + T \parallel P_B \parallel m_B) \cdot p_B$$
 &nbsp;
-\begin{itemize}
-  \item Bob envoie à Alice son adaptor signature $s_B'$, sa transaction non signée $m_B$, le point correspondant au secret $T$ et le point correspondant au nonce $N_B$. Alice peut désormais combiner l'adaptor signature de Bob $s_B'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $s_B$ pour la transaction $m_B$ qui lui envoie le BTC de Bob :
-\end{itemize}
+<ul>
+<li>Bob envoie à Alice son adaptor signature $s_B'$, sa transaction non signée $m_B$, le point correspondant au secret $T$ et le point correspondant au nonce $N_B$. Alice peut désormais combiner l'adaptor signature de Bob $s_B'$ avec le secret $t$, dont elle seule a connaissance, afin de calculer une signature valide $s_B$ pour la transaction $m_B$ qui lui envoie le BTC de Bob :</li>
+</ul>
 $$s_B = s_B' + t$$
 &nbsp;
 $$(s_B' + t) \cdot G = N_B + T + H(N_B + T \parallel P_B \parallel m_B) \cdot P_B$$
 &nbsp;
-\begin{itemize}
-  \item Alice diffuse cette transaction $m_B$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $s_B = s_B' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :
-\end{itemize}
+<ul>
+<li>Alice diffuse cette transaction $m_B$ signée sur la blockchain Bitcoin afin de récupérer le BTC que Bob lui a promis. Bob prend connaissance de cette transaction sur la blockchain. Il est donc en capacité d'en extraire la signature $s_B = s_B' + t$. À partir de cette information, Bob peut isoler le fameux secret $t$ dont il avait besoin :</li>
+</ul>
 $$t = (s_B' + t) - s_B' = s_B - s_B'$$
 &nbsp;
-\begin{itemize}
-  \item Or, ce secret $t$ était la seule information manquante à Bob pour produire la signature valide $s_A$, à partir de l'adaptor signature d'Alice $s_A'$, qui lui permettra de valider la transaction $m_A$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $s_A$ et diffuse à son tour la transaction $m_A$ : $$s_A = s_A' + t$$
-\end{itemize}
+<ul>
+<li>Or, ce secret $t$ était la seule information manquante à Bob pour produire la signature valide $s_A$, à partir de l'adaptor signature d'Alice $s_A'$, qui lui permettra de valider la transaction $m_A$ qui envoie un BTC depuis Alice vers Bob. Il calcule alors $s_A$ et diffuse à son tour la transaction $m_A$ : $$s_A = s_A' + t$$</li>
+</ul>
 &nbsp;
 $$(s_A' + t) \cdot G = N_A + T + H(N_A + T \parallel P_A \parallel m_A) \cdot P_A$$
 &nbsp;
@@ -822,21 +155,13 @@ Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations
 ## ADRESSE DE RÉCEPTION
 
 Information utilisée pour recevoir des bitcoins. Une adresse est généralement construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Par exemple, les adresses SegWit sont composées des informations suivantes : 
-\begin{itemize}
-  \item Un HRP pour désigner « bitcoin » :
-\texttt{bc}
-;
-  \item Un séparateur :
-\texttt{1}
-;
-  \item La version de SegWit utilisée :
-\texttt{q}
-ou
-\texttt{p}
-;
-  \item La charge utile : le condensat de la clé publique (ou directement la clé publique dans le cas de Taproot) ;
-  \item La somme de contrôle : un code BCH.
-\end{itemize}
+<ul>
+<li>Un HRP pour désigner « bitcoin » : `bc` ;</li>
+<li>Un séparateur : `1` ;</li>
+<li>La version de SegWit utilisée : `q` ou `p` ;</li>
+<li>La charge utile : le condensat de la clé publique (ou directement la clé publique dans le cas de Taproot) ;</li>
+<li>La somme de contrôle : un code BCH.</li>
+</ul>
 
 Mais une adresse de réception peut également représenter autre chose en fonction du modèle de script utilisé. Par exemple, les adresses P2SH sont construites à l'aide du hachage du script. Les adresses Taproot, elles, contiennent directement la clé publique tordue (*tweaked*) sans qu'elle soit hachée.
 
@@ -864,12 +189,12 @@ $$N = A \cdot \left(T \div 1,209,600\right)$$
 
 &nbsp;
 Où :
-\begin{itemize}
-  \item $N$ : La nouvelle cible ;
-  \item $A$ : L'ancienne cible des 2016 derniers blocs ;
-  \item $T$ : Le temps total réel des 2016 derniers blocs en secondes ;
-  \item $1,209,600$ : Le temps cible en secondes pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.
-\end{itemize}
+<ul>
+<li>$N$ : La nouvelle cible ;</li>
+<li>$A$ : L'ancienne cible des 2016 derniers blocs ;</li>
+<li>$T$ : Le temps total réel des 2016 derniers blocs en secondes ;</li>
+<li>$1,209,600$ : Le temps cible en secondes pour produire 2016 blocs avec un intervalle de 10 minutes entre chacun.</li>
+</ul>
 
 > ► *En français, on parle également parfois de « reciblage » pour évoquer l'ajustement. En anglais, on parle de « Difficulty Adjustment ».*
 
@@ -884,17 +209,17 @@ Désigne toute cryptomonnaie autre que le bitcoin (BTC). Le terme « altcoin �
 ## ANALYSE DE CHAINE
 
 Pratique qui regroupe toutes les méthodes permettant de tracer les flux de bitcoins sur la blockchain. De façon générale, l’analyse de chaîne s’appuie sur l’observation de caractéristiques sur des échantillons de transactions antérieures. Elle consiste ensuite à repérer ces mêmes caractéristiques sur une transaction que l’on souhaite analyser, et à en déduire des interprétations vraisemblables. Cette méthode de résolution de problème à partir d’une approche pratique, pour trouver une solution suffisamment bonne, c’est ce que l’on appelle une heuristique. Pour vulgariser, l’analyse de chaîne se fait en deux grandes étapes : 
-\begin{itemize}
-  \item Le repérage de caractéristiques connues ;
-  \item La déduction d’hypothèses.
-\end{itemize}
+<ul>
+<li>Le repérage de caractéristiques connues ;</li>
+<li>La déduction d’hypothèses.</li>
+</ul>
 
 Un des objectifs de l’analyse de chaîne consiste à regrouper diverses activités sur Bitcoin en vue de déterminer l'unicité de l'utilisateur les ayant effectuées. Par la suite, il sera possible de tenter de rattacher ce faisceau d'activités à une identité réelle grâce à un point d'entrée. Il est important de comprendre que l'analyse de chaîne n'est pas une science exacte. Elle repose sur des heuristiques dérivées d'observations antérieures ou d’interprétations logiques. Ces règles permettent d'obtenir des résultats assez fiables, mais jamais d'une précision absolue. En d'autres termes, l'analyse de chaîne implique toujours une dimension de vraisemblabilité dans les conclusions émises. Par exemple, on pourra estimer avec plus ou moins de certitude que deux adresses appartiennent à une même entité, mais une certitude totale sera toujours hors de portée. Tout l’objectif de l'analyse de chaîne réside précisément dans l'agrégation de diverses heuristiques en vue de minimiser le risque d'erreur. Il s'agit en quelque sorte d'une accumulation de preuves qui nous permet de nous approcher davantage de la réalité. Ces fameuses heuristiques peuvent être regroupées en différentes catégories : 
-\begin{itemize}
-  \item Les patterns de transaction (ou modèles de transaction) ;
-  \item Les heuristiques internes à la transaction ;
-  \item Les heuristiques externes à la transaction.
-\end{itemize}
+<ul>
+<li>Les patterns de transaction (ou modèles de transaction) ;</li>
+<li>Les heuristiques internes à la transaction ;</li>
+<li>Les heuristiques externes à la transaction.</li>
+</ul>
 
 Notons que les deux premières heuristiques sur Bitcoin ont été formulées par Satoshi Nakamoto lui-même. Il les expose dans la partie 10 du White Paper (livre blanc). Il est intéressant d’observer que ces deux heuristiques conservent toujours une prééminence dans l’analyse de chaîne aujourd’hui. Ce sont la CIOH (*Common Input Ownership Heuristic*) et la réutilisation d’adresse.
 
@@ -915,21 +240,21 @@ Fichier utilisé dans le client Bitcoin Core pour stocker les adresses IP des n�
 ## ANCRAGE BILATÉRAL
 
 Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. L'ancrage bilatéral assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
-\begin{itemize}
-  \item Un tiers de confiance unique ;
-  \item Une fédération d'entités ;
-  \item Les mineurs de la chaîne principale (drivechain).
-\end{itemize}
+<ul>
+<li>Un tiers de confiance unique ;</li>
+<li>Une fédération d'entités ;</li>
+<li>Les mineurs de la chaîne principale (drivechain).</li>
+</ul>
 
 > ► *En anglais, on parle d'un « two-way peg » ou « 2WP ».*
 
 ## ANONSETS (ANONYMITY SETS)
 
 Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d'un UTXO particulier. Plus spécifiquement, ils mesurent le nombre d'UTXOs indistinguables au sein de l'ensemble qui inclut la pièce en étudiée. Puisqu'il faut disposer d'un groupe d'UTXOs identiques, les anonsets sont généralement calculés au sein d'un cycle de coinjoins. Ils permettent, le cas échéant, de juger de la qualité des coinjoins. Un anonset de grande taille signifie un niveau d'anonymat accru, car il devient difficile de distinguer un UTXO spécifique au sein de l'ensemble. Deux types d'anonsets existent :
-\begin{itemize}
-  \item L'ensemble d'anonymat prospectif ;
-  \item L'ensemble d'anonymat rétrospectif.
-\end{itemize}
+<ul>
+<li>L'ensemble d'anonymat prospectif ;</li>
+<li>L'ensemble d'anonymat rétrospectif.</li>
+</ul>
 
 Le premier indique la taille du groupe parmi lequel se cache l'UTXO étudié en sortie, sachant l'UTXO en entrée. Cet indicateur permet de mesurer la résistance de la confidentialité de la pièce face à une analyse passé vers présent (entrée vers sortie). En anglais, le nom de cet indicateur est « *forward anonset* », ou « *forward-looking metrics* ».
 
@@ -974,20 +299,12 @@ Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pou
 ![](../../dictionnaire/assets/1.png)
 
 Cette structure permet de vérifier rapidement si une transaction spécifique est incluse dans un bloc donné sans avoir à analyser l'ensemble des transactions. Par exemple, si je dispose seulement de la racine de Merkle et que je souhaite vérifier que la `TX 7` fait bien partie de l'arbre, j'aurai uniquement besoin des preuves suivantes :
-\begin{itemize}
-  \item 
-\texttt{TX 7}
-;
-  \item 
-\texttt{HASH 8}
-;
-  \item 
-\texttt{HASH 5-6}
-;
-  \item 
-\texttt{HASH 1-2-3-4}
-.
-\end{itemize}
+<ul>
+<li>`TX 7` ;</li>
+<li>`HASH 8` ;</li>
+<li>`HASH 5-6` ;</li>
+<li>`HASH 1-2-3-4`.</li>
+</ul>
 Grâce à ces quelques informations, je suis en capacité de calculer les nœuds intermédiaires jusqu'à la racine de Merkle.
 
 ![](../../dictionnaire/assets/2.png)
@@ -1025,10 +342,10 @@ Outil inventé par Gleb Naumenko et utilisé par Bitcoin Core pour améliorer la
 ## ASSUME UTXO
 
 Paramètre de configuration dans le client majoritaire Bitcoin Core qui permet à un nœud qui vient d'être initialisé (mais qui n'a pas encore fait l'IBD) de reporter la vérification des transactions et de l'UTXO set avant un snapshot donné. Le concept repose sur l'utilisation d'un UTXO set (liste de tous les UTXOs existants à un moment donné) fourni par Core et présumé exact, ce qui permet au nœud d'être synchronisé très rapidement sur la chaîne avec le plus de travail accumulé. Puisque le nœud saute la longue étape de l'IBD, il est très rapidement fonctionnel pour son utilisateur. Assume UTXO divise la synchronisation (IBD) en deux parties : 
-\begin{itemize}
-  \item Tout d'abord, le nœud réalise le Header First Sync (vérification des en-têtes seulement) et il considère comme valide l'UTXO set qui lui est fourni par Core ;
-  \item Puis, une fois qu'il est fonctionnel, le nœud va vérifier l'historique complet des blocs en arrière-plan, en actualisant un nouvel UTXO set qu'il aura vérifié lui-même. Si ce dernier ne correspond pas à l'UTXO set fourni par Core, il fournira un message d'erreur.
-\end{itemize}
+<ul>
+<li>Tout d'abord, le nœud réalise le Header First Sync (vérification des en-têtes seulement) et il considère comme valide l'UTXO set qui lui est fourni par Core ;</li>
+<li>Puis, une fois qu'il est fonctionnel, le nœud va vérifier l'historique complet des blocs en arrière-plan, en actualisant un nouvel UTXO set qu'il aura vérifié lui-même. Si ce dernier ne correspond pas à l'UTXO set fourni par Core, il fournira un message d'erreur.</li>
+</ul>
 
 Assume UTXO permet donc d'accélérer la préparation d'un nouveau nœud Bitcoin en reportant le processus de vérification des transactions et de l'UTXO set grâce à un snapshot actualisé fourni dans Core.
 
@@ -1051,10 +368,10 @@ Sigle de « *Anchor Timelock Contracts* ». C'est un paiement conditionnel uti
 ## ATOMIC SWAP
 
 Technologie permettant un échange de cryptomonnaies directement entre deux parties, sans besoin de confiance et sans nécessiter d'intermédiaire. Ces échanges sont dits « atomiques » car ils ne peuvent donner que deux résultats :
-\begin{itemize}
-  \item Soit l'échange réussi et les deux participants se sont effectivement échangé leurs cryptomonnaies ;
-  \item Soit l'échange échoue et les deux participants repartent avec leurs cryptomonnaies de départ.
-\end{itemize}
+<ul>
+<li>Soit l'échange réussi et les deux participants se sont effectivement échangé leurs cryptomonnaies ;</li>
+<li>Soit l'échange échoue et les deux participants repartent avec leurs cryptomonnaies de départ.</li>
+</ul>
 
 Les Atomic Swaps peuvent s'effectuer soit avec une même cryptomonnaie, dans ce cas, on parle également de « *coinswap* », soit entre des cryptomonnaies différentes. Historiquement, ils s'appuyaient sur des « *Hash Time-Locked Contracts* » (HTLC), un système de verrouillage temporel qui garantit la complétude ou l'annulation totale de l'échange, préservant ainsi l'intégrité des fonds des parties impliquées. Cette méthode exigeait des protocoles capables de gérer à la fois les scripts et les timelocks. Toutefois, ces dernières années, la tendance s'est orientée vers l'utilisation des *Adaptor Signatures*. Cette seconde approche présente l'avantage de se passer de scripts, ce qui réduit ainsi les coûts opérationnels. Son autre atout majeur réside dans le fait qu'elle n'exige pas l'emploi d'un hachage identique pour les deux volets de la transaction, ce qui permet d'éviter de révéler un lien entre elles.
 
@@ -1068,31 +385,21 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 La durée moyenne de tour est un indicateur utilisé pour estimer le temps nécessaire à une pool de minage pour trouver un bloc, en fonction de la difficulté du réseau et du hashrate de la pool. Il est calculé en prenant le nombre de shares attendues pour trouver un bloc et en le divisant par le hashrate de la pool. Par exemple, si une pool de minage compte 200 mineurs, et que chacun génère en moyenne 4 shares par seconde, la puissance totale de calcul de la pool est de 800 shares par seconde :
 
-\begin{codeblock}
+```text
 200 * 4 = 800
-\end{codeblock}
+```
 
 En supposant qu'il faille, en moyenne, produire 1 million de shares pour trouver un bloc valide, l'*Avg. Round Duration* de la pool sera de 1 250 secondes, soit environ 21 minutes :
 
-\begin{codeblock}
+```text
 1 000 000 / 800 = 1 250
-\end{codeblock}
+```
 
 Concrètement, cela signifie qu'en moyenne, la pool de minage devrait trouver un bloc toutes les 21 minutes environ. Cet indicateur fluctue avec les variations du hashrate de la pool : une augmentation du hashrate réduit l'*Avg. Round Duration*, tandis qu'une diminution l'allonge. Il va également fluctuer à chaque évolution périodique de la cible de difficulté sur Bitcoin (tous les 2016 blocs). Cette mesure ne prend pas en compte les blocs trouvés par d'autres pools et se concentre uniquement sur la performance interne de la pool étudiée.
 
 > ► *Pour plus d'informations, voir les définitions de **[SHARES](#shares)** et de **[LUCK](#luck)**.*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{B}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{B}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## BANLIST.DAT
 
 Nom de l'ancien fichier utilisé par le logiciel Bitcoin Core pour enregistrer les adresses IP des nœuds qui ont été bannis par l'utilisateur. Depuis la version 22.0, on utilise le fichier banlist.json à la place.
@@ -1175,33 +482,33 @@ Système de numération en base 2, qui utilise le `0` et le `1` pour représente
 Acronyme de « *Bitcoin Improvement Proposal* ». Une proposition d'amélioration de Bitcoin (BIP) est un processus formel de proposition et de documentation des améliorations et des modifications apportées au protocole Bitcoin et à ses normes. Étant donné que Bitcoin ne possède pas d'entité centrale pour décider des mises à jour, les BIPs permettent à la communauté de suggérer, discuter et mettre en œuvre des améliorations de manière structurée et transparente. Chaque BIP détaille les objectifs de l'amélioration proposée, les justifications, les impacts potentiels sur la compatibilité, ainsi que les avantages et inconvénients. Les BIPs peuvent être rédigés par n'importe quel membre de la communauté, mais doivent être approuvés par d'autres développeurs et les éditeurs qui maintiennent la base de donnée sur le GitHub de Bitcoin Core : Bryan Bishop, Jon Atack, Luke Dashjr, Mark Erhardt (Murch), Olaoluwa Osuntokun et Ruben Somsen. Cependant, il est important de comprendre que le rôle de ces individus dans l'édition des BIPs ne signifie pas pour autant qu'ils contrôlent Bitcoin. Si quelqu'un propose une amélioration qui n'est pas acceptée dans le cadre formel des BIPs, il peut toujours la présenter directement à la communauté Bitcoin, voire créer un fork incluant sa modification. L'avantage du processus des BIPs réside dans sa formalité et sa centralisation, qui facilitent le débat pour éviter la division parmi les utilisateurs de Bitcoin, en cherchant à implémenter des mises à jour de manière consensuelle. À la fin, c'est bien le principe de majorité économique qui détermine les jeux de pouvoir au sein du protocole.
 
 Les BIPs sont classés en trois catégories principales :
-\begin{itemize}
-  \item Standards Track BIPs* : Concernent les modifications qui affectent directement les implémentations de Bitcoin, comme les règles de validation des transactions et des blocs ;
-  \item Informational BIPs* : Fournissent des informations ou des recommandations sans proposer de changements directs au protocole ;
-  \item Process BIPs* : Décrivent les changements dans les procédures entourant Bitcoin, comme les processus de gouvernance.
-\end{itemize}
+<ul>
+<li>*Standards Track BIPs* : Concernent les modifications qui affectent directement les implémentations de Bitcoin, comme les règles de validation des transactions et des blocs ;</li>
+<li>*Informational BIPs* : Fournissent des informations ou des recommandations sans proposer de changements directs au protocole ;</li>
+<li>*Process BIPs* : Décrivent les changements dans les procédures entourant Bitcoin, comme les processus de gouvernance.</li>
+</ul>
 
 Les BIPs Standards Track et informationnels sont également classifiés par « Layer » ou couche :
-\begin{itemize}
-  \item Consensus Layer* : Les BIPs de cette couche concernent les règles de consensus de Bitcoin, telles que les modifications des règles de validation des blocs ou des transactions. Ces propositions peuvent être soit des soft forks (modifications rétrocompatibles) soit des hard forks (modifications non rétrocompatibles). Par exemple, les BIPs de SegWit et Taproot appartiennent à cette catégorie ;
-  \item Peer Services* : Cette couche concerne le fonctionnement du réseau de nœuds Bitcoin, c’est-à-dire comment les nœuds se trouvent et communiquent entre eux sur Internet ;
-  \item API/RPC* : Les BIPs de cette couche concernent les interfaces de programmation applicative (API) et les appels de procédure à distance (RPC) qui permettent aux logiciels Bitcoin d'interagir avec les nœuds ;
-  \item Applications Layer* : Cette couche concerne les applications construites par-dessus Bitcoin. Les BIPs de cette catégorie vont typiquement traiter les modifications au niveau des standards des portefeuilles Bitcoin.
-\end{itemize}
+<ul>
+<li>*Consensus Layer* : Les BIPs de cette couche concernent les règles de consensus de Bitcoin, telles que les modifications des règles de validation des blocs ou des transactions. Ces propositions peuvent être soit des soft forks (modifications rétrocompatibles) soit des hard forks (modifications non rétrocompatibles). Par exemple, les BIPs de SegWit et Taproot appartiennent à cette catégorie ;</li>
+<li>*Peer Services* : Cette couche concerne le fonctionnement du réseau de nœuds Bitcoin, c’est-à-dire comment les nœuds se trouvent et communiquent entre eux sur Internet ;</li>
+<li>*API/RPC* : Les BIPs de cette couche concernent les interfaces de programmation applicative (API) et les appels de procédure à distance (RPC) qui permettent aux logiciels Bitcoin d'interagir avec les nœuds ;</li>
+<li>*Applications Layer* : Cette couche concerne les applications construites par-dessus Bitcoin. Les BIPs de cette catégorie vont typiquement traiter les modifications au niveau des standards des portefeuilles Bitcoin.</li>
+</ul>
 
 Le processus de soumission d'un BIP commence par la conceptualisation et la discussion de l'idée sur la liste de diffusion *Bitcoin-dev*. Si l'idée est prometteuse, l'auteur rédige un BIP en respectant un format spécifique et le soumet via une Pull Request sur le dépôt GitHub de Core. Les éditeurs examinent cette proposition pour vérifier si elle respecte bien tous les critères. Le BIP doit être techniquement réalisable, bénéfique pour le protocole, conforme au formatage requis, et en accord avec la philosophie de Bitcoin. Si le BIP répond à ces conditions, il est officiellement intégré au dépôt GitHub des BIPs. Il se verra ensuite attribuer un numéro. Ce numéro est généralement décidé par l'éditeur, souvent Luke Dashjr, et est attribué de manière logique : les BIPs traitant de sujets similaires reçoivent souvent des numéros consécutifs.
 
 Les BIPs passent ensuite par différents statuts au cours de leur cycle de vie. Le statut actuel est précisé dans l’entête de chaque BIP :
-\begin{itemize}
-  \item Brouillon (*Draft*) : La proposition est encore en phase de rédaction et de débat ;
-  \item Proposé (*Proposed*) : Le BIP est considéré comme complet et prêt pour être examiné par la communauté ;
-  \item Différé (*Deferred*) : Le BIP est mis en attente pour plus tard par le champion ou par un éditeur ;
-  \item Rejeté (*Rejected*) : Un BIP est classé comme rejeté s'il n'a montré aucune activité pendant 3 ans. Son auteur peut choisir de le reprendre ultérieurement, ce qui lui permettrait de retourner au statut de brouillon ;
-  \item Retiré (*Withdrawn*) : Le BIP a été retiré par son auteur ;
-  \item Final (*Final*) : Le BIP est accepté et largement implémenté sur Bitcoin ;
-  \item Actif (*Active*) : Pour les BIPs de processus uniquement, ce statut est attribué une fois qu'un certain consensus est atteint ;
-  \item Remplacé / Obsolète (*Replaced* / *Obsolete*) : Le BIP n’est plus applicable ou a été remplacé par une proposition plus récente qui le rend inutile.
-\end{itemize}
+<ul>
+<li>Brouillon (*Draft*) : La proposition est encore en phase de rédaction et de débat ;</li>
+<li>Proposé (*Proposed*) : Le BIP est considéré comme complet et prêt pour être examiné par la communauté ;</li>
+<li>Différé (*Deferred*) : Le BIP est mis en attente pour plus tard par le champion ou par un éditeur ;</li>
+<li>Rejeté (*Rejected*) : Un BIP est classé comme rejeté s'il n'a montré aucune activité pendant 3 ans. Son auteur peut choisir de le reprendre ultérieurement, ce qui lui permettrait de retourner au statut de brouillon ;</li>
+<li>Retiré (*Withdrawn*) : Le BIP a été retiré par son auteur ;</li>
+<li>Final (*Final*) : Le BIP est accepté et largement implémenté sur Bitcoin ;</li>
+<li>Actif (*Active*) : Pour les BIPs de processus uniquement, ce statut est attribué une fois qu'un certain consensus est atteint ;</li>
+<li>Remplacé / Obsolète (*Replaced* / *Obsolete*) : Le BIP n’est plus applicable ou a été remplacé par une proposition plus récente qui le rend inutile.</li>
+</ul>
 
 ![](../../dictionnaire/assets/25.png)
 
@@ -1210,11 +517,11 @@ Les BIPs passent ensuite par différents statuts au cours de leur cycle de vie. 
 ## BIP1
 
 Document qui définit le processus d'élaboration et de mise en œuvre des améliorations proposées au protocole Bitcoin. Rédigé par Amir Taaki en août 2011, il établit une méthodologie standard pour proposer et documenter des modifications potentielles. Les propositions de BIP sont alors classées en trois catégories : 
-\begin{itemize}
-  \item Standards Track* : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;
-  \item Informational* : ceux qui offrent des informations générales, mais n'affectent pas directement le protocole ;
-  \item Process* : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.
-\end{itemize}
+<ul>
+<li>*Standards Track* : ceux qui concernent les modifications directes du protocole Bitcoin et son interopérabilité ;</li>
+<li>*Informational* : ceux qui offrent des informations générales, mais n'affectent pas directement le protocole ;</li>
+<li>*Process* : ceux qui introduisent des changements non techniques, comme les procédures et lignes directrices.</li>
+</ul>
 
 Ce cadre systématise le développement de Bitcoin, afin d'assurer une approche coordonnée et transparente de ses évolutions. La méthodologie du BIP1 sera par la suite remplacée par celle du BIP2.
 
@@ -1225,10 +532,10 @@ Document rédigé par Luke Dashjr en juin 2012 qui établit des critères préci
 ## BIP8
 
 Élaboré suite aux débats sur SegWit, qui utilisait le BIP9 pour son activation, le BIP8 est une méthode d'activation de soft forks qui incorpore nativement un mécanisme d'UASF (*User-Activated Soft Fork*) automatique. Comme le BIP9, le BIP8 utilise la signalisation des mineurs, mais ajoute le paramètre `LOT` (*Lock-in On Time out*). Si `LOT` est réglé sur `vrai`, à l'expiration de la période de signalisation sans atteindre le seuil requis, un UASF est automatiquement déclenché, forçant l'activation du soft fork. Cette approche contraint les mineurs à être coopératifs ou risquer un UASF imposé par les utilisateurs. De plus, contrairement au BIP9, le BIP8 définit la période de signalisation établie sur la hauteur des blocs, éliminant les manipulations potentielles via le taux de hachage par les mineurs. Le BIP8 permet également de fixer un seuil de vote variable et introduit un paramètre pour une hauteur de bloc minimale pour l'activation, donnant aux mineurs le temps de se préparer et de signaler leur accord en avance sans forcément être prêts. Lorsqu'un soft fork est activé via le BIP8 avec le paramètre `LOT=vrai`, on utilise ici une méthode très agressive contre les mineurs qui sont immédiatement mis sous la pression d'un éventuel UASF. En effet, ça leur laisse seulement 2 choix :
-\begin{itemize}
-  \item Être coopératifs, et ainsi faciliter le processus d'activation ;
-  \item Être non coopératifs, auquel cas les utilisateurs font un UASF automatiquement pour imposer le soft fork.
-\end{itemize}
+<ul>
+<li>Être coopératifs, et ainsi faciliter le processus d'activation ;</li>
+<li>Être non coopératifs, auquel cas les utilisateurs font un UASF automatiquement pour imposer le soft fork.</li>
+</ul>
 
 ## BIP9
 
@@ -1268,9 +575,9 @@ Proposition de Luke Dashjr concurrente au BIP12 et au BIP16. Le BIP17 introduisa
 
 Proposition rédigée par Nils Schneider et Matt Corallo, sur la base du BIP20 rédigé par Luke Dashjr, qui venait lui-même d'un autre document rédigé par Nils Schneider. Le BIP21 définit comment les adresses de réception doivent être encodées dans les URI (*Uniform Resource Identifier*) pour faciliter les paiements. Par exemple, une URI Bitcoin suivant le BIP21 dans laquelle je demanderais sous le label « *Pandul* » que l'on m'envoie 0.1 BTC ressemblerait à cela :
 
-\begin{codeblock}
+```text
 bitcoin:bc1qmp7emyf7un49eaz0nrxk9mdfrtn67v5y866fvs?amount=0.1&label=Pandul
-\end{codeblock} 
+``` 
 
 Cette standardisation améliore l'expérience utilisateur des transactions Bitcoin en permettant de cliquer sur un lien ou de scanner un QR code pour lancer les paramètres de celles-ci. La norme BIP21 est aujourd'hui largement adoptée dans les logiciels de portefeuilles Bitcoin.
 
@@ -1331,65 +638,23 @@ Proposition d'amélioration qui introduit l'utilisation d'un étage de dérivati
 ## BIP44
 
 Proposition d'amélioration qui introduit une structure de dérivation hiérarchique standard pour les portefeuilles HD. Le BIP44 s'appuie sur les principes établis par le BIP32 pour la dérivation des clés et sur le BIP43 pour l'utilisation du champ « *purpose* ». Il introduit une structure de cinq niveaux de dérivation : `m / purpose' / coin_type' / account' / change / address_index`. Voici le détail de chaque profondeur :
-\begin{itemize}
-  \item 
-\texttt{m /}
-indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur. La clé maîtresse est directement dérivée depuis la graine du portefeuille ;
-  \item 
-\texttt{m / purpose' /}
-indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champ est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors
-\texttt{84'}
-;
-  \item 
-\texttt{m / purpose' / coin-type' /}
-indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coins. L'index dédié au Bitcoin est le
-\texttt{0'}
-;
-  \item 
-\texttt{m / purpose' / coin-type' / account' /}
-indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de
-\texttt{0'}
-. Les clés étendues (
-\texttt{xpub}
-,
-\texttt{xprv}
-...) se trouvent à ce niveau de profondeur ;
-  \item 
-\texttt{m / purpose' / coin-type' / account' / change /}
-indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « *change* »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index
-\texttt{0}
-et la chaîne interne est identifiée avec l'index
-\texttt{1}
-. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie, mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur
-\texttt{xpub}
-;
-  \item 
-\texttt{m / purpose' / coin-type' / account' / change / address-index}
-indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index
-\texttt{0}
-, la deuxième adresse dispose de l’index
-\texttt{1}
-, etc...
-\end{itemize}
+<ul>
+<li>`m /` indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur. La clé maîtresse est directement dérivée depuis la graine du portefeuille ;</li>
+<li>`m / purpose' /` indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champ est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors `84'` ;</li>
+<li>`m / purpose' / coin-type' /` indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coins. L'index dédié au Bitcoin est le `0'` ;</li>
+<li>`m / purpose' / coin-type' / account' /` indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de `0'`. Les clés étendues (`xpub`, `xprv`...) se trouvent à ce niveau de profondeur ;</li>
+<li>`m / purpose' / coin-type' / account' / change /` indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « *change* »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index `0` et la chaîne interne est identifiée avec l'index `1`. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie, mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur `xpub` ;</li>
+<li>`m / purpose' / coin-type' / account' / change / address-index` indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index `0`, la deuxième adresse dispose de l’index `1`, etc...</li>
+</ul>
 
 Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 86' / 0' / 0' / 0 / 5`, on peut en déduire les informations suivantes :
-\begin{itemize}
-  \item 
-\texttt{86'}
-indique que nous suivons le standard de dérivation du BIP86 (Taproot ou SegWitV1) ;
-  \item 
-\texttt{0'}
-indique que c'est une adresse Bitcoin ;
-  \item 
-\texttt{0'}
-indique que l'on est sur le premier compte du portefeuille ;
-  \item 
-\texttt{0}
-indique que c'est une adresse externe ;
-  \item 
-\texttt{5}
-indique que c'est la sixième adresse externe de ce compte.
-\end{itemize}
+<ul>
+<li>`86'` indique que nous suivons le standard de dérivation du BIP86 (Taproot ou SegWitV1) ;</li>
+<li>`0'` indique que c'est une adresse Bitcoin ;</li>
+<li>`0'` indique que l'on est sur le premier compte du portefeuille ;</li>
+<li>`0` indique que c'est une adresse externe ;</li>
+<li>`5` indique que c'est la sixième adresse externe de ce compte.</li>
+</ul>
 
 ![](../../dictionnaire/assets/18.png)
 
@@ -1526,12 +791,12 @@ Introduit un nouvel opcode nommé `OP_CHECKTEMPLATEVERIFY` (CTV). CTV permettrai
 ## BIP123
 
 Établit un nouveau processus standardisé pour la classification des propositions d'amélioration de Bitcoin. Les BIP doivent dorénavant être classifiés selon 4 catégories :
-\begin{itemize}
-  \item Consensus* : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;
-  \item Peer Services* : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;
-  \item API/RPC* : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;
-  \item Applications* : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.
-\end{itemize}
+<ul>
+<li>*Consensus* : concerne les propositions qui nécessitent un changement de consensus et affectent la compatibilité entre les versions antérieures et futures du protocole Bitcoin. Ce sont les soft forks et les hard forks ;</li>
+<li>*Peer Services* : concerne les modifications des services et des protocoles de communication entre les nœuds du réseau, sans affecter le consensus ;</li>
+<li>*API/RPC* : englobe les propositions visant à modifier les API et les RPC utilisés pour interagir avec les nœuds Bitcoin ;</li>
+<li>*Applications* : comprend les propositions d'améliorations pour les applications qui s'exécutent au-dessus du réseau Bitcoin, comme typiquement les standards liés aux logiciels de portefeuilles.</li>
+</ul>
 
 ## BIP125
 
@@ -1552,10 +817,10 @@ Introduit le concept de témoin séparé (*Segregated Witness*) qui donnera son 
 ## BIP143
 
 Introduit une nouvelle manière de hacher la transaction pour la vérification des signatures dans les scripts post-SegWit. L'objectif est de minimiser les opérations redondantes lors de la vérification et d'inclure la valeur des UTXO en entrée dans la signature. Cela résout deux problèmes majeurs de l'algorithme de hachage de transaction original : 
-\begin{itemize}
-  \item La croissance quadratique du hachage des données avec le nombre de signatures ;
-  \item L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.
-\end{itemize}
+<ul>
+<li>La croissance quadratique du hachage des données avec le nombre de signatures ;</li>
+<li>L'absence d'inclusion de la valeur de l'input dans la signature, ce qui posait un risque pour les hardware wallet, notamment sur le fait de connaitre les frais engagés dans la transaction.</li>
+</ul>
 Puisque la mise à jour SegWit, expliquée dans le BIP141, introduit une nouvelle forme de transactions dont le script ne sera pas vérifié par les vieux nœuds, le BIP143 en profite pour résoudre ce problème sans nécessiter de hard fork. Le BIP143 fait donc partie du soft fork SegWit.
 
 ## BIP144
@@ -1619,11 +884,11 @@ Cette méthode de routage brouille la piste menant au nœud source, rendant diff
 ## BIP173
 
 Introduit le format d'adresse bech32 pour les adresses SegWit V0. Ce format d'adresse est caractérisé par le préfixe `bc1q`. Le format bech32 offre plusieurs avantages : 
-\begin{itemize}
-  \item Il demande moins d'espace dans les codes QR ;
-  \item Il est plus facilement interprétable par les humains ;
-  \item Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
-\end{itemize}
+<ul>
+<li>Il demande moins d'espace dans les codes QR ;</li>
+<li>Il est plus facilement interprétable par les humains ;</li>
+<li>Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.</li>
+</ul>
 Ces caractéristiques facilitent l'utilisation des adresses de réception tout en minimisant les risques d'erreurs.
 
 > ► *Pour plus d'informations, voir la définition de [**BECH32 ET BECH32M**](#bech32-et-bech32m).*
@@ -1709,11 +974,11 @@ Dans le contexte de Bitcoin, le terme « bit » est aussi utilisé pour désig
 ## BITCOIN (B MAJUSCULE)
 
 Bitcoin est le nom du système de cash électronique pair-à-pair créé par Satoshi Nakamoto en 2009. L'utilisation du terme Bitcoin avec un « B » majuscule peut vouloir évoquer trois choses différentes :
-\begin{itemize}
-  \item Le système Bitcoin ;
-  \item Le protocole Bitcoin ;
-  \item Le réseau Bitcoin.
-\end{itemize}
+<ul>
+<li>Le système Bitcoin ;</li>
+<li>Le protocole Bitcoin ;</li>
+<li>Le réseau Bitcoin.</li>
+</ul>
 
 Le terme de bitcoin avec un « b » minuscule est généralement réservé pour évoquer l'unité monétaire échangée sur ce système.
 
@@ -1798,10 +1063,10 @@ Bitcoin QT est un client Bitcoin intégrant une interface graphique publié en m
 ## BITCOIN SATOSHI VISION (BSV)
 
 Système de cryptomonnaie issu d'un hard fork de Bitcoin Cash (BCH), lui-même un fork de Bitcoin (BTC). Le fork de Bitcoin SV s'est produit le 15 novembre 2018 au bloc 556 766 en raison de désaccords au sein de la communauté Bitcoin Cash, notamment concernant la taille des blocs et la supposée vision de Satoshi Nakamoto, le créateur de Bitcoin. Deux camps se sont affrontés : 
-\begin{itemize}
-  \item Les partisans du fork « Bitcoin Cash ABC », qui est devenu Bitcoin Cash (BCH). Ce groupe était notamment soutenu par le célèbre entrepreneur Roger Ver ;
-  \item Les promoteurs du fork « Bitcoin Cash Satoshi Vision », qui a abouti à la création de Bitcoin Satoshi Vision (BSV). Ce camp était entre autres soutenu par Craig Wright.
-\end{itemize}
+<ul>
+<li>Les partisans du fork « Bitcoin Cash ABC », qui est devenu Bitcoin Cash (BCH). Ce groupe était notamment soutenu par le célèbre entrepreneur Roger Ver ;</li>
+<li>Les promoteurs du fork « Bitcoin Cash Satoshi Vision », qui a abouti à la création de Bitcoin Satoshi Vision (BSV). Ce camp était entre autres soutenu par Craig Wright.</li>
+</ul>
 
 Bitcoin SV se distingue de Bitcoin Cash, et encore plus de Bitcoin, par sa limite de taille de bloc considérablement élevée. Cette spécificité vise à s'aligner sur ce que ses partisans considèrent être la vision initiale de Satoshi Nakamoto pour Bitcoin.
 
@@ -1846,14 +1111,14 @@ Nom de l'ancien dossier utilisé dans Bitcoin Core pour cataloguer les métadonn
 ## BLOC
 
 Structure de données dans le système Bitcoin. Un bloc contient un ensemble de transactions valides et des métadonnées contenues dans son entête. Chaque bloc est lié au suivant par le hachage de son entête, formant ainsi la blockchain (chaîne de blocs). La blockchain agit comme un serveur d'horodatage qui permet à chaque utilisateur de connaître l'ensemble des transactions passées, afin de vérifier la non-existence d'une transaction et éviter la double dépense. Les transactions sont organisées dans un arbre de Merkle. Cet accumulateur cryptographique permet de produire un condensat de toutes les transactions d'un bloc, appelé « Racine de Merkle » (*Merkle root*). L'entête d'un bloc contient 6 éléments :
-\begin{itemize}
-  \item La version du bloc ;
-  \item L'empreinte du bloc précédent ;
-  \item La racine de l'arbre de Merkle des transactions ;
-  \item L'horodatage du bloc ;
-  \item La cible de difficulté ;
-  \item Le nonce.
-\end{itemize}
+<ul>
+<li>La version du bloc ;</li>
+<li>L'empreinte du bloc précédent ;</li>
+<li>La racine de l'arbre de Merkle des transactions ;</li>
+<li>L'horodatage du bloc ;</li>
+<li>La cible de difficulté ;</li>
+<li>Le nonce.</li>
+</ul>
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.
 
@@ -1960,16 +1225,6 @@ Ce concept est lié au [problème des généraux byzantins](#prob.-des-générau
 > ► *L'algorithme de preuve de travail (Proof-of-Work ou PoW) utilisé par Bitcoin est un mécanisme de consensus dit « Tolérant aux pannes byzantines » ou « Byzantine Fault Tolerant (BFT) ». Pour plus d'informations, voir la définition de **[PROBLÈME DES GÉNÉRAUX BYZANTINS](#prob.-des-généraux-byzantins)**.*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{C}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{C}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## C++ (PLUS PLUS)
 
 Langage de programmation polyvalent, évoluant du C, connu pour sa puissance et sa flexibilité. Utilisé pour le développement logiciel complexe, il prend en charge la programmation orientée objet et offre de riches fonctionnalités pour la gestion de la mémoire et des ressources système. 
@@ -1979,11 +1234,11 @@ Bitcoin Core, l'implémentation majoritaire du protocole Bitcoin, est écrite en
 ## CAHOOTS
 
 Dans le cadre du portefeuille Samourai Wallet et d'autres logiciels de portefeuilles qui l'implémente, un Cahoot désigne tous les types de transactions réalisées en collaboration entre plusieurs utilisateurs. Procéder à un Cahoot signifie donc participer conjointement à une transaction. Cette collaboration s'articule autour de l'échange de transactions partiellement signées. Ces échanges peuvent se faire soit manuellement, via des codes QR, soit de manière automatisée, via le réseau de communication Soroban. Parmi les cahoots, on retrouve :
-\begin{itemize}
-  \item Les transactions Stowaway (Payjoin) ;
-  \item Les transactions Stonewall x2 ;
-  \item Les transactions Joinbot.
-\end{itemize}
+<ul>
+<li>Les transactions Stowaway (Payjoin) ;</li>
+<li>Les transactions Stonewall x2 ;</li>
+<li>Les transactions Joinbot.</li>
+</ul>
 
 ## CANAL DE PAIMENT
 
@@ -2054,23 +1309,13 @@ Mécanisme avancé en cours de travail sur Lightning, permettant la création et
 ## CHARGE UTILE (PAYLOAD)
 
 Dans le contexte général de l'informatique, une charge utile désigne les données essentielles transportées dans un paquet de données plus large. Par exemple, dans une adresse SegWit V0 sur Bitcoin, la charge utile correspond au hachage de la clé publique, sans les diverses métadonnées (le HRP, le séparateur, la version de SegWit et la somme de contrôle). Par exemple, sur l'adresse `bc1qc2eukw7reasfcmrafevp5dhv8635yuqays50gj`, nous avons : 
-\begin{itemize}
-  \item 
-\texttt{bc}
-: la partie lisible par l'homme (HRP) ;
-  \item 
-\texttt{1}
-: le séparateur ;
-  \item 
-\texttt{q}
-: la version de SegWit. Ici, c'est la version 0 ;
-  \item 
-\texttt{c2eukw7reasfcmrafevp5dhv8635yuqa}
-: la charge utile, ici, le hachage de la clé publique ;
-  \item 
-\texttt{ys50gj}
-: la somme de contrôle.
-\end{itemize}
+<ul>
+<li>`bc` : la partie lisible par l'homme (HRP) ;</li>
+<li>`1` : le séparateur ;</li>
+<li>`q` : la version de SegWit. Ici, c'est la version 0 ;</li>
+<li>`c2eukw7reasfcmrafevp5dhv8635yuqa` : la charge utile, ici, le hachage de la clé publique ;</li>
+<li>`ys50gj` : la somme de contrôle.</li>
+</ul>
 
 ## CHAUMIAN COINJOIN
 
@@ -2095,65 +1340,23 @@ Toutefois, il existe d'autres mentions antérieures, à la fois pour les signatu
 ## CHEMIN DE DÉRIVATION
 
 Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), un chemin de dérivation désigne la séquence d'index utilisée pour dériver des clés enfants à partir d'une clé maîtresse. Décrit dans le BIP32, ce chemin permet d'identifier la structure arborescente de dérivation des clés enfants. Un chemin de dérivation est représenté par une série d'index séparés par des barres obliques, et commence toujours par la clé maîtresse (notée `m/`). Par exemple, un chemin typique pourrait être `m/84'/0'/0'/0/0`. Chaque niveau de dérivation est associé à une profondeur spécifique :
-\begin{itemize}
-  \item 
-\texttt{m /}
-indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur. La clé maîtresse est dérivée directement depuis la graine ;
-  \item 
-\texttt{m / purpose' /}
-indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champ est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors
-\texttt{84'}
-;
-  \item 
-\texttt{m / purpose' / coin-type' /}
-indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au bitcoin est le
-\texttt{0'}
-;
-  \item 
-\texttt{m / purpose' / coin-type' / account' /}
-indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de
-\texttt{0'}
-. Les clés étendues (
-\texttt{xpub}
-,
-\texttt{xprv}
-...) se trouvent à ce niveau de profondeur ;
-  \item 
-\texttt{m / purpose' / coin-type' / account' / change /}
-indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index
-\texttt{0}
-et la chaîne interne est identifiée avec l'index
-\texttt{1}
-. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie, mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur
-\texttt{xpub}
-;
-  \item 
-\texttt{m / purpose' / coin-type' / account' / change / address-index}
-indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index
-\texttt{0}
-, la deuxième adresse dispose de l’index
-\texttt{1}
-, etc...
-\end{itemize}
+<ul>
+<li>`m /` indique la clé privée maîtresse. Elle est unique pour un portefeuille et ne peut pas avoir de sœurs à la même profondeur. La clé maîtresse est dérivée directement depuis la graine ;</li>
+<li>`m / purpose' /` indique l'objectif de dérivation qui permet d'identifier le standard suivi. Ce champ est décrit dans le BIP43. Par exemple, si le portefeuille respecte le standard BIP84 (SegWit V0), l'index sera alors `84'` ;</li>
+<li>`m / purpose' / coin-type' /` indique le type de cryptomonnaie. Cela permet de bien différencier les branches dédiées à une cryptomonnaie, des branches dédiées à une autre cryptomonnaie sur un portefeuille multi-coin. L'index dédié au bitcoin est le `0'` ;</li>
+<li>`m / purpose' / coin-type' / account' /` indique le numéro de compte. Cette profondeur permet de différencier et d’organiser facilement un portefeuille en différents comptes. Ces comptes sont numérotés à partir de `0'`. Les clés étendues (`xpub`, `xprv`...) se trouvent à ce niveau de profondeur ;</li>
+<li>`m / purpose' / coin-type' / account' / change /` indique la chaîne. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne externe dérive des adresses destinées à être communiquées publiquement, c’est-à-dire les adresses que l’on nous propose lorsque l’on clique sur « recevoir » dans notre logiciel de portefeuille. La chaîne interne dérive les adresses destinées à ne pas être échangées publiquement, c’est-à-dire principalement les adresses de change. La chaîne externe est identifiée avec l'index `0` et la chaîne interne est identifiée avec l'index `1`. Vous remarquerez qu'à partir de cette profondeur, on ne réalise plus une dérivation endurcie, mais une dérivation normale (il n'y a pas d'apostrophe). C'est grâce à ce mécanisme que l'on est capable de dériver l'ensemble des clés publiques enfants à partir de leur `xpub` ;</li>
+<li>`m / purpose' / coin-type' / account' / change / address-index` indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index `0`, la deuxième adresse dispose de l’index `1`, etc...</li>
+</ul>
 
 Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 86' / 0' / 0' / 0 / 5`, on peut en déduire les informations suivantes :
-\begin{itemize}
-  \item 
-\texttt{86'}
-indique que nous suivons le standard de dérivation du BIP86 (Taproot / SegWit V1) ;
-  \item 
-\texttt{0'}
-indique que c'est une adresse Bitcoin ;
-  \item 
-\texttt{0'}
-indique que l'on est sur le premier compte du portefeuille ;
-  \item 
-\texttt{0}
-indique que c'est une adresse externe ;
-  \item 
-\texttt{5}
-indique que c'est la sixième adresse externe de ce compte.
-\end{itemize}
+<ul>
+<li>`86'` indique que nous suivons le standard de dérivation du BIP86 (Taproot / SegWit V1) ;</li>
+<li>`0'` indique que c'est une adresse Bitcoin ;</li>
+<li>`0'` indique que l'on est sur le premier compte du portefeuille ;</li>
+<li>`0` indique que c'est une adresse externe ;</li>
+<li>`5` indique que c'est la sixième adresse externe de ce compte.</li>
+</ul>
 
 ![](../../dictionnaire/assets/18.png)
 
@@ -2202,42 +1405,16 @@ Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les 
 ## CLÉ ÉTENDUE
 
 Suite de caractères qui combine une clé (publique ou privée), son code de chaîne associé et une série de métadonnées. Une clé étendue rassemble en un seul identifiant tous les éléments nécessaires à la dérivation de clés enfants. Elles sont utilisées dans les portefeuilles déterministes et hiérarchiques, et peuvent être de deux types : une clé publique étendue (utilisée pour dériver des clés publiques enfants) ou une clé privée étendue (utilisée pour dériver à la fois des clés privées et des clés publiques enfants). Une clé étendue inclut donc plusieurs données différentes, décrites au sein du BIP32, dans l'ordre :
-\begin{itemize}
-  \item Le préfixe :
-\texttt{prv}
-et
-\texttt{pub}
-sont des HRP permettant d'indiquer si l'on a affaire à une clé privée étendue (
-\texttt{prv}
-) ou à une clé publique étendue (
-\texttt{pub}
-). La première lettre du préfixe permet, elle, de désigner la version de la clé étendue :
-\texttt{x}
-pour Legacy ou SegWit V1 sur Bitcoin,
-\texttt{t}
-pour Legacy ou SegWit V1 sur Bitcoin Testnet,
-\texttt{y}
-pour Nested SegWit sur Bitcoin,
-\texttt{u}
-pour Nested SegWit sur Bitcoin Testnet,
-\texttt{z}
-pour SegWit V0 sur Bitcoin,
-\texttt{v}
-pour SegWit V0 sur Bitcoin Testnet.
-  \item La profondeur, qui indique le nombre de dérivations intervenues depuis la clé maîtresse pour arriver jusqu'à la clé étendue ;
-  \item L'empreinte du parent. Cela représente les 4 premiers octets du
-\texttt{HASH160}
-de la clé publique parent ;
-  \item L'index. C'est le numéro de la paire parmi ses sœurs dont est issue la clé étendue ;
-  \item Le code de chaîne ;
-  \item Un octet de rembourrage si c'est une clé privée
-\texttt{0x00}
-;
-  \item La clé privée ou la clé publique ;
-  \item Une somme de contrôle. Elle représente les 4 premiers octets du
-\texttt{HASH256}
-de tout le reste de la clé étendue.
-\end{itemize}
+<ul>
+<li>Le préfixe : `prv` et `pub` sont des HRP permettant d'indiquer si l'on a affaire à une clé privée étendue (`prv`) ou à une clé publique étendue (`pub`). La première lettre du préfixe permet, elle, de désigner la version de la clé étendue : `x` pour Legacy ou SegWit V1 sur Bitcoin, `t` pour Legacy ou SegWit V1 sur Bitcoin Testnet, `y` pour Nested SegWit sur Bitcoin, `u` pour Nested SegWit sur Bitcoin Testnet, `z` pour SegWit V0 sur Bitcoin, `v` pour SegWit V0 sur Bitcoin Testnet.</li>
+<li>La profondeur, qui indique le nombre de dérivations intervenues depuis la clé maîtresse pour arriver jusqu'à la clé étendue ;</li>
+<li>L'empreinte du parent. Cela représente les 4 premiers octets du `HASH160` de la clé publique parent ;</li>
+<li>L'index. C'est le numéro de la paire parmi ses sœurs dont est issue la clé étendue ;</li>
+<li>Le code de chaîne ;</li>
+<li>Un octet de rembourrage si c'est une clé privée `0x00` ;</li>
+<li>La clé privée ou la clé publique ;</li>
+<li>Une somme de contrôle. Elle représente les 4 premiers octets du `HASH256` de tout le reste de la clé étendue.</li>
+</ul>
 
 Dans la pratique, la clé publique étendue est utilisée pour générer des adresses de réception et pour observer les transactions d'un compte, sans exposer les clés privées associées. Cela peut permettre, par exemple, la création d'un portefeuille dit « watch-only ». Il est toutefois important de noter que la clé publique étendue est une information sensible pour la confidentialité de l'utilisateur, car sa divulgation peut permettre à des tiers de tracer les transactions et de voir le solde du compte associé.
 
@@ -2273,29 +1450,29 @@ Pour choisir entre les deux points potentiels sur la courbe, on ajoute à `x` un
 Cependant, dans le cadre de la cryptographie sur les courbes elliptiques, nous utilisons non pas les réels, mais un corps fini d'ordre `p` (un nombre premier). Dans ce contexte, le « signe » de `y` est déterminé par sa parité, c'est-à-dire si `y` est pair ou impair. Le préfixe `0x02` indique alors un `y` pair, tandis que `0x03` indique un `y` impair.
 
 Considérons l'exemple suivant d'une clé publique brute (un point sur la courbe elliptique) en hexadécimal :
-\begin{codeblock}
+```plaintext
 K = 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f
 6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
-\end{codeblock}
+```
 
 On peut isoler le préfixe, `x`, et `y` :
-\begin{codeblock}
+```plaintext
 Préfixe = 04
 x = 678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb6
 y = 49f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
-\end{codeblock}
+```
 
 Pour déterminer la parité de `y`, on examine le dernier caractère hexadécimal de `y` :
-\begin{codeblock}
+```plaintext
 Base 16 (hexadécimal) : f
 Base 10 (décimal) : 15
 y est impair
-\end{codeblock}
+```
 
 Le préfixe pour la clé publique compressée sera `03`. La clé publique compressée en hexadécimal devient :
-\begin{codeblock}
+```plaintext
 K = 03678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb6
-\end{codeblock}
+```
 
 ## CLI
 
@@ -2334,31 +1511,27 @@ Désigne le code de chaîne associé à la clé maîtresse du portefeuille, à l
 ## CODE DE PAIMENT RÉUTILISABLE
 
 Dans le BIP47, un code de paiement réutilisable est un identifiant statique généré à partir d'un portefeuille Bitcoin permettant d'engager une transaction de notification et de dériver des adresses uniques. Cela permet de ne pas faire de réutilisation d'adresses, qui mènent à une perte de la confidentialité, sans pour autant devoir dériver et transmettre manuellement de nouvelles adresses vierges à chaque paiement. Dans le BIP47, les codes de paiement réutilisables sont construits de la manière suivante :
-\begin{itemize}
-  \item L'octet 0 correspond à la version ;
-  \item L'octet 1 est un champ de bits permettant d'ajouter des informations en cas d'utilisation spécifique ;
-  \item L'octet 2 permet d'indiquer la parité du
-\texttt{y}
-de la clé publique ;
-  \item De l'octet 3 à l'octet 34, on retrouvera la valeur
-\texttt{x}
-de la clé publique ;
-  \item De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;
-  \item De l'octet 67 à l'octet 79, il y a du rembourrage de zéros.
-\end{itemize}
+<ul>
+<li>L'octet 0 correspond à la version ;</li>
+<li>L'octet 1 est un champ de bits permettant d'ajouter des informations en cas d'utilisation spécifique ;</li>
+<li>L'octet 2 permet d'indiquer la parité du `y` de la clé publique ;</li>
+<li>De l'octet 3 à l'octet 34, on retrouvera la valeur `x` de la clé publique ;</li>
+<li>De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;</li>
+<li>De l'octet 67 à l'octet 79, il y a du rembourrage de zéros.</li>
+</ul>
 
 On ajoute généralement un HRP au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en base58. La construction d'un code de paiement est donc assez proche de celle d'une clé étendue. Voici mon propre code de paiement BIP47 en base58 par exemple :
 
-\begin{codeblock}
+```text
 PM8TJSBiQmNQDwTogMAbyqJe2PE2kQXjtgh88MRTxsrnHC8zpEtJ8j7Aj628oUFk8X6P5rJ7P5qD
 udE4Hwq9JXSRzGcZJbdJAjM9oVQ1UKU5j2nr7VR5
-\end{codeblock}
+```
 
 Dans l'implémentation PayNym du BIP47, les codes de paiement peuvent également être exprimés sous la forme d'identifiants associés à l'image d'un robot. Voici le mien par exemple : 
 
-\begin{codeblock}
+```text
 +throbbingpond8B1
-\end{codeblock}
+```
 
 L'utilisation de codes de paiements avec l'implémentation PayNym est actuellement disponible sur Sparrow Wallet sur PC et sur Samourai Wallet sur mobile.
 
@@ -2390,9 +1563,9 @@ Pour permettre le coinjoin sans qu'aucun utilisateur ne perde la main sur ses fo
 
 Ce mécanisme augmente la confidentialité des transactions sans nécessiter de modifications du protocole Bitcoin. Des implémentations spécifiques de coinjoin, telles que Whirlpool, JoinMarket ou Wabisabi, proposent des solutions pour faciliter le processus de coordination entre les participants et renforcer l'efficacité de la transaction coinjoin. Voici une transaction coinjoin par exemple : 
 
-\begin{codeblock}
+```text
 323df21f0b0756f98336437aa3d2fb87e02b59f1946b714a7b09df04d429dec2
-\end{codeblock}
+```
 
 Il est difficile de déterminer avec certitude qui a introduit en premier l'idée du coinjoin sur Bitcoin, et qui a eu l'idée d'utiliser les signatures aveugles de David Chaum dans ce contexte. On pense souvent que c'est Gregory Maxwell qui en a parlé en premier dans [un message sur BitcoinTalk en 2013](https://bitcointalk.org/index.php?topic=279249.0) :
 
@@ -2516,11 +1689,11 @@ Dans le contexte de la cryptographie, une courbe elliptique est une courbe algé
 ## COVENANT
 
 Mécanisme qui permet d'imposer des conditions spécifiques sur la manière dont une pièce donnée peut être dépensée, y compris dans des transactions futures. Au-delà des conditions usuellement autorisées par le langage script sur un UTXO, le covenant force des contraintes supplémentaires sur la manière de dépenser cette pièce Bitcoin dans des transactions ultérieures. Techniquement, l'instauration d'un covenant intervient lorsque le `scriptPubKey` d'un UTXO définit des restrictions sur le `scriptPubKey` des sorties d'une transaction qui dépense ledit UTXO. En élargissant la portée de script, les covenants permettraient de nombreuses évolutions sur Bitcoin comme l'ancrage bilatéral des drivechains, la mise en place de vaults ou encore l'amélioration des systèmes de surcouche comme Lightning. On différencie les propositions de covenants en fonction de trois critères :
-\begin{itemize}
-  \item Leur portée ;
-  \item Leur implémentation ;
-  \item Leur récursivité.
-\end{itemize}
+<ul>
+<li>Leur portée ;</li>
+<li>Leur implémentation ;</li>
+<li>Leur récursivité.</li>
+</ul>
 
 Il existe de très nombreuses propositions qui permettraient l'utilisation de covenants sur Bitcoin. Les plus avancées dans le processus d'implémentation sont : `OP_CHECKTEMPLATEVERIFY` (CTV), `SIGHASH_ANYPREVOUT` (APO) et `OP_VAULT`. Parmi les autres propositions, il y a : `OP_TX`, `OP_TAPLEAFUPDATEVERIFY` (TLUV), `OP_EVICT`, `OP_CHECKSIGFROMSTACKVERIFY` (CSFSV), `OP_CAT`, etc.
 
@@ -2591,16 +1764,6 @@ Le mouvement des cypherpunks remonte au début des années 1990, lorsque des gro
 L'idée d'une monnaie électronique qui ne s'établit pas sur une entité centrale, comme Bitcoin, est enracinée dans la philosophie des cypherpunks. La création de Bitcoin est souvent considérée comme une réalisation majeure de cette vision, aux côtés de PGP, Tor et WikiLeaks.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{D}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{D}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## DAEMON
 
 Type de programme informatique qui fonctionne en arrière-plan, indépendamment du contrôle de l'utilisateur. Ces programmes effectuent des tâches telles que la gestion de services réseau, la surveillance de systèmes, et la réponse à des requêtes sans nécessiter d'intervention directe. Dans le contexte de Bitcoin Core, le daemon s'appelle « bitcoind ». Il représente la version de Bitcoin Core sans interface utilisateur, qui fonctionne exclusivement en ligne de commande.
@@ -2651,49 +1814,21 @@ Acronyme de *Distinguished Encoding Rules*. C'est un sous-ensemble stricte des r
 
 Sur Bitcoin, les signatures ECDSA sont encodées au format DER. Elles se composent de deux nombres de 32 octets (`r`,`s`) encodés. Le format de signature se compose des éléments suivants (71 octets) :
 
-\begin{codeblock}
+```text
 0x30 | length |  0x02 | r-length | r | 0x02 | s-length | s
-\end{codeblock}
+```
 
 Avec :
-\begin{itemize}
-  \item 
-\texttt{0x30}
-(1 octet) : identifiant d'une structure composée ;
-  \item 
-\texttt{length}
-(1 octet) : longueur des données suivantes ;
-  \item 
-\texttt{0x02}
-(1 octet) : identifiant de donnée type
-\texttt{INTEGER}
-(nombre entier) ;
-  \item 
-\texttt{r-length}
-(1 octet) : longueur de la valeur
-\texttt{r}
-suivante (32 octets) ;
-  \item 
-\texttt{r}
-(32 octets) : valeur
-\texttt{r}
-entant qu'entier gros-boutiste (big-endian) ;
-  \item 
-\texttt{0x02}
-(1 octet) : identifiant de donnée type
-\texttt{INTEGER}
-(nombre entier) ;
-  \item 
-\texttt{s-length}
-(1 octet) : longueur de la valeur
-\texttt{s}
-suivante (32 octets) ;
-  \item 
-\texttt{s}
-(32 octets) : valeur
-\texttt{s}
-entant qu'entier gros-boutiste (big-endian).
-\end{itemize}
+<ul>
+<li>`0x30` (1 octet) : identifiant d'une structure composée ;</li>
+<li>`length` (1 octet) : longueur des données suivantes ;</li>
+<li>`0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;</li>
+<li>`r-length` (1 octet) : longueur de la valeur `r` suivante (32 octets) ;</li>
+<li>`r` (32 octets) : valeur `r` entant qu'entier gros-boutiste (big-endian) ;</li>
+<li>`0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;</li>
+<li>`s-length` (1 octet) : longueur de la valeur `s` suivante (32 octets) ;</li>
+<li>`s` (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian).</li>
+</ul>
 
 Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de SigHash utilisé.
 
@@ -2702,14 +1837,10 @@ Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER
 ## DÉRIVATION
 
 Désigne le processus de génération de paires de clés enfants à partir d'une paire de clés parent (clé privée et clé publique) et d'un code de chaîne au sein d'un portefeuille déterministe et hiérarchique (HD). Ce processus permet de segmenter des branches et d’organiser un portefeuille en différents niveaux avec de nombreuses paires de clés enfants, qui peuvent toutes être récupérées en connaissant uniquement les informations de récupération de base (la phrase mnémonique et l'éventuelle passphrase). Pour dériver une clé enfant, on utilise la fonction `HMAC-SHA512` avec le code de chaîne parent et la concaténation de la clé parent et d’un index de 32 bits. Il existe deux types de dérivations :
-\begin{itemize}
-  \item La dérivation normale, qui utilise la clé publique parent à la base de la fonction
-\texttt{HMAC-SHA512}
-;
-  \item La dérivation endurcie, qui utilise la clé privée parent à la base de la fonction
-\texttt{HMAC-SHA512}
-;
-\end{itemize}
+<ul>
+<li>La dérivation normale, qui utilise la clé publique parent à la base de la fonction `HMAC-SHA512` ;</li>
+<li>La dérivation endurcie, qui utilise la clé privée parent à la base de la fonction `HMAC-SHA512` ;</li>
+</ul>
 
 Le résultat de HMAC-SHA512 est divisé en deux : les premiers 256 bits deviennent la clé enfant (privée ou publique après un passage dans ECDSA), et les 256 bits restants deviennent le code de chaîne enfant.
 
@@ -2770,18 +1901,18 @@ Le problème du logarithme discret (DLP) est un problème mathématique sur lequ
 ## DNS SEEDS
 
 Points de connexion initiaux pour les nouveaux nœuds Bitcoin qui rejoignent le réseau. Ces seeds, qui sont en fait des serveurs DNS spécifiques, ont leur adresse intégrée de façon permanente dans le code de Bitcoin Core. Lorsqu'un nouveau nœud se lance, il contacte ces serveurs pour obtenir une liste aléatoire d'adresses IP de nœuds Bitcoin à priori actifs. Le nouveau nœud pourra ainsi établir des connexions avec les nœuds de cette liste afin d'obtenir les informations pour faire son IBD et se synchroniser sur la chaîne avec le plus de travail accumulé. En 2024, voici la liste des DNS seeds de Bitcoin Core et les personnes responsables de leur maintenance (https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp) :
-\begin{itemize}
-  \item seed.bitcoin.sipa.be : Pieter Wuille ;
-  \item dnsseed.bluematt.me : Matt Corallo ;
-  \item dnsseed.bitcoin.dashjr-list-of-p2p-nodes.us : Luke Dashjr ;
-  \item seed.bitcoinstats.com : Christian Decker ;
-  \item seed.bitcoin.jonasschnelli.ch : Jonas Schnelli ;
-  \item seed.btc.petertodd.net : Peter Todd ;
-  \item seed.bitcoin.sprovoost.nl : Sjors Provoost ;
-  \item dnsseed.emzy.de : Stephan Oeste ;
-  \item seed.bitcoin.wiz.biz : Jason Maurice ;
-  \item seed.mainnet.achownodes.xyz : Ava Chow.
-\end{itemize}
+<ul>
+<li>seed.bitcoin.sipa.be : Pieter Wuille ;</li>
+<li>dnsseed.bluematt.me : Matt Corallo ;</li>
+<li>dnsseed.bitcoin.dashjr-list-of-p2p-nodes.us : Luke Dashjr ;</li>
+<li>seed.bitcoinstats.com : Christian Decker ;</li>
+<li>seed.bitcoin.jonasschnelli.ch : Jonas Schnelli ;</li>
+<li>seed.btc.petertodd.net : Peter Todd ;</li>
+<li>seed.bitcoin.sprovoost.nl : Sjors Provoost ;</li>
+<li>dnsseed.emzy.de : Stephan Oeste ;</li>
+<li>seed.bitcoin.wiz.biz : Jason Maurice ;</li>
+<li>seed.mainnet.achownodes.xyz : Ava Chow.</li>
+</ul>
 
 Les DNS seeds représentent le second moyen, par ordre de priorité, pour un nœud Bitcoin d'établir des connexions. Le premier moyen consiste à utiliser le fichier peers.dat que le nœud a lui-même créé. Ce fichier est naturellement vide dans le cas d'un nouveau nœud, à moins que l'utilisateur l'ait modifié manuellement.
 
@@ -2837,29 +1968,19 @@ Désigne le seuil en sats en deçà duquel un UTXO est considéré comme de la �
 
 Règle de standardisation utilisée par les nœuds du réseau pour déterminer ce qu'ils considèrent comme la « limite de poussière » (dust limit). Ce paramètre fixe un taux de frais en sats par kilo-octet virtuel (sats/kvB) qui sert de référence pour calculer si la valeur d'un UTXO est inférieure aux frais nécessaires pour l'inclure dans une transaction. En effet, un UTXO est considéré comme « dust » (poussière) sur Bitcoin s'il requiert plus de frais pour être transféré que la valeur qu'il représente lui-même. Le calcul de cette limite est le suivant :
 
-\begin{codeblock}
+```text
 limite = (taille de l'entrée + taille de la sortie) * taux de frais
-\end{codeblock}
+```
 
 Comme le taux de frais requis pour qu'une transaction soit incluse dans un bloc Bitcoin varie constamment, le paramètre `DustRelayFee` permet de définir le taux de frais utilisé dans ce calcul par chaque nœud. Par défaut, sur Bitcoin Core, cette valeur est fixée à 3 000 sats/kvB. Par exemple, pour calculer la limite de poussière d'une entrée et d'une sortie P2PKH, qui mesurent respectivement 148 et 34 octets, le calcul serait : 
 
-\begin{codeblock}
+```text
 limite (sats) = (148 + 34) * 3000 / 1000 = 546 sats
-\end{codeblock}
+```
 
 Cela signifie que le nœud en question ne relayera pas les transactions incluant un UTXO sécurisé en P2PKH dont la valeur est inférieure à 546 sats.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{E}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{E}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## ECASH (DAVID CHAUM)
 
 Protocole proposé par David Chaum en 1982, qui est un des premiers systèmes de monnaie numérique conçu pour préserver l'anonymat des utilisateurs. Il repose sur des principes de cryptographie à clé publique pour créer une monnaie numérique qui peut être échangée de manière sécurisée et anonyme. eCash fonctionne par la création de jetons numériques signés par une banque. C'est donc une évolution des banques de dépôt, sans pour autant être décentralisée. Lors des transactions, ces jetons sont transférés entre les parties sans révéler l'identité des utilisateurs, préservant ainsi leur vie privée. eCash est considéré comme un précurseur des cryptomonnaies. Il revient d'ailleurs souvent dans les discussions autour de Bitcoin, certains voulant utiliser des systèmes similaires à eCash en surcouche. Aujourd'hui, la tendance est plutôt aux systèmes dits « chaumiens fédérés » comme Fedimint.
@@ -2935,71 +2056,71 @@ Désigne l'ordre dans lequel une séquence d'octets est arrangée et interprét�
 ## ENTÊTE DE BLOC
 
 L'entête de bloc est une structure de données servant de composant principal dans la construction d'un bloc Bitcoin. Chaque bloc est composé d'un entête et d'une liste de transactions. L'entête de bloc contient les informations cruciales qui permettent d'assurer l'intégrité et la validité d'un bloc au sein de la blockchain. L'entête de bloc contient 80 octets de métadonnées et se compose des éléments suivants :
-\begin{itemize}
-  \item La version du bloc ;
-  \item L'empreinte du bloc précédent ;
-  \item La racine de l'arbre de Merkle des transactions ;
-  \item L'horodatage du bloc ;
-  \item La cible de difficulté ;
-  \item Le nonce.
-\end{itemize}
+<ul>
+<li>La version du bloc ;</li>
+<li>L'empreinte du bloc précédent ;</li>
+<li>La racine de l'arbre de Merkle des transactions ;</li>
+<li>L'horodatage du bloc ;</li>
+<li>La cible de difficulté ;</li>
+<li>Le nonce.</li>
+</ul>
 
 Par exemple, voici l'entête du bloc n° 785 530 au format hexadécimal, miné par Foundry USA le 15 avril 2023 :
 
-\begin{codeblock}
+```text
 00e0ff3f5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000206b
 de3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0bcb13a64b2e00517
 43f09a40
-\end{codeblock}
+```
 
 Si l'on décompose cet entête, on peut reconnaitre :
-\begin{itemize}
-  \item La version :
-\end{itemize}
+<ul>
+<li>La version :</li>
+</ul>
 
-\begin{codeblock}
+```text
 00e0ff3f
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item L'empreinte précédente :
-\end{itemize}
+<ul>
+<li>L'empreinte précédente :</li>
+</ul>
 
-\begin{codeblock}
+```text
 5ffe3b0d9247dc437e18edc19252e4517cee941752d501000000000000000000
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item La racine de Merkle :
-\end{itemize}
+<ul>
+<li>La racine de Merkle :</li>
+</ul>
 
-\begin{codeblock}
+```text
 206bde3a10826e2acb2f28fba70463601c789293d0c9c4348d7a0d06711e97c0
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item L'horodatage :
-\end{itemize}
+<ul>
+<li>L'horodatage :</li>
+</ul>
 
-\begin{codeblock}
+```text
 bcb13a64
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item La cible :
-\end{itemize}
+<ul>
+<li>La cible :</li>
+</ul>
 
-\begin{codeblock}
+```text
 b2e00517
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item Le nonce :
-\end{itemize}
+<ul>
+<li>Le nonce :</li>
+</ul>
 
-\begin{codeblock}
+```text
 43f09a40
-\end{codeblock}
+```
 
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit une empreinte inférieure ou égale à la cible de difficulté.
 
@@ -3060,16 +2181,6 @@ L'étiquetage est une bonne pratique qui aide à se rappeler l'origine ou la des
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser facilement un bloc, une transaction ou une adresse spécifique.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{F}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{F}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## FARADAY
 
 Outil développé par Lightning Labs conçu pour extraire des données d'un nœud LND et les analyser afin d'assister son opérateur. Il offre des recommandations pour la fermeture des canaux non performants et fournit des informations détaillées sur le comportement de routage du nœud. Faraday aide à identifier les canaux à faible volume et ceux ayant des problèmes de disponibilité (uptime). Cet outil vise à assister les opérateurs de nœuds dans l'allocation de leur capital dans leurs canaux.
@@ -3085,10 +2196,10 @@ Fichier dans Bitcoin Core qui stocke des données estimées sur les frais de tra
 ## FEE SNIPING
 
 Scénario d'attaque dans lequel des mineurs cherchent à réécrire un bloc récemment confirmé dans le but de récupérer les frais de transaction qu'il contient, tout en y ajoutant des transactions à frais élevés arrivées entre-temps dans la mempool. L'objectif final de cette attaque pour le mineur est d'augmenter sa rentabilité. Le fee sniping peut devenir de plus en plus profitable à mesure que la récompense de bloc diminue et que les frais de transaction représentent une part plus importante dans les revenus des mineurs. Elle peut également être avantageuse lorsque les frais contenus dans le bloc précédent sont nettement supérieurs à ceux du meilleur bloc candidat suivant. Pour simplifier, le mineur est face à ce choix en termes d'incitations :
-\begin{itemize}
-  \item Miner de manière normale à la suite du dernier bloc, avec une forte probabilité de remporter une récompense faible ;
-  \item Tenter de miner un bloc antérieur (fee sniping), avec une faible probabilité de remporter une récompense élevée.
-\end{itemize}
+<ul>
+<li>Miner de manière normale à la suite du dernier bloc, avec une forte probabilité de remporter une récompense faible ;</li>
+<li>Tenter de miner un bloc antérieur (fee sniping), avec une faible probabilité de remporter une récompense élevée.</li>
+</ul>
 
 Cette attaque constitue un risque pour le système Bitcoin, car plus les mineurs l'adoptent, plus les autres mineurs, initialement honnêtes, sont incités à en faire autant. En effet, chaque fois qu'un nouveau mineur s'ajoute à ceux qui tentent un fee sniping, la probabilité qu'un des mineurs attaquants réussisse augmente, et la probabilité qu'un des mineurs honnêtes étende la chaîne diminue en contrepartie. Si cette attaque est menée de manière massive et maintenue dans le temps, les confirmations de bloc ne seraient plus un indicateur fiable de l'immuabilité d'une transaction Bitcoin. Cela rendrait potentiellement le système inutilisable. 
 
@@ -3118,9 +2229,9 @@ En effet, la latence dans la transmission des blocs peut favoriser les grands gr
 
 Harold T. Finney II, dit Hal Finney, est un cryptographe et développeur célèbre pour son rôle crucial dans les débuts de Bitcoin et ses contributions à la cryptographie. Dès la publication du White Paper de Bitcoin en 2008, il fut l'un des premiers à interagir avec Satoshi Nakamoto. Il a apporté des retours, signalé des bugs et proposé des améliorations après le lancement du logiciel en janvier 2009. Il a été le destinataire de la première transaction Bitcoin (en dehors des coinbases), en recevant 10 BTC de la part de Satoshi dans le bloc n° 170 :
 
-\begin{codeblock}
+```text
 f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16
-\end{codeblock}
+```
 
 Hal Finney est aussi probablement la première personne, après Satoshi, à avoir miné un bloc : le bloc n° 78. Plus que cela, Hal Finney a été le premier promoteur de Bitcoin durant une période où le projet était encore méconnu.
 
@@ -3135,35 +2246,19 @@ Cependant, cette méthode est très risquée de nos jours, car elle nécessite u
 ## FONCTION DE HACHAGE
 
 Fonction mathématique qui prend une entrée de taille variable (appelée message) et produit une sortie de taille fixe (appelée hash, hachage, condensat ou empreinte). Les fonctions de hachage sont des primitives largement utilisées en cryptographie. Elles présentent des propriétés spécifiques qui les rendent appropriées pour une utilisation dans des contextes sécurisés :
-\begin{itemize}
-  \item Résistance aux préimages : il doit être très difficile de trouver un message donnant un hachage spécifique, c'est-à-dire de trouver une préimage $m$ pour un hash $h$ tel que $h = H(m)$, où $H$ est la fonction de hachage ;
-  \item Résistance aux secondes préimages : étant donné un message $m_1$, il doit être très difficile de trouver un autre message $m_2$ (différent de $m_1$) tel que $H(m_1) = H(m_2)$ ;
-  \item Résistance aux collisions : il doit être très difficile de trouver deux messages distincts $m_1$ et $m_2$ tels que $H(m_1) = H(m_2)$ ;
-  \item Résistance à la falsification : de petites modifications dans l'entrée doivent provoquer des changements significatifs et imprévisibles dans la sortie.
-\end{itemize}
+<ul>
+<li>Résistance aux préimages : il doit être très difficile de trouver un message donnant un hachage spécifique, c'est-à-dire de trouver une préimage $m$ pour un hash $h$ tel que $h = H(m)$, où $H$ est la fonction de hachage ;</li>
+<li>Résistance aux secondes préimages : étant donné un message $m_1$, il doit être très difficile de trouver un autre message $m_2$ (différent de $m_1$) tel que $H(m_1) = H(m_2)$ ;</li>
+<li>Résistance aux collisions : il doit être très difficile de trouver deux messages distincts $m_1$ et $m_2$ tels que $H(m_1) = H(m_2)$ ;</li>
+<li>Résistance à la falsification : de petites modifications dans l'entrée doivent provoquer des changements significatifs et imprévisibles dans la sortie.</li>
+</ul>
 
 Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieurs fins, notamment pour le mécanisme de preuve de travail (*Proof-of-Work*), les identifiants de transaction, la génération d'adresses, le calcul de sommes de contrôle et la création de structures de données telles que les arbres de Merkle. Sur la partie protocolaire, Bitcoin utilise exclusivement la fonction `SHA256d`, également nommée `HASH256`, qui consiste en un double hachage `SHA256`. On utilise aussi `HASH256` dans le calcul de certaines sommes de contrôle, notamment pour les clés étendues (`xpub`, `xprv`...). Sur la partie portefeuille, on utilise également :
-\begin{itemize}
-  \item 
-\texttt{SHA256}
-simple pour les sommes de contrôle des phrases mnémoniques ;
-  \item 
-\texttt{SHA512}
-au sein des algorithmes
-\texttt{HMAC}
-et
-\texttt{PBKDF2}
-utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
-  \item 
-\texttt{HASH160}
-, qui décrit une utilisation successive d'un
-\texttt{SHA256}
-et d'un
-\texttt{RIPEMD160}
-.
-\texttt{HASH160}
-est utilisé dans le processus de génération des adresses de réception (sauf P2PK et P2TR) et dans le calcul des empreintes de clés parents pour les clés étendues.
-\end{itemize}
+<ul>
+<li>`SHA256` simple pour les sommes de contrôle des phrases mnémoniques ;</li>
+<li>`SHA512` au sein des algorithmes `HMAC` et `PBKDF2` utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;</li>
+<li>`HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception (sauf P2PK et P2TR) et dans le calcul des empreintes de clés parents pour les clés étendues.</li>
+</ul>
 
 > ► *En anglais, on parle de « hash function ».*
 
@@ -3190,12 +2285,12 @@ Attaque qui consiste à envoyer de minuscules quantités de bitcoins à un grand
 ## FORK
 
 Le terme de « fork » revêt plusieurs significations dans le cadre de Bitcoin. Il désigne soit une scission du réseau de nœuds en plusieurs groupes séparés, entraînant la création de plusieurs blockchains différentes, soit une modification des règles du protocole, voire les deux simultanément. Pour simplifier, on distingue 4 grandes catégories de forks :
-\begin{itemize}
-  \item L'embranchement naturel : se produit lorsqu'il y a une concurrence temporaire entre deux blocs découverts en même temps à une même hauteur. Cet embranchement peut s'étendre sur plusieurs blocs. Ce type de fork se résout naturellement quand une des chaînes devient plus longue que l'autre (avec plus de travail accumulé), menant à une réorganisation. Cette réorganisation se manifeste avec l'intégralité des nœuds qui s'accordent de nouveau sur une blockchain unique ;
-  \item Le fork de code : consiste à créer une toute nouvelle cryptomonnaie à partir du code source de Bitcoin, en lançant une nouvelle blockchain depuis le bloc de Genèse ;
-  \item Le hard fork : représente une modification du protocole Bitcoin, incompatible avec les versions antérieures, en retirant des règles ou en allégeant celles existantes. Cela résulte en la création de deux chaînes distinctes et incompatibles si tous les nœuds ne sont pas mis à jour. Le réseau se scinde alors en deux : ceux qui adoptent les nouvelles règles et ceux qui conservent les anciennes ;
-  \item Le soft fork : implique des modifications rétrocompatibles qui ajoutent des règles ou rendent plus restrictives celles existantes, sans provoquer de division du réseau. Les nœuds qui n'adoptent pas les nouvelles règles peuvent continuer à suivre la même chaîne que les autres, à condition que la majorité de la puissance de calcul du réseau soutienne la chaîne mise à jour.
-\end{itemize}
+<ul>
+<li>L'embranchement naturel : se produit lorsqu'il y a une concurrence temporaire entre deux blocs découverts en même temps à une même hauteur. Cet embranchement peut s'étendre sur plusieurs blocs. Ce type de fork se résout naturellement quand une des chaînes devient plus longue que l'autre (avec plus de travail accumulé), menant à une réorganisation. Cette réorganisation se manifeste avec l'intégralité des nœuds qui s'accordent de nouveau sur une blockchain unique ;</li>
+<li>Le fork de code : consiste à créer une toute nouvelle cryptomonnaie à partir du code source de Bitcoin, en lançant une nouvelle blockchain depuis le bloc de Genèse ;</li>
+<li>Le hard fork : représente une modification du protocole Bitcoin, incompatible avec les versions antérieures, en retirant des règles ou en allégeant celles existantes. Cela résulte en la création de deux chaînes distinctes et incompatibles si tous les nœuds ne sont pas mis à jour. Le réseau se scinde alors en deux : ceux qui adoptent les nouvelles règles et ceux qui conservent les anciennes ;</li>
+<li>Le soft fork : implique des modifications rétrocompatibles qui ajoutent des règles ou rendent plus restrictives celles existantes, sans provoquer de division du réseau. Les nœuds qui n'adoptent pas les nouvelles règles peuvent continuer à suivre la même chaîne que les autres, à condition que la majorité de la puissance de calcul du réseau soutienne la chaîne mise à jour.</li>
+</ul>
 
 > ► *Pour plus d'informations, voir la définition de [**HARD FORK**](#hard-fork) et [**SOFT FORK**](#soft-fork).*
 
@@ -3213,9 +2308,9 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 
 Les frais de transaction représentent une somme qui vise à rémunérer les mineurs pour leur participation au mécanisme de la preuve de travail. Ces frais incitent les mineurs à inclure les transactions dans les blocs qu'ils créent. Ils sont le résultat de la différence entre le montant total des inputs et le montant total des outputs d’une transaction :
 
-\begin{codeblock}
+```text
 frais = inputs - outputs
-\end{codeblock}
+```
 
 Ils sont exprimés en `sats/vBytes`, ce qui veut dire que les frais ne dépendent pas du montant des bitcoins envoyés, mais du poids de la transaction. Ils sont choisis librement par l'émetteur d’une transaction et déterminent sa vitesse d’inclusion dans un bloc par un mécanisme d'enchère. Par exemple, imaginons que je réalise une transaction avec un input de `100 000 sats`, un output de `40 000 sats` et un output de `58 500 sats`. Le total des outputs est de `98 500 sats`. Les frais alloués à cette transaction sont de `1 500 sats`. Le mineur qui inclut ma transaction pourra créer `1 500 sats` dans sa transaction coinbase en contrepartie des `1 500 sats` que je n'ai pas récupérés dans mes outputs. 
 
@@ -3223,9 +2318,9 @@ Les transactions avec des frais plus élevés, en fonction de leur taille, sont 
 
 Au niveau protocolaire, rien n'empêche les utilisateurs d’inclure des transactions sans aucuns frais dans un bloc. En réalité, ce type de transaction sans frais fait exception. Par défaut, les nœuds Bitcoin ne relaient pas les transactions disposant de frais inférieurs à `1 sat/vBytes`. Si certaines transactions sans frais ont pu passer, c'est parce qu'elles ont été intégrées directement par le mineur gagnant, sans parcourir le réseau de nœuds. Par exemple, la transaction suivante n'inclut aucuns frais :
 
-\begin{codeblock}
+```text
 fd456524104a6674693c29946543f8a0befccce5a352bda55ec8559fc630f5f3
-\end{codeblock}
+```
 
 Dans cet exemple précis, c’était une transaction initiée par le directeur de la pool de minage F2Pool. En tant qu’utilisateur normal, la limite inférieure est donc actuellement de `1 sat/vBytes`.
 
@@ -3234,16 +2329,6 @@ Il convient également de tenir compte les limites de purge. En période de fort
 > ► *En anglais, on parle de « transaction fees ».*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{G}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{G}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## GAP LIMIT
 
 Paramètre utilisé dans les logiciels de portefeuille Bitcoin pour déterminer le nombre maximal d'adresses consécutives non utilisées à générer avant de cesser la recherche de transactions supplémentaires. L'ajustement de ce paramètre est souvent nécessaire lors de la récupération d'un portefeuille pour garantir que toutes les transactions soient bien trouvées. Un Gap Limit insuffisant pourrait entraîner l'oubli de certaines transactions si des adresses étaient ignorées lors des phases de dérivation. Augmenter le Gap Limit permet au portefeuille de rechercher plus loin dans la séquence d'adresses, afin de récupérer toutes les transactions associées. 
@@ -3256,15 +2341,15 @@ Si, par exemple, le Gap Limit est fixé à `20`, et que l'adresse `m/84'/0'/0'/0
 
 Le bloc de Genèse (en anglais « *Genesis block* ») est le premier bloc du système Bitcoin. Il incarne le lancement concret de Bitcoin. Le bloc de Genèse a été créé par le fondateur anonyme de Bitcoin, Satoshi Nakamoto, le 3 janvier 2009. Son hachage est :
 
-\begin{codeblock}
+```text
 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
-\end{codeblock}
+```
 
 Ce bloc contient seulement une transaction coinbase qui génère 50 bitcoins en récompense pour le mineur (dans ce cas, Satoshi Nakamoto lui-même). Ce bloc inclut un message incorporé dans la transaction coinbase :
 
-\begin{codeblock}
+```text
 The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
-\end{codeblock}
+```
 
 Cette citation est une référence à un article du journal *The Times*. Le message est interprété comme une critique du système financier traditionnel et de ses dérives, ce qui a en partie motivé la création de Bitcoin en tant qu'alternative monétaire.
 
@@ -3353,16 +2438,6 @@ Acronyme de « *Graphical User Interface* », ou « interface graphique utili
 Fichier dans Bitcoin Core utilisé pour stocker une sauvegarde des paramètres de l'interface graphique (GUI). Cette sauvegarde est créée lors de l'utilisation de l'option `-resetguisettings`, qui réinitialise les paramètres de la GUI à leurs valeurs par défaut. Ce fichier permet à l'utilisateur de restaurer ses configurations précédentes si nécessaire.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{H}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{H}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## HACHEUR
 
 Dans le contexte des pools de minage, les participants sont souvent désignés sous le terme de « hacheurs ». Ces mineurs individuels ont pour tâche principale de hacher des blocs templates fournis par le serveur de la pool, en recherchant des hachages qui satisfont la cible de difficulté définie pour les shares, et non celle de Bitcoin. Le reste du processus de minage, qui inclut la construction effective des blocs, la sélection des transactions ou la recherche de la preuve de travail selon la difficulté propre à Bitcoin, est effectué directement par les pools.
@@ -3374,12 +2449,12 @@ Dans le contexte des pools de minage, les participants sont souvent désignés s
 Le terme « halving » (division par deux) fait référence à un événement programmé qui réduit de moitié la récompense attribuée aux mineurs pour chaque bloc miné via la subvention de bloc. Cette réduction s'applique spécifiquement à la partie de la subvention de bloc constituée de nouveaux bitcoins créés ex-nihilo. Le halving a été conçu par Satoshi Nakamoto, le créateur de Bitcoin, comme un mécanisme permettant de contrôler l'inflation et d'assurer un approvisionnement limité en bitcoins.
 
 La récompense de bloc initiale était de 50 bitcoins, et le halving se produit tous les 210 000 blocs minés, ce qui prend environ quatre ans. Les halvings ont eu lieu :
-\begin{itemize}
-  \item Au bloc 210 000 le 28 novembre 2012 pour réduire la subvention à 25 BTC ;
-  \item Au bloc 420 000 le 9 juillet 2016 pour réduire la subvention à 12,5 BTC ;
-  \item Au bloc 630 000 le 11 mai 2020 pour réduire la subvention à 6,25 BTC ;
-  \item Au bloc 840 000 le 20 avril 2024 pour réduire la subvention à 3,125 BTC.
-\end{itemize}
+<ul>
+<li>Au bloc 210 000 le 28 novembre 2012 pour réduire la subvention à 25 BTC ;</li>
+<li>Au bloc 420 000 le 9 juillet 2016 pour réduire la subvention à 12,5 BTC ;</li>
+<li>Au bloc 630 000 le 11 mai 2020 pour réduire la subvention à 6,25 BTC ;</li>
+<li>Au bloc 840 000 le 20 avril 2024 pour réduire la subvention à 3,125 BTC.</li>
+</ul>
 
 Les halvings continueront à se produire jusqu'à ce que la récompense de bloc atteigne zéro, moment auquel l'offre maximale d'environ 21 millions de bitcoins aura été atteinte. Le prochain halving de Bitcoin devrait avoir lieu aux alentours du printemps 2028, bien que la date exacte puisse légèrement varier en fonction du temps de minage des blocs. À ce moment-là, la récompense de bloc sera réduite de 3,125 à 1,5625 bitcoins. Ce sera le cinquième halving de l'histoire de Bitcoin. À mesure que les subventions de bloc baissent, les frais de transaction deviennent une source de revenus de plus en plus importante pour les mineurs, ce qui garantit leur motivation à continuer à participer à la preuve de travail.
 
@@ -3412,11 +2487,11 @@ $$\text{HASH256}(x) = \text{SHA256}(\text{SHA256}(x))$$
 Système de preuve de travail conçu par Adam Back en 1997 pour lutter contre le spam et les attaques DoS. Il repose sur le principe qu'un expéditeur doit effectuer un travail de calcul (spécifiquement, la recherche d'une collision partielle sur une fonction de hachage cryptographique) pour prouver son travail. Cette tâche est coûteuse en temps et en énergie pour l'expéditeur, mais la vérification du résultat par le destinataire est rapide et simple. Ce protocole s'est révélé particulièrement adapté à la lutte contre le spam dans les messageries électroniques, car il est peu contraignant pour les utilisateurs légitimes, tout en constituant un obstacle majeur pour les spammeurs. En effet, l'envoi d'un seul courriel requiert quelques secondes de calcul, mais reproduire cette opération des millions de fois rend l'opération extrêmement coûteuse en termes d'énergie et de temps, ce qui vient souvent annuler l'intérêt économique des campagnes de spam, qu'elles soient à but marketing ou malveillant. De plus, il permet de préserver l'anonymat de l'expéditeur. 
 
 HashCash a rapidement été adopté par des cypherpunks qui cherchaient à développer un système de monnaie électronique anonyme sans intermédiaire. En effet, l'innovation d'Adam Back a introduit pour la première fois la notion de rareté dans le monde numérique. On retrouve alors le concept de preuve de travail dans plusieurs systèmes de monnaies électroniques antérieurs à Bitcoin, dont :
-\begin{itemize}
-  \item b-money de Wei Dai publié en 1998 ;
-  \item R-POW de Hal Finney publié en 2004 ;
-  \item BitGold de Nick Szabo publié en 2005.
-\end{itemize}
+<ul>
+<li>b-money de Wei Dai publié en 1998 ;</li>
+<li>R-POW de Hal Finney publié en 2004 ;</li>
+<li>BitGold de Nick Szabo publié en 2005.</li>
+</ul>
 
 Le principe de HashCash se retrouve également au sein du protocole Bitcoin, où il est utilisé comme mécanisme de protection face aux attaques Sybil.
 
@@ -3480,9 +2555,9 @@ Dans le cas spécifique de Bitcoin, les horodatages permettent d'établir la chr
 
 Le HRP, pour « *Human Readable Part* » (partie lisible par l'homme), est un composant des adresses de réception bech32 et bech32m (SegWit v0 et SegWit v1). Le HRP fait référence à la portion de l'adresse qui est spécifiquement formatée pour être facilement lue et interprétée par les humains. Prenons l'exemple d'une adresse Bitcoin bech32 :
 
-\begin{codeblock}
+```text
 bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwfqx5
-\end{codeblock}
+```
 
 Dans cette adresse, le `bc` initial représente le HRP. Ce préfixe permet d'identifier en un coup d'œil que cette suite de caractères que l'on nous présente est une adresse Bitcoin et pas autre chose.
 
@@ -3491,16 +2566,6 @@ Dans cette adresse, le `bc` initial représente le HRP. Ce préfixe permet d'ide
 Sigle de « *Hardware Wallet Interface* ». C'est une interface standardisée permettant l'intégration et l'interaction entre des logiciels de gestion de portefeuilles Bitcoin et des portefeuilles matériels (hardware wallets). Plus précisément, HWI est à la fois une bibliothèque en Python et un outil en ligne de commande. Il facilite la communication entre ces composants en utilisant des PSBTs (transactions Bitcoin partiellement signées) et éventuellement des Descriptors (output script descriptors). Cette interface a d'abord été développée pour Bitcoin Core, puis, elle est devenue un standard utilisé par la plupart des logiciels de portefeuilles.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{I}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{I}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## I2P
 
 Réseau de communication anonyme conçu pour assurer la confidentialité des échanges sur Internet. Comme TOR, I2P chiffre les données du réseau et utilise un système de routage appelé « mix network ». Cette méthode garantit l'anonymat des communications en les faisant passer par des serveurs intermédiaires qui redirigent les informations sans connaître l'identité de l'émetteur ni celle du destinataire. Tout comme TOR, I2P peut être utilisé sur un nœud Bitcoin, afin de sécuriser ses communications réseau.
@@ -3545,12 +2610,12 @@ D'un point de vue plus large, en informatique, le terme « input » ou « ent
 
 Dans le cadre de la théorie des Ordinals, les inscriptions sont des contenus arbitraires gravés sur des sats, transformant ces derniers en artefacts numériques natifs de Bitcoin. Les inscriptions sont effectuées via des transactions qui exposent le contenu de l'information dans le script d'un input Taproot de cette manière :
 
-\begin{codeblock}
+```text
 OP_0
 OP_IF
 <la data ici>
 OP_ENDIF
-\end{codeblock}
+```
 
 Ces artefacts numériques, comme des NFTs, peuvent être échangés et conservés.
 
@@ -3569,16 +2634,6 @@ Fichier utilisé dans Bitcoin Core pour stocker l'ASMAP qui permet d'améliorer 
 Dans le cadre de Github et d'autres plateformes d'hébergement de code, une issue est un rapport qui signale un bug, propose une amélioration ou suggère une nouvelle fonctionnalité. Elle sert de point de discussion pour les contributeurs et permet de suivre les tâches à accomplir ou les problèmes à résoudre dans le projet. En tant qu'utilisateur de Bitcoin, vous pouvez aider les logiciels open source que vous utilisez en signalant d'éventuels bugs via des issues sur le dépôt du projet.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{J}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{J}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## JAM
 
 JAM est une interface web pour JoinMarket axée sur la facilité d'utilisation. JoinMarket est une implémentation de coinjoin chaumien, mais son utilisation en ligne de commandes peut effrayer les utilisateurs débutants. JAM a justement été créé pour rendre les fonctionnalités avancées de JoinMarket accessibles aux débutants.
@@ -3601,16 +2656,6 @@ Implémentation de coinjoin chaumien créée en 2015 par Adam Gibson et Chris Be
 
 
 
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{K}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{K}
-\end{center}
-\vspace*{\fill}
-\newpage
-
 ## KNAPSACK SOLVER
 
 Ancienne méthode utilisée pour la sélection de pièces dans le portefeuille de Bitcoin Core avant la version 0.17. Le Knapsack Solver tente de résoudre le problème de sélection de pièces en choisissant de manière itérative et aléatoire des UTXOs, et en les additionnant par sous-ensembles, dans l'objectif de minimiser les frais et la taille de la transaction. Cette méthode a depuis été remplacée par le *Branch-and-Bound*.
@@ -3620,23 +2665,13 @@ Ancienne méthode utilisée pour la sélection de pièces dans le portefeuille d
 ## KYC (KNOW YOUR CUSTOMER)
 
 Procédure réglementaire utilisée par certaines entreprises opérant sur Bitcoin pour vérifier l'identité de leurs clients dans le cadre de la lutte contre le blanchiment d'argent et le financement du terrorisme. Le KYC implique la collecte et la vérification de données personnelles. Dans le cadre de l'achat de bitcoins, le KYC engendre plusieurs risques pour l'utilisateur, notamment :
-\begin{itemize}
-  \item Le risque de fuite de données personnelles en lien avec une activité sur Bitcoin. Le stockage d'informations sur les serveurs d'entreprises peut entraîner des fuites, exposant les données des utilisateurs à des tentatives d'hameçonnage, des attaques physiques ou une usurpation d'identité, notamment en raison de leur association avec l'environnement de Bitcoin ;
-  \item L'exposition à la surveillance étatique. L'achat de BTC via des acteurs régulés peut révéler à l'État que l'utilisateur a possédé du bitcoin à un moment donné, ce qui pourrait avoir des conséquences futures en cas de bouleversement politiques ou économiques ;
-  \item La facilitation du traçage on-chain. La réalisation d'un KYC crée un lien direct entre l'identité de l'utilisateur et ses transactions sur la blockchain, permettant d'établir un point d'entrée pour une analyse de chaîne.
-\end{itemize}
+<ul>
+<li>Le risque de fuite de données personnelles en lien avec une activité sur Bitcoin. Le stockage d'informations sur les serveurs d'entreprises peut entraîner des fuites, exposant les données des utilisateurs à des tentatives d'hameçonnage, des attaques physiques ou une usurpation d'identité, notamment en raison de leur association avec l'environnement de Bitcoin ;</li>
+<li>L'exposition à la surveillance étatique. L'achat de BTC via des acteurs régulés peut révéler à l'État que l'utilisateur a possédé du bitcoin à un moment donné, ce qui pourrait avoir des conséquences futures en cas de bouleversement politiques ou économiques ;</li>
+<li>La facilitation du traçage on-chain. La réalisation d'un KYC crée un lien direct entre l'identité de l'utilisateur et ses transactions sur la blockchain, permettant d'établir un point d'entrée pour une analyse de chaîne.</li>
+</ul>
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{L}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{L}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## LABEL
 
 Étiquette ou annotation attribuée à un UTXO dans un portefeuille Bitcoin pour se souvenir de sa provenance. Par exemple, si je possède un UTXO provenant d'un achat P2P sur Bisq avec Charles, je pourrais lui attribuer le label `Non-KYC Bisq Charles`. C'est une bonne pratique qui aide à se rappeler l'origine ou la destination prévue de cet UTXO, ce qui facilite la gestion des fonds et l'optimisation de la confidentialité. Le labelling est d'autant plus important lorsqu'il est utilisé avec le coin control. En effet, en permettant aux utilisateurs de différencier et de sélectionner précisément les UTXOs pour leurs transactions, cette pratique aide à éviter la fusion d'UTXOs provenant de sources différentes. Cela limite les risques associés à l'heuristique d'analyse de chaîne CIOH (*Common Input Ownership Heuristic*), qui peut révéler la propriété commune des entrées d'une transaction.
@@ -3727,31 +2762,21 @@ Indicateur utilisé dans les pools de minage pour mesurer la performance d'une p
 
 En mettant en rapport la difficulté sur Bitcoin avec son nombre de shares produites chaque seconde et la difficulté de chaque shares, la pool peut calculer le nombre de shares qui sont théoriquement nécessaires pour trouver un bloc valide. Par exemple, supposons que théoriquement, il faut 100 000 shares pour qu'une pool trouve un bloc. Si la pool en réalité en produit 200 000 avant de trouver un bloc, sa luck est de 50 % :
 
-\begin{codeblock}
+```text
 100 000 / 200 000 = 0.5 = 50 %
-\end{codeblock}
+```
 
 À l'inverse, si cette pool a trouvé un bloc valide après avoir seulement produit 50 000 shares, alors sa luck est de 200 % :
 
-\begin{codeblock}
+```text
 100 000 / 50 000 = 2 = 200 %
-\end{codeblock}
+```
 
 La luck est un indicateur qui ne peut être actualisé qu'après la découverte d'un bloc par la pool, ce qui en fait un indicateur statique mis à jour périodiquement.
 
 > ► *Pour plus d'informations, voir la définition de **[SHARES](#shares)**.*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{M}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{M}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## MACAROON
 
 Mécanisme d'authentification conçu pour sécuriser l'accès à des services sur des systèmes distribués. Les macaroons sont notamment utilisés sur Lightning pour authentifier les utilisateurs lorsqu'ils accèdent à des services délégués. Par exemple, avec un nœud Lightning, il est possible de générer un macaroon qui autorise la réalisation de transactions à partir de votre smartphone via votre nœud distant. À la différence des cookies, les macaroons offrent l'avantage de pouvoir être validés cryptographiquement par l'émetteur ou d'être délégués pour vérification.
@@ -3765,29 +2790,29 @@ Ancien nom de la collection d'outils et de bibliothèques pour développeurs BDK
 ## MAGIC NETWORK
 
 Constantes utilisées dans le protocole Bitcoin pour identifier le réseau spécifique (mainnet, testnet, regtest...) d'un message échangé entre des nœuds. Ces valeurs sont inscrites au début de chaque message pour faciliter leur identification dans le flux de données. Les Magic Network sont conçus pour être rarement présents dans des données de communication ordinaires. En effet, ces 4 octets sont peu fréquents dans l'ASCII, sont invalides en UTF-8 et génèrent un très grand entier de 32 bits, peu importe le format de stockage des données. Les Magic Network sont (en format little-endian) :
-\begin{itemize}
-  \item Mainnet :
-\end{itemize}
+<ul>
+<li>Mainnet :</li>
+</ul>
 
-\begin{codeblock}
+```text
 f9beb4d9
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item Testnet :
-\end{itemize}
+<ul>
+<li>Testnet :</li>
+</ul>
 
-\begin{codeblock}
+```text
 0b110907
-\end{codeblock}
+```
 
-\begin{itemize}
-  \item Regtest :
-\end{itemize}
+<ul>
+<li>Regtest :</li>
+</ul>
 
-\begin{codeblock}
+```text
 fabfb5da
-\end{codeblock}
+```
 
 > ► *C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
 
@@ -3878,10 +2903,10 @@ Dans le domaine général de l'informatique, cela désigne les données qui four
 ## MÉTHODE D'ACTIVATION
 
 Une méthode d'activation est le processus par lequel la communauté d'utilisateurs décide de l'implémentation d'un soft fork sur le protocole Bitcoin, en cherchant à éviter une séparation de la blockchain. Ce processus consiste à solliciter l'opinion des mineurs pour approuver un soft fork avant son activation. Si une majorité importante accepte le soft fork, le risque de scission de la blockchain est minimisé. Ce consensus est crucial car si une majorité de mineurs refusent de faire la modification, le soft fork pourrait créer deux chaînes distinctes : une avec les règles modifiées et l'autre sans. Il existe 2 grandes catégories de méthodes d'activation : 
-\begin{itemize}
-  \item Les UASF (User-Activated Soft Fork) lorsque ce sont les nœuds qui imposent la mise à jour ;
-  \item Les MASF (Miner-Activated Soft Fork) lorsque ce sont les mineurs qui déclenchent l'activation.
-\end{itemize}
+<ul>
+<li>Les UASF (User-Activated Soft Fork) lorsque ce sont les nœuds qui imposent la mise à jour ;</li>
+<li>Les MASF (Miner-Activated Soft Fork) lorsque ce sont les mineurs qui déclenchent l'activation.</li>
+</ul>
 
 Il existe de nombreuses méthodes d'activation différentes qui ont été testées au fur et à mesure de l'évolution de Bitcoin. À l'époque de Satoshi, le processus d'activation n'était pas formellement établi. Les modifications étaient souvent arbitraires et parfois même réalisées sans informer la communauté. Plus tard, la méthode du *Flag Day* a été adoptée. Après le retrait de Satoshi, d'autres méthodes ont été successivement utilisées, notamment le BIP34, le BIP9, le BIP8, et enfin, le *Speedy Trial*.
 
@@ -3936,12 +2961,12 @@ Framework permettant de fournir un cadre pour programmer des scripts de manière
 ![](../../dictionnaire/assets/30.png)
 
 Miniscript permet ainsi aux développeurs de construire des scripts sophistiqués d'une manière plus sûre et plus fiable. Les propriétés essentielles de Miniscript sont les suivantes : 
-\begin{itemize}
-  \item Il permet une analyse statique du script, notamment des conditions de dépenses qu'il permet et de son coût en termes de ressources ;
-  \item Il permet de réaliser des scripts qui respectent le consensus ;
-  \item Il permet d'analyser si oui ou non, les différents chemins de dépense respectent les règles standards des nœuds ;
-  \item Il permet de mettre en place un standard général, compréhensible et composable, pour l'ensemble des logiciels et matériels de portefeuille.
-\end{itemize}
+<ul>
+<li>Il permet une analyse statique du script, notamment des conditions de dépenses qu'il permet et de son coût en termes de ressources ;</li>
+<li>Il permet de réaliser des scripts qui respectent le consensus ;</li>
+<li>Il permet d'analyser si oui ou non, les différents chemins de dépense respectent les règles standards des nœuds ;</li>
+<li>Il permet de mettre en place un standard général, compréhensible et composable, pour l'ensemble des logiciels et matériels de portefeuille.</li>
+</ul>
 
 Le projet Miniscript a été lancé en 2018 par Peter Wuille, Andrew Poelstra et Sanket Kanjalkar, via l'entreprise Blockstream. Miniscript est ajouté au wallet Bitcoin Core en mode watch-only en décembre 2022 avec la version 24.0, puis complètement en mai 2023 avec la version 25.0.
 
@@ -3997,16 +3022,6 @@ Les portefeuilles multisignatures, souvent abrégés « multisig », sont con�
 
 
 
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{N}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{N}
-\end{center}
-\vspace*{\fill}
-\newpage
-
 ## NAKAMOTO SATOSHI
 
 Pseudonyme de la personne ou du groupe qui a créé Bitcoin et écrit son livre blanc original en 2008 (White Paper). Nakamoto, qui a communiqué uniquement en ligne, a finalement disparu de la scène publique en 2011.
@@ -4021,17 +3036,17 @@ Standard de scripts utilisé pour envelopper des scripts SegWit natifs, au sein 
 
 Estimation du temps universel établie sur les horloges des nœuds du réseau. Chaque nœud calcule son NAT en prenant la médiane des différences de temps entre son horloge locale (UTC) et celles des nœuds avec lesquels il est connecté, puis en additionnant son horloge locale avec la médiane de ces différences, jusqu'à un maximum de 70 minutes. Le network-adjusted time est donc une médiane du temps des nœuds calculée en local par chaque nœud. Ce référentiel est ensuite utilisé pour vérifier la validité des horodatages des blocs. En effet, pour qu'un bloc soit accepté par un nœud, son horodatage doit se situer entre le MTP (temps médian des 11 derniers blocs minés) et le NAT plus 2 heures :
 
-\begin{codeblock}
+```text
 MTP < Horodatage valide < (NAT + 2h)
-\end{codeblock}
+```
 
 ## NEW YORK AGREEMENT (NYA)
 
 Réunion privée qui s'est tenue en 2017, rassemblant plus de 50 entreprises de l'écosystème Bitcoin, à la suite de la conférence Consensus 2017. L'objectif de cette réunion était de finir le débat de longue date sur le passage à l'échelle de Bitcoin en parvenant à un accord. De cette rencontre est née la proposition SegWit2x, s'inspirant de la précédente proposition SegWit2Mb. Elle prévoyait deux modifications majeures du protocole Bitcoin : 
-\begin{itemize}
-  \item L'adoption de SegWit avec un seuil d'activation fixé à 80 pour cent de signalisations ;
-  \item Un hard fork destiné à augmenter la taille maximale des blocs de 1 Mo à 2 Mo.
-\end{itemize}
+<ul>
+<li>L'adoption de SegWit avec un seuil d'activation fixé à 80 pour cent de signalisations ;</li>
+<li>Un hard fork destiné à augmenter la taille maximale des blocs de 1 Mo à 2 Mo.</li>
+</ul>
 
 Malgré le signalement positif de plus de 80 % des mineurs, le projet n'a pas su rallier un consensus suffisant, aboutissant à son abandon. Cet événement a été interprété par de nombreux utilisateurs et développeurs comme une tentative d'attaque de Bitcoin.
 
@@ -4108,33 +3123,15 @@ Le champ `nVersion` dans une transaction Bitcoin sert à indiquer la version du 
 > ► *Pour plus d'informations, voir la définition de [**NSEQUENCE**](#nsequence).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{O}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{O}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## OBJECTIF
 
 Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif (ou _purpose_ en anglais), défini par le BIP43, représente un niveau de dérivation spécifique. Cet index, situé à la première profondeur de l'arborescence de dérivation (`m / purpose' /`), identifie le standard de dérivation adopté par le portefeuille, afin de faciliter la compatibilité entre différents logiciels de gestion de portefeuille. Par exemple, dans le cas des adresses SegWit (BIP84), l'objectif est noté `/84'/`. Cette méthode permet d'organiser efficacement les clés entre les différents types d'adresses au sein d'un même portefeuille HD. Les index standards utilisés sont :
-\begin{itemize}
-  \item Pour du P2PKH :
-\texttt{44'}
-;
-  \item Pour du P2WPKH-nested-in-P2SH :
-\texttt{49'}
-;
-  \item Pour du P2WPKH :
-\texttt{84'}
-;
-  \item Pour du P2TR :
-\texttt{86'}
-.
-\end{itemize}
+<ul>
+<li>Pour du P2PKH : `44'` ;</li>
+<li>Pour du P2WPKH-nested-in-P2SH : `49'` ;</li>
+<li>Pour du P2WPKH : `84'` ;</li>
+<li>Pour du P2TR : `86'`.</li>
+</ul>
 
 ![](../../dictionnaire/assets/20.png)
 
@@ -4149,33 +3146,15 @@ Erreur de logique où une boucle itère une fois de trop ou de moins, souvent du
 ## OBSOLÈTE (BLOC)
 
 Fait référence à un bloc sans enfant : un bloc valide, mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de travail accumulé, rendant l'autre « obsolète ». Le processus menant à la production d'un bloc obsolète est le suivant :
-\begin{itemize}
-  \item Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons-les
-\texttt{Bloc A}
-et
-\texttt{Bloc B}
-;
-  \item Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;
-  \item Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le
-\texttt{Bloc A}
-et le
-\texttt{Bloc B}
-au-dessus duquel ils vont miner ;
-  \item Un mineur trouve finalement un bloc valide au-dessus du
-\texttt{Bloc B}
-. Appelons le
-\texttt{Bloc B+1}
-;
-  \item Il diffuse
-\texttt{Bloc B+1}
-aux nœuds du réseau ;
-  \item Puisque les nœuds suivent la chaîne la plus longue (avec le plus de travail accumulé), ils vont estimer que la
-\texttt{Chaîne B}
-est celle qu'il faut suivre ;
-  \item Ils vont abandonner le
-\texttt{Bloc A}
-qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
-\end{itemize}
+<ul>
+<li>Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons-les `Bloc A` et `Bloc B` ;</li>
+<li>Chacun diffuse son bloc au réseau de nœuds Bitcoin. Chaque nœud dispose maintenant de 2 blocs à une même hauteur. Il existe donc deux chaînes valides ;</li>
+<li>Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le `Bloc A` et le `Bloc B` au-dessus duquel ils vont miner ;</li>
+<li>Un mineur trouve finalement un bloc valide au-dessus du `Bloc B`. Appelons le `Bloc B+1` ;</li>
+<li>Il diffuse `Bloc B+1` aux nœuds du réseau ;</li>
+<li>Puisque les nœuds suivent la chaîne la plus longue (avec le plus de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;</li>
+<li>Ils vont abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.</li>
+</ul>
 
 ![](../../dictionnaire/assets/9.png)
 
@@ -4233,14 +3212,14 @@ Soustrait `1` à la valeur en haut de la pile.
 
 Les opcodes de `OP_2` jusqu'à `OP_16` poussent les valeurs numériques respectives de 2 à 16 sur la pile. On les utilise pour simplifier les scripts en permettant l'insertion de petites valeurs numériques. Ce type d'opcode est notamment utilisé dans les scripts multisignatures. Voici un exemple de `scriptPubKey` pour un multisig 2/3 : 
 
-\begin{codeblock}
+```text
 OP_2
 <Clé publique A>
 <Clé publique B>
 <Clé publique C>
 OP_3
 OP_CHECKMULTISIG
-\end{codeblock}
+```
 
 > ► *Tous ces opcodes sont parfois également nommés OP_PUSHNUM_N.*
 
@@ -4252,104 +3231,104 @@ Supprime les deux éléments en haut de la pile. Autrement dit, `OP_2DROP` suppr
 
 Duplique les deux éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est :
 
-\begin{codeblock}
+```text
 A
 B
 C
 D
-\end{codeblock}
+```
 
 `OP_2DUP` produira : 
 
-\begin{codeblock}
+```text
 A
 B
 A
 B
 C
 D
-\end{codeblock}
+```
 
 ## OP_2OVER (0X70)
 
 Copie les deux éléments qui se trouvent à la quatrième et à la troisième place en partant du haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est :
 
-\begin{codeblock}
+```text
 A
 B
 C
 D
-\end{codeblock}
+```
 
 `OP_2OVER` produira :
 
-\begin{codeblock}
+```text
 C
 D
 A
 B
 C
 D
-\end{codeblock}
+```
 
 ## OP_2ROT (0X71)
 
 Déplace les deux éléments qui se trouvent à la sixième et à la cinquième place du sommet de la pile vers le sommet. Par exemple, si la pile est :
 
-\begin{codeblock}
+```text
 A
 B
 C
 D
 E
 F
-\end{codeblock}
+```
 
 `OP_2ROT` produira :
 
-\begin{codeblock}
+```text
 E
 F
 A
 B
 C
 D
-\end{codeblock}
+```
 
 ## OP_2SWAP (0X72)
 
 Échange les deux éléments situés au sommet de la pile avec les deux éléments situés juste en dessous d'eux. Par exemple, si la pile est :
 
-\begin{codeblock}
+```text
 A
 B
 C
 D
-\end{codeblock}
+```
 
 `OP_2SWAP` produira :
 
-\begin{codeblock}
+```text
 C
 D
 A
 B
-\end{codeblock}
+```
 
 ## OP_3DUP (0X6F)
 
 Duplique les trois éléments en haut de la pile, puis les place en haut de la pile. Par exemple, si la pile est :
 
-\begin{codeblock}
+```text
 A
 B
 C
 D
-\end{codeblock}
+```
 
 `OP_3DUP` produira :
 
-\begin{codeblock}
+```text
 A
 B
 C
@@ -4357,7 +3336,7 @@ A
 B
 C
 D
-\end{codeblock}
+```
 
 ## OP_ABS (0X90)
 
@@ -4378,12 +3357,12 @@ Reproduit le comportement d'une porte logique `OR`. Il prend deux valeurs au som
 ## OP_CAT (0X7E)
 
 Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de les mettre bout-à-bout). Cet opcode a été désactivé, il est donc actuellement impossible de l'utiliser. Toutefois, il est récemment revenu sur le devant de la scène. Certains souhaiteraient pouvoir l'ajouter à Tapscript afin de permettre la combinaison d'objets sur la pile, et ainsi améliorer l'expressivité de ce langage. Ce simple outil supplémentaire pourrait permettre :
-\begin{itemize}
-  \item L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;
-  \item La mise en place de Vaults ;
-  \item L'utilisation de covenants ;
-  \item Ou encore, l'utilisation de contrats de non équivocation.
-\end{itemize}
+<ul>
+<li>L'utilisation des signatures de Lamport qui sont à priori résistantes aux attaques quantiques ;</li>
+<li>La mise en place de Vaults ;</li>
+<li>L'utilisation de covenants ;</li>
+<li>Ou encore, l'utilisation de contrats de non équivocation.</li>
+</ul>
 
 ## OP_CHECKHASHVERIFY (CHV)
 
@@ -4392,23 +3371,13 @@ Nouvel opcode proposé en 2012 dans le BIP17 par Luke Dashjr qui permet de dispo
 ## OP_CHECKLOCKTIMEVERIFY (0XB1)
 
 Rend la transaction invalide sauf si toutes ces conditions sont réunies :
-\begin{itemize}
-  \item La pile n'est pas vide ;
-  \item La valeur du haut de la pile est supérieure ou égale à
-\texttt{0}
-;
-  \item Le type de timelock est le même entre le champ
-\texttt{nLockTime}
-et la valeur du haut de la pile (temps réel ou numéro de bloc) ;
-  \item Le champ
-\texttt{nSequence}
-de l'input n'est pas égal à
-\texttt{0xffffffff}
-;
-  \item La valeur du haut de la pile est supérieure ou égale à la valeur du champ
-\texttt{nLockTime}
-de la transaction.
-\end{itemize}
+<ul>
+<li>La pile n'est pas vide ;</li>
+<li>La valeur du haut de la pile est supérieure ou égale à `0` ;</li>
+<li>Le type de timelock est le même entre le champ `nLockTime` et la valeur du haut de la pile (temps réel ou numéro de bloc) ;</li>
+<li>Le champ `nSequence` de l'input n'est pas égal à `0xffffffff` ;</li>
+<li>La valeur du haut de la pile est supérieure ou égale à la valeur du champ `nLockTime` de la transaction.</li>
+</ul>
 
 Si une seule de ces conditions n'est pas remplie, le script contenant l'`OP_CHECKLOCKTIMEVERIFY` ne peut être satisfait. Si toutes ces conditions sont valides, alors `OP_CHECKLOCKTIMEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKLOCKTIMEVERIFY` impose donc une contrainte de temps sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Pour ce faire, il restreint les valeurs possibles pour le champ `nLockTime` de la transaction qui le dépense, et ce champ `nLockTime` restreint lui-même le moment où la transaction peut être incluse dans un bloc.
 
@@ -4425,21 +3394,11 @@ Combine un `OP_CHECKMULTISIG` et un `OP_VERIFY`. Il prend plusieurs signatures e
 ## OP_CHECKSEQUENCEVERIFY (0XB2)
 
 Rend la transaction invalide si une seule de ces caractéristiques est observée :
-\begin{itemize}
-  \item La pile est vide ;
-  \item La valeur du haut de la pile est inférieure à
-\texttt{0}
-;
-  \item L'indicateur de désactivation de la valeur en haut de la pile est non défini et ; La version de la transaction est inférieure à
-\texttt{2}
-ou ; L'indicateur de désactivation du champ
-\texttt{nSequence}
-de l'input est défini ou ; Le type de timelock n'est pas le même entre le champ
-\texttt{nSequence}
-et la valeur du haut de la pile (temps réel ou nombre de blocs) ou ; La valeur en haut de la pile est supérieure à la valeur du champ
-\texttt{nSequence}
-de l'input.
-\end{itemize}
+<ul>
+<li>La pile est vide ;</li>
+<li>La valeur du haut de la pile est inférieure à `0` ;</li>
+<li>L'indicateur de désactivation de la valeur en haut de la pile est non défini et ; La version de la transaction est inférieure à `2` ou ; L'indicateur de désactivation du champ `nSequence` de l'input est défini ou ; Le type de timelock n'est pas le même entre le champ `nSequence` et la valeur du haut de la pile (temps réel ou nombre de blocs) ou ; La valeur en haut de la pile est supérieure à la valeur du champ `nSequence` de l'input.</li>
+</ul>
 
 Si une ou plusieurs de ces caractéristiques est observée, le script contenant l'`OP_CHECKSEQUENCEVERIFY` ne peut être satisfait. Si toutes les conditions sont valides, alors `OP_CHECKSEQUENCEVERIFY` agit comme un `OP_NOP`, c'est-à-dire qu'il ne fait aucune action sur le script. C'est un peu comme s'il disparaissait. `OP_CHECKSEQUENCEVERIFY` impose donc une contrainte de temps relative sur la dépense de l'UTXO sécurisé avec le script le contenant. Il peut le faire soit sous la forme d'un temps réel, soit sous la forme d'un nombre de blocs. Pour ce faire, il restreint les valeurs possibles pour le champ `nSequence` de l'input qui le dépense, et ce champ `nSequence` restreint lui-même le moment où la transaction qui comprend cet input peut être incluse dans un bloc.
 
@@ -4452,18 +3411,10 @@ Vérifie la validité d'une signature par rapport à une clé publique donnée. 
 ## OP_CHECKSIGADD (0XBA)
 
 Extrait les trois valeurs en haut de la pile : une `clé publique`, un `CScriptNum` `n` et une `signature`. Si la signature n'est pas le vecteur vide et n'est pas valide, le script se termine avec une erreur. Si la signature est valide où est le vecteur vide (`OP_0`), deux cas de figure se présentent :
-\begin{itemize}
-  \item Si la signature est le vecteur vide : un
-\texttt{CScriptNum}
-avec la valeur de
-\texttt{n}
-est poussé sur la pile et l'exécution continue ;
-  \item Si la signature n'est pas le vecteur vide et demeure valide : un
-\texttt{CScriptNum}
-avec la valeur de
-\texttt{n + 1}
-est poussé sur la pile et l'exécution continue.
-\end{itemize}
+<ul>
+<li>Si la signature est le vecteur vide : un `CScriptNum` avec la valeur de `n` est poussé sur la pile et l'exécution continue ;</li>
+<li>Si la signature n'est pas le vecteur vide et demeure valide : un `CScriptNum` avec la valeur de `n + 1` est poussé sur la pile et l'exécution continue.</li>
+</ul>
 Pour vulgariser, `OP_CHECKSIGADD` effectue une opération similaire à `OP_CHECKSIG`, mais au lieu de pousser vrai ou faux sur la pile, il ajoute `1` à la deuxième valeur en haut de la pile si la signature est valide, ou laisse cette valeur inchangée si la signature représente le vecteur vide.`OP_CHECKSIGADD` permet de créer les mêmes politiques multisignatures dans Tapscript qu'avec `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` mais de manière vérifiable par lots, c'est-à-dire qu'il supprime le processus de recherche dans la vérification d'un multisig traditionnel et accélère donc la vérification tout en réduisant la charge opérationnelle sur les CPU des nœuds. Cet opcode a été ajouté dans Tapscript uniquement pour les besoins de Taproot.
 
 ## OP_CHECKSIGVERIFY (0XAD)
@@ -4544,14 +3495,14 @@ Prend l'élément en haut de la pile et le remplace par son hachage en utilisant
 
 Exécute la portion suivante du script si la valeur au sommet de la pile est non nulle (vraie). Si la valeur est nulle (fausse), ces opérations sont sautées, passant directement à celles après `OP_ELSE`, s'il est présent. `OP_IF` permet de lancer une structure de contrôle conditionnelle dans un script. Il détermine le flux de contrôle dans un script en fonction d'une condition fournie au moment de l'exécution de la transaction. `OP_IF` s'utilise avec `OP_ELSE` et `OP_ENDIF` de la manière suivante : 
 
-\begin{codeblock}
+```text
 <condition>
 OP_IF
 <opérations si la condition est vraie>
 OP_ELSE
 <opérations si la condition est fausse>
 OP_ENDIF
-\end{codeblock}
+```
 
 ## OP_IFDUP (0X73)
 
@@ -4693,22 +3644,22 @@ Identique à OP_1.
 
 Copie l'élément situé au sommet de la pile et l'insère entre le deuxième élément et le troisième élément de la pile. Par exemple, si la pile est :
 
-\begin{codeblock}
+```text
 A
 B
 C
 D
-\end{codeblock}
+```
 
 `OP_TUCK` va dupliquer le sommet `A` et le placer en troisième position. La pile en sortie sera :
 
-\begin{codeblock}
+```text
 A
 B
 A
 C
 D
-\end{codeblock}
+```
 
 ## OP_VER (0X62)
 
@@ -4784,14 +3735,12 @@ Fonction fondamentale de la logique booléenne. Le « Ou exclusif » ou XOR (�
 </div>
 
 L'opération `XOR` est utilisée dans de nombreux domaines de l'informatique, notamment dans la cryptographie, pour ses attributs intéressants comme : 
-\begin{itemize}
-  \item Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
-  \item Son associativité : le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
-  \item Il dispose d'un élément neutre
-\texttt{0}
-: un opérande xoré à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
-  \item Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
-\end{itemize}
+<ul>
+<li>Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;</li>
+<li>Son associativité : le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;</li>
+<li>Il dispose d'un élément neutre `0` : un opérande xoré à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;</li>
+<li>Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.</li>
+</ul>
 
 Dans le cadre de Bitcoin, on utilise évidemment l'opération `XOR` à de nombreux endroits. Par exemple, le `XOR` est massivement utilisé dans la fonction `SHA256`, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission. 
 
@@ -4806,20 +3755,16 @@ Désigne la quantité maximale de bitcoins qu'un nœud peut envoyer à travers u
 ## OUTPOINT
 
 Référence unique à une sortie de transaction non dépensée (UTXO). Il est constitué de deux éléments :
-\begin{itemize}
-  \item 
-\texttt{txid}
-: l'identifiant de la transaction qui a créé l'output ;
-  \item 
-\texttt{vout}
-: l'index de l'output dans la transaction.
-\end{itemize}
+<ul>
+<li>`txid` : l'identifiant de la transaction qui a créé l'output ;</li>
+<li>`vout` : l'index de l'output dans la transaction.</li>
+</ul>
 
 La combinaison de ces deux éléments permet d'identifier précisément un UTXO. Par exemple, si une transaction a un `txid` de `abc...123` et que l'index de l'output est `0`, l'outpoint sera noté :
 
-\begin{codeblock}
+```text
 abc...123:0
-\end{codeblock}
+```
 
 L'outpoint est utilisé dans les inputs (`vin`) d'une nouvelle transaction pour indiquer quel UTXO est dépensé.
 
@@ -4846,63 +3791,35 @@ Les output script descriptors, ou simplement descriptors, sont des expressions s
 L'intérêt principal des descriptors réside dans leur capacité à encapsuler toutes les informations essentielles à la restauration d'un portefeuille dans une unique chaîne de caractères (en plus de la phrase de récupération). En sauvegardant un descriptor avec les phrases mnémoniques correspondantes, il est possible de restaurer non seulement les clés privées, mais aussi la structure précise du portefeuille et les paramètres de script associés. En effet, la récupération d’un portefeuille requiert non seulement la connaissance de la graine initiale, mais aussi des index spécifiques pour la dérivation des paires de clés enfants, ainsi que des `xpub` de chaque facteur dans le cadre d'un portefeuille multisig. Autrefois, on présumait que ces informations étaient implicitement sues de tous. Cependant, avec la diversification des scripts et l'émergence de configurations plus complexes, ces informations pourraient devenir difficiles à extrapoler, transformant ainsi ces données en informations privées et difficilement bruteforçables. L'utilisation de descriptors simplifie grandement le processus : il suffit de connaître la ou les phrases de récupération et le descriptor correspondant pour tout restaurer de façon fiable et sécurisée.
 
 Un descriptor se compose de plusieurs éléments :
-\begin{itemize}
-  \item Des fonctions de script comme
-\texttt{pk}
-(Pay-to-PubKey),
-\texttt{pkh}
-(Pay-to-PubKey-Hash),
-\texttt{wpkh}
-(Pay-to-Witness-PubKey-Hash),
-\texttt{sh}
-(Pay-to-Script-Hash),
-\texttt{wsh}
-(Pay-to-Witness-Script-Hash),
-\texttt{tr}
-(Pay-to-Taproot),
-\texttt{multi}
-(Multisignature) et
-\texttt{sortedmulti}
-(Multisignature avec clés triées) ;
-  \item Des chemins de dérivation, par exemple
-\texttt{[d34db33f/44h/0h/0h]}
-qui indique un chemin dérivé et une empreinte de clé maîtresse spécifique ;
-  \item Des clés en divers formats tels que des clés publiques en hexadécimal ou des clés publiques étendues (
-\texttt{xpub}
-) ;
-  \item Une somme de contrôle, précédée d'un dièse, pour vérifier l'intégrité du descriptor.
-\end{itemize}
+<ul>
+<li>Des fonctions de script comme `pk` (Pay-to-PubKey), `pkh` (Pay-to-PubKey-Hash), `wpkh` (Pay-to-Witness-PubKey-Hash), `sh` (Pay-to-Script-Hash), `wsh` (Pay-to-Witness-Script-Hash), `tr` (Pay-to-Taproot), `multi` (Multisignature) et `sortedmulti` (Multisignature avec clés triées) ;</li>
+<li>Des chemins de dérivation, par exemple `[d34db33f/44h/0h/0h]` qui indique un chemin dérivé et une empreinte de clé maîtresse spécifique ;</li>
+<li>Des clés en divers formats tels que des clés publiques en hexadécimal ou des clés publiques étendues (`xpub`) ;</li>
+<li>Une somme de contrôle, précédée d'un dièse, pour vérifier l'intégrité du descriptor.</li>
+</ul>
 
 Par exemple, un descriptor pour un portefeuille P2WPKH pourrait ressembler à :
 
-\begin{codeblock}
+```text
 wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17
 C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U/<0;1>/*)#jy0l7n
 r4
-\end{codeblock}
+```
 
 Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script Pay-to-Witness-Public-Key-Hash. Elle est suivie par le chemin de dérivation qui contient :
-\begin{itemize}
-  \item 
-\texttt{cdeab12f}
-: l'empreinte de la clé maîtresse ;
-  \item 
-\texttt{84h}
-: qui signifie l'utilisation d'un objectif BIP84, destiné aux adresses SegWit v0 ;
-  \item 
-\texttt{0h}
-: qui indique qu'il s'agit d'une devise BTC sur le mainnet ;
-  \item 
-\texttt{0h}
-: qui fait référence au numéro de compte spécifique utilisé dans le portefeuille.
-\end{itemize}
+<ul>
+<li>`cdeab12f` : l'empreinte de la clé maîtresse ;</li>
+<li>`84h` : qui signifie l'utilisation d'un objectif BIP84, destiné aux adresses SegWit v0 ;</li>
+<li>`0h` : qui indique qu'il s'agit d'une devise BTC sur le mainnet ;</li>
+<li>`0h` : qui fait référence au numéro de compte spécifique utilisé dans le portefeuille.</li>
+</ul>
 
 Le descriptor inclut également la clé publique étendue utilisée sur ce portefeuille : 
 
-\begin{codeblock}
+```text
 xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6
 cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U
-\end{codeblock}
+```
 
 Ensuite, la notation `/<0;1>/*` spécifie que le descriptor peut générer des adresses à partir de la chaîne externe (`0`) et interne (`1`), avec un wildcard (`*`) permettant la dérivation séquentielle de plusieurs adresses de manière paramétrable, similaire à la gestion d'un « gap limit » sur des logiciels de portefeuille classiques.
 
@@ -4915,16 +3832,6 @@ Version ouverte et transparente d'AsicBoost. AsicBoost est une technique d'optim
 > ► *Pour plus d'informations, voir les définitions de **[ASICBOOST](#asicboost)** et **[COVERT ASICBOOST](#covert-asicboost)**.*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{P}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{P}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## P2MS
 
 P2MS est le sigle pour *Pay to Multisig* (en français « payer aux multiples signatures »). C’est un modèle de script standard utilisé pour établir des conditions de dépense sur un UTXO. Il permet de bloquer des bitcoins à l’aide de plusieurs clés publiques. Pour dépenser ces bitcoins, il faut fournir une signature avec un nombre prédéfini de clés privées associées. Par exemple, un `P2MS 2/3` dispose de `3` clés publiques avec `3` clés privées secrètes associées. Pour dépenser les bitcoins bloqués avec ce script P2MS, il faut réaliser une signature avec au moins `2` parmi les `3` clés privées. C’est un système de sécurisation à seuil (*threshold*).
@@ -5089,16 +3996,12 @@ Dans le contexte de Bitcoin, `PBKDF2` est utilisée en conjonction avec la fonct
 ## PEER DISCOVERY
 
 Processus par lequel les nœuds du réseau Bitcoin se connectent à d'autres nœuds pour obtenir des informations. Lorsqu'un nœud Bitcoin est lancé pour la première fois, il ne possède aucune information sur les autres nœuds du réseau. Pourtant, il doit établir des connexions pour se synchroniser sur la blockchain avec le plus de travail accumulé. Plusieurs mécanismes sont utilisés pour découvrir ces pairs, par ordre de priorité :
-\begin{itemize}
-  \item Le nœud commence par consulter son fichier local
-\texttt{peers.dat}
-, qui stocke des informations sur les nœuds avec lesquels il a précédemment interagi. Si le nœud est nouveau, ce fichier sera vide, et le processus passera à l'étape suivante ;
-  \item En l'absence d'informations dans le fichier
-\texttt{peers.dat}
-(ce qui est normal pour un nœud nouvellement lancé), le nœud effectue des requêtes DNS auprès des DNS seeds. Ces serveurs fournissent une liste d'adresses IP de nœuds à priori actifs pour établir des connexions. Les adresses des DNS seeds sont codées en dur dans le code de Bitcoin Core. Cette étape est généralement suffisante pour compléter la découverte des pairs ;
-  \item Si les DNS seeds ne répondent pas dans les 60 secondes, le nœud peut alors se tourner vers les seed nodes. Ce sont des nœuds Bitcoin publics répertoriés dans une liste statique de près d'un millier d'entrées intégrée directement dans le code source de Bitcoin Core. Le nouveau nœud utilisera cette liste pour établir une première connexion au réseau et obtenir des adresses IP d'autres nœuds ;
-  \item Dans le cas très peu probable où toutes les méthodes précédentes échouent, l'opérateur du nœud a toujours la possibilité d'ajouter manuellement des adresses IP de nœuds pour établir une première connexion.
-\end{itemize}
+<ul>
+<li>Le nœud commence par consulter son fichier local `peers.dat`, qui stocke des informations sur les nœuds avec lesquels il a précédemment interagi. Si le nœud est nouveau, ce fichier sera vide, et le processus passera à l'étape suivante ;</li>
+<li>En l'absence d'informations dans le fichier `peers.dat` (ce qui est normal pour un nœud nouvellement lancé), le nœud effectue des requêtes DNS auprès des DNS seeds. Ces serveurs fournissent une liste d'adresses IP de nœuds à priori actifs pour établir des connexions. Les adresses des DNS seeds sont codées en dur dans le code de Bitcoin Core. Cette étape est généralement suffisante pour compléter la découverte des pairs ;</li>
+<li>Si les DNS seeds ne répondent pas dans les 60 secondes, le nœud peut alors se tourner vers les seed nodes. Ce sont des nœuds Bitcoin publics répertoriés dans une liste statique de près d'un millier d'entrées intégrée directement dans le code source de Bitcoin Core. Le nouveau nœud utilisera cette liste pour établir une première connexion au réseau et obtenir des adresses IP d'autres nœuds ;</li>
+<li>Dans le cas très peu probable où toutes les méthodes précédentes échouent, l'opérateur du nœud a toujours la possibilité d'ajouter manuellement des adresses IP de nœuds pour établir une première connexion.</li>
+</ul>
 
 ## PEERS.DAT
 
@@ -5168,19 +4071,19 @@ Langage de haut niveau orienté utilisateur permettant de spécifier simplement 
 
 Le langage de policies est légèrement différent du langage miniscript. Par exemple, imaginons un système de sécurisation avec en chemin primaire, la clé A, et en chemin de récupération, la clé B, mais sous un timelock d'un an (environ 52 560 blocs). En policy, cela donnerait :
 
-\begin{codeblock}
+```plaintext
 or(pk(A),and(pk(B),older(52560)))
-\end{codeblock}
+```
 
 Une fois compilé en miniscript, cela donnerait : 
 
-\begin{codeblock}
+```plaintext
 andor(pk(B),older(52560),pk(A))
-\end{codeblock}
+```
 
 Et une fois converti en script natif, cela donnerait :
 
-\begin{codeblock}
+```plaintext
 <B>
 OP_CHECKSIG
 OP_NOTIF
@@ -5190,7 +4093,7 @@ OP_ELSE
 <50cd00>
 OP_CHECKSEQUENCEVERIFY
 OP_ENDIF
-\end{codeblock}
+```
 
 > ► *Pour plus d'informations, voir la définition de [**MINISCRIPT**](#miniscript).*
 
@@ -5289,11 +4192,11 @@ Problème formulé pour la première fois par Leslie Lamport, Robert Shostak et 
 Dans cette métaphore, un groupe de généraux byzantins et leurs armées respectives sont campés autour d'une ville qu'ils souhaitent attaquer ou assiéger. Les généraux sont géographiquement séparés les uns des autres et doivent communiquer par messager pour coordonner leur stratégie. Qu'ils attaquent ou qu'ils battent en retraite n'a pas d'importance, du moment que tous les généraux parviennent à un consensus. 
 
 Par conséquent, nous pouvons considérer les exigences suivantes :
-\begin{itemize}
-  \item Chaque général doit prendre une décision : attaquer ou battre en retraite (oui ou non) ;
-  \item Une fois la décision prise, elle ne peut plus être modifiée ;
-  \item Tous les généraux doivent se mettre d'accord sur la même décision et l'exécuter de manière synchronisée.
-\end{itemize}
+<ul>
+<li>Chaque général doit prendre une décision : attaquer ou battre en retraite (oui ou non) ;</li>
+<li>Une fois la décision prise, elle ne peut plus être modifiée ;</li>
+<li>Tous les généraux doivent se mettre d'accord sur la même décision et l'exécuter de manière synchronisée.</li>
+</ul>
 
 De plus, un général ne peut communiquer avec un autre que par le biais de messages transmis par un coursier, pouvant être retardés, détruits, modifiés ou perdus. Et même si un message réussi à être délivré, un ou plusieurs généraux peuvent choisir (pour une raison quelconque) de trahir la confiance établie et d'envoyer un message frauduleux, et semer le chaos.
 
@@ -5335,11 +4238,11 @@ Processus par lequel les informations, comme les transactions et les blocs, sont
 ## PSBT
 
 Sigle de « *Partially Signed Bitcoin Transaction* ». C'est une spécification introduite avec le BIP174 pour standardiser la manière dont les transactions non finalisées sont construites dans les logiciels en rapport avec Bitcoin, comme les logiciels de portefeuille. Un PSBT encapsule une transaction dans laquelle les inputs peuvent ne pas être entièrement signés. Il inclut toutes les informations nécessaires pour qu'un participant puisse signer la transaction sans nécessiter des données supplémentaires. Ainsi, un PSBT peut se présenter sous 3 formes différentes :
-\begin{itemize}
-  \item Une transaction entièrement construite, mais pas encore signée ;
-  \item Une transaction partiellement signée, où certains inputs sont signés tandis que d'autres ne le sont pas encore ;
-  \item Ou une transaction Bitcoin entièrement signée, qui pourra être convertie pour être prête pour la diffusion sur le réseau.
-\end{itemize}
+<ul>
+<li>Une transaction entièrement construite, mais pas encore signée ;</li>
+<li>Une transaction partiellement signée, où certains inputs sont signés tandis que d'autres ne le sont pas encore ;</li>
+<li>Ou une transaction Bitcoin entièrement signée, qui pourra être convertie pour être prête pour la diffusion sur le réseau.</li>
+</ul>
 
 Le format PSBT facilite l'interopérabilité entre différents logiciels de portefeuille et périphériques de signature (hardware wallet). Actuellement, on utilise la version 0 des PSBT, telle que définie dans le BIP174, mais la version 2 est en cours de proposition via le BIP370.
 
@@ -5358,16 +4261,6 @@ Dans le cadre de GitHub et d'autres plateformes d'hébergement de code, une Pull
 > ► *Le terme de « Pull Request » est souvent abrégé par le sigle « PR ».*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{Q}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{Q}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## QR CODE
 
 Type de code-barres en deux dimensions pouvant être scanné rapidement par des appareils mobiles. Le QR code stocke des informations sous forme de pixels noirs et blancs disposés dans un carré sur un fond blanc. Une caractéristique importante des QR codes est qu'ils embarquent des codes de correction d'erreur BCH qui permettent de restaurer les données même si le QR code est partiellement obscurci.
@@ -5381,16 +4274,6 @@ On utilise largement le QR code sur Bitcoin pour faciliter la transmission d'inf
 Unité d'information de base sur un ordinateur quantique. Ces qubits peuvent prendre la valeur de 0, la valeur de 1, ou bien une superposition du 0 et du 1. En utilisant cette superposition d'états avec d'autres phénomènes quantiques tels que l'intrication et l'interférence quantique, un ordinateur quantique peut paralléliser les processus de calculs, et donc résoudre certains problèmes spécifiques beaucoup plus rapidement.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{R}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{R}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## RACINE DE MERKLE
 
 Condensat ou « top hash » d'un arbre de Merkle, qui représente un résumé de toutes les informations présentes dans l'arbre. Un arbre de Merkle est une structure d'accumulateur cryptographique, parfois également nommée « arbre de hachage ». Dans le cadre de Bitcoin, des arbres de Merkle sont utilisés pour organiser les transactions dans un bloc et pour faciliter la vérification rapide de l'inclusion d'une transaction spécifique. Ainsi, dans les blocs Bitcoin, la racine de Merkle est obtenue en hachant de manière successive les transactions par paires jusqu'à ce qu'il ne reste qu'un seul hachage (la racine de Merkle). Cette dernière est ensuite incluse dans l'entête du bloc correspondant. On retrouve également cet arbre de hachage dans UTREEXO, une structure permettant de condenser l'UTXO set des nœuds, et dans le MAST Taproot.
@@ -5400,14 +4283,14 @@ Condensat ou « top hash » d'un arbre de Merkle, qui représente un résumé 
 ## RAW TRANSACTION
 
 Transaction Bitcoin construite et signée, qui se trouve dans sa forme binaire. Une transaction brute (*raw TX*) est la représentation finale d'une transaction, juste avant qu'elle ne soit diffusée sur le réseau. Cette transaction contient toutes les informations nécessaires à son inclusion dans un bloc :
-\begin{itemize}
-  \item La version ;
-  \item Le flag ;
-  \item Les inputs ;
-  \item Les outputs ;
-  \item Le locktime ;
-  \item Le witness.
-\end{itemize}
+<ul>
+<li>La version ;</li>
+<li>Le flag ;</li>
+<li>Les inputs ;</li>
+<li>Les outputs ;</li>
+<li>Le locktime ;</li>
+<li>Le witness.</li>
+</ul>
 
 Ce que l'on appelle « *raw transaction* » représente les données brutes qui sont passées deux fois dans la fonction de hachage SHA256 pour générer le TXID de la transaction. Ces données sont ensuite utilisées dans l'arbre de Merkle du bloc pour intégrer la transaction dans la blockchain.
 
@@ -5578,16 +4461,6 @@ Bibliothèque Lightning développée en Rust par la communauté Rust Bitcoin en 
 > ► *Pour plus d'informations, voir la définition de **[LDK](#ldk-lightning-dev-kit)**.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{S}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{S}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## SAMOURAI WALLET
 
 Logiciel de portefeuille Bitcoin pour appareils mobiles Android axé sur la confidentialité. Il offre des fonctionnalités avancées telles que les coinjoins Whirlpool, Stonewall, StonewallX2, Ricochet ou encore Stowaway (payjoin). Samourai implémente également de nombreuses protections pour aider l'utilisateur à protéger sa vie privée face à l'analyse de chaîne.
@@ -5632,15 +4505,15 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 
 Par exemple, voici un `scriptPubKey` P2PKH classique :
 
-\begin{codeblock}
+```text
 OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG
-\end{codeblock}
+```
 
 Le `scriptSig` correspondant serait :
 
-\begin{codeblock}
+```text
 <signature> <clé publique>
-\end{codeblock}
+```
 
 ![](../../dictionnaire/assets/35.png)
 
@@ -5654,15 +4527,15 @@ Lorsque la transaction est vérifiée, les données du `scriptSig` sont exécut�
 
 Par exemple, voici un `scriptSig` P2PKH classique :
 
-\begin{codeblock}
+```text
 <signature> <clé publique>
-\end{codeblock}
+```
 
 Le `scriptPubKey` correspondant serait :
 
-\begin{codeblock}
+```text
 OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG
-\end{codeblock}
+```
 
 ![](../../dictionnaire/assets/35.png)
 
@@ -5694,16 +4567,16 @@ La courbe `secp256k1` est spécifiée par l'équation de la courbe elliptique $y
 
 Nom donné à une courbe elliptique définie par le standard NIST pour la cryptographie à clé publique. Elle utilise un champ premier de 256 bits et une équation de courbe elliptique $y^2 = x^3 + ax + b$ avec les constantes :
 
-\begin{codeblock}
+```text
 a = -3
-\end{codeblock}
+```
 
 et 
 
-\begin{codeblock}
+```text
 b = 410583637251521421293261297800472684091144410159937255548542755610749322
 77127
-\end{codeblock}
+```
 
 La courbe `secp256r1` est largement utilisée dans de nombreux protocoles, mais elle n'est pas utilisée dans Bitcoin. En effet, Satoshi Nakamoto a opté pour la courbe `secp256k1`, qui était alors peu connue en 2009. La raison précise de ce choix est inconnue, mais il est possible que ce soit dans le but de minimiser le risque de présence de backdoors. Les paramètres de la courbe $k1$ sont, en effet, nettement plus simples que ceux de la courbe $r1$, en particulier la constante $b$.
 
@@ -5802,17 +4675,11 @@ Dans le cadre des pools de minage, une share est un indicateur utilisé pour qua
 Pour expliquer avec une analogie, considérons un dé à 20 faces. Sur Bitcoin, supposons que la preuve de travail exige de faire un lancé inférieur à 3 pour valider un bloc (c'est-à-dire, obtenir un résultat de 1 ou 2). Maintenant, imaginons qu'au sein d'une pool de minage, la cible de difficulté pour une share est fixée à 10. Ainsi, pour un mineur individuel dans la pool, chaque lancer de dés qui donne un résultat inférieur à 10 compte comme une share valide. Ces shares sont ensuite transmises à la pool par le mineur, afin de réclamer sa rémunération, même si elles ne correspondent pas à un résultat valide pour un bloc sur Bitcoin.
 
 Pour chaque hash calculé, un mineur individuel dans une pool peut rencontrer trois scénarios différents :
-\begin{itemize}
-  \item Si la valeur du hash est supérieure ou égale à la cible de difficulté fixée par la pool pour une share, alors ce hash n'est d'aucune utilité. Le mineur modifie alors son nonce pour tenter un nouveau hash :
-\texttt{hash > share > bloc}
-.
-  \item Si le hash est inférieur à la cible de difficulté de la share, mais supérieur ou égal à la cible de difficulté de Bitcoin, alors ce hash constitue une share valide qui n'est cependant pas suffisante pour valider un bloc. Le mineur peut envoyer ce hash à sa pool pour réclamer la récompense associée à la share :
-\texttt{share > hash > bloc}
-.
-  \item Si le hash est inférieur à la cible de difficulté du réseau Bitcoin, il est considéré à la fois comme une share valide et comme un bloc valide. Le mineur transmet ce hash à sa pool, qui s'empresse de le diffuser sur le réseau Bitcoin. Ce hash est également comptabilisé comme une share valide pour le mineur :
-\texttt{share > bloc > hash}
-.
-\end{itemize}
+<ul>
+<li>Si la valeur du hash est supérieure ou égale à la cible de difficulté fixée par la pool pour une share, alors ce hash n'est d'aucune utilité. Le mineur modifie alors son nonce pour tenter un nouveau hash : `hash > share > bloc`.</li>
+<li>Si le hash est inférieur à la cible de difficulté de la share, mais supérieur ou égal à la cible de difficulté de Bitcoin, alors ce hash constitue une share valide qui n'est cependant pas suffisante pour valider un bloc. Le mineur peut envoyer ce hash à sa pool pour réclamer la récompense associée à la share : `share > hash > bloc`.</li>
+<li>Si le hash est inférieur à la cible de difficulté du réseau Bitcoin, il est considéré à la fois comme une share valide et comme un bloc valide. Le mineur transmet ce hash à sa pool, qui s'empresse de le diffuser sur le réseau Bitcoin. Ce hash est également comptabilisé comme une share valide pour le mineur : `share > bloc > hash`.</li>
+</ul>
 
 ![](../../dictionnaire/assets/32.png)
 
@@ -5942,10 +4809,10 @@ $$ B = B_{\text{scan}} \text{ ‖ } B_{\text{spend}} $$
 
 Ces clés sont simplement dérivées à partir du chemin suivant :
 
-\begin{codeblock}
+```text
 scan : m / 352' / 0' / 0' / 1' / 0
 spend : m / 352' / 0' / 0' / 0' / 0
-\end{codeblock}
+```
 
 Cette adresse statique est publiée par Bob. Alice la récupère pour faire un Silent Payment vers Bob. Elle calcule l'adresse de paiement $P_0$ appartenant à Bob de cette façon :
 
@@ -5956,45 +4823,37 @@ Où :
 $$  \text{inputHash} = \text{hash}(\text{outpoint}_L \text{ ‖ } A)  $$
 
 Avec :
-\begin{itemize}
-  \item $B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;
-  \item $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
-  \item $A$ : La somme des clés publiques en input (tweak) ;
-  \item $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les
-\texttt{scriptPubKey}
-des UTXOs consommés en inputs de la transaction d'Alice ;
-  \item $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
-  \item $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
-  \item $G$ : Le point générateur de la courbe elliptique
-\texttt{secp256k1}
-;
-  \item $\text{hash}$ : La fonction de hachage SHA256 taguée avec
-\texttt{BIP0352/SharedSecret}
-;
-  \item $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
-  \item $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
-\end{itemize}
+<ul>
+<li>$B_{\text{scan}}$ : La clé publique de scan de Bob (adresse statique) ;</li>
+<li>$B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;</li>
+<li>$A$ : La somme des clés publiques en input (tweak) ;</li>
+<li>$a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;</li>
+<li>$\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;</li>
+<li>$\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;</li>
+<li>$G$ : Le point générateur de la courbe elliptique `secp256k1` ;</li>
+<li>$\text{hash}$ : La fonction de hachage SHA256 taguée avec `BIP0352/SharedSecret` ;</li>
+<li>$P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;</li>
+<li>$0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.</li>
+</ul>
 
 Bob scanne la blockchain pour trouver son Silent Payment de cette manière :
 
 $$  P_0 = B_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0) \cdot G  $$
 
 Avec :
-\begin{itemize}
-  \item $b_{\text{scan}}$ : La clé privée de scan de Bob.
-\end{itemize}
+<ul>
+<li>$b_{\text{scan}}$ : La clé privée de scan de Bob.</li>
+</ul>
 
 S'il trouve $P_0$ comme une adresse qui contient un Silent Payment lui étant adressé, il calcule $p_0$, la clé privée permettant de dépenser les fonds envoyés par Alice sur $P_0$ :
 
 $$ p_0 = (b_{\text{spend}} + \text{hash}(\text{inputHash} \cdot b_{\text{scan}} \cdot A \text{ ‖ } 0)) \mod n $$
 
 Avec :
-\begin{itemize}
-  \item $b_{\text{spend}}$ : La clé privée de dépense de Bob ;
-  \item $n$ : l'ordre de la courbe elliptique
-\texttt{secp256k1}
-.
-\end{itemize}
+<ul>
+<li>$b_{\text{spend}}$ : La clé privée de dépense de Bob ;</li>
+<li>$n$ : l'ordre de la courbe elliptique `secp256k1`.</li>
+</ul>
 
 En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de séparer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
 
@@ -6115,10 +4974,10 @@ Forme spécifique de transaction Bitcoin visant à accroître la confidentialit�
 Le fonctionnement de la transaction Stonewall est le suivant : en entrée de la transaction, l'émetteur utilise 2 UTXOs qui lui appartiennent. En sortie, la transaction produit 4 outputs, dont 2 qui seront exactement de même montant. Les 2 autres constitueront du change. Parmi les 2 outputs de même montant, un seul ira effectivement au destinataire du paiement.
 
 Il y a donc seulement 2 rôles dans une transaction Stonewall :
-\begin{itemize}
-  \item L'émetteur, qui réalise le paiement effectif ;
-  \item Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.
-\end{itemize}
+<ul>
+<li>L'émetteur, qui réalise le paiement effectif ;</li>
+<li>Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.</li>
+</ul>
 
 ![](../../dictionnaire/assets/33.png)
 Les transactions Stonewall sont disponibles à la fois sur l'application Samourai Wallet et sur le logiciel Sparrow Wallet.
@@ -6130,11 +4989,11 @@ La structure Stonewall ajoute énormément d'entropie à la transaction et vient
 Forme spécifique de transaction Bitcoin visant à accroître la confidentialité des utilisateurs lors d'une dépense, par la collaboration avec une tierce personne non impliquée dans cette dépense. Cette méthode simule un mini-coinjoin entre deux participants, tout en effectuant un paiement à une troisième partie. Les transactions Stonewall x2 sont disponibles à la fois sur l'application Samourai Wallet et sur le logiciel Sparrow Wallet (les deux sont interopérables).
 
 Son fonctionnement est relativement simple : on utilise un UTXO en notre possession pour effectuer le paiement et on sollicite l'aide d'une tierce personne qui contribue également avec un UTXO lui appartenant. La transaction se solde avec quatre outputs : deux d'entre eux de montants égaux, l'un destiné à l'adresse du bénéficiaire du paiement, l'autre à une adresse appartenant au collaborateur. Un troisième UTXO est renvoyé à une autre adresse du collaborateur, lui permettant de récupérer le montant initial (une action neutre pour lui, modulo les frais de minage), et un dernier UTXO revient à une adresse nous appartenant, qui constitue le change du paiement. On définit ainsi trois rôles différents dans les transactions Stonewall x2 :
-\begin{itemize}
-  \item L'émetteur, qui réalise le paiement effectif ;
-  \item Le collaborateur, qui met des bitcoins à disposition afin d'améliorer l'ensemble d'anonymat de la transaction, tout en récupérant intégralement ses fonds à la fin ;
-  \item Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.
-\end{itemize}
+<ul>
+<li>L'émetteur, qui réalise le paiement effectif ;</li>
+<li>Le collaborateur, qui met des bitcoins à disposition afin d'améliorer l'ensemble d'anonymat de la transaction, tout en récupérant intégralement ses fonds à la fin ;</li>
+<li>Le destinataire, qui peut ignorer la nature spécifique de la transaction et attend simplement un paiement de la part de l'émetteur.</li>
+</ul>
 
 ![](../../dictionnaire/assets/3.png)
 
@@ -6185,16 +5044,6 @@ Traduction française de « *Initial Block Download* ». Fait référence au p
 > ► *En français, il est globalement admis de parler directement d'un(e) IBD.
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{T}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{T}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## TAPROOT
 
 Mise à jour majeure du protocole Bitcoin, adoptée par le biais d'un soft fork en novembre 2021. Cette mise à jour apporte des améliorations significatives en termes de confidentialité, d'efficacité et de flexibilité, en implémentant les BIP340, BIP341 et BIP342. Cette mise à jour a été verrouillée au bloc 687 284, le 12 juin 2021, lorsque 90 % des blocs générés pendant une période ont émis un signal favorable, manifestant ainsi la préparation des mineurs à activer la mise à jour (*Speady Trial*). L’activation a finalement eu lieu au bloc 709 632, le 14 novembre 2021, soit presque quatre ans après les premières discussions à ce sujet entre Pieter Wuille, Andrew Poelstra et Gregory Maxwell. Ce fut la première tentative de mise à jour majeure depuis l'épineuse activation de SegWit en 2017.
@@ -6262,10 +5111,10 @@ Sigle de « *Transparent Index Of Distinct Extended Shares* ». C'est une mét
 ## TIMELOCK
 
 Primitive de contrat intelligent qui permet de définir une condition temporelle à remplir pour qu'une transaction puisse être ajoutée à un bloc. Il existe deux types de timelocks sur Bitcoin : 
-\begin{itemize}
-  \item Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ;
-  \item Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure.
-\end{itemize}
+<ul>
+<li>Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ;</li>
+<li>Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure.</li>
+</ul>
 Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
 
 > ► *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](#op_checksequenceverify-0xb2), [**NLOCKTIME**](#nlocktime) et [**NSEQUENCE**](#nsequence).*
@@ -6337,11 +5186,11 @@ Où $G$ est le générateur de la courbe elliptique utilisée. Cette opération 
 ## TWO-WAY PEG (2WP)
 
 Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. Le 2WP assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
-\begin{itemize}
-  \item Un tiers de confiance unique ;
-  \item Une fédération d'entités (comme sur Liquid) ;
-  \item Les mineurs de la chaîne principale (*drivechain*).
-\end{itemize}
+<ul>
+<li>Un tiers de confiance unique ;</li>
+<li>Une fédération d'entités (comme sur Liquid) ;</li>
+<li>Les mineurs de la chaîne principale (*drivechain*).</li>
+</ul>
 
 > ► *En français, on parle d'un « ancrage bilatéral ».*
 
@@ -6354,39 +5203,19 @@ Identifiant unique associé à chaque transaction Bitcoin. Il est généré en c
 ## TYPE DE DEVISE
 
 Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type de devise (*coin type* en anglais) est un niveau de dérivation qui permet de différencier les branches du portefeuille en fonction des différentes cryptomonnaies utilisées. Cet étage de dérivation, défini par le BIP 44, se situe en profondeur 2 de la structure de dérivation, après la clé maîtresse et l'objectif (*purpose*). Par exemple, pour Bitcoin, l'index attribué est `0x80000000`, noté `/0'/` dans le chemin de dérivation. Cela signifie que toutes les adresses et comptes dérivés de ce chemin sont associés à Bitcoin. Cet étage de dérivation permet de bien séparer les différents actifs dans un portefeuille multi-devises. Voici les index utilisés pour différentes cryptomonnaies :
-\begin{itemize}
-  \item Bitcoin :
-\texttt{0x80000000}
-;
-  \item Bitcoin Testnet :
-\texttt{0x80000001}
-;
-  \item Litecoin :
-\texttt{0x80000002}
-;
-  \item Dogecoin :
-\texttt{0x80000003}
-;
-  \item Ethereum :
-\texttt{0x8000003c}
-...
-\end{itemize}
+<ul>
+<li>Bitcoin : `0x80000000` ;</li>
+<li>Bitcoin Testnet : `0x80000001` ;</li>
+<li>Litecoin : `0x80000002` ;</li>
+<li>Dogecoin : `0x80000003` ;</li>
+<li>Ethereum : `0x8000003c`...</li>
+</ul>
 
 ![](../../dictionnaire/assets/21.png)
 
 > ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](#chemin-de-dérivation).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{U}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{U}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## UASF
 
 Sigle de « *User-Activated Soft Fork* ». Qualifie un soft fork dans Bitcoin lorsqu'il est initié et appliqué par les utilisateurs du réseau via leurs nœuds, sans dépendre de l'approbation des mineurs. Les nœuds du réseau mettent à jour leur logiciel pour adopter les nouvelles règles du soft fork et advienne que pourra !
@@ -6409,9 +5238,9 @@ L'Heure Unix ou Temps Unix représente le nombre de secondes écoulées depuis l
 
 Dans le cadre de Bitcoin, on l'utilise pour l'horloge locale des nœuds, et donc pour le calcul du NAT. Le network-adjusted time est une médiane du temps des nœuds calculée en local par chaque nœud, et ce référentiel est ensuite utilisé pour vérifier la validité des horodatages des blocs. En effet, pour qu'un bloc soit accepté par un nœud, son horodatage doit se situer entre le MTP (temps médian des 11 derniers blocs minés) et le NAT plus 2 heures :
 
-\begin{codeblock}
+```text
 MTP < Horodatage valide < (NAT + 2h)
-\end{codeblock}
+```
 
 On utilise également l'Heure Unix pour établir des timelocks, lorsque ceux-ci se basent sur l'heure réelle, et non pas sur un nombre de blocs. 
 
@@ -6440,20 +5269,20 @@ Protocole conçu par Tadge Dryja pour compacter l'UTXO set des nœuds Bitcoin à
 ![](../../dictionnaire/assets/15.png)
 
 Dans cet exemple, j’ai intentionnellement réduit l’UTXO set à 4 UTXOs pour faciliter la compréhension. En réalité, il faut imaginer qu’il existe presque 140 millions d’UTXOs sur Bitcoin à l'heure où j'écris ces lignes. Sur ce schéma, le nœud Utreexo devrait uniquement conserver en RAM la Racine de Merkle. S’il reçoit une transaction dépensant l’UTXO n° 3 (en noir), la preuve consisterait en les éléments suivants :
-\begin{itemize}
-  \item L’UTXO 3 ;
-  \item Le HASH 4 ;
-  \item Le HASH 1-2.
-\end{itemize}
+<ul>
+<li>L’UTXO 3 ;</li>
+<li>Le HASH 4 ;</li>
+<li>Le HASH 1-2.</li>
+</ul>
 
 Grâce à ces informations transmises par l’émetteur de la transaction, le nœud Utreexo effectue les vérifications suivantes :
-\begin{itemize}
-  \item Il calcule l’empreinte de l’UTXO 3, ce qui lui donne HASH 3 ;
-  \item Il concatène HASH 3 avec HASH 4 ;
-  \item Il calcule leur empreinte, ce qui lui donne HASH 3-4 ;
-  \item Il concatène HASH 3-4 avec HASH 1-2 ;
-  \item Il calcule leur empreinte, ce qui lui donne la racine de Merkle.
-\end{itemize}
+<ul>
+<li>Il calcule l’empreinte de l’UTXO 3, ce qui lui donne HASH 3 ;</li>
+<li>Il concatène HASH 3 avec HASH 4 ;</li>
+<li>Il calcule leur empreinte, ce qui lui donne HASH 3-4 ;</li>
+<li>Il concatène HASH 3-4 avec HASH 1-2 ;</li>
+<li>Il calcule leur empreinte, ce qui lui donne la racine de Merkle.</li>
+</ul>
 
 Si la racine de Merkle qu’il obtient par son processus est la même que la racine de Merkle qu’il stockait dans sa RAM, alors il est persuadé que l’UTXO n° 3 fait bien partie de l’UTXO set.
 
@@ -6474,16 +5303,6 @@ Cet UTXO set est conservé par chaque nœud afin de pouvoir vérifier rapidement
 > ► *En français, on pourrait traduire « UTXO set » par « ensemble d'UTXO ». Pour plus d'informations, voir la définition d'[**UTXO**](.U.md#utxo).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{V}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{V}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## VANITY (ADDRESS)
 
 Adresse de réception personnalisée qui contient une séquence spécifique de caractères choisie par l'utilisateur, généralement pour des raisons esthétiques. Ces adresses sont générées en exécutant un processus de calcul, où de multiples clés privées sont créées jusqu'à ce que l'une d'entre elles corresponde à une adresse de réception contenant la séquence désirée. Ce processus ne compromet pas la sécurité de l'adresse, mais peut nécessiter un temps et des ressources de calcul considérables, surtout pour des séquences plus longues ou plus spécifiques. C'est une sorte de processus de brute force.
@@ -6503,24 +5322,12 @@ Dans le contexte de Bitcoin, désigne le processus d'assignation de versions sp�
 Élément spécifique d'une transaction Bitcoin qui spécifie la source des fonds utilisés pour satisfaire les outputs. Chaque `vin` fait référence à un output non dépensé (UTXO) d'une transaction précédente. Une transaction peut contenir plusieurs inputs, chacun étant identifié par une combinaison du `txid` (l'identifiant de la transaction d'origine) et du `vout` (l'index de l'output dans cette transaction).
 
 Chaque `vin` inclut les informations suivantes :
-\begin{itemize}
-  \item 
-\texttt{txid}
-: l'identifiant de la transaction précédente contenant l'output utilisé ici en input ;
-  \item 
-\texttt{vout}
-: l'index de l'output dans la transaction précédente ;
-  \item 
-\texttt{scriptSig}
-ou
-\texttt{scriptWitness}
-: un script de déverrouillage qui fournit les données nécessaires pour satisfaire les conditions posées par le
-\texttt{scriptPubKey}
-de la transaction précédente dont les fonds sont dépensés, généralement en fournissant une signature cryptographique ;
-  \item 
-\texttt{nSequence}
-: un champ spécifique utilisé pour indiquer la manière dont cet input est verrouillé dans le temps, ainsi que d'autres options comme RBF.
-\end{itemize}
+<ul>
+<li>`txid` : l'identifiant de la transaction précédente contenant l'output utilisé ici en input ;</li>
+<li>`vout` : l'index de l'output dans la transaction précédente ;</li>
+<li>`scriptSig` ou `scriptWitness` : un script de déverrouillage qui fournit les données nécessaires pour satisfaire les conditions posées par le `scriptPubKey` de la transaction précédente dont les fonds sont dépensés, généralement en fournissant une signature cryptographique ;</li>
+<li>`nSequence` : un champ spécifique utilisé pour indiquer la manière dont cet input est verrouillé dans le temps, ainsi que d'autres options comme RBF.</li>
+</ul>
 
 > ► *Pour plus d'informations, voir la définition de [**NSEQUENCE**](#nsequence).*
 
@@ -6529,20 +5336,18 @@ de la transaction précédente dont les fonds sont dépensés, généralement en
 Élément spécifique d'une transaction Bitcoin qui détermine la destination des fonds envoyés. Une transaction peut inclure plusieurs outputs, chacun étant distinctement identifié par la combinaison de l'identifiant de la transaction (`txid`) et d'un index appelé `vout`. Cet index, qui commence à `0`, marque la position de l'output dans la séquence des outputs de la transaction. Ainsi, le premier output sera désigné par `"vout": 0`, le second par `"vout": 1`, et ainsi de suite.
 
 Chaque `vout` encapsule principalement deux informations :
-\begin{itemize}
-  \item la valeur, exprimée en bitcoins, qui représente le montant envoyé ;
-  \item un script de verrouillage (
-\texttt{scriptPubKey}
-) qui stipule les conditions requises pour que les fonds puissent être dépensés de nouveau dans une prochaine transaction.
-\end{itemize}
+<ul>
+<li>la valeur, exprimée en bitcoins, qui représente le montant envoyé ;</li>
+<li>un script de verrouillage (`scriptPubKey`) qui stipule les conditions requises pour que les fonds puissent être dépensés de nouveau dans une prochaine transaction.</li>
+</ul>
 
 La combinaison du `txid` et du `vout` d'une pièce spécifique forme ce que l'on appelle un UTXO, par exemple :
 
-\begin{codeblock}
+```text
 txid: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf
 vout: 0
 outpoint: 4c160086e39a940c2459f03bb7cfe5b768fc78373c9960dc2cf2fa61b57d0adf:0
-\end{codeblock}
+```
 
 ## VPRV
 
@@ -6557,16 +5362,6 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin Testne
 > ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{W}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{W}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## WABISABI
 
 Protocole de coinjoins chaumiens avec un coordinateur central utilisé sur le portefeuille Wasabi 2.0. Ce modèle a été conçu Ádám Ficsór (nopara73), Yuval Kogman, Lucas Ontivero et István András Seres en 2021, et a été intégré dans le logiciel Wasabi 2.0 l'année suivante.
@@ -6642,16 +5437,6 @@ Extension du TXID traditionnel, incluant les données de témoin (*witness*) int
 > ► *Pour plus d'informations, voir la définition de [**TXID**](#txid-transaction-identifier) et [**SEGWIT**](#segwit).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{X}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{X}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## XBT
 
 Symbole boursier et monétaire (*ticker*) utilisé pour représenter le bitcoin, conforme à la norme ISO 4217 qui régit les codes monétaires. Contrairement à « BTC », qui est le symbole historique, « XBT » respecte la convention selon laquelle les monnaies non adossées à un État commencent par un « X ». Ainsi, bien que non officiellement reconnu par l'ISO, « XBT » est utilisé par certaines organisations pour représenter les unités de bitcoin.
@@ -6684,12 +5469,12 @@ Chaque bit de la séquence est comparé à son homologue et l'opération XOR est
 </div>
 
 L'opération XOR est utilisée dans de nombreux domaines de l'informatique, notamment dans la cryptographie, pour ses attributs intéressants comme : 
-\begin{itemize}
-  \item Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
-  \item Son associativité : le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
-  \item Il dispose d'un élément neutre $0$ : un opérande xorée à $0$ sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
-  \item Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
-\end{itemize}
+<ul>
+<li>Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;</li>
+<li>Son associativité : le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;</li>
+<li>Il dispose d'un élément neutre $0$ : un opérande xorée à $0$ sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;</li>
+<li>Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.</li>
+</ul>
 
 Dans le cadre de Bitcoin, on utilise évidemment l'opération XOR à de nombreux endroits. Par exemple, le XOR est massivement utilisé dans la fonction SHA256, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission.
 
@@ -6708,16 +5493,6 @@ Préfixe de clé publique étendue pour les comptes Legacy et SegWit V1 sur Bitc
 > ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{Y}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{Y}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## YPRV
 
 Préfixe de clé privée étendue pour les comptes Nested SegWit sur Bitcoin. 
@@ -6731,16 +5506,6 @@ Préfixe de clé publique étendue pour les comptes Nested SegWit sur Bitcoin.
 > ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
-
-\newpage
-\thispagestyle{empty}
-\fancyhead[C]{\textbf{\textit{Z}}}
-\vspace*{\fill}
-\begin{center}
-\fontsize{80}{95}\selectfont\textbf{Z}
-\end{center}
-\vspace*{\fill}
-\newpage
 ## ZEROCONF
 
 Pratique risquée consistant à considérer une transaction Bitcoin comme définitive, et à procéder à l'exécution de l'acte associé en contrepartie (tel que la vente d'un bien ou d'un service), avant que la transaction ne soit réellement incluse dans un bloc sur la blockchain. Les transactions non confirmées, ou en zeroconf, sont vulnérables à des attaques de double dépense, car elles ne sont pas encore irrévocablement inscrites dans le registre. Le zeroconf peut éventuellement être envisagé dans des contextes très spécifiques, où la rapidité est prioritaire, comme dans le cas de petites transactions commerciales ou dans le cas d'une transaction entre proches. Dans ces situations, le risque de double dépense est souvent considéré comme acceptable en comparaison de l'avantage d'une transaction rapide. Néanmoins, pour des transactions importantes, en particulier lorsqu'on ne connaît pas l'expéditeur, il est crucial d'attendre plusieurs confirmations avant de considérer la transaction comme immuable. La norme généralement acceptée est d'attendre 6 confirmations, ce qui signifie que 5 blocs supplémentaires doivent être minés après celui incluant la transaction, pour la considérer comme définitive.
@@ -6774,7 +5539,3 @@ Préfixe de clé publique étendue pour les comptes SegWit V0 sur Bitcoin.
 > ► *Pour plus d'informations, voir la définition de [**CLÉ ÉTENDUE**](#clé-étendue).*
 
 
-\clearpage
-\pagecolor{black}
-\includepdf{cover_back.png}
-\nopagecolor
