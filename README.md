@@ -1,5 +1,4 @@
-[![Cover Image](./img/cover_light.png#gh-light-mode-only)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
-[![Cover Image](./img/cover_dark.png#gh-dark-mode-only)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
+[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Nombre%20de%20définitions-757-black" alt="Nombre de définitions">
@@ -181,8 +180,7 @@ This work is licensed under a CC BY-NC-SA 4.0
 
 <p align="center">
   <a href="https://www.pandul.fr/" target="_blank">
-    <img src="./img/Logo-Pandul-NOIR_light.png#gh-light-mode-only" alt="Logo Pandul" width="100%">
-    <img src="./img/Logo-Pandul-BLANC_dark.png#gh-dark-mode-only" alt="Logo Pandul" width="100%">
+    <img src="./img/Logo-Pandul-NOIR.png" alt="Logo Pandul" width="50%">
   </a>
 </p>
 
