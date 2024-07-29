@@ -53,14 +53,14 @@ Sur Bitcoin, les signatures ECDSA sont encodées au format DER. Elles se compose
 ```
 
 Avec :
-- `0x30` (1 octet) : identifiant d'une structure composée ;
-- `length` (1 octet) : longueur des données suivantes ;
-- `0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;
-- `r_length` (1 octet) : longueur de la valeur `r` suivante (32 octets) ;
-- `r` (32 octets) : valeur `r` entant qu'entier gros-boutiste (big-endian) ;
-- `0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;
-- `s_length` (1 octet) : longueur de la valeur `s` suivante (32 octets) ;
-- `s` (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian).
+* `0x30` (1 octet) : identifiant d'une structure composée ;
+* `length` (1 octet) : longueur des données suivantes ;
+* `0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;
+* `r_length` (1 octet) : longueur de la valeur `r` suivante (32 octets) ;
+* `r` (32 octets) : valeur `r` entant qu'entier gros-boutiste (big-endian) ;
+* `0x02` (1 octet) : identifiant de donnée type `INTEGER` (nombre entier) ;
+* `s_length` (1 octet) : longueur de la valeur `s` suivante (32 octets) ;
+* `s` (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian).
 
 Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de SigHash utilisé.
 
