@@ -41,6 +41,8 @@ Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*
 </p>
 &nbsp;
 
+Pour les liseuses, il y a une version en .epub que [vous pouvez télécharger à la racine](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire_de_Bitcoin.epub).
+
 Vous pouvez également découvrir la version en markdown du *Dictionnaire de Bitcoin* dans le dossier [dictionnaire](./dictionnaire). Les définitions sont classées par ordre alphabétique et chaque fichier markdown correspond à une lettre.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, j'ai créé un sommaire détaillé de tous les termes inclus dans le *Dictionnaire de Bitcoin*. Chaque entrée du sommaire est liée à sa définition spécifique, ce qui vous permet d'accéder directement à l'information recherchée.
