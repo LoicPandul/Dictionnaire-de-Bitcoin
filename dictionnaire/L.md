@@ -52,6 +52,25 @@ Kit de développement (SDK) pour Lightning. LDK est une collection de bibliothè
 
 Bibliothèque de stockage de clés-valeurs légère, rapide et open-source, conçue par Google. On l'utilise sur Bitcoin pour stocker l'UTXO set, l'index des transactions et l'index des blocs. Ce système de base de données a été introduit en 2012 dans le cadre de la Pull Request « *Ultraprune* » visant à remplacer BerkeleyDB. Ce changement a eu des répercussions significatives, notamment la création d'une première division de la blockchain avec une réorganisation majeure de 24 blocs le 12 mars 2013. Cet incident a été détaillé dans le BIP50. Plus tard, ce changement de système a même conduit à un hard fork non intentionnel le 15 mai 2013.
 
+## LIBSECP256K1
+
+Bibliothèque C de haute performance et de haute sécurité pour les signatures numériques et autres primitives sur la courbe elliptique **secp256k1**.
+
+secp256k1 n'ayant été presque jamais utilisé autre part que sur Bitcoin, cette bibliothèque est destinée à être la plus complète sur le sujet. 
+Cependant, son développement a été principalement axé sur Bitcoin, le reste étant moins testées ou vérifiées.
+Une utilisation correcte nécessite une certaine attention et la prise en compte du fait que la bibliothèque est adaptée à l'objectif de votre applicati
+
+La librairie comporte plusieurs caractéristiques comme :
+
+ - La signature/vérification ECDSA-secp256k1 et génération de clés.
+ - Une modification additive et multiplicative des clés secrètes et publiques.
+ - La sérialisation et analyse des clés secrètes, des clés publiques et des signatures.
+ - La signature et génération de clés publiques à temps constant et à accès mémoire constant.
+ - Et bien d'autres...
+
+> Pour en savoir plus sur la courbe [SECP256K1](./S.md#SECP256K1) <br>
+> Sources : [https://github.com/bitcoin-core/secp256k1](https://github.com/bitcoin-core/secp256k1)
+
 ## LIGHTNING NETWORK
 
 Protocole de couche supérieure, construit au-dessus du protocole Bitcoin, visant à permettre des transactions rapides et à faible coût. Il permet la création de canaux de paiement entre les participants, au sein desquels les transactions peuvent être effectuées presque instantanément et avec des frais minimes, sans avoir à enregistrer chaque transaction individuellement sur la blockchain. Les canaux peuvent rester ouverts quasi indéfiniment, et ne nécessitent des transactions sur la blockchain que lors de leur ouverture et de leur clôture. Le Lightning Network vise à améliorer la scalabilité de Bitcoin et à rendre possible son utilisation pour des paiements de faible valeur.
