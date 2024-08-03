@@ -1,5 +1,7 @@
 ## BYZANTINE FAULT TOLERANCE (BFT)
 
+► ***FR : TOLÉRANCE AUX DÉFAUTS BYZANTINS***
+
 Concept utilisé dans les systèmes distribués pour assurer un consensus fiable et sécurisé, même en présence de nœuds défectueux ou malveillants. 
 
 Ce concept est lié au [problème des généraux byzantins](/dictionnaire/P.md#prob.-des-généraux-byzantins), une métaphore utilisée pour illustrer les défis de la coordination et de la prise de décision dans un système distribué où les acteurs peuvent ne pas se faire confiance.
