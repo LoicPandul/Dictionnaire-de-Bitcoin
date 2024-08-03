@@ -54,22 +54,16 @@ Bibliothèque de stockage de clés-valeurs légère, rapide et open-source, con�
 
 ## LIBSECP256K1
 
-Bibliothèque C de haute performance et de haute sécurité pour les signatures numériques et autres primitives sur la courbe elliptique **secp256k1**.
+Bibliothèque C de haute performance et de haute sécurité pour les signatures numériques et d'autres primitives cryptographiques sur la courbe elliptique `secp256k1`. Puisque cette courbe n'a jamais été largement utilisée en dehors de Bitcoin (contrairement à la courbe `secp256r1` souvent préférée), cette bibliothèque vise à être la référence la plus complète pour son utilisation. Le développement de libsecp256k1 a été principalement orienté vers les besoins de Bitcoin, et les fonctionnalités destinées à d'autres applications peuvent être moins testées ou vérifiées. Une utilisation appropriée de cette bibliothèque nécessite une attention particulière, afin de s'assurer qu'elle convienne aux objectifs spécifiques des autres applications que Bitcoin.
 
-secp256k1 n'ayant été presque jamais utilisé autre part que sur Bitcoin, cette bibliothèque est destinée à être la plus complète sur le sujet. 
-Cependant, son développement a été principalement axé sur Bitcoin, le reste étant moins testées ou vérifiées.
-Une utilisation correcte nécessite une certaine attention et la prise en compte du fait que la bibliothèque est adaptée à l'objectif de votre applicati
+La bibliothèque libsecp256k1 offre une variété de fonctionnalités, notamment :
+* La signature ECDSA-secp256k1 et la vérification, ainsi que la génération de clés cryptographiques ;
+* Des opérations additives et multiplicatives sur les clés secrètes et publiques ;
+* La sérialisation et l'analyse des clés secrètes, des clés publiques et des signatures ;
+* La signature et la génération de clés publiques à temps constant et à accès mémoire constant ;
+* Et une multitude d'autres primitives cryptographiques.
 
-La librairie comporte plusieurs caractéristiques comme :
-
- - La signature/vérification ECDSA-secp256k1 et génération de clés.
- - Une modification additive et multiplicative des clés secrètes et publiques.
- - La sérialisation et analyse des clés secrètes, des clés publiques et des signatures.
- - La signature et génération de clés publiques à temps constant et à accès mémoire constant.
- - Et bien d'autres...
-
-> Pour en savoir plus sur la courbe [SECP256K1](./S.md#SECP256K1) <br>
-> Sources : [https://github.com/bitcoin-core/secp256k1](https://github.com/bitcoin-core/secp256k1)
+> ► *Pour plus d'informations, voir la définition de [**SECP256K1**](./S.md#secp256k1). Source : https://github.com/bitcoin-core/secp256k1.*
 
 ## LIGHTNING NETWORK
 
