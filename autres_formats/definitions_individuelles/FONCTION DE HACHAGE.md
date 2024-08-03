@@ -1,5 +1,7 @@
 ## FONCTION DE HACHAGE
 
+► ***EN : HASH FUNCTION***
+
 Fonction mathématique qui prend une entrée de taille variable (appelée message) et produit une sortie de taille fixe (appelée hash, hachage, condensat ou empreinte). Les fonctions de hachage sont des primitives largement utilisées en cryptographie. Elles présentent des propriétés spécifiques qui les rendent appropriées pour une utilisation dans des contextes sécurisés :
 * Résistance aux préimages : il doit être très difficile de trouver un message donnant un hachage spécifique, c'est-à-dire de trouver une préimage $m$ pour un hash $h$ tel que $h = H(m)$, où $H$ est la fonction de hachage ;
 * Résistance aux secondes préimages : étant donné un message $m_1$, il doit être très difficile de trouver un autre message $m_2$ (différent de $m_1$) tel que $H(m_1) = H(m_2)$ ;
@@ -10,6 +12,4 @@ Dans le contexte de Bitcoin, les fonctions de hachage sont utilisées à plusieu
 * `SHA256` simple pour les sommes de contrôle des phrases mnémoniques ;
 * `SHA512` au sein des algorithmes `HMAC` et `PBKDF2` utilisés dans le processus de dérivation des portefeuilles déterministes et hiérarchiques ;
 * `HASH160`, qui décrit une utilisation successive d'un `SHA256` et d'un `RIPEMD160`. `HASH160` est utilisé dans le processus de génération des adresses de réception (sauf P2PK et P2TR) et dans le calcul des empreintes de clés parents pour les clés étendues.
-
-> ► *En anglais, on parle de « hash function ».*
 

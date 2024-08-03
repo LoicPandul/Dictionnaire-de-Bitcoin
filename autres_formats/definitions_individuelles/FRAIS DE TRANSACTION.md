@@ -1,5 +1,7 @@
 ## FRAIS DE TRANSACTION
 
+► ***EN : TRANSACTION FEES***
+
 Les frais de transaction représentent une somme qui vise à rémunérer les mineurs pour leur participation au mécanisme de la preuve de travail. Ces frais incitent les mineurs à inclure les transactions dans les blocs qu'ils créent. Ils sont le résultat de la différence entre le montant total des inputs et le montant total des outputs d’une transaction :
 
 ```text
@@ -19,5 +21,3 @@ fd456524104a6674693c29946543f8a0befccce5a352bda55ec8559fc630f5f3
 Dans cet exemple précis, c’était une transaction initiée par le directeur de la pool de minage F2Pool. En tant qu’utilisateur normal, la limite inférieure est donc actuellement de `1 sat/vBytes`.
 
 Il convient également de tenir compte les limites de purge. En période de forte congestion, les mempools des nœuds purgent leurs transactions en attente en dessous d'un certain seuil, afin de respecter leur limite de RAM attribuée. Cette limite est librement choisie par l'utilisateur, mais beaucoup laissent la valeur de Bitcoin Core par défaut à 300 Go. Elle peut être modifiée dans le fichier `bitcoin.conf` avec le paramètre `maxmempool`.
-
-> ► *En anglais, on parle de « transaction fees ».*

@@ -34,8 +34,8 @@
 ### Termes techniques les plus rencontrés :
 1. ***bitcoin*** - 1232
 2. ***transaction*** - 948
-3. ***bloc*** - 596
-4. ***adresse*** - 342
+3. ***bloc*** - 597
+4. ***adresse*** - 343
 5. ***information*** - 333
 6. ***script*** - 321
 7. ***portefeuille*** - 279
