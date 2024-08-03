@@ -1,5 +1,7 @@
 ## ANONSETS (ANONYMITY SETS)
 
+► ***FR : ENSEMBLES D'ANONYMAT***
+
 Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d'un UTXO particulier. Plus spécifiquement, ils mesurent le nombre d'UTXOs indistinguables au sein de l'ensemble qui inclut la pièce en étudiée. Puisqu'il faut disposer d'un groupe d'UTXOs identiques, les anonsets sont généralement calculés au sein d'un cycle de coinjoins. Ils permettent, le cas échéant, de juger de la qualité des coinjoins. Un anonset de grande taille signifie un niveau d'anonymat accru, car il devient difficile de distinguer un UTXO spécifique au sein de l'ensemble. Deux types d'anonsets existent :
 * L'ensemble d'anonymat prospectif ;
 * L'ensemble d'anonymat rétrospectif.

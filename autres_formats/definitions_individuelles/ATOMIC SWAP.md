@@ -1,5 +1,7 @@
 ## ATOMIC SWAP
 
+► ***FR : ÉCHANGE ATOMIQUE***
+
 Technologie permettant un échange de cryptomonnaies directement entre deux parties, sans besoin de confiance et sans nécessiter d'intermédiaire. Ces échanges sont dits « atomiques » car ils ne peuvent donner que deux résultats :
 * Soit l'échange réussi et les deux participants se sont effectivement échangé leurs cryptomonnaies ;
 * Soit l'échange échoue et les deux participants repartent avec leurs cryptomonnaies de départ.

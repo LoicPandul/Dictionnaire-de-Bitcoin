@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 758 `**
+**Nombre total de définitions : ` 757 `**
 
 ### A
 
@@ -771,7 +771,6 @@
 - [TRANSACTION STANDARD](./dictionnaire/T.md#transaction-standard)
 - [TUMBLEBIT](./dictionnaire/T.md#tumblebit)
 - [TWEAK (CLÉ PUBLIQUE)](./dictionnaire/T.md#tweak-clé-publique)
-- [TWO-WAY PEG (2WP)](./dictionnaire/T.md#two-way-peg-2wp)
 - [TXID (TRANSACTION IDENTIFIER)](./dictionnaire/T.md#txid-transaction-identifier)
 - [TYPE DE DEVISE](./dictionnaire/T.md#type-de-devise)
 

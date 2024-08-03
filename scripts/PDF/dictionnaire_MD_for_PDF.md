@@ -200,7 +200,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [ADRESSE DE RÉCEPTION](#adresse-de-réception) |    22 | [ARBRE DE MERKLE](#arbre-de-merkle) |    28 |
 | [ADRESSE STATIQUE](#adresse-statique) |    23 | [ARK](#ark)                    |    29 |
 | [AGORISME](#agorisme)          |    23 | [ASCII](#ascii)                |    29 |
-| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    23 | [ASIC](#asic)                  |    29 |
+| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    23 | [ASIC](#asic)                  |    30 |
 | [ALGORITHME](#algorithme)      |    24 | [ASICBOOST](#asicboost)        |    30 |
 | [ALTCOIN](#altcoin)            |    24 | [ASMAP](#asmap)                |    30 |
 | [ANALYSE DE CHAINE](#analyse-de-chaine) |    24 | [ASSUME UTXO](#assume-utxo)    |    30 |
@@ -684,9 +684,9 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [TÉMOIN DE TRANSACTION](#témoin-de-transaction) |   257 | [TRANSACTION STANDARD](#transaction-standard) |   260 |
 | [TESTNET](#testnet)            |   257 | [TUMBLEBIT](#tumblebit)        |   260 |
 | [THE DAO](#the-dao)            |   258 | [TWEAK (CLÉ PUBLIQUE)](#tweak-clé-publique) |   260 |
-| [TIDES](#tides)                |   258 | [TWO-WAY PEG (2WP)](#two-way-peg-2wp) |   261 |
-| [TIMELOCK](#timelock)          |   258 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   261 |
-| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   258 | [TYPE DE DEVISE](#type-de-devise) |   262 |
+| [TIDES](#tides)                |   258 | [TXID (TRANSACTION IDENTIFIER)](#txid-transaction-identifier) |   261 |
+| [TIMELOCK](#timelock)          |   258 | [TYPE DE DEVISE](#type-de-devise) |   262 |
+| [TOR (THE ONION ROUTER)](#tor-the-onion-router) |   258 |                                |       |
 | | | | |
 
 
@@ -821,6 +821,8 @@ Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations
 
 ## ADRESSE DE RÉCEPTION
 
+► ***EN : BITCOIN ADDRESS***
+
 Information utilisée pour recevoir des bitcoins. Une adresse est généralement construite en hachant une clé publique, à l'aide de `SHA256` et de `RIMPEMD160`, et en ajoutant des métadonnées à ce condensat. Les clés publiques utilisées pour construire une adresse de réception font partie du portefeuille de l'utilisateur et sont donc dérivées depuis sa graine. Par exemple, les adresses SegWit sont composées des informations suivantes : 
 \begin{itemize}
   \item Un HRP pour désigner « bitcoin » :
@@ -846,6 +848,8 @@ Une adresse de réception peut être représentée sous la forme d'une chaîne d
 
 ## ADRESSE STATIQUE
 
+► ***EN : STATIC ADDRESS***
+
 Dans le cadre des Silent Payments, désigne un identifiant unique qui permet de recevoir des paiements sans pour autant produire de réutilisation d'adresse, sans interaction et sans lien visible on-chain entre les différents paiements et l'adresse statique. Cette technique élimine le besoin de générer de nouvelles adresses de réception vierges pour chaque transaction, ce qui permet d'éviter les interactions habituelles dans Bitcoin où le destinataire doit fournir une nouvelle adresse au payeur. C'est un peu l'équivalent du code de paiement réutilisable dans le cadre du BIP47.
 
 Cette adresse est composée de deux clés publiques : $B_{\text{scan}}$ pour le scan et $B_{\text{spend}}$ pour la dépense, concaténées pour former l'adresse statique $B = B_{\text{scan}} \text{ ‖ } B_{\text{spend}}$. Le destinataire publie cette adresse, permettant aux expéditeurs de dériver des adresses de paiement uniques sans interaction supplémentaire avec le destinataire. Pour gérer plusieurs sources de paiements distinctes, on peut ajouter un label à $B_{\text{spend}}$, créant ainsi plusieurs adresses statiques labellisées à partir de $B_1$, $B_2$, etc.). Cela permet de ségréguer les paiements tout en utilisant une seule adresse de base, réduisant ainsi la charge de travail pour le scan de la blockchain. Toutefois, toutes les adresses statiques d'une entité peuvent être facilement associées en raison de l'utilisation commune de $B_{\text{scan}}$.
@@ -854,9 +858,13 @@ Cette adresse est composée de deux clés publiques : $B_{\text{scan}}$ pour le 
 
 ## AGORISME
 
+► ***EN : AGORISM***
+
 Philosophie politique fondée par Samuel Edward Konkin III dans les années 1980. Elle est une extension du libertarianisme, mettant en avant une action directe pour s'extraire des jougs de l'autorité étatique par le biais de la contre-économie, une pratique économique qui se déroule en dehors des cadres régulés par le gouvernement. L'idéologie agoriste repose sur le jusnaturalisme, qui affirme que les droits naturels des individus sont supérieurs aux lois imposées par l'État. Cela inclut la primauté de la propriété privée, le respect de l'intégrité physique, et la liberté de contracter. Les agoristes rejettent toute forme de participation politique traditionnelle comme le vote, qu'ils considèrent comme une validation de l'autorité coercitive de l'État. Ils aspirent à une société où les échanges économiques et sociaux se déroulent librement dans un marché ouvert, appelé l'Agora, visant ainsi à une révolution pacifique pour éroder progressivement le pouvoir de l'État. Leur emblème est d’ailleurs « A3 », pour « Agora, Anarchie, Action ». Le principe de l'agorisme est décrit dans le *Manifeste néo-Libertarien* paru en 1980. Ce papier est établi sur le *Manifeste Libertarien* de Murray Rothbard, mais il va encore plus loin. Beaucoup de bitcoiners se réclament de l'agorisme et pensent que Bitcoin en est l'outil parfait.
 
 ## AJUSTEMENT DE LA DIFFICULTE
+
+► ***EN : DIFFICULTY ADJUSTMENT***
 
 L'ajustement de la difficulté est un processus périodique qui redéfinit la cible de difficulté pour le mécanisme de la preuve de travail (le minage) sur Bitcoin. Cet évènement intervient tous les 2016 blocs (environ toutes les deux semaines). Il vient augmenter ou baisser le facteur de difficulté (également nommé la cible de difficulté), en fonction de la rapidité à laquelle les 2016 derniers blocs ont été trouvés. L’ajustement vise à conserver un taux de production de blocs stable et prévisible, à une fréquence d’un bloc toutes les 10 minutes, malgré les variations de la puissance de calcul déployée par les mineurs. La modification de la difficulté lors de l'ajustement est limitée à un facteur 4. La formule exécutée par les nœuds pour calculer la nouvelle cible est la suivante :
 
@@ -875,6 +883,8 @@ Où :
 
 ## ALGORITHME
 
+► ***EN : ALGORITHM***
+
 Suite finie et non ambiguë d'instructions permettant de réaliser une tâche. Dans le cadre de l'informatique, il s'agit d'un processus écrit dans un langage de programmation qui indique à un ordinateur comment effectuer une mission.
 
 ## ALTCOIN
@@ -882,6 +892,8 @@ Suite finie et non ambiguë d'instructions permettant de réaliser une tâche. D
 Désigne toute cryptomonnaie autre que le bitcoin (BTC). Le terme « altcoin » est la contraction de « alternative » et de « coin » (pièce alternative). Certains bitcoiners maximalistes parlent également de « shitcoins » pour désigner les altcoins.
 
 ## ANALYSE DE CHAINE
+
+► ***EN : CHAIN ANALYSIS***
 
 Pratique qui regroupe toutes les méthodes permettant de tracer les flux de bitcoins sur la blockchain. De façon générale, l’analyse de chaîne s’appuie sur l’observation de caractéristiques sur des échantillons de transactions antérieures. Elle consiste ensuite à repérer ces mêmes caractéristiques sur une transaction que l’on souhaite analyser, et à en déduire des interprétations vraisemblables. Cette méthode de résolution de problème à partir d’une approche pratique, pour trouver une solution suffisamment bonne, c’est ce que l’on appelle une heuristique. Pour vulgariser, l’analyse de chaîne se fait en deux grandes étapes : 
 \begin{itemize}
@@ -900,11 +912,15 @@ Notons que les deux premières heuristiques sur Bitcoin ont été formulées par
 
 ## ANCESTOR MINING
 
+► ***FR : MINAGE DES ANCÊTRES***
+
 Autre nom parfois donné à CPFP (*Child-Pay-For-Parent*). Le minage des ancêtres est le principe selon lequel un mineur ne choisit pas une transaction uniquement sur la base de ses propres frais de transaction, mais prend aussi en compte les frais des transactions ascendantes.
 
 > ► *Pour plus d'informations, voir la définition de [**CPFP (CHILD PAY FOR PARENT)**](#cpfp-child-pay-for-parent).*
 
 ## ANCHOR OUTPUTS
+
+► ***FR : SORTIES D'ANCRAGE***
 
 Proposition qui vise à améliorer la gestion des frais de transaction dans le cadre des canaux Lightning. À chaque changement d'état dans un canal Lightning, les parties prenantes créent et signent une nouvelle transaction d'engagement qui reflète la nouvelle répartition des fonds au sein du canal. Le problème de ce mécanisme réside dans la détermination des frais de transaction au moment de sa création. En effet, les frais de transaction sur le réseau Bitcoin sont sujets à de fortes fluctuations, tant à la hausse qu'à la baisse. Si les frais fixés pour la dernière transaction d'engagement sont insuffisants au moment de la fermeture unilatérale du canal, non seulement la transaction prendra un temps considérable à se confirmer, mais les mécanismes de verrouillage temporel (timelocks) pourraient également permettre un vol des fonds. Les anchor outputs permettent de réserver une petite partie des fonds dans une transaction d'engagement pour couvrir les frais futurs. En cas de congestion du réseau et d'augmentation des frais, les anchor outputs permettent de modifier les frais de transaction après la création de la transaction d'engagement, garantissant ainsi une fermeture suffisamment rapide du canal Lightning.
 
@@ -914,6 +930,8 @@ Fichier utilisé dans le client Bitcoin Core pour stocker les adresses IP des n�
 
 ## ANCRAGE BILATÉRAL
 
+► ***EN : TWO-WAY PEG (2WP)***
+
 Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. L'ancrage bilatéral assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
 \begin{itemize}
   \item Un tiers de confiance unique ;
@@ -921,9 +939,9 @@ Mécanisme qui permet d'établir une connexion entre le système principal de Bi
   \item Les mineurs de la chaîne principale (drivechain).
 \end{itemize}
 
-> ► *En anglais, on parle d'un « two-way peg » ou « 2WP ».*
-
 ## ANONSETS (ANONYMITY SETS)
+
+► ***FR : ENSEMBLES D'ANONYMAT***
 
 Les anonsets servent d'indicateurs pour évaluer le degré de confidentialité d'un UTXO particulier. Plus spécifiquement, ils mesurent le nombre d'UTXOs indistinguables au sein de l'ensemble qui inclut la pièce en étudiée. Puisqu'il faut disposer d'un groupe d'UTXOs identiques, les anonsets sont généralement calculés au sein d'un cycle de coinjoins. Ils permettent, le cas échéant, de juger de la qualité des coinjoins. Un anonset de grande taille signifie un niveau d'anonymat accru, car il devient difficile de distinguer un UTXO spécifique au sein de l'ensemble. Deux types d'anonsets existent :
 \begin{itemize}
@@ -942,6 +960,8 @@ Le second indique le nombre de sources possibles pour une pièce donnée, sachan
 > ► *En français, il est globalement admis d'utiliser le terme « anonset ». On pourrait toutefois le traduire par « ensemble d'anonymat » ou « potentiel d'anonymat ». En anglais et en français, on parle également parfois de « score » pour évoquer les anonsets (score prospectif et score rétrospectif). Pour plus d'informations, voir la définition [**COINJOIN**](#coinjoin).*
 
 ## ANTI MONEY LAUNDERING (AML)
+
+► ***FR : LUTTE CONTRE LE BLANCHIMENT D'ARGENT***
 
 Désigne l'ensemble des procédures, lois et régulations destinées à prévenir le blanchiment d'argent. Ces règles obligent les institutions financières comme les plateformes d'échange de bitcoins à surveiller activement les transactions de leurs clients, à effectuer des vérifications d'identité, à tenir des registres et à signaler les activités suspectes aux autorités.
 
@@ -968,6 +988,8 @@ Sigle de « *Application Programming Interface* ». Dans le contexte général
 Pratique consistant à exploiter les différences de prix du BTC (ou de tout autre actif) entre différentes plateformes d'échange pour réaliser un profit. L'arbitrage implique d'acheter du bitcoin sur une plateforme où le prix est relativement bas et de le vendre simultanément sur une autre plateforme où le prix est plus élevé. Les écarts de prix peuvent survenir en raison de différences dans la liquidité, la demande, les volumes de transaction et les délais de transfert entre les plateformes d'échange. L'arbitrage contribue à équilibrer les prix sur différentes plateformes.
 
 ## ARBRE DE MERKLE
+
+► ***EN : MERKLE TREE***
 
 Un Arbre de Merkle est un accumulateur cryptographique. C’est une méthode pour justifier l’appartenance d’une information donnée à un ensemble plus grand. C'est une structure de données qui facilite la vérification d’informations dans un format compact. Dans le système Bitcoin, les arbres de Merkle sont utilisés pour regrouper et condenser les transactions d'un bloc en un unique hachage, appelé la racine de Merkle (ou « *Root Hash* »). Chaque transaction est hachée, puis les hachages adjacents sont hachés ensemble de façon hiérarchique jusqu'à ce que la racine de Merkle soit obtenue.
 
@@ -1008,7 +1030,7 @@ Sigle de « *American Standard Code for Information Interchange* ». C'est un 
 
 Un ASIC est un composant électronique conçu pour exécuter une fonction spécifique avec une efficacité optimale. Dans le contexte du minage de Bitcoin, les ASIC sont des circuits intégrés spécialisés qui effectuent des opérations de hachage à haute vitesse et faible consommation d'énergie. Ils sont spécialisés dans l'exécution de la fonction de hachage `SHA256` utilisée dans le mécanisme de la preuve de travail. L'ASIC est initialement le nom de la puce. Par extension, l'acronyme « ASIC » vise souvent à désigner également la machine qui héberge cette puce. Ainsi, les ordinateurs spécialisés dans le minage de Bitcoin sont parfois appelés des « ASIC », ou bien des « mineurs ». Les ASIC ont progressivement remplacé les autres méthodes de minage, telles que l'utilisation de processeurs (CPU) et de cartes graphiques (GPU), en raison de leur efficacité énergétique supérieure et de leur taux de hachage bien plus élevé.
 
->*L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
+> ► *L'acronyme « ASIC » désigne en anglais « Application-Specific Integrated Circuit ». En français, ce terme peut être traduit par « Circuit intégré spécifique à une application ».*
 
 ## ASICBOOST
 
@@ -1040,6 +1062,8 @@ L'objectif d'Assume Valid est d'accélérer le processus de synchronisation init
 
 ## ATH (ALL-TIME HIGH)
 
+► ***FR : PLUS HAUT HISTORIQUE***
+
 Désigne le niveau le plus élevé jamais atteint par l'élément étudié. Souvent, l'ATH désigne le plus haut niveau de prix du bitcoin en comparaison avec une monnaie étatique sur une période donnée.
 
 ## ATLC
@@ -1050,6 +1074,8 @@ Sigle de « *Anchor Timelock Contracts* ». C'est un paiement conditionnel uti
 
 ## ATOMIC SWAP
 
+► ***FR : ÉCHANGE ATOMIQUE***
+
 Technologie permettant un échange de cryptomonnaies directement entre deux parties, sans besoin de confiance et sans nécessiter d'intermédiaire. Ces échanges sont dits « atomiques » car ils ne peuvent donner que deux résultats :
 \begin{itemize}
   \item Soit l'échange réussi et les deux participants se sont effectivement échangé leurs cryptomonnaies ;
@@ -1059,6 +1085,8 @@ Technologie permettant un échange de cryptomonnaies directement entre deux part
 Les Atomic Swaps peuvent s'effectuer soit avec une même cryptomonnaie, dans ce cas, on parle également de « *coinswap* », soit entre des cryptomonnaies différentes. Historiquement, ils s'appuyaient sur des « *Hash Time-Locked Contracts* » (HTLC), un système de verrouillage temporel qui garantit la complétude ou l'annulation totale de l'échange, préservant ainsi l'intégrité des fonds des parties impliquées. Cette méthode exigeait des protocoles capables de gérer à la fois les scripts et les timelocks. Toutefois, ces dernières années, la tendance s'est orientée vers l'utilisation des *Adaptor Signatures*. Cette seconde approche présente l'avantage de se passer de scripts, ce qui réduit ainsi les coûts opérationnels. Son autre atout majeur réside dans le fait qu'elle n'exige pas l'emploi d'un hachage identique pour les deux volets de la transaction, ce qui permet d'éviter de révéler un lien entre elles.
 
 ## ATTAQUE DES 51 POUR CENT
+
+► ***EN : 51% ATTACK***
 
 Scénario hypothétique sur le système Bitcoin où un acteur malveillant contrôle plus de 50 % de la puissance de calcul totale du minage (hashrate). Avec une telle dominance, l'attaquant peut manipuler le processus de consensus, permettant des actions malveillantes telles que la double dépense, où les mêmes bitcoins sont dépensés une première fois sur une chaîne finalement rendue désuète, puis une seconde fois sur la chaîne valide. Une autre finalité d'une attaque des 51 % est la censure des transactions. Cependant, réaliser une attaque des 51 % nécessite des ressources financières, humaines, énergétiques et techniques considérables, et rend l'acteur malveillant susceptible d'être découvert avant que l'attaque n'ait lieu. Bien que théoriquement possible, une attaque des 51 % sur Bitcoin est considérée comme très peu probable en raison de la décentralisation du minage et de la grande puissance de calcul actuellement déployée.
 
@@ -6352,17 +6380,6 @@ $$
 Où $G$ est le générateur de la courbe elliptique utilisée. Cette opération permet d'obtenir une nouvelle clé publique dérivée de la clé originale tout en conservant certaines propriétés cryptographiques permettant de l'utiliser. Par exemple, on utilise cette méthode pour les adresses Taproot (P2TR) afin de pouvoir dépenser soit en présentant une signature Schnorr de façon traditionnelle, soit en remplissant l'une des conditions énoncées dans un arbre de Merkle, également appelé « MAST ».
 
 ![](../../dictionnaire/assets/26.png)
-
-## TWO-WAY PEG (2WP)
-
-Mécanisme qui permet d'établir une connexion entre le système principal de Bitcoin et une sidechain (ou une drivechain), c'est-à-dire une chaîne latérale. Le 2WP assure une corrélation de valeur fixe entre les bitcoins sur la blockchain principale et les actifs correspondants sur la sidechain, permettant ainsi de déplacer des bitcoins entre les deux chaînes. Pour ce faire, les bitcoins sont temporairement verrouillés sur la blockchain principale et un montant équivalent d'actifs est émis sur la sidechain. Cela permet de profiter des avantages spécifiques de la sidechain, comme des transactions plus rapides ou des fonctionnalités de confidentialité améliorées, tout en maintenant la valeur des bitcoins utilisés. Lorsque les utilisateurs souhaitent revenir à la blockchain Bitcoin, le processus s'inverse : les actifs sur la sidechain sont détruits et les bitcoins correspondants sont déverrouillés. Il existe de nombreux mécanismes d'ancrages bilatéraux différents qui peuvent reposer sur :
-\begin{itemize}
-  \item Un tiers de confiance unique ;
-  \item Une fédération d'entités (comme sur Liquid) ;
-  \item Les mineurs de la chaîne principale (*drivechain*).
-\end{itemize}
-
-> ► *En français, on parle d'un « ancrage bilatéral ».*
 
 ## TXID (TRANSACTION IDENTIFIER)
 
