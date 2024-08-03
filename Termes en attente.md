@@ -188,7 +188,6 @@ Bitcoin Gold algorithme
 
 
 
-## LIBSECP256K1
 
 
 
