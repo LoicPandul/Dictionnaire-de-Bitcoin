@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 754 `**
+**Nombre total de définitions : ` 752 `**
 
 ### A
 
@@ -303,7 +303,6 @@
 - [EMPREINTE DE PORTEFEUILLE](./dictionnaire/E.md#empreinte-de-portefeuille)
 - [ENDIANNESS](./dictionnaire/E.md#endianness)
 - [ENTÊTE DE BLOC](./dictionnaire/E.md#entête-de-bloc)
-- [ENTRÉE (INPUT)](./dictionnaire/E.md#entrée-input)
 - [ENTROPIE](./dictionnaire/E.md#entropie)
 - [ENTROPIE (ANALYSE)](./dictionnaire/E.md#entropie-analyse)
 - [EREBUS (ATTAQUE)](./dictionnaire/E.md#erebus-attaque)
@@ -630,7 +629,6 @@
 - [PROOF-OF-KEY DAY](./dictionnaire/P.md#proof-of-key-day)
 - [PROOF-OF-WORK](./dictionnaire/P.md#proof-of-work)
 - [PROP (PROPORTIONAL)](./dictionnaire/P.md#prop-proportional)
-- [PROPAGATION](./dictionnaire/P.md#propagation)
 - [PSBT](./dictionnaire/P.md#psbt)
 - [PSEUDO-ALÉATOIRE](./dictionnaire/P.md#pseudo-aléatoire)
 - [PULL REQUEST](./dictionnaire/P.md#pull-request)
