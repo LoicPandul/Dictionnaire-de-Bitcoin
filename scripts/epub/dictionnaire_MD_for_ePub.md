@@ -4,7 +4,7 @@
 Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
 
 
-Version du 30 July 2024
+Version du 03 August 2024
 
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
 
@@ -2393,7 +2393,11 @@ Scénario hypothétique sur le système Bitcoin où un acteur malveillant contr�
 
 ## GOSSIP
 
+Gossip (ou « bavardages ») désigne un algorithme distribué pair à pair (P2P) pour diffuser l'information de manière épidémique à tous les agents du réseau. Pour Bitcoin, Lightning et beaucoup d'autres systèmes distribués, ce protocole permet d'échanger et de synchroniser l'état global des nœuds en peu de cycles. Chaque nœud propage une information à un ou plusieurs voisins choisis aléatoirement ou non, ces derniers, à leur tour, propagent l'information à d'autres voisins et ainsi de suite jusqu'à arriver à un état synchronisé globalement.
+
 Dans le cadre de Lightning, le gossip est un protocole de communication entre les nœuds pour partager les informations sur l'état actuel et la topologie du réseau. Le protocole de gossip permet aux nœuds de connaître l'état dynamique des canaux de paiement et des autres nœuds, afin de faciliter le routage des transactions à travers le réseau sans nécessiter de connexions directes entre tous les nœuds.
+
+> ► réf. [https://dl.acm.org/doi/pdf/10.1145/41840.41841](https://dl.acm.org/doi/pdf/10.1145/41840.41841)
 
 > ► *En français, on pourrait traduire « gossip protocol » par « protocole de bavardage ».*
 
@@ -2725,6 +2729,21 @@ Kit de développement (SDK) pour Lightning. LDK est une collection de bibliothè
 ## LEVELDB
 
 Bibliothèque de stockage de clés-valeurs légère, rapide et open-source, conçue par Google. On l'utilise sur Bitcoin pour stocker l'UTXO set, l'index des transactions et l'index des blocs. Ce système de base de données a été introduit en 2012 dans le cadre de la Pull Request « *Ultraprune* » visant à remplacer BerkeleyDB. Ce changement a eu des répercussions significatives, notamment la création d'une première division de la blockchain avec une réorganisation majeure de 24 blocs le 12 mars 2013. Cet incident a été détaillé dans le BIP50. Plus tard, ce changement de système a même conduit à un hard fork non intentionnel le 15 mai 2013.
+
+## LIBSECP256K1
+
+Bibliothèque C de haute performance et de haute sécurité pour les signatures numériques et d'autres primitives cryptographiques sur la courbe elliptique `secp256k1`. Puisque cette courbe n'a jamais été largement utilisée en dehors de Bitcoin (contrairement à la courbe `secp256r1` souvent préférée), cette bibliothèque vise à être la référence la plus complète pour son utilisation. Le développement de libsecp256k1 a été principalement orienté vers les besoins de Bitcoin, et les fonctionnalités destinées à d'autres applications peuvent être moins testées ou vérifiées. Une utilisation appropriée de cette bibliothèque nécessite une attention particulière, afin de s'assurer qu'elle convienne aux objectifs spécifiques des autres applications que Bitcoin.
+
+La bibliothèque libsecp256k1 offre une variété de fonctionnalités, notamment :
+<ul>
+<li>La signature ECDSA-secp256k1 et la vérification, ainsi que la génération de clés cryptographiques ;</li>
+<li>Des opérations additives et multiplicatives sur les clés secrètes et publiques ;</li>
+<li>La sérialisation et l'analyse des clés secrètes, des clés publiques et des signatures ;</li>
+<li>La signature et la génération de clés publiques à temps constant et à accès mémoire constant ;</li>
+<li>Et une multitude d'autres primitives cryptographiques.</li>
+</ul>
+
+> ► *Pour plus d'informations, voir la définition de [**SECP256K1**](#secp256k1). Source : https://github.com/bitcoin-core/secp256k1.*
 
 ## LIGHTNING NETWORK
 

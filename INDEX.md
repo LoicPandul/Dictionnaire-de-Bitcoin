@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 757 `**
+**Nombre total de définitions : ` 758 `**
 
 ### A
 
@@ -408,6 +408,7 @@
 - [LCB/FT](./dictionnaire/L.md#lcbft)
 - [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
 - [LEVELDB](./dictionnaire/L.md#leveldb)
+- [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
 - [LITTLE-ENDIAN](./dictionnaire/L.md#little-endian)
