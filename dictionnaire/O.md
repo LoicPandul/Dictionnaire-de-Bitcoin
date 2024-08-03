@@ -1,6 +1,8 @@
 ## OBJECTIF
 
-Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif (ou _purpose_ en anglais), défini par le BIP43, représente un niveau de dérivation spécifique. Cet index, situé à la première profondeur de l'arborescence de dérivation (`m / purpose' /`), identifie le standard de dérivation adopté par le portefeuille, afin de faciliter la compatibilité entre différents logiciels de gestion de portefeuille. Par exemple, dans le cas des adresses SegWit (BIP84), l'objectif est noté `/84'/`. Cette méthode permet d'organiser efficacement les clés entre les différents types d'adresses au sein d'un même portefeuille HD. Les index standards utilisés sont :
+► ***EN : PURPOSE***
+
+Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif, défini par le BIP43, représente un niveau de dérivation spécifique. Cet index, situé à la première profondeur de l'arborescence de dérivation (`m / purpose' /`), identifie le standard de dérivation adopté par le portefeuille, afin de faciliter la compatibilité entre différents logiciels de gestion de portefeuille. Par exemple, dans le cas des adresses SegWit (BIP84), l'objectif est noté `/84'/`. Cette méthode permet d'organiser efficacement les clés entre les différents types d'adresses au sein d'un même portefeuille HD. Les index standards utilisés sont :
 * Pour du P2PKH : `44'` ;
 * Pour du P2WPKH-nested-in-P2SH : `49'` ;
 * Pour du P2WPKH : `84'` ;
@@ -12,11 +14,15 @@ Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif (ou _pu
 
 ## OBOE (OFF-BY-ONE ERROR)
 
+► ***FR : ERREUR DE DÉCALAGE UNITAIRE***
+
 Erreur de logique où une boucle itère une fois de trop ou de moins, souvent due à une mauvaise utilisation des opérateurs de comparaison ou de mauvais indices dans la gestion des structures de données. Dans le contexte de Bitcoin, on retrouve ce bug dans le cas du « *dummy element* » dans `OP_CHECKMULTISIG`, où un élément supplémentaire est consommé par erreur.
 
-> ► *En français, on peut traduire ce terme par « erreur de décalage unitaire ». Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
+> ► Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](./D.md#dummy-element) et [**BIP147**](./B.md#bip147).*
 
 ## OBSOLÈTE (BLOC)
+
+► ***EN : STALE / OBSOLETE (BLOCK)***
 
 Fait référence à un bloc sans enfant : un bloc valide, mais exclu de la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de travail accumulé, rendant l'autre « obsolète ». Le processus menant à la production d'un bloc obsolète est le suivant :
 * Deux mineurs trouvent un bloc valide à une même hauteur de chaîne durant un court intervalle de temps. Nommons-les `Bloc A` et `Bloc B` ;
@@ -29,17 +35,23 @@ Fait référence à un bloc sans enfant : un bloc valide, mais exclu de la chaî
 
 ![](assets/9.png)
 
-> ► *En anglais, on parle de « Stale Block ». En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN](./O.md#orphelin)**.*
+> ► *En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète. Pour plus d'informations, voir la définition de **[ORPHELIN](./O.md#orphelin)**.*
 
-## OCTET (BYTE)
+## OCTET
+
+► ***EN : BYTE***
 
 Unité de mesure de données informatiques équivalant à 8 bits. Chaque bit est un chiffre binaire (0 ou 1), ce qui signifie qu'un octet peut représenter 256 (2^8) combinaisons uniques.
 
 ## OFF-CHAIN
 
+► ***FR : HORS-CHAÎNE***
+
 Fait référence aux transactions ou activités plus ou moins liées à Bitcoin qui se produisent en dehors de la blockchain principale, mais qui disposent d'un lien ou d'un ancrage avec celle-ci. Elles ne sont pas immédiatement enregistrées sur la blockchain, mais nécessitent des mécanismes supplémentaires pour assurer leur sécurité et leur finalité. Ces opérations se justifient souvent par un désir d'outrepasser les limitations techniques inhérentes à Bitcoin, afin de disposer de transactions à finalité rapide, à bas frais, avec plus de capacité ou de fonctionnalités.
 
 ## ON-CHAIN
+
+► ***FR : SUR-CHAÎNE***
 
 Désigne les transactions enregistrées directement sur la blockchain Bitcoin. Ce terme s'oppose à « off-chain » qui désigne des opérations qui sont plus ou moins liées avec la blockchain Bitcoin, mais qui se déroulent en dehors de la blockchain principale.
 
@@ -560,11 +572,15 @@ Dans le cadre du protocole Ordinals, c'est un identifiant unique attribué à ch
 
 ## ORDINALS THEORY
 
+► ***FR : THÉORIE DES ORDINALS***
+
 Protocole externe à Bitcoin qui attribue des numéros de série aux sats (la plus petite unité de bitcoin), qui permettent de les tracer de manière individuelle et de les transférer via des transactions Bitcoin. Selon la théorie des Ordinals, chaque sat est numéroté selon l'ordre dans lequel il a été miné et est transféré de manière FIFO (*First-In-First-Out*). L'objectif de cette théorie est de rendre des sats non fongibles selon leur interprétation au sein du protocole Ordinals, afin de leur associer des informations externes comme des images (NFT) que l'on appelle des « inscriptions ».
 
-> ► *En français, on peut traduire ce terme par « Théorie des Ordinals ». Pour plus d'informations, voir les définitions de **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
+> ► *Pour plus d'informations, voir les définitions de **[INSCRIPTIONS](./I.md#inscriptions)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
 
 ## ORPHELIN
+
+► ***EN : ORPHAN BLOCK***
 
 Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin.
 
@@ -582,38 +598,15 @@ Dans le cadre de Bitcoin, l'OSINT peut être utilisée dans le but d'appuyer une
 
 ![](assets/28.png)
 
-## OU EXCLUSIF
-
-Fonction fondamentale de la logique booléenne. Le « Ou exclusif » ou XOR (« *Exclusive or* ») prend deux opérandes booléens, chacun étant vrai ou faux, et produit une sortie vraie uniquement lorsque les deux opérandes diffèrent. Autrement dit, la sortie de l'opération `XOR` est vraie si exactement un (mais pas les deux) des opérandes est vrai. Par exemple, l'opération `XOR` entre `1` et `0` donnera comme résultat `1`. Nous noterons : $1 \oplus 0 = 1$. De même, l'opération `XOR` peut être effectuée sur des séquences plus longues de bits. Par exemple, $10110 \oplus 01110 = 11000$. Chaque bit de la séquence est comparé à son homologue et l'opération `XOR` est appliquée. Voici la table de vérité de l'opération `XOR` :
-
-<div align="center">
-
-| $A$ | $B$ | $A \oplus B$ |
-|:---:|:---:|:------------:|
-| $0$ | $0$ |      $0$     |
-| $0$ | $1$ |      $1$     |
-| $1$ | $0$ |      $1$     |
-| $1$ | $1$ |      $0$     |
-
-</div>
-
-L'opération `XOR` est utilisée dans de nombreux domaines de l'informatique, notamment dans la cryptographie, pour ses attributs intéressants comme : 
-* Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
-* Son associativité : le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
-* Il dispose d'un élément neutre `0` : un opérande xoré à 0 sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
-* Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
-
-Dans le cadre de Bitcoin, on utilise évidemment l'opération `XOR` à de nombreux endroits. Par exemple, le `XOR` est massivement utilisé dans la fonction `SHA256`, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP47 pour chiffrer le code de paiement réutilisable lors de sa transmission. 
-
-Dans le domaine plus général de la cryptographie, le `XOR` peut être utilisé tel quel comme un algorithme de chiffrement symétrique. On appelle cet algorithme le « Masque Jetable » ou le « Chiffre Vernam » du nom de son inventeur. Cet algorithme, bien qu'inutile en pratique du fait de la longueur de la clé, est un des seuls algorithmes de chiffrement reconnus comme inconditionnellement sûrs.
-
 ## OUTBOUND CAPACITY
+
+► ***FR : CAPACITÉ SORTANTE***
 
 Désigne la quantité maximale de bitcoins qu'un nœud peut envoyer à travers un canal spécifique sur le Lightning Network. Elle dépend des fonds que le nœud a engagés dans le canal lors de son ouverture, ou qu'il a reçus lors d'un paiement Lightning ou d'un routage.
 
-> ► *En français, on peut le traduire par « capacité sortante ».*
-
 ## OUTPOINT
+
+► ***FR : POINT DE SORTIE***
 
 Référence unique à une sortie de transaction non dépensée (UTXO). Il est constitué de deux éléments :
 * `txid` : l'identifiant de la transaction qui a créé l'output ;
@@ -631,13 +624,17 @@ L'outpoint est utilisé dans les inputs (`vin`) d'une nouvelle transaction pour 
 
 ## OUTPUT
 
-Traduction anglaise de « sortie ». Dans le contexte de Bitcoin, un output au sein d’une transaction fait référence aux _Unspent Transaction Outputs_ (UTXOs) qui sont créés comme fonds de destination pour le paiement. Plus précisément, il s'agit d'un mécanisme par lequel une transaction distribue des fonds. Une transaction prend des UTXOs, c’est-à-dire des morceaux de bitcoins, comme « inputs » (entrées) et crée de nouveaux UTXOs comme « outputs » (sorties). Ces outputs stipulent une certaine quantité de bitcoins, souvent attribués à une adresse spécifique, ainsi que les conditions sous lesquelles ces fonds peuvent être dépensés ultérieurement.
+► ***FR : SORTIE***
+
+Dans le contexte de Bitcoin, un output au sein d’une transaction fait référence aux _Unspent Transaction Outputs_ (UTXOs) qui sont créés comme fonds de destination pour le paiement. Plus précisément, il s'agit d'un mécanisme par lequel une transaction distribue des fonds. Une transaction prend des UTXOs, c’est-à-dire des morceaux de bitcoins, comme « inputs » (entrées) et crée de nouveaux UTXOs comme « outputs » (sorties). Ces outputs stipulent une certaine quantité de bitcoins, souvent attribués à une adresse spécifique, ainsi que les conditions sous lesquelles ces fonds peuvent être dépensés ultérieurement.
 
 Le rôle de la transaction Bitcoin est donc de consommer des UTXOs en entrées, et de créer des nouveaux UTXOs en sorties. La différence entre les deux correspond aux frais de transactions qui peuvent être récupérés par le mineur gagnant du bloc. Un UTXO est, en essence, la sortie d'une transaction précédente qui n'a pas encore été dépensée. Les outputs de transaction sont donc les créations de nouveaux UTXOs qui seront, à leur tour, potentiellement utilisés comme inputs dans les transactions futures.
 
 D'un point de vue plus large, en informatique, le terme « output » désigne généralement les données en résultat d’une fonction, d’un algorithme, ou d’un système. Par exemple, lorsque l’on passe une donnée dans une fonction de hachage cryptographique, cette information est nommée « input », et le résultat est nommé « output ».
 
 ## OUTPUT LINKING
+
+► ***FR : LIAISON DE SORTIES***
 
 Synonyme parfois utilisé pour parler de réutilisation d'adresse. L'output linking se réfère à la pratique d'utiliser une même adresse de réception pour bloquer plusieurs UTXOs, parfois au sein de plusieurs transactions différentes. Les bitcoins sont généralement bloqués à l'aide d'une paire de clés cryptographique qui correspond à une adresse unique. Puisque la blockchain est publique, il est facile de pouvoir consulter quelles adresses sont associées à combien de bitcoins. En cas de réutilisation d'une même adresse pour plusieurs paiements, on peut imaginer que tous les UTXOs associés appartiennent à une même entité. La réutilisation d'adresse pose donc un problème pour la vie privée de l'utilisateur. Elle permet de faire des liens déterministes entre plusieurs transactions et plusieurs UTXOs, ainsi que de perpétuer un traçage de fonds on-chain.
 
