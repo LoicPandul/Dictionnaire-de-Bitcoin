@@ -1,5 +1,7 @@
 ## OUTPOINT
 
+► ***FR : POINT DE SORTIE***
+
 Référence unique à une sortie de transaction non dépensée (UTXO). Il est constitué de deux éléments :
 * `txid` : l'identifiant de la transaction qui a créé l'output ;
 * `vout` : l'index de l'output dans la transaction.

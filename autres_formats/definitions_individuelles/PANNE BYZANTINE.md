@@ -1,5 +1,7 @@
 ## PANNE BYZANTINE
 
+► ***EN : BYZANTINE FAULT***
+
 La panne byzantine, ou comportement byzantin, est tout comportement d'un système ne respectant pas ses propres spécifications, en donnant des résultats non conformes.
 
 Les « pannes byzantines naturelles » sont couramment distinguées des « pannes byzantines volontaires » : les premières provenant généralement d'erreurs physiques non détectées (mémoire, transmissions réseaux, etc.), tandis que les secondes sont principalement issues d'attaques visant à faire échouer le système (sabotage, malveillance, porte dérobée).

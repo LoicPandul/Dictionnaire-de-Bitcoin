@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 752 `**
+**Nombre total de définitions : ` 745 `**
 
 ### A
 
@@ -368,7 +368,7 @@
 - [HMAC-SHA512](./dictionnaire/H.md#hmac-sha512)
 - [HODL](./dictionnaire/H.md#hodl)
 - [HONG-KONG ROUNDTABLE](./dictionnaire/H.md#hong-kong-roundtable)
-- [HORODATAGE (TIMESTAMP)](./dictionnaire/H.md#horodatage-timestamp)
+- [HORODATAGE](./dictionnaire/H.md#horodatage)
 - [HRP (HUMAN READABLE PART)](./dictionnaire/H.md#hrp-human-readable-part)
 - [HWI](./dictionnaire/H.md#hwi)
 
@@ -377,8 +377,8 @@
 - [I2P](./dictionnaire/I.md#i2p)
 - [IMPLÉMENTATION DE BITCOIN](./dictionnaire/I.md#implémentation-de-bitcoin)
 - [INBOUND CAPACITY](./dictionnaire/I.md#inbound-capacity)
-- [INDEX (NUMÉRO DE CLÉ)](./dictionnaire/I.md#index-numéro-de-clé)
 - [INDEXES/TXINDEX/](./dictionnaire/I.md#indexestxindex)
+- [INDEX (KEY)](./dictionnaire/I.md#index-key)
 - [INITIAL BLOCK DOWNLOAD (IBD)](./dictionnaire/I.md#initial-block-download-ibd)
 - [INPUT](./dictionnaire/I.md#input)
 - [INSCRIPTIONS](./dictionnaire/I.md#inscriptions)
@@ -426,7 +426,7 @@
 - [MAJORITÉ ÉCONOMIQUE](./dictionnaire/M.md#majorité-économique)
 - [MALLÉABILITÉ (TRANSACTION)](./dictionnaire/M.md#malléabilité-transaction)
 - [MAN-IN-THE-MIDDLE (MITM)](./dictionnaire/M.md#man-in-the-middle-mitm)
-- [MAPPER (TO MAP)](./dictionnaire/M.md#mapper-to-map)
+- [MAPPER](./dictionnaire/M.md#mapper)
 - [MARKET CAP (CAPITALIZATION)](./dictionnaire/M.md#market-cap-capitalization)
 - [MASF](./dictionnaire/M.md#masf)
 - [MAST](./dictionnaire/M.md#mast)
@@ -440,7 +440,6 @@
 - [MÉTHODE D'ACTIVATION](./dictionnaire/M.md#méthode-dactivation)
 - [MÉTHODE GÉOMÉTRIQUE](./dictionnaire/M.md#méthode-géométrique)
 - [MINAGE](./dictionnaire/M.md#minage)
-- [MINAGE ÉGOÏSTE](./dictionnaire/M.md#minage-égoïste)
 - [MINAGE FUSIONNÉ](./dictionnaire/M.md#minage-fusionné)
 - [MINAGE FUSIONNÉ AVEUGLE](./dictionnaire/M.md#minage-fusionné-aveugle)
 - [MINEUR](./dictionnaire/M.md#mineur)
@@ -479,7 +478,7 @@
 - [OBJECTIF](./dictionnaire/O.md#objectif)
 - [OBOE (OFF-BY-ONE ERROR)](./dictionnaire/O.md#oboe-off-by-one-error)
 - [OBSOLÈTE (BLOC)](./dictionnaire/O.md#obsolète-bloc)
-- [OCTET (BYTE)](./dictionnaire/O.md#octet-byte)
+- [OCTET](./dictionnaire/O.md#octet)
 - [OFF-CHAIN](./dictionnaire/O.md#off-chain)
 - [ON-CHAIN](./dictionnaire/O.md#on-chain)
 - [ONION_PRIVATE_KEY](./dictionnaire/O.md#onion_private_key)
@@ -567,7 +566,6 @@
 - [ORDINALS THEORY](./dictionnaire/O.md#ordinals-theory)
 - [ORPHELIN](./dictionnaire/O.md#orphelin)
 - [OSINT](./dictionnaire/O.md#osint)
-- [OU EXCLUSIF](./dictionnaire/O.md#ou-exclusif)
 - [OUTBOUND CAPACITY](./dictionnaire/O.md#outbound-capacity)
 - [OUTPOINT](./dictionnaire/O.md#outpoint)
 - [OUTPUT](./dictionnaire/O.md#output)
@@ -603,18 +601,17 @@
 - [PERCOLATION](./dictionnaire/P.md#percolation)
 - [PÉRIMÉ (BLOC)](./dictionnaire/P.md#périmé-bloc)
 - [PÉRIODE DE MATURITÉ](./dictionnaire/P.md#période-de-maturité)
-- [PETIT-BOUTISTE](./dictionnaire/P.md#petit-boutiste)
 - [PHOENIX](./dictionnaire/P.md#phoenix)
 - [PHOENIXD](./dictionnaire/P.md#phoenixd)
 - [PHRASE DE RÉCUPÉRATION](./dictionnaire/P.md#phrase-de-récupération)
-- [PILE (STACK)](./dictionnaire/P.md#pile-stack)
+- [PILE](./dictionnaire/P.md#pile)
 - [PIZZA DAY](./dictionnaire/P.md#pizza-day)
 - [POINT D'ENTRÉE](./dictionnaire/P.md#point-dentrée)
 - [POLICY (MINISCRIPT)](./dictionnaire/P.md#policy-miniscript)
 - [POOL](./dictionnaire/P.md#pool)
-- [POOL DE MINAGE](./dictionnaire/P.md#pool-de-minage)
+- [POOL (MINING)](./dictionnaire/P.md#pool-mining)
 - [POOL HOPPING](./dictionnaire/P.md#pool-hopping)
-- [PORTE DÉROBÉE (BACKDOOR)](./dictionnaire/P.md#porte-dérobée-backdoor)
+- [PORTE DÉROBÉE](./dictionnaire/P.md#porte-dérobée)
 - [PORTEFEUILLE](./dictionnaire/P.md#portefeuille)
 - [PORTEFEUILLE CHAUD (LOGICIEL)](./dictionnaire/P.md#portefeuille-chaud-logiciel)
 - [POT (PAY ON TARGET)](./dictionnaire/P.md#pot-pay-on-target)
@@ -627,7 +624,6 @@
 - [PROB. DES GÉNÉRAUX BYZANTINS](./dictionnaire/P.md#prob-des-généraux-byzantins)
 - [PROFONDEUR](./dictionnaire/P.md#profondeur)
 - [PROOF-OF-KEY DAY](./dictionnaire/P.md#proof-of-key-day)
-- [PROOF-OF-WORK](./dictionnaire/P.md#proof-of-work)
 - [PROP (PROPORTIONAL)](./dictionnaire/P.md#prop-proportional)
 - [PSBT](./dictionnaire/P.md#psbt)
 - [PSEUDO-ALÉATOIRE](./dictionnaire/P.md#pseudo-aléatoire)
@@ -723,7 +719,6 @@
 - [SOFT FORK](./dictionnaire/S.md#soft-fork)
 - [SOMME DE CONTRÔLE (CHECKSUM)](./dictionnaire/S.md#somme-de-contrôle-checksum)
 - [SOROBAN](./dictionnaire/S.md#soroban)
-- [SORTIE (OUTPUT)](./dictionnaire/S.md#sortie-output)
 - [SORTIE LA PLUS GRANDE](./dictionnaire/S.md#sortie-la-plus-grande)
 - [SORTIE NON RENTABLE](./dictionnaire/S.md#sortie-non-rentable)
 - [SPEEDY TRIAL](./dictionnaire/S.md#speedy-trial)
@@ -741,7 +736,6 @@
 - [SURFACE D'ATTAQUE](./dictionnaire/S.md#surface-dattaque)
 - [SWEEP TRANSACTION](./dictionnaire/S.md#sweep-transaction)
 - [SYBIL (ATTAQUE)](./dictionnaire/S.md#sybil-attaque)
-- [SYNCHRONISATION INITIALE (IBD)](./dictionnaire/S.md#synchronisation-initiale-ibd)
 
 ### T
 
@@ -795,7 +789,6 @@
 ### W
 
 - [WABISABI](./dictionnaire/W.md#wabisabi)
-- [WALLET](./dictionnaire/W.md#wallet)
 - [WALLET.DAT](./dictionnaire/W.md#walletdat)
 - [WALLET IMPORT FORMAT (WIF)](./dictionnaire/W.md#wallet-import-format-wif)
 - [WALLETS/DB.LOG](./dictionnaire/W.md#walletsdblog)
