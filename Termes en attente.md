@@ -71,11 +71,6 @@ Cross input signature aggregation
 
 
 
-## DER
-
-*Distinguished Encoding Rules* BIP66
-ATTENTION : TERME DÉJÀ PRÉSENT !
-
 
 ## DESCRIPTORS
 
@@ -193,9 +188,6 @@ Bitcoin Gold algorithme
 LSP
 
 
-## LIMITE D'ÉMISSION
-
-21 millions
 
 
 ## LIQUIDITY ADVERTISEMENTS
