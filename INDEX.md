@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 739 `**
+**Nombre total de définitions : ` 740 `**
 
 ### A
 
@@ -480,6 +480,7 @@
 - [OBSOLÈTE (BLOC)](./dictionnaire/O.md#obsolète-bloc)
 - [OCTET](./dictionnaire/O.md#octet)
 - [OFF-CHAIN](./dictionnaire/O.md#off-chain)
+- [OFFER](./dictionnaire/O.md#offer)
 - [ON-CHAIN](./dictionnaire/O.md#on-chain)
 - [ONION_PRIVATE_KEY](./dictionnaire/O.md#onion_private_key)
 - [ONION_V3_PRIVATE_KEY](./dictionnaire/O.md#onion_v3_private_key)

@@ -508,55 +508,55 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [OBJECTIF](#objectif)          |   172 | [OP_IF (0X63)](#op_if-0x63)    |   182 |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   172 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   183 |
-| [OBSOLÈTE (BLOC)](#obsolète-bloc) |   189 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   183 |
-| [OCTET](#octet)                |   173 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   183 |
-| [OFF-CHAIN](#off-chain)        |   173 | [OP_MAX (0XA4)](#op_max-0xa4)  |   183 |
+| [OBJECTIF](#objectif)          |   172 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   182 |
+| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   172 | [OP_IF (0X63)](#op_if-0x63)    |   183 |
+| [OBSOLÈTE (BLOC)](#obsolète-bloc) |   189 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   183 |
+| [OCTET](#octet)                |   173 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   183 |
+| [OFF-CHAIN](#off-chain)        |   173 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   183 |
+| [OFFER](#offer)                |   174 | [OP_MAX (0XA4)](#op_max-0xa4)  |   183 |
 | [ON-CHAIN](#on-chain)          |   174 | [OP_MIN (0XA3)](#op_min-0xa3)  |   183 |
 | [ONION_PRIVATE_KEY](#onion_private_key) |   174 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   183 |
-| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   174 | [OP_NIP (0X77)](#op_nip-0x77)  |   183 |
-| [OP_0 (0X00)](#op_0-0x00)      |   174 | [OP_NOP (0X61)](#op_nop-0x61)  |   183 |
+| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   174 | [OP_NIP (0X77)](#op_nip-0x77)  |   184 |
+| [OP_0 (0X00)](#op_0-0x00)      |   174 | [OP_NOP (0X61)](#op_nop-0x61)  |   184 |
 | [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   174 | [OP_NOT (0X91)](#op_not-0x91)  |   184 |
-| [OP_1 (0X51)](#op_1-0x51)      |   174 | [OP_NOTIF (0X64)](#op_notif-0x64) |   184 |
-| [OP_1ADD (0X8B)](#op_1add-0x8b) |   174 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   184 |
+| [OP_1 (0X51)](#op_1-0x51)      |   175 | [OP_NOTIF (0X64)](#op_notif-0x64) |   184 |
+| [OP_1ADD (0X8B)](#op_1add-0x8b) |   175 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   184 |
 | [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   175 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   184 |
 | [OP_1SUB (0X8C)](#op_1sub-0x8c) |   175 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   184 |
-| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   175 | [OP_OVER (0X78)](#op_over-0x78) |   184 |
-| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   175 | [OP_PICK (0X79)](#op_pick-0x79) |   184 |
+| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   175 | [OP_OVER (0X78)](#op_over-0x78) |   185 |
+| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   175 | [OP_PICK (0X79)](#op_pick-0x79) |   185 |
 | [OP_2DUP (0X6E)](#op_2dup-0x6e) |   175 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   185 |
 | [OP_2OVER (0X70)](#op_2over-0x70) |   176 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   185 |
 | [OP_2ROT (0X71)](#op_2rot-0x71) |   176 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   185 |
 | [OP_2SWAP (0X72)](#op_2swap-0x72) |   177 | [OP_RETURN (0X6A)](#op_return-0x6a) |   185 |
 | [OP_3DUP (0X6F)](#op_3dup-0x6f) |   177 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   185 |
 | [OP_ABS (0X90)](#op_abs-0x90)  |   178 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   185 |
-| [OP_ADD (0X93)](#op_add-0x93)  |   178 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   185 |
-| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   178 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   185 |
+| [OP_ADD (0X93)](#op_add-0x93)  |   178 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   186 |
+| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   178 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   186 |
 | [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   178 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   186 |
 | [OP_CAT (0X7E)](#op_cat-0x7e)  |   178 | [OP_SIZE (0X82)](#op_size-0x82) |   186 |
 | [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   178 | [OP_SUB (0X94)](#op_sub-0x94)  |   186 |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   178 | [OP_SUCCESS](#op_success)      |   187 |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   179 | [OP_SUCCESS](#op_success)      |   187 |
 | [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   179 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   186 |
-| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   179 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   186 |
-| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   179 | [OP_TRUE (0X51)](#op_true-0x51) |   186 |
+| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   179 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   187 |
+| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   179 | [OP_TRUE (0X51)](#op_true-0x51) |   187 |
 | [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   180 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   187 |
 | [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   180 | [OP_VER (0X62)](#op_ver-0x62)  |   187 |
 | [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   180 | [OP_VERIFY (0X69)](#op_verify-0x69) |   187 |
-| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   180 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   187 |
-| [OP_DEPTH (0X74)](#op_depth-0x74) |   181 | [OPCODES](#opcodes)            |   187 |
+| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   181 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   187 |
+| [OP_DEPTH (0X74)](#op_depth-0x74) |   181 | [OPCODES](#opcodes)            |   188 |
 | [OP_DROP (0X75)](#op_drop-0x75) |   181 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   188 |
 | [OP_DUP (0X76)](#op_dup-0x76)  |   181 | [ORACLE](#oracle)              |   188 |
 | [OP_ELSE (0X67)](#op_else-0x67) |   181 | [ORDINAL NUMBER](#ordinal-number) |   188 |
 | [OP_ENDIF (0X68)](#op_endif-0x68) |   181 | [ORDINALS THEORY](#ordinals-theory) |   188 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |   181 | [ORPHELIN](#orphelin)          |   188 |
-| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   181 | [OSINT](#osint)                |   189 |
-| [OP_EVAL](#op_eval)            |   181 | [OUTBOUND CAPACITY](#outbound-capacity) |   190 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |   181 | [ORPHELIN](#orphelin)          |   189 |
+| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   182 | [OSINT](#osint)                |   189 |
+| [OP_EVAL](#op_eval)            |   182 | [OUTBOUND CAPACITY](#outbound-capacity) |   190 |
 | [OP_FALSE (0X00)](#op_false-0x00) |   182 | [OUTPOINT](#outpoint)          |   190 |
 | [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   182 | [OUTPUT](#output)              |   190 |
 | [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   182 | [OUTPUT LINKING](#output-linking) |   191 |
 | [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   182 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   191 |
 | [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   182 | [OVERT ASICBOOST](#overt-asicboost) |   193 |
-| [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   182 |                                |       |
 | | | | |
 
 
@@ -4430,6 +4430,12 @@ Unité de mesure de données informatiques équivalant à 8 bits. Chaque bit est
 ► ***FR : HORS-CHAÎNE***
 
 Fait référence aux transactions ou activités plus ou moins liées à Bitcoin qui se produisent en dehors de la blockchain principale, mais qui disposent d'un lien ou d'un ancrage avec celle-ci. Elles ne sont pas immédiatement enregistrées sur la blockchain, mais nécessitent des mécanismes supplémentaires pour assurer leur sécurité et leur finalité. Ces opérations se justifient souvent par un désir d'outrepasser les limitations techniques inhérentes à Bitcoin, afin de disposer de transactions à finalité rapide, à bas frais, avec plus de capacité ou de fonctionnalités.
+
+## OFFER
+
+► ***FR : OFFRE / DEMANDE DE PAIEMENT RÉUTILISABLE***
+
+Dans le cadre de BOLT12, les « *offers* » sont des QR codes statiques pour effectuer plusieurs paiements sur le Lightning Network. Contrairement aux invoices classiques, les *offers* peuvent être réutilisées. Elles permettent de générer plusieurs demandes d'invoices. Lorsqu'un utilisateur scanne un QR code contenant une *offer*, il envoie un message pour demander une nouvelle invoice au nœud Lightning associé. Le nœud répond avec une invoice que le payeur peut utiliser. Les *offers* permettent ainsi de disposer d'un identifiant unique pour recevoir de nombreux paiement de la part de plusieurs utilisateurs différents sur Lightning.
 
 ## ON-CHAIN
 
