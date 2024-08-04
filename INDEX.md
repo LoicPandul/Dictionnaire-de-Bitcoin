@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 740 `**
+**Nombre total de définitions : ` 744 `**
 
 ### A
 
@@ -404,6 +404,7 @@
 - [LABEL (SILENT PAYMENTS)](./dictionnaire/L.md#label-silent-payments)
 - [LCB/FT](./dictionnaire/L.md#lcbft)
 - [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
+- [LEDGER](./dictionnaire/L.md#ledger)
 - [LEVELDB](./dictionnaire/L.md#leveldb)
 - [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
@@ -622,6 +623,7 @@
 - [PRÉFIXES BINAIRES](./dictionnaire/P.md#préfixes-binaires)
 - [PREMIUM](./dictionnaire/P.md#premium)
 - [PREUVE DE TRAVAIL](./dictionnaire/P.md#preuve-de-travail)
+- [PRIME DE PROXIMITÉ](./dictionnaire/P.md#prime-de-proximité)
 - [PROB. DES GÉNÉRAUX BYZANTINS](./dictionnaire/P.md#prob-des-généraux-byzantins)
 - [PROFONDEUR](./dictionnaire/P.md#profondeur)
 - [PROOF-OF-KEY DAY](./dictionnaire/P.md#proof-of-key-day)
@@ -646,6 +648,7 @@
 - [RÈGLES DE CONSENSUS](./dictionnaire/R.md#règles-de-consensus)
 - [RÈGLES DE STANDARDISATION](./dictionnaire/R.md#règles-de-standardisation)
 - [REGTEST](./dictionnaire/R.md#regtest)
+- [RELAIS](./dictionnaire/R.md#relais)
 - [RÉSEAU BITCOIN](./dictionnaire/R.md#réseau-bitcoin)
 - [RÉSERVES FRACTIONNAIRES](./dictionnaire/R.md#réserves-fractionnaires)
 - [RÉSISTANCE AU PARTITIONNEMENT](./dictionnaire/R.md#résistance-au-partitionnement)
@@ -775,6 +778,7 @@
 
 - [VANITY (ADDRESS)](./dictionnaire/V.md#vanity-address)
 - [VANITYGEN](./dictionnaire/V.md#vanitygen)
+- [VARIANCE](./dictionnaire/V.md#variance)
 - [VERSIONNAGE](./dictionnaire/V.md#versionnage)
 - [VIN](./dictionnaire/V.md#vin)
 - [VOUT](./dictionnaire/V.md#vout)
