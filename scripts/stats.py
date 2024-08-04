@@ -35,14 +35,14 @@ def mettre_a_jour_readme(chemin_readme, total_definitions):
 
     badge_definitions = f'<p align="center">\n  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-{total_definitions}-black" alt="Nombre de définitions">\n</p>'
 
-    contenu = re.sub(
+    pattern = re.compile(
         r'(\[!\[Cover Image\]\(./img/cover.png\)\]\(https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf\))\n<p align="center">\n  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-.*?-black" alt="Nombre de définitions">\n</p>',
-        r'\1\n' + badge_definitions,
-        contenu,
-        flags=re.DOTALL
+        re.DOTALL
     )
 
-    if '<img src="https://img.shields.io/badge/Nombre%20de%20définitions-' not in contenu:
+    if pattern.search(contenu):
+        contenu = pattern.sub(r'\1\n' + badge_definitions, contenu)
+    else:
         contenu = contenu.replace(
             '[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)',
             '[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)\n' + badge_definitions
@@ -50,6 +50,7 @@ def mettre_a_jour_readme(chemin_readme, total_definitions):
 
     with open(chemin_readme, 'w', encoding='utf-8') as fichier_readme:
         fichier_readme.write(contenu)
+
 
 
 chemin_base = os.path.dirname(os.path.dirname(__file__))
