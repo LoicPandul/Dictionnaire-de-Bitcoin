@@ -1,5 +1,7 @@
 ## TIMELOCK
 
+► ***FR : VERROUILLAGE TEMPOREL***
+
 Primitive de contrat intelligent qui permet de définir une condition temporelle à remplir pour qu'une transaction puisse être ajoutée à un bloc. Il existe deux types de timelocks sur Bitcoin : 
 * Le timelock absolu, qui spécifie un moment précis avant lequel la transaction ne peut être incluse dans un bloc ; 
 * Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
