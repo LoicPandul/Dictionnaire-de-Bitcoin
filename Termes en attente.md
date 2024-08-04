@@ -71,7 +71,6 @@ Cross input signature aggregation
 
 
 
-
 ## DESCRIPTORS
 
 
@@ -186,8 +185,6 @@ Bitcoin Gold algorithme
 ## LIGHTNING SERVICE PROVIDER
 
 LSP
-
-
 
 
 ## LIQUIDITY ADVERTISEMENTS

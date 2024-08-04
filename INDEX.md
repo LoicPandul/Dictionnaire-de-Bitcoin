@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 744 `**
+**Nombre total de définitions : ` 748 `**
 
 ### A
 
@@ -171,7 +171,8 @@
 - [BOLT](./dictionnaire/B.md#bolt)
 - [BOUNTY](./dictionnaire/B.md#bounty)
 - [BRANCH-AND-BOUND](./dictionnaire/B.md#branch-and-bound)
-- [BRANCHE](./dictionnaire/B.md#branche)
+- [BRANCHE (BITCOIN)](./dictionnaire/B.md#branche-bitcoin)
+- [BRANCHE (GIT)](./dictionnaire/B.md#branche-git)
 - [BRC-20](./dictionnaire/B.md#brc-20)
 - [BTC](./dictionnaire/B.md#btc)
 - [BTCPAY SERVER](./dictionnaire/B.md#btcpay-server)
@@ -379,6 +380,7 @@
 - [INBOUND CAPACITY](./dictionnaire/I.md#inbound-capacity)
 - [INDEX (KEY)](./dictionnaire/I.md#index-key)
 - [INDEXES/TXINDEX/](./dictionnaire/I.md#indexestxindex)
+- [INFLATION](./dictionnaire/I.md#inflation)
 - [INITIAL BLOCK DOWNLOAD (IBD)](./dictionnaire/I.md#initial-block-download-ibd)
 - [INPUT](./dictionnaire/I.md#input)
 - [INSCRIPTIONS](./dictionnaire/I.md#inscriptions)
@@ -402,12 +404,14 @@
 
 - [LABEL](./dictionnaire/L.md#label)
 - [LABEL (SILENT PAYMENTS)](./dictionnaire/L.md#label-silent-payments)
+- [LATENCE](./dictionnaire/L.md#latence)
 - [LCB/FT](./dictionnaire/L.md#lcbft)
 - [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
 - [LEDGER](./dictionnaire/L.md#ledger)
 - [LEVELDB](./dictionnaire/L.md#leveldb)
 - [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
+- [LIMITE D'ÉMISSION](./dictionnaire/L.md#limite-démission)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
 - [LITTLE-ENDIAN](./dictionnaire/L.md#little-endian)
 - [LND](./dictionnaire/L.md#lnd)
