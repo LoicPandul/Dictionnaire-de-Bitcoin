@@ -38,14 +38,6 @@ Créée par Jeff Garzik en 2011, aujourd'hui hébergée sur Google Group https:/
 
 
 
-## BTC SUITE
-
-
-
-## CHAMPION (BIP)
-
-
-
 ## CISA
 
 Cross input signature aggregation
@@ -178,10 +170,6 @@ Bitcoin Gold algorithme
 
 
 
-## LIBBITCOIN
-
-
-
 ## LIGHTNING SERVICE PROVIDER
 
 LSP
@@ -192,10 +180,6 @@ LSP
 
 
 ## LIQUIDITÉS (LIGHTNING)
-
-
-
-## LOCKTIME
 
 
 
@@ -224,14 +208,6 @@ LSP
 
 
 ## MYSTERY SHOPPER PAYMENTS
-
-
-
-## MÉLANGEUR
-
-
-
-## NFT
 
 
 
