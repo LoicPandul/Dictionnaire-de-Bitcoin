@@ -4,10 +4,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-757-black" alt="Nombre de définitions">
-</p>
-
-<p align="center">
   <a href="https://x.com/Loic_Pandul">
     <img src="https://img.shields.io/twitter/follow/Loic_Pandul?style=social" alt="Suivez-moi sur X">
   </a>
