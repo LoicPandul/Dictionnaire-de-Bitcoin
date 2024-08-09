@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 749 `**
+**Nombre total de définitions : ` 753 `**
 
 ### A
 
@@ -193,6 +193,7 @@
 - [CHAINE INTERNE](./dictionnaire/C.md#chaine-interne)
 - [CHAINSPLIT](./dictionnaire/C.md#chainsplit)
 - [CHAINSTATE/](./dictionnaire/C.md#chainstate)
+- [CHAMPION (BIP)](./dictionnaire/C.md#champion-bip)
 - [CHANGE](./dictionnaire/C.md#change)
 - [CHANNEL FACTORIES](./dictionnaire/C.md#channel-factories)
 - [CHARGE UTILE](./dictionnaire/C.md#charge-utile)
@@ -410,6 +411,7 @@
 - [LDK (LIGHTNING DEV KIT)](./dictionnaire/L.md#ldk-lightning-dev-kit)
 - [LEDGER](./dictionnaire/L.md#ledger)
 - [LEVELDB](./dictionnaire/L.md#leveldb)
+- [LIBBITCOIN](./dictionnaire/L.md#libbitcoin)
 - [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
 - [LIMITE D'ÉMISSION](./dictionnaire/L.md#limite-démission)
@@ -438,6 +440,7 @@
 - [MAST](./dictionnaire/M.md#mast)
 - [MASTER FINGERPRINT](./dictionnaire/M.md#master-fingerprint)
 - [MAX_BLOC_SIZE](./dictionnaire/M.md#max_bloc_size)
+- [MÉLANGEUR](./dictionnaire/M.md#mélangeur)
 - [MEMPOOL](./dictionnaire/M.md#mempool)
 - [MEMPOOL.DAT](./dictionnaire/M.md#mempooldat)
 - [MERGE](./dictionnaire/M.md#merge)
@@ -466,6 +469,7 @@
 - [NESTED SEGWIT](./dictionnaire/N.md#nested-segwit)
 - [NETWORK-ADJUSTED TIME (NAT)](./dictionnaire/N.md#network-adjusted-time-nat)
 - [NEW YORK AGREEMENT (NYA)](./dictionnaire/N.md#new-york-agreement-nya)
+- [NFT](./dictionnaire/N.md#nft)
 - [NLOCKTIME](./dictionnaire/N.md#nlocktime)
 - [NO2X](./dictionnaire/N.md#no2x)
 - [NOEUD](./dictionnaire/N.md#noeud)

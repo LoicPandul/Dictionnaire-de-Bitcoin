@@ -1203,6 +1203,14 @@ Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Cor
 
 > ► *Pour plus d'informations, voir la définition de [**UTXO SET**](#utxo-set).*
 
+## CHAMPION (BIP)
+
+► ***EN : CHAMPION (BIP)***
+
+Dans le contexte du développement de Bitcoin Core (l'implémentation majoritaire de Bitcoin) le champion est la personne qui rédige et prend en charge la gestion d'un BIP (proposition d'amélioration de Bitcoin). Le champion est responsable de rédiger le BIP en suivant le processus formel, de le défendre auprès de la communauté, de répondre aux questions et de guider les discussions pour affiner la proposition. Il travaille également à obtenir le consensus nécessaire pour que le BIP soit accepté et implémenté. Il peut
+
+> ► *Le champion est également parfois nommé « auteur ». On retrouve d'ailleurs son nom noté derrière l'entête « Author » dans les BIPs. Il peut parfois y avoir plusieurs champions pour un même BIP. Pour plus d'informations, voir la définition de [**BIP**](#bip).*
+
 ## CHANGE
 
 Dans le cadre des transactions Bitcoin, fait référence à l'UTXO créé avec les fonds restants après que le paiement effectif a été satisfait. Lorsque l'on utilise en entrées des UTXOs avec une quantité de bitcoins supérieure au montant nécessaire pour le paiement effectif et les frais de transaction, le surplus est un UTXO renvoyé à une adresse interne du portefeuille, appelée adresse de change. Le change représente cet UTXO. Par exemple, si vous souhaitez payer une baguette qui coute `4 000 sats` avec un UTXO de `10 000 sats`, vous allez créer dans votre transaction un change de `6 000 sats` (si l'on néglige les frais de transaction).
@@ -1736,6 +1744,8 @@ Proposition qui vise à améliorer la confidentialité du routage des transactio
 ## DARKWALLET
 
 Logiciel de portefeuille Bitcoin axé sur la confidentialité, lancé par Amir Taaki et Cody Wilson en 2014, fonctionnant comme une extension pour le navigateur Google Chrome. DarkWallet disposait de fonctionnalités pour améliorer la confidentialité de l'utilisateur de Bitcoin, telles que les paiements furtifs et les coinjoins. Son développement a été abandonné depuis janvier 2015.
+
+![](../../dictionnaire/assets/54.png)
 
 ## DATABASE/
 
@@ -2730,6 +2740,12 @@ Nom parfois utilisé pour désigner le registre public et distribué qui enregis
 
 Bibliothèque de stockage de clés-valeurs légère, rapide et open-source, conçue par Google. On l'utilise sur Bitcoin pour stocker l'UTXO set, l'index des transactions et l'index des blocs. Ce système de base de données a été introduit en 2012 dans le cadre de la Pull Request « *Ultraprune* » visant à remplacer BerkeleyDB. Ce changement a eu des répercussions significatives, notamment la création d'une première division de la blockchain avec une réorganisation majeure de 24 blocs le 12 mars 2013. Cet incident a été détaillé dans le BIP50. Plus tard, ce changement de système a même conduit à un hard fork non intentionnel le 15 mai 2013.
 
+## LIBBITCOIN
+
+Ensemble de bibliothèques écrites en C++ conçues pour créer des applications en lien avec Bitcoin. Libbitcoin offre des bases indépendantes pour développer des applications mobiles, des logiciels et d'autres systèmes autour de Bitcoin. Libbitcoin dispose donc d'une architecture modulaire. L'intégralité des bibliothèques du projet sont distribuées sous licence libre AGPL.
+
+Lancé en 2011 par une équipe de développeurs menée par Amir Taaki, Libbitcoin représente alors la deuxième implémentation complète de Bitcoin, après client originel de Satoshi. Aujourd'hui, Eric Voskuil est le mainteneur principal et le contributeur le plus actif du projet.
+
 ## LIBSECP256K1
 
 Bibliothèque C de haute performance et de haute sécurité pour les signatures numériques et d'autres primitives cryptographiques sur la courbe elliptique `secp256k1`. Puisque cette courbe n'a jamais été largement utilisée en dehors de Bitcoin (contrairement à la courbe `secp256r1` souvent préférée), cette bibliothèque vise à être la référence la plus complète pour son utilisation. Le développement de libsecp256k1 a été principalement orienté vers les besoins de Bitcoin, et les fonctionnalités destinées à d'autres applications peuvent être moins testées ou vérifiées. Une utilisation appropriée de cette bibliothèque nécessite une attention particulière, afin de s'assurer qu'elle convienne aux objectifs spécifiques des autres applications que Bitcoin.
@@ -2906,6 +2922,16 @@ Empreinte de 4 octets (32 bits) de la clé privée maîtresse dans un portefeuil
 ## MAX_BLOC_SIZE
 
 Constante qui spécifie la taille maximale qu'un bloc peut avoir sur Bitcoin. Historiquement, cette limite était fixée à 1 Mo, une mesure mise en place par Satoshi Nakamoto en 2010, afin de prévenir le spam et de maintenir une certaine décentralisation du réseau.
+
+## MÉLANGEUR
+
+► ***EN : MIXER***
+
+Service centralisé permettant de casser l'historique de pièces Bitcoin en mélangeant les fonds de plusieurs utilisateurs. Contrairement au coinjoin, où les utilisateurs conservent le contrôle de leurs fonds tout au long du processus de mixage, un mélangeur prend temporairement possession des bitcoins des utilisateurs, les mélange avec ceux d'autres utilisateurs, puis renvoie les fonds sur de nouvelles adresses.
+
+De nos jours, l'usage des mélangeurs de bitcoins s'estompe au profit des coinjoins chaumiens, qui offrent plus de sécurité en éliminant le besoin de confiance. Contrairement aux mélangeurs, où les utilisateurs doivent confier leurs bitcoins à un opérateur pouvant les subtiliser ou conserver des données sur le processus de mixage, les coinjoins ne présentent pas ces risques.
+
+> ► *Pour plus d'informations, voir la définition de **[COINJOIN](#coinjoin)**.*
 
 ## MEMPOOL
 
@@ -3094,6 +3120,12 @@ Réunion privée qui s'est tenue en 2017, rassemblant plus de 50 entreprises de 
 * Un hard fork destiné à augmenter la taille maximale des blocs de 1 Mo à 2 Mo.
 
 Malgré le signalement positif de plus de 80 % des mineurs, le projet n'a pas su rallier un consensus suffisant, aboutissant à son abandon. Cet événement a été interprété par de nombreux utilisateurs et développeurs comme une tentative d'attaque de Bitcoin.
+
+## NFT
+
+Acronyme de *Non Fongible Token*. Un NFT représente une unité de bitcoin qui, par des utilisateurs d'un protocole de seconde couche, est interprétée non fongible et associée à la propriété d'un actif externe à Bitcoin, tel qu'une image ou tout autre type de donnée.
+
+Sur Bitcoin, des protocoles de seconde couche comme Ordinals et Stamps permettent la création et la gestion de ces NFTs. Ces protocoles sont souvent controversés, car leur activité encombre la blockchain avec des données non financières. Cela peut avoir des conséquences négatives sur le système, notamment induire une charge opérationnelle accrue pour les nœuds complets ou augmenter les frais de transaction par l'influence de facteurs économiques externes.
 
 ## NLOCKTIME
 
@@ -5159,7 +5191,7 @@ Primitive de contrat intelligent qui permet de définir une condition temporelle
 * Le timelock relatif, qui définit un délai à partir de l'acceptation d'une transaction antérieure. 
 Le timelock peut être défini soit sous la forme d'une date exprimée en temps Unix, soit sous la forme d'un numéro de bloc. Enfin, le timelock peut s'appliquer soit à un output de transaction grâce à l'utilisation d'un opcode spécifique dans le script de verrouillage (`OP_CHECKLOCKTIMEVERIFY` ou `OP_CHECKSEQUENCEVERIFY`), soit à une transaction entière grâce à l'utilisation de champs de transaction spécifiques (`nLockTime` ou `nSequence`).
 
-> ► *Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](#op_checksequenceverify-0xb2), [**NLOCKTIME**](#nlocktime) et [**NSEQUENCE**](#nsequence).*
+> ► *On parle également parfois d'un « locktime » pour évoquer un timelock. Pour plus d'informations, voir la définition de [**OP_CHECKLOCKTIMEVERIFY**](#op_checklocktimeverify-0xb1), [**OP_CHECKSEQUENCEVERIFY**](#op_checksequenceverify-0xb2), [**NLOCKTIME**](#nlocktime) et [**NSEQUENCE**](#nsequence).*
 
 ## TOR (THE ONION ROUTER)
 
