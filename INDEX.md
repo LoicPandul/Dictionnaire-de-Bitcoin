@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 748 `**
+**Nombre total de définitions : ` 749 `**
 
 ### A
 
@@ -175,6 +175,7 @@
 - [BRANCHE (GIT)](./dictionnaire/B.md#branche-git)
 - [BRC-20](./dictionnaire/B.md#brc-20)
 - [BTC](./dictionnaire/B.md#btc)
+- [BTCD (BTC SUITE)](./dictionnaire/B.md#btcd-btc-suite)
 - [BTCPAY SERVER](./dictionnaire/B.md#btcpay-server)
 - [BULL MARKET](./dictionnaire/B.md#bull-market)
 - [BYZANTINE FAULT TOLERANCE (BFT)](./dictionnaire/B.md#byzantine-fault-tolerance-bft)

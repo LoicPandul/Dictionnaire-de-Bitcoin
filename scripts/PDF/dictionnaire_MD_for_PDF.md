@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 05 août 2024\newline
+Version du 09 août 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -283,10 +283,10 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP119](#bip119)              |    52 | [BRANCHE (GIT)](#branche-git)  |    70 |
 | [BIP123](#bip123)              |    53 | [BRC-20](#brc-20)              |    70 |
 | [BIP125](#bip125)              |    53 | [BTC](#btc)                    |    71 |
-| [BIP137](#bip137)              |    53 | [BTCPAY SERVER](#btcpay-server) |    71 |
-| [BIP141](#bip141)              |    53 | [BULL MARKET](#bull-market)    |    71 |
-| [BIP143](#bip143)              |    54 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    72 |
-| [BIP144](#bip144)              |    54 |                                |       |
+| [BIP137](#bip137)              |    53 | [BTCD (BTC SUITE)](#btcd-btc-suite) |    71 |
+| [BIP141](#bip141)              |    53 | [BTCPAY SERVER](#btcpay-server) |    71 |
+| [BIP143](#bip143)              |    54 | [BULL MARKET](#bull-market)    |    71 |
+| [BIP144](#bip144)              |    54 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    72 |
 | | | | |
 
 
@@ -1809,7 +1809,7 @@ Surnom donné à l'entrepreneur et investisseur Roger Ver, qui a été un promot
 
 ## BITCOIN KNOTS
 
-Implémentation du protocole Bitcoin. Bitcoin Knots est une alternative au logiciel de référence Bitcoin Core, proposant quelques règles et fonctionnalités différentes, tout en étant compatible avec les autres nœuds. Knots est développé et maintenu par Luke Dashjr.
+Implémentation minoritaire du protocole Bitcoin. Bitcoin Knots est une alternative au logiciel de référence Bitcoin Core, proposant quelques règles et fonctionnalités différentes, tout en étant compatible avec les autres nœuds. Knots est développé et maintenu par Luke Dashjr.
 
 ![](../../dictionnaire/assets/51.png)
 
@@ -1982,6 +1982,10 @@ Standard permettant l'interaction avec des jetons non natifs sur Bitcoin, basé 
 Symbole boursier ou monétaire (*ticker*) utilisé pour représenter une unité de bitcoin sur les plateformes d'échange. Il sert à identifier rapidement le bitcoin parmi d'autres actifs et monnaies. Une unité de bitcoin (1 BTC) est égale à 100 000 000 de satoshis (ou « sats »).
 
 > ► *« BTC » est le symbole historique du bitcoin, mais il ne respecte pas la norme ISO 4217, qui régit les codes monétaires. Selon cette norme, « BT » est assigné au Bhoutan et les monnaies non adossées à un État, telles que le bitcoin, devraient débuter par un « X ». C'est pourquoi certaines organisations utilisent le symbole « XBT » pour le bitcoin. Bien que « XBT » ne soit pas encore officiellement reconnu par la norme ISO 4217, il en respecte néanmoins les critères.*
+
+## BTCD (BTC SUITE)
+
+Implémentation minoritaire du protocole Bitcoin. BTCD est une alternative au logiciel majoritaire Bitcoin Core (notamment Bitcoind). Contrairement à Bitcoin Core, qui est développé en C++, BTCD est codé en Go (golang). Son objectif est de respecter les règles de consensus établies par Bitcoin Core pour assurer une compatibilité avec les autres nœuds du réseau. BTCD est développé dans le cadre du projet BTC Suite.
 
 ## BTCPAY SERVER
 
