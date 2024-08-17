@@ -1,10 +1,11 @@
-**Nombre total de définitions : ` 753 `**
+**Nombre total de définitions : ` 755 `**
 
 ### A
 
 - [ADAPTOR SIGNATURE](./dictionnaire/A.md#adaptor-signature)
 - [ADDR](./dictionnaire/A.md#addr)
 - [ADDR.DAT](./dictionnaire/A.md#addrdat)
+- [ADDRESS SPOOFING](./dictionnaire/A.md#address-spoofing)
 - [ADDRV2](./dictionnaire/A.md#addrv2)
 - [ADRESSE DE RÉCEPTION](./dictionnaire/A.md#adresse-de-réception)
 - [ADRESSE STATIQUE](./dictionnaire/A.md#adresse-statique)
@@ -658,6 +659,7 @@
 - [RÈGLES DE STANDARDISATION](./dictionnaire/R.md#règles-de-standardisation)
 - [REGTEST](./dictionnaire/R.md#regtest)
 - [RELAIS](./dictionnaire/R.md#relais)
+- [REPLAY ATTACK](./dictionnaire/R.md#replay-attack)
 - [RÉSEAU BITCOIN](./dictionnaire/R.md#réseau-bitcoin)
 - [RÉSERVES FRACTIONNAIRES](./dictionnaire/R.md#réserves-fractionnaires)
 - [RÉSISTANCE AU PARTITIONNEMENT](./dictionnaire/R.md#résistance-au-partitionnement)

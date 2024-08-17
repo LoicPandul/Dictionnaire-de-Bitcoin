@@ -2,10 +2,6 @@ Ce document contient une liste de termes relatifs à Bitcoin que je n'ai pas enc
 
 ___
 
-
-
-
-
 ## BCH CODES
 
 Bose, Ray-Chaudhuri et Hocquenghem

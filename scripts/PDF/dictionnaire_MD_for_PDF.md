@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 10 août 2024\newline
+Version du 17 août 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -193,23 +193,24 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ADAPTOR SIGNATURE](#adaptor-signature) |    20 | [ANYPREVOUT (APO)](#anyprevout-apo) |    27 |
-| [ADDR](#addr)                  |    21 | [AOPP](#aopp)                  |    27 |
+| [ADAPTOR SIGNATURE](#adaptor-signature) |    20 | [ANYPREVOUT (APO)](#anyprevout-apo) |    28 |
+| [ADDR](#addr)                  |    21 | [AOPP](#aopp)                  |    28 |
 | [ADDR.DAT](#addr.dat)          |    21 | [API](#api)                    |    28 |
-| [ADDRV2](#addrv2)              |    21 | [ARBITRAGE](#arbitrage)        |    28 |
-| [ADRESSE DE RÉCEPTION](#adresse-de-réception) |    22 | [ARBRE DE MERKLE](#arbre-de-merkle) |    28 |
-| [ADRESSE STATIQUE](#adresse-statique) |    23 | [ARK](#ark)                    |    29 |
-| [AGORISME](#agorisme)          |    23 | [ASCII](#ascii)                |    29 |
-| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    23 | [ASIC](#asic)                  |    30 |
-| [ALGORITHME](#algorithme)      |    24 | [ASICBOOST](#asicboost)        |    30 |
-| [ALTCOIN](#altcoin)            |    24 | [ASMAP](#asmap)                |    30 |
-| [ANALYSE DE CHAINE](#analyse-de-chaine) |    24 | [ASSUME UTXO](#assume-utxo)    |    30 |
-| [ANCESTOR MINING](#ancestor-mining) |    25 | [ASSUME VALID](#assume-valid)  |    31 |
-| [ANCHOR OUTPUTS](#anchor-outputs) |    25 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    31 |
-| [ANCHORS.DAT](#anchors.dat)    |    25 | [ATLC](#atlc)                  |    31 |
-| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    25 | [ATOMIC SWAP](#atomic-swap)    |    31 |
-| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    26 | [ATTAQUE DES 51 POUR CENT](#attaque-des-51-pour-cent) |    32 |
-| [ANTI MONEY LAUNDERING (AML)](#anti-money-laundering-aml) |    27 | [AVG. ROUND DURATION](#avg.-round-duration) |    33 |
+| [ADDRESS SPOOFING](#address-spoofing) |    21 | [ARBITRAGE](#arbitrage)        |    28 |
+| [ADDRV2](#addrv2)              |    22 | [ARBRE DE MERKLE](#arbre-de-merkle) |    29 |
+| [ADRESSE DE RÉCEPTION](#adresse-de-réception) |    22 | [ARK](#ark)                    |    30 |
+| [ADRESSE STATIQUE](#adresse-statique) |    23 | [ASCII](#ascii)                |    30 |
+| [AGORISME](#agorisme)          |    23 | [ASIC](#asic)                  |    30 |
+| [AJUSTEMENT DE LA DIFFICULTE](#ajustement-de-la-difficulte) |    24 | [ASICBOOST](#asicboost)        |    30 |
+| [ALGORITHME](#algorithme)      |    24 | [ASMAP](#asmap)                |    31 |
+| [ALTCOIN](#altcoin)            |    25 | [ASSUME UTXO](#assume-utxo)    |    31 |
+| [ANALYSE DE CHAINE](#analyse-de-chaine) |    25 | [ASSUME VALID](#assume-valid)  |    31 |
+| [ANCESTOR MINING](#ancestor-mining) |    25 | [ATH (ALL-TIME HIGH)](#ath-all-time-high) |    32 |
+| [ANCHOR OUTPUTS](#anchor-outputs) |    26 | [ATLC](#atlc)                  |    32 |
+| [ANCHORS.DAT](#anchors.dat)    |    26 | [ATOMIC SWAP](#atomic-swap)    |    32 |
+| [ANCRAGE BILATÉRAL](#ancrage-bilatéral) |    26 | [ATTAQUE DES 51 POUR CENT](#attaque-des-51-pour-cent) |    32 |
+| [ANONSETS (ANONYMITY SETS)](#anonsets-anonymity-sets) |    27 | [AVG. ROUND DURATION](#avg.-round-duration) |    33 |
+| [ANTI MONEY LAUNDERING (AML)](#anti-money-laundering-aml) |    28 |                                |       |
 | | | | |
 
 
@@ -612,19 +613,19 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [RACINE DE MERKLE](#racine-de-merkle) |   223 | [RESYNCHRONISATION](#resynchronisation) |   226 |
-| [RAW TRANSACTION](#raw-transaction) |   223 | [RÉTENTION (DE BLOC)](#rétention-de-bloc) |   227 |
-| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   223 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   228 |
-| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   224 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   228 |
-| [RÉCURSIF (COVENANT)](#récursif-covenant) |   224 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   229 |
-| [REDEEMSCRIPT](#redeemscript)  |   224 | [RICOCHET](#ricochet)          |   229 |
-| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   225 | [RIPEMD160](#ripemd160)        |   229 |
-| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   225 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   230 |
-| [REGTEST](#regtest)            |   225 | [RPOW](#rpow)                  |   230 |
-| [RELAIS](#relais)              |   226 | [RSMPPS](#rsmpps)              |   230 |
-| [RÉSEAU BITCOIN](#réseau-bitcoin) |   226 | [RUNES](#runes)                |   230 |
+| [RACINE DE MERKLE](#racine-de-merkle) |   223 | [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   227 |
+| [RAW TRANSACTION](#raw-transaction) |   223 | [RESYNCHRONISATION](#resynchronisation) |   227 |
+| [RBF (REPLACE-BY-FEE)](#rbf-replace-by-fee) |   223 | [RÉTENTION (DE BLOC)](#rétention-de-bloc) |   228 |
+| [RÉCOMPENSE DE BLOC](#récompense-de-bloc) |   224 | [RÉUTILISATION D'ADRESSE](#réutilisation-dadresse) |   228 |
+| [RÉCURSIF (COVENANT)](#récursif-covenant) |   224 | [RÉUTILISATION D'ADRESSE (EXT)](#réutilisation-dadresse-ext) |   229 |
+| [REDEEMSCRIPT](#redeemscript)  |   224 | [RÉUTILISATION D'ADRESSE (INT)](#réutilisation-dadresse-int) |   229 |
+| [RÈGLES DE CONSENSUS](#règles-de-consensus) |   225 | [RICOCHET](#ricochet)          |   229 |
+| [RÈGLES DE STANDARDISATION](#règles-de-standardisation) |   225 | [RIPEMD160](#ripemd160)        |   230 |
+| [REGTEST](#regtest)            |   225 | [RPC (REMOTE PROCEDURE CALL)](#rpc-remote-procedure-call) |   230 |
+| [RELAIS](#relais)              |   226 | [RPOW](#rpow)                  |   230 |
+| [REPLAY ATTACK](#replay-attack) |   226 | [RSMPPS](#rsmpps)              |   231 |
+| [RÉSEAU BITCOIN](#réseau-bitcoin) |   226 | [RUNES](#runes)                |   231 |
 | [RÉSERVES FRACTIONNAIRES](#réserves-fractionnaires) |   226 | [RUST-LIGHTNING](#rust-lightning) |   231 |
-| [RÉSISTANCE AU PARTITIONNEMENT](#résistance-au-partitionnement) |   226 |                                |       |
 | | | | |
 
 
@@ -811,6 +812,20 @@ Message réseau anciennement utilisé sur Bitcoin pour communiquer les adresses 
 ## ADDR.DAT
 
 Nom de l'ancien fichier utilisé dans Bitcoin Core pour stocker des informations sur les pairs (c'est-à-dire, les nœuds) du réseau avec lesquels le nœud de l'utilisateur a interagi ou peut potentiellement interagir. Ce fichier a été remplacé par le fichier peers.dat depuis la version 0.7.0.
+
+## ADDRESS SPOOFING
+
+► ***FR : USURPATION D'ADRESSE***
+
+Attaque où un acteur malveillant crée une adresse (ou tout autre identifiant de paiement) ressemblant fortement à celle de la victime. Le but est de tromper l'utilisateur en l'amenant à copier cette mauvaise adresse lors d'une transaction, ce qui conduit à l'envoi des bitcoins à l'attaquant au lieu de la destination prévue. 
+
+L'attaquant exploite la précipitation de l'utilisateur qui peut copier la mauvaise adresse s'il réalise sa transaction sans vérifier avec précision son exactitude. En général, pour mettre en place cette attaque, l'attaquant effectue des paiements avec de petites sommes vers le portefeuille de la victime pour intégrer la fausse adresse dans son historique de transactions. Cette attaque est plutôt utilisée avec les altcoins, où il est courant de réutiliser les mêmes adresses de réception, contrairement à Bitcoin où l'utilisation d'adresses vierges pour chaque transaction est une pratique plus répandue. Cependant, les utilisateurs de Bitcoin ne sont pas à l'abri de cette attaque.
+
+Une autre méthode pour mettre la mauvaise adresse devant la victime est l'utilisation de logiciels de gestion de portefeuille frauduleux qui imitent des logiciels légitimes, ou la modification de l'adresse lorsqu'une machine est compromise, entre le moment où elle est copiée et celui où la transaction est construite. On parle alors parfois d'« *address swapping* ».
+
+Pour se protéger contre ces différentes méthodes d'attaque, il est important de vérifier plusieurs caractères de l'adresse, surtout au niveau de sa checksum (à la fin), sur l'écran du périphérique de signature avant de signer la transaction.
+
+> ► *On parle également parfois d'Address Poisoning pour désigner cette attaque.*
 
 ## ADDRV2
 
@@ -5808,6 +5823,20 @@ Environnement de test privé pour Bitcoin permettant aux développeurs de créer
 ► ***EN : RELAY***
 
 Dans le contexte de la preuve de travail sur le réseau Bitcoin, désigne un outil dont la fonction principale est de relayer les nouveaux blocs valides qui ont été trouvés. On distingue parfois le rôle du mineur, qui est impliqué dans l'ensemble du processus de la preuve de travail, depuis la construction du bloc candidat jusqu'à la diffusion du bloc validé, du rôle du hacheur, qui se limite à participer au hachage d'un bloc sans intervenir dans sa sélection ou sa diffusion. Le rôle de relai, quant à lui, consiste à diffuser les nouveaux blocs trouvés par un hacheur. Dans le cadre des pools de minage, ce rôle de relai est assuré par la pool elle-même. C'est ce rôle qui lui procure d'ailleurs beaucoup de pouvoir sur les hacheurs individuels. Le terme de « relayeur » peut aussi désigner la personne ou l'entité qui opère un relai.
+
+## REPLAY ATTACK
+
+► ***FR : ATTAQUE PAR REJEU***
+
+Dans le contexte de Bitcoin, une replay attack se produit lorsqu'une transaction valide sur une blockchain est malicieusement reproduite sur une autre blockchain qui dispose du même historique de transactions. Autrement dit, une transaction diffusée sur une chaîne peut être répliquée sur une autre sans le consentement de l'émetteur de la première transaction.
+
+Prenons l'exemple d'un hard fork hypothétique de Bitcoin, nommé « *BitcoinBis* ». Si vous réalisez un paiement en bitcoins pour acheter une baguette chez un boulanger sur la vraie blockchain Bitcoin, ce même boulanger pourrait rejouer cette transaction légitime sur *BitcoinBis* pour obtenir le même montant en cryptomonnaies sur ce fork, sans aucune action de votre part.
+
+Ce type d'attaque peut uniquement survenir en cas d'embranchement de la blockchain avec 2 chaînes indépendantes qui persistent dans le temps. Typiquement, cela peut survenir en cas de hard fork. Pour qu'une attaque par rejeu soit possible, il faut obligatoirement que les 2 blockchains aient un historique commun et que la transaction dupliquée consomme en inputs des UTXOs créés à partir de transactions précédentes qui ont eu lieu avant la scission des deux chaînes, ou à partir de transactions précédentes qui ont elle-même déjà été rejouées lors d'une précédente attaque par rejeu.
+
+De manière générale, dans l'informatique, une replay attack consiste à intercepter et à réutiliser des données valides pour tromper un système en répétant la transmission originale. Cela peut parfois mener à des usurpations d'identité sur un réseau.
+
+> ► *Dans le cas d'une replay attack sur une transaction Bitcoin, on parle parfois simplement d'une « transaction replay ».*
 
 ## RÉSEAU BITCOIN
 
