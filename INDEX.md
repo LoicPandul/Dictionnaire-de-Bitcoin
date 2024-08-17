@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 755 `**
+**Nombre total de définitions : ` 756 `**
 
 ### A
 
@@ -46,6 +46,7 @@
 - [BASE (ARITHMÉTIQUE)](./dictionnaire/B.md#base-arithmétique)
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
 - [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
+- [BCH CODE](./dictionnaire/B.md#bch-code)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)

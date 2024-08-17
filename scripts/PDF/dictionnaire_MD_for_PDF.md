@@ -218,76 +218,77 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [BANLIST.DAT](#banlist.dat)    |    35 | [BIP145](#bip145)              |    54 |
-| [BANLIST.JSON](#banlist.json)  |    35 | [BIP147](#bip147)              |    54 |
+| [BANLIST.DAT](#banlist.dat)    |    35 | [BIP145](#bip145)              |    55 |
+| [BANLIST.JSON](#banlist.json)  |    35 | [BIP147](#bip147)              |    55 |
 | [BARE-MULTISIG](#bare-multisig) |    35 | [BIP148](#bip148)              |    55 |
-| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    35 | [BIP149](#bip149)              |    55 |
-| [BASE58CHECK](#base58check)    |    35 | [BIP150](#bip150)              |    55 |
+| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    35 | [BIP149](#bip149)              |    56 |
+| [BASE58CHECK](#base58check)    |    35 | [BIP150](#bip150)              |    56 |
 | [BATCHED SPENDING](#batched-spending) |    36 | [BIP151](#bip151)              |    56 |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    36 | [BIP152](#bip152)              |    56 |
-| [BEAR MARKET](#bear-market)    |    37 | [BIP155](#bip155)              |    56 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP156](#bip156)              |    56 |
-| [BERKELEYDB](#berkeleydb)      |    38 | [BIP173](#bip173)              |    57 |
-| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP322](#bip322)              |    57 |
-| [BIG-ENDIAN](#big-endian)      |    38 | [BIP324](#bip324)              |    57 |
-| [BINAIRE](#binaire)            |    38 | [BIP326](#bip326)              |    58 |
-| [BIP](#bip)                    |    39 | [BIP352](#bip352)              |    58 |
-| [BIP1](#bip1)                  |    40 | [BIP380](#bip380)              |    58 |
-| [BIP2](#bip2)                  |    40 | [BIP381](#bip381)              |    59 |
-| [BIP8](#bip8)                  |    40 | [BIP382](#bip382)              |    59 |
-| [BIP9](#bip9)                  |    52 | [BIP383](#bip383)              |    59 |
-| [BIP10](#bip10)                |    41 | [BIP384](#bip384)              |    59 |
-| [BIP11](#bip11)                |    41 | [BIP385](#bip385)              |    59 |
-| [BIP12](#bip12)                |    42 | [BIP386](#bip386)              |    60 |
-| [BIP13](#bip13)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
-| [BIP14](#bip14)                |    42 | [BIT](#bit)                    |    60 |
-| [BIP16](#bip16)                |    42 | [BIT (UNITÉ)](#bit-unité)      |    60 |
-| [BIP17](#bip17)                |    43 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    60 |
-| [BIP21](#bip21)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    61 |
-| [BIP22](#bip22)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    61 |
-| [BIP23](#bip23)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    61 |
-| [BIP30](#bip30)                |    43 | [BITCOIN-CLI](#bitcoin-cli)    |    61 |
-| [BIP31](#bip31)                |    44 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
-| [BIP32](#bip32)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    62 |
-| [BIP34](#bip34)                |    44 | [BITCOIND](#bitcoind)          |    62 |
-| [BIP35](#bip35)                |    44 | [BITCOIND.PID](#bitcoind.pid)  |    62 |
-| [BIP37](#bip37)                |    69 | [BITCOIN FOG](#bitcoin-fog)    |    63 |
-| [BIP38](#bip38)                |    45 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    63 |
-| [BIP39](#bip39)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    63 |
-| [BIP42](#bip42)                |    45 | [BITCOIN JESUS](#bitcoin-jesus) |    63 |
-| [BIP43](#bip43)                |    46 | [BITCOIN KNOTS](#bitcoin-knots) |    63 |
-| [BIP44](#bip44)                |    46 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    64 |
-| [BIP47](#bip47)                |    47 | [BITCOIN QT](#bitcoin-qt)      |    64 |
-| [BIP49](#bip49)                |    48 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    64 |
-| [BIP50](#bip50)                |    48 | [BITCOINTALK](#bitcointalk)    |    65 |
-| [BIP61](#bip61)                |    48 | [BITCOIN UNLIMITED](#bitcoin-unlimited) |    65 |
-| [BIP65](#bip65)                |    48 | [BITCOIN XT](#bitcoin-xt)      |    65 |
-| [BIP66](#bip66)                |    48 | [BIT GOLD](#bit-gold)          |    65 |
-| [BIP68](#bip68)                |    49 | [BITVM](#bitvm)                |    66 |
-| [BIP70](#bip70)                |    49 | [BLK*.DAT](#blk.dat)           |    66 |
-| [BIP71](#bip71)                |    49 | [BLKINDEX.DAT](#blkindex.dat)  |    66 |
-| [BIP72](#bip72)                |    49 | [BLKTREE/](#blktree)           |    66 |
-| [BIP75](#bip75)                |    50 | [BLOC](#bloc)                  |    66 |
-| [BIP78](#bip78)                |    50 | [BLOCKCHAIN](#blockchain)      |    67 |
-| [BIP84](#bip84)                |    50 | [BLOCKSIGNERS](#blocksigners)  |    67 |
-| [BIP85](#bip85)                |    50 | [BLOCKS INDEX](#blocks-index)  |    67 |
-| [BIP86](#bip86)                |    50 | [BLOCKSIZE WAR](#blocksize-war) |    68 |
-| [BIP90](#bip90)                |    50 | [BLOCKS/REV*.DAT](#blocksrev.dat) |    68 |
-| [BIP91](#bip91)                |    51 | [BLOCKSTREAM](#blockstream)    |    68 |
-| [BIP101](#bip101)              |    51 | [BLOCK TEMPLATE](#block-template) |    69 |
-| [BIP102](#bip102)              |    51 | [BLOOM FILTER](#bloom-filter)  |    69 |
-| [BIP109](#bip109)              |    51 | [B-MONEY](#b-money)            |    69 |
-| [BIP111](#bip111)              |    52 | [BOLT](#bolt)                  |    69 |
-| [BIP112](#bip112)              |    52 | [BOUNTY](#bounty)              |    70 |
-| [BIP113](#bip113)              |    52 | [BRANCH-AND-BOUND](#branch-and-bound) |    70 |
-| [BIP118](#bip118)              |    52 | [BRANCHE (BITCOIN)](#branche-bitcoin) |    70 |
-| [BIP119](#bip119)              |    52 | [BRANCHE (GIT)](#branche-git)  |    70 |
-| [BIP123](#bip123)              |    53 | [BRC-20](#brc-20)              |    70 |
-| [BIP125](#bip125)              |    53 | [BTC](#btc)                    |    71 |
-| [BIP137](#bip137)              |    53 | [BTCD (BTC SUITE)](#btcd-btc-suite) |    71 |
-| [BIP141](#bip141)              |    53 | [BTCPAY SERVER](#btcpay-server) |    71 |
-| [BIP143](#bip143)              |    54 | [BULL MARKET](#bull-market)    |    71 |
-| [BIP144](#bip144)              |    54 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    72 |
+| [BCH CODE](#bch-code)          |    36 | [BIP152](#bip152)              |    56 |
+| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    37 | [BIP155](#bip155)              |    57 |
+| [BEAR MARKET](#bear-market)    |    37 | [BIP156](#bip156)              |    57 |
+| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP173](#bip173)              |    58 |
+| [BERKELEYDB](#berkeleydb)      |    38 | [BIP322](#bip322)              |    58 |
+| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP324](#bip324)              |    58 |
+| [BIG-ENDIAN](#big-endian)      |    38 | [BIP326](#bip326)              |    58 |
+| [BINAIRE](#binaire)            |    38 | [BIP352](#bip352)              |    59 |
+| [BIP](#bip)                    |    39 | [BIP380](#bip380)              |    59 |
+| [BIP1](#bip1)                  |    40 | [BIP381](#bip381)              |    59 |
+| [BIP2](#bip2)                  |    41 | [BIP382](#bip382)              |    60 |
+| [BIP8](#bip8)                  |    41 | [BIP383](#bip383)              |    60 |
+| [BIP9](#bip9)                  |    53 | [BIP384](#bip384)              |    60 |
+| [BIP10](#bip10)                |    42 | [BIP385](#bip385)              |    60 |
+| [BIP11](#bip11)                |    42 | [BIP386](#bip386)              |    60 |
+| [BIP12](#bip12)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
+| [BIP13](#bip13)                |    42 | [BIT](#bit)                    |    61 |
+| [BIP14](#bip14)                |    43 | [BIT (UNITÉ)](#bit-unité)      |    61 |
+| [BIP16](#bip16)                |    43 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    61 |
+| [BIP17](#bip17)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    61 |
+| [BIP21](#bip21)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    62 |
+| [BIP22](#bip22)                |    44 | [BITCOIN CLASSIC](#bitcoin-classic) |    62 |
+| [BIP23](#bip23)                |    44 | [BITCOIN-CLI](#bitcoin-cli)    |    62 |
+| [BIP30](#bip30)                |    44 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
+| [BIP31](#bip31)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    63 |
+| [BIP32](#bip32)                |    44 | [BITCOIND](#bitcoind)          |    63 |
+| [BIP34](#bip34)                |    45 | [BITCOIND.PID](#bitcoind.pid)  |    63 |
+| [BIP35](#bip35)                |    45 | [BITCOIN FOG](#bitcoin-fog)    |    63 |
+| [BIP37](#bip37)                |    70 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    63 |
+| [BIP38](#bip38)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    64 |
+| [BIP39](#bip39)                |    46 | [BITCOIN JESUS](#bitcoin-jesus) |    64 |
+| [BIP42](#bip42)                |    46 | [BITCOIN KNOTS](#bitcoin-knots) |    64 |
+| [BIP43](#bip43)                |    46 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    64 |
+| [BIP44](#bip44)                |    47 | [BITCOIN QT](#bitcoin-qt)      |    65 |
+| [BIP47](#bip47)                |    48 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    65 |
+| [BIP49](#bip49)                |    48 | [BITCOINTALK](#bitcointalk)    |    65 |
+| [BIP50](#bip50)                |    49 | [BITCOIN UNLIMITED](#bitcoin-unlimited) |    65 |
+| [BIP61](#bip61)                |    49 | [BITCOIN XT](#bitcoin-xt)      |    66 |
+| [BIP65](#bip65)                |    49 | [BIT GOLD](#bit-gold)          |    66 |
+| [BIP66](#bip66)                |    49 | [BITVM](#bitvm)                |    66 |
+| [BIP68](#bip68)                |    49 | [BLK*.DAT](#blk.dat)           |    66 |
+| [BIP70](#bip70)                |    50 | [BLKINDEX.DAT](#blkindex.dat)  |    67 |
+| [BIP71](#bip71)                |    50 | [BLKTREE/](#blktree)           |    67 |
+| [BIP72](#bip72)                |    50 | [BLOC](#bloc)                  |    67 |
+| [BIP75](#bip75)                |    50 | [BLOCKCHAIN](#blockchain)      |    67 |
+| [BIP78](#bip78)                |    50 | [BLOCKSIGNERS](#blocksigners)  |    68 |
+| [BIP84](#bip84)                |    51 | [BLOCKS INDEX](#blocks-index)  |    68 |
+| [BIP85](#bip85)                |    51 | [BLOCKSIZE WAR](#blocksize-war) |    68 |
+| [BIP86](#bip86)                |    51 | [BLOCKS/REV*.DAT](#blocksrev.dat) |    69 |
+| [BIP90](#bip90)                |    51 | [BLOCKSTREAM](#blockstream)    |    69 |
+| [BIP91](#bip91)                |    51 | [BLOCK TEMPLATE](#block-template) |    69 |
+| [BIP101](#bip101)              |    52 | [BLOOM FILTER](#bloom-filter)  |    69 |
+| [BIP102](#bip102)              |    52 | [B-MONEY](#b-money)            |    70 |
+| [BIP109](#bip109)              |    52 | [BOLT](#bolt)                  |    70 |
+| [BIP111](#bip111)              |    52 | [BOUNTY](#bounty)              |    70 |
+| [BIP112](#bip112)              |    52 | [BRANCH-AND-BOUND](#branch-and-bound) |    70 |
+| [BIP113](#bip113)              |    53 | [BRANCHE (BITCOIN)](#branche-bitcoin) |    70 |
+| [BIP118](#bip118)              |    53 | [BRANCHE (GIT)](#branche-git)  |    71 |
+| [BIP119](#bip119)              |    53 | [BRC-20](#brc-20)              |    71 |
+| [BIP123](#bip123)              |    53 | [BTC](#btc)                    |    71 |
+| [BIP125](#bip125)              |    54 | [BTCD (BTC SUITE)](#btcd-btc-suite) |    71 |
+| [BIP137](#bip137)              |    54 | [BTCPAY SERVER](#btcpay-server) |    72 |
+| [BIP141](#bip141)              |    54 | [BULL MARKET](#bull-market)    |    72 |
+| [BIP143](#bip143)              |    54 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    72 |
+| [BIP144](#bip144)              |    55 |                                |       |
 | | | | |
 
 
@@ -1166,6 +1167,16 @@ Technique de dépense employée principalement par les entités ayant un volume 
 ![](../../dictionnaire/assets/8.png)
 
 > ► *En français, on peut traduire « batched spending » par « dépense groupée ».*
+
+## BCH CODE
+
+► ***FR : CODE BCH***
+
+Classe de codes de correction d'erreurs utilisés pour détecter et corriger des erreurs dans une séquence de données. Autrement dit, les codes de correction d'erreur BCH permettent de trouver et de corriger des erreurs aléatoires dans des informations transmises, afin de garantir qu'elles arrivent intactes à leur destination. Le sigle « BCH » représente les initiales des noms des inventeurs de ces codes : Bose, Ray-Chaudhuri, et Hocquenghem.
+
+On utilise cet outil dans de nombreux domaines de l'informatique, notamment dans les SSD, les DVD ou encore les QR codes. Par exemple, grâce à ces codes de correction d'erreurs, même si un QR code est partiellement recouvert, il est toujours possible de récupérer les informations qu'il encode.
+
+Dans le cadre de Bitcoin, les codes BCH sont utilisés pour la somme de contrôle dans les formats d'adresses Bech32 et Bech32m (post-SegWit). Ils représentent un meilleur compromis entre la taille et la capacité de détection d'erreurs de la checksum par rapport aux simples fonctions de hachage utilisées précédemment sur les adresses Legacy. Dans le contexte de Bitcoin, les codes BCH sont utilisés uniquement pour la détection d'erreurs, et non pour la correction d'erreur. Ainsi, les logiciels de portefeuille Bitcoin identifieront et signaleront à l'utilisateur toute erreur dans une adresse de réception, mais ne modifieront pas l'adresse incorrecte automatiquement. Ce choix est motivé par le fait que l'intégration de la correction d'erreur affecte inévitablement les capacités de détection d'erreur de l'algorithme.
 
 ## BDK (BITCOIN DEV KIT)
 
