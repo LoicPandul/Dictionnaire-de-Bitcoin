@@ -2,18 +2,8 @@ Ce document contient une liste de termes relatifs à Bitcoin que je n'ai pas enc
 
 ___
 
-## ADDRESS SPOOFING
-
-> *Address Poisonning.*
 
 
-## ADDRESS SWAPPING
-
-
-
-## ATTAQUE PAR REJEU
-
-> *En anglais, on traduit cette attaque par « Replay Attack ».*
 
 
 ## BCH CODES
