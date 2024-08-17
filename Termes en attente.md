@@ -2,7 +2,7 @@ Ce document contient une liste de termes relatifs à Bitcoin que je n'ai pas enc
 
 ___
 
-## BCOIN
+
 
 
 
@@ -10,9 +10,6 @@ ___
 
 
 
-## BITCOIN-DEV (MAILING LIST)
-
-Créée par Jeff Garzik en 2011, aujourd'hui hébergée sur Google Group https://groups.google.com/g/bitcoindev
 
 
 ## BROLLUPS
