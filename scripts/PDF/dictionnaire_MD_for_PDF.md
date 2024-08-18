@@ -318,22 +318,22 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [CHEMIN PRIMAIRE](#chemin-primaire) |    82 | [CONTRAT INTELLIGENT](#contrat-intelligent) |    99 |
 | [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    83 | [CONTRIBUTEUR (CORE)](#contributeur-core) |    99 |
 | [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    83 | [COOKIE (.COOKIE)](#cookie-.cookie) |    99 |
-| [CIOH](#cioh)                  |    84 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |   100 |
-| [CISA](#cisa)                  |    85 | [COURBE ELLIPTIQUE](#courbe-elliptique) |   100 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    85 | [COVENANT](#covenant)          |   100 |
-| [CLÉ MAITRESSE](#clé-maitresse) |    86 | [COVERT ASICBOOST](#covert-asicboost) |   101 |
-| [CLÉ PRIVÉE](#clé-privée)      |    87 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |   101 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    87 | [CPPSRB](#cppsrb)              |   101 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    88 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |   101 |
-| [CLI](#cli)                    |    89 | [CRYPTANALYSE](#cryptanalyse)  |   102 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    89 | [CRYPTER](#crypter)            |   102 |
-| [CLONE](#clone)                |    89 | [CRYPTO-ACTIF](#crypto-actif)  |   102 |
-| [CLUSTER](#cluster)            |    89 | [CRYPTOGRAPHIE](#cryptographie) |   102 |
-| [CODE DE CHAINE](#code-de-chaine) |    90 | [CRYPTOLOGIE](#cryptologie)    |   102 |
-| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    90 | [CRYPTOMONNAIE](#cryptomonnaie) |   102 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    90 | [CUSTODY](#custody)            |   102 |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) |    91 | [CYPHERPUNKS](#cypherpunks)    |   103 |
-| [COIN CONTROL](#coin-control)  |    91 |                                |       |
+| [CIOH](#cioh)                  |    84 | [COORDINATEUR DE COINJOIN](#coordinateur-de-coinjoin) |   100 |
+| [CISA](#cisa)                  |    85 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |   100 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    85 | [COURBE ELLIPTIQUE](#courbe-elliptique) |   100 |
+| [CLÉ MAITRESSE](#clé-maitresse) |    86 | [COVENANT](#covenant)          |   100 |
+| [CLÉ PRIVÉE](#clé-privée)      |    87 | [COVERT ASICBOOST](#covert-asicboost) |   101 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    87 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |   101 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    88 | [CPPSRB](#cppsrb)              |   101 |
+| [CLI](#cli)                    |    89 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |   102 |
+| [C-LIGHTNING (CLN)](#c-lightning-cln) |    89 | [CRYPTANALYSE](#cryptanalyse)  |   102 |
+| [CLONE](#clone)                |    89 | [CRYPTER](#crypter)            |   102 |
+| [CLUSTER](#cluster)            |    89 | [CRYPTO-ACTIF](#crypto-actif)  |   102 |
+| [CODE DE CHAINE](#code-de-chaine) |    90 | [CRYPTOGRAPHIE](#cryptographie) |   102 |
+| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    90 | [CRYPTOLOGIE](#cryptologie)    |   102 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    90 | [CRYPTOMONNAIE](#cryptomonnaie) |   103 |
+| [COINBASE (TRANSACTION)](#coinbase-transaction) |    91 | [CUSTODY](#custody)            |   103 |
+| [COIN CONTROL](#coin-control)  |    91 | [CYPHERPUNKS](#cypherpunks)    |   103 |
 | | | | |
 
 
@@ -2693,6 +2693,12 @@ Un contributeur dans le contexte de Bitcoin Core (l'implémentation majoritaire 
 ## COOKIE (.COOKIE)
 
 Fichier utilisé pour l'authentification RPC (*Remote Procedure Call*) dans Bitcoin Core. Lorsque bitcoind démarre, il génère un cookie d'authentification unique et le stocke dans ce fichier. Les clients ou les scripts qui souhaitent interagir avec bitcoind via l'interface RPC peuvent utiliser ce cookie pour s'authentifier de manière sécurisée. Ce mécanisme permet une communication sûre entre le bitcoind et les applications externes (comme les logiciels de portefeuille par exemple), sans nécessiter une gestion manuelle des noms d'utilisateur et des mots de passe. Le fichier `.cookie` est régénéré à chaque redémarrage de bitcoind et supprimé à l'arrêt.
+
+## COORDINATEUR DE COINJOIN
+
+Serveur central qui met relation les utilisateur souhaitant faire des coinjoins et qui coordonne la construction des transactions collaboratives, sans pour autant pouvoir associer les inputs aux outputs spécifiques de chaque utilisateur. Cela est possible grâce à l'utilisation des signatures aveugles de Chaum et du réseau Tor. Contrairement à un mélangeur de bitcoins traditionnel, le coordinateur de coinjoin ne prend jamais possession des bitcoins des participants et n'est pas capable d'associer les inputs et les outputs.
+
+> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](#chaumian-coinjoin)**.*
 
 ## CORE-LIGHTNING (CLN)
 

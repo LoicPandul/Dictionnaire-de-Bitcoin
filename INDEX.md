@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 761 `**
+**Nombre total de définitions : ` 762 `**
 
 ### A
 
@@ -245,6 +245,7 @@
 - [CONTRAT INTELLIGENT](./dictionnaire/C.md#contrat-intelligent)
 - [CONTRIBUTEUR (CORE)](./dictionnaire/C.md#contributeur-core)
 - [COOKIE (.COOKIE)](./dictionnaire/C.md#cookie-cookie)
+- [COORDINATEUR DE COINJOIN](./dictionnaire/C.md#coordinateur-de-coinjoin)
 - [CORE-LIGHTNING (CLN)](./dictionnaire/C.md#core-lightning-cln)
 - [COURBE ELLIPTIQUE](./dictionnaire/C.md#courbe-elliptique)
 - [COVENANT](./dictionnaire/C.md#covenant)
