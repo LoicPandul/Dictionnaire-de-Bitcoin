@@ -18,9 +18,6 @@ ___
 
 
 
-## COORDINATEUR DE COINJOIN
-
-
 
 ## DEMEURAGE
 
