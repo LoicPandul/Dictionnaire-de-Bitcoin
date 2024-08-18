@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 756 `**
+**Nombre total de définitions : ` 759 `**
 
 ### A
 
@@ -47,6 +47,7 @@
 - [BASE58CHECK](./dictionnaire/B.md#base58check)
 - [BATCHED SPENDING](./dictionnaire/B.md#batched-spending)
 - [BCH CODE](./dictionnaire/B.md#bch-code)
+- [BCOIN](./dictionnaire/B.md#bcoin)
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
@@ -143,12 +144,14 @@
 - [BITCOIN.CONF](./dictionnaire/B.md#bitcoinconf)
 - [BITCOIN CORE](./dictionnaire/B.md#bitcoin-core)
 - [BITCOIND](./dictionnaire/B.md#bitcoind)
+- [BITCOIN-DEV](./dictionnaire/B.md#bitcoin-dev)
 - [BITCOIND.PID](./dictionnaire/B.md#bitcoindpid)
 - [BITCOIN FOG](./dictionnaire/B.md#bitcoin-fog)
 - [BITCOIN GOLD (BTG)](./dictionnaire/B.md#bitcoin-gold-btg)
 - [BITCOIN INQUISITION](./dictionnaire/B.md#bitcoin-inquisition)
 - [BITCOIN JESUS](./dictionnaire/B.md#bitcoin-jesus)
 - [BITCOIN KNOTS](./dictionnaire/B.md#bitcoin-knots)
+- [BITCOIN OPTECH](./dictionnaire/B.md#bitcoin-optech)
 - [BITCOIN POOLED MINING (BPM)](./dictionnaire/B.md#bitcoin-pooled-mining-bpm)
 - [BITCOIN QT](./dictionnaire/B.md#bitcoin-qt)
 - [BITCOIN SATOSHI VISION (BSV)](./dictionnaire/B.md#bitcoin-satoshi-vision-bsv)
