@@ -10,10 +10,6 @@ ___
 
 
 
-## CISA
-
-Cross input signature aggregation
-
 
 ## CITREA
 
