@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 759 `**
+**Nombre total de définitions : ` 761 `**
 
 ### A
 
@@ -209,6 +209,7 @@
 - [CHIFFRER (CHIFFREMENT)](./dictionnaire/C.md#chiffrer-chiffrement)
 - [CIBLE DE DIFFICULTÉ](./dictionnaire/C.md#cible-de-difficulté)
 - [CIOH](./dictionnaire/C.md#cioh)
+- [CISA](./dictionnaire/C.md#cisa)
 - [CLÉ ÉTENDUE](./dictionnaire/C.md#clé-étendue)
 - [CLÉ MAITRESSE](./dictionnaire/C.md#clé-maitresse)
 - [CLÉ PRIVÉE](./dictionnaire/C.md#clé-privée)
@@ -228,6 +229,7 @@
 - [COINMUX](./dictionnaire/C.md#coinmux)
 - [COINS/](./dictionnaire/C.md#coins)
 - [COINSHUFFLE](./dictionnaire/C.md#coinshuffle)
+- [COINSWAP](./dictionnaire/C.md#coinswap)
 - [COLD WALLET](./dictionnaire/C.md#cold-wallet)
 - [COLORED COINS](./dictionnaire/C.md#colored-coins)
 - [COMMERÇANT](./dictionnaire/C.md#commerçant)
