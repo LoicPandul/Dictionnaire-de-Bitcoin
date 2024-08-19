@@ -26,9 +26,6 @@ ___
 
 
 
-## DIVISION
-
-Split
 
 
 ## DUAL FUNDING
@@ -84,7 +81,7 @@ Bitcoin Gold algorithme
 
 
 
-## HEADER FIRST SYNC
+
 
 
 
