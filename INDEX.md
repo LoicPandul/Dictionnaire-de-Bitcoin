@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 762 `**
+**Nombre total de définitions : ` 764 `**
 
 ### A
 
@@ -143,6 +143,7 @@
 - [BITCOIN-CLI](./dictionnaire/B.md#bitcoin-cli)
 - [BITCOIN.CONF](./dictionnaire/B.md#bitcoinconf)
 - [BITCOIN CORE](./dictionnaire/B.md#bitcoin-core)
+- [BITCOIN CORE GUI-QML](./dictionnaire/B.md#bitcoin-core-gui-qml)
 - [BITCOIND](./dictionnaire/B.md#bitcoind)
 - [BITCOIN-DEV](./dictionnaire/B.md#bitcoin-dev)
 - [BITCOIND.PID](./dictionnaire/B.md#bitcoindpid)
@@ -339,6 +340,7 @@
 - [FORCED ADDRESS REUSE](./dictionnaire/F.md#forced-address-reuse)
 - [FORK](./dictionnaire/F.md#fork)
 - [FORK (GIT)](./dictionnaire/F.md#fork-git)
+- [FOSS](./dictionnaire/F.md#foss)
 - [FPPS (FULL PAY PER SHARE)](./dictionnaire/F.md#fpps-full-pay-per-share)
 - [FRAIS DE TRANSACTION](./dictionnaire/F.md#frais-de-transaction)
 

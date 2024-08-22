@@ -22,11 +22,6 @@ ___
 
 
 
-
-
-
-
-
 ## DUAL FUNDING
 
 
@@ -60,7 +55,6 @@ Bitcoin Gold algorithme
 
 
 
-
 ## FULCRUM
 
 
@@ -69,15 +63,7 @@ Bitcoin Gold algorithme
 
 
 
-
-
-
-
 ## HASHLOCKS
-
-
-
-
 
 
 

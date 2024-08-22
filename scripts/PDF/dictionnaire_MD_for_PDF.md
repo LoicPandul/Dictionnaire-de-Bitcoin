@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 18 août 2024\newline
+Version du 23 août 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -218,78 +218,79 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [BANLIST.DAT](#banlist.dat)    |    35 | [BIP145](#bip145)              |    55 |
-| [BANLIST.JSON](#banlist.json)  |    35 | [BIP147](#bip147)              |    55 |
-| [BARE-MULTISIG](#bare-multisig) |    35 | [BIP148](#bip148)              |    55 |
-| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    35 | [BIP149](#bip149)              |    56 |
-| [BASE58CHECK](#base58check)    |    35 | [BIP150](#bip150)              |    56 |
-| [BATCHED SPENDING](#batched-spending) |    36 | [BIP151](#bip151)              |    56 |
-| [BCH CODE](#bch-code)          |    36 | [BIP152](#bip152)              |    56 |
-| [BCOIN](#bcoin)                |    37 | [BIP155](#bip155)              |    57 |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    37 | [BIP156](#bip156)              |    57 |
-| [BEAR MARKET](#bear-market)    |    37 | [BIP173](#bip173)              |    58 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP322](#bip322)              |    58 |
-| [BERKELEYDB](#berkeleydb)      |    38 | [BIP324](#bip324)              |    58 |
-| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP326](#bip326)              |    58 |
-| [BIG-ENDIAN](#big-endian)      |    38 | [BIP352](#bip352)              |    59 |
-| [BINAIRE](#binaire)            |    39 | [BIP380](#bip380)              |    59 |
-| [BIP](#bip)                    |    40 | [BIP381](#bip381)              |    59 |
-| [BIP1](#bip1)                  |    41 | [BIP382](#bip382)              |    60 |
-| [BIP2](#bip2)                  |    41 | [BIP383](#bip383)              |    60 |
-| [BIP8](#bip8)                  |    41 | [BIP384](#bip384)              |    60 |
-| [BIP9](#bip9)                  |    53 | [BIP385](#bip385)              |    60 |
-| [BIP10](#bip10)                |    42 | [BIP386](#bip386)              |    60 |
-| [BIP11](#bip11)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
-| [BIP12](#bip12)                |    42 | [BIT](#bit)                    |    61 |
-| [BIP13](#bip13)                |    43 | [BIT (UNITÉ)](#bit-unité)      |    61 |
-| [BIP14](#bip14)                |    43 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    61 |
-| [BIP16](#bip16)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    61 |
-| [BIP17](#bip17)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    62 |
-| [BIP21](#bip21)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    62 |
-| [BIP22](#bip22)                |    44 | [BITCOIN-CLI](#bitcoin-cli)    |    62 |
-| [BIP23](#bip23)                |    44 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
-| [BIP30](#bip30)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    63 |
+| [BANLIST.DAT](#banlist.dat)    |    35 | [BIP147](#bip147)              |    55 |
+| [BANLIST.JSON](#banlist.json)  |    35 | [BIP148](#bip148)              |    55 |
+| [BARE-MULTISIG](#bare-multisig) |    35 | [BIP149](#bip149)              |    56 |
+| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    35 | [BIP150](#bip150)              |    56 |
+| [BASE58CHECK](#base58check)    |    35 | [BIP151](#bip151)              |    56 |
+| [BATCHED SPENDING](#batched-spending) |    36 | [BIP152](#bip152)              |    56 |
+| [BCH CODE](#bch-code)          |    36 | [BIP155](#bip155)              |    57 |
+| [BCOIN](#bcoin)                |    37 | [BIP156](#bip156)              |    57 |
+| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    37 | [BIP173](#bip173)              |    58 |
+| [BEAR MARKET](#bear-market)    |    37 | [BIP322](#bip322)              |    58 |
+| [BECH32 ET BECH32M](#bech32-et-bech32m) |    37 | [BIP324](#bip324)              |    58 |
+| [BERKELEYDB](#berkeleydb)      |    38 | [BIP326](#bip326)              |    58 |
+| [BIG BLOCKERS](#big-blockers)  |    38 | [BIP352](#bip352)              |    59 |
+| [BIG-ENDIAN](#big-endian)      |    38 | [BIP380](#bip380)              |    59 |
+| [BINAIRE](#binaire)            |    39 | [BIP381](#bip381)              |    59 |
+| [BIP](#bip)                    |    40 | [BIP382](#bip382)              |    60 |
+| [BIP1](#bip1)                  |    41 | [BIP383](#bip383)              |    60 |
+| [BIP2](#bip2)                  |    41 | [BIP384](#bip384)              |    60 |
+| [BIP8](#bip8)                  |    41 | [BIP385](#bip385)              |    60 |
+| [BIP9](#bip9)                  |    53 | [BIP386](#bip386)              |    60 |
+| [BIP10](#bip10)                |    42 | [BIRTH DATE (WALLET)](#birth-date-wallet) |    60 |
+| [BIP11](#bip11)                |    42 | [BIT](#bit)                    |    61 |
+| [BIP12](#bip12)                |    42 | [BIT (UNITÉ)](#bit-unité)      |    61 |
+| [BIP13](#bip13)                |    43 | [BITCOIN (B MAJUSCULE)](#bitcoin-b-majuscule) |    61 |
+| [BIP14](#bip14)                |    43 | [BITCOIN (B MINUSCULE)](#bitcoin-b-minuscule) |    61 |
+| [BIP16](#bip16)                |    43 | [BITCOIN CASH (BCH)](#bitcoin-cash-bch) |    62 |
+| [BIP17](#bip17)                |    43 | [BITCOIN CLASSIC](#bitcoin-classic) |    62 |
+| [BIP21](#bip21)                |    43 | [BITCOIN-CLI](#bitcoin-cli)    |    62 |
+| [BIP22](#bip22)                |    44 | [BITCOIN.CONF](#bitcoin.conf)  |    62 |
+| [BIP23](#bip23)                |    44 | [BITCOIN CORE](#bitcoin-core)  |    63 |
+| [BIP30](#bip30)                |    44 | [BITCOIN CORE GUI-QML](#bitcoin-core-gui-qml) |    63 |
 | [BIP31](#bip31)                |    44 | [BITCOIND](#bitcoind)          |    63 |
 | [BIP32](#bip32)                |    44 | [BITCOIN-DEV](#bitcoin-dev)    |    63 |
-| [BIP34](#bip34)                |    45 | [BITCOIND.PID](#bitcoind.pid)  |    63 |
+| [BIP34](#bip34)                |    45 | [BITCOIND.PID](#bitcoind.pid)  |    64 |
 | [BIP35](#bip35)                |    45 | [BITCOIN FOG](#bitcoin-fog)    |    64 |
 | [BIP37](#bip37)                |    70 | [BITCOIN GOLD (BTG)](#bitcoin-gold-btg) |    64 |
 | [BIP38](#bip38)                |    45 | [BITCOIN INQUISITION](#bitcoin-inquisition) |    64 |
-| [BIP39](#bip39)                |    46 | [BITCOIN JESUS](#bitcoin-jesus) |    64 |
-| [BIP42](#bip42)                |    46 | [BITCOIN KNOTS](#bitcoin-knots) |    64 |
+| [BIP39](#bip39)                |    46 | [BITCOIN JESUS](#bitcoin-jesus) |    65 |
+| [BIP42](#bip42)                |    46 | [BITCOIN KNOTS](#bitcoin-knots) |    65 |
 | [BIP43](#bip43)                |    46 | [BITCOIN OPTECH](#bitcoin-optech) |    65 |
 | [BIP44](#bip44)                |    47 | [BITCOIN POOLED MINING (BPM)](#bitcoin-pooled-mining-bpm) |    65 |
 | [BIP47](#bip47)                |    48 | [BITCOIN QT](#bitcoin-qt)      |    65 |
-| [BIP49](#bip49)                |    48 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    65 |
+| [BIP49](#bip49)                |    48 | [BITCOIN SATOSHI VISION (BSV)](#bitcoin-satoshi-vision-bsv) |    66 |
 | [BIP50](#bip50)                |    49 | [BITCOINTALK](#bitcointalk)    |    66 |
 | [BIP61](#bip61)                |    49 | [BITCOIN UNLIMITED](#bitcoin-unlimited) |    66 |
 | [BIP65](#bip65)                |    49 | [BITCOIN XT](#bitcoin-xt)      |    66 |
-| [BIP66](#bip66)                |    49 | [BIT GOLD](#bit-gold)          |    66 |
+| [BIP66](#bip66)                |    49 | [BIT GOLD](#bit-gold)          |    67 |
 | [BIP68](#bip68)                |    49 | [BITVM](#bitvm)                |    67 |
 | [BIP70](#bip70)                |    50 | [BLK*.DAT](#blk.dat)           |    67 |
-| [BIP71](#bip71)                |    50 | [BLKINDEX.DAT](#blkindex.dat)  |    67 |
-| [BIP72](#bip72)                |    50 | [BLKTREE/](#blktree)           |    67 |
-| [BIP75](#bip75)                |    50 | [BLOC](#bloc)                  |    67 |
+| [BIP71](#bip71)                |    50 | [BLKINDEX.DAT](#blkindex.dat)  |    68 |
+| [BIP72](#bip72)                |    50 | [BLKTREE/](#blktree)           |    68 |
+| [BIP75](#bip75)                |    50 | [BLOC](#bloc)                  |    68 |
 | [BIP78](#bip78)                |    50 | [BLOCKCHAIN](#blockchain)      |    68 |
-| [BIP84](#bip84)                |    51 | [BLOCKSIGNERS](#blocksigners)  |    68 |
-| [BIP85](#bip85)                |    51 | [BLOCKS INDEX](#blocks-index)  |    68 |
+| [BIP84](#bip84)                |    51 | [BLOCKSIGNERS](#blocksigners)  |    69 |
+| [BIP85](#bip85)                |    51 | [BLOCKS INDEX](#blocks-index)  |    69 |
 | [BIP86](#bip86)                |    51 | [BLOCKSIZE WAR](#blocksize-war) |    69 |
-| [BIP90](#bip90)                |    51 | [BLOCKS/REV*.DAT](#blocksrev.dat) |    69 |
+| [BIP90](#bip90)                |    51 | [BLOCKS/REV*.DAT](#blocksrev.dat) |    70 |
 | [BIP91](#bip91)                |    51 | [BLOCKSTREAM](#blockstream)    |    70 |
 | [BIP101](#bip101)              |    52 | [BLOCK TEMPLATE](#block-template) |    70 |
 | [BIP102](#bip102)              |    52 | [BLOOM FILTER](#bloom-filter)  |    70 |
-| [BIP109](#bip109)              |    52 | [B-MONEY](#b-money)            |    70 |
-| [BIP111](#bip111)              |    52 | [BOLT](#bolt)                  |    70 |
+| [BIP109](#bip109)              |    52 | [B-MONEY](#b-money)            |    71 |
+| [BIP111](#bip111)              |    52 | [BOLT](#bolt)                  |    71 |
 | [BIP112](#bip112)              |    52 | [BOUNTY](#bounty)              |    71 |
 | [BIP113](#bip113)              |    53 | [BRANCH-AND-BOUND](#branch-and-bound) |    71 |
 | [BIP118](#bip118)              |    53 | [BRANCHE (BITCOIN)](#branche-bitcoin) |    71 |
-| [BIP119](#bip119)              |    53 | [BRANCHE (GIT)](#branche-git)  |    71 |
-| [BIP123](#bip123)              |    53 | [BRC-20](#brc-20)              |    71 |
+| [BIP119](#bip119)              |    53 | [BRANCHE (GIT)](#branche-git)  |    72 |
+| [BIP123](#bip123)              |    53 | [BRC-20](#brc-20)              |    72 |
 | [BIP125](#bip125)              |    54 | [BTC](#btc)                    |    72 |
 | [BIP137](#bip137)              |    54 | [BTCD (BTC SUITE)](#btcd-btc-suite) |    72 |
 | [BIP141](#bip141)              |    54 | [BTCPAY SERVER](#btcpay-server) |    72 |
-| [BIP143](#bip143)              |    54 | [BULL MARKET](#bull-market)    |    72 |
+| [BIP143](#bip143)              |    54 | [BULL MARKET](#bull-market)    |    73 |
 | [BIP144](#bip144)              |    55 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    73 |
+| [BIP145](#bip145)              |    55 |                                |       |
 | | | | |
 
 
@@ -382,15 +383,16 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [FARADAY](#faraday)            |   124 | [FONCTION DE HACHAGE](#fonction-de-hachage) |   126 |
-| [FEDIMINT](#fedimint)          |   124 | [FONCTIONNAIRE](#fonctionnaire) |   127 |
-| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |   124 | [FONGIBILITÉ](#fongibilité)    |   127 |
-| [FEE SNIPING](#fee-sniping)    |   124 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |   127 |
-| [FERME DE MINAGE](#ferme-de-minage) |   125 | [FORCED ADDRESS REUSE](#forced-address-reuse) |   128 |
-| [FIAT](#fiat)                  |   125 | [FORK](#fork)                  |   128 |
-| [FIBRE](#fibre)                |   125 | [FORK (GIT)](#fork-git)        |   128 |
+| [FARADAY](#faraday)            |   124 | [FONCTIONNAIRE](#fonctionnaire) |   127 |
+| [FEDIMINT](#fedimint)          |   124 | [FONGIBILITÉ](#fongibilité)    |   127 |
+| [FEE_ESTIMATES.DAT](#fee_estimates.dat) |   124 | [FORCE BRUTE (ATTAQUE)](#force-brute-attaque) |   127 |
+| [FEE SNIPING](#fee-sniping)    |   124 | [FORCED ADDRESS REUSE](#forced-address-reuse) |   128 |
+| [FERME DE MINAGE](#ferme-de-minage) |   125 | [FORK](#fork)                  |   128 |
+| [FIAT](#fiat)                  |   125 | [FORK (GIT)](#fork-git)        |   128 |
+| [FIBRE](#fibre)                |   125 | [FOSS](#foss)                  |   129 |
 | [FINNEY HAL](#finney-hal)      |   126 | [FPPS (FULL PAY PER SHARE)](#fpps-full-pay-per-share) |   129 |
 | [FLAG DAY](#flag-day)          |   126 | [FRAIS DE TRANSACTION](#frais-de-transaction) |   130 |
+| [FONCTION DE HACHAGE](#fonction-de-hachage) |   126 |                                |       |
 | | | | |
 
 
@@ -1815,6 +1817,12 @@ Fichier de configuration utilisé pour personnaliser le fonctionnement d'un nœu
 Bitcoin Core est le logiciel open-source de référence pour le système Bitcoin, et constitue la principale implémentation du protocole Bitcoin à ce jour. Il est développé et maintenu par un large groupe de contributeurs bénévoles. Initialement nommé « Bitcoin Qt », c'est le troisième client de l'histoire de Bitcoin après Bitcoin, de Satoshi Nakamoto, et Bitcoind. Il a été développé à partir du code original de Satoshi et a introduit une interface graphique pour l'utilisateur. Par ailleurs, encore aujourd'hui, l'interface graphique de Bitcoin Core s'appelle `bitcoin-qt`. Il est fourni avec `bitcoind` depuis la version 0.5. Le logiciel Bitcoin Core sert à plusieurs fins. Tout d'abord, il agit comme un client nœud complet. Bitcoin Core inclut également un portefeuille (wallet) pour les utilisateurs qui souhaitent stocker, gérer et effectuer des transactions directement avec Bitcoin Core.
 
 ![](../../dictionnaire/assets/42.png)
+
+## BITCOIN CORE GUI-QML
+
+Projet en cours de création d'une application de portefeuille et de nœud Bitcoin établie sur Bitcoin Core, mais avec une interface graphique intuitive développée à l'aide de QML (*Qt Modeling Language*). L'objectif de Bitcoin Core GUI-QML est de moderniser l'interface utilisateur de Bitcoin Core pour offrir une expérience plus simple, plus fluide et plus dynamique. 
+
+L'interface traditionnelle de Bitcoin Core est principalement développée en C++ avec Qt Widgets, qui est un système qui produit des interfaces utilisateur très classiques. Ce nouveau projet s'appuie dorénavant sur QML, qui est un langage déclaratif utilisé pour concevoir des GUI avec des animations, des transitions et une interface plus réactive et stylisée. Cela permettra à Core de se rapprocher des interfaces d'applications modernes avec des interactions riches. L'objectif est que ce logiciel soit disponible à la fois sur PC et sur mobiles.
 
 ## BITCOIND
 
@@ -3445,6 +3453,10 @@ Le terme de « fork » revêt plusieurs significations dans le cadre de Bitcoi
 ## FORK (GIT)
 
 Dans le cadre de Git, représente la création d'une copie d'un dépôt existant sur un nouveau compte, permettant ainsi à l'utilisateur de modifier, tester ou développer le projet indépendamment du dépôt original. Les forks permettent la collaboration open source et la contribution à des projets sans affecter le dépôt source.
+
+## FOSS
+
+Acronyme de « *Free and Open Source Software* ». Cela désigne un logiciel sous licence autorisant quiconque à l'exécuter pour tout usage, à l'étudier, à le modifier pour l'adapter à ses besoins, et à le redistribuer librement, modifié ou non. Cette définition implique que le code source du logiciel soit accessible publiquement.
 
 ## FPPS (FULL PAY PER SHARE)
 
