@@ -22,7 +22,6 @@ ___
 
 
 
-## DESCRIPTORS
 
 
 
@@ -61,9 +60,6 @@ Bitcoin Gold algorithme
 
 
 
-## FOSS
-
-
 
 ## FULCRUM
 
@@ -73,7 +69,7 @@ Bitcoin Gold algorithme
 
 
 
-## GUI QML (CORE)
+
 
 
 
