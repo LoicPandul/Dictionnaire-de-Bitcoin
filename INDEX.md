@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 767 `**
+**Nombre total de définitions : ` 769 `**
 
 ### A
 
@@ -399,6 +399,7 @@
 - [INITIAL BLOCK DOWNLOAD (IBD)](./dictionnaire/I.md#initial-block-download-ibd)
 - [INPUT](./dictionnaire/I.md#input)
 - [INSCRIPTIONS](./dictionnaire/I.md#inscriptions)
+- [INVOICE LIGHTNING](./dictionnaire/I.md#invoice-lightning)
 - [IOU](./dictionnaire/I.md#iou)
 - [IP_ASN.MAP](./dictionnaire/I.md#ip_asnmap)
 - [ISSUE](./dictionnaire/I.md#issue)
@@ -427,6 +428,7 @@
 - [LIBBITCOIN](./dictionnaire/L.md#libbitcoin)
 - [LIBSECP256K1](./dictionnaire/L.md#libsecp256k1)
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
+- [LIGHTNING SERVICE PROVIDER](./dictionnaire/L.md#lightning-service-provider)
 - [LIMITE D'ÉMISSION](./dictionnaire/L.md#limite-démission)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
 - [LITTLE-ENDIAN](./dictionnaire/L.md#little-endian)

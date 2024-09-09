@@ -63,9 +63,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
-
 ## JAMMING ATTACK
 
 
