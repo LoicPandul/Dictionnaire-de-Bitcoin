@@ -18,10 +18,6 @@ ___
 
 
 
-
-
-
-
 ## DUAL FUNDING
 
 
@@ -48,7 +44,6 @@ Bitcoin Gold algorithme
 
 
 ## FLAG
-
 
 
 

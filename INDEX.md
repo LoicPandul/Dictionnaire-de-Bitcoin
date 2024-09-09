@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 764 `**
+**Nombre total de définitions : ` 766 `**
 
 ### A
 
@@ -272,6 +272,7 @@
 - [DB.LOG](./dictionnaire/D.md#dblog)
 - [DDOS](./dictionnaire/D.md#ddos)
 - [DEBUG.LOG](./dictionnaire/D.md#debuglog)
+- [DEMEURAGE](./dictionnaire/D.md#demeurage)
 - [DEPEG](./dictionnaire/D.md#depeg)
 - [DÉPÔT](./dictionnaire/D.md#dépôt)
 - [DER](./dictionnaire/D.md#der)
@@ -337,6 +338,7 @@
 - [FONCTIONNAIRE](./dictionnaire/F.md#fonctionnaire)
 - [FONGIBILITÉ](./dictionnaire/F.md#fongibilité)
 - [FORCE BRUTE (ATTAQUE)](./dictionnaire/F.md#force-brute-attaque)
+- [FORCE CLOSE](./dictionnaire/F.md#force-close)
 - [FORCED ADDRESS REUSE](./dictionnaire/F.md#forced-address-reuse)
 - [FORK](./dictionnaire/F.md#fork)
 - [FORK (GIT)](./dictionnaire/F.md#fork-git)

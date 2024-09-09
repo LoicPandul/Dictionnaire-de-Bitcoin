@@ -1839,6 +1839,18 @@ Forme de DOS où l'attaque provient de multiples sources simultanément, rendant
 
 Fichier contenant l'historique des événements de Bitcoin Core. Il contient des données de journalisation, telles que les messages d'erreur, les avertissements et d'autres informations de débogage. Ce fichier est utilisé pour résoudre d'éventuels problèmes techniques.
 
+## DEMEURAGE
+
+► ***EN : DEMURRAGE***
+
+Coût associé à la détention d'une monnaie. Par extension, le demeurage désigne parfois un mécanisme monétaire dans lequel la détention prolongée d'une monnaie entraîne une pénalité pour son propriétaire, par exemple, en faisant diminuer progressivement sa valeur. Le but recherché est souvent d'améliorer la vitesse de circulation de la monnaie en décourageant l'épargne de long terme.
+
+Ce mécanisme est parfois proposé pour être implémenté sur Bitcoin dans le but de soutenir le marché des frais de transaction et de répartir plus équitablement les coûts du système. En effet, le coût de fonctionnement de Bitcoin reposera à terme uniquement sur ceux qui réalisent des transactions, et pas sur les épargnants qui profitent pourtant de la sécurité du système. Cependant, le demeurage est très largement rejeté par la communauté Bitcoin, car il pénalise les détenteurs à long terme et n'est pas en adéquation avec la caractéristique de réserve de valeur du BTC. Puisqu'il impose une perte de valeur progressive, il peut être perçu comme une atteinte au droit de posséder.
+
+On pourrait argumenter contre le demeurage en expliquant que le coût du système actuel repose déjà inévitablement sur les épargnants, étant donné qu'ils ont dû réaliser une transaction à un moment donné pour obtenir leurs bitcoins. De plus, la sécurité d'un UTXO donné augmente beaucoup avec les premiers blocs après sa création, mais avec le temps, la sécurité additionnelle obtenue à chaque bloc devient de plus en plus marginale. Ainsi, il n'est pas nécessairement injuste de ne pas faire reposer le coût du minage sur les détenteurs à long terme.
+
+Le demeurage a notamment été appliqué sur l'altcoin Freicoin, un fork de Bitcoin qui a implémenté un système de taux d'intérêt négatifs.
+
 ## DEPEG
 
 Fait référence à la situation où la valeur d'un actif numérique, typiquement une reconnaissance de dette, se désolidarise de l'actif sous-jacent auquel il est normalement indexé, entraînant ainsi des fluctuations de prix par rapport à cet actif. Ce phénomène est particulièrement observé avec les stablecoins, conçus pour maintenir une parité stricte avec des monnaies fiduciaires ou d'autres actifs de référence. Le depeg peut aussi survenir dans le cas de représentations de bitcoins sur des sidechains ou des ETF, où en cas de problème, la valeur nominale peut diverger de celle du bitcoin.
@@ -2324,6 +2336,16 @@ Propriété d'une monnaie qui assure que chaque unité est interchangeable et in
 ► ***EN : BRUTE FORCE ATTACK***
 
 Méthode de cryptanalyse pour trouver un mot de passe ou une clé qui consiste à essayer par tâtonnement toutes les combinaisons possibles de clés ou de mots de passe jusqu'à trouver celle qui permet d'accéder à un privilège ou une information protégée. Cette technique repose sur du calcul intensif et peut être extrêmement longue, surtout face à des clés de grande taille. Pour faire face à ce type attaque, il faut utiliser des séquences de mot de passe et de clés plus longues afin de multiplier le nombre d'opérations nécessaires pour l'attaquant. En théorie, la complexité d'une telle attaque est exponentielle en la longueur de la cible.
+
+## FORCE CLOSE
+
+► ***FR : FERMETURE FORCÉE***
+
+Mécanisme de fermeture non coopérative d’un canal Lightning. Lorsque deux utilisateurs ouvrent un canal avec un multisig 2/2, chacun peut unilatéralement fermer le canal en diffusant la dernière transaction d’engagement qui est déjà signée, afin de récupérer ses bitcoins onchain. Dans ce cas, on parle d'un « force close ».
+
+Cette méthode est généralement utilisée si l'un des participants ne répond plus ou si la fermeture coopérative du canal est impossible. Si l'on peut éviter le force close, c'est mieux, car il nécessite plus de temps pour récupérer ses fonds onchain et peut couter beaucoup plus cher en frais.
+
+Lors d'un force close, un des deux utilisateurs diffuse la transaction d'engagement qui reflète le dernier état connu du canal Lightning. Il y a ensuite un délai de sécurité (timelock) avant que les bitcoins puissent être récupérés onchain, ce qui laisse le temps à l'autre partie de vérifier que la transaction correspond bien au dernier état du canal. Si un utilisateur tente de tricher en publiant une transaction d'engagement désuète, l'autre partie peut utiliser le secret de révocation pour punir le tricheur et récupérer la totalité des fonds du canal.
 
 ## FORCED ADDRESS REUSE
 
