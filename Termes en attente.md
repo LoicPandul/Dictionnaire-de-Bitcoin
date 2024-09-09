@@ -94,11 +94,6 @@ Bitcoin Gold algorithme
 
 
 
-## LIGHTNING SERVICE PROVIDER
-
-LSP
-
-
 ## LIQUIDITY ADVERTISEMENTS
 
 
