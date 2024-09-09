@@ -63,7 +63,7 @@ Bitcoin Gold algorithme
 
 
 
-## HTLC
+
 
 
 
