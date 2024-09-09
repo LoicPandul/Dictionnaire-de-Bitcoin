@@ -18,7 +18,7 @@ ___
 
 
 
-## DEMEURAGE
+
 
 
 
@@ -49,9 +49,6 @@ Bitcoin Gold algorithme
 
 ## FLAG
 
-
-
-## FORCE CLOSE
 
 
 
