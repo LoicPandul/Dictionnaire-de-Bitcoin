@@ -67,6 +67,14 @@ Ces artefacts numériques, comme des NFTs, peuvent être échangés et conservé
 
 > ► *Pour plus d'informations, voir les définitions de **[ORDINALS THEORY](./O.md#ordinals-theory)** et de **[DIGITAL ARTIFACTS](./D.md#digital-artifacts)**.*
 
+## INVOICE LIGHTNING
+
+Requête de paiement Lightning générée par le destinataire, qui contient toutes les informations nécessaires pour réaliser la transaction. 
+
+Une invoice Lightning contient la destination du paiement sous la forme de la clé publique du nœud destinataire, mais également un préfixe `ln`, le montant, un temps avant expiration, le hachage du secret utilisé dans le cadre des HTLCs, ainsi que d'autres métadonnées, pour certaines optionnelles, comme des options relatives au routage. Ces invoices sont définies par la norme BOLT11. Une fois payée, une invoice Lightning ne peut plus être réutilisée.
+
+> *En français, on pourrait traduire « invoice » par « facture », mais on utilise généralement le terme anglais même en français.*
+
 ## IOU
 
 Sigle de l'anglais _I Owe You_ (« Je te dois ») utilisé dans le contexte de Bitcoin pour désigner des actifs numériques qui sont adossés à des actifs sous-jacents auxquels ils devraient normalement être indexés. Ce terme s'applique notamment aux stablecoins ou aux représentations de BTC sur des systèmes externes à Bitcoin, tels que les sidechains, les drivechains, les plateformes d'échange, ou encore les ETFs. Ces actifs numériques représentent une promesse de valeur équivalente à celle de l'actif sous-jacent.
