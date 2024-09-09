@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 766 `**
+**Nombre total de définitions : ` 767 `**
 
 ### A
 
@@ -385,6 +385,7 @@
 - [HONG-KONG ROUNDTABLE](./dictionnaire/H.md#hong-kong-roundtable)
 - [HORODATAGE](./dictionnaire/H.md#horodatage)
 - [HRP (HUMAN READABLE PART)](./dictionnaire/H.md#hrp-human-readable-part)
+- [HTLC](./dictionnaire/H.md#htlc)
 - [HWI](./dictionnaire/H.md#hwi)
 
 ### I
