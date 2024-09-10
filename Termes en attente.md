@@ -71,7 +71,6 @@ Bitcoin Gold algorithme
 
 
 
-## JOINBOT
 
 
 
