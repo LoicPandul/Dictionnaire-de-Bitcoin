@@ -19,3 +19,4 @@ En mettant en rapport la difficulté sur Bitcoin avec son nombre de shares produ
 La luck est un indicateur qui ne peut être actualisé qu'après la découverte d'un bloc par la pool, ce qui en fait un indicateur statique mis à jour périodiquement.
 
 > ► *Pour plus d'informations, voir la définition de **[SHARES](/dictionnaire/S.md#shares)**.*
+

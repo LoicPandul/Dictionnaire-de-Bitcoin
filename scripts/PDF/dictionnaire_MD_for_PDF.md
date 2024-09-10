@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 09 septembre 2024\newline
+Version du 10 septembre 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -464,16 +464,17 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [LABEL](#label)                |   155 | [LIGHTNING SERVICE PROVIDER](#lightning-service-provider) |   158 |
-| [LABEL (SILENT PAYMENTS)](#label-silent-payments) |   155 | [LIMITE D'ÉMISSION](#limite-démission) |   158 |
-| [LATENCE](#latence)            |   156 | [LIQUID NETWORK](#liquid-network) |   158 |
-| [LCB/FT](#lcbft)               |   156 | [LITTLE-ENDIAN](#little-endian) |   159 |
-| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |   156 | [LND](#lnd)                    |   159 |
+| [LABEL](#label)                |   155 | [LIMITE D'ÉMISSION](#limite-démission) |   158 |
+| [LABEL (SILENT PAYMENTS)](#label-silent-payments) |   155 | [LIQUID NETWORK](#liquid-network) |   158 |
+| [LATENCE](#latence)            |   156 | [LITTLE-ENDIAN](#little-endian) |   159 |
+| [LCB/FT](#lcbft)               |   156 | [LND](#lnd)                    |   159 |
+| [LDK (LIGHTNING DEV KIT)](#ldk-lightning-dev-kit) |   156 | [LNURL](#lnurl)                |   159 |
 | [LEDGER](#ledger)              |   157 | [LOCK (.LOCK)](#lock-.lock)    |   159 |
 | [LEVELDB](#leveldb)            |   157 | [LOGARITHME DISCRET](#logarithme-discret) |   159 |
-| [LIBBITCOIN](#libbitcoin)      |   157 | [LOOP](#loop)                  |   159 |
+| [LIBBITCOIN](#libbitcoin)      |   157 | [LOOP](#loop)                  |   160 |
 | [LIBSECP256K1](#libsecp256k1)  |   157 | [LUCK](#luck)                  |   160 |
-| [LIGHTNING NETWORK](#lightning-network) |   158 |                                |       |
+| [LIGHTNING NETWORK](#lightning-network) |   158 | [LUD](#lud)                    |   160 |
+| [LIGHTNING SERVICE PROVIDER](#lightning-service-provider) |   158 |                                |       |
 | | | | |
 
 
@@ -4096,6 +4097,12 @@ Format de stockage de données dans les systèmes informatiques où les octets l
 
 Sigle de « *Lightning Network Daemon* ». C'est une implémentation majeure du protocole Lightning Network écrite en langage Go. Développée par Lightning Labs, LND permet la création et la gestion de canaux de paiement et de nœuds sur le réseau Lightning.
 
+## LNURL
+
+Protocole de communication qui spécifie un ensemble de fonctionnalités conçues pour simplifier les interactions entre les nœuds et les clients Lightning, ainsi que les applications tierces. Ce protocole repose sur HTTP et permet de créer des liens pour diverses opérations, comme une demande de paiement, une demande de retrait, ou d'autres fonctionnalités qui permettent d'améliorer l'expérience utilisateur. Chaque LNURL est une URL encodée en bech32 avec le préfixe `lnurl`, qui, une fois scannée, déclenche une série d’actions automatiques sur le portefeuille Lightning.
+
+Par exemple, la fonctionnalité LNURL-withdraw (LUD-03) permet de retirer des fonds depuis un service en scannant un QR code, sans avoir besoin de générer manuellement une invoice. Ou encore, LNURL-auth (LUD-04) permet de se connecter à des services en ligne en utilisant une clé privée sur son portefeuille Lightning à la place du mot de passe.
+
 ## LOCK (.LOCK)
 
 Fichier utilisé dans Bitcoin Core pour le verrouillage du répertoire de données. Il est créé lorsque bitcoind ou Bitcoin-qt démarre pour éviter que plusieurs instances du logiciel accèdent simultanément au même répertoire de données. Le but est de prévenir les conflits et les corruptions de données. Si le logiciel s'arrête de manière inattendue, le fichier .lock peut éventuellement rester et doit être supprimé manuellement avant de redémarrer Bitcoin Core.
@@ -4133,6 +4140,12 @@ En mettant en rapport la difficulté sur Bitcoin avec son nombre de shares produ
 La luck est un indicateur qui ne peut être actualisé qu'après la découverte d'un bloc par la pool, ce qui en fait un indicateur statique mis à jour périodiquement.
 
 > ► *Pour plus d'informations, voir la définition de **[SHARES](#shares)**.*
+
+## LUD
+
+Acronyme de « *LNURL Document* ». Les LUD sont des documents qui définissent des protocoles standardisés utilisés dans le cadre de LNURL. Chaque LUD spécifie une fonctionnalité, comme les paiements (LUD-06), les retraits (LUD-03) ou l'authentification (LUD-04). Ils permettent donc d'avoir une bonne interopérabilité entre les différents services et clients Lightning utilisant LNURL.
+
+> ► *Pour plus d'informations, voir la définition de **[LNURL](#lnurl)**.*
 
 
 

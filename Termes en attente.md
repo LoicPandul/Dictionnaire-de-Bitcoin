@@ -71,9 +71,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
-
 ## JOINPOOLS
 
 
