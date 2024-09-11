@@ -274,7 +274,7 @@ Sigle de « *Anchor Timelock Contracts* ». C'est un paiement conditionnel uti
 
 > ► *Pour plus d'informations, voir la définition de [**ARK**](./A.md#ark).*
 
-## ATOMIC MULTI-PATH PAYMENTS (AMP)
+## ATOMIC MULTI-PATH PAYMENTS
 
 ► ***FR : PAIEMENTS MULTICHEMINS ATOMIQUES***
 

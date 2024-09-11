@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 771 `**
+**Nombre total de définitions : ` 775 `**
 
 ### A
 
@@ -34,6 +34,7 @@
 - [ASSUME VALID](./dictionnaire/A.md#assume-valid)
 - [ATH (ALL-TIME HIGH)](./dictionnaire/A.md#ath-all-time-high)
 - [ATLC](./dictionnaire/A.md#atlc)
+- [ATOMIC MULTI-PATH PAYMENTS](./dictionnaire/A.md#atomic-multi-path-payments)
 - [ATOMIC SWAP](./dictionnaire/A.md#atomic-swap)
 - [ATTAQUE DES 51 POUR CENT](./dictionnaire/A.md#attaque-des-51-pour-cent)
 - [AVG. ROUND DURATION](./dictionnaire/A.md#avg-round-duration)
@@ -430,6 +431,7 @@
 - [LIGHTNING NETWORK](./dictionnaire/L.md#lightning-network)
 - [LIGHTNING SERVICE PROVIDER](./dictionnaire/L.md#lightning-service-provider)
 - [LIMITE D'ÉMISSION](./dictionnaire/L.md#limite-démission)
+- [LIQUIDITÉS (LIGHTNING)](./dictionnaire/L.md#liquidités-lightning)
 - [LIQUID NETWORK](./dictionnaire/L.md#liquid-network)
 - [LITTLE-ENDIAN](./dictionnaire/L.md#little-endian)
 - [LND](./dictionnaire/L.md#lnd)
@@ -478,6 +480,7 @@
 - [MODÈLE TEMPOREL](./dictionnaire/M.md#modèle-temporel)
 - [M-OF-N](./dictionnaire/M.md#m-of-n)
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
+- [MULTI-PATH PAYMENTS (MPP)](./dictionnaire/M.md#multi-path-payments-mpp)
 - [MULTISIG](./dictionnaire/M.md#multisig)
 
 ### N
@@ -718,6 +721,7 @@
 - [SETTINGS.JSON](./dictionnaire/S.md#settingsjson)
 - [SHA256](./dictionnaire/S.md#sha256)
 - [SHA512](./dictionnaire/S.md#sha512)
+- [SHARDS](./dictionnaire/S.md#shards)
 - [SHAREDCOIN](./dictionnaire/S.md#sharedcoin)
 - [SHARES](./dictionnaire/S.md#shares)
 - [SHARES DIFFICULTY](./dictionnaire/S.md#shares-difficulty)

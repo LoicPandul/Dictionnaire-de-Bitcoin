@@ -87,11 +87,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
-
-
-
 ## MATT
 
 
@@ -105,11 +100,6 @@ Bitcoin Gold algorithme
 
 
 ## MINIMINT
-
-
-
-
-
 
 
 
