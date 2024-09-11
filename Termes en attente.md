@@ -87,11 +87,8 @@ Bitcoin Gold algorithme
 
 
 
-## LIQUIDITY ADVERTISEMENTS
 
 
-
-## LIQUIDITÉS (LIGHTNING)
 
 
 
@@ -111,7 +108,8 @@ Bitcoin Gold algorithme
 
 
 
-## MULTIPATH PAYMENTS (MPP)
+
+
 
 
 
