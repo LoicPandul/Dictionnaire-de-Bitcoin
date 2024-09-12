@@ -1,6 +1,6 @@
 [![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
 <p align="center">
-  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-775-black" alt="Nombre de définitions">
+  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-777-black" alt="Nombre de définitions">
 </p>
 
 <p align="center">

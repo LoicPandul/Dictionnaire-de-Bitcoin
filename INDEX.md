@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 775 `**
+**Nombre total de définitions : ` 777 `**
 
 ### A
 
@@ -52,6 +52,7 @@
 - [BDK (BITCOIN DEV KIT)](./dictionnaire/B.md#bdk-bitcoin-dev-kit)
 - [BEAR MARKET](./dictionnaire/B.md#bear-market)
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
+- [BEHIND-THE-METER](./dictionnaire/B.md#behind-the-meter)
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
 - [BIG BLOCKERS](./dictionnaire/B.md#big-blockers)
 - [BIG-ENDIAN](./dictionnaire/B.md#big-endian)
@@ -388,6 +389,7 @@
 - [HRP (HUMAN READABLE PART)](./dictionnaire/H.md#hrp-human-readable-part)
 - [HTLC](./dictionnaire/H.md#htlc)
 - [HWI](./dictionnaire/H.md#hwi)
+- [HYDRO COOLING](./dictionnaire/H.md#hydro-cooling)
 
 ### I
 

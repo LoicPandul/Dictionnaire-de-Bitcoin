@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 11 septembre 2024\newline
+Version du 12 septembre 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -218,20 +218,21 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [BANLIST.DAT](#banlist.dat)    |    36 | [BIP147](#bip147)              |    56 |
-| [BANLIST.JSON](#banlist.json)  |    36 | [BIP148](#bip148)              |    56 |
-| [BARE-MULTISIG](#bare-multisig) |    36 | [BIP149](#bip149)              |    57 |
-| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    36 | [BIP150](#bip150)              |    57 |
-| [BASE58CHECK](#base58check)    |    36 | [BIP151](#bip151)              |    57 |
-| [BATCHED SPENDING](#batched-spending) |    37 | [BIP152](#bip152)              |    57 |
-| [BCH CODE](#bch-code)          |    37 | [BIP155](#bip155)              |    58 |
-| [BCOIN](#bcoin)                |    38 | [BIP156](#bip156)              |    58 |
-| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    38 | [BIP173](#bip173)              |    59 |
-| [BEAR MARKET](#bear-market)    |    38 | [BIP322](#bip322)              |    59 |
-| [BECH32 ET BECH32M](#bech32-et-bech32m) |    38 | [BIP324](#bip324)              |    59 |
+| [BANLIST.DAT](#banlist.dat)    |    36 | [BIP145](#bip145)              |    56 |
+| [BANLIST.JSON](#banlist.json)  |    36 | [BIP147](#bip147)              |    56 |
+| [BARE-MULTISIG](#bare-multisig) |    36 | [BIP148](#bip148)              |    56 |
+| [BASE (ARITHMÉTIQUE)](#base-arithmétique) |    36 | [BIP149](#bip149)              |    57 |
+| [BASE58CHECK](#base58check)    |    36 | [BIP150](#bip150)              |    57 |
+| [BATCHED SPENDING](#batched-spending) |    37 | [BIP151](#bip151)              |    57 |
+| [BCH CODE](#bch-code)          |    37 | [BIP152](#bip152)              |    57 |
+| [BCOIN](#bcoin)                |    38 | [BIP155](#bip155)              |    58 |
+| [BDK (BITCOIN DEV KIT)](#bdk-bitcoin-dev-kit) |    38 | [BIP156](#bip156)              |    58 |
+| [BEAR MARKET](#bear-market)    |    38 | [BIP173](#bip173)              |    59 |
+| [BECH32 ET BECH32M](#bech32-et-bech32m) |    38 | [BIP322](#bip322)              |    59 |
+| [BEHIND-THE-METER](#behind-the-meter) |    39 | [BIP324](#bip324)              |    59 |
 | [BERKELEYDB](#berkeleydb)      |    39 | [BIP326](#bip326)              |    59 |
 | [BIG BLOCKERS](#big-blockers)  |    39 | [BIP352](#bip352)              |    60 |
-| [BIG-ENDIAN](#big-endian)      |    39 | [BIP380](#bip380)              |    60 |
+| [BIG-ENDIAN](#big-endian)      |    40 | [BIP380](#bip380)              |    60 |
 | [BINAIRE](#binaire)            |    40 | [BIP381](#bip381)              |    60 |
 | [BIP](#bip)                    |    41 | [BIP382](#bip382)              |    61 |
 | [BIP1](#bip1)                  |    42 | [BIP383](#bip383)              |    61 |
@@ -290,7 +291,6 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [BIP141](#bip141)              |    55 | [BTCPAY SERVER](#btcpay-server) |    73 |
 | [BIP143](#bip143)              |    55 | [BULL MARKET](#bull-market)    |    74 |
 | [BIP144](#bip144)              |    56 | [BYZANTINE FAULT TOLERANCE (BFT)](#byzantine-fault-tolerance-bft) |    74 |
-| [BIP145](#bip145)              |    56 |                                |       |
 | | | | |
 
 
@@ -425,7 +425,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [HASHCASH](#hashcash)          |   140 | [HRP (HUMAN READABLE PART)](#hrp-human-readable-part) |   144 |
 | [HASHRATE](#hashrate)          |   141 | [HTLC](#htlc)                  |   144 |
 | [HAUTEUR DE BLOC](#hauteur-de-bloc) |   141 | [HWI](#hwi)                    |   145 |
-| [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   141 |                                |       |
+| [HD (HIERARCHICAL-DETERMINISTIC)](#hd-hierarchical-deterministic) |   141 | [HYDRO COOLING](#hydro-cooling) |   145 |
 | | | | |
 
 
@@ -1233,6 +1233,12 @@ Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, dimi
 &nbsp;
 
 `Bech32` et `Bech32m` sont des formats d'encodage utilisés pour représenter les adresses SegWit. `Bech32` est un format d'encodage d'adresse introduit par la BIP173 en 2017. Il utilise un ensemble de caractères spécifiques, composé de chiffres et de lettres minuscules, pour minimiser les erreurs de frappe et faciliter la lecture. Les adresses `Bech32` commencent généralement par `bc1` pour indiquer qu'elles sont natives de SegWit. Ce format est uniquement utilisé sur les adresses SegWit V0, avec les scripts P2WPKH (*Pay to Witness Public Key Hash*) et P2WSH (*Pay to Witness Script Hash*). Toutefois, il existe une petite faille inattendue propre au format `Bech32`. Chaque fois que le dernier caractère de l'adresse est un `p`, l'ajout ou la suppression d'un nombre quelconque de caractères `q` le précédant immédiatement n'invalide pas la somme de contrôle. Cela n'affecte pas les utilisations existantes des adresses SegWit V0 (BIP173) en raison de leur restriction à deux longueurs définies. Cependant, cela pourrait affecter des utilisations futures de l'encodage `Bech32`. Le format `Bech32m` est simplement un format `Bech32` avec cette erreur rectifiée. Il a été introduit avec le BIP350 en 2020. Les adresses `Bech32m` commencent également par `bc1`, mais elles sont spécifiquement conçues pour être compatibles avec la version SegWit V1 (Taproot) et les versions ultérieures, avec le script P2TR (*Pay to TapRoot*).
+
+## BEHIND-THE-METER
+
+► ***FR : DERRIÈRE LE COMPTEUR***
+
+Dans le cadre du minage de Bitcoin, désigne l'électricité produite et directement distribuée à une ferme, sans passer par le réseau public.
 
 ## BERKELEYDB
 
@@ -3822,6 +3828,12 @@ Les HTLCs permettent ainsi de faire des échanges dits « atomiques » : soit le
 ## HWI
 
 Sigle de « *Hardware Wallet Interface* ». C'est une interface standardisée permettant l'intégration et l'interaction entre des logiciels de gestion de portefeuilles Bitcoin et des portefeuilles matériels (hardware wallets). Plus précisément, HWI est à la fois une bibliothèque en Python et un outil en ligne de commande. Il facilite la communication entre ces composants en utilisant des PSBTs (transactions Bitcoin partiellement signées) et éventuellement des Descriptors (output script descriptors). Cette interface a d'abord été développée pour Bitcoin Core, puis, elle est devenue un standard utilisé par la plupart des logiciels de portefeuilles.
+
+## HYDRO COOLING
+
+► ***FR : REFROIDISSEMENT À L'EAU***
+
+Système de refroidissement pour les ASICs qui utilise un circuit fermé où de l'eau circule à travers des blocs de refroidissement, des tuyaux, puis un radiateur. L'objectif est d'extraire la chaleur des composants et de maintenir une bonne température pour leur fonctionnement.
 
 
 
