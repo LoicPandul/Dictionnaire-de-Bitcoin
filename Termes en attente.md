@@ -111,7 +111,6 @@ Bitcoin Gold algorithme
 
 
 
-## OFFERS (LIGHTNING)
 
 
 
@@ -135,11 +134,8 @@ Bitcoin Gold algorithme
 
 
 
-## PAPER WALLET
 
 
-
-## PATHFINDING
 
 
 
@@ -155,7 +151,15 @@ Bitcoin Gold algorithme
 
 
 
-## POOL (COINJOIN)
+
+
+
+
+
+
+
+
+
 
 
 
