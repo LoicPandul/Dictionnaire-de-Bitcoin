@@ -173,8 +173,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
 ## ROUTING ATTACKS
 
 
@@ -188,9 +186,6 @@ Bitcoin Gold algorithme
 
 
 ## SEEDXOR
-
-
-
 
 
 

@@ -5379,6 +5379,12 @@ Sur Bitcoin, on retrouve l'utilisation de ce protocole sur les systèmes de banq
 
 Preuve cryptographique qui démontre la possession d'une clé privée spécifique, associée à une clé publique unique, sans avoir à la divulguer. Sur Bitcoin, on la construit à l'aide de la clé privée et du hash d'une transaction. Elle atteste la propriété des bitcoins concernés et permet de satisfaire un script qui déverrouille un UTXO. Elle est générée grâce à un algorithme de signature numérique sur courbe elliptique tel qu'ECDSA ou le protocole de Schnorr.
 
+## SIGNER À L'AVEUGLE
+
+► ***EN : BLIND SIGNING***
+
+Processus où un utilisateur signe une transaction Bitcoin sans pouvoir vérifier précisément les détails de ce qu'il signe. Dans le cadre des hardware wallets, signer à l'aveugle est dangereux, car l'utilisateur doit se fier à l'ordinateur connecté pour afficher les informations (destinataires, frais, montants...). Cela l'expose à des vulnérabilités, car l'ordinateur est connecté à internet et dispose d'une surface d'attaque beaucoup plus grande que le périphérique de signature. Si l'ordinateur est compromis, il peut manipuler les détails affichés et envoyer une transaction malveillante à signer sans que l'utilisateur en ait conscience. Pour éviter ce risque, il est recommandé d'utiliser des hardware wallets avec un écran intégré, et de vérifier les informations sur celui-ci avant de signer les transactions.
+
 ## SIGNET
 
 Versions spécifiques du réseau Bitcoin conçues pour le développement et les tests. Les signets simulent le comportement du réseau principal (mainnet) mais avec la possibilité de contrôler divers paramètres. Ils offrent ainsi un environnement pour tester de nouvelles fonctionnalités ou modifications sans risquer de perturber le réseau principal et sans en subir les frais. Par rapport au testnet, les signets offrent un contrôle plus structuré sur la génération de blocs, souvent gérée par une ou plusieurs entités de confiance ou par un mécanisme de consensus personnalisé. Cela permet de créer des scénarios de test plus prévisibles, par rapport au testnet qui subit les aléas du minage, de la même manière que le mainnet.

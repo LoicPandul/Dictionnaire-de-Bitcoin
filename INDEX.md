@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 782 `**
+**Nombre total de définitions : ` 783 `**
 
 ### A
 
@@ -746,6 +746,7 @@
 - [SIGHASH_SINGLE/SIGHASH_ACP](./dictionnaire/S.md#sighash_singlesighash_acp)
 - [SIGNATURE AVEUGLE](./dictionnaire/S.md#signature-aveugle)
 - [SIGNATURE NUMÉRIQUE](./dictionnaire/S.md#signature-numérique)
+- [SIGNER À L'AVEUGLE](./dictionnaire/S.md#signer-à-laveugle)
 - [SIGNET](./dictionnaire/S.md#signet)
 - [SIGOPS (SIGNATURE OPERATIONS)](./dictionnaire/S.md#sigops-signature-operations)
 - [SILENT PAYMENTS](./dictionnaire/S.md#silent-payments)

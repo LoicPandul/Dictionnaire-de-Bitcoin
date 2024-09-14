@@ -652,34 +652,34 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [SCORE (SCORE BASED METHOD)](#score-score-based-method) |   241 | [SIGHASH_SINGLE/SIGHASH_ACP](#sighash_singlesighash_acp) |   252 |
 | [SCRIPT](#script)              |   241 | [SIGNATURE AVEUGLE](#signature-aveugle) |   252 |
 | [SCRIPTLESS SCRIPTS](#scriptless-scripts) |   241 | [SIGNATURE NUMÉRIQUE](#signature-numérique) |   253 |
-| [SCRIPTPUBKEY](#scriptpubkey)  |   242 | [SIGNET](#signet)              |   253 |
-| [SCRIPTSIG](#scriptsig)        |   242 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   253 |
-| [SCRIPTWITNESS](#scriptwitness) |   243 | [SILENT PAYMENTS](#silent-payments) |   255 |
-| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   243 | [SILK ROAD](#silk-road)        |   256 |
-| [SECP256K1](#secp256k1)        |   243 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   256 |
-| [SECP256R1](#secp256r1)        |   244 | [SLIP](#slip)                  |   256 |
-| [SEED NODES](#seed-nodes)      |   244 | [SMALL BLOCKERS](#small-blockers) |   256 |
-| [SEGWIT](#segwit)              |   245 | [SMPPS](#smpps)                |   257 |
-| [SEGWIT2X](#segwit2x)          |   245 | [SOFT FORK](#soft-fork)        |   257 |
-| [SEGWIT V0](#segwit-v0)        |   246 | [SOMME DE CONTRÔLE](#somme-de-contrôle) |   257 |
-| [SEGWIT V1](#segwit-v1)        |   246 | [SOROBAN](#soroban)            |   257 |
-| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   246 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   258 |
-| [SELF-CUSTODY](#self-custody)  |   246 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   258 |
-| [SELFISH MINING](#selfish-mining) |   246 | [SPEEDY TRIAL](#speedy-trial)  |   258 |
-| [SETTINGS.JSON](#settings.json) |   247 | [SPOF](#spof)                  |   259 |
-| [SHA256](#sha256)              |   247 | [SPREAD (WST)](#spread-wst)    |   259 |
-| [SHA512](#sha512)              |   247 | [STABLECOIN](#stablecoin)      |   259 |
-| [SHARDS](#shards)              |   248 | [STAMPS](#stamps)              |   259 |
-| [SHAREDCOIN](#sharedcoin)      |   248 | [STONEWALL](#stonewall)        |   260 |
-| [SHARES](#shares)              |   248 | [STONEWALL X2](#stonewall-x2)  |   261 |
-| [SHARES DIFFICULTY](#shares-difficulty) |   249 | [STRATUM](#stratum)            |   262 |
-| [SHITCOIN](#shitcoin)          |   249 | [STRATUM V2](#stratum-v2)      |   262 |
-| [SHOR (ALGORITHME)](#shor-algorithme) |   250 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   262 |
-| [SIDECHAIN](#sidechain)        |   250 | [SURCOUCHE](#surcouche)        |   263 |
-| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   250 | [SURFACE D'ATTAQUE](#surface-dattaque) |   263 |
-| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   250 | [SWEEP TRANSACTION](#sweep-transaction) |   263 |
-| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   251 | [SYBIL (ATTAQUE)](#sybil-attaque) |   264 |
-| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   251 |                                |       |
+| [SCRIPTPUBKEY](#scriptpubkey)  |   242 | [SIGNER À L'AVEUGLE](#signer-à-laveugle) |   253 |
+| [SCRIPTSIG](#scriptsig)        |   242 | [SIGNET](#signet)              |   253 |
+| [SCRIPTWITNESS](#scriptwitness) |   243 | [SIGOPS (SIGNATURE OPERATIONS)](#sigops-signature-operations) |   253 |
+| [SDK (SOFTWARE DEVELOPMENT KIT)](#sdk-software-development-kit) |   243 | [SILENT PAYMENTS](#silent-payments) |   255 |
+| [SECP256K1](#secp256k1)        |   243 | [SILK ROAD](#silk-road)        |   256 |
+| [SECP256R1](#secp256r1)        |   244 | [SIMPLIFIED PAYMENT VERIFICATION](#simplified-payment-verification) |   256 |
+| [SEED NODES](#seed-nodes)      |   244 | [SLIP](#slip)                  |   257 |
+| [SEGWIT](#segwit)              |   245 | [SMALL BLOCKERS](#small-blockers) |   257 |
+| [SEGWIT2X](#segwit2x)          |   245 | [SMPPS](#smpps)                |   257 |
+| [SEGWIT V0](#segwit-v0)        |   246 | [SOFT FORK](#soft-fork)        |   257 |
+| [SEGWIT V1](#segwit-v1)        |   246 | [SOMME DE CONTRÔLE](#somme-de-contrôle) |   257 |
+| [SÉLECTION DES PIÈCES](#sélection-des-pièces) |   246 | [SOROBAN](#soroban)            |   258 |
+| [SELF-CUSTODY](#self-custody)  |   246 | [SORTIE LA PLUS GRANDE](#sortie-la-plus-grande) |   258 |
+| [SELFISH MINING](#selfish-mining) |   246 | [SORTIE NON RENTABLE](#sortie-non-rentable) |   258 |
+| [SETTINGS.JSON](#settings.json) |   247 | [SPEEDY TRIAL](#speedy-trial)  |   259 |
+| [SHA256](#sha256)              |   247 | [SPOF](#spof)                  |   259 |
+| [SHA512](#sha512)              |   247 | [SPREAD (WST)](#spread-wst)    |   259 |
+| [SHARDS](#shards)              |   248 | [STABLECOIN](#stablecoin)      |   260 |
+| [SHAREDCOIN](#sharedcoin)      |   248 | [STAMPS](#stamps)              |   260 |
+| [SHARES](#shares)              |   248 | [STONEWALL](#stonewall)        |   260 |
+| [SHARES DIFFICULTY](#shares-difficulty) |   249 | [STONEWALL X2](#stonewall-x2)  |   261 |
+| [SHITCOIN](#shitcoin)          |   249 | [STRATUM](#stratum)            |   262 |
+| [SHOR (ALGORITHME)](#shor-algorithme) |   250 | [STRATUM V2](#stratum-v2)      |   262 |
+| [SIDECHAIN](#sidechain)        |   250 | [SUBVENTION DE BLOC](#subvention-de-bloc) |   263 |
+| [SIGHASH_ALL (0X01)](#sighash_all-0x01) |   250 | [SURCOUCHE](#surcouche)        |   263 |
+| [SIGHASH_ALL/SIGHASH_ACP](#sighash_allsighash_acp) |   250 | [SURFACE D'ATTAQUE](#surface-dattaque) |   263 |
+| [SIGHASH_ANYPREVOUT](#sighash_anyprevout) |   251 | [SWEEP TRANSACTION](#sweep-transaction) |   264 |
+| [SIGHASH_ANYPREVOUTANYSCRIPT](#sighash_anyprevoutanyscript) |   251 | [SYBIL (ATTAQUE)](#sybil-attaque) |   264 |
 | | | | |
 
 
@@ -6520,6 +6520,12 @@ Sur Bitcoin, on retrouve l'utilisation de ce protocole sur les systèmes de banq
 ► ***EN : DIGITAL SIGNATURE***
 
 Preuve cryptographique qui démontre la possession d'une clé privée spécifique, associée à une clé publique unique, sans avoir à la divulguer. Sur Bitcoin, on la construit à l'aide de la clé privée et du hash d'une transaction. Elle atteste la propriété des bitcoins concernés et permet de satisfaire un script qui déverrouille un UTXO. Elle est générée grâce à un algorithme de signature numérique sur courbe elliptique tel qu'ECDSA ou le protocole de Schnorr.
+
+## SIGNER À L'AVEUGLE
+
+► ***EN : BLIND SIGNING***
+
+Processus où un utilisateur signe une transaction Bitcoin sans pouvoir vérifier précisément les détails de ce qu'il signe. Dans le cadre des hardware wallets, signer à l'aveugle est dangereux, car l'utilisateur doit se fier à l'ordinateur connecté pour afficher les informations (destinataires, frais, montants...). Cela l'expose à des vulnérabilités, car l'ordinateur est connecté à internet et dispose d'une surface d'attaque beaucoup plus grande que le périphérique de signature. Si l'ordinateur est compromis, il peut manipuler les détails affichés et envoyer une transaction malveillante à signer sans que l'utilisateur en ait conscience. Pour éviter ce risque, il est recommandé d'utiliser des hardware wallets avec un écran intégré, et de vérifier les informations sur celui-ci avant de signer les transactions.
 
 ## SIGNET
 
