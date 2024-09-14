@@ -107,8 +107,6 @@ Bitcoin Gold algorithme
 
 
 
-## MYSTERY SHOPPER PAYMENTS
-
 
 
 ## NODE_BLOOM (BIP111)
