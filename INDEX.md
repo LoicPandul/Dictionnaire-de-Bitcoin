@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 778 `**
+**Nombre total de définitions : ` 781 `**
 
 ### A
 
@@ -625,7 +625,9 @@
 - [PAIR ENTRANT](./dictionnaire/P.md#pair-entrant)
 - [PAIR SORTANT](./dictionnaire/P.md#pair-sortant)
 - [PANNE BYZANTINE](./dictionnaire/P.md#panne-byzantine)
+- [PAPER WALLET](./dictionnaire/P.md#paper-wallet)
 - [PASSPHRASE (BIP39)](./dictionnaire/P.md#passphrase-bip39)
+- [PATHFINDING](./dictionnaire/P.md#pathfinding)
 - [PATOSHI](./dictionnaire/P.md#patoshi)
 - [PAYJOIN](./dictionnaire/P.md#payjoin)
 - [PAYNYM](./dictionnaire/P.md#paynym)
@@ -643,6 +645,7 @@
 - [POINT D'ENTRÉE](./dictionnaire/P.md#point-dentrée)
 - [POLICY (MINISCRIPT)](./dictionnaire/P.md#policy-miniscript)
 - [POOL](./dictionnaire/P.md#pool)
+- [POOL (COINJOIN)](./dictionnaire/P.md#pool-coinjoin)
 - [POOL (MINING)](./dictionnaire/P.md#pool-mining)
 - [POOL HOPPING](./dictionnaire/P.md#pool-hopping)
 - [PORTE DÉROBÉE](./dictionnaire/P.md#porte-dérobée)

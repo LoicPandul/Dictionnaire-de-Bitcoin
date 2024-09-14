@@ -111,9 +111,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
-
 ## OP_CHECKSIGFROMSTACK
 
 
@@ -134,11 +131,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
-
-
-
 ## PING (BIP31)
 
 
@@ -148,18 +140,6 @@ Bitcoin Gold algorithme
 
 
 ## PONG (BIP31)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
