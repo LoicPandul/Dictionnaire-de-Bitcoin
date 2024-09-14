@@ -148,9 +148,6 @@ Bitcoin Gold algorithme
 > *En anglais, ce terme est traduit « Fraud Proof ».*
 
 
-
-
-
 ## PTLC
 
 
@@ -176,9 +173,6 @@ Bitcoin Gold algorithme
 
 
 
-## ROUTAGE LIGHTNING
-
-> *En anglais, on parle de « routing ».*
 
 
 ## ROUTING ATTACKS
@@ -197,9 +191,7 @@ Bitcoin Gold algorithme
 
 
 
-## SIGNER À L'AVEUGLE
 
-> *En anglais, on parle de « Blind Signing ».*
 
 
 ## SNAPSHOT

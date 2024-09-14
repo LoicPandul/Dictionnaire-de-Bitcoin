@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 781 `**
+**Nombre total de définitions : ` 782 `**
 
 ### A
 
@@ -657,6 +657,7 @@
 - [PPS (PAY PER SHARE)](./dictionnaire/P.md#pps-pay-per-share)
 - [PRÉFIXES BINAIRES](./dictionnaire/P.md#préfixes-binaires)
 - [PREMIUM](./dictionnaire/P.md#premium)
+- [PREUVE DE RÉSERVES](./dictionnaire/P.md#preuve-de-réserves)
 - [PREUVE DE TRAVAIL](./dictionnaire/P.md#preuve-de-travail)
 - [PRIME DE PROXIMITÉ](./dictionnaire/P.md#prime-de-proximité)
 - [PROB. DES GÉNÉRAUX BYZANTINS](./dictionnaire/P.md#prob-des-généraux-byzantins)
