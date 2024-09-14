@@ -4,7 +4,7 @@
 Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
 
 
-Version du 12 September 2024
+Version du 14 September 2024
 
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
 
@@ -3494,6 +3494,12 @@ Les paiements multi-path offrent également de légers avantages en termes de co
 Les portefeuilles multisignatures, souvent abrégés « multisig », sont conçus pour renforcer la sécurisation de bitcoins en exigeant plusieurs signatures provenant de différentes clés privées pour autoriser une dépense. Cette méthode répartit le risque entre plusieurs clés, ce qui permet de réduire à la fois le risque de perte et celui de vol (selon la configuration du multisig). Les portefeuilles multisig fonctionnent selon un modèle « m-de-n », où `m` désigne le nombre minimal de signatures requises pour valider une transaction, et `n` le nombre total de clés impliquées. Par exemple, une configuration 2-de-3 nécessite deux signatures sur trois possibles pour valider une transaction. Cette approche offre une sécurité supérieure par rapport aux portefeuilles à clé unique, mais elle introduit également plus de complexité en termes de gestion et de sauvegarde. De plus, les transactions utilisant les anciens standards de multisig sont moins confidentielles et plus coûteuses en frais que les transactions singlesig classiques. Cependant, des innovations récentes telles que Taproot et l'utilisation de descriptors vont permettre de minimiser, voire d'éliminer, ces inconvénients des multisigs.
 
 > ► *Certains bitcoiners distinguent les termes « Multisig » et « Multisig à seuil ». En effet, certains affirment qu'un multisig est forcément un n-de-n, tandis qu'un multisig à seuil est un m-de-n. Toutefois, dans le langage courant, il est accepté de parler de « Multisig » même pour m-de-n.*
+
+## MYSTERY SHOPPER PAYMENTS
+
+► ***FR : PAIEMENTS DE CLIENT MYSTÈRE***
+
+Attaque dans laquelle un attaquant envoie un petit paiement légitime en bitcoins à sa cible pour obtenir des informations et tenter de compromettre sa confidentialité. Cette technique est souvent utilisée contre les commerçants. Prenons l'exemple d'Alice, qui possède une boulangerie qui accepte les paiements en bitcoins. Eve, l'attaquante, pourrait acheter un croissant pour obtenir une adresse de réception d'Alice. Eve pourrait ensuite suivre les mouvements de cet UTXO pour tenter de déduire des informations supplémentaires sur Alice en utilisant des heuristiques de traçage.
 
 
 

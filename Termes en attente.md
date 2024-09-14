@@ -107,8 +107,6 @@ Bitcoin Gold algorithme
 
 
 
-
-
 ## NODE_BLOOM (BIP111)
 
 

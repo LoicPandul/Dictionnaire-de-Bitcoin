@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 777 `**
+**Nombre total de définitions : ` 778 `**
 
 ### A
 
@@ -484,6 +484,7 @@
 - [MTP (MEDIAN TIME PAST)](./dictionnaire/M.md#mtp-median-time-past)
 - [MULTI-PATH PAYMENTS (MPP)](./dictionnaire/M.md#multi-path-payments-mpp)
 - [MULTISIG](./dictionnaire/M.md#multisig)
+- [MYSTERY SHOPPER PAYMENTS](./dictionnaire/M.md#mystery-shopper-payments)
 
 ### N
 

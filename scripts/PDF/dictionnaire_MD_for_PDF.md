@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 12 septembre 2024\newline
+Version du 14 septembre 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -482,25 +482,26 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [MACAROON](#macaroon)          |   164 | [MERKLE BLOCK](#merkle-block)  |   168 |
-| [MAGICAL BITCOIN](#magical-bitcoin) |   164 | [MÉTADONNÉES](#métadonnées)    |   168 |
-| [MAGIC NETWORK](#magic-network) |   164 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   168 |
-| [MAINNET](#mainnet)            |   164 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   169 |
-| [MAINTENEUR (CORE)](#mainteneur-core) |   164 | [MINAGE](#minage)              |   169 |
-| [MAINTENEUR PRINCIPAL (CORE)](#mainteneur-principal-core) |   165 | [MINAGE FUSIONNÉ](#minage-fusionné) |   170 |
-| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   165 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   170 |
-| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   165 | [MINEUR](#mineur)              |   170 |
-| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   166 | [MINISCRIPT](#miniscript)      |   171 |
-| [MAPPER](#mapper)              |   166 | [MINITAPSCRIPT](#minitapscript) |   171 |
-| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   166 | [MIT X11](#mit-x11)            |   171 |
-| [MASF](#masf)                  |   166 | [MIXAGE](#mixage)              |   172 |
-| [MAST](#mast)                  |   166 | [MODÈLE DE SCRIPT](#modèle-de-script) |   172 |
-| [MASTER FINGERPRINT](#master-fingerprint) |   167 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   172 |
-| [MAX_BLOC_SIZE](#max_bloc_size) |   167 | [MODÈLE TEMPOREL](#modèle-temporel) |   172 |
-| [MÉLANGEUR](#mélangeur)        |   167 | [M-OF-N](#m-of-n)              |   173 |
-| [MEMPOOL](#mempool)            |   167 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   173 |
-| [MEMPOOL.DAT](#mempool.dat)    |   168 | [MULTI-PATH PAYMENTS (MPP)](#multi-path-payments-mpp) |   173 |
-| [MERGE](#merge)                |   168 | [MULTISIG](#multisig)          |   174 |
+| [MACAROON](#macaroon)          |   164 | [MÉTADONNÉES](#métadonnées)    |   168 |
+| [MAGICAL BITCOIN](#magical-bitcoin) |   164 | [MÉTHODE D'ACTIVATION](#méthode-dactivation) |   168 |
+| [MAGIC NETWORK](#magic-network) |   164 | [MÉTHODE GÉOMÉTRIQUE](#méthode-géométrique) |   169 |
+| [MAINNET](#mainnet)            |   164 | [MINAGE](#minage)              |   169 |
+| [MAINTENEUR (CORE)](#mainteneur-core) |   164 | [MINAGE FUSIONNÉ](#minage-fusionné) |   170 |
+| [MAINTENEUR PRINCIPAL (CORE)](#mainteneur-principal-core) |   165 | [MINAGE FUSIONNÉ AVEUGLE](#minage-fusionné-aveugle) |   170 |
+| [MAJORITÉ ÉCONOMIQUE](#majorité-économique) |   165 | [MINEUR](#mineur)              |   170 |
+| [MALLÉABILITÉ (TRANSACTION)](#malléabilité-transaction) |   165 | [MINISCRIPT](#miniscript)      |   171 |
+| [MAN-IN-THE-MIDDLE (MITM)](#man-in-the-middle-mitm) |   166 | [MINITAPSCRIPT](#minitapscript) |   171 |
+| [MAPPER](#mapper)              |   166 | [MIT X11](#mit-x11)            |   171 |
+| [MARKET CAP (CAPITALIZATION)](#market-cap-capitalization) |   166 | [MIXAGE](#mixage)              |   172 |
+| [MASF](#masf)                  |   166 | [MODÈLE DE SCRIPT](#modèle-de-script) |   172 |
+| [MAST](#mast)                  |   166 | [MODÈLE DE TRANSACTION](#modèle-de-transaction) |   172 |
+| [MASTER FINGERPRINT](#master-fingerprint) |   167 | [MODÈLE TEMPOREL](#modèle-temporel) |   172 |
+| [MAX_BLOC_SIZE](#max_bloc_size) |   167 | [M-OF-N](#m-of-n)              |   173 |
+| [MÉLANGEUR](#mélangeur)        |   167 | [MTP (MEDIAN TIME PAST)](#mtp-median-time-past) |   173 |
+| [MEMPOOL](#mempool)            |   167 | [MULTI-PATH PAYMENTS (MPP)](#multi-path-payments-mpp) |   173 |
+| [MEMPOOL.DAT](#mempool.dat)    |   168 | [MULTISIG](#multisig)          |   174 |
+| [MERGE](#merge)                |   168 | [MYSTERY SHOPPER PAYMENTS](#mystery-shopper-payments) |   174 |
+| [MERKLE BLOCK](#merkle-block)  |   168 |                                |       |
 | | | | |
 
 
@@ -4477,6 +4478,12 @@ Les paiements multi-path offrent également de légers avantages en termes de co
 Les portefeuilles multisignatures, souvent abrégés « multisig », sont conçus pour renforcer la sécurisation de bitcoins en exigeant plusieurs signatures provenant de différentes clés privées pour autoriser une dépense. Cette méthode répartit le risque entre plusieurs clés, ce qui permet de réduire à la fois le risque de perte et celui de vol (selon la configuration du multisig). Les portefeuilles multisig fonctionnent selon un modèle « m-de-n », où `m` désigne le nombre minimal de signatures requises pour valider une transaction, et `n` le nombre total de clés impliquées. Par exemple, une configuration 2-de-3 nécessite deux signatures sur trois possibles pour valider une transaction. Cette approche offre une sécurité supérieure par rapport aux portefeuilles à clé unique, mais elle introduit également plus de complexité en termes de gestion et de sauvegarde. De plus, les transactions utilisant les anciens standards de multisig sont moins confidentielles et plus coûteuses en frais que les transactions singlesig classiques. Cependant, des innovations récentes telles que Taproot et l'utilisation de descriptors vont permettre de minimiser, voire d'éliminer, ces inconvénients des multisigs.
 
 > ► *Certains bitcoiners distinguent les termes « Multisig » et « Multisig à seuil ». En effet, certains affirment qu'un multisig est forcément un n-de-n, tandis qu'un multisig à seuil est un m-de-n. Toutefois, dans le langage courant, il est accepté de parler de « Multisig » même pour m-de-n.*
+
+## MYSTERY SHOPPER PAYMENTS
+
+► ***FR : PAIEMENTS DE CLIENT MYSTÈRE***
+
+Attaque dans laquelle un attaquant envoie un petit paiement légitime en bitcoins à sa cible pour obtenir des informations et tenter de compromettre sa confidentialité. Cette technique est souvent utilisée contre les commerçants. Prenons l'exemple d'Alice, qui possède une boulangerie qui accepte les paiements en bitcoins. Eve, l'attaquante, pourrait acheter un croissant pour obtenir une adresse de réception d'Alice. Eve pourrait ensuite suivre les mouvements de cet UTXO pour tenter de déduire des informations supplémentaires sur Alice en utilisant des heuristiques de traçage.
 
 
 
