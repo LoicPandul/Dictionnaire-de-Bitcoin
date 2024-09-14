@@ -148,9 +148,7 @@ Bitcoin Gold algorithme
 > *En anglais, ce terme est traduit « Fraud Proof ».*
 
 
-## PREUVE DE RÉSERVES
 
-> *En anglais, ce terme est traduit « Proof of Reserves ».*
 
 
 ## PTLC
