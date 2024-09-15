@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 785 `**
+**Nombre total de définitions : ` 787 `**
 
 ### A
 
@@ -263,6 +263,7 @@
 - [CRYPTOGRAPHIE](./dictionnaire/C.md#cryptographie)
 - [CRYPTOLOGIE](./dictionnaire/C.md#cryptologie)
 - [CRYPTOMONNAIE](./dictionnaire/C.md#cryptomonnaie)
+- [CURTAILMENT (MINING)](./dictionnaire/C.md#curtailment-mining)
 - [CUSTODY](./dictionnaire/C.md#custody)
 - [CYPHERPUNKS](./dictionnaire/C.md#cypherpunks)
 
@@ -396,6 +397,7 @@
 ### I
 
 - [I2P](./dictionnaire/I.md#i2p)
+- [IMMERSION COOLING](./dictionnaire/I.md#immersion-cooling)
 - [IMPLÉMENTATION DE BITCOIN](./dictionnaire/I.md#implémentation-de-bitcoin)
 - [INBOUND CAPACITY](./dictionnaire/I.md#inbound-capacity)
 - [INDEX (KEY)](./dictionnaire/I.md#index-key)

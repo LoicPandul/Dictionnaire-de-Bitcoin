@@ -299,43 +299,44 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [C++ (PLUS PLUS)](#c-plus-plus) |    77 | [COINJOIN](#coinjoin)          |    94 |
-| [CAHOOTS](#cahoots)            |    77 | [COINJUMBLE](#coinjumble)      |    95 |
-| [CANAL DE PAIMENT](#canal-de-paiment) |    77 | [COINMUX](#coinmux)            |    95 |
-| [CANDIDAT (BLOC)](#candidat-bloc) |    77 | [COINS/](#coins)               |    96 |
-| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    78 | [COINSHUFFLE](#coinshuffle)    |    96 |
-| [CASHU](#cashu)                |    78 | [COINSWAP](#coinswap)          |    96 |
-| [CET](#cet)                    |    78 | [COLD WALLET](#cold-wallet)    |    97 |
-| [CHAINE EXTERNE](#chaine-externe) |    78 | [COLORED COINS](#colored-coins) |    97 |
-| [CHAINE INTERNE](#chaine-interne) |    79 | [COMMERÇANT](#commerçant)      |    97 |
-| [CHAINSPLIT](#chainsplit)      |    80 | [COMMIT](#commit)              |    98 |
-| [CHAINSTATE/](#chainstate)     |    80 | [COMPACT BLOCK RELAY](#compact-block-relay) |    98 |
-| [CHAMPION (BIP)](#champion-bip) |    80 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    98 |
-| [CHANGE](#change)              |    81 | [COMPTE](#compte)              |    98 |
-| [CHANNEL FACTORIES](#channel-factories) |    81 | [CONCATÉNATION](#concaténation) |    99 |
-| [CHARGE UTILE](#charge-utile)  |    81 | [CONDENSAT](#condensat)        |    99 |
-| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    82 | [CONFIRMATION](#confirmation)  |    99 |
-| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    83 | [CONSENSUS](#consensus)        |   100 |
-| [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    84 | [CONSOLIDATION](#consolidation) |   100 |
-| [CHEMIN PRIMAIRE](#chemin-primaire) |    84 | [CONTRAT INTELLIGENT](#contrat-intelligent) |   101 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    85 | [CONTRIBUTEUR (CORE)](#contributeur-core) |   101 |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    85 | [COOKIE (.COOKIE)](#cookie-.cookie) |   101 |
-| [CIOH](#cioh)                  |    86 | [COORDINATEUR DE COINJOIN](#coordinateur-de-coinjoin) |   102 |
-| [CISA](#cisa)                  |    87 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |   102 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    87 | [COURBE ELLIPTIQUE](#courbe-elliptique) |   102 |
-| [CLÉ MAITRESSE](#clé-maitresse) |    88 | [COVENANT](#covenant)          |   102 |
-| [CLÉ PRIVÉE](#clé-privée)      |    89 | [COVERT ASICBOOST](#covert-asicboost) |   103 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    89 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |   103 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    90 | [CPPSRB](#cppsrb)              |   103 |
-| [CLI](#cli)                    |    91 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |   104 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    91 | [CRYPTANALYSE](#cryptanalyse)  |   104 |
-| [CLONE](#clone)                |    91 | [CRYPTER](#crypter)            |   104 |
-| [CLUSTER](#cluster)            |    91 | [CRYPTO-ACTIF](#crypto-actif)  |   104 |
-| [CODE DE CHAINE](#code-de-chaine) |    92 | [CRYPTOGRAPHIE](#cryptographie) |   104 |
-| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    92 | [CRYPTOLOGIE](#cryptologie)    |   104 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    92 | [CRYPTOMONNAIE](#cryptomonnaie) |   105 |
+| [C++ (PLUS PLUS)](#c-plus-plus) |    77 | [COINJUMBLE](#coinjumble)      |    95 |
+| [CAHOOTS](#cahoots)            |    77 | [COINMUX](#coinmux)            |    95 |
+| [CANAL DE PAIMENT](#canal-de-paiment) |    77 | [COINS/](#coins)               |    96 |
+| [CANDIDAT (BLOC)](#candidat-bloc) |    77 | [COINSHUFFLE](#coinshuffle)    |    96 |
+| [CAPACITÉ DE CANAL LIGHTNING](#capacité-de-canal-lightning) |    78 | [COINSWAP](#coinswap)          |    96 |
+| [CASHU](#cashu)                |    78 | [COLD WALLET](#cold-wallet)    |    97 |
+| [CET](#cet)                    |    78 | [COLORED COINS](#colored-coins) |    97 |
+| [CHAINE EXTERNE](#chaine-externe) |    78 | [COMMERÇANT](#commerçant)      |    97 |
+| [CHAINE INTERNE](#chaine-interne) |    79 | [COMMIT](#commit)              |    98 |
+| [CHAINSPLIT](#chainsplit)      |    80 | [COMPACT BLOCK RELAY](#compact-block-relay) |    98 |
+| [CHAINSTATE/](#chainstate)     |    80 | [COMPATIBILITÉ RÉTROSPECTIVE](#compatibilité-rétrospective) |    98 |
+| [CHAMPION (BIP)](#champion-bip) |    80 | [COMPTE](#compte)              |    98 |
+| [CHANGE](#change)              |    81 | [CONCATÉNATION](#concaténation) |    99 |
+| [CHANNEL FACTORIES](#channel-factories) |    81 | [CONDENSAT](#condensat)        |    99 |
+| [CHARGE UTILE](#charge-utile)  |    81 | [CONFIRMATION](#confirmation)  |    99 |
+| [CHAUMIAN COINJOIN](#chaumian-coinjoin) |    82 | [CONSENSUS](#consensus)        |   100 |
+| [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    83 | [CONSOLIDATION](#consolidation) |   100 |
+| [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    84 | [CONTRAT INTELLIGENT](#contrat-intelligent) |   101 |
+| [CHEMIN PRIMAIRE](#chemin-primaire) |    84 | [CONTRIBUTEUR (CORE)](#contributeur-core) |   101 |
+| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    85 | [COOKIE (.COOKIE)](#cookie-.cookie) |   101 |
+| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    85 | [COORDINATEUR DE COINJOIN](#coordinateur-de-coinjoin) |   102 |
+| [CIOH](#cioh)                  |    86 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |   102 |
+| [CISA](#cisa)                  |    87 | [COURBE ELLIPTIQUE](#courbe-elliptique) |   102 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    87 | [COVENANT](#covenant)          |   102 |
+| [CLÉ MAITRESSE](#clé-maitresse) |    88 | [COVERT ASICBOOST](#covert-asicboost) |   103 |
+| [CLÉ PRIVÉE](#clé-privée)      |    89 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |   103 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    89 | [CPPSRB](#cppsrb)              |   103 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    90 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |   104 |
+| [CLI](#cli)                    |    91 | [CRYPTANALYSE](#cryptanalyse)  |   104 |
+| [C-LIGHTNING (CLN)](#c-lightning-cln) |    91 | [CRYPTER](#crypter)            |   104 |
+| [CLONE](#clone)                |    91 | [CRYPTO-ACTIF](#crypto-actif)  |   104 |
+| [CLUSTER](#cluster)            |    91 | [CRYPTOGRAPHIE](#cryptographie) |   104 |
+| [CODE DE CHAINE](#code-de-chaine) |    92 | [CRYPTOLOGIE](#cryptologie)    |   104 |
+| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    92 | [CRYPTOMONNAIE](#cryptomonnaie) |   105 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    92 | [CURTAILMENT (MINING)](#curtailment-mining) |   105 |
 | [COINBASE (TRANSACTION)](#coinbase-transaction) |    93 | [CUSTODY](#custody)            |   105 |
 | [COIN CONTROL](#coin-control)  |    93 | [CYPHERPUNKS](#cypherpunks)    |   105 |
+| [COINJOIN](#coinjoin)          |    94 |                                |       |
 | | | | |
 
 
@@ -435,13 +436,13 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [I2P](#i2p)                    |   148 | [INPUT](#input)                |   149 |
+| [I2P](#i2p)                    |   148 | [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   149 |
+| [IMMERSION COOLING](#immersion-cooling) |   148 | [INPUT](#input)                |   150 |
 | [IMPLÉMENTATION DE BITCOIN](#implémentation-de-bitcoin) |   148 | [INSCRIPTIONS](#inscriptions)  |   150 |
 | [INBOUND CAPACITY](#inbound-capacity) |   148 | [INVOICE LIGHTNING](#invoice-lightning) |   150 |
-| [INDEX (KEY)](#index-key)      |   148 | [IOU](#iou)                    |   150 |
-| [INDEXES/TXINDEX/](#indexestxindex) |   148 | [IP_ASN.MAP](#ip_asn.map)      |   150 |
+| [INDEX (KEY)](#index-key)      |   148 | [IOU](#iou)                    |   151 |
+| [INDEXES/TXINDEX/](#indexestxindex) |   149 | [IP_ASN.MAP](#ip_asn.map)      |   151 |
 | [INFLATION](#inflation)        |   149 | [ISSUE](#issue)                |   151 |
-| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   149 |                                |       |
 | | | | |
 
 
@@ -2829,6 +2830,12 @@ Science mathématique qui traite de la cryptanalyse et de la cryptographie.
 
 Qualificatif générique donné à toute forme de monnaie, d'actif, de crédit ou d'unité numérique au sein d'un système informatique dans lequel on utilise de la cryptographie pour les échanges et les transactions entre les utilisateurs.
 
+## CURTAILMENT (MINING)
+
+► ***FR : RÉDUCTION (MINAGE)***
+
+Désigne la réduction volontaire de la consommation d'électricité d'une ferme de minage en éteignant des machines. Cette réduction fait partie de certains contrats passés avec des producteurs d'électricité. Lorsqu'il y a une surproduction d'énergie par rapport à la demande du marché, les mineurs utilisent ce surplus. Lorsqu'il y a des pics de demande par rapport à la production, les mineurs peuvent réduire leur consommation afin de stabiliser le réseau.
+
 ## CUSTODY
 
 Dans le contexte de Bitcoin, se réfère à la détention et à la gestion des clés privées qui permettent le contrôle de bitcoins. La custody de BTC peut être assurée de deux manières : soit personnellement par l'utilisateur, qui garde lui-même les clés privées nécessaires pour accéder à ses bitcoins (ce que l'on appelle « self-custody »), soit par un tiers, comme une plateforme d'échange, où l'entreprise détient les clés privées et gère les bitcoins au nom de l'utilisateur. Cette seconde option est plus risquée que la self-custody, car cela expose les fonds de l'utilisateur aux risques de piratage, de faillite ou de comportements frauduleux de la part du gestionnaire.
@@ -3872,6 +3879,12 @@ Système de refroidissement pour les ASICs qui utilise un circuit fermé où de 
 Réseau de communication anonyme conçu pour assurer la confidentialité des échanges sur Internet. Comme TOR, I2P chiffre les données du réseau et utilise un système de routage appelé « mix network ». Cette méthode garantit l'anonymat des communications en les faisant passer par des serveurs intermédiaires qui redirigent les informations sans connaître l'identité de l'émetteur ni celle du destinataire. Tout comme TOR, I2P peut être utilisé sur un nœud Bitcoin, afin de sécuriser ses communications réseau.
 
 > ► *Le sigle « I2P » signifie « Invisible Internet Project ».*
+
+## IMMERSION COOLING
+
+► ***FR : REFROIDISSEMENT PAR IMMERSION***
+
+Technique de refroidissement utilisée dans le cadre du minage, où les ASICs sont immergés dans un liquide non conducteur pour dissiper la chaleur qu'ils produisent. L'immersion présente plusieurs avantages par rapport au refroidissement à l'air. Tout d'abord il n'y a pas besoin d'utiliser des ventilateurs, ce qui réduit ainsi la consommation énergétique. Aussi, les machines sont protégées de la poussière, ce qui améliore leur performance et leur longévité. L'immersion permet également une meilleure dissipation de la chaleur, car les composants sont directement en contact avec le fluide de refroidissement.
 
 ## IMPLÉMENTATION DE BITCOIN
 
