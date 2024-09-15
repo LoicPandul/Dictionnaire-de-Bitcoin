@@ -412,6 +412,16 @@ Dans le cadre du minage de Bitcoin, désigne l'électricité produite et directe
 
 Système de gestion de base de données intégrable avec une architecture de stockage clé-valeur. Il a été utilisé dans les premières versions de Bitcoin et a été remplacé par LevelDB en 2012.
 
+## BGP HIJACKING
+
+► ***FR : DÉTOURNEMENT BGP***
+
+Attaque où un acteur malveillant manipule les annonces BGP pour rediriger le trafic Internet vers son propre réseau. En prétendant être l'origine légitime de certaines plages d'adresses IP, l'attaquant peut intercepter, surveiller ou bloquer le trafic destiné à ces adresses.
+
+BGP (*Border Gateway Protocol*) est le protocole qui détermine comment le trafic est routé entre les différents réseaux autonomes (AS) qui composent l'Internet mondial. Il décide des chemins que les données prennent pour aller d'un point à un autre.
+
+Dans le contexte de Bitcoin, le BGP Hijacking peut être utilisé pour détourner le trafic entre les nœuds du réseau Bitcoin pour en isoler certains. Cette attaque peut également être réalisée sur des serveurs Stratum utilisés par les pools de minage, afin de rediriger la puissance de calcul des hacheurs vers sa propre pool. Étant donné que les hacheurs ne redémarrent pas souvent leurs machines, cette redirection peut persister longtemps. Cette attaque peut non seulement viser un gain financier direct en usurpant les récompenses de bloc, mais également chercher à prendre temporairement plus de pouvoir sur le système.
+
 ## BIG BLOCKERS
 
 Nom donné aux partisans de l'augmentation de la taille des blocs durant la Blocksize War entre 2015 et 2017. Les big blockers pensent qu'il est nécessaire d'augmenter cette limite pour permettre le passage à l'échelle de Bitcoin. Ils soutiennent des propositions comme Bitcoin XT, Bitcoin Classic et Bitcoin Unlimited. Ils n'ont pas de problème avec le fait d'implémenter des changements via des hard forks, contrairement aux small blockers qui préfèrent les soft forks.
@@ -2020,6 +2030,12 @@ Deux scénarios principaux peuvent permettre cette attaque. Le premier, et le pl
 ## DRIVECHAIN
 
 Forme spécifique de sidechain où les mineurs de la blockchain principale (Bitcoin) ont un rôle direct dans la gouvernance de l'ancrage bilatéral et éventuellement dans le mécanisme de consensus de la sidechain. Ce protocole a été inventé par Paul Sztorc et pourrait être mis en place grâce aux controversés BIP300, qui permettrait le two-way peg auprès des mineurs, et BIP301, qui permettrait d'utiliser le minage fusionné (merged mining) de manière optimale.
+
+## DUAL FUNDING
+
+Lors de l'ouverture d'un canal Lightning, le dual funding permet aux deux participants d'y bloquer des bitcoins. Contrairement au modèle traditionnel où un seul nœud finance le canal, cette méthode permet aux deux parties de le financer, ce qui permet d'équilibrer ses liquidités immédiatement.
+
+Le dual funding est inclus dans la version 2 du protocole de construction des canaux, qui utilise une phase de négociation. Les deux parties collaborent pour créer la transaction de financement en échangeant des messages pour ajouter ou retirer des bitcoins jusqu'à ce que la transaction soit finalisée.
 
 ## DUMMY ELEMENT
 

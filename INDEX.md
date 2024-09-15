@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 783 `**
+**Nombre total de définitions : ` 785 `**
 
 ### A
 
@@ -54,6 +54,7 @@
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
 - [BEHIND-THE-METER](./dictionnaire/B.md#behind-the-meter)
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
+- [BGP HIJACKING](./dictionnaire/B.md#bgp-hijacking)
 - [BIG BLOCKERS](./dictionnaire/B.md#big-blockers)
 - [BIG-ENDIAN](./dictionnaire/B.md#big-endian)
 - [BINAIRE](./dictionnaire/B.md#binaire)
@@ -294,6 +295,7 @@
 - [DOS (DENIAL OF SERVICE)](./dictionnaire/D.md#dos-denial-of-service)
 - [DOUBLE DÉPENSE (ATTAQUE)](./dictionnaire/D.md#double-dépense-attaque)
 - [DRIVECHAIN](./dictionnaire/D.md#drivechain)
+- [DUAL FUNDING](./dictionnaire/D.md#dual-funding)
 - [DUMMY ELEMENT](./dictionnaire/D.md#dummy-element)
 - [DUST](./dictionnaire/D.md#dust)
 - [DUSTING ATTACK](./dictionnaire/D.md#dusting-attack)
