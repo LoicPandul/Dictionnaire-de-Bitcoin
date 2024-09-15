@@ -16,7 +16,7 @@ ___
 
 
 
-## DUAL FUNDING
+
 
 
 
