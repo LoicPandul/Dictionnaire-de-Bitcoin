@@ -354,7 +354,7 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [DEMEURAGE](#demeurage)        |   108 | [DOS (DENIAL OF SERVICE)](#dos-denial-of-service) |   114 |
 | [DEPEG](#depeg)                |   109 | [DOUBLE DÉPENSE (ATTAQUE)](#double-dépense-attaque) |   114 |
 | [DÉPÔT](#dépôt)                |   109 | [DRIVECHAIN](#drivechain)      |   114 |
-| [DER](#der)                    |   109 | [DUAL FUNDING](#dual-funding)  |   115 |
+| [DER](#der)                    |   109 | [DUAL FUNDING](#dual-funding)  |   114 |
 | [DÉRIVATION](#dérivation)      |   110 | [DUMMY ELEMENT](#dummy-element) |   115 |
 | [DÉRIVATION ENDURCIE](#dérivation-endurcie) |   110 | [DUST](#dust)                  |   115 |
 | [DÉRIVATION NORMALE](#dérivation-normale) |   110 | [DUSTING ATTACK](#dusting-attack) |   115 |
@@ -3099,6 +3099,8 @@ Forme spécifique de sidechain où les mineurs de la blockchain principale (Bitc
 
 ## DUAL FUNDING
 
+► ***FR : FINANCEMENT DOUBLE***
+
 Lors de l'ouverture d'un canal Lightning, le dual funding permet aux deux participants d'y bloquer des bitcoins. Contrairement au modèle traditionnel où un seul nœud finance le canal, cette méthode permet aux deux parties de le financer, ce qui permet d'équilibrer ses liquidités immédiatement.
 
 Le dual funding est inclus dans la version 2 du protocole de construction des canaux, qui utilise une phase de négociation. Les deux parties collaborent pour créer la transaction de financement en échangeant des messages pour ajouter ou retirer des bitcoins jusqu'à ce que la transaction soit finalisée.
@@ -3884,7 +3886,7 @@ Réseau de communication anonyme conçu pour assurer la confidentialité des éc
 
 ► ***FR : REFROIDISSEMENT PAR IMMERSION***
 
-Technique de refroidissement utilisée dans le cadre du minage, où les ASICs sont immergés dans un liquide non conducteur pour dissiper la chaleur qu'ils produisent. L'immersion présente plusieurs avantages par rapport au refroidissement à l'air. Tout d'abord il n'y a pas besoin d'utiliser des ventilateurs, ce qui réduit ainsi la consommation énergétique. Aussi, les machines sont protégées de la poussière, ce qui améliore leur performance et leur longévité. L'immersion permet également une meilleure dissipation de la chaleur, car les composants sont directement en contact avec le fluide de refroidissement.
+Technique de refroidissement utilisée dans le cadre du minage, où les ASICs sont immergés dans un liquide non-conducteur pour dissiper la chaleur qu'ils produisent. L'immersion présente plusieurs avantages par rapport au refroidissement à l'air. Tout d'abord il n'y a pas besoin d'utiliser des ventilateurs, ce qui réduit ainsi la consommation énergétique. Aussi, les machines sont protégées de la poussière, ce qui améliore leur performance et leur longévité. L'immersion permet également une meilleure dissipation de la chaleur, car les composants sont directement en contact avec le fluide de refroidissement.
 
 ## IMPLÉMENTATION DE BITCOIN
 
