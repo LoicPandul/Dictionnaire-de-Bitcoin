@@ -4,7 +4,7 @@
 Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
 
 
-Version du 15 September 2024
+Version du 18 September 2024
 
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
 
@@ -2474,6 +2474,16 @@ L'étiquetage est une bonne pratique qui aide à se rappeler l'origine ou la des
 
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser facilement un bloc, une transaction ou une adresse spécifique.
 
+## EXTRA-NONCE
+
+Champ utilisé dans le `scriptSig` de la transaction coinbase d’un bloc, qui permet d'avoir un plus grand nombre de possibilités à tester pour avoir un hachage inférieur à la cible de difficulté, en plus du nonce classique qui se trouve, lui, directement dans l'entête de chaque bloc.
+
+Modifier l’extra-nonce dans la transaction coinbase change l’identifiant de cette transaction, et donc la racine de Merkle de toutes les transactions du bloc, ce qui modifie également l’entête du bloc. Cela permet au mineur de continuer à chercher des hachages quand la plage du nonce classique est déjà épuisée, sans pour autant changer la structure de son bloc candidat.
+
+Dans le cadre des pools de minage, l'extra-nonce est souvent divisé en deux parties : une générée par la pool pour identifier chaque hacheur, et une autre modifiée par le hacheur dans la recherche d'une share valide. Cela permet aux différents hacheurs de la pool de travailler simultanément sur un même bloc candidat avec l'entièreté de la plage des nonces, sans pour autant dupliquer le même travail au niveau de la pool.
+
+> ► *Pour plus d'informations, voir la définition de [**NONCE**](#nonce).*
+
 
 ## FARADAY
 
@@ -4358,6 +4368,10 @@ cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U
 Ensuite, la notation `/<0;1>/*` spécifie que le descriptor peut générer des adresses à partir de la chaîne externe (`0`) et interne (`1`), avec un wildcard (`*`) permettant la dérivation séquentielle de plusieurs adresses de manière paramétrable, similaire à la gestion d'un « gap limit » sur des logiciels de portefeuille classiques.
 
 Enfin, `#jy0l7nr4` représente la somme de contrôle pour vérifier l'intégrité du descriptor.
+
+## OVERCLOCKING
+
+Pratique qui consiste à augmenter la fréquence de fonctionnement des puces ASICs utilisées pour le minage au-delà de leurs spécifications nominales. Cela permet de produire plus de hashrate et d'augmenter les chances de trouver un bloc. Cependant, cette pratique augmente également la consommation d’électricité des machines, et donc génère plus de chaleur, ce qui peut entraîner une usure prématurée des composants et nécessiter des systèmes de refroidissement améliorés, comme le refroidissement par immersion.
 
 ## OVERT ASICBOOST
 

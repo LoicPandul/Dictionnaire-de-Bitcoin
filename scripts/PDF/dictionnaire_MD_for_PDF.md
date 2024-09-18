@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 15 septembre 2024\newline
+Version du 18 septembre 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -368,17 +368,18 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [ECASH (DAVID CHAUM)](#ecash-david-chaum) |   118 | [ELTOO](#eltoo)                |   120 |
-| [ECASH (XEC)](#ecash-xec)      |   118 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |   120 |
-| [ECDH](#ecdh)                  |   118 | [EMPREINTE DE PORTEFEUILLE](#empreinte-de-portefeuille) |   120 |
-| [ECDSA](#ecdsa)                |   118 | [ENDIANNESS](#endianness)      |   121 |
-| [ECLAIR](#eclair)              |   118 | [ENTÊTE DE BLOC](#entête-de-bloc) |   121 |
-| [ECLIPSE (ATTAQUE)](#eclipse-attaque) |   119 | [ENTROPIE](#entropie)          |   122 |
-| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |   119 | [ENTROPIE (ANALYSE)](#entropie-analyse) |   123 |
-| [ELECTRS](#electrs)            |   119 | [EREBUS (ATTAQUE)](#erebus-attaque) |   123 |
-| [ELECTRUM](#electrum)          |   119 | [ESMPPS](#esmpps)              |   123 |
-| [ELECTRUM LIGHTNING](#electrum-lightning) |   119 | [ÉTIQUETAGE](#étiquetage)      |   124 |
-| [ELECTRUM SERVER](#electrum-server) |   120 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |   124 |
+| [ECASH (DAVID CHAUM)](#ecash-david-chaum) |   118 | [EMBRANCHEMENT NATUREL](#embranchement-naturel) |   120 |
+| [ECASH (XEC)](#ecash-xec)      |   118 | [EMPREINTE DE PORTEFEUILLE](#empreinte-de-portefeuille) |   120 |
+| [ECDH](#ecdh)                  |   118 | [ENDIANNESS](#endianness)      |   121 |
+| [ECDSA](#ecdsa)                |   118 | [ENTÊTE DE BLOC](#entête-de-bloc) |   121 |
+| [ECLAIR](#eclair)              |   118 | [ENTROPIE](#entropie)          |   122 |
+| [ECLIPSE (ATTAQUE)](#eclipse-attaque) |   119 | [ENTROPIE (ANALYSE)](#entropie-analyse) |   123 |
+| [ÉCOLE AUTRICHIENNE](#école-autrichienne) |   119 | [EREBUS (ATTAQUE)](#erebus-attaque) |   123 |
+| [ELECTRS](#electrs)            |   119 | [ESMPPS](#esmpps)              |   123 |
+| [ELECTRUM](#electrum)          |   119 | [ÉTIQUETAGE](#étiquetage)      |   124 |
+| [ELECTRUM LIGHTNING](#electrum-lightning) |   119 | [EXPLORATEUR DE BLOC](#explorateur-de-bloc) |   124 |
+| [ELECTRUM SERVER](#electrum-server) |   120 | [EXTRA-NONCE](#extra-nonce)    |   124 |
+| [ELTOO](#eltoo)                |   120 |                                |       |
 | | | | |
 
 
@@ -528,55 +529,56 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [OBJECTIF](#objectif)          |   183 | [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   193 |
-| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   183 | [OP_IF (0X63)](#op_if-0x63)    |   194 |
-| [OBSOLÈTE (BLOC)](#obsolète-bloc) |   200 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   194 |
-| [OCTET](#octet)                |   184 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   194 |
-| [OFF-CHAIN](#off-chain)        |   184 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   194 |
-| [OFFER](#offer)                |   185 | [OP_MAX (0XA4)](#op_max-0xa4)  |   194 |
-| [ON-CHAIN](#on-chain)          |   185 | [OP_MIN (0XA3)](#op_min-0xa3)  |   194 |
-| [ONION_PRIVATE_KEY](#onion_private_key) |   185 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   194 |
-| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   185 | [OP_NIP (0X77)](#op_nip-0x77)  |   195 |
-| [OP_0 (0X00)](#op_0-0x00)      |   185 | [OP_NOP (0X61)](#op_nop-0x61)  |   195 |
-| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   185 | [OP_NOT (0X91)](#op_not-0x91)  |   195 |
-| [OP_1 (0X51)](#op_1-0x51)      |   186 | [OP_NOTIF (0X64)](#op_notif-0x64) |   195 |
-| [OP_1ADD (0X8B)](#op_1add-0x8b) |   186 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   195 |
-| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   186 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   195 |
-| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   186 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   195 |
-| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   186 | [OP_OVER (0X78)](#op_over-0x78) |   196 |
-| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   186 | [OP_PICK (0X79)](#op_pick-0x79) |   196 |
-| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   186 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   196 |
-| [OP_2OVER (0X70)](#op_2over-0x70) |   187 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   196 |
-| [OP_2ROT (0X71)](#op_2rot-0x71) |   187 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   196 |
-| [OP_2SWAP (0X72)](#op_2swap-0x72) |   188 | [OP_RETURN (0X6A)](#op_return-0x6a) |   196 |
-| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   188 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   196 |
-| [OP_ABS (0X90)](#op_abs-0x90)  |   189 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   196 |
-| [OP_ADD (0X93)](#op_add-0x93)  |   189 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   197 |
-| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   189 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   197 |
-| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   189 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   197 |
-| [OP_CAT (0X7E)](#op_cat-0x7e)  |   189 | [OP_SIZE (0X82)](#op_size-0x82) |   197 |
-| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   189 | [OP_SUB (0X94)](#op_sub-0x94)  |   197 |
-| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   190 | [OP_SUCCESS](#op_success)      |   198 |
-| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   190 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   197 |
-| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   190 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   198 |
-| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   190 | [OP_TRUE (0X51)](#op_true-0x51) |   198 |
-| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   191 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   198 |
-| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   191 | [OP_VER (0X62)](#op_ver-0x62)  |   198 |
-| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   191 | [OP_VERIFY (0X69)](#op_verify-0x69) |   198 |
-| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   192 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   198 |
-| [OP_DEPTH (0X74)](#op_depth-0x74) |   192 | [OPCODES](#opcodes)            |   199 |
-| [OP_DROP (0X75)](#op_drop-0x75) |   192 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   199 |
-| [OP_DUP (0X76)](#op_dup-0x76)  |   192 | [ORACLE](#oracle)              |   199 |
-| [OP_ELSE (0X67)](#op_else-0x67) |   192 | [ORDINAL NUMBER](#ordinal-number) |   199 |
-| [OP_ENDIF (0X68)](#op_endif-0x68) |   192 | [ORDINALS THEORY](#ordinals-theory) |   199 |
-| [OP_EQUAL (0X87)](#op_equal-0x87) |   192 | [ORPHELIN](#orphelin)          |   200 |
-| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   193 | [OSINT](#osint)                |   200 |
-| [OP_EVAL](#op_eval)            |   193 | [OUTBOUND CAPACITY](#outbound-capacity) |   201 |
-| [OP_FALSE (0X00)](#op_false-0x00) |   193 | [OUTPOINT](#outpoint)          |   201 |
-| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   193 | [OUTPUT](#output)              |   201 |
-| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   193 | [OUTPUT LINKING](#output-linking) |   202 |
-| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   193 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   202 |
+| [OBJECTIF](#objectif)          |   183 | [OP_IF (0X63)](#op_if-0x63)    |   194 |
+| [OBOE (OFF-BY-ONE ERROR)](#oboe-off-by-one-error) |   183 | [OP_IFDUP (0X73)](#op_ifdup-0x73) |   194 |
+| [OBSOLÈTE (BLOC)](#obsolète-bloc) |   200 | [OP_LESSTHAN (0X9F)](#op_lessthan-0x9f) |   194 |
+| [OCTET](#octet)                |   184 | [OP_LESSTHANOREQUAL (0XA1)](#op_lessthanorequal-0xa1) |   194 |
+| [OFF-CHAIN](#off-chain)        |   184 | [OP_MAX (0XA4)](#op_max-0xa4)  |   194 |
+| [OFFER](#offer)                |   185 | [OP_MIN (0XA3)](#op_min-0xa3)  |   194 |
+| [ON-CHAIN](#on-chain)          |   185 | [OP_NEGATE (0X8F)](#op_negate-0x8f) |   194 |
+| [ONION_PRIVATE_KEY](#onion_private_key) |   185 | [OP_NIP (0X77)](#op_nip-0x77)  |   195 |
+| [ONION_V3_PRIVATE_KEY](#onion_v3_private_key) |   185 | [OP_NOP (0X61)](#op_nop-0x61)  |   195 |
+| [OP_0 (0X00)](#op_0-0x00)      |   185 | [OP_NOT (0X91)](#op_not-0x91)  |   195 |
+| [OP_0NOTEQUAL (0X92)](#op_0notequal-0x92) |   185 | [OP_NOTIF (0X64)](#op_notif-0x64) |   195 |
+| [OP_1 (0X51)](#op_1-0x51)      |   186 | [OP_NUMEQUAL (0X9C)](#op_numequal-0x9c) |   195 |
+| [OP_1ADD (0X8B)](#op_1add-0x8b) |   186 | [OP_NUMEQUALVERIFY (0X9D)](#op_numequalverify-0x9d) |   195 |
+| [OP_1NEGATE (0X4F)](#op_1negate-0x4f) |   186 | [OP_NUMNOTEQUAL (0X9E)](#op_numnotequal-0x9e) |   195 |
+| [OP_1SUB (0X8C)](#op_1sub-0x8c) |   186 | [OP_OVER (0X78)](#op_over-0x78) |   196 |
+| [OP_2 À OP_16 (0X52 À 0X60)](#op_2-à-op_16-0x52-à-0x60) |   186 | [OP_PICK (0X79)](#op_pick-0x79) |   196 |
+| [OP_2DROP (0XD6)](#op_2drop-0xd6) |   186 | [OP_PUSHDATA1 (0X4C)](#op_pushdata1-0x4c) |   196 |
+| [OP_2DUP (0X6E)](#op_2dup-0x6e) |   186 | [OP_PUSHDATA2 (0X4D)](#op_pushdata2-0x4d) |   196 |
+| [OP_2OVER (0X70)](#op_2over-0x70) |   187 | [OP_PUSHDATA4 (0X4E)](#op_pushdata4-0x4e) |   196 |
+| [OP_2ROT (0X71)](#op_2rot-0x71) |   187 | [OP_RETURN (0X6A)](#op_return-0x6a) |   196 |
+| [OP_2SWAP (0X72)](#op_2swap-0x72) |   188 | [OP_RIPEMD160 (0XA6)](#op_ripemd160-0xa6) |   196 |
+| [OP_3DUP (0X6F)](#op_3dup-0x6f) |   188 | [OP_ROLL (0X7A)](#op_roll-0x7a) |   196 |
+| [OP_ABS (0X90)](#op_abs-0x90)  |   189 | [OP_ROT (0X7B)](#op_rot-0x7b)  |   197 |
+| [OP_ADD (0X93)](#op_add-0x93)  |   189 | [OP_SHA1 (0XA7)](#op_sha1-0xa7) |   197 |
+| [OP_BOOLAND (0X9A)](#op_booland-0x9a) |   189 | [OP_SHA256 (0XA8)](#op_sha256-0xa8) |   197 |
+| [OP_BOOLOR (0X9B)](#op_boolor-0x9b) |   189 | [OP_SIZE (0X82)](#op_size-0x82) |   197 |
+| [OP_CAT (0X7E)](#op_cat-0x7e)  |   189 | [OP_SUB (0X94)](#op_sub-0x94)  |   197 |
+| [OP_CHECKHASHVERIFY (CHV)](#op_checkhashverify-chv) |   189 | [OP_SUCCESS](#op_success)      |   198 |
+| [OP_CHECKLOCKTIMEVERIFY (0XB1)](#op_checklocktimeverify-0xb1) |   190 | [OP_SWAP (0X7C)](#op_swap-0x7c) |   197 |
+| [OP_CHECKMULTISIG (0XAE)](#op_checkmultisig-0xae) |   190 | [OP_TOALTSTACK (0X6B)](#op_toaltstack-0x6b) |   198 |
+| [OP_CHECKMULTISIGVERIFY (0XAF)](#op_checkmultisigverify-0xaf) |   190 | [OP_TRUE (0X51)](#op_true-0x51) |   198 |
+| [OP_CHECKSEQUENCEVERIFY (0XB2)](#op_checksequenceverify-0xb2) |   190 | [OP_TUCK (0X7D)](#op_tuck-0x7d) |   198 |
+| [OP_CHECKSIG (0XAC)](#op_checksig-0xac) |   191 | [OP_VER (0X62)](#op_ver-0x62)  |   198 |
+| [OP_CHECKSIGADD (0XBA)](#op_checksigadd-0xba) |   191 | [OP_VERIFY (0X69)](#op_verify-0x69) |   198 |
+| [OP_CHECKSIGVERIFY (0XAD)](#op_checksigverify-0xad) |   191 | [OP_WITHIN (0XA5)](#op_within-0xa5) |   198 |
+| [OP_CODESEPARATOR (0XAB)](#op_codeseparator-0xab) |   192 | [OPCODES](#opcodes)            |   199 |
+| [OP_DEPTH (0X74)](#op_depth-0x74) |   192 | [OPEN ASSETS PROTOCOL (OAP)](#open-assets-protocol-oap) |   199 |
+| [OP_DROP (0X75)](#op_drop-0x75) |   192 | [ORACLE](#oracle)              |   199 |
+| [OP_DUP (0X76)](#op_dup-0x76)  |   192 | [ORDINAL NUMBER](#ordinal-number) |   199 |
+| [OP_ELSE (0X67)](#op_else-0x67) |   192 | [ORDINALS THEORY](#ordinals-theory) |   199 |
+| [OP_ENDIF (0X68)](#op_endif-0x68) |   192 | [ORPHELIN](#orphelin)          |   200 |
+| [OP_EQUAL (0X87)](#op_equal-0x87) |   192 | [OSINT](#osint)                |   200 |
+| [OP_EQUALVERIFY (0X88)](#op_equalverify-0x88) |   193 | [OUTBOUND CAPACITY](#outbound-capacity) |   201 |
+| [OP_EVAL](#op_eval)            |   193 | [OUTPOINT](#outpoint)          |   201 |
+| [OP_FALSE (0X00)](#op_false-0x00) |   193 | [OUTPUT](#output)              |   201 |
+| [OP_FROMALTSTACK (0X6C)](#op_fromaltstack-0x6c) |   193 | [OUTPUT LINKING](#output-linking) |   202 |
+| [OP_GREATERTHAN (0XA0)](#op_greaterthan-0xa0) |   193 | [OUTPUT SCRIPT DESCRIPTORS](#output-script-descriptors) |   202 |
+| [OP_GREATERTHANOREQUAL (0XA2)](#op_greaterthanorequal-0xa2) |   193 | [OVERCLOCKING](#overclocking)  |   203 |
 | [OP_HASH160 (0XA9)](#op_hash160-0xa9) |   193 | [OVERT ASICBOOST](#overt-asicboost) |   204 |
+| [OP_HASH256 (0XAA)](#op_hash256-0xaa) |   193 |                                |       |
 | | | | |
 
 
@@ -3367,6 +3369,16 @@ L'étiquetage est une bonne pratique qui aide à se rappeler l'origine ou la des
 
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser facilement un bloc, une transaction ou une adresse spécifique.
 
+## EXTRA-NONCE
+
+Champ utilisé dans le `scriptSig` de la transaction coinbase d’un bloc, qui permet d'avoir un plus grand nombre de possibilités à tester pour avoir un hachage inférieur à la cible de difficulté, en plus du nonce classique qui se trouve, lui, directement dans l'entête de chaque bloc.
+
+Modifier l’extra-nonce dans la transaction coinbase change l’identifiant de cette transaction, et donc la racine de Merkle de toutes les transactions du bloc, ce qui modifie également l’entête du bloc. Cela permet au mineur de continuer à chercher des hachages quand la plage du nonce classique est déjà épuisée, sans pour autant changer la structure de son bloc candidat.
+
+Dans le cadre des pools de minage, l'extra-nonce est souvent divisé en deux parties : une générée par la pool pour identifier chaque hacheur, et une autre modifiée par le hacheur dans la recherche d'une share valide. Cela permet aux différents hacheurs de la pool de travailler simultanément sur un même bloc candidat avec l'entièreté de la plage des nonces, sans pour autant dupliquer le même travail au niveau de la pool.
+
+> ► *Pour plus d'informations, voir la définition de [**NONCE**](#nonce).*
+
 
 
 \newpage
@@ -5453,6 +5465,10 @@ cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U
 Ensuite, la notation `/<0;1>/*` spécifie que le descriptor peut générer des adresses à partir de la chaîne externe (`0`) et interne (`1`), avec un wildcard (`*`) permettant la dérivation séquentielle de plusieurs adresses de manière paramétrable, similaire à la gestion d'un « gap limit » sur des logiciels de portefeuille classiques.
 
 Enfin, `#jy0l7nr4` représente la somme de contrôle pour vérifier l'intégrité du descriptor.
+
+## OVERCLOCKING
+
+Pratique qui consiste à augmenter la fréquence de fonctionnement des puces ASICs utilisées pour le minage au-delà de leurs spécifications nominales. Cela permet de produire plus de hashrate et d'augmenter les chances de trouver un bloc. Cependant, cette pratique augmente également la consommation d’électricité des machines, et donc génère plus de chaleur, ce qui peut entraîner une usure prématurée des composants et nécessiter des systèmes de refroidissement améliorés, comme le refroidissement par immersion.
 
 ## OVERT ASICBOOST
 

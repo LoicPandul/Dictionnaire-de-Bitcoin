@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 787 `**
+**Nombre total de définitions : ` 789 `**
 
 ### A
 
@@ -327,6 +327,7 @@
 - [ESMPPS](./dictionnaire/E.md#esmpps)
 - [ÉTIQUETAGE](./dictionnaire/E.md#étiquetage)
 - [EXPLORATEUR DE BLOC](./dictionnaire/E.md#explorateur-de-bloc)
+- [EXTRA-NONCE](./dictionnaire/E.md#extra-nonce)
 
 ### F
 
@@ -609,6 +610,7 @@
 - [OUTPUT](./dictionnaire/O.md#output)
 - [OUTPUT LINKING](./dictionnaire/O.md#output-linking)
 - [OUTPUT SCRIPT DESCRIPTORS](./dictionnaire/O.md#output-script-descriptors)
+- [OVERCLOCKING](./dictionnaire/O.md#overclocking)
 - [OVERT ASICBOOST](./dictionnaire/O.md#overt-asicboost)
 
 ### P
