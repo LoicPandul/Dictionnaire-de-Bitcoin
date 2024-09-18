@@ -14,16 +14,13 @@ ___
 
 
 
-## EQUIHASH
-
-Bitcoin Gold algorithme
 
 
 ## ERLAY
 
 
 
-## EXTRA-NONCE
+
 
 
 
