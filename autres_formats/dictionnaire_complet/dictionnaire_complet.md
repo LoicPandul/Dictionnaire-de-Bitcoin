@@ -854,6 +854,12 @@ Proposition d'amélioration destinée aux développeurs de logiciels de portefeu
 
 > ► *Pour plus d'informations, voir la définition de [**FEE SNIPING**](#fee-sniping).*
 
+## BIP330
+
+Proposition connue sous le nom de « *Erlay* » qui a pour objectif d'optimiser la propagation des transactions non confirmées dans le réseau Bitcoin. Actuellement, les transactions sont diffusées à tous les pairs d’un nœud, ce qui entraîne des redondances et une surutilisation de la bande passante. Le BIP330 propose de limiter cette diffusion à 8 pairs par défaut, puis d'utiliser un mécanisme de réconciliation pour partager efficacement les transactions manquantes. Erlay réduit la consommation de bande passante d'environ 40 %. Il permet également de ne pas avoir une augmentation linéaire de la consommation de bande passante avec le nombre de pairs connectés au nœud.
+
+> ► *Pour plus d'informations, voir la définition de [**ERLAY**](#erlay).*
+
 ## BIP352
 
 Proposition d'amélioration de Josibake et Ruben Somsen qui introduit les Silent Payments, une méthode pour utiliser des adresses Bitcoin statiques afin de recevoir des paiements sans pour autant produire de réutilisation d'adresse, sans interaction et sans lien visible on-chain entre les différents paiements. Cette technique élimine le besoin de générer de nouvelles adresses de réception vierges pour chaque transaction, ce qui permet d'éviter les interactions habituelles dans Bitcoin où le destinataire doit fournir une nouvelle adresse au payeur.
@@ -2260,6 +2266,16 @@ En prenant en compte les valeurs des UTXOs impliqués dans la transaction, le no
 Forme très sophistiquée d'attaque contre le réseau Bitcoin qui permet à un fournisseur de services Internet malveillant d'isoler des nœuds Bitcoin spécifiques. C'est donc une forme d'attaque Eclipse. L'attaque Erebus exploite la structure du réseau Internet, en particulier les points de passage obligés (ou « bottlenecks ») dans le routage entre les systèmes autonomes (AS). Un attaquant, en contrôlant un système autonome, peut manipuler le trafic réseau pour isoler un nœud Bitcoin du reste du réseau, et ainsi lui faire croire à un faux état de la blockchain (blocs ou transactions non connues par le nœud). Cette isolation peut conduire à des doubles dépenses ou de la censure à l'encontre du nœud isolé. Cette attaque est rendue beaucoup plus difficile depuis la version 0.20.0 de Bitcoin Core et l'introduction d'Asmap.
 
 > ► *Pour plus d'informations, voir la définition de **[ASMAP](#asmap)**.*
+
+## ERLAY
+
+Proposition de protocole réseau dont l'objectif est d'améliorer l'efficacité du relais des transactions non confirmées entre les nœuds Bitcoin.
+
+Actuellement, chaque transaction est propagée via un système où chaque nœud diffuse la transaction dont il prend connaissance à l'ensemble de ses pairs. Le problème, c'est que cela entraîne de nombreuses redondances et une utilisation de la bande passante pour des doublons. De nombreuses diffusions de transactions s'avèrent inutiles, car le destinataire est déjà en connaissance de ces transactions et chaque nœud n'a besoin de connaître chaque transaction qu'une seule fois. Erlay propose de limiter par défaut à 8 le nombre de pairs auxquels un nœud envoie directement les transactions dont il prend connaissance, puis d'utiliser un processus de réconciliation basé sur la bibliothèque minisketch pour partager les transactions manquantes de manière plus efficace.
+
+Erlay réduirait la consommation de bande passante d'environ 40 %, ce qui rendrait l'opération d'un nœud complet plus accessible aux utilisateurs avec des connexions Internet limitées, et ce qui favoriserait donc une meilleure décentralisation du réseau. Ce protocole maintiendrait aussi une consommation de bande passante quasi constante avec une augmentation du nombre de connexions. Cela signifie qu'il serait bien plus simple pour les opérateurs de nœuds d'accepter un très grand nombre de connexions de leurs pairs, ce qui renforcerait la sécurité du réseau Bitcoin en réduisant les risques de partitionnement, intentionnels ou accidentels. De plus, Erlay compliquerait la tâche de déterminer le nœud d'origine d'une transaction, ce qui augmenterait ainsi la confidentialité pour les utilisateurs de nœuds qui n'opèrent pas sous Tor.
+
+Erlay est proposé dans le BIP330.
 
 ## ESMPPS
 

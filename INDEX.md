@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 789 `**
+**Nombre total de définitions : ` 791 `**
 
 ### A
 
@@ -128,6 +128,7 @@
 - [BIP322](./dictionnaire/B.md#bip322)
 - [BIP324](./dictionnaire/B.md#bip324)
 - [BIP326](./dictionnaire/B.md#bip326)
+- [BIP330](./dictionnaire/B.md#bip330)
 - [BIP352](./dictionnaire/B.md#bip352)
 - [BIP380](./dictionnaire/B.md#bip380)
 - [BIP381](./dictionnaire/B.md#bip381)
@@ -324,6 +325,7 @@
 - [ENTROPIE](./dictionnaire/E.md#entropie)
 - [ENTROPIE (ANALYSE)](./dictionnaire/E.md#entropie-analyse)
 - [EREBUS (ATTAQUE)](./dictionnaire/E.md#erebus-attaque)
+- [ERLAY](./dictionnaire/E.md#erlay)
 - [ESMPPS](./dictionnaire/E.md#esmpps)
 - [ÉTIQUETAGE](./dictionnaire/E.md#étiquetage)
 - [EXPLORATEUR DE BLOC](./dictionnaire/E.md#explorateur-de-bloc)
