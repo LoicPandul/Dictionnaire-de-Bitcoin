@@ -683,6 +683,10 @@ Ensuite, la notation `/<0;1>/*` spécifie que le descriptor peut générer des a
 
 Enfin, `#jy0l7nr4` représente la somme de contrôle pour vérifier l'intégrité du descriptor.
 
+## OVERCLOCKING
+
+Pratique qui consiste à augmenter la fréquence de fonctionnement des puces ASICs utilisées pour le minage au-delà de leurs spécifications nominales. Cela permet de produire plus de hashrate et d'augmenter les chances de trouver un bloc. Cependant, cette pratique augmente également la consommation d’électricité des machines, et donc génère plus de chaleur, ce qui peut entraîner une usure prématurée des composants et nécessiter des systèmes de refroidissement améliorés, comme le refroidissement par immersion.
+
 ## OVERT ASICBOOST
 
 Version ouverte et transparente d'AsicBoost. AsicBoost est une technique d'optimisation algorithmique utilisée dans le minage de Bitcoin. Les mineurs utilisant la version Overt manipulent le champ `nVersion` du bloc candidat et utilisent cette modification comme un nonce supplémentaire. Cette méthode laisse le véritable champ `Nonce` du bloc inchangé lors de chaque tentative de hachage, ce qui réduit ainsi les calculs nécessaires pour chaque SHA256, en conservant certaines données identiques entre les tentatives. Cette version est détectable publiquement et ne dissimule pas ses modifications au reste du réseau, à l'inverse de la version Covert d'AsicBoost.
