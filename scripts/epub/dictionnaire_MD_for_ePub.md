@@ -4,7 +4,7 @@
 Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
 
 
-Version du 18 September 2024
+Version du 20 September 2024
 
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
 
@@ -1904,6 +1904,12 @@ Programme qui s'exécute automatiquement lorsque certaines conditions prédéfin
 
 Un contributeur dans le contexte de Bitcoin Core (l'implémentation majoritaire de nœuds sur le réseau Bitcoin) est une personne qui participe activement au développement du logiciel en écrivant du code, en examinant et en testant les modifications proposées par d'autres. Contrairement aux mainteneurs, les contributeurs n'ont pas le pouvoir de fusionner les modifications dans le code principal ; leur rôle est plutôt de soumettre des pull requests (PR) et de participer à la discussion et à la validation de ces propositions. Tout individu intéressé peut devenir contributeur sans nécessité d'une nomination ou d'une approbation formelle, ce qui diffère des mainteneurs qui sont chargés de responsabilités administratives et de décision plus élevées dans le projet.
 
+## CONTROL BOARD (MINING)
+
+► ***FR : CARTE DE CONTRÔLE (MINAGE)***
+
+Composant dans une machine de minage qui permet de gérer et de coordonner les opérations de l'appareil. La carte de contrôle gère la communication entre le logiciel et les puces ASICs. Elle permet également de relever les performances du matériel et de contrôler sa température.
+
 ## COOKIE (.COOKIE)
 
 Fichier utilisé pour l'authentification RPC (*Remote Procedure Call*) dans Bitcoin Core. Lorsque bitcoind démarre, il génère un cookie d'authentification unique et le stocke dans ce fichier. Les clients ou les scripts qui souhaitent interagir avec bitcoind via l'interface RPC peuvent utiliser ce cookie pour s'authentifier de manière sécurisée. Ce mécanisme permet une communication sûre entre le bitcoind et les applications externes (comme les logiciels de portefeuille par exemple), sans nécessiter une gestion manuelle des noms d'utilisateur et des mots de passe. Le fichier `.cookie` est régénéré à chaque redémarrage de bitcoind et supprimé à l'arrêt.
@@ -3043,6 +3049,10 @@ Sigle de l'anglais _I Owe You_ (« Je te dois ») utilisé dans le contexte de
 ## IP_ASN.MAP
 
 Fichier utilisé dans Bitcoin Core pour stocker l'ASMAP qui permet d'améliorer le bucketing (c'est-à-dire, le regroupement) des adresses IP, en se basant sur les numéros de systèmes autonomes (ASN). Plutôt que de regrouper les connexions sortantes par préfixes de réseau IP (/16), ce fichier permet de diversifier les connexions en établissant une carte d'adressage IP vers les ASN, qui sont des identifiants uniques pour chaque réseau sur Internet. L'idée est d'améliorer la sécurité et la topologie du réseau Bitcoin en diversifiant les connexions pour se prémunir contre certaines attaques (notamment l'attaque Erebus).
+
+## IP REPORT
+
+Bouton présent sur les ASICs qui permet de trouver rapidement l'adresse IP de la machine sur le réseau local. Pour utiliser cette fonctionnalité, il faut appuyer sur le bouton *IP Report* de l'ASIC pendant quelques secondes. Ensuite, en utilisant un logiciel spécialisé sur un ordinateur connecté au même réseau, l'adresse IP du mineur sera affichée à l'écran. Ce bouton permet notamment de localiser facilement une machine sur le réseau local lorsque l'on a plusieurs machines.
 
 ## ISSUE
 

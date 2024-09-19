@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 791 `**
+**Nombre total de définitions : ` 793 `**
 
 ### A
 
@@ -249,6 +249,7 @@
 - [CONSOLIDATION](./dictionnaire/C.md#consolidation)
 - [CONTRAT INTELLIGENT](./dictionnaire/C.md#contrat-intelligent)
 - [CONTRIBUTEUR (CORE)](./dictionnaire/C.md#contributeur-core)
+- [CONTROL BOARD (MINING)](./dictionnaire/C.md#control-board-mining)
 - [COOKIE (.COOKIE)](./dictionnaire/C.md#cookie-cookie)
 - [COORDINATEUR DE COINJOIN](./dictionnaire/C.md#coordinateur-de-coinjoin)
 - [CORE-LIGHTNING (CLN)](./dictionnaire/C.md#core-lightning-cln)
@@ -412,6 +413,7 @@
 - [INVOICE LIGHTNING](./dictionnaire/I.md#invoice-lightning)
 - [IOU](./dictionnaire/I.md#iou)
 - [IP_ASN.MAP](./dictionnaire/I.md#ip_asnmap)
+- [IP REPORT](./dictionnaire/I.md#ip-report)
 - [ISSUE](./dictionnaire/I.md#issue)
 
 ### J

@@ -48,7 +48,7 @@ header-includes:
 \textbf{© 2024 Loïc Morel}\newline
 \textbf{\textit{Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin}}\newline
 \newline
-Version du 18 septembre 2024\newline
+Version du 20 septembre 2024\newline
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin\newline
 \newline
 Cet ouvrage est sous licence CC BY-NC-SA 4.0\newline
@@ -318,25 +318,25 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | [CHEMIN DE DÉRIVATION](#chemin-de-dérivation) |    83 | [CONSOLIDATION](#consolidation) |   100 |
 | [CHEMIN DE RÉCUPÉRATION](#chemin-de-récupération) |    84 | [CONTRAT INTELLIGENT](#contrat-intelligent) |   101 |
 | [CHEMIN PRIMAIRE](#chemin-primaire) |    84 | [CONTRIBUTEUR (CORE)](#contributeur-core) |   101 |
-| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    85 | [COOKIE (.COOKIE)](#cookie-.cookie) |   101 |
-| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    85 | [COORDINATEUR DE COINJOIN](#coordinateur-de-coinjoin) |   102 |
-| [CIOH](#cioh)                  |    86 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |   102 |
-| [CISA](#cisa)                  |    87 | [COURBE ELLIPTIQUE](#courbe-elliptique) |   102 |
-| [CLÉ ÉTENDUE](#clé-étendue)    |    87 | [COVENANT](#covenant)          |   102 |
-| [CLÉ MAITRESSE](#clé-maitresse) |    88 | [COVERT ASICBOOST](#covert-asicboost) |   103 |
-| [CLÉ PRIVÉE](#clé-privée)      |    89 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |   103 |
-| [CLÉ PUBLIQUE](#clé-publique)  |    89 | [CPPSRB](#cppsrb)              |   103 |
-| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    90 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |   104 |
-| [CLI](#cli)                    |    91 | [CRYPTANALYSE](#cryptanalyse)  |   104 |
-| [C-LIGHTNING (CLN)](#c-lightning-cln) |    91 | [CRYPTER](#crypter)            |   104 |
-| [CLONE](#clone)                |    91 | [CRYPTO-ACTIF](#crypto-actif)  |   104 |
-| [CLUSTER](#cluster)            |    91 | [CRYPTOGRAPHIE](#cryptographie) |   104 |
-| [CODE DE CHAINE](#code-de-chaine) |    92 | [CRYPTOLOGIE](#cryptologie)    |   104 |
-| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    92 | [CRYPTOMONNAIE](#cryptomonnaie) |   105 |
-| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    92 | [CURTAILMENT (MINING)](#curtailment-mining) |   105 |
-| [COINBASE (TRANSACTION)](#coinbase-transaction) |    93 | [CUSTODY](#custody)            |   105 |
-| [COIN CONTROL](#coin-control)  |    93 | [CYPHERPUNKS](#cypherpunks)    |   105 |
-| [COINJOIN](#coinjoin)          |    94 |                                |       |
+| [CHIFFRER (CHIFFREMENT)](#chiffrer-chiffrement) |    85 | [CONTROL BOARD (MINING)](#control-board-mining) |   101 |
+| [CIBLE DE DIFFICULTÉ](#cible-de-difficulté) |    85 | [COOKIE (.COOKIE)](#cookie-.cookie) |   101 |
+| [CIOH](#cioh)                  |    86 | [COORDINATEUR DE COINJOIN](#coordinateur-de-coinjoin) |   102 |
+| [CISA](#cisa)                  |    87 | [CORE-LIGHTNING (CLN)](#core-lightning-cln) |   102 |
+| [CLÉ ÉTENDUE](#clé-étendue)    |    87 | [COURBE ELLIPTIQUE](#courbe-elliptique) |   102 |
+| [CLÉ MAITRESSE](#clé-maitresse) |    88 | [COVENANT](#covenant)          |   102 |
+| [CLÉ PRIVÉE](#clé-privée)      |    89 | [COVERT ASICBOOST](#covert-asicboost) |   103 |
+| [CLÉ PUBLIQUE](#clé-publique)  |    89 | [CPFP (CHILD PAY FOR PARENT)](#cpfp-child-pay-for-parent) |   103 |
+| [CLÉ PUBLIQUE COMPRESSÉE](#clé-publique-compressée) |    90 | [CPPSRB](#cppsrb)              |   104 |
+| [CLI](#cli)                    |    91 | [CPU (CENTRAL PROCESSING UNIT)](#cpu-central-processing-unit) |   104 |
+| [C-LIGHTNING (CLN)](#c-lightning-cln) |    91 | [CRYPTANALYSE](#cryptanalyse)  |   104 |
+| [CLONE](#clone)                |    91 | [CRYPTER](#crypter)            |   104 |
+| [CLUSTER](#cluster)            |    91 | [CRYPTO-ACTIF](#crypto-actif)  |   104 |
+| [CODE DE CHAINE](#code-de-chaine) |    92 | [CRYPTOGRAPHIE](#cryptographie) |   104 |
+| [CODE DE CHAINE MAITRE](#code-de-chaine-maitre) |    92 | [CRYPTOLOGIE](#cryptologie)    |   104 |
+| [CODE DE PAIMENT RÉUTILISABLE](#code-de-paiment-réutilisable) |    92 | [CRYPTOMONNAIE](#cryptomonnaie) |   105 |
+| [COINBASE (TRANSACTION)](#coinbase-transaction) |    93 | [CURTAILMENT (MINING)](#curtailment-mining) |   105 |
+| [COIN CONTROL](#coin-control)  |    93 | [CUSTODY](#custody)            |   105 |
+| [COINJOIN](#coinjoin)          |    94 | [CYPHERPUNKS](#cypherpunks)    |   105 |
 | | | | |
 
 
@@ -437,13 +437,14 @@ Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement
 | | | | |
 |:---------------------------|--:|:---------------------------|--:|
 | | | | |
-| [I2P](#i2p)                    |   149 | [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   150 |
-| [IMMERSION COOLING](#immersion-cooling) |   149 | [INPUT](#input)                |   151 |
-| [IMPLÉMENTATION DE BITCOIN](#implémentation-de-bitcoin) |   149 | [INSCRIPTIONS](#inscriptions)  |   151 |
-| [INBOUND CAPACITY](#inbound-capacity) |   149 | [INVOICE LIGHTNING](#invoice-lightning) |   151 |
-| [INDEX (KEY)](#index-key)      |   149 | [IOU](#iou)                    |   152 |
-| [INDEXES/TXINDEX/](#indexestxindex) |   150 | [IP_ASN.MAP](#ip_asn.map)      |   152 |
+| [I2P](#i2p)                    |   149 | [INPUT](#input)                |   151 |
+| [IMMERSION COOLING](#immersion-cooling) |   149 | [INSCRIPTIONS](#inscriptions)  |   151 |
+| [IMPLÉMENTATION DE BITCOIN](#implémentation-de-bitcoin) |   149 | [INVOICE LIGHTNING](#invoice-lightning) |   151 |
+| [INBOUND CAPACITY](#inbound-capacity) |   149 | [IOU](#iou)                    |   152 |
+| [INDEX (KEY)](#index-key)      |   149 | [IP_ASN.MAP](#ip_asn.map)      |   152 |
+| [INDEXES/TXINDEX/](#indexestxindex) |   150 | [IP REPORT](#ip-report)        |   152 |
 | [INFLATION](#inflation)        |   150 | [ISSUE](#issue)                |   152 |
+| [INITIAL BLOCK DOWNLOAD (IBD)](#initial-block-download-ibd) |   150 |                                |       |
 | | | | |
 
 
@@ -2747,6 +2748,12 @@ Programme qui s'exécute automatiquement lorsque certaines conditions prédéfin
 
 Un contributeur dans le contexte de Bitcoin Core (l'implémentation majoritaire de nœuds sur le réseau Bitcoin) est une personne qui participe activement au développement du logiciel en écrivant du code, en examinant et en testant les modifications proposées par d'autres. Contrairement aux mainteneurs, les contributeurs n'ont pas le pouvoir de fusionner les modifications dans le code principal ; leur rôle est plutôt de soumettre des pull requests (PR) et de participer à la discussion et à la validation de ces propositions. Tout individu intéressé peut devenir contributeur sans nécessité d'une nomination ou d'une approbation formelle, ce qui diffère des mainteneurs qui sont chargés de responsabilités administratives et de décision plus élevées dans le projet.
 
+## CONTROL BOARD (MINING)
+
+► ***FR : CARTE DE CONTRÔLE (MINAGE)***
+
+Composant dans une machine de minage qui permet de gérer et de coordonner les opérations de l'appareil. La carte de contrôle gère la communication entre le logiciel et les puces ASICs. Elle permet également de relever les performances du matériel et de contrôler sa température.
+
 ## COOKIE (.COOKIE)
 
 Fichier utilisé pour l'authentification RPC (*Remote Procedure Call*) dans Bitcoin Core. Lorsque bitcoind démarre, il génère un cookie d'authentification unique et le stocke dans ce fichier. Les clients ou les scripts qui souhaitent interagir avec bitcoind via l'interface RPC peuvent utiliser ce cookie pour s'authentifier de manière sécurisée. Ce mécanisme permet une communication sûre entre le bitcoind et les applications externes (comme les logiciels de portefeuille par exemple), sans nécessiter une gestion manuelle des noms d'utilisateur et des mots de passe. Le fichier `.cookie` est régénéré à chaque redémarrage de bitcoind et supprimé à l'arrêt.
@@ -3994,6 +4001,10 @@ Sigle de l'anglais _I Owe You_ (« Je te dois ») utilisé dans le contexte de
 ## IP_ASN.MAP
 
 Fichier utilisé dans Bitcoin Core pour stocker l'ASMAP qui permet d'améliorer le bucketing (c'est-à-dire, le regroupement) des adresses IP, en se basant sur les numéros de systèmes autonomes (ASN). Plutôt que de regrouper les connexions sortantes par préfixes de réseau IP (/16), ce fichier permet de diversifier les connexions en établissant une carte d'adressage IP vers les ASN, qui sont des identifiants uniques pour chaque réseau sur Internet. L'idée est d'améliorer la sécurité et la topologie du réseau Bitcoin en diversifiant les connexions pour se prémunir contre certaines attaques (notamment l'attaque Erebus).
+
+## IP REPORT
+
+Bouton présent sur les ASICs qui permet de trouver rapidement l'adresse IP de la machine sur le réseau local. Pour utiliser cette fonctionnalité, il faut appuyer sur le bouton *IP Report* de l'ASIC pendant quelques secondes. Ensuite, en utilisant un logiciel spécialisé sur un ordinateur connecté au même réseau, l'adresse IP du mineur sera affichée à l'écran. Ce bouton permet notamment de localiser facilement une machine sur le réseau local lorsque l'on a plusieurs machines.
 
 ## ISSUE
 
