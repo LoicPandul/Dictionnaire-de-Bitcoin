@@ -55,11 +55,27 @@ Fait référence aux transactions ou activités plus ou moins liées à Bitcoin 
 
 Dans le cadre de BOLT12, les « *offers* » sont des QR codes statiques pour effectuer plusieurs paiements sur le Lightning Network. Contrairement aux invoices classiques, les *offers* peuvent être réutilisées. Elles permettent de générer plusieurs demandes d'invoices. Lorsqu'un utilisateur scanne un QR code contenant une *offer*, il envoie un message pour demander une nouvelle invoice au nœud Lightning associé. Le nœud répond avec une invoice que le payeur peut utiliser. Les *offers* permettent ainsi de disposer d'un identifiant unique pour recevoir de nombreux paiement de la part de plusieurs utilisateurs différents sur Lightning.
 
+## OFF-GRID
+
+► ***FR : HORS RÉSEAU***
+
+Désigne une opération de minage de Bitcoin qui fonctionne de manière autonome, sans être connectée au réseau électrique principal. Les mineurs off-grid utilisent généralement des sources d'énergie alternatives comme l'énergie solaire, éolienne, hydroélectrique, ou encore avec des générateurs fonctionnant aux combustibles fossiles (par exemple, le gaz destiné au torchage). Ce modèle est souvent privilégié pour réduire les coûts d'énergie, car il se base en partie sur de l'énergie qui, sans le minage, serait gaspillée. Les mineurs off-grid ont l'avantage de pouvoir s'installer dans des endroits isolés, afin de consommer cette énergie trop éloignée des populations. 
+
+Le minage off-grid présente souvent des avantages écologiques, car il peut, dans certains cas, aider à réduire les émissions de gaz à effet de serre en limitant le torchage. De plus, il rend économiquement viables certains projets de production d'énergie renouvelable malgré leur intermittence naturelle.
+
 ## ON-CHAIN
 
 ► ***FR : SUR-CHAÎNE***
 
 Désigne les transactions enregistrées directement sur la blockchain Bitcoin. Ce terme s'oppose à « off-chain » qui désigne des opérations qui sont plus ou moins liées avec la blockchain Bitcoin, mais qui se déroulent en dehors de la blockchain principale.
+
+## ON-GRID
+
+► ***FR : RACCORDÉ AU RÉSEAU***
+
+Désigne une opération de minage de Bitcoin qui est connectée au réseau électrique général. Les mineurs on-grid se branchent sur le réseau électrique classique, utilisé également par les consommateurs résidentiels, pour alimenter leurs ASICs. Cette méthode offre une source d'énergie stable, mais est souvent plus coûteuse comparée au minage off-grid, en raison de marges de négociation plus limitées.
+
+Parfois, les fermes de minage on-grid participent à des programmes de gestion de la demande. Ils ajustent leur consommation d'énergie en fonction des fluctuations de production et de consommation d'électricité sur le réseau, afin de maintenir l'équilibre et éviter le gaspillage ou le blackout.
 
 ## ONION_PRIVATE_KEY
 

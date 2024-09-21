@@ -133,6 +133,12 @@ Dans le cadre de Git, représente l'action d'intégrer les modifications d'une b
 
 Structure de données utilisée dans le cadre du BIP37 (*Transaction Bloom Filtering*) pour fournir une preuve compacte de l'inclusion de transactions spécifiques dans un bloc. C'est notamment utilisé pour les portefeuilles SPV. Le Merkle Block contient les en-têtes de bloc, les transactions filtrées et un arbre de Merkle partiel, permettant aux clients légers de vérifier rapidement si une transaction appartient à un bloc sans télécharger toutes les transactions.
 
+## MESURE À LA PRISE
+
+► ***EN : MEASURE AT THE WALL***
+
+Dans le cadre de l'industrie du minage, désigne la mesure de la consommation électrique réelle d'un ASIC, directement à son point de connexion, c'est-à-dire à la prise électrique murale. Contrairement aux spécifications théoriques, cette mesure permet de quantifier précisément l'énergie consommée par la machine en incluant toutes les pertes lors du fonctionnement réel.
+
 ## MÉTADONNÉES
 
 ► ***EN : METADATA***
