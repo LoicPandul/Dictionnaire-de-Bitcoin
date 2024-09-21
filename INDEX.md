@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 793 `**
+**Nombre total de définitions : ` 797 `**
 
 ### A
 
@@ -10,6 +10,7 @@
 - [ADRESSE DE RÉCEPTION](./dictionnaire/A.md#adresse-de-réception)
 - [ADRESSE STATIQUE](./dictionnaire/A.md#adresse-statique)
 - [AGORISME](./dictionnaire/A.md#agorisme)
+- [AIR COOLING](./dictionnaire/A.md#air-cooling)
 - [AJUSTEMENT DE LA DIFFICULTE](./dictionnaire/A.md#ajustement-de-la-difficulte)
 - [ALGORITHME](./dictionnaire/A.md#algorithme)
 - [ALTCOIN](./dictionnaire/A.md#altcoin)
@@ -475,6 +476,7 @@
 - [MEMPOOL.DAT](./dictionnaire/M.md#mempooldat)
 - [MERGE](./dictionnaire/M.md#merge)
 - [MERKLE BLOCK](./dictionnaire/M.md#merkle-block)
+- [MESURE À LA PRISE](./dictionnaire/M.md#mesure-à-la-prise)
 - [MÉTADONNÉES](./dictionnaire/M.md#métadonnées)
 - [MÉTHODE D'ACTIVATION](./dictionnaire/M.md#méthode-dactivation)
 - [MÉTHODE GÉOMÉTRIQUE](./dictionnaire/M.md#méthode-géométrique)
@@ -523,7 +525,9 @@
 - [OCTET](./dictionnaire/O.md#octet)
 - [OFF-CHAIN](./dictionnaire/O.md#off-chain)
 - [OFFER](./dictionnaire/O.md#offer)
+- [OFF-GRID](./dictionnaire/O.md#off-grid)
 - [ON-CHAIN](./dictionnaire/O.md#on-chain)
+- [ON-GRID](./dictionnaire/O.md#on-grid)
 - [ONION_PRIVATE_KEY](./dictionnaire/O.md#onion_private_key)
 - [ONION_V3_PRIVATE_KEY](./dictionnaire/O.md#onion_v3_private_key)
 - [OP_0 (0X00)](./dictionnaire/O.md#op_0-0x00)

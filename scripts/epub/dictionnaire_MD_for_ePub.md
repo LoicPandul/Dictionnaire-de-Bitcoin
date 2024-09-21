@@ -4,7 +4,7 @@
 Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
 
 
-Version du 20 September 2024
+Version du 21 September 2024
 
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
 
@@ -200,6 +200,12 @@ Cette adresse est composée de deux clés publiques : $B_{\text{scan}}$ pour le 
 ► ***EN : AGORISM***
 
 Philosophie politique fondée par Samuel Edward Konkin III dans les années 1980. Elle est une extension du libertarianisme, mettant en avant une action directe pour s'extraire des jougs de l'autorité étatique par le biais de la contre-économie, une pratique économique qui se déroule en dehors des cadres régulés par le gouvernement. L'idéologie agoriste repose sur le jusnaturalisme, qui affirme que les droits naturels des individus sont supérieurs aux lois imposées par l'État. Cela inclut la primauté de la propriété privée, le respect de l'intégrité physique, et la liberté de contracter. Les agoristes rejettent toute forme de participation politique traditionnelle comme le vote, qu'ils considèrent comme une validation de l'autorité coercitive de l'État. Ils aspirent à une société où les échanges économiques et sociaux se déroulent librement dans un marché ouvert, appelé l'Agora, visant ainsi à une révolution pacifique pour éroder progressivement le pouvoir de l'État. Leur emblème est d’ailleurs « A3 », pour « Agora, Anarchie, Action ». Le principe de l'agorisme est décrit dans le *Manifeste néo-Libertarien* paru en 1980. Ce papier est établi sur le *Manifeste Libertarien* de Murray Rothbard, mais il va encore plus loin. Beaucoup de bitcoiners se réclament de l'agorisme et pensent que Bitcoin en est l'outil parfait.
+
+## AIR COOLING
+
+► ***FR : REFROIDISSEMENT À L'AIR***
+
+Système de refroidissement utilisé pour les ASICs dans le cadre du minage de Bitcoin. L'air cooling consiste à utiliser des ventilateurs pour dissiper la chaleur générée par les composants. L'air ambiant est aspiré pour refroidir les puces avant d'être expulsé. Cette méthode de refroidissement est la plus répandue, car les ventilateurs sont présents directement sur les machines à l'achat. C'est généralement la moins onéreuse à l'acquisition, mais elle est moins efficace comparée à des techniques telles que l'hydro cooling ou l'immersion cooling.
 
 ## AJUSTEMENT DE LA DIFFICULTE
 
@@ -3415,6 +3421,12 @@ Dans le cadre de Git, représente l'action d'intégrer les modifications d'une b
 
 Structure de données utilisée dans le cadre du BIP37 (*Transaction Bloom Filtering*) pour fournir une preuve compacte de l'inclusion de transactions spécifiques dans un bloc. C'est notamment utilisé pour les portefeuilles SPV. Le Merkle Block contient les en-têtes de bloc, les transactions filtrées et un arbre de Merkle partiel, permettant aux clients légers de vérifier rapidement si une transaction appartient à un bloc sans télécharger toutes les transactions.
 
+## MESURE À LA PRISE
+
+► ***EN : MEASURE AT THE WALL***
+
+Dans le cadre de l'industrie du minage, désigne la mesure de la consommation électrique réelle d'un ASIC, directement à son point de connexion, c'est-à-dire à la prise électrique murale. Contrairement aux spécifications théoriques, cette mesure permet de quantifier précisément l'énergie consommée par la machine en incluant toutes les pertes lors du fonctionnement réel.
+
 ## MÉTADONNÉES
 
 ► ***EN : METADATA***
@@ -3753,11 +3765,27 @@ Fait référence aux transactions ou activités plus ou moins liées à Bitcoin 
 
 Dans le cadre de BOLT12, les « *offers* » sont des QR codes statiques pour effectuer plusieurs paiements sur le Lightning Network. Contrairement aux invoices classiques, les *offers* peuvent être réutilisées. Elles permettent de générer plusieurs demandes d'invoices. Lorsqu'un utilisateur scanne un QR code contenant une *offer*, il envoie un message pour demander une nouvelle invoice au nœud Lightning associé. Le nœud répond avec une invoice que le payeur peut utiliser. Les *offers* permettent ainsi de disposer d'un identifiant unique pour recevoir de nombreux paiement de la part de plusieurs utilisateurs différents sur Lightning.
 
+## OFF-GRID
+
+► ***FR : HORS RÉSEAU***
+
+Désigne une opération de minage de Bitcoin qui fonctionne de manière autonome, sans être connectée au réseau électrique principal. Les mineurs off-grid utilisent généralement des sources d'énergie alternatives comme l'énergie solaire, éolienne, hydroélectrique, ou encore avec des générateurs fonctionnant aux combustibles fossiles (par exemple, le gaz destiné au torchage). Ce modèle est souvent privilégié pour réduire les coûts d'énergie, car il se base en partie sur de l'énergie qui, sans le minage, serait gaspillée. Les mineurs off-grid ont l'avantage de pouvoir s'installer dans des endroits isolés, afin de consommer cette énergie trop éloignée des populations. 
+
+Le minage off-grid présente souvent des avantages écologiques, car il peut, dans certains cas, aider à réduire les émissions de gaz à effet de serre en limitant le torchage. De plus, il rend économiquement viables certains projets de production d'énergie renouvelable malgré leur intermittence naturelle.
+
 ## ON-CHAIN
 
 ► ***FR : SUR-CHAÎNE***
 
 Désigne les transactions enregistrées directement sur la blockchain Bitcoin. Ce terme s'oppose à « off-chain » qui désigne des opérations qui sont plus ou moins liées avec la blockchain Bitcoin, mais qui se déroulent en dehors de la blockchain principale.
+
+## ON-GRID
+
+► ***FR : RACCORDÉ AU RÉSEAU***
+
+Désigne une opération de minage de Bitcoin qui est connectée au réseau électrique général. Les mineurs on-grid se branchent sur le réseau électrique classique, utilisé également par les consommateurs résidentiels, pour alimenter leurs ASICs. Cette méthode offre une source d'énergie stable, mais est souvent plus coûteuse comparée au minage off-grid, en raison de marges de négociation plus limitées.
+
+Parfois, les fermes de minage on-grid participent à des programmes de gestion de la demande. Ils ajustent leur consommation d'énergie en fonction des fluctuations de production et de consommation d'électricité sur le réseau, afin de maintenir l'équilibre et éviter le gaspillage ou le blackout.
 
 ## ONION_PRIVATE_KEY
 
