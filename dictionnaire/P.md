@@ -347,6 +347,12 @@ Méthode de calcul de la rémunération des mineurs dans le contexte des pools d
 
 > ► *Pour plus d'informations, voir la définition de **[SHARES](./S.md#shares)**.*
 
+## PPA
+
+► ***FR : CONTRAT D'ACHAT D'ÉNERGIE***
+
+Sigle de « *Power Purchase Agreement* ». C'est un contrat à long terme entre une grosse ferme de minage de bitcoins et un fournisseur d'énergie, pour l'achat direct d'électricité à un tarif fixe. Ce type de contrat permet aux fermes de minage de sécuriser des coûts énergétiques stables et compétitifs sur plusieurs années, ce qui réduit l'impact des fluctuations du marché de l'électricité.
+
 ## PPLNS (PAY PER LAST N SHARES)
 
 Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. PPLNS récompense les mineurs en fonction de leur contribution en shares sur une période donnée. Dans PPLNS, les paiements sont effectués seulement lorsque la pool trouve un bloc et sont établis sur le nombre de shares soumises par le mineur par rapport au total des shares collectées pendant la période observée. Cette méthode favorise les mineurs constants et actifs sur le long terme, car elle décourage le pool hopping (changement fréquent de pool). La rémunération varie avec la probabilité de trouver un bloc, ce qui peut entraîner une baisse de la constance dans les revenus du mineur (plus de variance que le paiement à la tâche).

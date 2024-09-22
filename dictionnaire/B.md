@@ -85,6 +85,14 @@ Dans le cadre du minage de Bitcoin, désigne l'électricité produite et directe
 
 Système de gestion de base de données intégrable avec une architecture de stockage clé-valeur. Il a été utilisé dans les premières versions de Bitcoin et a été remplacé par LevelDB en 2012.
 
+## BETTERHASH
+
+Protocole de minage développé par Matt Corallo en 2018 pour essayer de contrer la centralisation croissante du minage sur les pools. Il se distingue de Stratum, qui est alors la norme, en offrant aux hacheurs plus de contrôle sur la sélection des transactions à inclure dans les block templates. L'idée principale derrière BetterHash est de redonner aux hacheurs la possibilité de gérer eux-mêmes la construction du block template, tout en conservant les avantages des pools de minage comme la réduction de la variance des revenus.
+
+Dans le protocole Stratum, les pools de minage contrôlent la création des block templates, c'est-à-dire qu'ils choisissent quelles transactions sont incluses dans les blocs et déterminent également la chaîne sur laquelle miner. Cette centralisation affaiblit Bitcoin, car cela rend le processus de confirmation des transactions vulnérable à la censure.
+
+BetterHash permet aux hacheurs de reprendre la main sur ces opérations, tout en laissant la pool gérer la distribution des récompenses. C'est donc en quelque sorte un des précurseurs de StratumV2.
+
 ## BGP HIJACKING
 
 ► ***FR : DÉTOURNEMENT BGP***
@@ -819,6 +827,10 @@ Prototype de cryptomonnaie décentralisée conçue par Wei Dai en 1998. Ce syst�
 ## BOLT
 
 Acronyme de « *Basis Of Lightning Technology* ». C'est une série de spécifications destinées à permettre l'interopérabilité de Lightning entre les différentes implémentations de ce protocole de seconde couche (*LND*, *Core Lightning*, *Eclair*...). Ces spécifications détaillent les règles et les normes à respecter afin que les nœuds Lightning forment un seul et même réseau.
+
+## BOSMINER
+
+Logiciel de minage open-source développé en Rust par Braiins (anciennement Slush Pool) en tant qu'alternative plus moderne à CGMiner. BOSminer est spécifiquement conçu pour les ASICs. Intégré à l'écosystème BraiinsOS, il permet une gestion avancée des ASICs, avec des fonctionnalités comme l'overclocking, une surveillance détaillée des performances et le support de StratumV2.
 
 ## BOUNTY
 

@@ -43,6 +43,12 @@ Sigle de « *Contract Execution Transaction* ». C'est une transaction spécif
 
 > ► *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](./D.md#dlc-discreet-log-contract).*
 
+## CGMINER
+
+Logiciel de minage open-source initialement développé pour le CPU et le GPU. CGminer permet aux utilisateurs de gérer et d'optimiser leurs opérations de minage, avec des fonctionnalités comme le multi-threading, la gestion de pools multiples et la surveillance en temps réel des performances. Le logiciel n'est plus vraiment maintenu de nos jours, mais il a été repris dans le projet open-source BOSminer de Braiins.
+
+> ► *Pour plus d'informations, voir la définition de [**BOSMINER**](./B.md#bosminer).*
+
 ## CHAINE EXTERNE
 
 ► ***EN : EXTERNAL KEYCHAIN***
@@ -510,6 +516,11 @@ Cependant, il est important de noter que les transactions de consolidation sont 
 
 ![](assets/7.png)
 
+## CONTENEUR (MINAGE)
+
+► ***EN : CONTAINER (MINING)***
+
+Dans le cadre du minage, un conteneur est une structure modulaire utilisée pour héberger et opérer un grand nombre d'ASICs. Ces containers sont conçus pour optimiser l'espace, la gestion de la chaleur et l'alimentation électrique. Ils sont équipés de systèmes de refroidissement à l'air. Leur avantage principal réside dans leur mobilité et leur capacité à être déployés rapidement, souvent à proximité de sources d'énergie bon marché.
 
 ## CONTRAT INTELLIGENT
 

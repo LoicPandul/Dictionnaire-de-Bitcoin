@@ -195,6 +195,12 @@ Dans le contexte de Bitcoin, un mineur fait référence à une personne qui gèr
 
 > ► *Dans le cadre spécifique des pools de minage, on différencie parfois le rôle de mineur du rôle de hacheur, étant donné que les hacheurs individuels qui participent à la mutualisation doivent uniquement hacher et ne participent pas au processus complet de la mine.*
 
+## MINING MANAGEMENT SOFTWARE
+
+► ***FR : LOGICIEL DE GESTION DE MINAGE***
+
+Logiciel dédié à la gestion et à l'optimisation des opérations de minage. Ce type de logiciel permet de surveiller en temps réel les performances des ASICs, la consommation énergétique, les températures, et les taux de hachage. Il offre également des fonctionnalités de gestion des fermes de minage à grande échelle, avec l’automatisation des réglages (comme l'overclocking par exemple), la détection des pannes et la gestion à distance des appareils.
+
 ## MINISCRIPT
 
 Framework permettant de fournir un cadre pour programmer des scripts de manière sécurisée sur Bitcoin. Le langage natif de Bitcoin s'appelle script. Celui-ci est assez complexe à utiliser en pratique, notamment pour des applications sophistiquées et personnalisées. Surtout, il est très difficile de vérifier les limitations d'un script. Miniscript utilise un sous-ensemble de scripts Bitcoin pour simplifier leur création, leur analyse et leur vérification. Chaque miniscript est équivalent 1 pour 1 avec un script natif. On utilise un langage de policies facile à utiliser, qui est ensuite compilé en miniscript, pour enfin correspondre à un script natif. 
