@@ -418,6 +418,14 @@ Dans le cadre du minage de Bitcoin, désigne l'électricité produite et directe
 
 Système de gestion de base de données intégrable avec une architecture de stockage clé-valeur. Il a été utilisé dans les premières versions de Bitcoin et a été remplacé par LevelDB en 2012.
 
+## BETTERHASH
+
+Protocole de minage développé par Matt Corallo en 2018 pour essayer de contrer la centralisation croissante du minage sur les pools. Il se distingue de Stratum, qui est alors la norme, en offrant aux hacheurs plus de contrôle sur la sélection des transactions à inclure dans les block templates. L'idée principale derrière BetterHash est de redonner aux hacheurs la possibilité de gérer eux-mêmes la construction du block template, tout en conservant les avantages des pools de minage comme la réduction de la variance des revenus.
+
+Dans le protocole Stratum, les pools de minage contrôlent la création des block templates, c'est-à-dire qu'ils choisissent quelles transactions sont incluses dans les blocs et déterminent également la chaîne sur laquelle miner. Cette centralisation affaiblit Bitcoin, car cela rend le processus de confirmation des transactions vulnérable à la censure.
+
+BetterHash permet aux hacheurs de reprendre la main sur ces opérations, tout en laissant la pool gérer la distribution des récompenses. C'est donc en quelque sorte un des précurseurs de StratumV2.
+
 ## BGP HIJACKING
 
 ► ***FR : DÉTOURNEMENT BGP***
@@ -1153,6 +1161,10 @@ Prototype de cryptomonnaie décentralisée conçue par Wei Dai en 1998. Ce syst�
 
 Acronyme de « *Basis Of Lightning Technology* ». C'est une série de spécifications destinées à permettre l'interopérabilité de Lightning entre les différentes implémentations de ce protocole de seconde couche (*LND*, *Core Lightning*, *Eclair*...). Ces spécifications détaillent les règles et les normes à respecter afin que les nœuds Lightning forment un seul et même réseau.
 
+## BOSMINER
+
+Logiciel de minage open-source développé en Rust par Braiins (anciennement Slush Pool) en tant qu'alternative plus moderne à CGMiner. BOSminer est spécifiquement conçu pour les ASICs. Intégré à l'écosystème BraiinsOS, il permet une gestion avancée des ASICs, avec des fonctionnalités comme l'overclocking, une surveillance détaillée des performances et le support de StratumV2.
+
 ## BOUNTY
 
 Récompense offerte pour la réalisation d'une tâche spécifique, souvent liée à l'amélioration ou à la sécurité d'un projet de logiciel. Les bounties sont souvent utilisés pour encourager la découverte et la correction de vulnérabilités dans les logiciels, pour développer de nouvelles fonctionnalités, ou pour résoudre des problèmes complexes. Les participants, généralement des développeurs ou des chercheurs, reçoivent une récompense une fois que leurs contributions ont été vérifiées et acceptées. Ce système incitatif permet d'accélérer le développement et de renforcer la sécurité des logiciels en mobilisant une communauté plus large. Les bounties sont parfois utilisés par des logiciels dans le cadre de Bitcoin.
@@ -1258,6 +1270,12 @@ Protocole open-source de monnaie électronique chaumienne, similaire au système
 Sigle de « *Contract Execution Transaction* ». C'est une transaction spécifique au sein d'un DLC qui permet le règlement final entre les parties en fonction de l'issue d'un événement futur. Lorsque l'oracle publie une signature correspondant au résultat de l'événement, les parties utilisent cette signature pour compléter et déverrouiller la CET qui envoie les fonds à la partie gagnante. La CET signée est ensuite minée, et le gagnant reçoit les bitcoins qui lui sont dus selon les conditions du contrat intelligent. Toutes les autres CET potentielles, qui auraient été exécutées en cas de résultats différents, deviennent obsolètes et sont abandonnées.
 
 > ► *Pour plus d'informations, voir la définition de [**DLC (DISCREET LOG CONTRACT)**](#dlc-discreet-log-contract).*
+
+## CGMINER
+
+Logiciel de minage open-source initialement développé pour le CPU et le GPU. CGminer permet aux utilisateurs de gérer et d'optimiser leurs opérations de minage, avec des fonctionnalités comme le multi-threading, la gestion de pools multiples et la surveillance en temps réel des performances. Le logiciel n'est plus vraiment maintenu de nos jours, mais il a été repris dans le projet open-source BOSminer de Braiins.
+
+> ► *Pour plus d'informations, voir la définition de [**BOSMINER**](#bosminer).*
 
 ## CHAINE EXTERNE
 
@@ -1726,6 +1744,11 @@ Cependant, il est important de noter que les transactions de consolidation sont 
 
 ![](../../dictionnaire/assets/7.png)
 
+## CONTENEUR (MINAGE)
+
+► ***EN : CONTAINER (MINING)***
+
+Dans le cadre du minage, un conteneur est une structure modulaire utilisée pour héberger et opérer un grand nombre d'ASICs. Ces containers sont conçus pour optimiser l'espace, la gestion de la chaleur et l'alimentation électrique. Ils sont équipés de systèmes de refroidissement à l'air. Leur avantage principal réside dans leur mobilité et leur capacité à être déployés rapidement, souvent à proximité de sources d'énergie bon marché.
 
 ## CONTRAT INTELLIGENT
 
@@ -3268,6 +3291,12 @@ Dans le contexte de Bitcoin, un mineur fait référence à une personne qui gèr
 
 > ► *Dans le cadre spécifique des pools de minage, on différencie parfois le rôle de mineur du rôle de hacheur, étant donné que les hacheurs individuels qui participent à la mutualisation doivent uniquement hacher et ne participent pas au processus complet de la mine.*
 
+## MINING MANAGEMENT SOFTWARE
+
+► ***FR : LOGICIEL DE GESTION DE MINAGE***
+
+Logiciel dédié à la gestion et à l'optimisation des opérations de minage. Ce type de logiciel permet de surveiller en temps réel les performances des ASICs, la consommation énergétique, les températures, et les taux de hachage. Il offre également des fonctionnalités de gestion des fermes de minage à grande échelle, avec l’automatisation des réglages (comme l'overclocking par exemple), la détection des pannes et la gestion à distance des appareils.
+
 ## MINISCRIPT
 
 Framework permettant de fournir un cadre pour programmer des scripts de manière sécurisée sur Bitcoin. Le langage natif de Bitcoin s'appelle script. Celui-ci est assez complexe à utiliser en pratique, notamment pour des applications sophistiquées et personnalisées. Surtout, il est très difficile de vérifier les limitations d'un script. Miniscript utilise un sous-ensemble de scripts Bitcoin pour simplifier leur création, leur analyse et leur vérification. Chaque miniscript est équivalent 1 pour 1 avec un script natif. On utilise un langage de policies facile à utiliser, qui est ensuite compilé en miniscript, pour enfin correspondre à un script natif. 
@@ -4543,6 +4572,12 @@ Un portefeuille chaud est un dispositif logiciel dédié à la sécurisation et 
 Méthode de calcul de la rémunération des mineurs dans le contexte des pools de minage. POT est un système de rémunération variant selon la difficulté du travail envoyé à la pool plutôt que celle du travail fourni par la pool. Dans cette approche, la récompense pour chaque part soumise par un mineur est établie sur la difficulté de cette part spécifique. Cela signifie que les parts plus difficiles sont mieux récompensées que celles moins difficiles. C'est une méthode variante de PPS, mais en ajustant la récompense en fonction de la complexité réelle du travail accompli, POT implique beaucoup plus de variance pour le mineur.
 
 > ► *Pour plus d'informations, voir la définition de **[SHARES](#shares)**.*
+
+## PPA
+
+► ***FR : CONTRAT D'ACHAT D'ÉNERGIE***
+
+Sigle de « *Power Purchase Agreement* ». C'est un contrat à long terme entre une grosse ferme de minage de bitcoins et un fournisseur d'énergie, pour l'achat direct d'électricité à un tarif fixe. Ce type de contrat permet aux fermes de minage de sécuriser des coûts énergétiques stables et compétitifs sur plusieurs années, ce qui réduit l'impact des fluctuations du marché de l'électricité.
 
 ## PPLNS (PAY PER LAST N SHARES)
 

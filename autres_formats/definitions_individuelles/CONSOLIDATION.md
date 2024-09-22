@@ -8,4 +8,3 @@ Cependant, il est important de noter que les transactions de consolidation sont 
 
 ![](../../dictionnaire/assets/7.png)
 
-

@@ -1,4 +1,4 @@
-**Nombre total de définitions : ` 797 `**
+**Nombre total de définitions : ` 803 `**
 
 ### A
 
@@ -55,6 +55,7 @@
 - [BECH32 ET BECH32M](./dictionnaire/B.md#bech32-et-bech32m)
 - [BEHIND-THE-METER](./dictionnaire/B.md#behind-the-meter)
 - [BERKELEYDB](./dictionnaire/B.md#berkeleydb)
+- [BETTERHASH](./dictionnaire/B.md#betterhash)
 - [BGP HIJACKING](./dictionnaire/B.md#bgp-hijacking)
 - [BIG BLOCKERS](./dictionnaire/B.md#big-blockers)
 - [BIG-ENDIAN](./dictionnaire/B.md#big-endian)
@@ -180,6 +181,7 @@
 - [BLOOM FILTER](./dictionnaire/B.md#bloom-filter)
 - [B-MONEY](./dictionnaire/B.md#b-money)
 - [BOLT](./dictionnaire/B.md#bolt)
+- [BOSMINER](./dictionnaire/B.md#bosminer)
 - [BOUNTY](./dictionnaire/B.md#bounty)
 - [BRANCH-AND-BOUND](./dictionnaire/B.md#branch-and-bound)
 - [BRANCHE (BITCOIN)](./dictionnaire/B.md#branche-bitcoin)
@@ -200,6 +202,7 @@
 - [CAPACITÉ DE CANAL LIGHTNING](./dictionnaire/C.md#capacité-de-canal-lightning)
 - [CASHU](./dictionnaire/C.md#cashu)
 - [CET](./dictionnaire/C.md#cet)
+- [CGMINER](./dictionnaire/C.md#cgminer)
 - [CHAINE EXTERNE](./dictionnaire/C.md#chaine-externe)
 - [CHAINE INTERNE](./dictionnaire/C.md#chaine-interne)
 - [CHAINSPLIT](./dictionnaire/C.md#chainsplit)
@@ -248,6 +251,7 @@
 - [CONFIRMATION](./dictionnaire/C.md#confirmation)
 - [CONSENSUS](./dictionnaire/C.md#consensus)
 - [CONSOLIDATION](./dictionnaire/C.md#consolidation)
+- [CONTENEUR (MINAGE)](./dictionnaire/C.md#conteneur-minage)
 - [CONTRAT INTELLIGENT](./dictionnaire/C.md#contrat-intelligent)
 - [CONTRIBUTEUR (CORE)](./dictionnaire/C.md#contributeur-core)
 - [CONTROL BOARD (MINING)](./dictionnaire/C.md#control-board-mining)
@@ -484,6 +488,7 @@
 - [MINAGE FUSIONNÉ](./dictionnaire/M.md#minage-fusionné)
 - [MINAGE FUSIONNÉ AVEUGLE](./dictionnaire/M.md#minage-fusionné-aveugle)
 - [MINEUR](./dictionnaire/M.md#mineur)
+- [MINING MANAGEMENT SOFTWARE](./dictionnaire/M.md#mining-management-software)
 - [MINISCRIPT](./dictionnaire/M.md#miniscript)
 - [MINITAPSCRIPT](./dictionnaire/M.md#minitapscript)
 - [MIT X11](./dictionnaire/M.md#mit-x11)
@@ -666,6 +671,7 @@
 - [PORTEFEUILLE](./dictionnaire/P.md#portefeuille)
 - [PORTEFEUILLE CHAUD (LOGICIEL)](./dictionnaire/P.md#portefeuille-chaud-logiciel)
 - [POT (PAY ON TARGET)](./dictionnaire/P.md#pot-pay-on-target)
+- [PPA](./dictionnaire/P.md#ppa)
 - [PPLNS (PAY PER LAST N SHARES)](./dictionnaire/P.md#pplns-pay-per-last-n-shares)
 - [PPLNSG](./dictionnaire/P.md#pplnsg)
 - [PPS (PAY PER SHARE)](./dictionnaire/P.md#pps-pay-per-share)
