@@ -32,6 +32,7 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
 * Science Genial (https://twitter.com/science\_genial) ;
 * Marc VALLEE (https://twitter.com/marcvallee13) ;
 * Meyga Vox (https://twitter.com/meygavox) ;
+* Mill3sim3 (https://x.com/Mill3sim3) ;
 * Jean-Luc et Marco de Bitcoin.fr (https://bitcoin.fr/) ;
 * L'équipe de Découvre Bitcoin (https://decouvrebitcoin.fr/) ;
 * L'équipe de PlanB Network (https://planb.network/) ;
