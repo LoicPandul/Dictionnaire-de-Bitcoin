@@ -4,7 +4,7 @@
 Dictionnaire de Bitcoin : Tout le vocabulaire technique de Bitcoin
 
 
-Version du 22 mars 2025
+Version du 19 mai 2025
 
 https://github.com/LoicPandul/Dictionnaire-de-Bitcoin
 
@@ -60,6 +60,7 @@ Je tiens également à remercier toutes les personnes qui m'ont aidé dans la r�
 <li>Science Genial (https://twitter.com/science\_genial) ;</li>
 <li>Marc VALLEE (https://twitter.com/marcvallee13) ;</li>
 <li>Meyga Vox (https://twitter.com/meygavox) ;</li>
+<li>Mill3sim3 (https://x.com/Mill3sim3) ;</li>
 <li>Jean-Luc et Marco de Bitcoin.fr (https://bitcoin.fr/) ;</li>
 <li>L'équipe de Découvre Bitcoin (https://decouvrebitcoin.fr/) ;</li>
 <li>L'équipe de PlanB Network (https://planb.network/) ;</li>
@@ -4335,7 +4336,7 @@ Dans le réseau Bitcoin, un nœud est un ordinateur qui exécute un client du pr
 
 Il existe plusieurs types de nœuds sur Bitcoin, dont les nœuds complets et les nœuds légers. Les nœuds complets conservent une copie intégrale de la blockchain, vérifient toutes les transactions et les blocs selon les règles de consensus, et participent activement à la diffusion de transactions et de blocs sur le réseau. En revanche, les nœuds légers, ou nœuds SPV (*Simple Payment Verification*), ne conservent que les entêtes des blocs et comptent sur les nœuds complets pour obtenir des informations sur les transactions. 
 
-> ► *Certains différencient également les nœuds dits « élagués » (« pruned node » en anglais). Ce sont des nœuds complets, qui téléchargent et vérifient tous les blocs depuis le bloc de Genèse, mais qui ne conserve que les blocs les plus récents en mémoire.*
+> ► *Certains différencient également les nœuds dits « élagués » (« pruned node » en anglais). Ce sont des nœuds complets, qui téléchargent et vérifient tous les blocs depuis le bloc de Genèse, mais qui ne conservent que les blocs les plus récents en mémoire.*
 
 ## NOEUD COMPLET
 ▪ **Protocole**
