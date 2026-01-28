@@ -1,54 +1,91 @@
-## Statistiques du *Dictionnaire de Bitcoin*
+# Statistiques du Dictionnaire de Bitcoin
 
-### Nombre total de définitions : 
-**-> 846**
+*Dernière mise à jour : 27/01/2026 à 20:02*
 
-### Nombre de définitions par lettre :
-1. ***B*** - 153
-2. ***O*** - 104
-3. ***C*** - 86
-4. ***S*** - 78
-5. ***P*** - 61
-6. ***M*** - 42
-7. ***A*** - 40
-8. ***D*** - 35
-9. ***R*** - 28
-10. ***E*** - 26
-11. ***T*** - 24
-12. ***L*** - 22
-13. ***F*** - 20
-14. ***H*** - 20
-15. ***G*** - 19
-16. ***I*** - 18
-17. ***N*** - 17
-18. ***W*** - 14
-19. ***U*** - 10
-20. ***V*** - 9
-21. ***Z*** - 6
-22. ***J*** - 4
-23. ***X*** - 4
-24. ***K*** - 2
-25. ***Q*** - 2
-26. ***Y*** - 2
+---
 
-### Termes techniques les plus rencontrés :
-1. ***bitcoin*** - 1348
-2. ***transaction*** - 1034
-3. ***bloc*** - 613
-4. ***script*** - 434
-5. ***protocole*** - 410
-6. ***information*** - 365
-7. ***adresse*** - 363
-8. ***portefeuille*** - 359
-9. ***réseau*** - 290
-10. ***mineur*** - 259
-11. ***utxo*** - 253
-12. ***utilisateur*** - 252
-13. ***signature*** - 245
-14. ***donnée*** - 221
-15. ***minage*** - 220
-16. ***clé*** - 209
-17. ***système*** - 200
-18. ***paiement*** - 196
-19. ***publique*** - 189
-20. ***lightning*** - 182
+## Statistiques globales
+
+- **Nombre total de définitions** : 846
+- **Nombre de lettres utilisées** : 26
+- **Nombre de catégories** : 20
+
+## Définitions par lettre
+
+| Lettre | Nombre |
+|:------:|-------:|
+| A | 40 |
+| B | 153 |
+| C | 86 |
+| D | 35 |
+| E | 26 |
+| F | 20 |
+| G | 19 |
+| H | 20 |
+| I | 18 |
+| J | 4 |
+| K | 2 |
+| L | 22 |
+| M | 42 |
+| N | 17 |
+| O | 104 |
+| P | 61 |
+| Q | 2 |
+| R | 28 |
+| S | 78 |
+| T | 24 |
+| U | 10 |
+| V | 9 |
+| W | 14 |
+| X | 4 |
+| Y | 2 |
+| Z | 6 |
+
+## Top 5 des lettres les plus fournies
+
+1. **B** : 153 définitions
+2. **O** : 104 définitions
+3. **C** : 86 définitions
+4. **S** : 78 définitions
+5. **P** : 61 définitions
+
+## Catégories
+
+- **Protocole** : 143
+- **Script** : 104
+- **BIP** : 83
+- **Portefeuille** : 77
+- **Minage** : 57
+- **Confidentialité** : 52
+- **Informatique** : 52
+- **Cryptographie** : 41
+- **RGB** : 37
+- **Lightning Network** : 37
+- **Réseau** : 32
+- **Économie et régulation** : 30
+- **Histoire** : 28
+- **Attaque** : 24
+- **Couche supérieure** : 23
+- **Sidechain** : 9
+- **Communauté** : 8
+- **Outil** : 6
+- **Organisation** : 2
+- **Outils** : 1
+
+## Termes les plus fréquents
+
+- **bitcoin** : 1077 occurrences
+- **transaction** : 622 occurrences
+- **transactions** : 386 occurrences
+- **bloc** : 375 occurrences
+- **permet** : 340 occurrences
+- **informations** : 320 occurrences
+- **réseau** : 254 occurrences
+- **bitcoins** : 242 occurrences
+- **protocole** : 238 occurrences
+- **script** : 236 occurrences
+- **chaque** : 229 occurrences
+- **blocs** : 224 occurrences
+- **voir** : 219 occurrences
+- **deux** : 209 occurrences
+- **clés** : 209 occurrences

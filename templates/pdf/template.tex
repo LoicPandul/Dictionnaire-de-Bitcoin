@@ -1,0 +1,139 @@
+% Template LaTeX pour le Dictionnaire de Bitcoin
+% Ce template est utilisé par Pandoc pour générer le PDF
+
+\documentclass[11pt,a4paper]{article}
+
+% Packages essentiels
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{etoolbox}
+\usepackage{footnote}
+\usepackage{grffile}
+
+% Configuration de la géométrie
+\geometry{
+    top=$if(geometry.top)$$geometry.top$$else$1.2in$endif$,
+    bottom=$if(geometry.bottom)$$geometry.bottom$$else$1.2in$endif$,
+    left=$if(geometry.left)$$geometry.left$$else$1.2in$endif$,
+    right=$if(geometry.right)$$geometry.right$$else$1.2in$endif$
+}
+
+% Police principale
+$if(mainfont)$
+\setmainfont{$mainfont$}
+$else$
+\setmainfont{Arial}
+$endif$
+
+% Couleurs personnalisées
+\definecolor{customgray}{RGB}{246, 248, 250}
+\definecolor{linkcolor}{RGB}{0, 0, 139}
+
+% Configuration des hyperliens
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+    breaklinks=true
+}
+
+% Configuration des listings (blocs de code)
+\lstdefinelanguage{text}{
+    basicstyle=\ttfamily\small,
+    morekeywords={}
+}
+
+\lstdefinelanguage{plaintext}{
+    basicstyle=\ttfamily\small,
+    morekeywords={}
+}
+
+\lstset{
+    backgroundcolor=\color{customgray},
+    frame=none,
+    basicstyle=\ttfamily\small,
+    aboveskip=0.5em,
+    belowskip=0.5em,
+    breaklines=true,
+    breakatwhitespace=false,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Configuration tcolorbox pour les blocs de code
+\tcbuselibrary{listingsutf8}
+\tcbset{listing engine=listings}
+
+\newtcblisting{codeblock}{
+    colback=customgray,
+    colframe=white,
+    listing only,
+    listing options={basicstyle=\ttfamily\small},
+    left=1em,
+    right=1em,
+    top=0.5em,
+    bottom=0.5em
+}
+
+% En-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Couleur des lignes de tableau
+\arrayrulecolor{white}
+
+% Configuration des images
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Configuration de la césure
+\hyphenpenalty=1000
+\exhyphenpenalty=1000
+
+% Empêcher les veuves et orphelins
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Variables Pandoc
+$if(title)$
+\title{$title$}
+$endif$
+
+$if(author)$
+\author{$author$}
+$endif$
+
+$if(date)$
+\date{$date$}
+$endif$
+
+% Support pour les listes serrées de Pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+% Contenu généré par Pandoc
+$body$
+
+\end{document}
