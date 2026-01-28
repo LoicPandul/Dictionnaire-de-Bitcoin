@@ -1,0 +1,10 @@
+uuid: "0b435ec2-9ebf-4110-94ba-bc6cba923aac"
+title: "PAYNYM"
+slug: "paynym"
+category: "Confidentialité"
+cross_references:
+  - "bip47"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

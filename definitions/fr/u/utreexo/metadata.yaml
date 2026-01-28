@@ -1,0 +1,10 @@
+uuid: "c84e350d-9afb-4716-b0c5-800f42070fb3"
+title: "UTREEXO"
+slug: "utreexo"
+category: "Protocole"
+cross_references:
+  - "utxo-set"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

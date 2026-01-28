@@ -1,0 +1,8 @@
+uuid: "d65d6315-3cc2-4a3c-9473-3de32166f3cc"
+title: "C-LIGHTNING (CLN)"
+slug: "c-lightning-cln"
+category: "Lightning Network"
+cross_references:
+  - "core-lightning-cln"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

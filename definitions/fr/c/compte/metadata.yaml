@@ -1,0 +1,11 @@
+uuid: "7861164f-04b0-44af-9ea7-00202b3757ba"
+title: "COMPTE"
+slug: "compte"
+category: "Portefeuille"
+english_term: "ACCOUNT"
+cross_references:
+  - "chemin-de-dérivation"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

@@ -1,0 +1,8 @@
+uuid: "d910cf73-985d-44e0-810f-619230f923ac"
+title: "OP_SHA256 (0XA8)"
+slug: "op-sha256-0xa8"
+category: "Script"
+cross_references:
+  - "sha256"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

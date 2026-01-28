@@ -1,0 +1,8 @@
+uuid: "727b6789-64a4-4b95-ba1a-ed4810201415"
+title: "OP_RIPEMD160 (0XA6)"
+slug: "op-ripemd160-0xa6"
+category: "Script"
+cross_references:
+  - "ripemd160"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

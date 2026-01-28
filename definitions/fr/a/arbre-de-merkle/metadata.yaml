@@ -1,0 +1,10 @@
+uuid: "37a83a88-5744-44df-862a-a68dadb160cf"
+title: "ARBRE DE MERKLE"
+slug: "arbre-de-merkle"
+category: "Cryptographie"
+english_term: "MERKLE TREE"
+assets:
+  - filename: "image-1.png"
+  - filename: "image-2.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

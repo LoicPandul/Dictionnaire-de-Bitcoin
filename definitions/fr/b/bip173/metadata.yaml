@@ -1,0 +1,8 @@
+uuid: "29193a69-fe44-4bf3-9236-5d427db370fd"
+title: "BIP173"
+slug: "bip173"
+category: "BIP"
+cross_references:
+  - "bech32-et-bech32m"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

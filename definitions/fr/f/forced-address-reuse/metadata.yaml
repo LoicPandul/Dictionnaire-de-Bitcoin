@@ -1,0 +1,10 @@
+uuid: "1bf8af3a-f6f1-4a51-9efb-7f8bfa2372ae"
+title: "FORCED ADDRESS REUSE"
+slug: "forced-address-reuse"
+category: "Attaque"
+french_term: "RÉUTILISATION D'ADRESSE FORCÉE"
+cross_references:
+  - "dust"
+  - "dust-limit"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

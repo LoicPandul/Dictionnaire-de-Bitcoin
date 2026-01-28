@@ -1,0 +1,11 @@
+uuid: "c1574db6-f193-4f77-beb4-cbb3c54b28eb"
+title: "TYPE DE DEVISE"
+slug: "type-de-devise"
+category: "Portefeuille"
+english_term: "COIN TYPE"
+cross_references:
+  - "chemin-de-dérivation"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

@@ -1,0 +1,8 @@
+uuid: "16f24b24-342f-4eb9-a1c4-bd754018e020"
+title: "BIP151"
+slug: "bip151"
+category: "BIP"
+cross_references:
+  - "p2p-transport-v2"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

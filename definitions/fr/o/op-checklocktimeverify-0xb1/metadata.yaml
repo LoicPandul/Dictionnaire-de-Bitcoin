@@ -1,0 +1,8 @@
+uuid: "0ff5943f-fb59-4b9b-b650-ffca2a5e82fb"
+title: "OP_CHECKLOCKTIMEVERIFY (0XB1)"
+slug: "op-checklocktimeverify-0xb1"
+category: "Script"
+cross_references:
+  - "nlocktime"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

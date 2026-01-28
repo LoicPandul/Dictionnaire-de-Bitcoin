@@ -1,0 +1,9 @@
+uuid: "12db32b8-fc26-4fb1-b8df-7bc172582b0d"
+title: "DER"
+slug: "der"
+category: "Informatique"
+cross_references:
+  - "bip66"
+  - "sighash-flag"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

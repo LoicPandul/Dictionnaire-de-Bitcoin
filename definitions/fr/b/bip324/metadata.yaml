@@ -1,0 +1,8 @@
+uuid: "7aadb49e-5adc-4010-a269-fd7d6fabda46"
+title: "BIP324"
+slug: "bip324"
+category: "BIP"
+cross_references:
+  - "p2p-transport-v2"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

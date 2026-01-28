@@ -1,0 +1,9 @@
+uuid: "fa8d9dad-568c-447e-9c1c-c65b615d46c9"
+title: "BIP50"
+slug: "bip50"
+category: "BIP"
+cross_references:
+  - "leveldb"
+  - "berkeleydb"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

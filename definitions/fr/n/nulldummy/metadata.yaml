@@ -1,0 +1,9 @@
+uuid: "f1764fe0-499b-42fa-8a51-aa8f7391178a"
+title: "NULLDUMMY"
+slug: "nulldummy"
+category: "Protocole"
+cross_references:
+  - "dummy-element"
+  - "bip147"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

@@ -1,0 +1,9 @@
+uuid: "cddd7a63-8d9c-4ca1-a782-3ce020275816"
+title: "NESTED SEGWIT"
+slug: "nested-segwit"
+category: "Protocole"
+french_term: "SEGWIT IMBRIQUÉ"
+cross_references:
+  - "p2sh-p2wpkh"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

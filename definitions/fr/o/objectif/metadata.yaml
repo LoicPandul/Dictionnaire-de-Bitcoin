@@ -1,0 +1,11 @@
+uuid: "1757fc8e-1179-4ec5-b7be-097d31ddb93f"
+title: "OBJECTIF"
+slug: "objectif"
+category: "Portefeuille"
+english_term: "PURPOSE"
+cross_references:
+  - "chemin-de-dérivation"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

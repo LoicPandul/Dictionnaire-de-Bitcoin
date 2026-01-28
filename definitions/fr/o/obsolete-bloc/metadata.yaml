@@ -1,0 +1,11 @@
+uuid: "639ab934-b26f-4520-b282-5f310ec93859"
+title: "OBSOLÈTE (BLOC)"
+slug: "obsolete-bloc"
+category: "Protocole"
+english_term: "STALE / OBSOLETE (BLOCK)"
+cross_references:
+  - "orphelin"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

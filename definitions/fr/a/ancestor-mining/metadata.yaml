@@ -1,0 +1,9 @@
+uuid: "54fa63b4-37b6-4c42-a565-67457e66f08f"
+title: "ANCESTOR MINING"
+slug: "ancestor-mining"
+category: "Protocole"
+french_term: "MINAGE DES ANCÊTRES"
+cross_references:
+  - "cpfp-child-pay-for-parent"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

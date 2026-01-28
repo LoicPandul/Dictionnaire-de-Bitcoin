@@ -1,0 +1,11 @@
+uuid: "e7264cc5-e0b9-4056-a9c2-4e82c658b4f9"
+title: "DUST LIMIT"
+slug: "dust-limit"
+category: "Protocole"
+french_term: "LIMITE DE POUSSIÈRE"
+cross_references:
+  - "dust"
+  - "dusting-attack"
+  - "dustrelayfee"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

@@ -1,0 +1,9 @@
+uuid: "34159a1e-3271-4819-9bba-27c44d455bef"
+title: "OP_HASH160 (0XA9)"
+slug: "op-hash160-0xa9"
+category: "Script"
+cross_references:
+  - "sha256"
+  - "ripemd160"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

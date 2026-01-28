@@ -1,0 +1,9 @@
+uuid: "8a746586-6b6c-4e67-9721-44abfae97ddd"
+title: "TÉMOIN DE TRANSACTION"
+slug: "temoin-de-transaction"
+category: "Protocole"
+english_term: "TRANSACTION WITNESS"
+cross_references:
+  - "segwit"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"
