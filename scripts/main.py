@@ -2,19 +2,10 @@
 """
 Dictionnaire de Bitcoin - Script principal
 
-Usage:
-    python scripts/main.py build      # Génère tout (PDF, EPUB, INDEX, stats)
-    python scripts/main.py pdf        # Génère uniquement le PDF
-    python scripts/main.py epub       # Génère uniquement l'EPUB
-    python scripts/main.py index      # Met à jour INDEX.md
-    python scripts/main.py stats      # Génère stats.md
-    python scripts/main.py validate   # Valide le dictionnaire
-    python scripts/main.py lint       # Normalise le markdown
-    python scripts/main.py lint --fix # Corrige automatiquement le markdown
+Exécuter directement : python scripts/main.py
 """
 
 import sys
-import argparse
 from pathlib import Path
 
 # Ajouter le dossier parent au path pour les imports
@@ -22,33 +13,30 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.core.dictionary import Dictionary
 from scripts.generators import pdf_generator, epub_generator, index_generator, stats_generator
-from scripts.validators import alphabetical, markdown_linter
+from scripts.validators import markdown_linter
 from scripts.config import DEFINITIONS_DIR
 
 
-def cmd_build(args):
+def cmd_build(dictionary):
     """Génère tous les formats."""
-    print("=" * 60)
+    print("\n" + "=" * 60)
     print("Build complet du Dictionnaire de Bitcoin")
     print("=" * 60)
 
-    dictionary = Dictionary.load()
-    print(f"\nChargé: {dictionary.total_count} définitions\n")
-
     # 1. Lint
-    print("\n--- Étape 1/5: Validation du markdown ---")
+    print("\n--- Étape 1/4: Validation du markdown ---")
     markdown_linter.lint(dictionary, fix=False)
 
     # 2. Index
-    print("\n--- Étape 2/5: Génération de l'index ---")
+    print("\n--- Étape 2/4: Génération de l'index ---")
     index_generator.generate(dictionary)
 
     # 3. Stats
-    print("\n--- Étape 3/5: Génération des statistiques ---")
+    print("\n--- Étape 3/4: Génération des statistiques ---")
     stats_generator.generate(dictionary)
 
     # 4. PDF
-    print("\n--- Étape 4/5: Génération du PDF ---")
+    print("\n--- Étape 4/4: Génération du PDF ---")
     pdf_generator.generate(dictionary)
 
     # 5. EPUB
@@ -60,78 +48,50 @@ def cmd_build(args):
     print("=" * 60)
 
 
-def cmd_pdf(args):
+def cmd_pdf(dictionary):
     """Génère le PDF."""
-    dictionary = Dictionary.load()
-    print(f"Chargé: {dictionary.total_count} définitions")
+    print("\nGénération du PDF...")
     pdf_generator.generate(dictionary)
+    print("PDF généré!")
 
 
-def cmd_epub(args):
+def cmd_epub(dictionary):
     """Génère l'EPUB."""
-    dictionary = Dictionary.load()
-    print(f"Chargé: {dictionary.total_count} définitions")
+    print("\nGénération de l'EPUB...")
     epub_generator.generate(dictionary)
+    print("EPUB généré!")
 
 
-def cmd_index(args):
+def cmd_index(dictionary):
     """Met à jour l'index."""
-    dictionary = Dictionary.load()
-    print(f"Chargé: {dictionary.total_count} définitions")
+    print("\nMise à jour de l'index...")
     index_generator.generate(dictionary)
+    print("INDEX.md mis à jour!")
 
 
-def cmd_stats(args):
+def cmd_stats(dictionary):
     """Génère les statistiques."""
-    dictionary = Dictionary.load()
-    print(f"Chargé: {dictionary.total_count} définitions")
+    print("\nGénération des statistiques...")
     stats_generator.generate(dictionary)
+    print("stats.md généré!")
 
 
-def cmd_validate(args):
-    """Valide le dictionnaire."""
-    print("=" * 60)
-    print("Validation du Dictionnaire de Bitcoin")
-    print("=" * 60)
-
-    dictionary = Dictionary.load()
-    print(f"\nChargé: {dictionary.total_count} définitions\n")
-
-    all_valid = True
-
-    # Vérifier l'ordre alphabétique
-    if not alphabetical.validate(dictionary):
-        all_valid = False
-
-    # Vérifier le markdown
-    if not markdown_linter.lint(dictionary, fix=False):
-        all_valid = False
-
-    print("\n" + "=" * 60)
-    if all_valid:
-        print("Validation réussie!")
-    else:
-        print("Validation échouée - voir les erreurs ci-dessus")
-        sys.exit(1)
-    print("=" * 60)
+def cmd_lint(dictionary):
+    """Vérifie le markdown."""
+    print("\nVérification du markdown...")
+    markdown_linter.lint(dictionary, fix=False)
 
 
-def cmd_lint(args):
-    """Normalise le markdown."""
-    dictionary = Dictionary.load()
-    print(f"Chargé: {dictionary.total_count} définitions")
-
-    if args.fix:
-        markdown_linter.lint(dictionary, fix=True)
-    else:
-        markdown_linter.lint(dictionary, fix=False)
+def cmd_lint_fix(dictionary):
+    """Corrige automatiquement le markdown."""
+    print("\nCorrection automatique du markdown...")
+    markdown_linter.lint(dictionary, fix=True)
+    print("Corrections appliquées!")
 
 
-def cmd_info(args):
+def cmd_info(dictionary):
     """Affiche les informations du dictionnaire."""
-    dictionary = Dictionary.load()
-
-    print("=" * 60)
+    print("\n" + "=" * 60)
     print("Dictionnaire de Bitcoin - Informations")
     print("=" * 60)
     print(f"\nNombre total de définitions: {dictionary.total_count}")
@@ -144,62 +104,63 @@ def cmd_info(args):
         print(f"  {letter}: {count}")
 
 
+def show_menu():
+    """Affiche le menu principal."""
+    print("\n" + "=" * 60)
+    print("  DICTIONNAIRE DE BITCOIN - Menu principal")
+    print("=" * 60)
+    print()
+    print("  0. Build complet (PDF, EPUB, INDEX, stats)")
+    print("  1. Générer le PDF")
+    print("  2. Générer l'EPUB")
+    print("  3. Mettre à jour INDEX.md")
+    print("  4. Générer les statistiques")
+    print("  5. Vérifier le markdown")
+    print("  6. Corriger le markdown (auto-fix)")
+    print("  7. Afficher les informations")
+    print("  8. Quitter")
+    print()
+
+
 def main():
-    parser = argparse.ArgumentParser(
-        description="Dictionnaire de Bitcoin - Outils de gestion",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__
-    )
+    # Charger le dictionnaire
+    print("Chargement du dictionnaire...")
+    dictionary = Dictionary.load()
+    print(f"Chargé: {dictionary.total_count} définitions")
 
-    subparsers = parser.add_subparsers(dest="command", help="Commandes disponibles")
-
-    # Commande build
-    subparsers.add_parser("build", help="Génère tous les formats (PDF, EPUB, INDEX, stats)")
-
-    # Commande pdf
-    subparsers.add_parser("pdf", help="Génère uniquement le PDF")
-
-    # Commande epub
-    subparsers.add_parser("epub", help="Génère uniquement l'EPUB")
-
-    # Commande index
-    subparsers.add_parser("index", help="Met à jour INDEX.md")
-
-    # Commande stats
-    subparsers.add_parser("stats", help="Génère stats.md")
-
-    # Commande validate
-    subparsers.add_parser("validate", help="Valide le dictionnaire")
-
-    # Commande lint
-    lint_parser = subparsers.add_parser("lint", help="Normalise le markdown")
-    lint_parser.add_argument("--fix", action="store_true", help="Corrige automatiquement les problèmes")
-
-    # Commande info
-    subparsers.add_parser("info", help="Affiche les informations du dictionnaire")
-
-    args = parser.parse_args()
-
-    if args.command is None:
-        parser.print_help()
-        sys.exit(0)
-
-    # Dispatcher les commandes
     commands = {
-        "build": cmd_build,
-        "pdf": cmd_pdf,
-        "epub": cmd_epub,
-        "index": cmd_index,
-        "stats": cmd_stats,
-        "validate": cmd_validate,
-        "lint": cmd_lint,
-        "info": cmd_info,
+        "0": cmd_build,
+        "1": cmd_pdf,
+        "2": cmd_epub,
+        "3": cmd_index,
+        "4": cmd_stats,
+        "5": cmd_lint,
+        "6": cmd_lint_fix,
+        "7": cmd_info,
     }
 
-    if args.command in commands:
-        commands[args.command](args)
-    else:
-        parser.print_help()
+    while True:
+        show_menu()
+
+        try:
+            choice = input("  Votre choix: ").strip()
+        except (KeyboardInterrupt, EOFError):
+            print("\n\nAu revoir!")
+            break
+
+        if choice == "8" or choice.lower() == "q":
+            print("\nAu revoir!")
+            break
+
+        if choice in commands:
+            try:
+                commands[choice](dictionary)
+            except Exception as e:
+                print(f"\n[ERREUR] {e}")
+        else:
+            print("\n[ERREUR] Choix invalide. Veuillez entrer un chiffre entre 0 et 8.")
+
+        input("\nAppuyez sur Entrée pour continuer...")
 
 
 if __name__ == "__main__":
