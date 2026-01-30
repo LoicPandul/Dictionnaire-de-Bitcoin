@@ -36,9 +36,9 @@ PUBLISHER = "Pandul"
 LICENSE = "CC BY-NC-SA 4.0"
 GITHUB_URL = "https://github.com/LoicPandul/Dictionnaire-de-Bitcoin"
 
-# Langues supportées (pour l'internationalisation future)
+# Langues supportées
 DEFAULT_LANG = "fr"
-SUPPORTED_LANGS = ["fr"]  # À étendre : ["fr", "en", "es", "de", "pt"]
+SUPPORTED_LANGS = ["fr"]
 
 # Configuration PDF
 PDF_ENGINE = "xelatex"
