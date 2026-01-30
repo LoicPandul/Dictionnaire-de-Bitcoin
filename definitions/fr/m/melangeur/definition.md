@@ -2,4 +2,4 @@ Service centralisé permettant de casser l'historique de pièces Bitcoin en mél
 
 De nos jours, l'usage des mélangeurs de bitcoins s'estompe au profit des coinjoins chaumiens, qui offrent plus de sécurité en éliminant le besoin de confiance. Contrairement aux mélangeurs, où les utilisateurs doivent confier leurs bitcoins à un opérateur pouvant les subtiliser ou conserver des données sur le processus de mixage, les coinjoins ne présentent pas ces risques.
 
-> ► *Pour plus d'informations, voir la définition de **[COINJOIN](./C.md#coinjoin)**.*
+> ► *Pour plus d'informations, voir la définition de **[COINJOIN](../c/coinjoin/definition.md)**.*

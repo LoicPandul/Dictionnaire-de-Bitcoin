@@ -2,4 +2,4 @@ Identifiant unique lié à un portefeuille Bitcoin qui implémente cette option.
 
 ![](./assets/image-1.png)
 
-> ► *Pour plus d'informations, voir la définition de [**BIP47**](./B.md#bip47).*
+> ► *Pour plus d'informations, voir la définition de [**BIP47**](../b/bip47/definition.md).*

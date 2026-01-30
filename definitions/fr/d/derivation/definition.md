@@ -4,4 +4,4 @@ Désigne le processus de génération de paires de clés enfants à partir d'une
 
 Le résultat de HMAC-SHA512 est divisé en deux : les premiers 256 bits deviennent la clé enfant (privée ou publique après un passage dans ECDSA), et les 256 bits restants deviennent le code de chaîne enfant.
 
-> ► *Pour plus d'informations, voir la définition de [**INDEX (KEY)**](./I.md#index-key).*
+> ► *Pour plus d'informations, voir la définition de [**INDEX (KEY)**](../i/index-key/definition.md).*

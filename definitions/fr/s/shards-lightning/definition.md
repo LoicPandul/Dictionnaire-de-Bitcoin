@@ -2,4 +2,4 @@ Dans le cadre des *Multi-Path Payments (MPP)* ou des *Atomic Multi-Path Payments
 
 Dans le cadre des MPP, tous les shards partagent le même secret, alors que dans les AMP, chaque shard dispose d'un secret partiel unique. Le destinataire regroupe les shards pour reconstituer et finaliser le paiement complet. Ce mécanisme permet de contourner les limitations de liquidité sur un canal unique.
 
-> ► *Pour plus d'informations, voir la définition de **[MULTI-PATH PAYMENTS (MPP)](./M.md#multi-path-payments-mpp)**.*
+> ► *Pour plus d'informations, voir la définition de **[MULTI-PATH PAYMENTS (MPP)](../m/multi-path-payments-mpp/definition.md)**.*

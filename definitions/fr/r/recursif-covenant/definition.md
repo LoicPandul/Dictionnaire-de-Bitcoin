@@ -4,4 +4,4 @@ Pour résumer, un covenant non récursif se limitera uniquement à la transactio
 
 De manière plus générale, en informatique, ce que l’on appelle la « récursivité » est la capacité d’une fonction à s'appeler elle-même, ce qui crée une sorte de mise en abyme.
 
-> ► *Pour plus d'informations, voir la définition de [**COVENANT**](./C.md#covenant).*
+> ► *Pour plus d'informations, voir la définition de [**COVENANT**](../c/covenant/definition.md).*

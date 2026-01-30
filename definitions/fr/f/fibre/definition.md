@@ -2,4 +2,4 @@ Sigle de « *Fast Internet Bitcoin Relay Engine* ». C'est un protocole conçu
 
 En effet, la latence dans la transmission des blocs peut favoriser les grands groupes de mineurs, bien connectés et souvent à proximité, au détriment des plus modestes. Ce phénomène pourrait, à terme, augmenter la centralisation du minage et réduire la sécurité globale du système. Pour pallier ce problème, FIBRE introduisait des codes de correction d'erreur et l'envoi de données supplémentaires pour contrebalancer les pertes de paquets, ainsi que l'utilisation de blocs compactés similaires à ceux décrits dans le BIP152, le tout opérant via UDP pour contourner certaines limitations de TCP. Néanmoins, FIBRE fut délaissé en 2020, principalement en raison de sa dépendance à l'égard d'un unique mainteneur et du fait que l'adoption du BIP152 a rendu un tel système moins indispensable.
 
-> ► *Pour plus d'informations, voir la définition de [**BIP152**](./B.md#bip152).*
+> ► *Pour plus d'informations, voir la définition de [**BIP152**](../b/bip152/definition.md).*

@@ -2,4 +2,4 @@ Fait référence à une composante des transactions Bitcoin qui a été déplac�
 
 Avant SegWit, les signatures pouvaient être légèrement modifiées sans être invalidées avant qu'une transaction ne soit confirmée, ce qui changeait l'identifiant de la transaction. Cela rendait difficile la construction de divers protocoles, car une transaction non confirmée pouvait voir son identifiant changer. En séparant les témoins, SegWit rend les transactions non malléables, car tout changement dans les signatures n'affecte plus l'identifiant de la transaction (TXID), mais uniquement l'identifiant du témoin (WTXID). En plus de résoudre le problème de la malléabilité, cette séparation permet d'augmenter la capacité de chaque bloc.
 
-> ► *Pour plus d'informations, voir la définition de **[SEGWIT](./S.md#segwit)**.*
+> ► *Pour plus d'informations, voir la définition de **[SEGWIT](../s/segwit/definition.md)**.*

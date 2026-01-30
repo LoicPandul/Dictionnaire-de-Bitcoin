@@ -6,4 +6,4 @@ Chaque `vin` inclut les informations suivantes :
 * `scriptSig` ou `scriptWitness` : un script de déverrouillage qui fournit les données nécessaires pour satisfaire les conditions posées par le `scriptPubKey` de la transaction précédente dont les fonds sont dépensés, généralement en fournissant une signature cryptographique ;
 * `nSequence` : un champ spécifique utilisé pour indiquer la manière dont cet input est verrouillé dans le temps, ainsi que d'autres options comme RBF.
 
-> ► *Pour plus d'informations, voir la définition de [**NSEQUENCE**](./N.md#nsequence).*
+> ► *Pour plus d'informations, voir la définition de [**NSEQUENCE**](../n/nsequence/definition.md).*

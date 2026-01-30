@@ -7,4 +7,4 @@ La bibliothèque libsecp256k1 offre une variété de fonctionnalités, notamment
 * La signature et la génération de clés publiques à temps constant et à accès mémoire constant ;
 * Et une multitude d'autres primitives cryptographiques.
 
-> ► *Pour plus d'informations, voir la définition de [**SECP256K1**](./S.md#secp256k1). Source : https://github.com/bitcoin-core/secp256k1.*
+> ► *Pour plus d'informations, voir la définition de [**SECP256K1**](../s/secp256k1/definition.md). Source : https://github.com/bitcoin-core/secp256k1.*

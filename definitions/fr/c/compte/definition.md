@@ -2,4 +2,4 @@ Dans les portefeuilles HD (déterministes hiérarchiques), un compte représente
 
 ![](./assets/image-1.png)
 
-> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](../c/chemin-de-dérivation/definition.md).*

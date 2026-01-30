@@ -6,4 +6,4 @@ Cette méthode de routage brouille la piste menant au nœud source, rendant diff
 
 ![](./assets/image-1.png)
 
-> ► *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](./P.md#p2p-transport-v2).*
+> ► *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](../p/p2p-transport-v2/definition.md).*

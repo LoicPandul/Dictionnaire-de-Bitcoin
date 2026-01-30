@@ -2,4 +2,4 @@ Pratique qui consiste à attribuer une annotation ou une étiquette à un UTXO s
 
 L'étiquetage est une bonne pratique qui aide à se rappeler l'origine ou la destination prévue d'un UTXO, ce qui facilite ainsi la gestion des fonds et l'optimisation de la confidentialité. L'étiquetage est d'autant plus important lorsqu'il est utilisé avec le coin control. En effet, en permettant aux utilisateurs de différencier et de sélectionner précisément les UTXOs pour leurs transactions, cette pratique aide à éviter la fusion d'UTXOs provenant de sources différentes. Cela limite les risques associés à l'heuristique d'analyse de chaîne CIOH (*Common Input Ownership Heuristic*), qui peut révéler la propriété commune des entrées d'une transaction.
 
-> ► *Pour plus d'informations, voir la définition de [**COIN CONTROL**](./C.md#coin-control).*
+> ► *Pour plus d'informations, voir la définition de [**COIN CONTROL**](../c/coin-control/definition.md).*

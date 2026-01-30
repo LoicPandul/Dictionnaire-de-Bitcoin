@@ -2,4 +2,4 @@ Dans la dérivation des portefeuilles déterministes et hiérarchiques, la chaî
 
 ![](./assets/image-1.png)
 
-> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](./C.md#chemin-de-dérivation).*
+> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](../c/chemin-de-dérivation/definition.md).*

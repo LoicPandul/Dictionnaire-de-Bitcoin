@@ -4,4 +4,4 @@ Modifier l’extra-nonce dans la transaction coinbase change l’identifiant de 
 
 Dans le cadre des pools de minage, l'extra-nonce est souvent divisé en deux parties : une générée par la pool pour identifier chaque hacheur, et une autre modifiée par le hacheur dans la recherche d'une share valide. Cela permet aux différents hacheurs de la pool de travailler simultanément sur un même bloc candidat avec l'entièreté de la plage des nonces, sans pour autant dupliquer le même travail au niveau de la pool.
 
-> ► *Pour plus d'informations, voir la définition de [**NONCE**](./N.md#nonce).*
+> ► *Pour plus d'informations, voir la définition de [**NONCE**](../n/nonce/definition.md).*

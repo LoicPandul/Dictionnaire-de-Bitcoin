@@ -2,4 +2,4 @@ Proposition qui vise à améliorer la confidentialité du routage des transactio
 
 ![](./assets/image-1.png)
 
-> ► *Pour plus d'informations, voir la définition de [**BIP156**](./B.md#bip156).*
+> ► *Pour plus d'informations, voir la définition de [**BIP156**](../b/bip156/definition.md).*

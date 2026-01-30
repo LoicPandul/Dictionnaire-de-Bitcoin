@@ -2,4 +2,4 @@ Autre nom donné à la méthode « SCORE BASED METHOD » pour le calcul de la 
 
 « *Bitcoin Pooled Mining* » était également le nom de la pool de minage de Slush en 2011, qui est à l'origine de la méthode de calcul des rémunération de même nom.
 
-> ► *Pour plus d'informations, voir la définition de **[SHARES](./S.md#shares)**.*
+> ► *Pour plus d'informations, voir la définition de **[SHARES](../s/shares/definition.md)**.*

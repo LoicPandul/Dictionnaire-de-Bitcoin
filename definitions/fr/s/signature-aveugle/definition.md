@@ -6,4 +6,4 @@ Les signatures aveugles de Chaum permettent donc de certifier l'authenticité d'
 
 Sur Bitcoin, on retrouve l'utilisation de ce protocole sur les systèmes de banques chaumiennes en surcouche (Cashu, Fedimint...), mais surtout dans les protocoles de coinjoins chaumiens, afin de s'assurer que le coordinateur ne soit pas en capacité de faire un lien entre un input et un output.
 
-> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](./C.md#chaumian-coinjoin)**.*
+> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](../c/chaumian-coinjoin/definition.md)**.*

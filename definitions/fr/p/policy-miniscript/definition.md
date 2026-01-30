@@ -28,4 +28,4 @@ OP_CHECKSEQUENCEVERIFY
 OP_ENDIF
 ```
 
-> ► *Pour plus d'informations, voir la définition de [**MINISCRIPT**](./M.md#miniscript).*
+> ► *Pour plus d'informations, voir la définition de [**MINISCRIPT**](../m/miniscript/definition.md).*
