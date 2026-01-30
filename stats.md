@@ -1,6 +1,6 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 27/01/2026 à 20:02*
+*Dernière mise à jour : 30/01/2026 à 23:35*
 
 ---
 
@@ -82,10 +82,10 @@
 - **informations** : 320 occurrences
 - **réseau** : 254 occurrences
 - **bitcoins** : 242 occurrences
+- **definition** : 240 occurrences
 - **protocole** : 238 occurrences
 - **script** : 236 occurrences
 - **chaque** : 229 occurrences
 - **blocs** : 224 occurrences
 - **voir** : 219 occurrences
 - **deux** : 209 occurrences
-- **clés** : 209 occurrences

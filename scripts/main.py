@@ -23,20 +23,20 @@ def cmd_build(dictionary):
     print("Build complet du Dictionnaire de Bitcoin")
     print("=" * 60)
 
-    # 1. Lint
-    print("\n--- Étape 1/4: Validation du markdown ---")
-    markdown_linter.lint(dictionary, fix=False)
+    # 1. Lint + fix automatique
+    print("\n--- Étape 1/5: Correction du markdown ---")
+    markdown_linter.lint(dictionary, fix=True)
 
     # 2. Index
-    print("\n--- Étape 2/4: Génération de l'index ---")
+    print("\n--- Étape 2/5: Génération de l'index ---")
     index_generator.generate(dictionary)
 
     # 3. Stats
-    print("\n--- Étape 3/4: Génération des statistiques ---")
+    print("\n--- Étape 3/5: Génération des statistiques ---")
     stats_generator.generate(dictionary)
 
     # 4. PDF
-    print("\n--- Étape 4/4: Génération du PDF ---")
+    print("\n--- Étape 4/5: Génération du PDF ---")
     pdf_generator.generate(dictionary)
 
     # 5. EPUB
@@ -52,28 +52,24 @@ def cmd_pdf(dictionary):
     """Génère le PDF."""
     print("\nGénération du PDF...")
     pdf_generator.generate(dictionary)
-    print("PDF généré!")
 
 
 def cmd_epub(dictionary):
     """Génère l'EPUB."""
     print("\nGénération de l'EPUB...")
     epub_generator.generate(dictionary)
-    print("EPUB généré!")
 
 
 def cmd_index(dictionary):
     """Met à jour l'index."""
     print("\nMise à jour de l'index...")
     index_generator.generate(dictionary)
-    print("INDEX.md mis à jour!")
 
 
 def cmd_stats(dictionary):
     """Génère les statistiques."""
     print("\nGénération des statistiques...")
     stats_generator.generate(dictionary)
-    print("stats.md généré!")
 
 
 def cmd_lint(dictionary):
@@ -86,7 +82,6 @@ def cmd_lint_fix(dictionary):
     """Corrige automatiquement le markdown."""
     print("\nCorrection automatique du markdown...")
     markdown_linter.lint(dictionary, fix=True)
-    print("Corrections appliquées!")
 
 
 def cmd_info(dictionary):
@@ -139,28 +134,29 @@ def main():
         "7": cmd_info,
     }
 
-    while True:
-        show_menu()
+    show_menu()
 
+    try:
+        choice = input("  Votre choix: ").strip()
+    except (KeyboardInterrupt, EOFError):
+        print("\n\nAu revoir!")
+        return
+
+    if choice == "8" or choice.lower() == "q":
+        print("\nAu revoir!")
+        return
+
+    if choice in commands:
         try:
-            choice = input("  Votre choix: ").strip()
-        except (KeyboardInterrupt, EOFError):
-            print("\n\nAu revoir!")
-            break
+            commands[choice](dictionary)
+        except Exception as e:
+            print(f"\n[ERREUR] {e}")
+            import traceback
+            traceback.print_exc()
+    else:
+        print("\n[ERREUR] Choix invalide. Veuillez entrer un chiffre entre 0 et 8.")
 
-        if choice == "8" or choice.lower() == "q":
-            print("\nAu revoir!")
-            break
-
-        if choice in commands:
-            try:
-                commands[choice](dictionary)
-            except Exception as e:
-                print(f"\n[ERREUR] {e}")
-        else:
-            print("\n[ERREUR] Choix invalide. Veuillez entrer un chiffre entre 0 et 8.")
-
-        input("\nAppuyez sur Entrée pour continuer...")
+    print("\nTerminé.")
 
 
 if __name__ == "__main__":

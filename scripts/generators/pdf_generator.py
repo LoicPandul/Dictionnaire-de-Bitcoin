@@ -97,6 +97,8 @@ def _build_markdown_for_pdf(dictionary: Dictionary) -> str:
         # Définitions de cette lettre
         for definition in dictionary.get_by_letter(letter):
             md = definition.to_markdown(format_type="full")
+            # Corriger les commandes mathématiques
+            md = _fix_math_commands(md)
             # Ajuster les chemins d'images
             md = _adjust_image_paths(md, definition)
             # Convertir les listes markdown en LaTeX
@@ -296,17 +298,30 @@ def _create_letter_page(letter: str) -> str:
 """
 
 
+def _fix_math_commands(content: str) -> str:
+    """Corrige les commandes mathématiques pour la compatibilité XeLaTeX/unicode-math."""
+    import re
+    # Remplacer \text{...} par \mathrm{...} dans les formules
+    content = re.sub(r'\\text\{([^}]+)\}', r'\\mathrm{\1}', content)
+    # Remplacer \mathbb{...} par \mathbf{...}
+    content = re.sub(r'\\mathbb\{([^}]+)\}', r'\\mathbf{\1}', content)
+    # Remplacer \mod par \bmod
+    content = re.sub(r'\\mod\b', r'\\bmod', content)
+    return content
+
+
 def _adjust_image_paths(content: str, definition) -> str:
     """Ajuste les chemins des images pour le PDF."""
     import re
-    # Construire le chemin absolu vers les assets
-    assets_path = definition.path / "assets"
+    # Construire le chemin absolu vers les assets (avec forward slashes pour LaTeX)
+    assets_path = str(definition.path / "assets").replace('\\', '/')
+
+    def replace_image(match):
+        filename = match.group(1)
+        return f'![]({assets_path}/{filename})'
+
     # Remplacer les chemins relatifs par des chemins absolus
-    content = re.sub(
-        r'!\[\]\(\./assets/([^)]+)\)',
-        f'![]({assets_path}/\\1)',
-        content
-    )
+    content = re.sub(r'!\[\]\(\./assets/([^)]+)\)', replace_image, content)
     return content
 
 

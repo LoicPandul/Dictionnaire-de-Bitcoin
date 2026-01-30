@@ -23,7 +23,7 @@ def lint(dictionary: Dictionary, fix: bool = False, verbose: bool = True) -> boo
     print("Vérification du markdown...")
 
     issues = []
-    fixed = 0
+    fixed_count = 0
 
     for definition in dictionary:
         definition_issues = _check_definition(definition)
@@ -32,8 +32,12 @@ def lint(dictionary: Dictionary, fix: bool = False, verbose: bool = True) -> boo
             issues.extend(definition_issues)
 
             if fix:
-                _fix_definition(definition, definition_issues)
-                fixed += len(definition_issues)
+                if _fix_definition(definition, definition_issues, dictionary):
+                    fixed_count += len(definition_issues)
+
+    if fix and fixed_count > 0:
+        print(f"[OK] {fixed_count} problème(s) corrigé(s)")
+        return True
 
     if issues and not fix:
         print(f"\n[WARNING] {len(issues)} problème(s) trouvé(s):")
@@ -43,10 +47,8 @@ def lint(dictionary: Dictionary, fix: bool = False, verbose: bool = True) -> boo
             print(f"  ... et {len(issues) - 20} autres")
         return False
 
-    if fix and fixed > 0:
-        print(f"[OK] {fixed} problème(s) corrigé(s)")
-
-    print(f"[OK] Markdown validé")
+    if not issues:
+        print(f"[OK] Markdown validé")
     return True
 
 
@@ -75,21 +77,20 @@ def _check_definition(definition) -> list:
                     'message': f"Citation sans ligne vide avant (ligne {i + 1})"
                 })
 
-    # Vérifier les liens cassés potentiels
-    broken_links = re.findall(r'\[([^\]]+)\]\(([^)]*)\)', content)
-    for text, url in broken_links:
-        if url.startswith('./') and '.md#' in url:
-            # Ancien format de lien interne
-            issues.append({
-                'slug': definition.slug,
-                'type': 'old_link_format',
-                'message': f"Ancien format de lien: [{text}]({url})"
-            })
+    # Vérifier les liens avec l'ancien format (./X.md#slug)
+    old_links = re.findall(r'\[([^\]]+)\]\(\./([A-Za-z])\.md#([a-z0-9\-éèàùâêîôûäëïöü]+)\)', content)
+    for text, letter, slug in old_links:
+        issues.append({
+            'slug': definition.slug,
+            'type': 'old_link_format',
+            'message': f"Ancien format de lien: [{text}](./{ letter}.md#{slug})",
+            'data': {'text': text, 'letter': letter.lower(), 'target_slug': slug}
+        })
 
     return issues
 
 
-def _fix_definition(definition, issues) -> bool:
+def _fix_definition(definition, issues, dictionary) -> bool:
     """Corrige les problèmes d'une définition."""
     content_path = definition.path / "definition.md"
     content = content_path.read_text(encoding='utf-8')
@@ -112,6 +113,21 @@ def _fix_definition(definition, issues) -> bool:
                         new_lines.append('')
                 new_lines.append(line)
             content = '\n'.join(new_lines)
+            modified = True
+
+        elif issue['type'] == 'old_link_format':
+            # Convertir l'ancien format de lien vers le nouveau format
+            data = issue['data']
+            text = data['text']
+            letter = data['letter']
+            target_slug = data['target_slug']
+
+            # Ancien format: [TEXT](./X.md#slug)
+            # Nouveau format: [TEXT](../x/slug/definition.md)
+            old_pattern = re.escape(f"[{text}](./") + r"[A-Za-z]\.md#" + re.escape(target_slug) + r"\)"
+            new_link = f"[{text}](../{letter}/{target_slug}/definition.md)"
+
+            content = re.sub(old_pattern, new_link, content, flags=re.IGNORECASE)
             modified = True
 
     if modified:

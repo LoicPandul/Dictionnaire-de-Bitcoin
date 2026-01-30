@@ -151,14 +151,15 @@ def _load_contributors() -> str:
 def _adjust_image_paths(content: str, definition) -> str:
     """Ajuste les chemins des images pour l'EPUB."""
     import re
-    # Construire le chemin absolu vers les assets
-    assets_path = definition.path / "assets"
+    # Construire le chemin absolu vers les assets (avec forward slashes)
+    assets_path = str(definition.path / "assets").replace('\\', '/')
+
+    def replace_image(match):
+        filename = match.group(1)
+        return f'![]({assets_path}/{filename})'
+
     # Remplacer les chemins relatifs par des chemins absolus
-    content = re.sub(
-        r'!\[\]\(\./assets/([^)]+)\)',
-        f'![]({assets_path}/\\1)',
-        content
-    )
+    content = re.sub(r'!\[\]\(\./assets/([^)]+)\)', replace_image, content)
     return content
 
 
