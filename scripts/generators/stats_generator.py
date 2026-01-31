@@ -26,7 +26,7 @@ def generate(dictionary: Dictionary, output_path: Path = None, update_readme: bo
     # En-tête
     lines.append("# Statistiques du Dictionnaire de Bitcoin")
     lines.append("")
-    lines.append(f"*Dernière mise à jour : {datetime.now().strftime('%d/%m/%Y à %H:%M')}*")
+    lines.append(f"*Dernière mise à jour : {datetime.now().strftime('%d/%m/%Y')}*")
     lines.append("")
     lines.append("---")
     lines.append("")
