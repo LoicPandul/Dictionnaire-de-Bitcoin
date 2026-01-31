@@ -39,8 +39,6 @@ Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*
 </p>
 &nbsp;
 
-Pour les liseuses, il y a une version en .epub que [vous pouvez télécharger à la racine](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire_de_Bitcoin.epub).
-
 Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[INDEX.md](./INDEX.md) qui liste toutes les entrées avec des liens directs.
@@ -130,21 +128,17 @@ Dictionnaire-de-Bitcoin/
 ├── templates/                      # Templates pour la génération
 │   ├── pdf/
 │   │   └── template.tex            # Template LaTeX pour le PDF
-│   ├── epub/
-│   │   ├── metadata.yaml
-│   │   └── style.css
 │   └── contributors.md
 │
 ├── scripts/                        # Scripts de génération
 │   ├── main.py                     # Point d'entrée principal
 │   ├── config.py                   # Configuration
 │   ├── core/                       # Classes principales
-│   ├── generators/                 # Générateurs PDF, EPUB, etc.
+│   ├── generators/                 # Générateurs PDF, Index, Stats
 │   └── validators/                 # Validateurs
 │
 ├── img/                            # Images du README
 ├── Dictionnaire de Bitcoin.pdf     # Version PDF
-├── Dictionnaire_de_Bitcoin.epub    # Version EPUB
 ├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
 ├── Termes en attente.md            # Termes à définir
@@ -155,7 +149,7 @@ Dictionnaire-de-Bitcoin/
 
 ## Scripts et génération
 
-Le projet utilise des scripts Python pour générer les différents formats (PDF, EPUB) et maintenir les fichiers d'index et de statistiques.
+Le projet utilise des scripts Python pour générer le PDF et maintenir les fichiers d'index et de statistiques.
 
 ### Prérequis
 
@@ -169,34 +163,23 @@ Le projet utilise des scripts Python pour générer les différents formats (PDF
 pip install -r scripts/requirements.txt
 ```
 
-### Commandes disponibles
+### Utilisation
+
+Exécutez le script principal et choisissez une option dans le menu :
 
 ```bash
-# Générer tous les formats (PDF, EPUB, INDEX, stats)
-python scripts/main.py build
-
-# Générer uniquement le PDF
-python scripts/main.py pdf
-
-# Générer uniquement l'EPUB
-python scripts/main.py epub
-
-# Mettre à jour INDEX.md
-python scripts/main.py index
-
-# Générer les statistiques
-python scripts/main.py stats
-
-# Valider le dictionnaire
-python scripts/main.py validate
-
-# Normaliser le markdown
-python scripts/main.py lint
-python scripts/main.py lint --fix  # avec corrections automatiques
-
-# Afficher les informations
-python scripts/main.py info
+python scripts/main.py
 ```
+
+Options disponibles :
+- **0** : Build complet (PDF, INDEX, stats)
+- **1** : Générer le PDF
+- **2** : Mettre à jour INDEX.md
+- **3** : Générer les statistiques
+- **4** : Vérifier le markdown
+- **5** : Corriger le markdown (auto-fix)
+- **6** : Afficher les informations
+- **7** : Quitter
 
 ## Licence et réutilisation
 

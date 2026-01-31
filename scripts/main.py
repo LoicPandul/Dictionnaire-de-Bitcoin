@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.core.dictionary import Dictionary
-from scripts.generators import pdf_generator, epub_generator, index_generator, stats_generator
+from scripts.generators import pdf_generator, index_generator, stats_generator
 from scripts.validators import markdown_linter
 from scripts.config import DEFINITIONS_DIR
 
@@ -24,24 +24,20 @@ def cmd_build(dictionary):
     print("=" * 60)
 
     # 1. Lint + fix automatique
-    print("\n--- Étape 1/5: Correction du markdown ---")
+    print("\n--- Étape 1/4: Correction du markdown ---")
     markdown_linter.lint(dictionary, fix=True)
 
     # 2. Index
-    print("\n--- Étape 2/5: Génération de l'index ---")
+    print("\n--- Étape 2/4: Génération de l'index ---")
     index_generator.generate(dictionary)
 
     # 3. Stats
-    print("\n--- Étape 3/5: Génération des statistiques ---")
+    print("\n--- Étape 3/4: Génération des statistiques ---")
     stats_generator.generate(dictionary)
 
     # 4. PDF
-    print("\n--- Étape 4/5: Génération du PDF ---")
+    print("\n--- Étape 4/4: Génération du PDF ---")
     pdf_generator.generate(dictionary)
-
-    # 5. EPUB
-    print("\n--- Étape 5/5: Génération de l'EPUB ---")
-    epub_generator.generate(dictionary)
 
     print("\n" + "=" * 60)
     print("Build terminé!")
@@ -52,12 +48,6 @@ def cmd_pdf(dictionary):
     """Génère le PDF."""
     print("\nGénération du PDF...")
     pdf_generator.generate(dictionary)
-
-
-def cmd_epub(dictionary):
-    """Génère l'EPUB."""
-    print("\nGénération de l'EPUB...")
-    epub_generator.generate(dictionary)
 
 
 def cmd_index(dictionary):
@@ -105,15 +95,14 @@ def show_menu():
     print("  DICTIONNAIRE DE BITCOIN - Menu principal")
     print("=" * 60)
     print()
-    print("  0. Build complet (PDF, EPUB, INDEX, stats)")
+    print("  0. Build complet (PDF, INDEX, stats)")
     print("  1. Générer le PDF")
-    print("  2. Générer l'EPUB")
-    print("  3. Mettre à jour INDEX.md")
-    print("  4. Générer les statistiques")
-    print("  5. Vérifier le markdown")
-    print("  6. Corriger le markdown (auto-fix)")
-    print("  7. Afficher les informations")
-    print("  8. Quitter")
+    print("  2. Mettre à jour INDEX.md")
+    print("  3. Générer les statistiques")
+    print("  4. Vérifier le markdown")
+    print("  5. Corriger le markdown (auto-fix)")
+    print("  6. Afficher les informations")
+    print("  7. Quitter")
     print()
 
 
@@ -126,12 +115,11 @@ def main():
     commands = {
         "0": cmd_build,
         "1": cmd_pdf,
-        "2": cmd_epub,
-        "3": cmd_index,
-        "4": cmd_stats,
-        "5": cmd_lint,
-        "6": cmd_lint_fix,
-        "7": cmd_info,
+        "2": cmd_index,
+        "3": cmd_stats,
+        "4": cmd_lint,
+        "5": cmd_lint_fix,
+        "6": cmd_info,
     }
 
     show_menu()
@@ -142,7 +130,7 @@ def main():
         print("\n\nAu revoir!")
         return
 
-    if choice == "8" or choice.lower() == "q":
+    if choice == "7" or choice.lower() == "q":
         print("\nAu revoir!")
         return
 
@@ -154,7 +142,7 @@ def main():
             import traceback
             traceback.print_exc()
     else:
-        print("\n[ERREUR] Choix invalide. Veuillez entrer un chiffre entre 0 et 8.")
+        print("\n[ERREUR] Choix invalide. Veuillez entrer un chiffre entre 0 et 7.")
 
     print("\nTerminé.")
 

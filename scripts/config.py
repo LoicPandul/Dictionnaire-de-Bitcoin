@@ -13,7 +13,6 @@ SCRIPTS_DIR = BASE_DIR / "scripts"
 
 # Fichiers de sortie
 OUTPUT_PDF = BASE_DIR / "Dictionnaire de Bitcoin.pdf"
-OUTPUT_EPUB = BASE_DIR / "Dictionnaire_de_Bitcoin.epub"
 OUTPUT_INDEX = BASE_DIR / "INDEX.md"
 OUTPUT_STATS = BASE_DIR / "stats.md"
 README_FILE = BASE_DIR / "README.md"
@@ -21,8 +20,6 @@ README_FILE = BASE_DIR / "README.md"
 # Templates
 PDF_TEMPLATE = TEMPLATES_DIR / "pdf" / "template.tex"
 PDF_METADATA = TEMPLATES_DIR / "pdf" / "metadata.yaml"
-EPUB_METADATA = TEMPLATES_DIR / "epub" / "metadata.yaml"
-EPUB_STYLE = TEMPLATES_DIR / "epub" / "style.css"
 CONTRIBUTORS_FILE = TEMPLATES_DIR / "contributors.md"
 
 # Images
@@ -44,6 +41,3 @@ SUPPORTED_LANGS = ["fr"]
 PDF_ENGINE = "xelatex"
 PDF_FONT = "Arial"
 PDF_MARGIN = "1.2in"
-
-# Configuration EPUB
-EPUB_LANG = "fr"
