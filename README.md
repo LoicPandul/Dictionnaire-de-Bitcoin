@@ -27,7 +27,7 @@ Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son en
 
 Je gagne une petite marge sur chaque exemplaire physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
 
-Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les réseaux sociaux ou me faire un don LN sur pandul@sats.rs. Merci ! :)
+Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les réseaux sociaux ou me faire un don LN sur sats@pandul.fr. Merci ! :)
 
 ## Lire le *Dictionnaire de Bitcoin*
 
