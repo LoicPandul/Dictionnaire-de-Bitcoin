@@ -303,21 +303,12 @@ def _generate_preamble() -> str:
 % Citations
 \usepackage{csquotes}
 
-% Commande pour la cartouche noire de vedette
-\newcommand{\vedette}[1]{%
-    \noindent\colorbox{black}{%
-        \parbox[c]{\dimexpr\linewidth-2\fboxsep}{%
-            \centering\color{white}\fontsize{10}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1%
-        }%
-    }%
-}
-
-% Commande pour vedette ajustée à la largeur du texte
-\newsavebox{\vedettebox}
+% Commande pour vedette ajustée à la largeur du texte (cartouche noire)
 \newcommand{\vedettefit}[1]{%
-    \sbox{\vedettebox}{\fontsize{10}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
-    \noindent\colorbox{black}{%
-        \hspace{0.4em}\color{white}\usebox{\vedettebox}\hspace{0.4em}%
+    \noindent\fcolorbox{black}{black}{%
+        \hspace{0.3em}%
+        {\color{white}\fontsize{10}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
+        \hspace{0.3em}%
     }%
 }
 
