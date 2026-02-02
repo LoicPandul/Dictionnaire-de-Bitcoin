@@ -8,16 +8,42 @@ import os
 import subprocess
 import tempfile
 import re
+import yaml
 from pathlib import Path
 from datetime import datetime
-import locale
 
 from ..core.dictionary import Dictionary
-from ..config import (
-    BASE_DIR, TEMPLATES_DIR, OUTPUT_PDF, DEFINITIONS_DIR,
-    PDF_ENGINE, AUTHOR, PROJECT_NAME, PROJECT_SUBTITLE,
-    LICENSE, GITHUB_URL
-)
+from ..config import BASE_DIR, TEMPLATES_DIR, OUTPUT_PDF, DEFINITIONS_DIR
+
+
+# Noms des mois en français (pour éviter les problèmes d'encodage avec locale)
+MOIS_FR = {
+    1: "janvier", 2: "février", 3: "mars", 4: "avril",
+    5: "mai", 6: "juin", 7: "juillet", 8: "août",
+    9: "septembre", 10: "octobre", 11: "novembre", 12: "décembre"
+}
+
+
+def _load_legal_info() -> dict:
+    """Charge les informations légales depuis le fichier YAML."""
+    legal_path = TEMPLATES_DIR / "legal.yaml"
+    if legal_path.exists():
+        with open(legal_path, 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f)
+    # Valeurs par défaut si le fichier n'existe pas
+    return {
+        'title': "Dictionnaire de Bitcoin",
+        'subtitle': "Le guide encyclopédique de Bitcoin et des cryptomonnaies",
+        'author': "Loïc Morel",
+        'license': "CC BY-NC-SA 4.0",
+        'license_url': "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        'github_url': "https://github.com/LoicPandul/Dictionnaire-de-Bitcoin",
+        'website': "https://pandul.fr/",
+        'github_profile': "https://github.com/LoicPandul/",
+        'lightning_address': "sats@pandul.fr",
+        'email': "loic@pandul.fr",
+        'isbn': ""
+    }
 
 
 def generate(dictionary: Dictionary, output_path: Path = None):
@@ -27,8 +53,11 @@ def generate(dictionary: Dictionary, output_path: Path = None):
 
     print(f"Génération du PDF: {output_path}")
 
+    # Charger les informations légales
+    legal = _load_legal_info()
+
     # 1. Générer le contenu LaTeX complet
-    latex_content = _build_latex_content(dictionary)
+    latex_content = _build_latex_content(dictionary, legal)
 
     # 2. Écrire le fichier temporaire
     with tempfile.NamedTemporaryFile(mode='w', suffix='.tex', delete=False, encoding='utf-8') as f:
@@ -36,7 +65,7 @@ def generate(dictionary: Dictionary, output_path: Path = None):
         temp_tex = f.name
 
     try:
-        # 3. Compiler avec XeLaTeX (2 passes pour les références)
+        # 3. Compiler avec XeLaTeX (2 passes pour les références de pages)
         output_dir = output_path.parent
 
         for pass_num in range(2):
@@ -51,7 +80,7 @@ def generate(dictionary: Dictionary, output_path: Path = None):
 
             result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(output_dir))
 
-        # Vérifier si le PDF a été généré (même si returncode != 0 à cause de warnings)
+        # Vérifier si le PDF a été généré
         temp_pdf = output_dir / "dictionnaire_temp.pdf"
 
         if not temp_pdf.exists():
@@ -80,7 +109,7 @@ def generate(dictionary: Dictionary, output_path: Path = None):
             os.unlink(temp_tex)
 
 
-def _build_latex_content(dictionary: Dictionary) -> str:
+def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     """Construit le document LaTeX complet."""
     sections = []
 
@@ -94,17 +123,17 @@ def _build_latex_content(dictionary: Dictionary) -> str:
     sections.append("\\frontmatter")
     sections.append("\\pagestyle{frontmatter}")
 
-    # 1. Faux-titre (page de droite)
-    sections.append(_generate_half_title())
+    # 1. Faux-titre
+    sections.append(_generate_half_title(legal))
 
     # 2. Verso blanc
     sections.append("\\cleardoublepage")
 
-    # 3. Page de titre (page de droite)
-    sections.append(_generate_title_page())
+    # 3. Page de titre
+    sections.append(_generate_title_page(legal))
 
-    # 4. Mentions légales (page de gauche)
-    sections.append(_generate_copyright_page())
+    # 4. Mentions légales
+    sections.append(_generate_copyright_page(legal))
 
     # 5. Page blanche
     sections.append("\\clearpage\\thispagestyle{frontmatter}\\null\\clearpage")
@@ -128,27 +157,16 @@ def _build_latex_content(dictionary: Dictionary) -> str:
 
     # Contenu par lettre
     for letter in dictionary.letters():
-        # Page de séparation de lettre
         sections.append(_create_letter_page(letter))
-
-        # Définitions de cette lettre
         for definition in dictionary.get_by_letter(letter):
             sections.append(_format_definition(definition))
 
     # === PAGES FINALES ===
     sections.append("\\backmatter")
     sections.append("\\pagestyle{frontmatter}")
-
-    # Page blanche si nécessaire pour finir sur page paire
     sections.append("\\cleardoublepage")
-
-    # Rappel mentions légales (page de gauche)
-    sections.append(_generate_final_page())
-
-    # Page blanche finale
+    sections.append(_generate_final_page(legal))
     sections.append("\\clearpage\\thispagestyle{frontmatter}\\null")
-
-    # Fin du document
     sections.append("\\end{document}")
 
     return "\n\n".join(sections)
@@ -205,15 +223,15 @@ def _generate_preamble() -> str:
 \usepackage{xcolor}
 \definecolor{customgray}{RGB}{246, 248, 250}
 \definecolor{linkcolor}{RGB}{0, 0, 0}
-\definecolor{darkgray}{RGB}{80, 80, 80}
 
-% Liens
+% Liens (même police que le texte)
 \usepackage[
     colorlinks=true,
     linkcolor=linkcolor,
     urlcolor=linkcolor,
     pdfborder={0 0 0}
 ]{hyperref}
+\urlstyle{same}
 
 % Images et TikZ pour les drapeaux
 \usepackage{graphicx}
@@ -312,6 +330,15 @@ def _generate_preamble() -> str:
     }%
 }
 
+% Commande pour cartouche lettre dans TDM (plus petit)
+\newcommand{\tocletterbox}[1]{%
+    \fcolorbox{black}{black}{%
+        \hspace{0.2em}%
+        {\color{white}\fontsize{11}{13}\selectfont\bfseries #1}%
+        \hspace{0.2em}%
+    }%
+}
+
 % Drapeaux en nuances de gris
 \newcommand{\flagGB}{%
     \begin{tikzpicture}[baseline=-0.3ex, scale=0.12]
@@ -330,51 +357,66 @@ def _generate_preamble() -> str:
         \fill[gray!60] (2,0) rectangle (3,2);
     \end{tikzpicture}%
 }
+
+% Pour éviter les orphelins de lettres dans TDM
+\usepackage{needspace}
 """
 
 
-def _generate_half_title() -> str:
+def _generate_half_title(legal: dict) -> str:
     """Génère la page de faux-titre."""
+    title = legal.get('title', 'Dictionnaire de Bitcoin')
     return rf"""
 \clearpage
 \thispagestyle{{frontmatter}}
 \vspace*{{\fill}}
 \begin{{center}}
-{{\fontsize{{18}}{{22}}\selectfont\bfseries {PROJECT_NAME}}}
+{{\fontsize{{18}}{{22}}\selectfont\bfseries {title}}}
 \end{{center}}
 \vspace*{{\fill}}
 \clearpage
 """
 
 
-def _generate_title_page() -> str:
+def _generate_title_page(legal: dict) -> str:
     """Génère la page de titre."""
+    title = legal.get('title', 'Dictionnaire de Bitcoin')
+    subtitle = legal.get('subtitle', '')
+    author = legal.get('author', '')
     return rf"""
 \clearpage
 \thispagestyle{{frontmatter}}
 \vspace*{{\fill}}
 \begin{{center}}
-{{\fontsize{{22}}{{26}}\selectfont\bfseries {PROJECT_NAME}}}\\[1cm]
-{{\fontsize{{11}}{{14}}\selectfont {PROJECT_SUBTITLE.upper()}}}\\[3cm]
-{{\fontsize{{12}}{{16}}\selectfont\itshape {AUTHOR}}}
+{{\fontsize{{22}}{{26}}\selectfont\bfseries {title}}}\\[1cm]
+{{\fontsize{{11}}{{14}}\selectfont {subtitle.upper()}}}\\[3cm]
+{{\fontsize{{12}}{{16}}\selectfont\itshape {author}}}
 \end{{center}}
 \vspace*{{\fill}}
 \clearpage
 """
 
 
-def _generate_copyright_page() -> str:
+def _generate_copyright_page(legal: dict) -> str:
     """Génère la page de mentions légales."""
-    try:
-        locale.setlocale(locale.LC_TIME, 'fr_FR.UTF-8')
-    except:
-        try:
-            locale.setlocale(locale.LC_TIME, 'fr_FR')
-        except:
-            pass
+    now = datetime.now()
+    date_str = f"{now.day:02d} {MOIS_FR[now.month]} {now.year}"
+    year = now.year
 
-    date_str = datetime.now().strftime('%d %B %Y')
-    year = datetime.now().year
+    title = legal.get('title', 'Dictionnaire de Bitcoin')
+    subtitle = legal.get('subtitle', '')
+    author = legal.get('author', '')
+    license_name = legal.get('license', 'CC BY-NC-SA 4.0')
+    license_url = legal.get('license_url', '')
+    github_url = legal.get('github_url', '')
+    website = legal.get('website', '')
+    github_profile = legal.get('github_profile', '')
+    lightning = legal.get('lightning_address', '')
+    email = legal.get('email', '')
+    isbn = legal.get('isbn', '')
+
+    # Section ISBN (vide si non renseigné)
+    isbn_line = rf"\noindent ISBN: {isbn}" if isbn else ""
 
     return rf"""
 \clearpage
@@ -382,24 +424,25 @@ def _generate_copyright_page() -> str:
 \vspace*{{\fill}}
 
 \small
-\noindent\textbf{{© {year} {AUTHOR}}}\\[0.4em]
-\noindent\textit{{{PROJECT_NAME} : {PROJECT_SUBTITLE}}}\\[0.8em]
-\noindent Version du {date_str}\\[0.4em]
-\noindent\url{{{GITHUB_URL}}}\\[0.8em]
-\noindent Cet ouvrage est sous licence {LICENSE}\\[0.4em]
-\noindent\url{{https://creativecommons.org/licenses/by-nc-sa/4.0/}}\\[1em]
-\noindent Lightning: pandul@sats.rs\\[0.2em]
-\noindent Email: loic@pandul.fr\\[0.2em]
-\noindent Site web: https://pandul.fr/\\[0.2em]
-\noindent GitHub: https://github.com/LoicPandul/\\[1.5em]
-\noindent ISBN: \underline{{\hspace{{5cm}}}}
+\setstretch{{1.0}}
+\noindent\textbf{{© {year} {author}}}\\[0.3em]
+\noindent\textbf{{\textit{{{title}: {subtitle}}}}}\\[0.5em]
+\noindent Version du {date_str}\\[0.3em]
+\noindent\href{{{github_url}}}{{{github_url}}}\\[0.5em]
+\noindent Cet ouvrage est sous licence {license_name}\\[0.2em]
+\noindent\href{{{license_url}}}{{{license_url}}}\\[0.5em]
+\noindent Lightning: {lightning}\\[0.2em]
+\noindent Email: {email}\\[0.2em]
+\noindent Site web: \href{{{website}}}{{{website}}}\\[0.2em]
+\noindent GitHub: \href{{{github_profile}}}{{{github_profile}}}\\[0.8em]
+{isbn_line}
 
 \clearpage
 """
 
 
 def _generate_toc(dictionary: Dictionary) -> str:
-    """Génère la table des matières sur deux colonnes avec liens cliquables."""
+    """Génère la table des matières avec numéros de page et cartouches."""
     toc_parts = []
 
     toc_parts.append(r"""
@@ -413,20 +456,33 @@ def _generate_toc(dictionary: Dictionary) -> str:
 
     for letter in dictionary.letters():
         definitions = dictionary.get_by_letter(letter)
+        count = len(definitions)
 
-        toc_parts.append(rf"\noindent{{\bfseries {letter}}}")
-        toc_parts.append(r"\begin{multicols}{2}")
+        # Empêcher les lettres orphelines (au moins 3 lignes avec la lettre)
+        # needspace demande l'espace pour la lettre + quelques définitions
+        toc_parts.append(r"\needspace{4\baselineskip}")
+
+        # Lettre avec cartouche noire
+        toc_parts.append(rf"\noindent\tocletterbox{{{letter}}}")
+        toc_parts.append(r"\vspace{0.2em}")
+
+        # Calcul pour équilibrer les colonnes
+        # multicols avec balance équilibre automatiquement
+        toc_parts.append(r"\begin{multicols}{2}[\setlength{\columnseprule}{0pt}]")
+        toc_parts.append(r"\raggedcolumns")  # Permet un meilleur équilibrage
         toc_parts.append(r"\scriptsize")
 
         for defn in definitions:
-            # Créer un slug pour l'ancre
             slug = _make_slug(defn.title)
             safe_title = _escape_latex(defn.title)
-            # Lien cliquable vers la définition
-            toc_parts.append(rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}\\")
+            # Lien cliquable avec numéro de page aligné à droite
+            toc_parts.append(
+                rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}"
+                rf"\dotfill\pageref*{{def:{slug}}}\\"
+            )
 
         toc_parts.append(r"\end{multicols}")
-        toc_parts.append(r"\vspace{0.3em}")
+        toc_parts.append(r"\vspace{0.4em}")
 
     return "\n".join(toc_parts)
 
@@ -499,10 +555,12 @@ def _format_definition(definition) -> str:
     """Formate une définition pour le PDF."""
     parts = []
 
-    # Créer l'ancre pour le lien depuis la TDM
     slug = _make_slug(definition.title)
     title = definition.title
     safe_title = _escape_latex(title)
+
+    # Label pour référence de page (utilisé dans TDM)
+    parts.append(rf"\label{{def:{slug}}}")
 
     # Marquage pour les en-têtes
     parts.append(rf"\markboth{{{safe_title}}}{{{safe_title}}}")
@@ -515,11 +573,10 @@ def _format_definition(definition) -> str:
     parts.append(r"\vspace{0.3em}")
     parts.append("")
 
-    # Ligne de métadonnées : Catégorie · Drapeau Traduction
+    # Ligne de métadonnées
     metadata_parts = []
 
     if definition.category:
-        # Catégorie avec majuscule au début, minuscules ensuite
         cat = definition.category
         cat_formatted = cat[0].upper() + cat[1:].lower() if cat else ""
         safe_cat = _escape_latex(cat_formatted)
@@ -546,15 +603,21 @@ def _format_definition(definition) -> str:
     content = _markdown_to_latex(content)
     parts.append(content)
 
-    # Espacement entre définitions
     parts.append(r"\vspace{0.8em}")
 
     return "\n".join(parts)
 
 
-def _generate_final_page() -> str:
-    """Génère la page finale avec rappel des mentions."""
+def _generate_final_page(legal: dict) -> str:
+    """Génère la page finale."""
     year = datetime.now().year
+    title = legal.get('title', '')
+    subtitle = legal.get('subtitle', '')
+    author = legal.get('author', '')
+    license_name = legal.get('license', '')
+    github_url = legal.get('github_url', '')
+    website = legal.get('website', '')
+    lightning = legal.get('lightning_address', '')
 
     return rf"""
 \clearpage
@@ -563,13 +626,14 @@ def _generate_final_page() -> str:
 
 \begin{{center}}
 \small
-{{\bfseries {PROJECT_NAME}}}\\[0.4em]
-{{\itshape {PROJECT_SUBTITLE}}}\\[1.5em]
-© {year} {AUTHOR}\\[0.8em]
-\url{{{GITHUB_URL}}}\\[0.8em]
-Licence {LICENSE}\\[1.5em]
-Lightning: pandul@sats.rs\\[0.2em]
-Site web: https://pandul.fr/
+\setstretch{{1.0}}
+{{\bfseries {title}}}\\[0.3em]
+{{\itshape {subtitle}}}\\[1em]
+© {year} {author}\\[0.5em]
+\href{{{github_url}}}{{{github_url}}}\\[0.5em]
+Licence {license_name}\\[1em]
+Lightning: {lightning}\\[0.2em]
+Site web: \href{{{website}}}{{{website}}}
 \end{{center}}
 
 \vspace*{{\fill}}
@@ -580,10 +644,8 @@ Site web: https://pandul.fr/
 def _make_slug(title: str) -> str:
     """Crée un slug pour les ancres hypertexte."""
     import unicodedata
-    # Normaliser et retirer les accents
     slug = unicodedata.normalize('NFKD', title)
     slug = slug.encode('ASCII', 'ignore').decode('ASCII')
-    # Remplacer les espaces et caractères spéciaux
     slug = re.sub(r'[^a-zA-Z0-9]', '-', slug.lower())
     slug = re.sub(r'-+', '-', slug).strip('-')
     return slug
@@ -591,22 +653,18 @@ def _make_slug(title: str) -> str:
 
 def _clean_content(content: str) -> str:
     """Nettoie le contenu avant conversion."""
-    # Supprimer les &nbsp; et les remplacer par des espaces normaux
     content = content.replace('&nbsp;', ' ')
     content = content.replace('nbsp;', ' ')
-    # Remplacer les espaces insécables Unicode par des espaces normaux
-    content = content.replace('\u00A0', ' ')  # NO-BREAK SPACE
-    content = content.replace('\u202F', ' ')  # NARROW NO-BREAK SPACE
-    # Corriger les URLs avec espaces (typographie française)
-    # Pattern plus robuste pour capturer tous types d'espaces
+    content = content.replace('\u00A0', ' ')
+    content = content.replace('\u202F', ' ')
+    # Corriger les URLs avec espaces
     content = re.sub(r'(https?)[\s\u00A0\u202F]*:[\s\u00A0\u202F]*//', r'\1://', content)
-    # Supprimer les espaces multiples
     content = re.sub(r'[ \t]+', ' ', content)
     return content
 
 
 def _fix_math_commands(content: str) -> str:
-    """Corrige les commandes mathématiques pour la compatibilité."""
+    """Corrige les commandes mathématiques."""
     content = re.sub(r'\\text\{([^}]+)\}', r'\\mathrm{\1}', content)
     content = re.sub(r'\\mathbb\{([^}]+)\}', r'\\mathbf{\1}', content)
     content = re.sub(r'\\mod\b', r'\\bmod', content)
@@ -614,7 +672,7 @@ def _fix_math_commands(content: str) -> str:
 
 
 def _adjust_image_paths(content: str, definition) -> str:
-    """Ajuste les chemins des images pour le PDF."""
+    """Ajuste les chemins des images."""
     assets_path = str(definition.path / "assets").replace('\\', '/')
 
     def replace_image(match):
@@ -645,9 +703,9 @@ def _escape_latex(text: str) -> str:
 
 
 def _markdown_to_latex(content: str) -> str:
-    """Convertit le markdown basique en LaTeX."""
+    """Convertit le markdown en LaTeX."""
 
-    # 1. Protéger les blocs de code (fenced)
+    # 1. Protéger les blocs de code
     code_blocks = []
     def save_code_block(match):
         code_blocks.append(match.group(0))
@@ -680,35 +738,32 @@ def _markdown_to_latex(content: str) -> str:
     content = re.sub(r'\$\$[^$]+\$\$', save_math, content)
     content = re.sub(r'\$[^$]+\$', save_math, content)
 
-    # 4. Traiter l'italique avec underscore AVANT d'échapper les underscores
-    # _texte_ -> \textit{texte}
+    # 4. Italique avec underscore
     content = re.sub(r'(?<![\\a-zA-Z0-9])_([^_\n]+)_(?![a-zA-Z0-9])', r'\\textit{\1}', content)
 
-    # 5. Gras (double astérisque)
+    # 5. Gras
     content = re.sub(r'\*\*([^*]+)\*\*', r'\\textbf{\1}', content)
 
-    # 6. Italique (simple astérisque)
+    # 6. Italique avec astérisque
     content = re.sub(r'(?<![\\*])\*([^*\n]+)\*', r'\\textit{\1}', content)
 
-    # 7. Maintenant échapper les caractères spéciaux restants
+    # 7. Échapper les caractères spéciaux restants
     content = content.replace('&', r'\&')
     content = content.replace('%', r'\%')
     content = content.replace('#', r'\#')
-    # Underscore - échapper tous ceux qui ne sont pas déjà échappés
     content = re.sub(r'(?<!\\)_', r'\\_', content)
 
     # 8. Titres
     content = re.sub(r'^### (.+)$', r'\\subsubsection*{\1}', content, flags=re.MULTILINE)
     content = re.sub(r'^## (.+)$', r'\\subsection*{\1}', content, flags=re.MULTILINE)
 
-    # 9. Listes - détection plus robuste
+    # 9. Listes
     lines = content.split('\n')
     new_lines = []
     in_list = False
 
     for line in lines:
         stripped = line.strip()
-        # Détecter les éléments de liste (*, -, ou numérotés)
         is_list_item = (stripped.startswith('* ') or
                         stripped.startswith('- ') or
                         re.match(r'^\d+\.\s', stripped))
@@ -717,18 +772,15 @@ def _markdown_to_latex(content: str) -> str:
             if not in_list:
                 new_lines.append(r'\begin{itemize}')
                 in_list = True
-            # Extraire le contenu après le marqueur
             if stripped.startswith('* ') or stripped.startswith('- '):
                 item = stripped[2:]
             else:
                 item = re.sub(r'^\d+\.\s*', '', stripped)
             new_lines.append(rf'  \item {item}')
         else:
-            if in_list and stripped:  # Fermer la liste si ligne non vide
+            if in_list and stripped:
                 new_lines.append(r'\end{itemize}')
                 in_list = False
-            elif in_list and not stripped:  # Ligne vide dans une liste
-                pass  # Garder la liste ouverte
             new_lines.append(line)
 
     if in_list:
@@ -736,7 +788,7 @@ def _markdown_to_latex(content: str) -> str:
 
     content = '\n'.join(new_lines)
 
-    # 10. Blocs de citation
+    # 10. Citations
     content = re.sub(
         r'^> (.+)$',
         r'\\begin{quote}\\small\1\\end{quote}',
@@ -747,7 +799,7 @@ def _markdown_to_latex(content: str) -> str:
     # 11. Liens (retirer le lien, garder le texte)
     content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1', content)
 
-    # 12. Restaurer les formules mathématiques
+    # 12. Restaurer les formules
     for i, math in enumerate(math_blocks):
         content = content.replace(f"<<<MATH{i}>>>", math)
 
@@ -755,7 +807,7 @@ def _markdown_to_latex(content: str) -> str:
     for i, code in enumerate(inline_codes):
         content = content.replace(f"<<<INLINECODE{i}>>>", code)
 
-    # 14. Restaurer et convertir les blocs de code
+    # 14. Restaurer les blocs de code
     for i, block in enumerate(code_blocks):
         match = re.match(r'```(\w*)\n(.*?)```', block, flags=re.DOTALL)
         if match:
