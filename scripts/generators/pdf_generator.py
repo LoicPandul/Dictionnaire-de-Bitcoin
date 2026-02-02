@@ -463,14 +463,12 @@ def _generate_toc(dictionary: Dictionary) -> str:
         count = len(definitions)
 
         # Calcul de l'espace nécessaire pour éviter les orphelins
-        # On veut au moins la lettre + 5 lignes de définitions (en 2 colonnes = ~3 défs)
-        # Mais si la lettre a moins de 6 définitions, on veut tout garder ensemble
+        # On veut au moins la lettre + quelques lignes de définitions
         if count <= 6:
             # Petite lettre : garder tout ensemble
-            # Hauteur estimée : lettre (1.5 lignes) + ceil(count/2) lignes de défs
             lines_needed = 2 + ((count + 1) // 2)
         else:
-            # Grande lettre : juste s'assurer qu'on a la lettre + quelques défs
+            # Grande lettre : s'assurer qu'on a la lettre + ~3 lignes de défs
             lines_needed = 5
 
         toc_parts.append(rf"\needspace{{{lines_needed}\baselineskip}}")
@@ -479,30 +477,23 @@ def _generate_toc(dictionary: Dictionary) -> str:
         toc_parts.append(rf"\noindent\tocletterbox{{{letter}}}")
         toc_parts.append(r"\vspace{0.15em}")
 
-        # Équilibrage des colonnes
-        if count % 2 == 0:
-            left_count = count // 2
-        else:
-            left_count = (count // 2) + 1
-
-        # Utiliser multicols avec columnbreak manuel pour l'équilibrage
-        # multicols permet les sauts de page contrairement aux minipages
+        # Utiliser multicols - laisser LaTeX gérer l'équilibrage naturellement
+        # (pas de columnbreak manuel car ça casse la répartition sur plusieurs pages)
         toc_parts.append(r"\begin{multicols}{2}")
         toc_parts.append(r"\scriptsize\raggedright")
+        toc_parts.append(r"\setlength{\parskip}{0.08em}")  # Légère interligne
 
-        for i, defn in enumerate(definitions):
+        for defn in definitions:
             slug = _make_slug(defn.title)
             safe_title = _escape_latex(defn.title)
             toc_parts.append(
                 rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}"
                 rf"\dotfill\pageref*{{def:{slug}}}\par"
             )
-            # Insérer le saut de colonne après left_count définitions
-            if i == left_count - 1 and i < count - 1:
-                toc_parts.append(r"\columnbreak")
 
         toc_parts.append(r"\end{multicols}")
-        toc_parts.append(r"\vspace{0.2em}")
+        # Plus d'espace entre les lettres
+        toc_parts.append(r"\vspace{0.5em}")
 
     return "\n".join(toc_parts)
 
