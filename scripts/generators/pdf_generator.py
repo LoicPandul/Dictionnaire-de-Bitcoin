@@ -455,34 +455,53 @@ def _generate_toc(dictionary: Dictionary) -> str:
 """)
 
     for letter in dictionary.letters():
-        definitions = dictionary.get_by_letter(letter)
+        definitions = list(dictionary.get_by_letter(letter))
         count = len(definitions)
 
-        # Empêcher les lettres orphelines (au moins 3 lignes avec la lettre)
-        # needspace demande l'espace pour la lettre + quelques définitions
+        # Empêcher les lettres orphelines
         toc_parts.append(r"\needspace{4\baselineskip}")
 
         # Lettre avec cartouche noire
         toc_parts.append(rf"\noindent\tocletterbox{{{letter}}}")
         toc_parts.append(r"\vspace{0.2em}")
+        toc_parts.append("")
 
-        # Calcul pour équilibrer les colonnes
-        # multicols avec balance équilibre automatiquement
-        toc_parts.append(r"\begin{multicols}{2}[\setlength{\columnseprule}{0pt}]")
-        toc_parts.append(r"\raggedcolumns")  # Permet un meilleur équilibrage
+        # Équilibrage manuel des colonnes :
+        # - Nombre pair : même nombre à gauche et à droite
+        # - Nombre impair : 1 de plus à gauche
+        if count % 2 == 0:
+            left_count = count // 2
+        else:
+            left_count = (count // 2) + 1
+
+        left_defs = definitions[:left_count]
+        right_defs = definitions[left_count:]
+
+        # Utiliser des minipages pour un contrôle précis
+        toc_parts.append(r"\noindent\begin{minipage}[t]{0.48\linewidth}")
         toc_parts.append(r"\scriptsize")
-
-        for defn in definitions:
+        for defn in left_defs:
             slug = _make_slug(defn.title)
             safe_title = _escape_latex(defn.title)
-            # Lien cliquable avec numéro de page aligné à droite
             toc_parts.append(
                 rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}"
                 rf"\dotfill\pageref*{{def:{slug}}}\\"
             )
+        toc_parts.append(r"\end{minipage}\hfill")
 
-        toc_parts.append(r"\end{multicols}")
+        toc_parts.append(r"\begin{minipage}[t]{0.48\linewidth}")
+        toc_parts.append(r"\scriptsize")
+        for defn in right_defs:
+            slug = _make_slug(defn.title)
+            safe_title = _escape_latex(defn.title)
+            toc_parts.append(
+                rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}"
+                rf"\dotfill\pageref*{{def:{slug}}}\\"
+            )
+        toc_parts.append(r"\end{minipage}")
+
         toc_parts.append(r"\vspace{0.4em}")
+        toc_parts.append("")
 
     return "\n".join(toc_parts)
 
