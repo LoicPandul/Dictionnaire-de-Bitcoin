@@ -246,6 +246,10 @@ def _generate_preamble() -> str:
 \usepackage{multicol}
 \arrayrulecolor{white}
 
+% Configuration multicol pour la TDM
+\setlength{\multicolsep}{0pt}
+\setlength{\columnsep}{0.5em}
+
 % Code
 \usepackage{listings}
 \usepackage{tcolorbox}
@@ -451,57 +455,54 @@ def _generate_toc(dictionary: Dictionary) -> str:
 \begin{center}
 {\fontsize{14}{18}\selectfont\bfseries TABLE DES MATIÈRES}
 \end{center}
-\vspace{0.8cm}
+\vspace{0.5cm}
 """)
 
     for letter in dictionary.letters():
         definitions = list(dictionary.get_by_letter(letter))
         count = len(definitions)
 
-        # Empêcher les lettres orphelines
-        toc_parts.append(r"\needspace{4\baselineskip}")
+        # Calcul de l'espace nécessaire pour éviter les orphelins
+        # On veut au moins la lettre + 5 lignes de définitions (en 2 colonnes = ~3 défs)
+        # Mais si la lettre a moins de 6 définitions, on veut tout garder ensemble
+        if count <= 6:
+            # Petite lettre : garder tout ensemble
+            # Hauteur estimée : lettre (1.5 lignes) + ceil(count/2) lignes de défs
+            lines_needed = 2 + ((count + 1) // 2)
+        else:
+            # Grande lettre : juste s'assurer qu'on a la lettre + quelques défs
+            lines_needed = 5
+
+        toc_parts.append(rf"\needspace{{{lines_needed}\baselineskip}}")
 
         # Lettre avec cartouche noire
         toc_parts.append(rf"\noindent\tocletterbox{{{letter}}}")
-        toc_parts.append(r"\vspace{0.2em}")
-        toc_parts.append("")
+        toc_parts.append(r"\vspace{0.15em}")
 
-        # Équilibrage manuel des colonnes :
-        # - Nombre pair : même nombre à gauche et à droite
-        # - Nombre impair : 1 de plus à gauche
+        # Équilibrage des colonnes
         if count % 2 == 0:
             left_count = count // 2
         else:
             left_count = (count // 2) + 1
 
-        left_defs = definitions[:left_count]
-        right_defs = definitions[left_count:]
+        # Utiliser multicols avec columnbreak manuel pour l'équilibrage
+        # multicols permet les sauts de page contrairement aux minipages
+        toc_parts.append(r"\begin{multicols}{2}")
+        toc_parts.append(r"\scriptsize\raggedright")
 
-        # Utiliser des minipages pour un contrôle précis
-        toc_parts.append(r"\noindent\begin{minipage}[t]{0.48\linewidth}")
-        toc_parts.append(r"\scriptsize")
-        for defn in left_defs:
+        for i, defn in enumerate(definitions):
             slug = _make_slug(defn.title)
             safe_title = _escape_latex(defn.title)
             toc_parts.append(
                 rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}"
-                rf"\dotfill\pageref*{{def:{slug}}}\\"
+                rf"\dotfill\pageref*{{def:{slug}}}\par"
             )
-        toc_parts.append(r"\end{minipage}\hfill")
+            # Insérer le saut de colonne après left_count définitions
+            if i == left_count - 1 and i < count - 1:
+                toc_parts.append(r"\columnbreak")
 
-        toc_parts.append(r"\begin{minipage}[t]{0.48\linewidth}")
-        toc_parts.append(r"\scriptsize")
-        for defn in right_defs:
-            slug = _make_slug(defn.title)
-            safe_title = _escape_latex(defn.title)
-            toc_parts.append(
-                rf"\noindent\hyperlink{{{slug}}}{{{safe_title}}}"
-                rf"\dotfill\pageref*{{def:{slug}}}\\"
-            )
-        toc_parts.append(r"\end{minipage}")
-
-        toc_parts.append(r"\vspace{0.4em}")
-        toc_parts.append("")
+        toc_parts.append(r"\end{multicols}")
+        toc_parts.append(r"\vspace{0.2em}")
 
     return "\n".join(toc_parts)
 
