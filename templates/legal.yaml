@@ -10,7 +10,7 @@ license: "CC BY-NC-SA 4.0"
 license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
 # Liens
-github_url: "https://github.com/LoicPandul/Dictionnaire-de-Bitcoin"
+github_url: "https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/"
 website: "https://pandul.fr/"
 github_profile: "https://github.com/LoicPandul/"
 
@@ -19,4 +19,4 @@ lightning_address: "sats@pandul.fr"
 email: "loic@pandul.fr"
 
 # ISBN
-isbn: ""
+isbn: "XXXX"

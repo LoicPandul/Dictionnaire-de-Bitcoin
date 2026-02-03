@@ -33,7 +33,7 @@ def _load_legal_info() -> dict:
     # Valeurs par défaut si le fichier n'existe pas
     return {
         'title': "Dictionnaire de Bitcoin",
-        'subtitle': "Le guide encyclopédique de Bitcoin et des cryptomonnaies",
+        'subtitle': "Tout le vocabulaire technique de Bitcoin",
         'author': "Loïc Morel",
         'license': "CC BY-NC-SA 4.0",
         'license_url': "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -42,7 +42,7 @@ def _load_legal_info() -> dict:
         'github_profile': "https://github.com/LoicPandul/",
         'lightning_address': "sats@pandul.fr",
         'email': "loic@pandul.fr",
-        'isbn': ""
+        'isbn': "XXXX"
     }
 
 
@@ -181,6 +181,7 @@ def _generate_preamble() -> str:
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \setdefaultlanguage{french}
+\setotherlanguage{english}
 
 % Géométrie KDP 5.5" x 8.5" - Gutter accentué
 \usepackage[
@@ -325,6 +326,10 @@ def _generate_preamble() -> str:
 % Citations
 \usepackage{csquotes}
 
+% Commande pour les URLs sans espace français avant les deux-points
+\newcommand{\cleanurl}[1]{\textenglish{\url{#1}}}
+\newcommand{\cleanhref}[2]{\textenglish{\href{#1}{#2}}}
+
 % Commande pour vedette ajustée à la largeur du texte (cartouche noire)
 \newcommand{\vedettefit}[1]{%
     \noindent\fcolorbox{black}{black}{%
@@ -420,7 +425,10 @@ def _generate_copyright_page(legal: dict) -> str:
     isbn = legal.get('isbn', '')
 
     # Section ISBN (vide si non renseigné)
-    isbn_line = rf"\noindent ISBN: {isbn}" if isbn else ""
+    isbn_line = rf"\noindent ISBN : {isbn}" if isbn else ""
+
+    # Interligne uniforme de 0.4em entre chaque ligne
+    sp = "0.4em"
 
     return rf"""
 \clearpage
@@ -429,16 +437,16 @@ def _generate_copyright_page(legal: dict) -> str:
 
 \small
 \setstretch{{1.0}}
-\noindent\textbf{{© {year} {author}}}\\[0.3em]
-\noindent\textbf{{\textit{{{title}: {subtitle}}}}}\\[0.5em]
-\noindent Version du {date_str}\\[0.3em]
-\noindent\href{{{github_url}}}{{{github_url}}}\\[0.5em]
-\noindent Cet ouvrage est sous licence {license_name}\\[0.2em]
-\noindent\href{{{license_url}}}{{{license_url}}}\\[0.5em]
-\noindent Lightning: {lightning}\\[0.2em]
-\noindent Email: {email}\\[0.2em]
-\noindent Site web: \href{{{website}}}{{{website}}}\\[0.2em]
-\noindent GitHub: \href{{{github_profile}}}{{{github_profile}}}\\[0.8em]
+\noindent\textbf{{© {year} {author}}}\\[{sp}]
+\noindent\textbf{{\textit{{{title} : {subtitle}}}}}\\[{sp}]
+\noindent Version du {date_str}\\[{sp}]
+\noindent\textenglish{{\href{{{github_url}}}{{{github_url}}}}}\\[{sp}]
+\noindent Cet ouvrage est sous licence {license_name}\\[{sp}]
+\noindent\textenglish{{\href{{{license_url}}}{{{license_url}}}}}\\[{sp}]
+\noindent Lightning : {lightning}\\[{sp}]
+\noindent Email : {email}\\[{sp}]
+\noindent Site web : \textenglish{{\href{{{website}}}{{{website}}}}}\\[{sp}]
+\noindent GitHub : \textenglish{{\href{{{github_profile}}}{{{github_profile}}}}}\\[{sp}]
 {isbn_line}
 
 \clearpage
@@ -455,33 +463,41 @@ def _generate_toc(dictionary: Dictionary) -> str:
 \begin{center}
 {\fontsize{14}{18}\selectfont\bfseries TABLE DES MATIÈRES}
 \end{center}
-\vspace{0.5cm}
+\vspace{0.3cm}
 """)
 
+    first_letter = True
     for letter in dictionary.letters():
         definitions = list(dictionary.get_by_letter(letter))
         count = len(definitions)
 
+        # Espace entre les lettres (sauf avant la première)
+        if not first_letter:
+            toc_parts.append(r"\vspace{2.5em}")
+        first_letter = False
+
         # Calcul de l'espace nécessaire pour éviter les orphelins
-        # On veut au moins la lettre + quelques lignes de définitions
-        if count <= 6:
-            # Petite lettre : garder tout ensemble
-            lines_needed = 2 + ((count + 1) // 2)
+        # Règle : au moins 5 lignes de définitions (= 10 défs en 2 colonnes)
+        # OU toutes les définitions si la lettre en a moins de 10
+        if count <= 10:
+            # Petite lettre : garder cartouche + toutes les définitions ensemble
+            lines_for_defs = (count + 1) // 2  # division par 2 (2 colonnes)
+            lines_needed = 2 + lines_for_defs  # cartouche + espacement + défs
         else:
-            # Grande lettre : s'assurer qu'on a la lettre + ~3 lignes de défs
-            lines_needed = 5
+            # Grande lettre : cartouche + au moins 5 lignes de définitions
+            lines_needed = 8  # 1 cartouche + 2 espacement + 5 lignes minimum
 
         toc_parts.append(rf"\needspace{{{lines_needed}\baselineskip}}")
 
         # Lettre avec cartouche noire
         toc_parts.append(rf"\noindent\tocletterbox{{{letter}}}")
-        toc_parts.append(r"\vspace{0.15em}")
+        toc_parts.append(r"\vspace{0.45em}")  # Espace après cartouche (+50%)
 
         # Utiliser multicols - laisser LaTeX gérer l'équilibrage naturellement
         # (pas de columnbreak manuel car ça casse la répartition sur plusieurs pages)
         toc_parts.append(r"\begin{multicols}{2}")
         toc_parts.append(r"\scriptsize\raggedright")
-        toc_parts.append(r"\setlength{\parskip}{0.08em}")  # Légère interligne
+        toc_parts.append(r"\setlength{\parskip}{0.18em}")  # Interligne entre défs (+50%)
 
         for defn in definitions:
             slug = _make_slug(defn.title)
@@ -492,8 +508,6 @@ def _generate_toc(dictionary: Dictionary) -> str:
             )
 
         toc_parts.append(r"\end{multicols}")
-        # Plus d'espace entre les lettres
-        toc_parts.append(r"\vspace{0.5em}")
 
     return "\n".join(toc_parts)
 
@@ -630,6 +644,8 @@ def _generate_final_page(legal: dict) -> str:
     website = legal.get('website', '')
     lightning = legal.get('lightning_address', '')
 
+    sp = "0.4em"
+
     return rf"""
 \clearpage
 \thispagestyle{{frontmatter}}
@@ -638,13 +654,13 @@ def _generate_final_page(legal: dict) -> str:
 \begin{{center}}
 \small
 \setstretch{{1.0}}
-{{\bfseries {title}}}\\[0.3em]
-{{\itshape {subtitle}}}\\[1em]
-© {year} {author}\\[0.5em]
-\href{{{github_url}}}{{{github_url}}}\\[0.5em]
-Licence {license_name}\\[1em]
-Lightning: {lightning}\\[0.2em]
-Site web: \href{{{website}}}{{{website}}}
+{{\bfseries {title}}}\\[{sp}]
+{{\itshape {subtitle}}}\\[0.8em]
+© {year} {author}\\[{sp}]
+\textenglish{{\href{{{github_url}}}{{{github_url}}}}}\\[{sp}]
+Licence {license_name}\\[0.8em]
+Lightning : {lightning}\\[{sp}]
+Site web : \textenglish{{\href{{{website}}}{{{website}}}}}
 \end{{center}}
 
 \vspace*{{\fill}}
