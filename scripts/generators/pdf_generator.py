@@ -138,17 +138,17 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     # 5. Page blanche
     sections.append("\\clearpage\\thispagestyle{frontmatter}\\null\\clearpage")
 
-    # 6. Table des matières
-    sections.append(_generate_toc(dictionary))
+    # 6. Contributeurs et remerciements
+    sections.append(_generate_contributors())
 
-    # 7. Page blanche si nécessaire
+    # 7. Note de l'auteur (anciennement Introduction)
+    sections.append(_generate_author_note())
+
+    # 8. Page blanche si nécessaire
     sections.append("\\cleardoublepage")
 
-    # 8. Introduction
-    sections.append(_generate_introduction())
-
-    # 9. Contributeurs et remerciements
-    sections.append(_generate_contributors())
+    # 9. Table des matières (juste avant le contenu)
+    sections.append(_generate_toc(dictionary))
 
     # === CORPS DU DICTIONNAIRE ===
     sections.append("\\mainmatter")
@@ -208,6 +208,10 @@ def _generate_preamble() -> str:
 \usepackage{setspace}
 \setstretch{1.10}
 
+% Alinéa réduit de moitié et espacement entre paragraphes doublé
+\setlength{\parindent}{0.5em}
+\setlength{\parskip}{0.6em}
+
 % Césure et justification
 \usepackage{ragged2e}
 \justifying
@@ -246,6 +250,10 @@ def _generate_preamble() -> str:
 \usepackage{colortbl}
 \usepackage{multicol}
 \arrayrulecolor{white}
+
+% Listes avec espacement personnalisé
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0.6em, parsep=0pt, topsep=0.3em}
 
 % Configuration multicol pour la TDM
 \setlength{\multicolsep}{0pt}
@@ -512,13 +520,13 @@ def _generate_toc(dictionary: Dictionary) -> str:
     return "\n".join(toc_parts)
 
 
-def _generate_introduction() -> str:
-    """Génère la page d'introduction."""
+def _generate_author_note() -> str:
+    """Génère la page Note de l'auteur."""
     intro_path = TEMPLATES_DIR / "introduction.md"
     if intro_path.exists():
         content = intro_path.read_text(encoding='utf-8')
         content = _clean_content(content)
-        content = _markdown_to_latex(content)
+        content = _markdown_to_latex(content, use_cartouche_h1=True)
     else:
         content = ""
 
@@ -526,9 +534,9 @@ def _generate_introduction() -> str:
 \cleardoublepage
 \thispagestyle{{frontmatter}}
 \begin{{center}}
-{{\fontsize{{14}}{{18}}\selectfont\bfseries INTRODUCTION}}
+{{\fontsize{{14}}{{18}}\selectfont\bfseries NOTE DE L'AUTEUR}}
 \end{{center}}
-\vspace{{0.8cm}}
+\vspace{{-0.2em}}
 
 \small
 {content}
@@ -552,7 +560,7 @@ def _generate_contributors() -> str:
 \begin{{center}}
 {{\fontsize{{14}}{{18}}\selectfont\bfseries CONTRIBUTEURS ET REMERCIEMENTS}}
 \end{{center}}
-\vspace{{0.8cm}}
+\vspace{{-0.2em}}
 
 \small
 {content}
@@ -593,10 +601,12 @@ def _format_definition(definition) -> str:
     # Ancre hypertexte
     parts.append(rf"\hypertarget{{{slug}}}{{}}")
 
+    # Début du bloc header avec parskip réduit
+    parts.append(r"{\parskip=0pt")
+
     # Vedette (cartouche noire)
     parts.append(rf"\vedettefit{{{safe_title}}}")
     parts.append(r"\vspace{0.3em}")
-    parts.append("")
 
     # Ligne de métadonnées
     metadata_parts = []
@@ -618,7 +628,9 @@ def _format_definition(definition) -> str:
         metadata_line = r" \textperiodcentered\ ".join(metadata_parts)
         parts.append(rf"\noindent{{\scriptsize {metadata_line}}}")
         parts.append(r"\vspace{0.3em}")
-        parts.append("")
+
+    # Fin du bloc header
+    parts.append(r"}\par")
 
     # Contenu
     content = definition.content
@@ -729,7 +741,7 @@ def _escape_latex(text: str) -> str:
     return text
 
 
-def _markdown_to_latex(content: str) -> str:
+def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
     """Convertit le markdown en LaTeX."""
 
     # 1. Protéger les blocs de code
@@ -765,22 +777,29 @@ def _markdown_to_latex(content: str) -> str:
     content = re.sub(r'\$\$[^$]+\$\$', save_math, content)
     content = re.sub(r'\$[^$]+\$', save_math, content)
 
-    # 4. Italique avec underscore
+    # 4. Titres H1 (AVANT d'échapper les #)
+    if use_cartouche_h1:
+        # Titres H1 en cartouche noire style vedette
+        content = re.sub(r'^# (.+)$', r'\\vspace{0.8em}\\noindent\\vedettefit{\1}\\vspace{0.4em}', content, flags=re.MULTILINE)
+    else:
+        content = re.sub(r'^# (.+)$', r'\\section*{\1}', content, flags=re.MULTILINE)
+
+    # 5. Italique avec underscore
     content = re.sub(r'(?<![\\a-zA-Z0-9])_([^_\n]+)_(?![a-zA-Z0-9])', r'\\textit{\1}', content)
 
-    # 5. Gras
+    # 6. Gras
     content = re.sub(r'\*\*([^*]+)\*\*', r'\\textbf{\1}', content)
 
-    # 6. Italique avec astérisque
+    # 7. Italique avec astérisque
     content = re.sub(r'(?<![\\*])\*([^*\n]+)\*', r'\\textit{\1}', content)
 
-    # 7. Échapper les caractères spéciaux restants
+    # 8. Échapper les caractères spéciaux restants
     content = content.replace('&', r'\&')
     content = content.replace('%', r'\%')
     content = content.replace('#', r'\#')
     content = re.sub(r'(?<!\\)_', r'\\_', content)
 
-    # 8. Titres
+    # 9. Titres H2 et H3
     content = re.sub(r'^### (.+)$', r'\\subsubsection*{\1}', content, flags=re.MULTILINE)
     content = re.sub(r'^## (.+)$', r'\\subsection*{\1}', content, flags=re.MULTILINE)
 
@@ -788,6 +807,7 @@ def _markdown_to_latex(content: str) -> str:
     lines = content.split('\n')
     new_lines = []
     in_list = False
+    just_ended_list = False
 
     for line in lines:
         stripped = line.strip()
@@ -799,6 +819,7 @@ def _markdown_to_latex(content: str) -> str:
             if not in_list:
                 new_lines.append(r'\begin{itemize}')
                 in_list = True
+            just_ended_list = False
             if stripped.startswith('* ') or stripped.startswith('- '):
                 item = stripped[2:]
             else:
@@ -808,7 +829,15 @@ def _markdown_to_latex(content: str) -> str:
             if in_list and stripped:
                 new_lines.append(r'\end{itemize}')
                 in_list = False
-            new_lines.append(line)
+                just_ended_list = True
+            # Ajouter l'alinéa au premier paragraphe après une liste
+            if just_ended_list and stripped:
+                new_lines.append(r'\par\noindent\hspace{\parindent}' + stripped)
+                just_ended_list = False
+            else:
+                new_lines.append(line)
+                if not stripped:
+                    just_ended_list = False
 
     if in_list:
         new_lines.append(r'\end{itemize}')
@@ -823,18 +852,25 @@ def _markdown_to_latex(content: str) -> str:
         flags=re.MULTILINE
     )
 
-    # 11. Liens (retirer le lien, garder le texte)
+    # 11. Liens markdown (retirer le lien, garder le texte)
     content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1', content)
 
-    # 12. Restaurer les formules
+    # 12. URLs brutes - envelopper dans \textenglish pour éviter l'espace français
+    content = re.sub(
+        r'(https?://[^\s\)\]]+)',
+        r'\\textenglish{\1}',
+        content
+    )
+
+    # 13. Restaurer les formules
     for i, math in enumerate(math_blocks):
         content = content.replace(f"<<<MATH{i}>>>", math)
 
-    # 13. Restaurer le code inline
+    # 14. Restaurer le code inline
     for i, code in enumerate(inline_codes):
         content = content.replace(f"<<<INLINECODE{i}>>>", code)
 
-    # 14. Restaurer les blocs de code
+    # 15. Restaurer les blocs de code
     for i, block in enumerate(code_blocks):
         match = re.match(r'```(\w*)\n(.*?)```', block, flags=re.DOTALL)
         if match:
