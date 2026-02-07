@@ -78,7 +78,7 @@ def generate(dictionary: Dictionary, output_path: Path = None):
                 temp_tex
             ]
 
-            result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(output_dir))
+            result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8', errors='replace', cwd=str(output_dir))
 
         # Vérifier si le PDF a été généré
         temp_pdf = output_dir / "dictionnaire_temp.pdf"
@@ -114,7 +114,8 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     sections = []
 
     # Préambule
-    sections.append(_generate_preamble())
+    fonts_path = str(BASE_DIR / "fonts").replace('\\', '/') + '/'
+    sections.append(_generate_preamble(fonts_path))
 
     # Début du document
     sections.append("\\begin{document}")
@@ -172,9 +173,9 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     return "\n\n".join(sections)
 
 
-def _generate_preamble() -> str:
+def _generate_preamble(fonts_path: str = "") -> str:
     """Génère le préambule LaTeX."""
-    return r"""% Dictionnaire de Bitcoin - Format KDP
+    preamble = r"""% Dictionnaire de Bitcoin - Format KDP
 \documentclass[9pt,twoside,openright]{book}
 
 % Encodage et langue
@@ -201,7 +202,13 @@ def _generate_preamble() -> str:
 % Polices
 \setmainfont{Arial}
 \setsansfont{Arial}
-\setmonofont{Courier New}[Scale=0.85]
+\setmonofont{Fira Code}[
+    Path=%%FONTSPATH%%,
+    Extension=.ttf,
+    UprightFont=FiraCode-Regular,
+    BoldFont=FiraCode-Bold,
+    Scale=0.85
+]
 
 % Typographie
 \usepackage{microtype}
@@ -267,15 +274,25 @@ def _generate_preamble() -> str:
 \tcbuselibrary{listings,breakable,skins}
 
 \lstset{
-    basicstyle=\ttfamily\scriptsize,
-    backgroundcolor=\color{customgray},
-    frame=none,
+    basicstyle=\ttfamily\fontsize{9}{10}\selectfont,
     breaklines=true,
     breakatwhitespace=true,
-    aboveskip=0.3em,
-    belowskip=0.3em,
-    xleftmargin=0.8em,
-    xrightmargin=0.8em
+    aboveskip=0.5em,
+    belowskip=0.5em
+}
+
+% Bloc de code style GitHub (angles droits)
+\newtcolorbox{codeblock}{
+    colback=inlinecodebg,
+    colframe=inlinecodeborder,
+    boxrule=0.3pt,
+    arc=0pt,
+    boxsep=0pt,
+    left=6pt,
+    right=6pt,
+    top=4pt,
+    bottom=4pt,
+    fontupper=\ttfamily\fontsize{9}{10}\selectfont
 }
 
 % Code inline style GitHub
@@ -291,7 +308,7 @@ def _generate_preamble() -> str:
     top=1pt,
     bottom=1pt,
     tcbox raise base,
-    fontupper=\ttfamily\fontsize{9}{9}\selectfont
+    fontupper=\ttfamily\fontsize{9}{10}\selectfont
 }
 
 % Mathématiques
@@ -396,6 +413,7 @@ def _generate_preamble() -> str:
 % Pour éviter les orphelins de lettres dans TDM
 \usepackage{needspace}
 """
+    return preamble.replace('%%FONTSPATH%%', fonts_path)
 
 
 def _generate_half_title(legal: dict) -> str:
@@ -900,7 +918,7 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
             code = code.replace('%', r'\%')
             code = code.replace('#', r'\#')
             code = code.replace('&', r'\&')
-            latex_block = rf'\begin{{lstlisting}}' + '\n' + code + '\n' + rf'\end{{lstlisting}}'
+            latex_block = r'\begin{codeblock}' + '\n' + code + '\n' + r'\end{codeblock}'
             content = content.replace(f"<<<CODEBLOCK{i}>>>", latex_block)
 
     return content
