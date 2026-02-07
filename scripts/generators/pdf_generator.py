@@ -135,8 +135,8 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     # 4. Mentions légales
     sections.append(_generate_copyright_page(legal))
 
-    # 5. Page blanche
-    sections.append("\\clearpage\\thispagestyle{frontmatter}\\null\\clearpage")
+    # 5. Page blanche unique
+    sections.append("\\clearpage\\thispagestyle{frontmatter}\\null")
 
     # 6. Contributeurs et remerciements
     sections.append(_generate_contributors())
@@ -227,6 +227,8 @@ def _generate_preamble() -> str:
 % Couleurs
 \usepackage{xcolor}
 \definecolor{customgray}{RGB}{246, 248, 250}
+\definecolor{inlinecodebg}{RGB}{239, 241, 243}
+\definecolor{inlinecodeborder}{RGB}{208, 215, 222}
 \definecolor{linkcolor}{RGB}{0, 0, 0}
 
 % Liens (même police que le texte)
@@ -274,6 +276,22 @@ def _generate_preamble() -> str:
     belowskip=0.3em,
     xleftmargin=0.8em,
     xrightmargin=0.8em
+}
+
+% Code inline style GitHub
+\newtcbox{\inlinecode}{
+    on line,
+    colback=inlinecodebg,
+    colframe=inlinecodeborder,
+    boxrule=0.3pt,
+    arc=2pt,
+    boxsep=0pt,
+    left=2.5pt,
+    right=2.5pt,
+    top=1pt,
+    bottom=1pt,
+    tcbox raise base,
+    fontupper=\ttfamily\fontsize{9}{9}\selectfont
 }
 
 % Mathématiques
@@ -555,7 +573,7 @@ def _generate_contributors() -> str:
         content = ""
 
     return rf"""
-\cleardoublepage
+\clearpage
 \thispagestyle{{frontmatter}}
 \begin{{center}}
 {{\fontsize{{14}}{{18}}\selectfont\bfseries CONTRIBUTEURS ET REMERCIEMENTS}}
@@ -592,6 +610,9 @@ def _format_definition(definition) -> str:
     title = definition.title
     safe_title = _escape_latex(title)
 
+    # Empêcher vedette orpheline : garder vedette + catégorie + début de définition ensemble
+    parts.append(r"\needspace{5\baselineskip}")
+
     # Label pour référence de page (utilisé dans TDM)
     parts.append(rf"\label{{def:{slug}}}")
 
@@ -601,12 +622,10 @@ def _format_definition(definition) -> str:
     # Ancre hypertexte
     parts.append(rf"\hypertarget{{{slug}}}{{}}")
 
-    # Début du bloc header avec parskip réduit
-    parts.append(r"{\parskip=0pt")
-
     # Vedette (cartouche noire)
     parts.append(rf"\vedettefit{{{safe_title}}}")
-    parts.append(r"\vspace{0.3em}")
+    parts.append(r"\vspace{-0.3em}")
+    parts.append("")
 
     # Ligne de métadonnées
     metadata_parts = []
@@ -627,10 +646,8 @@ def _format_definition(definition) -> str:
     if metadata_parts:
         metadata_line = r" \textperiodcentered\ ".join(metadata_parts)
         parts.append(rf"\noindent{{\scriptsize {metadata_line}}}")
-        parts.append(r"\vspace{0.3em}")
-
-    # Fin du bloc header
-    parts.append(r"}\par")
+        parts.append(r"\vspace{-0.3em}")
+        parts.append("")
 
     # Contenu
     content = definition.content
@@ -765,7 +782,7 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
         code = code.replace('&', r'\&')
         code = code.replace('^', r'\textasciicircum{}')
         code = code.replace('~', r'\textasciitilde{}')
-        inline_codes.append(rf'\texttt{{{code}}}')
+        inline_codes.append(rf'\inlinecode{{{code}}}')
         return f"<<<INLINECODE{len(inline_codes)-1}>>>"
     content = re.sub(r'`([^`]+)`', save_inline_code, content)
 
