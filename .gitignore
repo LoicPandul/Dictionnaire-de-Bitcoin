@@ -27,6 +27,7 @@ Thumbs.db
 *.tmp
 *.temp
 *.log
+*.listing
 
 # Claude
 .claude/

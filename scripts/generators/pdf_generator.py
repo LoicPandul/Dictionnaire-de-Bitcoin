@@ -388,7 +388,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \newcommand{\vedettefit}[1]{%
     \noindent\fcolorbox{black}{black}{%
         \hspace{0.3em}%
-        {\color{white}\fontsize{10}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
+        {\color{white}\fontsize{9}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
         \hspace{0.3em}%
     }%
 }
