@@ -281,7 +281,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
     belowskip=0.5em
 }
 
-% Bloc de code style GitHub (angles droits)
+% Bloc de code style GitHub (angles droits, breakable)
 \newtcolorbox{codeblock}{
     colback=inlinecodebg,
     colframe=inlinecodeborder,
@@ -292,10 +292,11 @@ def _generate_preamble(fonts_path: str = "") -> str:
     right=6pt,
     top=4pt,
     bottom=4pt,
-    fontupper=\ttfamily\fontsize{9}{10}\selectfont
+    breakable,
+    fontupper=\ttfamily\fontsize{9}{10}\selectfont\raggedright
 }
 
-% Code inline style GitHub
+% Code inline style GitHub - version courte (design complet avec bordure et coins arrondis)
 \newtcbox{\inlinecode}{
     on line,
     colback=inlinecodebg,
@@ -309,6 +310,16 @@ def _generate_preamble(fonts_path: str = "") -> str:
     bottom=1pt,
     tcbox raise base,
     fontupper=\ttfamily\fontsize{9}{10}\selectfont
+}
+
+% Code inline - version longue (support saut de ligne, design simplifié)
+\usepackage{soul}
+\DeclareRobustCommand{\inlinecodelong}[1]{%
+    \begingroup
+    \sethlcolor{inlinecodebg}%
+    \ttfamily\fontsize{9}{10}\selectfont
+    \hl{\,#1\,}%
+    \endgroup
 }
 
 % Mathématiques
@@ -439,13 +450,16 @@ def _generate_title_page(legal: dict) -> str:
     return rf"""
 \clearpage
 \thispagestyle{{frontmatter}}
-\vspace*{{\fill}}
+\vspace*{{3cm}}
 \begin{{center}}
-{{\fontsize{{22}}{{26}}\selectfont\bfseries {title}}}\\[1cm]
-{{\fontsize{{11}}{{14}}\selectfont {subtitle.upper()}}}\\[3cm]
+{{\fontsize{{22}}{{26}}\selectfont\bfseries {title}}}\\[0.6cm]
+{{\fontsize{{11}}{{14}}\selectfont {subtitle.upper()}}}
+\end{{center}}
+\vfill
+\begin{{center}}
 {{\fontsize{{12}}{{16}}\selectfont\itshape {author}}}
 \end{{center}}
-\vspace*{{\fill}}
+\vspace*{{2cm}}
 \clearpage
 """
 
@@ -800,7 +814,8 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
         code = code.replace('&', r'\&')
         code = code.replace('^', r'\textasciicircum{}')
         code = code.replace('~', r'\textasciitilde{}')
-        inline_codes.append(rf'\inlinecode{{{code}}}')
+        # Tous les codes inline utilisent soul (supporte le saut de ligne)
+        inline_codes.append(rf'\inlinecodelong{{{code}}}')
         return f"<<<INLINECODE{len(inline_codes)-1}>>>"
     content = re.sub(r'`([^`]+)`', save_inline_code, content)
 
@@ -910,15 +925,51 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
         match = re.match(r'```(\w*)\n(.*?)```', block, flags=re.DOTALL)
         if match:
             code = match.group(2).strip()
-            code = code.replace('\\', r'\textbackslash{}')
-            code = code.replace('_', r'\_')
-            code = code.replace('{', r'\{')
-            code = code.replace('}', r'\}')
-            code = code.replace('$', r'\$')
-            code = code.replace('%', r'\%')
-            code = code.replace('#', r'\#')
-            code = code.replace('&', r'\&')
+            code = _format_code_block(code)
             latex_block = r'\begin{codeblock}' + '\n' + code + '\n' + r'\end{codeblock}'
             content = content.replace(f"<<<CODEBLOCK{i}>>>", latex_block)
 
     return content
+
+
+def _format_code_block(code: str) -> str:
+    """Formate un bloc de code pour le rendu LaTeX dans un tcolorbox.
+
+    Préserve les sauts de ligne originaux du markdown,
+    coupe les lignes trop longues, échappe les caractères LaTeX.
+    """
+    MAX_CHARS = 55
+
+    def escape_code_char(text: str) -> str:
+        text = text.replace('\\', r'\textbackslash{}')
+        text = text.replace('{', r'\{')
+        text = text.replace('}', r'\}')
+        text = text.replace('$', r'\$')
+        text = text.replace('%', r'\%')
+        text = text.replace('#', r'\#')
+        text = text.replace('&', r'\&')
+        text = text.replace('_', r'\_')
+        text = text.replace('^', r'\textasciicircum{}')
+        text = text.replace('~', r'\textasciitilde{}')
+        return text
+
+    def wrap_line(line: str) -> list:
+        if len(line) <= MAX_CHARS:
+            return [line]
+        chunks = []
+        while len(line) > MAX_CHARS:
+            chunks.append(line[:MAX_CHARS])
+            line = line[MAX_CHARS:]
+        if line:
+            chunks.append(line)
+        return chunks
+
+    lines = code.split('\n')
+    result_lines = []
+
+    for line in lines:
+        wrapped = wrap_line(line)
+        for chunk in wrapped:
+            result_lines.append(escape_code_char(chunk))
+
+    return r'\noindent ' + (r'\\' + '\n').join(result_lines)

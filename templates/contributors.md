@@ -56,12 +56,10 @@ Merci également à toutes les personnes qui créent des contenus éducatifs sur
 * Satoshi Nakamoto ;
 * Et pleins d'autres que j'oublie sûrement.
 
-Plus largement, merci à tous ceux qui contribuent au développement de Bitcoin, qu'ils soient développeurs ou chercheurs.
-
-Je suis aussi profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent sur les réseaux sociaux ou dans d'autres publications. Vos partages spontanés sont une source de motivation inestimable pour moi. Ils renforcent mon désir de continuer d'écrire et de partager des informations sur Bitcoin. Ils rendent mes créations de contenus non seulement possibles, mais également plus agréables.
+Je suis également profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent, sur les réseaux sociaux comme ailleurs. Vos partages spontanés sont pour moi une source motivation.
 
 Et évidemment, un immense merci à ma femme, Chloé, qui est à l'origine de l'idée de ce dictionnaire et qui m'a conseillé tout au long de sa rédaction.
 
-Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur Amazon, ou bien me faire un don sur mon adresse Lightning : sats@pandul.fr. Merci !
+**Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur Amazon, ou bien me faire un don sur mon adresse Lightning : sats@pandul.fr. Merci !**
 
 Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement arrêtés pour avoir simplement écrit du code. Je tiens à leur exprimer mon soutien indéfectible. Leur engagement pour la protection de la vie privée et la liberté incarne les valeurs fondamentales de Bitcoin. Ces développeurs n'ont commis aucun crime ; ils ont seulement œuvré pour offrir des outils permettant à chacun de faire valoir ses droits naturels. Afin de les soutenir dans cette épreuve, j'invite chacun à signer la pétition en ligne : https://billandkeonne.org/.
