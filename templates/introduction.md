@@ -1,13 +1,17 @@
-# Guide de lecture
+Le *Dictionnaire de Bitcoin* recense et défini les termes techniques liés à Bitcoin et son écosystème.
 
-Le *Dictionnaire de Bitcoin* recense l'ensemble des termes techniques liés à Bitcoin et son écosystème. Chaque définition suit le format suivant :
+# GUIDE DE LECTURE
+
+Chaque définition suit le format suivant :
 * Titre : Le terme défini ;
 * Catégorie : Le domaine concerné (Cryptographie, Réseau, Portefeuille, etc.) ;
 * Traduction : L'équivalent anglais ou français du terme ;
 * Définition : L'explication détaillée du concept ;
 * Renvois : Les termes connexes à consulter. Lorsqu'ils sont en **gras**, ils renvoient à d'autres entrées du dictionnaire.
 
-# Contribution
+Pour une lecture efficace, n’hésitez pas à suivre les renvois : ils vous permettront de relier les notions entre elles et de progresser de définition en définition.
+
+# CONTRIBUTION
 
 *Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
 - La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
@@ -17,7 +21,7 @@ Le *Dictionnaire de Bitcoin* recense l'ensemble des termes techniques liés à B
 
 Pour contribuer, vous pouvez proposer une pull request sur le dépôt GitHub du projet (https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/). Pour plus de détails sur les différentes manières de participer, référez-vous au fichier README de ce dépôt.
 
-# Principes de rédaction
+# PRINCIPES DE RÉDACTION
 
 Publier un dictionnaire implique de rédiger des définitions, et donc d’opérer des choix quant aux termes à inclure. Le parti pris que j’ai adopté consiste à intégrer tout terme dès lors qu’il entretient un lien avec Bitcoin ou son écosystème. L’ambition de ce dictionnaire est de couvrir le champ lexical de Bitcoin avec le plus haut degré d’exhaustivité possible, dans l’esprit des dictionnaires professionnels propres à d’autres disciplines.
 
@@ -35,7 +39,7 @@ Concernant les noms propres, j’ai fait les choix suivants :
 
 Je reste bien entendu ouvert aux suggestions, qu’il s’agisse d’ajouter, de modifier ou de supprimer des définitions : n’hésitez pas à m’en faire part sur GitHub via une issue ou une pull request.
 
-# Avertissement
+# AVERTISSEMENT
 
 Ce dictionnaire a une vocation purement informative et pédagogique. Les informations qu'il contient ne constituent en aucun cas des conseils financiers, juridiques ou d'investissement. Je décline toute responsabilité quant à l'utilisation qui pourrait être faite de ces informations.
 

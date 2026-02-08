@@ -581,7 +581,7 @@ def _generate_author_note() -> str:
         content = ""
 
     return rf"""
-\cleardoublepage
+\clearpage
 \thispagestyle{{frontmatter}}
 \begin{{center}}
 {{\fontsize{{14}}{{18}}\selectfont\bfseries NOTE DE L'AUTEUR}}
@@ -830,7 +830,7 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
     # 4. Titres H1 (AVANT d'échapper les #)
     if use_cartouche_h1:
         # Titres H1 en cartouche noire style vedette
-        content = re.sub(r'^# (.+)$', r'\\vspace{0.8em}\\noindent\\vedettefit{\1}\\vspace{0.4em}', content, flags=re.MULTILINE)
+        content = re.sub(r'^# (.+)$', r'\\vspace{0.3em}\\noindent\\vedettefit{\1}\\vspace{0.4em}', content, flags=re.MULTILINE)
     else:
         content = re.sub(r'^# (.+)$', r'\\section*{\1}', content, flags=re.MULTILINE)
 
