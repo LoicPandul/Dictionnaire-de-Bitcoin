@@ -1,13 +1,13 @@
-*Dictionnaire de Bitcoin* est un projet participatif ouvert à tous. Vous êtes libre de proposer des modifications, des corrections ou de soumettre de nouvelles définitions manquantes. Pour ce faire, rendez-vous sur le dépôt GitHub du projet : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/.
-
-Je tiens à remercier tous les contributeurs pour leur précieuse aide, leurs conseils d'experts, leurs contributions à la rédaction de nouvelles définitions ou à la correction de celles déjà existantes, ainsi que tous ceux qui ont participé à la relecture de cet ouvrage :
+Merci à tous les contributeurs pour leur aide, leurs conseils, la rédaction de nouvelles définitions, la correction des entrées existantes et la relecture de l’ouvrage :
 * Psyduck07 (https://github.com/Psyduck07) ;
 * Adrien Lacombe (https://github.com/adrienlacombe) ;
 * Ludovic Lars (https://github.com/lugaxker) ;
 * Beemo (https://github.com/nflatrea) ;
 * quinoah (https://github.com/quinoah).
 
-Je tiens également à remercier toutes les personnes qui m'ont aidé dans la rédaction de mes autres contenus, qui ont servi de fondement au _Dictionnaire de Bitcoin_ :
+*Dictionnaire de Bitcoin* est un projet participatif ouvert à tous : vous pouvez proposer des modifications, des corrections ou de nouvelles définitions via le dépôt GitHub : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/.
+
+Merci également à toutes les personnes qui m’ont aidé dans la rédaction de mes autres contenus, qui ont servi de fondement au *Dictionnaire de Bitcoin* :
 * Grittoshi (https://twitter.com/Grittoshi) ;
 * 200KEKS (https://twitter.com/200KEKS) ;
 * Fanis Michalakis (https://twitter.com/FanisMichalakis) ;

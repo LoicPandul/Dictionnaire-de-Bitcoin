@@ -215,8 +215,8 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \usepackage{setspace}
 \setstretch{1.10}
 
-% Alinéa réduit de moitié et espacement entre paragraphes doublé
-\setlength{\parindent}{0.5em}
+% Pas d'alinéa, espacement entre paragraphes
+\setlength{\parindent}{0pt}
 \setlength{\parskip}{0.6em}
 
 % Césure et justification
@@ -230,6 +230,9 @@ def _generate_preamble(fonts_path: str = "") -> str:
 % Éviter orphelines et veuves
 \widowpenalty=10000
 \clubpenalty=10000
+
+% Empêcher l'étirement vertical des pages (évite les trous imprévisibles)
+\raggedbottom
 
 % Couleurs
 \usepackage{xcolor}
@@ -374,7 +377,8 @@ def _generate_preamble(fonts_path: str = "") -> str:
     topsep=0.2em,
     itemsep=0.05em,
     parsep=0pt,
-    leftmargin=1.2em
+    leftmargin=1.2em,
+    before=\vspace{-\parskip}
 }
 
 % Citations
@@ -534,18 +538,15 @@ def _generate_toc(dictionary: Dictionary) -> str:
             toc_parts.append(r"\vspace{2.5em}")
         first_letter = False
 
-        # Calcul de l'espace nécessaire pour éviter les orphelins
-        # Règle : au moins 5 lignes de définitions (= 10 défs en 2 colonnes)
-        # OU toutes les définitions si la lettre en a moins de 10
         if count <= 10:
-            # Petite lettre : garder cartouche + toutes les définitions ensemble
-            lines_for_defs = (count + 1) // 2  # division par 2 (2 colonnes)
-            lines_needed = 2 + lines_for_defs  # cartouche + espacement + défs
+            # Petite lettre : minipage pour interdire tout saut de page interne
+            lines_for_defs = (count + 1) // 2
+            lines_needed = 4 + lines_for_defs
+            toc_parts.append(rf"\needspace{{{lines_needed}\baselineskip}}")
+            toc_parts.append(r"\begin{minipage}{\linewidth}")
         else:
-            # Grande lettre : cartouche + au moins 5 lignes de définitions
-            lines_needed = 8  # 1 cartouche + 2 espacement + 5 lignes minimum
-
-        toc_parts.append(rf"\needspace{{{lines_needed}\baselineskip}}")
+            # Grande lettre : needspace pour garder cartouche + début des défs
+            toc_parts.append(r"\needspace{8\baselineskip}")
 
         # Lettre avec cartouche noire
         toc_parts.append(rf"\noindent\tocletterbox{{{letter}}}")
@@ -566,6 +567,9 @@ def _generate_toc(dictionary: Dictionary) -> str:
             )
 
         toc_parts.append(r"\end{multicols}")
+
+        if count <= 10:
+            toc_parts.append(r"\end{minipage}")
 
     return "\n".join(toc_parts)
 
@@ -867,6 +871,10 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
 
         if is_list_item:
             if not in_list:
+                # Garantir un saut de paragraphe avant la liste pour un
+                # espacement cohérent (before=\vspace{-\parskip} le compense)
+                if new_lines and new_lines[-1].strip():
+                    new_lines.append('')
                 new_lines.append(r'\begin{itemize}')
                 in_list = True
             just_ended_list = False
@@ -880,14 +888,11 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
                 new_lines.append(r'\end{itemize}')
                 in_list = False
                 just_ended_list = True
-            # Ajouter l'alinéa au premier paragraphe après une liste
+            new_lines.append(line)
             if just_ended_list and stripped:
-                new_lines.append(r'\par\noindent\hspace{\parindent}' + stripped)
                 just_ended_list = False
-            else:
-                new_lines.append(line)
-                if not stripped:
-                    just_ended_list = False
+            elif not stripped:
+                just_ended_list = False
 
     if in_list:
         new_lines.append(r'\end{itemize}')
