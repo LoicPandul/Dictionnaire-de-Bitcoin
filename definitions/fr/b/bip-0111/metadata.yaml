@@ -1,0 +1,8 @@
+uuid: "09b8f345-bff4-4744-9a01-dc734f29cb7d"
+title: "BIP-0111"
+slug: "bip-0111"
+category: "BIP"
+cross_references:
+  - "dos-denial-of-service"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

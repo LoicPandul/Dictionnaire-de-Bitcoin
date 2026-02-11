@@ -1,0 +1,8 @@
+uuid: "4b7235b1-f0dc-441d-ad80-bc41f1ebff5f"
+title: "BIP-0381"
+slug: "bip-0381"
+category: "BIP"
+cross_references:
+  - "output-script-descriptors"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

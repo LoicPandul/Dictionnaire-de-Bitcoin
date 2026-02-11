@@ -1,0 +1,8 @@
+uuid: "771919cf-9e7a-47c5-82fc-c729a36c16db"
+title: "BIP-0125"
+slug: "bip-0125"
+category: "BIP"
+cross_references:
+  - "rbf-replace-by-fee"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

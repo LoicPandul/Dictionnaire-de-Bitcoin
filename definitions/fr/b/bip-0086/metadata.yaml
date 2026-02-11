@@ -1,0 +1,10 @@
+uuid: "68dd1d4c-9771-416c-a1d4-eca870680620"
+title: "BIP-0086"
+slug: "bip-0086"
+category: "BIP"
+cross_references:
+  - "bip32"
+  - "bip43"
+  - "p2tr"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

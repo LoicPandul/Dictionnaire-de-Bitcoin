@@ -1,0 +1,10 @@
+uuid: "e892f615-28b4-4078-ad86-f862c246bd70"
+title: "BIP-0156"
+slug: "bip-0156"
+category: "BIP"
+cross_references:
+  - "p2p-transport-v2"
+assets:
+  - filename: "image-1.png"
+created_at: "2026-01-27"
+updated_at: "2026-01-27"

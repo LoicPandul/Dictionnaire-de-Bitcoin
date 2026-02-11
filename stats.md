@@ -1,6 +1,6 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 10/02/2026*
+*Dernière mise à jour : 11/02/2026*
 
 ---
 
@@ -21,20 +21,20 @@
 | E | 26 |
 | F | 20 |
 | G | 19 |
-| H | 20 |
+| H | 21 |
 | I | 18 |
 | J | 4 |
 | K | 2 |
 | L | 22 |
-| M | 42 |
+| M | 43 |
 | N | 17 |
 | O | 104 |
-| P | 61 |
+| P | 60 |
 | Q | 2 |
 | R | 28 |
 | S | 78 |
 | T | 24 |
-| U | 10 |
+| U | 9 |
 | V | 9 |
 | W | 14 |
 | X | 4 |
@@ -47,7 +47,7 @@
 2. **O** : 104 définitions
 3. **C** : 86 définitions
 4. **S** : 78 définitions
-5. **P** : 61 définitions
+5. **P** : 60 définitions
 
 ## Catégories
 
