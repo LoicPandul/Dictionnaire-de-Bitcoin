@@ -16,7 +16,7 @@ wpkh([cdeab12f/84h/0h/0h]xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1Tj
 
 Dans ce descriptor, la fonction de dérivation `wpkh` indique un type de script Pay-to-Witness-Public-Key-Hash. Elle est suivie par le chemin de dérivation qui contient :
 * `cdeab12f` : l'empreinte de la clé maîtresse ;
-* `84h` : qui signifie l'utilisation d'un objectif BIP84, destiné aux adresses SegWit v0 ;
+* `84h` : qui signifie l'utilisation d'un objectif BIP-0084, destiné aux adresses SegWit v0 ;
 * `0h` : qui indique qu'il s'agit d'une devise BTC sur le mainnet ;
 * `0h` : qui fait référence au numéro de compte spécifique utilisé dans le portefeuille.
 

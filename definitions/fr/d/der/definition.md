@@ -18,4 +18,4 @@ Avec :
 
 Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de SigHash utilisé.
 
-> ► *Pour plus d'informations, voir les définitions de [**BIP66**](../b/bip66/definition.md) et **[SIGHASH FLAG](../s/sighash-flag/definition.md)**.*
+> ► *Pour plus d'informations, voir les définitions de [**BIP-0066**](../b/bip-0066/definition.md) et **[SIGHASH FLAG](../s/sighash-flag/definition.md)**.*

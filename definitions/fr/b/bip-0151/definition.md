@@ -1,3 +1,3 @@
-Propose un protocole pour chiffrer les communications P2P entre pairs sur le réseau Bitcoin, afin de renforcer la sécurité et la confidentialité. Son objectif est notamment de prévenir les manipulations du trafic et les attaques de surveillance de masse. Finalement, le BIP151 a été remplacé par le BIP324 (*P2P transport V2*) qui est aujourd'hui implémenté en option dans Bitcoin Core.
+Propose un protocole pour chiffrer les communications P2P entre pairs sur le réseau Bitcoin, afin de renforcer la sécurité et la confidentialité. Son objectif est notamment de prévenir les manipulations du trafic et les attaques de surveillance de masse. Finalement, le BIP-0151 a été remplacé par le BIP-0324 (*P2P transport V2*) qui est aujourd'hui implémenté en option dans Bitcoin Core.
 
 > ► *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](../p/p2p-transport-v2/definition.md).*
