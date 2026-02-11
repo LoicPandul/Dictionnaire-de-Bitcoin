@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 846 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 847 définitions du dictionnaire.
 
 ---
 
@@ -50,8 +50,8 @@ Ce fichier contient la liste de toutes les 846 définitions du dictionnaire.
 - [ATLC](definitions/fr/a/atlc/definition.md)
 - [ATOMIC MULTI-PATH PAYMENTS](definitions/fr/a/atomic-multi-path-payments/definition.md)
 - [ATOMIC SWAP](definitions/fr/a/atomic-swap/definition.md)
-- [ATTAQUE DES 51 POUR CENT](definitions/fr/a/attaque-des-51-pour-cent/definition.md)
-- [AVG. ROUND DURATION](definitions/fr/a/avg-round-duration/definition.md)
+- [ATTAQUE DES 51%](definitions/fr/a/attaque-des-51-pour-cent/definition.md)
+- [AVERAGE ROUND DURATION](definitions/fr/a/avg-round-duration/definition.md)
 
 ## B
 
@@ -206,6 +206,7 @@ Ce fichier contient la liste de toutes les 846 définitions du dictionnaire.
 - [BTCD - BTC SUITE](definitions/fr/b/btcd-btc-suite/definition.md)
 - [BTCPAY SERVER](definitions/fr/b/btcpay-server/definition.md)
 - [BULL MARKET](definitions/fr/b/bull-market/definition.md)
+- [BULL RUN](definitions/fr/b/bull-run/definition.md)
 - [BUSINESS LOGIC](definitions/fr/b/business-logic/definition.md)
 - [BYZANTINE FAULT TOLERANCE - BFT](definitions/fr/b/byzantine-fault-tolerance-bft/definition.md)
 
@@ -323,7 +324,7 @@ Ce fichier contient la liste de toutes les 846 définitions du dictionnaire.
 - [DIRECTED ACYCLIC GRAPH](definitions/fr/d/directed-acyclic-graph/definition.md)
 - [DISTRIBUÉ](definitions/fr/d/distribue/definition.md)
 - [DLC - DISCREET LOG CONTRACT](definitions/fr/d/dlc-discreet-log-contract/definition.md)
-- [DLP - DISCREET LOG PROBLEME](definitions/fr/d/dlp-discreet-log-probleme/definition.md)
+- [DLP - DISCREET LOGARITHM PROBLEME](definitions/fr/d/dlp-discreet-log-probleme/definition.md)
 - [DNS SEEDS](definitions/fr/d/dns-seeds/definition.md)
 - [DOLLAR COST AVERAGING - DCA](definitions/fr/d/dollar-cost-averaging-dca/definition.md)
 - [DOS - DENIAL OF SERVICE](definitions/fr/d/dos-denial-of-service/definition.md)
@@ -684,7 +685,7 @@ Ce fichier contient la liste de toutes les 846 définitions du dictionnaire.
 - [PAIR SORTANT](definitions/fr/p/pair-sortant/definition.md)
 - [PANNE BYZANTINE](definitions/fr/p/panne-byzantine/definition.md)
 - [PAPER WALLET](definitions/fr/p/paper-wallet/definition.md)
-- [PASSPHRASE - BIP39](definitions/fr/p/passphrase-bip39/definition.md)
+- [PASSPHRASE - BIP-0039](definitions/fr/p/passphrase-bip-0039/definition.md)
 - [PATHFINDING](definitions/fr/p/pathfinding/definition.md)
 - [PATOSHI](definitions/fr/p/patoshi/definition.md)
 - [PAYJOIN](definitions/fr/p/payjoin/definition.md)
@@ -720,7 +721,7 @@ Ce fichier contient la liste de toutes les 846 définitions du dictionnaire.
 - [PREUVE DE RÉSERVES](definitions/fr/p/preuve-de-reserves/definition.md)
 - [PREUVE DE TRAVAIL](definitions/fr/p/preuve-de-travail/definition.md)
 - [PRIME DE PROXIMITÉ](definitions/fr/p/prime-de-proximite/definition.md)
-- [PROB. DES GÉNÉRAUX BYZANTINS](definitions/fr/p/prob-des-generaux-byzantins/definition.md)
+- [PROBLÈME DES GÉNÉRAUX BYZANTINS](definitions/fr/p/prob-des-generaux-byzantins/definition.md)
 - [PROFONDEUR](definitions/fr/p/profondeur/definition.md)
 - [PROOF-OF-KEY DAY](definitions/fr/p/proof-of-key-day/definition.md)
 - [PROP - PROPORTIONAL](definitions/fr/p/prop-proportional/definition.md)

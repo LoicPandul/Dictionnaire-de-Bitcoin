@@ -6,7 +6,7 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 846
+- **Nombre total de définitions** : 847
 - **Nombre de lettres utilisées** : 26
 - **Nombre de catégories** : 20
 
@@ -15,7 +15,7 @@
 | Lettre | Nombre |
 |:------:|-------:|
 | A | 40 |
-| B | 153 |
+| B | 154 |
 | C | 86 |
 | D | 35 |
 | E | 26 |
@@ -43,7 +43,7 @@
 
 ## Top 5 des lettres les plus fournies
 
-1. **B** : 153 définitions
+1. **B** : 154 définitions
 2. **O** : 104 définitions
 3. **C** : 86 définitions
 4. **S** : 78 définitions
@@ -62,7 +62,7 @@
 - **RGB** : 37
 - **Lightning Network** : 37
 - **Réseau** : 32
-- **Économie et régulation** : 30
+- **Économie et régulation** : 31
 - **Histoire** : 28
 - **Attaque** : 24
 - **Couche supérieure** : 23
@@ -74,7 +74,7 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1077 occurrences
+- **bitcoin** : 1078 occurrences
 - **transaction** : 622 occurrences
 - **transactions** : 386 occurrences
 - **bloc** : 375 occurrences
