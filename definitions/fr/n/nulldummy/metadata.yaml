@@ -4,6 +4,6 @@ slug: "nulldummy"
 category: "Protocole"
 cross_references:
   - "dummy-element"
-  - "bip147"
+  - "bip-0147"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

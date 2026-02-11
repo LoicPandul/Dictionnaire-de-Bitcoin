@@ -3,7 +3,7 @@ title: "PAYNYM"
 slug: "paynym"
 category: "Confidentialité"
 cross_references:
-  - "bip47"
+  - "bip-0047"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

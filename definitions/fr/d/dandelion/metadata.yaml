@@ -3,7 +3,7 @@ title: "DANDELION"
 slug: "dandelion"
 category: "Confidentialité"
 cross_references:
-  - "bip156"
+  - "bip-0156"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

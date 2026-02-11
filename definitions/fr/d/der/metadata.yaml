@@ -3,7 +3,7 @@ title: "DER"
 slug: "der"
 category: "Informatique"
 cross_references:
-  - "bip66"
+  - "bip-0066"
   - "sighash-flag"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
