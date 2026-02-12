@@ -341,8 +341,8 @@ def _generate_preamble(fonts_path: str = "") -> str:
     \fancyhf{}
     \fancyhead[CE]{\small\textit{\currentletter}}
     \fancyhead[CO]{\small\textit{\currentletter}}
-    \fancyhead[LE]{\scriptsize\textit{\leftmark}}
-    \fancyhead[RO]{\scriptsize\textit{\rightmark}}
+    \fancyhead[LE]{\scriptsize\textit{\rightmark}}
+    \fancyhead[RO]{\scriptsize\textit{\leftmark}}
     \fancyfoot[C]{\small\thepage}
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{0pt}
@@ -831,6 +831,60 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
     content = re.sub(r'\$\$[^$]+\$\$', save_math, content)
     content = re.sub(r'\$[^$]+\$', save_math, content)
 
+    # 3b. Convertir les tableaux markdown en LaTeX
+    table_blocks = []
+    def save_table(match):
+        table_text = match.group(0).strip()
+        lines = table_text.split('\n')
+        # Besoin d'au moins 3 lignes : en-tête, séparateur, une ligne de données
+        if len(lines) < 3:
+            return match.group(0)
+        # Vérifier la ligne séparateur
+        if not re.match(r'^\|[\s\-:|]+\|$', lines[1].strip()):
+            return match.group(0)
+
+        header_cells = [c.strip() for c in lines[0].split('|')[1:-1]]
+        num_cols = len(header_cells)
+        data_rows = []
+        for line in lines[2:]:
+            cells = [c.strip() for c in line.split('|')[1:-1]]
+            data_rows.append(cells)
+
+        def esc_cell(text):
+            text = text.replace('\\', r'\textbackslash{}')
+            text = text.replace('{', r'\{')
+            text = text.replace('}', r'\}')
+            text = text.replace('&', r'\&')
+            text = text.replace('%', r'\%')
+            text = text.replace('#', r'\#')
+            text = text.replace('$', r'\$')
+            text = text.replace('_', r'\_')
+            text = text.replace('~', r'\textasciitilde{}')
+            text = text.replace('^', r'\textasciicircum{}')
+            return text
+
+        col_spec = '|' + '|'.join(['c'] * num_cols) + '|'
+        parts = []
+        parts.append(r'\vspace{0.25em}')
+        parts.append(r'{\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.4}\arrayrulecolor{black}')
+        parts.append(r'\setlength{\LTpre}{0pt}\setlength{\LTpost}{0pt}')
+        parts.append(r'\noindent\begin{longtable}{' + col_spec + '}')
+        parts.append(r'\hline')
+        parts.append(' & '.join([rf'\textbf{{{esc_cell(h)}}}' for h in header_cells]) + r' \\ \hline')
+        for row in data_rows:
+            escaped = [esc_cell(c) for c in row[:num_cols]]
+            while len(escaped) < num_cols:
+                escaped.append('')
+            parts.append(' & '.join(escaped) + r' \\ \hline')
+        parts.append(r'\end{longtable}')
+        parts.append(r'}')
+        parts.append(r'\vspace{0.15em}')
+
+        table_blocks.append('\n'.join(parts))
+        return f"<<<TABLE{len(table_blocks)-1}>>>"
+
+    content = re.sub(r'(?:^\|.+\|[ \t]*\n?)+', save_table, content, flags=re.MULTILINE)
+
     # 4. Titres H1 (AVANT d'échapper les #)
     if use_cartouche_h1:
         # Titres H1 en cartouche noire style vedette
@@ -917,15 +971,19 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
         content
     )
 
-    # 13. Restaurer les formules
+    # 13. Restaurer les tableaux
+    for i, table in enumerate(table_blocks):
+        content = content.replace(f"<<<TABLE{i}>>>", table)
+
+    # 14. Restaurer les formules
     for i, math in enumerate(math_blocks):
         content = content.replace(f"<<<MATH{i}>>>", math)
 
-    # 14. Restaurer le code inline
+    # 15. Restaurer le code inline
     for i, code in enumerate(inline_codes):
         content = content.replace(f"<<<INLINECODE{i}>>>", code)
 
-    # 15. Restaurer les blocs de code
+    # 16. Restaurer les blocs de code
     for i, block in enumerate(code_blocks):
         match = re.match(r'```(\w*)\n(.*?)```', block, flags=re.DOTALL)
         if match:

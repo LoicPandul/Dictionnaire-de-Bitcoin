@@ -12,16 +12,12 @@ $$
 
 Chaque bit de la séquence est comparé à son homologue et l'opération XOR est appliquée. Voici la table de vérité de l'opération XOR :
 
-<div align="center">
-
 | $A$ | $B$ | $A \oplus B$ |
 |:---:|:---:|:------------:|
 | $0$ | $0$ |      $0$     |
 | $0$ | $1$ |      $1$     |
 | $1$ | $0$ |      $1$     |
 | $1$ | $1$ |      $0$     |
-
-</div>
 
 L'opération XOR est utilisée dans de nombreux domaines de l'informatique, notamment dans la cryptographie, pour ses attributs intéressants comme : 
 * Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
