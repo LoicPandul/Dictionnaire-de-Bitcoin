@@ -7,7 +7,7 @@ Chaque définition suit le format suivant :
 * Catégorie : Le domaine concerné (Cryptographie, Réseau, Portefeuille, etc.) ;
 * Traduction : L'équivalent anglais ou français du terme ;
 * Définition : L'explication détaillée du concept ;
-* Renvois : Les termes connexes à consulter. Lorsqu'ils sont en **gras**, ils renvoient à d'autres entrées du dictionnaire.
+* Renvois : Les termes connexes à consulter.
 
 Pour une lecture efficace, n’hésitez pas à suivre les renvois : ils vous permettront de relier les notions entre elles et de progresser de définition en définition.
 
@@ -15,11 +15,11 @@ Pour une lecture efficace, n’hésitez pas à suivre les renvois : ils vous per
 
 *Dictionnaire de Bitcoin* est un projet ouvert. Vous êtes libre de proposer tout type de modification ou de correction, ce qui inclut notamment :
 - La suggestion de nouveaux termes à ajouter (avec ou sans définition) ;
-- La correction d'une définition qui vous semble erronée ou imprécise ;
+- La correction ou l'amélioration d'une définition qui vous semble erronée ou imprécise ;
 - La correction d'une faute d'orthographe ou d'une coquille ;
 - Toute autre suggestion de modification.
 
-Pour contribuer, vous pouvez proposer une pull request sur le dépôt GitHub du projet (https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/). Pour plus de détails sur les différentes manières de participer, référez-vous au fichier README de ce dépôt.
+Pour contribuer, vous pouvez proposer une pull request ou bien ouvrir une issue sur le dépôt GitHub du projet (https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/). Pour plus de détails sur les différentes manières de participer, référez-vous au fichier README de ce dépôt.
 
 # PRINCIPES DE RÉDACTION
 
