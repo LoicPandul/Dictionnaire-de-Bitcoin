@@ -7,5 +7,3 @@ Pour résoudre ces problèmes et permettre un coinswap entre parties qui ne se f
 Dans un scénario de coinswap utilisant un HTLC ou un PTLC entre Alice et Bob, l'échange se déroule de manière sécurisée : soit il réussit et chacun reçoit le BTC de l'autre, soit il échoue et chacun conserve son propre BTC. Il est ainsi impossible pour l'une des parties de tricher ou de voler le BTC de l'autre. 
 
 L'utilisation des Adaptor Signatures est particulièrement intéressante dans ce contexte, car elle permet de se passer des scripts traditionnels (c'est un mécanisme parfois désigné sous le terme de « _scriptless scripts_ »). Cette caractéristique permet de réduire les frais associés à l'échange. Un autre avantage majeur des Adaptor Signatures est qu'elles ne nécessitent pas l'utilisation d'un hachage commun pour les deux parties de la transaction, ce qui évite ainsi de révéler un lien direct entre elles dans le cadre de certains types d'échanges.
-
-> ► *Pour plus d'informations, voir la définition de [**ADAPTOR SIGNATURE**](../a/adaptor-signature/definition.md).*

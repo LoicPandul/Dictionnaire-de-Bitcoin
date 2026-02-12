@@ -4,4 +4,4 @@ Notons que la majorité des nœuds laissent les configurations par défaut telle
 
 Par exemple, une transaction qui n'alloue aucuns frais est à la fois valide selon les règles de consensus et non standard, car la politique par défaut de Bitcoin Core pour le paramètre `minRelayTxFee` est de `0.00001` (en BTC/kB).
 
-> ► *On parle également parfois de « règles de mempool » pour désigner les règles de standardisation.*
+*On parle également parfois de « règles de mempool » pour désigner les règles de standardisation.*

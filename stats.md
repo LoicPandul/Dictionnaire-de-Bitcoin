@@ -73,18 +73,18 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1078 occurrences
-- **transaction** : 622 occurrences
+- **bitcoin** : 1067 occurrences
+- **transaction** : 620 occurrences
 - **transactions** : 386 occurrences
-- **bloc** : 375 occurrences
+- **bloc** : 369 occurrences
 - **permet** : 340 occurrences
-- **informations** : 320 occurrences
 - **réseau** : 254 occurrences
 - **bitcoins** : 242 occurrences
-- **definition** : 240 occurrences
 - **protocole** : 238 occurrences
-- **script** : 236 occurrences
 - **chaque** : 229 occurrences
 - **blocs** : 224 occurrences
-- **voir** : 219 occurrences
+- **script** : 218 occurrences
 - **deux** : 209 occurrences
+- **clés** : 209 occurrences
+- **utilisé** : 199 occurrences
+- **portefeuille** : 198 occurrences

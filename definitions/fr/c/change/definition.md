@@ -2,4 +2,4 @@ Dans le cadre des transactions Bitcoin, fait référence à l'UTXO créé avec l
 
 ![](./assets/image-1.png)
 
-> ► *Même si c'est très peu utilisé, on pourrait également parler de « monnaie » (rendu de monnaie) pour évoquer le change.*
+*Même si c'est très peu utilisé, on pourrait également parler de « monnaie » (rendu de monnaie) pour évoquer le change.*

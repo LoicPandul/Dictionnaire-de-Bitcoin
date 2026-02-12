@@ -6,4 +6,4 @@ Une autre méthode pour mettre la mauvaise adresse devant la victime est l'utili
 
 Pour se protéger contre ces différentes méthodes d'attaque, il est important de vérifier plusieurs caractères de l'adresse, surtout au niveau de sa checksum (à la fin), sur l'écran du périphérique de signature avant de signer la transaction.
 
-> ► *On parle également parfois d'Address Poisoning pour désigner cette attaque.*
+*On parle également parfois d'Address Poisoning pour désigner cette attaque.*

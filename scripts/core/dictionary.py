@@ -15,6 +15,7 @@ class Dictionary:
         self.definitions = definitions
         self.lang = lang
         self._by_slug: Dict[str, Definition] = {d.slug: d for d in definitions}
+        self._by_uuid: Dict[str, Definition] = {d.uuid: d for d in definitions if d.uuid}
         self._by_letter: Dict[str, List[Definition]] = {}
         self._build_letter_index()
 
@@ -52,6 +53,10 @@ class Dictionary:
     def get_by_slug(self, slug: str) -> Optional[Definition]:
         """Retourne une définition par son slug."""
         return self._by_slug.get(slug)
+
+    def get_by_uuid(self, uuid: str) -> Optional[Definition]:
+        """Retourne une définition par son UUID."""
+        return self._by_uuid.get(uuid)
 
     def get_by_letter(self, letter: str) -> List[Definition]:
         """Retourne toutes les définitions d'une lettre."""

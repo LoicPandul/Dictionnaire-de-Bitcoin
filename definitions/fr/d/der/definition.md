@@ -17,5 +17,3 @@ Avec :
 * `s` (32 octets) : valeur `s` entant qu'entier gros-boutiste (big-endian).
 
 Dans une transaction Bitcoin, un octet est ajouté à la fin d'une signature DER pour indiquer le type de SigHash utilisé.
-
-> ► *Pour plus d'informations, voir les définitions de [**BIP-0066**](../b/bip-0066/definition.md) et **[SIGHASH FLAG](../s/sighash-flag/definition.md)**.*

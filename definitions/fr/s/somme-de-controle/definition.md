@@ -2,4 +2,4 @@ La somme de contrôle est une valeur calculée à partir d'un ensemble de donné
 
 Sur Bitcoin, les sommes de contrôle sont utilisées au niveau applicatif pour assurer l'intégrité des adresses de réception. Une somme de contrôle est calculée à partir de la charge utile d'une adresse d'un utilisateur, puis ajoutée à cette adresse afin de détecter d'éventuelles erreurs lors de sa saisie. Une somme de contrôle est également présente dans les phrases de récupération (mnémonique).
 
-> ► *Il est généralement admis d'utiliser directement le terme anglais de « checksum » en français.*
+*Il est généralement admis d'utiliser directement le terme anglais de « checksum » en français.*

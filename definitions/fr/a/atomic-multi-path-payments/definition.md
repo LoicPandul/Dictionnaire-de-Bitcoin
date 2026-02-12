@@ -6,4 +6,4 @@ Dans les AMP, on utilise des secrets partiels uniques pour chaque fraction. Une 
 
 Un avantage des AMP est qu'ils fonctionnent même si seuls le receveur et l'envoyeur ont implémenté cette méthode. Les nœuds intermédiaires traitent ces paiements comme des transactions classiques en utilisant des HTLCs, sans être conscients qu'ils traitent des fractions d'un paiement plus important.
 
-> ► *On parle également parfois de « Atomic Multi-Part Payment » pour désigner cette même méthode. Pour plus d'informations, voir la définition de [**MULTI-PATH PAYMENTS (MPP)**](../m/multi-path-payments-mpp/definition.md).*
+*On parle également parfois de « Atomic Multi-Part Payment » pour désigner cette même méthode.*

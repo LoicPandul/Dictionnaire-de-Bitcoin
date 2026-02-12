@@ -5,5 +5,3 @@ Prenons l'exemple d'une entreprise désirant faire authentifier un document conf
 Les signatures aveugles de Chaum permettent donc de certifier l'authenticité d'un document sans en connaître le contenu, ce qui garantit à la fois la confidentialité des données de l'utilisateur et l'intégrité du document signé.
 
 Sur Bitcoin, on retrouve l'utilisation de ce protocole sur les systèmes de banques chaumiennes en surcouche (Cashu, Fedimint...), mais surtout dans les protocoles de coinjoins chaumiens, afin de s'assurer que le coordinateur ne soit pas en capacité de faire un lien entre un input et un output.
-
-> ► *Pour plus d'informations, voir la définition de **[CHAUMIAN COINJOIN](../c/chaumian-coinjoin/definition.md)**.*

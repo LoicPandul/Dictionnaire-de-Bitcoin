@@ -6,4 +6,4 @@ Cette cible est ajustée tous les 2016 blocs (environ toutes les deux semaines),
 
 ![](./assets/image-1.png)
 
-> ► *La cible de difficulté est parfois également nommée « facteur de difficulté ». Par extension, on peut l'évoquer avec son encodage dans les entêtes de bloc avec le terme « nBits ».*
+*La cible de difficulté est parfois également nommée « facteur de difficulté ». Par extension, on peut l'évoquer avec son encodage dans les entêtes de bloc avec le terme « nBits ».*

@@ -183,7 +183,7 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     for letter in dictionary.letters():
         sections.append(_create_letter_page(letter))
         for definition in dictionary.get_by_letter(letter):
-            sections.append(_format_definition(definition))
+            sections.append(_format_definition(definition, dictionary))
 
     # === PAGES FINALES ===
     sections.append("\\backmatter")
@@ -642,7 +642,7 @@ def _create_letter_page(letter: str) -> str:
 """
 
 
-def _format_definition(definition) -> str:
+def _format_definition(definition, dictionary=None) -> str:
     """Formate une définition pour le PDF."""
     parts = []
 
@@ -718,7 +718,61 @@ def _format_definition(definition) -> str:
     content = _markdown_to_latex(content)
     parts.append(content)
 
+    # Cross-references en fin de définition
+    if definition.cross_references and dictionary:
+        xref_latex = _render_cross_references(definition.cross_references, dictionary)
+        if xref_latex:
+            parts.append(xref_latex)
+
     parts.append(r"\vspace{0.8em}")
+
+    return "\n".join(parts)
+
+
+def _render_cross_references(cross_refs: list, dictionary) -> str:
+    """Génère le LaTeX pour les cross-references en fin de définition.
+
+    Même style visuel que les métadonnées (catégorie/traduction) :
+    bordure 0.3pt, fontsize 6/7, tabcolsep 4.5pt, strut identique.
+    Texte en gras, cliquable, aligné à droite, trié alphabétiquement.
+    """
+    # Résoudre les UUIDs en définitions
+    resolved = []
+    for ref_uuid in cross_refs:
+        target = dictionary.get_by_uuid(ref_uuid)
+        if target:
+            resolved.append(target)
+
+    if not resolved:
+        return ""
+
+    # Trier par titre alphabétique
+    resolved.sort(key=lambda d: d.title)
+
+    # Générer les fbox pour chaque référence
+    boxes = []
+    for target in resolved:
+        slug = _make_slug(target.title)
+        safe_title = _escape_latex(target.title)
+        box = (
+            r"\fbox{"
+            r"\rule[-2.5pt]{0pt}{9pt}"
+            rf"\hspace{{4.5pt}}\textbf{{\hyperlink{{{slug}}}{{{safe_title}}}}}\hspace{{4.5pt}}"
+            r"}"
+        )
+        boxes.append(box)
+
+    box_str = (r"\hspace{2pt}" + "\n").join(boxes)
+
+    parts = [
+        r"\par\nopagebreak",
+        r"{\raggedleft\fontsize{6}{7}\selectfont",
+        r"\setlength{\fboxrule}{0.3pt}%",
+        r"\setlength{\fboxsep}{0pt}%",
+        (r"Terme associ\'{e}\,:\hspace{3pt}%" if len(resolved) == 1 else r"Termes associ\'{e}s\,:\hspace{3pt}%"),
+        box_str,
+        r"\par}",
+    ]
 
     return "\n".join(parts)
 

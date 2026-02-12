@@ -49,5 +49,3 @@ Avec :
 * $n$ : l'ordre de la courbe elliptique `secp256k1`.
 
 En plus de cette version de base, on peut également utiliser des labels qui permettent de générer plusieurs adresses statiques différentes à partir d'une même adresse statique de base, dans le but de séparer plusieurs utilisations, sans pour autant multiplier irraisonnablement le travail requis lors du scanning.
-
-> ► *Pour plus d'informations, voir la définition de **[LABEL (SILENT PAYMENTS)](../l/label-silent-payments/definition.md)**.*

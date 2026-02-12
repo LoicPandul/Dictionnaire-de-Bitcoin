@@ -1,3 +1,3 @@
 Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript.
 
-> ► *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ». Pour plus d'informations, voir la définition de **[MINISCRIPT](../m/miniscript/definition.md)** et de **[TAPSCRIPT](../t/tapscript/definition.md)**.*
+*Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ».*

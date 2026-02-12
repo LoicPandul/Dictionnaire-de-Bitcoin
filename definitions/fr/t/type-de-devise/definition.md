@@ -6,5 +6,3 @@ Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type d
 * Ethereum : `0x8000003c`...
 
 ![](./assets/image-1.png)
-
-> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](../c/chemin-de-dérivation/definition.md).*

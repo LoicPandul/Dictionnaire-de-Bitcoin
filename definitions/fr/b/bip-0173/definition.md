@@ -3,5 +3,3 @@ Introduit le format d'adresse bech32 pour les adresses SegWit V0. Ce format d'ad
 * Il est plus facilement interprétable par les humains ;
 * Il dispose d'un mécanisme innovant pour la somme de contrôle qui est plus performant et permet de détecter et potentiellement de modifier automatiquement les fautes de frappe.
 Ces caractéristiques facilitent l'utilisation des adresses de réception tout en minimisant les risques d'erreurs.
-
-> ► *Pour plus d'informations, voir la définition de [**BECH32 ET BECH32M**](../b/bech32-et-bech32m/definition.md).*

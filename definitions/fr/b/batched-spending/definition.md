@@ -2,4 +2,4 @@ Technique de dépense employée principalement par les entités ayant un volume 
 
 ![](./assets/image-1.png)
 
-> ► *En français, on peut traduire « batched spending » par « dépense groupée ».*
+*En français, on peut traduire « batched spending » par « dépense groupée ».*

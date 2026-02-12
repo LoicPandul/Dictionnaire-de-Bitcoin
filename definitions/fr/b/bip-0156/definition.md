@@ -5,5 +5,3 @@ L'objectif du BIP-0156 est de traiter ce problème. Pour ce faire, il introduit 
 Cette méthode de routage brouille la piste menant au nœud source, rendant difficile de retracer une transaction via le réseau jusqu'à son origine. Dandelion améliore donc la confidentialité en limitant la capacité des adversaires à désanonymiser le réseau. Cette méthode est d'autant plus efficace lorsque la transaction croise durant la phase de « tige » un nœud qui chiffre ses communications réseau, comme avec Tor ou *P2P Transport V2*. Le BIP-0156 n'a pour le moment pas été ajouté à Bitcoin Core.
 
 ![](./assets/image-1.png)
-
-> ► *Pour plus d'informations, voir la définition de [**P2P TRANSPORT V2**](../p/p2p-transport-v2/definition.md).*

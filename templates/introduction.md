@@ -7,7 +7,7 @@ Chaque définition suit le format suivant :
 * Catégorie : Le domaine concerné (Cryptographie, Réseau, Portefeuille, etc.) ;
 * Traduction : L'équivalent anglais ou français du terme ;
 * Définition : L'explication détaillée du concept ;
-* Renvois : Les termes connexes à consulter.
+* Renvois : Les termes associés à cette définition.
 
 Pour une lecture efficace, n’hésitez pas à suivre les renvois : ils vous permettront de relier les notions entre elles et de progresser de définition en définition.
 

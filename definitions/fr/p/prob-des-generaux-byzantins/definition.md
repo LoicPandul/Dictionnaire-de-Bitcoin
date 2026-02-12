@@ -11,4 +11,4 @@ De plus, un général ne peut communiquer avec un autre que par le biais de mess
 
 Si on applique le dilemme au contexte de la blockchain Bitcoin, chaque général représente un nœud du réseau, devant parvenir à un consensus sur l'état du système. En d'autres termes, La majorité des participants d'un réseau distribué doivent se mettre d'accord et exécuter la même action afin d'éviter une défaillance totale. Le seul moyen de parvenir à un consensus dans ce type de système distribué est d'avoir au moins 2/3 des nœuds de réseau fiables et honnêtes. Donc, si la majorité du réseau décide d'agir de manière malveillante, le système est vulnérable.
 
-> ► *Ce dilemme est parfois également appelé « Problème de la diffusion cohérente ».*
+*Ce dilemme est parfois également appelé « Problème de la diffusion cohérente ».*

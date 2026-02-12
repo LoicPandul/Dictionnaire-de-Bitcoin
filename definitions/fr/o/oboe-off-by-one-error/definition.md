@@ -1,3 +1,1 @@
 Erreur de logique où une boucle itère une fois de trop ou de moins, souvent due à une mauvaise utilisation des opérateurs de comparaison ou de mauvais indices dans la gestion des structures de données. Dans le contexte de Bitcoin, on retrouve ce bug dans le cas du « *dummy element* » dans `OP_CHECKMULTISIG`, où un élément supplémentaire est consommé par erreur.
-
-> ► Pour plus d'informations, voir les définitions de [**DUMMY ELEMENT**](../d/dummy-element/definition.md) et [**BIP-0147**](../b/bip-0147/definition.md).*

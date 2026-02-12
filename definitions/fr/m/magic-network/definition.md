@@ -17,4 +17,4 @@ f9beb4d9
 fabfb5da
 ```
 
-> ► *C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*
+*C'est 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*

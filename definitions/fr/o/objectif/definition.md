@@ -5,5 +5,3 @@ Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif, défin
 * Pour du P2TR : `86'`.
 
 ![](./assets/image-1.png)
-
-> ► *Pour plus d'informations, voir la définition de [**CHEMIN DE DÉRIVATION**](../c/chemin-de-dérivation/definition.md).*

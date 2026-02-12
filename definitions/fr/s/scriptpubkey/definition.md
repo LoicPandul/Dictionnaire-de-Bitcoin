@@ -14,4 +14,4 @@ Le `scriptSig` correspondant serait :
 
 ![](./assets/image-1.png)
 
-> ► *Pour nommé ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*
+*Pour nommé ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*
