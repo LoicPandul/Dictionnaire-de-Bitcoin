@@ -1,7 +1,7 @@
 uuid: "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
 title: "TIMELOCK"
 slug: "timelock"
-category: "Protocole"
+category: "PROTOCOLE"
 french_term: "VERROUILLAGE TEMPOREL"
 cross_references:
   - "nlocktime"

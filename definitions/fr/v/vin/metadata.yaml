@@ -1,7 +1,7 @@
 uuid: "2c81d29e-66ab-4a84-8ecc-69805aa39e85"
 title: "VIN"
 slug: "vin"
-category: "Protocole"
+category: "PROTOCOLE"
 cross_references:
   - "nsequence"
 created_at: "2026-01-27"

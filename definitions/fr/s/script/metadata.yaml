@@ -1,7 +1,7 @@
 uuid: "ea7c727d-15eb-4bb2-8779-0362f1fa566c"
 title: "SCRIPT"
 slug: "script"
-category: "Script"
+category: "SCRIPT"
 cross_references:
   - "pile"
   - "opcodes"

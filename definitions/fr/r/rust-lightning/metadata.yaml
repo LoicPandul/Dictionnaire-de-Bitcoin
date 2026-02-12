@@ -1,7 +1,7 @@
 uuid: "4838d9ab-212e-4945-a46b-1b158bfa42f0"
 title: "RUST-LIGHTNING"
 slug: "rust-lightning"
-category: "Lightning Network"
+category: "LIGHTNING NETWORK"
 cross_references:
   - "ldk-lightning-dev-kit"
 created_at: "2026-01-27"

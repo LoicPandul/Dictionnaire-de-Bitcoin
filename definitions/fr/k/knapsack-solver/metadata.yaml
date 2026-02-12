@@ -1,7 +1,7 @@
 uuid: "3bded62b-9686-41e8-8f04-b0903f8d9482"
 title: "KNAPSACK SOLVER"
 slug: "knapsack-solver"
-category: "Portefeuille"
+category: "PORTEFEUILLE"
 cross_references:
   - "branch-and-bound"
 created_at: "2026-01-27"

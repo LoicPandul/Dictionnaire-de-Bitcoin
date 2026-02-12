@@ -1,7 +1,7 @@
 uuid: "3324d1a5-005e-4453-809a-3c4ab2062282"
 title: "MULTI-PATH PAYMENTS - MPP"
 slug: "multi-path-payments-mpp"
-category: "Lightning Network"
+category: "LIGHTNING NETWORK"
 french_term: "PAIEMENTS MULTICHEMINS"
 cross_references:
   - "atomic-multi-path-payments"

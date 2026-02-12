@@ -1,7 +1,7 @@
 uuid: "89f252be-530d-4502-ac02-552058abdc1c"
 title: "OP_CHECKSEQUENCEVERIFY - 0XB2"
 slug: "op-checksequenceverify-0xb2"
-category: "Script"
+category: "SCRIPT"
 cross_references:
   - "nsequence"
 created_at: "2026-01-27"

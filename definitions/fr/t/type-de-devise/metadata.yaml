@@ -1,7 +1,7 @@
 uuid: "c1574db6-f193-4f77-beb4-cbb3c54b28eb"
 title: "TYPE DE DEVISE"
 slug: "type-de-devise"
-category: "Portefeuille"
+category: "PORTEFEUILLE"
 english_term: "COIN TYPE"
 cross_references:
   - "chemin-de-dérivation"

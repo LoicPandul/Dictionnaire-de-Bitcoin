@@ -1,7 +1,7 @@
 uuid: "2f329b85-fc19-43e1-b904-e7644daf3659"
 title: "RACINE DE MERKLE"
 slug: "racine-de-merkle"
-category: "Cryptographie"
+category: "CRYPTOGRAPHIE"
 english_term: "MERKLE ROOT"
 cross_references:
   - "arbre-de-merkle"

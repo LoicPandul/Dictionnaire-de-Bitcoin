@@ -1,7 +1,7 @@
 uuid: "e82a4a01-5624-4112-b620-b9fd0eff81bb"
 title: "CONDENSAT"
 slug: "condensat"
-category: "Cryptographie"
+category: "CRYPTOGRAPHIE"
 english_term: "DIGEST / HASH"
 cross_references:
   - "fonction-de-hachage"

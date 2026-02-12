@@ -1,7 +1,7 @@
 uuid: "46d9de8a-69c5-4b21-99d6-e88ae46e3b02"
 title: "LIBSECP256K1"
 slug: "libsecp256k1"
-category: "Protocole"
+category: "PROTOCOLE"
 cross_references:
   - "secp256k1"
 created_at: "2026-01-27"

@@ -1,7 +1,7 @@
 uuid: "b365a328-efd9-4bf5-861c-4cab3cfbf9af"
 title: "BLOOM FILTER"
 slug: "bloom-filter"
-category: "Réseau"
+category: "RÉSEAU"
 cross_references:
   - "bip-0037"
 created_at: "2026-01-27"

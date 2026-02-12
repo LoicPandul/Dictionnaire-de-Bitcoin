@@ -1,7 +1,7 @@
 uuid: "99c4221b-0b2d-47e5-b608-1d5610c85e9b"
 title: "RIPEMD160"
 slug: "ripemd160"
-category: "Cryptographie"
+category: "CRYPTOGRAPHIE"
 cross_references:
   - "fonction-de-hachage"
 created_at: "2026-01-27"

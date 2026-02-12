@@ -1,7 +1,7 @@
 uuid: "c0854b23-f72a-4b47-96a1-ea3efc0e2fec"
 title: "SDK - SOFTWARE DEVELOPMENT KIT"
 slug: "sdk-software-development-kit"
-category: "Outil"
+category: "OUTIL"
 cross_references:
   - "bdk-bitcoin-dev-kit"
   - "ldk-lightning-dev-kit"

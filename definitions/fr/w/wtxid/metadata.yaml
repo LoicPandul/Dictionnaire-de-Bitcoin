@@ -1,7 +1,7 @@
 uuid: "40e2afec-6d48-4999-9667-54d17e8f4c44"
 title: "WTXID"
 slug: "wtxid"
-category: "Protocole"
+category: "PROTOCOLE"
 cross_references:
   - "txid-transaction-identifier"
   - "segwit"

@@ -1,7 +1,7 @@
 uuid: "51015851-5323-43ca-8d32-c7c1c1d9847f"
 title: "SIGNATURE AVEUGLE"
 slug: "signature-aveugle"
-category: "Cryptographie"
+category: "CRYPTOGRAPHIE"
 english_term: "BLIND SIGNATURE"
 cross_references:
   - "chaumian-coinjoin"

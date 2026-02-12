@@ -1,7 +1,7 @@
 uuid: "3c2e851b-3e96-4900-a235-9a41cc97adea"
 title: "HD - HIERARCHICAL-DETERMINISTIC"
 slug: "hd-hierarchical-deterministic"
-category: "Portefeuille"
+category: "PORTEFEUILLE"
 french_term: "DÉTERMINISTE ET HIÉRARCHIQUE"
 cross_references:
   - "bip-0032"

@@ -1,7 +1,7 @@
 uuid: "94d4732f-279a-4473-b0a1-c2620b16394c"
 title: "SHA512"
 slug: "sha512"
-category: "Cryptographie"
+category: "CRYPTOGRAPHIE"
 cross_references:
   - "fonction-de-hachage"
 created_at: "2026-01-27"

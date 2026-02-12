@@ -1,22 +1,21 @@
 # Liste des catégories de définitions du glossaire
 categories:
-  - Attaque
+  - ATTAQUE
   - BIP
-  - Communauté
-  - Confidentialité
-  - Couche supérieure
-  - Cryptographie
-  - Économie et régulation
-  - Histoire
-  - Informatique
-  - Lightning Network
-  - Minage
-  - Organisation
-  - Outil
-  - Outils
-  - Portefeuille
-  - Protocole
+  - COMMUNAUTÉ
+  - CONFIDENTIALITÉ
+  - COUCHE SUPÉRIEURE
+  - CRYPTOGRAPHIE
+  - ÉCONOMIE ET RÉGULATION
+  - HISTOIRE
+  - INFORMATIQUE
+  - LIGHTNING NETWORK
+  - MINAGE
+  - ORGANISATION
+  - OUTIL
+  - PORTEFEUILLE
+  - PROTOCOLE
   - RGB
-  - Réseau
-  - Script
-  - Sidechain
+  - RÉSEAU
+  - SCRIPT
+  - SIDECHAIN
