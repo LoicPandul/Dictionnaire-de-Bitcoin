@@ -704,10 +704,10 @@ def _format_definition(definition) -> str:
             rf"\rule[-2.5pt]{{0pt}}{{9pt}}{cell_str} \\ \hline"
             r"\end{tabular}}"
         )
-        parts.append(r"\vspace{0.1em}")
+        parts.append(r"\vspace{0.05em}")
         parts.append(rf"\noindent {meta_block}")
 
-    parts.append(r"\vspace{0.1em}")
+    parts.append(r"\vspace{0.05em}")
     parts.append("")
 
     # Contenu
