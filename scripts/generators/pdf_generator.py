@@ -23,6 +23,29 @@ MOIS_FR = {
     9: "septembre", 10: "octobre", 11: "novembre", 12: "décembre"
 }
 
+# Mapping catégorie → nom du fichier pictogramme (sans extension)
+CATEGORY_PICTOGRAMS = {
+    'ATTAQUE': 'attaque',
+    'BIP': 'bip',
+    'COMMUNAUTÉ': 'communaute',
+    'CONFIDENTIALITÉ': 'confidentialite',
+    'COUCHE SUPÉRIEURE': 'couche-superieure',
+    'CRYPTOGRAPHIE': 'cryptographie',
+    'ÉCONOMIE ET RÉGULATION': 'economie-et-regulation',
+    'HISTOIRE': 'histoire',
+    'INFORMATIQUE': 'informatique',
+    'LIGHTNING NETWORK': 'lightning-network',
+    'MINAGE': 'minage',
+    'ORGANISATION': 'organisation',
+    'OUTIL': 'outil',
+    'PORTEFEUILLE': 'portefeuille',
+    'PROTOCOLE': 'protocole',
+    'RÉSEAU': 'reseau',
+    'RGB': 'rgb',
+    'SCRIPT': 'script',
+    'SIDECHAIN': 'sidechain',
+}
+
 
 def _load_legal_info() -> dict:
     """Charge les informations légales depuis le fichier YAML."""
@@ -250,7 +273,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 ]{hyperref}
 \urlstyle{same}
 
-% Images et TikZ pour les drapeaux
+% Images et TikZ
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{tikz}
@@ -390,7 +413,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 
 % Commande pour vedette ajustée à la largeur du texte (cartouche noire)
 \newcommand{\vedettefit}[1]{%
-    \noindent\fcolorbox{black}{black}{%
+    \fcolorbox{black}{black}{%
         \hspace{0.3em}%
         {\color{white}\fontsize{9}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
         \hspace{0.3em}%
@@ -404,25 +427,6 @@ def _generate_preamble(fonts_path: str = "") -> str:
         {\color{white}\fontsize{11}{13}\selectfont\bfseries #1}%
         \hspace{0.2em}%
     }%
-}
-
-% Drapeaux en nuances de gris
-\newcommand{\flagGB}{%
-    \begin{tikzpicture}[baseline=-0.3ex, scale=0.12]
-        \fill[gray!30] (0,0) rectangle (3,2);
-        \fill[gray!60] (1.35,0) rectangle (1.65,2);
-        \fill[gray!60] (0,0.85) rectangle (3,1.15);
-        \draw[gray!80, line width=0.3pt] (0,0) -- (3,2);
-        \draw[gray!80, line width=0.3pt] (0,2) -- (3,0);
-    \end{tikzpicture}%
-}
-
-\newcommand{\flagFR}{%
-    \begin{tikzpicture}[baseline=-0.3ex, scale=0.12]
-        \fill[gray!40] (0,0) rectangle (1,2);
-        \fill[gray!15] (1,0) rectangle (2,2);
-        \fill[gray!60] (2,0) rectangle (3,2);
-    \end{tikzpicture}%
 }
 
 % Pour éviter les orphelins de lettres dans TDM
@@ -658,32 +662,53 @@ def _format_definition(definition) -> str:
     # Ancre hypertexte
     parts.append(rf"\hypertarget{{{slug}}}{{}}")
 
-    # Vedette (cartouche noire)
-    parts.append(rf"\vedettefit{{{safe_title}}}")
-    parts.append(r"\vspace{-0.3em}")
-    parts.append("")
+    # Vedette (cartouche noire) sur sa propre ligne, \par force le retour à la ligne
+    parts.append(rf"\noindent\vedettefit{{{safe_title}}}\par")
 
-    # Ligne de métadonnées
-    metadata_parts = []
+    # Métadonnées (catégorie + traduction) sous la vedette dans un tabular unique
+    # Catégorie toujours en colonne gauche, traduction en colonne droite
+    meta_cells = []
 
+    # Catégorie avec pictogramme (colonne gauche)
     if definition.category:
         cat = definition.category
-        cat_formatted = cat[0].upper() + cat[1:].lower() if cat else ""
-        safe_cat = _escape_latex(cat_formatted)
-        metadata_parts.append(safe_cat)
+        safe_cat = _escape_latex(cat)
+        picto_name = CATEGORY_PICTOGRAMS.get(cat, '')
+        if picto_name:
+            picto_path = str(BASE_DIR / "assets" / "pictograms" / f"{picto_name}.pdf").replace('\\', '/')
+            meta_cells.append(
+                rf"\raisebox{{-0.5pt}}{{\includegraphics[height=5.5pt]{{{picto_path}}}}}\hspace{{0.3em}}{safe_cat}"
+            )
+        else:
+            meta_cells.append(safe_cat)
 
+    # Traduction (colonne droite)
     if definition.english_term:
         safe_term = _escape_latex(definition.english_term)
-        metadata_parts.append(rf"\flagGB\ {safe_term}")
+        meta_cells.append(rf"EN\,: {safe_term}")
     elif definition.french_term:
         safe_term = _escape_latex(definition.french_term)
-        metadata_parts.append(rf"\flagFR\ {safe_term}")
+        meta_cells.append(rf"FR\,: {safe_term}")
 
-    if metadata_parts:
-        metadata_line = r" \textperiodcentered\ ".join(metadata_parts)
-        parts.append(rf"\noindent{{\scriptsize {metadata_line}}}")
-        parts.append(r"\vspace{-0.3em}")
-        parts.append("")
+    if meta_cells:
+        num_cols = len(meta_cells)
+        col_spec = '|' + '|'.join(['c'] * num_cols) + '|'
+        cell_str = ' & '.join(meta_cells)
+        meta_block = (
+            r"{\fontsize{6}{7}\selectfont"
+            r"\setlength{\tabcolsep}{4.5pt}"
+            r"\arrayrulecolor{black}"
+            r"\setlength{\arrayrulewidth}{0.3pt}"
+            rf"\begin{{tabular}}{{{col_spec}}}"
+            r"\hline "
+            rf"\rule[-2.5pt]{{0pt}}{{9pt}}{cell_str} \\ \hline"
+            r"\end{tabular}}"
+        )
+        parts.append(r"\vspace{0.1em}")
+        parts.append(rf"\noindent {meta_block}")
+
+    parts.append(r"\vspace{0.1em}")
+    parts.append("")
 
     # Contenu
     content = definition.content

@@ -8,7 +8,7 @@
 
 - **Nombre total de définitions** : 847
 - **Nombre de lettres utilisées** : 26
-- **Nombre de catégories** : 20
+- **Nombre de catégories** : 19
 
 ## Définitions par lettre
 
@@ -51,26 +51,25 @@
 
 ## Catégories
 
-- **Protocole** : 143
-- **Script** : 104
+- **PROTOCOLE** : 143
+- **SCRIPT** : 104
 - **BIP** : 83
-- **Portefeuille** : 77
-- **Minage** : 57
-- **Confidentialité** : 52
-- **Informatique** : 52
-- **Cryptographie** : 41
+- **PORTEFEUILLE** : 77
+- **MINAGE** : 57
+- **CONFIDENTIALITÉ** : 52
+- **INFORMATIQUE** : 52
+- **CRYPTOGRAPHIE** : 41
 - **RGB** : 37
-- **Lightning Network** : 37
-- **Réseau** : 32
-- **Économie et régulation** : 31
-- **Histoire** : 28
-- **Attaque** : 24
-- **Couche supérieure** : 23
-- **Sidechain** : 9
-- **Communauté** : 8
-- **Outil** : 6
-- **Organisation** : 2
-- **Outils** : 1
+- **LIGHTNING NETWORK** : 37
+- **RÉSEAU** : 32
+- **ÉCONOMIE ET RÉGULATION** : 31
+- **HISTOIRE** : 28
+- **ATTAQUE** : 24
+- **COUCHE SUPÉRIEURE** : 23
+- **SIDECHAIN** : 9
+- **COMMUNAUTÉ** : 8
+- **OUTIL** : 7
+- **ORGANISATION** : 2
 
 ## Termes les plus fréquents
 
