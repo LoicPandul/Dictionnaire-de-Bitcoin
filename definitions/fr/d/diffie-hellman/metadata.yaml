@@ -2,5 +2,8 @@ uuid: "621356ed-02e1-48bd-aa8b-3774001d445d"
 title: "DIFFIE-HELLMAN"
 slug: "diffie-hellman"
 category: "CRYPTOGRAPHIE"
+cross_references:
+  - "c6772aaa-b0b3-4c35-9658-a3ca15b06e85"
+  - "a0fc55d0-9a76-44c0-8669-fb4062bec4ec"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

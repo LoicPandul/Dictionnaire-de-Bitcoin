@@ -2,5 +2,8 @@ uuid: "404a66ec-fad7-45c6-8b32-58857e09b057"
 title: "ENGRAVING"
 slug: "engraving"
 category: "RGB"
+cross_references:
+  - "eb33b187-d911-4256-a14a-5f554786e91d"
+  - "8c16730a-03a0-43ea-b175-5000922bb022"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

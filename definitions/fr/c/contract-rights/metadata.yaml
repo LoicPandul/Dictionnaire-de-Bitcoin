@@ -2,5 +2,8 @@ uuid: "a63da214-1470-4dd7-aa04-8009088924d1"
 title: "CONTRACT RIGHTS"
 slug: "contract-rights"
 category: "RGB"
+cross_references:
+  - "70721e3f-305d-4602-9c6e-9d269751e6c9"
+  - "8c16730a-03a0-43ea-b175-5000922bb022"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "502bca8f-c772-4aad-b397-4816442dfa1b"
 title: "DDOS"
 slug: "ddos"
 category: "ATTAQUE"
+cross_references:
+  - "63d911ff-f184-46c1-a1fc-d05864330bd1"
+  - "fd394e4b-9289-45f7-8fb2-ce21aec7dc2b"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

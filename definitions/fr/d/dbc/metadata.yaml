@@ -2,5 +2,8 @@ uuid: "df05b4b2-cb87-4cfb-8562-d66b0f56ce91"
 title: "DBC"
 slug: "dbc"
 category: "RGB"
+cross_references:
+  - "74ca7f47-2853-48a7-a2b8-21ba593ad3fa"
+  - "3a14cd4f-59a9-4b45-bb92-5370d7b50480"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "b3a6e8eb-b4bb-4e94-9c46-225973b2fc48"
 title: "ECASH - DAVID CHAUM"
 slug: "ecash-david-chaum"
 category: "HISTOIRE"
+cross_references:
+  - "fb6c88ad-769d-4730-b3bd-e4fe07817fb5"
+  - "51015851-5323-43ca-8d32-c7c1c1d9847f"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

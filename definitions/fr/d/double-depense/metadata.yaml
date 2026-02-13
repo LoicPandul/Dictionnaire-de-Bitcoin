@@ -3,5 +3,8 @@ title: "DOUBLE DÉPENSE"
 slug: "double-depense"
 category: "ATTAQUE"
 english_term: "DOUBLE SPENDING ATTACK"
+cross_references:
+  - "514f838b-ca24-4319-8595-508adb708d7f"
+  - "3509bb0a-1f57-4784-905f-e08a03bd2d2a"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

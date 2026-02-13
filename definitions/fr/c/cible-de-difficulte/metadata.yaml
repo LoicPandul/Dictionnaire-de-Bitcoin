@@ -2,6 +2,9 @@ uuid: "c6775cf9-b4bd-404e-bd93-71dda95b0358"
 title: "CIBLE DE DIFFICULTÉ"
 slug: "cible-de-difficulte"
 category: "MINAGE"
+cross_references:
+  - "eb4746cd-64d5-45b2-a766-35ba7e8da9e2"
+  - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
 english_term: "DIFFICULTY TARGET"
 assets:
   - filename: "image-1.png"

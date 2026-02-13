@@ -3,5 +3,8 @@ title: "DLP - DISCREET LOGARITHM PROBLEME"
 slug: "dlp-discreet-log-probleme"
 category: "CRYPTOGRAPHIE"
 french_term: "PROBLÈME DU LOGARITHME DISCRET"
+cross_references:
+  - "621356ed-02e1-48bd-aa8b-3774001d445d"
+  - "a4902301-5664-4d64-bdcd-0a1027408fdc"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

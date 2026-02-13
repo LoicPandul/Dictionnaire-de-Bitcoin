@@ -2,6 +2,9 @@ uuid: "d1af921f-2a71-4f7a-a6ae-ee425e64b289"
 title: "CONSOLIDATION"
 slug: "consolidation"
 category: "PORTEFEUILLE"
+cross_references:
+  - "42910651-6f20-487e-a9c4-5e75433ee369"
+  - "769b9c1b-03b7-4b00-8ed6-b2d8a0729506"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

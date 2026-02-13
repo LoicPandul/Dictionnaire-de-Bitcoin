@@ -2,5 +2,8 @@ uuid: "eb71934d-67e6-4793-8353-bb0d2c81e4b3"
 title: "CPFP - CHILD PAY FOR PARENT"
 slug: "cpfp-child-pay-for-parent"
 category: "PORTEFEUILLE"
+cross_references:
+  - "d3fc35ff-180c-41a8-839c-381a57a2f174"
+  - "626b8bf7-467a-496d-ba81-63cdc8d5f058"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

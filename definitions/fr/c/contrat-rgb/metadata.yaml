@@ -2,5 +2,8 @@ uuid: "eb33b187-d911-4256-a14a-5f554786e91d"
 title: "CONTRAT RGB"
 slug: "contrat-rgb"
 category: "RGB"
+cross_references:
+  - "d6efa179-e094-4127-940e-50647d887468"
+  - "858d0831-1f1e-4336-acb4-022fa80f3da9"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

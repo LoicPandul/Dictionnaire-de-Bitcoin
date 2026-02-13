@@ -2,6 +2,9 @@ uuid: "080efa61-7f74-4d60-9ee4-4fa10920b967"
 title: "CHEMIN DE DÉRIVATION"
 slug: "chemin-de-derivation"
 category: "PORTEFEUILLE"
+cross_references:
+  - "60f0a3c9-56fc-4fc8-bb54-d542d0434b8a"
+  - "48ca705c-705a-46e2-b5a8-237ab7ebda1b"
 english_term: "DERIVATION PATH"
 assets:
   - filename: "image-1.png"

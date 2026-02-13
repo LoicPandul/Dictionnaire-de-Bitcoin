@@ -2,6 +2,9 @@ uuid: "22fa77ad-309c-4eb1-91ae-d710b9ae9a6d"
 title: "CLÉ PUBLIQUE COMPRESSÉE"
 slug: "cle-publique-compressee"
 category: "PORTEFEUILLE"
+cross_references:
+  - "aa1fee82-5009-41ce-9821-614fb59dfef3"
+  - "da773fd3-c1e6-43fb-8764-2cca100725d5"
 english_term: "COMPRESSED PUBLIC KEY"
 assets:
   - filename: "image-1.png"

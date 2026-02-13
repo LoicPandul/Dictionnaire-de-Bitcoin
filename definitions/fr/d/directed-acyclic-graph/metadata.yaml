@@ -3,5 +3,8 @@ title: "DIRECTED ACYCLIC GRAPH"
 slug: "directed-acyclic-graph"
 category: "RGB"
 french_term: "GRAPHE ORIENTÉ ACYCLIQUE"
+cross_references:
+  - "3a14cd4f-59a9-4b45-bb92-5370d7b50480"
+  - "8c16730a-03a0-43ea-b175-5000922bb022"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
