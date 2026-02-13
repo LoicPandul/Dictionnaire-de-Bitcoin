@@ -2,5 +2,8 @@ uuid: "df9f4710-c85b-43a7-ba90-edc249eb2252"
 title: "OWNERSHIP"
 slug: "ownership"
 category: "RGB"
+cross_references:
+  - "4fb11b8b-b258-49fa-b451-c01ab0bcb9a1"
+  - "70721e3f-305d-4602-9c6e-9d269751e6c9"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

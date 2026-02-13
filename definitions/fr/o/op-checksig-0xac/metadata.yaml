@@ -2,5 +2,8 @@ uuid: "5108d669-f96f-40dc-815e-5665bdf5848f"
 title: "OP_CHECKSIG - 0XAC"
 slug: "op-checksig-0xac"
 category: "SCRIPT"
+cross_references:
+  - "0c2203a2-cf73-4328-877d-ec149d48817e"
+  - "47b5ee48-88cf-4653-b9de-17e0afcdd408"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

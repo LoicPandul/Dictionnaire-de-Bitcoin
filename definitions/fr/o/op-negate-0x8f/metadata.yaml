@@ -2,5 +2,8 @@ uuid: "cdc2973c-3096-4f6e-ad86-584259de56e9"
 title: "OP_NEGATE - 0X8F"
 slug: "op-negate-0x8f"
 category: "SCRIPT"
+cross_references:
+  - "be9a5c03-7500-42b4-bf1d-6a8e96a6a4ea"
+  - "eeced097-5ca4-4e4b-9d6b-71809a504616"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

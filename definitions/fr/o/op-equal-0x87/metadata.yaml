@@ -2,5 +2,8 @@ uuid: "e033d3e1-5611-43b1-a9d4-531312433697"
 title: "OP_EQUAL - 0X87"
 slug: "op-equal-0x87"
 category: "SCRIPT"
+cross_references:
+  - "e928456c-21e9-4719-b7b3-e08f30077e4f"
+  - "3b5e46d7-4fb2-40a2-875b-86b8975d683e"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

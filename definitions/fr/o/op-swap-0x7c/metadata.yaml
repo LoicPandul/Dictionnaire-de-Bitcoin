@@ -2,5 +2,8 @@ uuid: "d491965e-9cd1-4bd5-9c97-3c6a5e04b142"
 title: "OP_SWAP - 0X7C"
 slug: "op-swap-0x7c"
 category: "SCRIPT"
+cross_references:
+  - "33468159-8dc6-4748-b87b-f09b37ce447a"
+  - "ac60e08d-4d7b-4f43-8837-5f93f80d2369"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "e396070a-5b7f-4690-bdf9-7adb92f528e9"
 title: "OP_NIP - 0X77"
 slug: "op-nip-0x77"
 category: "SCRIPT"
+cross_references:
+  - "5baa2c1f-e52a-413e-b6fd-a07adac8e1e1"
+  - "2f06ddac-bff4-4b60-ab9b-108ad771f29c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

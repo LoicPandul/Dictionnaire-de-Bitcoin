@@ -2,5 +2,8 @@ uuid: "869f42ba-ee24-4f5a-83cd-1c9b1f467004"
 title: "OP_GREATERTHAN - 0XA0"
 slug: "op-greaterthan-0xa0"
 category: "SCRIPT"
+cross_references:
+  - "9494a393-bae7-40a7-8497-422f2e542616"
+  - "cb7935a4-0ffd-4f11-b754-36de6cfbd9ae"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

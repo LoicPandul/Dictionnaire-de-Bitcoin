@@ -2,5 +2,8 @@ uuid: "31274903-119b-405f-ac3e-e10a6d819a9c"
 title: "OP_WITHIN - 0XA5"
 slug: "op-within-0xa5"
 category: "SCRIPT"
+cross_references:
+  - "9494a393-bae7-40a7-8497-422f2e542616"
+  - "cb7935a4-0ffd-4f11-b754-36de6cfbd9ae"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

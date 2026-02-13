@@ -2,5 +2,8 @@ uuid: "4553c372-a52e-4da5-85a1-d07f9e27bdfa"
 title: "OP_2DROP - 0XD6"
 slug: "op-2drop-0xd6"
 category: "SCRIPT"
+cross_references:
+  - "5baa2c1f-e52a-413e-b6fd-a07adac8e1e1"
+  - "e396070a-5b7f-4690-bdf9-7adb92f528e9"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "4b2e959b-217f-407a-9a1d-0660999d0cdc"
 title: "OP_VERIFY - 0X69"
 slug: "op-verify-0x69"
 category: "SCRIPT"
+cross_references:
+  - "e928456c-21e9-4719-b7b3-e08f30077e4f"
+  - "0c2203a2-cf73-4328-877d-ec149d48817e"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "9177a343-e1d2-4f83-8170-7f2cd91c6e23"
 title: "OP_DEPTH - 0X74"
 slug: "op-depth-0x74"
 category: "SCRIPT"
+cross_references:
+  - "ac60e08d-4d7b-4f43-8837-5f93f80d2369"
+  - "359c143a-aa73-4c6f-89ea-a3670e659054"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

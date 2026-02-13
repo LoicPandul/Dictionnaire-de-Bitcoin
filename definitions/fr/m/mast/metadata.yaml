@@ -2,5 +2,8 @@ uuid: "38c18734-0ae2-4645-9992-a6396a631f08"
 title: "MAST"
 slug: "mast"
 category: "CRYPTOGRAPHIE"
+cross_references:
+  - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
+  - "37a83a88-5744-44df-862a-a68dadb160cf"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

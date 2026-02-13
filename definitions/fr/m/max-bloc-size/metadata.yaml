@@ -2,5 +2,8 @@ uuid: "dee6a89c-9d71-492c-9905-c652cd8efcc3"
 title: "MAX_BLOC_SIZE"
 slug: "max-bloc-size"
 category: "PROTOCOLE"
+cross_references:
+  - "dd7fef86-8eb0-4ed5-ba65-899c7374b274"
+  - "5e8e92ec-5848-47bb-b47e-92f655ee1c7f"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

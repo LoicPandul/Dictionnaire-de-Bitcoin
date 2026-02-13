@@ -2,5 +2,8 @@ uuid: "3b5e46d7-4fb2-40a2-875b-86b8975d683e"
 title: "OP_NUMEQUAL - 0X9C"
 slug: "op-numequal-0x9c"
 category: "SCRIPT"
+cross_references:
+  - "a84a3e6f-ebc7-44fd-a4f5-607e1269851f"
+  - "d8d073ff-cb4c-4159-bf50-9713261290bd"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

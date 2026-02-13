@@ -4,5 +4,8 @@ slug: "miniscript"
 category: "SCRIPT"
 assets:
   - filename: "image-1.png"
+cross_references:
+  - "ea7c727d-15eb-4bb2-8779-0362f1fa566c"
+  - "a7440e2a-a951-4a73-9350-2321d8cb900c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

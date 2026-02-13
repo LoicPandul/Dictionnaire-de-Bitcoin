@@ -2,5 +2,8 @@ uuid: "b0e0c7c8-0e77-4434-b376-b40fcde70959"
 title: "ONION_PRIVATE_KEY"
 slug: "onion-private-key"
 category: "RÉSEAU"
+cross_references:
+  - "ed1cda46-11ad-481b-9b9d-81673eca37fc"
+  - "18a8053d-8091-4185-992e-2eb9d62ac05c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "ebaf4927-26cb-40ee-affd-c6c58a66bfee"
 title: "OP_NOT - 0X91"
 slug: "op-not-0x91"
 category: "SCRIPT"
+cross_references:
+  - "df759b80-b4c7-4669-ac43-18e2d2e6c883"
+  - "cdc2973c-3096-4f6e-ad86-584259de56e9"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

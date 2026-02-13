@@ -2,5 +2,8 @@ uuid: "e928456c-21e9-4719-b7b3-e08f30077e4f"
 title: "OP_EQUALVERIFY - 0X88"
 slug: "op-equalverify-0x88"
 category: "SCRIPT"
+cross_references:
+  - "e033d3e1-5611-43b1-a9d4-531312433697"
+  - "4b2e959b-217f-407a-9a1d-0660999d0cdc"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
