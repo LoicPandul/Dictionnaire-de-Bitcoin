@@ -2,5 +2,8 @@ uuid: "6913b5ed-5b2f-448f-8e1e-b3399d321e45"
 title: "GITHUB"
 slug: "github"
 category: "INFORMATIQUE"
+cross_references:
+  - "684e2c16-bab8-402c-9c29-2fd6d214c92e"
+  - "0c809ed2-0373-4cd2-b595-46f71e9bc2f6"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "4daf8f9e-acb0-44a7-91f7-1304b03f65c8"
 title: "LEVELDB"
 slug: "leveldb"
 category: "PROTOCOLE"
+cross_references:
+  - "1b8e2ba3-2faa-4e68-9fef-feace1737cc2"
+  - "6d901ba9-bd35-4f90-b8ef-6a56caef18b6"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

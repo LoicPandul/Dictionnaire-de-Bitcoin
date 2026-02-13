@@ -2,5 +2,8 @@ uuid: "f550b498-51cb-42b9-9c78-0e729e30e696"
 title: "ISSUE"
 slug: "issue"
 category: "INFORMATIQUE"
+cross_references:
+  - "6913b5ed-5b2f-448f-8e1e-b3399d321e45"
+  - "0c809ed2-0373-4cd2-b595-46f71e9bc2f6"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

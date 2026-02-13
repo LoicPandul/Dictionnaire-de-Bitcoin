@@ -2,5 +2,8 @@ uuid: "9ae4a06d-01b3-484a-b7f3-c9502776d6af"
 title: "GUI"
 slug: "gui"
 category: "INFORMATIQUE"
+cross_references:
+  - "2428e622-5cc7-40da-af61-d9df91119234"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

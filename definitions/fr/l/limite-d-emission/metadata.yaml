@@ -2,5 +2,8 @@ uuid: "3b3f43be-02c1-4aa8-8286-6e9b328214fe"
 title: "LIMITE D'ÉMISSION"
 slug: "limite-d-emission"
 category: "PROTOCOLE"
+cross_references:
+  - "8bb02eb3-92a6-4720-8b52-782bfe0517f2"
+  - "a0ba6bcd-7eca-4953-afc3-ba737aefa644"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

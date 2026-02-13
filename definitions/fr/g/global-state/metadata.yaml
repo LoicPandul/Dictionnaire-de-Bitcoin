@@ -2,5 +2,8 @@ uuid: "3b467f0a-ae1e-4e9e-8869-78574b57ff5e"
 title: "GLOBAL STATE"
 slug: "global-state"
 category: "RGB"
+cross_references:
+  - "4fb11b8b-b258-49fa-b451-c01ab0bcb9a1"
+  - "a64c6263-b1aa-423a-a1b4-3faeefb3decf"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

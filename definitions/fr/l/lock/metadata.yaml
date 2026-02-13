@@ -2,5 +2,8 @@ uuid: "397a1a79-8d44-4883-b39e-a89ce5f55f4e"
 title: "LOCK"
 slug: "lock"
 category: "PROTOCOLE"
+cross_references:
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "b3f59e7b-5f94-46d6-92fe-77d76176e816"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "a64c6263-b1aa-423a-a1b4-3faeefb3decf"
 title: "GENESIS"
 slug: "genesis"
 category: "RGB"
+cross_references:
+  - "eb33b187-d911-4256-a14a-5f554786e91d"
+  - "d6efa179-e094-4127-940e-50647d887468"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

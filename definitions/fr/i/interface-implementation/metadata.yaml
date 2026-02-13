@@ -2,5 +2,8 @@ uuid: "f798a1a9-516c-49f9-8e6a-22f3b7e6e017"
 title: "INTERFACE IMPLEMENTATION"
 slug: "interface-implementation"
 category: "RGB"
+cross_references:
+  - "75fde292-fef3-46ef-bd10-0a0643141233"
+  - "d6efa179-e094-4127-940e-50647d887468"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

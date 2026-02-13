@@ -2,5 +2,8 @@ uuid: "13a2cf45-2c9f-4aea-8eb4-30740910ec9d"
 title: "LATENCE"
 slug: "latence"
 category: "RÉSEAU"
+cross_references:
+  - "fe21d359-96e4-4ecc-976c-8410360faa1b"
+  - "544bf8c2-a00d-44ca-8723-12f035bd8434"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

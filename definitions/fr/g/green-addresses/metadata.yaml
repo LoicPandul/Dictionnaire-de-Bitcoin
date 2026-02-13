@@ -2,5 +2,8 @@ uuid: "541e12ba-975f-4c95-a040-2fc8b8a3b636"
 title: "GREEN ADDRESSES"
 slug: "green-addresses"
 category: "PORTEFEUILLE"
+cross_references:
+  - "c6e3085c-e793-4dd3-aef6-7357dba80a34"
+  - "3509bb0a-1f57-4784-905f-e08a03bd2d2a"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

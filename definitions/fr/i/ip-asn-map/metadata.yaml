@@ -2,5 +2,8 @@ uuid: "db3c0493-b075-467f-995c-904fa6fb2569"
 title: "IP_ASN.MAP"
 slug: "ip-asn-map"
 category: "RÉSEAU"
+cross_references:
+  - "26c554cc-92a8-4686-83d6-4a8e2185a2a0"
+  - "15517b75-d562-4a34-961d-2842fb96a1ff"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

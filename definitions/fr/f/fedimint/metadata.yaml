@@ -2,5 +2,8 @@ uuid: "fb6c88ad-769d-4730-b3bd-e4fe07817fb5"
 title: "FEDIMINT"
 slug: "fedimint"
 category: "COUCHE SUPÉRIEURE"
+cross_references:
+  - "b3a6e8eb-b4bb-4e94-9c46-225973b2fc48"
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "df946e85-6445-43e0-bfc0-a892159e58c6"
 title: "LCB/FT"
 slug: "lcb-ft"
 category: "ÉCONOMIE ET RÉGULATION"
+cross_references:
+  - "dd41eeea-1a18-4795-87e5-bd2cbbdcfff2"
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
