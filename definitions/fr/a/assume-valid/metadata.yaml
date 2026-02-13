@@ -2,5 +2,8 @@ uuid: "f6d4dd84-764f-4a7d-a144-af263b8b11a6"
 title: "ASSUME VALID"
 slug: "assume-valid"
 category: "PROTOCOLE"
+cross_references:
+  - "8a115a8e-7017-49e3-b3fa-e8b98ef0f27f"
+  - "7a208ac3-224a-44c8-bf82-ac227941ae5d"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

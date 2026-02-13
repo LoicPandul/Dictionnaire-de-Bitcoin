@@ -2,5 +2,8 @@ uuid: "e364544e-c4e3-4646-b0d8-e62c45d3d301"
 title: "ADAPTOR SIGNATURE"
 slug: "adaptor-signature"
 category: "CRYPTOGRAPHIE"
+cross_references:
+  - "2fa9adb1-1aab-44cb-880a-7db9d469e37a"
+  - "e737f1c9-d266-4b21-be04-e3d83c846b82"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

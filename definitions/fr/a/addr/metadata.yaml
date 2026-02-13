@@ -2,5 +2,8 @@ uuid: "c209440f-1f9e-4044-ab66-87ebb3804617"
 title: "ADDR"
 slug: "addr"
 category: "RÉSEAU"
+cross_references:
+  - "b9596734-9906-48ab-87c9-93abea4f23c6"
+  - "8cc61c1e-719f-47a5-b4b3-e88aaa2b231c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

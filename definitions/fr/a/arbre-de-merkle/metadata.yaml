@@ -6,5 +6,8 @@ english_term: "MERKLE TREE"
 assets:
   - filename: "image-1.png"
   - filename: "image-2.png"
+cross_references:
+  - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
+  - "38c18734-0ae2-4645-9992-a6396a631f08"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
