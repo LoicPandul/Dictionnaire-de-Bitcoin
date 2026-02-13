@@ -2,5 +2,8 @@ uuid: "f5b583c2-19ba-43d0-ac58-8147eb3cdef7"
 title: "BIP-0023"
 slug: "bip-0023"
 category: "BIP"
+cross_references:
+  - "1bb981e1-3f5a-4919-a581-dbe6f8d83861"
+  - "6d187b5f-46d2-4f57-be37-fab3fb93dfdf"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

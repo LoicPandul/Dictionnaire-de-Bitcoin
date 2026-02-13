@@ -2,5 +2,8 @@ uuid: "0a52830a-b5dc-4237-8062-4201cdda11dd"
 title: "BCOIN"
 slug: "bcoin"
 category: "PROTOCOLE"
+cross_references:
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "dae51823-888b-4bef-bc16-e58cbb916b29"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

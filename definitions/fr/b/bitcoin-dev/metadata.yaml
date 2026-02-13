@@ -2,5 +2,8 @@ uuid: "d2d99060-3757-428b-ac6d-a18cd5e800bd"
 title: "BITCOIN-DEV"
 slug: "bitcoin-dev"
 category: "PROTOCOLE"
+cross_references:
+  - "ac5be5f7-85b3-4dba-b006-14b9bf55a40c"
+  - "43ba3400-9a5d-4fd1-815d-0f24fa6a045c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

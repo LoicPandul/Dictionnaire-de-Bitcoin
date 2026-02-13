@@ -2,5 +2,8 @@ uuid: "b2388d11-0acc-41fe-8d54-6ebf172e6511"
 title: "BIP-0021"
 slug: "bip-0021"
 category: "BIP"
+cross_references:
+  - "6515e629-fbd5-4a80-9a14-35b0c59ed8c3"
+  - "fc722a57-45f7-4263-b2a1-6d3bf7b8c060"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

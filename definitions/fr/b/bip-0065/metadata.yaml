@@ -2,5 +2,8 @@ uuid: "08d35796-e7b3-48e6-b1b0-7dc4e27e55cd"
 title: "BIP-0065"
 slug: "bip-0065"
 category: "BIP"
+cross_references:
+  - "0ff5943f-fb59-4b9b-b650-ffca2a5e82fb"
+  - "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

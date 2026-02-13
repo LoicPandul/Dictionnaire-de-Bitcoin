@@ -2,6 +2,9 @@ uuid: "4de7f805-d965-4703-a67a-06df5cafc8b9"
 title: "BATCHED SPENDING"
 slug: "batched-spending"
 category: "PROTOCOLE"
+cross_references:
+  - "42910651-6f20-487e-a9c4-5e75433ee369"
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
 french_term: "DÉPENSES GROUPÉES"
 assets:
   - filename: "image-1.png"

@@ -2,5 +2,8 @@ uuid: "8f17833c-f095-4d3a-a900-6a8479209a45"
 title: "BIP-0047"
 slug: "bip-0047"
 category: "BIP"
+cross_references:
+  - "0b435ec2-9ebf-4110-94ba-bc6cba923aac"
+  - "c6772aaa-b0b3-4c35-9658-a3ca15b06e85"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

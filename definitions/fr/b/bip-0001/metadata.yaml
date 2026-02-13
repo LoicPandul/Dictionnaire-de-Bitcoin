@@ -2,5 +2,8 @@ uuid: "1fcc0d0b-d8b1-4f13-a3e3-f67383f704d4"
 title: "BIP-0001"
 slug: "bip-0001"
 category: "BIP"
+cross_references:
+  - "ac5be5f7-85b3-4dba-b006-14b9bf55a40c"
+  - "bf33fc73-d6fc-4b8f-b213-2bd18481bca7"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

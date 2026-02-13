@@ -2,5 +2,8 @@ uuid: "43ba3400-9a5d-4fd1-815d-0f24fa6a045c"
 title: "BITCOIN OPTECH"
 slug: "bitcoin-optech"
 category: "COMMUNAUTÉ"
+cross_references:
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "4eb80ccd-11e0-45cc-ad72-32065d22601a"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

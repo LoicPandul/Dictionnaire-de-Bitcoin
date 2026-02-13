@@ -2,5 +2,8 @@ uuid: "fabbc014-067f-4de9-945a-8ef079134902"
 title: "BITCOIN - B MINUSCULE"
 slug: "bitcoin-b-minuscule"
 category: "PROTOCOLE"
+cross_references:
+  - "58ea6784-71a5-4c24-a2b1-0ace80de605b"
+  - "31bcfa58-89de-4989-83fa-d4431653fc2d"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

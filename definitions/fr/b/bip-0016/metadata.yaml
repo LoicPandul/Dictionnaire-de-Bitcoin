@@ -2,5 +2,8 @@ uuid: "82155f64-a605-4dd8-856b-0a7bc3dcef3c"
 title: "BIP-0016"
 slug: "bip-0016"
 category: "BIP"
+cross_references:
+  - "bf96e1ea-f4a3-4f68-b585-653a603b31f7"
+  - "0c8de08d-082a-452a-85e7-0c0a36aeb876"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

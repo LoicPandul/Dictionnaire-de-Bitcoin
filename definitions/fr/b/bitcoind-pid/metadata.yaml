@@ -2,5 +2,8 @@ uuid: "4e78aadf-b3e1-45b7-8ea6-7028e10ff548"
 title: "BITCOIND.PID"
 slug: "bitcoind-pid"
 category: "PROTOCOLE"
+cross_references:
+  - "b3f59e7b-5f94-46d6-92fe-77d76176e816"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,6 +2,9 @@ uuid: "c9bbca4b-b417-4c78-82db-62b9ffff043b"
 title: "BIP-0044"
 slug: "bip-0044"
 category: "BIP"
+cross_references:
+  - "da78514e-08b0-4741-b2e3-ce0a541eb77f"
+  - "080efa61-7f74-4d60-9ee4-4fa10920b967"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

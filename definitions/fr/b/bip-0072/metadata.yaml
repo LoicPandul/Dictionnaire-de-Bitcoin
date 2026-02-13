@@ -2,5 +2,8 @@ uuid: "f02bd4a9-468b-4b70-9d76-c3f93e87533e"
 title: "BIP-0072"
 slug: "bip-0072"
 category: "BIP"
+cross_references:
+  - "ea6d0414-12c5-48f3-996b-2897ec6548f2"
+  - "b2388d11-0acc-41fe-8d54-6ebf172e6511"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

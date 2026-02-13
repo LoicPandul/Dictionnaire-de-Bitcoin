@@ -2,5 +2,8 @@ uuid: "775b2e0e-6ed9-4269-a3f5-e6e0ce8e2dcd"
 title: "BIP-0075"
 slug: "bip-0075"
 category: "BIP"
+cross_references:
+  - "ea6d0414-12c5-48f3-996b-2897ec6548f2"
+  - "f02bd4a9-468b-4b70-9d76-c3f93e87533e"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

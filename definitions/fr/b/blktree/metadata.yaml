@@ -2,5 +2,8 @@ uuid: "f67db5a4-538c-4257-b7a9-db221101c879"
 title: "BLKTREE/"
 slug: "blktree"
 category: "PROTOCOLE"
+cross_references:
+  - "a08d80c6-798e-477e-9347-18e18b40fd03"
+  - "61425f35-72b4-4ce5-85c1-5d3551e733e6"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

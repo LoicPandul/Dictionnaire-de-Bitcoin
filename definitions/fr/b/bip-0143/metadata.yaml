@@ -2,5 +2,8 @@ uuid: "ba286b8c-fd05-42c6-9709-a48ba8e527ef"
 title: "BIP-0143"
 slug: "bip-0143"
 category: "BIP"
+cross_references:
+  - "a073c884-0f6a-49f4-bdc9-fa5b8cc37133"
+  - "73c3a8a9-6dbb-4ad2-8456-2c60c8e89709"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

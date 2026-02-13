@@ -2,6 +2,9 @@ uuid: "58ea6784-71a5-4c24-a2b1-0ace80de605b"
 title: "BITCOIN - B MAJUSCULE"
 slug: "bitcoin-b-majuscule"
 category: "PROTOCOLE"
+cross_references:
+  - "fabbc014-067f-4de9-945a-8ef079134902"
+  - "31bcfa58-89de-4989-83fa-d4431653fc2d"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

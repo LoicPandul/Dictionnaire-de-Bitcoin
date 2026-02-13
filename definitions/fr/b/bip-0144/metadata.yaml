@@ -2,5 +2,8 @@ uuid: "03e9c931-5f07-4a41-a9f7-fd2bc113c2ac"
 title: "BIP-0144"
 slug: "bip-0144"
 category: "BIP"
+cross_references:
+  - "a073c884-0f6a-49f4-bdc9-fa5b8cc37133"
+  - "73c3a8a9-6dbb-4ad2-8456-2c60c8e89709"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

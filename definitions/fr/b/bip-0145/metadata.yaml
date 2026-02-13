@@ -2,5 +2,8 @@ uuid: "2d27426b-acdf-48a0-a1b8-d0de71eff51a"
 title: "BIP-0145"
 slug: "bip-0145"
 category: "BIP"
+cross_references:
+  - "a073c884-0f6a-49f4-bdc9-fa5b8cc37133"
+  - "1e39c350-c6f2-43b3-a631-71169e38e229"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

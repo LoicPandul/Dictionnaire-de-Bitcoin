@@ -2,6 +2,9 @@ uuid: "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
 title: "BITCOIN CORE"
 slug: "bitcoin-core"
 category: "PROTOCOLE"
+cross_references:
+  - "b3f59e7b-5f94-46d6-92fe-77d76176e816"
+  - "d9966ec1-5cac-479d-a051-bcb75167696c"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "7f52a3da-6184-438d-9a2a-46101a4184ce"
 title: "BIP-0113"
 slug: "bip-0113"
 category: "BIP"
+cross_references:
+  - "62bb6e93-35b0-49da-ab17-0b84b073c8b5"
+  - "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

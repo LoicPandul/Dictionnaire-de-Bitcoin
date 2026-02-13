@@ -2,5 +2,8 @@ uuid: "ca4afe58-72e3-43ca-b4a1-8e2da3ca2f6d"
 title: "BITCOIN CORE GUI-QML"
 slug: "bitcoin-core-gui-qml"
 category: "OUTIL"
+cross_references:
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "d9966ec1-5cac-479d-a051-bcb75167696c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

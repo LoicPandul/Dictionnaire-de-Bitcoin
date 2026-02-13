@@ -2,5 +2,8 @@ uuid: "044e7b8c-b87f-4116-9ee9-f0cb8c67d386"
 title: "BECH32 ET BECH32M"
 slug: "bech32-et-bech32m"
 category: "PROTOCOLE"
+cross_references:
+  - "90303bd0-3bc8-4a0f-b0c9-e90206f5af07"
+  - "cc674cd1-8220-4080-9107-fd92c305394c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

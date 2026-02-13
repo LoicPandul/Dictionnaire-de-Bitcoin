@@ -2,5 +2,7 @@ uuid: "9958fcb9-2554-4663-8d0c-d8927fb4a8a5"
 title: "BIP-0031"
 slug: "bip-0031"
 category: "BIP"
+cross_references:
+  - "8eb4d5df-2d8e-48ff-80f8-680a6a110d5d"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

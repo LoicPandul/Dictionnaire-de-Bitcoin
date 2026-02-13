@@ -2,5 +2,8 @@ uuid: "bfddd138-88b4-42bc-81fb-bbbc0e0097d3"
 title: "BRC-20"
 slug: "brc-20"
 category: "COUCHE SUPÉRIEURE"
+cross_references:
+  - "80877cba-3fa6-452f-8dfc-c78e6bcd6e51"
+  - "3a14cd4f-59a9-4b45-bb92-5370d7b50480"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
