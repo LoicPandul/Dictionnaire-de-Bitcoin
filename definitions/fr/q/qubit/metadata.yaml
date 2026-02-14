@@ -2,5 +2,8 @@ uuid: "ef9e627f-c813-4684-9945-4cb59cf28b96"
 title: "QUBIT"
 slug: "qubit"
 category: "INFORMATIQUE"
+cross_references:
+  - "a1cbf11c-d87e-4866-a1cd-61a653d8a853"
+  - "8459c610-f4ef-49e8-8d2e-ba70c1eb8082"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

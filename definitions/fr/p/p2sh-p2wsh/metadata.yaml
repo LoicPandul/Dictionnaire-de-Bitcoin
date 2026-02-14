@@ -2,5 +2,8 @@ uuid: "a3f8386d-0c3b-49ab-8252-2008448eedc6"
 title: "P2SH-P2WSH"
 slug: "p2sh-p2wsh"
 category: "SCRIPT"
+cross_references:
+  - "3173c479-5380-4b12-af70-b512a8b7c1b3"
+  - "cddd7a63-8d9c-4ca1-a782-3ce020275816"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

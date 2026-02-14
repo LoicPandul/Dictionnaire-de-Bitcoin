@@ -3,6 +3,9 @@ title: "POINT D'ENTRÉE"
 slug: "point-d-entree"
 category: "CONFIDENTIALITÉ"
 english_term: "ENTRY POINT"
+cross_references:
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
+  - "501e3e0a-3d9d-447b-82be-991828b5f05e"
 assets:
   - filename: "image-1.png"
 created_at: "2026-01-27"

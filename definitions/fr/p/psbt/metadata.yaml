@@ -2,5 +2,8 @@ uuid: "6bdf624c-36a7-48a0-8a63-122ec3d65e08"
 title: "PSBT"
 slug: "psbt"
 category: "PORTEFEUILLE"
+cross_references:
+  - "2fc3ec2b-e4c3-4ecd-a661-6ebf8411be7a"
+  - "1e211062-6127-445e-b231-061276411810"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

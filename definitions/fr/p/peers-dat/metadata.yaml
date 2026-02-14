@@ -2,5 +2,8 @@ uuid: "9b5e1149-7abc-41f2-a38e-29757ffcc4ce"
 title: "PEERS.DAT"
 slug: "peers-dat"
 category: "RÉSEAU"
+cross_references:
+  - "05b099c7-97e6-4478-b169-00e34e9477cf"
+  - "7b64d41e-ef8b-4c4f-9b9e-60ab6bb8a089"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

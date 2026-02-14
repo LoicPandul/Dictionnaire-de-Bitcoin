@@ -2,5 +2,8 @@ uuid: "8ed8e9c4-aab0-427d-8a83-3f36e3a320e6"
 title: "PASSPHRASE - BIP-0039"
 slug: "passphrase-bip-0039"
 category: "PORTEFEUILLE"
+cross_references:
+  - "347c7ddf-f508-49d9-b773-5ff40eaaf775"
+  - "ab51af7f-85b2-4ac9-ac88-3b2217ff73cc"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -3,5 +3,8 @@ title: "PPA"
 slug: "ppa"
 category: "MINAGE"
 french_term: "CONTRAT D'ACHAT D'ÉNERGIE"
+cross_references:
+  - "200d7209-8a10-4afb-b994-3c6aed39b8f8"
+  - "544bf8c2-a00d-44ca-8723-12f035bd8434"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "102553eb-f247-483f-ab1f-c5cd04687d2a"
 title: "P2PKH"
 slug: "p2pkh"
 category: "SCRIPT"
+cross_references:
+  - "b2c534fc-1d7d-4e21-bfa1-0457f46dafcf"
+  - "cc674cd1-8220-4080-9107-fd92c305394c"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
