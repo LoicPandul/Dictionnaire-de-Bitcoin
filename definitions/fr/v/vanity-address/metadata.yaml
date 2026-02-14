@@ -2,5 +2,8 @@ uuid: "d3575fcd-307e-4fe0-b10c-e1c791700ca7"
 title: "VANITY ADDRESS"
 slug: "vanity-address"
 category: "PORTEFEUILLE"
+cross_references:
+  - "d8f778ee-5507-45ea-9065-940561c001af"
+  - "fc722a57-45f7-4263-b2a1-6d3bf7b8c060"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

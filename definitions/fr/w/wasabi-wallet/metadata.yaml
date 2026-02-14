@@ -2,5 +2,8 @@ uuid: "b15e30d2-ad59-496d-bbdd-c11c22f26002"
 title: "WASABI WALLET"
 slug: "wasabi-wallet"
 category: "CONFIDENTIALITÉ"
+cross_references:
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
+  - "1df02ba6-a00e-468b-8b15-e0319476e639"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

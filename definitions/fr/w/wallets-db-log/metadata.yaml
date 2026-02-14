@@ -2,5 +2,8 @@ uuid: "28679598-5868-475b-afe7-9d1013d95b47"
 title: "WALLETS/DB.LOG"
 slug: "wallets-db-log"
 category: "PROTOCOLE"
+cross_references:
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "1f4ed341-4975-4d30-81a0-23ec8b1cdb82"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

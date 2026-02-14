@@ -2,5 +2,8 @@ uuid: "7d7ea0c6-ff89-4f9f-9b31-c0f264739516"
 title: "WHIRLPOOL STAT TOOL"
 slug: "whirlpool-stat-tool"
 category: "CONFIDENTIALITÉ"
+cross_references:
+  - "34d344e0-ddb8-4e09-828f-f5820377e360"
+  - "1df02ba6-a00e-468b-8b15-e0319476e639"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"
