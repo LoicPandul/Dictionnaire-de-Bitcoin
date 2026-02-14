@@ -2,5 +2,8 @@ uuid: "ad162151-8d99-4bf3-85d6-69587d90f21f"
 title: "SEGWIT V1"
 slug: "segwit-v1"
 category: "PORTEFEUILLE"
+cross_references:
+  - "73c3a8a9-6dbb-4ad2-8456-2c60c8e89709"
+  - "a13b0a65-be0d-4c07-9994-30b62851240f"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

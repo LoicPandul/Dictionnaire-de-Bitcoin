@@ -2,5 +2,8 @@ uuid: "d3fc35ff-180c-41a8-839c-381a57a2f174"
 title: "RBF - REPLACE-BY-FEE"
 slug: "rbf-replace-by-fee"
 category: "PORTEFEUILLE"
+cross_references:
+  - "eb71934d-67e6-4793-8353-bb0d2c81e4b3"
+  - "ea4e33b9-b048-49e3-ae58-43da0cb71446"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,6 +2,9 @@ uuid: "2e555239-c40f-42cc-a30b-9280ad51284a"
 title: "SHARES"
 slug: "shares"
 category: "MINAGE"
+cross_references:
+  - "89e818b8-a68c-47b8-9d22-6e80cdae3f80"
+  - "1114e44e-b342-4862-9b78-bc4005583ef9"
 french_term: "PARTS"
 assets:
   - filename: "image-1.png"

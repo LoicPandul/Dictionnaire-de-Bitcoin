@@ -2,5 +2,8 @@ uuid: "abac8bae-cc00-4335-9f65-a85a4db349d6"
 title: "SOROBAN"
 slug: "soroban"
 category: "CONFIDENTIALITÉ"
+cross_references:
+  - "204df0cf-f8e9-49a5-817a-3380953664d1"
+  - "6bdf624c-36a7-48a0-8a63-122ec3d65e08"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

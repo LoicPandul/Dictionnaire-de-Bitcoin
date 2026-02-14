@@ -2,5 +2,8 @@ uuid: "2be92fa8-c7ad-4835-ba7f-2794b0e38765"
 title: "SIGHASH_SINGLE | SIGHASH_ACP"
 slug: "sighash-single-sighash-acp"
 category: "PROTOCOLE"
+cross_references:
+  - "d39ccdd1-24d3-4516-a077-bde3508aa1c7"
+  - "31378cec-23f0-47bb-aa54-f58351853ac5"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

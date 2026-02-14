@@ -2,5 +2,8 @@ uuid: "d6a9c6cc-76c8-4245-adef-772710a37473"
 title: "SPEEDY TRIAL"
 slug: "speedy-trial"
 category: "PROTOCOLE"
+cross_references:
+  - "538faf8a-9d12-4cb7-ae82-979e654005ce"
+  - "58295725-9bd8-4bb3-84ff-db983061c164"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

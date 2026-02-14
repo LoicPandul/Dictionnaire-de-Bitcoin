@@ -2,5 +2,8 @@ uuid: "bee5e035-ae75-4556-a773-919454964c2d"
 title: "SILK ROAD"
 slug: "silk-road"
 category: "ORGANISATION"
+cross_references:
+  - "18a8053d-8091-4185-992e-2eb9d62ac05c"
+  - "8edc2ca4-ee02-42e0-bb0e-1685ca749da2"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

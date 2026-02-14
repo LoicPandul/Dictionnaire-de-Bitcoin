@@ -2,5 +2,8 @@ uuid: "3f3da0be-a4e6-4cb7-955e-275213a94908"
 title: "SIGHASH_ANYPREVOUTANYSCRIPT"
 slug: "sighash-anyprevoutanyscript"
 category: "PROTOCOLE"
+cross_references:
+  - "adfcbbf5-695d-4a7b-b4ad-319d22528630"
+  - "d39ccdd1-24d3-4516-a077-bde3508aa1c7"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

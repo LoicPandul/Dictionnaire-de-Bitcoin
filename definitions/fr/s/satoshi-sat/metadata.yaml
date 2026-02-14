@@ -2,5 +2,8 @@ uuid: "750ff334-6f34-47e6-9947-f6ef4eda0a16"
 title: "SATOSHI - SAT"
 slug: "satoshi-sat"
 category: "ÉCONOMIE ET RÉGULATION"
+cross_references:
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "31bcfa58-89de-4989-83fa-d4431653fc2d"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

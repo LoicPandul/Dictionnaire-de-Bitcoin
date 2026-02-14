@@ -2,5 +2,8 @@ uuid: "d008b909-b41b-4a5e-8131-7f5a099dfe09"
 title: "SIGNET"
 slug: "signet"
 category: "PROTOCOLE"
+cross_references:
+  - "3d4aaf2c-33d4-40d6-9baa-1a097a72c83c"
+  - "6f7b355d-e8a5-45ee-9373-29822adfb117"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

@@ -2,5 +2,8 @@ uuid: "fd64d3cd-a155-4e51-b56b-8f424c448024"
 title: "RICOCHET"
 slug: "ricochet"
 category: "CONFIDENTIALITÉ"
+cross_references:
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

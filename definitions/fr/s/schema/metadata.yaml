@@ -2,5 +2,8 @@ uuid: "d6efa179-e094-4127-940e-50647d887468"
 title: "SCHEMA"
 slug: "schema"
 category: "RGB"
+cross_references:
+  - "a64c6263-b1aa-423a-a1b4-3faeefb3decf"
+  - "8c16730a-03a0-43ea-b175-5000922bb022"
 created_at: "2026-01-27"
 updated_at: "2026-01-27"

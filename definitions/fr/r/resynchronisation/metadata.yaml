@@ -2,6 +2,9 @@ uuid: "8a892c0f-ae57-4660-8503-6b2de283a801"
 title: "RESYNCHRONISATION"
 slug: "resynchronisation"
 category: "PROTOCOLE"
+cross_references:
+  - "639ab934-b26f-4520-b282-5f310ec93859"
+  - "0489415f-d009-441f-9a7b-248541cc24a4"
 english_term: "REORGANIZATION"
 assets:
   - filename: "image-1.png"
