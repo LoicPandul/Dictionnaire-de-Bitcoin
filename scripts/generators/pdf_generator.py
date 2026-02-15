@@ -394,6 +394,21 @@ def _generate_preamble(fonts_path: str = "") -> str:
     \renewcommand{\footrulewidth}{0pt}
 }
 
+% Pages blanches insérées par cleardoublepage : sans en-tête (pas de mot guide)
+\makeatletter
+\renewcommand{\cleardoublepage}{%
+    \clearpage
+    \if@twoside
+        \ifodd\c@page\else
+            \hbox{}%
+            \thispagestyle{empty}%
+            \newpage
+            \if@twocolumn\hbox{}\newpage\fi
+        \fi
+    \fi
+}
+\makeatother
+
 % Listes
 \usepackage{enumitem}
 \setlist[itemize]{
@@ -778,15 +793,24 @@ def _render_cross_references(cross_refs: list, dictionary) -> str:
 
 
 def _generate_final_page(legal: dict) -> str:
-    """Génère la page finale."""
-    year = datetime.now().year
-    title = legal.get('title', '')
+    """Génère la page finale (mentions légales centrées, identiques à celles du début)."""
+    now = datetime.now()
+    date_str = f"{now.day:02d} {MOIS_FR[now.month]} {now.year}"
+    year = now.year
+
+    title = legal.get('title', 'Dictionnaire de Bitcoin')
     subtitle = legal.get('subtitle', '')
     author = legal.get('author', '')
-    license_name = legal.get('license', '')
+    license_name = legal.get('license', 'CC BY-NC-SA 4.0')
+    license_url = legal.get('license_url', '')
     github_url = legal.get('github_url', '')
     website = legal.get('website', '')
+    github_profile = legal.get('github_profile', '')
     lightning = legal.get('lightning_address', '')
+    email = legal.get('email', '')
+    isbn = legal.get('isbn', '')
+
+    isbn_line = rf"ISBN : {isbn}\\" if isbn else ""
 
     sp = "0.4em"
 
@@ -798,13 +822,17 @@ def _generate_final_page(legal: dict) -> str:
 \begin{{center}}
 \small
 \setstretch{{1.0}}
-{{\bfseries {title}}}\\[{sp}]
-{{\itshape {subtitle}}}\\[0.8em]
-© {year} {author}\\[{sp}]
+\textbf{{© {year} {author}}}\\[{sp}]
+\textbf{{\textit{{{title} : {subtitle}}}}}\\[{sp}]
+Version du {date_str}\\[{sp}]
 \textenglish{{\href{{{github_url}}}{{{github_url}}}}}\\[{sp}]
-Licence {license_name}\\[0.8em]
+Cet ouvrage est sous licence {license_name}\\[{sp}]
+\textenglish{{\href{{{license_url}}}{{{license_url}}}}}\\[{sp}]
 Lightning : {lightning}\\[{sp}]
-Site web : \textenglish{{\href{{{website}}}{{{website}}}}}
+Email : {email}\\[{sp}]
+Site web : \textenglish{{\href{{{website}}}{{{website}}}}}\\[{sp}]
+GitHub : \textenglish{{\href{{{github_profile}}}{{{github_profile}}}}}\\[{sp}]
+{isbn_line}
 \end{{center}}
 
 \vspace*{{\fill}}
