@@ -1,0 +1,9 @@
+uuid: "5fc25ff3-922c-45b4-b717-cba463da9db1"
+title: "NAT - NETWORK-ADJUSTED TIME"
+slug: "nat-network-adjusted-time"
+category: "PROTOCOLE"
+cross_references:
+  - "a4857ce4-9b8e-4e26-9310-14acd52d1851"
+  - "9fa13088-9635-45e6-b7be-aae56aa7d448"
+french_term: "TEMPS AJUSTÉ PAR LE RÉSEAU"
+version: "1"
