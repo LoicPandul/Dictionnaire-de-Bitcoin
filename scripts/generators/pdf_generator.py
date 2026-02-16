@@ -666,7 +666,7 @@ def _format_definition(definition, dictionary=None) -> str:
     safe_title = _escape_latex(title)
 
     # Empêcher vedette orpheline : garder vedette + catégorie + début de définition ensemble
-    parts.append(r"\needspace{5\baselineskip}")
+    parts.append(r"\needspace{4\baselineskip}")
 
     # Label pour référence de page (utilisé dans TDM)
     parts.append(rf"\label{{def:{slug}}}")
