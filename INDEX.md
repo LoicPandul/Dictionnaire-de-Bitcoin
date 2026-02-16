@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 847 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 
 ---
 
@@ -346,6 +346,7 @@ Ce fichier contient la liste de toutes les 847 définitions du dictionnaire.
 - [ECLAIR](definitions/fr/e/eclair/definition.md)
 - [ECLIPSE](definitions/fr/e/eclipse/definition.md)
 - [ÉCOLE AUTRICHIENNE](definitions/fr/e/ecole-autrichienne/definition.md)
+- [EFFET CANTILLON](definitions/fr/e/effet-cantillon/definition.md)
 - [ELECTRS](definitions/fr/e/electrs/definition.md)
 - [ELECTRUM](definitions/fr/e/electrum/definition.md)
 - [ELECTRUM LIGHTNING](definitions/fr/e/electrum-lightning/definition.md)
@@ -732,6 +733,7 @@ Ce fichier contient la liste de toutes les 847 définitions du dictionnaire.
 ## Q
 
 - [QR CODE](definitions/fr/q/qr-code/definition.md)
+- [QE - QUANTITATIVE EASING](definitions/fr/q/quantitative-easing-qe/definition.md)
 - [QUBIT](definitions/fr/q/qubit/definition.md)
 
 ## R

@@ -6,9 +6,7 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 847
-- **Nombre de lettres utilisées** : 26
-- **Nombre de catégories** : 19
+- **Nombre total de définitions** : 849
 
 ## Définitions par lettre
 
@@ -18,7 +16,7 @@
 | B | 154 |
 | C | 86 |
 | D | 35 |
-| E | 26 |
+| E | 27 |
 | F | 20 |
 | G | 19 |
 | H | 21 |
@@ -30,7 +28,7 @@
 | N | 17 |
 | O | 104 |
 | P | 60 |
-| Q | 2 |
+| Q | 3 |
 | R | 28 |
 | S | 78 |
 | T | 24 |
@@ -61,8 +59,8 @@
 - **CRYPTOGRAPHIE** : 41
 - **RGB** : 37
 - **LIGHTNING NETWORK** : 37
+- **ÉCONOMIE ET RÉGULATION** : 33
 - **RÉSEAU** : 32
-- **ÉCONOMIE ET RÉGULATION** : 31
 - **HISTOIRE** : 28
 - **ATTAQUE** : 24
 - **COUCHE SUPÉRIEURE** : 23
@@ -73,18 +71,18 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1065 occurrences
-- **transaction** : 620 occurrences
-- **transactions** : 386 occurrences
-- **bloc** : 369 occurrences
-- **permet** : 340 occurrences
-- **réseau** : 254 occurrences
-- **bitcoins** : 242 occurrences
-- **protocole** : 237 occurrences
-- **chaque** : 229 occurrences
-- **blocs** : 222 occurrences
-- **script** : 218 occurrences
-- **deux** : 209 occurrences
+- **bitcoin** : 1310 occurrences
+- **transaction** : 1006 occurrences
+- **bloc** : 592 occurrences
+- **adresse** : 354 occurrences
+- **script** : 305 occurrences
+- **portefeuille** : 274 occurrences
+- **protocole** : 266 occurrences
+- **mineur** : 258 occurrences
+- **réseau** : 255 occurrences
+- **utilisateur** : 252 occurrences
+- **utxo** : 239 occurrences
+- **signature** : 236 occurrences
+- **donnée** : 221 occurrences
 - **clés** : 209 occurrences
-- **utilisé** : 199 occurrences
-- **données** : 198 occurrences
+- **chaîne** : 209 occurrences
