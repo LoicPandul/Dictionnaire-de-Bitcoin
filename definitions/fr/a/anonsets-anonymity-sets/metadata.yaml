@@ -1,0 +1,11 @@
+uuid: "a61b5d3a-da3c-4bc8-bac2-24265a18e981"
+title: "ANONSETS - ANONYMITY SETS"
+slug: "anonsets-anonymity-sets"
+category: "CONFIDENTIALITÉ"
+french_term: "ENSEMBLES D'ANONYMAT"
+cross_references:
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
+assets:
+  - filename: "image-1.png"
+  - filename: "image-2.png"
+version: "1"

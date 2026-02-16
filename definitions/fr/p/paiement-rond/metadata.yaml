@@ -1,0 +1,11 @@
+uuid: "55c580b4-a44c-42fa-9416-7675911ef15f"
+title: "PAIEMENT ROND"
+slug: "paiement-rond"
+category: "CONFIDENTIALITÉ"
+cross_references:
+  - "5345a3e9-f01f-44f4-abb5-a692f9c25f9f"
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
+english_term: "ROUND PAYMENT"
+assets:
+  - filename: "image-1.png"
+version: "1"

@@ -1,0 +1,11 @@
+uuid: "ab51af7f-85b2-4ac9-ac88-3b2217ff73cc"
+title: "GRAINE"
+slug: "graine"
+category: "PORTEFEUILLE"
+cross_references:
+  - "347c7ddf-f508-49d9-b773-5ff40eaaf775"
+  - "da3bb49f-15b3-4613-8b1b-6fe164956ab0"
+english_term: "SEED"
+assets:
+  - filename: "image-1.png"
+version: "1"

@@ -1,0 +1,11 @@
+uuid: "ac5be5f7-85b3-4dba-b006-14b9bf55a40c"
+title: "BIP"
+slug: "bip"
+category: "BIP"
+french_term: "PROPOSITION D'AMÉLIORATION DE BITCOIN"
+assets:
+  - filename: "image-1.png"
+cross_references:
+  - "538faf8a-9d12-4cb7-ae82-979e654005ce"
+  - "1fcc0d0b-d8b1-4f13-a3e3-f67383f704d4"
+version: "1"

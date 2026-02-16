@@ -1,0 +1,9 @@
+uuid: "1e39c350-c6f2-43b3-a631-71169e38e229"
+title: "SIGOPS"
+slug: "sigops-signature-operations"
+category: "PROTOCOLE"
+cross_references:
+  - "b24f7ccf-965a-4b03-b046-c3d74a0dca31"
+  - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
+french_term: "OPÉRATIONS DE SIGNATURE"
+version: "1"

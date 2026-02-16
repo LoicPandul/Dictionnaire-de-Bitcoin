@@ -1,0 +1,11 @@
+uuid: "83b0060e-baa1-4096-9c79-f9c84f33268a"
+title: "CLÉ MAITRESSE"
+slug: "cle-maitresse"
+category: "PORTEFEUILLE"
+cross_references:
+  - "ab51af7f-85b2-4ac9-ac88-3b2217ff73cc"
+  - "b9d5ad29-532b-4219-9f1c-a3e48703caa3"
+english_term: "MASTER KEY"
+assets:
+  - filename: "image-1.png"
+version: "1"

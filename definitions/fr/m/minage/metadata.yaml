@@ -1,0 +1,11 @@
+uuid: "544bf8c2-a00d-44ca-8723-12f035bd8434"
+title: "MINAGE"
+slug: "minage"
+category: "MINAGE"
+english_term: "MINING"
+assets:
+  - filename: "image-1.png"
+cross_references:
+  - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
+  - "d84e3fd5-7c72-4820-b388-261cb1961330"
+version: "1"

@@ -1,0 +1,10 @@
+uuid: "c1574db6-f193-4f77-beb4-cbb3c54b28eb"
+title: "TYPE DE DEVISE"
+slug: "type-de-devise"
+category: "PORTEFEUILLE"
+english_term: "COIN TYPE"
+cross_references:
+  - "080efa61-7f74-4d60-9ee4-4fa10920b967"
+assets:
+  - filename: "image-1.png"
+version: "1"

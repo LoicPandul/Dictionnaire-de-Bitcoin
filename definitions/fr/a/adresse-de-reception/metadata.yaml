@@ -1,0 +1,11 @@
+uuid: "fc722a57-45f7-4263-b2a1-6d3bf7b8c060"
+title: "ADRESSE DE RÉCEPTION"
+slug: "adresse-de-reception"
+category: "PORTEFEUILLE"
+english_term: "BITCOIN ADDRESS"
+assets:
+  - filename: "image-1.png"
+cross_references:
+  - "aa1fee82-5009-41ce-9821-614fb59dfef3"
+  - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
+version: "1"

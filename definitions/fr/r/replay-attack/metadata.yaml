@@ -1,0 +1,9 @@
+uuid: "7224352d-189a-481e-98e6-6647b38010b7"
+title: "REPLAY ATTACK"
+slug: "replay-attack"
+category: "ATTAQUE"
+cross_references:
+  - "6d901ba9-bd35-4f90-b8ef-6a56caef18b6"
+  - "42910651-6f20-487e-a9c4-5e75433ee369"
+french_term: "ATTAQUE PAR REJEU"
+version: "1"

@@ -1,0 +1,8 @@
+uuid: "19bf3530-6e38-416d-ae7d-72e6092197d9"
+title: "OP_CHECKHASHVERIFY - CHV"
+slug: "op-checkhashverify-chv"
+category: "SCRIPT"
+cross_references:
+  - "4791d414-b3d0-41cf-8296-3bd3e5bfd9dd"
+  - "bf96e1ea-f4a3-4f68-b585-653a603b31f7"
+version: "1"

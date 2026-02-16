@@ -1,0 +1,7 @@
+# Mots exclus du classement "## Termes les plus fréquents" dans stats.md
+
+excluded_words:
+  - permet
+  - chaque
+  - deux
+  - utilisé

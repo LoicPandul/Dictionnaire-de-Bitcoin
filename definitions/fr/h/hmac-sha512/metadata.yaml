@@ -1,0 +1,8 @@
+uuid: "f1f4e2a7-8080-4da8-8480-4f2962d21f3c"
+title: "HMAC-SHA512"
+slug: "hmac-sha512"
+category: "CRYPTOGRAPHIE"
+cross_references:
+  - "94d4732f-279a-4473-b0a1-c2620b16394c"
+  - "bccb87c2-3cf6-4552-afd6-870130b962f9"
+version: "1"

@@ -1,0 +1,11 @@
+uuid: "46983665-e82e-477e-81b4-bbef5a8cd244"
+title: "SORTIE LA PLUS GRANDE"
+slug: "sortie-la-plus-grande"
+category: "CONFIDENTIALITÉ"
+english_term: "LARGEST OUTPUT"
+cross_references:
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
+  - "7745036c-eeca-4682-9b27-6c10a55e342b"
+assets:
+  - filename: "image-1.png"
+version: "1"

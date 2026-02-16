@@ -1,0 +1,9 @@
+uuid: "6b9ab86a-d9f8-493f-90c7-a5a9588a4c42"
+title: "LEDGER"
+slug: "ledger"
+category: "PORTEFEUILLE"
+french_term: "GRAND LIVRE / REGISTRE"
+cross_references:
+  - "c2be7598-8cad-4b94-afe4-6bec52482c2e"
+  - "c6e3085c-e793-4dd3-aef6-7357dba80a34"
+version: "1"

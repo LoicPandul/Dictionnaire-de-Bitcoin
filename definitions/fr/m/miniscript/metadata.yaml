@@ -1,0 +1,10 @@
+uuid: "121bd39a-dfa7-417a-99bf-f3bf120dc01b"
+title: "MINISCRIPT"
+slug: "miniscript"
+category: "SCRIPT"
+assets:
+  - filename: "image-1.png"
+cross_references:
+  - "ea7c727d-15eb-4bb2-8779-0362f1fa566c"
+  - "a7440e2a-a951-4a73-9350-2321d8cb900c"
+version: "1"

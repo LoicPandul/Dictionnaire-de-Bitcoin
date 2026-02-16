@@ -1,0 +1,9 @@
+uuid: "63d911ff-f184-46c1-a1fc-d05864330bd1"
+title: "DOS - DENIAL OF SERVICE"
+slug: "dos-denial-of-service"
+category: "ATTAQUE"
+french_term: "ATTAQUE PAR DÉNI DE SERVICE"
+cross_references:
+  - "8eb4d5df-2d8e-48ff-80f8-680a6a110d5d"
+  - "514f838b-ca24-4319-8595-508adb708d7f"
+version: "1"

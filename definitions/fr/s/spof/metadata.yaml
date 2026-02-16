@@ -1,0 +1,9 @@
+uuid: "dfefbadb-ee98-4f78-b931-4a494ff9952e"
+title: "SPOF"
+slug: "spof"
+category: "INFORMATIQUE"
+french_term: "POINT DE DÉFAILLANCE UNIQUE"
+cross_references:
+  - "347c7ddf-f508-49d9-b773-5ff40eaaf775"
+  - "6a5f0ba1-e4fe-4658-b04b-58b77d452c64"
+version: "1"

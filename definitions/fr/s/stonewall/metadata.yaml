@@ -1,0 +1,10 @@
+uuid: "da353952-da58-44e3-9fd5-68061a4d5d60"
+title: "STONEWALL"
+slug: "stonewall"
+category: "CONFIDENTIALITÉ"
+cross_references:
+  - "03736df6-22a9-4fa3-8e9b-5806c5ab2c3c"
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
+assets:
+  - filename: "image-1.png"
+version: "1"

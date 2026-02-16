@@ -1,0 +1,10 @@
+uuid: "81029dcb-7d82-4887-82d1-7d18e1c60515"
+title: "TWEAK"
+slug: "tweak"
+category: "CRYPTOGRAPHIE"
+cross_references:
+  - "a13b0a65-be0d-4c07-9994-30b62851240f"
+  - "47b5ee48-88cf-4653-b9de-17e0afcdd408"
+assets:
+  - filename: "image-1.png"
+version: "1"

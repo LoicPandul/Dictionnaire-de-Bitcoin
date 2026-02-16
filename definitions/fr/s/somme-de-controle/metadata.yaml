@@ -1,0 +1,9 @@
+uuid: "f77a8448-c9f7-42e9-8aad-c98b021d02d1"
+title: "SOMME DE CONTRÔLE"
+slug: "somme-de-controle"
+category: "CRYPTOGRAPHIE"
+english_term: "CHECKSUM"
+cross_references:
+  - "fc722a57-45f7-4263-b2a1-6d3bf7b8c060"
+  - "90303bd0-3bc8-4a0f-b0c9-e90206f5af07"
+version: "1"

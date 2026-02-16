@@ -1,0 +1,9 @@
+uuid: "784fbd21-253a-4ac3-800f-c7eddafb2ce8"
+title: "GNPA"
+slug: "gnpa"
+category: "CRYPTOGRAPHIE"
+english_term: "PRNG"
+cross_references:
+  - "ab51af7f-85b2-4ac9-ac88-3b2217ff73cc"
+  - "347c7ddf-f508-49d9-b773-5ff40eaaf775"
+version: "1"

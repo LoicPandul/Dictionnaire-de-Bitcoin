@@ -1,0 +1,4 @@
+# Dictionnaire de Bitcoin - Dépendances Python
+
+# Parsing YAML pour les métadonnées
+PyYAML>=6.0

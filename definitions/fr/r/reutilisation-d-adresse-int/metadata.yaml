@@ -1,0 +1,11 @@
+uuid: "05d7c716-626f-4382-8b0f-47e21b151447"
+title: "RÉUTILISATION D'ADRESSE - INTERNE"
+slug: "reutilisation-d-adresse-int"
+category: "CONFIDENTIALITÉ"
+cross_references:
+  - "7b4c45cc-e0ea-4806-a4a7-0bcb50322c99"
+  - "92b35e63-4cc7-4d78-be58-02d655c89a10"
+english_term: "INTERNAL ADDRESS REUSE"
+assets:
+  - filename: "image-1.png"
+version: "1"

@@ -1,0 +1,9 @@
+uuid: "1b8e2ba3-2faa-4e68-9fef-feace1737cc2"
+title: "UTXO SET"
+slug: "utxo-set"
+category: "PROTOCOLE"
+french_term: "ENSEMBLE D'UTXOs"
+cross_references:
+  - "42910651-6f20-487e-a9c4-5e75433ee369"
+  - "8a115a8e-7017-49e3-b3fa-e8b98ef0f27f"
+version: "1"

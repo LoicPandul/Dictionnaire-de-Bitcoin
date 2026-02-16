@@ -1,0 +1,11 @@
+uuid: "dadbcc81-325e-4dbb-be52-96817ed8d520"
+title: "RÉUTILISATION D'ADRESSE - EXTERNE"
+slug: "reutilisation-d-adresse-ext"
+category: "CONFIDENTIALITÉ"
+cross_references:
+  - "7b4c45cc-e0ea-4806-a4a7-0bcb50322c99"
+  - "92b35e63-4cc7-4d78-be58-02d655c89a10"
+english_term: "EXTERNAL ADDRESS REUSE"
+assets:
+  - filename: "image-1.png"
+version: "1"

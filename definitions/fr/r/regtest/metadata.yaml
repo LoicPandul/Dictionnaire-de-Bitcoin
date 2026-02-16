@@ -1,0 +1,9 @@
+uuid: "028ffb5d-98f6-46c0-9d3e-317e7f06e03a"
+title: "REGTEST"
+slug: "regtest"
+category: "PROTOCOLE"
+french_term: "TEST DE RÉGRESSION"
+cross_references:
+  - "3d4aaf2c-33d4-40d6-9baa-1a097a72c83c"
+  - "d008b909-b41b-4a5e-8131-7f5a099dfe09"
+version: "1"

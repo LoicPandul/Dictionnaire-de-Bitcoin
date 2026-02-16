@@ -1,0 +1,11 @@
+uuid: "3045621b-9063-4937-b910-4bd7485d6ad4"
+title: "PROFONDEUR"
+slug: "profondeur"
+category: "PORTEFEUILLE"
+english_term: "DEPTH"
+cross_references:
+  - "b9d5ad29-532b-4219-9f1c-a3e48703caa3"
+  - "080efa61-7f74-4d60-9ee4-4fa10920b967"
+assets:
+  - filename: "image-1.png"
+version: "1"

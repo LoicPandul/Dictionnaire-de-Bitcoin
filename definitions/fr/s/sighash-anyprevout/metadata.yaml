@@ -1,0 +1,8 @@
+uuid: "adfcbbf5-695d-4a7b-b4ad-319d22528630"
+title: "SIGHASH_ANYPREVOUT"
+slug: "sighash-anyprevout"
+category: "PROTOCOLE"
+cross_references:
+  - "d6c9951a-94ae-4700-aa31-9a9561b3bfc4"
+  - "d39ccdd1-24d3-4516-a077-bde3508aa1c7"
+version: "1"

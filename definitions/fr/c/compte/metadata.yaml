@@ -1,0 +1,10 @@
+uuid: "7861164f-04b0-44af-9ea7-00202b3757ba"
+title: "COMPTE"
+slug: "compte"
+category: "PORTEFEUILLE"
+english_term: "ACCOUNT"
+cross_references:
+  - "080efa61-7f74-4d60-9ee4-4fa10920b967"
+assets:
+  - filename: "image-1.png"
+version: "1"

@@ -1,0 +1,9 @@
+uuid: "3e772f6a-a484-464d-82a1-d0d808f825fb"
+title: "BGP HIJACKING"
+slug: "bgp-hijacking"
+category: "ATTAQUE"
+french_term: "DÉTOURNEMENT BGP"
+cross_references:
+  - "34cb8d84-1112-49d3-85ed-0725b4f0860c"
+  - "514f838b-ca24-4319-8595-508adb708d7f"
+version: "1"

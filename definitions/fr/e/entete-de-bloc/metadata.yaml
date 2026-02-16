@@ -1,0 +1,9 @@
+uuid: "9fa13088-9635-45e6-b7be-aae56aa7d448"
+title: "ENTÊTE DE BLOC"
+slug: "entete-de-bloc"
+category: "PROTOCOLE"
+cross_references:
+  - "37a83a88-5744-44df-862a-a68dadb160cf"
+  - "01676c23-17d9-48c4-8817-bf7be488b5e0"
+english_term: "BLOCK HEADER"
+version: "1"

@@ -1,0 +1,10 @@
+uuid: "b6b8fd4d-6b87-4f43-8b42-5f641a841d06"
+title: "OSINT"
+slug: "osint"
+category: "INFORMATIQUE"
+cross_references:
+  - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
+  - "fd28eb68-d1b8-4e2b-aa85-500480c7f8d4"
+assets:
+  - filename: "image-1.png"
+version: "1"

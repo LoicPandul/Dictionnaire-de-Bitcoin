@@ -1,0 +1,1 @@
+Période prolongée durant laquelle le prix d'un actif, tel que le bitcoin, monte par rapport à une monnaie fiat, typiquement le dollar américain. L’expression « Bull Run », d’un registre plus familier, est souvent utilisée pour désigner ce même phénomène.

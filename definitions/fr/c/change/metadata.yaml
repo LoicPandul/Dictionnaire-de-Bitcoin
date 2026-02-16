@@ -1,0 +1,10 @@
+uuid: "7745036c-eeca-4682-9b27-6c10a55e342b"
+title: "CHANGE"
+slug: "change"
+category: "PORTEFEUILLE"
+cross_references:
+  - "42910651-6f20-487e-a9c4-5e75433ee369"
+  - "3d4aa1bc-8aed-4176-92ab-10874f164f00"
+assets:
+  - filename: "image-1.png"
+version: "1"

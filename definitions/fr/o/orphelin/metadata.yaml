@@ -1,0 +1,11 @@
+uuid: "32b5ea0f-2dbb-418e-8d55-200b01b26ad8"
+title: "ORPHELIN"
+slug: "orphelin"
+category: "PROTOCOLE"
+cross_references:
+  - "dd7fef86-8eb0-4ed5-ba65-899c7374b274"
+  - "4f4c25e7-bf0c-41a2-b8f7-11341d8ba687"
+english_term: "ORPHAN BLOCK"
+assets:
+  - filename: "image-1.png"
+version: "1"
