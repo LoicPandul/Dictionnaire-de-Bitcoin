@@ -2,6 +2,7 @@ uuid: "ac5be5f7-85b3-4dba-b006-14b9bf55a40c"
 title: "BIP"
 slug: "bip"
 category: "BIP"
+french_term: "PROPOSITION D'AMÉLIORATION DE BITCOIN"
 assets:
   - filename: "image-1.png"
 cross_references:

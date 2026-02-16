@@ -2,6 +2,7 @@ uuid: "502bca8f-c772-4aad-b397-4816442dfa1b"
 title: "DDOS"
 slug: "ddos"
 category: "ATTAQUE"
+french_term: "ATTAQUE PAR DÉNI DE SERVICE DISTRIBUÉ"
 cross_references:
   - "63d911ff-f184-46c1-a1fc-d05864330bd1"
   - "fd394e4b-9289-45f7-8fb2-ce21aec7dc2b"

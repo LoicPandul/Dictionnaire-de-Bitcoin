@@ -2,6 +2,7 @@ uuid: "d84e3fd5-7c72-4820-b388-261cb1961330"
 title: "ASIC"
 slug: "asic"
 category: "MINAGE"
+french_term: "CIRCUIT INTÉGRÉ SPÉCIFIQUE À UNE APPLICATION"
 cross_references:
   - "544bf8c2-a00d-44ca-8723-12f035bd8434"
   - "db70edee-b5a3-435b-8f3a-760b21383d0f"

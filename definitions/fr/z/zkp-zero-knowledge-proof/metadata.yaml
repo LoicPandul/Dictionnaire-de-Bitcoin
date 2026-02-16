@@ -2,6 +2,7 @@ uuid: "3c5029a7-1727-45c9-9017-3d461b7f58c3"
 title: "ZKP - ZERO-KNOWLEDGE PROOF"
 slug: "zkp-zero-knowledge-proof"
 category: "CRYPTOGRAPHIE"
+french_term: "PREUVE À DIVULGATION NULLE DE CONNAISSANCE"
 cross_references:
   - "9fa0c2d1-1763-4c3b-a8c7-a6cb7db1fda0"
 version: "1"

@@ -2,6 +2,7 @@ uuid: "92c25dc6-2c0b-4d27-9d37-deb45498f761"
 title: "SIMPLIFIED PAYMENT VERIFICATION"
 slug: "simplified-payment-verification"
 category: "PROTOCOLE"
+french_term: "VÉRIFICATION SIMPLIFIÉE DE PAIEMENT"
 cross_references:
   - "14959673-c92d-4892-8e22-d30e0c3313a9"
 version: "1"

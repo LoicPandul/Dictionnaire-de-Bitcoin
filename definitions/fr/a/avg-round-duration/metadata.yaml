@@ -2,6 +2,7 @@ uuid: "abecb775-62a8-43f1-8230-bacceb878150"
 title: "AVERAGE ROUND DURATION"
 slug: "avg-round-duration"
 category: "MINAGE"
+french_term: "DURÉE MOYENNE DE TOUR"
 cross_references:
   - "2e555239-c40f-42cc-a30b-9280ad51284a"
   - "d01a0cf2-c1c3-4ff1-bcba-0b43a140d3d2"

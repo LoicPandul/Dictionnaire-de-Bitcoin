@@ -2,6 +2,7 @@ uuid: "a1cbf11c-d87e-4866-a1cd-61a653d8a853"
 title: "BIT"
 slug: "bit"
 category: "INFORMATIQUE"
+french_term: "CHIFFRE BINAIRE"
 cross_references:
   - "c2901a6f-397f-4b80-b7f9-1d25e4eeb4fe"
   - "0f0ce23e-bd9b-4552-be40-9547d7fcbdc2"
