@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 
 ---
 
@@ -201,6 +201,7 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [BRANCHE - BITCOIN](definitions/fr/b/branche-bitcoin/definition.md)
 - [BRANCHE - GIT](definitions/fr/b/branche-git/definition.md)
 - [BRC-20](definitions/fr/b/brc-20/definition.md)
+- [BROLLUPS](definitions/fr/b/brollups/definition.md)
 - [BSV - BITCOIN SATOSHI VISION](definitions/fr/b/bsv-bitcoin-satoshi-vision/definition.md)
 - [BTC](definitions/fr/b/btc/definition.md)
 - [BTCD - BTC SUITE](definitions/fr/b/btcd-btc-suite/definition.md)
@@ -218,12 +219,14 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [CANDIDAT - BLOC](definitions/fr/c/candidat-bloc/definition.md)
 - [CAPACITÉ DE CANAL LIGHTNING](definitions/fr/c/capacite-de-canal-lightning/definition.md)
 - [CASHU](definitions/fr/c/cashu/definition.md)
+- [CBTC - CITREA BITCOIN](definitions/fr/c/cbtc-citrea-bitcoin/definition.md)
 - [CET](definitions/fr/c/cet/definition.md)
 - [CGMINER](definitions/fr/c/cgminer/definition.md)
 - [CHAINE EXTERNE](definitions/fr/c/chaine-externe/definition.md)
 - [CHAINE INTERNE](definitions/fr/c/chaine-interne/definition.md)
 - [CHAINSPLIT](definitions/fr/c/chainsplit/definition.md)
 - [CHAINSTATE/](definitions/fr/c/chainstate/definition.md)
+- [CHAINWAY LABS](definitions/fr/c/chainway-labs/definition.md)
 - [CHAMPION](definitions/fr/c/champion/definition.md)
 - [CHANGE](definitions/fr/c/change/definition.md)
 - [CHANNEL FACTORIES](definitions/fr/c/channel-factories/definition.md)
@@ -236,11 +239,13 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [CIBLE DE DIFFICULTÉ](definitions/fr/c/cible-de-difficulte/definition.md)
 - [CIOH](definitions/fr/c/cioh/definition.md)
 - [CISA](definitions/fr/c/cisa/definition.md)
+- [CITREA](definitions/fr/c/citrea/definition.md)
 - [CLÉ ÉTENDUE](definitions/fr/c/cle-etendue/definition.md)
 - [CLÉ MAITRESSE](definitions/fr/c/cle-maitresse/definition.md)
 - [CLÉ PRIVÉE](definitions/fr/c/cle-privee/definition.md)
 - [CLÉ PUBLIQUE](definitions/fr/c/cle-publique/definition.md)
 - [CLÉ PUBLIQUE COMPRESSÉE](definitions/fr/c/cle-publique-compressee/definition.md)
+- [CLEMENTINE](definitions/fr/c/clementine/definition.md)
 - [CLI](definitions/fr/c/cli/definition.md)
 - [CLIENT-SIDE VALIDATION](definitions/fr/c/client-side-validation/definition.md)
 - [CLN - C-LIGHTNING](definitions/fr/c/cln-c-lightning/definition.md)
@@ -295,6 +300,7 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [CRYPTOGRAPHIE](definitions/fr/c/cryptographie/definition.md)
 - [CRYPTOLOGIE](definitions/fr/c/cryptologie/definition.md)
 - [CRYPTOMONNAIE](definitions/fr/c/cryptomonnaie/definition.md)
+- [CTUSD - CITREA USD](definitions/fr/c/ctusd-citrea-usd/definition.md)
 - [CURTAILMENT](definitions/fr/c/curtailment/definition.md)
 - [CUSTODY](definitions/fr/c/custody/definition.md)
 - [CYPHERPUNKS](definitions/fr/c/cypherpunks/definition.md)
@@ -409,6 +415,7 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [GREEN ADDRESS](definitions/fr/g/green-address/definition.md)
 - [GREEN ADDRESSES](definitions/fr/g/green-addresses/definition.md)
 - [GREEN WALLET](definitions/fr/g/green-wallet/definition.md)
+- [GROTH16](definitions/fr/g/groth16/definition.md)
 - [GUI](definitions/fr/g/gui/definition.md)
 - [GUISETTINGS.INI.BAK](definitions/fr/g/guisettings-ini-bak/definition.md)
 
@@ -761,6 +768,8 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [RGB](definitions/fr/r/rgb/definition.md)
 - [RICOCHET](definitions/fr/r/ricochet/definition.md)
 - [RIPEMD160](definitions/fr/r/ripemd160/definition.md)
+- [RISC ZERO](definitions/fr/r/risc-zero/definition.md)
+- [ROLLUP](definitions/fr/r/rollup/definition.md)
 - [RPC - REMOTE PROCEDURE CALL](definitions/fr/r/rpc-remote-procedure-call/definition.md)
 - [RPOW](definitions/fr/r/rpow/definition.md)
 - [RSMPPS](definitions/fr/r/rsmpps/definition.md)
@@ -792,6 +801,7 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [SÉLECTION DES PIÈCES](definitions/fr/s/selection-des-pieces/definition.md)
 - [SELF-CUSTODY](definitions/fr/s/self-custody/definition.md)
 - [SELFISH MINING](definitions/fr/s/selfish-mining/definition.md)
+- [SÉQUENCEUR](definitions/fr/s/sequenceur/definition.md)
 - [SETTINGS.JSON](definitions/fr/s/settings-json/definition.md)
 - [SHA256](definitions/fr/s/sha256/definition.md)
 - [SHA512](definitions/fr/s/sha512/definition.md)
@@ -824,6 +834,7 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [SLIP](definitions/fr/s/slip/definition.md)
 - [SMALL BLOCKERS](definitions/fr/s/small-blockers/definition.md)
 - [SMPPS](definitions/fr/s/smpps/definition.md)
+- [SNARK](definitions/fr/s/snark/definition.md)
 - [SOFT FORK](definitions/fr/s/soft-fork/definition.md)
 - [SOMME DE CONTRÔLE](definitions/fr/s/somme-de-controle/definition.md)
 - [SOROBAN](definitions/fr/s/soroban/definition.md)
@@ -834,6 +845,7 @@ Ce fichier contient la liste de toutes les 849 définitions du dictionnaire.
 - [SPREAD - WST](definitions/fr/s/spread-wst/definition.md)
 - [STABLECOIN](definitions/fr/s/stablecoin/definition.md)
 - [STAMPS](definitions/fr/s/stamps/definition.md)
+- [STARK](definitions/fr/s/stark/definition.md)
 - [STASH](definitions/fr/s/stash/definition.md)
 - [STATE EXTENSION](definitions/fr/s/state-extension/definition.md)
 - [STATE TRANSITION](definitions/fr/s/state-transition/definition.md)

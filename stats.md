@@ -6,19 +6,19 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 849
+- **Nombre total de définitions** : 861
 
 ## Définitions par lettre
 
 | Lettre | Nombre |
 |:------:|-------:|
 | A | 40 |
-| B | 154 |
-| C | 86 |
+| B | 155 |
+| C | 91 |
 | D | 35 |
 | E | 27 |
 | F | 20 |
-| G | 19 |
+| G | 20 |
 | H | 21 |
 | I | 18 |
 | J | 4 |
@@ -29,8 +29,8 @@
 | O | 104 |
 | P | 60 |
 | Q | 3 |
-| R | 28 |
-| S | 78 |
+| R | 30 |
+| S | 81 |
 | T | 24 |
 | U | 9 |
 | V | 9 |
@@ -41,10 +41,10 @@
 
 ## Top 5 des lettres les plus fournies
 
-1. **B** : 154 définitions
+1. **B** : 155 définitions
 2. **O** : 104 définitions
-3. **C** : 86 définitions
-4. **S** : 78 définitions
+3. **C** : 91 définitions
+4. **S** : 81 définitions
 5. **P** : 60 définitions
 
 ## Catégories
@@ -56,33 +56,33 @@
 - **MINAGE** : 57
 - **CONFIDENTIALITÉ** : 52
 - **INFORMATIQUE** : 52
-- **CRYPTOGRAPHIE** : 41
+- **CRYPTOGRAPHIE** : 44
 - **RGB** : 37
 - **LIGHTNING NETWORK** : 37
 - **ÉCONOMIE ET RÉGULATION** : 33
 - **RÉSEAU** : 32
+- **COUCHE SUPÉRIEURE** : 30
 - **HISTOIRE** : 28
 - **ATTAQUE** : 24
-- **COUCHE SUPÉRIEURE** : 23
 - **SIDECHAIN** : 9
 - **COMMUNAUTÉ** : 8
 - **OUTIL** : 7
-- **ORGANISATION** : 2
+- **ORGANISATION** : 4
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1310 occurrences
-- **transaction** : 1006 occurrences
-- **bloc** : 592 occurrences
-- **adresse** : 354 occurrences
+- **bitcoin** : 1334 occurrences
+- **transaction** : 1018 occurrences
+- **bloc** : 595 occurrences
+- **adresse** : 355 occurrences
 - **script** : 305 occurrences
 - **portefeuille** : 274 occurrences
-- **protocole** : 266 occurrences
+- **protocole** : 272 occurrences
+- **réseau** : 258 occurrences
 - **mineur** : 258 occurrences
-- **réseau** : 255 occurrences
-- **utilisateur** : 252 occurrences
-- **utxo** : 239 occurrences
+- **utilisateur** : 254 occurrences
+- **utxo** : 240 occurrences
 - **signature** : 236 occurrences
-- **donnée** : 221 occurrences
+- **donnée** : 229 occurrences
+- **chaîne** : 214 occurrences
 - **clés** : 209 occurrences
-- **chaîne** : 209 occurrences

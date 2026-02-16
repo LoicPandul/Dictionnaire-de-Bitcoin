@@ -2,4 +2,7 @@ uuid: "4d035973-1c9b-49f9-8fa7-681dd7b5f07b"
 title: "BROLLUPS"
 slug: "brollups"
 category: "COUCHE SUPÉRIEURE"
+cross_references:
+  - "07f6f728-ea7c-4b2b-aec7-f98c199177ef"
+  - "e5135b7d-ad1e-4587-9ae1-461c906d1eff"
 version: "1"

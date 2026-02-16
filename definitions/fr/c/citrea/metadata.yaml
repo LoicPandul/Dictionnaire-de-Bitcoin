@@ -2,4 +2,8 @@ uuid: "fcddc21f-8489-4d35-a042-f9b30a6538b5"
 title: "CITREA"
 slug: "citrea"
 category: "COUCHE SUPÉRIEURE"
+cross_references:
+  - "a3913f01-8ccd-4b0e-9e5d-bb5d3acc1289"
+  - "e5135b7d-ad1e-4587-9ae1-461c906d1eff"
+  - "c9ba79fa-2634-47a2-bb36-62fa930975bf"
 version: "1"

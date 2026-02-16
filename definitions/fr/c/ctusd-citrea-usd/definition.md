@@ -1,0 +1,1 @@
+Stablecoin natif de la plateforme Citrea, adossé au dollar américain à parité 1:1. Le ctUSD (*Citrea USD*) est garanti par des bons du Trésor américain à court terme et des réserves en espèces. Il est émis en partenariat avec MoonPay et repose sur l'infrastructure de M0, un protocole de stablecoin institutionnel.
