@@ -74,8 +74,13 @@ Pour ajouter une nouvelle définition :
    uuid: "générez-un-uuid-unique"
    title: "TITRE EN MAJUSCULES"
    slug: "titre-en-minuscules"
-   category: "Catégorie"
+   category: "CATÉGORIE"
    english_term: "ENGLISH TERM"  # optionnel
+   french_term: "ENGLISH TERM"  # optionnel
+   cross_references:
+   - "UUID du terme connexe"
+   - "UUID du terme connexe"
+   version: "1" # version du dictionnaire
    ```
 3. Créez un fichier `definition.md` avec le corps de la définition
 4. Si votre définition inclut des images, créez un dossier `assets/` et référencez-les avec `![](./assets/image.png)`
