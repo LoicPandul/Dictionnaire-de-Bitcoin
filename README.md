@@ -1,4 +1,4 @@
-[![Cover Image](./img/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
+[![Cover Image](./assets/images/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
 <p align="center">
   <img src="https://img.shields.io/badge/Nombre%20de%20définitions-847-black" alt="Nombre de définitions">
 </p>
@@ -35,7 +35,7 @@ Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*
 
 &nbsp;
 <p align="center">
-  <img src="./img/README%20GIF.gif" alt="Présentation GIF" width="70%">
+  <img src="./assets/images/README%20GIF.gif" alt="Présentation GIF" width="70%">
 </p>
 &nbsp;
 
@@ -125,10 +125,17 @@ Dictionnaire-de-Bitcoin/
 │       └── z/
 │           └── ...
 │
+├── assets/                         # Ressources visuelles
+│   ├── images/                     # Images du README
+│   └── pictograms/                 # Pictogrammes des catégories (SVG/PDF)
+│
+├── fonts/                          # Polices pour la génération PDF
+│
 ├── templates/                      # Templates pour la génération
-│   ├── pdf/
-│   │   └── template.tex            # Template LaTeX pour le PDF
-│   └── contributors.md
+│   ├── legal.yaml                  # Informations légales et métadonnées
+│   ├── introduction.md             # Note de l'auteur
+│   ├── contributors.md             # Liste des contributeurs
+│   └── categories.yaml             # Liste des catégories
 │
 ├── scripts/                        # Scripts de génération
 │   ├── main.py                     # Point d'entrée principal
@@ -137,7 +144,6 @@ Dictionnaire-de-Bitcoin/
 │   ├── generators/                 # Générateurs PDF, Index, Stats
 │   └── validators/                 # Validateurs
 │
-├── img/                            # Images du README
 ├── Dictionnaire de Bitcoin.pdf     # Version PDF
 ├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
@@ -154,7 +160,6 @@ Le projet utilise des scripts Python pour générer le PDF et maintenir les fich
 ### Prérequis
 
 - Python 3.8+
-- Pandoc
 - XeLaTeX (pour la génération PDF)
 
 ### Installation des dépendances
@@ -205,4 +210,4 @@ This work is licensed under a CC BY-NC-SA 4.0
 [cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
-[![Cover Image](./img/Logo-Pandul-NOIR.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
+[![Cover Image](./assets/images/Logo-Pandul-NOIR.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)

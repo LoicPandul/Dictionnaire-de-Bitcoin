@@ -2,12 +2,3 @@
 
 # Parsing YAML pour les métadonnées
 PyYAML>=6.0
-
-# PDF generation (interface Python pour Pandoc)
-pypandoc>=1.11
-
-# PDF manipulation (extraction des pages pour l'index)
-PyMuPDF>=1.23.0
-
-# Image manipulation (pour les couvertures EPUB)
-Pillow>=10.0.0
