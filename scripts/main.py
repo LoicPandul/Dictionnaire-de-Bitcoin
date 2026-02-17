@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.core.dictionary import Dictionary
 from scripts.generators import pdf_generator, index_generator, stats_generator
-from scripts.validators import markdown_linter
+from scripts.validators import markdown_linter, metadata_validator
 from scripts.config import DEFINITIONS_DIR
 
 
@@ -24,19 +24,23 @@ def cmd_build(dictionary):
     print("=" * 60)
 
     # 1. Lint + fix automatique
-    print("\n--- Étape 1/4: Correction du markdown ---")
+    print("\n--- Étape 1/5: Correction du markdown ---")
     markdown_linter.lint(dictionary, fix=True)
 
-    # 2. Index
-    print("\n--- Étape 2/4: Génération de l'index ---")
+    # 2. Validation des métadonnées (warnings uniquement)
+    print("\n--- Étape 2/5: Validation des métadonnées ---")
+    metadata_validator.validate(dictionary)
+
+    # 3. Index
+    print("\n--- Étape 3/5: Génération de l'index ---")
     index_generator.generate(dictionary)
 
-    # 3. Stats
-    print("\n--- Étape 3/4: Génération des statistiques ---")
+    # 4. Stats
+    print("\n--- Étape 4/5: Génération des statistiques ---")
     stats_generator.generate(dictionary)
 
-    # 4. PDF
-    print("\n--- Étape 4/4: Génération du PDF ---")
+    # 5. PDF
+    print("\n--- Étape 5/5: Génération du PDF ---")
     pdf_generator.generate(dictionary)
 
     print("\n" + "=" * 60)
