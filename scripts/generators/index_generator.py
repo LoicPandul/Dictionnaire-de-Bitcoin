@@ -44,11 +44,13 @@ def generate(dictionary: Dictionary, output_path: Path = None):
 
         lines.append(f"## {letter}")
         lines.append("")
+        lines.append("| Terme | UUID |")
+        lines.append("|-------|------|")
 
         for definition in definitions:
             # Lien vers la définition
             rel_path = f"definitions/fr/{letter.lower()}/{definition.slug}/definition.md"
-            lines.append(f"- [{definition.title}]({rel_path})")
+            lines.append(f"| [{definition.title}]({rel_path}) | `{definition.uuid}` |")
 
         lines.append("")
 
