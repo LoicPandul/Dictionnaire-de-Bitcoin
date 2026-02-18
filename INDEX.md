@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 879 définitions du dictionnaire.
 
 ---
 
@@ -207,6 +207,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [BTCD - BTC SUITE](definitions/fr/b/btcd-btc-suite/definition.md)
 - [BTCPAY SERVER](definitions/fr/b/btcpay-server/definition.md)
 - [BTG - BITCOIN GOLD](definitions/fr/b/btg-bitcoin-gold/definition.md)
+- [BTKN](definitions/fr/b/btkn/definition.md)
 - [BULL MARKET](definitions/fr/b/bull-market/definition.md)
 - [BULL RUN](definitions/fr/b/bull-run/definition.md)
 - [BUSINESS LOGIC](definitions/fr/b/business-logic/definition.md)
@@ -369,6 +370,8 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [ERLAY](definitions/fr/e/erlay/definition.md)
 - [ESMPPS](definitions/fr/e/esmpps/definition.md)
 - [ÉTIQUETAGE](definitions/fr/e/etiquetage/definition.md)
+- [ÉVÉNEMENT NOSTR](definitions/fr/e/evenement-nostr/definition.md)
+- [EXIT TRANSACTION](definitions/fr/e/exit-transaction/definition.md)
 - [EXPLORATEUR DE BLOC](definitions/fr/e/explorateur-de-bloc/definition.md)
 - [EXTRA-NONCE](definitions/fr/e/extra-nonce/definition.md)
 - [EXTRA TRANSACTION PROOF](definitions/fr/e/extra-transaction-proof/definition.md)
@@ -489,6 +492,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [LIBSECP256K1](definitions/fr/l/libsecp256k1/definition.md)
 - [LIGHTNING NETWORK](definitions/fr/l/lightning-network/definition.md)
 - [LIGHTNING SERVICE PROVIDER](definitions/fr/l/lightning-service-provider/definition.md)
+- [LIGHTSPARK](definitions/fr/l/lightspark/definition.md)
 - [LIMITE D'ÉMISSION](definitions/fr/l/limite-d-emission/definition.md)
 - [LIQUID NETWORK](definitions/fr/l/liquid-network/definition.md)
 - [LIQUIDITÉS](definitions/fr/l/liquidites/definition.md)
@@ -553,6 +557,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [NAT - NETWORK-ADJUSTED TIME](definitions/fr/n/nat-network-adjusted-time/definition.md)
 - [NESTED SEGWIT](definitions/fr/n/nested-segwit/definition.md)
 - [NFT](definitions/fr/n/nft/definition.md)
+- [NIP](definitions/fr/n/nip/definition.md)
 - [NLOCKTIME](definitions/fr/n/nlocktime/definition.md)
 - [NO2X](definitions/fr/n/no2x/definition.md)
 - [NOEUD](definitions/fr/n/noeud/definition.md)
@@ -561,10 +566,14 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [NOEUD LIGHTNING](definitions/fr/n/noeud-lightning/definition.md)
 - [NOEUD SPV - NOEUD LÉGER](definitions/fr/n/noeud-spv-noeud-leger/definition.md)
 - [NONCE](definitions/fr/n/nonce/definition.md)
+- [NOSTR](definitions/fr/n/nostr/definition.md)
+- [NPUB](definitions/fr/n/npub/definition.md)
+- [NSEC](definitions/fr/n/nsec/definition.md)
 - [NSEQUENCE](definitions/fr/n/nsequence/definition.md)
 - [NULL DATA](definitions/fr/n/null-data/definition.md)
 - [NULLDUMMY](definitions/fr/n/nulldummy/definition.md)
 - [NVERSION](definitions/fr/n/nversion/definition.md)
+- [NWC - NOSTR WALLET CONNECT](definitions/fr/n/nwc-nostr-wallet-connect/definition.md)
 - [NYA - NEW YORK AGREEMENT](definitions/fr/n/nya-new-york-agreement/definition.md)
 
 ## O
@@ -756,6 +765,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [RÈGLES DE STANDARDISATION](definitions/fr/r/regles-de-standardisation/definition.md)
 - [REGTEST](definitions/fr/r/regtest/definition.md)
 - [RELAIS](definitions/fr/r/relais/definition.md)
+- [RELAIS NOSTR](definitions/fr/r/relais-nostr/definition.md)
 - [REPLAY ATTACK](definitions/fr/r/replay-attack/definition.md)
 - [RÉSEAU BITCOIN](definitions/fr/r/reseau-bitcoin/definition.md)
 - [RÉSERVES FRACTIONNAIRES](definitions/fr/r/reserves-fractionnaires/definition.md)
@@ -790,6 +800,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [SCRIPTSIG](definitions/fr/s/scriptsig/definition.md)
 - [SCRIPTWITNESS](definitions/fr/s/scriptwitness/definition.md)
 - [SDK - SOFTWARE DEVELOPMENT KIT](definitions/fr/s/sdk-software-development-kit/definition.md)
+- [SE - SPARK ENTITY](definitions/fr/s/se-spark-entity/definition.md)
 - [SEAL DEFINITION](definitions/fr/s/seal-definition/definition.md)
 - [SECP256K1](definitions/fr/s/secp256k1/definition.md)
 - [SECP256R1](definitions/fr/s/secp256r1/definition.md)
@@ -835,11 +846,16 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [SMALL BLOCKERS](definitions/fr/s/small-blockers/definition.md)
 - [SMPPS](definitions/fr/s/smpps/definition.md)
 - [SNARK](definitions/fr/s/snark/definition.md)
+- [SO - SPARK OPERATOR](definitions/fr/s/so-spark-operator/definition.md)
 - [SOFT FORK](definitions/fr/s/soft-fork/definition.md)
 - [SOMME DE CONTRÔLE](definitions/fr/s/somme-de-controle/definition.md)
 - [SOROBAN](definitions/fr/s/soroban/definition.md)
 - [SORTIE LA PLUS GRANDE](definitions/fr/s/sortie-la-plus-grande/definition.md)
 - [SORTIE NON RENTABLE](definitions/fr/s/sortie-non-rentable/definition.md)
+- [SPARK](definitions/fr/s/spark/definition.md)
+- [SPARK SERVICE PROVIDER](definitions/fr/s/spark-service-provider/definition.md)
+- [SPARK TREE](definitions/fr/s/spark-tree/definition.md)
+- [SPARKSCAN](definitions/fr/s/sparkscan/definition.md)
 - [SPEEDY TRIAL](definitions/fr/s/speedy-trial/definition.md)
 - [SPOF](definitions/fr/s/spof/definition.md)
 - [SPREAD - WST](definitions/fr/s/spread-wst/definition.md)
@@ -849,6 +865,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 - [STASH](definitions/fr/s/stash/definition.md)
 - [STATE EXTENSION](definitions/fr/s/state-extension/definition.md)
 - [STATE TRANSITION](definitions/fr/s/state-transition/definition.md)
+- [STATECHAIN](definitions/fr/s/statechain/definition.md)
 - [STÉGANOGRAPHIE](definitions/fr/s/steganographie/definition.md)
 - [STONEWALL](definitions/fr/s/stonewall/definition.md)
 - [STONEWALL X2](definitions/fr/s/stonewall-x2/definition.md)
@@ -942,6 +959,7 @@ Ce fichier contient la liste de toutes les 861 définitions du dictionnaire.
 
 ## Z
 
+- [ZAP](definitions/fr/z/zap/definition.md)
 - [ZEROCONF](definitions/fr/z/zeroconf/definition.md)
 - [ZEROLINK](definitions/fr/z/zerolink/definition.md)
 - [ZEROSYNC](definitions/fr/z/zerosync/definition.md)

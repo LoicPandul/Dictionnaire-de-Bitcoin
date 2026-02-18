@@ -1,0 +1,5 @@
+Nœud individuel au sein de la *Spark Entity* (SE), participant au protocole de signature à seuil qui sécurise les transferts offchain dans Spark. Chaque SO détient un fragment de la part de clé de la SE, sans jamais posséder la clé complète à lui seul. L'ensemble des SO (ou un seuil d'entre eux) coopèrent via le protocole FROST pour co-signer les transactions et renouveler les parts de clé lors des transferts de propriété.
+
+Les SO jouent également un rôle de *watchtower* : ils surveillent la blockchain Bitcoin pour détecter d'éventuelles tentatives d'exit frauduleuses par d'anciens propriétaires.
+
+Si un SO est indisponible, les transferts peuvent être temporairement bloqués, mais les utilisateurs conservent la possibilité de sortir unilatéralement vers la couche principale. Au lancement de Spark, deux opérateurs (Lightspark et Flashnet) composent la SE, avec l'objectif d'élargir le nombre d'opérateurs à des juridictions diverses pour diffuser le risque.

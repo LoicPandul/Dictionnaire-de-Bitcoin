@@ -1,0 +1,1 @@
+Explorateur de blocs et suite d'analyse publique dédiée au protocole Spark. Sparkscan permet de consulter les adresses, les transactions, les jetons (BTKN) et l'activité en temps réel du réseau Spark.
