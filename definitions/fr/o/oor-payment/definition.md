@@ -1,0 +1,7 @@
+Mécanisme de paiement instantané au sein du protocole Ark permettant de transférer des VTXO entre utilisateurs sans attendre le prochain round. Les rounds Ark étant peu fréquents (15 à 60 minutes) et nécessitant de la liquidité de la part de l'ASP, les paiements OOR offrent une alternative rapide et moins coûteuse pour les transferts courants.
+
+Pour effectuer un paiement OOR, l'expéditeur crée une transaction réutilisant la clause de forfait (*forfeit clause*) de la politique du VTXO, ce qui redirige celui-ci vers un nouveau VTXO appartenant au destinataire. L'ASP co-signe cette transaction, puis l'expéditeur la transmet au receveur. Le VTXO OOR obtenu possède les mêmes propriétés qu'un VTXO classique : il peut être utilisé comme entrée dans un round ou servir à un nouveau paiement OOR.
+
+Le modèle de confiance diffère cependant des paiements en round. Le destinataire d'un paiement OOR doit faire confiance à l'expéditeur et à l'ASP pour qu'ils ne s'entendent pas pour effectuer une double dépense. En cas de fraude, les signatures des deux dépenses deviennent publiques, permettant au receveur de prouver cryptographiquement la violation. L'utilisateur peut à tout moment soumettre son VTXO OOR lors du prochain round pour le rafraîchir en VTXO classique pleinement trustless.
+
+Les OOR Payments sont parfois désignés sous le terme « *arkoor* ».

@@ -1,0 +1,9 @@
+uuid: "dfeed873-1188-4666-8797-026f3889664d"
+title: "OOR PAYMENT"
+slug: "oor-payment"
+category: "COUCHE SUPÉRIEURE"
+cross_references:
+  - "07f6f728-ea7c-4b2b-aec7-f98c199177ef"
+  - "e56889fa-5c23-4b94-b01b-9ba46a528cdf"
+french_term: "PAIEMENT HORS ROUND"
+version: "1"
