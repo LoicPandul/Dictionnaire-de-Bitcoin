@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 883 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 887 définitions du dictionnaire.
 
 ---
 
@@ -58,164 +58,164 @@ Ce fichier contient la liste de toutes les 883 définitions du dictionnaire.
 
 ## B
 
-| Terme                                                                                           | UUID                                   |
-| ----------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [B-MONEY](definitions/fr/b/b-money/definition.md)                                               | `70ca9aab-3b0b-4903-91bc-f5782c614db9` |
-| [BANLIST.DAT](definitions/fr/b/banlist-dat/definition.md)                                       | `a2401850-c268-4b41-b2a7-32101186bcf9` |
-| [BANLIST.JSON](definitions/fr/b/banlist-json/definition.md)                                     | `e04d6131-11b7-415e-9b5d-dc6e82c74b26` |
-| [BARE-MULTISIG](definitions/fr/b/bare-multisig/definition.md)                                   | `ceba18be-da61-4cdb-ad9a-5affc3bb7c7f` |
-| [BASE - ARITHMÉTIQUE](definitions/fr/b/base-arithmetique/definition.md)                         | `7982acd5-96d9-4b1f-91e0-0a0a61e2a0cf` |
-| [BASE58CHECK](definitions/fr/b/base58check/definition.md)                                       | `cc674cd1-8220-4080-9107-fd92c305394c` |
-| [BATCHED SPENDING](definitions/fr/b/batched-spending/definition.md)                             | `4de7f805-d965-4703-a67a-06df5cafc8b9` |
-| [BCH - BITCOIN CASH](definitions/fr/b/bch-bitcoin-cash/definition.md)                           | `abbab2ae-f361-48f2-a376-e596da4a41cb` |
-| [BCH CODE](definitions/fr/b/bch-code/definition.md)                                             | `90303bd0-3bc8-4a0f-b0c9-e90206f5af07` |
-| [BCOIN](definitions/fr/b/bcoin/definition.md)                                                   | `0a52830a-b5dc-4237-8062-4201cdda11dd` |
-| [BDK - BITCOIN DEV KIT](definitions/fr/b/bdk-bitcoin-dev-kit/definition.md)                     | `1311f432-f526-4003-940d-ed2ff3e0ae82` |
-| [BEAR MARKET](definitions/fr/b/bear-market/definition.md)                                       | `6450c114-13eb-43fc-9ebe-e84e319ca61e` |
-| [BECH32 ET BECH32M](definitions/fr/b/bech32-et-bech32m/definition.md)                           | `044e7b8c-b87f-4116-9ee9-f0cb8c67d386` |
-| [BEHIND-THE-METER](definitions/fr/b/behind-the-meter/definition.md)                             | `cdfc675f-8e81-4730-9da6-f374df1f46de` |
-| [BERKELEYDB](definitions/fr/b/berkeleydb/definition.md)                                         | `9d840de1-c93e-4ab0-90e8-6239692dc691` |
-| [BETTERHASH](definitions/fr/b/betterhash/definition.md)                                         | `a84ae094-d3ee-4c73-8fa6-87ddd4e50b34` |
+| Terme | UUID |
+|-------|------|
+| [B-MONEY](definitions/fr/b/b-money/definition.md) | `70ca9aab-3b0b-4903-91bc-f5782c614db9` |
+| [BANLIST.DAT](definitions/fr/b/banlist-dat/definition.md) | `a2401850-c268-4b41-b2a7-32101186bcf9` |
+| [BANLIST.JSON](definitions/fr/b/banlist-json/definition.md) | `e04d6131-11b7-415e-9b5d-dc6e82c74b26` |
+| [BARE-MULTISIG](definitions/fr/b/bare-multisig/definition.md) | `ceba18be-da61-4cdb-ad9a-5affc3bb7c7f` |
+| [BASE - ARITHMÉTIQUE](definitions/fr/b/base-arithmetique/definition.md) | `7982acd5-96d9-4b1f-91e0-0a0a61e2a0cf` |
+| [BASE58CHECK](definitions/fr/b/base58check/definition.md) | `cc674cd1-8220-4080-9107-fd92c305394c` |
+| [BATCHED SPENDING](definitions/fr/b/batched-spending/definition.md) | `4de7f805-d965-4703-a67a-06df5cafc8b9` |
+| [BCH - BITCOIN CASH](definitions/fr/b/bch-bitcoin-cash/definition.md) | `abbab2ae-f361-48f2-a376-e596da4a41cb` |
+| [BCH CODE](definitions/fr/b/bch-code/definition.md) | `90303bd0-3bc8-4a0f-b0c9-e90206f5af07` |
+| [BCOIN](definitions/fr/b/bcoin/definition.md) | `0a52830a-b5dc-4237-8062-4201cdda11dd` |
+| [BDK - BITCOIN DEV KIT](definitions/fr/b/bdk-bitcoin-dev-kit/definition.md) | `1311f432-f526-4003-940d-ed2ff3e0ae82` |
+| [BEAR MARKET](definitions/fr/b/bear-market/definition.md) | `6450c114-13eb-43fc-9ebe-e84e319ca61e` |
+| [BECH32 ET BECH32M](definitions/fr/b/bech32-et-bech32m/definition.md) | `044e7b8c-b87f-4116-9ee9-f0cb8c67d386` |
+| [BEHIND-THE-METER](definitions/fr/b/behind-the-meter/definition.md) | `cdfc675f-8e81-4730-9da6-f374df1f46de` |
+| [BERKELEYDB](definitions/fr/b/berkeleydb/definition.md) | `9d840de1-c93e-4ab0-90e8-6239692dc691` |
+| [BETTERHASH](definitions/fr/b/betterhash/definition.md) | `a84ae094-d3ee-4c73-8fa6-87ddd4e50b34` |
 | [BFT - BYZANTINE FAULT TOLERANCE](definitions/fr/b/bft-byzantine-fault-tolerance/definition.md) | `797fa1f7-5713-409c-9e5b-b35e3beeb83a` |
-| [BGP HIJACKING](definitions/fr/b/bgp-hijacking/definition.md)                                   | `3e772f6a-a484-464d-82a1-d0d808f825fb` |
-| [BIG BLOCKERS](definitions/fr/b/big-blockers/definition.md)                                     | `04733e12-e0e3-4e86-bddb-ededd4f992ba` |
-| [BIG-ENDIAN](definitions/fr/b/big-endian/definition.md)                                         | `27e3dd7a-75c3-40f1-8ce2-4f3c24242155` |
-| [BINAIRE](definitions/fr/b/binaire/definition.md)                                               | `0f0ce23e-bd9b-4552-be40-9547d7fcbdc2` |
-| [BIP](definitions/fr/b/bip/definition.md)                                                       | `ac5be5f7-85b3-4dba-b006-14b9bf55a40c` |
-| [BIP-0001](definitions/fr/b/bip-0001/definition.md)                                             | `1fcc0d0b-d8b1-4f13-a3e3-f67383f704d4` |
-| [BIP-0002](definitions/fr/b/bip-0002/definition.md)                                             | `bf33fc73-d6fc-4b8f-b213-2bd18481bca7` |
-| [BIP-0008](definitions/fr/b/bip-0008/definition.md)                                             | `58295725-9bd8-4bb3-84ff-db983061c164` |
-| [BIP-0009](definitions/fr/b/bip-0009/definition.md)                                             | `78a07d8e-988e-4f2b-9c0b-75ecd917ce9a` |
-| [BIP-0010](definitions/fr/b/bip-0010/definition.md)                                             | `79338e6b-450a-4b13-a2f2-35fbae0e6d65` |
-| [BIP-0011](definitions/fr/b/bip-0011/definition.md)                                             | `c9753626-0b70-474e-800e-e503b9e1c6ff` |
-| [BIP-0012](definitions/fr/b/bip-0012/definition.md)                                             | `cc78de7f-4a95-405e-9f8e-09a352ce3ac7` |
-| [BIP-0013](definitions/fr/b/bip-0013/definition.md)                                             | `c247829f-ddfa-40a9-bc50-88a5701d4628` |
-| [BIP-0014](definitions/fr/b/bip-0014/definition.md)                                             | `0dd19b44-03c3-4e8c-a5a6-1d1bb6e37154` |
-| [BIP-0016](definitions/fr/b/bip-0016/definition.md)                                             | `82155f64-a605-4dd8-856b-0a7bc3dcef3c` |
-| [BIP-0017](definitions/fr/b/bip-0017/definition.md)                                             | `0c8de08d-082a-452a-85e7-0c0a36aeb876` |
-| [BIP-0021](definitions/fr/b/bip-0021/definition.md)                                             | `b2388d11-0acc-41fe-8d54-6ebf172e6511` |
-| [BIP-0022](definitions/fr/b/bip-0022/definition.md)                                             | `1bb981e1-3f5a-4919-a581-dbe6f8d83861` |
-| [BIP-0023](definitions/fr/b/bip-0023/definition.md)                                             | `f5b583c2-19ba-43d0-ac58-8147eb3cdef7` |
-| [BIP-0030](definitions/fr/b/bip-0030/definition.md)                                             | `f4ab9b96-5fb5-47c7-8ff6-5d68da739f7c` |
-| [BIP-0031](definitions/fr/b/bip-0031/definition.md)                                             | `9958fcb9-2554-4663-8d0c-d8927fb4a8a5` |
-| [BIP-0032](definitions/fr/b/bip-0032/definition.md)                                             | `60f0a3c9-56fc-4fc8-bb54-d542d0434b8a` |
-| [BIP-0034](definitions/fr/b/bip-0034/definition.md)                                             | `9a727a0a-46fe-4b42-8e52-21e2712b7d13` |
-| [BIP-0035](definitions/fr/b/bip-0035/definition.md)                                             | `99c58522-4fba-43ee-a67c-3f69cf3b8663` |
-| [BIP-0037](definitions/fr/b/bip-0037/definition.md)                                             | `6ca39957-45a3-4cd3-93ea-4d95a60180a1` |
-| [BIP-0038](definitions/fr/b/bip-0038/definition.md)                                             | `7e465e8d-14c6-4cf8-845c-2b5b8793b29a` |
-| [BIP-0039](definitions/fr/b/bip-0039/definition.md)                                             | `da3bb49f-15b3-4613-8b1b-6fe164956ab0` |
-| [BIP-0042](definitions/fr/b/bip-0042/definition.md)                                             | `c27548c5-dba5-4019-bd64-a30d53b6ae4a` |
-| [BIP-0043](definitions/fr/b/bip-0043/definition.md)                                             | `da78514e-08b0-4741-b2e3-ce0a541eb77f` |
-| [BIP-0044](definitions/fr/b/bip-0044/definition.md)                                             | `c9bbca4b-b417-4c78-82db-62b9ffff043b` |
-| [BIP-0047](definitions/fr/b/bip-0047/definition.md)                                             | `8f17833c-f095-4d3a-a900-6a8479209a45` |
-| [BIP-0049](definitions/fr/b/bip-0049/definition.md)                                             | `872161af-ef17-48cb-949c-05b8a04b5c39` |
-| [BIP-0050](definitions/fr/b/bip-0050/definition.md)                                             | `fa8d9dad-568c-447e-9c1c-c65b615d46c9` |
-| [BIP-0061](definitions/fr/b/bip-0061/definition.md)                                             | `9db2402c-6ea6-4b27-b3a5-6d3dcb61abc0` |
-| [BIP-0065](definitions/fr/b/bip-0065/definition.md)                                             | `08d35796-e7b3-48e6-b1b0-7dc4e27e55cd` |
-| [BIP-0066](definitions/fr/b/bip-0066/definition.md)                                             | `0c47404b-98cd-4de3-a0b5-584195fced1b` |
-| [BIP-0068](definitions/fr/b/bip-0068/definition.md)                                             | `f81bb688-9fed-4884-8477-c93b01e58a89` |
-| [BIP-0070](definitions/fr/b/bip-0070/definition.md)                                             | `ea6d0414-12c5-48f3-996b-2897ec6548f2` |
-| [BIP-0071](definitions/fr/b/bip-0071/definition.md)                                             | `5943e2ea-e9c7-40ac-9682-25b86b66e4fb` |
-| [BIP-0072](definitions/fr/b/bip-0072/definition.md)                                             | `f02bd4a9-468b-4b70-9d76-c3f93e87533e` |
-| [BIP-0075](definitions/fr/b/bip-0075/definition.md)                                             | `775b2e0e-6ed9-4269-a3f5-e6e0ce8e2dcd` |
-| [BIP-0078](definitions/fr/b/bip-0078/definition.md)                                             | `a4a63857-0bd2-4651-ac7b-1a455fd3eab0` |
-| [BIP-0084](definitions/fr/b/bip-0084/definition.md)                                             | `40b9661a-7c4f-4e83-9fca-d49516a6ebe7` |
-| [BIP-0085](definitions/fr/b/bip-0085/definition.md)                                             | `b1e0449c-31dd-4705-a235-d7ff86dceb8b` |
-| [BIP-0086](definitions/fr/b/bip-0086/definition.md)                                             | `68dd1d4c-9771-416c-a1d4-eca870680620` |
-| [BIP-0090](definitions/fr/b/bip-0090/definition.md)                                             | `4377d65a-07ec-43d4-b763-227a137f2595` |
-| [BIP-0091](definitions/fr/b/bip-0091/definition.md)                                             | `94bad1f1-3f70-444b-ab12-e783c9a7aafa` |
-| [BIP-0093](definitions/fr/b/bip-0093/definition.md)                                             | `35bc923f-b553-4d79-9192-50d0dbc21d40` |
-| [BIP-0094](definitions/fr/b/bip-0094/definition.md)                                             | `e688421e-dbe7-4ca9-ae03-c191f47f1080` |
-| [BIP-0101](definitions/fr/b/bip-0101/definition.md)                                             | `3589ab59-e372-4fe8-9c56-e9cf9fea85d4` |
-| [BIP-0102](definitions/fr/b/bip-0102/definition.md)                                             | `65eb2e17-8dac-41f6-acf7-30d01d085760` |
-| [BIP-0109](definitions/fr/b/bip-0109/definition.md)                                             | `9e049074-4a73-4567-8fc3-0678aecdbcf7` |
-| [BIP-0111](definitions/fr/b/bip-0111/definition.md)                                             | `09b8f345-bff4-4744-9a01-dc734f29cb7d` |
-| [BIP-0112](definitions/fr/b/bip-0112/definition.md)                                             | `62bb6e93-35b0-49da-ab17-0b84b073c8b5` |
-| [BIP-0113](definitions/fr/b/bip-0113/definition.md)                                             | `7f52a3da-6184-438d-9a2a-46101a4184ce` |
-| [BIP-0118](definitions/fr/b/bip-0118/definition.md)                                             | `d6c9951a-94ae-4700-aa31-9a9561b3bfc4` |
-| [BIP-0119](definitions/fr/b/bip-0119/definition.md)                                             | `18060e03-d8e2-46d6-82fa-ce7949682cd6` |
-| [BIP-0123](definitions/fr/b/bip-0123/definition.md)                                             | `ca7ad011-0bf8-4b20-ad10-a94cf422d118` |
-| [BIP-0125](definitions/fr/b/bip-0125/definition.md)                                             | `771919cf-9e7a-47c5-82fc-c729a36c16db` |
-| [BIP-0137](definitions/fr/b/bip-0137/definition.md)                                             | `c7eb659d-8283-44ba-aea9-bbb99c0e0f41` |
-| [BIP-0141](definitions/fr/b/bip-0141/definition.md)                                             | `a073c884-0f6a-49f4-bdc9-fa5b8cc37133` |
-| [BIP-0143](definitions/fr/b/bip-0143/definition.md)                                             | `ba286b8c-fd05-42c6-9709-a48ba8e527ef` |
-| [BIP-0144](definitions/fr/b/bip-0144/definition.md)                                             | `03e9c931-5f07-4a41-a9f7-fd2bc113c2ac` |
-| [BIP-0145](definitions/fr/b/bip-0145/definition.md)                                             | `2d27426b-acdf-48a0-a1b8-d0de71eff51a` |
-| [BIP-0147](definitions/fr/b/bip-0147/definition.md)                                             | `b2903d20-e580-4fa2-aab7-460751f021c4` |
-| [BIP-0148](definitions/fr/b/bip-0148/definition.md)                                             | `514bb0cd-4077-47fd-819e-38cee5e5658f` |
-| [BIP-0149](definitions/fr/b/bip-0149/definition.md)                                             | `71c745ea-bba3-4714-94d2-2c26bdd8a02b` |
-| [BIP-0150](definitions/fr/b/bip-0150/definition.md)                                             | `e66a6683-e596-4239-91b3-bd5f579b9ab1` |
-| [BIP-0151](definitions/fr/b/bip-0151/definition.md)                                             | `16f24b24-342f-4eb9-a1c4-bd754018e020` |
-| [BIP-0152](definitions/fr/b/bip-0152/definition.md)                                             | `51cb62fd-2d57-4f64-8d3e-6b8c6bb85dbe` |
-| [BIP-0155](definitions/fr/b/bip-0155/definition.md)                                             | `8cc61c1e-719f-47a5-b4b3-e88aaa2b231c` |
-| [BIP-0156](definitions/fr/b/bip-0156/definition.md)                                             | `e892f615-28b4-4078-ad86-f862c246bd70` |
-| [BIP-0173](definitions/fr/b/bip-0173/definition.md)                                             | `29193a69-fe44-4bf3-9236-5d427db370fd` |
-| [BIP-0322](definitions/fr/b/bip-0322/definition.md)                                             | `ab4e00c3-f6bb-4973-a5fe-66ee75f3bb50` |
-| [BIP-0324](definitions/fr/b/bip-0324/definition.md)                                             | `7aadb49e-5adc-4010-a269-fd7d6fabda46` |
-| [BIP-0326](definitions/fr/b/bip-0326/definition.md)                                             | `9ba3165a-b72c-41be-96b2-221a576821d2` |
-| [BIP-0330](definitions/fr/b/bip-0330/definition.md)                                             | `2f0c7362-0127-4575-9b0a-b43f435905b5` |
-| [BIP-0352](definitions/fr/b/bip-0352/definition.md)                                             | `57d578b1-202e-4f63-96e4-ba3819713b33` |
-| [BIP-0380](definitions/fr/b/bip-0380/definition.md)                                             | `f951d721-85ca-4196-8bb8-75cc81306bb6` |
-| [BIP-0381](definitions/fr/b/bip-0381/definition.md)                                             | `4b7235b1-f0dc-441d-ad80-bc41f1ebff5f` |
-| [BIP-0382](definitions/fr/b/bip-0382/definition.md)                                             | `6e77d63d-5baf-4068-98f8-717283977dc3` |
-| [BIP-0383](definitions/fr/b/bip-0383/definition.md)                                             | `69b87b29-0a20-4e44-b3d3-730522d2aa53` |
-| [BIP-0384](definitions/fr/b/bip-0384/definition.md)                                             | `eaca6927-5363-44a9-907e-928ff4439a5e` |
-| [BIP-0385](definitions/fr/b/bip-0385/definition.md)                                             | `42b64d1b-30f5-4c96-8e47-cc569368d694` |
-| [BIP-0386](definitions/fr/b/bip-0386/definition.md)                                             | `77554b36-a2e0-45c0-8398-f519b80ac9f1` |
-| [BIRTH DATE](definitions/fr/b/birth-date/definition.md)                                         | `500b92ea-4ac3-4baf-9554-3dedcd375448` |
-| [BIT](definitions/fr/b/bit/definition.md)                                                       | `a1cbf11c-d87e-4866-a1cd-61a653d8a853` |
-| [BIT GOLD](definitions/fr/b/bit-gold/definition.md)                                             | `eca1a80c-00b6-4f2b-9429-fb971c5167bd` |
-| [BIT - UNITÉ](definitions/fr/b/bit-unite/definition.md)                                         | `82f12ac3-08a9-4dcf-8c95-9bdd8350f7f8` |
-| [BITCOIN - B MAJUSCULE](definitions/fr/b/bitcoin-b-majuscule/definition.md)                     | `58ea6784-71a5-4c24-a2b1-0ace80de605b` |
-| [BITCOIN - B MINUSCULE](definitions/fr/b/bitcoin-b-minuscule/definition.md)                     | `fabbc014-067f-4de9-945a-8ef079134902` |
-| [BITCOIN CLASSIC](definitions/fr/b/bitcoin-classic/definition.md)                               | `535f78ca-4343-4d55-81f8-e4a0f19a36a1` |
-| [BITCOIN-CLI](definitions/fr/b/bitcoin-cli/definition.md)                                       | `653e2413-a720-41ad-ae91-c82f36d8891f` |
-| [BITCOIN.CONF](definitions/fr/b/bitcoin-conf/definition.md)                                     | `39de4acc-545e-4898-bc99-6caac5ba1912` |
-| [BITCOIN CORE](definitions/fr/b/bitcoin-core/definition.md)                                     | `9134ec46-cc0f-429f-ae9f-71524d8aa4af` |
-| [BITCOIN CORE GUI-QML](definitions/fr/b/bitcoin-core-gui-qml/definition.md)                     | `ca4afe58-72e3-43ca-b4a1-8e2da3ca2f6d` |
-| [BITCOIN-DEV](definitions/fr/b/bitcoin-dev/definition.md)                                       | `d2d99060-3757-428b-ac6d-a18cd5e800bd` |
-| [BITCOIN FOG](definitions/fr/b/bitcoin-fog/definition.md)                                       | `e76b3e42-f3c7-49e6-a96c-b403623eefa4` |
-| [BITCOIN INQUISITION](definitions/fr/b/bitcoin-inquisition/definition.md)                       | `c45d222b-92e2-4a01-9fef-c7751816da26` |
-| [BITCOIN JESUS](definitions/fr/b/bitcoin-jesus/definition.md)                                   | `b668d29d-190c-4e82-be53-d8c37a9c54e7` |
-| [BITCOIN KNOTS](definitions/fr/b/bitcoin-knots/definition.md)                                   | `7edc3b23-3938-4f16-be67-06463d09a0ab` |
-| [BITCOIN OPTECH](definitions/fr/b/bitcoin-optech/definition.md)                                 | `43ba3400-9a5d-4fd1-815d-0f24fa6a045c` |
-| [BITCOIN QT](definitions/fr/b/bitcoin-qt/definition.md)                                         | `d9966ec1-5cac-479d-a051-bcb75167696c` |
-| [BITCOIN UNLIMITED](definitions/fr/b/bitcoin-unlimited/definition.md)                           | `37706f12-239a-4fb7-a1fa-46db62511dd5` |
-| [BITCOIN XT](definitions/fr/b/bitcoin-xt/definition.md)                                         | `bffbeb5c-437c-4a34-9a81-4b7664332b5a` |
-| [BITCOIND](definitions/fr/b/bitcoind/definition.md)                                             | `b3f59e7b-5f94-46d6-92fe-77d76176e816` |
-| [BITCOIND.PID](definitions/fr/b/bitcoind-pid/definition.md)                                     | `4e78aadf-b3e1-45b7-8ea6-7028e10ff548` |
-| [BITCOINTALK](definitions/fr/b/bitcointalk/definition.md)                                       | `4eb80ccd-11e0-45cc-ad72-32065d22601a` |
-| [BITVM](definitions/fr/b/bitvm/definition.md)                                                   | `c4b669f1-0d6c-4206-9537-82282ca1ca24` |
-| [BLK*.DAT](definitions/fr/b/blk-dat/definition.md)                                              | `61425f35-72b4-4ce5-85c1-5d3551e733e6` |
-| [BLKINDEX.DAT](definitions/fr/b/blkindex-dat/definition.md)                                     | `2197f80d-8b0b-4478-b1b6-00164a5ee82a` |
-| [BLKTREE/](definitions/fr/b/blktree/definition.md)                                              | `f67db5a4-538c-4257-b7a9-db221101c879` |
-| [BLOC](definitions/fr/b/bloc/definition.md)                                                     | `dd7fef86-8eb0-4ed5-ba65-899c7374b274` |
-| [BLOCK TEMPLATE](definitions/fr/b/block-template/definition.md)                                 | `74ababb1-fc8b-497f-b882-c3f0abe279df` |
-| [BLOCKCHAIN](definitions/fr/b/blockchain/definition.md)                                         | `c2be7598-8cad-4b94-afe4-6bec52482c2e` |
-| [BLOCKS INDEX](definitions/fr/b/blocks-index/definition.md)                                     | `a08d80c6-798e-477e-9347-18e18b40fd03` |
-| [BLOCKS/REV*.DAT](definitions/fr/b/blocks-rev-dat/definition.md)                                | `8963cdcc-4b1f-42d9-ad98-3009486408e2` |
-| [BLOCKSIGNERS](definitions/fr/b/blocksigners/definition.md)                                     | `eefc35f8-7b36-4cf0-a095-a4e353b6342f` |
-| [BLOCKSIZE WAR](definitions/fr/b/blocksize-war/definition.md)                                   | `5e8e92ec-5848-47bb-b47e-92f655ee1c7f` |
-| [BLOCKSTREAM](definitions/fr/b/blockstream/definition.md)                                       | `cd0c8e19-e3ea-4e07-b42a-34de86984dfa` |
-| [BLOOM FILTER](definitions/fr/b/bloom-filter/definition.md)                                     | `b365a328-efd9-4bf5-861c-4cab3cfbf9af` |
-| [BOLT](definitions/fr/b/bolt/definition.md)                                                     | `b80ec0d7-d56f-46c4-a0b3-45a3144de0e5` |
-| [BOSMINER](definitions/fr/b/bosminer/definition.md)                                             | `ffc8d20e-2173-4513-a1ec-d278c3720034` |
-| [BOUNTY](definitions/fr/b/bounty/definition.md)                                                 | `4bb65831-8540-4c8d-be14-1f834fe1afd8` |
-| [BPM - BITCOIN POOLED MINING](definitions/fr/b/bpm-bitcoin-pooled-mining/definition.md)         | `b41b2435-727a-42b8-a0c3-16d49a7a6d9f` |
-| [BRANCH-AND-BOUND](definitions/fr/b/branch-and-bound/definition.md)                             | `bffaadfd-53ad-4ac6-b6df-8d7dd31bcee8` |
-| [BRANCHE - BITCOIN](definitions/fr/b/branche-bitcoin/definition.md)                             | `0192b056-c5ab-4396-b1e2-18cffaa1ea8d` |
-| [BRANCHE - GIT](definitions/fr/b/branche-git/definition.md)                                     | `9276123d-4b4b-4d8b-9689-3cc562636220` |
-| [BRC-20](definitions/fr/b/brc-20/definition.md)                                                 | `bfddd138-88b4-42bc-81fb-bbbc0e0097d3` |
-| [BROLLUPS](definitions/fr/b/brollups/definition.md)                                             | `4d035973-1c9b-49f9-8fa7-681dd7b5f07b` |
-| [BSV - BITCOIN SATOSHI VISION](definitions/fr/b/bsv-bitcoin-satoshi-vision/definition.md)       | `12ffc664-30e0-4401-b10c-6d3aba5d24ed` |
-| [BTC](definitions/fr/b/btc/definition.md)                                                       | `31bcfa58-89de-4989-83fa-d4431653fc2d` |
-| [BTCD - BTC SUITE](definitions/fr/b/btcd-btc-suite/definition.md)                               | `a38975e1-4280-49a2-9aef-10c506618aa9` |
-| [BTCPAY SERVER](definitions/fr/b/btcpay-server/definition.md)                                   | `da7b74cf-e772-49ec-a73b-fc31185bb001` |
-| [BTG - BITCOIN GOLD](definitions/fr/b/btg-bitcoin-gold/definition.md)                           | `8e6281fa-a934-4a2d-b8d2-8025e1574479` |
-| [BTKN](definitions/fr/b/btkn/definition.md)                                                     | `76f0989a-801b-40f1-a905-ad1941fd68f6` |
-| [BULL MARKET](definitions/fr/b/bull-market/definition.md)                                       | `c0ae585c-1a11-451c-9324-b4e45792fbb8` |
-| [BULL RUN](definitions/fr/b/bull-run/definition.md)                                             | `d100a604-1b22-446d-872f-2dd642d6c81f` |
-| [BUSINESS LOGIC](definitions/fr/b/business-logic/definition.md)                                 | `e3b030f5-20e4-40f5-ba3f-3a5cbc376105` |
+| [BGP HIJACKING](definitions/fr/b/bgp-hijacking/definition.md) | `3e772f6a-a484-464d-82a1-d0d808f825fb` |
+| [BIG BLOCKERS](definitions/fr/b/big-blockers/definition.md) | `04733e12-e0e3-4e86-bddb-ededd4f992ba` |
+| [BIG-ENDIAN](definitions/fr/b/big-endian/definition.md) | `27e3dd7a-75c3-40f1-8ce2-4f3c24242155` |
+| [BINAIRE](definitions/fr/b/binaire/definition.md) | `0f0ce23e-bd9b-4552-be40-9547d7fcbdc2` |
+| [BIP](definitions/fr/b/bip/definition.md) | `ac5be5f7-85b3-4dba-b006-14b9bf55a40c` |
+| [BIP-0001](definitions/fr/b/bip-0001/definition.md) | `1fcc0d0b-d8b1-4f13-a3e3-f67383f704d4` |
+| [BIP-0002](definitions/fr/b/bip-0002/definition.md) | `bf33fc73-d6fc-4b8f-b213-2bd18481bca7` |
+| [BIP-0008](definitions/fr/b/bip-0008/definition.md) | `58295725-9bd8-4bb3-84ff-db983061c164` |
+| [BIP-0009](definitions/fr/b/bip-0009/definition.md) | `78a07d8e-988e-4f2b-9c0b-75ecd917ce9a` |
+| [BIP-0010](definitions/fr/b/bip-0010/definition.md) | `79338e6b-450a-4b13-a2f2-35fbae0e6d65` |
+| [BIP-0011](definitions/fr/b/bip-0011/definition.md) | `c9753626-0b70-474e-800e-e503b9e1c6ff` |
+| [BIP-0012](definitions/fr/b/bip-0012/definition.md) | `cc78de7f-4a95-405e-9f8e-09a352ce3ac7` |
+| [BIP-0013](definitions/fr/b/bip-0013/definition.md) | `c247829f-ddfa-40a9-bc50-88a5701d4628` |
+| [BIP-0014](definitions/fr/b/bip-0014/definition.md) | `0dd19b44-03c3-4e8c-a5a6-1d1bb6e37154` |
+| [BIP-0016](definitions/fr/b/bip-0016/definition.md) | `82155f64-a605-4dd8-856b-0a7bc3dcef3c` |
+| [BIP-0017](definitions/fr/b/bip-0017/definition.md) | `0c8de08d-082a-452a-85e7-0c0a36aeb876` |
+| [BIP-0021](definitions/fr/b/bip-0021/definition.md) | `b2388d11-0acc-41fe-8d54-6ebf172e6511` |
+| [BIP-0022](definitions/fr/b/bip-0022/definition.md) | `1bb981e1-3f5a-4919-a581-dbe6f8d83861` |
+| [BIP-0023](definitions/fr/b/bip-0023/definition.md) | `f5b583c2-19ba-43d0-ac58-8147eb3cdef7` |
+| [BIP-0030](definitions/fr/b/bip-0030/definition.md) | `f4ab9b96-5fb5-47c7-8ff6-5d68da739f7c` |
+| [BIP-0031](definitions/fr/b/bip-0031/definition.md) | `9958fcb9-2554-4663-8d0c-d8927fb4a8a5` |
+| [BIP-0032](definitions/fr/b/bip-0032/definition.md) | `60f0a3c9-56fc-4fc8-bb54-d542d0434b8a` |
+| [BIP-0034](definitions/fr/b/bip-0034/definition.md) | `9a727a0a-46fe-4b42-8e52-21e2712b7d13` |
+| [BIP-0035](definitions/fr/b/bip-0035/definition.md) | `99c58522-4fba-43ee-a67c-3f69cf3b8663` |
+| [BIP-0037](definitions/fr/b/bip-0037/definition.md) | `6ca39957-45a3-4cd3-93ea-4d95a60180a1` |
+| [BIP-0038](definitions/fr/b/bip-0038/definition.md) | `7e465e8d-14c6-4cf8-845c-2b5b8793b29a` |
+| [BIP-0039](definitions/fr/b/bip-0039/definition.md) | `da3bb49f-15b3-4613-8b1b-6fe164956ab0` |
+| [BIP-0042](definitions/fr/b/bip-0042/definition.md) | `c27548c5-dba5-4019-bd64-a30d53b6ae4a` |
+| [BIP-0043](definitions/fr/b/bip-0043/definition.md) | `da78514e-08b0-4741-b2e3-ce0a541eb77f` |
+| [BIP-0044](definitions/fr/b/bip-0044/definition.md) | `c9bbca4b-b417-4c78-82db-62b9ffff043b` |
+| [BIP-0047](definitions/fr/b/bip-0047/definition.md) | `8f17833c-f095-4d3a-a900-6a8479209a45` |
+| [BIP-0049](definitions/fr/b/bip-0049/definition.md) | `872161af-ef17-48cb-949c-05b8a04b5c39` |
+| [BIP-0050](definitions/fr/b/bip-0050/definition.md) | `fa8d9dad-568c-447e-9c1c-c65b615d46c9` |
+| [BIP-0061](definitions/fr/b/bip-0061/definition.md) | `9db2402c-6ea6-4b27-b3a5-6d3dcb61abc0` |
+| [BIP-0065](definitions/fr/b/bip-0065/definition.md) | `08d35796-e7b3-48e6-b1b0-7dc4e27e55cd` |
+| [BIP-0066](definitions/fr/b/bip-0066/definition.md) | `0c47404b-98cd-4de3-a0b5-584195fced1b` |
+| [BIP-0068](definitions/fr/b/bip-0068/definition.md) | `f81bb688-9fed-4884-8477-c93b01e58a89` |
+| [BIP-0070](definitions/fr/b/bip-0070/definition.md) | `ea6d0414-12c5-48f3-996b-2897ec6548f2` |
+| [BIP-0071](definitions/fr/b/bip-0071/definition.md) | `5943e2ea-e9c7-40ac-9682-25b86b66e4fb` |
+| [BIP-0072](definitions/fr/b/bip-0072/definition.md) | `f02bd4a9-468b-4b70-9d76-c3f93e87533e` |
+| [BIP-0075](definitions/fr/b/bip-0075/definition.md) | `775b2e0e-6ed9-4269-a3f5-e6e0ce8e2dcd` |
+| [BIP-0078](definitions/fr/b/bip-0078/definition.md) | `a4a63857-0bd2-4651-ac7b-1a455fd3eab0` |
+| [BIP-0084](definitions/fr/b/bip-0084/definition.md) | `40b9661a-7c4f-4e83-9fca-d49516a6ebe7` |
+| [BIP-0085](definitions/fr/b/bip-0085/definition.md) | `b1e0449c-31dd-4705-a235-d7ff86dceb8b` |
+| [BIP-0086](definitions/fr/b/bip-0086/definition.md) | `68dd1d4c-9771-416c-a1d4-eca870680620` |
+| [BIP-0090](definitions/fr/b/bip-0090/definition.md) | `4377d65a-07ec-43d4-b763-227a137f2595` |
+| [BIP-0091](definitions/fr/b/bip-0091/definition.md) | `94bad1f1-3f70-444b-ab12-e783c9a7aafa` |
+| [BIP-0093](definitions/fr/b/bip-0093/definition.md) | `35bc923f-b553-4d79-9192-50d0dbc21d40` |
+| [BIP-0094](definitions/fr/b/bip-0094/definition.md) | `e688421e-dbe7-4ca9-ae03-c191f47f1080` |
+| [BIP-0101](definitions/fr/b/bip-0101/definition.md) | `3589ab59-e372-4fe8-9c56-e9cf9fea85d4` |
+| [BIP-0102](definitions/fr/b/bip-0102/definition.md) | `65eb2e17-8dac-41f6-acf7-30d01d085760` |
+| [BIP-0109](definitions/fr/b/bip-0109/definition.md) | `9e049074-4a73-4567-8fc3-0678aecdbcf7` |
+| [BIP-0111](definitions/fr/b/bip-0111/definition.md) | `09b8f345-bff4-4744-9a01-dc734f29cb7d` |
+| [BIP-0112](definitions/fr/b/bip-0112/definition.md) | `62bb6e93-35b0-49da-ab17-0b84b073c8b5` |
+| [BIP-0113](definitions/fr/b/bip-0113/definition.md) | `7f52a3da-6184-438d-9a2a-46101a4184ce` |
+| [BIP-0118](definitions/fr/b/bip-0118/definition.md) | `d6c9951a-94ae-4700-aa31-9a9561b3bfc4` |
+| [BIP-0119](definitions/fr/b/bip-0119/definition.md) | `18060e03-d8e2-46d6-82fa-ce7949682cd6` |
+| [BIP-0123](definitions/fr/b/bip-0123/definition.md) | `ca7ad011-0bf8-4b20-ad10-a94cf422d118` |
+| [BIP-0125](definitions/fr/b/bip-0125/definition.md) | `771919cf-9e7a-47c5-82fc-c729a36c16db` |
+| [BIP-0137](definitions/fr/b/bip-0137/definition.md) | `c7eb659d-8283-44ba-aea9-bbb99c0e0f41` |
+| [BIP-0141](definitions/fr/b/bip-0141/definition.md) | `a073c884-0f6a-49f4-bdc9-fa5b8cc37133` |
+| [BIP-0143](definitions/fr/b/bip-0143/definition.md) | `ba286b8c-fd05-42c6-9709-a48ba8e527ef` |
+| [BIP-0144](definitions/fr/b/bip-0144/definition.md) | `03e9c931-5f07-4a41-a9f7-fd2bc113c2ac` |
+| [BIP-0145](definitions/fr/b/bip-0145/definition.md) | `2d27426b-acdf-48a0-a1b8-d0de71eff51a` |
+| [BIP-0147](definitions/fr/b/bip-0147/definition.md) | `b2903d20-e580-4fa2-aab7-460751f021c4` |
+| [BIP-0148](definitions/fr/b/bip-0148/definition.md) | `514bb0cd-4077-47fd-819e-38cee5e5658f` |
+| [BIP-0149](definitions/fr/b/bip-0149/definition.md) | `71c745ea-bba3-4714-94d2-2c26bdd8a02b` |
+| [BIP-0150](definitions/fr/b/bip-0150/definition.md) | `e66a6683-e596-4239-91b3-bd5f579b9ab1` |
+| [BIP-0151](definitions/fr/b/bip-0151/definition.md) | `16f24b24-342f-4eb9-a1c4-bd754018e020` |
+| [BIP-0152](definitions/fr/b/bip-0152/definition.md) | `51cb62fd-2d57-4f64-8d3e-6b8c6bb85dbe` |
+| [BIP-0155](definitions/fr/b/bip-0155/definition.md) | `8cc61c1e-719f-47a5-b4b3-e88aaa2b231c` |
+| [BIP-0156](definitions/fr/b/bip-0156/definition.md) | `e892f615-28b4-4078-ad86-f862c246bd70` |
+| [BIP-0173](definitions/fr/b/bip-0173/definition.md) | `29193a69-fe44-4bf3-9236-5d427db370fd` |
+| [BIP-0322](definitions/fr/b/bip-0322/definition.md) | `ab4e00c3-f6bb-4973-a5fe-66ee75f3bb50` |
+| [BIP-0324](definitions/fr/b/bip-0324/definition.md) | `7aadb49e-5adc-4010-a269-fd7d6fabda46` |
+| [BIP-0326](definitions/fr/b/bip-0326/definition.md) | `9ba3165a-b72c-41be-96b2-221a576821d2` |
+| [BIP-0330](definitions/fr/b/bip-0330/definition.md) | `2f0c7362-0127-4575-9b0a-b43f435905b5` |
+| [BIP-0352](definitions/fr/b/bip-0352/definition.md) | `57d578b1-202e-4f63-96e4-ba3819713b33` |
+| [BIP-0380](definitions/fr/b/bip-0380/definition.md) | `f951d721-85ca-4196-8bb8-75cc81306bb6` |
+| [BIP-0381](definitions/fr/b/bip-0381/definition.md) | `4b7235b1-f0dc-441d-ad80-bc41f1ebff5f` |
+| [BIP-0382](definitions/fr/b/bip-0382/definition.md) | `6e77d63d-5baf-4068-98f8-717283977dc3` |
+| [BIP-0383](definitions/fr/b/bip-0383/definition.md) | `69b87b29-0a20-4e44-b3d3-730522d2aa53` |
+| [BIP-0384](definitions/fr/b/bip-0384/definition.md) | `eaca6927-5363-44a9-907e-928ff4439a5e` |
+| [BIP-0385](definitions/fr/b/bip-0385/definition.md) | `42b64d1b-30f5-4c96-8e47-cc569368d694` |
+| [BIP-0386](definitions/fr/b/bip-0386/definition.md) | `77554b36-a2e0-45c0-8398-f519b80ac9f1` |
+| [BIRTH DATE](definitions/fr/b/birth-date/definition.md) | `500b92ea-4ac3-4baf-9554-3dedcd375448` |
+| [BIT](definitions/fr/b/bit/definition.md) | `a1cbf11c-d87e-4866-a1cd-61a653d8a853` |
+| [BIT GOLD](definitions/fr/b/bit-gold/definition.md) | `eca1a80c-00b6-4f2b-9429-fb971c5167bd` |
+| [BIT - UNITÉ](definitions/fr/b/bit-unite/definition.md) | `82f12ac3-08a9-4dcf-8c95-9bdd8350f7f8` |
+| [BITCOIN - B MAJUSCULE](definitions/fr/b/bitcoin-b-majuscule/definition.md) | `58ea6784-71a5-4c24-a2b1-0ace80de605b` |
+| [BITCOIN - B MINUSCULE](definitions/fr/b/bitcoin-b-minuscule/definition.md) | `fabbc014-067f-4de9-945a-8ef079134902` |
+| [BITCOIN CLASSIC](definitions/fr/b/bitcoin-classic/definition.md) | `535f78ca-4343-4d55-81f8-e4a0f19a36a1` |
+| [BITCOIN-CLI](definitions/fr/b/bitcoin-cli/definition.md) | `653e2413-a720-41ad-ae91-c82f36d8891f` |
+| [BITCOIN.CONF](definitions/fr/b/bitcoin-conf/definition.md) | `39de4acc-545e-4898-bc99-6caac5ba1912` |
+| [BITCOIN CORE](definitions/fr/b/bitcoin-core/definition.md) | `9134ec46-cc0f-429f-ae9f-71524d8aa4af` |
+| [BITCOIN CORE GUI-QML](definitions/fr/b/bitcoin-core-gui-qml/definition.md) | `ca4afe58-72e3-43ca-b4a1-8e2da3ca2f6d` |
+| [BITCOIN-DEV](definitions/fr/b/bitcoin-dev/definition.md) | `d2d99060-3757-428b-ac6d-a18cd5e800bd` |
+| [BITCOIN FOG](definitions/fr/b/bitcoin-fog/definition.md) | `e76b3e42-f3c7-49e6-a96c-b403623eefa4` |
+| [BITCOIN INQUISITION](definitions/fr/b/bitcoin-inquisition/definition.md) | `c45d222b-92e2-4a01-9fef-c7751816da26` |
+| [BITCOIN JESUS](definitions/fr/b/bitcoin-jesus/definition.md) | `b668d29d-190c-4e82-be53-d8c37a9c54e7` |
+| [BITCOIN KNOTS](definitions/fr/b/bitcoin-knots/definition.md) | `7edc3b23-3938-4f16-be67-06463d09a0ab` |
+| [BITCOIN OPTECH](definitions/fr/b/bitcoin-optech/definition.md) | `43ba3400-9a5d-4fd1-815d-0f24fa6a045c` |
+| [BITCOIN QT](definitions/fr/b/bitcoin-qt/definition.md) | `d9966ec1-5cac-479d-a051-bcb75167696c` |
+| [BITCOIN UNLIMITED](definitions/fr/b/bitcoin-unlimited/definition.md) | `37706f12-239a-4fb7-a1fa-46db62511dd5` |
+| [BITCOIN XT](definitions/fr/b/bitcoin-xt/definition.md) | `bffbeb5c-437c-4a34-9a81-4b7664332b5a` |
+| [BITCOIND](definitions/fr/b/bitcoind/definition.md) | `b3f59e7b-5f94-46d6-92fe-77d76176e816` |
+| [BITCOIND.PID](definitions/fr/b/bitcoind-pid/definition.md) | `4e78aadf-b3e1-45b7-8ea6-7028e10ff548` |
+| [BITCOINTALK](definitions/fr/b/bitcointalk/definition.md) | `4eb80ccd-11e0-45cc-ad72-32065d22601a` |
+| [BITVM](definitions/fr/b/bitvm/definition.md) | `c4b669f1-0d6c-4206-9537-82282ca1ca24` |
+| [BLK*.DAT](definitions/fr/b/blk-dat/definition.md) | `61425f35-72b4-4ce5-85c1-5d3551e733e6` |
+| [BLKINDEX.DAT](definitions/fr/b/blkindex-dat/definition.md) | `2197f80d-8b0b-4478-b1b6-00164a5ee82a` |
+| [BLKTREE/](definitions/fr/b/blktree/definition.md) | `f67db5a4-538c-4257-b7a9-db221101c879` |
+| [BLOC](definitions/fr/b/bloc/definition.md) | `dd7fef86-8eb0-4ed5-ba65-899c7374b274` |
+| [BLOCK TEMPLATE](definitions/fr/b/block-template/definition.md) | `74ababb1-fc8b-497f-b882-c3f0abe279df` |
+| [BLOCKCHAIN](definitions/fr/b/blockchain/definition.md) | `c2be7598-8cad-4b94-afe4-6bec52482c2e` |
+| [BLOCKS INDEX](definitions/fr/b/blocks-index/definition.md) | `a08d80c6-798e-477e-9347-18e18b40fd03` |
+| [BLOCKS/REV*.DAT](definitions/fr/b/blocks-rev-dat/definition.md) | `8963cdcc-4b1f-42d9-ad98-3009486408e2` |
+| [BLOCKSIGNERS](definitions/fr/b/blocksigners/definition.md) | `eefc35f8-7b36-4cf0-a095-a4e353b6342f` |
+| [BLOCKSIZE WAR](definitions/fr/b/blocksize-war/definition.md) | `5e8e92ec-5848-47bb-b47e-92f655ee1c7f` |
+| [BLOCKSTREAM](definitions/fr/b/blockstream/definition.md) | `cd0c8e19-e3ea-4e07-b42a-34de86984dfa` |
+| [BLOOM FILTER](definitions/fr/b/bloom-filter/definition.md) | `b365a328-efd9-4bf5-861c-4cab3cfbf9af` |
+| [BOLT](definitions/fr/b/bolt/definition.md) | `b80ec0d7-d56f-46c4-a0b3-45a3144de0e5` |
+| [BOSMINER](definitions/fr/b/bosminer/definition.md) | `ffc8d20e-2173-4513-a1ec-d278c3720034` |
+| [BOUNTY](definitions/fr/b/bounty/definition.md) | `4bb65831-8540-4c8d-be14-1f834fe1afd8` |
+| [BPM - BITCOIN POOLED MINING](definitions/fr/b/bpm-bitcoin-pooled-mining/definition.md) | `b41b2435-727a-42b8-a0c3-16d49a7a6d9f` |
+| [BRANCH-AND-BOUND](definitions/fr/b/branch-and-bound/definition.md) | `bffaadfd-53ad-4ac6-b6df-8d7dd31bcee8` |
+| [BRANCHE - BITCOIN](definitions/fr/b/branche-bitcoin/definition.md) | `0192b056-c5ab-4396-b1e2-18cffaa1ea8d` |
+| [BRANCHE - GIT](definitions/fr/b/branche-git/definition.md) | `9276123d-4b4b-4d8b-9689-3cc562636220` |
+| [BRC-20](definitions/fr/b/brc-20/definition.md) | `bfddd138-88b4-42bc-81fb-bbbc0e0097d3` |
+| [BROLLUPS](definitions/fr/b/brollups/definition.md) | `4d035973-1c9b-49f9-8fa7-681dd7b5f07b` |
+| [BSV - BITCOIN SATOSHI VISION](definitions/fr/b/bsv-bitcoin-satoshi-vision/definition.md) | `12ffc664-30e0-4401-b10c-6d3aba5d24ed` |
+| [BTC](definitions/fr/b/btc/definition.md) | `31bcfa58-89de-4989-83fa-d4431653fc2d` |
+| [BTCD - BTC SUITE](definitions/fr/b/btcd-btc-suite/definition.md) | `a38975e1-4280-49a2-9aef-10c506618aa9` |
+| [BTCPAY SERVER](definitions/fr/b/btcpay-server/definition.md) | `da7b74cf-e772-49ec-a73b-fc31185bb001` |
+| [BTG - BITCOIN GOLD](definitions/fr/b/btg-bitcoin-gold/definition.md) | `8e6281fa-a934-4a2d-b8d2-8025e1574479` |
+| [BTKN](definitions/fr/b/btkn/definition.md) | `76f0989a-801b-40f1-a905-ad1941fd68f6` |
+| [BULL MARKET](definitions/fr/b/bull-market/definition.md) | `c0ae585c-1a11-451c-9324-b4e45792fbb8` |
+| [BULL RUN](definitions/fr/b/bull-run/definition.md) | `d100a604-1b22-446d-872f-2dd642d6c81f` |
+| [BUSINESS LOGIC](definitions/fr/b/business-logic/definition.md) | `e3b030f5-20e4-40f5-ba3f-3a5cbc376105` |
 
 ## C
 
@@ -283,6 +283,7 @@ Ce fichier contient la liste de toutes les 883 définitions du dictionnaire.
 | [CONCATÉNATION](definitions/fr/c/concatenation/definition.md) | `3aafd4aa-4f21-40fe-a8be-9693a18cd5d7` |
 | [CONDENSAT](definitions/fr/c/condensat/definition.md) | `e82a4a01-5624-4112-b620-b9fd0eff81bb` |
 | [CONFIRMATION](definitions/fr/c/confirmation/definition.md) | `9947b93a-25b5-4f2d-b353-fefe5a5b4719` |
+| [CONNECTOR](definitions/fr/c/connector/definition.md) | `c8d36eaa-8bcb-46b7-aa75-25c89d84eefc` |
 | [CONSENSUS](definitions/fr/c/consensus/definition.md) | `3e7055ed-3bab-47c1-90d3-cfd551096ee8` |
 | [CONSIGNMENT](definitions/fr/c/consignment/definition.md) | `6d0005b3-5163-47fc-827d-6f842eaa00b2` |
 | [CONSOLIDATION](definitions/fr/c/consolidation/definition.md) | `d1af921f-2a71-4f7a-a6ae-ee425e64b289` |
@@ -407,6 +408,7 @@ Ce fichier contient la liste de toutes les 883 définitions du dictionnaire.
 | [FORCE BRUTE](definitions/fr/f/force-brute/definition.md) | `9b32ed34-45aa-4742-8f3e-ca2443d7fd7d` |
 | [FORCE CLOSE](definitions/fr/f/force-close/definition.md) | `aab65e71-7454-4b5d-af76-bc038f9bd44c` |
 | [FORCED ADDRESS REUSE](definitions/fr/f/forced-address-reuse/definition.md) | `1bf8af3a-f6f1-4a51-9efb-7f8bfa2372ae` |
+| [FORFEIT TRANSACTION](definitions/fr/f/forfeit-transaction/definition.md) | `1d240f78-cc42-44ac-8964-c419c1900987` |
 | [FORK](definitions/fr/f/fork/definition.md) | `1f0d5de7-0f3b-4fd3-84f0-6e7c24ac0509` |
 | [FORK - GIT](definitions/fr/f/fork-git/definition.md) | `5e3b25dd-9d7a-4442-9458-dbc6a8b6da3d` |
 | [FOSS](definitions/fr/f/foss/definition.md) | `1b839746-62da-4c5e-bc75-61ebce207675` |
@@ -624,6 +626,7 @@ Ce fichier contient la liste de toutes les 883 définitions du dictionnaire.
 | [ON-GRID](definitions/fr/o/on-grid/definition.md) | `91889163-76d1-4635-a75e-dd12c7805961` |
 | [ONION_PRIVATE_KEY](definitions/fr/o/onion-private-key/definition.md) | `b0e0c7c8-0e77-4434-b376-b40fcde70959` |
 | [ONION_V3_PRIVATE_KEY](definitions/fr/o/onion-v3-private-key/definition.md) | `ed1cda46-11ad-481b-9b9d-81673eca37fc` |
+| [OOR PAYMENT](definitions/fr/o/oor-payment/definition.md) | `dfeed873-1188-4666-8797-026f3889664d` |
 | [OP_0 - 0X00](definitions/fr/o/op-0-0x00/definition.md) | `92ca392b-d5b7-4ddc-b592-d0d740571d68` |
 | [OP_0NOTEQUAL - 0X92](definitions/fr/o/op-0notequal-0x92/definition.md) | `df759b80-b4c7-4669-ac43-18e2d2e6c883` |
 | [OP_1 - 0X51](definitions/fr/o/op-1-0x51/definition.md) | `426e1e5e-a31d-4338-9497-2be2dcc3ed4f` |
@@ -819,6 +822,7 @@ Ce fichier contient la liste de toutes les 883 définitions du dictionnaire.
 | [RIPEMD160](definitions/fr/r/ripemd160/definition.md) | `99c4221b-0b2d-47e5-b608-1d5610c85e9b` |
 | [RISC ZERO](definitions/fr/r/risc-zero/definition.md) | `c9ba79fa-2634-47a2-bb36-62fa930975bf` |
 | [ROLLUP](definitions/fr/r/rollup/definition.md) | `e5135b7d-ad1e-4587-9ae1-461c906d1eff` |
+| [ROUND ARK](definitions/fr/r/round-ark/definition.md) | `2cc2bc2a-2704-49dd-a1a0-31b3e99b7a54` |
 | [RPC - REMOTE PROCEDURE CALL](definitions/fr/r/rpc-remote-procedure-call/definition.md) | `fd644fe9-2c34-46a0-b40c-f9d3f2920661` |
 | [RPOW](definitions/fr/r/rpow/definition.md) | `2eb81a61-aa97-446a-a346-ca24d8f9ed94` |
 | [RSMPPS](definitions/fr/r/rsmpps/definition.md) | `486310e9-83da-48ae-8978-a516346c432b` |
