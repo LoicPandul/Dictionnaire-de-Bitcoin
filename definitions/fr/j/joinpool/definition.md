@@ -1,0 +1,7 @@
+Type de système de paiement en surcouche basé sur le partage de la propriété d'un ou plusieurs UTXO, sans besoin de confiance. Lorsque des fonds sont sortis d'une pool dans ce type de système, il doit être impossible de déterminer on-chain quel utilisateur a effectué la dépense.
+
+Le principe fondamental d'un système de type joinpool est donc le partage d'UTXO pour améliorer le passage à l'échelle de Bitcoin : plutôt que chaque participant possède un ou plusieurs UTXO individuels, un seul UTXO représente les fonds de l'ensemble du groupe. Chaque membre conserve la capacité de retirer unilatéralement ses fonds à tout moment, soit via des transactions pré-signées, soit grâce à des mécanismes proposés au niveau du protocole comme les covenants. Sans covenants, l'interactivité requise entre participants croît significativement, car toute modification de l'état du pool nécessite la signature de tous les membres.
+
+Le protocole Ark peut être considéré comme une implémentation concrète du concept de joinpool, où un *Ark Service Provider* joue le rôle de coordinateur et fournisseur de liquidité pour les participants du pool.
+
+Ce type de système est parfois également désigné sous les noms de « *coinpool* » ou « *payment pool* ».
