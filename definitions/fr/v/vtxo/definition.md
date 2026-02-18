@@ -1,0 +1,5 @@
+Sigle de « *Virtual Transaction Output* ». Un VTXO est une part virtuelle d'un UTXO Bitcoin on-chain au sein du protocole Ark. Plutôt que de posséder chacun un UTXO individuel sur la blockchain (coûteux en frais et difficilement scalable), plusieurs utilisateurs partagent un même UTXO via des VTXO gérés par un *Ark Service Provider* (ASP).
+
+Un VTXO est obtenu soit en déposant du bitcoin on-chain vers une adresse d'embarquement (*boarding address*), soit en le recevant d'un autre utilisateur du même ASP. Les VTXO sont connectés atomiquement entre eux : lorsqu'Alice envoie un VTXO à Bob, l'ASP crée une sortie on-chain incluant la part d'Alice destinée à Bob. Alice ne perd ses fonds que si Bob les reçoit effectivement. Les VTXO existants sont détruits et recréés en continu lors des rounds organisés par l'ASP.
+
+Les VTXO possèdent une date d'expiration (typiquement 4 semaines). L'utilisateur doit les rafraîchir avant l'échéance sous peine que l'ASP récupère la liquidité. À tout moment, l'utilisateur peut effectuer une sortie unilatérale on-chain pour convertir son VTXO en UTXO classique, bien que cette opération implique des frais de transaction.
