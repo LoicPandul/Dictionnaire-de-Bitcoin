@@ -1,18 +1,18 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 19/02/2026*
+*Dernière mise à jour : 20/02/2026*
 
 ---
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 887
+- **Nombre total de définitions** : 889
 
 ## Définitions par lettre
 
 | Lettre | Nombre |
 |:------:|-------:|
-| A | 41 |
+| A | 42 |
 | B | 156 |
 | C | 93 |
 | D | 35 |
@@ -23,7 +23,7 @@
 | I | 18 |
 | J | 5 |
 | K | 2 |
-| L | 23 |
+| L | 24 |
 | M | 43 |
 | N | 22 |
 | O | 105 |
@@ -58,7 +58,7 @@
 - **INFORMATIQUE** : 52
 - **COUCHE SUPÉRIEURE** : 46
 - **CRYPTOGRAPHIE** : 44
-- **LIGHTNING NETWORK** : 39
+- **LIGHTNING NETWORK** : 41
 - **RÉSEAU** : 38
 - **RGB** : 37
 - **ÉCONOMIE ET RÉGULATION** : 33
@@ -74,15 +74,15 @@
 - **bitcoin** : 1362 occurrences
 - **transaction** : 1063 occurrences
 - **bloc** : 596 occurrences
-- **adresse** : 358 occurrences
-- **protocole** : 310 occurrences
+- **adresse** : 359 occurrences
+- **protocole** : 311 occurrences
 - **script** : 305 occurrences
-- **utilisateur** : 302 occurrences
+- **utilisateur** : 304 occurrences
 - **portefeuille** : 281 occurrences
 - **réseau** : 262 occurrences
 - **mineur** : 258 occurrences
 - **utxo** : 256 occurrences
 - **signature** : 247 occurrences
-- **donnée** : 233 occurrences
+- **donnée** : 234 occurrences
+- **paiement** : 217 occurrences
 - **clés** : 217 occurrences
-- **chaîne** : 214 occurrences

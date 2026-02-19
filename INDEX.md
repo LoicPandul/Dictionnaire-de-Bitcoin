@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 887 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 
 ---
 
@@ -36,6 +36,7 @@ Ce fichier contient la liste de toutes les 887 définitions du dictionnaire.
 | [ANCRAGE BILATÉRAL](definitions/fr/a/ancrage-bilateral/definition.md) | `71ea0f44-ee11-407e-b024-1292775a3cdd` |
 | [ANONSETS - ANONYMITY SETS](definitions/fr/a/anonsets-anonymity-sets/definition.md) | `a61b5d3a-da3c-4bc8-bac2-24265a18e981` |
 | [AOPP](definitions/fr/a/aopp/definition.md) | `746e3f0c-29ff-4af4-a706-f95e25c94733` |
+| [APERTURE](definitions/fr/a/aperture/definition.md) | `f5d53aa0-c0e9-42c2-8795-80acdb50ddcb` |
 | [API](definitions/fr/a/api/definition.md) | `60ce42fd-759e-4281-9cd2-e7d5b148365f` |
 | [APO - ANYPREVOUT](definitions/fr/a/apo-anyprevout/definition.md) | `02ea6b8a-aa60-4bd0-aa13-b9e8b07323b1` |
 | [ARBITRAGE](definitions/fr/a/arbitrage/definition.md) | `084d8c57-0a1a-4ad0-bb70-923445573908` |
@@ -510,6 +511,7 @@ Ce fichier contient la liste de toutes les 887 définitions du dictionnaire.
 
 | Terme | UUID |
 |-------|------|
+| [L402](definitions/fr/l/l402/definition.md) | `9bffcb2f-983a-4d16-ac75-7e0e4c6097b6` |
 | [LABEL](definitions/fr/l/label/definition.md) | `06291be2-781b-4791-b083-ffbc564ec394` |
 | [LABEL - SILENT PAYMENTS](definitions/fr/l/label-silent-payments/definition.md) | `6badff64-da10-451e-89f2-9692c0ddb3e1` |
 | [LATENCE](definitions/fr/l/latence/definition.md) | `13a2cf45-2c9f-4aea-8eb4-30740910ec9d` |
