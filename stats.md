@@ -6,7 +6,7 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 889
+- **Nombre total de définitions** : 901
 
 ## Définitions par lettre
 
@@ -14,12 +14,12 @@
 |:------:|-------:|
 | A | 42 |
 | B | 156 |
-| C | 93 |
+| C | 95 |
 | D | 35 |
 | E | 29 |
 | F | 21 |
 | G | 20 |
-| H | 21 |
+| H | 22 |
 | I | 18 |
 | J | 5 |
 | K | 2 |
@@ -27,25 +27,25 @@
 | M | 43 |
 | N | 22 |
 | O | 105 |
-| P | 60 |
+| P | 63 |
 | Q | 3 |
 | R | 32 |
-| S | 88 |
-| T | 24 |
+| S | 90 |
+| T | 26 |
 | U | 9 |
 | V | 10 |
-| W | 14 |
+| W | 15 |
 | X | 4 |
 | Y | 2 |
-| Z | 7 |
+| Z | 8 |
 
 ## Top 5 des lettres les plus fournies
 
 1. **B** : 156 définitions
 2. **O** : 105 définitions
-3. **C** : 93 définitions
-4. **S** : 88 définitions
-5. **P** : 60 définitions
+3. **C** : 95 définitions
+4. **S** : 90 définitions
+5. **P** : 63 définitions
 
 ## Catégories
 
@@ -54,11 +54,11 @@
 - **BIP** : 83
 - **PORTEFEUILLE** : 77
 - **MINAGE** : 57
+- **LIGHTNING NETWORK** : 53
 - **CONFIDENTIALITÉ** : 52
 - **INFORMATIQUE** : 52
 - **COUCHE SUPÉRIEURE** : 46
 - **CRYPTOGRAPHIE** : 44
-- **LIGHTNING NETWORK** : 41
 - **RÉSEAU** : 38
 - **RGB** : 37
 - **ÉCONOMIE ET RÉGULATION** : 33
@@ -71,18 +71,18 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1362 occurrences
-- **transaction** : 1063 occurrences
-- **bloc** : 596 occurrences
-- **adresse** : 359 occurrences
-- **protocole** : 311 occurrences
+- **bitcoin** : 1365 occurrences
+- **transaction** : 1079 occurrences
+- **bloc** : 597 occurrences
+- **adresse** : 360 occurrences
+- **protocole** : 314 occurrences
+- **utilisateur** : 311 occurrences
 - **script** : 305 occurrences
-- **utilisateur** : 304 occurrences
-- **portefeuille** : 281 occurrences
-- **réseau** : 262 occurrences
+- **portefeuille** : 282 occurrences
+- **réseau** : 272 occurrences
 - **mineur** : 258 occurrences
-- **utxo** : 256 occurrences
-- **signature** : 247 occurrences
-- **donnée** : 234 occurrences
-- **paiement** : 217 occurrences
-- **clés** : 217 occurrences
+- **utxo** : 257 occurrences
+- **signature** : 254 occurrences
+- **paiement** : 242 occurrences
+- **donnée** : 236 occurrences
+- **clés** : 218 occurrences

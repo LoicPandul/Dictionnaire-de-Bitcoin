@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 
 ---
 
@@ -238,6 +238,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [CHAINWAY LABS](definitions/fr/c/chainway-labs/definition.md) | `ca4db974-f81c-4549-9ffb-4a97bd2832a2` |
 | [CHAMPION](definitions/fr/c/champion/definition.md) | `b888e875-627e-46ee-aa19-6df6f7c419a9` |
 | [CHANGE](definitions/fr/c/change/definition.md) | `7745036c-eeca-4682-9b27-6c10a55e342b` |
+| [CHANNEL ANNOUNCEMENT](definitions/fr/c/channel-announcement/definition.md) | `6a6effb5-6b3b-488d-9007-6ba19c51c711` |
 | [CHANNEL FACTORIES](definitions/fr/c/channel-factories/definition.md) | `eaf11d67-f710-4231-b343-90c548d8db27` |
 | [CHARGE UTILE](definitions/fr/c/charge-utile/definition.md) | `ef70aa4a-7364-4b70-8d04-f628c67b1404` |
 | [CHAUMIAN COINJOIN](definitions/fr/c/chaumian-coinjoin/definition.md) | `9895ea98-7345-45d8-b96a-ac61ebd334e9` |
@@ -278,6 +279,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [COMMERÇANT](definitions/fr/c/commercant/definition.md) | `6838b8ea-8faf-439f-a3ae-d379dcab9c63` |
 | [COMMIT](definitions/fr/c/commit/definition.md) | `0b2de1d7-cabb-419f-ba5c-3c33faa5f37f` |
 | [COMMITMENT](definitions/fr/c/commitment/definition.md) | `74ca7f47-2853-48a7-a2b8-21ba593ad3fa` |
+| [COMMITMENT FEE](definitions/fr/c/commitment-fee/definition.md) | `d84cffe5-9d68-44a5-846f-95b8aa9a47ea` |
 | [COMPACT BLOCK RELAY](definitions/fr/c/compact-block-relay/definition.md) | `232a8659-9aaf-4842-b275-24ebc331a51b` |
 | [COMPATIBILITÉ RÉTROSPECTIVE](definitions/fr/c/compatibilite-retrospective/definition.md) | `007c2d5c-ab8d-43d0-9816-049921308ceb` |
 | [COMPTE](definitions/fr/c/compte/definition.md) | `7861164f-04b0-44af-9ea7-00202b3757ba` |
@@ -462,6 +464,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [HODL](definitions/fr/h/hodl/definition.md) | `b44914a9-4221-4af0-966a-698abfcb104d` |
 | [HONG-KONG ROUNDTABLE](definitions/fr/h/hong-kong-roundtable/definition.md) | `9e5b89ab-5444-4efb-9d6c-76b3a51b79b9` |
 | [HORODATAGE](definitions/fr/h/horodatage/definition.md) | `708fe70d-c652-465e-bafd-720b6fa6eb85` |
+| [HOSTED CHANNEL](definitions/fr/h/hosted-channel/definition.md) | `4216ed7f-2a31-48a5-9546-142e7dd8d703` |
 | [HRP - HUMAN READABLE PART](definitions/fr/h/hrp-human-readable-part/definition.md) | `7fb1a439-d6ec-4999-8bb6-5c7e17b1b142` |
 | [HTLC](definitions/fr/h/htlc/definition.md) | `6d6f32a0-761e-4ee4-a189-db65aebc23ef` |
 | [HWI](definitions/fr/h/hwi/definition.md) | `2febe88a-f0e1-458c-b275-696486c47d8e` |
@@ -778,12 +781,15 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [PREUVE DE RÉSERVES](definitions/fr/p/preuve-de-reserves/definition.md) | `67af30fd-2325-4ade-8db2-99bdc0370c0c` |
 | [PREUVE DE TRAVAIL](definitions/fr/p/preuve-de-travail/definition.md) | `5cdf5d24-69b0-47c1-a25e-c929dccdcbb2` |
 | [PRIME DE PROXIMITÉ](definitions/fr/p/prime-de-proximite/definition.md) | `e9b040b4-a7a7-4241-8b5e-a2b23a94c127` |
+| [PRIVATE CHANNEL](definitions/fr/p/private-channel/definition.md) | `9ab60958-f206-42d9-8ad1-c902aeef62c3` |
 | [PROBLÈME DES GÉNÉRAUX BYZANTINS](definitions/fr/p/prob-des-generaux-byzantins/definition.md) | `88aede57-688d-497e-a78c-64189019c9c8` |
 | [PROFONDEUR](definitions/fr/p/profondeur/definition.md) | `3045621b-9063-4937-b910-4bd7485d6ad4` |
 | [PROOF-OF-KEY DAY](definitions/fr/p/proof-of-key-day/definition.md) | `3d544cc7-dac9-4531-b7eb-f30960c0d421` |
 | [PROP - PROPORTIONAL](definitions/fr/p/prop-proportional/definition.md) | `05440831-a6a6-4676-b135-5468b60886df` |
 | [PSBT](definitions/fr/p/psbt/definition.md) | `6bdf624c-36a7-48a0-8a63-122ec3d65e08` |
 | [PSEUDO-ALÉATOIRE](definitions/fr/p/pseudo-aleatoire/definition.md) | `fabd96cf-3f56-4f3e-9c1c-5930ae05c34a` |
+| [PTLC](definitions/fr/p/ptlc/definition.md) | `f17ce504-d668-4c73-a24c-885acfa0b86c` |
+| [PUBLIC CHANNEL](definitions/fr/p/public-channel/definition.md) | `bacc85e4-5f65-4d37-a12e-f8707e046b6c` |
 | [PULL REQUEST](definitions/fr/p/pull-request/definition.md) | `0c809ed2-0373-4cd2-b595-46f71e9bc2f6` |
 
 ## Q
@@ -870,6 +876,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [SHARES DIFFICULTY](definitions/fr/s/shares-difficulty/definition.md) | `bb475b31-99b7-4ea4-b936-0da174037ae6` |
 | [SHITCOIN](definitions/fr/s/shitcoin/definition.md) | `65cf30e1-6c77-48cc-aec7-871d101024ae` |
 | [SHOR](definitions/fr/s/shor-algorithme/definition.md) | `dd0fc5ee-1e46-46a2-bc27-484463840e58` |
+| [SIDECAR CHANNEL](definitions/fr/s/sidecar-channel/definition.md) | `4233584f-5a22-48c8-bc9b-498830a5378f` |
 | [SIDECHAIN](definitions/fr/s/sidechain/definition.md) | `71dff716-239d-4926-883e-e633df2b2d36` |
 | [SIGHASH_ALL](definitions/fr/s/sighash-all/definition.md) | `d7ce15e2-ae52-437a-af0c-7544420824c4` |
 | [SIGHASH_ALL | SIGHASH_ACP](definitions/fr/s/sighash-all-sighash-acp/definition.md) | `143dddf7-873b-48ef-a4ef-956c150318bb` |
@@ -918,6 +925,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [STONEWALL X2](definitions/fr/s/stonewall-x2/definition.md) | `03736df6-22a9-4fa3-8e9b-5806c5ab2c3c` |
 | [STRATUM](definitions/fr/s/stratum/definition.md) | `76436a95-5659-44e0-a3d4-29fd42dc479b` |
 | [STRATUM V2](definitions/fr/s/stratum-v2/definition.md) | `cf8665d5-e90a-4ead-b203-50e128b5a85e` |
+| [STUCKLESS PAYMENT](definitions/fr/s/stuckless-payment/definition.md) | `012a6fa2-e437-4f13-82ac-002bc44bf738` |
 | [SUBVENTION DE BLOC](definitions/fr/s/subvention-de-bloc/definition.md) | `7ff8a419-1f3b-47b1-9175-32be6fe2ad55` |
 | [SURCOUCHE](definitions/fr/s/surcouche/definition.md) | `acdcbd6a-29fe-42b8-a01d-3dd55b6a21c9` |
 | [SURFACE D'ATTAQUE](definitions/fr/s/surface-d-attaque/definition.md) | `20f8ab5d-0912-498c-9491-581b873760bc` |
@@ -930,6 +938,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 |-------|------|
 | [TAPROOT](definitions/fr/t/taproot/definition.md) | `df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6` |
 | [TAPROOT ASSETS PROTOCOL](definitions/fr/t/taproot-assets-protocol/definition.md) | `7e06f113-180b-4d77-abda-2a5be7fa9a25` |
+| [TAPROOT CHANNEL](definitions/fr/t/taproot-channel/definition.md) | `5c3693c8-b0de-42d5-adb6-73850405f996` |
 | [TAPSCRIPT](definitions/fr/t/tapscript/definition.md) | `d332c8d7-5475-45ca-89d4-cf750ce2385b` |
 | [TARO](definitions/fr/t/taro/definition.md) | `9cec86a0-2874-4fc7-83a8-9ad1bb984360` |
 | [TCP](definitions/fr/t/tcp/definition.md) | `3b58d9e0-bb4d-4a52-902f-484c5ca34353` |
@@ -948,6 +957,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [TRANSACTION STANDARD](definitions/fr/t/transaction-standard/definition.md) | `7e28ef78-21c7-4b7e-894e-ba67271d00dd` |
 | [TRANSITION BUNDLE](definitions/fr/t/transition-bundle/definition.md) | `5b688ef0-b5ba-4910-a954-8eda9e3d282d` |
 | [TUMBLEBIT](definitions/fr/t/tumblebit/definition.md) | `d0d66201-bbc4-4539-9205-3ddc98768810` |
+| [TURBO CHANNEL](definitions/fr/t/turbo-channel/definition.md) | `c3489abe-3dba-45df-8cc4-36a0d8b2762e` |
 | [TWEAK](definitions/fr/t/tweak/definition.md) | `81029dcb-7d82-4887-82d1-7d18e1c60515` |
 | [TX - TRANSACTION](definitions/fr/t/tx-transaction/definition.md) | `f957e3d3-9ba0-435e-96d8-eac6308b9c61` |
 | [TXID - TRANSACTION IDENTIFIER](definitions/fr/t/txid-transaction-identifier/definition.md) | `4be89f70-73c7-4a33-a651-69861ca6a93c` |
@@ -1000,6 +1010,7 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [WITNESS TRANSACTION](definitions/fr/w/witness-transaction/definition.md) | `9b169cba-1d42-496a-a622-6162e25c8b82` |
 | [WITNESSSCRIPT](definitions/fr/w/witnessscript/definition.md) | `d86926e9-4093-4911-8101-bf9fcd6b58ab` |
 | [WTXID](definitions/fr/w/wtxid/definition.md) | `40e2afec-6d48-4999-9667-54d17e8f4c44` |
+| [WUMBO CHANNEL](definitions/fr/w/wumbo-channel/definition.md) | `66f29c78-3f0c-4f55-90da-07b7a2c35503` |
 
 ## X
 
@@ -1026,5 +1037,6 @@ Ce fichier contient la liste de toutes les 889 définitions du dictionnaire.
 | [ZEROLINK](definitions/fr/z/zerolink/definition.md) | `ca5ac0f5-9195-41ba-b6dc-bfc0fc6f4f00` |
 | [ZEROSYNC](definitions/fr/z/zerosync/definition.md) | `9fa0c2d1-1763-4c3b-a8c7-a6cb7db1fda0` |
 | [ZKP - ZERO-KNOWLEDGE PROOF](definitions/fr/z/zkp-zero-knowledge-proof/definition.md) | `3c5029a7-1727-45c9-9017-3d461b7f58c3` |
+| [ZOMBIE CHANNEL](definitions/fr/z/zombie-channel/definition.md) | `c12424c1-47db-4e4e-a180-86773ce902d5` |
 | [ZPRV](definitions/fr/z/zprv/definition.md) | `a4423e2f-7a1e-485b-9bbb-6460d2654e3c` |
 | [ZPUB](definitions/fr/z/zpub/definition.md) | `e32ef6d6-2760-4f5e-b418-24fa5f72c64a` |
