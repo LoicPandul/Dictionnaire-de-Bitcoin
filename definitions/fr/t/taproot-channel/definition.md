@@ -1,0 +1,3 @@
+Canal Lightning ancré dans une sortie Taproot (P2TR), plutôt que dans une sortie SegWit classique (P2WSH). Les *Taproot channels* tirent parti des améliorations apportées par le soft fork Taproot activé en novembre 2021 sur Bitcoin.
+
+En cas de fermeture coopérative, un *Taproot channel* est plus efficace et plus confidentiel qu'un canal SegWit traditionnel : la transaction de fermeture ressemble à une dépense Taproot ordinaire via le *key path spend*, indiscernable d'un paiement simple on-chain. Cette propriété renforce la confidentialité des utilisateurs du Lightning Network.

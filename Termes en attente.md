@@ -114,9 +114,6 @@ ___
 > *En anglais, ce terme est traduit « Fraud Proof ».*
 
 
-## PTLC
-
-
 
 ## PURGE
 
@@ -215,9 +212,6 @@ Fonction de hachage taguée.
 
 
 
-## TURBO CHANNEL
-
-
 
 ## UTXO COMMITMENTS
 
@@ -229,13 +223,6 @@ Fonction de hachage taguée.
 
 ## WATCHTOWER
 
-
-
-## WUMBO CHANNEL
-
-
-
-## ZOMBIE CHANNEL
 
 
 
