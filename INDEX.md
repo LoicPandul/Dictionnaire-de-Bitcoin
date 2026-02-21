@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
 
 ---
 
@@ -21,6 +21,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 | [ADDRV2](definitions/fr/a/addrv2/definition.md) | `b9596734-9906-48ab-87c9-93abea4f23c6` |
 | [ADRESSE DE RÉCEPTION](definitions/fr/a/adresse-de-reception/definition.md) | `fc722a57-45f7-4263-b2a1-6d3bf7b8c060` |
 | [ADRESSE STATIQUE](definitions/fr/a/adresse-statique/definition.md) | `74ab67f5-ddda-4261-8a62-08b96a2d3ac9` |
+| [AEZEED](definitions/fr/a/aezeed/definition.md) | `784502ed-b436-4c2f-8681-f29df18f11ad` |
 | [AGORISME](definitions/fr/a/agorisme/definition.md) | `8edc2ca4-ee02-42e0-bb0e-1685ca749da2` |
 | [AIR COOLING](definitions/fr/a/air-cooling/definition.md) | `43712217-e80b-4c66-a512-adaae753612c` |
 | [AJUSTEMENT DE LA DIFFICULTE](definitions/fr/a/ajustement-de-la-difficulte/definition.md) | `eb4746cd-64d5-45b2-a766-35ba7e8da9e2` |
@@ -239,6 +240,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 | [CHAMPION](definitions/fr/c/champion/definition.md) | `b888e875-627e-46ee-aa19-6df6f7c419a9` |
 | [CHANGE](definitions/fr/c/change/definition.md) | `7745036c-eeca-4682-9b27-6c10a55e342b` |
 | [CHANNEL ANNOUNCEMENT](definitions/fr/c/channel-announcement/definition.md) | `6a6effb5-6b3b-488d-9007-6ba19c51c711` |
+| [CHANNEL.DB](definitions/fr/c/channel-db/definition.md) | `71c6ca7d-a47c-4cef-bd3d-673392c58006` |
 | [CHANNEL FACTORIES](definitions/fr/c/channel-factories/definition.md) | `eaf11d67-f710-4231-b343-90c548d8db27` |
 | [CHARGE UTILE](definitions/fr/c/charge-utile/definition.md) | `ef70aa4a-7364-4b70-8d04-f628c67b1404` |
 | [CHAUMIAN COINJOIN](definitions/fr/c/chaumian-coinjoin/definition.md) | `9895ea98-7345-45d8-b96a-ac61ebd334e9` |
@@ -256,6 +258,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 | [CLÉ PRIVÉE](definitions/fr/c/cle-privee/definition.md) | `b89d1435-f776-4305-a743-c2d95ebcdf91` |
 | [CLÉ PUBLIQUE](definitions/fr/c/cle-publique/definition.md) | `aa1fee82-5009-41ce-9821-614fb59dfef3` |
 | [CLÉ PUBLIQUE COMPRESSÉE](definitions/fr/c/cle-publique-compressee/definition.md) | `22fa77ad-309c-4eb1-91ae-d710b9ae9a6d` |
+| [CLEARNET](definitions/fr/c/clearnet/definition.md) | `35e24419-afc6-4800-b48c-8233dcee342e` |
 | [CLEMENTINE](definitions/fr/c/clementine/definition.md) | `a3913f01-8ccd-4b0e-9e5d-bb5d3acc1289` |
 | [CLI](definitions/fr/c/cli/definition.md) | `2428e622-5cc7-40da-af61-d9df91119234` |
 | [CLIENT-SIDE VALIDATION](definitions/fr/c/client-side-validation/definition.md) | `853da785-8ace-4349-9a4e-8b8c5dcba606` |
@@ -300,6 +303,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 | [CONTRIBUTEUR - CORE](definitions/fr/c/contributeur-core/definition.md) | `f337c682-bedc-4e1d-9f3b-f9a3b2e22d96` |
 | [CONTROL BOARD](definitions/fr/c/control-board/definition.md) | `613c49c8-e479-412d-a5cf-786433ce2689` |
 | [COOKIE](definitions/fr/c/cookie/definition.md) | `795ebe78-a536-4177-bae6-f436553119f1` |
+| [COOPERATIVE CLOSE](definitions/fr/c/cooperative-close/definition.md) | `fc01ce56-bee1-4c5b-a9fe-acb98cf1c63a` |
 | [COORDINATEUR DE COINJOIN](definitions/fr/c/coordinateur-de-coinjoin/definition.md) | `911e17ef-1a6f-4838-b798-28cb96e56674` |
 | [COURBE ELLIPTIQUE](definitions/fr/c/courbe-elliptique/definition.md) | `da773fd3-c1e6-43fb-8764-2cca100725d5` |
 | [COVENANT](definitions/fr/c/covenant/definition.md) | `a066159b-a5a7-4e63-8e7e-fcf4c18611f1` |
@@ -844,6 +848,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 | [SAMOURAI WALLET](definitions/fr/s/samourai-wallet/definition.md) | `1df02ba6-a00e-468b-8b15-e0319476e639` |
 | [SAT - SATOSHI](definitions/fr/s/sat-satoshi/definition.md) | `750ff334-6f34-47e6-9947-f6ef4eda0a16` |
 | [SCALABILITÉ](definitions/fr/s/scalabilite/definition.md) | `56b10e68-7763-4835-b45d-6d993cc5bdfe` |
+| [SCB - STATIC CHANNEL BACKUP](definitions/fr/s/scb-static-channel-backup/definition.md) | `10deae59-e31e-4347-b709-cbe6e51136f1` |
 | [SCHEMA](definitions/fr/s/schema/definition.md) | `d6efa179-e094-4127-940e-50647d887468` |
 | [SCHNORR](definitions/fr/s/schnorr-protocole/definition.md) | `47b5ee48-88cf-4653-b9de-17e0afcdd408` |
 | [SCORE BASED METHOD](definitions/fr/s/score-score-based-method/definition.md) | `e0607cdf-ac73-4a6b-afb9-8f76d5f9202f` |
@@ -916,6 +921,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 | [STABLECOIN](definitions/fr/s/stablecoin/definition.md) | `4ac004e1-30a6-4070-af5b-cdb840d6f39d` |
 | [STAMPS](definitions/fr/s/stamps/definition.md) | `802d53d9-cc5b-4908-9d07-9d6fc4450db6` |
 | [STARK](definitions/fr/s/stark/definition.md) | `5b17757c-5d22-4f59-8807-ba0dca73f3ed` |
+| [START9](definitions/fr/s/start9/definition.md) | `ae814cae-4ded-4a0f-9132-49e6ab7346d2` |
 | [STASH](definitions/fr/s/stash/definition.md) | `40e0e165-917e-4b42-adc3-c3c6a46cdcf5` |
 | [STATE EXTENSION](definitions/fr/s/state-extension/definition.md) | `554c8c88-3d2a-4b99-8595-c28eed7045e4` |
 | [STATE TRANSITION](definitions/fr/s/state-transition/definition.md) | `8c16730a-03a0-43ea-b175-5000922bb022` |
@@ -969,6 +975,7 @@ Ce fichier contient la liste de toutes les 901 définitions du dictionnaire.
 |-------|------|
 | [UASF](definitions/fr/u/uasf/definition.md) | `ec67e7c9-6a63-49c2-8b5b-2c48b7316fd9` |
 | [UDP](definitions/fr/u/udp-user-datagram-protocol/definition.md) | `e80c3175-7a36-4bb9-b1e3-197aa8ce5ef9` |
+| [UMBREL](definitions/fr/u/umbrel/definition.md) | `0501ad72-bdda-4cd6-b558-2b8d09f509af` |
 | [UNIX](definitions/fr/u/unix/definition.md) | `869781d6-ab34-4d30-b49e-d3a1bbe6b9a8` |
 | [UPRV](definitions/fr/u/uprv/definition.md) | `e33210cd-a2ea-49c9-acc7-0e20078ffd32` |
 | [UPUB](definitions/fr/u/upub/definition.md) | `0dc50787-f32e-47b4-b632-e248b333e755` |
