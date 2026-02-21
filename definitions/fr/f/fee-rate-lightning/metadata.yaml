@@ -1,0 +1,9 @@
+uuid: "3648a82c-8e8e-4ab4-be20-64760dd834a5"
+title: "FEE RATE - LIGHTNING"
+slug: "fee-rate-lightning"
+category: "LIGHTNING NETWORK"
+cross_references:
+  - "96df9ad2-69b1-4cbe-bf22-0b6ae39a6e8f"
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+french_term: "TAUX DE FRAIS LIGHTNING"
+version: "1"
