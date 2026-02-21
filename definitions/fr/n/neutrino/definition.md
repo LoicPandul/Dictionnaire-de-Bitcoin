@@ -1,0 +1,5 @@
+Client léger Bitcoin écrit en Go et développé par Lightning Labs. Conçu pour les applications mobiles utilisant le Lightning Network, Neutrino implémente le protocole de *compact block filters* défini dans les BIP-0157 et BIP-0158 pour synchroniser la blockchain en minimisant la bande passante et le stockage.
+
+Neutrino ne télécharge que les en-têtes de blocs et les en-têtes de filtres compacts. Les filtres et les blocs complets sont chargés à la demande lorsqu'une correspondance est détectée avec les scripts surveillés. Il propose des fonctionnalités de *rescan* pour analyser la blockchain à la recherche de transactions pertinentes, ainsi qu'une fonction `GetUtxo` pour vérifier l'existence et l'état de dépense d'une sortie.
+
+Neutrino est notamment utilisé comme *backend* par LND pour les configurations légères ne nécessitant pas un nœud Bitcoin Core complet. Le terme « Neutrino » est parfois utilisé par abus de langage pour désigner le protocole BIP-0157/0158 lui-même, alors qu'il ne désigne que cette bibliothèque cliente spécifique.
