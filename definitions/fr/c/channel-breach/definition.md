@@ -1,0 +1,3 @@
+Tentative de triche sur le Lightning Network, dans laquelle un pair publie une ancienne transaction d'engagement (*commitment transaction*) pour tenter de récupérer un solde qui ne lui revient plus. Lorsqu'un tel état révoqué est diffusé sur la blockchain, la contrepartie dispose d'un délai défini par le *timelock* pour détecter cette fraude et publier une transaction de justice qui lui permet de récupérer l'intégralité des fonds du canal.
+
+La détection d'une violation de canal peut être assurée directement par le nœud s'il est en ligne, ou déléguée à une *watchtower* qui surveille la blockchain en permanence. Si la violation n'est pas contestée avant l'expiration du *timelock*, le tricheur conserve les fonds indûment récupérés.
