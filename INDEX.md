@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 916 définitions du dictionnaire.
 
 ---
 
@@ -151,6 +151,8 @@ Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
 | [BIP-0152](definitions/fr/b/bip-0152/definition.md) | `51cb62fd-2d57-4f64-8d3e-6b8c6bb85dbe` |
 | [BIP-0155](definitions/fr/b/bip-0155/definition.md) | `8cc61c1e-719f-47a5-b4b3-e88aaa2b231c` |
 | [BIP-0156](definitions/fr/b/bip-0156/definition.md) | `e892f615-28b4-4078-ad86-f862c246bd70` |
+| [BIP-0157](definitions/fr/b/bip-0157/definition.md) | `6ec606f6-57ef-4d77-b3f1-822f5a06afff` |
+| [BIP-0158](definitions/fr/b/bip-0158/definition.md) | `5a9ad692-ef80-4ce8-955f-228bfb74cbf2` |
 | [BIP-0173](definitions/fr/b/bip-0173/definition.md) | `29193a69-fe44-4bf3-9236-5d427db370fd` |
 | [BIP-0322](definitions/fr/b/bip-0322/definition.md) | `ab4e00c3-f6bb-4973-a5fe-66ee75f3bb50` |
 | [BIP-0324](definitions/fr/b/bip-0324/definition.md) | `7aadb49e-5adc-4010-a269-fd7d6fabda46` |
@@ -283,6 +285,7 @@ Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
 | [COMMIT](definitions/fr/c/commit/definition.md) | `0b2de1d7-cabb-419f-ba5c-3c33faa5f37f` |
 | [COMMITMENT](definitions/fr/c/commitment/definition.md) | `74ca7f47-2853-48a7-a2b8-21ba593ad3fa` |
 | [COMMITMENT FEE](definitions/fr/c/commitment-fee/definition.md) | `d84cffe5-9d68-44a5-846f-95b8aa9a47ea` |
+| [COMPACT BLOCK FILTERS](definitions/fr/c/compact-block-filters/definition.md) | `c36d7bef-5012-418c-bc76-073c554c1e5f` |
 | [COMPACT BLOCK RELAY](definitions/fr/c/compact-block-relay/definition.md) | `232a8659-9aaf-4842-b275-24ebc331a51b` |
 | [COMPATIBILITÉ RÉTROSPECTIVE](definitions/fr/c/compatibilite-retrospective/definition.md) | `007c2d5c-ab8d-43d0-9816-049921308ceb` |
 | [COMPTE](definitions/fr/c/compte/definition.md) | `7861164f-04b0-44af-9ea7-00202b3757ba` |
@@ -427,6 +430,7 @@ Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
 | Terme | UUID |
 |-------|------|
 | [GAP LIMIT](definitions/fr/g/gap-limit/definition.md) | `2fc3c573-173e-4fd0-b8b0-7cd32404f44f` |
+| [GCS - GOLOMB-CODED SET](definitions/fr/g/gcs-golomb-coded-set/definition.md) | `54e333a5-0593-4f6e-96e0-9a1cf3aa0344` |
 | [GENÈSE](definitions/fr/g/genese/definition.md) | `608f3e1b-edd0-4834-ac9c-22cf6afe032d` |
 | [GENESIS](definitions/fr/g/genesis/definition.md) | `a64c6263-b1aa-423a-a1b4-3faeefb3decf` |
 | [GETWORK](definitions/fr/g/getwork/definition.md) | `6d187b5f-46d2-4f57-be37-fab3fb93dfdf` |
@@ -598,6 +602,7 @@ Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
 | [NAKAMOTO SATOSHI](definitions/fr/n/nakamoto-satoshi/definition.md) | `9d578cea-a756-4aff-b436-fc8a5e90a98c` |
 | [NAT - NETWORK-ADJUSTED TIME](definitions/fr/n/nat-network-adjusted-time/definition.md) | `5fc25ff3-922c-45b4-b717-cba463da9db1` |
 | [NESTED SEGWIT](definitions/fr/n/nested-segwit/definition.md) | `cddd7a63-8d9c-4ca1-a782-3ce020275816` |
+| [NEUTRINO](definitions/fr/n/neutrino/definition.md) | `027690a7-0005-4df0-ab40-0524604a91e5` |
 | [NFT](definitions/fr/n/nft/definition.md) | `61fed473-5d33-4ccd-b002-211472e796e7` |
 | [NIP](definitions/fr/n/nip/definition.md) | `5cb70b76-85fd-4db6-b48f-fcd610e7fef8` |
 | [NLOCKTIME](definitions/fr/n/nlocktime/definition.md) | `176da554-3dd4-41c2-bc3e-5b7f7a2bf34a` |
@@ -769,6 +774,9 @@ Ce fichier contient la liste de toutes les 908 définitions du dictionnaire.
 | [PIZZA DAY](definitions/fr/p/pizza-day/definition.md) | `c1417266-bb82-4aec-9d71-84a9020a4384` |
 | [POINT D'ENTRÉE](definitions/fr/p/point-d-entree/definition.md) | `fd28eb68-d1b8-4e2b-aa85-500480c7f8d4` |
 | [POLICY - MINISCRIPT](definitions/fr/p/policy-miniscript/definition.md) | `c41c8a9d-0141-4559-ac23-7295e954f3e1` |
+| [POLITIQUE DE MEMPOOL](definitions/fr/p/politique-de-mempool/definition.md) | `cc1092b3-394e-43c4-a299-a982d3304062` |
+| [POLITIQUE DE RELAIS](definitions/fr/p/politique-de-relais/definition.md) | `f83f1367-fa30-4cbd-bc65-6cb6270f5f26` |
+| [POLITIQUE DE RELAIS DES TRANSACTIONS](definitions/fr/p/politique-de-relais-des-transactions/definition.md) | `a184573c-7acd-4bd3-9618-25a1eb44d4aa` |
 | [POOL DE COINJOIN](definitions/fr/p/pool-coinjoin/definition.md) | `c2692ce0-d5b4-493b-a63d-9b6f104acf01` |
 | [POOL HOPPING](definitions/fr/p/pool-hopping/definition.md) | `013c96c4-6b48-46d0-bfa8-0fc0d0b31959` |
 | [POOL - LIGHTNING](definitions/fr/p/pool-lightning/definition.md) | `823330ef-0599-47fa-b4b9-dc7206206888` |

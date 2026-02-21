@@ -6,28 +6,28 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 908
+- **Nombre total de définitions** : 916
 
 ## Définitions par lettre
 
 | Lettre | Nombre |
 |:------:|-------:|
 | A | 43 |
-| B | 156 |
-| C | 98 |
+| B | 158 |
+| C | 99 |
 | D | 35 |
 | E | 29 |
 | F | 21 |
-| G | 20 |
+| G | 21 |
 | H | 22 |
 | I | 18 |
 | J | 5 |
 | K | 2 |
 | L | 24 |
 | M | 43 |
-| N | 22 |
+| N | 23 |
 | O | 105 |
-| P | 63 |
+| P | 66 |
 | Q | 3 |
 | R | 32 |
 | S | 92 |
@@ -41,48 +41,48 @@
 
 ## Top 5 des lettres les plus fournies
 
-1. **B** : 156 définitions
+1. **B** : 158 définitions
 2. **O** : 105 définitions
-3. **C** : 98 définitions
+3. **C** : 99 définitions
 4. **S** : 92 définitions
-5. **P** : 63 définitions
+5. **P** : 66 définitions
 
 ## Catégories
 
 - **PROTOCOLE** : 143
 - **SCRIPT** : 104
-- **BIP** : 83
+- **BIP** : 85
 - **PORTEFEUILLE** : 77
 - **LIGHTNING NETWORK** : 57
 - **MINAGE** : 57
+- **INFORMATIQUE** : 53
 - **CONFIDENTIALITÉ** : 52
-- **INFORMATIQUE** : 52
 - **COUCHE SUPÉRIEURE** : 46
 - **CRYPTOGRAPHIE** : 44
-- **RÉSEAU** : 39
+- **RÉSEAU** : 43
 - **RGB** : 37
 - **ÉCONOMIE ET RÉGULATION** : 33
 - **HISTOIRE** : 28
 - **ATTAQUE** : 24
-- **OUTIL** : 10
+- **OUTIL** : 11
 - **SIDECHAIN** : 9
 - **COMMUNAUTÉ** : 8
 - **ORGANISATION** : 5
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1370 occurrences
-- **transaction** : 1086 occurrences
-- **bloc** : 598 occurrences
-- **adresse** : 364 occurrences
-- **protocole** : 315 occurrences
-- **utilisateur** : 313 occurrences
-- **script** : 305 occurrences
+- **bitcoin** : 1377 occurrences
+- **transaction** : 1117 occurrences
+- **bloc** : 616 occurrences
+- **adresse** : 365 occurrences
+- **protocole** : 320 occurrences
+- **utilisateur** : 314 occurrences
+- **script** : 307 occurrences
 - **portefeuille** : 287 occurrences
-- **réseau** : 274 occurrences
-- **mineur** : 258 occurrences
+- **réseau** : 281 occurrences
+- **mineur** : 260 occurrences
 - **utxo** : 257 occurrences
 - **signature** : 254 occurrences
 - **paiement** : 244 occurrences
-- **donnée** : 240 occurrences
+- **donnée** : 243 occurrences
 - **clés** : 220 occurrences

@@ -4,10 +4,6 @@ ___
 
 
 
-## COMPACT FILTERS
-
-
-
 ## FIDELITY BONDS
 
 
