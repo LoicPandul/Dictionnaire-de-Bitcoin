@@ -1,0 +1,5 @@
+Sous-ensemble de la politique de relais des transactions qui regroupe l'ensemble des règles appliquées par un nœud Bitcoin pour déterminer quelles transactions non confirmées il accepte dans sa mempool. La politique de mempool englobe les règles de standardisation, mais s'étend au-delà en incluant des règles qui prennent en compte le contexte de la mempool dans son ensemble, et pas seulement le format des transactions individuelles.
+
+Par exemple, les règles relatives au taux de frais minimum de relais (`minRelayTxFee`), à la taille maximale de la mempool (`maxmempool`), ou encore les règles de remplacement de transactions (RBF) relèvent de la politique de mempool. Ces règles sont configurées localement par chaque nœud et peuvent varier d'un nœud à l'autre.
+
+La politique de mempool se distingue des règles de standardisation en ce que ces dernières ne concernent que le format d'une transaction prise isolément, tandis que la politique de mempool prend en compte des facteurs contextuels comme l'encombrement de la mempool, les relations entre transactions, ou les seuils de frais configurés par l'opérateur du nœud.
