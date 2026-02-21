@@ -1,0 +1,5 @@
+Service hébergé sur le réseau Tor, accessible uniquement via une adresse `.onion`, sans exposer l'adresse IP du serveur. Anciennement appelé « *hidden service* », le terme officiel a été renommé en « *onion service* » par le projet Tor. Le serveur et le client communiquent à travers des circuits Tor, de sorte que ni l'un ni l'autre ne connaît l'adresse IP de son correspondant.
+
+Un onion service fonctionne en publiant des points de rendez-vous (*rendezvous points*) dans la table de hachage distribuée du réseau Tor. Le client et le serveur construisent chacun un circuit Tor jusqu'à ce point de rendez-vous, afin d'établir une connexion mutuelle sans qu'aucune donnée ne transite en clair sur internet.
+
+Dans le contexte de Bitcoin, de nombreux nœuds Bitcoin Core et Lightning exposent un onion service pour accepter des connexions entrantes de manière anonyme. Cela permet à un opérateur de nœud de participer au réseau P2P sans révéler son adresse IP ni sa localisation, ce qui renforce la résistance à la censure et la confidentialité de l'infrastructure.
