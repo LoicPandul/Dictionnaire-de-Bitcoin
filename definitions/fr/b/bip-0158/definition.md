@@ -1,0 +1,5 @@
+Proposition qui définit la structure et la construction des *compact block filters* utilisés par le protocole BIP-0157. Le format retenu repose sur les *Golomb-Coded Sets* (GCS), une structure probabiliste plus compacte que les filtres de Bloom du BIP-0037.
+
+Le filtre de type `basic` (`0x00`) contient, pour chaque transaction d'un bloc, les scripts de sortie dépensés en input (sauf la coinbase) et les `scriptPubKey` de chaque sortie (sauf les `OP_RETURN`). Les éléments sont hachés avec SipHash (paramètres `c = 2`, `d = 4`), la clé étant les 16 premiers octets du hash du bloc. Les valeurs hachées sont projetées dans l'intervalle $[0, N \times M)$, triées, puis les différences successives sont compressées par codage de Golomb-Rice.
+
+Les paramètres retenus sont $P = 19$ et $M = 784\,931$, optimisés pour minimiser la bande passante globale en tenant compte à la fois de la taille des filtres et du nombre de blocs téléchargés à cause des faux positifs. Ce BIP introduit également le bit de service `NODE_COMPACT_FILTERS` (`1 << 6`). Il a été rédigé par Olaoluwa Osuntokun et Alex Akselrod.

@@ -1,0 +1,5 @@
+Proposition qui définit le protocole pair-à-pair permettant aux clients légers de télécharger des *compact block filters* depuis les nœuds complets. Ce BIP introduit six nouveaux messages P2P : `getcfilters` et `cfilter` pour demander et recevoir les filtres, `getcfheaders` et `cfheaders` pour les en-têtes de filtres, ainsi que `getcfcheckpt` et `cfcheckpt` pour des points de contrôle espacés tous les 1 000 blocs.
+
+Le BIP-0157 s'appuie sur un système d'en-têtes de filtres chaînés, similaire aux en-têtes de blocs. Chaque en-tête est le double SHA-256 de la concaténation du hash du filtre avec l'en-tête précédent, ce qui permet au client de vérifier l'authenticité de la chaîne de filtres. En cas de conflit entre pairs, le client peut télécharger le bloc complet, recalculer le filtre correct et identifier le pair fautif.
+
+Ce BIP requiert le BIP-0158 qui spécifie la construction des filtres eux-mêmes. Rédigé par Olaoluwa Osuntokun, Alex Akselrod et Jim Posen, il est déployé dans Bitcoin Core.
