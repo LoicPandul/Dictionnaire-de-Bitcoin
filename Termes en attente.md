@@ -217,8 +217,4 @@ Fonction de hachage taguée.
 
 
 
-## WATCHTOWER
-
-
-
 
