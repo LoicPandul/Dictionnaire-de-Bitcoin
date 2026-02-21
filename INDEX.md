@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 916 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 920 définitions du dictionnaire.
 
 ---
 
@@ -638,7 +638,9 @@ Ce fichier contient la liste de toutes les 916 définitions du dictionnaire.
 | [OMNI](definitions/fr/o/omni/definition.md) | `04fc27ec-693a-4e17-aea6-5c3a1f732c8b` |
 | [ON-CHAIN](definitions/fr/o/on-chain/definition.md) | `545f74d5-7598-45a0-92db-364c50fd576a` |
 | [ON-GRID](definitions/fr/o/on-grid/definition.md) | `91889163-76d1-4635-a75e-dd12c7805961` |
+| [ONION ADDRESS](definitions/fr/o/onion-address/definition.md) | `a8036f6b-9bc1-4715-906e-46b7363d041d` |
 | [ONION_PRIVATE_KEY](definitions/fr/o/onion-private-key/definition.md) | `b0e0c7c8-0e77-4434-b376-b40fcde70959` |
+| [ONION SERVICE](definitions/fr/o/onion-service/definition.md) | `54ffa6e6-72b7-4b49-b7f4-33cce80986f2` |
 | [ONION_V3_PRIVATE_KEY](definitions/fr/o/onion-v3-private-key/definition.md) | `ed1cda46-11ad-481b-9b9d-81673eca37fc` |
 | [OOR PAYMENT](definitions/fr/o/oor-payment/definition.md) | `dfeed873-1188-4666-8797-026f3889664d` |
 | [OP_0 - 0X00](definitions/fr/o/op-0-0x00/definition.md) | `92ca392b-d5b7-4ddc-b592-d0d740571d68` |
@@ -843,6 +845,7 @@ Ce fichier contient la liste de toutes les 916 définitions du dictionnaire.
 | [RISC ZERO](definitions/fr/r/risc-zero/definition.md) | `c9ba79fa-2634-47a2-bb36-62fa930975bf` |
 | [ROLLUP](definitions/fr/r/rollup/definition.md) | `e5135b7d-ad1e-4587-9ae1-461c906d1eff` |
 | [ROUND ARK](definitions/fr/r/round-ark/definition.md) | `2cc2bc2a-2704-49dd-a1a0-31b3e99b7a54` |
+| [ROUTAGE EN OIGNON](definitions/fr/r/routage-en-oignon/definition.md) | `2f4d359a-10f3-497b-8ae9-1323c82622d6` |
 | [RPC - REMOTE PROCEDURE CALL](definitions/fr/r/rpc-remote-procedure-call/definition.md) | `fd644fe9-2c34-46a0-b40c-f9d3f2920661` |
 | [RPOW](definitions/fr/r/rpow/definition.md) | `2eb81a61-aa97-446a-a346-ca24d8f9ed94` |
 | [RSMPPS](definitions/fr/r/rsmpps/definition.md) | `486310e9-83da-48ae-8978-a516346c432b` |
@@ -1018,6 +1021,7 @@ Ce fichier contient la liste de toutes les 916 définitions du dictionnaire.
 | [WASABI WALLET](definitions/fr/w/wasabi-wallet/definition.md) | `b15e30d2-ad59-496d-bbdd-c11c22f26002` |
 | [WATCH-ONLY WALLET](definitions/fr/w/watch-only-wallet/definition.md) | `a3e9c07b-1076-4ab9-9695-c27cb52fe42f` |
 | [WATCHMEN](definitions/fr/w/watchmen/definition.md) | `b0c41084-126c-4966-b40c-d1800cda9e4e` |
+| [WATCHTOWER](definitions/fr/w/watchtower/definition.md) | `ffbbd17a-e7f1-4fe4-bc0b-3d9db3cf4a78` |
 | [WHALE](definitions/fr/w/whale/definition.md) | `54290c9a-e310-4935-88b4-e9db8f100845` |
 | [WHIRLPOOL](definitions/fr/w/whirlpool/definition.md) | `34d344e0-ddb8-4e09-828f-f5820377e360` |
 | [WHIRLPOOL STAT TOOL](definitions/fr/w/whirlpool-stat-tool/definition.md) | `7d7ea0c6-ff89-4f9f-9b31-c0f264739516` |
