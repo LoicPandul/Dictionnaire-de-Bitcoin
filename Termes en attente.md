@@ -53,10 +53,6 @@ ___
 
 
 
-## MERKLE SUM TREE
-
-
-
 ## MIMBLEWIMBLE
 
 
@@ -157,15 +153,6 @@ ATTENTION : TERME DÉJÀ PRÉSENT !
 
 
 
-## SPARSE MERKLE TREE (SMT)
-
-
-
-## SPHINX
-
-onion encryption
-
-
 ## SPLICING
 
 
@@ -184,10 +171,6 @@ Liquid
 
 
 ## SUBVERSION (SVN)
-
-
-
-## SWEEPING (LIGHTNING)
 
 
 
