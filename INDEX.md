@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 960 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 
 ---
 
@@ -253,6 +253,7 @@ Ce fichier contient la liste de toutes les 960 définitions du dictionnaire.
 | [CHANNEL.DB](definitions/fr/c/channel-db/definition.md) | `71c6ca7d-a47c-4cef-bd3d-673392c58006` |
 | [CHANNEL FACTORIES](definitions/fr/c/channel-factories/definition.md) | `eaf11d67-f710-4231-b343-90c548d8db27` |
 | [CHANNEL POINT](definitions/fr/c/channel-point/definition.md) | `7629a275-5c4a-4e3e-a6e2-32eb8453dada` |
+| [CHANTOOLS](definitions/fr/c/chantools/definition.md) | `e6a04aad-5739-4b4b-85b0-d34036dcb728` |
 | [CHARGE UTILE](definitions/fr/c/charge-utile/definition.md) | `ef70aa4a-7364-4b70-8d04-f628c67b1404` |
 | [CHAUMIAN COINJOIN](definitions/fr/c/chaumian-coinjoin/definition.md) | `9895ea98-7345-45d8-b96a-ac61ebd334e9` |
 | [CHEMIN DE DÉRIVATION](definitions/fr/c/chemin-de-derivation/definition.md) | `080efa61-7f74-4d60-9ee4-4fa10920b967` |
@@ -529,6 +530,7 @@ Ce fichier contient la liste de toutes les 960 définitions du dictionnaire.
 
 | Terme | UUID |
 |-------|------|
+| [KEYSEND](definitions/fr/k/keysend/definition.md) | `7068dffb-5f16-4ad9-ab63-6581e745944d` |
 | [KNAPSACK SOLVER](definitions/fr/k/knapsack-solver/definition.md) | `3bded62b-9686-41e8-8f04-b0903f8d9482` |
 | [KYC - KNOW YOUR CUSTOMER](definitions/fr/k/kyc-know-your-customer/definition.md) | `501e3e0a-3d9d-447b-82be-991828b5f05e` |
 
@@ -979,6 +981,7 @@ Ce fichier contient la liste de toutes les 960 définitions du dictionnaire.
 | [STRATUM](definitions/fr/s/stratum/definition.md) | `76436a95-5659-44e0-a3d4-29fd42dc479b` |
 | [STRATUM V2](definitions/fr/s/stratum-v2/definition.md) | `cf8665d5-e90a-4ead-b203-50e128b5a85e` |
 | [STUCKLESS PAYMENT](definitions/fr/s/stuckless-payment/definition.md) | `012a6fa2-e437-4f13-82ac-002bc44bf738` |
+| [SUBMARINE SWAP](definitions/fr/s/submarine-swap/definition.md) | `3fcc50a7-2d25-4512-bdd0-ed6ab5c964d9` |
 | [SUBVENTION DE BLOC](definitions/fr/s/subvention-de-bloc/definition.md) | `7ff8a419-1f3b-47b1-9175-32be6fe2ad55` |
 | [SURCOUCHE](definitions/fr/s/surcouche/definition.md) | `acdcbd6a-29fe-42b8-a01d-3dd55b6a21c9` |
 | [SURFACE D'ATTAQUE](definitions/fr/s/surface-d-attaque/definition.md) | `20f8ab5d-0912-498c-9491-581b873760bc` |

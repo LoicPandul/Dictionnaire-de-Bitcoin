@@ -6,7 +6,7 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 960
+- **Nombre total de définitions** : 963
 
 ## Définitions par lettre
 
@@ -14,7 +14,7 @@
 |:------:|-------:|
 | A | 48 |
 | B | 160 |
-| C | 102 |
+| C | 103 |
 | D | 35 |
 | E | 29 |
 | F | 23 |
@@ -22,7 +22,7 @@
 | H | 23 |
 | I | 18 |
 | J | 5 |
-| K | 2 |
+| K | 3 |
 | L | 31 |
 | M | 47 |
 | N | 24 |
@@ -30,7 +30,7 @@
 | P | 72 |
 | Q | 3 |
 | R | 34 |
-| S | 95 |
+| S | 96 |
 | T | 27 |
 | U | 12 |
 | V | 10 |
@@ -43,8 +43,8 @@
 
 1. **B** : 160 définitions
 2. **O** : 107 définitions
-3. **C** : 102 définitions
-4. **S** : 95 définitions
+3. **C** : 103 définitions
+4. **S** : 96 définitions
 5. **P** : 72 définitions
 
 ## Catégories
@@ -53,7 +53,7 @@
 - **SCRIPT** : 104
 - **BIP** : 85
 - **PORTEFEUILLE** : 77
-- **LIGHTNING NETWORK** : 75
+- **LIGHTNING NETWORK** : 77
 - **INFORMATIQUE** : 59
 - **MINAGE** : 57
 - **COUCHE SUPÉRIEURE** : 53
@@ -64,25 +64,25 @@
 - **ÉCONOMIE ET RÉGULATION** : 33
 - **HISTOIRE** : 28
 - **ATTAQUE** : 24
-- **OUTIL** : 16
+- **OUTIL** : 17
 - **SIDECHAIN** : 9
 - **COMMUNAUTÉ** : 8
 - **ORGANISATION** : 6
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1404 occurrences
+- **bitcoin** : 1407 occurrences
 - **transaction** : 1148 occurrences
 - **bloc** : 619 occurrences
 - **adresse** : 374 occurrences
 - **protocole** : 343 occurrences
 - **utilisateur** : 318 occurrences
-- **script** : 308 occurrences
+- **script** : 309 occurrences
 - **réseau** : 297 occurrences
 - **portefeuille** : 291 occurrences
-- **paiement** : 273 occurrences
+- **paiement** : 282 occurrences
+- **lightning** : 261 occurrences
 - **mineur** : 261 occurrences
+- **donnée** : 258 occurrences
 - **utxo** : 257 occurrences
-- **donnée** : 256 occurrences
-- **signature** : 255 occurrences
-- **lightning** : 253 occurrences
+- **signature** : 256 occurrences
