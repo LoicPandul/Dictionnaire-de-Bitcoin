@@ -1,0 +1,1 @@
+Sous-unité du bitcoin équivalant à un millième de bitcoin, soit 0,001 BTC ou 100 000 satoshis. Le millibitcoin est parfois abrégé en « mBTC ». Cette unité est utilisée pour exprimer des montants intermédiaires de manière plus lisible que les fractions décimales de bitcoin, notamment dans les interfaces de portefeuilles et les plateformes d'échange.
