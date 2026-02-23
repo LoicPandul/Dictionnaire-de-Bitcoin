@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 
 ---
 
@@ -196,6 +196,21 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 | [BITCOIND.PID](definitions/fr/b/bitcoind-pid/definition.md) | `4e78aadf-b3e1-45b7-8ea6-7028e10ff548` |
 | [BITCOINTALK](definitions/fr/b/bitcointalk/definition.md) | `4eb80ccd-11e0-45cc-ad72-32065d22601a` |
 | [BITVM](definitions/fr/b/bitvm/definition.md) | `c4b669f1-0d6c-4206-9537-82282ca1ca24` |
+| [BLIP](definitions/fr/b/blip/definition.md) | `e53107d9-4cd8-4d1b-aa7b-12271f611ee3` |
+| [BLIP-0001](definitions/fr/b/blip-0001/definition.md) | `cf636265-0f74-495f-b7b6-e59afdec3855` |
+| [BLIP-0002](definitions/fr/b/blip-0002/definition.md) | `6b083227-dc89-49b0-b168-79b3bdc79fa2` |
+| [BLIP-0003](definitions/fr/b/blip-0003/definition.md) | `ce1964cb-ef67-49c0-ba06-62a45dd67e91` |
+| [BLIP-0004](definitions/fr/b/blip-0004/definition.md) | `4edf1356-22ff-4c2a-b7af-a317d5ed11ff` |
+| [BLIP-0010](definitions/fr/b/blip-0010/definition.md) | `69dd7d06-0133-4c43-b60b-8b5b87df7d03` |
+| [BLIP-0011](definitions/fr/b/blip-0011/definition.md) | `336298fc-bc80-4d8c-834d-567837f795b7` |
+| [BLIP-0017](definitions/fr/b/blip-0017/definition.md) | `65ba9f36-79c1-4f38-b205-ada896dad7df` |
+| [BLIP-0025](definitions/fr/b/blip-0025/definition.md) | `5944742e-7018-406c-b3d5-4634f5a86320` |
+| [BLIP-0032](definitions/fr/b/blip-0032/definition.md) | `7fa80378-46ba-480a-b371-9d8a94c5bdfb` |
+| [BLIP-0039](definitions/fr/b/blip-0039/definition.md) | `36f69474-d71c-4090-9af5-6a2896bf879b` |
+| [BLIP-0050](definitions/fr/b/blip-0050/definition.md) | `9312e260-64de-4ca1-99a5-853f3b932aea` |
+| [BLIP-0051](definitions/fr/b/blip-0051/definition.md) | `9b250f78-2063-4c30-a742-affe781e4368` |
+| [BLIP-0052](definitions/fr/b/blip-0052/definition.md) | `48c74d71-fd0e-4ea1-9b9c-118eb45fd875` |
+| [BLIP-0055](definitions/fr/b/blip-0055/definition.md) | `b6aacf9a-f4ca-4ee2-b806-f2541ca4c7fa` |
 | [BLK*.DAT](definitions/fr/b/blk-dat/definition.md) | `61425f35-72b4-4ce5-85c1-5d3551e733e6` |
 | [BLKINDEX.DAT](definitions/fr/b/blkindex-dat/definition.md) | `2197f80d-8b0b-4478-b1b6-00164a5ee82a` |
 | [BLKTREE/](definitions/fr/b/blktree/definition.md) | `f67db5a4-538c-4257-b7a9-db221101c879` |
@@ -209,6 +224,18 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 | [BLOCKSTREAM](definitions/fr/b/blockstream/definition.md) | `cd0c8e19-e3ea-4e07-b42a-34de86984dfa` |
 | [BLOOM FILTER](definitions/fr/b/bloom-filter/definition.md) | `b365a328-efd9-4bf5-861c-4cab3cfbf9af` |
 | [BOLT](definitions/fr/b/bolt/definition.md) | `b80ec0d7-d56f-46c4-a0b3-45a3144de0e5` |
+| [BOLT-00](definitions/fr/b/bolt-00/definition.md) | `923d1e41-9a38-4ba1-a744-91806f722d80` |
+| [BOLT-01](definitions/fr/b/bolt-01/definition.md) | `b9d8cc0c-4207-4ade-884f-aeddf43a9a86` |
+| [BOLT-02](definitions/fr/b/bolt-02/definition.md) | `c514d1b9-8b58-47d2-a493-18d6e1e90a68` |
+| [BOLT-03](definitions/fr/b/bolt-03/definition.md) | `c0ce95d5-0641-4b1a-b495-e67d6cc0320f` |
+| [BOLT-04](definitions/fr/b/bolt-04/definition.md) | `b3ba4c6f-b86e-48d7-b990-80f6a70dcea8` |
+| [BOLT-05](definitions/fr/b/bolt-05/definition.md) | `638e0ded-9bbc-4291-b5d3-bec7703e465c` |
+| [BOLT-07](definitions/fr/b/bolt-07/definition.md) | `1953c4ab-5d08-480c-9ede-ddc04ad4ab14` |
+| [BOLT-08](definitions/fr/b/bolt-08/definition.md) | `1821c6f4-a45e-4fcd-900e-9486b7f4547f` |
+| [BOLT-09](definitions/fr/b/bolt-09/definition.md) | `f50c7c5a-db84-4178-b1b3-7c99a441b746` |
+| [BOLT-10](definitions/fr/b/bolt-10/definition.md) | `a5e43413-b88c-4269-bd96-513fac09e873` |
+| [BOLT-11](definitions/fr/b/bolt-11/definition.md) | `5bfcb45e-7a25-4a11-98b6-8bd51b1f75b5` |
+| [BOLT-12](definitions/fr/b/bolt-12/definition.md) | `7f92f5dd-c22e-4ea9-a2fd-fa42a897e11b` |
 | [BOS - BALANCE OF SATOSHIS](definitions/fr/b/bos-balance-of-satoshis/definition.md) | `961adcb1-1e9b-424d-96b5-74f4df767da5` |
 | [BOSMINER](definitions/fr/b/bosminer/definition.md) | `ffc8d20e-2173-4513-a1ec-d278c3720034` |
 | [BOUNTY](definitions/fr/b/bounty/definition.md) | `4bb65831-8540-4c8d-be14-1f834fe1afd8` |
@@ -248,10 +275,12 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 | [CHAINWAY LABS](definitions/fr/c/chainway-labs/definition.md) | `ca4db974-f81c-4549-9ffb-4a97bd2832a2` |
 | [CHAMPION](definitions/fr/c/champion/definition.md) | `b888e875-627e-46ee-aa19-6df6f7c419a9` |
 | [CHANGE](definitions/fr/c/change/definition.md) | `7745036c-eeca-4682-9b27-6c10a55e342b` |
+| [CHANNEL ACCEPTOR](definitions/fr/c/channel-acceptor/definition.md) | `e50f5947-2cb8-4ee9-aaa1-a0731b7d02be` |
 | [CHANNEL ANNOUNCEMENT](definitions/fr/c/channel-announcement/definition.md) | `6a6effb5-6b3b-488d-9007-6ba19c51c711` |
 | [CHANNEL BREACH](definitions/fr/c/channel-breach/definition.md) | `a157dfd3-86e2-4c6d-aeee-7f04a9c95758` |
 | [CHANNEL.DB](definitions/fr/c/channel-db/definition.md) | `71c6ca7d-a47c-4cef-bd3d-673392c58006` |
 | [CHANNEL FACTORIES](definitions/fr/c/channel-factories/definition.md) | `eaf11d67-f710-4231-b343-90c548d8db27` |
+| [CHANNEL LEASE](definitions/fr/c/channel-lease/definition.md) | `c92c41f2-7db3-43e3-aa2c-61a440716a3e` |
 | [CHANNEL POINT](definitions/fr/c/channel-point/definition.md) | `7629a275-5c4a-4e3e-a6e2-32eb8453dada` |
 | [CHANTOOLS](definitions/fr/c/chantools/definition.md) | `e6a04aad-5739-4b4b-85b0-d34036dcb728` |
 | [CHARGE UTILE](definitions/fr/c/charge-utile/definition.md) | `ef70aa4a-7364-4b70-8d04-f628c67b1404` |
@@ -387,6 +416,7 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 | [ECLAIR](definitions/fr/e/eclair/definition.md) | `16fd7312-e023-43a4-8f62-40ee56fd938a` |
 | [ECLIPSE](definitions/fr/e/eclipse/definition.md) | `34cb8d84-1112-49d3-85ed-0725b4f0860c` |
 | [ÉCOLE AUTRICHIENNE](definitions/fr/e/ecole-autrichienne/definition.md) | `93d3646f-a39f-4626-8569-3f1dbb06c7a9` |
+| [EDGE NODE](definitions/fr/e/edge-node/definition.md) | `249af351-9b40-4f62-848a-07d038814acf` |
 | [EFFET CANTILLON](definitions/fr/e/effet-cantillon/definition.md) | `7f6464e3-87fa-402c-a686-bd2c14390b02` |
 | [ELECTRS](definitions/fr/e/electrs/definition.md) | `192ec4e8-26c4-47d6-a157-4a15bd2231b4` |
 | [ELECTRUM](definitions/fr/e/electrum/definition.md) | `6863cade-c97d-4b01-907b-af682e54726c` |
@@ -443,6 +473,7 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 | Terme | UUID |
 |-------|------|
 | [GAP LIMIT](definitions/fr/g/gap-limit/definition.md) | `2fc3c573-173e-4fd0-b8b0-7cd32404f44f` |
+| [GATEWAY NODE](definitions/fr/g/gateway-node/definition.md) | `42a61863-fb16-4771-88fa-212a75ea0343` |
 | [GCS - GOLOMB-CODED SET](definitions/fr/g/gcs-golomb-coded-set/definition.md) | `54e333a5-0593-4f6e-96e0-9a1cf3aa0344` |
 | [GENÈSE](definitions/fr/g/genese/definition.md) | `608f3e1b-edd0-4834-ac9c-22cf6afe032d` |
 | [GENESIS](definitions/fr/g/genesis/definition.md) | `a64c6263-b1aa-423a-a1b4-3faeefb3decf` |
@@ -992,6 +1023,7 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 
 | Terme | UUID |
 |-------|------|
+| [TAPD](definitions/fr/t/tapd/definition.md) | `dcc5ee68-382d-48d9-aa3b-51773f4efb18` |
 | [TAPROOT](definitions/fr/t/taproot/definition.md) | `df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6` |
 | [TAPROOT ASSETS PROTOCOL](definitions/fr/t/taproot-assets-protocol/definition.md) | `7e06f113-180b-4d77-abda-2a5be7fa9a25` |
 | [TAPROOT CHANNEL](definitions/fr/t/taproot-channel/definition.md) | `5c3693c8-b0de-42d5-adb6-73850405f996` |
@@ -1010,6 +1042,7 @@ Ce fichier contient la liste de toutes les 963 définitions du dictionnaire.
 | [TPUB](definitions/fr/t/tpub/definition.md) | `e59039ea-f705-4b75-9abd-984987c1818e` |
 | [TRANSACTION COLLABORATIVE](definitions/fr/t/transaction-collaborative/definition.md) | `fb886440-f094-4b84-9bc4-54f08f9724e4` |
 | [TRANSACTION D'ENGAGEMENT](definitions/fr/t/transaction-d-engagement/definition.md) | `c06ceef4-51bf-4777-98c6-180fc4f17790` |
+| [TRANSACTION DE FINANCEMENT](definitions/fr/t/transaction-de-financement/definition.md) | `a83623aa-d839-4a46-92aa-cdb6cc6ed4db` |
 | [TRANSACTION NON CONFIRMÉE](definitions/fr/t/transaction-non-confirmee/definition.md) | `626b8bf7-467a-496d-ba81-63cdc8d5f058` |
 | [TRANSACTION STANDARD](definitions/fr/t/transaction-standard/definition.md) | `7e28ef78-21c7-4b7e-894e-ba67271d00dd` |
 | [TRANSITION BUNDLE](definitions/fr/t/transition-bundle/definition.md) | `5b688ef0-b5ba-4910-a954-8eda9e3d282d` |
