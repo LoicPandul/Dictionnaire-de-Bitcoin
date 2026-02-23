@@ -1,0 +1,1 @@
+Proposition d'une variante de transactions multisig M-of-N avec un coût réduit en opérations de vérification de signatures (sigops). Le BIP-0019 a été supplanté par P2SH (BIP-0016) qui offre une solution plus générale et plus flexible pour encapsuler des scripts complexes, y compris le multisig, dans une adresse de hachage de script.
