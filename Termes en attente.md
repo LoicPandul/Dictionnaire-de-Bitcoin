@@ -36,10 +36,6 @@ ___
 
 
 
-## JIT CHANNEL (JUST-IN-TIME)
-
-
-
 
 ## LABELBASE
 
