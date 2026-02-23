@@ -1,0 +1,1 @@
+Proposition d'un système de nœuds « stratifiés » où différents niveaux de nœuds stockeraient différentes portions de la blockchain selon leurs capacités. Le BIP-0033 visait à réduire les exigences de stockage pour les participants au réseau tout en maintenant la disponibilité de l'ensemble des données. Cette approche n'a jamais été implémentée sur Bitcoin.
