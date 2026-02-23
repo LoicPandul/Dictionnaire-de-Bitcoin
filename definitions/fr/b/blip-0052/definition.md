@@ -1,0 +1,1 @@
+bLIP qui définit LSPS2, un protocole de négociation de canaux *just-in-time* (JIT) sur le Lightning Network. Il permet à un client sans canal existant de recevoir un paiement entrant : le LSP ouvre un canal à la volée lorsqu'un paiement arrive, et déduit les frais d'ouverture directement du montant transféré.

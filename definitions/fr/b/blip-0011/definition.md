@@ -1,0 +1,3 @@
+bLIP qui définit *NameDesc*, un format standardisé pour structurer les descriptions des factures BOLT-11 en y intégrant le nom du destinataire. La convention consiste à préfixer la description par le nom du commerçant ou du destinataire, suivi d'un deux-points et de deux espaces (`: `), puis de la description du paiement.
+
+Les portefeuilles compatibles peuvent ainsi extraire et afficher séparément le nom du destinataire. Les portefeuilles non compatibles affichent simplement le texte complet comme une description classique, ce qui garantit une rétrocompatibilité totale. Cette convention résout le problème des historiques de transactions où seul un identifiant technique ou un nom de produit apparaît, sans identification claire du commerçant.

@@ -1,0 +1,1 @@
+bLIP qui introduit un nouveau champ étiqueté `b` dans les factures BOLT-11 pour transmettre des chemins de paiement masqués (*blinded paths*). Cette extension permet d'utiliser le *route blinding* (initialement conçu pour BOLT-12) directement dans les factures BOLT-11 existantes, améliorant la confidentialité du destinataire avant le déploiement complet des offres BOLT-12.
