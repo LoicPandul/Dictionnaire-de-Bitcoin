@@ -1,0 +1,9 @@
+uuid: "a83623aa-d839-4a46-92aa-cdb6cc6ed4db"
+title: "TRANSACTION DE FINANCEMENT"
+slug: "transaction-de-financement"
+category: "LIGHTNING NETWORK"
+cross_references:
+  - "c06ceef4-51bf-4777-98c6-180fc4f17790"
+  - "7629a275-5c4a-4e3e-a6e2-32eb8453dada"
+english_term: "FUNDING TRANSACTION"
+version: "1"
