@@ -1,0 +1,1 @@
+Logiciel daemon qui constitue l'implémentation de référence du protocole Taproot Assets, développé par Lightning Labs. `tapd` permet de créer (*mint*), envoyer et recevoir des actifs numériques encodés dans des sorties Taproot sur la blockchain Bitcoin.
