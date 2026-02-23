@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 
 ---
 
@@ -178,6 +178,7 @@ Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 | [BIT - UNITÉ](definitions/fr/b/bit-unite/definition.md) | `82f12ac3-08a9-4dcf-8c95-9bdd8350f7f8` |
 | [BITCOIN - B MAJUSCULE](definitions/fr/b/bitcoin-b-majuscule/definition.md) | `58ea6784-71a5-4c24-a2b1-0ace80de605b` |
 | [BITCOIN - B MINUSCULE](definitions/fr/b/bitcoin-b-minuscule/definition.md) | `fabbc014-067f-4de9-945a-8ef079134902` |
+| [BITCOIN BEACH](definitions/fr/b/bitcoin-beach/definition.md) | `ceff9344-d739-4eae-ae39-9a47b0a0b35e` |
 | [BITCOIN CLASSIC](definitions/fr/b/bitcoin-classic/definition.md) | `535f78ca-4343-4d55-81f8-e4a0f19a36a1` |
 | [BITCOIN-CLI](definitions/fr/b/bitcoin-cli/definition.md) | `653e2413-a720-41ad-ae91-c82f36d8891f` |
 | [BITCOIN.CONF](definitions/fr/b/bitcoin-conf/definition.md) | `39de4acc-545e-4898-bc99-6caac5ba1912` |
@@ -196,6 +197,7 @@ Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 | [BITCOIND.PID](definitions/fr/b/bitcoind-pid/definition.md) | `4e78aadf-b3e1-45b7-8ea6-7028e10ff548` |
 | [BITCOINTALK](definitions/fr/b/bitcointalk/definition.md) | `4eb80ccd-11e0-45cc-ad72-32065d22601a` |
 | [BITVM](definitions/fr/b/bitvm/definition.md) | `c4b669f1-0d6c-4206-9537-82282ca1ca24` |
+| [BLINDED PATHS](definitions/fr/b/blinded-paths/definition.md) | `b6168446-91ea-4bb3-b01b-18bc52285bfd` |
 | [BLIP](definitions/fr/b/blip/definition.md) | `e53107d9-4cd8-4d1b-aa7b-12271f611ee3` |
 | [BLIP-0001](definitions/fr/b/blip-0001/definition.md) | `cf636265-0f74-495f-b7b6-e59afdec3855` |
 | [BLIP-0002](definitions/fr/b/blip-0002/definition.md) | `6b083227-dc89-49b0-b168-79b3bdc79fa2` |
@@ -280,6 +282,7 @@ Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 | [CHANNEL BREACH](definitions/fr/c/channel-breach/definition.md) | `a157dfd3-86e2-4c6d-aeee-7f04a9c95758` |
 | [CHANNEL.DB](definitions/fr/c/channel-db/definition.md) | `71c6ca7d-a47c-4cef-bd3d-673392c58006` |
 | [CHANNEL FACTORIES](definitions/fr/c/channel-factories/definition.md) | `eaf11d67-f710-4231-b343-90c548d8db27` |
+| [CHANNEL JAMMING](definitions/fr/c/channel-jamming/definition.md) | `ae093994-512c-4bf4-8aa9-1b6e11dc6950` |
 | [CHANNEL LEASE](definitions/fr/c/channel-lease/definition.md) | `c92c41f2-7db3-43e3-aa2c-61a440716a3e` |
 | [CHANNEL POINT](definitions/fr/c/channel-point/definition.md) | `7629a275-5c4a-4e3e-a6e2-32eb8453dada` |
 | [CHANTOOLS](definitions/fr/c/chantools/definition.md) | `e6a04aad-5739-4b4b-85b0-d34036dcb728` |
@@ -553,6 +556,8 @@ Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 |-------|------|
 | [JAM](definitions/fr/j/jam/definition.md) | `5d356cd7-ea19-4208-bf3c-4bfc85b8de59` |
 | [JBOK](definitions/fr/j/jbok/definition.md) | `e5be8b65-32ae-4681-993b-cef3a31085c3` |
+| [JIT CHANNEL](definitions/fr/j/jit-channel/definition.md) | `357183c2-e0af-4fed-bc3b-957df0849302` |
+| [JIT ROUTING](definitions/fr/j/jit-routing/definition.md) | `7de0cee4-55d8-460c-98dc-d3fde5623e45` |
 | [JOININBOX](definitions/fr/j/joininbox/definition.md) | `2605aeca-de5e-4813-a8b5-dd32a32a62ac` |
 | [JOINMARKET](definitions/fr/j/joinmarket/definition.md) | `1560fed2-3853-4b56-b17e-542208fa5c2a` |
 | [JOINPOOL](definitions/fr/j/joinpool/definition.md) | `7ac21226-1cd2-402a-b7e9-2136bb80d1f5` |
@@ -895,6 +900,7 @@ Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 | [REGTEST](definitions/fr/r/regtest/definition.md) | `028ffb5d-98f6-46c0-9d3e-317e7f06e03a` |
 | [RELAIS](definitions/fr/r/relais/definition.md) | `39b93449-45b4-4aea-818e-19de91e53578` |
 | [RELAIS NOSTR](definitions/fr/r/relais-nostr/definition.md) | `a9574625-3857-4ab8-b865-d10cb56ffab1` |
+| [RENDEZ-VOUS ROUTING](definitions/fr/r/rendez-vous-routing/definition.md) | `63f88ad6-90d1-4d06-a5f0-5a18f656b394` |
 | [REPLAY ATTACK](definitions/fr/r/replay-attack/definition.md) | `7224352d-189a-481e-98e6-6647b38010b7` |
 | [RÉSEAU BITCOIN](definitions/fr/r/reseau-bitcoin/definition.md) | `0c245a43-10da-465f-afd3-4389c5b9a305` |
 | [RÉSERVES FRACTIONNAIRES](definitions/fr/r/reserves-fractionnaires/definition.md) | `426fb65c-f80b-4552-93a7-32367615ba12` |
@@ -1040,6 +1046,7 @@ Ce fichier contient la liste de toutes les 996 définitions du dictionnaire.
 | [TOR](definitions/fr/t/tor-the-onion-router/definition.md) | `18a8053d-8091-4185-992e-2eb9d62ac05c` |
 | [TPRV](definitions/fr/t/tprv/definition.md) | `e0bf8fd4-9367-41cc-ad61-df6c901721d2` |
 | [TPUB](definitions/fr/t/tpub/definition.md) | `e59039ea-f705-4b75-9abd-984987c1818e` |
+| [TRAMPOLINE ROUTING](definitions/fr/t/trampoline-routing/definition.md) | `e9505ac2-9ca6-44c1-b95f-4631c2b0e465` |
 | [TRANSACTION COLLABORATIVE](definitions/fr/t/transaction-collaborative/definition.md) | `fb886440-f094-4b84-9bc4-54f08f9724e4` |
 | [TRANSACTION D'ENGAGEMENT](definitions/fr/t/transaction-d-engagement/definition.md) | `c06ceef4-51bf-4777-98c6-180fc4f17790` |
 | [TRANSACTION DE FINANCEMENT](definitions/fr/t/transaction-de-financement/definition.md) | `a83623aa-d839-4a46-92aa-cdb6cc6ed4db` |
