@@ -1,0 +1,1 @@
+Proposition d'un mécanisme permettant aux nœuds Bitcoin d'annoncer et de fournir des services personnalisés via le protocole pair-à-pair. Le BIP-0036 visait à étendre les capacités du réseau en permettant à des nœuds spécialisés d'offrir des fonctionnalités supplémentaires au-delà du relais standard de blocs et de transactions. Cette proposition n'a jamais été adoptée.
