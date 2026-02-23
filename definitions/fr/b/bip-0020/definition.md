@@ -1,0 +1,1 @@
+Première version du schéma d'URI `bitcoin:` pour faciliter les paiements via des liens cliquables. Le BIP-0020 utilisait un format non conforme aux standards URI (RFC 3986), ce qui posait des problèmes d'interopérabilité. Il a été remplacé par le BIP-0021 qui a corrigé ces défauts et étendu la spécification avec des paramètres supplémentaires.
