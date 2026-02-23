@@ -1,0 +1,5 @@
+Initiative communautaire lancée dans le village d'El Zonte, sur la côte pacifique du Salvador, qui a transformé cette petite localité en la première économie circulaire fonctionnant sur Bitcoin. Le projet est né en 2019 grâce au don d'un bitcoiner resté anonyme, avec la volonté de prouver que Bitcoin pouvait améliorer concrètement le quotidien de populations exclues du système bancaire traditionnel.
+
+Bitcoin Beach a permis aux habitants de payer leurs factures (eau, électricité, téléphone), leurs courses alimentaires ou même le coiffeur directement en bitcoins via le Lightning Network. Le portefeuille développé pour le projet, initialement appelé « Bitcoin Beach Wallet », a ensuite été renommé « Blink ».
+
+L'expérience d'El Zonte a joué un rôle important dans la décision du Salvador d'adopter Bitcoin comme monnaie à cours légal en 2021, faisant du pays le premier État à franchir ce pas. Le modèle a depuis inspiré des initiatives similaires dans d'autres pays, notamment Bitcoin Jungle au Costa Rica.

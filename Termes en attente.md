@@ -116,10 +116,6 @@ ___
 
 
 
-## RGB
-
-ATTENTION : TERME DÉJÀ PRÉSENT !
-
 
 ## ROUTING ATTACKS
 
