@@ -1,0 +1,3 @@
+Spécification qui définit le protocole de routage en oignon du Lightning Network. Elle décrit la construction et le traitement de paquets chiffrés de 1 366 octets contenant une clé éphémère, des instructions de routage imbriquées et un HMAC d'intégrité. Chaque nœud intermédiaire ne voit que le saut suivant, sans connaître l'expéditeur ni le destinataire final.
+
+Le BOLT-04 couvre aussi le *route blinding*, qui masque l'identité des nœuds en aval pour protéger la vie privée du destinataire, et le mécanisme de retour d'erreurs chiffrées qui permet à l'expéditeur d'identifier quel nœud a échoué.

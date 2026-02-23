@@ -1,0 +1,1 @@
+Spécification qui définit la couche de transport chiffrée et authentifiée du Lightning Network. Elle repose sur le protocole Noise, où l'initiateur doit connaître la clé publique du répondeur avant la connexion. Le *handshake* se déroule en trois actes, au terme desquels les deux pairs partagent des clés de session.

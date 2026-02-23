@@ -1,0 +1,3 @@
+Spécification qui définit un protocole de négociation de paiement Lightning plus flexible que BOLT-11. Elle introduit trois concepts : les *offers* (modèles de paiement réutilisables publiables via QR codes), les *invoice requests* (demandes d'invoice envoyées via le réseau Lightning en réponse à une offre), et les invoices elles-mêmes.
+
+Contrairement aux invoices BOLT-11 à usage unique, les *offers* BOLT-12 peuvent être réutilisées indéfiniment et restent sans état côté commerçant. Le format remplace l'encodage Bech32 par un encodage TLV plus extensible, supporte la divulgation sélective de champs, permet les paiements inter-devises et améliore la confidentialité via les *blinded paths* qui masquent l'identité du destinataire.

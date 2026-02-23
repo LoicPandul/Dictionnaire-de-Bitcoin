@@ -1,0 +1,1 @@
+Document d'introduction et d'index des spécifications BOLT (*Basis of Lightning Technology*). Il présente une vue d'ensemble du fonctionnement du Lightning Network, ainsi que chaque BOLT.
