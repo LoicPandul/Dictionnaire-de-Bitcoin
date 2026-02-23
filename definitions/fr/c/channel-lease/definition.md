@@ -1,0 +1,1 @@
+Contrat d'ouverture de canal Lightning pour une durée déterminée, négocié via la plateforme Lightning Pool. Un acheteur de liquidité (*taker*) paie une prime à un vendeur (*maker*) pour que celui-ci ouvre un canal d'une capacité et d'une durée définies, exprimée en nombre de blocs. Le vendeur s'engage à maintenir le canal ouvert pendant toute la durée du bail.
