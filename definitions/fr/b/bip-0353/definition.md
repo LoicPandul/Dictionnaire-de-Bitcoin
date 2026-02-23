@@ -1,0 +1,5 @@
+Proposition d'amélioration de Bitcoin qui définit un système de résolution d'adresses de paiement lisibles par un humain, basé sur le DNS. Le BIP-0353 permet d'associer un identifiant au format `utilisateur@domaine.com` à des instructions de paiement Bitcoin, en stockant ces informations dans des enregistrements DNS de type TXT, sécurisés par DNSSEC.
+
+Concrètement, lorsqu'un portefeuille reçoit une adresse comme `satoshi@example.com`, il effectue une requête DNS vers `satoshi.user._bitcoin-payment.example.com` pour récupérer un URI de paiement au format BIP-0021. Cet URI peut contenir une adresse on-chain, un offer BOLT-12 ou des instructions pour les silent payments, ce qui rend le mécanisme compatible avec différents protocoles de paiement.
+
+L'avantage principal est l'expérience utilisateur : les adresses deviennent mémorisables et réutilisables, sans sacrifier la confidentialité puisque les protocoles sous-jacents (BOLT12, silent payments...) génèrent des adresses/invoices uniques pour chaque paiement. Le BIP-0353 a été proposé par Matt Corallo et Bastien Teinturier en 2024.
