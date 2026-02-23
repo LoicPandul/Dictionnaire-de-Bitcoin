@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 
 ---
 
@@ -165,6 +165,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [BIP-0326](definitions/fr/b/bip-0326/definition.md) | `9ba3165a-b72c-41be-96b2-221a576821d2` |
 | [BIP-0330](definitions/fr/b/bip-0330/definition.md) | `2f0c7362-0127-4575-9b0a-b43f435905b5` |
 | [BIP-0352](definitions/fr/b/bip-0352/definition.md) | `57d578b1-202e-4f63-96e4-ba3819713b33` |
+| [BIP-0353](definitions/fr/b/bip-0353/definition.md) | `88f94710-2b5f-4f14-ad8a-7fd43565366a` |
 | [BIP-0380](definitions/fr/b/bip-0380/definition.md) | `f951d721-85ca-4196-8bb8-75cc81306bb6` |
 | [BIP-0381](definitions/fr/b/bip-0381/definition.md) | `4b7235b1-f0dc-441d-ad80-bc41f1ebff5f` |
 | [BIP-0382](definitions/fr/b/bip-0382/definition.md) | `6e77d63d-5baf-4068-98f8-717283977dc3` |
@@ -285,6 +286,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [CHANNEL JAMMING](definitions/fr/c/channel-jamming/definition.md) | `ae093994-512c-4bf4-8aa9-1b6e11dc6950` |
 | [CHANNEL LEASE](definitions/fr/c/channel-lease/definition.md) | `c92c41f2-7db3-43e3-aa2c-61a440716a3e` |
 | [CHANNEL POINT](definitions/fr/c/channel-point/definition.md) | `7629a275-5c4a-4e3e-a6e2-32eb8453dada` |
+| [CHANNEL RESERVE](definitions/fr/c/channel-reserve/definition.md) | `9002599e-b839-48e6-9520-a06828c03420` |
 | [CHANTOOLS](definitions/fr/c/chantools/definition.md) | `e6a04aad-5739-4b4b-85b0-d34036dcb728` |
 | [CHARGE UTILE](definitions/fr/c/charge-utile/definition.md) | `ef70aa4a-7364-4b70-8d04-f628c67b1404` |
 | [CHAUMIAN COINJOIN](definitions/fr/c/chaumian-coinjoin/definition.md) | `9895ea98-7345-45d8-b96a-ac61ebd334e9` |
@@ -584,6 +586,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [LEVELDB](definitions/fr/l/leveldb/definition.md) | `4daf8f9e-acb0-44a7-91f7-1304b03f65c8` |
 | [LIBBITCOIN](definitions/fr/l/libbitcoin/definition.md) | `9283480e-e51d-4a3d-afb8-60f1179bd9a8` |
 | [LIBSECP256K1](definitions/fr/l/libsecp256k1/definition.md) | `46d9de8a-69c5-4b21-99d6-e88ae46e3b02` |
+| [LIBWALLY-CORE](definitions/fr/l/libwally-core/definition.md) | `17015788-45d2-49ef-abca-ff3516162aea` |
 | [LIGHTNING LABS](definitions/fr/l/lightning-labs/definition.md) | `7f0d503e-7a9e-4041-b270-825c014768cc` |
 | [LIGHTNING NETWORK](definitions/fr/l/lightning-network/definition.md) | `ba1ad375-829d-436a-bd13-570d31abe544` |
 | [LIGHTNING SERVICE PROVIDER](definitions/fr/l/lightning-service-provider/definition.md) | `9b71f725-e52e-42fe-a115-98bf0e4f9e66` |
@@ -703,6 +706,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [ON-CHAIN](definitions/fr/o/on-chain/definition.md) | `545f74d5-7598-45a0-92db-364c50fd576a` |
 | [ON-GRID](definitions/fr/o/on-grid/definition.md) | `91889163-76d1-4635-a75e-dd12c7805961` |
 | [ONION ADDRESS](definitions/fr/o/onion-address/definition.md) | `a8036f6b-9bc1-4715-906e-46b7363d041d` |
+| [ONION MESSAGE](definitions/fr/o/onion-message/definition.md) | `bddd07b1-ae8d-4a3c-af27-d325bec2ca14` |
 | [ONION_PRIVATE_KEY](definitions/fr/o/onion-private-key/definition.md) | `b0e0c7c8-0e77-4434-b376-b40fcde70959` |
 | [ONION SERVICE](definitions/fr/o/onion-service/definition.md) | `54ffa6e6-72b7-4b49-b7f4-33cce80986f2` |
 | [ONION_V3_PRIVATE_KEY](definitions/fr/o/onion-v3-private-key/definition.md) | `ed1cda46-11ad-481b-9b9d-81673eca37fc` |
@@ -921,6 +925,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [RPC - REMOTE PROCEDURE CALL](definitions/fr/r/rpc-remote-procedure-call/definition.md) | `fd644fe9-2c34-46a0-b40c-f9d3f2920661` |
 | [RPOW](definitions/fr/r/rpow/definition.md) | `2eb81a61-aa97-446a-a346-ca24d8f9ed94` |
 | [RSMPPS](definitions/fr/r/rsmpps/definition.md) | `486310e9-83da-48ae-8978-a516346c432b` |
+| [RTL - RIDE THE LIGHTNING](definitions/fr/r/rtl-ride-the-lightning/definition.md) | `72421739-2199-4e7b-b759-ed5816494a07` |
 | [RUNES](definitions/fr/r/runes/definition.md) | `2c101ec0-f616-46c2-97e9-fad4e433d857` |
 | [RUST-LIGHTNING](definitions/fr/r/rust-lightning/definition.md) | `4838d9ab-212e-4945-a46b-1b158bfa42f0` |
 
@@ -934,6 +939,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [SCB - STATIC CHANNEL BACKUP](definitions/fr/s/scb-static-channel-backup/definition.md) | `10deae59-e31e-4347-b709-cbe6e51136f1` |
 | [SCHEMA](definitions/fr/s/schema/definition.md) | `d6efa179-e094-4127-940e-50647d887468` |
 | [SCHNORR](definitions/fr/s/schnorr-protocole/definition.md) | `47b5ee48-88cf-4653-b9de-17e0afcdd408` |
+| [SCID - SHORT CHANNEL ID](definitions/fr/s/scid-short-channel-id/definition.md) | `d535f3a7-5368-47f3-aca2-500ce9decd2b` |
 | [SCORE BASED METHOD](definitions/fr/s/score-score-based-method/definition.md) | `e0607cdf-ac73-4a6b-afb9-8f76d5f9202f` |
 | [SCRIPT](definitions/fr/s/script/definition.md) | `ea7c727d-15eb-4bb2-8779-0362f1fa566c` |
 | [SCRIPTLESS SCRIPTS](definitions/fr/s/scriptless-scripts/definition.md) | `e19c72c9-f653-469c-b136-e6b7c7471864` |
@@ -1039,6 +1045,8 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [TÉMOIN DE TRANSACTION](definitions/fr/t/temoin-de-transaction/definition.md) | `8a746586-6b6c-4e67-9721-44abfae97ddd` |
 | [TERMINAL CONSIGNEMENT](definitions/fr/t/terminal-consignement/definition.md) | `b30dfb76-5daa-464f-9db9-7e436e45f4b4` |
 | [TESTNET](definitions/fr/t/testnet/definition.md) | `3d4aaf2c-33d4-40d6-9baa-1a097a72c83c` |
+| [TESTNET RESET](definitions/fr/t/testnet-reset/definition.md) | `10234a66-11f7-40c6-b13a-8c68b10debd9` |
+| [TESTNET4](definitions/fr/t/testnet4/definition.md) | `200e6da3-a68c-4b58-a926-e0af0520e209` |
 | [THE DAO](definitions/fr/t/the-dao/definition.md) | `42e3bd23-0ba3-4206-9265-c5f73abd9841` |
 | [TIDES](definitions/fr/t/tides/definition.md) | `923ba2d7-6da1-452c-aaa2-bd4fd7ec0cae` |
 | [TIMELOCK](definitions/fr/t/timelock/definition.md) | `b9f5ce0a-baa4-4e12-8f4c-08c77ce82099` |
@@ -1050,6 +1058,7 @@ Ce fichier contient la liste de toutes les 1003 définitions du dictionnaire.
 | [TRANSACTION COLLABORATIVE](definitions/fr/t/transaction-collaborative/definition.md) | `fb886440-f094-4b84-9bc4-54f08f9724e4` |
 | [TRANSACTION D'ENGAGEMENT](definitions/fr/t/transaction-d-engagement/definition.md) | `c06ceef4-51bf-4777-98c6-180fc4f17790` |
 | [TRANSACTION DE FINANCEMENT](definitions/fr/t/transaction-de-financement/definition.md) | `a83623aa-d839-4a46-92aa-cdb6cc6ed4db` |
+| [TRANSACTION DE PÉNALITÉ](definitions/fr/t/transaction-de-penalite/definition.md) | `9bb7d1e4-4a71-43a0-bee9-b218229b62f6` |
 | [TRANSACTION NON CONFIRMÉE](definitions/fr/t/transaction-non-confirmee/definition.md) | `626b8bf7-467a-496d-ba81-63cdc8d5f058` |
 | [TRANSACTION STANDARD](definitions/fr/t/transaction-standard/definition.md) | `7e28ef78-21c7-4b7e-894e-ba67271d00dd` |
 | [TRANSITION BUNDLE](definitions/fr/t/transition-bundle/definition.md) | `5b688ef0-b5ba-4910-a954-8eda9e3d282d` |
