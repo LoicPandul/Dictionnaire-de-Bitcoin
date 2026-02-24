@@ -1,0 +1,1 @@
+Extension du protocole de paiement BIP-0070 utilisant l'en-tête HTTP `Accept` pour la négociation du format de réponse entre le client et le serveur marchand. Le BIP-0073 permettait au portefeuille de spécifier les types de contenu acceptés. Déployé conjointement avec le BIP-0070, il est devenu obsolète avec l'abandon général du protocole de paiement.
