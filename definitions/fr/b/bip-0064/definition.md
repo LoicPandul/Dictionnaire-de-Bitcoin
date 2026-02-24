@@ -1,0 +1,1 @@
+Proposition d'un message P2P `getutxo` permettant d'interroger un nœud sur l'état d'un UTXO spécifique. Le BIP-0064 a été implémenté temporairement par Mike Hearn dans Bitcoin XT, puis retiré en raison de problèmes de sécurité, car il facilitait les attaques par déni de service et permettait de fournir de fausses informations aux clients légers.
