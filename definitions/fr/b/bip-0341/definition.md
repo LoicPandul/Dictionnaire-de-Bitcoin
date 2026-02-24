@@ -1,0 +1,3 @@
+Définit les règles de dépense de SegWit version 1, communément appelé « Taproot ». Ce BIP introduit deux chemins de dépense distincts : le *key-path*, qui permet de dépenser avec une simple signature de Schnorr, et le *script-path*, qui permet de révéler et d'exécuter un script depuis un arbre de Merkle (MAST). Les sorties Taproot utilisent des clés publiques « tweakées » qui combinent une clé interne avec la racine de l'arbre MAST.
+
+L'avantage de cette structure est que toutes les sorties Taproot ont une apparence identique on-chain (une simple clé publique de 32 octets), ce qui améliore considérablement la confidentialité des utilisateurs. Le BIP-0341 a été activé au bloc 709 632 en novembre 2021 via la méthode Speedy Trial.
