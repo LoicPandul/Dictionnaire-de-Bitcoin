@@ -1,0 +1,1 @@
+Proposition d'un mécanisme de protection contre le rejeu de transactions en cas de hard fork, en engageant chaque transaction sur un blockhash spécifique. Le BIP-0115 ajoutait un opcode permettant de vérifier qu'un bloc particulier existe dans la chaîne active, rendant la transaction invalide sur une chaîne alternative issue d'un fork. Cette proposition n'a jamais été déployée.
