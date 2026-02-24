@@ -1,0 +1,1 @@
+Proposition des HTLCC (Hashed Time-Locked Collateral Contracts), une extension des HTLC (Hashed Time-Locked Contracts) ajoutant un mécanisme de collatéral. Le BIP-0197 est conçu pour les échanges atomiques nécessitant un dépôt de garantie. Les participants doivent verrouiller un collatéral en plus du montant échangé, qui est confisqué en cas de comportement malhonnête.
