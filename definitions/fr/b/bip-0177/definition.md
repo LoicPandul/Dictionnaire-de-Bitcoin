@@ -1,0 +1,3 @@
+Proposition de redéfinir l'unité de base de Bitcoin pour que « 1 bitcoin » corresponde à l'actuel satoshi, éliminant totalement les décimales. Sous ce nouveau système, la valeur actuelle de 1 BTC deviendrait 100 000 000 de la nouvelle unité de base. Le BIP-0177 vise à simplifier l'expérience utilisateur en supprimant la confusion liée aux fractions décimales, particulièrement problématique pour les nouveaux utilisateurs.
+
+Cette modification a été adoptée par certaines applications, notamment Bitkit, le portefeuille développé par Synonym dont le CEO, John Carvalho, est également l'auteur du BIP-0177. Dans les faits, cependant, la grande majorité des logiciels de portefeuille conservent pour l'instant le standard 1 bitcoin = 100 000 000 satoshis.
