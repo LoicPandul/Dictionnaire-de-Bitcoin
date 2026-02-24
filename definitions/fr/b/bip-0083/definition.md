@@ -1,0 +1,1 @@
+Proposition d'une extension des arbres de clés hiérarchiques déterministes (BIP-0032) permettant la création dynamique de nouveaux niveaux de dérivation selon les besoins de l'application. Le BIP-0083 a été fermé, les chemins de dérivation standards définis par les BIP-0044, BIP-0049 et BIP-0084 ayant été jugés suffisants pour la majorité des cas d'utilisation.
