@@ -1,0 +1,1 @@
+Document informatif discutant des motivations et des méthodes de déploiement des changements de règles de consensus sur Bitcoin. Le BIP-0099 analyse les risques associés aux hard forks et aux soft forks, et propose un cadre de réflexion pour évaluer les propositions de modification du protocole. Ce document n'introduit aucune modification technique et a été fermé.
