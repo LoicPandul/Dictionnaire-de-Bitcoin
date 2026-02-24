@@ -1,0 +1,1 @@
+Proposition d'un format de compression pour les transactions Bitcoin, réduisant significativement leur taille en omettant les données redondantes ou déductibles du contexte.
