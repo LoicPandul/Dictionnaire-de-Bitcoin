@@ -1,0 +1,1 @@
+Proposition d'un format d'adresse pour SegWit basé sur l'encodage Base58Check existant. Le BIP-0142 a été supplanté par Bech32 (BIP-0173) qui offre une meilleure détection d'erreurs, une insensibilité à la casse et une compatibilité optimisée avec les QR codes. Ce format d'adresse n'a donc jamais été déployé sur le réseau Bitcoin.
