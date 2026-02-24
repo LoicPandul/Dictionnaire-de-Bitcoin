@@ -1,0 +1,1 @@
+Proposition d'un mécanisme de limitation de débit via des défis cryptographiques imposés par les pairs sur le réseau P2P de Bitcoin. Le BIP-0154 visait à atténuer les attaques par déni de service en exigeant des nœuds demandeurs qu'ils résolvent un petit défi de preuve de travail avant d'obtenir une réponse. Cette approche n'a jamais été déployée.
