@@ -1,0 +1,1 @@
+Proposition de templates de scripts hiérarchiques déterministes étendant le BIP-0032. Le BIP-0124 visait à standardiser la manière dont les portefeuilles HD génèrent et gèrent différents types de scripts de sortie. Supplanté par les output script descriptors, qui offrent une approche plus flexible et expressive pour décrire les scripts de sortie d'un portefeuille.
