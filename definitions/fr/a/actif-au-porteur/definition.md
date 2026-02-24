@@ -1,0 +1,5 @@
+Bien ou instrument financier dont la propriété est déterminée uniquement par la possession physique, sans nécessiter l'intervention d'un registre centralisé, d'un intermédiaire ou d'une inscription nominative. Celui qui détient l'actif en est le propriétaire légitime. Les billets de banque, les pièces d'or et les obligations au porteur sont des exemples d'actifs au porteur.
+
+Ce type d'actif offre l'avantage de ne dépendre d'aucun tiers pour valider ou autoriser un transfert de propriété. Il confère une souveraineté directe à son détenteur, mais implique aussi une responsabilité : la perte ou le vol entraîne la perte définitive de l'actif.
+
+Le bitcoin en self-custody est un actif numérique au porteur. La possession des clés privées qui sécurisent des bitcoins confère un contrôle exclusif sur ces fonds, sans qu'aucune banque, institution ou registre centralisé n'intervienne.
