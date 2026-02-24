@@ -1,0 +1,1 @@
+Proposition d'un standard de « preuve de paiement » permettant de prouver qu'une transaction Bitcoin a bien été envoyée, en signant les inputs de la transaction originale avec les mêmes clés. Le BIP-0120 visait à fournir une preuve cryptographique vérifiable que le payeur contrôlait les fonds utilisés dans une transaction spécifique. Il n'a jamais été largement adopté.
