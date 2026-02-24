@@ -1,0 +1,1 @@
+Proposition de création d'un comité chargé d'accepter ou de rejeter les BIP selon un processus de vote structuré avec des membres désignés. Le BIP-0132 a été fermement rejeté par la communauté Bitcoin, car il était jugé incompatible avec la gouvernance décentralisée du projet. Ce BIP a été fermé.
