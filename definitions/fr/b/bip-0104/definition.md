@@ -1,0 +1,1 @@
+Proposition surnommée « Block75 » qui prévoyait un ajustement automatique de la taille maximale des blocs visant un taux de remplissage de 75 %. Le mécanisme était similaire au retargeting de la difficulté : si les blocs étaient trop pleins, la limite augmentait ; s'ils étaient trop vides, elle diminuait. Ce BIP-0104, proposé durant la Blocksize War, n'a jamais été adopté.
