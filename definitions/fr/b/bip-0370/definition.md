@@ -1,0 +1,1 @@
+Définit la seconde version du format PSBT (BIP-0174). Contrairement à la version 0, où la transaction non signée était figée dès la création, le PSBT v2 permet la modification interactive de la transaction avant la signature : les participants peuvent ajouter ou supprimer des inputs et des outputs de manière collaborative.
