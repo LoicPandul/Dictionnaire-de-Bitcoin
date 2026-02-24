@@ -1,0 +1,1 @@
+Proposition généralisant le mécanisme de signalement par *version bits* défini dans le BIP-0009, avec davantage de flexibilité dans les paramètres d'activation des soft forks. Le BIP-0135 permettait de configurer les seuils d'activation, les périodes de signalement et les délais d'expiration de manière indépendante pour chaque proposition. Il n'a jamais été déployé sur Bitcoin.
