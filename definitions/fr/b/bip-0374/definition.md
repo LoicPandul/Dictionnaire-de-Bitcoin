@@ -1,0 +1,1 @@
+Définit un protocole de preuve d'égalité de logarithmes discrets (*DLEQ proof*) pour la courbe secp256k1. Ce mécanisme cryptographique permettrait de prouver que deux points sur la courbe elliptique partagent le même scalaire secret, sans révéler la valeur de ce scalaire.
