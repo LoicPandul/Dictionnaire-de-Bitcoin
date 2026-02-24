@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1127 définitions du dictionnaire.
 
 ---
 
@@ -92,6 +92,7 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [BIP](definitions/fr/b/bip/definition.md) | `ac5be5f7-85b3-4dba-b006-14b9bf55a40c` |
 | [BIP-0001](definitions/fr/b/bip-0001/definition.md) | `1fcc0d0b-d8b1-4f13-a3e3-f67383f704d4` |
 | [BIP-0002](definitions/fr/b/bip-0002/definition.md) | `bf33fc73-d6fc-4b8f-b213-2bd18481bca7` |
+| [BIP-0003](definitions/fr/b/bip-0003/definition.md) | `ff62c78d-122a-43d2-a3b4-0fc9c720f75d` |
 | [BIP-0008](definitions/fr/b/bip-0008/definition.md) | `58295725-9bd8-4bb3-84ff-db983061c164` |
 | [BIP-0009](definitions/fr/b/bip-0009/definition.md) | `78a07d8e-988e-4f2b-9c0b-75ecd917ce9a` |
 | [BIP-0010](definitions/fr/b/bip-0010/definition.md) | `79338e6b-450a-4b13-a2f2-35fbae0e6d65` |
@@ -99,73 +100,175 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [BIP-0012](definitions/fr/b/bip-0012/definition.md) | `cc78de7f-4a95-405e-9f8e-09a352ce3ac7` |
 | [BIP-0013](definitions/fr/b/bip-0013/definition.md) | `c247829f-ddfa-40a9-bc50-88a5701d4628` |
 | [BIP-0014](definitions/fr/b/bip-0014/definition.md) | `0dd19b44-03c3-4e8c-a5a6-1d1bb6e37154` |
+| [BIP-0015](definitions/fr/b/bip-0015/definition.md) | `ad44c071-92b1-475f-ba58-9eaab6a23263` |
 | [BIP-0016](definitions/fr/b/bip-0016/definition.md) | `82155f64-a605-4dd8-856b-0a7bc3dcef3c` |
 | [BIP-0017](definitions/fr/b/bip-0017/definition.md) | `0c8de08d-082a-452a-85e7-0c0a36aeb876` |
+| [BIP-0018](definitions/fr/b/bip-0018/definition.md) | `fa141894-01af-4c5e-a973-280389c80816` |
+| [BIP-0019](definitions/fr/b/bip-0019/definition.md) | `8d3a239d-77dd-4ceb-bc98-09590984cb2e` |
+| [BIP-0020](definitions/fr/b/bip-0020/definition.md) | `9303f5b7-85b7-43f6-8fd0-7a1517db7dea` |
 | [BIP-0021](definitions/fr/b/bip-0021/definition.md) | `b2388d11-0acc-41fe-8d54-6ebf172e6511` |
 | [BIP-0022](definitions/fr/b/bip-0022/definition.md) | `1bb981e1-3f5a-4919-a581-dbe6f8d83861` |
 | [BIP-0023](definitions/fr/b/bip-0023/definition.md) | `f5b583c2-19ba-43d0-ac58-8147eb3cdef7` |
 | [BIP-0030](definitions/fr/b/bip-0030/definition.md) | `f4ab9b96-5fb5-47c7-8ff6-5d68da739f7c` |
 | [BIP-0031](definitions/fr/b/bip-0031/definition.md) | `9958fcb9-2554-4663-8d0c-d8927fb4a8a5` |
 | [BIP-0032](definitions/fr/b/bip-0032/definition.md) | `60f0a3c9-56fc-4fc8-bb54-d542d0434b8a` |
+| [BIP-0033](definitions/fr/b/bip-0033/definition.md) | `f6cf0fb8-84ee-40fb-9e13-6ecf18800468` |
 | [BIP-0034](definitions/fr/b/bip-0034/definition.md) | `9a727a0a-46fe-4b42-8e52-21e2712b7d13` |
 | [BIP-0035](definitions/fr/b/bip-0035/definition.md) | `99c58522-4fba-43ee-a67c-3f69cf3b8663` |
+| [BIP-0036](definitions/fr/b/bip-0036/definition.md) | `1a26f583-e25a-4f4c-bb55-929cf590e79d` |
 | [BIP-0037](definitions/fr/b/bip-0037/definition.md) | `6ca39957-45a3-4cd3-93ea-4d95a60180a1` |
 | [BIP-0038](definitions/fr/b/bip-0038/definition.md) | `7e465e8d-14c6-4cf8-845c-2b5b8793b29a` |
 | [BIP-0039](definitions/fr/b/bip-0039/definition.md) | `da3bb49f-15b3-4613-8b1b-6fe164956ab0` |
 | [BIP-0042](definitions/fr/b/bip-0042/definition.md) | `c27548c5-dba5-4019-bd64-a30d53b6ae4a` |
 | [BIP-0043](definitions/fr/b/bip-0043/definition.md) | `da78514e-08b0-4741-b2e3-ce0a541eb77f` |
 | [BIP-0044](definitions/fr/b/bip-0044/definition.md) | `c9bbca4b-b417-4c78-82db-62b9ffff043b` |
+| [BIP-0045](definitions/fr/b/bip-0045/definition.md) | `59b94728-ff35-4079-bb16-7c56441469c3` |
+| [BIP-0046](definitions/fr/b/bip-0046/definition.md) | `df199542-fdcb-4580-9963-312e3a929b77` |
 | [BIP-0047](definitions/fr/b/bip-0047/definition.md) | `8f17833c-f095-4d3a-a900-6a8479209a45` |
+| [BIP-0048](definitions/fr/b/bip-0048/definition.md) | `cbace699-79b8-4a87-a2ec-ee8552ff143e` |
 | [BIP-0049](definitions/fr/b/bip-0049/definition.md) | `872161af-ef17-48cb-949c-05b8a04b5c39` |
 | [BIP-0050](definitions/fr/b/bip-0050/definition.md) | `fa8d9dad-568c-447e-9c1c-c65b615d46c9` |
+| [BIP-0052](definitions/fr/b/bip-0052/definition.md) | `fc559da9-6ece-4c56-89bf-50f511f16307` |
+| [BIP-0053](definitions/fr/b/bip-0053/definition.md) | `06cedacf-d0da-430d-aecc-0c24142f066c` |
+| [BIP-0054](definitions/fr/b/bip-0054/definition.md) | `5debf0c7-5568-46ca-9408-66de11d5d36c` |
+| [BIP-0060](definitions/fr/b/bip-0060/definition.md) | `e2e284f9-6515-474c-bf6b-dacd28d9bb29` |
 | [BIP-0061](definitions/fr/b/bip-0061/definition.md) | `9db2402c-6ea6-4b27-b3a5-6d3dcb61abc0` |
+| [BIP-0062](definitions/fr/b/bip-0062/definition.md) | `7a7a192e-26ed-4d0a-90b6-79343dbd548b` |
+| [BIP-0064](definitions/fr/b/bip-0064/definition.md) | `e390e320-39c9-40a8-a072-612a80f97977` |
 | [BIP-0065](definitions/fr/b/bip-0065/definition.md) | `08d35796-e7b3-48e6-b1b0-7dc4e27e55cd` |
 | [BIP-0066](definitions/fr/b/bip-0066/definition.md) | `0c47404b-98cd-4de3-a0b5-584195fced1b` |
+| [BIP-0067](definitions/fr/b/bip-0067/definition.md) | `80d9e25b-b521-40cc-8884-c340734a8b2e` |
 | [BIP-0068](definitions/fr/b/bip-0068/definition.md) | `f81bb688-9fed-4884-8477-c93b01e58a89` |
+| [BIP-0069](definitions/fr/b/bip-0069/definition.md) | `5fca9d55-5f6d-4cfa-a93c-c19130cb9826` |
 | [BIP-0070](definitions/fr/b/bip-0070/definition.md) | `ea6d0414-12c5-48f3-996b-2897ec6548f2` |
 | [BIP-0071](definitions/fr/b/bip-0071/definition.md) | `5943e2ea-e9c7-40ac-9682-25b86b66e4fb` |
 | [BIP-0072](definitions/fr/b/bip-0072/definition.md) | `f02bd4a9-468b-4b70-9d76-c3f93e87533e` |
+| [BIP-0073](definitions/fr/b/bip-0073/definition.md) | `9b8a7e80-7dde-48a6-9133-66a083db2dca` |
+| [BIP-0074](definitions/fr/b/bip-0074/definition.md) | `8b832db5-72b6-4d19-b8e9-4063b696bfac` |
 | [BIP-0075](definitions/fr/b/bip-0075/definition.md) | `775b2e0e-6ed9-4269-a3f5-e6e0ce8e2dcd` |
+| [BIP-0077](definitions/fr/b/bip-0077/definition.md) | `304dac0e-8052-4ce1-9b9f-0a1dba866108` |
 | [BIP-0078](definitions/fr/b/bip-0078/definition.md) | `a4a63857-0bd2-4651-ac7b-1a455fd3eab0` |
+| [BIP-0079](definitions/fr/b/bip-0079/definition.md) | `f462ab19-ba86-4f80-9395-3370ea2936ee` |
+| [BIP-0080](definitions/fr/b/bip-0080/definition.md) | `c5ade0e3-62ac-43d3-85b4-aecc3a8daac5` |
+| [BIP-0081](definitions/fr/b/bip-0081/definition.md) | `0e4a2e0d-5d28-4334-9f6b-fd017bad2a38` |
+| [BIP-0083](definitions/fr/b/bip-0083/definition.md) | `d89f336d-bd0b-4d11-bb82-1a4676cd2929` |
 | [BIP-0084](definitions/fr/b/bip-0084/definition.md) | `40b9661a-7c4f-4e83-9fca-d49516a6ebe7` |
 | [BIP-0085](definitions/fr/b/bip-0085/definition.md) | `b1e0449c-31dd-4705-a235-d7ff86dceb8b` |
 | [BIP-0086](definitions/fr/b/bip-0086/definition.md) | `68dd1d4c-9771-416c-a1d4-eca870680620` |
+| [BIP-0087](definitions/fr/b/bip-0087/definition.md) | `af9d1791-ec90-4784-b67e-78d37d264660` |
+| [BIP-0088](definitions/fr/b/bip-0088/definition.md) | `0901716f-cacb-4d65-af33-3871e3de8163` |
+| [BIP-0089](definitions/fr/b/bip-0089/definition.md) | `d03605f7-1bac-401b-9a8e-1c4609bda158` |
 | [BIP-0090](definitions/fr/b/bip-0090/definition.md) | `4377d65a-07ec-43d4-b763-227a137f2595` |
 | [BIP-0091](definitions/fr/b/bip-0091/definition.md) | `94bad1f1-3f70-444b-ab12-e783c9a7aafa` |
 | [BIP-0093](definitions/fr/b/bip-0093/definition.md) | `35bc923f-b553-4d79-9192-50d0dbc21d40` |
 | [BIP-0094](definitions/fr/b/bip-0094/definition.md) | `e688421e-dbe7-4ca9-ae03-c191f47f1080` |
+| [BIP-0098](definitions/fr/b/bip-0098/definition.md) | `14a4ab7c-1d8a-4347-bbdb-db2c42d8ed48` |
+| [BIP-0099](definitions/fr/b/bip-0099/definition.md) | `706bc9e7-b0b0-4640-a2dd-dd89a505b5d3` |
+| [BIP-0100](definitions/fr/b/bip-0100/definition.md) | `c896b0a5-6317-4187-8603-56d65d02feea` |
 | [BIP-0101](definitions/fr/b/bip-0101/definition.md) | `3589ab59-e372-4fe8-9c56-e9cf9fea85d4` |
 | [BIP-0102](definitions/fr/b/bip-0102/definition.md) | `65eb2e17-8dac-41f6-acf7-30d01d085760` |
+| [BIP-0103](definitions/fr/b/bip-0103/definition.md) | `92434b37-76da-4265-9f13-0d66c6e7eaa3` |
+| [BIP-0104](definitions/fr/b/bip-0104/definition.md) | `ef719414-3941-4713-913f-316af4858c8d` |
+| [BIP-0105](definitions/fr/b/bip-0105/definition.md) | `97ce2180-f932-40fe-a6a8-d78ac73807b4` |
+| [BIP-0106](definitions/fr/b/bip-0106/definition.md) | `351fb883-61fe-4f36-ac7b-acfa90675be5` |
+| [BIP-0107](definitions/fr/b/bip-0107/definition.md) | `f398863e-35ae-4f91-a3e8-0f2c7ee9c6d3` |
 | [BIP-0109](definitions/fr/b/bip-0109/definition.md) | `9e049074-4a73-4567-8fc3-0678aecdbcf7` |
+| [BIP-0110](definitions/fr/b/bip-0110/definition.md) | `497c03e0-73d8-4597-ad9e-3431416a3f66` |
 | [BIP-0111](definitions/fr/b/bip-0111/definition.md) | `09b8f345-bff4-4744-9a01-dc734f29cb7d` |
 | [BIP-0112](definitions/fr/b/bip-0112/definition.md) | `62bb6e93-35b0-49da-ab17-0b84b073c8b5` |
 | [BIP-0113](definitions/fr/b/bip-0113/definition.md) | `7f52a3da-6184-438d-9a2a-46101a4184ce` |
+| [BIP-0114](definitions/fr/b/bip-0114/definition.md) | `4b88524d-358c-4a99-916a-698a7deca19d` |
+| [BIP-0115](definitions/fr/b/bip-0115/definition.md) | `da88b768-3192-4f9e-a45d-beb88d47fbfc` |
+| [BIP-0116](definitions/fr/b/bip-0116/definition.md) | `71089c30-8d48-4fbf-817b-89676a18674f` |
+| [BIP-0117](definitions/fr/b/bip-0117/definition.md) | `ed4d09d5-7e70-4d10-9d73-991293824b63` |
 | [BIP-0118](definitions/fr/b/bip-0118/definition.md) | `d6c9951a-94ae-4700-aa31-9a9561b3bfc4` |
 | [BIP-0119](definitions/fr/b/bip-0119/definition.md) | `18060e03-d8e2-46d6-82fa-ce7949682cd6` |
+| [BIP-0120](definitions/fr/b/bip-0120/definition.md) | `3865b4f9-1127-4a8c-ac17-e38ed5b99429` |
+| [BIP-0121](definitions/fr/b/bip-0121/definition.md) | `5c5a6b9f-4e5d-477a-9611-65883113e709` |
+| [BIP-0122](definitions/fr/b/bip-0122/definition.md) | `63822cc4-3355-4437-bdbe-605fe81d5720` |
 | [BIP-0123](definitions/fr/b/bip-0123/definition.md) | `ca7ad011-0bf8-4b20-ad10-a94cf422d118` |
+| [BIP-0124](definitions/fr/b/bip-0124/definition.md) | `3bd6bfc5-85e4-456b-8454-f2e0bc10f683` |
 | [BIP-0125](definitions/fr/b/bip-0125/definition.md) | `771919cf-9e7a-47c5-82fc-c729a36c16db` |
+| [BIP-0126](definitions/fr/b/bip-0126/definition.md) | `5ec445aa-30a7-434e-af7b-43b63cded76c` |
+| [BIP-0127](definitions/fr/b/bip-0127/definition.md) | `ab464d7e-8423-4d1b-a481-b4c982ace69c` |
+| [BIP-0129](definitions/fr/b/bip-0129/definition.md) | `bc063b54-5a9c-4e63-a7ad-09dd21916273` |
+| [BIP-0130](definitions/fr/b/bip-0130/definition.md) | `0c32601c-1d9e-4ed1-ae6b-3118fe887d46` |
+| [BIP-0131](definitions/fr/b/bip-0131/definition.md) | `110f88cc-321d-4a0d-88db-3f6dc049a366` |
+| [BIP-0132](definitions/fr/b/bip-0132/definition.md) | `8624cbc4-668f-4497-99f2-f0e9e176e959` |
+| [BIP-0133](definitions/fr/b/bip-0133/definition.md) | `c0e07ffd-6c2a-47e2-9090-265435f2b7bf` |
+| [BIP-0134](definitions/fr/b/bip-0134/definition.md) | `c6064c2d-d424-416c-969d-41f2f64f08a6` |
+| [BIP-0135](definitions/fr/b/bip-0135/definition.md) | `bcfce645-505b-494b-afd5-03ec043ecad3` |
+| [BIP-0136](definitions/fr/b/bip-0136/definition.md) | `723f931b-3487-4cfb-a275-0f4b4e7c88c9` |
 | [BIP-0137](definitions/fr/b/bip-0137/definition.md) | `c7eb659d-8283-44ba-aea9-bbb99c0e0f41` |
+| [BIP-0140](definitions/fr/b/bip-0140/definition.md) | `3f3bd5a3-666a-4465-a056-289aa3bfc804` |
 | [BIP-0141](definitions/fr/b/bip-0141/definition.md) | `a073c884-0f6a-49f4-bdc9-fa5b8cc37133` |
+| [BIP-0142](definitions/fr/b/bip-0142/definition.md) | `8963c5d3-5902-46d0-b7a0-5e0d9c5a3872` |
 | [BIP-0143](definitions/fr/b/bip-0143/definition.md) | `ba286b8c-fd05-42c6-9709-a48ba8e527ef` |
 | [BIP-0144](definitions/fr/b/bip-0144/definition.md) | `03e9c931-5f07-4a41-a9f7-fd2bc113c2ac` |
 | [BIP-0145](definitions/fr/b/bip-0145/definition.md) | `2d27426b-acdf-48a0-a1b8-d0de71eff51a` |
+| [BIP-0146](definitions/fr/b/bip-0146/definition.md) | `200bf4d0-a53a-4bd0-a984-379851b58e0f` |
 | [BIP-0147](definitions/fr/b/bip-0147/definition.md) | `b2903d20-e580-4fa2-aab7-460751f021c4` |
 | [BIP-0148](definitions/fr/b/bip-0148/definition.md) | `514bb0cd-4077-47fd-819e-38cee5e5658f` |
 | [BIP-0149](definitions/fr/b/bip-0149/definition.md) | `71c745ea-bba3-4714-94d2-2c26bdd8a02b` |
 | [BIP-0150](definitions/fr/b/bip-0150/definition.md) | `e66a6683-e596-4239-91b3-bd5f579b9ab1` |
 | [BIP-0151](definitions/fr/b/bip-0151/definition.md) | `16f24b24-342f-4eb9-a1c4-bd754018e020` |
 | [BIP-0152](definitions/fr/b/bip-0152/definition.md) | `51cb62fd-2d57-4f64-8d3e-6b8c6bb85dbe` |
+| [BIP-0154](definitions/fr/b/bip-0154/definition.md) | `e620694e-3ffe-4c00-85fe-ce041fc306d4` |
 | [BIP-0155](definitions/fr/b/bip-0155/definition.md) | `8cc61c1e-719f-47a5-b4b3-e88aaa2b231c` |
 | [BIP-0156](definitions/fr/b/bip-0156/definition.md) | `e892f615-28b4-4078-ad86-f862c246bd70` |
 | [BIP-0157](definitions/fr/b/bip-0157/definition.md) | `6ec606f6-57ef-4d77-b3f1-822f5a06afff` |
 | [BIP-0158](definitions/fr/b/bip-0158/definition.md) | `5a9ad692-ef80-4ce8-955f-228bfb74cbf2` |
+| [BIP-0159](definitions/fr/b/bip-0159/definition.md) | `b69bc93d-53fd-4b21-ac3c-21ae63f283d9` |
+| [BIP-0171](definitions/fr/b/bip-0171/definition.md) | `88591ac4-3272-439c-b5f7-68dc0d00a9c2` |
+| [BIP-0172](definitions/fr/b/bip-0172/definition.md) | `99cbf6f7-86dd-4e05-bbe3-c3985005f1b9` |
 | [BIP-0173](definitions/fr/b/bip-0173/definition.md) | `29193a69-fe44-4bf3-9236-5d427db370fd` |
+| [BIP-0174](definitions/fr/b/bip-0174/definition.md) | `f30dedc9-de67-4e1a-a03c-d16db2c9a7e4` |
+| [BIP-0175](definitions/fr/b/bip-0175/definition.md) | `58573377-41ea-451d-9ec7-910868b4cf12` |
+| [BIP-0176](definitions/fr/b/bip-0176/definition.md) | `5d7357b4-5a04-43c0-abc8-79842c48f0ce` |
+| [BIP-0177](definitions/fr/b/bip-0177/definition.md) | `1d00c248-d26d-4e3c-9594-4b2362757d2e` |
+| [BIP-0178](definitions/fr/b/bip-0178/definition.md) | `693001ba-a26d-4d34-950a-61e57f767a78` |
+| [BIP-0179](definitions/fr/b/bip-0179/definition.md) | `9b846f85-74f9-4d8f-ba5a-b668de49187e` |
+| [BIP-0180](definitions/fr/b/bip-0180/definition.md) | `dfcc5b9e-0594-454a-8aa8-d45c7e907e17` |
+| [BIP-0197](definitions/fr/b/bip-0197/definition.md) | `bb16f43f-ff58-4861-b57c-d51aa51ddaa1` |
+| [BIP-0199](definitions/fr/b/bip-0199/definition.md) | `955f7c51-91c5-4ae6-a2b2-1ba5496e4c5b` |
+| [BIP-0300](definitions/fr/b/bip-0300/definition.md) | `7c040dbd-e3a1-4890-b3fb-7e447bafb51f` |
+| [BIP-0301](definitions/fr/b/bip-0301/definition.md) | `ffd11420-f7e2-4861-a85c-f23b988938d2` |
+| [BIP-0310](definitions/fr/b/bip-0310/definition.md) | `7208cc8d-b924-474c-924c-99f5e0d4f58e` |
+| [BIP-0320](definitions/fr/b/bip-0320/definition.md) | `e6bf1808-1631-44a8-a421-ec8174e974fd` |
+| [BIP-0321](definitions/fr/b/bip-0321/definition.md) | `2062f223-15aa-4022-b447-677332268d3b` |
 | [BIP-0322](definitions/fr/b/bip-0322/definition.md) | `ab4e00c3-f6bb-4973-a5fe-66ee75f3bb50` |
 | [BIP-0324](definitions/fr/b/bip-0324/definition.md) | `7aadb49e-5adc-4010-a269-fd7d6fabda46` |
+| [BIP-0325](definitions/fr/b/bip-0325/definition.md) | `cda5df8c-50b1-4876-9625-9cf8713b1748` |
 | [BIP-0326](definitions/fr/b/bip-0326/definition.md) | `9ba3165a-b72c-41be-96b2-221a576821d2` |
+| [BIP-0327](definitions/fr/b/bip-0327/definition.md) | `88d2ab79-5097-4421-99bb-d3e764b7fa1e` |
+| [BIP-0328](definitions/fr/b/bip-0328/definition.md) | `221156e2-d7d3-4499-905d-6bf433d4c038` |
+| [BIP-0329](definitions/fr/b/bip-0329/definition.md) | `38de0e00-1143-4387-8517-e890f7228b17` |
 | [BIP-0330](definitions/fr/b/bip-0330/definition.md) | `2f0c7362-0127-4575-9b0a-b43f435905b5` |
+| [BIP-0331](definitions/fr/b/bip-0331/definition.md) | `b6e373f4-f327-4951-99a2-739c01e6efa8` |
+| [BIP-0337](definitions/fr/b/bip-0337/definition.md) | `d3155ae4-d8fb-40fa-94d0-c6eada07659f` |
+| [BIP-0338](definitions/fr/b/bip-0338/definition.md) | `6a1d368d-73c8-4d39-93ea-f0506a16675e` |
+| [BIP-0339](definitions/fr/b/bip-0339/definition.md) | `c2f2c7b3-50e1-4d83-a9c6-dc87fb35c761` |
+| [BIP-0340](definitions/fr/b/bip-0340/definition.md) | `48b21fa1-a1ab-4c4d-802c-1baeae4c7d41` |
+| [BIP-0341](definitions/fr/b/bip-0341/definition.md) | `5e35134d-82a5-4a01-ace4-3e875507a054` |
+| [BIP-0342](definitions/fr/b/bip-0342/definition.md) | `c666359c-91f4-40a4-a073-efd7378df6ef` |
+| [BIP-0343](definitions/fr/b/bip-0343/definition.md) | `5c147279-c4ca-4abf-9fb5-3c1b0105d7bf` |
+| [BIP-0345](definitions/fr/b/bip-0345/definition.md) | `03141aa4-ec98-4507-96c8-c786a84c35b9` |
+| [BIP-0346](definitions/fr/b/bip-0346/definition.md) | `5d104744-fb6a-4763-b02a-082e54874359` |
+| [BIP-0347](definitions/fr/b/bip-0347/definition.md) | `245b52d5-5fd8-4099-a122-2b96d76b1297` |
+| [BIP-0348](definitions/fr/b/bip-0348/definition.md) | `690901c5-0904-4da8-a5bd-4fea08588609` |
+| [BIP-0349](definitions/fr/b/bip-0349/definition.md) | `07d60d9d-2478-4362-9bb6-919f11c0489f` |
+| [BIP-0350](definitions/fr/b/bip-0350/definition.md) | `c1660c81-b409-4ab8-b7ea-55192d748cf5` |
+| [BIP-0351](definitions/fr/b/bip-0351/definition.md) | `7d38b478-63c6-4c0d-b616-c42e7897158e` |
 | [BIP-0352](definitions/fr/b/bip-0352/definition.md) | `57d578b1-202e-4f63-96e4-ba3819713b33` |
 | [BIP-0353](definitions/fr/b/bip-0353/definition.md) | `88f94710-2b5f-4f14-ad8a-7fd43565366a` |
+| [BIP-0360](definitions/fr/b/bip-0360/definition.md) | `a9ac33b3-8ef6-4cbe-afdc-31ea80b61dc6` |
+| [BIP-0370](definitions/fr/b/bip-0370/definition.md) | `b133b70c-2f9a-4d80-a41d-a39e898618d7` |
+| [BIP-0371](definitions/fr/b/bip-0371/definition.md) | `521cec31-764c-4aba-8aea-0b71b1615a42` |
+| [BIP-0372](definitions/fr/b/bip-0372/definition.md) | `771f79ad-3cab-4ffb-b586-ca86ec37ca2e` |
+| [BIP-0373](definitions/fr/b/bip-0373/definition.md) | `94f17f89-70e7-411a-bf2b-0f10da5518d6` |
+| [BIP-0374](definitions/fr/b/bip-0374/definition.md) | `085a9c2f-9791-4030-89fb-418018e89ca6` |
+| [BIP-0375](definitions/fr/b/bip-0375/definition.md) | `2c8338d8-1ad6-4912-a4a9-4f40d66b6b0f` |
+| [BIP-0379](definitions/fr/b/bip-0379/definition.md) | `0e79fcd1-68f1-41eb-8aab-7a4f4d648597` |
 | [BIP-0380](definitions/fr/b/bip-0380/definition.md) | `f951d721-85ca-4196-8bb8-75cc81306bb6` |
 | [BIP-0381](definitions/fr/b/bip-0381/definition.md) | `4b7235b1-f0dc-441d-ad80-bc41f1ebff5f` |
 | [BIP-0382](definitions/fr/b/bip-0382/definition.md) | `6e77d63d-5baf-4068-98f8-717283977dc3` |
@@ -173,6 +276,14 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [BIP-0384](definitions/fr/b/bip-0384/definition.md) | `eaca6927-5363-44a9-907e-928ff4439a5e` |
 | [BIP-0385](definitions/fr/b/bip-0385/definition.md) | `42b64d1b-30f5-4c96-8e47-cc569368d694` |
 | [BIP-0386](definitions/fr/b/bip-0386/definition.md) | `77554b36-a2e0-45c0-8398-f519b80ac9f1` |
+| [BIP-0387](definitions/fr/b/bip-0387/definition.md) | `f23b26a4-a8fc-4f8a-8b85-8fbf74031361` |
+| [BIP-0388](definitions/fr/b/bip-0388/definition.md) | `2cf3a022-82c4-4a91-b299-269421a13f62` |
+| [BIP-0389](definitions/fr/b/bip-0389/definition.md) | `8e0e1e56-256c-40d8-a7b0-6502a8e92c51` |
+| [BIP-0390](definitions/fr/b/bip-0390/definition.md) | `09591bbb-0b18-43db-a2b6-70f6742a2be7` |
+| [BIP-0431](definitions/fr/b/bip-0431/definition.md) | `a8484022-ce46-47ef-ad43-7b896394da2c` |
+| [BIP-0433](definitions/fr/b/bip-0433/definition.md) | `695b5769-7870-4795-8a6d-54b09375c32b` |
+| [BIP-0434](definitions/fr/b/bip-0434/definition.md) | `0f7c38e2-f939-4b65-87c8-8b33c25bff0a` |
+| [BIP-0443](definitions/fr/b/bip-0443/definition.md) | `d3caf2d7-84cc-479b-b829-02c32d22ddf8` |
 | [BIRTH DATE](definitions/fr/b/birth-date/definition.md) | `500b92ea-4ac3-4baf-9554-3dedcd375448` |
 | [BIT](definitions/fr/b/bit/definition.md) | `a1cbf11c-d87e-4866-a1cd-61a653d8a853` |
 | [BIT GOLD](definitions/fr/b/bit-gold/definition.md) | `eca1a80c-00b6-4f2b-9429-fb971c5167bd` |
@@ -248,6 +359,7 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [BRANCHE - GIT](definitions/fr/b/branche-git/definition.md) | `9276123d-4b4b-4d8b-9689-3cc562636220` |
 | [BRC-20](definitions/fr/b/brc-20/definition.md) | `bfddd138-88b4-42bc-81fb-bbbc0e0097d3` |
 | [BROLLUPS](definitions/fr/b/brollups/definition.md) | `4d035973-1c9b-49f9-8fa7-681dd7b5f07b` |
+| [BSMS](definitions/fr/b/bsms/definition.md) | `a78b1bd4-6e09-491e-830b-75a3841bd08c` |
 | [BSV - BITCOIN SATOSHI VISION](definitions/fr/b/bsv-bitcoin-satoshi-vision/definition.md) | `12ffc664-30e0-4401-b10c-6d3aba5d24ed` |
 | [BTC](definitions/fr/b/btc/definition.md) | `31bcfa58-89de-4989-83fa-d4431653fc2d` |
 | [BTCD - BTC SUITE](definitions/fr/b/btcd-btc-suite/definition.md) | `a38975e1-4280-49a2-9aef-10c506618aa9` |
@@ -339,6 +451,7 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [CONFIRMATION](definitions/fr/c/confirmation/definition.md) | `9947b93a-25b5-4f2d-b353-fefe5a5b4719` |
 | [CONNECTOR](definitions/fr/c/connector/definition.md) | `c8d36eaa-8bcb-46b7-aa75-25c89d84eefc` |
 | [CONSENSUS](definitions/fr/c/consensus/definition.md) | `3e7055ed-3bab-47c1-90d3-cfd551096ee8` |
+| [CONSENSUS CLEANUP](definitions/fr/c/consensus-cleanup/definition.md) | `d14a7db6-3a49-4c0d-8300-a0b917e5833a` |
 | [CONSIGNMENT](definitions/fr/c/consignment/definition.md) | `6d0005b3-5163-47fc-827d-6f842eaa00b2` |
 | [CONSOLIDATION](definitions/fr/c/consolidation/definition.md) | `d1af921f-2a71-4f7a-a6ae-ee425e64b289` |
 | [CONTENEUR](definitions/fr/c/conteneur/definition.md) | `2df24da2-a435-459a-8476-b00c90cd8a82` |
@@ -458,6 +571,7 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [FERME DE MINAGE](definitions/fr/f/ferme-de-minage/definition.md) | `200d7209-8a10-4afb-b994-3c6aed39b8f8` |
 | [FIAT](definitions/fr/f/fiat/definition.md) | `cd227863-8cee-47e4-bb0b-a48d2e5f596c` |
 | [FIBRE](definitions/fr/f/fibre/definition.md) | `3d7fbc3d-cd09-44e5-aae3-d9e1a920851a` |
+| [FIDELITY BOND](definitions/fr/f/fidelity-bond/definition.md) | `adf5dcb7-c068-487e-971a-fb6da9266717` |
 | [FINNEY HAL](definitions/fr/f/finney-hal/definition.md) | `9d2edbfc-eeb0-4310-9072-3500451301fc` |
 | [FLAG DAY](definitions/fr/f/flag-day/definition.md) | `bcda76f1-8daf-4d1e-bab2-431fe6991f83` |
 | [FONCTION DE HACHAGE](definitions/fr/f/fonction-de-hachage/definition.md) | `1bdb482e-52c8-48fe-b31c-d542311f0fc6` |
@@ -754,6 +868,7 @@ Ce fichier contient la liste de toutes les 1012 définitions du dictionnaire.
 | [OP_HASH256 - 0XAA](definitions/fr/o/op-hash256-0xaa/definition.md) | `dd34a543-e432-4c69-848b-29f58ac1d30b` |
 | [OP_IF - 0X63](definitions/fr/o/op-if-0x63/definition.md) | `1fbfa9c8-8175-4922-b1ab-75269df3b7ef` |
 | [OP_IFDUP - 0X73](definitions/fr/o/op-ifdup-0x73/definition.md) | `a360db79-5809-44e6-9520-9b28bbc74f9c` |
+| [OP_INTERNALKEY - 0XCB](definitions/fr/o/op-internalkey-0xcb/definition.md) | `b6dd4e18-1c00-47ae-8b06-9950372a9c84` |
 | [OP_LESSTHAN - 0X9F](definitions/fr/o/op-lessthan-0x9f/definition.md) | `9494a393-bae7-40a7-8497-422f2e542616` |
 | [OP_LESSTHANOREQUAL - 0XA1](definitions/fr/o/op-lessthanorequal-0xa1/definition.md) | `efd226d6-a5c5-4bad-a0c6-0d24f4763dc9` |
 | [OP_MAX - 0XA4](definitions/fr/o/op-max-0xa4/definition.md) | `0e66d8f8-818a-455f-8996-a2ece13de37f` |

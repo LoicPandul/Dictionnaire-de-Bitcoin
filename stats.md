@@ -1,23 +1,23 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 23/02/2026*
+*Dernière mise à jour : 24/02/2026*
 
 ---
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 1012
+- **Nombre total de définitions** : 1127
 
 ## Définitions par lettre
 
 | Lettre | Nombre |
 |:------:|-------:|
 | A | 48 |
-| B | 190 |
-| C | 107 |
+| B | 302 |
+| C | 108 |
 | D | 35 |
 | E | 30 |
-| F | 23 |
+| F | 24 |
 | G | 23 |
 | H | 23 |
 | I | 18 |
@@ -26,7 +26,7 @@
 | L | 32 |
 | M | 47 |
 | N | 24 |
-| O | 108 |
+| O | 109 |
 | P | 72 |
 | Q | 3 |
 | R | 36 |
@@ -41,23 +41,23 @@
 
 ## Top 5 des lettres les plus fournies
 
-1. **B** : 190 définitions
-2. **O** : 108 définitions
-3. **C** : 107 définitions
+1. **B** : 302 définitions
+2. **O** : 109 définitions
+3. **C** : 108 définitions
 4. **S** : 97 définitions
 5. **P** : 72 définitions
 
 ## Catégories
 
-- **PROTOCOLE** : 145
+- **BIP** : 197
+- **PROTOCOLE** : 146
 - **LIGHTNING NETWORK** : 117
-- **SCRIPT** : 104
-- **BIP** : 86
-- **PORTEFEUILLE** : 77
+- **SCRIPT** : 105
+- **PORTEFEUILLE** : 78
 - **INFORMATIQUE** : 59
 - **MINAGE** : 57
 - **COUCHE SUPÉRIEURE** : 54
-- **CONFIDENTIALITÉ** : 52
+- **CONFIDENTIALITÉ** : 53
 - **RÉSEAU** : 49
 - **CRYPTOGRAPHIE** : 45
 - **RGB** : 37
@@ -71,18 +71,18 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1432 occurrences
-- **transaction** : 1177 occurrences
-- **bloc** : 632 occurrences
-- **adresse** : 385 occurrences
-- **protocole** : 368 occurrences
-- **paiement** : 342 occurrences
-- **utilisateur** : 323 occurrences
-- **lightning** : 322 occurrences
-- **réseau** : 317 occurrences
-- **script** : 310 occurrences
-- **portefeuille** : 301 occurrences
-- **donnée** : 264 occurrences
-- **mineur** : 261 occurrences
-- **signature** : 258 occurrences
-- **utxo** : 258 occurrences
+- **bitcoin** : 1503 occurrences
+- **transaction** : 1284 occurrences
+- **bloc** : 686 occurrences
+- **adresse** : 424 occurrences
+- **protocole** : 407 occurrences
+- **script** : 369 occurrences
+- **paiement** : 356 occurrences
+- **portefeuille** : 343 occurrences
+- **réseau** : 336 occurrences
+- **utilisateur** : 333 occurrences
+- **lightning** : 327 occurrences
+- **signature** : 306 occurrences
+- **donnée** : 282 occurrences
+- **mineur** : 272 occurrences
+- **utxo** : 267 occurrences
