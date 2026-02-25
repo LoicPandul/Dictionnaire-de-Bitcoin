@@ -1,0 +1,1 @@
+Portefeuille mobile dédié à l'eCash, qui utilise le protocole Cashu pour émettre des jetons numériques adossés à du bitcoin via le Lightning Network. L'application permet d'envoyer et de recevoir des paiements de manière quasi instantanée, avec un haut niveau de confidentialité, puisque les transactions eCash sont difficilement traçables.
