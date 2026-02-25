@@ -1,0 +1,1 @@
+Ginger Wallet est un portefeuille Bitcoin desktop open source axé sur la confidentialité. Il s'agit d'un fork de Wasabi Wallet, lancé en juin 2024 quelques jours après l'arrêt du service de coordination de coinjoins de zkSNACKs. Ginger Wallet reprend les fonctionnalités de confidentialité de Wasabi, notamment l'intégration de coinjoins WabiSabi.
