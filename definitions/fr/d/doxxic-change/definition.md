@@ -1,0 +1,5 @@
+Output de change issu d'une transaction Tx0 dans le protocole Whirlpool, qui représente un risque pour la confidentialité de l'utilisateur. Le doxxic change est la fraction de bitcoins qui ne peut pas être intégrée dans la pool de coinjoin choisie et qui retourne dans le portefeuille sous forme de change.
+
+Ce change est qualifié de « doxxic » (terme dérivé de « dox », signifiant exposer l'identité de quelqu'un) car il conserve un lien direct avec la Tx0, et donc potentiellement avec l'identité ou l'historique de l'utilisateur. Si ce change est dépensé de manière imprudente, par exemple en le fusionnant avec des UTXOs postmix, il peut compromettre la confidentialité acquise lors des cycles de coinjoin.
+
+Pour limiter ce risque, le doxxic change peut être dépensé séparément (par exemple en carte cadeaux, via des dons, ou sur Lightning), utilisé dans une nouvelle Tx0, ou bien consolidé via des atomic swaps sur Monero.
