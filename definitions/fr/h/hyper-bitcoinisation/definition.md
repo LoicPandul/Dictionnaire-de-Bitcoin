@@ -1,0 +1,5 @@
+Concept théorique décrivant un processus d'adoption massive et irréversible de Bitcoin comme monnaie dominante au niveau mondial, remplaçant progressivement les monnaies fiat. Le terme a été popularisé par Daniel Krawisz en 2014, qui le décrivait comme une « démonétisation volontaire » des devises étatiques au profit du bitcoin.
+
+L'hyper-bitcoinisation suppose un scénario dans lequel la perte de confiance dans les monnaies fiat (due à l'inflation, au contrôle financier ou à l'instabilité monétaire) pousse les individus et les institutions à adopter Bitcoin massivement. L'hyper-bitcoinisation serait un mouvement volontaire et décentralisé, dans lequel chaque individu choisit librement de migrer vers un standard monétaire plus solide.
+
+Ce concept est débattu au sein même de la communauté Bitcoin : certains le considèrent comme un objectif inévitable à long terme, tandis que d'autres le voient comme un idéal théorique peu probable dans sa forme absolue, Bitcoin pouvant coexister avec d'autres systèmes monétaires, ou bien simplement rester une monnaie utilisée à la marge, uniquement dans la contre-économie.
