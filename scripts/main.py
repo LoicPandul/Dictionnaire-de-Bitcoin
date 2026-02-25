@@ -27,9 +27,11 @@ def cmd_build(dictionary):
     print("\n--- Étape 1/5: Correction du markdown ---")
     markdown_linter.lint(dictionary, fix=True)
 
-    # 2. Validation des métadonnées (warnings uniquement)
+    # 2. Validation des métadonnées
     print("\n--- Étape 2/5: Validation des métadonnées ---")
-    metadata_validator.validate(dictionary)
+    if not metadata_validator.validate(dictionary):
+        print("\n[ERREUR] La validation des métadonnées a échoué. Build interrompu.")
+        return
 
     # 3. Index
     print("\n--- Étape 3/5: Génération de l'index ---")
