@@ -1,0 +1,5 @@
+Concept qui applique la théorie de la sélection naturelle de Darwin au domaine monétaire. Il postule que les différentes formes de monnaie sont en compétition les unes avec les autres et que les monnaies possédant les propriétés les plus adaptées (rareté, durabilité, divisibilité, portabilité, fongibilité, vérifiabilité) finissent par supplanter celles qui sont moins performantes.
+
+Dans cette perspective, les partisans de ce concept perçoivent Bitcoin comme une monnaie supérieure susceptible de s'imposer face aux monnaies fiat par la seule force de ses propriétés intrinsèques. Son offre strictement limitée, sa résistance à la censure et sa nature décentralisée constitueraient des avantages compétitifs décisifs dans cette sélection monétaire.
+
+Ce concept est étroitement lié à celui d'hyper-bitcoinisation et s'inscrit dans la lignée de la loi de Thiers (la bonne monnaie chasse la mauvaise), en opposition à la loi de Gresham (la mauvaise monnaie chasse la bonne).
