@@ -1,0 +1,3 @@
+Carte interactive open source qui recense les commerces et services acceptant le bitcoin à travers le monde. BTCMap s'appuie sur les données d'OpenStreetMap et permet à quiconque de signaler ou de mettre à jour les points de vente qui acceptent les paiements en bitcoins, que ce soit on-chain ou via le Lightning Network.
+
+L'outil est accessible via un site web et permet de rechercher des commerces par localisation géographique ou par catégorie (restaurants, hôtels, boutiques). BTCMap contribue à rendre visible l'écosystème des commerçants qui acceptent le bitcoin. Chaque point de vente peut être vérifié par la communauté, et les informations sont horodatées pour indiquer la date de la dernière vérification.
