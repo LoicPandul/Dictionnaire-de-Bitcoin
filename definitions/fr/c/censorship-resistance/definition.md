@@ -1,0 +1,5 @@
+Propriété d'un système qui le rend capable de fonctionner sans qu'aucune entité ne puisse empêcher des participants légitimes de l'utiliser. Dans le contexte de Bitcoin, la résistance à la censure signifie qu'aucun gouvernement, entreprise ou individu ne peut bloquer une transaction valide ou interdire à un utilisateur d'accéder au réseau.
+
+Cette propriété repose sur plusieurs caractéristiques fondamentales de Bitcoin : la décentralisation du réseau (des milliers de nœuds répartis dans le monde), l'absence d'autorité centrale pouvant filtrer les transactions, et le fonctionnement par preuve de travail qui rend l'inclusion des transactions dépendante uniquement des frais offerts par l'émetteur.
+
+La résistance à la censure est considérée comme l'une des propositions de valeur les plus importantes de Bitcoin, particulièrement dans les régimes autoritaires où les citoyens peuvent voir leurs comptes bancaires gelés ou leurs transactions bloquées. Elle distingue fondamentalement Bitcoin des systèmes de paiement centralisés et des projets de CBDC, où une autorité peut à tout moment décider d'exclure des utilisateurs.
