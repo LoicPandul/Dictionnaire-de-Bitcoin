@@ -1,0 +1,5 @@
+Phénomène économique caractérisé par une baisse générale et durable du niveau des prix des biens et des services. Contrairement à l'inflation, la déflation signifie que le pouvoir d'achat de la monnaie augmente au fil du temps : avec la même quantité de monnaie, on peut acquérir davantage de biens.
+
+La déflation peut résulter d'une contraction de la masse monétaire, d'une hausse de la productivité ou d'une baisse de la demande. Les économistes keynésiens la considèrent généralement comme néfaste, car elle inciterait les agents à reporter leurs achats, freinant ainsi l'activité économique. Les économistes de l'école autrichienne distinguent cependant la déflation monétaire (contraction artificielle du crédit) de la baisse des prix liée aux gains de productivité, cette dernière étant perçue comme bénéfique.
+
+Bitcoin est souvent qualifié de « déflationniste » en raison de son offre plafonnée à 21 millions d'unités et de la réduction progressive de son émission via les halvings. Plus précisément, il est désinflationniste : son taux d'émission diminue dans le temps et convergera vers zéro.
