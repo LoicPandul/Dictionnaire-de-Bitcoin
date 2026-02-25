@@ -1,0 +1,3 @@
+Phénomène économique dans lequel la valeur ou l'utilité d'un produit ou d'un service augmente à mesure que le nombre de ses utilisateurs croît. Plus un réseau compte de participants, plus il devient attractif pour de nouveaux utilisateurs, créant un cercle vertueux d'adoption. Ce concept est étroitement lié à la loi de Metcalfe.
+
+L'effet de réseau est fondamental pour comprendre la monnaie : une monnaie n'a de valeur que parce que d'autres personnes l'acceptent. Plus le nombre de personnes qui acceptent une monnaie est grand, plus cette monnaie est utile comme moyen d'échange. Ce mécanisme explique la tendance naturelle vers un standard monétaire unique au sein d'une économie.
