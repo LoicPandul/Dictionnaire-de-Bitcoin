@@ -1,0 +1,5 @@
+Sigle de « *Central Bank Digital Currency* » (monnaie numérique de banque centrale). Il s'agit d'une forme numérique de monnaie fiat émise et contrôlée directement par une banque centrale, contrairement aux dépôts bancaires classiques qui sont créés par les banques commerciales.
+
+Les projets de CBDC se développent dans de nombreux pays : l'euro numérique en Europe, le yuan numérique (e-CNY) en Chine, ou le sand dollar aux Bahamas. Elles peuvent fonctionner sur des registres centralisés ou utiliser des technologies inspirées des blockchains, mais restent sous le contrôle total de l'autorité émettrice.
+
+Les partisans y voient un outil de modernisation des paiements et d'inclusion financière. Les critiques, notamment dans la communauté Bitcoin, soulèvent des risques majeurs pour la vie privée : une CBDC permettrait potentiellement à l'État de surveiller, bloquer ou conditionner chaque transaction des citoyens, constituant un outil de contrôle financier sans précédent. Les CBDC sont fondamentalement différentes de Bitcoin, qui est décentralisé et résistant à la censure.
