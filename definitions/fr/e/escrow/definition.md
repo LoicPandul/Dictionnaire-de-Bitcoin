@@ -1,0 +1,5 @@
+Mécanisme par lequel des fonds sont confiés à un tiers de confiance qui les conserve jusqu'à ce que les conditions convenues entre les parties soient remplies. En français, on parle de « séquestre ». L'escrow est couramment utilisé dans les transactions commerciales pour protéger l'acheteur et le vendeur.
+
+Dans le contexte de Bitcoin, l'escrow peut être implémenté de différentes manières. La méthode la plus courante utilise des adresses multisig (2-de-3), où trois clés sont réparties entre l'acheteur, le vendeur et un arbitre. Les fonds ne peuvent être débloqués que si au moins deux des trois parties signent la transaction, ce qui permet une résolution de conflits sans qu'aucune partie seule ne contrôle les fonds.
+
+Des timelocks peuvent également être intégrés pour garantir que les fonds ne restent pas bloqués indéfiniment. L'escrow on-chain est notamment utilisé par les plateformes d'échange pair-à-pair comme Bisq ou HodlHodl pour sécuriser les transactions sans tiers centralisé.
