@@ -1,0 +1,5 @@
+Indicateur utilisé pour évaluer le niveau de confidentialité d'une transaction Bitcoin. Le score de Boltzmann repose sur le nombre d'interprétations possibles d'une transaction, c'est-à-dire le nombre de combinaisons plausibles entre les inputs et les outputs.
+
+Le principe est inspiré de la physique statistique de Ludwig Boltzmann : plus une transaction admet de combinaisons possibles (de micro-états), plus son entropie est élevée, et plus elle est difficile à analyser. Le score est généralement exprimé en bits d'entropie. Une transaction avec un score de 0 bit n'a qu'une seule interprétation possible (chaque input est clairement relié à un output). À l'inverse, un coinjoin bien construit peut atteindre un score élevé, car les multiples inputs et outputs de montants identiques génèrent un très grand nombre de combinaisons possibles.
+
+Ce score permet aux utilisateurs d'évaluer objectivement l'efficacité d'un coinjoin ou de toute transaction en termes de confidentialité.
