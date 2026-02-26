@@ -1,0 +1,3 @@
+Mécanisme par lequel les mineurs indiquent leur soutien ou leur préparation à une proposition de soft fork sur Bitcoin. Le signaling s'effectue en positionnant un bit spécifique dans le champ `nVersion` de l'en-tête des blocs qu'ils minent, conformément au processus défini par le BIP-0009 (et ses successeurs comme le BIP-0008).
+
+Chaque bit du champ de version peut être associé à une proposition de soft fork distincte. Lorsqu'un mineur positionne le bit correspondant, il signale qu'il a mis à jour son logiciel et qu'il est prêt à appliquer les nouvelles règles.
