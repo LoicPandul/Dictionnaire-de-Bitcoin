@@ -1,0 +1,5 @@
+Unité de mesure utilisée pour évaluer la taille d'une transaction Bitcoin en tenant compte de la pondération introduite par SegWit. Un vByte (octet virtuel) représente une unité de poids normalisée : 4 unités de poids (WU) correspondent à 1 vByte. Cette mesure permet de comparer équitablement les transactions SegWit et les transactions legacy.
+
+Avant SegWit, la taille d'une transaction était mesurée en octets bruts. Avec SegWit, les données de témoin (*witness*) bénéficient d'une réduction : chaque octet de témoin compte pour 1 WU, contre 4 WU pour les autres données. Le calcul en vBytes lisse cette différence. Par exemple, une transaction dont le poids total est de 600 WU fait 150 vBytes.
+
+Les frais de transaction sont calculés en satoshis par vByte (sat/vB). Utiliser les vBytes permet aux portefeuilles d'estimer correctement les frais quelle que soit la structure de la transaction. Un bloc Bitcoin peut contenir au maximum 4 millions de WU, soit l'équivalent d'1 million de vBytes.
