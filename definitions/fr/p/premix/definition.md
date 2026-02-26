@@ -1,0 +1,5 @@
+Compte intermédiaire dans le protocole Whirlpool qui contient les UTXOs issus de la Tx0 en attente de leur premier cycle de coinjoin. Le premix est un état transitoire : les UTXOs y séjournent jusqu'à ce qu'ils soient sélectionnés pour participer à une transaction coinjoin.
+
+Chaque UTXO dans le compte premix possède exactement le montant nominal de la pool choisie (par exemple 0,01 BTC pour la pool 0,01), en plus des frais de minage nécessaires pour le premier cycle de coinjoin. Ces UTXOs sont considérés comme non mixés, car ils sont encore directement traçables à la Tx0 qui les a créés. Ils n'ont pas encore bénéficié de la rupture de lien qu'offre le coinjoin.
+
+Une fois qu'un UTXO premix est sélectionné pour un cycle de coinjoin et que la transaction est confirmée, il passe dans le compte postmix.

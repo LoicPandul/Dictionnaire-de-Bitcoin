@@ -1,0 +1,5 @@
+Compte qui regroupe les UTXOs qui ont participé à au moins un cycle de coinjoin dans le protocole Whirlpool. Le postmix représente les fonds mixés dont le lien avec leur origine a été rompu grâce au processus de coinjoin.
+
+Les UTXOs dans le compte postmix bénéficient d'anonsets qui augmentent avec chaque cycle de coinjoin supplémentaire. Plus un UTXO participe à des remixages (qui sont gratuits dans Whirlpool), plus son ensemble d'anonymat prospectif et rétrospectif grandit, ce qui renforce sa confidentialité.
+
+L'utilisation des UTXOs postmix requiert une attention particulière pour ne pas dégrader la confidentialité acquise. Fusionner des UTXOs postmix entre eux ou avec des UTXOs non mixés peut rétablir des liens traçables. Les dépenses depuis le postmix gagnent à utiliser des techniques préservant la confidentialité, comme Stonewall ou Stonewall x2.
