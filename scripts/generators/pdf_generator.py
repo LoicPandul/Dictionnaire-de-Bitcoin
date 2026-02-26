@@ -737,10 +737,11 @@ def _format_definition(definition, dictionary=None) -> str:
     content = _markdown_to_latex(content)
     parts.append(content)
 
-    # Cross-references en fin de définition
+    # Cross-references en fin de définition (garder avec la fin du contenu)
     if definition.cross_references and dictionary:
         xref_latex = _render_cross_references(definition.cross_references, dictionary)
         if xref_latex:
+            parts.append(r"\nopagebreak")
             parts.append(xref_latex)
 
     parts.append(r"\vspace{0.8em}")
