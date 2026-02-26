@@ -1,5 +1,5 @@
 Famille de *Hardware wallet* fabriqués par la société canadienne Coinkite, conçus exclusivement pour Bitcoin. Les Coldcard se distinguent par leur approche de sécurité maximale : ils sont entièrement *air-gapped*, c'est-à-dire qu'ils peuvent fonctionner sans jamais être connectés à un ordinateur, en échangeant les transactions via une carte microSD, NFC ou échange de QR codes. Les Coldcard intègrent un *secure element* pour protéger les clés privées contre les accès physiques. Ils proposent de nombreuses fonctionnalités de sécurité avancées comme par exemple le « Brick Me PIN » (qui détruit les données) et le « Duress PIN » (qui ouvre un portefeuille leurre).
 
 Il existe plusieurs Coldcard différentes :
-- La sous-famille des MK (MK3, MK4), qui intègre un clavier numérique uniquement, un petit écran, et ne dispose pas d'appareil photo pour scanner les QR codes ;
-- La sous-famille des Q, le produit le plus haut de gamme de la marque, avec lecteur de QR codes, emplacement pour les piles et clavier QWERTY complet.
+* La sous-famille des MK (MK3, MK4), qui intègre un clavier numérique uniquement, un petit écran, et ne dispose pas d'appareil photo pour scanner les QR codes ;
+* La sous-famille des Q, le produit le plus haut de gamme de la marque, avec lecteur de QR codes, emplacement pour les piles et clavier QWERTY complet.
