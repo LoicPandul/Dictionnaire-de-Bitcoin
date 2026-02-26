@@ -240,7 +240,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 
 % Pas d'alinéa, espacement entre paragraphes
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.6em}
+\setlength{\parskip}{0.4em}
 
 % Césure et justification
 \usepackage{ragged2e}
@@ -250,9 +250,10 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \hyphenpenalty=50
 \exhyphenpenalty=50
 
-% Éviter orphelines et veuves
-\widowpenalty=10000
-\clubpenalty=10000
+% Éviter orphelines et veuves (pénalité élevée mais pas absolue,
+% pour permettre à LaTeX d'optimiser le remplissage des pages)
+\widowpenalty=150
+\clubpenalty=150
 
 % Empêcher l'étirement vertical des pages (évite les trous imprévisibles)
 \raggedbottom
@@ -665,8 +666,9 @@ def _format_definition(definition, dictionary=None) -> str:
     title = definition.title
     safe_title = _escape_latex(title)
 
-    # Empêcher vedette orpheline : garder vedette + catégorie + début de définition ensemble
-    parts.append(r"\needspace{4\baselineskip}")
+    # Garder vedette + catégorie + au moins 2 lignes de contenu ensemble
+    # (valeur basse pour permettre les coupures dans la définition et éviter le blanc)
+    parts.append(r"\needspace{3\baselineskip}")
 
     # Label pour référence de page (utilisé dans TDM)
     parts.append(rf"\label{{def:{slug}}}")
@@ -678,7 +680,8 @@ def _format_definition(definition, dictionary=None) -> str:
     parts.append(rf"\hypertarget{{{slug}}}{{}}")
 
     # Vedette (cartouche noire) sur sa propre ligne, \par force le retour à la ligne
-    parts.append(rf"\noindent\vedettefit{{{safe_title}}}\par")
+    # \nopagebreak empêche une coupure entre vedette et métadonnées
+    parts.append(rf"\noindent\vedettefit{{{safe_title}}}\par\nopagebreak")
 
     # Métadonnées (catégorie + traduction) sous la vedette dans un tabular unique
     # Catégorie toujours en colonne gauche, traduction en colonne droite
@@ -720,9 +723,10 @@ def _format_definition(definition, dictionary=None) -> str:
             r"\end{tabular}}"
         )
         parts.append(r"\vspace{0.05em}")
-        parts.append(rf"\noindent {meta_block}")
+        parts.append(rf"\noindent {meta_block}\nopagebreak")
 
     parts.append(r"\vspace{0.05em}")
+    parts.append(r"\nopagebreak")
     parts.append("")
 
     # Contenu
