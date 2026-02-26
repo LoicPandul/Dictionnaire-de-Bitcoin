@@ -1,0 +1,5 @@
+Projet *open source* de hardware wallet DIY (à assembler soi-même) basé sur un Raspberry Pi Zero, un écran et une caméra. SeedSigner est conçu pour générer et manipuler des clés privées Bitcoin de manière *air-gapped* et communique exclusivement via des QR codes.
+
+Sa caractéristique principale est sa nature « *stateless* » : l'appareil ne conserve aucune donnée en mémoire entre les utilisations, ce qui signifie que la phrase mnémonique doit être saisie à chaque utilisation, en flashant un QR code. Cette approche élimine le risque d'extraction des clés depuis l'appareil en cas d'accès physique.
+
+Le logiciel est entièrement *open source* et le coût de fabrication est assez faible, ce qui en fait une solution accessible pour signer des transactions ou gérer un multisig. Puisqu'il peut être assemblé à partir de matériel informatique généraliste, c'est également une solution accessible aux personnes vivant sous un régime autoritaire.
