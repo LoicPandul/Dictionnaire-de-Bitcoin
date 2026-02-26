@@ -1,0 +1,1 @@
+Implémentation open source de watchtower pour le Lightning Network. Une watchtower surveille en permanence les canaux de paiement d'un utilisateur et intervient automatiquement en diffusant une transaction de pénalité si une contrepartie tente de tricher en publiant un ancien état du canal.
