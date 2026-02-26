@@ -1,0 +1,5 @@
+Revenu que tire un émetteur de monnaie de la différence entre la valeur faciale de la monnaie produite et son coût de production. Historiquement, le seigneuriage désignait le profit réalisé par le seigneur ou le souverain lors de la frappe de pièces métalliques : le coût du métal et de la frappe était inférieur à la valeur nominale de la pièce mise en circulation.
+
+Dans le système monétaire fiat moderne, le seigneuriage prend une ampleur considérable. Les banques centrales créent de la monnaie à un coût quasi nul (par simple écriture comptable ou impression), tandis que cette monnaie circule à sa valeur nominale. Ce mécanisme constitue une forme de taxation implicite sur les détenteurs de monnaie existante, dont le pouvoir d'achat est dilué par chaque nouvelle émission.
+
+Dans Bitcoin, il n'existe pas de seigneuriage au sens traditionnel. L'émission de nouveaux bitcoins via la subvention de bloc ne profite pas à une autorité centrale, mais rémunère les mineurs en contrepartie d'un coût réel : l'énergie et le matériel nécessaires au minage. À terme, la subvention de bloc sera nulle.
