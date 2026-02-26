@@ -1,0 +1,8 @@
+uuid: "b2b62776-d7fd-45a4-903d-e6e853e1aefe"
+title: "TREZOR"
+slug: "trezor"
+category: "PORTEFEUILLE"
+cross_references:
+  - "2fc3ec2b-e4c3-4ecd-a661-6ebf8411be7a"
+  - "ab51af7f-85b2-4ac9-ac88-3b2217ff73cc"
+version: "1"
