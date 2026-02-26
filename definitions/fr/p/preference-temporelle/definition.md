@@ -1,0 +1,5 @@
+Concept de l'économie autrichienne qui décrit la tendance des individus à préférer la satisfaction immédiate à la satisfaction future. Un individu avec une préférence temporelle élevée privilégie la consommation présente ; un individu avec une préférence temporelle basse accepte de reporter sa consommation pour obtenir un bénéfice supérieur dans le futur. Ce concept est central dans la théorie autrichienne de l'intérêt et du capital.
+
+La préférence temporelle est directement liée à la qualité de la monnaie utilisée. Une monnaie qui perd sa valeur dans le temps (par l'inflation) incite à une préférence temporelle élevée : il est rationnel de dépenser rapidement plutôt que d'épargner. À l'inverse, une monnaie dure, dont la valeur se maintient ou s'apprécie, encourage l'épargne, la planification à long terme et l'investissement productif.
+
+Bitcoin, par sa rareté absolue et sa politique monétaire désinflationniste, est souvent présenté comme un outil qui favorise une préférence temporelle basse. Il inciterait ses détenteurs à adopter une vision de long terme, tant dans leurs choix financiers que dans leur comportement de consommation.
