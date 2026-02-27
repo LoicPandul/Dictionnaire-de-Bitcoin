@@ -436,7 +436,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \newcommand{\vedettefit}[1]{%
     \fcolorbox{black}{black}{%
         \hspace{0.3em}%
-        {\color{white}\fontsize{9}{12}\selectfont\cmufont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
+        {\color{white}\fontsize{9}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
         \hspace{0.3em}%
     }%
 }
@@ -606,8 +606,6 @@ def _generate_author_note() -> str:
         content = intro_path.read_text(encoding='utf-8')
         content = _clean_content(content)
         content = _markdown_to_latex(content, use_cartouche_h1=True)
-        content = content.replace(r'\subsection*{', r'\subsection*{\cmufont ')
-        content = content.replace(r'\subsubsection*{', r'\subsubsection*{\cmufont ')
     else:
         content = ""
 
@@ -659,7 +657,7 @@ def _create_letter_page(letter: str) -> str:
 \renewcommand{{\currentletter}}{{{letter}}}
 \vspace*{{\fill}}
 \begin{{center}}
-{{\fontsize{{60}}{{72}}\selectfont\cmufont\bfseries {letter}}}
+{{\fontsize{{120}}{{144}}\selectfont\cmufont\bfseries {letter}}}
 \end{{center}}
 \vspace*{{\fill}}
 \clearpage
