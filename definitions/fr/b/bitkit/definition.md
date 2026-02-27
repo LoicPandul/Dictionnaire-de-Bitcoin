@@ -1,0 +1,1 @@
+Portefeuille Bitcoin mobile en *self-custody* développé par Synonym, qui combine les paiements on-chain et Lightning Network dans une même application. Bitkit propose deux comptes : « Savings » (on-chain) et « Spending » (Lightning), ainsi que le *coin control* et l'achat de cartes cadeaux via Bitrefill. Le logiciel est open source.
