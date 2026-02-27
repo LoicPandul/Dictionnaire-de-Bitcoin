@@ -34,6 +34,11 @@ class Dictionary:
                 # Parcourir chaque définition dans cette lettre
                 for def_dir in sorted(letter_dir.iterdir()):
                     if def_dir.is_dir():
+                        # Supprimer les dossiers de définition vides
+                        if not any(def_dir.iterdir()):
+                            print(f"[CLEANUP] Suppression du dossier vide: {def_dir.name}")
+                            def_dir.rmdir()
+                            continue
                         try:
                             definition = Definition.load(def_dir)
                             definitions.append(definition)
