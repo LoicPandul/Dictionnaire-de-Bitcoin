@@ -232,6 +232,11 @@ def _generate_preamble(fonts_path: str = "") -> str:
     BoldFont=FiraCode-Bold,
     Scale=0.85
 ]
+\newfontfamily\cmufont{cmunrm}[
+    Path=%%FONTSPATH%%,
+    Extension=.ttf,
+    AutoFakeBold=1.5
+]
 
 % Typographie
 \usepackage{microtype}
@@ -431,7 +436,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \newcommand{\vedettefit}[1]{%
     \fcolorbox{black}{black}{%
         \hspace{0.3em}%
-        {\color{white}\fontsize{9}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
+        {\color{white}\fontsize{9}{12}\selectfont\cmufont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
         \hspace{0.3em}%
     }%
 }
@@ -440,7 +445,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \newcommand{\tocletterbox}[1]{%
     \fcolorbox{black}{black}{%
         \hspace{0.2em}%
-        {\color{white}\fontsize{11}{13}\selectfont\bfseries #1}%
+        {\color{white}\fontsize{11}{13}\selectfont\cmufont\bfseries #1}%
         \hspace{0.2em}%
     }%
 }
@@ -459,7 +464,7 @@ def _generate_half_title(legal: dict) -> str:
 \thispagestyle{{frontmatter}}
 \vspace*{{\fill}}
 \begin{{center}}
-{{\fontsize{{18}}{{22}}\selectfont\bfseries {title}}}
+{{\fontsize{{18}}{{22}}\selectfont\cmufont\bfseries {title}}}
 \end{{center}}
 \vspace*{{\fill}}
 \clearpage
@@ -476,12 +481,12 @@ def _generate_title_page(legal: dict) -> str:
 \thispagestyle{{frontmatter}}
 \vspace*{{3cm}}
 \begin{{center}}
-{{\fontsize{{22}}{{26}}\selectfont\bfseries {title}}}\\[0.6cm]
-{{\fontsize{{11}}{{14}}\selectfont {subtitle.upper()}}}
+{{\fontsize{{22}}{{26}}\selectfont\cmufont\bfseries {title}}}\\[0.6cm]
+{{\fontsize{{11}}{{14}}\selectfont\cmufont {subtitle.upper()}}}
 \end{{center}}
 \vfill
 \begin{{center}}
-{{\fontsize{{12}}{{16}}\selectfont\itshape {author}}}
+{{\fontsize{{12}}{{16}}\selectfont\cmufont\itshape {author}}}
 \end{{center}}
 \vspace*{{2cm}}
 \clearpage
@@ -543,7 +548,7 @@ def _generate_toc(dictionary: Dictionary) -> str:
 \clearpage
 \thispagestyle{toc}
 \begin{center}
-{\fontsize{14}{18}\selectfont\bfseries TABLE DES MATIÈRES}
+{\fontsize{14}{18}\selectfont\cmufont\bfseries TABLE DES MATIÈRES}
 \end{center}
 \vspace{0.3cm}
 """)
@@ -601,6 +606,8 @@ def _generate_author_note() -> str:
         content = intro_path.read_text(encoding='utf-8')
         content = _clean_content(content)
         content = _markdown_to_latex(content, use_cartouche_h1=True)
+        content = content.replace(r'\subsection*{', r'\subsection*{\cmufont ')
+        content = content.replace(r'\subsubsection*{', r'\subsubsection*{\cmufont ')
     else:
         content = ""
 
@@ -608,7 +615,7 @@ def _generate_author_note() -> str:
 \clearpage
 \thispagestyle{{frontmatter}}
 \begin{{center}}
-{{\fontsize{{14}}{{18}}\selectfont\bfseries NOTE DE L'AUTEUR}}
+{{\fontsize{{14}}{{18}}\selectfont\cmufont\bfseries NOTE DE L'AUTEUR}}
 \end{{center}}
 \vspace{{-0.2em}}
 
@@ -625,6 +632,8 @@ def _generate_contributors() -> str:
         content = contributors_path.read_text(encoding='utf-8')
         content = _clean_content(content)
         content = _markdown_to_latex(content)
+        content = content.replace(r'\subsection*{', r'\subsection*{\cmufont ')
+        content = content.replace(r'\subsubsection*{', r'\subsubsection*{\cmufont ')
     else:
         content = ""
 
@@ -632,7 +641,7 @@ def _generate_contributors() -> str:
 \clearpage
 \thispagestyle{{frontmatter}}
 \begin{{center}}
-{{\fontsize{{14}}{{18}}\selectfont\bfseries CONTRIBUTEURS ET REMERCIEMENTS}}
+{{\fontsize{{14}}{{18}}\selectfont\cmufont\bfseries CONTRIBUTEURS ET REMERCIEMENTS}}
 \end{{center}}
 \vspace{{-0.2em}}
 
@@ -650,7 +659,7 @@ def _create_letter_page(letter: str) -> str:
 \renewcommand{{\currentletter}}{{{letter}}}
 \vspace*{{\fill}}
 \begin{{center}}
-{{\fontsize{{60}}{{72}}\selectfont\bfseries {letter}}}
+{{\fontsize{{60}}{{72}}\selectfont\cmufont\bfseries {letter}}}
 \end{{center}}
 \vspace*{{\fill}}
 \clearpage
