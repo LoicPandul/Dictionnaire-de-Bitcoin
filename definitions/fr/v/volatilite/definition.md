@@ -1,0 +1,1 @@
+Mesure de l'amplitude des variations du prix d'un actif sur une période donnée. Dans le contexte de Bitcoin, la volatilité désigne les fluctuations parfois importantes du cours du BTC par rapport aux monnaies fiat comme le dollar ou l'euro. Une volatilité élevée signifie que le prix peut connaître de fortes hausses ou baisses en peu de temps.
