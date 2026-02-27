@@ -1,0 +1,5 @@
+Adresse Bitcoin vers laquelle des fonds sont envoyés de manière irréversible, sans possibilité de les dépenser par la suite. Personne ne possède la clé privée correspondante : envoyer des bitcoins vers une telle adresse revient à les détruire définitivement, à moins qu'il soit un jour possible de casser la cryptographie sous-jacente.
+
+Ces adresses sont généralement construites de manière arbitraire, sans être dérivées d'une clé privée, afin de pouvoir prouver que l'on ne la connait pas. La probabilité qu'une clé privée valide corresponde à une adresse choisie aléatoirement est astronomiquement faible, ce qui rend les fonds effectivement irrécupérables. Par exemple, il y a l'adresse : `1BitcoinEaterAddressDontSendf59kuE`.
+
+Le brûlage de bitcoins peut servir à différentes fins. Le protocole Counterparty l'a utilisé en 2014 lors de sa phase de *proof of burn* pour distribuer ses propres tokens en échange de bitcoins détruits. Cela peut également être une preuve d'engagement irréversible dans certains mécanismes cryptographiques, ou bien simplement une action ludique.
