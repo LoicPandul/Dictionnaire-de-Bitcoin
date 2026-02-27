@@ -1,0 +1,3 @@
+Portefeuille mobile spécialisé dans les paiements via le Lightning Network. Wallet of Satoshi est conçu pour offrir une expérience d'utilisation simplifiée : l'utilisateur peut envoyer et recevoir des paiements Lightning en quelques secondes, sans aucune configuration technique.
+
+Historiquement, Wallet of Satoshi fonctionnait sur un modèle custodial : l'entreprise détenait les clés privées et gérait les fonds au nom de l'utilisateur. Ce modèle simplifie l'utilisation, mais implique un compromis : l'utilisateur doit faire confiance au fournisseur pour la garde de ses bitcoins. Maintenant, WoS propose également en option un nœud Lightning embarqué directement dans l'application, permettant ainsi d'adopter un modèle self-custodial.
