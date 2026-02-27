@@ -1,0 +1,8 @@
+uuid: "68c4d22f-20d6-4075-a8ba-c9459ef062bc"
+title: "HSM"
+slug: "hsm"
+category: "CRYPTOGRAPHIE"
+french_term: "MODULE DE SÉCURITÉ MATÉRIEL"
+cross_references:
+  - "2fc3ec2b-e4c3-4ecd-a661-6ebf8411be7a"
+version: "1"
