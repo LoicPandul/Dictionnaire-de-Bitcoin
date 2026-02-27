@@ -1,0 +1,1 @@
+Borne physique qui permet d'acheter ou, dans certains cas, de vendre des bitcoins en échange de monnaie fiduciaire (espèces ou carte bancaire). Aussi appelé BTM (*Bitcoin Teller Machine*), ce type de distributeur offre un point d'accès direct à Bitcoin sans passer par une plateforme d'échange en ligne.
