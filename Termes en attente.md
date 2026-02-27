@@ -20,9 +20,6 @@ ___
 
 
 
-## GRIEFING ATTACK
-
-
 
 ## HASHLOCKS
 
@@ -55,9 +52,6 @@ ___
 
 ## MINIMINT
 
-
-
-## MUSIG2
 
 
 
@@ -97,21 +91,12 @@ ___
 
 
 
-## PREUVE DE FRAUDE
-
-> *En anglais, ce terme est traduit « Fraud Proof ».*
-
-
 
 ## PURGE
 
 
 
 ## PYBLOCK
-
-
-
-## RACE ATTACK
 
 
 
@@ -139,17 +124,10 @@ ___
 
 
 
-## SPLICING
-
-
 
 ## SRC-20
 
 
-
-## STRONG FEDERATION
-
-Liquid
 
 
 ## SUBVERSION (SVN)
