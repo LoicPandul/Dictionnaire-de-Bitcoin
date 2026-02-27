@@ -1,0 +1,5 @@
+Risque qu'un tiers auquel on a confié ses fonds ou avec lequel on a conclu un accord ne respecte pas ses obligations, entraînant une perte financière. Dans le contexte de Bitcoin, ce risque se manifeste principalement lorsque des utilisateurs déposent leurs bitcoins sur des plateformes d'échange centralisées (CEX) ou auprès d'autres dépositaires.
+
+Le protocole Bitcoin a été conçu pour éliminer le besoin de confiance envers un tiers. Lorsqu'un utilisateur détient ses propres clés privées, il n'est exposé à aucun risque de contrepartie sur ses bitcoins. En revanche, dès qu'il confie la garde de ses fonds à une entité, il dépend de la solvabilité, de l'honnêteté et de la compétence technique de celle-ci.
+
+L'histoire de Bitcoin est jalonnée de pertes massives liées à ce risque : le piratage de Mt. Gox en 2014, la faillite de QuadrigaCX en 2019 ou l'effondrement de FTX en 2022. La communauté Bitcoin insiste donc sur le principe de *self-custody* : la détention personnelle de ses clés privées reste le seul moyen d'éliminer complètement le risque de contrepartie.
