@@ -1,0 +1,1 @@
+Portefeuille Bitcoin mobile custodial, anciennement connu sous le nom de « Bitcoin Beach Wallet ». Développé par Galoy, il a été créé à l'origine pour la communauté Bitcoin Beach d'El Zonte au Salvador. Il permet de gérer des soldes en BTC et en USD (via les Stablesats), et d'envoyer ou recevoir des paiements Lightning et on-chain.
