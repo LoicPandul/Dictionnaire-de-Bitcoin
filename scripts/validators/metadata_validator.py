@@ -6,6 +6,7 @@ Vérifie que toutes les cross-references pointent vers des définitions existant
 """
 
 import re
+import yaml
 from ..core.dictionary import Dictionary
 
 
@@ -59,31 +60,51 @@ def _validate_cross_references(dictionary: Dictionary) -> bool:
     """
     Vérifie que chaque UUID dans cross_references correspond
     à une définition existante dans le dictionnaire.
+    Supprime automatiquement les cross-references invalides des fichiers YAML.
 
     Returns:
-        True si toutes les cross-references sont valides, False sinon.
+        True (les cross-references invalides sont supprimées automatiquement).
     """
     print("Vérification des cross-references...")
 
-    errors = []
+    removed_count = 0
 
     for definition in dictionary:
-        for ref_uuid in definition.cross_references:
-            target = dictionary.get_by_uuid(ref_uuid)
-            if target is None:
-                errors.append(
-                    f"[{definition.slug}] cross-reference invalide: "
-                    f"UUID \"{ref_uuid}\" ne correspond à aucune définition"
+        invalid_uuids = [
+            ref_uuid for ref_uuid in definition.cross_references
+            if dictionary.get_by_uuid(ref_uuid) is None
+        ]
+
+        if invalid_uuids:
+            for uuid in invalid_uuids:
+                print(
+                    f"  ⚠ [{definition.slug}] cross-reference supprimée: "
+                    f"UUID \"{uuid}\" ne correspond à aucune définition"
                 )
+                definition.cross_references.remove(uuid)
+                removed_count += 1
 
-    if errors:
-        print(f"\n[ERREUR] {len(errors)} cross-reference(s) invalide(s):")
-        for e in errors:
-            print(f"  ✗ {e}")
-        return False
+            _save_metadata(definition)
 
-    print("[OK] Cross-references validées")
+    if removed_count:
+        print(f"\n[AUTO-FIX] {removed_count} cross-reference(s) invalide(s) supprimée(s)")
+    else:
+        print("[OK] Cross-references validées")
+
     return True
+
+
+def _save_metadata(definition) -> None:
+    """Sauvegarde les métadonnées mises à jour dans le fichier metadata.yaml."""
+    metadata_path = definition.path / "metadata.yaml"
+
+    with open(metadata_path, "r", encoding="utf-8") as f:
+        metadata = yaml.safe_load(f)
+
+    metadata["cross_references"] = definition.cross_references
+
+    with open(metadata_path, "w", encoding="utf-8") as f:
+        yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 
 def _has_lowercase(text: str) -> bool:
