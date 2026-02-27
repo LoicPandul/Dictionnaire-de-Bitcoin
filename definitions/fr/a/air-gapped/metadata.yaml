@@ -1,0 +1,9 @@
+uuid: "600be69c-5a75-4f1d-88b2-e5b836e15d00"
+title: "AIR-GAPPED"
+slug: "air-gapped"
+category: "PORTEFEUILLE"
+french_term: "ISOLÉ DU RÉSEAU"
+cross_references:
+  - "3cab2140-98c3-4024-81c9-070fc4bb3940"
+  - "fc722a57-45f7-4263-b2a1-6d3bf7b8c060"
+version: "1"
