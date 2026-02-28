@@ -1,0 +1,1 @@
+Stock de bitcoins constitué par un État, une institution ou une entreprise comme protection contre l'instabilité économique, la dépréciation monétaire ou les risques géopolitiques.
