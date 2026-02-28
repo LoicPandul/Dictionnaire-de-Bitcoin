@@ -1,0 +1,1 @@
+Pool de minage de Bitcoin fondée en 2013 par Bitmain Technologies, le principal fabricant de matériel de minage ASIC. Basée en Chine, Antpool figure régulièrement parmi les plus grandes pools de minage au monde en termes de hashrate. Elle propose plusieurs méthodes de rémunération et s'adresse aussi bien aux mineurs individuels qu'aux infrastructures de minage professionnelles.
