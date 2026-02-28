@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1344 définitions du dictionnaire.
 
 ---
 
@@ -517,6 +517,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [COOKIE](definitions/fr/c/cookie/definition.md) | `795ebe78-a536-4177-bae6-f436553119f1` |
 | [COOPERATIVE CLOSE](definitions/fr/c/cooperative-close/definition.md) | `fc01ce56-bee1-4c5b-a9fe-acb98cf1c63a` |
 | [COORDINATEUR DE COINJOIN](definitions/fr/c/coordinateur-de-coinjoin/definition.md) | `911e17ef-1a6f-4838-b798-28cb96e56674` |
+| [COUNTERPARTY](definitions/fr/c/counterparty/definition.md) | `67ea3695-fe94-476e-abf2-4ee091a2bcf4` |
 | [COURBE ELLIPTIQUE](definitions/fr/c/courbe-elliptique/definition.md) | `da773fd3-c1e6-43fb-8764-2cca100725d5` |
 | [COVENANT](definitions/fr/c/covenant/definition.md) | `a066159b-a5a7-4e63-8e7e-fcf4c18611f1` |
 | [COVERT ASICBOOST](definitions/fr/c/covert-asicboost/definition.md) | `02b9a69f-7212-4e1f-b32a-6692a27977a8` |
@@ -644,6 +645,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [FINNEY HAL](definitions/fr/f/finney-hal/definition.md) | `9d2edbfc-eeb0-4310-9072-3500451301fc` |
 | [FLAG DAY](definitions/fr/f/flag-day/definition.md) | `bcda76f1-8daf-4d1e-bab2-431fe6991f83` |
 | [FONCTION DE HACHAGE](definitions/fr/f/fonction-de-hachage/definition.md) | `1bdb482e-52c8-48fe-b31c-d542311f0fc6` |
+| [FONCTION DE HACHAGE TAGUÉE](definitions/fr/f/fonction-de-hachage-taguee/definition.md) | `8d72bfe8-0405-45a9-a071-9599d05295e6` |
 | [FONCTIONNAIRE](definitions/fr/f/fonctionnaire/definition.md) | `6b312e77-da13-43a0-880e-24f727285bf8` |
 | [FONGIBILITÉ](definitions/fr/f/fongibilite/definition.md) | `a5f05ecc-5a81-4f97-aa00-f79484ebc76e` |
 | [FORCE BRUTE](definitions/fr/f/force-brute/definition.md) | `9b32ed34-45aa-4742-8f3e-ca2443d7fd7d` |
@@ -660,6 +662,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [FPPS - FULL PAY PER SHARE](definitions/fr/f/fpps-full-pay-per-share/definition.md) | `8bc4de15-c622-4d25-8fd2-7347d43f5f80` |
 | [FRAIS DE TRANSACTION](definitions/fr/f/frais-de-transaction/definition.md) | `a3ad6a6c-2765-41fe-b1d5-38c7b7e4a34a` |
 | [FROSTSNAP](definitions/fr/f/frostsnap/definition.md) | `d2535c2b-6dee-4052-b5d7-f32bedbfde9d` |
+| [FULCRUM](definitions/fr/f/fulcrum/definition.md) | `d7456a01-75cc-4680-9e1b-dd26d0f4897d` |
 | [FULL RBF](definitions/fr/f/full-rbf/definition.md) | `1ba63adf-9645-450f-ab15-352b9e291527` |
 
 ## G
@@ -971,7 +974,9 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [OP_CHECKSEQUENCEVERIFY - 0XB2](definitions/fr/o/op-checksequenceverify-0xb2/definition.md) | `89f252be-530d-4502-ac02-552058abdc1c` |
 | [OP_CHECKSIG - 0XAC](definitions/fr/o/op-checksig-0xac/definition.md) | `5108d669-f96f-40dc-815e-5665bdf5848f` |
 | [OP_CHECKSIGADD - 0XBA](definitions/fr/o/op-checksigadd-0xba/definition.md) | `61d4b3da-e6df-4938-9f56-65806d086e18` |
+| [OP_CHECKSIGFROMSTACK - 0XCC](definitions/fr/o/op-checksigfromstack-0xcc/definition.md) | `461d9b9e-2b9e-4367-a0cd-649c6be43c3c` |
 | [OP_CHECKSIGVERIFY - 0XAD](definitions/fr/o/op-checksigverify-0xad/definition.md) | `0c2203a2-cf73-4328-877d-ec149d48817e` |
+| [OP_CHECKTEMPLATEVERIFY - 0XB3](definitions/fr/o/op-checktemplateverify-0xb3/definition.md) | `da174fdd-78cd-4f2d-8232-1eb357c71017` |
 | [OP_CODESEPARATOR - 0XAB](definitions/fr/o/op-codeseparator-0xab/definition.md) | `1a613f45-cf3f-4c76-812e-2890abf77a2a` |
 | [OP_DEPTH - 0X74](definitions/fr/o/op-depth-0x74/definition.md) | `9177a343-e1d2-4f83-8170-7f2cd91c6e23` |
 | [OP_DROP - 0X75](definitions/fr/o/op-drop-0x75/definition.md) | `5baa2c1f-e52a-413e-b6fd-a07adac8e1e1` |
@@ -1020,6 +1025,8 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [OP_TOALTSTACK - 0X6B](definitions/fr/o/op-toaltstack-0x6b/definition.md) | `2741f23e-1d27-41ee-9947-7820f58abde6` |
 | [OP_TRUE - 0X51](definitions/fr/o/op-true-0x51/definition.md) | `28402114-7ee7-4370-8f92-5758a6143259` |
 | [OP_TUCK - 0X7D](definitions/fr/o/op-tuck-0x7d/definition.md) | `d1db2a05-5a20-431e-b425-3c06b6b578f6` |
+| [OP_TXHASH - 0XBD](definitions/fr/o/op-txhash-0xbd/definition.md) | `3dd94036-e292-4c62-97e5-f5002b7836ae` |
+| [OP_VAULT - 0XBB](definitions/fr/o/op-vault-0xbb/definition.md) | `84e637ac-b1a3-45c3-ab91-8960fe5f9b50` |
 | [OP_VER - 0X62](definitions/fr/o/op-ver-0x62/definition.md) | `eb618b95-ea32-4c69-b86e-ae96337517fe` |
 | [OP_VERIFY - 0X69](definitions/fr/o/op-verify-0x69/definition.md) | `4b2e959b-217f-407a-9a1d-0660999d0cdc` |
 | [OP_WITHIN - 0XA5](definitions/fr/o/op-within-0xa5/definition.md) | `31274903-119b-405f-ac3e-e10a6d819a9c` |
@@ -1136,6 +1143,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [PUBLIC CHANNEL](definitions/fr/p/public-channel/definition.md) | `bacc85e4-5f65-4d37-a12e-f8707e046b6c` |
 | [PUBLIC POOL](definitions/fr/p/public-pool/definition.md) | `92add8cd-72b6-4c34-a509-7276f202da78` |
 | [PULL REQUEST](definitions/fr/p/pull-request/definition.md) | `0c809ed2-0373-4cd2-b595-46f71e9bc2f6` |
+| [PURGE DE MEMPOOL](definitions/fr/p/purge-de-mempool/definition.md) | `80de0c03-0968-4e81-b248-3dee12138654` |
 
 ## Q
 
@@ -1192,6 +1200,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [RSMPPS](definitions/fr/r/rsmpps/definition.md) | `486310e9-83da-48ae-8978-a516346c432b` |
 | [RTL - RIDE THE LIGHTNING](definitions/fr/r/rtl-ride-the-lightning/definition.md) | `364564fd-e6ee-49ea-a965-e05cc68448e5` |
 | [RUNES](definitions/fr/r/runes/definition.md) | `2c101ec0-f616-46c2-97e9-fad4e433d857` |
+| [RUST BITCOIN](definitions/fr/r/rust-bitcoin/definition.md) | `bbf5f967-9d73-448b-8e56-dedd8b89afe3` |
 | [RUST-LIGHTNING](definitions/fr/r/rust-lightning/definition.md) | `4838d9ab-212e-4945-a46b-1b158bfa42f0` |
 
 ## S
@@ -1227,6 +1236,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [SEED NODES](definitions/fr/s/seed-nodes/definition.md) | `d9461a0b-ca50-405d-b622-67cf5e63d3ee` |
 | [SEEDKEEPER](definitions/fr/s/seedkeeper/definition.md) | `73ab3b8e-06d3-4791-99db-53805b1e046f` |
 | [SEEDSIGNER](definitions/fr/s/seedsigner/definition.md) | `856af579-2bef-4d2a-97be-22e4f5b96762` |
+| [SEEDXOR](definitions/fr/s/seedxor/definition.md) | `6777195e-5552-46de-a654-cc5ddac3c146` |
 | [SEGWIT](definitions/fr/s/segwit/definition.md) | `73c3a8a9-6dbb-4ad2-8456-2c60c8e89709` |
 | [SEGWIT V0](definitions/fr/s/segwit-v0/definition.md) | `7ebfb5c1-042b-4923-8247-0173ce946bb0` |
 | [SEGWIT V1](definitions/fr/s/segwit-v1/definition.md) | `ad162151-8d99-4bf3-85d6-69587d90f21f` |
@@ -1273,6 +1283,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [SMALL BLOCKERS](definitions/fr/s/small-blockers/definition.md) | `33d2fd70-6b5a-4986-9925-ccefffa1045f` |
 | [SMPPS](definitions/fr/s/smpps/definition.md) | `f45a443f-1fa7-40c3-83d0-507da548113e` |
 | [SMT - SPARSE MERKLE TREE](definitions/fr/s/smt-sparse-merkle-tree/definition.md) | `dbf8b5dc-6bc5-48cd-9f20-fced1421eab5` |
+| [SNAPSHOT](definitions/fr/s/snapshot/definition.md) | `bc1f0a29-0f6c-465b-8d51-f08ba911491d` |
 | [SNARK](definitions/fr/s/snark/definition.md) | `f9bcef6d-f786-4092-a6da-f3370621758c` |
 | [SO - SPARK OPERATOR](definitions/fr/s/so-spark-operator/definition.md) | `52a526bf-bdc8-4abf-b48e-17398368f6a9` |
 | [SOFT FORK](definitions/fr/s/soft-fork/definition.md) | `538faf8a-9d12-4cb7-ae82-979e654005ce` |
@@ -1281,6 +1292,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [SOROBAN](definitions/fr/s/soroban/definition.md) | `abac8bae-cc00-4335-9f65-a85a4db349d6` |
 | [SORTIE LA PLUS GRANDE](definitions/fr/s/sortie-la-plus-grande/definition.md) | `46983665-e82e-477e-81b4-bbef5a8cd244` |
 | [SORTIE NON RENTABLE](definitions/fr/s/sortie-non-rentable/definition.md) | `9e25f457-ebb3-4e15-90d2-bea9130eeec5` |
+| [SOURCEFORGE](definitions/fr/s/sourceforge/definition.md) | `e28e5bec-b6ca-4a29-8455-de45ccc326cc` |
 | [SPARK](definitions/fr/s/spark/definition.md) | `e8c68391-61f7-4de1-9f59-ff242c35f501` |
 | [SPARK SERVICE PROVIDER](definitions/fr/s/spark-service-provider/definition.md) | `2399d59b-c952-4182-b5e9-1efc2ea61012` |
 | [SPARK TREE](definitions/fr/s/spark-tree/definition.md) | `16520a0f-affd-499c-bacc-3badd9ccd00d` |
@@ -1295,6 +1307,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 | [SPOF](definitions/fr/s/spof/definition.md) | `dfefbadb-ee98-4f78-b931-4a494ff9952e` |
 | [SPREAD - WST](definitions/fr/s/spread-wst/definition.md) | `c8dfd10b-05df-415f-8348-30264dfd867b` |
 | [SPY MINING](definitions/fr/s/spy-mining/definition.md) | `82e67460-1685-4adb-bd93-982dfde2d6d1` |
+| [SRC-20](definitions/fr/s/src-20/definition.md) | `bfaa4ed3-b33c-461f-b444-695d9fa2d63d` |
 | [STABLECOIN](definitions/fr/s/stablecoin/definition.md) | `4ac004e1-30a6-4070-af5b-cdb840d6f39d` |
 | [STACKER](definitions/fr/s/stacker/definition.md) | `c0633ecc-f3c1-4de1-9bd8-a92a203a9fba` |
 | [STALE SHARE](definitions/fr/s/stale-share/definition.md) | `5cc2000b-7d32-4e65-acd4-98087ea90a0b` |
@@ -1327,6 +1340,7 @@ Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 
 | Terme | UUID |
 |-------|------|
+| [TAIL EMISSION](definitions/fr/t/tail-emission/definition.md) | `b36f431e-8a5f-4d46-83f5-c2aee91b70b7` |
 | [TAPD](definitions/fr/t/tapd/definition.md) | `dcc5ee68-382d-48d9-aa3b-51773f4efb18` |
 | [TAPROOT](definitions/fr/t/taproot/definition.md) | `df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6` |
 | [TAPROOT ASSETS PROTOCOL](definitions/fr/t/taproot-assets-protocol/definition.md) | `7e06f113-180b-4d77-abda-2a5be7fa9a25` |
