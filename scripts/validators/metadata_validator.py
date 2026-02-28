@@ -8,20 +8,23 @@ Vérifie que toutes les cross-references pointent vers des définitions existant
 import re
 import yaml
 from ..core.dictionary import Dictionary
+from ..config import TEMPLATES_DIR
 
 
 def validate(dictionary: Dictionary) -> bool:
     """
     Vérifie les métadonnées de toutes les définitions :
     - Casse des champs title, english_term, french_term
+    - Validité des catégories (doivent exister dans categories.yaml)
     - Validité des cross-references (UUIDs existants)
 
     Returns:
         True si tout est OK, False si des problèmes ont été trouvés.
     """
     casse_ok = _validate_casse(dictionary)
+    categories_ok = _validate_categories(dictionary)
     crossref_ok = _validate_cross_references(dictionary)
-    return casse_ok and crossref_ok
+    return casse_ok and categories_ok and crossref_ok
 
 
 def _validate_casse(dictionary: Dictionary) -> bool:
@@ -53,6 +56,38 @@ def _validate_casse(dictionary: Dictionary) -> bool:
         return False
 
     print("[OK] Métadonnées validées (casse)")
+    return True
+
+
+def _validate_categories(dictionary: Dictionary) -> bool:
+    """Vérifie que chaque définition a une catégorie valide définie dans categories.yaml."""
+    print("Vérification des catégories...")
+
+    # Charger les catégories autorisées
+    categories_path = TEMPLATES_DIR / "categories.yaml"
+    with open(categories_path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    valid_categories = set(data.get("categories", []))
+
+    errors = []
+
+    for definition in dictionary:
+        cat = definition.category
+        if not cat:
+            errors.append(f"[{definition.slug}] catégorie manquante")
+        elif cat not in valid_categories:
+            errors.append(
+                f"[{definition.slug}] catégorie invalide: \"{cat}\""
+            )
+
+    if errors:
+        print(f"\n[ERREUR] {len(errors)} problème(s) de catégorie:")
+        for e in errors:
+            print(f"  ✗ {e}")
+        print(f"\nCatégories autorisées: {', '.join(sorted(valid_categories))}")
+        return False
+
+    print("[OK] Catégories validées")
     return True
 
 
