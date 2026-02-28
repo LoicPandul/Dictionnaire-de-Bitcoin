@@ -91,7 +91,7 @@ Naviguez vers `definitions/fr/{lettre}/{slug}/` et modifiez le fichier `definiti
 
 Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez en tête une modification mineure, vous pouvez également créer une issue sur GitHub plutôt qu'une PR.
 
-Dans le fichier [Termes en attente.md](./Termes%20en%20attente.md), vous trouverez tous les termes auxquels j'ai déjà pensé, mais que je n'ai pas encore eu le temps de définir. Si vous souhaitez contribuer, vous pouvez piocher dans cette liste.
+Dans le fichier [pending_terms.yaml](./templates/pending_terms.yaml), vous trouverez tous les termes auxquels j'ai déjà pensé, mais que je n'ai pas encore eu le temps de définir. Si vous souhaitez contribuer, vous pouvez piocher dans cette liste.
 
 Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement à info@pandul.fr ou sur [mon Twitter](https://x.com/Loic_Pandul).
 
@@ -140,7 +140,8 @@ Dictionnaire-de-Bitcoin/
 │   ├── legal.yaml                  # Informations légales et métadonnées
 │   ├── introduction.md             # Note de l'auteur
 │   ├── contributors.md             # Liste des contributeurs
-│   └── categories.yaml             # Liste des catégories
+│   ├── categories.yaml             # Liste des catégories
+│   └── pending_terms.yaml          # Termes en attente de définition
 │
 ├── scripts/                        # Scripts de génération
 │   ├── main.py                     # Point d'entrée principal
@@ -152,7 +153,6 @@ Dictionnaire-de-Bitcoin/
 ├── Dictionnaire de Bitcoin.pdf     # Version PDF
 ├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
-├── Termes en attente.md            # Termes à définir
 ├── README.md
 ├── LICENCE_FR.md
 └── LICENSE.md

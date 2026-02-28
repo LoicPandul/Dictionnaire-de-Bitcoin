@@ -1,0 +1,15 @@
+# Termes en attente de definition
+#
+# Ce fichier liste les termes qui n'ont pas encore de definition dans le
+# dictionnaire, mais qui sont prevus pour une integration future.
+# Consultez cette liste avant de soumettre une issue pour eviter les doublons.
+#
+# Format :
+#   - term: "NOM DU TERME"          # obligatoire, en majuscules
+#     category: "CATEGORIE"          # optionnel, voir categories.yaml
+#     note: "precision facultative"  # optionnel, contexte ou remarque
+
+pending_terms:
+  - term: "STRATUM V2"
+    category: "MINAGE"
+    note: "Nouveau protocole de communication entre mineurs et pools"
