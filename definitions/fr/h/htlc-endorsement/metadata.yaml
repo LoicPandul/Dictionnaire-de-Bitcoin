@@ -1,0 +1,10 @@
+uuid: "80966d30-7cf6-4c23-94c3-b88b4e5b72b2"
+title: "HTLC ENDORSEMENT"
+slug: "htlc-endorsement"
+category: "LIGHTNING NETWORK"
+french_term: "ENDOSSEMENT DE HTLC"
+cross_references:
+  - "45f431f2-f91e-4986-a2b3-968252720501"
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "e2b26fa2-39a2-4159-8424-929f5ba634d6"
+version: "1"
