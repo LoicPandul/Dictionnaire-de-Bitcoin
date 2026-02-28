@@ -1,0 +1,5 @@
+Site web ou application qui distribue gratuitement de petites quantités de bitcoins à ses visiteurs, généralement en échange de la résolution d'un captcha ou d'une tâche simple. Le terme « faucet » (littéralement « robinet ») fait référence à l'idée de distribuer de la monnaie au goutte-à-goutte.
+
+Le premier faucet Bitcoin a été créé par Gavin Andresen en juin 2010 et distribuait 5 BTC par visiteur. Au total, environ 19 700 BTC ont été distribués par ce site, dans le but de faire connaître Bitcoin et d'encourager son adoption à une époque où la cryptomonnaie n'avait quasiment aucune valeur marchande.
+
+Des faucets existent aujourd'hui principalement sur les réseaux de test (testnet, signet), où ils servent à fournir des bitcoins de test aux développeurs. Sur le réseau principal, les faucets ont essentiellement disparu en raison de la valeur élevée du bitcoin et de la prolifération de bots.
