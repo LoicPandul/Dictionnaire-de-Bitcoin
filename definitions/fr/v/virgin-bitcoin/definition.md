@@ -1,0 +1,1 @@
+Unité de bitcoin fraîchement émise dans une transaction coinbase (récompense de bloc) et qui n'a encore jamais été dépensée dans une transaction ultérieure. Son historique de transactions est donc vierge de toute association avec des activités identifiées par les outils d'analyse de chaîne.
