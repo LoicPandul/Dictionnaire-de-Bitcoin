@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1330 définitions du dictionnaire.
 
 ---
 
@@ -494,6 +494,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [COMMITMENT FEE](definitions/fr/c/commitment-fee/definition.md) | `d84cffe5-9d68-44a5-846f-95b8aa9a47ea` |
 | [COMPACT BLOCK FILTERS](definitions/fr/c/compact-block-filters/definition.md) | `c36d7bef-5012-418c-bc76-073c554c1e5f` |
 | [COMPACT BLOCK RELAY](definitions/fr/c/compact-block-relay/definition.md) | `232a8659-9aaf-4842-b275-24ebc331a51b` |
+| [COMPACTSIZE](definitions/fr/c/compactsize/definition.md) | `666c23e2-51a8-473d-b244-e6c5f37aef4d` |
 | [COMPATIBILITÉ RÉTROSPECTIVE](definitions/fr/c/compatibilite-retrospective/definition.md) | `007c2d5c-ab8d-43d0-9816-049921308ceb` |
 | [COMPTE](definitions/fr/c/compte/definition.md) | `7861164f-04b0-44af-9ea7-00202b3757ba` |
 | [CONCATÉNATION](definitions/fr/c/concatenation/definition.md) | `3aafd4aa-4f21-40fe-a8be-9693a18cd5d7` |
@@ -708,6 +709,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [HASHRATE HIJACKING](definitions/fr/h/hashrate-hijacking/definition.md) | `ec3d467e-865e-48e7-ae89-4574dac9d270` |
 | [HAUTEUR DE BLOC](definitions/fr/h/hauteur-de-bloc/definition.md) | `514096e6-7730-4652-aaba-e7523dc3e8e1` |
 | [HD - HIERARCHICAL-DETERMINISTIC](definitions/fr/h/hd-hierarchical-deterministic/definition.md) | `3c2e851b-3e96-4900-a235-9a41cc97adea` |
+| [HEADERS-FIRST SYNC](definitions/fr/h/headers-first-sync/definition.md) | `22055bb5-6ed8-484e-ac07-192733cbeb91` |
 | [HEURE UNIX](definitions/fr/h/heure-unix/definition.md) | `e2acc03e-4278-4819-82c4-06c4d3cb3bb2` |
 | [HEURISTIQUE D'ANALYSE](definitions/fr/h/heuristique-d-analyse/definition.md) | `92b35e63-4cc7-4d78-be58-02d655c89a10` |
 | [HEXADÉCIMAL](definitions/fr/h/hexadecimal/definition.md) | `2b790f49-a9e2-45e8-b4e8-774e751beec5` |
@@ -838,6 +840,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [MAJORITÉ ÉCONOMIQUE](definitions/fr/m/majorite-economique/definition.md) | `fa2c274c-9fb6-4591-8842-862b8c65c2d1` |
 | [MALLÉABILITÉ - TRANSACTION](definitions/fr/m/malleabilite-transaction/definition.md) | `9b22b406-2cf6-4ff0-9bad-d1ab5a0c8f38` |
 | [MAPPER](definitions/fr/m/mapper/definition.md) | `814369ec-51cd-4bb2-a2ed-f4295ccd5760` |
+| [MARA](definitions/fr/m/mara/definition.md) | `e2d2b0f0-917f-46d9-90e9-26a6db76fb99` |
 | [MARKET CAP](definitions/fr/m/market-cap/definition.md) | `628f7a20-c45a-42c6-831d-a498ca2e7a10` |
 | [MASF](definitions/fr/m/masf/definition.md) | `1ba93ca0-7a7c-44a0-b5bf-12234b37d344` |
 | [MAST](definitions/fr/m/mast/definition.md) | `38c18734-0ae2-4645-9992-a6396a631f08` |
@@ -893,6 +896,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [NAKAMOTO SATOSHI](definitions/fr/n/nakamoto-satoshi/definition.md) | `9d578cea-a756-4aff-b436-fc8a5e90a98c` |
 | [NAMECOIN](definitions/fr/n/namecoin/definition.md) | `b45aaf58-7966-498d-aa66-37cbe79ef4ce` |
 | [NAT - NETWORK-ADJUSTED TIME](definitions/fr/n/nat-network-adjusted-time/definition.md) | `5fc25ff3-922c-45b4-b717-cba463da9db1` |
+| [NBITS](definitions/fr/n/nbits/definition.md) | `40d2f421-ceb0-4747-969a-39cfbf0089f7` |
 | [NERDMINER](definitions/fr/n/nerdminer/definition.md) | `9f43fce7-aa0b-4b65-86e0-44b56c0c2135` |
 | [NESTED SEGWIT](definitions/fr/n/nested-segwit/definition.md) | `cddd7a63-8d9c-4ca1-a782-3ce020275816` |
 | [NEUTRINO](definitions/fr/n/neutrino/definition.md) | `027690a7-0005-4df0-ab40-0524604a91e5` |
@@ -1174,6 +1178,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [REVOKEANDACK](definitions/fr/r/revokeandack/definition.md) | `603601a4-8661-4162-95e6-0bbfc3d40ce1` |
 | [RGB](definitions/fr/r/rgb/definition.md) | `3a14cd4f-59a9-4b45-bb92-5370d7b50480` |
 | [RICOCHET](definitions/fr/r/ricochet/definition.md) | `fd64d3cd-a155-4e51-b56b-8f424c448024` |
+| [RIOT PLATFORMS](definitions/fr/r/riot-platforms/definition.md) | `84f9a282-e3bd-413a-a47c-97bc74df01ba` |
 | [RIPEMD160](definitions/fr/r/ripemd160/definition.md) | `99c4221b-0b2d-47e5-b608-1d5610c85e9b` |
 | [RISC ZERO](definitions/fr/r/risc-zero/definition.md) | `c9ba79fa-2634-47a2-bb36-62fa930975bf` |
 | [RISQUE DE CONTREPARTIE](definitions/fr/r/risque-de-contrepartie/definition.md) | `ddc93de1-c38b-45d9-9ff5-82c8081a88d2` |
@@ -1200,6 +1205,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [SATODIME](definitions/fr/s/satodime/definition.md) | `cf685eea-f224-4ffd-b0e7-e5228e6f1705` |
 | [SATOSHILABS](definitions/fr/s/satoshilabs/definition.md) | `f49ce9b9-7d6a-422f-8e6a-0853aa1aa2e9` |
 | [SATSCARD](definitions/fr/s/satscard/definition.md) | `5169d872-cb3e-4bad-a934-6a448abaf1ca` |
+| [SBI CRYPTO](definitions/fr/s/sbi-crypto/definition.md) | `a03f35ba-155e-4798-b3c6-0ca0f1c585ae` |
 | [SCALABILITÉ](definitions/fr/s/scalabilite/definition.md) | `56b10e68-7763-4835-b45d-6d993cc5bdfe` |
 | [SCB - STATIC CHANNEL BACKUP](definitions/fr/s/scb-static-channel-backup/definition.md) | `10deae59-e31e-4347-b709-cbe6e51136f1` |
 | [SCHEMA](definitions/fr/s/schema/definition.md) | `d6efa179-e094-4127-940e-50647d887468` |
@@ -1217,6 +1223,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [SEAL DEFINITION](definitions/fr/s/seal-definition/definition.md) | `70721e3f-305d-4602-9c6e-9d269751e6c9` |
 | [SECP256K1](definitions/fr/s/secp256k1/definition.md) | `27ef6f8d-b26c-43b7-bcc5-45b521dec9ce` |
 | [SECP256R1](definitions/fr/s/secp256r1/definition.md) | `918d7fba-2ff7-4e63-8f57-19cfc7c35825` |
+| [SECPOOL](definitions/fr/s/secpool/definition.md) | `e96460d0-7cdc-4372-8a27-31c25f3011ea` |
 | [SEED NODES](definitions/fr/s/seed-nodes/definition.md) | `d9461a0b-ca50-405d-b622-67cf5e63d3ee` |
 | [SEEDKEEPER](definitions/fr/s/seedkeeper/definition.md) | `73ab3b8e-06d3-4791-99db-53805b1e046f` |
 | [SEEDSIGNER](definitions/fr/s/seedsigner/definition.md) | `856af579-2bef-4d2a-97be-22e4f5b96762` |
@@ -1282,6 +1289,7 @@ Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 | [SPECTER](definitions/fr/s/specter/definition.md) | `6cabc0dd-ef0a-4fcc-9759-5dfaab3c5511` |
 | [SPEEDY TRIAL](definitions/fr/s/speedy-trial/definition.md) | `d6a9c6cc-76c8-4245-adef-772710a37473` |
 | [SPHINX](definitions/fr/s/sphinx/definition.md) | `6737cdad-66f5-4848-bba0-834affd3b6b2` |
+| [SPIDERPOOL](definitions/fr/s/spiderpool/definition.md) | `b14e99c8-2007-4a3e-b6ab-3c079549c446` |
 | [SPIRAL](definitions/fr/s/spiral/definition.md) | `183c3c79-9219-4261-91b1-1c9e73b62506` |
 | [SPLICING](definitions/fr/s/splicing/definition.md) | `aa0260de-cecb-4560-bb58-fce7d2c394fc` |
 | [SPOF](definitions/fr/s/spof/definition.md) | `dfefbadb-ee98-4f78-b931-4a494ff9952e` |
