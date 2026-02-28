@@ -1,0 +1,7 @@
+Format de clé publique sur la courbe elliptique secp256k1 dans lequel seule la coordonnée $x$ du point est conservée, sans l'octet de préfixe qui indique habituellement la parité de la coordonnée $y$. Ce format réduit la taille d'une clé publique de 33 octets (clé compressée classique) à 32 octets.
+
+Sur une courbe elliptique, chaque valeur de $x$ correspond à exactement deux points symétriques par rapport à l'axe des abscisses, qui ne diffèrent que par le signe de leur coordonnée $y$. Pour lever cette ambiguïté sans recourir à un octet supplémentaire, le BIP-0340 (signatures de Schnorr) impose une convention : seul le point dont la coordonnée $y$ est paire est considéré comme valide. Ainsi, le vérificateur peut reconstituer le point complet à partir des seuls 32 octets de $x$.
+
+Ce format est utilisé de façon systématique dans Taproot (BIP-0341) et Tapscript (BIP-0342) pour les clés internes, les clés de sortie et les vérifications de signature au sein des scripts SegWit v1. L'économie d'un octet par clé, bien que modeste en apparence, se cumule sur l'ensemble des transactions du réseau et contribue à réduire la taille des témoins.
+
+Le recours aux clés x-only introduit cependant une contrainte pour les protocoles d'agrégation de clés comme MuSig2 : les participants doivent s'assurer que la clé agrégée finale produit bien un point à coordonnée $y$ paire, ce qui peut nécessiter une étape de négation de la clé privée.
