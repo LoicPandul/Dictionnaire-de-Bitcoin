@@ -1,0 +1,8 @@
+uuid: "461d9b9e-2b9e-4367-a0cd-649c6be43c3c"
+title: "OP_CHECKSIGFROMSTACK - 0XCC"
+slug: "op-checksigfromstack-0xcc"
+category: "SCRIPT"
+cross_references:
+  - "690901c5-0904-4da8-a5bd-4fea08588609"
+  - "5108d669-f96f-40dc-815e-5665bdf5848f"
+version: "1"
