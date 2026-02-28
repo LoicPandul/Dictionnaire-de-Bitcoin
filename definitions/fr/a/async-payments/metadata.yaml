@@ -1,0 +1,9 @@
+uuid: "dcc11d31-0350-4831-b2c9-d2ac081bf468"
+title: "ASYNC PAYMENTS"
+slug: "async-payments"
+category: "LIGHTNING NETWORK"
+french_term: "PAIEMENTS ASYNCHRONES"
+cross_references:
+  - "e2b26fa2-39a2-4159-8424-929f5ba634d6"
+  - "6d6f32a0-761e-4ee4-a189-db65aebc23ef"
+version: "1"
