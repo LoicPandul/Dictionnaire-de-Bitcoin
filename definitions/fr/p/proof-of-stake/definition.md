@@ -1,0 +1,5 @@
+Mécanisme de consensus alternatif à la preuve de travail, dans lequel les validateurs sont sélectionnés pour proposer et confirmer des blocs en fonction de la quantité de jetons qu'ils immobilisent (« stake ») dans le protocole. Plus un participant détient et immobilise de jetons, plus sa probabilité d'être choisi comme validateur augmente.
+
+Ce mécanisme est utilisé par plusieurs systèmes de cryptomonnaies, notamment Ethereum depuis sa transition le 15 septembre 2022. Ses partisans avancent une consommation énergétique bien moindre que celle de la preuve de travail. Ses critiques soulignent qu'il tend à concentrer le pouvoir de validation entre les mains des plus gros détenteurs, reproduisant une dynamique similaire à celle des systèmes financiers traditionnels où la richesse engendre le contrôle dans un système fondamental fermé, car il ne repose pas sur une ressource naturelle externe au protocole.
+
+Bitcoin n'utilise pas la preuve d'enjeu. Son protocole repose exclusivement sur la preuve de travail, qui lie la publication d'un bloc à une dépense énergétique réelle et vérifiable, indépendante de la richesse accumulée par les participants.
