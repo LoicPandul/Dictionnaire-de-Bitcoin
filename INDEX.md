@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1322 définitions du dictionnaire.
 
 ---
 
@@ -44,6 +44,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [ANNEX](definitions/fr/a/annex/definition.md) | `715359d5-c692-4536-8bd1-27b9999bdacd` |
 | [ANONSETS - ANONYMITY SETS](definitions/fr/a/anonsets-anonymity-sets/definition.md) | `a61b5d3a-da3c-4bc8-bac2-24265a18e981` |
 | [ANTI-EXFIL SIGNING](definitions/fr/a/anti-exfil-signing/definition.md) | `03547138-8047-405c-bb69-8dbe02bb2c86` |
+| [ANTPOOL](definitions/fr/a/antpool/definition.md) | `fe221820-ee07-4e49-a1a7-4a16b188bb33` |
 | [AOPP](definitions/fr/a/aopp/definition.md) | `746e3f0c-29ff-4af4-a706-f95e25c94733` |
 | [APERTURE](definitions/fr/a/aperture/definition.md) | `f5d53aa0-c0e9-42c2-8795-80acdb50ddcb` |
 | [API](definitions/fr/a/api/definition.md) | `60ce42fd-759e-4281-9cd2-e7d5b148365f` |
@@ -654,6 +655,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [FOUNDATION DEVICES](definitions/fr/f/foundation-devices/definition.md) | `2b1e5e86-e989-4b60-85be-6b42c4721c94` |
 | [FOUNDRY USA](definitions/fr/f/foundry-usa/definition.md) | `c2040734-7f83-4c0b-92b0-36d5304211ab` |
 | [FOUNTAIN](definitions/fr/f/fountain/definition.md) | `3f4c7a86-378e-4820-9cf1-d5ca118fde99` |
+| [FPGA](definitions/fr/f/fpga/definition.md) | `34624171-2d77-43cf-828a-035874154bd0` |
 | [FPPS - FULL PAY PER SHARE](definitions/fr/f/fpps-full-pay-per-share/definition.md) | `8bc4de15-c622-4d25-8fd2-7347d43f5f80` |
 | [FRAIS DE TRANSACTION](definitions/fr/f/frais-de-transaction/definition.md) | `a3ad6a6c-2765-41fe-b1d5-38c7b7e4a34a` |
 | [FROSTSNAP](definitions/fr/f/frostsnap/definition.md) | `d2535c2b-6dee-4052-b5d7-f32bedbfde9d` |
@@ -670,6 +672,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [GENÈSE](definitions/fr/g/genese/definition.md) | `608f3e1b-edd0-4834-ac9c-22cf6afe032d` |
 | [GENESIS](definitions/fr/g/genesis/definition.md) | `a64c6263-b1aa-423a-a1b4-3faeefb3decf` |
 | [GETWORK](definitions/fr/g/getwork/definition.md) | `6d187b5f-46d2-4f57-be37-fab3fb93dfdf` |
+| [GHASH.IO](definitions/fr/g/ghash-io/definition.md) | `e34ddf1f-15aa-49b3-acbc-8d0217df3c43` |
 | [GINGER WALLET](definitions/fr/g/ginger-wallet/definition.md) | `79dedd40-871e-4ea6-9197-6b0536043c09` |
 | [GIT](definitions/fr/g/git/definition.md) | `684e2c16-bab8-402c-9c29-2fd6d214c92e` |
 | [GITHUB](definitions/fr/g/github/definition.md) | `6913b5ed-5b2f-448f-8e1e-b3399d321e45` |
@@ -702,6 +705,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [HASH256](definitions/fr/h/hash256/definition.md) | `aa3c50f9-1f4f-4c1b-87b8-de1777bcb707` |
 | [HASHCASH](definitions/fr/h/hashcash/definition.md) | `14740648-aa8c-4405-81fd-063c44928336` |
 | [HASHRATE](definitions/fr/h/hashrate/definition.md) | `70691eee-3b25-4dac-a6f3-26a2b5f00ffd` |
+| [HASHRATE HIJACKING](definitions/fr/h/hashrate-hijacking/definition.md) | `ec3d467e-865e-48e7-ae89-4574dac9d270` |
 | [HAUTEUR DE BLOC](definitions/fr/h/hauteur-de-bloc/definition.md) | `514096e6-7730-4652-aaba-e7523dc3e8e1` |
 | [HD - HIERARCHICAL-DETERMINISTIC](definitions/fr/h/hd-hierarchical-deterministic/definition.md) | `3c2e851b-3e96-4900-a235-9a41cc97adea` |
 | [HEURE UNIX](definitions/fr/h/heure-unix/definition.md) | `e2acc03e-4278-4819-82c4-06c4d3cb3bb2` |
@@ -1044,6 +1048,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [P2P TRANSPORT V2](definitions/fr/p/p2p-transport-v2/definition.md) | `3aa32828-d935-4d8c-a1a8-19dd32bad5d1` |
 | [P2PK](definitions/fr/p/p2pk/definition.md) | `b2c534fc-1d7d-4e21-bfa1-0457f46dafcf` |
 | [P2PKH](definitions/fr/p/p2pkh/definition.md) | `102553eb-f247-483f-ab1f-c5cd04687d2a` |
+| [P2POOL](definitions/fr/p/p2pool/definition.md) | `f0a265ae-0cf6-423a-8002-a245422fcf6e` |
 | [P2SH](definitions/fr/p/p2sh/definition.md) | `bf96e1ea-f4a3-4f68-b585-653a603b31f7` |
 | [P2SH-P2WPKH](definitions/fr/p/p2sh-p2wpkh/definition.md) | `794ae64a-69ce-4e87-81b8-91f1d2c821d3` |
 | [P2SH-P2WSH](definitions/fr/p/p2sh-p2wsh/definition.md) | `a3f8386d-0c3b-49ab-8252-2008448eedc6` |
@@ -1103,6 +1108,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [PPLNS - PAY PER LAST N SHARES](definitions/fr/p/pplns-pay-per-last-n-shares/definition.md) | `187931ca-e37c-4ff8-bc88-689c4b88d574` |
 | [PPLNSG](definitions/fr/p/pplnsg/definition.md) | `795866c4-7b9b-4884-bfcd-c1fbe5da7fd9` |
 | [PPS - PAY PER SHARE](definitions/fr/p/pps-pay-per-share/definition.md) | `b184d003-b753-49f9-8538-c3725bd4f0ea` |
+| [PPS+](definitions/fr/p/pps-plus/definition.md) | `a449f71c-1648-4028-bb90-852289e803b3` |
 | [PRÉFÉRENCE TEMPORELLE](definitions/fr/p/preference-temporelle/definition.md) | `7a821760-c259-49bf-b837-a0464fef3380` |
 | [PRÉFIXES BINAIRES](definitions/fr/p/prefixes-binaires/definition.md) | `b81be87d-05d5-49ce-b61c-bc5af4e0e0de` |
 | [PREIMAGE](definitions/fr/p/preimage/definition.md) | `c54b2883-1aab-41b8-be01-f87deb67f3a8` |
@@ -1263,6 +1269,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [SNARK](definitions/fr/s/snark/definition.md) | `f9bcef6d-f786-4092-a6da-f3370621758c` |
 | [SO - SPARK OPERATOR](definitions/fr/s/so-spark-operator/definition.md) | `52a526bf-bdc8-4abf-b48e-17398368f6a9` |
 | [SOFT FORK](definitions/fr/s/soft-fork/definition.md) | `538faf8a-9d12-4cb7-ae82-979e654005ce` |
+| [SOLO MINING](definitions/fr/s/solo-mining/definition.md) | `c0342cb7-6e78-4c9b-8399-45743c6a4428` |
 | [SOMME DE CONTRÔLE](definitions/fr/s/somme-de-controle/definition.md) | `f77a8448-c9f7-42e9-8aad-c98b021d02d1` |
 | [SOROBAN](definitions/fr/s/soroban/definition.md) | `abac8bae-cc00-4335-9f65-a85a4db349d6` |
 | [SORTIE LA PLUS GRANDE](definitions/fr/s/sortie-la-plus-grande/definition.md) | `46983665-e82e-477e-81b4-bbef5a8cd244` |
@@ -1279,8 +1286,10 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [SPLICING](definitions/fr/s/splicing/definition.md) | `aa0260de-cecb-4560-bb58-fce7d2c394fc` |
 | [SPOF](definitions/fr/s/spof/definition.md) | `dfefbadb-ee98-4f78-b931-4a494ff9952e` |
 | [SPREAD - WST](definitions/fr/s/spread-wst/definition.md) | `c8dfd10b-05df-415f-8348-30264dfd867b` |
+| [SPY MINING](definitions/fr/s/spy-mining/definition.md) | `82e67460-1685-4adb-bd93-982dfde2d6d1` |
 | [STABLECOIN](definitions/fr/s/stablecoin/definition.md) | `4ac004e1-30a6-4070-af5b-cdb840d6f39d` |
 | [STACKER](definitions/fr/s/stacker/definition.md) | `c0633ecc-f3c1-4de1-9bd8-a92a203a9fba` |
+| [STALE SHARE](definitions/fr/s/stale-share/definition.md) | `5cc2000b-7d32-4e65-acd4-98087ea90a0b` |
 | [STAMPS](definitions/fr/s/stamps/definition.md) | `802d53d9-cc5b-4908-9d07-9d6fc4450db6` |
 | [STARK](definitions/fr/s/stark/definition.md) | `5b17757c-5d22-4f59-8807-ba0dca73f3ed` |
 | [START9](definitions/fr/s/start9/definition.md) | `ae814cae-4ded-4a0f-9132-49e6ab7346d2` |
@@ -1377,6 +1386,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | Terme | UUID |
 |-------|------|
 | [VALENCY](definitions/fr/v/valency/definition.md) | `48037b46-91b9-4330-b884-74e9ad5d8ff1` |
+| [VALIDATIONLESS MINING](definitions/fr/v/validationless-mining/definition.md) | `9de74bf0-e9c5-4597-9abd-3889c7f4bc1d` |
 | [VANITY ADDRESS](definitions/fr/v/vanity-address/definition.md) | `d3575fcd-307e-4fe0-b10c-e1c791700ca7` |
 | [VANITYGEN](definitions/fr/v/vanitygen/definition.md) | `d8f778ee-5507-45ea-9065-940561c001af` |
 | [VARIANCE](definitions/fr/v/variance/definition.md) | `4e8f361d-9db1-453f-96de-bb9be5e746b9` |
@@ -1384,6 +1394,7 @@ Ce fichier contient la liste de toutes les 1311 définitions du dictionnaire.
 | [VBYTES](definitions/fr/v/vbytes/definition.md) | `abcafb03-d107-46eb-92af-dcc66a28cd36` |
 | [VERSIONNAGE](definitions/fr/v/versionnage/definition.md) | `c89cc132-125a-4dce-88f7-265ac5e50021` |
 | [VEXL](definitions/fr/v/vexl/definition.md) | `e34c2bcb-3dd2-4520-b486-cdfcc671666e` |
+| [VIABTC](definitions/fr/v/viabtc/definition.md) | `bf6376b1-3988-46ff-844f-a7bf79fc3179` |
 | [VIN](definitions/fr/v/vin/definition.md) | `2c81d29e-66ab-4a84-8ecc-69805aa39e85` |
 | [VIRGIN BITCOIN](definitions/fr/v/virgin-bitcoin/definition.md) | `2fccd32d-63d2-469b-9f9f-8b220e2bdaa5` |
 | [VLS](definitions/fr/v/vls-validating-lightning-signer/definition.md) | `93e25bd9-ac9c-4137-bfff-cb2d7656d527` |
