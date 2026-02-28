@@ -1,0 +1,10 @@
+uuid: "16b25d54-8880-4f6f-a424-c3792093c26a"
+title: "TRANSACTION PINNING"
+slug: "transaction-pinning"
+category: "ATTAQUE"
+french_term: "ÉPINGLAGE DE TRANSACTION"
+cross_references:
+  - "e2b26fa2-39a2-4159-8424-929f5ba634d6"
+  - "520d62da-058e-4370-828d-721044c82254"
+  - "9aaf4d4e-a573-4126-91b5-81b99162de3e"
+version: "1"
