@@ -1,0 +1,9 @@
+uuid: "8d72bfe8-0405-45a9-a071-9599d05295e6"
+title: "FONCTION DE HACHAGE TAGUÉE"
+slug: "fonction-de-hachage-taguee"
+category: "CRYPTOGRAPHIE"
+english_term: "TAGGED HASH FUNCTION"
+cross_references:
+  - "1bdb482e-52c8-48fe-b31c-d542311f0fc6"
+  - "81029dcb-7d82-4887-82d1-7d18e1c60515"
+version: "1"
