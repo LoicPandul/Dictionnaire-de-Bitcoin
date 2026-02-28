@@ -1,0 +1,7 @@
+Amélioration du protocole de relais de Bitcoin qui permet aux nœuds de transmettre et d'évaluer des groupes de transactions interdépendantes de manière collective, plutôt que de les traiter individuellement. Sans ce mécanisme, une transaction parente dont le taux de frais est trop faible pour être acceptée dans la mempool est rejetée, ce qui empêche toute transaction enfant de servir au CPFP (*Child Pays For Parent*), puisque la parente est nécessaire à sa validation.
+
+Ce problème est particulièrement critique pour les protocoles à contrainte temporelle comme le Lightning Network, où les transactions sont signées bien avant leur diffusion. Le taux de frais minimal accepté par un nœud dépend du contenu de sa mempool à un instant donné, une transaction parente auparavant éligible au CPFP peut donc ne plus l'être au moment de sa diffusion.
+
+Le *package relay* résout ce problème en évaluant le taux de frais combiné d'un ensemble parent-enfant. L'implémentation actuelle dans Bitcoin Core se concentre sur une variante limitée à un parent et un enfant (1p1c), qui ne nécessite pas de modification du protocole P2P. Le BIP-0331 formalise la spécification plus générale du relais de paquets ancestraux. Le principal défi de développement réside dans la prévention des vulnérabilités de déni de service.
+
+Ce mécanisme est complémentaire des *anchor outputs* et constitue une contre-mesure importante face aux attaques d'épinglage de transaction (*transaction pinning*).
