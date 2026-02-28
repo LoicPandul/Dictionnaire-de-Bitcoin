@@ -1,0 +1,9 @@
+uuid: "03547138-8047-405c-bb69-8dbe02bb2c86"
+title: "ANTI-EXFIL SIGNING"
+slug: "anti-exfil-signing"
+category: "CRYPTOGRAPHIE"
+french_term: "SIGNATURE ANTI-EXFILTRATION"
+cross_references:
+  - "a4902301-5664-4d64-bdcd-0a1027408fdc"
+  - "1e211062-6127-445e-b231-061276411810"
+version: "1"
