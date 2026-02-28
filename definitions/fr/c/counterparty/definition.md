@@ -1,0 +1,1 @@
+Méta-protocole open source lancé en janvier 2014 qui permettait de créer et d'échanger des actifs numériques directement sur la blockchain Bitcoin. Counterparty encode les métadonnées des tokens dans les transactions Bitcoin, principalement via des sorties multisig ou `OP_RETURN`, sans modifier le protocole de base.
