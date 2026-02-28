@@ -1,0 +1,3 @@
+Évolution de MuSig qui réduit de trois à deux le nombre de tours nécessaires pour produire une multisignature Schnorr agrégée. Proposé en 2020 par Jonas Nick, Tim Ruffing et Yannick Seurin, le protocole élimine le tour d'engagement sur les nonces grâce à l'utilisation de plusieurs nonces aléatoires par signataire : chaque participant envoie ses nonces dès le premier tour, avant même de connaître le message à signer, puis les signatures partielles sont échangées au second tour.
+
+Comme MuSig, la signature produite est indiscernable d'une signature individuelle sur la blockchain. La réutilisation de nonces entre sessions de signature compromet toutefois irrémédiablement la sécurité du schéma. Musig2 a été formalisé dans le BIP-0327.
