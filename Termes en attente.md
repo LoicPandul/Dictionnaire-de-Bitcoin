@@ -8,11 +8,7 @@ ___
 
 
 
-## FINNEY ATTACK
 
-
-
-## FLAG
 
 
 
@@ -21,24 +17,12 @@ ___
 
 
 
-## HASHLOCKS
-
-
-
-## JAMMING ATTACK
-
-
-
-
-## LABELBASE
 
 
 
 ## LDB (.LDB)
 
 
-
-## MATT
 
 
 
@@ -50,8 +34,6 @@ ___
 
 
 
-
-## NODE_BLOOM (BIP111)
 
 
 
@@ -75,30 +57,13 @@ ___
 
 
 
-## PING (BIP31)
 
-
-
-## PINNING ATTACK
-
-
-
-## PONG (BIP31)
-
-
-
-
-## PURGE
+## PURGE MEMPOOL
 
 
 
 ## PYBLOCK
 
-
-
-
-
-## ROUTING ATTACKS
 
 
 
@@ -130,27 +95,12 @@ ___
 
 
 
-## TAGUÉE
-
-Fonction de hachage taguée.
+## TAGUÉE Fonction de hachage taguée.
 
 
 ## TAIL EMISSION
 
 
-
-## TIMEJACKING (ATTAQUE)
-
-
-
-
-
-
-## UTXO COMMITMENTS
-
-
-
-## UTXO HASH SET (UHS)
 
 
 
