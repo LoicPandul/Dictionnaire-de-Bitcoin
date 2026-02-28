@@ -2,8 +2,6 @@ uuid: "ae922c94-0926-40a0-af0f-817dd7b4f88e"
 title: "CLUSTER MEMPOOL"
 slug: "cluster-mempool"
 category: "PROTOCOLE"
-cross_references:
-  - "40d26274-b04a-4d7e-b0a2-6c81a6d0dcf5"
-  - "fc5a6703-8989-43d0-9b12-6b9b954c2e39"
-  - "eb71934d-67e6-4793-8353-bb0d2c81e4b3"
 version: "1"
+cross_references:
+  - "eb71934d-67e6-4793-8353-bb0d2c81e4b3"

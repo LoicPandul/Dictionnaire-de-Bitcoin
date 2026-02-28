@@ -95,16 +95,28 @@ def _validate_cross_references(dictionary: Dictionary) -> bool:
 
 
 def _save_metadata(definition) -> None:
-    """Sauvegarde les métadonnées mises à jour dans le fichier metadata.yaml."""
+    """Sauvegarde uniquement les cross_references dans le fichier metadata.yaml.
+
+    Édite le fichier par manipulation textuelle pour ne pas altérer
+    le reste du fichier (guillemets, ordre des clés, formatage).
+    """
     metadata_path = definition.path / "metadata.yaml"
 
     with open(metadata_path, "r", encoding="utf-8") as f:
-        metadata = yaml.safe_load(f)
+        content = f.read()
 
-    metadata["cross_references"] = definition.cross_references
+    # Supprimer le bloc cross_references existant (clé + lignes indentées)
+    content = re.sub(r'cross_references:\s*\n(?:\s+-\s+.*\n)*', '', content)
+
+    # Reconstruire le bloc si des références restent
+    if definition.cross_references:
+        lines = "cross_references:\n"
+        for ref in definition.cross_references:
+            lines += f'  - "{ref}"\n'
+        content = content.rstrip('\n') + '\n' + lines
 
     with open(metadata_path, "w", encoding="utf-8") as f:
-        yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        f.write(content)
 
 
 def _has_lowercase(text: str) -> bool:
