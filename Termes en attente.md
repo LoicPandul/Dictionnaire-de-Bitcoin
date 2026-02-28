@@ -25,10 +25,6 @@ ___
 
 
 
-## HEADERS FIRST SYNC
-
-
-
 ## JAMMING ATTACK
 
 
