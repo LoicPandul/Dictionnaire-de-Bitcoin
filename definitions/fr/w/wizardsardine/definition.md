@@ -1,0 +1,3 @@
+Entreprise spécialisée dans la sécurité et la conservation de bitcoins, fondée en 2020 par Kevin Loaec et Antoine Poinsot, et incorporée aux Açores (Portugal). Wizardsardine développe des solutions open source de gestion de portefeuilles Bitcoin, avec un accent sur les mécanismes de sécurité avancés comme les *vaults* et les politiques de dépense configurables.
+
+L'entreprise est à l'origine du protocole Revault, un système de conservation institutionnel utilisant des transactions présignées et des *watchtowers* pour sécuriser les fonds d'organisations. Wizardsardine développe également Liana, un portefeuille Bitcoin qui exploite Miniscript pour offrir des configurations de récupération et d'héritage basées sur des *timelocks*.
