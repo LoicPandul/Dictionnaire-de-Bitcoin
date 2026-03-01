@@ -1,0 +1,11 @@
+uuid: "9afe1eb4-b554-4c6e-97ec-ebc4cdb7eb83"
+title: "SHAMIR SECRET SHARING - SSS"
+slug: "shamir-secret-sharing-sss"
+category: "CRYPTOGRAPHIE"
+cross_references:
+  - "01b2a7ec-2c60-4ba1-bd45-468f64757cdb"
+  - "556f1021-41f6-44e8-9f33-cef95735a4a2"
+  - "b24f7ccf-965a-4b03-b046-c3d74a0dca31"
+  - "b3ffca6f-478c-4cb2-bbd7-bc5d47a7a6d6"
+french_term: "PARTAGE DE SECRET DE SHAMIR"
+version: "1"
