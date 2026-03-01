@@ -1,0 +1,10 @@
+uuid: "c5e6d0e7-7546-4f70-829b-c3618a56e9b0"
+title: "DKG"
+slug: "dkg"
+category: "CRYPTOGRAPHIE"
+cross_references:
+  - "b3ffca6f-478c-4cb2-bbd7-bc5d47a7a6d6"
+  - "1e211062-6127-445e-b231-061276411810"
+  - "9afe1eb4-b554-4c6e-97ec-ebc4cdb7eb83"
+french_term: "GENERATION DISTRIBUEE DE CLES"
+version: "1"
