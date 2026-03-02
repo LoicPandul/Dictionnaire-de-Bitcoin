@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1386 définitions du dictionnaire.
 
 ---
 
@@ -333,8 +333,10 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [BITCOINTALK](definitions/fr/b/bitcointalk/definition.md) | `4eb80ccd-11e0-45cc-ad72-32065d22601a` |
 | [BITKEY](definitions/fr/b/bitkey/definition.md) | `b7ccc482-2d03-403a-8c45-77f71579bdcd` |
 | [BITKIT](definitions/fr/b/bitkit/definition.md) | `4bbfdcee-0e35-4762-bbbb-5ed58fb2e7f9` |
+| [BITMAIN](definitions/fr/b/bitmain/definition.md) | `0b8822d2-9b7b-490c-b965-075d85b76399` |
 | [BITREFILL](definitions/fr/b/bitrefill/definition.md) | `141e1831-7aec-408c-b405-ee12577163d2` |
 | [BITVM](definitions/fr/b/bitvm/definition.md) | `c4b669f1-0d6c-4206-9537-82282ca1ca24` |
+| [BLIND ORACLE](definitions/fr/b/blind-oracle/definition.md) | `1e23e4b1-5602-4e7c-a451-0c72aa304384` |
 | [BLINDED PATHS](definitions/fr/b/blinded-paths/definition.md) | `b6168446-91ea-4bb3-b01b-18bc52285bfd` |
 | [BLINK](definitions/fr/b/blink/definition.md) | `cbd4c934-50ef-4b9f-ae93-8a5a7afe14f9` |
 | [BLIP](definitions/fr/b/blip/definition.md) | `e53107d9-4cd8-4d1b-aa7b-12271f611ee3` |
@@ -380,6 +382,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [BOLT-11](definitions/fr/b/bolt-11/definition.md) | `5bfcb45e-7a25-4a11-98b6-8bd51b1f75b5` |
 | [BOLT-12](definitions/fr/b/bolt-12/definition.md) | `7f92f5dd-c22e-4ea9-a2fd-fa42a897e11b` |
 | [BOLTZ](definitions/fr/b/boltz/definition.md) | `c154c1f0-dcb8-4c68-9091-9afad9726283` |
+| [BORROMEAN RING SIGNATURES](definitions/fr/b/borromean-ring-signatures/definition.md) | `92d2e0f8-9f00-473b-8e39-279eed39973e` |
 | [BOS - BALANCE OF SATOSHIS](definitions/fr/b/bos-balance-of-satoshis/definition.md) | `961adcb1-1e9b-424d-96b5-74f4df767da5` |
 | [BOSMINER](definitions/fr/b/bosminer/definition.md) | `ffc8d20e-2173-4513-a1ec-d278c3720034` |
 | [BOUNTY](definitions/fr/b/bounty/definition.md) | `4bb65831-8540-4c8d-be14-1f834fe1afd8` |
@@ -404,6 +407,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [BULL BITCOIN](definitions/fr/b/bull-bitcoin/definition.md) | `f8dc865c-9834-4c44-aa1c-700799235c83` |
 | [BULL MARKET](definitions/fr/b/bull-market/definition.md) | `c0ae585c-1a11-451c-9324-b4e45792fbb8` |
 | [BULL RUN](definitions/fr/b/bull-run/definition.md) | `d100a604-1b22-446d-872f-2dd642d6c81f` |
+| [BULLETPROOFS](definitions/fr/b/bulletproofs/definition.md) | `98218fd1-053e-45ac-8152-41e92e5ffb2b` |
 | [BURN ADDRESS](definitions/fr/b/burn-address/definition.md) | `c47a5a69-25e3-4600-b1ee-99e7c8ae53d1` |
 | [BUSINESS LOGIC](definitions/fr/b/business-logic/definition.md) | `e3b030f5-20e4-40f5-ba3f-3a5cbc376105` |
 
@@ -419,6 +423,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [CANDIDAT - BLOC](definitions/fr/c/candidat-bloc/definition.md) | `706795d3-fdd1-45d2-9065-d39da526bfc4` |
 | [CAPACITÉ DE CANAL LIGHTNING](definitions/fr/c/capacite-de-canal-lightning/definition.md) | `8e7c4f45-7a02-4291-aa1f-8d8fee4530b6` |
 | [CASA](definitions/fr/c/casa/definition.md) | `27f4f1dd-ca19-4d2b-926e-dcb0aaebda73` |
+| [CASASCIUS](definitions/fr/c/casascius/definition.md) | `de920ed3-d5d1-4598-ad1a-107fcd7fc1f1` |
 | [CASHU](definitions/fr/c/cashu/definition.md) | `9ffee778-2e40-4552-a0e4-e4b47629711f` |
 | [CBDC](definitions/fr/c/cbdc/definition.md) | `4082393c-2593-40d3-952a-497f836f69cc` |
 | [CBTC - CITREA BITCOIN](definitions/fr/c/cbtc-citrea-bitcoin/definition.md) | `29a3bf4f-d29f-415e-b86f-e5f0e5e1591c` |
@@ -447,6 +452,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [CHANTOOLS](definitions/fr/c/chantools/definition.md) | `e6a04aad-5739-4b4b-85b0-d34036dcb728` |
 | [CHARGE UTILE](definitions/fr/c/charge-utile/definition.md) | `ef70aa4a-7364-4b70-8d04-f628c67b1404` |
 | [CHAUMIAN COINJOIN](definitions/fr/c/chaumian-coinjoin/definition.md) | `9895ea98-7345-45d8-b96a-ac61ebd334e9` |
+| [CHECKPOINTS](definitions/fr/c/checkpoints/definition.md) | `a1e6ab88-6b66-46a1-9846-d59fa9072a89` |
 | [CHEMIN DE DÉRIVATION](definitions/fr/c/chemin-de-derivation/definition.md) | `080efa61-7f74-4d60-9ee4-4fa10920b967` |
 | [CHEMIN DE RÉCUPÉRATION](definitions/fr/c/chemin-de-recuperation/definition.md) | `9415129d-01e2-4e94-9bbd-49bb7b13e3ee` |
 | [CHEMIN PRIMAIRE](definitions/fr/c/chemin-primaire/definition.md) | `b64a302d-cfea-4808-8ad2-68cf4ba5313f` |
@@ -500,6 +506,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [COMPTE](definitions/fr/c/compte/definition.md) | `7861164f-04b0-44af-9ea7-00202b3757ba` |
 | [CONCATÉNATION](definitions/fr/c/concatenation/definition.md) | `3aafd4aa-4f21-40fe-a8be-9693a18cd5d7` |
 | [CONDENSAT](definitions/fr/c/condensat/definition.md) | `e82a4a01-5624-4112-b620-b9fd0eff81bb` |
+| [CONFIDENTIAL TRANSACTIONS](definitions/fr/c/confidential-transactions/definition.md) | `5c4ce78f-f055-4816-8fcd-ed6d4f0f73fe` |
 | [CONFIRMATION](definitions/fr/c/confirmation/definition.md) | `9947b93a-25b5-4f2d-b353-fefe5a5b4719` |
 | [CONNECTOR](definitions/fr/c/connector/definition.md) | `c8d36eaa-8bcb-46b7-aa75-25c89d84eefc` |
 | [CONSENSUS](definitions/fr/c/consensus/definition.md) | `3e7055ed-3bab-47c1-90d3-cfd551096ee8` |
@@ -520,6 +527,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [COORDINATEUR DE COINJOIN](definitions/fr/c/coordinateur-de-coinjoin/definition.md) | `911e17ef-1a6f-4838-b798-28cb96e56674` |
 | [COUNTERPARTY](definitions/fr/c/counterparty/definition.md) | `67ea3695-fe94-476e-abf2-4ee091a2bcf4` |
 | [COURBE ELLIPTIQUE](definitions/fr/c/courbe-elliptique/definition.md) | `da773fd3-c1e6-43fb-8764-2cca100725d5` |
+| [COURS LÉGAL](definitions/fr/c/cours-legal/definition.md) | `8bf549d4-8a74-4e5d-b8f5-d9a463ff8609` |
 | [COVENANT](definitions/fr/c/covenant/definition.md) | `a066159b-a5a7-4e63-8e7e-fcf4c18611f1` |
 | [COVERT ASICBOOST](definitions/fr/c/covert-asicboost/definition.md) | `02b9a69f-7212-4e1f-b32a-6692a27977a8` |
 | [CPFP - CHILD PAY FOR PARENT](definitions/fr/c/cpfp-child-pay-for-parent/definition.md) | `eb71934d-67e6-4793-8353-bb0d2c81e4b3` |
@@ -584,11 +592,13 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [DUST LIMIT](definitions/fr/d/dust-limit/definition.md) | `e7264cc5-e0b9-4056-a9c2-4e82c658b4f9` |
 | [DUSTING ATTACK](definitions/fr/d/dusting-attack/definition.md) | `93cc6a17-c784-4674-b714-fe31d94db987` |
 | [DUSTRELAYFEE](definitions/fr/d/dustrelayfee/definition.md) | `fcc6b84e-16b3-4b18-911e-da0abcad2845` |
+| [DYNAMIC FEDERATIONS (DYNAFED)](definitions/fr/d/dynamic-federations/definition.md) | `d007d392-ba8d-431c-8efb-0d2049a1a122` |
 
 ## E
 
 | Terme | UUID |
 |-------|------|
+| [E-GOLD](definitions/fr/e/e-gold/definition.md) | `e2ffcf6b-5123-4594-a20d-f20c46e3df60` |
 | [ECASH - DAVID CHAUM](definitions/fr/e/ecash-david-chaum/definition.md) | `b3a6e8eb-b4bb-4e94-9c46-225973b2fc48` |
 | [ECASH - XEC](definitions/fr/e/ecash-xec/definition.md) | `d26d38ab-3eab-422d-b8dd-e3ff7fbc1521` |
 | [ECDH](definitions/fr/e/ecdh/definition.md) | `c6772aaa-b0b3-4c35-9658-a3ca15b06e85` |
@@ -634,6 +644,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [F2POOL](definitions/fr/f/f2pool/definition.md) | `2c986477-2ded-491c-8c5d-4d2b20a72763` |
 | [FARADAY](definitions/fr/f/faraday/definition.md) | `b110d035-735f-49d3-917d-d5d1d5c9edfd` |
 | [FAUCET](definitions/fr/f/faucet/definition.md) | `f6b44559-b2cd-4ef6-b02f-d3315198122d` |
+| [FÉDÉRATION](definitions/fr/f/federation/definition.md) | `66678830-dfda-4c6e-92f7-abba944b766a` |
 | [FEDIMINT](definitions/fr/f/fedimint/definition.md) | `fb6c88ad-769d-4730-b3bd-e4fe07817fb5` |
 | [FEE BUMPING](definitions/fr/f/fee-bumping/definition.md) | `2dcb2f84-1583-4bd7-a9de-de3d7e39ddcf` |
 | [FEE_ESTIMATES.DAT](definitions/fr/f/fee-estimates-dat/definition.md) | `e5da7566-23a6-4d4d-869a-1ec4e47874a0` |
@@ -650,6 +661,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [FONCTION DE HACHAGE](definitions/fr/f/fonction-de-hachage/definition.md) | `1bdb482e-52c8-48fe-b31c-d542311f0fc6` |
 | [FONCTION DE HACHAGE TAGUÉE](definitions/fr/f/fonction-de-hachage-taguee/definition.md) | `8d72bfe8-0405-45a9-a071-9599d05295e6` |
 | [FONCTIONNAIRE](definitions/fr/f/fonctionnaire/definition.md) | `6b312e77-da13-43a0-880e-24f727285bf8` |
+| [FONDATION BITCOIN](definitions/fr/f/fondation-bitcoin/definition.md) | `460023ca-a13c-4178-b28c-54547af6c0a0` |
 | [FONGIBILITÉ](definitions/fr/f/fongibilite/definition.md) | `a5f05ecc-5a81-4f97-aa00-f79484ebc76e` |
 | [FORCE BRUTE](definitions/fr/f/force-brute/definition.md) | `9b32ed34-45aa-4742-8f3e-ca2443d7fd7d` |
 | [FORCE CLOSE](definitions/fr/f/force-close/definition.md) | `aab65e71-7454-4b5d-af76-bc038f9bd44c` |
@@ -679,6 +691,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [GCS - GOLOMB-CODED SET](definitions/fr/g/gcs-golomb-coded-set/definition.md) | `54e333a5-0593-4f6e-96e0-9a1cf3aa0344` |
 | [GENÈSE](definitions/fr/g/genese/definition.md) | `608f3e1b-edd0-4834-ac9c-22cf6afe032d` |
 | [GENESIS](definitions/fr/g/genesis/definition.md) | `a64c6263-b1aa-423a-a1b4-3faeefb3decf` |
+| [GETBLOCKTEMPLATE](definitions/fr/g/getblocktemplate/definition.md) | `712e0d37-e2ec-400b-812b-15ce5211edca` |
 | [GETWORK](definitions/fr/g/getwork/definition.md) | `6d187b5f-46d2-4f57-be37-fab3fb93dfdf` |
 | [GHASH.IO](definitions/fr/g/ghash-io/definition.md) | `e34ddf1f-15aa-49b3-acbc-8d0217df3c43` |
 | [GINGER WALLET](definitions/fr/g/ginger-wallet/definition.md) | `79dedd40-871e-4ea6-9197-6b0536043c09` |
@@ -711,6 +724,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [HARDWARE WALLET](definitions/fr/h/hardware-wallet/definition.md) | `2fc3ec2b-e4c3-4ecd-a661-6ebf8411be7a` |
 | [HASH160](definitions/fr/h/hash160/definition.md) | `df9ddf49-9ace-4519-bda5-1f56e713feff` |
 | [HASH256](definitions/fr/h/hash256/definition.md) | `aa3c50f9-1f4f-4c1b-87b8-de1777bcb707` |
+| [HASHBOARD](definitions/fr/h/hashboard/definition.md) | `6f032960-9a37-48d6-a4a6-ba393333061d` |
 | [HASHCASH](definitions/fr/h/hashcash/definition.md) | `14740648-aa8c-4405-81fd-063c44928336` |
 | [HASHRATE](definitions/fr/h/hashrate/definition.md) | `70691eee-3b25-4dac-a6f3-26a2b5f00ffd` |
 | [HASHRATE HIJACKING](definitions/fr/h/hashrate-hijacking/definition.md) | `ec3d467e-865e-48e7-ae89-4574dac9d270` |
@@ -796,6 +810,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [LABEL](definitions/fr/l/label/definition.md) | `06291be2-781b-4791-b083-ffbc564ec394` |
 | [LABEL - SILENT PAYMENTS](definitions/fr/l/label-silent-payments/definition.md) | `6badff64-da10-451e-89f2-9692c0ddb3e1` |
 | [LATENCE](definitions/fr/l/latence/definition.md) | `13a2cf45-2c9f-4aea-8eb4-30740910ec9d` |
+| [LBTC - LIQUID BITCOIN](definitions/fr/l/lbtc/definition.md) | `dfb9be37-48cd-4fc7-b3b2-db239bfc7a71` |
 | [LCB/FT](definitions/fr/l/lcb-ft/definition.md) | `df946e85-6445-43e0-bfc0-a892159e58c6` |
 | [LDK - LIGHTNING DEV KIT](definitions/fr/l/ldk-lightning-dev-kit/definition.md) | `e24a1c6c-03b5-4fd2-801c-44706856a57c` |
 | [LEDGER](definitions/fr/l/ledger/definition.md) | `6b9ab86a-d9f8-493f-90c7-a5a9588a4c42` |
@@ -803,6 +818,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [LEVELDB](definitions/fr/l/leveldb/definition.md) | `4daf8f9e-acb0-44a7-91f7-1304b03f65c8` |
 | [LIANA](definitions/fr/l/liana/definition.md) | `fe5b11fb-800c-485a-9a88-83004eb6fc1a` |
 | [LIBBITCOIN](definitions/fr/l/libbitcoin/definition.md) | `9283480e-e51d-4a3d-afb8-60f1179bd9a8` |
+| [LIBERTY RESERVE](definitions/fr/l/liberty-reserve/definition.md) | `08e502c7-5117-4794-922a-46ac1dd666cb` |
 | [LIBSECP256K1](definitions/fr/l/libsecp256k1/definition.md) | `46d9de8a-69c5-4b21-99d6-e88ae46e3b02` |
 | [LIBWALLY-CORE](definitions/fr/l/libwally-core/definition.md) | `17015788-45d2-49ef-abca-ff3516162aea` |
 | [LIGHTNING LABS](definitions/fr/l/lightning-labs/definition.md) | `7f0d503e-7a9e-4041-b270-825c014768cc` |
@@ -815,6 +831,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [LIQUID NETWORK](definitions/fr/l/liquid-network/definition.md) | `ae55205d-dad4-4151-91b7-699b195366ca` |
 | [LIQUIDITÉS](definitions/fr/l/liquidites/definition.md) | `30177e9a-d323-4956-a8f5-254db510bbea` |
 | [LIQUIDITY ADS](definitions/fr/l/liquidity-ads/definition.md) | `c9eea020-0114-4689-a5a4-9b27d3cfb006` |
+| [LIQUIDITY SWAP](definitions/fr/l/liquidity-swap/definition.md) | `a3d71f9e-2c84-4b6a-9e15-8f4d1c7a3b92` |
 | [LITD](definitions/fr/l/litd/definition.md) | `03bffb41-760c-40ef-b60c-3f66d2f13679` |
 | [LITECOIN](definitions/fr/l/litecoin/definition.md) | `c55c028b-acb4-47d1-b9a8-4032bef3ce83` |
 | [LITTLE-ENDIAN](definitions/fr/l/little-endian/definition.md) | `d7abc29f-6a39-4d71-9a36-ca58bf44fed9` |
@@ -825,6 +842,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [LNP/BP](definitions/fr/l/lnp-bp/definition.md) | `2109b28a-da10-4fc1-a5a4-bc034e4f4301` |
 | [LNP2PBOT](definitions/fr/l/lnp2pbot/definition.md) | `2d179734-48aa-43dc-b7e3-d9f2d5d6e2ea` |
 | [LNURL](definitions/fr/l/lnurl/definition.md) | `52153b66-22fb-4e2f-8176-5532f4335ab3` |
+| [LOCALBITCOINS](definitions/fr/l/localbitcoins/definition.md) | `b296db91-93b2-4232-b9a6-7fb893838d7a` |
 | [LOCK](definitions/fr/l/lock/definition.md) | `397a1a79-8d44-4883-b39e-a89ce5f55f4e` |
 | [LOGARITHME DISCRET](definitions/fr/l/logarithme-discret/definition.md) | `d4195790-4784-4e8c-9649-064f20766d9d` |
 | [LOI DE GRESHAM](definitions/fr/l/loi-de-gresham/definition.md) | `85970e71-e724-4f30-96ef-d9c47c97d604` |
@@ -835,6 +853,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [LOTTERY MINING](definitions/fr/l/lottery-mining/definition.md) | `f8a21c3e-4d67-4b9a-82e5-1c9d3f6a7b04` |
 | [LUCK](definitions/fr/l/luck/definition.md) | `d01a0cf2-c1c3-4ff1-bcba-0b43a140d3d2` |
 | [LUD](definitions/fr/l/lud/definition.md) | `a11565d1-daa1-41d2-9bf7-ae34cdc7ed5e` |
+| [LUXOR](definitions/fr/l/luxor/definition.md) | `ef87c27d-fcbc-4108-bba1-fb5776a17257` |
 
 ## M
 
@@ -859,6 +878,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [MASTER FINGERPRINT](definitions/fr/m/master-fingerprint/definition.md) | `79df701d-97e0-46b7-99a6-b8408247d0cb` |
 | [MATT](definitions/fr/m/matt/definition.md) | `e458a1a2-0bb9-4ce0-9d01-7f32dc344577` |
 | [MAX_BLOC_SIZE](definitions/fr/m/max-bloc-size/definition.md) | `dee6a89c-9d71-492c-9905-c652cd8efcc3` |
+| [MAXIMALISTE](definitions/fr/m/maximaliste/definition.md) | `45afa1a7-e1a1-473e-8324-8fed218de006` |
 | [MÉLANGEUR](definitions/fr/m/melangeur/definition.md) | `99894503-f02b-4426-9501-f5937bed0094` |
 | [MEMPOOL](definitions/fr/m/mempool/definition.md) | `ea4e33b9-b048-49e3-ae58-43da0cb71446` |
 | [MEMPOOL.DAT](definitions/fr/m/mempool-dat/definition.md) | `3013e901-385b-4e6d-b17a-ef7953fee38d` |
@@ -1129,6 +1149,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [PPLNSG](definitions/fr/p/pplnsg/definition.md) | `795866c4-7b9b-4884-bfcd-c1fbe5da7fd9` |
 | [PPS - PAY PER SHARE](definitions/fr/p/pps-pay-per-share/definition.md) | `b184d003-b753-49f9-8538-c3725bd4f0ea` |
 | [PPS+](definitions/fr/p/pps-plus/definition.md) | `a449f71c-1648-4028-bb90-852289e803b3` |
+| [PRAXÉOLOGIE](definitions/fr/p/praxeologie/definition.md) | `8ecc8eda-eea3-486e-9e51-63171fe73ef3` |
 | [PRÉFÉRENCE TEMPORELLE](definitions/fr/p/preference-temporelle/definition.md) | `7a821760-c259-49bf-b837-a0464fef3380` |
 | [PRÉFIXES BINAIRES](definitions/fr/p/prefixes-binaires/definition.md) | `b81be87d-05d5-49ce-b61c-bc5af4e0e0de` |
 | [PREIMAGE](definitions/fr/p/preimage/definition.md) | `c54b2883-1aab-41b8-be01-f87deb67f3a8` |
@@ -1168,6 +1189,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 |-------|------|
 | [RACE ATTACK](definitions/fr/r/race-attack/definition.md) | `627ea50a-a23d-4ad8-91dd-55a90a3b13b3` |
 | [RACINE DE MERKLE](definitions/fr/r/racine-de-merkle/definition.md) | `2f329b85-fc19-43e1-b904-e7644daf3659` |
+| [RANGEPROOFS](definitions/fr/r/rangeproofs/definition.md) | `34ece2fc-6213-4f0e-b9cc-abfda06c7504` |
 | [RAPID GOSSIP SYNC](definitions/fr/r/rapid-gossip-sync/definition.md) | `85ce43a4-0206-4d90-9410-cc164fb1f8d1` |
 | [RASPIBLITZ](definitions/fr/r/raspiblitz/definition.md) | `9e8ddc27-219c-4bc1-9db5-5826aa530a3d` |
 | [RAW TRANSACTION](definitions/fr/r/raw-transaction/definition.md) | `44552511-eb19-4d7a-a3bb-c9d13b3fee50` |
@@ -1200,6 +1222,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [RIPEMD160](definitions/fr/r/ripemd160/definition.md) | `99c4221b-0b2d-47e5-b608-1d5610c85e9b` |
 | [RISC ZERO](definitions/fr/r/risc-zero/definition.md) | `c9ba79fa-2634-47a2-bb36-62fa930975bf` |
 | [RISQUE DE CONTREPARTIE](definitions/fr/r/risque-de-contrepartie/definition.md) | `ddc93de1-c38b-45d9-9ff5-82c8081a88d2` |
+| [ROAST](definitions/fr/r/roast/definition.md) | `f0ac80de-658b-4cfc-ac53-f4d1e9553cb1` |
 | [ROBOSATS](definitions/fr/r/robosats/definition.md) | `384202ca-b17d-4b3d-9bb1-1f15225ed598` |
 | [ROLLUP](definitions/fr/r/rollup/definition.md) | `e5135b7d-ad1e-4587-9ae1-461c906d1eff` |
 | [ROUND ARK](definitions/fr/r/round-ark/definition.md) | `2cc2bc2a-2704-49dd-a1a0-31b3e99b7a54` |
@@ -1222,6 +1245,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [SAT - SATOSHI](definitions/fr/s/sat-satoshi/definition.md) | `750ff334-6f34-47e6-9947-f6ef4eda0a16` |
 | [SATOCHIP](definitions/fr/s/satochip/definition.md) | `1dd0115e-198d-4141-8716-d7753c181d47` |
 | [SATODIME](definitions/fr/s/satodime/definition.md) | `cf685eea-f224-4ffd-b0e7-e5228e6f1705` |
+| [SATOSHIDICE](definitions/fr/s/satoshidice/definition.md) | `c68550e1-12d0-4d7b-933e-8dfb979a7bd2` |
 | [SATOSHILABS](definitions/fr/s/satoshilabs/definition.md) | `f49ce9b9-7d6a-422f-8e6a-0853aa1aa2e9` |
 | [SATSCARD](definitions/fr/s/satscard/definition.md) | `5169d872-cb3e-4bad-a934-6a448abaf1ca` |
 | [SBI CRYPTO](definitions/fr/s/sbi-crypto/definition.md) | `a03f35ba-155e-4798-b3c6-0ca0f1c585ae` |
@@ -1423,6 +1447,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 |-------|------|
 | [VALENCY](definitions/fr/v/valency/definition.md) | `48037b46-91b9-4330-b884-74e9ad5d8ff1` |
 | [VALIDATIONLESS MINING](definitions/fr/v/validationless-mining/definition.md) | `9de74bf0-e9c5-4597-9abd-3889c7f4bc1d` |
+| [VALUE OVERFLOW INCIDENT](definitions/fr/v/value-overflow-incident/definition.md) | `49ae1eb9-83ef-4830-88c5-34476b0974a5` |
 | [VANITY ADDRESS](definitions/fr/v/vanity-address/definition.md) | `d3575fcd-307e-4fe0-b10c-e1c791700ca7` |
 | [VANITYGEN](definitions/fr/v/vanitygen/definition.md) | `d8f778ee-5507-45ea-9065-940561c001af` |
 | [VARIANCE](definitions/fr/v/variance/definition.md) | `4e8f361d-9db1-453f-96de-bb9be5e746b9` |
@@ -1454,6 +1479,7 @@ Ce fichier contient la liste de toutes les 1360 définitions du dictionnaire.
 | [WATCH-ONLY WALLET](definitions/fr/w/watch-only-wallet/definition.md) | `a3e9c07b-1076-4ab9-9695-c27cb52fe42f` |
 | [WATCHMEN](definitions/fr/w/watchmen/definition.md) | `b0c41084-126c-4966-b40c-d1800cda9e4e` |
 | [WATCHTOWER](definitions/fr/w/watchtower/definition.md) | `ffbbd17a-e7f1-4fe4-bc0b-3d9db3cf4a78` |
+| [WEIGHT UNIT (WU)](definitions/fr/w/weight-unit/definition.md) | `c42a4dc7-6cf2-4464-8898-ec512b10f4e2` |
 | [WHALE](definitions/fr/w/whale/definition.md) | `54290c9a-e310-4935-88b4-e9db8f100845` |
 | [WHIRLPOOL](definitions/fr/w/whirlpool/definition.md) | `34d344e0-ddb8-4e09-828f-f5820377e360` |
 | [WHIRLPOOL STAT TOOL](definitions/fr/w/whirlpool-stat-tool/definition.md) | `7d7ea0c6-ff89-4f9f-9b31-c0f264739516` |
