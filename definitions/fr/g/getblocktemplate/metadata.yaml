@@ -1,0 +1,8 @@
+uuid: "712e0d37-e2ec-400b-812b-15ce5211edca"
+title: "GETBLOCKTEMPLATE"
+slug: "getblocktemplate"
+category: "MINAGE"
+cross_references:
+  - "6d187b5f-46d2-4f57-be37-fab3fb93dfdf"
+  - "89e818b8-a68c-47b8-9d22-6e80cdae3f80"
+version: "1"
