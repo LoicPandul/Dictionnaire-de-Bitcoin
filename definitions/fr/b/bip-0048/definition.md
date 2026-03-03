@@ -1,1 +1,7 @@
-Proposition définissant le chemin de dérivation `m/48'/coin_type'/account'/script_type'` pour les portefeuilles multisignatures prenant en charge plusieurs types de scripts. Le niveau `script_type'` permet de distinguer le format d'adresse utilisé : `1'` pour P2SH-P2WSH et `2'` pour P2WSH natif. Cette structure permet à un même portefeuille matériel de gérer plusieurs configurations multisig avec des formats de scripts différents, tout en maintenant une séparation claire entre chacune. Le BIP-0048 est largement adopté dans l'écosystème applicatif et matériel. Il constitue actuellement le standard de facto pour la dérivation de clés dans les portefeuilles multisignatures.
+Proposition définissant le chemin de dérivation pour les portefeuilles multisignatures prenant en charge plusieurs types de scripts :
+
+```
+m/48'/coin_type'/account'/script_type'
+```
+
+Le niveau `script_type'` permet de distinguer le format d'adresse utilisé : `1'` pour P2SH-P2WSH et `2'` pour P2WSH natif. Cette structure permet à un même portefeuille matériel de gérer plusieurs configurations multisig avec des formats de scripts différents, tout en maintenant une séparation claire entre chacune. Le BIP-0048 est largement adopté dans l'écosystème applicatif et matériel. Il constitue actuellement le standard de facto pour la dérivation de clés dans les portefeuilles multisignatures.
