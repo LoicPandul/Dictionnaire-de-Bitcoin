@@ -211,10 +211,10 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \usepackage[
     paperwidth=13.97cm,
     paperheight=21.59cm,
-    top=7mm,
-    bottom=7mm,
-    outer=7mm,
-    inner=18mm,
+    top=8mm,
+    bottom=8mm,
+    outer=8mm,
+    inner=22.5mm,
     headheight=12pt,
     headsep=5mm,
     footskip=8mm,
@@ -241,11 +241,12 @@ def _generate_preamble(fonts_path: str = "") -> str:
 % Typographie
 \usepackage{microtype}
 \usepackage{setspace}
-\setstretch{1.10}
+\setstretch{1.0}
+
 
 % Pas d'alinéa, espacement entre paragraphes
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.4em}
+\setlength{\parskip}{0.35em}
 
 % Césure et justification
 \usepackage{ragged2e}
@@ -281,6 +282,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 
 % Images et TikZ
 \usepackage{graphicx}
+\graphicspath{{%%PICTOGRAMSPATH%%}}
 \usepackage{float}
 \usepackage{tikz}
 
@@ -436,7 +438,7 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \newcommand{\vedettefit}[1]{%
     \fcolorbox{black}{black}{%
         \hspace{0.3em}%
-        {\color{white}\fontsize{9}{12}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
+        {\color{white}\fontsize{8}{11}\selectfont\bfseries\addfontfeature{LetterSpace=3.0}#1}%
         \hspace{0.3em}%
     }%
 }
@@ -453,7 +455,8 @@ def _generate_preamble(fonts_path: str = "") -> str:
 % Pour éviter les orphelins de lettres dans TDM
 \usepackage{needspace}
 """
-    return preamble.replace('%%FONTSPATH%%', fonts_path)
+    pictos_path = str(BASE_DIR / "assets" / "pictograms").replace('\\', '/') + '/'
+    return preamble.replace('%%FONTSPATH%%', fonts_path).replace('%%PICTOGRAMSPATH%%', pictos_path)
 
 
 def _generate_half_title(legal: dict) -> str:
@@ -688,7 +691,8 @@ def _format_definition(definition, dictionary=None) -> str:
 
     # Vedette (cartouche noire) sur sa propre ligne, \par force le retour à la ligne
     # \nopagebreak empêche une coupure entre vedette et métadonnées
-    parts.append(rf"\noindent\vedettefit{{{safe_title}}}\par\nopagebreak")
+    # \nointerlineskip + \vspace supprime tout espace entre vedette et métadonnées
+    parts.append(rf"\noindent\vedettefit{{{safe_title}}}\par\nopagebreak\nointerlineskip\vspace{{-\parskip}}")
 
     # Métadonnées (catégorie + traduction) sous la vedette dans un tabular unique
     # Catégorie toujours en colonne gauche, traduction en colonne droite
@@ -700,9 +704,8 @@ def _format_definition(definition, dictionary=None) -> str:
         safe_cat = _escape_latex(cat)
         picto_name = CATEGORY_PICTOGRAMS.get(cat, '')
         if picto_name:
-            picto_path = str(BASE_DIR / "assets" / "pictograms" / f"{picto_name}.pdf").replace('\\', '/')
             meta_cells.append(
-                rf"\raisebox{{-0.5pt}}{{\includegraphics[height=5.5pt]{{{picto_path}}}}}\hspace{{0.3em}}{safe_cat}"
+                rf"\raisebox{{-0.5pt}}{{\includegraphics[height=5.5pt]{{{picto_name}.pdf}}}}\hspace{{0.3em}}{safe_cat}"
             )
         else:
             meta_cells.append(safe_cat)
@@ -729,10 +732,9 @@ def _format_definition(definition, dictionary=None) -> str:
             rf"\rule[-2.5pt]{{0pt}}{{9pt}}{cell_str} \\ \hline"
             r"\end{tabular}}"
         )
-        parts.append(r"\vspace{0.05em}")
         parts.append(rf"\noindent {meta_block}\nopagebreak")
 
-    parts.append(r"\vspace{0.05em}")
+    parts.append(r"\vspace{0.025em}")
     parts.append(r"\nopagebreak")
     parts.append("")
 
@@ -751,7 +753,7 @@ def _format_definition(definition, dictionary=None) -> str:
             parts.append(r"\nopagebreak")
             parts.append(xref_latex)
 
-    parts.append(r"\vspace{0.8em}")
+    parts.append(r"\vspace{0.4em}")
 
     return "\n".join(parts)
 
