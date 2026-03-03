@@ -1122,7 +1122,7 @@ def _format_code_block(code: str) -> str:
     Préserve les sauts de ligne originaux du markdown,
     coupe les lignes trop longues, échappe les caractères LaTeX.
     """
-    MAX_CHARS = 66
+    MAX_CHARS = 64
 
     def escape_code_char(text: str) -> str:
         text = text.replace('\\', r'\textbackslash{}')
