@@ -1,6 +1,6 @@
 Clé cryptographique utilisée dans le Lightning Network pour permettre la punition d'un pair qui publie un ancien état de canal. Chaque transaction d'engagement contient une sortie `to_local` qui offre deux chemins de dépense :
-- l'un soumis à un délai relatif (`OP_CHECKSEQUENCEVERIFY`) pour le propriétaire,
-- l'autre immédiatement dépensable par la contrepartie si elle détient la clé de révocation correspondante.
+* l'un soumis à un délai relatif (`OP_CHECKSEQUENCEVERIFY`) pour le propriétaire,
+* l'autre immédiatement dépensable par la contrepartie si elle détient la clé de révocation correspondante.
 
 La clé de révocation est construite de manière collaborative. Pour une transaction d'engagement donnée, Alice fournit un point d'engagement ($C_A$) et Bob fournit un point de base de révocation ($R_B$). La clé publique de révocation est calculée comme suit :
 
