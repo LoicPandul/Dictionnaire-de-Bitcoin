@@ -22,9 +22,10 @@ def validate(dictionary: Dictionary) -> bool:
         True si tout est OK, False si des problèmes ont été trouvés.
     """
     casse_ok = _validate_casse(dictionary)
+    terms_ok = _validate_terms(dictionary)
     categories_ok = _validate_categories(dictionary)
     crossref_ok = _validate_cross_references(dictionary)
-    return casse_ok and categories_ok and crossref_ok
+    return casse_ok and terms_ok and categories_ok and crossref_ok
 
 
 def _validate_casse(dictionary: Dictionary) -> bool:
@@ -56,6 +57,29 @@ def _validate_casse(dictionary: Dictionary) -> bool:
         return False
 
     print("[OK] Métadonnées validées (casse)")
+    return True
+
+
+def _validate_terms(dictionary: Dictionary) -> bool:
+    """Vérifie qu'une définition n'a pas à la fois english_term et french_term."""
+    print("Vérification des termes (english_term / french_term)...")
+
+    errors = []
+
+    for definition in dictionary:
+        if definition.english_term and definition.french_term:
+            errors.append(
+                f"[{definition.slug}] possède à la fois english_term (\"{definition.english_term}\") "
+                f"et french_term (\"{definition.french_term}\")"
+            )
+
+    if errors:
+        print(f"\n[ERREUR] {len(errors)} définition(s) avec english_term ET french_term:")
+        for e in errors:
+            print(f"  ✗ {e}")
+        return False
+
+    print("[OK] Termes validés (pas de doublon english/french)")
     return True
 
 
