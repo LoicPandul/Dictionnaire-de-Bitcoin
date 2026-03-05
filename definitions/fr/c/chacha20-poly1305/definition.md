@@ -1,0 +1,3 @@
+Algorithme de chiffrement authentifié avec données associées qui combine le chiffre de flux ChaCha20 et le code d'authentification de message Poly1305. Il prend en entrée une clé de 256 bits et un nonce de 96 bits, et produit un texte chiffré accompagné d'une étiquette d'authentification de 128 bits qui garantit à la fois l'intégrité et l'authenticité des données.
+
+Dans l'écosystème Bitcoin, ChaCha20-Poly1305 est utilisé dans le protocole de transport P2P v2 (BIP-0324) pour chiffrer les communications entre nœuds du réseau. Il est également utilisé dans la couche de transport du Lightning Network (BOLT-08), où le framework Noise l'utilise pour chiffrer et authentifier les messages échangés entre pairs après le *handshake* initial.

@@ -1,0 +1,8 @@
+uuid: "8bca8bc5-c1b7-4c8c-9fa1-913ce3c086c3"
+title: "CHACHA20-POLY1305"
+slug: "chacha20-poly1305"
+category: "CRYPTOGRAPHIE"
+cross_references:
+  - "70c5818e-8783-406d-9bee-b6aea486e260"
+  - "3aa32828-d935-4d8c-a1a8-19dd32bad5d1"
+version: "1"
