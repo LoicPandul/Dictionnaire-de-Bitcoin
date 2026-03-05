@@ -1,0 +1,3 @@
+Module de Bitcoin Core qui gère les adresses des pairs connus sur le réseau. Il maintient deux tables en mémoire : la table « new », qui contient les adresses découvertes mais pas encore testées (1024 seaux de 64 entrées), et la table « tried », qui contient les adresses auxquelles le nœud s'est déjà connecté avec succès (256 seaux de 64 entrées). Ces tables sont sérialisées dans le fichier `peers.dat`.
+
+Le module a été introduit par Pieter Wuille en 2012, en remplacement du système précédent qui stockait les adresses dans `addr.dat` sans structure de bucketing. Son fonctionnement a été renforcé par l'ajout des *feeler connections* et du mécanisme *test-before-evict*, qui permettent de vérifier la joignabilité des adresses avant de les promouvoir ou de les évincer.
