@@ -1,5 +1,5 @@
 Proposition actuellement en brouillon d'un ensemble de corrections de vulnérabilités dans les règles de consensus de Bitcoin, connue sous le nom de « Consensus Cleanup ». Le BIP-0054 corrige :
-- l'attaque timewarp en imposant des contraintes sur les horodatages des blocs aux frontières des périodes d'ajustement de la difficulté,
+- l'attaque time warp en imposant des contraintes sur les horodatages des blocs aux frontières des périodes d'ajustement de la difficulté,
 - limite le temps de validation des blocs en plafonnant le nombre d'opérations de signature par transaction,
 - invalide les transactions de 64 octets pour corriger les faiblesses de l'arbre de Merkle,
 - et impose l'utilisation du champ `nLockTime` dans les transactions coinbase pour éliminer le besoin de validation BIP-0030.
