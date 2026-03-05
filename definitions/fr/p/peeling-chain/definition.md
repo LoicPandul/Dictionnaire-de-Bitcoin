@@ -1,0 +1,5 @@
+Motif de transaction sur la blockchain dans lequel un montant important de bitcoins est progressivement distribué à travers une longue série de transactions successives. À chaque étape, une fraction est envoyée à un destinataire, tandis que le reste revient vers une nouvelle adresse de change. Le solde résiduel diminue ainsi de transaction en transaction : chaque montant est « pelé » (*peeled*) du total restant. La chaîne peut s'étendre sur des centaines, voire des milliers de transactions.
+
+Ce motif est caractéristique des retraits automatisés depuis des plateformes d'échange, des pools de minage ou des services de paiement, mais il est également utilisé pour le blanchiment de fonds, car les petits montants individuels attirent moins l'attention des systèmes de conformité.
+
+En analyse de chaîne, la *peeling chain* constitue un motif facile à identifier, car chaque transaction ne comporte généralement qu'une seule entrée et deux sorties aux montants très asymétriques. Son identification permet de suivre le fil des paiements et de reconstituer les flux de fonds à partir d'une source unique.
