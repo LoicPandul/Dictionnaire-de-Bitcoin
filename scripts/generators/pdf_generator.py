@@ -138,7 +138,7 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
 
     # Préambule
     fonts_path = str(BASE_DIR / "fonts").replace('\\', '/') + '/'
-    sections.append(_generate_preamble(fonts_path))
+    sections.append(_generate_preamble(fonts_path, legal))
 
     # Début du document
     sections.append("\\begin{document}")
@@ -196,8 +196,10 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     return "\n\n".join(sections)
 
 
-def _generate_preamble(fonts_path: str = "") -> str:
+def _generate_preamble(fonts_path: str = "", legal: dict = None) -> str:
     """Génère le préambule LaTeX."""
+    if legal is None:
+        legal = {}
     preamble = r"""% Dictionnaire de Bitcoin - Format KDP
 \documentclass[9pt,twoside,openright]{book}
 
@@ -276,7 +278,11 @@ def _generate_preamble(fonts_path: str = "") -> str:
     colorlinks=true,
     linkcolor=linkcolor,
     urlcolor=linkcolor,
-    pdfborder={0 0 0}
+    pdfborder={0 0 0},
+    pdftitle={%%PDFTITLE%%},
+    pdfauthor={%%PDFAUTHOR%%},
+    pdfsubject={%%PDFSUBJECT%%},
+    pdfkeywords={%%PDFKEYWORDS%%}
 ]{hyperref}
 \urlstyle{same}
 
@@ -456,7 +462,21 @@ def _generate_preamble(fonts_path: str = "") -> str:
 \usepackage{needspace}
 """
     pictos_path = str(BASE_DIR / "assets" / "pictograms").replace('\\', '/') + '/'
-    return preamble.replace('%%FONTSPATH%%', fonts_path).replace('%%PICTOGRAMSPATH%%', pictos_path)
+    title = legal.get('title', 'Dictionnaire de Bitcoin')
+    subtitle = legal.get('subtitle', '')
+    author = legal.get('author', '')
+    license_name = legal.get('license', '')
+    isbn = legal.get('isbn', '')
+    pdf_subject = f"{title} : {subtitle}" if subtitle else title
+    pdf_keywords = f"Bitcoin, {license_name}, ISBN {isbn}" if isbn else f"Bitcoin, {license_name}"
+    return (preamble
+        .replace('%%FONTSPATH%%', fonts_path)
+        .replace('%%PICTOGRAMSPATH%%', pictos_path)
+        .replace('%%PDFTITLE%%', title)
+        .replace('%%PDFAUTHOR%%', author)
+        .replace('%%PDFSUBJECT%%', pdf_subject)
+        .replace('%%PDFKEYWORDS%%', pdf_keywords)
+    )
 
 
 def _generate_half_title(legal: dict) -> str:
