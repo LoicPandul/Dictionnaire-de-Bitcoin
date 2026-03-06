@@ -10,6 +10,6 @@
 #     note: "precision facultative"  # optionnel, contexte ou remarque
 
 pending_terms:
-  - term: "STRATUM V2"
+  - term: "STRATUM V2" # Exemple, terme déjà présent
     category: "MINAGE"
     note: "Nouveau protocole de communication entre mineurs et pools"
