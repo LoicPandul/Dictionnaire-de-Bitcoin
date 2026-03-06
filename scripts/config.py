@@ -11,8 +11,8 @@ DEFINITIONS_DIR = BASE_DIR / "definitions" / "fr"
 TEMPLATES_DIR = BASE_DIR / "templates"
 
 # Fichiers de sortie
-OUTPUT_PDF = BASE_DIR / "Dictionnaire de Bitcoin.pdf"
-OUTPUT_INDEX = BASE_DIR / "INDEX.md"
+OUTPUT_PDF = BASE_DIR / "dictionnaire-de-bitcoin.pdf"
+OUTPUT_INDEX = BASE_DIR / "index.md"
 OUTPUT_STATS = BASE_DIR / "stats.md"
 README_FILE = BASE_DIR / "README.md"
 

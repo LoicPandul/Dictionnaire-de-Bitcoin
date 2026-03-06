@@ -103,7 +103,7 @@ def show_menu():
     print()
     print("  0. Build complet (PDF, INDEX, stats)")
     print("  1. Générer le PDF")
-    print("  2. Mettre à jour INDEX.md")
+    print("  2. Mettre à jour index.md")
     print("  3. Générer les statistiques")
     print("  4. Vérifier le markdown")
     print("  5. Corriger le markdown (auto-fix)")

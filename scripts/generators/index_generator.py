@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Génération de l'INDEX.md.
+Génération de l'index.md.
 """
 
 from pathlib import Path
@@ -9,7 +9,7 @@ from ..config import OUTPUT_INDEX, GITHUB_URL
 
 
 def generate(dictionary: Dictionary, output_path: Path = None):
-    """Génère le fichier INDEX.md."""
+    """Génère le fichier index.md."""
     if output_path is None:
         output_path = OUTPUT_INDEX
 

@@ -1,4 +1,4 @@
-[![Cover Image](./assets/images/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
+[![Cover Image](./assets/images/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/dictionnaire-de-bitcoin.pdf)
 <p align="center">
   <img src="https://img.shields.io/badge/Nombre%20de%20définitions-1409-black" alt="Nombre de définitions">
 </p>
@@ -31,7 +31,7 @@ Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les rés
 
 ## Lire le *Dictionnaire de Bitcoin*
 
-Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/Dictionnaire%20de%20Bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions.
+Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/dictionnaire-de-bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions.
 
 &nbsp;
 <p align="center">
@@ -41,10 +41,10 @@ Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*
 
 Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
 
-Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[INDEX.md](./INDEX.md) qui liste toutes les entrées avec des liens directs.
+Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[index.md](./index.md) qui liste toutes les entrées avec des liens directs.
 
 <p align="center">
-  <a href="./INDEX.md">
+  <a href="./index.md">
     <img src="https://img.shields.io/badge/Accéder%20au%20sommaire-Cliquez%20ici-black" alt="Accéder au sommaire">
   </a>
 </p>
@@ -150,8 +150,8 @@ Dictionnaire-de-Bitcoin/
 │   ├── generators/                 # Générateurs PDF, Index, Stats
 │   └── validators/                 # Validateurs
 │
-├── Dictionnaire de Bitcoin.pdf     # Version PDF
-├── INDEX.md                        # Index des définitions
+├── dictionnaire-de-bitcoin.pdf     # Version PDF
+├── index.md                        # Index des définitions
 ├── stats.md                        # Statistiques
 ├── README.md
 ├── LICENCE_FR.md
@@ -184,7 +184,7 @@ python scripts/main.py
 Options disponibles :
 - **0** : Build complet (PDF, INDEX, stats)
 - **1** : Générer le PDF
-- **2** : Mettre à jour INDEX.md
+- **2** : Mettre à jour index.md
 - **3** : Générer les statistiques
 - **4** : Vérifier le markdown
 - **5** : Corriger le markdown (auto-fix)
@@ -215,4 +215,4 @@ This work is licensed under a CC BY-NC-SA 4.0
 [cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
-[![Cover Image](./assets/images/Logo-Pandul-NOIR.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/Dictionnaire%20de%20Bitcoin.pdf)
+[![Cover Image](./assets/images/Logo-Pandul-NOIR.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/dictionnaire-de-bitcoin.pdf)
