@@ -3,8 +3,6 @@ title: "POLITIQUE DE MEMPOOL"
 slug: "politique-de-mempool"
 category: "RÉSEAU"
 english_term: "MEMPOOL POLICY"
-cross_references:
-  - "a184573c-7acd-4bd3-9618-25a1eb44d4aa"
-  - "b7d0c86b-a0d1-4863-b72e-fb257b66d962"
-  - "ea4e33b9-b048-49e3-ae58-43da0cb71446"
 version: "1"
+cross_references:
+  - "b7d0c86b-a0d1-4863-b72e-fb257b66d962"
