@@ -1,1 +1,1 @@
-Implémentation du Lightning Network écrite en python spécifiquement pour le logiciel Electrum.
+Implémentation du Lightning Network écrite en Python spécifiquement pour le logiciel Electrum.

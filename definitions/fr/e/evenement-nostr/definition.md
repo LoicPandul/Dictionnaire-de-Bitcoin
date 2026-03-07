@@ -1,7 +1,7 @@
-Unité fondamentale de données dans le protocole Nostr. Toute information transmise sur le réseau Nostr (publication de texte, mise à jour de profil, réaction, message chiffré, reçu de zap...) prend la forme d'un événement. Un événement est un objet JSON contenant six champs :
+Unité fondamentale de données dans le protocole Nostr. Toute information transmise sur le réseau Nostr (publication de texte, mise à jour de profil, réaction, message chiffré, reçu de zap...) prend la forme d'un événement. Un événement est un objet JSON contenant sept champs :
 * `id` : un identifiant unique obtenu par hachage SHA-256 du contenu sérialisé,
 * `pubkey` : la clé publique de l'auteur,
-* `created_at` l'horodatage Unix,
+* `created_at` : l'horodatage Unix,
 * `kind` : le type d'événement identifié par un entier,
 * `tags` : les métadonnées structurées permettant de mentionner des utilisateurs, référencer d'autres événements ou ajouter des hashtags,
 * `content` : le contenu textuel,

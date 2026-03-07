@@ -1,1 +1,1 @@
-Ajout de champs PSBT (BIP-0174) dédiés aux tweaks pay-to-contract. Le BIP-0372 permet aux signataires de savoir qu'une clé publique a été modifiée par un tweak P2C et de signer correctement la transaction en tenant compte de cette modification.
+Ajout de champs PSBT (BIP-0174) dédiés aux tweaks *pay-to-contract*. Le BIP-0372 permet aux signataires de savoir qu'une clé publique a été modifiée par un tweak P2C et de signer correctement la transaction en tenant compte de cette modification.

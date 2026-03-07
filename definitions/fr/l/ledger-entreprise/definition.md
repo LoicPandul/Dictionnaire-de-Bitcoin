@@ -1,1 +1,1 @@
-Entreprise française fondée en 2014 qui fabrique des hardware wallets pour sécuriser les clés privées de bitcoins. Ses appareils embarquent une puce de sécurité certifiée (Secure Element) qui isole les clés de tout environnement connecté à Internet.
+Entreprise française fondée en 2014 qui fabrique des *hardware wallets* pour sécuriser les clés privées de bitcoins. Ses appareils embarquent une puce de sécurité certifiée (*Secure Element*) qui isole les clés de tout environnement connecté à Internet.

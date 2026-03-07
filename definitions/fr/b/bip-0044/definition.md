@@ -7,7 +7,7 @@ Proposition d'amélioration qui introduit une structure de dérivation hiérarch
 * `m / purpose' / coin-type' / account' / change / address-index` indique simplement le numéro de l’adresse de réception et de sa paire de clés, afin de la différencier de ses sœurs à la même profondeur sur la même branche. Par exemple, la première adresse dérivée dispose de l’index `0`, la deuxième adresse dispose de l’index `1`, etc...
 
 Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 86' / 0' / 0' / 0 / 5`, on peut en déduire les informations suivantes :
-* `86'` indique que nous suivons le standard de dérivation du BIP-0086 (Taproot ou SegWitV1) ;
+* `86'` indique que nous suivons le standard de dérivation du BIP-0086 (Taproot ou SegWit V1) ;
 * `0'` indique que c'est une adresse Bitcoin ;
 * `0'` indique que l'on est sur le premier compte du portefeuille ;
 * `0` indique que c'est une adresse externe ;

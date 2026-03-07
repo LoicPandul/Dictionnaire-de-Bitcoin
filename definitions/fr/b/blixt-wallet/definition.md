@@ -1,1 +1,1 @@
-Portefeuille Lightning open source et non-custodial pour Android et iOS. Blixt embarque un nœud LND directement sur le téléphone de l'utilisateur, grâce à Neutrino.
+Portefeuille Lightning *open source* et *non-custodial* pour Android et iOS. Blixt embarque un nœud LND directement sur le téléphone de l'utilisateur, grâce à Neutrino.
