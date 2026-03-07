@@ -4,6 +4,6 @@ L'attaquant exploite la précipitation de l'utilisateur qui peut copier la mauva
 
 Une autre méthode pour mettre la mauvaise adresse devant la victime est l'utilisation de logiciels de gestion de portefeuille frauduleux qui imitent des logiciels légitimes, ou la modification de l'adresse lorsqu'une machine est compromise, entre le moment où elle est copiée et celui où la transaction est construite. On parle alors parfois d'« *address swapping* ».
 
-Pour se protéger contre ces différentes méthodes d'attaque, il est important de vérifier plusieurs caractères de l'adresse, surtout au niveau de sa checksum (à la fin), sur l'écran du périphérique de signature avant de signer la transaction.
+Pour se protéger contre ces différentes méthodes d'attaque, il est important de vérifier plusieurs caractères de l'adresse, surtout au niveau de sa *checksum* (à la fin), sur l'écran du périphérique de signature avant de signer la transaction.
 
 *On parle également parfois d'Address Poisoning pour désigner cette attaque.*
