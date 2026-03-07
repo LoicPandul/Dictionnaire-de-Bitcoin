@@ -4,4 +4,4 @@ Le mécanisme est conçu pour préserver la confidentialité du nœud : à chaqu
 
 La watchtower constitue un tiers de confiance minimal : elle ne peut ni modifier ni détourner les fonds, puisque la transaction de justice est déjà signée avec des sorties figées en faveur du propriétaire du canal. Le seul risque pour le nœud consiste à s’appuyer sur une watchtower qui ne remplirait pas son rôle au moment où elle est réellement nécessaire. C’est pourquoi un nœud peut en configurer plusieurs, afin de s’assurer qu’au moins l’une d’entre elles agira correctement en cas de besoin.
 
-Il existe des watchtowers dites « altruistes », qui sont proposées publiquement et gratuitement, et n'importe quel nœud Lightning peut également jouer ce rôle pour d'autres nœud.
+Il existe des watchtowers dites « altruistes », qui sont proposées publiquement et gratuitement, et n'importe quel nœud Lightning peut également jouer ce rôle pour d'autres nœuds.
