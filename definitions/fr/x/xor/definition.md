@@ -22,7 +22,7 @@ Chaque bit de la séquence est comparé à son homologue et l'opération XOR est
 L'opération XOR est utilisée dans de nombreux domaines de l'informatique, notamment dans la cryptographie, pour ses attributs intéressants comme : 
 * Sa commutativité : l'ordre des opérandes n'affecte pas le résultat. Pour deux variables $D$ et $E$ données : $D \oplus E = E \oplus D$ ;
 * Son associativité : le regroupement des opérandes n'affecte pas le résultat. Pour trois variables $A$, $B$ et $C$ données : $(A \oplus B) \oplus C = A \oplus (B \oplus C)$ ;
-* Il dispose d'un élément neutre $0$ : un opérande xorée à $0$ sera toujours égale à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
+* Il dispose d'un élément neutre $0$ : un opérande xoré à $0$ sera toujours égal à l'opérande. Pour une variable $A$ donnée : $A \oplus 0 = A$ ;
 * Chaque élément est son propre inverse. Pour une variable $A$ donnée : $A \oplus A = 0$.
 
 Dans le cadre de Bitcoin, on utilise évidemment l'opération XOR à de nombreux endroits. Par exemple, le XOR est massivement utilisé dans la fonction SHA256, elle-même largement utilisée dans le protocole Bitcoin. Certains protocoles comme le *SeedXOR* de Coldcard utilisent également cette primitive pour d'autres applications. On le retrouve aussi dans le BIP-0047 pour chiffrer le code de paiement réutilisable lors de sa transmission.
