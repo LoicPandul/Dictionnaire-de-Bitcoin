@@ -194,10 +194,14 @@ Options disponibles :
 
 ## Licence et réutilisation
 
-**Shield:** [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+**Shield:**
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 **Crédit:**
-Cette définition est extraite du « Dictionnaire de Bitcoin », un ouvrage libre rédigé par Loïc Morel (Pandul) disponible sur GitHub : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/tree/main
+
+```md
+Cette définition est extraite du « Dictionnaire de Bitcoin », un ouvrage rédigé par Loïc Morel (pandul.fr) disponible sur GitHub : https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/
+```
 
 Cet ouvrage est sous licence CC BY-NC-SA 4.0 [Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International][cc-by-nc-sa-fr].
 
@@ -214,6 +218,3 @@ This work is licensed under a CC BY-NC-SA 4.0
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 [cc-by-nc-sa-fr]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
-
-
-[![Cover Image](./assets/images/Logo-Pandul-NOIR.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/dictionnaire-de-bitcoin.pdf)
