@@ -1,1 +1,1 @@
-Identique à OP_1.
+Identique à `OP_1`. Il pousse la valeur `1` sur la pile. Il est souvent utilisé pour représenter la valeur booléenne vrai dans les scripts.
