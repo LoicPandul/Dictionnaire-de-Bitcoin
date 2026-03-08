@@ -38,10 +38,10 @@ Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les rés
 
 Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/dictionnaire-de-bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions. Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
 
-Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[index.md](./index.md) qui liste toutes les entrées avec des liens directs.
+Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[index.md](./INDEX.md) qui liste toutes les entrées avec des liens directs.
 
 <p align="center">
-  <a href="./index.md">
+  <a href="./INDEX.md">
     <img src="https://img.shields.io/badge/Acc%C3%A9der%20au%20sommaire-Cliquez%20ici-1B3A4B?style=for-the-badge" alt="Accéder au sommaire">
   </a>
 </p>
