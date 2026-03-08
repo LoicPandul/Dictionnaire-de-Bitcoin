@@ -2,4 +2,4 @@ Format de représentation d'une phrase de récupération sous forme de QR code. 
 
 Une variante appelée Compact SeedQR encode directement l'entropie binaire de la phrase (128 bits pour 12 mots, 256 bits pour 24 mots), ce qui réduit la taille du QR code de 35 à 40 %. Le format est adopté par plusieurs signing devices comme SeedSigner, Coldcard Q et Blockstream Jade.
 
-SeedQR offre une alternative à la transcription classique en mots : la phrase peut être sauvegardée sur un support physique (métal, papier) sous forme de QR code, puis scannée directement par le signing device pour importer la seed sans saisie manuelle.
+SeedQR offre une alternative à la transcription classique en mots : la phrase peut être sauvegardée sur un support physique (métal, papier) sous forme de QR code, puis scannée directement par le signing device pour importer la *seed* sans saisie manuelle.

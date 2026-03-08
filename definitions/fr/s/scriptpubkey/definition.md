@@ -3,7 +3,7 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 Par exemple, voici un `scriptPubKey` P2PKH classique :
 
 ```text
-OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG
+OP_DUP OP_HASH160 OP_PUSHBYTES_20 <hash de la clé publique> OP_EQUALVERIFY OP_CHECKSIG
 ```
 
 Le `scriptSig` correspondant serait :
@@ -14,4 +14,4 @@ Le `scriptSig` correspondant serait :
 
 ![](./assets/image-1.png)
 
-*Pour nommé ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*
+*Pour nommer ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*

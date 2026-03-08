@@ -11,7 +11,7 @@ Par exemple, voici un `scriptSig` P2PKH classique :
 Le `scriptPubKey` correspondant serait :
 
 ```text
-OP_DUP OP_HASH160 OP_PUSHBYTES_20 <adresse> OP_EQUALVERIFY OP_CHECKSIG
+OP_DUP OP_HASH160 OP_PUSHBYTES_20 <hash de la clé publique> OP_EQUALVERIFY OP_CHECKSIG
 ```
 
 ![](./assets/image-1.png)

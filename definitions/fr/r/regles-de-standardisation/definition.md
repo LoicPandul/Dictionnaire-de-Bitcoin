@@ -7,6 +7,6 @@ Les règles de standardisation existent principalement pour trois raisons :
 
 Notons que la majorité des nœuds laissent les configurations par défaut telles que préétablies dans Bitcoin Core, engendrant de fait une homogénéité des règles de standardisation à travers le réseau. Une transaction qui, bien que conforme aux règles de consensus, ne respecte pas ces règles de standardisation, aura des difficultés à être diffusée sur le réseau. Elle pourra toutefois être incluse dans un bloc valide si jamais elle atteint un mineur. Dans la pratique, ces transactions, qualifiées de « non standard », sont souvent transmises directement à un mineur par des voies externes au réseau pair-à-pair de Bitcoin. C'est souvent le seul moyen pour confirmer ce type de transaction.
 
-Par exemple, une transaction qui n'alloue aucuns frais est à la fois valide selon les règles de consensus et non standard, car la politique par défaut de Bitcoin Core pour le paramètre `minRelayTxFee` est de `0.000001` (en BTC/kB).
+Par exemple, une transaction qui n'alloue aucuns frais est à la fois valide selon les règles de consensus et non standard, car la politique par défaut de Bitcoin Core pour le paramètre `minRelayTxFee` est de `0.000001` (en BTC/kvB).
 
 *Les règles de standardisation constituent un sous-ensemble de la politique de mempool, elle-même sous-ensemble de la politique de relais des transactions, qui fait partie de la politique de relais au sens large. Il ne faut donc pas confondre les règles de standardisation avec la politique de mempool, qui est un concept plus englobant.*

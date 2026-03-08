@@ -1,4 +1,4 @@
-Nœud individuel au sein de la *Spark Entity* (SE), participant au protocole de signature à seuil qui sécurise les transferts offchain dans Spark. Chaque SO détient un fragment de la part de clé de la SE, sans jamais posséder la clé complète à lui seul. L'ensemble des SO (ou un seuil d'entre eux) coopèrent via le protocole FROST pour co-signer les transactions et renouveler les parts de clé lors des transferts de propriété.
+Nœud individuel au sein de la *Spark Entity* (SE), participant au protocole de signature à seuil qui sécurise les transferts *off-chain* dans Spark. Chaque SO détient un fragment de la part de clé de la SE, sans jamais posséder la clé complète à lui seul. L'ensemble des SO (ou un seuil d'entre eux) coopèrent via le protocole FROST pour co-signer les transactions et renouveler les parts de clé lors des transferts de propriété.
 
 Les SO jouent également un rôle de *watchtower* : ils surveillent la blockchain Bitcoin pour détecter d'éventuelles tentatives d'exit frauduleuses par d'anciens propriétaires.
 

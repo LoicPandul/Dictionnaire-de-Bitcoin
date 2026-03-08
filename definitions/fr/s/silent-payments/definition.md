@@ -26,7 +26,7 @@ Avec :
 * $B_{\text{spend}}$ : La clé publique de dépense de Bob (adresse statique) ;
 * $A$ : La somme des clés publiques en input (tweak) ;
 * $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
-* $\text{outpoint}_L$ : Le plus petit UTXO (lexicographiquement) utilisé en input de la transaction d'Alice ;
+* $\text{outpoint}_L$ : Le plus petit outpoint (lexicographiquement) utilisé en input de la transaction d'Alice ;
 * $\text{ ‖ }$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
 * $G$ : Le point générateur de la courbe elliptique `secp256k1` ;
 * $\text{hash}$ : La fonction de hachage SHA256 taguée avec `BIP0352/SharedSecret` ;

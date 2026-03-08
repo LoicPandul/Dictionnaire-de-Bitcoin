@@ -1,1 +1,1 @@
-Technique consistant à envoyer des paiements sur le Lightning Network sans intention de les finaliser, dans le but de découvrir des informations sur le réseau, notamment les routes disponibles et les capacités des canaux.
+Technique consistant à envoyer des paiements sur le Lightning Network sans intention de les finaliser, dans le but de découvrir des informations sur le réseau, notamment les routes disponibles et les soldes des canaux.
