@@ -1,16 +1,21 @@
 [![Cover Image](./assets/images/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/dictionnaire-de-bitcoin.pdf)
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Nombre%20de%20définitions-1408-black" alt="Nombre de définitions">
+  <img src="https://img.shields.io/badge/Nombre%20de%20d%C3%A9finitions-1408-1B3A4B?style=for-the-badge" alt="Nombre de définitions">
 </p>
 
 <p align="center">
-  <a href="https://x.com/Loic_Pandul">
-    <img src="https://img.shields.io/twitter/follow/Loic_Pandul?style=social" alt="Suivez-moi sur X">
-  </a>
-  <a href="https://www.pandul.fr/">
-    <img src="https://img.shields.io/badge/Site%20web-Visitez%20mon%20site-brightgreen?style=social&logo=internet-explorer" alt="Visitez mon site">
-  </a>
+  <a href="https://x.com/Loic_Pandul"><img src="https://img.shields.io/badge/@Loic__Pandul-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://www.pandul.fr/"><img src="https://img.shields.io/badge/pandul.fr-000000?style=flat&logo=firefox&logoColor=white" alt="Site web"></a>
+  <a href="mailto:info@pandul.fr"><img src="https://img.shields.io/badge/info@pandul.fr-D14836?style=flat&logo=mail.ru&logoColor=white" alt="Email"></a>
 </p>
+
+
+⚡ Lightning :
+
+```
+sats@pandul.fr
+```
 
 ## Table des matières
 - [Description du projet](#description-du-projet)
@@ -32,12 +37,6 @@ Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les rés
 ## Lire le *Dictionnaire de Bitcoin*
 
 Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/dictionnaire-de-bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions.
-
-&nbsp;
-<p align="center">
-  <img src="./assets/images/README%20GIF.gif" alt="Présentation GIF" width="70%">
-</p>
-&nbsp;
 
 Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
 
