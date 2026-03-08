@@ -1,4 +1,4 @@
-Un Commitment (au sens cryptographique) est un objet mathématique, noté $C$, dérivé de façon déterministe à partir d’une opération sur une donnée structurée $m$ (le message) et d’une valeur aléatoire $r$. On écrit :
+Un Commitment (au sens cryptographique) est un objet mathématique, noté $C$, dérivé de façon déterministe à partir d'une opération sur une donnée structurée $m$ (le message) et d'une valeur aléatoire $r$. On écrit :
 $$
 C = \text{commit}(m, r)
 $$
@@ -15,4 +15,4 @@ $$
 
 * *Hiding* : la connaissance de $C$ ne doit pas révéler le contenu de $m$.
 
-Dans le cas du protocole RGB, un commitment est inclus dans une transaction Bitcoin afin de prouver l’existence d’une certaine information à un instant donné, sans dévoiler cette information elle-même.
+Dans le cas du protocole RGB, un commitment est inclus dans une transaction Bitcoin afin de prouver l'existence d'une certaine information à un instant donné, sans dévoiler cette information elle-même.

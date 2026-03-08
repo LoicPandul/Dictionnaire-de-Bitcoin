@@ -12,4 +12,4 @@ The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 
 Cette citation est une référence à un article du journal *The Times*. Le message est interprété comme une critique du système financier traditionnel et de ses dérives, ce qui a en partie motivé la création de Bitcoin en tant qu'alternative monétaire.
 
-Puisqu’il incarne le tout premier bloc de la blockchain Bitcoin, le bloc de Genèse possède un champ contenant le hachage du bloc antérieur, mais celui-ci est rempli de zéros, car il n’existe pas de bloc précédent. Par ailleurs, les 50 bitcoins générés en récompense dans ce bloc ne sont pas dépensables au niveau protocolaire.
+Puisqu'il incarne le tout premier bloc de la blockchain Bitcoin, le bloc de Genèse possède un champ contenant le hachage du bloc antérieur, mais celui-ci est rempli de zéros, car il n'existe pas de bloc précédent. Par ailleurs, les 50 bitcoins générés en récompense dans ce bloc ne sont pas dépensables au niveau protocolaire.
