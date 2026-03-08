@@ -28,23 +28,21 @@ sats@pandul.fr
 
 ## Description du projet
 
-Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de Pandul, il est accessible gratuitement en version numérique sur ce dépôt GitHub. Ce livre est également vendu imprimé sur Amazon.
+Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de pandul.fr, il est accessible gratuitement en version numérique sur ce dépôt GitHub. Ce livre est également vendu imprimé sur Amazon et Bitcoin Bazar.
 
-Je gagne une petite marge sur chaque exemplaire physique vendu via Amazon. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
+Je gagne une petite marge sur chaque exemplaire physique vendu. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
 
-Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les réseaux sociaux ou me faire un don LN sur sats@pandul.fr. Merci ! :)
+Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les réseaux sociaux ou me faire un don LN sur sats@pandul.fr. Merci !
 
 ## Lire le *Dictionnaire de Bitcoin*
 
-Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/dictionnaire-de-bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions.
-
-Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
+Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/dictionnaire-de-bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions. Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
 
 Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[index.md](./index.md) qui liste toutes les entrées avec des liens directs.
 
 <p align="center">
   <a href="./index.md">
-    <img src="https://img.shields.io/badge/Accéder%20au%20sommaire-Cliquez%20ici-black" alt="Accéder au sommaire">
+    <img src="https://img.shields.io/badge/Acc%C3%A9der%20au%20sommaire-Cliquez%20ici-1B3A4B?style=for-the-badge" alt="Accéder au sommaire">
   </a>
 </p>
 
@@ -62,28 +60,30 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
 2. Créez une nouvelle branche établie sur la branche `main` ;
 3. Consultez la [charte éditoriale](./STYLE_GUIDE.md) pour respecter les conventions de rédaction ;
 4. Rédigez vos suggestions de modification dans le dossier `definitions/fr/` ;
-5. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
+5. Faites une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
 
 ### Ajouter une nouvelle définition
 
 Pour ajouter une nouvelle définition :
 
-1. Créez un dossier dans `definitions/fr/{lettre}/{slug-de-la-definition}/`
-2. Créez un fichier `metadata.yaml` avec les métadonnées :
-   ```yaml
-   uuid: "générez-un-uuid-unique"
-   title: "TITRE EN MAJUSCULES"
-   slug: "titre-en-minuscules"
-   category: "CATÉGORIE"
-   english_term: "ENGLISH TERM"  # optionnel
-   french_term: "ENGLISH TERM"  # optionnel
-   cross_references:
-   - "UUID du terme connexe"
-   - "UUID du terme connexe"
-   version: "1" # version du dictionnaire
-   ```
-3. Créez un fichier `definition.md` avec le corps de la définition
-4. Si votre définition inclut des images, créez un dossier `assets/` et référencez-les avec `![](./assets/image.png)`
+- Créez un dossier dans `definitions/fr/{lettre}/{slug-de-la-definition}/`
+- Créez un fichier `metadata.yaml` avec les métadonnées :
+
+```yaml
+uuid: "générez-un-uuid-v4-unique"
+title: "TITRE EN MAJUSCULES"
+slug: "titre-en-minuscules" # identique au nom de dossier
+category: "CATÉGORIE"
+english_term: "ENGLISH TERM"  # optionnel
+french_term: "FRENCH TERM"  # optionnel
+cross_references:
+  - "UUID du terme connexe"
+  - "UUID du terme connexe"
+version: "1" # version 2026 du dictionnaire
+```
+
+- Créez un fichier `definition.md` avec le corps de la définition
+- Si votre définition inclut des images, créez un dossier `assets/` et référencez-les avec `![](./assets/image.png)`
 
 ### Modifier une définition existante
 
@@ -95,7 +95,7 @@ Dans le fichier [pending_terms.yaml](./templates/pending_terms.yaml), vous trouv
 
 Pour les changements d'envergure, comme la réalisation d'une traduction de l'ouvrage, je vous invite à me contacter directement à info@pandul.fr ou sur [mon Twitter](https://x.com/Loic_Pandul).
 
-En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en ligne que dans la version imprimée du dictionnaire**. Si vous préférez ne pas être cité, ou si vous souhaitez apparaître sous un autre nom que votre pseudo GitHub, veuillez le préciser explicitement dans votre issue ou votre PR.
+En contribuant, **votre pseudo GitHub sera mentionné tant dans la version en ligne que dans la version imprimée du Dictionnaire**. Si vous préférez ne pas être cité, ou si vous souhaitez apparaître sous un autre nom que votre pseudo GitHub, veuillez le préciser explicitement dans votre issue ou votre PR. À défaut, je prends le pseudo GitHub.
 
 ## Termes acceptés dans le *Dictionnaire de Bitcoin*
 
@@ -143,7 +143,7 @@ Dictionnaire-de-Bitcoin/
 │   ├── categories.yaml             # Liste des catégories
 │   └── pending_terms.yaml          # Termes en attente de définition
 │
-├── scripts/                        # Scripts de génération (voir scripts/README.md)
+├── scripts/                        # Scripts de génération
 │   ├── main.py                     # Point d'entrée principal
 │   ├── config.py                   # Configuration
 │   ├── core/                       # Classes principales
