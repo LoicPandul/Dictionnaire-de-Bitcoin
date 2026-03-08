@@ -144,16 +144,18 @@ Dictionnaire-de-Bitcoin/
 │   ├── categories.yaml             # Liste des catégories
 │   └── pending_terms.yaml          # Termes en attente de définition
 │
-├── scripts/                        # Scripts de génération
+├── scripts/                        # Scripts de génération (voir scripts/README.md)
 │   ├── main.py                     # Point d'entrée principal
 │   ├── config.py                   # Configuration
 │   ├── core/                       # Classes principales
 │   ├── generators/                 # Générateurs PDF, Index, Stats
-│   └── validators/                 # Validateurs
+│   ├── validators/                 # Validateurs
+│   └── README.md                   # Documentation des scripts
 │
 ├── dictionnaire-de-bitcoin.pdf     # Version PDF
 ├── index.md                        # Index des définitions
 ├── stats.md                        # Statistiques
+├── STYLE_GUIDE.md                  # Charte éditoriale
 ├── README.md
 ├── LICENCE_FR.md
 └── LICENSE.md
@@ -161,36 +163,7 @@ Dictionnaire-de-Bitcoin/
 
 ## Scripts et génération
 
-Le projet utilise des scripts Python pour générer le PDF et maintenir les fichiers d'index et de statistiques.
-
-### Prérequis
-
-- Python 3.8+
-- XeLaTeX (pour la génération PDF)
-
-### Installation des dépendances
-
-```bash
-pip install -r scripts/requirements.txt
-```
-
-### Utilisation
-
-Exécutez le script principal et choisissez une option dans le menu :
-
-```bash
-python scripts/main.py
-```
-
-Options disponibles :
-- **0** : Build complet (PDF, INDEX, stats)
-- **1** : Générer le PDF
-- **2** : Mettre à jour index.md
-- **3** : Générer les statistiques
-- **4** : Vérifier le markdown
-- **5** : Corriger le markdown (auto-fix)
-- **6** : Afficher les informations
-- **7** : Quitter
+Voir le [README dédié](./scripts/README.md) dans le dossier `scripts/`.
 
 ## Licence et réutilisation
 
