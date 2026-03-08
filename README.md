@@ -61,8 +61,9 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
 
 1. Créez votre fork du projet ;
 2. Créez une nouvelle branche établie sur la branche `main` ;
-3. Rédigez vos suggestions de modification dans le dossier `definitions/fr/` ;
-4. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
+3. Consultez la [charte éditoriale](./STYLE_GUIDE.md) pour respecter les conventions de rédaction ;
+4. Rédigez vos suggestions de modification dans le dossier `definitions/fr/` ;
+5. Proposez une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
 
 ### Ajouter une nouvelle définition
 
