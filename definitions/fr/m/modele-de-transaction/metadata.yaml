@@ -2,7 +2,7 @@ uuid: "11de35b9-e665-44db-808a-6133d55d209f"
 title: "MODÈLE DE TRANSACTION"
 slug: "modele-de-transaction"
 category: "PROTOCOLE"
-english_term: "TRANSACTION TEMPLATE"
+english_term: "TRANSACTION PATTERN"
 cross_references:
   - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
   - "5345a3e9-f01f-44f4-abb5-a692f9c25f9f"

@@ -6,4 +6,4 @@ Dans le cadre de Bitcoin, on l'utilise pour l'horloge locale des nœuds, et donc
 MTP < Horodatage valide < (NAT + 2h)
 ```
 
-On utilise également l'Heure Unix pour établir des timelocks, lorsque ceux-ci se basent sur l'heure réelle, et non pas sur un nombre de blocs.
+On utilise également l'Heure Unix pour établir des *timelocks*, lorsque ceux-ci se basent sur l'heure réelle, et non pas sur un nombre de blocs.

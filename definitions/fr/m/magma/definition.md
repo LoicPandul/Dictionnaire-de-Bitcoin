@@ -1,5 +1,5 @@
 Place de marché de liquidité pour le Lightning Network développée par Amboss Technologies. Magma permet aux opérateurs de nœuds d'acheter ou de vendre de la capacité entrante sous forme de canaux de paiement, indépendamment de l'implémentation utilisée (LND, CLN, Eclair).
 
-Le mécanisme repose sur des HODL invoices pour créer des contrats conditionnels : le vendeur ne reçoit le paiement que s'il ouvre effectivement le canal convenu dans un délai court. Ce système permet à Magma de faciliter les échanges sans jamais prendre la garde des fonds des utilisateurs.
+Le mécanisme repose sur des *HODL invoices* pour créer des contrats conditionnels : le vendeur ne reçoit le paiement que s'il ouvre effectivement le canal convenu dans un délai court. Ce système permet à Magma de faciliter les échanges sans jamais prendre la garde des fonds des utilisateurs.
 
 Magma répond à un besoin récurrent sur le Lightning Network : obtenir de la liquidité entrante. Un nœud qui vient d'ouvrir un canal ne dispose que de capacité sortante ; pour recevoir des paiements, il doit convaincre un pair d'allouer des fonds de son côté du canal. Magma transforme ce processus en un marché ouvert où la liquidité s'échange contre des frais négociés entre les parties.

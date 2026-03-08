@@ -1,5 +1,5 @@
 Phénomène économique caractérisé par une hausse des prix extrêmement rapide et incontrôlable. L'hyperinflation survient lorsqu'un gouvernement ou une banque centrale émet de la monnaie en quantités excessives, souvent pour financer des déficits budgétaires, entraînant une perte de confiance totale dans la devise nationale.
 
-Les exemples historiques les plus marquants sont la République de Weimar en Allemagne (1923), le Zimbabwe dans les années 2000, ou encore le Venezuela depuis 2016. Dans ces cas, la monnaie a perdu sa fonction de réserve de valeur et de moyen d'échange, poussant les populations vers des monnaies alternatives ou le troc.
+Les exemples historiques les plus marquants sont la République de Weimar en Allemagne (1923), le Zimbabwe dans les années 2000, ou encore le Venezuela à partir de 2016. Dans ces cas, la monnaie a perdu sa fonction de réserve de valeur et de moyen d'échange, poussant les populations vers des monnaies alternatives ou le troc.
 
 Le risque d'hyperinflation est un argument central des bitcoiners, qui mettent en avant l'offre limitée à 21 millions d'unités de BTC comme protection contre ce type de dérives monétaires. Contrairement aux monnaies fiat, aucune autorité ne peut augmenter arbitrairement la quantité de bitcoins en circulation.

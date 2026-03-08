@@ -2,7 +2,7 @@ Système de preuve de travail conçu par Adam Back en 1997 pour lutter contre le
 
 HashCash a rapidement été adopté par des cypherpunks qui cherchaient à développer un système de monnaie électronique anonyme sans intermédiaire. En effet, l'innovation d'Adam Back a introduit pour la première fois la notion de rareté dans le monde numérique. On retrouve alors le concept de preuve de travail dans plusieurs systèmes de monnaies électroniques antérieurs à Bitcoin, dont :
 * b-money de Wei Dai publié en 1998 ;
-* R-POW de Hal Finney publié en 2004 ;
-* BitGold de Nick Szabo publié en 2005.
+* RPOW de Hal Finney publié en 2004 ;
+* Bit Gold de Nick Szabo publié en 2005.
 
 Le principe de HashCash se retrouve également au sein du protocole Bitcoin, où il est utilisé comme mécanisme de protection face aux attaques Sybil.
