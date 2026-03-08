@@ -1,12 +1,12 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 07/03/2026*
+*Dernière mise à jour : 08/03/2026*
 
 ---
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 1409
+- **Nombre total de définitions** : 1408
 
 ## Définitions par lettre
 
@@ -27,7 +27,7 @@
 | M | 63 |
 | N | 30 |
 | O | 119 |
-| P | 92 |
+| P | 91 |
 | Q | 3 |
 | R | 48 |
 | S | 135 |
@@ -45,7 +45,7 @@
 2. **S** : 135 définitions
 3. **C** : 132 définitions
 4. **O** : 119 définitions
-5. **P** : 92 définitions
+5. **P** : 91 définitions
 
 ## Catégories
 
@@ -54,7 +54,7 @@
 - **LIGHTNING NETWORK** : 134
 - **PORTEFEUILLE** : 121
 - **SCRIPT** : 113
-- **MINAGE** : 88
+- **MINAGE** : 87
 - **CONFIDENTIALITÉ** : 66
 - **CRYPTOGRAPHIE** : 64
 - **INFORMATIQUE** : 61
@@ -71,18 +71,18 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1953 occurrences
-- **transaction** : 1579 occurrences
-- **bloc** : 863 occurrences
-- **protocole** : 527 occurrences
-- **adresse** : 500 occurrences
-- **paiement** : 461 occurrences
+- **bitcoin** : 1955 occurrences
+- **transaction** : 1582 occurrences
+- **bloc** : 857 occurrences
+- **protocole** : 528 occurrences
+- **adresse** : 498 occurrences
+- **paiement** : 460 occurrences
 - **lightning** : 443 occurrences
 - **réseau** : 429 occurrences
-- **portefeuille** : 427 occurrences
-- **script** : 408 occurrences
-- **utilisateur** : 407 occurrences
-- **signature** : 392 occurrences
-- **mineur** : 342 occurrences
+- **portefeuille** : 428 occurrences
+- **script** : 411 occurrences
+- **utilisateur** : 408 occurrences
+- **signature** : 393 occurrences
+- **mineur** : 341 occurrences
 - **donnée** : 339 occurrences
-- **clés** : 312 occurrences
+- **clés** : 313 occurrences

@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier contient la liste de toutes les 1409 définitions du dictionnaire.
+Ce fichier contient la liste de toutes les 1408 définitions du dictionnaire.
 
 ---
 
@@ -1165,7 +1165,6 @@ Ce fichier contient la liste de toutes les 1409 définitions du dictionnaire.
 | [POT - PAY ON TARGET](definitions/fr/p/pot-pay-on-target/definition.md) | `9563078b-c14b-47ca-bdaf-ba5044355f5e` |
 | [PPA](definitions/fr/p/ppa/definition.md) | `ef52e4c2-bdd0-4d1b-bcd8-d2770bccf4f6` |
 | [PPLNS - PAY PER LAST N SHARES](definitions/fr/p/pplns-pay-per-last-n-shares/definition.md) | `187931ca-e37c-4ff8-bc88-689c4b88d574` |
-| [PPLNSG](definitions/fr/p/pplnsg/definition.md) | `795866c4-7b9b-4884-bfcd-c1fbe5da7fd9` |
 | [PPS - PAY PER SHARE](definitions/fr/p/pps-pay-per-share/definition.md) | `b184d003-b753-49f9-8538-c3725bd4f0ea` |
 | [PPS+](definitions/fr/p/pps-plus/definition.md) | `a449f71c-1648-4028-bb90-852289e803b3` |
 | [PRAXÉOLOGIE](definitions/fr/p/praxeologie/definition.md) | `8ecc8eda-eea3-486e-9e51-63171fe73ef3` |
