@@ -36,7 +36,7 @@ Ce fichier contient la liste de toutes les 1409 définitions du dictionnaire.
 | [ALTCOIN](definitions/fr/a/altcoin/definition.md) | `831efe16-f1a1-444a-b6bf-00f3dc0945a1` |
 | [ALUVM](definitions/fr/a/aluvm/definition.md) | `858d0831-1f1e-4336-acb4-022fa80f3da9` |
 | [AMBOSS](definitions/fr/a/amboss/definition.md) | `ba33538f-40a4-41a6-8335-d13dec0df50a` |
-| [AML - ANTI MONEY LAUNDERING](definitions/fr/a/aml-anti-money-laundering/definition.md) | `dd41eeea-1a18-4795-87e5-bd2cbbdcfff2` |
+| [AML - ANTI-MONEY LAUNDERING](definitions/fr/a/aml-anti-money-laundering/definition.md) | `dd41eeea-1a18-4795-87e5-bd2cbbdcfff2` |
 | [ANALYSE DE CHAINE](definitions/fr/a/analyse-de-chaine/definition.md) | `b8d328dd-a9bc-4aaf-b87e-32f736585c20` |
 | [ANCESTOR MINING](definitions/fr/a/ancestor-mining/definition.md) | `54fa63b4-37b6-4c42-a565-67457e66f08f` |
 | [ANCHOR](definitions/fr/a/anchor/definition.md) | `131cc280-fddf-48bf-b1c6-3e4a1fefabc2` |
@@ -589,7 +589,7 @@ Ce fichier contient la liste de toutes les 1409 définitions du dictionnaire.
 | [DISTRIBUÉ](definitions/fr/d/distribue/definition.md) | `39546d48-65eb-484e-8669-f2d715671ceb` |
 | [DKG](definitions/fr/d/dkg/definition.md) | `c5e6d0e7-7546-4f70-829b-c3618a56e9b0` |
 | [DLC - DISCREET LOG CONTRACT](definitions/fr/d/dlc-discreet-log-contract/definition.md) | `93b4c50a-c7f1-4a8e-9f8f-2c0ef06492b5` |
-| [DLP - DISCREET LOGARITHM PROBLEME](definitions/fr/d/dlp-discreet-log-probleme/definition.md) | `a0fc55d0-9a76-44c0-8669-fb4062bec4ec` |
+| [DLP - DISCRETE LOGARITHM PROBLEM](definitions/fr/d/dlp-discreet-log-probleme/definition.md) | `a0fc55d0-9a76-44c0-8669-fb4062bec4ec` |
 | [DNS SEEDS](definitions/fr/d/dns-seeds/definition.md) | `643a18d6-6e51-4812-8aaa-e0c6e35f421b` |
 | [DOJO](definitions/fr/d/dojo/definition.md) | `13d16e87-0b6d-4c08-a914-2bcb9207d212` |
 | [DOS - DENIAL OF SERVICE](definitions/fr/d/dos-denial-of-service/definition.md) | `63d911ff-f184-46c1-a1fc-d05864330bd1` |
