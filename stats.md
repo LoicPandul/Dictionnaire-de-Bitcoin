@@ -80,7 +80,7 @@
 - **lightning** : 443 occurrences
 - **réseau** : 429 occurrences
 - **portefeuille** : 428 occurrences
-- **script** : 411 occurrences
+- **script** : 412 occurrences
 - **utilisateur** : 408 occurrences
 - **signature** : 393 occurrences
 - **mineur** : 341 occurrences
