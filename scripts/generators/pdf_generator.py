@@ -764,14 +764,18 @@ def _format_definition(definition, dictionary=None) -> str:
     content = _fix_math_commands(content)
     content = _adjust_image_paths(content, definition)
     content = _markdown_to_latex(content)
-    parts.append(content)
-
     # Cross-references en fin de définition (garder avec la fin du contenu)
+    # Le % en fin de contenu empêche LaTeX d'insérer un espace parasite
+    # (ligne vide fantôme quand le texte remplit exactement la largeur de ligne)
     if definition.cross_references and dictionary:
         xref_latex = _render_cross_references(definition.cross_references, dictionary)
         if xref_latex:
-            parts.append(r"\nopagebreak")
+            parts.append(content.rstrip() + "%")
             parts.append(xref_latex)
+        else:
+            parts.append(content)
+    else:
+        parts.append(content)
 
     parts.append(r"\vspace{0.4em}")
 
