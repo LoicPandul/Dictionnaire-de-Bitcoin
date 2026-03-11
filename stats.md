@@ -1,6 +1,6 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 10/03/2026*
+*Dernière mise à jour : 11/03/2026*
 
 ---
 
