@@ -19,4 +19,5 @@ lightning_address: "sats@pandul.fr"
 email: "loic@pandul.fr"
 
 # ISBN
-isbn: "9798250570664"
+isbn_paperback: "9798250570664"
+isbn_hardcover: "NNNN"
