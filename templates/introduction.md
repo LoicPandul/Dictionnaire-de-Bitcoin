@@ -1,4 +1,4 @@
-Le *Dictionnaire de Bitcoin* recense et défini les termes techniques liés à Bitcoin et son écosystème.
+Le *Dictionnaire de Bitcoin* recense et définit les termes techniques liés à Bitcoin et son écosystème.
 
 # GUIDE DE LECTURE
 
