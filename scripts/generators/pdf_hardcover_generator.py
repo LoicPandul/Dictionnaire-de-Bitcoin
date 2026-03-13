@@ -65,6 +65,39 @@ def generate(dictionary: Dictionary, output_path: Path = None):
     # Remplacer la géométrie broché par la géométrie relié
     latex_content = latex_content.replace(_BROCHE_GEOMETRY, _RELIE_GEOMETRY)
 
+    # Adapter les tailles de police pour le format relié
+
+    # En-têtes : lettre CE/CO \small → 9pt, terme guide LE/RO \scriptsize → 8pt
+    for style_header in [
+        (r'\fancyhead[CE]{\small\textit{\currentletter}}',
+         r'\fancyhead[CE]{\fontsize{9}{11}\selectfont\textit{\currentletter}}'),
+        (r'\fancyhead[CO]{\small\textit{\currentletter}}',
+         r'\fancyhead[CO]{\fontsize{9}{11}\selectfont\textit{\currentletter}}'),
+        (r'\fancyhead[LE]{\scriptsize\textit{\rightmark}}',
+         r'\fancyhead[LE]{\fontsize{8}{10}\selectfont\textit{\rightmark}}'),
+        (r'\fancyhead[RO]{\scriptsize\textit{\leftmark}}',
+         r'\fancyhead[RO]{\fontsize{8}{10}\selectfont\textit{\leftmark}}'),
+    ]:
+        latex_content = latex_content.replace(style_header[0], style_header[1])
+
+    # Numéro de page : \small → 9pt (tous les styles)
+    latex_content = latex_content.replace(
+        r'\fancyfoot[C]{\small\thepage}',
+        r'\fancyfoot[C]{\fontsize{9}{11}\selectfont\thepage}'
+    )
+
+    # TDM : \scriptsize → 8pt
+    latex_content = latex_content.replace(
+        r'\scriptsize\raggedright',
+        r'\fontsize{8}{10}\selectfont\raggedright'
+    )
+
+    # Cartouche lettre TDM : 11/13 → 14/17 (proportionnel au ratio de taille)
+    latex_content = latex_content.replace(
+        r'\fontsize{11}{13}\selectfont\cmufont\bfseries #1',
+        r'\fontsize{14}{17}\selectfont\cmufont\bfseries #1'
+    )
+
     # Compiler avec XeLaTeX (2 passes)
     with tempfile.NamedTemporaryFile(mode='w', suffix='.tex', delete=False, encoding='utf-8') as f:
         f.write(latex_content)
