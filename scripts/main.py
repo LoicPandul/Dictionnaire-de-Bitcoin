@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.core.dictionary import Dictionary
-from scripts.generators import pdf_generator, index_generator, stats_generator
+from scripts.generators import pdf_generator, pdf_hardcover_generator, index_generator, stats_generator
 from scripts.validators import markdown_linter, metadata_validator
 from scripts.config import DEFINITIONS_DIR
 
@@ -24,26 +24,30 @@ def cmd_build(dictionary):
     print("=" * 60)
 
     # 1. Lint + fix automatique
-    print("\n--- Étape 1/5: Correction du markdown ---")
+    print("\n--- Étape 1/6: Correction du markdown ---")
     markdown_linter.lint(dictionary, fix=True)
 
     # 2. Validation des métadonnées
-    print("\n--- Étape 2/5: Validation des métadonnées ---")
+    print("\n--- Étape 2/6: Validation des métadonnées ---")
     if not metadata_validator.validate(dictionary):
         print("\n[ERREUR] La validation des métadonnées a échoué. Build interrompu.")
         return
 
     # 3. Index
-    print("\n--- Étape 3/5: Génération de l'index ---")
+    print("\n--- Étape 3/6: Génération de l'index ---")
     index_generator.generate(dictionary)
 
     # 4. Stats
-    print("\n--- Étape 4/5: Génération des statistiques ---")
+    print("\n--- Étape 4/6: Génération des statistiques ---")
     stats_generator.generate(dictionary)
 
-    # 5. PDF
-    print("\n--- Étape 5/5: Génération du PDF ---")
+    # 5. PDF broché
+    print("\n--- Étape 5/6: Génération du PDF broché ---")
     pdf_generator.generate(dictionary)
+
+    # 6. PDF relié
+    print("\n--- Étape 6/6: Génération du PDF relié ---")
+    pdf_hardcover_generator.generate(dictionary)
 
     print("\n" + "=" * 60)
     print("Build terminé!")
