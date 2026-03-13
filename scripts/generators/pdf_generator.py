@@ -46,6 +46,9 @@ CATEGORY_PICTOGRAMS = {
     'SIDECHAIN': 'sidechain',
 }
 
+# Limite de caractères par ligne dans les blocs de code (format broché 5.5"x8.5")
+CODE_MAX_CHARS = 64
+
 
 def _load_legal_info() -> dict:
     """Charge les informations légales depuis le fichier YAML."""
@@ -914,7 +917,7 @@ def _adjust_image_paths(content: str, definition) -> str:
 
     def replace_image(match):
         filename = match.group(1)
-        return rf'\includegraphics[width=0.9\linewidth]{{{assets_path}/{filename}}}'
+        return rf'{{\centering\includegraphics[width=0.9\linewidth]{{{assets_path}/{filename}}}\par}}'
 
     content = re.sub(r'!\[\]\(\./assets/([^)]+)\)', replace_image, content)
     return content
@@ -1140,13 +1143,13 @@ def _markdown_to_latex(content: str, use_cartouche_h1: bool = False) -> str:
     return content
 
 
-def _format_code_block(code: str) -> str:
+def _format_code_block(code: str, max_chars: int = None) -> str:
     """Formate un bloc de code pour le rendu LaTeX dans un tcolorbox.
 
     Préserve les sauts de ligne originaux du markdown,
     coupe les lignes trop longues, échappe les caractères LaTeX.
     """
-    MAX_CHARS = 64
+    MAX_CHARS = max_chars if max_chars is not None else CODE_MAX_CHARS
 
     def escape_code_char(text: str) -> str:
         text = text.replace('\\', r'\textbackslash{}')
