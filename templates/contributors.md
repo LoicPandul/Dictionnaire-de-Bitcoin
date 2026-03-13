@@ -12,7 +12,7 @@ Merci également à toutes les personnes qui m’ont aidé dans la rédaction de
 * 200KEKS (https://twitter.com/200KEKS) ;
 * Fanis Michalakis (https://twitter.com/FanisMichalakis) ;
 * AcidBunny (https://twitter.com/acidbunny21) ;
-* Sosthène (https://twitter.com/Sosthene___) ;
+* Sosthène (https://twitter.com/Sosthene\_\_\_) ;
 * Théo Pantamis (https://twitter.com/TheoPantamis) ;
 * Louferlou (https://twitter.com/Louferlou) ;
 * JohnOnChain (https://twitter.com/JohnOnChain) ;
@@ -28,7 +28,7 @@ Merci également à toutes les personnes qui m’ont aidé dans la rédaction de
 * Trigger (https://twitter.com/Trigger_jw) ;
 * Bitcoiner Nomad (https://twitter.com/BitcoinerNomad) ;
 * LaurentMT (https://twitter.com/LaurentMT) ;
-* Guillaume Goualard (https://twitter.com/_INITIO_) ;
+* Guillaume Goualard (https://twitter.com/\_INITIO\_) ;
 * Science (https://twitter.com/science_genial) ;
 * Marc VALLEE (https://twitter.com/marcvallee13) ;
 * Meyga Vox (https://twitter.com/meygavox) ;
@@ -51,7 +51,7 @@ Merci également à toutes les personnes qui créent des contenus éducatifs sur
 * Théo Pantamis (https://twitter.com/TheoPantamis) ;
 * LaurentMT (https://twitter.com/LaurentMT) ;
 * Théo Mogenet (https://twitter.com/theomogenet) ;
-* Sosthène (https://twitter.com/Sosthene___) ;
+* Sosthène (https://twitter.com/Sosthene\_\_\_) ;
 * Lounès Ksouri (https://twitter.com/louneskmt) ;
 * Satoshi Nakamoto ;
 * Et pleins d'autres que j'oublie sûrement.
@@ -60,6 +60,6 @@ Je suis également profondément reconnaissant envers tous ceux qui suivent mes 
 
 Et évidemment, un immense merci à ma femme, Chloé, qui est à l'origine de l'idée de ce dictionnaire et qui m'a conseillé tout au long de sa rédaction.
 
-**Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur Amazon, ou bien me faire un don sur mon adresse Lightning : sats@pandul.fr. Merci !**
+**Si vous souhaitez soutenir le projet, vous pouvez acheter la version physique sur amazon.fr et bitcoinbazar.fr, ou bien me faire un don sur mon adresse Lightning : sats@pandul.fr. Merci !**
 
 Le 24 avril 2024, les deux cofondateurs de Samourai Wallet ont été injustement arrêtés pour avoir simplement écrit du code. Je tiens à leur exprimer mon soutien indéfectible. Leur engagement pour la protection de la vie privée et la liberté incarne les valeurs fondamentales de Bitcoin. Ces développeurs n'ont commis aucun crime ; ils ont seulement œuvré pour offrir des outils permettant à chacun de faire valoir ses droits naturels. Afin de les soutenir dans cette épreuve, j'invite chacun à signer la pétition en ligne : https://billandkeonne.org/.
