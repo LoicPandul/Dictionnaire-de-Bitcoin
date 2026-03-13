@@ -1,6 +1,5 @@
 Métrique qui quantifie le nombre total de hachages attendus pour produire une blockchain donnée. Le chainwork sert de critère pour déterminer la chaîne valide : les nœuds suivent toujours la chaîne qui dispose du plus grand chainwork, et non simplement celle qui contient le plus de blocs. Le calcul repose sur la cible de difficulté de chaque bloc. Pour un bloc donné, le nombre moyen de hachages nécessaires pour obtenir une empreinte inférieure ou égale à la cible est :
-
-$$\frac{2^{256}}{\text{cible} + 1}$$
+$$\frac{2^{256}}{cible\ +\ 1}$$
 
 Le chainwork total d'une chaîne est la somme de ces valeurs pour chaque bloc, du bloc de genèse jusqu'au bloc considéré. Comme la difficulté varie au fil du temps, deux chaînes de longueurs identiques peuvent avoir un chainwork très différent : une chaîne minée sous une difficulté élevée aura un chainwork supérieur à une chaîne plus longue construite sous une difficulté artificiellement basse.
 
