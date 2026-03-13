@@ -62,6 +62,19 @@ def generate(dictionary: Dictionary, output_path: Path = None):
     # Restaurer la valeur originale
     pdf_generator.CODE_MAX_CHARS = original_max_chars
 
+    # Remplacer l'ISBN paperback par l'ISBN hardcover
+    isbn_paperback = legal.get('isbn_paperback', '')
+    isbn_hardcover = legal.get('isbn_hardcover', '')
+    if isbn_paperback and isbn_hardcover:
+        latex_content = latex_content.replace(
+            f'ISBN : {isbn_paperback}',
+            f'ISBN : {isbn_hardcover}'
+        )
+        latex_content = latex_content.replace(
+            f'ISBN {isbn_paperback}',
+            f'ISBN {isbn_hardcover}'
+        )
+
     # Remplacer la géométrie broché par la géométrie relié
     latex_content = latex_content.replace(_BROCHE_GEOMETRY, _RELIE_GEOMETRY)
 
@@ -96,6 +109,12 @@ def generate(dictionary: Dictionary, output_path: Path = None):
     latex_content = latex_content.replace(
         r'\fontsize{11}{13}\selectfont\cmufont\bfseries #1',
         r'\fontsize{14}{17}\selectfont\cmufont\bfseries #1'
+    )
+
+    # Grande lettre de section : 120/144 → 153/183 (proportionnel)
+    latex_content = latex_content.replace(
+        r'\fontsize{120}{144}',
+        r'\fontsize{153}{183}'
     )
 
     # Compiler avec XeLaTeX (2 passes)
