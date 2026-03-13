@@ -9,7 +9,7 @@ Chaque définition suit le format suivant :
 * Définition : L'explication détaillée du concept ;
 * Renvois : Les termes associés à cette définition.
 
-Pour une lecture efficace, n’hésitez pas à suivre les renvois : ils vous permettront de relier les notions entre elles et de progresser de définition en définition.
+Pour une lecture efficace, n’hésitez pas à suivre les termes associés : ils vous permettront de relier les notions entre elles et de progresser de définition en définition.
 
 # CONTRIBUTION
 
