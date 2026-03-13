@@ -6,13 +6,13 @@ Dans le BIP-0047, un code de paiement réutilisable est un identifiant statique 
 * De l'octet 35 à l'octet 66, il y a le code de chaîne associé à la clé publique ;
 * De l'octet 67 à l'octet 79, il y a du rembourrage de zéros.
 
-On ajoute généralement un octet de version (`0x47`) au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en Base58Check. La construction d'un code de paiement est donc assez proche de celle d'une clé étendue. Voici mon propre code de paiement BIP-0047 en Base58Check par exemple :
+On ajoute généralement un octet de version (`0x47`) au départ du code de paiement et une somme de contrôle à la fin, puis on l'encode en Base58Check. La construction d'un code de paiement est donc assez proche de celle d'une clé étendue. Voici mon ancien code de paiement BIP-0047 en Base58Check par exemple :
 
 ```text
 PM8TJSBiQmNQDwTogMAbyqJe2PE2kQXjtgh88MRTxsrnHC8zpEtJ8j7Aj628oUFk8X6P5rJ7P5qDudE4Hwq9JXSRzGcZJbdJAjM9oVQ1UKU5j2nr7VR5
 ```
 
-Dans l'implémentation PayNym du BIP-0047, les codes de paiement peuvent également être exprimés sous la forme d'identifiants associés à l'image d'un robot. Voici le mien par exemple : 
+Dans l'implémentation PayNym du BIP-0047, les codes de paiement peuvent également être exprimés sous la forme d'identifiants associés à l'image d'un robot. Voici mon ancien par exemple : 
 
 ```text
 +throbbingpond8B1

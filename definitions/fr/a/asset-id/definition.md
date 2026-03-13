@@ -1,5 +1,7 @@
 Identifiant unique de 32 octets attribué à chaque actif émis via le protocole Taproot Assets. L'*asset ID* est produit en hachant avec SHA-256 cinq éléments concaténés : l'outpoint de la transaction de genèse (celle qui crée l'actif), un tag choisi par l'émetteur (par exemple le hash d'un nom de marque), le hash des métadonnées associées à l'actif (liens, images, documents), l'index de la sortie contenant le *commitment* Taproot Assets dans la transaction de genèse, et le type de l'actif (normal ou *collectible*).
 
-`asset_id = sha256(genesis_outpoint || asset_tag || asset_meta_hash || output_index || asset_type)`
+```
+asset_id=sha256(genesis_outpoint‖asset_tag‖asset_meta_hash‖output_index‖asset_type)
+```
 
 Puisqu'il dépend de l'outpoint de genèse, l'*asset ID* est unique à l'échelle mondiale : deux émissions distinctes produiront toujours des identifiants différents. Il sert de clé pour retrouver un actif dans un *Universe*, vérifier sa provenance et distinguer les différents types d'actifs engagés dans un même *Sparse Merkle Sum Tree*.

@@ -3,7 +3,12 @@ Script situé dans la partie sortie (output) d'une transaction Bitcoin qui défi
 Par exemple, voici un `scriptPubKey` P2PKH classique :
 
 ```text
-OP_DUP OP_HASH160 OP_PUSHBYTES_20 <hash de la clé publique> OP_EQUALVERIFY OP_CHECKSIG
+OP_DUP
+OP_HASH160
+OP_PUSHBYTES_20
+<hash de la clé publique>
+OP_EQUALVERIFY
+OP_CHECKSIG
 ```
 
 Le `scriptSig` correspondant serait :
