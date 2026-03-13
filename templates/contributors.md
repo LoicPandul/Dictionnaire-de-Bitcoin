@@ -54,9 +54,9 @@ Merci également à toutes les personnes qui créent des contenus éducatifs sur
 * Sosthène (https://twitter.com/Sosthene\_\_\_) ;
 * Lounès Ksouri (https://twitter.com/louneskmt) ;
 * Satoshi Nakamoto ;
-* Et pleins d'autres que j'oublie sûrement.
+* Et plein d'autres que j'oublie sûrement.
 
-Je suis également profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent, sur les réseaux sociaux comme ailleurs. Vos partages spontanés sont pour moi une source motivation.
+Je suis également profondément reconnaissant envers tous ceux qui suivent mes travaux, les lisent et les partagent, sur les réseaux sociaux comme ailleurs. Vos partages spontanés sont pour moi une source de motivation.
 
 Et évidemment, un immense merci à ma femme, Chloé, qui est à l'origine de l'idée de ce dictionnaire et qui m'a conseillé tout au long de sa rédaction.
 
