@@ -68,7 +68,8 @@ def _load_legal_info() -> dict:
         'github_profile': "https://github.com/LoicPandul/",
         'lightning_address': "sats@pandul.fr",
         'email': "loic@pandul.fr",
-        'isbn': "XXXX"
+        'isbn_paperback': "XXXX",
+        'isbn_hardcover': "XXXX"
     }
 
 
@@ -469,7 +470,7 @@ def _generate_preamble(fonts_path: str = "", legal: dict = None) -> str:
     subtitle = legal.get('subtitle', '')
     author = legal.get('author', '')
     license_name = legal.get('license', '')
-    isbn = legal.get('isbn', '')
+    isbn = legal.get('isbn_paperback', '')
     pdf_subject = f"{title} : {subtitle}" if subtitle else title
     pdf_keywords = f"Bitcoin, {license_name}, ISBN {isbn}" if isbn else f"Bitcoin, {license_name}"
     return (preamble
@@ -535,7 +536,7 @@ def _generate_copyright_page(legal: dict) -> str:
     github_profile = legal.get('github_profile', '')
     lightning = legal.get('lightning_address', '')
     email = legal.get('email', '')
-    isbn = legal.get('isbn', '')
+    isbn = legal.get('isbn_paperback', '')
 
     # Section ISBN (vide si non renseigné)
     isbn_line = rf"\noindent ISBN : {isbn}" if isbn else ""
@@ -849,7 +850,7 @@ def _generate_final_page(legal: dict) -> str:
     github_profile = legal.get('github_profile', '')
     lightning = legal.get('lightning_address', '')
     email = legal.get('email', '')
-    isbn = legal.get('isbn', '')
+    isbn = legal.get('isbn_paperback', '')
 
     isbn_line = rf"ISBN : {isbn}\\" if isbn else ""
 
