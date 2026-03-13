@@ -603,7 +603,7 @@ Ce fichier contient la liste de toutes les 1408 définitions du dictionnaire.
 | [DUST LIMIT](definitions/fr/d/dust-limit/definition.md) | `e7264cc5-e0b9-4056-a9c2-4e82c658b4f9` |
 | [DUSTING ATTACK](definitions/fr/d/dusting-attack/definition.md) | `93cc6a17-c784-4674-b714-fe31d94db987` |
 | [DUSTRELAYFEE](definitions/fr/d/dustrelayfee/definition.md) | `fcc6b84e-16b3-4b18-911e-da0abcad2845` |
-| [DYNAMIC FEDERATIONS (DYNAFED)](definitions/fr/d/dynamic-federations/definition.md) | `d007d392-ba8d-431c-8efb-0d2049a1a122` |
+| [DYNAFED - DYNAMIC FEDERATIONS](definitions/fr/d/dynamic-federations/definition.md) | `d007d392-ba8d-431c-8efb-0d2049a1a122` |
 
 ## E
 
@@ -1501,7 +1501,7 @@ Ce fichier contient la liste de toutes les 1408 définitions du dictionnaire.
 | [WATCH-ONLY WALLET](definitions/fr/w/watch-only-wallet/definition.md) | `a3e9c07b-1076-4ab9-9695-c27cb52fe42f` |
 | [WATCHMEN](definitions/fr/w/watchmen/definition.md) | `b0c41084-126c-4966-b40c-d1800cda9e4e` |
 | [WATCHTOWER](definitions/fr/w/watchtower/definition.md) | `ffbbd17a-e7f1-4fe4-bc0b-3d9db3cf4a78` |
-| [WEIGHT UNIT (WU)](definitions/fr/w/weight-unit/definition.md) | `c42a4dc7-6cf2-4464-8898-ec512b10f4e2` |
+| [WEIGHT UNIT - WU](definitions/fr/w/weight-unit/definition.md) | `c42a4dc7-6cf2-4464-8898-ec512b10f4e2` |
 | [WHALE](definitions/fr/w/whale/definition.md) | `54290c9a-e310-4935-88b4-e9db8f100845` |
 | [WHIRLPOOL](definitions/fr/w/whirlpool/definition.md) | `34d344e0-ddb8-4e09-828f-f5820377e360` |
 | [WHIRLPOOL STAT TOOL](definitions/fr/w/whirlpool-stat-tool/definition.md) | `7d7ea0c6-ff89-4f9f-9b31-c0f264739516` |
