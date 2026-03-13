@@ -1153,7 +1153,7 @@ Ce fichier contient la liste de toutes les 1408 définitions du dictionnaire.
 | [POLICY - MINISCRIPT](definitions/fr/p/policy-miniscript/definition.md) | `c41c8a9d-0141-4559-ac23-7295e954f3e1` |
 | [POLITIQUE DE MEMPOOL](definitions/fr/p/politique-de-mempool/definition.md) | `cc1092b3-394e-43c4-a299-a982d3304062` |
 | [POLITIQUE DE RELAIS](definitions/fr/p/politique-de-relais/definition.md) | `f83f1367-fa30-4cbd-bc65-6cb6270f5f26` |
-| [POLITIQUE DE RELAIS DES TRANSACTIONS](definitions/fr/p/politique-de-relais-des-transactions/definition.md) | `a184573c-7acd-4bd3-9618-25a1eb44d4aa` |
+| [POLITIQUE DE RELAIS DES TX](definitions/fr/p/politique-de-relais-des-tx/definition.md) | `a184573c-7acd-4bd3-9618-25a1eb44d4aa` |
 | [POOL DE COINJOIN](definitions/fr/p/pool-coinjoin/definition.md) | `c2692ce0-d5b4-493b-a63d-9b6f104acf01` |
 | [POOL HOPPING](definitions/fr/p/pool-hopping/definition.md) | `013c96c4-6b48-46d0-bfa8-0fc0d0b31959` |
 | [POOL - LIGHTNING](definitions/fr/p/pool-lightning/definition.md) | `823330ef-0599-47fa-b4b9-dc7206206888` |
