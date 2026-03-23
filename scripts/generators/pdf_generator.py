@@ -191,10 +191,10 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
 
     # === PAGES FINALES ===
     sections.append("\\backmatter")
-    sections.append("\\pagestyle{frontmatter}")
+    sections.append("\\pagestyle{empty}")
     sections.append("\\cleardoublepage")
     sections.append(_generate_final_page(legal))
-    sections.append("\\clearpage\\thispagestyle{frontmatter}\\null")
+    sections.append("\\clearpage\\thispagestyle{empty}\\null")
     sections.append("\\end{document}")
 
     return "\n\n".join(sections)
@@ -858,7 +858,7 @@ def _generate_final_page(legal: dict) -> str:
 
     return rf"""
 \clearpage
-\thispagestyle{{frontmatter}}
+\thispagestyle{{empty}}
 \vspace*{{\fill}}
 
 \begin{{center}}
