@@ -164,7 +164,7 @@ def _build_latex_content(dictionary: Dictionary, legal: dict) -> str:
     sections.append(_generate_copyright_page(legal))
 
     # 5. Page blanche unique
-    sections.append("\\clearpage\\thispagestyle{frontmatter}\\null")
+    sections.append("\\clearpage\\thispagestyle{empty}\\null")
 
     # 6. Contributeurs et remerciements
     sections.append(_generate_contributors())
@@ -488,7 +488,7 @@ def _generate_half_title(legal: dict) -> str:
     title = legal.get('title', 'Dictionnaire de Bitcoin')
     return rf"""
 \clearpage
-\thispagestyle{{frontmatter}}
+\thispagestyle{{empty}}
 \vspace*{{\fill}}
 \begin{{center}}
 {{\fontsize{{18}}{{22}}\selectfont\cmufont\bfseries {title}}}
@@ -505,7 +505,7 @@ def _generate_title_page(legal: dict) -> str:
     author = legal.get('author', '')
     return rf"""
 \clearpage
-\thispagestyle{{frontmatter}}
+\thispagestyle{{empty}}
 \vspace*{{3cm}}
 \begin{{center}}
 {{\fontsize{{22}}{{26}}\selectfont\cmufont\bfseries {title}}}\\[0.6cm]
@@ -546,7 +546,7 @@ def _generate_copyright_page(legal: dict) -> str:
 
     return rf"""
 \clearpage
-\thispagestyle{{frontmatter}}
+\thispagestyle{{empty}}
 \vspace*{{\fill}}
 
 \small
