@@ -33,7 +33,7 @@ sats@pandul.fr
 
 ## Description du projet
 
-Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de pandul.fr, il est accessible gratuitement en version numérique sur ce dépôt GitHub. Ce livre est également vendu imprimé sur Amazon et Bitcoin Bazar.
+Cet ouvrage recense tous les termes techniques en rapport avec Bitcoin ou son environnement, ainsi que les définitions correspondantes. Rédigé par Loïc Morel, de pandul.fr, il est accessible gratuitement en version numérique sur ce dépôt GitHub. Ce livre est également vendu imprimé sur [Amazon](https://www.amazon.fr/dp/B0GV1N6S1W) et [Bitcoin Bazar](https://bitcoinbazar.fr/products/le-dictionnaire-de-bitcoin).
 
 Je gagne une petite marge sur chaque exemplaire physique vendu. Si vous trouvez ce projet utile, ou plus généralement, si vous appréciez mon travail de production de contenus pédagogiques, vous pouvez commander votre propre livre *Dictionnaire de Bitcoin* afin de me soutenir.
 
