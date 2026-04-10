@@ -5,6 +5,11 @@
 </p>
 
 <p align="center">
+  <a href="https://bitcoinbazar.fr/products/le-dictionnaire-de-bitcoin"><img src="https://img.shields.io/badge/Acheter%20sur%20Bitcoin%20Bazar-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" alt="Acheter sur Bitcoin Bazar"></a>
+  <a href="https://www.amazon.fr/dp/B0GV1N6S1W"><img src="https://img.shields.io/badge/Acheter%20sur%20Amazon-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Acheter sur Amazon"></a>
+</p>
+
+<p align="center">
   <a href="https://x.com/Loic_Pandul"><img src="https://img.shields.io/badge/@Loic__Pandul-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
   <a href="https://www.pandul.fr/"><img src="https://img.shields.io/badge/pandul.fr-000000?style=flat&logo=firefox&logoColor=white" alt="Site web"></a>
   <a href="mailto:info@pandul.fr"><img src="https://img.shields.io/badge/info@pandul.fr-D14836?style=flat&logo=mail.ru&logoColor=white" alt="Email"></a>
