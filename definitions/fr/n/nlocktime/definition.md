@@ -3,9 +3,9 @@ Champ de 4 octets intégré dans chaque transaction Bitcoin, qui spécifie soit 
 Le `nLockTime` n'est appliqué que si au moins un input de la transaction a un `nSequence` différent de la valeur `0xFFFFFFFF`. Si tous les inputs ont `nSequence = 0xFFFFFFFF`, le champ est totalement ignoré. C'est pourquoi les wallets utilisant le `nLockTime` positionnent typiquement `nSequence = 0xFFFFFFFE`.
 
 `OP_CHECKLOCKTIMEVERIFY` complète ce mécanisme en permettant d'imposer un verrouillage temporel depuis un `scriptPubKey`. L'opcode vérifie 4 conditions :
-- la valeur en haut de la pile et le `nLockTime` de la transaction sont du même type (hauteur de bloc ou timestamp),
-- la valeur en haut de la pile n'est pas négative,
-- la valeur en haut de la pile est inférieure ou égale au `nLockTime` de la transaction,
-- le `nSequence` de l'input en cours d'évaluation n'est pas `0xFFFFFFFF`.
+* la valeur en haut de la pile et le `nLockTime` de la transaction sont du même type (hauteur de bloc ou timestamp),
+* la valeur en haut de la pile n'est pas négative,
+* la valeur en haut de la pile est inférieure ou égale au `nLockTime` de la transaction,
+* le `nSequence` de l'input en cours d'évaluation n'est pas `0xFFFFFFFF`.
 
 CLTV ne vérifie donc jamais directement le temps ou la hauteur : il délègue cette vérification en forçant la transaction de dépense à déclarer un `nLockTime` inférieur ou égal à la valeur voulue par le script.

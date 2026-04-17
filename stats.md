@@ -1,6 +1,6 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 23/03/2026*
+*Dernière mise à jour : 17/04/2026*
 
 ---
 
@@ -71,16 +71,16 @@
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 1955 occurrences
-- **transaction** : 1582 occurrences
-- **bloc** : 857 occurrences
+- **bitcoin** : 1956 occurrences
+- **transaction** : 1585 occurrences
+- **bloc** : 860 occurrences
 - **protocole** : 528 occurrences
 - **adresse** : 498 occurrences
 - **paiement** : 460 occurrences
 - **lightning** : 443 occurrences
 - **réseau** : 429 occurrences
 - **portefeuille** : 428 occurrences
-- **script** : 412 occurrences
+- **script** : 413 occurrences
 - **utilisateur** : 408 occurrences
 - **signature** : 393 occurrences
 - **mineur** : 341 occurrences
