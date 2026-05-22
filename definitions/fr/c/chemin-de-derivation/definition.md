@@ -13,4 +13,4 @@ Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 
 * `0` indique que c'est une adresse externe ;
 * `5` indique que c'est la sixième adresse externe de ce compte.
 
-![](./assets/image-1.png)
+![Arbre BIP-84 d'un portefeuille HD, structuré en six niveaux depuis la clé maîtresse m jusqu'aux adresses individuelles.](./assets/image-1.png)

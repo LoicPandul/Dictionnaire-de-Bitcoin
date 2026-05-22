@@ -1,6 +1,6 @@
 Dans le cadre spécifique d'un portefeuille déterministe hiérarchique Bitcoin, une graine est une information de 512 bits issue d'un aléa. Elle permet de générer de manière déterministe et hiérarchique un ensemble de clés privées, et leurs clés publiques correspondantes, pour un portefeuille Bitcoin. La graine est souvent confondue avec la phrase de récupération en elle-même. Pourtant, c'est une information différente. La graine est obtenue en appliquant la fonction `PBKDF2` sur la phrase mnémonique et sur l'éventuelle passphrase.
 
-![](./assets/image-1.png)
+![Génération de la seed via PBKDF2 (mnémonique + passphrase) puis dérivation de la clé maîtresse via HMAC-SHA512.](./assets/image-1.png)
 
 La graine a été inventée avec le BIP-0032 qui définit les bases du portefeuille déterministe hiérarchique. Dans ce standard, la graine peut mesurer entre 128 et 512 bits (256 bits étant conseillés). Cela permet de dériver toutes les clés d'un portefeuille depuis une information unique, contrairement aux portefeuilles JBOK (*Just a Bunch Of Keys*) qui nécessitent de réaliser de nouvelles sauvegardes pour toute clé générée. Le BIP-0039 est par la suite venu proposer un encodage de cette graine, afin de simplifier sa lecture par l'humain. Cet encodage se fait sous la forme d'une phrase, que l'on nomme généralement phrase mnémonique ou phrase de récupération. Ce standard permet d'éviter les erreurs au niveau de la sauvegarde de la graine, notamment grâce à l'utilisation d'une somme de contrôle.
 

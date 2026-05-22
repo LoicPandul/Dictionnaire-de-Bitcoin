@@ -17,6 +17,6 @@ Le `scriptSig` correspondant serait :
 <signature> <clé publique>
 ```
 
-![](./assets/image-1.png)
+![Transaction Bitcoin : le ScriptPubKey verrouille l'output, le ScriptSig en input apporte la preuve pour le déverrouiller.](./assets/image-1.png)
 
 *Pour nommer ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*

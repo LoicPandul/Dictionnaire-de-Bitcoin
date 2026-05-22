@@ -6,4 +6,4 @@ Cette heuristique d'analyse a été découverte par Satoshi Nakamoto lui-même, 
 
 Encore aujourd'hui, le CIOH demeure la principale heuristique employée par les sociétés d'analyse de chaîne, avec la réutilisation d'adresse.
 
-![](./assets/image-1.png)
+![Heuristique CIOH : quatre inputs venant de transactions différentes sont supposés appartenir au même utilisateur.](./assets/image-1.png)

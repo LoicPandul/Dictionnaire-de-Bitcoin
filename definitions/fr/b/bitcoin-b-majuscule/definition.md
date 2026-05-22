@@ -5,4 +5,4 @@ Bitcoin est le nom du système de cash électronique pair-à-pair créé par Sat
 
 Le terme de bitcoin avec un « b » minuscule est généralement réservé pour évoquer l'unité monétaire échangée sur ce système.
 
-![](./assets/image-1.png)
+![Emblème de Bitcoin avec le B majuscule, employé pour désigner le système, le protocole ou le réseau.](./assets/image-1.png)

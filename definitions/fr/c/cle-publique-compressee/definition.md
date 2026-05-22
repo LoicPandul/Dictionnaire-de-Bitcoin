@@ -2,7 +2,7 @@ Une clé publique est utilisée dans les scripts (soit directement sous la forme
 
 Si l'on simplifie cela au corps des réels, la courbe elliptique étant symétrique par rapport à l'axe des abscisses, pour tout point $P$ (`x, y`) sur la courbe, il existe un point $P'$ (`x, -y`) qui sera également sur cette même courbe. Cela signifie qu'à chaque `x` correspondent seulement deux valeurs possibles de `y`, positive et négative. Par exemple, pour une abscisse `x` donnée, il y aurait deux points $P_1$ et $P_2$ sur la courbe elliptique, qui partagent la même abscisse, mais avec des ordonnées opposées :
 
-![](./assets/image-1.png)
+![Courbe elliptique symétrique par rapport à l'axe des abscisses : pour une même abscisse x, deux points P1 et P2 existent.](./assets/image-1.png)
 Pour choisir entre les deux points potentiels sur la courbe, on ajoute à `x` un préfixe spécifiant quel `y` choisir. Cette méthode permet de réduire la taille d'une clé publique de 520 bits à seulement 264 bits (8 bits de préfixe + 256 bits pour `x`). Cette représentation est connue sous le nom de forme compressée de la clé publique.
 
 Cependant, dans le cadre de la cryptographie sur les courbes elliptiques, nous utilisons non pas les réels, mais un corps fini d'ordre `p` (un nombre premier). Dans ce contexte, le « signe » de `y` est déterminé par sa parité, c'est-à-dire si `y` est pair ou impair. Le préfixe `0x02` indique alors un `y` pair, tandis que `0x03` indique un `y` impair.

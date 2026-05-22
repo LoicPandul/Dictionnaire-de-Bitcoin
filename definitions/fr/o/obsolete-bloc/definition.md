@@ -7,6 +7,6 @@ Fait référence à un bloc sans enfant : un bloc valide, mais exclu de la chaî
 * Puisque les nœuds suivent la chaîne la plus longue (avec le plus de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
 * Ils vont abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
 
-![](./assets/image-1.png)
+![Fork temporaire à la hauteur 145 : le bloc 145-A devient obsolète tandis que 145-B est étendu par le bloc 146.](./assets/image-1.png)
 
 *En français, on peut également dire « bloc périmé » ou « bloc abandonné ». Même si je ne suis pas en accord avec cet usage, certains bitcoiners utilisent le terme de « bloc orphelin » pour désigner ce qui est en réalité un bloc obsolète.*

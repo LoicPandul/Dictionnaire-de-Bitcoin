@@ -1,3 +1,3 @@
 Dans la dérivation des portefeuilles déterministes et hiérarchiques, la chaîne interne est une branche de dérivation utilisée pour générer des adresses de réception destinées à recevoir des paiements venus du même portefeuille, c'est-à-dire uniquement des adresses de change. Chaque compte tel que défini en profondeur 3 dispose de deux chaînes en profondeur 4 : une chaîne externe et une chaîne interne (également appelée « change »). La chaîne interne est dérivée avec un index de `/1/`.
 
-![](./assets/image-1.png)
+![Arbre BIP-84 avec flèche pointant sur le niveau Chaînes, où la chaîne interne /1 dérive uniquement les adresses de change.](./assets/image-1.png)

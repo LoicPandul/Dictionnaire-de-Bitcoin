@@ -4,4 +4,4 @@ Système de cryptomonnaie issu d'un hard fork de Bitcoin Cash (BCH), lui-même u
 
 Bitcoin SV se distingue de Bitcoin Cash, et encore plus de Bitcoin, par sa limite de taille de bloc considérablement élevée. Cette spécificité vise à s'aligner sur ce que ses partisans considèrent être la vision initiale de Satoshi Nakamoto pour Bitcoin.
 
-![](./assets/image-1.png)
+![Logo de Bitcoin SV, fork de Bitcoin Cash apparu le 15 novembre 2018 au bloc 556 766 autour de Craig Wright.](./assets/image-1.png)

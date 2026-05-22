@@ -4,4 +4,4 @@ En effet, les transactions comportant de nombreuses entrées sont plus lourdes e
 
 Cependant, il est important de noter que les transactions de consolidation sont reconnaissables lors d'une analyse de chaîne. Une telle transaction indique une CIOH (*Common Input Ownership Heuristic*), c'est-à-dire que les entrées de la transaction de consolidation sont possédées par une seule entité. Cela peut avoir des implications en termes de confidentialité pour l'utilisateur.
 
-![](./assets/image-1.png)
+![Transaction de consolidation : cinq petits UTXOs fusionnés en entrée pour former un unique UTXO de 550 000 sats en sortie.](./assets/image-1.png)
