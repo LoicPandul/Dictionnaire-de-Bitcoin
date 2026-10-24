@@ -303,7 +303,7 @@
 
   // ------------------------------------------------------------ Apparitions
   const revealTargets = document.querySelectorAll(
-    '.today-text, .agenda-head, .agenda-panels, .mosaic, .author-text, .author-facts, .book-band, .entry-links, .pager, .colophon, .index-bands, .index-list .bands, .index-group, .index-title',
+    '.today-text, .agenda-head, .agenda-panels, .mosaic, .author-text, .author-facts, .book-band, .entry-links, .pager, .colophon, .index-bands, .index-list .bands, .index-group',
   );
   if ('IntersectionObserver' in window && !reduceMotion) {
     const io = new IntersectionObserver((entries) => {
