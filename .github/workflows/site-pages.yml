@@ -1,0 +1,47 @@
+# Publication du site du dictionnaire (site/) sur GitHub Pages.
+# Inactif tant que le domaine n'est pas prêt : pas de déclencheur sur main, lancement manuel
+# seulement (onglet Actions > « Site du dictionnaire » > Run workflow), après avoir réglé
+# `url` dans site/config.mjs et choisi « GitHub Actions » comme source dans Settings > Pages.
+name: Site du dictionnaire
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: node build.mjs
+      - run: node check.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
