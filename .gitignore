@@ -32,3 +32,5 @@ Thumbs.db
 # Claude
 .claude/
 nul
+# Atelier de design (captures, direction)
+.taste-skill/
