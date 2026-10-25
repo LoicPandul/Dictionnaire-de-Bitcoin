@@ -5,6 +5,7 @@
   const root = d.documentElement;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   root.classList.add('anim');
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
   // ------------------------------------------------------------ Thème
   const themeBtn = d.querySelector('[data-theme-toggle]');
@@ -70,16 +71,43 @@
     boucles.forEach((v) => iov.observe(v));
   }
 
-  // ------------------------------------------------------------ Tranche d'une lettre : le trait survolé donne son mot
+  // ------------------------------------------------------------ Tranche d'une lettre : le trait visé donne son mot
+  // Souris : survol et clic. Doigt : on glisse sur les traits, l'aperçu suit, on touche le mot pour l'ouvrir.
   const tl = d.querySelector('[data-tranche-lettre]');
   if (tl) {
-    const legende = d.querySelector('[data-tranche-legende]');
-    const repos = legende.innerHTML;
-    tl.addEventListener('pointerover', (e) => {
-      const a = e.target.closest('a');
-      if (a) legende.innerHTML = `<span class="tranche-legende-mot">${a.querySelector('title').textContent.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c])}</span>, cliquez pour lire la définition.`;
+    const traits = [...tl.querySelectorAll('a')];
+    const fiches = new Map([...d.querySelectorAll('.entree')].map((a) => [a.getAttribute('href'), a.dataset]));
+    const boite = d.querySelector('[data-apercu-lettre]');
+    const geste = d.querySelector('[data-geste]');
+    const tactile = matchMedia('(pointer: coarse)').matches;
+    if (geste) geste.textContent = tactile ? 'Glissez le doigt sur les traits, puis touchez le mot.' : 'Survolez les traits.';
+    let vise = -1;
+    const viser = (k) => {
+      k = Math.max(0, Math.min(traits.length - 1, k));
+      if (k === vise) return;
+      traits[vise]?.classList.remove('est-vise');
+      vise = k;
+      const a = traits[k];
+      a.classList.add('est-vise');
+      const f = fiches.get(a.getAttribute('href')) || {};
+      const lien = boite.querySelector('a');
+      lien.href = a.getAttribute('href');
+      lien.textContent = f.apercuNom || a.querySelector('title').textContent;
+      boite.querySelector('.apercu-lettre-cat').textContent = f.apercuCat || '';
+      boite.querySelector('.apercu-lettre-desc').textContent = f.apercu || '';
+      boite.hidden = false;
+    };
+    const depuis = (e) => {
+      const r = tl.getBoundingClientRect();
+      viser(Math.floor(((e.clientX - r.left) / r.width) * traits.length));
+    };
+    tl.addEventListener('pointermove', depuis);
+    tl.addEventListener('pointerdown', depuis);
+    tl.addEventListener('click', (e) => {
+      if (tactile) { e.preventDefault(); return; }
+      e.preventDefault();
+      if (vise > -1) location.href = traits[vise].getAttribute('href');
     });
-    tl.addEventListener('pointerleave', () => (legende.innerHTML = repos));
   }
 
   // ------------------------------------------------------------ Jaquette : l'arbre suit doucement le curseur (profondeur)
@@ -120,15 +148,51 @@
 
   // ------------------------------------------------------------ Citer, et garder les derniers mots consultés
   const citer = d.querySelector('[data-citer]');
-  if (citer && navigator.clipboard) {
+  if (citer) {
     citer.hidden = false;
+    const confirmer = (ok) => {
+      citer.textContent = ok ? 'Citation copiée' : 'Copiez : ' + citer.dataset.citer;
+      setTimeout(() => (citer.textContent = 'Citer cette définition'), ok ? 2400 : 8000);
+    };
+    const secours = () => {
+      const t = d.createElement('textarea');
+      t.value = citer.dataset.citer;
+      t.setAttribute('readonly', '');
+      t.style.position = 'fixed';
+      t.style.opacity = '0';
+      d.body.append(t);
+      t.select();
+      let ok = false;
+      try { ok = d.execCommand('copy'); } catch {}
+      t.remove();
+      confirmer(ok);
+    };
     citer.addEventListener('click', () => {
-      navigator.clipboard.writeText(citer.dataset.citer).then(() => {
-        citer.textContent = 'Citation copiée';
-        setTimeout(() => (citer.textContent = 'Citer cette définition'), 2400);
-      });
+      if (navigator.clipboard?.writeText) navigator.clipboard.writeText(citer.dataset.citer).then(() => confirmer(true), secours);
+      else secours();
     });
   }
+
+  // ------------------------------------------------------------ Schémas : agrandis en plein écran au clic ou au toucher
+  d.addEventListener('click', (e) => {
+    const a = e.target.closest('.prose .figure a');
+    if (!a || e.metaKey || e.ctrlKey) return;
+    e.preventDefault();
+    const img = a.querySelector('img');
+    const loupe = d.createElement('dialog');
+    loupe.className = 'loupe';
+    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || 'Schéma')}</p><button class="recherche-fermer" type="button">Fermer</button></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
+    d.body.append(loupe);
+    loupe.querySelector('button').addEventListener('click', () => loupe.close());
+    loupe.addEventListener('close', () => { loupe.remove(); a.focus({ preventScroll: true }); });
+    loupe.showModal();
+  });
+
+  // ------------------------------------------------------------ Changer de catégorie
+  d.querySelector('[data-cat-choix]')?.addEventListener('change', (e) => { location.href = e.target.value; });
+
+  // ------------------------------------------------------------ Barre A–Z : la lettre courante visible sur téléphone
+  d.querySelector('.index-az a[aria-current]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
   const motCourant = d.querySelector('[data-mot]');
   const lireDerniers = () => { try { return JSON.parse(localStorage.getItem('derniers') || '[]'); } catch { return []; } };
   if (motCourant) {
@@ -137,6 +201,40 @@
       liste.unshift([motCourant.dataset.mot, motCourant.dataset.titre]);
       localStorage.setItem('derniers', JSON.stringify(liste.slice(0, 8)));
     } catch {}
+  }
+
+  // ------------------------------------------------------------ Carte d'aperçu au survol des renvois (souris et clavier)
+  if (d.querySelector('[data-apercu]') && matchMedia('(hover: hover)').matches) {
+    const carte = d.createElement('div');
+    carte.className = 'carte-apercu';
+    carte.setAttribute('role', 'tooltip');
+    carte.id = 'carte-apercu';
+    carte.hidden = true;
+    d.body.append(carte);
+    let minuteur = 0;
+    let lien = null;
+    const montrer = (a) => {
+      clearTimeout(minuteur);
+      minuteur = setTimeout(() => {
+        lien = a;
+        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.textContent.replace(/^Mot (précédent|suivant) : /, ''))}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${esc(a.dataset.apercu)}</p>`;
+        carte.hidden = false;
+        a.setAttribute('aria-describedby', 'carte-apercu');
+        const r = a.getBoundingClientRect();
+        const w = carte.offsetWidth;
+        const x = Math.min(Math.max(12, r.left), innerWidth - w - 12);
+        const dessous = r.bottom + carte.offsetHeight + 16 < innerHeight;
+        carte.style.left = `${x}px`;
+        carte.style.top = `${dessous ? r.bottom + 10 : r.top - carte.offsetHeight - 10}px`;
+        carte.classList.toggle('carte-apercu--haut', !dessous);
+      }, 280);
+    };
+    const cacher = () => { clearTimeout(minuteur); carte.hidden = true; lien?.removeAttribute('aria-describedby'); lien = null; };
+    d.addEventListener('pointerover', (e) => { const a = e.target.closest('[data-apercu]'); if (a) montrer(a); });
+    d.addEventListener('pointerout', (e) => { const a = e.target.closest('[data-apercu]'); if (a && !a.contains(e.relatedTarget)) cacher(); });
+    d.addEventListener('focusin', (e) => { const a = e.target.closest('[data-apercu]'); if (a) montrer(a); else cacher(); });
+    d.addEventListener('keydown', (e) => { if (e.key === 'Escape') cacher(); });
+    addEventListener('scroll', cacher, { passive: true });
   }
 
   // ------------------------------------------------------------ Transitions entre pages
@@ -181,11 +279,18 @@
   let chargement = null;
   const charger = () => {
     if (index) return Promise.resolve(index);
-    chargement ||= fetch('/recherche.json').then((r) => r.json()).then((j) => {
+    chargement ||= Promise.all([
+      fetch('/recherche.json').then((r) => r.json()),
+      fetch('/tranche.json').then((r) => r.json()).catch(() => ({ renvois: [] })),
+    ]).then(([j, tranche]) => {
       index = j.terms.map(([title, slug, cat, alt, desc], i) => ({
         i, title, slug, alt, desc,
         cat: j.categories[cat] || ['', ''],
+        poids: tranche.renvois?.[i] || 0,
         pt: plat(title), ct: compact(title), pa: plat(alt), pd: plat(desc),
+        // La première partie d'un titre composé (« DLP - DISCRETE LOGARITHM PROBLEM ») compte comme titre exact ;
+        // les suivantes sont souvent des qualificatifs (« FEE RATE - LIGHTNING »).
+        parts: title.includes(' - ') ? title.split(' - ').map((x) => plat(x).trim()) : [],
       }));
       index.categories = j.categories;
       return index;
@@ -210,28 +315,36 @@
     return prev[b.length];
   };
 
-  // Score d'un terme : début du titre, début d'un mot, terme anglais, description, puis fautes de frappe.
+  // Rang d'un terme, du plus fort au plus faible : terme exact (titre, partie du titre ou terme anglais),
+  // début du titre, début du terme anglais, début d'un mot du titre, puis milieu de mot et description,
+  // gardés seulement quand les rangs forts donnent peu de résultats. Fautes de frappe en dernier recours.
+  // À rang égal, le terme le plus renvoyé par les autres définitions passe devant.
   function chercher(q, { cat = '', limite = 60 } = {}) {
     const pq = plat(q).replace(/ +/g, ' ').trim();
     if (!pq || !index) return { res: [], approx: false };
     const cq = pq.replace(/ /g, '');
     const mots = pq.split(' ');
-    const res = [];
+    const forts = [];
+    const faibles = [];
     for (const t of index) {
       if (cat && t.cat[1] !== cat) continue;
-      let s = 0;
+      const titre = t.pt.replace(/ +/g, ' ').trim();
+      const alt = t.pa.replace(/ +/g, ' ').trim();
+      let rang = 0;
       let at = -1;
-      if (t.pt.trim() === pq) { s = 1000; at = t.pt.indexOf(pq); }
-      else if (t.pt.startsWith(pq)) { s = 900 - t.title.length; at = 0; }
-      else if (t.ct.startsWith(cq) && cq.length > 1) { s = 820 - t.title.length; }
-      else if ((at = t.pt.indexOf(` ${pq}`)) > -1) { s = 700 - t.title.length; at += 1; }
-      else if ((at = t.pt.indexOf(pq)) > -1) { s = 520 - t.title.length; }
-      else if (mots.length > 1 && mots.every((m) => t.pt.includes(m))) { s = 480; }
-      else if (t.pa && (t.pa.startsWith(pq) || t.pa.includes(` ${pq}`))) { s = 450; }
-      else if (t.pa && t.pa.includes(pq)) { s = 380; }
-      else if (pq.length > 2 && t.pd.includes(pq)) { s = 160; }
-      if (s) res.push({ t, s, at, len: pq.length });
+      if (titre === pq || t.parts[0] === pq) { rang = 10; at = t.pt.indexOf(pq); }
+      else if (alt && alt === pq) rang = 9;
+      else if (t.pt.startsWith(pq)) { rang = 8; at = 0; }
+      else if (cq.length > 1 && t.ct.startsWith(cq)) rang = 7;
+      else if (alt && alt.startsWith(pq)) rang = 6;
+      else if ((at = t.pt.indexOf(` ${pq}`)) > -1) { rang = 5; at += 1; }
+      else if (alt && alt.includes(` ${pq}`)) rang = 4;
+      else if (mots.length > 1 && mots.every((m) => t.pt.includes(` ${m}`) || t.pt.startsWith(m))) rang = 4;
+      if (rang) { forts.push({ t, rang, at, len: pq.length }); continue; }
+      if ((at = t.pt.indexOf(pq)) > -1) faibles.push({ t, rang: 2, at, len: pq.length });
+      else if (pq.length > 2 && (t.pd.startsWith(pq) || t.pd.includes(` ${pq}`))) faibles.push({ t, rang: 1, at: -1 });
     }
+    let res = forts.length >= 5 ? forts : forts.concat(faibles);
     let approx = false;
     if (!res.length && cq.length > 2) {
       approx = true;
@@ -239,15 +352,14 @@
       for (const t of index) {
         if (cat && t.cat[1] !== cat) continue;
         const dist = Math.min(lev(cq, t.ct, max), lev(cq, t.ct.slice(0, cq.length), max) + 1);
-        if (dist <= max) res.push({ t, s: 100 - dist * 10 - t.ct.length * 0.1, at: -1 });
+        if (dist <= max) res.push({ t, rang: -dist, at: -1 });
       }
     }
-    res.sort((a, b) => b.s - a.s || a.t.i - b.t.i);
+    res.sort((a, b) => b.rang - a.rang || b.t.poids - a.t.poids || a.t.title.length - b.t.title.length || a.t.i - b.t.i);
     return { res: res.slice(0, limite), approx, total: res.length };
   }
   window.dicoChercher = (q, o) => charger().then(() => chercher(q, o));
 
-  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
   const surligner = (title, at, len) => (at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`);
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
@@ -272,14 +384,18 @@
     items[actif].scrollIntoView({ block: 'nearest' });
   }
 
-  function vide() {
+  function suggestions(avecCategories) {
     const n = index ? index[jour() % index.length] : null;
     const h = index ? index[Math.floor(Math.random() * index.length)] : null;
-    etat.textContent = '';
-    liste.innerHTML = '';
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="/lettre/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
-    liste.insertAdjacentHTML('beforeend', `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(n.title)}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(h.title)}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="lettres-mini">${lettres}</div></li>`);
+    const cats = avecCategories && index?.categories ? `<p>Ou par catégorie&#8239;:</p><div class="cats-mini">${index.categories.map(([label, slug]) => `<a href="/categorie/${slug}/">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
+    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(n.title)}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(h.title)}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="lettres-mini">${lettres}</div>${cats}</li>`;
+  }
+
+  function vide() {
+    etat.textContent = '';
+    liste.innerHTML = suggestions(false);
     champ.setAttribute('aria-expanded', 'false');
     actif = -1;
   }
@@ -289,8 +405,8 @@
     if (!q.trim()) return vide();
     const { res, approx, total } = chercher(q);
     if (!res.length) {
-      liste.innerHTML = '';
-      etat.innerHTML = `Aucun mot ne correspond à «&#8239;${esc(q.trim())}&#8239;». Essayez le terme anglais, un sigle, ou parcourez <a class="lien" href="#lettres" data-search-close>par lettre</a>.`;
+      etat.innerHTML = `Aucun mot ne correspond à «&#8239;${esc(q.trim())}&#8239;». Essayez le terme anglais ou un sigle, ou repartez d’ici&#8239;:`;
+      liste.innerHTML = suggestions(true);
       champ.setAttribute('aria-expanded', 'false');
       return;
     }
@@ -345,7 +461,11 @@
     dialog.addEventListener('close', () => { declencheur?.focus?.({ preventScroll: true }); });
     d.addEventListener('click', (e) => {
       const b = e.target.closest('[data-search-open]');
-      if (b) { e.preventDefault(); ouvrir('', b); }
+      if (!b) return;
+      e.preventDefault();
+      const m = d.getElementById('menu');
+      if (m?.open) { m.close(); ouvrir('', d.querySelector('.barre [data-search-open]')); }
+      else ouvrir('', b);
     });
     d.addEventListener('keydown', (e) => {
       const k = e.key.toLowerCase();
@@ -364,6 +484,16 @@
     }
     // Préchargement discret de l'index quand on survole un bouton de recherche.
     d.addEventListener('pointerover', (e) => { if (e.target.closest('[data-search-open], [data-hero-search]')) charger(); }, { passive: true });
+  }
+
+  // ------------------------------------------------------------ Menu (téléphone et tablette)
+  const menu = d.getElementById('menu');
+  if (menu) {
+    d.addEventListener('click', (e) => {
+      if (e.target.closest('[data-menu-open]')) { e.preventDefault(); menu.showModal(); }
+      else if (e.target === menu || e.target.closest('[data-menu-close]')) menu.close();
+    });
+    menu.addEventListener('close', () => d.querySelector('[data-menu-open]')?.focus({ preventScroll: true }));
   }
 
   // ------------------------------------------------------------ Page de recherche
@@ -416,12 +546,21 @@
   if (sugg) {
     const morceau = decodeURIComponent(location.pathname).replace(/^\/+|\/+$/g, '').split('/').pop() || '';
     const q = morceau.replace(/[-_]+/g, ' ').replace(/\.html?$/, '');
+    const champPerdu = d.querySelector('[data-perdu-champ] input');
+    if (champPerdu && q.length > 1 && q !== '404') champPerdu.value = q;
     if (q.length > 1) {
       charger().then(() => {
         let { res } = chercher(q, { limite: 3 });
-        if (!res.length) {
+        if (res.length < 3) {
           const cq = compact(q);
-          res = index.map((t) => ({ t, s: lev(cq, t.ct, 6) })).filter((r) => r.s <= Math.max(2, Math.floor(cq.length / 3))).sort((a, b) => a.s - b.s).slice(0, 3);
+          const vus = new Set(res.map((r) => r.t.slug));
+          const proches = index
+            .filter((t) => !vus.has(t.slug))
+            .map((t) => ({ t, s: Math.min(lev(cq, t.ct, 8), lev(cq, t.ct.slice(0, cq.length), 8) + 1) }))
+            .filter((r) => r.s <= Math.max(3, Math.floor(cq.length / 2)))
+            .sort((a, b) => a.s - b.s || b.t.poids - a.t.poids)
+            .slice(0, 3 - res.length);
+          res = res.concat(proches);
         }
         if (!res.length) return;
         sugg.querySelector('[data-suggestions-liste]').innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/">${esc(t.title)}</a></li>`).join('');

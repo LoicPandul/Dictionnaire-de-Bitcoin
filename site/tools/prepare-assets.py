@@ -6,7 +6,8 @@ Toutes les images viennent du livre lui-même :
 - la feuille du dos de la couverture, vectorisée (emblème et favicon) ;
 - les 19 pictogrammes de catégorie (assets/pictograms), retracés en SVG d'un seul tracé ;
 - le livre en volume (bannière assets/images/cover.png), fond ramené au bleu nuit de la couverture ;
-- la couverture à plat et six pages intérieures (dictionnaire-de-bitcoin.pdf).
+- la couverture à plat, six pages intérieures et la boucle « feuilletage » (dictionnaire-de-bitcoin.pdf).
+La carte sociale (static/img/carte-sociale.jpg) est rendue à part depuis tools/carte-sociale.html (capture 1200 × 630).
 
 Dépendances : poppler (pdfimages, pdftoppm), Python 3 avec opencv-python-headless, numpy, pillow, potracer.
     uv venv /tmp/venv && uv pip install --python /tmp/venv/bin/python opencv-python-headless numpy pillow potracer
@@ -31,7 +32,7 @@ TMP = tempfile.mkdtemp(prefix='dico-assets-')
 
 NAVY = (25, 48, 66)        # #193042, le fond de la couverture
 GRAVURE = (169, 186, 200)  # #A9BAC8, les traits de l'arbre sur bleu nuit
-OS_ = (238, 234, 224)      # #EEEAE0, le titre de la couverture
+OS_ = (236, 234, 229)      # #ECEAE5, le titre de la couverture, un peu moins jaune
 
 
 def run(*cmd):
@@ -96,29 +97,27 @@ def tree(cover):
         r.save(os.path.join(OUT, f'arbre-{height}.webp'), 'WEBP', quality=68, method=6)
 
 
-# 2. La feuille du dos de la couverture : emblème (détaillé) et favicon.
+# 2. La feuille de la tranche : tracé vectoriel (feuille.svg), masque teintable (feuille.webp)
+#    et icônes (favicon, écran d'accueil), couleur os sur bleu nuit.
 def leaf(cover):
     crop = cv2.cvtColor(cover[290:520, 2420:2580], cv2.COLOR_BGR2GRAY).astype(np.float32)
-    variants = {'feuille': (6, 2.2, 140, 20, 0.4), 'feuille-petite': (4, 3.4, 128, 30, 0.6)}
-    for name, (up, blur, thr, turd, tol) in variants.items():
-        big = cv2.GaussianBlur(cv2.resize(crop, (crop.shape[1] * up, crop.shape[0] * up), interpolation=cv2.INTER_CUBIC), (0, 0), blur)
-        bw = big > thr
-        ys, xs = np.where(bw)
-        bw = bw[ys.min() - 4:ys.max() + 5, xs.min() - 4:xs.max() + 5]
-        h, w = bw.shape
-        d = trace(bw, 100 / h, turdsize=turd, tolerance=tol)
-        vw = f'{w * 100 / h:.1f}'
-        with open(os.path.join(OUT, f'{name}.svg'), 'w') as fh:
-            fh.write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {vw} 100"><path d="{d}"/></svg>')
-        if name == 'feuille-petite':
-            # Favicon : la feuille couleur os sur un carré bleu nuit.
-            s = 100 * 1.36
-            x0 = (s - float(vw)) / 2
-            fav = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {s:.0f} {s:.0f}">'
-                   f'<rect width="100%" height="100%" fill="#193042"/>'
-                   f'<path transform="translate({x0:.1f} 18)" fill="#EEEAE0" d="{d}"/></svg>')
-            with open(os.path.join(HERE, '..', 'static', 'favicon.svg'), 'w') as fh:
-                fh.write(fav)
+    big = cv2.GaussianBlur(cv2.resize(crop, (crop.shape[1] * 6, crop.shape[0] * 6), interpolation=cv2.INTER_CUBIC), (0, 0), 2.2)
+    bw = big > 140
+    ys, xs = np.where(bw)
+    bw = bw[ys.min() - 4:ys.max() + 5, xs.min() - 4:xs.max() + 5]
+    h, w = bw.shape
+    with open(os.path.join(OUT, 'feuille.svg'), 'w') as fh:
+        fh.write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w * 100 / h:.2f} 100"><path d="{trace(bw, 100 / h)}"/></svg>')
+    alpha = Image.fromarray((bw * 255).astype(np.uint8), 'L')
+    white = Image.new('L', alpha.size, 255)
+    mask = Image.merge('RGBA', (white, white, white, alpha))
+    mask.resize((round(w * 144 / h), 144), Image.LANCZOS).save(os.path.join(OUT, 'feuille.webp'), 'WEBP', lossless=True, method=6)
+    for size, pad, name in ((64, 8, 'favicon.png'), (180, 26, 'apple-touch-icon.png'), (512, 70, 'icon-512.png')):
+        icon = Image.new('RGBA', (size, size), NAVY + (255,))
+        lh = size - 2 * pad
+        a = alpha.resize((round(w * lh / h), lh), Image.LANCZOS)
+        icon.paste(Image.new('RGBA', a.size, OS_ + (255,)), ((size - a.width) // 2, pad), a)
+        icon.convert('RGB').save(os.path.join(HERE, '..', 'static', name), optimize=True)
 
 
 # 3. Pictogrammes : rendus en PNG 1024 px par raster-pictos.mjs, puis retracés.
@@ -154,6 +153,23 @@ def pages(cover):
             os.path.join(OUT, f'page-{n}.webp'), 'WEBP', quality=82, method=6)
 
 
+# 6. La boucle « feuilletage » : 41 pages du PDF, une toutes les quatorze, 9 images par seconde,
+#    en niveaux de gris, avec son image d'attente.
+def riffle():
+    pdf = os.path.join(ROOT, 'dictionnaire-de-bitcoin.pdf')
+    video = os.path.join(HERE, '..', 'static', 'video')
+    os.makedirs(video, exist_ok=True)
+    frames = os.path.join(TMP, 'riffle')
+    os.makedirs(frames, exist_ok=True)
+    for k, n in enumerate(range(14, 581, 14)):
+        run('pdftoppm', '-r', '80', '-png', '-f', str(n), '-l', str(n), '-scale-to-x', '440', '-scale-to-y', '-1', pdf, os.path.join(frames, 'r'))
+        src = [p for p in os.listdir(frames) if p.startswith('r-')][0]
+        os.replace(os.path.join(frames, src), os.path.join(frames, f'f{k:03d}.png'))
+    run('ffmpeg', '-loglevel', 'error', '-y', '-framerate', '9', '-i', os.path.join(frames, 'f%03d.png'), '-vf', 'scale=320:-2,format=gray,format=yuv420p',
+        '-c:v', 'libx264', '-preset', 'veryslow', '-crf', '31', '-movflags', '+faststart', '-an', os.path.join(video, 'feuilletage.mp4'))
+    run('ffmpeg', '-loglevel', 'error', '-y', '-i', os.path.join(frames, 'f000.png'), '-vf', 'scale=320:-2,format=gray', '-quality', '78', os.path.join(video, 'feuilletage.webp'))
+
+
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
     cov = cover_image()
@@ -161,6 +177,7 @@ if __name__ == '__main__':
     leaf(cov)
     book3d()
     pages(cov)
+    riffle()
     if len(sys.argv) > 1:
         pictos(sys.argv[1])
     print('images prêtes dans', os.path.relpath(OUT, ROOT))

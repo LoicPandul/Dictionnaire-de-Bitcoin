@@ -8,7 +8,8 @@ import { fileURLToPath } from 'node:url';
 import { url, site } from './config.mjs';
 import { loadDictionary, loadCategoryNotes } from './lib/content.mjs';
 import { createRenderer } from './lib/markdown.mjs';
-import { definitionPage, letterPage, categoryPage, homePage, searchPage, notFoundPage, categoryLabel, pictoSprite } from './lib/templates.mjs';
+import { createLinker } from './lib/liens.mjs';
+import { definitionPage, letterPage, categoryPage, homePage, searchPage, notFoundPage, categoryLabel, pictoSprite, setNavigation } from './lib/templates.mjs';
 import { homeJsonLd, definitionJsonLd, listJsonLd, sitemap, robots } from './lib/seo.mjs';
 import { headers, redirects } from './lib/cloudflare.mjs';
 
@@ -32,6 +33,7 @@ const notes = loadCategoryNotes(path.join(repoRoot, 'templates', 'categories.yam
 for (const w of data.warnings) console.warn(`WARN ${w}`);
 for (const hit of data.sanitizationHits) console.log(`[assainissement] ${hit.slug} : ${hit.pattern} « ${hit.match} »`);
 const total = definitions.length;
+setNavigation(letters, categories);
 
 // 2. Sortie propre
 fs.rmSync(out, { recursive: true, force: true });
@@ -89,7 +91,7 @@ write('site.webmanifest', JSON.stringify({
 }));
 
 // 4. Définitions
-const render = createRenderer();
+const render = createRenderer({ linker: createLinker(definitions), label: categoryLabel });
 let mathPages = 0;
 let images = 0;
 for (const def of definitions) {
@@ -135,7 +137,8 @@ write('recherche.json', JSON.stringify({
   terms: definitions.map((d) => [d.title, d.slug, catPos.get(d.category), d.englishTerm || d.frenchTerm || '', d.description || '']),
 }));
 // La tranche : longueur de chaque définition, dans le même ordre que l'index.
-write('tranche.json', JSON.stringify(definitions.map((d) => d.body.length)));
+// Avec le nombre de renvois reçus, qui départage les résultats de recherche de même rang.
+write('tranche.json', JSON.stringify({ longueurs: definitions.map((d) => d.body.length), renvois: definitions.map((d) => d.citedBy.length) }));
 // Et la même tranche dessinée, en masque teintable pour le signet des pages de définition :
 // un trait par mot, hauteur en racine carrée de la longueur, étirée à la largeur du bloc.
 {

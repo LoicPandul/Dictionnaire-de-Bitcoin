@@ -45,7 +45,8 @@ function protectMath(source) {
 const restoreMath = (html, formulas) =>
   html.replace(/⁣M(\d+)⁣/g, (_, i) => formulas[Number(i)]);
 
-export function createRenderer() {
+// linker (facultatif) : ajoute les renvois dans le texte, avant que les formules soient remises en place.
+export function createRenderer({ linker = null, label = (x) => x } = {}) {
   let current = null;
   const marked = new Marked({ gfm: true, breaks: false });
   marked.use({
@@ -75,6 +76,7 @@ export function createRenderer() {
     current = def;
     const { text, formulas } = protectMath(def.body);
     let html = marked.parse(text);
+    if (linker) html = linker(html, def, { label });
     html = restoreMath(html, formulas);
     // Une figure seule dans un paragraphe : on retire le <p> qui l'enveloppe.
     html = html.replace(/<p>\s*(<figure class="figure">[\s\S]*?<\/figure>)\s*<\/p>/g, '$1');

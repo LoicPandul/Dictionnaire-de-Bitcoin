@@ -14,9 +14,9 @@
   let termes = null;
   let longueurs = null;
   const charger = () =>
-    Promise.all([window.dicoIndex(), fetch('/tranche.json').then((r) => r.json())]).then(([idx, lens]) => {
+    Promise.all([window.dicoIndex(), fetch('/tranche.json').then((r) => r.json())]).then(([idx, tranche]) => {
       termes = idx;
-      longueurs = lens;
+      longueurs = tranche.longueurs;
     });
 
   // ------------------------------------------------------------ Le mot du jour
