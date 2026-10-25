@@ -49,11 +49,14 @@ Une fois le domaine acheté : changer `url` dans `config.mjs` (voir plus bas), p
 
 Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui la valeur provisoire `https://dictionnaire-bitcoin.example`. Elle sert aux adresses canoniques, au sitemap, au JSON-LD, aux cartes sociales et à la citation des définitions.
 
-## Couleurs et édition (passage à la charte 2027)
+## Couleurs, polices et édition
 
-Toutes les couleurs du site vivent dans `palette`, dans `config.mjs`. Le build en réécrit le bloc de jetons en tête de `static/css/site.css` (entre `palette:début` et `palette:fin`), la couleur de la barre des navigateurs et le manifeste ; voiles, ombres et scrims en dérivent. L'arbre gravé est une image en niveaux de gris fondue en mode « écran » sur la couleur de couverture : il prend seul la teinte de la palette.
+Le site suit la charte de l'édition 2027 (`design/charte-2027.md`, branche `feat/couverture-2027`) : Figue, banian, Archivo et Atkinson Hyperlegible Mono.
 
-Les valeurs actuelles sont celles de l'édition 2026, provisoires. Pour passer à la charte de l'édition 2027 (`design/charte-2027.md`, branche `feat/couverture-2027`) : remplacer les valeurs de `palette` et `site.edition`, puis relancer le build. À refaire ensuite à la main : la carte sociale (`tools/carte-sociale.html`, qui reprend la couleur de couverture), et, si la couverture change, les images du livre (`static/img/livre.webp`, `couverture.webp`, les pages et la boucle vidéo, régénérées par `tools/prepare-assets.py` depuis les nouveaux PDF).
+- **Couleurs** : toutes dans `palette`, dans `config.mjs`. Le build en réécrit le bloc de jetons en tête de `static/css/site.css` (entre `palette:début` et `palette:fin`), la couleur de la barre des navigateurs et le manifeste ; les rôles (fond, texte, lien, bouton, mode sombre) sont définis juste dessous. Pour changer de palette : modifier `palette`, relancer le build.
+- **Polices** : `static/fonts/archivo.woff2` (variable, largeurs 62 à 100, graisses 400 à 900, latin), `archivo-italique.woff2` et `atkinson-mono.woff2`, tirées de `fonts/` (OFL). `tools/chasses.py` refait `lib/archivo-advances.json`, qui sert à dimensionner les vedettes.
+- **Jaquette de l'accueil** : `tools/jaquette-2027.py` réutilise le générateur de la couverture 2027 (`design/couverture/banyan.py` et `typeset.py`) pour dessiner le banian sans ses textes et écrire la position du titre dans `lib/jaquette.json` ; `tools/raster-jaquette.mjs` le rend en images, encodées ensuite en AVIF et WebP (`static/img/jaquette-*`, `avant-*`). À refaire si la couverture 2027 change.
+- **Millésime** : `site.edition` dans `config.mjs`. Les pages et la vidéo du livre imprimé restent celles de l'édition 2026, la seule parue.
 
 ## Adresses
 
@@ -70,19 +73,18 @@ Elles reprennent celles de pandul.fr sans le préfixe `/dictionnaire`, pour que 
 ## Fichiers
 
 - `build.mjs` : le générateur. `lib/content.mjs` lit les définitions (même calcul des slugs, catégories, descriptions et voisins que pandul.fr) ; `lib/markdown.mjs` rend le Markdown et compose les formules avec KaTeX au build ; `lib/templates.mjs` écrit les pages ; `lib/seo.mjs` le JSON-LD, le sitemap et robots.txt ; `lib/cloudflare.mjs` `_headers` et `_redirects`.
-- `lib/cmu-advances.json` et `lib/logotype.json` : chasses de Computer Modern, pour calculer au build la taille de chaque vedette (deux lignes au plus à toutes les largeurs). Régénérés par `tools/logotype.py`.
+- `lib/archivo-advances.json` : chasses d'Archivo Titre, pour calculer au build la taille de chaque vedette (deux lignes au plus à toutes les largeurs) ; `lib/jaquette.json` : position du titre sur la jaquette.
 - `static/css/site.css` : toute la mise en forme, jetons en tête. `static/js/site.js` : thème, barre, transitions entre pages, recherche, 404. `static/js/accueil.js` : le mot du jour et la tranche.
-- `static/fonts/` : CMU Serif Roman (la police de la couverture, tirée de `fonts/cmunrm.ttf`) et Host Grotesk, sous licence OFL (textes joints).
+- `static/fonts/` : Archivo et Atkinson Hyperlegible Mono, sous licence OFL (textes joints).
 - `tools/prepare-assets.py` et `tools/raster-pictos.mjs` : refont les images à partir des sources du dépôt (voir l'en-tête du script).
 
 ## Images
 
 Toutes viennent du livre et du dépôt, aucune image extérieure :
 
-- l'arbre gravé, extrait de `assets/cover-hardcover.pdf` (titre imprimé effacé) ;
-- la feuille de la tranche, vectorisée (emblème, favicon) ;
-- les 19 pictogrammes de `assets/pictograms`, retracés ;
-- le livre en volume, tiré de `assets/images/cover.png` ;
-- la couverture à plat, six pages intérieures et la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendues depuis les PDF du dépôt ;
+- le banian de la couverture 2027 (couronne et racines), calculé par le générateur de la couverture ;
+- les 19 pictogrammes de `assets/pictograms`, retracés (ceux de 2026, en attendant le jeu 2027) ;
+- six pages intérieures et la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendues depuis le PDF de l'édition 2026 ;
+- la carte sociale (`tools/carte-sociale.html`) ;
 - le portrait de Loïc Morel ;
 - les schémas des définitions, copiés depuis leurs dossiers.

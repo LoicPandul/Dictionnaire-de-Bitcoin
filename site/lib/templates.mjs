@@ -732,7 +732,7 @@ export function homePage(data, { assets, jsonLd }) {
 export function searchPage({ assets, letters, total, categories }) {
   const picto = pictoCollector();
   const body = `<header class="cherche-tete">
-  <h1 class="titre-page">Rechercher un mot</h1>
+  <h1 class="titre-page">Rechercher</h1>
   <p class="enonce">Dans les ${num(total)} définitions, leur terme anglais et leur description. Les fautes de frappe sont tolérées.</p>
   <form class="cherche-form" role="search" action="/recherche/" method="get" data-search-page>
     <label class="masque" for="cherche-q">Terme à chercher</label>

@@ -274,4 +274,16 @@ Note donnée à la version 1 : potentiel 6/10, utilisabilité 5/10, originalité
 
 ## 15. Après la première relecture du site
 
-La relecture indépendante des gabarits construits (voir `revue.md`) a fait changer quatre choses : l'accent passe du jaune-vert fluo à un or de dorure, tiré de l'univers du livre relié ; le mot du jour quitte son bandeau pour s'écrire en Computer Modern sur le dos de la jaquette ; un menu donne enfin la navigation sur téléphone ; les définitions reçoivent des renvois dans leur texte.
+La relecture indépendante des gabarits construits (voir `revue.md`) a fait changer : l'accent fluo, remplacé par un or ; le mot du jour, qui quitte son bandeau pour le dos de la jaquette ; un menu pour la navigation sur téléphone ; des renvois dans le texte des définitions.
+
+## 16. Passage à la charte de l'édition 2027 (25 octobre 2026)
+
+Loïc a demandé que le site prenne dès maintenant l'identité de l'édition 2027, fixée dans `design/charte-2027.md` (branche feat/couverture-2027, commit f5a3a13b). Elle remplace les sections 5, 6 et 12 ci-dessus ; le concept (« le livre ouvert » : jaquette, tranche, pages, signet) ne change pas.
+
+- **Couleur** : Figue `#AA226A`, Figue sombre, Canopée, Figue vive, Figue claire et Nuit pour le mode sombre, Rose, Brume, Encre, Écorce, Galet. Toutes dans `palette` (`config.mjs`) ; le build écrit les jetons CSS. Contrastes de la charte gardés : Blanc sur Figue 6,67, Encre sur Blanc 17,20, Écorce sur Blanc 5,82, Figue claire sur Nuit 7,30. Paires ajoutées et vérifiées : Rose sur Figue 4,87 (texte court seulement), Blanc sur Canopée 13,50, Brume sur Figue sombre 10,19. Aucune paire interdite par la charte n'est utilisée.
+- **Proportions** : Blanc domine. La Figue sert aux liens (toujours soulignés), au bouton principal, à la jaquette de l'accueil et au bandeau de la 404 ; le pied de page est en Canopée.
+- **Caractères** : Archivo pour tout (Titre 75 / 800 pour les titres et vedettes, Vedette 75 / 750 pour les noms dans les listes, Couverture 62 / 900 pour le titre de la jaquette, les lettres et l'alphabet), Atkinson Hyperlegible Mono pour le code. Un seul fichier variable réduit au latin (69 Ko), préchargé. Computer Modern et Host Grotesk sont retirés.
+- **La jaquette** : le banian de la couverture 2027, calculé par le générateur de la couverture (`banyan.py`, graine du bloc de genèse), rendu sans ses textes par `tools/jaquette-2027.py` en deux calques (couronne, racines). Le titre du site est composé en HTML exactement à la place où la couverture l'imprime : les racines se posent sur ses lettres, et les trois piliers sur les trois I de « DICTIONNAIRE ». Au chargement, les racines descendent de la couronne puis le titre monte.
+- **Favicon** : un carré Figue et trois barres blanches, les trois piliers.
+- **Schémas** : posés sur le fond ; en mode sombre, sur une carte blanche de 16 px ; sous 640 px, 640 px de large dans un cadre qui défile, et un lien « Agrandir le schéma ».
+- **Restent de 2026** : les 19 pictogrammes (la charte en prévoit de nouveaux, pas encore dessinés) et les pages et la vidéo du livre imprimé (l'édition 2026 est la seule parue).

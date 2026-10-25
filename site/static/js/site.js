@@ -621,6 +621,13 @@
       } else {
         statut.textContent = approx ? 'Aucun mot exact. Vouliez-vous dire :' : pluriel(total, 'résultat', 'résultats');
         sortie.innerHTML = res.map((r, i) => ligne(r, i, 'page')).join('');
+        // Premier affichage : les rangées arrivent l'une après l'autre (une fois, pas à chaque frappe).
+        if (!sortie.dataset.vu) {
+          sortie.dataset.vu = '1';
+          sortie.querySelectorAll('.resultat').forEach((li, k) => li.style.setProperty('--k', Math.min(k, 12)));
+          sortie.classList.add('arrivee');
+          setTimeout(() => sortie.classList.remove('arrivee'), 1200);
+        }
       }
       sortie.querySelectorAll('a').forEach((a) => a.removeAttribute('tabindex'));
     };

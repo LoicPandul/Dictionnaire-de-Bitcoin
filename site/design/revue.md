@@ -57,3 +57,25 @@ Ce qui a été corrigé après ce tour :
 - **Définition** : signet placé après le texte sur téléphone ; plus de transformation depuis les listes (la vedette se fond sur place, précédent et suivant tournent la page) ; renvois aussi sur les codes en ligne (`scriptPubKey`, SHA256…) ; schéma ouvert ajusté à la largeur avec « Agrandir » et pincement ; points de suspension rétablis.
 - **Partout** : `0x` minuscule dans les titres hexadécimaux ; espaces fines insécables (guillemets, deux-points) ; plus de flash au toucher ; pied de page compact hors accueil ; voile neutre sous les textes posés sur l'arbre ; jaquette centrée, dos et couverture de même largeur ; fichier source réduit à `definition.md` avec lien vers GitHub ; 404 en recherche directe sous le champ, résultats avec extrait.
 - **Couleurs** : toute la palette passe par `config.mjs` (préparation de la charte 2027), l'arbre s'adapte seul à la couleur de couverture.
+
+### Tour 3 (nouveau relecteur indépendant, relevés des tours 1 et 2 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,0 | 7,5 |
+| Définition | 6,5 | 7,5 |
+| Lettre | 6,5 | 7,0 |
+| Catégorie | 6,5 | 7,0 |
+| Recherche | 6,5 | 7,0 |
+| 404 | 7,0 | 7,0 |
+
+Note globale : 6,9. Restaient surtout des incohérences de détail : quatre grilles d'alphabet différentes, hexadécimal repassé en capitales par la feuille de style, tirets qui cassent les titres de codes, fantôme résiduel de la transition, recherche (« satoshi », « hd wallet »), premiers mots trop bas sur les listes mobiles, menus déroulants natifs, arbre coupé net sur la 404.
+
+Entre le tour 3 et le tour 4, **la charte de l'édition 2027 a été appliquée** (voir `direction.md`, section 16) : Figue, banian, Archivo, liens toujours soulignés, bouton Figue, blanc dominant. Corrigé en même temps :
+
+- **Cohérence** : un seul composant d'alphabet (7 colonnes, 13 dès 640 px) pour le menu, le pied, la recherche et la tranche ; hexadécimal en « 0x » minuscule partout, plus aucune capitale forcée ; titres de codes avec un tiret demi-cadratin précédé d'une insécable (« OP_RETURN – 0x6A ») ; césure limitée (`hyphenate-limit-chars`).
+- **Transitions** : plus de vedette partagée entre deux pages ; fondu enchaîné sans superposition, page tournée pour précédent et suivant.
+- **Recherche** : bonus au mot exact du titre (« satoshi » donne SAT – SATOSHI en tête), synonymes courants (wallet, seed, 12 mots…), fautes de frappe limitées aux mots de même initiale, suggestions sur la page vide, titre à gauche du champ sur ordinateur, filtres en rangée qui défile au doigt (plus de menu déroulant).
+- **Listes** : descriptions en 16 px pleine encre, petits groupes fusionnés dans les catégories (« J – L »), rayon des 19 catégories en une ligne qui défile, saut instantané avec « Aller à », bouton « Haut » discret et caché sur le pied, fondu sous les en-têtes collants.
+- **Définition** : résumé du mot suivant tronqué au mot avec points de suspension, lettre jamais seule en fin de ligne, schémas à 640 px dans un cadre qui défile sur téléphone avec un lien « Agrandir le schéma » sous la figure.
+- **404** : la jaquette entière en bandeau, la couronne court sur toute la largeur, le texte sous les racines courtes du dos.

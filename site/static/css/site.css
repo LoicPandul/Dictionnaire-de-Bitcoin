@@ -483,7 +483,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .index-nom { display: flex; align-items: center; gap: 10px; font-size: var(--t-nom); font-weight: 600; line-height: 1.25; }
 .index-nom .picto { width: 20px; height: 20px; color: var(--texte); }
 .index-n { margin-left: auto; font-size: var(--t-note); font-weight: 500; color: var(--doux); font-variant-numeric: tabular-nums; }
-.index-mots { margin-top: 6px; padding-left: 30px; font-size: var(--t-note); line-height: 1.5; color: var(--doux); }
+.index-mots { margin-top: 6px; padding-left: 30px; font-size: var(--t-ui); line-height: 1.5; color: var(--texte); }
 
 /* Le livre */
 .livre { display: grid; gap: 56px; }
@@ -627,7 +627,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .renvoi-nom { justify-self: start; color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .renvoi-cat { display: inline-flex; align-items: center; gap: 6px; font-size: var(--t-note); color: var(--doux); }
 .renvoi-cat .picto { width: 15px; height: 15px; }
-.renvoi-desc { font-size: var(--t-note); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.renvoi-desc { font-size: var(--t-ui); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .renvoi:hover .renvoi-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 
 @media (min-width: 1024px) {
@@ -648,7 +648,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .tourner-lien--prev .tourner-sens::before { content: '← '; }
 .tourner-lien--next .tourner-sens::after { content: ' →'; }
 .tourner-nom { color: var(--lien); font-size: var(--t-enonce); line-height: 1.15; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; overflow-wrap: anywhere; }
-.tourner-desc { font-size: var(--t-note); line-height: 1.45; max-width: 46ch; }
+.tourner-desc { font-size: var(--t-ui); line-height: 1.45; max-width: 46ch; }
 .tourner-vide { display: none; }
 @media (min-width: 640px) { .tourner-vide { display: block; background: var(--surface); } }
 @media (hover: hover) { .tourner-lien:hover { background: var(--marque); } .tourner-lien:hover .tourner-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
@@ -762,7 +762,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .entree-nom { justify-self: start; color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .entree-nom .picto { display: inline-block; width: 15px; height: 15px; margin-right: 8px; vertical-align: -0.12em; color: var(--doux); }
 .entree-sujet { font-weight: 500; color: var(--doux); }
-.entree-desc { font-size: var(--t-note); line-height: 1.45; color: var(--doux); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.entree-desc { font-size: var(--t-ui); line-height: 1.45; color: var(--texte); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 @media (min-width: 1024px) { .entree-desc { -webkit-line-clamp: 1; } }
 @media (hover: hover) { .entree:hover .entree-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 .p-lettre .liste { padding-bottom: 56px; }
@@ -787,7 +787,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .resultat-nom { color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .resultat-cat { display: inline-flex; align-items: center; gap: 6px; font-size: var(--t-note); color: var(--doux); justify-self: end; }
 .resultat-cat .picto { width: 15px; height: 15px; }
-.resultat-desc { grid-column: 1 / -1; font-size: var(--t-note); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.resultat-desc { grid-column: 1 / -1; font-size: var(--t-ui); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .resultat-alt { grid-column: 1 / -1; font-size: var(--t-note); color: var(--doux); }
 .resultat mark { background: var(--marque); color: var(--sur-marque); padding: 0 1px; }
 .resultat[aria-selected='true'] a { background: var(--surface); box-shadow: inset 4px 0 0 var(--lien); }
@@ -808,7 +808,11 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 }
 
 .cherche-tete { padding: clamp(24px, 4vw, 56px) var(--m) 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
-.cherche-tete .titre-page { font-size: var(--t-titre); }
+@media (min-width: 1024px) {
+  .cherche-tete { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g); align-items: end; }
+  .cherche-tete .titre-page { grid-column: 1 / 6; grid-row: 1 / span 2; align-self: start; }
+  .cherche-tete > :not(.titre-page) { grid-column: 6 / -1; }
+}
 .cherche-tete .enonce { font-size: var(--t-lecture); }
 .cherche-form { display: flex; align-items: center; gap: 12px; max-width: 880px; padding: 0 18px; border: 2px solid var(--texte); background: var(--fond); }
 .cherche-form:focus-within { outline: 3px solid var(--anneau); outline-offset: 2px; }
@@ -817,7 +821,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .filtres { min-width: 0; border: 0; padding: 0; margin: 0; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-mask: linear-gradient(90deg, #000 calc(100% - 40px), transparent); mask: linear-gradient(90deg, #000 calc(100% - 40px), transparent); }
 .filtres::-webkit-scrollbar { display: none; }
 @media (min-width: 1024px) { .filtres { flex-wrap: wrap; overflow: visible; -webkit-mask: none; mask: none; } }
-.filtre { flex: none; }
+.filtre { position: relative; flex: none; }
 .filtre input { position: absolute; opacity: 0; pointer-events: none; }
 .filtre span { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 12px; background: var(--surface); font-size: var(--t-note); font-weight: 600; cursor: pointer; white-space: nowrap; }
 .filtre .picto { width: 16px; height: 16px; }
@@ -848,7 +852,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .perdu-liste { display: grid; gap: 2px; max-width: 560px; }
 .perdu-liste a { display: grid; gap: 2px; padding: 10px 0; color: var(--blanc); text-decoration: none; }
 .perdu-nom { font-size: var(--t-nom); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
-.perdu-desc { font-size: var(--t-note); color: var(--rose); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.perdu-desc { font-size: var(--t-ui); color: var(--blanc); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .perdu-liste a:hover .perdu-nom { text-decoration-thickness: 2px; } }
 .perdu-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
 .perdu a { color: var(--blanc); }
@@ -925,6 +929,11 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .js .apercu-lettre { animation: lever 600ms var(--ease-out) 360ms both; }
   .js .sous-index li { animation: lever 500ms var(--ease-out) both; animation-delay: calc(420ms + var(--k, 0) * 40ms); }
   .js .cat-tete > * { animation: lever 600ms var(--ease-out) both; }
+  .js .cherche-tete > * { animation: lever 600ms var(--ease-out) both; }
+  .js .cherche-tete > :nth-child(2) { animation-delay: 60ms; }
+  .js .cherche-tete > :nth-child(3) { animation-delay: 120ms; }
+  .js .cherche-tete > :nth-child(4) { animation-delay: 180ms; }
+  .resultats--page.arrivee .resultat { animation: lever 500ms var(--ease-out) both; animation-delay: calc(var(--k, 0) * 35ms); }
   .js .cat-tete > :nth-child(2) { animation-delay: 60ms; }
   .js .cat-tete > :nth-child(3) { animation-delay: 120ms; }
   .js .cat-tete > :nth-child(4) { animation-delay: 180ms; }
