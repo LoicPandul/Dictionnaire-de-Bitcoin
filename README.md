@@ -43,7 +43,7 @@ Si vous souhaitez soutenir ce projet, vous pouvez aussi le partager sur les rés
 
 Vous pouvez découvrir gratuitement [la version PDF du *Dictionnaire de Bitcoin*](/dictionnaire-de-bitcoin.pdf) à la racine de ce dépôt ou [dans les Releases](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/releases). C'est la manière la plus simple de lire et de rechercher des définitions. Vous pouvez également parcourir les définitions directement sur GitHub dans le dossier [definitions/fr/](./definitions/fr/). Chaque définition est dans son propre dossier, classé alphabétiquement.
 
-Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[index.md](./INDEX.md) qui liste toutes les entrées avec des liens directs.
+Pour faciliter la navigation et vous aider à trouver rapidement les définitions, consultez l'[INDEX.md](./INDEX.md) qui liste toutes les entrées avec des liens directs.
 
 <p align="center">
   <a href="./INDEX.md">
@@ -78,17 +78,20 @@ Pour ajouter une nouvelle définition :
 uuid: "générez-un-uuid-v4-unique"
 title: "TITRE EN MAJUSCULES"
 slug: "titre-en-minuscules" # identique au nom de dossier
-category: "CATÉGORIE"
+category: "CATÉGORIE" # une catégorie de templates/categories.yaml
 english_term: "ENGLISH TERM"  # optionnel
 french_term: "FRENCH TERM"  # optionnel
 cross_references:
   - "UUID du terme connexe"
   - "UUID du terme connexe"
-version: "1" # version 2026 du dictionnaire
+version: "1"
 ```
 
-- Créez un fichier `definition.md` avec le corps de la définition
-- Si votre définition inclut des images, créez un dossier `assets/` et référencez-les avec `![](./assets/image.png)`
+- Créez un fichier `definition.md` avec le corps de la définition (la version développée)
+- Créez un fichier `courte.md` avec la version courte : une ou deux phrases, 45 mots au plus, pour comprendre le terme en un coup d'œil
+- Si votre définition inclut des images, créez un dossier `assets/` et référencez-les avec `![Texte alternatif](./assets/image.png)` ; le texte alternatif sert aussi de légende dans le livre
+
+La catégorie décide de la partie du livre où l'entrée apparaît (dictionnaire technique, entreprises et logiciels, personnes, spécifications) : voir `templates/parts.yaml`. Avant de proposer votre modification, lancez `python3 scripts/main.py check`.
 
 ### Modifier une définition existante
 
@@ -118,46 +121,43 @@ Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une d
 
 ```plaintext
 Dictionnaire-de-Bitcoin/
-├── definitions/                    # Définitions du dictionnaire
-│   └── fr/                         # Version française
+├── definitions/                    # Entrées du dictionnaire (toutes les parties)
+│   └── fr/
 │       ├── a/
 │       │   ├── adaptor-signature/
-│       │   │   ├── definition.md   # Corps de la définition
-│       │   │   └── metadata.yaml   # Métadonnées (titre, catégorie, etc.)
+│       │   │   ├── definition.md   # Version développée
+│       │   │   ├── courte.md       # Version courte (une ou deux phrases)
+│       │   │   └── metadata.yaml   # Métadonnées (titre, catégorie, renvois…)
 │       │   ├── adresse-de-reception/
 │       │   │   ├── definition.md
+│       │   │   ├── courte.md
 │       │   │   ├── metadata.yaml
 │       │   │   └── assets/         # Images de la définition
-│       │   │       └── image-1.png
-│       │   └── ...
-│       ├── b/
 │       │   └── ...
 │       └── z/
-│           └── ...
 │
-├── assets/                         # Ressources visuelles
+├── specifications/                 # BIP, BOLT, bLIP et NIP : numéro, titre, statut, résumé
+├── chronologie/fr/                 # Chronologie, un fichier par année
+│
+├── assets/
 │   ├── images/                     # Images du README
 │   └── pictograms/                 # Pictogrammes des catégories (SVG/PDF)
 │
-├── fonts/                          # Polices pour la génération PDF
+├── fonts/                          # Polices du livre (Archivo, Atkinson Hyperlegible Mono)
 │
-├── templates/                      # Templates pour la génération
+├── templates/
+│   ├── categories.yaml             # Catégories et leur description
+│   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
+│   ├── editions.yaml               # Éditions générées (complète, essentiel, tomes)
 │   ├── legal.yaml                  # Informations légales et métadonnées
 │   ├── introduction.md             # Note de l'auteur
 │   ├── contributors.md             # Liste des contributeurs
-│   ├── categories.yaml             # Liste des catégories
 │   └── pending_terms.yaml          # Termes en attente de définition
 │
-├── scripts/                        # Scripts de génération
-│   ├── main.py                     # Point d'entrée principal
-│   ├── config.py                   # Configuration
-│   ├── core/                       # Classes principales
-│   ├── generators/                 # Générateurs PDF, Index, Stats
-│   ├── validators/                 # Validateurs
-│   └── README.md                   # Documentation des scripts
+├── scripts/                        # Validation et génération (PDF, EPUB, index, statistiques)
 │
 ├── dictionnaire-de-bitcoin.pdf     # Version PDF
-├── index.md                        # Index des définitions
+├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
 ├── STYLE_GUIDE.md                  # Charte éditoriale
 ├── README.md
