@@ -163,7 +163,7 @@ ul, ol { padding: 0; list-style: none; }
   text-wrap: balance;
 }
 .enonce { font-size: var(--t-enonce); line-height: 1.35; text-wrap: pretty; max-width: 34ch; }
-.note { font-size: var(--t-note); color: var(--doux); line-height: 1.5; }
+.note { font-size: var(--t-ui); color: var(--doux); line-height: 1.5; }
 
 /* Boutons : rectangulaires, pleins, une seule forme sur tout le site. */
 .bouton {
@@ -341,7 +341,7 @@ ul, ol { padding: 0; list-style: none; }
 .jour-cat .picto { width: 18px; height: 18px; }
 .jour-desc { font-size: var(--t-enonce); line-height: 1.4; max-width: 40ch; }
 .jour-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.jour-pied { font-size: var(--t-note); color: var(--doux); }
+.jour-pied { font-size: var(--t-ui); color: var(--doux); }
 .bouton--lavis { background: var(--surface); color: var(--texte); }
 .jaquette-couv {
   position: relative;
@@ -1194,6 +1194,12 @@ ul, ol { padding: 0; list-style: none; }
 
   /* Grande lettre : elle monte de son masque. */
   .js .gl-in { animation: monter 900ms var(--ease-expo) 60ms both; }
+  .js .tranche-lettre svg { animation: balayer 1000ms var(--ease-in-out) 200ms both; }
+  .js .apercu-lettre { animation: lever 600ms var(--ease-out) 360ms both; }
+  .js .sous-index li { animation: lever 500ms var(--ease-out) both; }
+  .js .sous-index li:nth-child(1) { animation-delay: 420ms; } .js .sous-index li:nth-child(2) { animation-delay: 460ms; } .js .sous-index li:nth-child(3) { animation-delay: 500ms; } .js .sous-index li:nth-child(4) { animation-delay: 540ms; }
+  .js .sous-index li:nth-child(5) { animation-delay: 580ms; } .js .sous-index li:nth-child(6) { animation-delay: 620ms; } .js .sous-index li:nth-child(n + 7) { animation-delay: 660ms; }
+  .js .groupe:first-of-type .groupe-tete { animation: lever 600ms var(--ease-out) 500ms both; }
   .js .lettre-info { animation: lever 600ms var(--ease-out) 300ms both; }
   .js .cat-tete > * { animation: lever 600ms var(--ease-out) both; }
   .js .cat-tete > :nth-child(2) { animation-delay: 60ms; }
@@ -1238,6 +1244,7 @@ ul, ol { padding: 0; list-style: none; }
   html:active-view-transition-type(precedent)::view-transition-old(root) { animation: 420ms var(--ease-in-out) both sortir-droite; }
   html:active-view-transition-type(precedent)::view-transition-new(root) { animation: 420ms var(--ease-in-out) both entrer-gauche; }
 }
+@keyframes balayer { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0); } }
 @keyframes graver { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0); } }
 @keyframes monter { from { transform: translateY(105%); } to { transform: none; } }
 @keyframes lever { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
