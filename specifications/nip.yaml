@@ -1,0 +1,718 @@
+# NIP — Nostr Implementation Possibilities
+#
+# Une entrée par document : identifiant, titre d'origine, statut, résumé en français.
+# `definition` : slug de l'entrée du dictionnaire consacrée au document, imprimée sous le
+# résumé dans l'édition complète. `related` : entrées du dictionnaire liées au document.
+#
+# `status` : étiquettes de l'en-tête du fichier, telles quelles. `sort_key` : valeur décimale de
+# l'identifiant, ou valeur hexadécimale + 1000 pour les identifiants comme 7D.
+
+source: "https://github.com/nostr-protocol/nips"
+source_commit: "d47a2ec8aacb9d01ac00e6294ae77582f483ff68"
+updated: "2026-10-25"
+
+entries:
+  - id: "NIP-01"
+    sort_key: 1
+    title: "Basic protocol flow description"
+    status: ["draft", "mandatory", "relay"]
+    summary: "Décrit le protocole de base que tout client et tout relais Nostr doivent implémenter : la structure d'un événement (clé publique, *kind*, *tags*, contenu, signature Schnorr selon BIP-0340), sa sérialisation, les filtres de requête et les messages échangés par WebSocket (`EVENT`, `REQ`, `CLOSE`, `EOSE`, `OK`...). Il définit aussi les événements remplaçables, éphémères et adressables."
+    kinds: ["0"]
+    related: ["evenement-nostr", "relais-nostr"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/01.md"
+  - id: "NIP-02"
+    sort_key: 2
+    title: "Follow List"
+    status: ["final", "optional"]
+    summary: "Définit la liste d'abonnements d'un utilisateur : un événement qui contient un *tag* `p` par profil suivi, avec un relais conseillé et un surnom facultatif. Chaque nouvelle liste publiée remplace la précédente, ce qui permet aussi de retrouver ses abonnements sur un autre appareil."
+    kinds: ["3"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/02.md"
+  - id: "NIP-03"
+    sort_key: 3
+    title: "OpenTimestamps Attestations for Events"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Définit un événement qui contient une preuve OpenTimestamps pour un autre événement Nostr, afin de prouver par une attestation dans la blockchain Bitcoin qu'il existait à une date donnée. En 2026, le dépôt le déconseille : il reste vulnérable à une attaque précise et doit être mis à jour."
+    kinds: ["1040"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/03.md"
+  - id: "NIP-04"
+    sort_key: 4
+    title: "Encrypted Direct Message"
+    status: ["final", "unrecommended", "optional", "relay"]
+    summary: "Premier format de messages privés de Nostr : le contenu est chiffré en AES-256-CBC avec un secret partagé obtenu par ECDH entre les clés des deux interlocuteurs. Le texte lui-même reconnaît qu'il laisse fuiter des métadonnées, et en 2026, le dépôt le déconseille au profit du NIP-17."
+    kinds: ["4"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/04.md"
+  - id: "NIP-05"
+    sort_key: 5
+    title: "Mapping Nostr keys to DNS-based internet identifiers"
+    status: ["final", "optional"]
+    summary: "Associe une clé publique Nostr à un identifiant au format d'une adresse e-mail, comme `bob@example.com`. Le client vérifie l'association en interrogeant le fichier `/.well-known/nostr.json` du domaine, qui doit renvoyer la même clé publique. Le NIP présente ce lien comme une identification, pas comme une vérification de la personne."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/05.md"
+  - id: "NIP-06"
+    sort_key: 6
+    title: "Basic key derivation from mnemonic seed phrase"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Dérive une clé Nostr à partir d'une phrase mnémonique BIP-0039, sur le chemin de dérivation BIP-0032 `m/44'/1237'/<account>'/0/0`. En 2026, le dépôt le déconseille et recommande de s'en tenir à une seule clé privée `nsec`."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/06.md"
+  - id: "NIP-07"
+    sort_key: 7
+    title: "`window.nostr` capability for web browsers"
+    status: ["draft", "optional"]
+    summary: "Définit l'objet `window.nostr` qu'une extension de navigateur met à disposition des sites web. Le site peut ainsi demander la clé publique de l'utilisateur ou lui faire signer un événement sans jamais manipuler sa clé privée."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/07.md"
+  - id: "NIP-08"
+    sort_key: 8
+    title: "Handling Mentions"
+    status: ["final", "unrecommended", "optional"]
+    summary: "Ancienne façon de mentionner un profil ou un événement dans une note : le client remplace la mention par la notation `#[index]`, qui renvoie à un *tag* de l'événement. En 2026, le dépôt le déconseille au profit du NIP-27 et de ses liens `nostr:`."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/08.md"
+  - id: "NIP-09"
+    sort_key: 9
+    title: "Event Deletion Request"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit la demande de suppression, un événement par lequel un auteur demande aux relais d'effacer ou de ne plus diffuser certains de ses événements. La suppression reste une demande : les relais devraient retirer les événements visés et les clients les masquer."
+    kinds: ["5"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/09.md"
+  - id: "NIP-10"
+    sort_key: 10
+    title: "Text Notes and Threads"
+    status: ["draft", "optional"]
+    summary: "Définit la note textuelle simple (*kind* 1), le message de base des réseaux sociaux sur Nostr, et la façon de construire des fils de discussion avec des *tags* `e` marqués `root` et `reply`. Les auteurs cités ou auxquels on répond sont ajoutés en *tags* `p` pour être notifiés."
+    kinds: ["1"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/10.md"
+  - id: "NIP-11"
+    sort_key: 11
+    title: "Relay Information Document"
+    status: ["draft", "optional", "relay"]
+    summary: "Permet à un relais de publier un document JSON qui le décrit : nom, description, contact de l'administrateur, NIP pris en charge, limites et conditions d'accès. Le client l'obtient par une requête HTTP sur l'adresse du relais, avec l'en-tête `Accept: application/nostr+json`."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/11.md"
+  - id: "NIP-12"
+    sort_key: 12
+    title: "Generic Tag Queries"
+    status: ["final", "mandatory"]
+    summary: "Définissait les requêtes sur n'importe quel *tag* d'une seule lettre, avec des filtres comme `#r` ou `#t`, alors que le NIP-01 ne prévoyait que `e` et `p`. Le 13 août 2023, ce texte a rejoint le NIP-01 et le fichier ne contient plus qu'un renvoi."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/12.md"
+  - id: "NIP-13"
+    sort_key: 13
+    title: "Proof of Work"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit une preuve de travail pour les événements Nostr : la difficulté est le nombre de bits à zéro en tête de l'identifiant de l'événement, que l'on fait varier avec un *tag* `nonce`. Les relais et les clients peuvent exiger une difficulté minimale pour freiner le spam."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/13.md"
+  - id: "NIP-14"
+    sort_key: 14
+    title: "Subject tag in Text events"
+    status: ["draft", "optional"]
+    summary: "Ajoute un *tag* `subject` aux notes textuelles pour leur donner un objet, comme celui d'un e-mail. Les clients peuvent l'afficher dans les listes de messages et le reprendre dans les réponses, éventuellement précédé de `Re:`."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/14.md"
+  - id: "NIP-15"
+    sort_key: 15
+    title: "Nostr Marketplace"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Décrit une place de marché sur Nostr, inspirée de Diagon-Alley : les marchands publient leurs boutiques et leurs produits, et les commandes passent par des messages chiffrés selon le NIP-04. En 2026, le dépôt le juge trop compliqué et conseille le NIP-99 à la place."
+    kinds: ["1021", "1022", "30017", "30018", "30019", "30020"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/15.md"
+  - id: "NIP-16"
+    sort_key: 16
+    title: "Event Treatment"
+    status: ["final", "mandatory"]
+    summary: "Définissait le traitement par les relais des événements réguliers, remplaçables et éphémères, selon la plage de numéros de leur *kind*. Le 13 août 2023, ce texte a rejoint le NIP-01 et le fichier ne contient plus qu'un renvoi."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/16.md"
+  - id: "NIP-17"
+    sort_key: 17
+    title: "Private Direct Messages"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit les messages privés chiffrés qui remplacent ceux du NIP-04 : chaque message est chiffré avec le NIP-44, scellé puis emballé dans un *gift wrap* du NIP-59 pour chaque destinataire, avec une date reculée au hasard de deux jours au plus. Les relais ne voient ni l'expéditeur ni le contenu, et le schéma accepte aussi les discussions à plusieurs."
+    kinds: ["14", "15", "10050"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/17.md"
+  - id: "NIP-18"
+    sort_key: 18
+    title: "Reposts"
+    status: ["draft", "optional"]
+    summary: "Définit le repartage d'une note (*kind* 6), qui la signale à ses abonnés, et le repartage générique (*kind* 16) pour tous les autres types d'événements. Il précise aussi la citation d'un événement, qui passe par un *tag* `q`."
+    kinds: ["6", "16"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/18.md"
+  - id: "NIP-19"
+    sort_key: 19
+    title: "bech32-encoded entities"
+    status: ["draft", "optional"]
+    summary: "Standardise les chaînes bech32 qu'affichent les clients : `npub` pour une clé publique, `nsec` pour une clé privée, `note` pour un identifiant d'événement, et des formats enrichis comme `nprofile` ou `nevent` qui ajoutent des relais conseillés. Ces formats servent à l'affichage et au partage, pas au protocole lui-même."
+    kinds: []
+    related: ["npub", "nsec"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/19.md"
+  - id: "NIP-20"
+    sort_key: 20
+    title: "Command Results"
+    status: ["final", "mandatory"]
+    summary: "Définissait le message `OK`, par lequel un relais indique au client s'il a enregistré ou refusé un événement, avec un préfixe qui donne la raison (`duplicate:`, `blocked:`, `invalid:`, `pow:`...). Le 13 août 2023, ce texte a rejoint le NIP-01 et le fichier ne contient plus qu'un renvoi."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/20.md"
+  - id: "NIP-21"
+    sort_key: 21
+    title: "`nostr:` URI scheme"
+    status: ["draft", "optional"]
+    summary: "Définit le schéma d'URI `nostr:`, suivi d'un identifiant du NIP-19 (sauf `nsec`), pour créer des liens vers un profil ou un événement. Il précise aussi comment relier une page web à l'événement Nostr ou au profil qui lui correspond."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/21.md"
+  - id: "NIP-22"
+    sort_key: 22
+    title: "Comment"
+    status: ["draft", "optional"]
+    summary: "Définit le commentaire (*kind* 1111), une réponse rattachée à un événement racine ou à un contenu extérieur à Nostr, comme une URL, un hashtag ou un podcast. Les *tags* en majuscules désignent la racine et ceux en minuscules l'élément auquel on répond directement."
+    kinds: ["1111"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/22.md"
+  - id: "NIP-23"
+    sort_key: 23
+    title: "Long-form Content"
+    status: ["draft", "optional"]
+    summary: "Définit les articles longs, de type billet de blog, rédigés en Markdown dans un événement adressable que l'auteur peut modifier. Des *tags* facultatifs donnent le titre, l'image, le résumé et la date de première publication."
+    kinds: ["30023", "30024"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/23.md"
+  - id: "NIP-24"
+    sort_key: 24
+    title: "Extra metadata fields and tags"
+    status: ["draft", "optional"]
+    summary: "Rassemble des champs et des *tags* devenus des standards de fait sans avoir leur propre NIP, comme `display_name`, `website`, `banner` ou `bot` dans les métadonnées d'un profil. Il liste aussi les champs obsolètes que les clients doivent ignorer."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/24.md"
+  - id: "NIP-25"
+    sort_key: 25
+    title: "Reactions"
+    status: ["draft", "optional"]
+    summary: "Définit la réaction à un événement : `+` vaut un « j'aime », `-` un « je n'aime pas », et un emoji s'affiche tel quel. Il couvre aussi les réactions à un site web, identifié par son URL."
+    kinds: ["7", "17"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/25.md"
+  - id: "NIP-26"
+    sort_key: 26
+    title: "Delegated Event Signing"
+    status: ["draft", "unrecommended", "optional", "relay"]
+    summary: "Permet à une clé principale de déléguer la signature d'événements à une autre clé, sous conditions de *kind* et de date, pour garder la clé principale hors ligne. En 2026, le dépôt le déconseille : le gain ne justifie pas la charge qu'il ajoute."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/26.md"
+  - id: "NIP-27"
+    sort_key: 27
+    title: "Text Note References"
+    status: ["draft", "optional"]
+    summary: "Décrit comment mentionner un profil ou un autre événement au milieu du texte d'une note, avec un lien `nostr:` du NIP-21. Le client qui affiche la note peut transformer ces mentions en liens ou en aperçus."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/27.md"
+  - id: "NIP-28"
+    sort_key: 28
+    title: "Public Chat"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Définit des salons de discussion publics (création, métadonnées, messages) avec une modération gérée par les clients, qui peuvent masquer un message ou ignorer un utilisateur. En 2026, le dépôt conseille le NIP-29 à la place."
+    kinds: ["40", "41", "42", "43", "44"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/28.md"
+  - id: "NIP-29"
+    sort_key: 29
+    title: "Relay-based Groups"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit des groupes dont un relais applique les règles : seuls les membres admis peuvent y écrire, et la lecture peut rester publique ou non. Un groupe est identifié par une chaîne aléatoire et peut migrer vers un autre relais, ou exister en plusieurs versions sur des relais différents."
+    kinds: ["9000-9030", "10009", "39000-39009"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/29.md"
+  - id: "NIP-30"
+    sort_key: 30
+    title: "Custom Emoji"
+    status: ["draft", "optional"]
+    summary: "Permet d'ajouter des emojis personnalisés à un profil, une note, une réaction ou un statut : le texte contient un code `:shortcode:` et un *tag* `emoji` donne l'adresse de l'image correspondante."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/30.md"
+  - id: "NIP-31"
+    sort_key: 31
+    title: "Dealing with unknown event kinds"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Recommande d'ajouter un *tag* `alt`, un court résumé lisible, aux événements de type inhabituel, pour qu'un client qui ne les connaît pas puisse au moins afficher de quoi il s'agit. En 2026, le dépôt le juge trop lourd et le déconseille."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/31.md"
+  - id: "NIP-32"
+    sort_key: 32
+    title: "Labeling"
+    status: ["draft", "optional"]
+    summary: "Définit un système d'étiquettes, avec un espace de noms (`L`) et une étiquette (`l`), que l'on pose sur un événement, un profil, un relais ou un sujet. Il sert à la modération distribuée, au classement de contenus ou à l'indication d'une licence."
+    kinds: ["1985"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/32.md"
+  - id: "NIP-33"
+    sort_key: 33
+    title: "Parameterized Replaceable Events"
+    status: ["final", "mandatory"]
+    summary: "Définissait les événements remplaçables paramétrés, identifiés par leur auteur, leur *kind* et la valeur de leur *tag* `d`. Le 13 août 2023, ils ont été renommés « événements adressables » et décrits dans le NIP-01, et le fichier ne contient plus qu'un renvoi."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/33.md"
+  - id: "NIP-34"
+    sort_key: 34
+    title: "`git` stuff"
+    status: ["draft", "optional"]
+    summary: "Décrit la collaboration autour de dépôts `git` sur Nostr : annonce d'un dépôt et de son état, envoi de *patches* et de *pull requests*, tickets, réponses et statuts. Le code lui-même reste hébergé sur des serveurs `git` classiques."
+    kinds: ["1617", "1618", "1619", "1621", "1622", "1630-1633", "30617", "30618"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/34.md"
+  - id: "NIP-35"
+    sort_key: 35
+    title: "Torrents"
+    status: ["draft", "optional"]
+    summary: "Définit un index de torrents sur Nostr : chaque événement donne l'empreinte BitTorrent, la liste des fichiers et des catégories, assez pour chercher un contenu et reconstruire le lien *magnet*. Aucun fichier torrent n'est stocké sur Nostr."
+    kinds: ["2003", "2004"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/35.md"
+  - id: "NIP-36"
+    sort_key: 36
+    title: "Sensitive Content / Content Warning"
+    status: ["draft", "optional"]
+    summary: "Ajoute un *tag* `content-warning` pour signaler un contenu sensible, que le client masque jusqu'à ce que le lecteur choisisse de l'afficher. Une raison facultative peut accompagner l'avertissement."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/36.md"
+  - id: "NIP-37"
+    sort_key: 37
+    title: "Draft Wraps"
+    status: ["draft", "optional"]
+    summary: "Définit le brouillon chiffré : un événement de n'importe quel type, non signé, chiffré avec le NIP-44 pour la clé de son auteur et stocké sur des relais. Il prévoit aussi des points de sauvegarde pour l'historique des révisions et une liste de relais réservés aux contenus privés."
+    kinds: ["1234", "10013", "31234"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/37.md"
+  - id: "NIP-38"
+    sort_key: 38
+    title: "User Statuses"
+    status: ["draft", "optional"]
+    summary: "Permet d'afficher un statut en direct à côté de son nom : une activité (« au travail », « en randonnée ») ou la musique que l'on écoute. Le statut peut expirer tout seul, par exemple à la fin du morceau."
+    kinds: ["30315"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/38.md"
+  - id: "NIP-39"
+    sort_key: 39
+    title: "Linking Profiles to Other Platforms"
+    status: ["draft", "optional"]
+    summary: "Permet de déclarer dans un événement Nostr ses comptes sur d'autres plateformes (GitHub, Twitter, Mastodon, Telegram), avec pour chacun une preuve publiée sur cette plateforme qui contient sa clé `npub`."
+    kinds: ["10011"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/39.md"
+  - id: "NIP-40"
+    sort_key: 40
+    title: "Expiration Timestamp"
+    status: ["draft", "optional", "relay"]
+    summary: "Ajoute un *tag* `expiration` qui fixe la date à partir de laquelle un événement est considéré comme expiré. Les relais ne devraient plus le transmettre ni l'accepter, mais ils ne sont pas tenus de l'effacer."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/40.md"
+  - id: "NIP-42"
+    sort_key: 42
+    title: "Authentication of clients to relays"
+    status: ["draft", "optional", "relay"]
+    summary: "Permet à un client de s'authentifier auprès d'un relais en signant un événement éphémère en réponse à un défi envoyé par le message `AUTH`. Le relais peut ainsi réserver la publication ou la lecture à des utilisateurs payants, sur liste blanche ou participants d'une conversation privée."
+    kinds: ["22242"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/42.md"
+  - id: "NIP-43"
+    sort_key: 43
+    title: "Relay Access Metadata and Requests"
+    status: ["draft", "optional", "relay"]
+    summary: "Permet à un relais de publier la liste de ses membres et les rôles qu'il leur attribue, et à un utilisateur de demander à le rejoindre avec un code d'invitation ou de le quitter. Ces événements sont signés par la clé propre au relais, déclarée dans son document NIP-11."
+    kinds: ["8000", "8001", "13534", "28934", "28935", "28936", "33534"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/43.md"
+  - id: "NIP-44"
+    sort_key: 44
+    title: "Encrypted Payloads (Versioned)"
+    status: ["optional"]
+    summary: "Définit le chiffrement des contenus privés sur Nostr, versionné pour pouvoir changer d'algorithme : la version 2 combine ECDH sur secp256k1, HKDF, bourrage, ChaCha20 et HMAC-SHA256. Il ne définit aucune messagerie et ne cache pas les métadonnées."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/44.md"
+  - id: "NIP-45"
+    sort_key: 45
+    title: "Event Counts"
+    status: ["draft", "optional", "relay"]
+    summary: "Ajoute la commande `COUNT`, qui demande à un relais le nombre d'événements correspondant à un filtre sans les télécharger, par exemple pour compter les abonnés d'un profil. Le relais peut renvoyer un nombre approximatif."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/45.md"
+  - id: "NIP-46"
+    sort_key: 46
+    title: "Nostr Remote Signing"
+    status: []
+    summary: "Décrit la signature à distance : la clé privée reste dans un signataire séparé, appelé *bunker* (un appareil dédié ou un serveur), et le client lui envoie ses demandes de signature par des messages chiffrés transmis via des relais. Moins il y a d'applications qui touchent la clé, moins elle est exposée."
+    kinds: ["24133"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/46.md"
+  - id: "NIP-47"
+    sort_key: 47
+    title: "Nostr Wallet Connect (NWC)"
+    status: ["draft", "optional"]
+    summary: "Définit Nostr Wallet Connect (NWC), un protocole qui relie une application à un portefeuille Lightning distant par des messages chiffrés passant par un relais. L'application peut payer ou créer une facture et consulter le solde, avec une clé dédiée à chaque connexion plutôt que la clé d'identité de l'utilisateur."
+    kinds: ["13194", "23194", "23195"]
+    related: ["nwc-nostr-wallet-connect"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/47.md"
+  - id: "NIP-48"
+    sort_key: 48
+    title: "Bridged events"
+    status: ["draft", "optional"]
+    summary: "Ajoute un *tag* `proxy` aux événements importés d'un autre protocole (ActivityPub, AT Protocol, RSS ou le web), qui renvoie vers l'objet d'origine. Les clients peuvent ainsi repérer les doublons ou afficher un lien vers la source."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/48.md"
+  - id: "NIP-49"
+    sort_key: 49
+    title: "Private Key Encryption (`ncryptsec`)"
+    status: ["draft", "optional"]
+    summary: "Définit le chiffrement d'une clé privée Nostr par un mot de passe, avec scrypt pour dériver la clé de chiffrement et XChaCha20-Poly1305 pour chiffrer. Le résultat s'encode en bech32 avec le préfixe `ncryptsec`, ce qui permet de sauvegarder ou de transférer sa clé sans l'exposer en clair."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/49.md"
+  - id: "NIP-50"
+    sort_key: 50
+    title: "Search Capability"
+    status: ["draft", "optional", "relay"]
+    summary: "Ajoute un champ `search` aux requêtes, qui demande au relais une recherche en texte libre dans les événements. Chaque relais choisit son algorithme et trie les résultats par pertinence plutôt que par date."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/50.md"
+  - id: "NIP-51"
+    sort_key: 51
+    title: "Lists"
+    status: ["draft", "optional"]
+    summary: "Définit les listes qu'un utilisateur peut créer : profils masqués, notes épinglées, signets, relais, centres d'intérêt, ensembles d'emojis et bien d'autres. Chaque élément peut être public, dans les *tags*, ou privé, chiffré avec le NIP-44 dans le contenu."
+    kinds: ["10000", "10001", "10002", "10003", "10004", "10005", "10006", "10007", "10008", "10009", "10012", "10015", "10020", "10021", "10030", "10050", "10054", "10064", "30000", "30002", "30003", "30004", "30005", "30006", "30007", "30008", "30015", "30030", "30063", "30267", "39089", "39092"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/51.md"
+  - id: "NIP-52"
+    sort_key: 52
+    title: "Calendar Events"
+    status: ["draft", "optional"]
+    summary: "Définit des événements de calendrier, à la journée ou à l'heure près, avec un lieu et des participants, que l'on peut regrouper dans des calendriers. Les invités répondent par un RSVP : accepté, refusé ou incertain."
+    kinds: ["31922", "31923", "31924", "31925"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/52.md"
+  - id: "NIP-53"
+    sort_key: 53
+    title: "Live Streaming and Spaces"
+    status: ["draft", "optional"]
+    summary: "Définit les diffusions en direct et les salons audio ou vidéo interactifs : un événement annonce l'activité, ses intervenants et son statut, et se met à jour pendant le direct. Il prévoit aussi le chat en direct et la présence des participants dans un salon."
+    kinds: ["1311", "10312", "30311", "30312", "30313"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/53.md"
+  - id: "NIP-54"
+    sort_key: 54
+    title: "Wiki"
+    status: ["draft", "optional"]
+    summary: "Définit des articles d'encyclopédie sur Nostr, rédigés en Djot : plusieurs auteurs peuvent écrire sur le même sujet, identifié par un titre normalisé, et c'est au lecteur et à son client de choisir la version à afficher. Il prévoit aussi les redirections et les demandes de fusion entre articles."
+    kinds: ["818", "30818", "30819"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/54.md"
+  - id: "NIP-55"
+    sort_key: 55
+    title: "Android Signer Application"
+    status: ["draft", "optional"]
+    summary: "Décrit comment une application Android de signature garde la clé privée de l'utilisateur et répond aux demandes des autres applications, ou des pages web, ouvertes sur le même appareil. Le client n'a jamais besoin de manipuler la clé."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/55.md"
+  - id: "NIP-56"
+    sort_key: 56
+    title: "Reporting"
+    status: ["optional"]
+    summary: "Définit le signalement d'un profil, d'une note ou d'un fichier jugé problématique : nudité, logiciel malveillant, propos haineux, contenu illégal, spam ou usurpation d'identité. Chaque utilisateur, client ou relais décide ensuite quoi en faire."
+    kinds: ["1984"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/56.md"
+  - id: "NIP-57"
+    sort_key: 57
+    title: "Lightning Zaps"
+    status: ["draft", "optional"]
+    summary: "Définit les *zaps*, des paiements Lightning liés à un profil ou à un événement Nostr. Le client envoie une demande de *zap* au serveur LNURL du destinataire, qui renvoie une facture, puis le portefeuille du destinataire publie un reçu une fois la facture payée."
+    kinds: ["9734", "9735"]
+    related: ["zap"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/57.md"
+  - id: "NIP-58"
+    sort_key: 58
+    title: "Badges"
+    status: ["draft", "optional"]
+    summary: "Définit des badges : un émetteur crée la définition d'un badge et l'attribue à une ou plusieurs clés publiques. Chaque utilisateur choisit ensuite quels badges reçus il affiche sur son profil, et un badge attribué ne se transfère pas."
+    kinds: ["8", "10008", "30008", "30009"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/58.md"
+  - id: "NIP-59"
+    sort_key: 59
+    title: "Gift Wrap"
+    status: ["optional", "relay"]
+    summary: "Définit l'emballage d'un événement en trois couches : une *rumor* non signée qui porte le contenu, un *seal* chiffré et signé par l'auteur, puis un *gift wrap* chiffré et signé par une clé jetable. Les relais ne voient ni le contenu ni le véritable auteur."
+    kinds: ["13", "1059", "21059"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/59.md"
+  - id: "NIP-60"
+    sort_key: 60
+    title: "Cashu Wallets"
+    status: ["draft", "optional"]
+    summary: "Définit un portefeuille d'*ecash* Cashu dont l'état est stocké sur des relais, pour qu'il suive l'utilisateur d'une application à l'autre. Les jetons non dépensés et l'historique des dépenses y sont chiffrés avec la clé de l'utilisateur."
+    kinds: ["7374", "7375", "7376", "17375"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/60.md"
+  - id: "NIP-61"
+    sort_key: 61
+    title: "Nutzaps"
+    status: ["draft", "optional"]
+    summary: "Définit le *nutzap*, un jeton Cashu verrouillé (P2PK) sur une clé dédiée du destinataire, où le paiement sert lui-même de reçu. Le destinataire publie les *mints* qu'il accepte et la clé à utiliser, puis son client encaisse les jetons reçus."
+    kinds: ["9321", "10019"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/61.md"
+  - id: "NIP-62"
+    sort_key: 62
+    title: "Request to Vanish"
+    status: ["draft", "optional", "relay"]
+    summary: "Permet à un utilisateur de demander à un relais, ou à tous les relais, d'effacer tous les événements publiés avec sa clé jusqu'à la date de la demande. Les relais qui appliquent ce NIP doivent les supprimer pour de bon, car la procédure a une valeur légale dans certaines juridictions."
+    kinds: ["62"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/62.md"
+  - id: "NIP-64"
+    sort_key: 64
+    title: "Chess (Portable Game Notation)"
+    status: ["draft", "optional"]
+    summary: "Définit des notes qui contiennent une partie d'échecs au format PGN (*Portable Game Notation*), lisible par un humain et par la plupart des logiciels d'échecs. Les clients devraient l'afficher sous forme d'échiquier."
+    kinds: ["64"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/64.md"
+  - id: "NIP-65"
+    sort_key: 65
+    title: "Relay List Metadata"
+    status: ["draft", "optional"]
+    summary: "Permet à un utilisateur d'annoncer les relais où il publie (*write*) et ceux où il lit les mentions qui le concernent (*read*). Pour récupérer les notes d'un auteur, un client interroge ses relais d'écriture, et pour le mentionner, il publie aussi sur ses relais de lecture."
+    kinds: ["10002"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/65.md"
+  - id: "NIP-66"
+    sort_key: 66
+    title: "Relay Liveness Monitoring"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit des événements publiés par des moniteurs qui sondent les relais et décrivent ce qu'ils observent : temps de réponse, type de réseau (clearnet, Tor...), NIP pris en charge, conditions d'accès. Un moniteur peut aussi annoncer son service et la fréquence de ses mesures."
+    kinds: ["10166", "30166"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/66.md"
+  - id: "NIP-67"
+    sort_key: 67
+    title: "EOSE Completeness Hint"
+    status: ["draft", "optional"]
+    summary: "Ajoute au message `EOSE` un indicateur facultatif par lequel le relais signale qu'il a envoyé tous les événements stockés qui correspondent à la requête. Le client sait alors s'il doit demander la suite, au lieu de le deviner d'après le nombre d'événements reçus."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/67.md"
+  - id: "NIP-68"
+    sort_key: 68
+    title: "Picture-first feeds"
+    status: ["draft", "optional"]
+    summary: "Définit des publications centrées sur l'image, pour des clients dans l'esprit d'Instagram ou de Flickr : chaque événement contient une ou plusieurs images hébergées ailleurs et décrites par des *tags* `imeta`, avec un titre et une description."
+    kinds: ["20"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/68.md"
+  - id: "NIP-69"
+    sort_key: 69
+    title: "Peer-to-peer Order events"
+    status: ["draft", "optional"]
+    summary: "Définit un format commun pour les ordres d'achat et de vente de bitcoins de pair à pair contre une monnaie fiduciaire : montant, devise, moyen de paiement, statut. Les plateformes P2P qui l'adoptent mettent leurs ordres en commun, ce qui augmente la liquidité disponible pour chacune."
+    kinds: ["38383"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/69.md"
+  - id: "NIP-70"
+    sort_key: 70
+    title: "Protected Events"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit le *tag* `[\"-\"]`, qui marque un événement comme protégé : seul son auteur peut le publier sur un relais, après s'être authentifié avec le NIP-42. Cela permet de limiter la diffusion d'un événement à certains relais, par exemple ceux d'une communauté fermée."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/70.md"
+  - id: "NIP-71"
+    sort_key: 71
+    title: "Video Events"
+    status: ["draft", "optional"]
+    summary: "Définit des publications vidéo pour des clients dans l'esprit de YouTube ou de TikTok, avec deux formats : la vidéo classique, plutôt horizontale, et la vidéo courte, plutôt verticale. Le fichier est hébergé ailleurs, et des versions adressables permettent de corriger les métadonnées après publication."
+    kinds: ["21", "22", "34235", "34236"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/71.md"
+  - id: "NIP-72"
+    sort_key: 72
+    title: "Moderated Communities (Reddit Style)"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Définit des communautés publiques dans l'esprit de Reddit : un événement décrit la communauté et ses modérateurs, les membres y publient et les modérateurs approuvent les publications. En 2026, le dépôt conseille le NIP-29 à la place."
+    kinds: ["4550", "34550"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/72.md"
+  - id: "NIP-73"
+    sort_key: 73
+    title: "External Content IDs"
+    status: ["draft", "optional"]
+    summary: "Standardise la façon de citer dans un événement un contenu identifié hors de Nostr : URL, livre (ISBN), geohash, pays, film (ISAN), article scientifique (DOI), podcast, transaction ou adresse sur une blockchain. Les clients peuvent ainsi retrouver tous les événements qui parlent d'un même contenu."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/73.md"
+  - id: "NIP-75"
+    sort_key: 75
+    title: "Zap Goals"
+    status: ["draft", "optional"]
+    summary: "Définit une cagnotte : un événement qui fixe un objectif de collecte en millisatoshis, que chacun alimente en envoyant des *zaps*. Une date de clôture facultative arrête le décompte des contributions."
+    kinds: ["9041"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/75.md"
+  - id: "NIP-77"
+    sort_key: 77
+    title: "Negentropy Syncing"
+    status: ["draft", "optional", "relay"]
+    summary: "Définit une synchronisation d'événements entre un client et un relais, ou entre deux relais, fondée sur le protocole Negentropy et la réconciliation d'ensembles par intervalles. Quand les deux côtés partagent déjà beaucoup d'événements, elle consomme bien moins de bande passante que l'envoi de tous les événements, ou même de leurs identifiants."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/77.md"
+  - id: "NIP-78"
+    sort_key: 78
+    title: "Arbitrary custom app data"
+    status: ["draft", "optional", "relay"]
+    summary: "Permet à une application de stocker ses propres données sur les relais choisis par l'utilisateur, à la manière de remoteStorage, sans chercher l'interopérabilité avec d'autres applications. Le contenu et les *tags* sont libres."
+    kinds: ["78", "30078"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/78.md"
+  - id: "NIP-84"
+    sort_key: 84
+    title: "Highlights"
+    status: ["draft", "optional"]
+    summary: "Définit le surlignage : un événement qui reprend un passage qu'un utilisateur juge intéressant, tiré d'une note, d'un article ou d'une source extérieure à Nostr. Il peut citer l'auteur d'origine, donner le contexte du passage et ajouter un commentaire."
+    kinds: ["9802"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/84.md"
+  - id: "NIP-85"
+    sort_key: 85
+    title: "Trusted Assertions"
+    status: ["draft", "optional"]
+    summary: "Permet de confier à des fournisseurs de service les calculs de réseau de confiance (*web of trust*) trop lourds pour un client, comme un score attribué à un profil. Le fournisseur publie ses résultats dans des événements signés, et l'utilisateur déclare quels fournisseurs il retient."
+    kinds: ["10040", "30382", "30383", "30384"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/85.md"
+  - id: "NIP-86"
+    sort_key: 86
+    title: "Relay Management API"
+    status: ["draft", "optional"]
+    summary: "Définit une API de gestion de relais, de type JSON-RPC sur HTTP, à la même adresse que le relais. Un administrateur peut ainsi bannir ou autoriser des clés publiques, lister les bannissements ou modérer des événements, avec des requêtes authentifiées par le NIP-98."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/86.md"
+  - id: "NIP-87"
+    sort_key: 87
+    title: "Cashu and Fedimint Discoverability"
+    status: ["draft", "optional"]
+    summary: "Permet aux opérateurs de *mints* Cashu et de fédérations Fedimint d'annoncer leur service et ses fonctions, et aux utilisateurs de recommander ceux qu'ils utilisent. Un utilisateur peut ainsi choisir un *mint* d'après les recommandations des personnes qu'il suit."
+    kinds: ["38000", "38172", "38173"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/87.md"
+  - id: "NIP-88"
+    sort_key: 88
+    title: "Polls"
+    status: ["draft", "optional"]
+    summary: "Définit des sondages à choix unique ou multiple, avec une date de fin et une liste de relais où envoyer les réponses. Chaque réponse est un événement qui renvoie au sondage et à l'option choisie."
+    kinds: ["1018", "1068"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/88.md"
+  - id: "NIP-89"
+    sort_key: 89
+    title: "Recommended Application Handlers"
+    status: ["draft", "optional"]
+    summary: "Permet à une application d'annoncer les types d'événements qu'elle sait afficher, et aux utilisateurs de recommander une application pour chaque type. Un client qui tombe sur un événement qu'il ne connaît pas peut ainsi proposer une application adaptée."
+    kinds: ["31989", "31990"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/89.md"
+  - id: "NIP-90"
+    sort_key: 90
+    title: "Data Vending Machine"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Définit un marché de calcul à la demande : un client publie une tâche (transcription, résumé...) et ce qu'il est prêt à payer, et des prestataires concurrents la réalisent. En 2026, le dépôt le déconseille, parce que le format est parti dans tous les sens, et préfère des standards propres à chaque usage."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/90.md"
+  - id: "NIP-92"
+    sort_key: 92
+    title: "Media Attachments Metadata (`imeta`)"
+    status: []
+    summary: "Définit le *tag* `imeta`, qui décrit un fichier joint à un événement dont l'URL figure dans le contenu : type, dimensions, empreinte, texte alternatif, aperçu flou. Le client peut s'en servir pour afficher un aperçu plus riche."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/92.md"
+  - id: "NIP-94"
+    sort_key: 94
+    title: "File Metadata"
+    status: ["draft", "optional"]
+    summary: "Définit un événement qui décrit un fichier partagé : URL de téléchargement, type MIME, empreinte SHA-256, taille, dimensions et aperçu. Il vise les clients de partage de fichiers, pas les clients sociaux centrés sur les notes."
+    kinds: ["1063"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/94.md"
+  - id: "NIP-96"
+    sort_key: 96
+    title: "HTTP File Storage Integration"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Définit une API REST pour envoyer des fichiers vers des serveurs de stockage HTTP et les citer ensuite dans des notes Nostr, avec une authentification par le NIP-98. En 2026, le dépôt le déconseille au profit de Blossom, décrit dans le NIP-B7."
+    kinds: ["10096"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/96.md"
+  - id: "NIP-98"
+    sort_key: 98
+    title: "HTTP Auth"
+    status: ["draft", "optional"]
+    summary: "Permet de s'authentifier auprès d'un serveur HTTP avec un événement Nostr signé, encodé en base64 dans l'en-tête `Authorization`. L'événement précise l'URL et la méthode de la requête, et le serveur vérifie qu'il est récent (60 secondes suggérées)."
+    kinds: ["27235"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/98.md"
+  - id: "NIP-99"
+    sort_key: 99
+    title: "Classified Listings"
+    status: ["draft", "optional"]
+    summary: "Définit des petites annonces (biens, services, offres d'emploi, locations, dons) rédigées en Markdown, avec un prix, un lieu et des catégories. Le NIP-15, plus rigide, renvoie vers ce format plus simple et plus souple."
+    kinds: ["30402", "30403"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/99.md"
+  - id: "NIP-5A"
+    sort_key: 1090
+    title: "Static Websites (nsites)"
+    status: ["draft", "optional"]
+    summary: "Permet d'héberger un site web statique sous une clé Nostr : un événement manifeste associe chaque chemin du site à l'empreinte SHA-256 d'un fichier stocké sur des serveurs Blossom. Une clé peut avoir un site racine et des sites nommés, comparables à des sous-domaines."
+    kinds: ["5128", "15128", "34128", "35128"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/5A.md"
+  - id: "NIP-7D"
+    sort_key: 1125
+    title: "Forum Threads"
+    status: ["draft", "optional"]
+    summary: "Définit le fil de discussion de forum (*kind* 11), qui porte de préférence un titre. Les réponses utilisent les commentaires du NIP-22 et s'adressent toujours au message d'origine, pour éviter les arborescences de réponses imbriquées."
+    kinds: ["11"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/7D.md"
+  - id: "NIP-A0"
+    sort_key: 1160
+    title: "Voice Messages"
+    status: ["draft"]
+    summary: "Définit les messages vocaux courts, d'une minute au plus en principe, publiés comme un lien vers un fichier audio, de préférence au format M4A. Les réponses vocales suivent la structure des commentaires du NIP-22."
+    kinds: ["1222", "1244"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/A0.md"
+  - id: "NIP-A3"
+    sort_key: 1163
+    title: "payto: Payment Targets"
+    status: ["draft", "optional"]
+    summary: "Permet à un utilisateur de publier ses moyens de paiement, sur n'importe quel réseau ou service : adresse bitcoin, *silent payments* (BIP-0352), adresse Lightning, PayPal... Le client les affiche en liens, avec le schéma d'URI propre au réseau quand il existe, sinon le schéma `payto://` de la RFC 8905."
+    kinds: ["10133"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/A3.md"
+  - id: "NIP-A4"
+    sort_key: 1164
+    title: "Public Messages"
+    status: ["draft", "optional"]
+    summary: "Définit un message public simple (*kind* 24) adressé à un ou plusieurs utilisateurs, pensé pour s'afficher et recevoir une réponse depuis l'écran des notifications. Il n'y a ni historique ni fil de discussion : chaque message est indépendant, et tout le monde peut le lire."
+    kinds: ["24"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/A4.md"
+  - id: "NIP-B0"
+    sort_key: 1176
+    title: "Web Bookmarking"
+    status: ["draft", "optional"]
+    summary: "Définit le signet web : un événement modifiable qui enregistre une URL avec une description, un titre et des mots-clés. Les réponses passent par les commentaires du NIP-22."
+    kinds: ["39701"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/B0.md"
+  - id: "NIP-B7"
+    sort_key: 1183
+    title: "Blossom media"
+    status: ["draft", "optional"]
+    summary: "Explique comment les clients Nostr utilisent Blossom, un ensemble de standards pour des serveurs qui stockent des fichiers identifiés par leur empreinte SHA-256. Quand un lien vers un fichier ne répond plus, le client cherche le même fichier sur les autres serveurs déclarés par l'auteur, puis vérifie son empreinte."
+    kinds: ["10063", "24242"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/B7.md"
+  - id: "NIP-BE"
+    sort_key: 1190
+    title: "Nostr BLE Communications Protocol"
+    status: ["draft", "unrecommended", "optional"]
+    summary: "Décrit comment des applications Nostr communiquent et se synchronisent en Bluetooth Low Energy, en reprenant les messages du NIP-01. En 2026, le dépôt le déconseille : il n'a été implémenté qu'une fois et son fonctionnement reste à vérifier."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/BE.md"
+  - id: "NIP-C0"
+    sort_key: 1192
+    title: "Code Snippets"
+    status: ["draft", "optional"]
+    summary: "Définit un événement pour partager un extrait de code, avec des métadonnées propres : langage, nom de fichier, description, environnement d'exécution, licence, dépôt d'origine. Les clients peuvent ainsi colorer la syntaxe et mieux retrouver les extraits."
+    kinds: ["1337"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/C0.md"
+  - id: "NIP-C7"
+    sort_key: 1199
+    title: "Chats"
+    status: ["draft", "optional"]
+    summary: "Définit le message de discussion (*kind* 9), pour des clients qui affichent une conversation comme un flux de messages ordonnés. Une réponse est un autre message qui cite le précédent avec un *tag* `q`."
+    kinds: ["9"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/C7.md"
+  - id: "NIP-CC"
+    sort_key: 1204
+    title: "Geocaching Events"
+    status: ["draft", "optional"]
+    summary: "Définit le géocaching sur Nostr : une cache est décrite par un événement qui donne son emplacement, sa difficulté, son terrain et sa taille, et les joueurs publient leurs comptes rendus de visite. Il prévoit aussi une preuve de découverte et des listes de caches."
+    kinds: ["7516", "7517", "37516", "37517"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/CC.md"
+  - id: "NIP-CD"
+    sort_key: 1205
+    title: "Commands"
+    status: ["draft", "optional"]
+    summary: "Permet à un service de publier des commandes que n'importe qui invoque en écrivant du texte simple dans un événement, comme les commandes `/` des messageries. La définition donne le déclencheur, la description, les arguments et la portée de chaque commande."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/CD.md"
+  - id: "NIP-EE"
+    sort_key: 1238
+    title: "E2EE Messaging using the Messaging Layer Security (MLS) Protocol"
+    status: ["final", "unrecommended", "optional"]
+    summary: "Décrit une messagerie chiffrée de bout en bout, à deux ou en groupe, fondée sur le protocole MLS (*Messaging Layer Security*, RFC 9420), qui apporte la confidentialité persistante. En 2026, le dépôt le déconseille : le protocole Marmot, développé hors du dépôt, l'a remplacé."
+    kinds: []
+    url: "https://github.com/nostr-protocol/nips/blob/master/EE.md"
+  - id: "NIP-F4"
+    sort_key: 1244
+    title: "Podcasts"
+    status: ["draft", "optional"]
+    summary: "Définit des podcasts publiés sur Nostr, avec un événement par épisode et un événement pour les métadonnées de l'émission, à la place d'un flux RSS. Le podcasteur ne dépend plus d'une adresse web ni d'un hébergeur, et les lecteurs peuvent paginer ou filtrer les épisodes."
+    kinds: ["54", "10154"]
+    url: "https://github.com/nostr-protocol/nips/blob/master/F4.md"
