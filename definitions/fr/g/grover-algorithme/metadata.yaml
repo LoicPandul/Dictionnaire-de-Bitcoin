@@ -10,4 +10,6 @@ cross_references:
   - "99c4221b-0b2d-47e5-b608-1d5610c85e9b"
   - "1d0eb004-0aa5-44d7-b6fd-5429fc2bac95"
   - "ef9e627f-c813-4684-9945-4cb59cf28b96"
+assets:
+  - filename: "image-1.png"
 version: "1"
