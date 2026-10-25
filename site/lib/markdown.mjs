@@ -56,7 +56,7 @@ export function createRenderer({ linker = null, label = (x) => x } = {}) {
         const size = current ? pngSize(path.join(current.sourceDir, local)) : null;
         const dims = size ? ` width="${size.width}" height="${size.height}"` : '';
         const caption = title ? `<figcaption>${escapeHtml(title)}</figcaption>` : '';
-        return `<figure class="figure"><a href="${escapeHtml(local)}" aria-label="Agrandir le schéma"><img src="${escapeHtml(local)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a>${caption}</figure>`;
+        return `<figure class="figure"><a href="${escapeHtml(local)}" aria-label="Agrandir le schéma"><img src="${escapeHtml(local)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a>${caption}<a class="figure-ouvrir" href="${escapeHtml(local)}">Agrandir le schéma</a></figure>`;
       },
       link({ href, title, tokens }) {
         const text = this.parser.parseInline(tokens);

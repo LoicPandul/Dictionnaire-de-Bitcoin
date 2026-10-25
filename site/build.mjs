@@ -56,9 +56,9 @@ const minCss = (css) => css
   .trim();
 // Le bloc « palette » du CSS est réécrit depuis config.mjs : c'est le seul endroit où vivent les couleurs.
 const JETONS = {
-  papier: 'papier', sable: 'sable', encre: 'encre', ardoise: 'ardoise', couverture: 'couv', os: 'os', gravure: 'gravure',
-  lavis: 'lavis', accent: 'surligneur', flottant: 'flottant-clair', ombre: 'ombre',
-  sombreFond: 'sombre-fond', sombreSurface: 'sombre-surface', sombreFlottant: 'sombre-flottant',
+  blanc: 'blanc', brume: 'brume', rose: 'rose', galet: 'galet', encre: 'encre', ecorce: 'ecorce', figue: 'figue',
+  figueSombre: 'figue-sombre', canopee: 'canopee', figueVive: 'figue-vive', figueClaire: 'figue-claire', nuit: 'nuit',
+  surfaceSombre: 'surface-sombre', ecorceSombre: 'ecorce-sombre', ombre: 'ombre',
 };
 function appliquerPalette(css) {
   const lignes = Object.entries(JETONS).map(([cle, nom]) => {
@@ -97,8 +97,8 @@ write('site.webmanifest', JSON.stringify({
   lang: 'fr',
   start_url: '/',
   display: 'standalone',
-  background_color: palette.papier,
-  theme_color: palette.couverture,
+  background_color: palette.blanc,
+  theme_color: palette.figue,
   icons: [
     { src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },

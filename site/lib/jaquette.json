@@ -1,0 +1,29 @@
+{
+ "jaquette": {
+  "largeur_pt": 902.26,
+  "hauteur_pt": 612.0,
+  "dos": 0.4389,
+  "tranche": 0.1222,
+  "avant": 0.4389
+ },
+ "titre": {
+  "corps": 0.16135,
+  "x": 0.06818,
+  "ligne1": 0.76058,
+  "ligne2": 0.85036,
+  "approche": -0.005
+ },
+ "sous_titre": {
+  "corps": 0.03743,
+  "ligne": 0.89839
+ },
+ "auteur": {
+  "corps": 0.03066,
+  "ligne": 0.95059,
+  "droite": 0.07636
+ },
+ "racines_bas_dos": 0.31,
+ "racines_bas_tranche": 0.24,
+ "couronne_avant": 0.235,
+ "upem": 1000
+}

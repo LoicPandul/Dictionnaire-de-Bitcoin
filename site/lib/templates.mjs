@@ -8,7 +8,8 @@ import { escapeHtml as h } from './markdown.mjs';
 import { compareFr } from './content.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const advances = JSON.parse(fs.readFileSync(path.join(here, 'cmu-advances.json'), 'utf8'));
+const advances = JSON.parse(fs.readFileSync(path.join(here, 'archivo-advances.json'), 'utf8'));
+const JAQ = JSON.parse(fs.readFileSync(path.join(here, 'jaquette.json'), 'utf8'));
 
 const nf = new Intl.NumberFormat('fr-FR');
 export const num = (n) => nf.format(n);
@@ -52,9 +53,9 @@ function pictoCollector() {
 }
 
 // ---------------------------------------------------------------- Vedettes
-// Largeur en em du titre composé en CMU (approche −0,01 em), pour la taille en unités de conteneur :
+// Largeur en em du titre composé en Archivo Titre (approche −0,02 em), pour la taille en unités de conteneur :
 // la plus petite largeur qui tient en deux lignes au plus (les coupures possibles : espace, « _ », « - »).
-const emWidth = (s) => [...s].reduce((w, ch) => w + (advances[ch] ?? 0.62) - 0.01, 0);
+const emWidth = (s) => [...s].reduce((w, ch) => w + (advances[ch] ?? 0.55) - 0.02, 0);
 export function headwordEm(raw) {
   const title = affiche(raw);
   const pieces = title.match(/[^ _-]+[_-]*\s*|[_-]+\s*|\s+/g) || [title];
@@ -69,13 +70,13 @@ export function headwordEm(raw) {
 }
 // Points de coupure après « _ » (le navigateur coupe déjà après « - » et les espaces).
 // Titres affichés : les codes hexadécimaux en « 0x » minuscule (« OP_RETURN - 0x6A »), comme on les écrit.
-export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1');
+export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ');
 const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
 export const fr = (t = '') => String(t).replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
 const hd = (t) => h(fr(t));
 // Dans une phrase, un titre ne se coupe pas à son trait d'union (« B-MONEY ») : trait d'union insécable.
-const insecable = (t) => h(affiche(t)).replace(/-/g, '\u2011');
+const insecable = (t) => h(affiche(t)).replace(/-/g, '\u2011').replace(/– /g, '–\u00a0');
 
 // Les mots d'une vedette, chacun dans son masque, pour qu'ils se posent l'un après l'autre.
 const headwordWords = (title) =>
@@ -85,7 +86,7 @@ const headwordWords = (title) =>
     .join(' ');
 
 // ---------------------------------------------------------------- Tête de page
-function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = palette.papier, type = 'website', preloadImage = '', extraJs = '' }) {
+function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = palette.blanc, type = 'website', preloadImage = '', extraJs = '' }) {
   const canonical = `${url}${p}`;
   return `<!doctype html>
 <html lang="fr">
@@ -107,15 +108,15 @@ function head({ title, description, path: p, jsonLd = '', math = false, assets, 
 <meta property="og:image" content="${url}/img/carte-sociale.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Dictionnaire de Bitcoin : l’arbre gravé de la couverture sur fond bleu nuit">
+<meta property="og:image:alt" content="Dictionnaire de Bitcoin : le banian de la couverture 2027, ses racines blanches sur fond figue">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Loic_Pandul">
 <meta name="author" content="${h(site.author)}">
-<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="/fonts/cmu-serif-roman.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/host-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 ${preloadImage}<link rel="stylesheet" href="${assets.css}">
 ${math ? '<link rel="stylesheet" href="/katex/katex.min.css">\n' : ''}<script src="${assets.js}" defer></script>
 ${extraJs ? `<script src="${extraJs}" defer></script>\n` : ''}${jsonLd}
@@ -137,7 +138,7 @@ function bar({ home = false, current = '' } = {}) {
   const cur = (k) => (current === k ? ' aria-current="page"' : '');
   return `<a class="evitement" href="#contenu">Aller au contenu</a>
 <header class="barre${home ? ' barre--jaquette' : ''}" data-barre>
-  <a class="marque" href="/"${home ? ' aria-current="page"' : ''}><span class="feuille" aria-hidden="true"></span><span class="marque-nom">Dictionnaire de Bitcoin</span></a>
+  <a class="marque" href="/"${home ? ' aria-current="page"' : ''}>Dictionnaire de Bitcoin</a>
   <nav class="nav" aria-label="Navigation principale">
     <a href="#lettres">Lettres</a>
     <a href="/#categories"${cur('categories')}>Catégories</a>
@@ -167,7 +168,7 @@ function menuDialog() {
     </div>
     <button class="menu-cherche" type="button" data-search-open>${loupe}<span>Rechercher un mot</span></button>
     <h3 class="menu-sous">Les lettres</h3>
-    <ol class="menu-az">${lettres}</ol>
+    <ol class="abc">${lettres}</ol>
     <h3 class="menu-sous">Les catégories</h3>
     <ul class="menu-cats">${cats}</ul>
     <ul class="menu-liens">
@@ -230,9 +231,9 @@ function footer(letters, total, { home = false } = {}) {
     : `<h2 class="dos-court">Toutes les lettres</h2>`;
   return `<footer class="dos${home ? '' : ' dos--court'}" id="lettres">
   ${tete}
-  <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="Toutes les lettres"><ol>${items}</ol></nav>
+  <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="Toutes les lettres"><ol class="abc">${items}</ol></nav>
   <div class="dos-pied">
-    <p class="dos-marque"><span class="feuille" aria-hidden="true"></span>${h(site.title)}, ${h(site.author)}, édition ${site.edition}</p>
+    <p class="dos-marque">${h(site.title)}, ${h(site.author)}, édition ${site.edition}</p>
     <ul class="dos-liens">
       <li><a href="${site.pdf}" download>PDF gratuit</a></li>
       <li><a href="${site.bitcoinBazar}" rel="noopener">Bitcoin Bazar</a></li>
@@ -241,7 +242,7 @@ function footer(letters, total, { home = false } = {}) {
       <li><a href="${site.authorUrl}" rel="author">pandul.fr</a></li>
       <li><a href="${site.authorX}" rel="noopener">X (Twitter)</a></li>
     </ul>
-    <p class="dos-legal">© ${year} ${h(site.author)}. Textes sous licence <a href="${site.licenseUrl}" rel="license noopener">${site.license}</a>. Polices CMU Serif et Host Grotesk sous licence OFL.</p>
+    <p class="dos-legal">© ${year} ${h(site.author)}. Textes sous licence <a href="${site.licenseUrl}" rel="license noopener">${site.license}</a>. Polices Archivo et Atkinson Hyperlegible Mono sous licence OFL.</p>
   </div>
 </footer>`;
 }
@@ -307,16 +308,18 @@ function groupEntries(defs, mode) {
     if (last && last.key === key) last.defs.push(d);
     else raw.push({ key, label, defs: [d] });
   }
-  if (mode !== 'deux') return raw;
-  // Fusion des groupes de moins de cinq mots avec leurs voisins (hors BIP) : « BA – BE ».
+  // Fusion des petits groupes avec leurs voisins (hors BIP) : « BA – BE » (deux lettres, moins de 5 mots)
+  // ou « J – L » (une lettre, moins de 4 mots dans une catégorie).
+  const seuil = mode === 'deux' ? 5 : 4;
   const out = [];
   for (const g of raw) {
     const prev = out.at(-1);
     const isBip = g.key.startsWith('BIP-');
-    if (prev && !isBip && !prev.bip && (prev.defs.length < 5 || g.defs.length < 5)) {
+    if (prev && !isBip && !prev.bip && (prev.defs.length < seuil || g.defs.length < seuil) && prev.defs.length + g.defs.length <= (mode === 'deux' ? 999 : 12)) {
       prev.defs.push(...g.defs);
       prev.last = g.label;
-    } else out.push({ ...g, bip: isBip, first: g.label, last: g.label });
+    } else out.push({ ...g, bip: isBip, first: g.label, last: g.label, keys: [] });
+    out.at(-1).keys.push(g.key);
   }
   for (const g of out) if (!g.bip) g.label = g.first === g.last ? g.first : `${g.first} – ${g.last}`;
   // Un libellé en double (« BI » avant et après les BIP) prend les trois premières lettres de ses mots.
@@ -379,13 +382,18 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
 </section>`
     : '';
 
+  const court = (t, n = 120) => {
+    if (!t || t.length <= n) return t;
+    const cut = t.lastIndexOf(' ', n);
+    return `${t.slice(0, cut > 60 ? cut : n).replace(/[\s,;:.]+$/, '')}…`;
+  };
   const turn = (d, dir) => {
     if (!d) return `<span class="tourner-vide"></span>`;
     const label = dir === 'prev' ? 'Mot précédent' : 'Mot suivant';
     return `<a class="tourner-lien tourner-lien--${dir}" href="/${d.slug}/" rel="${dir}" data-turn="${dir}">
   <span class="tourner-sens">${label}</span>
   <span class="tourner-nom">${breakable(d.title)}</span>
-  ${d.description ? `<span class="tourner-desc">${hd(d.description)}</span>` : ''}
+  ${d.description ? `<span class="tourner-desc">${hd(court(d.description))}</span>` : ''}
 </a>`;
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
@@ -404,7 +412,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   <div class="mot-marge">
     <figure class="signet" style="--pos:${((def.n - 0.5) / total * 100).toFixed(3)}%">
       <div class="signet-tranche" role="img" aria-label="Place de ce mot dans le livre : entrée ${num(def.n)} sur ${num(total)}"><span class="signet-ruban"></span></div>
-      <figcaption class="signet-legende">Entrée ${num(def.n)} sur ${num(total)} du dictionnaire, ${ordinal(def.n - (letters.get(letter)?.[0]?.n || 1) + 1)} mot de la lettre ${letter}</figcaption>
+      <figcaption class="signet-legende">Entrée ${num(def.n)} sur ${num(total)} du dictionnaire, ${ordinal(def.n - (letters.get(letter)?.[0]?.n || 1) + 1)} mot de la lettre\u00a0${letter}</figcaption>
     </figure>
     ${related}
   </div>
@@ -508,7 +516,8 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
   const groups = groupEntries(cat.defs, 'une');
   // Barre d'index collante : une entrée par groupe (lettres, et centaines pour les BIP).
   // Toutes les lettres restent à leur place (les absentes, désactivées) ; les BIP ajoutent leurs centaines.
-  const ancres = new Map(groups.map((g, i) => [g.key, `#groupe-${i + 1}`]));
+  const ancres = new Map();
+  groups.forEach((g, i) => (g.keys || [g.key]).forEach((k) => ancres.set(k, `#groupe-${i + 1}`)));
   const cases = [];
   for (const l of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
     cases.push(ancres.has(l) ? `<li><a href="${ancres.get(l)}">${l}</a></li>` : `<li><span class="absente" aria-hidden="true">${l}</span></li>`);
@@ -524,10 +533,6 @@ ${rayon}
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
   <h1 class="cat-nom">${h(label)}</h1>
   <p class="enonce cat-note" data-repliable-texte>${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire${note ? `. ${hd(note.replace(/\.$/, ''))}.` : '.'}</p>
-  <p class="cat-choix"><label for="cat-choix">Changer de catégorie</label>
-    <select id="cat-choix" data-cat-choix>
-      ${categories.map((c) => `<option value="/categorie/${c.slug}/"${c.slug === cat.slug ? ' selected' : ''}>${h(categoryLabel(c.name))} (${num(c.defs.length)})</option>`).join('')}
-    </select></p>
   <section class="cat-debut" aria-labelledby="debut-titre">
     <h2 class="cat-debut-titre" id="debut-titre">Pour commencer</h2>
     <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(d.description)}</span>` : ''}</a></li>`).join('')}</ul>
@@ -595,30 +600,52 @@ export function homePage(data, { assets, jsonLd }) {
     // Les deux premières phrases du fichier : un extrait, pas tout le texte.
     body: `${exemple.body.trim().split(/(?<=\.)\s+/).slice(0, 3).join(' ')} […]`,
   };
+  // Positions du titre sur l'avant : celles de la couverture imprimée (lib/jaquette.json),
+  // pour que les racines du banian se posent sur les lettres.
+  const t = JAQ.titre;
+  const asc = 0.834; // ligne de base sous le haut de ligne, en em (Archivo, interligne 1)
+  const vars = [
+    `--t-corps:${(t.corps * 100).toFixed(3)}cqw`, `--t-x:${(t.x * 100).toFixed(3)}cqw`,
+    `--t-l1:calc(${(t.ligne1 * 100).toFixed(3)}cqh - ${asc} * var(--t-corps))`,
+    `--t-l2:calc(${(t.ligne2 * 100).toFixed(3)}cqh - ${asc} * var(--t-corps))`,
+    `--s-corps:${(JAQ.sous_titre.corps * 100).toFixed(3)}cqw`,
+    `--s-l:calc(${(JAQ.sous_titre.ligne * 100).toFixed(3)}cqh - ${asc} * var(--s-corps))`,
+    `--a-corps:${(JAQ.auteur.corps * 100).toFixed(3)}cqw`,
+    `--a-l:calc(${(JAQ.auteur.ligne * 100).toFixed(3)}cqh - ${asc} * var(--a-corps))`,
+    `--a-d:${(JAQ.auteur.droite * 100).toFixed(3)}cqw`,
+    `--dos:${JAQ.jaquette.dos}`, `--tranche:${JAQ.jaquette.tranche}`, `--ratio:${(JAQ.jaquette.largeur_pt / JAQ.jaquette.hauteur_pt).toFixed(5)}`,
+  ].join(';');
+  const plein = '(min-width: 1024px) and (min-aspect-ratio: 4/3)';
+  const calque = (nom, alt = '') => `<picture class="jaquette-${nom}">
+      <source media="${plein}" type="image/avif" srcset="/img/jaquette-${nom}-1100.avif 1622w, /img/jaquette-${nom}-1600.avif 2359w" sizes="96vw">
+      <source media="${plein}" type="image/webp" srcset="/img/jaquette-${nom}-1100.webp 1622w, /img/jaquette-${nom}-1600.webp 2359w" sizes="96vw">
+      <source type="image/avif" srcset="/img/avant-${nom}-1100.avif 712w, /img/avant-${nom}-1600.avif 1035w" sizes="100vw">
+      <img src="/img/avant-${nom}-1100.webp" srcset="/img/avant-${nom}-1100.webp 712w, /img/avant-${nom}-1600.webp 1035w" sizes="100vw" width="712" height="1100" alt="${alt}"${nom === 'couronne' ? ' fetchpriority="high"' : ''} decoding="async">
+    </picture>`;
   const body = `<section class="jaquette" aria-labelledby="titre">
-  <div class="jaquette-couv">
-    <picture class="arbre">
-      <source type="image/avif" srcset="/img/arbre-1100.avif 754w, /img/arbre-1600.avif 1096w" sizes="(min-width: 1100px) 46vw, 100vw">
-      <img src="/img/arbre-1100.webp" srcset="/img/arbre-1100.webp 754w, /img/arbre-1600.webp 1096w" sizes="(min-width: 1100px) 46vw, 100vw" width="1096" height="1600" alt="L’arbre gravé de la couverture du livre, aux branches étalées, sur fond bleu nuit" fetchpriority="high" decoding="async">
-    </picture>
-    <h1 class="couv-titre" id="titre"><span class="ligne"><span>Dictionnaire</span></span> <span class="ligne"><span>de Bitcoin</span></span></h1>
-    <p class="couv-sous">Tout le vocabulaire technique de Bitcoin</p>
-    <form class="couv-recherche" role="search" action="/recherche/" method="get" data-hero-search>
-      <label class="masque" for="couv-q">Chercher un terme parmi les ${num(total)} définitions</label>
-      <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot, nonce…">
-      <button type="submit">Chercher</button>
-    </form>
-    <p class="couv-auteur">${h(site.author)}<br>${num(total)} définitions, édition ${site.edition}</p>
+  <div class="jaquette-objet" style="${vars}">
+    ${calque('couronne', 'La couverture de l’édition 2027 : la couronne d’un banian, aux feuilles figue sombre, sur fond figue')}
+    ${calque('racines')}
+    <div class="jaquette-couv">
+      <h1 class="couv-titre" id="titre"><span class="ligne ligne-1"><span>Dictionnaire</span></span> <span class="ligne ligne-2"><span>de Bitcoin</span></span></h1>
+      <p class="couv-sous">Tout le vocabulaire technique de Bitcoin</p>
+      <p class="couv-auteur"><span>${h(site.author)}</span> <span>Édition ${site.edition}</span></p>
+      <form class="couv-recherche" role="search" action="/recherche/" method="get" data-hero-search>
+        <label class="masque" for="couv-q">Chercher un terme parmi les ${num(total)} définitions</label>
+        <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot…">
+        <button type="submit">Chercher</button>
+      </form>
+    </div>
+    <div class="jaquette-tranche" aria-hidden="true"><span class="tranche-titre">Dictionnaire de Bitcoin</span><span class="tranche-an">${site.edition}</span></div>
+    <section class="jaquette-dos jour" aria-labelledby="jour-titre" data-jour>
+      <h2 class="jour-titre" id="jour-titre">Le mot du jour</h2>
+      <p class="jour-mot"><a href="/${f.slug}/" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
+      <p class="jour-cat"><a href="/categorie/${f.categorySlug}/" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
+      <p class="jour-desc" data-jour-desc>${hd(f.description || '')}</p>
+      <p class="jour-actions"><a class="bouton bouton--clair" href="/${f.slug}/" data-jour-lire>Lire la définition</a> <button class="bouton bouton--trait" type="button" data-jour-autre>Un autre mot</button></p>
+      <p class="jour-pied">${num(total)} définitions libres et gratuites, 19 catégories.</p>
+    </section>
   </div>
-  <div class="jaquette-tranche" aria-hidden="true"><span class="feuille"></span><span class="tranche-titre">Dictionnaire de Bitcoin</span><span class="tranche-an">${site.edition}</span></div>
-  <section class="jaquette-dos jour" aria-labelledby="jour-titre" data-jour>
-    <h2 class="jour-titre" id="jour-titre">Le mot du jour</h2>
-    <p class="jour-mot"><a href="/${f.slug}/" data-jour-lien><span data-jour-nom data-vt-nom>${breakable(f.title)}</span></a></p>
-    <p class="jour-cat"><a href="/categorie/${f.categorySlug}/" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
-    <p class="jour-desc" data-jour-desc>${hd(f.description || '')}</p>
-    <p class="jour-actions"><a class="bouton bouton--os" href="/${f.slug}/" data-jour-lire>Lire la définition</a> <button class="bouton bouton--lavis" type="button" data-jour-autre>Un autre mot</button></p>
-    <p class="jour-pied">${num(total)} définitions libres et gratuites, 19 catégories, 594 pages imprimées.</p>
-  </section>
 </section>
 
 <section class="feuilleter" aria-labelledby="feuilleter-titre" data-tranche>
@@ -646,20 +673,18 @@ export function homePage(data, { assets, jsonLd }) {
 
 <section class="livre" id="livre" aria-labelledby="livre-titre">
   <div class="livre-haut">
-    <figure class="livre-volume"><img src="/img/livre.webp" width="1120" height="1000" alt="Le Dictionnaire de Bitcoin imprimé, édition 2026, vu de trois quarts avec sa tranche" loading="lazy" decoding="async"></figure>
+    <figure class="livre-volume"><video muted loop playsinline preload="none" poster="/video/feuilletage.webp" width="320" height="494" aria-label="Les pages du livre imprimé qui défilent, de la lettre A à la lettre Z" data-boucle><source src="/video/feuilletage.mp4" type="video/mp4"></video></figure>
     <div class="livre-texte">
       <h2 class="titre" id="livre-titre">Le livre</h2>
-      <p class="enonce">Les ${num(total)} définitions existent aussi sur papier&#8239;: 594 pages, en broché ou en relié.</p>
+      <p class="enonce">Les définitions existent aussi sur papier&#8239;: l’édition 2026 compte 594 pages, en broché ou en relié. L’édition 2027 est en préparation.</p>
       <p class="livre-actions"><a class="bouton" href="${site.bitcoinBazar}" rel="noopener">Commander chez Bitcoin Bazar</a> <a class="lien" href="${site.amazon}" rel="noopener">ou sur Amazon</a></p>
       <p>Le PDF complet reste gratuit&#8239;: <a class="lien" href="${site.pdf}" download>télécharger le PDF</a> (2,7${NB}Mo).</p>
-      <p class="note">ISBN ${site.isbnPaperback} (broché), ${site.isbnHardcover} (relié). Je gagne une petite marge sur chaque exemplaire vendu&#8239;: c’est la meilleure façon de soutenir le projet.</p>
+      <p class="note">ISBN de l’édition 2026&#8239;: ${site.isbnPaperback} (broché), ${site.isbnHardcover} (relié). Je gagne une petite marge sur chaque exemplaire vendu&#8239;: c’est la meilleure façon de soutenir le projet.</p>
     </div>
   </div>
-  <div class="pages" aria-label="Six pages intérieures du livre">
+  <div class="pages" aria-label="Six pages intérieures de l’édition 2026">
     ${[[3, 'La page de titre du livre : Dictionnaire de Bitcoin, Tout le vocabulaire technique de Bitcoin, Loïc Morel'], [31, 'Page 5 du livre : les entrées ADDRMAN, ADDRV2 et ADRESSE DE RÉCEPTION'], [36, 'Page 10 du livre : les entrées ALERT SYSTEM, ALGORITHME, ALTCOIN et ALUVM'], [212, 'Page 186 du livre : les entrées CONSIGNMENT et CONSOLIDATION'], [467, 'Page 441 du livre : les entrées RÉCURSIF - COVENANT et REDEEM'], [516, 'Page 490 du livre : les entrées SIMPLIFIED PAYMENT VERIFICATION, SINGLE-SIG et SINGLE-USE SEAL']]
-      .map(([n, alt], i) => (i === 2
-        ? `<figure class="page-livre page-livre--film" style="--i:${i}"><video muted loop playsinline preload="none" poster="/video/feuilletage.webp" width="320" height="494" aria-label="Les pages du livre qui défilent, de la lettre A à la lettre Z" data-boucle><source src="/video/feuilletage.mp4" type="video/mp4"></video></figure>`
-        : `<figure class="page-livre" style="--i:${i}"><img src="/img/page-${n}.webp" width="600" height="927" alt="${h(alt)}" loading="lazy" decoding="async"></figure>`))
+      .map(([n, alt], i) => `<figure class="page-livre" style="--i:${i}"><img src="/img/page-${n}.webp" width="600" height="927" alt="${h(alt)}" loading="lazy" decoding="async"></figure>`)
       .join('\n    ')}
   </div>
 </section>
@@ -677,9 +702,9 @@ export function homePage(data, { assets, jsonLd }) {
   </div>
   <figure class="fichier" data-ui>
     <figcaption class="fichier-chemin"><code>${h(source.dir)}</code></figcaption>
-    <p class="fichier-nom">definition.md</p>
-    <pre class="fichier-texte"><code>${h(source.body)}</code></pre>
-    <p class="fichier-lien"><a class="lien" href="${site.github}/blob/main/${source.dir}definition.md" rel="noopener">Ouvrir ce fichier sur GitHub</a> <a class="lien" href="/${source.slug}/">Lire la définition</a></p>
+    <p class="fichier-nom">definition.md, le texte source en Markdown</p>
+    <pre class="fichier-texte"><code>${h(source.body).replace(/\*([^*]+)\*/g, '<span class="md">*</span><em>$1</em><span class="md">*</span>').replace(/`([^`]+)`/g, '<span class="md">`</span>$1<span class="md">`</span>')}</code></pre>
+    <ul class="fichier-liens"><li><a class="lien" href="${site.github}/blob/main/${source.dir}definition.md" rel="noopener">Ouvrir ce fichier sur GitHub</a></li><li><a class="lien" href="/${source.slug}/">Lire la définition rendue</a></li></ul>
   </figure>
 </section>`;
 
@@ -690,9 +715,9 @@ export function homePage(data, { assets, jsonLd }) {
       path: '/',
       jsonLd,
       assets,
-      themeColor: palette.couverture,
+      themeColor: palette.figue,
       extraJs: assets.home,
-      preloadImage: '<link rel="preload" as="image" type="image/avif" imagesrcset="/img/arbre-1100.avif 754w, /img/arbre-1600.avif 1096w" imagesizes="(min-width: 1100px) 46vw, 100vw" fetchpriority="high">\n',
+      preloadImage: '',
     },
     body,
     bodyClass: 'p-accueil',
@@ -712,13 +737,8 @@ export function searchPage({ assets, letters, total, categories }) {
   <form class="cherche-form" role="search" action="/recherche/" method="get" data-search-page>
     <label class="masque" for="cherche-q">Terme à chercher</label>
     ${loupe}
-    <input id="cherche-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot, nonce, clé publique…" aria-controls="cherche-resultats">
+    <input id="cherche-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot…" aria-controls="cherche-resultats">
   </form>
-  <p class="filtre-liste"><label for="cherche-cat">Catégorie</label>
-    <select id="cherche-cat" data-filtre-liste>
-      <option value="">Toutes les catégories</option>
-      ${categories.map((c) => `<option value="${c.slug}">${h(categoryLabel(c.name))}</option>`).join('')}
-    </select></p>
   <fieldset class="filtres" data-filtres>
     <legend class="masque">Filtrer par catégorie</legend>
     <label class="filtre"><input type="radio" name="cat" value="" checked><span>Toutes</span></label>
@@ -746,10 +766,10 @@ export function searchPage({ assets, letters, total, categories }) {
 export function notFoundPage({ assets, letters, total }) {
   const picto = pictoCollector();
   const body = `<section class="perdu" aria-labelledby="perdu-titre">
-  <picture class="perdu-arbre">
-    <source type="image/avif" srcset="/img/arbre-1100.avif">
-    <img src="/img/arbre-1100.webp" width="754" height="1100" alt="" decoding="async">
-  </picture>
+  <div class="perdu-arbre" aria-hidden="true">
+    <picture><source type="image/avif" srcset="/img/jaquette-couronne-1100.avif"><img src="/img/jaquette-couronne-1100.webp" width="1622" height="1100" alt="" decoding="async"></picture>
+    <picture><source type="image/avif" srcset="/img/jaquette-racines-1100.avif"><img src="/img/jaquette-racines-1100.webp" width="1622" height="1100" alt="" decoding="async"></picture>
+  </div>
   <div class="perdu-texte">
     <h1 class="perdu-titre" id="perdu-titre">Mot introuvable</h1>
     <p class="enonce">Ce mot n’est pas, ou pas encore, dans le dictionnaire&#8239;: l’adresse demandée ne correspond à aucune page.</p>
@@ -766,7 +786,7 @@ export function notFoundPage({ assets, letters, total }) {
   </div>
 </section>`;
   return page({
-    headOpts: { title: 'Page introuvable | Dictionnaire de Bitcoin', description: 'Cette page n’existe pas dans le Dictionnaire de Bitcoin.', path: '/404.html', assets, themeColor: palette.couverture },
+    headOpts: { title: 'Page introuvable | Dictionnaire de Bitcoin', description: 'Cette page n’existe pas dans le Dictionnaire de Bitcoin.', path: '/404.html', assets, themeColor: palette.figue },
     body,
     bodyClass: 'p-perdu',
     picto,

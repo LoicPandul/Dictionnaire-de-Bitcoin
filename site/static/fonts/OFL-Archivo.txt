@@ -1,14 +1,4 @@
-Copyright (C) Authors of original metafont fonts:
-Donald Ervin Knuth (cm, concrete fonts)
-1995, 1996, 1997 J"org Knappen, 1990, 1992 Norbert Schwarz (ec fonts)
-1992-2006 A.Khodulev, O.Lapko, A.Berdnikov, V.Volovich (lh fonts)
-1997-2005 Claudio Beccari (cb greek fonts)
-2002 FUKUI Rei (tipa fonts)
-2003-2005 Han The Thanh (Vietnamese fonts)
-1996-2005 Walter Schmidt (cmbright fonts)
-
-Copyright (C) 2003-2009, Andrey V. Panov (panov@canopus.iacp.dvo.ru),
-with Reserved Font Family Name "Computer Modern Unicode fonts".
+Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

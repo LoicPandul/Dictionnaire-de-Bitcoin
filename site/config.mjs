@@ -19,29 +19,29 @@ export const site = {
   isbnPaperback: '9798250570664',
   isbnHardcover: '9798251996579',
   lightning: 'sats@pandul.fr',
-  // Millésime affiché (couverture, colophon, données structurées). Les images du livre imprimé
-  // (static/img/livre.webp, couverture.webp, pages, vidéo) sont celles de l'édition 2026.
-  edition: '2026',
+  // Millésime affiché (jaquette, colophon, données structurées). Les pages et la vidéo du livre
+  // imprimé (static/img/page-*.webp, static/video/) restent celles de l'édition 2026, la seule parue.
+  edition: '2027',
 };
 
 // Palette du site : la seule source des couleurs. Le build en écrit les jetons CSS (bloc « palette »
 // en tête de static/css/site.css), la couleur de la barre des navigateurs et le manifeste.
-// Valeurs provisoires tirées de l'édition 2026 (couverture bleu nuit). À remplacer par la charte
-// de l'édition 2027 (design/charte-2027.md, branche feat/couverture-2027) dès qu'elle est arrêtée :
-// changer ces valeurs, relancer le build, rien d'autre à toucher.
+// Charte de l'édition 2027 (design/charte-2027.md, branche feat/couverture-2027) : Figue, banian.
+// Paires de texte interdites par la charte : Écorce sur Rose, Figue sur Nuit, tout texte sur Galet.
 export const palette = {
-  papier: '#F4F3F0', // fond des pages
-  sable: '#E3DFD6', // pas de ton entre surfaces
-  encre: '#193042', // texte, boutons, cartouches
-  ardoise: '#4F5F6E', // notes secondaires sur papier
-  couverture: '#193040', // couleur dominante : jaquette, dos, 404 (l'arbre s'y fond)
-  os: '#EBEAE6', // texte sur la couleur de couverture
-  gravure: '#A9BAC8', // traits et notes sur la couleur de couverture
-  lavis: '#22405A', // surfaces sur la couleur de couverture
-  accent: '#E9C46A', // seul accent : survol, sélection, correspondances
-  flottant: '#FBFAF8', // cartes et fenêtres qui flottent
-  ombre: '#09121A', // teinte des ombres portées et des voiles
-  sombreFond: '#0E1A24', // mode sombre : fond
-  sombreSurface: '#1F3548', // mode sombre : surfaces
-  sombreFlottant: '#1F3548', // mode sombre : cartes flottantes
+  blanc: '#FFFFFF', // fond du site, texte sur Figue
+  brume: '#FBF2F6', // surface secondaire (encadrés, code en ligne)
+  rose: '#F6D3E2', // fond léger d'un élément mis en avant, sélection de texte, correspondances
+  galet: '#D8D0D4', // champs et séparateurs de tableaux (jamais sous du texte)
+  encre: '#1E1A1D', // texte
+  ecorce: '#6B6368', // texte secondaire (5,82 : 1 sur Blanc)
+  figue: '#AA226A', // couleur de l'édition : liens, bouton, jaquette (6,67 : 1 avec Blanc)
+  figueSombre: '#691E47', // survol des liens et des boutons (11,19 : 1 avec Blanc)
+  canopee: '#4B2034', // feuillage le plus sombre : pied de page (13,50 : 1 avec Blanc)
+  figueVive: '#E12789', // figues ; grands textes seulement
+  figueClaire: '#F07DB8', // liens et bouton du mode sombre (7,30 : 1 sur Nuit)
+  nuit: '#2B0618', // fond du mode sombre
+  surfaceSombre: '#3B1026', // surfaces du mode sombre (Brume dessus 14,85 : 1)
+  ecorceSombre: '#A8979F', // texte secondaire du mode sombre (6,65 : 1 sur Nuit)
+  ombre: '#1E1A1D', // teinte des voiles des fenêtres
 };

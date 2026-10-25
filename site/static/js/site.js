@@ -143,21 +143,24 @@
     });
   }
 
-  // ------------------------------------------------------------ Jaquette : l'arbre suit doucement le curseur (profondeur)
-  const arbre = d.querySelector('.p-accueil .arbre');
-  if (arbre && matchMedia('(hover: hover) and (pointer: fine)').matches && !reduit.matches) {
-    const couv = arbre.closest('.jaquette');
+  // ------------------------------------------------------------ Jaquette : profondeur au curseur
+  // La couronne et les racines glissent de quelques pixels en sens opposés : la canopée flotte devant.
+  const objet = d.querySelector('.jaquette-objet');
+  if (objet && matchMedia('(hover: hover) and (pointer: fine)').matches && !reduit.matches) {
+    const couronne = objet.querySelector('.jaquette-couronne img');
+    const racines = objet.querySelector('.jaquette-racines img');
     let raf = 0;
-    couv.addEventListener('pointermove', (e) => {
+    objet.addEventListener('pointermove', (e) => {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
-        const r = couv.getBoundingClientRect();
+        const r = objet.getBoundingClientRect();
         const x = (e.clientX - r.left) / r.width - 0.5;
         const y = (e.clientY - r.top) / r.height - 0.5;
-        arbre.style.translate = `${(-x * 14).toFixed(1)}px ${(-y * 10).toFixed(1)}px`;
+        couronne.style.translate = `${(x * 8).toFixed(1)}px ${(y * 4).toFixed(1)}px`;
+        racines.style.translate = `${(-x * 5).toFixed(1)}px 0`;
       });
     });
-    couv.addEventListener('pointerleave', () => (arbre.style.translate = '0 0'));
+    objet.addEventListener('pointerleave', () => { couronne.style.translate = racines.style.translate = '0 0'; });
   }
 
   // ------------------------------------------------------------ Renvois entrants repliés au-delà de 12 (30 sur grand écran)
@@ -287,7 +290,7 @@
   d.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="/"]');
     if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target) return;
-    root.classList.remove('vt-tour', 'vt-morph');
+    root.classList.remove('vt-tour');
     d.querySelectorAll('[style*="view-transition-name"]').forEach((el) => el.style.removeProperty('view-transition-name'));
     if (a.dataset.turn) {
       try { sessionStorage.setItem('vt', a.dataset.turn === 'next' ? 'suivant' : 'precedent'); } catch {}
@@ -296,7 +299,7 @@
     }
   });
   addEventListener('pageshow', () => {
-    root.classList.remove('vt-tour', 'vt-morph');
+    root.classList.remove('vt-tour');
     d.querySelectorAll('[style*="view-transition-name"]').forEach((el) => el.style.removeProperty('view-transition-name'));
   });
   // Flèches du clavier : mot précédent ou suivant dans l'ordre du livre.
@@ -358,6 +361,13 @@
   // début du titre, début du terme anglais, début d'un mot du titre, puis milieu de mot et description,
   // gardés seulement quand les rangs forts donnent peu de résultats. Fautes de frappe en dernier recours.
   // À rang égal, le terme le plus renvoyé par les autres définitions passe devant.
+  // Mots anglais et formes courantes vers le vocabulaire du dictionnaire.
+  const SYNONYMES = {
+    wallet: 'portefeuille', seed: 'graine', key: 'cle', keys: 'cles', address: 'adresse', fee: 'frais', fees: 'frais',
+    mnemonic: 'phrase de recuperation', 'seed phrase': 'phrase de recuperation', '12 mots': 'phrase de recuperation',
+    '24 mots': 'phrase de recuperation', block: 'bloc', mining: 'minage', miner: 'mineur', node: 'noeud', channel: 'canal',
+    signature: 'signature', privacy: 'confidentialite', transaction: 'transaction', hash: 'hachage',
+  };
   function chercher(q, { cat = '', limite = 60 } = {}) {
     // « bip32 », « BIP 32 », « bip-0032 » : la forme du dictionnaire, BIP-0032.
     const bip = q.trim().match(/^bip\s*-?\s*(\d{1,4})$/i);
@@ -375,7 +385,9 @@
       let rang = 0;
       let at = -1;
       if (titre === pq || t.parts[0] === pq) { rang = 10; at = t.pt.indexOf(pq); }
+      else if (t.parts.includes(pq)) { rang = 9.5; at = t.pt.indexOf(pq); }
       else if (alt && alt === pq) rang = 9;
+      else if (` ${titre} `.includes(` ${pq} `)) { rang = 8.5; at = t.pt.indexOf(pq); }
       else if (t.pt.startsWith(pq)) { rang = 8; at = 0; }
       else if (cq.length > 1 && t.ct.startsWith(cq)) rang = 7;
       else if (alt && alt.startsWith(pq)) rang = 6;
@@ -388,6 +400,12 @@
       else if (pq.length > 2 && (t.pd.startsWith(pq) || t.pd.includes(` ${pq}`))) faibles.push({ t, rang: 1, at: -1 });
     }
     // Les correspondances faibles (milieu de mot, description) ne viennent que si les fortes sont rares.
+    // Synonymes : une requête anglaise ou courante cherche aussi sa forme du dictionnaire.
+    const syn = SYNONYMES[pq] || (mots.length > 1 ? mots.map((m) => SYNONYMES[m] || m).join(' ') : '');
+    if (syn && syn !== pq && !arguments[1]?.sansSynonyme) {
+      const vus = new Set(forts.concat(faibles).map((r) => r.t.slug));
+      for (const r of chercher(syn, { cat, limite: 30, sansSynonyme: true }).res) if (!vus.has(r.t.slug)) faibles.push({ ...r, rang: Math.min(r.rang, 3), at: -1 });
+    }
     let res = forts.length >= 5 ? forts : forts.concat(faibles);
     let approx = false;
     if (!res.length && cq.length > 2) {
@@ -395,6 +413,8 @@
       const max = cq.length < 6 ? 1 : 2;
       for (const t of index) {
         if (cat && t.cat[1] !== cat) continue;
+        // Une faute de frappe garde en général la première lettre : on ne propose rien d'autre.
+        if (t.ct[0] !== cq[0]) continue;
         const dist = Math.min(lev(cq, t.ct, max), lev(cq, t.ct.slice(0, cq.length), max) + 1);
         if (dist <= max) res.push({ t, rang: -dist, at: -1 });
       }
@@ -434,7 +454,7 @@
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="/lettre/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
     const cats = avecCategories && index?.categories ? `<p>Ou par catégorie&#8239;:</p><div class="cats-mini">${index.categories.map(([label, slug]) => `<a href="/categorie/${slug}/">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
-    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(affiche(n.title))}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="lettres-mini">${lettres}</div>${cats}</li>`;
+    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(affiche(n.title))}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="abc">${lettres}</div>${cats}</li>`;
   }
 
   function vide() {
@@ -561,7 +581,7 @@
     const sortie = d.querySelector('[data-search-results]');
     const statut = d.querySelector('[data-search-status]');
     const filtres = d.querySelector('[data-filtres]');
-    const select = d.querySelector('[data-filtre-liste]');
+    const select = null;
     const params = new URLSearchParams(location.search);
     input.value = params.get('q') || '';
     let cat = params.get('cat') || '';
@@ -588,6 +608,7 @@
         sortie.innerHTML = '';
         filtres.innerHTML = '';
         statut.textContent = `Tapez un terme : la recherche porte sur les ${index.length.toLocaleString('fr-FR')} définitions, leur terme anglais et leur description.`;
+        sortie.innerHTML = suggestions(true);
         return;
       }
       const tous = chercher(q, { limite: 2000 });
@@ -645,18 +666,21 @@
   // ------------------------------------------------------------ Aller à un groupe (téléphone), revenir en haut
   d.querySelector('[data-aller]')?.addEventListener('change', (e) => {
     const cible = d.querySelector(e.target.value);
-    if (cible) { cible.scrollIntoView({ behavior: reduit.matches ? 'auto' : 'smooth' }); cible.querySelector('a')?.focus({ preventScroll: true }); }
+    if (cible) { cible.scrollIntoView({ behavior: 'auto' }); cible.querySelector('a')?.focus({ preventScroll: true }); }
   });
   if (d.querySelector('.liste')) {
     const haut = d.createElement('button');
     haut.type = 'button';
     haut.className = 'haut';
-    haut.textContent = 'Haut';
+    haut.textContent = '↑';
     haut.setAttribute('aria-label', 'Revenir en haut de la page');
     haut.hidden = true;
     haut.addEventListener('click', () => { scrollTo({ top: 0, behavior: reduit.matches ? 'auto' : 'smooth' }); d.querySelector('h1')?.focus?.(); });
     d.body.append(haut);
-    addEventListener('scroll', () => { haut.hidden = scrollY < innerHeight * 2; }, { passive: true });
+    let piedVisible = false;
+    const pied = d.querySelector('.dos');
+    if (pied) new IntersectionObserver(([e]) => { piedVisible = e.isIntersecting; haut.hidden = piedVisible || scrollY < innerHeight * 2; }).observe(pied);
+    addEventListener('scroll', () => { haut.hidden = piedVisible || scrollY < innerHeight * 2; }, { passive: true });
   }
 
   // ------------------------------------------------------------ Présentation de catégorie repliée : « Lire la suite »
