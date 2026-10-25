@@ -1,0 +1,129 @@
+slug	type	source	licence
+acinq	logo	https://acinq.co/	non trouvée
+alby-hub	capture	https://github.com/getAlby/hub	logiciel sous licence Apache-2.0
+alby-hub	logo	https://github.com/getAlby/hub/blob/master/doc/logo.svg	dépôt sous licence Apache-2.0, logo dans `doc/`
+amboss	logo	https://amboss.tech/	non trouvée
+antpool	logo	https://www.antpool.com/	non trouvée
+aqua	capture	https://github.com/AquaWallet/aqua-wallet	logiciel sous licence MIT
+aqua	logo	https://jan3.com/media-kit	kit média JAN3 (archive Aqua), aucune condition écrite pour le logo Aqua
+bdk-bitcoin-dev-kit	logo	https://github.com/bitcoindevkit/bdk/blob/master/static/bdk.svg	dépôt sous licence MIT ou Apache-2.0 au choix, logo dans `static/`
+bisq	capture	https://github.com/bisq-network/bisq	logiciel sous licence AGPL-3.0
+bisq	logo	https://github.com/bisq-network/bisq/blob/master/Bisq1_icon.svg	dépôt sous licence AGPL-3.0, icône à la racine
+bitaxe	logo	https://github.com/bitaxeorg/ESP-Miner/blob/master/main/images/BitaxeLogoLarge.png	dépôt sous licence GPL-3.0, logo dans `main/images/`
+bitbox	logo	https://github.com/BitBoxSwiss/bitbox-wallet-app/blob/master/frontends/web/src/assets/bitbox-logo.png	dépôt de la BitBoxApp sous licence Apache-2.0, logo dans `frontends/web/src/assets/`
+bitcoin-core	capture	https://github.com/bitcoin/bitcoin	logiciel sous licence MIT, interface `bitcoin-qt`
+bitcoin-core	logo	https://github.com/bitcoin/bitcoin/blob/master/src/qt/res/src/bitcoin.svg	dépôt sous licence MIT, icône de l'application dans `src/qt/res/src/`
+bitcoin-keeper	capture	https://github.com/KeeperCommunity/bitcoin-keeper	logiciel sous licence MIT
+bitcoin-keeper	logo	https://github.com/KeeperCommunity/bitcoin-keeper/blob/sprint/src/assets/images/keeper-logo.svg	dépôt sous licence MIT, logo dans `src/assets/images/`
+bitcoin-knots	logo	https://github.com/bitcoinknots/bitcoin/blob/29.x-knots/src/qt/res/src/bitcoinknots-logo.svg	dépôt sous licence MIT, logo dans `src/qt/res/src/`
+bitcoin-magazine	logo	https://bitcoinmagazine.com/	non trouvée
+bitcoin-optech	logo	https://github.com/bitcoinops/bitcoinops.github.io/blob/master/img/logos/optech.png	dépôt du site sous licence MIT, logo dans `img/logos/`
+bitkey	logo	https://github.com/proto-at-block/bitkey/blob/main/app/ios/Wallet/Resources/Assets.xcassets/Other/BitkeyLogo.imageset/w1.svg	dépôt sous licence MIT (Block, Inc.), logo dans les ressources iOS
+bitkit	capture	https://github.com/synonymdev/bitkit	logiciel sous licence MIT
+bitkit	logo	https://bitkit.to/	non trouvée
+bitmain	logo	https://www.bitmain.com/	non trouvée
+bitrefill	logo	https://www.bitrefill.com/	non trouvée
+blink	logo	https://github.com/blinkbitcoin/blink-mobile/blob/main/.readme/blink-logo-white-bg.png	dépôt sous licence MIT, logo dans `.readme/`
+blixt-wallet	capture	https://github.com/smolcars/blixt-wallet	logiciel sous licence MIT
+blixt-wallet	logo	https://github.com/smolcars/blixt-wallet/blob/master/ios/BlixtWallet/Images.xcassets/AppIcon.appiconset/blixt-wallet-70-1024.png	dépôt sous licence MIT, icône de l'application iOS
+blockstream	logo	https://blockstream.com/assets/downloads/blockstream_assets/blockstream-logos.zip	archive de logos liée depuis blockstream.com/brand-assets, aucune condition écrite
+blue-wallet	capture	https://github.com/BlueWallet/BlueWallet	logiciel sous licence MIT
+blue-wallet	logo	https://github.com/BlueWallet/BlueWallet/blob/master/fastlane/metadata/android/en-US/images/icon.png	dépôt sous licence MIT, icône dans `fastlane/metadata/`
+boltz	capture	https://github.com/BoltzExchange/boltz-web-app	logiciel sous licence AGPL-3.0
+boltz	logo	https://github.com/BoltzExchange/boltz-web-app/blob/main/docs/public/assets/logo.svg	dépôt sous licence AGPL-3.0, logo dans `docs/public/assets/`
+braiins-pool	logo	https://braiins.com/pool	non trouvée
+breez	logo	https://breez.technology/	non trouvée
+btcmap	capture	https://github.com/teambtcmap/btcmap.org	logiciel sous licence AGPL-3.0, fond de carte OpenStreetMap à créditer
+btcmap	logo	https://btcmap.org/media	page média : éléments utilisables gratuitement à des fins promotionnelles
+btcpay-server	capture	https://github.com/btcpayserver/btcpayserver	logiciel sous licence MIT
+btcpay-server	logo	https://github.com/btcpayserver/btcpayserver-media/blob/master/btcpay-logo.svg	dépôt officiel des médias BTCPay sous licence MIT
+btrust	logo	https://www.btrust.tech/media	page média avec kit presse, aucune condition écrite
+bull-bitcoin	logo	https://www.bullbitcoin.com/	non trouvée
+cakewallet	capture	https://github.com/cake-tech/cake_wallet	logiciel sous licence MIT
+cakewallet	logo	https://github.com/cake-tech/cake_wallet/blob/dev/.github/assets/Logo_CakeWallet.png	dépôt sous licence MIT, logo dans `.github/assets/`
+canaan	logo	https://www.canaan.io/	non trouvée
+casa	logo	https://casa.io/	non trouvée
+chainalysis	logo	https://www.chainalysis.com/wp-content/uploads/2025/11/chainalysis-logos.zip	page média chainalysis.com/brand : seule consigne, couleurs selon le fond ; aucune licence écrite
+chaincode-labs	logo	https://chaincode.com/	non trouvée
+cln-core-lightning	logo	https://corelightning.org/	non trouvée
+coinkite	logo	https://coinkite.com/static/media-kit/coinkite-logo-main.zip	kit média coinkite.com/media-kit, aucune condition écrite
+coldcard	logo	https://coinkite.com/static/media-kit/coldcard-logo-main.zip	kit média coinkite.com/media-kit, aucune condition écrite
+eclair	logo	https://github.com/ACINQ/eclair/blob/master/.readme/logo.png	dépôt sous licence Apache-2.0, logo dans `.readme/`
+electrum	capture	https://github.com/spesmilo/electrum	logiciel sous licence MIT
+electrum	logo	https://github.com/spesmilo/electrum/blob/master/electrum/gui/icons/electrum.png	dépôt sous licence MIT, icône dans `electrum/gui/icons/`
+envoy	capture	https://github.com/Foundation-Devices/envoy	logiciel sous licence GPL-3.0-or-later (REUSE)
+envoy	logo	https://github.com/Foundation-Devices/envoy/blob/main/assets/envoy_logo_with_title.png	dépôt REUSE : `assets/` sous GPL-3.0-or-later, © Foundation Devices
+esplora	capture	https://github.com/Blockstream/esplora	logiciel sous licence MIT
+f2pool	logo	https://www.f2pool.com/	non trouvée
+foundation-devices	logo	https://foundation.xyz/	non trouvée
+foundry-usa	logo	https://foundrydigital.com/	non trouvée
+fountain	logo	https://fountain.fm/	non trouvée
+frostsnap	logo	https://github.com/frostsnap/frostsnap/blob/master/frostsnapp/assets/frostsnap-logo.svg	dépôt sous licence MIT, logo dans `frostsnapp/assets/`
+green-wallet	capture	https://github.com/Blockstream/green_android	logiciel sous licence GPL-3.0
+green-wallet	logo	https://github.com/Blockstream/green_android/blob/master/androidApp/src/main/ic_launcher-playstore.png	dépôt sous licence GPL-3.0, icône de l'application Android
+hodl-hodl	logo	https://hodlhodl.com/	non trouvée
+human-rights-foundation	logo	https://hrf.org/	non trouvée
+jam	capture	https://github.com/joinmarket-webui/jam	logiciel sous licence MIT
+jan3	logo	https://jan3.com/media-kit	kit média : ne pas modifier les lettres, garder le « 3 », marge blanche autour du logo
+joinmarket	logo	https://github.com/JoinMarket-Org/joinmarket-clientserver/blob/master/docs/images/joinmarket_logo.png	dépôt archivé sous licence GPL-3.0, logo dans `docs/images/`
+ledger-entreprise	logo	https://www.ledger.com/press	kit presse (zip, octobre 2025) : marques de Ledger SAS, aucune condition d'usage écrite
+liana	capture	https://github.com/wizardsardine/liana	logiciel sous licence BSD-3-Clause
+liana	logo	https://github.com/wizardsardine/liana/blob/master/liana-ui/static/logos/LIANA_BRAND_Green.svg	dépôt sous licence BSD-3-Clause, logos dans `liana-ui/static/logos/`
+lightning-labs	logo	https://lightning.engineering/	non trouvée
+lightning-terminal	capture	https://github.com/lightninglabs/lightning-terminal	logiciel sous licence MIT
+lightning-terminal	logo	https://github.com/lightninglabs/lightning-terminal/blob/master/app/src/assets/images/logo.svg	dépôt sous licence MIT, logo dans `app/src/assets/images/`
+lightspark	logo	https://www.lightspark.com/logo-usage	guide du logo : ne pas déformer, contourer, incliner ni ajouter d'effet
+lnbits	capture	https://github.com/lnbits/lnbits	logiciel sous licence MIT
+lnbits	logo	https://github.com/lnbits/lnbits/blob/dev/docs/logos/lnbits.svg	dépôt sous licence MIT, logos dans `docs/logos/`
+lnd	logo	https://github.com/lightningnetwork/lnd/blob/master/logo.png	dépôt sous licence MIT, logo à la racine
+lnp2pbot	logo	https://github.com/lnp2pBot/bot/blob/main/logo-600.png	dépôt sous licence MIT, logo à la racine
+luxor	logo	https://www.luxor.tech/	non trouvée
+machankura	logo	https://8333.mobi/brand	page de marque : logos SVG, ne pas accoler le mot Machankura (écrire 8333.mobi), aucune licence écrite
+mara	logo	https://www.mara.com/	non trouvée
+mempool-space	capture	https://github.com/mempool/mempool	logiciel sous licence AGPL-3.0, logos visibles à l'écran soumis à la politique de marque de Mempool
+mempool-space	logo	https://github.com/mempool/mempool/blob/master/frontend/src/resources/mempool-space-logo-horizontal.png	code sous AGPL-3.0, mais les logos sont des marques déposées de Mempool Holdings exclues de la licence (voir mempool.space/trademark-policy)
+mynode	logo	https://github.com/mynodebtc/mynode/blob/master/rootfs/standard/var/www/mynode/static/images/logo.png	dépôt sous CC BY-NC-ND 4.0 modifiée (section 9) : ni usage commercial ni modification
+nunchuk	capture	https://github.com/nunchuk-io/nunchuk-android	logiciel sous licence GPL-3.0
+nunchuk	logo	https://nunchuk.io/	non trouvée
+ocean	logo	https://ocean.xyz/	non trouvée
+opennode	logo	https://opennode.com/	non trouvée
+opensats	logo	https://opensats.org/media-kit	kit média (SVG, PNG, zip), aucune condition écrite ; dépôt du site sous licence MIT
+peach	capture	https://github.com/Peach2Peach/peach-app	logiciel sous licence MIT avec Commons Clause, vente interdite
+peach	logo	https://github.com/Peach2Peach/peach-app/blob/main/src/assets/logo/fullLogo.svg	dépôt sous licence MIT avec Commons Clause (vente interdite), logo dans `src/assets/logo/`
+phoenix	capture	https://github.com/ACINQ/phoenix	logiciel sous licence Apache-2.0
+phoenix	logo	https://github.com/ACINQ/phoenix/blob/master/phoenix-ios/phoenix-ios/Assets.xcassets/AppIcon-Blue.appiconset/logo_1024.png	dépôt sous licence Apache-2.0, icône de l'application iOS
+polar	capture	https://github.com/jamaljsr/polar	logiciel sous licence MIT
+polar	logo	https://github.com/jamaljsr/polar/blob/master/src/resources/logo.png	dépôt sous licence MIT, logo dans `src/resources/`
+proton-wallet	logo	https://github.com/ProtonWallet/flutter-app/blob/master/assets/images/wallet_creation/proton_wallet_logo_light.svg	dépôt sous licence GPL-3.0 ; kit média Proton : usage libre si le contenu renvoie à proton.me
+raspiblitz	capture	https://github.com/raspiblitz/raspiblitz	logiciel sous licence MIT
+raspiblitz	logo	https://github.com/raspiblitz/raspiblitz/blob/dev/home.admin/BlitzTUI/images/RaspiBlitz_Logo_Main.png	dépôt sous licence MIT, logos dans `home.admin/BlitzTUI/images/`
+riot-platforms	logo	https://www.riotplatforms.com/wp-content/uploads/2026/05/riot-logo.png	fichier du site officiel, pas de kit presse ni de condition écrite
+risc-zero	logo	https://github.com/risc0/risc0/blob/main/website/static/img/logo.svg	dépôt sous licence Apache-2.0, logo dans `website/static/img/`
+robosats	capture	https://github.com/RoboSats/robosats	logiciel sous licence AGPL-3.0
+robosats	logo	https://github.com/RoboSats/robosats/blob/main/desktopApp/assets/icon/Robosats.svg	dépôt sous licence AGPL-3.0, icône dans `desktopApp/assets/icon/`
+rtl-ride-the-lightning	capture	https://github.com/Ride-The-Lightning/RTL	logiciel sous licence MIT, captures d'exemple dans `.github/screenshots/`
+rust-bitcoin	logo	https://github.com/rust-bitcoin/rust-bitcoin/blob/master/logo/rust-bitcoin.png	dépôt sous CC0-1.0, logos dans `logo/`
+satochip	logo	https://satochip.io/media-kit	kit média : pas de modification, attribution à Satochip, accord préalable pour un usage publicitaire, autorisation révocable
+satscard	logo	https://coinkite.com/static/media-kit/satscard-logo-main.zip	kit média coinkite.com/media-kit, aucune condition écrite
+seedsigner	logo	https://github.com/SeedSigner/seedsigner/blob/dev/docs/img/logo.svg	dépôt sous licence MIT, logo dans `docs/img/`
+sparrow-wallet	capture	https://github.com/sparrowwallet/sparrow	logiciel sous licence Apache-2.0
+sparrow-wallet	logo	https://github.com/sparrowwallet/sparrow/blob/master/src/main/resources/image/dialog/sparrow.svg	dépôt sous licence Apache-2.0, logo dans `src/main/resources/image/`
+specter	capture	https://github.com/cryptoadvance/specter-desktop	logiciel sous licence MIT
+specter	logo	https://github.com/cryptoadvance/specter-desktop/blob/master/src/cryptoadvance/specter/static/img/specter.svg	dépôt sous licence MIT, logo dans `static/img/`
+spiral	logo	https://spiral.xyz/media	kit média (zip) : ne pas recolorer, étirer, contourer ni surcharger le logo
+start9	logo	https://github.com/Start9Labs/start-technologies/blob/master/shared-libs/ts-modules/shared/assets/icons/startos-512x512.png	dépôt sous licence MIT, icône StartOS dans `shared/assets/icons/`
+tapsigner	logo	https://coinkite.com/static/media-kit/tapsigner-logo-main.zip	kit média coinkite.com/media-kit, aucune condition écrite
+thunderhub	capture	https://github.com/apotdevin/thunderhub	logiciel sous licence MIT
+trezor	logo	https://trezor.io/press-and-media	page presse renvoyant au manuel de marque en ligne ; aucune condition lue
+umbrel	capture	https://github.com/getumbrel/umbrel	logiciel sous licence PolyForm Noncommercial 1.0.0, usage commercial interdit
+umbrel	logo	https://github.com/getumbrel/umbrel/blob/master/clients/apple/AppIcon.icon/Assets/umbrel.svg	dépôt sous PolyForm Noncommercial 1.0.0 (usage commercial interdit)
+vexl	logo	https://github.com/vexl-it/vexl/blob/main/apps/mobile/src/components/images/app_logo.png	dépôt sous licence GPL-3.0, logo dans `apps/mobile/src/components/images/`
+viabtc	logo	https://www.viabtc.com/brand	page charte graphique (PNG, SVG), aucune condition écrite
+voltage	logo	https://voltage.cloud/	non trouvée
+wallet-of-satoshi	logo	https://www.walletofsatoshi.com/media	kit média (zip) avec charte ; intégration dans des articles encouragée, aucune licence écrite
+wasabi-wallet	capture	https://github.com/WalletWasabi/WalletWasabi	logiciel sous licence MIT
+wasabi-wallet	logo	https://github.com/WalletWasabi/WalletWasabi/blob/master/Contrib/Assets/WasabiLogo256.png	dépôt sous licence MIT, logos dans `Contrib/Assets/`
+wizardsardine	logo	https://wizardsardine.com/presskit	kit presse (zip) avec guide de marque ; conditions renvoyées au guide, non lues
+zbd	logo	https://zbd.gg/	non trouvée
+zeus	capture	https://github.com/ZeusLN/zeus	logiciel sous licence AGPL-3.0
+zeus	logo	https://github.com/ZeusLN/zeus/blob/master/assets/images/SVG/wordmark-black.svg	dépôt sous licence AGPL-3.0, logo dans `assets/images/SVG/` (polices commerciales exclues de la licence)
