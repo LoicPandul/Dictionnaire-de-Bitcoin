@@ -1,7 +1,7 @@
 uuid: "50cdd548-de34-4977-94b7-72a847943add"
 title: "SCORE DE BOLTZMANN"
 slug: "score-de-boltzmann"
-category: "CONFIDENTIALITÉ"
+category: "ANALYSE DE CHAÎNE"
 english_term: "BOLTZMANN SCORE"
 cross_references:
   - "dd4ce526-2e6f-4af4-a64b-1ba6a27ff6f9"

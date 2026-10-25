@@ -1,7 +1,7 @@
 uuid: "0e7a1a88-0380-4058-83a0-efa7d8f3828e"
 title: "INVOICE LIGHTNING"
 slug: "invoice-lightning"
-category: "LIGHTNING NETWORK"
+category: "PAIEMENTS LIGHTNING"
 french_term: "FACTURE"
 cross_references:
   - "6d6f32a0-761e-4ee4-a189-db65aebc23ef"

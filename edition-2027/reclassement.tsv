@@ -1,0 +1,1409 @@
+slug	categorie_actuelle	categorie_2027	partie
+acinq	ORGANISATION	ENTREPRISE	ecosysteme
+actif-au-porteur	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+adaptor-signature	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+addr-dat	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+addr	RÉSEAU	RÉSEAU	technique
+address-spoofing	ATTAQUE	ATTAQUE	technique
+addrman	RÉSEAU	RÉSEAU	technique
+addrv2	RÉSEAU	RÉSEAU	technique
+adresse-de-reception	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+adresse-statique	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+aezeed	LIGHTNING NETWORK	CLÉS ET DÉRIVATION	technique
+agorisme	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+air-cooling	MINAGE	MINAGE	technique
+air-gapped	PORTEFEUILLE	PORTEFEUILLE	technique
+ajustement-de-la-difficulte	PROTOCOLE	PROTOCOLE	technique
+alby-hub	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+alby	ORGANISATION	ENTREPRISE	ecosysteme
+alert-system	HISTOIRE	HISTOIRE ET CULTURE	technique
+algorithme	INFORMATIQUE	INFORMATIQUE	technique
+altcoin	ÉCONOMIE ET RÉGULATION	ALTCOINS ET FORKS	technique
+aluvm	RGB	RGB	technique
+amboss	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+aml-anti-money-laundering	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+analyse-de-chaine	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+ancestor-mining	PROTOCOLE	MEMPOOL ET FRAIS	technique
+anchor-outputs	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+anchor	RGB	RGB	technique
+anchors-dat	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+ancrage-bilateral	SIDECHAIN	SIDECHAIN	technique
+annex	PROTOCOLE	TRANSACTIONS	technique
+anonsets-anonymity-sets	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+anti-exfil-signing	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+antpool	MINAGE	ACTEURS DU MINAGE	ecosysteme
+aopp	PORTEFEUILLE	PORTEFEUILLE	technique
+aperture	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+api	INFORMATIQUE	INFORMATIQUE	technique
+apo-anyprevout	BIP	COVENANTS	technique
+aqua	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+arbitrage	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+arbre-de-merkle	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+ark	COUCHE SUPÉRIEURE	ARK	technique
+ascii	INFORMATIQUE	INFORMATIQUE	technique
+ashigaru	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+asic-resistance	MINAGE	MINAGE	technique
+asic	MINAGE	MINAGE	technique
+asicboost	MINAGE	MINAGE	technique
+asmap	RÉSEAU	RÉSEAU	technique
+asp-ark-service-provider	COUCHE SUPÉRIEURE	ARK	technique
+asset-id	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+asset-merge	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+asset-proof	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+asset-split	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+assignment	RGB	RGB	technique
+assume-utxo	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+assume-valid	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+async-payments	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+ath-all-time-high	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+atlc	COUCHE SUPÉRIEURE	ARK	technique
+atomic-multi-path-payments	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+atomic-swap	OUTIL	COUCHE SUPÉRIEURE	technique
+attaque-de-finney	ATTAQUE	ATTAQUE	technique
+attaque-des-51-pour-cent	ATTAQUE	ATTAQUE	technique
+autoloop	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+avg-round-duration	MINAGE	POOLS DE MINAGE	technique
+b-money	HISTOIRE	HISTOIRE ET CULTURE	technique
+banlist-dat	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+banlist-json	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+bare-multisig	PROTOCOLE	SCRIPT	technique
+base-arithmetique	INFORMATIQUE	INFORMATIQUE	technique
+base-fee	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+base58check	PROTOCOLE	CLÉS ET DÉRIVATION	technique
+batched-spending	PROTOCOLE	TRANSACTIONS	technique
+bbqr	INFORMATIQUE	INFORMATIQUE	technique
+bch-bitcoin-cash	HISTOIRE	ALTCOINS ET FORKS	technique
+bch-code	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+bcoin	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bdk-bitcoin-dev-kit	OUTIL	OUTIL DE DÉVELOPPEMENT	ecosysteme
+bear-market	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+bech32-et-bech32m	PROTOCOLE	CLÉS ET DÉRIVATION	technique
+behind-the-meter	MINAGE	MINAGE	technique
+berkeleydb	PROTOCOLE	INFORMATIQUE	technique
+betterhash	MINAGE	POOLS DE MINAGE	technique
+bft-byzantine-fault-tolerance	ATTAQUE	INFORMATIQUE	technique
+bgp-hijacking	ATTAQUE	ATTAQUE	technique
+big-blockers	HISTOIRE	HISTOIRE ET CULTURE	technique
+big-endian	INFORMATIQUE	INFORMATIQUE	technique
+binaire	INFORMATIQUE	INFORMATIQUE	technique
+binohash	SCRIPT	COVENANTS	technique
+bip-0001	BIP	BIP	specifications
+bip-0002	BIP	BIP	specifications
+bip-0003	BIP	BIP	specifications
+bip-0008	BIP	BIP	specifications
+bip-0009	BIP	BIP	specifications
+bip-0010	BIP	BIP	specifications
+bip-0011	BIP	BIP	specifications
+bip-0012	BIP	BIP	specifications
+bip-0013	BIP	BIP	specifications
+bip-0014	BIP	BIP	specifications
+bip-0015	BIP	BIP	specifications
+bip-0016	BIP	BIP	specifications
+bip-0017	BIP	BIP	specifications
+bip-0018	BIP	BIP	specifications
+bip-0019	BIP	BIP	specifications
+bip-0020	BIP	BIP	specifications
+bip-0021	BIP	BIP	specifications
+bip-0022	BIP	BIP	specifications
+bip-0023	BIP	BIP	specifications
+bip-0030	BIP	BIP	specifications
+bip-0031	BIP	BIP	specifications
+bip-0032	BIP	BIP	specifications
+bip-0033	BIP	BIP	specifications
+bip-0034	BIP	BIP	specifications
+bip-0035	BIP	BIP	specifications
+bip-0036	BIP	BIP	specifications
+bip-0037	BIP	BIP	specifications
+bip-0038	BIP	BIP	specifications
+bip-0039	BIP	BIP	specifications
+bip-0042	BIP	BIP	specifications
+bip-0043	BIP	BIP	specifications
+bip-0044	BIP	BIP	specifications
+bip-0045	BIP	BIP	specifications
+bip-0046	BIP	BIP	specifications
+bip-0047	BIP	BIP	specifications
+bip-0048	BIP	BIP	specifications
+bip-0049	BIP	BIP	specifications
+bip-0050	BIP	BIP	specifications
+bip-0052	BIP	BIP	specifications
+bip-0053	BIP	BIP	specifications
+bip-0054	BIP	BIP	specifications
+bip-0060	BIP	BIP	specifications
+bip-0061	BIP	BIP	specifications
+bip-0062	BIP	BIP	specifications
+bip-0064	BIP	BIP	specifications
+bip-0065	BIP	BIP	specifications
+bip-0066	BIP	BIP	specifications
+bip-0067	BIP	BIP	specifications
+bip-0068	BIP	BIP	specifications
+bip-0069	BIP	BIP	specifications
+bip-0070	BIP	BIP	specifications
+bip-0071	BIP	BIP	specifications
+bip-0072	BIP	BIP	specifications
+bip-0073	BIP	BIP	specifications
+bip-0074	BIP	BIP	specifications
+bip-0075	BIP	BIP	specifications
+bip-0077	BIP	BIP	specifications
+bip-0078	BIP	BIP	specifications
+bip-0079	BIP	BIP	specifications
+bip-0080	BIP	BIP	specifications
+bip-0081	BIP	BIP	specifications
+bip-0083	BIP	BIP	specifications
+bip-0084	BIP	BIP	specifications
+bip-0085	BIP	BIP	specifications
+bip-0086	BIP	BIP	specifications
+bip-0087	BIP	BIP	specifications
+bip-0088	BIP	BIP	specifications
+bip-0089	BIP	BIP	specifications
+bip-0090	BIP	BIP	specifications
+bip-0091	BIP	BIP	specifications
+bip-0093	BIP	BIP	specifications
+bip-0094	BIP	BIP	specifications
+bip-0098	BIP	BIP	specifications
+bip-0099	BIP	BIP	specifications
+bip-0100	BIP	BIP	specifications
+bip-0101	BIP	BIP	specifications
+bip-0102	BIP	BIP	specifications
+bip-0103	BIP	BIP	specifications
+bip-0104	BIP	BIP	specifications
+bip-0105	BIP	BIP	specifications
+bip-0106	BIP	BIP	specifications
+bip-0107	BIP	BIP	specifications
+bip-0109	BIP	BIP	specifications
+bip-0110	BIP	BIP	specifications
+bip-0111	BIP	BIP	specifications
+bip-0112	BIP	BIP	specifications
+bip-0113	BIP	BIP	specifications
+bip-0114	BIP	BIP	specifications
+bip-0115	BIP	BIP	specifications
+bip-0116	BIP	BIP	specifications
+bip-0117	BIP	BIP	specifications
+bip-0118	BIP	BIP	specifications
+bip-0119	BIP	BIP	specifications
+bip-0120	BIP	BIP	specifications
+bip-0121	BIP	BIP	specifications
+bip-0122	BIP	BIP	specifications
+bip-0123	BIP	BIP	specifications
+bip-0124	BIP	BIP	specifications
+bip-0125	BIP	BIP	specifications
+bip-0126	BIP	BIP	specifications
+bip-0127	BIP	BIP	specifications
+bip-0129	BIP	BIP	specifications
+bip-0130	BIP	BIP	specifications
+bip-0131	BIP	BIP	specifications
+bip-0132	BIP	BIP	specifications
+bip-0133	BIP	BIP	specifications
+bip-0134	BIP	BIP	specifications
+bip-0135	BIP	BIP	specifications
+bip-0136	BIP	BIP	specifications
+bip-0137	BIP	BIP	specifications
+bip-0140	BIP	BIP	specifications
+bip-0141	BIP	BIP	specifications
+bip-0142	BIP	BIP	specifications
+bip-0143	BIP	BIP	specifications
+bip-0144	BIP	BIP	specifications
+bip-0145	BIP	BIP	specifications
+bip-0146	BIP	BIP	specifications
+bip-0147	BIP	BIP	specifications
+bip-0148	BIP	BIP	specifications
+bip-0149	BIP	BIP	specifications
+bip-0150	BIP	BIP	specifications
+bip-0151	BIP	BIP	specifications
+bip-0152	BIP	BIP	specifications
+bip-0154	BIP	BIP	specifications
+bip-0155	BIP	BIP	specifications
+bip-0156	BIP	BIP	specifications
+bip-0157	BIP	BIP	specifications
+bip-0158	BIP	BIP	specifications
+bip-0159	BIP	BIP	specifications
+bip-0171	BIP	BIP	specifications
+bip-0172	BIP	BIP	specifications
+bip-0173	BIP	BIP	specifications
+bip-0174	BIP	BIP	specifications
+bip-0175	BIP	BIP	specifications
+bip-0176	BIP	BIP	specifications
+bip-0177	BIP	BIP	specifications
+bip-0178	BIP	BIP	specifications
+bip-0179	BIP	BIP	specifications
+bip-0180	BIP	BIP	specifications
+bip-0197	BIP	BIP	specifications
+bip-0199	BIP	BIP	specifications
+bip-0300	BIP	BIP	specifications
+bip-0301	BIP	BIP	specifications
+bip-0310	BIP	BIP	specifications
+bip-0320	BIP	BIP	specifications
+bip-0321	BIP	BIP	specifications
+bip-0322	BIP	BIP	specifications
+bip-0324	BIP	BIP	specifications
+bip-0325	BIP	BIP	specifications
+bip-0326	BIP	BIP	specifications
+bip-0327	BIP	BIP	specifications
+bip-0328	BIP	BIP	specifications
+bip-0329	BIP	BIP	specifications
+bip-0330	BIP	BIP	specifications
+bip-0331	BIP	BIP	specifications
+bip-0337	BIP	BIP	specifications
+bip-0338	BIP	BIP	specifications
+bip-0339	BIP	BIP	specifications
+bip-0340	BIP	BIP	specifications
+bip-0341	BIP	BIP	specifications
+bip-0342	BIP	BIP	specifications
+bip-0343	BIP	BIP	specifications
+bip-0345	BIP	BIP	specifications
+bip-0346	BIP	BIP	specifications
+bip-0347	BIP	BIP	specifications
+bip-0348	BIP	BIP	specifications
+bip-0349	BIP	BIP	specifications
+bip-0350	BIP	BIP	specifications
+bip-0351	BIP	BIP	specifications
+bip-0352	BIP	BIP	specifications
+bip-0353	BIP	BIP	specifications
+bip-0360	BIP	BIP	specifications
+bip-0370	BIP	BIP	specifications
+bip-0371	BIP	BIP	specifications
+bip-0372	BIP	BIP	specifications
+bip-0373	BIP	BIP	specifications
+bip-0374	BIP	BIP	specifications
+bip-0375	BIP	BIP	specifications
+bip-0379	BIP	BIP	specifications
+bip-0380	BIP	BIP	specifications
+bip-0381	BIP	BIP	specifications
+bip-0382	BIP	BIP	specifications
+bip-0383	BIP	BIP	specifications
+bip-0384	BIP	BIP	specifications
+bip-0385	BIP	BIP	specifications
+bip-0386	BIP	BIP	specifications
+bip-0387	BIP	BIP	specifications
+bip-0388	BIP	BIP	specifications
+bip-0389	BIP	BIP	specifications
+bip-0390	BIP	BIP	specifications
+bip-0431	BIP	BIP	specifications
+bip-0433	BIP	BIP	specifications
+bip-0434	BIP	BIP	specifications
+bip-0443	BIP	BIP	specifications
+bip	BIP	ÉVOLUTION DU PROTOCOLE	technique
+birth-date	PORTEFEUILLE	PORTEFEUILLE	technique
+bisq	OUTIL	PLATEFORME D'ÉCHANGE	ecosysteme
+bit-gold	HISTOIRE	HISTOIRE ET CULTURE	technique
+bit-unite	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+bit	INFORMATIQUE	INFORMATIQUE	technique
+bitaxe	MINAGE	ACTEURS DU MINAGE	ecosysteme
+bitbanana	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+bitbox	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+bitcoin-atm	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+bitcoin-b-majuscule	PROTOCOLE	PROTOCOLE	technique
+bitcoin-b-minuscule	PROTOCOLE	PROTOCOLE	technique
+bitcoin-beach	COMMUNAUTÉ	COMMUNAUTÉ ET FONDATION	ecosysteme
+bitcoin-classic	HISTOIRE	IMPLÉMENTATION	ecosysteme
+bitcoin-cli	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bitcoin-conf	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+bitcoin-core-gui-qml	OUTIL	IMPLÉMENTATION	ecosysteme
+bitcoin-core	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bitcoin-dev	PROTOCOLE	COMMUNAUTÉ ET FONDATION	ecosysteme
+bitcoin-fog	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+bitcoin-inquisition	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bitcoin-jesus	HISTOIRE	FIGURE DE L'ÉCOSYSTÈME	personnes
+bitcoin-keeper	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+bitcoin-knots	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bitcoin-magazine	COMMUNAUTÉ	COMMUNAUTÉ ET FONDATION	ecosysteme
+bitcoin-optech	COMMUNAUTÉ	COMMUNAUTÉ ET FONDATION	ecosysteme
+bitcoin-qt	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bitcoin-treasury-company	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+bitcoin-unlimited	HISTOIRE	IMPLÉMENTATION	ecosysteme
+bitcoin-xt	HISTOIRE	IMPLÉMENTATION	ecosysteme
+bitcoind-pid	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+bitcoind	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+bitcoinj	OUTIL	OUTIL DE DÉVELOPPEMENT	ecosysteme
+bitcointalk	COMMUNAUTÉ	COMMUNAUTÉ ET FONDATION	ecosysteme
+bitkey	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+bitkit	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+bitmain	MINAGE	ACTEURS DU MINAGE	ecosysteme
+bitrefill	OUTIL	SERVICE ET PAIEMENT	ecosysteme
+bitvm	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+blind-oracle	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+blinded-paths	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+blink	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+blip-0001	LIGHTNING NETWORK	BLIP	specifications
+blip-0002	LIGHTNING NETWORK	BLIP	specifications
+blip-0003	LIGHTNING NETWORK	BLIP	specifications
+blip-0004	LIGHTNING NETWORK	BLIP	specifications
+blip-0010	LIGHTNING NETWORK	BLIP	specifications
+blip-0011	LIGHTNING NETWORK	BLIP	specifications
+blip-0017	LIGHTNING NETWORK	BLIP	specifications
+blip-0025	LIGHTNING NETWORK	BLIP	specifications
+blip-0032	LIGHTNING NETWORK	BLIP	specifications
+blip-0039	LIGHTNING NETWORK	BLIP	specifications
+blip-0050	LIGHTNING NETWORK	BLIP	specifications
+blip-0051	LIGHTNING NETWORK	BLIP	specifications
+blip-0052	LIGHTNING NETWORK	BLIP	specifications
+blip-0055	LIGHTNING NETWORK	BLIP	specifications
+blip	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+blixt-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+blk-dat	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+blkindex-dat	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+blktree	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+bloc	PROTOCOLE	PROTOCOLE	technique
+block-relay-only	RÉSEAU	RÉSEAU	technique
+block-template	MINAGE	MINAGE	technique
+blockchain	PROTOCOLE	PROTOCOLE	technique
+blocks-index	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+blocks-rev-dat	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+blocksigners	SIDECHAIN	SIDECHAIN	technique
+blocksize-war	HISTOIRE	HISTOIRE ET CULTURE	technique
+blockstream	ORGANISATION	ENTREPRISE	ecosysteme
+bloom-filter	RÉSEAU	RÉSEAU	technique
+blue-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+bolt-00	LIGHTNING NETWORK	BOLT	specifications
+bolt-01	LIGHTNING NETWORK	BOLT	specifications
+bolt-02	LIGHTNING NETWORK	BOLT	specifications
+bolt-03	LIGHTNING NETWORK	BOLT	specifications
+bolt-04	LIGHTNING NETWORK	BOLT	specifications
+bolt-05	LIGHTNING NETWORK	BOLT	specifications
+bolt-07	LIGHTNING NETWORK	BOLT	specifications
+bolt-08	LIGHTNING NETWORK	BOLT	specifications
+bolt-09	LIGHTNING NETWORK	BOLT	specifications
+bolt-10	LIGHTNING NETWORK	BOLT	specifications
+bolt-11	LIGHTNING NETWORK	BOLT	specifications
+bolt-12	LIGHTNING NETWORK	BOLT	specifications
+bolt	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+boltz	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+borromean-ring-signatures	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+bos-balance-of-satoshis	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+bosminer	MINAGE	ACTEURS DU MINAGE	ecosysteme
+bounty	COMMUNAUTÉ	ÉVOLUTION DU PROTOCOLE	technique
+bpm-bitcoin-pooled-mining	MINAGE	POOLS DE MINAGE	technique
+braidpool	MINAGE	POOLS DE MINAGE	technique
+braiins-pool	MINAGE	ACTEURS DU MINAGE	ecosysteme
+brainwallet	PORTEFEUILLE	PORTEFEUILLE	technique
+branch-and-bound	PORTEFEUILLE	PORTEFEUILLE	technique
+branche-bitcoin	PROTOCOLE	PROTOCOLE	technique
+branche-git	INFORMATIQUE	INFORMATIQUE	technique
+brc-20	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+breez	LIGHTNING NETWORK	PORTEFEUILLE LOGICIEL	ecosysteme
+brollups	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+bsms	PORTEFEUILLE	PORTEFEUILLE	technique
+bsv-bitcoin-satoshi-vision	HISTOIRE	ALTCOINS ET FORKS	technique
+btc	PROTOCOLE	PROTOCOLE	technique
+btcd-btc-suite	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+btcmap	OUTIL	SERVICE ET PAIEMENT	ecosysteme
+btcpay-server	OUTIL	SERVICE ET PAIEMENT	ecosysteme
+btg-bitcoin-gold	HISTOIRE	ALTCOINS ET FORKS	technique
+btkn	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+btrust	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+bucketing	RÉSEAU	RÉSEAU	technique
+bull-bitcoin	ORGANISATION	PLATEFORME D'ÉCHANGE	ecosysteme
+bull-market	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+bull-run	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+bulletproofs	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+burn-address	PROTOCOLE	TRANSACTIONS	technique
+business-logic	RGB	RGB	technique
+c-plus-plus	INFORMATIQUE	INFORMATIQUE	technique
+cahoots	PORTEFEUILLE	CONFIDENTIALITÉ	technique
+cakewallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+canaan	MINAGE	ACTEURS DU MINAGE	ecosysteme
+canal-de-paiment	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+candidat-bloc	MINAGE	MINAGE	technique
+capacite-de-canal-lightning	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+casa	ORGANISATION	ENTREPRISE	ecosysteme
+casascius	HISTOIRE	PORTEFEUILLE MATÉRIEL	ecosysteme
+cashu	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+cbdc	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+cbtc-citrea-bitcoin	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+censorship-resistance	PROTOCOLE	PROTOCOLE	technique
+cet	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+cgminer	MINAGE	ACTEURS DU MINAGE	ecosysteme
+chacha20-poly1305	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+chainalysis	ORGANISATION	ENTREPRISE	ecosysteme
+chaincode-labs	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+chaine-externe	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+chaine-interne	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+chainsplit	PROTOCOLE	PROTOCOLE	technique
+chainstate	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+chainway-labs	ORGANISATION	ENTREPRISE	ecosysteme
+chainwork	PROTOCOLE	PROTOCOLE	technique
+champion	BIP	ÉVOLUTION DU PROTOCOLE	technique
+change-avoidance	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+change	PORTEFEUILLE	TRANSACTIONS	technique
+channel-acceptor	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+channel-announcement	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+channel-breach	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+channel-db	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+channel-factories	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+channel-jamming	ATTAQUE	ATTAQUE	technique
+channel-lease	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+channel-point	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+channel-reserve	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+chantools	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+charge-utile	INFORMATIQUE	INFORMATIQUE	technique
+chaumian-coinjoin	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+checkpoints	PROTOCOLE	PROTOCOLE	technique
+chemin-de-derivation	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+chemin-de-recuperation	PORTEFEUILLE	PORTEFEUILLE	technique
+chemin-primaire	PORTEFEUILLE	PORTEFEUILLE	technique
+chiffrer-chiffrement	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+cible-de-difficulte	MINAGE	MINAGE	technique
+cioh	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+circular-rebalance	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+cisa	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+citrea	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+clark-covenantless-ark	COUCHE SUPÉRIEURE	ARK	technique
+cle-de-revocation	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+cle-etendue	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+cle-maitresse	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+cle-privee	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+cle-publique-compressee	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+cle-publique	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+clearnet	RÉSEAU	RÉSEAU	technique
+clementine	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+cli	INFORMATIQUE	INFORMATIQUE	technique
+client-side-validation	RGB	RGB	technique
+cln-c-lightning	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+cln-core-lightning	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+clone	INFORMATIQUE	INFORMATIQUE	technique
+cluster-mempool	PROTOCOLE	MEMPOOL ET FRAIS	technique
+cluster	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+code-de-chaine-maitre	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+code-de-chaine	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+code-de-paiment-reutilisable	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+codex32	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+coin-control	PORTEFEUILLE	PORTEFEUILLE	technique
+coinbase	PROTOCOLE	TRANSACTIONS	technique
+coinjoin	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+coinjumble	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+coinkite	ORGANISATION	ENTREPRISE	ecosysteme
+coinmux	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+coinos	OUTIL	PORTEFEUILLE LOGICIEL	ecosysteme
+coins	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+coinshuffle	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+coinswap	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+cold-wallet	PORTEFEUILLE	PORTEFEUILLE	technique
+coldcard	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+collateral	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+colored-coins	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+commercant	PROTOCOLE	ÉCONOMIE ET RÉGULATION	technique
+commit	INFORMATIQUE	INFORMATIQUE	technique
+commitment-fee	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+commitment	RGB	RGB	technique
+compact-block-filters	RÉSEAU	RÉSEAU	technique
+compact-block-relay	RÉSEAU	RÉSEAU	technique
+compactsize	PROTOCOLE	TRANSACTIONS	technique
+compatibilite-retrospective	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+compte	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+concatenation	INFORMATIQUE	INFORMATIQUE	technique
+condensat	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+confidential-transactions	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+confirmation	PROTOCOLE	TRANSACTIONS	technique
+connector	COUCHE SUPÉRIEURE	ARK	technique
+consensus-cleanup	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+consensus	PROTOCOLE	PROTOCOLE	technique
+consignment	RGB	RGB	technique
+consolidation	PORTEFEUILLE	TRANSACTIONS	technique
+conteneur	MINAGE	MINAGE	technique
+contract-operation	RGB	RGB	technique
+contract-participant	RGB	RGB	technique
+contract-rights	RGB	RGB	technique
+contract-state	RGB	RGB	technique
+contrat-intelligent	SCRIPT	SCRIPT	technique
+contrat-rgb	RGB	RGB	technique
+contributeur-core	COMMUNAUTÉ	ÉVOLUTION DU PROTOCOLE	technique
+control-block	SCRIPT	SCRIPT	technique
+control-board	MINAGE	MINAGE	technique
+cookie	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+cooperative-close	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+coordinateur-de-coinjoin	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+counterparty	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+courbe-elliptique	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+cours-legal	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+covenant	PROTOCOLE	COVENANTS	technique
+covert-asicboost	MINAGE	MINAGE	technique
+cpfp-child-pay-for-parent	PORTEFEUILLE	MEMPOOL ET FRAIS	technique
+cppsrb	MINAGE	POOLS DE MINAGE	technique
+cpu-central-processing-unit	INFORMATIQUE	INFORMATIQUE	technique
+cryptanalyse	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+crypter	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+crypto-actif	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+cryptographie	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+cryptologie	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+cryptomonnaie	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+ctusd-citrea-usd	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+curtailment	MINAGE	MINAGE	technique
+custody	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+cypherpunks	HISTOIRE	HISTOIRE ET CULTURE	technique
+daemon	INFORMATIQUE	INFORMATIQUE	technique
+dandelion	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+darkwallet	CONFIDENTIALITÉ	PORTEFEUILLE LOGICIEL	ecosysteme
+darwinisme-monetaire	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+database	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+db-log	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+dbc	RGB	RGB	technique
+dca-dollar-cost-averaging	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+ddos	ATTAQUE	ATTAQUE	technique
+debug-log	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+decentralisation	RÉSEAU	RÉSEAU	technique
+deflation	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+demeurage	PROTOCOLE	ÉCONOMIE ET RÉGULATION	technique
+deni-plausible	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+depeg	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+depot	INFORMATIQUE	INFORMATIQUE	technique
+der	INFORMATIQUE	INFORMATIQUE	technique
+derivation-endurcie	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+derivation-normale	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+derivation	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+dgm	MINAGE	POOLS DE MINAGE	technique
+difficulte	MINAGE	MINAGE	technique
+diffie-hellman	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+diffusion	RÉSEAU	RÉSEAU	technique
+digicash	HISTOIRE	ENTREPRISE	ecosysteme
+digital-artifacts	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+directed-acyclic-graph	RGB	RGB	technique
+distribue	RÉSEAU	RÉSEAU	technique
+dkg	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+dlc-discreet-log-contract	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+dlp-discreet-log-probleme	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+dns-seeds	RÉSEAU	RÉSEAU	technique
+dojo	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+dos-denial-of-service	ATTAQUE	ATTAQUE	technique
+double-depense	ATTAQUE	ATTAQUE	technique
+doxxic-change	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+drivechain	SIDECHAIN	SIDECHAIN	technique
+dual-funding	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+dummy-element	PROTOCOLE	TRANSACTIONS	technique
+duress-wallet	PORTEFEUILLE	PORTEFEUILLE	technique
+dust-limit	PROTOCOLE	MEMPOOL ET FRAIS	technique
+dust	PORTEFEUILLE	TRANSACTIONS	technique
+dusting-attack	ATTAQUE	ATTAQUE	technique
+dustrelayfee	PROTOCOLE	MEMPOOL ET FRAIS	technique
+dynamic-federations	SIDECHAIN	SIDECHAIN	technique
+e-gold	HISTOIRE	SERVICE ET PAIEMENT	ecosysteme
+ecash-david-chaum	HISTOIRE	HISTOIRE ET CULTURE	technique
+ecash-xec	HISTOIRE	ALTCOINS ET FORKS	technique
+ecdh	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+ecdsa	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+eclair	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+eclipse	ATTAQUE	ATTAQUE	technique
+ecole-autrichienne	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+edge-node	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+effet-cantillon	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+effet-de-reseau	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+electrs	RÉSEAU	NŒUD ET EXPLORATEUR	ecosysteme
+electrum-lightning	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+electrum-server	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+electrum	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+elements	SIDECHAIN	IMPLÉMENTATION	ecosysteme
+eltoo	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+embranchement-naturel	PROTOCOLE	PROTOCOLE	technique
+empreinte-de-portefeuille	PORTEFEUILLE	ANALYSE DE CHAÎNE	technique
+endianness	INFORMATIQUE	INFORMATIQUE	technique
+engraving	RGB	RGB	technique
+entete-de-bloc	PROTOCOLE	PROTOCOLE	technique
+entropie-analyse	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+entropie	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+envoy	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+ephemeral-anchors	PROTOCOLE	MEMPOOL ET FRAIS	technique
+erebus	ATTAQUE	ATTAQUE	technique
+erlay	RÉSEAU	RÉSEAU	technique
+escrow	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+esmpps	MINAGE	POOLS DE MINAGE	technique
+esplora	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+etf	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+etiquetage	PORTEFEUILLE	PORTEFEUILLE	technique
+evenement-nostr	RÉSEAU	NOSTR	technique
+exit-transaction	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+explorateur-de-bloc	OUTIL	FONCTIONNEMENT DU NŒUD	technique
+extension-block	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+extra-nonce	MINAGE	MINAGE	technique
+extra-transaction-proof	RGB	RGB	technique
+f2pool	MINAGE	ACTEURS DU MINAGE	ecosysteme
+faraday	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+faucet	HISTOIRE	HISTOIRE ET CULTURE	technique
+federation	SIDECHAIN	SIDECHAIN	technique
+fedimint	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+fee-bumping	PORTEFEUILLE	MEMPOOL ET FRAIS	technique
+fee-estimates-dat	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+fee-rate-bitcoin	PROTOCOLE	MEMPOOL ET FRAIS	technique
+fee-rate-lightning	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+fee-sniping	ATTAQUE	ATTAQUE	technique
+feeler-connection	RÉSEAU	RÉSEAU	technique
+ferme-de-minage	MINAGE	MINAGE	technique
+fiat	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+fibre	RÉSEAU	RÉSEAU	technique
+fidelity-bond	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+finalite-de-transaction	PROTOCOLE	TRANSACTIONS	technique
+finney-hal	HISTOIRE	CYPHERPUNK	personnes
+flag-day	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+flood-and-loot	ATTAQUE	ATTAQUE	technique
+fonction-de-hachage-taguee	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+fonction-de-hachage	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+fonctionnaire	SIDECHAIN	SIDECHAIN	technique
+fondation-bitcoin	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+fongibilite	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+force-brute	ATTAQUE	ATTAQUE	technique
+force-close	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+forced-address-reuse	ATTAQUE	ATTAQUE	technique
+forfeit-transaction	COUCHE SUPÉRIEURE	ARK	technique
+fork-git	INFORMATIQUE	INFORMATIQUE	technique
+fork	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+foss	INFORMATIQUE	INFORMATIQUE	technique
+foundation-devices	ORGANISATION	ENTREPRISE	ecosysteme
+foundry-usa	MINAGE	ACTEURS DU MINAGE	ecosysteme
+fountain	OUTIL	SERVICE ET PAIEMENT	ecosysteme
+fpga	MINAGE	MINAGE	technique
+fpps-full-pay-per-share	MINAGE	POOLS DE MINAGE	technique
+frais-de-transaction	PROTOCOLE	MEMPOOL ET FRAIS	technique
+frost	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+frostsnap	OUTIL	PORTEFEUILLE MATÉRIEL	ecosysteme
+fulcrum	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+full-rbf	PROTOCOLE	MEMPOOL ET FRAIS	technique
+galoy	ORGANISATION	ENTREPRISE	ecosysteme
+gap-limit	PORTEFEUILLE	PORTEFEUILLE	technique
+gateway-node	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+gcs-golomb-coded-set	INFORMATIQUE	INFORMATIQUE	technique
+genese	PROTOCOLE	PROTOCOLE	technique
+genesis	RGB	RGB	technique
+getblocktemplate	MINAGE	MINAGE	technique
+getwork	MINAGE	MINAGE	technique
+ghash-io	MINAGE	ACTEURS DU MINAGE	ecosysteme
+ginger-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+git	INFORMATIQUE	INFORMATIQUE	technique
+github	INFORMATIQUE	INFORMATIQUE	technique
+gitlab	INFORMATIQUE	INFORMATIQUE	technique
+global-state	RGB	RGB	technique
+gnpa	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+gnu	INFORMATIQUE	INFORMATIQUE	technique
+goldfinger	ATTAQUE	ATTAQUE	technique
+gossip	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+gpl	INFORMATIQUE	INFORMATIQUE	technique
+graftroot	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+graine	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+green-address	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+green-addresses	PORTEFEUILLE	PORTEFEUILLE	technique
+green-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+griefing-attack	ATTAQUE	ATTAQUE	technique
+groth16	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+grpc	INFORMATIQUE	INFORMATIQUE	technique
+gui	INFORMATIQUE	INFORMATIQUE	technique
+guisettings-ini-bak	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+hacheur	MINAGE	POOLS DE MINAGE	technique
+halving	PROTOCOLE	PROTOCOLE	technique
+hard-fork	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+hardware-wallet	PORTEFEUILLE	PORTEFEUILLE	technique
+hash160	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+hash256	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+hashboard	MINAGE	MINAGE	technique
+hashcash	HISTOIRE	HISTOIRE ET CULTURE	technique
+hashrate-hijacking	ATTAQUE	ATTAQUE	technique
+hashrate	MINAGE	MINAGE	technique
+hauteur-de-bloc	PROTOCOLE	PROTOCOLE	technique
+hd-hierarchical-deterministic	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+headers-first-sync	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+heure-unix	INFORMATIQUE	INFORMATIQUE	technique
+heuristique-d-analyse	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+hexadecimal	INFORMATIQUE	INFORMATIQUE	technique
+hmac-sha512	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+hodl-hodl	ORGANISATION	PLATEFORME D'ÉCHANGE	ecosysteme
+hodl-invoice	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+hodl	ÉCONOMIE ET RÉGULATION	HISTOIRE ET CULTURE	technique
+home-mining	MINAGE	MINAGE	technique
+hong-kong-roundtable	HISTOIRE	HISTOIRE ET CULTURE	technique
+horodatage	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+hosted-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+hrp-human-readable-part	INFORMATIQUE	INFORMATIQUE	technique
+hsm	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+htlc-endorsement	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+htlc	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+human-rights-foundation	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+hwi	PORTEFEUILLE	OUTIL DE DÉVELOPPEMENT	ecosysteme
+hydro-cooling	MINAGE	MINAGE	technique
+hyper-bitcoinisation	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+hyperinflation	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+i2p	RÉSEAU	RÉSEAU	technique
+ibd-initial-block-download	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+immersion-cooling	MINAGE	MINAGE	technique
+implementation-de-bitcoin	PROTOCOLE	PROTOCOLE	technique
+inbound-capacity	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+index-key	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+indexes-txindex	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+inflation	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+input	PROTOCOLE	TRANSACTIONS	technique
+inscriptions	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+interface-implementation	RGB	RGB	technique
+interface	RGB	RGB	technique
+invoice-lightning	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+invoice-rgb	RGB	RGB	technique
+iou	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+ip-asn-map	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+ip-report	MINAGE	MINAGE	technique
+issue	INFORMATIQUE	INFORMATIQUE	technique
+jade	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+jam	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+jan3	ORGANISATION	ENTREPRISE	ecosysteme
+jbok	PORTEFEUILLE	PORTEFEUILLE	technique
+jit-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+jit-routing	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+joininbox	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+joinmarket	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+joinpool	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+joinstr	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+key-teleport	PORTEFEUILLE	PORTEFEUILLE	technique
+keynesianisme	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+keysend	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+keystore	PORTEFEUILLE	PORTEFEUILLE	technique
+knapsack-solver	PORTEFEUILLE	PORTEFEUILLE	technique
+krux	OUTIL	PORTEFEUILLE MATÉRIEL	ecosysteme
+kyc-know-your-customer	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+l402	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+label-silent-payments	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+label	PORTEFEUILLE	PORTEFEUILLE	technique
+latence	RÉSEAU	RÉSEAU	technique
+lbtc	SIDECHAIN	SIDECHAIN	technique
+lcb-ft	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+ldk-lightning-dev-kit	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+ledger-entreprise	ORGANISATION	ENTREPRISE	ecosysteme
+ledger	PROTOCOLE	PROTOCOLE	technique
+leveldb	PROTOCOLE	INFORMATIQUE	technique
+liana	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+libbitcoin	PROTOCOLE	IMPLÉMENTATION	ecosysteme
+liberty-reserve	HISTOIRE	SERVICE ET PAIEMENT	ecosysteme
+libsecp256k1	PROTOCOLE	OUTIL DE DÉVELOPPEMENT	ecosysteme
+libwally-core	OUTIL	OUTIL DE DÉVELOPPEMENT	ecosysteme
+lightning-labs	ORGANISATION	ENTREPRISE	ecosysteme
+lightning-network-plus	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+lightning-network	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+lightning-service-provider	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+lightning-terminal	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+lightspark	ORGANISATION	ENTREPRISE	ecosysteme
+limite-d-emission	PROTOCOLE	PROTOCOLE	technique
+liquid-network	SIDECHAIN	SIDECHAIN	technique
+liquidites	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+liquidity-ads	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+liquidity-swap	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+litd	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+litecoin	ÉCONOMIE ET RÉGULATION	ALTCOINS ET FORKS	technique
+little-endian	INFORMATIQUE	INFORMATIQUE	technique
+lnbits	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+lnc-lightning-node-connect	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+lncli	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+lnd	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+lnp-bp	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+lnp2pbot	OUTIL	PLATEFORME D'ÉCHANGE	ecosysteme
+lnurl	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+localbitcoins	ORGANISATION	PLATEFORME D'ÉCHANGE	ecosysteme
+lock	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+logarithme-discret	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+loi-de-gresham	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+loi-de-thiers	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+loop-in	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+loop-out	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+loop	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+lottery-mining	MINAGE	POOLS DE MINAGE	technique
+luck	MINAGE	POOLS DE MINAGE	technique
+lud	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+luxor	MINAGE	ACTEURS DU MINAGE	ecosysteme
+m-of-n	PORTEFEUILLE	PORTEFEUILLE	technique
+macaroon	INFORMATIQUE	INFORMATIQUE	technique
+machankura	OUTIL	SERVICE ET PAIEMENT	ecosysteme
+magic-network	RÉSEAU	RÉSEAU	technique
+magical-bitcoin	PROTOCOLE	OUTIL DE DÉVELOPPEMENT	ecosysteme
+magma	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+mainnet	PROTOCOLE	RÉSEAU	technique
+mainteneur-core	COMMUNAUTÉ	ÉVOLUTION DU PROTOCOLE	technique
+mainteneur-principal-core	COMMUNAUTÉ	ÉVOLUTION DU PROTOCOLE	technique
+majorite-economique	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+malleabilite-transaction	PROTOCOLE	TRANSACTIONS	technique
+mapper	INFORMATIQUE	INFORMATIQUE	technique
+mara	MINAGE	ACTEURS DU MINAGE	ecosysteme
+market-cap	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+masf	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+mast	CRYPTOGRAPHIE	SCRIPT	technique
+master-fingerprint	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+matt	SCRIPT	COVENANTS	technique
+max-bloc-size	PROTOCOLE	PROTOCOLE	technique
+maximaliste	COMMUNAUTÉ	HISTOIRE ET CULTURE	technique
+melangeur	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+mempool-dat	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+mempool-space	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+mempool	PROTOCOLE	MEMPOOL ET FRAIS	technique
+merge	INFORMATIQUE	INFORMATIQUE	technique
+merkle-block	PROTOCOLE	RÉSEAU	technique
+merkle-sum-tree	INFORMATIQUE	INFORMATIQUE	technique
+mesure-a-la-prise	MINAGE	MINAGE	technique
+metadonnees	INFORMATIQUE	INFORMATIQUE	technique
+methode-d-activation	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+methode-geometrique	MINAGE	POOLS DE MINAGE	technique
+millibitcoin	PROTOCOLE	PROTOCOLE	technique
+millisatoshi	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+mimblewimble	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+minage-fusionne-aveugle	SIDECHAIN	SIDECHAIN	technique
+minage-fusionne	SIDECHAIN	SIDECHAIN	technique
+minage	MINAGE	MINAGE	technique
+mineur	MINAGE	MINAGE	technique
+minibits	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+mining-management-software	MINAGE	MINAGE	technique
+mining-pool	MINAGE	POOLS DE MINAGE	technique
+miniscript	SCRIPT	SCRIPT	technique
+minisketch	RÉSEAU	OUTIL DE DÉVELOPPEMENT	ecosysteme
+minitapscript	SCRIPT	SCRIPT	technique
+mit-dci	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+mit-x11	INFORMATIQUE	INFORMATIQUE	technique
+mitm-man-in-the-middle	ATTAQUE	ATTAQUE	technique
+mixage	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+modele-de-script	SCRIPT	SCRIPT	technique
+modele-de-transaction	PROTOCOLE	ANALYSE DE CHAÎNE	technique
+modele-temporel	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+mostro	OUTIL	NOSTR	technique
+mpp-multi-path-payments	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+ms-smt	INFORMATIQUE	INFORMATIQUE	technique
+mtgox	HISTOIRE	PLATEFORME D'ÉCHANGE	ecosysteme
+mtp-median-time-past	PROTOCOLE	PROTOCOLE	technique
+multi-protocol-commitment	RGB	RGB	technique
+multisig	SCRIPT	PORTEFEUILLE	technique
+musig-dn	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+musig	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+musig2	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+mynode	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+mystery-shopper-payments	ATTAQUE	ATTAQUE	technique
+nakamoto-satoshi	HISTOIRE	DÉVELOPPEUR BITCOIN	personnes
+namecoin	HISTOIRE	ALTCOINS ET FORKS	technique
+nat-network-adjusted-time	PROTOCOLE	PROTOCOLE	technique
+nbits	PROTOCOLE	PROTOCOLE	technique
+nerdminer	MINAGE	ACTEURS DU MINAGE	ecosysteme
+nested-segwit	PROTOCOLE	SCRIPT	technique
+neutrino	OUTIL	IMPLÉMENTATION	ecosysteme
+nft	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+nip	RÉSEAU	NOSTR	technique
+nlocktime	SCRIPT	TRANSACTIONS	technique
+no2x	HISTOIRE	HISTOIRE ET CULTURE	technique
+nodl	ORGANISATION	ENTREPRISE	ecosysteme
+noeud-complet	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+noeud-de-routage	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+noeud-elague	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+noeud-lightning	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+noeud-spv-noeud-leger	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+noeud	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+noise	RÉSEAU	LIGHTNING NETWORK	technique
+nonce	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+nostr	RÉSEAU	NOSTR	technique
+npub	RÉSEAU	NOSTR	technique
+nsec	RÉSEAU	NOSTR	technique
+nsequence	SCRIPT	TRANSACTIONS	technique
+null-data	PROTOCOLE	TRANSACTIONS	technique
+nulldummy	PROTOCOLE	TRANSACTIONS	technique
+nunchuk	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+nversion	PROTOCOLE	TRANSACTIONS	technique
+nwc-nostr-wallet-connect	LIGHTNING NETWORK	NOSTR	technique
+nya-new-york-agreement	HISTOIRE	HISTOIRE ET CULTURE	technique
+oap-open-assets-protocol	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+objectif	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+oboe-off-by-one-error	SCRIPT	INFORMATIQUE	technique
+obsolete-bloc	PROTOCOLE	PROTOCOLE	technique
+ocean	MINAGE	ACTEURS DU MINAGE	ecosysteme
+octet	INFORMATIQUE	INFORMATIQUE	technique
+off-chain	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+off-grid	MINAGE	MINAGE	technique
+offer	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+omni	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+on-chain	PROTOCOLE	PROTOCOLE	technique
+on-grid	MINAGE	MINAGE	technique
+onion-address	RÉSEAU	RÉSEAU	technique
+onion-message	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+onion-private-key	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+onion-service	RÉSEAU	RÉSEAU	technique
+onion-v3-private-key	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+oor-payment	COUCHE SUPÉRIEURE	ARK	technique
+op-0-0x00	SCRIPT	OPCODES	technique
+op-0notequal-0x92	SCRIPT	OPCODES	technique
+op-1-0x51	SCRIPT	OPCODES	technique
+op-1add-0x8b	SCRIPT	OPCODES	technique
+op-1negate-0x4f	SCRIPT	OPCODES	technique
+op-1sub-0x8c	SCRIPT	OPCODES	technique
+op-2-a-op-16-0x52-a-0x60	SCRIPT	OPCODES	technique
+op-2drop-0xd6	SCRIPT	OPCODES	technique
+op-2dup-0x6e	SCRIPT	OPCODES	technique
+op-2over-0x70	SCRIPT	OPCODES	technique
+op-2rot-0x71	SCRIPT	OPCODES	technique
+op-2swap-0x72	SCRIPT	OPCODES	technique
+op-3dup-0x6f	SCRIPT	OPCODES	technique
+op-abs-0x90	SCRIPT	OPCODES	technique
+op-add-0x93	SCRIPT	OPCODES	technique
+op-booland-0x9a	SCRIPT	OPCODES	technique
+op-boolor-0x9b	SCRIPT	OPCODES	technique
+op-cat-0x7e	SCRIPT	COVENANTS	technique
+op-checkhashverify-chv	SCRIPT	OPCODES	technique
+op-checklocktimeverify-0xb1	SCRIPT	OPCODES	technique
+op-checkmultisig-0xae	SCRIPT	OPCODES	technique
+op-checkmultisigverify-0xaf	SCRIPT	OPCODES	technique
+op-checksequenceverify-0xb2	SCRIPT	OPCODES	technique
+op-checksig-0xac	SCRIPT	OPCODES	technique
+op-checksigadd-0xba	SCRIPT	OPCODES	technique
+op-checksigfromstack-0xcc	SCRIPT	COVENANTS	technique
+op-checksigverify-0xad	SCRIPT	OPCODES	technique
+op-checktemplateverify-0xb3	SCRIPT	COVENANTS	technique
+op-codeseparator-0xab	SCRIPT	OPCODES	technique
+op-depth-0x74	SCRIPT	OPCODES	technique
+op-drop-0x75	SCRIPT	OPCODES	technique
+op-dup-0x76	SCRIPT	OPCODES	technique
+op-else-0x67	SCRIPT	OPCODES	technique
+op-endif-0x68	SCRIPT	OPCODES	technique
+op-equal-0x87	SCRIPT	OPCODES	technique
+op-equalverify-0x88	SCRIPT	OPCODES	technique
+op-eval	SCRIPT	OPCODES	technique
+op-false-0x00	SCRIPT	OPCODES	technique
+op-fromaltstack-0x6c	SCRIPT	OPCODES	technique
+op-greaterthan-0xa0	SCRIPT	OPCODES	technique
+op-greaterthanorequal-0xa2	SCRIPT	OPCODES	technique
+op-hash160-0xa9	SCRIPT	OPCODES	technique
+op-hash256-0xaa	SCRIPT	OPCODES	technique
+op-if-0x63	SCRIPT	OPCODES	technique
+op-ifdup-0x73	SCRIPT	OPCODES	technique
+op-internalkey-0xcb	SCRIPT	COVENANTS	technique
+op-lessthan-0x9f	SCRIPT	OPCODES	technique
+op-lessthanorequal-0xa1	SCRIPT	OPCODES	technique
+op-max-0xa4	SCRIPT	OPCODES	technique
+op-min-0xa3	SCRIPT	OPCODES	technique
+op-negate-0x8f	SCRIPT	OPCODES	technique
+op-nip-0x77	SCRIPT	OPCODES	technique
+op-nop-0x61	SCRIPT	OPCODES	technique
+op-not-0x91	SCRIPT	OPCODES	technique
+op-notif-0x64	SCRIPT	OPCODES	technique
+op-numequal-0x9c	SCRIPT	OPCODES	technique
+op-numequalverify-0x9d	SCRIPT	OPCODES	technique
+op-numnotequal-0x9e	SCRIPT	OPCODES	technique
+op-over-0x78	SCRIPT	OPCODES	technique
+op-pick-0x79	SCRIPT	OPCODES	technique
+op-pushdata1-0x4c	SCRIPT	OPCODES	technique
+op-pushdata2-0x4d	SCRIPT	OPCODES	technique
+op-pushdata4-0x4e	SCRIPT	OPCODES	technique
+op-return-0x6a	SCRIPT	OPCODES	technique
+op-ripemd160-0xa6	SCRIPT	OPCODES	technique
+op-roll-0x7a	SCRIPT	OPCODES	technique
+op-rot-0x7b	SCRIPT	OPCODES	technique
+op-sha1-0xa7	SCRIPT	OPCODES	technique
+op-sha256-0xa8	SCRIPT	OPCODES	technique
+op-size-0x82	SCRIPT	OPCODES	technique
+op-sub-0x94	SCRIPT	OPCODES	technique
+op-success	SCRIPT	OPCODES	technique
+op-swap-0x7c	SCRIPT	OPCODES	technique
+op-toaltstack-0x6b	SCRIPT	OPCODES	technique
+op-true-0x51	SCRIPT	OPCODES	technique
+op-tuck-0x7d	SCRIPT	OPCODES	technique
+op-txhash-0xbd	SCRIPT	COVENANTS	technique
+op-vault-0xbb	SCRIPT	COVENANTS	technique
+op-ver-0x62	SCRIPT	OPCODES	technique
+op-verify-0x69	SCRIPT	OPCODES	technique
+op-within-0xa5	SCRIPT	OPCODES	technique
+opcodes	SCRIPT	OPCODES	technique
+opendime	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+opennode	ORGANISATION	SERVICE ET PAIEMENT	ecosysteme
+opensats	ORGANISATION	COMMUNAUTÉ ET FONDATION	ecosysteme
+opentimestamps	OUTIL	COUCHE SUPÉRIEURE	technique
+oracle	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+ordinal-number	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+ordinals-theory	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+orphelin	PROTOCOLE	PROTOCOLE	technique
+osint	INFORMATIQUE	INFORMATIQUE	technique
+outbound-capacity	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+outpoint	PROTOCOLE	TRANSACTIONS	technique
+output-linking	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+output-script-descriptors	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+output	PROTOCOLE	TRANSACTIONS	technique
+overclocking	MINAGE	MINAGE	technique
+overt-asicboost	MINAGE	MINAGE	technique
+owned-state	RGB	RGB	technique
+ownership	RGB	RGB	technique
+oxt	CONFIDENTIALITÉ	NŒUD ET EXPLORATEUR	ecosysteme
+p2ms	SCRIPT	SCRIPT	technique
+p2p-pair-a-pair	PROTOCOLE	RÉSEAU	technique
+p2p-transport-v2	RÉSEAU	RÉSEAU	technique
+p2pk	SCRIPT	SCRIPT	technique
+p2pkh	SCRIPT	SCRIPT	technique
+p2pool	MINAGE	POOLS DE MINAGE	technique
+p2sh-p2wpkh	SCRIPT	SCRIPT	technique
+p2sh-p2wsh	SCRIPT	SCRIPT	technique
+p2sh	SCRIPT	SCRIPT	technique
+p2tr	SCRIPT	SCRIPT	technique
+p2wpkh	SCRIPT	SCRIPT	technique
+p2wsh	SCRIPT	SCRIPT	technique
+package-relay	RÉSEAU	MEMPOOL ET FRAIS	technique
+paiement-rond	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+paiement-simple	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+pair-entrant	RÉSEAU	RÉSEAU	technique
+pair-sortant	RÉSEAU	RÉSEAU	technique
+pairing-phrase	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+panne-byzantine	ATTAQUE	INFORMATIQUE	technique
+paper-wallet	PORTEFEUILLE	PORTEFEUILLE	technique
+passive-assets	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+passphrase-bip-0039	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+passport	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+pathfinding	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+patoshi	HISTOIRE	HISTOIRE ET CULTURE	technique
+pay-to-contract	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+payjoin	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+payment-hash	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+paynym	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+pbkdf2	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+peach	ORGANISATION	PLATEFORME D'ÉCHANGE	ecosysteme
+pedersen-commitment	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+peeling-chain	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+peer-discovery	RÉSEAU	RÉSEAU	technique
+peers-dat	RÉSEAU	FONCTIONNEMENT DU NŒUD	technique
+peg-in	SIDECHAIN	SIDECHAIN	technique
+peg-out	SIDECHAIN	SIDECHAIN	technique
+percolation	INFORMATIQUE	INFORMATIQUE	technique
+perime-bloc	PROTOCOLE	PROTOCOLE	technique
+periode-de-maturite	PROTOCOLE	PROTOCOLE	technique
+phoenix	LIGHTNING NETWORK	PORTEFEUILLE LOGICIEL	ecosysteme
+phoenixd	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+phrase-de-recuperation	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+pile	SCRIPT	SCRIPT	technique
+pilule-orange	HISTOIRE	HISTOIRE ET CULTURE	technique
+pizza-day	HISTOIRE	HISTOIRE ET CULTURE	technique
+point-d-entree	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+point-generateur	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+polar	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+policy-miniscript	SCRIPT	SCRIPT	technique
+politique-de-mempool	RÉSEAU	MEMPOOL ET FRAIS	technique
+politique-de-relais-des-tx	RÉSEAU	MEMPOOL ET FRAIS	technique
+politique-de-relais	RÉSEAU	MEMPOOL ET FRAIS	technique
+pool-coinjoin	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+pool-hopping	MINAGE	POOLS DE MINAGE	technique
+pool-lightning	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+portal	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+porte-derobee	ATTAQUE	ATTAQUE	technique
+portefeuille-chaud	PORTEFEUILLE	PORTEFEUILLE	technique
+portefeuille	PORTEFEUILLE	PORTEFEUILLE	technique
+postmix	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+pot-pay-on-target	MINAGE	POOLS DE MINAGE	technique
+ppa	MINAGE	MINAGE	technique
+pplns-pay-per-last-n-shares	MINAGE	POOLS DE MINAGE	technique
+pps-pay-per-share	MINAGE	POOLS DE MINAGE	technique
+pps-plus	MINAGE	POOLS DE MINAGE	technique
+praxeologie	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+preference-temporelle	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+prefixes-binaires	INFORMATIQUE	INFORMATIQUE	technique
+preimage	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+premium	COMMUNAUTÉ	ÉCONOMIE ET RÉGULATION	technique
+premix	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+preuve-de-reserves	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+preuve-de-travail	PROTOCOLE	PROTOCOLE	technique
+prime-de-proximite	PROTOCOLE	MINAGE	technique
+private-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+prob-des-generaux-byzantins	ATTAQUE	INFORMATIQUE	technique
+probing	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+profondeur	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+proof-of-key-day	ÉCONOMIE ET RÉGULATION	HISTOIRE ET CULTURE	technique
+proof-of-stake	PROTOCOLE	ALTCOINS ET FORKS	technique
+prop-proportional	MINAGE	POOLS DE MINAGE	technique
+proton-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+psan	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+psbt	PORTEFEUILLE	PORTEFEUILLE	technique
+pseudo-aleatoire	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+ptlc	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+public-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+public-pool	MINAGE	ACTEURS DU MINAGE	ecosysteme
+pull-request	INFORMATIQUE	INFORMATIQUE	technique
+purge-de-mempool	PROTOCOLE	MEMPOOL ET FRAIS	technique
+qr-code	INFORMATIQUE	INFORMATIQUE	technique
+quantitative-easing-qe	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+qubit	INFORMATIQUE	INFORMATIQUE QUANTIQUE	technique
+race-attack	ATTAQUE	ATTAQUE	technique
+racine-de-merkle	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+rangeproofs	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+rapid-gossip-sync	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+raspiblitz	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+raw-transaction	PORTEFEUILLE	TRANSACTIONS	technique
+rbf-replace-by-fee	PORTEFEUILLE	MEMPOOL ET FRAIS	technique
+recompense-de-bloc	PROTOCOLE	PROTOCOLE	technique
+recursif-covenant	PROTOCOLE	COVENANTS	technique
+redeem	RGB	RGB	technique
+redeemscript	SCRIPT	SCRIPT	technique
+regles-de-consensus	PROTOCOLE	PROTOCOLE	technique
+regles-de-standardisation	PROTOCOLE	MEMPOOL ET FRAIS	technique
+regtest	PROTOCOLE	RÉSEAU	technique
+relais-nostr	RÉSEAU	NOSTR	technique
+relais	MINAGE	MINAGE	technique
+rendez-vous-routing	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+replacement-cycling	ATTAQUE	ATTAQUE	technique
+replay-attack	ATTAQUE	ATTAQUE	technique
+reseau-bitcoin	RÉSEAU	RÉSEAU	technique
+reserve-strategique-de-bitcoin	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+reserves-fractionnaires	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+resistance-au-partitionnement	INFORMATIQUE	RÉSEAU	technique
+resynchronisation	PROTOCOLE	PROTOCOLE	technique
+retention-de-bloc	ATTAQUE	ATTAQUE	technique
+reutilisation-d-adresse-ext	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+reutilisation-d-adresse-int	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+reutilisation-d-adresse	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+revault	PORTEFEUILLE	PORTEFEUILLE	technique
+revokeandack	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+rgb	RGB	RGB	technique
+ricochet	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+riot-platforms	MINAGE	ACTEURS DU MINAGE	ecosysteme
+ripemd160	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+risc-zero	ORGANISATION	ENTREPRISE	ecosysteme
+risque-de-contrepartie	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+roast	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+robosats	OUTIL	PLATEFORME D'ÉCHANGE	ecosysteme
+rollup	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+round-ark	COUCHE SUPÉRIEURE	ARK	technique
+routage-en-oignon	RÉSEAU	RÉSEAU	technique
+rpc-remote-procedure-call	INFORMATIQUE	INFORMATIQUE	technique
+rpow	HISTOIRE	HISTOIRE ET CULTURE	technique
+rsk	SIDECHAIN	SIDECHAIN	technique
+rsmpps	MINAGE	POOLS DE MINAGE	technique
+rtl-ride-the-lightning	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+runes	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+rust-bitcoin	OUTIL	OUTIL DE DÉVELOPPEMENT	ecosysteme
+rust-lightning	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+samourai-wallet	CONFIDENTIALITÉ	PORTEFEUILLE LOGICIEL	ecosysteme
+sat-satoshi	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+satochip	ORGANISATION	ENTREPRISE	ecosysteme
+satodime	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+satoshidice	HISTOIRE	SERVICE ET PAIEMENT	ecosysteme
+satoshilabs	ORGANISATION	ENTREPRISE	ecosysteme
+satscard	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+sbi-crypto	MINAGE	ACTEURS DU MINAGE	ecosysteme
+scalabilite	PROTOCOLE	PROTOCOLE	technique
+scb-static-channel-backup	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+schema	RGB	RGB	technique
+schnorr-protocole	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+scid-short-channel-id	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+score-de-boltzmann	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+score-score-based-method	MINAGE	POOLS DE MINAGE	technique
+script	SCRIPT	SCRIPT	technique
+scriptless-scripts	SCRIPT	SCRIPT	technique
+scriptpubkey	SCRIPT	SCRIPT	technique
+scriptsig	SCRIPT	SCRIPT	technique
+scriptwitness	SCRIPT	SCRIPT	technique
+sdk-software-development-kit	OUTIL	INFORMATIQUE	technique
+se-spark-entity	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+seal-definition	RGB	RGB	technique
+secp256k1	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+secp256r1	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+secpool	MINAGE	ACTEURS DU MINAGE	ecosysteme
+secure-element	PORTEFEUILLE	PORTEFEUILLE	technique
+seed-nodes	RÉSEAU	RÉSEAU	technique
+seedkeeper	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+seedqr	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+seedsigner	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+seedxor	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+segwit-v0	PORTEFEUILLE	SCRIPT	technique
+segwit-v1	PORTEFEUILLE	SCRIPT	technique
+segwit	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+segwit2x	HISTOIRE	HISTOIRE ET CULTURE	technique
+seigneuriage	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+selection-des-pieces	PORTEFEUILLE	PORTEFEUILLE	technique
+self-custody	PORTEFEUILLE	PORTEFEUILLE	technique
+selfish-mining	ATTAQUE	ATTAQUE	technique
+sentinel	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+sequenceur	COUCHE SUPÉRIEURE	ROLLUPS ET BITVM	technique
+settings-json	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+sha256	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+sha512	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+shamir-secret-sharing-sss	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+shards-lightning	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+shards-rgb	RGB	RGB	technique
+sharedcoin	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+shares-difficulty	MINAGE	POOLS DE MINAGE	technique
+shares	MINAGE	POOLS DE MINAGE	technique
+shitcoin	ÉCONOMIE ET RÉGULATION	ALTCOINS ET FORKS	technique
+shor-algorithme	INFORMATIQUE	INFORMATIQUE QUANTIQUE	technique
+sidecar-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+sidecar-ticket	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+sidechain	SIDECHAIN	SIDECHAIN	technique
+sighash-all-sighash-acp	PROTOCOLE	TRANSACTIONS	technique
+sighash-all	PROTOCOLE	TRANSACTIONS	technique
+sighash-anyprevout	PROTOCOLE	COVENANTS	technique
+sighash-anyprevoutanyscript	PROTOCOLE	COVENANTS	technique
+sighash-flag	PROTOCOLE	TRANSACTIONS	technique
+sighash-none-0x02	PROTOCOLE	TRANSACTIONS	technique
+sighash-none-sighash-acp	PROTOCOLE	TRANSACTIONS	technique
+sighash-single-0x03	PROTOCOLE	TRANSACTIONS	technique
+sighash-single-sighash-acp	PROTOCOLE	TRANSACTIONS	technique
+sign-to-contract	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+signaling	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+signature-aveugle	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+signature-numerique	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+signer-a-l-aveugle	PORTEFEUILLE	PORTEFEUILLE	technique
+signet	PROTOCOLE	RÉSEAU	technique
+sigops-signature-operations	PROTOCOLE	TRANSACTIONS	technique
+silent-payments	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+silk-road	ORGANISATION	SERVICE ET PAIEMENT	ecosysteme
+simplicity	SCRIPT	SCRIPT	technique
+simplified-payment-verification	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+single-sig	PORTEFEUILLE	PORTEFEUILLE	technique
+single-use-seal	RGB	RGB	technique
+slip	COMMUNAUTÉ	ÉVOLUTION DU PROTOCOLE	technique
+small-blockers	HISTOIRE	HISTOIRE ET CULTURE	technique
+smpps	MINAGE	POOLS DE MINAGE	technique
+smt-sparse-merkle-tree	INFORMATIQUE	INFORMATIQUE	technique
+snapshot	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+snark	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+so-spark-operator	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+soft-fork	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+solo-mining	MINAGE	POOLS DE MINAGE	technique
+somme-de-controle	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+soroban	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+sortie-la-plus-grande	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+sortie-non-rentable	ATTAQUE	TRANSACTIONS	technique
+sourceforge	INFORMATIQUE	INFORMATIQUE	technique
+spark-service-provider	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+spark-tree	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+spark	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+sparkscan	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+sparrow-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+specter	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+speedy-trial	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+sphinx	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+spiderpool	MINAGE	ACTEURS DU MINAGE	ecosysteme
+spiral	ORGANISATION	ENTREPRISE	ecosysteme
+splicing	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+spof	INFORMATIQUE	INFORMATIQUE	technique
+spread-wst	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+spy-mining	MINAGE	POOLS DE MINAGE	technique
+src-20	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+stablecoin	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+stacker	COMMUNAUTÉ	HISTOIRE ET CULTURE	technique
+stale-share	MINAGE	POOLS DE MINAGE	technique
+stamps	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+stark	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+start9	OUTIL	ENTREPRISE	ecosysteme
+stash	RGB	RGB	technique
+state-extension	RGB	RGB	technique
+state-transition	RGB	RGB	technique
+statechain	COUCHE SUPÉRIEURE	SPARK ET STATECHAINS	technique
+stealth-address	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+steganographie	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+stonewall-x2	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+stonewall	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+stratum-v2	MINAGE	POOLS DE MINAGE	technique
+stratum	MINAGE	POOLS DE MINAGE	technique
+stuckless-payment	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+submarine-swap	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+subvention-de-bloc	PROTOCOLE	PROTOCOLE	technique
+surcouche	COUCHE SUPÉRIEURE	COUCHE SUPÉRIEURE	technique
+surface-d-attaque	INFORMATIQUE	INFORMATIQUE	technique
+swap-in-potentiam	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+swaproot	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+sweep-transaction	CONFIDENTIALITÉ	ANALYSE DE CHAÎNE	technique
+swiss-bitcoin-pay	OUTIL	SERVICE ET PAIEMENT	ecosysteme
+sybil	ATTAQUE	ATTAQUE	technique
+synonym	ORGANISATION	ENTREPRISE	ecosysteme
+tail-emission	PROTOCOLE	PROTOCOLE	technique
+tapd	OUTIL	IMPLÉMENTATION	ecosysteme
+taproot-assets-protocol	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+taproot-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+taproot	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+tapscript	SCRIPT	SCRIPT	technique
+tapsigner	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+taro	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+tcp	RÉSEAU	RÉSEAU	technique
+temoin-de-transaction	PROTOCOLE	TRANSACTIONS	technique
+ten31	ORGANISATION	ENTREPRISE	ecosysteme
+terminal-consignement	RGB	RGB	technique
+testnet-reset	RÉSEAU	RÉSEAU	technique
+testnet	PROTOCOLE	RÉSEAU	technique
+testnet4	RÉSEAU	RÉSEAU	technique
+the-dao	HISTOIRE	HISTOIRE ET CULTURE	technique
+the-eye-of-satoshi	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+thunderhub	OUTIL	LOGICIEL LIGHTNING	ecosysteme
+tides	MINAGE	POOLS DE MINAGE	technique
+time-dilation-attack	ATTAQUE	ATTAQUE	technique
+time-warp	ATTAQUE	ATTAQUE	technique
+timelock	PROTOCOLE	TRANSACTIONS	technique
+tlv	INFORMATIQUE	INFORMATIQUE	technique
+tor-the-onion-router	RÉSEAU	RÉSEAU	technique
+tprv	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+tpub	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+trampoline-routing	LIGHTNING NETWORK	PAIEMENTS LIGHTNING	technique
+transaction-collaborative	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+transaction-d-engagement	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+transaction-de-financement	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+transaction-de-notification	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+transaction-de-penalite	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+transaction-non-confirmee	PROTOCOLE	MEMPOOL ET FRAIS	technique
+transaction-pinning	ATTAQUE	ATTAQUE	technique
+transaction-standard	PROTOCOLE	MEMPOOL ET FRAIS	technique
+transition-bundle	RGB	RGB	technique
+trezor	PORTEFEUILLE	PORTEFEUILLE MATÉRIEL	ecosysteme
+trimmed-htlc	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+tumblebit	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+turbo-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+tweak	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+twentytwo-devices	ORGANISATION	ENTREPRISE	ecosysteme
+tx-transaction	PROTOCOLE	TRANSACTIONS	technique
+tx0	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+txid-transaction-identifier	PROTOCOLE	TRANSACTIONS	technique
+type-de-devise	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+uasf	PROTOCOLE	ÉVOLUTION DU PROTOCOLE	technique
+udp-user-datagram-protocol	RÉSEAU	RÉSEAU	technique
+umbrel	OUTIL	NŒUD ET EXPLORATEUR	ecosysteme
+unique-assets	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+universe	COUCHE SUPÉRIEURE	ACTIFS SUR BITCOIN	technique
+unix	INFORMATIQUE	INFORMATIQUE	technique
+uprv	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+upub	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+uri	INFORMATIQUE	INFORMATIQUE	technique
+utreexo	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+utxo-set	PROTOCOLE	TRANSACTIONS	technique
+utxo	PROTOCOLE	TRANSACTIONS	technique
+valency	RGB	RGB	technique
+validationless-mining	MINAGE	MINAGE	technique
+value-overflow-incident	HISTOIRE	HISTOIRE ET CULTURE	technique
+vanity-address	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+vanitygen	OUTIL	OUTIL DE DÉVELOPPEMENT	ecosysteme
+variance	MINAGE	POOLS DE MINAGE	technique
+vault	PORTEFEUILLE	PORTEFEUILLE	technique
+vbytes	PROTOCOLE	TRANSACTIONS	technique
+versionnage	INFORMATIQUE	INFORMATIQUE	technique
+vexl	OUTIL	PLATEFORME D'ÉCHANGE	ecosysteme
+viabtc	MINAGE	ACTEURS DU MINAGE	ecosysteme
+vin	PROTOCOLE	TRANSACTIONS	technique
+virgin-bitcoin	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+vls-validating-lightning-signer	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+volatilite	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+voltage	ORGANISATION	SERVICE ET PAIEMENT	ecosysteme
+vout	PROTOCOLE	TRANSACTIONS	technique
+vprv	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+vpub	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+vtxo	COUCHE SUPÉRIEURE	ARK	technique
+vulnerabilite-de-murch-zawy	PROTOCOLE	ATTAQUE	technique
+wabisabi	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+wallet-dat	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+wallet-import-format-wif	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+wallet-of-satoshi	LIGHTNING NETWORK	PORTEFEUILLE LOGICIEL	ecosysteme
+wallets-db-log	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+wasabi-wallet	PORTEFEUILLE	PORTEFEUILLE LOGICIEL	ecosysteme
+watch-only-wallet	PORTEFEUILLE	PORTEFEUILLE	technique
+watchmen	SIDECHAIN	SIDECHAIN	technique
+watchtower	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+weight-unit	PROTOCOLE	TRANSACTIONS	technique
+whale	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+whirlpool-stat-tool	CONFIDENTIALITÉ	OUTIL DE CONFIDENTIALITÉ	ecosysteme
+whirlpool	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+white-paper	HISTOIRE	HISTOIRE ET CULTURE	technique
+witness-transaction	RGB	RGB	technique
+witnessscript	SCRIPT	SCRIPT	technique
+wizardsardine	COMMUNAUTÉ	ENTREPRISE	ecosysteme
+wrench-attack	ATTAQUE	ATTAQUE	technique
+wtxid	PROTOCOLE	TRANSACTIONS	technique
+wumbo-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+x-only-public-keys	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+xbt	ÉCONOMIE ET RÉGULATION	ÉCONOMIE ET RÉGULATION	technique
+xmr-monero	ÉCONOMIE ET RÉGULATION	ALTCOINS ET FORKS	technique
+xor	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+xprv	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+xpub	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+yprv	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+ypub	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+zap	LIGHTNING NETWORK	NOSTR	technique
+zbd	ORGANISATION	ENTREPRISE	ecosysteme
+zeroconf	PROTOCOLE	MEMPOOL ET FRAIS	technique
+zerolink	CONFIDENTIALITÉ	CONFIDENTIALITÉ	technique
+zerosync	PROTOCOLE	FONCTIONNEMENT DU NŒUD	technique
+zeus	LIGHTNING NETWORK	LOGICIEL LIGHTNING	ecosysteme
+zkp-zero-knowledge-proof	CRYPTOGRAPHIE	CRYPTOGRAPHIE	technique
+zksnacks	ORGANISATION	ENTREPRISE	ecosysteme
+zmq-zeromq	INFORMATIQUE	INFORMATIQUE	technique
+zombie-channel	LIGHTNING NETWORK	LIGHTNING NETWORK	technique
+zprv	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique
+zpub	PORTEFEUILLE	CLÉS ET DÉRIVATION	technique

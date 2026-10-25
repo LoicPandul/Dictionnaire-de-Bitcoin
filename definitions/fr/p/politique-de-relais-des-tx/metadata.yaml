@@ -1,7 +1,7 @@
 uuid: "a184573c-7acd-4bd3-9618-25a1eb44d4aa"
 title: "POLITIQUE DE RELAIS DES TX"
 slug: "politique-de-relais-des-tx"
-category: "RÉSEAU"
+category: "MEMPOOL ET FRAIS"
 english_term: "TRANSACTION RELAY POLICY"
 cross_references:
   - "f83f1367-fa30-4cbd-bc65-6cb6270f5f26"

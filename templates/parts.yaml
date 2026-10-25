@@ -1,0 +1,145 @@
+# Parties du livre et catégories de chaque partie (édition 2027).
+#
+# La partie d'une définition se déduit de sa catégorie : chaque catégorie de
+# categories.yaml est rangée dans une seule partie ci-dessous. `pictogram` est le nom
+# du fichier de assets/pictograms/ (sans extension) imprimé à côté de la catégorie.
+# `letter_pages` : une page entière par lettre (sinon un intertitre).
+
+parts:
+  - id: technique
+    title: "Dictionnaire technique"
+    letter_pages: true
+    categories:
+      - name: "PROTOCOLE"
+        pictogram: "protocole"
+      - name: "TRANSACTIONS"
+        pictogram: "transactions"
+      - name: "MEMPOOL ET FRAIS"
+        pictogram: "mempool"
+      - name: "ÉVOLUTION DU PROTOCOLE"
+        pictogram: "evolution-du-protocole"
+      - name: "FONCTIONNEMENT DU NŒUD"
+        pictogram: "noeud"
+      - name: "RÉSEAU"
+        pictogram: "reseau"
+      - name: "SCRIPT"
+        pictogram: "script"
+      - name: "OPCODES"
+        pictogram: "opcodes"
+      - name: "COVENANTS"
+        pictogram: "covenants"
+      - name: "CLÉS ET DÉRIVATION"
+        pictogram: "cles-et-derivation"
+      - name: "PORTEFEUILLE"
+        pictogram: "portefeuille"
+      - name: "MINAGE"
+        pictogram: "minage"
+      - name: "POOLS DE MINAGE"
+        pictogram: "pools-de-minage"
+      - name: "CRYPTOGRAPHIE"
+        pictogram: "cryptographie"
+      - name: "INFORMATIQUE"
+        pictogram: "informatique"
+      - name: "INFORMATIQUE QUANTIQUE"
+        pictogram: "quantique"
+      - name: "CONFIDENTIALITÉ"
+        pictogram: "confidentialite"
+      - name: "ANALYSE DE CHAÎNE"
+        pictogram: "analyse-de-chaine"
+      - name: "ATTAQUE"
+        pictogram: "attaque"
+      - name: "ÉCONOMIE ET RÉGULATION"
+        pictogram: "economie-et-regulation"
+      - name: "ALTCOINS ET FORKS"
+        pictogram: "altcoins"
+      - name: "HISTOIRE ET CULTURE"
+        pictogram: "histoire"
+      - name: "LIGHTNING NETWORK"
+        pictogram: "lightning-network"
+      - name: "PAIEMENTS LIGHTNING"
+        pictogram: "paiements-lightning"
+      - name: "ARK"
+        pictogram: "ark"
+      - name: "SPARK ET STATECHAINS"
+        pictogram: "spark"
+      - name: "SIDECHAIN"
+        pictogram: "sidechain"
+      - name: "RGB"
+        pictogram: "rgb"
+      - name: "ACTIFS SUR BITCOIN"
+        pictogram: "actifs"
+      - name: "ROLLUPS ET BITVM"
+        pictogram: "rollups"
+      - name: "NOSTR"
+        pictogram: "nostr"
+      - name: "ECASH"
+        pictogram: "ecash"
+      - name: "COUCHE SUPÉRIEURE"
+        pictogram: "couche-superieure"
+
+  - id: ecosysteme
+    title: "Entreprises, applications et logiciels"
+    intro: >
+      Les entreprises, associations, logiciels, portefeuilles, matériels et services qui
+      font l'écosystème de Bitcoin. Les mécanismes qu'ils mettent en œuvre sont définis
+      dans le dictionnaire technique.
+    letter_pages: false
+    categories:
+      - name: "PORTEFEUILLE LOGICIEL"
+        pictogram: "portefeuille-logiciel"
+      - name: "PORTEFEUILLE MATÉRIEL"
+        pictogram: "portefeuille-materiel"
+      - name: "IMPLÉMENTATION"
+        pictogram: "implementation"
+      - name: "LOGICIEL LIGHTNING"
+        pictogram: "logiciel-lightning"
+      - name: "OUTIL DE DÉVELOPPEMENT"
+        pictogram: "outil"
+      - name: "NŒUD ET EXPLORATEUR"
+        pictogram: "noeud-et-explorateur"
+      - name: "OUTIL DE CONFIDENTIALITÉ"
+        pictogram: "outil-de-confidentialite"
+      - name: "ACTEURS DU MINAGE"
+        pictogram: "acteurs-du-minage"
+      - name: "PLATEFORME D'ÉCHANGE"
+        pictogram: "plateforme-d-echange"
+      - name: "SERVICE ET PAIEMENT"
+        pictogram: "service-et-paiement"
+      - name: "ENTREPRISE"
+        pictogram: "organisation"
+      - name: "COMMUNAUTÉ ET FONDATION"
+        pictogram: "communaute"
+
+  - id: personnes
+    title: "Personnes"
+    intro: >
+      Les personnes dont les travaux, les idées ou les actes ont compté dans l'histoire de
+      Bitcoin : cypherpunks, cryptographes, économistes, développeurs et figures de
+      l'écosystème.
+    letter_pages: false
+    categories:
+      - name: "CYPHERPUNK"
+        pictogram: "cypherpunk"
+      - name: "CRYPTOGRAPHE ET INFORMATICIEN"
+        pictogram: "cryptographe-et-informaticien"
+      - name: "ÉCONOMISTE"
+        pictogram: "economiste"
+      - name: "DÉVELOPPEUR BITCOIN"
+        pictogram: "developpeur-bitcoin"
+      - name: "DÉVELOPPEUR DE SURCOUCHES"
+        pictogram: "developpeur-de-surcouches"
+      - name: "FIGURE DE L'ÉCOSYSTÈME"
+        pictogram: "figure-de-l-ecosysteme"
+
+  - id: specifications
+    title: "Spécifications"
+    letter_pages: false
+    categories:
+      - name: "BIP"
+        pictogram: "bip"
+      - name: "BOLT"
+        pictogram: "bolt"
+      - name: "BLIP"
+        pictogram: "blip"
+      - name: "NIP"
+        pictogram: "nip"

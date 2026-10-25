@@ -1,90 +1,282 @@
-# Liste des catégories de définitions du glossaire
+# Liste des catégories de définitions du dictionnaire (édition 2027).
+#
+# Chaque catégorie appartient à une partie du livre (templates/parts.yaml). Le
+# commentaire au-dessus de chaque nom décrit son périmètre ; le site le reprend
+# tel quel comme description de la catégorie.
 categories:
-  # Les définitions des attaques et vulnérabilités associées à Bitcoin, ou à des
-  # concepts connexes.
-  - ATTAQUE
 
-  # Uniquement les définitions relatives aux Bitcoin Improvement Proposals (BIP).
-  - BIP
-
-  # Tout ce qui concerne l'organisation des humains autour de Bitcoin.
-  - COMMUNAUTÉ
-
-  # L'ensemble des définitions traitant de la protection de la vie privée au sein
-  # de l'écosystème Bitcoin. Elle inclut les protocoles et les techniques (tels que
-  # coinjoin) conçus pour améliorer la confidentialité des transactions, mais
-  # n'inclut pas les logiciels et portefeuilles qui seront dans la catégorie
-  # « Outil ».
-  - CONFIDENTIALITÉ
-
-  # Toutes les définitions associées aux systèmes de seconde couche qui ne relèvent
-  # pas des sidechains, de RGB ou du Lightning Network.
-  - COUCHE SUPÉRIEURE
-
-  # Toutes les définitions liées aux principes et techniques cryptographiques
-  # appliqués en général, en dehors des cas spécifiques liés aux portefeuilles. Elle
-  # aborde ainsi les algorithmes, les protocoles de chiffrement et les méthodes de
-  # signature.
-  - CRYPTOGRAPHIE
-
-  # Toutes les définitions relatives aux aspects économiques, politiques,
-  # réglementaires et légaux influant sur Bitcoin.
-  - ÉCONOMIE ET RÉGULATION
-
-  # Les définitions des événements et concepts historiques propres à Bitcoin. Elles
-  # couvrent l'évolution, les faits marquants et les figures
-  # emblématiques qui ont contribué à son développement. Les définitions avec des
-  # noms de personnes ou des pseudos se trouveront ici.
-  - HISTOIRE
-
-  # L'ensemble des définitions relatives aux concepts informatiques généraux qui ne
-  # sont pas spécifiquement liés à Bitcoin, tout en excluant celles relevant de la
-  # catégorie « Cryptographie ». Elle couvre donc des notions techniques et
-  # théoriques en informatique qui enrichissent la compréhension globale de
-  # l'écosystème Bitcoin.
-  - INFORMATIQUE
-
-  # Tous les termes propres au Lightning Network, notamment les mécanismes de canaux
-  # de paiement, la gestion des transactions hors chaîne et les innovations
-  # techniques spécifiques à Lightning. Les définitions des noms de portefeuilles ou
-  # logiciels dédiés au Lightning Network sont classées dans la catégorie « Outil ».
-  - LIGHTNING NETWORK
-
-  # L'ensemble des termes se rapportant au minage sur Bitcoin en dehors du
-  # protocole, c'est-à-dire aux infrastructures associées (fermes, pools, ASICs,
-  # etc.).
-  - MINAGE
-
-  # Entreprises et associations travaillant sur Bitcoin.
-  - ORGANISATION
-
-  # L'ensemble des logiciels, matériels et implémentations techniques qui ne
-  # trouvent pas leur place dans les autres catégories. Elle comprend par exemple les
-  # portefeuilles logiciels, les hardware wallets et autres outils d'analyse ou de
-  # gestion utilisés dans l'écosystème Bitcoin.
-  - OUTIL
-
-  # Les définitions concernant les portefeuilles Bitcoin et les mécanismes de
-  # dérivation de clés. Les termes désignant les noms de logiciels de portefeuilles
-  # et les hardware wallets seront traités dans la catégorie « Outil ».
-  - PORTEFEUILLE
-
-  # L'ensemble des définitions se rapportant exclusivement au protocole Bitcoin dans
-  # son ensemble. Elle exclut toutefois les définitions associées aux couches
-  # supérieures (telles que RGB, sidechains, Lightning, etc.), aux portefeuilles,
-  # ainsi qu'au réseau Bitcoin.
+  # Les définitions des structures et des règles de base du protocole Bitcoin : blocs,
+  # blockchain, preuve de travail, consensus, émission monétaire et horodatage du
+  # réseau. Elle exclut les transactions, la mempool, le réseau pair-à-pair, le nœud et
+  # les mises à jour du protocole, qui ont chacun leur propre catégorie.
   - PROTOCOLE
 
-  # Toutes les définitions spécifiques au protocole RGB.
-  - RGB
+  # Toutes les définitions liées à la structure d'une transaction Bitcoin : entrées et
+  # sorties, UTXO, identifiants, champs de la transaction, témoin, SigHash et timelocks.
+  # Elle couvre aussi les sorties particulières (poussière, OP_RETURN) et la notion de
+  # confirmation.
+  - TRANSACTIONS
 
-  # Toutes les définitions liées à la partie réseau de Bitcoin.
+  # Les définitions relatives aux transactions en attente de confirmation : mempool,
+  # politique de relais, règles de standardisation, frais et taux de frais, et
+  # mécanismes qui permettent d'accélérer une transaction (RBF, CPFP).
+  - MEMPOOL ET FRAIS
+
+  # Les définitions qui décrivent la manière dont les règles de Bitcoin changent :
+  # processus des BIP et rôles des développeurs de Bitcoin Core, soft forks et hard
+  # forks, méthodes d'activation, mises à jour déployées (SegWit, Taproot) et
+  # propositions de modification du consensus, hors covenants.
+  - ÉVOLUTION DU PROTOCOLE
+
+  # Les définitions qui concernent le nœud Bitcoin : types de nœuds, synchronisation
+  # initiale, élagage, clients légers, index et serveurs d'adresses. Elle regroupe aussi
+  # les fichiers et dossiers du répertoire de données de Bitcoin Core. Le logiciel
+  # Bitcoin Core lui-même est dans la partie écosystème.
+  - FONCTIONNEMENT DU NŒUD
+
+  # Toutes les définitions liées au réseau pair-à-pair de Bitcoin : découverte et
+  # gestion des pairs, messages, propagation des blocs et des transactions, réseaux
+  # d'anonymisation (Tor, I2P) et réseaux de test.
   - RÉSEAU
 
-  # Toutes les définitions concernant le langage Script utilisé sur Bitcoin, ce qui
-  # inclut notamment les définitions d'opcodes, les spécificités du langage Script
-  # et de ses variantes, telles que Miniscript.
+  # Toutes les définitions concernant le langage Script, hors opcodes : scripts de
+  # verrouillage et de déverrouillage, modèles de scripts standards (P2PKH, P2WPKH,
+  # P2TR…), versions de SegWit, Tapscript et langages de plus haut niveau comme
+  # Miniscript ou Simplicity.
   - SCRIPT
 
-  # Les termes relatifs aux sidechains, notamment Liquid et les drivechains.
+  # Une définition par opcode du langage Script, qu'il soit actif, désactivé ou réservé
+  # (OP_NOP, OP_SUCCESS), plus la définition générale des opcodes. Les opcodes proposés
+  # pour introduire des covenants sont dans la catégorie « Covenants ».
+  - OPCODES
+
+  # Les définitions des covenants, c'est-à-dire des conditions qui restreignent la
+  # manière dont une pièce pourra être dépensée, et des propositions de soft fork qui
+  # les rendraient possibles : opcodes (OP_CHECKTEMPLATEVERIFY, OP_CAT, OP_VAULT…),
+  # SigHash ANYPREVOUT et constructions comme MATT.
+  - COVENANTS
+
+  # Les définitions relatives aux clés et à leur dérivation : clés privées et publiques,
+  # portefeuilles HD, chemins de dérivation, phrases de récupération et passphrase, clés
+  # étendues et leurs préfixes, descriptors, ainsi que les formats d'encodage des clés
+  # et des adresses.
+  - CLÉS ET DÉRIVATION
+
+  # Les définitions concernant l'usage et la sécurisation d'un portefeuille Bitcoin :
+  # types de portefeuilles, multisig, sélection des pièces, étiquetage, PSBT, signature
+  # hors ligne et vaults. Les noms de logiciels de portefeuille et de hardware wallets
+  # sont dans la partie écosystème.
+  - PORTEFEUILLE
+
+  # L'ensemble des termes se rapportant à l'activité de minage : construction du bloc
+  # candidat, difficulté et hashrate, matériel (ASIC, hashboards, refroidissement),
+  # énergie et installations. Les pools et la rémunération des mineurs ont leur propre
+  # catégorie.
+  - MINAGE
+
+  # Les définitions relatives au minage en commun : fonctionnement des pools, shares,
+  # méthodes de rémunération des mineurs (PPS, FPPS, PPLNS, TIDES…), protocoles de
+  # communication entre la pool et les mineurs (Stratum), pools décentralisées et minage
+  # solo.
+  - POOLS DE MINAGE
+
+  # Toutes les définitions liées aux principes et techniques cryptographiques appliqués
+  # en général : fonctions de hachage, courbes elliptiques, signatures numériques et
+  # multisignatures, chiffrement, engagements et preuves à divulgation nulle de
+  # connaissance.
+  - CRYPTOGRAPHIE
+
+  # L'ensemble des définitions relatives aux concepts informatiques généraux qui ne sont
+  # pas propres à Bitcoin, hors cryptographie : numération et encodage, structures de
+  # données, systèmes distribués, développement logiciel (Git, licences) et outils
+  # généralistes utilisés par Bitcoin Core (LevelDB, ZeroMQ…).
+  - INFORMATIQUE
+
+  # Les définitions liées à l'informatique quantique et à ses conséquences pour la
+  # cryptographie de Bitcoin : notions de base, algorithmes quantiques (Shor, Grover),
+  # signatures post-quantiques et propositions de migration.
+  - INFORMATIQUE QUANTIQUE
+
+  # L'ensemble des définitions traitant de la protection de la vie privée sur Bitcoin :
+  # coinjoin et ses protocoles (Whirlpool, WabiSabi…), payjoin, Silent Payments, codes
+  # de paiement réutilisables et autres structures de transaction conçues pour casser le
+  # traçage. Les logiciels sont dans la partie écosystème.
+  - CONFIDENTIALITÉ
+
+  # Les définitions relatives à l'analyse de chaîne, c'est-à-dire aux méthodes qui
+  # servent à tracer les flux de bitcoins : heuristiques internes et externes, modèles
+  # de transaction, réutilisation d'adresse, empreintes de portefeuille et indicateurs
+  # de confidentialité (anonsets, score de Boltzmann).
+  - ANALYSE DE CHAÎNE
+
+  # Les définitions des attaques et vulnérabilités associées à Bitcoin et à ses
+  # surcouches : double dépense, attaques sur le minage, sur le réseau pair-à-pair, sur
+  # les canaux Lightning et sur les utilisateurs.
+  - ATTAQUE
+
+  # Toutes les définitions relatives aux aspects économiques, politiques, réglementaires
+  # et légaux qui touchent Bitcoin : théorie monétaire, marché et unités de compte,
+  # garde des fonds, réglementation (KYC, AML, PSAN).
+  - ÉCONOMIE ET RÉGULATION
+
+  # Les définitions des cryptomonnaies autres que le bitcoin, des forks de Bitcoin
+  # (Bitcoin Cash, Bitcoin SV…) et des mécanismes propres à ces systèmes, comme la
+  # preuve d'enjeu. Les sidechains de Bitcoin ont leur propre catégorie.
+  - ALTCOINS ET FORKS
+
+  # Les définitions des événements, des précurseurs et des concepts historiques de
+  # Bitcoin : monnaies électroniques d'avant 2009, Blocksize War, incidents marquants.
+  # Elle couvre aussi la culture de la communauté (HODL, pilule orange, Pizza Day). Les
+  # personnes sont dans la partie personnes.
+  - HISTOIRE ET CULTURE
+
+  # Tous les termes du Lightning Network qui concernent les canaux de paiement :
+  # ouverture, mise à jour et fermeture, transactions d'engagement et de pénalité, HTLC,
+  # gestion de la liquidité et swaps avec la chaîne principale. Les logiciels et
+  # implémentations Lightning sont dans la partie écosystème.
+  - LIGHTNING NETWORK
+
+  # Les définitions relatives à l'envoi et au routage des paiements sur le Lightning
+  # Network : factures et offers, recherche de chemin, routage en oignon, frais de
+  # routage, paiements multi-chemins et protocoles applicatifs comme LNURL ou L402.
+  - PAIEMENTS LIGHTNING
+
+  # Toutes les définitions spécifiques au protocole Ark : VTXO, rounds, rôle de l'Ark
+  # Service Provider, transactions propres au protocole et variantes comme clArk.
+  - ARK
+
+  # Les définitions des statechains et du protocole Spark, qui transfèrent la propriété
+  # d'un UTXO hors chaîne grâce à une clé partagée avec un groupe d'opérateurs.
+  - SPARK ET STATECHAINS
+
+  # Les termes relatifs aux sidechains : ancrage bilatéral, peg-in et peg-out, minage
+  # fusionné, drivechains et fédérations, ainsi que les réseaux Liquid et RSK.
   - SIDECHAIN
+
+  # Toutes les définitions spécifiques au protocole RGB et à la validation côté client
+  # sur laquelle il repose.
+  - RGB
+
+  # Les définitions des protocoles qui émettent ou représentent des actifs sur Bitcoin,
+  # hors RGB : colored coins, Omni et Counterparty, Ordinals et inscriptions, Runes,
+  # BRC-20, Stamps et Taproot Assets.
+  - ACTIFS SUR BITCOIN
+
+  # Les définitions relatives aux rollups construits sur Bitcoin et à BitVM : principes
+  # de fonctionnement, séquenceurs, ponts et réseaux déployés comme Citrea.
+  - ROLLUPS ET BITVM
+
+  # Toutes les définitions spécifiques au protocole Nostr : événements, relais, clés et
+  # leurs encodages, le terme générique NIP, et les usages liés à Bitcoin (zaps, Nostr
+  # Wallet Connect).
+  - NOSTR
+
+  # Les définitions des systèmes de monnaie électronique chaumienne construits sur
+  # Bitcoin, comme Cashu et Fedimint : mints et fédérations de gardiens qui émettent des
+  # jetons au porteur, et signatures aveugles qui empêchent l'émetteur de relier les
+  # paiements.
+  - ECASH
+
+  # Les notions générales sur les surcouches (off-chain, joinpool, échange atomique) et
+  # les protocoles construits sur Bitcoin qui n'ont pas leur propre catégorie : contrats
+  # à oracle (DLC) et horodatage (OpenTimestamps).
+  - COUCHE SUPÉRIEURE
+
+
+  # Les logiciels de portefeuille Bitcoin sur mobile, ordinateur ou navigateur, y
+  # compris les portefeuilles Lightning et ecash, et ceux qui ne sont plus maintenus.
+  - PORTEFEUILLE LOGICIEL
+
+  # Les hardware wallets et autres dispositifs de signature, les firmwares qui
+  # transforment un appareil en dispositif de signature, et les supports physiques au
+  # porteur (cartes NFC, clés USB à usage unique, pièces Casascius).
+  - PORTEFEUILLE MATÉRIEL
+
+  # Les implémentations du protocole Bitcoin (Bitcoin Core et ses programmes, Bitcoin
+  # Knots, btcd…), leurs forks historiques, et les implémentations d'autres protocoles
+  # construits sur Bitcoin, hors Lightning.
+  - IMPLÉMENTATION
+
+  # Les implémentations du Lightning Network (LND, Core Lightning, Eclair, LDK…), les
+  # interfaces et outils de gestion de nœud, et les services de liquidité et de swap
+  # propres à Lightning.
+  - LOGICIEL LIGHTNING
+
+  # Les bibliothèques, kits de développement et outils en ligne de commande destinés aux
+  # développeurs d'applications Bitcoin, hors Lightning.
+  - OUTIL DE DÉVELOPPEMENT
+
+  # Les distributions de nœud clé en main, les serveurs d'indexation (implémentations
+  # d'Electrum Server, Dojo) et les explorateurs de blocs ou outils d'exploration de la
+  # blockchain.
+  - NŒUD ET EXPLORATEUR
+
+  # Les logiciels de coinjoin, les services de mixage et les outils de mesure de la
+  # confidentialité. Les portefeuilles orientés confidentialité restent dans «
+  # Portefeuille logiciel ».
+  - OUTIL DE CONFIDENTIALITÉ
+
+  # Les pools de minage, les fabricants de machines, les entreprises de minage, ainsi
+  # que les logiciels et matériels de minage désignés par leur nom.
+  - ACTEURS DU MINAGE
+
+  # Les plateformes d'achat et de vente de bitcoins, centralisées ou pair-à-pair,
+  # actives ou fermées.
+  - PLATEFORME D'ÉCHANGE
+
+  # Les services en ligne qui fonctionnent avec Bitcoin, les processeurs et terminaux de
+  # paiement pour commerçants, et les services historiques de monnaie numérique ou de
+  # commerce en ligne (e-gold, Silk Road).
+  - SERVICE ET PAIEMENT
+
+  # Les entreprises qui développent des produits ou des services autour de Bitcoin,
+  # quand la fiche porte sur l'entreprise plutôt que sur un produit précis.
+  - ENTREPRISE
+
+  # Les associations, fondations, centres de recherche et programmes de financement,
+  # ainsi que les médias, forums et listes de diffusion de la communauté Bitcoin.
+  - COMMUNAUTÉ ET FONDATION
+
+
+  # Les membres du mouvement cypherpunk et les militants de la cryptographie dont les
+  # travaux ou les idées ont préparé Bitcoin.
+  - CYPHERPUNK
+
+  # Les chercheurs en cryptographie et en informatique dont les travaux sont utilisés
+  # par Bitcoin : cryptographie à clé publique, fonctions de hachage, signatures,
+  # systèmes distribués.
+  - CRYPTOGRAPHE ET INFORMATICIEN
+
+  # Les économistes et penseurs dont les idées éclairent Bitcoin, en particulier ceux de
+  # l'École autrichienne.
+  - ÉCONOMISTE
+
+  # Le créateur de Bitcoin et les développeurs qui ont contribué au protocole et à ses
+  # implémentations.
+  - DÉVELOPPEUR BITCOIN
+
+  # Les développeurs et chercheurs à l'origine du Lightning Network et des autres
+  # surcouches de Bitcoin (RGB, Ark, Fedimint, Cashu…).
+  - DÉVELOPPEUR DE SURCOUCHES
+
+  # Les entrepreneurs, investisseurs, auteurs et militants qui ont marqué l'histoire de
+  # Bitcoin sans en être développeurs.
+  - FIGURE DE L'ÉCOSYSTÈME
+
+
+  # Une définition par Bitcoin Improvement Proposal numérotée (BIP-0032, BIP-0341…). Le
+  # terme générique « BIP » reste dans la catégorie « Évolution du protocole ».
+  - BIP
+
+  # Une définition par spécification Basis of Lightning Technology numérotée (BOLT-02,
+  # BOLT-11…). Le terme générique « BOLT » reste dans la catégorie « Lightning Network
+  # ».
+  - BOLT
+
+  # Une définition par Bitcoin Lightning Improvement Proposal numérotée (bLIP-0001…). Le
+  # terme générique « bLIP » reste dans la catégorie « Lightning Network ».
+  - BLIP
+
+  # Une définition par Nostr Implementation Possibility numérotée (NIP-05…). Le terme
+  # générique « NIP » reste dans la catégorie « Nostr ».
+  - NIP
