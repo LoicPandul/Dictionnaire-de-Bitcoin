@@ -1,0 +1,1 @@
+Type de sortie *Pay-to-Merkle-Root*, proposé par BIP-0360, qui reprend P2TR sans son chemin de dépense par clé : la sortie ne s'engage que sur la racine d'un arbre de scripts, si bien qu'elle n'expose aucune clé publique à un ordinateur quantique avant la dépense.
