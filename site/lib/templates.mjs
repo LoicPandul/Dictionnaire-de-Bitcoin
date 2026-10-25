@@ -306,6 +306,16 @@ function groupEntries(defs, mode) {
     } else out.push({ ...g, bip: isBip, first: g.label, last: g.label });
   }
   for (const g of out) if (!g.bip) g.label = g.first === g.last ? g.first : `${g.first} – ${g.last}`;
+  // Un libellé en double (« BI » avant et après les BIP) prend les trois premières lettres de ses mots.
+  const trois = (d) => norm(d.title).replace(/[^A-Z0-9]/g, '').slice(0, 3);
+  const compte = new Map();
+  for (const g of out) compte.set(g.label, (compte.get(g.label) || 0) + 1);
+  for (const g of out) {
+    if (g.bip || compte.get(g.label) < 2) continue;
+    const a = trois(g.defs[0]);
+    const b = trois(g.defs.at(-1));
+    g.label = a === b ? a : `${a} – ${b}`;
+  }
   return out;
 }
 
@@ -437,15 +447,15 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   <div class="lettre-info">
     <h1 class="titre lettre-titre">Les mots en ${letter}</h1>
     <p class="enonce">${plural(defs.length, 'mot', 'mots')} du dictionnaire, de <a href="/${defs[0].slug}/">${h(defs[0].title)}</a> à <a href="/${defs.at(-1).slug}/">${h(defs.at(-1).title)}</a>.</p>
-    <figure class="tranche-lettre">
-      <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
-      <figcaption class="note" data-tranche-legende>Un trait par mot, de la première à la dernière entrée de la lettre&#8239;; sa hauteur suit la longueur de la définition. <span data-geste>Survolez les traits.</span></figcaption>
-    </figure>
     <div class="apercu-lettre" aria-live="polite" data-apercu-lettre>
       <p class="apercu-lettre-nom"><a href="/${vedetteLettre.slug}/">${breakable(vedetteLettre.title)}</a></p>
       <p class="apercu-lettre-cat">${h(categoryLabel(vedetteLettre.category))}</p>
       <p class="apercu-lettre-desc">${h(vedetteLettre.description || '')}</p>
     </div>
+    <figure class="tranche-lettre">
+      <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
+      <figcaption class="note" data-tranche-legende>Un trait par mot, de la première à la dernière entrée de la lettre&#8239;; sa hauteur suit la longueur de la définition. <span data-geste>Survolez les traits.</span></figcaption>
+    </figure>
     <nav class="lettres-voisines" aria-label="Lettres voisines">
       ${prev ? `<a href="/lettre/${prev.toLowerCase()}/" rel="prev"><span class="masque">Lettre précédente : </span>${prev}</a>` : ''}
       ${next ? `<a href="/lettre/${next.toLowerCase()}/" rel="next"><span class="masque">Lettre suivante : </span>${next}</a>` : ''}
@@ -560,7 +570,8 @@ export function homePage(data, { assets, jsonLd }) {
     slug: exemple.slug,
     dir: `definitions/fr/${exemple.slug[0]}/${exemple.slug}/`,
     meta: fs.readFileSync(path.join(exemple.sourceDir, 'metadata.yaml'), 'utf8').trim(),
-    body: exemple.body.trim(),
+    // Les deux premières phrases du fichier : un extrait, pas tout le texte.
+    body: `${exemple.body.trim().split(/(?<=\.)\s+/).slice(0, 2).join(' ')} […]`,
   };
   const body = `<section class="jaquette" aria-labelledby="titre">
   <div class="jaquette-couv">
@@ -643,7 +654,7 @@ export function homePage(data, { assets, jsonLd }) {
     <p class="note">Textes sous licence ${site.license}. Pour soutenir l’auteur en Lightning&#8239;: <span class="lightning">${site.lightning}</span>.</p>
   </div>
   <figure class="fichier" data-ui>
-    <figcaption class="fichier-chemin">${h(source.dir)}</figcaption>
+    <figcaption class="fichier-chemin"><code>${h(source.dir)}</code></figcaption>
     <p class="fichier-nom">metadata.yaml</p>
     <pre><code>${h(source.meta)}</code></pre>
     <p class="fichier-nom">definition.md</p>

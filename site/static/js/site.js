@@ -442,6 +442,8 @@
   if (dialog) {
     champ.addEventListener('input', () => (index ? afficher() : charger().then(afficher)));
     champ.addEventListener('keydown', (e) => {
+      // Échap ferme la fenêtre d'un coup (un champ « search » se contenterait d'effacer son texte).
+      if (e.key === 'Escape') { e.preventDefault(); dialog.close(); return; }
       if (e.key === 'ArrowDown') { e.preventDefault(); selectionner(actif + 1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); selectionner(actif - 1); }
       else if (e.key === 'Enter') {

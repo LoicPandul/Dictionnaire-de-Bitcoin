@@ -49,18 +49,18 @@ Le bleu nuit n'apparaît qu'aux deux bouts, comme sur un livre : la jaquette en 
 
 ## 5. Palette
 
-Une impression en deux encres sur un papier, plus un surligneur fluo réservé aux états (ce qu'on vise, ce qu'on sélectionne, ce qui correspond). Le surligneur n'est jamais un aplat de décor, jamais un bouton.
+Une impression en deux encres sur un papier, plus un or de dorure réservé aux états (ce qu'on vise, ce qu'on sélectionne, ce qui correspond) : un trait sous les noms survolés, le fond des correspondances de recherche. Jamais un aplat de décor.
 
 | Rôle | Nom | Hex |
 | --- | --- | --- |
-| Fond des pages | Papier | `#F5F3EE` (l'os du titre, éclairci) |
-| Pas de ton | Sable | `#E2DCCF` |
-| Encre | Bleu nuit | `#193042` (la couverture) |
+| Fond des pages | Papier | `#F4F3F0` (pierre claire, l'os du titre éclairci et désaturé) |
+| Pas de ton | Sable | `#E3DFD6` |
+| Encre | Bleu nuit | `#193042` (la couverture ; `#193040` pour les fonds pleins, la valeur que l'image de l'arbre restitue) |
 | Encre douce | Ardoise | `#4F5F6E` (notes secondaires seulement) |
-| Texte sur bleu nuit | Os | `#EEEAE0` (le titre imprimé) |
+| Texte sur bleu nuit | Os | `#ECEAE5` (le titre imprimé) |
 | Trait sur bleu nuit | Gravure | `#A9BAC8` (l'arbre) |
 | Surface sur bleu nuit | Lavis | `#22405A` |
-| États | Surligneur | `#E4FF5A` |
+| États | Or de dorure | `#E9C46A` (remplace le surligneur fluo après la première relecture, voir revue.md) |
 
 | Texte / fond | Rapport | Niveau |
 | --- | --- | --- |
@@ -71,7 +71,7 @@ Une impression en deux encres sur un papier, plus un surligneur fluo réservé a
 | Os sur Bleu nuit | 11,33 | AAA |
 | Gravure sur Bleu nuit | 6,83 | AA |
 | Os sur Lavis | 8,97 | AAA |
-| Bleu nuit sur Surligneur | 12,15 | AAA |
+| Bleu nuit sur Or | 8,15 | AAA |
 | Papier / Sable (pas de ton) | 1,23 | visible sans filet |
 
 Boutons : Bleu nuit plein, texte Os, sur papier ; Os plein, texte Bleu nuit, sur bleu nuit.
@@ -271,3 +271,7 @@ Note donnée à la version 1 : potentiel 6/10, utilisabilité 5/10, originalité
 | Pictogrammes génériques et lourds. | **Adoptée.** Retracés (0,7 à 10 Ko), utilisés à la taille du texte, intégrés dans la page. |
 | Mode sombre qui efface la métaphore. | **Adoptée.** Fond `#0E1A24`, surfaces `#1F3548`, cartouche inversé ; jaquette et dos restent bleu nuit. |
 | BIP : 195 entrées sous B ; polices trop optimistes. | **Adoptée.** Groupes par centaine ; romain variable et italique 400, sous-ensemble latin. |
+
+## 15. Après la première relecture du site
+
+La relecture indépendante des gabarits construits (voir `revue.md`) a fait changer quatre choses : l'accent passe du jaune-vert fluo à un or de dorure, tiré de l'univers du livre relié ; le mot du jour quitte son bandeau pour s'écrire en Computer Modern sur le dos de la jaquette ; un menu donne enfin la navigation sur téléphone ; les définitions reçoivent des renvois dans leur texte.
