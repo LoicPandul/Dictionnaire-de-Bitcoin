@@ -5,6 +5,7 @@
   const root = d.documentElement;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   root.classList.add('anim');
+  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1');
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
   // ------------------------------------------------------------ Thème
@@ -46,9 +47,9 @@
   }
 
   // ------------------------------------------------------------ Apparitions, une fois
-  const aVoir = d.querySelectorAll('.jour, .feuilleter, .categories, .pages, .alphabet, .groupe, .liste > .entrees');
+  const aVoir = d.querySelectorAll('.feuilleter, .categories, .pages, .alphabet');
   for (const el of aVoir) {
-    const enfants = el.matches('.feuilleter') ? el.querySelectorAll('.blocs li') : el.matches('.categories') ? el.querySelectorAll('.index-ligne') : el.matches('.alphabet') ? el.querySelectorAll('li') : el.matches('.groupe, .entrees') ? el.querySelectorAll('.entrees li') : [];
+    const enfants = el.matches('.feuilleter') ? el.querySelectorAll('.blocs li') : el.matches('.categories') ? el.querySelectorAll('.index-ligne') : el.matches('.alphabet') ? el.querySelectorAll('li') : [];
     // Décalage plafonné : au-delà de douze lignes, tout arrive ensemble.
     enfants.forEach((c, i) => c.style.setProperty('--k', Math.min(i, 12)));
   }
@@ -76,37 +77,69 @@
   const tl = d.querySelector('[data-tranche-lettre]');
   if (tl) {
     const traits = [...tl.querySelectorAll('a')];
+    const hauteurs = traits.map((a) => Number(a.querySelector('rect').getAttribute('height')));
     const fiches = new Map([...d.querySelectorAll('.entree')].map((a) => [a.getAttribute('href'), a.dataset]));
     const boite = d.querySelector('[data-apercu-lettre]');
     const geste = d.querySelector('[data-geste]');
     const tactile = matchMedia('(pointer: coarse)').matches;
     if (geste) geste.textContent = tactile ? 'Glissez le doigt sur les traits, puis touchez le mot.' : 'Survolez les traits.';
+    const NS = 'http://www.w3.org/2000/svg';
+    const vb = tl.viewBox.baseVal;
+    // Le trait visé : une colonne d'or d'au moins 4 px, quelle que soit la densité de la lettre.
+    const marque = d.createElementNS(NS, 'rect');
+    marque.setAttribute('class', 'vise-lettre');
+    marque.setAttribute('y', '0');
+    marque.setAttribute('height', '100');
+    tl.prepend(marque);
+    // Au doigt : une loupe des 21 traits autour du doigt.
+    const loupe = d.createElement('div');
+    loupe.className = 'loupe-traits';
+    loupe.setAttribute('aria-hidden', 'true');
+    loupe.innerHTML = Array.from({ length: 21 }, () => '<span></span>').join('');
+    loupe.hidden = true;
+    tl.parentElement.style.position = 'relative';
+    tl.parentElement.prepend(loupe);
     let vise = -1;
+    let cacher = 0;
     const viser = (k) => {
       k = Math.max(0, Math.min(traits.length - 1, k));
       if (k === vise) return;
-      traits[vise]?.classList.remove('est-vise');
       vise = k;
+      const pas = vb.width / traits.length;
+      const min = (4 * vb.width) / Math.max(1, tl.clientWidth);
+      const w = Math.max(pas, min);
+      marque.setAttribute('x', String(k * pas + pas / 2 - w / 2));
+      marque.setAttribute('width', String(w));
       const a = traits[k];
-      a.classList.add('est-vise');
       const f = fiches.get(a.getAttribute('href')) || {};
       const lien = boite.querySelector('a');
       lien.href = a.getAttribute('href');
       lien.textContent = f.apercuNom || a.querySelector('title').textContent;
       boite.querySelector('.apercu-lettre-cat').textContent = f.apercuCat || '';
       boite.querySelector('.apercu-lettre-desc').textContent = f.apercu || '';
-      boite.hidden = false;
+      [...loupe.children].forEach((sp, j) => {
+        const i = k - 10 + j;
+        sp.style.height = i >= 0 && i < traits.length ? `${Math.max(8, hauteurs[i])}%` : '0';
+        sp.classList.toggle('est-vise', j === 10);
+      });
     };
     const depuis = (e) => {
       const r = tl.getBoundingClientRect();
       viser(Math.floor(((e.clientX - r.left) / r.width) * traits.length));
+      if (e.pointerType === 'touch') {
+        clearTimeout(cacher);
+        loupe.hidden = false;
+        loupe.style.left = `${Math.min(Math.max(0, e.clientX - r.left - 105), r.width - 210)}px`;
+      }
     };
     tl.addEventListener('pointermove', depuis);
     tl.addEventListener('pointerdown', depuis);
+    const finir = () => { cacher = setTimeout(() => (loupe.hidden = true), 700); };
+    tl.addEventListener('pointerup', finir);
+    tl.addEventListener('pointercancel', finir);
     tl.addEventListener('click', (e) => {
-      if (tactile) { e.preventDefault(); return; }
       e.preventDefault();
-      if (vise > -1) location.href = traits[vise].getAttribute('href');
+      if (!tactile && vise > -1) location.href = traits[vise].getAttribute('href');
     });
   }
 
@@ -181,9 +214,15 @@
     const img = a.querySelector('img');
     const loupe = d.createElement('dialog');
     loupe.className = 'loupe';
-    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || 'Schéma')}</p><button class="recherche-fermer" type="button">Fermer</button></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
+    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || 'Schéma')}</p><p class="loupe-boutons"><button class="recherche-fermer" type="button" data-zoom aria-pressed="false">Agrandir</button> <button class="recherche-fermer" type="button" data-fermer>Fermer</button></p></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
     d.body.append(loupe);
-    loupe.querySelector('button').addEventListener('click', () => loupe.close());
+    loupe.querySelector('[data-fermer]').addEventListener('click', () => loupe.close());
+    // Ajusté à la largeur d'abord ; « Agrandir » double la taille (et le pincement reste possible).
+    loupe.querySelector('[data-zoom]').addEventListener('click', (ev) => {
+      const z = loupe.classList.toggle('loupe--zoom');
+      ev.currentTarget.textContent = z ? 'Ajuster' : 'Agrandir';
+      ev.currentTarget.setAttribute('aria-pressed', String(z));
+    });
     loupe.addEventListener('close', () => { loupe.remove(); a.focus({ preventScroll: true }); });
     loupe.showModal();
   });
@@ -192,7 +231,12 @@
   d.querySelector('[data-cat-choix]')?.addEventListener('change', (e) => { location.href = e.target.value; });
 
   // ------------------------------------------------------------ Barre A–Z : la lettre courante visible sur téléphone
-  d.querySelector('.index-az a[aria-current]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
+  // On centre la lettre courante en faisant défiler la barre elle-même (scrollIntoView déplacerait aussi la page).
+  const courante = d.querySelector('.index-az a[aria-current]');
+  if (courante) {
+    const ol = courante.closest('ol');
+    ol.scrollLeft = courante.offsetLeft - ol.clientWidth / 2 + courante.offsetWidth / 2;
+  }
   const motCourant = d.querySelector('[data-mot]');
   const lireDerniers = () => { try { return JSON.parse(localStorage.getItem('derniers') || '[]'); } catch { return []; } };
   if (motCourant) {
@@ -249,11 +293,6 @@
       try { sessionStorage.setItem('vt', a.dataset.turn === 'next' ? 'suivant' : 'precedent'); } catch {}
       root.classList.add('vt-tour');
       return;
-    }
-    const nom = a.querySelector('[data-vt-nom]');
-    if (nom) {
-      root.classList.add('vt-morph');
-      nom.style.viewTransitionName = 'mot';
     }
   });
   addEventListener('pageshow', () => {
@@ -320,6 +359,9 @@
   // gardés seulement quand les rangs forts donnent peu de résultats. Fautes de frappe en dernier recours.
   // À rang égal, le terme le plus renvoyé par les autres définitions passe devant.
   function chercher(q, { cat = '', limite = 60 } = {}) {
+    // « bip32 », « BIP 32 », « bip-0032 » : la forme du dictionnaire, BIP-0032.
+    const bip = q.trim().match(/^bip\s*-?\s*(\d{1,4})$/i);
+    if (bip) q = `BIP-${bip[1].padStart(4, '0')}`;
     const pq = plat(q).replace(/ +/g, ' ').trim();
     if (!pq || !index) return { res: [], approx: false };
     const cq = pq.replace(/ /g, '');
@@ -342,8 +384,10 @@
       else if (mots.length > 1 && mots.every((m) => t.pt.includes(` ${m}`) || t.pt.startsWith(m))) rang = 4;
       if (rang) { forts.push({ t, rang, at, len: pq.length }); continue; }
       if ((at = t.pt.indexOf(pq)) > -1) faibles.push({ t, rang: 2, at, len: pq.length });
+      else if (mots.length > 1 && mots.every((m) => ` ${t.pt} ${t.pa} ${t.pd}`.includes(` ${m}`))) faibles.push({ t, rang: 1.5, at: -1 });
       else if (pq.length > 2 && (t.pd.startsWith(pq) || t.pd.includes(` ${pq}`))) faibles.push({ t, rang: 1, at: -1 });
     }
+    // Les correspondances faibles (milieu de mot, description) ne viennent que si les fortes sont rares.
     let res = forts.length >= 5 ? forts : forts.concat(faibles);
     let approx = false;
     if (!res.length && cq.length > 2) {
@@ -356,11 +400,11 @@
       }
     }
     res.sort((a, b) => b.rang - a.rang || b.t.poids - a.t.poids || a.t.title.length - b.t.title.length || a.t.i - b.t.i);
-    return { res: res.slice(0, limite), approx, total: res.length };
+    return { res: res.slice(0, limite), approx, total: res.length, tous: res };
   }
   window.dicoChercher = (q, o) => charger().then(() => chercher(q, o));
 
-  const surligner = (title, at, len) => (at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`);
+  const surligner = (title, at, len) => { title = affiche(title); return at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`; };
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
   <a href="/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt)}</span>` : ''}${t.desc ? `<span class="resultat-desc">${esc(t.desc)}</span>` : ''}</a></li>`;
@@ -390,7 +434,7 @@
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="/lettre/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
     const cats = avecCategories && index?.categories ? `<p>Ou par catégorie&#8239;:</p><div class="cats-mini">${index.categories.map(([label, slug]) => `<a href="/categorie/${slug}/">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
-    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(n.title)}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(h.title)}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="lettres-mini">${lettres}</div>${cats}</li>`;
+    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(affiche(n.title))}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="lettres-mini">${lettres}</div>${cats}</li>`;
   }
 
   function vide() {
@@ -498,6 +542,18 @@
     menu.addEventListener('close', () => d.querySelector('[data-menu-open]')?.focus({ preventScroll: true }));
   }
 
+  // Mots les plus proches à l'orthographe, quand rien ne correspond (404, recherche sans résultat).
+  const proches = (q, n, exclus = new Set()) => {
+    const cq = compact(q);
+    if (cq.length < 2) return [];
+    return index
+      .filter((t) => !exclus.has(t.slug))
+      .map((t) => ({ t, s: Math.min(lev(cq, t.ct, 8), lev(cq, t.ct.slice(0, cq.length), 8) + 1), at: -1 }))
+      .filter((r) => r.s <= Math.max(3, Math.floor(cq.length / 2)))
+      .sort((a, b) => a.s - b.s || b.t.poids - a.t.poids)
+      .slice(0, n);
+  };
+
   // ------------------------------------------------------------ Page de recherche
   const pageForm = d.querySelector('[data-search-page]');
   if (pageForm) {
@@ -505,69 +561,112 @@
     const sortie = d.querySelector('[data-search-results]');
     const statut = d.querySelector('[data-search-status]');
     const filtres = d.querySelector('[data-filtres]');
+    const select = d.querySelector('[data-filtre-liste]');
     const params = new URLSearchParams(location.search);
     input.value = params.get('q') || '';
-    const catInit = params.get('cat') || '';
-    const radio = filtres.querySelector(`input[value="${CSS.escape(catInit)}"]`);
-    if (radio) radio.checked = true;
+    let cat = params.get('cat') || '';
+    let tout = false;
+    // Les étiquettes de catégorie montrent combien de résultats chacune contient ; seules celles qui en ont restent.
+    const etiquettes = (tous) => {
+      const n = new Map();
+      for (const r of tous) n.set(r.t.cat[1], (n.get(r.t.cat[1]) || 0) + 1);
+      const liste = index.categories.filter(([, slug]) => n.has(slug) || slug === cat).sort((a, b) => (n.get(b[1]) || 0) - (n.get(a[1]) || 0));
+      const visibles = tout ? liste : liste.slice(0, 8);
+      filtres.innerHTML = `<legend class="masque">Filtrer par catégorie</legend>
+        <label class="filtre"><input type="radio" name="cat" value=""${cat ? '' : ' checked'}><span>Toutes <b>${tous.length}</b></span></label>
+        ${visibles.map(([label, slug]) => `<label class="filtre"><input type="radio" name="cat" value="${slug}"${slug === cat ? ' checked' : ''}><span>${picto(slug)}${esc(label)} <b>${n.get(slug) || 0}</b></span></label>`).join('')}
+        ${liste.length > visibles.length ? `<button class="filtre-plus" type="button" data-filtres-plus>+ ${liste.length - visibles.length}</button>` : ''}`;
+      if (select) select.innerHTML = `<option value="">Toutes les catégories (${tous.length})</option>${liste.map(([label, slug]) => `<option value="${slug}"${slug === cat ? ' selected' : ''}>${esc(label)} (${n.get(slug) || 0})</option>`).join('')}`;
+    };
     const lancer = () => {
       const q = input.value;
-      const cat = filtres.querySelector('input:checked')?.value || '';
       const u = new URL(location.href);
       u.searchParams.set('q', q);
       if (cat) u.searchParams.set('cat', cat); else u.searchParams.delete('cat');
       history.replaceState(null, '', u);
       if (!q.trim()) {
         sortie.innerHTML = '';
-        statut.textContent = cat ? 'Tapez un terme pour chercher dans cette catégorie.' : `Tapez un terme : la recherche porte sur les ${index.length.toLocaleString('fr-FR')} définitions, leur terme anglais et leur description.`;
+        filtres.innerHTML = '';
+        statut.textContent = `Tapez un terme : la recherche porte sur les ${index.length.toLocaleString('fr-FR')} définitions, leur terme anglais et leur description.`;
         return;
       }
+      const tous = chercher(q, { limite: 2000 });
+      etiquettes(tous.tous || []);
       const { res, approx, total } = chercher(q, { cat, limite: 200 });
-      statut.textContent = !res.length ? `Aucun mot ne correspond à « ${q.trim()} ». Essayez le terme anglais, un sigle, ou une autre catégorie.` : approx ? 'Aucun mot exact. Vouliez-vous dire :' : pluriel(total, 'résultat', 'résultats');
-      sortie.innerHTML = res.map((r, i) => ligne(r, i, 'page')).join('');
+      if (!res.length) {
+        const p = proches(q, 5);
+        statut.innerHTML = `Aucun mot ne correspond à «&#8239;${esc(q.trim())}&#8239;». ${p.length ? 'Les mots les plus proches&#8239;:' : 'Essayez le terme anglais ou un sigle, ou repartez des lettres et des catégories&#8239;:'}`;
+        sortie.innerHTML = p.map((r, i) => ligne(r, i, 'page')).join('') + suggestions(true);
+      } else {
+        statut.textContent = approx ? 'Aucun mot exact. Vouliez-vous dire :' : pluriel(total, 'résultat', 'résultats');
+        sortie.innerHTML = res.map((r, i) => ligne(r, i, 'page')).join('');
+      }
       sortie.querySelectorAll('a').forEach((a) => a.removeAttribute('tabindex'));
     };
     statut.textContent = 'Chargement de l’index…';
-    charger().then(() => { lancer(); input.focus(); });
+    charger().then(() => { lancer(); if (!input.value) input.focus(); });
     input.addEventListener('input', () => index && lancer());
-    filtres.addEventListener('change', () => index && lancer());
-    // Sur téléphone, une liste déroulante remplace les étiquettes ; les deux restent synchronisées.
-    const select = d.querySelector('[data-filtre-liste]');
-    if (select) {
-      select.value = catInit;
-      select.addEventListener('change', () => {
-        const r = filtres.querySelector(`input[value="${CSS.escape(select.value)}"]`);
-        if (r) { r.checked = true; index && lancer(); }
-      });
-    }
+    filtres.addEventListener('change', (e) => { cat = e.target.value; index && lancer(); });
+    filtres.addEventListener('click', (e) => { if (e.target.closest('[data-filtres-plus]')) { tout = true; index && lancer(); } });
+    select?.addEventListener('change', () => { cat = select.value; index && lancer(); });
     pageForm.addEventListener('submit', (e) => { e.preventDefault(); index && lancer(); });
   }
 
-  // ------------------------------------------------------------ 404 : « Vouliez-vous dire »
+  // ------------------------------------------------------------ 404 : recherche directe sous le champ, prérempli avec l'adresse
   const sugg = d.querySelector('[data-suggestions]');
   if (sugg) {
     const morceau = decodeURIComponent(location.pathname).replace(/^\/+|\/+$/g, '').split('/').pop() || '';
-    const q = morceau.replace(/[-_]+/g, ' ').replace(/\.html?$/, '');
-    const champPerdu = d.querySelector('[data-perdu-champ] input');
-    if (champPerdu && q.length > 1 && q !== '404') champPerdu.value = q;
-    if (q.length > 1) {
-      charger().then(() => {
-        let { res } = chercher(q, { limite: 3 });
-        if (res.length < 3) {
-          const cq = compact(q);
-          const vus = new Set(res.map((r) => r.t.slug));
-          const proches = index
-            .filter((t) => !vus.has(t.slug))
-            .map((t) => ({ t, s: Math.min(lev(cq, t.ct, 8), lev(cq, t.ct.slice(0, cq.length), 8) + 1) }))
-            .filter((r) => r.s <= Math.max(3, Math.floor(cq.length / 2)))
-            .sort((a, b) => a.s - b.s || b.t.poids - a.t.poids)
-            .slice(0, 3 - res.length);
-          res = res.concat(proches);
-        }
-        if (!res.length) return;
-        sugg.querySelector('[data-suggestions-liste]').innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/">${esc(t.title)}</a></li>`).join('');
-        sugg.hidden = false;
-      });
-    }
+    const q0 = morceau.replace(/[-_]+/g, ' ').replace(/\.html?$/, '');
+    const form = d.querySelector('[data-perdu-champ]');
+    const champPerdu = form.querySelector('input');
+    const liste404 = sugg.querySelector('[data-suggestions-liste]');
+    const titre404 = sugg.querySelector('[data-suggestions-titre]');
+    if (q0.length > 1 && q0 !== '404') champPerdu.value = q0;
+    const montrer404 = () => {
+      const q = champPerdu.value;
+      if (q.trim().length < 2) { sugg.hidden = true; return; }
+      let { res } = chercher(q, { limite: 5 });
+      if (res.length < 3) {
+        const vus = new Set(res.map((r) => r.t.slug));
+        res = res.concat(proches(q, 3 - res.length, vus));
+      }
+      titre404.textContent = q === q0 ? 'Vouliez-vous dire' : 'Résultats';
+      liste404.innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(t.desc)}</span>` : ''}</a></li>`).join('');
+      sugg.hidden = !res.length;
+    };
+    charger().then(montrer404);
+    champPerdu.addEventListener('input', () => index && montrer404());
+    form.addEventListener('submit', (e) => {
+      const a = liste404.querySelector('a');
+      if (a) { e.preventDefault(); a.click(); }
+    });
+  }
+
+  // ------------------------------------------------------------ Aller à un groupe (téléphone), revenir en haut
+  d.querySelector('[data-aller]')?.addEventListener('change', (e) => {
+    const cible = d.querySelector(e.target.value);
+    if (cible) { cible.scrollIntoView({ behavior: reduit.matches ? 'auto' : 'smooth' }); cible.querySelector('a')?.focus({ preventScroll: true }); }
+  });
+  if (d.querySelector('.liste')) {
+    const haut = d.createElement('button');
+    haut.type = 'button';
+    haut.className = 'haut';
+    haut.textContent = 'Haut';
+    haut.setAttribute('aria-label', 'Revenir en haut de la page');
+    haut.hidden = true;
+    haut.addEventListener('click', () => { scrollTo({ top: 0, behavior: reduit.matches ? 'auto' : 'smooth' }); d.querySelector('h1')?.focus?.(); });
+    d.body.append(haut);
+    addEventListener('scroll', () => { haut.hidden = scrollY < innerHeight * 2; }, { passive: true });
+  }
+
+  // ------------------------------------------------------------ Présentation de catégorie repliée : « Lire la suite »
+  const note = d.querySelector('[data-repliable-texte]');
+  if (note && note.scrollHeight > note.clientHeight + 4) {
+    const b = d.createElement('button');
+    b.type = 'button';
+    b.className = 'lire-suite';
+    b.textContent = 'Lire la suite';
+    b.addEventListener('click', () => { note.classList.add('deplie'); b.remove(); });
+    note.after(b);
   }
 })();

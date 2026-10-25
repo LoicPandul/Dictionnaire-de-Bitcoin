@@ -55,7 +55,8 @@ function pictoCollector() {
 // Largeur en em du titre composé en CMU (approche −0,01 em), pour la taille en unités de conteneur :
 // la plus petite largeur qui tient en deux lignes au plus (les coupures possibles : espace, « _ », « - »).
 const emWidth = (s) => [...s].reduce((w, ch) => w + (advances[ch] ?? 0.62) - 0.01, 0);
-export function headwordEm(title) {
+export function headwordEm(raw) {
+  const title = affiche(raw);
   const pieces = title.match(/[^ _-]+[_-]*\s*|[_-]+\s*|\s+/g) || [title];
   let best = emWidth(title.trim());
   for (let i = 1; i < pieces.length; i++) {
@@ -67,7 +68,14 @@ export function headwordEm(title) {
   return Math.round(best * 1000) / 1000;
 }
 // Points de coupure après « _ » (le navigateur coupe déjà après « - » et les espaces).
-const breakable = (title) => h(title).replace(/_/g, '_<wbr>');
+// Titres affichés : les codes hexadécimaux en « 0x » minuscule (« OP_RETURN - 0x6A »), comme on les écrit.
+export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1');
+const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
+// Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
+export const fr = (t = '') => String(t).replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
+const hd = (t) => h(fr(t));
+// Dans une phrase, un titre ne se coupe pas à son trait d'union (« B-MONEY ») : trait d'union insécable.
+const insecable = (t) => h(affiche(t)).replace(/-/g, '\u2011');
 
 // Les mots d'une vedette, chacun dans son masque, pour qu'ils se posent l'un après l'autre.
 const headwordWords = (title) =>
@@ -194,7 +202,7 @@ function searchDialog() {
       ${loupe}
       <label class="masque" for="recherche-q">Terme à chercher</label>
       <input id="recherche-q" name="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
-        placeholder="UTXO, Taproot, nonce, clé publique…" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="recherche-resultats">
+        placeholder="UTXO, Taproot…" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="recherche-resultats">
       <button class="recherche-fermer" type="button" data-search-close>Fermer</button>
     </form>
     <p class="recherche-etat" role="status" aria-live="polite"></p>
@@ -204,7 +212,7 @@ function searchDialog() {
 }
 
 // ---------------------------------------------------------------- Le dos (pied de page)
-function footer(letters, total) {
+function footer(letters, total, { home = false } = {}) {
   const year = new Date().getFullYear();
   const items = [...letters.entries()]
     .map(([l, defs], i) =>
@@ -213,12 +221,16 @@ function footer(letters, total) {
         : `<li><span class="dos-vide" aria-hidden="true"><span class="dos-l">${l}</span></span></li>`,
     )
     .join('');
-  return `<footer class="dos" id="lettres">
-  <div class="dos-tete">
+  // L'accueil garde le grand alphabet animé ; ailleurs, une rangée compacte (la barre A–Z ou le menu font le reste).
+  const tete = home
+    ? `<div class="dos-tete">
     <h2 class="dos-titre">De A à Z</h2>
     <p class="dos-phrase">${num(total)} mots, classés comme dans le livre.</p>
-  </div>
-  <nav class="alphabet" aria-label="Toutes les lettres"><ol>${items}</ol></nav>
+  </div>`
+    : `<h2 class="dos-court">Toutes les lettres</h2>`;
+  return `<footer class="dos${home ? '' : ' dos--court'}" id="lettres">
+  ${tete}
+  <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="Toutes les lettres"><ol>${items}</ol></nav>
   <div class="dos-pied">
     <p class="dos-marque"><span class="feuille" aria-hidden="true"></span>${h(site.title)}, ${h(site.author)}, édition 2026</p>
     <ul class="dos-liens">
@@ -227,7 +239,7 @@ function footer(letters, total) {
       <li><a href="${site.amazon}" rel="noopener">Amazon</a></li>
       <li><a href="${site.github}" rel="noopener">GitHub</a></li>
       <li><a href="${site.authorUrl}" rel="author">pandul.fr</a></li>
-      <li><a href="${site.authorX}" rel="noopener">X</a></li>
+      <li><a href="${site.authorX}" rel="noopener">X (Twitter)</a></li>
     </ul>
     <p class="dos-legal">© ${year} ${h(site.author)}. Textes sous licence <a href="${site.licenseUrl}" rel="license noopener">${site.license}</a>. Polices CMU Serif et Host Grotesk sous licence OFL.</p>
   </div>
@@ -243,7 +255,7 @@ ${bar({ home, current })}
 <main id="contenu">
 ${body}
 </main>
-${footer(letters, total)}
+${footer(letters, total, { home })}
 ${searchDialog()}
 ${menuDialog()}
 </body>
@@ -253,13 +265,14 @@ ${menuDialog()}
 
 // ---------------------------------------------------------------- Morceaux de listes
 // Données de la carte d'aperçu au survol (nom, catégorie, définition courte).
-const apercuAttr = (d) => (d.description ? ` data-apercu="${h(d.description)}" data-apercu-cat="${h(categoryLabel(d.category))}" data-apercu-nom="${h(d.title)}"` : '');
+const apercuAttr = (d) => (d.description ? ` data-apercu="${hd(d.description)}" data-apercu-cat="${h(categoryLabel(d.category))}" data-apercu-nom="${h(affiche(d.title))}"` : '');
 // Une entrée de liste : nom, catégorie, une ligne de description.
 function entry(def, picto, { showCategory = true } = {}) {
   const bip = /^BIP-\d/.test(def.title);
+  const sujet = bip ? def.related.filter((r) => !/^BIP-\d/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
   return `<li><a class="entree" href="/${def.slug}/"${apercuAttr(def)}>
-  <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}</span>
-  ${def.description ? `<span class="entree-desc">${h(def.description)}</span>` : ''}
+  <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}${sujet ? ` <span class="entree-sujet">${sujet}</span>` : ''}</span>
+  ${def.description ? `<span class="entree-desc">${hd(def.description)}</span>` : ''}
 </a></li>`;
 }
 
@@ -350,7 +363,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   const renvoi = (r) => `<li><a class="renvoi" href="/${r.slug}/">
   <span class="renvoi-nom" data-vt-nom>${breakable(r.title)}</span>
   <span class="renvoi-cat">${picto.use(r.categorySlug)}${h(categoryLabel(r.category))}</span>
-  ${r.description ? `<span class="renvoi-desc">${h(r.description)}</span>` : ''}
+  ${r.description ? `<span class="renvoi-desc">${hd(r.description)}</span>` : ''}
 </a></li>`;
   const related = def.related.length
     ? `<aside class="renvois" aria-labelledby="renvois-titre">
@@ -372,7 +385,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
     return `<a class="tourner-lien tourner-lien--${dir}" href="/${d.slug}/" rel="${dir}" data-turn="${dir}">
   <span class="tourner-sens">${label}</span>
   <span class="tourner-nom">${breakable(d.title)}</span>
-  ${d.description ? `<span class="tourner-desc">${h(d.description)}</span>` : ''}
+  ${d.description ? `<span class="tourner-desc">${hd(d.description)}</span>` : ''}
 </a>`;
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
@@ -381,7 +394,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   <a class="reperes-lettre" href="/lettre/${letter.toLowerCase()}/" aria-label="Lettre ${letter}, ${plural(letterCount, 'mot', 'mots')}">${letter}</a>
   ${def.alphaNext ? `<a class="reperes-suiv" href="/${def.alphaNext.slug}/" data-turn="next"${apercuAttr(def.alphaNext)}><span class="masque">Mot suivant : </span>${breakable(def.alphaNext.title)}</a>` : '<span></span>'}
 </nav>
-<article class="mot${related ? '' : ' mot--seul'}" data-mot="${h(def.slug)}" data-titre="${h(def.title)}">
+<article class="mot${related ? '' : ' mot--seul'}" data-mot="${h(def.slug)}" data-titre="${h(affiche(def.title))}">
   <header class="mot-tete">
     <div class="mot-titre">
       <h1 class="vedette${def.title.includes('_') ? ' vedette--bas' : ''}" style="--em:${headwordEm(def.title)}">${headwordWords(def.title)}</h1>
@@ -434,32 +447,37 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   const max = Math.sqrt(Math.max(...defs.map((d) => d.body.length)));
   const pas = 6;
   const trancheLettre = defs
-    .map((d, k) => `<a href="/${d.slug}/" tabindex="-1"><title>${h(d.title)}</title><rect x="${k * pas}" y="${(100 - Math.max(8, (Math.sqrt(d.body.length) / max) * 100)).toFixed(1)}" width="${pas - 2}" height="${Math.max(8, (Math.sqrt(d.body.length) / max) * 100).toFixed(1)}"/></a>`)
+    .map((d, k) => `<a href="/${d.slug}/" tabindex="-1"><title>${h(affiche(d.title))}</title><rect x="${k * pas}" y="${(100 - Math.max(8, (Math.sqrt(d.body.length) / max) * 100)).toFixed(1)}" width="${pas - 2}" height="${Math.max(8, (Math.sqrt(d.body.length) / max) * 100).toFixed(1)}"/></a>`)
     .join('');
   const groups = defs.length > 40 ? groupEntries(defs, 'deux') : [];
   const vedetteLettre = [...defs].sort((a, b) => b.citedBy.length - a.citedBy.length)[0];
   const sousIndex = groups.length > 1
-    ? `<nav class="sous-index" aria-label="Groupes de la lettre ${letter}"><ul>${groups.map((g, k) => `<li><a href="#groupe-${k + 1}">${h(g.label)}</a></li>`).join('')}</ul></nav>`
+    ? `<nav class="sous-index" aria-label="Groupes de la lettre ${letter}">
+  <ul>${groups.map((g, k) => `<li><a href="#groupe-${k + 1}">${h(g.label)}</a></li>`).join('')}</ul>
+  <p class="sous-choix"><label for="aller">Aller à</label><select id="aller" data-aller>${groups.map((g, k) => `<option value="#groupe-${k + 1}">${h(g.label)} (${num(g.defs.length)})</option>`).join('')}</select></p>
+</nav>`
     : '';
   const body = `${azIndex({ current: letter, hrefFor: (l) => (letters.get(l)?.length ? `/lettre/${l.toLowerCase()}/` : null), label: 'Toutes les lettres' })}
 <header class="lettre-tete">
   <p class="grande-lettre" aria-hidden="true"><span class="gl"><span class="gl-in">${letter}</span></span></p>
   <div class="lettre-info">
     <h1 class="titre lettre-titre">Les mots en ${letter}</h1>
-    <p class="enonce">${plural(defs.length, 'mot', 'mots')} du dictionnaire, de <a href="/${defs[0].slug}/">${h(defs[0].title)}</a> à <a href="/${defs.at(-1).slug}/">${h(defs.at(-1).title)}</a>.</p>
-    <div class="apercu-lettre" aria-live="polite" data-apercu-lettre>
-      <p class="apercu-lettre-nom"><a href="/${vedetteLettre.slug}/">${breakable(vedetteLettre.title)}</a></p>
-      <p class="apercu-lettre-cat">${h(categoryLabel(vedetteLettre.category))}</p>
-      <p class="apercu-lettre-desc">${h(vedetteLettre.description || '')}</p>
-    </div>
-    <figure class="tranche-lettre">
-      <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
-      <figcaption class="note" data-tranche-legende>Un trait par mot, de la première à la dernière entrée de la lettre&#8239;; sa hauteur suit la longueur de la définition. <span data-geste>Survolez les traits.</span></figcaption>
-    </figure>
+    <p class="enonce">${plural(defs.length, 'mot', 'mots')} du dictionnaire, de <a href="/${defs[0].slug}/">${insecable(defs[0].title)}</a> à <a href="/${defs.at(-1).slug}/">${insecable(defs.at(-1).title)}</a>.</p>
     <nav class="lettres-voisines" aria-label="Lettres voisines">
       ${prev ? `<a href="/lettre/${prev.toLowerCase()}/" rel="prev"><span class="masque">Lettre précédente : </span>${prev}</a>` : ''}
       ${next ? `<a href="/lettre/${next.toLowerCase()}/" rel="next"><span class="masque">Lettre suivante : </span>${next}</a>` : ''}
     </nav>
+  </div>
+  <div class="lettre-tranche">
+    <div class="apercu-lettre" aria-live="polite" data-apercu-lettre>
+      <p class="apercu-lettre-nom"><a href="/${vedetteLettre.slug}/">${breakable(vedetteLettre.title)}</a></p>
+      <p class="apercu-lettre-cat">${h(categoryLabel(vedetteLettre.category))}</p>
+      <p class="apercu-lettre-desc">${hd(vedetteLettre.description || '')}</p>
+    </div>
+    <figure class="tranche-lettre">
+      <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
+      <figcaption class="note" data-tranche-legende>Un trait par mot, dans l’ordre du livre&#8239;; sa hauteur suit la longueur de la définition. <span data-geste>Survolez les traits.</span></figcaption>
+    </figure>
   </div>
 </header>
 ${sousIndex}
@@ -487,32 +505,37 @@ ${next ? `<p class="lettre-suite"><a class="bouton" href="/lettre/${next.toLower
 export function categoryPage(cat, note, { assets, jsonLd, letters, total, categories }) {
   const picto = pictoCollector();
   const label = categoryLabel(cat.name);
-  const present = new Set(cat.defs.map((d) => (bipKey(d.title) ? 'B' : norm(d.title)[0])));
   const groups = groupEntries(cat.defs, 'une');
-  const anchors = new Map(groups.map((g, i) => [g.key[0], `groupe-${i + 1}`]));
-  const ancre = (l) => (present.has(l) && anchors.has(l) ? `#${anchors.get(l)}` : null);
-  const others = categories.filter((c) => c.slug !== cat.slug);
-  const body = `${cat.slug === 'bip' ? '' : azIndex({ hrefFor: ancre, label: `Lettres de la catégorie ${label}` })}
+  // Barre d'index collante : une entrée par groupe (lettres, et centaines pour les BIP).
+  // Toutes les lettres restent à leur place (les absentes, désactivées) ; les BIP ajoutent leurs centaines.
+  const ancres = new Map(groups.map((g, i) => [g.key, `#groupe-${i + 1}`]));
+  const cases = [];
+  for (const l of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+    cases.push(ancres.has(l) ? `<li><a href="${ancres.get(l)}">${l}</a></li>` : `<li><span class="absente" aria-hidden="true">${l}</span></li>`);
+    if (l === 'B') for (const g of groups) if (g.key.startsWith('BIP-')) cases.push(`<li><a href="${ancres.get(g.key)}" aria-label="${h(g.label)}">${g.key.slice(4)}</a></li>`);
+  }
+  const indexGroupes = `<nav class="index-az" aria-label="Lettres de la catégorie ${h(label)}"><ol>${cases.join('')}</ol></nav>`;
+  const rayon = `<nav class="rayon" aria-label="Les 19 catégories"><ul>${categories
+    .map((c) => `<li><a href="/categorie/${c.slug}/"${c.slug === cat.slug ? ' aria-current="page"' : ''}>${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span></a></li>`)
+    .join('')}</ul></nav>`;
+  const body = `${indexGroupes}
+${rayon}
 <header class="cat-tete">
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
   <h1 class="cat-nom">${h(label)}</h1>
-  <p class="enonce">${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire${note ? `. ${h(note.replace(/\.$/, ''))}.` : '.'}</p>
+  <p class="enonce cat-note" data-repliable-texte>${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire${note ? `. ${hd(note.replace(/\.$/, ''))}.` : '.'}</p>
   <p class="cat-choix"><label for="cat-choix">Changer de catégorie</label>
     <select id="cat-choix" data-cat-choix>
       ${categories.map((c) => `<option value="/categorie/${c.slug}/"${c.slug === cat.slug ? ' selected' : ''}>${h(categoryLabel(c.name))} (${num(c.defs.length)})</option>`).join('')}
     </select></p>
   <section class="cat-debut" aria-labelledby="debut-titre">
     <h2 class="cat-debut-titre" id="debut-titre">Pour commencer</h2>
-    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${h(d.description)}</span>` : ''}</a></li>`).join('')}</ul>
+    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(d.description)}</span>` : ''}</a></li>`).join('')}</ul>
   </section>
 </header>
 <div class="liste">
 ${groupedList(cat.defs, picto, { mode: 'une', showCategory: false, labelPrefix: cat.slug === 'bip' ? '' : 'Lettre ' })}
-</div>
-<nav class="autres-cats" aria-labelledby="autres-titre">
-  <h2 class="autres-titre" id="autres-titre">Les autres catégories</h2>
-  <ul>${others.map((c) => `<li><a href="/categorie/${c.slug}/">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="autres-n">${num(c.defs.length)}</span></a></li>`).join('')}</ul>
-</nav>`;
+</div>`;
   return page({
     headOpts: {
       title: `${label} : ${cat.defs.length} définitions | Dictionnaire de Bitcoin`,
@@ -569,9 +592,8 @@ export function homePage(data, { assets, jsonLd }) {
   const source = {
     slug: exemple.slug,
     dir: `definitions/fr/${exemple.slug[0]}/${exemple.slug}/`,
-    meta: fs.readFileSync(path.join(exemple.sourceDir, 'metadata.yaml'), 'utf8').trim(),
     // Les deux premières phrases du fichier : un extrait, pas tout le texte.
-    body: `${exemple.body.trim().split(/(?<=\.)\s+/).slice(0, 2).join(' ')} […]`,
+    body: `${exemple.body.trim().split(/(?<=\.)\s+/).slice(0, 3).join(' ')} […]`,
   };
   const body = `<section class="jaquette" aria-labelledby="titre">
   <div class="jaquette-couv">
@@ -593,7 +615,7 @@ export function homePage(data, { assets, jsonLd }) {
     <h2 class="jour-titre" id="jour-titre">Le mot du jour</h2>
     <p class="jour-mot"><a href="/${f.slug}/" data-jour-lien><span data-jour-nom data-vt-nom>${breakable(f.title)}</span></a></p>
     <p class="jour-cat"><a href="/categorie/${f.categorySlug}/" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
-    <p class="jour-desc" data-jour-desc>${h(f.description || '')}</p>
+    <p class="jour-desc" data-jour-desc>${hd(f.description || '')}</p>
     <p class="jour-actions"><a class="bouton bouton--os" href="/${f.slug}/" data-jour-lire>Lire la définition</a> <button class="bouton bouton--lavis" type="button" data-jour-autre>Un autre mot</button></p>
     <p class="jour-pied">${num(total)} définitions libres et gratuites, 19 catégories, 594 pages imprimées.</p>
   </section>
@@ -609,7 +631,7 @@ export function homePage(data, { assets, jsonLd }) {
   <div class="apercu" aria-live="polite" data-apercu>
     <p class="apercu-nom"><a href="/${f.slug}/" data-apercu-lien>${breakable(f.title)}</a></p>
     <p class="apercu-cat" data-apercu-cat>${h(categoryLabel(f.category))}</p>
-    <p class="apercu-desc" data-apercu-desc>${h(f.description || '')}</p>
+    <p class="apercu-desc" data-apercu-desc>${hd(f.description || '')}</p>
   </div>
 
 </section>
@@ -655,11 +677,9 @@ export function homePage(data, { assets, jsonLd }) {
   </div>
   <figure class="fichier" data-ui>
     <figcaption class="fichier-chemin"><code>${h(source.dir)}</code></figcaption>
-    <p class="fichier-nom">metadata.yaml</p>
-    <pre><code>${h(source.meta)}</code></pre>
     <p class="fichier-nom">definition.md</p>
     <pre class="fichier-texte"><code>${h(source.body)}</code></pre>
-    <p class="fichier-lien"><a class="lien" href="/${source.slug}/">Voir cette définition sur le site</a></p>
+    <p class="fichier-lien"><a class="lien" href="${site.github}/blob/main/${source.dir}definition.md" rel="noopener">Ouvrir ce fichier sur GitHub</a> <a class="lien" href="/${source.slug}/">Lire la définition</a></p>
   </figure>
 </section>`;
 
@@ -733,15 +753,15 @@ export function notFoundPage({ assets, letters, total }) {
   <div class="perdu-texte">
     <h1 class="perdu-titre" id="perdu-titre">Mot introuvable</h1>
     <p class="enonce">Ce mot n’est pas, ou pas encore, dans le dictionnaire&#8239;: l’adresse demandée ne correspond à aucune page.</p>
-    <div class="perdu-suggestions" data-suggestions hidden>
-      <h2 class="perdu-sous">Vouliez-vous dire</h2>
-      <ul class="perdu-liste" data-suggestions-liste></ul>
-    </div>
-    <form class="couv-recherche perdu-recherche" role="search" action="/recherche/" method="get" data-hero-search data-perdu-champ>
+    <form class="couv-recherche perdu-recherche" role="search" action="/recherche/" method="get" data-perdu-champ>
       <label class="masque" for="perdu-q">Chercher un terme</label>
-      <input id="perdu-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot, nonce…">
+      <input id="perdu-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot…" aria-controls="perdu-resultats">
       <button type="submit">Chercher</button>
     </form>
+    <div class="perdu-suggestions" data-suggestions hidden>
+      <h2 class="perdu-sous" data-suggestions-titre>Vouliez-vous dire</h2>
+      <ul class="perdu-liste" id="perdu-resultats" data-suggestions-liste></ul>
+    </div>
     <p class="perdu-actions"><a class="lien lien--os" href="/">Retour à l’accueil</a> <a class="lien lien--os" href="#lettres">Parcourir par lettre</a></p>
   </div>
 </section>`;

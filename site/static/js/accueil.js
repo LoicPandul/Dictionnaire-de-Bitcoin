@@ -3,7 +3,8 @@
   const d = document;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-  const coupe = (s) => esc(s).replace(/_/g, '_<wbr>');
+  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1');
+  const coupe = (s) => esc(affiche(s)).replace(/_/g, '_<wbr>');
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
@@ -32,7 +33,7 @@
     sectionJour.querySelector('[data-jour-desc]').textContent = t.desc;
     if (!anime || reduit.matches) { nomJour.innerHTML = coupe(t.title); return; }
     // Les lettres du nouveau mot roulent en place, l'une après l'autre.
-    nomJour.innerHTML = [...t.title].map((c, i) => (c === ' ' ? ' ' : `<span class="roule" style="--r:${i}">${esc(c)}</span>`)).join('');
+    nomJour.innerHTML = [...affiche(t.title)].map((c, i) => (c === ' ' ? ' ' : `<span class="roule" style="--r:${i}">${esc(c)}</span>`)).join('');
     nomJour.querySelectorAll('.roule').forEach((s, i) => {
       s.animate([{ transform: 'translateY(0.9em)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 420, delay: Math.min(i * 22, 400), easing: 'cubic-bezier(0.16, 1, 0.3, 1)', fill: 'backwards' });
     });

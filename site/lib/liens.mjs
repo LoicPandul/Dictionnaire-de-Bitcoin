@@ -70,6 +70,15 @@ export function createLinker(definitions) {
     let n = 0;
     // On découpe le HTML en balises et en texte ; on ne touche qu'au texte hors <a>, <code>, <pre>, <figure>.
     let interdit = 0;
+    html = html.replace(/(?<!<pre>)<code>([^<]{3,60})<\/code>/g, (m, code) => {
+      if (n >= MAX_LIENS) return m;
+      const trouve = parCle.get(cle(decode(code)));
+      if (!trouve || deja.has(trouve.def.slug)) return m;
+      deja.add(trouve.def.slug);
+      n++;
+      const def = trouve.def;
+      return `<a class="renvoi-texte renvoi-code" href="/${def.slug}/" data-apercu="${h(def.description || '')}" data-apercu-cat="${h(label(def.category))}"><code>${code}</code></a>`;
+    });
     return html.replace(/(<[^>]+>)|([^<]+)/g, (m, tag, text) => {
       if (tag) {
         const t = tag.match(/^<(\/?)(a|code|pre|figure|figcaption|h[1-6])\b/i);
