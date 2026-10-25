@@ -105,8 +105,11 @@ class _Converter:
             if not src.exists():
                 return ""
             name = self.images.setdefault(str(src), f"{slug}-{m.group(2)}".replace("/", "-"))
-            caption = f'<span class="legende">{_xml(_french_spaces(m.group(1)))}</span>' if m.group(1).strip() else ""
-            return "\n\n" + keep(f'<span class="figure"><img src="../images/{_xml(name)}" alt="{_xml(m.group(1))}"/>{caption}</span>') + "\n\n"
+            # La légende peut contenir du code ou une formule déjà protégés : texte brut pour
+            # l'attribut alt, balisage conservé pour la légende visible.
+            alt_plain = re.sub(r"\u0007(\d+)\u0007", lambda c: re.sub(r"<[^>]+>", "", store[int(c.group(1))]), m.group(1))
+            caption = f'<span class="legende">{_french_spaces(m.group(1))}</span>' if m.group(1).strip() else ""
+            return "\n\n" + keep(f'<span class="figure"><img src="../images/{_xml(name)}" alt="{_xml(html.unescape(alt_plain))}"/>{caption}</span>') + "\n\n"
         content = IMAGE_RE.sub(image, content)
 
         content = _french_spaces(content)
