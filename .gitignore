@@ -32,3 +32,7 @@ Thumbs.db
 # Claude
 .claude/
 nul
+# Édition 2027 : outils locaux, sorties de build, brouillons
+.tools/
+build/
+.work/
