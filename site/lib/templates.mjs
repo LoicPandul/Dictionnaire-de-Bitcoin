@@ -269,7 +269,7 @@ const apercuAttr = (d) => (d.description ? ` data-apercu="${hd(d.description)}" 
 // Une entrée de liste : nom, catégorie, une ligne de description.
 function entry(def, picto, { showCategory = true } = {}) {
   const bip = /^BIP-\d/.test(def.title);
-  const sujet = bip ? def.related.filter((r) => !/^BIP-\d/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
+  const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
   return `<li><a class="entree" href="/${def.slug}/"${apercuAttr(def)}>
   <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}${sujet ? ` <span class="entree-sujet">${sujet}</span>` : ''}</span>
   ${def.description ? `<span class="entree-desc">${hd(def.description)}</span>` : ''}
