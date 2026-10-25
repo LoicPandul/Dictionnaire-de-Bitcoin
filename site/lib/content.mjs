@@ -199,6 +199,12 @@ export function loadDictionary(repoRoot) {
 
   // Ordre de lecture : alphabétique français sur le titre, comme pandul.fr.
   definitions.sort((a, b) => compareFr(a.title, b.title));
+  // Rang dans le livre et voisins alphabétiques : les mots-repères des pages de définition.
+  definitions.forEach((def, i) => {
+    def.n = i + 1;
+    def.alphaPrev = definitions[i - 1] || null;
+    def.alphaNext = definitions[i + 1] || null;
+  });
 
   const categories = new Map();
   for (const def of definitions) {

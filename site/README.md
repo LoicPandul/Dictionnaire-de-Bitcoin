@@ -1,23 +1,53 @@
 # Site du Dictionnaire de Bitcoin
 
-Site statique généré depuis `definitions/fr` : une page par définition, une page par lettre et par catégorie, la recherche instantanée, le sitemap, les données structurées et le PDF.
+Site statique généré depuis `definitions/fr` : une page par définition (1 408), une page par lettre et par catégorie, la recherche instantanée, le sitemap, les données structurées et le PDF. Il est pensé pour Cloudflare Pages.
+
+La direction artistique (« Le livre ouvert ») et sa relecture sont dans `design/` : `direction.md`, `inspirations.md`, `revue.md`.
 
 ## Construire et vérifier
 
 ```bash
 cd site
 npm ci
-node build.mjs     # écrit le site dans site/dist (environ 2 s)
-node check.mjs     # une page par définition, contrat d'URL, sitemap, JSON-LD
+npm run build      # écrit le site dans site/dist (environ 1 s)
+npm run check      # une page par définition, contrat d'URL, sitemap, JSON-LD
+npm run serve      # aperçu local sur http://127.0.0.1:4318/
 ```
 
 `check.mjs` compare aussi les slugs avec le dépôt pandul.fr s'il est présent (`--pandul <chemin>`), et interroge un serveur avec `--base http://hôte:port`.
 
-Aperçu local : `python3 -m http.server 4318 --bind 0.0.0.0 -d dist`.
+`serve.mjs` imite Cloudflare Pages : `index.html` des dossiers, redirection vers la barre finale, `404.html` servie avec le code 404, en-têtes de `_headers`. Pour l'ouvrir depuis un autre appareil du réseau : `npm run preview` (écoute sur 0.0.0.0, port 4318).
+
+## Publication sur Cloudflare Pages
+
+Le site se publie en reliant ce dépôt GitHub à un projet Cloudflare Pages (offre gratuite). Rien n'est encore créé côté Cloudflare.
+
+Réglages à saisir dans *Workers & Pages > Créer > Pages > Connecter à Git*, après avoir choisi le dépôt `Dictionnaire-de-Bitcoin` :
+
+| Réglage | Valeur |
+| --- | --- |
+| Branche de production | `main` |
+| Préréglage de framework | Aucun (*None*) |
+| Commande de build | `npm run build` |
+| Répertoire de sortie du build | `dist` |
+| Répertoire racine (*Root directory*, dans les paramètres avancés) | `site` |
+| Variable d'environnement | `NODE_VERSION` = `22` |
+
+Cloudflare installe les dépendances (`npm ci`, grâce à `package-lock.json`) avant la commande de build. Le build lit `../definitions`, `../templates` et `../dictionnaire-de-bitcoin.pdf` : Cloudflare clone tout le dépôt, le répertoire racine ne fait que fixer le dossier de travail.
+
+Le build écrit lui-même dans `dist/` :
+
+- `_headers` : politique de sécurité du contenu (avec l'empreinte du seul script en ligne), `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, `X-Frame-Options` ; cache d'un an pour le CSS et les scripts (leur nom contient une empreinte), les polices et KaTeX ; une semaine pour les images, la vidéo et les schémas ; une heure pour les index de recherche.
+- `_redirects` : les anciennes adresses en `/dictionnaire/…` (forme de pandul.fr) vers les nouvelles.
+- `404.html` : Cloudflare Pages la sert automatiquement, avec le code 404, pour toute adresse inconnue.
+
+Limites de l'offre gratuite respectées : environ 1 600 fichiers (plafond 20 000), le plus gros est le PDF (2,7 Mo, plafond 25 Mo).
+
+Une fois le domaine acheté : changer `url` dans `config.mjs` (voir plus bas), pousser, puis ajouter le domaine dans *Pages > projet > Domaines personnalisés*. Les branches autres que `main` reçoivent des aperçus automatiques sur `<branche>.<projet>.pages.dev` ; on peut les désactiver dans *Paramètres > Builds > Contrôles des déploiements de branche*.
 
 ## Domaine
 
-Le domaine vit dans une seule clé : `url` dans `config.mjs`. Elle sert aux adresses canoniques, au sitemap, au JSON-LD et aux cartes sociales. Dès qu'elle ne finit plus par `.example`, le build écrit aussi le fichier `CNAME` pour GitHub Pages.
+Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui la valeur provisoire `https://dictionnaire-bitcoin.example`. Elle sert aux adresses canoniques, au sitemap, au JSON-LD, aux cartes sociales et à la citation des définitions.
 
 ## Adresses
 
@@ -29,20 +59,24 @@ Elles reprennent celles de pandul.fr sans le préfixe `/dictionnaire`, pour que 
 | Définition | `/<slug>/` (slug de `metadata.yaml`) |
 | Catégorie | `/categorie/<slug>/` |
 | Lettre | `/lettre/<lettre>/` |
-
-## Publication
-
-Le workflow `.github/workflows/site-pages.yml` se lance à la main seulement (Actions > « Site du dictionnaire » > Run workflow). Avant le premier lancement : régler `url`, puis choisir « GitHub Actions » comme source dans Settings > Pages.
+| Recherche | `/recherche/?q=…` (nouvelle) |
 
 ## Fichiers
 
-- `build.mjs` : le générateur ; `lib/content.mjs` lit les définitions (même calcul des slugs, catégories, descriptions et voisins que pandul.fr) ; `lib/markdown.mjs` rend le Markdown et compose les formules avec KaTeX au build ; `lib/templates.mjs` et `lib/seo.mjs` écrivent les pages.
-- `static/` : feuille de style, script (recherche, onglets, terme du jour), polices Computer Modern (OFL) et Fira Code, images.
-- `tools/prepare-images.sh` : refait les images à partir de la couverture du livre, des pictogrammes du dépôt, des planches de l'Encyclopédie et du film de 1959 (sources et licences dans `tools/image-credits.json`).
+- `build.mjs` : le générateur. `lib/content.mjs` lit les définitions (même calcul des slugs, catégories, descriptions et voisins que pandul.fr) ; `lib/markdown.mjs` rend le Markdown et compose les formules avec KaTeX au build ; `lib/templates.mjs` écrit les pages ; `lib/seo.mjs` le JSON-LD, le sitemap et robots.txt ; `lib/cloudflare.mjs` `_headers` et `_redirects`.
+- `lib/cmu-advances.json` et `lib/logotype.json` : chasses de Computer Modern, pour calculer au build la taille de chaque vedette (deux lignes au plus à toutes les largeurs). Régénérés par `tools/logotype.py`.
+- `static/css/site.css` : toute la mise en forme, jetons en tête. `static/js/site.js` : thème, barre, transitions entre pages, recherche, 404. `static/js/accueil.js` : le mot du jour et la tranche.
+- `static/fonts/` : CMU Serif Roman (la police de la couverture, tirée de `fonts/cmunrm.ttf`) et Host Grotesk, sous licence OFL (textes joints).
+- `tools/prepare-assets.py` et `tools/raster-pictos.mjs` : refont les images à partir des sources du dépôt (voir l'en-tête du script).
 
-## Images et crédits
+## Images
 
-- Arbre gravé, couverture et livre en volume : tirés de `assets/` (couverture du livre).
-- Planches de l'*Encyclopédie* de Diderot et d'Alembert (Monnoyage : balancier, laminoirs ; page de titre, 1751) : domaine public / CC0, Wikimedia Commons.
-- Film *Learning to Set Type* (1959) : domaine public, Internet Archive.
-- Portrait de Loïc Morel : repris de pandul.fr.
+Toutes viennent du livre et du dépôt, aucune image extérieure :
+
+- l'arbre gravé, extrait de `assets/cover-hardcover.pdf` (titre imprimé effacé) ;
+- la feuille de la tranche, vectorisée (emblème, favicon) ;
+- les 19 pictogrammes de `assets/pictograms`, retracés ;
+- le livre en volume, tiré de `assets/images/cover.png` ;
+- la couverture à plat, six pages intérieures et la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendues depuis les PDF du dépôt ;
+- le portrait de Loïc Morel ;
+- les schémas des définitions, copiés depuis leurs dossiers.
