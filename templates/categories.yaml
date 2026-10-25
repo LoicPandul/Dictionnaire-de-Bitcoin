@@ -229,6 +229,11 @@ categories:
   # commerce en ligne (e-gold, Silk Road).
   - SERVICE ET PAIEMENT
 
+  # Les applications construites sur le protocole Nostr : clients de réseau social,
+  # signataires et gestionnaires de clés, extensions de navigateur et messageries. Les
+  # concepts du protocole sont dans la catégorie « Nostr » du dictionnaire technique.
+  - APPLICATION NOSTR
+
   # Les entreprises qui développent des produits ou des services autour de Bitcoin,
   # quand la fiche porte sur l'entreprise plutôt que sur un produit précis.
   - ENTREPRISE
