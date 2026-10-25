@@ -33,9 +33,11 @@ class Part:
 class Taxonomy:
     """Catégories valides, partie et pictogramme de chaque catégorie."""
 
-    def __init__(self, parts: List[Part], pictograms: Dict[str, str], listed: List[str]):
+    def __init__(self, parts: List[Part], pictograms: Dict[str, str], listed: List[str],
+                 displays: Optional[Dict[str, str]] = None):
         self.parts = parts
         self.pictograms = pictograms
+        self.displays = displays or {}
         self.listed = listed  # ordre de categories.yaml
         self._part_of = {cat: p.id for p in parts for cat in p.categories}
 
@@ -46,13 +48,15 @@ class Taxonomy:
             listed = yaml.safe_load(f).get("categories", [])
         with open(templates_dir / "parts.yaml", encoding="utf-8") as f:
             data = yaml.safe_load(f)
-        parts, pictograms = [], {}
+        parts, pictograms, displays = [], {}, {}
         for raw in data.get("parts", []):
             cats = []
             for c in raw.get("categories", []):
                 cats.append(c["name"])
                 if c.get("pictogram"):
                     pictograms[c["name"]] = c["pictogram"]
+                if c.get("display"):
+                    displays[c["name"]] = c["display"]
             parts.append(Part(
                 id=raw["id"],
                 title=raw.get("title", raw["id"]),
@@ -60,7 +64,7 @@ class Taxonomy:
                 letter_pages=bool(raw.get("letter_pages", False)),
                 categories=cats,
             ))
-        return cls(parts, pictograms, listed)
+        return cls(parts, pictograms, listed, displays)
 
     def part_of(self, category: str) -> Optional[str]:
         return self._part_of.get(category)
@@ -70,6 +74,13 @@ class Taxonomy:
 
     def pictogram(self, category: str) -> Optional[str]:
         return self.pictograms.get(category)
+
+    def display(self, category: str) -> str:
+        """Nom de la catégorie en casse de phrase (« Lightning Network », « bLIP »)."""
+        if category in self.displays:
+            return self.displays[category]
+        lower = category.lower()
+        return lower[:1].upper() + lower[1:]
 
     def problems(self) -> List[str]:
         """Incohérences entre categories.yaml et parts.yaml."""

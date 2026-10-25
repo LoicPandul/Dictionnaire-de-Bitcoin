@@ -48,6 +48,7 @@ pre { font-family: monospace; font-size: 0.8em; background: #eff1f3; padding: 0.
 blockquote { margin: 0.6em 1.5em; font-size: 0.95em; }
 img { max-width: 100%; }
 span.figure { display: block; text-align: center; margin: 0.8em 0; }
+span.legende { display: block; font-size: 0.8em; font-style: italic; margin-top: 0.3em; }
 span.math-bloc { display: block; text-align: center; margin: 0.4em 0; }
 table { border-collapse: collapse; margin: 0.6em auto; font-size: 0.85em; }
 th, td { border: 1px solid #000; padding: 0.2em 0.4em; }
@@ -104,7 +105,8 @@ class _Converter:
             if not src.exists():
                 return ""
             name = self.images.setdefault(str(src), f"{slug}-{m.group(2)}".replace("/", "-"))
-            return "\n\n" + keep(f'<span class="figure"><img src="../images/{_xml(name)}" alt="{_xml(m.group(1))}"/></span>') + "\n\n"
+            caption = f'<span class="legende">{_xml(_french_spaces(m.group(1)))}</span>' if m.group(1).strip() else ""
+            return "\n\n" + keep(f'<span class="figure"><img src="../images/{_xml(name)}" alt="{_xml(m.group(1))}"/>{caption}</span>') + "\n\n"
         content = IMAGE_RE.sub(image, content)
 
         content = _french_spaces(content)

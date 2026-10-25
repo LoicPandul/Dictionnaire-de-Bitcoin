@@ -49,6 +49,7 @@ def escape_url(url: str) -> str:
 def clean_content(content: str) -> str:
     """Normalise les espaces : polyglossia gère seul les espaces de la ponctuation française."""
     content = content.replace("&nbsp;", " ")
+    content = content.replace("\u200b", "")  # espace sans chasse, absente d'Archivo
     content = content.replace("\u00A0", " ").replace("\u202F", " ")
     content = re.sub(r"(https?)[\s]*:[\s]*//", r"\1://", content)
     content = re.sub(r"[ \t]+", " ", content)
@@ -58,7 +59,6 @@ def clean_content(content: str) -> str:
 def fix_math(content: str) -> str:
     """Remplace les commandes mathématiques que la police ou les paquets ne gèrent pas."""
     content = re.sub(r"\\text\{([^}]+)\}", r"\\mathrm{\1}", content)
-    content = re.sub(r"\\mathbb\{([^}]+)\}", r"\\mathbf{\1}", content)
     content = re.sub(r"\\mod\b", r"\\bmod", content)
     return content
 
@@ -90,10 +90,10 @@ def _convert_table(table_text: str) -> Optional[str]:
     header = [c.strip() for c in lines[0].strip().strip("|").split("|")]
     rows = [[c.strip() for c in l.strip().strip("|").split("|")] for l in lines[2:]]
     n = len(header)
-    col_spec = "|" + "|".join([">{\\raggedright\\arraybackslash}X"] * n) + "|"
+    col_spec = "@{}" + " ".join([">{\\raggedright\\arraybackslash}X"] * n) + "@{}"
     out = [
         r"\par\vspace{0.25em}",
-        r"{\fontsize{8}{10}\selectfont\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.4}\arrayrulecolor{black}",
+        r"{\tablesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.3}\arrayrulecolor{black}\setlength{\arrayrulewidth}{0.3pt}",
         r"\noindent\begin{xltabular}{\linewidth}{" + col_spec + "}",
         r"\hline",
         " & ".join(rf"\textbf{{{_cell(h)}}}" for h in header) + r" \\ \hline",
@@ -142,7 +142,7 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
     # 2. Code inline
     def inline_code(m):
         code = m.group(1)
-        code = escape(code)
+        code = escape(code).replace("‖", r"{\rmfamily ‖}")  # absent d'Atkinson Hyperlegible Mono
         return keep(rf"\inlinecodelong{{{code}}}")
     content = re.sub(r"`([^`\n]+)`", inline_code, content)
 
@@ -154,8 +154,17 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
     def image(m):
         if assets_dir is None:
             return ""
-        path = (assets_dir / m.group(2)).as_posix()
-        return keep(rf"{{\centering\includegraphics[width=0.9\linewidth,keepaspectratio,height=0.42\textheight]{{{path}}}\par}}")
+        image_path = assets_dir / m.group(2)
+        # Le livre est imprimé en noir et blanc : la version « -nb » d'un schéma passe en priorité,
+        # en PDF vectoriel, sinon en PNG (charte 2027, section 6).
+        candidates = [image_path.with_name(image_path.stem + "-nb.pdf"),
+                      image_path.with_name(image_path.stem + "-nb" + image_path.suffix), image_path]
+        path = next(c for c in candidates if c.exists() or c == image_path).as_posix()
+        caption = ""
+        if m.group(1).strip():
+            caption = (r"\par\vspace{2pt}{\footnotesize\itshape " + _emphasis(escape(m.group(1).strip()))
+                       + r"\par}")
+        return keep(rf"{{\centering\includegraphics[width=0.9\linewidth,keepaspectratio,height=0.42\textheight]{{{path}}}{caption}\par}}")
     content = re.sub(r"!\[([^\]]*)\]\(\./assets/([^)\s]+)\)", image, content)
 
     # 5. Liens markdown : le texte seul
@@ -181,7 +190,7 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
     # 8. Titres de niveau 1 (textes liminaires)
     if not inline_only:
         if use_cartouche_h1:
-            content = re.sub(r"^# (.+)$", lambda m: keep(r"\vspace{0.3em}\noindent\vedettefit{" + escape(m.group(1)) + r"}\vspace{0.4em}"), content, flags=re.MULTILINE)
+            content = re.sub(r"^# (.+)$", lambda m: keep(r"\par\vspace{0.4em}\noindent\vedette{" + escape(m.group(1)) + r"}\par\nopagebreak"), content, flags=re.MULTILINE)
         content = re.sub(r"^### (.+)$", lambda m: keep(r"\subsubsection*{" + escape(m.group(1)) + "}"), content, flags=re.MULTILINE)
         content = re.sub(r"^## (.+)$", lambda m: keep(r"\subsection*{" + escape(m.group(1)) + "}"), content, flags=re.MULTILINE)
         content = re.sub(r"^# (.+)$", lambda m: keep(r"\section*{" + escape(m.group(1)) + "}"), content, flags=re.MULTILINE)
@@ -194,7 +203,7 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
 
     if not inline_only:
         # 11. Citations
-        content = re.sub(r"^> ?(.*)$", lambda m: r"\begin{quote}\small " + m.group(1) + r"\end{quote}", content, flags=re.MULTILINE)
+        content = re.sub(r"^> ?(.*)$", lambda m: r"\begin{quote}" + m.group(1) + r"\end{quote}", content, flags=re.MULTILINE)
         # 12. Listes
         content = _lists(content)
 
