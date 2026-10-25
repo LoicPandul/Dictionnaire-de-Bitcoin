@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { url, site } from './config.mjs';
+import { url, site, palette } from './config.mjs';
 import { loadDictionary, loadCategoryNotes } from './lib/content.mjs';
 import { createRenderer } from './lib/markdown.mjs';
 import { createLinker } from './lib/liens.mjs';
@@ -54,10 +54,25 @@ const minCss = (css) => css
   .replace(/:\s+/g, ':')
   .replace(/;}/g, '}')
   .trim();
+// Le bloc « palette » du CSS est réécrit depuis config.mjs : c'est le seul endroit où vivent les couleurs.
+const JETONS = {
+  papier: 'papier', sable: 'sable', encre: 'encre', ardoise: 'ardoise', couverture: 'couv', os: 'os', gravure: 'gravure',
+  lavis: 'lavis', accent: 'surligneur', flottant: 'flottant-clair', ombre: 'ombre',
+  sombreFond: 'sombre-fond', sombreSurface: 'sombre-surface', sombreFlottant: 'sombre-flottant',
+};
+function appliquerPalette(css) {
+  const lignes = Object.entries(JETONS).map(([cle, nom]) => {
+    if (!palette[cle]) throw new Error(`palette.${cle} manque dans config.mjs`);
+    return `--${nom}: ${palette[cle]};`;
+  });
+  const bloc = /(\/\* palette:début[^*]*\*\/)[\s\S]*?(\/\* palette:fin \*\/)/;
+  if (!bloc.test(css)) throw new Error('bloc « palette » introuvable dans site.css');
+  return css.replace(bloc, `$1\n  ${lignes.join('\n  ')}\n  $2`);
+}
 const hashed = {};
 for (const f of ['css/site.css', 'js/site.js', 'js/accueil.js']) {
   let buf = fs.readFileSync(path.join(here, 'static', f));
-  if (f.endsWith('.css')) buf = Buffer.from(minCss(buf.toString()));
+  if (f.endsWith('.css')) buf = Buffer.from(minCss(appliquerPalette(buf.toString())));
   const name = f.replace(/\.(css|js)$/, `.${sha(buf)}.$1`);
   write(name, buf);
   hashed[f] = `/${name}`;
@@ -82,8 +97,8 @@ write('site.webmanifest', JSON.stringify({
   lang: 'fr',
   start_url: '/',
   display: 'standalone',
-  background_color: '#F5F3EE',
-  theme_color: '#193042',
+  background_color: palette.papier,
+  theme_color: palette.couverture,
   icons: [
     { src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },

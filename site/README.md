@@ -49,6 +49,12 @@ Une fois le domaine acheté : changer `url` dans `config.mjs` (voir plus bas), p
 
 Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui la valeur provisoire `https://dictionnaire-bitcoin.example`. Elle sert aux adresses canoniques, au sitemap, au JSON-LD, aux cartes sociales et à la citation des définitions.
 
+## Couleurs et édition (passage à la charte 2027)
+
+Toutes les couleurs du site vivent dans `palette`, dans `config.mjs`. Le build en réécrit le bloc de jetons en tête de `static/css/site.css` (entre `palette:début` et `palette:fin`), la couleur de la barre des navigateurs et le manifeste ; voiles, ombres et scrims en dérivent. L'arbre gravé est une image en niveaux de gris fondue en mode « écran » sur la couleur de couverture : il prend seul la teinte de la palette.
+
+Les valeurs actuelles sont celles de l'édition 2026, provisoires. Pour passer à la charte de l'édition 2027 (`design/charte-2027.md`, branche `feat/couverture-2027`) : remplacer les valeurs de `palette` et `site.edition`, puis relancer le build. À refaire ensuite à la main : la carte sociale (`tools/carte-sociale.html`, qui reprend la couleur de couverture), et, si la couverture change, les images du livre (`static/img/livre.webp`, `couverture.webp`, les pages et la boucle vidéo, régénérées par `tools/prepare-assets.py` depuis les nouveaux PDF).
+
 ## Adresses
 
 Elles reprennent celles de pandul.fr sans le préfixe `/dictionnaire`, pour que les redirections tombent juste :

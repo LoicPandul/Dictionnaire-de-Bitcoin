@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { url, site } from '../config.mjs';
+import { url, site, palette } from '../config.mjs';
 import { escapeHtml as h } from './markdown.mjs';
 import { compareFr } from './content.mjs';
 
@@ -85,7 +85,7 @@ const headwordWords = (title) =>
     .join(' ');
 
 // ---------------------------------------------------------------- Tête de page
-function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = '#F5F3EE', type = 'website', preloadImage = '', extraJs = '' }) {
+function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = palette.papier, type = 'website', preloadImage = '', extraJs = '' }) {
   const canonical = `${url}${p}`;
   return `<!doctype html>
 <html lang="fr">
@@ -232,7 +232,7 @@ function footer(letters, total, { home = false } = {}) {
   ${tete}
   <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="Toutes les lettres"><ol>${items}</ol></nav>
   <div class="dos-pied">
-    <p class="dos-marque"><span class="feuille" aria-hidden="true"></span>${h(site.title)}, ${h(site.author)}, édition 2026</p>
+    <p class="dos-marque"><span class="feuille" aria-hidden="true"></span>${h(site.title)}, ${h(site.author)}, édition ${site.edition}</p>
     <ul class="dos-liens">
       <li><a href="${site.pdf}" download>PDF gratuit</a></li>
       <li><a href="${site.bitcoinBazar}" rel="noopener">Bitcoin Bazar</a></li>
@@ -417,7 +417,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   ${turn(def.alphaPrev, 'prev')}
   ${turn(def.alphaNext, 'next')}
 </nav>
-<p class="colophon">Entrée ${num(def.n)} sur ${num(total)} du <cite>${h(site.title)}</cite>, édition 2026. <a href="${editUrl}" rel="noopener">Proposer une correction sur GitHub</a> <button class="citer" type="button" data-citer="${h(`${site.author}, « ${def.title} », ${site.title}, édition 2026, ${url}/${def.slug}/`)}" hidden>Citer cette définition</button></p>`;
+<p class="colophon">Entrée ${num(def.n)} sur ${num(total)} du <cite>${h(site.title)}</cite>, édition ${site.edition}. <a href="${editUrl}" rel="noopener">Proposer une correction sur GitHub</a> <button class="citer" type="button" data-citer="${h(`${site.author}, « ${def.title} », ${site.title}, édition ${site.edition}, ${url}/${def.slug}/`)}" hidden>Citer cette définition</button></p>`;
 
   return page({
     headOpts: {
@@ -608,9 +608,9 @@ export function homePage(data, { assets, jsonLd }) {
       <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot, nonce…">
       <button type="submit">Chercher</button>
     </form>
-    <p class="couv-auteur">${h(site.author)}<br>${num(total)} définitions, édition 2026</p>
+    <p class="couv-auteur">${h(site.author)}<br>${num(total)} définitions, édition ${site.edition}</p>
   </div>
-  <div class="jaquette-tranche" aria-hidden="true"><span class="feuille"></span><span class="tranche-titre">Dictionnaire de Bitcoin</span><span class="tranche-an">2026</span></div>
+  <div class="jaquette-tranche" aria-hidden="true"><span class="feuille"></span><span class="tranche-titre">Dictionnaire de Bitcoin</span><span class="tranche-an">${site.edition}</span></div>
   <section class="jaquette-dos jour" aria-labelledby="jour-titre" data-jour>
     <h2 class="jour-titre" id="jour-titre">Le mot du jour</h2>
     <p class="jour-mot"><a href="/${f.slug}/" data-jour-lien><span data-jour-nom data-vt-nom>${breakable(f.title)}</span></a></p>
@@ -690,7 +690,7 @@ export function homePage(data, { assets, jsonLd }) {
       path: '/',
       jsonLd,
       assets,
-      themeColor: '#193042',
+      themeColor: palette.couverture,
       extraJs: assets.home,
       preloadImage: '<link rel="preload" as="image" type="image/avif" imagesrcset="/img/arbre-1100.avif 754w, /img/arbre-1600.avif 1096w" imagesizes="(min-width: 1100px) 46vw, 100vw" fetchpriority="high">\n',
     },
@@ -766,7 +766,7 @@ export function notFoundPage({ assets, letters, total }) {
   </div>
 </section>`;
   return page({
-    headOpts: { title: 'Page introuvable | Dictionnaire de Bitcoin', description: 'Cette page n’existe pas dans le Dictionnaire de Bitcoin.', path: '/404.html', assets, themeColor: '#193042' },
+    headOpts: { title: 'Page introuvable | Dictionnaire de Bitcoin', description: 'Cette page n’existe pas dans le Dictionnaire de Bitcoin.', path: '/404.html', assets, themeColor: palette.couverture },
     body,
     bodyClass: 'p-perdu',
     picto,

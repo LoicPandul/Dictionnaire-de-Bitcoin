@@ -86,13 +86,13 @@ def tree(cover):
     rec = cv2.inpaint(a8, hole * 255, 4, cv2.INPAINT_TELEA).astype(np.float32) / 255
     a = (smoothstep(rec, 0.08, 0.7) * 255).astype(np.uint8)
     h, w = a.shape
-    # Traits Gravure sur le bleu nuit exact de la couverture, en image opaque : l'alpha d'une gravure
-    # aussi fine coûte trois fois plus cher que l'image pleine.
-    k = (a.astype(np.float32) / 255)[..., None]
-    rgb = np.array(NAVY, np.float32) * (1 - k) + np.array(GRAVURE, np.float32) * k
-    img = Image.fromarray(rgb.astype(np.uint8), 'RGB')
+    # Traits gris sur noir : le CSS fond l'image en mode « écran » sur la couleur de couverture
+    # (jeton --couv), si bien que l'arbre prend la teinte de n'importe quelle palette. Un gris à 66 %
+    # donne, sur le bleu nuit 2026, exactement le gris-bleu des traits imprimés.
+    k = a.astype(np.float32) / 255 * 0.66
+    gris = Image.fromarray((k * 255).astype(np.uint8), 'L').convert('RGB')
     for height in (1100, 1600):
-        r = img.resize((round(w * height / h), height), Image.LANCZOS)
+        r = gris.resize((round(w * height / h), height), Image.LANCZOS)
         r.save(os.path.join(OUT, f'arbre-{height}.avif'), 'AVIF', quality=45)
         r.save(os.path.join(OUT, f'arbre-{height}.webp'), 'WEBP', quality=68, method=6)
 

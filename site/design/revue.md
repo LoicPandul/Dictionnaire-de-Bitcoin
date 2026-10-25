@@ -35,3 +35,25 @@ Ce qui a été corrigé après ce tour :
 - **Catégorie** : lettres absentes retirées, « Pour commencer » qui défile au doigt sur téléphone, présentation repliée à quatre lignes.
 - **404** : fond de l'arbre aligné sur celui de la page (plus de rectangle), trois suggestions, champ prérempli avec le mot tapé.
 - **Dos** : liens en grille, cibles de 44 px.
+
+### Tour 2 (nouveau relecteur indépendant, avec le relevé du tour 1 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,0 | 7,5 |
+| Définition | 6,5 | 7,5 |
+| Lettre | 6,0 | 6,5 |
+| Catégorie | 6,5 | 7,0 |
+| Recherche | 6,0 | 6,0 |
+| 404 | 7,0 | 7,5 |
+
+Note globale : 6,8. Il confirme la plupart des corrections du tour 1 et relève : recherche multi-mots et « bip32 » sans résultat, premiers mots trop bas sur les pages de lettre et de catégorie, apparition au défilement qui laisse la liste vide après un saut, tranche illisible au doigt, titres hexadécimaux en capitales, définition mobile qui commence trop bas, fantôme résiduel de la transition, pied de page répété trop haut.
+
+Ce qui a été corrigé après ce tour :
+
+- **Recherche** : chaque mot cherché dans tous les champs ; « bip32 », « BIP 32 », « bip-0032 » ramenés à BIP-0032 ; étiquettes de catégorie avec le nombre de résultats, seulement celles qui en ont ; « aucun résultat » propose les mots les plus proches, les lettres et les catégories, aussi sur la page de recherche.
+- **Lettre** : en-tête resserré en une bande (lettre, titre, tranche) ; sous-groupes sur une ligne qui défile (ordinateur) et en liste « Aller à » (téléphone) ; plus d'apparition au défilement sur les listes ; sujet des BIP affiché à côté du numéro (tiré des termes associés de l'auteur) ; trait visé de 4 px au moins ; loupe des 21 traits voisins au doigt ; bouton « Haut ».
+- **Catégorie** : rayon des 19 catégories avec la courante en évidence (sélecteur sur téléphone) ; alphabet complet, lettres absentes à leur place en gris ; centaines des BIP dans la barre ; présentation repliée avec « Lire la suite » ; « Pour commencer » en liste courte sur téléphone.
+- **Définition** : signet placé après le texte sur téléphone ; plus de transformation depuis les listes (la vedette se fond sur place, précédent et suivant tournent la page) ; renvois aussi sur les codes en ligne (`scriptPubKey`, SHA256…) ; schéma ouvert ajusté à la largeur avec « Agrandir » et pincement ; points de suspension rétablis.
+- **Partout** : `0x` minuscule dans les titres hexadécimaux ; espaces fines insécables (guillemets, deux-points) ; plus de flash au toucher ; pied de page compact hors accueil ; voile neutre sous les textes posés sur l'arbre ; jaquette centrée, dos et couverture de même largeur ; fichier source réduit à `definition.md` avec lien vers GitHub ; 404 en recherche directe sous le champ, résultats avec extrait.
+- **Couleurs** : toute la palette passe par `config.mjs` (préparation de la charte 2027), l'arbre s'adapte seul à la couleur de couverture.

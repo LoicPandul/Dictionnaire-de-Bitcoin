@@ -55,7 +55,7 @@ export function homeJsonLd({ total, description }) {
       alternativeHeadline: site.subtitle,
       author: { '@id': PERSON_ID },
       inLanguage: 'fr',
-      bookEdition: 'Édition 2026',
+      bookEdition: `Édition ${site.edition}`,
       workExample: [
         { '@type': 'Book', bookFormat: 'https://schema.org/Paperback', isbn: site.isbnPaperback },
         { '@type': 'Book', bookFormat: 'https://schema.org/Hardcover', isbn: site.isbnHardcover },
