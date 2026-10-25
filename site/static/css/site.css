@@ -312,7 +312,7 @@ a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1
 /* Alphabet : un seul composant (menu, pied, recherche, tranche sur téléphone). 7 colonnes, 13 dès 640 px. */
 .abc { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
 @media (min-width: 640px) { .abc { grid-template-columns: repeat(13, minmax(0, 1fr)); } }
-.abc a, .abc span {
+.abc > a, .abc > li > a, .abc > li > span {
   display: grid;
   place-items: center;
   min-height: 48px;
@@ -320,9 +320,9 @@ a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1
   font-stretch: 62%;
   text-decoration: none;
 }
-.abc a { background: var(--surface); color: var(--texte); transition: background-color var(--d-hover) ease, color var(--d-hover) ease; }
+.abc > a, .abc > li > a { background: var(--surface); color: var(--texte); transition: background-color var(--d-hover) ease, color var(--d-hover) ease; }
 .abc a[aria-current='true'], .abc a[aria-current='page'] { background: var(--choisi); color: var(--sur-choisi); }
-.abc span { color: var(--doux); opacity: 0.5; }
+.abc > li > span { color: var(--doux); opacity: 0.5; }
 .abc a:active { background: var(--choisi); color: var(--sur-choisi); }
 @media (hover: hover) { .abc a:not([aria-current]):hover { background: var(--marque); color: var(--sur-marque); } }
 
@@ -794,7 +794,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (hover: hover) { .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
 .suggestions-vides { padding: 8px 20px 16px; display: grid; gap: 12px; }
 .suggestions-vides p { font-size: var(--t-note); color: var(--doux); }
-.suggestions-vides .abc a, .suggestions-vides .abc span { min-height: 44px; font-size: 20px; }
+.suggestions-vides .abc > * { min-height: 44px; font-size: 20px; }
 .cats-mini { display: flex; flex-wrap: wrap; gap: 4px; }
 .cats-mini a { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 6px 10px; background: var(--surface); color: var(--texte); font-size: var(--t-note); font-weight: 600; }
 .cats-mini .picto { width: 15px; height: 15px; }
