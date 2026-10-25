@@ -34,3 +34,7 @@ Thumbs.db
 nul
 # Atelier de design (captures, direction)
 .taste-skill/
+
+# Captures et vidéos de travail du site (lourdes, régénérables)
+site/design/captures/
+site/design/video/
