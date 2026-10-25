@@ -1,0 +1,1 @@
+Soft fork déclenché et appliqué par les utilisateurs via leurs nœuds, sans attendre l'approbation des mineurs. Il sert de moyen de pression face à des mineurs opposés à une mise à jour, au risque d'une scission de la chaîne.

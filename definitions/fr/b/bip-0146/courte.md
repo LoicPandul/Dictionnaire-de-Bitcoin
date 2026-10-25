@@ -1,0 +1,1 @@
+Proposition qui corrige deux sources de malléabilité des signatures restantes après le BIP-0066 : la règle `LOW_S` impose une valeur S basse dans les signatures ECDSA, et la règle `NULLFAIL` impose une signature vide en cas d'échec.

@@ -1,0 +1,1 @@
+Modèle mathématique issu de la physique, appliqué à la diffusion des transactions et des blocs entre nœuds Bitcoin. Il aide à évaluer quelle part des nœuds doit relayer une transaction pour qu'elle atteigne un mineur.

@@ -1,0 +1,1 @@
+Opcode proposé dans le BIP-0119 qui impose que la transaction de dépense corresponde exactement à un gabarit défini à l'avance. Ce *covenant* non récursif servirait par exemple aux *vaults* ou au contrôle de congestion.

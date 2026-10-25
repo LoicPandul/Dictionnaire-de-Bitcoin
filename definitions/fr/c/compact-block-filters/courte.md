@@ -1,0 +1,1 @@
+Mécanisme qui permet à un client léger de savoir si un bloc contient des transactions qui le concernent sans révéler ses adresses. Les nœuds complets publient pour chaque bloc un filtre, défini par le BIP-0158, que le client teste localement avant de télécharger le bloc.

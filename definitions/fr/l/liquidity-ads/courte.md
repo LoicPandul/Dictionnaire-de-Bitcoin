@@ -1,0 +1,1 @@
+Mécanisme Lightning qui permet à un nœud d'annoncer qu'il fournit de la liquidité entrante contre rémunération, avec montant, durée et tarif. Un autre nœud accepte l'offre pour ouvrir un canal financé par le fournisseur, sans intermédiaire de confiance.

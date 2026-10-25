@@ -1,0 +1,1 @@
+Proposition qui définit une méthode d'activation des *soft forks* par signalisation des mineurs, comptée en hauteur de bloc, avec un paramètre `LOT` qui peut imposer l'activation à la fin de la période si le seuil n'est pas atteint.

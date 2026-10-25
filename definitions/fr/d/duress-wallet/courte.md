@@ -1,0 +1,1 @@
+Portefeuille leurre, ouvert par un code PIN spécial, que l'utilisateur déverrouille lorsqu'on le force sous la menace à ouvrir son *signing device*. Il contient une petite somme et ne se distingue pas du portefeuille principal, dont l'agresseur ne peut pas déceler l'existence.

@@ -1,0 +1,1 @@
+Indicateur d'analyse de chaîne inventé par LaurentMT, dérivé de l'entropie de Shannon, qui mesure le nombre d'interprétations possibles d'une transaction à partir de ses montants. Plus il est élevé, plus la transaction est confidentielle.

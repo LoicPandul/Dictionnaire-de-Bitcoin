@@ -1,0 +1,1 @@
+Entreprise cotée en bourse qui accumule des bitcoins dans sa trésorerie plutôt que de la monnaie fiat ou des obligations, pour se protéger de la dépréciation monétaire et offrir à ses actionnaires une exposition indirecte au bitcoin.

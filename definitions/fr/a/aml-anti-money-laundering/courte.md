@@ -1,0 +1,1 @@
+Ensemble des lois et procédures destinées à prévenir le blanchiment d'argent, qui obligent les institutions financières, dont les plateformes d'échange de bitcoins, à vérifier l'identité de leurs clients, surveiller leurs transactions et signaler les activités suspectes.

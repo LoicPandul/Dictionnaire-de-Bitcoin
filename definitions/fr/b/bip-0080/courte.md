@@ -1,0 +1,1 @@
+Proposition qui définit un chemin de dérivation pour les portefeuilles multisig déterministes des *voting pools* sans *colored coins*, où plusieurs participants gèrent ensemble des fonds en *cold storage*. Elle a été fermée sans être largement adoptée.

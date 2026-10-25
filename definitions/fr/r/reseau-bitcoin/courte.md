@@ -1,0 +1,1 @@
+Ensemble des nœuds qui exécutent un logiciel implémentant le protocole Bitcoin et communiquent en pair-à-pair pour télécharger et vérifier la blockchain, puis diffuser les nouveaux blocs et les nouvelles transactions.

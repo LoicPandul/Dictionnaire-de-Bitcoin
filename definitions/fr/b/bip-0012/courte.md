@@ -1,0 +1,1 @@
+Proposition qui ajoutait l'opcode `OP_EVAL`, capable d'exécuter un script fourni dans le `scriptSig`, pour ne révéler les conditions de dépense qu'au moment de la dépense. Le BIP-0016 (P2SH) l'a remplacée par une méthode plus sûre.

@@ -1,0 +1,1 @@
+Processeur de paiement *open source*, lancé en 2017 à l'initiative de Nicolas Dorier, qui permet aux commerçants d'accepter des paiements en bitcoins, *on-chain* ou par Lightning, sans dépendre d'un intermédiaire.

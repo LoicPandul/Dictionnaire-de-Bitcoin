@@ -1,0 +1,1 @@
+Réutilisation d'une même adresse de réception pour bloquer plusieurs UTXO. Elle laisse supposer que ces fonds appartiennent à une même entité, ce qui nuit à la confidentialité et facilite le traçage *on-chain*.

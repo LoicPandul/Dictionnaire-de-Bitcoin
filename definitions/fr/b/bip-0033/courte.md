@@ -1,0 +1,1 @@
+Proposition, jamais implémentée, de nœuds « stratifiés » où les clients légers délèguent la validation et les recherches dans la blockchain à plusieurs services externes, dont ils recoupent les réponses.

@@ -1,0 +1,1 @@
+Seuil en sats en deçà duquel un nœud considère une sortie comme de la poussière et limite la propagation de la transaction. Cette règle de standardisation, propre à chaque nœud, se calcule dans Bitcoin Core à partir d'un taux de frais de référence.

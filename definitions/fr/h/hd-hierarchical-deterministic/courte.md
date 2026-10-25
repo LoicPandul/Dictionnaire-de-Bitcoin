@@ -1,0 +1,1 @@
+Se dit d'un portefeuille Bitcoin qui dérive toutes ses paires de clés d'une graine unique, de façon reproductible et organisée en arborescence, selon le BIP-0032. Il évite la réutilisation d'adresse tout en restant restaurable depuis cette seule graine.

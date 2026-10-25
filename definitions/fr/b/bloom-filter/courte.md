@@ -1,0 +1,1 @@
+Structure de données probabiliste qui teste si un élément appartient à un ensemble, sans faux négatif mais avec quelques faux positifs. Dans Bitcoin, les portefeuilles SPV s'en servent selon le BIP-0037.

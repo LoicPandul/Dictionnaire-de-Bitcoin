@@ -1,0 +1,1 @@
+Technique de communication qui enveloppe un message dans plusieurs couches de chiffrement, chaque nœud intermédiaire n'en retirant qu'une pour connaître le suivant. Utilisée par Tor et le Lightning Network, elle empêche un intermédiaire de connaître à la fois l'expéditeur et le destinataire.

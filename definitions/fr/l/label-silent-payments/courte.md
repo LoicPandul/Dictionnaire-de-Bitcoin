@@ -1,0 +1,1 @@
+Entier qui modifie la clé de dépense d'une adresse statique *Silent Payments* pour en créer de nouvelles. Le destinataire sépare ainsi ses usages avec plusieurs adresses statiques, sans alourdir beaucoup le scan des paiements.

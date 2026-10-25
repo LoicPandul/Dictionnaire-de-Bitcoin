@@ -1,0 +1,1 @@
+Logiciel de portefeuille Bitcoin *open source* de Wizardsardine, fondé sur Miniscript, qui ajoute à la clé principale des clés de récupération activées après une période d'inactivité grâce aux *timelocks*. Il sert aux plans d'héritage et de sauvegarde sans tiers de confiance.

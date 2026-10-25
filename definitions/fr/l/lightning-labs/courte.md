@@ -1,0 +1,1 @@
+Entreprise fondée en 2016 par Elizabeth Stark et Olaoluwa Osuntokun, principal mainteneur de l'implémentation Lightning LND. Elle développe aussi des outils comme Loop, Pool, Lightning Terminal et le protocole Taproot Assets.

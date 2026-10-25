@@ -1,0 +1,1 @@
+Proposition qui confiait l'acceptation ou le rejet des BIP à un comité de membres désignés, selon un processus de vote structuré. Jugée contraire à la gouvernance décentralisée de Bitcoin, elle a été rejetée.

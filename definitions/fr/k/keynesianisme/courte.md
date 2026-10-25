@@ -1,0 +1,1 @@
+Courant de pensée économique issu de John Maynard Keynes, qui prône l'intervention de l'État et des banques centrales pour stabiliser les cycles économiques. Les bitcoiners le critiquent pour l'expansion monétaire et l'endettement public qu'il encourage.

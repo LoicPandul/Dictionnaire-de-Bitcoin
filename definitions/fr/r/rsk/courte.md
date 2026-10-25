@@ -1,0 +1,1 @@
+Sidechain de Bitcoin, aussi appelée Rootstock, qui exécute des *smart contracts* compatibles avec Ethereum. Elle reçoit des bitcoins par un ancrage bidirectionnel sous forme de RBTC et s'appuie sur le *merged mining* des mineurs de Bitcoin.

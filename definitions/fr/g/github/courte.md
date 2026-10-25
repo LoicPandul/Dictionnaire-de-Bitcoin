@@ -1,0 +1,1 @@
+Plateforme d'hébergement de code source bâtie sur Git, rachetée par Microsoft en 2018, qui facilite la collaboration entre développeurs. La plupart des projets liés à Bitcoin, dont Bitcoin Core, y sont hébergés.

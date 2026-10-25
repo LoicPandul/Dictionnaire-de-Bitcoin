@@ -1,0 +1,1 @@
+Entreprise fondée en 2019 qui développe une infrastructure bancaire Bitcoin et Lightning *open source*, à l'origine du portefeuille Blink, anciennement Bitcoin Beach Wallet, utilisé à El Zonte au Salvador.

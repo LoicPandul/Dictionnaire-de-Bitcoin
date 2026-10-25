@@ -1,0 +1,1 @@
+Version dissimulée d'AsicBoost, optimisation du minage qui fait varier l'arbre de Merkle pour économiser des calculs de `SHA256` sans que la méthode soit visible. Depuis SegWit, elle n'est plus efficace.

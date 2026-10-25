@@ -1,0 +1,1 @@
+Nombre de 256 bits sous lequel le hash de l'en-tête d'un bloc doit se trouver pour que ce bloc soit valide. Ajustée tous les 2016 blocs, elle maintient un intervalle moyen de 10 minutes entre les blocs.

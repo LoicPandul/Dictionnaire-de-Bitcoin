@@ -1,0 +1,1 @@
+Proposition de Brandon Black et Jeremy Rubin qui ajoute à Tapscript l'opcode `OP_CHECKSIGFROMSTACK`, capable de vérifier une signature de Schnorr sur un message arbitraire fourni sur la pile plutôt que sur la transaction courante.

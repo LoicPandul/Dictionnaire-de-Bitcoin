@@ -1,0 +1,1 @@
+Ensemble d'adresses qu'un analyste de chaîne attribue à une même entité grâce à des heuristiques. Identifier un point d'entrée dans ce groupe permet ensuite de relier toute son activité à une identité réelle.

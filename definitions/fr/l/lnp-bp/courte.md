@@ -1,0 +1,1 @@
+Association suisse à but non lucratif fondée en 2019 par Maxim Orlovsky et Giacomo Zucco, qui développe et maintient les standards de RGB, un protocole de *smart contracts* en *client-side validation* sur Bitcoin et Lightning.

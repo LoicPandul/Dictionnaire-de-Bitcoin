@@ -1,0 +1,1 @@
+Pratique d'un mineur qui se connecte à une pool concurrente pour récupérer l'en-tête de ses nouveaux blocs avant leur diffusion. Il commence ainsi à miner sur ce bloc quelques secondes plus tôt, sans l'avoir validé.

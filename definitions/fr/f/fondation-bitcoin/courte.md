@@ -1,0 +1,1 @@
+Organisation à but non lucratif fondée en 2012 pour promouvoir Bitcoin et financer ses développeurs, dont l'influence a décliné après les affaires judiciaires de plusieurs fondateurs et les critiques sur sa gouvernance.

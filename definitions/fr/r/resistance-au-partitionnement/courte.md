@@ -1,0 +1,1 @@
+Capacité du réseau Bitcoin à rester d'un seul tenant malgré les tentatives de le fragmenter, chaque nœud gardant au moins une connexion avec des pairs qui suivent les mêmes règles de consensus pour rester en consensus avec le reste du réseau.

@@ -1,0 +1,1 @@
+Hash qui satisfait une cible de difficulté plus basse que celle du réseau, envoyé par un mineur à sa pool. Les *shares* mesurent la contribution de chaque mineur et servent de base au calcul de sa rémunération.

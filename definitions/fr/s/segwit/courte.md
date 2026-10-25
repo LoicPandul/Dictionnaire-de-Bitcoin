@@ -1,0 +1,1 @@
+Soft fork de Bitcoin activé en août 2017 qui déplace les signatures dans une structure séparée, le témoin. Il corrige la malléabilité des transactions et augmente la capacité des blocs, ce qui a facilité le développement du Lightning Network.

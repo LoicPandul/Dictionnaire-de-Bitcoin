@@ -1,0 +1,1 @@
+Valeur calculée à partir de données pour détecter une erreur ou une altération accidentelle. Sur Bitcoin, les adresses et les phrases de récupération en contiennent une pour repérer les fautes de saisie.

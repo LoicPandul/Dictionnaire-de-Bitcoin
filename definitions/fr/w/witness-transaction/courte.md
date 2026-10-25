@@ -1,0 +1,1 @@
+Transaction Bitcoin qui, dans le protocole RGB, ferme un *single-use seal* en dépensant un UTXO et engage un nouveau sceau, ce qui prouve on-chain que l'état du contrat a été fixé à un instant précis.

@@ -1,0 +1,1 @@
+Philosophie politique libertarienne fondée par Samuel Edward Konkin III, qui prône la contre-économie, c'est-à-dire des échanges hors du cadre de l'État, pour éroder son pouvoir. Beaucoup de bitcoiners s'en réclament.

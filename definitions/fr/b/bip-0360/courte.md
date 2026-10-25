@@ -1,0 +1,1 @@
+Proposition de soft fork qui crée P2MR (*Pay-to-Merkle-Root*), un type de sortie proche de P2TR mais sans dépense par clé, pour éviter d'exposer une clé publique aux attaques d'ordinateurs quantiques.

@@ -1,0 +1,1 @@
+Implémentation de serveur Electrum écrite en C++, qui indexe la blockchain à partir d'un nœud complet pour répondre rapidement aux portefeuilles compatibles, au prix d'un index plus lourd que celui d'Electrs.

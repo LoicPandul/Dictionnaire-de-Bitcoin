@@ -1,0 +1,1 @@
+Technique qui permet aux mineurs de Bitcoin de miner en même temps une ou plusieurs *sidechains* en réutilisant le même travail de calcul, au prix d'un nœud à faire tourner par *sidechain* et d'une récompense versée sur celle-ci.

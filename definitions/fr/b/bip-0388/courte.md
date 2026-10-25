@@ -1,0 +1,1 @@
+Proposition qui définit les politiques de portefeuille (*wallet policies*), un format restreint de *descriptors* qui sépare le modèle de la liste des clés, pour qu'un portefeuille matériel affiche la politique de dépense à vérifier avant de signer.

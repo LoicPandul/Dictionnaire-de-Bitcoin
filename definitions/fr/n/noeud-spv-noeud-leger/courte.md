@@ -1,0 +1,1 @@
+Client qui ne garde que les en-têtes de blocs et interroge des nœuds complets pour vérifier, par des preuves de Merkle, qu'une transaction est incluse dans un bloc. Il convient aux appareils modestes comme les téléphones.

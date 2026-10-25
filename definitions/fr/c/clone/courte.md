@@ -1,0 +1,1 @@
+Opération Git qui crée une copie locale d'un dépôt distant, avec toutes ses branches et son historique de *commits*. Un utilisateur de Bitcoin s'en sert par exemple pour télécharger le code d'un logiciel.

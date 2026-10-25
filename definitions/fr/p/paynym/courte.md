@@ -1,0 +1,1 @@
+Identifiant de portefeuille dérivé d'un code de paiement BIP-0047 et représenté par un robot, qui permet de générer avec un autre utilisateur des adresses de réception uniques sans interaction. Samourai Wallet et Sparrow Wallet l'ont mis en œuvre.

@@ -1,0 +1,1 @@
+Technique qui enchaîne plusieurs transactions vers soi-même avant le paiement final pour simuler un transfert de propriété. Elle éloigne un UTXO de son passé, par exemple d'un *coinjoin*, pour éviter qu'une plateforme régulée ne le refuse ou ne bloque le compte.

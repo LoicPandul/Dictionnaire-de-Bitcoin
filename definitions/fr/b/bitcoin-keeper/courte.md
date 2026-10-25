@@ -1,0 +1,1 @@
+Portefeuille Bitcoin *open source* développé par BitHyve et spécialisé dans le multisig, qui permet de créer des coffres combinant plusieurs portefeuilles matériels et clés logicielles, sur mobile et sur ordinateur.

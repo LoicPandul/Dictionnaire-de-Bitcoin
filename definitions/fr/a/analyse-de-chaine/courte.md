@@ -1,0 +1,1 @@
+Ensemble des méthodes qui servent à tracer les flux de bitcoins sur la blockchain, en appliquant des heuristiques pour regrouper des activités sous un même utilisateur puis les relier à une identité réelle. Ses conclusions restent des probabilités, jamais des certitudes.

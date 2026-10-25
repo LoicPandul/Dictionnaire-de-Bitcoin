@@ -1,0 +1,1 @@
+Environnement Linux minimaliste dédié à JoinMarket, avec un menu dans le terminal qui donne accès aux commandes de base. Il sert à faire tourner des coinjoins sur une machine dédiée, comme un Raspberry Pi.

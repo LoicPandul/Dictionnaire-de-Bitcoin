@@ -1,0 +1,1 @@
+Site de jeu de dés en bitcoins lancé en avril 2012 par Erik Voorhees, qui payait automatiquement les gagnants. Il a été l'un des premiers services commerciaux à grande échelle sur Bitcoin et a représenté près de la moitié des transactions du réseau.

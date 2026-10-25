@@ -1,0 +1,1 @@
+Empreintes de blocs codées en dur dans Bitcoin Core, qui associaient une hauteur à un hash attendu pour rejeter toute chaîne concurrente sous ces blocs. Elles servaient surtout de protection contre le déni de service pendant l'IBD et ont été retirées dans Bitcoin Core 30.0.

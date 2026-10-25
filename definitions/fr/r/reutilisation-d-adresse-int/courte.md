@@ -1,0 +1,1 @@
+Réutilisation d'une même adresse en entrée et en sortie d'une même transaction. En analyse de chaîne, elle sert d'heuristique pour repérer le change : la sortie qui reprend l'adresse de l'entrée est vraisemblablement la monnaie rendue.

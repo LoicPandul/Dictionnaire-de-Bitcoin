@@ -1,0 +1,1 @@
+Proposition qui fait annoncer et demander les transactions entre pairs par leur `wtxid` plutôt que par leur `txid`, pour qu'un pair malveillant ne puisse plus gaspiller la bande passante d'un nœud avec des témoins invalides.

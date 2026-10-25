@@ -1,0 +1,1 @@
+Requête de paiement Lightning générée par le destinataire, définie par BOLT-11, qui contient les informations nécessaires pour le payer : nœud destinataire, montant, expiration et hachage du secret. Une fois payée, elle ne peut plus être réutilisée.

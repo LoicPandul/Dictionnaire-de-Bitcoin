@@ -1,0 +1,1 @@
+Proposition qui décrit la *Chain Code Delegation*, où un participant d'un multisig garde les codes de chaîne des autres et leur fournit des *tweaks* au moment de signer. Ces cosignataires ne voient ainsi ni le solde ni les autres adresses du portefeuille.

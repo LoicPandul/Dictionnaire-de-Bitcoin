@@ -1,0 +1,1 @@
+Structure de 80 octets en tête de chaque bloc, qui contient la version, l'empreinte du bloc précédent, la racine de Merkle des transactions, l'horodatage, la cible et le nonce. Son hachage doit respecter la cible de difficulté pour que le bloc soit valide.

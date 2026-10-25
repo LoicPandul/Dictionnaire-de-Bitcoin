@@ -1,0 +1,1 @@
+Variante publique d'AsicBoost, optimisation du minage qui utilise le champ `nVersion` de l'en-tête comme *nonce* supplémentaire pour réduire les calculs `SHA256`, sans rien dissimuler au reste du réseau, contrairement à la version Covert.

@@ -1,0 +1,1 @@
+Synchronisation initiale d'un nouveau nœud complet, qui télécharge et vérifie tous les blocs depuis le bloc de Genèse. Elle dure de quelques heures à plus d'une semaine selon la machine et la connexion.

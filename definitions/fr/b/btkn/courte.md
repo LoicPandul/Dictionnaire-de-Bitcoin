@@ -1,0 +1,1 @@
+Standard de jetons natif du protocole Spark, qui permet d'émettre et de transférer des actifs comme des *stablecoins* ou des points de fidélité sur cette couche supérieure de Bitcoin, sans *smart contract*.

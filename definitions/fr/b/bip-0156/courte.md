@@ -1,0 +1,1 @@
+Proposition Dandelion, qui protège l'origine d'une transaction en la faisant d'abord passer par un chemin aléatoire de nœuds (la tige) avant sa diffusion à tout le réseau (le capitule). Elle a été rejetée.

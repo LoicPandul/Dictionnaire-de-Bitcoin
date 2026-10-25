@@ -1,0 +1,1 @@
+Algorithme de chiffrement authentifié qui combine le chiffre de flux ChaCha20 et le code d'authentification Poly1305. Il chiffre les échanges entre nœuds Bitcoin dans le transport P2P v2 (BIP-0324) et entre pairs Lightning (BOLT-08).

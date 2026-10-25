@@ -1,0 +1,1 @@
+Mécanisme secret, introduit volontairement dans un système ou un logiciel, qui donne un accès privilégié en contournant les procédures d'authentification et de sécurité habituelles, par exemple pour espionner ou voler des données.

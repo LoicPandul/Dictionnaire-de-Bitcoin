@@ -1,0 +1,1 @@
+Modèle de communication où les participants échangent directement entre eux, sans intermédiaire central, chacun étant à la fois client et serveur. Le réseau Bitcoin fonctionne ainsi : ses nœuds diffusent transactions et blocs sans qu'aucune entité ne le contrôle.

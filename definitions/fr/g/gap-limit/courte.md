@@ -1,0 +1,1 @@
+Paramètre de portefeuille qui fixe le nombre d'adresses vides consécutives au-delà duquel le logiciel arrête de chercher des transactions, et qu'il faut parfois augmenter lors d'une restauration pour retrouver tous les fonds.

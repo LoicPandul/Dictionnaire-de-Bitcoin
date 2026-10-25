@@ -1,0 +1,1 @@
+Motif de *nonces* et d'horodatages repéré en 2013 par Sergio Demian Lerner dans les blocs des premiers mois de Bitcoin, attribué à un seul mineur soupçonné d'être Satoshi Nakamoto. Selon Lerner, ce mineur aurait miné environ 1,1 million de bitcoins.

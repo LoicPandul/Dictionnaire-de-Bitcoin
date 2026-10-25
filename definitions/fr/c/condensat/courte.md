@@ -1,0 +1,1 @@
+Résultat de taille fixe produit par une fonction de hachage cryptographique appliquée à des données. Le moindre changement des données donne un condensat complètement différent, et il est très difficile de retrouver les données d'origine à partir de lui.

@@ -1,0 +1,1 @@
+Système de monnaie numérique proposé par David Chaum en 1982, dans lequel une banque signe des jetons que les utilisateurs échangent sans révéler leur identité. C'est un précurseur des cryptomonnaies, dont s'inspirent des systèmes chaumiens fédérés comme Fedimint.

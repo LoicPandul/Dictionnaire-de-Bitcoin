@@ -1,0 +1,1 @@
+Suite de mots qui authentifie une connexion distante à un nœud Lightning par Lightning Node Connect. Saisie dans Lightning Terminal ou une application compatible, elle ouvre un canal chiffré de bout en bout via un proxy, sans exposer le nœud sur internet.

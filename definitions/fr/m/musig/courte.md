@@ -1,0 +1,1 @@
+Protocole de multisignature Schnorr n-de-n proposé en 2018, qui agrège les clés de plusieurs signataires en une seule clé et une seule signature, indiscernable d'une signature individuelle. Il demande trois tours de communication.

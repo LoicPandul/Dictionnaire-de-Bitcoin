@@ -1,0 +1,1 @@
+Logiciel *open source* d'échange décentralisé qui permet d'acheter et de vendre des bitcoins en pair-à-pair sur Tor, sans KYC ni intermédiaire qui détient les fonds, chaque échange étant garanti par un dépôt en multisig 2-de-2.

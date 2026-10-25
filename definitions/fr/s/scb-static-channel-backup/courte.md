@@ -1,0 +1,1 @@
+Fichier de sauvegarde de LND qui contient les informations statiques des canaux Lightning, comme les pairs et les identifiants de canaux. Avec la *seed*, il permet de récupérer ses fonds *onchain* en demandant aux pairs de fermer les canaux.

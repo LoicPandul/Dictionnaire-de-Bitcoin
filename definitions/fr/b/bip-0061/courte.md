@@ -1,0 +1,1 @@
+Proposition qui ajoute au protocole P2P un message de rejet, par lequel un nœud indique à son pair pourquoi il refuse une transaction ou un bloc. Bitcoin Core l'a abandonné à partir de la version 0.20.0.

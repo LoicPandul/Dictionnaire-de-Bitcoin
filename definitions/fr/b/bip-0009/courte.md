@@ -1,0 +1,1 @@
+Proposition qui définit une méthode d'activation des *soft forks* où les mineurs signalent leur soutien par un bit du champ de version des blocs, le *soft fork* étant abandonné si le seuil n'est pas atteint à temps.

@@ -1,0 +1,1 @@
+Nom parfois donné au registre public et distribué qui enregistre toutes les transactions Bitcoin, c'est-à-dire la blockchain. Il sert à empêcher la double dépense en vérifiant qu'aucune pièce n'a déjà été dépensée.

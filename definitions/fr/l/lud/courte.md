@@ -1,0 +1,1 @@
+Sigle de *LNURL Document*. Spécification qui décrit une fonctionnalité de LNURL, comme le paiement, le retrait ou l'authentification, pour que les services et les portefeuilles Lightning restent interopérables.

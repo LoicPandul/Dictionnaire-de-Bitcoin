@@ -1,0 +1,1 @@
+Contrat intelligent sur Bitcoin dont l'issue dépend du résultat d'un événement externe publié par un oracle, qui ignore tout du contrat. Il sert notamment aux paris conditionnels et aux instruments financiers.

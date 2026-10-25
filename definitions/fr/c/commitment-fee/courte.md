@@ -1,0 +1,1 @@
+Frais de minage inclus dans la transaction d'engagement d'un canal Lightning, qui doit être confirmée en cas de fermeture unilatérale. Avec les *anchor channels*, ils peuvent rester très faibles, car le CPFP permet de les augmenter au moment de la diffusion.

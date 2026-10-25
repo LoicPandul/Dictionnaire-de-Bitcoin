@@ -1,0 +1,1 @@
+Modèle de transaction, en analyse de chaîne, qui consomme un ou plusieurs UTXO et produit 2 sorties. Il signale vraisemblablement un paiement : une sortie va au destinataire, l'autre revient à l'expéditeur comme change.

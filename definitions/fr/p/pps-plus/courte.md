@@ -1,0 +1,1 @@
+Sigle de *Pay Per Share Plus*. Méthode de rémunération des mineurs d'une pool qui paie la subvention de bloc selon PPS, à chaque *share*, et les frais de transaction selon PPLNS, seulement quand la pool trouve un bloc.

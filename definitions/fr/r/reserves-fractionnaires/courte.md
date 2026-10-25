@@ -1,0 +1,1 @@
+Principe bancaire selon lequel une institution ne garde en réserve qu'une fraction des dépôts de ses clients et utilise le reste. Appliqué par une plateforme d'échange aux BTC déposés, il crée un risque de faillite si tous les clients retirent leurs fonds en même temps.

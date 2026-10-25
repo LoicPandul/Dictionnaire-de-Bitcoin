@@ -1,0 +1,1 @@
+Seconde version du protocole Stratum, qui rend la communication entre mineurs et pools plus légère et authentifiée. Elle permet surtout aux mineurs de choisir eux-mêmes les transactions de leurs blocs, pour limiter le pouvoir des pools.

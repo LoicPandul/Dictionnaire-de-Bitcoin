@@ -1,0 +1,1 @@
+Mécanisme de relais qui évalue ensemble une transaction parente et ses enfants, selon leur taux de frais combiné. Il permet d'accepter un parent trop peu payé grâce au CPFP, ce qui protège notamment les transactions pré-signées du Lightning Network.

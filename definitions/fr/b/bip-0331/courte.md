@@ -1,0 +1,1 @@
+Proposition qui décrit un protocole P2P pour relayer ensemble une transaction parente à faibles frais et sa transaction enfant, afin que les nœuds évaluent le taux de frais du paquet entier et que le CPFP fonctionne dès le relais.

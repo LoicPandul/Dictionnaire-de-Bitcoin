@@ -1,0 +1,1 @@
+Mécanisme de protection contre les attaques Sybil, à la base du consensus de Nakamoto, qui oblige les mineurs à dépenser de la puissance de calcul pour trouver un hash d'en-tête inférieur ou égal à une cible avant de publier un bloc.

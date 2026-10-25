@@ -1,0 +1,1 @@
+Protocole de relais des blocs défini par le BIP-0152, qui économise la bande passante des nœuds. Au lieu des transactions complètes, un nœud envoie de courts identifiants des transactions que ses pairs ont déjà en mempool, et ne transmet que les transactions manquantes.

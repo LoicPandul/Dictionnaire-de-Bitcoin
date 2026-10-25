@@ -1,0 +1,1 @@
+Proposition qui standardise la signature de messages avec la clé privée d'une adresse Bitcoin, pour en prouver la possession, en distinguant explicitement les types d'adresses. Le BIP-0322 a depuis généralisé cette méthode à tout type de script.

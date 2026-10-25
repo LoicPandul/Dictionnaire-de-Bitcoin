@@ -1,0 +1,1 @@
+Spécification qui introduit Bech32m, variante du format d'adresse Bech32 qui corrige une faiblesse de sa somme de contrôle, utilisée pour les adresses SegWit v1 et supérieures comme les adresses Taproot en `bc1p`.

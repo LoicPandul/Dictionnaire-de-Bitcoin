@@ -1,0 +1,1 @@
+Variante de l'arbre de Merkle où chaque nœud porte, en plus du *hash*, la somme des valeurs situées sous lui, ce qui permet de vérifier à la fois l'intégrité des données et la cohérence des montants, comme dans Taproot Assets.

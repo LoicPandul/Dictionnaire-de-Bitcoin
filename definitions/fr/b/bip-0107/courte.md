@@ -1,0 +1,1 @@
+Proposition qui augmentait la taille maximale des blocs en 2 phases : des paliers programmés jusqu'à 6 Mo en 2020, puis une hausse automatique de 10 % quand les blocs étaient assez remplis. Elle n'a jamais été déployée.

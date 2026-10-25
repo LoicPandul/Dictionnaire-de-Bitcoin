@@ -1,0 +1,1 @@
+Firmware *open source* qui transforme des appareils grand public à microcontrôleur Kendryte K210 en dispositifs de signature Bitcoin. Il sert à générer des clés et à signer hors ligne, en échangeant avec le portefeuille coordinateur par QR codes ou carte microSD.

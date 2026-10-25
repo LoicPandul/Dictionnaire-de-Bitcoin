@@ -1,0 +1,1 @@
+Connexion sortante brève que Bitcoin Core ouvre régulièrement pour vérifier qu'une adresse correspond à un nœud joignable, ce qui garde ses tables d'adresses à jour et rend plus difficile une attaque éclipse.

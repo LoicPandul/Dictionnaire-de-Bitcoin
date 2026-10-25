@@ -1,0 +1,1 @@
+Arbre de Merkle dont la plupart des feuilles sont vides, qui permet de prouver qu'un élément est absent en plus de prouver qu'il est présent. Taproot Assets l'utilise pour suivre les transferts d'actifs et empêcher leur double dépense.

@@ -1,0 +1,1 @@
+Revenu que tire un émetteur de monnaie de l'écart entre la valeur faciale de la monnaie et son coût de production. Bitcoin n'en connaît pas : la subvention de bloc rémunère les mineurs pour un coût réel et ne profite à aucune autorité centrale.

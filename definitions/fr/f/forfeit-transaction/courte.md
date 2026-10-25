@@ -1,0 +1,1 @@
+Transaction par laquelle un utilisateur d'Ark cède son ancien VTXO à l'*Ark Service Provider* en échange des nouveaux VTXO d'un round, rendue atomique par un *connector output* de la transaction de round.

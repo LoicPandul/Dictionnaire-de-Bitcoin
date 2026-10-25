@@ -1,0 +1,1 @@
+Modèle de script standard qui bloque des bitcoins sur le hachage d'une clé publique : pour les dépenser, il faut fournir cette clé publique et une signature valide. Associé au standard Legacy, il produit des adresses qui commencent par `1`.

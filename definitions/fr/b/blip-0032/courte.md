@@ -1,0 +1,1 @@
+Proposition qui permet de résoudre des noms de domaine avec preuves DNSSEC par les messages en oignon de Lightning, surtout pour transformer une adresse `utilisateur@domaine` en instructions de paiement sans exposer la requête au DNS public.

@@ -1,0 +1,1 @@
+Sigle de *Partially Signed Bitcoin Transaction*. Format standard, défini par le BIP-0174, d'une transaction non finalisée qui contient tout ce qu'il faut pour que chaque participant la signe, ce qui facilite l'échange entre portefeuilles et *hardware wallets*.

@@ -1,0 +1,1 @@
+Entreprise fondée en 2022 par Samson Mow, ancien de Blockstream, qui travaille à l'adoption de Bitcoin par les États-nations avec des infrastructures sur Lightning et Liquid, et qui développe le portefeuille Aqua.

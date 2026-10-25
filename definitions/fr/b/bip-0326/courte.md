@@ -1,0 +1,1 @@
+Proposition qui recommande aux portefeuilles d'utiliser le champ `nSequence` des transactions Taproot plutôt que `nLocktime` contre le *fee sniping*, pour rendre leurs dépenses indiscernables de celles des protocoles de seconde couche et renforcer la confidentialité.

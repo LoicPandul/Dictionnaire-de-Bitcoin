@@ -1,0 +1,1 @@
+Protocole de couche supérieure développé par Lightspark, fondé sur les statechains, qui transfère la propriété de bitcoins hors chaîne de façon instantanée. Il est compatible avec Lightning et l'utilisateur peut toujours retirer seul ses fonds sur la couche principale.

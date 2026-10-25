@@ -1,0 +1,1 @@
+Portefeuille Bitcoin pour ordinateur et mobile spécialisé dans le multisig, qui facilite la création de portefeuilles à plusieurs signatures et leur gestion à plusieurs personnes ou avec plusieurs *hardware wallets*.

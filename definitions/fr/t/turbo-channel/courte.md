@@ -1,0 +1,1 @@
+Canal Lightning utilisable dès la diffusion de sa transaction de financement, sans attendre de confirmation. Aussi appelé canal *zero-conf*, il demande de faire confiance à celui qui l'ouvre, souvent un LSP, et sert aux portefeuilles mobiles comme Phoenix.

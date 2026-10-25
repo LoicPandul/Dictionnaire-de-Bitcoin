@@ -1,0 +1,1 @@
+Pont bidirectionnel développé par Chainway Labs pour transférer des bitcoins entre Bitcoin et le rollup Citrea. Basé sur BitVM2, il protège les fonds tant qu'un seul de ses vérificateurs reste honnête, sans dépendre d'un multisig de confiance classique.

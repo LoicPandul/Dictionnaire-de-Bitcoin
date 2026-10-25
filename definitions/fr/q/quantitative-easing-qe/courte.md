@@ -1,0 +1,1 @@
+Politique monétaire non conventionnelle par laquelle une banque centrale achète massivement des actifs financiers pour injecter des liquidités, souvent citée dans la communauté Bitcoin comme une raison d'adopter une monnaie à l'émission plafonnée.

@@ -1,0 +1,1 @@
+Système de contrôle de version distribué, créé en 2005 par Linus Torvalds, qui suit les modifications du code source d'un projet et permet à plusieurs développeurs d'y travailler en parallèle. Bitcoin Core est développé avec Git.

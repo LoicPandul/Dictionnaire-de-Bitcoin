@@ -1,0 +1,1 @@
+Système de paiement en surcouche où plusieurs utilisateurs partagent sans confiance la propriété d'un ou plusieurs UTXO, chacun gardant la possibilité de retirer seul ses fonds. Il améliore le passage à l'échelle et masque *on-chain* l'auteur d'une dépense.

@@ -1,0 +1,1 @@
+Ensemble de propositions techniques publiées par SatoshiLabs, l'entreprise derrière Trezor, pour standardiser des usages de Bitcoin qui n'ont pas leur place dans les BIP. Elles servent de référence aux autres développeurs de portefeuilles.

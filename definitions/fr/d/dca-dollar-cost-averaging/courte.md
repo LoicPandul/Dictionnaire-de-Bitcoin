@@ -1,0 +1,1 @@
+Stratégie d'investissement qui consiste à acheter un actif, comme le bitcoin, pour un montant fixe à intervalles réguliers, quel que soit son prix, afin de lisser l'effet de la volatilité sur le long terme.

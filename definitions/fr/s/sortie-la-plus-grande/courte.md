@@ -1,0 +1,1 @@
+Heuristique d'analyse de chaîne qui suppose, dans un paiement simple dont les 2 sorties ont des montants très différents, que la plus grosse est le change. Peu fiable seule, elle sert surtout en complément d'autres heuristiques.

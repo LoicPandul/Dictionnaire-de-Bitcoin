@@ -1,0 +1,1 @@
+Stratégie de minage qui consiste à retenir des blocs valides au lieu de les diffuser, pour miner en secret sur sa propre chaîne et prendre de l'avance sur les autres mineurs. Elle provoque des réorganisations et réduit la fiabilité des confirmations.

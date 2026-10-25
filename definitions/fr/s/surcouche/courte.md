@@ -1,0 +1,1 @@
+Protocole ou réseau construit par-dessus Bitcoin, qui dépend de lui sans que Bitcoin dépende de lui, pour ajouter des fonctions comme les paiements rapides ou les jetons. Le Lightning Network en est l'exemple type.

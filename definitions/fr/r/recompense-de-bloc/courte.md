@@ -1,0 +1,1 @@
+Total des bitcoins que reçoit le mineur d'un bloc valide, formé de la subvention de bloc, qui diminue à chaque *halving*, et des frais des transactions incluses, le tout versé dans la transaction coinbase.

@@ -1,0 +1,1 @@
+Bibliothèque C *open source* de Blockstream qui fournit des primitives Bitcoin bas niveau : gestion des clés, construction de transactions, encodage d'adresses et PSBT. Core Lightning et Green Wallet s'en servent comme dépendance.

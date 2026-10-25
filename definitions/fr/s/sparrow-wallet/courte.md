@@ -1,0 +1,1 @@
+Portefeuille Bitcoin pour ordinateur, *open source*, pensé pour garder un contrôle complet sur ses transactions. Il gère les *hardware wallets*, le multisig et le *coin control*, et se connecte à son propre nœud.

@@ -1,0 +1,1 @@
+Proposition *Compact Block Relay*, qui réduit la bande passante de la propagation des blocs : un nœud envoie de courts identifiants pour les transactions que ses pairs ont déjà dans leur mempool, au lieu des transactions complètes.

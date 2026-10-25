@@ -1,0 +1,1 @@
+Transaction signée par les deux parties d'un canal Lightning mais gardée hors chaîne, qui représente la répartition actuelle des fonds. Chaque paiement en crée une nouvelle, et elle n'est diffusée qu'en cas de fermeture unilatérale.

@@ -1,0 +1,1 @@
+Méthode de routage Lightning où un nœud léger délègue le calcul du chemin de paiement à des nœuds intermédiaires spécialisés, les *trampoline nodes*. Elle sert surtout aux portefeuilles mobiles, qui ne peuvent pas synchroniser le graphe complet du réseau.

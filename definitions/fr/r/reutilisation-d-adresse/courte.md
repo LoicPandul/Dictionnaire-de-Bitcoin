@@ -1,0 +1,1 @@
+Pratique qui consiste à recevoir plusieurs paiements sur la même adresse. Elle permet de relier tous les UTXO concernés à une même entité et nuit donc à la confidentialité, d'où l'usage d'une nouvelle adresse à chaque réception.

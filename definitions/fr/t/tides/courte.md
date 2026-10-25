@@ -1,0 +1,1 @@
+Méthode de rémunération des mineurs introduite par la pool Ocean en 2023, qui répartit les récompenses, frais de transaction compris, selon le travail le plus récent. Chaque *share* est payée plusieurs fois, sans intermédiaire de garde pour les paiements.

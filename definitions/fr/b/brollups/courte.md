@@ -1,0 +1,1 @@
+Concept de rollup natif sur Bitcoin, proposé par Burak en 2024, qui s'appuie sur les VTXO du protocole Ark et utilise la blockchain comme couche de disponibilité des données, sans modifier le protocole ni créer de jeton.

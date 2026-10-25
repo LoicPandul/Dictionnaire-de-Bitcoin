@@ -1,0 +1,1 @@
+Sigle de « générateur de nombres pseudo-aléatoires », algorithme déterministe qui produit, à partir d'une graine, une suite de nombres d'apparence aléatoire. En cryptographie, il sert à produire des clés, et sur Bitcoin la phrase de récupération d'un portefeuille.

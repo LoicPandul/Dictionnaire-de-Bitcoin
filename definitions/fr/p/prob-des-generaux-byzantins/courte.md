@@ -1,0 +1,1 @@
+Problème formulé par Leslie Lamport, Robert Shostak et Marshall Pease, qui illustre la difficulté pour les membres d'un système distribué de s'accorder sur une décision commune quand certains peuvent trahir et que les messages peuvent se perdre.

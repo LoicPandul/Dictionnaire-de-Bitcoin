@@ -1,0 +1,1 @@
+Sortie d'une transaction Bitcoin, qui fixe un montant et ses conditions de dépense, et par extension l'index qui la repère dans la transaction à partir de `0`. Associé au `txid`, cet index forme l'*outpoint* d'une pièce.

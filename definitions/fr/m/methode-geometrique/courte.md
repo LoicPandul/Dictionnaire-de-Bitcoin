@@ -1,0 +1,1 @@
+Méthode de rémunération des mineurs d'une *pool* fondée sur des scores calculés avec un facteur de décroissance, conçue pour contrer le *pool hopping* : le paiement attendu par *share* ne dépend pas du moment où elle est soumise.

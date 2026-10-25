@@ -1,0 +1,1 @@
+Opération de minage de Bitcoin autonome, non raccordée au réseau électrique principal, qui s'alimente avec des sources d'énergie locales, souvent une énergie qui serait sinon gaspillée, comme le gaz de torchage.

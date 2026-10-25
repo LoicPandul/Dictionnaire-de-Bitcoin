@@ -1,0 +1,1 @@
+Démon de Lightning Labs qui réunit en un seul processus LND, Loop, Pool, Faraday et Taproot Assets. Il fournit aussi l'interface Lightning Terminal et l'accès distant par *Lightning Node Connect*, sans VPN ni redirection de ports.

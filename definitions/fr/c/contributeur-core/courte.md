@@ -1,0 +1,1 @@
+Personne qui participe au développement de Bitcoin Core en écrivant, en relisant ou en testant du code, sans pouvoir fusionner les modifications comme un mainteneur. Chacun peut le devenir, sans nomination ni approbation formelle.

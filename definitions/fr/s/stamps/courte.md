@@ -1,0 +1,1 @@
+Protocole qui inscrit des images directement dans la blockchain Bitcoin en les encodant dans de fausses clés publiques de sorties P2MS. Ces sorties ne sont jamais dépensées et alourdissent l'UTXO set des nœuds.

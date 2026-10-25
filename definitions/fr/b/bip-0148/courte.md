@@ -1,0 +1,1 @@
+Proposition de Shaolin Fry, publiée en mars 2017, qui organise un UASF (*User-Activated Soft Fork*) : les nœuds qui l'appliquent rejettent les blocs ne signalant pas SegWit, pour forcer les mineurs à activer ce soft fork.

@@ -1,0 +1,1 @@
+Proposition qui définit les types MIME des messages du protocole de paiement BIP-0070, pour les transmettre par e-mail ou HTTP selon les standards d'Internet. Liée au BIP-0070, elle n'a jamais été largement adoptée.

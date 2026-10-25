@@ -1,0 +1,1 @@
+Modèle de script dit *Nested SegWit*, qui enveloppe un P2WPKH dans un P2SH pour que les services et *wallets* non compatibles avec SegWit puissent l'utiliser. Script de transition, il produit des adresses qui commencent par `3`.

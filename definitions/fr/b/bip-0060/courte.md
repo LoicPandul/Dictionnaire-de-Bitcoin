@@ -1,0 +1,1 @@
+Proposition qui fixe la taille du message `version` du protocole P2P et y ajoute proprement le champ `relay`, pour garder le *handshake* compatible entre versions. Elle a été fermée, le BIP-0037 ayant déjà cassé cette compatibilité.

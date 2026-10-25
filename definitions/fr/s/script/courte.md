@@ -1,0 +1,1 @@
+Langage de programmation à piles utilisé pour établir les conditions de dépense des bitcoins. Ses opcodes sont exécutés par les nœuds pour vérifier qu'une transaction a le droit de dépenser les fonds.

@@ -1,0 +1,1 @@
+Proposition de James O'Beirne qui ajoute les opcodes `OP_VAULT` et `OP_VAULT_RECOVER` pour créer des coffres-forts natifs, où tout retrait passe par un délai pendant lequel le propriétaire peut renvoyer les fonds vers une adresse de récupération.

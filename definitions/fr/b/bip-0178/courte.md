@@ -1,0 +1,1 @@
+Proposition qui étend le format WIF (*Wallet Import Format*) avec un octet de version indiquant le type de script associé à la clé privée, pour éviter les erreurs lors de l'importation d'une clé dans un autre portefeuille.

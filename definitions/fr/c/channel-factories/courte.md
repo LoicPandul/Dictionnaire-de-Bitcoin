@@ -1,0 +1,1 @@
+Mécanisme à l'étude sur Lightning qui permet à un groupe d'utilisateurs de détenir un seul UTXO en multisignature `n-of-n` et d'ouvrir ou fermer des canaux entre eux sans nouvelle transaction *on-chain*.

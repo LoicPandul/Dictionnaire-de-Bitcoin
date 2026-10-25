@@ -1,0 +1,1 @@
+Propriété d'une monnaie dont chaque unité est interchangeable avec une autre. Le bitcoin est fongible en principe, mais la traçabilité des UTXO sur la blockchain permet de distinguer des pièces selon leur historique.

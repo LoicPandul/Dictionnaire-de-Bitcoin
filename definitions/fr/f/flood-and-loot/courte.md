@@ -1,0 +1,1 @@
+Attaque sur Lightning où l'attaquant bloque de nombreux HTLC à travers les canaux de ses victimes, les force à fermer ces canaux en même temps, puis profite de la congestion pour récupérer les HTLC non réclamés à temps.

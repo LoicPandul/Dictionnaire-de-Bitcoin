@@ -1,0 +1,1 @@
+Carte à puce de Satochip qui sert à sauvegarder des phrases mnémoniques et des mots de passe dans un élément sécurisé protégé par un code PIN, avec la possibilité de dupliquer les secrets sur une seconde carte.

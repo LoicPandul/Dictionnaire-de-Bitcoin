@@ -1,0 +1,1 @@
+Modèle de transaction à une seule entrée et une seule sortie, que l'analyse de chaîne interprète comme un transfert d'un utilisateur vers lui-même. La sortie appartient donc probablement au même propriétaire que l'entrée.

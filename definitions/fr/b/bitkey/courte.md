@@ -1,0 +1,1 @@
+Portefeuille matériel de Block, Inc., lancé en décembre 2023, qui répartit les clés d'un multisig 2-de-3 entre l'appareil, une application mobile et un serveur de Block, pour se passer de phrase de récupération.

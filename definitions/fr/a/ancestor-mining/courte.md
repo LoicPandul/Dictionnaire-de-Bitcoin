@@ -1,0 +1,1 @@
+Principe de sélection selon lequel un mineur évalue une transaction en tenant compte des frais de ses transactions ascendantes, et pas seulement des siens. C'est sur lui que repose le CPFP (*Child-Pays-For-Parent*).

@@ -1,0 +1,1 @@
+Mineur qui participe à une pool et se contente de hacher les modèles de blocs qu'elle lui fournit, à la recherche de *shares*. La pool se charge du reste, dont la construction des blocs, le choix des transactions et la diffusion des blocs valides.

@@ -1,0 +1,1 @@
+Protocole *open source* de monnaie électronique chaumienne adossé à Bitcoin et Lightning : un serveur émet des jetons qu'il signe sans connaître l'utilisateur, ce qui l'empêche d'identifier les propriétaires des fonds et leurs transactions.

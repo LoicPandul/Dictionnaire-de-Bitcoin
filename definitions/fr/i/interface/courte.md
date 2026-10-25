@@ -1,0 +1,1 @@
+Ensemble d'instructions du protocole RGB qui décode les données binaires d'un *Schema* ou d'un contrat. Elle transforme ces données brutes en une représentation lisible par l'utilisateur ou par son *wallet*.

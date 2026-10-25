@@ -1,0 +1,1 @@
+Implémentation alternative du protocole Bitcoin écrite en JavaScript pour Node.js, qui fournit aux entreprises et aux développeurs des bibliothèques de nœud complet, de nœud SPV et de portefeuille HD.

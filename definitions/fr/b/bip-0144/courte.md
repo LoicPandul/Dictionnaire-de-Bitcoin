@@ -1,0 +1,1 @@
+Proposition qui définit les messages réseau et la sérialisation des transactions et des blocs SegWit, pour que les nœuds signalent leur prise en charge de SegWit et relaient les témoins sans gêner les nœuds non mis à jour.

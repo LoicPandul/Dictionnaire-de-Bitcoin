@@ -1,0 +1,1 @@
+Composant d'un système dont la défaillance suffit à faire tomber l'ensemble. Pour un portefeuille HD, la phrase de récupération en est souvent un : la perdre ou la laisser fuiter fait perdre tous les bitcoins.

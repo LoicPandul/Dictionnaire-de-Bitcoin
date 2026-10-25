@@ -1,0 +1,1 @@
+Signature incomplète liée à un secret, qui devient valide une fois combinée avec ce secret et le révèle dès qu'elle est publiée. Elle sert à rendre un échange atomique entre deux parties qui ne se font pas confiance, comme un *atomic swap*.

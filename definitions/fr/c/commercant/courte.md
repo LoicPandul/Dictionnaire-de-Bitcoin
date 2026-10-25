@@ -1,0 +1,1 @@
+Personne physique ou morale qui accepte des bitcoins en échange de biens ou de services. En donnant son utilité à la monnaie, l'ensemble des commerçants pèse aussi sur le choix des règles de consensus, en proportion de l'activité économique que chacun apporte à un *fork*.

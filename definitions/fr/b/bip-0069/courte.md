@@ -1,0 +1,1 @@
+Proposition qui trie les entrées et les sorties d'une transaction dans un ordre lexicographique, pour que les transactions de logiciels différents se ressemblent et trahissent moins le portefeuille utilisé. Ce tri peut toutefois devenir lui-même une empreinte.

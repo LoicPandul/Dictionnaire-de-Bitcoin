@@ -1,0 +1,1 @@
+Appareil électronique dédié qui conserve hors ligne les clés d'un portefeuille Bitcoin et signe les transactions à l'intérieur de l'appareil, sans exposer les clés privées à un ordinateur connecté. On parle aussi de périphérique de signature.

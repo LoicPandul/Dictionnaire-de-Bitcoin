@@ -1,0 +1,1 @@
+Clé du Lightning Network que les deux pairs d'un canal construisent ensemble et qui permet de punir celui qui publie un ancien état. Quand un état est remplacé, sa clé de révocation devient utilisable par la contrepartie, qui peut alors récupérer les fonds du tricheur.

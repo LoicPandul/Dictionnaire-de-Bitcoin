@@ -1,0 +1,1 @@
+Service en ligne, aussi appelé LN+, qui organise des *liquidity swaps* sur Lightning : plusieurs opérateurs de nœuds s'ouvrent des canaux en cercle, et chacun reçoit autant de liquidité entrante qu'il en engage.

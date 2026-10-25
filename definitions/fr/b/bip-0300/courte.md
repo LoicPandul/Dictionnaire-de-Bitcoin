@@ -1,0 +1,1 @@
+Proposition de Paul Sztorc et CryptAxe qui définit les *Hashrate Escrows*, première brique des drivechains : des sidechains dont les retraits vers Bitcoin sont validés par un long vote des mineurs plutôt que par une fédération.

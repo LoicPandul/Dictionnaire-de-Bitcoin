@@ -1,0 +1,1 @@
+Interface web *open source* pour gérer un nœud Lightning depuis un navigateur : canaux, paiements, liquidité. Elle fonctionne avec LND, Core Lightning et Eclair, et évite de passer par la ligne de commande.

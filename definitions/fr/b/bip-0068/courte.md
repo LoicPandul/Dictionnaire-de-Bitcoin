@@ -1,0 +1,1 @@
+Proposition de soft fork qui fait du champ `nSequence` un *timelock* relatif : une transaction n'entre dans un bloc qu'après un délai, en blocs ou en temps, compté depuis une transaction antérieure. Elle a été activée en 2016 avec les BIP-0112 et BIP-0113.

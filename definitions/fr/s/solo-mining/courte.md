@@ -1,0 +1,1 @@
+Pratique de minage en autonomie, sans rejoindre de pool : le mineur construit ses propres blocs et garde toute la récompense quand il en trouve un. En contrepartie, ses revenus deviennent très irréguliers.

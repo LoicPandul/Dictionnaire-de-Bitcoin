@@ -1,0 +1,1 @@
+Implémentation de coinjoin créée en 2015 par Chris Belcher, organisée comme un marché pair-à-pair : les *makers* proposent leurs bitcoins contre une rémunération, et les *takers* paient pour réaliser leurs coinjoins avec cette liquidité.

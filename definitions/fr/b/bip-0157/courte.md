@@ -1,0 +1,1 @@
+Proposition qui définit le protocole pair-à-pair par lequel les clients légers téléchargent auprès des nœuds complets les *compact block filters* et leurs en-têtes chaînés, qui permettent de vérifier l'authenticité des filtres.

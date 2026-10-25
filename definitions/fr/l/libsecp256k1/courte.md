@@ -1,0 +1,1 @@
+Bibliothèque C optimisée pour les signatures numériques et les autres primitives cryptographiques sur la courbe `secp256k1`. Développée avant tout pour les besoins de Bitcoin, elle vise à être la référence pour l'utilisation de cette courbe.

@@ -1,0 +1,1 @@
+Séparation temporaire de la blockchain qui survient quand deux mineurs trouvent presque en même temps un bloc à la même hauteur. Elle se résout d'elle-même, en général en un bloc, lorsque l'une des branches accumule plus de travail.

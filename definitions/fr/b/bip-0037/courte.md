@@ -1,0 +1,1 @@
+Proposition qui permet aux portefeuilles SPV d'envoyer un filtre de Bloom à un nœud complet pour ne recevoir que leurs transactions, méthode critiquée pour sa confidentialité et désactivée par défaut dans Bitcoin Core.

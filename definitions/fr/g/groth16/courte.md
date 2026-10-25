@@ -1,0 +1,1 @@
+Système de preuve à divulgation nulle de connaissance de type SNARK, proposé par Jens Groth en 2016, dont les preuves sont très compactes et rapides à vérifier. Il exige une cérémonie de *trusted setup* propre à chaque circuit.

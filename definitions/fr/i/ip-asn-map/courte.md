@@ -1,0 +1,1 @@
+Fichier de Bitcoin Core qui stocke l'ASMAP, une table des adresses IP vers les numéros de systèmes autonomes (ASN). Il sert à regrouper les pairs par opérateur réseau plutôt que par préfixe IP, pour diversifier les connexions et contrer des attaques comme Erebus.

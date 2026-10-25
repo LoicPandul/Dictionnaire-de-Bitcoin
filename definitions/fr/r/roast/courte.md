@@ -1,0 +1,1 @@
+Protocole qui enveloppe un schéma de signatures à seuil Schnorr comme FROST pour qu'il aboutisse malgré des participants non coopératifs ou lents, en lançant des sessions de signature parallèles jusqu'à réunir un quorum. Il intéresse notamment les fédérations comme celle de Liquid.

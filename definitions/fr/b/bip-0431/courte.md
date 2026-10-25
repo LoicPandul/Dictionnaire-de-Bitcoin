@@ -1,0 +1,1 @@
+Proposition informationnelle qui décrit les attaques de *transaction pinning* et restreint la topologie des paquets de transactions dans la mempool, pour rendre le remplacement de transactions plus fiable, notamment pour Lightning.

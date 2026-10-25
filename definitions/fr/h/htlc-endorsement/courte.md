@@ -1,0 +1,1 @@
+Mécanisme de réputation locale de Lightning contre le *channel jamming*, dans lequel chaque nœud marque comme « endossés » les HTLC venus de pairs fiables. Seuls ces HTLC ont accès à une part réservée des *slots* et de la liquidité de ses canaux.

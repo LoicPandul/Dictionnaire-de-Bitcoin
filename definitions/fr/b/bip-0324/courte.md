@@ -1,0 +1,1 @@
+Proposition qui définit la version 2 du protocole de transport P2P de Bitcoin, avec un chiffrement opportuniste des communications entre nœuds pour améliorer leur confidentialité et leur sécurité. Elle remplace le BIP-0151.

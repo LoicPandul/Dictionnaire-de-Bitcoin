@@ -1,0 +1,1 @@
+Plateforme d'échange *open source* pour acheter et vendre des bitcoins en pair-à-pair via le Lightning Network, sans KYC. Elle fonctionne sur Tor avec des identités éphémères, et utilise des *hold invoices* comme séquestre pendant l'échange.

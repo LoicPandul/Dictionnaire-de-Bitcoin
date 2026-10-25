@@ -1,0 +1,1 @@
+Structure mathématique de nœuds reliés par des arcs orientés, sans aucun cycle, qui permet d'ordonner ses éléments. Le protocole RGB s'en sert pour gérer et vérifier les transitions d'état de ses contrats.

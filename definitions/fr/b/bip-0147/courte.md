@@ -1,0 +1,1 @@
+Proposition incluse dans le soft fork SegWit qui impose la règle `NULLDUMMY` : l'élément factice consommé par `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` doit être un tableau d'octets vide, ce qui supprime un vecteur de malléabilité.

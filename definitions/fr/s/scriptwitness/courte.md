@@ -1,0 +1,1 @@
+Champ d'une entrée SegWit qui contient les données de déverrouillage, comme les signatures et les clés publiques, à la manière du `scriptSig`. Il est placé dans une structure séparée, le *witness*, ce qui règle la malléabilité des transactions.

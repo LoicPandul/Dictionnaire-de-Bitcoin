@@ -1,0 +1,1 @@
+Composante d'un *Assignment* du protocole RGB qui relie un engagement à un UTXO détenu par le nouveau propriétaire. Elle désigne l'UTXO auquel l'état est attaché, et établit ainsi la propriété d'un actif ou d'un droit sur RGB.

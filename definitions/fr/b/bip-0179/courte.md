@@ -1,0 +1,1 @@
+Proposition informative qui remplace le terme « adresse » par « *invoice* » pour désigner les identifiants de réception de paiement, car une adresse Bitcoin est conçue pour un usage unique, contrairement à une adresse postale.

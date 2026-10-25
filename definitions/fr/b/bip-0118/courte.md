@@ -1,0 +1,1 @@
+Proposition qui ajoute les modificateurs de *SigHash* `SIGHASH_ANYPREVOUT` et `SIGHASH_ANYPREVOUTANYSCRIPT`, dont les signatures ne couvrent aucune entrée et peuvent donc être réutilisées dans plusieurs transactions. Elle permettrait notamment Eltoo sur Lightning.

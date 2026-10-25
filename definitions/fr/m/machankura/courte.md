@@ -1,0 +1,1 @@
+Service créé en 2022 par le développeur sud-africain Kgothatso Ngako, qui permet d'envoyer et de recevoir des bitcoins sur le Lightning Network depuis un téléphone basique, sans connexion internet, grâce aux menus USSD.

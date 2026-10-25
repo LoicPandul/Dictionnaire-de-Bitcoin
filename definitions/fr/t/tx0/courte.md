@@ -1,0 +1,1 @@
+Transaction préparatoire du protocole Whirlpool qui découpe des UTXO en outputs de montant fixe adaptés à la pool de coinjoin choisie. Elle paie aussi les frais du coordinateur et isole l'excédent dans un *doxxic change*.

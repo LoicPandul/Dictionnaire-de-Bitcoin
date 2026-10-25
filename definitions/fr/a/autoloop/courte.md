@@ -1,0 +1,1 @@
+Fonctionnalité de Lightning Loop qui lance automatiquement des *Loop In* et des *Loop Out* quand la liquidité d'un canal franchit les seuils fixés par l'opérateur du nœud, pour garder ses canaux équilibrés sans intervention manuelle.

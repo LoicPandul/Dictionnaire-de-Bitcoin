@@ -1,0 +1,1 @@
+Proposition qui combinerait les signatures de toutes les entrées d'une transaction en une seule grâce à Schnorr. Elle réduirait la taille et les frais des transactions à nombreuses entrées, comme les coinjoins, mais exige de revoir en profondeur la vérification des scripts.

@@ -1,0 +1,1 @@
+Méthode qui permet de recevoir des paiements sur une adresse statique sans réutilisation d'adresse ni interaction : l'expéditeur dérive une adresse unique pour chaque paiement, sans lien visible on-chain. En contrepartie, le destinataire doit scanner la blockchain.

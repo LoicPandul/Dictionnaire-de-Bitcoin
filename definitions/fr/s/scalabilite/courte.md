@@ -1,0 +1,1 @@
+Capacité de Bitcoin à absorber un volume croissant de transactions, limitée par la taille et l'intervalle des blocs. Elle s'améliore par des changements du protocole ou par des couches externes comme le Lightning Network, et a nourri la guerre des blocs.

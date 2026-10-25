@@ -1,0 +1,1 @@
+Proposition de James Hilliard qui a permis d'activer SegWit en 2017 : une fois 80 % des blocs signalant le bit 4, les nœuds rejetaient ceux qui ne signalaient pas SegWit. Elle visait à éviter une scission de la chaîne liée au BIP-0148.

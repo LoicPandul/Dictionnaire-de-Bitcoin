@@ -1,0 +1,1 @@
+Structure de données de type « dernier entré, premier sorti » qui stocke les éléments temporaires pendant l'exécution d'un script Bitcoin. Les opcodes y ajoutent et y retirent des données, sur la pile principale ou la pile alternative.

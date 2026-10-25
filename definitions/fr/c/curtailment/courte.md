@@ -1,0 +1,1 @@
+Réduction volontaire de la consommation électrique d'une ferme de minage, qui éteint des machines lors des pics de demande pour aider à stabiliser le réseau électrique, souvent dans le cadre d'un contrat avec un producteur.

@@ -1,0 +1,1 @@
+Sigle de *Power Purchase Agreement*. Contrat d'achat d'électricité à long terme et à tarif fixe entre une ferme de minage et un fournisseur d'énergie, qui stabilise ses coûts énergétiques sur plusieurs années.

@@ -1,0 +1,1 @@
+Première transaction de chaque bloc, créée par le mineur qui l'a trouvé, qui lui attribue la récompense de bloc : les frais des transactions incluses et les bitcoins nouvellement créés. Elle ne dépense aucun UTXO existant et ses fonds ne sont dépensables qu'après 100 blocs.

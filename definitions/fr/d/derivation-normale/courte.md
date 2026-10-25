@@ -1,0 +1,1 @@
+Méthode de dérivation des clés enfants d'un portefeuille HD qui part de la clé publique parent, ce qui permet de dériver les clés publiques enfants depuis une clé publique étendue. Dans un chemin de dérivation, elle se note par un index sans apostrophe.

@@ -1,0 +1,1 @@
+Protocole cryptographique, utilisé sur Liquid, qui masque les montants et les types d'actifs d'une transaction tout en laissant les nœuds vérifier qu'elle ne crée pas de monnaie. Il repose sur des engagements de Pedersen et des preuves de portée.

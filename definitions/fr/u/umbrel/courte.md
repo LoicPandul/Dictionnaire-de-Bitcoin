@@ -1,0 +1,1 @@
+Système d'exploitation pour serveur personnel qui permet d'auto-héberger des applications, dont un nœud Bitcoin et un nœud Lightning, depuis une interface web simple. Il tourne sur le matériel Umbrel ou sur un ordinateur compatible via umbrelOS.

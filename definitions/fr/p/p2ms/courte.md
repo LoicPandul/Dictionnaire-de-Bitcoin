@@ -1,0 +1,1 @@
+Modèle de script standard qui bloque des bitcoins sur plusieurs clés publiques et exige, pour les dépenser, les signatures d'un nombre minimal de clés privées associées. Il dévoile les clés publiques dès la réception et a cédé la place aux multisignatures P2SH, P2WSH ou P2TR.

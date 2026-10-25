@@ -1,0 +1,1 @@
+Plateforme d'échange de bitcoins en pair-à-pair, fondée en 2016, qui ne détient jamais les fonds de ses utilisateurs : chaque échange passe par un *escrow* multisig 2-de-3. Elle organise aussi la conférence Baltic Honeybadger.

@@ -1,0 +1,1 @@
+Méthode proposée en 2012 pour représenter des actifs non natifs sur la blockchain Bitcoin, en attachant des métadonnées à certaines transactions afin de « colorer » des bitcoins et de les associer à ces actifs.

@@ -1,0 +1,1 @@
+Famille de *hardware wallets* fabriqués par Coinkite, conçus exclusivement pour Bitcoin. Ils peuvent fonctionner sans jamais être connectés à un ordinateur, en échangeant les transactions par carte microSD, NFC ou QR code, et proposent de nombreuses options de sécurité comme le *Duress PIN*.

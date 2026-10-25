@@ -1,0 +1,1 @@
+Service de mixage de bitcoins lancé en 2013 par Blockchain.info et aujourd'hui fermé, qui combinait les transactions de plusieurs utilisateurs, à la manière d'un coinjoin, sans jamais prendre la garde de leurs pièces.

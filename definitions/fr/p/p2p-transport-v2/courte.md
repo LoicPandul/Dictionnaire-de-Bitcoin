@@ -1,0 +1,1 @@
+Version du protocole de transport entre nœuds Bitcoin qui chiffre les échanges, sans authentification, pour les rendre indiscernables aux yeux d'un observateur passif comme un fournisseur d'accès. Elle complique la censure et rend les attaques actives plus coûteuses.

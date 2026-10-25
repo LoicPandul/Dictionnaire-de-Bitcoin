@@ -1,0 +1,1 @@
+Clé de la cryptographie asymétrique calculée à partir d'une clé privée, qui peut être partagée sans risque pour les fonds. Sur Bitcoin, elle sert à construire les adresses et les conditions de dépense des UTXO.

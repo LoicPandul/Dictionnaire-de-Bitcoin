@@ -1,0 +1,1 @@
+Ancien concept d'adresse Bitcoin dont les transactions sortantes sont garanties contre la double dépense par un tiers de confiance, pour que le destinataire les accepte sans attendre de confirmation. Ce type de service n'est plus utilisé.

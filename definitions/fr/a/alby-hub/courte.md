@@ -1,0 +1,1 @@
+Application *open source* qui fait fonctionner un nœud Lightning personnel, sur un serveur ou dans le cloud, et le connecte à d'autres applications par *Nostr Wallet Connect*. L'utilisateur garde ses clés privées.

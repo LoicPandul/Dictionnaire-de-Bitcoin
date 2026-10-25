@@ -1,0 +1,1 @@
+Montant payé au-dessus du prix de marché d'un actif. Sur Bitcoin, on le rencontre notamment lors des achats de bitcoins sans KYC en pair-à-pair, où il compense les frais et le risque du vendeur et paie la confidentialité offerte.

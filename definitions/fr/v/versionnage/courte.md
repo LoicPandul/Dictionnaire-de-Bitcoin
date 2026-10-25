@@ -1,0 +1,1 @@
+Attribution de numéros de version aux éléments de Bitcoin (blocs, transactions, types de scripts, logiciels, communications réseau) pour suivre leurs évolutions et savoir quelles règles s'appliquent à chacun.

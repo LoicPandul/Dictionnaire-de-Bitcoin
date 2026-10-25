@@ -1,0 +1,1 @@
+Proposition qui fixe plusieurs règles contre la malléabilité des transactions, comme l'encodage DER strict des signatures. Retirée car incomplète et trop complexe à imposer par consensus, elle a préparé SegWit, qui a résolu le problème.

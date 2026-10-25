@@ -1,0 +1,1 @@
+Fraction d'un paiement Lightning découpé en plusieurs parties (MPP ou AMP), chacune acheminée par une route différente. Le destinataire les regroupe pour finaliser le paiement, ce qui contourne le manque de liquidité d'un canal unique.

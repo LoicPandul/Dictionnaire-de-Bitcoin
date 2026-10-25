@@ -1,0 +1,1 @@
+Modification rétrocompatible des règles du protocole, qui ajoute ou resserre des règles. Les nœuds à jour et ceux qui ne le sont pas restent sur la même blockchain tant que la majorité de la puissance de calcul suit les nouvelles règles.

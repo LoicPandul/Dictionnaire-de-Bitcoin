@@ -1,0 +1,1 @@
+Implémentation du Lightning Network développée par Blockstream, écrite en C et en Rust, connue pour son architecture modulaire qui facilite l'ajout de fonctionnalités. Elle s'appelait C-Lightning jusqu'en 2022.

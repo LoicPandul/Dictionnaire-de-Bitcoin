@@ -1,0 +1,1 @@
+Mécanisme monétaire qui maintient pour toujours une récompense de bloc fixe une fois l'émission initiale terminée, comme sur Monero. Proposée parfois pour Bitcoin, elle exigerait un *hard fork* et contredit son plafond de 21 millions.

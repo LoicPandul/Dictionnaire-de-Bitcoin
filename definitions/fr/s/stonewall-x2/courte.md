@@ -1,0 +1,1 @@
+Transaction de paiement collaborative où un tiers apporte un UTXO et récupère ses fonds, ce qui imite un petit coinjoin entre deux personnes. Un observateur ne sait pas quelle sortie paie le destinataire, ni qui a payé.

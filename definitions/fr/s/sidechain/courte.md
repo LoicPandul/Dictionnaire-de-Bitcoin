@@ -1,0 +1,1 @@
+Blockchain qui fonctionne en parallèle de Bitcoin, reliée à lui par un ancrage bilatéral pour que son actif garde la valeur du bitcoin. Elle offre des fonctionnalités absentes de la chaîne principale, au prix de compromis.

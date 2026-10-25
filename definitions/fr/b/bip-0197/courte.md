@@ -1,0 +1,1 @@
+Proposition des HTLCC (*Hashed Time-Locked Collateral Contracts*), une extension des HTLC qui verrouille du collatéral en bitcoins pour garantir un prêt libellé sur une autre blockchain, liquidé ou saisi en cas de non-remboursement.

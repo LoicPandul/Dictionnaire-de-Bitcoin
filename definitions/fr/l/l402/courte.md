@@ -1,0 +1,1 @@
+Standard d'authentification et de paiement, anciennement LSAT, qui associe un macaroon à une facture Lightning. Une fois la facture payée, la préimage combinée au macaroon prouve le règlement et donne accès au service protégé.

@@ -1,0 +1,1 @@
+Mécanisme qui permet d'envoyer un paiement Lightning à un destinataire hors ligne, alors que le protocole exige normalement qu'il soit connecté pour finaliser le paiement. Il répond surtout au cas des portefeuilles mobiles.

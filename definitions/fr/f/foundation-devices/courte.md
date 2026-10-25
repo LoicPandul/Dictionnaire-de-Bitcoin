@@ -1,0 +1,1 @@
+Entreprise américaine fondée en 2020 à Boston qui fabrique du matériel *open source* pour sécuriser des bitcoins, dont le portefeuille matériel *air-gapped* Passport et son application compagnon Envoy.

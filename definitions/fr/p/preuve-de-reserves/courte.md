@@ -1,0 +1,1 @@
+Mécanisme par lequel une plateforme d'échange démontre qu'elle détient les bitcoins de ses clients, souvent avec un arbre de Merkle des soldes et la signature de ses adresses, sans prouver sa solvabilité puisqu'il ignore ses dettes.

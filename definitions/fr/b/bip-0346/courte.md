@@ -1,0 +1,1 @@
+Proposition de Steven Roose qui ajoute à Tapscript l'opcode `OP_TXHASH`, qui place sur la pile le hash de champs choisis de la transaction courante, pour permettre avec `OP_CHECKSIGFROMSTACK` l'introspection de transaction et des covenants.

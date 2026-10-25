@@ -1,0 +1,1 @@
+Bibliothèque de réconciliation d'ensembles développée principalement par Pieter Wuille, qui permet à deux pairs de trouver les éléments que l'autre n'a pas sans s'envoyer leurs listes complètes. Elle sert de base à Erlay pour réduire la bande passante du relais de transactions.

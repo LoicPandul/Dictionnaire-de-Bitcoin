@@ -1,0 +1,1 @@
+Kit de développement Lightning construit sur Rust-Lightning et lancé par Spiral. Ses bibliothèques prennent en charge les parties complexes du protocole pour que les développeurs intègrent Lightning dans leurs applications.

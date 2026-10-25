@@ -1,0 +1,1 @@
+Concept de hub de paiement anonyme compatible avec Bitcoin, proposé en 2016, qui fait passer des paiements hors chaîne par un coordinateur, le *Tumbler*. Celui-ci ne peut ni voler les fonds ni relier un payeur à son bénéficiaire.

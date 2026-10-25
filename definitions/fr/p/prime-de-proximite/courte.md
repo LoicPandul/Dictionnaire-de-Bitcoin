@@ -1,0 +1,1 @@
+Avantage financier des mineurs proches les uns des autres, qui reçoivent plus vite les nouveaux blocs et gaspillent moins de calcul sur une branche dépassée, ce qui pousse le minage à se regrouper géographiquement.

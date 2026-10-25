@@ -1,0 +1,1 @@
+Proposition qui définit la fonction de *descriptors* `combo()`, qui décrit d'un coup les scripts de sortie possibles d'une même clé publique : P2PK, P2PKH et, si la clé est compressée, P2WPKH et P2SH-P2WPKH.

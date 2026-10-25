@@ -1,0 +1,1 @@
+Collecte et analyse d'informations publiques (sites web, forums, réseaux sociaux, bases de données). Sur Bitcoin, elle appuie l'analyse de chaîne en reliant une activité *on-chain* à une identité réelle.

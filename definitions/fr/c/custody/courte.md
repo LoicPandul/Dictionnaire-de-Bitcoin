@@ -1,0 +1,1 @@
+Détention et gestion des clés privées qui contrôlent des bitcoins, soit par l'utilisateur lui-même (*self-custody*), soit par un tiers comme une plateforme d'échange, ce qui expose alors les fonds aux défaillances de ce tiers.

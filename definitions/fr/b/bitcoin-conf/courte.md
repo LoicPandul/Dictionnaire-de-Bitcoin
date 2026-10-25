@@ -1,0 +1,1 @@
+Fichier de configuration de Bitcoin Core, placé dans son répertoire de données, où l'opérateur du nœud règle des paramètres comme la taille de la mempool, les connexions réseau ou les frais minimums de relais.

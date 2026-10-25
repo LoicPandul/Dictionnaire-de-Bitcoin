@@ -1,0 +1,1 @@
+Mécanisme du Lightning Network qui permet d'ajouter ou de retirer des fonds d'un canal sans le fermer, en une seule transaction on-chain. Le canal continue de router des paiements pendant l'opération.

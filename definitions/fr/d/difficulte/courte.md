@@ -1,0 +1,1 @@
+Paramètre qui fixe la quantité de travail nécessaire pour miner un bloc valide, sous la forme d'une cible que le hachage de l'entête doit respecter. Elle s'ajuste tous les 2016 blocs pour maintenir un bloc toutes les 10 minutes environ.

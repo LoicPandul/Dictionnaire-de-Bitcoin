@@ -1,0 +1,1 @@
+Plateforme d'hébergement de logiciels *open source* fondée en 1999, qui a accueilli les débuts de Bitcoin : Satoshi Nakamoto y a enregistré le projet en 2008 et publié la version 0.1 en 2009, avant le passage à GitHub.

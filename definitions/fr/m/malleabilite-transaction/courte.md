@@ -1,0 +1,1 @@
+Possibilité de modifier légèrement la structure d'une transaction Bitcoin sans en changer l'effet, mais en changeant son identifiant (TXID). Le *soft fork* SegWit l'a corrigée en sortant les données malléables du calcul du TXID.

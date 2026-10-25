@@ -1,0 +1,1 @@
+Attaque sur Lightning dans laquelle un acteur sature des canaux avec des HTLC qu'il ne résout jamais, en gardant la préimage secrète. Il ne vole rien, mais gèle les fonds des victimes jusqu'à l'expiration des *timelocks*.

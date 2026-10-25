@@ -1,0 +1,1 @@
+HTLC dont le montant, inférieur au *dust limit* du canal, ne justifie pas un output dans la transaction d'engagement. Sa valeur passe dans les frais de cette transaction, ce qui permet de relayer de très petits paiements.

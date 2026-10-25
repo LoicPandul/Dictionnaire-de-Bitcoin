@@ -1,0 +1,1 @@
+Proposition qui définit, pour les scripts SegWit v0, une nouvelle façon de hacher la transaction lors de la vérification des signatures : elle évite la croissance quadratique des calculs et inclut le montant de chaque *input* dans la signature.

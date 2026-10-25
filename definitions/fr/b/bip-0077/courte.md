@@ -1,0 +1,1 @@
+Proposition qui définit une version asynchrone du Payjoin (BIP-0078) : le payeur dépose une PSBT chiffrée sur un serveur relais, que le récepteur récupère et cosigne plus tard. Les deux parties n'ont plus besoin d'être en ligne en même temps.

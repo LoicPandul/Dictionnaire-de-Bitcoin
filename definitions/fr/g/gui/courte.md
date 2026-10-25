@@ -1,0 +1,1 @@
+Sigle de *Graphical User Interface*, interface graphique qui permet d'utiliser un logiciel à travers des éléments visuels comme des boutons et des fenêtres, plutôt que par des commandes textuelles comme avec une CLI.

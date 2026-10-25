@@ -1,0 +1,1 @@
+Attaque qui rend trop coûteux ou impossible le remplacement (RBF) ou l'accélération (CPFP) d'une transaction, en détournant les règles de relais des nœuds. Elle menace surtout le Lightning Network et les autres protocoles multipartites soumis à des délais.

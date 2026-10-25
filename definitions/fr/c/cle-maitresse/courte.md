@@ -1,0 +1,1 @@
+Clé privée unique dérivée directement de la graine d'un portefeuille HD, au même titre que le code de chaîne maître. Elle se trouve à la profondeur 0 et sert de point de départ à la dérivation de toutes les clés du portefeuille.

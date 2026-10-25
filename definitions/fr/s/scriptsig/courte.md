@@ -1,0 +1,1 @@
+Champ d'une entrée de transaction qui fournit les données exigées par le `scriptPubKey` de l'UTXO dépensé, typiquement une signature et une clé publique. Il prouve que le dépensier a le droit de débloquer les fonds.

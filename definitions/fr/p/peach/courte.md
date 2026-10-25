@@ -1,0 +1,1 @@
+Application mobile suisse d'échange de bitcoins en pair à pair, fondée en 2022, qui permet d'acheter et de vendre des bitcoins directement entre utilisateurs, avec un système d'*escrow* pour sécuriser les échanges.

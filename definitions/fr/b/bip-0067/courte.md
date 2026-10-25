@@ -1,0 +1,1 @@
+Proposition qui impose de trier dans l'ordre lexicographique les clés publiques d'un `redeemScript` multisig P2SH. Tous les cosignataires obtiennent ainsi la même adresse, quel que soit l'ordre d'insertion des clés.

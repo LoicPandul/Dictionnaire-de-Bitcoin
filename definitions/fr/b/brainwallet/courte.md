@@ -1,0 +1,1 @@
+Méthode qui consiste à ne garder sa phrase mnémonique qu'en mémoire, sans aucun support, ou à en choisir soi-même les mots. Elle expose à la perte des fonds en cas d'oubli et, quand les mots sont choisis, au vol par force brute.

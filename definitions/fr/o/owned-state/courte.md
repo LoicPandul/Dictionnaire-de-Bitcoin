@@ -1,0 +1,1 @@
+Partie de l'état d'un contrat RGB attribuée à un détenteur précis par un *single-use seal* qui pointe vers un UTXO. Elle représente par exemple un actif ou un droit contractuel appartenant à ce détenteur.

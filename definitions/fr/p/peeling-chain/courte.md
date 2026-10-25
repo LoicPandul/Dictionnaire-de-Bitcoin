@@ -1,0 +1,1 @@
+Motif de transactions successives où un gros montant est distribué par petites fractions, le reste partant chaque fois vers une nouvelle adresse de change. Facile à repérer, il aide l'analyse de chaîne à suivre des flux de fonds.

@@ -1,0 +1,1 @@
+Code-barres en deux dimensions, lisible rapidement par un appareil mobile, qui sert sur Bitcoin à transmettre des informations entre deux appareils, surtout des adresses de réception, mais aussi des PSBT ou des *invoices* Lightning.

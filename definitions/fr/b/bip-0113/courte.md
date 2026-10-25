@@ -1,0 +1,1 @@
+Proposition de soft fork qui évalue les *timelocks* par rapport au *Median Time Past*, la médiane des horodatages des 11 derniers blocs, au lieu de l'horodatage du bloc courant. Les mineurs peuvent ainsi moins manipuler la référence de temps.

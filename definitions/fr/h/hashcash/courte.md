@@ -1,0 +1,1 @@
+Système de preuve de travail conçu par Adam Back en 1997 contre le spam, qui oblige l'expéditeur à fournir un calcul coûteux à produire mais rapide à vérifier. Bitcoin reprend ce principe dans sa preuve de travail.

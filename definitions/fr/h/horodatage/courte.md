@@ -1,0 +1,1 @@
+Mécanisme qui associe un repère temporel à un événement ou à une donnée. Sur Bitcoin, chaque bloc porte un horodatage, ce qui établit la chronologie des transactions sans autorité centrale et permet d'empêcher les doubles dépenses.

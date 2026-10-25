@@ -1,0 +1,1 @@
+Opcode proposé pour Tapscript par le BIP-0345, qui sert à construire des coffres (*vaults*) : toute dépense passe par un délai, pendant lequel les fonds restent récupérables par un chemin de secours en cas de compromission.

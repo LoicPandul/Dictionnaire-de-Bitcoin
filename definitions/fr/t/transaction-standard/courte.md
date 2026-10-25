@@ -1,0 +1,1 @@
+Transaction qui respecte, en plus des règles de consensus, les règles de standardisation appliquées par défaut par les nœuds Bitcoin Core pour leur mempool et le relais. Une transaction non standard reste valide, mais se propage mal sur le réseau.

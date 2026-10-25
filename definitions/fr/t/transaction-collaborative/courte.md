@@ -1,0 +1,1 @@
+Transaction Bitcoin dont les inputs appartiennent à plusieurs entités différentes. Le coinjoin en est l'exemple type : plusieurs utilisateurs y regroupent leurs UTXO pour rompre l'historique de leurs pièces.

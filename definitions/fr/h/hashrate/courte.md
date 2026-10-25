@@ -1,0 +1,1 @@
+Puissance de calcul consacrée au minage, mesurée en hachages par seconde, pour le réseau entier ou pour une machine, une ferme ou une pool. Plus le *hashrate* du réseau est élevé, plus Bitcoin est coûteux à attaquer.

@@ -1,0 +1,1 @@
+Pratique qui consiste à attacher une annotation à un UTXO dans un portefeuille, pour se souvenir de son origine ou de sa destination et éviter, avec le *coin control*, de fusionner des pièces de provenances différentes.

@@ -1,0 +1,1 @@
+Chaîne de caractères standard qui décrit un script de sortie : type de script, chemins de dérivation, clés et somme de contrôle. Sauvegardée avec la phrase de récupération, elle permet de restaurer fidèlement un portefeuille, multisig compris.

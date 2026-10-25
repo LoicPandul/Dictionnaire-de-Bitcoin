@@ -1,0 +1,1 @@
+Covenant qui impose ses conditions non seulement à la transaction qui dépense un UTXO, mais aussi à toutes celles qui suivront, si bien que les bitcoins concernés gardent indéfiniment les mêmes restrictions.

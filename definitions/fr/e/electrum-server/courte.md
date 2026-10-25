@@ -1,0 +1,1 @@
+Indexeur installé sur un nœud complet qui tient un index des adresses et des transactions, pour que les portefeuilles comme Electrum fonctionnent sans télécharger la blockchain. Il fait le pont entre le portefeuille et le nœud.

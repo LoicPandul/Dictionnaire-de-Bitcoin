@@ -1,0 +1,1 @@
+Mesure du nombre total de hachages attendus pour produire une chaîne de blocs, calculée à partir de la cible de chaque bloc. Les nœuds suivent la chaîne qui a le chainwork le plus élevé, et non celle qui compte le plus de blocs.

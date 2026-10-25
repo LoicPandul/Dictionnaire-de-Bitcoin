@@ -1,0 +1,1 @@
+Système de preuve cryptographique qui convainc un vérificateur qu'une affirmation est vraie sans interaction ni révélation des données, avec une preuve très courte. La plupart des constructions exigent une cérémonie de configuration de confiance (*trusted setup*).

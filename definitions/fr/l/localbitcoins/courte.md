@@ -1,0 +1,1 @@
+Plateforme finlandaise d'échange de bitcoins en pair-à-pair, fondée en 2012 par Jeremias Kangas, qui mettait en relation acheteurs et vendeurs du monde entier avec un *escrow* et qui a fermé en février 2023.

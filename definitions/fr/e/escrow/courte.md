@@ -1,0 +1,1 @@
+Mécanisme de séquestre dans lequel des fonds restent bloqués jusqu'à ce que les conditions convenues entre les parties soient remplies. Sur Bitcoin, il prend souvent la forme d'un multisig 2-de-3 entre l'acheteur, le vendeur et un arbitre.

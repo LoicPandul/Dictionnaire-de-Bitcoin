@@ -1,0 +1,1 @@
+Représentation d'une clé publique qui ne garde que la coordonnée `x` du point de la courbe elliptique, précédée d'un préfixe `02` ou `03` qui indique la parité de `y`. Elle réduit la clé de 65 à 33 octets.

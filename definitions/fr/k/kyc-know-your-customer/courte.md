@@ -1,0 +1,1 @@
+Procédure réglementaire de vérification de l'identité des clients, appliquée par certaines entreprises de Bitcoin au titre de la lutte contre le blanchiment. Elle expose l'utilisateur aux fuites de données, à la surveillance étatique et au traçage de ses transactions.

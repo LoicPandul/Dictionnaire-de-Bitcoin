@@ -1,0 +1,1 @@
+Preuve à divulgation nulle de connaissance utilisée dans les *Confidential Transactions* pour démontrer qu'un montant caché se situe dans un intervalle valide, ce qui empêche de créer frauduleusement des unités sans révéler la valeur.

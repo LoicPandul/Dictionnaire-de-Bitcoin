@@ -1,0 +1,1 @@
+Implémentation *open source* de *watchtower* pour le Lightning Network, qui surveille la blockchain pour un utilisateur et diffuse une transaction de pénalité si sa contrepartie publie un ancien état du canal.

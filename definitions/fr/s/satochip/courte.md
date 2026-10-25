@@ -1,0 +1,1 @@
+Entreprise belge qui fabrique des portefeuilles matériels au format carte à puce NFC, pour stocker des clés privées Bitcoin dans un élément sécurisé. Sa gamme comprend aussi le SeedKeeper et la carte au porteur Satodime.

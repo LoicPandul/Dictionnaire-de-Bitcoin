@@ -1,0 +1,1 @@
+Protocole de communication entre les mineurs et les serveurs des pools de minage, annoncé en 2012 par Marek Palatinus (Slush) pour remplacer Getwork. Il est devenu la référence du minage en pool sur Bitcoin.

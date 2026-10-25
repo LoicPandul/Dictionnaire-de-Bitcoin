@@ -1,0 +1,1 @@
+Protocole cryptographique qui engage des données arbitraires dans le nonce d'une signature, sans que cet engagement soit visible. Il sert à horodater des documents et constitue la base de l'anti-exfiltration des *hardware wallets*.

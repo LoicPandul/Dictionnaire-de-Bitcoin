@@ -1,0 +1,1 @@
+Chaîne de données facultative que les détenteurs successifs d'un contrat RGB peuvent inscrire dans l'historique de ses transitions, pour y ajouter des informations commémoratives ou descriptives sans toucher à la validité des opérations.

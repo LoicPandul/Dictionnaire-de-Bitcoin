@@ -1,0 +1,1 @@
+Paiement qu'un nœud Lightning s'envoie à lui-même à travers d'autres nœuds pour déplacer de la liquidité d'un de ses canaux vers un autre, sans ouvrir ni fermer de canal. L'opération coûte les frais de routage des nœuds intermédiaires.

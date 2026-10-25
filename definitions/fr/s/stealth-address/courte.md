@@ -1,0 +1,1 @@
+Technique de confidentialité où le destinataire publie une clé publique statique, à partir de laquelle chaque expéditeur dérive une adresse à usage unique. Seul le destinataire peut repérer et dépenser ces paiements, ce qui évite la réutilisation d'adresses.

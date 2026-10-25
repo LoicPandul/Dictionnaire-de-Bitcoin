@@ -1,0 +1,1 @@
+Unité de mesure introduite par SegWit pour évaluer la place qu'une transaction occupe dans un bloc, où un octet de données *witness* pèse 1 WU et les autres octets 4 WU. Un bloc est limité à 4 000 000 WU.

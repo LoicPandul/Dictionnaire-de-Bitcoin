@@ -1,0 +1,1 @@
+Proposition qui généralise le signalement par *version bits* du BIP-0009, en permettant de régler pour chaque soft fork son seuil d'activation, sa période de signalement et son délai d'expiration. Elle n'a jamais été déployée.

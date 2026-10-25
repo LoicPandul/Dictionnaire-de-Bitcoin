@@ -1,0 +1,1 @@
+Délai de 100 blocs imposé avant qu'un mineur puisse dépenser sa récompense de bloc. Il évite que des bitcoins issus d'un bloc abandonné lors d'une réorganisation circulent déjà dans d'autres transactions.

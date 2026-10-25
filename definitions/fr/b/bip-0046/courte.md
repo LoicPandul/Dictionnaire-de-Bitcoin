@@ -1,0 +1,1 @@
+Proposition qui définit un chemin de dérivation dédié aux *fidelity bonds* de JoinMarket, des adresses dont les fonds sont bloqués par un *timelock*. Le *maker* prouve ainsi un sacrifice économique et retrouve ses *bonds* avec sa seule graine.

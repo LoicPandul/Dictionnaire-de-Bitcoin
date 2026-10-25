@@ -1,0 +1,1 @@
+Fonction de hachage de transaction proposée par Robin Linus, qui donne à Bitcoin Script une forme limitée d'introspection sans changer le consensus, en détournant le comportement *FindAndDelete* de `OP_CHECKMULTISIG`. Elle vise des protocoles comme les ponts BitVM.

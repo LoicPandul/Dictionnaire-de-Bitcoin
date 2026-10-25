@@ -1,0 +1,1 @@
+Méthode de rémunération des mineurs d'une pool qui, à chaque bloc trouvé, répartit les gains selon les *shares* soumises par chacun sur la dernière période, ce qui favorise les mineurs réguliers et décourage le *pool hopping*.

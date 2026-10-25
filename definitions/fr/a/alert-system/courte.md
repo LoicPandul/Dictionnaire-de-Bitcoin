@@ -1,0 +1,1 @@
+Mécanisme historique de Bitcoin, introduit par Satoshi Nakamoto en 2010, qui permettait aux détenteurs d'une clé privée spéciale de diffuser des messages d'urgence à tous les nœuds. Jugé trop centralisé, il a été retiré de Bitcoin Core en version 0.13.0.

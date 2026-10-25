@@ -1,0 +1,1 @@
+Signature numérique apposée sans que le signataire connaisse le contenu du message, mais vérifiable ensuite sur le message original. Inventée par David Chaum, elle sert sur Bitcoin aux banques chaumiennes comme Cashu ou Fedimint et aux coinjoins chaumiens.

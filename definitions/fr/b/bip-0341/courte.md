@@ -1,0 +1,1 @@
+Proposition qui définit Taproot, les règles de dépense de SegWit v1 : une sortie se dépense par une simple signature de Schnorr ou en révélant un script d'un arbre de Merkle, et toutes les sorties ont la même apparence sur la blockchain.

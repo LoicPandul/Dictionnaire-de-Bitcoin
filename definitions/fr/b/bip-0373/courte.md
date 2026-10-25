@@ -1,0 +1,1 @@
+Proposition qui ajoute au format PSBT les champs propres à MuSig2 (clés des participants, *nonces* publics, signatures partielles), pour coordonner une signature collaborative par simple échange de fichiers PSBT.

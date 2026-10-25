@@ -1,0 +1,1 @@
+Portefeuille mobile spécialisé dans les paiements Lightning et conçu pour être simple à utiliser. Historiquement *custodial*, il propose depuis 2025 une option *self-custodial* fondée sur le protocole Spark.

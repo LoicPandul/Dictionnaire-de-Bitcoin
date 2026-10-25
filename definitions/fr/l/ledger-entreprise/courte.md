@@ -1,0 +1,1 @@
+Entreprise française fondée en 2014 qui fabrique des *hardware wallets*. Ses appareils isolent les clés privées de tout environnement connecté grâce à une puce de sécurité certifiée (*Secure Element*).

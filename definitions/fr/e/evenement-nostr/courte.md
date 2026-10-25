@@ -1,0 +1,1 @@
+Unité de données du protocole Nostr : un objet JSON signé par son auteur qui transporte toute information du réseau (note, profil, réaction, message, reçu de zap), dont la nature est donnée par le champ `kind`.

@@ -1,0 +1,1 @@
+Fichier de Bitcoin Core qui conserve une sauvegarde des paramètres de l'interface graphique, créée quand l'option `-resetguisettings` les remet à leurs valeurs par défaut. Il permet de retrouver l'ancienne configuration pour diagnostiquer un problème.

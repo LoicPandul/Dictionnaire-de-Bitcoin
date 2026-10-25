@@ -1,0 +1,1 @@
+Nombre qui ne doit servir qu'une seule fois. Dans Bitcoin, il intervient dans chaque signature, où sa réutilisation révèle la clé privée, et dans le minage, où les mineurs le font varier pour trouver un hash valide.

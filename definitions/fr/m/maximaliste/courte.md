@@ -1,0 +1,1 @@
+Personne convaincue que Bitcoin est la seule cryptomonnaie dotée d'une valeur fondamentale et que les altcoins sont superflus, voire nuisibles. Le terme, forgé par Vitalik Buterin en 2014, a ensuite été revendiqué par ceux qu'il visait.

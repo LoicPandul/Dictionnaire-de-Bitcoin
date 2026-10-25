@@ -1,0 +1,1 @@
+Groupe d'opérateurs indépendants du protocole Spark qui détient collectivement une moitié de la clé de dépense des UTXO, l'autre revenant à l'utilisateur. À chaque transfert, il renouvelle sa part de clé avec le destinataire et détruit l'ancienne.

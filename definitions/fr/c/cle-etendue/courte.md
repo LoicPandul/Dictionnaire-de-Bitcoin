@@ -1,0 +1,1 @@
+Suite de caractères qui réunit une clé publique ou privée, son code de chaîne et des métadonnées, soit tout le nécessaire pour dériver des clés enfants dans un portefeuille HD. Une clé publique étendue permet de suivre un compte sans exposer ses clés privées.

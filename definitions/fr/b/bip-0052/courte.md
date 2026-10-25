@@ -1,0 +1,1 @@
+Proposition de hard fork qui remplace la preuve de travail de Bitcoin par l'*Optical Proof of Work*, pensée pour des puces photoniques. Elle vise à rendre le coût du minage moins dépendant de l'électricité et davantage du matériel.

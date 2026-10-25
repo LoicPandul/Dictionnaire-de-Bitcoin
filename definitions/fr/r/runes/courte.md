@@ -1,0 +1,1 @@
+Protocole qui permet de créer et de transférer des jetons fongibles autres que le BTC à l'aide de transactions Bitcoin, en inscrivant ses messages dans des sorties `OP_RETURN`. Il vient de la même équipe que les Ordinals.

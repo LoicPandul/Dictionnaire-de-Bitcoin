@@ -1,0 +1,1 @@
+Proposition de soft fork temporaire, d'environ un an, qui limite au niveau du consensus la taille des données arbitraires inscrites dans les transactions, pour freiner l'usage de Bitcoin comme support de stockage, notamment par les inscriptions Ordinals.

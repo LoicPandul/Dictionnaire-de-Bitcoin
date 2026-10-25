@@ -1,0 +1,1 @@
+Courbe algébrique sur laquelle repose la cryptographie à courbes elliptiques. Bitcoin utilise la courbe `secp256k1` pour calculer les clés publiques à partir des clés privées et pour signer les transactions avec ECDSA ou Schnorr.

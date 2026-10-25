@@ -1,0 +1,1 @@
+Cryptomonnaie alternative (*altcoin*) lancée en 2014, qui masque par défaut l'expéditeur, le destinataire et le montant des transactions grâce à des techniques cryptographiques comme les signatures de cercle.

@@ -1,0 +1,1 @@
+Ouverture coordonnée de canaux Lightning où plusieurs opérateurs de nœuds ouvrent chacun un canal vers le suivant, en cercle, avec une capacité identique. Chaque participant obtient ainsi de la liquidité entrante et sortante.

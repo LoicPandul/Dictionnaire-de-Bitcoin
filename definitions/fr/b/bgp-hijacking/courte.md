@@ -1,0 +1,1 @@
+Attaque qui falsifie les annonces BGP pour détourner vers son réseau le trafic Internet destiné à certaines adresses IP, ce qui permet d'isoler des nœuds Bitcoin ou de rediriger vers sa *pool* la puissance de calcul des hacheurs.

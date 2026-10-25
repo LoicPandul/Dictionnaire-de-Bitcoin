@@ -1,0 +1,1 @@
+Mécanisme qui relie Bitcoin à une sidechain avec une valeur fixe : des bitcoins sont verrouillés sur la chaîne principale pendant qu'un montant équivalent est émis sur la sidechain, puis l'opération s'inverse au retour.

@@ -1,0 +1,1 @@
+Plateforme d'hébergement de code source bâtie sur Git, principale alternative à GitHub, que l'on peut aussi autohéberger. Elle sert à suivre les modifications du code et à collaborer entre développeurs.

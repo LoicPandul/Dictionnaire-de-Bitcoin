@@ -1,0 +1,1 @@
+Méthode de dérivation des portefeuilles HD qui part de la clé privée parent, si bien que la clé publique étendue parent ne permet pas de calculer les clés publiques enfants. On la note avec une apostrophe dans les chemins de dérivation.

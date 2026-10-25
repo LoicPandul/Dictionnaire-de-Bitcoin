@@ -1,0 +1,1 @@
+Variante de MuSig, proposée en 2020, qui signe en deux tours grâce à des nonces déterministes accompagnés de preuves à divulgation nulle de connaissance. Trop coûteuse en pratique, elle a été supplantée par MuSig2.

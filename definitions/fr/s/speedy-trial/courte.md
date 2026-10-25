@@ -1,0 +1,1 @@
+Méthode d'activation de soft fork conçue pour Taproot en 2021, avec une période de signalement des mineurs de seulement 3 mois. Si le seuil est atteint, le soft fork est verrouillé puis activé quelques mois plus tard ; sinon, rien n'est imposé.

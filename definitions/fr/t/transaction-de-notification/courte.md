@@ -1,0 +1,1 @@
+Transaction du protocole BIP-0047 qui transmet au destinataire, dans un output `OP_RETURN`, le code de paiement chiffré de l'expéditeur. Envoyée une seule fois par paire d'utilisateurs, elle permet ensuite au destinataire de repérer les paiements reçus.

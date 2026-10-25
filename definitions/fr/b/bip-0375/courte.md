@@ -1,0 +1,1 @@
+Proposition qui définit les champs PSBT nécessaires pour envoyer des *Silent Payments*, avec les parts ECDH et les preuves DLEQ de chaque signataire, pour calculer les sorties à plusieurs sans révéler les clés privées.

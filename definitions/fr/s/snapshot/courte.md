@@ -1,0 +1,1 @@
+Copie de l'UTXO set de Bitcoin à un bloc donné. Avec Assume UTXO, un nouveau nœud Bitcoin Core charge un snapshot vérifié pour être utilisable presque tout de suite, puis valide l'historique complet en arrière-plan.

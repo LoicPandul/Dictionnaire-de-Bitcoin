@@ -1,0 +1,1 @@
+Proposition qui étend le BIP-0032 avec des modèles de scripts, pour standardiser la façon dont les portefeuilles HD génèrent leurs scripts de sortie. Elle a été supplantée par les *output script descriptors*.

@@ -1,0 +1,1 @@
+Logiciel *daemon* de Lightning Labs, implémentation de référence du protocole Taproot Assets. Il sert à créer, envoyer et recevoir des actifs numériques encodés dans des sorties Taproot de la blockchain Bitcoin.

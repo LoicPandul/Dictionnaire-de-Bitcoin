@@ -1,0 +1,1 @@
+Protocole qui permet d'exécuter des calculs arbitraires hors chaîne et de conditionner la dépense de bitcoins à leur résultat, avec une contestation possible sur la chaîne en cas de fraude, sans modifier le consensus de Bitcoin.

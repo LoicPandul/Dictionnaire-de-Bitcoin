@@ -1,0 +1,1 @@
+Cryptomonnaie issue d'un *hard fork* de Bitcoin le 24 octobre 2017, qui a adopté l'algorithme de preuve de travail Equihash, conçu pour résister aux ASIC, afin d'ouvrir le minage aux cartes graphiques.

@@ -1,0 +1,1 @@
+Sigle de *Invisible Internet Project*, réseau de communication anonyme qui, comme Tor, fait transiter des échanges chiffrés par des intermédiaires, selon le *garlic routing*. Un nœud Bitcoin peut l'utiliser pour protéger ses communications.

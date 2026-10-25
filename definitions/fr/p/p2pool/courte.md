@@ -1,0 +1,1 @@
+Protocole de pool de minage décentralisé, sans opérateur central : les mineurs construisent ensemble une *share chain* à difficulté réduite et se partagent la récompense quand un de ses blocs atteint la difficulté de Bitcoin.

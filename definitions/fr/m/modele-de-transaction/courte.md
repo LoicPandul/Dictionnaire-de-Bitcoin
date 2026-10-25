@@ -1,0 +1,1 @@
+Structure typique d'une transaction, lue au nombre de ses entrées et de ses sorties, dont l'analyse de chaîne connaît l'interprétation vraisemblable et qu'elle utilise pour deviner la nature d'un paiement.

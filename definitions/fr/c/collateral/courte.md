@@ -1,0 +1,1 @@
+Actif qu'un emprunteur remet en garantie à un prêteur, qui peut le saisir en cas de défaut de remboursement. Avec Bitcoin, il désigne surtout les bitcoins déposés pour obtenir un prêt lombard en monnaie *fiat* sans avoir à les vendre.

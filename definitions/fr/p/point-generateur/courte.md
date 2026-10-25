@@ -1,0 +1,1 @@
+Point fixe d'une courbe elliptique qui sert de base à la cryptographie à clé publique. Dans Bitcoin, le point `G` de secp256k1 permet de calculer une clé publique en multipliant ce point par la clé privée.

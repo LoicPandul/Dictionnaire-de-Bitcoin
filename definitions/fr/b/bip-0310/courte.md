@@ -1,0 +1,1 @@
+Proposition d'extensions au protocole Stratum entre mineurs et pools, avec un message `mining.configure` pour négocier les fonctionnalités, dont le *version rolling* qui autorise la modification de certains bits du champ `nVersion`.

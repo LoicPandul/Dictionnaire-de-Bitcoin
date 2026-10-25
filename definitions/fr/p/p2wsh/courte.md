@@ -1,0 +1,1 @@
+Modèle de script SegWit version 0 qui bloque des bitcoins sur le hachage d'un script, comme P2SH, mais place le script et les signatures dans le témoin de la transaction. Il sert notamment aux multisignatures.

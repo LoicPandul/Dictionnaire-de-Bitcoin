@@ -1,0 +1,1 @@
+Portefeuille Bitcoin pour Android axé sur la confidentialité, doté d'outils contre l'analyse de chaîne comme les *coinjoins* Whirlpool, Stonewall, Ricochet ou le *payjoin* Stowaway. Ses deux cofondateurs ont été arrêtés le 24 avril 2024.

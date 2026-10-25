@@ -1,0 +1,1 @@
+Méthode d'ouverture d'un canal Lightning dans laquelle les deux participants y bloquent des bitcoins, au lieu d'un seul, pour disposer d'emblée de liquidités des deux côtés. Elle fait partie de la version 2 du protocole de construction des canaux.

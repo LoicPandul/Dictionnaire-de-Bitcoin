@@ -1,0 +1,1 @@
+Fonction de hachage cryptographique de la famille SHA-2, conçue par la NSA, qui produit un condensat de 256 bits. Bitcoin l'utilise partout : preuve de travail, arbres de Merkle, dérivation des adresses et sommes de contrôle.

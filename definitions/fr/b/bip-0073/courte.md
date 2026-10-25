@@ -1,0 +1,1 @@
+Proposition qui utilise l'en-tête HTTP `Accept` pour que le portefeuille et le serveur du commerçant s'accordent sur le format des réponses du protocole BIP-0070. Elle est devenue obsolète avec l'abandon de ce protocole.

@@ -1,0 +1,1 @@
+*Hardware wallet* *open source* de Blockstream, compatible avec Liquid, qui remplace la puce *secure element* par un *virtual secure element* : la clé n'est déchiffrable qu'avec un secret de l'appareil et un secret détenu par un serveur.

@@ -1,0 +1,1 @@
+Sigle de *Miner-Activated Soft Fork*. Méthode d'activation d'un *soft fork* dans laquelle les mineurs signalent leur accord dans les blocs qu'ils produisent, la mise à jour s'activant une fois qu'une large majorité la soutient.

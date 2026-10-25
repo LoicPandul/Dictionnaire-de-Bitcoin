@@ -1,0 +1,1 @@
+Refonte de la mempool de Bitcoin Core qui regroupe les transactions liées en grappes et les ordonne en morceaux classés par taux de frais. La construction des blocs et l'éviction deviennent ainsi deux opérations exactement inverses.

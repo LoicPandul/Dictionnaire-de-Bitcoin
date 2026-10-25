@@ -1,0 +1,1 @@
+Référence unique à une sortie de transaction, formée du `txid` de la transaction qui l'a créée et de son index (`vout`). Une transaction l'inscrit dans ses entrées pour désigner l'UTXO qu'elle dépense.

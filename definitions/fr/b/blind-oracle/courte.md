@@ -1,0 +1,1 @@
+Protocole cryptographique dans lequel un oracle effectue une opération, comme une signature, sur un message qu'il ne peut pas lire. Le *hardware wallet* Jade de Blockstream s'en sert pour protéger le code PIN sans que l'oracle accède à la phrase de récupération.

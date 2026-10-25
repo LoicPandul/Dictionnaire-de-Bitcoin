@@ -1,0 +1,1 @@
+Code d'authentification de message HMAC construit sur la fonction de hachage `SHA512` et une clé secrète. Sur Bitcoin, il sert à dériver les clés d'un portefeuille HD, de la graine à la clé maîtresse puis vers chaque clé enfant.

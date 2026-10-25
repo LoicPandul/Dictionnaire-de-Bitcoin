@@ -1,0 +1,1 @@
+Ensemble des règles locales qu'un nœud Bitcoin applique dans ses échanges avec le réseau pair-à-pair, par opposition aux règles de consensus. Elle englobe la politique de relais des transactions, la politique de mempool et les règles de standardisation.

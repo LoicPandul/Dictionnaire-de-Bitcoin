@@ -1,0 +1,1 @@
+Proposition qui définit le premier processus de rédaction et de publication des BIP, avec leurs trois types (*Standards Track*, *Informational*, *Process*), rédigée par Amir Taaki en 2011 et remplacée ensuite par le BIP-0002.

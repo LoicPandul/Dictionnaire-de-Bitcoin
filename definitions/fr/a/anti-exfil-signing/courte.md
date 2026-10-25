@@ -1,0 +1,1 @@
+Protocole de signature qui empêche un *hardware wallet* compromis de faire fuiter la clé privée par ses signatures : l'hôte fournit une part aléatoire du nonce et vérifie ensuite qu'elle a bien été utilisée.

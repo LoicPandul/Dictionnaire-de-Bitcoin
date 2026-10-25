@@ -1,0 +1,1 @@
+Circuit intégré conçu pour une seule fonction. En minage, il calcule des hachages `SHA256` bien plus vite et avec moins d'énergie qu'un CPU ou un GPU, et désigne aussi par extension la machine de minage qui l'héberge.

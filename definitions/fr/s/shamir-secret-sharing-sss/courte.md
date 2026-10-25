@@ -1,0 +1,1 @@
+Schéma cryptographique conçu par Adi Shamir en 1979, qui divise un secret en n parts dont t suffisent à le reconstruire, alors que moins de t parts ne révèlent rien. Sur Bitcoin, il sert à sauvegarder une graine en plusieurs morceaux.

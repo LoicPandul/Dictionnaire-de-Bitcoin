@@ -1,0 +1,1 @@
+Numéro séquentiel de 32 bits attribué à une clé enfant d'un portefeuille HD. Combiné à la clé parent et au code de chaîne, il permet de dériver de manière déterministe des clés enfants sœurs distinctes.

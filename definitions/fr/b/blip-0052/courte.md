@@ -1,0 +1,1 @@
+Proposition qui définit LSPS2, un protocole avec lequel un fournisseur de services Lightning (LSP) ouvre un canal *just-in-time* quand un paiement arrive pour un client sans canal, en déduisant les frais d'ouverture du montant reçu.

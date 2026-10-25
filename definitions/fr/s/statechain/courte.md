@@ -1,0 +1,1 @@
+Mécanisme de couche supérieure qui transfère la propriété d'un UTXO hors chaîne en renouvelant les parts d'une clé partagée avec une entité, sans transaction on-chain. Il repose sur la confiance que l'entité efface ses anciennes parts.

@@ -1,0 +1,1 @@
+Mécanisme d'authentification délégable et vérifiable cryptographiquement, utilisé notamment par les nœuds Lightning pour autoriser une application distante à effectuer certaines opérations sur le nœud.

@@ -1,0 +1,1 @@
+Canal Lightning sans transaction de financement sur la blockchain, dont les fonds restent sous la garde de l'hôte. Il donne accès à Lightning sans frais d'ouverture ni de fermeture, avec plus de garanties qu'un portefeuille *custodial* classique.

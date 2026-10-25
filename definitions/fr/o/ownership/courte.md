@@ -1,0 +1,1 @@
+Notion du protocole RGB qui désigne le droit de modifier l'état d'un contrat : le détenteur de l'UTXO visé par le *seal* d'un *owned state* peut transférer ou faire évoluer cet état, selon les règles du contrat.

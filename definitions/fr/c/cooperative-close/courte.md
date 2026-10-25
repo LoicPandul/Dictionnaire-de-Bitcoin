@@ -1,0 +1,1 @@
+Fermeture d'un canal Lightning signée d'un commun accord par les deux partenaires, qui redistribue les fonds sans *timelock*. Moins coûteuse qu'une fermeture forcée, elle rend les fonds disponibles dès la confirmation.

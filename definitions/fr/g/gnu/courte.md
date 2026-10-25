@@ -1,0 +1,1 @@
+Projet lancé en 1983 par Richard Stallman pour créer un système d'exploitation libre compatible avec Unix, à la base du mouvement du logiciel libre. Associé au noyau Linux, il forme les systèmes GNU/Linux.

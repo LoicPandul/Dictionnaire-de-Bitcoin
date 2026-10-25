@@ -1,0 +1,1 @@
+Chaîne de blocs liés par leur empreinte cryptographique, qui sert de serveur d'horodatage distribué à Bitcoin et permet à chaque utilisateur de connaître toutes les transactions passées pour éviter la double dépense.

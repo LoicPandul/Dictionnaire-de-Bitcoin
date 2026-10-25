@@ -1,0 +1,1 @@
+Ensemble des données qu'un utilisateur de RGB conserve de son côté pour ses contrats : historique des transitions, *consignments* et preuves. Il lui sert à valider ses actifs par la validation côté client.

@@ -1,0 +1,1 @@
+Programme informatique qui tourne en arrière-plan, sans contrôle direct de l'utilisateur. Le *daemon* de Bitcoin Core s'appelle `bitcoind` : c'est sa version sans interface graphique, pilotée en ligne de commande.

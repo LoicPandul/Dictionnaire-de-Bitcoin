@@ -1,0 +1,1 @@
+Champ optionnel réservé dans le témoin des entrées Taproot par le BIP-0341, reconnaissable à son préfixe `0x50`. Sans fonction de consensus assignée, il est prévu pour de futures extensions, et toute signature s'engage sur son contenu.

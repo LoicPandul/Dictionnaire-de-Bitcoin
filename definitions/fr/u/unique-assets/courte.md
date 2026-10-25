@@ -1,0 +1,1 @@
+Actifs émis avec le protocole Taproot Assets, indivisibles et non interchangeables, comparables aux NFT. Ils servent à représenter sur Bitcoin des certificats, des titres de propriété ou des objets de collection.

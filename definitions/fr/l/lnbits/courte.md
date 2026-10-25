@@ -1,0 +1,1 @@
+Application *open source* qui se place au-dessus d'une source de financement Lightning pour créer des portefeuilles virtuels isolés, chacun avec sa clé API. Des extensions y ajoutent point de vente, liens de paiement ou *paywalls*.

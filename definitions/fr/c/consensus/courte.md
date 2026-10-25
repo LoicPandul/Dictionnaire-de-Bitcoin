@@ -1,0 +1,1 @@
+Mécanisme par lequel les nœuds du réseau Bitcoin s'accordent sur un même historique des transactions, notamment pour éviter la double dépense. Il repose sur la preuve de travail : les nœuds suivent la chaîne qui cumule le plus de travail.

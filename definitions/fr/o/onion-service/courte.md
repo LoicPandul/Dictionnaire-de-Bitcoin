@@ -1,0 +1,1 @@
+Service hébergé sur le réseau Tor et joignable seulement par une adresse `.onion`, où ni le serveur ni le client ne connaît l'adresse IP de l'autre. Les nœuds Bitcoin et Lightning s'en servent pour accepter des connexions entrantes anonymes.

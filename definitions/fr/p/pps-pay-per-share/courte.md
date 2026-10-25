@@ -1,0 +1,1 @@
+Méthode de rémunération des mineurs d'une pool qui paie une valeur fixe pour chaque *share* valide, que la pool trouve un bloc ou non : le mineur touche un revenu stable et l'opérateur absorbe la variance.

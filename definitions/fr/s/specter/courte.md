@@ -1,0 +1,1 @@
+Suite logicielle *open source* de gestion de portefeuilles Bitcoin, centrée sur le multisig. Specter Desktop s'appuie sur un nœud Bitcoin Core personnel et les *hardware wallets*, et Specter DIY permet de fabriquer son propre *signing device*.

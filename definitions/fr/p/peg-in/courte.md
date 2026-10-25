@@ -1,0 +1,1 @@
+Mécanisme qui transfère la valeur de bitcoins vers une sidechain : les BTC sont verrouillés sur la chaîne principale et une quantité équivalente de jetons est émise sur la sidechain. C'est la première étape de l'ancrage bilatéral.

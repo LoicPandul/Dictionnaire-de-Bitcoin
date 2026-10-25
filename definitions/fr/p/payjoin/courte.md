@@ -1,0 +1,1 @@
+Structure de transaction collaborative où le destinataire ajoute une de ses entrées à celles du payeur. Elle ressemble à un paiement ordinaire, mais trompe l'analyse de chaîne sur la propriété des entrées et sur le montant réel du paiement.

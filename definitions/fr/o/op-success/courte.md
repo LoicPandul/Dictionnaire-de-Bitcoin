@@ -1,0 +1,1 @@
+Famille d'opcodes réservés dans Tapscript, dont la présence rend le script valide sans condition. Un soft fork peut ainsi leur donner plus tard le sens d'un nouvel opcode, qui ne fait qu'ajouter des règles plus restrictives.

@@ -1,0 +1,1 @@
+Logiciel de nœud qui applique les règles du protocole Bitcoin et se connecte au reste du réseau. Bitcoin Core est de loin la plus répandue, à côté d'implémentations minoritaires comme btcd ou Bitcoin Knots.

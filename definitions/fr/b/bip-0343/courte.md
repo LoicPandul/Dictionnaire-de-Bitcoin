@@ -1,0 +1,1 @@
+Proposition de Shinobius et Michael Folkson pour activer Taproot selon le BIP-0008 avec `LOT=true`, qui rendait le signalement des mineurs obligatoire en fin de délai. Taproot a été verrouillé avant par le Speedy Trial, ce qui l'a rendue caduque.

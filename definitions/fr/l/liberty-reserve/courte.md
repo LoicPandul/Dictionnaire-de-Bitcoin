@@ -1,0 +1,1 @@
+Service centralisé de monnaie numérique basé au Costa Rica, fondé en 2006 par Arthur Budovsky, et saisi par le gouvernement américain en mai 2013 pour blanchiment. Sa fermeture illustre la vulnérabilité des monnaies numériques centralisées que Bitcoin cherche à éviter.

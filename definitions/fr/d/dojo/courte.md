@@ -1,0 +1,1 @@
+Serveur *backend* *open source* construit sur Bitcoin Core, qui permet à un portefeuille comme Ashigaru d'interroger la blockchain et de diffuser ses transactions par sa propre infrastructure. Initialement développé par les équipes de Samourai Wallet, il est maintenu par la communauté.

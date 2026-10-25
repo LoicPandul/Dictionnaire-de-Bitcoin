@@ -1,0 +1,1 @@
+Variante de l'échange de clés Diffie-Hellman sur courbes elliptiques, qui permet à deux parties de calculer un secret partagé à partir de leurs paires de clés. Le BIP-0047 et le BIP-0352 s'en servent pour dériver des adresses vierges depuis un identifiant statique.

@@ -1,0 +1,1 @@
+Identifiant d'une transaction calculé sur l'intégralité de ses données, témoin compris, à la différence du TXID qui l'exclut. Les WTXID d'un bloc sont engagés dans sa transaction coinbase par un second arbre de Merkle.

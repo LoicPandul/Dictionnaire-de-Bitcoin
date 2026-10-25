@@ -1,0 +1,1 @@
+Modèle de script standard qui bloque des bitcoins sur l'empreinte d'un script arbitraire, le `redeemScript`, révélé seulement à la dépense. Introduit par le BIP-0016, il sert notamment aux multisignatures et produit des adresses qui commencent par `3`.

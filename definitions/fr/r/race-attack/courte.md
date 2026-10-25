@@ -1,0 +1,1 @@
+Forme de double dépense qui exploite le délai de propagation : l'attaquant diffuse en même temps un paiement vers un commerçant et une transaction concurrente vers lui-même. Elle ne vise que les paiements acceptés sans confirmation.

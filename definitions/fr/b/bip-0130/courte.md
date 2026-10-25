@@ -1,0 +1,1 @@
+Proposition qui ajoute le message P2P `sendheaders`, par lequel un nœud demande à ses pairs de lui annoncer les nouveaux blocs directement par leurs en-têtes, ce qui accélère la propagation des blocs.

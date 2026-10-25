@@ -1,0 +1,1 @@
+Connexion bidirectionnelle entre deux nœuds Lightning, ancrée sur une adresse multisignature 2-de-2, qui permet d'échanger un grand nombre de paiements hors chaîne entre une transaction d'ouverture et une transaction de fermeture.

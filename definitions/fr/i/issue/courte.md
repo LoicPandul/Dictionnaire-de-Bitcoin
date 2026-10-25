@@ -1,0 +1,1 @@
+Rapport ouvert sur GitHub ou une plateforme similaire pour signaler un bug, proposer une amélioration ou suggérer une fonctionnalité. Il sert de point de discussion aux contributeurs et de suivi des tâches d'un projet.

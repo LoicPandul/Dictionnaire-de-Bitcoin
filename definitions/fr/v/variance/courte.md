@@ -1,0 +1,1 @@
+Fluctuation des revenus d'un mineur due au caractère probabiliste de la recherche de blocs : même à puissance constante, il peut passer de longues périodes sans récompense. Les pools de minage servent à la réduire.

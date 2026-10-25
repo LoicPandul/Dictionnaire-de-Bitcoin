@@ -1,0 +1,1 @@
+Sigle de *Point Time Locked Contract*. Contrat conditionnel destiné à remplacer les HTLC sur Lightning, qui verrouille les paiements avec des points de courbe elliptique et des *adaptor signatures* plutôt qu'un hash, pour empêcher de relier les sauts d'un même paiement.

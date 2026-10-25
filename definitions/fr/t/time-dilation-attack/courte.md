@@ -1,0 +1,1 @@
+Attaque sur le Lightning Network qui isole le nœud Bitcoin de la victime par une attaque éclipse et lui livre les blocs en retard. Avec une vue décalée de la chaîne, la victime ne réagit pas à temps à une fraude protégée par un *timelock*.

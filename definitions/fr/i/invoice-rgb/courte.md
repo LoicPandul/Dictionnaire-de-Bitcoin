@@ -1,0 +1,1 @@
+Facture du protocole RGB, sous la forme d'une URI préfixée par `rgb:`, qui donne au payeur les informations nécessaires pour construire la *State Transition* qui transfère un actif ou met à jour l'état d'un contrat.

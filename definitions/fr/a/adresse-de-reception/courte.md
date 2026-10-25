@@ -1,0 +1,1 @@
+Information qui sert à recevoir des bitcoins, généralement construite à partir d'une clé publique du portefeuille ou d'un script. Pour préserver sa confidentialité, chaque adresse ne doit servir qu'une seule fois.

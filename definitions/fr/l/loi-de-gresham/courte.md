@@ -1,0 +1,1 @@
+Principe économique selon lequel « la mauvaise monnaie chasse la bonne » : lorsque deux monnaies circulent avec un cours légal imposé, les agents thésaurisent celle qui conserve sa valeur et dépensent celle qui se déprécie.

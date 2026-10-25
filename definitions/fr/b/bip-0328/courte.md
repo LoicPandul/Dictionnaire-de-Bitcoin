@@ -1,0 +1,1 @@
+Proposition qui définit comment construire une xpub BIP-0032 synthétique à partir d'une clé agrégée MuSig2, pour dériver directement les clés enfants d'un portefeuille MuSig2 et simplifier la génération de ses adresses de réception.

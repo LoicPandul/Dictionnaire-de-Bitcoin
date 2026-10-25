@@ -1,0 +1,1 @@
+Proposition qui définit BSMS (*Bitcoin Secure Multisig Setup*), un protocole pour mettre en place un portefeuille multisignature entre plusieurs signataires matériels et logiciels, en garantissant que tous les cosignataires s'accordent sur la même configuration.

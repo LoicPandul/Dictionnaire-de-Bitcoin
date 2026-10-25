@@ -1,0 +1,1 @@
+Discipline qui transforme les informations, notamment par des techniques mathématiques, pour en masquer le contenu, en garantir l'authenticité ou empêcher leur modification. Elle regroupe le hachage, la signature numérique et le chiffrement.

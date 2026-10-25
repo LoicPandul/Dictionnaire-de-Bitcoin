@@ -1,0 +1,1 @@
+Spécification de la version 2 du format PSBT, qui permet aux participants d'ajouter ou de retirer des entrées et des sorties avant la signature, pour construire une transaction de façon collaborative.

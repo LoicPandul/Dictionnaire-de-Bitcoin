@@ -1,0 +1,1 @@
+Petites sorties ajoutées aux transactions d'engagement d'un canal Lightning, qui permettent d'augmenter leurs frais après coup. Elles évitent qu'une fermeture unilatérale reste bloquée quand les frais du réseau montent, ce qui pourrait permettre un vol de fonds.

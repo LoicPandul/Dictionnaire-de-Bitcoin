@@ -1,0 +1,1 @@
+Demande faite par un contributeur, sur GitHub ou une plateforme similaire, pour fusionner ses modifications d'une branche à une autre après revue de code, un processus très utilisé dans le développement de Bitcoin Core.

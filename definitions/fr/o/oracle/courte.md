@@ -1,0 +1,1 @@
+Source d'informations tierce qui fournit des données du monde réel utilisables sur Bitcoin, en général sous forme de signature. Elle permet à des contrats comme les DLC de s'exécuter selon le résultat d'un événement extérieur.

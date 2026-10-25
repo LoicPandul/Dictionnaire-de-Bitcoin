@@ -1,0 +1,1 @@
+Ensemble des règles locales par lesquelles un nœud Bitcoin décide quelles transactions non confirmées il accepte dans sa mempool. Elle inclut les règles de standardisation et des règles liées au contexte, comme le taux de frais minimal ou le remplacement RBF.

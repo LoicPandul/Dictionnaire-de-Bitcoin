@@ -1,0 +1,1 @@
+Technique de routage Lightning qui permet à un nœud intermédiaire de rééquilibrer ses canaux au moment où un HTLC arrive, par un paiement circulaire, pour relayer un paiement qu'il aurait sinon refusé faute de liquidité.

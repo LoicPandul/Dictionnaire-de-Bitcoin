@@ -1,0 +1,1 @@
+Mot de passe optionnel qui s'ajoute à la phrase de récupération dans la dérivation des clés d'un portefeuille HD. Sans elle, la phrase seule ne donne pas accès aux fonds, et chaque passphrase différente produit un portefeuille différent.

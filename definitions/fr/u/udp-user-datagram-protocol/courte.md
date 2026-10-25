@@ -1,0 +1,1 @@
+Protocole de communication d'Internet qui envoie des datagrammes sans connexion préalable, plus vite que TCP mais sans garantie de livraison ni d'ordre. Le projet FIBRE l'a utilisé pour accélérer la propagation des blocs Bitcoin.

@@ -1,0 +1,1 @@
+Combinaison de SigHash Flags (`0x82`) par laquelle la signature ne couvre qu'un seul *input* et aucun *output*. Les autres participants peuvent ajouter des *inputs* et modifier librement toutes les sorties.

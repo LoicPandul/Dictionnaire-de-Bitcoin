@@ -1,0 +1,1 @@
+Service de Lightning Labs qui sert de marché de la liquidité sur Lightning : il met en relation les utilisateurs qui ont besoin de liquidité et ceux qui ont des capitaux à placer dans de nouveaux canaux, contre une rémunération en satoshis.

@@ -1,0 +1,1 @@
+Qualifie un appareil physiquement isolé de tout réseau. Un *hardware wallet* air-gapped signe les transactions hors ligne et échange les données par carte microSD ou QR code, pour protéger les clés privées des attaques à distance.

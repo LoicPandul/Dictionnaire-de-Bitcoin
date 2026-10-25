@@ -1,0 +1,1 @@
+Heuristique d'analyse de chaîne qui suppose que toutes les entrées d'une même transaction appartiennent à la même personne. Satoshi Nakamoto la décrit déjà dans le White Paper, et elle reste l'une des principales méthodes des sociétés d'analyse de chaîne.

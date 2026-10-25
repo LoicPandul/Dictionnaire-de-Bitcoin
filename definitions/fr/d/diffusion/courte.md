@@ -1,0 +1,1 @@
+Processus par lequel les nœuds du réseau Bitcoin se transmettent de proche en proche les transactions et les blocs, après les avoir vérifiés. C'est ainsi qu'une transaction parvient aux mineurs, qui peuvent l'inclure dans un bloc.

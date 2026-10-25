@@ -1,0 +1,1 @@
+Service en ligne qui permet de payer en bitcoins, *on-chain* ou par Lightning, des cartes cadeaux, des recharges téléphoniques et des abonnements, pour dépenser ses bitcoins chez des enseignes qui ne les acceptent pas directement.

@@ -1,0 +1,1 @@
+Méthode qui permet à un client léger de vérifier qu'une transaction est incluse dans un bloc sans télécharger la blockchain, en ne gardant que les en-têtes de blocs et en demandant des preuves de Merkle aux nœuds complets.

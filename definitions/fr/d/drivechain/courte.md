@@ -1,0 +1,1 @@
+Type de sidechain, inventé par Paul Sztorc, dans lequel les mineurs de Bitcoin gèrent directement l'ancrage bilatéral des fonds. Sa mise en place passerait par les BIP-0300 et BIP-0301, qui sont controversés.

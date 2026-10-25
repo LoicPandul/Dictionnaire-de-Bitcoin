@@ -1,0 +1,1 @@
+Plateforme d'analyse du Lightning Network, qui fournit aux opérateurs de nœuds des données sur la topologie, les canaux et la liquidité du réseau, et propose Magma, une place de marché de liquidité Lightning.

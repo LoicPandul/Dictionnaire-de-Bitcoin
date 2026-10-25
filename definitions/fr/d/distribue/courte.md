@@ -1,0 +1,1 @@
+Attribut d'un réseau où le contrôle est réparti entre tous les participants, sans autorité centrale, comme dans Bitcoin, où les utilisateurs eux-mêmes tiennent le consensus et vérifient les transactions.

@@ -1,0 +1,1 @@
+Adresse de réception personnalisée qui contient une séquence de caractères choisie par l'utilisateur, obtenue en générant des clés privées par force brute jusqu'à tomber sur une adresse qui la contient.

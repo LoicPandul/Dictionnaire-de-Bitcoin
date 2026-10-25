@@ -1,0 +1,1 @@
+Programme qui exécute automatiquement des clauses entre plusieurs parties dès que des conditions prédéfinies sont remplies, sans intervention d'un tiers de confiance, par exemple pour transférer des bitcoins.

@@ -1,0 +1,1 @@
+Augmentation de la masse monétaire en circulation, qui fait baisser la valeur de chaque unité. Sur Bitcoin, le protocole fixe l'émission de nouveaux bitcoins, divisée par deux tous les 210 000 blocs jusqu'au plafond d'environ 21 millions.

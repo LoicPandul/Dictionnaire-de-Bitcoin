@@ -1,0 +1,1 @@
+Technique qui consiste à cacher une information dans un support d'apparence anodine, comme une image, un texte ou une transaction Bitcoin. Seul le destinataire légitime sait qu'il y a un message et où le chercher.

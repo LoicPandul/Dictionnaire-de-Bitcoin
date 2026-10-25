@@ -1,0 +1,1 @@
+Qui résulte d'un algorithme déterministe lancé depuis une graine, tout en imitant les propriétés d'une suite véritablement aléatoire. Sur Bitcoin, les nombres pseudo-aléatoires servent à produire les clés privées et les graines des portefeuilles HD.

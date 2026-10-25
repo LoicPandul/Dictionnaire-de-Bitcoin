@@ -1,0 +1,1 @@
+Élément d'une transaction qui référence un UTXO existant pour le dépenser. Les *inputs* apportent les fonds qui alimentent les nouvelles sorties, et la différence entre les deux revient au mineur sous forme de frais.

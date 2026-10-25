@@ -1,0 +1,1 @@
+Actifs qu'un expéditeur conserve dans son arbre d'actifs lors d'un transfert Taproot Assets, par opposition aux actifs envoyés. Ils doivent être ré-ancrés dans une nouvelle racine de Merkle après la transaction.

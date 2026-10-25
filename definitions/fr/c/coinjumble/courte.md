@@ -1,0 +1,1 @@
+Logiciel lancé par Chris Belcher en août 2014 pour faire des coinjoins depuis une interface graphique, en échangeant les parties de la transaction de manière asynchrone par des canaux de communication externes. Il n'est plus utilisé.

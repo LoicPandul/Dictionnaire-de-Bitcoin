@@ -1,0 +1,1 @@
+Mesure du temps qui compte les secondes écoulées depuis le 1er janvier 1970 à minuit UTC, utilisée par les systèmes Unix indépendamment des fuseaux horaires. Sur Bitcoin, elle sert à l'horodatage des blocs et aux *timelocks* fondés sur l'heure réelle.

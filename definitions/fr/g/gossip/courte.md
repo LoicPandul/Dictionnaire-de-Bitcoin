@@ -1,0 +1,1 @@
+Protocole de diffusion pair-à-pair dans lequel chaque nœud relaie une information à quelques voisins, qui la relaient à leur tour jusqu'à couvrir tout le réseau. Sur Lightning, il partage l'état des canaux et la topologie du réseau pour faciliter le routage des paiements.

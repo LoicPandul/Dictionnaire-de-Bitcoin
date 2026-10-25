@@ -1,0 +1,1 @@
+Concept proposé par Andrew Poelstra pour exécuter des contrats sans écrire leur logique dans un script sur la blockchain, à l'aide des *adaptor signatures* sur les signatures Schnorr. Les transactions ressemblent à des paiements ordinaires, ce qui réduit leur coût et améliore la confidentialité.

@@ -1,0 +1,1 @@
+Sortie de change d'une *Tx0* de *Whirlpool*, formée des bitcoins qui n'entrent pas dans la pool de coinjoin et restée liée à l'historique de l'utilisateur. Mal dépensée, elle peut compromettre la confidentialité acquise par les coinjoins.

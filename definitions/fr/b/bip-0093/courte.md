@@ -1,0 +1,1 @@
+Proposition qui définit codex32, un format inspiré de bech32 pour sauvegarder la graine d'un portefeuille HD et la découper en parts avec le partage de secret de Shamir. Un seuil de parts suffit à la reconstituer.

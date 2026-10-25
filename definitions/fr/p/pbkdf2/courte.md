@@ -1,0 +1,1 @@
+Fonction de dérivation qui produit une clé cryptographique à partir d'un mot de passe et d'un sel en répétant une fonction de hachage. Dans Bitcoin, elle transforme la phrase de récupération BIP-0039 en graine du portefeuille HD.

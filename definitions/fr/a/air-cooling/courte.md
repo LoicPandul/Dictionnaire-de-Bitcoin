@@ -1,0 +1,1 @@
+Système de refroidissement des machines de minage par ventilateurs, qui aspirent l'air ambiant pour refroidir les puces puis l'expulsent. C'est la méthode la plus répandue et généralement la moins chère à l'achat, mais la moins efficace.

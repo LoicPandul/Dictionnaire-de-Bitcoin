@@ -1,0 +1,1 @@
+Proposition qui tient le registre des valeurs réservées par les bLIP, comme les *feature bits*, les types de messages ou les champs TLV, pour éviter que deux propositions utilisent le même identifiant.

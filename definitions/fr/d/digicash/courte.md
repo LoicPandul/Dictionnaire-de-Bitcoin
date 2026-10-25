@@ -1,0 +1,1 @@
+Entreprise fondée en 1989 par le cryptographe David Chaum, qui a développé eCash, un système de paiement électronique anonyme reposant sur les signatures aveugles. Elle a fait faillite en 1998, mais son approche de la confidentialité en fait un précurseur de Bitcoin.

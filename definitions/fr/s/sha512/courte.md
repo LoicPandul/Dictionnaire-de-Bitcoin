@@ -1,0 +1,1 @@
+Fonction de hachage cryptographique de la famille SHA-2, conçue par la NSA, qui produit un condensat de 512 bits. Absente du protocole Bitcoin, elle intervient dans les portefeuilles, via `HMAC` et `PBKDF2`, dans les calculs des BIP-0032 et BIP-0039.

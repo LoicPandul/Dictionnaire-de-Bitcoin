@@ -1,0 +1,1 @@
+Protocole qui permet à deux utilisateurs d'échanger la propriété de leurs bitcoins sans que l'échange apparaisse sur la blockchain. Des contrats HTLC ou PTLC rendent l'échange atomique : soit chacun reçoit les bitcoins de l'autre, soit chacun garde les siens.

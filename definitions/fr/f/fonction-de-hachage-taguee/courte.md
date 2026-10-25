@@ -1,0 +1,1 @@
+Variante de `SHA256` qui préfixe les données par le hachage d'un tag, pour que des hachages calculés dans des contextes différents ne puissent pas se confondre, introduite par le BIP-0340 et utilisée dans Taproot.

@@ -1,0 +1,1 @@
+Cible de difficulté, plus facile que celle de Bitcoin, qu'une pool de minage assigne à chaque mineur pour qualifier ses *shares*. Ajustée selon la puissance de calcul, elle permet de mesurer le hashrate de chacun et de répartir les récompenses.

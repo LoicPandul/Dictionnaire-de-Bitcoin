@@ -1,0 +1,1 @@
+Bloc qui sécurise une transaction : le bloc qui l'inclut lui donne sa première confirmation, puis chaque bloc miné par-dessus en ajoute une. Plus ce nombre grandit, plus le risque qu'une réorganisation annule la transaction diminue.

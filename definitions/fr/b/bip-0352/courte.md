@@ -1,0 +1,1 @@
+Proposition qui introduit les *Silent Payments* : le destinataire publie une adresse statique, et chaque payeur en dérive une adresse unique, sans interaction ni lien visible sur la blockchain entre les paiements.
