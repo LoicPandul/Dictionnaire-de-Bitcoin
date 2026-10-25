@@ -1,183 +1,90 @@
 #!/usr/bin/env python3
 """
-Validation des métadonnées YAML des définitions.
-Vérifie que title, english_term et french_term sont en MAJUSCULES.
-Vérifie que toutes les cross-references pointent vers des définitions existantes.
+Validation des métadonnées des définitions (metadata.yaml).
+
+`validate` ne fait que lire et retourne la liste des erreurs. `fix_cross_references`
+retire les renvois vers des UUID inconnus : c'est la seule correction automatique, et
+elle ne s'exécute que sur demande (`python3 scripts/main.py fix`).
 """
 
 import re
-import yaml
+from collections import Counter
+from typing import List
+
 from ..core.dictionary import Dictionary
-from ..config import TEMPLATES_DIR
+
+UUID_RE = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
+SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+IMAGE_RE = re.compile(r"!\[[^\]]*\]\(\./assets/([^)\s]+)\)")
 
 
-def validate(dictionary: Dictionary) -> bool:
-    """
-    Vérifie les métadonnées de toutes les définitions :
-    - Casse des champs title, english_term, french_term
-    - Validité des catégories (doivent exister dans categories.yaml)
-    - Validité des cross-references (UUIDs existants)
+def validate(dictionary: Dictionary) -> List[str]:
+    errors: List[str] = list(dictionary.warnings)
+    taxonomy = dictionary.taxonomy
+    if taxonomy:
+        errors += taxonomy.problems()
 
-    Returns:
-        True si tout est OK, False si des problèmes ont été trouvés.
-    """
-    casse_ok = _validate_casse(dictionary)
-    terms_ok = _validate_terms(dictionary)
-    categories_ok = _validate_categories(dictionary)
-    crossref_ok = _validate_cross_references(dictionary)
-    return casse_ok and terms_ok and categories_ok and crossref_ok
+    uuids = Counter(d.uuid for d in dictionary)
+    slugs = Counter(d.slug for d in dictionary)
 
+    for d in dictionary:
+        where = f"[{d.slug or d.path.name}]"
+        if not UUID_RE.match(d.uuid or ""):
+            errors.append(f"{where} uuid invalide : {d.uuid!r}")
+        elif uuids[d.uuid] > 1:
+            errors.append(f"{where} uuid en double : {d.uuid}")
+        if d.slug != d.path.name:
+            errors.append(f"{where} le slug ne correspond pas au dossier « {d.path.name} »")
+        if not SLUG_RE.match(d.slug or ""):
+            errors.append(f"{where} slug invalide")
+        elif slugs[d.slug] > 1:
+            errors.append(f"{where} slug en double")
+        if d.path.parent.name != (d.slug or "?")[0]:
+            errors.append(f"{where} rangé dans « {d.path.parent.name}/ » au lieu de « {d.slug[:1]}/ »")
 
-def _validate_casse(dictionary: Dictionary) -> bool:
-    """Vérifie que title, english_term et french_term sont en MAJUSCULES."""
-    print("Vérification des métadonnées (casse)...")
+        for field_name in ("title", "english_term", "french_term"):
+            value = getattr(d, field_name)
+            if value and any(c.islower() for c in value):
+                errors.append(f"{where} {field_name} doit être en MAJUSCULES : « {value} »")
+        if not d.title:
+            errors.append(f"{where} title manquant")
+        if d.english_term and d.french_term:
+            errors.append(f"{where} english_term et french_term ne peuvent pas coexister")
 
-    warnings = []
+        if not d.category:
+            errors.append(f"{where} catégorie manquante")
+        elif taxonomy and d.category not in taxonomy.listed:
+            errors.append(f"{where} catégorie inconnue : « {d.category} »")
 
-    for definition in dictionary:
-        if definition.title and _has_lowercase(definition.title):
-            warnings.append(
-                f"[{definition.slug}] title contient des minuscules: \"{definition.title}\""
-            )
+        for ref in d.cross_references:
+            if dictionary.get_by_uuid(ref) is None:
+                errors.append(f"{where} renvoi vers un UUID inconnu : {ref}")
+            elif ref == d.uuid:
+                errors.append(f"{where} renvoi vers elle-même")
 
-        if definition.english_term and _has_lowercase(definition.english_term):
-            warnings.append(
-                f"[{definition.slug}] english_term contient des minuscules: \"{definition.english_term}\""
-            )
-
-        if definition.french_term and _has_lowercase(definition.french_term):
-            warnings.append(
-                f"[{definition.slug}] french_term contient des minuscules: \"{definition.french_term}\""
-            )
-
-    if warnings:
-        print(f"\n[WARNING] {len(warnings)} problème(s) de casse trouvé(s):")
-        for w in warnings:
-            print(f"  ⚠ {w}")
-        return False
-
-    print("[OK] Métadonnées validées (casse)")
-    return True
-
-
-def _validate_terms(dictionary: Dictionary) -> bool:
-    """Vérifie qu'une définition n'a pas à la fois english_term et french_term."""
-    print("Vérification des termes (english_term / french_term)...")
-
-    errors = []
-
-    for definition in dictionary:
-        if definition.english_term and definition.french_term:
-            errors.append(
-                f"[{definition.slug}] possède à la fois english_term (\"{definition.english_term}\") "
-                f"et french_term (\"{definition.french_term}\")"
-            )
-
-    if errors:
-        print(f"\n[ERREUR] {len(errors)} définition(s) avec english_term ET french_term:")
-        for e in errors:
-            print(f"  ✗ {e}")
-        return False
-
-    print("[OK] Termes validés (pas de doublon english/french)")
-    return True
+        declared = {a.get("filename") for a in d.assets if isinstance(a, dict)}
+        used = set(IMAGE_RE.findall(d.content))
+        for name in sorted(used - declared):
+            errors.append(f"{where} image utilisée mais absente de assets: dans metadata.yaml : {name}")
+        for name in sorted(declared):
+            if not (d.path / "assets" / name).exists():
+                errors.append(f"{where} image déclarée introuvable : assets/{name}")
+    return errors
 
 
-def _validate_categories(dictionary: Dictionary) -> bool:
-    """Vérifie que chaque définition a une catégorie valide définie dans categories.yaml."""
-    print("Vérification des catégories...")
-
-    # Charger les catégories autorisées
-    categories_path = TEMPLATES_DIR / "categories.yaml"
-    with open(categories_path, "r", encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-    valid_categories = set(data.get("categories", []))
-
-    errors = []
-
-    for definition in dictionary:
-        cat = definition.category
-        if not cat:
-            errors.append(f"[{definition.slug}] catégorie manquante")
-        elif cat not in valid_categories:
-            errors.append(
-                f"[{definition.slug}] catégorie invalide: \"{cat}\""
-            )
-
-    if errors:
-        print(f"\n[ERREUR] {len(errors)} problème(s) de catégorie:")
-        for e in errors:
-            print(f"  ✗ {e}")
-        print(f"\nCatégories autorisées: {', '.join(sorted(valid_categories))}")
-        return False
-
-    print("[OK] Catégories validées")
-    return True
-
-
-def _validate_cross_references(dictionary: Dictionary) -> bool:
-    """
-    Vérifie que chaque UUID dans cross_references correspond
-    à une définition existante dans le dictionnaire.
-    Supprime automatiquement les cross-references invalides des fichiers YAML.
-
-    Returns:
-        True (les cross-references invalides sont supprimées automatiquement).
-    """
-    print("Vérification des cross-references...")
-
-    removed_count = 0
-
-    for definition in dictionary:
-        invalid_uuids = [
-            ref_uuid for ref_uuid in definition.cross_references
-            if dictionary.get_by_uuid(ref_uuid) is None
-        ]
-
-        if invalid_uuids:
-            for uuid in invalid_uuids:
-                print(
-                    f"  ⚠ [{definition.slug}] cross-reference supprimée: "
-                    f"UUID \"{uuid}\" ne correspond à aucune définition"
-                )
-                definition.cross_references.remove(uuid)
-                removed_count += 1
-
-            _save_metadata(definition)
-
-    if removed_count:
-        print(f"\n[AUTO-FIX] {removed_count} cross-reference(s) invalide(s) supprimée(s)")
-    else:
-        print("[OK] Cross-references validées")
-
-    return True
-
-
-def _save_metadata(definition) -> None:
-    """Sauvegarde uniquement les cross_references dans le fichier metadata.yaml.
-
-    Édite le fichier par manipulation textuelle pour ne pas altérer
-    le reste du fichier (guillemets, ordre des clés, formatage).
-    """
-    metadata_path = definition.path / "metadata.yaml"
-
-    with open(metadata_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    # Supprimer le bloc cross_references existant (clé + lignes indentées)
-    content = re.sub(r'cross_references:\s*\n(?:\s+-\s+.*\n)*', '', content)
-
-    # Reconstruire le bloc si des références restent
-    if definition.cross_references:
-        lines = "cross_references:\n"
-        for ref in definition.cross_references:
-            lines += f'  - "{ref}"\n'
-        content = content.rstrip('\n') + '\n' + lines
-
-    with open(metadata_path, "w", encoding="utf-8") as f:
-        f.write(content)
-
-
-def _has_lowercase(text: str) -> bool:
-    """Vérifie si un texte contient des lettres minuscules."""
-    return any(c.islower() for c in text)
+def fix_cross_references(dictionary: Dictionary) -> int:
+    """Retire les renvois vers des UUID inconnus. Retourne le nombre de renvois retirés."""
+    removed = 0
+    for d in dictionary:
+        invalid = [r for r in d.cross_references if dictionary.get_by_uuid(r) is None]
+        if not invalid:
+            continue
+        path = d.path / "metadata.yaml"
+        text = path.read_text(encoding="utf-8")
+        for ref in invalid:
+            text = re.sub(rf'^\s+-\s+"?{re.escape(ref)}"?\s*\n', "", text, flags=re.MULTILINE)
+            d.cross_references.remove(ref)
+            removed += 1
+            print(f"  [{d.slug}] renvoi retiré : {ref}")
+        path.write_text(text, encoding="utf-8")
+    return removed

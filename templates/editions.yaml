@@ -1,0 +1,87 @@
+# Éditions du Dictionnaire de Bitcoin générées depuis la même source.
+#
+# Chaque édition est une suite de sections, imprimées dans cet ordre :
+#   - type: dictionary  → une partie de templates/parts.yaml (technique, ecosysteme,
+#                         personnes), en version « developpee » (definition.md) ou
+#                         « courte » (courte.md) ;
+#   - type: chronology  → chronologie/fr/*.yaml ;
+#   - type: specs       → une ou plusieurs séries de specifications/ ; detail: true
+#                         imprime sous le résumé la définition développée liée.
+#
+# Génération : python3 scripts/main.py build --edition <id> --format pdf,pdf-relie,epub
+
+editions:
+  complete:
+    title: "Dictionnaire de Bitcoin"
+    subtitle: "Tout le vocabulaire technique de Bitcoin"
+    file: "dictionnaire-de-bitcoin"
+    sections:
+      - type: dictionary
+        part: technique
+        version: developpee
+      - type: dictionary
+        part: ecosysteme
+        version: developpee
+      - type: dictionary
+        part: personnes
+        version: developpee
+      - type: chronology
+        title: "Chronologie"
+        intro: >
+          Les événements marquants de Bitcoin et de ce qui l'a précédé, dans l'ordre où
+          ils se sont produits. Chaque date a été recoupée par au moins deux sources
+          indépendantes.
+      - type: specs
+        id: bip
+        series: [bip]
+        title: "BIP"
+        detail: true
+        intro: >
+          Les BIP (Bitcoin Improvement Proposals) sont les documents qui proposent et
+          décrivent les évolutions de Bitcoin. Chaque entrée donne son numéro, son titre
+          d'origine, son statut et un résumé.
+      - type: specs
+        id: bolt
+        series: [bolt, blip]
+        title: "BOLT et bLIP"
+        detail: true
+        intro: >
+          Les BOLT (Basis of Lightning Technology) forment la spécification du Lightning
+          Network. Les bLIP (Bitcoin Lightning Improvement Proposals) décrivent les
+          fonctionnalités optionnelles proposées par-dessus.
+      - type: specs
+        id: nip
+        series: [nip]
+        title: "NIP"
+        intro: >
+          Les NIP (Nostr Implementation Possibilities) décrivent le protocole Nostr et ses
+          extensions : format des événements, relais, clés, messages privés, paiements.
+
+  essentiel:
+    title: "Dictionnaire de Bitcoin"
+    subtitle: "L'essentiel en définitions courtes"
+    file: "dictionnaire-de-bitcoin-essentiel"
+    sections:
+      - type: dictionary
+        part: technique
+        version: courte
+      - type: dictionary
+        part: ecosysteme
+        version: courte
+      - type: dictionary
+        part: personnes
+        version: courte
+      - type: chronology
+        title: "Chronologie"
+      - type: specs
+        id: bip
+        series: [bip]
+        title: "BIP"
+      - type: specs
+        id: bolt
+        series: [bolt, blip]
+        title: "BOLT et bLIP"
+      - type: specs
+        id: nip
+        series: [nip]
+        title: "NIP"

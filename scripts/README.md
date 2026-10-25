@@ -1,32 +1,53 @@
 # Scripts et génération
 
-Le projet utilise des scripts Python pour générer le PDF et maintenir les fichiers d'index et de statistiques.
+Les scripts Python valident le contenu du dépôt et génèrent le livre : PDF broché, PDF relié et
+EPUB, pour deux éditions décrites dans `templates/editions.yaml` (`complete` et `essentiel`).
 
 ## Prérequis
 
-- Python 3.8+
-- XeLaTeX (pour la génération PDF)
+- Python 3.10 ou plus récent, et les dépendances : `pip install -r scripts/requirements.txt`
+- Un moteur LaTeX pour les PDF, au choix :
+  - `xelatex` (TeX Live ou MiKTeX), utilisé en priorité s'il est installé ;
+  - [Tectonic](https://tectonic-typesetting.github.io/), un moteur XeTeX autonome qui s'installe
+    sans droits administrateur : déposez le binaire dans `.tools/bin/tectonic` (dossier ignoré par git).
+- [epubcheck](https://github.com/w3c/epubcheck) pour valider l'EPUB (Java) : décompressez l'archive
+  dans `.tools/` (`.tools/epubcheck-5.4.0/epubcheck.jar`), ou installez la commande `epubcheck`.
 
-## Installation des dépendances
+`python3 scripts/main.py info` indique les outils trouvés.
+
+## Commandes
 
 ```bash
-pip install -r requirements.txt
+python3 scripts/main.py check                     # tout valider, sans rien modifier
+python3 scripts/main.py fix                       # corrections automatiques (listes, renvois invalides)
+python3 scripts/main.py build                     # toutes les éditions, tous les formats
+python3 scripts/main.py build --edition complete --format pdf,pdf-relie,epub
+python3 scripts/main.py index                     # INDEX.md
+python3 scripts/main.py stats                     # stats.md et badge du README
 ```
 
-## Utilisation
+Sans argument, `python3 scripts/main.py` ouvre un menu.
 
-Exécutez le script principal et choisissez une option dans le menu :
+`build` lance d'abord `check` et s'arrête en cas d'erreur (`--force` pour passer outre). Les
+fichiers sortent dans `build/<édition>/` (ignoré par git), avec les sources LaTeX dans
+`build/<édition>/tex-*/` et le rapport d'epubcheck à côté de chaque EPUB.
 
-```bash
-python main.py
-```
+## Ce que vérifie `check`
 
-Options disponibles :
-- **0** : Build complet (PDF, INDEX, stats)
-- **1** : Générer le PDF
-- **2** : Mettre à jour index.md
-- **3** : Générer les statistiques
-- **4** : Vérifier le markdown
-- **5** : Corriger le markdown (auto-fix)
-- **6** : Afficher les informations
-- **7** : Quitter
+- **Métadonnées** : UUID et slugs uniques, dossier = slug, titres en majuscules, catégorie connue,
+  renvois vers des UUID existants, images déclarées et présentes.
+- **Versions courtes** : chaque `definition.md` a sa `courte.md` (et inversement), qui tient en une
+  ou deux phrases et 45 mots au plus, sans liste, image, formule, lien, gras ni titre.
+- **Markdown** : listes et citations au format du dépôt.
+- **Spécifications** (`specifications/*.yaml`) : champs obligatoires, résumés de 60 mots au plus,
+  liens vers des entrées existantes.
+- **Chronologie** (`chronologie/fr/*.yaml`) : dates ISO, au moins deux sources par événement,
+  renvois existants, un fichier par année.
+
+## Organisation
+
+| Dossier | Rôle |
+|---|---|
+| `core/` | modèle : définitions, taxonomie (parties et catégories), spécifications, chronologie, livre |
+| `generators/` | PDF (`pdf_generator.py`, conversion markdown dans `latex.py`), EPUB, INDEX.md, stats.md |
+| `validators/` | métadonnées, versions courtes, markdown, spécifications et chronologie |

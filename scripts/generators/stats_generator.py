@@ -20,7 +20,10 @@ def generate(dictionary: Dictionary, output_path: Path = None, update_readme: bo
 
     print(f"Génération des statistiques: {output_path}")
 
-    stats = dictionary.stats()
+    stats = {
+        "total_definitions": dictionary.total_count,
+        "definitions_per_letter": {l: len(dictionary.get_by_letter(l)) for l in dictionary.letters()},
+    }
 
     lines = []
 
@@ -65,18 +68,21 @@ def generate(dictionary: Dictionary, output_path: Path = None, update_readme: bo
 
     lines.append("")
 
-    # Catégories
-    lines.append("## Catégories")
+    # Parties et catégories
+    lines.append("## Parties et catégories")
     lines.append("")
+    taxonomy = dictionary.taxonomy
+    category_counts = Counter(d.category for d in dictionary if d.category)
+    for part in taxonomy.parts:
+        total = sum(category_counts[c] for c in part.categories)
+        lines.append(f"### {part.title} : {total}")
+        lines.append("")
+        for category in sorted(part.categories, key=lambda c: -category_counts[c]):
+            lines.append(f"- **{category}** : {category_counts[category]}")
+        lines.append("")
 
-    category_counts = Counter()
-    for definition in dictionary:
-        if definition.category:
-            category_counts[definition.category] += 1
-
-    for category, count in category_counts.most_common():
-        lines.append(f"- **{category}** : {count}")
-
+    short = sum(1 for d in dictionary if d.short)
+    lines.append(f"Versions courtes : {short} sur {stats['total_definitions']}.")
     lines.append("")
 
     # Termes les plus fréquents dans le contenu
@@ -155,7 +161,7 @@ def _update_readme_badge(total_count: int):
     content = README_FILE.read_text(encoding='utf-8')
 
     # Chercher et remplacer le badge
-    pattern = r'(Nombre%20de%20définitions-)\d+(-black)'
+    pattern = r'(Nombre%20de%20d(?:%C3%A9|é)finitions-)\d+(-)'
     replacement = f'\\g<1>{total_count}\\g<2>'
 
     new_content = re.sub(pattern, replacement, content)

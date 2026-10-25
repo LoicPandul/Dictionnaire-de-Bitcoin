@@ -1,4 +1,7 @@
 # Dictionnaire de Bitcoin - Dépendances Python
 
-# Parsing YAML pour les métadonnées
+# Métadonnées YAML
 PyYAML>=6.0
+# EPUB : conversion du markdown et des formules LaTeX en MathML
+Markdown>=3.5
+latex2mathml>=3.77
