@@ -176,7 +176,7 @@ def main() -> int:
     for name, (_, help_text) in COMMANDS.items():
         p = sub.add_parser(name, help=help_text)
         if name == "build":
-            p.add_argument("--edition", default="all", help="complete, essentiel ou all (défaut)")
+            p.add_argument("--edition", default="all", help="éditions de templates/editions.yaml séparées par des virgules (complete, essentiel, tome-1, tome-2) ou all (défaut)")
             p.add_argument("--format", default="all", help="pdf, pdf-relie, epub (séparés par des virgules) ou all")
             p.add_argument("--output-dir", help="dossier de sortie (défaut : build/)")
             p.add_argument("--force", action="store_true", help="générer même si la validation échoue")
