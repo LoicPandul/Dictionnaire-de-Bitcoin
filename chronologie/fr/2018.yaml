@@ -1,0 +1,305 @@
+# Chronologie de Bitcoin : 2018.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2018-01"
+    title: "Publication de MuSig"
+    text: "Gregory Maxwell, Andrew Poelstra, Yannick Seurin et Pieter Wuille publient MuSig, un schéma de multisignature fondé sur les signatures de Schnorr. Plusieurs signataires y produisent une seule signature, vérifiable contre une clé publique agrégée : un multisig coopératif ressemble alors à une dépense à clé unique."
+    related: ["musig", "schnorr-protocole"]
+    sources:
+      - "https://eprint.iacr.org/2018/068"
+      - "https://blog.blockstream.com/en-musig-key-aggregation-schnorr-signatures/"
+      - "https://bitcoinops.org/en/newsletters/2018/12/28/"
+
+  - date: "2018-01-16"
+    title: "Blockstream ouvre une boutique payable en Lightning"
+    text: "Blockstream publie Lightning Charge, un système de paiement qui expose c-lightning par une API REST, et ouvre le Blockstream Store, où l'on achète autocollants et t-shirts en Lightning sur le réseau principal. Deux jours plus tard, Christian Decker affirme que le nombre de participants au réseau a doublé."
+    related: ["blockstream", "lightning-network", "cln-c-lightning"]
+    sources:
+      - "https://blog.blockstream.com/en-lightning-charge/"
+      - "https://bitcoinmagazine.com/technical/blockstream-releases-lightning-charge-launches-test-e-commerce-store"
+
+  - date: "2018-01-23"
+    title: "Gregory Maxwell propose Taproot"
+    text: "Gregory Maxwell décrit Taproot sur la liste bitcoin-dev. Une sortie engage une clé publique qui peut dépenser seule, ou révéler un script caché si les participants ne coopèrent pas. Une dépense coopérative ressemble alors à un simple paiement à une clé."
+    related: ["taproot", "mast"]
+    sources:
+      - "https://web.archive.org/web/20200501222330/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html"
+      - "https://bitcoinops.org/en/topics/taproot/"
+      - "https://bitcoinops.org/en/newsletters/2018/12/28/"
+
+  - date: "2018-01-26"
+    title: "Piratage de Coincheck"
+    text: "La plateforme japonaise Coincheck annonce le vol d'environ 523 millions de NEM, conservés dans un portefeuille chaud, soit 58 milliards de yens (environ 530 millions de dollars). Le montant dépasse les 48 milliards de yens de bitcoins perdus par Mt. Gox en 2014."
+    related: ["portefeuille-chaud"]
+    sources:
+      - "https://fortune.com/2018/01/29/coincheck-japan-nem-hack/"
+      - "https://www.darkreading.com/cyberattacks-data-breaches/hack-costs-coincheck-cryptocurrency-exchange-530-million"
+
+  - date: "2018-02-05"
+    title: "Gregory Maxwell propose Graftroot"
+    text: "Sur la liste bitcoin-dev, Gregory Maxwell décrit Graftroot, une variante de Taproot. Les signataires d'une sortie peuvent à tout moment déléguer leur droit de dépense à un script de substitution en le signant, sans transaction sur la chaîne. Une délégation reste invisible tant qu'elle ne sert pas."
+    related: ["graftroot", "taproot"]
+    sources:
+      - "https://web.archive.org/web/2019/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-February/015700.html"
+      - "https://bitcoinops.org/en/newsletters/2018/12/28/"
+
+  - date: "2018-02-06"
+    title: "Le bitcoin passe sous 6 000 dollars"
+    text: "Le cours du bitcoin perd encore 13 % et tombe jusqu'à 5 920 dollars sur Bitstamp, son plus bas depuis la mi-novembre 2017. Il a perdu plus de la moitié de sa valeur depuis le 1er janvier, après un pic proche de 20 000 dollars en décembre."
+    related: ["bear-market"]
+    sources:
+      - "https://www.business-standard.com/article/reuters/bitcoin-slides-below-6-000-half-its-value-lost-in-2018-118020600666_1.html"
+      - "https://www.coindesk.com/markets/2018/02/06/bitcoin-slumps-to-3-month-low-below-6k"
+
+  - date: "2018-02-14"
+    title: "Plainte Kleiman contre Craig Wright"
+    text: "Ira Kleiman, pour la succession de son frère Dave, poursuit Craig Wright devant le tribunal fédéral du district sud de Floride. Il l'accuse de s'être approprié les actifs de Dave, dont une part des plus de 1 100 000 bitcoins que les deux hommes auraient contrôlés."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://www.courtlistener.com/docket/6309656/kleiman-v-wright/"
+      - "https://ia801906.us.archive.org/23/items/gov.uscourts.flsd.521536/gov.uscourts.flsd.521536.1.0.pdf"
+      - "https://cointelegraph.com/news/self-proclaimed-satoshi-craig-wright-sued-for-10-billion"
+
+  - date: "2018-02-25"
+    title: "Laszlo Hanyecz paie des pizzas avec Lightning"
+    text: "Huit ans après ses pizzas à 10 000 BTC, Laszlo Hanyecz raconte sur la liste lightning-dev avoir payé deux pizzas par le Lightning Network. Un ami londonien accepte le paiement, 0,00649 BTC, et fait livrer les pizzas par un commerce proche de chez lui."
+    related: ["lightning-network", "pizza-day"]
+    sources:
+      - "https://web.archive.org/web/20201109025458/https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/001044.html"
+      - "https://fortune.com/2018/02/26/laszlo-hanyecz-pizza-bitcoin/"
+
+  - date: "2018-02-26"
+    title: "Sortie de Bitcoin Core 0.16.0"
+    text: "Bitcoin Core 0.16.0 est la première version dont le portefeuille gère SegWit par défaut. Elle reçoit sur des adresses P2SH-SegWit par défaut et accepte les adresses `bc1` en Bech32 (BIP-0173). Les nœuds élagués peuvent signaler qu'ils servent les blocs récents (BIP-0159)."
+    related: ["bitcoin-core", "segwit", "p2sh-p2wpkh", "bech32-et-bech32m", "bip-0173", "bip-0159"]
+    sources:
+      - "https://bitcoincore.org/en/2018/02/26/release-0.16.0/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.16.0"
+
+  - date: "2018-03-15"
+    title: "lnd 0.4-beta, première version pour le réseau principal"
+    text: "Lightning Labs publie lnd 0.4-beta, première version de son implémentation de Lightning qui peut tourner sur le réseau principal de Bitcoin. L'équipe annonce en même temps une levée de 2,5 millions de dollars, avec Jack Dorsey et Charlie Lee parmi les investisseurs."
+    related: ["lnd", "lightning-labs", "lightning-network"]
+    sources:
+      - "https://lightning.engineering/posts/2018-03-15-lnd-beta/"
+      - "https://bitcoinmagazine.com/technical/lightnings-first-implementation-now-beta-developers-raise-25m"
+
+  - date: "2018-04-04"
+    title: "Eclair Wallet, premier portefeuille Lightning mobile"
+    text: "La société française ACINQ publie Eclair Wallet sur Google Play, premier portefeuille mobile capable de payer en Lightning sur le réseau principal. L'application Android sert aussi de portefeuille Bitcoin classique."
+    related: ["eclair", "acinq", "lightning-network"]
+    sources:
+      - "https://bitcoinmagazine.com/technical/first-lightning-network-wallet-app-now-available-google-play"
+      - "https://bitcoinist.com/first-lightning-network-android-app/"
+
+  - date: "2018-04-06"
+    title: "La banque centrale indienne coupe les banques des cryptomonnaies"
+    text: "La Reserve Bank of India interdit, avec effet immédiat, aux entités qu'elle régule de traiter des monnaies virtuelles ou de fournir des services à ceux qui en échangent : comptes, virements, prêts. Celles qui servent déjà ces clients ont trois mois pour rompre la relation."
+    sources:
+      - "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11243"
+      - "https://www.scconline.com/blog/post/2018/04/09/rbi-prohibits-dealing-in-virtual-currencies-by-regulated-entities/"
+
+  - date: "2018-04-26"
+    title: "Le Conseil d'État fixe l'imposition des bitcoins"
+    text: "Le Conseil d'État juge que les gains d'un particulier qui cède occasionnellement des bitcoins relèvent des plus-values sur biens meubles (article 150 UA du CGI), taxées à 19 % plus les prélèvements sociaux, et non des bénéfices non commerciaux comme le soutenait l'administration fiscale."
+    sources:
+      - "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2018-04-26/417809"
+      - "https://www.actu-juridique.fr/fiscalite/fiscal-finances/bitcoins-le-conseil-detat-precise-le-regime-dimposition-a-limpot-sur-le-revenu/"
+
+  - date: "2018-04-30"
+    title: "Publication d'eltoo et de SIGHASH_NOINPUT"
+    text: "Christian Decker, Rusty Russell et Olaoluwa Osuntokun publient eltoo, un mécanisme de mise à jour des canaux Lightning où un état récent remplace un état ancien publié, sans pénalité. Le même jour, Decker propose le drapeau `SIGHASH_NOINPUT` dont eltoo a besoin, futur BIP-0118."
+    related: ["eltoo", "bip-0118", "sighash-anyprevout", "lightning-network"]
+    sources:
+      - "https://blog.blockstream.com/en-eltoo-next-lightning/"
+      - "https://web.archive.org/web/20210820211212/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-April/015908.html"
+      - "https://bitcoinops.org/en/topics/eltoo/"
+
+  - date: "2018-05-30"
+    title: "Adoption de la cinquième directive antiblanchiment"
+    text: "Le Parlement européen et le Conseil adoptent la directive (UE) 2018/843. Elle soumet les plateformes d'échange entre monnaies virtuelles et monnaies fiat, ainsi que les fournisseurs de portefeuilles de conservation, aux obligations antiblanchiment, dont l'identification des clients. Les États ont jusqu'au 10 janvier 2020 pour la transposer."
+    related: ["aml-anti-money-laundering", "kyc-know-your-customer"]
+    sources:
+      - "https://web.archive.org/web/2020/https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L0843"
+      - "https://www.legislation.gov.uk/eudr/2018/843/contents"
+
+  - date: "2018-06-22"
+    title: "Mt. Gox passe en réhabilitation civile"
+    text: "Le tribunal de district de Tokyo ouvre une procédure de réhabilitation civile pour MtGox Co., Ltd. et suspend la faillite. Le syndic Nobuaki Kobayashi reste en charge des actifs, près de 170 000 BTC et autant de BCH selon Fortune, qui pourraient être rendus aux créanciers en bitcoins."
+    related: ["mtgox"]
+    sources:
+      - "https://www.mtgox.com/img/pdf/20180622_announcement_en.pdf"
+      - "https://fortune.com/2018/06/22/bitcoin-price-mt-gox-trustee/"
+      - "https://bitcoinmagazine.com/culture/mt-gox-creditors-be-reimbursed-bitcoin-under-civil-rehabilitation"
+
+  - date: "2018-06-25"
+    title: "Sortie de c-lightning 0.6"
+    text: "Blockstream publie la version 0.6 de c-lightning, son implémentation de Lightning. Elle consomme moins de ressources, intègre un portefeuille et gère les connexions par Tor."
+    related: ["cln-c-lightning", "blockstream", "tor-the-onion-router"]
+    sources:
+      - "https://github.com/ElementsProject/lightning/releases/tag/v0.6"
+      - "https://www.cryptoninjas.net/2018/06/25/blockstream-releases-c-lightning-0-6-for-bitcoin-lightning-network/"
+      - "https://bitcoinops.org/en/newsletters/2018/12/28/"
+
+  - date: "2018-06-28"
+    title: "La Cour suprême refuse d'examiner l'appel de Ross Ulbricht"
+    text: "La Cour suprême des États-Unis rejette la requête de Ross Ulbricht, fondateur de Silk Road, condamné à la prison à vie. Sa condamnation et sa peine deviennent définitives."
+    related: ["silk-road"]
+    sources:
+      - "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/17-950.html"
+      - "https://bitcoinmagazine.com/culture/ross-ulbricht-denied-prison-sentence-review-supreme-court"
+
+  - date: "2018-07-02"
+    title: "Publication des clés privées du système d'alerte"
+    text: "Bryan Bishop et Andrew Chow publient sur bitcoin-dev les clés privées qui signaient les messages d'alerte du réseau, système retiré de Bitcoin Core. Ils détaillent aussi les failles de déni de service qu'elles permettaient contre les nœuds en version 0.12 ou antérieure."
+    related: ["alert-system", "bitcoin-core"]
+    sources:
+      - "https://web.archive.org/web/2019/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016189.html"
+      - "https://bitcoin.org/en/posts/alert-key-and-vulnerabilities-disclosure"
+      - "https://www.coindesk.com/markets/2018/07/08/what-happened-when-secret-bitcoin-keys-went-public"
+
+  - date: "2018-07-06"
+    title: "Pieter Wuille propose un BIP pour les signatures de Schnorr"
+    text: "Pieter Wuille soumet à la liste bitcoin-dev un projet de BIP pour des signatures de Schnorr de 64 octets sur la courbe secp256k1. Le texte fixe le format des signatures sans proposer encore de soft fork. Il aboutira au BIP-0340."
+    related: ["schnorr-protocole", "bip-0340"]
+    sources:
+      - "https://web.archive.org/web/20191105135032/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016203.html"
+      - "https://bitcoinops.org/en/newsletters/2018/07/10/"
+
+  - date: "2018-07-20"
+    title: "Lancement de Bitcoin Optech"
+    text: "John Newbery et James O'Beirne, de Chaincode Labs, annoncent Bitcoin Optech, un groupe qui aide les entreprises à adopter les techniques d'économie d'espace dans les blocs, comme SegWit et le regroupement de paiements. Sa lettre hebdomadaire paraît depuis le 26 juin."
+    related: ["bitcoin-optech", "chaincode-labs"]
+    sources:
+      - "https://bitcoinops.org/en/announcing-bitcoin-optech/"
+      - "https://bitcoinmagazine.com/culture/chaincode-devs-google-alumni-create-industry-group-help-bitcoin-scale"
+      - "https://bitcoinops.org/en/newsletters/2018/06/26/"
+
+  - date: "2018-07-26"
+    title: "La SEC rejette l'ETF des Winklevoss"
+    text: "Par trois voix contre une, la SEC refuse la cotation du Winklevoss Bitcoin Trust sur la Bourse BZX, en invoquant des risques de manipulation du marché. La commissaire Hester Peirce publie une opinion dissidente."
+    related: ["etf"]
+    sources:
+      - "https://fortune.com/2018/07/26/bitcoin-etf-sec/"
+      - "https://bitcoinmagazine.com/markets/winklevoss-bitcoin-etf-proposal-denied-us-sec"
+
+  - date: "2018-08-03"
+    title: "Intercontinental Exchange annonce Bakkt"
+    text: "Intercontinental Exchange, maison mère de la Bourse de New York, annonce Bakkt, une plateforme pour les actifs numériques construite avec Microsoft. Elle prévoit pour novembre 2018 un contrat à terme sur le bitcoin réglé en bitcoins, avec un service de conservation."
+    related: ["custody"]
+    sources:
+      - "https://ir.theice.com/press/news-details/2018/Intercontinental-Exchange-Announces-Bakkt-a-Global-Platform-and-Ecosystem-for-Digital-Assets/default.aspx"
+      - "https://forklog.com/en/nyse-operator-to-launch-new-global-digital-assets-platform/"
+
+  - date: "2018-08-22"
+    title: "La SEC rejette neuf ETF bitcoin"
+    text: "Dans trois décisions, la SEC rejette neuf projets d'ETF adossés aux contrats à terme sur le bitcoin, déposés par ProShares, Direxion et GraniteShares. Elle reprend le motif opposé aux Winklevoss : des protections insuffisantes contre la fraude et la manipulation."
+    related: ["etf"]
+    sources:
+      - "https://www.coindesk.com/markets/2018/08/22/sec-rejects-9-bitcoin-etf-proposals"
+      - "https://centerforfinancialstability.org/wp/2018/08/29/sec-rejects-another-nine-proposed-bitcoin-etfs/"
+
+  - date: "2018-09-14"
+    title: "Piratage de Zaif"
+    text: "Des pirates vident les portefeuilles chauds de la plateforme japonaise Zaif entre 17 h et 19 h, heure locale. Tech Bureau, qui l'exploite, chiffre le vol à 5 966,1 BTC, plus des Monacoins et des BCH, soit environ 7 milliards de yens."
+    related: ["portefeuille-chaud"]
+    sources:
+      - "https://bitcoinmagazine.com/business/another-cryptocurrency-exchange-hack-hits-japan"
+      - "https://www.business-standard.com/article/reuters/japan-s-hacked-crypto-exchange-says-62-million-worth-of-coins-stolen-118092100742_1.html"
+
+  - date: "2018-09-18"
+    title: "Bitcoin Core 0.16.3 corrige CVE-2018-17144"
+    text: "Bitcoin Core 0.16.3 corrige une faille des versions 0.14.0 à 0.16.2 : un bloc dépensant deux fois la même entrée fait planter le nœud. Le 20 septembre, les développeurs révèlent que la faille permettait aussi, sur certaines versions, de créer des bitcoins en trop."
+    related: ["bitcoin-core", "inflation", "double-depense"]
+    sources:
+      - "https://bitcoincore.org/en/2018/09/20/notice/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.16.3"
+      - "https://bitcoinops.org/en/newsletters/2018/09/18/"
+
+  - date: "2018-10-03"
+    title: "Sortie de Bitcoin Core 0.17.0"
+    text: "Bitcoin Core 0.17.0 gère les transactions partiellement signées (PSBT, BIP-0174), qui facilitent la signature à plusieurs et avec un portefeuille matériel. Elle permet de créer et de charger des portefeuilles sans redémarrer le nœud, et d'éviter les dépenses partielles d'une adresse réutilisée."
+    related: ["bitcoin-core", "psbt", "bip-0174"]
+    sources:
+      - "https://bitcoincore.org/en/releases/0.17.0/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.17.0"
+      - "https://web.archive.org/web/2019/https://lists.linuxfoundation.org/pipermail/bitcoin-core-dev/2018-October/000068.html"
+
+  - date: "2018-10-10"
+    title: "Lancement de la sidechain Liquid"
+    text: "Blockstream annonce le lancement de Liquid, une sidechain fédérée de Bitcoin destinée au règlement entre plateformes d'échange. Sa chaîne tourne depuis le 27 septembre, gérée par 23 membres dont Bitfinex, BitMEX et Xapo."
+    related: ["liquid-network", "sidechain", "federation", "blockstream"]
+    sources:
+      - "https://blockstream.com/press-releases/2018-10-10-blockstream-launches-the-liquid-network/"
+      - "https://forklog.com/en/blockstreams-liquid-network-sidechain-for-the-bitcoin-network-goes-live/"
+
+  - date: "2018-10-15"
+    title: "Fidelity lance Fidelity Digital Assets"
+    text: "Le gestionnaire d'actifs Fidelity Investments crée Fidelity Digital Assets, une filiale qui offre aux investisseurs institutionnels la conservation de bitcoins et l'exécution de leurs ordres."
+    related: ["custody"]
+    sources:
+      - "https://www.wealthmanagement.com/crypto/fidelity-starts-crypto-business-to-serve-wall-street-clients"
+      - "https://siliconangle.com/2018/10/15/fidelity-launches-digital-asset-custody-trading-service-institutional-investors/"
+
+  - date: "2018-10-31"
+    title: "Sortie de Wasabi Wallet 1.0"
+    text: "Ádám Ficsór et son équipe publient la version 1.0 de Wasabi Wallet, un portefeuille de bureau où l'utilisateur garde ses clés, construit autour de ZeroLink, son protocole de coinjoin chaumien."
+    related: ["wasabi-wallet", "chaumian-coinjoin", "zerolink", "coinjoin"]
+    sources:
+      - "https://github.com/WalletWasabi/WalletWasabi/releases/tag/v1.0"
+      - "https://bitcoinmagazine.com/culture/wasabi-wallet-10-here-make-bitcoin-transactions-more-private"
+
+  - date: "2018-11-15"
+    title: "Scission de Bitcoin Cash entre ABC et SV"
+    text: "À 18 h 02 UTC, un hard fork divise Bitcoin Cash en deux chaînes : Bitcoin ABC et Bitcoin SV, développé par nChain, la société de Craig Wright. Une guerre de puissance de calcul s'engage entre les mineurs des deux camps."
+    related: ["bch-bitcoin-cash", "bsv-bitcoin-satoshi-vision", "hard-fork"]
+    sources:
+      - "https://forklog.com/en/bitcoin-cash-forked-splitting-into-two-blockchains/"
+      - "https://thenextweb.com/news/bitcoin-cash-hard-fork-hash"
+
+  - date: "2018-11-19"
+    title: "Le bitcoin passe sous 5 000 dollars"
+    text: "Le cours du bitcoin tombe sous 5 000 dollars pour la première fois depuis octobre 2017, jusqu'à 4 958 dollars selon Bloomberg, avec une chute de 14 % sur la journée. Il recule encore le lendemain jusqu'à 4 382 dollars."
+    related: ["bear-market"]
+    sources:
+      - "https://www.business-standard.com/article/markets/bitcoin-price-falls-below-5-000-for-the-first-time-since-october-2017-118112000058_1.html"
+      - "https://www.cityam.com/bitcoin-value-drops-seven-per-cent-after-falling-below-5000/"
+
+  - date: "2018-11-26"
+    title: "L'Ohio accepte le bitcoin pour les impôts des entreprises"
+    text: "L'Ohio devient le premier État américain où les entreprises peuvent payer leurs impôts en bitcoin, par le site OhioCrypto.com. Le trésorier Josh Mandel passe par BitPay, qui convertit les paiements en dollars."
+    sources:
+      - "https://techcrunch.com/2018/11/25/ohio-becomes-the-first-state-to-accept-bitcoin-for-tax-payments/"
+      - "https://www.cnbc.com/2018/11/29/ohio-rolls-out-the-red-carpet-for-blockchain-businesses-by-accepting-bitcoin-this-tax-season.html"
+
+  - date: "2018-11-28"
+    title: "L'OFAC sanctionne pour la première fois des adresses bitcoin"
+    text: "Le Trésor américain sanctionne deux Iraniens qui changeaient en rials les rançons en bitcoins du rançongiciel SamSam. Pour la première fois, l'OFAC inscrit des adresses bitcoin dans sa liste de personnes sanctionnées : deux adresses, par lesquelles sont passées plus de 7 000 transactions."
+    sources:
+      - "https://home.treasury.gov/news/press-releases/sm556"
+      - "https://www.wilmerhale.com/en/insights/client-alerts/20181130-ofac-identifies-digital-currency-addresses-in-sanctions-designations-and-provides-faqs-on-digital-currency-compliance"
+
+  - date: "2018-12-03"
+    title: "Chute de 15 % de la difficulté"
+    text: "Au bloc 552 384, la difficulté de minage baisse de 15,13 %, la deuxième plus forte baisse de l'histoire du réseau selon ForkLog. Le cours du bitcoin est alors sous 4 000 dollars."
+    related: ["ajustement-de-la-difficulte", "difficulte", "minage"]
+    sources:
+      - "https://mempool.space/block/552384"
+      - "https://forklog.com/en/mining-difficulty-records-second-largest-drop-in-history-as-bitcoin-price-hovers-below-4000/"
+
+  - date: "2018-12-15"
+    title: "Plus bas de l'année du bitcoin"
+    text: "Le cours du bitcoin touche le plus bas de son marché baissier, 3 122 dollars selon CryptoPotato, près de 3 200 dollars selon Bitcoinist. Un an plus tôt, il approchait 20 000 dollars."
+    related: ["bear-market"]
+    sources:
+      - "https://cryptopotato.com/exactly-one-year-ago-bitcoin-price-nailed-2018-bear-market-at-3122/"
+      - "https://bitcoinist.com/bitcoin-btc-price-doing-well-one-year-after-bear-market-lows/"
+
+  - date: "2018-12-28"
+    title: "La France crée un régime fiscal des actifs numériques"
+    text: "La loi de finances pour 2019 (article 41) crée l'article 150 VH bis du CGI. À partir du 1er janvier 2019, les plus-values des particuliers sur actifs numériques sont taxées à 12,8 %, soit 30 % avec les prélèvements sociaux, et un échange entre cryptomonnaies ne déclenche pas l'impôt."
+    sources:
+      - "https://web.archive.org/web/2019/https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037882341"
+      - "https://www.actu-juridique.fr/fiscalite/fiscal-finances/les-actifs-numeriques-entrent-dans-le-code-general-des-impots/"

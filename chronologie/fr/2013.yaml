@@ -1,0 +1,294 @@
+# Chronologie de Bitcoin : 2013.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2013-01-30"
+    title: "Premier mineur ASIC livré au public"
+    text: "Avalon livre ses premiers mineurs ASIC, des machines conçues uniquement pour le hachage `SHA256` de Bitcoin. Jeff Garzik reçoit l'une des premières unités vendues au public et confirme qu'elle calcule à 68 GH/s."
+    related: ["asic", "mineur"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=140099.0"
+      - "https://bitcoinmagazine.com/business/working-avalon-asic-confirmed-1359613230"
+  - date: "2013-02-14"
+    title: "Reddit accepte le bitcoin"
+    text: "Reddit ajoute le bitcoin aux moyens de paiement de Reddit Gold, son abonnement payant, grâce à un partenariat avec Coinbase. Le site répond à une demande ancienne de sa communauté ; selon Coinbase, il figure parmi les 100 sites les plus visités aux États-Unis."
+    sources:
+      - "https://techcrunch.com/2013/02/14/reddit-starts-accepting-bitcoin-for-reddit-gold-purchases-thanks-to-partnership-with-coinbase/"
+      - "https://venturebeat.com/2013/02/14/reddit-bitcoin/"
+  - date: "2013-02-19"
+    title: "Sortie de Bitcoin 0.8.0"
+    text: "Gavin Andresen publie Bitcoin-Qt et bitcoind 0.8.0. Les index des blocs et des transactions passent de Berkeley DB à LevelDB, plus rapide, et le protocole réseau gagne les filtres de Bloom du BIP-0037, qui servent les portefeuilles légers."
+    related: ["bitcoin-qt", "bitcoin-core", "leveldb", "berkeleydb", "bloom-filter", "bip-0037", "noeud-spv-noeud-leger"]
+    sources:
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CABsx9T0okOLprP1-S3mOY6mBLF-x-d-3Nc7Ci7ZKDG-2mAeNFA@mail.gmail.com/"
+      - "https://bitcointalk.org/index.php?topic=145184.0"
+  - date: "2013-03-11"
+    title: "Scission de la chaîne entre les versions 0.7 et 0.8"
+    text: "Un mineur en version 0.8.0 produit le bloc 225 430, que les versions antérieures rejettent faute de verrous Berkeley DB suffisants. La chaîne se scinde ; les pools BTC Guild et Slush repassent en 0.7 pour remettre la majorité de la puissance sur une seule chaîne."
+    related: ["chainsplit", "berkeleydb", "leveldb", "bip-0050", "mining-pool"]
+    sources:
+      - "https://bitcoin.org/en/alert/2013-03-11-chain-fork"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki"
+  - date: "2013-03-18"
+    title: "Le FinCEN encadre les monnaies virtuelles"
+    text: "Le régulateur financier américain publie la note FIN-2013-G001. Un simple utilisateur de monnaie virtuelle n'est pas concerné, mais un administrateur ou une plateforme d'échange devient un transmetteur d'argent, soumis aux obligations anti-blanchiment."
+    related: ["aml-anti-money-laundering"]
+    sources:
+      - "https://fincen.gov/resources/statutes-regulations/guidance/application-fincens-regulations-persons-administering"
+      - "https://infobytes.orrick.com/2013-03-22/fincen-issues-guidance-virtual-currencies/"
+  - date: "2013-03-18"
+    title: "Sortie de Bitcoin 0.8.1"
+    text: "Gavin Andresen publie la version 0.8.1 pour éviter une nouvelle scission avec les anciennes versions. Du 21 mars au 15 mai 2013, une règle temporaire fait refuser les blocs que les nœuds antérieurs à 0.8 ne pourraient pas valider faute de verrous Berkeley DB."
+    related: ["bitcoin-qt", "bitcoin-core", "chainsplit", "berkeleydb", "bip-0050"]
+    sources:
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CABsx9T1xv1uitv0dEEnHEvphq+OuM+s8CSvTpeyUiFXw3WwkPw@mail.gmail.com/"
+      - "https://bitcoin.org/en/release/v0.8.1"
+  - date: "2013-03-19"
+    title: "Hal Finney publie « Bitcoin and me »"
+    text: "Atteint de la maladie de Charcot, Hal Finney raconte sur bitcointalk ses débuts avec Bitcoin : il a miné dès les premiers jours et reçu la première transaction, 10 BTC envoyés par Satoshi Nakamoto pour un test."
+    related: ["finney-hal", "nakamoto-satoshi", "bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=155054.0"
+      - "https://www.btc-echo.de/news/hal-finney-das-bitcoin-vermaechtnis-15983/"
+  - date: "2013-03-25"
+    title: "Le BIP-0034 devient obligatoire"
+    text: "À partir du bloc 227 931, les nœuds rejettent les blocs de version 1 et exigent que la transaction coinbase commence par la hauteur du bloc."
+    related: ["bip-0034", "soft-fork", "coinbase", "hauteur-de-bloc", "bip-0090"]
+    sources:
+      - "https://github.com/bitcoin/bips/blob/master/bip-0090.mediawiki"
+      - "https://mempool.space/block/000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"
+      - "https://blockstream.info/block/000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"
+  - date: "2013-04-01"
+    title: "Le bitcoin dépasse 100 USD"
+    text: "Le cours franchit 100 USD pour la première fois, après avoir triplé en un mois, et la valeur de tous les bitcoins en circulation dépasse 1 milliard USD. Une partie de la presse relie cette hausse à la crise bancaire chypriote."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://venturebeat.com/2013/04/01/bitcoin-value-above-100-bubble/"
+      - "https://arstechnica.com/information-technology/2013/04/bitcoin-value-triples-in-a-month-to-all-time-high-of-more-than-100/"
+  - date: "2013-04-10"
+    title: "Krach après le record de 266 USD"
+    text: "Le cours touche un record de 266 USD puis s'effondre en quelques heures, jusqu'à 105 USD. Submergé par les ordres, le moteur de Mt. Gox accumule du retard, ce qui accentue la panique, puis se fige."
+    related: ["mtgox", "ath-all-time-high"]
+    sources:
+      - "https://bitcoinmagazine.com/markets/the-bitcoin-crash-an-examination-1365911041"
+      - "https://www.netcraft.com/blog/mt-gox-victim-of-own-success-as-bitcoins-fall-in-value"
+  - date: "2013-04-11"
+    title: "Mt. Gox suspend ses échanges après le krach"
+    text: "Mt. Gox arrête la cotation jusqu'au soir pour laisser le marché « refroidir ». En 24 heures, le cours est passé de 230 à 123,40 USD sur la plateforme, qui accuse l'afflux d'ordres d'avoir ralenti son moteur et déclenché des ventes de panique."
+    related: ["mtgox"]
+    sources:
+      - "https://www.bloomberg.com/news/articles/2013-04-11/bitcoin-trading-halted-by-mt-gox-exchange-after-plunge-in-price"
+      - "https://www.pcworld.com/article/2033864/bitcoin-exchange-mt-gox-suspends-service-following-huge-swing-in-trading-price.html"
+  - date: "2013-04-11"
+    title: "Matthew Green présente Zerocoin"
+    text: "Le cryptographe Matthew Green, de l'université Johns Hopkins, présente Zerocoin, conçu avec Ian Miers, Christina Garman et Aviel Rubin. Cette extension du protocole, qu'il faudrait faire adopter par Bitcoin, rendrait les paiements anonymes grâce à des preuves à divulgation nulle de connaissance, sans nouveau tiers de confiance."
+    related: ["zkp-zero-knowledge-proof"]
+    sources:
+      - "https://blog.cryptographyengineering.com/2013/04/11/zerocoin-making-bitcoin-anonymous/"
+      - "https://www.coindesk.com/markets/2013/04/15/zerocoin-widget-promises-bitcoin-privacy"
+  - date: "2013-04-17"
+    title: "Sergio Lerner estime la fortune de Satoshi"
+    text: "Sergio Demian Lerner publie sur son blog une analyse du champ ExtraNonce des blocs de 2009. Il en déduit qu'un mineur dominant, probablement Satoshi Nakamoto, a accumulé environ 1 million de BTC."
+    related: ["patoshi", "extra-nonce", "nakamoto-satoshi"]
+    sources:
+      - "https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/"
+      - "https://blog.bitmex.com/satoshis-1-million-bitcoin/"
+  - date: "2013-05-02"
+    title: "CoinLab poursuit Mt. Gox"
+    text: "La société CoinLab, basée à Seattle, attaque Mt. Gox en justice et lui réclame 75 millions USD. Elle l'accuse d'avoir rompu leur accord de novembre 2012, qui devait lui confier les clients américains et canadiens de la plateforme."
+    related: ["mtgox"]
+    sources:
+      - "https://www.geekwire.com/2013/bitcoin-seattles-coinlab-files-75m-suit-mt-gox-exchange-alleges-breach-contract/"
+      - "https://www.computerworld.com/?p=1397927"
+  - date: "2013-05-14"
+    title: "Saisie du compte Dwolla de Mt. Gox"
+    text: "Sur mandat obtenu par le Department of Homeland Security, le service de paiement Dwolla bloque le compte de la filiale américaine de Mt. Gox, accusée de transmettre de l'argent sans licence. Dwolla était l'un des principaux moyens pour les clients américains de convertir leurs dollars en bitcoins."
+    related: ["mtgox"]
+    sources:
+      - "https://technical.ly/baltimore/2013/05/17/maryland-court-dwolla-bitcoin"
+      - "https://bitcoinmagazine.com/markets/mtgoxs-dwolla-account-seized-1368760437"
+      - "https://money.cnn.com/2013/05/16/technology/bitcoin-mt-gox/"
+      - "https://siliconangle.com/2013/05/15/bitcoin-weekly-2013-may-15-bitcoin-hard-fork-today-mt-gox-dwolla-account-seized-by-dhs-bitpay-hires-core-developer-jeff-garzik/"
+  - date: "2013-05-17"
+    title: "Conférence Bitcoin 2013 à San Jose"
+    text: "La Fondation Bitcoin ouvre à San Jose la conférence « Bitcoin 2013 », la première de Bitcoin dans la Silicon Valley, qui dure jusqu'au 19 mai. Environ 1 000 personnes sont attendues, entre jeunes entreprises, développeurs et investisseurs."
+    related: ["fondation-bitcoin"]
+    sources:
+      - "https://www.eff.org/event/bitcoin-2013-future-payments"
+      - "https://www.pcworld.com/article/2039100/bitcoin-finding-its-feet-at-first-silicon-valley-conference.html"
+      - "https://www.coindesk.com/bitcoin-2013-opens-in-san-jose-may-17-19"
+  - date: "2013-05-29"
+    title: "Sortie de Bitcoin 0.8.2"
+    text: "La version 0.8.2 baisse les frais par défaut de 0,0005 à 0,0001 BTC par 1 000 octets. Elle rend non standard, donc non relayée, toute sortie inférieure à 0,0000543 BTC, qui coûterait plus cher à dépenser qu'elle ne vaut : c'est la limite de poussière."
+    related: ["bitcoin-qt", "bitcoin-core", "frais-de-transaction", "dust-limit", "transaction-standard"]
+    sources:
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CABsx9T2p6mH7zmQ8sHbjC8Y2sufw36aeX841HgtUMfAw-phDUg@mail.gmail.com/"
+      - "https://bitcoin.org/en/release/v0.8.2"
+  - date: "2013-06-20"
+    title: "Mt. Gox suspend les retraits en dollars"
+    text: "Mt. Gox annonce suspendre pour deux semaines les retraits en dollars américains, en invoquant les difficultés de sa banque face au volume des demandes. Les dépôts et les retraits dans les autres monnaies continuent."
+    related: ["mtgox"]
+    sources:
+      - "https://bitcoinmagazine.com/press-releases/mt-gox-announces-temporary-hiatus-on-u-s-dollar-withdrawals-1371859917"
+      - "https://www.financemagnates.com/cryptocurrency/trading/mtgox-announced-temporary-suspension-of-usd-withdrawals/"
+  - date: "2013-07-01"
+    title: "Premier projet d'ETF bitcoin"
+    text: "Cameron et Tyler Winklevoss déposent auprès de la SEC le formulaire S-1 du Winklevoss Bitcoin Trust, un fonds coté qui détiendrait des bitcoins. C'est la première demande d'ETF adossé au bitcoin."
+    related: ["etf"]
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/0001579346/000119312513279830/d562329ds1.htm"
+      - "https://www.wtvr.com/2013/07/03/winklevoss-twins-risky-bitcoin-bet"
+      - "https://www.foxbusiness.com/markets/bitcoin-etf-inching-closer-to-reality"
+  - date: "2013-07-17"
+    title: "SatoshiDice vendu 126 315 BTC"
+    text: "Erik Voorhees annonce sur bitcointalk la vente du site de jeu SatoshiDice à une nouvelle société, pour 126 315 BTC, soit environ 11,5 millions USD. C'est la première grosse acquisition d'une entreprise Bitcoin."
+    related: ["satoshidice"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=101902.msg2751536#msg2751536"
+      - "https://siliconangle.com/?p=156848"
+  - date: "2013-07-23"
+    title: "La SEC poursuit le fondateur de Bitcoin Savings & Trust"
+    text: "La SEC accuse Trendon Shavers (« pirateat40 ») d'avoir monté une pyramide de Ponzi en bitcoins avec Bitcoin Savings & Trust. Il a levé au moins 700 000 BTC auprès d'investisseurs avant l'effondrement du système en août 2012."
+    related: ["bitcointalk"]
+    sources:
+      - "https://www.sec.gov/news/press-release/2013-132"
+      - "https://www.nbcnews.com/businessmain/sec-says-texas-man-ran-bitcoin-ponzi-scheme-6C10722287"
+  - date: "2013-07-29"
+    title: "La Banque de Thaïlande déclare le bitcoin illégal"
+    text: "Selon la plateforme Bitcoin Co. Ltd, la banque centrale thaïlandaise juge illégales l'achat, la vente et l'envoi de bitcoins, faute de cadre légal. La plateforme suspend ses échanges jusqu'à nouvel ordre."
+    sources:
+      - "https://reason.com/2013/07/31/thailands-central-bank-outlaws-bitcoin-t/"
+      - "https://betanews.com/2013/07/30/thailand-bans-bitcoin-company-suspends-trading-in-the-country/"
+  - date: "2013-07-31"
+    title: "Proposition du BIP-0070"
+    text: "Gavin Andresen présente sur bitcoin-dev le protocole de paiement, découpé en BIP-0070, BIP-0071 et BIP-0072. Le commerçant envoie une demande de paiement signée avec un certificat X.509, et le portefeuille affiche son nom au lieu d'une adresse, ce qui protège contre les attaques de l'homme du milieu."
+    related: ["bip-0070", "bip-0071", "bip-0072", "mitm-man-in-the-middle"]
+    sources:
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CABsx9T0Ly67ZNJhoRQk0L9Q0-ucq3e=24b5Tg6GRKspRKKtP-g@mail.gmail.com/"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki"
+  - date: "2013-08-06"
+    title: "Un juge américain qualifie le bitcoin de monnaie"
+    text: "Dans l'affaire SEC contre Shavers, le juge Amos Mazzant estime que le bitcoin est « une monnaie ou une forme de monnaie ». Les placements de Bitcoin Savings & Trust sont donc des valeurs mobilières."
+    sources:
+      - "https://www.theregister.com/2013/08/07/bitcoin_is_money/"
+      - "https://wjlta.com/2013/08/12/bitcoin-is-bona-fide-currency/"
+  - date: "2013-08-11"
+    title: "Faille du générateur aléatoire d'Android"
+    text: "Bitcoin.org alerte : le composant d'Android qui génère les nombres aléatoires présente des faiblesses qui rendent volables tous les portefeuilles créés sur Android. Bitcoin Wallet, BitcoinSpinner et Mycelium publient des mises à jour pour changer de clés."
+    related: ["pseudo-aleatoire", "nonce", "ecdsa"]
+    sources:
+      - "https://bitcoin.org/en/alert/2013-08-11-android"
+      - "https://securityaffairs.com/17055/cyber-crime/android-wallet-apps-vulnerability-could-allow-currency-theft.html"
+  - date: "2013-08-19"
+    title: "L'Allemagne classe le bitcoin comme unité de compte"
+    text: "Le ministère fédéral allemand des Finances range le bitcoin parmi les « unités de compte », une forme de monnaie privée utilisable entre particuliers. Un usage commercial demande l'accord du régulateur financier BaFin."
+    sources:
+      - "https://techcrunch.com/2013/08/19/germany-recognizes-bitcoin-as-private-money-sales-tax-coming-soon"
+      - "https://www.pcworld.com/article/447230/bitcoin-can-be-used-for-private-transactions-german-government-says.html"
+  - date: "2013-08-22"
+    title: "Gregory Maxwell propose CoinJoin"
+    text: "Gregory Maxwell décrit CoinJoin sur bitcointalk : plusieurs utilisateurs qui veulent payer construisent ensemble une seule transaction, ce qui brouille le lien entre entrées et sorties. L'idée ne demande aucun changement du protocole."
+    related: ["coinjoin"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=279249.0"
+      - "https://bitcoinmagazine.com/culture/coinjoins-first-steps-how-dark-wallet-paved-the-way-for-a-more-private-bitcoin"
+      - "https://bitcoinops.org/en/topics/coinjoin/"
+  - date: "2013-09-10"
+    title: "Proposition du BIP-0039"
+    text: "Marek Palatinus (Slush) présente sur bitcoin-dev le BIP-0039, qui transforme la graine d'un portefeuille en une liste de mots facile à noter. Il veut standardiser un algorithme entre les logiciels et corriger les défauts de celui d'Electrum."
+    related: ["bip-0039", "phrase-de-recuperation", "graine", "electrum"]
+    sources:
+      - "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CAJna-HgXPNa2UCO_edBzK=oY5-F=6LQVHap1Vk9XtGr09chy9Q@mail.gmail.com/"
+  - date: "2013-10"
+    title: "Baidu Jiasule accepte le bitcoin"
+    text: "Jiasule, le service de protection de sites web de Baidu, premier moteur de recherche chinois, accepte le bitcoin. L'annonce nourrit l'engouement des Chinois pour la monnaie. Après l'avertissement de la banque centrale, Jiasule suspend ces paiements début décembre."
+    sources:
+      - "https://www.rt.com/news/china-baidu-accept-bitcoin-276/"
+      - "https://cryptologie.net/posts/baidu-now-accepts-bitcoins/"
+      - "https://siliconangle.com/2013/10/23/bitcoin-weekly-2013-october-23-post-silk-road-bitcoin-exceeds-200-and-chinese-interest-in-btc-on-the-rise/"
+      - "https://www.globaltimes.cn/content/830883.shtml"
+  - date: "2013-10-01"
+    title: "Fermeture de Silk Road et arrestation de Ross Ulbricht"
+    text: "Le FBI ferme Silk Road et arrête à San Francisco Ross Ulbricht, accusé d'être « Dread Pirate Roberts ». Les autorités saisissent environ 29 655 BTC sur le site, puis annoncent le 25 octobre la saisie de 144 336 BTC sur ses ordinateurs."
+    related: ["silk-road", "tor-the-onion-router"]
+    sources:
+      - "https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-seizure-additional-28-million-worth-bitcoins-belonging"
+      - "https://www.aljazeera.com/amp/news/2013/10/2/fbi-shuts-down-online-black-market"
+  - date: "2013-10-29"
+    title: "Premier distributeur de bitcoins"
+    text: "Un distributeur qui échange bitcoins et dollars canadiens ouvre dans un café Waves du centre de Vancouver, exploité par la société Bitcoiniacs. Il est présenté comme le premier au monde."
+    related: ["bitcoin-atm"]
+    sources:
+      - "https://www.cbc.ca/news/science/world-s-first-bitcoin-atm-opens-in-vancouver-1.2286877"
+      - "https://www.theglobeandmail.com/news/british-columbia/a-bitcoin-first-for-vancouver/article15130876"
+  - date: "2013-11-06"
+    title: "Lancement de Silk Road 2.0"
+    text: "Cinq semaines après la fermeture de Silk Road, Silk Road 2.0 ouvre sur Tor sous la direction d'un administrateur qui reprend le pseudonyme « Dread Pirate Roberts ». Le site copie son prédécesseur et accepte toujours le bitcoin. Son administrateur présumé est inculpé un an plus tard."
+    related: ["silk-road", "tor-the-onion-router"]
+    sources:
+      - "https://www.findlaw.com/legalblogs/technologist/its-baaaack-silk-road-20-is-here/"
+      - "https://www.occrp.org/en/daily/2203-us-silk-road-an-ebay-for-drug-dealing-is-resurrected"
+      - "https://welivesecurity.com/2013/11/07/drug-market-silk-road-2-0-launches-on-tor-with-new-security-in-place"
+      - "https://www.justice.gov/archive/usao/nys/pressreleases/November14/BlakeBenthallArrestPR.php"
+  - date: "2013-11-18"
+    title: "Première audition sur Bitcoin au Sénat américain"
+    text: "La commission de la sécurité intérieure du Sénat tient l'audition « Beyond Silk Road ». Mythili Raman, du ministère de la Justice, reconnaît que beaucoup de monnaies virtuelles rendent des services financiers légitimes ; Patrick Murck y défend la Bitcoin Foundation."
+    related: ["silk-road", "fondation-bitcoin"]
+    sources:
+      - "https://www.hsgac.senate.gov/hearings/beyond-silk-road-potential-risks-threats-and-promises-of-virtual-currencies"
+      - "https://www.theglobaltreasurer.com/2013/11/19/us-senate-mulls-over-bitcoin/"
+  - date: "2013-11-18"
+    title: "BTC China devient la première plateforme mondiale"
+    text: "BTC China, passée devant Mt. Gox et Bitstamp en volume d'échanges, lève 5 millions USD auprès de Lightspeed. La plateforme traite environ 90 000 BTC par jour, signe de la ruée chinoise sur le bitcoin."
+    sources:
+      - "https://techcrunch.com/?p=916086"
+      - "https://www.coindesk.com/markets/2013/11/18/worlds-largest-bitcoin-exchange-btc-china-gets-5-million-in-funding"
+      - "https://cointelegraph.com/news/investors-putting-5-million-into-btc-china"
+  - date: "2013-11-21"
+    title: "Une université accepte le bitcoin"
+    text: "L'université de Nicosie, à Chypre, annonce accepter le bitcoin pour ses frais de scolarité et se présente comme la première université à le faire. Elle ouvre aussi un master consacré aux monnaies numériques."
+    sources:
+      - "https://www.unic.ac.cy/unic-to-be-the-first-university-in-the-world-to-accept-bitcoin/"
+      - "https://phys.org/news/2013-11-cypriot-university-bitcoin-payments.html"
+  - date: "2013-11-22"
+    title: "Virgin Galactic accepte le bitcoin"
+    text: "Richard Branson annonce sur son blog que Virgin Galactic accepte le bitcoin pour ses futurs vols dans l'espace. Une hôtesse de l'air d'Hawaï a déjà payé son billet en bitcoins."
+    sources:
+      - "https://money.cnn.com/2013/11/22/news/companies/bitcoin-virgin-space/"
+      - "https://engadget.com/2013/11/22/virgin-galactic-bitcoin-space-flight"
+  - date: "2013-11-27"
+    title: "Le bitcoin dépasse 1 000 USD sur Mt. Gox"
+    text: "Le cours franchit 1 000 USD sur Mt. Gox, avec un pic à 1 030 USD, après une hausse de plus de 62 % en une semaine."
+    related: ["mtgox", "ath-all-time-high"]
+    sources:
+      - "https://thenextweb.com/insider/2013/11/27/bitcoin-passes-1000-mark-first-time/"
+      - "https://techcrunch.com/2013/11/27/bitcoin-crosses-the-1000-mark-on-the-mt-gox-exchange"
+  - date: "2013-12"
+    title: "Fermeture de Sheep Marketplace"
+    text: "Sheep Marketplace, un marché de Tor qui avait recueilli une partie des clients de Silk Road, ferme. Ses gérants affirment qu'un vendeur a volé 5 400 BTC grâce à une faille, mais des utilisateurs suivent sur la chaîne 39 918 BTC et les soupçonnent d'être partis avec la caisse."
+    related: ["silk-road", "tor-the-onion-router"]
+    sources:
+      - "https://www.nextgov.com/emerging-tech/2013/12/bitcoin-users-lose-40-million-apparent-narcotics-bazaar-heist/74669/"
+      - "https://www.helpnetsecurity.com/2013/12/03/huge-quantity-of-bitcoins-stolen-from-sheep-marketplace/"
+      - "https://thehackernews.com/2013/12/Sheep-Marketplace-scam-Bitcoin-stolen-Silk-Road.html"
+  - date: "2013-12-05"
+    title: "La Chine interdit le bitcoin à ses banques"
+    text: "La Banque populaire de Chine et 4 autres autorités interdisent aux institutions financières et aux services de paiement de proposer des services en bitcoin. Les particuliers restent libres d'en échanger, à leurs risques. Le cours repasse sous 1 000 USD."
+    sources:
+      - "https://technode.com/2013/12/05/china-central-bank-warns-financial-institutions-of-bitcoin-risks"
+      - "https://www.pcworld.com/article/448961/china-bans-banks-from-trading-in-bitcoin.html"
+  - date: "2013-12-12"
+    title: "Coinbase lève 25 millions USD"
+    text: "Coinbase lève 25 millions USD auprès d'Andreessen Horowitz, Union Square Ventures et Ribbit Capital, la plus grosse levée de fonds à ce jour pour une entreprise Bitcoin. La société revendique environ 600 000 portefeuilles et 16 000 commerçants."
+    sources:
+      - "https://techcrunch.com/2013/12/12/coinbase-raises-25m-from-andreessen-horowitz-to-build-its-bitcoin-wallet-and-merchant-services/"
+      - "https://www.theregister.co.uk/2013/12/12/bitcoin_gets_boost_with_25m_andreessenhorowitz_buy_into_coinbase/"
+  - date: "2013-12-18"
+    title: "Naissance du mème HODL"
+    text: "En pleine chute du cours, l'utilisateur GameKyuubi publie sur bitcointalk un message intitulé « I AM HODLING » : mauvais trader de son propre aveu, il garde ses bitcoins. La faute de frappe devient le mot HODL."
+    related: ["hodl", "bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=375643.0"
+      - "https://www.coindesk.com/markets/2019/02/02/the-history-of-hodl"

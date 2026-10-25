@@ -1,0 +1,339 @@
+# Chronologie de Bitcoin : 2017.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2017-01-01"
+    title: "Le bitcoin repasse 1 000 dollars"
+    text: "Dès le premier jour de 2017, le cours du bitcoin franchit 1 000 dollars, un niveau qu'il n'avait plus atteint depuis plus de trois ans. BitcoinAverage le cote à 1 028 dollars le lendemain."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://www.coindesk.com/markets/2017/01/01/bitcoin-price-tops-1000-in-first-day-of-2017-trading"
+      - "https://siliconangle.com/2017/01/02/bitcoin-breaks-1000-second-time-three-years/"
+      - "https://www.cityam.com/bitcoins-started-2017-bang-surging-past-1000/"
+
+  - date: "2017-01-11"
+    title: "La banque centrale chinoise inspecte les plateformes"
+    text: "La Banque populaire de Chine annonce des contrôles sur place chez BTCC, Huobi et OKCoin, à Pékin et Shanghai : manipulation de marché, blanchiment, financement non autorisé. Le cours du bitcoin perd environ 10 % dans la journée."
+    sources:
+      - "https://www.business-standard.com/article/reuters/china-s-central-bank-launches-spot-checks-on-bitcoin-exchanges-117011100688_1.html"
+      - "https://www.financemagnates.com/cryptocurrency/news/bitcoin-falls-10-as-chinese-central-bank-starts-investigation-of-exchanges/"
+
+  - date: "2017-02-09"
+    title: "Huobi et OKCoin gèlent les retraits de bitcoins"
+    text: "Après une réunion avec la Banque populaire de Chine, Huobi et OKCoin suspendent pour un mois les retraits de bitcoins et de litecoins, le temps de renforcer leurs contrôles contre le blanchiment. BTCChina suit avec une pause plus courte. Le cours recule de 1 060 à 959 dollars."
+    sources:
+      - "https://cointelegraph.com/magazine/bitcoin-price-falls-9-overnight-as-2-chinese-exchanges-stop-withdrawals"
+      - "https://gigazine.net/gsc_news/en/20170212-china-exchange-stop-bitcoin-withdrawal"
+
+  - date: "2017-03-02"
+    title: "Un bitcoin vaut plus qu'une once d'or"
+    text: "Pour la première fois, le cours d'un bitcoin dépasse celui d'une once troy d'or, à la faveur d'une hausse du bitcoin et d'une baisse de l'or le même jour."
+    sources:
+      - "https://techcrunch.com/2017/03/02/one-bitcoin-is-now-worth-more-than-one-ounce-of-gold/"
+      - "https://qz.com/923154/the-price-of-bitcoin-is-now-the-same-as-the-price-for-an-ounce-of-gold/"
+
+  - date: "2017-03-08"
+    title: "Sortie de Bitcoin Core 0.14.0"
+    text: "Bitcoin Core 0.14.0 accélère nettement le téléchargement initial de la chaîne et la validation des nouveaux blocs, grâce à `assumevalid` et au relais anticipé des blocs compacts. Le *mempool* survit désormais aux redémarrages, et la commande `bumpfee` permet de relever les frais d'une transaction en attente."
+    related: ["bitcoin-core", "assume-valid", "ibd-initial-block-download", "compact-block-relay", "rbf-replace-by-fee"]
+    sources:
+      - "https://bitcoincore.org/en/2017/03/08/release-0.14.0/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.14.0"
+
+  - date: "2017-03-10"
+    title: "La SEC rejette l'ETF des Winklevoss"
+    text: "La SEC refuse à Bats BZX la cotation du Winklevoss Bitcoin Trust. Elle relève que les grands marchés du bitcoin ne sont pas régulés et qu'aucun accord de surveillance ne protège le produit contre la fraude et la manipulation."
+    related: ["etf"]
+    sources:
+      - "https://www.sec.gov/rules/sro/batsbzx/2017/34-80206.pdf"
+      - "https://www.engadget.com/2017-03-10-sec-rejects-winklevoss-plan-trade-bitcoin-stock.html"
+
+  - date: "2017-03-12"
+    title: "Shaolin Fry propose l'UASF de SegWit (BIP-0148)"
+    text: "Sur la liste bitcoin-dev, Shaolin Fry propose d'activer SegWit par les nœuds plutôt que par les mineurs. À partir du 1er août 2017, les nœuds BIP-0148 rejetteront tout bloc qui ne signale pas SegWit, tant que le soft fork n'est pas verrouillé."
+    related: ["uasf", "bip-0148", "segwit", "blocksize-war"]
+    sources:
+      - "https://web.archive.org/web/2018/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-March/013714.html"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0148.mediawiki"
+
+  - date: "2017-03-14"
+    title: "Une faille fait tomber les nœuds Bitcoin Unlimited"
+    text: "Un attaquant exploite une assertion atteignable dans le code de Bitcoin Unlimited, puis de Bitcoin Classic : un message forgé fait planter les nœuds. Le nombre de nœuds Bitcoin Unlimited passe de près de 800 à moins de 250 en quelques heures."
+    sources:
+      - "https://www.coindesk.com/markets/2017/03/14/code-bug-exploit-sends-bitcoin-unlimited-nodes-offline"
+      - "https://bitcoinmagazine.com/technical/security-researcher-found-bug-knocked-out-bitcoin-unlimited"
+
+  - date: "2017-03-20"
+    title: "Proposition des adresses Bech32 (BIP-0173)"
+    text: "Pieter Wuille propose à la liste bitcoin-dev un format d'adresse natif pour SegWit, en base 32, avec une somme de contrôle capable de détecter les erreurs de saisie. Ce format, `Bech32`, deviendra le BIP-0173 et donnera les adresses commençant par `bc1`."
+    related: ["bip-0173", "bech32-et-bech32m", "segwit"]
+    sources:
+      - "https://web.archive.org/web/2018/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-March/013749.html"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki"
+
+  - date: "2017-04-01"
+    title: "Le Japon encadre les plateformes de cryptomonnaies"
+    text: "La réforme de la loi japonaise sur les services de paiement entre en vigueur. Elle définit les monnaies virtuelles comme moyen de paiement, sans leur donner cours légal, et impose aux plateformes d'échange un enregistrement auprès de la FSA ainsi que des obligations contre le blanchiment."
+    sources:
+      - "https://www.policyforum.net/virtual-currency-law-zen-yen/"
+      - "https://www.iflr.com/article/2a63733ixysbvckrrbwkl/virtual-currencies-regulators-make-their-move"
+
+  - date: "2017-04-05"
+    title: "Gregory Maxwell dévoile l'ASICBoost caché"
+    text: "Gregory Maxwell décrit sur bitcoin-dev une version cachée d'ASICBoost, une optimisation brevetée du calcul de preuve de travail qui fait gagner jusqu'à 30 % d'efficacité, et qu'il dit avoir repérée dans des puces d'un fabricant. Ce mode est incompatible avec SegWit. Selon la presse, le fabricant visé est Bitmain."
+    related: ["asicboost", "covert-asicboost", "bitmain", "segwit"]
+    sources:
+      - "https://web.archive.org/web/2017/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/013996.html"
+      - "https://cointelegraph.com/news/asicboost-exploit-claims-put-bitmain-in-hot-water"
+      - "https://bitcoinmagazine.com/business/mining-manufacturer-blocking-segwit-benefit-asicboost"
+
+  - date: "2017-04-26"
+    title: "Antbleed, la porte dérobée des Antminer"
+    text: "Le site Antbleed révèle que le micrologiciel des Antminer de Bitmain contacte régulièrement un serveur de l'entreprise, qui peut en retour arrêter les machines. Bitmain parle d'une fonction antivol inachevée et publie un micrologiciel qui la retire."
+    related: ["bitmain"]
+    sources:
+      - "https://bitcoinmagazine.com/culture/bitmain-can-remotely-shut-down-your-antminer-and-everyone-elses"
+      - "https://www.theregister.com/security/2017/04/27/unplug-the-bitcoin-miner-and-do-us-all-a-favour-antminer-has-remote-shutdown-flaw/486371"
+      - "https://bitcoinist.com/bug-feature-bitmain-backlash/"
+
+  - date: "2017-05-12"
+    title: "Le rançongiciel WannaCry réclame des bitcoins"
+    text: "Le rançongiciel WannaCry infecte en quelques heures des ordinateurs dans plus de 150 pays et réclame à chaque victime l'équivalent de 300 dollars en bitcoins, sur trois adresses codées en dur. Deux jours plus tard, ces adresses ont reçu un peu plus de 15 BTC."
+    sources:
+      - "https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"
+      - "https://krebsonsecurity.com/2017/05/global-wana-ransomware-outbreak-earned-perpetrators-26000-so-far/"
+
+  - date: "2017-05-20"
+    title: "Le bitcoin dépasse 2 000 dollars"
+    text: "Le cours du bitcoin franchit 2 000 dollars pour la première fois. Il en valait 1 000 au 1er janvier."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://www.coindesk.com/markets/2017/05/20/history-is-made-bitcoin-prices-top-2000-to-set-new-all-time-high"
+      - "https://www.financemagnates.com/cryptocurrency/trading/breaking-bitcoin-shoots-past-historic-2000-price-level/"
+
+  - date: "2017-05-23"
+    title: "Accord de New York (SegWit2x)"
+    text: "Digital Currency Group publie un accord conclu en marge de Consensus : activer SegWit à 80 % de signalement, puis un hard fork vers des blocs de 2 Mo sous six mois. Au 25 mai, 58 entreprises représentant 83,28 % de la puissance de calcul l'ont signé."
+    related: ["nya-new-york-agreement", "segwit2x", "segwit", "hard-fork", "blocksize-war"]
+    sources:
+      - "http://web.archive.org/web/20170602030318/https://medium.com/@DCGco/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77"
+      - "https://cointelegraph.com/news/bitcoin-scaling-consensus-reached-commentary-from-industry-leaders"
+      - "https://crypto.news/silberts-agreement-how-a-broad-alliance-declared-the-end-of-bitcoin-scaling-wars/"
+
+  - date: "2017-05-31"
+    title: "La condamnation de Ross Ulbricht confirmée en appel"
+    text: "La cour d'appel du deuxième circuit, à New York, confirme la condamnation et la peine de prison à vie de Ross Ulbricht, fondateur de Silk Road. Elle rejette ses demandes de nouveau procès et de réduction de peine."
+    related: ["silk-road"]
+    sources:
+      - "https://www.courthousenews.com/conviction-silk-road-founder-ross-ulbricht-affirmed/"
+      - "https://www.techdirt.com/articles/20170531/20494437492/appeals-court-upholds-life-sentences-silk-road-mastermind.shtml"
+
+  - date: "2017-06-11"
+    title: "Le bitcoin dépasse 3 000 dollars"
+    text: "Trois semaines après avoir passé 2 000 dollars, le cours du bitcoin franchit 3 000 dollars sur l'indice de CoinDesk, un dimanche après-midi. D'autres indices plafonnent à quelques cents ou dizaines de dollars sous ce seuil."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://fortune.com/2017/06/11/bitcoin-breaks-3000-bull-run/"
+      - "https://cointelegraph.com/magazine/bitcoin-price-made-history-again-by-topping-3000"
+
+  - date: "2017-07-11"
+    title: "Ouverture du procès de Mark Karpelès à Tokyo"
+    text: "Devant le tribunal de district de Tokyo, l'ancien patron de Mt. Gox plaide non coupable de détournement et de manipulation de données. La plateforme avait fait faillite en 2014 après la disparition d'environ 850 000 bitcoins."
+    related: ["mtgox"]
+    sources:
+      - "https://gulfnews.com/your-money/cryptocurrency/mt-bitcoin-exchange-chief-gox-denies-embezzlement-as-trial-opens-1.2056600"
+      - "https://www.financemagnates.com/cryptocurrency/news/mtgox-bitcoin-exchange-founder-swear-god-not-guilty/"
+
+  - date: "2017-07-12"
+    title: "« Buy Bitcoin » derrière Janet Yellen"
+    text: "Pendant l'audition de la présidente de la Fed devant la commission des services financiers de la Chambre des représentants, un spectateur brandit une pancarte « Buy Bitcoin » sous les caméras. Sa photo, avec l'adresse bitcoin qu'il affiche, lui rapporte près de 7 BTC de dons en une semaine."
+    sources:
+      - "https://cointelegraph.com/news/audience-member-holds-buy-bitcoin-sign-during-yellen-testimony"
+      - "https://fortune.com/2017/07/12/bitcoin-buy-yellen-fed-testimony/"
+
+  - date: "2017-07-20"
+    title: "Fermeture d'AlphaBay et de Hansa"
+    text: "Le département de la Justice américain annonce la fermeture d'AlphaBay, qu'il présente comme le plus grand marché du darknet jamais saisi. Le marché Hansa tombe dans la même opération, menée avec Europol et la police néerlandaise. Le FBI évoque des centaines de millions de dollars en cryptomonnaies."
+    related: ["silk-road"]
+    sources:
+      - "https://thehackernews.com/2017/07/alphabay-hansa-darkweb-markets-seized.html"
+      - "https://www.wgbh.org/news/2017-07-20/justice-department-announces-largest-darknet-takedown-in-history"
+
+  - date: "2017-07-21"
+    title: "Verrouillage de BIP-0091"
+    text: "Plus de 80 % des blocs d'une fenêtre de 336 signalent le bit 4 : BIP-0091, proposé par James Hilliard, se verrouille. Il s'active le 23 juillet au bloc 477 120. Dès lors, les nœuds qui l'appliquent rejettent tout bloc qui ne signale pas SegWit, ce qui garantit son verrouillage."
+    related: ["bip-0091", "segwit", "segwit2x", "bip-0009"]
+    sources:
+      - "https://bitcoinmagazine.com/technical/bip-91-has-activated-heres-what-means-and-what-it-does-not"
+      - "https://www.coindesk.com/markets/2017/07/18/coindesk-explainer-how-bip-91-enacts-segwit-while-avoiding-a-bitcoin-split"
+      - "https://www.blockchain.com/explorer/blocks/btc/477120"
+
+  - date: "2017-07-25"
+    title: "Arrestation d'Alexander Vinnik (BTC-e)"
+    text: "À la demande des États-Unis, la police grecque arrête le Russe Alexander Vinnik, accusé d'avoir blanchi plus de 4 milliards de dollars par la plateforme BTC-e, qui ferme aussitôt. Le 27 juillet, le FinCEN inflige 110 003 314 dollars d'amende à BTC-e et 12 millions à Vinnik."
+    sources:
+      - "https://thehackernews.com/2017/07/btc-bitcoin-exchange.html"
+      - "https://www.theregister.com/security/2017/07/27/greek-police-arrest-chap-accused-of-laundering-4bn-of-bitcoin/543616"
+      - "https://www.fincen.gov/news/news-releases/fincen-fines-btc-e-virtual-currency-exchange-110-million-facilitating-ransomware"
+
+  - date: "2017-08-01"
+    title: "Naissance de Bitcoin Cash"
+    text: "Après le bloc 478 558, une partie des mineurs et des nœuds quitte la chaîne Bitcoin. ViaBTC mine le premier bloc de Bitcoin Cash, de 1,9 Mo et 6 985 transactions, impossible sous la limite de 1 Mo de Bitcoin."
+    related: ["bch-bitcoin-cash", "hard-fork", "fork", "blocksize-war", "big-blockers"]
+    sources:
+      - "https://mempool.space/block/478558"
+      - "https://www.blockchain.com/explorer/blocks/bch/478559"
+      - "https://www.heyfuturenexus.com/first-bitcoin-cash-block-mined/"
+
+  - date: "2017-08-09"
+    title: "Verrouillage de SegWit"
+    text: "Sur la période de signalement qui s'achève au bloc 479 807, la quasi-totalité des blocs signalent SegWit, bien au-delà du seuil de 95 % de BIP-0009. Le soft fork se verrouille au bloc 479 808 et s'activera 2 016 blocs plus tard."
+    related: ["segwit", "bip-0141", "bip-0009", "soft-fork"]
+    sources:
+      - "https://mempool.space/block/479808"
+      - "https://bravenewcoin.com/insights/segwit-locking-in-on-bitcoin"
+      - "https://www.coindesk.com/markets/2017/07/27/a-new-segwit-lock-in-period-has-started-and-all-mining-pools-are-signaling/"
+
+  - date: "2017-08-15"
+    title: "Lancement de Blockstream Satellite"
+    text: "Blockstream diffuse la chaîne de blocs de Bitcoin en temps réel depuis trois satellites géostationnaires couvrant l'Afrique, l'Europe, l'Amérique du Sud et l'Amérique du Nord. Le service vise les régions sans accès à internet ou où la bande passante coûte trop cher."
+    related: ["blockstream"]
+    sources:
+      - "https://blockstream.com/press-releases/2017-08-15-announcing-blockstream-satellite-broadcasting-bitcoin-from-space/"
+      - "https://www.satellitetoday.com/technology/2017/08/16/blockstream-unveils-bitcoin-broadcast-service-space/"
+      - "https://siliconangle.com/2017/08/15/bitcoin-heads-space-launch-blockstream-satellite/"
+
+  - date: "2017-08-18"
+    title: "Proposition des PSBT (BIP-0174)"
+    text: "Ava Chow propose sur la liste bitcoin-dev un format standard de transaction partiellement signée, le PSBT. Il permet de faire circuler une transaction non signée entre logiciels, portefeuilles matériels et cosignataires d'un multisig. Le format deviendra le BIP-0174."
+    related: ["psbt", "bip-0174", "hardware-wallet"]
+    sources:
+      - "https://web.archive.org/web/2018/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-August/014838.html"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki"
+
+  - date: "2017-08-24"
+    title: "Activation de SegWit"
+    text: "À 1 h 57 UTC, le bloc 481 824, miné par BTCC, active SegWit (BIP-0141). Le soft fork corrige la malléabilité des transactions et remplace la limite de taille des blocs par une limite de poids de 4 millions d'unités."
+    related: ["segwit", "bip-0141", "soft-fork"]
+    sources:
+      - "https://mempool.space/block/481824"
+      - "https://bitcoinmagazine.com/technical/segregated-witness-activates-bitcoin-what-expect"
+
+  - date: "2017-09-04"
+    title: "La Chine interdit les ICO"
+    text: "La Banque populaire de Chine déclare illégales les levées de fonds par ICO, assimilées à du financement non autorisé. Elle exige leur arrêt immédiat et le remboursement des investisseurs, et rappelle que les monnaies virtuelles n'ont pas le statut de monnaie."
+    sources:
+      - "https://fortune.com/2017/09/04/ico-china-central-bank-ban/"
+      - "https://infobytes.orrick.com/2017-09-15/china-bans-commercial-trading-initial-coin-offerings/"
+
+  - date: "2017-09-14"
+    title: "BTCChina annonce la fin de ses échanges"
+    text: "Dix jours après l'interdiction des ICO, BTCChina, la plus ancienne plateforme chinoise, annonce qu'elle cessera toute activité d'échange pour ses clients chinois le 30 septembre. Son pool de minage n'est pas concerné. Le cours du bitcoin chute dans la journée."
+    sources:
+      - "https://techcrunch.com/2017/09/14/china-bitcoin-exchange-suspended-bttc-china/"
+      - "https://fortune.com/2017/09/14/bitcoin-price-china-btcchina/"
+
+  - date: "2017-09-14"
+    title: "Sortie de Bitcoin Core 0.15.0"
+    text: "Bitcoin Core 0.15.0 améliore l'estimation des frais, rend le relèvement des frais plus accessible et prend en charge plusieurs portefeuilles dans une même installation. La base des pièces non dépensées change de format, ce qui accélère le téléchargement initial et la validation."
+    related: ["bitcoin-core", "frais-de-transaction", "ibd-initial-block-download"]
+    sources:
+      - "https://bitcoincore.org/en/2017/09/01/release-0.15.0/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.15.0"
+
+  - date: "2017-10-24"
+    title: "Fork de Bitcoin Gold"
+    text: "Bitcoin Gold se sépare de la chaîne Bitcoin au bloc 491 407. Les plateformes figent les soldes avant le fork et créditent à leurs clients un BTG pour chaque bitcoin détenu à cet instant."
+    related: ["btg-bitcoin-gold", "hard-fork", "fork"]
+    sources:
+      - "https://mempool.space/block/491407"
+      - "https://www.kucoin.com/announcement/en-btg-hard-fork"
+      - "https://www.ledger.com/status-bitcoin-gold%e2%80%8a-%e2%80%8aas-bitcoin-block-491472"
+
+  - date: "2017-11-08"
+    title: "Abandon de SegWit2x"
+    text: "Mike Belshe, Wences Casares, Jihan Wu, Jeff Garzik, Peter Smith et Erik Voorhees suspendent le hard fork vers des blocs de 2 Mo prévu par l'accord de New York, faute de consensus. Le cours du bitcoin atteint un record le lendemain."
+    related: ["segwit2x", "nya-new-york-agreement", "hard-fork", "blocksize-war"]
+    sources:
+      - "https://web.archive.org/web/2018/https://lists.linuxfoundation.org/pipermail/bitcoin-segwit2x/2017-November/000685.html"
+      - "https://betanews.com/article/controversial-bitcoin-hard-fork-segwit2x-has-been-shelved/"
+      - "https://www.business-standard.com/article/reuters/bitcoin-hits-record-high-after-developers-suspend-plans-to-fork-currency-117110900083_1.html"
+
+  - date: "2017-11-11"
+    title: "Sortie de Bitcoin Core 0.15.1"
+    text: "Bitcoin Core 0.15.1 durcit la gestion des connexions et des blocs invalides, par précaution contre de futurs forks du réseau. Un nœud écarte notamment les pairs qui lui présentent une chaîne avec moins de travail que le minimum attendu."
+    related: ["bitcoin-core", "fork"]
+    sources:
+      - "https://bitcoincore.org/en/2017/11/11/release-0.15.1/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.15.1"
+
+  - date: "2017-11-28"
+    title: "Coinbase doit livrer 14 355 comptes au fisc américain"
+    text: "Une juge fédérale de San Francisco ordonne à Coinbase d'identifier auprès de l'IRS les clients ayant échangé au moins 20 000 dollars de bitcoins sur une année entre 2013 et 2015, soit environ 14 355 comptes. Le fisc réclamait au départ plus d'un million de comptes."
+    related: ["coinbase"]
+    sources:
+      - "https://fortune.com/2017/11/29/irs-coinbase/"
+      - "https://www.proskauer.com/blog/us-court-orders-coinbase-to-share-information-about-account-holders-with-the-irs-but-limits-to-transactions-over-20000"
+
+  - date: "2017-11-29"
+    title: "Le bitcoin dépasse 10 000 dollars"
+    text: "À 1 h 45 UTC, l'indice de CoinDesk passe 10 000 dollars pour la première fois et atteint 10 044 dollars, après des échanges au-dessus de ce seuil en Corée du Sud la veille. Le cours touche 11 377 dollars peu après."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://www.coindesk.com/markets/2017/11/29/its-official-bitcoins-price-makes-history-passing-10k"
+      - "https://www.notebookcheck.net/Bitcoin-breaks-the-US-10000-barrier-for-the-first-time-hits-high-of-US-11377.267450.0.html"
+
+  - date: "2017-12-06"
+    title: "NiceHash piraté de 4 736 BTC"
+    text: "La place de marché de minage NiceHash, basée en Slovénie, suspend son activité après une intrusion. L'adresse de l'attaquant, diffusée par NiceHash, reçoit environ 4 736 BTC, plus de 60 millions de dollars au cours du jour."
+    sources:
+      - "https://mempool.space/address/1EnJHhq8Jq8vDuZA5ahVh6H4t6jh1mB4rq"
+      - "https://www.darkreading.com/cloud-security/bitcoin-miner-nicehash-hacked-possibly-losing-62-million-in-bitcoin"
+      - "https://thehackernews.com/2017/12/bitcoin-mining-hacked.html"
+
+  - date: "2017-12-06"
+    title: "Version 1.0 de la spécification Lightning"
+    text: "ACINQ, Blockstream et Lightning Labs publient la version candidate 1.0 des BOLT et réalisent les premiers paiements Lightning de test sur le réseau principal entre leurs trois implémentations, eclair, c-lightning et lnd."
+    related: ["lightning-network", "bolt", "eclair", "cln-c-lightning", "lnd", "lightning-labs", "blockstream"]
+    sources:
+      - "https://blog.blockstream.com/en-lightning-spec-electrifies-bitcoin-with-release-candidate/"
+      - "https://bitcoinmagazine.com/technical/developers-release-lightning-protocol-10-perform-successful-interoperability-tests"
+
+  - date: "2017-12-06"
+    title: "Steam abandonne le bitcoin"
+    text: "Valve retire le bitcoin des moyens de paiement de Steam, accepté depuis avril 2016. En cause, la volatilité du cours et des frais de transaction montés à près de 20 dollars la semaine précédente, contre environ 0,20 dollar à l'ouverture du service."
+    related: ["frais-de-transaction"]
+    sources:
+      - "https://www.phoronix.com/news/Steam-Stops-Bitcoin"
+      - "https://siliconangle.com/?p=418231"
+
+  - date: "2017-12-10"
+    title: "Cboe lance les premiers contrats à terme sur le bitcoin"
+    text: "À 17 h, heure de Chicago, Cboe ouvre la cotation de ses contrats à terme sur le bitcoin, sous le symbole XBT. La demande fait tomber le site de la Bourse et une hausse de 25 % déclenche une pause de cotation."
+    sources:
+      - "https://ir.cboe.com/news/news-details/2017/Cboe-Bitcoin-Futures-Open-for-Trading-12-11-2017"
+      - "https://thenextweb.com/news/bitcoin-heads-to-wall-street-as-cboe-launches-futures"
+
+  - date: "2017-12-17"
+    title: "Record du bitcoin à 19 783 dollars"
+    text: "Tôt dans la journée, l'indice de CoinDesk atteint 19 783 dollars, son record de l'année, à quelques centaines de dollars de 20 000. Le cours a été multiplié par près de vingt depuis le 1er janvier. Il perd environ 30 % dans les jours suivants."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://fortune.com/2017/12/17/bitcoin-record-high-short-of-20000/"
+      - "https://www.coindesk.com/markets/2017/12/29/from-900-to-20000-bitcoins-historic-2017-price-run-revisited"
+
+  - date: "2017-12-17"
+    title: "Le CME lance ses contrats à terme sur le bitcoin"
+    text: "Une semaine après Cboe, le CME, première Bourse de contrats à terme au monde, ouvre la cotation de son contrat bitcoin, sous le symbole BTC, annoncé le 31 octobre. Le contrat d'échéance janvier ouvre à 20 650 dollars."
+    sources:
+      - "https://www.cnbc.com/2017/12/17/worlds-largest-futures-exchange-set-to-launch-bitcoin-futures-sunday-night.html"
+      - "https://siliconangle.com/2017/12/17/bitcoin-price-drops-cme-group-debuts-futures-trading/"
+      - "https://www.cnbc.com/2017/10/31/cme-plans-to-launch-bitcoin-futures-by-year-end.html"
+
+  - date: "2017-12-19"
+    title: "Faillite de Youbit"
+    text: "Yapian, propriétaire de la plateforme sud-coréenne Youbit, se déclare en faillite après un second piratage dans l'année, qui lui fait perdre 17 % de ses actifs. Les clients ne récupèrent pour l'instant que 75 % de leurs avoirs."
+    sources:
+      - "https://www.cnbc.com/2017/12/19/yapian-youbit-exchange-files-bankruptcy.html"
+      - "https://www.securityweek.com/south-korea-cryptocurrency-exchange-shuts-down-after-hacking/"

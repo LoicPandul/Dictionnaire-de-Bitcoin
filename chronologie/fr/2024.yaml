@@ -1,0 +1,289 @@
+# Chronologie de Bitcoin : 2024.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2024-01-10"
+    title: "La SEC autorise les ETF bitcoin au comptant"
+    text: "La SEC approuve la cotation de 11 ETF bitcoin au comptant, dont ceux de BlackRock, Fidelity et Grayscale, sur NYSE Arca, le Nasdaq et Cboe BZX. La veille, un pirate qui avait pris le compte X de la SEC par *SIM swap* avait annoncé cette approbation trop tôt."
+    related: ["etf"]
+    sources:
+      - "https://www.sec.gov/files/rules/sro/nysearca/2024/34-99306.pdf"
+      - "https://www.kitco.com/news/article/2024-01-10/sec-approves-11-spot-bitcoin-etfs"
+      - "https://www.sec.gov/secgov-x-account"
+      - "https://www.nbcnews.com/tech/crypto/sec-says-not-yet-approve-bitcoin-etf-x-account-was-compromised-rcna133158"
+
+  - date: "2024-01-11"
+    title: "Premier jour de cotation des ETF bitcoin américains"
+    text: "Les 11 ETF bitcoin au comptant ouvrent à la cotation aux États-Unis. Plus de 4,6 milliards de dollars de parts s'échangent dans la journée, une bonne partie sur le fonds de Grayscale, issu de la conversion de son ancien trust."
+    related: ["etf"]
+    sources:
+      - "https://news.bloomberglaw.com/crypto/bitcoin-etf-trades-top-3-billion-in-ground-breaking-first-day"
+      - "https://gulfnews.com/business/markets/us-bitcoin-etfs-see-46b-in-volume-in-first-day-of-trading-1.1705157570382"
+      - "https://cointelegraph.com/markets/spot-bitcoin-etfs-record-notable-volume-on-day-1-btc-price-nearly-hits-49k"
+
+  - date: "2024-03-05"
+    title: "Le bitcoin bat son record de 2021"
+    text: "Le bitcoin dépasse 69 000 dollars et bat pour la première fois son plus haut historique de novembre 2021, porté par les achats des ETF au comptant. L'AFP relève un pic à 69 191,94 dollars, contre 68 991 dollars en 2021."
+    related: ["ath-all-time-high", "etf"]
+    sources:
+      - "https://techcrunch.com/2024/03/05/bitcoin-hits-new-all-time-high-passing-69k-first-time-since-november-2021/"
+      - "https://citizen.digital/news/bitcoin-strikes-record-high-above-69000-n337930"
+
+  - date: "2024-03-14"
+    title: "Craig Wright n'est pas Satoshi Nakamoto, juge la justice britannique"
+    text: "À la fin du procès intenté par la Crypto Open Patent Alliance (COPA), le juge James Mellor, de la High Court de Londres, déclare que Craig Wright n'est ni l'auteur du livre blanc ni le créateur de Bitcoin. Il promet ses motifs détaillés pour plus tard."
+    related: ["nakamoto-satoshi", "bsv-bitcoin-satoshi-vision"]
+    sources:
+      - "https://bitcoinmagazine.com/legal/craig-wright-is-not-the-inventor-of-bitcoin-judge-rules"
+      - "https://cybernews.com/crypto/craig-wright-not-bitcoin-inventor/"
+
+  - date: "2024-03-28"
+    title: "Sam Bankman-Fried condamné à 25 ans de prison"
+    text: "Le fondateur de la plateforme FTX, reconnu coupable de fraude, est condamné à New York à 25 ans de prison et à la confiscation de 11 milliards de dollars. Selon le procureur, il a volé plus de 8 milliards de dollars à ses clients."
+    sources:
+      - "https://web.archive.org/web/20240328174341/https://www.justice.gov/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes"
+      - "https://web.archive.org/web/20240328223344/https://www.upi.com/Top_News/US/2024/03/28/Bankman-Fried-sentencing-crypto-fraud/9891711630007"
+
+  - date: "2024-04-16"
+    title: "Sortie de Bitcoin Core 27.0"
+    text: "Bitcoin Core 27.0 active par défaut le transport P2P chiffré v2 (BIP-0324), déprécie la bibliothèque libbitcoinconsensus et permet d'essayer, sur les réseaux de test seulement, la politique de relais TRUC des transactions en version 3."
+    related: ["bitcoin-core", "p2p-transport-v2", "bip-0324"]
+    sources:
+      - "https://bitcoincore.org/en/2024/04/16/release-27.0/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v27.0"
+      - "https://bitcoinops.org/en/newsletters/2024/04/17/"
+
+  - date: "2024-04-20"
+    title: "Quatrième halving au bloc 840 000 et lancement des Runes"
+    text: "ViaBTC mine le bloc 840 000 à 00 h 09 UTC et la récompense passe de 6,25 à 3,125 BTC. Le protocole de jetons Runes de Casey Rodarmor démarre au même bloc : la course aux premières gravures y porte les frais au record de 37,6 BTC."
+    related: ["halving", "runes", "recompense-de-bloc"]
+    sources:
+      - "https://mempool.space/block/0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5"
+      - "https://www.tradingview.com/news/cointelegraph:4a59c11af094b:0-bitcoin-users-spend-record-2-4m-in-fees-on-halving-block/"
+
+  - date: "2024-04-24"
+    title: "Arrestation des fondateurs de Samourai Wallet"
+    text: "La justice américaine inculpe Keonne Rodriguez et William Lonergan Hill, fondateurs de Samourai Wallet, pour blanchiment et transmission d'argent sans licence. Rodriguez est arrêté en Pennsylvanie, Hill au Portugal, et le service est saisi. L'accusation lui reproche plus de 2 milliards de dollars de transactions illégales."
+    related: ["samourai-wallet", "whirlpool", "coinjoin"]
+    sources:
+      - "https://web.archive.org/web/20240424201942/https://www.justice.gov/usao-sdny/pr/founders-and-ceo-cryptocurrency-mixing-service-arrested-and-charged-money-laundering"
+      - "https://thehackernews.com/2024/04/doj-arrests-founders-of-crypto-mixer.html"
+
+  - date: "2024-04-26"
+    title: "Phoenix et Wasabi quittent les États-Unis"
+    text: "Après l'affaire Samourai, ACINQ annonce qu'il retire son portefeuille Lightning Phoenix des magasins d'applications américains le 3 mai, faute de savoir si un portefeuille non custodial ou un nœud Lightning compte comme *money services business*. Le lendemain, zkSNACKs ferme Wasabi aux utilisateurs américains."
+    related: ["phoenix", "acinq", "wasabi-wallet"]
+    sources:
+      - "https://www.nobsbitcoin.com/phoenix-wallet-to-be-removed-from-us-app-stores-on-may-3/"
+      - "https://cointelegraph.com/news/phoenix-wallet-acinq-zksnacks-wasabi-wallet-united-states-crackdown"
+
+  - date: "2024-04-30"
+    title: "Changpeng Zhao condamné à quatre mois de prison"
+    text: "Le fondateur de Binance, qui avait plaidé coupable en novembre 2023 de ne pas avoir mis en place de programme anti-blanchiment efficace, est condamné à 4 mois de prison par un tribunal fédéral de Seattle. Le parquet avait requis 3 ans."
+    related: ["aml-anti-money-laundering"]
+    sources:
+      - "https://web.archive.org/web/20240501020405/https://blockworks.co/news/changpeng-zhao-sentencing-verdict"
+      - "https://web.archive.org/web/20240430202041/https://www.axios.com/2024/04/30/cz-binance-changpeng-zhao-founder-sentenced"
+
+  - date: "2024-04-30"
+    title: "Roger Ver inculpé pour fraude fiscale"
+    text: "Le département de la Justice américain annonce l'inculpation de Roger Ver, surnommé « Bitcoin Jesus », arrêté le week-end précédent en Espagne. Il aurait caché une partie de ses bitcoins en renonçant à la nationalité américaine en 2014, privant le fisc d'au moins 48 millions de dollars."
+    sources:
+      - "https://web.archive.org/web/20240430182727/https://www.justice.gov/opa/pr/early-bitcoin-investor-charged-tax-fraud"
+      - "https://www.cnbc.com/2024/05/01/doj-charges-bitcoin-jesus-with-48-million-in-tax-fraud-seeks-extradition-.html"
+
+  - date: "2024-04-30"
+    title: "Premiers ETF bitcoin au comptant à Hong Kong"
+    text: "La Bourse de Hong Kong ouvre la cotation de six ETF au comptant sur le bitcoin et l'ether. Ce sont les premiers en Asie accessibles aux particuliers."
+    related: ["etf"]
+    sources:
+      - "https://www.cnbc.com/2024/04/30/asias-first-spot-bitcoin-and-ether-etfs-debut-in-hong-kong.html"
+      - "https://financeasia.com/article/spot-virtual-asset-etfs-start-trading-on-hkex/495780"
+
+  - date: "2024-05-06"
+    title: "OP_CAT devient BIP-0347"
+    text: "Le dépôt des BIP fusionne BIP-0347, d'Ethan Heilman et Armin Sabouri, qui propose de réactiver par soft fork, dans tapscript seulement, l'opcode de concaténation `OP_CAT`, désactivé en 2010 avec 15 autres opcodes."
+    related: ["op-cat-0x7e", "bip-0347"]
+    sources:
+      - "https://github.com/bitcoin/bips/pull/1525"
+      - "https://bitcoinops.org/en/newsletters/2024/05/15/"
+
+  - date: "2024-05-08"
+    title: "Les *silent payments* deviennent BIP-0352"
+    text: "Le dépôt des BIP fusionne BIP-0352, les *silent payments* : le destinataire publie une adresse statique, et chaque payeur en dérive une adresse on-chain unique, sans interaction avec lui."
+    related: ["silent-payments", "bip-0352"]
+    sources:
+      - "https://github.com/bitcoin/bips/pull/1458"
+      - "https://bitcoinops.org/en/newsletters/2024/05/17/"
+
+  - date: "2024-05-20"
+    title: "Jugement écrit contre Craig Wright"
+    text: "Dans un jugement de 231 pages, le juge Mellor expose ses motifs : Craig Wright a menti au tribunal « de manière extensive et répétée » et a forgé des documents à grande échelle pour soutenir sa prétention d'être Satoshi Nakamoto."
+    related: ["nakamoto-satoshi", "bsv-bitcoin-satoshi-vision"]
+    sources:
+      - "https://bitcoinmagazine.com/legal/craig-wright-lied-and-forged-documents-judge-rules"
+      - "https://www.globallegalpost.com/news/lies-and-forged-documents-uk-judge-skewers-computer-scientists-claim-he-invented-bitcoin-system-1773801012"
+      - "https://www.twobirds.com/en/news-and-deals/2024/uk/written-judgment-delivered-in-copa-v-wright-trial"
+
+  - date: "2024-05-30"
+    title: "LND 0.18 ajoute les frais de routage entrants"
+    text: "Lightning Labs publie LND 0.18.0, qui introduit en expérimental les frais de routage entrants, ainsi que la recherche de chemins vers des *blinded paths* et les watchtowers pour les canaux Taproot simples."
+    related: ["lnd", "blinded-paths", "taproot-channel"]
+    sources:
+      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.18.0-beta"
+      - "https://bitcoinops.org/en/newsletters/2024/05/31/"
+
+  - date: "2024-05-31"
+    title: "Piratage de DMM Bitcoin"
+    text: "La plateforme japonaise DMM Bitcoin annonce la fuite de 4 502,9 BTC, environ 48,2 milliards de yens, et promet de couvrir ses clients. En décembre, le FBI et la police japonaise attribuent ce vol de 308 millions de dollars au groupe nord-coréen TraderTraitor."
+    sources:
+      - "https://www.itmedia.co.jp/news/article/2405/31/1240531197/"
+      - "https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom"
+
+  - date: "2024-06-01"
+    title: "Wasabi éteint son coordinateur de coinjoin"
+    text: "Comme annoncé le 2 mai, zkSNACKs, la société derrière Wasabi Wallet, arrête son service de coordination de coinjoin. Wasabi reste utilisable comme portefeuille, mais Trezor Suite et BTCPay Server perdent aussi l'accès à ce coordinateur."
+    related: ["wasabi-wallet", "coinjoin", "coordinateur-de-coinjoin"]
+    sources:
+      - "https://web.archive.org/web/20240504135527/https://blog.wasabiwallet.io/zksnacks-is-discontinuing-its-coinjoin-coordination-service-1st-of-june/"
+      - "https://cointelegraph.com/news/bitcoin-privacy-survive-coinjoin-closure"
+
+  - date: "2024-07-03"
+    title: "Bitcoin Core publie dix anciennes failles"
+    text: "Bitcoin Core rend publiques 10 vulnérabilités qui touchent des versions antérieures à 0.21.0, en fin de vie depuis près de deux ans. La plus grave permettait une exécution de code à distance par la bibliothèque miniupnpc, corrigée en 2015."
+    related: ["bitcoin-core"]
+    sources:
+      - "https://bitcoincore.org/en/2024/07/03/disclose_upnp_rce/"
+      - "https://bitcoinops.org/en/newsletters/2024/07/05/"
+
+  - date: "2024-07-05"
+    title: "Mt. Gox commence à rembourser en bitcoins"
+    text: "Dix ans après la faillite, le syndic Nobuaki Kobayashi effectue les premiers remboursements en bitcoins et en bitcoin cash par l'intermédiaire de plateformes désignées. Selon Arkham Intelligence, les portefeuilles de la plateforme détiennent encore 138 985 BTC."
+    related: ["mtgox"]
+    sources:
+      - "https://www.mtgox.com/img/pdf/20240705_01_announcement_en.pdf"
+      - "https://www.nbcnews.com/business/markets/mt-gox-begins-repaying-bitcoin-creditors-decade-after-collapse-rcna160489"
+
+  - date: "2024-07-12"
+    title: "La Saxe finit de vendre ses bitcoins saisis"
+    text: "Le parquet général de Dresde achève la vente d'urgence d'environ 49 858 BTC saisis dans l'affaire du site pirate movie2k, commencée le 19 juin avec l'aide de l'office fédéral de police criminelle. Elle rapporte 2,64 milliards d'euros."
+    sources:
+      - "https://medienservice.sachsen.de/medien/news/1077662/download_pdf"
+      - "https://cointelegraph.com/news/german-government-offloads-final-bitcoin-holdings"
+      - "https://web.de/magazine/panorama/ermittler-verkaufen-beschlagnahmte-bitcoins-264-milliarden-euro-39896332"
+
+  - date: "2024-07-27"
+    title: "Donald Trump promet une réserve stratégique de bitcoins"
+    text: "À la conférence Bitcoin 2024 de Nashville, Donald Trump, candidat républicain, promet s'il est élu de garder 100 % des bitcoins de l'État fédéral comme cœur d'une réserve stratégique, et de renvoyer Gary Gensler, président de la SEC."
+    related: ["reserve-strategique-de-bitcoin"]
+    sources:
+      - "https://www.wired.com/story/donald-trump-strategic-bitcoin-stockpile-bitcoin-2024/"
+      - "https://cointelegraph.com/news/trump-implement-bitcoin-strategic-reserve-elected-president"
+
+  - date: "2024-07-31"
+    title: "Cynthia Lummis dépose le BITCOIN Act"
+    text: "La sénatrice du Wyoming dépose au Sénat américain un projet de loi qui créerait une réserve stratégique de bitcoins. L'État y achèterait jusqu'à 200 000 BTC par an pendant cinq ans, soit 1 million de BTC."
+    related: ["reserve-strategique-de-bitcoin"]
+    sources:
+      - "https://www.govinfo.gov/content/pkg/BILLS-118s4912is/html/BILLS-118s4912is.htm"
+      - "https://cointelegraph.com/news/sen-lummis-introduces-bitcoin-strategic-reserve-bill-senate"
+
+  - date: "2024-08-05"
+    title: "Krach du 5 août"
+    text: "Le bitcoin perd plus de 18 % en 24 heures et passe sous 50 000 dollars, au plus bas depuis février. La chute accompagne une panique mondiale, quand les spéculateurs qui empruntaient en yens soldent leurs positions après la hausse de taux de la Banque du Japon."
+    sources:
+      - "https://coindesk.com/markets/2024/08/05/bitcoin-price-crash-to-50k-dashes-carry-traders-hopes"
+      - "https://decrypt.co/243249/what-is-carry-trade-japanese-yen-bitcoin-crash"
+
+  - date: "2024-08-08"
+    title: "La Russie légalise le minage"
+    text: "Vladimir Poutine signe la loi qui légalise le minage de cryptomonnaies en Russie à partir du 1er novembre 2024. Le texte définit le minage et les pools, et permet au gouvernement de l'interdire dans certaines régions."
+    related: ["minage", "mining-pool"]
+    sources:
+      - "https://interfax.com/newsroom/top-stories/104968/"
+      - "https://decrypt.co/243821/putin-signs-bill-green-light-crypto-mining-russia"
+
+  - date: "2024-09-24"
+    title: "BOLT-12 entre dans la spécification Lightning"
+    text: "Les mainteneurs de la spécification Lightning fusionnent BOLT-12, les *offers* proposées en 2019. Deux nœuds y négocient la facture par messages en oignon, et le destinataire peut cacher son nœud derrière des *blinded paths*."
+    related: ["bolt-12", "offer", "blinded-paths", "lightning-network"]
+    sources:
+      - "https://github.com/lightning/bolts/pull/798"
+      - "https://bitcoinops.org/en/newsletters/2024/10/04/"
+
+  - date: "2024-10-02"
+    title: "Sortie de Bitcoin Core 28.0"
+    text: "Bitcoin Core 28.0 ajoute testnet4 (BIP-0094), le relais opportuniste de paquets d'un parent et un enfant, et relaie par défaut les transactions TRUC (BIP-0431) et les sorties d'ancrage P2A. Le full-RBF devient le comportement par défaut."
+    related: ["bitcoin-core", "testnet4", "package-relay", "full-rbf"]
+    sources:
+      - "https://bitcoincore.org/en/2024/10/02/release-28.0/"
+      - "https://bitcoinops.org/en/newsletters/2024/10/04/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v28.0"
+
+  - date: "2024-10-08"
+    title: "Le documentaire de HBO désigne Peter Todd"
+    text: "HBO diffuse « Money Electric », de Cullen Hoback, qui présente le développeur Peter Todd comme Satoshi Nakamoto. Todd dément et compare les indices du film à la pensée conspirationniste de QAnon."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://fortune.com/crypto/2024/10/08/who-invented-bitcoin-hbo-peter-todd/"
+      - "https://www.theregister.com/2024/10/09/satoshi_nakamoto_suspect_hbo_bitcoin/"
+
+  - date: "2024-10-30"
+    title: "MicroStrategy annonce son plan 21/21"
+    text: "MicroStrategy, qui détient 252 220 BTC, annonce vouloir lever 42 milliards de dollars en trois ans, 21 milliards en actions et 21 milliards en titres de dette, pour acheter encore des bitcoins."
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1050446/000095017024118951/mstr-ex99_1.htm"
+      - "https://cointelegraph.com/news/microstrategy-42b-capital-bitcoin-purchase-michael-saylor"
+
+  - date: "2024-11-06"
+    title: "Donald Trump élu, le bitcoin à un nouveau record"
+    text: "Au lendemain du scrutin, Donald Trump est déclaré vainqueur de l'élection présidentielle américaine. Le bitcoin monte jusqu'au record de 75 345 dollars."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://cointelegraph.com/news/trump-declares-victory-crypto-community"
+      - "https://www.business-standard.com/amp/markets/cryptocurrency/bitcoin-hits-record-as-traders-bet-trump-s-victory-will-boost-crypto-124110601337_1.html"
+
+  - date: "2024-11-08"
+    title: "L'opérateur de Bitcoin Fog condamné"
+    text: "Roman Sterlingov, reconnu coupable en mars, est condamné à Washington à 12 ans et demi de prison pour avoir exploité le mixeur Bitcoin Fog de 2011 à 2021. Le service a traité environ 1,2 million de bitcoins, soit 400 millions de dollars au moment des transactions."
+    related: ["bitcoin-fog", "mixage"]
+    sources:
+      - "https://web.archive.org/web/20241112223112/https://www.justice.gov/usao-dc/pr/operator-bitcoin-fog-sentenced-more-12-years-prison-running-notorious-darknet"
+      - "https://www.infosecurity-magazine.com/news/man-12-years-running-crypto-mixer"
+
+  - date: "2024-11-14"
+    title: "Le pirate de Bitfinex condamné à cinq ans"
+    text: "Ilya Lichtenstein écope de 5 ans de prison fédérale pour avoir blanchi les 119 754 BTC qu'il avait volés en piratant la plateforme Bitfinex en 2016."
+    sources:
+      - "https://web.archive.org/web/20241115005558/https://www.justice.gov/usao-dc/pr/bitfinex-hacker-sentenced-money-laundering-conspiracy-involving-billions-stolen"
+      - "https://www.bbc.com/news/articles/c2dl70wed1lo"
+
+  - date: "2024-12-05"
+    title: "Le bitcoin dépasse 100 000 dollars"
+    text: "Pour la première fois, le bitcoin franchit 100 000 dollars, quelques heures après que Donald Trump a choisi Paul Atkins, favorable aux cryptomonnaies, pour remplacer Gary Gensler à la tête de la SEC."
+    related: ["ath-all-time-high"]
+    sources:
+      - "https://www.nbcnews.com/business/markets/bitcoin-100000-rcna181008"
+      - "https://cointelegraph.com/news/bitcoin-hits-100k-btc-price-hit-a-new-all-time-high"
+
+  - date: "2024-12-13"
+    title: "MicroStrategy entre au Nasdaq-100"
+    text: "Nasdaq annonce l'entrée de MicroStrategy dans l'indice Nasdaq-100 le 23 décembre, avec Palantir et Axon. L'entreprise de Michael Saylor détient alors 423 650 BTC."
+    sources:
+      - "https://www.cnbc.com/2024/12/13/bitcoin-proxy-microstrategy-to-join-the-nasdaq-100-and-heavily-traded-qqq-etf.html"
+      - "https://cointelegraph.com/news/michael-saylor-microstrategy-mstr-stock-nasdaq-100"
+
+  - date: "2024-12-18"
+    title: "Le Salvador recule sur le bitcoin pour un prêt du FMI"
+    text: "Le FMI conclut avec le Salvador un accord technique pour un prêt d'environ 1,4 milliard de dollars sur 40 mois. En échange, l'acceptation du bitcoin par le secteur privé devient facultative, les impôts se paient en dollars et l'État se retire peu à peu du portefeuille Chivo."
+    sources:
+      - "https://www.imf.org/en/news/articles/2024/12/18/pr-24485-el-salvador-imf-reaches-staff-level-agreement-on-an-eff-arrangement"
+      - "https://cointelegraph.com/news/el-salvador-bitcoin-payment-voluntary-imf-loan-deal"
+
+  - date: "2024-12-30"
+    title: "MiCA s'applique aux plateformes crypto européennes"
+    text: "Le règlement européen MiCA entre pleinement en application : les plateformes d'échange et autres prestataires de services sur cryptoactifs doivent obtenir un agrément. Chaque État membre peut accorder une période transitoire, au plus tard jusqu'au 1er juillet 2026."
+    sources:
+      - "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+      - "https://www.walkersglobal.com/Insights/2025/01/The-EUs-crypto-regulation-MiCA-is-now-fully-applicable"
