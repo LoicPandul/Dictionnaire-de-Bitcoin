@@ -1,0 +1,1 @@
+Application Android qui garde la clé privée Nostr de l'utilisateur et signe les événements à la demande des autres applications, sur le téléphone (NIP-55) ou à distance comme bunker (NIP-46), sans jamais leur donner la clé.

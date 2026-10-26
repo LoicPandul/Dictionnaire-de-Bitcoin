@@ -1,0 +1,10 @@
+uuid: "3f89f2e0-6b0e-48fa-9ae5-9c5e1c16fe10"
+title: "NSEC.APP"
+slug: "nsec-app"
+category: "APPLICATION NOSTR"
+cross_references:
+  - "21b226c3-4342-421b-9da4-cfecede2212a"
+  - "fd6f119c-86ad-4d1c-be41-26d2884a3378"
+  - "d21eebdf-6cde-4d6c-b655-fe1311db3d9d"
+  - "acd9c2e0-892d-47ee-b9cf-086ba4509aa8"
+version: "1"

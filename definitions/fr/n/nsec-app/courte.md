@@ -1,0 +1,1 @@
+Gestionnaire de clés Nostr en application web, qui garde la `nsec` de l'utilisateur dans son navigateur et signe à distance, par NIP-46, pour les autres applications. Il est développé par l'équipe de Nostr.Band.

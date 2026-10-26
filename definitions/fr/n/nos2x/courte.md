@@ -1,0 +1,1 @@
+Extension de navigateur qui garde la clé privée Nostr de l'utilisateur et signe les événements à la demande des sites web, par l'objet `window.nostr` de NIP-07, sans jamais leur donner la clé. Elle est écrite par fiatjaf.

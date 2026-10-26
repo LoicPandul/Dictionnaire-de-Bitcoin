@@ -1,0 +1,1 @@
+Client Nostr pour iPhone, iPad et Mac créé en 2022 par William Casarin, coauteur de NIP-57 qui définit les zaps. Il présente Nostr comme un réseau social proche de Twitter et fait payer les zaps par un portefeuille Lightning externe.

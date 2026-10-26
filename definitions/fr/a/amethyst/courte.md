@@ -1,0 +1,1 @@
+Client Nostr pour Android, puis pour ordinateur, créé en 2023 par Vitor Pamplona, qui couvre bien plus que le fil social : messages privés, articles longs, zaps, portefeuille Cashu. Son auteur a écrit plusieurs NIP, dont NIP-17 (messages privés).

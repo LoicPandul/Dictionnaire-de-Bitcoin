@@ -1,0 +1,1 @@
+Bibliothèque TypeScript de Pablo Fernandez pour construire des applications Nostr : elle gère les relais, les abonnements, la signature et le modèle *outbox*, et fournit les zaps et un portefeuille Cashu.
