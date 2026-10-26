@@ -56,7 +56,12 @@ function pictoCollector() {
 // Largeur en em du titre composé en Archivo Titre (approche −0,02 em), pour la taille en unités de conteneur :
 // la plus petite largeur qui tient en deux lignes au plus (les coupures possibles : espace, « _ », « - »).
 const emWidth = (s) => [...s].reduce((w, ch) => w + (advances[ch] ?? 0.55) - 0.02, 0);
+// Les opcodes (« OP_RETURN – 0x6A ») : le nom fait la vedette, le code passe dessous en petit, comme une étiquette.
+const codeVedette = (title) => affiche(title).match(/^(.+)\u00a0– (0x[0-9A-Fa-f]+)$/);
 export function headwordEm(raw) {
+  // Un opcode tient sur une ligne (« OP_ » ne reste pas seul) : sa largeur entière fixe la taille.
+  const code = codeVedette(raw);
+  if (code) return Math.round(emWidth(code[1]) * 1000) / 1000;
   const title = affiche(raw);
   const pieces = title.match(/[^ _-]+[_-]*\s*|[_-]+\s*|\s+/g) || [title];
   let best = emWidth(title.trim());
@@ -80,6 +85,9 @@ const hd = (t) => h(fr(t));
 export const resume = (t, n = 84) => {
   t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
   if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
+  // Une phrase entière qui tient, même courte, vaut mieux qu'une coupe : pas de points de suspension.
+  const fin = Math.max(...[...t.slice(0, n + 1).matchAll(/[.!?](?=\s)/g)].map((m) => m.index));
+  if (fin > n * 0.45) return t.slice(0, fin + 1);
   let s = t.slice(0, n + 1);
   s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
   while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
@@ -92,11 +100,14 @@ const insecable = (t) => h(affiche(t)).replace(/-/g, '\u2011').replace(/– /g, 
 
 // Les mots d'une vedette, chacun dans son masque, pour qu'ils se posent l'un après l'autre.
 // On coupe sur les espaces ordinaires du titre affiché : « OP_RETURN – 0x6A » garde son tiret avec le mot qui précède.
-const headwordWords = (title) =>
-  affiche(title)
+const headwordWords = (title) => {
+  const code = codeVedette(title);
+  const mots = (code ? code[1] : affiche(title))
     .split(' ')
     .map((w, i) => `<span class="vw" style="--i:${i}">${breakable(w)}</span>`)
     .join(' ');
+  return code ? `${mots}<span class="vedette-code"><span class="masque">\u00a0– </span>${code[2]}</span>` : mots;
+};
 
 // ---------------------------------------------------------------- Tête de page
 function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = palette.blanc, type = 'website', preloadImage = '', extraJs = '' }) {
@@ -688,7 +699,7 @@ export function homePage(data, { assets, jsonLd }) {
 
 <section class="livre" id="livre" aria-labelledby="livre-titre">
   <div class="livre-haut">
-    <figure class="livre-volume"><video muted loop playsinline preload="none" poster="/video/feuilletage.webp" width="320" height="494" aria-label="Les pages du livre imprimé qui défilent, de la lettre A à la lettre Z" data-boucle><source src="/video/feuilletage.mp4" type="video/mp4"></video></figure>
+    <figure class="livre-volume"><video muted loop playsinline preload="none" poster="/video/feuilletage.webp" width="640" height="990" aria-label="Les pages du livre imprimé qui défilent, de la lettre A à la lettre Z" data-boucle><source src="/video/feuilletage.mp4" type="video/mp4"></video></figure>
     <div class="livre-texte">
       <h2 class="titre" id="livre-titre">Le livre</h2>
       <p class="enonce">Les définitions existent aussi sur papier&#8239;: l’édition 2026 compte 594 pages, en broché ou en relié. L’édition 2027 est en préparation.</p>

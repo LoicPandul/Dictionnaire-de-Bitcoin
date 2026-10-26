@@ -81,12 +81,12 @@ def riffle():
     frames = os.path.join(TMP, 'riffle')
     os.makedirs(frames, exist_ok=True)
     for k, n in enumerate(range(14, 581, 14)):
-        run('pdftoppm', '-r', '80', '-png', '-f', str(n), '-l', str(n), '-scale-to-x', '440', '-scale-to-y', '-1', pdf, os.path.join(frames, 'r'))
+        run('pdftoppm', '-r', '200', '-png', '-f', str(n), '-l', str(n), '-scale-to-x', '1280', '-scale-to-y', '-1', pdf, os.path.join(frames, 'r'))
         src = [p for p in os.listdir(frames) if p.startswith('r-')][0]
         os.replace(os.path.join(frames, src), os.path.join(frames, f'f{k:03d}.png'))
-    run('ffmpeg', '-loglevel', 'error', '-y', '-framerate', '9', '-i', os.path.join(frames, 'f%03d.png'), '-vf', 'scale=320:-2,format=gray,format=yuv420p',
-        '-c:v', 'libx264', '-preset', 'veryslow', '-crf', '31', '-movflags', '+faststart', '-an', os.path.join(video, 'feuilletage.mp4'))
-    run('ffmpeg', '-loglevel', 'error', '-y', '-i', os.path.join(frames, 'f000.png'), '-vf', 'scale=320:-2,format=gray', '-quality', '78', os.path.join(video, 'feuilletage.webp'))
+    run('ffmpeg', '-loglevel', 'error', '-y', '-framerate', '9', '-i', os.path.join(frames, 'f%03d.png'), '-vf', 'scale=640:-2,format=gray,format=yuv420p',
+        '-c:v', 'libx264', '-preset', 'veryslow', '-crf', '30', '-movflags', '+faststart', '-an', os.path.join(video, 'feuilletage.mp4'))
+    run('ffmpeg', '-loglevel', 'error', '-y', '-i', os.path.join(frames, 'f000.png'), '-vf', 'scale=640:-2,format=gray', '-quality', '80', os.path.join(video, 'feuilletage.webp'))
 
 
 if __name__ == '__main__':

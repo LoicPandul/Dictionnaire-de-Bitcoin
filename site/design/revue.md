@@ -122,3 +122,26 @@ Ce qui a été corrigé après ce tour :
 - **Lettre** : les en-têtes de groupe ne collent plus sous la rangée des sous-groupes, qui marque déjà le groupe lu.
 - **Accueil** : lettres de la tranche de largeur égale ; respiration entre sections ramenée de 144 à 112 px ; mots cités des catégories moins gras, retirés sur téléphone.
 - **Définition** : page tournée compacte sur téléphone (nom seul) ; bouton « Haut » dès le deuxième écran.
+
+### Tour 6 (nouveau relecteur indépendant, relevés du tour 5 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,8 | 8,3 |
+| Définition | 7,7 | 8,2 |
+| Lettre | 7,4 | 7,8 |
+| Catégorie | 7,3 | 7,7 |
+| Recherche | 7,8 | 8,0 |
+| 404 | 7,8 | 8,2 |
+
+Note globale : 7,9. « Cohérent, solide et sans bug visible, mais encore plus propre qu'excitant. » Il confirme les résumés coupés au mot, la tranche régulière, la recherche nettoyée (« cle », « clef », « hd wallet »), le bouton « Haut » qui ne couvre plus la lecture. Restaient : la vidéo du livre floue, le titre d'opcode, des résumés qui finissent mal, le mobile trop long (ouverture de catégorie, catégories de l'accueil), deux couleurs dans les titres de BIP.
+
+Ce qui a été corrigé après ce tour :
+
+- **Livre** : boucle « feuilletage » refaite en 640 px (au lieu de 320), nette sur les écrans haute densité.
+- **Définition** : les opcodes composent leur nom sur une ligne, et le code passe dessous en étiquette monospace (« OP_CHECKLOCKTIMEVERIFY », puis « 0xB1 ») ; sur téléphone, les repères montrent « ← Précédent » en petit et le nom dessous ; page tournée plus proche du texte ; résumé du mot suivant aligné à gauche.
+- **Résumés** : une phrase entière qui tient passe sans points de suspension.
+- **Lettre** : sujet des BIP en encre, à côté du numéro en Figue.
+- **Catégorie** : « Pour commencer » en noms seuls sur téléphone, pictogramme plus petit ; en-têtes de groupe soulignés d'un filet au lieu d'un fondu qui laissait le texte à demi visible.
+- **Accueil** : 19 catégories en deux colonnes sur téléphone ; mots cités en encre soulignée Figue, plus petits ; boutons du mot du jour pleine largeur sur téléphone ; aperçu de la tranche moins haut.
+- **404** : jaquette plus basse sur téléphone.

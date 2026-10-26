@@ -10,6 +10,9 @@
   const resume = (t, n = 84) => {
     t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
     if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
+    // Une phrase entière qui tient, même courte, vaut mieux qu'une coupe : pas de points de suspension.
+    const fin = Math.max(...[...t.slice(0, n + 1).matchAll(/[.!?](?=\s)/g)].map((m) => m.index));
+    if (fin > n * 0.45) return t.slice(0, fin + 1);
     let s = t.slice(0, n + 1);
     s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
     while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
