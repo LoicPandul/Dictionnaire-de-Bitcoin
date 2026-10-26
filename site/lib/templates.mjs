@@ -78,7 +78,7 @@ export function headwordEm(raw) {
 export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
 const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
-export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
+export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
 const hd = (t) => h(fr(t));
 // Résumé coupé au mot, jamais sur un mot-outil, un nombre entamé ni une lettre seule (« que… », « 500 00… », « et M… »).
 // La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.
@@ -296,7 +296,7 @@ function entry(def, picto, { showCategory = true } = {}) {
   const bip = /^BIP-\d/.test(def.title);
   const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
   return `<li><a class="entree" href="/${def.slug}/"${apercuAttr(def)}>
-  <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}${sujet ? ` <span class="entree-sujet">${sujet}</span>` : ''}</span>
+  <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}</span>${sujet ? `<span class="entree-sujet">${sujet}</span>` : ''}
   ${def.description ? `<span class="entree-desc">${hd(resume(def.description, 120))}</span>` : ''}
 </a></li>`;
 }

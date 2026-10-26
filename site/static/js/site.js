@@ -248,10 +248,12 @@
 
   // ------------------------------------------------------------ Barre A–Z : la lettre courante visible sur téléphone
   // On centre la lettre courante en faisant défiler la barre elle-même (scrollIntoView déplacerait aussi la page).
+  // Centre un élément dans sa rangée qui défile (offsetLeft ne convient pas : les puces ont leur propre repère).
+  const centrer = (rangee, el) => { rangee.scrollLeft += el.getBoundingClientRect().left - rangee.getBoundingClientRect().left - rangee.clientWidth / 2 + el.offsetWidth / 2; };
   const courante = d.querySelector('.index-az a[aria-current]');
   if (courante) {
     const ol = courante.closest('ol');
-    ol.scrollLeft = courante.offsetLeft - ol.clientWidth / 2 + courante.offsetWidth / 2;
+    centrer(ol, courante);
   }
   const motCourant = d.querySelector('[data-mot]');
   const lireDerniers = () => { try { return JSON.parse(localStorage.getItem('derniers') || '[]'); } catch { return []; } };
@@ -277,7 +279,7 @@
       clearTimeout(minuteur);
       minuteur = setTimeout(() => {
         lien = a;
-        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.textContent.replace(/^Mot (précédent|suivant) : /, ''))}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${esc(a.dataset.apercu)}</p>`;
+        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.textContent.replace(/^Mot (précédent|suivant) : /, ''))}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${esc(a.dataset.apercu.replace(/'/g, '’').replace(/\.\.\./g, '…'))}</p>`;
         carte.hidden = false;
         a.setAttribute('aria-describedby', 'carte-apercu');
         const r = a.getBoundingClientRect();
@@ -446,7 +448,7 @@
   const surligner = (title, at, len) => { title = affiche(title); return at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`; };
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
-  <a href="/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt)}</span>` : ''}${t.desc ? `<span class="resultat-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`;
+  <a href="/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt.replace(/'/g, '’'))}</span>` : ''}${t.desc ? `<span class="resultat-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`;
   const pluriel = (n, un, plusieurs) => `${n.toLocaleString('fr-FR')} ${n > 1 ? plusieurs : un}`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
@@ -708,7 +710,7 @@
       marque = puce;
       if (!puce) return;
       puce.setAttribute('aria-current', 'location');
-      sousIndex.scrollLeft = puce.offsetLeft - sousIndex.clientWidth / 2 + puce.offsetWidth / 2;
+      centrer(sousIndex, puce);
     };
     addEventListener('scroll', () => requestAnimationFrame(marquer), { passive: true });
   }

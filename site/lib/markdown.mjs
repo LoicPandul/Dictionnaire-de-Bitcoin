@@ -49,7 +49,7 @@ const restoreMath = (html, formulas) =>
 const apostrophes = (html) =>
   html
     .split(/(<pre[\s\S]*?<\/pre>|<code[\s\S]*?<\/code>)/)
-    .map((part, i) => (i % 2 ? part : part.replace(/&#39;/g, '’').replace(/(>[^<]*)/g, (t) => t.replace(/'/g, '’'))))
+    .map((part, i) => (i % 2 ? part : part.replace(/&#39;/g, '’').replace(/(^|>)([^<]*)/g, (m, a, t) => a + t.replace(/'/g, '’'))))
     .join('');
 
 // linker (facultatif) : ajoute les renvois dans le texte, avant que les formules soient remises en place.

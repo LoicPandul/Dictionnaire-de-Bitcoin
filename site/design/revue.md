@@ -166,3 +166,25 @@ Ce qui a été corrigé après ce tour :
 - **Lettre** : titre de BIP d'une seule couleur ; pictogrammes des listes en encre, un peu plus grands ; le groupe marqué dans la rangée suit le tiers haut de l'écran.
 - **404** : colonne de texte contenue (le formulaire ne dépasse plus de 6 px à droite), titre sous les racines sur téléphone.
 - **Accueil** : boutons d'achat du livre l'un sous l'autre sur téléphone.
+
+### Tour 8 (nouveau relecteur indépendant, relevés du tour 7 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,7 | 8,2 |
+| Définition | 7,7 | 8,1 |
+| Lettre | 7,2 | 7,6 |
+| Catégorie | 7,4 | 7,6 |
+| Recherche | 7,8 | 8,0 |
+| 404 | 7,5 | 8,0 |
+
+Note globale : 7,8. Il confirme les apostrophes, la carte « Mot suivant », le formulaire de la 404, « Lire la suite » qui déplie bien. Il relève un vrai défaut : sur téléphone, la rangée des sous-groupes ne défilait jamais vers le groupe marqué. Restaient aussi : apostrophes droites après un code dans le corps des définitions, trois points droits dans les cartes d'aperçu, titres de BIP en deux poids, terme cherché trop peu marqué, noms des voisins tronqués sur téléphone, tranche de position trop pâle, pages du livre illisibles sur téléphone.
+
+Ce qui a été corrigé après ce tour :
+
+- **Lettre** : la rangée centre maintenant la puce marquée (le calcul par `offsetLeft` donnait toujours 0 ; il passe par les rectangles affichés), au chargement comme au défilement ; sujet des BIP sur sa propre ligne, en petit, sous le numéro.
+- **Typographie** : apostrophes aussi après un code en ligne (0 apostrophe droite hors code sur les 1 408 pages, vérifié) ; « ... » remplacés par « … » partout, cartes d'aperçu comprises.
+- **Définition** : noms des voisins en entier sur téléphone (trois lignes au plus, coupés au « _ ») ; tranche de position pleine.
+- **Recherche** : terme cherché sur un léger fond Figue, sans changer la couleur du texte.
+- **Catégorie** : « Pour commencer » en liste verticale de quatre noms sur téléphone.
+- **Accueil** : bande des pages du livre retirée sur téléphone.

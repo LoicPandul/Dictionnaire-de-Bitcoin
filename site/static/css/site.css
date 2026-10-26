@@ -520,7 +520,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .page-livre:nth-child(5) { margin-top: 30%; }
 .page-livre:nth-child(6) { margin-top: 8%; }
 .page-livre img { width: 100%; background: var(--blanc); }
-@media (max-width: 639px) { .pages { grid-template-columns: repeat(3, minmax(0, 1fr)); height: 300px; } .page-livre:nth-child(n + 4) { display: none; } }
+@media (max-width: 639px) { .pages { display: none; } }
 
 /* Un projet ouvert : le texte, et le vrai fichier d'une définition. */
 .ouvert { display: grid; gap: 40px; padding-bottom: var(--section); }
@@ -560,7 +560,9 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .reperes-court { display: block; order: -1; font-size: 13px; font-weight: 600; font-stretch: 100%; color: var(--doux); }
   .reperes-prec .reperes-court::before { content: '← '; }
   .reperes-suiv .reperes-court::after { content: ' →'; }
-  .reperes-nom { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .reperes-nom { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; white-space: normal; overflow-wrap: break-word; font-size: 14px; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+  .reperes a { white-space: normal; text-decoration: none; }
+  .reperes a wbr { display: inline; }
 }
 .reperes-lettre { display: grid; place-items: center; width: 44px; height: 44px; background: var(--choisi); color: var(--sur-choisi); font: 900 26px/1 var(--archivo); font-stretch: 62%; text-decoration: none; }
 @media (hover: hover) { .reperes-lettre:hover { background: var(--lien-survol); color: var(--fond); } }
@@ -587,7 +589,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 /* Le signet : la tranche du livre, et un ruban posé à la place du mot. */
 .signet-tranche { position: relative; height: 52px; }
-.signet-tranche::before { content: ''; position: absolute; inset: 0; background: var(--doux); opacity: 0.55; -webkit-mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; }
+.signet-tranche::before { content: ''; position: absolute; inset: 0; background: var(--doux); -webkit-mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; }
 .signet-ruban { position: absolute; top: -10px; left: var(--pos); width: 14px; height: calc(100% + 22px); margin-left: -7px; background: var(--lien); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 7px), 0 100%); }
 .signet-legende { font-size: var(--t-note); color: var(--doux); line-height: 1.4; }
 .signet-legende sup { font-size: 0.7em; line-height: 0; }
@@ -771,7 +773,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .cat-debut { width: 100%; margin-top: 8px; }
 .cat-debut-titre { font-size: var(--t-nom); font-weight: 700; margin-bottom: 4px; }
 .cat-debut ul { display: grid; gap: 2px; }
-@media (max-width: 1023px) { .cat-debut li:nth-child(n + 4) { display: none; } .cat-debut .renvoi-desc { display: none; } .cat-debut ul { display: flex; flex-wrap: wrap; gap: 0 18px; } }
+@media (max-width: 1023px) { .cat-debut .renvoi-desc { display: none; } .cat-debut .renvoi { padding: 8px 0; } }
 @media (min-width: 1024px) {
   .cat-tete { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g); align-items: start; }
   .cat-tete > * { grid-column: 1 / 8; }
@@ -793,7 +795,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .entree > * { min-width: 0; }
 .entree-nom { justify-self: start; color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .entree-nom .picto { display: inline-block; width: 16px; height: 16px; margin-right: 8px; vertical-align: -0.14em; color: var(--texte); }
-.entree-sujet { font-weight: 500; }
+.entree-sujet { font-size: var(--t-note); font-weight: 650; font-stretch: 75%; letter-spacing: 0.01em; color: var(--doux); }
 .entree-desc { font-size: var(--t-ui); line-height: 1.45; color: var(--texte); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .entree:hover .entree-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 .p-lettre .liste { padding-bottom: 56px; }
@@ -820,7 +822,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .resultat-cat .picto { width: 15px; height: 15px; }
 .resultat-desc { grid-column: 1 / -1; font-size: var(--t-ui); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .resultat-alt { grid-column: 1 / -1; font-size: var(--t-note); color: var(--doux); }
-.resultat mark { background: none; color: inherit; font-weight: 900; }
+.resultat mark { background: color-mix(in srgb, var(--lien) 13%, transparent); color: inherit; }
 .resultat[aria-selected='true'] a { background: var(--surface); box-shadow: inset 4px 0 0 var(--lien); }
 @media (hover: hover) { .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
 .suggestions-vides { padding: 8px 20px 16px; display: grid; gap: 12px; }
