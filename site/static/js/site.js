@@ -686,10 +686,13 @@
     });
   }
 
-  // ------------------------------------------------------------ Sous-groupes d'une lettre : le groupe lu est marqué dans la rangée, qui le garde en vue
-  const sousIndex = d.querySelector('.sous-index ul');
+  // ------------------------------------------------------------ Rangée collante d'une liste (sous-groupes d'une lettre, alphabet d'une catégorie) :
+  // le groupe lu est marqué, et la rangée le garde en vue.
+  const sousIndex = d.querySelector('.liste-bloc .sous-index ul, .liste-bloc .index-az ol');
   if (sousIndex) {
-    const puces = new Map([...sousIndex.querySelectorAll('a')].map((a) => [a.hash.slice(1), a]));
+    // Plusieurs lettres peuvent mener au même groupe (« J – L ») : on garde la première.
+    const puces = new Map();
+    for (const a of sousIndex.querySelectorAll('a')) if (!puces.has(a.hash.slice(1))) puces.set(a.hash.slice(1), a);
     const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
     let marque = null;
     const marquer = () => {
@@ -717,8 +720,10 @@
     d.body.append(haut);
     let piedVisible = false;
     const pied = d.querySelector('.dos');
-    if (pied) new IntersectionObserver(([e]) => { piedVisible = e.isIntersecting; haut.hidden = piedVisible || scrollY < innerHeight; }).observe(pied);
-    addEventListener('scroll', () => { haut.hidden = piedVisible || scrollY < innerHeight; }, { passive: true });
+    // Visible en remontant (quand la barre revient), après le premier écran, jamais sur le pied : il ne cache pas la lecture.
+    const majHaut = () => { haut.hidden = piedVisible || scrollY < innerHeight || !!barre?.classList.contains('est-cachee'); };
+    if (pied) new IntersectionObserver(([e]) => { piedVisible = e.isIntersecting; majHaut(); }).observe(pied);
+    addEventListener('scroll', () => requestAnimationFrame(majHaut), { passive: true });
   }
 
   // ------------------------------------------------------------ Présentation de catégorie repliée : « Lire la suite »
