@@ -84,7 +84,7 @@ Toutes viennent du livre et du dépôt, aucune image extérieure :
 
 - le banian de la couverture 2027 (couronne et racines), calculé par le générateur de la couverture ;
 - les 19 pictogrammes de `assets/pictograms`, retracés (ceux de 2026, en attendant le jeu 2027) ;
-- six pages intérieures et la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendues depuis le PDF de l'édition 2026 ;
+- quatre pages intérieures et la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendues depuis le PDF de l'édition 2026 ;
 - la carte sociale (`tools/carte-sociale.html`) ;
 - le portrait de Loïc Morel ;
 - les schémas des définitions, copiés depuis leurs dossiers.

@@ -2,7 +2,7 @@
 """Prépare les images du site tirées du livre imprimé et des pictogrammes. À relancer seulement si les sources changent.
 
 - les 19 pictogrammes de catégorie (assets/pictograms), retracés en SVG d'un seul tracé ;
-- six pages intérieures et la boucle « feuilletage » (dictionnaire-de-bitcoin.pdf, édition 2026).
+- quatre pages intérieures et la boucle « feuilletage » (dictionnaire-de-bitcoin.pdf, édition 2026).
 La jaquette de l'accueil (banian 2027) est faite par tools/jaquette-2027.py, la carte sociale depuis
 tools/carte-sociale.html (capture 1200 × 630).
 
@@ -64,7 +64,7 @@ def pictos(raster_dir):
 # 2. Six pages intérieures du PDF (édition 2026).
 def pages():
     pdf = os.path.join(ROOT, 'dictionnaire-de-bitcoin.pdf')
-    for n in (3, 31, 36, 212, 467, 516):
+    for n in (31, 212, 467, 516):
         run('pdftoppm', '-r', '150', '-png', '-f', str(n), '-l', str(n), pdf, os.path.join(TMP, 'p'))
         src = [p for p in os.listdir(TMP) if p.startswith('p-') and p.endswith(f'{n:03d}.png')][0]
         page = Image.open(os.path.join(TMP, src)).convert('RGB')

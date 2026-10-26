@@ -550,7 +550,8 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
   // Présentation : la première phrase entière, la suite repliée derrière « Lire la suite ».
   const texte = note ? fr(note.replace(/\.$/, '')) + '.' : '';
   const coupe = texte.search(/[.!?] (?=[A-ZÀ-Ý«])/);
-  const [premiere, suite] = coupe > 0 ? [texte.slice(0, coupe + 1), texte.slice(coupe + 2)] : [texte, ''];
+  // Une suite courte (moins de 160 signes) s'affiche avec le reste : un « Lire la suite » pour une ligne ne sert à rien.
+  const [premiere, suite] = coupe > 0 && texte.length - coupe > 160 ? [texte.slice(0, coupe + 1), texte.slice(coupe + 2)] : [texte, ''];
   const body = `<header class="cat-tete">
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
   <h1 class="cat-nom">${h(label)}</h1>
@@ -709,7 +710,7 @@ export function homePage(data, { assets, jsonLd }) {
     </div>
   </div>
   <div class="pages" aria-label="Six pages intérieures de l’édition 2026">
-    ${[[3, 'La page de titre du livre : Dictionnaire de Bitcoin, Tout le vocabulaire technique de Bitcoin, Loïc Morel'], [31, 'Page 5 du livre : les entrées ADDRMAN, ADDRV2 et ADRESSE DE RÉCEPTION'], [36, 'Page 10 du livre : les entrées ALERT SYSTEM, ALGORITHME, ALTCOIN et ALUVM'], [212, 'Page 186 du livre : les entrées CONSIGNMENT et CONSOLIDATION'], [467, 'Page 441 du livre : les entrées RÉCURSIF - COVENANT et REDEEM'], [516, 'Page 490 du livre : les entrées SIMPLIFIED PAYMENT VERIFICATION, SINGLE-SIG et SINGLE-USE SEAL']]
+    ${[[31, 'Page 5 du livre : les entrées ADDRMAN, ADDRV2 et ADRESSE DE RÉCEPTION'], [212, 'Page 186 du livre : les entrées CONSIGNMENT et CONSOLIDATION'], [467, 'Page 441 du livre : les entrées RÉCURSIF - COVENANT et REDEEM'], [516, 'Page 490 du livre : les entrées SIMPLIFIED PAYMENT VERIFICATION, SINGLE-SIG et SINGLE-USE SEAL']]
       .map(([n, alt], i) => `<figure class="page-livre" style="--i:${i}"><img src="/img/page-${n}.webp" width="600" height="927" alt="${h(alt)}" loading="lazy" decoding="async"></figure>`)
       .join('\n    ')}
   </div>

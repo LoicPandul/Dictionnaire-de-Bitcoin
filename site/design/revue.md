@@ -210,3 +210,24 @@ Ce qui a été corrigé après ce tour :
 - **Recherche** : marquage du terme plus soutenu.
 - **404** : arbre remonté et texte plus haut sur téléphone, le champ et la première suggestion tiennent au premier écran ; liens du bas dans le premier écran sur ordinateur.
 - **Partout** : respiration entre sections ramenée à 96 px au plus.
+
+### Tour 10 (nouveau relecteur indépendant, relevés du tour 9 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,9 | 8,4 |
+| Définition | 8,0 | 8,3 |
+| Lettre | 7,8 | 8,0 |
+| Catégorie | 7,7 | 7,9 |
+| Recherche | 8,1 | 8,2 |
+| 404 | 7,9 | 8,2 |
+
+Note globale : 8,0, stable. Il vérifie dans le source qu'il n'y a plus de « ... » (tous en U+2026) et confirme l'ouverture de catégorie raccourcie, la puce qui suit, le feuillage de la 404 ramené. « Les défauts restants sont des finitions, pas des cassures. » Restaient : pages du livre trop petites, mur de 25 renvois entrants, barres collantes sans séparation nette, « Lire la suite » qui ne se referme pas, fond de la fenêtre de recherche net derrière elle.
+
+Ce qui a été corrigé après ce tour :
+
+- **Accueil** : quatre pages intérieures plus grandes au lieu de six vignettes (la page de titre, presque blanche, est retirée) ; vidéo du livre plus large sur téléphone ; boutons d'achat espacés.
+- **Définition** : renvois entrants repliés au-delà de 12 partout, plus seulement sur téléphone ; légende de position en encre.
+- **Listes** : barres collantes avec un filet et une ombre légère quand elles collent ; sujet des BIP en Écorce, moins dense ; bouton « Haut » plus petit, ombré pour se détacher du texte.
+- **Catégorie** : « Lire la suite » se replie ; une suite de moins de 160 signes s'affiche d'emblée.
+- **Recherche** : fond flouté derrière la fenêtre.

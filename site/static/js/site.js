@@ -176,10 +176,10 @@
     objet.addEventListener('pointerleave', () => { couronne.style.translate = racines.style.translate = '0 0'; });
   }
 
-  // ------------------------------------------------------------ Renvois entrants repliés au-delà de 12 (30 sur grand écran)
+  // ------------------------------------------------------------ Renvois entrants repliés au-delà de 12
   for (const ul of d.querySelectorAll('[data-repliable]')) {
     const n = ul.children.length;
-    const limite = innerWidth < 700 ? 12 : 30;
+    const limite = 12;
     if (n <= limite) continue;
     ul.classList.add('replie');
     const b = d.createElement('button');
@@ -744,7 +744,12 @@
     b.className = 'lire-suite';
     b.textContent = 'Lire la suite';
     b.setAttribute('aria-expanded', 'false');
-    b.addEventListener('click', () => { suite.closest('.cat-note').classList.add('deplie'); b.remove(); });
+    // Le bouton déplie et replie.
+    b.addEventListener('click', () => {
+      const ouvert = suite.closest('.cat-note').classList.toggle('deplie');
+      b.textContent = ouvert ? 'Replier' : 'Lire la suite';
+      b.setAttribute('aria-expanded', String(ouvert));
+    });
     suite.closest('.cat-note').after(b);
   }
 })();
