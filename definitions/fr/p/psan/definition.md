@@ -2,4 +2,4 @@ Sigle de « Prestataire de Services sur Actifs Numériques ». Statut réglement
 
 Depuis 2019, l'enregistrement obligatoire auprès de l'AMF (Autorité des Marchés Financiers) est requis pour exercer ces activités en France. Un agrément optionnel, plus exigeant, peut également être obtenu. L'enregistrement impose des obligations en matière de lutte contre le blanchiment (LCB-FT) et de vérification d'identité (KYC).
 
-Avec l'entrée en vigueur du règlement européen MiCA (*Markets in Crypto-Assets*), le statut PSAN est progressivement remplacé par le cadre harmonisé européen PSCA (Prestataire de Services sur Crypto-Actifs), applicable dans tous les États membres de l'Union européenne.
+Avec l'entrée en vigueur du règlement européen MiCA (*Markets in Crypto-Assets*), le statut PSAN est remplacé par le cadre harmonisé européen PSCA (Prestataire de Services sur Crypto-Actifs), applicable dans tous les États membres de l'Union européenne. En France, les PSAN déjà actifs avant MiCA pouvaient continuer sans agrément PSCA jusqu'au 1er juillet 2026, selon l'AMF.

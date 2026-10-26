@@ -1,1 +1,3 @@
 Stock de bitcoins constitué par un État, une institution ou une entreprise comme protection contre l'instabilité économique, la dépréciation monétaire ou les risques géopolitiques.
+
+Le 6 mars 2025, un décret présidentiel américain (*executive order*) a créé une *Strategic Bitcoin Reserve*. Elle est alimentée par les bitcoins que le Département du Trésor détient à la suite de confiscations définitives, et les bitcoins qui y sont déposés ne doivent pas être vendus. Le décret prévoit que toute acquisition supplémentaire se fasse sans coût additionnel pour les contribuables.

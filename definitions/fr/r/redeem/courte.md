@@ -1,1 +1,1 @@
-Action, dans une *State Extension* du protocole RGB, qui exerce une *Valency* déjà déclarée dans le contrat pour réclamer l'extension d'état qu'elle autorise.
+Action, dans une *State Extension* du protocole RGB, qui exerce une *Valency* déjà déclarée dans le contrat pour réclamer l'extension d'état qu'elle autorise. Retirée de rgb-core à partir de la version 0.12.0.

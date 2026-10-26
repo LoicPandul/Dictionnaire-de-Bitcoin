@@ -1,1 +1,1 @@
-Protocole *open source* de conservation de bitcoins pour les organisations, développé par Wizardsardine. Il combine transactions présignées, multisignatures à seuil élevé et *watchtowers* pour imposer des politiques de dépense et annuler toute dépense non conforme.
+Protocole *open source* de conservation de bitcoins pour les organisations, développé par Wizardsardine, à l'arrêt en 2026. Il combine transactions présignées, multisignatures à seuil élevé et *watchtowers* pour imposer des politiques de dépense.

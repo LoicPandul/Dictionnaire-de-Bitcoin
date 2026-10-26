@@ -2,4 +2,4 @@ Protocole open source de conservation de bitcoins conçu pour les organisations,
 
 Le protocole formalise l'interaction entre un portefeuille froid et les opérations courantes en permettant la délégation de fonds avec des politiques de restriction : limites de dépense, adresses autorisées, vérifications supplémentaires au-delà d'un certain montant. Chaque participant dispose de ses propres *watchtowers* qui surveillent le réseau et peuvent automatiquement annuler une tentative de dépense non conforme en diffusant des transactions d'urgence présignées. En cas de menace, l'ensemble des fonds peut être déplacé vers un portefeuille d'urgence par n'importe quel participant individuel.
 
-Le protocole a été conçu à partir de 2019 par Kevin Loaec et Antoine Poinsot et son premier démonstrateur technique a été publié en 2021.
+Le protocole a été conçu à partir de 2019 par Kevin Loaec et Antoine Poinsot et son premier démonstrateur technique a été publié en 2021. En 2026, le site de Wizardsardine présente Revault comme un prototype à l'arrêt, tandis que l'entreprise poursuit le développement de Liana.
