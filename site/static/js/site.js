@@ -701,7 +701,11 @@
     const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
     let marque = null;
     const marquer = () => {
-      const ligne = Math.max((parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0) + 120, innerHeight * 0.35);
+      const haut = parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0;
+      const ligne = Math.max(haut + 120, innerHeight * 0.45);
+      // Ombre de la rangée seulement quand elle colle.
+      const barreCollante = sousIndex.closest('nav');
+      barreCollante.classList.toggle('est-collee', barreCollante.getBoundingClientRect().top <= haut + 1 && scrollY > 0 && barreCollante.parentElement.getBoundingClientRect().top < haut);
       let actif = null;
       for (const g of titres) { if (g.getBoundingClientRect().top <= ligne) actif = g; else break; }
       const puce = actif ? puces.get(actif.getAttribute('aria-labelledby')) : null;
@@ -732,7 +736,8 @@
   }
 
   // ------------------------------------------------------------ Présentation de catégorie repliée : « Lire la suite »
-  const suite = d.querySelector('[data-repliable-suite]');
+  // Téléphone : toute la présentation est repliée ; ailleurs, la suite après la première phrase.
+  const suite = d.querySelector('[data-repliable-suite]') || (matchMedia('(max-width: 639px)').matches && d.querySelector('.cat-note-premiere'));
   if (suite) {
     const b = d.createElement('button');
     b.type = 'button';

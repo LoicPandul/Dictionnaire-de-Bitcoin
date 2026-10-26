@@ -554,7 +554,7 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
   const body = `<header class="cat-tete">
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
   <h1 class="cat-nom">${h(label)}</h1>
-  <p class="enonce cat-note">${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire. ${h(premiere)}${suite ? `<span class="cat-note-suite" data-repliable-suite> ${h(suite)}</span>` : ''}</p>
+  <p class="enonce cat-note">${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire.${premiere ? `<span class="cat-note-premiere"> ${h(premiere)}</span>` : ''}${suite ? `<span class="cat-note-suite" data-repliable-suite> ${h(suite)}</span>` : ''}</p>
   <section class="cat-debut" aria-labelledby="debut-titre">
     <h2 class="cat-debut-titre" id="debut-titre">Pour commencer</h2>
     <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(resume(d.description))}</span>` : ''}</a></li>`).join('')}</ul>

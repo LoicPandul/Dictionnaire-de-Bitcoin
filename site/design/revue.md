@@ -188,3 +188,25 @@ Ce qui a été corrigé après ce tour :
 - **Recherche** : terme cherché sur un léger fond Figue, sans changer la couleur du texte.
 - **Catégorie** : « Pour commencer » en liste verticale de quatre noms sur téléphone.
 - **Accueil** : bande des pages du livre retirée sur téléphone.
+
+### Tour 9 (nouveau relecteur indépendant, relevés du tour 8 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,9 | 8,5 |
+| Définition | 8,0 | 8,4 |
+| Lettre | 7,7 | 8,0 |
+| Catégorie | 7,6 | 7,9 |
+| Recherche | 8,0 | 8,2 |
+| 404 | 7,8 | 8,2 |
+
+Note globale : 8,0. « Plus abouti qu'au tour 8, l'identité du livre y est partout ; il reste du poli plutôt que des défauts de structure. » Il confirme les apostrophes, la rangée des sous-groupes qui suit enfin, le terme cherché marqué, les voisins en entier. Il lit encore des « ... » droits : vérifié, il n'en reste aucun dans le HTML (c'est le glyphe « … » d'Archivo, aux points espacés). Restaient : ouverture de catégorie longue sur téléphone, feuillage haut sur la 404, contrastes faibles (lettres absentes, marquage de recherche), barres collantes sans séparation, petits pictogrammes.
+
+Ce qui a été corrigé après ce tour :
+
+- **Catégorie** : sur téléphone, la présentation entière est repliée derrière « Lire la suite » et « Pour commencer » devient une rangée de quatre puces, le premier mot arrive au premier écran ; lettres absentes en Écorce pleine (5,9:1), sans fond.
+- **Barres collantes** (sous-groupes, alphabet des catégories) : une ombre légère seulement quand elles collent.
+- **Lettre** : pictogrammes à 18 px ; sujet des BIP en encre ; la puce suit le groupe dès le milieu de l'écran.
+- **Recherche** : marquage du terme plus soutenu.
+- **404** : arbre remonté et texte plus haut sur téléphone, le champ et la première suggestion tiennent au premier écran ; liens du bas dans le premier écran sur ordinateur.
+- **Partout** : respiration entre sections ramenée à 96 px au plus.
