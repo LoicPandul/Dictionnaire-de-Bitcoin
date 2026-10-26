@@ -45,6 +45,13 @@ function protectMath(source) {
 const restoreMath = (html, formulas) =>
   html.replace(/⁣M(\d+)⁣/g, (_, i) => formulas[Number(i)]);
 
+// Apostrophes typographiques dans le texte (« l’UTXO »), jamais dans le code ni les blocs de code.
+const apostrophes = (html) =>
+  html
+    .split(/(<pre[\s\S]*?<\/pre>|<code[\s\S]*?<\/code>)/)
+    .map((part, i) => (i % 2 ? part : part.replace(/&#39;/g, '’').replace(/(>[^<]*)/g, (t) => t.replace(/'/g, '’'))))
+    .join('');
+
 // linker (facultatif) : ajoute les renvois dans le texte, avant que les formules soient remises en place.
 export function createRenderer({ linker = null, label = (x) => x } = {}) {
   let current = null;
@@ -77,6 +84,7 @@ export function createRenderer({ linker = null, label = (x) => x } = {}) {
     const { text, formulas } = protectMath(def.body);
     let html = marked.parse(text);
     if (linker) html = linker(html, def, { label });
+    html = apostrophes(html);
     html = restoreMath(html, formulas);
     // Une figure seule dans un paragraphe : on retire le <p> qui l'enveloppe.
     html = html.replace(/<p>\s*(<figure class="figure">[\s\S]*?<\/figure>)\s*<\/p>/g, '$1');

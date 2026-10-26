@@ -75,10 +75,10 @@ export function headwordEm(raw) {
 }
 // Points de coupure après « _ » (le navigateur coupe déjà après « - » et les espaces).
 // Titres affichés : les codes hexadécimaux en « 0x » minuscule (« OP_RETURN - 0x6A »), comme on les écrit.
-export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ');
+export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
 const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
-export const fr = (t = '') => String(t).replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
+export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
 const hd = (t) => h(fr(t));
 // Résumé coupé au mot, jamais sur un mot-outil, un nombre entamé ni une lettre seule (« que… », « 500 00… », « et M… »).
 // La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.
@@ -87,7 +87,7 @@ export const resume = (t, n = 84) => {
   if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
   // Une phrase entière qui tient, même courte, vaut mieux qu'une coupe : pas de points de suspension.
   const fin = Math.max(...[...t.slice(0, n + 1).matchAll(/[.!?](?=\s)/g)].map((m) => m.index));
-  if (fin > n * 0.45) return t.slice(0, fin + 1);
+  if (fin > n * 0.3) return t.slice(0, fin + 1);
   let s = t.slice(0, n + 1);
   s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
   while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
@@ -297,7 +297,7 @@ function entry(def, picto, { showCategory = true } = {}) {
   const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
   return `<li><a class="entree" href="/${def.slug}/"${apercuAttr(def)}>
   <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}${sujet ? ` <span class="entree-sujet">${sujet}</span>` : ''}</span>
-  ${def.description ? `<span class="entree-desc">${hd(resume(def.description))}</span>` : ''}
+  ${def.description ? `<span class="entree-desc">${hd(resume(def.description, 120))}</span>` : ''}
 </a></li>`;
 }
 
@@ -444,7 +444,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   ${turn(def.alphaPrev, 'prev')}
   ${turn(def.alphaNext, 'next')}
 </nav>
-<p class="colophon">Entrée ${num(def.n)} sur ${num(total)} du <cite>${h(site.title)}</cite>, édition ${site.edition}. <a href="${editUrl}" rel="noopener">Proposer une correction sur GitHub</a> <button class="citer" type="button" data-citer="${h(`${site.author}, « ${def.title} », ${site.title}, édition ${site.edition}, ${url}/${def.slug}/`)}" hidden>Citer cette définition</button></p>`;
+<p class="colophon"><cite>${h(site.title)}</cite>, édition ${site.edition}. <a href="${editUrl}" rel="noopener">Proposer une correction sur GitHub</a> <button class="citer" type="button" data-citer="${h(`${site.author}, « ${def.title} », ${site.title}, édition ${site.edition}, ${url}/${def.slug}/`)}" hidden>Citer cette définition</button></p>`;
 
   return page({
     headOpts: {

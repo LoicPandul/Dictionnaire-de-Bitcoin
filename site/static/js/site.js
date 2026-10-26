@@ -5,14 +5,14 @@
   const root = d.documentElement;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   root.classList.add('anim');
-  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ');
+  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
   // Résumé coupé au mot (même règle que lib/templates.mjs, resume).
   const resume = (t, n = 84) => {
-    t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
+    t = String(t || '').replace(/'/g, '’').replace(/\s*(\.\.\.|…)$/, '');
     if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
     // Une phrase entière qui tient, même courte, vaut mieux qu'une coupe : pas de points de suspension.
     const fin = Math.max(...[...t.slice(0, n + 1).matchAll(/[.!?](?=\s)/g)].map((m) => m.index));
-    if (fin > n * 0.45) return t.slice(0, fin + 1);
+    if (fin > n * 0.3) return t.slice(0, fin + 1);
     let s = t.slice(0, n + 1);
     s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
     while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
@@ -699,7 +699,7 @@
     const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
     let marque = null;
     const marquer = () => {
-      const ligne = (parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0) + 120;
+      const ligne = Math.max((parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0) + 120, innerHeight * 0.35);
       let actif = null;
       for (const g of titres) { if (g.getBoundingClientRect().top <= ligne) actif = g; else break; }
       const puce = actif ? puces.get(actif.getAttribute('aria-labelledby')) : null;

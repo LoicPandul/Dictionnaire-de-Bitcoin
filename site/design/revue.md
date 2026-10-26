@@ -145,3 +145,24 @@ Ce qui a été corrigé après ce tour :
 - **Catégorie** : « Pour commencer » en noms seuls sur téléphone, pictogramme plus petit ; en-têtes de groupe sur fond plein, sans le fondu qui laissait le texte à demi visible dessous.
 - **Accueil** : 19 catégories en deux colonnes sur téléphone ; mots cités en encre soulignée Figue, plus petits ; boutons du mot du jour pleine largeur sur téléphone ; aperçu de la tranche moins haut.
 - **404** : jaquette plus basse sur téléphone.
+
+### Tour 7 (nouveau relecteur indépendant, relevés du tour 6 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,8 | 8,3 |
+| Définition | 7,8 | 8,1 |
+| Lettre | 7,4 | 7,7 |
+| Catégorie | 7,5 | 7,7 |
+| Recherche | 7,8 | 8,0 |
+| 404 | 7,4 | 8,1 |
+
+Note globale : 7,8. « Cohérent, rapide et fidèle à la charte 2027 ; ce qui le retient sous 8,5, c'est le nombre de petits défauts de finition qui se répètent. » Il confirme le titre d'opcode, l'ouverture de catégorie plus courte, les catégories de l'accueil en deux colonnes. Restaient : apostrophes droites et points de suspension dans les résumés, carte « Mot suivant » mal alignée, « Entrée 1 346 sur 1 408 » répété, titres de BIP en deux couleurs, suivi de la rangée des sous-groupes, formulaire de la 404 qui dépasse sur téléphone.
+
+Ce qui a été corrigé après ce tour :
+
+- **Typographie** : apostrophes typographiques dans les textes, les titres et les résumés (jamais dans le code) ; résumés des listes sur trois lignes, une phrase entière dès qu'elle tient.
+- **Définition** : cartes précédent et suivant alignées à gauche toutes les deux ; numéro d'entrée seulement sous le signet (retiré du colophon) ; soulignement des codes renvoyés affiné.
+- **Lettre** : titre de BIP d'une seule couleur ; pictogrammes des listes en encre, un peu plus grands ; le groupe marqué dans la rangée suit le tiers haut de l'écran.
+- **404** : colonne de texte contenue (le formulaire ne dépasse plus de 6 px à droite), titre sous les racines sur téléphone.
+- **Accueil** : boutons d'achat du livre l'un sous l'autre sur téléphone.
