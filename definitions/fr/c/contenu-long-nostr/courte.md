@@ -1,0 +1,1 @@
+Texte long, article ou billet de blog, publié sur Nostr comme événement adressable de kind `30023` défini par NIP-23. Il est écrit en Markdown, modifiable par son auteur et partageable par un lien NADDR.

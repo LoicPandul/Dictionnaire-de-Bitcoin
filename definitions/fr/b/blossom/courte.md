@@ -1,0 +1,1 @@
+Ensemble de spécifications pour stocker des fichiers sur des serveurs HTTP, chaque fichier étant désigné par son haché `SHA256` et l'utilisateur identifié par sa clé Nostr. Un client peut retrouver un fichier disparu sur un autre serveur de l'auteur.

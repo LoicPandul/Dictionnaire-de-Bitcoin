@@ -1,0 +1,1 @@
+Paiement Nostr défini par NIP-61 : un jeton Cashu verrouillé pour son destinataire, publié dans un événement qui sert de reçu. Contrairement au zap, il n'exige ni facture Lightning du destinataire ni serveur LNURL.

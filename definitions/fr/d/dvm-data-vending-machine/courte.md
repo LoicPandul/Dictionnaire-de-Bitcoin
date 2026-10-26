@@ -1,0 +1,1 @@
+Service Nostr décrit par NIP-90 qui exécute un calcul à la demande, souvent contre paiement : le client publie une requête, un prestataire répond. NIP-90 est depuis 2026 marqué comme non recommandé, au profit de standards propres à chaque usage.

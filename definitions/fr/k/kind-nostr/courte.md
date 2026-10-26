@@ -1,0 +1,1 @@
+Entier de 0 à 65535 qui indique la nature d'un événement Nostr (profil, note, liste de suivi…) et, pour la plupart des plages, la façon dont les relais le traitent : régulier, remplaçable, éphémère ou adressable.
