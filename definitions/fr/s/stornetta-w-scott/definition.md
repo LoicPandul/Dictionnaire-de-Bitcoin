@@ -1,0 +1,7 @@
+Chercheur en cryptographie et informatique, coinventeur avec Stuart Haber de l'horodatage numérique par chaînage de hachages. Trois de leurs articles sont les références [3], [4] et [5] du livre blanc de Bitcoin. Ils ont mené ces travaux chez Bellcore, à Morristown, dans le New Jersey.
+
+En 1991, Haber et Stornetta publient « How to Time-Stamp a Digital Document » dans le *Journal of Cryptology*, reçu le 19 août 1990. Pour prouver la date d'un document sans faire confiance au service qui l'horodate, le certificat de chaque demande reprend des informations du certificat précédent, dont le hachage de ses informations de liaison : un horodatage antidaté serait contredit par les certificats suivants, qui contiennent déjà ces informations. Le brevet américain 5 136 646, déposé le 8 mars 1991 au nom de Stuart A. Haber et Wakefield S. Stornetta, Jr., est délivré le 4 août 1992 à Bell Communications Research.
+
+En 1993, avec Dave Bayer, ils rangent les horodatages dans des arbres de hachage, comme Ralph Merkle l'avait fait pour d'autres usages, pour réduire le calcul de vérification. En avril 1997, ils publient « Secure names for bit-strings » à la conférence ACM sur la sécurité informatique et des communications. Stornetta cofonde ensuite avec Haber Surety, une société issue de Bellcore qui commercialise l'horodatage.
+
+La section « Timestamp Server » du livre blanc reprend leur idée : chaque horodatage inclut le précédent dans son hachage, ce qui forme une chaîne. Bitcoin remplace le service unique par un réseau pair à pair et la preuve de travail.

@@ -1,0 +1,1 @@
+Cryptographe américain du MIT, coinventeur de RSA (article reçu en avril 1977) et prix Turing 2002. Il propose avec Adi Shamir en 1996 PayWord et MicroMint, deux systèmes de micropaiement antérieurs à Bitcoin.

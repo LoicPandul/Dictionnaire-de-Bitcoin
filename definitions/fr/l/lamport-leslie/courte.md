@@ -1,0 +1,1 @@
+Informaticien américain, prix Turing 2013. Il imagine vers 1975 la signature de Lamport, à usage unique, et cosigne en 1982 l'article sur le problème des généraux byzantins, auquel Satoshi Nakamoto dit répondre en 2008 par la chaîne de preuve de travail.

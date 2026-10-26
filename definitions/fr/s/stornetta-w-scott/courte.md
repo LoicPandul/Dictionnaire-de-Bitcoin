@@ -1,0 +1,1 @@
+Chercheur de Bellcore, coinventeur en 1991 avec Stuart Haber de l'horodatage numérique où chaque certificat reprend le hachage des informations de liaison du précédent ; trois de leurs articles sont les références [3] à [5] du livre blanc de Bitcoin.

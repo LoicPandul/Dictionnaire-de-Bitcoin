@@ -1,0 +1,1 @@
+Cryptographe, alors rattachée à l'université de Waterloo et à la Zcash Foundation, elle présente avec Ian Goldberg en 2020 FROST, un schéma de signature de Schnorr à seuil que le `BIP-0340` cite parmi les constructions rendues possibles par ces signatures.

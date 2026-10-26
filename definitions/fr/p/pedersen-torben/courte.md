@@ -1,0 +1,1 @@
+Cryptographe de l'université d'Aarhus, il publie à CRYPTO '91 l'engagement qui porte son nom. Gregory Maxwell en fait la base des *Confidential Transactions* du projet Elements, qui masquent les montants.
