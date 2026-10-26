@@ -478,7 +478,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .categories-tete .enonce { grid-column: 8 / -1; font-size: var(--t-lecture); }
 }
 .index { display: grid; grid-template-columns: 1fr; column-gap: var(--g); }
-@media (max-width: 639px) { .index { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; } .index-ligne { padding: 12px 0; } .index-nom { align-items: flex-start; gap: 8px; font-size: var(--t-ui); } .index-nom .picto { margin-top: 2px; } }
+@media (max-width: 639px) { .index { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; } .index-ligne { padding: 12px 0; } .index-nom { align-items: flex-start; gap: 8px; font-size: var(--t-ui); } .index-nom .picto { margin-top: 2px; } .index-ligne, .index-nom > span { min-width: 0; } .index-nom > span:not(.index-n) { hyphens: auto; overflow-wrap: break-word; } }
 @media (min-width: 640px) { .index { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1024px) { .index { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .index-ligne { padding: 16px 0 20px; }
