@@ -2,7 +2,7 @@
 //
 // `url` est la seule clé à changer le jour où le domaine est acheté : elle sert aux
 // adresses canoniques, au sitemap, au JSON-LD et aux cartes sociales. Sans barre finale.
-export const url = 'https://dictionnaire-bitcoin.example';
+export const url = 'https://dictionnaire-bitcoin.com';
 
 export const site = {
   title: 'Dictionnaire de Bitcoin',

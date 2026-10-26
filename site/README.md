@@ -47,7 +47,7 @@ Une fois le domaine acheté : changer `url` dans `config.mjs` (voir plus bas), p
 
 ## Domaine
 
-Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui la valeur provisoire `https://dictionnaire-bitcoin.example`. Elle sert aux adresses canoniques, au sitemap, au JSON-LD, aux cartes sociales et à la citation des définitions.
+Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui `https://dictionnaire-bitcoin.com`. Elle sert aux adresses canoniques, au sitemap, au JSON-LD, aux cartes sociales et à la citation des définitions.
 
 ## Couleurs, polices et édition
 
