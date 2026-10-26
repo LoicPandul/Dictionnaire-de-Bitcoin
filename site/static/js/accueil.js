@@ -3,7 +3,7 @@
   const d = document;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1');
+  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ');
   const coupe = (s) => esc(affiche(s)).replace(/_/g, '_<wbr>');
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);

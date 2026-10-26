@@ -79,3 +79,24 @@ Entre le tour 3 et le tour 4, **la charte de l'édition 2027 a été appliquée*
 - **Listes** : descriptions en 16 px pleine encre, petits groupes fusionnés dans les catégories (« J – L »), rayon des 19 catégories en une ligne qui défile, saut instantané avec « Aller à », bouton « Haut » discret et caché sur le pied, fondu sous les en-têtes collants.
 - **Définition** : résumé du mot suivant tronqué au mot avec points de suspension, lettre jamais seule en fin de ligne, schémas à 640 px dans un cadre qui défile sur téléphone avec un lien « Agrandir le schéma » sous la figure.
 - **404** : la jaquette entière en bandeau, la couronne court sur toute la largeur, le texte sous les racines courtes du dos.
+
+### Tour 4 (nouveau relecteur indépendant, charte 2027 appliquée, relevés des tours 1 à 3 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,5 | 8,0 |
+| Définition | 7,5 | 8,0 |
+| Lettre | 7,0 | 7,5 |
+| Catégorie | 7,0 | 7,5 |
+| Recherche | 7,5 | 7,5 |
+| 404 | 7,5 | 8,0 |
+
+Note globale : 7,6. « La charte 2027 est appliquée avec cohérence. » Il confirme l'alphabet unifié, les lettres absentes grisées, l'hexadécimal propre, la recherche pertinente, la 404 avec la jaquette. Restaient : navigation trop haute sur les lettres et les catégories, liste « Aller à » native, tranche de l'accueil (lettres de largeurs trop inégales, carte parasite au survol, grand vide dans l'aperçu), coupes de texte (titre d'opcode, résumés, mots seuls), résumés sur une ligne.
+
+Ce qui a été corrigé après ce tour :
+
+- **Accueil** : la carte d'aperçu parasite venait du bloc d'aperçu de la tranche, qui portait le même attribut que les renvois ; le script ne vise plus que les liens. Lettres de la tranche avec une base commune (B ne fait plus cinq fois A), aperçu en colonne (nom, catégorie, résumé), plus de mot seul en fin de paragraphe (`text-wrap: pretty`), effectifs du pied lisibles, texte du livre avant la vidéo sur téléphone.
+- **Définition** : la vedette est découpée après la conversion du tiret, « OP_CHECKLOCKTIMEVERIFY – » reste sur la première ligne et « 0xB1 » passe à la suivante ; résumés précédent et suivant coupés au mot, jamais sur « que » ou une lettre seule ; « ← Précédent » et « Suivant → » sur téléphone au lieu de titres tronqués.
+- **Lettre** : la rangée des sous-groupes remplace la liste déroulante sur téléphone, devient collante et marque le groupe lu en le gardant en vue ; deux lignes de résumé partout ; bornes de l'intro en texte simple.
+- **Catégorie** : une seule rangée (les 19 catégories) avant le titre ; l'alphabet passe sous l'en-tête, juste avant la liste, et reste collant.
+- **Recherche** : plusieurs mots trouvés çà et là, ceux qui touchent le titre passent devant (« hd wallet » donne HD en tête) ; surlignage sans aplat sous le soulignement ; catégorie et terme anglais sur une ligne sur téléphone ; tiret demi-cadratin aussi dans les titres rendus par le script.

@@ -5,7 +5,7 @@
   const root = d.documentElement;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   root.classList.add('anim');
-  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1');
+  const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ');
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
   // ------------------------------------------------------------ Thème
@@ -251,7 +251,7 @@
   }
 
   // ------------------------------------------------------------ Carte d'aperçu au survol des renvois (souris et clavier)
-  if (d.querySelector('[data-apercu]') && matchMedia('(hover: hover)').matches) {
+  if (d.querySelector('a[data-apercu]') && matchMedia('(hover: hover)').matches) {
     const carte = d.createElement('div');
     carte.className = 'carte-apercu';
     carte.setAttribute('role', 'tooltip');
@@ -277,9 +277,9 @@
       }, 280);
     };
     const cacher = () => { clearTimeout(minuteur); carte.hidden = true; lien?.removeAttribute('aria-describedby'); lien = null; };
-    d.addEventListener('pointerover', (e) => { const a = e.target.closest('[data-apercu]'); if (a) montrer(a); });
-    d.addEventListener('pointerout', (e) => { const a = e.target.closest('[data-apercu]'); if (a && !a.contains(e.relatedTarget)) cacher(); });
-    d.addEventListener('focusin', (e) => { const a = e.target.closest('[data-apercu]'); if (a) montrer(a); else cacher(); });
+    d.addEventListener('pointerover', (e) => { const a = e.target.closest('a[data-apercu]'); if (a) montrer(a); });
+    d.addEventListener('pointerout', (e) => { const a = e.target.closest('a[data-apercu]'); if (a && !a.contains(e.relatedTarget)) cacher(); });
+    d.addEventListener('focusin', (e) => { const a = e.target.closest('a[data-apercu]'); if (a) montrer(a); else cacher(); });
     d.addEventListener('keydown', (e) => { if (e.key === 'Escape') cacher(); });
     addEventListener('scroll', cacher, { passive: true });
   }
@@ -396,7 +396,11 @@
       else if (mots.length > 1 && mots.every((m) => t.pt.includes(` ${m}`) || t.pt.startsWith(m))) rang = 4;
       if (rang) { forts.push({ t, rang, at, len: pq.length }); continue; }
       if ((at = t.pt.indexOf(pq)) > -1) faibles.push({ t, rang: 2, at, len: pq.length });
-      else if (mots.length > 1 && mots.every((m) => ` ${t.pt} ${t.pa} ${t.pd}`.includes(` ${m}`))) faibles.push({ t, rang: 1.5, at: -1 });
+      else if (mots.length > 1 && mots.every((m) => ` ${t.pt} ${t.pa} ${t.pd}`.includes(` ${m}`))) {
+        // Plusieurs mots trouvés çà et là : devant, ceux dont un mot cherché est le titre ou un mot du titre (« hd wallet » → HD).
+        const dansTitre = mots.filter((m) => t.parts.includes(m) || ` ${t.pt}`.includes(` ${m}`)).length;
+        faibles.push({ t, rang: 1.5 + dansTitre * 0.2 + (mots.includes(t.parts[0]) ? 0.3 : 0), at: -1 });
+      }
       else if (pq.length > 2 && (t.pd.startsWith(pq) || t.pd.includes(` ${pq}`))) faibles.push({ t, rang: 1, at: -1 });
     }
     // Les correspondances faibles (milieu de mot, description) ne viennent que si les fortes sont rares.
@@ -670,11 +674,26 @@
     });
   }
 
-  // ------------------------------------------------------------ Aller à un groupe (téléphone), revenir en haut
-  d.querySelector('[data-aller]')?.addEventListener('change', (e) => {
-    const cible = d.querySelector(e.target.value);
-    if (cible) { cible.scrollIntoView({ behavior: 'auto' }); cible.querySelector('a')?.focus({ preventScroll: true }); }
-  });
+  // ------------------------------------------------------------ Sous-groupes d'une lettre : le groupe lu est marqué dans la rangée, qui le garde en vue
+  const sousIndex = d.querySelector('.sous-index ul');
+  if (sousIndex) {
+    const puces = new Map([...sousIndex.querySelectorAll('a')].map((a) => [a.hash.slice(1), a]));
+    const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
+    let marque = null;
+    const marquer = () => {
+      const ligne = (parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0) + 120;
+      let actif = null;
+      for (const g of titres) { if (g.getBoundingClientRect().top <= ligne) actif = g; else break; }
+      const puce = actif ? puces.get(actif.getAttribute('aria-labelledby')) : null;
+      if (puce === marque) return;
+      marque?.removeAttribute('aria-current');
+      marque = puce;
+      if (!puce) return;
+      puce.setAttribute('aria-current', 'location');
+      sousIndex.scrollLeft = puce.offsetLeft - sousIndex.clientWidth / 2 + puce.offsetWidth / 2;
+    };
+    addEventListener('scroll', () => requestAnimationFrame(marquer), { passive: true });
+  }
   if (d.querySelector('.liste')) {
     const haut = d.createElement('button');
     haut.type = 'button';

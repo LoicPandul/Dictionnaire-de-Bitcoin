@@ -79,8 +79,9 @@ const hd = (t) => h(fr(t));
 const insecable = (t) => h(affiche(t)).replace(/-/g, '\u2011').replace(/– /g, '–\u00a0');
 
 // Les mots d'une vedette, chacun dans son masque, pour qu'ils se posent l'un après l'autre.
+// On coupe sur les espaces ordinaires du titre affiché : « OP_RETURN – 0x6A » garde son tiret avec le mot qui précède.
 const headwordWords = (title) =>
-  title
+  affiche(title)
     .split(' ')
     .map((w, i) => `<span class="vw" style="--i:${i}">${breakable(w)}</span>`)
     .join(' ');
@@ -382,10 +383,13 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
 </section>`
     : '';
 
+  // Coupé au mot, jamais sur un mot-outil ni une lettre seule (« que… », « et M… »).
   const court = (t, n = 120) => {
     if (!t || t.length <= n) return t;
-    const cut = t.lastIndexOf(' ', n);
-    return `${t.slice(0, cut > 60 ? cut : n).replace(/[\s,;:.]+$/, '')}…`;
+    let s = t.slice(0, n);
+    if (s.lastIndexOf(' ') > 60) s = s.slice(0, s.lastIndexOf(' '));
+    while (/\s(\S{1,3}|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > 60) s = s.slice(0, s.lastIndexOf(' '));
+    return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
   };
   const turn = (d, dir) => {
     if (!d) return `<span class="tourner-vide"></span>`;
@@ -398,9 +402,9 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
   const body = `<nav class="reperes" aria-label="Mots voisins dans le dictionnaire">
-  ${def.alphaPrev ? `<a class="reperes-prec" href="/${def.alphaPrev.slug}/" data-turn="prev"${apercuAttr(def.alphaPrev)}><span class="masque">Mot précédent : </span>${breakable(def.alphaPrev.title)}</a>` : '<span></span>'}
+  ${def.alphaPrev ? `<a class="reperes-prec" href="/${def.alphaPrev.slug}/" data-turn="prev"${apercuAttr(def.alphaPrev)}><span class="masque">Mot précédent : </span><span class="reperes-nom">${breakable(def.alphaPrev.title)}</span><span class="reperes-court" aria-hidden="true">Précédent</span></a>` : '<span></span>'}
   <a class="reperes-lettre" href="/lettre/${letter.toLowerCase()}/" aria-label="Lettre ${letter}, ${plural(letterCount, 'mot', 'mots')}">${letter}</a>
-  ${def.alphaNext ? `<a class="reperes-suiv" href="/${def.alphaNext.slug}/" data-turn="next"${apercuAttr(def.alphaNext)}><span class="masque">Mot suivant : </span>${breakable(def.alphaNext.title)}</a>` : '<span></span>'}
+  ${def.alphaNext ? `<a class="reperes-suiv" href="/${def.alphaNext.slug}/" data-turn="next"${apercuAttr(def.alphaNext)}><span class="masque">Mot suivant : </span><span class="reperes-nom">${breakable(def.alphaNext.title)}</span><span class="reperes-court" aria-hidden="true">Suivant</span></a>` : '<span></span>'}
 </nav>
 <article class="mot${related ? '' : ' mot--seul'}" data-mot="${h(def.slug)}" data-titre="${h(affiche(def.title))}">
   <header class="mot-tete">
@@ -462,7 +466,6 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   const sousIndex = groups.length > 1
     ? `<nav class="sous-index" aria-label="Groupes de la lettre ${letter}">
   <ul>${groups.map((g, k) => `<li><a href="#groupe-${k + 1}">${h(g.label)}</a></li>`).join('')}</ul>
-  <p class="sous-choix"><label for="aller">Aller à</label><select id="aller" data-aller>${groups.map((g, k) => `<option value="#groupe-${k + 1}">${h(g.label)} (${num(g.defs.length)})</option>`).join('')}</select></p>
 </nav>`
     : '';
   const body = `${azIndex({ current: letter, hrefFor: (l) => (letters.get(l)?.length ? `/lettre/${l.toLowerCase()}/` : null), label: 'Toutes les lettres' })}
@@ -470,7 +473,7 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   <p class="grande-lettre" aria-hidden="true"><span class="gl"><span class="gl-in">${letter}</span></span></p>
   <div class="lettre-info">
     <h1 class="titre lettre-titre">Les mots en ${letter}</h1>
-    <p class="enonce">${plural(defs.length, 'mot', 'mots')} du dictionnaire, de <a href="/${defs[0].slug}/">${insecable(defs[0].title)}</a> à <a href="/${defs.at(-1).slug}/">${insecable(defs.at(-1).title)}</a>.</p>
+    <p class="enonce">${plural(defs.length, 'mot', 'mots')} du dictionnaire, de ${insecable(defs[0].title)} à ${insecable(defs.at(-1).title)}.</p>
     <nav class="lettres-voisines" aria-label="Lettres voisines">
       ${prev ? `<a href="/lettre/${prev.toLowerCase()}/" rel="prev"><span class="masque">Lettre précédente : </span>${prev}</a>` : ''}
       ${next ? `<a href="/lettre/${next.toLowerCase()}/" rel="next"><span class="masque">Lettre suivante : </span>${next}</a>` : ''}
@@ -527,8 +530,7 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
   const rayon = `<nav class="rayon" aria-label="Les 19 catégories"><ul>${categories
     .map((c) => `<li><a href="/categorie/${c.slug}/"${c.slug === cat.slug ? ' aria-current="page"' : ''}>${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span></a></li>`)
     .join('')}</ul></nav>`;
-  const body = `${indexGroupes}
-${rayon}
+  const body = `${rayon}
 <header class="cat-tete">
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
   <h1 class="cat-nom">${h(label)}</h1>
@@ -538,6 +540,7 @@ ${rayon}
     <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(d.description)}</span>` : ''}</a></li>`).join('')}</ul>
   </section>
 </header>
+${indexGroupes}
 <div class="liste">
 ${groupedList(cat.defs, picto, { mode: 'une', showCategory: false, labelPrefix: cat.slug === 'bip' ? '' : 'Lettre ' })}
 </div>`;
