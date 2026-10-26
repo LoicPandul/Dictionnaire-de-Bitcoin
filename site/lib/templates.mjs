@@ -692,7 +692,7 @@ export function homePage(data, { assets, jsonLd }) {
 <section class="categories" id="categories" aria-labelledby="categories-titre">
   <div class="categories-tete">
     <h2 class="titre" id="categories-titre">Dix-neuf catégories</h2>
-    <p class="enonce">Chaque définition appartient à un domaine, signalé dans le livre par son pictogramme. Les trois mots cités sont les plus renvoyés de leur catégorie.</p>
+    <p class="enonce">Chaque définition appartient à un domaine, signalé dans le livre par son pictogramme.<span class="sans-mobile"> Les trois mots cités sont les plus renvoyés de leur catégorie.</span></p>
   </div>
   <ul class="index">${catRows}</ul>
 </section>
