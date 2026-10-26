@@ -518,7 +518,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .ouvert-auteur { display: flex; gap: 18px; align-items: center; max-width: 52ch; }
 .ouvert-auteur img { width: 96px; height: 96px; flex: none; object-fit: cover; }
 .ouvert-auteur p { font-size: var(--t-ui); line-height: 1.5; }
-.lightning { font-weight: 600; font-family: var(--mono); font-size: 0.9em; }
+.lightning { font-weight: 700; color: var(--texte); }
 .fichier { align-self: start; min-width: 0; padding: 24px; background: var(--surface); }
 .fichier-chemin { margin-bottom: 18px; color: var(--doux); font-size: var(--t-note); overflow-wrap: anywhere; }
 .fichier-chemin code { font: 400 15px / 1.4 var(--mono); }
