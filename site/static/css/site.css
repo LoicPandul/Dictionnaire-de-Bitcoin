@@ -781,7 +781,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .liste { padding: 0 var(--m); }
 .groupe + .groupe { margin-top: 40px; }
 .groupe-tete { position: sticky; top: calc(var(--haut, 0px) + 52px); z-index: 5; display: flex; align-items: baseline; gap: 14px; padding: 8px 0 10px; margin-bottom: 4px; background: var(--fond); transition: top var(--d-ui) var(--ease-out); }
-.groupe-tete { border-bottom: 1px solid var(--trait); }
+
 .groupe-titre { font: 900 var(--t-repere) / 1 var(--archivo); font-stretch: 62%; }
 .groupe-titre { scroll-margin-top: calc(var(--haut, 0px) + 64px); }
 .groupe-n { font-size: var(--t-note); color: var(--doux); }
