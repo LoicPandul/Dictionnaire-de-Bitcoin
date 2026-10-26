@@ -5,4 +5,6 @@ category: "TRANSACTIONS"
 cross_references:
   - "d7ce15e2-ae52-437a-af0c-7544420824c4"
   - "38482b8f-a19c-4df6-9484-56dfc943280d"
+assets:
+  - filename: "image-1.png"
 version: "1"

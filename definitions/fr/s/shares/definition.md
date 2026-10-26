@@ -7,7 +7,7 @@ Pour chaque hash calculé, un mineur individuel dans une pool peut rencontrer tr
 * Si le hash est inférieur à la cible de difficulté de la share, mais supérieur ou égal à la cible de difficulté de Bitcoin, alors ce hash constitue une share valide qui n'est cependant pas suffisante pour valider un bloc. Le mineur peut envoyer ce hash à sa pool pour réclamer la récompense associée à la share : `share > hash > bloc`.
 * Si le hash est inférieur à la cible de difficulté du réseau Bitcoin, il est considéré à la fois comme une share valide et comme un bloc valide. Le mineur transmet ce hash à sa pool, qui s'empresse de le diffuser sur le réseau Bitcoin. Ce hash est également comptabilisé comme une share valide pour le mineur : `share > bloc > hash`.
 
-![Trois zones du hash : au-dessus de la cible share rien n'est valide, en dessous une share, sous la cible du bloc un bloc.](./assets/image-1.png)
+![Une échelle horizontale de valeurs de hash, croissantes de gauche à droite à partir de 0, porte deux cibles : en dessous de la cible du bloc le hash est un bloc valide, entre la cible du bloc et la cible des shares une share valide, au-dessus de la cible des shares un hash inutile.](./assets/image-1.png)
 
 Ce système de shares est utilisé pour estimer le travail réalisé par chaque mineur individuel au sein d'une pool, sans devoir recalculer individuellement tous les hash générés par un mineur, ce qui serait complètement inefficace pour la pool.
 

@@ -5,4 +5,6 @@ category: "PROTOCOLE"
 cross_references:
   - "7ff8a419-1f3b-47b1-9175-32be6fe2ad55"
   - "f2da558b-aaae-476c-af0d-a818270b93c4"
+assets:
+  - filename: "image-1.png"
 version: "1"

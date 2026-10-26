@@ -6,4 +6,6 @@ french_term: "ENSEMBLE D'UTXOS"
 cross_references:
   - "42910651-6f20-487e-a9c4-5e75433ee369"
   - "8a115a8e-7017-49e3-b3fa-e8b98ef0f27f"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -6,4 +6,6 @@ Structure de données dans le système Bitcoin. Un bloc contient un ensemble de 
 * La cible de difficulté ;
 * Le nonce.
 
+![Un bloc est formé d'un en-tête de six champs et d'une liste de transactions ; l'empreinte précédente rattache le bloc au précédent et la racine de Merkle résume les transactions.](./assets/image-1.png)
+
 Pour être valide, un bloc doit disposer d'un entête qui, une fois haché avec `SHA256d`, produit un condensat inférieur ou égal à la cible de difficulté.

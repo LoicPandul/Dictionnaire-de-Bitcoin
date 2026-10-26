@@ -6,4 +6,6 @@ La subvention de bloc initiale était de 50 bitcoins, et le halving se produit t
 * Au bloc 630 000 le 11 mai 2020 pour réduire la subvention à 6,25 BTC ;
 * Au bloc 840 000 le 20 avril 2024 pour réduire la subvention à 3,125 BTC.
 
+![Escalier de la subvention de bloc : 50, 25, 12,5, 6,25 puis 3,125 BTC, une marche tous les 210 000 blocs, de 0 à 840 000.](./assets/image-1.png)
+
 Les halvings continueront à se produire jusqu'à ce que la subvention de bloc atteigne zéro, moment auquel l'offre maximale d'environ 21 millions de bitcoins aura été atteinte. Le prochain halving de Bitcoin devrait avoir lieu aux alentours du printemps 2028, bien que la date exacte puisse légèrement varier en fonction du temps de minage des blocs. À ce moment-là, la subvention de bloc sera réduite de 3,125 à 1,5625 bitcoins. Ce sera le cinquième halving de l'histoire de Bitcoin. À mesure que les subventions de bloc baissent, les frais de transaction deviennent une source de revenus de plus en plus importante pour les mineurs, ce qui garantit leur motivation à continuer à participer à la preuve de travail.

@@ -2,3 +2,5 @@ Mécanisme qui permet d'établir une connexion entre le système principal de Bi
 * Un tiers de confiance unique ;
 * Une fédération d'entités ;
 * Les mineurs de la chaîne principale (drivechain).
+
+![Ancrage bilatéral : le dépôt de bitcoins verrouille les BTC sur la blockchain Bitcoin et émet un montant égal de jetons sur la sidechain ; la destruction des jetons déverrouille les BTC.](./assets/image-1.png)

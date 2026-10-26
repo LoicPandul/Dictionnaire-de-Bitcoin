@@ -5,4 +5,6 @@ category: "ARK"
 cross_references:
   - "07f6f728-ea7c-4b2b-aec7-f98c199177ef"
   - "42910651-6f20-487e-a9c4-5e75433ee369"
+assets:
+  - filename: "image-1.png"
 version: "1"

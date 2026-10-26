@@ -8,4 +8,6 @@ Suite de caractères qui combine une clé (publique ou privée), son code de cha
 * La clé privée ou la clé publique ;
 * Une somme de contrôle. Elle représente les 4 premiers octets du `HASH256` de tout le reste de la clé étendue.
 
+![Structure d'une clé étendue, du préfixe à la somme de contrôle : huit champs alignés dans leur ordre, chacun dessiné à la largeur de sa taille en octets.](./assets/image-1.png)
+
 Dans la pratique, la clé publique étendue est utilisée pour générer des adresses de réception et pour observer les transactions d'un compte, sans exposer les clés privées associées. Cela peut permettre, par exemple, la création d'un portefeuille dit « watch-only ». Il est toutefois important de noter que la clé publique étendue est une information sensible pour la confidentialité de l'utilisateur, car sa divulgation peut permettre à des tiers de tracer les transactions et de voir le solde du compte associé.

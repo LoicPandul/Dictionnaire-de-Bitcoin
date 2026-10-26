@@ -3,3 +3,5 @@ Désigne le processus de génération de paires de clés enfants à partir d'une
 * La dérivation endurcie, qui utilise la clé privée parent à la base de la fonction `HMAC-SHA512` ;
 
 Le résultat de HMAC-SHA512 est divisé en deux : les premiers 256 bits sont additionnés à la clé parent pour produire la clé enfant (privée, ou publique après multiplication par le point générateur sur la courbe elliptique), et les 256 bits restants deviennent le code de chaîne enfant.
+
+![Dérivation d'une clé enfant : la clé parent, l'index de 32 bits et le code de chaîne parent entrent dans HMAC-SHA512, dont les 512 bits se coupent en deux moitiés de 256 bits, la gauche s'ajoutant à la clé parent modulo n pour donner la clé enfant, la droite devenant le code de chaîne enfant.](./assets/image-1.png)

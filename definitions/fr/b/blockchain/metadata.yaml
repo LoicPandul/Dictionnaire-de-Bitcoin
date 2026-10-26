@@ -6,4 +6,6 @@ french_term: "CHAÎNE DE BLOCS"
 cross_references:
   - "dd7fef86-8eb0-4ed5-ba65-899c7374b274"
   - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
+assets:
+  - filename: "image-1.png"
 version: "1"

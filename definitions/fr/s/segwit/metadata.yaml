@@ -5,4 +5,6 @@ category: "ÉVOLUTION DU PROTOCOLE"
 cross_references:
   - "9b22b406-2cf6-4ff0-9bad-d1ab5a0c8f38"
   - "8a746586-6b6c-4e67-9721-44abfae97ddd"
+assets:
+  - filename: "image-1.png"
 version: "1"

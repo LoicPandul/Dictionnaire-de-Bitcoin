@@ -6,4 +6,6 @@ cross_references:
   - "6d6f32a0-761e-4ee4-a189-db65aebc23ef"
   - "bbb44c74-279f-4379-9160-c4304fcb87f8"
 french_term: "ÉCHANGE SOUS-MARIN"
+assets:
+  - filename: "image-1.png"
 version: "1"

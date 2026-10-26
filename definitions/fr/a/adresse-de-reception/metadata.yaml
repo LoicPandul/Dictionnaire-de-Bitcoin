@@ -3,9 +3,9 @@ title: "ADRESSE DE RÉCEPTION"
 slug: "adresse-de-reception"
 category: "CLÉS ET DÉRIVATION"
 english_term: "BITCOIN ADDRESS"
-assets:
-  - filename: "image-1.png"
 cross_references:
   - "aa1fee82-5009-41ce-9821-614fb59dfef3"
   - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
+assets:
+  - filename: "image-1.png"
 version: "1"

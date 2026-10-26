@@ -1,3 +1,5 @@
 Échange atomique entre des bitcoins on-chain et des bitcoins off-chain sur le Lightning Network, sans risque de contrepartie. Aucune des deux parties ne prend *custody* des fonds de l'autre : soit l'échange réussit intégralement, soit il échoue et chacun récupère ses fonds.
 
 Le mécanisme repose sur les mêmes HTLC (*Hash Time-Locked Contracts*) que ceux utilisés dans le routage Lightning. Le destinataire du paiement Lightning génère une préimage secrète dont le hash sert à construire à la fois un contrat on-chain et un paiement off-chain. Le payeur on-chain verrouille ses bitcoins dans un script conditionnel : les fonds peuvent être réclamés par le destinataire s'il fournit la préimage et sa signature, ou récupérés par le payeur après expiration du *timelock*. Lorsque le paiement Lightning est effectué, la préimage est révélée, ce qui permet au destinataire de réclamer les fonds on-chain.
+
+![Le même hash verrouille le contrat on-chain du payeur et le paiement Lightning vers le receveur : la préimage, créée par le receveur et révélée par le paiement, permet au service de swap de réclamer les fonds on-chain.](./assets/image-1.png)
