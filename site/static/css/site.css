@@ -646,7 +646,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .cites-liste a { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 12px; background: var(--surface); font-size: var(--t-note); overflow-wrap: anywhere; }
 @media (hover: hover) { .cites-liste a:hover { background: var(--marque); color: var(--sur-marque); } }
 .cites-plus { margin-top: 8px; min-height: 40px; padding: 8px 0; border: 0; background: transparent; color: var(--lien); font-size: var(--t-note); font-weight: 600; text-decoration: underline; text-underline-offset: 0.2em; }
-.cites-liste.replie li:nth-child(n + 13) { display: none; }
+.cites-liste.replie li:nth-child(n + 9) { display: none; }
 
 .renvois ul { display: grid; gap: 4px; }
 .renvoi { display: grid; gap: 4px; padding: 12px 0 14px; text-decoration: none; color: var(--texte); }
@@ -878,6 +878,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .perdu { position: relative; display: grid; min-height: calc(100svh - var(--barre)); background: var(--jaquette); color: var(--blanc); overflow: clip; }
 .perdu-arbre { position: absolute; inset: 0; }
 .perdu-arbre picture, .perdu-arbre img { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* Le bord gauche de l'image porte une colonne plus claire : on la pousse hors champ. */
+.perdu-arbre img { inset: 0 -6px; width: calc(100% + 12px); }
 .perdu-arbre img { object-fit: cover; object-position: 100% 0; }
 .perdu-texte { position: relative; align-self: end; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; padding: max(27svh, 200px) var(--m) 56px; justify-items: start; max-width: 760px; }
 @media (max-width: 1023px) { .perdu-arbre img { object-position: 0 0; } .perdu-texte { padding-top: min(36svh, 300px); } }

@@ -5,7 +5,13 @@ Chaque gabarit (accueil, définition, lettre, catégorie, recherche, 404) a ét�
 ## Mesures
 
 - **Inspecteur** (1440, 768, 390 px) : 0 échec sur l'accueil. Sur les pages de lecture, il reste la règle « au moins quatre photos » et « une vidéo », écrite pour des pages vitrines : une page de définition, de lettre ou de recherche n'a pas de photo à montrer, et en inventer une serait de la décoration. Défendu, pas corrigé. Restent aussi « le h1 est un nom seul » sur la définition (c'est la vedette d'un dictionnaire ; la catégorie et « Entrée 1 346 sur 1 408 du dictionnaire » suivent dans le premier écran) et « la même grande ligne reste à l'écran » sur la lettre B (l'en-tête de groupe collant, voulu, comme un mot-repère).
-- **Lighthouse mobile** (page de définition) : voir le tableau final.
+- **Lighthouse mobile** (pages de définition, dernier build) :
+
+  | Page | Performance | Accessibilité | Bonnes pratiques | SEO | LCP | CLS |
+  | --- | --- | --- | --- | --- | --- | --- |
+  | `/adresse-de-reception/` | 99 | 100 | 100 | 100 | 2,1 s | 0 |
+  | `/utxo/` | 100 | 100 | 100 | 100 | 1,8 s | 0 |
+  | `/adaptor-signature/` | 98 | 100 | 100 | 100 | 2,3 s | 0 |
 - **Défilement horizontal** : aucun en 360, 390, 768, 1024 et 1440 px sur 15 pages types (dont les vedettes les plus longues, un tableau, un bloc de code, des formules).
 
 ## Tours de relecture
@@ -231,3 +237,22 @@ Ce qui a été corrigé après ce tour :
 - **Listes** : barres collantes avec un filet et une ombre légère quand elles collent ; sujet des BIP en Écorce, moins dense ; bouton « Haut » plus petit, ombré pour se détacher du texte.
 - **Catégorie** : « Lire la suite » se replie ; une suite de moins de 160 signes s'affiche d'emblée.
 - **Recherche** : fond flouté derrière la fenêtre.
+
+### Tour 11 (nouveau relecteur indépendant, relevés du tour 10 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,8 | 8,4 |
+| Définition | 8,0 | 8,3 |
+| Lettre | 7,7 | 8,0 |
+| Catégorie | 7,7 | 7,9 |
+| Recherche | 8,1 | 8,2 |
+| 404 | 7,9 | 8,1 |
+
+Note globale : 8,0, troisième tour au même niveau. Il confirme les voisins d'opcode, la barre collante séparée (aussi en sombre), « Replier », le flou derrière la recherche. Ce qu'il relève encore tient surtout du réglage fin, et contredit parfois les tours précédents (casse des sujets de BIP, place des puces).
+
+Corrigé après ce tour, sans nouvelle relecture : renvois entrants repliés au-delà de 8 ; bouton « Haut » qui se retire après 2,5 s sans défilement ; « Vouliez-vous dire ? » ; bord clair de l'arbre poussé hors champ sur la 404.
+
+## Bilan
+
+L'objectif de 8,5 sur chaque gabarit n'est pas atteint. Notes : 6,5 au tour 1, 6,9 au tour 3 (avant la charte 2027), 7,6 aux tours 4 et 5, puis 7,8 à 8,0 du tour 6 au tour 11. Un seul gabarit a touché 8,5 (l'accueil sur ordinateur, tour 9). Les trois derniers relecteurs, chacun neuf, donnent 8,0 et disent la même chose : plus de défaut de structure, des finitions qui se contredisent d'un tour à l'autre. Les mobiles restent un demi-point sous les ordinateurs, surtout sur les longues listes (lettre, catégorie).

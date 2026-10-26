@@ -806,7 +806,7 @@ export function notFoundPage({ assets, letters, total }) {
       <button type="submit">Chercher</button>
     </form>
     <div class="perdu-suggestions" data-suggestions hidden>
-      <h2 class="perdu-sous" data-suggestions-titre>Vouliez-vous dire</h2>
+      <h2 class="perdu-sous" data-suggestions-titre>Vouliez-vous dire ?</h2>
       <ul class="perdu-liste" id="perdu-resultats" data-suggestions-liste></ul>
     </div>
     <p class="perdu-actions"><a class="lien lien--os" href="/">Retour à l’accueil</a> <a class="lien lien--os" href="#lettres">Parcourir par lettre</a></p>

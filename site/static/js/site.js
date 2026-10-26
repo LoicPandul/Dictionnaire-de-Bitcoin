@@ -176,10 +176,10 @@
     objet.addEventListener('pointerleave', () => { couronne.style.translate = racines.style.translate = '0 0'; });
   }
 
-  // ------------------------------------------------------------ Renvois entrants repliés au-delà de 12
+  // ------------------------------------------------------------ Renvois entrants repliés au-delà de 8
   for (const ul of d.querySelectorAll('[data-repliable]')) {
     const n = ul.children.length;
-    const limite = 12;
+    const limite = 8;
     if (n <= limite) continue;
     ul.classList.add('replie');
     const b = d.createElement('button');
@@ -679,7 +679,7 @@
         const vus = new Set(res.map((r) => r.t.slug));
         res = res.concat(proches(q, 3 - res.length, vus));
       }
-      titre404.textContent = q === q0 ? 'Vouliez-vous dire' : 'Résultats';
+      titre404.textContent = q === q0 ? 'Vouliez-vous dire\u202f?' : 'Résultats';
       liste404.innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`).join('');
       sugg.hidden = !res.length;
     };
@@ -730,7 +730,12 @@
     let piedVisible = false;
     const pied = d.querySelector('.dos');
     // Visible en remontant (quand la barre revient), après le premier écran, jamais sur le pied : il ne cache pas la lecture.
-    const majHaut = () => { haut.hidden = piedVisible || scrollY < innerHeight || !!barre?.classList.contains('est-cachee'); };
+    let repos = 0;
+    const majHaut = () => {
+      haut.hidden = piedVisible || scrollY < innerHeight || !!barre?.classList.contains('est-cachee');
+      clearTimeout(repos);
+      if (!haut.hidden) repos = setTimeout(() => { if (d.activeElement !== haut) haut.hidden = true; }, 2500);
+    };
     if (pied) new IntersectionObserver(([e]) => { piedVisible = e.isIntersecting; majHaut(); }).observe(pied);
     addEventListener('scroll', () => requestAnimationFrame(majHaut), { passive: true });
   }
