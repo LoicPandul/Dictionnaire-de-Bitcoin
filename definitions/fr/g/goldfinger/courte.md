@@ -1,1 +1,1 @@
-Scénario d'attaque dans lequel un acteur prend le contrôle de plus de la moitié du *hashrate* pour nuire à Bitcoin, en censurant des transactions ou en réalisant des doubles dépenses.
+Variante de l'attaque des 51 % dans laquelle un acteur prend le contrôle de plus de la moitié du *hashrate* pour détruire Bitcoin ou sa valeur, par un intérêt extérieur à son économie, et non pour un gain direct.

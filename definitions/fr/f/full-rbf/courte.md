@@ -1,1 +1,1 @@
-Politique de mempool qui accepte le remplacement de toute transaction non confirmée par une version qui paie plus de frais, même sans signal RBF. Bitcoin Core l'applique par défaut depuis sa version 28.0.
+Politique de mempool qui accepte le remplacement de toute transaction non confirmée par une version qui paie plus de frais, même sans signal RBF. Bitcoin Core l'applique par défaut depuis sa version 28.0, sans option pour le désactiver depuis la 29.0.

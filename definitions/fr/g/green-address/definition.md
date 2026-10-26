@@ -1,1 +1,1 @@
-Ancien logiciel de portefeuille Bitcoin racheté en juillet 2016 par Blockstream pour créer le logiciel actuel Green Wallet.
+Ancien logiciel de portefeuille Bitcoin, avec des applications Android, iOS et Chrome et un code source ouvert sur GitHub. Blockstream l'a racheté en juillet 2016, puis l'a refondu en mars 2019 dans le portefeuille Green, décrit dans l'entrée Green Wallet. Il ne faut pas le confondre avec le concept des *green addresses*, des adresses dont les transactions sont garanties par un tiers de confiance.

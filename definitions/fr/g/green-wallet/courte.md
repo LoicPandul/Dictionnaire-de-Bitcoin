@@ -1,1 +1,1 @@
-Portefeuille Bitcoin pour ordinateur, Android et iOS, développé par Blockstream depuis le rachat de GreenAddress en 2016. Il propose une protection multisignature avec authentification à deux facteurs et fonctionne avec la plupart des *hardware wallets*.
+Portefeuille Bitcoin pour ordinateur, Android et iOS, développé par Blockstream depuis le rachat de GreenAddress en 2016, et prolongé en 2025 par la Blockstream App. Il propose une protection multisignature avec authentification à deux facteurs et fonctionne avec la plupart des *hardware wallets*.
