@@ -75,6 +75,18 @@ const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
 export const fr = (t = '') => String(t).replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
 const hd = (t) => h(fr(t));
+// Résumé coupé au mot, jamais sur un mot-outil, un nombre entamé ni une lettre seule (« que… », « 500 00… », « et M… »).
+// La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.
+export const resume = (t, n = 84) => {
+  t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
+  if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
+  let s = t.slice(0, n + 1);
+  s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
+  while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
+  // Une parenthèse ouverte et pas refermée : on coupe avant elle.
+  if ((s.match(/\(/g) || []).length > (s.match(/\)/g) || []).length && s.lastIndexOf('(') > n / 2) s = s.slice(0, s.lastIndexOf('('));
+  return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
+};
 // Dans une phrase, un titre ne se coupe pas à son trait d'union (« B-MONEY ») : trait d'union insécable.
 const insecable = (t) => h(affiche(t)).replace(/-/g, '\u2011').replace(/– /g, '–\u00a0');
 
@@ -274,7 +286,7 @@ function entry(def, picto, { showCategory = true } = {}) {
   const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
   return `<li><a class="entree" href="/${def.slug}/"${apercuAttr(def)}>
   <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}${sujet ? ` <span class="entree-sujet">${sujet}</span>` : ''}</span>
-  ${def.description ? `<span class="entree-desc">${hd(def.description)}</span>` : ''}
+  ${def.description ? `<span class="entree-desc">${hd(resume(def.description))}</span>` : ''}
 </a></li>`;
 }
 
@@ -367,7 +379,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   const renvoi = (r) => `<li><a class="renvoi" href="/${r.slug}/">
   <span class="renvoi-nom" data-vt-nom>${breakable(r.title)}</span>
   <span class="renvoi-cat">${picto.use(r.categorySlug)}${h(categoryLabel(r.category))}</span>
-  ${r.description ? `<span class="renvoi-desc">${hd(r.description)}</span>` : ''}
+  ${r.description ? `<span class="renvoi-desc">${hd(resume(r.description, 120))}</span>` : ''}
 </a></li>`;
   const related = def.related.length
     ? `<aside class="renvois" aria-labelledby="renvois-titre">
@@ -383,21 +395,13 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
 </section>`
     : '';
 
-  // Coupé au mot, jamais sur un mot-outil ni une lettre seule (« que… », « et M… »).
-  const court = (t, n = 120) => {
-    if (!t || t.length <= n) return t;
-    let s = t.slice(0, n);
-    if (s.lastIndexOf(' ') > 60) s = s.slice(0, s.lastIndexOf(' '));
-    while (/\s(\S{1,3}|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > 60) s = s.slice(0, s.lastIndexOf(' '));
-    return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
-  };
   const turn = (d, dir) => {
     if (!d) return `<span class="tourner-vide"></span>`;
     const label = dir === 'prev' ? 'Mot précédent' : 'Mot suivant';
     return `<a class="tourner-lien tourner-lien--${dir}" href="/${d.slug}/" rel="${dir}" data-turn="${dir}">
   <span class="tourner-sens">${label}</span>
   <span class="tourner-nom">${breakable(d.title)}</span>
-  ${d.description ? `<span class="tourner-desc">${hd(court(d.description))}</span>` : ''}
+  ${d.description ? `<span class="tourner-desc">${hd(resume(d.description, 120))}</span>` : ''}
 </a>`;
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
@@ -483,7 +487,7 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
     <div class="apercu-lettre" aria-live="polite" data-apercu-lettre>
       <p class="apercu-lettre-nom"><a href="/${vedetteLettre.slug}/">${breakable(vedetteLettre.title)}</a></p>
       <p class="apercu-lettre-cat">${h(categoryLabel(vedetteLettre.category))}</p>
-      <p class="apercu-lettre-desc">${hd(vedetteLettre.description || '')}</p>
+      <p class="apercu-lettre-desc">${hd(resume(vedetteLettre.description))}</p>
     </div>
     <figure class="tranche-lettre">
       <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
@@ -491,9 +495,11 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
     </figure>
   </div>
 </header>
+<div class="liste-bloc">
 ${sousIndex}
 <div class="liste">
 ${groupedList(defs, picto, { mode: defs.length > 40 ? 'deux' : 'une', labelPrefix: 'Groupe ' })}
+</div>
 </div>
 ${next ? `<p class="lettre-suite"><a class="bouton" href="/lettre/${next.toLowerCase()}/">Lettre suivante : ${next}</a></p>` : ''}`;
   return page({
@@ -527,23 +533,29 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
     if (l === 'B') for (const g of groups) if (g.key.startsWith('BIP-')) cases.push(`<li><a href="${ancres.get(g.key)}" aria-label="${h(g.label)}">${g.key.slice(4)}</a></li>`);
   }
   const indexGroupes = `<nav class="index-az" aria-label="Lettres de la catégorie ${h(label)}"><ol>${cases.join('')}</ol></nav>`;
-  const rayon = `<nav class="rayon" aria-label="Les 19 catégories"><ul>${categories
+  const rayon = `<nav class="rayon" aria-labelledby="rayon-titre"><h2 class="rayon-titre" id="rayon-titre">Les ${categories.length} catégories</h2><ul>${categories
     .map((c) => `<li><a href="/categorie/${c.slug}/"${c.slug === cat.slug ? ' aria-current="page"' : ''}>${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span></a></li>`)
     .join('')}</ul></nav>`;
-  const body = `${rayon}
-<header class="cat-tete">
+  // Présentation : la première phrase entière, la suite repliée derrière « Lire la suite ».
+  const texte = note ? fr(note.replace(/\.$/, '')) + '.' : '';
+  const coupe = texte.search(/[.!?] (?=[A-ZÀ-Ý«])/);
+  const [premiere, suite] = coupe > 0 ? [texte.slice(0, coupe + 1), texte.slice(coupe + 2)] : [texte, ''];
+  const body = `<header class="cat-tete">
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
   <h1 class="cat-nom">${h(label)}</h1>
-  <p class="enonce cat-note" data-repliable-texte>${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire${note ? `. ${hd(note.replace(/\.$/, ''))}.` : '.'}</p>
+  <p class="enonce cat-note">${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire. ${h(premiere)}${suite ? `<span class="cat-note-suite" data-repliable-suite> ${h(suite)}</span>` : ''}</p>
   <section class="cat-debut" aria-labelledby="debut-titre">
     <h2 class="cat-debut-titre" id="debut-titre">Pour commencer</h2>
-    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(d.description)}</span>` : ''}</a></li>`).join('')}</ul>
+    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(resume(d.description))}</span>` : ''}</a></li>`).join('')}</ul>
   </section>
 </header>
+<div class="liste-bloc">
 ${indexGroupes}
 <div class="liste">
 ${groupedList(cat.defs, picto, { mode: 'une', showCategory: false, labelPrefix: cat.slug === 'bip' ? '' : 'Lettre ' })}
-</div>`;
+</div>
+</div>
+${rayon}`;
   return page({
     headOpts: {
       title: `${label} : ${cat.defs.length} définitions | Dictionnaire de Bitcoin`,

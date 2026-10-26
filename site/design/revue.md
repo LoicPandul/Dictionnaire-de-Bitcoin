@@ -100,3 +100,25 @@ Ce qui a été corrigé après ce tour :
 - **Lettre** : la rangée des sous-groupes remplace la liste déroulante sur téléphone, devient collante et marque le groupe lu en le gardant en vue ; deux lignes de résumé partout ; bornes de l'intro en texte simple.
 - **Catégorie** : une seule rangée (les 19 catégories) avant le titre ; l'alphabet passe sous l'en-tête, juste avant la liste, et reste collant.
 - **Recherche** : plusieurs mots trouvés çà et là, ceux qui touchent le titre passent devant (« hd wallet » donne HD en tête) ; surlignage sans aplat sous le soulignement ; catégorie et terme anglais sur une ligne sur téléphone ; tiret demi-cadratin aussi dans les titres rendus par le script.
+
+### Tour 5 (nouveau relecteur indépendant, relevés du tour 4 à vérifier)
+
+| Gabarit | Mobile | Ordinateur |
+| --- | --- | --- |
+| Accueil | 7,5 | 8,0 |
+| Définition | 7,5 | 8,0 |
+| Lettre | 7,0 | 7,5 |
+| Catégorie | 7,0 | 7,5 |
+| Recherche | 7,5 | 7,5 |
+| 404 | 7,5 | 8,0 |
+
+Note globale : 7,6, stable. Il confirme la carte parasite disparue, « hd wallet » corrigé, une seule rangée avant le titre des catégories, les sous-groupes collants. Défaut le plus répété : les résumés coupés en plein mot par la coupe CSS (« constit… », « 500 00… », « au-… »). Restaient aussi : « cle » qui mêle CLEMENTINE, lettres de la tranche encore inégales, catégories en rangée qui défile sans indice, en-têtes de groupe collants sous la rangée des sous-groupes, page tournée trop haute sur téléphone.
+
+Ce qui a été corrigé après ce tour :
+
+- **Résumés** : coupés au build (et dans le script pour la recherche et la 404) à une longueur qui tient dans les lignes données, au mot, jamais sur un mot-outil, un nombre entamé, une lettre seule ni une parenthèse ouverte ; la coupe CSS ne sert plus que de filet. Listes en deux colonnes jusqu'à 1 280 px pour que deux lignes suffisent.
+- **Recherche** : quand le mot cherché est un mot entier de cinq titres ou plus, les simples débuts de mot ne s'y mêlent plus (« cle » ne montre que les CLÉ) ; « clef » cherche « clé » ; le terme trouvé est marqué en gras dans la couleur du lien, sans seconde couleur.
+- **Catégorie** : les 19 catégories passent en bas de page, en grille complète ; la présentation montre sa première phrase entière, la suite derrière « Lire la suite » ; les barres collantes s'arrêtent à la fin de la liste ; lettres absentes plus pâles.
+- **Lettre** : les en-têtes de groupe ne collent plus sous la rangée des sous-groupes, qui marque déjà le groupe lu.
+- **Accueil** : lettres de la tranche de largeur égale ; respiration entre sections ramenée de 144 à 112 px ; mots cités des catégories moins gras, retirés sur téléphone.
+- **Définition** : page tournée compacte sur téléphone (nom seul) ; bouton « Haut » dès le deuxième écran.

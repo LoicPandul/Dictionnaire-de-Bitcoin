@@ -6,6 +6,16 @@
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   root.classList.add('anim');
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ');
+  // Résumé coupé au mot (même règle que lib/templates.mjs, resume).
+  const resume = (t, n = 84) => {
+    t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
+    if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
+    let s = t.slice(0, n + 1);
+    s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
+    while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
+    if ((s.match(/\(/g) || []).length > (s.match(/\)/g) || []).length && s.lastIndexOf('(') > n / 2) s = s.slice(0, s.lastIndexOf('('));
+    return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
+  };
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
   // ------------------------------------------------------------ Thème
@@ -116,7 +126,7 @@
       lien.href = a.getAttribute('href');
       lien.textContent = f.apercuNom || a.querySelector('title').textContent;
       boite.querySelector('.apercu-lettre-cat').textContent = f.apercuCat || '';
-      boite.querySelector('.apercu-lettre-desc').textContent = f.apercu || '';
+      boite.querySelector('.apercu-lettre-desc').textContent = resume(f.apercu);
       [...loupe.children].forEach((sp, j) => {
         const i = k - 10 + j;
         sp.style.height = i >= 0 && i < traits.length ? `${Math.max(8, hauteurs[i])}%` : '0';
@@ -363,7 +373,7 @@
   // À rang égal, le terme le plus renvoyé par les autres définitions passe devant.
   // Mots anglais et formes courantes vers le vocabulaire du dictionnaire.
   const SYNONYMES = {
-    wallet: 'portefeuille', seed: 'graine', key: 'cle', keys: 'cles', address: 'adresse', fee: 'frais', fees: 'frais',
+    wallet: 'portefeuille', seed: 'graine', key: 'cle', keys: 'cles', clef: 'cle', clefs: 'cles', address: 'adresse', fee: 'frais', fees: 'frais',
     mnemonic: 'phrase de recuperation', 'seed phrase': 'phrase de recuperation', '12 mots': 'phrase de recuperation',
     '24 mots': 'phrase de recuperation', block: 'bloc', mining: 'minage', miner: 'mineur', node: 'noeud', channel: 'canal',
     signature: 'signature', privacy: 'confidentialite', transaction: 'transaction', hash: 'hachage',
@@ -410,7 +420,9 @@
       const vus = new Set(forts.concat(faibles).map((r) => r.t.slug));
       for (const r of chercher(syn, { cat, limite: 30, sansSynonyme: true }).res) if (!vus.has(r.t.slug)) faibles.push({ ...r, rang: Math.min(r.rang, 3), at: -1 });
     }
-    let res = forts.length >= 5 ? forts : forts.concat(faibles);
+    // « cle » : s'il y a assez de titres où c'est un mot entier (CLÉ PUBLIQUE…), on n'y mêle pas les débuts de mot (CLEMENTINE).
+    const entiers = forts.filter((r) => r.rang >= 8.5);
+    let res = entiers.length >= 5 ? entiers : forts.length >= 5 ? forts : forts.concat(faibles);
     let approx = false;
     if (!res.length && cq.length > 2) {
       approx = true;
@@ -431,7 +443,7 @@
   const surligner = (title, at, len) => { title = affiche(title); return at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`; };
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
-  <a href="/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt)}</span>` : ''}${t.desc ? `<span class="resultat-desc">${esc(t.desc)}</span>` : ''}</a></li>`;
+  <a href="/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt)}</span>` : ''}${t.desc ? `<span class="resultat-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`;
   const pluriel = (n, un, plusieurs) => `${n.toLocaleString('fr-FR')} ${n > 1 ? plusieurs : un}`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
@@ -663,7 +675,7 @@
         res = res.concat(proches(q, 3 - res.length, vus));
       }
       titre404.textContent = q === q0 ? 'Vouliez-vous dire' : 'Résultats';
-      liste404.innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(t.desc)}</span>` : ''}</a></li>`).join('');
+      liste404.innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`).join('');
       sugg.hidden = !res.length;
     };
     charger().then(montrer404);
@@ -705,18 +717,19 @@
     d.body.append(haut);
     let piedVisible = false;
     const pied = d.querySelector('.dos');
-    if (pied) new IntersectionObserver(([e]) => { piedVisible = e.isIntersecting; haut.hidden = piedVisible || scrollY < innerHeight * 2; }).observe(pied);
-    addEventListener('scroll', () => { haut.hidden = piedVisible || scrollY < innerHeight * 2; }, { passive: true });
+    if (pied) new IntersectionObserver(([e]) => { piedVisible = e.isIntersecting; haut.hidden = piedVisible || scrollY < innerHeight; }).observe(pied);
+    addEventListener('scroll', () => { haut.hidden = piedVisible || scrollY < innerHeight; }, { passive: true });
   }
 
   // ------------------------------------------------------------ Présentation de catégorie repliée : « Lire la suite »
-  const note = d.querySelector('[data-repliable-texte]');
-  if (note && note.scrollHeight > note.clientHeight + 4) {
+  const suite = d.querySelector('[data-repliable-suite]');
+  if (suite) {
     const b = d.createElement('button');
     b.type = 'button';
     b.className = 'lire-suite';
     b.textContent = 'Lire la suite';
-    b.addEventListener('click', () => { note.classList.add('deplie'); b.remove(); });
-    note.after(b);
+    b.setAttribute('aria-expanded', 'false');
+    b.addEventListener('click', () => { suite.closest('.cat-note').classList.add('deplie'); b.remove(); });
+    suite.closest('.cat-note').after(b);
   }
 })();
