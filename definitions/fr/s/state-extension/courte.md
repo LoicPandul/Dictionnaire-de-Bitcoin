@@ -1,1 +1,1 @@
-Opération d'un contrat RGB qui exerce un droit public prévu par le contrat, une *Valency*, pour amorcer une mise à jour de son état. La modification ne devient effective qu'avec une *State Transition*.
+Opération d'un contrat RGB qui exerce un droit public prévu par le contrat, une *Valency*, pour amorcer une mise à jour de son état. Retirée de RGB depuis la v0.12 (2025), elle ne prenait effet qu'avec une *State Transition*.

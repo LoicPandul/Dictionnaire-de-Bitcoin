@@ -1,1 +1,1 @@
-Désigne un individu ou une entité qui possède une quantité très importante de bitcoins.
+Individu ou entité qui possède une quantité très importante de bitcoins. En français, on parle de baleine.
