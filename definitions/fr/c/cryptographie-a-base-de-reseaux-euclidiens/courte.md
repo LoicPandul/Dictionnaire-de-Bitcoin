@@ -1,0 +1,1 @@
+Famille de la cryptographie post-quantique fondée sur des problèmes difficiles dans des grilles de points de grande dimension. Elle fournit ML-KEM et ML-DSA, standardisés par le NIST en 2024, et FN-DSA, en cours de standardisation, avec des clés et des signatures de l'ordre du kilo-octet.

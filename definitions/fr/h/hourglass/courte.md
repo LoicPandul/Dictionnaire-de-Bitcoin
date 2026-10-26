@@ -1,0 +1,1 @@
+Proposition de soft fork qui limiterait la dépense des sorties P2PK à une par bloc, puis à 1 bitcoin par bloc dans sa version 2, pour qu'un ordinateur quantique ne puisse pas les vider d'un coup. Elle reste un brouillon sans numéro de BIP.

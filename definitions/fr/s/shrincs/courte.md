@@ -1,0 +1,1 @@
+Schéma de signature à base de hachage conçu pour Bitcoin, qui combine une signature avec état très compacte et un repli sans état fondé sur les algorithmes de SLH-DSA. Il reste un brouillon de BIP au 25 octobre 2026.

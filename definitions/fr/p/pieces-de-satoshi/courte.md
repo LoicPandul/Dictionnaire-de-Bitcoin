@@ -1,0 +1,1 @@
+Bitcoins minés dans les premiers blocs par un mineur que l'analyse de Sergio Lerner associe à Satoshi Nakamoto. Pour la plupart restés sur des sorties P2PK à clé publique visible, ils nourrissent le débat sur le sort des pièces vulnérables.
