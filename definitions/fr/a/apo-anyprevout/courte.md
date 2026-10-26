@@ -1,1 +1,1 @@
-Proposition, décrite dans le BIP-0118, qui ajoute à Bitcoin deux nouveaux *SigHash flags* : `SIGHASH_ANYPREVOUT` et `SIGHASH_ANYPREVOUTANYSCRIPT`.
+Proposition, décrite dans le BIP-0118, qui ajoute à Bitcoin deux nouveaux *SigHash flags* : `SIGHASH_ANYPREVOUT` et `SIGHASH_ANYPREVOUTANYSCRIPT`, pour des signatures qui ne s'engagent pas sur la sortie dépensée (utile à eltoo).

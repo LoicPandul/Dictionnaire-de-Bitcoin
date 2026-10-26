@@ -1,1 +1,1 @@
-Proposition qui autorise des sorties `OP_RETURN` de valeur nulle dans les demandes de paiement BIP-0070, pour y inscrire des données comme un identifiant de commande. Elle a été rejetée.
+Proposition qui autorise des sorties `OP_RETURN` de valeur nulle dans les demandes de paiement BIP-0070, pour y inscrire des données comme un identifiant de commande. Elle a été fermée, avec l'avis « Unanimously Discourage for implementation ».
