@@ -1,1 +1,1 @@
-Portefeuille mobile Lightning *non-custodial* qui masque la gestion des canaux et de la liquidité. L'entreprise qui le développe propose aussi le Breez SDK, qui permet à d'autres applications d'intégrer des paiements Lightning.
+Portefeuille mobile Lightning *non-custodial* qui masquait la gestion des canaux et de la liquidité. L'entreprise qui le développe propose aussi le Breez SDK, qui permet à d'autres applications d'intégrer des paiements Lightning.

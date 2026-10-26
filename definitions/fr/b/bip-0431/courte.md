@@ -1,1 +1,1 @@
-Proposition informationnelle qui décrit les attaques de *transaction pinning* et restreint la topologie des paquets de transactions dans la mempool, pour rendre le remplacement de transactions plus fiable, notamment pour Lightning.
+Proposition informationnelle qui décrit les attaques de *transaction pinning* et définit les transactions TRUC (`nVersion=3`), limitées à un ancêtre et un descendant non confirmés, pour fiabiliser le remplacement de transactions, notamment pour Lightning.

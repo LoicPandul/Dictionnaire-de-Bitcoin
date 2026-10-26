@@ -1,1 +1,1 @@
-Méthode qui consiste à ne garder sa phrase mnémonique qu'en mémoire, sans aucun support, ou à en choisir soi-même les mots. Elle expose à la perte des fonds en cas d'oubli et, quand les mots sont choisis, au vol par force brute.
+Méthode qui consiste à ne garder sa phrase mnémonique qu'en mémoire, ou à dériver sa clé privée d'une phrase de passe choisie. Elle expose à la perte des fonds en cas d'oubli et, quand la phrase est choisie, au vol par force brute.
