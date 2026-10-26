@@ -1,0 +1,1 @@
+Processus public lancé par le NIST en décembre 2016 pour choisir des algorithmes de cryptographie résistants aux ordinateurs quantiques. Il a produit en août 2024 les standards ML-KEM, ML-DSA et SLH-DSA, auxquels se réfèrent plusieurs propositions post-quantiques pour Bitcoin.

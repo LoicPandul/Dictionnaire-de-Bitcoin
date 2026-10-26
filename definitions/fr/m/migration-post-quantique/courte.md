@@ -1,0 +1,1 @@
+Passage des bitcoins de sorties vulnérables vers des sorties post-quantiques, qui pose la question des pièces jamais migrées : les brûler ou les laisser voler. BIP-0361 propose d'interdire d'abord les envois vers des sorties vulnérables, puis de durcir leurs dépenses.

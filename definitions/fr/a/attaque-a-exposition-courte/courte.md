@@ -1,0 +1,1 @@
+Attaque quantique menée pendant le court délai où une transaction attend sa confirmation après avoir révélé sa clé publique. L'attaquant retrouve la clé privée et détourne les fonds, ce qui exige un CRQC bien plus rapide et dont seules des signatures post-quantiques protégeraient pleinement.

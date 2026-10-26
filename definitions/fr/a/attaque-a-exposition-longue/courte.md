@@ -1,0 +1,1 @@
+Attaque quantique contre une clé publique visible durablement sur la blockchain, par exemple celle d'une sortie P2PK ou P2TR ou d'une adresse réutilisée. L'attaquant retrouve la clé privée sans contrainte de temps, tant que les fonds ne bougent pas.
