@@ -10,8 +10,8 @@ Chaque gabarit (accueil, définition, lettre, catégorie, recherche, 404) a ét�
   | Page | Performance | Accessibilité | Bonnes pratiques | SEO | LCP | CLS |
   | --- | --- | --- | --- | --- | --- | --- |
   | `/adresse-de-reception/` | 99 | 100 | 100 | 100 | 2,1 s | 0 |
-  | `/utxo/` | 100 | 100 | 100 | 100 | 1,8 s | 0 |
-  | `/adaptor-signature/` | 98 | 100 | 100 | 100 | 2,3 s | 0 |
+  | `/utxo/` | 99 | 100 | 100 | 100 | 2,0 s | 0 |
+  | `/adaptor-signature/` | 100 | 100 | 100 | 100 | 1,7 s | 0 |
 - **Défilement horizontal** : aucun en 360, 390, 768, 1024 et 1440 px sur 15 pages types (dont les vedettes les plus longues, un tableau, un bloc de code, des formules).
 
 ## Tours de relecture

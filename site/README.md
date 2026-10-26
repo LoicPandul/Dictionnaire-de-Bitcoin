@@ -51,7 +51,7 @@ Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui la val
 
 ## Couleurs, polices et édition
 
-Le site suit la charte de l'édition 2027 (`design/charte-2027.md`, branche `feat/couverture-2027`) : Figue, banian, Archivo et Atkinson Hyperlegible Mono.
+Le site suit la charte officielle de l'édition 2027 (`charte-officielle.md`) : Figue `#AA226A` (teinte validée), banian, Archivo et Atkinson Hyperlegible Mono. La palette de `config.mjs` reprend ses valeurs écran une à une, et les rôles du mode sombre suivent son tableau (fond Nuit, liens et bouton en Figue claire). Pas d'ombre portée, liens toujours soulignés.
 
 - **Couleurs** : toutes dans `palette`, dans `config.mjs`. Le build en réécrit le bloc de jetons en tête de `static/css/site.css` (entre `palette:début` et `palette:fin`), la couleur de la barre des navigateurs et le manifeste ; les rôles (fond, texte, lien, bouton, mode sombre) sont définis juste dessous. Pour changer de palette : modifier `palette`, relancer le build.
 - **Polices** : `static/fonts/archivo.woff2` (variable, largeurs 62 à 100, graisses 400 à 900, latin), `archivo-italique.woff2` et `atkinson-mono.woff2`, tirées de `fonts/` (OFL). `tools/chasses.py` refait `lib/archivo-advances.json`, qui sert à dimensionner les vedettes.

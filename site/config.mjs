@@ -26,7 +26,7 @@ export const site = {
 
 // Palette du site : la seule source des couleurs. Le build en écrit les jetons CSS (bloc « palette »
 // en tête de static/css/site.css), la couleur de la barre des navigateurs et le manifeste.
-// Charte de l'édition 2027 (design/charte-2027.md, branche feat/couverture-2027) : Figue, banian.
+// Charte officielle de l'édition 2027 (charte-officielle.md, palette et mode sombre) : Figue #AA226A, validée par Loïc, banian.
 // Paires de texte interdites par la charte : Écorce sur Rose, Figue sur Nuit, tout texte sur Galet.
 export const palette = {
   blanc: '#FFFFFF', // fond du site, texte sur Figue

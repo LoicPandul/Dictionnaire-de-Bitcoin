@@ -68,7 +68,6 @@
   --sur-bande-doux: var(--rose);
   --jaquette: var(--figue);
   --voile: color-mix(in srgb, var(--ombre) 55%, transparent);
-  --ombre-flottant: color-mix(in srgb, var(--ombre) 18%, transparent);
 
   --archivo: 'Archivo', 'Archivo repli', Arial, sans-serif;
   --mono: 'Atkinson Hyperlegible Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
@@ -685,7 +684,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (hover: hover) { .citer:hover { background: var(--marque); color: var(--sur-marque); } }
 
 /* Carte d'aperçu d'un renvoi : seule surface qui flotte avec les fenêtres. */
-.carte-apercu { position: fixed; z-index: 50; width: min(360px, calc(100vw - 24px)); padding: 16px 18px 18px; background: var(--flottant); color: var(--texte); box-shadow: 0 0 0 1px var(--trait), 0 16px 40px var(--ombre-flottant); pointer-events: none; }
+.carte-apercu { position: fixed; z-index: 50; width: min(360px, calc(100vw - 24px)); padding: 16px 18px 18px; background: var(--flottant); color: var(--texte); box-shadow: 0 0 0 1px var(--trait); pointer-events: none; }
 .carte-nom { font-size: var(--t-nom); line-height: 1.25; overflow-wrap: anywhere; }
 .carte-cat { margin-top: 4px; font-size: var(--t-note); color: var(--doux); }
 .carte-desc { margin-top: 8px; font-size: var(--t-ui); line-height: 1.5; }
@@ -722,7 +721,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .tranche-lettre { display: grid; gap: 8px; width: 100%; position: relative; }
 .tranche-lettre svg { width: 100%; height: 64px; fill: var(--texte); cursor: pointer; overflow: visible; touch-action: pan-y; }
 .tranche-lettre .vise-lettre { fill: var(--lien); }
-.loupe-traits { position: absolute; bottom: calc(100% + 8px); width: 210px; height: 72px; display: flex; align-items: flex-end; gap: 2px; padding: 8px; background: var(--flottant); box-shadow: 0 0 0 1px var(--trait), 0 12px 32px var(--ombre-flottant); z-index: 3; pointer-events: none; }
+.loupe-traits { position: absolute; bottom: calc(100% + 8px); width: 210px; height: 72px; display: flex; align-items: flex-end; gap: 2px; padding: 8px; background: var(--flottant); box-shadow: 0 0 0 1px var(--trait); z-index: 3; pointer-events: none; }
 .loupe-traits span { flex: 1; background: var(--texte); }
 .loupe-traits span.est-vise { background: var(--lien); }
 .apercu-lettre { display: grid; gap: 4px; padding: 14px 16px; background: var(--surface); }
@@ -750,7 +749,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .p-lettre:has(.sous-index) .groupe-tete { position: static; }
 .sous-index { position: sticky; top: var(--haut, 0px); z-index: 6; background: var(--fond); padding: 6px var(--m); margin-bottom: 16px; transition: top var(--d-ui) var(--ease-out); }
 .sous-index a[aria-current] { background: var(--choisi); color: var(--sur-choisi); }
-.liste-bloc .est-collee { box-shadow: 0 1px 0 var(--trait), 0 10px 14px -12px var(--ombre-flottant); }
+.liste-bloc .est-collee { box-shadow: 0 1px 0 var(--trait); }
 .lettre-suite { padding: 0 var(--m) var(--section); }
 
 .cat-tete { display: grid; gap: 16px; padding: clamp(20px, 3vw, 40px) var(--m) clamp(28px, 3vw, 40px); justify-items: start; }
@@ -800,11 +799,11 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (hover: hover) { .entree:hover .entree-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 .p-lettre .liste { padding-bottom: 56px; }
 .p-cat .liste { padding-bottom: 0; }
-.haut { position: fixed; right: var(--marge); bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 30; display: grid; place-items: center; width: 44px; height: 44px; border: 0; background: var(--bouton); color: var(--sur-bouton); font-size: 20px; font-weight: 700; box-shadow: 0 6px 18px var(--ombre-flottant); }
+.haut { position: fixed; right: var(--marge); bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 30; display: grid; place-items: center; width: 44px; height: 44px; border: 0; background: var(--bouton); color: var(--sur-bouton); font-size: 20px; font-weight: 700; }
 @media (hover: hover) { .haut:hover { background: var(--bouton-survol); } }
 
 /* ---------------------------------------------------------------- Recherche */
-.recherche { width: min(760px, calc(100% - 2 * var(--marge))); max-width: none; max-height: min(78svh, 760px); margin: 9svh auto auto; padding: 0; border: 0; background: var(--flottant); color: var(--texte); box-shadow: 0 24px 80px var(--voile); overflow: hidden; }
+.recherche { width: min(760px, calc(100% - 2 * var(--marge))); max-width: none; max-height: min(78svh, 760px); margin: 9svh auto auto; padding: 0; border: 0; background: var(--flottant); color: var(--texte); box-shadow: 0 0 0 1px var(--trait); overflow: hidden; }
 .recherche::backdrop { background: var(--voile); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .recherche-panneau { display: flex; flex-direction: column; max-height: inherit; }
 .recherche-champ { display: flex; align-items: center; gap: 12px; margin: 16px; padding: 0 8px 0 14px; border: 2px solid var(--texte); background: var(--fond); flex: none; }

@@ -287,3 +287,8 @@ Loïc a demandé que le site prenne dès maintenant l'identité de l'édition 20
 - **Favicon** : un carré Figue et trois barres blanches, les trois piliers.
 - **Schémas** : posés sur le fond ; en mode sombre, sur une carte blanche de 16 px ; sous 640 px, 640 px de large dans un cadre qui défile, et un lien « Agrandir le schéma ».
 - **Restent de 2026** : les 19 pictogrammes (la charte en prévoit de nouveaux, pas encore dessinés) et les pages et la vidéo du livre imprimé (l'édition 2026 est la seule parue).
+
+## 17. Charte officielle et teinte validée (26 octobre 2026)
+
+Loïc a validé la Figue `#AA226A` pour l'édition 2027. La référence devient `charte-officielle.md`. Vérifié valeur par valeur : les 14 couleurs écran de `config.mjs` sont celles de sa palette, et les rôles du mode sombre suivent son tableau (fond Nuit, surface `#3B1026`, texte Brume, texte secondaire `#A8979F`, liens et bouton en Figue claire, focus Figue claire). Aucune paire interdite n'est utilisée. Seul écart corrigé : les ombres portées (bouton « Haut », barres collantes, carte d'aperçu, loupe, fenêtre de recherche), que la charte exclut, sont remplacées par un filet Galet.
+
