@@ -1,0 +1,7 @@
+Développeur de Bitcoin Core de 2011 à 2015, auteur des BIP-0035, BIP-0100 et BIP-0102, puis du logiciel btc1, l'implémentation de SegWit2x en 2017.
+
+Entre mars 2011 et novembre 2015, Jeff Garzik fusionne lui-même des modifications dans le dépôt de Bitcoin Core. Le 31 juillet 2012, il écrit le commit qui ajoute la commande réseau `mempool` (fusionné le 20 août), qui permet à un nœud de demander à un pair la liste des transactions de son *mempool*. Le BIP-0035, dont il reçoit le numéro le 16 août 2012, la décrit : le pair répond par un message `inv` contenant les identifiants de ces transactions, que le demandeur récupère avec `getdata`.
+
+En juin 2015, au début de la Blocksize War, il propose deux hard forks. Le BIP-0100 (numéro du 11 juin) remplace la limite fixe de 1 Mo par une limite que les mineurs ajustent par un vote inscrit dans la *coinbase*. Le BIP-0102 (numéro du 23 juin) relève la limite à 2 000 000 d'octets quand 95 % des 1 000 derniers blocs le signalent, à partir d'une date fixée. Le BIP-0101 d'Andresen, utilisé par Bitcoin XT, indique reprendre le plan de déploiement proposé par Garzik pour le BIP-0100.
+
+En 2017, il publie dans le dépôt btc1 les versions 1.14.3 (30 juin) à 1.15.1 (11 octobre), qui forment l'implémentation de référence de SegWit2x. Ce projet associait SegWit à un hard fork vers des blocs de 2 Mo, dont l'annulation est annoncée le 8 novembre 2017 faute de consensus. Jeff Garzik cofonde par ailleurs l'entreprise Bloq.
