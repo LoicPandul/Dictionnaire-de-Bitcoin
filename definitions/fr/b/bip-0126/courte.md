@@ -1,1 +1,1 @@
-Proposition qui recommande des bonnes pratiques pour construire des transactions mêlant des *inputs* de types de scripts différents, afin de limiter les indices qui trahissent le portefeuille utilisé et de protéger la confidentialité.
+Proposition qui recommande des bonnes pratiques pour construire des transactions mêlant des *inputs* aux scripts différents, afin de limiter les indices qui trahissent le portefeuille utilisé et de protéger la confidentialité.

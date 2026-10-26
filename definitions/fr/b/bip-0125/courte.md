@@ -1,1 +1,1 @@
-Proposition qui définit le *Replace-by-Fee* (RBF) par signalement : l'émetteur marque sa transaction comme remplaçable, puis peut la remplacer, tant qu'elle n'est pas confirmée, par une version qui paie plus de frais.
+Proposition qui définit le *Replace-by-Fee* (RBF) par signalement : l'émetteur marque sa transaction comme remplaçable, puis peut la remplacer, tant qu'elle n'est pas confirmée, par une version qui paie plus de frais. Depuis Bitcoin Core 28.0, les nœuds remplacent par défaut même sans signalement.

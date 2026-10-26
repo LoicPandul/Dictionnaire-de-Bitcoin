@@ -1,1 +1,1 @@
-Proposition de Mark Friedenbach qui ajoute à Script une exécution par appel terminal (*tail call*), pour transférer l'exécution vers un autre script. Avec le BIP-0116, elle devait permettre le MAST, avant d'être supplantée par Taproot.
+Proposition de Mark Friedenbach qui ajoute à Script une exécution par appel terminal (*tail call*), pour transférer l'exécution vers un autre script. Avec le BIP-0116, elle devait permettre le MAST, mais elle est restée au statut *Draft*, Taproot intégrant nativement les branches de Merkle.
