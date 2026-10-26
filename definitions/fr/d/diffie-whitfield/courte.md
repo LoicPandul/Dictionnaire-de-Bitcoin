@@ -1,0 +1,1 @@
+Cryptographe américain, coauteur avec Martin Hellman de « New Directions in Cryptography » (1976), qui fonde la cryptographie à clé publique et décrit l'échange de clés Diffie-Hellman, repris sur courbe elliptique par BIP-0324 et BIP-0352.

@@ -1,0 +1,1 @@
+Cryptographe de Bellcore, coinventeur en 1991 avec W. Scott Stornetta de l'horodatage numérique où chaque certificat intègre le hachage du précédent, chaîne que le livre blanc de Bitcoin cite en références [3] à [5].
