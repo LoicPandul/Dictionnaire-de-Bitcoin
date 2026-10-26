@@ -1,1 +1,1 @@
-Désigne le code de chaîne associé à la clé maîtresse du portefeuille, à la base de l'arbre de dérivation de toutes les clés.
+Code de chaîne associé à la clé maîtresse du portefeuille, à la base de l'arbre de dérivation de toutes les clés. Selon le BIP-0032, il correspond aux 256 derniers bits du résultat de `HMAC-SHA512` appliqué à la graine avec « *Bitcoin seed* » comme clé, les 256 premiers bits formant la clé privée maîtresse. Avec cette clé, il sert à dériver les clés enfants.

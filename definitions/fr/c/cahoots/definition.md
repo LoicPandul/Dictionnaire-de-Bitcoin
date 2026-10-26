@@ -2,3 +2,5 @@ Dans le cadre du portefeuille Samourai Wallet et d'autres logiciels de portefeui
 * Les transactions *Stowaway* (*Payjoin*) ;
 * Les transactions *Stonewall x2* ;
 * Les transactions *Joinbot*.
+
+Les serveurs de Samourai Wallet ont été saisis après l'arrestation de ses deux cofondateurs, le 24 avril 2024, et le service n'est plus disponible depuis.

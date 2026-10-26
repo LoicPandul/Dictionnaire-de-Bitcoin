@@ -1,1 +1,1 @@
-Nom de l'ancien dossier utilisé dans Bitcoin Core pour stocker l'UTXO set, remplacé par le dossier `chainstate/` dans la version 0.8.0.
+Nom de l'ancien dossier utilisé dans Bitcoin Core pour stocker l'UTXO set, renommé `chainstate/` en janvier 2013, avant la sortie de la version 0.8.0. Il n'a donc existé que dans des versions de développement, jamais dans une version publiée.

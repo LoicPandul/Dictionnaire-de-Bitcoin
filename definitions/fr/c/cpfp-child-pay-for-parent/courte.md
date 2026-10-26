@@ -1,1 +1,1 @@
-Mécanisme qui accélère une transaction non confirmée en la dépensant dans une transaction enfant qui paie des frais élevés, ce qui incite les mineurs à inclure les deux. Le destinataire l'utilise quand l'expéditeur n'a pas payé assez de frais.
+Mécanisme qui accélère une transaction non confirmée en la dépensant dans une transaction enfant qui paie des frais élevés, ce qui incite les mineurs à inclure les deux. Le destinataire, ou l'expéditeur via sa sortie de change, l'utilise quand les frais initiaux sont trop faibles.
