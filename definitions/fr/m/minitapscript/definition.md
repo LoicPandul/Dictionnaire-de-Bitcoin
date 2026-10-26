@@ -1,3 +1,3 @@
-Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript.
+Version de Miniscript pour Tapscript. Tapscript dispose de quelques différences notables avec Script dans sa version originale. Par exemple, les opcodes `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` y sont désactivés (BIP-0342) : le fragment `multi` de Miniscript, qui les utilise, est donc remplacé par `multi_a`, construit avec `OP_CHECKSIG` et `OP_CHECKSIGADD`. MiniTapscript fournit ainsi la prise en charge de Tapscript dans Miniscript, décrite dans le BIP-0379. Son implémentation de référence est disponible dans Bitcoin Core depuis la version 26.0.
 
 *Ce terme est parfois contesté. En effet, certains bitcoiners préfèrent parler de « TapMiniscript ».*

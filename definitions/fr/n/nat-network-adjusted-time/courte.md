@@ -1,1 +1,1 @@
-Estimation de l'heure universelle que chaque nœud calcule localement, en corrigeant son horloge par la médiane des écarts mesurés avec les horloges de ses pairs.
+Estimation de l'heure que chaque nœud calcule localement, en corrigeant son horloge par la médiane des écarts mesurés avec les horloges de ses pairs. Il validait les horodatages des blocs jusqu'à Bitcoin Core 26 ; il est remplacé par l'heure système depuis la version 27.0.

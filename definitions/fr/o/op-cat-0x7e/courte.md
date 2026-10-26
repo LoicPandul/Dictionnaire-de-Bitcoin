@@ -1,1 +1,1 @@
-Opcode qui concatène les deux éléments au sommet de la pile. Désactivé dans Bitcoin, il fait l'objet de propositions pour le réintroduire dans Tapscript, afin d'étendre ce que les scripts peuvent exprimer, par exemple des *covenants* ou des *vaults*.
+Opcode qui concatène les deux éléments au sommet de la pile. Désactivé dans Bitcoin, il pourrait être réintroduit dans Tapscript selon le BIP-0347, afin d'étendre ce que les scripts peuvent exprimer, par exemple des *covenants* ou des *vaults*.

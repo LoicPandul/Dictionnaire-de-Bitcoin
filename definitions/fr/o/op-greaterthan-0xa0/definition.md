@@ -1,1 +1,1 @@
-Compare les deux éléments au sommet de la pile et vérifie si le premier élément est supérieur au deuxième. Si le premier élément est supérieur au deuxième, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).
+Compare les deux éléments au sommet de la pile et vérifie si le second élément en partant du haut est strictement supérieur au premier (le sommet). Si c'est le cas, il pousse `1` (vrai) sur la pile, sinon, il pousse `0` (faux).

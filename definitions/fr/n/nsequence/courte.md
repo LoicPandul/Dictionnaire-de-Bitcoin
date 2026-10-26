@@ -1,1 +1,1 @@
-Champ de chaque entrée de transaction qui peut fixer un verrouillage temporel relatif, en blocs ou en durée, depuis le BIP-0068. Il sert aussi à signaler qu'une transaction est remplaçable par RBF.
+Champ de chaque entrée de transaction qui peut fixer un verrouillage temporel relatif, en blocs ou en durée, depuis le BIP-0068. Il servait aussi à signaler le RBF, mais Bitcoin Core n'en a plus besoin depuis la version 28.0.

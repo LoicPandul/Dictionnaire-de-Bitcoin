@@ -1,1 +1,1 @@
-Omni Layer (ex-Mastercoin) est une plateforme *open-source* et décentralisée de création et gestion d'actifs sur la blockchain Bitcoin. Parmi les actifs sur Omni on peut citer Tether (USDT) et MaidSafeCoin (MAID).
+Omni Layer (ex-Mastercoin) est une plateforme *open-source* et décentralisée de création et gestion d'actifs sur la blockchain Bitcoin. Parmi les actifs sur Omni on peut citer Tether (USDT), dont l'émission sur Omni a cessé le 17 août 2023, et MaidSafeCoin (MAID).
