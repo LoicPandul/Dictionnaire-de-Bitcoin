@@ -142,6 +142,6 @@ Ce qui a été corrigé après ce tour :
 - **Définition** : les opcodes composent leur nom sur une ligne, et le code passe dessous en étiquette monospace (« OP_CHECKLOCKTIMEVERIFY », puis « 0xB1 ») ; sur téléphone, les repères montrent « ← Précédent » en petit et le nom dessous ; page tournée plus proche du texte ; résumé du mot suivant aligné à gauche.
 - **Résumés** : une phrase entière qui tient passe sans points de suspension.
 - **Lettre** : sujet des BIP en encre, à côté du numéro en Figue.
-- **Catégorie** : « Pour commencer » en noms seuls sur téléphone, pictogramme plus petit ; en-têtes de groupe soulignés d'un filet au lieu d'un fondu qui laissait le texte à demi visible.
+- **Catégorie** : « Pour commencer » en noms seuls sur téléphone, pictogramme plus petit ; en-têtes de groupe sur fond plein, sans le fondu qui laissait le texte à demi visible dessous.
 - **Accueil** : 19 catégories en deux colonnes sur téléphone ; mots cités en encre soulignée Figue, plus petits ; boutons du mot du jour pleine largeur sur téléphone ; aperçu de la tranche moins haut.
 - **404** : jaquette plus basse sur téléphone.
