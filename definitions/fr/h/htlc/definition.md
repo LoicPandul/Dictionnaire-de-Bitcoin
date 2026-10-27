@@ -11,4 +11,6 @@ Par exemple, si Alice veut envoyer 1 BTC à David, mais qu'elle n'a pas de canal
 
 Finalement, Alice a envoyé 1 BTC à David en passant par Bob et Carol (une action neutre pour ces derniers), sans que personne ait à se faire confiance, car tout est sécurisé en cascade par les conditions des HTLCs.
 
+![Les HTLC de 1 BTC se posent d'Alice vers David, puis la préimage s révélée par David remonte de nœud en nœud jusqu'à Alice et débloque chaque HTLC.](./assets/image-1.png)
+
 Les HTLCs permettent ainsi de faire des échanges dits « atomiques » : soit le transfert est entièrement réussi, soit il échoue, et les fonds sont restitués. Cela garantit la sécurité des transactions même entre plusieurs participants sans besoin de confiance.

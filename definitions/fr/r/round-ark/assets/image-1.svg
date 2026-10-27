@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">    <!-- Acteurs -->
+    <circle class="acteur" cx="112" cy="320" r="72"/>
+    <text class="etiquette" x="112" y="332" text-anchor="middle">ASP</text>
+    <circle class="acteur" cx="1168" cy="320" r="72"/>
+    <text class="etiquette" x="1168" y="332" text-anchor="middle">Alice</text>
+    <!-- Haut : l'ASP avance la liquidité, Alice reçoit le nouveau VTXO -->
+    <path class="flux" d="M112 248 V178"/>
+    <rect class="valeur" x="32" y="112" width="320" height="64" rx="32"/>
+    <text class="etiquette" x="192" y="155" text-anchor="middle">100 000 sats</text>
+    <text class="annotation" x="192" y="88" text-anchor="middle">liquidité avancée</text>
+    <path class="flux" d="M352 144 H414"/>
+    <rect class="sujet" x="416" y="72" width="400" height="144"/>
+    <text class="nom-sujet" x="616" y="138" text-anchor="middle">Transaction de round</text>
+    <text class="secondaire sur-sujet" x="616" y="184" text-anchor="middle">sur la chaîne</text>
+    <path class="flux" d="M816 144 H926"/>
+    <rect class="valeur tirete" x="928" y="112" width="320" height="64" rx="32"/>
+    <text class="etiquette" x="1088" y="155" text-anchor="middle">100 000 sats</text>
+    <text class="annotation" x="1088" y="88" text-anchor="middle">nouveau VTXO</text>
+    <path class="flux" d="M1168 176 V246"/>
+    <!-- Connector -->
+    <path class="flux" d="M616 216 V270"/>
+    <rect class="valeur" x="512" y="272" width="208" height="56" rx="28"/>
+    <text class="etiquette" x="616" y="311" text-anchor="middle">connector</text>
+    <path class="flux" d="M616 328 V398"/>
+    <text class="annotation" x="744" y="280">la forfeit n'est valide</text>
+    <text class="annotation" x="744" y="320">que si la transaction</text>
+    <text class="annotation" x="744" y="360">de round est confirmée</text>
+    <!-- Bas : Alice cède l'ancien VTXO à l'ASP -->
+    <path class="flux" d="M1168 392 V446"/>
+    <rect class="valeur tirete" x="928" y="448" width="320" height="64" rx="32"/>
+    <text class="etiquette" x="1088" y="491" text-anchor="middle">100 000 sats</text>
+    <text class="annotation" x="1088" y="552" text-anchor="middle">ancien VTXO</text>
+    <path class="flux" d="M928 480 H818"/>
+    <rect class="structure tirete" x="416" y="400" width="400" height="160"/>
+    <text class="etiquette" x="616" y="470" text-anchor="middle">Forfeit transaction</text>
+    <text class="secondaire" x="616" y="514" text-anchor="middle">signée par Alice</text>
+    <path class="flux" d="M416 480 H112 V394"/>
+    <text class="annotation" x="264" y="532" text-anchor="middle">cédé, puis balayé</text>
+    <text class="annotation" x="264" y="572" text-anchor="middle">à l'expiration</text>
+  </g>
+</svg>

@@ -1,3 +1,5 @@
 Dans le contexte de Bitcoin, une transaction (abrégée « TX ») est une opération enregistrée sur la blockchain qui transfère la propriété de bitcoins d'une ou plusieurs entrées (inputs) vers une ou plusieurs sorties (outputs). Chaque transaction consomme des UTXOs en entrées, qui sont des outputs de transactions précédentes, et crée de nouveaux UTXOs en sorties, qui peuvent être utilisés comme entrées dans des transactions futures.
 
+![La sortie 1 de la transaction 1 (60 000 sats) est consommée en entrée par la transaction 2, qui la désigne par txid:index et crée deux nouvelles sorties encore non dépensées ; l'écart de 1 000 sats part en frais.](./assets/image-1.png)
+
 Chaque entrée comporte une référence à un output existant ainsi qu'un script de signature (`scriptSig`) qui remplit les conditions de dépense (`scriptPubKey`) établies par l'output auquel il fait référence. C'est ce qui permet de débloquer des bitcoins. Les outputs définissent de nouvelles conditions de dépense (`scriptPubKey`) pour les bitcoins transférés, souvent sous la forme d'une clé publique ou d'une adresse à laquelle les bitcoins sont maintenant associés.

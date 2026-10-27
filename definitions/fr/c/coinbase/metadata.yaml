@@ -4,4 +4,6 @@ slug: "coinbase"
 category: "TRANSACTIONS"
 cross_references:
   - "c74d5b45-8034-4cd3-92d9-a57d9c849c30"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -2,4 +2,6 @@ Processus périodique au cœur du protocole Ark par lequel l'*Ark Service Provid
 
 Le fonctionnement s'apparente conceptuellement à une transaction Bitcoin classique : des VTXO d'entrée sont dépensés et de nouveaux VTXO de sortie sont créés. Cependant, la liquidité on-chain pour les sorties est avancée par l'ASP. En contrepartie, les utilisateurs cèdent leurs anciens VTXO via des *forfeit transactions*. L'ASP récupère cette liquidité ultérieurement, lorsque les VTXO d'entrée expirent. L'atomicité entre la cession des anciens VTXO et la création des nouveaux est garantie par des *connectors*.
 
+![Dans le protocole Ark d'origine, pendant un round, l'ASP avance 100 000 sats dans la transaction de round, qui crée le nouveau VTXO d'Alice et un connector ; la forfeit transaction qui cède l'ancien VTXO à l'ASP dépense ce connector et n'est donc valide que si la transaction de round est confirmée.](./assets/image-1.png)
+
 Les rounds ont lieu à intervalles réguliers, typiquement toutes les 15 à 60 minutes selon la configuration de l'ASP. Pour les paiements nécessitant un règlement immédiat, les utilisateurs peuvent recourir aux paiements OOR (*out-of-round*) qui contournent ce délai au prix d'un modèle de confiance différent.

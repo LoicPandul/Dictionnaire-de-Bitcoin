@@ -1,1 +1,3 @@
 Désigne une promesse d'engagement cryptographique relative à un message encore inconnu, lequel sera révélé une seule fois à l'avenir et devra être accessible à l'ensemble d'une audience déterminée. Ce mécanisme vise à prévenir la création de multiples engagements concurrents pour un même sceau, ce qui garantit l'unicité de chaque validation. En imposant cette contrainte d'utilisation unique, le Single-use Seal est utilisé sur RGB pour éviter la double-dépense.
+
+![Un UTXO sert de sceau : la transaction témoin qui le dépense le ferme sur l'engagement au message A, et une transaction concurrente engagée sur un message B est refusée, car l'UTXO est déjà dépensé.](./assets/image-1.png)

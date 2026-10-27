@@ -5,4 +5,6 @@ category: "PAIEMENTS LIGHTNING"
 cross_references:
   - "2f4d359a-10f3-497b-8ae9-1323c82622d6"
   - "6d6f32a0-761e-4ee4-a189-db65aebc23ef"
+assets:
+  - filename: "image-1.png"
 version: "1"

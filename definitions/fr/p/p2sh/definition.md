@@ -2,4 +2,6 @@ P2SH est le sigle pour *Pay to Script Hash* (en français « payer au hachage d
 
 Techniquement, dans une transaction P2SH, le `scriptPubKey` contient l'empreinte cryptographique d'un `redeemScript`, plutôt que de conditions de dépense explicites. Cette empreinte est obtenue en utilisant un hachage `HASH160`, c'est-à-dire un `SHA256` suivi d'un `RIPEMD160`. Lors de l'envoi de bitcoins à une adresse P2SH, le `redeemScript` sous-jacent n'est pas révélé. Seule son empreinte est incluse dans la transaction. Les adresses P2SH sont encodées en `Base58Check` et commencent par le chiffre `3`. Lorsque le destinataire souhaite dépenser les bitcoins reçus, il doit fournir un `redeemScript` correspondant à l'empreinte présente dans le `scriptPubKey`, ainsi que les données nécessaires pour satisfaire les conditions de ce `redeemScript`. Par exemple, dans un P2SH multisignatures, le script pourrait exiger des signatures de plusieurs clés privées.
 
+![Dépense d'une sortie P2SH : le redeemScript révélé est d'abord haché en HASH160 et comparé à l'empreinte du scriptPubKey, puis, si elles sont égales, exécuté avec les signatures.](./assets/image-1.png)
+
 L'utilisation de P2SH donne plus de flexibilité, car il permet la construction de scripts arbitraires sans que l'expéditeur en connaisse les détails. P2SH est introduit en 2012 avec le BIP-0016.

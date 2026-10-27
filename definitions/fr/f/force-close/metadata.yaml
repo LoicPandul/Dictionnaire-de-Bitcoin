@@ -6,4 +6,6 @@ french_term: "FERMETURE FORCÉE"
 cross_references:
   - "c06ceef4-51bf-4777-98c6-180fc4f17790"
   - "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
+assets:
+  - filename: "image-1.png"
 version: "1"

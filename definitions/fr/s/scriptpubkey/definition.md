@@ -1,5 +1,7 @@
 Script situé dans la partie sortie (output) d'une transaction Bitcoin qui définit les conditions sous lesquelles l'UTXO associé peut être dépensé. Ce script permet donc de sécuriser des bitcoins. Dans sa forme la plus courante, le `scriptPubKey` contient une condition qui exige que la prochaine transaction fournisse une preuve de possession de la clé privée correspondant à une adresse Bitcoin spécifiée. C'est souvent réalisé par un script qui demande une signature correspondant à la clé publique associée à l'adresse utilisée pour sécuriser ces fonds. Lorsqu'une transaction tente d'utiliser cet UTXO en entrée (input), elle doit fournir un `scriptSig` qui, une fois associé avec le `scriptPubKey`, satisfait les conditions posées et produit un script valide. 
 
+![Le scriptPubKey P2PKH verrouille la sortie 0 de la transaction 1 ; l'entrée 0 de la transaction 2 la dépense et fournit le scriptSig qui le satisfait.](./assets/image-1.png)
+
 Par exemple, voici un `scriptPubKey` P2PKH classique :
 
 ```text
@@ -16,7 +18,5 @@ Le `scriptSig` correspondant serait :
 ```text
 <signature> <clé publique>
 ```
-
-![Transaction Bitcoin : le ScriptPubKey verrouille l'output, le ScriptSig en input apporte la preuve pour le déverrouiller.](./assets/image-1.png)
 
 *Pour nommer ce script, on parle également parfois d'un « locking script » ou « script de verrouillage » en français.*

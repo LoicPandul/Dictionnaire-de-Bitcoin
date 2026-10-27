@@ -6,4 +6,6 @@ french_term: "REMPLACEMENT PAR LES FRAIS"
 cross_references:
   - "eb71934d-67e6-4793-8353-bb0d2c81e4b3"
   - "ea4e33b9-b048-49e3-ae58-43da0cb71446"
+assets:
+  - filename: "image-1.png"
 version: "1"

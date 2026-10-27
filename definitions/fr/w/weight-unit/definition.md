@@ -10,6 +10,8 @@ $$112 \times 4 + 110 \times 1 = 448 + 110 = 558\ WU$$
 
 Cela représente une réduction d'environ 38 % par rapport à la transaction *legacy* équivalente, ce qui permet d'inclure davantage de transactions dans un bloc.
 
+![À la même échelle, une transaction legacy P2PKH de 226 octets pèse 904 WU, tandis qu'une transaction SegWit P2WPKH équivalente pèse 558 WU, car ses 110 octets de témoin ne comptent qu'une fois.](./assets/image-1.png)
+
 La limite de bloc est fixée à 4 000 000 WU. Si un bloc ne contient que des transactions *legacy*, cette limite est équivalente à l'ancienne limite de 1 000 000 d'octets ($1\,000\,000 \times 4 = 4\,000\,000$), ce qui assure la rétrocompatibilité avec les nœuds non mis à jour. En pratique, avec une majorité de transactions SegWit, les blocs atteignent environ 2 à 3 Mo en taille réelle. Le maximum théorique approche 4 Mo, mais uniquement dans le cas pathologique d'un bloc rempli presque exclusivement de données *witness*.
 
 Pour convertir un poids en octets virtuels (*vbytes*), il suffit de diviser par 4 : $vbytes\ =\ poids\ /\ 4$. Les frais de transaction sont généralement exprimés en sat/vB (satoshis par *vbyte*).

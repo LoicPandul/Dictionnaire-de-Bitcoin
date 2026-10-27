@@ -4,4 +4,6 @@ slug: "cashu"
 category: "ECASH"
 cross_references:
   - "b3a6e8eb-b4bb-4e94-9c46-225973b2fc48"
+assets:
+  - filename: "image-1.png"
 version: "1"
