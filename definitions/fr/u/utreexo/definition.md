@@ -1,8 +1,8 @@
 Protocole conçu par Tadge Dryja pour compacter l'UTXO set des nœuds Bitcoin à l'aide d'un accumulateur établi sur des arbres de Merkle. Contrairement à l'UTXO set classique qui nécessite un espace de stockage important, Utreexo réduit drastiquement la mémoire requise en ne stockant que les racines des arbres de Merkle. Cela permet au nœud de vérifier l'existence des UTXOs utilisés en entrées de transactions, sans avoir à conserver l'ensemble complet des UTXOs. En utilisant Utreexo, chaque nœud conserve uniquement des empreintes cryptographiques appelées racines de Merkle. Lorsqu'une transaction est effectuée, l'utilisateur fournit les preuves d'inclusion des UTXOs et les chemins de Merkle correspondants. Le nœud peut ainsi vérifier les transactions sans stocker tout l'UTXO set. Prenons un exemple avec un schéma pour comprendre ce mécanisme :
 
-![Preuve d'inclusion Utreexo : avec l'UTXO 3, HASH 4 et HASH 1-2, le nœud reconstitue la racine de Merkle qu'il stocke en RAM.](./assets/image-1.png)
+![Preuve d'inclusion Utreexo : avec l'UTXO 3, le hash 4 et le hash 1-2 reçus avec la transaction, le nœud recalcule le hash 3, le hash 3-4 puis la racine, et la compare à la seule racine qu'il garde en RAM.](./assets/image-1.png)
 
-Dans cet exemple, j'ai intentionnellement réduit l'UTXO set à 4 UTXOs pour faciliter la compréhension. En réalité, il faut imaginer qu'il existe environ 166 millions d'UTXOs sur Bitcoin (chiffre du 26 octobre 2026). Sur ce schéma, le nœud Utreexo devrait uniquement conserver en RAM la Racine de Merkle. S'il reçoit une transaction dépensant l'UTXO n° 3 (en noir), la preuve consisterait en les éléments suivants :
+Dans cet exemple, j'ai intentionnellement réduit l'UTXO set à 4 UTXOs pour faciliter la compréhension. En réalité, il faut imaginer qu'il existe environ 166 millions d'UTXOs sur Bitcoin (chiffre du 26 octobre 2026). Sur ce schéma, le nœud Utreexo devrait uniquement conserver en RAM la Racine de Merkle. S'il reçoit une transaction dépensant l'UTXO n° 3 (la pilule pleine), la preuve consisterait en les éléments suivants :
 * L'UTXO 3 ;
 * Le HASH 4 ;
 * Le HASH 1-2.

@@ -2,7 +2,7 @@ Se réfère à un phénomène dans lequel la blockchain subit une modification d
 
 Ces resynchronisations font partie du fonctionnement naturel de Bitcoin, où différents mineurs peuvent trouver de nouveaux blocs presque simultanément, venant ainsi couper le réseau Bitcoin en deux. Dans de tels cas, le réseau peut se diviser temporairement en chaînes concurrentes. Finalement, lorsque l'une de ces chaînes accumule plus de travail, les autres chaînes sont abandonnées par les nœuds, et leurs blocs deviennent ce que l'on appelle des « blocs obsolètes » ou « blocs orphelins ». Ce processus de remplacement d'une chaîne par une autre est la resynchronisation.
 
-![Resynchronisation à la hauteur 145 : la chaîne 145-A est abandonnée au profit de la branche 145-B qui poursuit en 146.](./assets/image-1.png)
+![Resynchronisation à la hauteur 145 : le nœud suivait 142-143-144-145-A ; quand la branche 145-B-146 cumule plus de travail, il retire 145-A, ajoute 145-B puis 146, et 145-A devient un bloc obsolète.](./assets/image-1.png)
 
 Les resynchronisations peuvent avoir diverses conséquences. Tout d'abord, si un utilisateur avait une transaction confirmée dans un bloc qui s'avère être abandonné, mais que celle-ci ne se retrouve pas dans la chaîne finalement valide, alors sa transaction redevient non confirmée. C'est pour cette raison qu'il est d'usage d'attendre au moins 6 confirmations avant de considérer une transaction comme définitive. La probabilité qu'une resynchronisation remonte jusqu'à un bloc diminue de façon exponentielle avec sa profondeur. Passé 6 blocs, elle devient négligeable en pratique, sans jamais être strictement nulle.
 

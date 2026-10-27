@@ -13,4 +13,4 @@ Par exemple, si mon adresse de réception dispose du chemin de dérivation `m / 
 * `0` indique que c'est une adresse externe ;
 * `5` indique que c'est la sixième adresse externe de ce compte.
 
-![Arbre BIP-84 illustrant la structure BIP-44 en cinq niveaux : objectif, type de devise, comptes, chaînes et adresses.](./assets/image-1.png)
+![L'arbre BIP-0044 en cinq niveaux nommés (purpose, coin_type, account, change, address_index), descendu par le chemin m/86'/0'/0'/0/5 de la clé maîtresse jusqu'à la sixième adresse externe du premier compte, avec à chaque niveau ses clés sœurs.](./assets/image-1.png)
