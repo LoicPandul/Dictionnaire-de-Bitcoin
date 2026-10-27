@@ -1,7 +1,0 @@
-Entrepreneur chinois, cofondateur de Bitmain, fabricant de machines de minage à ASIC.
-
-En 2013, il fonde Bitmain avec Micree Zhan, qui développe en novembre l'Antminer S1, premier mineur de l'entreprise. Le 21 février 2016, à Hong Kong, il signe avec Micree Zhan, tous deux comme codirecteurs généraux de Bitmain, le consensus de la Hong Kong Roundtable, aux côtés de contributeurs de Bitcoin Core. Le texte prévoit que SegWit sorte comme *soft fork*, puis que ces contributeurs proposent à Bitcoin Core, dans les trois mois suivant sa sortie, un *hard fork* portant les données hors témoin à environ 2 Mo. AntPool, la pool de Bitmain, y est représentée par Kevin Pan et non par lui.
-
-En août 2017, un *hard fork* crée BCH (Bitcoin Cash). Selon Wikipédia, il a été orchestré par ViaBTC, société de minage dans laquelle Bitmain avait investi, et Wu en est l'un des principaux partisans. CoinDesk le range parmi les participants d'un salon de discussion consacré à Bitcoin Cash. Wikipédia ajoute qu'il a nié que lui ou Bitmain aient eu autant d'influence qu'on le disait.
-
-Un conflit l'oppose ensuite à Micree Zhan pendant environ un an. Le 26 janvier 2021, il annonce par lettre qu'il quitte ses postes de directeur général et de président de Bitmain : Micree Zhan rachète près de la moitié des parts de Wu et des autres fondateurs pour 600 millions de dollars, et Wu préside Bitdeer, activité de minage séparée de Bitmain.

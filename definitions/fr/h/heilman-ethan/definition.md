@@ -1,7 +1,0 @@
-Chercheur et développeur, premier auteur de l'article sur les attaques *eclipse* contre le réseau pair à pair de Bitcoin, de TumbleBit et du BIP-0347 sur OP_CAT.
-
-En mars 2015, il dépose avec Alison Kendler, Aviv Zohar et Sharon Goldberg « Eclipse Attacks on Bitcoin's Peer-to-Peer Network », présenté en août 2015 à la conférence USENIX Security : l'article montre comment un attaquant peut isoler un nœud de ses pairs honnêtes (voir ECLIPSE) et propose des contre-mesures. Heilman en code deux dans Bitcoin Core : les connexions *feeler* (commit du 17 juin 2016, fusionné le 25 août 2016) et la règle *test-before-evict* de l'*addrman* (commit du 27 octobre 2016, fusionné le 6 mars 2018). Voir FEELER CONNECTION et ADDRMAN.
-
-En juin 2016, il publie avec Leen Alshenibr, Foteini Baldimtsi, Alessandra Scafuro et Sharon Goldberg TumbleBit, un protocole de paiement anonyme compatible avec Bitcoin, présenté au NDSS en février 2017 (voir TUMBLEBIT).
-
-Le 21 octobre 2023, il propose sur la liste bitcoin-dev, avec Armin Sabouri, de réactiver OP_CAT dans Tapscript. Le BIP-0347 lui est attribué le 11 décembre 2023 : il redéfinit l'opcode `OP_SUCCESS126` (voir OP_CAT et TAPSCRIPT). Aucune activation n'est programmée. Il coécrit enfin avec Hunter Beast et Isabel Foxen Duke le BIP-0360 (P2MR), numéro attribué le 18 décembre 2024, qui propose un type de sortie sans dépense par clé, pour résister à une exposition longue de la clé publique face à un ordinateur quantique (voir P2MR).

@@ -1,1 +1,0 @@
-Rédacteur technique spécialisé dans Bitcoin, coauteur du BIP-0125 sur le remplacement de transaction signalé (RBF opt-in), de *Mastering Bitcoin* (3e édition) et principal auteur de la lettre de Bitcoin Optech de 2018 à 2025.

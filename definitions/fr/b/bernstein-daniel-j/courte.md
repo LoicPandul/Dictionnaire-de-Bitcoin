@@ -1,1 +1,0 @@
-Cryptographe, auteur du chiffrement ChaCha et du code d'authentification Poly1305, que le transport P2P v2 de BIP-0324 combine pour chiffrer les connexions entre nœuds Bitcoin, et coauteur de SipHash, utilisé par Bitcoin Core depuis 2016.

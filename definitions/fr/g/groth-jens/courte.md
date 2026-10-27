@@ -1,1 +1,0 @@
-Cryptographe, auteur en 2016 de Groth16, système de preuve à divulgation nulle de connaissance aux preuves très courtes, dont le pont BitVM2 contrôle les preuves par des scripts Bitcoin, exécutés seulement en cas de litige, sans *soft fork*.

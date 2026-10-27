@@ -1,5 +1,0 @@
-Entrepreneur américain, Erik Voorhees fonde plusieurs services en bitcoins, dont SATOSHIDICE puis ShapeShift.
-
-En avril 2012, il lance SATOSHIDICE, un site de paris en bitcoins. Selon Voorhees lui-même, le service a représenté à lui seul plus de la moitié des transactions du réseau avant 2013. Il le vend en juillet 2013. Il avait proposé à des investisseurs, en bitcoins, des parts de FeedZeBirds en mai 2012, puis de SATOSHIDICE d'août 2012 à février 2013, sans les enregistrer auprès de la SEC. Le 3 juin 2014, la *Securities and Exchange Commission* (SEC) annonce un accord : sans reconnaître ni contester les faits, Voorhees verse 15 843,98 dollars de restitution et 35 000 dollars d'amende, et s'interdit pendant cinq ans les offres non enregistrées de titres contre des monnaies virtuelles.
-
-En 2014, il lance ShapeShift, plateforme d'échange de cryptomonnaies qui n'exige alors aucun compte, constituée en Suisse. En 2017, il soutient SEGWIT2X, la proposition issue de l'accord de New York (NYA - NEW YORK AGREEMENT), dont la hausse de la taille des blocs est suspendue le 8 novembre 2017 faute de consensus suffisant.

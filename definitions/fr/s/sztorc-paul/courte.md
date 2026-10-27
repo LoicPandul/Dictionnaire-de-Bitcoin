@@ -1,1 +1,0 @@
-Développeur de surcouches, auteur du concept de *drivechain* (2015), chaîne latérale dont les mineurs approuvent les retraits, qu'il spécifie avec CryptAxe dans BIP-0300, complété par BIP-0301 sur le minage fusionné aveugle.

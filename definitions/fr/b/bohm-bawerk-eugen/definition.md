@@ -1,7 +1,0 @@
-Économiste autrichien de la deuxième génération de l'école autrichienne, adepte des théories de Carl Menger, né le 12 février 1851 et mort le 27 août 1914. Il n'a pas connu Bitcoin : le discours bitcoiner invoque sa théorie de l'intérêt, qui donne un rôle central à la préférence temporelle.
-
-Son œuvre majeure, *Capital et intérêt*, paraît en plusieurs volumes. Le premier, *Geschichte und Kritik der Capitalzinstheorien* (histoire et critique des théories de l'intérêt), date de 1884. Le second, *Positive Theorie des Kapitals* (théorie positive du capital), date de 1889 et expose sa propre théorie. Le troisième, *Further Essays on Capital and Interest*, daté de 1921, rassemble des essais complémentaires. Dans le second volume, il écrit que les biens présents sont, en règle générale, préférés aux biens futurs de même quantité et de même qualité, et il fonde l'intérêt sur cette différence de valeur : c'est ce que le dictionnaire nomme la préférence temporelle. Il décrit aussi la production comme un détour : elle prend du temps, et le capital permet de tirer davantage des mêmes ressources.
-
-Il est ministre des Finances autrichien en 1895, en 1897 et en 1900, et quitte le ministère en 1904.
-
-Ses idées nourrissent les travaux de Ludwig von Mises et de Friedrich Hayek. Certains bitcoiners qui se réclament de l'école autrichienne reprennent son raisonnement pour dire qu'une monnaie dont la valeur se maintient encourage l'épargne, comme le décrit l'entrée préférence temporelle.

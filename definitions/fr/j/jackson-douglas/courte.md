@@ -1,1 +1,0 @@
-Dirigeant américain d'e-gold, monnaie numérique adossée à l'or établie en 1996. Il plaide coupable en juillet 2008 de complot de blanchiment et de transfert d'argent sans licence, puis est condamné en novembre 2008.

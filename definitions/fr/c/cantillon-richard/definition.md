@@ -1,7 +1,0 @@
-Banquier et économiste irlando-français du XVIIIe siècle, né dans les années 1680 en Irlande, mort en 1734 à Londres. Il n'a pas connu Bitcoin : le discours bitcoiner invoque l'effet qui porte son nom pour décrire ce que fait la création monétaire.
-
-Passé d'Irlande en France avant 1708, il travaille en 1711 en Espagne pour le payeur général britannique James Brydges, puis rachète vers 1716 une banque à Paris, spécialisée dans les transferts d'argent entre Paris et Londres. Il tire de gros bénéfices de la spéculation sur la Compagnie du Mississippi de John Law avant son effondrement.
-
-Il écrit vers 1730 l'*Essai sur la nature du commerce en général*, resté manuscrit pendant plus de vingt ans et publié en français en 1755. Il y soutient que les effets d'une nouvelle monnaie dépendent de l'endroit où elle entre dans l'économie : si l'or d'une mine nouvelle enrichit d'abord les propriétaires et les mineurs, les prix montent d'abord pour les biens qu'ils demandent, puis la hausse se propage. Il examine ainsi les prix relatifs, la vitesse de circulation et la répartition des revenus, plutôt qu'une moyenne générale des prix.
-
-L'entrée effet Cantillon du dictionnaire reprend ce mécanisme : les premiers à recevoir la monnaie nouvelle dépensent avant la hausse des prix. Le discours bitcoiner s'en sert pour opposer l'émission de Bitcoin, programmée par le protocole, à la création monétaire des banques centrales. Il meurt en mai 1734 à Londres, probablement dans l'incendie de sa résidence, une mort restée mystérieuse.

@@ -1,1 +1,0 @@
-Développeuse de Core Lightning (Blockstream), signant niftynei, autrice de la proposition de double financement des canaux (*dual funding*), lancée en 2018, reprise en 2021 et fusionnée dans BOLT-02 en février 2024.

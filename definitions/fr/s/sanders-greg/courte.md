@@ -1,1 +1,0 @@
-Développeur de Bitcoin Core, connu sous le pseudonyme instagibbs, coauteur du BIP-0345 (`OP_VAULT`) et auteur des sorties P2A et de la poussière éphémère, deux outils de frais pour les protocoles de seconde couche.

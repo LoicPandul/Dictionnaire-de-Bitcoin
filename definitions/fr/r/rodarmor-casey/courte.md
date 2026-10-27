@@ -1,1 +1,0 @@
-Développeur, créateur de la théorie des Ordinals et du logiciel ord, dont les inscriptions s'ouvrent au réseau principal début 2023, puis du protocole de jetons Runes, actif depuis le bloc 840 000 (20 avril 2024).

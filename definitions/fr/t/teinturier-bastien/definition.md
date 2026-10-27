@@ -1,7 +1,0 @@
-Développeur de la couche Lightning chez ACINQ, connu sous le pseudonyme t-bast, contributeur d'eclair et des spécifications BOLT, et coauteur de BIP-0353. Il signe Bastien Teinturier.
-
-Il développe eclair, l'implémentation Lightning d'ACINQ écrite en Scala : dans le dépôt GitHub du projet, il est le deuxième contributeur par le nombre de commits, derrière pm47. Il participe aussi à la rédaction des BOLT, les spécifications du protocole Lightning, dans le dépôt lightning/bolts, où il compte 74 commits, de juillet 2019 à août 2026.
-
-Le 25 janvier 2021, il ouvre dans ce dépôt la *pull request* 836, « Trampoline onion format ». Elle propose le routage *trampoline* : Un expéditeur, plutôt que de calculer toute la route, confie une partie du calcul à des nœuds trampolines, qui trouvent chacun le chemin jusqu'au trampoline suivant. Le mécanisme repose sur des oignons imbriqués, l'oignon extérieur en contenant un plus petit pour le dernier saut, de sorte que le calcul est délégué sans confiance et de façon privée. Elle reprend une première proposition qu'il avait ouverte le 2 août 2019 (*pull request* 654). La 836 est restée ouverte : le format n'est pas intégré aux BOLT.
-
-Le 10 février 2024, le numéro BIP-0353, « DNS Payment Instructions », lui est attribué avec Matt Corallo, coauteur. Ce BIP propose un format standard pour encoder des URI de paiement BIP-0021 dans des enregistrements DNS de type TXT, ce qui permet d'associer un nom lisible à des instructions de paiement, avec une validation par DNSSEC. Son statut est *Complete*.

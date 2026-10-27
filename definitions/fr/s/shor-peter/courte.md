@@ -1,1 +1,0 @@
-Mathématicien américain, il présente en novembre 1994 l'algorithme quantique de factorisation et de logarithme discret qui porte son nom, que le brouillon `BIP-0360` cite comme menace pour les clés publiques de Bitcoin.

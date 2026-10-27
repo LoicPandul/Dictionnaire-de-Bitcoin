@@ -1,1 +1,0 @@
-Développeur, cofondateur et directeur technique de Samourai Wallet, condamné le 19 novembre 2025 à quatre ans de prison aux États-Unis après avoir plaidé coupable de complot d'exploitation d'une entreprise de transmission de fonds.

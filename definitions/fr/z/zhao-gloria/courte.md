@@ -1,1 +1,0 @@
-Développeuse de Bitcoin Core, mainteneuse de la partie mempool et politique de relais de juillet 2022 à février 2026 (retrait de sa clé de fusion). Elle écrit BIP-0331 sur le relais de paquets et BIP-0431 sur la politique TRUC.

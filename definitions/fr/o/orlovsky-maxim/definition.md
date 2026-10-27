@@ -1,7 +1,0 @@
-Développeur, concepteur principal de RGB, système de contrats intelligents à validation côté client pour Bitcoin et Lightning, auteur de la machine virtuelle AluVM et cofondateur de l'association LNP/BP Standards. Il signe Dr Maxim Orlovsky.
-
-RGB repose sur des idées antérieures : Giacomo Zucco l'imagine en 2016 comme un système d'actifs hors de la blockchain, et Peter Todd a décrit la validation côté client et les sceaux à usage unique. En 2019, Orlovsky et Zucco créent l'association LNP/BP Standards pour développer RGB, et Orlovsky en conçoit la refonte, qui en fait un système de contrats confidentiels de portée générale. Selon le dépôt `rgb-core`, la conception et l'implémentation du système datent de 2019 à 2024, sur ces idées de Todd et de Zucco.
-
-Dans RGB, l'historique d'un contrat reste hors de la chaîne : Alice qui envoie un jeton à Bob lui transmet cet historique, que Bob vérifie lui-même, et seul un engagement cryptographique est ancré dans une transaction Bitcoin, dont l'UTXO dépensé sert de sceau à usage unique contre la double dépense.
-
-En 2021, il publie AluVM, une machine virtuelle à registres conçue pour l'exécution déterministe et portable, dont le dépôt est créé le 28 mars et la première version publiée le 9 juin. RGB s'en sert pour exécuter ses contrats. Le 9 avril 2023, l'association publie RGB v0.10 ; son annonce du lendemain dit qu'elle « apporte le support complet des contrats intelligents » à Bitcoin et à Lightning ; les contrats émis avec la v0.9 ne migrent pas.

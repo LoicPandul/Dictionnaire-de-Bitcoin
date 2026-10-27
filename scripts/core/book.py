@@ -6,7 +6,7 @@ Une édition (templates/editions.yaml) est une suite de sections :
   - `dictionary` : une partie de definitions/fr (technique, ecosysteme, personnes), en
     version développée (definition.md) ou courte (courte.md) ;
   - `chronology` : chronologie/fr ;
-  - `specs` : une ou plusieurs séries de specifications/ (BIP, BOLT et bLIP, NIP), avec ou
+  - `specs` : une ou plusieurs séries de specifications/ (BIP, BOLT et bLIP), avec ou
     sans le texte développé des entrées du dictionnaire qui leur sont consacrées.
 
 Les générateurs (PDF, EPUB) ne lisent que ce modèle. Un renvoi n'est imprimé que si sa

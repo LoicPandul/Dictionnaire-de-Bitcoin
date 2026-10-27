@@ -1,7 +1,0 @@
-Développeuse de Bitcoin Core, spécialiste du *mempool* et de la politique de relais des transactions. Elle contribue à Bitcoin Core depuis mars 2020 et signe glozow sur GitHub.
-
-En 2022, elle fait fusionner le RPC `submitpackage` (d'abord réservé au regtest), ouvert à tous les réseaux dans la version 26.0 : il permet de soumettre à un nœud un ensemble de transactions liées, un *package*, évalué d'un seul bloc plutôt que transaction par transaction. Cette logique sert au CPFP : un enfant qui paie assez de frais peut faire accepter un parent trop peu rémunéré.
-
-Le 7 juillet 2022, sa clé est ajoutée à la liste des clés de confiance du dépôt, pour qu'elle maintienne les parties mempool et politique du code. Elle écrit BIP-0331 (*Ancestor Package Relay*), dont le numéro est assigné le 21 octobre 2022, puis BIP-0431 (*Topology Restrictions for Pinning*), assigné le 22 mai 2024. BIP-0431 décrit la politique TRUC, qui limite la forme des chaînes de transactions non confirmées pour réduire les attaques de *pinning* et rendre le *fee bumping* plus fiable. Les deux BIP sont au statut *Draft* dans le dépôt des BIP en octobre 2026.
-
-La politique TRUC est fusionnée dans Bitcoin Core le 9 février 2024 et le relais opportuniste d'un parent avec un enfant le 30 avril 2024. Le relais d'un parent avec un enfant sort avec Bitcoin Core 28.0 (tag du 1er octobre 2024), qui ouvre aussi TRUC au réseau principal ; le code TRUC était déjà présent dans la 27.0, réservé aux réseaux de test. Sa clé de fusion est retirée le 5 février 2026.

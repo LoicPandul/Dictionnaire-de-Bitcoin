@@ -1,1 +1,0 @@
-Administrateur principal de bitcointalk.org et modérateur de longue date de r/Bitcoin. Le 17 août 2015, il y exclut Bitcoin XT et les services qui le soutiennent, car son hard fork créerait selon lui un autre réseau.

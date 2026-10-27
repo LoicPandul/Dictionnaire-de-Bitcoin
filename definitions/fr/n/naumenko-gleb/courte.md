@@ -1,1 +1,0 @@
-Développeur de Bitcoin Core, premier auteur d'Erlay (2019), protocole de relais des transactions par réconciliation, et coauteur en 2020 de l'article sur les attaques par dilatation du temps contre Lightning.

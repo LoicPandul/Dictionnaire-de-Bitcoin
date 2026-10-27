@@ -1,7 +1,0 @@
-Développeur de Bitcoin Core, connu sous le pseudonyme fanquake (Michael Ford), mainteneur du projet depuis juin 2019 et spécialisé dans le système de compilation.
-
-Il contribue à Bitcoin Core dès 2012, d'abord à temps partiel puis à plein temps. Le 7 juin 2019, il ouvre la demande de fusion #16162, qui ajoute sa clé à la liste des clés de confiance du projet : il y explique vouloir rejoindre les mainteneurs pour obtenir le droit de fusionner, trier les demandes et gérer le dépôt, en se concentrant surtout sur le système de compilation. Le mainteneur Wladimir van der Laan la fusionne le 8 juin 2019, ce qui fait de fanquake un mainteneur de Bitcoin Core.
-
-Son travail porte sur la compilation du logiciel et sur ses dépendances. Le projet passe progressivement des compilations Gitian à des compilations déterministes, dites reproductibles, avec Guix, que Carl Dong ajoute au dépôt le 12 juillet 2019 ; Gitian est retiré en juillet 2021. Les binaires de Bitcoin Core peuvent ainsi être reproduits à l'identique par quiconque dispose d'une machine adaptée et des outils nécessaires, ce qui permet de vérifier qu'ils correspondent bien au code source publié. fanquake a participé à ce passage de Gitian à Guix, comme le rappelle l'annonce de Brink en 2022.
-
-*Michael Ford signe ses contributions sous le pseudonyme fanquake ; c'est ce nom qui apparaît dans l'historique de Bitcoin Core depuis 2016, ses premiers commits (2012 à 2016) étant signés Michael Ford.*
