@@ -1,1 +1,1 @@
-Dirigeant de Mt Gox après son rachat à Jed McCaleb en 2011. La plateforme demande un redressement civil à Tokyo le 28 février 2014 ; il est condamné avec sursis le 15 mars 2019 pour manipulation de données.
+Dirigeant de Mt. Gox après son rachat à Jed McCaleb en 2011. La plateforme demande un redressement civil à Tokyo le 28 février 2014 ; il est condamné avec sursis le 15 mars 2019 pour manipulation de données.

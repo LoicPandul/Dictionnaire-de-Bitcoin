@@ -20,7 +20,7 @@ MAX_SENTENCES = 2
 # après une abréviation (« Block Inc. », « etc. », « J.-C. »).
 SENTENCE_END = re.compile(r"(\S*)[.!?…](?=\s|$)")
 ABBREVIATIONS = {"etc", "inc", "ltd", "corp", "co", "cf", "vol", "dr", "st", "mr", "mrs", "jr", "sr", "no",
-                 "n°", "av", "apr", "env"}
+                 "n°", "av", "apr", "env", "mt"}
 INITIALS = re.compile(r"([A-Za-z]\.-?)+[A-Za-z]")  # « J.-C », « U.S »
 FORBIDDEN = [
     (re.compile(r"^\s*([*\-]|\d+\.)\s", re.MULTILINE), "liste"),
