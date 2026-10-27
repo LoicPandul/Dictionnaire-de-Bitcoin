@@ -292,3 +292,12 @@ Loïc a demandé que le site prenne dès maintenant l'identité de l'édition 20
 
 Loïc a validé la Figue `#AA226A` pour l'édition 2027. La référence devient `charte-officielle.md`. Vérifié valeur par valeur : les 14 couleurs écran de `config.mjs` sont celles de sa palette, et les rôles du mode sombre suivent son tableau (fond Nuit, surface `#3B1026`, texte Brume, texte secondaire `#A8979F`, liens et bouton en Figue claire, focus Figue claire). Aucune paire interdite n'est utilisée. Seul écart corrigé : les ombres portées (bouton « Haut », barres collantes, carte d'aperçu, loupe, fenêtre de recherche), que la charte exclut, sont remplacées par un filet Galet.
 
+
+## 18. Édition 2027 : l'Allée des baobabs, les nouveautés et l'anglais (27 octobre 2026)
+
+La couverture validée remplace le banian : l'Allée des baobabs au couchant (*Adansonia grandidieri*), sur fond Figue. Le concept « Le livre ouvert » ne change pas, la jaquette dépliée reste l'entrée du site.
+
+- **La jaquette** : l'avant reprend la première du broché, mesure pour mesure (sol à 61 % de la hauteur, allée sur 80,6 % de la largeur, titre en Archivo 62/900). Les baobabs viennent du générateur de la couverture (`baobab.py`, même graine) par `tools/allee.py`, en SVG dans la page, un calque par arbre. Au chargement, le soleil se lève, les trois baobabs du fond poussent l'un après l'autre, puis le grand ; le titre monte de sa ligne. Souris : chaque plan suit le pointeur selon sa distance. Doigt : le soleil descend derrière l'horizon quand on fait défiler la page. Rien de tout cela avec `prefers-reduced-motion`. Le dos porte la recherche et le mot du jour ; sur téléphone, ils passent sous l'avant, en section blanche.
+- **Les nouveautés** : une rangée de cartes sur l'accueil (chronologie, spécifications, personnes, entreprises, schémas), dont les chiffres viennent des fichiers. La chronologie tient sur une page, avec une frise des années (une barre par année, sa hauteur suit le nombre de dates) et une barre des années collante. Les spécifications ont une page par série, filtrable par statut ; la définition d'un document affiche sa fiche dans la marge, et les dates qui la concernent sous le texte.
+- **Les parties du livre** remplacent les « dix-neuf catégories » : technique, écosystème, personnes, chacune avec ses catégories et leurs pictogrammes 2027.
+- **L'anglais** : un bouton FR / EN dans la barre mène à la même page dans l'autre langue. Une définition pas encore traduite s'affiche en français sous un encadré « In French for now », marqué `lang="fr"`.
