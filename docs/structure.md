@@ -52,12 +52,12 @@ Dictionnaire-de-Bitcoin/
 │           └── courte.md
 │
 ├── chronologie/fr/                 # Chronologie, un fichier par année (en/ plus tard)
-├── specifications/fr/              # BIP, BOLT, bLIP et NIP : numéro, titre, statut, résumé
+├── specifications/fr/              # BIP, BOLT et bLIP : numéro, titre, statut, résumé
 │
 ├── templates/                      # Configuration du livre, commune aux langues
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
-│   ├── editions.yaml               # Éditions générées (complète, essentiel, tomes)
+│   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
 │   ├── languages.yaml              # Langues et périmètre de chaque traduction
 │   └── fr/                         # Textes du livre en français
 │       ├── introduction.md         # Note de l'auteur
@@ -69,7 +69,8 @@ Dictionnaire-de-Bitcoin/
 ├── assets/
 │   ├── images/                     # Images du README
 │   ├── pictograms/                 # Pictogrammes des catégories (SVG/PDF)
-│   └── fonts/                      # Polices du livre (Archivo, Atkinson Hyperlegible Mono)
+│   ├── fonts/                      # Polices du livre (Archivo, Atkinson Hyperlegible Mono)
+│   └── cover-paperback.pdf         # Couverture du livre broché
 │
 ├── docs/
 │   ├── structure.md                # Ce rangement et ses raisons
@@ -83,7 +84,6 @@ Dictionnaire-de-Bitcoin/
 │
 ├── build/                          # Sorties de build (ignoré par git)
 ├── dictionnaire-de-bitcoin.pdf     # Version PDF
-├── dictionnaire-de-bitcoin-relie.pdf
 ├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
 ├── CONTRIBUTING.md                 # Contribuer, et garder le français et l'anglais synchronisés
@@ -99,10 +99,10 @@ Dictionnaire-de-Bitcoin/
 |---|---|---|
 | `definitions/<langue>/<lettre>/<slug>/` | une entrée par dossier | La lettre découpe 1 600 dossiers en 26 listes lisibles sur GitHub. Le site et les scripts lisent déjà `definitions/fr`. |
 | `chronologie/<langue>/` | un fichier YAML par année | Le texte des événements se traduit ; les dates, liens et sources sont identiques d'une langue à l'autre. |
-| `specifications/<langue>/` | `bip.yaml`, `bolt.yaml`, `blip.yaml`, `nip.yaml` | Le résumé de chaque spécification est en français : il se traduit comme une définition. Ranger ces fichiers par langue évite un `bip.en.yaml` isolé à côté de `bip.yaml`. |
+| `specifications/<langue>/` | `bip.yaml`, `bolt.yaml`, `blip.yaml` | Le résumé de chaque spécification est en français : il se traduit comme une définition. Ranger ces fichiers par langue évite un `bip.en.yaml` isolé à côté de `bip.yaml`. |
 | `templates/` | `categories.yaml`, `parts.yaml`, `editions.yaml`, `languages.yaml` | Les catégories sont des identifiants (`PROTOCOLE`) que toutes les langues partagent ; les éditions et les parties décrivent le livre, pas sa langue. Le site lit les commentaires de `categories.yaml` : ce fichier ne bouge pas. |
 | `templates/<langue>/` | note de l'auteur, mentions légales, remerciements, mots exclus, termes en attente | Textes à traduire : un dossier par langue, comme les définitions. |
-| `assets/` | images du README, pictogrammes, polices | Tous les fichiers binaires communs au même endroit ; `fonts/` à la racine n'en était qu'un cas particulier. |
+| `assets/` | images du README, pictogrammes, polices, couverture du broché | Tous les fichiers binaires communs au même endroit ; `fonts/` à la racine n'en était qu'un cas particulier. |
 | `docs/` | documentation des contributeurs, dossiers de travail des éditions | La racine reste lisible ; un nouveau contributeur trouve toute la documentation au même endroit. `docs/edition-2027/` garde la mémoire du chantier 2027 sans encombrer la racine. |
 | `scripts/` | outillage Python | Inchangé. `scripts/migrations/` reçoit les scripts de rangement à usage unique, gardés pour mémoire. |
 | `build/` | PDF, EPUB et sources LaTeX générés | Ignoré par git. Le livre anglais sortira dans `build/en/<édition>/` quand le générateur saura le construire. |
