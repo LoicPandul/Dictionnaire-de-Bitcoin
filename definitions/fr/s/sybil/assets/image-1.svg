@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+.accolade { fill: none; stroke: var(--encre); stroke-width: 3; }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -72,9 +74,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
   </defs>
   <g id="schema">
     <text class="annotation" x="32" y="56">Ce que compte le réseau</text>
-    <path class="lien" style="marker-end:none" d="M72 154 V140 H360 V154"/>
+    <path class="accolade" d="M72 154 V140 H360 V154"/>
     <text class="etiquette" x="216" y="120" text-anchor="middle">3 voix sur 10</text>
-    <path class="lien" style="marker-end:none" d="M448 154 V140 H1152 V154"/>
+    <path class="accolade" d="M448 154 V140 H1152 V154"/>
     <text class="etiquette" x="800" y="120" text-anchor="middle">Fausses identités : 7 voix sur 10</text>
     <circle class="acteur" cx="112" cy="216" r="40"/>
     <circle class="acteur" cx="216" cy="216" r="40"/>

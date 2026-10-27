@@ -71,9 +71,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
     <marker id="tete-lien-debut" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
   </defs>
+  <style>.accolade{fill:none;stroke:var(--encre);stroke-width:3}</style>
   <g id="schema" transform="translate(0 -16)">
     <!-- Capacité -->
-    <path class="lien" style="marker-end:none" d="M190 120 V104 H1090 V120"/>
+    <path class="accolade" d="M190 120 V104 H1090 V120"/>
     <text class="etiquette" x="640" y="80" text-anchor="middle">Canal de 1 000 000 sats</text>
     <!-- Acteurs -->
     <circle class="acteur" cx="96" cy="192" r="64"/>

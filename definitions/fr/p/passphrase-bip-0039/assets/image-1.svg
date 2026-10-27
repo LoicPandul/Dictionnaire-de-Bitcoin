@@ -77,9 +77,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="etiquette" x="148" y="376" text-anchor="middle">récupération</text>
 
     <!-- Éventail vers la passphrase -->
-    <path class="flux" d="M264 344 H296 V200 H340"/>
+    <path class="flux" d="M148 264 V200 H340"/>
     <path class="flux" d="M264 344 H340"/>
-    <path class="flux" d="M264 344 H296 V488 H340"/>
+    <path class="flux" d="M148 424 V488 H340"/>
 
     <!-- Sujet : la passphrase, trois saisies -->
     <rect class="sujet" x="344" y="48" width="232" height="504" rx="8"/>

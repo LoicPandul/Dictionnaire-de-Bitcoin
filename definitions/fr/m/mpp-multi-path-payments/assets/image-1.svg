@@ -73,21 +73,21 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
   <g id="schema">
 <circle class="acteur" cx="112" cy="240" r="80"/><text class="etiquette" x="112" y="251" text-anchor="middle">Alice</text>
 <path class="hors-chaine" d="M184 172 L240 88" style="marker-end:url(#tete-lien)"/>
-<rect class="valeur tirete" x="240" y="56" width="256" height="64" rx="32"/><text class="etiquette" x="368" y="99" text-anchor="middle">30 000 sats</text>
+<rect class="valeur tirete" x="240" y="56" width="256" height="64" rx="32"/><text class="etiquette" x="368" y="99" text-anchor="middle">30 000 sats</text>
 <path class="hors-chaine" d="M496 88 H576" style="marker-end:url(#tete-lien)"/>
 <circle class="acteur" cx="632" cy="88" r="56"/><text class="secondaire" x="632" y="98" text-anchor="middle">Nœud</text>
 <path class="hors-chaine" d="M688 88 L800 194" style="marker-end:url(#tete-lien)"/>
 <path class="hors-chaine" d="M184 240 L240 240" style="marker-end:url(#tete-lien)"/>
-<rect class="valeur tirete" x="240" y="208" width="256" height="64" rx="32"/><text class="etiquette" x="368" y="251" text-anchor="middle">30 000 sats</text>
+<rect class="valeur tirete" x="240" y="208" width="256" height="64" rx="32"/><text class="etiquette" x="368" y="251" text-anchor="middle">30 000 sats</text>
 <path class="hors-chaine" d="M496 240 H576" style="marker-end:url(#tete-lien)"/>
 <circle class="acteur" cx="632" cy="240" r="56"/><text class="secondaire" x="632" y="250" text-anchor="middle">Nœud</text>
 <path class="hors-chaine" d="M688 240 L800 240" style="marker-end:url(#tete-lien)"/>
 <path class="hors-chaine" d="M184 308 L240 392" style="marker-end:url(#tete-lien)"/>
-<rect class="valeur tirete" x="240" y="360" width="256" height="64" rx="32"/><text class="etiquette" x="368" y="403" text-anchor="middle">30 000 sats</text>
+<rect class="valeur tirete" x="240" y="360" width="256" height="64" rx="32"/><text class="etiquette" x="368" y="403" text-anchor="middle">30 000 sats</text>
 <path class="hors-chaine" d="M496 392 H576" style="marker-end:url(#tete-lien)"/>
 <circle class="acteur" cx="632" cy="392" r="56"/><text class="secondaire" x="632" y="402" text-anchor="middle">Nœud</text>
 <path class="hors-chaine" d="M688 392 L800 286" style="marker-end:url(#tete-lien)"/>
-<rect class="sujet" x="800" y="200" width="224" height="80" rx="40"/><text class="nom-sujet" x="912" y="252" text-anchor="middle">90 000 sats</text>
+<rect class="sujet" x="800" y="200" width="224" height="80" rx="40"/><text class="nom-sujet" x="912" y="252" text-anchor="middle">90 000 sats</text>
 <path class="hors-chaine" d="M1024 240 H1070" style="marker-end:url(#tete-lien)"/>
 <circle class="acteur" cx="1160" cy="240" r="80"/><text class="etiquette" x="1160" y="251" text-anchor="middle">Bob</text>
 <text class="annotation" x="912" y="344" text-anchor="middle">total annoncé</text>

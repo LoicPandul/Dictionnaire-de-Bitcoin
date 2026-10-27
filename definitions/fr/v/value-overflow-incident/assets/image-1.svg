@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+.accolade { fill: none; stroke: var(--encre); stroke-width: 3; }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -108,7 +110,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="annotation" x="1080" y="214">abandonnée</text>
 
     <!-- 53 blocs -->
-    <path class="lien" d="M340 488 V520 M340 504 H1172 M1172 488 V520" style="marker-end:none"/>
+    <path class="accolade" d="M340 488 V520 M340 504 H1172 M1172 488 V520"/>
     <rect class="reserve" x="680" y="480" width="152" height="48"/>
     <text class="etiquette" x="756" y="515" text-anchor="middle">53 blocs</text>
   </g>

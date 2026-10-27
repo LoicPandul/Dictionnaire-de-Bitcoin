@@ -70,6 +70,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
   </defs>
+  <style>.courbe{fill:none;stroke:var(--encre);stroke-width:5}</style>
   <g id="schema">
     <!-- Axes -->
     <path class="lien" style="marker-end:none" d="M184 144 V536 H1080"/>
@@ -89,9 +90,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="secondaire" x="880" y="628" text-anchor="middle">bloc 13 440 000</text>
 
     <!-- Courbe de la récompense : 50 BTC >> n -->
-    <path class="flux" style="marker-end:none" d="M200 176 H300 V356 H400 V446 H500 V491 H600 V514 H644"/>
-    <path class="flux" style="marker-end:none" d="M676 525 H720 V536 H804"/>
-    <path class="flux" d="M836 536 H880 V176 H980 V356 H1076"/>
+    <path class="courbe" d="M200 176 H300 V356 H400 V446 H500 V491 H600 V514 H644"/>
+    <path class="courbe" d="M676 525 H720 V536 H804"/>
+    <path class="courbe" style="marker-end:url(#tete-flux)" d="M836 536 H880 V176 H980 V356 H1076"/>
     <!-- Branche corrigée -->
     <path class="flux" style="marker-end:none" d="M880 536 H1096"/>
 

@@ -70,9 +70,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
   </defs>
+  <style>.accolade{fill:none;stroke:var(--encre);stroke-width:3}</style>
   <g id="schema">
     <!-- route connue de l'expéditeur -->
-    <path class="lien" style="marker-end:none" d="M72 120 V104 H648 V120"/>
+    <path class="accolade" d="M72 120 V104 H648 V120"/>
     <text class="secondaire" x="360" y="80" text-anchor="middle">route visible par l'expéditeur</text>
 
     <!-- canaux -->
@@ -102,7 +103,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="secondaire sur-sujet" x="992" y="432" text-anchor="middle">identifiants aveuglés</text>
 
     <!-- chemin construit par le destinataire -->
-    <path class="lien" style="marker-end:none" d="M536 472 V488 H1248 V472"/>
+    <path class="accolade" d="M536 472 V488 H1248 V472"/>
     <text class="secondaire" x="892" y="536" text-anchor="middle">chemin construit par le destinataire</text>
   </g>
 </svg>

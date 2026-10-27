@@ -70,6 +70,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
   </defs>
+  <style>.accolade{fill:none;stroke:var(--encre);stroke-width:3}</style>
   <g id="schema">
     <!-- annotations -->
     <text class="annotation" x="32" y="56">hash fixé par chaque</text>
@@ -99,10 +100,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="etiquette" x="1047" y="243">Dernier bloc</text>
 
     <!-- accolades -->
-    <path class="lien" style="marker-end:none" d="M32 328 V344 H800 V328 M416 344 V360"/>
+    <path class="accolade" d="M32 328 V344 H800 V328 M416 344 V360"/>
     <text class="etiquette" x="416" y="408" text-anchor="middle">Signatures non vérifiées</text>
     <text class="secondaire" x="416" y="448" text-anchor="middle">le reste est vérifié</text>
-    <path class="lien" style="marker-end:none" d="M832 328 V344 H1248 V328 M1040 344 V360"/>
+    <path class="accolade" d="M832 328 V344 H1248 V328 M1040 344 V360"/>
     <text class="etiquette" x="1040" y="408" text-anchor="middle">Tout est vérifié</text>
     <text class="secondaire" x="1040" y="448" text-anchor="middle">signatures comprises</text>
   </g>

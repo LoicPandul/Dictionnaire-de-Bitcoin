@@ -70,6 +70,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
   </defs>
+  <style>.glyphe{fill:none;stroke:var(--encre);stroke-width:5;stroke-linejoin:miter}</style>
   <g id="schema">
     <!-- Script : la contrainte CLTV (sujet) -->
     <rect class="sujet" x="32" y="32" width="480" height="200"/>
@@ -98,7 +99,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="annotation" x="32" y="376">hauteur ou temps Unix</text>
 
     <circle class="structure" cx="524" cy="328" r="34"/>
-    <path class="lien" style="marker-end:none;stroke-width:5;stroke-linejoin:miter" d="M536 306 L510 320 L536 334 M510 346 H538"/>
+    <path class="glyphe" d="M536 306 L510 320 L536 334 M510 346 H538"/>
     <circle class="structure" cx="960" cy="328" r="34"/>
     <path class="lien" style="marker-end:none;stroke-width:5;stroke-linejoin:miter" d="M974 312 L946 328 L974 344"/>
 

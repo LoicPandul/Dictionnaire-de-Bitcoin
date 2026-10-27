@@ -70,6 +70,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
   </defs>
+  <style>.accolade{fill:none;stroke:var(--encre);stroke-width:3}</style>
   <g id="schema">
     <text class="annotation" x="32" y="80">11 derniers blocs, ordre de la chaîne</text>
     <text class="annotation" x="1104" y="80" text-anchor="end">plus ancien que son parent</text>
@@ -106,7 +107,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="lien" style="marker-end:none" d="M1136 140.0 H1152"/>
     <rect class="structure" x="1152" y="104" width="96" height="72"/>
     <text class="mono" x="1200.0" y="151" text-anchor="middle">9:49</text>
-    <path class="lien" style="marker-end:none" d="M32 192 V208 H1248 V192"/>
+    <path class="accolade" d="M32 192 V208 H1248 V192"/>
     <path class="flux" d="M640 208 V304"/>
     <text class="etiquette" x="664" y="268">Tri par horodatage</text>
     <rect class="structure" x="32" y="320" width="96" height="72"/>
@@ -132,10 +133,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="mono" x="1088.0" y="367" text-anchor="middle">9:55</text>
     <rect class="structure" x="1152" y="320" width="96" height="72"/>
     <text class="mono" x="1200.0" y="367" text-anchor="middle">9:58</text>
-    <path class="lien" style="marker-end:none" d="M32 416 V432 H576 V416"/>
+    <path class="accolade" d="M32 416 V432 H576 V416"/>
     <path class="lien" style="marker-end:none" d="M304.0 432 V448"/>
     <text class="secondaire" x="304.0" y="488" text-anchor="middle">5 plus anciens</text>
-    <path class="lien" style="marker-end:none" d="M704 416 V432 H1248 V416"/>
+    <path class="accolade" d="M704 416 V432 H1248 V416"/>
     <path class="lien" style="marker-end:none" d="M976.0 432 V448"/>
     <text class="secondaire" x="976.0" y="488" text-anchor="middle">5 plus récents</text>
   </g>
