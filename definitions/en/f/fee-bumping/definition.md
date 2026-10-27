@@ -1,0 +1,3 @@
+Set of techniques for raising the fees of a transaction already broadcast on the Bitcoin network in order to speed up its confirmation. When a transaction stays stuck in mempools because its fees are too low relative to the demand for block space, fee bumping techniques reassess its priority for miners.
+
+The two existing methods are RBF (Replace-by-Fee) and CPFP (Child Pays for Parent). With RBF, the sender creates a new version of the original transaction with higher fees, which replaces the initial transaction in mempools. With CPFP, the recipient (or the sender, through a change output) creates a child transaction that spends an output of the stuck transaction, with fees high enough to give miners an incentive to confirm both transactions together.

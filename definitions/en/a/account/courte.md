@@ -1,0 +1,1 @@
+Derivation level at depth 3 of an HD wallet, where the extended public key (`xpub`) is usually exported. It separates different uses within a single wallet, even though most wallets use only one account.

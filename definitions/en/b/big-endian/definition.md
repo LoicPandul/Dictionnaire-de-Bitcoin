@@ -1,0 +1,1 @@
+Data storage format in computer systems where the most significant bytes (the "big end") are placed first in address order. This means that in a sequence of several bytes, the byte with the greatest significance (for example, the leftmost digits in hexadecimal) is stored first.

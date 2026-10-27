@@ -1,0 +1,1 @@
+Field of a transaction input that provides the data required by the `scriptPubKey` of the spent UTXO, typically a signature and a public key. It proves that the spender has the right to unlock the funds.

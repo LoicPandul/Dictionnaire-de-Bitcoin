@@ -1,0 +1,1 @@
+RGB transfer consignment that contains the final state of a contract, obtained through the state transition created from the payee's invoice. It marks the end of a transfer and gathers the data that attest to it.

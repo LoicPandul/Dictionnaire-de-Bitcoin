@@ -1,0 +1,1 @@
+Overhaul of the Bitcoin Core mempool, shipped in version 31.0, which groups related transactions into clusters and orders them in chunks ranked by fee rate. Block building and eviction thus become exactly inverse operations.

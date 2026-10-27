@@ -1,0 +1,1 @@
+Hard fork project born of the 2017 New York Agreement, which planned to activate SegWit and then double the maximum block size to 2 MB. For lack of consensus, the 2X part was canceled in November 2017.

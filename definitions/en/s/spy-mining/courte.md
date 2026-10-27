@@ -1,0 +1,1 @@
+Practice in which a miner connects to a competing pool to obtain the header of its new blocks before they are propagated. The miner thus starts mining on that block a few seconds earlier, without having validated it.

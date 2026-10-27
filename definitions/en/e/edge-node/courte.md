@@ -1,0 +1,1 @@
+Routing node that links Taproot Assets wallets to the Lightning Network by converting their assets to BTC, and back, when routing payments. Exchanges remain atomic thanks to HTLCs, and the node never holds the funds.

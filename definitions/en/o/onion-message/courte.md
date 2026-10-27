@@ -1,0 +1,1 @@
+Lightweight message relayed from peer to peer on the Lightning Network through onion routing, without sending funds. It serves notably as the communication channel for BOLT-12 offers, for example to request an invoice.

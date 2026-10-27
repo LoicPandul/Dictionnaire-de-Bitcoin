@@ -1,0 +1,1 @@
+Feature of Lightning Loop that automatically launches Loop Ins and Loop Outs when a channel's liquidity crosses the thresholds set by the node operator, keeping its channels balanced without manual intervention.

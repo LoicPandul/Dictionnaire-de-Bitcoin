@@ -1,0 +1,3 @@
+Process used by a node to determine the optimal path to route a payment across the network of Lightning channels. Pathfinding is carried out by the payer's node, which must select the most suitable intermediate nodes to reach the recipient. This choice is based on several criteria such as fees, channel capacity, and timelocks.
+
+Pathfinding algorithms build a graph of the network topology from gossip data and evaluate the different possible routes between the paying node and the receiver. These routes are ranked from best to worst according to various criteria. The node then tries these routes until it manages to make the payment over one of them.

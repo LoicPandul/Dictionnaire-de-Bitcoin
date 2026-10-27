@@ -1,0 +1,1 @@
+The conventional internet, where communications travel with identifiable IP addresses, as opposed to overlay networks such as Tor or I2P. For a Bitcoin or Lightning node, using the clearnet exposes its IP address to its peers.

@@ -1,0 +1,9 @@
+Improved version of multi-path payments (MPPs) in which each payment shard carries a distinct partial secret, which guarantees that the transaction is settled atomically, that is, in full or not at all.
+
+MPPs are Lightning payment techniques that split a transaction into several smaller parts and route them through different routes. In other words, each payment shard takes a different path of nodes. This works around the liquidity limits of a single channel in the route. In basic MPPs, every payment shard shares the same secret, and therefore the same hash in the HTLCs. This can make the transaction traceable if an observer is present on several routes, since the observer can link all these identical secrets. Moreover, BOLT-04 requires the recipient to wait until the total payment (`total_msat`) has arrived before settling the HTLCs. Atomicity therefore depends on the recipient's behavior: because the secret is unique, a recipient who revealed it before receiving all the shards could collect a partial payment.
+
+In AMPs, a unique partial secret is used for each shard. Once all the shards are received, they let the recipient reconstruct the original general secret and claim the full payment. This method makes partial settlement of the payment impossible, because holding all the partial secrets is necessary to unlock the complete payment. This guarantees that the payment either fully succeeds or fully fails (that is, it is atomic). AMPs also improve privacy, because there are no longer visible links between the different routes.
+
+An advantage of AMPs is that they work even if only the receiver and the sender have implemented this method. Intermediate nodes handle these payments like regular transactions using HTLCs, without being aware that they are handling shards of a larger payment.
+
+*This method is also sometimes called "Atomic Multi-Part Payment".*

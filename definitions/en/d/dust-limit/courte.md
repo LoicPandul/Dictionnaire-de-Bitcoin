@@ -1,0 +1,1 @@
+Threshold in sats below which a node considers an output to be dust and limits the propagation of the transaction. This standardness rule, specific to each node, is computed in Bitcoin Core from a reference fee rate.

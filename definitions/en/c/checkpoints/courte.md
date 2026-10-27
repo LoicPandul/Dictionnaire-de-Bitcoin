@@ -1,0 +1,1 @@
+Block hashes hard-coded in Bitcoin Core, each pairing a height with an expected hash to reject competing chains below it. They mainly protected against denial of service during the IBD and were removed in Bitcoin Core 30.0.

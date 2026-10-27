@@ -1,0 +1,1 @@
+Lightning channel announced to the network through a channel announcement message broadcast to peers. Unlike a private channel, a public channel is included in the Lightning Network graph: other nodes know of its existence, its capacity, and its fee policies, which lets them use it to route payments.

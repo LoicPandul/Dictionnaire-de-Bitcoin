@@ -1,0 +1,3 @@
+Acronym for *Password-Based Key Derivation Function 2*. Method for creating cryptographic keys from a password using a derivation function. It takes a password and a cryptographic salt as input, and iteratively applies a predetermined function (often a hash function such as `SHA256` or an `HMAC`) to this data. This process is repeated many times to generate a cryptographic key.
+
+In the context of Bitcoin, `PBKDF2` is used in conjunction with the `HMAC-SHA512` function to create the seed of a hierarchical deterministic wallet from a mnemonic phrase of 12 or 24 words. The cryptographic salt used in this case is the string `"mnemonic"` concatenated with the optional BIP-0039 passphrase, and the number of iterations is `2048`.

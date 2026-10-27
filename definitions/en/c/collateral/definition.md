@@ -1,0 +1,3 @@
+Asset pledged by a borrower to a lender to secure a loan or a financial obligation. If the borrower defaults, the lender can seize the collateral to cover the loss. This mechanism reduces counterparty risk and gives access to more favorable borrowing terms.
+
+In the context of Bitcoin, the term can appear in several situations. Most of the time, it is used in connection with Lombard loans. Entities can deposit their bitcoin as collateral to obtain loans in fiat currency, which lets them keep their exposure to bitcoin without having to sell it. It can also make it possible to live off one's bitcoin without selling it, and therefore without triggering a taxable capital gains event. This type of bitcoin-backed Lombard loan is offered by various platforms.

@@ -1,0 +1,1 @@
+Maximum total amount of bitcoin the miner of a valid block can claim, made up of the block subsidy, which shrinks with each halving, and the fees of the included transactions, all paid in the coinbase transaction.

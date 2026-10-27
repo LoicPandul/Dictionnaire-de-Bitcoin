@@ -1,0 +1,1 @@
+Cryptographic protocol that commits arbitrary data into the nonce of a signature, without the commitment being visible. It is used to timestamp documents and underlies the anti-exfil protocol of hardware wallets.

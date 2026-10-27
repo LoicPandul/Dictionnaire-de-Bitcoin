@@ -1,0 +1,1 @@
+In the RGB protocol, transfer consignment that contains the final state of a contract, obtained through the state transition generated from the payee's RGB invoice. This mechanism is the endpoint of a transfer, gathering all the data needed to attest that ownership or the state of the contract has been duly transmitted and validated.

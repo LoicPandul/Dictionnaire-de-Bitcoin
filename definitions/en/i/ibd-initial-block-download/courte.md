@@ -1,0 +1,1 @@
+Process by which a new full node downloads and validates all blocks from the genesis block to synchronize with the network. It lasts from a few hours to more than a week, depending on the machine and the connection.

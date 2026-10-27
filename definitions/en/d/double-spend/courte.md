@@ -1,0 +1,1 @@
+Attack that consists of spending the same bitcoin twice, by getting a transaction confirmed that competes with an already accepted payment. Preventing double spending is the blockchain's primary function, hence the value of waiting for several confirmations.

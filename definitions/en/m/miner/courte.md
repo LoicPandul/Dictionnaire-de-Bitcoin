@@ -1,0 +1,1 @@
+Person who runs a mining machine, that is, a computer taking part in the proof of work: it assembles the transactions of its mempool into a candidate block and searches for a valid hash to win the subsidy and the fees.

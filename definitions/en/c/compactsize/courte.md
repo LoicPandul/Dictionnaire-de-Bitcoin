@@ -1,0 +1,1 @@
+Variable-length encoding format for unsigned integers, used by the Bitcoin protocol to indicate a number of elements or a field size. It takes from 1 to 9 bytes depending on the value, which saves space for small numbers.

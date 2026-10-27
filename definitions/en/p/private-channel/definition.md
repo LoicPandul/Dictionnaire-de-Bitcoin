@@ -1,0 +1,5 @@
+Lightning channel that is not announced to the network and is therefore absent from the public node graph. Unlike a regular public channel, a private channel does not broadcast a channel announcement message to other peers. It is invisible to third-party nodes and cannot be used to route payments for other users.
+
+Private channels are the recommended channel type for nodes that do not route, such as nodes running on mobile devices. To receive a payment through a private channel, the existence of the channel and its parameters are revealed to the payer through routing hints embedded in the Lightning invoice.
+
+The term "private" is somewhat misleading here: it simply means "unannounced." On-chain heuristics, such as analysis of funding transactions or force closes, can allow an observer to infer the existence of these channels, as can analysis of payments to the node. It is, in fact, because of these channels that the true size of the Lightning Network cannot be known, since only public channels can be counted with certainty.

@@ -1,0 +1,1 @@
+Mining practice of working on a new block as soon as the header hash of the previous block is received, without having downloaded or verified its transactions, to gain a few seconds over other miners.

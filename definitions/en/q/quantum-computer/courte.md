@@ -1,0 +1,1 @@
+Machine that computes on qubits by exploiting superposition, entanglement, and interference, which speeds up certain specific problems such as the discrete logarithm, on which Bitcoin's signatures depend. As of 2026, none is powerful enough to break them.

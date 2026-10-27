@@ -1,0 +1,1 @@
+Set of recurring characteristics in the transactions of a single wallet (script types, change position, `nSequence` or `nLockTime` fields) that chain analysts use to follow an entity, or even identify its software.

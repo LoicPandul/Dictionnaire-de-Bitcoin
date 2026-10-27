@@ -1,0 +1,1 @@
+Name of the campaign launched in August 2017, after the SegWit soft fork locked in, whose goal is to convince users not to implement the doubling of the block size from 1 MB to 2 MB planned in the SegWit2x update.

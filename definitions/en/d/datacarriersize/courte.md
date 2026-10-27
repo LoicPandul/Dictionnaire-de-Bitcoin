@@ -1,0 +1,1 @@
+Bitcoin Core option that sets the maximum size of the `OP_RETURN` outputs of a transaction relayed by the node. Its default went from 83 to 100,000 bytes in version 30.0, which effectively removes the limit.

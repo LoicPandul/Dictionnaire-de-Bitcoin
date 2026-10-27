@@ -1,0 +1,1 @@
+Acronym for *American Standard Code for Information Interchange*. Character encoding system for computers. The ASCII standard uses 7 bits to represent 128 different characters: uppercase and lowercase letters of the Latin alphabet, digits, punctuation symbols, and control commands such as the line feed or the tab.

@@ -1,0 +1,1 @@
+Consensus rule introduced with BIP-0147 in the SegWit soft fork that requires the dummy element used in the `OP_CHECKMULTISIG` and `OP_CHECKMULTISIGVERIFY` opcodes to be an empty byte array (`OP_0`). This measure was put in place to eliminate a malleability vector by forbidding any value other than `OP_0` for this element.

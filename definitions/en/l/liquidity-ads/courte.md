@@ -1,0 +1,1 @@
+Mechanism proposed for Lightning that lets a node advertise inbound liquidity for a fee, with amount, duration, and rate. Another node accepts the offer to open a channel funded by the provider, with no trusted intermediary.

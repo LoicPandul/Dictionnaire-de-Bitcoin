@@ -1,0 +1,1 @@
+Cryptographic method that lets two parties compute a shared secret over an insecure channel, without an observer being able to derive it. Its elliptic curve variant, ECDH, is used notably in Silent Payments and BIP-0047.

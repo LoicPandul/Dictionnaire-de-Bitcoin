@@ -1,0 +1,1 @@
+Total value of an asset in circulation, such as bitcoin. It is calculated by multiplying the total number of coins in circulation by the current price of each unit. This figure gives an indication of the overall size and market value of Bitcoin.

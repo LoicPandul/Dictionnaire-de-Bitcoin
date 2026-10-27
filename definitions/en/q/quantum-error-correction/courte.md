@@ -1,0 +1,1 @@
+Set of techniques that protect the information of a quantum computer by spreading it across several physical qubits to form a much more reliable logical qubit. It makes possible the long computations that the cryptanalysis of Bitcoin would require.

@@ -1,0 +1,1 @@
+Removes the top of the alternate stack (alt stack) and places it on top of the main stack. This opcode is used to retrieve data temporarily stored on the alt stack. Put simply, it is the inverse operation of `OP_TOALTSTACK`.

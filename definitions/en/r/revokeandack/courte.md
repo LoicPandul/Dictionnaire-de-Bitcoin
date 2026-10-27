@@ -1,0 +1,1 @@
+Lightning protocol message exchanged at every channel update, which revokes the old commitment transaction by delivering its revocation key and acknowledges the new state. It guarantees that only the latest channel state remains valid.

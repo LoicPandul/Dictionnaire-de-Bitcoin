@@ -1,0 +1,1 @@
+Operation of an RGB contract that exercises a public right provided by the contract, a valency, to initiate an update of its state. Removed from RGB since v0.12 (2025), it took effect only with a state transition.

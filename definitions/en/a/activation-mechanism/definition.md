@@ -1,0 +1,5 @@
+Process by which the user community decides on the implementation of a soft fork on the Bitcoin protocol, while trying to avoid a blockchain split. The process consists of polling miners to approve a soft fork before its activation. If a large majority accepts the soft fork, the risk of a chain split is minimized. This consensus matters because if a majority of miners refuse the change, the soft fork could create two distinct chains: one with the modified rules and one without. There are 2 main categories of activation mechanisms:
+* UASFs (User-Activated Soft Forks), when nodes enforce the upgrade;
+* MASFs (Miner-Activated Soft Forks), when miners trigger the activation.
+
+Many different activation mechanisms have been tried as Bitcoin has evolved. In Satoshi's time, the activation process was not formally established. Changes were often arbitrary and sometimes even made without informing the community. Later, the flag day method was adopted. After Satoshi's departure, other mechanisms were used in succession, notably BIP-0034, BIP-0009, BIP-0008, and finally Speedy Trial.

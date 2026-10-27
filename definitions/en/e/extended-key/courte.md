@@ -1,0 +1,1 @@
+String of characters that combines a public or private key, its chain code, and metadata, everything needed to derive child keys in an HD wallet. An extended public key makes it possible to watch an account without exposing its private keys.

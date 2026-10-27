@@ -1,0 +1,1 @@
+Acronym for *GNU General Public License*, a family of free software licenses from the Free Software Foundation that require derived software to be distributed under the same license. Bitcoin Core is released under the MIT license.

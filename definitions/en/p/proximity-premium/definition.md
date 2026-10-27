@@ -1,0 +1,3 @@
+Financial advantage that Bitcoin miners gain by reducing communication latency on the network. Miners located closer to one another receive new valid blocks faster, which lets them stop wasting resources on a candidate block that sits on a branch with less accumulated work. This lower latency improves miners' returns, which naturally pushes them to group together geographically to maximize their revenue.
+
+The proximity premium is an inherent flaw in how Bitcoin works, stemming from two mechanisms: the linearity of block ordering and the fact that the block reward goes exclusively to the miner who finds the block. This phenomenon therefore encourages mining operations to group together.

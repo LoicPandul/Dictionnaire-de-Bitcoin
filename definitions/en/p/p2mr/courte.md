@@ -1,0 +1,1 @@
+Pay-to-Merkle-Root output type, proposed by BIP-0360, that takes P2TR without its key path spend: the output commits only to the root of a script tree, so it exposes no public key to a quantum computer before the spend.

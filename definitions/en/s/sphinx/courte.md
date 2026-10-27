@@ -1,0 +1,1 @@
+Packet format encrypted in successive layers that the Lightning Network uses for onion routing. Each intermediate node reads only its own layer and knows only the next hop, neither the sender nor the recipient.

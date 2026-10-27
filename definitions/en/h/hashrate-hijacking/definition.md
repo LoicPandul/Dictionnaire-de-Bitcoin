@@ -1,0 +1,3 @@
+Attack that diverts a miner's computing power to a destination controlled by the attacker, without the miner being aware of it. It is possible when the communication between the miner and the mining pool's server is not encrypted. An attacker positioned between the two (a man-in-the-middle attack) can intercept the data exchanged and replace the legitimate pool's address with their own, thereby redirecting the miner's hashrate to their own benefit.
+
+Hashrate hijacking is made easier by the fact that the Stratum V1 protocol transmits data in clear text, with no authentication or encryption. This vulnerability motivated the development of Stratum V2, which includes AEAD encryption to secure communications between miners and pools, making this type of attack much harder.

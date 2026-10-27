@@ -1,0 +1,1 @@
+Lightning routing technique that hides the recipient: the recipient builds an encrypted route segment from a rendez-vous node to itself, and the sender completes the route. Blinded paths have superseded it.

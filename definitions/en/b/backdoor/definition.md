@@ -1,0 +1,1 @@
+Secret mechanism that gives privileged access to a computer system, software, function, algorithm, or data, without going through the usual authentication or security procedures. Unlike a security vulnerability, a backdoor is introduced intentionally into the source code by malicious developers. Backdoors can be used to spy on, manipulate, or steal sensitive information.

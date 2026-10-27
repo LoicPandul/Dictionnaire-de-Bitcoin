@@ -1,0 +1,3 @@
+Increase in the money supply in circulation, causing the value of each unit of money to fall and the prices of goods and services to rise. For state currencies, this phenomenon occurs when central banks issue new units of money.
+
+In the context of Bitcoin, inflation is controlled by the protocol. New bitcoin is generated with each validated block through the subsidy awarded to the winning miner. This subsidy was initially 50 BTC per block and is cut in half every 210,000 blocks in an event known as the "halving". The total issuance of bitcoin is capped at about 21 million units, which means that BTC's monetary inflation is decreasing and will stop once the maximum number of units is reached.

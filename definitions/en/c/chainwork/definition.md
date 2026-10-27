@@ -1,0 +1,6 @@
+Metric that quantifies the total number of hashes expected to produce a given blockchain. Chainwork is the criterion for determining the valid chain: nodes always follow the chain with the greatest chainwork, not simply the one with the most blocks. The calculation relies on the difficulty target of each block. For a given block, the average number of hashes needed to obtain a hash less than or equal to the target is:
+$$\frac{2^{256}}{target\ +\ 1}$$
+
+The total chainwork of a chain is the sum of these values for every block, from the genesis block up to the block in question. Because difficulty varies over time, two chains of identical length can have very different chainwork: a chain mined under high difficulty has more chainwork than a longer chain built under an artificially low difficulty.
+
+In the first version of the software, Satoshi Nakamoto used the number of blocks as the criterion for selecting the valid chain. This approach was vulnerable to manipulation, because an attacker could build a longer chain by keeping the difficulty low. Chainwork replaced this metric to guarantee that the valid chain is the one that required the most actual work. The value is available through the `bitcoin-cli getblock` command in the `chainwork` field.

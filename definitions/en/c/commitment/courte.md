@@ -1,0 +1,1 @@
+Cryptographic object computed from a message and a random value, which binds its author to that message without revealing it and prevents changing it afterward. In RGB, a commitment placed in a Bitcoin transaction proves the existence of information at a given moment.

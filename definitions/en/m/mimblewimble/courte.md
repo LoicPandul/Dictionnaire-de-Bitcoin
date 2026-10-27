@@ -1,0 +1,1 @@
+Privacy and scalability protocol, with no addresses or scripts, that hides amounts and aggregates the transactions of each block. Implemented by Grin, Beam, and Litecoin, it has never been integrated into Bitcoin.

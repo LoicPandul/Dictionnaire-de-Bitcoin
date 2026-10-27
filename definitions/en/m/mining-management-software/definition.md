@@ -1,0 +1,1 @@
+Software dedicated to managing and optimizing mining operations. This type of software monitors, in real time, the performance of ASICs, their power consumption, their temperatures, and their hashrates. It also offers features for managing large-scale mining farms, including automated tuning (overclocking, for example), failure detection, and remote management of devices.

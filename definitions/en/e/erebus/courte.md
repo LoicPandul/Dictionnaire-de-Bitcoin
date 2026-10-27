@@ -1,0 +1,1 @@
+Variant of the eclipse attack in which a malicious Internet service provider exploits routing between autonomous systems to isolate a Bitcoin node. The isolated node can then suffer censorship or a double spend.

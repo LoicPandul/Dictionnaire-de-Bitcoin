@@ -1,0 +1,1 @@
+Method by Coinkite that splits a mnemonic phrase into several parts using the XOR operation, each part being itself a valid BIP-0039 phrase. All the parts are needed to reconstitute the original phrase.

@@ -1,0 +1,1 @@
+Transaction to one's own wallet that merges several small UTXOs into one, preferably when fees are low, to save on future spending. It does, however, reveal to chain analysis that these UTXOs belong to the same entity.

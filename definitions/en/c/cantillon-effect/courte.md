@@ -1,0 +1,1 @@
+Phenomenon, described by Richard Cantillon in the 18th century, in which the first to receive newly created money profit from it before prices rise, at the expense of the last. Bitcoin's programmed issuance is sometimes presented as an answer.

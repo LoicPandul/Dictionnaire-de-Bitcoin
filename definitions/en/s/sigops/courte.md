@@ -1,0 +1,1 @@
+Signature verification operations (`OP_CHECKSIG`, `OP_CHECKMULTISIG`, and their variants) that nodes execute to validate transactions. Their number is capped per block to prevent denial-of-service attacks.

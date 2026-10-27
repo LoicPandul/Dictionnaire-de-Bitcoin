@@ -1,0 +1,1 @@
+Sequence of words that authenticates a remote connection to a Lightning node through Lightning Node Connect. Entered in Lightning Terminal or a compatible application, it opens an end-to-end encrypted channel via a proxy, without exposing the node on the internet.

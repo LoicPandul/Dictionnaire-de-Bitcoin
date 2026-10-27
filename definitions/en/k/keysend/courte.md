@@ -1,0 +1,1 @@
+Lightning payment method that sends funds directly to a node's public key, with no prior invoice. The sender chooses the preimage and slips it into the onion packet, which leaves it with no proof of payment.

@@ -1,0 +1,1 @@
+Increase in the money supply in circulation, which lowers the value of each unit. On Bitcoin, the protocol sets the issuance of new bitcoin, halved every 210,000 blocks until the cap of about 21 million.

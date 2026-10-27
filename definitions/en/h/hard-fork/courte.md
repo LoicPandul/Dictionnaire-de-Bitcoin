@@ -1,0 +1,1 @@
+Change to the protocol rules that is not backward compatible and makes previously invalid blocks valid. Nodes that do not follow the update reject the new chain, which can split the blockchain, as with the creation of Bitcoin Cash in 2017.

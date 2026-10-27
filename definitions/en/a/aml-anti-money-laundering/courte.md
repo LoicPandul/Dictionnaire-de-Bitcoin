@@ -1,0 +1,1 @@
+Set of laws and procedures intended to prevent money laundering, requiring financial institutions, including bitcoin exchanges, to verify customers' identity, monitor their transactions, and report suspicious activity.

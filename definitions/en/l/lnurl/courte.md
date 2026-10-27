@@ -1,0 +1,1 @@
+HTTP-based protocol that simplifies interactions between a Lightning wallet and a service: a scanned URL automatically triggers an action, such as a payment request, a withdrawal, or an authentication.

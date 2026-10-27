@@ -1,0 +1,1 @@
+Sequence of indexes that tells how to derive a child key from the master key of an HD wallet, for example `m/84'/0'/0'/0/0`. Each level gives the standard followed, the account, the receiving or change chain, and the address number.

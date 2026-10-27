@@ -1,0 +1,1 @@
+BIP draft by Agustin Cruz, presented in February 2025 and never numbered, that would impose a deadline for migrating to quantum-resistant addresses. After this deadline, classical outputs would become unspendable.

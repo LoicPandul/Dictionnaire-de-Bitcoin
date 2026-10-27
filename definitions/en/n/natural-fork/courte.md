@@ -1,0 +1,1 @@
+Temporary split of the blockchain that occurs when two miners find a block at the same height almost simultaneously. It resolves itself, usually within one block, when one of the branches accumulates more work.

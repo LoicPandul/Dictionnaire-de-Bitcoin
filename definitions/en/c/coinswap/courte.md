@@ -1,0 +1,1 @@
+Protocol that lets two users swap ownership of their bitcoin without the swap appearing on the blockchain. HTLC or PTLC contracts make the swap atomic: either each receives the other's bitcoin, or each keeps their own.

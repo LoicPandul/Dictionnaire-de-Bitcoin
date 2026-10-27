@@ -1,0 +1,1 @@
+Data structure that condenses a set of elements into a single hash, the Merkle root, by hashing the elements in pairs up to the top. In Bitcoin, it summarizes a block's transactions and makes it possible to prove that a transaction is included.

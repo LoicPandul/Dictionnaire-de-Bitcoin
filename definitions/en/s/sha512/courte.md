@@ -1,0 +1,1 @@
+Cryptographic hash function of the SHA-2 family, designed by the NSA, that produces a 512-bit hash digest. Absent from the Bitcoin protocol, it is used in wallets, through `HMAC` and `PBKDF2`, to derive the seed (BIP-0039) and the keys (BIP-0032).

@@ -1,0 +1,1 @@
+N-of-n Schnorr multisignature protocol proposed in 2018, which aggregates the keys of several signers into a single key and a single signature, indistinguishable from an individual signature. It takes three rounds of communication.

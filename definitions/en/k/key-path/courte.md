@@ -1,0 +1,1 @@
+Way of spending a Taproot output with a single Schnorr signature valid for its public key, without revealing any script. Unlike the script path, it does not disclose the output's other spending conditions.

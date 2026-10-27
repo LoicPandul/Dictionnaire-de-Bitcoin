@@ -1,0 +1,1 @@
+Combines the functions of `OP_EQUAL` and `OP_VERIFY`. It first checks that the top two values of the stack are equal, then requires the result to be nonzero, otherwise the transaction is invalid. `OP_EQUALVERIFY` is notably used in address verification scripts.

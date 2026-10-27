@@ -1,0 +1,1 @@
+Set of information that a Bitcoin node provides to mining software or a pool, containing the data needed to build a new candidate block. This structure includes the transactions selected for inclusion and the block header. Once the miner receives this information, it can start searching for a valid proof of work for the candidate block.

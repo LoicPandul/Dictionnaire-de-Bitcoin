@@ -1,0 +1,1 @@
+Fungible token standard on Bitcoin that relies on the Stamps protocol to inscribe metadata directly in UTXOs. Unlike the BRC-20 standard, which stores its data in the witness part of transactions (which nodes can prune), SRC-20 data is inscribed in unspent outputs, which makes it permanent and impossible to delete.

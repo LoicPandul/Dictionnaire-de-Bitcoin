@@ -1,0 +1,1 @@
+Lightning channel that is not announced to the network: absent from the public graph, it does not route payments for third parties, and the payer discovers it through the routing hints in the invoice.

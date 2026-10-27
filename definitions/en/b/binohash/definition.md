@@ -1,0 +1,5 @@
+Collision-resistant hash function for Bitcoin transactions, proposed by Robin Linus (ZeroSync) in 2026, that enables a limited form of transaction introspection in Bitcoin Script without any consensus change. The name comes from the binomial coefficient $\binom{n}{t}$ that makes its construction possible.
+
+The problem Binohash solves is that Bitcoin Script cannot natively read the data of a transaction (inputs, outputs, amounts). This limitation prevents trustless verification of transaction properties in Script, which is necessary for protocols such as BitVM bridges.
+
+Binohash exploits the FindAndDelete behavior of legacy `OP_CHECKMULTISIG`, a historical artifact that removes signatures from the scriptCode before computing the sighash. By embedding a pool of signatures in the locking script and selecting subsets via `OP_ROLL`, each selection produces a different sighash. The spender performs proof-of-work grinding (ECDSA signature puzzles verifiable by `OP_SIZE`) until finding a subset that satisfies a size constraint. The indexes of the winning subset make up the Binohash, directly readable in the unlocking script.

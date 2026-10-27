@@ -1,0 +1,1 @@
+Modifier sighash flag proposed by BIP-0118 that lets a signature commit to no specific UTXO. The same signature can then serve for different transactions, which Eltoo and some Lightning channels rely on.

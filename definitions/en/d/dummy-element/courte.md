@@ -1,0 +1,1 @@
+Dummy value that must be placed at the start of the `scriptSig` of an `OP_CHECKMULTISIG` spend, because an off-by-one bug makes the opcode remove one element too many from the stack. Since SegWit, the `NULLDUMMY` rule of BIP-0147 requires an empty array.

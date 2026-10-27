@@ -1,0 +1,3 @@
+Communication technique that consists of wrapping a message in several successive layers of encryption, like the layers of an onion. The message travels through a series of intermediate nodes, and each node can decrypt only the layer intended for it, which reveals only the identity of the next node. No intermediary knows both the sender and the final recipient of the message.
+
+This principle is the basis of the Tor network, where internet traffic passes through several successive relays to anonymize connections. On the Lightning Network, onion routing is used to route payments: each node on the route knows only the previous node and the next node, and cannot determine the origin or destination of the payment.

@@ -1,0 +1,5 @@
+Quantitative measure of the uncertainty or unpredictability associated with a data source or a random process, in the context of cryptography and information. Entropy plays a central role in the security of cryptographic systems, notably in generating keys and random numbers. High entropy ensures that generated keys are sufficiently unpredictable and resistant to brute-force attacks, in which an attacker tries every possible combination to guess the key.
+
+In the context of Bitcoin, entropy is used to generate private keys or seeds. When a hierarchical deterministic wallet is created, the mnemonic phrase is built from a random number, itself drawn from an entropy source. The phrase is then used to generate several private keys, deterministically and hierarchically, in order to create spending conditions on UTXOs.
+
+Having a good entropy source is essential to guarantee the security of cryptographic systems. Entropy sources can be physical processes, such as electronic noise or thermal variations, or software processes, such as pseudorandom number generators.

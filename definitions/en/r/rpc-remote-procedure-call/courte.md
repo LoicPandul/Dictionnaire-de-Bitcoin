@@ -1,0 +1,1 @@
+Protocol that lets a program execute a procedure on a remote computer as if it were local. On Bitcoin, applications use it to send commands to `bitcoind`: sending transactions, managing wallets, reading the blockchain.

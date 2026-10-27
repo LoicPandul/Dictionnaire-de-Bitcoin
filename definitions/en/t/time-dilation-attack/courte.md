@@ -1,0 +1,1 @@
+Attack on the Lightning Network that isolates the victim's Bitcoin node with an eclipse attack and delivers blocks to it late. With a lagging view of the chain, the victim cannot react in time to a fraud protected by a timelock.

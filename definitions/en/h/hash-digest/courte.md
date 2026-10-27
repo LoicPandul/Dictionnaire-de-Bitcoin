@@ -1,0 +1,1 @@
+Fixed-size result produced by a cryptographic hash function applied to data. The slightest change in the data gives a completely different digest, and it is very hard to recover the original data from it.

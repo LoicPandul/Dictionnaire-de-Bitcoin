@@ -1,0 +1,1 @@
+Layer 2 mechanism that transfers ownership of a UTXO off-chain by renewing the shares of a key shared with an entity, without an on-chain transaction. It relies on trusting the entity to erase its old shares.

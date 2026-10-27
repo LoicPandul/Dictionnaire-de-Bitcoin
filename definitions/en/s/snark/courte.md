@@ -1,0 +1,1 @@
+Cryptographic proof system that convinces a verifier that a statement is true without interaction or disclosure of the data, with a very short proof. Most constructions require a trusted setup ceremony.

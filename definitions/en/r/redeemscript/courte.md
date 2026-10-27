@@ -1,0 +1,1 @@
+Script that sets the spending conditions of a P2SH output: only its hash appears in the `scriptPubKey`, and it is revealed in the clear in the `scriptSig` at spending time, for example for a P2SH multisig.

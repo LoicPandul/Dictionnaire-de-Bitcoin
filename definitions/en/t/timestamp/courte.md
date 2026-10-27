@@ -1,0 +1,1 @@
+Mechanism that associates a point in time with an event or a piece of data. On Bitcoin, each block carries a timestamp, which establishes the chronology of transactions without a central authority and helps prevent double spending.

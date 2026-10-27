@@ -1,0 +1,1 @@
+Opcode proposed for Tapscript by BIP-0346 that pushes onto the stack a hash of the fields of the spending transaction chosen by a selector. It generalizes `OP_CHECKTEMPLATEVERIFY` and is used for transaction introspection.

@@ -1,0 +1,1 @@
+Protocol for pooled custody of bitcoin, created by Eric Sirion in 2021, in which a federation of guardians holds a community's funds and issues Chaumian eCash notes in exchange, which are used for payments.

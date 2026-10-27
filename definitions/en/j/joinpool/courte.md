@@ -1,0 +1,1 @@
+Layer 2 payment system in which several users share ownership of one or more UTXOs without trust, each keeping the ability to withdraw their funds alone. It improves scalability and hides on-chain who made a spend.

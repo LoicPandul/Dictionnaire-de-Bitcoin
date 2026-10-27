@@ -1,0 +1,1 @@
+Opcode that combines `OP_CHECKSIG` and `OP_VERIFY`: it verifies a signature and stops the script with an error if it is invalid, pushing nothing onto the stack on success. In Tapscript, it verifies Schnorr signatures.

@@ -1,0 +1,1 @@
+Cryptographic protocol, used on Liquid, that hides the amounts and asset types of a transaction while letting nodes verify that it does not create money. It relies on Pedersen commitments and rangeproofs.

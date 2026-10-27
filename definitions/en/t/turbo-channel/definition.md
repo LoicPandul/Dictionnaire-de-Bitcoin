@@ -1,0 +1,5 @@
+Lightning channel that can be used immediately, without waiting for the usual on-chain confirmations. Normally, a Lightning channel is considered operational only after several confirmations of its funding transaction, usually several dozen minutes. A turbo channel, also called a zero-conf channel, removes this wait: both ends of the channel consider it active as soon as the funding transaction is broadcast to the mempools.
+
+This mechanism involves a trust tradeoff: as long as the funding transaction is unconfirmed, the party that opened the channel could theoretically double spend by publishing a competing transaction. In practice, this trust is accepted in a setting where the channel opener is a Lightning service provider (LSP) whose reputation would be destroyed by such a fraud. Some implementations strengthen security by requiring that the opening transaction come from a multisig address with a trusted cosigner.
+
+Turbo channels are widely used by embedded mobile nodes such as Phoenix, because they let new users send and receive payments as soon as the channel is opened, with an experience closer to that of custodial solutions.

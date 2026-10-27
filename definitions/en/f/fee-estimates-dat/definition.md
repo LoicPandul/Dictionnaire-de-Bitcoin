@@ -1,0 +1,1 @@
+File in Bitcoin Core that stores estimated transaction fee data, compiled by the software from recent transactions and the current state of the mempool. These statistics help the user determine appropriate fees to include in their transactions so that they are confirmed within the expected time. This file has existed since version 0.10.

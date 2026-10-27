@@ -1,0 +1,5 @@
+General science of human action, developed by Ludwig von Mises within the Austrian School of economics. Praxeology studies intentional, goal-directed behavior. It rests on a fundamental axiom: the individual acts deliberately to move from a state they judge less satisfactory to one they perceive as better. This axiom is considered irrefutable, because any attempt to contradict it is itself an action, which validates it. Economics, as catallactics, is a branch of praxeology.
+
+The praxeological method is axiomatic and deductive: it starts from propositions considered true a priori to deduce economic laws logically, without resorting to empirical experimentation or econometrics. This approach differs radically from the positivism of other schools of economics. It implies in particular that prices, money, and business cycles are analyzed as phenomena emerging from individual action, not as statistical aggregates.
+
+In the Bitcoin ecosystem, praxeology is often invoked to analyze bitcoin as an emergent form of money, whose adoption and value stem from the voluntary choices of individuals acting in their own interest, without central planning.

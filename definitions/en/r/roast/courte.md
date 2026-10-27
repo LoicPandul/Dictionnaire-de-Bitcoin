@@ -1,0 +1,1 @@
+Protocol that wraps a Schnorr threshold signature scheme such as FROST so that it succeeds despite uncooperative or slow participants, by running parallel signing sessions until a quorum is reached. It is of particular interest to federations such as Liquid's.

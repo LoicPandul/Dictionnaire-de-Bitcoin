@@ -1,0 +1,1 @@
+Coldcard feature that transfers confidential data between two devices in encrypted form. The transferable data includes seeds (the main seed or Seed Vault), notes and passwords, full backups, and multisig PSBTs.

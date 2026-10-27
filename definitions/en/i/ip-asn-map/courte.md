@@ -1,0 +1,1 @@
+Bitcoin Core file that stores the ASMAP, a table from IP addresses to autonomous system numbers (ASNs). It groups peers by network operator rather than by IP prefix, to diversify connections and counter attacks such as Erebus.

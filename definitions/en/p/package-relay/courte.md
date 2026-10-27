@@ -1,0 +1,1 @@
+Relay mechanism that evaluates a parent transaction and its children together, based on their combined fee rate. It allows an underpaying parent to be accepted thanks to CPFP, which protects notably the presigned transactions of the Lightning Network.

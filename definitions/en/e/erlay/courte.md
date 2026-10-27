@@ -1,0 +1,1 @@
+Transaction relay protocol, proposed in BIP-0330, that limits direct relay to a few peers and then reconciles the missing transactions with minisketch. It would reduce a node's bandwidth and let it accept far more connections.

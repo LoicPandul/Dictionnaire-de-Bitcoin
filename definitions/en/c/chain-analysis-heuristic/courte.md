@@ -1,0 +1,1 @@
+Empirical chain analysis method that relies on transaction characteristics to follow the flows of bitcoin, with a probable but never certain result. Internal heuristics, specific to one transaction, are distinguished from external ones, which look at its environment.

@@ -1,0 +1,1 @@
+Family of collaborative Samourai Wallet transactions, such as Stowaway or Stonewall x2, that several users build together by exchanging partially signed transactions. Samourai's servers were seized in April 2024.

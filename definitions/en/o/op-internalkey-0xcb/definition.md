@@ -1,0 +1,1 @@
+Opcode proposed in BIP-0349 to be added to Tapscript (`0xcb`), which pushes the Taproot internal key onto the stack. In practice, when a script in a Taproot leaf needs to know the public key that was used to build the output, it can call `OP_INTERNALKEY` instead of having to hardcode that key in the script. The result is the 32-byte x-only representation of the internal key.

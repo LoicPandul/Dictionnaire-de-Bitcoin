@@ -1,0 +1,1 @@
+Coordinated opening of Lightning channels in which several node operators each open a channel to the next one, in a circle, with identical capacity. Every participant gets inbound and outbound liquidity.

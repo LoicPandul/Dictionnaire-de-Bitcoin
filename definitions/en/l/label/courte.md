@@ -1,0 +1,1 @@
+Annotation attached to a UTXO in a wallet to remember where it came from or where it is meant to go. Combined with coin control, it helps avoid merging UTXOs from different sources and so protects privacy.

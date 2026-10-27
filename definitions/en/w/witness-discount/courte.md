@@ -1,0 +1,1 @@
+Weight calculation rule, introduced by SegWit, that counts each byte of a transaction's witness as 1 weight unit, against 4 for the other bytes. It reduces by 75% the room the witness takes up in the limit of a block.

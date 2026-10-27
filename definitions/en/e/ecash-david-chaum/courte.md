@@ -1,0 +1,1 @@
+Digital currency system proposed by David Chaum in 1982, in which a bank signs tokens that users exchange without revealing their identity. It is a precursor of cryptocurrencies, and federated Chaumian systems such as Fedimint draw on it.

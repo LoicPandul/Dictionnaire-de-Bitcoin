@@ -1,0 +1,5 @@
+Lightweight and flexible messages passed between peers on the Lightning Network using onion routing, without requiring the sending of funds or the locking of liquidity. Unlike Lightning payments, which go through HTLCs, onion messages are simply relayed from peer to peer along existing connections, which makes them free for the sender.
+
+Onion messages are the communication building block of the BOLT-12 protocol (offers). They allow a payer to contact a recipient to ask for an invoice, even with no direct channel between them. Thanks to blinded paths, the recipient can receive these messages without revealing their identity or their position in the network: they build an encrypted route to themselves from a popular node, which dilutes their identity among many possible candidates.
+
+Beyond offers, onion messages pave the way for asynchronous payments: an LSP can hold a payment and use an onion message to signal that the recipient is online, which removes the requirement for the receiver to be permanently connected.

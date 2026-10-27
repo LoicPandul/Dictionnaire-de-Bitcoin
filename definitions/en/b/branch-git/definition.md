@@ -1,0 +1,1 @@
+In Git, a divergence from the main workflow that allows parallel development without affecting the main branch (usually named `master` or `main`). Branches allow changes, tests, and experiments in an isolated environment, before they are eventually integrated into the main project through a merge.

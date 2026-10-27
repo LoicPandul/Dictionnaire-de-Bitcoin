@@ -1,0 +1,1 @@
+Natural or legal person who accepts bitcoin in exchange for goods or services. By giving the currency its usefulness, merchants as a whole also weigh on the choice of the consensus rules, in proportion to the economic activity each brings to a fork.

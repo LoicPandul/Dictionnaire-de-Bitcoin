@@ -1,0 +1,1 @@
+Consensus rule that would let the true owner of certain vulnerable outputs spend them by proving knowledge that a quantum attacker does not have. BIP-0361 provides for it in its phase B without describing a precise protocol.

@@ -1,0 +1,1 @@
+Acronym for *Bitcoin Improvement Proposal*. Formal document proposing an improvement, a specification, or information about Bitcoin, which allows structured debate in the absence of a central authority.

@@ -1,0 +1,1 @@
+Calculation of the fee rate that a transaction must pay to be confirmed within a given number of blocks. The node estimates it from recently mined transactions and, since Bitcoin Core 32.0, from the contents of its mempool.

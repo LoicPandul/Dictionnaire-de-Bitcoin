@@ -1,0 +1,1 @@
+Integer that modifies the spend key of a Silent Payments static address to create new ones. The recipient can separate purposes across several static addresses without adding much to the cost of scanning for payments.

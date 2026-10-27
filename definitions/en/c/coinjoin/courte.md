@@ -1,0 +1,1 @@
+Collaborative transaction that combines the coins of several users and produces outputs that are usually equal in amount, blurring the link between inputs and outputs. Each participant signs the transaction themselves and so keeps control of their bitcoin throughout.

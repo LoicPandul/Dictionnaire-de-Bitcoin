@@ -1,0 +1,1 @@
+Acronym for *Elliptic Curve Digital Signature Algorithm*. Digital signature algorithm used with the `secp256k1` curve to sign Bitcoin transactions since 2009, a role it has shared with Schnorr signatures since Taproot.

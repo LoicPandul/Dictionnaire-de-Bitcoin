@@ -1,0 +1,1 @@
+Set of addresses that a chain analyst attributes to a single entity using heuristics. Identifying an entry point into this group then makes it possible to link all of its activity to a real-world identity.

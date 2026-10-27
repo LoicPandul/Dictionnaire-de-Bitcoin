@@ -1,0 +1,1 @@
+Optional password added to the mnemonic phrase in the key derivation of an HD wallet. Without it, the phrase alone does not give access to the funds, and each different passphrase produces a different wallet.

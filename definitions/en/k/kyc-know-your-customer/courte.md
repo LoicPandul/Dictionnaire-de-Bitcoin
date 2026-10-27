@@ -1,0 +1,1 @@
+Regulatory procedure for verifying customer identity, applied by some Bitcoin businesses under anti-money laundering rules. It exposes the user to data leaks, state surveillance, and tracing of their transactions.

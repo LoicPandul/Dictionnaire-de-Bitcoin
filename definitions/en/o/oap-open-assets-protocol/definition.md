@@ -1,0 +1,1 @@
+Protocol designed by Flavien Charlon in 2013, the first functional implementation of Colored Coins. It made it possible to store and transfer non-native assets on the Bitcoin blockchain, in the form of tokens called "Colored Coins". These are specifically marked to symbolize a promise, whether formal or informal, of exchange for real goods or services.

@@ -1,0 +1,1 @@
+Bidirectional connection between two Lightning nodes, anchored on a 2-of-2 multisig address, that allows a large number of payments to be exchanged off-chain between an opening transaction and a closing transaction.

@@ -1,0 +1,1 @@
+Lightning routing technique that lets an intermediate node rebalance its channels when an HTLC arrives, through a circular payment, to relay a payment it would otherwise have rejected for lack of liquidity.

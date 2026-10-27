@@ -1,0 +1,1 @@
+Technical name given to the directory used to store the UTXO set in Bitcoin Core. This LevelDB database also contains state metadata, such as the hash of the best known block and the data obfuscation key. By extension, the term often refers to the UTXO set itself.

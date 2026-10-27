@@ -1,0 +1,1 @@
+Authentication and payment standard, formerly LSAT, that ties a macaroon to a Lightning invoice. Once the invoice is paid, the preimage combined with the macaroon proves settlement and grants access to the protected service.

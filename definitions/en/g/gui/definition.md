@@ -1,0 +1,1 @@
+Acronym for *Graphical User Interface*. Form of user interface that lets people interact with software through interactive visual elements (buttons, icons, images, windows, and so on), and that favors the use of pointing devices (the mouse) rather than text commands, as with a CLI.

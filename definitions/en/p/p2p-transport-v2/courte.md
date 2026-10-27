@@ -1,0 +1,1 @@
+Version of the transport protocol between Bitcoin nodes that encrypts exchanges, without authentication, to make them indistinguishable to a passive observer such as an internet service provider. It complicates censorship and makes active attacks more costly.

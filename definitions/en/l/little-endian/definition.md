@@ -1,0 +1,3 @@
+Data storage format in computer systems where the least significant bytes (the "little ends") are placed first in address order. In a sequence of several bytes, the byte with the lowest weight (for example, the rightmost digits in hexadecimal) is stored first. For example, the integer `0x01020304` is stored in the order `04 03 02 01`.
+
+Bitcoin uses this order to serialize most numeric fields of a transaction or a block, such as the version or `nLockTime`, which are 4-byte integers. Identifiers (txid, block hash), on the other hand, are displayed in the reverse of the serialized byte order: this is why a txid shown by an explorer is backward compared to the one found in the raw transaction data.

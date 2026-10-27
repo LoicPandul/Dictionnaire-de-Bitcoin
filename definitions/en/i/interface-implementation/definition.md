@@ -1,0 +1,1 @@
+Set of declarations in the RGB protocol that establish the mapping between an interface and a schema. It performs the semantic translation of a contract's binary data, so that users and applications such as wallets interpret it correctly.

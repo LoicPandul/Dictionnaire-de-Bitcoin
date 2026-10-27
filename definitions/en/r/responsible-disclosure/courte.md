@@ -1,0 +1,1 @@
+Practice of reporting a vulnerability privately to its developers so that it is fixed before the details become public. Bitcoin Core sets the publication delay according to the vulnerability's severity, except for critical ones, which are handled case by case.

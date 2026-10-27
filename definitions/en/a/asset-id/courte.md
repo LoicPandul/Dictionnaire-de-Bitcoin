@@ -1,0 +1,1 @@
+Unique 32-byte identifier of an asset issued with Taproot Assets, obtained by hashing, among other elements, the outpoint of the genesis transaction. It is used to look up the asset, verify its provenance, and tell it apart from other assets.

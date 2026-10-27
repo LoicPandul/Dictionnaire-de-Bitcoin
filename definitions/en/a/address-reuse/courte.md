@@ -1,0 +1,1 @@
+Practice of receiving several payments on the same address. It links all the UTXOs involved to a single entity and so harms privacy, which is why a new address should be used for each payment received.

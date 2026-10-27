@@ -1,0 +1,1 @@
+Bitcoin mixing protocol proposed in 2014 by Tim Ruffing, Pedro Moreno-Sanchez, and Aniket Kate, which breaks the history of coins without a trusted third party. It was never widely adopted, as the Chaumian coinjoin was preferred.

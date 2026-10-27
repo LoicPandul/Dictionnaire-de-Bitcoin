@@ -1,0 +1,1 @@
+Anonymous payment hub concept compatible with Bitcoin, proposed in 2016, that routes off-chain payments through a coordinator, the Tumbler. The Tumbler can neither steal the funds nor link a payer to a beneficiary.

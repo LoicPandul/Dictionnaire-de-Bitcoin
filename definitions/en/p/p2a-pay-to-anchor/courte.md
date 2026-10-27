@@ -1,0 +1,1 @@
+Output type whose script is `OP_1 <0x4e73>` and which anyone can spend without a signature or witness data. It serves as an anchor for a transaction signed in advance: a child that spends it pays the fees afterward (CPFP).

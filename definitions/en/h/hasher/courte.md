@@ -1,0 +1,1 @@
+Miner who takes part in a pool and only hashes the block templates it supplies, searching for shares. The pool handles the rest, including block construction, transaction selection, and the broadcast of valid blocks.

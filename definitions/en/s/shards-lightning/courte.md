@@ -1,0 +1,1 @@
+Fraction of a Lightning payment split into several parts (MPP or AMP), each routed along a different route. The recipient collects them to finalize the payment, which works around the lack of liquidity of a single channel.

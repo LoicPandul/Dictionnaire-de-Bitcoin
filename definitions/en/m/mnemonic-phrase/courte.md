@@ -1,0 +1,1 @@
+Sequence of words, usually 12 or 24, that encodes the entropy of an HD wallet according to BIP-0039. With the optional passphrase, it can recreate all the wallet's keys and therefore serves as a backup.

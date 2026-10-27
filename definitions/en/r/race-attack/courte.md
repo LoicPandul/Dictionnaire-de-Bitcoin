@@ -1,0 +1,1 @@
+Form of double spend that exploits the propagation delay: the attacker broadcasts at the same time a payment to a merchant and a competing transaction to themselves. It targets only payments accepted without confirmation.

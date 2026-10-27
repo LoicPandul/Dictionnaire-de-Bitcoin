@@ -1,0 +1,1 @@
+Loss of parity between a digital asset and the underlying asset it is meant to track, such as a stablecoin that drifts from its reference currency or a representation of bitcoin on a sidechain that drifts from bitcoin.

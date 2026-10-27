@@ -1,0 +1,1 @@
+Attack that consists of sending very small amounts to many addresses, then tracking those funds when the recipients spend them with other UTXOs, in order to group the addresses of a single entity. It threatens privacy, not funds.

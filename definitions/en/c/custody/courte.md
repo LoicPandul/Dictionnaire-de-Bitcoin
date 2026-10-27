@@ -1,0 +1,1 @@
+Holding and management of the private keys that control bitcoin, either by the user themselves (self-custody) or by a third party such as an exchange, which then exposes the funds to that third party's failures.

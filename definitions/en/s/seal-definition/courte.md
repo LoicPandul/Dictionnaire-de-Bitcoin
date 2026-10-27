@@ -1,0 +1,1 @@
+Component of an Assignment in the RGB protocol that links a commitment to a UTXO held by the new owner. It names the UTXO to which the state is attached, and thereby establishes ownership of an asset or right on RGB.

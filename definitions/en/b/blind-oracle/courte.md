@@ -1,0 +1,1 @@
+Cryptographic protocol in which an oracle performs an operation, such as signing, on a message it cannot read. Blockstream's Jade hardware wallet uses it to protect the PIN without the oracle ever accessing the mnemonic phrase.

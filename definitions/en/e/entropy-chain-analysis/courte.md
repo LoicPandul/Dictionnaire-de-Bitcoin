@@ -1,0 +1,1 @@
+Chain analysis metric invented by LaurentMT, derived from Shannon entropy, that measures the number of possible interpretations of a transaction from its amounts. The higher it is, the more private the transaction.

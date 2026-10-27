@@ -1,0 +1,1 @@
+Event in which a node removes unconfirmed transactions from its mempool, when it exceeds its maximum size or when a transaction has been waiting too long. An evicted transaction can still be rebroadcast.

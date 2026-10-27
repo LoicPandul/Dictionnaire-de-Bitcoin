@@ -1,0 +1,1 @@
+Set of instructions in the RGB protocol that decode the binary data compiled in a schema or within the operations and states of a contract. It is an interpretation layer that turns raw information into a representation readable by the user or their wallet.

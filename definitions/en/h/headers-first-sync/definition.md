@@ -1,0 +1,1 @@
+Initial block download (IBD) method introduced in Bitcoin Core 0.10.0, which consists of first downloading the headers of all blocks before downloading the complete blocks themselves. This method replaced blocks-first synchronization, used by earlier versions of Bitcoin Core, which downloaded blocks sequentially from a single peer.

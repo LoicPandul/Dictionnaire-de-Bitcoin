@@ -1,0 +1,1 @@
+Instant payment mechanism of the Ark protocol that transfers a VTXO to another user, with the ASP's co-signature, without waiting for the next round. The recipient trusts the sender and the ASP until they refresh this VTXO in a round.

@@ -1,0 +1,1 @@
+Any cryptocurrency other than bitcoin (BTC). The term "altcoin" is a contraction of "alternative" and "coin" (that is, an alternative coin). Some maximalist bitcoiners also use the word "shitcoins" to refer to altcoins.

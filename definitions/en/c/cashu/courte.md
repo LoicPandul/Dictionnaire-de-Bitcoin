@@ -1,0 +1,1 @@
+Open-source Chaumian electronic money protocol built on Bitcoin and Lightning: a server issues tokens that it signs without knowing the user, which keeps it from identifying the owners of the funds and their transactions.
