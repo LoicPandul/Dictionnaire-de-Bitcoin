@@ -20,7 +20,7 @@ from typing import Dict, List, Optional, Tuple
 import markdown as md
 from latex2mathml.converter import convert as latex_to_mathml
 
-from ..config import BUILD_DIR, TEMPLATES_DIR
+from ..config import BUILD_DIR, TEXTS_DIR
 from ..core.book import Book, Section
 from .pdf_generator import STATUS_FR, load_legal
 
@@ -259,7 +259,7 @@ class EpubBuilder:
         self.docs.append(_Doc("mentions.xhtml", "Mentions légales", f'<section epub:type="copyright-page">{body}</section>'))
         for f, title, template in [("contributeurs.xhtml", "Contributeurs et remerciements", "contributors.md"),
                                    ("note.xhtml", "Note de l'auteur", "introduction.md")]:
-            path = TEMPLATES_DIR / template
+            path = TEXTS_DIR / template
             text = path.read_text(encoding="utf-8") if path.exists() else ""
             text = re.sub(r"^# ", "## ", text, flags=re.MULTILINE)
             self.docs.append(_Doc(f, title, f"<h1>{_xml(title)}</h1>\n{self.convert(text)}", nav_title=title))

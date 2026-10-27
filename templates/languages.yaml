@@ -1,0 +1,14 @@
+# Langues du dictionnaire (docs/traduction.md).
+#
+# `source` : langue d'origine, dans laquelle on crée les entrées et on génère le livre
+# aujourd'hui. `translations` : langues traduites, chacune avec son périmètre (`parts`,
+# des identifiants de templates/parts.yaml). Une entrée hors périmètre peut être traduite ;
+# elle n'est simplement pas comptée comme manquante tant qu'elle ne l'est pas.
+
+source: fr
+
+translations:
+  en:
+    name: "English"
+    parts:
+      - technique

@@ -24,6 +24,9 @@ python3 scripts/main.py build                     # toutes les éditions, tous l
 python3 scripts/main.py build --edition complete --format pdf,pdf-relie,epub
 python3 scripts/main.py index                     # INDEX.md
 python3 scripts/main.py stats                     # stats.md et badge du README
+python3 scripts/main.py sync                      # état de la traduction anglaise (voir docs/traduction.md)
+python3 scripts/main.py sync --list "en retard"   # traductions à mettre à jour
+python3 scripts/main.py sync --mark <slug>        # enregistrer qu'une traduction est à jour
 ```
 
 Sans argument, `python3 scripts/main.py` ouvre un menu.
@@ -44,10 +47,17 @@ fichiers sortent dans `build/<édition>/` (ignoré par git), avec les sources La
 - **Chronologie** (`chronologie/fr/*.yaml`) : dates ISO, au moins deux sources par événement,
   renvois existants, un fichier par année.
 
+- **Traductions** (`definitions/en/`) : métadonnées et trace de la source (`source_*`), version
+  courte, markdown, images ; une traduction dont la source a disparu est une erreur. Une ligne
+  `[INFO]` donne l'état de la synchro ; une traduction en retard n'est pas une erreur (`sync
+  --strict` pour l'exiger).
+
 ## Organisation
 
 | Dossier | Rôle |
 |---|---|
 | `core/` | modèle : définitions, taxonomie (parties et catégories), spécifications, chronologie, livre |
 | `generators/` | PDF (`pdf_generator.py`, conversion markdown dans `latex.py`), EPUB, INDEX.md, stats.md |
-| `validators/` | métadonnées, versions courtes, markdown, spécifications et chronologie |
+| `validators/` | métadonnées, versions courtes, markdown, spécifications, chronologie et traductions |
+| `core/translations.py` | empreintes, paires français / anglais, statuts de synchro |
+| `migrations/` | scripts de rangement à usage unique (`structure_bilingue.py`, voir docs/structure.md) |

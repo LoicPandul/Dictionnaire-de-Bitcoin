@@ -19,7 +19,7 @@ from typing import List, Optional
 
 import yaml
 
-from ..config import BASE_DIR, BUILD_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEMPLATES_DIR, find_tex_engine
+from ..config import BASE_DIR, BUILD_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEXTS_DIR, find_tex_engine
 from ..core.book import Book, Section
 from ..core.chronology import MOIS_FR
 from .latex import clean_content, escape, inline, markdown_to_latex
@@ -89,7 +89,7 @@ STATUS_FR = {
 
 
 def load_legal() -> dict:
-    with open(TEMPLATES_DIR / "legal.yaml", encoding="utf-8") as f:
+    with open(TEXTS_DIR / "legal.yaml", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
 
 
@@ -313,7 +313,7 @@ def _front_title(title: str) -> str:
 
 
 def _front_text(title: str, template: str) -> str:
-    path = TEMPLATES_DIR / template
+    path = TEXTS_DIR / template
     content = path.read_text(encoding="utf-8") if path.exists() else ""
     latex = markdown_to_latex(clean_content(content))
     # Intertitres des textes liminaires : Archivo Vedette, comme les mots vedettes

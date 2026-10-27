@@ -8,12 +8,23 @@ from pathlib import Path
 
 # Chemins de base
 BASE_DIR = Path(__file__).parent.parent
-DEFINITIONS_DIR = BASE_DIR / "definitions" / "fr"
-TEMPLATES_DIR = BASE_DIR / "templates"
-SPECIFICATIONS_DIR = BASE_DIR / "specifications"
+DEFINITIONS_ROOT = BASE_DIR / "definitions"   # une langue par sous-dossier (fr, en)
+DEFINITIONS_DIR = DEFINITIONS_ROOT / "fr"       # langue d'origine du livre
+TEMPLATES_DIR = BASE_DIR / "templates"         # configuration du livre commune aux langues
+LANGUAGES_FILE = TEMPLATES_DIR / "languages.yaml"
 CHRONOLOGY_DIR = BASE_DIR / "chronologie" / "fr"
-FONTS_DIR = BASE_DIR / "fonts"
 PICTOGRAMS_DIR = BASE_DIR / "assets" / "pictograms"
+
+
+def _first_existing(*paths: Path) -> Path:
+    return next((p for p in paths if p.exists()), paths[-1])
+
+
+# Rangement bilingue (docs/structure.md) : le nouvel emplacement s'il existe, sinon l'ancien.
+# Le second choix disparaîtra une fois scripts/migrations/structure_bilingue.py appliqué.
+SPECIFICATIONS_DIR = _first_existing(BASE_DIR / "specifications" / "fr", BASE_DIR / "specifications")
+TEXTS_DIR = _first_existing(TEMPLATES_DIR / "fr", TEMPLATES_DIR)  # textes du livre en français
+FONTS_DIR = _first_existing(BASE_DIR / "assets" / "fonts", BASE_DIR / "fonts")
 
 # Sorties de build (ignorées par git) et outils locaux (.tools/, ignoré par git)
 BUILD_DIR = BASE_DIR / "build"
