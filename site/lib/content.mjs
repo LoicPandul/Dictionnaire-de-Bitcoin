@@ -4,16 +4,17 @@
 // les catégories et les descriptions restent identiques.
 import fs from 'node:fs';
 import path from 'node:path';
+import YAML from 'yaml';
 
 const collator = new Intl.Collator('fr', { sensitivity: 'base', numeric: true });
 export const compareFr = (a, b) => collator.compare(a, b);
 const collatorEn = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
 
-// Traductions anglaises (definitions/en, écrites par un autre chantier) : un dossier par entrée,
-// nommé comme le dossier français (definitions/en/<lettre>/<slug>/ ou definitions/en/<slug>/),
-// avec definition.md et, s'ils existent, courte.md et metadata.yaml (title, english_term…).
-// Le dossier est retrouvé par son nom, ou par l'uuid ou le slug de son metadata.yaml.
-// Rien n'est écrit en dur : les entrées sans dossier anglais restent en français.
+// Traductions (definitions/<langue>/, docs/structure.md) : un dossier par entrée, nommé d'après
+// son slug dans la langue (definitions/en/b/block/), avec definition.md, courte.md et un
+// metadata.yaml qui porte l'uuid de l'entrée française, le titre et le slug traduits.
+// L'entrée est retrouvée par son uuid, sinon par son source_slug ou le nom du dossier.
+// Rien n'est écrit en dur : les entrées sans dossier traduit restent en français.
 export function loadTranslations(repoRoot, lang) {
   const root = path.join(repoRoot, 'definitions', lang);
   const found = new Map();
@@ -29,18 +30,30 @@ export function loadTranslations(repoRoot, lang) {
         const courtePath = path.join(d, 'courte.md');
         const tr = {
           dir: d,
+          slug: meta.slug || e.name,
           sourcePath: path.relative(repoRoot, md),
           body: fs.readFileSync(md, 'utf8').replace(/\r\n/g, '\n'),
           courte: fs.existsSync(courtePath) ? fs.readFileSync(courtePath, 'utf8').trim() : '',
           meta,
         };
         if (!tr.body.trim()) continue;
-        for (const k of [e.name, meta.slug, meta.uuid]) if (k) found.set(k, tr);
+        for (const k of [meta.uuid, meta.source_slug, e.name]) if (k && !found.has(k)) found.set(k, tr);
       } else if (depth < 2) walk(d, depth + 1);
     }
   };
   walk(root, 0);
   return found;
+}
+
+// Langues traduites : les dossiers de definitions/ autres que le français. Pour chacune, les
+// entrées françaises exclues (templates/languages.yaml, translations.<langue>.exclude) : sans
+// objet dans cette langue, elles n'y ont pas de page.
+function loadLanguages(repoRoot) {
+  const root = path.join(repoRoot, 'definitions');
+  const codes = fs.readdirSync(root, { withFileTypes: true }).filter((e) => e.isDirectory() && e.name !== 'fr').map((e) => e.name);
+  const f = path.join(repoRoot, 'templates', 'languages.yaml');
+  const conf = fs.existsSync(f) ? YAML.parse(fs.readFileSync(f, 'utf8'))?.translations || {} : {};
+  return codes.map((code) => ({ code, traductions: loadTranslations(repoRoot, code), exclues: new Set(conf[code]?.exclude || []) }));
 }
 
 export function slugify(str) {
@@ -178,8 +191,10 @@ export function loadCategoryNotes(file) {
   return notes;
 }
 
-export function loadDictionary(repoRoot, { lang = 'fr' } = {}) {
-  const traductions = lang === 'fr' ? new Map() : loadTranslations(repoRoot, lang);
+// reserves : premiers segments d'adresse déjà pris dans la langue (category, letter…).
+export function loadDictionary(repoRoot, { lang = 'fr', reserves = [] } = {}) {
+  const langues = loadLanguages(repoRoot);
+  const ici = langues.find((x) => x.code === lang);
   const compare = lang === 'fr' ? compareFr : (a, b) => collatorEn.compare(a, b);
   const sourceDir = path.join(repoRoot, 'definitions', 'fr');
   const warnings = [];
@@ -227,8 +242,19 @@ export function loadDictionary(repoRoot, { lang = 'fr' } = {}) {
         courte: courte ? stripMarkdown(courte) : null,
         lang: 'fr',
       };
-      const tr = lang === 'fr' ? null : traductions.get(meta.uuid) || traductions.get(meta.slug) || traductions.get(entry);
+      // L'adresse de l'entrée dans chaque langue : son slug traduit, le slug français tant
+      // qu'elle n'est pas traduite (la page montre alors le français), null si elle est exclue.
+      def.slugs = { fr: meta.slug };
+      for (const x of langues) {
+        const t = x.traductions.get(meta.uuid) || x.traductions.get(meta.slug) || x.traductions.get(entry);
+        def.slugs[x.code] = x.exclues.has(meta.slug) ? null : t ? t.slug : meta.slug;
+      }
+      def.mdDir = defDir;
+      if (lang !== 'fr' && !def.slugs[lang]) continue;
+      const tr = ici && (ici.traductions.get(meta.uuid) || ici.traductions.get(meta.slug) || ici.traductions.get(entry));
       if (tr) {
+        def.slug = def.slugs[lang];
+        def.mdDir = tr.dir;
         def.lang = lang;
         def.title = tr.meta.title || def.title;
         def.englishTerm = tr.meta.english_term || def.englishTerm;
@@ -246,6 +272,15 @@ export function loadDictionary(repoRoot, { lang = 'fr' } = {}) {
       if (def.uuid) byUuid.set(def.uuid, def);
     }
   }
+
+  // Deux entrées ne partagent jamais une adresse : un slug traduit qui tombe sur le slug d'une
+  // autre entrée, ou sur un segment réservé de la langue, est signalé (le build échoue).
+  const prises = new Map(reserves.map((r) => [r, null]));
+  for (const def of definitions) {
+    if (prises.has(def.slug)) warnings.push(`slug en double (${lang}) : ${def.slug} (${def.slugs.fr} et ${prises.get(def.slug)?.slugs.fr || 'adresse réservée'})`);
+    else prises.set(def.slug, def);
+  }
+  const collisions = warnings.filter((w) => w.startsWith('slug en double'));
 
   let unresolved = 0;
   for (const def of definitions) {
@@ -295,6 +330,7 @@ export function loadDictionary(repoRoot, { lang = 'fr' } = {}) {
     definitions,
     categories: [...categories.values()].sort((a, b) => compareFr(a.name, b.name)),
     translated: definitions.filter((d) => d.lang !== 'fr').length,
+    collisions,
     letters: lettersMap,
     warnings,
     unresolved,

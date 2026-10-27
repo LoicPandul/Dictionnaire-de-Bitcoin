@@ -532,9 +532,10 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
       title: t.titreDef(affiche(def.title)),
       description: def.description || t.descDef(def.title, cat),
       path: lien.def(def.slug),
-      alt: autre.def(def.slug),
+      // La même entrée dans l'autre langue, sous son slug dans cette langue (null : exclue de la traduction).
+      alt: def.slugs[autre.code] ? autre.def(def.slugs[autre.code]) : null,
       // Une page anglaise encore en français : l'adresse canonique est la page française.
-      canonique: t.code !== 'fr' && nonTraduite ? FR_PATHS.def(def.slug) : null,
+      canonique: t.code !== 'fr' && nonTraduite ? FR_PATHS.def(def.slugs.fr) : null,
       jsonLd,
       math,
       type: 'article',
@@ -769,8 +770,9 @@ export function homePage(data, { assets, jsonLd }) {
   const nSpecs = specs.reduce((s, g) => s + g.series.reduce((x, se) => x + se.entries.length, 0), 0);
   const partie = (id) => parts.find((p) => p.id === id);
   const nPartie = (id) => partie(id)?.cats.reduce((s, c) => s + c.defs.length, 0) || 0;
-  const avecSchema = definitions.filter((d) => d.assets.length);
-  const schema = avecSchema.find((d) => d.slug === 'double-depense') || avecSchema[0];
+  // Un schéma, pas un logo : les images de tiers portent un crédit.
+  const avecSchema = definitions.filter((d) => d.assets.some((x) => !x.credit));
+  const schema = avecSchema.find((d) => d.slugs.fr === 'double-depense') || avecSchema[0];
   const cartes = [
     nEvenements ? { href: lien.chronologie(), titre: t.chronologie, texte: t.chronoCarte(num(nEvenements), premiere, derniere), grand: true,
       frise: (() => { const m = Math.max(...chrono.map((a) => a.events.length)); return `<span class="carte-frise" aria-hidden="true">${chrono.map((a) => `<span style="--h:${(a.events.length / m).toFixed(3)}"></span>`).join('')}</span>`; })() } : null,
@@ -791,7 +793,7 @@ export function homePage(data, { assets, jsonLd }) {
 
   const f = featured;
   // Le vrai dossier d'une définition, tel qu'il est sur GitHub.
-  const exemple = definitions.find((d) => d.slug === 'utxo') || definitions[0];
+  const exemple = definitions.find((d) => d.slugs.fr === 'utxo') || definitions[0];
   const source = {
     slug: exemple.slug,
     dir: path.dirname(exemple.sourcePath) + '/',

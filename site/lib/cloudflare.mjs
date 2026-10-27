@@ -57,8 +57,10 @@ export function headers({ inlineHash }) {
 
 // L'ancien préfixe de pandul.fr mène aux bonnes adresses ; les catégories renommées en 2027
 // (anciennes → nouvelles, calculées par le build) mènent à leur remplaçante.
-export function redirects({ anciennes = [] } = {}) {
+// traductions : [slug français, slug anglais] des entrées traduites ; /en/<slug français>/ mène à la page anglaise.
+export function redirects({ anciennes = [], traductions = [] } = {}) {
   return [
+    ...(traductions.length ? ['# Une entrée traduite, demandée sous /en/ avec son slug français', ...traductions.map(([fr, en]) => `/en/${fr}/ /en/${en}/ 301`), ''] : []),
     ...(anciennes.length ? ['# Catégories renommées par l’édition 2027', ...anciennes.flatMap(([a, b]) => [`/categorie/${a}/ /categorie/${b}/ 301`, `/dictionnaire/categorie/${a}/ /categorie/${b}/ 301`]), ''] : []),
     '# Ancien préfixe de pandul.fr, si quelqu’un recopie une adresse à la main',
     '/dictionnaire/ / 301',

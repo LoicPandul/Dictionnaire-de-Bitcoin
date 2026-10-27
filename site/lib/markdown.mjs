@@ -62,18 +62,26 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
   marked.use({
     renderer: {
       image({ href, title, text }) {
-        const local = href.replace(/^\.\//, '');
-        const size = current ? pngSize(path.join(current.sourceDir, local)) : null;
+        // Le fichier est cherché depuis le dossier du texte rendu : ./assets/… en français, et pour
+        // une traduction ../../../fr/<lettre>/<slug>/assets/… (le schéma de l'entrée française) ou
+        // ./assets/… (un schéma redessiné dans sa langue). Il est servi depuis /<slug>/assets/
+        // (/en/<slug>/assets/ pour une autre langue), où le build copie les images.
+        const fichier = current && !/^[a-z]+:/.test(href) ? path.resolve(current.mdDir || current.sourceDir, href) : null;
+        const rel = fichier && path.relative(path.join(current.sourceDir, '..', '..', '..'), fichier).split(path.sep);
+        const dansDepot = rel && rel.length > 3 && rel[0] !== '..';
+        const local = dansDepot ? rel.slice(3).join('/') : href.replace(/^\.\//, '');
+        const dossier = dansDepot ? (rel[0] === 'fr' ? rel[2] : `${rel[0]}/${rel[2]}`) : current?.slugs?.fr || current?.slug;
+        const size = fichier ? pngSize(fichier) : null;
         const dims = size ? ` width="${size.width}" height="${size.height}"` : '';
         // Crédit d'une image de tiers (metadata.yaml, assets[].credit), toujours affiché sous l'image.
-        const asset = current?.assets?.find((a) => a.filename === local.replace(/^assets\//, ''));
+        const asset = dossier === current?.slugs?.fr ? current?.assets?.find((a) => a.filename === local.replace(/^assets\//, '')) : null;
         const credit = asset?.credit ? `<span class="figure-credit">${escapeHtml(creditLabel)} <span lang="fr">${escapeHtml(asset.credit)}</span></span>` : '';
         // Une image créditée est un logo ou une image de tiers, pas un schéma : elle suit la largeur de l'écran.
         const ouvrir = credit ? agrandirImage : agrandir;
         const caption = title || credit ? `<figcaption>${title ? `<span class="figure-legende">${escapeHtml(title)}</span>` : ''}${credit}</figcaption>` : '';
         const svg = local.replace(/\.png$/, '.svg');
-        const vectoriel = current && svg !== local && fs.existsSync(path.join(current.sourceDir, svg));
-        const src = `/${current?.slug}/${vectoriel ? svg : local}`;
+        const vectoriel = fichier && svg !== local && fs.existsSync(fichier.replace(/\.png$/, '.svg'));
+        const src = `/${dossier}/${vectoriel ? svg : local}`;
         return `<figure class="figure${credit ? ' figure--tiers' : ''}"><div class="figure-cadre"${credit ? '' : ' tabindex="0"'}><a href="${escapeHtml(src)}" aria-label="${escapeHtml(ouvrir)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a></div>${caption}<a class="figure-ouvrir" href="${escapeHtml(src)}">${escapeHtml(ouvrir)}</a></figure>`;
       },
       link({ href, title, tokens }) {

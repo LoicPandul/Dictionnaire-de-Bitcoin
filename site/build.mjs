@@ -124,14 +124,21 @@ const nIndex = (L) => (L.code === 'fr' ? '' : L.base);
 for (const code of Object.keys(LANGUES)) {
   const L = setLangue(code);
   const P = chemins(L);
-  const data = loadDictionary(repoRoot, { lang: code });
+  // Adresses déjà prises au premier niveau : les pages de l'interface, et à la racine les dossiers statiques et les langues.
+  const reserves = [...Object.values(L.seg), ...(code === 'fr' ? ['css', 'js', 'img', 'fonts', 'katex', ...Object.keys(LANGUES).filter((c) => c !== 'fr')] : [])];
+  const data = loadDictionary(repoRoot, { lang: code, reserves });
+  if (data.collisions.length) {
+    for (const c of data.collisions) console.error(`ERREUR ${c}`);
+    process.exit(1);
+  }
   const { definitions, categories, letters } = data;
   if (code === 'fr') {
     for (const w of data.warnings) console.warn(`WARN ${w}`);
     for (const hit of data.sanitizationHits) console.log(`[assainissement] ${hit.slug} : ${hit.pattern} « ${hit.match} »`);
   }
   const total = definitions.length;
-  const bySlug = new Map(definitions.map((d) => [d.slug, d]));
+  // Par slug français : la chronologie et les spécifications citent les entrées sous ce nom.
+  const bySlug = new Map(definitions.map((d) => [d.slugs.fr, d]));
   // Parties : les catégories présentes, dans l'ordre du livre ; une catégorie absente de parts.yaml
   // rejoint la partie technique (ou une partie « Autres » s'il n'y en a pas).
   const catByName = new Map(categories.map((c) => [c.name, c]));
@@ -162,8 +169,16 @@ for (const code of Object.keys(LANGUES)) {
   for (const def of definitions) {
     const { html, math } = render(def);
     if (math) mathPages++;
-    write(`${P.def(def.slug).slice(1)}index.html`, definitionPage(def, { html, math, assets, jsonLd: definitionJsonLd(def), total, letters, liens: { chrono: chronoDe.get(def.slug), spec: specDe.get(def.slug) } }));
-    if (code !== 'fr') continue;
+    write(`${P.def(def.slug).slice(1)}index.html`, definitionPage(def, { html, math, assets, jsonLd: definitionJsonLd(def), total, letters, liens: { chrono: chronoDe.get(def.slugs.fr), spec: specDe.get(def.slugs.fr) } }));
+    if (code !== 'fr') {
+      // Un schéma redessiné dans la langue de la traduction : dans son propre dossier assets/.
+      const propres = path.join(def.mdDir, 'assets');
+      if (def.mdDir !== def.sourceDir && fs.existsSync(propres)) {
+        fs.mkdirSync(path.join(out, code, def.slug, 'assets'), { recursive: true });
+        for (const f of fs.readdirSync(propres)) if (/\.(png|svg|jpe?g|webp)$/.test(f)) { fs.copyFileSync(path.join(propres, f), path.join(out, code, def.slug, 'assets', f)); images++; }
+      }
+      continue;
+    }
     // Les images, une seule fois (sous l'adresse française), avec leur SVG quand il existe.
     const fichiers = new Set(def.assets.map((a) => a.filename));
     for (const f of [...fichiers]) { const svg = f.replace(/\.png$/, '.svg'); if (svg !== f && fs.existsSync(path.join(def.sourceDir, 'assets', svg))) fichiers.add(svg); }
@@ -249,12 +264,12 @@ write('sitemap.xml', sitemap(paths));
 write('robots.txt', robots());
 write('llms.txt', `# ${site.title}\n\n> ${site.subtitle}. ${total} définitions en français, par ${site.author}, sous licence ${site.license}. English version: ${url}/en/ (${bilan.en?.traduites || 0} definitions translated so far).\n\n## Catégories\n\n${categories.map((c) => `- [${categoryLabel(c.name)}](${url}/categorie/${c.slug}/) : ${c.defs.length} définitions`).join('\n')}\n\n## Annexes\n\n- [Chronologie](${url}/chronologie/)\n- [Spécifications](${url}/specifications/)\n\n## Livre\n\n- [PDF complet](${url}${site.pdf})\n- [Sources sur GitHub](${site.github})\n`);
 write('_headers', headers({ inlineHash }));
-// Catégories renommées : edition-2027/reclassement.tsv (slug, ancienne catégorie, nouvelle) quand il existe ;
+// Catégories renommées : docs/edition-2027/reclassement.tsv (slug, ancienne catégorie, nouvelle) quand il existe ;
 // une ancienne catégorie qui n'existe plus mène à la nouvelle catégorie de la plupart de ses entrées.
 const anciennes = [];
 {
-  const f = path.join(repoRoot, 'edition-2027', 'reclassement.tsv');
-  if (fs.existsSync(f)) {
+  const f = [path.join(repoRoot, 'docs', 'edition-2027', 'reclassement.tsv'), path.join(repoRoot, 'edition-2027', 'reclassement.tsv')].find((x) => fs.existsSync(x));
+  if (f) {
     const actuelles = new Set(categories.map((c) => c.slug));
     const votes = new Map();
     for (const ligne of fs.readFileSync(f, 'utf8').split('\n').slice(1)) {
@@ -270,7 +285,12 @@ const anciennes = [];
     for (const [a, v] of votes) anciennes.push([a, [...v].sort((x, y) => y[1] - x[1])[0][0]]);
   }
 }
-write('_redirects', redirects({ anciennes }));
+// Slugs anglais : /en/<slug français>/ redirige vers la page traduite, sauf si une autre page anglaise porte ce slug.
+const traductions = Object.entries(bilan).filter(([c]) => c !== 'fr').flatMap(([c, b]) => {
+  const pris = new Set(b.definitions.map((d) => d.slug));
+  return b.definitions.filter((d) => d.lang === c && d.slug !== d.slugs.fr && !pris.has(d.slugs.fr)).map((d) => [d.slugs.fr, d.slug]);
+});
+write('_redirects', redirects({ anciennes, traductions }));
 
 const defPages = definitions.filter((d) => fs.existsSync(path.join(out, d.slug, 'index.html'))).length;
 let files = 0;

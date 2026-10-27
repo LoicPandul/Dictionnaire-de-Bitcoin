@@ -13,7 +13,7 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-font = instancer.instantiateVariableFont(TTFont(os.path.join(HERE, '..', '..', 'fonts', 'Archivo-Variable.ttf')), {'wdth': 75, 'wght': 800})
+font = instancer.instantiateVariableFont(TTFont(os.path.join(HERE, '..', '..', 'assets', 'fonts', 'Archivo-Variable.ttf')), {'wdth': 75, 'wght': 800})
 cmap, upm = font.getBestCmap(), font['head'].unitsPerEm
 chars = set('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz–  ')
 for meta in glob.glob(os.path.join(HERE, '..', '..', 'definitions', 'fr', '*', '*', 'metadata.yaml')):

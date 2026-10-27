@@ -586,6 +586,7 @@ export function setLangue(code) {
 // ---------------------------------------------------------------- Chemins
 // Un chemin de l'autre langue, pour le bouton FR / EN et les liens hreflang.
 export const chemins = (L) => ({
+  code: L.code,
   accueil: () => `${L.base}/`,
   def: (slug) => `${L.base}/${slug}/`,
   categorie: (cat) => `${L.base}/${L.seg.categorie}/${catSlug(cat, L)}/`,

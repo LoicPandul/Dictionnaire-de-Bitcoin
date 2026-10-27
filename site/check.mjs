@@ -1,5 +1,5 @@
 // Vérifie le site construit (site/dist) :
-//   - une page par définition de definitions/fr, en français et sous /en/ ;
+//   - une page par définition de definitions/fr, en français et sous /en/ (slug anglais si traduite) ;
 //   - aucun lien interne cassé (fichier ou ancre) dans toutes les pages ;
 //   - le contrat d'URL attendu par les redirections de pandul.fr :
 //       /<slug>/, /categorie/<slug>/, /lettre/<lettre>/ ;
@@ -12,6 +12,7 @@ import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { url } from './config.mjs';
+import { loadDictionary } from './lib/content.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const dist = path.join(here, 'dist');
@@ -116,8 +117,38 @@ const sample = fs.readFileSync(path.join(dist, samples.definitions[0], 'index.ht
 
 // 5. Anglais, chronologie, spécifications
 console.log('Édition 2027 et anglais');
-const enBuilt = sourceSlugs.filter((s) => fs.existsSync(path.join(dist, 'en', s, 'index.html')));
-(enBuilt.length === sourceSlugs.length ? ok : ko)(`${enBuilt.length} pages sous /en/ pour ${sourceSlugs.length} définitions`);
+// Les pages anglaises attendues viennent du même chargeur que le build : slug anglais pour une
+// entrée traduite, slug français pour une entrée encore en français, aucune page pour une exclue.
+const en = loadDictionary(path.join(here, '..'), { lang: 'en' }).definitions;
+const page = (l, slug) => path.join(dist, l, slug, 'index.html');
+const enManquantes = en.filter((d) => !fs.existsSync(page('en', d.slug)));
+(enManquantes.length === 0 ? ok : ko)(`${en.length - enManquantes.length} pages sous /en/ pour ${en.length} définitions${enManquantes.length ? ` ; manquantes : ${enManquantes.slice(0, 5).map((d) => d.slug).join(', ')}` : ''}`);
+const traduites = en.filter((d) => d.lang === 'en');
+const lire = (f) => (fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : '');
+const malTraduites = traduites.filter((d) => {
+  const html = lire(page('en', d.slug));
+  return !/<html lang="en"/.test(html) || /class="avis-langue"/.test(html) || /<div class="prose" lang=/.test(html) || !html.includes(`<link rel="canonical" href="${url}/en/${d.slug}/">`) || !html.includes(`hreflang="fr" href="${url}/${d.slugs.fr}/"`);
+});
+(malTraduites.length === 0 ? ok : ko)(`${traduites.length} définitions traduites : texte anglais, sans mention de repli, canonique propre, lien vers la page française${malTraduites.length ? ` ; en défaut : ${malTraduites.slice(0, 5).map((d) => d.slug).join(', ')}` : ''}`);
+const replis = en.filter((d) => d.lang !== 'en');
+const replisMuets = replis.filter((d) => !/class="avis-langue"/.test(lire(page('en', d.slug))));
+(replisMuets.length === 0 ? ok : ko)(`${replis.length} définitions encore en français sous /en/, chacune avec sa mention${replisMuets.length ? ` ; sans mention : ${replisMuets.slice(0, 5).map((d) => d.slug).join(', ')}` : ''}`);
+const absentesSitemapEn = traduites.filter((d) => !sitemap.includes(`<loc>${url}/en/${d.slug}/</loc>`));
+(absentesSitemapEn.length === 0 ? ok : ko)(`sitemap : les ${traduites.length} définitions anglaises y sont`);
+// Schémas : chaque image a un texte alternatif, et une traduction montre autant d'images que le français.
+const figures = (html) => [...html.matchAll(/<figure class="figure[^"]*"><div class="figure-cadre"[^>]*><a [^>]*><img src="([^"]+)" alt="([^"]*)"/g)].map((m) => ({ src: m[1], alt: m[2] }));
+let nImg = 0;
+const sansAlt = [];
+const moinsDImages = [];
+for (const d of en) {
+  const fr = figures(lire(page('', d.slugs.fr)));
+  const enF = figures(lire(page('en', d.slug)));
+  nImg += fr.length + enF.length;
+  for (const [l, f] of [['', fr], ['en', enF]]) if (f.some((x) => !x.alt.trim())) sansAlt.push(`${l || 'fr'}/${d.slug}`);
+  if (d.lang === 'en' && enF.length < fr.length) moinsDImages.push(d.slug);
+}
+(sansAlt.length === 0 ? ok : ko)(`${nImg} images dans les définitions, toutes avec un texte alternatif${sansAlt.length ? ` ; sans : ${sansAlt.slice(0, 5).join(', ')}` : ''}`);
+(moinsDImages.length === 0 ? ok : ko)(`chaque traduction montre les schémas de la page française${moinsDImages.length ? ` ; en manque : ${moinsDImages.slice(0, 8).join(', ')}` : ''}`);
 for (const p of ['/en/', '/chronologie/', '/en/timeline/', '/specifications/', '/en/specifications/', '/partie/personnes/', '/en/part/people/', '/en/404.html']) {
   const f = p.endsWith('.html') ? path.join(dist, p) : path.join(dist, p, 'index.html');
   (fs.existsSync(f) ? ok : ko)(`${p}`);
@@ -139,8 +170,9 @@ for (const letter of fs.readdirSync(sourceDir).filter((d) => /^[a-z]$/.test(d)))
 }
 // Le site compose les apostrophes typographiques (’) : on compare apostrophes confondues.
 const apos = (x) => x.replace(/['’]/g, '’');
-const sansCredit = credits.filter(([slug, c]) => ['', 'en'].some((l) => {
-  const html = apos(fs.readFileSync(path.join(dist, l, slug, 'index.html'), 'utf8'));
+const slugEn = new Map(en.map((d) => [d.slugs.fr, d.slug]));
+const sansCredit = credits.filter(([slug, c]) => [['', slug], ['en', slugEn.get(slug)]].filter(([, s]) => s).some(([l, s]) => {
+  const html = apos(lire(page(l, s)));
   return !html.includes(apos(`class="figure-credit">`)) || !html.includes(apos(`<span lang="fr">${esc(c)}</span>`));
 }));
 (sansCredit.length === 0 ? ok : ko)(`${credits.length} image(s) créditée(s), crédit affiché sous l'image en français et en anglais${sansCredit.length ? ` ; manquant : ${sansCredit.map(([s]) => s).join(', ')}` : ''}`);

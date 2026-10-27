@@ -1,5 +1,5 @@
 // Contenus de l'édition 2027 hors définitions : parties du livre (templates/parts.yaml),
-// chronologie (chronologie/<langue>/*.yaml) et spécifications (specifications/*.yaml).
+// chronologie (chronologie/<langue>/*.yaml) et spécifications (specifications/<langue>/*.yaml).
 //
 // Tout est lu dans les fichiers présents : une année, une série ou une catégorie ajoutée
 // ou retirée apparaît ou disparaît du site sans toucher au code.
@@ -51,13 +51,18 @@ export function loadChronology(repoRoot, lang = 'fr') {
 
 // Spécifications : une série par fichier. Les séries sont regroupées comme dans le livre
 // (templates/editions.yaml : BOLT et bLIP ensemble) ; une série inconnue forme son propre groupe.
+// Les séries viennent de specifications/fr/ (docs/structure.md) ; specifications/en/, s'il existe,
+// donne le résumé anglais de chaque document (même fichier, même id), sinon le champ summary_en.
 export function loadSpecifications(repoRoot) {
-  const dir = path.join(repoRoot, 'specifications');
+  const racine = path.join(repoRoot, 'specifications');
+  const dir = fs.existsSync(path.join(racine, 'fr')) ? path.join(racine, 'fr') : racine;
   if (!fs.existsSync(dir)) return [];
   const series = new Map();
   for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.yaml')).sort()) {
     const data = lire(path.join(dir, f)) || {};
     const id = f.replace(/\.yaml$/, '');
+    const fEn = path.join(racine, 'en', f);
+    const en = new Map(fs.existsSync(fEn) ? (lire(fEn)?.entries || []).filter((e) => e.summary).map((e) => [e.id, e.summary]) : []);
     const entries = (data.entries || []).map((e) => ({
       serie: id,
       id: e.id,
@@ -72,7 +77,7 @@ export function loadSpecifications(repoRoot) {
       supersededBy: e.superseded_by || [],
       kinds: e.kinds || [],
       summary: e.summary || '',
-      summaryEn: e.summary_en || null,
+      summaryEn: en.get(e.id) || e.summary_en || null,
       definition: e.definition || null,
       related: e.related || [],
       url: e.url || null,

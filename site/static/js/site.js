@@ -359,7 +359,7 @@
         i, title, slug, alt, desc, lang,
         cat: j.categories[cat] || ['', ''],
         poids: tranche.renvois?.[i] || 0,
-        pt: plat(title), ct: compact(title), pa: plat(alt), pd: plat(desc),
+        pt: plat(title), ct: compact(title), pa: plat(alt), noms: alt.split(' · ').map((x) => plat(x).replace(/ +/g, ' ').trim()).filter(Boolean), pd: plat(desc),
         // La première partie d'un titre composé (« DLP - DISCRETE LOGARITHM PROBLEM ») compte comme titre exact ;
         // les suivantes sont souvent des qualificatifs (« FEE RATE - LIGHTNING »).
         parts: title.includes(' - ') ? title.split(' - ').map((x) => plat(x).trim()) : [],
@@ -416,11 +416,12 @@
       let at = -1;
       if (titre === pq || t.parts[0] === pq) { rang = 10; at = t.pt.indexOf(pq); }
       else if (t.parts.includes(pq)) { rang = 9.5; at = t.pt.indexOf(pq); }
-      else if (alt && alt === pq) rang = 9;
+      // Un autre nom exact : le terme français d'une page anglaise, l'anglais d'une page française.
+      else if (t.noms.includes(pq)) rang = 9;
       else if (` ${titre} `.includes(` ${pq} `)) { rang = 8.5; at = t.pt.indexOf(pq); }
       else if (t.pt.startsWith(pq)) { rang = 8; at = 0; }
       else if (cq.length > 1 && t.ct.startsWith(cq)) rang = 7;
-      else if (alt && alt.startsWith(pq)) rang = 6;
+      else if (t.noms.some((n) => n.startsWith(pq))) rang = 6;
       else if ((at = t.pt.indexOf(` ${pq}`)) > -1) { rang = 5; at += 1; }
       else if (alt && alt.includes(` ${pq}`)) rang = 4;
       else if (mots.length > 1 && mots.every((m) => t.pt.includes(` ${m}`) || t.pt.startsWith(m))) rang = 4;
