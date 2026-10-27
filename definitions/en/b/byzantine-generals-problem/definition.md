@@ -2,6 +2,8 @@ Problem first formulated by Leslie Lamport, Robert Shostak, and Marshall Pease i
 
 In this metaphor, a group of Byzantine generals and their respective armies are camped around a city that they want to attack or besiege. The generals are geographically separated from one another and must communicate by messenger to coordinate their strategy. Whether they attack or retreat does not matter, as long as all the generals reach a consensus.
 
+![A traitorous general sends "Attack" to one general and "Retreat" to another: separated by the city and reduced to messengers, the loyal generals fail to reach a common decision.](../../../fr/p/prob-des-generaux-byzantins/assets/image-1.png)
+
 The requirements are therefore the following:
 * Each general must make a decision: attack or retreat (yes or no);
 * Once the decision is made, it cannot be changed;

@@ -23,4 +23,6 @@ BIPs go through four statuses during their lifecycle (simplified by BIP-0003 fro
 * `Deployed`: the BIP is actively used in the ecosystem. This status is reached upon presentation of evidence of actual use (production deployment by an established project, soft fork activation criteria met, etc.). Once deployed, the BIP is considered final and should no longer undergo substantial changes;
 * `Closed`: the BIP is no longer actively developed or used and is of historical interest only. This status replaces the former statuses "Deferred", "Rejected", "Withdrawn", "Replaced", and "Obsolete".
 
+![Lifecycle of a BIP according to BIP-0003: the status moves from Draft to Complete and then to Deployed, and each of these stages can lead to Closed.](../../../fr/b/bip/assets/image-1.png)
+
 After reaching the "Complete" status, any change must be documented in a "Changelog" section and versioned according to semantic versioning.

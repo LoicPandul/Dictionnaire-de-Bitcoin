@@ -3,3 +3,5 @@ Feature of Bitcoin Core, the most widely used Bitcoin client, that lets a newly 
 * Then, once it is functional, the node verifies the full block history in the background, updating a new UTXO set that it has verified itself. If the latter does not match the UTXO set initially loaded, the node gives an error message.
 
 Assume UTXO therefore speeds up the setup of a new Bitcoin node by deferring the verification of transactions and of the UTXO set, thanks to a snapshot whose hash is hardcoded in Core.
+
+![With Assume UTXO, the node starts from a snapshot of the UTXO set at block 965,000, whose hash is hardcoded in Bitcoin Core: it syncs to the chain tip and becomes usable while it re-validates the chain from genesis in the background.](../../../fr/a/assume-utxo/assets/image-1.png)

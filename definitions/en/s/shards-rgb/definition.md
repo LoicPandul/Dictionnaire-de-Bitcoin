@@ -1,1 +1,3 @@
 In the RGB protocol, a shard is a distinct branch within the directed acyclic graph (DAG) that traces the history of a contract's state transitions. It is a coherent subset of the set of transitions, corresponding for example to the sequence of operations needed to attest to the validity of a particular asset since the genesis. This mechanism isolates specific segments of the overall history, to make client-side validation easier.
+
+![The history of an RGB contract starts at the Genesis and branches into state transitions; Alice's shard is the only branch that leads to her 500 tokens.](../../../fr/s/shards-rgb/assets/image-1.png)

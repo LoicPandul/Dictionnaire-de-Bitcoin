@@ -2,4 +2,6 @@ Overhaul of mempool management, shipped in Bitcoin Core 31.0. The cluster mempoo
 
 This overhaul fixes an inconsistency in the old mempool. Transaction selection for mining used the highest ancestor fee rate, while eviction used the lowest descendant fee rate. Since these two heuristics were not symmetric, the best transaction in the mempool could end up evicted first. With the cluster mempool, block building and eviction become exactly inverse operations: chunks are included from most to least profitable, and evicted in the reverse order.
 
+![A cluster of related transactions, linearized into chunks sorted by decreasing fee rate: block building takes the most profitable chunk, and eviction removes the least profitable one.](../../../fr/c/cluster-mempool/assets/image-1.png)
+
 This approach is viable thanks to the limit on cluster size, which replaces the old ancestor and descendant limits (by default in Bitcoin Core 31.0, 64 transactions and 101 kB of virtual size per cluster). Since optimal chunks never cross cluster boundaries, adding a transaction requires recomputing only its own cluster. The fee rate of each chunk then serves as a unified score for all mempool operations: block building, eviction, RBF evaluation, transaction relay, and fee estimation.

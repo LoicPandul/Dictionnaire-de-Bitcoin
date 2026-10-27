@@ -1,1 +1,3 @@
 Smallest subdivision of bitcoin that can be recorded on the blockchain, often abbreviated "sat". It is named in honor of Bitcoin's inventor, Satoshi Nakamoto. A single bitcoin is divided into 100,000,000 sats, meaning that one satoshi equals 0.00000001 bitcoin. Because of its small unit value, the sat is often used to set prices, especially for small transactions. It is often preferred to BTC on the Lightning Network.
+
+![One bitcoin divides into 100,000,000 satoshis: each division by ten moves down one decimal place, down to the sat, 0.00000001 BTC.](../../../fr/s/sat-satoshi/assets/image-1.png)

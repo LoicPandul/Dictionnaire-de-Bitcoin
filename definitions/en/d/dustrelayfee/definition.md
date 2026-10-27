@@ -6,6 +6,8 @@ limit = (input size + output size) * fee rate
 
 Because the fee rate required for a transaction to be included in a Bitcoin block varies constantly, the `DustRelayFee` parameter lets each node define the fee rate used in this calculation. By default, on Bitcoin Core, this value is set to 3,000 sats/kvB. For example, to calculate the dust limit for a P2PKH input and output, which measure 148 and 34 bytes respectively, the calculation would be:
 
+![Computation of the dust threshold of a P2PKH output on Bitcoin Core: 182 bytes (a 148-byte input and a 34-byte output) multiplied by the default DustRelayFee of 3 sat/vB give 546 sats.](../../../fr/d/dustrelayfee/assets/image-1.png)
+
 ```text
 limit (sats) = (148 + 34) * 3000 / 1000 = 546 sats
 ```

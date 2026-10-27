@@ -4,6 +4,8 @@ MPPs are Lightning payment techniques that split a transaction into several smal
 
 In AMPs, a unique partial secret is used for each shard. Once all the shards are received, they let the recipient reconstruct the original general secret and claim the full payment. This method makes partial settlement of the payment impossible, because holding all the partial secrets is necessary to unlock the complete payment. This guarantees that the payment either fully succeeds or fully fails (that is, it is atomic). AMPs also improve privacy, because there are no longer visible links between the different routes.
 
+![An AMP payment split into three shards: each carries its own partial secret, and the recipient reconstructs the full secret, which unlocks the HTLCs, only after receiving all three.](../../../fr/a/atomic-multi-path-payments/assets/image-1.png)
+
 An advantage of AMPs is that they work even if only the receiver and the sender have implemented this method. Intermediate nodes handle these payments like regular transactions using HTLCs, without being aware that they are handling shards of a larger payment.
 
 *This method is also sometimes called "Atomic Multi-Part Payment".*

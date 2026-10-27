@@ -1,3 +1,5 @@
 Type of double spend that targets zero-confirmation transactions. The attacker, who must be a miner, pre-mines a block that contains a transaction from the attacker's address A to another address B that the attacker also controls. Instead of broadcasting this block, the attacker makes a payment from that same address A to a merchant's address C. The merchant sees the transaction in the mempool, detects no conflict, and hands over the goods. The attacker then broadcasts the pre-mined block: the transaction to B is confirmed, while the payment to C is invalidated.
 
+![In a Finney attack, the miner keeps secret a pre-mined block containing A → B, pays the merchant with A → C, then publishes the block, which cancels the payment.](../../../fr/a/attaque-de-finney/assets/image-1.png)
+
 Hal Finney described this attack in 2011 on the BitcoinTalk forum. It differs from the 51% attack because it does not require a majority of the computing power: the attacker only needs to find one block, even with a modest hashrate. In return, its window of execution is narrow, and it only works against merchants who accept payments without waiting for a confirmation.

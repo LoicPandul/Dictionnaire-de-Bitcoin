@@ -2,4 +2,6 @@ Decentralized mining pool protocol for Bitcoin, designed to eliminate the need f
 
 When one of the share chain's blocks also meets the difficulty required by the Bitcoin network, it is broadcast on the Bitcoin network. The block reward is then distributed among the miners who contributed the most recent shares in the share chain. This mechanism guarantees that the distribution of rewards is proportional to each miner's contribution, without a central operator controlling the funds or the selection of transactions.
 
+![P2Pool's share chain produces one share every 30 seconds alongside the Bitcoin chain, and only a share that meets Bitcoin's difficulty becomes a block of the main chain.](../../../fr/p/p2pool/assets/image-1.png)
+
 P2Pool was created in 2011 by Forrest Voight. It saw significant adoption in the early years of Bitcoin, but its use declined in the face of the growth of centralized pools, which offered simpler interfaces and lower variance for individual miners. The last block mined by P2Pool dates from 2019.

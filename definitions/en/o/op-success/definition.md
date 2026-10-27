@@ -2,4 +2,6 @@ The `OP_SUCCESS` opcodes are a series of opcodes, disabled in the past or never 
 
 Thus, when a new opcode is added on top of an `OP_SUCCESS`, it necessarily amounts to adding a rule that is more restrictive than the previous one. Upgraded nodes can then enforce this rule, and nodes that have not upgraded will not reject the associated transactions and the blocks that include them, because the `OP_SUCCESS` makes that part of the script valid. There is therefore no hard fork.
 
+![The same Tapscript containing OP_SUCCESS187 is validated unconditionally by an old node, whereas an upgraded node applies the rule of the new opcode to it.](../../../fr/o/op-success/assets/image-1.png)
+
 By comparison, `OP_NOP` (No Operation) opcodes also serve as placeholders in the script, but they have no effect on its execution. When an `OP_NOP` is encountered, the script simply continues without changing the state of the stack or the flow of the script. The main difference is therefore their impact on execution: `OP_SUCCESS` makes the entire script succeed immediately, whereas `OP_NOP` is neutral and affects neither the stack nor the script flow. These opcodes are named `OP_SUCCESSN`, where `N` is a number that distinguishes the `OP_SUCCESS` opcodes from one another.

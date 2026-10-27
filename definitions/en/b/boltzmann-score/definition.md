@@ -2,4 +2,6 @@ Indicator used to assess the privacy level of a Bitcoin transaction. The Boltzma
 
 The principle is inspired by the statistical physics of Ludwig Boltzmann: the more possible combinations (microstates) a transaction admits, the higher its entropy, and the harder it is to analyze. The score is generally expressed in bits of entropy. A transaction with a score of 0 bits has only one possible interpretation (each input is clearly linked to an output). Conversely, a well-built coinjoin can reach a high score, because the multiple inputs and outputs of identical amounts generate a very large number of possible combinations.
 
+![A transaction with two inputs of 100,000 sats and two outputs of 99,000 sats admits three possible interpretations, for a Boltzmann score of log₂ 3 ≈ 1.58 bits.](../../../fr/s/score-de-boltzmann/assets/image-1.png)
+
 This score lets users objectively assess the privacy effectiveness of a coinjoin, or of any transaction.

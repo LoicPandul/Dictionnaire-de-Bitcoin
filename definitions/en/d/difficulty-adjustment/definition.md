@@ -10,3 +10,5 @@ Where:
 * $1\,209\,600$: the target time in seconds for 2,016 blocks at 10-minute intervals ($2016 \times 600$).
 
 Because of an off-by-one bug introduced by Satoshi Nakamoto, $T$ measures the duration of 2,015 block intervals, not 2,016. The calculation compares the timestamp of the first block of the period (block $n$) with that of the last (block $n + 2015$), which covers only 2,015 intervals. A correct calculation would have compared the last block of the previous period (block $n - 1$) with the last block of the current period (block $n + 2015$), that is, 2,016 intervals. This bug introduces a bias of about 0.05% toward a difficulty slightly higher than it should be. It is mainly what makes the time warp attack feasible, because retarget periods do not overlap.
+
+![The difficulty calculation measures the time between blocks n and n + 2015, which is 2,015 intervals, and leaves out the interval that links the period to block n − 1.](../../../fr/a/ajustement-de-la-difficulte/assets/image-2.png)

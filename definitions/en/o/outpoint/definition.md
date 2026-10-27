@@ -4,6 +4,8 @@ Unique reference to a transaction output. It consists of two elements:
 
 The combination of these two elements identifies a transaction output precisely. For example, if a transaction has a `txid` of `abc...123` and the output index is `0`, the outpoint is written:
 
+![The outpoint a1b2c3d4…f9e0:1 placed in the input of a new transaction designates, by its txid, the previous transaction, then, by its vout index, output 1 of that transaction.](../../../fr/o/outpoint/assets/image-1.png)
+
 ```text
 abc...123:0
 ```

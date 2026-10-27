@@ -3,3 +3,5 @@ Parameter used in Bitcoin wallet software to set the maximum number of consecuti
 A single `xpub` can theoretically derive more than 4 billion receiving addresses (internal and external addresses). Wallet software cannot derive all of them and check whether they were used without an enormous operational cost. It therefore proceeds in index order, because that is normally the order in which all wallet software generates addresses. The software records each used address before moving on to the next one, and it stops searching when it meets a given number of consecutive empty addresses. That number is the gap limit.
 
 If, for example, the gap limit is set to `20` and the address `m/84'/0'/0'/0/15/` is empty, the wallet derives addresses up to `m/84'/0'/0'/0/34/`. If that range of addresses stays unused, the search stops there. As a result, a transaction using the address `m/84'/0'/0'/0/40/` would not be detected in this example.
+
+![With a gap limit of 20, the wallet scans addresses up to index 34 after the last used one (14), then stops: address 40, although used, is never detected.](../../../fr/g/gap-limit/assets/image-1.png)

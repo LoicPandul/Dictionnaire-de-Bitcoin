@@ -3,3 +3,5 @@ Bug exploited on August 15, 2010 on the Bitcoin network, which led to the creati
 The problem was quickly spotted by Jeff Garzik, who alerted the community on the BitcoinTalk forum. Satoshi Nakamoto published a fix within hours. The fix added an explicit check of each output amount and of their sum, and rejected any transaction containing negative or excessive values. Miners then adopted the new version of the software and produced an alternative chain that excluded the invalid transaction.
 
 The corrected chain overtook the chain containing the bug at block 74,691, after about 53 blocks of disruption. This episode, recorded as CVE-2010-5139, was the first major incident in Bitcoin's history.
+
+![The corrected chain, built from block 74,637, overtakes at block 74,691 the chain that contained the invalid transaction of block 74,638, after 53 blocks.](../../../fr/v/value-overflow-incident/assets/image-1.png)

@@ -29,3 +29,5 @@ xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfK
 Next, the notation `/<0;1>/*` specifies that the descriptor can generate addresses from the external keychain (`0`) and the internal keychain (`1`), with a wildcard (`*`) allowing the sequential derivation of multiple addresses in a configurable way, similar to managing a "gap limit" in conventional wallet software.
 
 Finally, `#jy0l7nr4` represents the checksum used to verify the integrity of the descriptor.
+
+![A P2WPKH descriptor split into its parts: the script function wpkh, the fingerprint and derivation path, the extended public key, the chains and the index, then the checksum after the hash sign.](../../../fr/o/output-script-descriptors/assets/image-1.png)

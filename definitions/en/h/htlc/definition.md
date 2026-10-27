@@ -1,5 +1,7 @@
 Acronym for *Hashed Time-Locked Contract*. It is a smart contract mechanism used mainly on Lightning, and sometimes found in atomic swaps. An HTLC makes a transfer of funds conditional on a secret being revealed, and also includes a time condition to protect the sender's money if the transfer fails.
 
+![The HTLC locks 1 BTC that Alice has committed: Bob can spend it by revealing the preimage s whose hash is h, or Alice can reclaim it once block 900,000 is reached.](../../../fr/h/htlc/assets/image-2.png)
+
 On Lightning, HTLCs let a sender pay a node it has no direct channel with, across several channels, with no trust needed along the route. The payment between each pair of nodes is conditional on providing a preimage (the secret that, when hashed, matches an agreed value). If the final recipient provides this preimage, it can claim the funds, which necessarily lets each intermediate node claim the funds too, in a cascade.
 
 For example, if Alice wants to send 1 BTC to David but has no direct channel with him, she has to go through Bob and Carol, who have payment channels between them. Here is how the payment unfolds:

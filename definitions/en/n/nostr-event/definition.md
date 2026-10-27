@@ -8,3 +8,5 @@ Fundamental unit of data in the Nostr protocol. All information transmitted over
 * `sig`: the Schnorr signature on secp256k1.
 
 The `kind` field determines the nature of the event: kind 0 for profile metadata, kind 1 for text notes, kind 4 for encrypted direct messages, kind 7 for reactions, or kind 9735 for zap receipts. Relays verify the signature before accepting an event, which guarantees the authenticity and integrity of the data.
+
+![The seven fields of a Nostr event: the id is the SHA-256 hash of the five fields pubkey, created_at, kind, tags, and content, and the Schnorr signature covers this id.](../../../fr/e/evenement-nostr/assets/image-1.png)

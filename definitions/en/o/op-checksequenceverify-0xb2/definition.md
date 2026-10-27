@@ -5,4 +5,6 @@ Makes the transaction invalid if any one of these characteristics is observed:
 
 If one or more of these characteristics is observed, the script containing the `OP_CHECKSEQUENCEVERIFY` cannot be satisfied. If all of the conditions are valid, `OP_CHECKSEQUENCEVERIFY` acts as an `OP_NOP`, that is, it does nothing to the script. It is as if it disappeared. `OP_CHECKSEQUENCEVERIFY` therefore imposes a relative time constraint on spending the UTXO secured by the script that contains it. It can do so either as real time or as a number of blocks. To do this, it restricts the possible values of the `nSequence` field of the input that spends it, and that `nSequence` field in turn restricts when the transaction that includes this input can be included in a block.
 
+![A UTXO locked by 144 OP_CHECKSEQUENCEVERIFY and confirmed at block N can be spent only in a block of height N + 144 or higher.](../../../fr/o/op-checksequenceverify-0xb2/assets/image-1.png)
+
 *This opcode is a replacement for `OP_NOP`. It was placed on `OP_NOP3`. It is often referred to by its acronym, "CSV". Note that `OP_CSV` must not be confused with the `nSequence` field of a transaction. The former uses the latter, but their natures and actions are different.*
