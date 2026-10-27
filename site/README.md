@@ -1,6 +1,6 @@
 # Site du Dictionnaire de Bitcoin
 
-Site statique généré depuis le dépôt : une page par définition (1 536 le 27 octobre 2026), par lettre, par catégorie et par partie du livre, la chronologie, les résumés des spécifications (les séries de `specifications/`), la recherche instantanée, le sitemap, les données structurées et le PDF. Le français est à la racine, l'anglais sous `/en/`. Il est pensé pour Cloudflare Pages.
+Site statique généré depuis le dépôt : une page par définition (1 536 le 27 octobre 2026), par lettre, par catégorie et par partie du livre, la chronologie, les résumés des spécifications (les séries de `specifications/fr/`), la recherche instantanée, le sitemap, les données structurées et le PDF. Le français est à la racine, l'anglais sous `/en/`. Il est pensé pour Cloudflare Pages.
 
 La direction artistique (« Le livre ouvert ») et sa relecture sont dans `design/` : `direction.md`, `inspirations.md`, `revue.md`.
 
@@ -54,7 +54,7 @@ Le domaine vit dans une seule clé : `url` dans `config.mjs`, aujourd'hui `https
 Le site suit la charte 2027 (`design/charte-2027.md`, branche `feat/couverture-2027`) et la couverture validée, l'Allée des baobabs : Figue `#AA226A`, Archivo et Atkinson Hyperlegible Mono. La palette de `config.mjs` reprend ses valeurs écran une à une, et les rôles du mode sombre suivent son tableau (fond Nuit, liens et bouton en Figue claire). Pas d'ombre portée, liens toujours soulignés.
 
 - **Couleurs** : toutes dans `palette`, dans `config.mjs`. Le build en réécrit le bloc de jetons en tête de `static/css/site.css` (entre `palette:début` et `palette:fin`), la couleur de la barre des navigateurs et le manifeste ; les rôles (fond, texte, lien, bouton, mode sombre) sont définis juste dessous. Pour changer de palette : modifier `palette`, relancer le build.
-- **Polices** : `static/fonts/archivo.woff2` (variable, largeurs 62 à 100, graisses 400 à 900, latin), `archivo-italique.woff2` et `atkinson-mono.woff2`, tirées de `fonts/` (OFL). `tools/chasses.py` refait `lib/archivo-advances.json`, qui sert à dimensionner les vedettes.
+- **Polices** : `static/fonts/archivo.woff2` (variable, largeurs 62 à 100, graisses 400 à 900, latin), `archivo-italique.woff2` et `atkinson-mono.woff2`, tirées de `assets/fonts/` (OFL). `tools/chasses.py` refait `lib/archivo-advances.json`, qui sert à dimensionner les vedettes.
 - **Jaquette de l'accueil** : `tools/allee.py` reprend `design/couverture/baobab.py` (même graine, même dessin) et écrit l'Allée des baobabs dans `lib/allee.json`, un calque par arbre ; le site la pose en SVG dans la page, ce qui permet de faire pousser les arbres et de les faire suivre le pointeur. À refaire si la couverture change : `python3 site/tools/allee.py <worktree couverture>/design/couverture > site/lib/allee.json`.
 - **Favicon et carte sociale** : copiés de `design/couverture/export/` (`favicon.svg`, `favicon-32/180/512.png`, `couverture-2027-partage.png` converti en JPEG).
 - **Pictogrammes** : ceux du livre 2027, lus au build dans `assets/pictograms` d'après `templates/parts.yaml` (un par catégorie).
@@ -75,7 +75,7 @@ Elles reprennent celles de pandul.fr sans le préfixe `/dictionnaire`, pour que 
 | Spécifications | `/specifications/` et `/specifications/<série>/` | `/en/specifications/…` |
 | Recherche | `/recherche/?q=…` | `/en/search/?q=…` |
 
-Les catégories de pandul.fr renommées en 2027 (`histoire`, `organisation`, `communaute`, `outil`) sont redirigées dans `_redirects` vers leur remplaçante, calculée depuis `edition-2027/reclassement.tsv`.
+Les catégories de pandul.fr renommées en 2027 (`histoire`, `organisation`, `communaute`, `outil`) sont redirigées dans `_redirects` vers leur remplaçante, calculée depuis `docs/edition-2027/reclassement.tsv`.
 
 ## Contenus de l'édition 2027
 
@@ -83,7 +83,7 @@ Tout est lu dans les fichiers présents, sans liste écrite dans le code : une c
 
 - **Parties et catégories** : `templates/parts.yaml` range chaque catégorie dans une partie (technique, écosystème, personnes, spécifications), avec son nom affiché et son pictogramme. Une catégorie absente de ce fichier rejoint la partie technique.
 - **Chronologie** : `chronologie/<langue>/*.yaml`, une section par fichier (« avant-2009 » en tête). Chaque date liée à une définition (`related`) apparaît aussi sur la page de cette définition ; un slug qui n'existe plus n'est simplement pas lié.
-- **Spécifications** : `specifications/*.yaml`, regroupées comme dans le livre (`templates/editions.yaml` : BOLT et bLIP ensemble). La définition consacrée à un document (`definition`) affiche sa fiche (statut, auteurs, date) ; un champ `summary_en` sera pris pour l'anglais quand il existera.
+- **Spécifications** : `specifications/fr/*.yaml`, regroupées comme dans le livre (`templates/editions.yaml` : BOLT et bLIP ensemble). La définition consacrée à un document (`definition`) affiche sa fiche (statut, auteurs, date). En anglais, le résumé vient de `specifications/en/<série>.yaml` (même `id`) ou d'un champ `summary_en` quand ils existeront ; d'ici là la page anglaise montre le français, signalé.
 - **Versions courtes** : `courte.md` sert de résumé dans les listes, les cartes d'aperçu et la recherche.
 - **Schémas** : le SVG du dossier `assets/` quand il existe (format préféré de la charte), sinon le PNG ; sous 640 px, l'image garde 640 px dans un cadre qui défile.
 - **Images de tiers** (logos, avatars) : leur crédit vient du champ `credit` de l'image dans `metadata.yaml` (`assets: - filename: … credit: "…"`). Il s'affiche sous l'image, en français et en anglais, et dans la vue agrandie ; une image créditée suit la largeur de l'écran au lieu du cadre de 640 px des schémas. `npm run check` vérifie que chaque crédit est bien affiché.
@@ -92,7 +92,15 @@ Tout est lu dans les fichiers présents, sans liste écrite dans le code : une c
 
 Le français est la langue par défaut. `lib/i18n.mjs` porte les chemins et tous les textes de l'interface dans les deux langues, scripts compris (`js`), et les noms anglais des catégories (une catégorie sans nom anglais garde son nom français).
 
-Les définitions anglaises viennent de `definitions/en/` (chantier `feat/english-2027`). Format attendu : un dossier par entrée, nommé comme le dossier français (`definitions/en/<lettre>/<slug>/` ou `definitions/en/<slug>/`), avec `definition.md` et, s'ils existent, `courte.md` et un `metadata.yaml` (`title`, `english_term`…) ; le dossier est aussi retrouvé par l'`uuid` ou le `slug` de son `metadata.yaml`. Une entrée sans traduction garde sa page sous `/en/<slug>/`, en français, avec la mention « In French for now » : son adresse canonique est alors la page française, et elle n'entre pas dans le sitemap. La chronologie suit la même règle avec `chronologie/en/`.
+Les définitions anglaises viennent de `definitions/en/<lettre>/<slug anglais>/` (format décrit dans `docs/structure.md` et `docs/traduction.md`) : `definition.md`, `courte.md` et un `metadata.yaml` qui porte l'`uuid` de l'entrée française, le `title` et le `slug` anglais. Le site relie les deux versions par l'uuid :
+
+- une entrée traduite a sa page sous `/en/<slug anglais>/` (`/bloc/` ↔ `/en/block/`), avec ses liens `hreflang`, dans le sitemap ; `_redirects` envoie `/en/<slug français>/` vers elle ;
+- une entrée pas encore traduite garde sa page sous `/en/<slug français>/`, en français, avec la mention « In French for now » : son adresse canonique est la page française, et elle n'entre pas dans le sitemap ;
+- une entrée exclue de la traduction (`templates/languages.yaml`, `exclude`) n'a pas de page anglaise ;
+- les schémas restent ceux de l'entrée française (le texte anglais pointe vers `../../../fr/<lettre>/<slug>/assets/`) : un seul exemplaire, servi sous `/<slug français>/assets/`, avec le texte alternatif de la langue de la page ; un schéma redessiné en anglais, dans le dossier `assets/` de l'entrée anglaise, sera servi à sa place ;
+- un slug anglais qui tomberait sur l'adresse d'une autre page fait échouer le build.
+
+La chronologie suit la même règle avec `chronologie/en/`.
 
 ## Fichiers
 
