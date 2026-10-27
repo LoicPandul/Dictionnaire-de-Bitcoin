@@ -3,6 +3,8 @@ $$
 C\ =\ commit(m,\ r)
 $$
 
+![Un commitment C est d'abord calculé à partir du message m et de l'aléa r, puis publié ; plus tard, la révélation de m et r permet à chacun de recalculer commit(m, r) et de le comparer à C.](./assets/image-1.png)
+
 Ce mécanisme comprend deux opérations principales :
 * `Commit` : on applique une fonction cryptographique à un message $m$ et à un aléa $r$ pour produire $C$ ;
 * `Verify` : on utilise $C$, le message $m$ et la valeur $r$ pour vérifier que ce commitment est correct. La fonction renvoie `Vrai` ou `Faux`.

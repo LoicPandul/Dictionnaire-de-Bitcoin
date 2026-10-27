@@ -3,4 +3,6 @@ $$\frac{2^{256}}{cible\ +\ 1}$$
 
 Le chainwork total d'une chaîne est la somme de ces valeurs pour chaque bloc, du bloc de genèse jusqu'au bloc considéré. Comme la difficulté varie au fil du temps, deux chaînes de longueurs identiques peuvent avoir un chainwork très différent : une chaîne minée sous une difficulté élevée aura un chainwork supérieur à une chaîne plus longue construite sous une difficulté artificiellement basse.
 
+![Deux branches partent d'un même ancêtre : la plus longue compte 6 blocs à faible difficulté (chainwork 6), la plus courte 3 blocs à difficulté élevée (chainwork 12), et c'est elle que suivent les nœuds.](./assets/image-1.png)
+
 Dans la première version du logiciel, Satoshi Nakamoto utilisait le nombre de blocs comme critère de sélection de la chaîne valide. Cette approche était vulnérable à la manipulation, car un attaquant pouvait construire une chaîne plus longue en maintenant la difficulté à un niveau bas. Le chainwork a remplacé cette métrique pour garantir que la chaîne valide soit bien celle qui a nécessité le plus de travail réel. La valeur est accessible via la commande `bitcoin-cli getblock` dans le champ `chainwork`.

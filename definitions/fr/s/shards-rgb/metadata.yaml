@@ -5,4 +5,6 @@ category: "RGB"
 cross_references:
   - "8c16730a-03a0-43ea-b175-5000922bb022"
   - "6d0005b3-5163-47fc-827d-6f842eaa00b2"
+assets:
+  - filename: "image-1.png"
 version: "1"
