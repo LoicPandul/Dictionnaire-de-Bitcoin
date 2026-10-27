@@ -6,3 +6,5 @@ La clé de révocation est construite de manière collaborative. Pour une transa
 $$Rev\ =\ R_B \cdot SHA256(R_B\ \Vert\ C_A)\ +\ C_A \cdot SHA256(C_A\ \Vert\ R_B)$$
 
 Ni Alice ni Bob ne peuvent dériver seuls la clé privée correspondante. Lorsque l'état du canal est mis à jour, Alice révèle le secret $c_A$ associé à son point d'engagement. Bob peut alors combiner $c_A$ avec son propre secret $r_B$ pour obtenir la clé privée de révocation et, le cas échéant, construire une transaction de pénalité.
+
+![La clé privée de révocation naît de la somme du secret d'engagement révélé par Alice à la mise à jour et du secret de base de révocation que Bob détient déjà.](./assets/image-1.png)
