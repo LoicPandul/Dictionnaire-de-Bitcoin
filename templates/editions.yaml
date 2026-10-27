@@ -28,9 +28,9 @@ editions:
       - type: chronology
         title: "Chronologie"
         intro: >
-          Les événements marquants de Bitcoin et de ce qui l'a précédé, dans l'ordre où
-          ils se sont produits. Chaque date a été recoupée par au moins deux sources
-          indépendantes.
+          Les événements majeurs de Bitcoin, du mouvement cypherpunk et de la cryptographie
+          utile à Bitcoin, dans l'ordre où ils se sont produits. Chaque date est recoupée
+          par au moins 2 sources.
       - type: specs
         id: bip
         series: [bip]
@@ -39,7 +39,8 @@ editions:
         intro: >
           Les BIP (Bitcoin Improvement Proposals) sont les documents qui proposent et
           décrivent les évolutions de Bitcoin. Chaque entrée donne son numéro, son titre
-          d'origine, son statut et un résumé.
+          d'origine, son statut et un résumé, suivis de la définition développée lorsqu'elle
+          existe.
       - type: specs
         id: bolt
         series: [bolt, blip]
@@ -47,8 +48,9 @@ editions:
         detail: true
         intro: >
           Les BOLT (Basis of Lightning Technology) forment la spécification du Lightning
-          Network. Les bLIP (Bitcoin Lightning Improvement Proposals) décrivent les
-          fonctionnalités optionnelles proposées par-dessus.
+          Network, et les bLIP (Bitcoin Lightning Improvement Proposals) décrivent les
+          fonctionnalités optionnelles proposées en complément. Chaque entrée donne son
+          statut et un résumé, suivis de la définition développée lorsqu'elle existe.
 
   essentiel:
     title: "Dictionnaire de Bitcoin"

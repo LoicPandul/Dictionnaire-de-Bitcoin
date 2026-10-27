@@ -9,6 +9,10 @@
 parts:
   - id: technique
     title: "Dictionnaire technique"
+    intro: >
+      Les termes de Bitcoin et des protocoles qui s'appuient sur lui, classés par ordre
+      alphabétique. Chaque entrée indique sa catégorie, repérable à son pictogramme, et le
+      terme anglais correspondant.
     letter_pages: true
     categories:
       - name: "PROTOCOLE"
@@ -115,8 +119,8 @@ parts:
     title: "Entreprises, applications et logiciels"
     intro: >
       Les entreprises, associations, logiciels, portefeuilles, matériels et services qui
-      font l'écosystème de Bitcoin. Les mécanismes qu'ils mettent en œuvre sont définis
-      dans le dictionnaire technique.
+      forment l'écosystème de Bitcoin, classés par ordre alphabétique. Les mécanismes
+      qu'ils mettent en œuvre sont définis dans le dictionnaire technique.
     letter_pages: false
     categories:
       - name: "PORTEFEUILLE LOGICIEL"
@@ -162,9 +166,9 @@ parts:
   - id: personnes
     title: "Personnes"
     intro: >
-      Les personnes dont les travaux, les idées ou les actes ont compté dans l'histoire de
-      Bitcoin : cypherpunks, cryptographes, économistes, développeurs et figures de
-      l'écosystème.
+      Les figures historiques de Bitcoin et du mouvement cypherpunk, ainsi que les
+      personnalités principales de l'écosystème, classées par ordre alphabétique. Chaque
+      fiche commence par le rôle de la personne, puis le relie à Bitcoin.
     letter_pages: false
     categories:
       - name: "CYPHERPUNK"
