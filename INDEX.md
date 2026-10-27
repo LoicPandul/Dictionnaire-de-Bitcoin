@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier liste les 1643 entrées du dictionnaire, partie par partie.
+Ce fichier liste les 1536 entrées du dictionnaire, partie par partie.
 Chaque entrée a une version développée (`definition.md`) et une version courte (`courte.md`).
 
 [Dictionnaire technique](#dictionnaire-technique) | [Entreprises, applications et logiciels](#entreprises-applications-et-logiciels) | [Personnes](#personnes) | [Spécifications](#spécifications)
@@ -1525,78 +1525,45 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 ## Personnes
 
-155 entrées.
+48 entrées.
 
 ### Personnes : A
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
 | [ADLEMAN LEONARD](definitions/fr/a/adleman-leonard/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `6412031a-8d71-47a3-8719-6197487a00d5` |
-| [ALM KARL-JOHAN](definitions/fr/a/alm-karl-johan/definition.md) | DÉVELOPPEUR BITCOIN | `818a1047-4e04-40a2-8d3f-64cfd4c30ae3` |
-| [AMMOUS SAIFEDEAN](definitions/fr/a/ammous-saifedean/definition.md) | ÉCONOMISTE | `40aad7ae-068e-4d54-8b3e-cf0585428d4e` |
 | [ANDRESEN GAVIN](definitions/fr/a/andresen-gavin/definition.md) | DÉVELOPPEUR BITCOIN | `389b0e5c-4360-4563-adff-24a3d17ea5a9` |
 | [ANTONOPOULOS ANDREAS M.](definitions/fr/a/antonopoulos-andreas/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `83e54449-0f0c-4ffa-87b4-123c334bc8b1` |
-| [ASSANGE JULIAN](definitions/fr/a/assange-julian/definition.md) | CYPHERPUNK | `185641c8-cb11-441e-9cac-5303daeb5088` |
-| [ATACK JON](definitions/fr/a/atack-jon/definition.md) | DÉVELOPPEUR BITCOIN | `febe3219-c68d-4a57-88a9-01b28b40dad4` |
 
 ### Personnes : B
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
 | [BACK ADAM](definitions/fr/b/back-adam/definition.md) | CYPHERPUNK | `74e499b0-84e5-43b7-bd8f-972e69325e6d` |
-| [BAYER DAVE](definitions/fr/b/bayer-dave/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `15b76463-c85b-43eb-b64f-3ace8153b5a4` |
-| [BELCHER CHRIS](definitions/fr/b/belcher-chris/definition.md) | DÉVELOPPEUR BITCOIN | `8c44cc1f-d085-4292-a04f-a0969fc30874` |
-| [BERNSTEIN DANIEL J.](definitions/fr/b/bernstein-daniel-j/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `4648cfa3-04b3-4208-b19a-ad24ec76549a` |
-| [BISHOP BRYAN](definitions/fr/b/bishop-bryan/definition.md) | DÉVELOPPEUR BITCOIN | `b72a9eac-8f43-4eee-b7b4-69d789805369` |
 | [BITCOIN JESUS](definitions/fr/b/bitcoin-jesus/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `b668d29d-190c-4e82-be53-d8c37a9c54e7` |
-| [BOSWORTH ALEX](definitions/fr/b/bosworth-alex/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `623bccf6-c13e-4f7a-b853-5534cfd75d8f` |
 
 ### Personnes : C
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [CALDWELL MIKE](definitions/fr/c/caldwell-mike/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `f8ed27fb-019b-4e1c-94e3-6e9fbffb8533` |
-| [CALLE](definitions/fr/c/calle/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `f812b658-e17c-4e10-b9b3-3d47aa6db354` |
-| [CANTILLON RICHARD](definitions/fr/c/cantillon-richard/definition.md) | ÉCONOMISTE | `86539e12-e17a-4ca2-975b-488833e82d25` |
-| [CASARIN WILLIAM](definitions/fr/c/casarin-william/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `d4362947-e724-41c9-8133-d6e088beee44` |
 | [CHAUM DAVID](definitions/fr/c/chaum-david/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `a0a4d623-748e-4f0f-b946-5ac1a785d754` |
-| [CHOW AVA](definitions/fr/c/chow-ava/definition.md) | DÉVELOPPEUR BITCOIN | `02562b1e-3b92-434e-a0ab-226e79daabdc` |
-| [COBRA](definitions/fr/c/cobra/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `c26960e2-8ff2-4de1-8cb6-0b0892fccfce` |
 | [CORALLO MATT](definitions/fr/c/corallo-matt/definition.md) | DÉVELOPPEUR BITCOIN | `5c0051e8-f142-4ada-b23b-1a45509a6df1` |
 
 ### Personnes : D
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [DAFTUAR SUHAS](definitions/fr/d/daftuar-suhas/definition.md) | DÉVELOPPEUR BITCOIN | `77fdb2b1-85bc-4375-af10-ba9c0f4fe7cf` |
 | [DAI WEI](definitions/fr/d/dai-wei/definition.md) | CYPHERPUNK | `1a1f3b06-6529-4f00-9931-13870f5c698b` |
 | [DASHJR LUKE](definitions/fr/d/dashjr-luke/definition.md) | DÉVELOPPEUR BITCOIN | `aacaa355-800c-4872-aab3-10d102f590f1` |
 | [DECKER CHRISTIAN](definitions/fr/d/decker-christian/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `603d9964-eacb-4efd-8def-a8e946d5e4fb` |
 | [DIFFIE WHITFIELD](definitions/fr/d/diffie-whitfield/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `775c2d91-4cf3-40b9-9fe6-444b1d87e765` |
-| [DILGER MIKE](definitions/fr/d/dilger-mike/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `8b5a4e3d-0938-4557-bfbc-4cd96812eca1` |
-| [DOBSON SAMUEL](definitions/fr/d/dobson-samuel/definition.md) | DÉVELOPPEUR BITCOIN | `8ceede30-c4a4-4fa2-801a-3208ac629b12` |
-| [DORIER NICOLAS](definitions/fr/d/dorier-nicolas/definition.md) | DÉVELOPPEUR BITCOIN | `2ae87020-0abd-402d-86e7-be77305ea46f` |
 | [DRYJA THADDEUS](definitions/fr/d/dryja-thaddeus/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `98bbc205-0e5f-4800-a885-381f59e5c18c` |
-
-### Personnes : E
-
-| Terme | Catégorie | UUID |
-|-------|-----------|------|
-| [ERHARDT MARK](definitions/fr/e/erhardt-mark/definition.md) | DÉVELOPPEUR BITCOIN | `3403097d-50b7-4b7f-91d1-681e24cbda8d` |
-| [EUGEN VON BÖHM-BAWERK](definitions/fr/b/bohm-bawerk-eugen/definition.md) | ÉCONOMISTE | `0c4a3ff3-c7fc-4514-be79-808326d23c25` |
 
 ### Personnes : F
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [FANQUAKE](definitions/fr/f/fanquake/definition.md) | DÉVELOPPEUR BITCOIN | `95b1f09b-ee0a-4c69-9d15-f4babc0d834a` |
-| [FELLER WILLIAM](definitions/fr/f/feller-william/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `898e4bc9-4f86-4640-ab41-d7a3eebaaa1f` |
-| [FERNANDEZ PABLO](definitions/fr/f/fernandez-pablo/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `7a708095-be21-4151-9237-a5f2f39cedef` |
-| [FIATJAF](definitions/fr/f/fiatjaf/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `9c508aec-cf0f-4322-8a39-d60419607e1a` |
-| [FICSÓR ÁDÁM](definitions/fr/f/ficsor-adam/definition.md) | DÉVELOPPEUR BITCOIN | `b7b495bd-6877-4383-88b5-8899d4f5833e` |
 | [FINNEY HAL](definitions/fr/f/finney-hal/definition.md) | CYPHERPUNK | `9d2edbfc-eeb0-4310-9072-3500451301fc` |
-| [FRIEDENBACH MARK](definitions/fr/f/friedenbach-mark/definition.md) | DÉVELOPPEUR BITCOIN | `c6f2cb6c-5300-4612-80d5-af4b7d2e33b5` |
-| [FRIEDMAN MILTON](definitions/fr/f/friedman-milton/definition.md) | ÉCONOMISTE | `793c2245-d61c-4cea-bbcf-272925310ff3` |
 
 ### Personnes : G
 
@@ -1604,11 +1571,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 |-------|-----------|------|
 | [GARZIK JEFF](definitions/fr/g/garzik-jeff/definition.md) | DÉVELOPPEUR BITCOIN | `4a2818f8-ca9e-4eb6-90e5-19fad7294078` |
 | [GILMORE JOHN](definitions/fr/g/gilmore-john/definition.md) | CYPHERPUNK | `e3b3f4fd-f7d1-4c41-84ae-5ccbdde598ad` |
-| [GOLDBERG IAN](definitions/fr/g/goldberg-ian/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `d5369c43-b0ee-45d0-9d5b-d96af22782fe` |
-| [GOLOMB SOLOMON W.](definitions/fr/g/golomb-solomon/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `85591697-aae9-4025-be77-2dfabee08b2c` |
-| [GRESHAM THOMAS](definitions/fr/g/gresham-thomas/definition.md) | ÉCONOMISTE | `fbdacb1f-8f3e-4138-a188-07888dcb0a14` |
-| [GROTH JENS](definitions/fr/g/groth-jens/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `afd25f15-352c-4509-92c7-bf1685e2fa1e` |
-| [GROVER LOV](definitions/fr/g/grover-lov/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `6380a70d-c74b-4094-8088-11dd55e40c9b` |
 
 ### Personnes : H
 
@@ -1616,42 +1578,16 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 |-------|-----------|------|
 | [HABER STUART](definitions/fr/h/haber-stuart/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `9d751b3a-3f21-4b76-ab2e-d451d785b517` |
 | [HANYECZ LASZLO](definitions/fr/h/hanyecz-laszlo/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `1cb0504b-4832-4d10-a725-1ec44ad7d124` |
-| [HARDING DAVID A.](definitions/fr/h/harding-david/definition.md) | DÉVELOPPEUR BITCOIN | `c101ae0d-4144-479d-a43e-d769aa310f9e` |
 | [HAYEK FRIEDRICH](definitions/fr/h/hayek-friedrich/definition.md) | ÉCONOMISTE | `1b57357e-db71-47ba-9463-1d4d43dbaa40` |
 | [HEARN MIKE](definitions/fr/h/hearn-mike/definition.md) | DÉVELOPPEUR BITCOIN | `60826a5b-8998-4f2a-96fb-2f0ad34e8c30` |
-| [HEILMAN ETHAN](definitions/fr/h/heilman-ethan/definition.md) | DÉVELOPPEUR BITCOIN | `ed16c2cc-8e6a-4617-b331-92fcdaf12695` |
 | [HELLMAN MARTIN](definitions/fr/h/hellman-martin/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `13f0b383-087a-47e2-ac99-8ec89d1d2b88` |
-| [HILL WILLIAM LONERGAN](definitions/fr/h/hill-william/definition.md) | DÉVELOPPEUR BITCOIN | `ecf30c6c-5aaa-4e42-8e4a-8f6b68beff97` |
 | [HUGHES ERIC](definitions/fr/h/hughes-eric/definition.md) | CYPHERPUNK | `b33b92e6-88ff-4923-ad4b-7529d0c03478` |
-| [HZRD149](definitions/fr/h/hzrd149/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `1124f2ae-91eb-4289-b939-ee5c1ef66bdf` |
-
-### Personnes : I
-
-| Terme | Catégorie | UUID |
-|-------|-----------|------|
-| [INGALA SALVATORE](definitions/fr/i/ingala-salvatore/definition.md) | DÉVELOPPEUR BITCOIN | `8e8e2ea9-7763-405b-b749-60deff561a28` |
-
-### Personnes : J
-
-| Terme | Catégorie | UUID |
-|-------|-----------|------|
-| [JACKSON DOUGLAS](definitions/fr/j/jackson-douglas/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `5434b6a5-32f4-43de-8359-9bef886d5337` |
-| [JAMES O'BEIRNE](definitions/fr/o/o-beirne-james/definition.md) | DÉVELOPPEUR BITCOIN | `6682f0d1-9265-41c2-bc0b-0ea0b61dc0db` |
-| [JOSIBAKE](definitions/fr/j/josibake/definition.md) | DÉVELOPPEUR BITCOIN | `674777a3-dd2c-479c-9db5-625b0605283e` |
 
 ### Personnes : K
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [KANJALKAR SANKET](definitions/fr/k/kanjalkar-sanket/definition.md) | DÉVELOPPEUR BITCOIN | `80a6efd9-28d2-4745-91c8-50b167e9fe4a` |
 | [KARPELÈS MARK](definitions/fr/k/karpeles-mark/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `210797c8-9ae9-4641-96f0-9cecfad58236` |
-| [KECELI BURAK](definitions/fr/k/keceli-burak/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `98bbca0d-70eb-4d2f-9a96-e5dc11b7c370` |
-| [KEYNES JOHN MAYNARD](definitions/fr/k/keynes-john-maynard/definition.md) | ÉCONOMISTE | `a295d449-f6ad-4023-93c0-dcc712e1b43d` |
-| [KOBLITZ NEAL](definitions/fr/k/koblitz-neal/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `d160cef8-53f5-4847-82d1-0d55f3ab9ac3` |
-| [KOGMAN YUVAL](definitions/fr/k/kogman-yuval/definition.md) | DÉVELOPPEUR BITCOIN | `0a350ee1-1f14-425e-b843-7e7aa308a781` |
-| [KOLIVAS CON](definitions/fr/k/kolivas-con/definition.md) | DÉVELOPPEUR BITCOIN | `c4b36c16-1acb-42b8-81ce-05313b6fb8f1` |
-| [KOMLO CHELSEA](definitions/fr/k/komlo-chelsea/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `ae24213b-7972-48f7-ba1f-a501b912ed4d` |
-| [KONKIN SAMUEL EDWARD III](definitions/fr/k/konkin-samuel-edward/definition.md) | ÉCONOMISTE | `14e988a0-8edd-4e87-9b26-e54c276d8388` |
 
 ### Personnes : L
 
@@ -1659,25 +1595,17 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 |-------|-----------|------|
 | [LAMPORT LESLIE](definitions/fr/l/lamport-leslie/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `70aebc57-fb41-4011-8d6d-cbc437275cd7` |
 | [LAU JOHNSON](definitions/fr/l/lau-johnson/definition.md) | DÉVELOPPEUR BITCOIN | `65a55f65-52ec-4023-a257-a7718518e32a` |
-| [LAURENTMT](definitions/fr/l/laurentmt/definition.md) | DÉVELOPPEUR BITCOIN | `bac8351b-9608-407c-89be-78a496f1986a` |
-| [LERNER SERGIO DEMIAN](definitions/fr/l/lerner-sergio-demian/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `544539f9-7590-4dc6-8274-660f3cf3dfe9` |
-| [LINUS ROBIN](definitions/fr/l/linus-robin/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `cd5368a7-e029-4ec3-aed6-43f9672f05b3` |
-| [LOAEC KEVIN](definitions/fr/l/loaec-kevin/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `b5df6e44-f73c-45ed-9b9d-4d20af6e1416` |
 | [LOMBROZO ERIC](definitions/fr/l/lombrozo-eric/definition.md) | DÉVELOPPEUR BITCOIN | `5e7a9e46-3370-4d55-9a55-ae4745378b60` |
-| [LOPP JAMESON](definitions/fr/l/lopp-jameson/definition.md) | DÉVELOPPEUR BITCOIN | `9f26022a-98bb-45ec-9aa5-6af12cf408e5` |
 
 ### Personnes : M
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
 | [MALMI MARTTI](definitions/fr/m/malmi-martti/definition.md) | DÉVELOPPEUR BITCOIN | `756fd73e-62e3-4fc9-92e9-5e56fdefe80f` |
-| [MARCOFALKE](definitions/fr/m/marcofalke/definition.md) | DÉVELOPPEUR BITCOIN | `77625290-8fe6-4665-a93e-89d26e6f130b` |
 | [MAXWELL GREGORY](definitions/fr/m/maxwell-gregory/definition.md) | DÉVELOPPEUR BITCOIN | `abcbba4a-2718-4ffd-97bf-7a4646eea0bb` |
 | [MAY TIMOTHY C.](definitions/fr/m/may-timothy/definition.md) | CYPHERPUNK | `929f8b97-1737-437a-92af-cd0ae012be7c` |
-| [MCCALEB JED](definitions/fr/m/mccaleb-jed/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `2ad86f2f-0c4e-457d-99d5-01c179169dfe` |
 | [MENGER CARL](definitions/fr/m/menger-carl/definition.md) | ÉCONOMISTE | `9de34c8e-f9fd-42a9-a5a9-3e023ad100c4` |
 | [MERKLE RALPH](definitions/fr/m/merkle-ralph/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `46f50498-3822-41f2-97a0-18f885f320f3` |
-| [MILLER VICTOR S.](definitions/fr/m/miller-victor/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `d254f6e1-ce60-4dcc-9fd1-fbbf04ec2fc4` |
 | [MISES LUDWIG VON](definitions/fr/m/mises-ludwig/definition.md) | ÉCONOMISTE | `512eb3fc-3e45-4a28-9f69-ba1870aca0c2` |
 
 ### Personnes : N
@@ -1685,87 +1613,43 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
 | [NAKAMOTO SATOSHI](definitions/fr/n/nakamoto-satoshi/definition.md) | DÉVELOPPEUR BITCOIN | `9d578cea-a756-4aff-b436-fc8a5e90a98c` |
-| [NAUMENKO GLEB](definitions/fr/n/naumenko-gleb/definition.md) | DÉVELOPPEUR BITCOIN | `f188c301-4868-4b8f-81fe-d7499cfcc973` |
-| [NEIGUT LISA](definitions/fr/n/neigut-lisa/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `a939ae35-4bd0-48f9-8844-3739af46eb8c` |
-| [NICK JONAS](definitions/fr/n/nick-jonas/definition.md) | DÉVELOPPEUR BITCOIN | `1d165eb4-3a64-4c4b-811b-0fcd13ff2570` |
 
 ### Personnes : O
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [OFSKY RYAN](definitions/fr/o/ofsky-ryan/definition.md) | DÉVELOPPEUR BITCOIN | `2b0f593f-fd74-4ebd-98d0-642b8441fb72` |
-| [ORLOVSKY MAXIM](definitions/fr/o/orlovsky-maxim/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `578c9ebc-aec3-4c69-8cf2-633baad68978` |
 | [OSUNTOKUN OLAOLUWA](definitions/fr/o/osuntokun-olaoluwa/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `6b176371-6513-40d7-bc50-6fcd9fa31fe0` |
 
 ### Personnes : P
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [PALATINUS MAREK](definitions/fr/p/palatinus-marek/definition.md) | DÉVELOPPEUR BITCOIN | `ddc5ba14-abf5-4dec-bf45-8819c26938f8` |
-| [PAMPLONA VITOR](definitions/fr/p/pamplona-vitor/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `b202c79e-f12c-42b0-b34d-110456211f28` |
-| [PEDERSEN TORBEN PRYDS](definitions/fr/p/pedersen-torben/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `89cc517c-8a3d-450d-82e1-12a6ea9f8f0b` |
-| [PICKHARDT RENÉ](definitions/fr/p/pickhardt-rene/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `d693b4a4-7a2c-4ca2-8cd7-691f4645e680` |
 | [POELSTRA ANDREW](definitions/fr/p/poelstra-andrew/definition.md) | DÉVELOPPEUR BITCOIN | `b29d5986-5acd-4719-ab7e-08070699dcad` |
-| [POINSOT ANTOINE](definitions/fr/p/poinsot-antoine/definition.md) | DÉVELOPPEUR BITCOIN | `3b3b6823-d16b-4529-8a52-d9ba62a67d23` |
 | [POON JOSEPH](definitions/fr/p/poon-joseph/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `bba97384-10de-420e-ade5-80b661a731f4` |
-| [PROVOOST SJORS](definitions/fr/p/provoost-sjors/definition.md) | DÉVELOPPEUR BITCOIN | `922ba4a3-bf62-4b0e-86a5-f28de7c85c7e` |
-
-### Personnes : Q
-
-| Terme | Catégorie | UUID |
-|-------|-----------|------|
-| [QUISQUATER JEAN-JACQUES](definitions/fr/q/quisquater-jean-jacques/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `157abd04-af38-4797-8945-b22448426913` |
 
 ### Personnes : R
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [RAW CRAIG](definitions/fr/r/raw-craig/definition.md) | DÉVELOPPEUR BITCOIN | `a323de98-c2ee-44b6-95a6-082b75288d9e` |
-| [RIARD ANTOINE](definitions/fr/r/riard-antoine/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `8b4da340-340a-42f0-aa87-440a5335be5d` |
 | [RIVEST RON](definitions/fr/r/rivest-ron/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `67c11692-1199-4d49-a948-a6460217dd96` |
-| [RODARMOR CASEY](definitions/fr/r/rodarmor-casey/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `6ef27dda-aa30-4dc1-9813-daced04023da` |
-| [RODRIGUEZ KEONNE](definitions/fr/r/rodriguez-keonne/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `67985ea9-10ee-4a24-a99d-6db5ee1b80f3` |
-| [ROSENFELD MENI](definitions/fr/r/rosenfeld-meni/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `363b0796-b32b-47ff-bac5-6033f195ae96` |
 | [ROTHBARD MURRAY](definitions/fr/r/rothbard-murray/definition.md) | ÉCONOMISTE | `e7253f40-29eb-4ae3-b98f-12ecc89d3354` |
-| [RUBIN JEREMY](definitions/fr/r/rubin-jeremy/definition.md) | DÉVELOPPEUR BITCOIN | `370732e1-113b-434b-8073-140abdb60c6b` |
 | [RUFFING TIM](definitions/fr/r/ruffing-tim/definition.md) | DÉVELOPPEUR BITCOIN | `9c3cfeb7-0274-4354-a613-1c32c9393c7d` |
-| [RUSNÁK PAVOL](definitions/fr/r/rusnak-pavol/definition.md) | DÉVELOPPEUR BITCOIN | `0bcd9d6c-4914-49c1-9828-45ffb79ec2ef` |
-| [RUSSELL O'CONNOR](definitions/fr/o/o-connor-russell/definition.md) | DÉVELOPPEUR BITCOIN | `a5ecd980-bf80-477d-8466-ea66d6ea3859` |
 | [RUSSELL RUSTY](definitions/fr/r/russell-rusty/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `c949ae13-d33c-4ea8-862e-7891acd8d914` |
 
 ### Personnes : S
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [SANDERS GREG](definitions/fr/s/sanders-greg/definition.md) | DÉVELOPPEUR BITCOIN | `6c0f80d4-448c-46c3-ae18-5aac43e8e0b6` |
-| [SCHNELLI JONAS](definitions/fr/s/schnelli-jonas/definition.md) | DÉVELOPPEUR BITCOIN | `30eed3a7-a78d-4aac-846b-202c1595f457` |
 | [SCHNORR CLAUS PETER](definitions/fr/s/schnorr-claus-peter/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `8a07fcf5-b96b-4605-8230-4c30d034171f` |
-| [SEDITED](definitions/fr/s/sedited/definition.md) | DÉVELOPPEUR BITCOIN | `1df5d8cd-4e65-4d23-9cc7-44da8cc0dae3` |
-| [SEURIN YANNICK](definitions/fr/s/seurin-yannick/definition.md) | DÉVELOPPEUR BITCOIN | `0a3720c9-ecd0-4e3a-aaa0-c93c5098160b` |
 | [SHAMIR ADI](definitions/fr/s/shamir-adi/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `f2dd0c74-8bb1-4953-bb6f-7cf6555bc7d1` |
-| [SHAOLIN FRY](definitions/fr/s/shaolin-fry/definition.md) | DÉVELOPPEUR BITCOIN | `030b14a9-dbe8-457d-b625-d00a9c21fcfe` |
-| [SHOR PETER](definitions/fr/s/shor-peter/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `c51ff5d5-487e-4613-868f-39b9863233c3` |
-| [SHREM CHARLIE](definitions/fr/s/shrem-charlie/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `06a60338-560a-452c-b251-970cbb5aa366` |
-| [SILBERT BARRY](definitions/fr/s/silbert-barry/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `9f49f649-715b-4d48-a008-d86d96ef65c0` |
-| [SIRION ERIC](definitions/fr/s/sirion-eric/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `01b32067-7d3e-444f-ab4d-d96c841269d6` |
-| [SOMSEN RUBEN](definitions/fr/s/somsen-ruben/definition.md) | DÉVELOPPEUR BITCOIN | `b3856c91-7216-483c-9f7b-0e3939c6b27f` |
-| [STAAB JON](definitions/fr/s/staab-jon/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `34c82521-8de0-4496-b504-56adece4c068` |
-| [STARK ELIZABETH](definitions/fr/s/stark-elizabeth/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `4a35abad-09a6-4dd8-9e13-efd4dd154c39` |
-| [STEPANOV HENNADII](definitions/fr/s/stepanov-hennadii/definition.md) | DÉVELOPPEUR BITCOIN | `c6e20e49-3d23-4c89-bb12-715d80708036` |
-| [STERLINGOV ROMAN](definitions/fr/s/sterlingov-roman/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `5bfebac5-f0c6-4060-a305-58e80eb52332` |
 | [STORNETTA W. SCOTT](definitions/fr/s/stornetta-w-scott/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `d96b5a21-1e11-4bf7-b794-4b0369e0fa41` |
 | [SZABO NICK](definitions/fr/s/szabo-nick/definition.md) | CYPHERPUNK | `fb790b86-68cf-48a6-ad49-449ec21856f7` |
-| [SZTORC PAUL](definitions/fr/s/sztorc-paul/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `93e1d6a4-d7d5-4b01-9583-616dc320deea` |
 
 ### Personnes : T
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [TAAKI AMIR](definitions/fr/t/taaki-amir/definition.md) | DÉVELOPPEUR BITCOIN | `14df4b8d-e77c-42cf-8183-b9c99347fa0b` |
-| [TEINTURIER BASTIEN](definitions/fr/t/teinturier-bastien/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `d4f65672-400f-48e2-a7f8-e69d6b0cf9a1` |
-| [THEYMOS](definitions/fr/t/theymos/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `b3d3f909-721f-4b69-8cdc-aa919fde762c` |
 | [TODD PETER](definitions/fr/t/todd-peter/definition.md) | DÉVELOPPEUR BITCOIN | `16cc7c53-91d5-48a3-8a39-73de36ec9237` |
-| [TOWNS ANTHONY](definitions/fr/t/towns-anthony/definition.md) | DÉVELOPPEUR BITCOIN | `beca8be9-b4af-42e4-bc23-ccdfd628ce71` |
 
 ### Personnes : U
 
@@ -1778,29 +1662,18 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
 | [VAN DER LAAN MARA](definitions/fr/v/van-der-laan-mara/definition.md) | DÉVELOPPEUR BITCOIN | `20d73d33-6b31-4856-ac5e-43b9c5880c69` |
-| [VANSTONE SCOTT](definitions/fr/v/vanstone-scott/definition.md) | CRYPTOGRAPHE ET INFORMATICIEN | `a29da631-11af-4874-a472-4e576f4bb93b` |
-| [VOEGTLIN THOMAS](definitions/fr/v/voegtlin-thomas/definition.md) | DÉVELOPPEUR BITCOIN | `42b17ca5-3bfe-41f5-93ca-67fca584c3c6` |
-| [VOIGHT FORREST](definitions/fr/v/voight-forrest/definition.md) | DÉVELOPPEUR BITCOIN | `f135b0e0-c61b-4ddd-b0cb-e193e8bd23a4` |
-| [VOORHEES ERIK](definitions/fr/v/voorhees-erik/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `7cdfdc08-9680-48cf-8a9c-f0f2ef738f5a` |
 
 ### Personnes : W
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [WILLETT J. R.](definitions/fr/w/willett-j-r/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `320b8b9e-e09a-40b4-9e2f-aac893bf2261` |
-| [WRIGHT CRAIG](definitions/fr/w/wright-craig/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `c37508b4-df25-4d2b-9d8b-de849e62d107` |
-| [WU JIHAN](definitions/fr/w/wu-jihan/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `0ff0b4b1-305f-48a3-aecf-f88dbb478bdf` |
 | [WUILLE PIETER](definitions/fr/w/wuille-pieter/definition.md) | DÉVELOPPEUR BITCOIN | `6deae73c-602a-4828-bb54-46c4f4a23b7e` |
 
 ### Personnes : Z
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [ZHAN MICREE](definitions/fr/z/zhan-micree/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `4f14dc69-40a7-44c7-8d6a-97540ec7ce74` |
-| [ZHANG NANGENG](definitions/fr/z/zhang-nangeng/definition.md) | FIGURE DE L'ÉCOSYSTÈME | `42b89b92-c281-4e4c-a10e-616da093371e` |
-| [ZHAO GLORIA](definitions/fr/z/zhao-gloria/definition.md) | DÉVELOPPEUR BITCOIN | `7103cd1b-149b-404d-b13c-eeac795573ba` |
 | [ZIMMERMANN PHIL](definitions/fr/z/zimmermann-phil/definition.md) | CYPHERPUNK | `2753f025-7743-4103-8681-217d610ff405` |
-| [ZMNSCPXJ](definitions/fr/z/zmnscpxj/definition.md) | DÉVELOPPEUR DE SURCOUCHES | `4e2b2b5e-81c8-49fd-98b9-b9e57a78c088` |
 
 ## Spécifications
 
