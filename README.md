@@ -1,7 +1,7 @@
 [![Cover Image](./assets/images/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/dictionnaire-de-bitcoin.pdf)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Nombre%20de%20d%C3%A9finitions-1643-1B3A4B?style=for-the-badge" alt="Nombre de définitions">
+  <img src="https://img.shields.io/badge/Nombre%20de%20d%C3%A9finitions-1536-1B3A4B?style=for-the-badge" alt="Nombre de définitions">
 </p>
 
 <p align="center">
@@ -136,7 +136,7 @@ Dictionnaire-de-Bitcoin/
 │       │   └── ...
 │       └── z/
 │
-├── specifications/                 # BIP, BOLT, bLIP et NIP : numéro, titre, statut, résumé
+├── specifications/                 # BIP, BOLT et bLIP : numéro, titre, statut, résumé
 ├── chronologie/fr/                 # Chronologie, un fichier par année
 │
 ├── assets/
@@ -148,7 +148,7 @@ Dictionnaire-de-Bitcoin/
 ├── templates/
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
-│   ├── editions.yaml               # Éditions générées (complète, essentiel, tomes)
+│   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
 │   ├── legal.yaml                  # Informations légales et métadonnées
 │   ├── introduction.md             # Note de l'auteur
 │   ├── contributors.md             # Liste des contributeurs

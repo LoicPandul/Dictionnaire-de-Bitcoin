@@ -3,14 +3,6 @@
 # Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
 
 events:
-  - date: "2021-01-02"
-    title: "Le bitcoin dépasse 30 000 dollars"
-    text: "Le cours du bitcoin franchit 30 000 dollars pour la première fois, un samedi où presque tous les autres marchés sont fermés, et monte jusqu'à 33 099 dollars dans la journée. Deux semaines plus tôt, il passait 20 000 dollars."
-    related: ["ath-all-time-high"]
-    sources:
-      - "https://www.cnbc.com/2021/01/02/bitcoin-rallies-above-30000-for-first-time-after-advancing-over-300percent-in-2020.html"
-      - "https://cointelegraph.com/news/bitcoin-price-hits-30-000-milestone-for-the-first-time-ever"
-
   - date: "2021-01-05"
     title: "Proposition de Bech32m (BIP-0350)"
     text: "Pieter Wuille soumet à la liste bitcoin-dev le BIP-0350, qui définit `Bech32m`, une variante de `Bech32` à la somme de contrôle modifiée. Elle corrige une faiblesse : des `q` insérés ou supprimés avant un `p` final passent inaperçus. `Bech32m` servira aux adresses SegWit de version 1 et plus, dont Taproot."
@@ -20,37 +12,12 @@ events:
       - "https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki"
       - "https://bitcoinops.org/en/newsletters/2021/01/13/"
 
-  - date: "2021-01-07"
-    title: "Le bitcoin dépasse 40 000 dollars"
-    text: "Le cours du bitcoin dépasse 40 000 dollars pour la première fois, moins d'un mois après avoir franchi 20 000 dollars. CoinDesk relève un record de 40 123,30 dollars, Coin Metrics un plus haut de 40 367 dollars dans l'après-midi."
-    related: ["ath-all-time-high"]
-    sources:
-      - "https://www.coindesk.com/markets/2021/01/07/bitcoin-tops-40k-for-first-time-doubling-in-less-than-a-month"
-      - "https://www.cnbc.com/2021/01/07/bitcoin-btc-rally-extends-price-hits-record-high-above-37700.html"
-
-  - date: "2021-01-14"
-    title: "Sortie de Bitcoin Core 0.21.0"
-    text: "Bitcoin Core 0.21.0 ajoute Signet (BIP-0325), les portefeuilles à descripteurs (expérimentaux, pas par défaut), les adresses Tor v3 grâce à `addrv2` (BIP-0155) et le service des filtres de blocs BIP-0157 aux pairs. Elle contient les règles de Taproot, sans activation sur le réseau principal."
-    related: ["bitcoin-core", "signet", "bip-0325", "output-script-descriptors", "tor-the-onion-router", "bip-0155", "bip-0157"]
-    sources:
-      - "https://bitcoincore.org/en/2021/01/14/release-0.21.0/"
-      - "https://bitcoincore.org/en/releases/0.21.0/"
-      - "https://bitcoinmagazine.com/technical/bitcoin-core-0-21-0-released-whats-new"
-
   - date: "2021-02-08"
     title: "Tesla achète 1,5 milliard de dollars de bitcoins"
     text: "Dans un document déposé auprès de la SEC, Tesla révèle avoir acheté pour 1,5 milliard de dollars de bitcoins en janvier et annonce qu'il acceptera le bitcoin en paiement de ses produits. Le cours dépasse 44 000 dollars le jour même."
     sources:
       - "https://www.cnbc.com/2021/02/08/tesla-buys-1point5-billion-in-bitcoin.html"
       - "https://bitcoinmagazine.com/markets/its-happening-tesla-buys-1-5-billion-of-bitcoin"
-
-  - date: "2021-02-16"
-    title: "Le bitcoin dépasse 50 000 dollars"
-    text: "Le cours du bitcoin franchit 50 000 dollars pour la première fois. Coin Metrics relève un record de 50 487 dollars vers 7 h 30, heure de New York, avant un repli sous ce seuil dans la journée."
-    related: ["ath-all-time-high"]
-    sources:
-      - "https://www.cnbc.com/2021/02/16/bitcoin-btc-price-hits-50000-for-the-first-time.html"
-      - "https://edition.cnn.com/2021/02/16/investing/bitcoin-50000-price-record/index.html"
 
   - date: "2021-02-18"
     title: "Premier ETF bitcoin d'Amérique du Nord"
@@ -59,46 +26,6 @@ events:
     sources:
       - "https://s21.q4cdn.com/671813756/files/doc_news/2021/02/1/Toronto-Stock-Exchange-Lists-Worlds-First-Bitcoin-ETF-2021-2-18-2021.pdf"
       - "https://forklog.com/en/news/first-bitcoin-etf-in-north-america-attracts-421m-in-two-days"
-
-  - date: "2021-02-19"
-    title: "Capitalisation de 1 000 milliards de dollars"
-    text: "La capitalisation du bitcoin dépasse 1 000 milliards de dollars pour la première fois, alors que le cours passe au-dessus de 53 697 dollars selon l'indice de CoinDesk, puis de 55 000 dollars en fin de séance."
-    related: ["market-cap"]
-    sources:
-      - "https://www.coindesk.com/markets/2021/02/19/bitcoin-market-value-tops-1t-as-price-passes-53697"
-      - "https://www.cnbc.com/2021/02/19/bitcoin-hits-1-trillion-in-market-value-as-cryptocurrency-surge-continues.html"
-
-  - date: "2021-02-24"
-    title: "MicroStrategy achète 19 452 bitcoins"
-    text: "MicroStrategy annonce l'achat d'environ 19 452 bitcoins pour 1,026 milliard de dollars, au prix moyen de 52 765 dollars. L'entreprise dirigée par Michael Saylor détient alors environ 90 531 bitcoins, acquis pour 2,171 milliards de dollars."
-    sources:
-      - "https://bitcoinmagazine.com/markets/microstrategy-buys-1-026-billion-of-bitcoin"
-      - "https://www.sec.gov/Archives/edgar/data/1050446/000119312521305105/filename1.htm"
-
-  - date: "2021-03-31"
-    title: "Sortie de c-lightning 0.10.0"
-    text: "L'implémentation Lightning c-lightning publie sa version 0.10.0, baptisée « Neutralizing Fee Therapy ». Elle améliore la commande `pay` et l'API, et ajoute une prise en charge expérimentale du double financement des canaux (*dual funding*)."
-    related: ["cln-c-lightning", "lightning-network"]
-    sources:
-      - "https://github.com/ElementsProject/lightning/releases/tag/v0.10.0"
-      - "https://bitcoinops.org/en/newsletters/2021/04/07/"
-
-  - date: "2021-04-14"
-    title: "Coinbase entre au Nasdaq"
-    text: "Coinbase entre au Nasdaq par cotation directe sous le symbole COIN. L'action ouvre à 381 dollars, pour un prix de référence de 250 dollars, et clôture à 328,28 dollars. Le même jour, le bitcoin atteint un record de 64 841 dollars selon Coin Metrics."
-    related: ["coinbase", "ath-all-time-high"]
-    sources:
-      - "https://www.cnbc.com/2021/04/14/coinbase-to-debut-on-nasdaq-in-direct-listing.html"
-      - "https://www.npr.org/2021/04/14/987380900/coinbase-a-bitcoin-startup-goes-public-is-crypto-really-the-future-of-finance"
-      - "https://www.cnbc.com/2021/04/14/bitcoin-btc-and-ether-eth-prices-rally-ahead-of-coinbase-listing.html"
-      - "https://www.coindesk.com/markets/2021/12/22/market-wrap-year-end-review-bitcoin-peaks-as-coinbase-goes-public"
-
-  - date: "2021-04-16"
-    title: "La Turquie interdit les paiements en cryptoactifs"
-    text: "La banque centrale de Turquie publie au Journal officiel un règlement qui interdit d'utiliser les cryptoactifs, directement ou indirectement, pour payer des biens et des services, à compter du 30 avril. Le négoce n'est pas visé. Le bitcoin perd plus de 4 % dans la journée."
-    sources:
-      - "https://www.aljazeera.com/economy/2021/4/16/turkey-bans-crypto-payments-and-bitcoin-feels-the-pain"
-      - "https://www.coindesk.com/markets/2021/04/16/turkey-to-ban-the-use-of-crypto-for-payments-bitcoin-falls"
 
   - date: "2021-05-01"
     title: "Début du signalement de Taproot (Speedy Trial)"
@@ -110,23 +37,6 @@ events:
       - "https://www.coindesk.com/tech/2021/05/01/bitcoin-taproot-activation-has-begun-miners-now-have-3-months-to-get-on-board"
       - "https://bitcoinmagazine.com/technical/bitcoin-core-0-21-1-taproot-code-out"
 
-  - date: "2021-05-12"
-    title: "Tesla suspend les paiements en bitcoins"
-    text: "Elon Musk annonce sur Twitter que Tesla suspend les achats de véhicules en bitcoins, en invoquant la part croissante des énergies fossiles, surtout du charbon, dans le minage. Tesla garde ses bitcoins. Le cours perd plusieurs milliers de dollars dans les minutes qui suivent."
-    related: ["minage"]
-    sources:
-      - "https://www.cnbc.com/2021/05/12/elon-musk-says-tesla-will-stop-accepting-bitcoin-for-car-purchases.html"
-      - "https://www.npr.org/2021/05/12/996360738/never-mind-elon-musk-says-tesla-wont-accept-bitcoin-for-car-purchases-any-more"
-
-  - date: "2021-05-19"
-    title: "Krach du 19 mai"
-    text: "Au lendemain d'une déclaration de trois associations financières chinoises qui interdisent aux banques et aux sociétés de paiement tout service lié aux cryptomonnaies, le bitcoin perd jusqu'à 30 % en séance et touche 30 001,51 dollars, puis remonte vers 38 000 dollars."
-    related: ["bear-market"]
-    sources:
-      - "https://www.cnbc.com/2021/05/19/bitcoin-btc-price-plunges-but-bottom-could-be-near-.html"
-      - "https://www.aljazeera.com/economy/2021/5/19/china-bans-finance-firms-from-servicing-crypto-transactions"
-      - "https://www.cnn.com/2021/05/19/investing/bitcoin-price-drop-china-crypto-intl-hnk/index.html"
-
   - date: "2021-05-21"
     title: "Pékin appelle à réprimer le minage"
     text: "Le comité de stabilité financière du Conseil d'État chinois, réuni par le vice-Premier ministre Liu He, appelle à « réprimer le minage et le négoce de bitcoins ». Le cours repasse sous 37 000 dollars."
@@ -134,21 +44,6 @@ events:
     sources:
       - "https://www.coindesk.com/markets/2021/05/21/bitcoin-falls-as-china-calls-for-crackdown-on-crypto-mining-trading"
       - "https://www.cnbc.com/2021/05/21/bitcoin-falls-after-china-calls-for-crackdown-on-bitcoin-mining-and-trading-behavior.html"
-
-  - date: "2021-06-05"
-    title: "Nayib Bukele annonce la loi Bitcoin"
-    text: "Dans une vidéo diffusée à la conférence Bitcoin 2021 de Miami, le président salvadorien Nayib Bukele annonce qu'il enverra la semaine suivante au Congrès un projet de loi pour donner cours légal au bitcoin. Il annonce aussi un partenariat avec Strike, l'application de paiement Lightning de Jack Mallers."
-    related: ["cours-legal"]
-    sources:
-      - "https://www.cnbc.com/2021/06/05/el-salvador-becomes-the-first-country-to-adopt-bitcoin-as-legal-tender-.html"
-      - "https://www.npr.org/2021/06/06/1003755600/bitcoin-cryptocurrency-money-el-salvador"
-
-  - date: "2021-06-07"
-    title: "Saisie de la rançon de Colonial Pipeline"
-    text: "Le département de la Justice américain annonce avoir saisi environ 63,7 des 75 bitcoins de rançon versés par Colonial Pipeline au groupe de rançongiciel DarkSide. Les enquêteurs ont suivi les fonds sur la chaîne jusqu'à une adresse contrôlée par le FBI."
-    sources:
-      - "https://www.coindesk.com/markets/2021/06/07/federal-officials-recover-bitcoin-ransom-from-colonial-pipeline-attack"
-      - "https://www.npr.org/2021/06/07/1004050873/u-s-retrieves-some-of-the-colonial-pipeline-ransom"
 
   - date: "2021-06-09"
     title: "Le Salvador vote la loi Bitcoin"
@@ -167,22 +62,6 @@ events:
       - "https://bitcoinmagazine.com/technical/taproot-locks-in"
       - "https://www.coindesk.com/tech/2021/06/12/locked-in-bitcoins-taproot-upgrade-gets-its-90-mandate"
 
-  - date: "2021-06-17"
-    title: "Sortie de lnd 0.13.0"
-    text: "lnd 0.13.0-beta fait des sorties d'ancrage (*anchor outputs*) le format par défaut des transactions d'engagement. Le nœud fonctionne aussi avec un nœud Bitcoin élagué (*pruned*) et envoie et reçoit des paiements AMP."
-    related: ["lnd", "anchor-outputs", "atomic-multi-path-payments"]
-    sources:
-      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.13.0-beta"
-      - "https://bitcoinops.org/en/newsletters/2021/06/23/"
-
-  - date: "2021-06-28"
-    title: "Bitcoin.org condamné à retirer le livre blanc"
-    text: "Par un jugement par défaut, la Haute Cour de Londres ordonne à Cøbra, l'administrateur pseudonyme de Bitcoin.org, de retirer le livre blanc pour les visiteurs britanniques. Craig Wright, qui prétend être Satoshi Nakamoto, revendiquait un droit d'auteur sur le texte. Cøbra n'a pas comparu pour garder son anonymat."
-    related: ["white-paper", "nakamoto-satoshi"]
-    sources:
-      - "https://decrypt.co/74657/bitcoin-inventor-whitepaper-lawsuit-craig-wright-cobra"
-      - "https://www.coindesk.com/markets/2021/06/29/uk-court-orders-bitcoinorg-to-remove-white-paper-following-craig-wright-lawsuit"
-
   - date: "2021-07-03"
     title: "Plus forte baisse de difficulté de l'histoire"
     text: "L'ajustement du bloc 689 472 abaisse la difficulté de minage de 27,94 %, la plus forte baisse depuis 2009. Il suit l'effondrement du hashrate provoqué par la fermeture des fermes de minage en Chine."
@@ -200,46 +79,12 @@ events:
       - "https://www.coindesk.com/policy/2021/09/07/bitcoin-now-legal-tender-in-el-salvador-marking-world-first"
       - "https://www.cnbc.com/2021/09/07/bitcoin-retreats-from-the-highest-level-since-may-as-el-salvador-adopts-it-as-legal-tender.html"
 
-  - date: "2021-09-13"
-    title: "Sortie de Bitcoin Core 22.0"
-    text: "Bitcoin Core 22.0 abandonne le 0 initial de la numérotation et devient la première version majeure compatible avec Taproot. Elle ajoute les connexions par le réseau anonyme I2P et la gestion complète des portefeuilles matériels dans l'interface graphique, via HWI."
-    related: ["bitcoin-core", "i2p", "hardware-wallet", "hwi", "taproot"]
-    sources:
-      - "https://bitcoincore.org/en/2021/09/13/release-22.0/"
-      - "https://bitcoinmagazine.com/technical/new-bitcoin-core-release-taproot"
-      - "https://decrypt.co/80904/new-bitcoin-core-release-adds-taproot-what-you-need-know"
-
-  - date: "2021-09-23"
-    title: "Pourboires en bitcoins sur Twitter"
-    text: "Twitter ouvre ses pourboires (*Tips*) à tous les utilisateurs iOS et y ajoute le bitcoin : chacun peut les recevoir sur une adresse Bitcoin ou sur un portefeuille Lightning, grâce à l'intégration de Strike. Twitter ne prélève aucune commission."
-    related: ["lightning-network"]
-    sources:
-      - "https://www.cnbc.com/2021/09/23/you-can-now-get-paid-in-bitcoin-to-use-twitter.html"
-      - "https://techcrunch.com/2021/09/23/twitter-accelerates-again-with-bitcoin-tips-nfts-recorded-spaces-creator-fund-and-more/"
-
   - date: "2021-09-24"
     title: "La Chine déclare illégales les transactions en cryptomonnaies"
     text: "La Banque populaire de Chine déclare illégales toutes les activités liées aux cryptomonnaies, y compris les services que des plateformes étrangères rendent aux résidents chinois. Le bitcoin perd environ 2 000 dollars dans la journée."
     sources:
       - "https://www.npr.org/2021/09/24/1040381774/china-cryptocurrency-transactions-illegal-bitcoin"
       - "https://www.coindesk.com/markets/2021/09/24/bitcoin-drops-2k-as-china-declares-cryptocurrency-related-business-illegal"
-
-  - date: "2021-10-04"
-    title: "Failles des HTLC trop petits sur Lightning"
-    text: "Antoine Riard publie sur la liste lightning-dev les CVE-2021-41591, 41592 et 41593, qui touchent eclair, lnd et c-lightning. Les HTLC trop petits pour exister sur la chaîne pouvaient représenter 20 % ou plus d'un canal, valeur perdue en frais si la transaction d'engagement est publiée."
-    related: ["htlc", "trimmed-htlc", "dust", "lightning-network"]
-    sources:
-      - "https://web.archive.org/web/2022/https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-October/003257.html"
-      - "https://bitcoinops.org/en/newsletters/2021/10/13/"
-
-  - date: "2021-10-13"
-    title: "Les États-Unis, premier pays du minage"
-    text: "Les données du Cambridge Centre for Alternative Finance placent les États-Unis en tête du minage avec 35,4 % du hashrate mondial fin août, devant le Kazakhstan (18,1 %) et la Russie (11 %). La part de la Chine tombe pratiquement à zéro après l'interdiction."
-    related: ["hashrate", "minage"]
-    sources:
-      - "https://www.coindesk.com/business/2021/10/13/us-claims-bitcoin-mining-crown-following-china-crackdown"
-      - "https://www.cnbc.com/2021/10/13/us-beats-china-as-the-number-one-destination-for-bitcoin-miners.html"
-      - "https://www.jbs.cam.ac.uk/2022/bitcoin-mining-electricity-update-new-data/"
 
   - date: "2021-10-19"
     title: "Premier ETF bitcoin américain (BITO)"
@@ -257,14 +102,6 @@ events:
       - "https://www.coindesk.com/markets/2021/11/10/market-wrap-higher-inflation-expected-to-send-bitcoin-and-gold-higher-into-end-of-year"
       - "https://forklog.com/en/bitcoin-price-hits-all-time-high-at-69000/"
 
-  - date: "2021-11-12"
-    title: "La SEC rejette l'ETF bitcoin au comptant de VanEck"
-    text: "La SEC rejette la demande de Cboe BZX de coter l'ETF bitcoin au comptant de VanEck, faute de garanties suffisantes contre la fraude et la manipulation. Les premiers ETF sur contrats à terme s'échangent depuis octobre."
-    related: ["etf"]
-    sources:
-      - "https://www.cnbc.com/2021/11/12/sec-rejects-vaneck-etf-that-sought-to-track-bitcoin-directly.html"
-      - "https://www.coindesk.com/business/2021/11/12/sec-rejects-van-ecks-spot-bitcoin-etf-proposal"
-
   - date: "2021-11-14"
     title: "Activation de Taproot"
     text: "Le bloc 709 632, miné par F2Pool à 5 h 15 UTC, active Taproot : les signatures de Schnorr (BIP-0340), Taproot (BIP-0341) et Tapscript (BIP-0342) entrent en vigueur. Plusieurs grands pools n'incluent d'abord aucune dépense Taproot dans leurs blocs."
@@ -273,35 +110,3 @@ events:
       - "https://mempool.space/block/709632"
       - "https://forklog.com/en/taproot-upgrade-activated-on-the-bitcoin-network/"
       - "https://bitcoinops.org/en/newsletters/2021/11/17/"
-
-  - date: "2021-11-15"
-    title: "Loi américaine sur les infrastructures"
-    text: "Joe Biden promulgue la loi sur les infrastructures, qui élargit la définition du courtier (*broker*) pour l'IRS. Les plateformes devront déclarer les opérations de leurs clients, et toute entreprise qui reçoit plus de 10 000 dollars en cryptomonnaies devra le signaler."
-    sources:
-      - "https://www.coindesk.com/policy/2021/11/15/president-biden-signs-infrastructure-bill-containing-crypto-broker-reporting-requirement-into-law"
-      - "https://www.cnbc.com/2021/11/15/crypto-news-updates-infrastructure-bill-to-be-signed-bitcoin-taproot-upgrade.html"
-
-  - date: "2021-11-20"
-    title: "Annonce de Bitcoin City"
-    text: "Nayib Bukele annonce Bitcoin City, une ville prévue dans le département de La Unión, alimentée par la géothermie d'un volcan et sans autre impôt que la TVA. Samson Mow, de Blockstream, présente une obligation de 1 milliard de dollars émise sur Liquid, dont la moitié servirait à acheter des bitcoins."
-    related: ["liquid-network", "blockstream"]
-    sources:
-      - "https://www.cnn.com/2021/11/21/tech/el-salvador-bitcoin-city/index.html"
-      - "https://decrypt.co/86529/volcano-powered-bitcoin-city-coming-to-el-salvador-says-president-bukele"
-
-  - date: "2021-12-01"
-    title: "Square devient Block"
-    text: "Deux jours après avoir quitté la direction de Twitter, Jack Dorsey annonce que Square prend le nom de Block à compter du 10 décembre. Square Crypto, l'équipe consacrée au développement de Bitcoin, devient Spiral."
-    related: ["spiral"]
-    sources:
-      - "https://www.cnbc.com/2021/12/01/square-changes-corporate-name-to-block-.html"
-      - "https://techcrunch.com/2021/12/01/square-is-changing-its-name-to-block/"
-      - "https://www.npr.org/2021/11/29/1059756077/jack-dorsey-steps-down-as-twitter-ceo"
-
-  - date: "2021-12-06"
-    title: "Verdict du procès Kleiman contre Wright"
-    text: "Un jury fédéral de Floride juge que Craig Wright et Dave Kleiman n'étaient pas associés : la succession de Kleiman, qui réclamait la moitié d'environ 1,1 million de bitcoins minés par Satoshi Nakamoto, n'obtient rien. Wright doit verser 100 millions de dollars à W&K Info Defense Research."
-    related: ["nakamoto-satoshi"]
-    sources:
-      - "https://www.coindesk.com/markets/2021/12/06/craig-wright-found-not-liable-for-kleiman-business-partnership"
-      - "https://www.cnbc.com/2021/12/06/miami-jury-rules-in-favor-of-craig-wright-bitcoin-claimed-inventor.html"

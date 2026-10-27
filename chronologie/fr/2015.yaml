@@ -3,64 +3,6 @@
 # Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
 
 events:
-  - date: "2015-01-04"
-    title: "Piratage de Bitstamp"
-    text: "Des pirates compromettent des portefeuilles opérationnels de Bitstamp. La plateforme suspend son service le lendemain et chiffre la perte à moins de 19 000 BTC, environ 5 millions USD, une petite part de ses réserves gardées hors ligne."
-    related: ["cold-wallet"]
-    sources:
-      - "https://www.theregister.com/2015/01/07/hackers_pilfer_5_meelion_from_bitstamp_exchange/"
-      - "https://www.securityweek.com/major-bitcoin-exchange-bitstamp-warns-security-compromise"
-      - "https://thehackernews.com/2015/01/bitstamp-bitcoin-exchange-hacked.html"
-  - date: "2015-01-13"
-    title: "Ouverture du procès de Ross Ulbricht"
-    text: "Le procès de Ross Ulbricht s'ouvre devant le tribunal fédéral de Manhattan. Dans sa déclaration d'ouverture, son avocat Joshua Dratel reconnaît que son client a créé Silk Road, mais soutient qu'il a cédé le site à d'autres, qui l'ont ensuite piégé pour en faire le coupable."
-    related: ["silk-road"]
-    sources:
-      - "https://www.theregister.com/2015/01/14/ross_ulbricht_trial_day_1/"
-      - "https://www.kqed.org/news/10405420/trial-opens-for-alleged-silk-road-mastermind"
-      - "https://reason.com/2015/01/13/ross-ulbricht-trial-did-start-silk-road/printer/"
-  - date: "2015-01-14"
-    title: "Le cours passe sous 200 USD"
-    text: "Le bitcoin tombe sous 200 USD pour la première fois depuis octobre 2013. Selon Fortune, il touche 170,08 USD dans la matinée, contre environ 244 USD la veille, soit une chute de 30 % en une journée."
-    sources:
-      - "https://fortune.com/2015/01/14/bitcoin-continues-downward-spiral-plunges-below-200"
-      - "https://www.financemagnates.com/cryptocurrency/trading/bitcoin-price-crashes-to-below-200-as-floodgates-open/"
-  - date: "2015-01-20"
-    title: "Coinbase lève 75 millions USD"
-    text: "Coinbase annonce une levée de fonds de série C de 75 millions USD, la plus importante à ce jour pour une entreprise liée à Bitcoin. DFJ Growth la mène, rejoint par le New York Stock Exchange, le groupe financier USAA et la banque espagnole BBVA."
-    related: ["coinbase"]
-    sources:
-      - "https://fortune.com/2015/01/20/coinbase-raises-75-million-in-largest-ever-vc-round-for-bitcoin-company/"
-      - "https://www.entrepreneur.com/article/241995"
-  - date: "2015-01-26"
-    title: "Ouverture de Coinbase Exchange"
-    text: "Coinbase lance Coinbase Exchange, présentée comme la première plateforme d'échange de bitcoins régulée aux États-Unis. Elle s'ouvre aux clients de 24 États, six jours après la levée de 75 millions USD de l'entreprise."
-    related: ["coinbase"]
-    sources:
-      - "https://www.entrepreneur.com/article/242179"
-      - "https://marketplace.org/2015/01/26/bitcoin-gets-its-first-major-us-exchange"
-  - date: "2015-02-04"
-    title: "Ross Ulbricht reconnu coupable"
-    text: "Un jury fédéral de Manhattan déclare Ross Ulbricht, alias « Dread Pirate Roberts », coupable des 7 chefs d'accusation liés à Silk Road, le marché noir en ligne qu'il a créé et où les achats se payaient en bitcoins."
-    related: ["silk-road"]
-    sources:
-      - "https://www.justice.gov/archive/usao/nys/pressreleases/February15/UlbrichtRossVerdictPR.php?print=1"
-      - "https://www.kut.org/austin/2015-02-04/ross-ulbricht-accused-of-operating-silk-road-is-convicted-of-drug-charges"
-  - date: "2015-02-15"
-    title: "Vol de 7 170 BTC chez Bter"
-    text: "La plateforme chinoise Bter annonce le vol de 7 170 BTC, sortis de son portefeuille hors ligne en une seule transaction, et se met hors ligne. Elle offre une récompense de 720 BTC à qui l'aidera à retrouver les fonds."
-    related: ["cold-wallet"]
-    sources:
-      - "https://siliconangle.com/2015/02/16/multiple-bitcoin-exchanges-go-offline-over-weekend-several-hacked-bter-com-exco-in-hitbtc/"
-      - "https://www.hackread.com/chinese-bitcoin-exchange-bter-hacked-million-bitcoin-stolen/"
-  - date: "2015-02-16"
-    title: "Sortie de Bitcoin Core 0.10.0"
-    text: "Wladimir van der Laan annonce Bitcoin Core 0.10.0. Le nœud télécharge d'abord la chaîne des en-têtes, puis les blocs en parallèle depuis plusieurs pairs, ce qui accélère la synchronisation initiale. Les signatures passent d'OpenSSL à libsecp256k1."
-    related: ["bitcoin-core", "headers-first-sync", "libsecp256k1"]
-    sources:
-      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/54E3B6F1.6070407@timblokdijk.nl/"
-      - "https://bitcoinist.com/bitcoin-core-version-0-10-0-released/amp/"
-      - "https://bitcoin.org/en/release/v0.10.0"
   - date: "2015-02-23"
     title: "Première présentation du Lightning Network"
     text: "Joseph Poon et Thaddeus Dryja présentent le Lightning Network lors d'un séminaire de développeurs à San Francisco : un réseau de canaux de paiement hors chaîne pour traiter des milliards de transactions par jour. Le brouillon de leur livre blanc (version 0.5) circule le même mois."
@@ -69,68 +11,6 @@ events:
       - "https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/"
       - "https://journalducoin.com/bitcoin/invention-bitcoin-lightning-network-influence-debat-scalabilite"
       - "https://voltage.cloud/blog/life-of-lightning"
-  - date: "2015-03-18"
-    title: "Disparition du marché Evolution"
-    text: "Evolution, un marché noir accessible seulement par Tor qui cherchait à prendre la place de Silk Road, bloque les retraits puis disparaît. Ses administrateurs partent avec les bitcoins des utilisateurs, plus de 12 millions USD selon des vendeurs."
-    related: ["silk-road", "tor-the-onion-router"]
-    sources:
-      - "https://krebsonsecurity.com/2015/03/dark-webs-evolution-market-vanishes/"
-      - "https://www.bitdefender.com/blog/hotforsecurity/dark-web-drug-market-evolution-vanishes-off-the-net-taking-millions-of-dollars-with-it/"
-  - date: "2015-03-30"
-    title: "Deux agents fédéraux inculpés pour vol de bitcoins"
-    text: "Le département de la Justice américain inculpe Carl Force, ex-agent de la DEA, et Shaun Bridges, ex-agent du Secret Service. Membres de la *task force* de Baltimore sur Silk Road, ils sont accusés d'avoir détourné des bitcoins pendant l'enquête."
-    related: ["silk-road"]
-    sources:
-      - "https://web.archive.org/web/2016/https://www.justice.gov/opa/pr/former-federal-agents-charged-bitcoin-money-laundering-and-wire-fraud"
-      - "https://thehackernews.com/2015/03/silk-road-fedral-agents-charged.html"
-  - date: "2015-04-22"
-    title: "Le MIT finance trois développeurs de Bitcoin Core"
-    text: "Gavin Andresen annonce rejoindre la Digital Currency Initiative, lancée par le MIT Media Lab. Elle reprend son salaire et ceux de Wladimir van der Laan et Cory Fields, jusqu'ici payés par une Bitcoin Foundation qu'un membre de son conseil dit de fait en faillite."
-    related: ["bitcoin-core", "fondation-bitcoin"]
-    sources:
-      - "https://bitcoinmagazine.com/business/gavin-andresen-core-developers-join-mits-digital-currency-initiative-1429743725"
-      - "https://cointelegraph.com/news/mit-to-take-over-funding-of-three-bitcoin-core-developers"
-  - date: "2015-05-04"
-    title: "Premiers échanges de GBTC"
-    text: "Les parts du Bitcoin Investment Trust de Grayscale s'échangent pour la première fois sur le marché hors cote OTCQX, sous le symbole GBTC. Chaque part représente un dixième de bitcoin, et les premiers échanges se font avec une prime de 58 % sur cette valeur."
-    sources:
-      - "https://www.sec.gov/Archives/edgar/data/0001588489/000119312517158456/d157414ds1a.htm"
-      - "https://www.financemagnates.com/cryptocurrency/news/weekly-recap-gbtc-trades-itbit-scores/"
-  - date: "2015-05-07"
-    title: "Première charte new-yorkaise pour itBit"
-    text: "Le régulateur financier de l'État de New York (NYDFS) accorde à la plateforme d'échange itBit une charte de *trust company*, la première délivrée à une entreprise de monnaie virtuelle. itBit peut opérer aussitôt, avant même la publication de la BitLicense définitive."
-    sources:
-      - "https://www.dfs.ny.gov/reports_and_publications/press_releases/pr1505071"
-      - "https://www.financemagnates.com/cryptocurrency/news/weekly-recap-gbtc-trades-itbit-scores/"
-  - date: "2015-05-29"
-    title: "Ross Ulbricht condamné à la prison à vie"
-    text: "La juge fédérale Katherine Forrest condamne Ross Ulbricht à la réclusion à perpétuité. Silk Road a permis plus de 200 millions USD de ventes anonymes de drogue, payées en bitcoins."
-    related: ["silk-road"]
-    sources:
-      - "https://www.entrepreneur.com/business-news/silk-road-creator-ross-ulbricht-sentenced-to-life-in-prison/246793"
-      - "https://www.wgbh.org/news/2015-05-29/silk-road-founder-ross-ulbricht-sentenced-to-life-in-prison"
-  - date: "2015-06"
-    title: "Blockstream publie Sidechain Elements"
-    text: "Blockstream publie en open source Sidechain Elements, une première *sidechain* expérimentale reliée au testnet de Bitcoin, sans vrais bitcoins. Elle sert à tester des fonctions absentes de Bitcoin, dont les *Confidential Transactions*."
-    related: ["sidechain", "elements", "blockstream", "confidential-transactions"]
-    sources:
-      - "https://www.coindesk.com/tech/2015/06/09/blockstream-to-release-first-open-source-code-for-sidechains"
-      - "https://www.financemagnates.com/cryptocurrency/innovation/blockstream-releasing-sidechains-open-source-code/"
-  - date: "2015-06"
-    title: "Jeff Garzik propose le BIP-0100"
-    text: "Jeff Garzik propose le BIP-0100, qui remplace la limite fixe de 1 Mo par une limite que les mineurs ajustent en votant dans leurs blocs. Fin août, F2Pool, BTCChina, BitFury et KnCMiner le soutiennent plutôt que Bitcoin XT."
-    related: ["bip-0100", "max-bloc-size", "blocksize-war"]
-    sources:
-      - "https://github.com/bitcoin/bips/blob/master/bip-0100.mediawiki"
-      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CALqxMTHrnSS9MGgKO-5+=fVhiOOvk12Recs11S0PcSUxQT1wdQ@mail.gmail.com/"
-      - "https://bitcoinmagazine.com/?p=25999"
-  - date: "2015-06-03"
-    title: "BitLicense définitive à New York"
-    text: "Benjamin Lawsky, surintendant du département des services financiers de l'État de New York (NYDFS), publie la version finale de la BitLicense, le régime d'agrément des entreprises de monnaie virtuelle, près d'un an après le premier projet."
-    sources:
-      - "https://www.coindesk.com/markets/2015/06/03/new-york-releases-final-bitlicense"
-      - "https://www.dwt.com/blogs/financial-services-law-advisor/2015/06/plus-a-changenydfs-releases-final-bitlicense-regul"
-      - "https://www.arnoldporter.com/en/perspectives/publications/2015/06/_9223372036854775808_11914"
   - date: "2015-06-22"
     title: "Gavin Andresen propose le BIP-0101"
     text: "Gavin Andresen soumet sur la liste bitcoin-dev le brouillon du futur BIP-0101 : un hard fork qui porte la taille maximale des blocs à 8 Mo le 11 janvier 2016, puis la double tous les deux ans jusqu'en 2036."
@@ -155,20 +35,6 @@ events:
       - "https://bitcoin.org/spv-mining"
       - "https://welivesecurity.com/2015/07/06/outdated-bitcoin-mining-software-loses-miners-thousands"
       - "https://www.csoonline.com/article/2943966/bitcoin-outdated-software-creating-invalid-cryptocurrency.html"
-  - date: "2015-07-12"
-    title: "Sortie de Bitcoin Core 0.11.0"
-    text: "Bitcoin Core 0.11.0 permet de faire tourner un nœud qui valide tout sans garder l'historique complet : l'option `-prune` supprime les anciens fichiers de blocs au-delà d'un quota d'espace disque fixé par l'utilisateur."
-    related: ["bitcoin-core", "noeud-elague"]
-    sources:
-      - "https://bitcoincore.org/en/releases/0.11.0/"
-      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/20150712154910.GA21345@amethyst.visucore.com/"
-  - date: "2015-08-01"
-    title: "Arrestation de Mark Karpelès"
-    text: "La police de Tokyo arrête Mark Karpelès, patron de Mt. Gox, soupçonné d'avoir manipulé le système informatique de la plateforme en 2013 pour gonfler le solde de son propre compte. L'AFP évalue à près de 390 millions USD les bitcoins disparus chez Mt. Gox."
-    related: ["mtgox"]
-    sources:
-      - "https://www.nbcnews.com/news/amp/ncna402391"
-      - "https://www.aljazeera.com/amp/news/2015/8/1/japan-arrests-mtgox-bitcoin-head-over-missing-387m"
   - date: "2015-08-15"
     title: "Sortie de Bitcoin XT 0.11A"
     text: "Mike Hearn publie Bitcoin XT 0.11A, une variante de Bitcoin Core qui intègre le BIP-0101. Si 75 % des 1 000 derniers blocs le signalent, ses nœuds acceptent des blocs de 8 Mo. Gavin Andresen soutient le projet."
@@ -177,13 +43,6 @@ events:
       - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CA+w+GKT7t5OahS-+P=QAmOyFzPnOs4J6KSo+mhSrC0YggmMupg@mail.gmail.com/"
       - "https://en.bitcoin.it/wiki/Bitcoin_XT"
       - "https://www.pymnts.com/news/2015/bitcoin-at-war/"
-  - date: "2015-09-12"
-    title: "Scaling Bitcoin à Montréal"
-    text: "Développeurs et chercheurs se réunissent les 12 et 13 septembre à Montréal pour le premier atelier Scaling Bitcoin, qui doit éclairer par des données le débat sur la capacité du réseau. Une seconde session suit à Hong Kong en décembre."
-    related: ["blocksize-war"]
-    sources:
-      - "https://scalingbitcoin.org/montreal2015/"
-      - "https://farside.co.uk/the-blocksize-war-chapter-3-scaling-i-montreal/"
   - date: "2015-09-17"
     title: "La CFTC range le bitcoin parmi les matières premières"
     text: "En sanctionnant la plateforme d'options Coinflip (Derivabit), la Commodity Futures Trading Commission américaine juge pour la première fois que le bitcoin et les autres monnaies virtuelles sont des matières premières (*commodities*) soumises au Commodity Exchange Act."
@@ -191,53 +50,12 @@ events:
       - "https://www.cftc.gov/PressRoom/PressReleases/7231-15"
       - "https://www.skadden.com/insights/publications/2015/09/cftc-asserts-jurisdiction-in-bitcoin-markets"
       - "https://cointelegraph.com/news/bitcoin-is-officially-a-commodity-in-the-us"
-  - date: "2015-09-21"
-    title: "21 Inc dévoile le Bitcoin Computer"
-    text: "La start-up 21 Inc, soutenue par Andreessen Horowitz, met en précommande sur Amazon le 21 Bitcoin Computer, à 399 USD. C'est un Raspberry Pi 2 couplé à une puce de minage, destiné aux développeurs qui veulent bâtir des services payés en bitcoins."
-    related: ["mineur"]
-    sources:
-      - "https://techcrunch.com/2015/09/21/21-announces-the-bitcoin-computer-a-mini-mining-machine-coupled-with-a-payment-system/"
-      - "https://www.theregister.com/2015/09/22/for_just_400_you_can_have_this_raspberry_pi_and_mine_bitcoin/"
-  - date: "2015-09-22"
-    title: "Première BitLicense pour Circle"
-    text: "Le NYDFS accorde sa première BitLicense à Circle Internet Financial, une start-up de Boston. Le régulateur new-yorkais a alors reçu 25 demandes."
-    sources:
-      - "https://web.archive.org/web/2016/http://www.dfs.ny.gov/about/press/pr1509221.htm"
-      - "https://www.csmonitor.com/Business/2015/0923/NY-hands-out-first-in-the-nation-license-to-digital-currency-firm"
-  - date: "2015-10-05"
-    title: "Charte new-yorkaise pour Gemini"
-    text: "Le NYDFS accorde une charte de *trust company* à Gemini, la plateforme d'échange de bitcoins de Cameron et Tyler Winklevoss. Elle annonce son ouverture au public pour le 8 octobre."
-    sources:
-      - "https://web.archive.org/web/2016/http://www.dfs.ny.gov/about/press/pr1510051.htm"
-      - "https://techcrunch.com/2015/10/05/winklevoss-twins-receive-approval-to-launch-bitcoin-exchange-gemini/"
-  - date: "2015-10-12"
-    title: "Blockstream annonce Liquid"
-    text: "Blockstream présente Liquid, sa première *sidechain* commerciale, conçue pour transférer des bitcoins entre plateformes d'échange en quelques secondes sans passer par la chaîne principale. Bitfinex, BTCC, Kraken, Unocoin et Xapo sont les premiers partenaires."
-    related: ["liquid-network", "sidechain", "blockstream"]
-    sources:
-      - "https://blockstream.com/2015/10/12/introducing-liquid/"
-      - "https://coindesk.com/markets/2015/10/13/blockstream-to-launch-first-sidechain-for-bitcoin-exchanges"
-      - "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-October/011508.html"
   - date: "2015-10-22"
     title: "La CJUE exonère de TVA l'échange de bitcoins"
     text: "Dans l'arrêt Hedqvist (C-264/14), la Cour de justice de l'Union européenne juge que l'échange de devises traditionnelles contre des bitcoins est exonéré de TVA, au même titre que les opérations sur les devises."
     sources:
       - "https://curia.europa.eu/jcms/upload/docs/application/pdf/2015-10/cp150128en.pdf"
       - "https://www.lexgo.be/en/news-and-articles/3381-european-court-of-justice-considers-the-exchange-of-traditional-currencies-for-bitcoins-exempt-from-vat"
-  - date: "2015-10-31"
-    title: "The Economist et « The trust machine »"
-    text: "The Economist consacre sa une à la *blockchain* sous le titre « The trust machine ». L'hebdomadaire soutient que la technologie derrière le bitcoin pourrait transformer le fonctionnement de l'économie, en laissant des inconnus coopérer sans intermédiaire de confiance."
-    related: ["blockchain"]
-    sources:
-      - "https://www.economist.com/leaders/2015/10/31/the-trust-machine"
-      - "https://cointelegraph.com/news/the-economist-asks-will-bitcoins-blockchain-change-the-world"
-  - date: "2015-11-13"
-    title: "Bitcoin Core 0.11.2 et le BIP-0065"
-    text: "Bitcoin Core 0.11.2 embarque le soft fork BIP-0065. Il ajoute l'opcode `OP_CHECKLOCKTIMEVERIFY`, qui rend une sortie indépensable jusqu'à une date ou une hauteur de bloc donnée."
-    related: ["bitcoin-core", "bip-0065", "op-checklocktimeverify-0xb1", "soft-fork"]
-    sources:
-      - "https://bitcoincore.org/en/releases/0.11.2/"
-      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/20151113131353.GA26622@amethyst.visucore.com/"
   - date: "2015-11-27"
     title: "Bitcoin Core intègre le RBF optionnel"
     text: "Wladimir van der Laan fusionne dans Bitcoin Core le *Replace-by-Fee* optionnel de Peter Todd. Une transaction qui le signale par son champ `nSequence` peut être remplacée dans la *mempool* par une version qui paie plus de frais. La fonction sort avec la version 0.12.0."
@@ -260,14 +78,6 @@ events:
     sources:
       - "https://mailing-list.bitcoindevs.xyz/bitcoindev/CAAS2fgQyVs1fAEj+vqp8E2=FRnqsgs7VUKqALNBHNxRMDsHdVg@mail.gmail.com/"
       - "https://bitcoincore.org/en/2015/12/21/capacity-increase/"
-  - date: "2015-12-08"
-    title: "Wired et Gizmodo désignent Craig Wright"
-    text: "Wired, puis Gizmodo quelques heures plus tard, présentent l'Australien Craig Wright comme le probable Satoshi Nakamoto, sur la foi de documents et de courriels divulgués. Wired reconnaît ensuite que ces pièces peuvent être un canular."
-    related: ["nakamoto-satoshi"]
-    sources:
-      - "https://www.wired.com/2015/12/bitcoins-creator-satoshi-nakamoto-is-probably-this-unknown-australian-genius/"
-      - "https://gizmodo.com/this-australian-says-he-and-his-dead-friend-invented-b-1746958692"
-      - "https://www.npr.org/sections/alltechconsidered/2015/12/09/459046266/where-in-the-world-is-satoshi-nakamoto-the-latest-in-the-bitcoin-saga"
   - date: "2015-12-14"
     title: "Activation du BIP-0065"
     text: "`OP_CHECKLOCKTIMEVERIFY` devient une règle de consensus à partir du bloc 388 381. Les nœuds à jour rejettent désormais les blocs de version inférieure à 4."

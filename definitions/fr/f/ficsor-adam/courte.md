@@ -1,1 +1,0 @@
-Ancien développeur de portefeuilles Bitcoin axés sur la confidentialité, connu sous le pseudonyme nopara73, coauteur du cadre ZeroLink (2017), créateur de Wasabi Wallet (2018) et coauteur de WabiSabi (2021).

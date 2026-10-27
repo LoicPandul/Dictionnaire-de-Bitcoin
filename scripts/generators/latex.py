@@ -13,6 +13,8 @@ import re
 from pathlib import Path
 from typing import Optional
 
+from . import images
+
 URL_TRAILING = ".,;:!?"
 
 
@@ -93,10 +95,11 @@ def _convert_table(table_text: str) -> Optional[str]:
     col_spec = "@{}" + " ".join([">{\\raggedright\\arraybackslash}X"] * n) + "@{}"
     out = [
         r"\par\vspace{0.25em}",
-        r"{\tablesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.3}\arrayrulecolor{black}\setlength{\arrayrulewidth}{0.3pt}",
+        r"{\tablesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.3}\setlength{\arrayrulewidth}{0.3pt}",
         r"\noindent\begin{xltabular}{\linewidth}{" + col_spec + "}",
-        r"\hline",
-        " & ".join(rf"\textbf{{{_cell(h)}}}" for h in header) + r" \\ \hline",
+        # Filets de 0,3 pt : ceux de l'en-tête en Figue, ceux des lignes en noir
+        r"\arrayrulecolor{figue}\hline",
+        " & ".join(rf"\textbf{{{_cell(h)}}}" for h in header) + r" \\ \hline\arrayrulecolor{black}",
     ]
     for row in rows:
         cells = [_cell(c) for c in row[:n]] + [""] * max(0, n - len(row))
@@ -124,8 +127,13 @@ def inline(text: str) -> str:
 
 
 def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_chars: int = 64,
-                      use_cartouche_h1: bool = False, inline_only: bool = False) -> str:
-    """Convertit du markdown du dictionnaire en LaTeX."""
+                      use_cartouche_h1: bool = False, inline_only: bool = False,
+                      color: bool = True, credits: Optional[dict] = None) -> str:
+    """Convertit du markdown du dictionnaire en LaTeX.
+
+    `color` : livre imprimé en couleur (schémas en couleur) ou en noir et blanc (versions « -nb »).
+    `credits` : crédit des images de tiers, par nom de fichier, imprimé sous l'image.
+    """
     store = []
 
     def keep(latex: str) -> str:
@@ -154,15 +162,16 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
     def image(m):
         if assets_dir is None:
             return ""
-        image_path = assets_dir / m.group(2)
-        # Le livre est imprimé en noir et blanc : la version « -nb » d'un schéma passe en priorité,
-        # en PDF vectoriel, sinon en PNG (charte 2027, section 6).
-        candidates = [image_path.with_name(image_path.stem + "-nb.pdf"),
-                      image_path.with_name(image_path.stem + "-nb" + image_path.suffix), image_path]
-        path = next(c for c in candidates if c.exists() or c == image_path).as_posix()
+        # Version couleur ou noir et blanc du schéma, vectorielle si possible (images.py).
+        path = images.for_print(assets_dir / m.group(2), color).as_posix()
         caption = ""
+        credit = (credits or {}).get(m.group(2))
+        if credit:
+            # Crédit d'une image de tiers : petit, en Écorce, sous l'image et avant la légende
+            caption += r"\par\vspace{1pt}{\creditsize\color{ecorce}" + _emphasis(escape(credit)) + r"\par}"
         if m.group(1).strip():
-            caption = (r"\par\vspace{2pt}{\footnotesize\itshape " + _emphasis(escape(m.group(1).strip()))
+            # Légende : texte secondaire, en Écorce (charte, section 2)
+            caption += (r"\par\vspace{2pt}{\footnotesize\itshape\color{ecorce} " + _emphasis(escape(m.group(1).strip()))
                        + r"\par}")
         return keep(rf"{{\centering\includegraphics[width=0.9\linewidth,keepaspectratio,height=0.42\textheight]{{{path}}}{caption}\par}}")
     content = re.sub(r"!\[([^\]]*)\]\(\./assets/([^)\s]+)\)", image, content)

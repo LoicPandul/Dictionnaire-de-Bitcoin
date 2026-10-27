@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Spécifications numérotées : BIP, BOLT, bLIP, NIP (specifications/<série>.yaml).
+Spécifications numérotées : BIP, BOLT, bLIP (specifications/<série>.yaml).
 
 Ce ne sont pas des définitions : chaque document a un numéro, un titre, un statut et un
 résumé en français. Quand le dictionnaire a déjà une entrée développée consacrée au
@@ -20,17 +20,16 @@ SERIES = {
     "bip": "BIP",
     "bolt": "BOLT",
     "blip": "bLIP",
-    "nip": "NIP",
 }
 
 
 @dataclass
 class SpecDoc:
     series: str
-    id: str                      # « BIP-0032 », « BOLT-02 », « bLIP-0001 », « NIP-7D »
+    id: str                      # « BIP-0032 », « BOLT-02 », « bLIP-0001 »
     sort_key: int
     title: str
-    status: List[str]            # une valeur (BIP, BOLT, bLIP) ou plusieurs étiquettes (NIP)
+    status: List[str]            # une valeur par document
     summary: str
     url: str = ""
     type: str = ""

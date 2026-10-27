@@ -1,1 +1,0 @@
-Mathématicien américain, coinventeur en 1985 de la cryptographie sur courbes elliptiques avec Neal Koblitz. Le logarithme discret sur courbe elliptique, qu'il propose d'exploiter, protège les clés de Bitcoin sur secp256k1.

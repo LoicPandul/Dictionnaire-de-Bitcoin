@@ -1,1 +1,0 @@
-Mathématicien croato-américain des probabilités (1906-1970), auteur d'un traité que le livre blanc de Bitcoin cite pour calculer, comme une ruine du joueur, la probabilité qu'un attaquant rattrape la chaîne honnête.

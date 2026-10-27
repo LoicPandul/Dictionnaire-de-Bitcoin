@@ -1,5 +1,0 @@
-Développeur Bitcoin, auteur du protocole Ark. Le 22 mai 2023, il publie sur la liste bitcoin-dev un message intitulé « Ark: An Alternative Privacy-preserving Second Layer Solution », où il présente une conception de seconde couche sur laquelle il dit travailler depuis quelques mois.
-
-Dans ce texte, un serveur toujours en ligne, l'Ark Service Provider (ASP), fournit la liquidité et crée toutes les cinq secondes des sessions de coinjoin aveugles, les pools. Les utilisateurs y détiennent des VTXO, des sorties virtuelles qui vivent hors chaîne sous une sortie partagée et expirent après quatre semaines. Un utilisateur peut convertir un VTXO en UTXO sur la chaîne sans demander l'accord de personne : c'est la sortie unilatérale. L'ASP, lui, ne peut balayer la sortie partagée qu'une fois le délai écoulé.
-
-Burak Keceli précise qu'Ark peut fonctionner sur Bitcoin sans modification, à condition que les destinataires soient en ligne pour cosigner une multisignature n-parmi-n. Une primitive de type covenant, comme BIP-0118 ou BIP-0119, supprimerait cette interactivité. Bitcoin Optech présente le 31 mai 2023 Ark comme un protocole de type joinpool.

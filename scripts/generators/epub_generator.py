@@ -49,6 +49,7 @@ blockquote { margin: 0.6em 1.5em; font-size: 0.95em; }
 img { max-width: 100%; }
 span.figure { display: block; text-align: center; margin: 0.8em 0; }
 span.legende { display: block; font-size: 0.8em; font-style: italic; margin-top: 0.3em; }
+span.credit { display: block; font-size: 0.7em; color: #6B6368; margin-top: 0.2em; }
 span.math-bloc { display: block; text-align: center; margin: 0.4em 0; }
 table { border-collapse: collapse; margin: 0.6em auto; font-size: 0.85em; }
 th, td { border: 1px solid #000; padding: 0.2em 0.4em; }
@@ -74,7 +75,8 @@ class _Converter:
         self.images = images          # chemin source → nom dans OEBPS/images
         self.has_math = False
 
-    def __call__(self, content: str, assets_dir: Optional[Path] = None, slug: str = "") -> str:
+    def __call__(self, content: str, assets_dir: Optional[Path] = None, slug: str = "",
+                 credits: Optional[Dict[str, str]] = None) -> str:
         store: List[str] = []
 
         def keep(xhtml: str) -> str:
@@ -109,6 +111,9 @@ class _Converter:
             # l'attribut alt, balisage conservé pour la légende visible.
             alt_plain = re.sub(r"\u0007(\d+)\u0007", lambda c: re.sub(r"<[^>]+>", "", store[int(c.group(1))]), m.group(1))
             caption = f'<span class="legende">{_french_spaces(m.group(1))}</span>' if m.group(1).strip() else ""
+            credit = (credits or {}).get(m.group(2))
+            if credit:  # crédit d'une image de tiers, en petit sous l'image (texte secondaire, Écorce)
+                caption = f'<span class="credit">{_xml(_french_spaces(credit))}</span>' + caption
             return "\n\n" + keep(f'<span class="figure"><img src="../images/{_xml(name)}" alt="{_xml(html.unescape(alt_plain))}"/>{caption}</span>') + "\n\n"
         content = IMAGE_RE.sub(image, content)
 
@@ -198,7 +203,7 @@ class EpubBuilder:
             meta.append(f"FR{NBSP}: {_xml(d.french_term)}")
         if meta:
             parts.append(f'<p class="meta">{" · ".join(meta)}</p>')
-        parts.append(self.convert(self.book.body(d, s), d.path / "assets", d.slug))
+        parts.append(self.convert(self.book.body(d, s), d.path / "assets", d.slug, d.credits))
         if s.version == "developpee":
             parts.append(self._see(self.book.cross_references(d), "Terme associé", "Termes associés"))
         parts.append("</section>")
@@ -233,7 +238,7 @@ class EpubBuilder:
         parts.append(self._see(self.book.related(doc.related), "Voir", "Voir"))
         linked = self.book.definition_for(doc)
         if s.detail and linked:
-            parts.append(self.convert(linked.content, linked.path / "assets", linked.slug))
+            parts.append(self.convert(linked.content, linked.path / "assets", linked.slug, linked.credits))
         parts.append("</section>")
         return "\n".join(p for p in parts if p)
 

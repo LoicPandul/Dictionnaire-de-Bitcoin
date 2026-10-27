@@ -281,7 +281,3 @@ categories:
   # Une définition par Bitcoin Lightning Improvement Proposal numérotée (bLIP-0001…). Le
   # terme générique « bLIP » reste dans la catégorie « Lightning Network ».
   - BLIP
-
-  # Une définition par Nostr Implementation Possibility numérotée (NIP-05…). Le terme
-  # générique « NIP » reste dans la catégorie « Nostr ».
-  - NIP

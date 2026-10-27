@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Validation des parties qui ne sont pas des définitions : spécifications (BIP, BOLT,
-bLIP, NIP) et chronologie.
+bLIP) et chronologie.
 """
 
 import re
@@ -30,8 +30,7 @@ def validate_specs(dictionary: Dictionary) -> List[str]:
             if not e.title:
                 errors.append(f"{where} title manquant")
             if not e.status:
-                if name != "nip":  # deux NIP n'ont aucune étiquette de statut dans leur dépôt
-                    errors.append(f"{where} status manquant")
+                errors.append(f"{where} status manquant")
             if not e.summary:
                 errors.append(f"{where} summary manquant")
             elif len(e.summary.split()) > MAX_SUMMARY_WORDS:

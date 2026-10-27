@@ -6,46 +6,46 @@
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 1643
+- **Nombre total de définitions** : 1536
 
 ## Définitions par lettre
 
 | Lettre | Nombre |
 |:------:|-------:|
-| A | 76 |
-| B | 343 |
-| C | 151 |
-| D | 60 |
-| E | 44 |
-| F | 49 |
-| G | 37 |
-| H | 44 |
-| I | 20 |
-| J | 13 |
-| K | 18 |
-| L | 58 |
-| M | 78 |
-| N | 43 |
-| O | 123 |
-| P | 106 |
-| Q | 7 |
-| R | 60 |
-| S | 166 |
-| T | 54 |
+| A | 72 |
+| B | 338 |
+| C | 145 |
+| D | 56 |
+| E | 42 |
+| F | 42 |
+| G | 32 |
+| H | 40 |
+| I | 19 |
+| J | 10 |
+| K | 10 |
+| L | 53 |
+| M | 75 |
+| N | 40 |
+| O | 121 |
+| P | 100 |
+| Q | 6 |
+| R | 52 |
+| S | 151 |
+| T | 50 |
 | U | 13 |
-| V | 26 |
-| W | 28 |
+| V | 22 |
+| W | 25 |
 | X | 7 |
 | Y | 2 |
-| Z | 17 |
+| Z | 13 |
 
 ## Top 5 des lettres les plus fournies
 
-1. **B** : 343 définitions
-2. **S** : 166 définitions
-3. **C** : 151 définitions
-4. **O** : 123 définitions
-5. **P** : 106 définitions
+1. **B** : 338 définitions
+2. **S** : 151 définitions
+3. **C** : 145 définitions
+4. **O** : 121 définitions
+5. **P** : 100 définitions
 
 ## Parties et catégories
 
@@ -101,38 +101,37 @@
 - **PLATEFORME D'ÉCHANGE** : 9
 - **OUTIL DE CONFIDENTIALITÉ** : 8
 
-### Personnes : 155
+### Personnes : 48
 
-- **DÉVELOPPEUR BITCOIN** : 61
-- **DÉVELOPPEUR DE SURCOUCHES** : 28
-- **CRYPTOGRAPHE ET INFORMATICIEN** : 25
-- **FIGURE DE L'ÉCOSYSTÈME** : 21
-- **ÉCONOMISTE** : 11
-- **CYPHERPUNK** : 9
+- **DÉVELOPPEUR BITCOIN** : 15
+- **CRYPTOGRAPHE ET INFORMATICIEN** : 11
+- **CYPHERPUNK** : 8
+- **DÉVELOPPEUR DE SURCOUCHES** : 5
+- **FIGURE DE L'ÉCOSYSTÈME** : 5
+- **ÉCONOMISTE** : 4
 
 ### Spécifications : 220
 
 - **BIP** : 194
 - **BLIP** : 14
 - **BOLT** : 12
-- **NIP** : 0
 
-Versions courtes : 1643 sur 1643.
+Versions courtes : 1536 sur 1536.
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 2785 occurrences
-- **transaction** : 1990 occurrences
-- **bloc** : 1166 occurrences
-- **signature** : 943 occurrences
-- **protocole** : 647 occurrences
-- **adresse** : 647 occurrences
-- **script** : 589 occurrences
-- **lightning** : 584 occurrences
-- **portefeuille** : 584 occurrences
-- **publique** : 552 occurrences
-- **paiement** : 551 occurrences
-- **utilisateur** : 518 occurrences
-- **réseau** : 513 occurrences
-- **version** : 507 occurrences
-- **sortie** : 484 occurrences
+- **bitcoin** : 2468 occurrences
+- **transaction** : 1923 occurrences
+- **bloc** : 1109 occurrences
+- **signature** : 898 occurrences
+- **adresse** : 620 occurrences
+- **protocole** : 612 occurrences
+- **script** : 571 occurrences
+- **publique** : 543 occurrences
+- **portefeuille** : 537 occurrences
+- **paiement** : 521 occurrences
+- **lightning** : 514 occurrences
+- **utilisateur** : 502 occurrences
+- **réseau** : 489 occurrences
+- **clés** : 455 occurrences
+- **sortie** : 455 occurrences

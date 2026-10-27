@@ -45,14 +45,6 @@ events:
       - "https://blockstream.info/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16"
       - "https://bitcointalk.org/index.php?topic=155054.0"
 
-  - date: "2009-02-11"
-    title: "Satoshi Nakamoto présente Bitcoin à la P2P Foundation"
-    text: "Satoshi Nakamoto présente Bitcoin sur le forum de la P2P Foundation. Il y écrit que le problème de fond des monnaies conventionnelles est la confiance qu'elles exigent, envers la banque centrale qui ne doit pas déprécier la monnaie et envers les banques."
-    related: ["nakamoto-satoshi"]
-    sources:
-      - "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/"
-      - "https://web.archive.org/web/20090221024857/http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"
-
   - date: "2009-10-05"
     title: "Premier taux de change publié entre bitcoin et dollar"
     text: "Le site New Liberty Standard publie son premier taux : 1 USD vaut 1 309,03 BTC. Le prix ne vient pas d'échanges réels mais d'un calcul fondé sur le coût de l'électricité nécessaire pour miner ces bitcoins."
@@ -66,29 +58,3 @@ events:
     sources:
       - "https://twitter.com/marttimalmi/status/423455561703624704"
       - "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
-
-  - date: "2009-11-22"
-    title: "Ouverture du forum Bitcoin"
-    text: "Satoshi Nakamoto ouvre le nouveau forum Bitcoin, hébergé par Martti Malmi, futur bitcointalk.org. Il y republie une sélection de fils de l'ancien forum de SourceForge."
-    related: ["bitcointalk", "nakamoto-satoshi"]
-    sources:
-      - "https://bitcointalk.org/index.php?topic=5.msg28#msg28"
-      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/5/"
-      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/"
-
-  - date: "2009-12-16"
-    title: "Sortie de Bitcoin 0.2"
-    text: "Bitcoin 0.2 apporte une version Linux, le démarrage automatique, le minage sur plusieurs processeurs et la connexion par proxy, pour passer par Tor. Satoshi Nakamoto remercie Martti Malmi pour son travail sur le code."
-    related: ["bitcoin-core"]
-    sources:
-      - "https://bitcointalk.org/index.php?topic=16.msg73#msg73"
-      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/"
-      - "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/29/"
-
-  - date: "2009-12-30"
-    title: "Première hausse de la difficulté"
-    text: "Au bloc 32 256, la difficulté de minage augmente pour la première fois : elle passe de 1, sa valeur minimale, à 1,18."
-    related: ["difficulte", "ajustement-de-la-difficulte"]
-    sources:
-      - "https://mempool.space/block/000000004f2886a170adb7204cb0c7a824217dd24d11a74423d564c4e0904967"
-      - "https://blockstream.info/block/000000004f2886a170adb7204cb0c7a824217dd24d11a74423d564c4e0904967"

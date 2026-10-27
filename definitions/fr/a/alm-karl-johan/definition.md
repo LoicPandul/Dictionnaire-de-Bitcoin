@@ -1,7 +1,0 @@
-Développeur de Bitcoin Core, auteur des BIP-0322 et BIP-0325 et ancien éditeur des BIP, connu sur GitHub sous le pseudonyme kallewoof.
-
-En 2017, il propose le BIP-0154, qui veut protéger les emplacements de connexion d'un nœud contre la saturation en réservant une partie des connexions entrantes aux pairs qui résolvent un défi de preuve de travail ; le BIP, retiré par son auteur en 2019 puis clos, n'a jamais été intégré à Bitcoin Core. En septembre 2018, il obtient le numéro du BIP-0322, qu'Oliver Gugger rejoint comme coauteur en 2026 : un format générique de messages signés, qui permet de prouver la maîtrise d'une adresse, y compris pour un script ou une adresse Taproot dans sa version de 2026, là où l'ancien format se limitait aux adresses `P2PKH`.
-
-En mars 2019, il reçoit le numéro du BIP-0325, qu'Anthony Towns rejoint comme coauteur en 2020 et qui définit le signet : un réseau de test dans lequel chaque bloc doit porter, en plus de la preuve de travail, une signature qui satisfait un script fixé à l'avance (une clé, ou plusieurs), ce qui rend le réseau prévisible là où le *testnet* peut rester à l'arrêt ou subir des réorganisations. Il écrit l'essentiel du code, fusionné dans Bitcoin Core le 21 septembre 2020 et livré dans la version 0.21.0, publiée en janvier 2021.
-
-Le 11 juin 2021, il rejoint les éditeurs des BIP, ces relecteurs qui attribuent les numéros et fusionnent les propositions (BIP-0002, puis BIP-0003). Il quitte la liste le 23 avril 2024.

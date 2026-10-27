@@ -1,1 +1,0 @@
-Fondateur de Digital Currency Group en 2015. En mai 2017, plus de 50 entreprises signent son New York Agreement, qui associe SegWit à un hard fork de 2 Mo (SegWit2x) : SegWit s'active en août, le hard fork est suspendu le 8 novembre 2017.

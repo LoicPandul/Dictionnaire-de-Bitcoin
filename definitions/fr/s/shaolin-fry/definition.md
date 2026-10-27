@@ -1,7 +1,0 @@
-Développeur, auteur du BIP-0148 et du BIP-0149 sur l'activation forcée de SegWit, et coauteur du BIP-0008.
-
-Il signe « shaolinfry » ses messages sur la liste bitcoin-dev, et « Shaolin Fry » dans l'en-tête de ses BIP ; CoinDesk le décrit en 2017 comme un contributeur pseudonyme. Le 25 février 2017, il y publie « Moving towards user activated soft fork activation » : il reproche à l'activation par signalement des mineurs (BIP-0009) de laisser une minorité de puissance de calcul bloquer un changement, et propose de combiner ce mécanisme avec une date butoir, un *UASF* (*User Activated Soft Fork*). Il rédige aussi le BIP-0008 avec Luke Dashjr, dont le numéro est attribué le 20 avril 2017.
-
-Le 12 mars 2017, il publie sur bitcoin-dev le brouillon d'un BIP de date butoir pour SegWit ; le numéro 148 lui est attribué le 19 mars. Ce BIP prévoit que les nœuds qui l'appliquent rejettent à partir du 1er août 2017 les blocs ne signalant pas SegWit, si le déploiement existant n'est pas déjà verrouillé ou activé, sur le modèle de la date butoir du P2SH (BIP-0016). Le 1er mai 2017, il reçoit le numéro du BIP-0149, un second déploiement de SegWit avec verrouillage garanti à l'échéance, retiré en août 2017 et aujourd'hui au statut *Closed*. Le 25 avril 2017, CoinDesk rapporte qu'il révise sa proposition, que Gregory Maxwell et d'autres développeurs jugent trop perturbatrice.
-
-Le BIP-0148 porte le statut *Deployed* dans le dépôt des BIP. Pour le contexte, voir *Segregated Witness* et la *Blocksize War*.

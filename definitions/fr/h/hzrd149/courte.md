@@ -1,1 +1,0 @@
-Développeur pseudonyme, auteur du client Nostr noStrudel et créateur de la spécification Blossom (février 2024), qui permet de stocker des fichiers adressés par leur empreinte SHA256 sur des serveurs HTTP.

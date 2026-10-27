@@ -1,1 +1,0 @@
-Cryptographe de l'université de Waterloo, coauteur en 2009 du format de paquets Sphinx, base du routage en oignon de Lightning, et en 2020 de FROST, schéma de signature Schnorr à seuil cité par BIP-0340.

@@ -1,1 +1,0 @@
-Développeur de Fedimint, protocole de *mint* d'ecash chaumienne tenue par une fédération de gardiens, dont il écrit le premier commit en 2021. Il cofonde en 2022 la société Fedi avec Obi Nwosu et Justin Moon.

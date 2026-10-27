@@ -1,7 +1,0 @@
-Développeur de logiciels de confidentialité pour Bitcoin, auteur de JoinMarket, d'Electrum Personal Server et d'une conception de coinswap.
-
-Le 9 janvier 2015, il annonce sur Bitcointalk JoinMarket, une implémentation de coinjoin organisée en marché : des teneurs de liquidité (*makers*) offrent leurs bitcoins contre des frais, et des preneurs (*takers*) les utilisent pour réaliser leurs coinjoins. Le 8 février 2018, il présente sur la liste bitcoin-dev la version alpha d'Electrum Personal Server, un serveur conçu pour un seul utilisateur, qui relie le portefeuille Electrum à son propre nœud complet.
-
-Le 25 mai 2020, il publie le document de conception d'une implémentation de coinswap, dans lequel les *fidelity bonds* servent de protection contre les attaques Sybil. Le 17 février 2021, il présente le projet Teleport sur bitcoin-dev, avec un coinswap à plusieurs sauts sur testnet. En 2021, JoinMarket intègre les *fidelity bonds* à partir de sa version 0.9.
-
-Il est l'auteur de BIP-0326 (assigné le 10 juin 2021), qui propose que les portefeuilles règlent aussi `nSequence`, une fois sur deux, dans les transactions Taproot, en complément de `nLockTime` pour la protection contre le *fee sniping*, afin d'élargir l'ensemble d'anonymat des protocoles hors chaîne. Avec Thebora Kompanioni, il écrit BIP-0046 (assigné le 1er avril 2022), le schéma de dérivation d'adresses verrouillées dans le temps pour les *fidelity bonds*.

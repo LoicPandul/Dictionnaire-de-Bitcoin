@@ -1,1 +1,0 @@
-Cryptographe belge de l'Université catholique de Louvain. Il cosigne en mai 1999 un service d'horodatage à confiance minimale pour le projet TIMESEC, que le livre blanc de Bitcoin cite en référence [2].

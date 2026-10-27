@@ -1,7 +1,0 @@
-Développeur de logiciels pour Nostr, qui signe pablof7z, auteur de la bibliothèque NDK et de NIP qui relient Nostr à des paiements Lightning et à l'ecash Cashu.
-
-Le premier commit de NDK (*Nostr Development Kit*) date du 16 mars 2023. Cette bibliothèque TypeScript prend en charge, pour les applications, la connexion aux relais, les abonnements et la signature des événements. OpenSats la retient parmi les projets de sa première vague de subventions Nostr, annoncée le 8 juillet 2023.
-
-Le 3 juillet 2023, il dépose le premier commit de ce qui devient NIP-90, qui définit les DVM (*Data Vending Machine*), des services qui exécutent un calcul à la demande, souvent contre un paiement Lightning. À sa fusion, le texte portait son nom et celui de dontbelievethehype comme auteurs ; ces mentions ont été retirées de tous les NIP en novembre 2023. La pull request, ouverte par lui le 25 juillet, est fusionnée le 29 octobre 2023.
-
-Le 25 octobre 2024, fiatjaf fusionne sa pull request qui ajoute NIP-60 et NIP-61. NIP-60 décrit un portefeuille Cashu dont l'état est stocké sur des relais, pour le retrouver d'une application à l'autre. NIP-61 définit le nutzap, un jeton Cashu verrouillé pour son destinataire et publié dans un événement Nostr, et dont le paiement vaut lui-même reçu. Ces deux textes sont simplifiés ensuite par fiatjaf, en février 2025, puis modifiés par d'autres contributeurs. NIP-90 est marqué `unrecommended` dans le dépôt des NIP depuis mai 2026.

@@ -1,1 +1,0 @@
-Développeur Bitcoin, auteur du protocole Ark, qu'il présente le 22 mai 2023 sur la liste bitcoin-dev : une seconde couche où un serveur gère des VTXO que chaque utilisateur peut retirer seul sur la chaîne.

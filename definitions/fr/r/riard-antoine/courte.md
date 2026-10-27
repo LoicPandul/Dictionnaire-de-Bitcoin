@@ -1,1 +1,0 @@
-Chercheur en sécurité, spécialiste de Lightning jusqu'en octobre 2023, coauteur en 2020 des attaques par dilatation du temps et divulgateur du replacement cycling, rendu public le 16 octobre 2023, qui menace les HTLC des nœuds de routage.

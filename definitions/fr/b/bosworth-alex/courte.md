@@ -1,1 +1,0 @@
-Développeur Lightning, auteur de l'outil Balance of Satoshis. Il présente un service de *submarine swaps* sur le réseau principal en août 2018, puis annonce Lightning Loop chez Lightning Labs en mars 2019.

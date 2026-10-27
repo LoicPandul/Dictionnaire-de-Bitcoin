@@ -1,1 +1,0 @@
-Économiste américain, chef de file du monétarisme et prix Nobel 1976. Dans un entretien de 1999, il prévoit un « *e-cash* fiable » pour transférer des fonds sur Internet sans révéler son identité, propos que l'on rapproche de Bitcoin.

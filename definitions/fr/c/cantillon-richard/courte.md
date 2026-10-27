@@ -1,1 +1,0 @@
-Banquier et économiste irlando-français, mort en 1734. Son *Essai sur la nature du commerce en général*, publié en 1755, montre que l'effet d'une monnaie nouvelle dépend de l'endroit où elle entre dans l'économie.

@@ -16,6 +16,10 @@ from ..core.dictionary import Dictionary
 UUID_RE = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\(\./assets/([^)\s]+)\)")
+# Champs d'une image dans `assets:` : son fichier, et le crédit d'une image de tiers
+# (logo, capture…), imprimé en petit sous l'image : « Logo Bitcoin Core, © …, MIT ».
+ASSET_FIELDS = {"filename", "credit"}
+CREDIT_MAX_CHARS = 200
 
 
 def validate(dictionary: Dictionary) -> List[str]:
@@ -62,6 +66,19 @@ def validate(dictionary: Dictionary) -> List[str]:
             elif ref == d.uuid:
                 errors.append(f"{where} renvoi vers elle-même")
 
+        for asset in d.assets:
+            if not isinstance(asset, dict) or not asset.get("filename"):
+                errors.append(f"{where} entrée de assets: sans filename : {asset!r}")
+                continue
+            for key in sorted(set(asset) - ASSET_FIELDS):
+                errors.append(f"{where} assets: champ inconnu « {key} » ({asset['filename']})")
+            if "credit" in asset:
+                credit = asset["credit"]
+                if not isinstance(credit, str) or not credit.strip():
+                    errors.append(f"{where} assets: credit vide ou non textuel ({asset['filename']})")
+                elif "\n" in credit.strip() or len(credit) > CREDIT_MAX_CHARS:
+                    errors.append(f"{where} assets: credit sur une ligne, {CREDIT_MAX_CHARS} caractères au plus "
+                                  f"({asset['filename']})")
         declared = {a.get("filename") for a in d.assets if isinstance(a, dict)}
         used = set(IMAGE_RE.findall(d.content))
         for name in sorted(used - declared):

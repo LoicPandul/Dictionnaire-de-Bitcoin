@@ -117,3 +117,16 @@ For the avoidance of doubt, this Section [4](https://creativecommons.org/licens
 2. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
 3. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
 4. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+
+## Images de tiers
+
+Les images ci-dessous ne sont pas de l'auteur du dictionnaire. Elles sont exclues de la licence CC BY-NC-SA 4.0 ci-dessus : elles restent soumises à leur licence d'origine ou, à défaut, au droit des marques de leurs titulaires, et sont reproduites à titre d'illustration.
+
+| Fiche | Image | Crédit | Source |
+| --- | --- | --- | --- |
+| `definitions/fr/b/bch-bitcoin-cash` | `assets/image-1.png` | Logo Bitcoin Cash, version de Georgstmk, licence CC BY-SA 4.0, marque de ses titulaires, passé en niveaux de gris | https://commons.wikimedia.org/wiki/File:Bitcoin-cash-logo-horizontal.svg |
+| `definitions/fr/b/bitcoin-b-majuscule` | `assets/image-1.png` | Emblème « B » de Bitcoin, par bitboy d'après le symbole ₿ de Satoshi Nakamoto, domaine public | https://en.bitcoin.it/wiki/Promotional_graphics |
+| `definitions/fr/b/bitcoin-core` | `assets/image-1.png` | Logo Bitcoin Core, © Bitcoin Core, marque de ses titulaires | https://bitcoincore.org/ |
+| `definitions/fr/b/bitcoin-knots` | `assets/image-1.png` | Logo Bitcoin Knots, marque du projet Bitcoin Knots | https://bitcoinknots.org/ |
+| `definitions/fr/b/bsv-bitcoin-satoshi-vision` | `assets/image-1.png` | Logo Bitcoin SV, par bComm Association, licence CC0, marque de ses titulaires, passé en niveaux de gris | https://commons.wikimedia.org/wiki/File:BSV_nav_bar_logo.png |
+| `definitions/fr/p/paynym` | `assets/image-1.png` | Avatars PayNym, créés pour Samourai Wallet, marque de ses titulaires | https://paynym.rs/ |

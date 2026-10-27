@@ -1,1 +1,0 @@
-Fabricant des pièces physiques Casascius, qui renferment une clé privée sous hologramme, apparues en 2011. Après un courrier du FinCEN, il suspend fin novembre 2013 la vente de pièces contenant des bitcoins.

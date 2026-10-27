@@ -1,7 +1,0 @@
-Administrateur principal du forum bitcointalk.org et modérateur du subreddit r/Bitcoin depuis 2011, le plus ancien en août 2015, qu'il signe sous le pseudonyme theymos.
-
-Son compte sur BITCOINTALK, le forum ouvert par Satoshi Nakamoto (voir NAKAMOTO SATOSHI), a le rang d'administrateur et date du 9 février 2010. En août 2015, il est modérateur de r/Bitcoin depuis quatre ans et, selon Finance Magnates, l'un des quatre modérateurs aux pleins pouvoirs.
-
-Pendant la querelle sur la taille des blocs, il intervient sur BITCOIN XT, le client de Mike Hearn qui propose un HARD FORK. Le 17 août 2015, dans un message épinglé, il écrit que r/Bitcoin sert Bitcoin, que XT, si son hard fork s'active, créera un autre réseau, et que XT et les services qui le soutiennent n'ont donc pas leur place sur le subreddit. Il admet que si la grande majorité de l'économie bascule vers XT et que celui-ci passe largement pour le vrai Bitcoin, le subreddit n'accepterait plus que ce sujet, mais il juge cette hypothèse extrêmement improbable. Des règles temporaires font aussi supprimer les messages particulièrement chargés d'émotion, notamment sur la taille maximale des blocs et la modération du subreddit, sauf s'ils apportent des idées vraiment nouvelles. Il ajoute que si 90 % des lecteurs trouvent ces règles intolérables, il souhaite qu'ils partent.
-
-Des critiques, dont le média Bitcoin.com, lui reprochent alors de la censure, et le subreddit r/btc attire des lecteurs.

@@ -1,1 +1,0 @@
-Développeur basé à Prague connu sous le pseudonyme slush, créateur en 2010 du pool de minage Slush Pool et auteur de Stratum, cofondateur de SatoshiLabs (Trezor) et coauteur des BIP-0039, BIP-0043 et BIP-0044.

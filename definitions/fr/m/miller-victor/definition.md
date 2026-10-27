@@ -1,7 +1,0 @@
-Mathématicien américain, né à Brooklyn, coinventeur de la cryptographie sur courbes elliptiques avec Neal Koblitz.
-
-Chercheur au centre Thomas J. Watson d'IBM, où il entre en 1978, Victor Miller présente en août 1985 à CRYPTO '85 « Use of Elliptic Curves in Cryptography », publié en 1986. Il y propose un analogue de l'échange de clés Diffie-Hellman sur une courbe elliptique. Koblitz parvient la même année à la même idée, indépendamment de lui. Le 6 mai 1986, Miller rédige « Short Programs for functions on Curves », une note refusée à la conférence STOC. Elle contient l'algorithme efficace de calcul du couplage de Weil, dit algorithme de Miller, dont la version complète paraît en 2004 dans le *Journal of Cryptology*. Avec Mark Wegman, il dépose pour IBM le brevet américain US 4 814 746, une méthode de compression de données dérivée de celle de Lempel et Ziv, délivré le 21 mars 1989. Depuis 1993, il travaille au Center for Communications Research de l'Institute for Defense Analyses, à Princeton, au moins jusqu'en mai 2022.
-
-Le problème qu'il a proposé d'exploiter, le logarithme discret sur une courbe elliptique, est celui que Bitcoin met en jeu : une clé privée est un entier, la clé publique le point correspondant sur la courbe secp256k1, et les signatures ECDSA et Schnorr s'appuient sur la difficulté de remonter de l'un à l'autre.
-
-Il est fellow de l'IACR depuis 2013. Avec Koblitz, il reçoit le prix RSA d'excellence en mathématiques en 2009, le prix Eduard Rhein en 2020 et le prix Levchin en 2021.

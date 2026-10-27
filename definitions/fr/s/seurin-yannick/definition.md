@@ -1,7 +1,0 @@
-Cryptographe, coauteur des schémas de multisignature Schnorr MuSig et MuSig2, ce dernier standardisé par le BIP-0327.
-
-Alors à l'ANSSI, l'agence française de cybersécurité (affiliation indiquée sur l'article de 2020), Yannick Seurin signe en 2018 avec Gregory Maxwell, Andrew Poelstra et Pieter Wuille l'article « Simple Schnorr Multi-Signatures with Applications to Bitcoin », déposé sur l'archive eprint de l'IACR le 18 janvier 2018 et révisé le 20 mai 2018. Il y présente MuSig, un schéma où plusieurs signataires produisent ensemble une seule signature de la taille d'une signature Schnorr, vérifiable sous une clé publique agrégée. Une note de l'article indique qu'une faille a été trouvée dans la preuve de sécurité de la version à deux tours, et la version révisée prouve la sécurité d'une variante à trois tours.
-
-Le 14 octobre 2020, il dépose avec Jonas Nick et Tim Ruffing, alors chez Blockstream, l'article « MuSig2: Simple Two-Round Schnorr Multi-Signatures », présenté à CRYPTO 2021. MuSig2 ne demande que deux tours d'échange, dont le premier peut être préparé à l'avance, et reste sûr quand plusieurs sessions de signature s'exécutent en parallèle. Jonas Nick, Tim Ruffing et Elliott Jin en tirent ensuite le BIP-0327, qui standardise MuSig2 pour les clés et les signatures du BIP-0340.
-
-Aucun BIP ne porte le nom de Yannick Seurin : son apport est le travail de recherche sur lequel repose le BIP-0327. Pour la mise en pratique de l'agrégation de clés, voir aussi *Taproot* et *Schnorr*.

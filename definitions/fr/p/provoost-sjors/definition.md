@@ -1,7 +1,0 @@
-Développeur de Bitcoin Core, auteur de la prise en charge des signataires externes (portefeuilles matériels) et de l'interface de minage destinée à Stratum v2.
-
-Son premier commit dans Bitcoin Core date du 6 septembre 2017. Le 20 décembre de la même année, il propose d'ajouter seed.bitcoin.sprovoost.nl à la liste des *DNS seeds* (PR 11962, fusionnée le 26 mars 2018 et publiée dans Bitcoin Core 0.17.0), ces serveurs que le nœud interroge, surtout à son premier lancement, quand il ne connaît encore aucun pair. La liste de Bitcoin Core contient toujours cette graine en 2026, avec deux autres qu'il tient pour testnet4 et signet.
-
-Il porte ensuite la PR 16546, fusionnée le 23 février 2021 et publiée dans Bitcoin Core 22.0. Elle permet à `bitcoind` d'appeler une commande externe, passée à l'option `-signer`, pour lire les clés publiques, afficher une adresse sur l'appareil et signer une transaction au format PSBT. Elle est conçue pour fonctionner avec HWI et les portefeuilles matériels. Son équivalent dans l'interface graphique, la PR 4 du dépôt `bitcoin-core/gui`, est fusionnée le 9 juin 2021.
-
-Le 24 juin 2024, Bitcoin Core fusionne la PR 30200 qu'il a écrite. Elle introduit l'interface *Mining*, que les RPC de minage (`getblocktemplate`, `generateblock`) utilisent et que Stratum v2 doit utiliser ensuite. Bitcoin Core 30.0 expose cette interface par IPC, à titre expérimental, pour des clients de minage Stratum v2. Le *template provider* de Stratum v2, lui, n'est pas fusionné dans Bitcoin Core.
