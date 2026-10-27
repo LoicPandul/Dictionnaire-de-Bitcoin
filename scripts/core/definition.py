@@ -6,7 +6,7 @@ Classe représentant une définition du dictionnaire.
 import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 import yaml
 
@@ -62,6 +62,12 @@ class Definition:
             assets=metadata.get("assets") or [],
             version=metadata.get("version"),
         )
+
+    @property
+    def credits(self) -> Dict[str, str]:
+        """Crédit de chaque image de tiers (champ `credit` de `assets:`), par nom de fichier."""
+        return {a["filename"]: str(a["credit"]).strip() for a in self.assets
+                if isinstance(a, dict) and a.get("filename") and str(a.get("credit") or "").strip()}
 
     @property
     def sort_key(self) -> str:

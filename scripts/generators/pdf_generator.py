@@ -4,9 +4,13 @@ Génération du PDF d'une édition via XeLaTeX (ou Tectonic, son équivalent aut
 
 Mise en page de la charte graphique 2027 (design/charte-2027.md, sections 3 et 4, branche
 feat/couverture-2027) : Archivo en instances statiques (fonts/static/), Atkinson Hyperlegible
-Mono pour le code, Fira Math pour les formules. Deux formats Amazon KDP :
-  - broché 5,5 × 8,5 po (13,97 × 21,59 cm) ;
-  - relié 7 × 10 po (17,78 × 25,4 cm).
+Mono pour le code, Fira Math pour les formules. Deux brochés Amazon KDP, choisis par
+l'édition (clé `format` de templates/editions.yaml) :
+  - `couleur` : 7 × 10 po (17,78 × 25,4 cm), intérieur couleur premium, papier blanc,
+    24 à 828 pages ; l'édition complète ;
+  - `poche` : 5 × 8 po (12,7 × 20,32 cm), intérieur noir et blanc ; l'édition « essentiel ».
+La couleur suit la charte (section 2) en recettes CMJN ; en noir et blanc, la Figue devient
+du noir et les schémas passent en version « -nb ».
 """
 
 import re
@@ -19,22 +23,32 @@ from typing import List, Optional
 
 import yaml
 
-from ..config import BASE_DIR, BUILD_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEMPLATES_DIR, find_tex_engine
+from ..config import BASE_DIR, BUILD_DIR, DEFINITIONS_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEMPLATES_DIR, find_tex_engine
 from ..core.book import Book, Section
 from ..core.chronology import MOIS_FR
+from . import images
 from .latex import clean_content, escape, inline, markdown_to_latex
 
-# Au-delà de 700 pages, KDP exige 22,3 mm de marge intérieure pour le broché (charte, section 4).
-KDP_THICK_BOOK_PAGES = 700
+# Marge intérieure minimale d'un broché KDP selon le nombre de pages (sans fond perdu ; marge
+# extérieure, haute et basse : 6,4 mm au moins). Source : aide KDP, « Paperback and hardcover
+# manuscript formatting », https://kdp.amazon.com/en_US/help/topic/GVBQ3CMEQW3W2VL6
+KDP_GUTTER_MM = ((150, 9.6), (300, 12.7), (500, 15.9), (700, 19.1), (828, 22.3))
+KDP_MIN_PAGES, KDP_MAX_PAGES = 24, 828
+
+
+def kdp_gutter(pages: int) -> float:
+    """Marge intérieure minimale (mm) exigée par KDP pour ce nombre de pages."""
+    return next((mm for limit, mm in KDP_GUTTER_MM if pages <= limit), KDP_GUTTER_MM[-1][1])
 
 
 @dataclass(frozen=True)
 class PdfFormat:
     id: str
-    suffix: str
+    label: str
+    color: bool              # intérieur couleur (sinon noir et blanc)
     isbn_key: str
     paper: str               # paperwidth, paperheight
-    inner: str               # marge intérieure
+    inner: float             # marge intérieure (mm), relevée si KDP en exige plus
     margins: str             # autres marges et en-têtes
     code_max_chars: int      # caractères par ligne d'un bloc de code
     body: tuple              # corps et interlignage du texte courant (pt)
@@ -55,25 +69,27 @@ class PdfFormat:
     picto: str               # hauteur du pictogramme de catégorie
 
     def geometry(self) -> str:
-        return f"{self.paper}, inner={self.inner}, {self.margins}"
+        return f"{self.paper}, inner={self.inner}mm, {self.margins}"
 
 
 FORMATS = {
-    "broche": PdfFormat(
-        id="broche", suffix="", isbn_key="isbn_paperback",
-        paper="paperwidth=13.97cm, paperheight=21.59cm", inner="20mm",
-        margins="top=8mm, bottom=8mm, outer=10.5mm, headheight=12pt, headsep=5mm, footskip=8mm",
-        code_max_chars=64, body=(9, 11.5), code_inline=8.5, code_block=(7.4, 10), vedette=10.5,
-        categorie=8, renvois=7.5, note=(8, 10.5), table=(7.5, 9.5), folio=7.5, toc=(7, 8.5),
-        letter=120, part=48, entry_gap="9pt", image_gap="6pt", image_height="85mm", picto="3mm",
-    ),
-    "relie": PdfFormat(
-        id="relie", suffix="-relie", isbn_key="isbn_hardcover",
-        paper="paperwidth=17.78cm, paperheight=25.4cm", inner="25.5mm",
+    # Livre complet : grand format en couleur, réglages du relié de la charte (section 3).
+    "couleur": PdfFormat(
+        id="couleur", label="7 × 10 po, couleur", color=True, isbn_key="isbn_paperback",
+        paper="paperwidth=17.78cm, paperheight=25.4cm", inner=25.5,
         margins="top=9.5mm, bottom=9.5mm, outer=13.5mm, headheight=14pt, headsep=6mm, footskip=9.5mm",
         code_max_chars=81, body=(9.5, 12), code_inline=9, code_block=(7.4, 10), vedette=11,
         categorie=8.5, renvois=8, note=(8.5, 11), table=(8, 10), folio=8, toc=(7.5, 9),
         letter=150, part=60, entry_gap="10pt", image_gap="7pt", image_height="110mm", picto="3mm",
+    ),
+    # Essentiel : livre de poche en noir et blanc, réglages du broché de la charte.
+    "poche": PdfFormat(
+        id="poche", label="5 × 8 po, noir et blanc", color=False, isbn_key="",
+        paper="paperwidth=12.7cm, paperheight=20.32cm", inner=16,
+        margins="top=8mm, bottom=8mm, outer=10mm, headheight=12pt, headsep=5mm, footskip=8mm",
+        code_max_chars=58, body=(9, 11.5), code_inline=8.5, code_block=(7.4, 10), vedette=10.5,
+        categorie=8, renvois=7.5, note=(8, 10.5), table=(7.5, 9.5), folio=7.5, toc=(7, 8.5),
+        letter=120, part=44, entry_gap="9pt", image_gap="6pt", image_height="85mm", picto="3mm",
     ),
 }
 
@@ -88,6 +104,25 @@ STATUS_FR = {
 def load_legal() -> dict:
     with open(TEMPLATES_DIR / "legal.yaml", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
+
+
+def _colors(fmt: PdfFormat) -> str:
+    """Couleurs de la charte (section 2). Couleur : recettes CMJN de la charte, écrites telles
+    quelles (convertir l'hexadécimal donnerait une Figue plus terne). Noir et blanc : la Figue
+    devient du noir, l'Écorce garde son N70."""
+    if fmt.color:
+        return "\n".join([
+            "% Charte 2027 : Figue (C0 M100 J0 N35), Écorce (N70), gris 8 % du code ; texte en noir pur",
+            r"\definecolor{figue}{cmyk}{0,1,0,0.35}",
+            r"\definecolor{ecorce}{cmyk}{0,0,0,0.70}",
+            r"\definecolor{codebg}{cmyk}{0,0,0,0.08}",
+        ])
+    return "\n".join([
+        "% Charte 2027, intérieur noir et blanc : Figue en noir, Écorce N70, gris 8 % du code",
+        r"\definecolor{figue}{gray}{0}",
+        r"\definecolor{ecorce}{gray}{0.30}",
+        r"\definecolor{codebg}{gray}{0.92}",
+    ])
 
 
 def _fs(size, leading=None) -> str:
@@ -137,6 +172,7 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 \newcommand{{\inlinecodesize}}{{{_fs(fmt.code_inline)}}}
 \newcommand{{\codeblocksize}}{{{_fs(*fmt.code_block)}}}
 \newcommand{{\notesize}}{{{_fs(*fmt.note)}}}
+\newcommand{{\creditsize}}{{{_fs(7, 8.5)}}}
 \newcommand{{\tablesize}}{{{_fs(*fmt.table)}\addfontfeature{{Numbers=Tabular}}}}
 
 \usepackage{{microtype}}
@@ -153,10 +189,10 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 \raggedbottom
 
 \usepackage{{xcolor}}
-\definecolor{{codebg}}{{HTML}}{{EBEBEB}}
-\definecolor{{linkcolor}}{{RGB}}{{0, 0, 0}}
+{_colors(fmt)}
 
-\usepackage[colorlinks=true, linkcolor=linkcolor, urlcolor=linkcolor, pdfborder={{0 0 0}},
+% Liens sans couleur propre : chaque élément porte la couleur que lui donne la charte.
+\usepackage[hidelinks, pdfborder={{0 0 0}},
   pdftitle={{{title}}}, pdfauthor={{{legal.get('author', '')}}},
   pdfsubject={{{title} : {subtitle}}}, pdfkeywords={{{keywords}}}]{{hyperref}}
 \urlstyle{{same}}
@@ -192,15 +228,16 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 \usepackage{{csquotes}}
 \usepackage{{needspace}}
 
-% En-têtes : folio et titre courant en Archivo Catégorie, mots vedettes en capitales
+% En-têtes : folio et titre courant en Archivo Catégorie, mots vedettes en capitales ;
+% titre courant en Figue, comme les mots vedettes qu'il reprend, folio en noir
 \usepackage{{fancyhdr}}
 \newcommand{{\currentletter}}{{}}
 \newcommand{{\foliofont}}{{\categoriefont{_fs(fmt.folio)}}}
 \fancypagestyle{{dictionary}}{{
   \fancyhf{{}}
-  \fancyhead[CE,CO]{{\foliofont\currentletter}}
-  \fancyhead[LE]{{\foliofont\rightmark}}
-  \fancyhead[RO]{{\foliofont\leftmark}}
+  \fancyhead[CE,CO]{{\foliofont\color{{figue}}\currentletter}}
+  \fancyhead[LE]{{\foliofont\color{{figue}}\rightmark}}
+  \fancyhead[RO]{{\foliofont\color{{figue}}\leftmark}}
   \fancyfoot[C]{{\foliofont\thepage}}
   \renewcommand{{\headrulewidth}}{{0pt}}
   \renewcommand{{\footrulewidth}}{{0pt}}
@@ -218,14 +255,14 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 \renewcommand{{\cleardoublepage}}{{\clearpage\if@twoside\ifodd\c@page\else\hbox{{}}\thispagestyle{{empty}}\newpage\fi\fi}}
 \makeatother
 
-\newcommand{{\cleanurl}}[1]{{\textenglish{{\url{{#1}}}}}}
+\newcommand{{\cleanurl}}[1]{{{{\color{{figue}}\textenglish{{\url{{#1}}}}}}}}
 
-% Mot vedette : Archivo Vedette, capitales, interlettrage +1 %, sans cartouche
-\newcommand{{\vedette}}[1]{{{{\vedettefont{_fs(fmt.vedette)}#1}}}}
+% Mot vedette : Archivo Vedette, capitales, interlettrage +1 %, sans cartouche, en Figue
+\newcommand{{\vedette}}[1]{{{{\vedettefont{_fs(fmt.vedette)}\color{{figue}}#1}}}}
 % Catégorie : Archivo Catégorie, casse de phrase
 \newcommand{{\categorie}}[1]{{{{\categoriefont{_fs(fmt.categorie)}#1}}}}
-% Renvois : « Voir aussi : » puis les titres en Archivo Vedette, séparés de 3 mm
-\newcommand{{\renvoisfont}}{{\vedettefont{_fs(fmt.renvois)}}}
+% Renvois : « Voir aussi : » puis les titres en Archivo Vedette, séparés de 3 mm, en Figue (liens)
+\newcommand{{\renvoisfont}}{{\vedettefont{_fs(fmt.renvois)}\color{{figue}}}}
 \newcommand{{\renvoislabel}}{{{_fs(fmt.renvois)}}}
 \newcommand{{\entrygap}}{{\vspace{{{fmt.entry_gap}}}}}
 """
@@ -243,7 +280,7 @@ def _half_title(book: Book) -> str:
     return rf"""
 \clearpage\thispagestyle{{empty}}
 \vspace*{{\fill}}
-\begin{{center}}{{\titrefont\fontsize{{20}}{{24}}\selectfont {escape(book.edition.title)}}}\end{{center}}
+\begin{{center}}{{\titrefont\fontsize{{20}}{{24}}\selectfont\color{{figue}} {escape(book.edition.title)}}}\end{{center}}
 \vspace*{{\fill}}
 \clearpage"""
 
@@ -253,7 +290,7 @@ def _title_page(book: Book, legal: dict) -> str:
 \clearpage\thispagestyle{{empty}}
 \vspace*{{3cm}}
 \begin{{center}}
-{{\couverturefont\fontsize{{30}}{{32}}\selectfont {escape(book.edition.title.upper())}}}\\[0.6cm]
+{{\couverturefont\fontsize{{30}}{{32}}\selectfont\color{{figue}} {escape(book.edition.title.upper())}}}\\[0.6cm]
 {{\categoriefont\fontsize{{11}}{{14}}\selectfont {escape(book.edition.subtitle)}}}
 \end{{center}}
 \vfill
@@ -306,7 +343,7 @@ def _final_page(book: Book, legal: dict, fmt: PdfFormat) -> str:
 
 
 def _front_title(title: str) -> str:
-    return rf"\begin{{center}}{{\titrefont\fontsize{{16}}{{20}}\selectfont {title}}}\end{{center}}\vspace{{0.4em}}"
+    return rf"\begin{{center}}{{\titrefont\fontsize{{16}}{{20}}\selectfont\color{{figue}} {title}}}\end{{center}}\vspace{{0.4em}}"
 
 
 def _front_text(title: str, template: str) -> str:
@@ -366,7 +403,7 @@ def _part_opener(section: Section, fmt: PdfFormat) -> str:
 \renewcommand{{\currentletter}}{{}}
 \phantomsection\hypertarget{{part-{section.id}}}{{}}\label{{part:{section.id}}}
 \vspace*{{4cm}}
-\noindent{{\couverturefont\fontsize{{{fmt.part}}}{{{fmt.part}}}\selectfont\raggedright {escape(section.title.upper())}\par}}
+\noindent{{\couverturefont\fontsize{{{fmt.part}}}{{{fmt.part}}}\selectfont\raggedright\color{{figue}} {escape(section.title.upper())}\par}}
 {intro}
 \clearpage"""
 
@@ -377,7 +414,7 @@ def _letter_page(letter: str, fmt: PdfFormat) -> str:
 \thispagestyle{{letterpage}}
 \renewcommand{{\currentletter}}{{{letter}}}
 \vspace*{{\fill}}
-\begin{{center}}{{\couverturefont\fontsize{{{fmt.letter}}}{{{fmt.letter}}}\selectfont {letter}}}\end{{center}}
+\begin{{center}}{{\couverturefont\fontsize{{{fmt.letter}}}{{{fmt.letter}}}\selectfont\color{{figue}} {letter}}}\end{{center}}
 \vspace*{{\fill}}
 \clearpage
 \pagestyle{{dictionary}}"""
@@ -387,7 +424,7 @@ def _letter_heading(letter: str) -> str:
     return rf"""
 \renewcommand{{\currentletter}}{{{letter}}}
 \par\needspace{{6\baselineskip}}\vspace{{1.2em}}
-\noindent{{\couverturefont\fontsize{{28}}{{30}}\selectfont {letter}}}\par\nopagebreak
+\noindent{{\couverturefont\fontsize{{28}}{{30}}\selectfont\color{{figue}} {letter}}}\par\nopagebreak
 \vspace{{0.3em}}"""
 
 
@@ -421,15 +458,21 @@ def _see_also(targets, label: str = "Voir aussi") -> str:
     ])
 
 
-def _body(content: str, assets_dir: Optional[Path], fmt: PdfFormat) -> str:
+def _md(content: str, fmt: PdfFormat, d) -> str:
+    """Markdown d'une entrée (images, crédits et largeur de code du format)."""
+    return markdown_to_latex(content, assets_dir=d.path / "assets", code_max_chars=fmt.code_max_chars,
+                             color=fmt.color, credits=d.credits)
+
+
+def _body(content: str, d, fmt: PdfFormat) -> str:
     """Corps d'une entrée ; une note finale tout en italique passe au corps de note."""
     content = clean_content(content).strip()
     paragraphs = re.split(r"\n\s*\n", content)
     note = ""
     if len(paragraphs) > 1 and re.fullmatch(r"\*[^*\n](?:.|\n)*[^*\n]\*", paragraphs[-1].strip()):
-        note = markdown_to_latex(paragraphs[-1], assets_dir=assets_dir, code_max_chars=fmt.code_max_chars)
+        note = _md(paragraphs[-1], fmt, d)
         content = "\n\n".join(paragraphs[:-1])
-    body = markdown_to_latex(content, assets_dir=assets_dir, code_max_chars=fmt.code_max_chars)
+    body = _md(content, fmt, d)
     if note:
         body += "\n\n{\\notesize " + note + "\\par}"
     return body
@@ -445,8 +488,7 @@ def _entry(book: Book, section: Section, d, fmt: PdfFormat) -> str:
         r"\nopagebreak",
     ]
     text = book.body(d, section)
-    body = _body(text, d.path / "assets", fmt) if section.version == "developpee" else \
-        markdown_to_latex(clean_content(text), assets_dir=d.path / "assets", code_max_chars=fmt.code_max_chars)
+    body = _body(text, d, fmt) if section.version == "developpee" else _md(clean_content(text), fmt, d)
     parts.append(body)
     if section.version == "developpee":
         parts.append(_see_also(book.cross_references(d)))
@@ -518,7 +560,7 @@ def _specs_section(book: Book, section: Section, fmt: PdfFormat) -> str:
             linked = book.definition_for(doc)
             if section.detail and linked:
                 out.append(r"\vspace{0.2em}")
-                out.append(_body(linked.content, linked.path / "assets", fmt))
+                out.append(_body(linked.content, linked, fmt))
     return "\n".join(out)
 
 
@@ -587,20 +629,29 @@ def _page_count(pdf: Path) -> int:
     return int(m.group(1)) if m else 0
 
 
-def generate(book: Book, fmt_id: str = "broche", output_dir: Optional[Path] = None) -> Optional[Path]:
-    """Génère le PDF d'une édition dans un format. Retourne le chemin, ou None en cas d'échec."""
-    fmt = FORMATS[fmt_id]
+def generate(book: Book, output_dir: Optional[Path] = None) -> Optional[Path]:
+    """Génère le PDF d'une édition, au format qu'elle demande. Retourne le chemin, ou None en cas d'échec."""
+    fmt = FORMATS.get(book.edition.format)
+    if fmt is None:
+        print(f"[ERREUR] format PDF inconnu : {book.edition.format} (formats : {', '.join(FORMATS)})")
+        return None
     output_dir = output_dir or BUILD_DIR / book.edition.id
-    workdir = output_dir / f"tex{fmt.suffix or '-broche'}"
+    workdir = output_dir / "tex"
     workdir.mkdir(parents=True, exist_ok=True)
-    name = f"{book.edition.file}{fmt.suffix}"
+    name = book.edition.file
     tex_path = workdir / f"{name}.tex"
     pdf = workdir / f"{name}.pdf"
+    if fmt.color:
+        ready = images.prepare(sorted(DEFINITIONS_DIR.glob("*/*/assets/*.svg")))
+        if not images.find_chrome():
+            print("  [ATTENTION] Chrome introuvable : schémas en PNG couleur (CHROME_PATH=<chemin> pour le PDF vectoriel).")
+        elif ready:
+            print(f"  {ready} schéma(s) SVG convertis en PDF couleur ({images.CACHE_DIR})")
 
     for attempt in range(2):
         tex_path.write_text(build_latex(book, fmt), encoding="utf-8")
         rel = tex_path.relative_to(BASE_DIR) if tex_path.is_relative_to(BASE_DIR) else tex_path
-        print(f"  Compilation de {rel} (marge intérieure {fmt.inner})…")
+        print(f"  Compilation de {rel} ({fmt.label}, marge intérieure {fmt.inner} mm)…")
         result = _compile(tex_path)
         if result.returncode != 0 or not pdf.exists():
             log = workdir / f"{name}.log"
@@ -611,15 +662,19 @@ def generate(book: Book, fmt_id: str = "broche", output_dir: Optional[Path] = No
                     print(f"  {line}")
             return None
         pages = _page_count(pdf)
-        # Livre épais : KDP impose une marge intérieure plus large, on recompose une fois.
-        if fmt.id == "broche" and pages > KDP_THICK_BOOK_PAGES and fmt.inner == "20mm" and attempt == 0:
-            fmt = replace(fmt, inner="22.5mm")
+        # Livre épais : si KDP exige une marge intérieure plus large, on recompose une fois.
+        required = kdp_gutter(pages)
+        if pages and fmt.inner < required and attempt == 0:
+            fmt = replace(fmt, inner=round(required + 0.2, 1))
             continue
         break
 
     final = output_dir / f"{name}.pdf"
     shutil.move(str(pdf), final)
-    print(f"[OK] PDF : {final} ({pages} pages)")
-    if fmt.id == "relie" and pages > 550:
-        print(f"[ATTENTION] {pages} pages : KDP limite le relié à 550 pages (charte, section 4).")
+    print(f"[OK] PDF : {final} ({pages} pages, {fmt.label})")
+    if pages and not KDP_MIN_PAGES <= pages <= KDP_MAX_PAGES:
+        print(f"[ATTENTION] {pages} pages : KDP imprime de {KDP_MIN_PAGES} à {KDP_MAX_PAGES} pages "
+              f"(broché, papier blanc{', couleur premium' if fmt.color else ''}).")
+    elif fmt.color and pages > 600:
+        print(f"  {pages} pages : couleur premium obligatoire chez KDP (la couleur standard s'arrête à 600 pages).")
     return final

@@ -8,6 +8,9 @@
 #   - type: specs       → une ou plusieurs séries de specifications/ ; detail: true
 #                         imprime sous le résumé la définition développée liée.
 #
+# `format` choisit le PDF imprimé (scripts/generators/pdf_generator.py) : « couleur »
+# (7 × 10 po, intérieur couleur, par défaut) ou « poche » (5 × 8 po, noir et blanc).
+#
 # Génération : python3 scripts/main.py build --edition <id> --format pdf,epub
 
 editions:
@@ -56,6 +59,7 @@ editions:
     title: "Dictionnaire de Bitcoin"
     subtitle: "L'essentiel en définitions courtes"
     file: "dictionnaire-de-bitcoin-essentiel"
+    format: poche
     sections:
       - type: dictionary
         part: technique
@@ -63,16 +67,3 @@ editions:
       - type: dictionary
         part: ecosysteme
         version: courte
-      - type: dictionary
-        part: personnes
-        version: courte
-      - type: chronology
-        title: "Chronologie"
-      - type: specs
-        id: bip
-        series: [bip]
-        title: "BIP"
-      - type: specs
-        id: bolt
-        series: [bolt, blip]
-        title: "BOLT et bLIP"

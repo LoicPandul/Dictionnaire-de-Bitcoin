@@ -24,7 +24,7 @@ from scripts.core.dictionary import Dictionary  # noqa: E402
 from scripts.generators import index_generator, pdf_generator, stats_generator  # noqa: E402
 from scripts.validators import content_validator, markdown_linter, metadata_validator, sync_checker  # noqa: E402
 
-FORMATS = ("pdf", "pdf-relie", "epub")
+FORMATS = ("pdf", "epub")
 
 
 def _report(title: str, errors: list, limit: int = 40) -> bool:
@@ -101,11 +101,7 @@ def cmd_build(dictionary: Dictionary, args=None) -> bool:
         out_dir = (Path(args.output_dir) if args and args.output_dir else BUILD_DIR) / edition_id
         out_dir.mkdir(parents=True, exist_ok=True)
         if "pdf" in wanted_formats:
-            path = pdf_generator.generate(book, "broche", out_dir)
-            ok &= path is not None
-            produced += [path] if path else []
-        if "pdf-relie" in wanted_formats:
-            path = pdf_generator.generate(book, "relie", out_dir)
+            path = pdf_generator.generate(book, out_dir)
             ok &= path is not None
             produced += [path] if path else []
         if "epub" in wanted_formats:
@@ -144,7 +140,7 @@ def cmd_info(dictionary: Dictionary, args=None) -> bool:
 COMMANDS = {
     "check": (cmd_check, "Tout valider (métadonnées, versions courtes, markdown, spécifications, chronologie)"),
     "fix": (cmd_fix, "Corriger automatiquement le markdown et les renvois invalides"),
-    "build": (cmd_build, "Générer les éditions (PDF broché, PDF relié, EPUB)"),
+    "build": (cmd_build, "Générer les éditions (PDF à imprimer, EPUB)"),
     "index": (cmd_index, "Mettre à jour INDEX.md"),
     "stats": (cmd_stats, "Mettre à jour stats.md et le badge du README"),
     "info": (cmd_info, "Afficher les informations"),
@@ -176,8 +172,8 @@ def main() -> int:
     for name, (_, help_text) in COMMANDS.items():
         p = sub.add_parser(name, help=help_text)
         if name == "build":
-            p.add_argument("--edition", default="all", help="éditions de templates/editions.yaml séparées par des virgules (complete, essentiel, tome-1, tome-2) ou all (défaut)")
-            p.add_argument("--format", default="all", help="pdf, pdf-relie, epub (séparés par des virgules) ou all")
+            p.add_argument("--edition", default="all", help="éditions de templates/editions.yaml séparées par des virgules (complete, essentiel) ou all (défaut)")
+            p.add_argument("--format", default="all", help="pdf, epub (séparés par des virgules) ou all")
             p.add_argument("--output-dir", help="dossier de sortie (défaut : build/)")
             p.add_argument("--force", action="store_true", help="générer même si la validation échoue")
     args = parser.parse_args()

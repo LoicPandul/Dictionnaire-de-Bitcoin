@@ -50,6 +50,7 @@ class Edition:
     subtitle: str
     file: str
     sections: list
+    format: str = "couleur"       # format du PDF imprimé : couleur (7 × 10 po) ou poche (5 × 8 po, N&B)
 
 
 def load_editions(templates_dir: Optional[Path] = None) -> Dict[str, dict]:
@@ -97,6 +98,7 @@ class Book:
             subtitle=cfg.get("subtitle", ""),
             file=cfg.get("file", f"dictionnaire-de-bitcoin-{edition_id}"),
             sections=[],
+            format=cfg.get("format", "couleur"),
         )
         self.warnings: List[str] = []
         all_series = specs_mod.load_all()

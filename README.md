@@ -136,7 +136,7 @@ Dictionnaire-de-Bitcoin/
 │       │   └── ...
 │       └── z/
 │
-├── specifications/                 # BIP, BOLT, bLIP et NIP : numéro, titre, statut, résumé
+├── specifications/                 # BIP, BOLT et bLIP : numéro, titre, statut, résumé
 ├── chronologie/fr/                 # Chronologie, un fichier par année
 │
 ├── assets/
@@ -148,7 +148,7 @@ Dictionnaire-de-Bitcoin/
 ├── templates/
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
-│   ├── editions.yaml               # Éditions générées (complète, essentiel, tomes)
+│   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
 │   ├── legal.yaml                  # Informations légales et métadonnées
 │   ├── introduction.md             # Note de l'auteur
 │   ├── contributors.md             # Liste des contributeurs
