@@ -82,9 +82,6 @@ STATUS_FR = {
     "draft": "Brouillon", "complete": "Complet", "deployed": "Déployé", "closed": "Clos",
     "final": "Final", "active": "Actif", "proposed": "Proposé", "withdrawn": "Retiré",
     "replaced": "Remplacé", "rejected": "Rejeté", "obsolete": "Obsolète", "deferred": "Reporté",
-    # NIP
-    "optional": "optionnel", "mandatory": "obligatoire", "unrecommended": "déconseillé",
-    "deprecated": "déprécié",
 }
 
 

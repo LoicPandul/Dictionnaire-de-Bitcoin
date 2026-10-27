@@ -8,7 +8,7 @@
 #   - type: specs       → une ou plusieurs séries de specifications/ ; detail: true
 #                         imprime sous le résumé la définition développée liée.
 #
-# Génération : python3 scripts/main.py build --edition <id> --format pdf,pdf-relie,epub
+# Génération : python3 scripts/main.py build --edition <id> --format pdf,epub
 
 editions:
   complete:
@@ -49,13 +49,6 @@ editions:
           Les BOLT (Basis of Lightning Technology) forment la spécification du Lightning
           Network. Les bLIP (Bitcoin Lightning Improvement Proposals) décrivent les
           fonctionnalités optionnelles proposées par-dessus.
-      - type: specs
-        id: nip
-        series: [nip]
-        title: "NIP"
-        intro: >
-          Les NIP (Nostr Implementation Possibilities) décrivent le protocole Nostr et ses
-          extensions : format des événements, relais, clés, messages privés, paiements.
 
   essentiel:
     title: "Dictionnaire de Bitcoin"
@@ -81,51 +74,3 @@ editions:
         id: bolt
         series: [bolt, blip]
         title: "BOLT et bLIP"
-      - type: specs
-        id: nip
-        series: [nip]
-        title: "NIP"
-
-  # Version imprimée en deux tomes, si l'édition complète dépasse les plafonds de KDP
-  # (828 pages en broché, 550 en relié). Les renvois vers une entrée de l'autre tome
-  # ne sont pas imprimés.
-  tome-1:
-    title: "Dictionnaire de Bitcoin"
-    subtitle: "Tome 1 : le dictionnaire technique"
-    file: "dictionnaire-de-bitcoin-tome-1"
-    sections:
-      - type: dictionary
-        part: technique
-        version: developpee
-
-  tome-2:
-    title: "Dictionnaire de Bitcoin"
-    subtitle: "Tome 2 : écosystème, personnes, chronologie et spécifications"
-    file: "dictionnaire-de-bitcoin-tome-2"
-    sections:
-      - type: dictionary
-        part: ecosysteme
-        version: developpee
-      - type: dictionary
-        part: personnes
-        version: developpee
-      - type: chronology
-        title: "Chronologie"
-        intro: >
-          Les événements marquants de Bitcoin et de ce qui l'a précédé, dans l'ordre où
-          ils se sont produits. Chaque date a été recoupée par au moins deux sources
-          indépendantes.
-      - type: specs
-        id: bip
-        series: [bip]
-        title: "BIP"
-        detail: true
-      - type: specs
-        id: bolt
-        series: [bolt, blip]
-        title: "BOLT et bLIP"
-        detail: true
-      - type: specs
-        id: nip
-        series: [nip]
-        title: "NIP"

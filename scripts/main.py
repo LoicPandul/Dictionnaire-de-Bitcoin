@@ -45,7 +45,7 @@ def cmd_check(dictionary: Dictionary, args=None) -> bool:
     sync_errors, stats = sync_checker.check()
     ok &= _report(f"Versions courtes ({stats['courtes']} courtes / {stats['developpees']} développées)", sync_errors)
     ok &= _report("Markdown", markdown_linter.check(dictionary))
-    ok &= _report("Spécifications (BIP, BOLT, bLIP, NIP)", content_validator.validate_specs(dictionary))
+    ok &= _report("Spécifications (BIP, BOLT, bLIP)", content_validator.validate_specs(dictionary))
     ok &= _report("Chronologie", content_validator.validate_chronology(dictionary))
     print("\nValidation réussie." if ok else "\nValidation en échec.")
     return ok
