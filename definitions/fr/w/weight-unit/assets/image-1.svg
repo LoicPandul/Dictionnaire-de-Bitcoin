@@ -85,24 +85,24 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="1032.32" y="104" width="200" height="64"/>
     <text class="etiquette" x="1132.32" y="147" text-anchor="middle">904 WU</text>
     <text class="etiquette" x="32" y="328">SegWit P2WPKH</text>
-    <rect class="structure" x="32.00" y="352" width="120.96" height="96"/>
-    <text class="etiquette" x="92.48" y="411.0" text-anchor="middle">112</text>
-    <rect class="structure" x="152.96" y="352" width="120.96" height="96"/>
-    <text class="etiquette" x="213.44" y="411.0" text-anchor="middle">112</text>
-    <rect class="structure" x="273.92" y="352" width="120.96" height="96"/>
-    <text class="etiquette" x="334.40" y="411.0" text-anchor="middle">112</text>
-    <rect class="structure" x="394.88" y="352" width="120.96" height="96"/>
-    <text class="etiquette" x="455.36" y="411.0" text-anchor="middle">112</text>
-    <rect class="secret" x="515.84" y="352" width="118.80" height="96" rx="8"/>
-    <text class="etiquette" x="575.24" y="411.0" text-anchor="middle">110</text>
+    <rect class="structure" x="32.00" y="352" width="122.04" height="96"/>
+    <text class="etiquette" x="93.02" y="411.0" text-anchor="middle">113</text>
+    <rect class="structure" x="154.04" y="352" width="122.04" height="96"/>
+    <text class="etiquette" x="215.06" y="411.0" text-anchor="middle">113</text>
+    <rect class="structure" x="276.08" y="352" width="122.04" height="96"/>
+    <text class="etiquette" x="337.10" y="411.0" text-anchor="middle">113</text>
+    <rect class="structure" x="398.12" y="352" width="122.04" height="96"/>
+    <text class="etiquette" x="459.14" y="411.0" text-anchor="middle">113</text>
+    <rect class="secret" x="520.16" y="352" width="118.80" height="96" rx="8"/>
+    <text class="etiquette" x="579.56" y="411.0" text-anchor="middle">110</text>
     <path class="fleche-note" style="marker-end:none" d="M36.00 460 v14 H511.84 v-14"/>
     <text class="secondaire" x="273.92" y="512" text-anchor="middle">hors témoin × 4</text>
-    <path class="fleche-note" style="marker-end:none" d="M519.84 460 v14 H630.64 v-14"/>
-    <text class="secondaire" x="575.24" y="512" text-anchor="middle">témoin × 1</text>
+    <path class="fleche-note" style="marker-end:none" d="M524.16 460 v14 H634.96 v-14"/>
+    <text class="secondaire" x="579.56" y="512" text-anchor="middle">témoin × 1</text>
     <rect class="sujet" x="1032.32" y="368" width="200" height="64"/>
-    <text class="nom-sujet" x="1132.32" y="413" text-anchor="middle">558 WU</text>
+    <text class="nom-sujet" x="1132.32" y="413" text-anchor="middle">562 WU</text>
     <path class="fleche-note" style="marker-end:none" d="M1008.32 188 V448"/>
-    <path class="fleche-note" style="marker-end:none" d="M646.64 390.0 v20 M646.64 400.0 H1008.32"/>
-    <text class="annotation" x="821.48" y="384.0" text-anchor="middle">−38 %</text>
+    <path class="fleche-note" style="marker-end:none" d="M650.96 390.0 v20 M650.96 400.0 H1008.32"/>
+    <text class="annotation" x="823.64" y="384.0" text-anchor="middle">−38 %</text>
   </g>
 </svg>
