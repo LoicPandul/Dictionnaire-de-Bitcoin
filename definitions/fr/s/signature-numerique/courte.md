@@ -1,1 +1,1 @@
-Preuve cryptographique qui démontre la possession d'une clé privée sans la divulguer. Sur Bitcoin, elle est produite avec ECDSA ou Schnorr à partir du hash de la transaction et permet de satisfaire le script qui verrouille un UTXO.
+Preuve cryptographique qui démontre la possession d'une clé privée sans la divulguer. Sur Bitcoin, elle est produite avec ECDSA ou Schnorr à partir du hash de signature de la transaction et permet de satisfaire le script qui verrouille un UTXO.

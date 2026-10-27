@@ -1,1 +1,1 @@
-Transaction collaborative qui réunit les pièces de plusieurs utilisateurs et produit des sorties de même montant, pour casser le lien entre entrées et sorties. Chaque participant signe la transaction lui-même et garde ainsi le contrôle de ses bitcoins pendant tout le processus.
+Transaction collaborative qui réunit les pièces de plusieurs utilisateurs et produit des sorties le plus souvent de même montant, pour brouiller le lien entre entrées et sorties. Chaque participant signe la transaction lui-même et garde ainsi le contrôle de ses bitcoins pendant tout le processus.

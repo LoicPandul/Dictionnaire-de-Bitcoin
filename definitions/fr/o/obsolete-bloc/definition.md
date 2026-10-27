@@ -4,7 +4,7 @@ Fait référence à un bloc sans enfant : un bloc valide, mais exclu de la chaî
 * Les mineurs continuent de chercher des preuves de travail pour les blocs suivants, mais pour ce faire, ils doivent obligatoirement choisir un seul bloc entre le `Bloc A` et le `Bloc B` au-dessus duquel ils vont miner ;
 * Un mineur trouve finalement un bloc valide au-dessus du `Bloc B`. Appelons le `Bloc B+1` ;
 * Il diffuse `Bloc B+1` aux nœuds du réseau ;
-* Puisque les nœuds suivent la chaîne la plus longue (avec le plus de travail accumulé), ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
+* Puisque les nœuds suivent la chaîne avec le plus de travail accumulé, ils vont estimer que la `Chaîne B` est celle qu'il faut suivre ;
 * Ils vont abandonner le `Bloc A` qui ne fait plus partie de la chaîne principale. Il est donc devenu un bloc obsolète.
 
 ![Après le bloc 144, deux blocs valides se disputent la hauteur 145 : seul 145-B est prolongé par le bloc 146 et rejoint la chaîne principale, tandis que 145-A, sans enfant, devient un bloc obsolète.](./assets/image-1.png)

@@ -23,12 +23,12 @@ $$inputHash\ =\ hash(outpoint_L\ \Vert\ A)$$
 Avec :
 * $B_{scan}$ : La clé publique de scan de Bob (adresse statique) ;
 * $B_{spend}$ : La clé publique de dépense de Bob (adresse statique) ;
-* $A$ : La somme des clés publiques en input (tweak) ;
-* $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
+* $A$ : La somme des clés publiques des inputs éligibles (P2TR, P2WPKH, P2SH-P2WPKH et P2PKH), c'est-à-dire $a \cdot G$ ;
+* $a$ : La somme des clés privées des inputs éligibles de la transaction d'Alice, les autres inputs étant ignorés ;
 * $outpoint_L$ : Le plus petit outpoint (lexicographiquement) utilisé en input de la transaction d'Alice ;
 * $\Vert$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
 * $G$ : Le point générateur de la courbe elliptique `secp256k1` ;
-* $hash$ : La fonction de hachage SHA256 taguée avec `BIP0352/SharedSecret` ;
+* $hash$ : La fonction de hachage SHA256 taguée : étiquette `BIP0352/Inputs` pour $inputHash$, `BIP0352/SharedSecret` pour le calcul de $P_0$ ;
 * $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
 * $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
 

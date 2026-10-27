@@ -1,1 +1,1 @@
-Primitive de contrat intelligent qui fixe une condition de temps avant laquelle une transaction ne peut pas être ajoutée à un bloc. Exprimé en date ou en hauteur de bloc, il est absolu ou relatif à une transaction antérieure.
+Primitive de contrat intelligent qui fixe une condition de temps avant laquelle une transaction ne peut pas être ajoutée à un bloc. Il est absolu (date ou hauteur de bloc) ou relatif à la confirmation de la sortie dépensée.
