@@ -1,0 +1,1 @@
+Pseudonyme du propriétaire du domaine bitcoin.org. Le 28 juin 2021, il perd par défaut, devant la High Court de Londres, l'action en droit d'auteur sur le livre blanc intentée par Craig Wright, jugement annulé le 16 juillet 2024.

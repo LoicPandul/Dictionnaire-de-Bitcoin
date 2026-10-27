@@ -1,0 +1,7 @@
+Pseudonyme du propriétaire du domaine bitcoin.org, site d'information sur Bitcoin. La page « About » du site le désigne sous la graphie Cøbra, dans la rubrique « Domain Owners », avec la mention « Owner ». Son identité n'est pas publique.
+
+Le 28 juin 2021, la High Court de Londres rend un jugement par défaut en faveur de Craig Wright, qui poursuit Cobra pour atteinte à son droit d'auteur sur le livre blanc de Bitcoin. Cobra assiste à l'audience, tenue à distance, sans prendre la parole afin de rester anonyme, et ne présente pas de défense. Le tribunal lui interdit de porter atteinte à ce droit d'auteur au Royaume-Uni, notamment en proposant le livre blanc au téléchargement sur bitcoin.org, lui ordonne de publier sur la page d'accueil du site, au plus tard le 19 juillet 2021 et pendant au moins six mois, un avis renvoyant vers l'ordonnance, ouvre une enquête sur les dommages et met à sa charge les frais de procédure, avec un paiement provisionnel de 35 000 livres sterling. Au jour du jugement, l'ordonnance n'a pas encore été signifiée, et Cobra déclare à Decrypt que continuer à héberger le document après sa signification serait illégal.
+
+Le 16 juillet 2024, le juge Mellor annule ce jugement par défaut.
+
+En 2024, dans l'affaire intentée par la Crypto Open Patent Alliance (COPA), la même juridiction déclare que Craig Wright n'est pas l'auteur du livre blanc, document signé Satoshi Nakamoto.
