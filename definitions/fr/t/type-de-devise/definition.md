@@ -5,4 +5,4 @@ Dans le cadre des portefeuilles déterministes et hiérarchiques (HD), le type d
 * Dogecoin : `0x80000003` ;
 * Ethereum : `0x8000003c`...
 
-![Arbre BIP-84 avec flèche pointant sur le niveau Type de devise (m/84'/0'), qui identifie la cryptomonnaie ciblée.](./assets/image-1.png)
+![Le type de devise occupe la profondeur 2 de l'arbre de dérivation : l'index 0' (chemin m/84'/0') désigne Bitcoin.](./assets/image-1.png)
