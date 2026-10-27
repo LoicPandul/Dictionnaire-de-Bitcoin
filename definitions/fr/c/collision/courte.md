@@ -1,0 +1,1 @@
+Situation dans laquelle deux entrées distinctes donnent la même empreinte par une fonction de hachage. Elle est inévitable en théorie, et le rôle d'une fonction de hachage cryptographique est de la rendre infaisable à trouver.

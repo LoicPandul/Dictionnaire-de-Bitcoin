@@ -1,0 +1,1 @@
+Identifiant de la forme `nom@domaine` qui permet de recevoir un paiement Lightning, fondé sur LUD-16 de LNURL. Le portefeuille de l'expéditeur interroge le serveur du domaine, qui lui renvoie une facture neuve à payer.

@@ -1,0 +1,1 @@
+Type de sortie dont le script est `OP_1 <0x4e73>` et que n'importe qui peut dépenser sans signature ni donnée de témoin. Elle sert d'ancre à une transaction signée à l'avance : un enfant qui la dépense paie les frais après coup (CPFP).

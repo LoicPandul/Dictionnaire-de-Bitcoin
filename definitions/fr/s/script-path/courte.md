@@ -1,0 +1,1 @@
+Mode de dépense d'une sortie P2TR dans lequel le dépensier révèle l'un des scripts engagés dans l'arbre de la sortie, prouve qu'il en fait partie, puis le satisfait, au lieu de simplement signer avec la clé.

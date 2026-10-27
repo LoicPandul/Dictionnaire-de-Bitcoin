@@ -1,0 +1,1 @@
+Forum de discussion technique sur Bitcoin, où développeurs et chercheurs exposent leurs propositions et les débattent par fils. Bitcoin Optech le suit depuis novembre 2023 et le cite dans la plupart de ses bulletins.

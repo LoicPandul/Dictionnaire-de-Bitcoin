@@ -1,0 +1,1 @@
+Manière de dépenser une sortie Taproot avec une seule signature de Schnorr valide pour sa clé publique, sans révéler de script. Contrairement au chemin de script, elle ne dévoile pas les autres conditions de dépense de la sortie.

@@ -1,0 +1,1 @@
+Revenu des mineurs, subvention de bloc plus frais de transaction, qui finance la production des blocs et conditionne ce que coûte une attaque contre la chaîne. Aucun consensus n'existe sur le niveau nécessaire quand la subvention aura disparu.

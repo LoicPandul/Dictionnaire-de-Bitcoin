@@ -1,0 +1,1 @@
+Ensemble de hachages qui prouve qu'une transaction figure dans un bloc, à partir du seul entête de ce bloc. Il suffit d'un hachage par niveau de l'arbre de Merkle, sans télécharger les autres transactions.
