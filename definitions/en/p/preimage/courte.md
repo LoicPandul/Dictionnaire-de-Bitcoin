@@ -1,0 +1,1 @@
+Input value that produces a given output of a hash function. On Lightning, the secret value whose hash locks the HTLCs of a payment, and whose revelation by the recipient proves the payment was received.

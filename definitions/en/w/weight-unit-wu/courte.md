@@ -1,0 +1,1 @@
+Unit of measurement introduced by SegWit to evaluate the space a transaction takes up in a block, where a byte of witness data weighs 1 WU and every other byte weighs 4 WU. A block is limited to 4,000,000 WU.

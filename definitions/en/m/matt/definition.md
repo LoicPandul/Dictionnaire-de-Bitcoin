@@ -1,0 +1,5 @@
+Soft fork proposal whose name stands for "Merkleize All The Things" and which aims to introduce covenant capabilities and limited transaction introspection in Bitcoin. MATT was proposed by Salvatore Ingala in 2022.
+
+The core of the proposal is the `OP_CHECKCONTRACTVERIFY` opcode (abbreviated `OP_CCV`), which verifies that a transaction output commits to a specific program and specific data by means of a Merkle tree. In practice, each state of a contract is represented by a node in a Merkle tree, and the transitions between states are validated by the script itself. This structure makes it possible to verify arbitrary programs in contract protocols, without requiring a consensus change for each new type of contract.
+
+MATT could allow the implementation of features such as vaults, improved payment channels, or other constructions based on covenants. The `OP_VAULT` proposal, which initially aimed at a dedicated vault mechanism, was in fact withdrawn in favor of `OP_CCV`, judged more general-purpose. The opcode was formally added to the BIPs in 2025.

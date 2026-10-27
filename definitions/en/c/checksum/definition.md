@@ -1,0 +1,3 @@
+Value computed from a set of data, used to verify the integrity and validity of that data during transmission or storage. Checksum algorithms are designed to detect accidental errors or unintentional alterations of the data, such as transmission errors or file corruption. Different types of checksum algorithms exist, such as parity checks, modular checksums, cryptographic hash functions, and BCH codes (Bose, Ray-Chaudhuri, and Hocquenghem).
+
+On Bitcoin, checksums are used at the application level to ensure the integrity of receiving addresses. A checksum is computed from the payload of a user's address, then appended to that address to detect possible errors when it is typed in. A checksum is also present in mnemonic phrases.

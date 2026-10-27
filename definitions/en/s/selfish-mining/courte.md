@@ -1,0 +1,1 @@
+Mining strategy in which valid blocks are withheld instead of propagated, so as to mine in secret on one's own chain and get ahead of the other miners. It causes reorganizations and reduces the reliability of confirmations.

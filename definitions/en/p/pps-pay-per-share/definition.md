@@ -1,0 +1,3 @@
+Method of calculating miner payouts in mining pools. PPS is a system in which miners are paid for each valid share submitted, regardless of whether the pool finds a block. They are therefore paid on the expected value. It is a piece-rate payment method.
+
+Each submitted share is considered a contribution to the mining process and has a fixed, predetermined value. This method offers miners stable, predictable pay, because it eliminates the variance tied to the probability of finding a block. However, it is riskier for pool operators, because they must pay miners even when no block is found, thereby absorbing the variance risk. Unlike FPPS, PPS does not include transaction fees in the payout calculation.

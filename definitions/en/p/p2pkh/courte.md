@@ -1,0 +1,1 @@
+Standard script template that locks bitcoin to the hash of a public key: to spend it, that public key and a valid signature must be provided. Associated with the Legacy standard, it produces addresses that begin with `1` on mainnet.

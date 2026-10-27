@@ -1,0 +1,3 @@
+Term for the conventional internet, as opposed to overlay networks such as Tor or I2P. On the clearnet, communications travel with identifiable IP addresses, which makes them observable by internet service providers, network operators, or any intermediary.
+
+In the context of Bitcoin and the Lightning Network, using the clearnet means that a node's IP address is directly visible to its peers and to network observers. Many node operators prefer to connect exclusively through Tor to protect their identity, even though the clearnet offers faster and more stable connections. Some hybrid setups let nodes be reachable on both Tor and the clearnet.

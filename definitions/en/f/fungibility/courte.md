@@ -1,0 +1,1 @@
+Property of money whose units are all interchangeable with one another. Bitcoin is fungible in principle, but the traceability of UTXOs on the blockchain makes it possible to distinguish them by their history.

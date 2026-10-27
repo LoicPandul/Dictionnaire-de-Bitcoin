@@ -1,0 +1,1 @@
+HMAC message authentication code built on the `SHA512` hash function and a secret key. On Bitcoin, it is used to derive the keys of an HD wallet, from the seed to the master key and then to each child key.

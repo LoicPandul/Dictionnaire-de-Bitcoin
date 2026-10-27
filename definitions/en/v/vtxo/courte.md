@@ -1,0 +1,1 @@
+Acronym for *Virtual Transaction Output*. Virtual portion of a UTXO shared among several users in the Ark protocol, managed by an Ark Service Provider, which its holder can convert at any time into a regular UTXO through a unilateral exit.

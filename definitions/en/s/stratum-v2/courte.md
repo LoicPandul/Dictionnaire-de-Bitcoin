@@ -1,0 +1,1 @@
+Second version of the Stratum protocol, which makes communication between miners and pools lighter and authenticated. Above all, it lets miners choose the transactions of their own blocks, limiting the power of pools.

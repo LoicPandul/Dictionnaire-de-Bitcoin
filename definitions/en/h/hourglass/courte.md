@@ -1,0 +1,1 @@
+Soft fork proposal that would limit spending of P2PK outputs to one per block, then to 1 bitcoin per block in its second version, so that a quantum computer could not drain them all at once. It remains a draft with no BIP number.

@@ -1,0 +1,1 @@
+Version 0 of SegWit scripts. SegWit v0 scripts are the first family of scripts introduced with the 2017 SegWit upgrade. The P2WPKH and P2WSH scripts are SegWit v0 scripts. The corresponding addresses always start with `bc1q` and are encoded in the `Bech32` format.

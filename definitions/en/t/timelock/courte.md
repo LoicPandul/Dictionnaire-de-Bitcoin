@@ -1,0 +1,1 @@
+Smart contract primitive that sets a time condition before which a transaction cannot be added to a block. It is either absolute (date or block height) or relative to the confirmation of the output being spent.

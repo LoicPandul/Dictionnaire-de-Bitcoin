@@ -1,0 +1,3 @@
+Data encoding format (type-length-value) structured in three fields: a type identifying the nature of the information, a length indicating the size of the data, and a value containing the data itself. This format allows extensible messages where new field types can be added without breaking compatibility with existing implementations.
+
+On the Lightning Network, TLV is used to structure the messages of the BOLT protocol, allowing optional information such as payment metadata or routing data to be included. In the Taproot Assets protocol, each leaf of the asset tree contains a TLV blob that encodes the version, the asset ID, the amount held, and the signatures and data relating to the asset's previous transfers.

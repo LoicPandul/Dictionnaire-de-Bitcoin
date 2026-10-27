@@ -1,0 +1,1 @@
+First transaction of every block, created by the miner who found it, which assigns the block reward: the fees of the included transactions and the newly created bitcoin. It spends no existing UTXO, and its funds can only be spent after 100 blocks.

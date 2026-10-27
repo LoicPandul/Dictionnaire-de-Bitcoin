@@ -1,0 +1,1 @@
+Rules for validating transactions and blocks that all full nodes apply identically: anything that breaks them is rejected by the whole network, whereas local policy rules vary from one node to another.

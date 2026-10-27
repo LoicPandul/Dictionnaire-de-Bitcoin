@@ -1,0 +1,3 @@
+Cryptographic proof that demonstrates possession of a specific private key, associated with a unique public key, without disclosing it. On Bitcoin, it is built using the private key and the signature hash (sighash), computed from the transaction data. It attests ownership of the bitcoin concerned and satisfies a script that unlocks a UTXO. It is generated with an elliptic curve digital signature algorithm such as ECDSA or the Schnorr protocol.
+
+![The signer produces the signature with the private key and the signature hash derived from the transaction; the verifier then checks it with the public key alone and the same hash, recomputed from the transaction, which unlocks the UTXO.](../../../fr/s/signature-numerique/assets/image-1.png)

@@ -1,0 +1,1 @@
+Quantum algorithm invented in 1994 by Peter Shor that factors large integers in polynomial time. One of its variants also breaks elliptic curve cryptography, including Bitcoin's ECDSA and Schnorr signatures, on a quantum computer large and stable enough.

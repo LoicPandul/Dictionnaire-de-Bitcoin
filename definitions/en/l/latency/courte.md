@@ -1,0 +1,1 @@
+Delay between the sending and the receiving of a piece of information. On Bitcoin, block propagation latency makes isolated miners work on a chain that has already been overtaken, which encourages miners to group together and wastes proof of work.

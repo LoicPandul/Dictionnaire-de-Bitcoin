@@ -1,0 +1,1 @@
+Collaborative transaction structure in which the recipient adds one of their inputs to the payer's. It looks like an ordinary payment, but misleads chain analysis about the ownership of the inputs and about the real amount of the payment.

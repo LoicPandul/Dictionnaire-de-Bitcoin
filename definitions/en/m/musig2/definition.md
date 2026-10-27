@@ -1,0 +1,3 @@
+Evolution of MuSig that cuts from three to two the number of rounds needed to produce an aggregated Schnorr multisignature. Proposed in 2020 by Jonas Nick, Tim Ruffing, and Yannick Seurin, the protocol eliminates the nonce commitment round by having each signer use several random nonces: each participant sends its nonces in the first round, even before knowing the message to sign, then the partial signatures are exchanged in the second round.
+
+Like MuSig, the resulting signature is indistinguishable from an individual signature on the blockchain. Reusing nonces across signing sessions, however, irreparably compromises the security of the scheme. MuSig2 was formalized in BIP-0327.

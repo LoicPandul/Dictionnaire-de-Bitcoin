@@ -1,0 +1,1 @@
+Duplicates an item of the stack and places it on top of the stack, based on the depth specified by the value at the top of the stack before the operation. For example, if the value at the top of the stack is `4`, `OP_PICK` duplicates the fifth item of the stack counting from the top (indexing starts at `0`) and places that copy at the top.

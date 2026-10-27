@@ -1,0 +1,1 @@
+Pattern of nonces and timestamps spotted in 2013 by Sergio Demian Lerner in the blocks of Bitcoin's first months, attributed to a single miner suspected to be Satoshi Nakamoto. According to Lerner, this miner mined about 1.1 million bitcoin.

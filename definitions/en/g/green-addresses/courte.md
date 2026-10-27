@@ -1,0 +1,1 @@
+Old Bitcoin address concept whose outgoing transactions are guaranteed against double spending by a trusted third party, so the recipient accepts them without waiting for a confirmation. This type of service is no longer used.

@@ -1,0 +1,1 @@
+Coinjoin protocol in which the coordinator blindly signs the participants' output addresses, which they then reveal under a new Tor identity. The coordinator can neither steal the funds nor link inputs to outputs.

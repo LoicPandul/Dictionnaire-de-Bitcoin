@@ -1,0 +1,1 @@
+Open-source and decentralized platform, known as the Omni Layer (formerly Mastercoin), for creating and managing assets on the Bitcoin blockchain. Assets on Omni include Tether (USDT), whose issuance on Omni stopped on August 17, 2023, and MaidSafeCoin (MAID).

@@ -1,0 +1,1 @@
+Proof-of-work system designed by Adam Back in 1997 against spam, which requires the sender to provide a computation that is costly to produce but quick to verify. Bitcoin reuses this principle in its proof of work.

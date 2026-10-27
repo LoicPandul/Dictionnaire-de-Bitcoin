@@ -1,0 +1,1 @@
+Set of algorithms that run on ordinary computers but rely on problems that even a quantum computer cannot solve efficiently. They aim to replace RSA and elliptic curve cryptography, including ECDSA and Schnorr.

@@ -1,0 +1,1 @@
+Combines the `OP_NUMEQUAL` and `OP_VERIFY` operations. It numerically compares the top two items of the stack. If the values are equal, `OP_NUMEQUALVERIFY` removes the true result from the stack and script execution continues. If the values are not equal, the result is false and the script fails immediately.

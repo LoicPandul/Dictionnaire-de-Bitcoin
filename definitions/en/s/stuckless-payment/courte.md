@@ -1,0 +1,1 @@
+Proposal that removes the risk of a stuck payment on the Lightning Network through PTLCs and an acknowledgment key controlled by the sender. The sender can launch several attempts in parallel without risking paying twice.

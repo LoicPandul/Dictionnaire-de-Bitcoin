@@ -1,0 +1,1 @@
+Privacy technique in which the recipient publishes a static public key, from which each sender derives a single-use address. Only the recipient can spot and spend these payments, which avoids address reuse.

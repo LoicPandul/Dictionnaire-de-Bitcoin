@@ -1,0 +1,1 @@
+One-time digital signature scheme devised by Leslie Lamport, whose security rests only on a hash function, which makes it resistant to quantum computers. Each signature reveals part of the private key, which must be used only once.

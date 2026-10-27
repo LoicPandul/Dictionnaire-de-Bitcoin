@@ -1,0 +1,1 @@
+In cryptography and computer systems, the process of joining two operands end to end, forming a new string of characters or data. The operation is generally written with a symbol of two vertical bars $\Vert$, or with the symbol $\circ$. For example, the concatenation of $45$ with $87$ is $4587$. This is written $45 \Vert 87 = 4587$. The two operands have been placed end to end.

@@ -1,0 +1,1 @@
+Small 330-sat outputs added to the commitment transactions of a Lightning channel, which each party can spend to raise the fees after the fact (CPFP). They keep a force close from getting stuck when network fees rise, which could allow a theft of funds.

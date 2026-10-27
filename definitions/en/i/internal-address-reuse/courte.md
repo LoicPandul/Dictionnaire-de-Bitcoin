@@ -1,0 +1,1 @@
+Reuse of the same address as both an input and an output of a single transaction. In chain analysis, it serves as a heuristic for spotting the change: the output that repeats the input address is likely the change.

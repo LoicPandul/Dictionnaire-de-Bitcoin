@@ -1,0 +1,1 @@
+Unilateral closing of a Lightning channel, in which a participant broadcasts the latest signed commitment transaction to recover their funds on-chain, slower and more expensive than a cooperative close.

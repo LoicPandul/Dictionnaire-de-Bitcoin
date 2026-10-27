@@ -1,0 +1,1 @@
+Acronym for *Hardware Security Module*, a dedicated device that generates and stores cryptographic keys and signs in a tamper-resistant hardware environment. On Bitcoin, companies and exchanges use it to sign transactions without the keys ever leaving it.

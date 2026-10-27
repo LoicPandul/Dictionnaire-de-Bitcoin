@@ -1,0 +1,1 @@
+Opcode that opens a conditional structure in a script: the portion that follows runs only if the value at the top of the stack is true, otherwise execution jumps to `OP_ELSE` if there is one. The structure is closed by `OP_ENDIF`.

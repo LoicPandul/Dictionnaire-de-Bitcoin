@@ -1,0 +1,5 @@
+Synonym for hardware wallet. A hardware wallet is an electronic device dedicated to securing and managing the private keys of a Bitcoin wallet. These devices are designed to provide stronger security than software wallets, which reside on general-purpose machines directly connected to the internet. Hardware wallets store the mnemonic phrase offline, on hardware with a very small attack surface, which isolates it from potentially vulnerable environments.
+
+When a transaction is made, the hardware wallet signs it inside the device itself, without exposing the private key to the outside. Once signed, the transaction is sent to the Bitcoin network to be confirmed and included in the blockchain. Among the most popular hardware wallet models are Ledger, Trezor, Coldcard, Passport, BitBox, Satochip, Jade, and SeedSigner (non-exhaustive list).
+
+*The term "signing device" is sometimes preferred to "hardware wallet" or "cold wallet", to avoid giving the impression that the bitcoin is physically stored in the wallet.*

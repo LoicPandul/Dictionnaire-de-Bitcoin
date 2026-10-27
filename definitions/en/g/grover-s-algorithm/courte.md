@@ -1,0 +1,1 @@
+Quantum algorithm published in 1996 by Lov Grover that speeds up any brute-force search quadratically. On Bitcoin, it weakens hash functions such as `SHA256` without breaking them, whereas Shor's algorithm threatens signatures.

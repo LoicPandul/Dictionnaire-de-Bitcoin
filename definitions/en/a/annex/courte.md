@@ -1,0 +1,1 @@
+Optional field reserved by BIP-0341 in the witness of Taproot inputs, recognizable by its `0x50` prefix. With no consensus function in 2026, it is not relayed by Bitcoin Core and is kept for future extensions; every signature commits to its content.

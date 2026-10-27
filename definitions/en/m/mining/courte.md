@@ -1,0 +1,1 @@
+Participation in the proof of work, the mechanism that lets Bitcoin nodes agree on a single version of the ledger: the miner searches for a value whose hash falls below a target. Each block found earns the miner the subsidy and the fees.

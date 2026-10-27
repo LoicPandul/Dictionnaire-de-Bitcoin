@@ -1,0 +1,1 @@
+File formerly used in Bitcoin Core to store a private key associated with a Tor v2 hidden service for the `-listenonion` option. This file has no longer been used since version 0.21.0, in favor of Tor v3.

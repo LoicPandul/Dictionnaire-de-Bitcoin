@@ -1,0 +1,3 @@
+Cryptographic packet format used by the Lightning Network to route payments privately through onion routing. Originally designed by George Danezis and Ian Goldberg in 2009 for mix networks, it encapsulates routing instructions in successive layers of encryption. Each intermediate node can decrypt only the layer intended for it, revealing only the next hop, the amount to forward to it, and the CLTV of the outgoing HTLC (BOLT-04), without knowing the sender or the final recipient.
+
+![The onion packet that Alice sends to Bob through A and B carries one encrypted layer per hop: each node peels off its own and reads the next channel, the amount, and the CLTV in it, while padding keeps the packet at its fixed size of 1,366 bytes.](../../../fr/s/sphinx/assets/image-1.png)

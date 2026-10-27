@@ -1,0 +1,1 @@
+Closing of a Lightning channel signed by mutual agreement of both partners, which redistributes the funds without a timelock. Cheaper than a force close, it makes the funds available as soon as it is confirmed.

@@ -1,0 +1,5 @@
+256-bit cryptographic salt value used to generate child keys from a parent key in the hierarchical deterministic (HD) derivation of Bitcoin wallets, according to the BIP-0032 standard. The chain code is used in combination with the parent key and the child index to deterministically generate a new key pair (private key and public key) without revealing the parent key or the other derived child keys.
+
+There is thus a unique chain code for each key pair. The chain code is obtained either by hashing the wallet seed and taking the right half of the bits. In this case, it is called a master chain code, associated with the master private key. Or it can be obtained by hashing a parent key with its parent chain code and an index, then keeping the right bits. It is then called a child chain code.
+
+It is impossible to derive keys without knowing the chain code associated with each parent pair. The chain code introduces pseudorandom data into the derivation process to guarantee that the generation of cryptographic keys stays unpredictable for attackers while remaining deterministic for the wallet holder.

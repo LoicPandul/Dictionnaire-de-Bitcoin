@@ -1,0 +1,1 @@
+Soft fork triggered and enforced by users through their nodes, without waiting for the approval of miners. It is a means of pressure against miners opposed to an upgrade, at the risk of a chain split.

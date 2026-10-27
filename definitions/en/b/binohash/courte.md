@@ -1,0 +1,1 @@
+Transaction hash function proposed by Robin Linus that gives Bitcoin Script a limited form of introspection without changing consensus, by repurposing the FindAndDelete behavior of `OP_CHECKMULTISIG`. It targets protocols such as BitVM bridges.

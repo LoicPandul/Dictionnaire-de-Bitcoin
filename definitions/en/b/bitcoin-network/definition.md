@@ -1,0 +1,3 @@
+Peer-to-peer infrastructure of the Bitcoin system, made up of all the nodes (computers) that run software implementing the Bitcoin protocol and connect to their peers. Each node communicates with other nodes to download and verify the blockchain, to verify and propagate new blocks, and to verify and propagate new transactions.
+
+There is no central server: a node connects to a few peers, which link it indirectly to the rest of the network. In Bitcoin Core 32.0, a node opens 8 outbound connections by default that relay blocks and transactions, as well as 2 outbound connections that relay only blocks, and it listens on port `8333` on mainnet.

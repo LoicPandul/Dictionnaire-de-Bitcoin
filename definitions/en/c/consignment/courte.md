@@ -1,0 +1,1 @@
+Data package that one party passes directly to another in the RGB protocol, outside the blockchain, for it to verify itself through client-side validation. It serves to initialize a contract or to pass on the history of a transfer.

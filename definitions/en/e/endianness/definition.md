@@ -1,0 +1,1 @@
+Order in which a sequence of bytes is arranged and interpreted in computing. There are two types: "big-endian," where the most significant byte (the one with the highest place value) is stored first, and "little-endian," where the least significant byte (the one with the lowest place value) is stored first.

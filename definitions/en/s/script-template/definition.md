@@ -1,0 +1,1 @@
+Template that enables the use of standard scripts. A script template is essentially a small list of opcodes put together to form a standard that specifies a way of setting spending conditions on bitcoin. Some examples of script templates are P2PK, P2PKH, P2WPKH, and P2SH.

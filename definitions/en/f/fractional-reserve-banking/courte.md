@@ -1,0 +1,1 @@
+Banking principle under which an institution keeps only a fraction of its customers' deposits in reserve and uses the rest. Applied by an exchange to deposited BTC, it creates a risk of failure if all customers withdraw their funds at once.

@@ -1,0 +1,1 @@
+Project for an autonomous investment fund run by smart contracts on Ethereum, hacked in June 2016, which led to an Ethereum hard fork. The episode served small blockers as an argument against hard forks during the Blocksize War.

@@ -1,0 +1,1 @@
+Chain analysis heuristic that assumes all the inputs of a transaction belong to the same person. Satoshi Nakamoto already describes it in the white paper, and it remains one of the main methods of chain analysis firms.

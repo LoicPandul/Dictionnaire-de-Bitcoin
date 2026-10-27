@@ -1,0 +1,1 @@
+Acronym for *Distributed Key Generation*. Protocol in which several participants generate a key pair together without a trusted third party, each holding only a share of the private key, which no one knows in full.

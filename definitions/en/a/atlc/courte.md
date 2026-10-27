@@ -1,0 +1,1 @@
+Conditional payment from the initial Ark proposal, comparable to an HTLC on Lightning: tied to a connector, it makes the payment atomic, because the service provider cannot claim it by double spending the round.

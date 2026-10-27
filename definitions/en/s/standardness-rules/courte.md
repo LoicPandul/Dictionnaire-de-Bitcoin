@@ -1,0 +1,1 @@
+Subset of mempool policy that sets, node by node and in addition to the consensus rules, the accepted format of an unconfirmed transaction taken in isolation, notably to limit DoS attacks and prepare soft forks.

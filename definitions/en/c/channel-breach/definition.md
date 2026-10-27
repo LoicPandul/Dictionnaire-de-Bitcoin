@@ -1,0 +1,3 @@
+Attempt to cheat on the Lightning Network, in which a peer publishes an old commitment transaction to try to recover a balance that is no longer theirs. When such a revoked state is broadcast on the blockchain, the counterparty has a window set by the timelock to detect the fraud and publish a justice transaction that lets them recover all the funds of the channel.
+
+Detection of a channel breach can be handled directly by the node if it is online, or delegated to a watchtower that monitors the blockchain continuously. If the breach is not contested before the timelock expires, the cheater keeps the funds wrongly recovered.

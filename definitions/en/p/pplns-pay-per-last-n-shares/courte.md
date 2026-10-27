@@ -1,0 +1,1 @@
+Miner payout method for a pool that, each time a block is found, splits the earnings according to the shares each miner submitted over the last period, which favors steady miners and discourages pool hopping.

@@ -1,0 +1,1 @@
+Confidential smart contract system that runs on top of Bitcoin and the Lightning Network through client-side validation. Contract state stays off-chain, and only cryptographic commitments are anchored on the blockchain, which allows tokens to be issued.

@@ -1,0 +1,1 @@
+Field of a SegWit input that contains the unlocking data, such as signatures and public keys, much like the `scriptSig`. It is placed in a separate structure, the witness, which resolves transaction malleability.

@@ -1,0 +1,1 @@
+Problem formulated by Leslie Lamport, Robert Shostak, and Marshall Pease that illustrates how hard it is for the members of a distributed system to agree on a common decision when some may betray and messages may be lost.

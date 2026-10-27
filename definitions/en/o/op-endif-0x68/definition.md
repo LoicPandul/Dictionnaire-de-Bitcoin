@@ -1,0 +1,1 @@
+Marks the end of a conditional control structure started by an `OP_IF` or an `OP_NOTIF`, possibly followed by one or more `OP_ELSE`. It indicates that script execution must continue past the conditional structure, whichever branch was executed. In other words, `OP_ENDIF` delimits the end of conditional blocks in scripts.

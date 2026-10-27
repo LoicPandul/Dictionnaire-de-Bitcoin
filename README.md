@@ -27,6 +27,7 @@ sats@pandul.fr
 - [Lire le *Dictionnaire de Bitcoin*](#lire-le-dictionnaire-de-bitcoin)
 - [Demandes de modification et contributions](#demandes-de-modification-et-contributions)
 - [Termes acceptés dans le *Dictionnaire de Bitcoin*](#termes-acceptés-dans-le-dictionnaire-de-bitcoin)
+- [Version anglaise](#version-anglaise)
 - [Structure du dépôt](#structure-du-dépôt)
 - [Scripts et génération](#scripts-et-génération)
 - [Licence et réutilisation](#licence-et-réutilisation)
@@ -95,7 +96,7 @@ La catégorie décide de la partie du livre où l'entrée apparaît (dictionnair
 
 ### Modifier une définition existante
 
-Naviguez vers `definitions/fr/{lettre}/{slug}/` et modifiez le fichier `definition.md`.
+Naviguez vers `definitions/fr/{lettre}/{slug}/` et modifiez le fichier `definition.md`. Si l'entrée existe aussi en anglais dans `definitions/en/`, reportez-y la modification ou signalez-la dans la PR (voir [CONTRIBUTING.md](./CONTRIBUTING.md)).
 
 Si vous ne vous sentez pas à l'aise avec l'utilisation de Git, ou si vous avez en tête une modification mineure, vous pouvez également créer une issue sur GitHub plutôt qu'une PR.
 
@@ -117,24 +118,34 @@ Les termes généraux liés à l'informatique et à la cryptographie sont unique
 
 Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une définition exhaustive, même si elle doit être longue, plutôt qu'une définition courte et imprécise.
 
+## Version anglaise
+
+La traduction anglaise du dictionnaire technique est en cours dans [definitions/en/](./definitions/en/). Chaque entrée anglaise garde l'empreinte de la version française qu'elle traduit, et `python3 scripts/main.py sync` signale les traductions manquantes, en retard ou à reporter en français. Si vous modifiez une définition qui existe dans les deux langues, suivez la règle de [CONTRIBUTING.md](./CONTRIBUTING.md) ; le détail est dans [docs/traduction.md](./docs/traduction.md).
+
+*The English translation of the technical dictionary is in progress in [definitions/en/](./definitions/en/). See [CONTRIBUTING.md](./CONTRIBUTING.md#contributing-to-the-bitcoin-dictionary) to keep French and English in sync.*
+
 ## Structure du dépôt
 
+Le rangement du dépôt et ses raisons sont décrits dans [docs/structure.md](./docs/structure.md).
+
+<!-- arbre:debut -->
 ```plaintext
 Dictionnaire-de-Bitcoin/
-├── definitions/                    # Entrées du dictionnaire (toutes les parties)
-│   └── fr/
-│       ├── a/
-│       │   ├── adaptor-signature/
-│       │   │   ├── definition.md   # Version développée
-│       │   │   ├── courte.md       # Version courte (une ou deux phrases)
-│       │   │   └── metadata.yaml   # Métadonnées (titre, catégorie, renvois…)
-│       │   ├── adresse-de-reception/
-│       │   │   ├── definition.md
-│       │   │   ├── courte.md
-│       │   │   ├── metadata.yaml
-│       │   │   └── assets/         # Images de la définition
-│       │   └── ...
-│       └── z/
+├── definitions/                    # Entrées du dictionnaire, une langue par dossier
+│   ├── fr/                         # Langue d'origine
+│   │   ├── a/
+│   │   │   ├── adaptor-signature/
+│   │   │   │   ├── definition.md   # Version développée
+│   │   │   │   ├── courte.md       # Version courte (une ou deux phrases)
+│   │   │   │   └── metadata.yaml   # Métadonnées (titre, catégorie, renvois…)
+│   │   │   ├── adresse-de-reception/
+│   │   │   │   ├── definition.md
+│   │   │   │   ├── courte.md
+│   │   │   │   ├── metadata.yaml
+│   │   │   │   └── assets/         # Images de la définition
+│   │   │   └── ...
+│   │   └── z/
+│   └── en/                         # Traduction anglaise (dictionnaire technique)
 │
 ├── specifications/                 # BIP, BOLT et bLIP : numéro, titre, statut, résumé
 ├── chronologie/fr/                 # Chronologie, un fichier par année
@@ -149,21 +160,26 @@ Dictionnaire-de-Bitcoin/
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
 │   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
+│   ├── languages.yaml              # Langues et périmètre de chaque traduction
 │   ├── legal.yaml                  # Informations légales et métadonnées
 │   ├── introduction.md             # Note de l'auteur
 │   ├── contributors.md             # Liste des contributeurs
 │   └── pending_terms.yaml          # Termes en attente de définition
 │
-├── scripts/                        # Validation et génération (PDF, EPUB, index, statistiques)
+├── docs/                           # Structure du dépôt, synchro des traductions, glossaire
+├── edition-2027/                   # Dossier de travail de l'édition 2027
+├── scripts/                        # Validation, synchro et génération (PDF, EPUB, index, statistiques)
 │
 ├── dictionnaire-de-bitcoin.pdf     # Version PDF
 ├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
 ├── STYLE_GUIDE.md                  # Charte éditoriale
+├── CONTRIBUTING.md                 # Contribuer, et garder le français et l'anglais synchronisés
 ├── README.md
 ├── LICENCE_FR.md
 └── LICENSE.md
 ```
+<!-- arbre:fin -->
 
 ## Scripts et génération
 

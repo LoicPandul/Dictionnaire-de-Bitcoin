@@ -1,0 +1,1 @@
+Chain analysis heuristic that assumes, in a simple payment whose 2 outputs have very different amounts, that the larger one is the change. Unreliable alone, it is mainly used to complement other heuristics.

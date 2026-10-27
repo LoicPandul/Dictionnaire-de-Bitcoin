@@ -1,0 +1,3 @@
+Acronym for *Pay Per Share Plus*. Method of calculating miner payouts in mining pools that combines the PPS and PPLNS approaches. For the part tied to the block subsidy, miners receive a fixed payment for each valid share submitted, calculated with the classic PPS method, regardless of whether the pool found a block. For the part tied to transaction fees, the payout is distributed with the PPLNS method, only when the pool actually finds a block.
+
+PPS+ thus gives miners a stable base of income through the PPS component, while still letting them benefit from transaction fees when the pool finds a block. This method is less risky for the pool operator than FPPS, because the operator does not advance the transaction fees.

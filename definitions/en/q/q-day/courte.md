@@ -1,0 +1,1 @@
+Hypothetical day, of unknown date, from which a quantum computer can break the public-key cryptography currently in use. For Bitcoin, ECDSA and Schnorr would no longer protect funds whose public key is known, then, with faster machines, those being spent.

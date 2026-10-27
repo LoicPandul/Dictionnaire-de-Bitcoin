@@ -1,0 +1,1 @@
+In Git, the operation of creating a local copy of a remote repository. It downloads the whole repository, including all branches and the full commit history. A Bitcoin user may need to run this command when downloading software.

@@ -1,0 +1,5 @@
+Technique of sending payments on the Lightning Network with no intention of completing them, to discover information about the network, notably the available routes and channel balances.
+
+To do this, the sender builds a payment with a payment hash whose preimage nobody knows. No recipient can therefore settle it. If the payment reaches the last node of the route, that node rejects it with the error `incorrect_or_unknown_payment_details` (BOLT-04): the sender then knows that the route exists and that every channel crossed had enough liquidity to forward the amount. If an intermediate node cannot forward the payment, it returns an error such as `temporary_channel_failure`, which identifies the channel at fault. No funds change hands, since the payment fails in every case.
+
+Let's take an example. Alice wants to pay Bob and is torn between two routes. She first sends a probe payment of 100,000 sats on each: the first comes back with `incorrect_or_unknown_payment_details`, the second with `temporary_channel_failure`. She therefore picks the first route for her real payment.

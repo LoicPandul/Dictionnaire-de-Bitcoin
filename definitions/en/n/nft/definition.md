@@ -1,0 +1,3 @@
+Acronym for *Non-Fungible Token*. An NFT represents a unit of bitcoin that users of a protocol external to Bitcoin interpret as non-fungible and associate with the ownership of an asset external to Bitcoin, such as an image or any other type of data.
+
+On Bitcoin, protocols like Ordinals and Stamps make it possible to create and manage these NFTs. These protocols are often controversial, because their activity clutters the blockchain with non-financial data. This can have negative consequences for the system, in particular an increased operational burden for full nodes or higher transaction fees driven by external economic factors.

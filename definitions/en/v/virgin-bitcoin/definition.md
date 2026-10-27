@@ -1,0 +1,1 @@
+Unit of bitcoin freshly issued in a coinbase transaction (block reward) and never spent in a later transaction. Its transaction history is therefore free of any association with activities identified by chain analysis tools.

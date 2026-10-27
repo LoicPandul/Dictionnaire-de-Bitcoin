@@ -1,0 +1,1 @@
+Dedicated electronic device that keeps the keys of a Bitcoin wallet offline and signs transactions inside the device, without exposing the private keys to a connected computer. Also called a signing device.

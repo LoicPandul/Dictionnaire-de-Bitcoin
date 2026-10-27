@@ -1,0 +1,1 @@
+Payment that a Lightning node sends to itself through other nodes to move liquidity from one of its channels to another, without opening or closing any channel. It costs the routing fees of the intermediate nodes.

@@ -1,0 +1,1 @@
+Block relay protocol defined by BIP-0152 that saves node bandwidth. Instead of full transactions, a node sends short identifiers of the transactions its peers already have in their mempool, and transmits only the missing ones.

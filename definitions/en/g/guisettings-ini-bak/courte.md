@@ -1,0 +1,1 @@
+Bitcoin Core file that keeps a backup of the graphical user interface settings, created when the `-resetguisettings` option resets them to their defaults. It lets the user recover the old configuration to diagnose a problem.

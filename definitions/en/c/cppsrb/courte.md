@@ -1,0 +1,1 @@
+Acronym for *Capped Pay Per Share with Recent Backpay*, a pool payout method that pays as many shares as possible at each block found, the most recent first, to stay solvent and discourage pool hopping.

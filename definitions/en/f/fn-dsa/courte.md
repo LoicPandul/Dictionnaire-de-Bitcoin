@@ -1,0 +1,1 @@
+Post-quantum digital signature algorithm based on NTRU lattices, derived from Falcon and being standardized by NIST. Its signatures are more compact than those of ML-DSA, but difficult to implement safely.

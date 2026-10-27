@@ -1,0 +1,1 @@
+In the context of Bitcoin, the term "bit" is also used to refer to a monetary subdivision of bitcoin. One bit equals 100 satoshis, which are the smallest indivisible unit of bitcoin. Thus, 1 bitcoin equals 1,000,000 bits or 100,000,000 sats. However, using this term as a monetary subdivision is controversial. Most bitcoiners use either "sats" or "BTC", but not "bits".

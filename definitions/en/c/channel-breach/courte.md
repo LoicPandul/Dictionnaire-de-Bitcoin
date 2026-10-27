@@ -1,0 +1,1 @@
+Attempt to cheat on Lightning in which a peer publishes an old, revoked commitment transaction. The counterparty, or its watchtower, has until the timelock expires to broadcast a justice transaction and recover all the channel funds.

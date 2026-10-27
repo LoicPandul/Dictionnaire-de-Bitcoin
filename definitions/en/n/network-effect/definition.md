@@ -1,0 +1,3 @@
+Economic phenomenon in which the value or usefulness of a product or service increases as the number of its users grows. The more participants a network has, the more attractive it becomes to new users, creating a virtuous circle of adoption. This concept is closely tied to Metcalfe's law.
+
+The network effect is fundamental to understanding money: a currency has value only because other people accept it. The larger the number of people who accept a currency, the more useful that currency is as a medium of exchange. This mechanism explains the natural tendency toward a single monetary standard within an economy.

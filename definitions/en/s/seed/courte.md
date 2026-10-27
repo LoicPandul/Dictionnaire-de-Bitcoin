@@ -1,0 +1,1 @@
+512-bit piece of information from which an HD wallet derives all its keys, obtained by running the mnemonic phrase and the optional passphrase through `PBKDF2`. It is often confused with the mnemonic phrase itself.

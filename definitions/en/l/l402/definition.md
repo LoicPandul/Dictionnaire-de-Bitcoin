@@ -1,0 +1,5 @@
+Authentication and payment standard for distributed services, formerly known as LSAT (*Lightning Service Authentication Token*). Its name comes from the HTTP status code 402 (Payment Required). L402 combines two mechanisms: macaroons, which are bearer authentication tokens verifiable with simple cryptography and no centralized database, and the Lightning Network, which provides an instant payment system.
+
+L402 works by associating a macaroon with the hash of a Lightning payment. When a user wants to access a protected service, the service hands the user a macaroon along with a Lightning invoice. Once the payment is made, the user obtains the preimage, which, combined with the macaroon, forms a valid L402 credential. The service does not need to check directly whether the invoice was paid: presenting a preimage that matches the payment hash is enough to prove settlement.
+
+L402 is implemented in Aperture, a reverse proxy developed by Lightning Labs, which handles issuing macaroons and invoices, then forwards authenticated requests to the protected APIs.

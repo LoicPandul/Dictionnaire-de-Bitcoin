@@ -1,0 +1,1 @@
+In Git, the creation of a copy of an existing repository on a new account, which lets the user modify, test, or develop the project independently of the original repository. Forks enable open-source collaboration and contributions to projects without affecting the source repository.

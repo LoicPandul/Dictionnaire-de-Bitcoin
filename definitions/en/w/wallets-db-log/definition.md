@@ -1,0 +1,1 @@
+Berkeley DB log file that Bitcoin Core used to create in the folder of legacy wallets (`wallets/<name>/db.log`). It records the operations and events of the wallet database for troubleshooting. Bitcoin Core 30.0 no longer creates or loads these wallets, and descriptor wallets, which use SQLite, have no `db.log`.

@@ -1,0 +1,1 @@
+Scheme for backing up BIP-0032 seeds on paper, specified in BIP-0093, which splits the seed into shares using Shamir's secret sharing. Its checksum can be computed and verified entirely by hand, without an electronic device.

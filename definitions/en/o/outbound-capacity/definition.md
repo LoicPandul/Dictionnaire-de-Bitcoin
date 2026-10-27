@@ -1,0 +1,1 @@
+Maximum amount of bitcoin that a node can send through a specific channel on the Lightning Network. It depends on the funds the node committed to the channel when it was opened, or received during a Lightning payment or routing.

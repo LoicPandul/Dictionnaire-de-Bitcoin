@@ -1,0 +1,1 @@
+Difficulty target, easier than Bitcoin's, that a mining pool assigns to each miner to qualify their shares. Adjusted to computing power, it measures each miner's hashrate and serves to split the rewards.

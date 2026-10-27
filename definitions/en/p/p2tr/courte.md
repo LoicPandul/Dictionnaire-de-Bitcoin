@@ -1,0 +1,1 @@
+Standard script template introduced by Taproot, which locks bitcoin to a single Schnorr public key that can also hide a tree of alternative scripts. Only the spending path used is revealed, and addresses begin with `bc1p`.

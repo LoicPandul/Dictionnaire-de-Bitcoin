@@ -1,0 +1,1 @@
+Data structure placed in the witness of a P2TR script path spend, defined in BIP-0341. It proves that the revealed script is part of the script tree committed to in the Taproot key, without exposing the other leaves.

@@ -1,0 +1,1 @@
+Smart contract on Bitcoin whose outcome depends on the result of an external event published by an oracle, which knows nothing about the contract. It is used notably for conditional bets and financial instruments.

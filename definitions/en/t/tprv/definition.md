@@ -1,0 +1,1 @@
+Extended private key prefix for Legacy and SegWit v1 accounts on the Bitcoin testnet.

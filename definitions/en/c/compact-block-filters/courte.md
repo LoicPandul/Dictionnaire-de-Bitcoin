@@ -1,0 +1,1 @@
+Mechanism that lets a light client learn whether a block contains transactions relevant to it without revealing its addresses. Full nodes publish a filter for each block, defined by BIP-0158, which the client tests locally before downloading the block.

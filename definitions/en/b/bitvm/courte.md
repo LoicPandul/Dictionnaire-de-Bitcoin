@@ -1,0 +1,1 @@
+Protocol that makes it possible to run arbitrary computations off-chain and to condition the spending of bitcoin on their result, with an on-chain challenge possible in case of fraud, without changing Bitcoin's consensus.

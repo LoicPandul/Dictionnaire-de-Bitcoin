@@ -1,0 +1,1 @@
+Program that runs automatically when certain predefined conditions are met. A smart contract is thus a set of clauses between several parties that can be carried out without the intervention of a trusted third party. These contracts generally trigger specific actions such as a transfer of bitcoin.

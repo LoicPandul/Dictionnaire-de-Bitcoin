@@ -1,0 +1,1 @@
+Standard string that describes an output script: script type, derivation paths, keys, and checksum. Backed up along with the mnemonic phrase, it makes it possible to faithfully restore a wallet, multisig included.

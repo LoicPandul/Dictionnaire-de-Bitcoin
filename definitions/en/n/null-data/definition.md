@@ -1,0 +1,1 @@
+Type of Bitcoin output that makes it possible to insert a small amount of arbitrary data by means of an `OP_RETURN`. Any bitcoin associated with this type of output is provably unspendable, because the `OP_RETURN` marks an invalid script.

@@ -1,0 +1,1 @@
+Informal community, born in the early 1990s, that promotes cryptography to defend individual freedoms and privacy on the Internet. The creation of Bitcoin is often seen as one of its major achievements.

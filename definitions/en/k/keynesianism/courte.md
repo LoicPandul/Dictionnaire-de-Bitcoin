@@ -1,0 +1,1 @@
+School of economic thought derived from John Maynard Keynes, which advocates intervention by the state and central banks to stabilize economic cycles. Bitcoiners criticize it for the monetary expansion and public debt it encourages.

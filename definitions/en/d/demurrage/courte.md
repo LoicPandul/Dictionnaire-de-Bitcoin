@@ -1,0 +1,1 @@
+Cost of holding a currency and, by extension, a mechanism that makes a currency held for a long time lose value to encourage its circulation. Sometimes proposed for Bitcoin, it is very widely rejected there.

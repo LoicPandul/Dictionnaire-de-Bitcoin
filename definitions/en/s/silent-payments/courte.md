@@ -1,0 +1,1 @@
+Method for receiving payments on a static address without address reuse or interaction: the sender derives a unique address for each payment, with no visible on-chain link. In return, the recipient must scan the blockchain.

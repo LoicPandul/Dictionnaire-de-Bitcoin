@@ -1,0 +1,1 @@
+Name of the old directory Bitcoin Core used to store the UTXO set, renamed `chainstate/` in January 2013, before the release of version 0.8.0. It therefore existed only in development versions, never in a released version.

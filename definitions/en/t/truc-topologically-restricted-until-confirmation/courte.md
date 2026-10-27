@@ -1,0 +1,1 @@
+Bitcoin Core relay policy for version 3 transactions: as long as they are unconfirmed, they have at most one unconfirmed ancestor and one unconfirmed descendant, of bounded size, which makes replacement and fee bumping more reliable.

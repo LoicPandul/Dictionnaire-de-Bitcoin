@@ -1,0 +1,1 @@
+Supporters of keeping blocks small during the Blocksize War (2015 to 2017), to preserve Bitcoin's decentralization. They backed SegWit, scaling on higher layers such as Lightning, and changes through soft forks.

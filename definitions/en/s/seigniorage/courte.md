@@ -1,0 +1,1 @@
+Revenue an issuer of money earns from the gap between the face value of the money and its cost of production. Bitcoin has none: the block subsidy pays miners for a real cost and benefits no central authority.

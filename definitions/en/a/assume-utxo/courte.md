@@ -1,0 +1,1 @@
+Bitcoin Core feature that lets a new node start from a snapshot of the UTXO set, whose hash is written in the code, so that it is usable very quickly. It then verifies the full history in the background.

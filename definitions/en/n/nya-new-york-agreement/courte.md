@@ -1,0 +1,1 @@
+Agreement reached in 2017 by more than 50 Bitcoin companies, which planned to activate SegWit and then double the block size through a hard fork (SegWit2x). For lack of consensus, the project was abandoned.

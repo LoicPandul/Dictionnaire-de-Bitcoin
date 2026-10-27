@@ -1,0 +1,1 @@
+Version of Lightning multi-path payments in which each shard carries a distinct partial secret. The recipient can claim the payment only after receiving every shard, and the different routes no longer share a visible link.

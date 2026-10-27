@@ -1,0 +1,1 @@
+LND backup file that holds the static information of Lightning channels, such as peers and channel identifiers. Together with the seed, it lets the user recover funds on-chain by asking peers to close the channels.

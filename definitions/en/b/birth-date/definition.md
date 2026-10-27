@@ -1,0 +1,1 @@
+Date on which a wallet was created. This information is important when restoring a wallet, because it tells the software from which block it must start looking for the transactions associated with that wallet. By knowing the birth date, the software can efficiently synchronize and recover the transaction history without having to scan the entire blockchain from the genesis block.

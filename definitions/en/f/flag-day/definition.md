@@ -1,0 +1,3 @@
+Soft fork activation mechanism used in the early years of Bitcoin. This process simply defines a deadline, known as the "Flag Day," before which the protocol update must be adopted by the entire network. This approach is simple and direct: after that date, nodes and miners must have updated their software to comply with the new rules, or they risk ending up on an incompatible chain.
+
+However, this method is very risky nowadays, because it requires significant coordination and consensus within the community, without which the network may suffer a chain split, and the updated chain may not be the one with the most accumulated work. The Flag Day method can nevertheless be used for uncontroversial changes or urgent technical fixes.

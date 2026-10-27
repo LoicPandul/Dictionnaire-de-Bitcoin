@@ -1,0 +1,1 @@
+Standard script template that locks bitcoin to the hash of an arbitrary script, the `redeemScript`, revealed only at spend time. Introduced by BIP-0016, it is used notably for multisignatures and produces addresses that begin with `3` on mainnet.

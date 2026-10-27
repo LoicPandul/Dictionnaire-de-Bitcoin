@@ -1,0 +1,1 @@
+Wallet parameter that sets the number of consecutive empty addresses after which the software stops searching for transactions, and that sometimes has to be raised during a restoration to recover all funds.

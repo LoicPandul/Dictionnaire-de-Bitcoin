@@ -1,0 +1,1 @@
+Variant of `SIGHASH_ANYPREVOUT` defined by BIP-0118, whose signature commits to neither the spent UTXO, nor its script, nor its amount. It can serve for any UTXO whose scripts use the same BIP-0118 public key.

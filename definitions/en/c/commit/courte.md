@@ -1,0 +1,1 @@
+Snapshot of the changes made to the files of a Git repository, identified by a unique hash and accompanied by a message, the author, and the date. Commits make it possible to track a project's evolution and return to an earlier state.

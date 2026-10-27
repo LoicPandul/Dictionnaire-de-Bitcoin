@@ -1,0 +1,1 @@
+Open-source bitcoin custody protocol for organizations, developed by Wizardsardine and discontinued as of 2026. It combines presigned transactions, high-threshold multisignatures, and watchtowers to enforce spending policies.

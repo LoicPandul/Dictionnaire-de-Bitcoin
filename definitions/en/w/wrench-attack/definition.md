@@ -1,0 +1,5 @@
+Physical attack aimed at forcing a bitcoin holder to hand over their funds under threat or through violence. The name refers to a cheap wrench (with a symbolic value of $5) used as a coercion tool, and illustrates the idea that the strongest cryptography can be bypassed by a simple physical assault.
+
+Several countermeasures exist to limit the risks of this attack. Using a BIP-0039 passphrase makes it possible to create a hidden wallet, which offers a form of plausible deniability. Using multisig with a geographic distribution of the keys prevents an attacker from obtaining all the required signatures in a single place. Timelocks can also be used to make funds temporarily inaccessible. Finally, discretion about one's bitcoin holdings remains the most basic preventive measure.
+
+This notion is a reminder that security in the Bitcoin ecosystem is a global concern that goes beyond the computing dimension alone. It also involves operational security (OPSEC) considerations and physical protection.

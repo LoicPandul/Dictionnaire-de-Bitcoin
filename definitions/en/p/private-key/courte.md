@@ -1,0 +1,1 @@
+Secret 256-bit number that makes it possible to sign transactions and thus spend the bitcoin locked by the corresponding public key. It must stay confidential, since anyone who knows it controls the associated funds.

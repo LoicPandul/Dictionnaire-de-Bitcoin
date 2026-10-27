@@ -1,0 +1,1 @@
+Piece of information that links on-chain activity (address, transaction, cluster) to the identity of a person or entity, and serves as the starting point of a chain analysis. KYC is the most common source.

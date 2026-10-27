@@ -1,0 +1,1 @@
+Cryptographic proof of possession of a private key without disclosing it. On Bitcoin, it is produced with ECDSA or Schnorr from the transaction's signature hash and satisfies the script that locks a UTXO.

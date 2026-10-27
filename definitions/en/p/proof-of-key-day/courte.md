@@ -1,0 +1,1 @@
+Annual initiative on January 3, the anniversary of the genesis block, that invites bitcoin holders to all withdraw their funds from exchanges at once and move them to self-custody to test their solvency.

@@ -1,0 +1,1 @@
+Transactions recorded directly on the Bitcoin blockchain. The term is the opposite of "off-chain", which refers to operations that are more or less related to the Bitcoin blockchain but take place outside the main blockchain.

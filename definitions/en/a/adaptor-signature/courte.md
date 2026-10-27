@@ -1,0 +1,1 @@
+Incomplete signature tied to a secret, which becomes valid once combined with that secret and reveals it as soon as the valid signature is published. It makes atomic swaps possible between two parties who do not trust each other.

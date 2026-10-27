@@ -1,0 +1,7 @@
+Cost associated with holding a currency. By extension, demurrage sometimes designates a monetary mechanism in which holding a currency for a long time incurs a penalty for its owner, for example by gradually decreasing its value. The goal is often to improve the velocity of money by discouraging long-term saving.
+
+This mechanism is sometimes proposed for implementation on Bitcoin to support the transaction fee market and spread the costs of the system more equitably. Indeed, the running cost of Bitcoin will eventually rest solely on those who make transactions, and not on the savers who nonetheless benefit from the security of the system. However, demurrage is very widely rejected by the Bitcoin community, because it penalizes long-term holders and does not fit the store-of-value characteristic of BTC. Since it imposes a gradual loss of value, it can be perceived as an infringement of the right to own property.
+
+An argument against demurrage is that the cost of the current system already inevitably rests on savers, given that they had to make a transaction at some point to obtain their bitcoin. Moreover, the security of a given UTXO increases greatly with the first blocks after its creation, but over time, the additional security gained with each block becomes more and more marginal. It is therefore not necessarily unfair not to place the cost of mining on long-term holders.
+
+Demurrage has notably been applied on the altcoin Freicoin, a fork of Bitcoin that implemented a system of negative interest rates.

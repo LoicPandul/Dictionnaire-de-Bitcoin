@@ -1,0 +1,1 @@
+Proposal that would combine the signatures of all the inputs of a transaction into one using Schnorr. It would cut the size and fees of transactions with many inputs, such as coinjoins, but requires a deep rework of script verification.

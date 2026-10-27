@@ -1,0 +1,1 @@
+Cryptographic scheme designed by Adi Shamir in 1979 that splits a secret into n shares, any t of which can reconstruct it, while fewer than t reveal nothing. On Bitcoin, it is used to back up a seed in several fragments.

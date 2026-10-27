@@ -1,0 +1,1 @@
+Output of a Bitcoin transaction, which sets an amount and its spending conditions, and by extension the index that locates it in the transaction, starting at `0`. Combined with the `txid`, this index forms the outpoint of a UTXO.

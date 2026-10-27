@@ -1,0 +1,1 @@
+Type of sighash flag (`0x82`) combined with the `SIGHASH_ANYONECANPAY` (`SIGHASH_ACP`) modifier, used in Bitcoin transaction signatures. This combination indicates that the signature applies to only one specific input, without committing to any output. This allows other participants to freely add extra inputs and modify all the outputs of the transaction.

@@ -1,0 +1,1 @@
+Digital signature scheme designed to withstand a quantum computer, which would replace or complement ECDSA and Schnorr. Its signatures are much larger, its keys sometimes too, and none is activated on Bitcoin as of October 2026.

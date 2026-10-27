@@ -1,0 +1,1 @@
+Name given to the supporters of keeping Bitcoin's block size low during the Blocksize War between 2015 and 2017, to preserve the decentralization and security of the system. They support solutions such as SegWit, believe that scaling should happen on higher layers such as the Lightning Network, and support rolling out changes through soft forks rather than hard forks.

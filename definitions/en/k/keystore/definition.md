@@ -1,0 +1,1 @@
+Structure, in Bitcoin wallet software, that gathers the information needed to track and use a set of keys. It generally contains a label, a master fingerprint, a derivation path, and an extended public key (`xpub`). These elements let the wallet generate receiving addresses and monitor the transactions associated with them.

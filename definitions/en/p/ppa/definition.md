@@ -1,0 +1,1 @@
+Acronym for *Power Purchase Agreement*. Long-term contract between a large bitcoin mining farm and an energy supplier for the direct purchase of electricity at a fixed rate. This type of contract lets mining farms secure stable, competitive energy costs over several years, which reduces the impact of fluctuations in the electricity market.

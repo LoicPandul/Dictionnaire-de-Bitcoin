@@ -1,0 +1,1 @@
+Physical kiosk that lets users buy or, in some cases, sell bitcoin in exchange for fiat currency (cash or bank card). Also called a BTM (Bitcoin Teller Machine), this type of machine provides a direct access point to Bitcoin without going through an online exchange.

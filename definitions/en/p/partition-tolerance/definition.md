@@ -1,0 +1,1 @@
+Ability of the Bitcoin network to remain unified and to maintain consensus among users, by keeping connections open and preventing some nodes from being cut off from the rest of the network, despite attempts to fragment it. For a node to stay in consensus with the network, it must maintain at least one active connection with a set of peers that share the same consensus rules.

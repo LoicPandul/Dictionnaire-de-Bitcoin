@@ -1,0 +1,1 @@
+Pushes a large amount of data onto the stack. It is followed by two bytes (little-endian) that specify the length of the data to push (up to 65,535 bytes). It is used to insert larger data into scripts.

@@ -1,0 +1,3 @@
+Authenticated encryption with associated data algorithm that combines the ChaCha20 stream cipher and the Poly1305 message authentication code. It takes a 256-bit key and a 96-bit nonce as input, and produces a ciphertext along with a 128-bit authentication tag that guarantees both the integrity and the authenticity of the data.
+
+In the Bitcoin ecosystem, ChaCha20-Poly1305 is used in the P2P v2 transport protocol (BIP-0324) to encrypt communications between network nodes. It is also used in the Lightning Network transport layer (BOLT-08), where the Noise framework uses it to encrypt and authenticate the messages exchanged between peers after the initial handshake.

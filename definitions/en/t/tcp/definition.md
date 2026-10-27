@@ -1,0 +1,1 @@
+Acronym for *Transmission Control Protocol*. Communication protocol designed to ensure reliable data transmission over the internet. It establishes a connection, guarantees the order of the data sent, handles retransmission when packets are lost, and controls congestion.

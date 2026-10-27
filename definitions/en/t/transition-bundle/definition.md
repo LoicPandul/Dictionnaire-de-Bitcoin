@@ -1,0 +1,1 @@
+Grouping of state transitions belonging to the same RGB contract, all committed simultaneously in a single Bitcoin witness transaction. This mechanism consolidates several updates or transfers into a single on-chain anchor point, in order to optimize the use of block space.

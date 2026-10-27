@@ -1,0 +1,5 @@
+In the context of Bitcoin, part of a transaction that distributes funds: it stipulates a certain amount of bitcoin, often assigned to a specific address, along with the conditions under which those funds can later be spent. A transaction takes outputs of previous transactions as inputs and creates new outputs.
+
+As long as an output has not been spent, it forms an *Unspent Transaction Output* (UTXO). The role of a Bitcoin transaction is therefore to consume UTXOs as inputs and to create new outputs. The difference between the two corresponds to the transaction fees, which can be collected by the miner who wins the block. An output remains an output once spent: only the term UTXO refers to those that have not been spent yet. The outputs of a transaction are therefore future UTXOs, which will in turn be used as inputs in future transactions.
+
+From a broader point of view, in computing, the term "output" generally refers to the data resulting from a function, an algorithm, or a system. For example, when data is passed into a cryptographic hash function, that data is called the "input", and the result is called the "output".

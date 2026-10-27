@@ -1,0 +1,1 @@
+General and lasting fall in the price level, which increases the purchasing power of money. Bitcoin is often called deflationary, but it is rather disinflationary: its issuance decreases and converges to zero.

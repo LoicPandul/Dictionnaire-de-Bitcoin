@@ -1,0 +1,1 @@
+Technique that lets Bitcoin miners mine one or more sidechains at the same time by reusing the same computing work, at the cost of running a node for each sidechain and of a reward paid on that sidechain.

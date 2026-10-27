@@ -1,0 +1,1 @@
+Script template known as Nested SegWit, which wraps a P2WPKH inside a P2SH so that services and wallets not compatible with SegWit can use it. A transition script, it produces addresses that begin with `3`.
