@@ -1,0 +1,1 @@
+Développeur de Bitcoin Core, coauteur de Taproot (BIP-0341 et BIP-0342), de BIP-0118 (ANYPREVOUT) et de signet (BIP-0325). Il maintient Bitcoin Inquisition, un fork de Bitcoin Core publié en 2022 pour tester des *soft forks* sur signet.

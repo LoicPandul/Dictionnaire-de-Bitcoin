@@ -1,0 +1,1 @@
+Développeur pseudonyme, créateur de Cashu, protocole libre d'ecash chaumien pour Bitcoin. Il crée en septembre 2022 le dépôt de son implémentation, Nutshell ; Bitcoin Magazine date la publication du protocole d'octobre 2022.

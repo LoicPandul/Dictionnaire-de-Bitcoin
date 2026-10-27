@@ -1,0 +1,1 @@
+Développeur Bitcoin, auteur de BIP-0065 (`OP_CHECKLOCKTIMEVERIFY`, 2014), coauteur de BIP-0125 (RBF, 2015) et créateur d'OpenTimestamps. Désigné comme Satoshi par un documentaire HBO en 2024, il le dément.
