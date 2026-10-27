@@ -1,0 +1,1 @@
+Développeur, concepteur principal de RGB, système de contrats intelligents à validation côté client pour Bitcoin et Lightning, d'après des idées de Peter Todd et Giacomo Zucco, auteur de la machine virtuelle AluVM.

@@ -1,0 +1,1 @@
+Chercheur en routage Lightning, auteur de la proposition de JIT routing en 2019 et, avec Stefan Richter, d'un routage par flux de coût minimal publié en 2021, que Core Lightning a implémenté dans le plugin renepay en 2023.
