@@ -64,7 +64,7 @@ Pour faciliter la navigation et vous aider à trouver rapidement les définition
 
 1. Créez votre fork du projet ;
 2. Créez une nouvelle branche établie sur la branche `main` ;
-3. Consultez la [charte éditoriale](./STYLE_GUIDE.md) pour respecter les conventions de rédaction ;
+3. Consultez la [charte éditoriale](./docs/charte-editoriale.md) pour respecter les conventions de rédaction ;
 4. Rédigez vos suggestions de modification dans le dossier `definitions/fr/` ;
 5. Faites une Pull Request pour fusionner votre branche face à la branche `main` du dépôt source.
 
@@ -133,47 +133,52 @@ Le rangement du dépôt et ses raisons sont décrits dans [docs/structure.md](./
 Dictionnaire-de-Bitcoin/
 ├── definitions/                    # Entrées du dictionnaire, une langue par dossier
 │   ├── fr/                         # Langue d'origine
-│   │   ├── a/
-│   │   │   ├── adaptor-signature/
-│   │   │   │   ├── definition.md   # Version développée
-│   │   │   │   ├── courte.md       # Version courte (une ou deux phrases)
-│   │   │   │   └── metadata.yaml   # Métadonnées (titre, catégorie, renvois…)
-│   │   │   ├── adresse-de-reception/
-│   │   │   │   ├── definition.md
-│   │   │   │   ├── courte.md
-│   │   │   │   ├── metadata.yaml
-│   │   │   │   └── assets/         # Images de la définition
-│   │   │   └── ...
-│   │   └── z/
-│   └── en/                         # Traduction anglaise (dictionnaire technique)
+│   │   └── a/adresse-de-reception/
+│   │       ├── metadata.yaml       # UUID, titre, catégorie, renvois, images
+│   │       ├── definition.md       # Version développée
+│   │       ├── courte.md           # Version courte (une ou deux phrases)
+│   │       └── assets/             # Images de l'entrée
+│   └── en/                         # Traduction anglaise
+│       └── r/receiving-address/
+│           ├── metadata.yaml       # UUID, titre, slug, trace de la source (source_*)
+│           ├── definition.md
+│           └── courte.md
 │
-├── specifications/                 # BIP, BOLT et bLIP : numéro, titre, statut, résumé
-├── chronologie/fr/                 # Chronologie, un fichier par année
+├── chronologie/fr/                 # Chronologie, un fichier par année (en/ plus tard)
+├── specifications/fr/              # BIP, BOLT et bLIP : numéro, titre, statut, résumé
 │
-├── assets/
-│   ├── images/                     # Images du README
-│   └── pictograms/                 # Pictogrammes des catégories (SVG/PDF)
-│
-├── fonts/                          # Polices du livre (Archivo, Atkinson Hyperlegible Mono)
-│
-├── templates/
+├── templates/                      # Configuration du livre, commune aux langues
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
 │   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
 │   ├── languages.yaml              # Langues et périmètre de chaque traduction
-│   ├── legal.yaml                  # Informations légales et métadonnées
-│   ├── introduction.md             # Note de l'auteur
-│   ├── contributors.md             # Liste des contributeurs
-│   └── pending_terms.yaml          # Termes en attente de définition
+│   └── fr/                         # Textes du livre en français
+│       ├── introduction.md         # Note de l'auteur
+│       ├── contributors.md         # Contributeurs et remerciements
+│       ├── legal.yaml              # Mentions légales
+│       ├── excluded_words.yaml     # Mots exclus des statistiques
+│       └── pending_terms.yaml      # Termes en attente de définition
 │
-├── docs/                           # Structure du dépôt, synchro des traductions, glossaire
-├── edition-2027/                   # Dossier de travail de l'édition 2027
-├── scripts/                        # Validation, synchro et génération (PDF, EPUB, index, statistiques)
+├── assets/
+│   ├── images/                     # Images du README
+│   ├── pictograms/                 # Pictogrammes des catégories (SVG/PDF)
+│   ├── fonts/                      # Polices du livre (Archivo, Atkinson Hyperlegible Mono)
+│   └── cover-paperback.pdf         # Couverture du livre broché
 │
+├── docs/
+│   ├── structure.md                # Ce rangement et ses raisons
+│   ├── traduction.md               # Synchro français / anglais
+│   ├── glossaire-fr-en.md          # Terminologie de la traduction anglaise
+│   ├── charte-editoriale.md        # Charte éditoriale (français)
+│   └── edition-2027/               # Dossier de travail de l'édition 2027
+│
+├── scripts/                        # Validation, synchro et génération (PDF, EPUB, index, stats)
+│   └── migrations/                 # Scripts de rangement à usage unique
+│
+├── build/                          # Sorties de build (ignoré par git)
 ├── dictionnaire-de-bitcoin.pdf     # Version PDF
 ├── INDEX.md                        # Index des définitions
 ├── stats.md                        # Statistiques
-├── STYLE_GUIDE.md                  # Charte éditoriale
 ├── CONTRIBUTING.md                 # Contribuer, et garder le français et l'anglais synchronisés
 ├── README.md
 ├── LICENCE_FR.md

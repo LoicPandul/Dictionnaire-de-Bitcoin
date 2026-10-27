@@ -2,7 +2,7 @@
 
 Termes techniques absents du dictionnaire, repérés dans l'index des sujets de Bitcoin Optech, les bulletins Optech de janvier 2024 à octobre 2026, les fils de Delving Bitcoin (`/latest`, `/top`), les sujets de la liste bitcoindev (miroir gnusha.org) et les notes de version de Bitcoin Core 28.0 à 31.0. Critère : un débutant qui étudie Bitcoin peut croiser le terme et vouloir le comprendre. L'informatique quantique et Nostr sont traités à part (`termes-quantique-nostr.md`).
 
-Chaque terme a été comparé aux titres, slugs, `english_term` et `french_term` des 1 408 entrées, à `templates/pending_terms.yaml` et au texte des définitions. Un terme seulement cité dans le corps d'une autre entrée reste candidat. Chaque lien a été ouvert et contient le terme. La catégorie suit `templates/categories.yaml` (55 catégories).
+Chaque terme a été comparé aux titres, slugs, `english_term` et `french_term` des 1 408 entrées, à `templates/fr/pending_terms.yaml` et au texte des définitions. Un terme seulement cité dans le corps d'une autre entrée reste candidat. Chaque lien a été ouvert et contient le terme. La catégorie suit `templates/categories.yaml` (55 catégories).
 
 Total : 150 candidats (A : 18, B : 89, C : 43).
 

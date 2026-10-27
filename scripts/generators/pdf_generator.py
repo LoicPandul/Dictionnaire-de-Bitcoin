@@ -3,7 +3,7 @@
 Génération du PDF d'une édition via XeLaTeX (ou Tectonic, son équivalent autonome).
 
 Mise en page de la charte graphique 2027 (design/charte-2027.md, sections 3 et 4, branche
-feat/couverture-2027) : Archivo en instances statiques (fonts/static/), Atkinson Hyperlegible
+feat/couverture-2027) : Archivo en instances statiques (assets/fonts/static/), Atkinson Hyperlegible
 Mono pour le code, Fira Math pour les formules. Deux brochés Amazon KDP, choisis par
 l'édition (clé `format` de templates/editions.yaml) :
   - `couleur` : 7 × 10 po (17,78 × 25,4 cm), intérieur couleur premium, papier blanc,
@@ -154,7 +154,7 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 
 \usepackage[{fmt.geometry()}, includehead, includefoot]{{geometry}}
 
-% Polices : instances statiques d'Archivo et d'Atkinson Hyperlegible Mono (fonts/static/)
+% Polices : instances statiques d'Archivo et d'Atkinson Hyperlegible Mono (assets/fonts/static/)
 \setmainfont{{ArchivoTexte}}[Path={static}, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-Bold]
 \setsansfont{{ArchivoTexte}}[Path={static}, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-Bold]
 \setmonofont{{AtkinsonHyperlegibleMono}}[Path={static}, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-Bold]

@@ -50,7 +50,7 @@ Deux ebooks, un par édition (complet et essentiel). Pour chacun :
 ## 3. Broché complet
 
 1. Créer → Livre broché, ou « Associer » à la fiche ebook pour partager titre et description.
-2. ISBN : l'édition 2027 change de contenu en profondeur (nouvelles parties, nouvelle mise en page) : KDP demande un nouvel ISBN pour une nouvelle édition. Prendre l'ISBN gratuit KDP ou un ISBN propre (question ouverte dans la fiche), puis le reporter dans `templates/legal.yaml` (`isbn_paperback`) et relancer le build pour l'imprimer dans les pages légales.
+2. ISBN : l'édition 2027 change de contenu en profondeur (nouvelles parties, nouvelle mise en page) : KDP demande un nouvel ISBN pour une nouvelle édition. Prendre l'ISBN gratuit KDP ou un ISBN propre (question ouverte dans la fiche), puis le reporter dans `templates/fr/legal.yaml` (`isbn_paperback`) et relancer le build pour l'imprimer dans les pages légales.
 3. Impression : **couleur premium**, papier blanc, format 7 × 10 po (17,78 × 25,4 cm), sans fond perdu. KDP classe ce format parmi les « grands » (au-delà de 6,12 × 9 po) : c'est le barème « grand » qui s'applique (voir la fiche). Couverture brillante (charte : la finition brillante garde mieux le magenta).
 4. Intérieur : `build/complete/dictionnaire-de-bitcoin.pdf` (CMJN). Couverture : PDF CMJN du script de couverture.
 5. Lancer le vérificateur en ligne, puis commander **une épreuve** avant de publier (la charte le demande : un aplat de Figue à 35 % de noir peut montrer des bandes sur presse numérique ; l'épreuve en couleur premium permet aussi de juger les schémas).

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Spécifications numérotées : BIP, BOLT, bLIP (specifications/<série>.yaml).
+Spécifications numérotées : BIP, BOLT, bLIP (specifications/fr/<série>.yaml).
 
 Ce ne sont pas des définitions : chaque document a un numéro, un titre, un statut et un
 résumé en français. Quand le dictionnaire a déjà une entrée développée consacrée au
@@ -59,7 +59,7 @@ def _status_list(value) -> List[str]:
 
 
 def load_series(series: str, base: Optional[Path] = None) -> Optional[SpecSeries]:
-    """Charge specifications/<series>.yaml, ou None si le fichier n'existe pas."""
+    """Charge specifications/fr/<series>.yaml, ou None si le fichier n'existe pas."""
     path = (base or SPECIFICATIONS_DIR) / f"{series}.yaml"
     if not path.exists():
         return None

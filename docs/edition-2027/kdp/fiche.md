@@ -13,7 +13,7 @@ Valeurs à saisir dans KDP, pour deux livres imprimés (le complet et le poche �
 | Auteur | Loïc Morel |
 | Contributeurs | aucun (les contributeurs GitHub sont remerciés dans le livre) |
 | Public | adulte : non ; « contenu pour un public adulte » : non |
-| ISBN | un ISBN par livre imprimé (broché complet, poche essentiel), à obtenir pour l'édition 2027 (question pour Loïc : ISBN gratuits KDP ou ISBN propres) ; les reporter dans `templates/legal.yaml` |
+| ISBN | un ISBN par livre imprimé (broché complet, poche essentiel), à obtenir pour l'édition 2027 (question pour Loïc : ISBN gratuits KDP ou ISBN propres) ; les reporter dans `templates/fr/legal.yaml` |
 | Date de publication | celle de la mise en ligne (ne pas en saisir une à l'avance) |
 
 ## Description (4 000 caractères au plus ; saisie en texte simple, KDP accepte quelques balises HTML)

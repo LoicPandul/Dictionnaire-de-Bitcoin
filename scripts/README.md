@@ -9,7 +9,7 @@ EPUB, pour deux éditions décrites dans `templates/editions.yaml` :
 | `essentiel` | définitions courtes des parties technique et écosystème | 5 × 8 po (poche), intérieur noir et blanc |
 
 Le format vient de la clé `format` de l'édition (`couleur` par défaut, ou `poche`). La mise en
-page suit la charte graphique 2027 : polices Archivo et Atkinson Hyperlegible Mono (`fonts/`),
+page suit la charte graphique 2027 : polices Archivo et Atkinson Hyperlegible Mono (`assets/fonts/`),
 couleurs de la charte en recettes CMJN pour le livre couleur (Figue pour les titres, les mots
 vedettes, les renvois et les titres courants ; texte courant en noir). Le livre couleur prend les
 schémas en couleur : le SVG de chaque schéma est converti en PDF vectoriel par Chrome sans
@@ -62,7 +62,7 @@ fichiers sortent dans `build/<édition>/` (ignoré par git), avec les sources La
 - **Versions courtes** : chaque `definition.md` a sa `courte.md` (et inversement), qui tient en une
   ou deux phrases et 45 mots au plus, sans liste, image, formule, lien, gras ni titre.
 - **Markdown** : listes et citations au format du dépôt.
-- **Spécifications** (`specifications/*.yaml`) : champs obligatoires, résumés de 60 mots au plus,
+- **Spécifications** (`specifications/fr/*.yaml`) : champs obligatoires, résumés de 60 mots au plus,
   liens vers des entrées existantes.
 - **Chronologie** (`chronologie/fr/*.yaml`) : dates ISO, au moins deux sources par événement,
   renvois existants, un fichier par année.

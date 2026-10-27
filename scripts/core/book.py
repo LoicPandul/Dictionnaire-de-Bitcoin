@@ -60,7 +60,7 @@ def load_editions(templates_dir: Optional[Path] = None) -> Dict[str, dict]:
 
 
 def _fallback_series(series: str, dictionary: Dictionary) -> Optional[specs_mod.SpecSeries]:
-    """Série construite depuis les définitions quand specifications/<série>.yaml manque."""
+    """Série construite depuis les définitions quand specifications/fr/<série>.yaml manque."""
     label = specs_mod.SERIES[series]
     prefix = {"bip": "bip-", "bolt": "bolt-", "blip": "blip-"}.get(series)
     if not prefix:

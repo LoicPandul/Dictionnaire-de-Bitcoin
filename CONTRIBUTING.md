@@ -4,7 +4,7 @@
 
 Toutes les contributions sont bienvenues : nouveau terme, correction d'une définition, coquille,
 traduction. Le README explique comment [ajouter ou modifier une définition](./README.md#demandes-de-modification-et-contributions) ;
-la [charte éditoriale](./STYLE_GUIDE.md) fixe les conventions de rédaction.
+la [charte éditoriale](./docs/charte-editoriale.md) fixe les conventions de rédaction.
 
 Avant d'ouvrir une pull request :
 

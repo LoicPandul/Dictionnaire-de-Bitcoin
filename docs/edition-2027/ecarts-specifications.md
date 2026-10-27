@@ -1,6 +1,6 @@
 # Écarts entre les définitions et les spécifications (BIP, BOLT, bLIP)
 
-Relevés pendant l'écriture de `specifications/*.yaml` ; chaque écart est vérifié et corrigé dans la passe de corrections (lots C1 à C8).
+Relevés pendant l'écriture de `specifications/fr/*.yaml` ; chaque écart est vérifié et corrigé dans la passe de corrections (lots C1 à C8).
 
 ## bip-A
 
