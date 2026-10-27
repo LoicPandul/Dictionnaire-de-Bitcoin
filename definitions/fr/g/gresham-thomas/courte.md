@@ -1,0 +1,1 @@
+Financier de la Couronne anglaise au XVIe siècle et fondateur de la Bourse royale de Londres. La loi selon laquelle la mauvaise monnaie chasse la bonne porte son nom, mais c'est Macleod qui la lui a attribuée au XIXe siècle.

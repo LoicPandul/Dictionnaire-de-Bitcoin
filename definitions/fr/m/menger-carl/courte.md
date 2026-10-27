@@ -1,0 +1,1 @@
+Économiste autrichien, fondateur de l'école autrichienne par ses *Principes d'économie* (1871). Son article de 1892 explique la monnaie par la facilité d'écoulement des biens ; mort en 1921, il n'a pas connu Bitcoin.

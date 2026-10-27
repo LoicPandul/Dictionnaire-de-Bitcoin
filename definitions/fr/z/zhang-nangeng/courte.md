@@ -1,0 +1,1 @@
+Entrepreneur formé en Chine, cofondateur et dirigeant de Canaan, dont l'entreprise affirme que son équipe a livré en janvier 2013 l'une des premières machines de minage à ASIC. Canaan entre au Nasdaq en novembre 2019.

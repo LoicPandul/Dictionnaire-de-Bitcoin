@@ -1,0 +1,1 @@
+Économiste autrichien, prix Nobel 1974. Dans *Denationalisation of Money* (1976), il propose de retirer aux États le monopole de la monnaie au profit d'émetteurs privés en concurrence, idée que le discours Bitcoin invoque.
