@@ -1,0 +1,1 @@
+Développeur de Bitcoin Core chez Chaincode Labs et mainteneur du projet depuis mai 2023, qui mène le projet *multiprocess* de séparation du nœud, du portefeuille et de l'interface graphique en processus distincts.

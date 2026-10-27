@@ -1,0 +1,7 @@
+Développeur actif à Prague, connu sous le pseudonyme slush, pionnier du minage en pool et cofondateur de SatoshiLabs, l'entreprise du portefeuille matériel Trezor.
+
+Le 27 novembre 2010, il présente sur Bitcointalk l'idée d'un minage coopératif, qui regroupe de petits mineurs pour augmenter leurs chances de trouver un bloc et se partager la récompense. Le pool ouvre en décembre 2010, sous un nom qui devient ensuite Slush Pool, puis Braiins Pool en 2022. Il est souvent présenté comme le premier pool de minage public. En mars 2013, lors de la scission de chaîne causée par une limite de verrous de Berkeley DB, son pool et BTCGuild rétrogradent leurs nœuds de Bitcoin 0.8 vers 0.7 pour rétablir la chaîne antérieure, au prix de sommes d'argent importantes, selon le BIP-0050.
+
+En 2012, il annonce sur le site de son pool Stratum, un protocole de communication entre les mineurs et le pool qui remplace getwork. Les numéros BIP-0040 et BIP-0041 lui ont été attribués pour le protocole de transmission (*wire protocol*) et le protocole de minage de Stratum, mais aucun texte n'a été publié. Le BIP-0033 précise qu'il a aussi rédigé un projet de standard du même nom, pour remplacer le serveur d'Electrum.
+
+Il cofonde en 2013, notamment avec Pavol Rusnak, SatoshiLabs, la société derrière Trezor. Il est auteur du BIP-0039 (phrase mnémonique, numéro attribué en septembre 2013, avec Pavol Rusnak, Aaron Voisine et Sean Bowe), puis du BIP-0043 et du BIP-0044 (avril 2014, avec Pavol Rusnak), qui fixent la hiérarchie des chemins de dérivation des portefeuilles déterministes.
