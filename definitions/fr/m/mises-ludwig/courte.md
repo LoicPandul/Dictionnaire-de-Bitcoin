@@ -1,0 +1,1 @@
+Économiste autrichien (1881-1973), auteur de *La Théorie de la monnaie et du crédit* (1912) et de *L'Action humaine* (1949), références de l'ÉCOLE AUTRICHIENNE sur la monnaie, le crédit et le calcul économique.

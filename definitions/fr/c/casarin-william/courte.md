@@ -1,0 +1,1 @@
+Développeur, connu sous le pseudonyme jb55, créateur de Damus, client Nostr pour iOS. Il a rédigé NIP-57 avec Kieran, qui définit les zaps, et publié en 2023 un script pour Core Lightning que le NIP cite comme implémentation de référence.

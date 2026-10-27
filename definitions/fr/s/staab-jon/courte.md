@@ -1,0 +1,1 @@
+Développeur pseudonyme hodlbod, créateur du client Nostr Coracle (2022) et auteur de NIP-59, le *gift wrap* proposé d'abord par v0l, fusionné en janvier 2024, qui emballe un événement Nostr pour masquer ses métadonnées.
