@@ -129,10 +129,10 @@ Build du 2026-10-27 (1 536 entrées : 1 060 techniques, 208 écosystème, 48 per
 
 | Livre | Format | Impression | Pages | EPUB (epubcheck) |
 |---|---|---|---|---|
-| complete | 7 × 10 po, Archivo 9,5/12 pt, une colonne | couleur premium | 730 | 0 erreur |
+| complete | 7 × 10 po, Archivo 9/11,5 pt, une colonne, schémas couleur vectoriels (252) | couleur premium | 736 | 0 erreur |
 | essentiel (poche) | 5 × 8 po, 9/11,5 pt, définitions courtes techniques et écosystème seulement | noir et blanc | 302 | 0 erreur |
 
-Coût d'impression du complet en couleur premium, grand format : 0,75 € + 0,0715 € par page, soit environ 53 € par exemplaire (détail et prix dans `edition-2027/kdp/fiche.md`). Passer sous 600 pages permettrait la couleur standard, moins chère.
+Après fusion de `feat/schemas-2027` (140 nouveaux schémas) le complet passait à 790 pages en 9,5/12 pt ; corps ramené à 9/11,5 pt (broché de la charte) et schémas limités à 80 % de la ligne et 90 mm de haut : 736 pages. Coût d'impression du complet en couleur premium, grand format : 0,75 € + 0,0715 € par page, soit environ 53,40 € par exemplaire (détail et prix dans `edition-2027/kdp/fiche.md`). Passer sous 600 pages permettrait la couleur standard, moins chère.
 
 ## Limite éditoriale : qui entre dans le dictionnaire des personnes
 
@@ -172,3 +172,4 @@ Le site (`feat/site-dictionnaire`) lit `definitions/fr` avec un parseur YAML min
 - 2026-10-26 : `/tmp` vidé au redémarrage ; travail des sous-tâches recopié dans `~/.local/share/dico-2027/`. Corrections C1 à C9 commitées, schémas A1 à A3, termes Nostr et quantiques.
 - 2026-10-27 : deux limites d'usage, tâches relancées. Schémas A4 à A8 et R1 à R4, 152 fiches de personnes, 18 termes candidats, corrections C10 et C11, `pending_terms.yaml`. Charte passée au baobab sur `feat/couverture-2027` (`8ea661ec`) : section 6 des schémas inchangée, copie du skill mise à jour.
 - 2026-10-27 (retour de Loïc) : NIP retirés ; personnes de 155 à 48 et chronologie de 696 à 160 événements (listes dans `edition-2027/`) ; note de l'auteur et introductions réécrites ; mise en page couleur à la charte ; un broché couleur 7 × 10 po de 730 pages et un poche « essentiel » de 302 pages ; relié et tomes supprimés ; logos de tiers crédités.
+- 2026-10-27 (fusion) : `feat/schemas-2027` (PDF couleur vectoriels des 112 schémas, 140 nouveaux) et `feat/english-2027` (`definitions/en/`, synchro FR/EN) fusionnées ; aucune traduction orpheline ; complet 736 pages, poche 302 pages.

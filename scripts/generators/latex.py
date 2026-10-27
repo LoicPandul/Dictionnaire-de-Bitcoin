@@ -173,7 +173,7 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
             # Légende : texte secondaire, en Écorce (charte, section 2)
             caption += (r"\par\vspace{2pt}{\footnotesize\itshape\color{ecorce} " + _emphasis(escape(m.group(1).strip()))
                        + r"\par}")
-        return keep(rf"{{\centering\includegraphics[width=0.9\linewidth,keepaspectratio,height=0.42\textheight]{{{path}}}{caption}\par}}")
+        return keep(rf"{{\centering\includegraphics[width=0.8\linewidth,keepaspectratio,height=\imagemaxheight]{{{path}}}{caption}\par}}")
     content = re.sub(r"!\[([^\]]*)\]\(\./assets/([^)\s]+)\)", image, content)
 
     # 5. Liens markdown : le texte seul

@@ -73,14 +73,15 @@ class PdfFormat:
 
 
 FORMATS = {
-    # Livre complet : grand format en couleur, réglages du relié de la charte (section 3).
+    # Livre complet : grand format en couleur, corps du broché de la charte (9 / 11,5 pt,
+    # section 3) pour rester sous 750 pages avec les schémas 2027.
     "couleur": PdfFormat(
         id="couleur", label="7 × 10 po, couleur", color=True, isbn_key="isbn_paperback",
         paper="paperwidth=17.78cm, paperheight=25.4cm", inner=25.5,
         margins="top=9.5mm, bottom=9.5mm, outer=13.5mm, headheight=14pt, headsep=6mm, footskip=9.5mm",
-        code_max_chars=81, body=(9.5, 12), code_inline=9, code_block=(7.4, 10), vedette=11,
+        code_max_chars=81, body=(9, 11.5), code_inline=8.5, code_block=(7.4, 10), vedette=11,
         categorie=8.5, renvois=8, note=(8.5, 11), table=(8, 10), folio=8, toc=(7.5, 9),
-        letter=150, part=60, entry_gap="10pt", image_gap="7pt", image_height="110mm", picto="3mm",
+        letter=150, part=60, entry_gap="9pt", image_gap="6pt", image_height="90mm", picto="3mm",
     ),
     # Essentiel : livre de poche en noir et blanc, réglages du broché de la charte.
     "poche": PdfFormat(
