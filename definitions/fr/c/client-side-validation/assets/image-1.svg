@@ -63,6 +63,11 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
+
+/* styles propres au schéma */
+
+  .sur-trait { fill: none; stroke: var(--sujet-texte); stroke-width: 3; marker-end: url(#tete-sur); }
+  .tete-sur  { fill: var(--sujet-texte); }
 </style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
