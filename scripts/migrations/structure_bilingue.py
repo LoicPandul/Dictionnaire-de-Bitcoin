@@ -21,12 +21,14 @@ dans un commit à part, facile à relire.
 """
 
 import argparse
+import functools
 import re
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+print = functools.partial(print, flush=True)  # garder l'ordre avec la sortie de check
 
 # (ancien chemin, nouveau chemin), relatifs à la racine du dépôt.
 MOVES = [
@@ -58,7 +60,8 @@ REWRITES = [
 
 # Fichiers dont on réécrit les chemins : texte suivi par git, hors contenu du dictionnaire.
 TEXT_SUFFIXES = {".md", ".py", ".yaml", ".yml", ".mjs", ".js", ".json", ".tsv", ".txt", ".toml"}
-SKIP_PREFIXES = ("definitions/", "chronologie/", "scripts/migrations/", "site/node_modules/")
+SKIP_PREFIXES = ("definitions/", "chronologie/", "scripts/migrations/", "site/node_modules/",
+                 "docs/structure.md")  # structure.md cite les anciens chemins à dessein
 
 TREE_BEGIN, TREE_END = "<!-- arbre:debut -->", "<!-- arbre:fin -->"
 
