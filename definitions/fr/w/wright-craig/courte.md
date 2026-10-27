@@ -1,0 +1,1 @@
+Informaticien australien qui se dit publiquement NAKAMOTO SATOSHI depuis le 2 mai 2016. Le 14 mars 2024, la High Court de Londres déclare qu'il n'est ni l'auteur du livre blanc ni le créateur de Bitcoin.

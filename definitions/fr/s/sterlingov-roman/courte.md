@@ -1,0 +1,1 @@
+Ressortissant suédo-russe jugé coupable en mars 2024 d'avoir exploité le mélangeur Bitcoin Fog, lancé en 2011. Condamné à 150 mois de prison le 8 novembre 2024, peine confirmée en appel le 25 septembre 2026.

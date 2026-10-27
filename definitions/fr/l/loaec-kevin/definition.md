@@ -1,0 +1,5 @@
+Entrepreneur, co-concepteur, avec Antoine Poinsot, de l'architecture de *vault* multipartite REVAULT et cofondateur de WIZARDSARDINE, dont il est le directeur général.
+
+En novembre 2019, un client le sollicite par sa société de conseil Chainsmiths pour une solution de conservation autonome avec politiques de dépense. Il en tire la première architecture de ce qui devient Revault. Le 24 avril 2020, Antoine Poinsot présente sur la liste bitcoin-dev l'architecture que les deux hommes ont retravaillée ensemble. Le 26 mai 2020, Loaec la présente aux London Bitcoin Devs, Poinsot en détaillant la partie technique. Leur document de spécification, « Revault: a multi-party Bitcoin vault architecture », est daté de novembre 2020 dans sa deuxième révision.
+
+Wizardsardine, la société qu'ils fondent pour construire Revault, est financée en pré-amorçage en août 2020. Kevin Loaec en est le directeur général. L'entreprise développe ensuite LIANA, portefeuille qui prévoit des plans d'héritage et de récupération par *timelocks*, dont la version 1.0 sort en mai 2023.

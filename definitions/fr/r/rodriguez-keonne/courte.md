@@ -1,0 +1,1 @@
+Cofondateur et directeur général de Samourai Wallet, développé dès 2015 environ (Ricochet, Whirlpool). Arrêté le 24 avril 2024, il plaide coupable en juillet 2025 d'une conspiration de transmission de fonds sans licence et est condamné le 6 novembre 2025 à cinq ans de prison.
