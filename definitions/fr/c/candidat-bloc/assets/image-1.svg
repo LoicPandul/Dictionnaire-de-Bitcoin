@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="704" viewBox="0 0 1280 704"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- Mempool -->
+    <text class="etiquette" x="32" y="152">Mempool du mineur</text>
+    <rect class="structure" x="32" y="176" width="296" height="464"/>
+    <rect class="structure" x="64" y="200" width="232" height="56"/>
+    <text class="etiquette" x="180" y="239" text-anchor="middle">45 sat/vB</text>
+    <rect class="structure" x="64" y="272" width="232" height="56"/>
+    <text class="etiquette" x="180" y="311" text-anchor="middle">30 sat/vB</text>
+    <rect class="structure" x="64" y="344" width="232" height="56"/>
+    <text class="etiquette" x="180" y="383" text-anchor="middle">12 sat/vB</text>
+    <rect class="structure" x="64" y="416" width="232" height="56"/>
+    <text class="etiquette" x="180" y="455" text-anchor="middle">8 sat/vB</text>
+    <rect class="structure" x="64" y="488" width="232" height="56"/>
+    <text class="etiquette" x="180" y="527" text-anchor="middle">2 sat/vB</text>
+    <rect class="structure" x="64" y="560" width="232" height="56"/>
+    <text class="etiquette" x="180" y="599" text-anchor="middle">1 sat/vB</text>
+    <path class="fleche-note" d="M408 656 C376 656 352 640 340 584"/>
+    <text class="annotation" x="420" y="666">les moins payées attendent</text>
+
+    <!-- Flux vers le bloc -->
+    <path class="flux" d="M328 372 H404"/>
+
+    <!-- Bloc candidat -->
+    <rect class="sujet" x="408" y="32" width="840" height="568"/>
+    <text class="nom-sujet" x="828" y="92" text-anchor="middle">Bloc candidat</text>
+
+    <text class="etiquette sur-sujet" x="440" y="152">Transactions</text>
+    <rect class="structure" x="440" y="176" width="312" height="392"/>
+    <rect class="structure" x="464" y="200" width="264" height="56"/>
+    <text class="etiquette" x="596" y="239" text-anchor="middle">Coinbase</text>
+    <rect class="structure" x="480" y="272" width="232" height="56"/>
+    <text class="etiquette" x="596" y="311" text-anchor="middle">45 sat/vB</text>
+    <rect class="structure" x="480" y="344" width="232" height="56"/>
+    <text class="etiquette" x="596" y="383" text-anchor="middle">30 sat/vB</text>
+    <rect class="structure" x="480" y="416" width="232" height="56"/>
+    <text class="etiquette" x="596" y="455" text-anchor="middle">12 sat/vB</text>
+    <rect class="structure" x="480" y="488" width="232" height="56"/>
+    <text class="etiquette" x="596" y="527" text-anchor="middle">8 sat/vB</text>
+
+    <text class="etiquette sur-sujet" x="784" y="152">En-tête</text>
+    <rect class="structure" x="784" y="176" width="432" height="56"/>
+    <text class="secondaire" x="808" y="214">Version</text>
+    <rect class="structure" x="784" y="232" width="432" height="56"/>
+    <text class="secondaire" x="808" y="270">Hash du bloc précédent</text>
+    <rect class="structure" x="784" y="288" width="432" height="56"/>
+    <text class="secondaire" x="808" y="326">Racine de Merkle</text>
+    <rect class="structure" x="784" y="344" width="432" height="56"/>
+    <text class="secondaire" x="808" y="382">Horodatage</text>
+    <rect class="structure" x="784" y="400" width="432" height="56"/>
+    <text class="secondaire" x="808" y="438">Cible</text>
+    <rect class="structure" x="784" y="456" width="432" height="112"/>
+    <text class="etiquette" x="808" y="496">Nonce</text>
+    <text class="mono" x="1192" y="496" text-anchor="end">0, 1, 2…</text>
+    <text class="annotation" x="808" y="544">change à chaque essai</text>
+  </g>
+</svg>

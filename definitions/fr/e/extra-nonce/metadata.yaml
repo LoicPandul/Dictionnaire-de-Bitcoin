@@ -4,4 +4,6 @@ slug: "extra-nonce"
 category: "MINAGE"
 cross_references:
   - "01676c23-17d9-48c4-8817-bf7be488b5e0"
+assets:
+  - filename: "image-1.png"
 version: "1"

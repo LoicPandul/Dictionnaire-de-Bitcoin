@@ -4,6 +4,8 @@ Les MPP sont des techniques de paiement sur Lightning qui permettent de fraction
 
 Dans les AMP, on utilise des secrets partiels uniques pour chaque fraction. Une fois tous les fragments reçus, ils permettent au destinataire de reconstituer le secret général d'origine et de réclamer l'intégralité du paiement. Cette méthode rend le règlement partiel du paiement impossible, car la possession de tous les secrets partiels est nécessaire pour débloquer le paiement complet. Cela garantit que le paiement est entièrement réussi ou entièrement échoué (c'est-à-dire, atomique). Les AMP améliorent aussi la confidentialité, car il n'y a plus de liens visibles entre les différentes routes.
 
+![Paiement AMP en trois fractions : chacune porte son propre secret partiel, et le destinataire ne reconstitue le secret complet, qui débloque les HTLC, qu'après réception des trois.](./assets/image-1.png)
+
 Un avantage des AMP est qu'ils fonctionnent même si seuls le receveur et l'envoyeur ont implémenté cette méthode. Les nœuds intermédiaires traitent ces paiements comme des transactions classiques en utilisant des HTLCs, sans être conscients qu'ils traitent des fractions d'un paiement plus important.
 
 *On parle également parfois de « Atomic Multi-Part Payment » pour désigner cette même méthode.*
