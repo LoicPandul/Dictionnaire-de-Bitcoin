@@ -52,7 +52,8 @@ mettre à jour, « à reporter » une modification anglaise que le français n'a
 
 ```bash
 python3 scripts/main.py sync                      # tableau par partie : traduites, manquantes, en retard…
-python3 scripts/main.py sync --list               # le détail, entrée par entrée
+python3 scripts/main.py sync --list               # le détail, entrée par entrée (sauf les manquantes)
+python3 scripts/main.py sync --list manquante     # les entrées à traduire
 python3 scripts/main.py sync --list "en retard"   # un seul statut
 python3 scripts/main.py sync --diff coinjoin      # ce qui a changé des deux côtés depuis la synchro
 python3 scripts/main.py sync --new adresse-de-reception --title "RECEIVING ADDRESS"

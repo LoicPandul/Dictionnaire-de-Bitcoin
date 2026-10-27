@@ -195,7 +195,7 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
             if not commit:
                 print("Aucun source_commit : comparez les deux versions à la main.")
                 return True
-            print(f"Changements depuis {commit} :\n")
+            print(f"Changements depuis {commit} :\n", flush=True)
             r = subprocess.run(["git", "diff", "--stat", "-p", commit, "--", p.source.rel, p.translation.rel],
                                cwd=Path(__file__).resolve().parent.parent, text=True)
             return r.returncode == 0
@@ -219,7 +219,8 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
 
         listed = [s for s in translations.STATUSES if s != translations.UP_TO_DATE]
         if args and args.list:
-            listed = [s for s in listed if args.list == "all" or s == args.list]
+            # Les entrées manquantes se comptent par centaines : on les liste seulement sur demande.
+            listed = [s for s in listed if s == args.list or (args.list == "all" and s != translations.MISSING)]
             for status in listed:
                 rows = [p for p in all_pairs if p.status == status
                         and (status != translations.MISSING or not scope or p.part in scope)]
