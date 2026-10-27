@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { url, site, palette } from '../config.mjs';
 import { escapeHtml as h } from './markdown.mjs';
-import { t, lien, chemins, LANGUES, categoryLabel, partieTitre, partieIntro } from './i18n.mjs';
+import { t, lien, chemins, LANGUES, categoryLabel, partieTitre, partieIntro, nomsSeries } from './i18n.mjs';
 
 export { categoryLabel };
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -774,7 +774,7 @@ export function homePage(data, { assets, jsonLd }) {
   const cartes = [
     nEvenements ? { href: lien.chronologie(), titre: t.chronologie, texte: t.chronoCarte(num(nEvenements), premiere, derniere), grand: true,
       frise: (() => { const m = Math.max(...chrono.map((a) => a.events.length)); return `<span class="carte-frise" aria-hidden="true">${chrono.map((a) => `<span style="--h:${(a.events.length / m).toFixed(3)}"></span>`).join('')}</span>`; })() } : null,
-    nSpecs ? { href: lien.specs(), titre: t.specifications, texte: t.specsCarte(num(nSpecs)) } : null,
+    nSpecs ? { href: lien.specs(), titre: t.specifications, texte: t.specsCarte(num(nSpecs), nomsSeries(specs.flatMap((g) => g.series.map((se) => se.id)))) } : null,
     nPartie('personnes') ? { href: lien.partie('personnes'), titre: partieTitre(partie('personnes')), texte: t.personnesCarte(num(nPartie('personnes'))) } : null,
     nPartie('ecosysteme') ? { href: lien.partie('ecosysteme'), titre: partieTitre(partie('ecosysteme')), texte: t.ecoCarte(num(nPartie('ecosysteme'))) } : null,
     schema ? { href: lien.def(schema.slug), titre: t.schemas, texte: t.schemasCarte(num(avecSchema.length)) } : null,
@@ -1055,7 +1055,7 @@ export function specsHubPage(groupes, { assets, letters, total, jsonLd }) {
     return `<li><a class="serie" href="${lien.specs(g.id)}">${picto.use(g.series[0].id)}<span class="serie-titre">${h(s.titre)}</span><span class="serie-long" lang="en">${h(s.long)}</span><span class="serie-n">${plural(n, t.document)}</span><span class="serie-intro">${h(fr(s.intro))}</span></a></li>`;
   }).join('')}</ul>`;
   return page({
-    headOpts: { title: t.titreSpecs, description: t.specsEnonce, path: lien.specs(), alt: autres().specs(), jsonLd, assets },
+    headOpts: { title: t.titreSpecs(nomsSeries(groupes.flatMap((g) => g.series.map((se) => se.id)))), description: t.specsEnonce, path: lien.specs(), alt: autres().specs(), jsonLd, assets },
     body,
     bodyClass: 'p-specs',
     picto,

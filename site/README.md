@@ -1,6 +1,6 @@
 # Site du Dictionnaire de Bitcoin
 
-Site statique généré depuis le dépôt : une page par définition (1 643 en octobre 2026), par lettre, par catégorie et par partie du livre, la chronologie, les résumés des spécifications (BIP, BOLT, bLIP, NIP), la recherche instantanée, le sitemap, les données structurées et le PDF. Le français est à la racine, l'anglais sous `/en/`. Il est pensé pour Cloudflare Pages.
+Site statique généré depuis le dépôt : une page par définition (1 536 le 27 octobre 2026), par lettre, par catégorie et par partie du livre, la chronologie, les résumés des spécifications (les séries de `specifications/`), la recherche instantanée, le sitemap, les données structurées et le PDF. Le français est à la racine, l'anglais sous `/en/`. Il est pensé pour Cloudflare Pages.
 
 La direction artistique (« Le livre ouvert ») et sa relecture sont dans `design/` : `direction.md`, `inspirations.md`, `revue.md`.
 
@@ -10,7 +10,7 @@ La direction artistique (« Le livre ouvert ») et sa relecture sont dans `desig
 cd site
 npm ci
 npm run build      # écrit le site dans site/dist, français puis anglais (environ 25 s)
-npm run check      # pages, contrat d'URL, sitemap, JSON-LD, anglais, et tous les liens internes (ancres comprises)
+npm run check      # pages, contrat d'URL, sitemap, JSON-LD, anglais, crédits des images, et tous les liens internes (ancres comprises)
 npm run serve      # aperçu local sur http://127.0.0.1:4318/
 ```
 
@@ -86,6 +86,7 @@ Tout est lu dans les fichiers présents, sans liste écrite dans le code : une c
 - **Spécifications** : `specifications/*.yaml`, regroupées comme dans le livre (`templates/editions.yaml` : BOLT et bLIP ensemble). La définition consacrée à un document (`definition`) affiche sa fiche (statut, auteurs, date) ; un champ `summary_en` sera pris pour l'anglais quand il existera.
 - **Versions courtes** : `courte.md` sert de résumé dans les listes, les cartes d'aperçu et la recherche.
 - **Schémas** : le SVG du dossier `assets/` quand il existe (format préféré de la charte), sinon le PNG ; sous 640 px, l'image garde 640 px dans un cadre qui défile.
+- **Images de tiers** (logos, avatars) : leur crédit vient du champ `credit` de l'image dans `metadata.yaml` (`assets: - filename: … credit: "…"`). Il s'affiche sous l'image, en français et en anglais, et dans la vue agrandie ; une image créditée suit la largeur de l'écran au lieu du cadre de 640 px des schémas. `npm run check` vérifie que chaque crédit est bien affiché.
 
 ## Langues
 

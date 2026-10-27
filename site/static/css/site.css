@@ -625,7 +625,9 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .prose .figure { margin: 2em 0; max-width: none; }
 .prose .figure a { display: block; cursor: zoom-in; }
 .prose .figure img { margin: 0 auto; }
-.prose figcaption { margin-top: 10px; font-size: var(--t-note); color: var(--doux); }
+.prose figcaption { display: grid; gap: 4px; margin-top: 10px; font-size: var(--t-note); color: var(--doux); }
+.loupe-legende .figure-credit { display: block; margin-top: 4px; }
+.figure-credit { font-size: 14px; line-height: 1.45; color: var(--doux); overflow-wrap: anywhere; }
 .figure-ouvrir { display: inline-block; margin-top: 10px; font-size: var(--t-note); font-weight: 600; }
 .prose .figure img { width: 100%; height: auto; background: var(--blanc); }
 :root[data-theme='dark'] .prose .figure a { background: var(--blanc); padding: 16px; }
@@ -635,6 +637,9 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .prose .figure-cadre { overflow-x: auto; margin: 0 calc(-1 * var(--marge)); padding-inline: var(--marge); overscroll-behavior-x: contain; }
   .prose .figure a { width: max-content; }
   .prose .figure img { width: 640px; max-width: none; }
+  .prose .figure--tiers .figure-cadre { overflow: visible; margin: 0; padding: 0; }
+  .prose .figure--tiers a { width: auto; }
+  .prose .figure--tiers img { width: 100%; max-width: 100%; }
 }
 .prose .table-scroll { overflow-x: auto; }
 .prose table { border-collapse: collapse; font-size: 16px; line-height: 1.45; font-variant-numeric: tabular-nums; }

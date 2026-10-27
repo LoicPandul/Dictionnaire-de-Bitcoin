@@ -74,7 +74,7 @@ const PARTIES_EN = {
   technique: { title: 'Technical dictionary', intro: 'The protocol, its transactions, scripts, keys, mining, network and the layers built on top of it.' },
   ecosysteme: { title: 'Companies, apps and software', intro: 'The companies, associations, software, wallets, hardware and services that make up the Bitcoin ecosystem. The mechanisms they implement are defined in the technical dictionary.' },
   personnes: { title: 'People', intro: 'The people whose work, ideas or actions shaped the history of Bitcoin: cypherpunks, cryptographers, economists, developers and figures of the ecosystem.' },
-  specifications: { title: 'Specifications', intro: 'The documents that specify Bitcoin, Lightning and Nostr.' },
+  specifications: { title: 'Specifications', intro: 'The documents that specify Bitcoin and the protocols built on it.' },
 };
 
 const KEEP_UPPER = new Set(['BIP', 'RGB', 'BOLT', 'NIP']);
@@ -173,6 +173,8 @@ const FR = {
   descDef: (t, c) => `${t} : définition du Dictionnaire de Bitcoin, catégorie ${c}.`,
   nonTraduit: '',
   agrandir: 'Agrandir le schéma',
+  creditImage: 'Crédit\u00a0:',
+  agrandirImage: 'Agrandir l’image',
   partie: 'Partie',
   // Lettre
   groupesLettre: (l) => `Groupes de la lettre ${l}`,
@@ -216,7 +218,8 @@ const FR = {
   nouveautes: 'Nouveau en 2027',
   nouveautesEnonce: 'L’édition 2027 ajoute au dictionnaire une chronologie, les résumés des spécifications, des fiches de personnes et d’entreprises, et des schémas redessinés.',
   chronoCarte: (n, a, b) => `${n} dates, de ${a} à ${b}, chacune recoupée par au moins deux sources.`,
-  specsCarte: (n) => `${n} BIP, BOLT, bLIP et NIP résumés en quelques lignes.`,
+  // series : les séries présentes (« BIP, BOLT et bLIP »), lues dans specifications/.
+  specsCarte: (n, series) => `${n} ${series} résumés en quelques lignes.`,
   personnesCarte: (n) => `${n} fiches de cypherpunks, cryptographes, économistes et développeurs.`,
   ecoCarte: (n) => `${n} fiches d’entreprises, de logiciels, de portefeuilles et de services.`,
   schemasCarte: (n) => `${n} définitions illustrées d’un schéma.`,
@@ -270,8 +273,8 @@ const FR = {
   dateLongue: (j, m, a) => `${j === 1 ? '1er' : j} ${m} ${a}`,
   // Spécifications
   specsTitre: 'Spécifications',
-  specsEnonce: 'Les documents qui décrivent Bitcoin, le Lightning Network et Nostr, chacun résumé en quelques lignes avec son statut et ses auteurs.',
-  titreSpecs: 'Spécifications : BIP, BOLT, bLIP et NIP | Dictionnaire de Bitcoin',
+  specsEnonce: 'Les documents qui décrivent Bitcoin et les protocoles bâtis dessus, chacun résumé en quelques lignes avec son statut et ses auteurs.',
+  titreSpecs: (series) => `Spécifications : ${series} | Dictionnaire de Bitcoin`,
   titreSerie: (s, n) => `${s} : ${n} documents résumés | Dictionnaire de Bitcoin`,
   descSerie: (s, n) => `Les ${n} ${s} résumés en français par le Dictionnaire de Bitcoin : numéro, titre, statut, auteurs et définition liée.`,
   series: {
@@ -414,6 +417,8 @@ const EN = {
   nonTraduit: 'This definition has not been translated into English yet. Here is the original French text.',
   nonTraduitCourt: 'In French for now',
   agrandir: 'Enlarge the diagram',
+  creditImage: 'Credit:',
+  agrandirImage: 'Enlarge the image',
   partie: 'Part',
   groupesLettre: (l) => `Groups under ${l}`,
   motsEn: (l) => `Terms under ${l}`,
@@ -454,7 +459,7 @@ const EN = {
   nouveautes: 'New in 2027',
   nouveautesEnonce: 'The 2027 edition adds a timeline, summaries of the specifications, profiles of people and companies, and redrawn diagrams.',
   chronoCarte: (n, a, b) => `${n} dates from ${a} to ${b}, each checked against at least two sources.`,
-  specsCarte: (n) => `${n} BIPs, BOLTs, bLIPs and NIPs, each summarised in a few lines.`,
+  specsCarte: (n, series) => `${n} ${series}, each summarised in a few lines.`,
   personnesCarte: (n) => `${n} profiles of cypherpunks, cryptographers, economists and developers.`,
   ecoCarte: (n) => `${n} profiles of companies, software, wallets and services.`,
   schemasCarte: (n) => `${n} definitions illustrated with a diagram.`,
@@ -504,8 +509,8 @@ const EN = {
   mois: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   dateLongue: (j, m, a) => `${m} ${j}, ${a}`,
   specsTitre: 'Specifications',
-  specsEnonce: 'The documents that describe Bitcoin, the Lightning Network and Nostr, each summarised in a few lines with its status and authors.',
-  titreSpecs: 'Specifications: BIPs, BOLTs, bLIPs and NIPs | Bitcoin Dictionary',
+  specsEnonce: 'The documents that describe Bitcoin and the protocols built on it, each summarised in a few lines with its status and authors.',
+  titreSpecs: (series) => `Specifications: ${series} | Bitcoin Dictionary`,
   titreSerie: (s, n) => `${s}: ${n} documents summarised | Bitcoin Dictionary`,
   descSerie: (s, n) => `The ${n} ${s} summarised by the Bitcoin Dictionary: number, title, status, authors and linked definition.`,
   series: {
@@ -604,5 +609,8 @@ export function catSlug(cat, L = t) {
 }
 const PARTIE_SLUG_EN = { technique: 'technical', ecosysteme: 'ecosystem', personnes: 'people', specifications: 'specifications' };
 export const partieSlug = (id, L = t) => (L.code === 'en' ? PARTIE_SLUG_EN[id] || id : id);
+// Noms des séries de spécifications présentes : « BIP, BOLT et bLIP » / « BIPs, BOLTs and bLIPs ».
+const NOM_SERIE = { bip: 'BIP', bolt: 'BOLT', blip: 'bLIP', nip: 'NIP' };
+export const nomsSeries = (ids, L = t) => new Intl.ListFormat(L.locale, { type: 'conjunction' }).format(ids.map((id) => (NOM_SERIE[id] || id.toUpperCase()) + (L.code === 'en' ? 's' : '')));
 export const partieTitre = (p, L = t) => (L.code === 'en' && PARTIES_EN[p.id] ? PARTIES_EN[p.id].title : p.title);
 export const partieIntro = (p, L = t) => (L.code === 'en' && PARTIES_EN[p.id] ? PARTIES_EN[p.id].intro : p.intro || '');

@@ -74,6 +74,12 @@ export function parseMetadata(content) {
       continue;
     }
     if (currentKey && currentList) {
+      // Champ supplémentaire d'un asset, sous son « - filename: » (credit: "…").
+      const champ = currentKey === 'assets' && line.match(/^\s{4}([a-z_]+):\s*(.*)$/);
+      if (champ && currentList.length) {
+        currentList.at(-1)[champ[1]] = champ[2].trim().replace(/^"(.*)"$/, '$1').replace(/\\"/g, '"');
+        continue;
+      }
       const item = line.match(/^\s{2}-\s+(.*)$/);
       if (!item) continue;
       const value = item[1].trim();

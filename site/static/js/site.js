@@ -245,7 +245,7 @@
     const img = a.querySelector('img');
     const loupe = d.createElement('dialog');
     loupe.className = 'loupe';
-    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || tx('schema'))}</p><p class="loupe-boutons"><button class="recherche-fermer" type="button" data-zoom aria-pressed="false">${tx('agrandir')}</button> <button class="recherche-fermer" type="button" data-fermer>${tx('fermer')}</button></p></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
+    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || tx('schema'))}${a.closest('.figure')?.querySelector('.figure-credit') ? `<span class="figure-credit">${esc(a.closest('.figure').querySelector('.figure-credit').textContent)}</span>` : ''}</p><p class="loupe-boutons"><button class="recherche-fermer" type="button" data-zoom aria-pressed="false">${tx('agrandir')}</button> <button class="recherche-fermer" type="button" data-fermer>${tx('fermer')}</button></p></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
     d.body.append(loupe);
     loupe.querySelector('[data-fermer]').addEventListener('click', () => loupe.close());
     // Ajusté à la largeur d'abord ; « Agrandir » double la taille (et le pincement reste possible).

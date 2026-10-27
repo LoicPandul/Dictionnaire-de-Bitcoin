@@ -125,6 +125,26 @@ for (const p of ['/en/', '/chronologie/', '/en/timeline/', '/specifications/', '
 const enHome = fs.readFileSync(path.join(dist, 'en', 'index.html'), 'utf8');
 (/<html lang="en"/.test(enHome) && /hreflang="fr"/.test(enHome) ? ok : ko)('accueil anglais : lang="en" et liens hreflang');
 
+// Crédits des images de tiers (assets[].credit dans metadata.yaml) : affichés sous l'image, en français et en anglais.
+const esc = (x) => x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const credits = [];
+for (const letter of fs.readdirSync(sourceDir).filter((d) => /^[a-z]$/.test(d))) {
+  for (const entry of fs.readdirSync(path.join(sourceDir, letter))) {
+    const meta = path.join(sourceDir, letter, entry, 'metadata.yaml');
+    if (!fs.existsSync(meta)) continue;
+    const txt = fs.readFileSync(meta, 'utf8');
+    const slug = txt.match(/^slug:\s*"?([^"\n]+)"?/m)[1];
+    for (const m of txt.matchAll(/^\s{4}credit:\s*"(.*)"\s*$/gm)) credits.push([slug, m[1].replace(/\\"/g, '"')]);
+  }
+}
+// Le site compose les apostrophes typographiques (’) : on compare apostrophes confondues.
+const apos = (x) => x.replace(/['’]/g, '’');
+const sansCredit = credits.filter(([slug, c]) => ['', 'en'].some((l) => {
+  const html = apos(fs.readFileSync(path.join(dist, l, slug, 'index.html'), 'utf8'));
+  return !html.includes(apos(`class="figure-credit">`)) || !html.includes(apos(`<span lang="fr">${esc(c)}</span>`));
+}));
+(sansCredit.length === 0 ? ok : ko)(`${credits.length} image(s) créditée(s), crédit affiché sous l'image en français et en anglais${sansCredit.length ? ` ; manquant : ${sansCredit.map(([s]) => s).join(', ')}` : ''}`);
+
 // 6. Liens internes : chaque href ou src qui commence par « / » mène à un fichier, et son ancre existe.
 console.log('Liens internes');
 const pages = [];

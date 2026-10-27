@@ -56,7 +56,7 @@ const apostrophes = (html) =>
 // base : préfixe de langue des liens (« » ou « /en »). texts : libellés (agrandir le schéma).
 // Les schémas pointent vers /<slug>/assets/ (le seul exemplaire des fichiers, partagé par les langues),
 // en SVG quand le dossier en a un (charte 2027, section 5 : format préféré sur le site).
-export function createRenderer({ linker = null, label = (x) => x, base = '', agrandir = 'Agrandir le schéma' } = {}) {
+export function createRenderer({ linker = null, label = (x) => x, base = '', agrandir = 'Agrandir le schéma', agrandirImage = 'Agrandir l’image', creditLabel = 'Crédit :' } = {}) {
   let current = null;
   const marked = new Marked({ gfm: true, breaks: false });
   marked.use({
@@ -65,11 +65,16 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
         const local = href.replace(/^\.\//, '');
         const size = current ? pngSize(path.join(current.sourceDir, local)) : null;
         const dims = size ? ` width="${size.width}" height="${size.height}"` : '';
-        const caption = title ? `<figcaption>${escapeHtml(title)}</figcaption>` : '';
+        // Crédit d'une image de tiers (metadata.yaml, assets[].credit), toujours affiché sous l'image.
+        const asset = current?.assets?.find((a) => a.filename === local.replace(/^assets\//, ''));
+        const credit = asset?.credit ? `<span class="figure-credit">${escapeHtml(creditLabel)} <span lang="fr">${escapeHtml(asset.credit)}</span></span>` : '';
+        // Une image créditée est un logo ou une image de tiers, pas un schéma : elle suit la largeur de l'écran.
+        const ouvrir = credit ? agrandirImage : agrandir;
+        const caption = title || credit ? `<figcaption>${title ? `<span class="figure-legende">${escapeHtml(title)}</span>` : ''}${credit}</figcaption>` : '';
         const svg = local.replace(/\.png$/, '.svg');
         const vectoriel = current && svg !== local && fs.existsSync(path.join(current.sourceDir, svg));
         const src = `/${current?.slug}/${vectoriel ? svg : local}`;
-        return `<figure class="figure"><div class="figure-cadre" tabindex="0"><a href="${escapeHtml(src)}" aria-label="${escapeHtml(agrandir)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a></div>${caption}<a class="figure-ouvrir" href="${escapeHtml(src)}">${escapeHtml(agrandir)}</a></figure>`;
+        return `<figure class="figure${credit ? ' figure--tiers' : ''}"><div class="figure-cadre"${credit ? '' : ' tabindex="0"'}><a href="${escapeHtml(src)}" aria-label="${escapeHtml(ouvrir)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a></div>${caption}<a class="figure-ouvrir" href="${escapeHtml(src)}">${escapeHtml(ouvrir)}</a></figure>`;
       },
       link({ href, title, tokens }) {
         const text = this.parser.parseInline(tokens);
@@ -93,7 +98,7 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
     html = apostrophes(html);
     html = restoreMath(html, formulas);
     // Une figure seule dans un paragraphe : on retire le <p> qui l'enveloppe.
-    html = html.replace(/<p>\s*(<figure class="figure">[\s\S]*?<\/figure>)\s*<\/p>/g, '$1');
+    html = html.replace(/<p>\s*(<figure class="figure[^"]*">[\s\S]*?<\/figure>)\s*<\/p>/g, '$1');
     return { html, math: formulas.length > 0 };
   };
 }

@@ -156,7 +156,7 @@ for (const code of Object.keys(LANGUES)) {
   for (const g of specs) for (const se of g.series) for (const e of se.entries) if (e.definition) specDe.set(e.definition, { ...e, groupe: g.id });
 
   // Définitions
-  const render = createRenderer({ linker: createLinker(definitions), label: (n) => categoryLabel(n), base: L.base, agrandir: L.js.schema === 'Schéma' ? 'Agrandir le schéma' : 'Enlarge the diagram' });
+  const render = createRenderer({ linker: createLinker(definitions), label: (n) => categoryLabel(n), base: L.base, agrandir: L.agrandir, agrandirImage: L.agrandirImage, creditLabel: L.creditImage });
   let mathPages = 0;
   let images = 0;
   for (const def of definitions) {
