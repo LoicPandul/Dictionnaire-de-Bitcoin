@@ -155,10 +155,9 @@ def markdown_to_latex(content: str, assets_dir: Optional[Path] = None, code_max_
         if assets_dir is None:
             return ""
         image_path = assets_dir / m.group(2)
-        # Le livre est imprimé en noir et blanc : la version « -nb » d'un schéma passe en priorité,
-        # en PDF vectoriel, sinon en PNG (charte 2027, section 6).
-        candidates = [image_path.with_name(image_path.stem + "-nb.pdf"),
-                      image_path.with_name(image_path.stem + "-nb" + image_path.suffix), image_path]
+        # Le livre 2027 est imprimé en couleur : le PDF vectoriel couleur d'un schéma passe en
+        # priorité, sinon le PNG. Les versions « -nb » restent dans assets/ pour un tirage noir et blanc.
+        candidates = [image_path.with_suffix(".pdf"), image_path]
         path = next(c for c in candidates if c.exists() or c == image_path).as_posix()
         caption = ""
         if m.group(1).strip():
