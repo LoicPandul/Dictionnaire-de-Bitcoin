@@ -2,5 +2,9 @@ uuid: "512eb3fc-3e45-4a28-9f69-ba1870aca0c2"
 title: "MISES LUDWIG VON"
 slug: "mises-ludwig"
 category: "ÉCONOMISTE"
-cross_references: []
+cross_references:
+  - "93d3646f-a39f-4626-8569-3f1dbb06c7a9"
+  - "9de34c8e-f9fd-42a9-a5a9-3e023ad100c4"
+  - "e7253f40-29eb-4ae3-b98f-12ecc89d3354"
+  - "1b57357e-db71-47ba-9463-1d4d43dbaa40"
 version: "1"

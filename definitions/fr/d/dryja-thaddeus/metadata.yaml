@@ -2,5 +2,9 @@ uuid: "98bbc205-0e5f-4800-a885-381f59e5c18c"
 title: "DRYJA THADDEUS"
 slug: "dryja-thaddeus"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "c84e350d-9afb-4716-b0c5-800f42070fb3"
+  - "93b4c50a-c7f1-4a8e-9f8f-2c0ef06492b5"
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "1b8e2ba3-2faa-4e68-9fef-feace1737cc2"
 version: "1"

@@ -2,5 +2,9 @@ uuid: "3403097d-50b7-4b7f-91d1-681e24cbda8d"
 title: "ERHARDT MARK"
 slug: "erhardt-mark"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "d8dd8728-f52c-44e0-b9af-078490aa586a"
+  - "bffaadfd-53ad-4ac6-b6df-8d7dd31bcee8"
+  - "ff62c78d-122a-43d2-a3b4-0fc9c720f75d"
+  - "24a2f7e8-0f76-4115-8646-54837a4e93b7"
 version: "1"

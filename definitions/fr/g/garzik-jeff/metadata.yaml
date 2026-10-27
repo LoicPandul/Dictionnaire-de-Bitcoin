@@ -2,5 +2,10 @@ uuid: "4a2818f8-ca9e-4eb6-90e5-19fad7294078"
 title: "GARZIK JEFF"
 slug: "garzik-jeff"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "99c58522-4fba-43ee-a67c-3f69cf3b8663"
+  - "c896b0a5-6317-4187-8603-56d65d02feea"
+  - "65eb2e17-8dac-41f6-acf7-30d01d085760"
+  - "20ddeda5-0bf8-4d08-914f-81299fc47d75"
+  - "5e8e92ec-5848-47bb-b47e-92f655ee1c7f"
 version: "1"

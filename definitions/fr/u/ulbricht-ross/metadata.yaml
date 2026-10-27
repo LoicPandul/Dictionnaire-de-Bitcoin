@@ -2,5 +2,6 @@ uuid: "4e81df7a-0950-4ea2-a47b-3079e0ff72a2"
 title: "ULBRICHT ROSS"
 slug: "ulbricht-ross"
 category: "FIGURE DE L'ÉCOSYSTÈME"
-cross_references: []
+cross_references:
+  - "bee5e035-ae75-4556-a773-919454964c2d"
 version: "1"

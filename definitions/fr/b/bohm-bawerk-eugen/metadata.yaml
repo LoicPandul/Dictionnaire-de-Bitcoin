@@ -2,5 +2,8 @@ uuid: "0c4a3ff3-c7fc-4514-be79-808326d23c25"
 title: "EUGEN VON BÖHM-BAWERK"
 slug: "bohm-bawerk-eugen"
 category: "ÉCONOMISTE"
-cross_references: []
+cross_references:
+  - "7a821760-c259-49bf-b837-a0464fef3380"
+  - "93d3646f-a39f-4626-8569-3f1dbb06c7a9"
+  - "40aad7ae-068e-4d54-8b3e-cf0585428d4e"
 version: "1"

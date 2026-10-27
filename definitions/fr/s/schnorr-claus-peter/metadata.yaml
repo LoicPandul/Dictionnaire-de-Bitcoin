@@ -2,5 +2,10 @@ uuid: "8a07fcf5-b96b-4605-8230-4c30d034171f"
 title: "SCHNORR CLAUS PETER"
 slug: "schnorr-claus-peter"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "47b5ee48-88cf-4653-b9de-17e0afcdd408"
+  - "48b21fa1-a1ab-4c4d-802c-1baeae4c7d41"
+  - "a629be3a-115c-4c34-9c8a-cc67f611b0ff"
+  - "a4902301-5664-4d64-bdcd-0a1027408fdc"
+  - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
 version: "1"

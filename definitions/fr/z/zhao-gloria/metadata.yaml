@@ -2,5 +2,10 @@ uuid: "7103cd1b-149b-404d-b13c-eeac795573ba"
 title: "ZHAO GLORIA"
 slug: "zhao-gloria"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "ff26d9ab-2437-4af3-8de0-50151be9c1a6"
+  - "a8484022-ce46-47ef-ad43-7b896394da2c"
+  - "b6e373f4-f327-4951-99a2-739c01e6efa8"
+  - "eb71934d-67e6-4793-8353-bb0d2c81e4b3"
+  - "ea4e33b9-b048-49e3-ae58-43da0cb71446"
 version: "1"

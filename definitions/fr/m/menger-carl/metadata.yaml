@@ -2,5 +2,8 @@ uuid: "9de34c8e-f9fd-42a9-a5a9-3e023ad100c4"
 title: "MENGER CARL"
 slug: "menger-carl"
 category: "ÉCONOMISTE"
-cross_references: []
+cross_references:
+  - "93d3646f-a39f-4626-8569-3f1dbb06c7a9"
+  - "512eb3fc-3e45-4a28-9f69-ba1870aca0c2"
+  - "1b57357e-db71-47ba-9463-1d4d43dbaa40"
 version: "1"

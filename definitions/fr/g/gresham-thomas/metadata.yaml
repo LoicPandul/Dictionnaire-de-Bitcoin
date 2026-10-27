@@ -2,5 +2,7 @@ uuid: "fbdacb1f-8f3e-4138-a188-07888dcb0a14"
 title: "GRESHAM THOMAS"
 slug: "gresham-thomas"
 category: "ÉCONOMISTE"
-cross_references: []
+cross_references:
+  - "85970e71-e724-4f30-96ef-d9c47c97d604"
+  - "8bf549d4-8a74-4e5d-b8f5-d9a463ff8609"
 version: "1"

@@ -2,5 +2,8 @@ uuid: "46f50498-3822-41f2-97a0-18f885f320f3"
 title: "MERKLE RALPH"
 slug: "merkle-ralph"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "37a83a88-5744-44df-862a-a68dadb160cf"
+  - "2f329b85-fc19-43e1-b904-e7644daf3659"
+  - "621356ed-02e1-48bd-aa8b-3774001d445d"
 version: "1"

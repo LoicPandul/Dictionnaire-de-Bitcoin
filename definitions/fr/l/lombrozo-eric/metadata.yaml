@@ -2,5 +2,10 @@ uuid: "5e7a9e46-3370-4d55-9a55-ae4745378b60"
 title: "LOMBROZO ERIC"
 slug: "lombrozo-eric"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "73c3a8a9-6dbb-4ad2-8456-2c60c8e89709"
+  - "a073c884-0f6a-49f4-bdc9-fa5b8cc37133"
+  - "62bb6e93-35b0-49da-ab17-0b84b073c8b5"
+  - "03e9c931-5f07-4a41-a9f7-fd2bc113c2ac"
+  - "6deae73c-602a-4828-bb54-46c4f4a23b7e"
 version: "1"

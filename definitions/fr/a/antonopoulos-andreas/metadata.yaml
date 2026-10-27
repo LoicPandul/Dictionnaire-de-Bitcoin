@@ -2,5 +2,8 @@ uuid: "83e54449-0f0c-4ffa-87b4-123c334bc8b1"
 title: "ANTONOPOULOS ANDREAS M."
 slug: "antonopoulos-andreas"
 category: "FIGURE DE L'ÉCOSYSTÈME"
-cross_references: []
+cross_references:
+  - "60f0a3c9-56fc-4fc8-bb54-d542d0434b8a"
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "b89d1435-f776-4305-a743-c2d95ebcdf91"
 version: "1"

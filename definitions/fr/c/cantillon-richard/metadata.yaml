@@ -2,5 +2,7 @@ uuid: "86539e12-e17a-4ca2-975b-488833e82d25"
 title: "CANTILLON RICHARD"
 slug: "cantillon-richard"
 category: "ÉCONOMISTE"
-cross_references: []
+cross_references:
+  - "7f6464e3-87fa-402c-a686-bd2c14390b02"
+  - "93d3646f-a39f-4626-8569-3f1dbb06c7a9"
 version: "1"

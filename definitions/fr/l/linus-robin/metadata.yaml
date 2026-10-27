@@ -2,5 +2,8 @@ uuid: "cd5368a7-e029-4ec3-aed6-43f9672f05b3"
 title: "LINUS ROBIN"
 slug: "linus-robin"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "c4b669f1-0d6c-4206-9537-82282ca1ca24"
+  - "9fa0c2d1-1763-4c3b-a8c7-a6cb7db1fda0"
+  - "5b17757c-5d22-4f59-8807-ba0dca73f3ed"
 version: "1"

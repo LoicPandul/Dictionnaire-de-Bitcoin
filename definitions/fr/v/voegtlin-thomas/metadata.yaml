@@ -2,5 +2,8 @@ uuid: "42b17ca5-3bfe-41f5-93ca-67fca584c3c6"
 title: "VOEGTLIN THOMAS"
 slug: "voegtlin-thomas"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "6863cade-c97d-4b01-907b-af682e54726c"
+  - "74f867a4-64ea-4140-b6fc-e723f5a371fe"
+  - "4eb80ccd-11e0-45cc-ad72-32065d22601a"
 version: "1"

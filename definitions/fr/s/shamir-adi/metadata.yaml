@@ -2,5 +2,9 @@ uuid: "f2dd0c74-8bb1-4953-bb6f-7cf6555bc7d1"
 title: "SHAMIR ADI"
 slug: "shamir-adi"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "9afe1eb4-b554-4c6e-97ec-ebc4cdb7eb83"
+  - "01b2a7ec-2c60-4ba1-bd45-468f64757cdb"
+  - "35bc923f-b553-4d79-9192-50d0dbc21d40"
+  - "f8e2a635-08c8-4dfa-a0d8-d7efb162ebd6"
 version: "1"

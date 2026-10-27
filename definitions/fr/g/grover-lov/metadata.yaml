@@ -2,5 +2,9 @@ uuid: "6380a70d-c74b-4094-8088-11dd55e40c9b"
 title: "GROVER LOV"
 slug: "grover-lov"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "4a028d39-d5f2-4647-ad80-e22c86f2a7c3"
+  - "80add875-e528-4940-9500-8e3e657c4f1f"
+  - "dd0fc5ee-1e46-46a2-bc27-484463840e58"
+  - "a9ac33b3-8ef6-4cbe-afdc-31ea80b61dc6"
 version: "1"

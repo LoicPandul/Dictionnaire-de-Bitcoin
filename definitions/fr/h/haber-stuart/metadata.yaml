@@ -2,5 +2,9 @@ uuid: "9d751b3a-3f21-4b76-ab2e-d451d785b517"
 title: "HABER STUART"
 slug: "haber-stuart"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "708fe70d-c652-465e-bafd-720b6fa6eb85"
+  - "d96b5a21-1e11-4bf7-b794-4b0369e0fa41"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
+  - "9d578cea-a756-4aff-b436-fc8a5e90a98c"
 version: "1"

@@ -2,5 +2,6 @@ uuid: "c26960e2-8ff2-4de1-8cb6-0b0892fccfce"
 title: "COBRA"
 slug: "cobra"
 category: "FIGURE DE L'ÉCOSYSTÈME"
-cross_references: []
+cross_references:
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
 version: "1"

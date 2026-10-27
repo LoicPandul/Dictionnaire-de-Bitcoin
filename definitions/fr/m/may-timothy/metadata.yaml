@@ -2,5 +2,8 @@ uuid: "929f8b97-1737-437a-92af-cd0ae012be7c"
 title: "MAY TIMOTHY C."
 slug: "may-timothy"
 category: "CYPHERPUNK"
-cross_references: []
+cross_references:
+  - "d0eb74f6-c28b-400e-865c-8e205c2425c7"
+  - "b33b92e6-88ff-4923-ad4b-7529d0c03478"
+  - "e3b3f4fd-f7d1-4c41-84ae-5ccbdde598ad"
 version: "1"

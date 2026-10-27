@@ -2,5 +2,8 @@ uuid: "a295d449-f6ad-4023-93c0-dcc712e1b43d"
 title: "KEYNES JOHN MAYNARD"
 slug: "keynes-john-maynard"
 category: "ÉCONOMISTE"
-cross_references: []
+cross_references:
+  - "d46c6972-591f-4b70-95d8-fa7e9584fd0e"
+  - "1b57357e-db71-47ba-9463-1d4d43dbaa40"
+  - "793c2245-d61c-4cea-bbcf-272925310ff3"
 version: "1"

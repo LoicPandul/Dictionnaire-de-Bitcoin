@@ -2,5 +2,7 @@ uuid: "898e4bc9-4f86-4640-ab41-d7a3eebaaa1f"
 title: "FELLER WILLIAM"
 slug: "feller-william"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
+  - "9947b93a-25b5-4f2d-b353-fefe5a5b4719"
 version: "1"

@@ -2,5 +2,10 @@ uuid: "f188c301-4868-4b8f-81fe-d7499cfcc973"
 title: "NAUMENKO GLEB"
 slug: "naumenko-gleb"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "937d8f64-c3f4-4ca3-879b-3ef56b543fe8"
+  - "2f0c7362-0127-4575-9b0a-b43f435905b5"
+  - "a98db427-c5fc-42bb-b745-dd343576d6ae"
+  - "abcbba4a-2718-4ffd-97bf-7a4646eea0bb"
+  - "8b4da340-340a-42f0-aa87-440a5335be5d"
 version: "1"

@@ -2,5 +2,9 @@ uuid: "d254f6e1-ce60-4dcc-9fd1-fbbf04ec2fc4"
 title: "MILLER VICTOR S."
 slug: "miller-victor"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "d160cef8-53f5-4847-82d1-0d55f3ab9ac3"
+  - "da773fd3-c1e6-43fb-8764-2cca100725d5"
+  - "27ef6f8d-b26c-43b7-bcc5-45b521dec9ce"
+  - "a4902301-5664-4d64-bdcd-0a1027408fdc"
 version: "1"

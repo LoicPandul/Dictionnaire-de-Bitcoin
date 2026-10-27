@@ -2,5 +2,9 @@ uuid: "4f14dc69-40a7-44c7-8d6a-97540ec7ce74"
 title: "ZHAN MICREE"
 slug: "zhan-micree"
 category: "FIGURE DE L'ÉCOSYSTÈME"
-cross_references: []
+cross_references:
+  - "0b8822d2-9b7b-490c-b965-075d85b76399"
+  - "fe221820-ee07-4e49-a1a7-4a16b188bb33"
+  - "d84e3fd5-7c72-4820-b388-261cb1961330"
+  - "0ff0b4b1-305f-48a3-aecf-f88dbb478bdf"
 version: "1"

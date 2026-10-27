@@ -2,5 +2,8 @@ uuid: "febe3219-c68d-4a57-88a9-01b28b40dad4"
 title: "ATACK JON"
 slug: "atack-jon"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "ff62c78d-122a-43d2-a3b4-0fc9c720f75d"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "653e2413-a720-41ad-ae91-c82f36d8891f"
 version: "1"

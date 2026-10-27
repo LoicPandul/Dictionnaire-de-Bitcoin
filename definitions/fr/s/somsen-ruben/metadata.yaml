@@ -2,5 +2,10 @@ uuid: "b3856c91-7216-483c-9f7b-0e3939c6b27f"
 title: "SOMSEN RUBEN"
 slug: "somsen-ruben"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "3d99e8d6-c063-470e-8abc-3e30dfcb1ee5"
+  - "57d578b1-202e-4f63-96e4-ba3819713b33"
+  - "3274070b-2fca-4dbf-8713-8a7651ba336c"
+  - "085a9c2f-9791-4030-89fb-418018e89ca6"
+  - "ff62c78d-122a-43d2-a3b4-0fc9c720f75d"
 version: "1"

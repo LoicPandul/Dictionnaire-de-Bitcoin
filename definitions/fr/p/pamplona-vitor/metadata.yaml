@@ -2,5 +2,9 @@ uuid: "b202c79e-f12c-42b0-b34d-110456211f28"
 title: "PAMPLONA VITOR"
 slug: "pamplona-vitor"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "2d52885f-6ad4-454c-b0ec-3671bcc26503"
+  - "5cb70b76-85fd-4db6-b48f-fcd610e7fef8"
+  - "02b92c71-1e90-4093-bb95-e26cba03d2e6"
+  - "959495b8-3b60-49c0-a9ce-64ba7bde0ca3"
 version: "1"

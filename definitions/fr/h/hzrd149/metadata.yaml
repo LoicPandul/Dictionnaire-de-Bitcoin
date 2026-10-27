@@ -2,5 +2,9 @@ uuid: "1124f2ae-91eb-4289-b939-ee5c1ef66bdf"
 title: "HZRD149"
 slug: "hzrd149"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "30c76061-c76e-4403-a464-41a8f5ff8590"
+  - "61d25f57-86b3-420e-8953-15b1b36183a5"
+  - "02b92c71-1e90-4093-bb95-e26cba03d2e6"
+  - "5cb70b76-85fd-4db6-b48f-fcd610e7fef8"
 version: "1"

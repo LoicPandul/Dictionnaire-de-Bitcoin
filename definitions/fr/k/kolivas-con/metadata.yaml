@@ -2,5 +2,10 @@ uuid: "c4b36c16-1acb-42b8-81ce-05313b6fb8f1"
 title: "KOLIVAS CON"
 slug: "kolivas-con"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "004843a3-f352-4f82-a505-32e9c522edb1"
+  - "544bf8c2-a00d-44ca-8723-12f035bd8434"
+  - "89e818b8-a68c-47b8-9d22-6e80cdae3f80"
+  - "d84e3fd5-7c72-4820-b388-261cb1961330"
+  - "34624171-2d77-43cf-828a-035874154bd0"
 version: "1"

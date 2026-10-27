@@ -2,5 +2,10 @@ uuid: "0a350ee1-1f14-425e-b843-7e7aa308a781"
 title: "KOGMAN YUVAL"
 slug: "kogman-yuval"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "ac77bc32-6233-4cd1-99de-85bfc3705063"
+  - "304dac0e-8052-4ce1-9b9f-0a1dba866108"
+  - "a749f19c-ac51-4565-a219-feaabe89eb56"
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
+  - "b7b495bd-6877-4383-88b5-8899d4f5833e"
 version: "1"

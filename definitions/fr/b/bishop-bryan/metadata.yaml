@@ -2,5 +2,9 @@ uuid: "b72a9eac-8f43-4eee-b7b4-69d789805369"
 title: "BISHOP BRYAN"
 slug: "bishop-bryan"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "d3b546c8-0c98-413f-bf30-8bc3fb91e573"
+  - "d2d99060-3757-428b-ac6d-a18cd5e800bd"
+  - "62bb6e93-35b0-49da-ab17-0b84b073c8b5"
+  - "ff62c78d-122a-43d2-a3b4-0fc9c720f75d"
 version: "1"

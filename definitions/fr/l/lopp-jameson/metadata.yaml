@@ -2,5 +2,9 @@ uuid: "9f26022a-98bb-45ec-9aa5-6af12cf408e5"
 title: "LOPP JAMESON"
 slug: "lopp-jameson"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "3d4aaf2c-33d4-40d6-9baa-1a097a72c83c"
+  - "d008b909-b41b-4a5e-8131-7f5a099dfe09"
+  - "e688421e-dbe7-4ca9-ae03-c191f47f1080"
+  - "27f4f1dd-ca19-4d2b-926e-dcb0aaebda73"
 version: "1"

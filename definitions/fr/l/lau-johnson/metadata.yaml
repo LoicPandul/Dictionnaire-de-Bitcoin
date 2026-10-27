@@ -2,5 +2,10 @@ uuid: "65a55f65-52ec-4023-a257-a7718518e32a"
 title: "LAU JOHNSON"
 slug: "lau-johnson"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "73c3a8a9-6dbb-4ad2-8456-2c60c8e89709"
+  - "a073c884-0f6a-49f4-bdc9-fa5b8cc37133"
+  - "ba286b8c-fd05-42c6-9709-a48ba8e527ef"
+  - "4b88524d-358c-4a99-916a-698a7deca19d"
+  - "38c18734-0ae2-4645-9992-a6396a631f08"
 version: "1"

@@ -2,5 +2,8 @@ uuid: "185641c8-cb11-441e-9cac-5303daeb5088"
 title: "ASSANGE JULIAN"
 slug: "assange-julian"
 category: "CYPHERPUNK"
-cross_references: []
+cross_references:
+  - "d0eb74f6-c28b-400e-865c-8e205c2425c7"
+  - "8459c610-f4ef-49e8-8d2e-ba70c1eb8082"
+  - "4eb80ccd-11e0-45cc-ad72-32065d22601a"
 version: "1"

@@ -2,5 +2,10 @@ uuid: "abcbba4a-2718-4ffd-97bf-7a4646eea0bb"
 title: "MAXWELL GREGORY"
 slug: "maxwell-gregory"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
+  - "cd0c8e19-e3ea-4e07-b42a-34de86984dfa"
+  - "df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6"
+  - "5c4ce78f-f055-4816-8fcd-ed6d4f0f73fe"
+  - "937d8f64-c3f4-4ca3-879b-3ef56b543fe8"
 version: "1"

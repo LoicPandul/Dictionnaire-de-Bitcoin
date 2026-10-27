@@ -2,5 +2,10 @@ uuid: "60826a5b-8998-4f2a-96fb-2f0ad34e8c30"
 title: "HEARN MIKE"
 slug: "hearn-mike"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "3f1e3903-ed47-4e72-bc65-8fca6e1aa69d"
+  - "6ca39957-45a3-4cd3-93ea-4d95a60180a1"
+  - "ea6d0414-12c5-48f3-996b-2897ec6548f2"
+  - "bffbeb5c-437c-4a34-9a81-4b7664332b5a"
+  - "389b0e5c-4360-4563-adff-24a3d17ea5a9"
 version: "1"

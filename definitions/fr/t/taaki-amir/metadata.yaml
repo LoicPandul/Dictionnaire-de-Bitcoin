@@ -2,5 +2,10 @@ uuid: "14df4b8d-e77c-42cf-8183-b9c99347fa0b"
 title: "TAAKI AMIR"
 slug: "taaki-amir"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "1fcc0d0b-d8b1-4f13-a3e3-f67383f704d4"
+  - "bf33fc73-d6fc-4b8f-b213-2bd18481bca7"
+  - "9283480e-e51d-4a3d-afb8-60f1179bd9a8"
+  - "0dd19b44-03c3-4e8c-a5a6-1d1bb6e37154"
+  - "ad44c071-92b1-475f-ba58-9eaab6a23263"
 version: "1"

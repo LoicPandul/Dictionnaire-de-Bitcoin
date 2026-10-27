@@ -2,5 +2,8 @@ uuid: "320b8b9e-e09a-40b4-9e2f-aac893bf2261"
 title: "WILLETT J. R."
 slug: "willett-j-r"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "04fc27ec-693a-4e17-aea6-5c3a1f732c8b"
+  - "acdcbd6a-29fe-42b8-a01d-3dd55b6a21c9"
+  - "4eb80ccd-11e0-45cc-ad72-32065d22601a"
 version: "1"

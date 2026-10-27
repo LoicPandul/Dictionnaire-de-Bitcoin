@@ -2,5 +2,10 @@ uuid: "d160cef8-53f5-4847-82d1-0d55f3ab9ac3"
 title: "KOBLITZ NEAL"
 slug: "koblitz-neal"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "da773fd3-c1e6-43fb-8764-2cca100725d5"
+  - "d254f6e1-ce60-4dcc-9fd1-fbbf04ec2fc4"
+  - "d4195790-4784-4e8c-9649-064f20766d9d"
+  - "27ef6f8d-b26c-43b7-bcc5-45b521dec9ce"
+  - "621356ed-02e1-48bd-aa8b-3774001d445d"
 version: "1"

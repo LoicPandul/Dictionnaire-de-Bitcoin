@@ -2,5 +2,8 @@ uuid: "756fd73e-62e3-4fc9-92e9-5e56fdefe80f"
 title: "MALMI MARTTI"
 slug: "malmi-martti"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "9d578cea-a756-4aff-b436-fc8a5e90a98c"
+  - "e28e5bec-b6ca-4a29-8455-de45ccc326cc"
+  - "c37508b4-df25-4d2b-9d8b-de849e62d107"
 version: "1"

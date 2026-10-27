@@ -2,5 +2,10 @@ uuid: "20d73d33-6b31-4856-ac5e-43b9c5880c69"
 title: "VAN DER LAAN MARA"
 slug: "van-der-laan-mara"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "9d7ce4f7-c1a7-4b42-8031-d2d7b7f2a240"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "8cc61c1e-719f-47a5-b4b3-e88aaa2b231c"
+  - "b9596734-9906-48ab-87c9-93abea4f23c6"
+  - "460023ca-a13c-4178-b28c-54547af6c0a0"
 version: "1"

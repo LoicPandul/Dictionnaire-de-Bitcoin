@@ -2,5 +2,10 @@ uuid: "6deae73c-602a-4828-bb54-46c4f4a23b7e"
 title: "WUILLE PIETER"
 slug: "wuille-pieter"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "60f0a3c9-56fc-4fc8-bb54-d542d0434b8a"
+  - "a073c884-0f6a-49f4-bdc9-fa5b8cc37133"
+  - "48b21fa1-a1ab-4c4d-802c-1baeae4c7d41"
+  - "29193a69-fe44-4bf3-9236-5d427db370fd"
+  - "ae922c94-0926-40a0-af0f-817dd7b4f88e"
 version: "1"

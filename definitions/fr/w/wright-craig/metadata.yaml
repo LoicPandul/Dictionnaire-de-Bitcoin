@@ -2,5 +2,10 @@ uuid: "c37508b4-df25-4d2b-9d8b-de849e62d107"
 title: "WRIGHT CRAIG"
 slug: "wright-craig"
 category: "FIGURE DE L'ÉCOSYSTÈME"
-cross_references: []
+cross_references:
+  - "9d578cea-a756-4aff-b436-fc8a5e90a98c"
+  - "12ffc664-30e0-4401-b10c-6d3aba5d24ed"
+  - "abbab2ae-f361-48f2-a376-e596da4a41cb"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
+  - "389b0e5c-4360-4563-adff-24a3d17ea5a9"
 version: "1"

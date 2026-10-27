@@ -2,5 +2,9 @@ uuid: "d96b5a21-1e11-4bf7-b794-4b0369e0fa41"
 title: "STORNETTA W. SCOTT"
 slug: "stornetta-w-scott"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "708fe70d-c652-465e-bafd-720b6fa6eb85"
+  - "9d751b3a-3f21-4b76-ab2e-d451d785b517"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
+  - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
 version: "1"

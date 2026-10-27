@@ -2,5 +2,9 @@ uuid: "f812b658-e17c-4e10-b9b3-3d47aa6db354"
 title: "CALLE"
 slug: "calle"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "9ffee778-2e40-4552-a0e4-e4b47629711f"
+  - "b3a6e8eb-b4bb-4e94-9c46-225973b2fc48"
+  - "51015851-5323-43ca-8d32-c7c1c1d9847f"
+  - "a0a4d623-748e-4f0f-b946-5ac1a785d754"
 version: "1"

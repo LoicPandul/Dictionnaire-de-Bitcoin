@@ -2,5 +2,9 @@ uuid: "ae24213b-7972-48f7-ba1f-a501b912ed4d"
 title: "KOMLO CHELSEA"
 slug: "komlo-chelsea"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "b3ffca6f-478c-4cb2-bbd7-bc5d47a7a6d6"
+  - "d5369c43-b0ee-45d0-9d5b-d96af22782fe"
+  - "48b21fa1-a1ab-4c4d-802c-1baeae4c7d41"
+  - "47b5ee48-88cf-4653-b9de-17e0afcdd408"
 version: "1"

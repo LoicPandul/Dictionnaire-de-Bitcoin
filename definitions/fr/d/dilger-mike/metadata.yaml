@@ -2,5 +2,9 @@ uuid: "8b5a4e3d-0938-4557-bfbc-4cd96812eca1"
 title: "DILGER MIKE"
 slug: "dilger-mike"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "031ff079-aed5-4a55-9f05-d1c7443ab8db"
+  - "026376cc-7ac1-4ce6-8815-67bb51271541"
+  - "5cb70b76-85fd-4db6-b48f-fcd610e7fef8"
+  - "02b92c71-1e90-4093-bb95-e26cba03d2e6"
 version: "1"

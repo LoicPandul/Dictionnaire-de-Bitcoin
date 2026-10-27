@@ -2,5 +2,9 @@ uuid: "b7b495bd-6877-4383-88b5-8899d4f5833e"
 title: "FICSÓR ÁDÁM"
 slug: "ficsor-adam"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "ca5ac0f5-9195-41ba-b6dc-bfc0fc6f4f00"
+  - "230bebec-3a8b-4d46-9258-0e61e9674829"
+  - "ac77bc32-6233-4cd1-99de-85bfc3705063"
+  - "c59e5503-270d-4ab1-ad72-fe495364d576"
 version: "1"

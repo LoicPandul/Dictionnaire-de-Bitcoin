@@ -2,5 +2,10 @@ uuid: "922ba4a3-bf62-4b0e-86a5-f28de7c85c7e"
 title: "PROVOOST SJORS"
 slug: "provoost-sjors"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "cf8665d5-e90a-4ead-b203-50e128b5a85e"
+  - "2febe88a-f0e1-458c-b275-696486c47d8e"
+  - "6bdf624c-36a7-48a0-8a63-122ec3d65e08"
+  - "643a18d6-6e51-4812-8aaa-e0c6e35f421b"
 version: "1"

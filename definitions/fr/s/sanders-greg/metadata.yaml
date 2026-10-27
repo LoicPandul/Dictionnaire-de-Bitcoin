@@ -2,5 +2,10 @@ uuid: "6c0f80d4-448c-46c3-ae18-5aac43e8e0b6"
 title: "SANDERS GREG"
 slug: "sanders-greg"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "03141aa4-ec98-4507-96c8-c786a84c35b9"
+  - "6682f0d1-9265-41c2-bc0b-0ea0b61dc0db"
+  - "a97772b1-dc53-4666-912c-986de3345c67"
+  - "d3b546c8-0c98-413f-bf30-8bc3fb91e573"
+  - "f83f1367-fa30-4cbd-bc65-6cb6270f5f26"
 version: "1"

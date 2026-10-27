@@ -2,5 +2,10 @@ uuid: "bba97384-10de-420e-ade5-80b661a731f4"
 title: "POON JOSEPH"
 slug: "poon-joseph"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "98bbc205-0e5f-4800-a885-381f59e5c18c"
+  - "adfcbbf5-695d-4a7b-b4ad-319d22528630"
+  - "8b83d40b-642e-41b1-b4ef-df25dc93d1c3"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
 version: "1"

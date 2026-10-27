@@ -2,5 +2,10 @@ uuid: "1a1f3b06-6529-4f00-9931-13870f5c698b"
 title: "DAI WEI"
 slug: "dai-wei"
 category: "CYPHERPUNK"
-cross_references: []
+cross_references:
+  - "70ca9aab-3b0b-4903-91bc-f5782c614db9"
+  - "14740648-aa8c-4405-81fd-063c44928336"
+  - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
+  - "d0eb74f6-c28b-400e-865c-8e205c2425c7"
 version: "1"

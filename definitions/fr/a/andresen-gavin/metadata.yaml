@@ -2,4 +2,8 @@ uuid: "389b0e5c-4360-4563-adff-24a3d17ea5a9"
 title: "ANDRESEN GAVIN"
 slug: "andresen-gavin"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "82155f64-a605-4dd8-856b-0a7bc3dcef3c"
+  - "3589ab59-e372-4fe8-9c56-e9cf9fea85d4"
+  - "c9753626-0b70-474e-800e-e503b9e1c6ff"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"

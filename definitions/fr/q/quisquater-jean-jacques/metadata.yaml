@@ -2,5 +2,9 @@ uuid: "157abd04-af38-4797-8945-b22448426913"
 title: "QUISQUATER JEAN-JACQUES"
 slug: "quisquater-jean-jacques"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "708fe70d-c652-465e-bafd-720b6fa6eb85"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
+  - "9d578cea-a756-4aff-b436-fc8a5e90a98c"
+  - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
 version: "1"

@@ -2,5 +2,10 @@ uuid: "77fdb2b1-85bc-4375-af10-ba9c0f4fe7cf"
 title: "DAFTUAR SUHAS"
 slug: "daftuar-suhas"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "ae922c94-0926-40a0-af0f-817dd7b4f88e"
+  - "0c32601c-1d9e-4ed1-ae6b-3118fe887d46"
+  - "4377d65a-07ec-43d4-b763-227a137f2595"
+  - "2ad92c38-f85f-41c7-bbc8-f6eae56d88b9"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
 version: "1"

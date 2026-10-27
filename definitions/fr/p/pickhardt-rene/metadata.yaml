@@ -2,5 +2,9 @@ uuid: "d693b4a4-7a2c-4ca2-8cd7-691f4645e680"
 title: "PICKHARDT RENÉ"
 slug: "pickhardt-rene"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "7de0cee4-55d8-460c-98dc-d3fde5623e45"
+  - "ba1ad375-829d-436a-bd13-570d31abe544"
+  - "6d6f32a0-761e-4ee4-a189-db65aebc23ef"
+  - "453e3869-5a5c-4c62-a91a-460806590d7a"
 version: "1"

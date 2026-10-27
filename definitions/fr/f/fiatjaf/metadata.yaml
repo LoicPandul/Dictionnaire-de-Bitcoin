@@ -2,5 +2,9 @@ uuid: "9c508aec-cf0f-4322-8a39-d60419607e1a"
 title: "FIATJAF"
 slug: "fiatjaf"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "02b92c71-1e90-4093-bb95-e26cba03d2e6"
+  - "52153b66-22fb-4e2f-8176-5532f4335ab3"
+  - "a11565d1-daa1-41d2-9bf7-ae34cdc7ed5e"
+  - "2f4abca1-b097-46cc-95b5-578f99df8642"
 version: "1"

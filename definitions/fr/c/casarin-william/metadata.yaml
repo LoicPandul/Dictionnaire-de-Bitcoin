@@ -2,5 +2,8 @@ uuid: "d4362947-e724-41c9-8133-d6e088beee44"
 title: "CASARIN WILLIAM"
 slug: "casarin-william"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "6525a7cf-4a98-4a2c-b1b5-b94754ea1769"
+  - "2f74b661-7b6d-4718-9076-697e7984eef3"
+  - "02b92c71-1e90-4093-bb95-e26cba03d2e6"
 version: "1"

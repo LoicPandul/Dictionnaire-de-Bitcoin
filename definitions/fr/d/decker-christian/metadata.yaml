@@ -2,5 +2,9 @@ uuid: "603d9964-eacb-4efd-8def-a8e946d5e4fb"
 title: "DECKER CHRISTIAN"
 slug: "decker-christian"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "8b83d40b-642e-41b1-b4ef-df25dc93d1c3"
+  - "d6c9951a-94ae-4700-aa31-9a9561b3bfc4"
+  - "adfcbbf5-695d-4a7b-b4ad-319d22528630"
+  - "45f431f2-f91e-4986-a2b3-968252720501"
 version: "1"

@@ -2,5 +2,9 @@ uuid: "02562b1e-3b92-434e-a0ab-226e79daabdc"
 title: "CHOW AVA"
 slug: "chow-ava"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "6bdf624c-36a7-48a0-8a63-122ec3d65e08"
+  - "f30dedc9-de67-4e1a-a03c-d16db2c9a7e4"
+  - "b133b70c-2f9a-4d80-a41d-a39e898618d7"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
 version: "1"

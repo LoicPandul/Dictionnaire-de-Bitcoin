@@ -2,5 +2,9 @@ uuid: "67c11692-1199-4d49-a948-a6460217dd96"
 title: "RIVEST RON"
 slug: "rivest-ron"
 category: "CRYPTOGRAPHE ET INFORMATICIEN"
-cross_references: []
+cross_references:
+  - "f2dd0c74-8bb1-4953-bb6f-7cf6555bc7d1"
+  - "6412031a-8d71-47a3-8719-6197487a00d5"
+  - "aa1fee82-5009-41ce-9821-614fb59dfef3"
+  - "b24f7ccf-965a-4b03-b046-c3d74a0dca31"
 version: "1"

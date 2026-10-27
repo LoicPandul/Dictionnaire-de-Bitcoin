@@ -2,5 +2,9 @@ uuid: "16cc7c53-91d5-48a3-8a39-73de36ec9237"
 title: "TODD PETER"
 slug: "todd-peter"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "08d35796-e7b3-48e6-b1b0-7dc4e27e55cd"
+  - "771919cf-9e7a-47c5-82fc-c729a36c16db"
+  - "78a07d8e-988e-4f2b-9c0b-75ecd917ce9a"
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
 version: "1"

@@ -2,5 +2,9 @@ uuid: "fb790b86-68cf-48a6-ad49-449ec21856f7"
 title: "SZABO NICK"
 slug: "szabo-nick"
 category: "CYPHERPUNK"
-cross_references: []
+cross_references:
+  - "eca1a80c-00b6-4f2b-9429-fb971c5167bd"
+  - "d3d501f0-d106-42b6-8024-14a5468e9681"
+  - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
+  - "5d9a18dd-68d3-484b-a1c0-1b001ab16d80"
 version: "1"

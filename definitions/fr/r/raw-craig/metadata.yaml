@@ -2,5 +2,9 @@ uuid: "a323de98-c2ee-44b6-95a6-082b75288d9e"
 title: "RAW CRAIG"
 slug: "raw-craig"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "502e0bc6-b7e4-45ff-bb32-9f726b0a0047"
+  - "38de0e00-1143-4387-8517-e890f7228b17"
+  - "6bdf624c-36a7-48a0-8a63-122ec3d65e08"
+  - "f49ce9b9-7d6a-422f-8e6a-0853aa1aa2e9"
 version: "1"

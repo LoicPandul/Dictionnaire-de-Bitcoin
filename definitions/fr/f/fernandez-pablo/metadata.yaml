@@ -2,5 +2,10 @@ uuid: "7a708095-be21-4151-9237-a5f2f39cedef"
 title: "FERNANDEZ PABLO"
 slug: "fernandez-pablo"
 category: "DÉVELOPPEUR DE SURCOUCHES"
-cross_references: []
+cross_references:
+  - "5a651454-a2ee-4fd9-85b0-343c9387907a"
+  - "6df54420-1fbc-4904-aef1-24a4c616a649"
+  - "2f8fbe59-2b83-446b-b198-86311acc1f4b"
+  - "9ffee778-2e40-4552-a0e4-e4b47629711f"
+  - "9c508aec-cf0f-4322-8a39-d60419607e1a"
 version: "1"

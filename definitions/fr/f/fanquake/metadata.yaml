@@ -2,5 +2,8 @@ uuid: "95b1f09b-ee0a-4c69-9d15-f4babc0d834a"
 title: "FANQUAKE"
 slug: "fanquake"
 category: "DÉVELOPPEUR BITCOIN"
-cross_references: []
+cross_references:
+  - "9134ec46-cc0f-429f-ae9f-71524d8aa4af"
+  - "6ee54ec0-ccf1-4a3e-a497-528b24b71911"
+  - "f337c682-bedc-4e1d-9f3b-f9a3b2e22d96"
 version: "1"
