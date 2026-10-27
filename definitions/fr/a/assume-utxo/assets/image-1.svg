@@ -85,7 +85,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="etiquette" x="120" y="283" text-anchor="middle">Genèse</text>
     <rect class="structure" x="240" y="248" width="48" height="48"/><rect class="structure" x="304" y="248" width="48" height="48"/><rect class="structure" x="368" y="248" width="48" height="48"/><rect class="structure" x="432" y="248" width="48" height="48"/><rect class="structure" x="496" y="248" width="48" height="48"/><rect class="structure" x="560" y="248" width="48" height="48"/><rect class="structure" x="624" y="248" width="48" height="48"/><rect class="structure" x="688" y="248" width="48" height="48"/>
     <rect class="structure" x="752" y="232" width="248" height="80"/>
-    <text class="etiquette" x="876" y="283" text-anchor="middle">Bloc 965 000</text>
+    <text class="etiquette" x="876" y="283" text-anchor="middle">Bloc 965 000</text>
     <rect class="structure" x="1032" y="248" width="48" height="48"/>
     <rect class="structure" x="1104" y="232" width="144" height="80"/>
     <text class="etiquette" x="1176" y="283" text-anchor="middle">Sommet</text>

@@ -74,7 +74,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- UTXO sous covenant -->
     <text class="annotation" x="176" y="64" text-anchor="middle">UTXO sous covenant</text>
     <rect class="valeur" x="32" y="96" width="288" height="64" rx="32"/>
-    <text class="etiquette" x="176" y="139" text-anchor="middle">50 000 sats</text>
+    <text class="etiquette" x="176" y="139" text-anchor="middle">50 000 sats</text>
     <!-- vers la transaction -->
     <path class="flux" d="M320 128 H428"/>
     <rect class="structure" x="432" y="80" width="352" height="160"/>

@@ -83,11 +83,11 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- Sorties -->
     <path class="lien" d="M328 112 H398"/>
     <rect class="valeur" x="400" y="80" width="420" height="64" rx="32"/>
-    <text class="etiquette" x="610" y="123" text-anchor="middle">Alice : 600 000 sats</text>
+    <text class="etiquette" x="610" y="123" text-anchor="middle">Alice : 600 000 sats</text>
 
     <path class="lien" d="M328 208 H398"/>
     <rect class="valeur" x="400" y="176" width="420" height="64" rx="32"/>
-    <text class="etiquette" x="610" y="219" text-anchor="middle">Bob : 400 000 sats</text>
+    <text class="etiquette" x="610" y="219" text-anchor="middle">Bob : 400 000 sats</text>
 
     <path class="lien" d="M328 304 H398"/>
     <rect class="sujet" x="400" y="272" width="420" height="64" rx="32"/>
@@ -107,7 +107,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="etiquette" x="1072" y="336" text-anchor="middle">enfant</text>
     <path class="flux" d="M1072 368 V494"/>
     <rect class="valeur" x="912" y="496" width="320" height="64" rx="32"/>
-    <text class="etiquette" x="1072" y="539" text-anchor="middle">Frais : 40 000 sats</text>
+    <text class="etiquette" x="1072" y="539" text-anchor="middle">Frais : 40 000 sats</text>
     <text class="annotation" x="1232" y="616" text-anchor="end">Paient aussi pour le parent</text>
     <path class="fleche-note" d="M852 606 C700 640 420 640 300 570"/>
   </g>

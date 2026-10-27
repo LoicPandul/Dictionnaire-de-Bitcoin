@@ -80,14 +80,14 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
   <path d="M300 112 V448 M710 112 V172 M1120 112 V172 M1120 212 V236 M1120 260 V428" style="fill:none;stroke:var(--note);stroke-width:2;stroke-dasharray:2 8"/>
   <text class="etiquette" x="32" y="203">Honnête</text>
   <rect class="structure" x="710.00" y="172" width="40" height="40"/><rect class="structure" x="756.25" y="172" width="40" height="40"/><rect class="structure" x="802.50" y="172" width="40" height="40"/><rect class="structure" x="848.75" y="172" width="40" height="40"/><rect class="structure" x="895.00" y="172" width="40" height="40"/><rect class="structure" x="941.25" y="172" width="40" height="40"/><rect class="structure" x="987.50" y="172" width="40" height="40"/><rect class="structure" x="1033.75" y="172" width="40" height="40"/><rect class="structure" x="1080.00" y="172" width="40" height="40"/>
-  <text class="secondaire" x="670" y="203" text-anchor="end">2 016 blocs</text>
+  <text class="secondaire" x="670" y="203" text-anchor="end">2 016 blocs</text>
   <path class="structure" d="M710 236 V260 M710 248 H1120 M1120 236 V260" style="fill:none"/>
   <text class="secondaire" x="915" y="296" text-anchor="middle">14 jours mesurés</text>
   <rect class="structure" x="745" y="312" width="340" height="56"/>
   <text class="etiquette" x="915" y="351" text-anchor="middle">Difficulté inchangée</text>
   <text class="etiquette" x="32" y="479">Attaque</text>
   <rect class="adversaire" x="300" y="448" width="40" height="40"/><rect class="adversaire" x="316" y="448" width="40" height="40"/><rect class="adversaire" x="332" y="448" width="40" height="40"/><rect class="adversaire" x="348" y="448" width="40" height="40"/><rect class="adversaire" x="364" y="448" width="40" height="40"/>
-  <text class="secondaire" x="428" y="479">2 015 blocs au minimum MTP</text>
+  <text class="secondaire" x="428" y="479">2 015 blocs au minimum MTP</text>
   <rect class="sujet" x="1010" y="428" width="220" height="80"/>
   <text class="nom-sujet" x="1120" y="481" text-anchor="middle">Dernier bloc</text>
   <text class="annotation" x="1230" y="548" text-anchor="end">daté maintenant + 2 h</text>

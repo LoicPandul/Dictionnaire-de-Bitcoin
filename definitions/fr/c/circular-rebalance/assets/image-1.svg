@@ -85,7 +85,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path style="fill:none;stroke:none;marker-end:url(#fin-sujet)" d="M175 331 L164.1 337"/>
     <text class="etiquette" x="296" y="268" text-anchor="middle">Paiement</text>
     <text class="etiquette" x="296" y="308" text-anchor="middle">circulaire</text>
-    <text class="secondaire" x="296" y="352" text-anchor="middle">400 000 sats</text>
+    <text class="secondaire" x="296" y="352" text-anchor="middle">400 000 sats</text>
 
     <circle class="acteur" cx="100" cy="300" r="64"/>
     <text class="etiquette" x="100" y="294" text-anchor="middle">Mon</text>
@@ -105,20 +105,20 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="secondaire" x="656" y="194">avant</text>
     <rect class="structure tirete" x="776" y="160" width="320" height="48" rx="24"/>
     <path class="valeur" d="M800 160 H1064 V208 H800 A24 24 0 0 1 800 160 Z"/>
-    <text class="etiquette" x="1112" y="196">900 000</text>
+    <text class="etiquette" x="1112" y="196">900 000</text>
     <text class="secondaire" x="656" y="258">après</text>
     <rect class="structure tirete" x="776" y="224" width="320" height="48" rx="24"/>
     <path class="valeur" d="M800 224 H936 V272 H800 A24 24 0 0 1 800 224 Z"/>
-    <text class="etiquette" x="1112" y="260">499 800</text>
+    <text class="etiquette" x="1112" y="260">499 800</text>
 
     <text class="etiquette" x="656" y="344">Canal B</text>
     <text class="secondaire" x="656" y="402">avant</text>
     <rect class="structure tirete" x="776" y="368" width="320" height="48" rx="24"/>
     <path class="valeur" d="M800 368 H808 V416 H800 A24 24 0 0 1 800 368 Z"/>
-    <text class="etiquette" x="1112" y="404">100 000</text>
+    <text class="etiquette" x="1112" y="404">100 000</text>
     <text class="secondaire" x="656" y="466">après</text>
     <rect class="structure tirete" x="776" y="432" width="320" height="48" rx="24"/>
     <path class="valeur" d="M800 432 H936 V480 H800 A24 24 0 0 1 800 432 Z"/>
-    <text class="etiquette" x="1112" y="468">500 000</text>
+    <text class="etiquette" x="1112" y="468">500 000</text>
   </g>
 </svg>

@@ -74,7 +74,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- Canal -->
     <text class="annotation" x="640" y="56" text-anchor="middle">canal d’Alice et Bob</text>
     <rect class="valeur" x="512" y="72" width="256" height="64" rx="32"/>
-    <text class="etiquette" x="640" y="115" text-anchor="middle">100 000 sats</text>
+    <text class="etiquette" x="640" y="115" text-anchor="middle">100 000 sats</text>
     <path class="flux" d="M512 104 H312 V206"/>
     <path class="flux" d="M768 104 H968 V206"/>
 
@@ -93,9 +93,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="annotation" x="200" y="420">Alice</text>
     <text class="annotation" x="456" y="420">Bob</text>
     <rect class="valeur" x="68" y="448" width="232" height="64" rx="32"/>
-    <text class="etiquette" x="184" y="491" text-anchor="middle">59 700 sats</text>
+    <text class="etiquette" x="184" y="491" text-anchor="middle">59 700 sats</text>
     <rect class="valeur" x="324" y="448" width="232" height="64" rx="32"/>
-    <text class="etiquette" x="440" y="491" text-anchor="middle">40 000 sats</text>
+    <text class="etiquette" x="440" y="491" text-anchor="middle">40 000 sats</text>
     <text class="annotation" x="312" y="560" text-anchor="middle">libres dès la confirmation</text>
 
     <!-- Forcée -->
@@ -107,7 +107,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="flux" d="M840 368 V446"/>
     <text class="annotation" x="856" y="420">Bob</text>
     <rect class="valeur" x="724" y="448" width="232" height="64" rx="32"/>
-    <text class="etiquette" x="840" y="491" text-anchor="middle">40 000 sats</text>
+    <text class="etiquette" x="840" y="491" text-anchor="middle">40 000 sats</text>
 
     <path class="flux" d="M1096 368 V646"/>
     <path class="fleche-note" style="marker-end:none" d="M1056 520 H1072 M1064 520 V640 M1056 640 H1072"/>
@@ -115,6 +115,6 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="annotation" x="1044" y="610" text-anchor="end">144 blocs</text>
     <text class="annotation" x="1112" y="620">Alice</text>
     <rect class="valeur" x="980" y="648" width="232" height="64" rx="32"/>
-    <text class="etiquette" x="1096" y="691" text-anchor="middle">59 000 sats</text>
+    <text class="etiquette" x="1096" y="691" text-anchor="middle">59 000 sats</text>
   </g>
 </svg>

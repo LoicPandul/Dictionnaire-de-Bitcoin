@@ -73,9 +73,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
   <g id="schema">
     <!-- Entrée : un seul UTXO, toute la largeur (échelle : 1 152 px pour 3 498 750 sats) -->
     <rect class="valeur" x="32" y="32" width="1216" height="64" rx="32"/>
-    <text class="etiquette" x="640" y="75" text-anchor="middle">UTXO de 3 500 000 sats</text>
+    <text class="etiquette" x="640" y="75" text-anchor="middle">UTXO de 3 500 000 sats</text>
     <path class="flux" d="M640 96 V158"/>
-    <text class="annotation" x="672" y="138">frais de minage : 1 250 sats</text>
+    <text class="annotation" x="672" y="138">frais de minage : 1 250 sats</text>
     <!-- Sujet : la Tx0, lame qui découpe -->
     <rect class="sujet" x="32" y="160" width="1216" height="96"/>
     <text class="nom-sujet" x="640" y="221" text-anchor="middle">Tx0</text>
@@ -86,11 +86,11 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="flux" d="M1141 256 V318"/>
     <path class="flux" d="M1240 256 V318"/>
     <rect class="valeur" x="32" y="320" width="329" height="64" rx="32"/>
-    <text class="etiquette" x="196" y="363" text-anchor="middle">1 000 250 sats</text>
+    <text class="etiquette" x="196" y="363" text-anchor="middle">1 000 250 sats</text>
     <rect class="valeur" x="377" y="320" width="329" height="64" rx="32"/>
-    <text class="etiquette" x="541" y="363" text-anchor="middle">1 000 250 sats</text>
+    <text class="etiquette" x="541" y="363" text-anchor="middle">1 000 250 sats</text>
     <rect class="valeur" x="722" y="320" width="329" height="64" rx="32"/>
-    <text class="etiquette" x="886" y="363" text-anchor="middle">1 000 250 sats</text>
+    <text class="etiquette" x="886" y="363" text-anchor="middle">1 000 250 sats</text>
     <rect class="valeur" x="1067" y="320" width="149" height="64" rx="32"/>
     <rect class="valeur" x="1232" y="320" width="16" height="64" rx="8"/>
     <!-- Premix -->
@@ -100,10 +100,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- Doxxic change -->
     <path class="structure" style="fill:none" d="M1141 384 V440"/>
     <text class="etiquette" x="1216" y="480" text-anchor="end">Doxxic change</text>
-    <text class="secondaire" x="1216" y="520" text-anchor="end">448 000 sats</text>
+    <text class="secondaire" x="1216" y="520" text-anchor="end">448 000 sats</text>
     <!-- Frais du coordinateur -->
     <path class="structure" style="fill:none" d="M1240 384 V560"/>
     <text class="etiquette" x="1248" y="600" text-anchor="end">Frais du coordinateur</text>
-    <text class="secondaire" x="1248" y="640" text-anchor="end">50 000 sats</text>
+    <text class="secondaire" x="1248" y="640" text-anchor="end">50 000 sats</text>
   </g>
 </svg>

@@ -80,7 +80,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="secondaire" x="450" y="200" text-anchor="middle">546 sats, adresse A</text>
     <text class="secondaire" x="450" y="336" text-anchor="middle">546 sats, adresse B</text>
     <rect class="valeur" x="320" y="368" width="260" height="64" rx="32"/>
-    <text class="etiquette" x="450" y="411" text-anchor="middle">80 000 sats</text>
+    <text class="etiquette" x="450" y="411" text-anchor="middle">80 000 sats</text>
     <text class="secondaire" x="450" y="472" text-anchor="middle">adresse C</text>
     <!-- Attaquant -->
     <circle class="adversaire" cx="140" cy="196" r="72"/>
@@ -96,7 +96,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="secondaire" x="808" y="296" text-anchor="middle">3 entrées</text>
     <path class="flux" d="M912 264 H986"/>
     <rect class="valeur" x="988" y="232" width="260" height="64" rx="32"/>
-    <text class="etiquette" x="1118" y="275" text-anchor="middle">80 092 sats</text>
+    <text class="etiquette" x="1118" y="275" text-anchor="middle">80 092 sats</text>
     <!-- Conclusion de l'attaquant -->
     <path class="fleche-note" d="M760 528 Q795 500 806 442"/>
     <text class="annotation" x="1248" y="568" text-anchor="end">l'attaquant en déduit : A, B et C ont un seul propriétaire</text>

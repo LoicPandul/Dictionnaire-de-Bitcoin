@@ -76,7 +76,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- Exemple : un UTXO (valeur) entre dans une transaction (sujet). À remplacer. -->
   <g id="schema">
     <rect class="structure" x="32" y="32" width="320" height="144"/>
-    <text class="etiquette" x="192" y="96" text-anchor="middle">Bloc 91 722</text>
+    <text class="etiquette" x="192" y="96" text-anchor="middle">Bloc 91 722</text>
     <text class="secondaire" x="192" y="140" text-anchor="middle">coinbase</text>
 
     <rect class="sujet" x="448" y="32" width="384" height="144"/>
@@ -84,7 +84,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="mono sur-sujet" x="640" y="144" text-anchor="middle">e3bf3d07…b468</text>
 
     <rect class="structure" x="928" y="32" width="320" height="144"/>
-    <text class="etiquette" x="1088" y="96" text-anchor="middle">Bloc 91 880</text>
+    <text class="etiquette" x="1088" y="96" text-anchor="middle">Bloc 91 880</text>
     <text class="secondaire" x="1088" y="140" text-anchor="middle">coinbase</text>
 
     <path class="lien" d="M352 104 H446"/>
@@ -108,7 +108,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="720" y="464" width="240" height="64" rx="32"/>
     <text class="etiquette" x="840" y="507" text-anchor="middle">50 BTC</text>
     <path class="barre" d="M780 495 H900"/>
-    <text class="annotation" x="688" y="487" text-anchor="end">UTXO du bloc 91 722</text>
+    <text class="annotation" x="688" y="487" text-anchor="end">UTXO du bloc 91 722</text>
     <text class="annotation" x="688" y="527" text-anchor="end">écrasé, perdu à jamais</text>
   </g>
 </g></svg>

@@ -2,4 +2,6 @@
 
 La cause la plus fréquente est le dépassement de la taille maximale autorisée pour la mempool. Dans Bitcoin Core, cette limite est fixée par défaut à 300 Mo via le paramètre `maxmempool`. Quand ce seuil est atteint, les transactions qui offrent le taux de frais le plus faible sont évincées en priorité afin de conserver uniquement celles qui ont le plus de chances d'être incluses dans un prochain bloc. Une transaction peut également être purgée si elle reste en attente trop longtemps sans être confirmée. Par défaut, cette durée d'expiration est de 336 heures, soit 14 jours, via le paramètre `mempoolexpiry`.
 
+![Une mempool pleine à sa limite de 300 Mo (paramètre maxmempool) range ses transactions par taux de frais : quand une nouvelle transaction arrive, celles qui paient le moins sont évincées.](./assets/image-1.png)
+
 Une transaction purgée n'est pas définitivement annulée. Elle peut être rediffusée sur le réseau par son émetteur ou par un autre nœud qui la conserve encore dans sa propre mempool. La purge est un mécanisme de gestion locale des ressources, et non un rejet définitif par le protocole.

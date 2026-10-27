@@ -6,6 +6,8 @@ limite = (taille entrée + taille sortie) * taux de frais
 
 Comme le taux de frais requis pour qu'une transaction soit incluse dans un bloc Bitcoin varie constamment, le paramètre `DustRelayFee` permet de définir le taux de frais utilisé dans ce calcul par chaque nœud. Par défaut, sur Bitcoin Core, cette valeur est fixée à 3 000 sats/kvB. Par exemple, pour calculer la limite de poussière d'une entrée et d'une sortie P2PKH, qui mesurent respectivement 148 et 34 octets, le calcul serait : 
 
+![Calcul du seuil de poussière d'une sortie P2PKH sur Bitcoin Core : 182 octets (une entrée de 148 octets et une sortie de 34 octets) multipliés par le DustRelayFee par défaut de 3 sat/vB donnent 546 sats.](./assets/image-1.png)
+
 ```text
 limite (sats) = (148 + 34) * 3000 / 1000 = 546 sats
 ```

@@ -73,7 +73,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
   <g id="schema">
     <!-- Rangée 1 -->
     <rect class="valeur" x="32" y="112" width="320" height="64" rx="32"/>
-    <text class="etiquette" x="192" y="155" text-anchor="middle">50 000 sats</text>
+    <text class="etiquette" x="192" y="155" text-anchor="middle">50 000 sats</text>
     <text class="mono" x="192" y="224" text-anchor="middle">a1b2c3d4…f9e0:0</text>
     <path class="flux" d="M352 144 H452"/>
     <rect class="structure" x="456" y="96" width="368" height="96"/>
@@ -81,7 +81,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="flux" d="M824 144 H924"/>
     <text class="etiquette" x="1088" y="92" text-anchor="middle">Bob</text>
     <rect class="valeur" x="928" y="112" width="320" height="64" rx="32"/>
-    <text class="etiquette" x="1088" y="155" text-anchor="middle">49 000 sats</text>
+    <text class="etiquette" x="1088" y="155" text-anchor="middle">49 000 sats</text>
 
     <!-- Signature -->
     <rect class="sujet" x="392" y="292" width="496" height="96" rx="8"/>
@@ -92,14 +92,14 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- Rangée 2 -->
     <text class="mono" x="192" y="480" text-anchor="middle">7e5f9a01…3c2d:1</text>
     <rect class="valeur" x="32" y="504" width="320" height="64" rx="32"/>
-    <text class="etiquette" x="192" y="547" text-anchor="middle">50 000 sats</text>
+    <text class="etiquette" x="192" y="547" text-anchor="middle">50 000 sats</text>
     <path class="flux" d="M352 536 H452"/>
     <rect class="structure" x="456" y="488" width="368" height="96"/>
     <text class="etiquette" x="640" y="547" text-anchor="middle">Transaction 2</text>
     <path class="flux" d="M824 536 H924"/>
     <text class="etiquette" x="1088" y="484" text-anchor="middle">Bob</text>
     <rect class="valeur" x="928" y="504" width="320" height="64" rx="32"/>
-    <text class="etiquette" x="1088" y="547" text-anchor="middle">49 000 sats</text>
+    <text class="etiquette" x="1088" y="547" text-anchor="middle">49 000 sats</text>
 
     <!-- Annotations -->
     <text class="annotation" x="192" y="336" text-anchor="middle">outpoints différents :</text>

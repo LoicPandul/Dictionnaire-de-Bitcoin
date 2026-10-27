@@ -87,7 +87,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- 1. Le HTLC arrive et s'arrête au LSP -->
     <path class="flux" d="M152 256 H636"/>
     <rect class="valeur" x="268" y="224" width="256" height="64" rx="32"/>
-    <text class="etiquette" x="396" y="267" text-anchor="middle">100 000 sats</text>
+    <text class="etiquette" x="396" y="267" text-anchor="middle">100 000 sats</text>
     <text class="annotation" x="664" y="266">HTLC intercepté</text>
     <!-- 2. Le LSP ouvre le canal JIT -->
     <rect class="sujet" x="640" y="336" width="488" height="88"/>
@@ -96,9 +96,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <!-- 3. Transfert moins les frais -->
     <path class="flux" d="M640 544 H1124"/>
     <rect class="valeur" x="764" y="512" width="240" height="64" rx="32"/>
-    <text class="etiquette" x="884" y="555" text-anchor="middle">98 000 sats</text>
+    <text class="etiquette" x="884" y="555" text-anchor="middle">98 000 sats</text>
     <rect class="valeur" x="392" y="512" width="216" height="64" rx="32"/>
-    <text class="etiquette" x="500" y="555" text-anchor="middle">2 000 sats</text>
+    <text class="etiquette" x="500" y="555" text-anchor="middle">2 000 sats</text>
     <text class="annotation" x="496" y="616" text-anchor="middle">frais d'ouverture</text>
     <text class="annotation" x="496" y="656" text-anchor="middle">retenus par le LSP</text>
     <!-- 4. Préimage -->
