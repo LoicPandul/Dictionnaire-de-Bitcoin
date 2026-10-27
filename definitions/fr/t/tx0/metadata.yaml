@@ -5,4 +5,6 @@ category: "CONFIDENTIALITÉ"
 cross_references:
   - "34d344e0-ddb8-4e09-828f-f5820377e360"
   - "c2692ce0-d5b4-493b-a63d-9b6f104acf01"
+assets:
+  - filename: "image-1.png"
 version: "1"
