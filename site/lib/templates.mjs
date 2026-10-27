@@ -5,38 +5,34 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { url, site, palette } from '../config.mjs';
 import { escapeHtml as h } from './markdown.mjs';
-import { compareFr } from './content.mjs';
+import { t, lien, chemins, LANGUES, categoryLabel, partieTitre, partieIntro } from './i18n.mjs';
 
+export { categoryLabel };
 const here = path.dirname(fileURLToPath(import.meta.url));
 const advances = JSON.parse(fs.readFileSync(path.join(here, 'archivo-advances.json'), 'utf8'));
-const JAQ = JSON.parse(fs.readFileSync(path.join(here, 'jaquette.json'), 'utf8'));
+const ALLEE = JSON.parse(fs.readFileSync(path.join(here, 'allee.json'), 'utf8'));
 
-const nf = new Intl.NumberFormat('fr-FR');
-export const num = (n) => nf.format(n);
-const plural = (n, one, many) => `${num(n)} ${n > 1 ? many : one}`;
-const ordinal = (n) => (n === 1 ? 'premier' : `${num(n)}<sup>e</sup>`);
-const NB = ' ';
-
-// Nom de catégorie lisible : « ÉCONOMIE ET RÉGULATION » -> « Économie et régulation ».
-const KEEP_UPPER = new Set(['BIP', 'RGB']);
-export function categoryLabel(name) {
-  if (KEEP_UPPER.has(name)) return name;
-  return name
-    .toLocaleLowerCase('fr')
-    .replace(/^./, (c) => c.toLocaleUpperCase('fr'))
-    .replace(/lightning network/i, 'Lightning Network');
-}
+export const num = (n) => new Intl.NumberFormat(t.locale).format(n);
+// plural(n, ['mot', 'mots']) -> « 3 mots ».
+const plural = (n, [one, many]) => `${num(n)}\u00a0${n > 1 ? many : one}`;
+const ordinal = (n) => (n === 1 ? t.premier : t.ordinal(num(n)));
+const NB = '\u00a0';
+const FR_PATHS = chemins(LANGUES.fr);
+const EN_PATHS = chemins(LANGUES.en);
+const autres = () => (t.code === 'fr' ? EN_PATHS : FR_PATHS);
+// Comparaison des titres dans la langue de la page.
+const compareTitres = (a, b) => a.localeCompare(b, t.code, { sensitivity: 'base', numeric: true });
 
 // ---------------------------------------------------------------- Pictogrammes
+// Les pictogrammes 2027 du livre (assets/pictograms, traits de 2 px sur une grille de 24),
+// un par catégorie d'après templates/parts.yaml. setPictos() les reçoit du build.
 // Les symboles utilisés par une page sont intégrés une seule fois en tête du <body>.
-const pictoDir = path.join(here, '..', 'static', 'img', 'pictos');
-const PICTOS = new Map(
-  fs.readdirSync(pictoDir)
-    .filter((f) => f.endsWith('.svg'))
-    .map((f) => [f.slice(0, -4), fs.readFileSync(path.join(pictoDir, f), 'utf8').match(/ d="([^"]+)"/)[1]]),
-);
-export const pictoSprite = () =>
-  `<svg xmlns="http://www.w3.org/2000/svg">${[...PICTOS].map(([k, d]) => `<symbol id="p-${k}" viewBox="0 0 100 100"><path d="${d}"/></symbol>`).join('')}</svg>`;
+let PICTOS = new Map();
+export function setPictos(map) {
+  PICTOS = map;
+}
+const symbole = (k) => `<symbol id="p-${k}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">${PICTOS.get(k)}</symbol>`;
+export const pictoSprite = () => `<svg xmlns="http://www.w3.org/2000/svg">${[...PICTOS.keys()].map(symbole).join('')}</svg>`;
 
 function pictoCollector() {
   const used = new Set();
@@ -45,10 +41,7 @@ function pictoCollector() {
     used.add(slug);
     return `<svg class="${cls}" aria-hidden="true" focusable="false"><use href="#p-${slug}"/></svg>`;
   };
-  const defs = () =>
-    used.size
-      ? `<svg class="defs" aria-hidden="true" focusable="false">${[...used].map((k) => `<symbol id="p-${k}" viewBox="0 0 100 100"><path d="${PICTOS.get(k)}"/></symbol>`).join('')}</svg>`
-      : '';
+  const defs = () => (used.size ? `<svg class="defs" aria-hidden="true" focusable="false">${[...used].map(symbole).join('')}</svg>` : '');
   return { use, defs };
 }
 
@@ -110,10 +103,19 @@ const headwordWords = (title) => {
 };
 
 // ---------------------------------------------------------------- Tête de page
-function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = palette.blanc, type = 'website', preloadImage = '', extraJs = '' }) {
-  const canonical = `${url}${p}`;
+// alt : le chemin de la même page dans l'autre langue (null : pas d'équivalent).
+// canonique : un autre chemin canonique (une page anglaise pas encore traduite renvoie au français).
+function head({ title, description, path: p, jsonLd = '', math = false, assets, themeColor = palette.blanc, type = 'website', preloadImage = '', extraJs = '', alt = null, canonique = null, robots = '' }) {
+  const canonical = `${url}${canonique || p}`;
+  const [fr, en] = t.code === 'fr' ? [p, alt] : [alt, p];
+  const alternates = alt && !canonique
+    ? `<link rel="alternate" hreflang="fr" href="${url}${fr}">
+<link rel="alternate" hreflang="en" href="${url}${en}">
+<link rel="alternate" hreflang="x-default" href="${url}${fr}">
+`
+    : '';
   return `<!doctype html>
-<html lang="fr">
+<html lang="${t.code}" data-base="${t.base}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -121,18 +123,19 @@ function head({ title, description, path: p, jsonLd = '', math = false, assets, 
 <title>${h(title)}</title>
 <meta name="description" content="${h(description)}">
 <link rel="canonical" href="${canonical}">
+${alternates}${robots ? `<meta name="robots" content="${robots}">\n` : ''}
 <meta name="theme-color" content="${themeColor}">
 <meta name="color-scheme" content="light dark">
 <meta property="og:type" content="${type}">
-<meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="${h(site.title)}">
+<meta property="og:locale" content="${t.og}">
+<meta property="og:site_name" content="${h(t.marque)}">
 <meta property="og:title" content="${h(title)}">
 <meta property="og:description" content="${h(description)}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${url}/img/carte-sociale.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Dictionnaire de Bitcoin : le banian de la couverture 2027, ses racines blanches sur fond figue">
+<meta property="og:image:alt" content="${h(t.ogAlt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Loic_Pandul">
 <meta name="author" content="${h(site.author)}">
@@ -149,56 +152,75 @@ ${extraJs ? `<script src="${extraJs}" defer></script>\n` : ''}${jsonLd}
 
 // ---------------------------------------------------------------- Navigation commune
 // Lettres et catégories, données une fois par le build, pour le menu de toutes les pages.
-let NAV = { letters: new Map(), categories: [] };
-export function setNavigation(letters, categories) {
-  NAV = { letters, categories };
+let NAV = { letters: new Map(), categories: [], parts: [] };
+export function setNavigation(letters, categories, parts) {
+  NAV = { letters, categories, parts };
 }
 
 // ---------------------------------------------------------------- Barre
 const loupe = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.2 15.2 5.3 5.3" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>`;
 const lune = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="ico-lune" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="currentColor"/><g class="ico-soleil" fill="currentColor"><circle cx="12" cy="12" r="4.2"/><path d="M11 1.5h2v3h-2zM11 19.5h2v3h-2zM1.5 11h3v2h-3zM19.5 11h3v2h-3zM4.2 5.6l1.4-1.4 2.1 2.1-1.4 1.4zM16.3 17.7l1.4-1.4 2.1 2.1-1.4 1.4zM4.2 18.4l2.1-2.1 1.4 1.4-2.1 2.1zM16.3 6.3l2.1-2.1 1.4 1.4-2.1 2.1z"/></g></svg>`;
 
-function bar({ home = false, current = '' } = {}) {
+// Le bouton de langue : la même page dans l'autre langue (l'accueil si elle n'a pas d'équivalent).
+function langue(alt) {
+  const autre = t.code === 'fr' ? LANGUES.en : LANGUES.fr;
+  const href = alt || autres().accueil();
+  return `<a class="bouton-langue" href="${href}" hreflang="${autre.code}" lang="${autre.code}" data-langue="${autre.code}"><span class="masque">${h(t.autreLangue)} : </span><span aria-hidden="true">${t.court}<span class="langue-sep">/</span><b>${autre.court}</b></span></a>`;
+}
+
+function bar({ home = false, current = '', alt = null } = {}) {
   const cur = (k) => (current === k ? ' aria-current="page"' : '');
-  return `<a class="evitement" href="#contenu">Aller au contenu</a>
+  return `<a class="evitement" href="#contenu">${t.allerContenu}</a>
 <header class="barre${home ? ' barre--jaquette' : ''}" data-barre>
-  <a class="marque" href="/"${home ? ' aria-current="page"' : ''}>Dictionnaire de Bitcoin</a>
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="#lettres">Lettres</a>
-    <a href="/#categories"${cur('categories')}>Catégories</a>
-    <a href="/#livre">Le livre</a>
+  <a class="marque" href="${lien.accueil()}"${home ? ' aria-current="page"' : ''}>${h(t.marque)}</a>
+  <nav class="nav" aria-label="${t.navPrincipale}">
+    <a href="${lien.accueil()}#categories"${cur('categories')}>${t.categories}</a>
+    <a href="${lien.chronologie()}"${cur('chronologie')}>${t.chronologie}</a>
+    <a href="${lien.specs()}"${cur('specs')}>${t.specifications}</a>
+    <a href="${lien.accueil()}#livre">${t.livre}</a>
   </nav>
   <div class="barre-actions">
-    <button class="bouton-recherche" type="button" data-search-open aria-haspopup="dialog" aria-controls="recherche" aria-label="Rechercher un mot">${loupe}<span class="bouton-recherche-mot">Rechercher</span><kbd data-kbd>Ctrl${NB}K</kbd></button>
-    <button class="bouton-theme" type="button" data-theme-toggle aria-label="Changer de thème (clair ou sombre)">${lune}</button>
-    <button class="bouton-menu" type="button" data-menu-open aria-haspopup="dialog" aria-controls="menu" aria-label="Menu : lettres, catégories, recherche"><span class="bouton-menu-traits" aria-hidden="true"></span><span class="bouton-menu-mot">Menu</span></button>
+    <button class="bouton-recherche" type="button" data-search-open aria-haspopup="dialog" aria-controls="recherche" aria-label="${t.rechercherMot}">${loupe}<span class="bouton-recherche-mot">${t.rechercher}</span><kbd data-kbd>Ctrl${NB}K</kbd></button>
+    ${langue(alt)}
+    <button class="bouton-theme" type="button" data-theme-toggle aria-label="${t.theme}">${lune}</button>
+    <button class="bouton-menu" type="button" data-menu-open aria-haspopup="dialog" aria-controls="menu" aria-label="${t.menuAria}"><span class="bouton-menu-traits" aria-hidden="true"></span><span class="bouton-menu-mot">${t.menu}</span></button>
   </div>
 </header>`;
 }
 
 // ---------------------------------------------------------------- Menu (téléphone et tablette)
-function menuDialog() {
+// Le menu se remplit à l'ouverture (static/js/site.js) depuis ce modèle : les pages ne portent
+// pas chacune la liste des catégories.
+function menuDialog(alt) {
   const lettres = [...NAV.letters.entries()]
-    .map(([l, d]) => (d.length ? `<li><a href="/lettre/${l.toLowerCase()}/" aria-label="Lettre ${l}, ${plural(d.length, 'mot', 'mots')}">${l}</a></li>` : `<li><span aria-hidden="true">${l}</span></li>`))
+    .map(([l, d]) => (d.length ? `<li><a href="${lien.lettre(l)}" aria-label="${t.lettreAria(l, plural(d.length, t.mot))}">${l}</a></li>` : `<li><span aria-hidden="true">${l}</span></li>`))
     .join('');
-  const cats = NAV.categories
-    .map((c) => `<li><a href="/categorie/${c.slug}/"><svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${c.slug}"/></svg><span>${h(categoryLabel(c.name))}</span><span class="menu-n">${num(c.defs.length)}</span></a></li>`)
-    .join('');
+  const parties = NAV.parts
+    .filter((p) => p.cats.length)
+    .map((p) => `<h3 class="menu-sous">${h(partieTitre(p))}</h3>
+    <ul class="menu-cats">${p.cats
+      .map((c) => `<li><a href="${lien.categorie(c)}"><svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${c.slug}"/></svg><span>${h(categoryLabel(c.name))}</span><span class="menu-n">${num(c.defs.length)}</span></a></li>`)
+      .join('')}</ul>`)
+    .join('\n    ');
   return `<dialog class="menu" id="menu" aria-labelledby="menu-titre">
   <div class="menu-panneau">
     <div class="menu-tete">
-      <h2 class="menu-titre" id="menu-titre">Parcourir</h2>
-      <button class="recherche-fermer" type="button" data-menu-close>Fermer</button>
+      <h2 class="menu-titre" id="menu-titre">${t.parcourir}</h2>
+      <button class="recherche-fermer" type="button" data-menu-close>${t.fermer}</button>
     </div>
-    <button class="menu-cherche" type="button" data-search-open>${loupe}<span>Rechercher un mot</span></button>
-    <h3 class="menu-sous">Les lettres</h3>
+    <button class="menu-cherche" type="button" data-search-open>${loupe}<span>${t.rechercherMot}</span></button>
+    <ul class="menu-liens menu-liens--haut">
+      <li><a href="${lien.chronologie()}">${t.chronologie}</a></li>
+      <li><a href="${lien.specs()}">${t.specifications}</a></li>
+      <li><a href="${alt || autres().accueil()}" hreflang="${t.code === 'fr' ? 'en' : 'fr'}">${t.autreLangue}</a></li>
+    </ul>
+    <h3 class="menu-sous">${t.lesLettres}</h3>
     <ol class="abc">${lettres}</ol>
-    <h3 class="menu-sous">Les catégories</h3>
-    <ul class="menu-cats">${cats}</ul>
+    ${parties}
     <ul class="menu-liens">
-      <li><a href="/">Accueil</a></li>
-      <li><a href="/#livre">Le livre imprimé</a></li>
-      <li><a href="${site.pdf}" download>PDF gratuit</a></li>
+      <li><a href="${lien.accueil()}">${t.accueil}</a></li>
+      <li><a href="${lien.accueil()}#livre">${t.livreImprime}</a></li>
+      <li><a href="${site.pdf}" download>${t.pdfGratuit}</a></li>
       <li><a href="${site.github}" rel="noopener">GitHub</a></li>
     </ul>
   </div>
@@ -222,16 +244,16 @@ function azIndex({ current = null, hrefFor, label }) {
 function searchDialog() {
   return `<dialog class="recherche" id="recherche" aria-labelledby="recherche-titre">
   <div class="recherche-panneau">
-    <h2 class="masque" id="recherche-titre">Rechercher dans le dictionnaire</h2>
-    <form class="recherche-champ" role="search" action="/recherche/" method="get">
+    <h2 class="masque" id="recherche-titre">${t.rechercheTitre}</h2>
+    <form class="recherche-champ" role="search" action="${lien.recherche()}" method="get">
       ${loupe}
-      <label class="masque" for="recherche-q">Terme à chercher</label>
+      <label class="masque" for="recherche-q">${t.termeAChercher}</label>
       <input id="recherche-q" name="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
-        placeholder="UTXO, Taproot…" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="recherche-resultats">
-      <button class="recherche-fermer" type="button" data-search-close>Fermer</button>
+        placeholder="${t.exemple}" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="recherche-resultats">
+      <button class="recherche-fermer" type="button" data-search-close>${t.fermer}</button>
     </form>
     <p class="recherche-etat" role="status" aria-live="polite"></p>
-    <ul class="resultats" id="recherche-resultats" role="listbox" aria-label="Résultats"></ul>
+    <ul class="resultats" id="recherche-resultats" role="listbox" aria-label="${t.resultats}"></ul>
   </div>
 </dialog>`;
 }
@@ -242,62 +264,72 @@ function footer(letters, total, { home = false } = {}) {
   const items = [...letters.entries()]
     .map(([l, defs], i) =>
       defs.length
-        ? `<li><a href="/lettre/${l.toLowerCase()}/" style="--i:${i}" aria-label="Lettre ${l}, ${plural(defs.length, 'mot', 'mots')}"><span class="dos-l" aria-hidden="true">${l}</span><span class="dos-n" aria-hidden="true">${num(defs.length)}</span></a></li>`
+        ? `<li><a href="${lien.lettre(l)}" style="--i:${i}" aria-label="${t.lettreAria(l, plural(defs.length, t.mot))}"><span class="dos-l" aria-hidden="true">${l}</span><span class="dos-n" aria-hidden="true">${num(defs.length)}</span></a></li>`
         : `<li><span class="dos-vide" aria-hidden="true"><span class="dos-l">${l}</span></span></li>`,
     )
     .join('');
   // L'accueil garde le grand alphabet animé ; ailleurs, une rangée compacte (la barre A–Z ou le menu font le reste).
   const tete = home
     ? `<div class="dos-tete">
-    <h2 class="dos-titre">De A à Z</h2>
-    <p class="dos-phrase">${num(total)} mots, classés comme dans le livre.</p>
+    <h2 class="dos-titre">${t.deAaZ}</h2>
+    <p class="dos-phrase">${t.dosPhrase(num(total))}</p>
   </div>`
-    : `<h2 class="dos-court">Toutes les lettres</h2>`;
+    : `<h2 class="dos-court">${t.toutesLettres}</h2>`;
   return `<footer class="dos${home ? '' : ' dos--court'}" id="lettres">
   ${tete}
-  <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="Toutes les lettres"><ol class="abc">${items}</ol></nav>
+  <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="${t.toutesLettres}"><ol class="abc">${items}</ol></nav>
   <div class="dos-pied">
-    <p class="dos-marque">${h(site.title)}, ${h(site.author)}, édition ${site.edition}</p>
+    <p class="dos-marque">${h(t.marque)}, ${h(site.author)}, ${t.edition(site.edition)}</p>
     <ul class="dos-liens">
-      <li><a href="${site.pdf}" download>PDF gratuit</a></li>
+      <li><a href="${lien.chronologie()}">${t.chronologie}</a></li>
+      <li><a href="${lien.specs()}">${t.specifications}</a></li>
+      <li><a href="${site.pdf}" download>${t.pdfGratuit}</a></li>
       <li><a href="${site.bitcoinBazar}" rel="noopener">Bitcoin Bazar</a></li>
       <li><a href="${site.amazon}" rel="noopener">Amazon</a></li>
       <li><a href="${site.github}" rel="noopener">GitHub</a></li>
       <li><a href="${site.authorUrl}" rel="author">pandul.fr</a></li>
       <li><a href="${site.authorX}" rel="noopener">X (Twitter)</a></li>
     </ul>
-    <p class="dos-legal">© ${year} ${h(site.author)}. Textes sous licence <a href="${site.licenseUrl}" rel="license noopener">${site.license}</a>. Polices Archivo et Atkinson Hyperlegible Mono sous licence OFL.</p>
+    <p class="dos-legal">${t.legal(year, h(site.author), `<a href="${site.licenseUrl}" rel="license noopener">${site.license}</a>`)}</p>
   </div>
 </footer>`;
 }
 
 // Page complète : barre, contenu, dos, recherche.
 function page({ headOpts, body, bodyClass, picto, letters, total, home = false, current = '' }) {
+  const alt = headOpts.alt || null;
   return `${head(headOpts)}
 <body class="${bodyClass}">
 ${picto.defs()}
-${bar({ home, current })}
+${bar({ home, current, alt })}
 <main id="contenu">
 ${body}
 </main>
 ${footer(letters, total, { home })}
 ${searchDialog()}
-${menuDialog()}
+${menuDialog(alt)}
+<script type="application/json" id="i18n">${JSON.stringify(t.js).replace(/</g, '\\u003c')}</script>
 </body>
 </html>
 `;
 }
 
+// La page d'une partie ; la partie « Spécifications » mène aux résumés des spécifications.
+const lienPartie = (p) => (p.id === 'specifications' ? lien.specs() : lien.partie(p.id));
+
 // ---------------------------------------------------------------- Morceaux de listes
+// Le texte d'une définition pas encore traduite reste en français : on le signale par lang="fr".
+const langAttr = (d) => (d.lang && d.lang !== t.code ? ` lang="${d.lang}"` : '');
+const resumeDe = (d) => d.resume || d.description || '';
 // Données de la carte d'aperçu au survol (nom, catégorie, définition courte).
-const apercuAttr = (d) => (d.description ? ` data-apercu="${hd(d.description)}" data-apercu-cat="${h(categoryLabel(d.category))}" data-apercu-nom="${h(affiche(d.title))}"` : '');
+const apercuAttr = (d) => (resumeDe(d) ? ` data-apercu="${hd(resume(resumeDe(d), 220))}" data-apercu-cat="${h(categoryLabel(d.category))}" data-apercu-nom="${h(affiche(d.title))}"` : '');
 // Une entrée de liste : nom, catégorie, une ligne de description.
 function entry(def, picto, { showCategory = true } = {}) {
-  const bip = /^BIP-\d/.test(def.title);
-  const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
-  return `<li><a class="entree" href="/${def.slug}/"${apercuAttr(def)}>
+  const bip = /^BIP-\d/.test(def.titleFr || def.title);
+  const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.titleFr || r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
+  return `<li><a class="entree" href="${lien.def(def.slug)}"${apercuAttr(def)}>
   <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}</span>${sujet ? `<span class="entree-sujet">${sujet}</span>` : ''}
-  ${def.description ? `<span class="entree-desc">${hd(resume(def.description, 120))}</span>` : ''}
+  ${resumeDe(def) ? `<span class="entree-desc"${langAttr(def)}>${hd(resume(resumeDe(def), 120))}</span>` : ''}
 </a></li>`;
 }
 
@@ -308,7 +340,9 @@ function bipKey(title) {
   const m = title.match(/^BIP-?(\d{4})/);
   if (!m) return null;
   const c = Math.floor(Number(m[1]) / 100) * 100;
-  return { key: `BIP-${String(c).padStart(4, '0')}`, label: `BIP-${String(c).padStart(4, '0')} à ${String(c + 99).padStart(4, '0')}` };
+  const a = String(c).padStart(4, '0');
+  const b = String(c + 99).padStart(4, '0');
+  return { key: `BIP-${a}`, label: t.code === 'fr' ? `BIP-${a} à ${b}` : `BIP-${a} to ${b}` };
 }
 function groupEntries(defs, mode) {
   const raw = [];
@@ -319,9 +353,9 @@ function groupEntries(defs, mode) {
     if (b) ({ key, label } = b);
     else if (mode === 'deux') {
       // Les deux premières lettres ; un titre dont le second signe n'est pas une lettre (B-MONEY)
-      // est trié en tête par le classement français : il rejoint le premier groupe de sa lettre.
-      const t = norm(d.title);
-      key = /[A-Z0-9]/.test(t[1] || '') ? t.slice(0, 2) : `${t[0]}A`;
+      // est trié en tête par le classement : il rejoint le premier groupe de sa lettre.
+      const tt = norm(d.title);
+      key = /[A-Z0-9]/.test(tt[1] || '') ? tt.slice(0, 2) : `${tt[0]}A`;
       label = key;
     } else {
       const f = norm(d.title)[0];
@@ -368,58 +402,101 @@ function groupedList(defs, picto, { mode, showCategory = true, labelPrefix = '' 
     .map((g, i) => {
       const id = `groupe-${i + 1}`;
       return `<section class="groupe" aria-labelledby="${id}">
-  <div class="groupe-tete"><h2 class="groupe-titre" id="${id}"><span class="masque">${labelPrefix}</span>${h(g.label)}</h2><p class="groupe-n">${plural(g.defs.length, 'mot', 'mots')}</p></div>
+  <div class="groupe-tete"><h2 class="groupe-titre" id="${id}"><span class="masque">${labelPrefix}</span>${h(g.label)}</h2><p class="groupe-n">${plural(g.defs.length, t.mot)}</p></div>
   <ul class="entrees">${g.defs.map((d) => entry(d, picto, { showCategory })).join('\n')}</ul>
 </section>`;
     })
     .join('\n');
 }
 
+// Texte court en Markdown d'une ligne (chronologie, résumés de spécifications) : italique, code, liens.
+const enLigne = (s) =>
+  h(fr(s))
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+
+// Date de la chronologie : « 2015-01-04 » -> « 4 janvier 2015 », « 1978-02 » -> « février 1978 ».
+export function dateLisible(d) {
+  const [a, m, j] = d.split('-');
+  if (j) return t.dateLongue(Number(j), t.mois[Number(m) - 1], a);
+  if (m) return `${t.mois[Number(m) - 1]} ${a}`;
+  return a;
+}
+export const ancreEvenement = (e, i) => `d-${e.date}-${i}`;
+
 // ---------------------------------------------------------------- Définition
-export function definitionPage(def, { html, math, assets, jsonLd, total, letters }) {
+// liens : { chrono: [événements liés], spec: entrée de spécification consacrée au mot }.
+export function definitionPage(def, { html, math, assets, jsonLd, total, letters, liens = {} }) {
   const picto = pictoCollector();
   const cat = categoryLabel(def.category);
   const letter = def.letter;
   const letterCount = letters.get(letter)?.length || 0;
+  const nonTraduite = def.lang !== t.code;
   const tags = [
-    `<li><a class="etiquette" href="/categorie/${def.categorySlug}/">${picto.use(def.categorySlug)}${h(cat)}</a></li>`,
-    def.englishTerm ? `<li class="etiquette etiquette--langue"><span class="etiquette-cle">En anglais</span> <span lang="en">${h(def.englishTerm)}</span></li>` : '',
-    def.frenchTerm ? `<li class="etiquette etiquette--langue"><span class="etiquette-cle">En français</span> ${h(def.frenchTerm)}</li>` : '',
+    `<li><a class="etiquette" href="${lien.categorie({ name: def.category, slug: def.categorySlug })}">${picto.use(def.categorySlug)}${h(cat)}</a></li>`,
+    def.englishTerm && t.code === 'fr' ? `<li class="etiquette etiquette--langue"><span class="etiquette-cle">${t.enAnglais}</span> <span lang="en">${h(def.englishTerm)}</span></li>` : '',
+    def.frenchTerm ? `<li class="etiquette etiquette--langue"><span class="etiquette-cle">${t.enFrancais}</span> <span lang="fr">${h(def.frenchTerm)}</span></li>` : '',
+    t.code === 'en' && def.titleFr !== def.title && !def.frenchTerm ? `<li class="etiquette etiquette--langue"><span class="etiquette-cle">${t.enFrancais}</span> <span lang="fr">${h(affiche(def.titleFr))}</span></li>` : '',
   ].join('');
 
-  const renvoi = (r) => `<li><a class="renvoi" href="/${r.slug}/">
+  const renvoi = (r) => `<li><a class="renvoi" href="${lien.def(r.slug)}">
   <span class="renvoi-nom" data-vt-nom>${breakable(r.title)}</span>
   <span class="renvoi-cat">${picto.use(r.categorySlug)}${h(categoryLabel(r.category))}</span>
-  ${r.description ? `<span class="renvoi-desc">${hd(resume(r.description, 120))}</span>` : ''}
+  ${resumeDe(r) ? `<span class="renvoi-desc"${langAttr(r)}>${hd(resume(resumeDe(r), 120))}</span>` : ''}
 </a></li>`;
   const related = def.related.length
     ? `<aside class="renvois" aria-labelledby="renvois-titre">
-  <h2 class="renvois-titre" id="renvois-titre">${def.related.length > 1 ? 'Termes associés' : 'Terme associé'}</h2>
+  <h2 class="renvois-titre" id="renvois-titre">${t.termesAssocies[def.related.length > 1 ? 1 : 0]}</h2>
   <ul>${def.related.map(renvoi).join('\n')}</ul>
 </aside>`
     : '';
-  const cited = def.citedBy.filter((d) => !def.related.includes(d)).sort((a, b) => compareFr(a.title, b.title));
+  const cited = def.citedBy.filter((d) => !def.related.includes(d)).sort((a, b) => compareTitres(a.title, b.title));
   const citedHtml = cited.length
     ? `<section class="cites" aria-labelledby="cites-titre">
-  <h2 class="cites-titre" id="cites-titre">${cited.length > 1 ? `${num(cited.length)} définitions renvoient ici` : 'Une définition renvoie ici'}</h2>
-  <ul class="cites-liste"${cited.length > 12 ? ' data-repliable' : ''}>${cited.map((d) => `<li><a href="/${d.slug}/"${apercuAttr(d)}>${breakable(d.title)}</a></li>`).join('')}</ul>
+  <h2 class="cites-titre" id="cites-titre">${t.renvoientIci(num(cited.length))}</h2>
+  <ul class="cites-liste"${cited.length > 12 ? ' data-repliable' : ''}>${cited.map((d) => `<li><a href="${lien.def(d.slug)}"${apercuAttr(d)}>${breakable(d.title)}</a></li>`).join('')}</ul>
 </section>`
+    : '';
+
+  // Les dates de la chronologie qui parlent de ce mot, et sa fiche de spécification.
+  const chrono = liens.chrono?.length
+    ? `<section class="mot-chrono" aria-labelledby="mot-chrono-titre">
+  <h2 class="cites-titre" id="mot-chrono-titre">${t.dansChronologie}</h2>
+  <ol>${liens.chrono.map(({ e, ancre }) => `<li><a href="${lien.chronologie()}#${ancre}"><time datetime="${h(e.date)}">${h(dateLisible(e.date))}</time><span${e.lang !== t.code ? ` lang="${e.lang}"` : ''}>${h(fr(e.title))}</span></a></li>`).join('')}</ol>
+</section>`
+    : '';
+  const spec = liens.spec
+    ? (() => {
+        const sp = liens.spec;
+        const lignes = [
+          sp.status.length ? `<div><dt>${t.statut}</dt><dd>${sp.status.map(h).join(', ')}</dd></div>` : '',
+          sp.type ? `<div><dt>${t.type}</dt><dd>${h(sp.type)}${sp.layer ? ` · ${h(sp.layer)}` : ''}</dd></div>` : '',
+          sp.authors.length ? `<div><dt>${t.auteurs[sp.authors.length > 1 ? 1 : 0]}</dt><dd>${sp.authors.map(h).join(', ')}</dd></div>` : '',
+          sp.created ? `<div><dt>${t.cree}</dt><dd><time datetime="${h(sp.created)}">${h(dateLisible(sp.created))}</time></dd></div>` : '',
+        ].join('');
+        return `<aside class="mot-spec" aria-labelledby="mot-spec-titre">
+  <h2 class="cites-titre" id="mot-spec-titre"><span lang="en">${h(sp.id)}</span> · <span lang="en">${h(sp.title)}</span></h2>
+  <dl>${lignes}</dl>
+  <p class="mot-spec-liens">${sp.url ? `<a href="${h(sp.url)}" rel="noopener">${t.lireDocument}</a>` : ''} <a href="${lien.specs(sp.groupe)}#${sp.id.toLowerCase()}">${t.voirResume}</a></p>
+</aside>`;
+      })()
     : '';
 
   const turn = (d, dir) => {
     if (!d) return `<span class="tourner-vide"></span>`;
-    const label = dir === 'prev' ? 'Mot précédent' : 'Mot suivant';
-    return `<a class="tourner-lien tourner-lien--${dir}" href="/${d.slug}/" rel="${dir}" data-turn="${dir}">
+    const label = dir === 'prev' ? t.motPrecedent : t.motSuivant;
+    return `<a class="tourner-lien tourner-lien--${dir}" href="${lien.def(d.slug)}" rel="${dir}" data-turn="${dir}">
   <span class="tourner-sens">${label}</span>
   <span class="tourner-nom">${breakable(d.title)}</span>
-  ${d.description ? `<span class="tourner-desc">${hd(resume(d.description, 120))}</span>` : ''}
+  ${resumeDe(d) ? `<span class="tourner-desc"${langAttr(d)}>${hd(resume(resumeDe(d), 120))}</span>` : ''}
 </a>`;
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
-  const body = `<nav class="reperes" aria-label="Mots voisins dans le dictionnaire">
-  ${def.alphaPrev ? `<a class="reperes-prec" href="/${def.alphaPrev.slug}/" data-turn="prev"${apercuAttr(def.alphaPrev)}><span class="masque">Mot précédent : </span><span class="reperes-nom">${breakable(def.alphaPrev.title)}</span><span class="reperes-court" aria-hidden="true">Précédent</span></a>` : '<span></span>'}
-  <a class="reperes-lettre" href="/lettre/${letter.toLowerCase()}/" aria-label="Lettre ${letter}, ${plural(letterCount, 'mot', 'mots')}">${letter}</a>
-  ${def.alphaNext ? `<a class="reperes-suiv" href="/${def.alphaNext.slug}/" data-turn="next"${apercuAttr(def.alphaNext)}><span class="masque">Mot suivant : </span><span class="reperes-nom">${breakable(def.alphaNext.title)}</span><span class="reperes-court" aria-hidden="true">Suivant</span></a>` : '<span></span>'}
+  const avis = nonTraduite ? `<p class="avis-langue" role="note"><span class="avis-langue-cle">${t.nonTraduitCourt}</span> ${t.nonTraduit}</p>` : '';
+  const body = `<nav class="reperes" aria-label="${t.motsVoisins}">
+  ${def.alphaPrev ? `<a class="reperes-prec" href="${lien.def(def.alphaPrev.slug)}" data-turn="prev"${apercuAttr(def.alphaPrev)}><span class="masque">${t.motPrecedent} : </span><span class="reperes-nom">${breakable(def.alphaPrev.title)}</span><span class="reperes-court" aria-hidden="true">${t.precedent}</span></a>` : '<span></span>'}
+  <a class="reperes-lettre" href="${lien.lettre(letter)}" aria-label="${t.lettreAria(letter, plural(letterCount, t.mot))}">${letter}</a>
+  ${def.alphaNext ? `<a class="reperes-suiv" href="${lien.def(def.alphaNext.slug)}" data-turn="next"${apercuAttr(def.alphaNext)}><span class="masque">${t.motSuivant} : </span><span class="reperes-nom">${breakable(def.alphaNext.title)}</span><span class="reperes-court" aria-hidden="true">${t.suivant}</span></a>` : '<span></span>'}
 </nav>
 <article class="mot${related ? '' : ' mot--seul'}" data-mot="${h(def.slug)}" data-titre="${h(affiche(def.title))}">
   <header class="mot-tete">
@@ -430,27 +507,34 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   </header>
   <div class="mot-marge">
     <figure class="signet" style="--pos:${((def.n - 0.5) / total * 100).toFixed(3)}%">
-      <div class="signet-tranche" role="img" aria-label="Place de ce mot dans le livre : entrée ${num(def.n)} sur ${num(total)}"><span class="signet-ruban"></span></div>
-      <figcaption class="signet-legende">Entrée ${num(def.n)} sur ${num(total)} du dictionnaire, ${ordinal(def.n - (letters.get(letter)?.[0]?.n || 1) + 1)} mot de la lettre\u00a0${letter}</figcaption>
+      <div class="signet-tranche" role="img" aria-label="${t.placeLivre(num(def.n), num(total))}"><span class="signet-ruban"></span></div>
+      <figcaption class="signet-legende">${t.signetLegende(num(def.n), num(total), ordinal(def.n - (letters.get(letter)?.[0]?.n || 1) + 1), letter)}</figcaption>
     </figure>
+    ${spec}
     ${related}
   </div>
   <div class="mot-corps">
-    <div class="prose">${html}</div>
+    ${avis}
+    <div class="prose"${langAttr(def)}>${html}</div>
   </div>
+  ${chrono}
   ${citedHtml}
 </article>
-<nav class="tourner" aria-label="Tourner la page">
+<nav class="tourner" aria-label="${t.tournerPage}">
   ${turn(def.alphaPrev, 'prev')}
   ${turn(def.alphaNext, 'next')}
 </nav>
-<p class="colophon"><cite>${h(site.title)}</cite>, édition ${site.edition}. <a href="${editUrl}" rel="noopener">Proposer une correction sur GitHub</a> <button class="citer" type="button" data-citer="${h(`${site.author}, « ${def.title} », ${site.title}, édition ${site.edition}, ${url}/${def.slug}/`)}" hidden>Citer cette définition</button></p>`;
+<p class="colophon"><cite>${h(t.marque)}</cite>, ${t.edition(site.edition)}. <a href="${editUrl}" rel="noopener">${t.corriger}</a> <button class="citer" type="button" data-citer="${h(t.citation(site.author, affiche(def.title), t.marque, site.edition, `${url}${lien.def(def.slug)}`))}" hidden>${t.citer}</button></p>`;
 
+  const autre = autres();
   return page({
     headOpts: {
-      title: `${def.title} : définition | Dictionnaire de Bitcoin`,
-      description: def.description || `${def.title} : définition du Dictionnaire de Bitcoin, catégorie ${cat}.`,
-      path: `/${def.slug}/`,
+      title: t.titreDef(affiche(def.title)),
+      description: def.description || t.descDef(def.title, cat),
+      path: lien.def(def.slug),
+      alt: autre.def(def.slug),
+      // Une page anglaise encore en français : l'adresse canonique est la page française.
+      canonique: t.code !== 'fr' && nonTraduite ? FR_PATHS.def(def.slug) : null,
       jsonLd,
       math,
       type: 'article',
@@ -474,50 +558,51 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   const max = Math.sqrt(Math.max(...defs.map((d) => d.body.length)));
   const pas = 6;
   const trancheLettre = defs
-    .map((d, k) => `<a href="/${d.slug}/" tabindex="-1"><title>${h(affiche(d.title))}</title><rect x="${k * pas}" y="${(100 - Math.max(8, (Math.sqrt(d.body.length) / max) * 100)).toFixed(1)}" width="${pas - 2}" height="${Math.max(8, (Math.sqrt(d.body.length) / max) * 100).toFixed(1)}"/></a>`)
+    .map((d, k) => `<a href="${lien.def(d.slug)}" tabindex="-1"><title>${h(affiche(d.title))}</title><rect x="${k * pas}" y="${(100 - Math.max(8, (Math.sqrt(d.body.length) / max) * 100)).toFixed(1)}" width="${pas - 2}" height="${Math.max(8, (Math.sqrt(d.body.length) / max) * 100).toFixed(1)}"/></a>`)
     .join('');
   const groups = defs.length > 40 ? groupEntries(defs, 'deux') : [];
   const vedetteLettre = [...defs].sort((a, b) => b.citedBy.length - a.citedBy.length)[0];
   const sousIndex = groups.length > 1
-    ? `<nav class="sous-index" aria-label="Groupes de la lettre ${letter}">
+    ? `<nav class="sous-index" aria-label="${t.groupesLettre(letter)}">
   <ul>${groups.map((g, k) => `<li><a href="#groupe-${k + 1}">${h(g.label)}</a></li>`).join('')}</ul>
 </nav>`
     : '';
-  const body = `${azIndex({ current: letter, hrefFor: (l) => (letters.get(l)?.length ? `/lettre/${l.toLowerCase()}/` : null), label: 'Toutes les lettres' })}
+  const body = `${azIndex({ current: letter, hrefFor: (l) => (letters.get(l)?.length ? lien.lettre(l) : null), label: t.toutesLettres })}
 <header class="lettre-tete">
   <p class="grande-lettre" aria-hidden="true"><span class="gl"><span class="gl-in">${letter}</span></span></p>
   <div class="lettre-info">
-    <h1 class="titre lettre-titre">Les mots en ${letter}</h1>
-    <p class="enonce">${plural(defs.length, 'mot', 'mots')} du dictionnaire, de ${insecable(defs[0].title)} à ${insecable(defs.at(-1).title)}.</p>
-    <nav class="lettres-voisines" aria-label="Lettres voisines">
-      ${prev ? `<a href="/lettre/${prev.toLowerCase()}/" rel="prev"><span class="masque">Lettre précédente : </span>${prev}</a>` : ''}
-      ${next ? `<a href="/lettre/${next.toLowerCase()}/" rel="next"><span class="masque">Lettre suivante : </span>${next}</a>` : ''}
+    <h1 class="titre lettre-titre">${t.motsEn(letter)}</h1>
+    <p class="enonce">${t.motsDuDico(plural(defs.length, t.mot), insecable(defs[0].title), insecable(defs.at(-1).title))}</p>
+    <nav class="lettres-voisines" aria-label="${t.lettresVoisines}">
+      ${prev ? `<a href="${lien.lettre(prev)}" rel="prev"><span class="masque">${t.lettrePrecedente}</span>${prev}</a>` : ''}
+      ${next ? `<a href="${lien.lettre(next)}" rel="next"><span class="masque">${t.lettreSuivante}</span>${next}</a>` : ''}
     </nav>
   </div>
   <div class="lettre-tranche">
     <div class="apercu-lettre" aria-live="polite" data-apercu-lettre>
-      <p class="apercu-lettre-nom"><a href="/${vedetteLettre.slug}/">${breakable(vedetteLettre.title)}</a></p>
+      <p class="apercu-lettre-nom"><a href="${lien.def(vedetteLettre.slug)}">${breakable(vedetteLettre.title)}</a></p>
       <p class="apercu-lettre-cat">${h(categoryLabel(vedetteLettre.category))}</p>
-      <p class="apercu-lettre-desc">${hd(resume(vedetteLettre.description))}</p>
+      <p class="apercu-lettre-desc"${langAttr(vedetteLettre)}>${hd(resume(resumeDe(vedetteLettre)))}</p>
     </div>
     <figure class="tranche-lettre">
       <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
-      <figcaption class="note" data-tranche-legende>Un trait par mot, dans l’ordre du livre&#8239;; sa hauteur suit la longueur de la définition. <span data-geste>Survolez les traits.</span></figcaption>
+      <figcaption class="note" data-tranche-legende>${t.trancheLegende} <span data-geste>${t.survolez}</span></figcaption>
     </figure>
   </div>
 </header>
 <div class="liste-bloc">
 ${sousIndex}
 <div class="liste">
-${groupedList(defs, picto, { mode: defs.length > 40 ? 'deux' : 'une', labelPrefix: 'Groupe ' })}
+${groupedList(defs, picto, { mode: defs.length > 40 ? 'deux' : 'une', labelPrefix: t.groupe })}
 </div>
 </div>
-${next ? `<p class="lettre-suite"><a class="bouton" href="/lettre/${next.toLowerCase()}/">Lettre suivante : ${next}</a></p>` : ''}`;
+${next ? `<p class="lettre-suite"><a class="bouton" href="${lien.lettre(next)}">${t.lettreSuivante}${next}</a></p>` : ''}`;
   return page({
     headOpts: {
-      title: `Lettre ${letter} : ${defs.length} définitions | Dictionnaire de Bitcoin`,
-      description: `Les ${defs.length} termes du Dictionnaire de Bitcoin qui commencent par la lettre ${letter}, de ${defs[0]?.title} à ${defs.at(-1)?.title}.`,
-      path: `/lettre/${letter.toLowerCase()}/`,
+      title: t.titreLettre(letter, defs.length),
+      description: t.descLettre(defs.length, letter, affiche(defs[0]?.title), affiche(defs.at(-1)?.title)),
+      path: lien.lettre(letter),
+      alt: autres().lettre(letter),
       jsonLd,
       assets,
     },
@@ -530,7 +615,7 @@ ${next ? `<p class="lettre-suite"><a class="bouton" href="/lettre/${next.toLower
 }
 
 // ---------------------------------------------------------------- Catégorie
-export function categoryPage(cat, note, { assets, jsonLd, letters, total, categories }) {
+export function categoryPage(cat, note, { assets, jsonLd, letters, total, categories, part }) {
   const picto = pictoCollector();
   const label = categoryLabel(cat.name);
   const groups = groupEntries(cat.defs, 'une');
@@ -543,43 +628,82 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
     cases.push(ancres.has(l) ? `<li><a href="${ancres.get(l)}">${l}</a></li>` : `<li><span class="absente" aria-hidden="true">${l}</span></li>`);
     if (l === 'B') for (const g of groups) if (g.key.startsWith('BIP-')) cases.push(`<li><a href="${ancres.get(g.key)}" aria-label="${h(g.label)}">${g.key.slice(4)}</a></li>`);
   }
-  const indexGroupes = `<nav class="index-az" aria-label="Lettres de la catégorie ${h(label)}"><ol>${cases.join('')}</ol></nav>`;
-  const rayon = `<nav class="rayon" aria-labelledby="rayon-titre"><h2 class="rayon-titre" id="rayon-titre">Les ${categories.length} catégories</h2><ul>${categories
-    .map((c) => `<li><a href="/categorie/${c.slug}/"${c.slug === cat.slug ? ' aria-current="page"' : ''}>${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span></a></li>`)
+  const indexGroupes = `<nav class="index-az" aria-label="${h(t.lettresCategorie(label))}"><ol>${cases.join('')}</ol></nav>`;
+  // Le rayon : les catégories de la même partie du livre.
+  const voisines = part ? part.cats : categories;
+  const rayon = `<nav class="rayon" aria-labelledby="rayon-titre"><h2 class="rayon-titre" id="rayon-titre">${part ? h(partieTitre(part)) : t.lesNCategories(categories.length)}</h2><ul>${voisines
+    .map((c) => `<li><a href="${lien.categorie(c)}"${c.slug === cat.slug ? ' aria-current="page"' : ''}>${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span></a></li>`)
     .join('')}</ul></nav>`;
   // Présentation : la première phrase entière, la suite repliée derrière « Lire la suite ».
-  const texte = note ? fr(note.replace(/\.$/, '')) + '.' : '';
+  // Les notes de categories.yaml sont en français : en anglais, on ne les montre pas.
+  const texte = note && t.code === 'fr' ? fr(note.replace(/\.$/, '')) + '.' : '';
   const coupe = texte.search(/[.!?] (?=[A-ZÀ-Ý«])/);
   // Une suite courte (moins de 160 signes) s'affiche avec le reste : un « Lire la suite » pour une ligne ne sert à rien.
   const [premiere, suite] = coupe > 0 && texte.length - coupe > 160 ? [texte.slice(0, coupe + 1), texte.slice(coupe + 2)] : [texte, ''];
   const body = `<header class="cat-tete">
   <p class="cat-picto">${picto.use(cat.slug, 'picto picto--grand')}</p>
+  ${part ? `<p class="cat-partie"><a href="${lienPartie(part)}">${h(partieTitre(part))}</a></p>` : ''}
   <h1 class="cat-nom">${h(label)}</h1>
-  <p class="enonce cat-note">${plural(cat.defs.length, 'définition', 'définitions')} du dictionnaire.${premiere ? `<span class="cat-note-premiere"> ${h(premiere)}</span>` : ''}${suite ? `<span class="cat-note-suite" data-repliable-suite> ${h(suite)}</span>` : ''}</p>
+  <p class="enonce cat-note">${t.defsDuDico(plural(cat.defs.length, t.definition))}${premiere ? `<span class="cat-note-premiere"> ${h(premiere)}</span>` : ''}${suite ? `<span class="cat-note-suite" data-repliable-suite> ${h(suite)}</span>` : ''}</p>
   <section class="cat-debut" aria-labelledby="debut-titre">
-    <h2 class="cat-debut-titre" id="debut-titre">Pour commencer</h2>
-    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="/${d.slug}/"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${d.description ? `<span class="renvoi-desc">${hd(resume(d.description))}</span>` : ''}</a></li>`).join('')}</ul>
+    <h2 class="cat-debut-titre" id="debut-titre">${t.pourCommencer}</h2>
+    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareTitres(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="${lien.def(d.slug)}"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${resumeDe(d) ? `<span class="renvoi-desc"${langAttr(d)}>${hd(resume(resumeDe(d)))}</span>` : ''}</a></li>`).join('')}</ul>
   </section>
 </header>
 <div class="liste-bloc">
 ${indexGroupes}
 <div class="liste">
-${groupedList(cat.defs, picto, { mode: 'une', showCategory: false, labelPrefix: cat.slug === 'bip' ? '' : 'Lettre ' })}
+${groupedList(cat.defs, picto, { mode: 'une', showCategory: false, labelPrefix: cat.slug === 'bip' ? '' : t.lettre })}
 </div>
 </div>
 ${rayon}`;
   return page({
     headOpts: {
-      title: `${label} : ${cat.defs.length} définitions | Dictionnaire de Bitcoin`,
-      description: note
+      title: t.titreCat(label, cat.defs.length),
+      description: note && t.code === 'fr'
         ? `${cat.defs.length} définitions. ${note}`.slice(0, 155).replace(/\s+\S*$/, '…')
-        : `Les ${cat.defs.length} définitions de la catégorie ${label} du Dictionnaire de Bitcoin.`,
-      path: `/categorie/${cat.slug}/`,
+        : t.descCat(cat.defs.length, label),
+      path: lien.categorie(cat),
+      alt: autres().categorie(cat),
       jsonLd,
       assets,
     },
     body,
     bodyClass: 'p-cat',
+    picto,
+    letters,
+    total,
+    current: 'categories',
+  });
+}
+
+// ---------------------------------------------------------------- Partie du livre
+// Une partie (technique, écosystème, personnes) : ses catégories, chacune avec toutes ses entrées.
+export function partPage(part, { assets, letters, total, jsonLd }) {
+  const picto = pictoCollector();
+  const n = part.cats.reduce((s, c) => s + c.defs.length, 0);
+  const body = `<header class="partie-tete">
+  <h1 class="titre-page">${h(partieTitre(part))}</h1>
+  <p class="enonce">${h(fr(partieIntro(part)))}</p>
+  <nav class="partie-cats" aria-label="${t.categories}"><ul>${part.cats.map((c) => `<li><a href="#c-${c.slug}">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="menu-n">${num(c.defs.length)}</span></a></li>`).join('')}</ul></nav>
+</header>
+<div class="partie-liste">
+${part.cats.map((c) => `<section class="groupe" id="c-${c.slug}" aria-labelledby="t-${c.slug}">
+  <div class="groupe-tete"><h2 class="groupe-titre groupe-titre--cat" id="t-${c.slug}">${picto.use(c.slug)}<a href="${lien.categorie(c)}">${h(categoryLabel(c.name))}</a></h2><p class="groupe-n">${plural(c.defs.length, t.definition)}</p></div>
+  <ul class="entrees">${c.defs.map((d) => entry(d, picto, { showCategory: false })).join('\n')}</ul>
+</section>`).join('\n')}
+</div>`;
+  return page({
+    headOpts: {
+      title: t.titrePartie(partieTitre(part), n),
+      description: fr(partieIntro(part)).slice(0, 155),
+      path: lien.partie(part.id),
+      alt: autres().partie(part.id),
+      jsonLd,
+      assets,
+    },
+    body,
+    bodyClass: 'p-partie',
     picto,
     letters,
     total,
@@ -596,155 +720,182 @@ const CONTRIBUTORS = [
   ['quinoah', 'https://github.com/quinoah'],
 ];
 
+// L'Allée des baobabs de la couverture (lib/allee.json, tiré de design/couverture/baobab.py) :
+// un calque par arbre, pour qu'ils poussent l'un après l'autre et suivent le pointeur.
+export function allee(cls = 'allee') {
+  const [x, y, w, hh] = ALLEE.viewBox;
+  const arbre = (a, k) => `<g class="allee-arbre allee-${a.nom}" style="--k:${k}">${a.fond ? `<path class="a-fond" d="${a.fond}"/>` : ''}<path class="a-arbre" d="${a.arbre}"/><path class="a-clair" d="${a.clair}"/></g>`;
+  return `<svg class="${cls}" viewBox="${x} ${y} ${w} ${hh}" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMax meet">
+  <g class="allee-astre"><path class="a-soleil" d="${ALLEE.soleil}"/></g>
+  ${ALLEE.fond.map((a, k) => arbre(a, k)).join('\n  ')}
+  ${arbre(ALLEE.grand, 3)}
+  <path class="a-sol" d="${ALLEE.sol}"/>
+</svg>`;
+}
+
 export function homePage(data, { assets, jsonLd }) {
-  const { definitions, categories, letters, featured, notes } = data;
+  const { definitions, categories, letters, featured, parts, chrono, specs } = data;
   const total = definitions.length;
   const picto = pictoCollector();
   for (const c of categories) picto.use(c.slug);
 
   // Les trois mots les plus cités de chaque catégorie.
-  const topWords = (c) => [...c.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareFr(a.title, b.title)).slice(0, 3);
-  const catRows = categories
-    .map(
-      (c) => `<li class="index-ligne">
-  <a class="index-nom" href="/categorie/${c.slug}/">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="index-n">${num(c.defs.length)}</span></a>
-  <p class="index-mots">${topWords(c).map((d) => `<a href="/${d.slug}/">${breakable(d.title)}</a>`).join(', ')}</p>
-</li>`,
-    )
-    .join('\n');
+  const topWords = (c) => [...c.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareTitres(a.title, b.title)).slice(0, 3);
+  const catRow = (c) => `<li class="index-ligne">
+  <a class="index-nom" href="${lien.categorie(c)}">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="index-n">${num(c.defs.length)}</span></a>
+  <p class="index-mots">${topWords(c).map((d) => `<a href="${lien.def(d.slug)}">${breakable(d.title)}</a>`).join(', ')}</p>
+</li>`;
+  // Les parties du livre (hors spécifications, qui ont leur propre section) ; à défaut, toutes les catégories.
+  const partsDico = parts.filter((p) => p.id !== 'specifications' && p.cats.length);
+  const blocsParties = partsDico.length
+    ? partsDico.map((p, k) => `<section class="partie" aria-labelledby="partie-${p.id}" style="--k:${k}">
+  <div class="partie-entete">
+    <h3 class="partie-titre" id="partie-${p.id}"><a href="${lienPartie(p)}">${h(partieTitre(p))}</a></h3>
+    <p class="partie-n">${plural(p.cats.reduce((s, c) => s + c.defs.length, 0), t.definition)}</p>
+  </div>
+  <ul class="index">${p.cats.map(catRow).join('\n')}</ul>
+</section>`).join('\n')
+    : `<ul class="index">${categories.map(catRow).join('\n')}</ul>`;
 
   const letterBlocks = [...letters.entries()]
     .filter(([, d]) => d.length)
-    .map(([l, d]) => `<li style="--n:${d.length}"><a href="/lettre/${l.toLowerCase()}/" data-lettre="${l}" aria-label="Lettre ${l}, ${plural(d.length, 'mot', 'mots')}"><span class="bloc-l" aria-hidden="true">${l}</span></a></li>`)
+    .map(([l, d]) => `<li style="--n:${d.length}"><a href="${lien.lettre(l)}" data-lettre="${l}" aria-label="${t.lettreAria(l, plural(d.length, t.mot))}"><span class="bloc-l" aria-hidden="true">${l}</span></a></li>`)
     .join('');
+
+  // Nouveautés de l'édition : les chiffres viennent des fichiers présents.
+  const nEvenements = chrono.reduce((s, a) => s + a.events.length, 0);
+  const premiere = chrono[0]?.events[0]?.date.slice(0, 4);
+  const derniere = chrono.at(-1)?.events.at(-1)?.date.slice(0, 4);
+  const nSpecs = specs.reduce((s, g) => s + g.series.reduce((x, se) => x + se.entries.length, 0), 0);
+  const partie = (id) => parts.find((p) => p.id === id);
+  const nPartie = (id) => partie(id)?.cats.reduce((s, c) => s + c.defs.length, 0) || 0;
+  const avecSchema = definitions.filter((d) => d.assets.length);
+  const schema = avecSchema.find((d) => d.slug === 'double-depense') || avecSchema[0];
+  const cartes = [
+    nEvenements ? { href: lien.chronologie(), titre: t.chronologie, texte: t.chronoCarte(num(nEvenements), premiere, derniere), grand: true,
+      frise: (() => { const m = Math.max(...chrono.map((a) => a.events.length)); return `<span class="carte-frise" aria-hidden="true">${chrono.map((a) => `<span style="--h:${(a.events.length / m).toFixed(3)}"></span>`).join('')}</span>`; })() } : null,
+    nSpecs ? { href: lien.specs(), titre: t.specifications, texte: t.specsCarte(num(nSpecs)) } : null,
+    nPartie('personnes') ? { href: lien.partie('personnes'), titre: partieTitre(partie('personnes')), texte: t.personnesCarte(num(nPartie('personnes'))) } : null,
+    nPartie('ecosysteme') ? { href: lien.partie('ecosysteme'), titre: partieTitre(partie('ecosysteme')), texte: t.ecoCarte(num(nPartie('ecosysteme'))) } : null,
+    schema ? { href: lien.def(schema.slug), titre: t.schemas, texte: t.schemasCarte(num(avecSchema.length)) } : null,
+  ].filter(Boolean);
+  const nouveautes = cartes.length
+    ? `<section class="nouveautes" aria-labelledby="nouveautes-titre">
+  <div class="nouveautes-tete">
+    <h2 class="titre" id="nouveautes-titre">${t.nouveautes}</h2>
+    <p class="enonce">${t.nouveautesEnonce}</p>
+  </div>
+  <ul class="cartes">${cartes.map((c, k) => `<li class="carte${c.grand ? ' carte--grande' : ''}" style="--k:${k}"><a href="${c.href}">${c.frise || ''}<span class="carte-titre">${h(c.titre)}</span><span class="carte-texte">${c.texte}</span></a></li>`).join('')}</ul>
+</section>`
+    : '';
 
   const f = featured;
   // Le vrai dossier d'une définition, tel qu'il est sur GitHub.
   const exemple = definitions.find((d) => d.slug === 'utxo') || definitions[0];
   const source = {
     slug: exemple.slug,
-    dir: `definitions/fr/${exemple.slug[0]}/${exemple.slug}/`,
-    // Les deux premières phrases du fichier : un extrait, pas tout le texte.
+    dir: path.dirname(exemple.sourcePath) + '/',
     body: `${exemple.body.trim().split(/(?<=\.)\s+/).slice(0, 3).join(' ')} […]`,
   };
-  // Positions du titre sur l'avant : celles de la couverture imprimée (lib/jaquette.json),
-  // pour que les racines du banian se posent sur les lettres.
-  const t = JAQ.titre;
-  const asc = 0.834; // ligne de base sous le haut de ligne, en em (Archivo, interligne 1)
-  const vars = [
-    `--t-corps:${(t.corps * 100).toFixed(3)}cqw`, `--t-x:${(t.x * 100).toFixed(3)}cqw`,
-    `--t-l1:calc(${(t.ligne1 * 100).toFixed(3)}cqh - ${asc} * var(--t-corps))`,
-    `--t-l2:calc(${(t.ligne2 * 100).toFixed(3)}cqh - ${asc} * var(--t-corps))`,
-    `--s-corps:max(14px, ${(JAQ.sous_titre.corps * 100).toFixed(3)}cqw)`,
-    `--s-l:calc(${(JAQ.sous_titre.ligne * 100).toFixed(3)}cqh - ${asc} * var(--s-corps))`,
-    `--a-corps:max(13px, ${(JAQ.auteur.corps * 100).toFixed(3)}cqw)`,
-    `--a-l:calc(${(JAQ.auteur.ligne * 100).toFixed(3)}cqh - ${asc} * var(--a-corps))`,
-    `--a-d:${(JAQ.auteur.droite * 100).toFixed(3)}cqw`,
-    `--dos:${JAQ.jaquette.dos}`, `--tranche:${JAQ.jaquette.tranche}`, `--ratio:${(JAQ.jaquette.largeur_pt / JAQ.jaquette.hauteur_pt).toFixed(5)}`,
-  ].join(';');
-  const plein = '(min-width: 1024px) and (min-aspect-ratio: 4/3)';
-  const calque = (nom, alt = '') => `<picture class="jaquette-${nom}">
-      <source media="${plein}" type="image/avif" srcset="/img/jaquette-${nom}-1100.avif 1622w, /img/jaquette-${nom}-1600.avif 2359w" sizes="96vw">
-      <source media="${plein}" type="image/webp" srcset="/img/jaquette-${nom}-1100.webp 1622w, /img/jaquette-${nom}-1600.webp 2359w" sizes="96vw">
-      <source type="image/avif" srcset="/img/avant-${nom}-1100.avif 712w, /img/avant-${nom}-1600.avif 1035w" sizes="100vw">
-      <img src="/img/avant-${nom}-1100.webp" srcset="/img/avant-${nom}-1100.webp 712w, /img/avant-${nom}-1600.webp 1035w" sizes="100vw" width="712" height="1100" alt="${alt}"${nom === 'couronne' ? ' fetchpriority="high"' : ''} decoding="async">
-    </picture>`;
+  const [l1, l2] = t.couvTitre;
   const body = `<section class="jaquette" aria-labelledby="titre">
-  <div class="jaquette-objet" style="${vars}">
-    ${calque('couronne', 'La couverture de l’édition 2027 : la couronne d’un banian, aux feuilles figue sombre, sur fond figue')}
-    ${calque('racines')}
-    <div class="jaquette-couv">
-      <h1 class="couv-titre" id="titre"><span class="ligne ligne-1"><span>Dictionnaire</span></span> <span class="ligne ligne-2"><span>de Bitcoin</span></span></h1>
-      <p class="couv-sous">Tout le vocabulaire technique de Bitcoin</p>
-      <p class="couv-auteur"><span>${h(site.author)}</span> <span>Édition ${site.edition}</span></p>
-      <form class="couv-recherche" role="search" action="/recherche/" method="get" data-hero-search>
-        <label class="masque" for="couv-q">Chercher un terme parmi les ${num(total)} définitions</label>
-        <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot…">
-        <button type="submit">Chercher</button>
-      </form>
+  <div class="jaquette-objet">
+    <div class="jaquette-avant" data-allee>
+      ${allee()}
+      <div class="jaquette-couv">
+        <h1 class="couv-titre" id="titre"><span class="ligne ligne-1"><span>${h(l1)}</span></span> <span class="ligne ligne-2"><span>${h(l2)}</span></span></h1>
+        <p class="couv-sous">${h(t.sousTitre)}</p>
+        <p class="couv-auteur"><span>${h(site.author)}</span> <span>${t.editionCap(site.edition)}</span></p>
+      </div>
     </div>
-    <div class="jaquette-tranche" aria-hidden="true"><span class="tranche-titre">Dictionnaire de Bitcoin</span><span class="tranche-an">${site.edition}</span></div>
+    <div class="jaquette-tranche" aria-hidden="true"><span class="tranche-titre">${h(t.marque)}</span><span class="tranche-an">${site.edition}</span></div>
     <section class="jaquette-dos jour" aria-labelledby="jour-titre" data-jour>
-      <h2 class="jour-titre" id="jour-titre">Le mot du jour</h2>
-      <p class="jour-mot"><a href="/${f.slug}/" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
-      <p class="jour-cat"><a href="/categorie/${f.categorySlug}/" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
-      <p class="jour-desc" data-jour-desc>${hd(f.description || '')}</p>
-      <p class="jour-actions"><a class="bouton bouton--clair" href="/${f.slug}/" data-jour-lire>Lire la définition</a> <button class="bouton bouton--trait" type="button" data-jour-autre>Un autre mot</button></p>
-      <p class="jour-pied">${num(total)} définitions libres et gratuites, 19 catégories.</p>
+      <form class="couv-recherche" role="search" action="${lien.recherche()}" method="get" data-hero-search>
+        <label class="masque" for="couv-q">${t.chercherParmi(num(total))}</label>
+        <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${t.exemple}">
+        <button type="submit">${t.chercher}</button>
+      </form>
+      <h2 class="jour-titre" id="jour-titre">${t.motDuJour}</h2>
+      <p class="jour-mot"><a href="${lien.def(f.slug)}" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
+      <p class="jour-cat"><a href="${lien.categorie({ name: f.category, slug: f.categorySlug })}" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
+      <p class="jour-desc" data-jour-desc${langAttr(f)}>${hd(resumeDe(f))}</p>
+      <p class="jour-actions"><a class="bouton bouton--clair" href="${lien.def(f.slug)}" data-jour-lire>${t.lireDef}</a> <button class="bouton bouton--trait" type="button" data-jour-autre>${t.autreMot}</button></p>
+      <p class="jour-pied">${t.jourPied(num(total), categories.length)}</p>
     </section>
   </div>
 </section>
 
+${nouveautes}
+
 <section class="feuilleter" aria-labelledby="feuilleter-titre" data-tranche>
   <div class="feuilleter-tete">
-    <h2 class="titre" id="feuilleter-titre">Feuilleter les ${num(total)} mots</h2>
-    <p class="enonce">Chaque trait est une définition, dans l’ordre du livre&#8239;; sa hauteur suit la longueur du texte. Choisissez une lettre, puis glissez sur les traits.</p>
+    <h2 class="titre" id="feuilleter-titre">${t.feuilleter(num(total))}</h2>
+    <p class="enonce">${t.feuilleterEnonce}</p>
   </div>
-  <nav class="blocs" aria-label="Lettres de la tranche"><ol>${letterBlocks}</ol></nav>
-  <div class="bande" data-bande><p class="bande-sans-script">Les traits apparaissent avec JavaScript. En attendant, chaque lettre ci-dessus mène à sa liste.</p></div>
+  <nav class="blocs" aria-label="${t.lettresTranche}"><ol>${letterBlocks}</ol></nav>
+  <div class="bande" data-bande><p class="bande-sans-script">${t.sansScript}</p></div>
   <div class="apercu" aria-live="polite" data-apercu>
-    <p class="apercu-nom"><a href="/${f.slug}/" data-apercu-lien>${breakable(f.title)}</a></p>
+    <p class="apercu-nom"><a href="${lien.def(f.slug)}" data-apercu-lien>${breakable(f.title)}</a></p>
     <p class="apercu-cat" data-apercu-cat>${h(categoryLabel(f.category))}</p>
-    <p class="apercu-desc" data-apercu-desc>${hd(f.description || '')}</p>
+    <p class="apercu-desc" data-apercu-desc>${hd(resumeDe(f))}</p>
   </div>
-
 </section>
 
 <section class="categories" id="categories" aria-labelledby="categories-titre">
   <div class="categories-tete">
-    <h2 class="titre" id="categories-titre">Dix-neuf catégories</h2>
-    <p class="enonce">Chaque définition appartient à un domaine, signalé dans le livre par son pictogramme.<span class="sans-mobile"> Les trois mots cités sont les plus renvoyés de leur catégorie.</span></p>
+    <h2 class="titre" id="categories-titre">${partsDico.length ? t.partiesTitre : t.categories}</h2>
+    <p class="enonce">${t.partiesEnonce}<span class="sans-mobile"> ${t.plusRenvoyes}</span></p>
   </div>
-  <ul class="index">${catRows}</ul>
+  <div class="parties">${blocsParties}</div>
 </section>
 
 <section class="livre" id="livre" aria-labelledby="livre-titre">
   <div class="livre-haut">
-    <figure class="livre-volume"><video muted loop playsinline preload="none" poster="/video/feuilletage.webp" width="640" height="990" aria-label="Les pages du livre imprimé qui défilent, de la lettre A à la lettre Z" data-boucle><source src="/video/feuilletage.mp4" type="video/mp4"></video></figure>
+    <figure class="livre-volume"><video muted loop playsinline preload="none" poster="/video/feuilletage.webp" width="640" height="990" aria-label="${t.video}" data-boucle><source src="/video/feuilletage.mp4" type="video/mp4"></video></figure>
     <div class="livre-texte">
-      <h2 class="titre" id="livre-titre">Le livre</h2>
-      <p class="enonce">Les définitions existent aussi sur papier&#8239;: l’édition 2026 compte 594 pages, en broché ou en relié. L’édition 2027 est en préparation.</p>
-      <p class="livre-actions"><a class="bouton" href="${site.bitcoinBazar}" rel="noopener">Commander chez Bitcoin Bazar</a> <a class="lien" href="${site.amazon}" rel="noopener">ou sur Amazon</a></p>
-      <p>Le PDF complet reste gratuit&#8239;: <a class="lien" href="${site.pdf}" download>télécharger le PDF</a> (2,7${NB}Mo).</p>
-      <p class="note">ISBN de l’édition 2026&#8239;: ${site.isbnPaperback} (broché), ${site.isbnHardcover} (relié). Je gagne une petite marge sur chaque exemplaire vendu&#8239;: c’est la meilleure façon de soutenir le projet.</p>
+      <h2 class="titre" id="livre-titre">${t.livreTitre}</h2>
+      <p class="enonce">${t.livreEnonce}</p>
+      <p class="livre-actions"><a class="bouton" href="${site.bitcoinBazar}" rel="noopener">${t.commander}</a> <a class="lien" href="${site.amazon}" rel="noopener">${t.ouAmazon}</a></p>
+      <p>${t.pdfReste}<a class="lien" href="${site.pdf}" download>${t.telechargerPdf}</a> (2,7${NB}Mo).</p>
+      <p class="note">${t.isbn(site.isbnPaperback, site.isbnHardcover)}</p>
     </div>
   </div>
-  <div class="pages" aria-label="Six pages intérieures de l’édition 2026">
-    ${[[31, 'Page 5 du livre : les entrées ADDRMAN, ADDRV2 et ADRESSE DE RÉCEPTION'], [212, 'Page 186 du livre : les entrées CONSIGNMENT et CONSOLIDATION'], [467, 'Page 441 du livre : les entrées RÉCURSIF - COVENANT et REDEEM'], [516, 'Page 490 du livre : les entrées SIMPLIFIED PAYMENT VERIFICATION, SINGLE-SIG et SINGLE-USE SEAL']]
-      .map(([n, alt], i) => `<figure class="page-livre" style="--i:${i}"><img src="/img/page-${n}.webp" width="600" height="927" alt="${h(alt)}" loading="lazy" decoding="async"></figure>`)
+  <div class="pages" aria-label="${t.pagesInterieures}">
+    ${[31, 212, 467, 516]
+      .map((n, i) => `<figure class="page-livre" style="--i:${i}"><img src="/img/page-${n}.webp" width="600" height="927" alt="${h(t.pagesAlt[i])}" loading="lazy" decoding="async" lang="fr"></figure>`)
       .join('\n    ')}
   </div>
 </section>
 
 <section class="ouvert" aria-labelledby="ouvert-titre">
   <div class="ouvert-texte">
-    <h2 class="titre" id="ouvert-titre">Un projet ouvert</h2>
-    <p class="enonce">Chaque définition est un dossier sur GitHub. Une coquille, une imprécision, un terme manquant&#8239;: tout le monde peut proposer une correction, et chaque page du site mène au fichier à modifier.</p>
-    <p><a class="bouton" href="${site.github}" rel="noopener">Contribuer sur GitHub</a></p>
+    <h2 class="titre" id="ouvert-titre">${t.ouvertTitre}</h2>
+    <p class="enonce">${t.ouvertEnonce}</p>
+    <p><a class="bouton" href="${site.github}" rel="noopener">${t.contribuer}</a></p>
     <div class="ouvert-auteur">
-      <img src="/img/loic-morel.webp" width="560" height="560" alt="Portrait de Loïc Morel" loading="lazy" decoding="async">
-      <p>Écrit par <a class="lien" href="${site.authorUrl}" rel="author">Loïc Morel</a>, relu et complété par les contributeurs du dépôt&#8239;: ${CONTRIBUTORS.map(([n, u]) => `<a class="lien" href="${u}" rel="noopener">${h(n)}</a>`).join(', ')}.</p>
+      <img src="/img/loic-morel.webp" width="560" height="560" alt="${t.portrait}" loading="lazy" decoding="async">
+      <p>${t.ecritPar} <a class="lien" href="${site.authorUrl}" rel="author">Loïc Morel</a>, ${t.reluPar}${CONTRIBUTORS.map(([n, u]) => `<a class="lien" href="${u}" rel="noopener">${h(n)}</a>`).join(', ')}.</p>
     </div>
-    <p class="note">Textes sous licence ${site.license}. Pour soutenir l’auteur en Lightning&#8239;: <span class="lightning">${site.lightning}</span>.</p>
+    <p class="note">${t.licenceNote(site.license, `<span class="lightning">${site.lightning}</span>`)}</p>
   </div>
   <figure class="fichier" data-ui>
     <figcaption class="fichier-chemin"><code>${h(source.dir)}</code></figcaption>
-    <p class="fichier-nom">definition.md, le texte source en Markdown</p>
-    <pre class="fichier-texte"><code>${h(source.body).replace(/\*([^*]+)\*/g, '<span class="md">*</span><em>$1</em><span class="md">*</span>').replace(/`([^`]+)`/g, '<span class="md">`</span>$1<span class="md">`</span>')}</code></pre>
-    <ul class="fichier-liens"><li><a class="lien" href="${site.github}/blob/main/${source.dir}definition.md" rel="noopener">Ouvrir ce fichier sur GitHub</a></li><li><a class="lien" href="/${source.slug}/">Lire la définition rendue</a></li></ul>
+    <p class="fichier-nom">${t.fichierNom}</p>
+    <pre class="fichier-texte"${langAttr(exemple)}><code>${h(source.body).replace(/\*([^*]+)\*/g, '<span class="md">*</span><em>$1</em><span class="md">*</span>').replace(/`([^`]+)`/g, '<span class="md">`</span>$1<span class="md">`</span>')}</code></pre>
+    <ul class="fichier-liens"><li><a class="lien" href="${site.github}/blob/main/${exemple.sourcePath}" rel="noopener">${t.ouvrirFichier}</a></li><li><a class="lien" href="${lien.def(source.slug)}">${t.lireRendue}</a></li></ul>
   </figure>
 </section>`;
 
   return page({
     headOpts: {
-      title: 'Dictionnaire de Bitcoin : tout le vocabulaire technique de Bitcoin',
-      description: `Le Dictionnaire de Bitcoin de Loïc Morel : ${num(total)} définitions libres et gratuites du vocabulaire technique de Bitcoin, aussi disponible en livre imprimé et en PDF.`,
-      path: '/',
+      title: t.titreAccueil,
+      description: t.descAccueil(num(total)),
+      path: lien.accueil(),
+      alt: autres().accueil(),
       jsonLd,
       assets,
       themeColor: palette.figue,
       extraJs: assets.home,
-      preloadImage: '',
     },
     body,
     bodyClass: 'p-accueil',
@@ -759,26 +910,28 @@ export function homePage(data, { assets, jsonLd }) {
 export function searchPage({ assets, letters, total, categories }) {
   const picto = pictoCollector();
   const body = `<header class="cherche-tete">
-  <h1 class="titre-page">Rechercher</h1>
-  <p class="enonce">Dans les ${num(total)} définitions, leur terme anglais et leur description. Les fautes de frappe sont tolérées.</p>
-  <form class="cherche-form" role="search" action="/recherche/" method="get" data-search-page>
-    <label class="masque" for="cherche-q">Terme à chercher</label>
+  <h1 class="titre-page">${t.rechercher}</h1>
+  <p class="enonce">${t.rechercheEnonce(num(total))}</p>
+  <form class="cherche-form" role="search" action="${lien.recherche()}" method="get" data-search-page>
+    <label class="masque" for="cherche-q">${t.termeAChercher}</label>
     ${loupe}
-    <input id="cherche-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot…" aria-controls="cherche-resultats">
+    <input id="cherche-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${t.exemple}" aria-controls="cherche-resultats">
   </form>
   <fieldset class="filtres" data-filtres>
-    <legend class="masque">Filtrer par catégorie</legend>
-    <label class="filtre"><input type="radio" name="cat" value="" checked><span>Toutes</span></label>
+    <legend class="masque">${t.filtrer}</legend>
+    <label class="filtre"><input type="radio" name="cat" value="" checked><span>${t.toutes}</span></label>
     ${categories.map((c) => `<label class="filtre"><input type="radio" name="cat" value="${c.slug}"><span>${picto.use(c.slug)}${h(categoryLabel(c.name))}</span></label>`).join('\n    ')}
   </fieldset>
 </header>
-<p class="cherche-etat" role="status" aria-live="polite" data-search-status>La recherche a besoin de JavaScript. Vous pouvez aussi parcourir les mots <a href="#lettres">par lettre</a>.</p>
+<p class="cherche-etat" role="status" aria-live="polite" data-search-status>${t.rechercheSansJs}</p>
 <ul class="resultats resultats--page" id="cherche-resultats" data-search-results></ul>`;
   return page({
     headOpts: {
-      title: 'Rechercher | Dictionnaire de Bitcoin',
-      description: `Recherche instantanée dans les ${total} définitions du Dictionnaire de Bitcoin.`,
-      path: '/recherche/',
+      title: t.titreRecherche,
+      description: t.descRecherche(total),
+      path: lien.recherche(),
+      alt: autres().recherche(),
+      robots: 'noindex, follow',
       assets,
     },
     body,
@@ -793,31 +946,196 @@ export function searchPage({ assets, letters, total, categories }) {
 export function notFoundPage({ assets, letters, total }) {
   const picto = pictoCollector();
   const body = `<section class="perdu" aria-labelledby="perdu-titre">
-  <div class="perdu-arbre" aria-hidden="true">
-    <picture><source type="image/avif" srcset="/img/jaquette-couronne-1100.avif"><img src="/img/jaquette-couronne-1100.webp" width="1622" height="1100" alt="" decoding="async"></picture>
-    <picture><source type="image/avif" srcset="/img/jaquette-racines-1100.avif"><img src="/img/jaquette-racines-1100.webp" width="1622" height="1100" alt="" decoding="async"></picture>
-  </div>
+  <div class="perdu-arbre" aria-hidden="true">${allee('allee allee--perdu')}</div>
   <div class="perdu-texte">
-    <h1 class="perdu-titre" id="perdu-titre">Mot introuvable</h1>
-    <p class="enonce">Ce mot n’est pas, ou pas encore, dans le dictionnaire&#8239;: l’adresse demandée ne correspond à aucune page.</p>
-    <form class="couv-recherche perdu-recherche" role="search" action="/recherche/" method="get" data-perdu-champ>
-      <label class="masque" for="perdu-q">Chercher un terme</label>
-      <input id="perdu-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="UTXO, Taproot…" aria-controls="perdu-resultats">
-      <button type="submit">Chercher</button>
+    <h1 class="perdu-titre" id="perdu-titre">${t.introuvable}</h1>
+    <p class="enonce">${t.introuvableEnonce}</p>
+    <form class="couv-recherche perdu-recherche" role="search" action="${lien.recherche()}" method="get" data-perdu-champ>
+      <label class="masque" for="perdu-q">${t.chercherTerme}</label>
+      <input id="perdu-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${t.exemple}" aria-controls="perdu-resultats">
+      <button type="submit">${t.chercher}</button>
     </form>
     <div class="perdu-suggestions" data-suggestions hidden>
-      <h2 class="perdu-sous" data-suggestions-titre>Vouliez-vous dire ?</h2>
+      <h2 class="perdu-sous" data-suggestions-titre>${t.vouliezVous}</h2>
       <ul class="perdu-liste" id="perdu-resultats" data-suggestions-liste></ul>
     </div>
-    <p class="perdu-actions"><a class="lien lien--os" href="/">Retour à l’accueil</a> <a class="lien lien--os" href="#lettres">Parcourir par lettre</a></p>
+    <p class="perdu-actions"><a class="lien lien--os" href="${lien.accueil()}">${t.retourAccueil}</a> <a class="lien lien--os" href="#lettres">${t.parLettre}</a></p>
   </div>
 </section>`;
   return page({
-    headOpts: { title: 'Page introuvable | Dictionnaire de Bitcoin', description: 'Cette page n’existe pas dans le Dictionnaire de Bitcoin.', path: '/404.html', assets, themeColor: palette.figue },
+    headOpts: { title: t.titre404, description: t.desc404, path: `${t.base}/404.html`, robots: 'noindex', assets, themeColor: palette.figue },
     body,
     bodyClass: 'p-perdu',
     picto,
     letters,
     total,
+  });
+}
+
+// ---------------------------------------------------------------- Chronologie
+// Une seule page, une section par année, une barre des années collante. bySlug : les définitions
+// de la langue, pour les liens « Voir aussi » (un mot retiré du dictionnaire n'est simplement pas lié).
+export function chronologyPage(annees, { assets, letters, total, bySlug, jsonLd }) {
+  const picto = pictoCollector();
+  const n = annees.reduce((s, a) => s + a.events.length, 0);
+  const a0 = annees[0]?.events[0]?.date.slice(0, 4);
+  const a1 = annees.at(-1)?.events.at(-1)?.date.slice(0, 4);
+  const nomAnnee = (a) => (a.avant ? t.avant2009 : a.id);
+  const enFr = t.code !== 'fr' && annees.some((a) => a.lang !== t.code);
+  const max = Math.max(...annees.map((a) => a.events.length));
+  const hote = (u) => {
+    try {
+      return new URL(u).hostname.replace(/^www\./, '');
+    } catch {
+      return u;
+    }
+  };
+  const evenement = (e, i) => {
+    const liens = e.related.map((s) => bySlug.get(s)).filter(Boolean);
+    return `<li class="evt" id="${ancreEvenement(e, i)}">
+  <time class="evt-date" datetime="${h(e.date)}">${h(dateLisible(e.date))}</time>
+  <div class="evt-corps"${e.lang !== t.code ? ` lang="${e.lang}"` : ''}>
+    <h3 class="evt-titre">${enLigne(e.title)}</h3>
+    <p class="evt-texte">${enLigne(e.text)}</p>
+    ${liens.length ? `<p class="evt-liens" lang="${t.code}"><span class="evt-cle">${t.voirAussi}</span> ${liens.map((d) => `<a href="${lien.def(d.slug)}"${apercuAttr(d)}>${breakable(d.title)}</a>`).join(' ')}</p>` : ''}
+    ${e.sources.length ? `<p class="evt-sources" lang="${t.code}"><span class="evt-cle">${t.sources[e.sources.length > 1 ? 1 : 0]}</span> ${e.sources.map((u) => `<a href="${h(u)}" rel="noopener nofollow">${h(hote(u))}</a>`).join(' ')}</p>` : ''}
+  </div>
+</li>`;
+  };
+  let k = 0;
+  const body = `<header class="chrono-tete">
+  <h1 class="titre-page">${t.chronoTitre}</h1>
+  <p class="enonce">${t.chronoEnonce}</p>
+  ${enFr ? `<p class="avis-langue" role="note"><span class="avis-langue-cle">${t.nonTraduitCourt}</span> ${t.chronoFr}</p>` : ''}
+  <figure class="chrono-frise" aria-hidden="true"><ol>${annees.map((a) => `<li style="--h:${(a.events.length / max).toFixed(3)}"><a href="#a-${a.id}" tabindex="-1"><span class="frise-barre"></span><span class="frise-an">${a.avant ? '<2009' : `’${a.id.slice(2)}`}</span></a></li>`).join('')}</ol></figure>
+</header>
+<div class="liste-bloc">
+<nav class="index-az index-annees" aria-label="${t.annees}"><ol>${annees.map((a) => `<li><a href="#a-${a.id}">${h(nomAnnee(a))}</a></li>`).join('')}</ol></nav>
+<div class="chrono">
+${annees.map((a) => `<section class="annee" id="a-${a.id}" aria-labelledby="t-${a.id}">
+  <div class="annee-tete"><h2 class="annee-titre" id="t-${a.id}">${h(nomAnnee(a))}</h2><p class="groupe-n">${plural(a.events.length, t.date)}</p></div>
+  <ol class="evts">${a.events.map((e) => evenement(e, k++)).join('\n')}</ol>
+</section>`).join('\n')}
+</div>
+</div>`;
+  return page({
+    headOpts: {
+      title: t.titreChrono(n),
+      description: t.descChrono(num(n), a0, a1),
+      path: lien.chronologie(),
+      alt: autres().chronologie(),
+      jsonLd,
+      assets,
+    },
+    body,
+    bodyClass: 'p-chrono',
+    picto,
+    letters,
+    total,
+    current: 'chronologie',
+  });
+}
+
+// ---------------------------------------------------------------- Spécifications
+const statutClasse = (s) => {
+  const k = String(s).toLowerCase();
+  if (/^(final|active|actif|deployed|complete|mandatory)$/.test(k)) return 'statut--actif';
+  if (/^(draft|proposed|optional|relay)$/.test(k)) return 'statut--projet';
+  return 'statut--clos';
+};
+export function specsHubPage(groupes, { assets, letters, total, jsonLd }) {
+  const picto = pictoCollector();
+  const body = `<header class="specs-tete">
+  <h1 class="titre-page">${t.specsTitre}</h1>
+  <p class="enonce">${t.specsEnonce}</p>
+</header>
+<ul class="specs-series">${groupes.map((g) => {
+    const s = t.series[g.id] || { titre: g.title, long: '', intro: '' };
+    const n = g.series.reduce((x, se) => x + se.entries.length, 0);
+    return `<li><a class="serie" href="${lien.specs(g.id)}">${picto.use(g.series[0].id)}<span class="serie-titre">${h(s.titre)}</span><span class="serie-long" lang="en">${h(s.long)}</span><span class="serie-n">${plural(n, t.document)}</span><span class="serie-intro">${h(fr(s.intro))}</span></a></li>`;
+  }).join('')}</ul>`;
+  return page({
+    headOpts: { title: t.titreSpecs, description: t.specsEnonce, path: lien.specs(), alt: autres().specs(), jsonLd, assets },
+    body,
+    bodyClass: 'p-specs',
+    picto,
+    letters,
+    total,
+    current: 'specs',
+  });
+}
+
+export function specsPage(groupe, { assets, letters, total, bySlug, jsonLd }) {
+  const picto = pictoCollector();
+  const s = t.series[groupe.id] || { titre: groupe.title, long: '', intro: '' };
+  const entries = groupe.series.flatMap((se) => se.entries);
+  const enFr = t.code !== 'fr' && entries.some((e) => !e.summaryEn);
+  const maj = groupe.series.map((se) => se.updated).filter(Boolean).sort().at(-1);
+  const ancre = (e) => e.id.toLowerCase();
+  const fiche = (e) => {
+    const def = e.definition ? bySlug.get(e.definition) : null;
+    const lies = e.related.map((x) => bySlug.get(x)).filter(Boolean);
+    const resumeTxt = t.code === 'en' && e.summaryEn ? e.summaryEn : e.summary;
+    const resumeLang = t.code === 'en' && e.summaryEn ? 'en' : 'fr';
+    const ref = (n) => {
+      const cible = entries.find((x) => x.number === n && x.serie === e.serie);
+      return cible ? `<a href="#${ancre(cible)}">${h(cible.id)}</a>` : h(String(n));
+    };
+    const meta = [
+      e.type ? `<div><dt>${t.type}</dt><dd>${h(e.type)}${e.layer ? ` · ${h(e.layer)}` : ''}</dd></div>` : '',
+      e.authors.length ? `<div><dt>${t.auteurs[e.authors.length > 1 ? 1 : 0]}</dt><dd>${e.authors.map(h).join(', ')}</dd></div>` : '',
+      e.created ? `<div><dt>${t.cree}</dt><dd><time datetime="${h(e.created)}">${h(dateLisible(e.created))}</time></dd></div>` : '',
+      e.kinds.length ? `<div><dt>${t.kinds}</dt><dd>${e.kinds.map((k) => `<code>${h(k)}</code>`).join(' ')}</dd></div>` : '',
+      e.replaces.length ? `<div><dt>${t.remplace}</dt><dd>${e.replaces.map(ref).join(', ')}</dd></div>` : '',
+      e.supersededBy.length ? `<div><dt>${t.remplacePar}</dt><dd>${e.supersededBy.map(ref).join(', ')}</dd></div>` : '',
+    ].join('');
+    return `<li class="spec" id="${ancre(e)}" data-statut="${h(e.status.map((x) => String(x).toLowerCase()).join(' '))}">
+  <div class="spec-tete">
+    <p class="spec-id">${h(e.id)}</p>
+    <h3 class="spec-titre" lang="en">${h(e.title)}</h3>
+    <ul class="spec-statuts">${e.status.map((x) => `<li class="statut ${statutClasse(x)}" lang="en">${h(x)}</li>`).join('')}</ul>
+  </div>
+  <p class="spec-resume"${resumeLang !== t.code ? ` lang="${resumeLang}"` : ''}>${enLigne(resumeTxt)}</p>
+  ${meta ? `<dl class="spec-meta">${meta}</dl>` : ''}
+  <p class="spec-liens">${def ? `<a class="spec-def" href="${lien.def(def.slug)}"${apercuAttr(def)}><span class="evt-cle">${t.definitionLiee}</span> ${breakable(def.title)}</a>` : ''}${lies.map((d) => `<a href="${lien.def(d.slug)}"${apercuAttr(d)}>${breakable(d.title)}</a>`).join(' ')}${e.url ? `<a class="spec-source" href="${h(e.url)}" rel="noopener">${t.lireDocument}</a>` : ''}</p>
+</li>`;
+  };
+  const statuts = [...new Set(entries.flatMap((e) => e.status.map((x) => String(x))))];
+  const body = `<header class="specs-tete">
+  <p class="cat-partie"><a href="${lien.specs()}">${t.specsTitre}</a></p>
+  <h1 class="titre-page">${h(s.titre)}</h1>
+  <p class="enonce">${h(fr(s.intro))}</p>
+  <p class="note">${plural(entries.length, t.document)}.${maj ? ` ${t.majLe(dateLisible(maj))}` : ''}${groupe.series.map((se) => (se.source ? ` <a class="lien" href="${h(se.source)}" rel="noopener">${h(new URL(se.source).pathname.slice(1))}</a>` : '')).join('')}</p>
+  ${enFr ? `<p class="avis-langue" role="note"><span class="avis-langue-cle">${t.nonTraduitCourt}</span> ${t.resumesFr}</p>` : ''}
+  <fieldset class="filtres filtres--statut" data-filtres-statut hidden>
+    <legend class="masque">${t.filtrerStatut}</legend>
+    <label class="filtre"><input type="radio" name="statut" value="" checked><span>${t.tous}</span></label>
+    ${statuts.map((x) => `<label class="filtre"><input type="radio" name="statut" value="${h(x.toLowerCase())}"><span lang="en">${h(x)}</span></label>`).join('\n    ')}
+  </fieldset>
+</header>
+<div class="liste-bloc">
+<nav class="sous-index sous-index--specs" aria-label="${t.sommaireSerie}"><ul>${entries.map((e) => `<li><a href="#${ancre(e)}">${h(e.id.replace(/^(BIP|BOLT|bLIP|BLIP|NIP)-/i, ''))}</a></li>`).join('')}</ul></nav>
+<div class="specs">
+${groupe.series.map((se) => `<section class="serie-bloc" aria-labelledby="s-${se.id}">
+  ${groupe.series.length > 1 ? `<h2 class="annee-titre" id="s-${se.id}">${h(se.id === 'blip' ? 'bLIP' : se.id.toUpperCase())}</h2>` : `<h2 class="masque" id="s-${se.id}">${h(s.titre)}</h2>`}
+  <ol class="specs-liste">${se.entries.map(fiche).join('\n')}</ol>
+</section>`).join('\n')}
+</div>
+</div>`;
+  return page({
+    headOpts: {
+      title: t.titreSerie(s.titre, entries.length),
+      description: t.descSerie(s.titre, entries.length),
+      path: lien.specs(groupe.id),
+      alt: autres().specs(groupe.id),
+      jsonLd,
+      assets,
+    },
+    body,
+    bodyClass: 'p-specs',
+    picto,
+    letters,
+    total,
+    current: 'specs',
   });
 }

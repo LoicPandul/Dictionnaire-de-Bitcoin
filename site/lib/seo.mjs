@@ -1,6 +1,7 @@
 // Données structurées (JSON-LD), sitemap et robots. Mêmes types que sur pandul.fr :
 // DefinedTermSet pour le dictionnaire, DefinedTerm par définition, BreadcrumbList partout.
 import { url, site } from '../config.mjs';
+import { t, lien, categoryLabel } from './i18n.mjs';
 
 export const SET_ID = `${url}/#dictionnaire`;
 export const PERSON_ID = 'https://pandul.fr/#person-loic';
@@ -33,18 +34,18 @@ export function homeJsonLd({ total, description }) {
     {
       '@type': 'WebSite',
       '@id': `${url}/#site`,
-      url: `${url}/`,
-      name: site.title,
-      inLanguage: 'fr',
+      url: `${url}${lien.accueil()}`,
+      name: t.marque,
+      inLanguage: t.code,
       author: { '@id': PERSON_ID },
     },
     {
       '@type': 'DefinedTermSet',
       '@id': SET_ID,
-      name: site.title,
+      name: t.marque,
       description,
-      url: `${url}/`,
-      inLanguage: 'fr',
+      url: `${url}${lien.accueil()}`,
+      inLanguage: t.code,
       author: { '@id': PERSON_ID },
       license: site.licenseUrl,
     },
@@ -68,7 +69,7 @@ export function homeJsonLd({ total, description }) {
 }
 
 export function definitionJsonLd(def) {
-  const pageUrl = `${url}/${def.slug}/`;
+  const pageUrl = `${url}${lien.def(def.slug)}`;
   const alt = [def.englishTerm, def.frenchTerm].filter(Boolean);
   return graph([
     {
@@ -77,13 +78,14 @@ export function definitionJsonLd(def) {
       name: def.title,
       ...(alt.length === 1 ? { alternateName: alt[0] } : alt.length ? { alternateName: alt } : {}),
       ...(def.description ? { description: def.description } : {}),
+      inLanguage: def.lang,
       url: pageUrl,
       termCode: def.slug,
       inDefinedTermSet: { '@id': SET_ID },
     },
     crumbs(pageUrl, [
-      ['Dictionnaire', '/'],
-      [def.category, `/categorie/${def.categorySlug}/`],
+      [t.marque, lien.accueil()],
+      [categoryLabel(def.category), lien.categorie({ name: def.category, slug: def.categorySlug })],
       [def.title, null],
     ]),
   ]);
@@ -97,16 +99,16 @@ export function listJsonLd({ path, name, defs }) {
       '@id': pageUrl,
       name,
       url: pageUrl,
-      inLanguage: 'fr',
+      inLanguage: t.code,
       isPartOf: { '@id': SET_ID },
       mainEntity: {
         '@type': 'ItemList',
         numberOfItems: defs.length,
-        itemListElement: defs.map((d, i) => ({ '@type': 'ListItem', position: i + 1, url: `${url}/${d.slug}/`, name: d.title })),
+        itemListElement: defs.map((d, i) => ({ '@type': 'ListItem', position: i + 1, url: `${url}${lien.def(d.slug)}`, name: d.title })),
       },
     },
     crumbs(pageUrl, [
-      ['Dictionnaire', '/'],
+      [t.marque, lien.accueil()],
       [name, null],
     ]),
   ]);

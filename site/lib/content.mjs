@@ -7,6 +7,41 @@ import path from 'node:path';
 
 const collator = new Intl.Collator('fr', { sensitivity: 'base', numeric: true });
 export const compareFr = (a, b) => collator.compare(a, b);
+const collatorEn = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
+
+// Traductions anglaises (definitions/en, écrites par un autre chantier) : un dossier par entrée,
+// nommé comme le dossier français (definitions/en/<lettre>/<slug>/ ou definitions/en/<slug>/),
+// avec definition.md et, s'ils existent, courte.md et metadata.yaml (title, english_term…).
+// Le dossier est retrouvé par son nom, ou par l'uuid ou le slug de son metadata.yaml.
+// Rien n'est écrit en dur : les entrées sans dossier anglais restent en français.
+export function loadTranslations(repoRoot, lang) {
+  const root = path.join(repoRoot, 'definitions', lang);
+  const found = new Map();
+  if (!fs.existsSync(root)) return found;
+  const walk = (dir, depth) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (!e.isDirectory()) continue;
+      const d = path.join(dir, e.name);
+      const md = path.join(d, 'definition.md');
+      if (fs.existsSync(md)) {
+        const metaPath = path.join(d, 'metadata.yaml');
+        const meta = fs.existsSync(metaPath) ? parseMetadata(fs.readFileSync(metaPath, 'utf8')) : {};
+        const courtePath = path.join(d, 'courte.md');
+        const tr = {
+          dir: d,
+          sourcePath: path.relative(repoRoot, md),
+          body: fs.readFileSync(md, 'utf8').replace(/\r\n/g, '\n'),
+          courte: fs.existsSync(courtePath) ? fs.readFileSync(courtePath, 'utf8').trim() : '',
+          meta,
+        };
+        if (!tr.body.trim()) continue;
+        for (const k of [e.name, meta.slug, meta.uuid]) if (k) found.set(k, tr);
+      } else if (depth < 2) walk(d, depth + 1);
+    }
+  };
+  walk(root, 0);
+  return found;
+}
 
 export function slugify(str) {
   return str
@@ -137,7 +172,9 @@ export function loadCategoryNotes(file) {
   return notes;
 }
 
-export function loadDictionary(repoRoot) {
+export function loadDictionary(repoRoot, { lang = 'fr' } = {}) {
+  const traductions = lang === 'fr' ? new Map() : loadTranslations(repoRoot, lang);
+  const compare = lang === 'fr' ? compareFr : (a, b) => collatorEn.compare(a, b);
   const sourceDir = path.join(repoRoot, 'definitions', 'fr');
   const warnings = [];
   const sanitizationHits = [];
@@ -162,9 +199,12 @@ export function loadDictionary(repoRoot) {
       const { sanitized, hits } = sanitizeBody(raw);
       for (const hit of hits) sanitizationHits.push({ slug: meta.slug, ...hit });
 
+      const courtePath = path.join(defDir, 'courte.md');
+      const courte = fs.existsSync(courtePath) ? fs.readFileSync(courtePath, 'utf8').trim() : '';
       const def = {
         uuid: meta.uuid,
         title: meta.title,
+        titleFr: meta.title,
         slug: meta.slug,
         category: meta.category || 'SANS CATÉGORIE',
         categorySlug: slugify(meta.category || 'sans categorie'),
@@ -177,7 +217,24 @@ export function loadDictionary(repoRoot) {
         sourcePath: path.relative(repoRoot, mdPath),
         body: sanitized,
         description: computeMetaDescription(raw) || STUB_DESCRIPTIONS[meta.slug] || null,
+        // La version courte du livre (courte.md) : le résumé des listes, des cartes d'aperçu et de la recherche.
+        courte: courte ? stripMarkdown(courte) : null,
+        lang: 'fr',
       };
+      const tr = lang === 'fr' ? null : traductions.get(meta.uuid) || traductions.get(meta.slug) || traductions.get(entry);
+      if (tr) {
+        def.lang = lang;
+        def.title = tr.meta.title || def.title;
+        def.englishTerm = tr.meta.english_term || def.englishTerm;
+        def.frenchTerm = tr.meta.french_term || (def.title !== def.titleFr ? def.titleFr : def.frenchTerm);
+        def.sourcePath = tr.sourcePath;
+        def.body = sanitizeBody(tr.body).sanitized;
+        def.description = computeMetaDescription(tr.body) || def.description;
+        def.courte = tr.courte ? stripMarkdown(tr.courte) : null;
+        const initiale = def.title.normalize('NFD').replace(/[^A-Za-z]/g, '')[0];
+        if (initiale) def.letter = initiale.toUpperCase();
+      }
+      def.resume = def.courte || def.description;
       if (!def.description) warnings.push(`description omise : ${def.slug}`);
       definitions.push(def);
       if (def.uuid) byUuid.set(def.uuid, def);
@@ -198,7 +255,7 @@ export function loadDictionary(repoRoot) {
   }
 
   // Ordre de lecture : alphabétique français sur le titre, comme pandul.fr.
-  definitions.sort((a, b) => compareFr(a.title, b.title));
+  definitions.sort((a, b) => compare(a.title, b.title));
   // Rang dans le livre et voisins alphabétiques : les mots-repères des pages de définition.
   definitions.forEach((def, i) => {
     def.n = i + 1;
@@ -231,6 +288,7 @@ export function loadDictionary(repoRoot) {
   return {
     definitions,
     categories: [...categories.values()].sort((a, b) => compareFr(a.name, b.name)),
+    translated: definitions.filter((d) => d.lang !== 'fr').length,
     letters: lettersMap,
     warnings,
     unresolved,

@@ -64,7 +64,7 @@ export function createLinker(definitions) {
   // Nombre de mots de la plus longue forme : les n-grammes du texte sont essayés du plus long au plus court.
   const maxMots = Math.max(...[...parCle.keys()].map((k) => k.split(' ').length));
 
-  return function lier(html, page, { label }) {
+  return function lier(html, page, { label, base = '' }) {
     const associes = new Set(page.related.map((d) => d.slug));
     const deja = new Set([page.slug]);
     let n = 0;
@@ -77,7 +77,7 @@ export function createLinker(definitions) {
       deja.add(trouve.def.slug);
       n++;
       const def = trouve.def;
-      return `<a class="renvoi-texte renvoi-code" href="/${def.slug}/" data-apercu="${h(def.description || '')}" data-apercu-cat="${h(label(def.category))}"><code>${code}</code></a>`;
+      return `<a class="renvoi-texte renvoi-code" href="${base}/${def.slug}/" data-apercu="${h(def.resume || def.description || '')}" data-apercu-cat="${h(label(def.category))}"><code>${code}</code></a>`;
     });
     return html.replace(/(<[^>]+>)|([^<]+)/g, (m, tag, text) => {
       if (tag) {
@@ -110,7 +110,7 @@ export function createLinker(definitions) {
           deja.add(def.slug);
           n++;
           out += h(brut.slice(pos, debut));
-          out += `<a class="renvoi-texte" href="/${def.slug}/" data-apercu="${h(def.description || '')}" data-apercu-cat="${h(label(def.category))}">${h(extrait)}</a>`;
+          out += `<a class="renvoi-texte" href="${base}/${def.slug}/" data-apercu="${h(def.resume || def.description || '')}" data-apercu-cat="${h(label(def.category))}">${h(extrait)}</a>`;
           pos = fin;
           i += k - 1;
           break;

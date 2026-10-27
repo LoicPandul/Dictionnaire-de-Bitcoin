@@ -70,6 +70,11 @@ http
         if (fs.existsSync(path.join(file, 'index.html'))) return send(req, res, path.join(file, 'index.html'));
       } else return send(req, res, file);
     } catch {}
+    // Comme Cloudflare Pages : la 404.html la plus proche de l'adresse demandée (/en/404.html sous /en/).
+    for (let dir = path.dirname(file); dir.startsWith(root); dir = path.dirname(dir)) {
+      if (fs.existsSync(path.join(dir, '404.html'))) return send(req, res, path.join(dir, '404.html'), 404);
+      if (dir === root) break;
+    }
     return send(req, res, path.join(root, '404.html'), 404);
   })
   .listen(port, host, () => console.log(`Aperçu de ${path.relative(process.cwd(), root) || '.'} sur http://${host}:${port}/`));

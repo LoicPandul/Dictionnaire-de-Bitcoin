@@ -44,6 +44,10 @@ export function headers({ inlineHash }) {
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 /tranche.json
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+/en/recherche.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+/en/tranche.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /dictionnaire-de-bitcoin.pdf
   Content-Disposition: inline; filename="dictionnaire-de-bitcoin.pdf"
@@ -51,9 +55,11 @@ export function headers({ inlineHash }) {
 `;
 }
 
-// L'ancien préfixe de pandul.fr mène aux bonnes adresses.
-export function redirects() {
+// L'ancien préfixe de pandul.fr mène aux bonnes adresses ; les catégories renommées en 2027
+// (anciennes → nouvelles, calculées par le build) mènent à leur remplaçante.
+export function redirects({ anciennes = [] } = {}) {
   return [
+    ...(anciennes.length ? ['# Catégories renommées par l’édition 2027', ...anciennes.flatMap(([a, b]) => [`/categorie/${a}/ /categorie/${b}/ 301`, `/dictionnaire/categorie/${a}/ /categorie/${b}/ 301`]), ''] : []),
     '# Ancien préfixe de pandul.fr, si quelqu’un recopie une adresse à la main',
     '/dictionnaire/ / 301',
     '/dictionnaire/categorie/:cat/ /categorie/:cat/ 301',

@@ -53,7 +53,10 @@ const apostrophes = (html) =>
     .join('');
 
 // linker (facultatif) : ajoute les renvois dans le texte, avant que les formules soient remises en place.
-export function createRenderer({ linker = null, label = (x) => x } = {}) {
+// base : préfixe de langue des liens (« » ou « /en »). texts : libellés (agrandir le schéma).
+// Les schémas pointent vers /<slug>/assets/ (le seul exemplaire des fichiers, partagé par les langues),
+// en SVG quand le dossier en a un (charte 2027, section 5 : format préféré sur le site).
+export function createRenderer({ linker = null, label = (x) => x, base = '', agrandir = 'Agrandir le schéma' } = {}) {
   let current = null;
   const marked = new Marked({ gfm: true, breaks: false });
   marked.use({
@@ -63,7 +66,10 @@ export function createRenderer({ linker = null, label = (x) => x } = {}) {
         const size = current ? pngSize(path.join(current.sourceDir, local)) : null;
         const dims = size ? ` width="${size.width}" height="${size.height}"` : '';
         const caption = title ? `<figcaption>${escapeHtml(title)}</figcaption>` : '';
-        return `<figure class="figure"><a href="${escapeHtml(local)}" aria-label="Agrandir le schéma"><img src="${escapeHtml(local)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a>${caption}<a class="figure-ouvrir" href="${escapeHtml(local)}">Agrandir le schéma</a></figure>`;
+        const svg = local.replace(/\.png$/, '.svg');
+        const vectoriel = current && svg !== local && fs.existsSync(path.join(current.sourceDir, svg));
+        const src = `/${current?.slug}/${vectoriel ? svg : local}`;
+        return `<figure class="figure"><div class="figure-cadre" tabindex="0"><a href="${escapeHtml(src)}" aria-label="${escapeHtml(agrandir)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(text)}"${dims} loading="lazy" decoding="async"></a></div>${caption}<a class="figure-ouvrir" href="${escapeHtml(src)}">${escapeHtml(agrandir)}</a></figure>`;
       },
       link({ href, title, tokens }) {
         const text = this.parser.parseInline(tokens);
@@ -83,7 +89,7 @@ export function createRenderer({ linker = null, label = (x) => x } = {}) {
     current = def;
     const { text, formulas } = protectMath(def.body);
     let html = marked.parse(text);
-    if (linker) html = linker(html, def, { label });
+    if (linker) html = linker(html, def, { label, base });
     html = apostrophes(html);
     html = restoreMath(html, formulas);
     // Une figure seule dans un paragraphe : on retire le <p> qui l'enveloppe.

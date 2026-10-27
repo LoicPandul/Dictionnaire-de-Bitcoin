@@ -6,6 +6,8 @@
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
   const coupe = (s) => esc(affiche(s)).replace(/_/g, '_<wbr>');
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
+  const B = d.documentElement.dataset.base || '';
+  const tx = window.dicoTexte || ((k) => k);
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
   const sectionJour = d.querySelector('[data-jour]');
@@ -15,7 +17,7 @@
   let termes = null;
   let longueurs = null;
   const charger = () =>
-    Promise.all([window.dicoIndex(), fetch('/tranche.json').then((r) => r.json())]).then(([idx, tranche]) => {
+    Promise.all([window.dicoIndex(), fetch(`${B}/tranche.json`).then((r) => r.json())]).then(([idx, tranche]) => {
       termes = idx;
       longueurs = tranche.longueurs;
     });
@@ -27,8 +29,8 @@
     const lien = sectionJour.querySelector('[data-jour-lien]');
     const lire = sectionJour.querySelector('[data-jour-lire]');
     const cat = sectionJour.querySelector('[data-jour-cat]');
-    lien.href = lire.href = `/${t.slug}/`;
-    cat.href = `/categorie/${t.cat[1]}/`;
+    lien.href = lire.href = `${B}/${t.slug}/`;
+    cat.href = t.cat[2] || cat.href;
     cat.innerHTML = `${picto(t.cat[1])}<span>${esc(t.cat[0])}</span>`;
     sectionJour.querySelector('[data-jour-desc]').textContent = t.desc.replace(/'/g, '’');
     if (!anime || reduit.matches) { nomJour.innerHTML = coupe(t.title); return; }
@@ -62,7 +64,7 @@
     if (!t) return;
     courant = i;
     apercu.lien.innerHTML = coupe(t.title);
-    apercu.lien.href = `/${t.slug}/`;
+    apercu.lien.href = `${B}/${t.slug}/`;
     apercu.cat.textContent = t.cat[0];
     apercu.desc.textContent = t.desc.replace(/'/g, '’').replace(/\s*\.\.\.$/, '…');
     const l = lettreDe(i);
@@ -143,7 +145,7 @@
       const i = Math.min(lettreActive.fin - 1, Math.max(lettreActive.debut, lettreActive.debut + k));
       if (i !== courant) viser(i);
     });
-    bande.addEventListener('click', () => { if (mode === 'bureau') location.href = `/${termes[courant].slug}/`; });
+    bande.addEventListener('click', () => { if (mode === 'bureau') location.href = `${B}/${termes[courant].slug}/`; });
     bande.style.cursor = 'pointer';
   }
 
@@ -219,7 +221,7 @@
     do { courant = Math.floor(Math.random() * termes.length); } while (courant === duJour && termes.length > 1);
     bande.setAttribute('role', 'slider');
     bande.setAttribute('tabindex', '0');
-    bande.setAttribute('aria-label', 'Tranche du dictionnaire : un trait par mot');
+    bande.setAttribute('aria-label', tx('trancheAria'));
     bande.setAttribute('aria-valuemin', '1');
     bande.setAttribute('aria-valuemax', String(termes.length));
     // Souris ou pavé sur grand écran : la bande d'une lettre ; écran tactile ou étroit : la tranche entière sous l'aiguille.
@@ -235,7 +237,7 @@
       else if (e.key === 'PageUp') i = (lettres[k - 1] || l).debut;
       else if (e.key === 'Home') i = 0;
       else if (e.key === 'End') i = termes.length - 1;
-      else if (e.key === 'Enter') { location.href = `/${termes[courant].slug}/`; return; }
+      else if (e.key === 'Enter') { location.href = `${B}/${termes[courant].slug}/`; return; }
       else return;
       e.preventDefault();
       i = Math.max(0, Math.min(termes.length - 1, i));
@@ -255,7 +257,7 @@
   const demarrer = () => charger().then(() => {
     const t = termes[jour() % termes.length];
     const lien = sectionJour?.querySelector('[data-jour-lien]');
-    if (t && lien && lien.getAttribute('href') !== `/${t.slug}/`) {
+    if (t && lien && lien.getAttribute('href') !== `${B}/${t.slug}/`) {
       poserMot(t, false);
     }
     if (bande) brancherTranche();

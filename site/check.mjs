@@ -1,5 +1,6 @@
 // Vérifie le site construit (site/dist) :
-//   - une page par définition de definitions/fr ;
+//   - une page par définition de definitions/fr, en français et sous /en/ ;
+//   - aucun lien interne cassé (fichier ou ancre) dans toutes les pages ;
 //   - le contrat d'URL attendu par les redirections de pandul.fr :
 //       /<slug>/, /categorie/<slug>/, /lettre/<lettre>/ ;
 //   - si le dépôt pandul.fr est présent, mêmes slugs que ses collections Jekyll.
@@ -51,14 +52,17 @@ const samples = { definitions: [], categories: [], letters: [] };
 if (fs.existsSync(path.join(pandulDir, '_dictionnaire'))) {
   console.log(`Comparaison avec ${pandulDir}`);
   const pandulSlugs = fs.readdirSync(path.join(pandulDir, '_dictionnaire')).filter((f) => f.endsWith('.md')).map((f) => f.replace(/\.md$/, '')).sort();
-  (pandulSlugs.length === built.length ? ok : ko)(`${pandulSlugs.length} définitions sur pandul.fr, ${built.length} ici`);
+  (built.length >= pandulSlugs.length ? ok : ko)(`${pandulSlugs.length} définitions sur pandul.fr, ${built.length} ici`);
   const missing = pandulSlugs.filter((s) => !fs.existsSync(path.join(dist, s, 'index.html')));
   (missing.length === 0 ? ok : ko)(`slugs de pandul.fr absents ici : ${missing.length}${missing.length ? ` (${missing.slice(0, 5).join(', ')}…)` : ''}`);
   const step = Math.floor(pandulSlugs.length / 10);
   samples.definitions = Array.from({ length: 10 }, (_, i) => pandulSlugs[i * step + 3]);
   const cats = fs.readdirSync(path.join(pandulDir, '_categorie')).map((f) => f.replace(/\.md$/, ''));
+  // Une catégorie renommée en 2027 compte si _redirects la mène à sa remplaçante.
+  const redirs = fs.readFileSync(path.join(dist, '_redirects'), 'utf8');
   const catMissing = cats.filter((c) => !fs.existsSync(path.join(dist, 'categorie', c, 'index.html')));
-  (catMissing.length === 0 ? ok : ko)(`${cats.length} catégories de pandul.fr, absentes ici : ${catMissing.length}`);
+  const catRedirigees = catMissing.filter((c) => new RegExp(`^/categorie/${c}/ /categorie/[a-z0-9-]+/ 301$`, 'm').test(redirs));
+  (catMissing.length === catRedirigees.length ? ok : ko)(`${cats.length} catégories de pandul.fr : ${cats.length - catMissing.length} présentes, ${catRedirigees.length} redirigées (${catRedirigees.join(', ') || 'aucune'}), ${catMissing.length - catRedirigees.length} perdues`);
   const lets = fs.readdirSync(path.join(pandulDir, '_lettre')).map((f) => f.replace(/\.md$/, ''));
   const letMissing = lets.filter((l) => !fs.existsSync(path.join(dist, 'lettre', l, 'index.html')));
   (letMissing.length === 0 ? ok : ko)(`${lets.length} lettres de pandul.fr, absentes ici : ${letMissing.length}`);
@@ -103,11 +107,60 @@ for (const p of paths) {
 // 4. Sitemap et données structurées
 const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
 const locs = (sitemap.match(/<loc>/g) || []).length;
-(locs === sourceSlugs.length + 1 + fs.readdirSync(path.join(dist, 'categorie')).length + fs.readdirSync(path.join(dist, 'lettre')).length ? ok : ko)(`sitemap : ${locs} adresses`);
+const absentsSitemap = sourceSlugs.filter((s) => !sitemap.includes(`<loc>${url}/${s}/</loc>`));
+(absentsSitemap.length === 0 ? ok : ko)(`sitemap : ${locs} adresses, toutes les définitions françaises comprises`);
 const sample = fs.readFileSync(path.join(dist, samples.definitions[0], 'index.html'), 'utf8');
 (/"@type":"DefinedTerm"/.test(sample) && /"inDefinedTermSet"/.test(sample) ? ok : ko)('JSON-LD DefinedTerm sur les définitions');
 (/"@type":"DefinedTermSet"/.test(fs.readFileSync(path.join(dist, 'index.html'), 'utf8')) ? ok : ko)('JSON-LD DefinedTermSet sur l’accueil');
 (fs.existsSync(path.join(dist, 'dictionnaire-de-bitcoin.pdf')) ? ok : ko)('PDF téléchargeable');
+
+// 5. Anglais, chronologie, spécifications
+console.log('Édition 2027 et anglais');
+const enBuilt = sourceSlugs.filter((s) => fs.existsSync(path.join(dist, 'en', s, 'index.html')));
+(enBuilt.length === sourceSlugs.length ? ok : ko)(`${enBuilt.length} pages sous /en/ pour ${sourceSlugs.length} définitions`);
+for (const p of ['/en/', '/chronologie/', '/en/timeline/', '/specifications/', '/en/specifications/', '/partie/personnes/', '/en/part/people/', '/en/404.html']) {
+  const f = p.endsWith('.html') ? path.join(dist, p) : path.join(dist, p, 'index.html');
+  (fs.existsSync(f) ? ok : ko)(`${p}`);
+}
+const enHome = fs.readFileSync(path.join(dist, 'en', 'index.html'), 'utf8');
+(/<html lang="en"/.test(enHome) && /hreflang="fr"/.test(enHome) ? ok : ko)('accueil anglais : lang="en" et liens hreflang');
+
+// 6. Liens internes : chaque href ou src qui commence par « / » mène à un fichier, et son ancre existe.
+console.log('Liens internes');
+const pages = [];
+const walk = (dir) => { for (const e of fs.readdirSync(dir, { withFileTypes: true })) { const f = path.join(dir, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith('.html')) pages.push(f); } };
+walk(dist);
+const idsCache = new Map();
+const idsDe = (file) => {
+  if (!idsCache.has(file)) idsCache.set(file, new Set([...fs.readFileSync(file, 'utf8').matchAll(/\sid="([^"]+)"/g)].map((m) => m[1])));
+  return idsCache.get(file);
+};
+const cible = (p) => {
+  const f = path.join(dist, decodeURIComponent(p));
+  if (p.endsWith('/')) return fs.existsSync(path.join(f, 'index.html')) ? path.join(f, 'index.html') : null;
+  return fs.existsSync(f) && fs.statSync(f).isFile() ? f : null;
+};
+const casses = new Map();
+let nLiens = 0;
+for (const page of pages) {
+  const html = fs.readFileSync(page, 'utf8');
+  for (const m of html.matchAll(/\s(?:href|src)="([^"]+)"/g)) {
+    const v = m[1].replace(/&amp;/g, '&');
+    if (v.startsWith('//') || !(v.startsWith('/') || v.startsWith('#'))) continue;
+    nLiens++;
+    const [chemin, ancre] = v.split('#');
+    const fichier = chemin ? cible(chemin.split('?')[0]) : page;
+    let erreur = null;
+    if (!fichier) erreur = 'cible absente';
+    else if (ancre && /\.(html|svg)$/.test(fichier) && !idsDe(fichier).has(decodeURIComponent(ancre))) erreur = 'ancre absente';
+    if (erreur) {
+      const k = `${v} (${erreur})`;
+      if (!casses.has(k)) casses.set(k, path.relative(dist, page));
+    }
+  }
+}
+(casses.size === 0 ? ok : ko)(`${nLiens} liens internes dans ${pages.length} pages, ${casses.size} cassé(s)`);
+for (const [k, p] of [...casses].slice(0, 15)) console.log(`       ${k} dans ${p}`);
 
 console.log(failures ? `\n${failures} échec(s).` : '\nTout est conforme.');
 process.exit(failures ? 1 : 0);

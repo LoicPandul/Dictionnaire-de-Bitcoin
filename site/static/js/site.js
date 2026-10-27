@@ -5,6 +5,13 @@
   const root = d.documentElement;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   root.classList.add('anim');
+  // Langue de la page : préfixe des adresses (« » ou « /en ») et textes de l'interface (lib/i18n.mjs, js).
+  const B = root.dataset.base || '';
+  let T = {};
+  try { T = JSON.parse(d.getElementById('i18n')?.textContent || '{}'); } catch {}
+  const tx = (k, v = {}) => String(T[k] ?? k).replace(/\{(\w+)\}/g, (_, x) => v[x] ?? '');
+  const loc = T.locale || 'fr-FR';
+  window.dicoTexte = tx;
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
   // Résumé coupé au mot (même règle que lib/templates.mjs, resume).
   const resume = (t, n = 84) => {
@@ -24,7 +31,7 @@
   // ------------------------------------------------------------ Thème
   const themeBtn = d.querySelector('[data-theme-toggle]');
   const sombre = () => root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
-  const majTheme = () => themeBtn?.setAttribute('aria-label', sombre() ? 'Passer en thème clair' : 'Passer en thème sombre');
+  const majTheme = () => themeBtn?.setAttribute('aria-label', sombre() ? tx('themeClair') : tx('themeSombre'));
   majTheme();
   themeBtn?.addEventListener('click', () => {
     const t = sombre() ? 'light' : 'dark';
@@ -95,7 +102,7 @@
     const boite = d.querySelector('[data-apercu-lettre]');
     const geste = d.querySelector('[data-geste]');
     const tactile = matchMedia('(pointer: coarse)').matches;
-    if (geste) geste.textContent = tactile ? 'Glissez le doigt sur les traits, puis touchez le mot.' : 'Survolez les traits.';
+    if (geste) geste.textContent = tactile ? tx('gesteTactile') : tx('gesteSouris');
     const NS = 'http://www.w3.org/2000/svg';
     const vb = tl.viewBox.baseVal;
     // Le trait visé : une colonne d'or d'au moins 4 px, quelle que soit la densité de la lettre.
@@ -156,24 +163,32 @@
     });
   }
 
-  // ------------------------------------------------------------ Jaquette : profondeur au curseur
-  // La couronne et les racines glissent de quelques pixels en sens opposés : la canopée flotte devant.
-  const objet = d.querySelector('.jaquette-objet');
-  if (objet && matchMedia('(hover: hover) and (pointer: fine)').matches && !reduit.matches) {
-    const couronne = objet.querySelector('.jaquette-couronne img');
-    const racines = objet.querySelector('.jaquette-racines img');
+  // ------------------------------------------------------------ L'Allée des baobabs : profondeur au pointeur ou au défilement
+  // Souris : chaque plan suit le curseur selon sa distance (soleil, arbres du fond, grand baobab).
+  // Doigt ou pavé : le soleil descend derrière l'horizon pendant qu'on fait défiler la page.
+  const allee = d.querySelector('[data-allee]');
+  if (allee && !reduit.matches) {
     let raf = 0;
-    objet.addEventListener('pointermove', (e) => {
+    const poser = (x, y) => { allee.style.setProperty('--px', x.toFixed(3)); allee.style.setProperty('--py', y.toFixed(3)); };
+    if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      const objet = allee.closest('.jaquette-objet') || allee;
+      objet.addEventListener('pointermove', (e) => {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          const r = objet.getBoundingClientRect();
+          poser((e.clientX - r.left) / r.width - 0.5, (e.clientY - r.top) / r.height - 0.5);
+        });
+      });
+      objet.addEventListener('pointerleave', () => poser(0, 0));
+    }
+    const defiler = () => {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
-        const r = objet.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - 0.5;
-        const y = (e.clientY - r.top) / r.height - 0.5;
-        couronne.style.translate = `${(x * 8).toFixed(1)}px ${(y * 4).toFixed(1)}px`;
-        racines.style.translate = `${(-x * 5).toFixed(1)}px 0`;
+        const r = allee.getBoundingClientRect();
+        allee.style.setProperty('--defil', Math.min(1, Math.max(0, -r.top / Math.max(1, r.height))).toFixed(3));
       });
-    });
-    objet.addEventListener('pointerleave', () => { couronne.style.translate = racines.style.translate = '0 0'; });
+    };
+    addEventListener('scroll', defiler, { passive: true });
   }
 
   // ------------------------------------------------------------ Renvois entrants repliés au-delà de 8
@@ -186,7 +201,7 @@
     b.type = 'button';
     b.className = 'cites-plus';
     b.setAttribute('aria-expanded', 'false');
-    b.textContent = `Voir les ${n - limite} autres`;
+    b.textContent = tx('voirAutres', { n: n - limite });
     b.addEventListener('click', () => {
       ul.classList.remove('replie');
       b.remove();
@@ -200,8 +215,8 @@
   if (citer) {
     citer.hidden = false;
     const confirmer = (ok) => {
-      citer.textContent = ok ? 'Citation copiée' : 'Copiez : ' + citer.dataset.citer;
-      setTimeout(() => (citer.textContent = 'Citer cette définition'), ok ? 2400 : 8000);
+      citer.textContent = ok ? tx('copiee') : tx('copiez') + citer.dataset.citer;
+      setTimeout(() => (citer.textContent = tx('citer')), ok ? 2400 : 8000);
     };
     const secours = () => {
       const t = d.createElement('textarea');
@@ -230,13 +245,13 @@
     const img = a.querySelector('img');
     const loupe = d.createElement('dialog');
     loupe.className = 'loupe';
-    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || 'Schéma')}</p><p class="loupe-boutons"><button class="recherche-fermer" type="button" data-zoom aria-pressed="false">Agrandir</button> <button class="recherche-fermer" type="button" data-fermer>Fermer</button></p></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
+    loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || tx('schema'))}</p><p class="loupe-boutons"><button class="recherche-fermer" type="button" data-zoom aria-pressed="false">${tx('agrandir')}</button> <button class="recherche-fermer" type="button" data-fermer>${tx('fermer')}</button></p></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
     d.body.append(loupe);
     loupe.querySelector('[data-fermer]').addEventListener('click', () => loupe.close());
     // Ajusté à la largeur d'abord ; « Agrandir » double la taille (et le pincement reste possible).
     loupe.querySelector('[data-zoom]').addEventListener('click', (ev) => {
       const z = loupe.classList.toggle('loupe--zoom');
-      ev.currentTarget.textContent = z ? 'Ajuster' : 'Agrandir';
+      ev.currentTarget.textContent = z ? tx('ajuster') : tx('agrandir');
       ev.currentTarget.setAttribute('aria-pressed', String(z));
     });
     loupe.addEventListener('close', () => { loupe.remove(); a.focus({ preventScroll: true }); });
@@ -279,7 +294,7 @@
       clearTimeout(minuteur);
       minuteur = setTimeout(() => {
         lien = a;
-        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.textContent.replace(/^Mot (précédent|suivant) : /, ''))}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${esc(a.dataset.apercu.replace(/'/g, '’').replace(/\.\.\./g, '…'))}</p>`;
+        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.querySelector('.reperes-nom')?.textContent || a.textContent)}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${esc(a.dataset.apercu.replace(/'/g, '’').replace(/\.\.\./g, '…'))}</p>`;
         carte.hidden = false;
         a.setAttribute('aria-describedby', 'carte-apercu');
         const r = a.getBoundingClientRect();
@@ -337,11 +352,11 @@
   const charger = () => {
     if (index) return Promise.resolve(index);
     chargement ||= Promise.all([
-      fetch('/recherche.json').then((r) => r.json()),
-      fetch('/tranche.json').then((r) => r.json()).catch(() => ({ renvois: [] })),
+      fetch(`${B}/recherche.json`).then((r) => r.json()),
+      fetch(`${B}/tranche.json`).then((r) => r.json()).catch(() => ({ renvois: [] })),
     ]).then(([j, tranche]) => {
-      index = j.terms.map(([title, slug, cat, alt, desc], i) => ({
-        i, title, slug, alt, desc,
+      index = j.terms.map(([title, slug, cat, alt, desc, lang], i) => ({
+        i, title, slug, alt, desc, lang,
         cat: j.categories[cat] || ['', ''],
         poids: tranche.renvois?.[i] || 0,
         pt: plat(title), ct: compact(title), pa: plat(alt), pd: plat(desc),
@@ -448,8 +463,8 @@
   const surligner = (title, at, len) => { title = affiche(title); return at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`; };
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
-  <a href="/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt.replace(/'/g, '’'))}</span>` : ''}${t.desc ? `<span class="resultat-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`;
-  const pluriel = (n, un, plusieurs) => `${n.toLocaleString('fr-FR')} ${n > 1 ? plusieurs : un}`;
+  <a href="${B}/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt.replace(/'/g, '’'))}</span>` : ''}${t.desc ? `<span class="resultat-desc"${t.lang ? ` lang="${t.lang}"` : ''}>${esc(resume(t.desc))}</span>` : ''}</a></li>`;
+  const pluriel = (n, [un, plusieurs] = ['', '']) => `${n.toLocaleString(loc)} ${n > 1 ? plusieurs : un}`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
   // ------------------------------------------------------------ Fenêtre de recherche
@@ -472,10 +487,10 @@
   function suggestions(avecCategories) {
     const n = index ? index[jour() % index.length] : null;
     const h = index ? index[Math.floor(Math.random() * index.length)] : null;
-    const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="/lettre/${l.toLowerCase()}/">${l}</a>`).join('');
+    const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="${B}/${T.lettre || 'lettre'}/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
-    const cats = avecCategories && index?.categories ? `<p>Ou par catégorie&#8239;:</p><div class="cats-mini">${index.categories.map(([label, slug]) => `<a href="/categorie/${slug}/">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
-    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>Vos derniers mots&#8239;: ${derniers.map((m) => `<a class="lien" href="/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>Le mot du jour&#8239;: <a class="lien" href="/${n.slug}/">${esc(affiche(n.title))}</a>. Un mot au hasard&#8239;: <a class="lien" href="/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>Ou par lettre&#8239;:</p><div class="abc">${lettres}</div>${cats}</li>`;
+    const cats = avecCategories && index?.categories ? `<p>${tx('parCategorie')}</p><div class="cats-mini">${index.categories.map(([label, slug, chemin]) => `<a href="${chemin}">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
+    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>${tx('derniers')} ${derniers.map((m) => `<a class="lien" href="${B}/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>${tx('motDuJour')} <a class="lien" href="${B}/${n.slug}/">${esc(affiche(n.title))}</a>. ${tx('auHasard')} <a class="lien" href="${B}/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>${tx('parLettre')}</p><div class="abc">${lettres}</div>${cats}</li>`;
   }
 
   function vide() {
@@ -490,12 +505,12 @@
     if (!q.trim()) return vide();
     const { res, approx, total } = chercher(q);
     if (!res.length) {
-      etat.innerHTML = `Aucun mot ne correspond à «&#8239;${esc(q.trim())}&#8239;». Essayez le terme anglais ou un sigle, ou repartez d’ici&#8239;:`;
+      etat.innerHTML = tx('aucun', { q: esc(q.trim()) });
       liste.innerHTML = suggestions(true);
       champ.setAttribute('aria-expanded', 'false');
       return;
     }
-    etat.textContent = approx ? `Aucun mot exact. Vouliez-vous dire :` : total > res.length ? `${pluriel(total, 'résultat', 'résultats')}, les ${res.length} premiers` : pluriel(total, 'résultat', 'résultats');
+    etat.textContent = approx ? tx('aucunExact') : total > res.length ? tx('premiers', { total: pluriel(total, T.resultat), n: res.length }) : pluriel(total, T.resultat);
     liste.innerHTML = res.map((r, i) => ligne(r, i, 'res')).join('');
     champ.setAttribute('aria-expanded', 'true');
     selectionner(0);
@@ -520,7 +535,7 @@
         dialog.style.transformOrigin = '0 0';
       }
     }
-    charger().then(afficher).catch(() => { etat.textContent = 'L’index de recherche n’a pas pu être chargé. Vérifiez la connexion, ou parcourez par lettre.'; });
+    charger().then(afficher).catch(() => { etat.textContent = tx('indexErreur'); });
   }
   window.dicoOuvrirRecherche = ouvrir;
 
@@ -613,11 +628,11 @@
       for (const r of tous) n.set(r.t.cat[1], (n.get(r.t.cat[1]) || 0) + 1);
       const liste = index.categories.filter(([, slug]) => n.has(slug) || slug === cat).sort((a, b) => (n.get(b[1]) || 0) - (n.get(a[1]) || 0));
       const visibles = tout ? liste : liste.slice(0, 8);
-      filtres.innerHTML = `<legend class="masque">Filtrer par catégorie</legend>
-        <label class="filtre"><input type="radio" name="cat" value=""${cat ? '' : ' checked'}><span>Toutes <b>${tous.length}</b></span></label>
+      filtres.innerHTML = `<legend class="masque">${tx('filtrer')}</legend>
+        <label class="filtre"><input type="radio" name="cat" value=""${cat ? '' : ' checked'}><span>${tx('toutes')} <b>${tous.length}</b></span></label>
         ${visibles.map(([label, slug]) => `<label class="filtre"><input type="radio" name="cat" value="${slug}"${slug === cat ? ' checked' : ''}><span>${picto(slug)}${esc(label)} <b>${n.get(slug) || 0}</b></span></label>`).join('')}
         ${liste.length > visibles.length ? `<button class="filtre-plus" type="button" data-filtres-plus>+ ${liste.length - visibles.length}</button>` : ''}`;
-      if (select) select.innerHTML = `<option value="">Toutes les catégories (${tous.length})</option>${liste.map(([label, slug]) => `<option value="${slug}"${slug === cat ? ' selected' : ''}>${esc(label)} (${n.get(slug) || 0})</option>`).join('')}`;
+      if (select) select.innerHTML = `<option value="">${tx('toutes')} (${tous.length})</option>${liste.map(([label, slug]) => `<option value="${slug}"${slug === cat ? ' selected' : ''}>${esc(label)} (${n.get(slug) || 0})</option>`).join('')}`;
     };
     const lancer = () => {
       const q = input.value;
@@ -628,7 +643,7 @@
       if (!q.trim()) {
         sortie.innerHTML = '';
         filtres.innerHTML = '';
-        statut.textContent = `Tapez un terme : la recherche porte sur les ${index.length.toLocaleString('fr-FR')} définitions, leur terme anglais et leur description.`;
+        statut.textContent = tx('tapez', { n: index.length.toLocaleString(loc) });
         sortie.innerHTML = suggestions(true);
         return;
       }
@@ -637,10 +652,10 @@
       const { res, approx, total } = chercher(q, { cat, limite: 200 });
       if (!res.length) {
         const p = proches(q, 5);
-        statut.innerHTML = `Aucun mot ne correspond à «&#8239;${esc(q.trim())}&#8239;». ${p.length ? 'Les mots les plus proches&#8239;:' : 'Essayez le terme anglais ou un sigle, ou repartez des lettres et des catégories&#8239;:'}`;
+        statut.innerHTML = tx(p.length ? 'aucunProches' : 'aucunPage', { q: esc(q.trim()) });
         sortie.innerHTML = p.map((r, i) => ligne(r, i, 'page')).join('') + suggestions(true);
       } else {
-        statut.textContent = approx ? 'Aucun mot exact. Vouliez-vous dire :' : pluriel(total, 'résultat', 'résultats');
+        statut.textContent = approx ? tx('aucunExact') : pluriel(total, T.resultat);
         sortie.innerHTML = res.map((r, i) => ligne(r, i, 'page')).join('');
         // Premier affichage : les rangées arrivent l'une après l'autre (une fois, pas à chaque frappe).
         if (!sortie.dataset.vu) {
@@ -652,7 +667,7 @@
       }
       sortie.querySelectorAll('a').forEach((a) => a.removeAttribute('tabindex'));
     };
-    statut.textContent = 'Chargement de l’index…';
+    statut.textContent = tx('chargement');
     charger().then(() => { lancer(); if (!input.value) input.focus(); });
     input.addEventListener('input', () => index && lancer());
     filtres.addEventListener('change', (e) => { cat = e.target.value; index && lancer(); });
@@ -679,8 +694,8 @@
         const vus = new Set(res.map((r) => r.t.slug));
         res = res.concat(proches(q, 3 - res.length, vus));
       }
-      titre404.textContent = q === q0 ? 'Vouliez-vous dire\u202f?' : 'Résultats';
-      liste404.innerHTML = res.map(({ t }) => `<li><a href="/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`).join('');
+      titre404.textContent = q === q0 ? tx('vouliez') : tx('resultats');
+      liste404.innerHTML = res.map(({ t }) => `<li><a href="${B}/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`).join('');
       sugg.hidden = !res.length;
     };
     charger().then(montrer404);
@@ -688,6 +703,17 @@
     form.addEventListener('submit', (e) => {
       const a = liste404.querySelector('a');
       if (a) { e.preventDefault(); a.click(); }
+    });
+  }
+
+  // ------------------------------------------------------------ Spécifications : filtre par statut
+  const filtreStatut = d.querySelector('[data-filtres-statut]');
+  if (filtreStatut) {
+    filtreStatut.hidden = false;
+    const fiches = [...d.querySelectorAll('.spec[data-statut]')];
+    filtreStatut.addEventListener('change', (e) => {
+      const v = e.target.value;
+      for (const f of fiches) f.hidden = !!v && !f.dataset.statut.split(' ').includes(v);
     });
   }
 
@@ -723,7 +749,7 @@
     haut.type = 'button';
     haut.className = 'haut';
     haut.textContent = '↑';
-    haut.setAttribute('aria-label', 'Revenir en haut de la page');
+    haut.setAttribute('aria-label', tx('haut'));
     haut.hidden = true;
     haut.addEventListener('click', () => { scrollTo({ top: 0, behavior: reduit.matches ? 'auto' : 'smooth' }); d.querySelector('h1')?.focus?.(); });
     d.body.append(haut);
@@ -747,12 +773,12 @@
     const b = d.createElement('button');
     b.type = 'button';
     b.className = 'lire-suite';
-    b.textContent = 'Lire la suite';
+    b.textContent = tx('lireSuite');
     b.setAttribute('aria-expanded', 'false');
     // Le bouton déplie et replie.
     b.addEventListener('click', () => {
       const ouvert = suite.closest('.cat-note').classList.toggle('deplie');
-      b.textContent = ouvert ? 'Replier' : 'Lire la suite';
+      b.textContent = ouvert ? tx('replier') : tx('lireSuite');
       b.setAttribute('aria-expanded', String(ouvert));
     });
     suite.closest('.cat-note').after(b);
