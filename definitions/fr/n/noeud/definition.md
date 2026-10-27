@@ -2,4 +2,6 @@ Dans le réseau Bitcoin, un nœud est un ordinateur qui exécute un client du pr
 
 Il existe plusieurs types de nœuds sur Bitcoin, dont les nœuds complets et les nœuds légers. Les nœuds complets conservent une copie intégrale de la blockchain, vérifient toutes les transactions et les blocs selon les règles de consensus, et participent activement à la diffusion de transactions et de blocs sur le réseau. En revanche, les nœuds légers, ou nœuds SPV (*Simplified Payment Verification*), ne conservent que les entêtes des blocs et comptent sur les nœuds complets pour obtenir des informations sur les transactions. 
 
+![Ce que conserve chaque type de nœud, en surfaces à l'échelle (fin 2026) : environ 780 Go de blocs pour un nœud complet, au moins 550 Mo de blocs récents pour un nœud élagué, environ 78 Mo d'en-têtes pour un nœud SPV.](./assets/image-1.png)
+
 *Certains différencient également les nœuds dits « élagués » (« *pruned node* » en anglais). Ce sont des nœuds complets, qui téléchargent et vérifient tous les blocs depuis le bloc de Genèse, mais qui ne conservent que les blocs les plus récents sur disque.*

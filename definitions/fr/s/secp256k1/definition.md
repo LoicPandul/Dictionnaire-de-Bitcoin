@@ -2,6 +2,8 @@ Nom donné à une courbe elliptique spécifique utilisée dans le cadre du proto
 
 L'utilisation de `secp256k1` sur Bitcoin implique que chaque clé privée (un nombre aléatoire de 256 bits) est mappée à une clé publique correspondante par multiplication du point générateur de la courbe `secp256k1` par la clé privée, une multiplication scalaire réalisée par une suite d'additions et de doublements de points. Cette opération est facile à réaliser dans un sens, mais pratiquement impossible à inverser, ce qui constitue la base de la sécurité des signatures numériques sur Bitcoin.
 
+![La clé publique s'obtient à partir du point générateur G par une suite de doublements et d'additions dictée par les bits de la clé privée, sans chemin de retour.](./assets/image-1.png)
+
 La courbe `secp256k1` est spécifiée par l'équation de la courbe elliptique $y^2 = x^3 + 7$, ce qui signifie qu'elle a des coefficients $a$ égal à $0$ et $b$ égal à $7$ dans la forme générale de l'équation d'une courbe elliptique $y^2 = x^3 + ax + b$. `secp256k1` est définie sur un corps fini dont l'ordre est un nombre premier très grand, spécifiquement $p = 2^{256} - 2^{32} - 977$. La courbe a également un ordre de groupe, qui est le nombre de points distincts sur la courbe, un point générateur (ou point $G$) prédéfini, qui est utilisé dans les opérations de cryptographie pour générer des paires de clés, et un cofacteur qui est égal à $1$.
 
 *« SEC » désigne « Standards for Efficient Cryptography ». « P256 » désigne le fait que la courbe est définie sur un corps $\mathbb{Z}_p$ où $p$ est un nombre premier de 256 bits. « K » désigne une courbe de Koblitz, une famille de courbes qui porte le nom du mathématicien Neal Koblitz. Enfin, « 1 » désigne que c'est la première version de cette courbe.*
