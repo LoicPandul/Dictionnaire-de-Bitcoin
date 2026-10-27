@@ -1,6 +1,6 @@
 Forme spécifique de transaction Bitcoin visant à accroître la confidentialité des utilisateurs lors d'une dépense en imitant un coinjoin entre deux personnes, sans pour autant en être un. En effet, cette transaction n'est pas collaborative. Un utilisateur peut la construire tout seul, en faisant uniquement intervenir les UTXOs lui appartenant en inputs. Il est donc possible de créer une transaction Stonewall pour n'importe quelle occasion, sans avoir besoin de se synchroniser avec un autre utilisateur.
 
-Le fonctionnement de la transaction Stonewall est le suivant : en entrée de la transaction, l'émetteur utilise 2 UTXOs qui lui appartiennent. En sortie, la transaction produit 4 outputs, dont 2 qui seront exactement de même montant. Les 2 autres constitueront du change. Parmi les 2 outputs de même montant, un seul ira effectivement au destinataire du paiement.
+Le fonctionnement de la transaction Stonewall est le suivant : en entrée de la transaction, l'émetteur utilise au moins 2 UTXOs qui lui appartiennent, répartis en deux lots. En sortie, la transaction produit 4 outputs, dont 2 qui seront exactement de même montant. Les 2 autres constitueront du change. Si ce change est trop faible (sous le seuil de poussière), il est abandonné en frais et il ne reste que les 2 outputs de même montant. Parmi les 2 outputs de même montant, un seul ira effectivement au destinataire du paiement.
 
 Il y a donc seulement 2 rôles dans une transaction Stonewall :
 * L'émetteur, qui réalise le paiement effectif ;

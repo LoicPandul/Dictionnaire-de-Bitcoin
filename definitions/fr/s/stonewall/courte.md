@@ -1,1 +1,1 @@
-Transaction de paiement construite par un seul utilisateur, avec 2 entrées et 4 sorties dont 2 de même montant, qui imite un petit coinjoin. Elle brouille l'analyse de chaîne, car rien ne la distingue d'une Stonewall x2 collaborative.
+Transaction de paiement construite par un seul utilisateur, avec au moins 2 entrées et, le plus souvent, 4 sorties dont 2 de même montant, qui imite un petit coinjoin. Elle brouille l'analyse de chaîne, car rien ne la distingue d'une Stonewall x2 collaborative.

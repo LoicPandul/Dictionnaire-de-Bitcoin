@@ -8,4 +8,4 @@ Miniscript permet ainsi aux développeurs de construire des scripts sophistiqué
 * Il permet d'analyser si oui ou non, les différents chemins de dépense respectent les règles standards des nœuds ;
 * Il permet de mettre en place un standard général, compréhensible et composable, pour l'ensemble des logiciels et matériels de portefeuille.
 
-Le projet Miniscript a été lancé en 2018 par Pieter Wuille, Andrew Poelstra et Sanket Kanjalkar, via l'entreprise Blockstream. Miniscript est ajouté au wallet Bitcoin Core en mode *watch-only* en décembre 2022 avec la version 24.0, puis complètement en mai 2023 avec la version 25.0.
+Le projet Miniscript a été lancé en 2018 par Pieter Wuille, Andrew Poelstra et Sanket Kanjalkar, via l'entreprise Blockstream. Miniscript est ajouté au wallet Bitcoin Core en mode *watch-only* en décembre 2022 avec la version 24.0.1, puis la dépense depuis des scripts P2WSH devient possible en mai 2023 avec la version 25.0. Miniscript arrive dans les scripts Taproot en décembre 2023 avec la version 26.0.

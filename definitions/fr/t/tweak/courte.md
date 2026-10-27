@@ -1,1 +1,1 @@
-Valeur scalaire ajoutée à une clé publique pour en obtenir une nouvelle, utilisable par qui connaît la clé privée d'origine et le *tweak*. Taproot s'en sert pour engager un arbre de scripts dans la clé d'une sortie P2TR.
+Valeur scalaire dont le point correspondant est ajouté à une clé publique pour en obtenir une nouvelle, utilisable par qui connaît la clé privée d'origine et le *tweak*. Taproot s'en sert pour engager un arbre de scripts dans la clé d'une sortie P2TR.

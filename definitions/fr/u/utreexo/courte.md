@@ -1,1 +1,1 @@
-Protocole conçu par Tadge Dryja qui remplace l'UTXO set d'un nœud par un accumulateur fondé sur des arbres de Merkle, dont le nœud ne garde que les racines. Les transactions arrivent avec des preuves d'inclusion, ce qui réduit fortement la mémoire nécessaire.
+Protocole conçu par Tadge Dryja qui remplace l'UTXO set d'un nœud par un accumulateur fondé sur des arbres de Merkle, dont un nœud compact ne garde que les racines. Les transactions arrivent avec des preuves d'inclusion, ce qui réduit fortement la mémoire nécessaire.
