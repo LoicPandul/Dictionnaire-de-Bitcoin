@@ -2,7 +2,7 @@
 
 Branche : `feat/edition-2027`. Ce fichier est la mémoire du chantier : on le relit avant de reprendre, on coche au fil de l'eau, on note ici chaque décision.
 
-**Phase en cours : 5 et 7 (termes quantiques et Nostr, visuels), en parallèle de la phase 4 (chronologie, personnes)**
+**Chantier terminé le 2026-10-27, sauf les points `[!]` qui attendent une décision de Loïc.** Dossier de travail durable des sous-tâches : `~/.local/share/dico-2027/` (hors dépôt ; `/tmp` est vidé au redémarrage).
 
 Légende : `[x]` fait · `[~]` en cours · `[ ]` à faire · `[!]` bloqué ou à trancher par Loïc
 
@@ -48,20 +48,20 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
   - [x] Les URL ne mangent plus la ponctuation ni `\end{quote}` (erreur de compilation que le `nonstopmode` masquait).
   - [x] Polices 2026 retirées (Fira Code, CMU Serif) ; Archivo et Atkinson Hyperlegible Mono ajoutées.
   - [x] README des scripts à jour.
-  - [ ] README racine : structure du dépôt et lien vers les nouvelles parties (à faire en fin de chantier).
+  - [x] README racine : structure du dépôt 2027, parties, versions courtes (chiffres à rafraîchir au dernier build).
 
 ## Phase 2 — Catégories et parties
 
 - [x] Analyse des 1 408 entrées et nouvelle taxonomie : 55 catégories (technique 33, écosystème 12, personnes 6, spécifications 4), aucune au-dessus de 80. Détail et cas limites : `edition-2027/taxonomie.md`, reclassement ligne à ligne : `edition-2027/reclassement.tsv`.
 - [x] Retouche de l'orchestrateur : catégorie ECASH (Cashu, Fedimint) créée dès 2027, Loïc les cite expressément.
 - [x] Reclassement appliqué (697 métadonnées modifiées).
-- [~] Pictogrammes des 55 catégories au style de la charte (section 7) : redessin en cours. Les 36 pictogrammes provisoires (Lucide) seront remplacés.
+- [x] Pictogrammes des 56 catégories redessinés à la charte (section 7), y compris APPLICATION NOSTR.
 
 ## Phase 3 — Versions courtes
 
 - [x] `courte.md` pour 100 % des entrées (1 408), voix de Loïc, 31,9 mots en moyenne, 45 au plus.
 - [x] `python3 scripts/main.py check` : versions courtes conformes, mêmes termes que les versions développées.
-- [ ] 271 problèmes repérés dans les définitions développées pendant la rédaction (`/tmp/ed2027/courtes/lot-*-signalements.md`, à recopier dans `edition-2027/signalements.md`) : passe de corrections vérifiées à lancer.
+- [x] 271 problèmes repérés pendant la rédaction des courtes, recopiés dans `edition-2027/signalements.md` avec les écarts de spécifications (278 lignes), plus 4 signalés par les schémas : vérifiés un par un à la source (lots C1 à C9, journaux dans `~/.local/share/dico-2027/ed2027/corrections/`), corrigés quand le signalement était prouvé. Points laissés à Loïc : section « Questions ouvertes ».
 
 ## Phase 4 — Nouvelles parties
 
@@ -70,27 +70,28 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
 - [!] Logos et captures : voir « Droits sur les logos et les captures ».
 
 ### Personnes
-- [~] Limite éditoriale et liste (`edition-2027/personnes-candidats.md`, tâche relancée après la limite d'usage).
+- [x] Limite éditoriale et liste (`edition-2027/personnes-candidats.md`, 151 candidats, 144 retenues en 13 lots).
 - [x] Reclassement des personnes présentes (`nakamoto-satoshi`, `finney-hal`, `bitcoin-jesus`).
-- [ ] Nouvelles fiches, rédigées et vérifiées avec `dictionnaire-definition`.
+- [x] 152 nouvelles fiches (lots P1 à P13), rédigées et vérifiées avec `dictionnaire-definition` (rapports `verification-P*.md`), avec leurs renvois. Retenue de l'orchestrateur : les fiches suivent l'usage public de la personne pour son nom ; la fiche de Mara van der Laan est écrite sans pronom genré en attendant le choix de Loïc.
 
 ### Chronologie
-- [~] Collecte depuis le fil bitcointalk 5187275, chaque date recoupée par une seconde source (4 lots relancés après la limite d'usage ; `avant-2009`, `2009` et `2021` déjà prêts en brouillon).
-- [ ] Fusion dans `chronologie/fr/`, validation, commit.
+- [x] Collecte depuis le fil bitcointalk 5187275, chaque date recoupée par une seconde source.
+- [x] Fusion dans `chronologie/fr/` (715 événements de 1976 à 2026), validation, commit ; écartés faute de recoupement : `edition-2027/chronologie-ecartes.md`.
 
 ### BIP, BOLT, bLIP, NIP
 - [x] `specifications/bip.yaml` (214 BIP, dépôt `bitcoin/bips` au commit `100ba872`).
 - [x] `specifications/bolt.yaml` (13) et `specifications/blip.yaml` (15).
 - [x] `specifications/nip.yaml` (100 NIP, `related` vers les entrées techniques existantes).
-- [ ] 33 écarts entre des définitions de BIP, BOLT et bLIP et leurs spécifications (`/tmp/ed2027/specs/*-ecarts.md`) : à corriger avec la passe de corrections.
+- [x] 33 écarts entre des définitions de BIP, BOLT et bLIP et leurs spécifications (`edition-2027/ecarts-specifications.md`) : vérifiés et corrigés avec la passe de corrections.
 
 ## Phase 5 — Termes manquants
 
 - [x] Liste des termes : 30 quantiques, 24 concepts Nostr, 12 applications, 7 personnes (`edition-2027/termes-quantique-nostr.md`).
-- [~] Démonstration de la chaîne sur 5 termes quantiques (CRQC, Q-DAY, ALGORITHME DE GROVER, P2MR, SIGNATURE DE LAMPORT).
-- [ ] Les autres termes quantiques et Nostr, rédigés par `dictionnaire-definition`, vérifiés par verificator.
-- [~] Repérage dans bitcoindev, Delving Bitcoin et Optech (`edition-2027/termes-candidats.md`, tâche relancée).
-- [ ] `templates/pending_terms.yaml` alimenté avec ce qui n'est pas rédigé.
+- [x] Démonstration de la chaîne sur 5 termes quantiques (CRQC, Q-DAY, ALGORITHME DE GROVER, P2MR, SIGNATURE DE LAMPORT), avec 3 schémas.
+- [x] Les 25 autres termes quantiques, les 24 concepts Nostr et les 11 applications Nostr, rédigés par `dictionnaire-definition`, vérifiés par verificator (rapports `verification-<lot>.md`), déposés et commités.
+- [x] Repérage dans bitcoindev, Delving Bitcoin et Optech (`edition-2027/termes-candidats.md`, 150 candidats).
+- [x] Les 18 candidats de priorité A rédigés par `dictionnaire-definition` et vérifiés (lots K1 et K2).
+- [x] `templates/pending_terms.yaml` : les 132 candidats B et C, avec catégorie et raison.
 
 ## Phase 6 — Skills
 
@@ -98,31 +99,43 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
 - [x] `dictionnaire-definition` : terme → doublons → recherche obligatoire (Bitcoin Core, BIP, Optech, bitcoindev, Delving) → rédaction courte et développée → verificator → métadonnées → `check`. Scripts `doublons.py`, `nouvelle_entree.py`, `renvois.py`.
 - [x] `schemas-dictionnaire` : fork de `schemas` sur la charte officielle (`f5a3a13b`) : classes de rôle, version N&B par classe `nb`, exports `image-N.png` (couleur), `image-N-nb.pdf` (vectoriel) et `image-N-nb.png` (2 560 px), SVG source, légende = texte alternatif. Scripts `rendre.mjs` et `deposer.py`.
 - [x] `verificator` : dossier de travail corrigé pour Linux (`$LOCALAPPDATA` vide donnait `/Temp`).
-- [~] Démonstration sur 5 nouveaux termes, chaîne complète (voir phase 5).
+- [x] Démonstration sur 5 nouveaux termes, chaîne complète (voir phase 5).
 
 ## Phase 7 — Visuels
 
 Objectif : environ un visuel toutes les 3 ou 4 définitions, là où il aide.
 
-- [~] Plan des visuels (`edition-2027/visuels/`) : schémas par priorité, logos et captures.
-- [ ] Production des schémas avec `schemas-dictionnaire`, par lots, en commençant par la priorité A.
-- [ ] Refaire au style 2027 les 54 images de 2026 (noir et blanc, Arial).
+- [x] Plan des visuels (`edition-2027/visuels/`) : 277 schémas (76 de priorité A), logos et captures.
+- [x] Production des schémas avec `schemas-dictionnaire` : les 79 schémas de priorité A (3 démos et lots A1 à A8). Les priorités B (≈ 150) et C restent dans `plan-schemas.tsv` pour une suite.
+- [x] Refaire au style 2027 les images de 2026 : les 48 schémas sont redessinés (lots A et R1 à R4), chacun vérifié à la source ; les passages faux repérés en dessinant sont corrigés (lots C9 à C11).
+- [!] 6 images de 2026 restent telles quelles : logos de Bitcoin Core, Bitcoin Knots, Bitcoin Cash et BSV, emblème « B » de Bitcoin, avatars PayNym. Elles relèvent de la décision sur les droits.
 - [!] Logos et captures : attendent la décision sur les droits.
 
 ## Phase 8 — EPUB et Amazon KDP
 
 - [x] EPUB validé par epubcheck (deux éditions).
-- [ ] Dossier `edition-2027/kdp/` : métadonnées, description, mots-clés, catégories, prix conseillé, étapes Kindle et papier.
+- [x] Dossier `edition-2027/kdp/` : métadonnées, description, mots-clés, catégories, prix conseillé, étapes Kindle et papier (Loïc publie lui-même).
 
 ## Phase 9 — Ce que le site devra suivre
 
-- [ ] Note de compatibilité (section ci-dessous) à transmettre au worker de `feat/site-dictionnaire` en fin de chantier.
+- [x] Note de compatibilité à jour (section ci-dessous), prête à transmettre au worker de `feat/site-dictionnaire`.
 
 ---
 
 ## Budget de pages (à trancher sur pièces)
 
-Premier build complet à la charte, sans chronologie, sans nouvelles fiches de personnes ni nouveaux termes : **broché 694 pages, relié 566 pages**. KDP limite le relié à 550 pages et le broché à 828 (marge intérieure portée automatiquement à 22,5 mm au-delà de 700 pages). La charte prévoit deux options si le relié dépasse 540 pages : passer le relié en 9 / 11,5 pt (environ −5 %) ou le publier en deux volumes. L'édition `essentiel` reste loin de ces limites.
+Premier build complet à la charte, sans chronologie, sans nouvelles fiches de personnes ni nouveaux termes : **broché 694 pages, relié 566 pages**.
+
+Build final du 2026-10-27 (1 643 entrées, chronologie, 152 fiches de personnes, 79 schémas de priorité A et 48 redessinés) :
+
+| Édition | Broché | Relié | EPUB (epubcheck) |
+|---|---|---|---|
+| complete | 1 080 pages (au-dessus de 828) | 860 pages (au-dessus de 550) | 0 erreur |
+| essentiel | 474 pages | 414 pages | 0 erreur |
+| tome-1 (dictionnaire technique) | 650 pages | 528 pages | 0 erreur |
+| tome-2 (écosystème, personnes, spécifications, chronologie) | 422 pages | 334 pages | 0 erreur |
+
+Seuls les deux tomes et l'essentiel tiennent dans les limites de KDP en papier. L'édition complète reste possible en EPUB et en PDF numérique. KDP limite le relié à 550 pages et le broché à 828 (marge intérieure portée automatiquement à 22,5 mm au-delà de 700 pages). La charte prévoit deux options si le relié dépasse 540 pages : passer le relié en 9 / 11,5 pt (environ −5 %) ou le publier en deux volumes. L'édition `essentiel` reste loin de ces limites.
 
 ## Limite éditoriale : qui entre dans le dictionnaire des personnes
 
@@ -146,14 +159,18 @@ Le site (`feat/site-dictionnaire`) lit `definitions/fr` avec un parseur YAML min
 - **Pictogrammes** : `assets/pictograms/<slug>.svg` en `currentColor` (charte, section 7), un par catégorie.
 - **Images** : en plus de `image-N.png` (couleur, à afficher), un schéma 2027 a `image-N-nb.pdf`, `image-N-nb.png` (livre imprimé, à ignorer) et `image-N.svg` (source). Seul `image-N.png` est déclaré dans `assets:` de `metadata.yaml`. Le texte alternatif sert aussi de légende.
 - **Nouvelles sources** : `specifications/*.yaml` (BIP, BOLT, bLIP, NIP) et `chronologie/fr/*.yaml`, pour des pages dédiées si le site le souhaite.
-- **Slugs inchangés**, aucune URL ne casse. Les nouvelles entrées (quantique, Nostr, personnes) ajoutent des slugs.
+- **Slugs inchangés**, aucune URL ne casse, même quand le slug porte une faute (`op-2drop-0xd6`, `canal-de-paiment`, `dlp-discreet-log-probleme`) : le titre est corrigé, le slug reste. Les nouvelles entrées (quantique, Nostr, applications Nostr, termes Optech, personnes) ajoutent des slugs.
 
 ## Questions ouvertes pour Loïc
 
-- Budget de pages du relié (voir plus haut).
+- Budget de pages : l'édition complète brochée fait plus de 1 000 pages, au-dessus des 828 de KDP. Les éditions `tome-1` et `tome-2` existent : choisir entre deux tomes et une édition complète réservée à l'EPUB et au PDF.
+- Fiche de Mara van der Laan : pronom à choisir (aujourd'hui sans pronom).
+- Points « à trancher » des lots de corrections et de fiches : listés dans les journaux `~/.local/share/dico-2027/ed2027/corrections/C*-journal.md` et les rapports `verification-*.md` (dates à source unique, positions éditoriales comme BIP-0148).
 - Logos et captures dans le livre vendu (voir plus haut).
 - Le titre de l'édition `essentiel` et son ISBN éventuel (aujourd'hui : même titre, sous-titre « L'essentiel en définitions courtes », sans ISBN).
 
 ## Journal
 
 - 2026-10-25 : démarrage, inventaire, décisions d'architecture. Taxonomie, spécifications, versions courtes, scripts, EPUB, skills. Limite d'usage de l'API vers 13 h 20 : quatre tâches relancées en reprise. Charte officielle reçue (`f5a3a13b`) : skill de schémas mis en conformité, mise en page du livre refaite à la charte, bogue de Tectonic contourné.
+- 2026-10-26 : `/tmp` vidé au redémarrage ; travail des sous-tâches recopié dans `~/.local/share/dico-2027/`. Corrections C1 à C9 commitées, schémas A1 à A3, termes Nostr et quantiques.
+- 2026-10-27 : deux limites d'usage, tâches relancées. Schémas A4 à A8 et R1 à R4, 152 fiches de personnes, 18 termes candidats, corrections C10 et C11, `pending_terms.yaml`. Charte passée au baobab sur `feat/couverture-2027` (`8ea661ec`) : section 6 des schémas inchangée, copie du skill mise à jour.
