@@ -56,22 +56,6 @@ events:
       - "https://www.secg.org/sec1-v2.pdf"
       - "https://www.ams.org/journals/mcom/1987-48-177/S0025-5718-1987-0866109-5/"
 
-  - date: "1985-10"
-    title: "Chaum publie « Security without Identification »"
-    text: "David Chaum publie dans Communications of the ACM « Security without Identification: Transaction Systems to Make Big Brother Obsolete ». Il y défend des systèmes de transaction, dont le paiement, qui ne révèlent pas l'identité de l'utilisateur."
-    related: ["ecash-david-chaum"]
-    sources:
-      - "https://api.crossref.org/works/10.1145/4372.4373"
-      - "https://chaum.com/publications/"
-
-  - date: "1988"
-    title: "Timothy May rédige le manifeste crypto-anarchiste"
-    text: "Timothy C. May écrit « The Crypto Anarchist Manifesto » et le distribue à la conférence Crypto 88. Le texte annonce que l'informatique permettra bientôt de communiquer et d'échanger de façon totalement anonyme, hors de l'intervention des États."
-    related: ["cypherpunks"]
-    sources:
-      - "https://www.activism.net/cypherpunk/crypto-anarchy.html"
-      - "https://nakamotoinstitute.org/library/crypto-anarchist-manifesto/"
-
   - date: "1989"
     title: "Claus-Peter Schnorr présente sa signature"
     text: "Claus-Peter Schnorr présente à Crypto 89 un schéma d'identification et de signature efficace, pensé pour les cartes à puce, qu'il protège par un brevet américain délivré le 19 février 1991. Bitcoin adopte une variante de ces signatures sur secp256k1 avec BIP-0340."
@@ -120,31 +104,6 @@ events:
     sources:
       - "https://www.activism.net/cypherpunk/manifesto.html"
       - "https://nakamotoinstitute.org/library/cypherpunk-manifesto/"
-
-  - date: "1994"
-    title: "Nick Szabo définit le contrat intelligent"
-    text: "Nick Szabo publie « Smart Contracts », où il définit le contrat intelligent comme un protocole de transaction informatisé qui exécute les termes d'un contrat, en réduisant le besoin d'intermédiaires de confiance."
-    related: ["contrat-intelligent"]
-    sources:
-      - "https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html"
-      - "https://nakamotoinstitute.org/library/smart-contracts/"
-
-  - date: "1995-10-23"
-    title: "Première banque à émettre l'ecash de DigiCash"
-    text: "La Mark Twain Bank de Saint-Louis commence à ouvrir des comptes pour retirer et déposer l'ecash de DigiCash en dollars américains, sous licence non exclusive. Jusque-là, l'ecash ne circulait que sous forme de monnaie fictive, les CyberBucks."
-    related: ["digicash", "ecash-david-chaum"]
-    sources:
-      - "https://mailing-list-archive.cryptoanarchy.wiki/archive/1995/10/aee9b53a2393284c1f48a579b9397449ae7751ee67a8f352d2cad58b30e08807"
-      - "https://diswww.mit.edu/MENELAUS.MIT.EDU/cpunks/43544"
-
-  - date: "1996"
-    title: "Publication de RIPEMD-160"
-    text: "Hans Dobbertin, Antoon Bosselaers et Bart Preneel publient la fonction de hachage RIPEMD-160. Bitcoin l'applique au résultat d'un SHA-256 pour obtenir le `HASH160` d'une clé publique, à la base des adresses classiques."
-    related: ["ripemd160", "sha256"]
-    sources:
-      - "https://homes.esat.kuleuven.be/~bosselae/ripemd160.html"
-      - "https://api.crossref.org/works/10.1007/3-540-60865-6_44"
-      - "https://github.com/bitcoin/bitcoin/blob/master/src/hash.h"
 
   - date: "1997-03-28"
     title: "Adam Back annonce hashcash"
@@ -204,30 +163,6 @@ events:
       - "https://web.archive.org/web/20060329122942/http://unenumerated.blogspot.com/2005/12/bit-gold.html"
       - "https://nakamotoinstitute.org/library/bit-gold/"
 
-  - date: "2008-07-21"
-    title: "E-gold plaide coupable"
-    text: "E-gold, service de monnaie numérique adossée à l'or, et sa maison mère Gold & Silver Reserve plaident coupables de blanchiment et de transmission d'argent sans licence. Leurs 3 dirigeants, inculpés le 24 avril 2007, plaident aussi coupables."
-    related: ["e-gold"]
-    sources:
-      - "https://www.justice.gov/archive/opa/pr/2008/July/08-crm-635.html"
-      - "https://www.theregister.com/2008/07/22/egold_pleads_guilty/"
-
-  - date: "2008-08-18"
-    title: "Enregistrement du domaine bitcoin.org"
-    text: "Le nom de domaine bitcoin.org est enregistré à 13 h 19 UTC. Il hébergera le livre blanc, puis le premier logiciel Bitcoin."
-    related: ["nakamoto-satoshi"]
-    sources:
-      - "https://rdap.publicinterestregistry.org/rdap/domain/bitcoin.org"
-      - "https://bitcoin.org/en/posts/ten-year-anniversary"
-
-  - date: "2008-08-22"
-    title: "Satoshi Nakamoto écrit à Wei Dai"
-    text: "Satoshi Nakamoto demande à Wei Dai comment citer b-money dans son article, alors intitulé « Electronic Cash Without a Trusted Third Party ». Il précise qu'Adam Back lui a signalé la ressemblance entre leurs idées."
-    related: ["nakamoto-satoshi", "b-money"]
-    sources:
-      - "https://www.metzdowd.com/pipermail/cryptography/2017-August/032664.html"
-      - "https://gwern.net/doc/bitcoin/2008-nakamoto"
-
   - date: "2008-10-31"
     title: "Satoshi Nakamoto annonce le livre blanc"
     text: "À 18 h 10 UTC, Satoshi Nakamoto annonce sur la liste de diffusion Cryptography son article « Bitcoin: A Peer-to-Peer Electronic Cash System », qui décrit un système de monnaie électronique pair-à-pair sans tiers de confiance."
@@ -235,19 +170,3 @@ events:
     sources:
       - "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html"
       - "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
-
-  - date: "2008-11-07"
-    title: "Hal Finney répond au livre blanc"
-    text: "Sur la liste Cryptography, Hal Finney juge Bitcoin « très prometteur ». Il apprécie que la sécurité repose sur l'hypothèse que la puissance de calcul des participants honnêtes dépasse celle de l'attaquant, et demande une description plus formelle des structures de données."
-    related: ["finney-hal", "white-paper"]
-    sources:
-      - "https://www.metzdowd.com/pipermail/cryptography/2008-November/014827.html"
-      - "https://diswww.mit.edu/bloom-picayune/crypto/137127"
-
-  - date: "2008-11-09"
-    title: "Le projet Bitcoin s'installe sur SourceForge"
-    text: "Le projet Bitcoin est enregistré sur SourceForge. La plateforme hébergera le code source et les téléchargements des premières versions du logiciel."
-    related: ["sourceforge"]
-    sources:
-      - "https://sourceforge.net/projects/bitcoin/"
-      - "https://web.archive.org/web/20091129231620/http://sourceforge.net:80/projects/bitcoin/"
