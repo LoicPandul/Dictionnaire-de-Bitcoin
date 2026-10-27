@@ -1,6 +1,6 @@
 # Fiche KDP — Dictionnaire de Bitcoin, édition 2027
 
-Valeurs à saisir dans KDP. Les chiffres du livre (entrées, pages) sont ceux du dépôt au 25 octobre 2026 : les mettre à jour après le dernier build.
+Valeurs à saisir dans KDP, pour deux livres imprimés (le complet et le poche « essentiel ») et leurs deux ebooks. Les chiffres du livre (entrées, pages) sont ceux du dépôt au 27 octobre 2026 : les mettre à jour après le dernier build.
 
 ## Métadonnées
 
@@ -8,31 +8,43 @@ Valeurs à saisir dans KDP. Les chiffres du livre (entrées, pages) sont ceux du
 |---|---|
 | Langue | Français |
 | Titre | Dictionnaire de Bitcoin |
-| Sous-titre | Tout le vocabulaire technique de Bitcoin |
+| Sous-titre | Tout le vocabulaire technique de Bitcoin (pour le poche : à décliner, par exemple « L'essentiel », à trancher par Loïc) |
 | Numéro d'édition | 2 (la première édition est celle de 2026) |
 | Auteur | Loïc Morel |
 | Contributeurs | aucun (les contributeurs GitHub sont remerciés dans le livre) |
 | Public | adulte : non ; « contenu pour un public adulte » : non |
-| ISBN broché / relié | nouveaux ISBN à obtenir pour l'édition 2027 (question pour Loïc : ISBN gratuits KDP ou ISBN propres) ; les reporter dans `templates/legal.yaml` |
+| ISBN | un ISBN par livre imprimé (broché complet, poche essentiel), à obtenir pour l'édition 2027 (question pour Loïc : ISBN gratuits KDP ou ISBN propres) ; les reporter dans `templates/legal.yaml` |
 | Date de publication | celle de la mise en ligne (ne pas en saisir une à l'avance) |
 
 ## Description (4 000 caractères au plus ; saisie en texte simple, KDP accepte quelques balises HTML)
 
+### Broché complet (7 × 10 po, couleur premium, 730 pages)
+
 > Bitcoin a son vocabulaire : UTXO, mempool, Taproot, HTLC, preuve de travail, *seed*, Lightning, Nostr. Ce dictionnaire le définit, terme par terme, sans jargon inutile et sans promesse marketing.
 >
-> L'édition 2027 se lit de deux façons. Chaque terme technique a une définition courte, une ou deux phrases pour comprendre vite, et une définition développée, qui explique le fonctionnement pas à pas avec des exemples concrets, des schémas et l'histoire de chaque mécanisme.
+> Chaque terme technique a une définition développée, qui explique le fonctionnement pas à pas avec des exemples concrets, des schémas en couleur et l'histoire de chaque mécanisme.
 >
-> Le livre réunit plusieurs parties :
+> Le livre réunit cinq parties :
 >
-> - le dictionnaire technique : protocole, transactions, mempool, minage, portefeuilles et clés, cryptographie, confidentialité, Lightning Network, Ark, Liquid, RGB, ecash, Nostr, informatique quantique ;
-> - les entreprises, applications et logiciels de l'écosystème ;
-> - les personnes qui ont fait Bitcoin et ses précurseurs : cypherpunks, cryptographes, économistes, développeurs ;
-> - une chronologie de plus de 700 événements, de la cryptographie à clé publique de 1976 à aujourd'hui, chaque date recoupée par deux sources ;
-> - les spécifications : les 214 BIP, les BOLT et bLIP du Lightning Network et les 100 NIP de Nostr, avec leur statut et un résumé en français.
+> - le dictionnaire technique, 1 060 entrées : protocole, transactions, mempool, minage, portefeuilles et clés, cryptographie, confidentialité, Lightning Network, Ark, Liquid, RGB, ecash, Nostr, informatique quantique ;
+> - les entreprises, applications et logiciels de l'écosystème, 208 entrées ;
+> - 48 personnes qui ont fait Bitcoin et ses précurseurs : cypherpunks, cryptographes, économistes, développeurs ;
+> - une chronologie de 160 événements, de la cryptographie à clé publique de 1976 à aujourd'hui ;
+> - les spécifications : 214 BIP, 13 BOLT et 15 bLIP, avec leur statut et un résumé en français.
 >
 > Les définitions s'appuient sur les sources primaires : le code de Bitcoin Core, les BIP, les spécifications des protocoles et les discussions des développeurs.
 >
-> Le dictionnaire est un projet ouvert, publié en accès libre sur GitHub sous licence CC BY-NC-SA 4.0. Acheter le livre imprimé, c'est soutenir son auteur, Loïc Morel (pandul.fr), et la suite de ce travail.
+> Le dictionnaire est un projet ouvert, publié en accès libre sur GitHub sous licence CC BY-NC-SA 4.0 (les logos de tiers en sont exclus et portent leur crédit). Acheter le livre imprimé, c'est soutenir son auteur, Loïc Morel (pandul.fr), et la suite de ce travail.
+
+### Poche « essentiel » (5 × 8 po, noir et blanc, 302 pages)
+
+> Bitcoin a son vocabulaire : UTXO, mempool, Taproot, HTLC, preuve de travail, *seed*, Lightning, Nostr. Cette édition de poche le résume en définitions courtes, une ou deux phrases par terme, pour comprendre vite et garder le livre sous la main.
+>
+> Elle réunit les 1 060 termes du dictionnaire technique et les 208 entrées des entreprises, applications et logiciels de l'écosystème. Les définitions développées, les personnes, la chronologie et les spécifications se trouvent dans l'édition complète.
+>
+> Le dictionnaire est un projet ouvert, publié en accès libre sur GitHub sous licence CC BY-NC-SA 4.0 (les logos de tiers en sont exclus et portent leur crédit). Acheter le livre imprimé, c'est soutenir son auteur, Loïc Morel (pandul.fr), et la suite de ce travail.
+
+Les ebooks reprennent la description de leur édition.
 
 ## Mots-clés (7 cases, 50 caractères chacune)
 
@@ -56,28 +68,39 @@ Les libellés exacts dépendent de l'arborescence affichée par KDP ; viser, par
 
 ## Prix conseillés
 
-### Barèmes utilisés (aide KDP, lue le 25 octobre 2026)
+### Barèmes utilisés (aide KDP, lue le 27 octobre 2026)
 
-- **Broché, impression noir et blanc, marchés en euros** (format « regular », jusqu'à 6,12 × 9 po) : 0,75 € par livre + 0,012 € par page, de 110 à 828 pages.
-- **Relié, noir et blanc** : environ 4,65 € (ou 4,50 € selon la page d'aide) + 0,012 € par page, de 110 à 550 pages. Les deux pages d'aide de KDP divergent : vérifier dans le calculateur.
-- **Redevance papier sur Amazon.fr** : 60 % du prix hors TVA pour un prix public d'au moins 9,99 €, 50 % en dessous (changement du 10 juin 2025), moins le coût d'impression. Distribution étendue : 40 %.
+- **Format** : KDP appelle « standard » un livre jusqu'à 6,12 × 9 po et « grand » au-delà. Le 7 × 10 po du complet est « grand » ; le 5 × 8 po de l'essentiel est « standard » ([formats et pages](https://kdp.amazon.com/en_US/help/topic/GVBQ3CMEQW3W2VL6)).
+- **Complet, broché en couleur premium, papier blanc, format grand, marchés en euros** : 0,75 € par livre + 0,0715 € par page (de 42 à 828 pages) ([coûts d'impression](https://kdp.amazon.com/fr_FR/help/topic/G201834340)). Pour mémoire, le barème « standard » en couleur premium est de 0,0525 € par page, et la couleur standard (0,035 € par page en format grand) ne va que de 72 à 600 pages : elle ne convient pas à 730 pages.
+- **Essentiel, broché en noir et blanc, papier blanc, format standard, marchés en euros** : 0,75 € par livre + 0,012 € par page, de 110 à 828 pages (même page).
+- **Redevance papier sur Amazon.fr** : 60 % du prix pour un prix public d'au moins 9,99 €, 50 % à 9,98 € et en dessous (changement du 10 juin 2025), moins le coût d'impression. Formule de KDP : (taux × prix public) − coût d'impression ; prix public minimum = coût d'impression ÷ taux. Distribution étendue : 40 % ([redevances](https://kdp.amazon.com/en_US/help/topic/G201834330)). Prix public maximal en euros : 250 €.
 - **Ebook** : option 70 % pour un prix compris entre 2,69 € et 12,99 €, moins les frais de livraison au Mo ; option 35 % au-delà. TVA du livre (numérique et papier) en France : 5,5 %.
 
-### Calculs
+Le prix HT ci-dessous est le prix public divisé par 1,055. La page d'aide de KDP n'indique pas si le taux de redevance s'applique au prix TTC ou HT : le calcul avec TVA est le plus prudent, et le calculateur de KDP tranche.
 
-| Format | Hypothèse de pages | Coût d'impression | Prix public conseillé | Prix HT | Redevance par exemplaire |
-|---|---|---|---|---|---|
-| Broché complet | 780 | 0,75 + 0,012 × 780 = 10,11 € | 32,90 € | 31,18 € | 0,60 × 31,18 − 10,11 = 8,60 € |
-| Broché complet | 694 (premier build) | 9,08 € | 32,90 € | 31,18 € | 9,63 € |
-| Relié complet | 550 (plafond KDP) | 4,65 + 0,012 × 550 = 11,25 € | 44,90 € | 42,56 € | 0,60 × 42,56 − 11,25 = 14,29 € |
-| Ebook complet | — | frais de livraison au Mo (l'aide KDP prend l'exemple de 0,10 €/Mo en Espagne) | 9,99 € | 9,47 € | 0,70 × (9,47 − 3 × 0,10) ≈ 6,42 € pour un fichier de 3 Mo, si le tarif français est du même ordre |
-| Broché « essentiel » (si publié) | à mesurer | 0,75 + 0,012 × pages | 14,90 € | 14,12 € | 0,60 × 14,12 − coût |
+### Prix minimum
 
-Les prix publics sont des propositions : à caler sur le prix de l'édition 2026 en librairie et sur Bitcoin Bazar. Garder le broché au-dessus de 9,99 € (seuil des 60 %) n'est pas un problème à ces volumes.
+| Livre | Pages | Coût d'impression | Prix minimum, formule KDP (coût ÷ taux) | Prix minimum, TVA 5,5 % comprise |
+|---|---|---|---|---|
+| Complet (couleur premium, 7 × 10 po) | 730 | 0,75 + 0,0715 × 730 = 52,945 € | 52,945 ÷ 0,60 = 88,24 € | 93,10 € |
+| Essentiel (noir et blanc, 5 × 8 po) | 302 | 0,75 + 0,012 × 302 = 4,374 € | 4,374 ÷ 0,50 = 8,75 € (tranche 50 %, sous 9,99 €) | 9,23 € |
+
+### Propositions de prix et redevance
+
+| Livre | Prix public proposé | Prix HT | Redevance par exemplaire |
+|---|---|---|---|
+| Complet | 99,00 € | 93,84 € | 0,60 × 93,84 − 52,945 = 3,36 € |
+| **Complet** | **109,00 €** | 103,32 € | 0,60 × 103,32 − 52,945 = **9,05 €** |
+| Complet | 119,00 € | 112,80 € | 0,60 × 112,80 − 52,945 = 14,73 € |
+| Essentiel | 12,90 € | 12,23 € | 0,60 × 12,23 − 4,374 = 2,96 € |
+| **Essentiel** | **14,90 €** | 14,12 € | 0,60 × 14,12 − 4,374 = **4,10 €** |
+| Essentiel | 16,90 € | 16,02 € | 0,60 × 16,02 − 4,374 = 5,24 € |
+| Ebook complet | 9,99 € | 9,47 € | 0,70 × (9,47 − 3 × 0,10) ≈ 6,42 € pour un fichier de 3 Mo |
+| Ebook essentiel | 4,99 € | 4,73 € | 0,70 × (4,73 − 2 × 0,10) ≈ 3,17 € pour un fichier de 2 Mo |
+
+Les lignes en gras sont ma proposition ; le prix reste à décider par Loïc. Sur les ebooks, les frais de livraison (l'aide KDP prend l'exemple de 0,10 €/Mo en Espagne) et les poids de fichier sont des hypothèses : le tarif français n'est pas lu et les EPUB ne sont pas pesés ici. Le coût du complet est dominé par la couleur premium (52,945 € d'impression pour 730 pages) : chaque euro de prix public en plus rapporte environ 0,57 € de redevance. Le prix est à comparer avec celui de l'édition 2026 en librairie.
 
 ## Questions ouvertes pour Loïc
 
-- ISBN 2027 : gratuits KDP ou propres ?
-- Publier aussi l'édition « essentiel » (versions courtes seules), en broché et en ebook ?
-- Relié : un volume en corps 9 / 11,5 pt, ou deux volumes ?
-- Prix définitifs.
+- ISBN 2027 : un ISBN par livre imprimé (complet et essentiel), gratuits KDP ou propres ?
+- Prix définitifs des deux livres imprimés et des deux ebooks.

@@ -16,9 +16,9 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
 2. **La partie du livre se déduit de la catégorie.** Pas de nouveau champ dans `metadata.yaml` : `templates/parts.yaml` range chaque catégorie dans une partie (`technique`, `ecosysteme`, `personnes`, `specifications`), avec son pictogramme et son nom en casse de phrase (`display`). Une catégorie n'appartient qu'à une partie.
 3. **`templates/categories.yaml` garde son format** (liste `  - NOM` précédée de commentaires), parce que le site lit les commentaires comme description de catégorie.
 4. **Version courte = fichier `courte.md`** à côté de `definition.md`, dans chaque dossier, pour toutes les parties. Une ou deux phrases, 45 mots au plus, sans liste, image, formule, lien ni gras. `scripts/validators/sync_checker.py` vérifie que chaque `definition.md` a sa `courte.md` et inversement.
-5. **Les BIP, BOLT, bLIP et NIP sortent du dictionnaire technique.** Leur partie se construit depuis `specifications/<bip|bolt|blip|nip>.yaml` (numéro, titre, statut, type, résumé en français, lien, `related`). Quand une définition développée existe (catégories `BIP`, `BOLT`, `BLIP`), l'entrée YAML pointe vers son slug et l'édition complète imprime le texte développé sous le résumé. Les termes génériques (`bip`, `bolt`, `blip`, `nip`) restent dans le dictionnaire technique.
+5. **Les BIP, BOLT et bLIP sortent du dictionnaire technique.** Leur partie se construit depuis `specifications/<bip|bolt|blip>.yaml` (numéro, titre, statut, type, résumé en français, lien, `related`). Quand une définition développée existe (catégories `BIP`, `BOLT`, `BLIP`), l'entrée YAML pointe vers son slug et l'édition complète imprime le texte développé sous le résumé. Les termes génériques (`bip`, `bolt`, `blip`, `nip`) restent dans le dictionnaire technique.
 6. **Chronologie = `chronologie/fr/*.yaml`**, un fichier par année à partir de 2009 et `avant-2009.yaml`. Chaque événement : `date` (ISO), `title`, `text`, `related` (slugs), `sources` (au moins deux URL indépendantes).
-7. **Deux éditions depuis la même source** (`templates/editions.yaml`) : `complete` (définitions développées, BIP et BOLT avec leur texte développé) et `essentiel` (versions courtes partout, résumés seuls pour les spécifications). Formats : PDF broché 5,5 × 8,5 po, PDF relié 7 × 10 po, EPUB 3.
+7. **Deux éditions depuis la même source** (`templates/editions.yaml`) : `complete` (définitions développées, BIP et BOLT avec leur texte développé) et `essentiel` (poche : définitions courtes techniques et écosystème seulement, depuis le 27/10). Formats : complet broché couleur 7 × 10 po, poche noir et blanc 5 × 8 po, EPUB 3 ; plus de relié ni de tomes.
 8. **Sorties de build dans `build/`** (ignoré par git). Les PDF 2026 à la racine du dépôt ne sont pas touchés : Loïc décide s'il les remplace à la sortie 2027.
 9. **Outils de build locaux** dans `.tools/` (ignoré par git) : Tectonic 0.17 (moteur XeTeX autonome, sans sudo), epubcheck 5.4.0, et un environnement Python (`.tools/venv`). `xelatex` système reste prioritaire s'il existe. Avec Tectonic, le générateur lance une passe par processus (`--reruns 0`) jusqu'à stabilité du `.aux` : les recompilations internes de Tectonic gonflaient des lignes de plusieurs dizaines de points (936 pages au lieu de 694).
 10. **Skills hors du dépôt** : `~/.claude/skills/dictionnaire-redaction`, `dictionnaire-definition`, `schemas-dictionnaire`. Rien de ces skills ne va dans ce dépôt public.
@@ -36,7 +36,7 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
 - [x] Outils locaux dans `.tools/` et détection dans `config.py`.
 - [x] `main.py` en ligne de commande (`check`, `fix`, `build`, `index`, `stats`, `info`) ; le menu reste pour un lancement sans argument.
 - [x] Modèle de livre (`scripts/core/book.py`) : parties, éditions, renvois limités aux entrées présentes dans l'édition.
-- [x] Générateur PDF multi-parties, broché et relié dans le même code (fin du remplacement de chaînes de l'ancien `pdf_hardcover_generator.py`, supprimé).
+- [x] Générateur PDF multi-parties, un seul code pour le broché couleur et le poche (fin du remplacement de chaînes de l'ancien `pdf_hardcover_generator.py`, supprimé).
 - [x] Générateur EPUB 3 (formules en MathML, légendes, `toc.ncx`) : epubcheck 0 erreur, 0 avertissement sur les deux éditions.
 - [x] `sync_checker.py` et `content_validator.py` (spécifications, chronologie).
 - [x] Ménage :
@@ -67,7 +67,7 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
 
 ### Entreprises, applications et logiciels
 - [x] Sortie du dictionnaire technique par reclassement (195 entrées, 12 catégories).
-- [!] Logos et captures : voir « Droits sur les logos et les captures ».
+- [x] Logos et captures : gardés, crédités sous chaque image (champ `credit` de `assets:`) et exclus de la licence dans `LICENSE.md` (décision de Loïc du 27/10).
 
 ### Personnes
 - [x] Limite éditoriale et liste (`edition-2027/personnes-candidats.md`, 151 candidats, 144 retenues en 13 lots).
@@ -81,7 +81,7 @@ Ces choix conditionnent tout le reste. Chacun est réversible, mais il faut le c
 ### BIP, BOLT, bLIP, NIP
 - [x] `specifications/bip.yaml` (214 BIP, dépôt `bitcoin/bips` au commit `100ba872`).
 - [x] `specifications/bolt.yaml` (13) et `specifications/blip.yaml` (15).
-- [x] `specifications/nip.yaml` (100 NIP, `related` vers les entrées techniques existantes).
+- [x] ~~`specifications/nip.yaml` (100 NIP)~~ : retiré le 27/10, Nostr n'étant pas Bitcoin.
 - [x] 33 écarts entre des définitions de BIP, BOLT et bLIP et leurs spécifications (`edition-2027/ecarts-specifications.md`) : vérifiés et corrigés avec la passe de corrections.
 
 ## Phase 5 — Termes manquants
@@ -108,8 +108,7 @@ Objectif : environ un visuel toutes les 3 ou 4 définitions, là où il aide.
 - [x] Plan des visuels (`edition-2027/visuels/`) : 277 schémas (76 de priorité A), logos et captures.
 - [x] Production des schémas avec `schemas-dictionnaire` : les 79 schémas de priorité A (3 démos et lots A1 à A8). Les priorités B (≈ 150) et C restent dans `plan-schemas.tsv` pour une suite.
 - [x] Refaire au style 2027 les images de 2026 : les 48 schémas sont redessinés (lots A et R1 à R4), chacun vérifié à la source ; les passages faux repérés en dessinant sont corrigés (lots C9 à C11).
-- [!] 6 images de 2026 restent telles quelles : logos de Bitcoin Core, Bitcoin Knots, Bitcoin Cash et BSV, emblème « B » de Bitcoin, avatars PayNym. Elles relèvent de la décision sur les droits.
-- [!] Logos et captures : attendent la décision sur les droits.
+- [x] 6 images de tiers gardées (logos de Bitcoin Core, Bitcoin Knots, Bitcoin Cash et BSV, emblème « B » de Bitcoin, avatars PayNym) : chacune porte son crédit (titulaire, source, licence ou mention de marque), imprimé sous l'image dans le PDF et l'EPUB, lu par le site dans `metadata.yaml`, et listé dans `LICENSE.md`.
 
 ## Phase 8 — EPUB et Amazon KDP
 
@@ -122,20 +121,18 @@ Objectif : environ un visuel toutes les 3 ou 4 définitions, là où il aide.
 
 ---
 
-## Budget de pages (à trancher sur pièces)
+## Budget de pages
 
-Premier build complet à la charte, sans chronologie, sans nouvelles fiches de personnes ni nouveaux termes : **broché 694 pages, relié 566 pages**.
+Retour de Loïc du 27/10 : deux livres imprimés, plus de relié ni de tomes ; le complet sous 750 pages pour garder une marge. Limites lues sur l'aide KDP (https://kdp.amazon.com/en_US/help/topic/GVBQ3CMEQW3W2VL6) : couleur premium, papier blanc, 24 à 828 pages jusqu'à 8 × 10 po ; couleur standard, 72 à 600 pages.
 
-Build final du 2026-10-27 (1 643 entrées, chronologie, 152 fiches de personnes, 79 schémas de priorité A et 48 redessinés) :
+Build du 2026-10-27 (1 536 entrées : 1 060 techniques, 208 écosystème, 48 personnes, 220 spécifications ; 160 événements ; plus de NIP) :
 
-| Édition | Broché | Relié | EPUB (epubcheck) |
-|---|---|---|---|
-| complete | 1 080 pages (au-dessus de 828) | 860 pages (au-dessus de 550) | 0 erreur |
-| essentiel | 474 pages | 414 pages | 0 erreur |
-| tome-1 (dictionnaire technique) | 650 pages | 528 pages | 0 erreur |
-| tome-2 (écosystème, personnes, spécifications, chronologie) | 422 pages | 334 pages | 0 erreur |
+| Livre | Format | Impression | Pages | EPUB (epubcheck) |
+|---|---|---|---|---|
+| complete | 7 × 10 po, Archivo 9,5/12 pt, une colonne | couleur premium | 730 | 0 erreur |
+| essentiel (poche) | 5 × 8 po, 9/11,5 pt, définitions courtes techniques et écosystème seulement | noir et blanc | 302 | 0 erreur |
 
-Seuls les deux tomes et l'essentiel tiennent dans les limites de KDP en papier. L'édition complète reste possible en EPUB et en PDF numérique. KDP limite le relié à 550 pages et le broché à 828 (marge intérieure portée automatiquement à 22,5 mm au-delà de 700 pages). La charte prévoit deux options si le relié dépasse 540 pages : passer le relié en 9 / 11,5 pt (environ −5 %) ou le publier en deux volumes. L'édition `essentiel` reste loin de ces limites.
+Coût d'impression du complet en couleur premium, grand format : 0,75 € + 0,0715 € par page, soit environ 53 € par exemplaire (détail et prix dans `edition-2027/kdp/fiche.md`). Passer sous 600 pages permettrait la couleur standard, moins chère.
 
 ## Limite éditoriale : qui entre dans le dictionnaire des personnes
 
@@ -148,7 +145,7 @@ Le livre est vendu, et son texte est sous licence CC BY-NC-SA 4.0. Deux régimes
 - **Logos** : ce sont des marques, souvent des œuvres protégées. Les citer par leur nom est libre (usage nominatif) ; reproduire le logo dans un livre vendu demande en pratique l'accord du titulaire ou des conditions d'usage qui le permettent (kit presse, charte de marque). Beaucoup de kits presse autorisent l'usage éditorial mais interdisent la modification et l'usage commercial : une lecture au cas par cas est nécessaire.
 - **Captures d'écran** : l'interface d'un logiciel est une œuvre. Un logiciel libre (licence MIT, GPL…) couvre son code ; la reproduction de son interface dans un livre est en général tolérée et défendable au titre de la citation, mais pas garantie. Un logiciel propriétaire demande l'accord de l'éditeur.
 - **Incompatibilité de licence** : une image de tiers ne peut pas être placée sous CC BY-NC-SA par le dictionnaire. Chaque image de tiers doit porter sa mention de source et être exclue explicitement de la licence du livre (mention dans les pages légales et dans `LICENSE.md`).
-- **Recommandation** : pas de logos de tiers dans le livre imprimé sans autorisation écrite ; captures limitées aux logiciels libres, faites par Loïc lui-même, créditées, et listées dans une page « Crédits des images ». Le plan des visuels note la source et les conditions trouvées pour chaque candidat (`edition-2027/visuels/plan-logos-captures.tsv`).
+- **Décision de Loïc (27/10)** : les logos et images de tiers restent, avec un crédit correct sur chaque image dans le PDF, l'EPUB, le livre papier et le dépôt. Recommandation d'origine, gardée pour mémoire : pas de logos de tiers dans le livre imprimé sans autorisation écrite ; captures limitées aux logiciels libres, faites par Loïc lui-même, créditées, et listées dans une page « Crédits des images ». Le plan des visuels note la source et les conditions trouvées pour chaque candidat (`edition-2027/visuels/plan-logos-captures.tsv`).
 
 ## Compatibilité avec le site
 
@@ -158,19 +155,20 @@ Le site (`feat/site-dictionnaire`) lit `definitions/fr` avec un parseur YAML min
 - **Catégories** : 55 au lieu de 19, mêmes commentaires de description dans `templates/categories.yaml`. Nouveau `templates/parts.yaml` : partie de chaque catégorie, pictogramme et nom en casse de phrase (`display`). Le site peut séparer les entrées par partie (technique, écosystème, personnes, spécifications) sans nouveau champ dans `metadata.yaml`.
 - **Pictogrammes** : `assets/pictograms/<slug>.svg` en `currentColor` (charte, section 7), un par catégorie.
 - **Images** : en plus de `image-N.png` (couleur, à afficher), un schéma 2027 a `image-N-nb.pdf`, `image-N-nb.png` (livre imprimé, à ignorer) et `image-N.svg` (source). Seul `image-N.png` est déclaré dans `assets:` de `metadata.yaml`. Le texte alternatif sert aussi de légende.
-- **Nouvelles sources** : `specifications/*.yaml` (BIP, BOLT, bLIP, NIP) et `chronologie/fr/*.yaml`, pour des pages dédiées si le site le souhaite.
+- **Nouvelles sources** : `specifications/*.yaml` (BIP, BOLT, bLIP ; les NIP sont retirés) et `chronologie/fr/*.yaml`, pour des pages dédiées si le site le souhaite.
 - **Slugs inchangés**, aucune URL ne casse, même quand le slug porte une faute (`op-2drop-0xd6`, `canal-de-paiment`, `dlp-discreet-log-probleme`) : le titre est corrigé, le slug reste. Les nouvelles entrées (quantique, Nostr, applications Nostr, termes Optech, personnes) ajoutent des slugs.
 
 ## Questions ouvertes pour Loïc
 
-- Budget de pages : l'édition complète brochée fait plus de 1 000 pages, au-dessus des 828 de KDP. Les éditions `tome-1` et `tome-2` existent : choisir entre deux tomes et une édition complète réservée à l'EPUB et au PDF.
 - Fiche de Mara van der Laan : pronom à choisir (aujourd'hui sans pronom).
 - Points « à trancher » des lots de corrections et de fiches : listés dans les journaux `~/.local/share/dico-2027/ed2027/corrections/C*-journal.md` et les rapports `verification-*.md` (dates à source unique, positions éditoriales comme BIP-0148).
-- Logos et captures dans le livre vendu (voir plus haut).
-- Le titre de l'édition `essentiel` et son ISBN éventuel (aujourd'hui : même titre, sous-titre « L'essentiel en définitions courtes », sans ISBN).
+- Le titre du poche `essentiel` et son ISBN (aujourd'hui : même titre, sous-titre « L'essentiel en définitions courtes », sans ISBN) ; nouvel ISBN du complet en 7 × 10 po.
+- Notions de Nostr (catégories « Nostr » et « Application Nostr ») : les NIP sont retirés, mais ces fiches restent ; à garder ou à retirer ?
+- Fiches et événements retirés à repêcher éventuellement : `edition-2027/personnes-retirees.md`, `edition-2027/chronologie-retiree.md`.
 
 ## Journal
 
 - 2026-10-25 : démarrage, inventaire, décisions d'architecture. Taxonomie, spécifications, versions courtes, scripts, EPUB, skills. Limite d'usage de l'API vers 13 h 20 : quatre tâches relancées en reprise. Charte officielle reçue (`f5a3a13b`) : skill de schémas mis en conformité, mise en page du livre refaite à la charte, bogue de Tectonic contourné.
 - 2026-10-26 : `/tmp` vidé au redémarrage ; travail des sous-tâches recopié dans `~/.local/share/dico-2027/`. Corrections C1 à C9 commitées, schémas A1 à A3, termes Nostr et quantiques.
 - 2026-10-27 : deux limites d'usage, tâches relancées. Schémas A4 à A8 et R1 à R4, 152 fiches de personnes, 18 termes candidats, corrections C10 et C11, `pending_terms.yaml`. Charte passée au baobab sur `feat/couverture-2027` (`8ea661ec`) : section 6 des schémas inchangée, copie du skill mise à jour.
+- 2026-10-27 (retour de Loïc) : NIP retirés ; personnes de 155 à 48 et chronologie de 696 à 160 événements (listes dans `edition-2027/`) ; note de l'auteur et introductions réécrites ; mise en page couleur à la charte ; un broché couleur 7 × 10 po de 730 pages et un poche « essentiel » de 302 pages ; relié et tomes supprimés ; logos de tiers crédités.
