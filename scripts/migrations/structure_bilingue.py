@@ -79,6 +79,15 @@ def tracked_text_files():
             yield name, path
 
 
+def rewrite_paths(text: str) -> str:
+    """Applique REWRITES hors de l'arbre du README, que replace_readme_tree remplace en bloc."""
+    pieces = re.split(f"({re.escape(TREE_BEGIN)}.*?{re.escape(TREE_END)})", text, flags=re.S)
+    for i in range(0, len(pieces), 2):
+        for pattern, repl in REWRITES:
+            pieces[i] = pattern.sub(repl, pieces[i])
+    return "".join(pieces)
+
+
 def plan_moves():
     todo = []
     for old, new in MOVES:
@@ -96,9 +105,7 @@ def plan_rewrites(moved_to: dict):
         name = moved_to.get(name, name)
         path = ROOT / name if (ROOT / name).exists() else path
         text = path.read_text(encoding="utf-8", errors="strict")
-        new = text
-        for pattern, repl in REWRITES:
-            new = pattern.sub(repl, new)
+        new = rewrite_paths(text)
         if new != text:
             changes.append((name, text, new))
     return changes
