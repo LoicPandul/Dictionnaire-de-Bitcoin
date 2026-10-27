@@ -62,7 +62,7 @@ Les notes ne sont données que s'il y a un piège. « (titre) » = le terme est 
 | chaîne principale | best chain, main chain | Core dit *best chain* (la chaîne de plus grand travail cumulé) |
 | travail accumulé | accumulated work, chainwork | Évite *longest chain* : c'est la chaîne qui a le plus de travail, pas la plus longue |
 | réorganisation | chain reorganization (*reorg*) | (titre). Le français *resynchronisation* désigne ce phénomène |
-| embranchement naturel | accidental fork | (titre). Deux blocs trouvés presque en même temps |
+| embranchement naturel | natural fork | (titre). Deux blocs trouvés presque en même temps |
 | scission de la chaîne | chain split | |
 | récompense de bloc | block reward | **Piège** : subvention + frais |
 | subvention de bloc | block subsidy | **Piège** : seulement les nouveaux bitcoins créés (50, 25, 12.5, 6.25, 3.125...) |
