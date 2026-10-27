@@ -5,4 +5,6 @@ La politique de relais se décompose en sous-ensembles de plus en plus spécifiq
 * La *politique de mempool* regroupe les règles d'acceptation des transactions dans la mempool du nœud ;
 * Les *règles de standardisation* dictent le format des transactions individuelles acceptées.
 
+![La politique de relais englobe la politique de relais des transactions, qui contient la politique de mempool, qui contient elle-même les règles de standardisation.](./assets/image-1.png)
+
 Contrairement aux règles de consensus, la politique de relais est configurée localement par chaque nœud et peut varier de l'un à l'autre.

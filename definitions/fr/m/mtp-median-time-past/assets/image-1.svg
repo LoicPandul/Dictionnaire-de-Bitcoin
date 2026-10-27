@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="552" viewBox="0 0 1280 552"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <style>.accolade{fill:none;stroke:var(--encre);stroke-width:3}</style>
+  <g id="schema">
+    <text class="annotation" x="32" y="80">11 derniers blocs, ordre de la chaîne</text>
+    <text class="annotation" x="1104" y="80" text-anchor="end">plus ancien que son parent</text>
+    <path class="fleche-note" d="M1116 70 Q1198 70 1199 98"/>
+    <rect class="structure" x="32" y="104" width="96" height="72"/>
+    <text class="mono" x="80.0" y="151" text-anchor="middle">9:02</text>
+    <path class="lien" style="marker-end:none" d="M128 140.0 H144"/>
+    <rect class="structure" x="144" y="104" width="96" height="72"/>
+    <text class="mono" x="192.0" y="151" text-anchor="middle">9:13</text>
+    <path class="lien" style="marker-end:none" d="M240 140.0 H256"/>
+    <rect class="structure" x="256" y="104" width="96" height="72"/>
+    <text class="mono" x="304.0" y="151" text-anchor="middle">9:08</text>
+    <path class="lien" style="marker-end:none" d="M352 140.0 H368"/>
+    <rect class="structure" x="368" y="104" width="96" height="72"/>
+    <text class="mono" x="416.0" y="151" text-anchor="middle">9:17</text>
+    <path class="lien" style="marker-end:none" d="M464 140.0 H480"/>
+    <rect class="structure" x="480" y="104" width="96" height="72"/>
+    <text class="mono" x="528.0" y="151" text-anchor="middle">9:30</text>
+    <path class="lien" style="marker-end:none" d="M576 140.0 H592"/>
+    <rect class="structure" x="592" y="104" width="96" height="72"/>
+    <text class="mono" x="640.0" y="151" text-anchor="middle">9:21</text>
+    <path class="lien" style="marker-end:none" d="M688 140.0 H704"/>
+    <rect class="structure" x="704" y="104" width="96" height="72"/>
+    <text class="mono" x="752.0" y="151" text-anchor="middle">9:41</text>
+    <path class="lien" style="marker-end:none" d="M800 140.0 H816"/>
+    <rect class="structure" x="816" y="104" width="96" height="72"/>
+    <text class="mono" x="864.0" y="151" text-anchor="middle">9:36</text>
+    <path class="lien" style="marker-end:none" d="M912 140.0 H928"/>
+    <rect class="structure" x="928" y="104" width="96" height="72"/>
+    <text class="mono" x="976.0" y="151" text-anchor="middle">9:55</text>
+    <path class="lien" style="marker-end:none" d="M1024 140.0 H1040"/>
+    <rect class="structure" x="1040" y="104" width="96" height="72"/>
+    <text class="mono" x="1088.0" y="151" text-anchor="middle">9:58</text>
+    <path class="lien" style="marker-end:none" d="M1136 140.0 H1152"/>
+    <rect class="structure" x="1152" y="104" width="96" height="72"/>
+    <text class="mono" x="1200.0" y="151" text-anchor="middle">9:49</text>
+    <path class="accolade" d="M32 192 V208 H1248 V192"/>
+    <path class="flux" d="M640 208 V304"/>
+    <text class="etiquette" x="664" y="268">Tri par horodatage</text>
+    <rect class="structure" x="32" y="320" width="96" height="72"/>
+    <text class="mono" x="80.0" y="367" text-anchor="middle">9:02</text>
+    <rect class="structure" x="144" y="320" width="96" height="72"/>
+    <text class="mono" x="192.0" y="367" text-anchor="middle">9:08</text>
+    <rect class="structure" x="256" y="320" width="96" height="72"/>
+    <text class="mono" x="304.0" y="367" text-anchor="middle">9:13</text>
+    <rect class="structure" x="368" y="320" width="96" height="72"/>
+    <text class="mono" x="416.0" y="367" text-anchor="middle">9:17</text>
+    <rect class="structure" x="480" y="320" width="96" height="72"/>
+    <text class="mono" x="528.0" y="367" text-anchor="middle">9:21</text>
+    <rect class="sujet" x="584" y="312" width="112" height="168"/>
+    <text class="mono sur-sujet" x="640.0" y="367" text-anchor="middle">9:30</text>
+    <text class="nom-sujet" x="640.0" y="448" text-anchor="middle">MTP</text>
+    <rect class="structure" x="704" y="320" width="96" height="72"/>
+    <text class="mono" x="752.0" y="367" text-anchor="middle">9:36</text>
+    <rect class="structure" x="816" y="320" width="96" height="72"/>
+    <text class="mono" x="864.0" y="367" text-anchor="middle">9:41</text>
+    <rect class="structure" x="928" y="320" width="96" height="72"/>
+    <text class="mono" x="976.0" y="367" text-anchor="middle">9:49</text>
+    <rect class="structure" x="1040" y="320" width="96" height="72"/>
+    <text class="mono" x="1088.0" y="367" text-anchor="middle">9:55</text>
+    <rect class="structure" x="1152" y="320" width="96" height="72"/>
+    <text class="mono" x="1200.0" y="367" text-anchor="middle">9:58</text>
+    <path class="accolade" d="M32 416 V432 H576 V416"/>
+    <path class="lien" style="marker-end:none" d="M304.0 432 V448"/>
+    <text class="secondaire" x="304.0" y="488" text-anchor="middle">5 plus anciens</text>
+    <path class="accolade" d="M704 416 V432 H1248 V416"/>
+    <path class="lien" style="marker-end:none" d="M976.0 432 V448"/>
+    <text class="secondaire" x="976.0" y="488" text-anchor="middle">5 plus récents</text>
+  </g>
+</svg>

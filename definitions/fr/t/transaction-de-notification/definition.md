@@ -2,4 +2,6 @@ Transaction Bitcoin spécifique utilisée dans le cadre du protocole BIP-0047 (c
 
 Concrètement, lorsque Alice souhaite envoyer des paiements à Bob en utilisant son code de paiement, elle doit d'abord lui envoyer une transaction de notification. Cette transaction contient, dans un output `OP_RETURN`, le code de paiement d'Alice chiffré à l'aide d'un secret partagé calculé avec ECDH (*Elliptic-Curve Diffie-Hellman*). Bob, en surveillant son adresse de notification, peut déchiffrer cette information et découvrir le code de paiement d'Alice. Il peut alors dériver les adresses correspondantes pour identifier les paiements futurs d'Alice.
 
+![Alice envoie d'abord à Bob une seule transaction de notification, qui porte son code de paiement masqué dans un output OP_RETURN, puis le paie sur une nouvelle adresse à chaque paiement.](./assets/image-1.png)
+
 La transaction de notification n'a besoin d'être envoyée qu'une seule fois pour chaque paire d'utilisateurs. Les paiements suivants entre Alice et Bob ne nécessitent plus cette étape.

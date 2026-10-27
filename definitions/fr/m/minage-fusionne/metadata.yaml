@@ -6,4 +6,6 @@ english_term: "MM - MERGED MINING"
 cross_references:
   - "71dff716-239d-4926-883e-e633df2b2d36"
   - "5319c967-bf2e-4045-9e80-4370247365e2"
+assets:
+  - filename: "image-1.png"
 version: "1"

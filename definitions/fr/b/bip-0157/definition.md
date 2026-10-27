@@ -2,4 +2,6 @@ Proposition qui définit le protocole pair-à-pair permettant aux clients léger
 
 Le BIP-0157 s'appuie sur un système d'en-têtes de filtres chaînés, similaire aux en-têtes de blocs. Chaque en-tête est le double SHA-256 de la concaténation du hash du filtre avec l'en-tête précédent, ce qui permet au client de vérifier l'authenticité de la chaîne de filtres. En cas de conflit entre pairs, le client peut télécharger le bloc complet, recalculer le filtre correct et identifier le pair fautif.
 
+![Chaque en-tête de filtre est le double SHA-256 du hash du filtre de son bloc et de l'en-tête de filtre précédent : il engage ainsi tous les filtres antérieurs, en parallèle de la chaîne des blocs.](./assets/image-1.png)
+
 Ce BIP requiert le BIP-0158 qui spécifie la construction des filtres eux-mêmes. Rédigé par Olaoluwa Osuntokun, Alex Akselrod et Jim Posen, il est déployé dans Bitcoin Core.

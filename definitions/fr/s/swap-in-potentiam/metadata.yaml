@@ -5,4 +5,6 @@ category: "LIGHTNING NETWORK"
 cross_references:
   - "e2b26fa2-39a2-4159-8424-929f5ba634d6"
   - "ba1ad375-829d-436a-bd13-570d31abe544"
+assets:
+  - filename: "image-1.png"
 version: "1"

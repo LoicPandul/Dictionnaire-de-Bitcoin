@@ -6,4 +6,6 @@ cross_references:
   - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
   - "01676c23-17d9-48c4-8817-bf7be488b5e0"
 english_term: "CANDIDATE BLOCK"
+assets:
+  - filename: "image-1.png"
 version: "1"

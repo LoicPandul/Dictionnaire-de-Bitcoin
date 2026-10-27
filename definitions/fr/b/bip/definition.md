@@ -23,4 +23,6 @@ Les BIPs passent par quatre statuts au cours de leur cycle de vie (simplifiés p
 * Déployé (`Deployed`) : Le BIP est activement utilisé dans l'écosystème. Ce statut est atteint sur présentation de preuves d'utilisation effective (déploiement en production par un projet établi, critères d'activation d'un soft fork remplis, etc.). Une fois déployé, le BIP est considéré comme final et ne devrait plus subir de modifications substantielles ;
 * Fermé (`Closed`) : Le BIP n'est plus activement développé ni utilisé et ne présente qu'un intérêt historique. Ce statut remplace les anciens statuts « Deferred », « Rejected », « Withdrawn », « Replaced » et « Obsolete ».
 
+![Cycle de vie d'un BIP selon le BIP-0003 : le statut passe de Draft à Complete puis à Deployed, et chacune de ces étapes peut mener à Closed.](./assets/image-1.png)
+
 Après avoir atteint le statut « Complete », tout changement doit être documenté dans une section « Changelog » et versionné selon un schéma sémantique.

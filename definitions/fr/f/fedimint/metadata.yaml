@@ -5,4 +5,6 @@ category: "ECASH"
 cross_references:
   - "b3a6e8eb-b4bb-4e94-9c46-225973b2fc48"
   - "ba1ad375-829d-436a-bd13-570d31abe544"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -6,4 +6,6 @@ cross_references:
   - "c06ceef4-51bf-4777-98c6-180fc4f17790"
   - "aab65e71-7454-4b5d-af76-bc038f9bd44c"
 french_term: "TOUR DE GARDE"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -5,4 +5,6 @@ category: "ATTAQUE"
 french_term: "MINAGE ÉGOÏSTE"
 cross_references:
   - "6b80b6f0-7ff0-45cb-a5ee-a454d514ceff"
+assets:
+  - filename: "image-1.png"
 version: "1"

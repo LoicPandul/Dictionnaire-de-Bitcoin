@@ -63,6 +63,12 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
+
+/* styles propres au schéma */
+
+  .cadre   { fill: none; stroke: var(--note); stroke-width: 2; }   /* regroupe les nœuds inconnus, trait d'annotation */
+  .attache { fill: none; stroke: var(--encre); stroke-width: 3; }
+  .egal    { font-size: 64px; font-weight: 600; }
 </style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>

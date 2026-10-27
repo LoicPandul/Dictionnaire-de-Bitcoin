@@ -4,4 +4,6 @@ Ce problème est particulièrement critique pour les protocoles à contrainte te
 
 Le *package relay* résout ce problème en évaluant le taux de frais combiné d'un ensemble parent-enfant. L'implémentation actuelle dans Bitcoin Core se concentre sur une variante limitée à un parent et un enfant (1p1c), qui ne nécessite pas de modification du protocole P2P. Le BIP-0331 formalise la spécification plus générale du relais de paquets ancestraux. Le principal défi de développement réside dans la prévention des vulnérabilités de déni de service.
 
+![Une transaction parente à 1 sat/vB, seule sous le seuil de 5 sat/vB de la mempool, est rejetée ; évaluée en paquet 1p1c avec son enfant à 13 sat/vB, elle atteint un taux combiné de 7 sat/vB et entre dans la mempool.](./assets/image-1.png)
+
 Ce mécanisme est complémentaire des *anchor outputs* et constitue une contre-mesure importante face aux attaques d'épinglage de transactions (*transaction pinning*).

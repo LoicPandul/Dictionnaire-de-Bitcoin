@@ -3,6 +3,8 @@ Mécanisme qui permet d'imposer des conditions spécifiques sur la manière dont
 * Leur implémentation ;
 * Leur récursivité.
 
+![Un covenant : le scriptPubKey de l'UTXO exige une signature et impose en plus la forme des sorties de la transaction qui le dépense.](./assets/image-1.png)
+
 Il existe de très nombreuses propositions qui permettraient l'utilisation de covenants sur Bitcoin. En octobre 2026, dans le dépôt des BIP, `OP_CHECKTEMPLATEVERIFY` (CTV, BIP-0119), `SIGHASH_ANYPREVOUT` (APO, BIP-0118) et `OP_CHECKSIGFROMSTACK` (CSFS, BIP-0348) ont le statut « Draft », `OP_CAT` (BIP-0347) le statut « Complete » et `OP_VAULT` (BIP-0345) le statut « Closed ». Parmi les autres propositions, il y a : `OP_TX`, `OP_TAPLEAFUPDATEVERIFY` (TLUV), `OP_EVICT`, etc.
 
 Pour comprendre le concept de covenant, prenons une analogie : un coffre-fort contenant 500 € en petites coupures. Celui qui parvient à déverrouiller ce coffre avec la clé adéquate est libre d'utiliser cet argent comme bon lui semble. Ça, c'est la situation normale de Bitcoin. Maintenant, supposons que ce même coffre-fort ne contienne pas 500 € en billets de banque, mais plutôt des tickets restaurants d'une valeur équivalente. Celui qui ouvre ce coffre peut disposer de cette somme. Cependant, sa liberté de dépense est restreinte, car ces tickets ne permettent de payer que dans certains restaurants. Ainsi, il y a une première condition pour dépenser cet argent, qui est de parvenir à ouvrir le coffre avec la clé appropriée. Mais il y a aussi une condition supplémentaire quant à l'usage futur de cette somme : elle doit être dépensée exclusivement dans des restaurants partenaires, et non pas en toute liberté. Ce système de contraintes sur les transactions futures, c'est ce que l'on appelle un covenant.

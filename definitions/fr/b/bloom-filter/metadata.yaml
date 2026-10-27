@@ -5,4 +5,6 @@ category: "RÉSEAU"
 french_term: "FILTRE DE BLOOM"
 cross_references:
   - "6ca39957-45a3-4cd3-93ea-4d95a60180a1"
+assets:
+  - filename: "image-1.png"
 version: "1"

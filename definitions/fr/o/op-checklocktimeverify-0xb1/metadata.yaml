@@ -4,4 +4,6 @@ slug: "op-checklocktimeverify-0xb1"
 category: "OPCODES"
 cross_references:
   - "176da554-3dd4-41c2-bc3e-5b7f7a2bf34a"
+assets:
+  - filename: "image-1.png"
 version: "1"

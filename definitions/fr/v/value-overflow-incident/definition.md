@@ -3,3 +3,5 @@ Bug exploité le 15 août 2010 sur le réseau Bitcoin, qui a conduit à la créa
 Le problème a été repéré rapidement par Jeff Garzik, qui a alerté la communauté sur le forum BitcoinTalk. Satoshi Nakamoto a publié un correctif dans les heures qui ont suivi. Ce correctif ajoutait une vérification explicite de chaque montant de sortie ainsi que de leur somme, et rejetait toute transaction qui contenait des valeurs négatives ou excessives. Les mineurs ont alors adopté la nouvelle version du logiciel et ont produit une chaîne alternative qui excluait la transaction invalide.
 
 La chaîne corrigée a dépassé la chaîne qui contenait le bug au bloc 74 691, après environ 53 blocs de perturbation. Cet épisode, enregistré sous l'identifiant CVE-2010-5139, constitue le premier incident majeur de l'histoire de Bitcoin.
+
+![La chaîne corrigée, issue du bloc 74 637, dépasse au bloc 74 691 la chaîne qui contenait la transaction invalide du bloc 74 638, après 53 blocs.](./assets/image-1.png)
