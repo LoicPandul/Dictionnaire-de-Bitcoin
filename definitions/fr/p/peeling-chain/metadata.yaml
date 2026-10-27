@@ -6,4 +6,6 @@ french_term: "CHAÎNE D'ÉPLUCHAGE"
 cross_references:
   - "b8d328dd-a9bc-4aaf-b87e-32f736585c20"
   - "92b35e63-4cc7-4d78-be58-02d655c89a10"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="904" viewBox="0 0 1280 904"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- Sujet : la branche secrète, un seul élément, montré avant et après -->
+    <path class="sujet" d="M352 336 h120 v80 h-120 Z M512 336 h120 v80 h-120 Z M672 336 h120 v80 h-120 Z&#10;                           M352 672 h120 v80 h-120 Z M512 672 h120 v80 h-120 Z M672 672 h120 v80 h-120 Z"/>
+
+    <!-- ===== AVANT ===== -->
+    <text class="etiquette" x="32" y="72">Avant</text>
+    <circle class="acteur" cx="572" cy="100" r="68"/>
+    <text class="etiquette" x="572" y="111" text-anchor="middle">Nœuds</text>
+    <path class="lien" d="M572 168 V207"/>
+
+    <rect class="structure" x="32" y="208" width="120" height="80"/>
+    <text class="etiquette" x="92" y="259" text-anchor="middle">100</text>
+    <rect class="structure" x="192" y="208" width="120" height="80"/>
+    <text class="etiquette" x="252" y="259" text-anchor="middle">101</text>
+    <rect class="structure" x="352" y="208" width="120" height="80"/>
+    <text class="etiquette" x="412" y="259" text-anchor="middle">102</text>
+    <rect class="structure" x="512" y="208" width="120" height="80"/>
+    <text class="etiquette" x="572" y="259" text-anchor="middle">103</text>
+    <path class="lien" d="M192 248 H153"/>
+    <path class="lien" d="M352 248 H313"/>
+    <path class="lien" d="M512 248 H473"/>
+    <text class="etiquette" x="840" y="259">Chaîne publique</text>
+
+    <rect class="hors-chaine" x="336" y="320" width="472" height="112"/>
+    <text class="etiquette sur-sujet" x="412" y="387" text-anchor="middle">102</text>
+    <text class="etiquette sur-sujet" x="572" y="387" text-anchor="middle">103</text>
+    <text class="etiquette sur-sujet" x="732" y="387" text-anchor="middle">104</text>
+    <path class="lien" d="M352 376 H252 V289"/>
+    <path class="lien" d="M512 376 H473"/>
+    <path class="lien" d="M672 376 H633"/>
+    <text class="etiquette" x="840" y="368">Branche secrète</text>
+    <text class="annotation" x="840" y="408">inconnue du réseau</text>
+
+    <path class="flux" d="M572 432 V670"/>
+    <text class="annotation" x="548" y="560" text-anchor="end">diffusée d'un coup</text>
+
+    <!-- ===== APRÈS ===== -->
+    <text class="etiquette" x="32" y="520">Après</text>
+    <circle class="acteur" cx="732" cy="564" r="68"/>
+    <text class="etiquette" x="732" y="575" text-anchor="middle">Nœuds</text>
+    <path class="lien" d="M732 632 V671"/>
+
+    <rect class="structure" x="32" y="672" width="120" height="80"/>
+    <text class="etiquette" x="92" y="723" text-anchor="middle">100</text>
+    <rect class="structure" x="192" y="672" width="120" height="80"/>
+    <text class="etiquette" x="252" y="723" text-anchor="middle">101</text>
+    <text class="etiquette sur-sujet" x="412" y="723" text-anchor="middle">102</text>
+    <text class="etiquette sur-sujet" x="572" y="723" text-anchor="middle">103</text>
+    <text class="etiquette sur-sujet" x="732" y="723" text-anchor="middle">104</text>
+    <path class="lien" d="M192 712 H153"/>
+    <path class="lien" d="M352 712 H313"/>
+    <path class="lien" d="M512 712 H473"/>
+    <path class="lien" d="M672 712 H633"/>
+    <text class="etiquette" x="840" y="704">Branche diffusée</text>
+    <text class="annotation" x="840" y="744">plus de travail accumulé</text>
+
+    <rect class="structure" x="352" y="792" width="120" height="80"/>
+    <text class="etiquette" x="412" y="843" text-anchor="middle">102</text>
+    <rect class="structure" x="512" y="792" width="120" height="80"/>
+    <text class="etiquette" x="572" y="843" text-anchor="middle">103</text>
+    <path class="lien" d="M352 832 H252 V753"/>
+    <path class="lien" d="M512 832 H473"/>
+    <text class="etiquette" x="840" y="824">Blocs abandonnés</text>
+    <text class="annotation" x="840" y="864">réorganisation</text>
+  </g>
+</svg>

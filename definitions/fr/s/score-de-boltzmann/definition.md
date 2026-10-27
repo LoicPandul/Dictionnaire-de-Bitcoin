@@ -2,4 +2,6 @@ Indicateur utilisé pour évaluer le niveau de confidentialité d'une transactio
 
 Le principe est inspiré de la physique statistique de Ludwig Boltzmann : plus une transaction admet de combinaisons possibles (de micro-états), plus son entropie est élevée, et plus elle est difficile à analyser. Le score est généralement exprimé en bits d'entropie. Une transaction avec un score de 0 bit n'a qu'une seule interprétation possible (chaque *input* est clairement relié à un *output*). À l'inverse, un *coinjoin* bien construit peut atteindre un score élevé, car les multiples *inputs* et *outputs* de montants identiques génèrent un très grand nombre de combinaisons possibles.
 
+![Une transaction à deux entrées de 100 000 sats et deux sorties de 99 000 sats admet trois interprétations possibles, soit un score de Boltzmann de log₂ 3 ≈ 1,58 bit.](./assets/image-1.png)
+
 Ce score permet aux utilisateurs d'évaluer objectivement l'efficacité d'un *coinjoin* ou de toute transaction en termes de confidentialité.

@@ -5,4 +5,6 @@ category: "CLÉS ET DÉRIVATION"
 english_term: "HARDENED DERIVATION"
 cross_references:
   - "080efa61-7f74-4d60-9ee4-4fa10920b967"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="664" viewBox="0 0 1280 664"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- Phrase de récupération (secret) -->
+    <rect class="secret" x="32" y="264" width="232" height="160" rx="8"/>
+    <text class="etiquette" x="148" y="336" text-anchor="middle">Phrase de</text>
+    <text class="etiquette" x="148" y="376" text-anchor="middle">récupération</text>
+
+    <!-- Éventail vers la passphrase -->
+    <path class="flux" d="M264 344 H296 V200 H340"/>
+    <path class="flux" d="M264 344 H340"/>
+    <path class="flux" d="M264 344 H296 V488 H340"/>
+
+    <!-- Sujet : la passphrase, trois saisies -->
+    <rect class="sujet" x="344" y="48" width="232" height="504" rx="8"/>
+    <text class="nom-sujet" x="460" y="112" text-anchor="middle">Passphrase</text>
+    <text class="secondaire sur-sujet" x="460" y="211" text-anchor="middle" font-style="italic">aucune</text>
+    <text class="mono sur-sujet" x="460" y="355" text-anchor="middle">chat</text>
+    <text class="mono sur-sujet" x="460" y="499" text-anchor="middle">Chat</text>
+
+    <!-- En-têtes de colonnes -->
+    <text class="annotation" x="764" y="112" text-anchor="middle">graine</text>
+
+    <!-- Rangée 1 -->
+    <path class="flux" d="M576 200 H620"/>
+    <rect class="secret" x="624" y="160" width="280" height="80" rx="8"/>
+    <text class="mono" x="764" y="210" text-anchor="middle">5eb00bbd…38e4</text>
+    <path class="flux" d="M904 200 H956"/>
+    <rect class="structure" x="960" y="160" width="288" height="80"/>
+    <text class="etiquette" x="1104" y="211" text-anchor="middle">Portefeuille A</text>
+
+    <!-- Rangée 2 -->
+    <path class="flux" d="M576 344 H620"/>
+    <rect class="secret" x="624" y="304" width="280" height="80" rx="8"/>
+    <text class="mono" x="764" y="354" text-anchor="middle">9869c0e9…7864</text>
+    <path class="flux" d="M904 344 H956"/>
+    <rect class="structure" x="960" y="304" width="288" height="80"/>
+    <text class="etiquette" x="1104" y="355" text-anchor="middle">Portefeuille B</text>
+
+    <!-- Rangée 3 -->
+    <path class="flux" d="M576 488 H620"/>
+    <rect class="secret" x="624" y="448" width="280" height="80" rx="8"/>
+    <text class="mono" x="764" y="498" text-anchor="middle">e7d3fb1a…7538</text>
+    <path class="flux" d="M904 488 H956"/>
+    <rect class="structure" x="960" y="448" width="288" height="80"/>
+    <text class="etiquette" x="1104" y="499" text-anchor="middle">Portefeuille C</text>
+
+    <!-- Annotation -->
+    <path class="fleche-note" d="M760 600 C 680 600, 620 560, 584 516"/>
+    <text class="annotation" x="776" y="611">une majuscule suffit</text>
+  </g>
+</svg>

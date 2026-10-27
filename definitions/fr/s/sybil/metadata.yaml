@@ -5,4 +5,6 @@ category: "ATTAQUE"
 cross_references:
   - "5cdf5d24-69b0-47c1-a25e-c929dccdcbb2"
   - "3e7055ed-3bab-47c1-90d3-cfd551096ee8"
+assets:
+  - filename: "image-1.png"
 version: "1"
