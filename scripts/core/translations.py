@@ -45,7 +45,9 @@ SOURCE_BEHIND = "à reporter"      # la traduction a changé : reporter dans la 
 CONFLICT = "conflit"              # les deux ont changé
 ORIGIN_MISSING = "absente de la langue d'origine"  # entrée écrite d'abord dans la langue cible
 ORPHAN = "orpheline"              # la source a été supprimée : supprimer ou rattacher la traduction
-STATUSES = (UP_TO_DATE, TRANSLATION_BEHIND, SOURCE_BEHIND, CONFLICT, UNMARKED, MISSING, ORIGIN_MISSING, ORPHAN)
+EXCLUDED = "exclue"               # entrée sans objet dans la langue cible (templates/languages.yaml)
+STATUSES = (UP_TO_DATE, TRANSLATION_BEHIND, SOURCE_BEHIND, CONFLICT, UNMARKED, MISSING, ORIGIN_MISSING, ORPHAN,
+            EXCLUDED)
 
 
 def load_languages(path: Path = None) -> dict:
@@ -162,7 +164,7 @@ def status_of(source: Entry, translation: Entry) -> str:
     return UP_TO_DATE
 
 
-def pairs(origin: str, target: str, part_of=None, root: Path = None) -> List[Pair]:
+def pairs(origin: str, target: str, part_of=None, root: Path = None, exclude=()) -> List[Pair]:
     """Paires entre la langue d'origine du dépôt et une langue cible, par UUID.
 
     Le sens de chaque paire se lit dans les métadonnées : la version qui porte `source_lang`
@@ -177,7 +179,7 @@ def pairs(origin: str, target: str, part_of=None, root: Path = None) -> List[Pai
             source, translation = (eb, ea) if ea.is_translation and not eb.is_translation else (ea, eb)
             status = status_of(source, translation)
         elif ea:
-            source, translation, status = ea, None, MISSING
+            source, translation, status = ea, None, EXCLUDED if ea.slug in exclude else MISSING
         elif eb.is_translation:
             source, translation, status = None, eb, ORPHAN
         else:

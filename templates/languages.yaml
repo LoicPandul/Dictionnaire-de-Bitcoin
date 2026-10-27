@@ -12,3 +12,7 @@ translations:
     name: "English"
     parts:
       - technique
+    # Entrées françaises sans objet dans cette langue (slugs de definitions/fr), avec la raison.
+    exclude:
+      - crypter      # remarque sur l'usage du français (« crypter » n'existe pas, on dit « chiffrer »)
+      - perime-bloc  # doublon de obsolete-bloc : un seul « stale block » en anglais

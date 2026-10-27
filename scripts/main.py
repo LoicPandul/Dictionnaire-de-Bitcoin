@@ -154,7 +154,8 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
             print(f"[ERREUR] langue inconnue : {lang} (templates/languages.yaml)")
             return False
         scope = set(languages["translations"][lang].get("parts") or [])
-        all_pairs = translations.pairs(languages["source"], lang, part_of)
+        exclude = set(languages["translations"][lang].get("exclude") or [])
+        all_pairs = translations.pairs(languages["source"], lang, part_of, exclude=exclude)
 
         if args and (args.mark or args.mark_unmarked):
             refs = list(args.mark or [])
@@ -209,7 +210,7 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
               f"{'à reporter':>12}{'conflits':>10}{'à marquer':>11}")
         for part, c in sorted(by_part.items(), key=lambda kv: -sum(kv[1].values())):
             missing = c[translations.MISSING] + c[translations.ORIGIN_MISSING]
-            done = sum(c.values()) - missing - c[translations.ORPHAN]
+            done = sum(c.values()) - missing - c[translations.ORPHAN] - c[translations.EXCLUDED]
             flag = "" if (not scope or part in scope) else "  (hors périmètre)"
             print(f"  {part:<16}{done:>10}{missing:>12}{c[translations.UP_TO_DATE]:>8}"
                   f"{c[translations.TRANSLATION_BEHIND]:>11}{c[translations.SOURCE_BEHIND]:>12}"
@@ -217,7 +218,7 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
         counts, _ = translation_checker.summary(dictionary)[lang]
         print(f"  Dans le périmètre : {translation_checker.describe(lang, counts)}")
 
-        listed = [s for s in translations.STATUSES if s != translations.UP_TO_DATE]
+        listed = [s for s in translations.STATUSES if s not in (translations.UP_TO_DATE, translations.EXCLUDED)]
         if args and args.list:
             # Les entrées manquantes se comptent par centaines : on les liste seulement sur demande.
             listed = [s for s in listed if s == args.list or (args.list == "all" and s != translations.MISSING)]

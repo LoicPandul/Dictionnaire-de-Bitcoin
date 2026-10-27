@@ -106,9 +106,9 @@ def summary(dictionary: Dictionary) -> Dict[str, Tuple[Counter, Dict[str, Counte
     for lang, conf in languages["translations"].items():
         scope = set(conf.get("parts") or [])
         in_scope, by_part = Counter(), {}
-        for p in tr.pairs(languages["source"], lang, part_of):
+        for p in tr.pairs(languages["source"], lang, part_of, exclude=set(conf.get("exclude") or [])):
             by_part.setdefault(p.part or "?", Counter())[p.status] += 1
-            if not scope or p.part in scope or p.status != tr.MISSING:
+            if p.status != tr.EXCLUDED and (not scope or p.part in scope or p.status != tr.MISSING):
                 in_scope[p.status] += 1
         result[lang] = (in_scope, by_part)
     return result

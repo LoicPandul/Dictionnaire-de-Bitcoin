@@ -44,6 +44,7 @@ renvoi en français.
 | à marquer | la traduction existe, la synchro n'a jamais été enregistrée | relire, puis marquer |
 | absente de la langue d'origine | entrée écrite d'abord en anglais | la traduire en français |
 | orpheline | l'entrée source a été supprimée | supprimer ou rattacher la traduction |
+| exclue | l'entrée n'a pas de sens dans la langue cible (`exclude` dans `templates/languages.yaml`) | rien |
 
 Les statuts se lisent dans les deux sens : « en retard » signale une traduction anglaise à
 mettre à jour, « à reporter » une modification anglaise que le français n'a pas encore.
