@@ -7,4 +7,5 @@ cross_references:
   - "d9966ec1-5cac-479d-a051-bcb75167696c"
 assets:
   - filename: "image-1.png"
+    credit: "Logo Bitcoin Core, © Bitcoin Core, marque de ses titulaires, reproduit à titre d'illustration (bitcoincore.org)"
 version: "1"
