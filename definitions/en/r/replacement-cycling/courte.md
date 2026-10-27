@@ -1,0 +1,1 @@
+Attack that exploits transaction replacement rules (RBF) to push a victim's settlement transaction out of mempools, leaving nothing in its place. It mainly targets Lightning Network HTLCs, which must be resolved before a deadline.

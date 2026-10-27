@@ -2,6 +2,8 @@ Problème formulé pour la première fois par Leslie Lamport, Robert Shostak et 
 
 Dans cette métaphore, un groupe de généraux byzantins et leurs armées respectives sont campés autour d'une ville qu'ils souhaitent attaquer ou assiéger. Les généraux sont géographiquement séparés les uns des autres et doivent communiquer par messager pour coordonner leur stratégie. Qu'ils attaquent ou qu'ils battent en retraite n'a pas d'importance, du moment que tous les généraux parviennent à un consensus. 
 
+![Un général traître envoie « Attaquer » à un général et « Retraite » à un autre : séparés par la ville et réduits aux messagers, les généraux loyaux ne parviennent pas à une décision commune.](./assets/image-1.png)
+
 Par conséquent, nous pouvons considérer les exigences suivantes :
 * Chaque général doit prendre une décision : attaquer ou battre en retraite (oui ou non) ;
 * Une fois la décision prise, elle ne peut plus être modifiée ;

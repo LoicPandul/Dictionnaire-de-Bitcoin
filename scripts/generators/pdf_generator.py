@@ -3,7 +3,7 @@
 Génération du PDF d'une édition via XeLaTeX (ou Tectonic, son équivalent autonome).
 
 Mise en page de la charte graphique 2027 (design/charte-2027.md, sections 3 et 4, branche
-feat/couverture-2027) : Archivo en instances statiques (fonts/static/), Atkinson Hyperlegible
+feat/couverture-2027) : Archivo en instances statiques (assets/fonts/static/), Atkinson Hyperlegible
 Mono pour le code, Fira Math pour les formules. Deux brochés Amazon KDP, choisis par
 l'édition (clé `format` de templates/editions.yaml) :
   - `couleur` : 7 × 10 po (17,78 × 25,4 cm), intérieur couleur premium, papier blanc,
@@ -23,7 +23,7 @@ from typing import List, Optional
 
 import yaml
 
-from ..config import BASE_DIR, BUILD_DIR, DEFINITIONS_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEMPLATES_DIR, find_tex_engine
+from ..config import BASE_DIR, BUILD_DIR, DEFINITIONS_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEMPLATES_DIR, TEXTS_DIR, find_tex_engine
 from ..core.book import Book, Section
 from ..core.chronology import MOIS_FR
 from . import images
@@ -73,14 +73,15 @@ class PdfFormat:
 
 
 FORMATS = {
-    # Livre complet : grand format en couleur, réglages du relié de la charte (section 3).
+    # Livre complet : grand format en couleur, corps du broché de la charte (9 / 11,5 pt,
+    # section 3) pour rester sous 750 pages avec les schémas 2027.
     "couleur": PdfFormat(
         id="couleur", label="7 × 10 po, couleur", color=True, isbn_key="isbn_paperback",
         paper="paperwidth=17.78cm, paperheight=25.4cm", inner=25.5,
         margins="top=9.5mm, bottom=9.5mm, outer=13.5mm, headheight=14pt, headsep=6mm, footskip=9.5mm",
-        code_max_chars=81, body=(9.5, 12), code_inline=9, code_block=(7.4, 10), vedette=11,
+        code_max_chars=81, body=(9, 11.5), code_inline=8.5, code_block=(7.4, 10), vedette=11,
         categorie=8.5, renvois=8, note=(8.5, 11), table=(8, 10), folio=8, toc=(7.5, 9),
-        letter=150, part=60, entry_gap="10pt", image_gap="7pt", image_height="110mm", picto="3mm",
+        letter=150, part=60, entry_gap="9pt", image_gap="6pt", image_height="90mm", picto="3mm",
     ),
     # Essentiel : livre de poche en noir et blanc, réglages du broché de la charte.
     "poche": PdfFormat(
@@ -102,7 +103,7 @@ STATUS_FR = {
 
 
 def load_legal() -> dict:
-    with open(TEMPLATES_DIR / "legal.yaml", encoding="utf-8") as f:
+    with open(TEXTS_DIR / "legal.yaml", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
 
 
@@ -153,7 +154,7 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 
 \usepackage[{fmt.geometry()}, includehead, includefoot]{{geometry}}
 
-% Polices : instances statiques d'Archivo et d'Atkinson Hyperlegible Mono (fonts/static/)
+% Polices : instances statiques d'Archivo et d'Atkinson Hyperlegible Mono (assets/fonts/static/)
 \setmainfont{{ArchivoTexte}}[Path={static}, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-Bold]
 \setsansfont{{ArchivoTexte}}[Path={static}, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-Bold]
 \setmonofont{{AtkinsonHyperlegibleMono}}[Path={static}, Extension=.ttf, UprightFont=*-Regular, ItalicFont=*-Italic, BoldFont=*-Bold]
@@ -347,7 +348,7 @@ def _front_title(title: str) -> str:
 
 
 def _front_text(title: str, template: str) -> str:
-    path = TEMPLATES_DIR / template
+    path = TEXTS_DIR / template
     content = path.read_text(encoding="utf-8") if path.exists() else ""
     latex = markdown_to_latex(clean_content(content))
     # Intertitres des textes liminaires : Archivo Vedette, comme les mots vedettes

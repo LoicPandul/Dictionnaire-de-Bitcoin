@@ -1,0 +1,1 @@
+Basic unit of information on a quantum computer. A qubit can take the value 0, the value 1, or a superposition of 0 and 1. By using this superposition of states together with other quantum phenomena such as entanglement and quantum interference, a quantum computer can parallelize computing processes, and thus solve certain specific problems much faster.

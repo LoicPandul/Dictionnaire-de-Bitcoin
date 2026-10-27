@@ -1,0 +1,1 @@
+Open-source key-value storage library designed by Google, which Bitcoin Core uses to store the UTXO set and the block index. Its introduction in place of BerkeleyDB caused the accidental chain fork of March 2013 described in BIP-0050.

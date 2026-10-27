@@ -1,0 +1,1 @@
+In the RGB protocol, the business logic is the set of internal rules and operations of a contract, described by its schema (that is, the very structure of the contract). It dictates how the state of the contract can evolve and under what conditions.

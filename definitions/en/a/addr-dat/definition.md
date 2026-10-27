@@ -1,0 +1,1 @@
+Name of the old file used by Bitcoin Core to store information about the network peers (that is, nodes) with which the user's node has interacted or may potentially interact. This file was replaced by the `peers.dat` file as of version 0.7.0.

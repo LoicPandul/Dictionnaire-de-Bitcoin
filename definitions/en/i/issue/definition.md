@@ -1,0 +1,1 @@
+Report on GitHub and other code hosting platforms that flags a bug, proposes an improvement, or suggests a new feature. It is a discussion point for contributors and lets a project track the tasks to be done or the problems to be solved. A Bitcoin user can help the open-source software they use by reporting potential bugs through issues on the project's repository.

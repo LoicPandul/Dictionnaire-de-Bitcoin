@@ -1,0 +1,1 @@
+Measure of the magnitude of an asset's price variations over a given period. For Bitcoin, it refers to the sometimes sharp fluctuations in the price of BTC against fiat currencies such as the dollar or the euro.

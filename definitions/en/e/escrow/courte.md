@@ -1,0 +1,1 @@
+Mechanism in which funds stay locked until the conditions agreed between the parties are met. On Bitcoin, it often takes the form of a 2-of-3 multisig between the buyer, the seller, and an arbitrator.

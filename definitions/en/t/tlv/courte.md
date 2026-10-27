@@ -1,0 +1,1 @@
+Type-length-value encoding format, where each piece of data carries its type, its length, and its value. It makes messages extensible without breaking compatibility, and is used notably in Lightning Network messages and in Taproot Assets.

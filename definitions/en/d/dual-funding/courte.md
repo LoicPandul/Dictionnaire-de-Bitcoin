@@ -1,0 +1,1 @@
+Method of opening a Lightning channel in which both participants lock bitcoin, instead of just one, so that liquidity is available on both sides from the start. It is part of version 2 of the channel establishment protocol.

@@ -1,0 +1,1 @@
+Part of a transaction that contains the signatures and public keys needed to spend bitcoin. With SegWit, it is separated from the rest of the transaction, which removes TXID malleability and increases block capacity.

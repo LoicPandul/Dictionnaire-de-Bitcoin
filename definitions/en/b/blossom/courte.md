@@ -1,0 +1,1 @@
+Set of specifications for storing files on HTTP servers, each file identified by its `SHA256` hash and the user by their Nostr key. A client can find a vanished file on another of the author's servers.

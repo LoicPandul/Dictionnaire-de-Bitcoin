@@ -1,0 +1,1 @@
+LND database that stores the complete state of a node's channels. It changes with every payment, and restoring an outdated copy exposes the operator to penalties, hence the use of Static Channel Backups.

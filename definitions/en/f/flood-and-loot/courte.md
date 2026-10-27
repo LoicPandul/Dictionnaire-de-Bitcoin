@@ -1,0 +1,1 @@
+Attack on Lightning in which the attacker locks many HTLCs across the victims' channels, forces them to close those channels at the same time, then takes advantage of the congestion to recover the HTLCs not claimed in time.

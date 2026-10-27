@@ -1,0 +1,1 @@
+Wallet identifier derived from a BIP-0047 payment code and represented by a robot, which makes it possible to generate unique receiving addresses with another user without interaction. Samourai Wallet and Sparrow Wallet have implemented it.

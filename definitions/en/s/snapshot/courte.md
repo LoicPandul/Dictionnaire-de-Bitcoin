@@ -1,0 +1,1 @@
+Copy of Bitcoin's UTXO set at a given block. With Assume UTXO, a new Bitcoin Core node loads a verified snapshot to become usable almost immediately, then validates the full history in the background.

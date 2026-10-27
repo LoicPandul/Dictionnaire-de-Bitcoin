@@ -1,1 +1,3 @@
 Composante fixe des frais de routage sur le Lightning Network. Lorsqu'un nœud transmet un paiement pour le compte d'un autre, il peut prélever des frais composés de deux parties : le *base fee*, un montant constant facturé pour chaque paiement routé indépendamment de son montant, et le *fee rate*, une part proportionnelle au montant transféré. Le *base fee* est exprimé en millisatoshis et vaut typiquement 1 000 msat (soit 1 satoshi). Il est configurable par l'opérateur du nœud pour chaque canal.
+
+![Les frais facturés par un nœud de routage Lightning additionnent un base fee fixe et une part proportionnelle au montant transféré.](./assets/image-1.png)

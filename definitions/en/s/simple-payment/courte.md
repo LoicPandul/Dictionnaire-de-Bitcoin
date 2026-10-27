@@ -1,0 +1,1 @@
+Transaction pattern, in chain analysis, that consumes one or more UTXOs and produces 2 outputs. It likely signals a payment: one output goes to the recipient, the other returns to the sender as change.

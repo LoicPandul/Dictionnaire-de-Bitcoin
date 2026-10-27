@@ -1,0 +1,1 @@
+Soft fork activation mechanism designed for Taproot in 2021, with a miner signaling period of just 3 months. If the threshold is reached, the soft fork is locked in and activates a few months later; otherwise, nothing is imposed.

@@ -1,0 +1,1 @@
+Ability of the Bitcoin network to remain in one piece despite attempts to fragment it, each node keeping at least one connection with peers that follow the same consensus rules in order to stay in consensus with the rest of the network.

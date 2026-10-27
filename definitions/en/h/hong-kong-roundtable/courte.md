@@ -1,0 +1,1 @@
+Meeting held on February 20, 2016, between Bitcoin Core developers and miners during the Blocksize War, which ended with an agreement to prepare a hard fork after SegWit. Each side interpreted it differently, and the agreement increased distrust.

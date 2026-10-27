@@ -1,0 +1,1 @@
+Asset that a borrower pledges to a lender, who can seize it if the loan is not repaid. With Bitcoin, it mostly refers to bitcoin deposited to obtain a Lombard loan in fiat currency without having to sell it.

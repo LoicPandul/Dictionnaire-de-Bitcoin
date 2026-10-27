@@ -1,0 +1,1 @@
+Protection mechanism against Sybil attacks, underlying Nakamoto consensus, that requires miners to spend computing power finding a header hash less than or equal to a target before publishing a block.

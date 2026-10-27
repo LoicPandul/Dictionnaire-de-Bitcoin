@@ -1,0 +1,1 @@
+Transaction identifier computed over all of its data, witness included, unlike the TXID, which excludes it. The WTXIDs of a block are committed to in its coinbase transaction through a second Merkle tree.

@@ -1,0 +1,3 @@
+Protocol or network built as an addition, stacked on top of the main Bitcoin network. It uses the Bitcoin network as a foundation and therefore depends on its protocol. The Bitcoin network, however, does not depend on its layers 2. An example of such a layer is the Lightning Network.
+
+These layers are designed to extend the capabilities of the Bitcoin network by adding features or capacities, such as faster transactions, tokens, or micropayments. They are often created to address certain limitations of the Bitcoin network, while benefiting from its security and decentralization. Note that although these layers are built on the Bitcoin network, they have their own protocols and mechanisms, distinct from those of the Bitcoin network itself.

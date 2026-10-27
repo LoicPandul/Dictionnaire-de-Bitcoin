@@ -1,0 +1,1 @@
+Integrated circuit designed for a single function. In mining, it computes `SHA256` hashes much faster and with less energy than a CPU or GPU, and by extension the term also refers to the mining machine that houses it.

@@ -2,6 +2,8 @@ Méthode cryptographique permettant de combiner une vraie signature avec une sig
 * Alice lance cet échange atomique. Elle crée une transaction $m_A$ qui envoie 1 BTC vers Bob. Elle crée une signature $s_A$ qui permet de valider cette transaction grâce à sa clé privée $p_A$ ($P_A = p_A \cdot G$), et en utilisant un nonce $n_A$ et un secret $t$ ($N_A = n_A \cdot G$ et $T = t \cdot G$) : 
 $$s_A = n_A + t + H(N_A + T \parallel P_A \parallel m_A) \cdot p_A$$
 
+![Échange atomique par adaptor signatures : Bob soustrait son adaptor de la signature complète publiée par Alice, obtient le secret t, puis l'ajoute à l'adaptor d'Alice pour compléter la signature de la transaction d'Alice.](./assets/image-1.png)
+
 * Alice calcule l'adaptor signature $s_A'$ à partir du secret $t$ et de sa vraie signature $s_A$ :  
 $$s_A' = s_A - t$$
 

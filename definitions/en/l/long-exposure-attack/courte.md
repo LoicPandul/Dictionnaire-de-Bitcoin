@@ -1,0 +1,1 @@
+Quantum attack against a public key that stays visible on the blockchain for a long time, such as that of a P2PK or P2TR output or a reused address. The attacker recovers the private key with no time limit while the funds stay put.

@@ -1,0 +1,1 @@
+Scaling solution that executes transactions in batches off the main chain, then publishes their data or a validity proof on it. It increases throughput and reduces fees while keeping the security of the base layer.

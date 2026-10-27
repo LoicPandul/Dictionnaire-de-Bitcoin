@@ -1,0 +1,1 @@
+Acronym for *LNURL Document*. LUDs are documents that define standardized protocols used within LNURL. Each LUD specifies a feature, such as payments (LUD-06), withdrawals (LUD-03), or authentication (LUD-04). They provide good interoperability between the different Lightning services and clients that use LNURL.

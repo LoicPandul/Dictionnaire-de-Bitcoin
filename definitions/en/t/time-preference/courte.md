@@ -1,0 +1,1 @@
+Concept from Austrian economics that describes the tendency to prefer immediate satisfaction to future satisfaction. Hard money such as bitcoin is often presented as encouraging a low time preference, and therefore saving.

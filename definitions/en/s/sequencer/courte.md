@@ -1,0 +1,1 @@
+Node in charge of ordering transactions and producing the blocks of a rollup. It provides fast pre-confirmations and periodically publishes commitments to the base layer, without being able to falsify the state or steal funds.

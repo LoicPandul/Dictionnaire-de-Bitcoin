@@ -1,0 +1,1 @@
+Takes the top of the main stack and moves it to the alternate stack (alt stack). This opcode makes it possible to store data temporarily on the side for later use in the script. The moved item is therefore removed from the main stack. `OP_FROMALTSTACK` is then used to put it back on top of the main stack.

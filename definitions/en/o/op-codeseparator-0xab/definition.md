@@ -1,0 +1,1 @@
+Modifies the current output script, indicating that only the operations following this opcode are taken into account when verifying the signatures of the corresponding inputs. This makes it possible to split a complex script into several parts, where each segment can be signed independently.

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="984" viewBox="0 0 1280 984"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema" transform="translate(-56 40)">
+    <!-- Le script commun -->
+    <rect class="structure" x="200" y="48" width="880" height="104"/>
+    <text class="mono" x="256" y="111">&lt;données&gt;</text>
+    <rect class="sujet" x="480" y="64" width="320" height="72"/>
+    <text class="nom-sujet mono" x="640" y="111" text-anchor="middle">OP_SUCCESS187</text>
+    <text class="mono" x="840" y="111">OP_EQUAL</text>
+
+    <path class="flux" d="M336 152 V238"/>
+    <path class="flux" d="M944 152 V238"/>
+
+    <!-- Les deux nœuds, au même instant -->
+    <circle class="acteur" cx="336" cy="328" r="88"/>
+    <text class="etiquette" x="336" y="320" text-anchor="middle">Ancien</text>
+    <text class="etiquette" x="336" y="356" text-anchor="middle">nœud</text>
+    <circle class="acteur" cx="944" cy="328" r="88"/>
+    <text class="etiquette" x="944" y="320" text-anchor="middle">Nœud</text>
+    <text class="etiquette" x="944" y="356" text-anchor="middle">à jour</text>
+
+    <!-- Ancien nœud : succès immédiat -->
+    <path class="flux" d="M336 416 V726"/>
+    <text class="annotation" x="360" y="520">succès immédiat,</text>
+    <text class="annotation" x="360" y="560">rien n'est exécuté</text>
+    <rect class="structure" x="216" y="728" width="240" height="96"/>
+    <text class="etiquette" x="336" y="787" text-anchor="middle">Valide</text>
+
+    <!-- Nœud à jour : nouvelle règle -->
+    <path class="flux" d="M944 416 V478"/>
+    <rect class="structure" x="720" y="480" width="448" height="96"/>
+    <text class="etiquette" x="944" y="539" text-anchor="middle">Règle du nouvel opcode</text>
+    <path class="flux" d="M808 576 V726"/>
+    <path class="flux" d="M1096 576 V726"/>
+    <text class="annotation" x="788" y="664" text-anchor="end">respectée</text>
+    <text class="annotation" x="1116" y="664">violée</text>
+    <rect class="structure" x="704" y="728" width="208" height="96"/>
+    <text class="etiquette" x="808" y="787" text-anchor="middle">Valide</text>
+    <rect class="structure" x="976" y="728" width="240" height="96"/>
+    <text class="etiquette" x="1096" y="787" text-anchor="middle">Invalide</text>
+  
+    <!-- Libellés communs -->
+    <text class="annotation" x="200" y="30">même script</text>
+    <text class="annotation" x="640" y="338" text-anchor="middle">au même moment</text>
+    <!-- Même verdict des deux côtés -->
+    <path class="structure" style="fill:none" d="M336 824 V864 H808 V824"/>
+    <text class="annotation" x="572" y="912" text-anchor="middle">même verdict : pas de hard fork</text>
+  </g>
+</svg>

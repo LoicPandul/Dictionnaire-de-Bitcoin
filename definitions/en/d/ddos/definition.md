@@ -1,0 +1,1 @@
+Form of DoS in which the attack comes from multiple sources simultaneously, making defense more complex. Attackers often use networks of computers infected by malware (botnets) to launch massive requests at a single target. This strategy multiplies the effectiveness of the attack by overloading the capacity of the targeted system to cause service interruptions.

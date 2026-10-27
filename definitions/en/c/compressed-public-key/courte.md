@@ -1,0 +1,1 @@
+Representation of a public key that keeps only the `x` coordinate of the elliptic curve point, preceded by a prefix `02` or `03` that indicates the parity of `y`. It shrinks the key from 65 to 33 bytes.

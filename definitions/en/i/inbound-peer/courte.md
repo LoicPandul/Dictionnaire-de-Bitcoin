@@ -1,0 +1,1 @@
+Node on the Bitcoin network that opens a connection to another node on its own initiative. It exchanges the same information as an outbound peer, but is trusted less, since the receiving node did not choose it.

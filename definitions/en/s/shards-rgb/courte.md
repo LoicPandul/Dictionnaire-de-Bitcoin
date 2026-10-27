@@ -1,0 +1,1 @@
+Branch of the directed acyclic graph that traces the history of the state transitions of an RGB contract. It isolates the part of the history needed for the client-side validation of an asset since the genesis.

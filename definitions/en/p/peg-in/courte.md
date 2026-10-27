@@ -1,0 +1,1 @@
+Mechanism that transfers the value of bitcoin to a sidechain: the BTC are locked on the main chain and an equivalent amount of tokens is issued on the sidechain. It is the first step of the two-way peg.

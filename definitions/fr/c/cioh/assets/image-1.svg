@@ -79,17 +79,17 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 <text class="etiquette" x="152" y="219" text-anchor="middle">Transaction A</text>
 <path class="flux" d="M272 208 H500"/>
 <rect class="valeur" x="504" y="176" width="392" height="64" rx="32"/>
-<text class="etiquette" x="700" y="219" text-anchor="middle">40 000 sats</text>
+<text class="etiquette" x="700" y="219" text-anchor="middle">40 000 sats</text>
 <rect class="structure" x="32" y="256" width="240" height="64"/>
 <text class="etiquette" x="152" y="299" text-anchor="middle">Transaction B</text>
 <path class="flux" d="M272 288 H500"/>
 <rect class="valeur" x="504" y="256" width="392" height="64" rx="32"/>
-<text class="etiquette" x="700" y="299" text-anchor="middle">105 000 sats</text>
+<text class="etiquette" x="700" y="299" text-anchor="middle">105 000 sats</text>
 <rect class="structure" x="32" y="336" width="240" height="64"/>
 <text class="etiquette" x="152" y="379" text-anchor="middle">Transaction C</text>
 <path class="flux" d="M272 368 H500"/>
 <rect class="valeur" x="504" y="336" width="392" height="64" rx="32"/>
-<text class="etiquette" x="700" y="379" text-anchor="middle">22 500 sats</text>
+<text class="etiquette" x="700" y="379" text-anchor="middle">22 500 sats</text>
 <path class="lien" d="M960 268 H1034"/>
 <circle class="acteur" cx="1120" cy="268" r="80"/>
 <text class="etiquette" x="1120" y="279" text-anchor="middle">Alice</text>

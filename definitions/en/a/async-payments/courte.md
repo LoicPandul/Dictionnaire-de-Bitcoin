@@ -1,0 +1,1 @@
+Mechanism that makes it possible to send a Lightning payment to an offline recipient, whereas the protocol normally requires them to be connected to finalize the payment. It mainly addresses the case of mobile wallets.

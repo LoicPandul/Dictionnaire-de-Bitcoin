@@ -1,0 +1,1 @@
+Reusable Silent Payments identifier, made of two public keys, that makes it possible to receive many payments with no interaction with the sender, no address reuse, and no visible link between those payments.

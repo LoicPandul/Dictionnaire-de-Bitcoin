@@ -4,4 +4,6 @@ Format d'encodage d'entiers non signés à longueur variable utilisé dans le pr
 * les valeurs de 65 536 à 4 294 967 295 sont précédées de `0xfe` et encodées sur 4 octets ;
 * les valeurs supérieures sont précédées de `0xff` et encodées sur 8 octets.
 
+![Les quatre longueurs d'un entier CompactSize : 1 octet de 0 à 252, puis le préfixe 0xfd, 0xfe ou 0xff suivi de 2, 4 ou 8 octets de valeur.](./assets/image-1.png)
+
 Le CompactSize est utilisé par exemple pour indiquer le nombre de transactions dans un bloc, le nombre d'entrées ou de sorties dans une transaction, ou encore la longueur d'un script.

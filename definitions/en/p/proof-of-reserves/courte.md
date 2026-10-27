@@ -1,0 +1,1 @@
+Mechanism by which an exchange demonstrates that it holds its customers' bitcoin, often with a Merkle tree of balances and signed addresses, without proving solvency since it ignores the exchange's debts.

@@ -1,0 +1,1 @@
+Low-level programming language designed by Russell O'Connor at Blockstream for writing contracts on UTXO blockchains. Not Turing-complete, it guarantees that each execution terminates at a cost known in advance, and it has run on Liquid since July 2025.

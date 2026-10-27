@@ -1,0 +1,1 @@
+Decoy wallet, opened by a special PIN, that the user unlocks when forced under threat to open their signing device. It holds a small amount and cannot be told apart from the main wallet, whose existence the attacker cannot detect.

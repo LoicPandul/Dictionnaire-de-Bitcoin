@@ -1,0 +1,5 @@
+Hashes of specific blocks that were hard-coded in Bitcoin Core. Each checkpoint paired a block height with an expected hash, and any fork below an already synchronized checkpoint was rejected.
+
+Introduced by Satoshi Nakamoto on July 17, 2010 (version 0.3.2), this mechanism was meant to prevent any rewriting of the historical chain, even by an attacker holding a majority of the hash power. In practice, checkpoints mostly served as protection against denial of service during the initial block download (IBD): without them, an attacker could exploit the time warp bug to flood a new node's memory with millions of headers at minimum difficulty. But these checkpoints added no real security to consensus: if checkpoints ever had to influence the choice of chain, the system would already be compromised. The last one was added at block 295,000, in April 2014.
+
+Checkpoints were removed in Bitcoin Core 30.0 (October 2025), replaced by the headers presync mechanism (August 2022), which verifies the proof of work of a chain before storing its headers, eliminating any data hard-coded by developers.

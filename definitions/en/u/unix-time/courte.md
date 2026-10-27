@@ -1,0 +1,1 @@
+Measure of time that counts the seconds elapsed since January 1, 1970 at midnight UTC, used by Unix systems independently of time zones. On Bitcoin, it serves for block timestamps and for timelocks based on real time.

@@ -1,0 +1,1 @@
+Acronym for *Flexible Round-Optimized Schnorr Threshold Signatures*. Threshold signature protocol that lets part of a group of members jointly produce a standard Schnorr signature, indistinguishable from a single-signer signature.

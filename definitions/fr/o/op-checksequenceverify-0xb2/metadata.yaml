@@ -4,4 +4,6 @@ slug: "op-checksequenceverify-0xb2"
 category: "OPCODES"
 cross_references:
   - "5a7fbfe3-ae1e-4275-83b6-dc07e0c8d2fe"
+assets:
+  - filename: "image-1.png"
 version: "1"

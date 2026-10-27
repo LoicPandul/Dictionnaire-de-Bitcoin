@@ -5,4 +5,6 @@ category: "SCRIPT"
 cross_references:
   - "73c3a8a9-6dbb-4ad2-8456-2c60c8e89709"
   - "102553eb-f247-483f-ab1f-c5cd04687d2a"
+assets:
+  - filename: "image-1.png"
 version: "1"

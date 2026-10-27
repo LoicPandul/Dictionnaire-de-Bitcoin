@@ -1,0 +1,1 @@
+Process that generates child key pairs from a parent key and a chain code in an HD wallet, using `HMAC-SHA512`. All these keys can be recovered from the mnemonic phrase and the optional passphrase alone.

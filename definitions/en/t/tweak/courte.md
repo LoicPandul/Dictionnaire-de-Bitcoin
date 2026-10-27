@@ -1,0 +1,1 @@
+Scalar value whose corresponding point is added to a public key to obtain a new one, usable by whoever knows the original private key and the tweak. Taproot uses it to commit a script tree into the key of a P2TR output.

@@ -1,0 +1,1 @@
+Attack that diverts a miner's computing power without its knowledge, by replacing the address of its pool with the attacker's in an unencrypted communication. Stratum V2 encrypts these exchanges to protect against it.

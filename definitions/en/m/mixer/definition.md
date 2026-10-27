@@ -1,0 +1,3 @@
+Centralized service that breaks the history of bitcoin coins by mixing the funds of several users. Unlike a coinjoin, where users keep control of their funds throughout the mixing process, a mixer temporarily takes possession of users' bitcoin, mixes it with that of other users, then sends the funds back to new addresses.
+
+Nowadays, the use of bitcoin mixers is fading in favor of Chaumian coinjoins, which offer more security by removing the need for trust. Unlike mixers, where users must entrust their bitcoin to an operator who could steal it or keep data about the mixing process, coinjoins do not carry these risks.

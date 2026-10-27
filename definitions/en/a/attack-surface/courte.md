@@ -1,0 +1,1 @@
+The set of entry points an attacker can target to gain access to a system: interfaces, services, ports, protocols. A hardware wallet has a much smaller attack surface than a wallet installed on a computer.

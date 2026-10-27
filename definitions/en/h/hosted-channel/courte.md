@@ -1,0 +1,1 @@
+Lightning channel with no funding transaction on the blockchain, whose funds remain in the host's custody. It gives access to Lightning with no opening or closing fees, and with more guarantees than a regular custodial wallet.

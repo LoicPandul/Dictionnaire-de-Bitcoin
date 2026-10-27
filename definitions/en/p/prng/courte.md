@@ -1,0 +1,1 @@
+Acronym for *Pseudorandom Number Generator*, a deterministic algorithm that produces, from a seed, a sequence of numbers that looks random. In cryptography, it produces keys, and on Bitcoin the mnemonic phrase of a wallet.

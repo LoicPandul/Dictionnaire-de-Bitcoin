@@ -1,0 +1,5 @@
+Mechanism by which a user deliberately sacrifices value in bitcoin to make a cryptographic identity costly to obtain, which deters Sybil attacks. The concept, first proposed by Peter Todd in 2013, found its main application in JoinMarket, where it strengthens the privacy of coinjoins.
+
+In JoinMarket, a maker that publishes a high-value fidelity bond has a greater probability of being selected by takers to take part in coinjoins, and therefore of earning fees. The most common way to create a fidelity bond is to send bitcoin to a timelocked address using `OP_CHECKLOCKTIMEVERIFY`. What is sacrificed is not the capital itself but its time value: the bitcoin remain the maker's property but are locked up until the timelock expires. A long-term holder can thus create a fidelity bond at almost no cost, since they did not plan to spend their bitcoin before the deadline.
+
+An alternative is to destroy bitcoin by sending it to an `OP_RETURN` output, which makes the sacrifice permanent and the proof trivial to verify.

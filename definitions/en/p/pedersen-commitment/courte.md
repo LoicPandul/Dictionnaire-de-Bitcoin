@@ -1,0 +1,1 @@
+Cryptographic commitment that is homomorphic for addition: the sum of several commitments can be verified without revealing the committed values. It is used, for example, to hide the amounts exchanged in RGB.

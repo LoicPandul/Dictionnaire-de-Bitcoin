@@ -1,0 +1,1 @@
+File in Bitcoin Core used to store a backup of the graphical user interface (GUI) settings. This backup is created when the `-resetguisettings` option is used, which resets the GUI settings to their default values. The file lets the user retroactively inspect their old configurations to diagnose any problems related to the GUI settings.

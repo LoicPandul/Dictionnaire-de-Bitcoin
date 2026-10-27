@@ -1,0 +1,1 @@
+Circuit board that is the main component of an ASIC miner. Each hashboard holds the hashing chips (the ASICs proper) that perform the `SHA256` computations needed to mine Bitcoin. A typical ASIC miner, such as an Antminer S9 or S19, usually has three hashboards connected to a control board.

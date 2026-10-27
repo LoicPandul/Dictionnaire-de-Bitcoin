@@ -1,0 +1,1 @@
+Coins mined in the first blocks by a miner whom Sergio Lerner's analysis associates with Satoshi Nakamoto. Mostly left in P2PK outputs with a visible public key, they feed the debate over the fate of vulnerable coins.

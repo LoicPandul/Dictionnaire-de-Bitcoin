@@ -1,0 +1,1 @@
+Opcode that does nothing: it leaves the stack and the state of the script untouched. Its variants `OP_NOP1` through `OP_NOP10` have been used to add new opcodes by soft fork, such as `OP_CHECKLOCKTIMEVERIFY`.

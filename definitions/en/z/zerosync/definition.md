@@ -1,0 +1,1 @@
+Project developed to make use of ZKPs (zero-knowledge proofs) in the Bitcoin ecosystem, in order to improve the scalability and privacy of the system. Its main protocol (also named ZeroSync) compresses the history of the Bitcoin blockchain, to speed up the initial synchronization of nodes with the network through a compact proof, without compromising verification.

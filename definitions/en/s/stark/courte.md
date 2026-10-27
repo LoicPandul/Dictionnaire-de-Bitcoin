@@ -1,0 +1,1 @@
+Acronym for *Scalable Transparent ARgument of Knowledge*: cryptographic proof system that demonstrates the validity of a computation without revealing the data and without a trusted setup. It is hash-based and resists quantum attacks, but its proofs are much larger than a SNARK's.

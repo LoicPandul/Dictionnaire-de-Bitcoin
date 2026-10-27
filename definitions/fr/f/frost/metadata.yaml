@@ -3,6 +3,8 @@ title: "FROST"
 slug: "frost"
 category: "CRYPTOGRAPHIE"
 french_term: "SIGNATURES SCHNORR A SEUIL"
+assets:
+  - filename: "image-1.png"
 version: "1"
 cross_references:
   - "47b5ee48-88cf-4653-b9de-17e0afcdd408"

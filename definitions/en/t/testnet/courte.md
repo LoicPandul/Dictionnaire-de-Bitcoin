@@ -1,0 +1,1 @@
+Bitcoin network separate from mainnet, reserved for testing and development, where bitcoin has no value. It lets developers try features, applications, and updates without risk to the main network or real fees.

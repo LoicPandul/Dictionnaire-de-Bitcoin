@@ -1,0 +1,1 @@
+Sat inscribed with specific data through the inscription mechanism of the Ordinals protocol. These artifacts can include images, text, or any other type of digital content, and they are inseparably linked to the corresponding satoshi.

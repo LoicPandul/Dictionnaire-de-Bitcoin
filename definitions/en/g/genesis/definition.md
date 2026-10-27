@@ -1,0 +1,1 @@
+In the RGB protocol, the set of initial data, governed by a specific schema, that establishes the starting state of any contract. This information is the anchor point from which smart contracts evolve and RGB tokens are managed. It can be compared to the genesis block on Bitcoin, or to a coinbase transaction, but here at the client-side level and for RGB tokens.

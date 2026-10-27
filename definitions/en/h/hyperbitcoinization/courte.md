@@ -1,0 +1,1 @@
+Theoretical scenario of massive and voluntary adoption of Bitcoin, which would gradually replace fiat currencies as the dominant money. Popularized by Daniel Krawisz in 2014, the concept remains debated among bitcoiners.

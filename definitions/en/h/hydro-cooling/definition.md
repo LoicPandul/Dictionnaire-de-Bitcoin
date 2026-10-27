@@ -1,0 +1,1 @@
+Cooling system for ASICs that uses a closed loop in which water circulates through cooling blocks, pipes, and then a radiator. The goal is to extract heat from the components and keep them at a good operating temperature.

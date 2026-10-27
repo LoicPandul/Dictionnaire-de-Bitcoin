@@ -1,0 +1,1 @@
+Decentralized coinjoin protocol that uses Nostr as its communication layer, with no central coordinator. Participants register their outputs through Nostr relays, then each signs the shared PSBT before it is broadcast.

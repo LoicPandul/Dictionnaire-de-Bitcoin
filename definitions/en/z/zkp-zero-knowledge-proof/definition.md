@@ -1,0 +1,1 @@
+Cryptographic method that lets one party (the prover) prove to another party (the verifier) that a piece of information is true, without revealing the information or any aspect of it. A ZKP guarantees the correctness of a statement while preserving the confidentiality of the underlying data.

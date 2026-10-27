@@ -1,0 +1,1 @@
+Double spend carried out by a miner against a merchant who accepts a payment without confirmation: the miner keeps secret a block that sends the funds back to the miner, pays the merchant, then broadcasts that block to cancel the payment.

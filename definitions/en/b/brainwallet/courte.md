@@ -1,0 +1,1 @@
+Method of keeping a mnemonic phrase only in memory, or of deriving a private key from a chosen passphrase. It exposes funds to loss if the phrase is forgotten and, when the phrase is chosen, to theft by brute force.

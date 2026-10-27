@@ -1,0 +1,1 @@
+Lightning channel usable as soon as its funding transaction is broadcast, without waiting for confirmation. Also called a zero-conf channel, it requires trusting whoever opens it, often an LSP, and serves mobile wallets such as Phoenix.

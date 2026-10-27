@@ -9,6 +9,8 @@ $$\underbrace{[t_0 \to t_1]}_{1},\ \underbrace{[t_1 \to t_2]}_{2},\ \ldots,\ \un
 Soit 2015 intervalles. Pour en obtenir 2016, il aurait fallu utiliser le dernier bloc de la période précédente comme point de départ :
 $$T_{correct}\ =\ t_{2015}\ -\ t_{-1}$$
 
+![Entre le premier et le dernier bloc d'une période de 2016 blocs, le calcul de la difficulté ne mesure que 2015 intervalles ; il faudrait partir du dernier bloc de la période précédente pour en compter 2016.](./assets/image-1.png)
+
 Où $t_{-1}$ désigne l'horodatage du dernier bloc de la période précédente (bloc $n - 1$ pour une période qui commence au bloc $n$). L'algorithme compare donc 2015 intervalles réels au temps théorique de 2016 intervalles. Ce décalage introduit un biais d'environ $\frac{1}{2016} \approx 0{,}05\,\%$ vers une difficulté légèrement surestimée.
 
 Ce bug a surtout pour conséquence que les périodes de retarget ne se chevauchent pas : l'horodatage du dernier bloc d'une période n'entre pas dans le calcul de la période suivante. Cette discontinuité rend possible l'attaque *time warp*, où un attaquant majoritaire manipule l'horodatage du dernier bloc d'une période sans que cela n'affecte le calcul de la période suivante. Corriger réellement ce bug nécessiterait un hard fork, mais les attaques *time warp* peuvent être empêchées via un simple soft fork en ajoutant des contraintes sur les horodatages.

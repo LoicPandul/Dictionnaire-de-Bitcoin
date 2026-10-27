@@ -1,0 +1,1 @@
+In the RGB protocol, property that, through the seal definition pointing to a Bitcoin UTXO, defines who can modify the state of a contract. When an owned state is associated with a UTXO, the owner of that UTXO has the right, according to the rules of the contract, to transfer or update the corresponding state.

@@ -1,0 +1,1 @@
+Software tool dedicated to securing and managing the private keys of a Bitcoin wallet. A wallet is called hot when its mnemonic phrase is kept, through software, on a computing device that is not dedicated solely to Bitcoin use and that is directly connected to the internet. For example, a Bitcoin wallet app installed on a smartphone is considered a hot wallet.

@@ -1,0 +1,1 @@
+Lightning invoice whose recipient delays revealing the preimage, which leaves the payment suspended in the HTLCs along the route. The recipient can then settle or cancel it, which suits refundable deposits or escrows.

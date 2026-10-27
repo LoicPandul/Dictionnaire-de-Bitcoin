@@ -1,0 +1,1 @@
+Spending mode for a P2TR output in which the spender reveals one of the scripts committed to in the output's tree, proves that it is part of the tree, then satisfies it, instead of simply signing with the key.

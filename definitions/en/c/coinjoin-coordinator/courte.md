@@ -1,0 +1,1 @@
+Central server that connects the participants of a coinjoin and coordinates the construction of the collaborative transaction, without taking possession of their bitcoin or being able to link each participant's inputs to their outputs.

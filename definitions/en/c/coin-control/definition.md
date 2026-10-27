@@ -1,0 +1,3 @@
+Feature found in some Bitcoin wallet software that gives users the ability to manually select the specific UTXOs to use as inputs in a transaction. In other words, coin control makes it possible to choose precisely which pieces of bitcoin are spent. This is similar to picking a specific coin from one's pocket to pay for a baguette.
+
+Coin control is particularly useful for managing transaction fees and improving privacy. Indeed, by selecting the UTXOs to spend, users can avoid merging UTXOs from different sources, which could reveal information about all of their funds (CIOH). This feature often goes hand in hand with the ability to label transaction outputs.

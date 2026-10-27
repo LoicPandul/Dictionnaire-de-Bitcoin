@@ -1,0 +1,1 @@
+Standard script template that locks bitcoin to several public keys and requires signatures from a minimum number of the associated private keys to spend it. It reveals the public keys on receipt and has given way to P2SH, P2WSH, or P2TR multisignatures.

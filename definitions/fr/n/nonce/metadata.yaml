@@ -5,4 +5,6 @@ category: "CRYPTOGRAPHIE"
 cross_references:
   - "544bf8c2-a00d-44ca-8723-12f035bd8434"
   - "a4902301-5664-4d64-bdcd-0a1027408fdc"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,1 @@
+Acronym for *Application Programming Interface*. In the general context of computing, an API is a set of rules and specifications that software programs can follow to communicate with each other. APIs let developers access features or data of an application, an operating system, or another service from their own software.

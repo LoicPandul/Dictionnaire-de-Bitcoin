@@ -5,4 +5,6 @@ category: "PAIEMENTS LIGHTNING"
 french_term: "PAIEMENTS MULTICHEMINS ATOMIQUES"
 cross_references:
   - "3324d1a5-005e-4453-809a-3c4ab2062282"
+assets:
+  - filename: "image-1.png"
 version: "1"

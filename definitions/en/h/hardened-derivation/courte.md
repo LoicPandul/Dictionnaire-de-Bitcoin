@@ -1,0 +1,1 @@
+HD wallet derivation method that starts from the parent private key, so the parent extended public key cannot be used to compute the child public keys. It is written with an apostrophe in derivation paths.

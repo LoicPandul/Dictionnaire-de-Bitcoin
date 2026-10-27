@@ -1,0 +1,1 @@
+Set of local rules a Bitcoin node applies in its dealings with the peer-to-peer network, as opposed to the consensus rules. It includes transaction relay policy, mempool policy, and the standardness rules.

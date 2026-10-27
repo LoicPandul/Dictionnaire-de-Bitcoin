@@ -5,4 +5,6 @@ category: "OPCODES"
 cross_references:
   - "d332c8d7-5475-45ca-89d4-cf750ce2385b"
   - "8b8e6740-6ec6-46e1-a2cf-5c29706a4d57"
+assets:
+  - filename: "image-1.png"
 version: "1"

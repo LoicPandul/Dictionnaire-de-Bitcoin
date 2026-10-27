@@ -1,0 +1,1 @@
+Byte appended to each signature of a Bitcoin transaction, indicating which inputs and outputs it covers. It fixes what remains modifiable after signing: `SIGHASH_ALL`, `SIGHASH_NONE`, and `SIGHASH_SINGLE`, optionally combined with `SIGHASH_ANYONECANPAY`.

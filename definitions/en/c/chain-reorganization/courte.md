@@ -1,0 +1,1 @@
+Replacement of a portion of the blockchain by a competing chain that has accumulated more work, after two miners find a block at almost the same time. The abandoned blocks become stale and their transactions can become unconfirmed again.

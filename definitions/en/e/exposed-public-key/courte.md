@@ -1,0 +1,1 @@
+Public key known while the funds are unspent, because the script contains it, the address was reused, or an xpub circulated. A quantum computer could derive the private key from it and steal the funds.

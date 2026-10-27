@@ -3,3 +3,5 @@ Permet de concaténer les deux éléments en haut de la pile (c'est-à-dire de l
 * La mise en place de Vaults ;
 * L'utilisation de covenants ;
 * Ou encore, l'utilisation de contrats de non-équivocation.
+
+![OP_CAT retire les deux éléments au sommet de la pile, a puis b, et les remplace par un seul élément ab, leur concaténation, qui ne peut pas dépasser 520 octets.](./assets/image-1.png)

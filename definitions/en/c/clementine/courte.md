@@ -1,0 +1,1 @@
+Two-way bridge developed by Chainway Labs to transfer bitcoin between Bitcoin and the Citrea rollup. Based on BitVM2, it protects funds as long as a single one of its verifiers stays honest, without relying on a classic trusted multisig.

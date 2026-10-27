@@ -77,7 +77,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="250" y="60" width="450" height="180"/>
     <text class="etiquette" x="275" y="102">Contrat on-chain</text>
     <rect class="valeur" x="275" y="120" width="330" height="56" rx="28"/>
-    <text class="etiquette" x="440" y="159" text-anchor="middle">100 000 sats</text>
+    <text class="etiquette" x="440" y="159" text-anchor="middle">100 000 sats</text>
     <text class="mono" x="275" y="222">verrou : hash H</text>
     <path class="flux" d="M700 150 H1150 V250"/>
     <circle class="acteur" cx="1150" cy="330" r="76"/>

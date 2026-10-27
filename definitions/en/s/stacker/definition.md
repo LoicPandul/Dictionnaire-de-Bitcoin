@@ -1,0 +1,1 @@
+Term used in the Bitcoin community for the act of regularly accumulating sats. It is a long-term savings strategy that consists of buying bitcoin on a recurring basis, regardless of the market price, often through the Dollar-Cost Averaging (DCA) method.

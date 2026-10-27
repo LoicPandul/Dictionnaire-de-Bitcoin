@@ -1,0 +1,1 @@
+Special output of the round transaction of the Ark protocol, used as an input of forfeit transactions so that they are valid only if the round is confirmed. It makes the surrender of the old VTXOs and the creation of the new ones inseparable.

@@ -2,4 +2,6 @@ Protocole qui permet de transférer des bitcoins on-chain vers le Lightning Netw
 
 Cette adresse encode deux chemins de dépense : un chemin coopératif, où Alice et Bob signent conjointement pour déplacer les fonds, et un chemin de récupération unilatérale, où Alice peut reprendre ses bitcoins après l'expiration d'un *timelock*. Lorsque des fonds sont reçus et confirmés sur cette adresse, Alice peut, avec l'aide du LSP, les basculer immédiatement dans un canal Lightning existant ou nouveau, via le chemin coopératif. Si le LSP est indisponible, Alice conserve la possibilité de récupérer ses fonds on-chain après le délai prévu.
 
+![L'adresse de swap-in encode deux chemins de dépense : Alice et le LSP signent ensemble pour basculer le dépôt dans un canal Lightning, ou Alice seule reprend ses bitcoins on-chain après un délai.](./assets/image-1.png)
+
 L'avantage principal du *Swap-in Potentiam* est de réduire les exigences de confiance par rapport à d'autres méthodes d'ouverture instantanée de canaux. La copropriété temporaire des fonds et le *timelock* de sécurité garantissent que ni Alice ni le LSP ne peuvent voler les fonds. Le portefeuille Phoenix de la société ACINQ utilise une variante de ce protocole appelée « Swaproot », adaptée aux contraintes des terminaux mobiles dont la connectivité est intermittente.

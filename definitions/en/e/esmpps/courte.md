@@ -1,0 +1,1 @@
+Acronym for *Equalized Shared Maximum Pay Per Share*. Method for paying the miners of a pool, close to SMPPS, that distributes the reward equally among all submitted shares, regardless of their timing or the pool's luck.

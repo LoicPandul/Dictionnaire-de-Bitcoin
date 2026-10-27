@@ -1,0 +1,1 @@
+Set of hashes that proves a transaction is included in a block, from that block's header alone. One hash per level of the Merkle tree is enough, with no need to download the block's other transactions.

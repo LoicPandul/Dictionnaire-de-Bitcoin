@@ -1,0 +1,5 @@
+Service hosted on the Tor network, accessible only through a `.onion` address, without exposing the server's IP address. Formerly called a "hidden service", it was officially renamed "onion service" by the Tor project. The server and the client communicate through Tor circuits, so that neither knows the IP address of its counterpart.
+
+An onion service works by publishing introduction points in the distributed hash table of the Tor network. The client then chooses a rendezvous point and communicates it to the service via an introduction point. The client and the server each build a Tor circuit to this rendezvous point, in order to establish a mutual connection without any data passing in the clear over the internet.
+
+In the context of Bitcoin, many Bitcoin Core and Lightning nodes expose an onion service to accept incoming connections anonymously. This lets a node operator take part in the P2P network without revealing their IP address or location, which strengthens the censorship resistance and privacy of the infrastructure.

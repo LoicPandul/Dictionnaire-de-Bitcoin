@@ -1,0 +1,1 @@
+Standardized string that identifies a resource on the internet. On Bitcoin, the BIP-0021 format uses it to encode an address and payment parameters such as the amount, for paying with a click or a QR code.

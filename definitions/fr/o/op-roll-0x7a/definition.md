@@ -1,1 +1,3 @@
 Déplace un élément de la pile en haut de la pile, en fonction de la profondeur spécifiée par la valeur en haut de la pile avant l'opération. Par exemple, si la valeur en haut de la pile est `4`, `OP_ROLL` va sélectionner le cinquième élément de la pile en partant du sommet (l'indexation commence à `0`), et il va déplacer cette valeur au sommet. `OP_ROLL` joue le même rôle que `OP_PICK`, mis à part qu'il retire l'élément de sa position initiale.
+
+![Avec 4 au sommet de la pile, OP_ROLL retire ce 4, prend l'élément d'indice 4 (le cinquième en partant du sommet) et le déplace au sommet.](./assets/image-1.png)

@@ -1,0 +1,1 @@
+Declarative code that sets the rules of a contract in the RGB protocol: state structure, initial configuration at Genesis, and allowed transitions with their validation conditions. Every change to the contract must conform to it.

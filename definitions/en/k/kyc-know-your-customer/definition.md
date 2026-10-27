@@ -1,0 +1,4 @@
+Regulatory procedure used by some Bitcoin businesses to verify the identity of their customers as part of the fight against money laundering and terrorist financing. KYC involves collecting and verifying personal data. When buying bitcoin, KYC creates several risks for the user, notably:
+* The risk of personal data leaks tied to Bitcoin activity. Storing information on company servers can lead to leaks, exposing users' data to phishing attempts, physical attacks, or identity theft, notably because the data is tied to Bitcoin;
+* Exposure to state surveillance. Buying BTC through regulated actors can reveal to the state that the user owned bitcoin at some point, which could have consequences in the future in the event of political or economic upheaval;
+* Easier on-chain tracing. Completing KYC creates a direct link between the user's identity and their transactions on the blockchain, establishing an entry point for chain analysis.

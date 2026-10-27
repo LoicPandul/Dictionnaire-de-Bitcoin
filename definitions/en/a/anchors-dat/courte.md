@@ -1,0 +1,1 @@
+Bitcoin Core file that records, when the node shuts down, the addresses of its outbound block-relay-only peers, so that it can reconnect to them quickly on restart. It is deleted as soon as the node is restarted.

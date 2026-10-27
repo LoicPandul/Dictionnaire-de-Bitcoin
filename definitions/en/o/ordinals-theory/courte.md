@@ -1,0 +1,1 @@
+Protocol external to Bitcoin that numbers each sat according to its mining order and tracks it from transaction to transaction. It makes sats non-fungible so that content called "inscriptions" can be attached to them.

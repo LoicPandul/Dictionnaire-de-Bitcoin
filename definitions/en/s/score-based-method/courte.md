@@ -1,0 +1,1 @@
+Method of paying miners in a pool that gives more value to shares submitted late in the mining cycle. It gives miners an incentive to stay, because a miner who stops sees their score stall while the scores of the others rise.

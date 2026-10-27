@@ -1,0 +1,3 @@
+Cryptographic protocol implemented on the Liquid Network that hides the amounts and asset types transferred in a transaction, while still letting the network's nodes verify its validity. Confidential Transactions rely on Pedersen commitments to conceal the values, and on rangeproofs to guarantee that the committed amounts are positive and do not cause any illegitimate creation of money.
+
+The mechanism was proposed by Adam Back in 2013, then formalized and implemented by Gregory Maxwell. CTs have been deployed on Liquid since its launch in 2018. On Liquid, the rangeproofs rely on Borromean ring signatures. More compact proofs, such as Bulletproofs, exist, but Elements, the software behind Liquid, does not use them for amounts.

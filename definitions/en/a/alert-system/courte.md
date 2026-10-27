@@ -1,0 +1,1 @@
+Historical Bitcoin mechanism, introduced by Satoshi Nakamoto in 2010, that let the holders of a special private key broadcast emergency messages to every node. Judged too centralized, it was removed from Bitcoin Core in version 0.13.0.

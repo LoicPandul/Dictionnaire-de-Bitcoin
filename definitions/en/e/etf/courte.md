@@ -1,0 +1,1 @@
+Acronym for *Exchange-Traded Fund*. Investment fund listed on a stock exchange that tracks an asset, such as the spot Bitcoin ETFs authorized in the United States in January 2024, which give exposure to the bitcoin price without holding the asset directly.

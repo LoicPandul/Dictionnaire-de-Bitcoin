@@ -1,0 +1,1 @@
+Two-step spending method proposed for Bitcoin: the user first publishes a commitment to their transaction without revealing their public key, then, after confirmation, reveals both. A quantum attacker arrives too late to replace it, barring a deep reorganization.

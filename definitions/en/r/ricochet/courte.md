@@ -1,0 +1,1 @@
+Technique that chains several transactions to oneself before the final payment to simulate a transfer of ownership. It distances a UTXO from its past, such as a coinjoin, so that a regulated exchange does not refuse it or block the account.

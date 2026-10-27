@@ -1,0 +1,1 @@
+Bitcoin soft fork activated in August 2017 that moves signatures into a separate structure, the witness. It fixes transaction malleability and increases block capacity, which helped the development of the Lightning Network.

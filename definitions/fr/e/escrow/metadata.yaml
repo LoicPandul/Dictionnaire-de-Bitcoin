@@ -6,4 +6,6 @@ french_term: "SÉQUESTRE"
 cross_references:
   - "1e211062-6127-445e-b231-061276411810"
   - "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
+assets:
+  - filename: "image-1.png"
 version: "1"

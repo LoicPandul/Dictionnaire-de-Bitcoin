@@ -1,0 +1,1 @@
+Set of keys in a Miniscript wallet, such as Liana, that can spend the bitcoin immediately, with no delay condition. It is the path for everyday management of funds, as opposed to recovery paths subject to a timelock.

@@ -1,0 +1,5 @@
+Atomic swap between on-chain bitcoin and off-chain bitcoin on the Lightning Network, without counterparty risk. Neither party takes custody of the other's funds: either the swap succeeds in full, or it fails and each party recovers their funds.
+
+The mechanism relies on the same HTLCs (Hash Time-Locked Contracts) as those used in Lightning routing. The recipient of the Lightning payment generates a secret preimage whose hash is used to build both an on-chain contract and an off-chain payment. The on-chain payer locks their bitcoin in a conditional script: the funds can be claimed by the swap provider if it supplies the preimage and its signature, or recovered by the payer after the timelock expires. The provider pays the recipient's Lightning invoice, and settling the payment reveals the preimage to it, which lets it claim the on-chain funds.
+
+![The same hash locks the payer's on-chain contract and the Lightning payment to the receiver: the preimage, created by the receiver and revealed by the payment, lets the swap service claim the on-chain funds.](../../../fr/s/submarine-swap/assets/image-1.png)

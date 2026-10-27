@@ -11,4 +11,6 @@ Où :
 
 En raison d'un bug off-by-one introduit par Satoshi Nakamoto, $T$ mesure en réalité la durée de 2015 intervalles de blocs, et non 2016. Le calcul compare en effet l'horodatage du premier bloc de la période (bloc $n$) à celui du dernier (bloc $n + 2015$), ce qui ne couvre que 2015 intervalles. Un calcul correct aurait comparé le dernier bloc de la période précédente (bloc $n - 1$) au dernier bloc de la période actuelle (bloc $n + 2015$), soit 2016 intervalles. Ce bug introduit un biais d'environ 0,05 % vers une difficulté légèrement trop élevée par rapport à ce qu'elle devrait être. Il est surtout à l'origine de la faisabilité de l'attaque *time warp*, car les périodes de retarget ne se chevauchent pas.
 
+![Le calcul de la difficulté mesure le temps entre les blocs n et n + 2015, soit 2015 intervalles, et oublie l'intervalle qui relie la période au bloc n − 1.](./assets/image-2.png)
+
 *En français, on parle également parfois de « reciblage » pour évoquer l'ajustement.*

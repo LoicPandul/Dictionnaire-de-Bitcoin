@@ -1,0 +1,1 @@
+Format that represents a BIP-0039 mnemonic phrase as a QR code by encoding each word as its index in the word list. It allows the phrase to be backed up on a physical medium, then imported into a signing device without manual entry.

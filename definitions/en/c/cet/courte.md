@@ -1,0 +1,1 @@
+Acronym for Contract Execution Transaction. DLC transaction that settles the contract according to the outcome of an event: the signature published by the oracle completes it and sends the funds to the winning party.

@@ -1,0 +1,1 @@
+Preparatory transaction of the Whirlpool protocol that splits UTXOs into fixed-amount outputs suited to the chosen coinjoin pool. It also pays the coordinator's fees and isolates the surplus in a doxxic change.

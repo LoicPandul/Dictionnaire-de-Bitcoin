@@ -1,0 +1,1 @@
+Address encoding formats for SegWit, in base 32 and lowercase, whose BCH-code checksum better detects typos. `Bech32` is used for SegWit v0, and `Bech32m` fixes a flaw in `Bech32` and is used for Taproot.

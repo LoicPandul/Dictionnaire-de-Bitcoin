@@ -1,0 +1,1 @@
+Open source software hosting platform founded in 1999 that hosted the early days of Bitcoin: Satoshi Nakamoto registered the project there in 2008 and released version 0.1 in 2009, before the move to GitHub.

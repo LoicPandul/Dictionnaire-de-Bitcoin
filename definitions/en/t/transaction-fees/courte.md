@@ -1,0 +1,1 @@
+Sum that a transaction's sender leaves to the miner, equal to the difference between its inputs and its outputs, and that gives miners an incentive to include it in a block first, according to its fee rate.

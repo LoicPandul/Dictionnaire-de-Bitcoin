@@ -1,0 +1,1 @@
+Elliptic curve variant of the Diffie-Hellman key exchange, in which two parties compute a shared secret from their key pairs. BIP-0047 and BIP-0352 use it to derive fresh addresses from a static identifier.

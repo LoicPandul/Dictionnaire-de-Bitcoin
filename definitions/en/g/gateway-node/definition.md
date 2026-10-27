@@ -1,0 +1,3 @@
+Lightning routing node that operates private (unannounced) channels to create additional routing opportunities. Unlike a regular routing node, all of whose channels are public and visible in the network graph, a gateway node also maintains private channels with other nodes. These channels are not broadcast through the gossip protocol, and therefore do not appear in the public topology of the network.
+
+The value of a gateway node shows when other nodes open public channels to it: these connections create payment paths that pass through the private channels, providing alternative routes that are invisible to the rest of the network. The gateway node then acts as a bridge between the public network and nodes that do not wish to expose their channels.

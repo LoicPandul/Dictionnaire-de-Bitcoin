@@ -1,0 +1,1 @@
+In the RGB protocol, the stash is the set of data stored client-side by a user for one or more contracts. This data includes the history of transitions, the consignments, and the validity proofs, all of which are essential to the client-side validation process. Each holder keeps only the relevant fragments of the history (shards) needed to verify and update their contracts.

@@ -1,0 +1,1 @@
+Acronym for *Command Line Interface*. A method of interacting with software that relies on typing text commands in a terminal or console. The CLI differs from the GUI (graphical user interface), which offers pointing methods of interaction (with the mouse) and interactive visual elements.

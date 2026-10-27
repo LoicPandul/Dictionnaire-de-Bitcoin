@@ -1,0 +1,1 @@
+Practice of some miners of frequently switching mining pools to maximize their earnings. These miners move from one pool to another depending on changes in profitability. This strategy exploits differences in the way pools calculate rewards. Pool hopping can unbalance the distribution of rewards within pools and is generally considered an unfair practice in the community.

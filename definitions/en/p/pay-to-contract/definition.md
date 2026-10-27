@@ -1,0 +1,3 @@
+Cryptographic protocol that makes it possible to commit arbitrary data into a Bitcoin public key, so that a payment made to that key simultaneously constitutes proof of a commitment to that data.
+
+The principle rests on tweaking a public key: from an original public key $P$ and a contract $c$, a new key $P' = P + H(P \| c) \cdot G$ is computed, where $H$ is a hash function and $G$ the generator point of the curve. The resulting key $P'$ looks like an ordinary public key, but it encodes a verifiable commitment to the contract $c$. The payer can then prove to a third party what was paid for, by revealing the original key $P$ and the contract $c$, without this proof being visible on the blockchain.

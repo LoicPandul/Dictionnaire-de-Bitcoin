@@ -5,4 +5,6 @@ category: "BIP"
 cross_references:
   - "a0ba6bcd-7eca-4953-afc3-ba737aefa644"
   - "9a727a0a-46fe-4b42-8e52-21e2712b7d13"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,1 @@
+Main network where real Bitcoin transactions are recorded and executed. Mainnet is quite simply the Bitcoin network. Unlike testnets, regtests, and signets, mainnet involves bitcoin with real economic value.

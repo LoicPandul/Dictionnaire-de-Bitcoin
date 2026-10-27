@@ -1,0 +1,1 @@
+Operator of the Spark Entity that holds a fragment of its key share and co-signs, with the other operators, the off-chain transfers of the Spark protocol. SOs also monitor the blockchain against fraudulent exits.

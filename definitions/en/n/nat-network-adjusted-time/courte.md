@@ -1,0 +1,1 @@
+Estimate of the time that each node computes locally, by correcting its clock with the median of the offsets measured against its peers' clocks. It validated block timestamps up to Bitcoin Core 26 and has been replaced by system time since version 27.0.

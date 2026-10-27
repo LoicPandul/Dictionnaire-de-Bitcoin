@@ -1,0 +1,1 @@
+Pattern of successive transactions in which a large amount is distributed in small fractions, the remainder going each time to a new change address. Easy to spot, it helps chain analysis follow flows of funds.

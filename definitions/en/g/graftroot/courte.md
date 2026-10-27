@@ -1,0 +1,1 @@
+Bitcoin improvement proposal formulated by Gregory Maxwell in 2018 that extends Taproot by letting the holders of an aggregated key delegate spending to arbitrary scripts by signing them. It was never formalized as a BIP.

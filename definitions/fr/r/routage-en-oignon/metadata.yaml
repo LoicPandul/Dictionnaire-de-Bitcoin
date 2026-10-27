@@ -6,4 +6,6 @@ cross_references:
   - "18a8053d-8091-4185-992e-2eb9d62ac05c"
   - "ba1ad375-829d-436a-bd13-570d31abe544"
 english_term: "ONION ROUTING"
+assets:
+  - filename: "image-1.png"
 version: "1"

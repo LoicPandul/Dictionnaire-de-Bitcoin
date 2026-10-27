@@ -1,0 +1,1 @@
+Acronym for *Equalized Shared Maximum Pay Per Share*. Method for calculating miner payouts in the context of mining pools. ESMPPS aims to distribute the reward fairly among all submitted shares, regardless of when they were submitted or the pool's luck. It works essentially like SMPPS, but with an added notion of equality for the submitted shares.

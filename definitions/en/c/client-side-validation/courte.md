@@ -1,0 +1,1 @@
+Process by which each party verifies for itself the data privately passed to it, according to the rules of a protocol. In RGB, only commitments are anchored in Bitcoin, and contract data stays off-chain between the users concerned.

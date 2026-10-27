@@ -74,14 +74,14 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 <rect class="sujet" style="fill:none;stroke-width:6" x="32" y="32" width="1216" height="568"/>
 <text class="etiquette" style="font-size:36px;fill:var(--sujet-fond)" x="640" y="92" text-anchor="middle">UTXO set</text>
 <text class="etiquette" x="199" y="164" text-anchor="middle">Avant</text><text class="etiquette" x="1081" y="164" text-anchor="middle">Après</text>
-<rect class="valeur" x="64" y="192" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="235" text-anchor="middle">20 000 sats</text>
-<rect class="valeur" x="946" y="192" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="235" text-anchor="middle">20 000 sats</text>
-<rect class="valeur" x="64" y="288" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="331" text-anchor="middle">50 000 sats</text>
-<rect class="valeur" x="946" y="288" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="331" text-anchor="middle">45 000 sats</text>
-<rect class="valeur" x="64" y="384" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="427" text-anchor="middle">30 000 sats</text>
-<rect class="valeur" x="946" y="384" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="427" text-anchor="middle">34 000 sats</text>
-<rect class="valeur" x="64" y="480" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="523" text-anchor="middle">70 000 sats</text>
-<rect class="valeur" x="946" y="480" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="523" text-anchor="middle">70 000 sats</text>
+<rect class="valeur" x="64" y="192" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="235" text-anchor="middle">20 000 sats</text>
+<rect class="valeur" x="946" y="192" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="235" text-anchor="middle">20 000 sats</text>
+<rect class="valeur" x="64" y="288" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="331" text-anchor="middle">50 000 sats</text>
+<rect class="valeur" x="946" y="288" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="331" text-anchor="middle">45 000 sats</text>
+<rect class="valeur" x="64" y="384" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="427" text-anchor="middle">30 000 sats</text>
+<rect class="valeur" x="946" y="384" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="427" text-anchor="middle">34 000 sats</text>
+<rect class="valeur" x="64" y="480" width="270" height="64" rx="32"/><text class="etiquette" x="199" y="523" text-anchor="middle">70 000 sats</text>
+<rect class="valeur" x="946" y="480" width="270" height="64" rx="32"/><text class="etiquette" x="1081" y="523" text-anchor="middle">70 000 sats</text>
 <path class="flux" d="M334 224 H946"/><path class="flux" d="M334 512 H946"/>
 <path class="flux" d="M334 320 H480"/><path class="flux" d="M334 416 H480"/><path class="flux" d="M800 320 H946"/><path class="flux" d="M800 416 H946"/>
 <rect class="structure" x="480" y="272" width="320" height="192"/><text class="etiquette" x="640" y="379" text-anchor="middle">Bloc</text>

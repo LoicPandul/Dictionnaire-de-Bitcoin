@@ -1,0 +1,1 @@
+Rights that the actors of an RGB contract can exercise: holding a share of its state tied to a UTXO, building state transitions that comply with the schema, and, if the schema allows it, exercising public rights such as creating a state extension.

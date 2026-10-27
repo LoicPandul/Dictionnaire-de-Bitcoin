@@ -1,0 +1,1 @@
+Communication model in which participants exchange directly with one another, without a central intermediary, each acting as both client and server. The Bitcoin network works this way: its nodes propagate transactions and blocks without any entity controlling it.

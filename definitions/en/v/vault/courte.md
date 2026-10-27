@@ -1,0 +1,1 @@
+Mechanism for storing bitcoin based on a two-step spend, which imposes a delay between the announcement of a withdrawal and its execution so that the owner has time to block a theft and redirect the funds.

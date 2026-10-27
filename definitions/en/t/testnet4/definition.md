@@ -1,0 +1,5 @@
+Fourth iteration of Bitcoin's public test network, launched in 2024 to replace testnet3, which had become dysfunctional after 13 years of service. Testnet4 is a network separate from mainnet where the bitcoin (TBTC) has no value, allowing developers to test their applications without financial risk.
+
+Testnet3 had accumulated several problems. A bug in the difficulty reset rule (which brought the difficulty back to 1 if no block had been found for 20 minutes) regularly caused block storms, pushing the chain height beyond 2.5 million blocks. The block reward had fallen to ~0.014 TBTC, making mining ineffective at distributing test coins. And above all, in 2024, TBTC had begun to be bought and sold for fraudulent airdrops, breaking the fundamental principle that it has no value.
+
+Testnet4, defined in BIP-0094, fixes the difficulty mechanism by forbidding the 20-minute exception for the first block of each retargeting period and by basing the adjustment calculation on the difficulty of the first block of the previous period rather than that of the last. It uses port 48333 and a new genesis block. It has been supported by Bitcoin Core since version 28.0.

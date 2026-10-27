@@ -1,0 +1,1 @@
+Miner payout method for a pool, a variant of PPS, that pays each share according to its actual difficulty rather than the difficulty assigned by the pool, at the cost of higher variance for the miner.

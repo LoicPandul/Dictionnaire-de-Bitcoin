@@ -1,0 +1,1 @@
+Acronym for *Invisible Internet Project*, an anonymous communication network that, like Tor, routes encrypted traffic through intermediaries using garlic routing. A Bitcoin node can use it to protect its communications.

@@ -1,0 +1,1 @@
+Acronym for *Just a Bunch Of Keys*, an old type of Bitcoin wallet that stored a set of independently generated key pairs, with no deterministic link between them. Hard to back up, it was replaced by the HD wallets of BIP-0032.

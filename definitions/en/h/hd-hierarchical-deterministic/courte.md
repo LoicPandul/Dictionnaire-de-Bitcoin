@@ -1,0 +1,1 @@
+Said of a Bitcoin wallet that derives all its key pairs from a single seed, in a reproducible and tree-like way, according to BIP-0032. It avoids address reuse while remaining restorable from that seed alone.

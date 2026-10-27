@@ -1,0 +1,1 @@
+Term in common use, without a definition in the protocol, for transactions or data considered unwanted on Bitcoin (inscriptions, BRC-20 tokens, `OP_RETURN` data). Its scope varies with who uses it, and its relevance is debated.

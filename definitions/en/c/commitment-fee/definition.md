@@ -1,0 +1,3 @@
+Fee included in the commitment transaction of a Lightning channel. This transaction lets each participant recover their funds if the channel is closed unilaterally. To be confirmed within a reasonable time, it must carry sufficient mining fees.
+
+With the introduction of anchor channels, the commitment fee can be set at a very low amount when the channel is negotiated. Anchor outputs make it possible to raise the fees when the commitment transaction is actually broadcast, by attaching an additional UTXO to it through the CPFP (Child Pays For Parent) mechanism. This avoids overestimating the fees when the channel is created, while guaranteeing quick confirmation in the event of a force close.

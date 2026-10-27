@@ -1,0 +1,1 @@
+Method for deriving the child keys of an HD wallet that starts from the parent public key, which makes it possible to derive child public keys from an extended public key. In a derivation path, it is written as an index without an apostrophe.

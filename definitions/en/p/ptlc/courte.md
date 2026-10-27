@@ -1,0 +1,1 @@
+Acronym for Point Time-Locked Contract. Conditional contract designed to replace HTLCs on Lightning, which locks payments with elliptic curve points and adaptor signatures rather than a hash, to prevent the hops of a single payment from being linked.

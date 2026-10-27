@@ -1,0 +1,1 @@
+Offline storage method that consists of writing down or printing on paper a pair of keys giving access to bitcoin. Often considered obsolete, it depends on the physical protection of the paper and encourages reusing the same key.

@@ -1,0 +1,1 @@
+Mining optimization invented in 2016 that reuses part of the `SHA256` computation from one block header hashing attempt to the next, for about 20% more efficiency. It exists in an overt form and a covert form.

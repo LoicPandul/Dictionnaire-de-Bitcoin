@@ -1,0 +1,1 @@
+Indicator of the Whirlpool Stat Tool software that measures, for a coin, the share of the anonset reached relative to the maximum possible in the pool. It shows whether further mixes would still improve its privacy.

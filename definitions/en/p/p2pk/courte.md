@@ -1,0 +1,1 @@
+Standard script template that locks bitcoin directly to a public key, not to an address, and requires a signature from the associated private key to spend it. Common in the early versions of Bitcoin, it is hardly used anymore.

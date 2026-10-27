@@ -1,0 +1,1 @@
+Acronym for *Hashed Time-Locked Contract*, a contract that makes a transfer of funds conditional on a secret being revealed, with a time condition that protects the sender if it fails. On Lightning, it lets a payment be routed across several channels without trust.

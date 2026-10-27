@@ -6,4 +6,6 @@ french_term: "THÉORIE DES ORDINALS"
 cross_references:
   - "9e63fb0e-b53a-4bf1-9a34-a373d2f0d422"
   - "7f453fdc-0ba2-473c-a590-28ffea271328"
+assets:
+  - filename: "image-1.png"
 version: "1"

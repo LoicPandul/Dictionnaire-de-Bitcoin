@@ -1,0 +1,1 @@
+Transaction that each party of a Lightning channel holds signed by the other, kept off-chain, representing the current distribution of funds. Each change of state creates a new one, and it is broadcast only on a unilateral close.

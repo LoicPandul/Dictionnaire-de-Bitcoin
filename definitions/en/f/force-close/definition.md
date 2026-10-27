@@ -1,0 +1,7 @@
+Mechanism for the non-cooperative closing of a Lightning channel. When two users open a channel with a 2-of-2 multisig, either of them can unilaterally close the channel by broadcasting the latest commitment transaction, which is already signed, in order to recover their bitcoin on-chain. This is known as a force close.
+
+This method is generally used if one of the participants stops responding or if a cooperative close of the channel is impossible. If a force close can be avoided, that is better, because it takes longer to recover funds on-chain and can cost much more in fees.
+
+In a force close, one of the two users broadcasts the commitment transaction that reflects the last known state of the Lightning channel. A safety delay (timelock, `to_self_delay`) then applies before the broadcaster can recover their bitcoin on-chain, which gives the other party time to verify that the transaction matches the latest state of the channel. The other party's output does not wait for this delay: it is spendable immediately, or one block after confirmation with anchor outputs. If a user tries to cheat by publishing an outdated commitment transaction, the other party can use the revocation secret to punish the cheater and recover all the funds of the channel.
+
+![In a force close, the output of Alice, who broadcast the commitment transaction, stays locked for `to_self_delay` blocks after confirmation, while Bob's output is spendable one block after confirmation.](../../../fr/f/force-close/assets/image-1.png)

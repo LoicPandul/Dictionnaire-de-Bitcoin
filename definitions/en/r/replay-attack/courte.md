@@ -1,0 +1,1 @@
+Attack that rebroadcasts on another blockchain a transaction valid on the first one, when the two chains share the same history, typically after a hard fork. The sender's funds are then also spent on the second chain without consent.

@@ -1,0 +1,1 @@
+Wallet software structure that gathers the tracking information of a set of keys: label, master fingerprint, derivation path, and `xpub`. It is used to generate receiving addresses and monitor the associated transactions.

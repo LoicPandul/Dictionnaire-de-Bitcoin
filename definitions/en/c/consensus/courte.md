@@ -1,0 +1,1 @@
+Mechanism by which the nodes of the Bitcoin network agree on a single history of transactions, notably to prevent double spending. It relies on proof of work: nodes follow the chain that accumulates the most work.

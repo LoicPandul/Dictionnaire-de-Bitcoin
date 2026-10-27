@@ -1,0 +1,1 @@
+Possibility of slightly modifying the structure of a Bitcoin transaction without changing its effect, but changing its txid. The SegWit soft fork fixed it by taking malleable data out of the txid computation.

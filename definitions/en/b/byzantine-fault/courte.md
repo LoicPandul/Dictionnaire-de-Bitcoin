@@ -1,0 +1,1 @@
+Behavior of a system that does not comply with its own specifications and produces nonconforming results, through hardware error or malice. Byzantine fault tolerant (BFT) algorithms serve to limit its effects.

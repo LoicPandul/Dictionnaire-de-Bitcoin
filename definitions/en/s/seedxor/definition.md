@@ -1,0 +1,3 @@
+Method of splitting a Bitcoin mnemonic phrase into several parts using the XOR operation, introduced by Coinkite for Coldcard hardware wallets. The principle is to divide a 12- or 24-word mnemonic phrase into two or more fragments that are themselves valid BIP-0039 phrases. To reconstitute the original phrase, all the parts must be recombined with XOR (an N-of-N scheme, not M-of-N).
+
+Since each fragment is a functional mnemonic phrase, it can serve as a decoy wallet holding a small amount, offering a form of plausible deniability: an attacker cannot tell a SeedXOR fragment from an ordinary mnemonic phrase. The calculation can be done by hand using printable worksheets, or directly on a Coldcard.

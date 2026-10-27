@@ -6,4 +6,6 @@ cross_references:
   - "6d6f32a0-761e-4ee4-a189-db65aebc23ef"
   - "4edf1356-22ff-4c2a-b7af-a317d5ed11ff"
 french_term: "BROUILLAGE DE CANAL"
+assets:
+  - filename: "image-1.png"
 version: "1"

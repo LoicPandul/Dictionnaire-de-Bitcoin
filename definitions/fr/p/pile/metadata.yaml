@@ -6,4 +6,6 @@ english_term: "STACK"
 cross_references:
   - "ea7c727d-15eb-4bb2-8779-0362f1fa566c"
   - "1c4b7718-449e-438a-90be-bca12f26ddb5"
+assets:
+  - filename: "image-1.png"
 version: "1"

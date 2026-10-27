@@ -1,0 +1,1 @@
+In computing, process of associating elements of one data set with elements of another data set in a systematic way. This association lets data from the first set stand in for data from the second, or convert from one to the other. The technique is often used in data transformation operations.

@@ -1,0 +1,1 @@
+Service hosted on the Tor network and reachable only through a `.onion` address, where neither the server nor the client knows the other's IP address. Bitcoin and Lightning nodes use it to accept anonymous incoming connections.

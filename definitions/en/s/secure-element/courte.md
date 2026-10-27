@@ -1,0 +1,1 @@
+Electronic chip resistant to physical attacks, which stores sensitive data and performs cryptographic operations in an isolated environment. In a hardware wallet, it generates and holds the private key and signs without ever exposing it.

@@ -1,0 +1,1 @@
+Optional data string that successive holders of an RGB contract can inscribe in the history of its transitions, adding commemorative or descriptive information without affecting the validity of the operations.

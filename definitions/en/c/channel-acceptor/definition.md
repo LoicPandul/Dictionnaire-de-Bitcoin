@@ -1,0 +1,1 @@
+LND mechanism for defining custom logic to automatically accept or reject incoming channel opening requests. When a remote peer proposes to open a channel, the request is passed to the channel acceptor, which answers `TRUE` or `FALSE`, optionally with an error message for the initiator.

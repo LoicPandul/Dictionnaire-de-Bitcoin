@@ -1,0 +1,1 @@
+In the mining industry, measurement of the actual power consumption of an ASIC, taken directly at its connection point, that is, at the wall outlet. Unlike theoretical specifications, this measurement precisely quantifies the energy the machine consumes, including all losses during real operation.

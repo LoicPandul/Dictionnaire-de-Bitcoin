@@ -1,0 +1,1 @@
+Static identifier defined by BIP-0047 that a recipient can share once and for all. After a notification transaction, it makes it possible to derive a unique address for each payment, without address reuse.

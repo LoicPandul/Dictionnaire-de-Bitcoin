@@ -1,0 +1,1 @@
+Signing a transaction without being able to verify its details on the signing device. With a hardware wallet, the user then depends on the computer, which can display false information if it is compromised.

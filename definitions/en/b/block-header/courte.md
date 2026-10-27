@@ -1,0 +1,1 @@
+80-byte structure at the head of each block, containing the version, the previous block hash, the Merkle root of the transactions, the timestamp, the target, and the nonce. Its hash must meet the difficulty target for the block to be valid.

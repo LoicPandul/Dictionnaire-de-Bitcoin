@@ -1,0 +1,3 @@
+Organizing principle of a system in which no single entity holds control or authority over the whole of its operation. A decentralized system relies on a set of independent participants who collaborate according to common rules, with no single point of failure and no need to trust a central third party.
+
+In Bitcoin, decentralization shows at several levels. The network is made up of thousands of nodes spread across the world, each independently validating transactions and blocks according to the protocol rules. Mining is carried out by many competing actors, and no miner can impose changes on its own. Software development is open and collaborative, with no single decision-making authority.

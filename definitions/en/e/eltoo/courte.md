@@ -1,0 +1,1 @@
+Layer 2 protocol that manages the state of a shared UTXO, notably a Lightning channel, by replacing the penalty system with a simple update to the latest state. It requires `SIGHASH_ANYPREVOUT`, proposed in BIP-0118.

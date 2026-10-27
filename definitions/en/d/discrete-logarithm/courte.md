@@ -1,0 +1,1 @@
+Mathematical problem of recovering the exponent from the result of an exponentiation in a finite cyclic group. Its computational hardness underpins the security of the ECDSA and Schnorr signatures used by Bitcoin.

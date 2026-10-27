@@ -1,0 +1,1 @@
+Zero-knowledge proof rollup built on Bitcoin by Chainway Labs, compatible with the Ethereum virtual machine. It executes transactions off-chain, publishes its proofs on Bitcoin, and links the two systems through the Clementine bridge, without changing consensus.

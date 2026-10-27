@@ -1,0 +1,1 @@
+Protocol that moves on-chain bitcoin to the Lightning Network almost instantly through an address shared with an LSP. The user can recover their funds alone after a timelock if the LSP does not cooperate.

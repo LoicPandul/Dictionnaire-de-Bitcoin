@@ -1,0 +1,1 @@
+Actor taking part in the operations of an RGB contract: the issuer who creates the genesis, the holders of rights over the contract state, and, if the contract allows it, the public parties who build state extensions.

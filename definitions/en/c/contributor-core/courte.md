@@ -1,0 +1,1 @@
+Person who takes part in the development of Bitcoin Core by writing, reviewing, or testing code, without the power to merge changes like a maintainer. Anyone can become one, with no nomination or formal approval.

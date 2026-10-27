@@ -1,0 +1,1 @@
+Layer 2 protocol developed by Lightspark, based on statechains, that transfers ownership of bitcoin off-chain instantly. It is compatible with Lightning, and the user can always withdraw funds to the base layer alone.

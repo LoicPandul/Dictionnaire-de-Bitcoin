@@ -1,0 +1,1 @@
+Name sometimes used for the public, distributed record of all transactions made on Bitcoin, that is, the blockchain. Publishing and recording transactions on the ledger prevents double spending on Bitcoin, by making sure that each coin a transaction tries to spend has not already been used in another transaction.

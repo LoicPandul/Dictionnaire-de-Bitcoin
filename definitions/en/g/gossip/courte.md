@@ -1,0 +1,1 @@
+Peer-to-peer propagation protocol in which each node relays information to a few neighbors, who relay it in turn until the whole network is covered. On Lightning, it shares channel state and network topology to ease payment routing.

@@ -1,0 +1,1 @@
+Mathematical problem of recovering the secret exponent of an exponentiation in a cyclic group, or the scalar of a point multiplication on an elliptic curve. Its difficulty secures ECDSA and Schnorr signatures on Bitcoin.

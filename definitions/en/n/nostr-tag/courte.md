@@ -1,0 +1,1 @@
+Array of strings in a Nostr event that links it to another event, a public key, or an addressable event; by convention, relays index the first value of single-letter tags, which makes it possible to find replies.

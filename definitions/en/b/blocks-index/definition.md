@@ -1,0 +1,1 @@
+LevelDB data structure in Bitcoin Core that catalogs metadata about all blocks. Each entry in this index records details such as the block ID, its height in the blockchain, the location of the block in the `blk*.dat` files, and other metadata. This indexing makes it possible to quickly find a block stored on disk.

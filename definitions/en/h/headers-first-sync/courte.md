@@ -1,0 +1,1 @@
+Initial block download method introduced in Bitcoin Core 0.10.0, which first downloads the headers of all blocks before the complete blocks. It replaced blocks-first synchronization, which fetched blocks one by one from a single peer.

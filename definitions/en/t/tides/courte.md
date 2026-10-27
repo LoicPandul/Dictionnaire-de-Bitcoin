@@ -1,0 +1,1 @@
+Miner payout method introduced by the Ocean pool in 2023, which distributes rewards, transaction fees included, according to the most recent work. Each share is paid several times, with no custodial intermediary for payments.

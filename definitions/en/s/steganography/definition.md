@@ -1,0 +1,1 @@
+Technique of concealing sensitive information in a cover object or medium that looks innocuous (typically a signal such as text, sound, image, video, a Bitcoin transaction, etc.), and that will not arouse suspicion even when in plain sight; only a legitimate recipient will know that there is information meant for them and where to look for it.

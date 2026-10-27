@@ -1,0 +1,1 @@
+Lightning channel bought by a third party on Lightning Pool for the benefit of another user, which the selling node opens directly to that user. The beneficiary can then receive payments without holding any bitcoin beforehand.

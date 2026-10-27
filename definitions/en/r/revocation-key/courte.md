@@ -1,0 +1,1 @@
+Lightning Network key that the two peers of a channel build together, which makes it possible to punish the one who publishes an old state. When a state is replaced, its revocation key becomes usable by the counterparty, who can then claim the cheater's funds.

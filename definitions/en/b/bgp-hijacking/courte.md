@@ -1,0 +1,1 @@
+Attack that falsifies BGP announcements to divert Internet traffic destined for certain IP addresses to the attacker's network, which can isolate Bitcoin nodes or redirect the computing power of hashers to the attacker's pool.

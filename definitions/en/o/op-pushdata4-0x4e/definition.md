@@ -1,0 +1,1 @@
+Pushes a very large amount of data onto the stack. It is followed by four bytes (little-endian) that indicate the length of the data to push (up to about 4.3 GB). This opcode is used to insert very large data into scripts, although its use is extremely rare because of practical limits on transaction size.

@@ -1,0 +1,1 @@
+Very permissive free software license that allows copying, modifying, and redistributing code as long as the license and copyright notices are kept. Satoshi Nakamoto chose it for Bitcoin, and Bitcoin Core still uses it.

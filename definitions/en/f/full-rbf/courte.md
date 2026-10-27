@@ -1,0 +1,1 @@
+Mempool policy that accepts the replacement of any unconfirmed transaction by a version that pays higher fees, even without an RBF signal. Bitcoin Core has applied it by default since version 28.0, with no option to disable it since 29.0.

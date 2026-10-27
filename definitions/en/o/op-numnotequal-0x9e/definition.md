@@ -1,0 +1,1 @@
+Compares the top two items of the stack to check whether they are numerically unequal. If the values are not equal, it pushes `1` (true) onto the stack, otherwise it pushes `0` (false). It is the inverse of `OP_NUMEQUAL`.

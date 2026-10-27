@@ -1,0 +1,1 @@
+Authenticated encryption algorithm that combines the ChaCha20 stream cipher and the Poly1305 authentication code. It encrypts exchanges between Bitcoin nodes in the P2P v2 transport (BIP-0324) and between Lightning peers (BOLT-08).

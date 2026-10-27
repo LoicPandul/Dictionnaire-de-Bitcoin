@@ -1,0 +1,1 @@
+Takes the item at the top of the stack and replaces it with its hash, computed by applying the `SHA256` function twice. The input is hashed once with `SHA256`, and the resulting digest is hashed a second time with `SHA256`. This two-step process produces a 256-bit hash.

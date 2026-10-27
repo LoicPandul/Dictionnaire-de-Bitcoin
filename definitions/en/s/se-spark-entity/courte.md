@@ -1,0 +1,1 @@
+Group of independent operators of the Spark protocol that collectively holds one half of the UTXOs' spending key, the other half going to the user. At each transfer, it refreshes its key share with the recipient and destroys the old one.

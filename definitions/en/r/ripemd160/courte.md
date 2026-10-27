@@ -1,0 +1,1 @@
+Cryptographic hash function that produces a 160-bit hash digest. On Bitcoin, it is applied after `SHA256` (a combination called `HASH160`) to derive Legacy and SegWit v0 addresses from a public key, and to compute key fingerprints in HD wallets.

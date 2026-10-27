@@ -1,0 +1,1 @@
+Monetary mechanism that keeps a fixed block reward forever once the initial issuance is over, as on Monero. Sometimes proposed for Bitcoin, it would require a hard fork and contradicts its cap of 21 million.

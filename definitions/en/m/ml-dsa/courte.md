@@ -1,0 +1,1 @@
+Post-quantum, lattice-based digital signature algorithm, standardized by NIST in FIPS 204 in 2024. It can replace ECDSA and Schnorr against a quantum computer, at the cost of signatures over 2,000 bytes.

@@ -1,0 +1,1 @@
+Mining practice of starting work on a new candidate block as soon as the header hash of the previous block is received, without having downloaded or verified all of its transactions. Also known as SPV mining, this technique lets the miner gain a few seconds over those who wait for full validation of the block before starting their own work.

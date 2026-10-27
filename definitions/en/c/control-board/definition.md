@@ -1,0 +1,1 @@
+Component in a mining machine that manages and coordinates the operations of the device. The control board handles communication between the software and the ASIC chips. It also monitors the hardware's performance and controls its temperature.

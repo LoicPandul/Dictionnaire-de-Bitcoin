@@ -1,0 +1,1 @@
+Study of mathematical techniques for trying to break cryptographic techniques. This includes the process of searching for errors or weaknesses in the implementation of a cryptographic method or in the cryptographic method itself.

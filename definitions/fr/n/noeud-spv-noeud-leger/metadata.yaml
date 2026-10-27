@@ -6,4 +6,6 @@ cross_references:
   - "92c25dc6-2c0b-4d27-9d37-deb45498f761"
   - "37a83a88-5744-44df-862a-a68dadb160cf"
 english_term: "SPV NODE - LIGHTWEIGHT NODE"
+assets:
+  - filename: "image-1.png"
 version: "1"

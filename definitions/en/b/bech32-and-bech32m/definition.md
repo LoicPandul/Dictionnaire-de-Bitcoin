@@ -1,0 +1,10 @@
+`Bech32` and `Bech32m` are two address encoding formats for receiving bitcoin. They are built on a slightly modified base 32. They embed a checksum based on an error-correcting algorithm called BCH (Bose-Chaudhuri-Hocquenghem). Compared with Legacy addresses, encoded in `Base58check`, `Bech32` and `Bech32m` addresses have a more effective checksum, which can detect and potentially locate typos. Their format is also more readable, with only lowercase characters. Here is the addition table of this format from base 10:
+
+| +   | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0   | q   | p   | z   | r   | y   | 9   | x   | 8   |
+| 8   | g   | f   | 2   | t   | v   | d   | w   | 0   |
+| 16  | s   | 3   | j   | n   | 5   | 4   | k   | h   |
+| 24  | c   | e   | 6   | m   | u   | a   | 7   | l   |
+
+`Bech32` and `Bech32m` are encoding formats used to represent SegWit addresses. `Bech32` is an address encoding format introduced by BIP-0173 in 2017. It uses a specific character set, made up of digits and lowercase letters, to minimize typing errors and make reading easier. `Bech32` addresses generally start with `bc1` to indicate that they are native SegWit. This format is used only on SegWit v0 addresses, with P2WPKH (Pay to Witness Public Key Hash) and P2WSH (Pay to Witness Script Hash) scripts. However, there is a small unexpected flaw specific to the `Bech32` format. Whenever the last character of the address is a `p`, inserting or deleting any number of `q` characters immediately before it does not invalidate the checksum. This does not affect existing uses of SegWit v0 addresses (BIP-0173) because they are restricted to two defined lengths. However, it could affect future uses of the `Bech32` encoding. The `Bech32m` format is simply a `Bech32` format with this error rectified. It was introduced with BIP-0350 in 2020. `Bech32m` addresses also start with `bc1`, but they are specifically designed to be compatible with SegWit version 1 (Taproot) and later versions, with the P2TR (Pay to Taproot) script.

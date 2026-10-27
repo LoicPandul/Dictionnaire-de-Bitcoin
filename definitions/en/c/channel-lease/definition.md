@@ -1,0 +1,1 @@
+Lightning channel opening contract for a fixed duration, negotiated through the Lightning Pool platform. A liquidity buyer (taker) pays a premium to a seller (maker) for the seller to open a channel with a defined capacity and duration, expressed in number of blocks. The seller commits to keeping the channel open for the whole length of the lease.

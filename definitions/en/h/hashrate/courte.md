@@ -1,0 +1,1 @@
+Computing power devoted to mining, measured in hashes per second, for the whole network or for a machine, a farm, or a pool. The higher the network's hashrate, the more expensive Bitcoin is to attack.

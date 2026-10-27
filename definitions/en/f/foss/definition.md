@@ -1,0 +1,1 @@
+Acronym for *Free and Open Source Software*. Software under a license that allows anyone to run it for any purpose, study it, modify it to suit their needs, and redistribute it freely, modified or not. This definition implies that the software's source code is publicly accessible.

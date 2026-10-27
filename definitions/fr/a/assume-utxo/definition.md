@@ -3,3 +3,5 @@ Fonctionnalité du client majoritaire Bitcoin Core qui permet à un nœud qui vi
 * Puis, une fois qu'il est fonctionnel, le nœud va vérifier l'historique complet des blocs en arrière-plan, en actualisant un nouvel UTXO set qu'il aura vérifié lui-même. Si ce dernier ne correspond pas à l'UTXO set initialement chargé, il fournira un message d'erreur.
 
 Assume UTXO permet donc d'accélérer la préparation d'un nouveau nœud Bitcoin en reportant le processus de vérification des transactions et de l'UTXO set grâce à un snapshot dont le hash est hardcodé dans Core.
+
+![Avec Assume UTXO, le nœud part d'un snapshot de l'UTXO set au bloc 965 000, dont l'empreinte est codée dans Bitcoin Core : il se synchronise jusqu'au sommet et devient utilisable pendant qu'il revérifie en arrière-plan la chaîne depuis la genèse.](./assets/image-1.png)

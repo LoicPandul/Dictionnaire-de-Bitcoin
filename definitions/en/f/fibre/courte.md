@@ -1,0 +1,1 @@
+Acronym for *Fast Internet Bitcoin Relay Engine*. Block relay protocol designed by Matt Corallo in 2016 to reduce block propagation time and limit the advantage of large, well-connected miners, abandoned in 2020.

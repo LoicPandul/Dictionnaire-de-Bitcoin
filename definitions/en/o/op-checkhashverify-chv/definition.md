@@ -1,0 +1,1 @@
+New opcode proposed in 2012 by Luke Dashjr in BIP-0017 that provides the same functionality as `OP_EVAL` or P2SH. It would have hashed the end of the `scriptSig`, compared the result with the top of the stack, and made the transaction invalid if the two hashes did not match. This opcode was never implemented.

@@ -1,0 +1,1 @@
+Restart of Bitcoin's test network with a new genesis block, which erases the history and balances. It keeps test coins easy to mine and without market value, so the testnet remains a free testing ground.

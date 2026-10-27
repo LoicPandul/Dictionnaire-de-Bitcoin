@@ -1,0 +1,1 @@
+Integer overflow bug exploited on August 15, 2010, which allowed the creation of more than 184 billion bitcoin in a single transaction. Satoshi Nakamoto fixed it within hours, and miners rebuilt a chain without the invalid transaction.

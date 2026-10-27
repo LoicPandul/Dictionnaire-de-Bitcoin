@@ -1,0 +1,1 @@
+Unconfirmed transaction whose parent transaction the node does not yet know, so that it cannot validate it on its own. Bitcoin Core holds it temporarily in a reserve (the orphanage) while it retrieves the parent.

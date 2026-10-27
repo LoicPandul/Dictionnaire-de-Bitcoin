@@ -1,0 +1,1 @@
+Mechanism that speeds up an unconfirmed transaction by spending it in a child transaction that pays high fees, which gives miners an incentive to include both. The recipient, or the sender via its change output, uses it when the initial fees are too low.

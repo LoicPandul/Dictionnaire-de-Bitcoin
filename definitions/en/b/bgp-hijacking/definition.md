@@ -1,0 +1,5 @@
+Attack in which a malicious actor manipulates BGP announcements to redirect Internet traffic to the actor's own network. By claiming to be the legitimate origin of certain IP address ranges, the attacker can intercept, monitor, or block the traffic destined for those addresses.
+
+BGP (Border Gateway Protocol) is the protocol that determines how traffic is routed between the different autonomous systems (AS) that make up the global Internet. It decides the paths data takes to go from one point to another.
+
+In the context of Bitcoin, BGP hijacking can be used to divert traffic between nodes of the Bitcoin network to isolate some of them. This attack can also be carried out on Stratum servers used by mining pools, to redirect the computing power of hashers to the attacker's own pool. Since hashers do not often restart their machines, this redirection can persist for a long time. The attack can aim not only at direct financial gain by stealing block rewards, but also at temporarily taking more power over the system.

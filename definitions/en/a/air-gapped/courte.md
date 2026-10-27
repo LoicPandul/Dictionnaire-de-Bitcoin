@@ -1,0 +1,1 @@
+Describes a device physically isolated from any network. An air-gapped hardware wallet signs transactions offline and exchanges data through a microSD card or QR code, which protects private keys from remote attacks.

@@ -1,0 +1,1 @@
+Version of the Ark protocol that works on Bitcoin without covenants, and therefore without a soft fork. It replaces covenants with n-of-n multisigs that all participants in a round sign together, at the cost of heavier interactivity.

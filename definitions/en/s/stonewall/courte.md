@@ -1,0 +1,1 @@
+Payment transaction built by a single user, with at least 2 inputs and usually 4 outputs, 2 of them of the same amount, which imitates a small coinjoin. It muddies chain analysis, since nothing distinguishes it from a collaborative Stonewall x2.

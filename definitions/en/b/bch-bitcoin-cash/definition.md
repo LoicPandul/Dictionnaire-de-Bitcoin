@@ -1,0 +1,3 @@
+Cryptocurrency system resulting from a hard fork of Bitcoin (BTC) carried out on August 1, 2017 at block 478,558. This fork followed disagreements within the Bitcoin community about the solutions to adopt to solve the protocol's scaling problems (Blocksize War). While Bitcoin implemented SegWit (a soft fork), which includes a slight indirect increase in block capacity, Bitcoin Cash opted for a direct increase in block size (a hard fork), from 1 MB to 8 MB, with the goal of reducing transaction fees and improving confirmation times.
+
+![Official Bitcoin Cash logo, created after the August 1, 2017 hard fork that split the BCH chain from Bitcoin.](../../../fr/b/bch-bitcoin-cash/assets/image-1.png)

@@ -6,4 +6,6 @@ cross_references:
   - "b6168446-91ea-4bb3-b01b-18bc52285bfd"
   - "2f4d359a-10f3-497b-8ae9-1323c82622d6"
 french_term: "ROUTAGE TRAMPOLINE"
+assets:
+  - filename: "image-1.png"
 version: "1"

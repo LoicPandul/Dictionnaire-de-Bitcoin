@@ -1,0 +1,1 @@
+Digital signature applied without the signer knowing the content of the message, yet verifiable afterward against the original message. Invented by David Chaum, it is used on Bitcoin in Chaumian mints such as Cashu or Fedimint and in Chaumian coinjoins.

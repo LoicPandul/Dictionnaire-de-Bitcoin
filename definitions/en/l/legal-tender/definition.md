@@ -1,0 +1,3 @@
+Legal status granted to a currency by a state, which obliges any creditor to accept it in payment of a debt. A currency with legal tender status cannot be refused for the settlement of an obligation denominated in the national currency.
+
+In September 2021, El Salvador became the first country to grant legal tender status to bitcoin alongside the US dollar. The decision drew mixed reactions: some bitcoiners see it as a precedent for Bitcoin adoption, while others criticized the acceptance requirement imposed on merchants, which was dropped by the reform of the Bitcoin law passed in January 2025.

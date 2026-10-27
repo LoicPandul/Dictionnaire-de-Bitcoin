@@ -8,12 +8,16 @@ from pathlib import Path
 
 # Chemins de base
 BASE_DIR = Path(__file__).parent.parent
-DEFINITIONS_DIR = BASE_DIR / "definitions" / "fr"
-TEMPLATES_DIR = BASE_DIR / "templates"
-SPECIFICATIONS_DIR = BASE_DIR / "specifications"
+DEFINITIONS_ROOT = BASE_DIR / "definitions"   # une langue par sous-dossier (fr, en)
+DEFINITIONS_DIR = DEFINITIONS_ROOT / "fr"       # langue d'origine du livre
+TEMPLATES_DIR = BASE_DIR / "templates"         # configuration du livre commune aux langues
+LANGUAGES_FILE = TEMPLATES_DIR / "languages.yaml"
 CHRONOLOGY_DIR = BASE_DIR / "chronologie" / "fr"
-FONTS_DIR = BASE_DIR / "fonts"
 PICTOGRAMS_DIR = BASE_DIR / "assets" / "pictograms"
+
+SPECIFICATIONS_DIR = BASE_DIR / "specifications" / "fr"
+TEXTS_DIR = TEMPLATES_DIR / "fr"                # textes du livre en français
+FONTS_DIR = BASE_DIR / "assets" / "fonts"
 
 # Sorties de build (ignorées par git) et outils locaux (.tools/, ignoré par git)
 BUILD_DIR = BASE_DIR / "build"

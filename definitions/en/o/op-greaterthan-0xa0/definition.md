@@ -1,0 +1,1 @@
+Compares the top two items of the stack and checks whether the second item from the top is strictly greater than the first (the top item). If so, it pushes `1` (true) onto the stack, otherwise it pushes `0` (false).

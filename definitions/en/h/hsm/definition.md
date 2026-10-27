@@ -1,0 +1,5 @@
+Acronym for *Hardware Security Module*. Physical device dedicated to the secure management of cryptographic keys. An HSM performs key generation, signing, and encryption operations in a tamper-resistant hardware environment, designed to withstand attempts at physical or logical extraction of the secrets it holds.
+
+In the context of Bitcoin, HSMs are mainly used by companies and exchanges that manage large volumes of funds. They sign Bitcoin transactions securely without the private keys ever leaving the module's protected perimeter. Unlike hardware wallets, which are intended for individuals, HSMs are industrial-grade equipment, often compliant with security certifications such as FIPS 140-2, and designed to run in server environments or data centers.
+
+An HSM therefore differs from a hardware wallet by its use: it is designed for server environments and high-frequency automated operations, whereas a hardware wallet is intended for individual, interactive use. This difference in use also implies a difference in deployment: the HSM is integrated into a network infrastructure, whereas the hardware wallet is a personal device connected only occasionally.

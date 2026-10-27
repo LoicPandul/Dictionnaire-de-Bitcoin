@@ -10,7 +10,7 @@ from collections import Counter
 from datetime import datetime
 
 from ..core.dictionary import Dictionary
-from ..config import OUTPUT_STATS, README_FILE, TEMPLATES_DIR
+from ..config import OUTPUT_STATS, README_FILE, TEXTS_DIR
 
 
 def generate(dictionary: Dictionary, output_path: Path = None, update_readme: bool = True):
@@ -106,7 +106,7 @@ def generate(dictionary: Dictionary, output_path: Path = None, update_readme: bo
 
 def _load_excluded_words() -> set:
     """Charge les mots exclus depuis le fichier YAML."""
-    excluded_file = TEMPLATES_DIR / "excluded_words.yaml"
+    excluded_file = TEXTS_DIR / "excluded_words.yaml"
     if not excluded_file.exists():
         return set()
     data = yaml.safe_load(excluded_file.read_text(encoding='utf-8'))

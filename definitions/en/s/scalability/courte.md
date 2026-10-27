@@ -1,0 +1,1 @@
+Ability of Bitcoin to absorb a growing volume of transactions, limited by block size and block interval. It improves through protocol changes or external layers such as the Lightning Network, and fueled the blocksize war.

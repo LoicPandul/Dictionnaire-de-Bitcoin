@@ -1,0 +1,1 @@
+Hash of the secret, the preimage, that a Lightning recipient places in its invoice. The HTLCs along the payment route are locked by this hash, and the payment finalizes when the recipient reveals the preimage.

@@ -1,0 +1,1 @@
+Backward-compatible change to the protocol rules that adds or tightens rules. Upgraded and non-upgraded nodes stay on the same blockchain as long as the majority of the hash power follows the new rules.

@@ -1,4 +1,6 @@
 Mesure du coût unitaire des frais d'une transaction Bitcoin, exprimée en satoshis par octet virtuel (sat/vB). Le *fee rate* détermine la priorité d'une transaction dans le mempool : plus le taux est élevé, plus les mineurs sont incités à l'inclure rapidement dans un bloc. Le montant absolu des frais correspond à la différence entre le total des inputs et le total des outputs d'une transaction. Le *fee rate* est obtenu en divisant ce montant par la taille virtuelle de la transaction (son poids en unités de poids divisé par 4) :
 $$fee\ rate\ (sats/vB) = \frac{frais\ (sats)}{taille\ virtuelle\ (vB)}$$
 
+![Deux transactions paient les mêmes 1 500 sats de frais : celle de 150 vB atteint un taux de 10 sat/vB, celle de 300 vB seulement 5 sat/vB.](./assets/image-1.png)
+
 Ce taux est choisi librement par l'émetteur de la transaction et fonctionne comme un mécanisme d'enchère. En période de congestion, le *fee rate* minimal pour qu'une transaction soit incluse dans un bloc augmente.

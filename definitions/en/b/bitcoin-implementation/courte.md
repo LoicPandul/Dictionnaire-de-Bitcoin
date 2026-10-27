@@ -1,0 +1,1 @@
+Node software that applies the rules of the Bitcoin protocol and connects to the rest of the network. Bitcoin Core is by far the most widespread, alongside minority implementations such as btcd or Bitcoin Knots.

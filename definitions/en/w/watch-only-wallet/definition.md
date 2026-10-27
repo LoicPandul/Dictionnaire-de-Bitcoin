@@ -1,0 +1,1 @@
+Type of software that lets a user see the transactions associated with a specific Bitcoin key or set of keys, without possessing the corresponding private keys. It gives visibility into the balance and the transaction history, without allowing the wallet's funds to be spent. For example, Sparrow Wallet can operate as a watch-only wallet from an extended public key.

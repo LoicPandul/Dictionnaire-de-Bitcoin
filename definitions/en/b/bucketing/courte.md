@@ -1,0 +1,1 @@
+Method that distributes peer addresses into the buckets of Bitcoin Core's addrman tables with a hash that includes a node-specific secret key, to stop an attacker from filling these tables and isolating the node.

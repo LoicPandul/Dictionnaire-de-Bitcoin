@@ -1,0 +1,1 @@
+Collaborative payment transaction in which a third party contributes a UTXO and recovers their funds, imitating a small coinjoin between two people. An observer cannot tell which output pays the recipient, or who paid.

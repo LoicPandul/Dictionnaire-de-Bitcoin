@@ -1,0 +1,1 @@
+In Git, a snapshot of the changes made to the set of files in a repository. Each commit is identified by a unique hash and includes a descriptive message, the author's identity, and the date. It makes it possible to track the evolution of the project and to return to earlier states when needed.

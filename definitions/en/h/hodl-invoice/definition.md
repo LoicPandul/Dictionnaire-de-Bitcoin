@@ -1,0 +1,3 @@
+Particular type of Lightning invoice in which the recipient receives the payment but does not immediately reveal the preimage to the network. The payment thus stays "suspended": the funds are locked in the HTLCs along the route, without the recipient collecting them for good. The recipient can then choose to settle the invoice by releasing the preimage, or to cancel it and automatically refund the sender.
+
+Hodl invoices are useful for refundable deposits, online auctions, escrow systems, or any mechanism that needs a conditional confirmation before final settlement. They exploit the very nature of HTLCs: as long as the secret is not revealed, the payment can be canceled at no cost.

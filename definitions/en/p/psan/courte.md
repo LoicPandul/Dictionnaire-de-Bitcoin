@@ -1,0 +1,1 @@
+Acronym for *Prestataire de Services sur Actifs Numériques*. French regulatory status created by the PACTE Law of 2019 for cryptocurrency companies (custody, buying and selling, exchange), succeeded by the European CASP status provided for by the MiCA regulation.

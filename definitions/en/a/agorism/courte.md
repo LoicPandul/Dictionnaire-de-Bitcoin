@@ -1,0 +1,1 @@
+Libertarian political philosophy founded by Samuel Edward Konkin III that advocates counter-economics, meaning exchanges outside the state's framework, to erode its power. Many bitcoiners identify with it.

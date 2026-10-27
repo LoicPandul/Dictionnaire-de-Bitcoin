@@ -1,0 +1,10 @@
+Practice that groups together all the methods for tracing bitcoin flows on the blockchain. In general, chain analysis relies on observing characteristics in samples of past transactions. It then consists in spotting those same characteristics in a transaction to be analyzed and deducing plausible interpretations from them. This problem-solving method, which takes a practical approach to find a solution that is good enough, is known as a heuristic. To simplify, chain analysis takes place in two main steps:
+* Spotting known characteristics;
+* Deducing hypotheses.
+
+One of the goals of chain analysis is to group various activities on Bitcoin in order to determine whether a single user carried them out. It then becomes possible to try to tie this bundle of activities to a real identity through an entry point. It is important to understand that chain analysis is not an exact science. It relies on heuristics derived from earlier observations or logical interpretations. These rules produce fairly reliable results, but never absolutely precise ones. In other words, chain analysis always involves a degree of likelihood in the conclusions drawn. For example, it may be estimated with more or less certainty that two addresses belong to the same entity, but total certainty will always be out of reach. The whole point of chain analysis lies precisely in aggregating various heuristics to minimize the risk of error. It is, in a way, an accumulation of evidence that brings the analyst closer to reality. These heuristics can be grouped into several categories:
+* Transaction patterns (or transaction models);
+* Heuristics internal to the transaction;
+* Heuristics external to the transaction.
+
+Note that the first two heuristics on Bitcoin were formulated by Satoshi Nakamoto himself. He sets them out in section 10 of the white paper. It is interesting to observe that these two heuristics still hold a prominent place in chain analysis today. They are the common-input-ownership heuristic (CIOH) and address reuse.

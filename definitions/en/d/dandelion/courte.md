@@ -1,0 +1,1 @@
+Proposal (BIP-0156) for routing transactions that protects the IP address of their sender. The transaction first follows a random path of nodes, the stem, before being propagated to the whole network, the fluff.

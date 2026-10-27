@@ -1,0 +1,1 @@
+Lightning Labs protocol, formerly called TARO, for issuing fungible or non-fungible assets on Bitcoin using Taproot. These assets move through ordinary Bitcoin transactions or over the Lightning Network.

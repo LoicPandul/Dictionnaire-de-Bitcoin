@@ -1,0 +1,1 @@
+Attack that makes replacing (RBF) or accelerating (CPFP) a transaction too expensive or impossible, by abusing node relay rules. It mainly threatens the Lightning Network and other multiparty protocols subject to deadlines.

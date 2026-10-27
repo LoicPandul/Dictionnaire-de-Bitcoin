@@ -1,0 +1,1 @@
+Tree of off-chain transactions that splits a single UTXO into several leaves of value in the Spark protocol. It avoids the constraint of classic statechains, which require transferring an entire UTXO.

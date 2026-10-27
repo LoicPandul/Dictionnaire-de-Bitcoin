@@ -1,0 +1,1 @@
+Relay policy that accepts a zero-fee transaction with a zero-value anyone-can-spend output, provided a child transaction spends it and pays the fees for both. It lets protocols like Lightning choose fees at broadcast time.

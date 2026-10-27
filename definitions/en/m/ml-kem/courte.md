@@ -1,0 +1,1 @@
+Post-quantum, lattice-based key encapsulation mechanism, standardized by NIST in FIPS 203 in 2024. It establishes a shared secret between 2 parties, as an alternative to ECDH key exchange, but signs nothing.

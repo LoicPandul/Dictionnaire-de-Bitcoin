@@ -1,0 +1,1 @@
+Base-2 numeral system, which uses `0` and `1` to represent information. Each digit in this system is called a bit, short for "binary digit". In computing, binary is the form in which data is represented in memory. Computers use binary to process all kinds of information, because it matches the two possible states of an electronic circuit: off or on.

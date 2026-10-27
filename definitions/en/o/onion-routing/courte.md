@@ -1,0 +1,1 @@
+Communication technique that wraps a message in several layers of encryption, each intermediate node removing only one to learn the next hop. Used by Tor and the Lightning Network, it prevents any intermediary from knowing both the sender and the recipient.

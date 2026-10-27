@@ -1,0 +1,1 @@
+Node of the Liquid sidechain operated by an entity in charge of managing the system. Functionaries have two main roles: establishing consensus and executing transactions as block signers (blocksigners), and securing the bitcoin held by the network to ensure the two-way peg (watchmen).

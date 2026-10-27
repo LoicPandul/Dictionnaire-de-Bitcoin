@@ -1,0 +1,1 @@
+In the RGB protocol, the component of an Assignment that explicitly links a commitment to a UTXO held by the new owner. The Seal Definition specifies the location of the state by identifying the UTXO with which it is associated, which formally establishes ownership of an asset or right on RGB.

@@ -1,0 +1,1 @@
+Quantum attack carried out during the short window when a transaction waits for confirmation after revealing its public key, in which the attacker recovers the private key and diverts the funds. It requires a much faster CRQC, and only post-quantum signatures would fully prevent it.

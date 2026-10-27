@@ -1,0 +1,1 @@
+Post-quantum digital signature scheme based on isogenies between elliptic curves, whose key and signature, combined, are the smallest known to its authors. Signing and verifying are markedly slower than with ML-DSA and Falcon.

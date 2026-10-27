@@ -1,0 +1,1 @@
+Quantum computer able to break public-key cryptography, notably to recover a private key from its public key. Against it, ECDSA and Schnorr signatures no longer protect bitcoin whose public key is known.

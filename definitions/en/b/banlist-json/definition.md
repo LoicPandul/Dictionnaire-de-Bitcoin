@@ -1,0 +1,1 @@
+Name of the file used by the Bitcoin Core software to record the IP addresses of nodes banned by the user. This file therefore contains a list of banned nodes that the node will not connect to. This feature prevents interactions with potentially harmful or malicious nodes.

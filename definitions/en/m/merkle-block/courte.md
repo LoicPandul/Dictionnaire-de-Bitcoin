@@ -1,0 +1,1 @@
+Data structure defined by BIP-0037 that proves the inclusion of transactions in a block using the header and a partial Merkle tree, so SPV wallets can verify their transactions without downloading the whole block.

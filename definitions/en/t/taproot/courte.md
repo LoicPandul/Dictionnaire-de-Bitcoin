@@ -1,0 +1,1 @@
+Bitcoin upgrade activated by a soft fork in November 2021, which introduces the P2TR script template. A Taproot output is spent either with a Schnorr signature (key path) or by satisfying one of the scripts in a Merkle tree (script path).

@@ -1,0 +1,1 @@
+Person convinced that Bitcoin is the only cryptocurrency with fundamental value and that altcoins are superfluous or even harmful. The term, coined by Vitalik Buterin in 2014, was later claimed by those it targeted.

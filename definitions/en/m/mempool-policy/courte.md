@@ -1,0 +1,1 @@
+Set of local rules by which a Bitcoin node decides which unconfirmed transactions it accepts into its mempool. It includes the standardness rules and context-dependent rules, such as the minimum fee rate or RBF replacement.

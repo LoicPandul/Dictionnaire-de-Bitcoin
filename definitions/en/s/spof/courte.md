@@ -1,0 +1,1 @@
+Acronym for *Single Point of Failure*: component of a system whose failure is enough to bring down the whole. For an HD wallet, the mnemonic phrase is often one, since losing it or letting it leak means losing all the bitcoin.

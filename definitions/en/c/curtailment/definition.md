@@ -1,0 +1,1 @@
+Voluntary reduction of the electricity consumption of a mining farm by switching machines off. This reduction is part of some contracts with electricity producers. When energy is overproduced relative to market demand, miners use the surplus. When demand peaks relative to production, miners can reduce their consumption to stabilize the grid.

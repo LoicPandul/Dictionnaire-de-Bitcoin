@@ -1,0 +1,1 @@
+Resulting from a deterministic algorithm started from a seed, while imitating the properties of a truly random sequence. In Bitcoin, pseudorandom numbers are used to produce private keys and the seeds of HD wallets.

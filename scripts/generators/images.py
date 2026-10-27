@@ -8,7 +8,7 @@ L'intérieur étant imprimé en couleur, le livre prend la version couleur, de p
 vectorielle :
   1. `image-N.pdf`, s'il existe dans le dossier `assets/` ;
   2. `image-N.svg` converti en PDF vectoriel par Chrome sans interface, comme les `-nb.pdf`
-     (mêmes polices, `fonts/static/`), dans un cache sous `build/cache/schemas/` ;
+     (mêmes polices, `assets/fonts/static/`), dans un cache sous `build/cache/schemas/` ;
   3. `image-N.png`, en couleur (1 280 px, environ 260 ppp à 125 mm) ;
   4. à défaut de couleur, la version noir et blanc (`-nb.pdf`, puis `-nb.png`).
 Le livre de poche, imprimé en noir et blanc, prend d'abord les versions « -nb ». Les fichiers

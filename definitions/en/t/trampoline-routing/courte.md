@@ -1,0 +1,1 @@
+Lightning routing method where a light node delegates the calculation of the payment path to specialized intermediate nodes, the trampoline nodes. It mainly serves mobile wallets, which cannot sync the full network graph.

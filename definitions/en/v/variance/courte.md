@@ -1,0 +1,1 @@
+Fluctuation of a miner's income due to the probabilistic nature of the search for blocks: even at constant power, a miner can go through long periods without a reward. Mining pools exist to reduce it.

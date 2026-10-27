@@ -1,0 +1,1 @@
+Practice that groups the methods for tracing bitcoin flows on the blockchain, using heuristics to group activities under one user and then link them to a real identity. Its conclusions remain probabilities, never certainties.

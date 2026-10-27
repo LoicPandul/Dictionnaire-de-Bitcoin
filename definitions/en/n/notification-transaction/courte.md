@@ -1,0 +1,1 @@
+BIP-0047 transaction that passes the sender's encrypted payment code to the recipient in an `OP_RETURN` output. Sent only once per pair of users, it then lets the recipient spot the payments received.

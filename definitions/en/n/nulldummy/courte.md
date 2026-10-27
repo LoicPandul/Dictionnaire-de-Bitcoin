@@ -1,0 +1,1 @@
+Consensus rule of BIP-0147, activated with SegWit, that requires the dummy element consumed by `OP_CHECKMULTISIG` and `OP_CHECKMULTISIGVERIFY` to be empty (`OP_0`), to remove a source of malleability.

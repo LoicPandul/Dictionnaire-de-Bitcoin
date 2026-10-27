@@ -1,0 +1,1 @@
+Privacy indicator for a Bitcoin transaction, which measures in bits of entropy the number of possible interpretations between its inputs and outputs. It is used notably to assess the effectiveness of a coinjoin.

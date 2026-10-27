@@ -1,0 +1,1 @@
+Move of bitcoin from vulnerable outputs to post-quantum outputs, which raises the question of coins that never migrate: burn them or let them be stolen. BIP-0361 proposes to forbid sending to vulnerable outputs first, then to tighten spending from them.

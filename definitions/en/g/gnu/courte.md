@@ -1,0 +1,1 @@
+Project launched in 1983 by Richard Stallman to create a free operating system compatible with Unix, at the root of the free software movement. Combined with the Linux kernel, it forms the GNU/Linux systems.

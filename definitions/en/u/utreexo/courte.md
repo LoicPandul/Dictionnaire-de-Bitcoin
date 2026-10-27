@@ -1,0 +1,1 @@
+Protocol designed by Tadge Dryja that replaces a node's UTXO set with an accumulator based on Merkle trees, of which a compact node keeps only the roots. Transactions arrive with inclusion proofs, which greatly reduces the memory needed.

@@ -1,0 +1,1 @@
+Mining fees included in the commitment transaction of a Lightning channel, which must be confirmed if the channel is closed unilaterally. With anchor channels, they can stay very low, since CPFP makes it possible to raise them at broadcast time.

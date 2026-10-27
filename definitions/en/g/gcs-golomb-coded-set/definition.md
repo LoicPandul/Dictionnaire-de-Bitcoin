@@ -1,0 +1,5 @@
+Probabilistic data structure used in BIP-0158 to build the compact block filters on Bitcoin. A GCS can test whether an element belongs to a set, with the guarantee of finding every element that is present, but with a false positive probability of $1/M$.
+
+A GCS is built in several steps: the raw elements are first hashed with SipHash into 64-bit integers uniformly distributed over the interval $[0, N \times M)$. The resulting values are sorted, then the differences between consecutive values are encoded with Golomb-Rice coding. This coding exploits the natural geometric distribution of the gaps to achieve near-optimal compression: each difference is split into a quotient (unary-encoded) and a remainder (encoded on $P$ bits).
+
+Compared with the Bloom filters used in BIP-0037, a GCS produces more compact filters for the same false positive rate. In exchange, a membership test requires decompressing the filter sequentially, which rules out constant-time queries. This structure was chosen for the compact block filters, with the parameters $P = 19$ and $M = 784\,931$.

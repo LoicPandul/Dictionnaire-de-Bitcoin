@@ -3,6 +3,8 @@ title: "SHAMIR SECRET SHARING - SSS"
 slug: "shamir-secret-sharing-sss"
 category: "CRYPTOGRAPHIE"
 french_term: "PARTAGE DE SECRET DE SHAMIR"
+assets:
+  - filename: "image-1.png"
 version: "1"
 cross_references:
   - "01b2a7ec-2c60-4ba1-bd45-468f64757cdb"

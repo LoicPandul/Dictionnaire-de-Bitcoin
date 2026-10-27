@@ -1,0 +1,1 @@
+Variant of the Merkle tree in which each node carries, in addition to the hash, the sum of the values below it, which makes it possible to verify both data integrity and amount consistency, as in Taproot Assets.

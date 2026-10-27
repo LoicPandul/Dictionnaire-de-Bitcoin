@@ -1,0 +1,3 @@
+Instantaneous capture of the state of Bitcoin's UTXO set at a given block. A snapshot records all the UTXOs existing at that block height, forming a complete picture of all the unspent coins on the network.
+
+The main use of the snapshot in Bitcoin is through the Assume UTXO mechanism, built into the Bitcoin Core client. When a new node starts up, it can load a precomputed snapshot of the UTXO set whose cryptographic hash is verified. This approach lets the node become functional almost immediately, without having to validate the entire blockchain history from the genesis block. Full verification of the chain is then performed in the background.

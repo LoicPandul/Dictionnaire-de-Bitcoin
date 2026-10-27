@@ -1,0 +1,1 @@
+Optional data string that the holders of an RGB contract can successively inscribe in the history of its transitions. Available notably through the RGB21 interface, this feature lets holders add commemorative or descriptive information without changing the validity of the operations. It enriches the contract's history by embedding additional metadata.

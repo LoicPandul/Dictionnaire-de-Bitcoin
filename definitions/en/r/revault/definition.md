@@ -1,0 +1,5 @@
+Open-source protocol for bitcoin custody designed for organizations and developed by Wizardsardine. Revault relies on a vault system that uses presigned transactions and high-threshold multisignatures, without requiring covenants or key deletion.
+
+The protocol formalizes the interaction between a cold wallet and day-to-day operations by allowing funds to be delegated under restriction policies: spending limits, authorized addresses, and extra checks above a certain amount. Each participant runs their own watchtowers, which monitor the network and can automatically cancel a non-compliant spending attempt by broadcasting presigned emergency transactions. In case of a threat, any individual participant can move all the funds to an emergency wallet.
+
+The protocol was designed starting in 2019 by Kevin Loaec and Antoine Poinsot, and its first technical demonstrator was released in 2021. In 2026, the Wizardsardine website presents Revault as a discontinued prototype, while the company continues to develop Liana.

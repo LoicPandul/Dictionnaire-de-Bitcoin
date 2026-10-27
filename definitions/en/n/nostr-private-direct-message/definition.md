@@ -1,0 +1,20 @@
+Encrypted direct message between Nostr accounts, defined by NIP-17: an event of kind `14` that is never published as is, but encrypted with NIP-44 and then wrapped in a gift wrap, so that relays see neither who is writing, nor what is written, nor the real date. It replaces NIP-04 messages, which exposed the sender, the recipient, and the time.
+
+The problem comes from NIP-04. Its message is an event of kind `4`: the content is encrypted, but the sender's key signs the event, a `p` tag designates the recipient, and `created_at` gives the time. Any relay therefore knows who is talking to whom, and when. NIP-04 itself warns that it leaks metadata, and advises using only relays that restrict access to these events.
+
+NIP-17 moves the message inside 3 layers (see GIFT WRAP). Let's take an example: Alice writes to Bob.
+1. Alice's client builds an event of kind `14`, the rumor, with the plaintext in `content` and a `p` tag pointing to Bob's key. It is not signed, but it must have an `id` and a `created_at`.
+2. It encrypts the rumor with NIP-44 (see NIP-44 ENCRYPTION) for Bob and places it in an event of kind `13`, the seal, which Alice's key signs. The seal's tags are empty.
+3. It encrypts the seal with NIP-44, this time with a random key created for this one message and Bob's public key, and places it in an event of kind `1059`, signed by that throwaway key, with a `p` tag pointing to Bob's key.
+
+NIP-17 also recommends blurring the dates: the `created_at` of the seal and of the wrap each receive a random value up to 2 days in the past, so that grouping by date reveals nothing.
+
+Delivery follows the recipient's relays. Bob publishes, in an event of kind `10050`, the relays where he receives his messages (`relay` tags); NIP-17 advises keeping only 1 to 3. Alice's client must publish only to those relays, and if it finds no list, it concludes that Bob is not ready to receive messages and does not try. It also makes a wrap for Alice herself, so that she can retrieve her sent messages. Relays should serve events of kind `1059` only to the person designated by the `p` tag, after NIP-42 authentication. Bob's client subscribes to its events of kind `1059`, opens the wrap with its private key, opens the seal, then reads the rumor. It checks that the key that signed the seal is the one in the rumor: otherwise, a sender could impersonate someone else by changing the `pubkey` field of the rumor.
+
+The set formed by the author's key and the `p` tags defines the room. Adding or removing a `p` creates a new one, with a blank history, and a `subject` tag gives its title. Beyond text, NIP-17 provides kind `15` for files (the file is encrypted, and its key travels in the message) and for reactions (kind `7`). Alice can delete a message by sending a kind `5` event wrapped the same way, or schedule it to expire with an `expiration` tag.
+
+What the scheme hides: the sender's identity, the real time, and the kinds and tags of the message. There is no public group identifier or shared secret, messages travel through public relays without those relays seeing their content or sender, and anyone who has the private key retrieves their messages. On the wrap, the recipient's `p` tag is the only tag needed for routing; the only additions are a possible `expiration` tag or a proof of work. The limits are as follows: one wrap per recipient, which suits groups of more than 10 people poorly; no moderation, since there is no admin or invitation; and exposure to spam, because wrap keys are random and relays can no longer judge a sender by reputation (NIP-59 suggests authentication and proof of work). Since the encryption is that of NIP-44, a stolen private key exposes the messages that relays have kept; ephemeral messages reduce the risk.
+
+NIP-17 entered the NIPs repository on April 24, 2024, with the pull request by Vitor Pamplona opened in July 2023 under number 24 (the current NIP-24 is a different text). NIP-04 has pointed to it since that day, after being marked as deprecated in favor of NIP-44 on December 20, 2023.
+
+*Not to be confused with the kind `4` message of NIP-04, which does not protect metadata.*

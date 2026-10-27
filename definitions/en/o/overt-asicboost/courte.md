@@ -1,0 +1,1 @@
+Public variant of AsicBoost, a mining optimization that uses the header's `nVersion` field as an additional nonce to reduce `SHA256` computations, without hiding anything from the rest of the network, unlike the Covert version.

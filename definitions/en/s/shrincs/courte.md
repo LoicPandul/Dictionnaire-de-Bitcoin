@@ -1,0 +1,1 @@
+Hash-based signature scheme designed for Bitcoin, which combines a very compact stateful signature with a stateless fallback based on the SLH-DSA algorithms. It is still a BIP draft as of October 25, 2026.

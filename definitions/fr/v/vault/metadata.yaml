@@ -6,4 +6,6 @@ french_term: "COFFRE-FORT"
 cross_references:
   - "a066159b-a5a7-4e63-8e7e-fcf4c18611f1"
   - "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,5 @@
+Transaction by which a user of the Ark protocol transfers ownership of their input VTXO to the Ark Service Provider (ASP) during a round. Since the ASP advances the on-chain liquidity to create the new output VTXOs, it receives the users' old VTXOs in return through these forfeit transactions.
+
+The forfeit transaction exploits the forfeit clause inscribed in the VTXO's policy, which consists of a multisig between the user and the ASP. Without an additional protection mechanism, signing this transaction would amount to handing over one's VTXO with no guarantee of getting a new VTXO in return. To solve this problem, a connector output from the round transaction is added as an additional input in the forfeit transaction. This link makes the transaction invalid until the round transaction is confirmed on-chain, which guarantees atomicity: the user loses their old VTXO only if the round's new VTXOs are actually created.
+
+The forfeit transaction mechanism also appears in OOR (out-of-round) payments, where the forfeit clause is reused to transfer a VTXO directly to another user without going through a round.

@@ -1,0 +1,1 @@
+Discipline that transforms information, notably through mathematical techniques, to hide its content, guarantee its authenticity, or prevent its modification. It encompasses hashing, digital signatures, and encryption.

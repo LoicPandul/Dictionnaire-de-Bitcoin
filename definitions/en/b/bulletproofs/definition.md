@@ -1,0 +1,3 @@
+Zero-knowledge proof system used notably in Confidential Transactions to verify that an amount committed in a transaction lies within a valid range, without revealing its value. Bulletproofs were introduced in 2017 by Bünz, Bootle, Boneh, Poelstra, Wuille, and Maxwell. They replace the earlier rangeproofs (Borromean ring signatures) by producing significantly more compact proofs, whose size grows logarithmically ($O(\log n)$) with the number of bits representing the value.
+
+An evolution called Bulletproofs++, proposed by Liam Eagen, Sanket Kanjalkar, Tim Ruffing, and Jonas Nick, further improves efficiency in terms of generation and verification. The Liquid sidechain, for its part, still verifies its Confidential Transactions with Borromean ring signature rangeproofs.

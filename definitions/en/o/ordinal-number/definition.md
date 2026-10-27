@@ -1,0 +1,1 @@
+In the Ordinals protocol, unique identifier assigned to each sat according to the order in which it was mined. These numbers make those sats non-fungible under the Ordinals protocol, and thus make it possible to track and transfer those specific sats.

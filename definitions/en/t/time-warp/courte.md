@@ -1,0 +1,1 @@
+Theoretical attack on difficulty adjustment in which a majority miner manipulates timestamps at the boundary between two periods to lower the difficulty. The Consensus Cleanup soft fork (BIP-0054) proposes to fix it.

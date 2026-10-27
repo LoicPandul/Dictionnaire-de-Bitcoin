@@ -1,0 +1,1 @@
+Nostr event of kind `1` that carries a short text message, the equivalent of a post on a social network. By extension, the word also refers to the `note` identifier of NIP-19, which encodes the ID of an event in Bech32 for sharing.

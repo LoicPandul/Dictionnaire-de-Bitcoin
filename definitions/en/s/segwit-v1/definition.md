@@ -1,0 +1,1 @@
+Post-SegWit script version 1. SegWit v1 scripts are the second family of scripts introduced after the 2017 SegWit upgrade. Specifically, SegWit v1 scripts were introduced with the Taproot upgrade in 2021. The P2TR script is a SegWit v1 script. The corresponding addresses always start with `bc1p` and are encoded in the `Bech32m` format.

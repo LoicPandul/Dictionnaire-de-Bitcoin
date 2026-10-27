@@ -83,11 +83,11 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="secondaire" x="1104" y="142" text-anchor="middle">on-chain</text>
     <path class="hors-chaine" d="M640 160 V240"/>
     <rect class="valeur tirete" x="360" y="272" width="560" height="64" rx="32"/>
-    <text class="etiquette" x="640" y="315" text-anchor="middle">Alice 70 000 · Bob 30 000 sats</text>
+    <text class="etiquette" x="640" y="315" text-anchor="middle">Alice 70 000 · Bob 30 000 sats</text>
     <rect class="valeur tirete" x="360" y="368" width="560" height="64" rx="32"/>
-    <text class="etiquette" x="640" y="411" text-anchor="middle">Alice 55 000 · Bob 45 000 sats</text>
+    <text class="etiquette" x="640" y="411" text-anchor="middle">Alice 55 000 · Bob 45 000 sats</text>
     <rect class="valeur tirete" x="360" y="464" width="560" height="64" rx="32"/>
-    <text class="etiquette" x="640" y="507" text-anchor="middle">Alice 20 000 · Bob 80 000 sats</text>
+    <text class="etiquette" x="640" y="507" text-anchor="middle">Alice 20 000 · Bob 80 000 sats</text>
     <text class="etiquette" x="640" y="580" text-anchor="middle">…</text>
     <path class="flux" d="M984 272 V590"/>
     <text class="annotation" x="32" y="404">Autant de mises</text>

@@ -1,0 +1,1 @@
+Change output of a Whirlpool Tx0, made up of the bitcoin that does not fit into the coinjoin pool and that stays linked to the user's history. If spent carelessly, it can compromise the privacy gained through coinjoins.

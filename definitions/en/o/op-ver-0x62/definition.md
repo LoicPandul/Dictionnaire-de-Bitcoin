@@ -1,0 +1,1 @@
+Allowed the protocol version to be pushed onto the stack. This opcode was disabled because, had it been used, every upgrade would have led to a hard fork. BIP-0342 turned this opcode into an `OP_SUCCESS`.

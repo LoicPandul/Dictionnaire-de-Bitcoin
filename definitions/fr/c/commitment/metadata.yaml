@@ -6,4 +6,6 @@ french_term: "ENGAGEMENT"
 cross_references:
   - "853da785-8ace-4349-9a4e-8b8c5dcba606"
   - "8c16730a-03a0-43ea-b175-5000922bb022"
+assets:
+  - filename: "image-1.png"
 version: "1"

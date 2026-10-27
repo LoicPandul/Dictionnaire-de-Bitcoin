@@ -1,0 +1,7 @@
+Process of generating child key pairs from a parent key pair (private key and public key) and a chain code within a hierarchical deterministic (HD) wallet. This process segments branches and organizes a wallet into different levels with many child key pairs, which can all be recovered from the basic recovery information alone (the mnemonic phrase and the optional passphrase). To derive a child key, the `HMAC-SHA512` function is used, with the parent chain code as its key and the concatenation of the parent key and a 32-bit index as its data. There are two types of derivation:
+* Normal derivation (index from 0 to $2^{31} - 1$), which places the 33-byte compressed parent public key in the `HMAC-SHA512` data, followed by the index;
+* Hardened derivation (index from $2^{31}$ onward), which places `0x00` followed by the 32-byte parent private key in the `HMAC-SHA512` data, followed by the index;
+
+The HMAC-SHA512 result is split in two: the first 256 bits are added to the parent key to produce the child key (private, or public after multiplication by the generator point on the elliptic curve), and the remaining 256 bits become the child chain code.
+
+![Derivation of a child key: the parent key, the 32-bit index, and the parent chain code enter HMAC-SHA512, whose 512 bits split into two 256-bit halves, the left one being added to the parent key modulo n to give the child key, the right one becoming the child chain code.](../../../fr/d/derivation/assets/image-1.png)

@@ -1,0 +1,1 @@
+Method of calculating miner payouts in mining pools. PROP simply splits the block reward among miners in proportion to their contribution in shares. Share counting starts at the last block found by the pool and ends when a new block is found. Each new block resets the share counter to zero. This payout method directly reflects each miner's work.

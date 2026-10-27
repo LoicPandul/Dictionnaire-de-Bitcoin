@@ -1,0 +1,1 @@
+Invoice of the RGB protocol, in the form of a URI prefixed with `rgb:`, which embeds the information the payer needs to build a state transition. In practice, it is an invoice that lets the counterparty generate the appropriate transition to transfer an asset or update the state of a contract.

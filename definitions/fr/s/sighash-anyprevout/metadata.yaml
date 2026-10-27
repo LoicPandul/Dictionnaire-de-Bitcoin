@@ -5,4 +5,6 @@ category: "COVENANTS"
 cross_references:
   - "d6c9951a-94ae-4700-aa31-9a9561b3bfc4"
   - "d39ccdd1-24d3-4516-a077-bde3508aa1c7"
+assets:
+  - filename: "image-1.png"
 version: "1"

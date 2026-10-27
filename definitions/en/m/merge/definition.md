@@ -1,0 +1,1 @@
+In Git, the action of integrating the changes from one branch into another, typically bringing the developments of a secondary branch into the main branch. The operation combines the commit histories of the branches involved and resolves any conflicts to maintain the integrity of the software.

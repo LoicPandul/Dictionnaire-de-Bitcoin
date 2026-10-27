@@ -1,0 +1,1 @@
+Name of the proposal described in BIP-0118, which adds two new SIGHASH flags to Bitcoin, `SIGHASH_ANYPREVOUT` and `SIGHASH_ANYPREVOUTANYSCRIPT`, for signatures that do not commit to the output being spent (useful for eltoo).

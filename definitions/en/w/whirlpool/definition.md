@@ -1,0 +1,1 @@
+Chaumian coinjoin protocol based on ZeroLink, developed by the Samourai Wallet team. Whirlpool was available in Samourai Wallet (Android), Sparrow Wallet (desktop), and Bitcoin Keeper (iOS and Android).

@@ -1,0 +1,7 @@
+Layer 2 protocol of the joinpool type on Bitcoin, proposed by Burak Keceli in May 2023 and implemented notably by Ark Labs and by Second (Bark, whose development began in 2024). Ark makes it possible to share on-chain UTXOs between several users through Virtual Transaction Outputs (VTXOs), in order to improve Bitcoin's scalability.
+
+The protocol revolves around Ark Service Providers (ASPs, also called Ark servers), operators that periodically organize "rounds" in which users' VTXOs are consolidated and anchored in new on-chain Bitcoin transactions. This mechanism prevents any fractional reserve. Transfers between users of the same ASP are fast and inexpensive, and offer privacy comparable to that of a coinjoin. Out-of-round payments are also possible for immediate settlement, at the cost of temporary trust in the ASP and the sender.
+
+The protocol is non-custodial, but VTXOs expire after a set period. If the user does not show up before expiry, the ASP can recover the liquidity. The user keeps the ability to make a unilateral on-chain exit at any time.
+
+The version implemented without covenants, called clArk, emulates spending conditions with n-of-n multisigs among the participants of a round, at the cost of overhead in bandwidth and storage. Adding covenants to Bitcoin would improve scalability and reduce the interactivity required. Ark is complementary to the Lightning Network and interoperable with it through gateways.

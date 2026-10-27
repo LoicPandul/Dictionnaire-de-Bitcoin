@@ -1,0 +1,1 @@
+Script placed in a transaction output that sets the spending conditions of the associated UTXO, most often a valid signature for a given public key. It locks the bitcoin until an input provides the data that satisfies it.

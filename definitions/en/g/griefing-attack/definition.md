@@ -1,0 +1,5 @@
+Attack on the Lightning Network in which a malicious actor saturates one or more payment channels with HTLCs that never resolve, by refusing to reveal the payment preimage. The victims' funds end up frozen for the whole duration of the timelock, without the attacker stealing anything.
+
+Each channel can hold only 483 pending HTLCs per direction. An attacker can therefore block a channel entirely with a relatively small number of fake payments. The victim's only option is to force-close the channel, which incurs high on-chain fees, since each pending HTLC generates an additional transaction on the chain.
+
+Although the attacker gains no direct monetary benefit, they can profit indirectly by paralyzing competing routes to capture more routing fees, or by demanding a ransom to stop the attack. This vulnerability remains an open problem. The proposed countermeasures include the HTLC-GP protocol, which requires every participant to lock a financial penalty that victims can claim in case of griefing, as well as upfront payment mechanisms.

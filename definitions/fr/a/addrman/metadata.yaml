@@ -2,6 +2,8 @@ uuid: "b7c3e8a1-5d42-4f9b-a1e6-3c8d7f2b9e04"
 title: "ADDRMAN"
 slug: "addrman"
 category: "RÉSEAU"
+assets:
+  - filename: "image-1.png"
 version: "1"
 cross_references:
   - "9b5e1149-7abc-41f2-a38e-29757ffcc4ce"

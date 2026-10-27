@@ -1,0 +1,1 @@
+Block that secures a transaction: the block that includes it gives it its first confirmation, then each block mined on top adds one. The higher the number, the lower the risk that a reorganization reverses the transaction.
