@@ -4,6 +4,8 @@ Référence unique à une sortie de transaction (*output*). Il est constitué de
 
 La combinaison de ces deux éléments permet d'identifier précisément un output de transaction. Par exemple, si une transaction a un `txid` de `abc...123` et que l'index de l'output est `0`, l'outpoint sera noté :
 
+![L'outpoint `a1b2c3d4…f9e0:1` placé dans l'entrée d'une nouvelle transaction désigne, par son txid, la transaction précédente, puis, par son index vout, la sortie 1 de cette transaction.](./assets/image-1.png)
+
 ```text
 abc...123:0
 ```

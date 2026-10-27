@@ -4,4 +4,6 @@ slug: "nlocktime"
 category: "TRANSACTIONS"
 cross_references:
   - "b9f5ce0a-baa4-4e12-8f4c-08c77ce82099"
+assets:
+  - filename: "image-1.png"
 version: "1"

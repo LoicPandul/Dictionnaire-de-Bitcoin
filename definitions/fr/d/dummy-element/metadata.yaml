@@ -5,4 +5,6 @@ category: "TRANSACTIONS"
 french_term: "ÉLÉMENT FACTICE"
 cross_references:
   - "b2903d20-e580-4fa2-aab7-460751f021c4"
+assets:
+  - filename: "image-1.png"
 version: "1"
