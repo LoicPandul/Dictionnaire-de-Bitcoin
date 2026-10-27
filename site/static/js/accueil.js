@@ -1,4 +1,4 @@
-// Accueil : le mot du jour et la tranche (« Feuilleter les 1 408 mots »).
+// Accueil : le mot du jour et la tranche (« Feuilleter les mots »).
 (() => {
   const d = document;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
