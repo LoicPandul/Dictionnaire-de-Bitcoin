@@ -2,6 +2,8 @@ Contrats conditionnels destinés à remplacer les HTLC (*Hash Time Locked Contra
 
 Dans un HTLC, tous les sauts d'un même paiement partagent le même hash. Un nœud espion présent sur plusieurs sauts peut corréler les paiements et identifier qu'ils appartiennent à la même transaction. Les PTLC éliminent ce problème : chaque saut utilise une paire clé publique/signature différente, ce qui rend les paiements intraçables d'un saut à l'autre.
 
+![Une même route Alice, espion, Carol, espion, Bob : en HTLC chaque saut porte le même hash H, en PTLC chaque saut porte son propre point, de P1 à P4.](./assets/image-1.png)
+
 Le mécanisme repose sur les *adaptor signatures*, une construction rendue pratique par les signatures de Schnorr. Le receveur fournit un point (clé publique) au payeur. À chaque saut, un nouveau secret est ajouté par agrégation de clés, de sorte que la révélation de la signature finale ne compromet que le secret local, pas la relation entre les sauts. Si un PTLC est publié on-chain, il apparaît comme une dépense Taproot ordinaire, indiscernable d'un paiement classique.
 
 Au-delà de la confidentialité, les PTLC réduisent l'espace de bloc utilisé et ouvrent la voie à de nouvelles constructions comme les *stuckless payments*, qui permettent de relancer un paiement bloqué sans risque de double paiement. Leur déploiement nécessite des modifications du protocole Lightning et reposait sur la disponibilité des signatures de Schnorr, activées avec Taproot en 2021.
