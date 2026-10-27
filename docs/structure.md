@@ -127,29 +127,28 @@ Ce qui ne bouge pas, volontairement :
   scripts, le site et les deux langues. Les renommer coûterait 1 600 déplacements sans rien
   apporter au lecteur.
 
-## Appliquer la migration
+## La migration
 
-Les déplacements se font en un commit séparé, avec `scripts/migrations/structure_bilingue.py`,
-une fois fusionnées les branches qui modifient les mêmes fichiers (`feat/edition-2027`,
-`feat/schemas-2027`). Avant, un déplacement créerait des conflits dans leurs fusions.
+Ce rangement a été appliqué le 27 octobre 2026, en un commit
+(`refactor(repo): move to the bilingual layout`), par `scripts/migrations/structure_bilingue.py`,
+une fois fusionnées les branches qui modifiaient les mêmes fichiers (`feat/edition-2027`,
+`feat/schemas-2027`). Le script reste dans le dépôt pour mémoire : il déplace avec `git mv`,
+réécrit les chemins cités dans les fichiers suivis, remplace l'arbre du README par celui de ce
+document et lance `python3 scripts/main.py check`. Relancé, il ne change rien.
 
-```bash
-python3 scripts/migrations/structure_bilingue.py           # simulation : liste ce qui changerait
-python3 scripts/migrations/structure_bilingue.py --apply   # git mv, réécriture des chemins, check
-git commit -m "refactor(repo): move to the bilingual layout"
-```
-
-Le script refuse de tourner sur un arbre de travail modifié, déplace avec `git mv`, réécrit les
-chemins cités dans les fichiers suivis (README, docs, scripts, YAML), remplace l'arbre du README
-par celui de ce document, puis lance `python3 scripts/main.py check`. Il est idempotent.
-
-Pendant la transition, `scripts/config.py` accepte l'ancien et le nouvel emplacement
-(`SPECIFICATIONS_DIR`, `TEXTS_DIR`, `FONTS_DIR`) : les scripts marchent avant comme après. Le
-repli sur l'ancien emplacement se retire dans le commit qui suit la migration.
-
-Hors du dépôt, deux outils citent les anciens chemins et sont à mettre à jour le même jour :
+Hors du dépôt, deux outils citent encore les anciens chemins et sont à mettre à jour :
 le skill `dictionnaire-definition` (`templates/pending_terms.yaml`, dans `scripts/doublons.py`)
 et le skill `dictionnaire-redaction` (mentions de `STYLE_GUIDE.md` et de `specifications/`).
+Le site (`site/`, branche `feat/site-dictionnaire`) a été écrit avant la migration. À sa
+prochaine fusion, trois chemins sont à suivre :
+
+- `site/lib/edition.mjs` : les séries de spécifications se lisent dans `specifications/fr/`
+  (et `specifications/<langue>/` pour une traduction), plus dans `specifications/` ;
+- `site/build.mjs` : `edition-2027/reclassement.tsv` devient `docs/edition-2027/reclassement.tsv` ;
+- `site/README.md` : les polices viennent de `assets/fonts/`.
+
+Le reste de ce qu'il lit ne bouge pas (`definitions/`, `chronologie/fr/`, `templates/*.yaml`,
+`assets/pictograms/`).
 
 ## Plus tard
 
