@@ -1,0 +1,1 @@
+Double dépense menée par un mineur contre un commerçant qui accepte un paiement sans confirmation : il garde secret un bloc qui renvoie les fonds vers lui, paie le commerçant, puis diffuse ce bloc pour annuler le paiement.

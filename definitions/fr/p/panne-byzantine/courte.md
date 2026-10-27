@@ -1,0 +1,1 @@
+Comportement d'un système qui ne respecte pas ses propres spécifications et produit des résultats non conformes, par erreur matérielle ou par malveillance. Les algorithmes tolérants aux pannes byzantines (BFT) servent à en limiter les effets.

@@ -1,0 +1,1 @@
+Interface web de Lightning Labs pour administrer un nœud LND, qui affiche canaux, liquidité et paiements routés, et regroupe Loop, Pool et Faraday. Elle tourne via *litd* et reste accessible à distance par *Lightning Node Connect*.

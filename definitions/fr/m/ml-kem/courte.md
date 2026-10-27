@@ -1,0 +1,1 @@
+Mécanisme d'encapsulation de clé post-quantique à base de réseaux euclidiens, standardisé par le NIST dans FIPS 203 en 2024. Il établit un secret partagé entre 2 parties, en alternative à l'échange de clés ECDH, mais ne signe rien.

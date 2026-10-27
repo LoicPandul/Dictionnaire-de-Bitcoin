@@ -1,0 +1,1 @@
+Organisation à but non lucratif qui diffuse de l'information technique sur Bitcoin auprès des entreprises, connue pour sa newsletter hebdomadaire qui résume l'actualité du développement de Bitcoin et de Lightning.

@@ -1,0 +1,1 @@
+Propriété d'un algorithme de minage qui cherche à réduire l'avantage des ASIC sur le matériel grand public, en général en exigeant beaucoup de mémoire. Bitcoin n'a jamais visé cette propriété : son algorithme SHA-256 se prête bien aux ASIC.

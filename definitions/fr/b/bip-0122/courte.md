@@ -1,0 +1,1 @@
+Proposition qui définit un schéma d'URI pour pointer vers un bloc ou une transaction d'une blockchain donnée, identifiée par le hash de son bloc de genèse, afin d'harmoniser les liens entre explorateurs de blocs et applications.

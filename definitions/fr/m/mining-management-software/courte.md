@@ -1,0 +1,1 @@
+Logiciel qui surveille et pilote les machines de minage en suivant les performances des ASIC, leur consommation et leurs températures, et en automatisant leurs réglages et leur gestion à distance à l'échelle d'une ferme.

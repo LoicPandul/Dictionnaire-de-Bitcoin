@@ -1,0 +1,1 @@
+Paramètre de Bitcoin Core, activé par défaut, qui permet à un nouveau nœud de ne pas vérifier les signatures des transactions antérieures à un bloc désigné dans le code, pour accélérer sa synchronisation initiale.

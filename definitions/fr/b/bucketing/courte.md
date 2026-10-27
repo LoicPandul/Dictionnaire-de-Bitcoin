@@ -1,0 +1,1 @@
+Méthode qui répartit les adresses de pairs dans les seaux (*buckets*) des tables d'addrman de Bitcoin Core par un hachage incluant une clé secrète propre au nœud, pour empêcher un attaquant d'occuper ces tables et d'isoler le nœud.

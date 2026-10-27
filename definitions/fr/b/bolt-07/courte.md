@@ -1,0 +1,1 @@
+Spécification qui définit le protocole de découverte du réseau Lightning, par lequel les nœuds annoncent leurs adresses, leurs canaux et leurs frais de routage pour que chacun connaisse la topologie du réseau.

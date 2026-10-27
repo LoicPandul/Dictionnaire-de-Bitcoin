@@ -1,0 +1,1 @@
+Proposition de Pieter Wuille qui augmentait la taille maximale des blocs de 17,7 % par an, au rythme de la croissance de la bande passante, pour préserver la décentralisation. Elle n'a jamais été déployée.

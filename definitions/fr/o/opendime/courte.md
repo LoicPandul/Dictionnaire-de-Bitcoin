@@ -1,0 +1,1 @@
+Clé USB à usage unique fabriquée par Coinkite, qui sert d'actif au porteur pour des bitcoins : elle génère une clé privée que personne ne connaît, et seul son descellement physique la révèle pour dépenser les fonds.

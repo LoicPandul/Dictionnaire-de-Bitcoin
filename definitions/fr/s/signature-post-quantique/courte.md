@@ -1,0 +1,1 @@
+Schéma de signature numérique conçu pour résister à un ordinateur quantique, qui remplacerait ou compléterait ECDSA et Schnorr. Ses signatures sont bien plus grosses, ses clés parfois aussi, et aucune n'est activée sur Bitcoin en octobre 2026.

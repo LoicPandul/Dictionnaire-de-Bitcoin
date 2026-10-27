@@ -1,0 +1,1 @@
+Proposition qui ajoute au format PSBT les champs propres à Taproot (clé interne, scripts des feuilles, chemins de Merkle, signatures de Schnorr), pour que portefeuilles matériels et coordinateurs multisig signent des transactions Taproot.

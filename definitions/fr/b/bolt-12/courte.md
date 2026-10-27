@@ -1,0 +1,1 @@
+Spécification qui définit les *offers*, des demandes de paiement Lightning réutilisables qui déclenchent l'envoi d'une facture par le réseau, avec une meilleure confidentialité que BOLT-11 grâce aux *blinded paths*.

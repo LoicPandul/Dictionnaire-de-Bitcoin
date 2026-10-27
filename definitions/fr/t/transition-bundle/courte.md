@@ -1,0 +1,1 @@
+Regroupement des *State Transitions* d'un même contrat RGB, engagées ensemble dans une seule *witness transaction* Bitcoin. Il consolide plusieurs transferts dans un seul ancrage *on-chain* pour économiser l'espace de bloc.

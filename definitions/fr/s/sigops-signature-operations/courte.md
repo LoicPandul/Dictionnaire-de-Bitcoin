@@ -1,0 +1,1 @@
+Opérations de vérification de signature (`OP_CHECKSIG`, `OP_CHECKMULTISIG` et leurs variantes) que les nœuds exécutent pour valider les transactions. Leur nombre est plafonné par bloc pour éviter les attaques par déni de service.

@@ -1,0 +1,1 @@
+Identifiant réutilisable des *Silent Payments*, formé de deux clés publiques, qui permet de recevoir de nombreux paiements sans interaction avec l'expéditeur, sans réutilisation d'adresse et sans lien visible entre ces paiements.

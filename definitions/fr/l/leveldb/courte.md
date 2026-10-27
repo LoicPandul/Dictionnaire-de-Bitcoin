@@ -1,0 +1,1 @@
+Bibliothèque de stockage clé-valeur *open source* conçue par Google, que Bitcoin Core utilise pour stocker l'UTXO set et l'index des blocs. Son introduction à la place de BerkeleyDB a provoqué la scission accidentelle de mars 2013 décrite dans le BIP-0050.

@@ -1,0 +1,1 @@
+Transaction vers son propre portefeuille qui fusionne plusieurs petits UTXO en un seul, de préférence quand les frais sont bas, pour économiser sur les dépenses futures. Elle révèle toutefois à l'analyse de chaîne que ces UTXO appartiennent à la même entité.

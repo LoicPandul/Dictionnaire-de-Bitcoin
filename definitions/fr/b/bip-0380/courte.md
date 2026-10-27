@@ -1,0 +1,1 @@
+Proposition qui définit le fonctionnement général des *output script descriptors*, un langage standard pour décrire les scripts de sortie d'un portefeuille HD et faciliter sa sauvegarde, son export et son import.

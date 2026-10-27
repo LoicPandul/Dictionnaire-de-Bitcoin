@@ -1,0 +1,1 @@
+Combinaison de SigHash Flags (`0x81`) par laquelle la signature couvre tous les *outputs* mais un seul *input*. D'autres participants peuvent ainsi ajouter leurs propres *inputs*, par exemple pour un financement participatif.

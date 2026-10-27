@@ -1,0 +1,1 @@
+Relance du réseau de test de Bitcoin avec un nouveau bloc genesis, qui efface l'historique et les soldes. Elle garde les coins de test faciles à miner et sans valeur marchande, pour que le testnet reste un terrain d'essai gratuit.

@@ -1,0 +1,1 @@
+Bug de dépassement d'entier exploité le 15 août 2010, qui a permis de créer plus de 184 milliards de bitcoins dans une seule transaction. Satoshi Nakamoto l'a corrigé en quelques heures et les mineurs ont reconstruit une chaîne sans la transaction invalide.

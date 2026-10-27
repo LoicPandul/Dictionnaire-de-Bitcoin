@@ -1,0 +1,1 @@
+Politique de relais de Bitcoin Core pour les transactions de version 3 : tant qu'elles ne sont pas confirmées, elles ont au plus un ancêtre et un descendant non confirmés, de taille bornée, ce qui rend le remplacement et l'ajout de frais plus fiables.

@@ -1,0 +1,17 @@
+Service Nostr qui exécute un calcul à la demande, souvent contre paiement, selon le protocole de NIP-90 : le client publie une requête qui décrit le résultat voulu (transcription d'un fichier audio, résumé, traduction…), un prestataire la traite et publie la réponse. Le sigle DVM désigne ce prestataire.
+
+Le principe tient dans la formule de NIP-90 : « *Money in, data out* ». Le client ne se soucie pas forcément de l'identité de celui qui fait le travail, seulement du résultat, et plusieurs prestataires peuvent se faire concurrence pour le fournir. NIP-90 distingue donc deux acteurs, les clients (clés publiques qui demandent un travail) et les prestataires (clés publiques qui l'exécutent), et réserve les kinds de `5000` à `7000` :
+
+* de `5000` à `5999` : les requêtes ;
+* de `6000` à `6999` : les résultats, dont le kind vaut toujours celui de la requête plus 1000 ;
+* `7000` : le retour d'état du prestataire.
+
+Prenons un exemple. Alice veut le texte d'un podcast. Elle publie un événement de kind `5000` (transcription) : un tag `i` donne l'entrée, ici l'URL du fichier audio, un tag `bid` plafonne ce qu'elle accepte de payer, exprimé en millisatoshis, et un tag `relays` indique où répondre. Un prestataire qui surveille ce kind peut publier un événement de kind `7000` pour dire où il en est (`processing`, `partial`, `error`, `success`) ou pour exiger un paiement avant de continuer (`payment-required`), puis l'événement de kind `6000` qui contient la transcription et cite la requête. Le prestataire réclame son dû avec un tag `amount`, éventuellement accompagné d'une facture Lightning ; Alice paie cette facture ou envoie un ZAP sur l'événement. NIP-90 laisse volontairement l'ordre ouvert : un prestataire peut exiger le paiement d'abord, livrer un extrait gratuit, ou faire confiance à un client dont l'historique est bon.
+
+Le protocole prévoit notamment trois extensions. Les entrées et les paramètres de la requête peuvent être chiffrés avec le chiffrement de NIP-04, aujourd'hui déconseillé (tag `encrypted`), et le résultat l'est alors aussi. Une requête peut prendre pour entrée le résultat d'une autre (type d'entrée `job`), ce qui permet d'enchaîner une transcription puis un résumé. Enfin, un prestataire peut annoncer les kinds qu'il sait traiter dans un événement de découverte de NIP-89 (kind `31990`). La description précise de chaque type de travail, avec ses paramètres, est consignée dans un dépôt à part, `nostr-protocol/data-vending-machines`, aujourd'hui archivé.
+
+Cette souplesse laisse chaque prestataire juger le risque à sa façon. NIP-90 précise qu'il ne lui appartient pas de définir comment chaque prestataire mène ses affaires, et rien n'impose donc de livrer après paiement ni de payer après livraison.
+
+Le premier commit de NIP-90, signé pablof7z, date du 3 juillet 2023, et la PR « NIP-90: Data Vending Machines » est fusionnée dans le dépôt des NIP le 29 octobre 2023. Il est depuis marqué `unrecommended` : le dépôt des NIP y ajoute en mai 2026 l'avertissement « this got totally out of control, prefer use-case-specific microstandards », c'est-à-dire qu'il vaut mieux écrire un petit standard par usage plutôt que ce cadre général. Le protocole reste décrit, et des logiciels peuvent l'utiliser, mais il n'est plus conseillé comme base de nouveaux services.
+
+*DVM est le sigle de « Data Vending Machine », littéralement « distributeur automatique de données » : on y met de l'argent, on en sort un résultat.*

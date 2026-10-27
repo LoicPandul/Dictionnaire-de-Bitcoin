@@ -1,0 +1,1 @@
+Explorateur de blocs et visualiseur de mempool *open source*, qui affiche en temps réel les transactions en attente, estime les frais et permet de consulter blocs, transactions et adresses, en ligne ou auto-hébergé sur son nœud.

@@ -1,0 +1,1 @@
+Pratique qui consiste, pour un particulier, à faire tourner des ASIC chez lui plutôt que dans un centre de données. Des appareils plus silencieux et des radiateurs ou chauffe-eau à ASIC permettent de réutiliser la chaleur du minage.

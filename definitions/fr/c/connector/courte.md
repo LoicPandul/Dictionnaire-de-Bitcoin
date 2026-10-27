@@ -1,0 +1,1 @@
+Sortie spéciale de la transaction de round du protocole Ark, placée en entrée des *forfeit transactions* pour qu'elles ne soient valides que si le round est confirmé. Elle rend indissociables la cession des anciens VTXO et la création des nouveaux.

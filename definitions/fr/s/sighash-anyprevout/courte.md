@@ -1,0 +1,1 @@
+SigHash Flag modificateur proposé par le BIP-0118, qui permet à une signature de ne s'engager sur aucun UTXO précis. La même signature peut alors servir pour différentes transactions, ce qu'exploitent Eltoo et certains canaux Lightning.

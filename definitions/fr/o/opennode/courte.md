@@ -1,0 +1,1 @@
+Plateforme de traitement de paiements en bitcoins qui permet aux commerçants d'accepter des paiements *on-chain* et Lightning, puis de garder les fonds en bitcoins ou de les recevoir en monnaie fiat. Le service n'est pas en *self-custody*.

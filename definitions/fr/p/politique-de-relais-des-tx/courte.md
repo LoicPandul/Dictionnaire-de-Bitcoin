@@ -1,0 +1,1 @@
+Partie de la politique de relais qui fixe les règles locales d'un nœud Bitcoin pour accepter, conserver et retransmettre les transactions. Elle englobe la politique de mempool et les règles de standardisation.

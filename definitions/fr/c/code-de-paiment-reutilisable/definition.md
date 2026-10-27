@@ -18,4 +18,4 @@ Dans l'implémentation PayNym du BIP-0047, les codes de paiement peuvent égalem
 +throbbingpond8B1
 ```
 
-L'utilisation de codes de paiements avec l'implémentation PayNym est actuellement disponible sur Sparrow Wallet sur PC et sur Ashigaru sur mobile (un fork de Samourai Wallet, dont les serveurs ont été saisis par les autorités américaines en avril 2024).
+En 2026, l'utilisation de codes de paiement avec l'implémentation PayNym est disponible sur Sparrow Wallet sur PC et sur Ashigaru sur mobile (un fork de Samourai Wallet, dont les serveurs ont été saisis par les autorités américaines en avril 2024).

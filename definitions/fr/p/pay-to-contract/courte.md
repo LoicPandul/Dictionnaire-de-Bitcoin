@@ -1,0 +1,1 @@
+Protocole cryptographique qui engage des données arbitraires dans une clé publique par *tweaking*, de sorte qu'un paiement vers cette clé prouve un engagement envers ces données. La clé obtenue ressemble à une clé publique ordinaire.

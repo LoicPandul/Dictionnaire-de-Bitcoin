@@ -1,0 +1,1 @@
+Groupement de mineurs qui mettent en commun leur puissance de calcul pour trouver des blocs et se partagent les récompenses selon leur contribution, ce qui leur assure des revenus plus réguliers qu'en minage solo.

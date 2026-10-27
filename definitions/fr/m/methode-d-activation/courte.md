@@ -1,0 +1,1 @@
+Processus par lequel un *soft fork* est déployé sur Bitcoin en limitant le risque de scission de la blockchain, que l'activation soit déclenchée par les mineurs (MASF) ou imposée par les nœuds (UASF).

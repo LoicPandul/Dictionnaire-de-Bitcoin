@@ -1,0 +1,1 @@
+*Hardware wallet* Bitcoin *open source* de TwentyTwo Devices, sans câble ni batterie, qui s'alimente et communique par NFC avec un *smartphone* pour signer des transactions depuis un portefeuille mobile.

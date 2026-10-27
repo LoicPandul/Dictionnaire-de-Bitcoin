@@ -1,0 +1,1 @@
+Droits que peuvent exercer les acteurs d'un contrat RGB : détenir une part de son état liée à un UTXO, construire des transitions conformes au *Schema* et, si le *Schema* l'autorise, exercer des droits publics comme créer une *State Extension*.

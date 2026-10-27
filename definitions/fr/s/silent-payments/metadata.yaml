@@ -5,4 +5,6 @@ category: "CONFIDENTIALITÉ"
 french_term: "PAIEMENTS SILENCIEUX"
 cross_references:
   - "6badff64-da10-451e-89f2-9692c0ddb3e1"
+assets:
+  - filename: "image-1.png"
 version: "1"

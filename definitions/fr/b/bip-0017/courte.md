@@ -1,0 +1,1 @@
+Proposition qui ajoutait l'opcode `OP_CHECKHASHVERIFY`, chargé de vérifier un script du `scriptSig` contre son hachage placé dans le `scriptPubKey`. Concurrente du BIP-0016, elle a été écartée au profit du P2SH.

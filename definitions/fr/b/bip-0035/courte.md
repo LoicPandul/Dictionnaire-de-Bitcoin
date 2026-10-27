@@ -1,0 +1,1 @@
+Proposition qui permet à un nœud de partager le contenu de sa mempool, pour qu'un pair obtienne sur simple demande les transactions non confirmées, utile aux portefeuilles SPV, aux mineurs et aux services d'analyse.

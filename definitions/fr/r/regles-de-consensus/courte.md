@@ -1,0 +1,1 @@
+Règles de validation des transactions et des blocs que tous les nœuds complets appliquent à l'identique : un élément qui les enfreint est rejeté par tout le réseau, alors que les règles de politique locale varient d'un nœud à l'autre.

@@ -8,48 +8,19 @@ from pathlib import Path
 from ..core.dictionary import Dictionary
 
 
-def lint(dictionary: Dictionary, fix: bool = False, verbose: bool = True) -> bool:
-    """
-    Vérifie et normalise le markdown des définitions.
+def check(dictionary: Dictionary) -> list:
+    """Retourne la liste des problèmes de markdown, sans rien modifier."""
+    return [f"[{i['slug']}] {i['message']}" for d in dictionary for i in _check_definition(d)]
 
-    Args:
-        dictionary: Le dictionnaire à vérifier
-        fix: Si True, corrige automatiquement les problèmes
-        verbose: Si True, affiche les détails
 
-    Returns:
-        True si tout est OK (ou corrigé), False sinon.
-    """
-    print("Vérification du markdown...")
-
-    issues = []
-    fixed_count = 0
-
+def fix(dictionary: Dictionary) -> int:
+    """Corrige les problèmes que l'on sait corriger. Retourne le nombre de corrections."""
+    fixed = 0
     for definition in dictionary:
-        definition_issues = _check_definition(definition)
-
-        if definition_issues:
-            issues.extend(definition_issues)
-
-            if fix:
-                if _fix_definition(definition, definition_issues, dictionary):
-                    fixed_count += len(definition_issues)
-
-    if fix and fixed_count > 0:
-        print(f"[OK] {fixed_count} problème(s) corrigé(s)")
-        return True
-
-    if issues and not fix:
-        print(f"\n[WARNING] {len(issues)} problème(s) trouvé(s):")
-        for issue in issues[:20]:  # Limiter l'affichage
-            print(f"  [{issue['slug']}] {issue['message']}")
-        if len(issues) > 20:
-            print(f"  ... et {len(issues) - 20} autres")
-        return False
-
-    if not issues:
-        print(f"[OK] Markdown validé")
-    return True
+        issues = _check_definition(definition)
+        if issues and _fix_definition(definition, issues, dictionary):
+            fixed += len(issues)
+    return fixed
 
 
 def _check_definition(definition) -> list:
@@ -134,8 +105,3 @@ def _fix_definition(definition, issues, dictionary) -> bool:
         content_path.write_text(content, encoding='utf-8')
 
     return modified
-
-
-def normalize_all(dictionary: Dictionary) -> int:
-    """Normalise tout le markdown du dictionnaire."""
-    return lint(dictionary, fix=True, verbose=True)

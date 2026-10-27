@@ -1,0 +1,1 @@
+Fonctionnalité d'un logiciel de portefeuille qui permet de choisir manuellement les UTXO à dépenser dans une transaction. Elle aide à maîtriser les frais et à protéger sa confidentialité, en évitant de fusionner des UTXO de provenances différentes.

@@ -1,0 +1,1 @@
+Réunion du 20 février 2016 entre développeurs de Bitcoin Core et mineurs, pendant la *Blocksize War*, conclue par un accord prévoyant un *hard fork* après SegWit. Interprété différemment par chaque camp, cet accord a accru la méfiance.

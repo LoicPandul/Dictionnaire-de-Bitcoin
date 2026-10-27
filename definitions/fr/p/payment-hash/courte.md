@@ -1,0 +1,1 @@
+Empreinte du secret, la *preimage*, qu'un destinataire Lightning place dans son *invoice*. Les HTLC de la route de paiement sont verrouillés par ce hash, et le paiement se finalise quand le destinataire révèle la *preimage*.

@@ -1,0 +1,1 @@
+Politique de relais qui accepte une transaction sans frais dotée d'une sortie *anyone-can-spend* de valeur nulle, à condition qu'une transaction enfant la dépense et paie les frais des deux. Elle permet aux protocoles comme Lightning de choisir les frais au moment de la diffusion.

@@ -1,4 +1,4 @@
-Proposition actuellement en brouillon d'un ensemble de corrections de vulnérabilités dans les règles de consensus de Bitcoin, connue sous le nom de « Consensus Cleanup ». Le BIP-0054 corrige :
+Proposition (statut `Complete` dans le dépôt des BIP en 2026) d'un ensemble de corrections de vulnérabilités dans les règles de consensus de Bitcoin, connue sous le nom de « Consensus Cleanup ». Le BIP-0054 corrige :
 * l'attaque *time warp* en imposant des contraintes sur les horodatages des blocs aux frontières des périodes d'ajustement de la difficulté,
 * limite le temps de validation des blocs en plafonnant le nombre d'opérations de signature par transaction,
 * invalide les transactions de 64 octets pour corriger les faiblesses de l'arbre de Merkle,

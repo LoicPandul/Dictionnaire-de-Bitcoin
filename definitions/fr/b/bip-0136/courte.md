@@ -1,0 +1,1 @@
+Proposition qui encode en `Bech32` la position d'une transaction confirmée dans la blockchain (hauteur du bloc et index de la transaction), pour la désigner par une référence courte et lisible plutôt que par son TXID.

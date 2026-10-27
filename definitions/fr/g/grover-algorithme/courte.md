@@ -1,0 +1,1 @@
+Algorithme quantique publié en 1996 par Lov Grover, qui accélère quadratiquement toute recherche par force brute. Sur Bitcoin, il affaiblit les fonctions de hachage comme `SHA256` sans les casser, alors que l'algorithme de Shor menace les signatures.

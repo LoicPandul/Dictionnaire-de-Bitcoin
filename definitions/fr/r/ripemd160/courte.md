@@ -1,0 +1,1 @@
+Fonction de hachage cryptographique qui produit un condensat de 160 bits. Sur Bitcoin, elle s'applique après `SHA256` (combinaison appelée `HASH160`) pour dériver les adresses Legacy et SegWit v0 d'une clé publique, et pour calculer l'empreinte des clés dans les portefeuilles HD.

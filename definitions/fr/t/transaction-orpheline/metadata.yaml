@@ -1,0 +1,11 @@
+uuid: "be777a8d-f80d-4a97-9e76-8ae45dd62afa"
+title: "TRANSACTION ORPHELINE"
+slug: "transaction-orpheline"
+category: "MEMPOOL ET FRAIS"
+english_term: "ORPHAN TRANSACTION"
+cross_references:
+  - "32b5ea0f-2dbb-418e-8d55-200b01b26ad8"
+  - "520d62da-058e-4370-828d-721044c82254"
+  - "ea4e33b9-b048-49e3-ae58-43da0cb71446"
+  - "eb71934d-67e6-4793-8353-bb0d2c81e4b3"
+version: "1"

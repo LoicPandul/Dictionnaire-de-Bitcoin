@@ -1,0 +1,1 @@
+Ensemble de techniques qui protègent l'information d'un ordinateur quantique en la répartissant sur plusieurs qubits physiques pour former un qubit logique, bien plus fiable. Elle rend possible les longs calculs qu'exigerait la cryptanalyse de Bitcoin.

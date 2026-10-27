@@ -1,0 +1,1 @@
+Configuration de portefeuille dans laquelle une seule clé privée suffit pour signer une transaction et dépenser les fonds. C'est la forme la plus simple et la plus répandue de portefeuille Bitcoin, à l'opposé du multisig.

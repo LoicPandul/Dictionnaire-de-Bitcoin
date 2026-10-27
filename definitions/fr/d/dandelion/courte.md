@@ -1,0 +1,1 @@
+Proposition (BIP-0156) de routage des transactions qui protège l'adresse IP de leur émetteur. La transaction suit d'abord un chemin aléatoire de nœuds, la tige, avant d'être diffusée à tout le réseau, le capitule.

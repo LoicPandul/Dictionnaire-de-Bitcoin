@@ -1,0 +1,330 @@
+# Chronologie de Bitcoin : 2026.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2026-01-01"
+    title: "La directive DAC8 entre en application"
+    text: "Dans toute l'Union européenne, les prestataires de services sur crypto-actifs doivent désormais collecter le détail des transactions de leurs clients et le déclarer au fisc. Le premier échange automatique de ces données entre administrations fiscales est prévu en 2027."
+    related: ["kyc-know-your-customer"]
+    sources:
+      - "https://taxation-customs.ec.europa.eu/taxation/tax-transparency-cooperation/administrative-co-operation-and-mutual-assistance/directive-administrative-cooperation-dac/dac8_en"
+      - "https://cryptoast.fr/fiscalite-crypto-48-pays-france-partage-automatique-donnees-fiscales/"
+
+  - date: "2026-01-06"
+    title: "Arrestation de Chen Zhi, fondateur du Prince Group"
+    text: "Le Cambodge arrête Chen Zhi, fondateur du conglomérat Prince Group, et l'extrade vers la Chine à la demande de Pékin. En octobre 2025, la justice américaine l'avait inculpé pour fraude et blanchiment et avait saisi l'équivalent d'environ 15 milliards de dollars en bitcoins qu'elle lui attribue."
+    sources:
+      - "https://therecord.media/alleged-cyber-scam-kingpin-cambodia-arrested-extradited"
+      - "https://capitalfm.africa/cambodia-extradites-alleged-scam-mastermind-to-china-after-arrest/"
+
+  - date: "2026-01-14"
+    title: "BIP-0003 remplace BIP-0002 comme règle du processus des BIP"
+    text: "La fusion de la PR #1820 fait passer BIP-0003 au statut *Deployed* : il remplace BIP-0002 comme guide d'édition des BIP. Il ramène les statuts de neuf à quatre (*Draft*, *Complete*, *Deployed*, *Closed*) et remplace le type *Standards Track* par *Specification*."
+    related: ["bip-0003", "bip-0002", "bip"]
+    sources:
+      - "https://github.com/bitcoin/bips/pull/1820"
+      - "https://bitcoinops.org/en/newsletters/2026/01/16/"
+
+  - date: "2026-02-06"
+    title: "Krach du bitcoin jusqu'à 60 000 dollars"
+    text: "Le bitcoin chute jusqu'à 60 062 dollars (CNBC) dans la nuit du 5 au 6 février, son plus bas depuis l'automne 2024, à environ 52 % sous son record d'octobre 2025. Les liquidations atteignent 2,59 milliards de dollars en 24 heures selon CoinGlass, avant un rebond vers 72 000 dollars."
+    related: ["bear-market", "volatilite"]
+    sources:
+      - "https://www.cnbc.com/2026/02/05/bitcoin-price-today-70000-in-focus.html"
+      - "https://forklog.com/en/bitcoin-tests-60000-support-triggering-billion%e2%80%91dollar-liquidations/"
+      - "https://www.coindesk.com/markets/2026/02/11/cryptos-crumble-bitcoin-falls-through-usd66-000-as-friday-s-bounce-fades"
+
+  - date: "2026-02-07"
+    title: "La difficulté recule de 11,16 %"
+    text: "Au bloc 935 424, la difficulté de minage passe de 141,67 à 125,86 billions, sa plus forte baisse depuis l'interdiction chinoise de 2021. Le cours a chuté et la tempête hivernale Fern a forcé fin janvier les mineurs américains à couper leurs machines."
+    related: ["ajustement-de-la-difficulte", "difficulte", "hashrate"]
+    sources:
+      - "https://mempool.space/block/00000000000000000001f7e8843ba6c103a3577503db97544a9b26072a0acb54"
+      - "https://www.theblock.co/post/388955/bitcoin-mining-difficulty-drops-11-in-largest-negative-adjustment-since-chinas-2021-ban"
+      - "https://cointelegraph.com/news/bitcoin-difficulty-drops-11-worst-2021-china-ban"
+
+  - date: "2026-02-11"
+    title: "BIP-0360 (P2MR) entre dans le dépôt des BIP"
+    text: "BIP-0360 spécifie P2MR (*Pay-to-Merkle-Root*), un type de sortie proche de P2TR mais sans dépense par la clé : il ne s'engage que sur la racine de l'arbre de scripts. C'est le premier type de sortie conçu contre les attaques quantiques publié comme BIP, sans paramètre d'activation."
+    related: ["bip-0360", "p2tr", "qubit", "shor-algorithme"]
+    sources:
+      - "https://github.com/bitcoin/bips/pull/1670"
+      - "https://bitcoinmagazine.com/news/bitcoin-advances-toward-quantum-resistance"
+      - "https://bitcoinops.org/en/newsletters/2026/02/20/"
+
+  - date: "2026-03-02"
+    title: "Core Scientific abandonne le minage pour l'IA"
+    text: "Core Scientific, l'un des plus grands mineurs cotés aux États-Unis, annonce reconvertir toutes ses installations de minage restantes pour des charges d'intelligence artificielle. Il a vendu un peu plus de 1 900 BTC en janvier, pour environ 175 millions de dollars."
+    related: ["minage", "ferme-de-minage"]
+    sources:
+      - "https://investors.corescientific.com/news-events/press-releases/detail/127/core-scientific-announces-fourth-quarter-fiscal-year-2025-results"
+      - "https://www.coindesk.com/markets/2026/03/03/core-scientific-sells-usd175-million-in-bitcoin-as-ai-pivot-accelerates"
+
+  - date: "2026-03-09"
+    title: "Le 20 millionième bitcoin est émis"
+    text: "Le bloc 939 999, miné par Foundry USA, porte à 20 millions le nombre de bitcoins émis, soit environ 95,2 % des 21 millions. Le dernier million sera créé sur environ 114 ans, au rythme décroissant des halvings."
+    related: ["limite-d-emission", "recompense-de-bloc", "halving"]
+    sources:
+      - "https://mempool.space/block/000000000000000000007e95c9885d9eb2d67a3b7027d678376bb487323004ca"
+      - "https://blockstream.info/block/000000000000000000007e95c9885d9eb2d67a3b7027d678376bb487323004ca"
+      - "https://www.theblock.co/post/392660/bitcoin-mined-supply-hits-20-million-btc"
+
+  - date: "2026-03-17"
+    title: "La SEC juge que la plupart des crypto-actifs ne sont pas des titres"
+    text: "La SEC publie, avec l'appui de la CFTC, une interprétation de 68 pages selon laquelle la plupart des crypto-actifs ne sont pas en eux-mêmes des valeurs mobilières. Le texte classe à part les stablecoins, les commodités numériques et les outils numériques, et traite du minage et du *staking*."
+    related: ["stablecoin"]
+    sources:
+      - "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets"
+      - "https://coinacademy.fr/actu/sec-cftc-publient-guide-revolutionnaire-plupart-cryptomonnaies-ne/"
+
+  - date: "2026-03-23"
+    title: "Réorganisation de deux blocs"
+    text: "AntPool et Foundry USA trouvent chacun un bloc 941 881 à 12 secondes d'écart, puis ViaBTC prolonge la branche d'AntPool. La branche de Foundry l'emporte et deux blocs deviennent orphelins, une réorganisation rare qui relance le débat sur la concentration du minage."
+    related: ["orphelin", "foundry-usa", "antpool", "viabtc"]
+    sources:
+      - "https://www.coindesk.com/tech/2026/03/24/bitcoin-s-mining-concentration-just-showed-up-in-a-rare-2-block-reorg"
+      - "https://www.theblock.co/post/394861/bitcoin-sees-rare-two-block-reorg-as-foundry-overtakes-antpool-and-viabtc-in-mining-race"
+
+  - date: "2026-03-23"
+    title: "Le *splicing* entre dans la spécification Lightning"
+    text: "La PR #1160 du dépôt des BOLT intègre le *splicing* : deux pairs peuvent ajouter ou retirer des fonds d'un canal sans le fermer. Core Lightning 26.04 l'active par défaut le 20 avril, et Eclair 0.14.0 en livre la version finale le 21 mai."
+    related: ["splicing", "lightning-network", "cln-core-lightning", "eclair"]
+    sources:
+      - "https://github.com/lightning/bolts/pull/1160"
+      - "https://bitcoinops.org/en/newsletters/2026/03/27/"
+      - "https://github.com/ElementsProject/lightning/releases/tag/v26.04"
+      - "https://github.com/ACINQ/eclair/releases/tag/v0.14.0"
+
+  - date: "2026-03-31"
+    title: "Google divise par 20 le coût d'une attaque quantique sur les courbes elliptiques"
+    text: "Google Quantum AI estime qu'un ordinateur quantique de moins de 500 000 qubits physiques résoudrait en quelques minutes le logarithme discret sur une courbe elliptique de 256 bits, avec environ 20 fois moins de ressources que les estimations antérieures. Aucune machine de cette taille n'existe."
+    related: ["qubit", "shor-algorithme", "ecdsa"]
+    sources:
+      - "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/"
+      - "https://arxiv.org/abs/2603.28846"
+
+  - date: "2026-04-08"
+    title: "Morgan Stanley lance son ETF bitcoin au comptant"
+    text: "Morgan Stanley lance le Morgan Stanley Bitcoin Trust (MSBT), premier ETF bitcoin au comptant émis sous son nom par une grande banque américaine, avec des frais de 0,14 %, les plus bas du marché. Le fonds collecte 30,6 millions de dollars le premier jour selon Farside."
+    related: ["etf"]
+    sources:
+      - "https://www.morganstanley.com/press-releases/msim-enters-with-launch-of-morgan-stanley-bitcoin-trust"
+      - "https://unchainedcrypto.com/morgan-stanley-launches-msbt-the-first-spot-bitcoin-etf-from-a-major-u-s-bank/"
+      - "https://farside.co.uk/bitcoin-etf-flow-all-data/"
+
+  - date: "2026-04-14"
+    title: "BIP-0361 propose d'éteindre les anciennes signatures"
+    text: "BIP-0361, de Jameson Lopp et cinq coauteurs, entre dans le dépôt au statut *Draft*. Il prévoit d'interdire d'abord les envois vers des adresses vulnérables au quantique, puis de restreindre les dépenses ECDSA et Schnorr, avec un protocole de sauvetage résistant au quantique pour les pièces non migrées."
+    related: ["ecdsa", "schnorr-protocole", "qubit"]
+    sources:
+      - "https://github.com/bitcoin/bips/pull/1895"
+      - "https://decrypt.co/364450/new-bitcoin-proposal-would-freeze-coins-to-counter-quantum-threat"
+      - "https://bitcoinops.org/en/newsletters/2026/04/24/"
+
+  - date: "2026-04-17"
+    title: "Enquête pénale contre la plateforme polonaise Zondacrypto"
+    text: "Le parquet régional de Katowice ouvre une enquête pour escroquerie et blanchiment contre Zondacrypto, première plateforme polonaise, dont les clients ne peuvent plus retirer leurs fonds. Son dirigeant a reconnu ne plus avoir accès à un portefeuille froid d'environ 4 500 BTC, dont seul le fondateur disparu détenait la clé."
+    related: ["custody"]
+    sources:
+      - "https://notesfrompoland.com/2026/04/21/polish-prosecutors-identify-hundreds-of-possible-victims-of-troubled-crypto-platform/"
+      - "https://cointelegraph.com/news/zonda-crypto-ceo-vanish-prosecutor-probe-poland"
+
+  - date: "2026-04-19"
+    title: "Sortie de Bitcoin Core 31.0 et du *cluster mempool*"
+    text: "Bitcoin Core 31.0 réimplémente la mempool selon le modèle du *cluster mempool* : les limites d'ascendants et de descendants laissent place à des grappes de 64 transactions et 101 kvB au plus. La version ajoute l'option `-privatebroadcast` et relève le `-dbcache` par défaut à 1 024 Mio."
+    related: ["bitcoin-core", "cluster-mempool", "mempool", "politique-de-mempool"]
+    sources:
+      - "https://bitcoincore.org/en/2026/04/19/release-31.0/"
+      - "https://bitcoinops.org/en/newsletters/2026/04/24/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v31.0"
+
+  - date: "2026-04-20"
+    title: "Strategy dépasse 800 000 BTC"
+    text: "Strategy déclare avoir acheté 34 164 BTC du 13 au 19 avril pour 2,54 milliards de dollars, ce qui porte sa réserve à 815 061 BTC. Selon Bitcoin Magazine, la société détient désormais plus de bitcoins que l'ETF de BlackRock (802 823 BTC)."
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1050446/000119312526162756/mstr-20260223.htm"
+      - "https://bitcoinmagazine.com/news/strategy-mstr-buys-2-54b-in-bitcoin"
+
+  - date: "2026-05"
+    title: "L'Iran lance une assurance maritime réglée en bitcoins à Ormuz"
+    text: "Selon l'agence Fars, l'Iran lance Hormuz Safe, une assurance maritime payée en bitcoins pour les navires qui traversent le détroit d'Ormuz. Depuis avril, les armateurs peuvent déjà régler en bitcoins ou en yuans les frais de transit imposés par Téhéran, jusqu'à 2 millions de dollars par navire."
+    sources:
+      - "https://gcaptain.com/iran-launches-bitcoin-based-insurance-scheme-for-ships-crossing-hormuz/"
+      - "https://bitcoinmagazine.com/news/iran-launches-bitcoin-backed-service"
+
+  - date: "2026-05-04"
+    title: "Canaux Taproot et *commitments* sans frais entrent dans les BOLT"
+    text: "La spécification Lightning intègre les canaux Taproot simples (financement P2TR avec agrégation de clés MuSig2) et les canaux à *commitment* sans frais, fondés sur les transactions TRUC de Bitcoin Core. LND 0.21.0 rend les canaux Taproot prêts pour la production le 5 juin."
+    related: ["taproot-channel", "musig2", "lightning-network", "lnd"]
+    sources:
+      - "https://github.com/lightning/bolts/pull/995"
+      - "https://github.com/lightning/bolts/pull/1228"
+      - "https://bitcoinops.org/en/newsletters/2026/05/08/"
+      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.21.0-beta"
+      - "https://bitcoinops.org/en/newsletters/2026/06/12/"
+
+  - date: "2026-05-05"
+    title: "Divulgation de la faille CVE-2024-52911 de Bitcoin Core"
+    text: "Bitcoin Core divulgue CVE-2024-52911, de gravité élevée : un bloc invalide spécialement construit pouvait faire lire de la mémoire déjà libérée et planter les nœuds des versions postérieures à la 0.14.0 et antérieures à la 29.0. Corrigée discrètement en 2024, la faille attendait la fin de la branche 28."
+    related: ["bitcoin-core"]
+    sources:
+      - "https://bitcoincore.org/en/2026/05/05/disclose-cve-2024-52911/"
+      - "https://www.theblock.co/post/400203/bitcoin-core-quietly-patched-high-severity-memory-bug-months-before-public-disclosure-but-many-nodes-may-still-run-affected-software"
+      - "https://bitcoinops.org/en/newsletters/2026/05/15/"
+
+  - date: "2026-05-22"
+    title: "BIP-0054 (Consensus Cleanup) passe au statut Complete"
+    text: "BIP-0054, qui corrige l'attaque *timewarp*, la validation lente de certains scripts, les transactions de 64 octets et les coinbases en double, passe au statut *Complete*. C'est le soft fork le plus avancé de 2026, mais aucun paramètre d'activation n'est fixé au 25 octobre."
+    related: ["bip-0054", "consensus-cleanup", "time-warp", "soft-fork"]
+    sources:
+      - "https://github.com/bitcoin/bips/pull/2172"
+      - "https://news.bitcoin.com/crypto-news/after-bip-110-flops-bitcoins-next-soft-fork-faces-a-showdown/"
+      - "https://www.gncrypto.news/news/bip-54-approval-f2pool-opposition-delays-activation/"
+
+  - date: "2026-06-09"
+    title: "Bark, l'implémentation d'Ark de Second, arrive sur le réseau principal"
+    text: "Second ouvre à tous son serveur Ark sur le réseau principal de Bitcoin, avec le Bark SDK et le démon barkd pour les développeurs. Bark, son implémentation du protocole Ark, tournait jusque-là sur signet."
+    related: ["ark", "asp-ark-service-provider"]
+    sources:
+      - "https://second.tech/blog/bark-now-on-bitcoin-mainnet/"
+      - "https://bitcoinops.org/en/newsletters/2026/06/19/"
+
+  - date: "2026-06-30"
+    title: "Pire mois de l'histoire des ETF bitcoin américains"
+    text: "Les ETF bitcoin au comptant américains perdent 4,51 milliards de dollars en juin selon Farside, leur pire mois depuis leur lancement en janvier 2024. Ils venaient d'aligner 13 séances de sorties nettes, du 15 mai au 3 juin, la plus longue série de leur histoire."
+    related: ["etf"]
+    sources:
+      - "https://farside.co.uk/bitcoin-etf-flow-all-data/"
+      - "https://coinmarketcap.com/academy/uk/article/bitcoin-etfs-record-june-outflows-blackrock-ibit"
+      - "https://www.cnbc.com/2026/06/05/bitcoin-dismal-week-price-below-all-time-high-crypto-investors.html"
+
+  - date: "2026-06-30"
+    title: "Laurent Nuñez compte 77 crypto-rapts depuis janvier"
+    text: "Devant l'Adan, le ministre de l'Intérieur Laurent Nuñez compte 77 séquestrations, enlèvements, extorsions ou tentatives liés aux cryptomonnaies en France depuis le début de l'année, contre 45 en 2025, et environ 200 personnes interpellées. Il présente un plan d'action pour la sécurité des acteurs du secteur."
+    related: ["wrench-attack"]
+    sources:
+      - "https://cryptoast.fr/agressions-crypto-laurent-nunez-annonce-plan-action-plus-ambitieux-pour-securite-acteurs-secteur/"
+      - "https://cryptoactu.com/enlevements-crypto-france-77-affaires/"
+
+  - date: "2026-07-01"
+    title: "Plus bas de l'année, vers 57 850 dollars"
+    text: "Le bitcoin touche environ 57 850 dollars (CoinDesk) pendant la séance asiatique, son plus bas depuis septembre 2024 et plus de 50 % sous son record d'octobre 2025. Au 25 octobre, ce niveau reste le plus bas de l'année."
+    related: ["bear-market"]
+    sources:
+      - "https://www.coindesk.com/markets/2026/10/23/bitcoin-approaches-midterms-as-july-low-challenges-historical-cycle-pattern"
+      - "https://tradingeconomics.com/btcusd:cur/news/563281"
+      - "https://news.bitcoin.com/bitcoin-falls-below-58000-q2-2026/"
+
+  - date: "2026-07-01"
+    title: "Faute d'agrément MiCA, Binance suspend ses services dans plusieurs pays de l'UE"
+    text: "À la fin de la période transitoire de MiCA, Binance cesse de fournir ses services sur crypto-actifs en France, en Italie, en Espagne et en Pologne ; seuls les retraits restent possibles. La plateforme avait retiré le 24 juin sa demande d'agrément déposée en Grèce."
+    sources:
+      - "https://unchainedcrypto.com/binance-suspends-eu-services-by-july-1-after-failing-to-secure-mica-license/"
+      - "https://cryptoast.fr/arret-binance-france-voici-meilleures-alternatives-pour-vos-cryptomonnaies/"
+
+  - date: "2026-07-06"
+    title: "Strategy vend 3 588 BTC à perte"
+    text: "Strategy déclare avoir vendu 3 588 BTC du 29 juin au 5 juillet pour 216 millions de dollars, sous son prix de revient moyen de 75 476 dollars, afin de payer les dividendes de ses actions privilégiées. Sa première vente depuis 2022, de 32 BTC, datait de fin mai."
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1050446/000119312526295586/mstr-20260706.htm"
+      - "https://bitcoinmagazine.com/news/strategy-mstr-sells-3588-bitcoin"
+      - "https://www.cnbc.com/2026/06/01/strategy-shares-fall-after-selling-2point5-million-in-bitcoin-its-first-sale-since-2022.html"
+
+  - date: "2026-07-15"
+    title: "Le Japon range les crypto-actifs parmi les produits financiers"
+    text: "La Chambre des conseillers adopte la révision de la loi japonaise sur les instruments financiers et les marchés, qui classe les crypto-actifs comme le bitcoin parmi les « produits financiers ». Les règles sur le délit d'initié s'appliqueront à ce marché, avec une entrée en vigueur estimée à un an."
+    sources:
+      - "https://news.web.nhk/newsweb/na/na-k10015177471000"
+      - "https://cryptoast.fr/japon-reconnait-cryptomonnaies-comme-produits-financiers/"
+
+  - date: "2026-07-25"
+    title: "La Russie interdit le minage à Moscou jusqu'en 2032"
+    text: "Le Premier ministre Mikhaïl Michoustine signe la résolution n° 936, qui interdit le minage à Moscou, dans toute sa région, dans 8 districts de la région de Koursk et à Lgov, du 15 août 2026 au 31 décembre 2032. Le gouvernement invoque un risque de pénurie de capacité électrique."
+    related: ["minage"]
+    sources:
+      - "https://interfax.com/newsroom/top-stories/118586/"
+      - "https://www.theblock.co/post/410345/russian-decree-bans-crypto-mining-across-moscow-region-through-2032"
+      - "https://cointelegraph.com/news/russia-expands-crypto-mining-ban-moscow-2032"
+
+  - date: "2026-07-30"
+    title: "Vol massif sur des Coldcard aux graines trop faibles"
+    text: "Des utilisateurs découvrent que leurs Coldcard ont été vidés : depuis le micrologiciel 4.0.1 de mars 2021, des Mk3 généraient leur graine avec environ 40 bits d'entropie effective au lieu de 128. Le 5 août, TRM Labs compte environ 1 816 BTC volés sur plus de 5 200 adresses."
+    related: ["coldcard", "graine", "entropie"]
+    sources:
+      - "https://blog.coinkite.com/coldcard-mk3-seed-generation-warning/"
+      - "https://bitcoinops.org/en/newsletters/2026/07/31/"
+      - "https://www.trmlabs.com/resources/blog/the-largest-hardware-wallet-exploit-of-2026-inside-the-usd-116-million-coldcard-hack"
+
+  - date: "2026-08-04"
+    title: "Vladimir Poutine signe la première loi russe sur les cryptomonnaies"
+    text: "Vladimir Poutine signe la première loi qui encadre de façon complète la circulation des cryptomonnaies en Russie : plateformes d'échange inscrites sur un registre, dépositaires, courtiers et minage. Les plateformes peuvent opérer sans inscription jusqu'au 1er juillet 2027."
+    sources:
+      - "https://tass.com/economy/2168907"
+      - "https://cryptoast.fr/vladimir-poutine-officialise-premiere-reglementation-crypto-russie/"
+
+  - date: "2026-08-08"
+    title: "Échec de BIP-0110, ses nœuds partent sur une chaîne minoritaire"
+    text: "Au bloc 961 632, début de la signalisation obligatoire de BIP-0110, les nœuds qui l'appliquent rejettent un bloc d'AntPool sans le bit 4, alors que 2,53 % des blocs avaient signalé. Leur branche cale à deux blocs, et Luke Dashjr est retiré des éditeurs de BIP le 10 août."
+    related: ["bip-0110", "bitcoin-knots", "soft-fork", "fork"]
+    sources:
+      - "https://mempool.space/block/00000000000000000000d1e01392faa65ceeaed307f0a3159144b84146ff24ba"
+      - "https://www.theblock.co/news/ecosystems/2026-08-08-bitcoins-bip-110-supporters-split-onto-minority-chain-as-main-network-pulls-ahead-411213"
+      - "https://bitcoinmagazine.com/news/bip110-stalls-bitcoin-miners-do-not-follow"
+      - "https://github.com/bitcoin/bips/pull/2248"
+
+  - date: "2026-09-06"
+    title: "Près de 4 000 BTC retirés de la réserve de Liquid"
+    text: "Des inconnus exploitent un bogue d'Elements pour créer des L-BTC sans contrepartie et obtiennent de la fédération Liquid le versement de 3 996 BTC, presque toute sa réserve. Se présentant comme des *white hats*, ils rendent 3 400 BTC le lendemain ; environ 598,5 BTC manquent encore le 8 septembre."
+    related: ["liquid-network", "federation", "elements", "peg-out"]
+    sources:
+      - "https://forklog.com/en/unknown-actors-withdraw-320m-in-bitcoin-from-liquid-network/"
+      - "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html"
+      - "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart"
+
+  - date: "2026-09-14"
+    title: "Le Conseil d'État refuse de suspendre le décret DAC8"
+    text: "Le juge des référés du Conseil d'État rejette la demande de Paymium et de Satoshi Portal (Bull Bitcoin) visant à suspendre le décret du 19 décembre 2025 transposant DAC8 en France. Il ne voit pas d'urgence et juge « très faible » la probabilité d'une fuite des données déclarées."
+    related: ["kyc-know-your-customer"]
+    sources:
+      - "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2026-09-14/519158"
+      - "https://cryptoast.fr/conseil-etat-rejette-refere-paymium-bull-bitcoin-dac8/"
+      - "https://bitcoin.fr/fuites-de-donnees-crypto-laveuglement-du-conseil-detat/"
+
+  - date: "2026-09-15"
+    title: "Le Sénat américain bloque le CLARITY Act"
+    text: "Le Sénat rejette par 49 voix contre 50 la clôture du débat sur le CLARITY Act, qui devait répartir la supervision des crypto-actifs entre la SEC et la CFTC ; il fallait 60 voix. Le bitcoin passe sous 75 000 dollars dans la foulée."
+    sources:
+      - "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00234.htm"
+      - "https://cryptoast.fr/senat-us-rejette-clarity-act-bitcoin-chute/"
+
+  - date: "2026-09-23"
+    title: "Fermeture de BitMEX"
+    text: "BitMEX, pionnière du contrat perpétuel sur le bitcoin, cesse toute activité à 4 h UTC après plus de onze ans, comme annoncé le 23 juillet. Le trading et les dépôts sont coupés ; seuls la connexion et les retraits restent possibles."
+    sources:
+      - "https://www.bitmex.com/blog/bitmex-closure-live/"
+      - "https://forklog.com/en/bitmex-to-cease-operations-on-september-23/"
+
+  - date: "2026-09-24"
+    title: "Piratage de Bitget, 387,5 millions de dollars volés"
+    text: "Bitget détecte des retraits non autorisés depuis une partie de ses portefeuilles chauds et suspend les retraits. Le bilan, révisé le lendemain, atteint 387,5 millions de dollars ; les attaquants ont exploité la faille d'un produit de sécurité tiers. Les retraits de bitcoins reprennent les premiers, le 28 septembre."
+    related: ["portefeuille-chaud"]
+    sources:
+      - "https://theblock.co/news/markets/2026-09-24-more-than-170-million-in-crypto-moves-from-bitget-wallets-unidentified-address-416345"
+      - "https://bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist"
+      - "https://forklog.com/en/bitget-reveals-hack-cause-and-resumes-bitcoin-withdrawals/"
+
+  - date: "2026-10-15"
+    title: "MSCI ferme ses indices aux sociétés non opérationnelles"
+    text: "MSCI rendra inéligibles à ses indices Global Investable Market les sociétés non opérationnelles, à compter de la clôture du 30 novembre 2026. La règle peut écarter Strategy et Metaplanet ; JPMorgan estime à environ 2,8 milliards de dollars les ventes forcées d'actions de Strategy en cas d'exclusion."
+    sources:
+      - "https://bitcoinmagazine.com/news/msci-could-exclude-strategy-from-index"
+      - "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
+
+  - date: "2026-10-16"
+    title: "Mt. Gox repousse encore d'un an ses remboursements"
+    text: "Avec l'accord du tribunal, le syndic de Mt. Gox repousse du 31 octobre 2026 au 31 octobre 2027 la date limite des remboursements, quatrième report d'un an. Selon Arkham, les portefeuilles de la faillite détiennent encore environ 34 400 BTC."
+    related: ["mtgox"]
+    sources:
+      - "https://www.mtgox.com/img/pdf/20261016_b3a13e0f-55f6-4653-913b-be80762390e8_announcement_en.pdf"
+      - "https://www.blockhead.co/2026/10/20/mt-gox-pushes-its-repayment-deadline-to-october-2027-in-fourth-extension/"

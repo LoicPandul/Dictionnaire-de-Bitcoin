@@ -1,0 +1,1 @@
+Langage de script des dépenses par chemin de script (*script path*) des sorties P2TR, défini par le BIP-0342. Il désactive, modifie ou ajoute certains opcodes par rapport au langage de script classique de Bitcoin.

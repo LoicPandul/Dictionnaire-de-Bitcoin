@@ -1,0 +1,1 @@
+Identifiant statique défini par le BIP-0047, qu'un destinataire peut partager une fois pour toutes. Après une transaction de notification, il permet de dériver une adresse unique pour chaque paiement, sans réutilisation d'adresse.

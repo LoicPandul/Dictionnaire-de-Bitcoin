@@ -1,0 +1,1 @@
+Modification non rétrocompatible des règles du protocole, qui rend valides des blocs auparavant invalides. Les nœuds qui ne suivent pas la mise à jour rejettent la nouvelle chaîne, ce qui peut scinder la blockchain, comme lors de la création de Bitcoin Cash en 2017.

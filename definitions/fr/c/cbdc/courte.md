@@ -1,0 +1,1 @@
+Sigle de *Central Bank Digital Currency*. Monnaie fiat numérique émise et contrôlée directement par une banque centrale, critiquée pour la surveillance et le contrôle des transactions qu'elle rendrait possibles.

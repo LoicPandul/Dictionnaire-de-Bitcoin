@@ -1,0 +1,1 @@
+Algorithme de signature numérique post-quantique à base de réseaux euclidiens, standardisé par le NIST dans FIPS 204 en 2024. Il peut remplacer ECDSA et Schnorr face à un ordinateur quantique, au prix de signatures de plus de 2 000 octets.

@@ -1,0 +1,1 @@
+Nœud Lightning d'ACINQ qui reprend le logiciel de Phoenix pour tourner sur un serveur, en *daemon*, et envoyer ou recevoir des paiements par une API HTTP, avec une gestion automatique des canaux et de la liquidité.

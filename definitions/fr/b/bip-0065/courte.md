@@ -1,0 +1,1 @@
+Proposition de soft fork qui introduit l'opcode `OP_CHECKLOCKTIMEVERIFY`, pour rendre un UTXO indépensable jusqu'à un moment donné dans le futur. Activée en décembre 2015, elle a aussi introduit la version 4 des blocs.

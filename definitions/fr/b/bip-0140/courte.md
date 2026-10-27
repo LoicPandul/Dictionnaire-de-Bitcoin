@@ -1,0 +1,1 @@
+Proposition de TXID normalisés, calculés sans les données de signature, pour obtenir des identifiants de transaction stables et corriger la malléabilité. Elle a été fermée, SegWit ayant résolu ce problème autrement.

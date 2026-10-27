@@ -1,0 +1,438 @@
+# Chronologie de Bitcoin : 2011.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2011-01-28"
+    title: "Le quart des 21 millions de bitcoins est émis"
+    text: "Le bloc 105 000 est horodaté à 9 h 41 UTC. À raison de 50 BTC par bloc depuis le bloc genèse, environ 5,25 millions de bitcoins ont été créés, soit le quart de la limite de 21 millions."
+    related: ["limite-d-emission", "genese"]
+    sources:
+      - "https://mempool.space/block/00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97"
+      - "https://blockstream.info/block/00000000000291ce28027faea320c8d2b054b2e0fe44a773f3eefb151d6bdc97"
+
+  - date: "2011-02"
+    title: "Ouverture de Silk Road"
+    text: "Silk Road, un marché noir accessible seulement par Tor où l'on paie en bitcoins, ouvre en février. Fin janvier, un utilisateur nommé « altoid », que le FBI identifiera comme Ross Ulbricht, en a fait la promotion sur le forum Shroomery puis sur bitcointalk."
+    related: ["silk-road", "tor-the-onion-router", "bitcointalk"]
+    sources:
+      - "https://web.archive.org/web/2011/http://gawker.com/5805928/the-underground-website-where-you-can-buy-any-drug-imaginable"
+      - "https://www.nbcnews.com/news/world/end-silk-road-slip-ups-building-internet-drug-market-led-flna8C11326181"
+      - "https://news.bitcoin.com/bitcoin-history-part-15-silk-road-is-born/"
+
+  - date: "2011-02-09"
+    title: "Le bitcoin atteint la parité avec le dollar"
+    text: "Pour la première fois, 1 BTC s'échange contre 1 USD. Vers 22 h UTC, le fil « Parity Party » de bitcointalk, ouvert un mois plus tôt pour attendre ce moment, s'anime, et Slashdot relaie la nouvelle le lendemain."
+    related: ["bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=2734.0"
+      - "https://web.archive.org/web/20210423083126/https://twitter.com/Dave_Parrish/status/35466982635601920"
+      - "https://web.archive.org/web/2011/http://news.slashdot.org/story/11/02/10/189246/Online-Only-Currency-BitCoin-Reaches-Dollar-Parity"
+
+  - date: "2011-02-21"
+    title: "Sortie de Bitcoin 0.3.20"
+    text: "Gavin Andresen publie sur bitcointalk les binaires de Bitcoin 0.3.20.01. La version ajoute les options `-rescan`, qui retrouve dans la chaîne les transactions manquantes du portefeuille, et `-nolisten`, ainsi que plusieurs nouveautés dans l'interface JSON-RPC."
+    related: ["bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=3704.0"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/text/2011-02-21-205254.txt"
+      - "https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.3.20.md"
+
+  - date: "2011-03"
+    title: "Mise en ligne de la vidéo « What is Bitcoin? »"
+    text: "WeUseCoins publie sur YouTube « What is Bitcoin? », une courte vidéo d'animation qui explique Bitcoin au grand public. Elle dépassera les 10 millions de vues."
+    sources:
+      - "https://www.youtube.com/watch?v=Um63OQz3bjo"
+      - "https://news.ycombinator.com/item?id=2358118"
+
+  - date: "2011-03-06"
+    title: "Jed McCaleb cède Mt. Gox à Mark Karpelès"
+    text: "À 0 h 23 UTC, Jed McCaleb annonce sur bitcointalk qu'il confie Mt. Gox à « MagicalTux », Mark Karpelès. Le communiqué de Mt. Gox du 30 juin 2011 confirme que la société Tibanne a racheté la plateforme en mars."
+    related: ["mtgox", "bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=4187.0"
+      - "https://blog.lopp.net/annals-bitcoin-twitter-history/"
+      - "https://web.archive.org/web/20110919162635/https://mtgox.com/press_release_20110630.html"
+
+  - date: "2011-03-07"
+    title: "Annonce de BitCoinJ"
+    text: "Mike Hearn, alors ingénieur chez Google, publie BitCoinJ 0.1, une implémentation de Bitcoin en Java sous licence Apache 2. Elle parle directement le protocole pair-à-pair et applique la vérification simplifiée des paiements du livre blanc, ce qui la destine aux portefeuilles mobiles."
+    related: ["bitcoinj", "simplified-payment-verification", "noeud-spv-noeud-leger"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=4236.0"
+      - "https://news.ycombinator.com/item?id=2297301"
+
+  - date: "2011-04-16"
+    title: "Le magazine Time consacre un article à Bitcoin"
+    text: "Sur le blog Techland de Time, Jerry Brito publie « Online Cash Bitcoin Could Challenge Governments, Banks ». Il y présente Bitcoin comme la première monnaie numérique distribuée et anonyme. Soumis le jour même sur Hacker News, il y recueille 279 points."
+    sources:
+      - "https://web.archive.org/web/2011/http://techland.time.com/2011/04/16/online-cash-bitcoin-could-challenge-governments/"
+      - "https://news.ycombinator.com/item?id=2453988"
+
+  - date: "2011-04-18"
+    title: "Lancement de Namecoin"
+    text: "À 0 h 52 UTC, « vinced » annonce sur bitcointalk Namecoin, un système de noms décentralisé fondé sur le code de Bitcoin et inspiré des discussions sur BitDNS. Son bloc genèse est horodaté du 17 avril à 0 h 26 UTC."
+    related: ["namecoin", "altcoin"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=6017.0"
+      - "https://github.com/namecoin/namecoin-core/blob/master/src/kernel/chainparams.cpp"
+      - "https://bluishcoder.co.nz/2011/05/12/namecoin-a-dns-alternative-based-on-bitcoin/"
+
+  - date: "2011-04-23"
+    title: "Dernier e-mail connu de Satoshi Nakamoto à Mike Hearn"
+    text: "Satoshi Nakamoto répond à Mike Hearn : « I've moved on to other things. It's in good hands with Gavin and everyone. » C'est le dernier message connu qu'il lui adresse, quatre jours avant que Gavin Andresen n'annonce sa venue à la CIA."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://thedefiant.io/news/people/bitcoin-creator-satoshi-nakamoto-sent-final-email-to-mike-hearn-on-april-23-2011-6735013c"
+      - "https://cointelegraph.com/news/satoshi-nakamoto-final-email-revisited-after-13-years"
+      - "https://thenextweb.com/hardfork/2019/07/19/satoshi-nakamoto-left-Bitcoin-because-of-the-cia-theory-cryptocurrency/"
+
+  - date: "2011-04-27"
+    title: "Sortie de Bitcoin 0.3.21"
+    text: "Gavin Andresen publie Bitcoin 0.3.21. Elle ajoute l'UPnP pour ouvrir automatiquement le port d'écoute, l'envoi et l'affichage de montants inférieurs à 0,01 BTC, la recherche de pairs par DNS avec `-dnsseed` et la commande RPC `sendmany`."
+    related: ["bitcoin-core", "dns-seeds"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=6642.0"
+      - "https://bitcoin.org/en/release/v0.3.21"
+
+  - date: "2011-04-27"
+    title: "Gavin Andresen annonce une présentation à la CIA"
+    text: "À 19 h UTC, Gavin Andresen annonce sur bitcointalk qu'il présentera Bitcoin en juin au siège de la CIA, lors d'une conférence sur les technologies émergentes, contre 3 000 USD de défraiement. Il y donne sa présentation le mardi 14 juin."
+    sources:
+      - "https://bitcointalk.org/index.php?topic=6652.0"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/text/2011-06-20-184841.txt"
+      - "https://news.ycombinator.com/item?id=2491830"
+      - "https://thenextweb.com/hardfork/2019/07/19/satoshi-nakamoto-left-Bitcoin-because-of-the-cia-theory-cryptocurrency/"
+
+  - date: "2011-06"
+    title: "Sortie de Bitcoin 0.3.22"
+    text: "Bitcoin 0.3.22 retire de l'interface l'option « Generate Coins » de minage sur processeur et accepte de relayer les transactions qui paient 0,0005 BTC de frais. Les notes de version évoquent les problèmes causés par la « croissance explosive » du réseau."
+    related: ["bitcoin-core", "frais-de-transaction", "cpu-central-processing-unit"]
+    sources:
+      - "https://bitcoin.org/en/release/v0.3.22"
+      - "https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.3.22.md"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.3.22"
+
+  - date: "2011-06"
+    title: "Le cours culmine à près de 32 USD"
+    text: "Début juin, le bitcoin culmine à 31,9099 USD sur Mt. Gox, alors qu'il valait environ 1 USD en avril. Ce record ne tombera que le 27 février 2013."
+    related: ["mtgox", "volatilite"]
+    sources:
+      - "https://bitcoinmagazine.com/markets/bitcoin-price-breaks-all-time-high"
+      - "https://www.wired.com/2011/06/gox/"
+      - "https://www.darkreading.com/cyber-risk/lulzsec-hackers-using-digital-currency-dea-crackdown-soon-"
+
+  - date: "2011-06-01"
+    title: "Gawker révèle Silk Road au grand public"
+    text: "Adrian Chen publie sur Gawker « The Underground Website Where You Can Buy Any Drug Imaginable ». L'article décrit Silk Road, où l'on achète de la drogue en bitcoins par Tor. Selon l'article, un bitcoin vaut alors environ 8,67 USD."
+    related: ["silk-road"]
+    sources:
+      - "https://web.archive.org/web/2011/http://gawker.com/5805928/the-underground-website-where-you-can-buy-any-drug-imaginable"
+      - "https://news.ycombinator.com/item?id=2608772"
+
+  - date: "2011-06-05"
+    title: "Deux sénateurs américains s'en prennent à Silk Road et à Bitcoin"
+    text: "En conférence de presse, le sénateur Charles Schumer réclame la fermeture de Silk Road et qualifie Bitcoin de « forme de blanchiment d'argent en ligne ». Le lendemain, lui et Joe Manchin publient leur lettre au procureur général Eric Holder et à la DEA."
+    related: ["silk-road"]
+    sources:
+      - "https://web.archive.org/web/2011/http://www.techdirt.com/articles/20110605/22322814558/senator-schumer-says-bitcoin-is-money-laundering.shtml"
+      - "https://news.ycombinator.com/item?id=2622030"
+      - "https://diswww.mit.edu/menelaus.MIT.EDU/privacy/1557"
+      - "https://www.pcworld.com/article/485284/u_s_senators_want_to_shut_down_bitcoins.html"
+
+  - date: "2011-06-12"
+    title: "Premier message de la liste bitcoin-development"
+    text: "À 2 h 23 UTC, Jeff Garzik envoie le premier message archivé de la liste de diffusion bitcoin-development, l'ancêtre de bitcoin-dev. Il y prépare la sortie de Bitcoin 0.3.23-rc1."
+    related: ["bitcoin-dev"]
+    sources:
+      - "https://mirror.b10c.me/lists/bitcoindev/BANLkTi=2VOhGTgX4HA_en00DATFbeWGVtg@mail.gmail.com/T/"
+      - "https://web.archive.org/web/2017/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2011-June/date.html"
+      - "https://bitcoin-development.narkive.com/"
+
+  - date: "2011-06-13"
+    title: "Vol de 25 000 BTC à l'utilisateur allinvain"
+    text: "Le bloc 130 560, horodaté à 16 h 52 UTC, contient la transaction qui dérobe 25 000 BTC à l'utilisateur « allinvain ». Il signale le vol le soir même sur bitcointalk. NPR l'estime à environ 500 000 USD."
+    related: ["wallet-dat", "bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=16457.0"
+      - "https://mempool.space/tx/4885ddf124a0f97b5a3775a12de0274d342d12842ebe59520359f976721ac8c3"
+      - "https://blockstream.info/tx/4885ddf124a0f97b5a3775a12de0274d342d12842ebe59520359f976721ac8c3"
+      - "https://www.npr.org/sections/money/2011/06/16/137223116/some-just-stole-500-000-in-bitcoins"
+
+  - date: "2011-06-13"
+    title: "Sortie de Bitcoin 0.3.23"
+    text: "À 23 h 46 UTC, Jeff Garzik annonce Bitcoin 0.3.23 sur la liste bitcoin-development. Cette version corrective, pensée pour l'afflux de nouveaux utilisateurs, abaisse les frais par défaut à 0,0005 BTC et relaie les transactions qui paient au moins 0,0001 BTC."
+    related: ["bitcoin-core", "frais-de-transaction"]
+    sources:
+      - "https://mirror.b10c.me/lists/bitcoindev/BANLkTikm_wQhKExMaC1ZDCAJ663+rhP3CA@mail.gmail.com/T/"
+      - "https://web.archive.org/web/2017/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2011-June/date.html"
+      - "https://bitcoin.org/en/release/v0.3.23"
+
+  - date: "2011-06-14"
+    title: "WikiLeaks accepte les dons en bitcoins"
+    text: "À 23 h 12 UTC, WikiLeaks annonce sur Twitter accepter les dons anonymes en bitcoins, à l'adresse `1HB5XMLmzFVj8ALj6mfBsbifRoD4miY36v`. Coupée de Visa, Mastercard et PayPal, l'organisation recevra plus de 4 000 BTC sur cette adresse."
+    sources:
+      - "https://twitter.com/wikileaks/status/80774521350668288"
+      - "https://blog.lopp.net/annals-bitcoin-twitter-history/"
+      - "https://news.bitcoin.com/wikileaks-raised-4000-btc-since-2011/"
+
+  - date: "2011-06-16"
+    title: "Premier cheval de Troie voleur de bitcoins"
+    text: "Symantec signale Infostealer.Coinbit, un logiciel malveillant pour Windows qui cherche le fichier `wallet.dat` de la victime et l'envoie par e-mail à l'attaquant. The Register y voit le premier cheval de Troie connu visant Bitcoin."
+    related: ["wallet-dat"]
+    sources:
+      - "https://www.theregister.com/2011/06/18/bitcoin_stealing_malware"
+      - "https://web.archive.org/web/2011/http://www.symantec.com/connect/blogs/all-your-bitcoins-are-ours"
+      - "https://blog.lopp.net/annals-bitcoin-twitter-history/"
+
+  - date: "2011-06-19"
+    title: "Piratage de Mt. Gox et chute du cours à 0,01 USD"
+    text: "Vers 18 h UTC, un pirate s'empare d'un compte administrateur de Mt. Gox, s'attribue des bitcoins fictifs et les vend : le cours passe de 17,50 USD à 0,01 USD en 30 minutes. Il retire environ 2 000 BTC, et la base des utilisateurs circule en ligne."
+    related: ["mtgox"]
+    sources:
+      - "https://web.archive.org/web/20110919162635/https://mtgox.com/press_release_20110630.html"
+      - "https://www.wired.com/2011/06/gox/"
+      - "https://www.theregister.com/2011/06/19/bitcoin_values_collapse_again/"
+      - "https://www.pcworld.com/article/486888/faked_bitcoins_caused_price_crash_exchange_reveals.html"
+
+  - date: "2011-06-20"
+    title: "L'EFF renonce aux dons en bitcoins"
+    text: "L'Electronic Frontier Foundation annonce qu'elle n'accepte plus les bitcoins. Elle invoque des questions juridiques non tranchées et la crainte que son acceptation passe pour une caution du projet, et reverse les bitcoins reçus au Bitcoin Faucet."
+    sources:
+      - "https://www.eff.org/deeplinks/2011/06/eff-and-bitcoin"
+      - "https://techliberation.com/2011/06/21/eff-gone-wobbly-on-bitcoin/"
+
+  - date: "2011-06-23"
+    title: "Mt. Gox déplace 424 242,42424242 BTC"
+    text: "Le bloc 132 749, horodaté à 6 h 50 UTC, contient une transaction qui envoie 424 242,42424242 BTC vers une seule adresse. Attribué à Mark Karpelès, ce mouvement sert à montrer que Mt. Gox contrôle toujours ces fonds après le piratage."
+    related: ["mtgox", "preuve-de-reserves"]
+    sources:
+      - "https://mempool.space/tx/3a1b9e330d32fef1ee42f8e86420d2be978bbe0dc5862f17da9027cf9e11f8c4"
+      - "https://blockstream.info/tx/3a1b9e330d32fef1ee42f8e86420d2be978bbe0dc5862f17da9027cf9e11f8c4"
+      - "https://www.infoworld.com/article/2192610/hackers-allegedly-hit-mt-gox-ceo-s-blog-post-balance-of-remaining-bitcoins.html"
+
+  - date: "2011-06-24"
+    title: "La difficulté dépasse 1 million"
+    text: "Au bloc 133 056, horodaté à 11 h 45 UTC, la difficulté passe de 876 954 à 1 379 192. Elle a été multipliée par plus de 80 depuis le début de l'année, où elle valait 16 307."
+    related: ["difficulte", "ajustement-de-la-difficulte"]
+    sources:
+      - "https://mempool.space/block/000000000000047846f0776c901542540d555b9861cee16e9788611a3aef333a"
+      - "https://blockstream.info/block/000000000000047846f0776c901542540d555b9861cee16e9788611a3aef333a"
+
+  - date: "2011-07-08"
+    title: "Sortie de Bitcoin 0.3.24"
+    text: "Bitcoin 0.3.24 corrige surtout le téléchargement des blocs, qui échouait ou traînait à cause de la taille croissante de la chaîne. La version active par défaut l'amorçage DNS et, dans l'interface graphique, l'UPnP. Le chiffrement du portefeuille, attendu, est repoussé à la version 0.4 au profit de ces correctifs urgents."
+    related: ["bitcoin-core", "dns-seeds"]
+    sources:
+      - "https://bitcoin.org/en/release/v0.3.24"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v0.3.24"
+      - "https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.3.24.md"
+
+  - date: "2011-07-26"
+    title: "Bitomat perd le portefeuille de ses clients"
+    text: "La plateforme polonaise Bitomat perd son fichier `wallet.dat` et ses sauvegardes : la machine virtuelle qui les hébergeait chez Amazon Web Services est effacée pendant un ajout de mémoire. Environ 17 000 BTC deviennent inaccessibles, et l'exploitant met la plateforme en vente pour couvrir la perte."
+    related: ["wallet-dat"]
+    sources:
+      - "https://siliconangle.com/2011/08/01/third-largest-bitcoin-exchange-bitomat-lost-their-wallet-over-17000-bitcoins-missing/"
+      - "https://bitcointalk.org/index.php?topic=33457.0"
+      - "https://en.bitcoin.it/wiki/Bitomat"
+
+  - date: "2011-07-29"
+    title: "MyBitcoin disparaît"
+    text: "MyBitcoin, l'un des plus anciens portefeuilles en ligne, devient inaccessible. Le site revient une semaine plus tard pour annoncer un piratage qui aurait emporté 51 % des bitcoins déposés, et propose aux clients de récupérer 49 % de leur solde. Personne ne sait qui l'exploite."
+    related: ["portefeuille"]
+    sources:
+      - "https://en.bitcoin.it/wiki/MyBitcoin"
+      - "https://nsarchive.gwu.edu/media/18902/ocr"
+
+  - date: "2011-08-19"
+    title: "Première conférence Bitcoin, à New York"
+    text: "Du 19 au 21 août, Bruce Wagner organise à New York la Bitcoin Conference and World Expo, première conférence consacrée à Bitcoin. Une cinquantaine de personnes qui ne se connaissaient que par les forums et Skype s'y retrouvent, dont des représentants de Mt. Gox et de Camp BX."
+    related: ["mtgox"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=6150.0"
+      - "https://spectrum.ieee.org/the-worlds-first-bitcoin-conference"
+      - "https://nsarchive.gwu.edu/media/18902/ocr"
+
+  - date: "2011-08-23"
+    title: "P2Pool trouve son premier bloc"
+    text: "P2Pool, le *pool* de minage décentralisé de Forrest Voight, trouve son premier bloc, le 142 312, horodaté à 23 h 20 UTC. Ses mineurs se partagent la récompense sans opérateur central, grâce à une chaîne de parts tenue entre pairs."
+    related: ["p2pool", "minage"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=61131.msg476766#msg476766"
+      - "https://mempool.space/block/000000000000046acff93b0e76cd10490551bf871ce9ac9fad62e67a07ff1d1e"
+      - "https://twitter.com/P2Pool/status/106193009938407424"
+
+  - date: "2011-09"
+    title: "Piratage du forum bitcointalk"
+    text: "Les administrateurs de bitcointalk découvrent qu'un pirate est entré dans le forum le 3 septembre par une injection SQL, après avoir acheté un compte de donateur, puis a pris le contrôle du compte administrateur de Satoshi. Les empreintes des mots de passe ont pu être copiées."
+    related: ["bitcointalk", "nakamoto-satoshi"]
+    sources:
+      - "https://www.techpartner.news/news/bitcoin-forum-hacked-by-donor-271770"
+      - "https://twitter.com/WeldPond/status/113099317283270656"
+
+  - date: "2011-09-06"
+    title: "Premiers bitcoins physiques de Casascius"
+    text: "Mike Caldwell (casascius) annonce sur bitcointalk ses bitcoins physiques : des pièces de laiton qui renferment la clé privée d'une adresse approvisionnée, cachée sous un hologramme. Le premier qui récupère la clé encaisse la valeur, et l'hologramme arraché le montre."
+    related: ["casascius"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=41892.0"
+      - "https://en.bitcoin.it/wiki/Casascius_coin"
+
+  - date: "2011-09-08"
+    title: "Lancement de Bitcoinica"
+    text: "Zhou Tong, 17 ans, lance Bitcoinica, une plateforme qui permet de spéculer avec effet de levier sur le cours BTC/USD, à la hausse comme à la baisse. Il l'annonce le même jour sur Hacker News et sur bitcointalk."
+    sources:
+      - "https://news.ycombinator.com/item?id=2973301"
+      - "https://bitcointalk.org/index.php?topic=42267.0"
+      - "https://en.bitcoin.it/wiki/Bitcoinica"
+      - "https://journalducoin.com/analyses-dossiers/affaire-bitcoinica-succes-chute-plateforme-trading-bitcoin"
+
+  - date: "2011-09-12"
+    title: "Annonce de MultiBit"
+    text: "Jim Burton annonce MultiBit, un portefeuille de bureau pour Windows, Mac et Linux, écrit en Java et open source. Il s'appuie sur la bibliothèque bitcoinj pour parler au réseau, ce qui en fait un client léger."
+    related: ["bitcoinj", "portefeuille", "noeud-spv-noeud-leger"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=43616.0"
+      - "https://en.bitcoin.it/wiki/MultiBit"
+
+  - date: "2011-09-19"
+    title: "Amir Taaki rédige BIP-0001"
+    text: "Amir Taaki crée sur le wiki Bitcoin la page BIP-0001, qui décrit le processus des propositions d'amélioration de Bitcoin (BIP). Il part du PEP 1 de Python. Le 18 octobre, Gavin Andresen propose sur la liste de diffusion d'en faire l'éditeur des BIP."
+    related: ["bip", "bip-0001"]
+    sources:
+      - "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
+      - "https://en.bitcoin.it/w/index.php?title=BIP_0001&dir=prev&action=history"
+      - "https://gnusha.org/pi/bitcoindev/CABsx9T0xjz2bO0PKX7VBka_j_MpGky9scHhkyM=b9MbtPAwx=A@mail.gmail.com/"
+
+  - date: "2011-09-23"
+    title: "Bitcoin 0.4.0 chiffre le portefeuille"
+    text: "Bitcoin 0.4.0 chiffre les clés privées du portefeuille : une phrase de passe est demandée avant chaque envoi. L'annonce de Gavin Andresen demande, en capitales, de la noter en lieu sûr : la perdre revient à perdre ses bitcoins. Les versions précédentes ne savent pas lire un portefeuille chiffré."
+    related: ["bitcoin-core", "chiffrer-chiffrement", "wallet-dat"]
+    sources:
+      - "https://bitcoin.org/en/release/v0.4.0"
+      - "https://bitcointalk.org/index.php?topic=45410.msg541446#msg541446"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/text/2011-09-23-154140.txt"
+
+  - date: "2011-09-26"
+    title: "Bitcoin-Qt entre dans le dépôt principal"
+    text: "Gavin Andresen fusionne dans la branche principale de Bitcoin l'interface graphique Qt de Wladimir van der Laan (*pull request* n° 521). Elle deviendra l'interface de la version 0.5.0."
+    related: ["bitcoin-qt", "bitcoin-core"]
+    sources:
+      - "https://github.com/bitcoin/bitcoin/pull/521"
+      - "https://bitcointalk.org/index.php?topic=45742.msg545547#msg545547"
+
+  - date: "2011-10-03"
+    title: "The New Yorker cherche Satoshi Nakamoto"
+    text: "Dans « The Crypto-Currency », Joshua Davis cherche Satoshi Nakamoto parmi les participants de la conférence Crypto 2011. Il retient Michael Clear, étudiant en cryptographie à Dublin, qui lui répond : « I'm not Satoshi, but even if I was I wouldn't tell you ». Clear dément ensuite."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://www.newyorker.com/magazine/2011/10/10/the-crypto-currency"
+      - "https://www.npr.org/sections/money/2011/10/03/141011155/did-a-reporter-just-solve-the-bitcoin-mystery"
+      - "https://web.archive.org/web/2011/http://www.fastcompany.com/1785445/bitcoin-crypto-currency-mystery-reopened"
+
+  - date: "2011-10-11"
+    title: "Fast Company avance trois autres noms"
+    text: "Dans Fast Company, Adam Penenberg conteste la piste de The New Yorker. Une expression du livre blanc le mène à une demande de brevet déposée le 15 août 2008, trois jours avant l'enregistrement de bitcoin.org, par Neal King, Vladimir Oksman et Charles Bry. King et Bry nient tout lien."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://web.archive.org/web/2011/http://www.fastcompany.com/1785445/bitcoin-crypto-currency-mystery-reopened"
+      - "https://web.archive.org/web/2019/https://breakermag.com/desperately-seeking-satoshi/"
+
+  - date: "2011-10-13"
+    title: "Lancement du réseau Litecoin"
+    text: "Vers 3 h UTC, Charlie Lee publie le *hash* du bloc genèse de Litecoin et le minage commence. Présenté comme l'argent face à l'or de Bitcoin, Litecoin reprend la preuve de travail scrypt de Tenebrix et produit ses blocs 4 fois plus vite."
+    related: ["litecoin", "altcoin"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=47417.0"
+      - "https://litecoinspace.org/block/dec173dda2735ff11376b68bdfda804cede230c1fa6f1a11765cddfd8edf4398"
+
+  - date: "2011-10-18"
+    title: "Gavin Andresen rédige BIP-0011, BIP-0012 et BIP-0013"
+    text: "Gavin Andresen rédige trois propositions pour les transactions multisignatures : BIP-0011 rend standard les transactions M-de-N, BIP-0012 crée l'opcode `OP_EVAL` et BIP-0013 définit un format d'adresse pour payer vers le *hash* d'un script."
+    related: ["bip-0011", "bip-0012", "bip-0013", "op-eval", "multisig"]
+    sources:
+      - "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0012.mediawiki"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki"
+      - "https://en.bitcoin.it/w/index.php?title=BIP_0011&dir=prev&action=history"
+      - "https://en.bitcoin.it/w/index.php?title=BIP_0012&dir=prev&action=history"
+
+  - date: "2011-10-28"
+    title: "Mt. Gox détruit 2 609 BTC"
+    text: "Le bloc 150 951 contient 23 sorties de Mt. Gox dont le script `76a90088ac` ne pourra jamais être dépensé : à la place du *hash* de 20 octets de l'adresse, le logiciel de la plateforme a poussé une valeur vide. 2 609,36 BTC sont perdus."
+    related: ["mtgox", "scriptpubkey"]
+    sources:
+      - "https://mempool.space/block/0000000000000449ee5b94ba7a051caffff5c23d6a03335f6e20e3985b5ffa61"
+      - "https://blockstream.info/block/0000000000000449ee5b94ba7a051caffff5c23d6a03335f6e20e3985b5ffa61"
+      - "https://www.righto.com/2014/03/the-programming-error-that-cost-mt-gox.html"
+      - "https://news.bitcoin.com/bitcoin-history-part-17-that-time-mt-gox-destroyed-2609-btc/"
+
+  - date: "2011-11-05"
+    title: "Annonce d'Electrum"
+    text: "Thomas Voegtlin (ThomasV) annonce sur bitcointalk Electrum, un client léger qui s'appuie sur des serveurs au lieu de télécharger la chaîne de blocs. Le premier *commit* du projet date de la veille."
+    related: ["electrum", "portefeuille"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=50936.0"
+      - "https://github.com/spesmilo/electrum/commit/6db1a31e58ee15c448448139e7d3a9e72b14268f"
+
+  - date: "2011-11-10"
+    title: "Amir Taaki rédige BIP-0014"
+    text: "Amir Taaki rédige BIP-0014, qui sépare le numéro de version du protocole de celui du logiciel. La proposition ajoute une chaîne *user agent*, sur le modèle des navigateurs web, pour que chaque client s'identifie sur le réseau, par exemple `/Satoshi:5.64/bitcoin-qt:0.4/`."
+    related: ["bip"]
+    sources:
+      - "https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki"
+      - "https://en.bitcoin.it/w/index.php?title=BIP_0014&dir=prev&action=history"
+
+  - date: "2011-11-11"
+    title: "Faille dans le chiffrement du portefeuille"
+    text: "Gavin Andresen révèle un bug grave dans le chiffrement du portefeuille des versions 0.4 et 0.5 : des clés privées peuvent rester en clair dans `wallet.dat`. Référencée CVE-2011-4447, la faille est corrigée dans la version 0.5.0, qui réécrit les portefeuilles déjà chiffrés."
+    related: ["wallet-dat", "chiffrer-chiffrement", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=51604.msg615237#msg615237"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/text/2011-11-11-215720.txt"
+      - "https://bitcoin.org/en/release/v0.5.0"
+
+  - date: "2011-11-21"
+    title: "Sortie de Bitcoin 0.5.0 avec Bitcoin-Qt"
+    text: "Bitcoin 0.5.0 remplace l'ancienne interface par Bitcoin-Qt, une interface graphique entièrement nouvelle fondée sur la bibliothèque Qt et traduite notamment en allemand, en espagnol et en néerlandais. Le démon `bitcoind` reste livré à côté."
+    related: ["bitcoin-qt", "bitcoin-core"]
+    sources:
+      - "https://bitcoin.org/en/release/v0.5.0"
+      - "https://bitcointalk.org/index.php?topic=52480.0"
+
+  - date: "2011-11-23"
+    title: "Wired publie « The Rise and Fall of Bitcoin »"
+    text: "Benjamin Wallace raconte dans Wired la bulle de 2011 : la flambée qui suit l'article de Gawker sur la drogue achetée en bitcoins, puis le piratage de Mt. Gox, la perte de Bitomat et la disparition de MyBitcoin, jusqu'au désenchantement de la communauté."
+    related: ["mtgox", "silk-road"]
+    sources:
+      - "https://www.wired.com/2011/11/mf-bitcoin/"
+      - "https://web.archive.org/web/20111124022726/http://www.wired.com/magazine/2011/11/mf_bitcoin/all/1"
+      - "https://pxlnv.com/linklog/the-rise-and-fall-of-bitcoin/"
+
+  - date: "2011-11-25"
+    title: "Première conférence Bitcoin européenne, à Prague"
+    text: "Du 25 au 27 novembre, Prague accueille la première conférence Bitcoin d'Europe, organisée par Mitchell Bourne avec l'aide de la Bitcoin Consultancy. Parmi les orateurs figurent Amir Taaki, Stefan Thomas, Rick Falkvinge, fondateur du Parti pirate, Max Keiser et David Birch."
+    sources:
+      - "https://en.bitcoin.it/wiki/Conferences"
+      - "https://bitcoinmagazine.com/industry-events/the-london-2012-bitcoin-conference-1343146418"
+      - "https://bitcoinmagazine.com/industry-events/annual-bitcoin-conference-takes-place-in-london-1348247615"
+      - "https://twitter.com/stacyherbert/status/140490389147754496"
+
+  - date: "2011-12-20"
+    title: "OP_EVAL entre dans la branche principale"
+    text: "Gavin Andresen fusionne `OP_EVAL` (BIP-0012) et les adresses associées dans la branche principale de Bitcoin, en vue de la version 0.6. L'opcode doit rester sans effet jusqu'au 1er février 2012, et le soutien des mineurs doit être évalué le 15 janvier."
+    related: ["op-eval", "bip-0012"]
+    sources:
+      - "https://github.com/bitcoin/bitcoin/commit/595925592d36fb5d5d34beea3c3e71fca2b6726e"
+      - "https://bitcointalk.org/index.php?topic=50707.msg659791#msg659791"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/text/2011-12-23-035406.txt"
+
+  - date: "2011-12-29"
+    title: "Russell O'Connor propose une alternative à OP_EVAL"
+    text: "À la demande de Gavin Andresen, Russell O'Connor propose sur la liste bitcoin-development un opcode `OP_CODEHASH` pour remplacer `OP_EVAL`. Le 4 janvier 2012, Gavin Andresen remplace `OP_EVAL` par Pay to Script Hash (BIP-0016) dans le code."
+    related: ["op-eval", "p2sh", "bip-0016"]
+    sources:
+      - "https://gnusha.org/pi/bitcoindev/alpine.LRH.2.00.1112290111310.22327@theorem.ca/"
+      - "https://mirror.b10c.me/lists/bitcoindev/alpine.LRH.2.00.1112290111310.22327@theorem.ca/raw"
+      - "https://github.com/bitcoin/bitcoin/commit/922e8e2929a2e78270868385aa46f96002fbcff3"

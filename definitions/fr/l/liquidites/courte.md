@@ -1,0 +1,1 @@
+Capacité d'un canal Lightning à faire passer des paiements, selon les bitcoins disponibles de chaque côté. La liquidité sortante est ce que le nœud peut envoyer, la liquidité entrante ce qu'il peut recevoir.

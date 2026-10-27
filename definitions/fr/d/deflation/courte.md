@@ -1,0 +1,1 @@
+Baisse générale et durable du niveau des prix, qui augmente le pouvoir d'achat de la monnaie. Bitcoin est souvent dit déflationniste, mais il est plutôt désinflationniste : son émission diminue et converge vers zéro.

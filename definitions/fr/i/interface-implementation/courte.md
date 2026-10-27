@@ -1,0 +1,1 @@
+Ensemble de déclarations du protocole RGB qui établit la correspondance entre une *Interface* et un *Schema*. Elle sert à traduire les données binaires d'un contrat pour que l'utilisateur et les *wallets* les interprètent correctement.

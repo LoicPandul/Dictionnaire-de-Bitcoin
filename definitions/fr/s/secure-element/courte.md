@@ -1,0 +1,1 @@
+Puce électronique résistante aux attaques physiques, qui stocke des données sensibles et exécute des opérations cryptographiques dans un environnement isolé. Dans un *hardware wallet*, elle génère et garde la clé privée, et signe sans jamais l'exposer.

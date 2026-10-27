@@ -1,0 +1,1 @@
+Optimisation du minage, inventée en 2016, qui réutilise une partie des calculs `SHA256` d'une tentative de hachage de l'entête à la suivante, pour gagner environ 20 % d'efficacité. Elle existe en forme visible (*overt*) et en forme cachée (*covert*).

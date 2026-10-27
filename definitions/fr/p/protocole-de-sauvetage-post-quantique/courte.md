@@ -1,0 +1,1 @@
+Règle de consensus qui laisserait le vrai propriétaire de certaines sorties vulnérables les dépenser en prouvant une connaissance qu'un attaquant quantique n'a pas. BIP-0361 la prévoit pour sa phase B sans décrire de protocole précis.

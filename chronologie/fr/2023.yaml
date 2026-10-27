@@ -1,0 +1,288 @@
+# Chronologie de Bitcoin : 2023.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2023-01-09"
+    title: "James O'Beirne propose OP_VAULT"
+    text: "James O'Beirne publie sur la liste bitcoin-dev un projet de soft fork qui ajoute deux opcodes, `OP_VAULT` et `OP_UNVAULT`, pour construire des coffres-forts (*vaults*). Tout retrait passe par un délai pendant lequel un chemin de dépense plus sûr, choisi à la création du coffre, peut récupérer les fonds."
+    related: ["op-vault-0xbb", "vault", "covenant", "bip-0345"]
+    sources:
+      - "https://mirror.b10c.me/lists/bitcoindev/CAPfvXfL65cneOabmxfOzTZq14xN4vXNaGboq_g15-frM14RqGA@mail.gmail.com"
+      - "https://bitcoinops.org/en/newsletters/2023/01/18/"
+
+  - date: "2023-01-19"
+    title: "Faillite de Genesis Global Capital"
+    text: "Le prêteur crypto Genesis Global Holdco et deux filiales, dont Genesis Global Capital, se placent sous la protection du chapitre 11 à New York. Fragilisé par les chutes de Three Arrows Capital et de FTX, il doit environ 3,4 milliards de dollars à ses 50 premiers créanciers non garantis."
+    sources:
+      - "https://news.bloomberglaw.com/crypto/crypto-lender-genesis-files-for-bankruptcy-as-crisis-spreads-2"
+      - "https://www.fox5vegas.com/2023/01/20/crypto-lender-genesis-files-chapter-11-bankruptcy"
+
+  - date: "2023-01-20"
+    title: "Les inscriptions Ordinals arrivent sur le réseau principal"
+    text: "Casey Rodarmor publie ord 0.4.0 et annonce que les inscriptions sont prêtes pour le réseau principal. Le protocole Ordinals numérote les satoshis et permet d'y attacher un contenu (image, texte) placé dans le témoin d'une transaction Taproot. En quelques semaines, les inscriptions remplissent les blocs."
+    related: ["ordinals-theory", "inscriptions", "ordinal-number", "taproot"]
+    sources:
+      - "https://rodarmor.com/blog/how-ordinals-came-to-be/"
+      - "https://github.com/ordinals/ord/releases/tag/0.4.0"
+
+  - date: "2023-01-31"
+    title: "Damus arrive sur l'App Store"
+    text: "Après plusieurs refus, Apple accepte sur l'App Store Damus, client iOS du réseau social décentralisé Nostr. Jack Dorsey, qui avait donné l'année précédente environ 14 BTC pour financer le développement de Nostr, salue l'arrivée de l'application."
+    related: ["nostr"]
+    sources:
+      - "https://techcrunch.com/2023/02/01/damus-another-decentralized-social-networking-app-arrives-to-take-on-twitter/"
+      - "https://www.theblock.co/post/207448/nostr-based-decentralized-twitter-alternative-damus-goes-live-on-apple-app-store"
+
+  - date: "2023-02-01"
+    title: "Bloc 774 628, le plus gros de l'histoire"
+    text: "La pool Luxor mine le bloc 774 628, d'environ 3,96 Mo pour seulement 63 transactions, le plus gros bloc jamais produit sur Bitcoin. Il contient une inscription de 3,94 Mo : l'image d'un sorcier du projet Taproot Wizards."
+    related: ["luxor", "inscriptions", "max-bloc-size"]
+    sources:
+      - "https://mempool.space/block/0000000000000000000515e202c8ae73c8155fc472422d7593af87aa74f2cf3d"
+      - "https://news.bitcoin.com/bitcoin-records-largest-mined-block-to-date-4-mb-block-containing-nft-causes-unease-among-small-block-supporters/"
+
+  - date: "2023-03-08"
+    title: "domo lance le standard BRC-20"
+    text: "Le développeur pseudonyme domo inscrit au bloc 779 832 le déploiement du jeton « ordi » (21 millions d'unités, 1 000 par émission) et lance le standard expérimental BRC-20. Des inscriptions JSON déploient, émettent et transfèrent des jetons dont les soldes sont calculés hors chaîne par des indexeurs."
+    related: ["brc-20", "inscriptions"]
+    sources:
+      - "https://mempool.space/tx/b61b0172d95e266c18aea0c624db987e971a5d6d4ebc2aaed85da4642d635735"
+      - "https://decrypt.co/es/123153/tokens-meme-brc20-bitcoin/"
+      - "https://domo-2.gitbook.io/brc-20-experiment/"
+
+  - date: "2023-03-08"
+    title: "Silvergate liquide sa banque"
+    text: "Silvergate Capital annonce la fermeture progressive et la liquidation volontaire de Silvergate Bank, banque californienne tournée vers les entreprises crypto, avec remboursement intégral des dépôts. La banque avait déjà arrêté son réseau de paiement SEN quelques jours plus tôt."
+    sources:
+      - "https://www.businesswire.com/news/home/20230308005795/en/Silvergate-Capital-Corporation-Announces-Intent-to-Wind-Down-Operations-and-Voluntarily-Liquidate-Silvergate-Bank"
+      - "https://americanbanker.com/news/silvergate-bank-say-its-self-liquidating-winding-down-operations"
+
+  - date: "2023-03-12"
+    title: "Fermeture de Signature Bank"
+    text: "Le régulateur bancaire de New York ferme Signature Bank et confie ses dépôts à la FDIC, troisième fermeture de banque américaine en une semaine. Proche des entreprises crypto, Signature exploitait le réseau de paiement Signet ; le régulateur affirme que sa décision n'a rien à voir avec les cryptos."
+    sources:
+      - "https://www.fdic.gov/news/press-releases/2023/pr23018.html"
+      - "https://decrypt.co/123494/why-signature-bank-really-shut-down"
+
+  - date: "2023-03-15"
+    title: "Démantèlement du mélangeur ChipMixer"
+    text: "Les polices américaine et allemande ferment ChipMixer, un mélangeur de bitcoins accusé d'avoir blanchi plus de 3 milliards de dollars depuis 2017. L'Allemagne saisit ses serveurs et plus de 46 millions de dollars en cryptomonnaies, et son opérateur présumé, un Vietnamien, est inculpé à Philadelphie."
+    related: ["melangeur"]
+    sources:
+      - "https://www.justice.gov/usao-edpa/pr/justice-department-investigation-leads-takedown-darknet-cryptocurrency-mixer-processed"
+      - "https://cyberscoop.com/police-shut-down-cryptocurrency-mixer-chipmixer/"
+
+  - date: "2023-03-27"
+    title: "La CFTC poursuit Binance"
+    text: "La CFTC poursuit Binance et son fondateur Changpeng Zhao devant un tribunal fédéral de l'Illinois. Elle les accuse d'avoir proposé des produits dérivés sur cryptomonnaies à des clients américains sans enregistrement, en contournant sciemment la loi."
+    sources:
+      - "https://www.cftc.gov/PressRoom/PressReleases/8680-23"
+      - "https://www.malaymail.com/news/money/2023/03/28/crypto-giant-binance-hit-with-us-charges-for-breaking-trade-rules/61841"
+
+  - date: "2023-04-05"
+    title: "Le livre blanc de Bitcoin caché dans macOS"
+    text: "En voulant réparer son imprimante, Andy Baio découvre qu'une copie PDF du livre blanc de Satoshi Nakamoto, nommée `simpledoc.pdf`, est livrée avec chaque version de macOS depuis Mojave (2018). Le fichier sert de document d'exemple à un scanner virtuel du système."
+    related: ["white-paper", "nakamoto-satoshi"]
+    sources:
+      - "https://waxy.org/2023/04/the-bitcoin-whitepaper-is-hidden-in-every-modern-copy-of-macos/"
+      - "https://decrypt.co/125612/apples-hidden-bitcoin-whitepaper-the-latest-in-a-long-list-of-easter-eggs"
+
+  - date: "2023-05-07"
+    title: "Congestion BRC-20, Binance suspend les retraits"
+    text: "Porté par les jetons BRC-20, le mempool dépasse 488 000 transactions en attente et les frais grimpent. Binance suspend deux fois dans la journée les retraits de bitcoins en invoquant la congestion du réseau."
+    related: ["brc-20", "mempool", "frais-de-transaction"]
+    sources:
+      - "https://unchainedcrypto.com/binance-briefly-halted-bitcoin-withdrawals-amid-network-congestion/"
+      - "https://dlnews.com/articles/defi/binance-halts-bitcoin-withdrawals-due-to-ordinals-congestion"
+
+  - date: "2023-05-16"
+    title: "Polémique Ledger Recover"
+    text: "Ledger annonce Ledger Recover, un abonnement optionnel à 9,99 dollars par mois qui découpe la phrase de récupération en trois fragments chiffrés confiés à Ledger, Coincover et EscrowTech, avec vérification d'identité. Les critiques visent ces dépositaires et un firmware capable de faire sortir la phrase de l'appareil."
+    related: ["ledger", "phrase-de-recuperation"]
+    sources:
+      - "https://forklog.com/en/news/ledger-to-add-seed-phrase-recovery-option-to-nano-x"
+      - "https://decrypt.co/140692/so-much-anger-so-much-hate-says-ledger-co-founder-amid-botched-recover-service-launch"
+
+  - date: "2023-05-22"
+    title: "Burak Keceli propose Ark"
+    text: "Burak Keceli présente Ark sur la liste bitcoin-dev : un protocole de seconde couche où un opérateur, l'Ark Service Provider, coordonne toutes les cinq secondes des transactions partagées. Les utilisateurs y détiennent des sorties virtuelles (vTXO) qui expirent après quatre semaines, sans liquidité entrante à gérer."
+    related: ["ark", "vtxo", "asp-ark-service-provider", "joinpool"]
+    sources:
+      - "https://mirror.b10c.me/lists/bitcoindev/1300890009.1516890.1684742043892@eu1.myprofessionalmail.com"
+      - "https://bitcoinops.org/en/newsletters/2023/05/31/"
+
+  - date: "2023-05-26"
+    title: "Sortie de Bitcoin Core 25.0"
+    text: "Bitcoin Core 25.0 ajoute la commande RPC `scanblocks`, permet aux portefeuilles à descripteurs de dépenser des scripts Miniscript en P2WSH et relaie désormais les transactions d'au moins 65 octets hors témoin."
+    related: ["bitcoin-core", "miniscript"]
+    sources:
+      - "https://bitcoincore.org/en/2023/05/26/release-25.0/"
+      - "https://mirror.b10c.me/lists/bitcoindev/CAFyhPjUcqrVawv7ToSikOXyMVYGhQKTBu-ZZHxnZL9ELRK6qDw@mail.gmail.com/"
+      - "https://bitcoinmagazine.com/technical/bitcoin-core-version-25-0-released"
+
+  - date: "2023-06-05"
+    title: "La SEC poursuit Binance"
+    text: "La SEC retient 13 chefs d'accusation contre Binance, sa filiale américaine BAM Trading et Changpeng Zhao. Elle leur reproche notamment d'avoir exploité des plateformes d'échange non enregistrées et d'avoir trompé le public sur les contrôles de Binance.US."
+    sources:
+      - "https://www.sec.gov/news/press-release/2023-101"
+      - "https://www.npr.org/2023/06/05/1180132574/sec-ftx-binance-cz-changpeng-zhao-crypto-exchanges"
+
+  - date: "2023-06-06"
+    title: "La SEC poursuit Coinbase"
+    text: "La SEC attaque Coinbase, qu'elle accuse d'opérer depuis au moins 2019 comme bourse, courtier et chambre de compensation de titres sans enregistrement, et de vendre sans autorisation son service de *staking*."
+    sources:
+      - "https://www.sec.gov/news/press-release/2023-102"
+      - "https://fortune.com/2023/06/07/coinbase-ceo-brian-armstrong-sec-lawsuit"
+
+  - date: "2023-06-09"
+    title: "Inculpation des pirates présumés de Mt. Gox"
+    text: "La justice américaine inculpe deux Russes, Alexey Bilyuchenko et Aleksandr Verner, accusés d'avoir piraté Mt. Gox à partir de 2011 et blanchi environ 647 000 bitcoins volés à la plateforme. Bilyuchenko est aussi poursuivi pour avoir exploité la plateforme BTC-e."
+    related: ["mtgox"]
+    sources:
+      - "https://www.justice.gov/opa/pr/russian-nationals-charged-hacking-one-cryptocurrency-exchange-and-illicitly-operating-another"
+      - "https://techcrunch.com/2023/06/09/us-doj-charges-two-russians-for-hacking-crypto-exchange-mt-gox"
+
+  - date: "2023-06-15"
+    title: "BlackRock dépose un ETF bitcoin au comptant"
+    text: "BlackRock dépose auprès de la SEC le dossier d'enregistrement de l'iShares Bitcoin Trust, un fonds coté qui détiendra des bitcoins conservés par Coinbase Custody."
+    related: ["etf"]
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1980994/000143774923017574/bit20230608_s1.htm"
+      - "https://www.theblock.co/post/235056/blackrock-takes-giant-leap-toward-spot-bitcoin-etf-with-sec-filing"
+
+  - date: "2023-06-29"
+    title: "Entrée en vigueur de MiCA"
+    text: "Le règlement européen MiCA sur les marchés de crypto-actifs, publié au Journal officiel le 9 juin, entre en vigueur. Ses règles sur les stablecoins s'appliquent à partir du 30 juin 2024, le reste, dont l'agrément des prestataires, à partir du 30 décembre 2024."
+    related: ["stablecoin"]
+    sources:
+      - "https://www.amf-france.org/en/news-publications/news/markets-crypto-assets-publication-mica-regulation"
+      - "https://mondaq.co.uk/fin-tech/1328730/eu-landmark-crypto-law-mica-published-in-the-official-journal-regulation-of-crypto-assets-service-providers-to-commence-from-30-december-2024"
+
+  - date: "2023-07-11"
+    title: "Phoenix passe au splicing"
+    text: "ACINQ présente la troisième génération de son portefeuille Lightning Phoenix, construite sur le *splicing* : chaque utilisateur n'a plus qu'un seul canal, que l'on agrandit ou réduit au besoin. Les frais de 1 % sur les fonds reçus laissent place aux seuls frais de minage."
+    related: ["phoenix", "splicing", "acinq"]
+    sources:
+      - "https://acinq.co/blog/phoenix-splicing-update"
+      - "https://www.theblock.co/post/239098/phoenix-wallet-lightning"
+
+  - date: "2023-07-13"
+    title: "Arrestation d'Alex Mashinsky"
+    text: "Alex Mashinsky, fondateur du prêteur crypto Celsius, en faillite, est arrêté et inculpé de sept chefs, dont fraude sur titres et fraude électronique. Le même jour, Celsius accepte un accord de 4,7 milliards de dollars avec la FTC."
+    sources:
+      - "https://www.cnbc.com/2023/07/13/former-celsius-ceo-arrested-company-agrees-to-pay-4point7-billion-settlement.html"
+      - "https://www.wired.com/story/celsius-founder-alex-mashinsky-arrest-crypto-hero-worship/"
+
+  - date: "2023-08-03"
+    title: "Les pirates de Bitfinex plaident coupable"
+    text: "Ilya Lichtenstein et Heather Morgan plaident coupable de blanchiment dans l'affaire du piratage de Bitfinex de 2016. Lichtenstein reconnaît avoir autorisé plus de 2 000 transactions frauduleuses qui ont envoyé 119 754 BTC de la plateforme vers son portefeuille."
+    sources:
+      - "https://www.justice.gov/usao-dc/pr/husband-and-wife-plead-guilty-money-laundering-conspiracy-involving-hack-and-theft"
+      - "https://www.theregister.com/2023/08/04/couple_bitfinex_hack_guilty/"
+
+  - date: "2023-08-08"
+    title: "Divulgation de la faille Milk Sad"
+    text: "Des chercheurs révèlent que la commande `bx seed` de Libbitcoin Explorer 3.x ne produit qu'environ 4 milliards de graines possibles, qu'un ordinateur ordinaire parcourt en une journée. Un attaquant a déjà vidé de nombreux portefeuilles, dont environ 29,65 BTC le 12 juillet."
+    related: ["libbitcoin", "entropie", "bip-0039"]
+    sources:
+      - "https://milksad.info/disclosure.html"
+      - "https://bitcoinops.org/en/newsletters/2023/08/09/"
+
+  - date: "2023-08-15"
+    title: "Premier ETF bitcoin au comptant en Europe"
+    text: "Jacobi Asset Management fait coter sur Euronext Amsterdam le Jacobi FT Wilshire Bitcoin ETF, présenté comme le premier ETF bitcoin au comptant d'Europe, plus d'un an après la date de lancement prévue."
+    related: ["etf"]
+    sources:
+      - "https://cointelegraph.com/news/europe-first-bitcoin-etf-hits-euronext-amsterdam-exchange"
+      - "https://bitcoinmagazine.com/markets/europes-first-spot-bitcoin-etf-now-listed-on-euronext-amsterdam"
+
+  - date: "2023-08-29"
+    title: "Grayscale gagne en appel contre la SEC"
+    text: "La cour d'appel fédérale du district de Columbia juge « arbitraire et capricieux » le refus de la SEC de convertir le Grayscale Bitcoin Trust en ETF, alors qu'elle a autorisé des ETF sur contrats à terme. La décision n'oblige pas pour autant la SEC à approuver le fonds."
+    related: ["etf"]
+    sources:
+      - "https://fortune.com/crypto/2023/08/29/court-sides-with-grayscale-in-closely-watched-bitcoin-etf-case"
+      - "https://web.archive.org/web/20230906141544/https://www.reuters.com/business/finance/whats-stake-grayscales-spot-bitcoin-etf-case-against-sec-2023-08-29/"
+
+  - date: "2023-10-03"
+    title: "LND 0.17 et les canaux Taproot"
+    text: "Lightning Labs publie LND v0.17.0-beta, qui introduit à titre expérimental les *simple taproot channels* : des canaux non annoncés financés par une sortie P2TR, premier pas vers Taproot Assets et les PTLC dans LND."
+    related: ["lnd", "taproot-channel", "lightning-labs"]
+    sources:
+      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.17.0-beta"
+      - "https://bitcoinops.org/en/newsletters/2023/10/04/"
+
+  - date: "2023-10-09"
+    title: "Robin Linus publie BitVM"
+    text: "Robin Linus présente BitVM sur la liste bitcoin-dev, une méthode pour conditionner un paiement en bitcoins à l'exécution correcte d'un programme quelconque, sans modifier le consensus. Le calcul se fait hors chaîne et la chaîne ne sert qu'à trancher un litige, sur le modèle des *optimistic rollups*."
+    related: ["bitvm"]
+    sources:
+      - "https://mirror.b10c.me/lists/bitcoindev/CCA561B6-A2DE-46FD-A2F8-98E0C34A3EEE@zerosync.org/"
+      - "https://bitcoinops.org/en/newsletters/2023/10/18/"
+
+  - date: "2023-10-16"
+    title: "Divulgation de l'attaque par replacement cycling"
+    text: "Antoine Riard divulgue l'attaque par *replacement cycling*, qui permet de voler des fonds dans les HTLC des nœuds Lightning qui routent des paiements. Les principales implémentations ont déjà déployé des parades ; le 20 octobre, Riard annonce se retirer du développement de Lightning."
+    related: ["replacement-cycling", "htlc", "rbf-replace-by-fee", "lightning-network"]
+    sources:
+      - "https://mirror.b10c.me/lists/bitcoindev/CALZpt+GdyfDotdhrrVkjTALg5DbxJyiS8ruO2S7Ggmi9Ra5B9g@mail.gmail.com/"
+      - "https://bitcoinops.org/en/newsletters/2023/10/25/"
+      - "https://mirror.b10c.me/lists/bitcoindev/CALZpt+G-eLLShrJckLG1UMDQ9tMGzqP1pBsUpEZ+82e9wHZGYw@mail.gmail.com"
+
+  - date: "2023-10-18"
+    title: "Taproot Assets sur le réseau principal"
+    text: "Lightning Labs publie la version alpha pour le réseau principal de Taproot Assets (v0.3), un protocole pour émettre et gérer des actifs, dont des stablecoins, sur la chaîne Bitcoin. L'équipe vise ensuite leur circulation sur Lightning."
+    related: ["taproot-assets-protocol", "lightning-labs", "stablecoin"]
+    sources:
+      - "https://lightning.engineering/posts/2023-10-18-taproot-assets-v0.3/"
+      - "https://bitcoinmagazine.com/technical/lightning-labs-rolls-out-taproot-assets-mainnet-alpha"
+
+  - date: "2023-10-19"
+    title: "Le FinCEN vise les mélangeurs"
+    text: "Le FinCEN, cellule antiblanchiment du Trésor américain, propose de classer le mélange international de cryptomonnaies parmi les catégories de transactions qui présentent un risque majeur de blanchiment. Les institutions financières devraient alors déclarer toute transaction qu'elles soupçonnent d'y être liée."
+    related: ["melangeur", "coinjoin"]
+    sources:
+      - "https://www.fincen.gov/news/news-releases/fincen-proposes-new-regulation-enhance-transparency-convertible-virtual-currency"
+      - "https://www.federalregister.gov/documents/2023/10/23/2023-23449/proposal-of-special-measure-regarding-convertible-virtual-currency-mixing-as-a-class-of-transactions"
+
+  - date: "2023-11-02"
+    title: "Sam Bankman-Fried reconnu coupable"
+    text: "Un jury fédéral de Manhattan déclare Sam Bankman-Fried, cofondateur de FTX, coupable des sept chefs d'accusation retenus contre lui, de la fraude électronique au blanchiment, un an après la faillite de la plateforme."
+    sources:
+      - "https://www.cnbc.com/2023/11/02/sam-bankman-fried-found-guilty-on-all-seven-criminal-fraud-counts.html"
+      - "https://finance.yahoo.com/news/sam-bankman-fried-found-guilty-of-defrauding-ftx-customers-investors-and-lenders-001855503.html"
+
+  - date: "2023-11-21"
+    title: "Binance plaide coupable, Changpeng Zhao démissionne"
+    text: "Binance plaide coupable de violations des lois américaines contre le blanchiment et sur les sanctions, et accepte de payer 4,3 milliards de dollars. Changpeng Zhao plaide coupable à titre personnel et quitte la direction de la plateforme."
+    related: ["kyc-know-your-customer"]
+    sources:
+      - "https://www.justice.gov/opa/pr/binance-and-ceo-plead-guilty-federal-charges-4b-resolution"
+      - "https://home.treasury.gov/news/press-releases/jy1925"
+      - "https://www.cnbc.com/2023/11/22/whats-next-for-binance-after-doj-settlement-departure-of-changpeng-zhao.html"
+
+  - date: "2023-11-29"
+    title: "Luke Dashjr lance la pool OCEAN"
+    text: "Luke Dashjr relance son ancienne pool Eligius sous le nom d'OCEAN, une pool sans garde dont les mineurs reçoivent leur part directement dans la récompense de chaque bloc. Sa société Mummolin lève plus de 6 millions de dollars dans un tour mené par Jack Dorsey."
+    related: ["ocean", "mining-pool", "coinbase"]
+    sources:
+      - "https://www.coindesk.com/business/2023/11/29/jack-dorsey-aims-to-create-anti-censorship-bitcoin-mining-pool-with-new-startup/"
+      - "https://cryptoslate.com/decentralized-bitcoin-mining-pool-ocean-raises-over-6m-in-seed-funding/"
+
+  - date: "2023-12-06"
+    title: "Sortie de Bitcoin Core 26.0"
+    text: "Bitcoin Core 26.0 propose en option le transport P2P chiffré v2 (BIP-0324), activable avec `-v2transport`. La version accepte aussi Miniscript dans les descripteurs Taproot et ajoute la commande `loadtxoutset` pour charger un instantané assumeUTXO."
+    related: ["bitcoin-core", "bip-0324", "p2p-transport-v2", "assume-utxo"]
+    sources:
+      - "https://bitcoincore.org/en/releases/26.0/"
+      - "https://mirror.b10c.me/lists/bitcoindev/CAFyhPjU81Mvv37_moGohBza5gG9Kx9vTTS4O2yV95KdrQtVoEA@mail.gmail.com/"
+
+  - date: "2023-12-09"
+    title: "Publication de la CVE-2023-50428"
+    text: "La base NVD publie la CVE-2023-50428 : Bitcoin Core jusqu'à 26.0 laisse contourner les limites de données `datacarrier` en déguisant des données en code (`OP_FALSE OP_IF`), comme le font les inscriptions. La fiche précise que Bitcoin Knots y voit une faille, d'autres « pas un bug »."
+    related: ["inscriptions", "bitcoin-knots", "op-return-0x6a"]
+    sources:
+      - "https://nvd.nist.gov/vuln/detail/CVE-2023-50428"
+      - "https://cveawg.mitre.org/api/cve/CVE-2023-50428"
+      - "https://github.com/bitcoin/bitcoin/pull/28408"

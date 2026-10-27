@@ -1,0 +1,1 @@
+Paquet de données qu'une partie transmet directement à une autre dans le protocole RGB, hors de la blockchain, pour qu'elle le vérifie elle-même par *Client-side Validation*. Il sert à initialiser un contrat ou à transmettre l'historique d'un transfert.

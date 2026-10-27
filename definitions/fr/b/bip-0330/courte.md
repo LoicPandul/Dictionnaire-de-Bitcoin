@@ -1,0 +1,1 @@
+Proposition Erlay, qui réduit la bande passante consommée par la diffusion des transactions non confirmées : un nœud les annonce à un nombre limité de pairs, puis partage les transactions manquantes par un mécanisme de réconciliation.

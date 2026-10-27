@@ -1,0 +1,1 @@
+Protocole de mixage de bitcoins proposé en 2014 par Tim Ruffing, Pedro Moreno-Sanchez et Aniket Kate, qui coupe l'historique des pièces sans tiers de confiance. Il n'a jamais été largement adopté, au profit du *Chaumian coinjoin*.

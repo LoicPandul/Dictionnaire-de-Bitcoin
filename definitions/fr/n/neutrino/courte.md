@@ -1,0 +1,1 @@
+Client léger Bitcoin écrit en Go par Lightning Labs, qui se synchronise grâce aux *compact block filters* des BIP-0157 et BIP-0158. LND l'utilise comme *backend* quand il fonctionne sans nœud complet.

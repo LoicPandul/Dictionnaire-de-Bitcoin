@@ -1,0 +1,7 @@
+Cryptographe belge, professeur à l'Université catholique de Louvain (UCL) dans les années 1990, Jean-Jacques Quisquater cosigne l'une des références que Satoshi Nakamoto cite pour le serveur d'horodatage de Bitcoin.
+
+En août 1996 démarre en Belgique TIMESEC, un projet de deux ans financé par l'État fédéral et consacré à l'horodatage numérique. L'UCL Crypto Group y participe avec Quisquater et son assistant de recherche Henri Massias, aux côtés de l'équipe de Bart Preneel à la KU Leuven. En mai 1999, Massias, Xavier Serret-Avila et Quisquater publient « Design of a secure timestamping service with minimal trust requirement », qui présente le service conçu pour TIMESEC et cherche à réduire au maximum la confiance accordée au tiers qui délivre les horodatages.
+
+Le livre blanc de Bitcoin cite ce papier en référence [2], à l'endroit où Satoshi Nakamoto décrit un serveur d'horodatage qui publie le hachage d'un bloc de données. La référence [3] est l'article de Stuart Haber et Scott Stornetta de 1991. L'entrée Horodatage décrit ce que Bitcoin a repris de ce mécanisme.
+
+En 2017, Quisquater coédite le numéro 110 d'ERCIM News consacré à la *blockchain*, alors chercheur affilié au MIT. Il y retrace l'horodatage cryptographique, de Haber et Stornetta à TIMESEC, et écrit que le défi d'un horodatage réellement distribué a trouvé sa solution avec Satoshi Nakamoto, dans Bitcoin. Les entrées Livre blanc, Preuve de travail et Blockchain complètent ce parcours.

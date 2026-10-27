@@ -1,0 +1,1 @@
+Sigle de *Bitcoin Lightning Improvement Proposal*. Proposition de standard pour une fonctionnalité de Lightning qui n'a pas besoin d'être adoptée par toutes les implémentations, à la différence des BOLT.

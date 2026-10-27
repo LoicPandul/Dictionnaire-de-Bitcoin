@@ -1,0 +1,1 @@
+Principe d'organisation dans lequel aucune entité unique ne contrôle le système. Dans Bitcoin, des milliers de nœuds indépendants vérifient les règles, de nombreux mineurs se font concurrence et le développement reste ouvert.

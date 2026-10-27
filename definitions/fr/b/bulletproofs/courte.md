@@ -1,0 +1,1 @@
+Système de preuves à divulgation nulle de connaissance qui prouve qu'un montant caché, par exemple dans une *Confidential Transaction*, se situe dans un intervalle valide, avec des preuves bien plus compactes que les précédentes.

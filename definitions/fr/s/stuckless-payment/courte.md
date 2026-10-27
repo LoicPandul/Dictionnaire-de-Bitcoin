@@ -1,0 +1,1 @@
+Proposition qui supprime le risque de paiement bloqué sur le Lightning Network grâce aux PTLC et à une clé de confirmation contrôlée par l'expéditeur. Celui-ci peut lancer plusieurs tentatives en parallèle sans risquer de payer deux fois.

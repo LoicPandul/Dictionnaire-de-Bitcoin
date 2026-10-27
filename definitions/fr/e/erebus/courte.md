@@ -1,0 +1,1 @@
+Variante de l'attaque Eclipse dans laquelle un fournisseur d'accès à Internet malveillant exploite le routage entre systèmes autonomes pour isoler un nœud Bitcoin. Le nœud isolé peut alors subir une censure ou une double dépense.

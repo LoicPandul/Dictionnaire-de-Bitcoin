@@ -1,0 +1,1 @@
+Formats d'encodage des adresses SegWit, en base 32 et en minuscules, dont la somme de contrôle à base de codes BCH détecte mieux les fautes de frappe. `Bech32` sert à SegWit v0, `Bech32m` corrige un défaut de `Bech32` et sert à Taproot.

@@ -1,0 +1,1 @@
+Protocole de *Chaumian coinjoin* qui vise à rompre les liens entre les pièces des utilisateurs, avec des comptes pré-mix et post-mix séparés. Wasabi Wallet 1.0 et Whirlpool en ont été les principales implémentations.

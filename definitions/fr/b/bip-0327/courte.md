@@ -1,0 +1,1 @@
+Proposition qui définit MuSig2, un schéma de multisignature en deux tours où *n* participants produisent ensemble une seule signature de Schnorr, indiscernable d'une signature individuelle sur la blockchain.

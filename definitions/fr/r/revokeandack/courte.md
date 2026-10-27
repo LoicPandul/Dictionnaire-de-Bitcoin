@@ -1,0 +1,1 @@
+Message du protocole Lightning échangé lors de chaque mise à jour d'un canal, qui révoque l'ancienne transaction d'engagement en livrant sa clé de révocation et accuse réception du nouvel état. Il garantit que seul le dernier état du canal reste valide.

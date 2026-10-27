@@ -1,0 +1,1 @@
+Structure d'un logiciel de portefeuille qui regroupe les informations de suivi d'un jeu de clés : label, empreinte de clé maîtresse, chemin de dérivation et `xpub`. Elle sert à générer les adresses de réception et à surveiller les transactions associées.

@@ -1,0 +1,1 @@
+Proposition de soft fork, dite « Consensus Cleanup », qui corrige plusieurs vulnérabilités connues des règles de consensus de Bitcoin, dont l'attaque *time warp* et la faiblesse des transactions de 64 octets, sans changer le fonctionnement de base du protocole.

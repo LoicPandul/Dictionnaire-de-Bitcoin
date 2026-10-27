@@ -1,0 +1,1 @@
+Part prépondérante de l'activité économique en bitcoin, portée par ceux qui acceptent le BTC en échange de biens ou de services, et dont le choix pèse sur les règles de consensus, notamment en cas de *fork*.

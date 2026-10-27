@@ -1,0 +1,1 @@
+Proposition qui met à jour le processus des BIP en remplaçant le BIP-0002 : quatre statuts au lieu de neuf, le type *Specification* à la place de *Standards Track* et un rôle des éditeurs recentré sur l'administratif.

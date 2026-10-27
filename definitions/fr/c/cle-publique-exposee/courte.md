@@ -1,0 +1,1 @@
+Clé publique connue alors que les fonds ne sont pas dépensés, parce que le script la contient, que l'adresse a été réutilisée ou qu'une *xpub* a circulé. Un ordinateur quantique pourrait en déduire la clé privée et voler les fonds.

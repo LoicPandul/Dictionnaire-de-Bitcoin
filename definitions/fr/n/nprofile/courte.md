@@ -1,0 +1,1 @@
+Identifiant partageable défini par NIP-19 qui encode en Bech32 la clé publique d'un utilisateur Nostr et, en option, des relais où son profil a le plus de chances de se trouver, alors que la `npub` ne contient que la clé.

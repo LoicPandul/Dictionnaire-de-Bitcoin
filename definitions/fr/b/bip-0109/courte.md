@@ -1,0 +1,1 @@
+Proposition de hard fork de Gavin Andresen, en 2016, qui portait la taille maximale des blocs de 1 à 2 Mo avec des limites sur les sigops et les sighashs. Portée par Bitcoin Classic, elle n'a jamais été adoptée.

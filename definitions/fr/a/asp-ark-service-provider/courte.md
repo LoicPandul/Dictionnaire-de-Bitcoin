@@ -1,0 +1,1 @@
+Opérateur du protocole Ark, qui gère les VTXO des utilisateurs et organise régulièrement des *rounds* pour les ancrer sur la blockchain. Il ne détient pas les fonds, mais récupère la liquidité des VTXO expirés.

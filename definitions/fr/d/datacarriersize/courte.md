@@ -1,0 +1,1 @@
+Option de Bitcoin Core qui fixe la taille maximale des sorties `OP_RETURN` d'une transaction relayée par le nœud. Son défaut est passé de 83 à 100 000 octets dans la version 30.0, ce qui supprime de fait la limite.

@@ -1,0 +1,1 @@
+Partisans du maintien de blocs de petite taille pendant la Blocksize War (2015 à 2017), pour préserver la décentralisation de Bitcoin. Ils défendaient SegWit, le passage à l'échelle sur des couches supérieures comme Lightning et les évolutions par soft fork.

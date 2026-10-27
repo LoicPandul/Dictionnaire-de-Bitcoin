@@ -1,0 +1,1 @@
+Problème mathématique qui consiste à retrouver l'exposant secret d'une exponentiation dans un groupe cyclique, ou le scalaire d'une multiplication de points sur une courbe elliptique. Sa difficulté garantit la sécurité des signatures ECDSA et Schnorr sur Bitcoin.

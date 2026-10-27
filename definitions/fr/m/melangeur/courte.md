@@ -1,0 +1,1 @@
+Service centralisé qui casse l'historique des bitcoins en mélangeant les fonds de plusieurs utilisateurs après en avoir pris temporairement la garde, contrairement au *coinjoin* où chacun garde le contrôle de ses fonds.

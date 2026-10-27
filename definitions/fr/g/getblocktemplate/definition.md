@@ -2,4 +2,4 @@ Protocole de communication entre un nœud Bitcoin et un logiciel de minage, déf
 
 Contrairement à `getwork`, qui fournissait au mineur un en-tête de bloc prêt à hacher, `getblocktemplate` transmet un modèle complet de bloc (*block template*). Le mineur reçoit la liste des transactions à inclure, les paramètres du bloc et les règles de consensus à respecter. Cette approche lui permet de construire lui-même le bloc candidat et de choisir quelles transactions y intégrer.
 
-Ce changement a réduit le pouvoir des opérateurs de pools de minage sur la sélection des transactions, ce qui a décentralisé une partie du processus de construction des blocs. `getblocktemplate` a ensuite été largement remplacé par le protocole Stratum, puis par Stratum V2.
+Ce changement permet de confier la sélection des transactions à celui qui construit le bloc, au lieu de la laisser au seul opérateur du pool, à condition que le pool transmette ce modèle à ses mineurs. Entre un pool et ses mineurs, le protocole Stratum a ensuite remplacé `getwork`, mais `getblocktemplate` reste la méthode RPC par laquelle Bitcoin Core fournit un modèle de bloc.

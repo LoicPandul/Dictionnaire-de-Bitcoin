@@ -1,0 +1,1 @@
+Initiative annuelle du 3 janvier, anniversaire du bloc de Genèse, qui invite les détenteurs de bitcoins à retirer tous en même temps leurs fonds des plateformes d'échange vers la *self-custody* pour tester leur solvabilité.

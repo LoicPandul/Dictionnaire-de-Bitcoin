@@ -1,0 +1,17 @@
+Logiciel ou appareil qui garde la clé privée d'un utilisateur Nostr et signe ses événements à la demande des clients, sans jamais leur remettre la clé. Il répond aussi aux demandes de chiffrement et de déchiffrement qui exigent cette clé. Le client (voir CLIENT NOSTR) prépare l'événement, le signataire le signe, et le client le publie.
+
+La raison d'être du signataire est de limiter les endroits où la clé existe. NIP-46 pose le principe : une clé privée devrait être exposée à aussi peu de systèmes que possible (applications, systèmes d'exploitation, appareils), puisque chacun élargit la surface d'attaque. Sans signataire, Alice colle sa `nsec` dans chaque client qu'elle essaie, et il suffit qu'un seul soit piégé pour qu'elle perde son identité. Avec un signataire, la clé reste à un seul endroit et les clients n'en voient que les signatures (voir SIGNATURE D'ÉVÉNEMENT NOSTR).
+
+3 NIP décrivent la façon dont un client parle à son signataire, selon l'endroit où celui-ci tourne.
+
+* NIP-07, pour une page web : un navigateur ou une extension expose un objet `window.nostr`. Il offre `getPublicKey()` et `signEvent(event)`, et, en option, `nip04.encrypt` et `nip04.decrypt` (NIP-04, déprécié) ainsi que `nip44.encrypt` et `nip44.decrypt` (voir CHIFFREMENT NIP-44). Le site vérifie que l'objet existe, puis l'appelle. L'extension nos2x, de fiatjaf, l'implémente pour les navigateurs Chromium.
+* NIP-55, pour Android : le signataire est une application du même téléphone. Le client lui envoie une requête par un *intent* Android, et l'utilisateur approuve dans le signataire ; pour les permissions que l'utilisateur a choisi de mémoriser, une requête par *Content Resolver*, vers le *Content Provider* du signataire, aboutit en arrière-plan, sans ouvrir l'application. Un client web peut aussi l'appeler par une URL `nostrsigner:`. Amber en est un exemple.
+* NIP-46, pour un signataire distant : client et signataire échangent des événements chiffrés par des relais (voir BUNKER NOSTR). C'est la voie que NIP-55 recommande aux applications web, puisque les fenêtres d'approbation y sont moins fréquentes.
+
+Prenons un exemple avec NIP-07. Alice ouvre un client web et clique sur « Publier ». Le client construit un événement de kind `1` avec son texte, sa date et ses tags, sans `id`, `pubkey` ni `sig`, et appelle `window.nostr.signEvent`. L'extension affiche la demande ; Alice approuve ; l'extension calcule l'identifiant, ajoute la clé publique et la signature, et renvoie l'événement complet. Le client l'envoie ensuite aux relais.
+
+Le signataire ne protège que la clé, pas les décisions de l'utilisateur. Il signe ce qu'Alice approuve, et une permission accordée trop largement lui fait signer à son insu. Les permissions se règlent donc par méthode et par kind : NIP-46 comme NIP-55 permettent au client de demander, par exemple, la signature des réactions ou des notes, et un signataire comme Amber peut alors autoriser les réactions sans confirmation et demander l'accord pour chaque note. Un signataire compromis expose la clé elle-même, comme n'importe quel logiciel qui la garde (voir NCRYPTSEC pour la sauvegarder chiffrée).
+
+NIP-07 est publié par fiatjaf le 6 mai 2022. NIP-55 est proposé par greenart7c3, l'auteur d'Amber, le 8 novembre 2023 sous le numéro 100, puis renuméroté 55 le 5 juin 2024. NIP-46 entre dans le dépôt des NIP le 20 février 2023.
+
+*En anglais, on parle de* Nostr signer. *Il ne faut pas le confondre avec le client, qui construit les événements et les publie, mais ne tient pas la clé.*

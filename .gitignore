@@ -38,3 +38,8 @@ nul
 # Captures et vidéos de travail du site (lourdes, régénérables)
 site/design/captures/
 site/design/video/
+
+# Édition 2027 : outils locaux, sorties de build, brouillons
+.tools/
+build/
+.work/

@@ -1,0 +1,1 @@
+Octet ajouté à chaque signature d'une transaction Bitcoin, qui indique quels *inputs* et *outputs* elle couvre. Il fixe ce qui reste modifiable après la signature : `SIGHASH_ALL`, `SIGHASH_NONE` et `SIGHASH_SINGLE`, éventuellement combinés avec `SIGHASH_ANYONECANPAY`.

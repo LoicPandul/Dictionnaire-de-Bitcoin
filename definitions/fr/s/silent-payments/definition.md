@@ -2,6 +2,8 @@ Méthode pour utiliser des adresses Bitcoin statiques afin de recevoir des paiem
 
 Avec les Silent Payments, le payeur utilise les clés publiques du destinataire (clé publique de dépense et clé publique de scan) et la somme de ses clés privées personnelles en input pour générer une adresse vierge pour chaque paiement. Seul le destinataire, grâce à ses clés privées, peut calculer la clé privée correspondant à cette adresse de paiement. On utilise ECDH (*Elliptic-Curve Diffie-Hellman*), un algorithme cryptographique d'échange de clés, pour établir un secret partagé qui sert ensuite à dériver l'adresse de réception et la clé privée (uniquement du côté du destinataire). Pour identifier les Silent Payments qui leur sont destinés, les destinataires doivent scanner la blockchain et examiner chaque transaction correspondant aux critères du protocole. Contrairement au BIP-0047, qui utilise une transaction de notification pour établir le canal de paiement, les Silent Payments suppriment cette étape, ce qui permet d'économiser une transaction. Toutefois, le compromis est que le destinataire doit scanner l'ensemble des transactions potentielles pour déterminer, en appliquant ECDH, si elles lui sont adressées.
 
+![Alice combine l'adresse statique de Bob et les clés privées de ses entrées pour créer une adresse de paiement unique, que Bob retrouve en scannant avec sa clé de scan.](./assets/image-1.png)
+
 Par exemple, l'adresse statique de Bob $B$ représente la concaténation de sa clé publique de scan et de sa clé publique de dépense :
 $$B\ =\ B_{scan}\ \Vert\ B_{spend}$$
 
@@ -21,12 +23,12 @@ $$inputHash\ =\ hash(outpoint_L\ \Vert\ A)$$
 Avec :
 * $B_{scan}$ : La clé publique de scan de Bob (adresse statique) ;
 * $B_{spend}$ : La clé publique de dépense de Bob (adresse statique) ;
-* $A$ : La somme des clés publiques en input (tweak) ;
-* $a$ : La clé privée du tweak, c'est-à-dire la somme de toutes les paires de clés utilisées dans les `scriptPubKey` des UTXOs consommés en inputs de la transaction d'Alice ;
+* $A$ : La somme des clés publiques des inputs éligibles (P2TR, P2WPKH, P2SH-P2WPKH et P2PKH), c'est-à-dire $a \cdot G$ ;
+* $a$ : La somme des clés privées des inputs éligibles de la transaction d'Alice, les autres inputs étant ignorés ;
 * $outpoint_L$ : Le plus petit outpoint (lexicographiquement) utilisé en input de la transaction d'Alice ;
 * $\Vert$ : La concaténation (opération qui consiste à mettre bout-à-bout les opérandes) ;
 * $G$ : Le point générateur de la courbe elliptique `secp256k1` ;
-* $hash$ : La fonction de hachage SHA256 taguée avec `BIP0352/SharedSecret` ;
+* $hash$ : La fonction de hachage SHA256 taguée : étiquette `BIP0352/Inputs` pour $inputHash$, `BIP0352/SharedSecret` pour le calcul de $P_0$ ;
 * $P_0$ : La première clé publique / adresse unique pour le paiement vers Bob ;
 * $0$ : Un entier permettant de générer plusieurs adresses de paiement uniques.
 

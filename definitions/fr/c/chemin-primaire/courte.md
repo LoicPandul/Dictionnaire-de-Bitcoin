@@ -1,0 +1,1 @@
+Ensemble de clés d'un portefeuille Miniscript, comme Liana, qui peut dépenser les bitcoins immédiatement, sans condition de délai. C'est le chemin de la gestion courante des fonds, par opposition aux chemins de récupération soumis à un *timelock*.

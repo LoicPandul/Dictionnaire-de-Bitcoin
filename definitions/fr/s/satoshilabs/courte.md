@@ -1,0 +1,1 @@
+Entreprise tchèque fondée en 2013 par Marek Palatinus et Pavol Rusnák, qui a créé le portefeuille matériel Trezor. Elle a aussi contribué aux standards de Bitcoin, dont le BIP-0039 des phrases mnémoniques.

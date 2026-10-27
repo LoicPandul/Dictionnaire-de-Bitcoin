@@ -1,0 +1,1 @@
+Proposition qui définit le chemin de dérivation des portefeuilles multisignatures, `m/48'/coin_type'/account'/script_type'`, dont le dernier niveau distingue P2SH-P2WSH et P2WSH. Un même portefeuille matériel peut ainsi gérer plusieurs configurations multisig.

@@ -1,0 +1,1 @@
+Méthode cryptographique qui transforme une information à l'aide d'une clé pour en masquer le sens à quiconque ne détient pas cette clé. L'opération inverse, le déchiffrement, restaure l'information d'origine.

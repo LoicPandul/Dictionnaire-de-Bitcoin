@@ -1,0 +1,5 @@
+Théoricien libertarien canado-américain, auteur du *New Libertarian Manifesto* et à l'origine de l'agorisme.
+
+Samuel Edward Konkin III, dit SEK3, présente la contre-économie pour la première fois au Free Enterprise Forum de Los Angeles en février 1974, selon la préface de son manifeste. Il la définit comme la pratique des actions humaines qui évitent, contournent et défient l'État, c'est-à-dire le commerce hors de son contrôle, des marchés noirs et gris. Le *New Libertarian Manifesto* est imprimé une première fois en octobre 1980 par Anarchosamisdat Press, puis une seconde fois en février 1983 par Koman Publishing. Il y expose l'agorisme, du grec *agora*, la place du marché : une société libertarienne en théorie et de marché libre en pratique, atteinte par la contre-économie, qui prive l'État du soutien de ses victimes.
+
+Il meurt le 23 février 2004, avant la création de Bitcoin, qui n'apparaît donc pas dans son manifeste. Son nom se rattache à Bitcoin par l'entrée agorisme du dictionnaire, qui décrit la philosophie qu'il a fondée.

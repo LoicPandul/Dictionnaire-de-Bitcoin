@@ -1,0 +1,1 @@
+Proposition qui définit le chemin de dérivation `m/87'/coin_type'/account'` des portefeuilles multisignatures fondés sur les *output script descriptors*. À la différence du BIP-0048, le type de script est laissé au *descriptor*.

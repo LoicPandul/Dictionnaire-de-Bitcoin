@@ -1,0 +1,1 @@
+Hausse des prix extrêmement rapide et incontrôlable, provoquée par une émission excessive de monnaie par un État ou une banque centrale. Les bitcoiners y opposent l'offre de Bitcoin, limitée à 21 millions d'unités.

@@ -1,0 +1,1 @@
+Altcoin créé en 2011 par Charlie Lee à partir du code de Bitcoin, avec des blocs toutes les 2,5 minutes, un plafond de 84 millions d'unités et la preuve de travail Scrypt. Il a parfois servi de terrain d'essai, par exemple pour SegWit.

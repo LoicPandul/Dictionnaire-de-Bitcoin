@@ -1,0 +1,1 @@
+*Hardware wallet* dédié à Bitcoin, fabriqué par l'entreprise américaine Foundation Devices. Entièrement *air-gapped*, il signe les transactions en échangeant des QR codes avec le logiciel de portefeuille, comme Envoy ou Sparrow Wallet.

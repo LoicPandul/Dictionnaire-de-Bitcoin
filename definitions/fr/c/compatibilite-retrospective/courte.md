@@ -1,0 +1,1 @@
+Propriété d'une mise à jour des règles de consensus que les anciens nœuds acceptent sans être mis à jour : ils ne rejettent ni les nouveaux blocs ni les nouvelles transactions. C'est ce qui distingue un *soft fork* d'un *hard fork*.

@@ -1,0 +1,1 @@
+Coût lié à la détention d'une monnaie et, par extension, mécanisme qui fait perdre de la valeur à une monnaie détenue longtemps pour encourager sa circulation. Parfois proposé pour Bitcoin, il y est très largement rejeté.

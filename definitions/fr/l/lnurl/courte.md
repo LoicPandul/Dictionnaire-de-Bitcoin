@@ -1,0 +1,1 @@
+Protocole fondé sur HTTP qui simplifie les interactions entre un portefeuille Lightning et un service : une URL scannée déclenche automatiquement une action, comme une demande de paiement, un retrait ou une authentification.

@@ -1,0 +1,333 @@
+# Chronologie de Bitcoin : 2022.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2022-01-05"
+    title: "Coupure d'internet au Kazakhstan, le hashrate recule"
+    text: "Pendant les manifestations qui secouent le Kazakhstan, les autorités coupent internet dans presque tout le pays. Privées de réseau, les fermes de minage installées là après l'exode des mineurs chinois décrochent, et le hashrate de Bitcoin recule de plus de 10 % en quelques heures."
+    related: ["hashrate", "minage", "ferme-de-minage"]
+    sources:
+      - "https://forklog.com/en/bitcoin-hashrate-dips-amid-kazakhstan-internet-shutdown/"
+      - "https://www.intellinews.com/internet-blackouts-amid-kazakhstan-crisis-knock-13-4-off-bitcoin-hashrate-231007/"
+
+  - date: "2022-01-12"
+    title: "Création du Bitcoin Legal Defense Fund"
+    text: "Jack Dorsey, Alex Morcos et Martin White annoncent sur la liste bitcoin-dev un fonds à but non lucratif chargé de défendre en justice les développeurs de Bitcoin et de Lightning poursuivis pour leur travail. Ses trois fondateurs en forment le conseil et choisissent les affaires soutenues."
+    related: ["bitcoin-dev"]
+    sources:
+      - "https://gnusha.org/pi/bitcoindev/282EF45D-78A4-45E6-BCA2-3ADE6C8D4E11@squareup.com/"
+      - "https://bitcoinops.org/en/newsletters/2022/01/19/"
+      - "https://www.engadget.com/jack-dorsey-bitcoin-legal-defense-fund-142546580.html"
+
+  - date: "2022-01-18"
+    title: "Cash App intègre le Lightning Network"
+    text: "Cash App, l'application de paiement de Block (ex-Square), annonce l'intégration du Lightning Network : ses utilisateurs américains peuvent envoyer du bitcoin sans frais partout dans le monde. Le déploiement s'étale sur plusieurs semaines."
+    related: ["lightning-network"]
+    sources:
+      - "https://techcrunch.com/2022/01/18/blocks-cash-app-adopts-lightning-network-for-free-bitcoin-payments/"
+      - "https://decrypt.co/90597/blocks-cash-app-integrates-lightning-network-bitcoin-transactions"
+
+  - date: "2022-02-08"
+    title: "Saisie de 94 000 BTC volés à Bitfinex"
+    text: "La justice américaine arrête Ilya Lichtenstein et Heather Morgan, accusés d'avoir blanchi les 119 754 BTC volés à Bitfinex en 2016. Les enquêteurs récupèrent plus de 94 000 BTC, évalués à plus de 3,6 milliards de dollars : la plus grosse saisie financière du département de la Justice."
+    sources:
+      - "https://web.archive.org/web/20221229064320/https://www.justice.gov/opa/pr/two-arrested-alleged-conspiracy-launder-45-billion-stolen-cryptocurrency"
+      - "https://www.adn.com/nation-world/2022/02/08/feds-arrest-married-couple-seize-36-billion-in-hacked-cryptocurrency/"
+      - "https://decrypt.co/92396/doj-seizes-3-6-billion-bitcoin-from-2016-bitfinex-hack-arrests-couple"
+
+  - date: "2022-02-16"
+    title: "Le Canada fait bloquer 34 portefeuilles du convoi des camionneurs"
+    text: "Après le recours à la Loi sur les mesures d'urgence contre le « convoi de la liberté », la Gendarmerie royale et la police de l'Ontario ordonnent aux plateformes régulées de cesser toute transaction avec 34 portefeuilles ayant financé les manifestants, dont 29 adresses bitcoin."
+    sources:
+      - "https://www.coindesk.com/policy/2022/02/16/canada-sanctions-34-crypto-wallets-tied-to-trucker-freedom-convoy"
+      - "https://decrypt.co/93080/canada-truckers-crypto-exchanges-rcmp"
+      - "https://www.cbc.ca/news/canada/ottawa/convoy-protest-bitcoin-donation-1.6389601"
+
+  - date: "2022-02-26"
+    title: "L'Ukraine demande des dons en bitcoin"
+    text: "Deux jours après l'invasion russe, le compte Twitter officiel de l'Ukraine publie une adresse bitcoin et une adresse Ethereum pour recevoir des dons. Le 2 mars, ces portefeuilles ont déjà reçu environ 20 millions de dollars."
+    sources:
+      - "https://eldiario.com/2022/02/26/gobierno-de-ucrania-solicita-donaciones-criptomonedas/"
+      - "https://decrypt.co/94210/ukraines-bitcoin-ethereum-wallets-receive-20-million-in-donations"
+
+  - date: "2022-03-03"
+    title: "Lugano accepte le bitcoin comme monnaie de fait"
+    text: "Lors d'un événement organisé avec Tether, le maire de Lugano, Michele Foletti, annonce que la ville suisse reconnaît le bitcoin, l'USDT et son propre jeton LVGA comme monnaies légales de fait : les habitants pourront s'en servir pour payer leurs impôts et leurs factures municipales."
+    related: ["cours-legal"]
+    sources:
+      - "https://www.businesstoday.in/crypto/story/switzerlands-lugano-makes-bitcoin-tether-lvga-token-legal-tender-324774-2022-03-04"
+      - "https://www.fxstreet.com/cryptocurrencies/news/switzerland-city-lugano-introduces-bitcoin-and-tether-as-de-facto-legal-tender-202203040216"
+
+  - date: "2022-03-09"
+    title: "Décret de Joe Biden sur les actifs numériques"
+    text: "Joe Biden signe le décret 14067, « Ensuring Responsible Development of Digital Assets ». Il demande aux agences fédérales d'évaluer les risques des cryptomonnaies et la manière de les encadrer, ainsi que l'intérêt d'une monnaie numérique de banque centrale américaine."
+    sources:
+      - "https://www.federalregister.gov/documents/2022/03/14/2022-05471/ensuring-responsible-development-of-digital-assets"
+      - "https://www.coindesk.com/policy/2022/03/09/biden-issues-long-awaited-executive-order-on-crypto"
+
+  - date: "2022-03-14"
+    title: "Le Parlement européen écarte une interdiction de la preuve de travail"
+    text: "La commission des affaires économiques et monétaires du Parlement européen rejette la version du règlement MiCA qui aurait limité l'usage des cryptomonnaies à preuve de travail, comme le bitcoin, dans l'Union européenne."
+    related: ["preuve-de-travail"]
+    sources:
+      - "https://www.coindesk.com/policy/2022/03/14/proposal-limiting-proof-of-work-is-rejected-in-eu-parliament-committee-vote-sources"
+      - "https://decrypt.co/95055/eu-votes-32-23-against-de-facto-bitcoin-mining-ban"
+
+  - date: "2022-03-28"
+    title: "Ruben Somsen propose les *silent payments*"
+    text: "Ruben Somsen publie sur la liste bitcoin-dev le schéma des *silent payments* : le destinataire diffuse une adresse statique unique, et chaque payeur en dérive une adresse différente qu'un observateur ne peut pas relier à elle, sans surcoût sur la chaîne."
+    related: ["silent-payments", "bip-0352"]
+    sources:
+      - "https://gnusha.org/pi/bitcoindev/CAPv7TjbXm953U2h+-12MfJ24YqOM5Kcq77_xFTjVK+R2nf-nYg@mail.gmail.com/"
+      - "https://bitcoinops.org/en/newsletters/2022/04/06/"
+
+  - date: "2022-04-05"
+    title: "Lightning Labs annonce Taro"
+    text: "Lightning Labs présente Taro, un protocole qui s'appuie sur Taproot pour émettre sur Bitcoin des actifs autres que le bitcoin, des stablecoins par exemple, puis les faire circuler sur Lightning. La société annonce en même temps sa levée de fonds de série B."
+    related: ["taro", "taproot-assets-protocol", "lightning-labs"]
+    sources:
+      - "https://lightning.engineering/posts/2022-4-5-taro-launch/"
+      - "https://decrypt.co/96921/bitcoin-lightning-labs-raises-70-million-taro-stablecoin-protocol"
+
+  - date: "2022-04-19"
+    title: "Jeremy Rubin tente de lancer l'activation de CTV"
+    text: "Jeremy Rubin annonce sur bitcoin-dev qu'il va publier un client permettant aux mineurs de signaler leur soutien à `OP_CHECKTEMPLATEVERIFY` (BIP-0119). Le projet soulève de nombreuses objections, et Rubin renonce peu après à distribuer ce logiciel d'activation."
+    related: ["bip-0119", "op-checktemplateverify-0xb3", "covenant"]
+    sources:
+      - "https://gnusha.org/pi/bitcoindev/CAD5xwhjVS4Y4e3qDWzJfva+0hiKpe8-WqmX_kUHrpfXmG5sMXw@mail.gmail.com/"
+      - "https://bitcoinops.org/en/newsletters/2022/04/27/"
+      - "https://bitcoinops.org/en/newsletters/2022/12/21/"
+
+  - date: "2022-04-25"
+    title: "Sortie de Bitcoin Core 23.0"
+    text: "Bitcoin Core 23.0 crée désormais des portefeuilles à descripteurs par défaut, avec un descripteur `tr()` qui permet de recevoir sur des adresses Taproot. La version prend aussi en charge le réseau CJDNS."
+    related: ["bitcoin-core", "output-script-descriptors", "taproot"]
+    sources:
+      - "https://bitcoincore.org/en/releases/23.0/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v23.0"
+      - "https://bitcoinops.org/en/newsletters/2022/12/21/"
+
+  - date: "2022-04-27"
+    title: "La Centrafrique adopte le bitcoin comme monnaie légale"
+    text: "La présidence centrafricaine annonce que Faustin-Archange Touadéra a promulgué une loi, votée à l'unanimité par l'Assemblée nationale, qui fait du bitcoin une monnaie légale aux côtés du franc CFA. La Centrafrique devient le deuxième pays à le faire, après le Salvador."
+    related: ["cours-legal"]
+    sources:
+      - "https://telquel.ma/instant-t/2022/04/27/la-centrafrique-adopte-le-bitcoin-comme-monnaie-legale_1764855/"
+      - "https://decrypt.co/98856/central-african-republic-becomes-second-country-adopt-bitcoin-legal-tender"
+
+  - date: "2022-05-08"
+    title: "Chute de Terra, la Luna Foundation Guard vend ses bitcoins"
+    text: "Le stablecoin algorithmique TerraUSD décroche du dollar. Pour le défendre, la Luna Foundation Guard et Terraform Labs vendent leur réserve : sur 80 394 BTC détenus le 7 mai, il n'en reste que 313 le 16 mai. LUNA perd plus de 99 % en quelques jours."
+    related: ["stablecoin"]
+    sources:
+      - "https://fortune.com/2022/05/16/luna-foundation-guard-dumps-bitcoin-reserves-terra-usd-peg/"
+      - "https://bitcoinmagazine.com/markets/luna-foundation-sold-80000-bitcoin-amid-ust-crash"
+      - "https://techcrunch.com/2022/05/12/terra-halts-its-blockchain-to-prevent-hacks-ust/"
+
+  - date: "2022-06-10"
+    title: "TBD présente Web5"
+    text: "TBD, la filiale de Block consacrée à Bitcoin, présente Web5, une plateforme web décentralisée qui rend à chacun le contrôle de son identité et de ses données. Ses identifiants décentralisés reposent sur ION, un réseau de seconde couche ancré dans la blockchain Bitcoin."
+    sources:
+      - "https://bitcoinmagazine.com/business/jack-dorseys-tbd-presents-bitcoin-based-decentralized-web5"
+      - "https://siliconangle.com/2022/06/10/jack-dorseys-tbd-venture-details-web5-platform/"
+      - "https://decrypt.co/102605/jack-dorsey-tbd-web5-bitcoin"
+
+  - date: "2022-06-12"
+    title: "Celsius gèle les retraits"
+    text: "Le prêteur crypto Celsius Network suspend les retraits, les échanges et les transferts entre comptes en invoquant des « conditions de marché extrêmes ». Le bitcoin tombe le lendemain à son plus bas niveau depuis décembre 2020."
+    sources:
+      - "https://www.cnbc.com/2022/06/13/crypto-lender-celsius-pauses-withdrawals-bitcoin-slides.html"
+      - "https://bitcoinmagazine.com/business/celsius-network-pauses-bitcoin-crypto-withdrawals"
+      - "https://dfr.vermont.gov/node/2406"
+
+  - date: "2022-06-18"
+    title: "Le bitcoin passe sous 20 000 dollars"
+    text: "Le bitcoin tombe sous 20 000 dollars pour la première fois depuis fin 2020, puis sous 18 000 dollars dans la journée. C'est la première fois qu'un marché baissier le ramène sous le record du cycle précédent, celui de 2017."
+    related: ["bear-market"]
+    sources:
+      - "https://www.pbs.org/newshour/economy/bitcoin-falls-below-20000-as-crypto-selloff-picks-up"
+      - "https://decrypt.co/103140/bitcoin-falls-below-20000-ethereum-tests-1000"
+      - "https://decrypt.co/103265/bitcoin-falls-18000-ethereum-under-900-selloff-intensifies"
+      - "https://cointelegraph.com/news/bitcoin-price-falls-below-20k-for-first-time-since-2020"
+
+  - date: "2022-06-23"
+    title: "LND 0.15.0 passe à Taproot"
+    text: "LND 0.15.0-beta permet au portefeuille interne du nœud de recevoir et de dépenser sur des adresses Taproot (P2TR), et ajoute une prise en charge expérimentale de MuSig2. Elle introduit aussi des métadonnées de facture, utiles aux factures sans état."
+    related: ["lnd", "taproot", "musig2"]
+    sources:
+      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.15.0-beta"
+      - "https://bitcoinops.org/en/newsletters/2022/06/29/"
+
+  - date: "2022-06-27"
+    title: "Three Arrows Capital mis en liquidation"
+    text: "Une procédure de liquidation s'ouvre aux îles Vierges britanniques contre Three Arrows Capital, le fonds crypto de Su Zhu et Kyle Davies, fragilisé par la chute de Terra. Le même jour, Voyager Digital lui adresse un avis de défaut pour un prêt en bitcoin et en USDC resté impayé."
+    sources:
+      - "https://www.theblock.co/post/155578/three-arrows-capital-files-for-chapter-15-bankruptcy-in-new-york"
+      - "https://decrypt.co/104058/crypto-fund-three-arrows-capital-ordered-to-liquidate-report"
+      - "https://decrypt.co/103892/voyager-digital-issues-three-arrows-capital-default-notice"
+
+  - date: "2022-06-29"
+    title: "La SEC refuse l'ETF de Grayscale, qui l'attaque en justice"
+    text: "La SEC refuse de transformer le Grayscale Bitcoin Trust (GBTC) en ETF au comptant, faute de protection suffisante contre la fraude et la manipulation. Grayscale dépose aussitôt un recours devant la cour d'appel fédérale du district de Columbia."
+    related: ["etf"]
+    sources:
+      - "https://www.sec.gov/files/rules/sro/nysearca/2022/34-95180.pdf"
+      - "https://decrypt.co/104148/grayscale-is-suing-sec-after-spot-bitcoin-etf-rejection"
+
+  - date: "2022-07-05"
+    title: "Faillite de Voyager Digital"
+    text: "Le courtier crypto Voyager Digital se place sous la protection du chapitre 11 de la loi américaine sur les faillites, à New York. Il était lourdement exposé à Three Arrows Capital, qui ne l'a pas remboursé."
+    sources:
+      - "https://decrypt.co/104490/voyager-stock-plummets-crypto-firm-files-bankruptcy"
+      - "https://bitcoinmagazine.com/business/voyager-digital-files-for-bankruptcy"
+
+  - date: "2022-07-13"
+    title: "Faillite de Celsius"
+    text: "Un mois après avoir gelé les retraits de ses clients, Celsius Network et plusieurs filiales se placent sous la protection du chapitre 11 de la loi américaine sur les faillites, devant le tribunal de New York."
+    sources:
+      - "https://dfr.vermont.gov/node/2406"
+      - "https://decrypt.co/105076/troubled-crypto-lending-platform-celsius-files-for-bankruptcy"
+      - "https://news.bloomberglaw.com/financial-accounting/crypto-lender-celsius-files-for-bankruptcy-after-cash-crunch"
+
+  - date: "2022-07-20"
+    title: "Tesla vend 75 % de ses bitcoins"
+    text: "Dans ses résultats du deuxième trimestre, Tesla indique avoir converti environ 75 % de ses bitcoins en monnaie fiat, ce qui a ajouté 936 millions de dollars à sa trésorerie."
+    related: ["bitcoin-treasury-company", "fiat"]
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1318605/000156459022026048/tsla-ex991_130.htm"
+      - "https://decrypt.co/105594/elon-musk-tesla-sold-75-percent-bitcoin"
+      - "https://bitcoinmagazine.com/business/breaking-elon-musks-tesla-sold-75-of-its-bitcoin"
+
+  - date: "2022-08-02"
+    title: "Michael Saylor quitte la direction générale de MicroStrategy"
+    text: "MicroStrategy annonce qu'à partir du 8 août, Michael Saylor devient président exécutif et laisse le poste de directeur général à Phong Le. Saylor explique vouloir se consacrer davantage à la stratégie bitcoin de l'entreprise."
+    related: ["bitcoin-treasury-company"]
+    sources:
+      - "https://www.sec.gov/Archives/edgar/data/1050446/000156459022027479/mstr-ex991_8.htm"
+      - "https://decrypt.co/106557/bitcoin-michael-saylor-steps-down-microstrategy-ceo"
+
+  - date: "2022-10-09"
+    title: "Une transaction Taproot géante bloque btcd et LND"
+    text: "Le bloc 757 922 confirme une transaction de Burak, développeur de Bitmatrix, qui dépense un multisig Taproot 998 sur 999. Son témoin, trop volumineux pour btcd, empêche ce nœud et LND, qui s'en sert, de traiter les nouveaux blocs jusqu'à un correctif d'urgence."
+    related: ["btcd-btc-suite", "lnd", "taproot", "temoin-de-transaction"]
+    sources:
+      - "https://mempool.space/tx/7393096d97bfee8660f4100ffd61874d62f9a65de9fb6acf740c4c386990ef73"
+      - "https://bitcoinops.org/en/newsletters/2022/10/19/"
+      - "https://bitcoinmagazine.com/technical/learning-from-the-lnd-bug-on-lightning"
+      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.15.2-beta"
+
+  - date: "2022-11-01"
+    title: "Un second bug de lecture des blocs frappe btcd et LND"
+    text: "Le bloc 761 249 contient une transaction dont le témoin compte plus de 500 000 éléments. Elle déclenche un second bug de lecture des blocs, découvert peu avant par Anthony Towns, qui frappe de nouveau btcd et LND. LND publie le jour même sa version corrective 0.15.4."
+    related: ["btcd-btc-suite", "lnd", "temoin-de-transaction"]
+    sources:
+      - "https://mempool.space/tx/73be398c4bdc43709db7398106609eea2a7841aaf3a4fa2000dc18184faa2a7e"
+      - "https://bitcoinops.org/en/newsletters/2022/11/09/"
+      - "https://github.com/lightningnetwork/lnd/releases/tag/v0.15.4-beta"
+
+  - date: "2022-11-02"
+    title: "CoinDesk révèle le bilan d'Alameda Research"
+    text: "CoinDesk publie un bilan interne d'Alameda Research, la société de trading de Sam Bankman-Fried : sur 14,6 milliards de dollars d'actifs au 30 juin, une grande part est faite de FTT, le jeton émis par sa plateforme FTX. L'article ouvre la crise de FTX."
+    sources:
+      - "https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet"
+      - "https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-219.pdf"
+
+  - date: "2022-11-07"
+    title: "La justice américaine révèle la saisie de 50 676 BTC de Silk Road"
+    text: "Le procureur fédéral de Manhattan annonce qu'en novembre 2021, la police a saisi chez James Zhong, en Géorgie, environ 50 676 BTC détournés de Silk Road en 2012, alors évalués à plus de 3,36 milliards de dollars. Zhong a plaidé coupable de fraude électronique."
+    related: ["silk-road"]
+    sources:
+      - "https://web.archive.org/web/2022/https://www.justice.gov/usao-sdny/pr/us-attorney-announces-historic-336-billion-cryptocurrency-seizure-and-conviction"
+      - "https://decrypt.co/113752/bitcoin-silk-road-siezed"
+
+  - date: "2022-11-08"
+    title: "FTX suspend les retraits, Binance renonce à la racheter"
+    text: "Après l'annonce par le patron de Binance qu'il vend ses FTT, les clients se ruent sur les retraits et FTX les suspend. Binance signe une lettre d'intention pour racheter la plateforme, puis renonce dès le lendemain après examen des comptes."
+    sources:
+      - "https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-219.pdf"
+      - "https://decrypt.co/113866/battle-crypto-titans-ends-binance-acquires-ftx"
+      - "https://bitcoinmagazine.com/business/ftx-exchange-to-be-acquired-by-binance"
+      - "https://decrypt.co/114052/binance-cancels-plans-acquire-ftx"
+
+  - date: "2022-11-11"
+    title: "Faillite de FTX"
+    text: "FTX, Alameda Research, FTX US et leurs nombreuses filiales se placent sous la protection du chapitre 11 de la loi américaine sur les faillites. Sam Bankman-Fried démissionne de son poste de directeur général."
+    related: ["custody"]
+    sources:
+      - "https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-219.pdf"
+      - "https://decrypt.co/114205/ftx-files-chapter-11-bankruptcy-sbf-steps-down-as-ceo"
+      - "https://bitcoinmagazine.com/legal/ftx-files-for-bankruptcy-ceo-resigns"
+
+  - date: "2022-11-16"
+    title: "Genesis suspend les retraits"
+    text: "Genesis Global Capital, la branche de prêt du courtier Genesis, suspend les retraits et les nouveaux prêts en invoquant les turbulences provoquées par la chute de FTX."
+    sources:
+      - "https://decrypt.co/114778/genesis-suspending-client-withdrawals-lending-arm-citing-ftx-impact"
+      - "https://bitcoinmagazine.com/markets/genesis-lending-halts-crypto-withdrawals"
+
+  - date: "2022-11-21"
+    title: "Plus bas de l'année pour le bitcoin"
+    text: "Emporté par la contagion de la faillite de FTX, le bitcoin descend à 15 460 dollars sur Coinbase, son plus bas depuis novembre 2020. Il a perdu plus des trois quarts de sa valeur depuis son record de novembre 2021, proche de 69 000 dollars."
+    related: ["bear-market", "ath-all-time-high"]
+    sources:
+      - "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400&start=2022-11-19T00:00:00Z&end=2022-11-24T00:00:00Z"
+      - "https://decrypt.co/115275/bitcoin-price-hits-lowest-level-2-years"
+      - "https://www.cnbc.com/2022/11/23/bitcoin-btc-jumps-even-as-trader-remain-cautious-after-ftx-collapse.html"
+      - "https://www.pbs.org/newshour/economy/bitcoin-falls-below-20000-as-crypto-selloff-picks-up"
+
+  - date: "2022-11-22"
+    title: "New York gèle les permis des mineurs alimentés aux énergies fossiles"
+    text: "La gouverneure Kathy Hochul signe une loi qui interdit pendant deux ans de délivrer des permis environnementaux aux sites de minage par preuve de travail alimentés par des centrales à combustible fossile. Les installations alimentées par des énergies renouvelables ne sont pas visées."
+    related: ["minage", "preuve-de-travail"]
+    sources:
+      - "https://decrypt.co/115416/new-york-signs-2-year-crypto-mining-moratorium-law"
+      - "https://www.nbcnews.com/tech/crypto/new-york-governor-signs-novel-law-limits-cryptomining-now-rcna58514"
+
+  - date: "2022-11-28"
+    title: "Faillite de BlockFi"
+    text: "Exposé à FTX, le prêteur crypto BlockFi et huit filiales se placent sous la protection du chapitre 11 devant un tribunal du New Jersey. La société déclare plus de 100 000 créanciers."
+    sources:
+      - "https://bitcoinmagazine.com/business/blockfi-files-for-bankruptcy"
+      - "https://www.aljazeera.com/economy/2022/11/28/major-crypto-lender-blockfi-files-for-bankruptcy-protection"
+
+  - date: "2022-12-12"
+    title: "Bitcoin Core 24.0.1 et l'option `mempoolfullrbf`"
+    text: "Bitcoin Core 24.0.1 ajoute l'option `mempoolfullrbf`, désactivée par défaut, qui laisse un nœud accepter le remplacement de toute transaction non confirmée, même sans signal BIP-0125. Débattue depuis octobre, elle arrive avec la commande `sendall`. La version 24.0, étiquetée, n'a jamais été annoncée."
+    related: ["bitcoin-core", "full-rbf", "rbf-replace-by-fee", "bip-0125"]
+    sources:
+      - "https://bitcoincore.org/en/releases/24.0.1/"
+      - "https://github.com/bitcoin/bitcoin/releases/tag/v24.0.1"
+      - "https://bitcoinops.org/en/newsletters/2022/12/21/"
+
+  - date: "2022-12-12"
+    title: "Première version étiquetée de libsecp256k1"
+    text: "La bibliothèque libsecp256k1, qui fournit à Bitcoin Core ses opérations cryptographiques sur la courbe secp256k1, publie sa première version étiquetée, la 0.2.0. Jusque-là, son développement ne connaissait qu'une branche principale, sans engagement de stabilité de l'API."
+    related: ["libsecp256k1", "secp256k1"]
+    sources:
+      - "https://github.com/bitcoin-core/secp256k1/releases/tag/v0.2.0"
+      - "https://bitcoinops.org/en/newsletters/2022/12/14/"
+
+  - date: "2022-12-12"
+    title: "Arrestation de Sam Bankman-Fried aux Bahamas"
+    text: "La police des Bahamas arrête Sam Bankman-Fried à la demande des États-Unis, où le procureur de Manhattan a obtenu contre lui un acte d'accusation sous scellés. Le lendemain, la SEC l'accuse d'avoir trompé les investisseurs de FTX."
+    sources:
+      - "https://decrypt.co/117054/ftx-founder-sam-bankman-fried-arrested-bahamas"
+      - "https://bitcoinmagazine.com/legal/ftx-founder-sam-bankman-fried-arrested"
+      - "https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-219.pdf"
+
+  - date: "2022-12-15"
+    title: "Jack Dorsey finance Nostr avec 14 BTC"
+    text: "Jack Dorsey donne environ 14 BTC pour financer le développement de Nostr, un protocole ouvert qui vise à bâtir un réseau social décentralisé et résistant à la censure. Les fonds sont versés au développeur fiatjaf, l'un des mainteneurs du protocole."
+    related: ["nostr"]
+    sources:
+      - "https://www.coindesk.com/tech/2022/12/15/jack-dorsey-gives-decentralized-social-network-nostr-14-btc-in-funding"
+      - "https://nobsbitcoin.com/jack-dorsey-provides-14-bitcoin-grant"
+
+  - date: "2022-12-21"
+    title: "Faillite de Core Scientific"
+    text: "Core Scientific, l'un des plus grands mineurs de bitcoin cotés au Nasdaq, se place sous la protection du chapitre 11 au Texas après la dégradation de ses résultats et de sa trésorerie. Ses machines continuent de miner pendant la restructuration."
+    related: ["minage", "ferme-de-minage"]
+    sources:
+      - "https://bitcoinmagazine.com/legal/bitcoin-miner-core-scientific-bankruptcy"
+      - "https://decrypt.co/117708/bitcoin-miner-core-scientific-files-chapter-11-bankruptcy-report"

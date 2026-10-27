@@ -1,0 +1,1 @@
+Portefeuille Bitcoin *open source* pour ordinateur, axé sur la confidentialité, né en juin 2024 d'un *fork* de Wasabi Wallet après l'arrêt du coordinateur de *coinjoins* de zkSNACKs. Il reprend notamment les *coinjoins* WabiSabi.

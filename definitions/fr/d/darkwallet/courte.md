@@ -1,0 +1,1 @@
+Portefeuille Bitcoin axé sur la confidentialité, lancé en 2014 par Amir Taaki et Cody Wilson sous forme d'extension Chrome, avec paiements furtifs et *coinjoins*. Son développement est abandonné depuis janvier 2015.

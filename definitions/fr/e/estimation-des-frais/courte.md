@@ -1,0 +1,1 @@
+Calcul du taux de frais qu'une transaction doit payer pour être confirmée dans un nombre de blocs donné. Le nœud l'estime à partir des transactions récemment minées et, depuis Bitcoin Core 32.0, du contenu de sa mempool.

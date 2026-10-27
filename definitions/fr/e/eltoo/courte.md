@@ -1,0 +1,1 @@
+Protocole de seconde couche qui gère l'état d'un UTXO partagé, notamment d'un canal Lightning, en remplaçant le système de pénalité par une simple mise à jour vers le dernier état. Il exige `SIGHASH_ANYPREVOUT`, proposé dans le BIP-0118.

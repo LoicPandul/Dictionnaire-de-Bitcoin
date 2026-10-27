@@ -1,0 +1,1 @@
+Algorithme de sélection des pièces du portefeuille de Bitcoin Core, conçu par Murch, qui cherche un ensemble d'UTXO couvrant exactement le montant à payer, pour se passer de sortie de change et limiter les frais.

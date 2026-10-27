@@ -1,0 +1,1 @@
+Spécification qui définit Testnet 4, le réseau de test qui remplace Testnet 3 en 2024. Ses règles de consensus corrigent les faiblesses de son prédécesseur, dont les *block storms* et l'attaque *time warp*.

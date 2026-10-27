@@ -1,0 +1,1 @@
+Mise à jour de Bitcoin activée par soft fork en novembre 2021, qui introduit le modèle de script P2TR. Une sortie Taproot se dépense soit par une signature Schnorr (*key path*), soit en satisfaisant l'un des scripts d'un arbre de Merkle (*script path*).

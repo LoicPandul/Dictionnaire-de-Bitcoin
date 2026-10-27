@@ -1,0 +1,1 @@
+Sigle de *Hardware Security Module*, appareil dédié qui génère et garde des clés cryptographiques et signe dans un environnement matériel inviolable. Sur Bitcoin, les entreprises et plateformes d'échange s'en servent pour signer des transactions sans que les clés en sortent.

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="832" viewBox="0 0 1280 832"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- identité -->
+    <circle class="acteur" cx="272" cy="112" r="80"/>
+    <text class="etiquette" x="272" y="123" text-anchor="middle">Alice</text>
+    <path class="lien" d="M352 112 H484"/>
+    <text class="annotation" x="418" y="96" text-anchor="middle">publie</text>
+    <rect class="structure" x="488" y="40" width="336" height="144"/>
+    <text class="etiquette" x="512" y="84">Message public</text>
+    <text class="secondaire" x="512" y="124">signé « Alice »</text>
+    <text class="mono" x="512" y="164">bc1q…7k3d</text>
+    <path class="lien" d="M656 184 V252"/>
+    <text class="annotation" x="680" y="230">même adresse</text>
+    <!-- cluster : graphe à plat -->
+    <rect class="structure" x="32" y="308" width="1216" height="476"/>
+    <text class="etiquette" x="64" y="360">Cluster</text>
+    <text class="annotation" x="64" y="398">attribué à Alice</text>
+    <path class="arete" d="M600 360 L545 440"/>
+    <path class="arete" d="M720 360 L800 420"/>
+    <path class="arete" d="M325 500 L415 475"/>
+    <path class="arete" d="M480 500 L400 610"/>
+    <path class="arete" d="M580 500 L720 610"/>
+    <path class="arete" d="M465 640 L675 640"/>
+    <path class="arete" d="M840 610 L880 480"/>
+    <path class="arete" d="M965 460 L1040 510"/>
+    <path class="arete" d="M250 530 L290 610"/>
+    <rect class="structure" x="115" y="470" width="210" height="60"/><text class="mono" x="220" y="511" text-anchor="middle">bc1q…s3u7</text>
+    <rect class="structure" x="415" y="440" width="210" height="60"/><text class="mono" x="520" y="481" text-anchor="middle">bc1q…zr9k</text>
+    <rect class="structure" x="755" y="420" width="210" height="60"/><text class="mono" x="860" y="461" text-anchor="middle">bc1q…ygr2</text>
+    <rect class="structure" x="995" y="510" width="210" height="60"/><text class="mono" x="1100" y="551" text-anchor="middle">bc1q…ce08</text>
+    <rect class="structure" x="255" y="610" width="210" height="60"/><text class="mono" x="360" y="651" text-anchor="middle">bc1q…6trm</text>
+    <rect class="structure" x="675" y="610" width="210" height="60"/><text class="mono" x="780" y="651" text-anchor="middle">bc1q…wxu5</text>
+    <text class="annotation" x="640" y="740" text-anchor="middle">chaque trait : entrées d'une même transaction</text>
+    <!-- sujet, à cheval sur le bord du cluster -->
+    <rect class="sujet" x="488" y="256" width="336" height="104"/>
+    <text class="nom-sujet" x="656" y="300" text-anchor="middle">Adresse publiée</text>
+    <text class="mono sur-sujet" x="656" y="340" text-anchor="middle">bc1q…7k3d</text>
+  </g>
+</svg>

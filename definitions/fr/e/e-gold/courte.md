@@ -1,0 +1,1 @@
+Système de monnaie numérique adossée à l'or, fondé en 1996 par Douglas Jackson et Barry Downey, qui permettait des transferts instantanés entre comptes libellés en grammes de métal. Poursuivi par le gouvernement américain en 2007, il illustre la fragilité des monnaies numériques centralisées.

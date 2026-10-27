@@ -1,0 +1,1 @@
+Système de preuve cryptographique qui démontre la validité d'un calcul sans révéler les données et sans configuration de confiance. Fondé sur des fonctions de hachage, il résiste aux attaques quantiques, mais ses preuves sont bien plus lourdes que celles d'un SNARK.

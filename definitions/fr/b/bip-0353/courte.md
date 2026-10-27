@@ -1,0 +1,1 @@
+Proposition qui associe une adresse lisible du type `utilisateur@domaine.com` à des instructions de paiement Bitcoin stockées dans le DNS et sécurisées par DNSSEC, pour rendre les adresses de paiement mémorisables.

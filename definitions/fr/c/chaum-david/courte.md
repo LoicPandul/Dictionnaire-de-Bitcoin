@@ -1,0 +1,1 @@
+Cryptographe, inventeur des réseaux de mélange (1981) et des signatures aveugles (1982), fondateur de DigiCash, qui a commercialisé le système eCash, dont les signatures aveugles se retrouvent dans les coinjoins chaumiens et dont les jetons au porteur inspirent les *mints* d'ecash Cashu et Fedimint.

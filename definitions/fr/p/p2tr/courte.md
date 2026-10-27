@@ -1,0 +1,1 @@
+Modèle de script standard introduit par Taproot, qui bloque des bitcoins sur une clé publique Schnorr unique pouvant aussi cacher un arbre de scripts alternatifs. Seul le chemin de dépense utilisé est révélé, et les adresses commencent par `bc1p`.

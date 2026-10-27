@@ -1,0 +1,1 @@
+Famille de signatures post-quantiques construites uniquement à partir d'une fonction de hachage, sans autre problème mathématique. Elle comprend des schémas à usage unique, à usage limité, avec état ou sans état, et ses signatures pèsent de quelques centaines à plusieurs milliers d'octets.

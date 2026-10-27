@@ -1,0 +1,1 @@
+Proposition, publiée le 1er avril 2014 sur un ton humoristique, qui fixe à zéro la récompense de bloc après 64 *halvings* pour corriger un bug qui aurait pu relancer la création de bitcoins vers 2214.

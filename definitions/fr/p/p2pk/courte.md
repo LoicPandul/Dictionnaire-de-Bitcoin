@@ -1,0 +1,1 @@
+Modèle de script standard qui bloque des bitcoins directement sur une clé publique, et non sur une adresse, et exige une signature de la clé privée associée pour les dépenser. Courant dans les premières versions de Bitcoin, il n'est presque plus utilisé.

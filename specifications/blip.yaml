@@ -1,0 +1,161 @@
+# bLIP — Bitcoin Lightning Improvement Proposals
+#
+# Une entrée par document : identifiant, titre d'origine, statut, résumé en français.
+# `definition` : slug de l'entrée du dictionnaire consacrée au document, imprimée sous le
+# résumé dans l'édition complète. `related` : entrées du dictionnaire liées au document.
+
+source: "https://github.com/lightning/blips"
+source_commit: "ca04f374d030"
+updated: "2026-10-25"
+
+entries:
+  - number: 1
+    id: "bLIP-0001"
+    title: "bLIP process"
+    status: "Active"
+    authors:
+      - "Ryan Gentry"
+    created: "2021-05-21"
+    summary: "Document fondateur qui définit ce qu'est une bLIP et comment la faire avancer, du brouillon discuté sur la liste lightning-dev jusqu'aux statuts *Proposed*, *Active* ou *Final*. Il trace aussi la frontière avec les BOLT : une fonctionnalité destinée à devenir universelle sur le Lightning Network doit passer par un BOLT."
+    definition: "blip-0001"
+    url: "https://github.com/lightning/blips/blob/master/blip-0001.md"
+  - number: 2
+    id: "bLIP-0002"
+    title: "Reserved values"
+    status: "Active"
+    authors:
+      - "Bastien Teinturier"
+    created: "2021-11-05"
+    summary: "Registre des valeurs réservées par les bLIP : *feature bits* au-delà de 255, types de messages entre 32768 et 65535, champs TLV ajoutés aux messages des BOLT et aux messages en oignon. Il évite que deux bLIP sans rapport utilisent la même valeur, ce qui risquerait de couper le réseau en deux."
+    definition: "blip-0002"
+    url: "https://github.com/lightning/blips/blob/master/blip-0002.md"
+  - number: 3
+    id: "bLIP-0003"
+    title: "Keysend"
+    status: "Active"
+    authors:
+      - "Valentine Wallace"
+    created: "2021-12-08"
+    summary: "Spécification du *keysend*, un paiement spontané qui se passe de facture. L'expéditeur tire au hasard une préimage de 32 octets, la place dans un champ TLV de l'oignon (type `5482373484`) et utilise son hash `SHA256` comme hash de paiement ; le destinataire y trouve la préimage qui lui permet de réclamer le paiement."
+    definition: "blip-0003"
+    url: "https://github.com/lightning/blips/blob/master/blip-0003.md"
+  - number: 4
+    id: "bLIP-0004"
+    title: "Experimental Endorsement Signaling"
+    status: "Active"
+    authors:
+      - "Carla Kirk-Cohen"
+    created: "2024-01-12"
+    summary: "Expérience de signalement d'endossement des HTLC, pour préparer une défense contre le *channel jamming*. Chaque HTLC porte un champ TLV `endorsed` d'un octet (7 s'il est endossé, 0 sinon) que les nœuds relaient sans s'en servir pour décider, afin de collecter des données pour des algorithmes de réputation. La fin de l'expérience est fixée au 1er janvier 2026."
+    definition: "blip-0004"
+    url: "https://github.com/lightning/blips/blob/master/blip-0004.md"
+  - number: 10
+    id: "bLIP-0010"
+    title: "Podcasting 2.0 Streaming payments, Boosts and Boostagrams"
+    status: "Active"
+    authors:
+      - "Satoshis Stream"
+    created: "2022-01-24"
+    summary: "Format des métadonnées que les applications Podcasting 2.0 joignent à leurs paiements *keysend* : un objet JSON placé dans le champ TLV `7629169`, qui nomme le podcast, l'épisode et le moment d'écoute. Il couvre les *streams*, versés à chaque minute d'écoute, et les *boosts*, des paiements manuels qui peuvent porter un message appelé *boostagram*."
+    definition: "blip-0010"
+    url: "https://github.com/lightning/blips/blob/master/blip-0010.md"
+  - number: 11
+    id: "bLIP-0011"
+    title: "NameDesc"
+    status: "Active"
+    authors:
+      - "Hampus Sjöberg"
+    created: "2022-01-27"
+    summary: "Convention qui place le nom du destinataire au début de la description d'une facture BOLT-11, suivi d'un deux-points et de deux espaces. Un portefeuille compatible affiche ce nom à part, et un portefeuille qui ignore la convention montre simplement la description entière."
+    definition: "blip-0011"
+    url: "https://github.com/lightning/blips/blob/master/blip-0011.md"
+  - number: 17
+    id: "bLIP-0017"
+    title: "Hosted Channels"
+    status: "Active"
+    authors:
+      - "Anton Kumaigorodski"
+      - "fiatjaf"
+    created: "2022-07-07"
+    summary: "Spécification des canaux hébergés (*hosted channels*), canaux sans transaction on-chain où le client fait confiance à l'hôte qui garde les fonds. Les deux parties signent chaque état du canal, ce qui rend les soldes vérifiables, mais le client ne peut pas forcer un règlement sur la blockchain. Le modèle se situe entre un portefeuille custodial et un vrai canal Lightning."
+    definition: "blip-0017"
+    url: "https://github.com/lightning/blips/blob/master/blip-0017.md"
+  - number: 25
+    id: "bLIP-0025"
+    title: "Allow forwarding HTLCs with less value than the onion claims to pay"
+    status: "Draft"
+    authors:
+      - "Valentine Wallace"
+    created: "2023-05-22"
+    summary: "Extension qui autorise l'avant-dernier saut à transmettre moins que le montant prévu dans l'oignon, en déclarant les frais prélevés dans le champ TLV `extra_fee` de `update_add_htlc`. Le destinataire refuse le HTLC s'il n'attendait pas ces frais ou s'ils sont trop élevés. Le cas typique est un LSP qui ouvre un canal *just-in-time* et se paie sur le premier paiement."
+    definition: "blip-0025"
+    url: "https://github.com/lightning/blips/blob/master/blip-0025.md"
+  - number: 32
+    id: "bLIP-0032"
+    title: "Onion Message DNS Resolution"
+    status: "Active"
+    authors:
+      - "Matt Corallo"
+    created: "2024-02-10"
+    summary: "Protocole de résolution DNS par messages en oignon. Un nœud envoie un `dnssec_query` pour un nom de domaine et reçoit en retour un `dnssec_proof` avec les enregistrements TXT et leur preuve DNSSEC, sans contacter lui-même un serveur DNS. Il sert surtout à traduire une adresse `utilisateur@domaine` (BIP-0353) en instructions de paiement."
+    definition: "blip-0032"
+    url: "https://github.com/lightning/blips/blob/master/blip-0032.md"
+  - number: 39
+    id: "bLIP-0039"
+    title: "BOLT 11 Invoice Blinded Path Tagged Field"
+    status: "Draft"
+    authors:
+      - "Elle Mouton"
+    created: "2024-07-08"
+    summary: "Extension qui ajoute aux factures BOLT-11 un champ étiqueté `b`, porteur d'un ou plusieurs chemins de paiement aveuglés. Le destinataire profite ainsi du *route blinding* du BOLT-04 sans attendre que tout le réseau prenne en charge les offres BOLT-12."
+    definition: "blip-0039"
+    url: "https://github.com/lightning/blips/blob/master/blip-0039.md"
+  - number: 42
+    id: "bLIP-0042"
+    title: "Bolt 12 Contacts"
+    status: "Active"
+    authors:
+      - "Bastien Teinturier"
+    created: "2024-07-19"
+    summary: "Extension qui ajoute des informations de contact à un paiement BOLT-12, dans des champs TLV de l'`invoice_request`. Le destinataire reconnaît un contact connu ou ajoute le payeur à ses contacts, et peut le payer en retour sans autre échange grâce à l'offre ou au nom BIP-0353 que le payeur révèle."
+    url: "https://github.com/lightning/blips/blob/master/blip-0042.md"
+  - number: 50
+    id: "bLIP-0050"
+    title: "LSPS0: LSP Spec Transport Layer"
+    status: "Active"
+    authors:
+      - "ZmnSCPxj jxPCSnmZ"
+    created: "2024-12-02"
+    summary: "Couche de transport commune aux spécifications LSPS entre un fournisseur de services Lightning (LSP) et ses clients. Les requêtes JSON-RPC 2.0 circulent sur la connexion BOLT-08 déjà ouverte, dans des messages de type `37913`, et le document fixe les formats communs (montants, frais, adresses, signatures) que reprennent LSPS1, LSPS2 et LSPS5."
+    definition: "blip-0050"
+    url: "https://github.com/lightning/blips/blob/master/blip-0050.md"
+  - number: 51
+    id: "bLIP-0051"
+    title: "LSPS1: Channel Requests"
+    status: "Active"
+    authors:
+      - "Severin Bühler"
+    created: "2024-12-02"
+    summary: "API par laquelle un portefeuille achète un canal à un LSP. Le client consulte les conditions avec `lsps1.get_info`, passe commande avec `lsps1.create_order` (capacité, durée, solde de chaque côté), puis paie par facture BOLT-11, offre BOLT-12 ou transaction on-chain ; si l'ouverture échoue, le LSP le rembourse."
+    definition: "blip-0051"
+    url: "https://github.com/lightning/blips/blob/master/blip-0051.md"
+  - number: 52
+    id: "bLIP-0052"
+    title: "LSPS2: JIT Channel Negotiation"
+    status: "Active"
+    authors:
+      - "ZmnSCPxj jxPCSnmZ"
+    created: "2024-12-02"
+    summary: "Protocole de négociation des canaux *just-in-time* (JIT) : quand un paiement arrive pour un client qui n'a encore aucun canal, le LSP ouvre le canal à ce moment-là et retient le coût de la liquidité entrante sur ce premier paiement. Le client consulte d'abord les frais avec `lsps2.get_info`, puis demande le canal avec `lsps2.buy`."
+    definition: "blip-0052"
+    url: "https://github.com/lightning/blips/blob/master/blip-0052.md"
+  - number: 55
+    id: "bLIP-0055"
+    title: "LSPS5: Webhook Registration"
+    status: "Active"
+    authors:
+      - "ZmnSCPxj jxPCSnmZ"
+    created: "2024-12-02"
+    summary: "Protocole d'enregistrement de *webhooks* auprès d'un LSP, pour réveiller une application mobile que le système a suspendue. Le client déclare une URL avec `lsps5.set_webhook`, et le LSP l'appelle avec une notification signée par la clé de son nœud quand un paiement arrive, qu'un HTLC approche de son expiration ou qu'un message en oignon attend."
+    definition: "blip-0055"
+    url: "https://github.com/lightning/blips/blob/master/blip-0055.md"

@@ -1,0 +1,1 @@
+Proposition qui ajoute le message P2P `feefilter`, par lequel un nœud indique à ses pairs le taux de frais minimum en dessous duquel il ne veut pas recevoir de transactions, pour économiser de la bande passante.

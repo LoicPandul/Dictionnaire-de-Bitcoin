@@ -1,0 +1,1 @@
+Script qui fixe les conditions de dépense d'une sortie P2SH : seul son hash figure dans le `scriptPubKey`, et il est révélé en clair dans le `scriptSig` au moment de la dépense, par exemple pour un multisig P2SH.

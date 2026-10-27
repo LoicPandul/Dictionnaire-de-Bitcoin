@@ -1,0 +1,1 @@
+Projet de hard fork issu du *New York Agreement* de 2017, qui prévoyait d'activer SegWit puis de doubler la taille maximale des blocs à 2 Mo. Faute de consensus, la partie 2X a été annulée en novembre 2017.

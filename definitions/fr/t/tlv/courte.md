@@ -1,0 +1,1 @@
+Format d'encodage *type-length-value*, où chaque donnée porte son type, sa longueur et sa valeur. Il rend les messages extensibles sans casser la compatibilité, et sert notamment dans les messages du Lightning Network et dans Taproot Assets.

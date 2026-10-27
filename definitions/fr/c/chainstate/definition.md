@@ -1,1 +1,1 @@
-Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. C'est donc en réalité un synonyme d'« UTXO set ».
+Nom technique donné au dossier utilisé pour stocker l'UTXO set sur Bitcoin Core. Cette base de données LevelDB contient aussi des métadonnées d'état, comme le hachage du meilleur bloc connu et la clé d'obfuscation des données. Par extension, le terme désigne souvent l'UTXO set lui-même.

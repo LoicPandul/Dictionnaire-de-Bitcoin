@@ -1,0 +1,1 @@
+Proposition de Jeff Garzik, pendant la Blocksize War, qui laissait les mineurs voter bloc par bloc pour ajuster la taille maximale des blocs, de 5 % au plus par période de 2016 blocs. Elle a été rejetée.

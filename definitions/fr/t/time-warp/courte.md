@@ -1,0 +1,1 @@
+Attaque théorique sur l'ajustement de la difficulté, où un mineur majoritaire manipule les horodatages à la frontière de deux périodes pour faire baisser la difficulté. Le soft fork Consensus Cleanup (BIP-0054) propose de la corriger.

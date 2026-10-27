@@ -1,0 +1,1 @@
+Sigle de *Lightning Network Daemon*. Implémentation du Lightning Network écrite en Go et développée par Lightning Labs, qui permet de faire tourner un nœud Lightning et d'y créer et gérer des canaux de paiement.

@@ -1,0 +1,1 @@
+Bibliothèque de Bitcoin Core qui isole son moteur de validation, pour que d'autres logiciels valident blocs et scripts avec exactement le code de Bitcoin Core. Son interface en C, fusionnée en novembre 2025, reste expérimentale.

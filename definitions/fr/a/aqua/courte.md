@@ -1,0 +1,1 @@
+Portefeuille mobile de JAN3, qui réunit Bitcoin, le Lightning Network et la sidechain Liquid dans une seule application. Il passe par des *atomic swaps* pour les paiements Lightning, sans nœud embarqué et sans confier ses fonds à un tiers.

@@ -1,0 +1,1 @@
+Quatrième réseau de test public de Bitcoin, défini par le BIP-0094 et lancé en 2024 pour remplacer testnet3. Il corrige le mécanisme de difficulté de son prédécesseur et sert à tester des applications avec des bitcoins sans valeur.

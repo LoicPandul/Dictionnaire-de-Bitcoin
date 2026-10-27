@@ -1,0 +1,94 @@
+# Chronologie de Bitcoin : 2009.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2009-01-03"
+    title: "Minage du bloc genèse"
+    text: "Le bloc 0 de Bitcoin est horodaté à 18 h 15 min 05 s UTC. Sa transaction coinbase contient le titre du Times du jour : « Chancellor on brink of second bailout for banks »."
+    related: ["genese", "coinbase", "nakamoto-satoshi"]
+    sources:
+      - "https://mempool.space/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
+      - "https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
+      - "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp"
+
+  - date: "2009-01-08"
+    title: "Sortie de Bitcoin v0.1"
+    text: "À 19 h 27 UTC, Satoshi Nakamoto annonce sur la liste Cryptography la première version de Bitcoin, pour Windows uniquement, code source C++ inclus. Le logiciel se télécharge sur SourceForge."
+    related: ["bitcoin-core", "nakamoto-satoshi", "sourceforge"]
+    sources:
+      - "https://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html"
+      - "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
+
+  - date: "2009-01-09"
+    title: "Minage du bloc 1"
+    text: "Le bloc 1 est horodaté à 2 h 54 UTC, près de 6 jours après le bloc genèse. La chaîne de blocs commence à s'allonger avec la sortie du logiciel."
+    related: ["genese"]
+    sources:
+      - "https://mempool.space/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048"
+      - "https://blockstream.info/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048"
+
+  - date: "2009-01-11"
+    title: "Hal Finney tweete « Running bitcoin »"
+    text: "À 3 h 33 UTC, Hal Finney publie sur Twitter « Running bitcoin ». Il racontera en 2013 avoir téléchargé le logiciel dès l'annonce de Satoshi Nakamoto et pense avoir été le premier, après lui, à le faire tourner."
+    related: ["finney-hal"]
+    sources:
+      - "https://twitter.com/halfin/status/1110302988"
+      - "https://bitcointalk.org/index.php?topic=155054.0"
+
+  - date: "2009-01-12"
+    title: "Première transaction entre deux personnes"
+    text: "Le bloc 170, horodaté à 3 h 30 UTC, contient la première transaction de Satoshi Nakamoto vers une autre personne : il envoie 10 BTC à Hal Finney, à titre de test, et se rend 40 BTC de monnaie."
+    related: ["finney-hal", "nakamoto-satoshi"]
+    sources:
+      - "https://mempool.space/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16"
+      - "https://blockstream.info/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16"
+      - "https://bitcointalk.org/index.php?topic=155054.0"
+
+  - date: "2009-02-11"
+    title: "Satoshi Nakamoto présente Bitcoin à la P2P Foundation"
+    text: "Satoshi Nakamoto présente Bitcoin sur le forum de la P2P Foundation. Il y écrit que le problème de fond des monnaies conventionnelles est la confiance qu'elles exigent, envers la banque centrale qui ne doit pas déprécier la monnaie et envers les banques."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/"
+      - "https://web.archive.org/web/20090221024857/http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source"
+
+  - date: "2009-10-05"
+    title: "Premier taux de change publié entre bitcoin et dollar"
+    text: "Le site New Liberty Standard publie son premier taux : 1 USD vaut 1 309,03 BTC. Le prix ne vient pas d'échanges réels mais d'un calcul fondé sur le coût de l'électricité nécessaire pour miner ces bitcoins."
+    sources:
+      - "https://web.archive.org/web/20091229132610/http://newlibertystandard.wetpaint.com/page/Exchange+Rate"
+      - "https://www.bullionstar.com/blogs/ronan-manly/dawn-of-bitcoin-price-discovery-2009-2011-the-very-early-bitcoin-exchanges"
+
+  - date: "2009-10-12"
+    title: "Première vente connue de bitcoins contre des dollars"
+    text: "Martti Malmi vend 5 050 BTC contre 5,02 USD. Il retrouvera la trace de cet échange en 2014 dans ses e-mails : c'est la plus ancienne vente connue de bitcoins contre des dollars."
+    sources:
+      - "https://twitter.com/marttimalmi/status/423455561703624704"
+      - "https://bitcoinmagazine.com/markets/bitcoins-first-trade-now-worth-130-million"
+
+  - date: "2009-11-22"
+    title: "Ouverture du forum Bitcoin"
+    text: "Satoshi Nakamoto ouvre le nouveau forum Bitcoin, hébergé par Martti Malmi, futur bitcointalk.org. Il y republie une sélection de fils de l'ancien forum de SourceForge."
+    related: ["bitcointalk", "nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=5.msg28#msg28"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/5/"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/"
+
+  - date: "2009-12-16"
+    title: "Sortie de Bitcoin 0.2"
+    text: "Bitcoin 0.2 apporte une version Linux, le démarrage automatique, le minage sur plusieurs processeurs et la connexion par proxy, pour passer par Tor. Satoshi Nakamoto remercie Martti Malmi pour son travail sur le code."
+    related: ["bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=16.msg73#msg73"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/"
+      - "https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/29/"
+
+  - date: "2009-12-30"
+    title: "Première hausse de la difficulté"
+    text: "Au bloc 32 256, la difficulté de minage augmente pour la première fois : elle passe de 1, sa valeur minimale, à 1,18."
+    related: ["difficulte", "ajustement-de-la-difficulte"]
+    sources:
+      - "https://mempool.space/block/000000004f2886a170adb7204cb0c7a824217dd24d11a74423d564c4e0904967"
+      - "https://blockstream.info/block/000000004f2886a170adb7204cb0c7a824217dd24d11a74423d564c4e0904967"

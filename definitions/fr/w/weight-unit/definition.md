@@ -5,10 +5,12 @@ $$poids\ =\ taille\ sans\ witness \times 4\ +\ taille\ du\ witness \times 1$$
 
 Autrement dit, chaque octet de données *non-witness* compte pour 4 WU, tandis que chaque octet de données *witness* ne compte que pour 1 WU. Pour une transaction *legacy* (sans SegWit), il n'y a pas de données *witness*, donc le poids est simplement 4 fois la taille en octets. Par exemple, une transaction *legacy* P2PKH classique de 226 octets pèse $226 \times 4 = 904$ WU.
 
-Pour une transaction SegWit équivalente (P2WPKH, 1 input, 2 outputs), la taille totale est d'environ 222 octets, dont environ 110 octets de *witness* (signature et clé publique). Le poids est alors :
-$$112 \times 4 + 110 \times 1 = 448 + 110 = 558\ WU$$
+Pour une transaction SegWit équivalente (P2WPKH, 1 input, 2 outputs), la taille totale est d'environ 223 octets, dont environ 110 octets de *witness* (signature et clé publique). Le poids est alors :
+$$113 \times 4 + 110 \times 1 = 452 + 110 = 562\ WU$$
 
 Cela représente une réduction d'environ 38 % par rapport à la transaction *legacy* équivalente, ce qui permet d'inclure davantage de transactions dans un bloc.
+
+![À la même échelle, une transaction legacy P2PKH de 226 octets pèse 904 WU, tandis qu'une transaction SegWit P2WPKH équivalente pèse 562 WU, car ses 110 octets de témoin ne comptent qu'une fois.](./assets/image-1.png)
 
 La limite de bloc est fixée à 4 000 000 WU. Si un bloc ne contient que des transactions *legacy*, cette limite est équivalente à l'ancienne limite de 1 000 000 d'octets ($1\,000\,000 \times 4 = 4\,000\,000$), ce qui assure la rétrocompatibilité avec les nœuds non mis à jour. En pratique, avec une majorité de transactions SegWit, les blocs atteignent environ 2 à 3 Mo en taille réelle. Le maximum théorique approche 4 Mo, mais uniquement dans le cas pathologique d'un bloc rempli presque exclusivement de données *witness*.
 

@@ -1,0 +1,1 @@
+Protocole de communication chiffré sur Tor, développé par les équipes de Samourai Wallet, qui permet à deux utilisateurs d'échanger les PSBT d'une transaction collaborative Cahoots, comme Stowaway ou Stonewall x2.

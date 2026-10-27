@@ -1,0 +1,1 @@
+Proposition qui définit les portefeuilles hiérarchiques déterministes (HD), où une seule graine permet de dériver un arbre de paires de clés et de toutes les régénérer, ce qui facilite l'usage d'une adresse neuve à chaque réception.

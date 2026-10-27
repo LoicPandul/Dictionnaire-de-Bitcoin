@@ -1,0 +1,1 @@
+Terme de la communauté Bitcoin qui désigne le fait de garder ses bitcoins sur le long terme sans les vendre, malgré la volatilité. Il vient d'une faute de frappe pour *holding* dans un message de 2013 sur BitcoinTalk.

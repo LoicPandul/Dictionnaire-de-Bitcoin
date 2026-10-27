@@ -1,0 +1,1 @@
+Base de données de LND qui stocke l'état complet des canaux d'un nœud. Elle change à chaque paiement et restaurer une copie obsolète expose aux pénalités, d'où le recours aux *Static Channel Backups* pour sauvegarder.

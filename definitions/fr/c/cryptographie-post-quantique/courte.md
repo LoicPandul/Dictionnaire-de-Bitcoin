@@ -1,0 +1,1 @@
+Ensemble d'algorithmes qui s'exécutent sur des ordinateurs ordinaires mais reposent sur des problèmes que même un ordinateur quantique ne sait pas résoudre efficacement. Ils visent à remplacer RSA et la cryptographie sur courbes elliptiques, dont ECDSA et Schnorr.

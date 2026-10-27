@@ -1,0 +1,1 @@
+Protocole de coinjoin décentralisé qui utilise Nostr comme couche de communication, sans coordinateur central. Les participants inscrivent leurs sorties via des relais Nostr, puis signent chacun la PSBT commune avant sa diffusion.

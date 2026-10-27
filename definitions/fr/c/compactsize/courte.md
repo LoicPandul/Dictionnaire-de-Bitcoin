@@ -1,0 +1,1 @@
+Format d'encodage d'entiers non signés à longueur variable, utilisé par le protocole Bitcoin pour indiquer un nombre d'éléments ou une taille de champ. Il occupe de 1 à 9 octets selon la valeur, ce qui économise de la place pour les petits nombres.

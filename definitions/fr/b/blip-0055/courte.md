@@ -1,0 +1,1 @@
+Proposition qui définit LSPS5, un protocole avec lequel un client mobile enregistre un *webhook* auprès de son LSP, pour être notifié quand un paiement arrive ou qu'un événement de son canal demande son attention.

@@ -1,0 +1,1 @@
+Fichiers de Bitcoin Core qui indexent toutes les transactions de la blockchain, pour retrouver rapidement l'une d'elles par son TXID. Ils ne sont créés que si l'option `txindex=1` est activée dans `bitcoin.conf`.

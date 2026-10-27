@@ -1,0 +1,1 @@
+Forme de *solo mining* où un mineur tente de trouver seul un bloc avec un petit appareil à faible *hashrate*, comme un Bitaxe : ses chances sont infimes, mais il garde toute la récompense s'il y parvient.

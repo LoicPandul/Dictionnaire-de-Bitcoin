@@ -1,0 +1,1 @@
+Solution de passage à l'échelle qui exécute les transactions par lots hors de la chaîne principale, puis publie sur celle-ci leurs données ou une preuve de validité. Elle augmente le débit et réduit les frais tout en conservant la sécurité de la couche de base.

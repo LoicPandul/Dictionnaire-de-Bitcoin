@@ -1,0 +1,1 @@
+Méthode de paiement Lightning qui envoie des fonds directement à la clé publique d'un nœud, sans facture préalable. L'expéditeur choisit la préimage et la glisse dans le paquet onion, ce qui le prive de preuve de paiement.

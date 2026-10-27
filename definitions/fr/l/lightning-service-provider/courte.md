@@ -1,0 +1,1 @@
+Entreprise qui fournit des services de liquidité sur Lightning, en ouvrant des canaux ou en convertissant des fonds *on-chain*. Les portefeuilles *non-custodial* s'en servent pour que l'utilisateur reçoive des paiements sans gérer lui-même ses canaux.

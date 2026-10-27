@@ -1,0 +1,323 @@
+# Chronologie de Bitcoin : 2010.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2010-02-23"
+    title: "Bitcoin peut tourner en démon et se piloter par JSON-RPC"
+    text: "Satoshi Nakamoto annonce que la version 0.2.6, dans le dépôt SVN, peut tourner en démon sans interface graphique et se piloter en ligne de commande ou par JSON-RPC, sur le port local 8332. Deux jours plus tard, le code gagne une cible de compilation `bitcoind`."
+    related: ["bitcoind", "rpc-remote-procedure-call", "nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=63.msg452#msg452"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/71/"
+      - "https://github.com/bitcoin/bitcoin/commit/30158c77e99a099cbdd556bacbac18b431c3870c"
+      - "https://github.com/bitcoin/bitcoin/commit/5eede9d4d9932969cd75a47dc0d6fd4c090f0342"
+
+  - date: "2010-02-24"
+    title: "Satoshi Nakamoto publie de nouvelles icônes pour Bitcoin"
+    text: "Satoshi Nakamoto propose sur le forum de nouvelles icônes pour le logiciel, avec une image de 530 × 529 pixels à réduire selon les besoins. Il les verse dans le domaine public et demande que les œuvres dérivées le soient aussi."
+    related: ["nakamoto-satoshi", "bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=64.msg504#msg504"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/75/"
+
+  - date: "2010-03-17"
+    title: "Ouverture de Bitcoin Market, première plateforme d'échange"
+    text: "Bitcoin Market, que dwdollar a proposé sur le forum le 15 janvier, ouvre aux échanges réels, avec PayPal pour les dollars. La veille, il y place un ordre d'achat de 500 BTC à 0,0067 USD, le cours de New Liberty Standard selon lui."
+    related: ["bitcointalk"]
+    sources:
+      - "https://guinnessworldrecords.com/world-records/696258-first-cryptocurrency-exchange"
+      - "https://news.bitcoin.com/bitcoin-history-part-6-the-first-bitcoin-exchange/"
+      - "https://bitcointalk.org/index.php?topic=20.20"
+
+  - date: "2010-05-18"
+    title: "Laszlo Hanyecz offre 10 000 BTC pour deux pizzas"
+    text: "Sur bitcointalk, Laszlo Hanyecz propose 10 000 BTC à qui lui fera livrer « a couple of pizzas », deux grandes de préférence, chez lui à Jacksonville, en Floride. Peu lui importe qu'elles soient faites maison ou commandées chez un livreur."
+    related: ["pizza-day", "bitcointalk"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=137.0"
+      - "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/"
+      - "https://bitcoinmagazine.com/culture/bitcoin-pizza-day-a-day-of-celebration"
+
+  - date: "2010-05-19"
+    title: "Première baisse de la difficulté"
+    text: "Au bloc 56 448, la difficulté de minage baisse pour la première fois : elle passe de 12,85 à 11,85. Tous les ajustements depuis le 30 décembre 2009 avaient été des hausses."
+    related: ["difficulte", "ajustement-de-la-difficulte"]
+    sources:
+      - "https://mempool.space/block/00000000051a16879d044e2f58b60ecaedc9dc92a00416f9035ccc018e72f4ed"
+      - "https://blockstream.info/block/00000000051a16879d044e2f58b60ecaedc9dc92a00416f9035ccc018e72f4ed"
+
+  - date: "2010-05-22"
+    title: "Pizza Day : 10 000 BTC pour deux pizzas"
+    text: "À 19 h 17 UTC, Laszlo Hanyecz annonce avoir échangé 10 000 BTC contre deux pizzas, fournies par jercos. Le paiement, confirmé dans le bloc 57 043, est le premier achat connu d'un bien physique en bitcoins."
+    related: ["pizza-day"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=137.0"
+      - "https://mempool.space/tx/a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
+      - "https://blockstream.info/tx/a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
+      - "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/"
+
+  - date: "2010-06-11"
+    title: "Gavin Andresen ouvre le premier *faucet* Bitcoin"
+    text: "Gavin Andresen ouvre freebitcoins.appspot.com, un site qui donne 5 BTC à chaque visiteur, et l'approvisionne de 1 100 BTC pour commencer. C'est son premier projet de code autour de Bitcoin : il veut que les nouveaux venus puissent essayer avec quelques pièces."
+    related: ["faucet"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=183.0"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/split/2010-06-11-173845.html"
+      - "https://decrypt.co/317988/charlie-shrem-launches-new-bitcoin-faucet-no-free-coins-yet"
+
+  - date: "2010-06-17"
+    title: "Satoshi Nakamoto : la conception est « set in stone »"
+    text: "Satoshi Nakamoto écrit que, depuis la version 0.1, la conception de base de Bitcoin est figée (« set in stone »). Il a donc créé Script pour couvrir des types de transactions futurs, et juge qu'une seconde implémentation compatible serait « a menace to the network »."
+    related: ["script", "nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=195.msg1611#msg1611"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/"
+
+  - date: "2010-06-21"
+    title: "Satoshi Nakamoto sur les bitcoins perdus"
+    text: "Interrogé sur les bitcoins perdus, Satoshi Nakamoto répond sur le forum : « Lost coins only make everyone else's coins worth slightly more. Think of it as a donation to everyone. »"
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=198.msg1640#msg1640"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/131/"
+
+  - date: "2010-07-06"
+    title: "Sortie de Bitcoin 0.3"
+    text: "Satoshi Nakamoto annonce Bitcoin 0.3 : pilotage en ligne de commande et par JSON-RPC, démon sans interface graphique, hachage 20 % plus rapide et première version pour Mac OS X, portée par Laszlo. Le logiciel est aussi traduit en allemand, en néerlandais et en italien."
+    related: ["bitcoin-core", "bitcoind"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=238.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/168/"
+      - "https://github.com/bitcoin/bitcoin/commit/603c7ccea84a6e906c9095d73dff8552e79bb5ac"
+
+  - date: "2010-07-11"
+    title: "Bitcoin à la une de Slashdot"
+    text: "Slashdot publie « Bitcoin Releases Version 0.3 », soumis par teppy. L'afflux de visiteurs fait tomber le site bitcoin.org en moins d'une heure, et les téléchargements passent d'environ 3 000 en juin à plus de 20 000 en juillet."
+    sources:
+      - "https://news.slashdot.org/story/10/07/11/1747245/bitcoin-releases-version-03"
+      - "https://bitcoinmagazine.com/technical/bitcoin-gets-slashdotted-creation-mt-gox-1432938208"
+      - "https://99bitcoins.com/bitcoin/historical-price/"
+
+  - date: "2010-07-14"
+    title: "Satoshi Nakamoto décrit l'avenir des clients légers"
+    text: "Satoshi Nakamoto rappelle que le livre blanc prévoit un client léger, la vérification simplifiée des paiements (SPV), pas encore codé. Il pense qu'il n'y aura jamais plus de 100 000 nœuds complets, souvent des fermes de serveurs, et des millions de clients légers."
+    related: ["simplified-payment-verification", "noeud-spv-noeud-leger", "nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=286.msg2947#msg2947"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/188/"
+
+  - date: "2010-07-15"
+    title: "Apparition de la constante de 1 Mo dans le code"
+    text: "Satoshi Nakamoto ajoute au code la constante `MAX_BLOCK_SIZE`, fixée à 1 000 000 octets, dans un commit intitulé « fix openssl linkage problems ». Pour l'instant, elle borne seulement la taille des blocs que le nœud assemble pour miner."
+    related: ["max-bloc-size", "nakamoto-satoshi"]
+    sources:
+      - "https://github.com/bitcoin/bitcoin/commit/a30b56ebe76ffff9f9cc8a6667186179413c6349"
+      - "https://farside.co.uk/?p=26824"
+
+  - date: "2010-07-16"
+    title: "La difficulté quadruple en un ajustement"
+    text: "Au bloc 68 544, la difficulté passe de 45,39 à 181,54 : elle est presque multipliée par 4, le maximum qu'autorise un ajustement. Trois jours plus tôt, au bloc 66 528, elle avait déjà doublé, de 23,5 à 45,39."
+    related: ["difficulte", "ajustement-de-la-difficulte"]
+    sources:
+      - "https://mempool.space/block/0000000000519051eb5f3c5943cdbc176a0eff4e1fbc3e08287bdb76299b8e5c"
+      - "https://blockstream.info/block/0000000000519051eb5f3c5943cdbc176a0eff4e1fbc3e08287bdb76299b8e5c"
+      - "https://mempool.space/block/0000000002216521d1a33de5bf19b3f8966395fbc81be449e2b2f1bdab2bd88f"
+      - "https://github.com/bitcoin/bitcoin/blob/master/src/pow.cpp"
+
+  - date: "2010-07-17"
+    title: "Bitcoin 0.3.2 ajoute les premiers *checkpoints*"
+    text: "Bitcoin 0.3.2 inscrit dans le code des points de contrôle (*checkpoints*) aux blocs 11 111, 33 333 et 68 555. Même avec plus de 50 % de la puissance de calcul, un attaquant ne peut plus réécrire la chaîne d'avant la veille pour les nœuds à jour."
+    related: ["checkpoints", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=437.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/232/"
+      - "https://github.com/bitcoin/bitcoin/commit/ae922a36a4b54a8e78d3a2a2cb2af7f03960fce3"
+
+  - date: "2010-07-18"
+    title: "Ouverture de Mt. Gox"
+    text: "À 1 h 57 UTC, Jed McCaleb annonce sur bitcointalk l'ouverture de Mt. Gox, sur un domaine acheté en 2007 pour un site d'échange de cartes Magic: The Gathering. Le premier échange de la plateforme a lieu la veille à 23 h 09 UTC : 20 BTC à 0,04951 USD."
+    related: ["mtgox"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=444.0"
+      - "https://news.bitcoin.com/bitcoin-history-part-9-mt-gox-is-born/"
+      - "https://bitcoin.clarkmoody.com/posts/ten-years-bitcoin-market-data"
+      - "https://cryptopotato.com/10-years-ago-first-bitcoin-trade-on-mt-gox-for-0-05-per-btc/"
+
+  - date: "2010-07-29"
+    title: "Satoshi Nakamoto : « I don't have time to try to convince you »"
+    text: "Satoshi Nakamoto écrit qu'un nœud par utilisateur n'est pas la configuration prévue à grande échelle. À un sceptique des paiements rapides, il répond : « If you don't believe me or don't get it, I don't have time to try to convince you, sorry. »"
+    related: ["nakamoto-satoshi", "simplified-payment-verification"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=532.msg6269#msg6269"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/287/"
+
+  - date: "2010-07-29"
+    title: "Mise à jour d'urgence 0.3.6 et correctif d'OP_RETURN"
+    text: "Satoshi Nakamoto demande de passer d'urgence à la version 0.3.5, puis à la 0.3.6 le jour même, et de refuser tout paiement d'ici là. La faille corrigée (CVE-2010-5141) permettait de dépenser les bitcoins d'autrui : `OP_RETURN` fait désormais échouer le script."
+    related: ["op-return-0x6a", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=626.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/289/"
+      - "https://nvd.nist.gov/vuln/detail/CVE-2010-5141"
+      - "https://github.com/bitcoin/bitcoin/commit/757f0769d8360ea043f469f3a35f6ec204740446"
+
+  - date: "2010-08-15"
+    title: "Incident du *value overflow* : 184 milliards de bitcoins créés"
+    text: "Un bloc de hauteur 74 638, horodaté à 17 h 05 UTC, contient une transaction dont deux sorties valent chacune 92 233 720 368,54 BTC. Un dépassement d'entier a permis de créer environ 184 milliards de bitcoins. Jeff Garzik le signale sur le forum à 18 h 08 UTC."
+    related: ["value-overflow-incident"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=822.0"
+      - "https://bitcointalk.org/index.php?topic=823.0"
+      - "https://nvd.nist.gov/vuln/detail/CVE-2010-5139"
+
+  - date: "2010-08-15"
+    title: "Désactivation d'OP_CAT et d'autres opcodes"
+    text: "Dans un commit intitulé « misc changes », Satoshi Nakamoto désactive 15 opcodes, dont `OP_CAT`, `OP_MUL` et `OP_LSHIFT`. Le même commit abaisse de 5 000 à 520 octets la taille maximale d'un élément poussé sur la pile."
+    related: ["op-cat-0x7e", "opcodes", "script"]
+    sources:
+      - "https://github.com/bitcoin/bitcoin/commit/4bd188c4383d6e614e18f79dc337fbabe8464c82"
+      - "https://mirror.b10c.me/lists/bitcoindev/CAMZUoK=-3dGapPQTfKdd4oMQukiTyN1v123Yjo4ihO6YOHuBZQ@mail.gmail.com/raw"
+
+  - date: "2010-08-15"
+    title: "Bitcoin 0.3.10 corrige le *value overflow*"
+    text: "À 23 h 48 UTC, Satoshi Nakamoto publie Bitcoin 0.3.10, qui rejette la transaction fautive du bloc 74 638. Les mineurs à jour prolongent une autre chaîne, qui finit par dépasser la mauvaise : les 184 milliards de bitcoins disparaissent avec elle."
+    related: ["value-overflow-incident", "bitcoin-core", "orphelin"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=827.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/376/"
+      - "https://github.com/bitcoin/bitcoin/commit/d4c6b90ca3f9b47adb1b2724a0c3514f80635c84"
+
+  - date: "2010-08-27"
+    title: "Bitcoin 0.3.11 introduit le système d'alerte"
+    text: "Bitcoin 0.3.11 ajoute le système d'alerte : des messages signés par une clé privée que seul Satoshi Nakamoto détient, relayés sur le réseau, affichent un avertissement et peuvent mettre le nœud en mode sans échec, qui bloque les commandes RPC de paiement."
+    related: ["alert-system", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=941.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/429/"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/409/"
+      - "https://github.com/bitcoin/bitcoin/commit/401926283a200994ecd7df8eae8ced8e0b067c46"
+
+  - date: "2010-09-07"
+    title: "La limite de 1 Mo devient une règle de consensus"
+    text: "Dans le commit de la version 0.3.12, Satoshi Nakamoto rend invalides les blocs de plus de 1 000 000 octets au-delà du bloc 79 400. Ce bloc est miné le 12 septembre, et la limite s'applique dès le suivant."
+    related: ["max-bloc-size", "soft-fork", "blocksize-war"]
+    sources:
+      - "https://github.com/bitcoin/bitcoin/commit/8c9479c6bbbc38b897dc97de9d04e4d5a5a36730"
+      - "https://farside.co.uk/?p=26824"
+      - "https://mempool.space/block/000000000021d821ec06be7173f413690bc5c4bc648dfa70b3b6763236f055b7"
+
+  - date: "2010-09-28"
+    title: "La difficulté dépasse 1 000"
+    text: "Au bloc 82 656, la difficulté dépasse 1 000 pour la première fois : elle passe de 917,83 à 1 318,67. Le 4 mai, elle valait encore 12,85."
+    related: ["difficulte"]
+    sources:
+      - "https://mempool.space/block/000000000024fc69f5415908b1960092a8e81b9d3b9a03c1133f5cb0a2d3c2af"
+      - "https://blockstream.info/block/000000000024fc69f5415908b1960092a8e81b9d3b9a03c1133f5cb0a2d3c2af"
+
+  - date: "2010-10-01"
+    title: "Publication d'un mineur OpenCL pour cartes graphiques"
+    text: "m0mchil publie sur bitcointalk « python OpenCL bitcoin miner », un mineur pour cartes graphiques écrit en Python avec OpenCL, futur poclbm. En novembre, Satoshi Nakamoto saluera cette idée de mineur externe au client officiel."
+    related: ["minage", "mineur", "getwork"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1334.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/threads/232/"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/507/"
+
+  - date: "2010-10-03"
+    title: "Jeff Garzik propose de relever la limite de taille des blocs"
+    text: "Jeff Garzik publie un correctif qui relève la limite de taille des blocs, pour « at least match Paypal's average transaction rate ». Satoshi Nakamoto déconseille de l'appliquer, car il rendrait le nœud incompatible, puis explique le lendemain qu'un relèvement pourrait être programmé à une hauteur future."
+    related: ["max-bloc-size", "blocksize-war", "hard-fork"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1347.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/485/"
+
+  - date: "2010-10-21"
+    title: "Bitcoin 0.3.14 intègre le testnet"
+    text: "Bitcoin 0.3.14 intègre le réseau de test de Gavin Andresen, activé par l'option `-testnet`, qui écoute sur le port 18333. La version ajoute aussi la réserve de clés (*key pool*), pour des sauvegardes du portefeuille plus sûres."
+    related: ["testnet", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1528.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/491/"
+      - "https://github.com/bitcoin/bitcoin/commit/5cbf75324d1509a1262b65c5073314a4da3f6d77"
+      - "https://github.com/bitcoin/bitcoin/commit/d9c6b09ac42d21abd151a0feaff676b8a8a24bb9"
+
+  - date: "2010-11-23"
+    title: "Satoshi Nakamoto intègre la commande getwork"
+    text: "Satoshi Nakamoto verse dans le dépôt SVN une version remaniée de `getwork`, une idée de m0mchil. Cette commande RPC donne du travail de hachage à des mineurs externes, ce qui permet d'écrire des programmes de minage distincts pour chaque matériel, cartes graphiques comprises."
+    related: ["getwork", "rpc-remote-procedure-call"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1901.msg23876#msg23876"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/507/"
+
+  - date: "2010-11-27"
+    title: "Annonce du premier *pool* de minage, futur Slush Pool"
+    text: "Marek Palatinus, alias slush, annonce sur bitcointalk un serveur de minage coopératif qui s'appuie sur `getwork`. Les mineurs y mettent leur puissance en commun et se partagent chaque récompense de 50 BTC au prorata de leur travail. Ce *pool* deviendra Slush Pool, puis Braiins Pool."
+    related: ["mining-pool", "braiins-pool", "getwork", "bpm-bitcoin-pooled-mining"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1976.0"
+      - "https://braiins.com/story"
+      - "https://en.bitcoin.it/wiki/Slush_Pool"
+
+  - date: "2010-12-05"
+    title: "Satoshi Nakamoto demande à WikiLeaks de ne pas utiliser Bitcoin"
+    text: "Sur le forum, Satoshi Nakamoto écrit : « I make this appeal to WikiLeaks not to try to use Bitcoin. » Pour lui, Bitcoin n'est qu'une petite communauté en bêta : WikiLeaks n'en tirerait que de la menue monnaie, et l'attention attirée risquerait de le détruire."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1735.msg26876#msg26876"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/523/"
+
+  - date: "2010-12-08"
+    title: "Bitcoin 0.3.18 introduit IsStandard()"
+    text: "Bitcoin 0.3.18 ajoute la vérification `IsStandard()`, écrite par Gavin Andresen : les nœuds ne relaient plus, et les mineurs n'incluent plus dans leurs blocs, que les types de transactions connus. C'est l'origine des règles de standardisation."
+    related: ["regles-de-standardisation", "transaction-standard", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=2162.msg28302#msg28302"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/526/"
+      - "https://github.com/bitcoin/bitcoin/commit/a206a23980c15cacf39d267c509bd70c23c94bfa"
+
+  - date: "2010-12-09"
+    title: "Satoshi Nakamoto décrit le minage fusionné"
+    text: "Dans le fil sur BitDNS, Satoshi Nakamoto propose qu'une chaîne séparée partage la puissance de calcul de Bitcoin : les mineurs chercheraient la preuve de travail des deux réseaux en même temps, et une même solution pourrait valider un bloc sur chacun. C'est le principe du minage fusionné."
+    related: ["minage-fusionne", "namecoin", "nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=1790.msg28696#msg28696"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/532/"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/533/"
+
+  - date: "2010-12-09"
+    title: "La difficulté dépasse 10 000"
+    text: "Au bloc 96 768, horodaté à 22 h 20 UTC, la difficulté dépasse 10 000 : elle passe de 8 078,2 à 12 252. Au début de l'année, elle valait 1,18."
+    related: ["difficulte"]
+    sources:
+      - "https://mempool.space/block/00000000000481ef73efe6cb2ad1e9c1e3d1c46e712f6aeb6d5079b539d12246"
+      - "https://blockstream.info/block/00000000000481ef73efe6cb2ad1e9c1e3d1c46e712f6aeb6d5079b539d12246"
+
+  - date: "2010-12-11"
+    title: "PC World, WikiLeaks et le « hornet's nest »"
+    text: "PC World présente Bitcoin comme une issue pour WikiLeaks, que plusieurs services de paiement refusent. Satoshi Nakamoto réagit à 23 h 39 UTC : « WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us. »"
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=2216.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/"
+      - "https://www.pcworld.com/article/2406734/how-bitcoins-founder-disappeared-because-of-pcworld.html"
+      - "https://computerwoche.de/a/could-wikileaks-scandal-lead-to-new-virtual-currency,2360095"
+
+  - date: "2010-12-12"
+    title: "Dernier message de Satoshi Nakamoto sur bitcointalk"
+    text: "À 18 h 22 UTC, Satoshi Nakamoto annonce la version 0.3.19, qui ajoute des limites contre le déni de service et retire les alertes du mode sans échec. C'est son dernier message sur bitcointalk."
+    related: ["nakamoto-satoshi", "bitcointalk", "bitcoin-core"]
+    sources:
+      - "https://bitcointalk.org/index.php?topic=2228.0"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/543/"
+      - "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/"
+      - "https://github.com/bitcoin/bitcoin/commit/fc73ad644f0b87b91f49b7f6f6b2348f78bdbbf4"
+
+  - date: "2010-12-19"
+    title: "Le projet Bitcoin s'installe sur GitHub"
+    text: "Le dépôt bitcoin/bitcoin est créé sur GitHub à 15 h 16 UTC. Moins d'une heure plus tard, Gavin Andresen y annonce le suivi « officiel » des bugs et des demandes, tout en promettant de rester très prudent sur les changements acceptés."
+    related: ["github", "bitcoin-core"]
+    sources:
+      - "https://api.github.com/repos/bitcoin/bitcoin"
+      - "https://ic.unicamp.br/~stolfi/EXPORT/projects/bitcoin/bitcointalk/Gavin_Andresen/split/2010-12-19-161341.html"

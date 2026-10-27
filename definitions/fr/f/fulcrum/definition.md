@@ -2,4 +2,4 @@ Implémentation d'un serveur Electrum développée en C++ par Calin Culianu, ini
 
 Conçu comme un remplacement performant d'ElectrumX, Fulcrum utilise une base de données RocksDB et tire parti de la programmation multithreadée et asynchrone de C++20 pour offrir des temps de réponse rapides, même sous forte charge. Il nécessite un nœud Bitcoin Core (ou Bitcoin Knots) configuré avec `txindex=1` et sans élagage.
 
-La synchronisation initiale de l'index avec la blockchain est bien plus longue qu'avec Electrs, et son stockage avoisine actuellement les 200 Go. En contrepartie, il est nettement plus rapide à l'usage, là où Electrs est plus lent, mais se distingue par sa légèreté.
+La synchronisation initiale de l'index avec la blockchain est bien plus longue qu'avec Electrs, et son index occupait environ 133 Go pour Bitcoin en août 2023, selon le README du projet. En contrepartie, il est nettement plus rapide à l'usage, là où Electrs est plus lent, mais se distingue par sa légèreté.

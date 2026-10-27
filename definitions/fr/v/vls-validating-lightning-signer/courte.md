@@ -1,0 +1,1 @@
+Sigle de *Validating Lightning Signer*. Bibliothèque *open source* en Rust qui sépare les clés privées d'un nœud Lightning du logiciel du nœud et refuse de signer toute opération qui mettrait les fonds en danger.

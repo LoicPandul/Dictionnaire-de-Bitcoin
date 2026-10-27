@@ -1,0 +1,1 @@
+Délai entre l'émission et la réception d'une information. Sur Bitcoin, la latence de diffusion des blocs fait travailler les mineurs isolés sur une chaîne déjà dépassée, ce qui favorise le regroupement des mineurs et gaspille de la preuve de travail.

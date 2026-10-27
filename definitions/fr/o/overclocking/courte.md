@@ -1,0 +1,1 @@
+Pratique qui pousse la fréquence des puces ASIC au-delà de leurs spécifications pour produire plus de hashrate. Elle augmente aussi la consommation électrique et la chaleur, au risque d'user les machines plus vite.

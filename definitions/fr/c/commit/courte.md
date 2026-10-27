@@ -1,0 +1,1 @@
+Capture des modifications apportées aux fichiers d'un dépôt Git, identifiée par un hash unique et accompagnée d'un message, de l'auteur et de la date. Les *commits* permettent de suivre l'évolution d'un projet et de revenir à un état antérieur.

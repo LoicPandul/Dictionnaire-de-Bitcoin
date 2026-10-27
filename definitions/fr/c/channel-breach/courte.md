@@ -1,0 +1,1 @@
+Tentative de triche sur Lightning où un pair publie une ancienne transaction d'engagement révoquée. La contrepartie, ou sa *watchtower*, a jusqu'à l'expiration du *timelock* pour diffuser une transaction de justice et récupérer tous les fonds du canal.

@@ -1,0 +1,1 @@
+Événement au cours duquel un nœud retire des transactions non confirmées de sa mempool, quand elle dépasse sa taille maximale ou qu'une transaction attend depuis trop longtemps. Une transaction purgée peut toujours être rediffusée.

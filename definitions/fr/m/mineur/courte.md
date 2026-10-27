@@ -1,0 +1,1 @@
+Personne qui gère une mine, c'est-à-dire un ordinateur qui participe à la preuve de travail : il assemble les transactions de sa mempool en bloc candidat et cherche un *hash* valide pour gagner la subvention et les frais.

@@ -1,0 +1,1 @@
+Schéma de signature numérique à usage unique, imaginé par Leslie Lamport, dont la sécurité ne repose que sur une fonction de hachage, ce qui le rend résistant aux ordinateurs quantiques. Chaque signature révèle une partie de la clé privée, qui ne doit servir qu'une fois.

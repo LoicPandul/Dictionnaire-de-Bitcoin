@@ -1,0 +1,1 @@
+Fait de signer une transaction sans pouvoir en vérifier les détails sur le périphérique de signature. Avec un *hardware wallet*, l'utilisateur dépend alors de l'ordinateur, qui peut afficher de fausses informations s'il est compromis.

@@ -4,4 +4,4 @@ Dans les portefeuilles déterministes et hiérarchiques (HD), l'objectif, défin
 * Pour du P2WPKH : `84'` ;
 * Pour du P2TR : `86'`.
 
-![Arbre BIP-84 avec flèche pointant sur le niveau Objectif (m/84'), qui identifie le standard de dérivation suivi.](./assets/image-1.png)
+![L'objectif occupe la profondeur 1 de l'arbre de dérivation : l'index 84' (chemin m/84') signale que le portefeuille suit le standard BIP-0084.](./assets/image-1.png)

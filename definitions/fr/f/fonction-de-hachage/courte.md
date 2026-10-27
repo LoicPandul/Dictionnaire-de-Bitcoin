@@ -1,0 +1,1 @@
+Fonction mathématique qui transforme une entrée de taille quelconque en une empreinte de taille fixe, impossible à inverser en pratique, utilisée dans Bitcoin pour la preuve de travail, les identifiants de transaction ou les adresses.

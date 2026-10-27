@@ -1,0 +1,1 @@
+Proposition qui définit `addrv2`, un nouveau format de message pour annoncer les adresses des nœuds qui acceptent des connexions entrantes, capable de transporter des adresses plus longues comme celles de Tor V3 et d'I2P.

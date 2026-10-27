@@ -1,0 +1,1 @@
+Pratique qui consiste à signaler une faille en privé à ses développeurs, pour qu'elle soit corrigée avant que ses détails deviennent publics. Bitcoin Core fixe le délai de publication selon la gravité de la faille, sauf pour les failles critiques, traitées au cas par cas.

@@ -1,0 +1,1 @@
+Proposition qui remplaçait les champs `scriptSig` et `scriptPubKey` par `dataSig`, `scriptCheck` et `hashScriptCheck`, pour obtenir le même résultat que le P2SH en refondant la structure des entrées et des sorties.

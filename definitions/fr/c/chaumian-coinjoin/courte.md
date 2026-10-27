@@ -1,0 +1,1 @@
+Protocole de coinjoin où le coordinateur signe à l'aveugle les adresses de sortie des participants, qui les révèlent ensuite sous une nouvelle identité Tor. Le coordinateur ne peut ni voler les fonds ni relier entrées et sorties.

@@ -1,0 +1,1 @@
+Script placé dans une sortie de transaction, qui fixe les conditions de dépense de l'UTXO associé, le plus souvent une signature valide pour une clé publique donnée. Il verrouille les bitcoins jusqu'à ce qu'une entrée fournisse les données qui le satisfont.

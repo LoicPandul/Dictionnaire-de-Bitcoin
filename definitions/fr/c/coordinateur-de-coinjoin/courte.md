@@ -1,0 +1,1 @@
+Serveur central qui met en relation les participants d'un coinjoin et coordonne la construction de la transaction collective, sans prendre possession de leurs bitcoins ni pouvoir relier les entrées aux sorties de chacun.

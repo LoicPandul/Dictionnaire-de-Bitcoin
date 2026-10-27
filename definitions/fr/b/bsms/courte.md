@@ -1,0 +1,1 @@
+Sigle de *Bitcoin Secure Multisig Setup*. Protocole du BIP-0129 qui permet à plusieurs signataires de créer ensemble un portefeuille multisignature et de vérifier qu'ils partagent tous la même configuration.

@@ -1,0 +1,1 @@
+Séquence d'index qui indique comment dériver une clé enfant depuis la clé maîtresse d'un portefeuille HD, notée par exemple `m/84'/0'/0'/0/0`. Chaque niveau précise le standard suivi, le compte, la chaîne de réception ou de change et le numéro de l'adresse.

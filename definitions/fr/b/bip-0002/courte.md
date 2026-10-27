@@ -1,0 +1,1 @@
+Proposition qui révise le processus des BIP du BIP-0001, avec neuf statuts, des critères pour passer de l'un à l'autre et une classification par couche, rédigée par Luke Dashjr en 2016 et remplacée depuis par le BIP-0003.

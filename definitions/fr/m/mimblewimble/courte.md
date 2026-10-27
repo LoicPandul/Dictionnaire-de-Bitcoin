@@ -1,0 +1,1 @@
+Protocole de confidentialité et de passage à l'échelle, sans adresses ni scripts, qui masque les montants et agrège les transactions de chaque bloc. Mis en œuvre par Grin, Beam et Litecoin, il n'a jamais été intégré à Bitcoin.

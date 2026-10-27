@@ -1,0 +1,1 @@
+Opcode proposé pour Tapscript par le BIP-0346, qui pousse sur la pile un hash des champs de la transaction de dépense choisis par un sélecteur. Il généralise `OP_CHECKTEMPLATEVERIFY` et sert à l'introspection de transaction.

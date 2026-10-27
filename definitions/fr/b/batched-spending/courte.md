@@ -1,0 +1,1 @@
+Technique qui regroupe plusieurs paiements vers différents destinataires dans une seule transaction, pour économiser de l'espace en bloc et des frais, au prix d'un modèle facile à repérer en analyse de chaîne.

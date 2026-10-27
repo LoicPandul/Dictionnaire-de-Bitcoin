@@ -1,0 +1,1 @@
+Proposition qui définit un format standard de preuve de réserves : une transaction volontairement invalide, impossible à confirmer, par laquelle un dépositaire prouve qu'il contrôle des UTXO sans les déplacer.

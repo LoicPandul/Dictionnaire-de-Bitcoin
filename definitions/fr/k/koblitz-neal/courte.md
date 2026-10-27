@@ -1,0 +1,1 @@
+Mathématicien américain, coinventeur en 1985 de la cryptographie sur courbes elliptiques avec Victor Miller. La norme SEC 2 range la courbe secp256k1 de Bitcoin parmi les courbes « de Koblitz », au sens élargi qu'elle donne à ce terme.

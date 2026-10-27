@@ -1,0 +1,1 @@
+Ensemble de tous les UTXO existant à un instant donné, que chaque nœud tient à jour à chaque bloc. Il sert à vérifier rapidement que les transactions dépensent des bitcoins qui existent et ne sont pas déjà dépensés.

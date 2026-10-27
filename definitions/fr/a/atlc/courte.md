@@ -1,0 +1,1 @@
+Paiement conditionnel de la proposition initiale du protocole Ark, comparable à un HTLC sur Lightning : lié à un connecteur, il rend le paiement atomique, car le fournisseur de service ne peut pas le réclamer en dépensant la ronde en double.

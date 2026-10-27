@@ -1,0 +1,1 @@
+Schéma de sauvegarde de graines BIP-0032 sur papier, spécifié dans le BIP-0093, qui découpe la graine en parts selon le partage de secret de Shamir. Sa somme de contrôle se calcule et se vérifie entièrement à la main, sans appareil électronique.

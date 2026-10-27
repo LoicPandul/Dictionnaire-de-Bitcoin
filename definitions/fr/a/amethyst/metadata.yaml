@@ -1,0 +1,10 @@
+uuid: "2d52885f-6ad4-454c-b0ec-3671bcc26503"
+title: "AMETHYST"
+slug: "amethyst"
+category: "APPLICATION NOSTR"
+cross_references:
+  - "4a1d50aa-b7fd-498c-af70-318426d8e8c9"
+  - "6525a7cf-4a98-4a2c-b1b5-b94754ea1769"
+  - "959495b8-3b60-49c0-a9ce-64ba7bde0ca3"
+  - "2f74b661-7b6d-4718-9076-697e7984eef3"
+version: "1"

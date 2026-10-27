@@ -6,4 +6,6 @@ cross_references:
   - "c06ceef4-51bf-4777-98c6-180fc4f17790"
   - "7629a275-5c4a-4e3e-a6e2-32eb8453dada"
 english_term: "FUNDING TRANSACTION"
+assets:
+  - filename: "image-1.png"
 version: "1"

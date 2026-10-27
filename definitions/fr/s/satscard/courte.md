@@ -1,0 +1,1 @@
+Carte NFC au porteur fabriquée par Coinkite, qui permet de remettre des bitcoins de main en main sans transaction au moment de l'échange. Elle offre 10 *slots* indépendants, que le destinataire descelle avec une application compatible.

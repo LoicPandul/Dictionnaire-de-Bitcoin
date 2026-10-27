@@ -1,0 +1,1 @@
+Nombre secret de 256 bits qui permet de signer des transactions et donc de dépenser les bitcoins bloqués par la clé publique correspondante. Elle doit rester confidentielle, car quiconque la connaît contrôle les fonds associés.

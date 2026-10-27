@@ -1,0 +1,1 @@
+Sigle de *Distributed Key Generation*. Protocole qui permet à plusieurs participants de générer ensemble une paire de clés sans tiers de confiance, chacun ne détenant qu'une part de la clé privée, que personne ne connaît en entier.

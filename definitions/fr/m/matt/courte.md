@@ -1,0 +1,1 @@
+Proposition de *soft fork* (*Merkleize All The Things*) de Salvatore Ingala qui introduirait des *covenants* dans Bitcoin avec l'opcode `OP_CHECKCONTRACTVERIFY`, pour construire des contrats comme les *vaults* sans modifier le consensus à chaque nouveau type.

@@ -1,0 +1,1 @@
+Variante du minage fusionné, conçue par Paul Sztorc pour les *drivechains*, où des opérateurs indépendants produisent les blocs des *sidechains* et achètent aux mineurs leur preuve de travail, payée en BTC sur la chaîne principale.

@@ -1,0 +1,1 @@
+Méthode de rémunération des mineurs dans une pool, qui donne plus de valeur aux *shares* soumises tard dans le cycle de minage. Elle incite les mineurs à rester, car celui qui s'arrête voit son score stagner pendant que celui des autres augmente.

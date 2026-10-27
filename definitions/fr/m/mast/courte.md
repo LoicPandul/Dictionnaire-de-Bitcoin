@@ -1,0 +1,1 @@
+Sigle de *Merklized Alternative Script Trees*. Technique qui regroupe plusieurs conditions de dépense dans un arbre de Merkle, pour ne révéler que celle qui est remplie au moment de la dépense, intégrée à Bitcoin par Taproot.

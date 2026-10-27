@@ -1,0 +1,1 @@
+Protocole de dépôt on-chain vers un canal Lightning, conçu par ACINQ pour Phoenix, qui améliore le *swap-in potentiam* avec Taproot et MuSig2. Les dépôts coûtent moins cher et ressemblent à des paiements P2TR ordinaires.

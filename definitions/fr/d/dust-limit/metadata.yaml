@@ -1,7 +1,7 @@
 uuid: "e7264cc5-e0b9-4056-a9c2-4e82c658b4f9"
 title: "DUST LIMIT"
 slug: "dust-limit"
-category: "PROTOCOLE"
+category: "MEMPOOL ET FRAIS"
 french_term: "LIMITE DE POUSSIÈRE"
 cross_references:
   - "6d4e20a6-aa23-4f6b-84d3-a44e75f42344"

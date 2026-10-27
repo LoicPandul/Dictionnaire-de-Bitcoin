@@ -1,0 +1,1 @@
+Attaque qui consiste à envoyer de très petites sommes à de nombreuses adresses, puis à suivre ces fonds quand les destinataires les dépensent avec d'autres UTXO, pour regrouper les adresses d'une même entité. Elle menace la confidentialité, pas les fonds.

@@ -1,0 +1,1 @@
+Protocole controversé qui permet de prouver automatiquement, depuis son logiciel de portefeuille, la propriété d'une adresse Bitcoin, comme l'exigent certaines juridictions pour retirer des fonds d'une plateforme d'échange.

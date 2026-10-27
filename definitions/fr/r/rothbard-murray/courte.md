@@ -1,0 +1,1 @@
+Économiste américain (1926-1995) de l'école autrichienne et théoricien de l'anarcho-capitalisme, auteur de *What Has Government Done to Our Money?* (1963), exposé sur la monnaie et les banques centrales.

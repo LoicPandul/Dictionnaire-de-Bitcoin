@@ -5,4 +5,6 @@ category: "PORTEFEUILLE"
 cross_references:
   - "2fc3ec2b-e4c3-4ecd-a661-6ebf8411be7a"
   - "1e211062-6127-445e-b231-061276411810"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,1 @@
+Message léger relayé de pair en pair sur le Lightning Network par routage en oignon, sans envoi de fonds. Il sert notamment de canal de communication aux *offers* de BOLT-12, par exemple pour demander une *invoice*.

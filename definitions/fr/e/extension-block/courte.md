@@ -1,0 +1,1 @@
+Proposition jamais activée qui visait à augmenter la capacité de Bitcoin en rattachant au bloc principal un bloc secondaire, doté de son propre ensemble d'UTXO, par un engagement dans la transaction coinbase.

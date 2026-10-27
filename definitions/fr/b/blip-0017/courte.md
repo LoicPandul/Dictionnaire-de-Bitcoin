@@ -1,0 +1,1 @@
+Proposition qui spécifie les *hosted channels*, des canaux Lightning sans transaction *on-chain* qui reposent sur la confiance du client envers un hôte, à mi-chemin entre le portefeuille *custodial* et le canal Lightning classique.

@@ -1,0 +1,1 @@
+Ensemble de règles et de spécifications qui permet à des logiciels de communiquer entre eux. Un développeur s'en sert pour accéder aux fonctionnalités ou aux données d'une autre application depuis son propre logiciel.

@@ -1,0 +1,1 @@
+Proposition qui formalise Miniscript, représentation structurée d'un sous-ensemble de Script qui permet aux portefeuilles d'analyser, de composer et de signer de façon générique des conditions de dépense.

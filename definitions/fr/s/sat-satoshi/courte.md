@@ -1,0 +1,1 @@
+Plus petite unité du bitcoin enregistrable sur la blockchain, qui vaut 0,00000001 BTC et doit son nom à Satoshi Nakamoto. Elle sert souvent à exprimer les petits montants, notamment sur le Lightning Network.

@@ -1,0 +1,1 @@
+Application Android de portefeuille *watch-only*, issue de l'équipe de Samourai Wallet, qui suit les soldes et l'historique d'un portefeuille Bitcoin à partir de ses clés publiques étendues, sans jamais manipuler les clés privées.

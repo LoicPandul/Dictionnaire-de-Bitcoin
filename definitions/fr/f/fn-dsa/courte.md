@@ -1,0 +1,1 @@
+Algorithme de signature numérique post-quantique à base de réseaux NTRU, tiré de Falcon et en cours de standardisation par le NIST. Ses signatures sont plus compactes que celles de ML-DSA, mais difficiles à implémenter de façon sûre.

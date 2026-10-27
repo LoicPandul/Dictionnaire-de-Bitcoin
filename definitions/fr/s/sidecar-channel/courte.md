@@ -1,0 +1,1 @@
+Canal Lightning acheté par un tiers sur Lightning Pool au bénéfice d'un autre utilisateur, que le nœud vendeur ouvre directement vers ce dernier. Le bénéficiaire peut ainsi recevoir des paiements sans détenir de bitcoins au préalable.

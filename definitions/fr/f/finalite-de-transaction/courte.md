@@ -1,0 +1,1 @@
+Moment à partir duquel une transaction est considérée comme irréversible. Sur Bitcoin, cette finalité est probabiliste : chaque nouveau bloc rend son annulation plus difficile, et l'usage retient 6 confirmations.

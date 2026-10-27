@@ -1,0 +1,1 @@
+Proposition de soft fork (BIP-0054) qui corrige en une seule fois quatre vulnérabilités anciennes du consensus de Bitcoin : l'attaque *time warp*, les blocs très longs à valider, la faiblesse de l'arbre de Merkle et la duplication de transactions coinbase.

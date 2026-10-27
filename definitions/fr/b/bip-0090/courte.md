@@ -1,0 +1,1 @@
+Proposition qui remplace, pour les anciens soft forks, la détection de l'activation par le signalement des mineurs par une simple vérification de la hauteur de bloc. Elle réduit la dette technique liée à ces activations.

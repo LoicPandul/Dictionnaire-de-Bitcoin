@@ -1,0 +1,1 @@
+Processus qui génère des paires de clés enfants à partir d'une clé parent et d'un code de chaîne dans un portefeuille HD, grâce à `HMAC-SHA512`. Toutes ces clés se retrouvent à partir de la seule phrase mnémonique et de l'éventuelle *passphrase*.

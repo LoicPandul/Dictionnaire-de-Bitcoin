@@ -1,0 +1,1 @@
+Valeur factice à placer au début du `scriptSig` d'une dépense `OP_CHECKMULTISIG`, parce qu'un bug *off-by-one* fait retirer à l'opcode un élément de trop sur la pile. Depuis SegWit, la règle `NULLDUMMY` du BIP-0147 impose un tableau vide.

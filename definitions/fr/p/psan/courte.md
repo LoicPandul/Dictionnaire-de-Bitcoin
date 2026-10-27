@@ -1,0 +1,1 @@
+Sigle de Prestataire de Services sur Actifs Numériques. Statut réglementaire français créé par la loi PACTE de 2019 pour les entreprises de cryptomonnaies (conservation, achat et vente, échange), auquel succède le statut européen de PSCA prévu par le règlement MiCA.

@@ -1,0 +1,1 @@
+Processus par lequel chaque partie vérifie elle-même les données qu'on lui transmet en privé, selon les règles d'un protocole. Dans RGB, seuls des *commitments* sont ancrés dans Bitcoin, et les données des contrats restent hors chaîne entre les utilisateurs concernés.

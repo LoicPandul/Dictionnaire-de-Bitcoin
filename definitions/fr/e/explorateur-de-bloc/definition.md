@@ -1,1 +1,3 @@
 Outil en ligne ou en local qui permet de transformer les données brutes de la blockchain Bitcoin en un format structuré et facilement lisible par l'Homme. L'explorateur inclut généralement un moteur de recherche afin de localiser facilement un bloc, une transaction ou une adresse spécifique.
+
+Un explorateur en ligne indexe les données d'un nœud complet qu'il exploite lui-même, et il voit les adresses et les transactions que ses visiteurs consultent. Certains explorateurs open source, comme mempool.space ou Esplora, peuvent aussi s'auto-héberger sur son propre nœud, ce qui permet de consulter la blockchain sans exposer ses requêtes à un tiers.

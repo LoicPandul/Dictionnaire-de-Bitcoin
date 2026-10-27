@@ -1,0 +1,1 @@
+Règle de consensus du BIP-0147, activée avec SegWit, qui impose que l'élément factice consommé par `OP_CHECKMULTISIG` et `OP_CHECKMULTISIGVERIFY` soit vide (`OP_0`), pour supprimer une source de malléabilité.

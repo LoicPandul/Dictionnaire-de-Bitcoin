@@ -1,0 +1,1 @@
+Indicateur du logiciel Whirlpool Stat Tool qui mesure, pour une pièce, la part de l'anonset atteint par rapport au maximum possible dans la pool. Il indique si de nouveaux mixages amélioreraient encore sa confidentialité.

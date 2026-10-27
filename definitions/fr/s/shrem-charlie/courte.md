@@ -1,0 +1,1 @@
+Ancien directeur général de BitInstant et vice-président de la Bitcoin Foundation. Arrêté en janvier 2014, il plaide coupable d'avoir aidé une transmission de fonds sans licence liée à Silk Road et est condamné le 19 décembre 2014 à deux ans de prison.

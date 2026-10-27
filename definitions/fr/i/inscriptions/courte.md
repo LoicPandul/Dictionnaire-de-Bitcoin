@@ -1,0 +1,1 @@
+Contenu arbitraire gravé sur un sat dans le cadre de la théorie des Ordinals, en l'exposant dans le script d'une entrée Taproot. Le sat devient un artefact numérique natif de Bitcoin, qui s'échange comme un NFT.

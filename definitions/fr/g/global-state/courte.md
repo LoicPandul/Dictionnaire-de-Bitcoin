@@ -1,0 +1,1 @@
+Ensemble des propriétés publiques d'un contrat RGB, établies lors de sa *Genesis* et mises à jour seulement par les transitions que prévoit son schéma. Contrairement aux *Owned States*, il n'appartient à aucune partie.

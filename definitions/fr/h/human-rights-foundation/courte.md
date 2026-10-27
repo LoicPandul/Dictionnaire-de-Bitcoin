@@ -1,0 +1,1 @@
+Organisation à but non lucratif fondée en 2005 par Thor Halvorssen pour défendre les droits de l'homme, surtout face aux régimes autoritaires. Depuis 2020, son *Bitcoin Development Fund* finance des projets *open source* qui améliorent la confidentialité et la décentralisation de Bitcoin.

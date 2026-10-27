@@ -1,0 +1,1 @@
+Application mobile de Foundation Devices qui sert à la fois de portefeuille Bitcoin et de compagnon du *hardware wallet* Passport, pour le configurer, le mettre à jour et signer des transactions par QR codes.

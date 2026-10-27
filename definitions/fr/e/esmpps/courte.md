@@ -1,0 +1,1 @@
+Sigle de *Equalized Shared Maximum Pay Per Share*. Méthode de rémunération des mineurs d'une pool, proche de SMPPS, qui répartit la récompense de façon égale entre toutes les parts soumises, quels que soient leur moment ou la chance de la pool.

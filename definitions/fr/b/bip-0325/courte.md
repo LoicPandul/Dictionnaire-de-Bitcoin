@@ -1,0 +1,1 @@
+Proposition qui définit Signet, un type de réseau de test où les blocs doivent porter la signature de clés désignées en plus de la preuve de travail, ce qui le rend plus stable que le testnet pour développer et tester des applications.

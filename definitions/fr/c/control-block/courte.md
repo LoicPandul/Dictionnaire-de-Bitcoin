@@ -1,0 +1,1 @@
+Structure de données placée dans le témoin d'une dépense P2TR par chemin de script, définie dans le BIP-0341. Elle prouve que le script révélé fait partie de l'arbre de scripts engagé dans la clé Taproot, sans dévoiler les autres feuilles.

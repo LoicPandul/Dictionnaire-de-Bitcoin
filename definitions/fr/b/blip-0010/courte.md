@@ -1,0 +1,1 @@
+Proposition qui standardise les métadonnées jointes aux paiements Lightning dans les applications de podcast (*Podcasting 2.0*), pour que tout portefeuille compatible envoie des paiements que tout hébergeur compatible sait traiter.

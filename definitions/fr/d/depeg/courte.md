@@ -1,0 +1,1 @@
+Perte de parité entre un actif numérique et l'actif sous-jacent qu'il doit suivre, comme un *stablecoin* qui s'écarte de sa monnaie de référence ou une représentation de bitcoins sur une *sidechain* qui s'écarte du bitcoin.

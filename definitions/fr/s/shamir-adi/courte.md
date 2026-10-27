@@ -1,0 +1,1 @@
+Cryptographe israélien de l'Institut Weizmann, coinventeur de RSA et prix Turing 2002. Il publie en novembre 1979 le partage de secret à seuil qui sert à fractionner une graine dans le SLIP-39 et le BIP-0093 (Codex32).

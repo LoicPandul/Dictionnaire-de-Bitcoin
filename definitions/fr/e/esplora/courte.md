@@ -1,0 +1,1 @@
+Explorateur de blocs *open source* de Blockstream, accessible sur `blockstream.info`, qui affiche les données de Bitcoin, de Liquid ou d'une autre chaîne Elements à partir de l'index d'*esplora-electrs*.

@@ -1,0 +1,1 @@
+Opcode qui combine `OP_CHECKMULTISIG` et `OP_VERIFY` : il vérifie `M` signatures parmi `N` clés publiques et arrête le script avec une erreur si la vérification échoue. Il est supprimé dans Tapscript.

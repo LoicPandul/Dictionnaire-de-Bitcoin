@@ -1,0 +1,1 @@
+Entrepreneur chinois, cofondateur de Bitmain en 2013 avec Jihan Wu. Il signe le consensus de la Hong Kong Roundtable en 2016, puis conserve, à l'issue d'un conflit avec Wu réglé fin 2020, l'activité de machines de minage.

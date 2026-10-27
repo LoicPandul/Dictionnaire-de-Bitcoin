@@ -1,0 +1,1 @@
+Identifiant unique de 32 octets d'un actif émis avec Taproot Assets, obtenu en hachant notamment l'*outpoint* de la transaction de genèse. Il sert à retrouver l'actif, à vérifier sa provenance et à le distinguer des autres.

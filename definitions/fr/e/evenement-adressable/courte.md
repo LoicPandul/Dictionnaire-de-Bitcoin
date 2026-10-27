@@ -1,0 +1,1 @@
+Événement Nostr (kinds `30000` à `39999`) remplaçable par auteur, kind et valeur du tag `d`, donc désigné par une adresse stable plutôt que par son identifiant ; il porte notamment les articles longs et de nombreuses listes, et se partage sous forme de `naddr`.

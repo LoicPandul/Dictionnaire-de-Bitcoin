@@ -1,0 +1,1 @@
+Développeur Bitcoin, auteur de BIP-0001, le BIP qui fixe en 2011 le processus des propositions d'amélioration. Il cofonde Libbitcoin en 2011 et Dark Wallet avec Cody Wilson, financé en 2013 et publié en alpha en 2014.

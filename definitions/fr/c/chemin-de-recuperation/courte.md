@@ -1,0 +1,1 @@
+Ensemble de clés d'un portefeuille Miniscript, comme Liana, qui ne peut dépenser les bitcoins qu'après l'expiration d'un *timelock*. Il sert de solution de secours pour récupérer les fonds quand le chemin primaire n'est plus disponible.

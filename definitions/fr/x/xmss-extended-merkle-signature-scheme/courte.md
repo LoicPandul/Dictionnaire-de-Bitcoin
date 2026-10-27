@@ -1,0 +1,1 @@
+Signature à base de hachage avec état, qui réunit de nombreuses clés à usage unique sous la racine d'un arbre de Merkle. Le signataire doit retenir quelles clés il a déjà utilisées, sous peine de rendre les falsifications possibles.

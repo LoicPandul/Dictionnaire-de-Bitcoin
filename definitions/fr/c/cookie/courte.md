@@ -1,0 +1,1 @@
+Fichier d'authentification RPC que Bitcoin Core régénère à chaque démarrage. Les logiciels qui interrogent `bitcoind` le lisent pour s'authentifier, sans gestion manuelle d'un nom d'utilisateur et d'un mot de passe.

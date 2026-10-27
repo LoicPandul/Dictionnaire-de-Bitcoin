@@ -1,0 +1,1 @@
+Proposition qui réserve certains bits du champ `nVersion` de l'en-tête de bloc à un usage général, hors du signalement des soft forks du BIP-0009, pour que les mineurs utilisent l'Overt ASICBoost sans perturber ce signalement.

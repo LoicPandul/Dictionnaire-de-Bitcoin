@@ -1,0 +1,1 @@
+Proposition qui introduit le P2SH (*Pay-to-Script-Hash*), où l'on paie vers le hachage d'un script au lieu du script lui-même, pour que la personne qui dépense fournisse et révèle ce script seulement au moment de la dépense.

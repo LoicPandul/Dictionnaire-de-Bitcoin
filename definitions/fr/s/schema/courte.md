@@ -1,0 +1,1 @@
+Code déclaratif qui fixe, dans le protocole RGB, les règles d'un contrat : structure de l'état, configuration initiale à la Genesis et transitions autorisées avec leurs conditions de validation. Toute évolution du contrat doit s'y conformer.

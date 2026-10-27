@@ -1,0 +1,1 @@
+Méthode de stockage hors ligne qui consiste à noter ou imprimer sur papier une paire de clés donnant accès à des bitcoins. Souvent jugée obsolète, elle dépend de la protection physique du papier et pousse à réutiliser la même clé.

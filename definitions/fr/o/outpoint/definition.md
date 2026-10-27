@@ -10,4 +10,4 @@ abc...123:0
 
 L'outpoint est utilisé dans les inputs (`vin`) d'une nouvelle transaction pour indiquer quel UTXO est dépensé.
 
-*Le terme « outpoint » est souvent utilisé comme synonyme de « UTXO ».*
+*Le terme « outpoint » désigne une simple référence, qui peut pointer vers un output déjà dépensé. Un UTXO est un output non dépensé, l'outpoint n'est donc pas un synonyme de « UTXO ».*

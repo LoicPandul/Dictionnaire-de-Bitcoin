@@ -1,0 +1,1 @@
+Structure modulaire qui héberge et fait tourner un grand nombre d'ASIC, avec leur alimentation électrique et leur refroidissement. Mobile, elle se déploie rapidement, souvent près de sources d'énergie bon marché.

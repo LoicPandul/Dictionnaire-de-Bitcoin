@@ -1,0 +1,1 @@
+Proposition qui introduit les codes de paiement réutilisables : à partir des codes des 2 parties, chacune dérive grâce à ECDH des adresses uniques appartenant à l'autre. Un utilisateur peut ainsi recevoir de nombreux paiements sans réutiliser d'adresse.

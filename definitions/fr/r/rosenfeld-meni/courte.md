@@ -1,0 +1,1 @@
+Mathématicien israélien, il analyse en 2011 les systèmes de rémunération des pools de minage, puis décrit en 2012 dans « Overview of Colored Coins » des bitcoins marqués qui représentent d'autres actifs.

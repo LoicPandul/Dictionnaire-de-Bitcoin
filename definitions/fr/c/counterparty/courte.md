@@ -1,0 +1,1 @@
+Méta-protocole *open source*, lancé en janvier 2014, pour créer et échanger des actifs numériques sur la blockchain Bitcoin en inscrivant leurs données dans des transactions, sans modifier le protocole de base.

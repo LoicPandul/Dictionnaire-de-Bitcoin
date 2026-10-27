@@ -1,0 +1,1 @@
+Protocole de LDK qui permet à un nœud Lightning, surtout mobile, de récupérer le graphe des canaux en téléchargeant un instantané compact depuis un serveur, au lieu de collecter les messages *gossip* un par un.

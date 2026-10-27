@@ -1,0 +1,1 @@
+Objet cryptographique calculé à partir d'un message et d'une valeur aléatoire, qui engage sur ce message sans le révéler et empêche de le changer ensuite. Dans RGB, un *commitment* placé dans une transaction Bitcoin prouve l'existence d'une information à un instant donné.

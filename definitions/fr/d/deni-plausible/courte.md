@@ -1,0 +1,1 @@
+Principe selon lequel un utilisateur peut nier de manière crédible posséder certains bitcoins, parce que plusieurs interprétations restent possibles. Le coinjoin ou un portefeuille caché derrière une *passphrase* servent cet objectif.

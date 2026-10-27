@@ -1,0 +1,1 @@
+Dépôt de données qui sert de registre aux actifs Taproot Assets, en stockant leurs métadonnées, leurs preuves et leur historique. Les acquéreurs le consultent pour vérifier un actif avant de l'accepter.

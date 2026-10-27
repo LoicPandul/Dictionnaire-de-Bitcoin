@@ -1,0 +1,1 @@
+Proposition qui ajoute le bit de service `NODE_BLOOM`, par lequel un nœud annonce s'il prend en charge les *Bloom filters* du BIP-0037. Un opérateur peut ainsi désactiver ce service pour limiter les risques de déni de service.

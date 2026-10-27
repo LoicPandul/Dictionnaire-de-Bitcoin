@@ -1,0 +1,1 @@
+Sigle de *Capped Pay Per Share with Recent Backpay*, méthode de rémunération des mineurs d'une pool qui paie à chaque bloc trouvé autant de *shares* que possible, les plus récentes d'abord, pour rester solvable et décourager le *pool hopping*.

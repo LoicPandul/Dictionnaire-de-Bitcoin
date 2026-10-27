@@ -1,0 +1,1 @@
+Proposition de limitation de débit sur le réseau P2P de Bitcoin, où un nœud exige d'un pair demandeur la résolution d'un petit défi de preuve de travail avant de lui répondre, contre le déni de service. Elle n'a jamais été déployée.

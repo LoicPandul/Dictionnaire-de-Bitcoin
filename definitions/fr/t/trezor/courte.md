@@ -1,0 +1,1 @@
+Marque de *hardware wallets* de la société tchèque SatoshiLabs, lancée en 2014 avec le Trezor One. Ses appareils conservent les clés privées hors ligne et fonctionnent avec un *firmware* *open source*.

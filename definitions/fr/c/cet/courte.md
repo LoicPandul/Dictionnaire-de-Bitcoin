@@ -1,0 +1,1 @@
+Sigle de *Contract Execution Transaction*. Transaction d'un DLC qui règle le contrat selon l'issue d'un événement : la signature publiée par l'oracle permet de la compléter et d'envoyer les fonds à la partie gagnante.

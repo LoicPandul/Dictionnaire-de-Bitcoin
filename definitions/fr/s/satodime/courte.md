@@ -1,0 +1,1 @@
+Carte NFC au porteur conçue par Satochip, qui scelle jusqu'à trois coffres de bitcoins dans une puce sécurisée. Les clés privées ne sont révélées qu'au descellement, si bien que détenir la carte revient à détenir les fonds.

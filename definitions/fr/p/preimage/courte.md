@@ -1,0 +1,1 @@
+Valeur d'entrée qui produit un résultat donné par une fonction de hachage. Sur Lightning, elle désigne la valeur secrète dont le hash verrouille les HTLC d'un paiement, et dont la révélation par le destinataire prouve que le paiement a été reçu.

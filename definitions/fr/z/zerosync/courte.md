@@ -1,0 +1,1 @@
+Projet qui utilise des preuves à divulgation nulle de connaissance pour compresser l'historique de la blockchain Bitcoin en une preuve compacte, afin d'accélérer la synchronisation initiale des nœuds sans renoncer à la vérification.

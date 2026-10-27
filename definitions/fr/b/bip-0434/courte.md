@@ -1,0 +1,1 @@
+Proposition qui définit un mécanisme générique par lequel les nœuds annoncent, à l'établissement d'une connexion, les fonctionnalités P2P qu'ils prennent en charge, au lieu d'ajouter des messages propres à chaque nouvelle fonctionnalité.

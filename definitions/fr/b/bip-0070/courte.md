@@ -1,0 +1,1 @@
+Proposition qui définit un protocole de paiement interactif : le commerçant envoie une demande de paiement signée par son certificat SSL, et le portefeuille du client la remplit automatiquement. Elle n'a jamais été largement adoptée.

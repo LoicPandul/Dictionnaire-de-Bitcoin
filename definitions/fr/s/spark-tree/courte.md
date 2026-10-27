@@ -1,0 +1,1 @@
+Arbre de transactions hors chaîne qui divise un UTXO unique en plusieurs feuilles de valeur dans le protocole Spark. Il évite la contrainte des statechains classiques, qui imposent de transférer un UTXO entier.

@@ -1,0 +1,1 @@
+Projet expérimental, lancé en 2021, d'application de nœud et de portefeuille fondée sur Bitcoin Core, avec une nouvelle interface graphique écrite en QML, pour moderniser l'interface de Bitcoin Core sur ordinateur et sur mobile.

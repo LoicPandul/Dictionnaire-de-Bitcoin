@@ -1,0 +1,1 @@
+Proposition qui étend le protocole de paiement BIP-0070 : l'auteur d'une demande de paiement peut la signer pour prouver son identité, et la demande retournée est chiffrée. Elle n'a jamais été largement adoptée.

@@ -1,0 +1,1 @@
+Mécanisme de conservation de bitcoins fondé sur une dépense en deux étapes, qui impose un délai entre l'annonce d'un retrait et son exécution pour laisser au propriétaire le temps de bloquer un vol et de rediriger les fonds.

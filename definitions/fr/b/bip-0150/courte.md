@@ -1,0 +1,1 @@
+Proposition d'un mécanisme d'authentification mutuelle entre pairs du réseau Bitcoin, pour qu'un opérateur de nœud réserve certains services à des pairs connus et se protège des attaques de l'homme du milieu. Fermée, elle a servi d'enseignement pour le BIP-0324.

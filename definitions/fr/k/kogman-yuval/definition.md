@@ -1,0 +1,5 @@
+Développeur et chercheur qui signe *nothingmuch*, coauteur du protocole de *coinjoin* WabiSabi et de BIP-0077 (Async Payjoin).
+
+Le 1er mars 2021, il dépose sur ePrint, avec Ádám Ficsór, Lucas Ontivero et István András Seres, l'article « WabiSabi: Centrally Coordinated CoinJoins with Variable Amounts ». Le protocole remplace les signatures aveugles par des accréditations anonymes à vérification par clé et des engagements homomorphes, ce qui autorise des montants variables dans un même *coinjoin* coordonné.
+
+Il contribue au code de Wasabi Wallet : le dépôt WalletWasabi compte au moins 100 de ses commits entre le 14 septembre 2020 (preuve de plage) et le 10 décembre 2021. Le 30 juin 2021, Bitcoin Core fusionne son commentaire de documentation sur la règle de `nLockTime` lorsque tous les `nSequence` sont finaux. Le 8 août 2023, le numéro BIP-0077 est attribué à Async Payjoin, avec Dan Gould : cette version asynchrone de Payjoin remplace le serveur HTTP du destinataire par un serveur d'annuaire tiers. Le texte est fusionné le 28 mai 2025, au statut *Draft*.

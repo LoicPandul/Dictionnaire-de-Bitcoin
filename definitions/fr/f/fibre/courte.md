@@ -1,0 +1,1 @@
+Sigle de *Fast Internet Bitcoin Relay Engine*. Protocole de relais des blocs conçu par Matt Corallo en 2016 pour réduire leur temps de propagation et limiter l'avantage des grands mineurs bien connectés, délaissé en 2020.

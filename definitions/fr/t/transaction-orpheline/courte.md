@@ -1,0 +1,1 @@
+Transaction non confirmée dont le nœud ne connaît pas encore la transaction parente, et qu'il ne peut donc pas valider seule. Bitcoin Core la garde provisoirement dans une réserve (*orphanage*) le temps de récupérer le parent.

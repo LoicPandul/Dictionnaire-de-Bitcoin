@@ -1,0 +1,1 @@
+Fonctionnalité de Bitcoin Core qui permet à un nouveau nœud de démarrer à partir d'un *snapshot* de l'UTXO set, dont l'empreinte est inscrite dans le code, pour être utilisable très vite. Il vérifie ensuite tout l'historique en arrière-plan.

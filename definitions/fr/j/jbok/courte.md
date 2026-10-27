@@ -1,0 +1,1 @@
+Ancien type de portefeuille Bitcoin qui stockait un ensemble de paires de clés générées indépendamment, sans lien déterministe entre elles. Difficile à sauvegarder, il a été remplacé par les portefeuilles HD du BIP-0032.

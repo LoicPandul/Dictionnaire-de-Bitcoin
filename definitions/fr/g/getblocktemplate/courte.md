@@ -1,0 +1,1 @@
+Protocole de communication entre un nœud et un logiciel de minage, défini par les BIP-0022 et BIP-0023, qui transmet un modèle complet de bloc pour que le mineur construise lui-même son bloc candidat.

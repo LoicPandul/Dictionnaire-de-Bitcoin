@@ -1,0 +1,1 @@
+Nœud de routage qui relie les portefeuilles Taproot Assets au réseau Lightning en convertissant leurs actifs en BTC, et inversement, lors du routage des paiements. Les échanges restent atomiques grâce aux HTLC, sans que le nœud garde les fonds.

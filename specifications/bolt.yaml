@@ -1,0 +1,104 @@
+# BOLT — Basis of Lightning Technology
+#
+# Une entrée par document : identifiant, titre d'origine, statut, résumé en français.
+# `definition` : slug de l'entrée du dictionnaire consacrée au document, imprimée sous le
+# résumé dans l'édition complète. `related` : entrées du dictionnaire liées au document.
+#
+# Les BOLT n'ont pas de champ de statut : « Actif » pour un document en vigueur, « Retiré »
+# pour un numéro abandonné (BOLT-06).
+
+source: "https://github.com/lightning/bolts"
+source_commit: "191462825ae3"
+updated: "2026-10-25"
+
+entries:
+  - number: 0
+    id: "BOLT-00"
+    title: "BOLT #0: Introduction and Index"
+    status: "Actif"
+    summary: "Document d'entrée des spécifications BOLT (*Basis of Lightning Technology*). Il présente le fonctionnement du Lightning Network (canaux, paiements conditionnels, routage, factures), donne l'index des autres BOLT et fixe le glossaire commun à toute la série."
+    definition: "bolt-00"
+    url: "https://github.com/lightning/bolts/blob/master/00-introduction.md"
+  - number: 1
+    id: "BOLT-01"
+    title: "BOLT #1: Base Protocol"
+    status: "Actif"
+    summary: "Spécification de la messagerie de base entre deux nœuds Lightning. Elle fixe le format des messages et l'encodage TLV (*Type-Length-Value*), puis décrit les messages qui ouvrent et entretiennent une connexion entre pairs : `init`, `error`, `warning`, `ping` et `pong`."
+    definition: "bolt-01"
+    url: "https://github.com/lightning/bolts/blob/master/01-messaging.md"
+  - number: 2
+    id: "BOLT-02"
+    title: "BOLT #2: Peer Protocol for Channel Management"
+    status: "Actif"
+    summary: "Spécification du dialogue entre les deux pairs d'un canal, de l'ouverture à la fermeture. Elle couvre l'ouverture avec un seul financeur ou à deux par construction interactive de la transaction, l'ajout et le règlement des HTLC, la mise au repos du canal, le *splicing* et la fermeture coopérative."
+    definition: "bolt-02"
+    url: "https://github.com/lightning/bolts/blob/master/02-peer-protocol.md"
+  - number: 3
+    id: "BOLT-03"
+    title: "BOLT #3: Bitcoin Transaction and Script Formats"
+    status: "Actif"
+    summary: "Spécification des formats exacts des transactions et des scripts Bitcoin d'un canal : la sortie de financement multisignature 2/2, les transactions d'engagement et les transactions HTLC. Elle fixe aussi la dérivation des clés, le calcul des frais et les seuils de poussière (*dust*), pour que les deux parties signent exactement les mêmes transactions."
+    definition: "bolt-03"
+    url: "https://github.com/lightning/bolts/blob/master/03-transactions.md"
+  - number: 4
+    id: "BOLT-04"
+    title: "BOLT #4: Onion Routing Protocol"
+    status: "Actif"
+    summary: "Spécification du routage en oignon. L'expéditeur chiffre les instructions de chaque saut dans un paquet de taille fixe, si bien qu'un nœud intermédiaire ne connaît que le saut précédent et le suivant. Le document couvre aussi les chemins aveuglés (*route blinding*), les messages en oignon et le retour chiffré des erreurs."
+    definition: "bolt-04"
+    url: "https://github.com/lightning/bolts/blob/master/04-onion-routing.md"
+  - number: 5
+    id: "BOLT-05"
+    title: "BOLT #5: Recommendations for On-chain Transaction Handling"
+    status: "Actif"
+    summary: "Spécification de ce que doit faire un nœud quand un canal se règle on-chain, après une fermeture coopérative, une fermeture unilatérale ou la publication d'un ancien état révoqué. Elle détaille comment récupérer chaque sortie, combien de temps surveiller la blockchain et comment punir la fraude par une transaction de pénalité."
+    definition: "bolt-05"
+    url: "https://github.com/lightning/bolts/blob/master/05-onchain.md"
+  - number: 6
+    id: "BOLT-06"
+    title: "Interim Node and Channel Discovery"
+    status: "Retiré"
+    summary: "Ancienne spécification de découverte provisoire des nœuds et des canaux par un salon IRC du réseau Freenode, en attendant un mécanisme pair-à-pair. Le document a quitté le dépôt en octobre 2017 et son numéro n'a pas été réattribué : la découverte des nœuds et des canaux relève du BOLT-07."
+    url: "https://github.com/lightning/bolts/blob/2aa9f971afab7ac1085f8fe21c27dc64dc76edaf/06-irc-announcements.md"
+  - number: 7
+    id: "BOLT-07"
+    title: "BOLT #7: P2P Node and Channel Discovery"
+    status: "Actif"
+    summary: "Spécification du *gossip*, le protocole pair-à-pair par lequel les nœuds découvrent le réseau. Les messages `channel_announcement`, `node_announcement` et `channel_update` annoncent les canaux, les nœuds et leurs conditions de routage ; des requêtes servent à synchroniser cette carte et à en retirer les canaux obsolètes."
+    definition: "bolt-07"
+    url: "https://github.com/lightning/bolts/blob/master/07-routing-gossip.md"
+  - number: 8
+    id: "BOLT-08"
+    title: "BOLT #8: Encrypted and Authenticated Transport"
+    status: "Actif"
+    summary: "Spécification de la couche de transport chiffrée et authentifiée entre deux nœuds. Elle repose sur le protocole Noise : une poignée de main en trois actes, pour laquelle l'initiateur doit déjà connaître la clé publique du répondeur, produit les clés de session qui chiffrent ensuite chaque message."
+    definition: "bolt-08"
+    url: "https://github.com/lightning/bolts/blob/master/08-transport.md"
+  - number: 9
+    id: "BOLT-09"
+    title: "BOLT #9: Assigned Feature Flags"
+    status: "Actif"
+    summary: "Registre des *feature bits*, les drapeaux par lesquels un nœud annonce les fonctionnalités qu'il prend en charge, dans `init`, dans les annonces de nœud et de canal ou dans les factures BOLT-11. Chaque fonctionnalité occupe une paire de bits : le bit impair la signale comme optionnelle, le bit pair comme obligatoire."
+    definition: "bolt-09"
+    url: "https://github.com/lightning/bolts/blob/master/09-features.md"
+  - number: 10
+    id: "BOLT-10"
+    title: "BOLT #10: DNS Bootstrap and Assisted Node Location"
+    status: "Actif"
+    summary: "Spécification des serveurs DNS d'amorçage (*DNS seeds*) du Lightning Network. Un nœud qui démarre sans aucun contact les interroge par des requêtes `A`, `AAAA` ou `SRV` pour obtenir un échantillon aléatoire de pairs, ou pour retrouver l'adresse actuelle d'un nœud qu'il connaît déjà."
+    definition: "bolt-10"
+    url: "https://github.com/lightning/bolts/blob/master/10-dns-bootstrap.md"
+  - number: 11
+    id: "BOLT-11"
+    title: "BOLT #11: Invoice Protocol for Lightning Payments"
+    status: "Actif"
+    summary: "Format des factures Lightning, encodées en `Bech32` pour tenir dans un QR code. Une facture indique le réseau et un montant facultatif, transporte des champs étiquetés (hash de paiement, secret de paiement, description, expiration, indices de routage) et se termine par la signature du destinataire."
+    definition: "bolt-11"
+    url: "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md"
+  - number: 12
+    id: "BOLT-12"
+    title: "BOLT #12: Negotiation Protocol for Lightning Payments"
+    status: "Actif"
+    summary: "Protocole de paiement fondé sur les *offers*, des demandes de paiement statiques et réutilisables. Le payeur obtient une facture neuve à chaque paiement en envoyant un `invoice_request` par message en oignon, et le destinataire peut cacher son nœud derrière des chemins aveuglés. Le document couvre aussi les remboursements et les preuves de paiement."
+    definition: "bolt-12"
+    url: "https://github.com/lightning/bolts/blob/master/12-offer-encoding.md"

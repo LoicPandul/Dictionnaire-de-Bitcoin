@@ -1,0 +1,1 @@
+Plateforme d'hébergement de nœuds Lightning dans le *cloud*, qui permet aux entreprises et aux développeurs de faire tourner des nœuds LND ou Core Lightning sans administrer l'infrastructure, tout en gardant le contrôle de leurs clés.

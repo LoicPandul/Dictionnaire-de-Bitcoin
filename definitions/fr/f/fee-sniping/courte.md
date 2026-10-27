@@ -1,0 +1,1 @@
+Attaque où un mineur tente de réécrire un bloc récent pour récupérer ses frais de transaction. Les portefeuilles la découragent en fixant le `nLocktime` de leurs transactions à la prochaine hauteur de bloc.

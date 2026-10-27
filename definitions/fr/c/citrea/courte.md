@@ -1,0 +1,1 @@
+Rollup à preuves à divulgation nulle de connaissance construit sur Bitcoin par Chainway Labs, compatible avec la machine virtuelle d'Ethereum. Il exécute les transactions hors chaîne, publie ses preuves sur Bitcoin et relie les deux systèmes par le pont Clementine, sans modifier le consensus.

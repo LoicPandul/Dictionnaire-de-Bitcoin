@@ -5,14 +5,26 @@ Mainnet :
 f9beb4d9
 ```
 
-Testnet :
+Testnet3 :
 ```text
 0b110907
+```
+
+Testnet4 :
+```text
+1c163f28
+```
+
+Signet (réseau public par défaut) :
+```text
+0a03cf40
 ```
 
 Regtest :
 ```text
 fabfb5da
 ```
+
+Sur un signet personnalisé, la valeur est dérivée du défi (*challenge*) du réseau, ce qui donne à chaque signet son propre identifiant.
 
 *Ces 4 octets sont parfois également nommés « Magic Number », « Magic Bytes » ou encore « Start String ».*

@@ -6,4 +6,6 @@ english_term: "PENALTY TRANSACTION"
 cross_references:
   - "aab65e71-7454-4b5d-af76-bc038f9bd44c"
   - "a157dfd3-86e2-4c6d-aeee-7f04a9c95758"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,1 @@
+Proposition informationnelle qui décrit les attaques de *transaction pinning* et définit les transactions TRUC (`nVersion=3`), limitées à un ancêtre et un descendant non confirmés, pour fiabiliser le remplacement de transactions, notamment pour Lightning.

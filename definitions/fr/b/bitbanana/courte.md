@@ -1,0 +1,1 @@
+Application Android *open source*, issue d'un fork de Zap Android, qui permet de piloter à distance un nœud Lightning depuis son téléphone : gestion des canaux, envoi et réception de paiements, suivi du routage.

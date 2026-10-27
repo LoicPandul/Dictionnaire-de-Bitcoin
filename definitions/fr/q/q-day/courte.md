@@ -1,0 +1,1 @@
+Jour hypothétique, de date inconnue, à partir duquel un ordinateur quantique peut casser la cryptographie à clé publique en usage. Pour Bitcoin, ECDSA et Schnorr ne protégeraient plus les fonds dont la clé publique est connue, puis, avec des machines plus rapides, ceux qu'on dépense.

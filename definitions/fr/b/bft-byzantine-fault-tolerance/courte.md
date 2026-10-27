@@ -1,0 +1,1 @@
+Propriété d'un système distribué qui parvient à un consensus fiable même quand certains de ses nœuds sont défectueux ou malveillants. La preuve de travail de Bitcoin est un mécanisme de consensus de ce type.

@@ -1,0 +1,1 @@
+Technique de refroidissement dans laquelle les ASIC sont plongés dans un liquide non conducteur, qui évacue mieux la chaleur que l'air. Elle supprime les ventilateurs et protège les machines de la poussière.

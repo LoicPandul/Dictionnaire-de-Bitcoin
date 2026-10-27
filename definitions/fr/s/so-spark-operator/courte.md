@@ -1,0 +1,1 @@
+Opérateur de la *Spark Entity* qui détient un fragment de sa part de clé et co-signe, avec les autres opérateurs, les transferts *off-chain* du protocole Spark. Les SO surveillent aussi la blockchain contre les sorties frauduleuses.

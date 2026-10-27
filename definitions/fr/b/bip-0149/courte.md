@@ -1,0 +1,1 @@
+Proposition de Shaolin Fry pour un second déploiement de SegWit selon la méthode du BIP-0008, qui l'aurait activé le 4 juillet 2018 même sans le signal des mineurs, de façon moins conflictuelle que le BIP-0148. Elle n'a jamais été mise en œuvre.

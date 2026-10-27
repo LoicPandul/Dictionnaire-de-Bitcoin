@@ -1,0 +1,1 @@
+Indicateurs de la confidentialité d'un UTXO, qui comptent le nombre de pièces indistinguables parmi lesquelles il se cache. Calculés en général sur des coinjoins, ils existent en version prospective (*forward*) et rétrospective (*backward*).

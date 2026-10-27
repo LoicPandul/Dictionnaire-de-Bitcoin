@@ -1,0 +1,1 @@
+Science générale de l'action humaine développée par Ludwig von Mises, qui déduit les lois économiques d'axiomes sur l'action intentionnelle et sert souvent à analyser l'émergence du bitcoin comme monnaie.

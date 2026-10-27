@@ -1,0 +1,7 @@
+Programmeur, cofondateur des cypherpunks et auteur de leur manifeste.
+
+En septembre 1992, il organise avec Timothy May la première réunion des cypherpunks dans la région de San Francisco ; John Gilmore leur prête ensuite ses bureaux pour les réunions mensuelles. La liste de diffusion naît aussitôt, installée avec l'aide de Hugh Daniel sur la machine toad.com de Gilmore ; Hughes en est l'administrateur dès le début. Il écrit la même année le premier remailer des cypherpunks, un relais qui retire l'adresse de l'expéditeur avant de transmettre le courrier : une version rudimentaire, sans chiffrement ni brassage, des « mix » de David Chaum, selon Timothy May.
+
+Le 9 mars 1993, il signe « A Cypherpunk's Manifesto ». Le texte distingue la vie privée du secret : la vie privée est le pouvoir de se révéler de façon sélective. Il en déduit qu'une société ouverte exige des systèmes de transaction anonymes, dont le liquide a été jusqu'ici le principal exemple, et de la cryptographie, signature numérique comprise. Comme on ne peut attendre des États ni des grandes organisations qu'ils l'accordent, chacun doit défendre sa vie privée, et tous ensemble créer ces systèmes. D'où la devise « *Cypherpunks write code* » : les cypherpunks écrivent le logiciel eux-mêmes et le publient pour que tous l'utilisent.
+
+Ce programme est celui que reprend plus tard Bitcoin : une monnaie électronique qui se passe d'intermédiaire.

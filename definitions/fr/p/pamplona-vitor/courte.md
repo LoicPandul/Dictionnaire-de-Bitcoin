@@ -1,0 +1,1 @@
+Développeur, créateur d'Amethyst, client Nostr pour Android. Il a proposé plusieurs NIP, dont NIP-85 (*Trusted Assertions*, 2024), qui délègue certains calculs de *web of trust* à des fournisseurs de confiance.

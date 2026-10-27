@@ -1,0 +1,1 @@
+Sigle de *Deterministic Bitcoin Commitments*, ensemble de règles qui inscrivent un engagement de manière prouvable et unique dans une transaction Bitcoin. RGB en utilise deux formes, `Opret` et `Tapret`.

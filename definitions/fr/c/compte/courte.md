@@ -1,0 +1,1 @@
+Niveau de dérivation situé à la profondeur 3 d'un portefeuille HD, où l'on exporte d'ordinaire la clé publique étendue (`xpub`). Il sert à séparer différents usages au sein d'un même portefeuille, même si la plupart des portefeuilles n'utilisent qu'un seul compte.

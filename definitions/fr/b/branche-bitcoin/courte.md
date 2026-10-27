@@ -1,0 +1,1 @@
+Suite de blocs valides dans laquelle chaque bloc est lié au précédent. Quand plusieurs branches concurrentes existent, les nœuds suivent celle qui a accumulé le plus de travail, qui forme la blockchain.

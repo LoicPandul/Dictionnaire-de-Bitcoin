@@ -1,0 +1,1 @@
+Proposition de transaction collaborative, dite Bustapay ou *pay-to-endpoint*, où le récepteur ajoute une de ses entrées à la transaction du payeur pour casser l'heuristique de propriété commune des entrées. Le Payjoin (BIP-0078) l'a remplacée.

@@ -1,0 +1,1 @@
+Sous-ensemble de la politique de mempool qui fixe, nœud par nœud et en plus des règles de consensus, le format accepté d'une transaction non confirmée prise isolément, notamment pour limiter les attaques DoS et préparer les soft forks.

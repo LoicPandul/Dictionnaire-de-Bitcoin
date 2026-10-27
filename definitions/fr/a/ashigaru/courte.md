@@ -1,0 +1,1 @@
+Portefeuille Bitcoin mobile orienté vers la confidentialité, né d'un fork du code de Samourai Wallet après la saisie de ses serveurs par les autorités américaines en avril 2024, et qui reprend ses outils de protection de la vie privée.

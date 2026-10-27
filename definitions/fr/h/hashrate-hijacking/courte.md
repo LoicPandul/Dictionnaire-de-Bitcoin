@@ -1,0 +1,1 @@
+Attaque qui détourne la puissance de calcul d'un mineur à son insu, en remplaçant l'adresse de sa pool par celle de l'attaquant dans une communication non chiffrée. Stratum V2 chiffre ces échanges pour s'en protéger.

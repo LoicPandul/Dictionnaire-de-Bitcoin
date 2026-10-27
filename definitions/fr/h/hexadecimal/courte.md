@@ -1,0 +1,1 @@
+Système de numération en base 16, qui utilise les chiffres 0 à 9 et les lettres A à F. Chaque chiffre représente 4 bits, ce qui en fait une écriture compacte du binaire, très utilisée pour afficher les données de Bitcoin.

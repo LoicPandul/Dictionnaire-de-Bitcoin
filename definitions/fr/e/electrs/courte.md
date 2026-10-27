@@ -1,0 +1,1 @@
+Implémentation *open source* d'Electrum Server écrite en Rust, qui indexe les adresses et les transactions de la blockchain d'un nœud complet pour répondre rapidement aux requêtes des portefeuilles comme Electrum.

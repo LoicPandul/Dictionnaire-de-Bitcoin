@@ -1,0 +1,1 @@
+Développeur de logiciels Bitcoin, auteur de la bibliothèque NBitcoin et créateur de BTCPay Server, processeur de paiement auto-hébergé lancé en 2017. Il a aussi écrit la spécification de Payjoin (BIP-0078).

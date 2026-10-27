@@ -1,0 +1,1 @@
+Proposition qui définit le schéma de signature de Schnorr sur la courbe secp256k1, activé avec Taproot en novembre 2021, plus simple qu'ECDSA et compatible avec l'agrégation de clés et la vérification par lots.

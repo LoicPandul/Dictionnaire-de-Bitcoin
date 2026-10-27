@@ -2,4 +2,4 @@ Initiative communautaire lancée dans le village d'El Zonte, sur la côte pacifi
 
 Bitcoin Beach a permis aux habitants de payer leurs factures (eau, électricité, téléphone), leurs courses alimentaires ou même le coiffeur directement en bitcoins via le Lightning Network. Le portefeuille développé pour le projet, initialement appelé « Bitcoin Beach Wallet », a ensuite été renommé « Blink ».
 
-L'expérience d'El Zonte a joué un rôle important dans la décision du Salvador d'adopter Bitcoin comme monnaie à cours légal en 2021, faisant du pays le premier État à franchir ce pas. Le modèle a depuis inspiré des initiatives similaires dans d'autres pays, notamment Bitcoin Jungle au Costa Rica.
+L'expérience d'El Zonte a joué un rôle important dans la décision du Salvador d'adopter Bitcoin comme monnaie à cours légal en 2021, faisant du pays le premier État à franchir ce pas. Ce statut a été retiré en janvier 2025, après un vote de l'Assemblée législative (55 voix contre 2) lié à un accord avec le FMI. Le modèle a depuis inspiré des initiatives similaires dans d'autres pays, notamment Bitcoin Jungle au Costa Rica.

@@ -1,0 +1,1 @@
+Proposition qui définit le chemin de dérivation `m/45'/cosigner_index/change/address_index` des portefeuilles multisignatures P2SH, pour que chaque cosignataire génère les mêmes adresses sans autre échange.

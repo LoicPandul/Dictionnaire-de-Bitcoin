@@ -1,0 +1,1 @@
+Méthode de rémunération des mineurs d'une pool, variante de PPS, qui paie chaque *share* selon sa difficulté réelle plutôt que selon la difficulté fixée par la pool, au prix d'une variance plus forte pour le mineur.

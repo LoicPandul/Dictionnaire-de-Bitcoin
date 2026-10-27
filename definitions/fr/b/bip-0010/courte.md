@@ -1,0 +1,1 @@
+Proposition qui définissait un format texte, le *Transaction Distribution Proposal*, pour faire circuler une transaction multisignature entre ses signataires et collecter leurs signatures, y compris sur un appareil hors ligne.

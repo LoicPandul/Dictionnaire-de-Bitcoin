@@ -1,0 +1,1 @@
+Méthode de Coinkite qui fractionne une phrase de récupération en plusieurs parties par l'opération XOR, chacune étant elle-même une phrase BIP-0039 valide. Toutes les parties sont nécessaires pour reconstituer la phrase d'origine.

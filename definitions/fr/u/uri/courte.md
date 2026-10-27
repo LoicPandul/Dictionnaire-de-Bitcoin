@@ -1,0 +1,1 @@
+Chaîne de caractères standardisée qui identifie une ressource sur Internet. Sur Bitcoin, le format du BIP-0021 y encode une adresse et des paramètres de paiement comme le montant, pour payer d'un clic ou par code QR.

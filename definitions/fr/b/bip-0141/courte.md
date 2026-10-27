@@ -1,0 +1,1 @@
+Proposition qui définit SegWit (*Segregated Witness*), le soft fork qui sépare les témoins (les données de signature) du reste de la transaction, pour corriger la malléabilité des transactions tout en restant compatible avec les anciens nœuds.

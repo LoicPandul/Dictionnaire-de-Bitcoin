@@ -1,0 +1,1 @@
+*Framework* d'appels de procédures distantes développé par Google, qui s'appuie sur Protocol Buffers et HTTP/2. C'est l'interface principale par laquelle LND expose ses fonctionnalités, notamment à LNCLI.

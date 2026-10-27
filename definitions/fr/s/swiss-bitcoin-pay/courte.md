@@ -1,0 +1,1 @@
+Solution d'encaissement qui permet aux commerçants d'accepter des paiements en bitcoins, on-chain ou par Lightning, sans gérer de nœud. Les recettes sont reversées chaque jour, en bitcoins ou converties en monnaie fiat.

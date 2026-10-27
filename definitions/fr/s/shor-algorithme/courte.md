@@ -1,0 +1,1 @@
+Algorithme quantique inventé en 1994 par Peter Shor, qui factorise les grands entiers en temps polynomial. Une de ses variantes casse aussi la cryptographie sur courbes elliptiques, dont les signatures ECDSA et Schnorr de Bitcoin, sur un ordinateur quantique assez grand et stable.

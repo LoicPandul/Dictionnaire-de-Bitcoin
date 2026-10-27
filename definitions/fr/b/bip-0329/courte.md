@@ -1,0 +1,1 @@
+Proposition qui définit un format standard en JSON Lines pour exporter et importer les étiquettes d'un portefeuille (transactions, adresses, xpub, UTXO), afin de les transférer d'un logiciel à un autre sans perte.

@@ -1,0 +1,1 @@
+Propriété d'un système qu'aucune entité ne peut empêcher des participants légitimes d'utiliser. Dans Bitcoin, personne ne peut bloquer une transaction valide ni interdire à un utilisateur l'accès au réseau.

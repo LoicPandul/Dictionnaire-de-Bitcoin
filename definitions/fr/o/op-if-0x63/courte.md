@@ -1,0 +1,1 @@
+Opcode qui ouvre une structure conditionnelle dans un script : la portion qui suit ne s'exécute que si la valeur au sommet de la pile est vraie, sinon l'exécution passe à `OP_ELSE` s'il existe. La structure se ferme par `OP_ENDIF`.

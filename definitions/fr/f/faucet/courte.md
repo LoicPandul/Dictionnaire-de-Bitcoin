@@ -1,0 +1,1 @@
+Site ou application qui distribue gratuitement de petites quantités de bitcoins, à l'origine pour faire connaître Bitcoin, puis surtout sur les réseaux de test pour fournir des bitcoins de test aux développeurs.

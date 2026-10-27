@@ -1,0 +1,1 @@
+Protocole de Lightning Labs, anciennement appelé TARO, qui permet d'émettre des actifs fongibles ou non fongibles sur Bitcoin grâce à Taproot. Ces actifs circulent par des transactions Bitcoin classiques ou par le Lightning Network.

@@ -1,0 +1,1 @@
+Proposition qui définit Tapscript, le langage de script des dépenses Taproot par chemin de script, avec les signatures de Schnorr, le nouvel opcode `OP_CHECKSIGADD` et les opcodes `OP_SUCCESS` réservés aux futures extensions.

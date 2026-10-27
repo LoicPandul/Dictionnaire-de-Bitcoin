@@ -1,0 +1,1 @@
+Paramètre de la politique de Bitcoin Core qui fixe le taux de frais en dessous duquel un nœud refuse une transaction non confirmée prise isolément et ne la relaie pas. Son défaut vaut 0,1 sat/vB depuis 2025.

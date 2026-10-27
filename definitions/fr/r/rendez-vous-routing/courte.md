@@ -1,0 +1,1 @@
+Technique de routage Lightning qui cache le destinataire : il construit lui-même un segment de route chiffré depuis un nœud de rendez-vous jusqu'à lui, que l'expéditeur complète. Les *blinded paths* l'ont supplantée.

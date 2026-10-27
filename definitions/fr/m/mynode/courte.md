@@ -1,0 +1,1 @@
+Logiciel *open source* qui permet d'installer facilement un nœud Bitcoin et Lightning, et de gérer depuis une interface web Bitcoin Core, LND et des applications comme un serveur Electrum ou BTCPay Server.

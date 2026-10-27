@@ -1,0 +1,1 @@
+Proposition qui décrit le protocole *Pay-to-Contract*, où le payeur modifie la clé publique du destinataire avec le hash d'un contrat, pour prouver qu'un paiement est lié à ce contrat sans le révéler sur la blockchain.

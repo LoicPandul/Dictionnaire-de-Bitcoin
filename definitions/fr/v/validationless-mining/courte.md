@@ -1,0 +1,1 @@
+Pratique de minage qui consiste à travailler sur un nouveau bloc dès la réception du hash de l'en-tête du bloc précédent, sans avoir téléchargé ni vérifié ses transactions, pour gagner quelques secondes sur les autres mineurs.

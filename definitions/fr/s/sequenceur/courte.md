@@ -1,0 +1,1 @@
+Nœud chargé d'ordonner les transactions et de produire les blocs d'un rollup. Il fournit des pré-confirmations rapides et publie périodiquement des engagements sur la couche de base, sans pouvoir falsifier l'état ni voler les fonds.

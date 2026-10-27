@@ -1,0 +1,1 @@
+*Hardware wallet* *open source* à assembler soi-même autour d'un Raspberry Pi Zero, qui signe des transactions Bitcoin de manière *air-gapped*, par QR codes. Il ne conserve aucune donnée entre deux utilisations : la *seed* est chargée à chaque session.

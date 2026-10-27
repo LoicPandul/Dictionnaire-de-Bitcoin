@@ -1,0 +1,1 @@
+Méthode empirique d'analyse de chaîne qui s'appuie sur les caractéristiques des transactions pour suivre les flux de bitcoins, avec un résultat probable mais jamais certain. On distingue les heuristiques internes, propres à une transaction, et externes, qui regardent son environnement.

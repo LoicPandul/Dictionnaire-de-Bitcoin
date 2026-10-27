@@ -1,0 +1,1 @@
+Ensemble de caractéristiques récurrentes dans les transactions d'un même portefeuille (types de scripts, place du change, champs `nSequence` ou `nLockTime`), que les analystes de chaîne utilisent pour suivre une entité, voire identifier son logiciel.

@@ -1,1 +1,1 @@
-Ancien nom de l'implémentation Core-Lightning. 
+Ancien nom de Core-Lightning (CLN), implémentation du Lightning Network développée par Blockstream et écrite en langage C. Le projet a été renommé en 2022, et son dépôt officiel le présente toujours comme « previously c-lightning ». Le binaire principal s'appelle `lightningd`.

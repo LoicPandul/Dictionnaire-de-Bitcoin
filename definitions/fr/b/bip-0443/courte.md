@@ -1,0 +1,1 @@
+Proposition de Salvatore Ingala qui ajoute l'opcode `OP_CHECKCONTRACTVERIFY` (CCV), pour créer des *covenants* qui imposent des conditions aux sorties d'une transaction, par exemple pour des coffres-forts (*vaults*) ou des canaux Lightning améliorés.

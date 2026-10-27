@@ -1,0 +1,1 @@
+Identifiant partageable défini par NIP-19 qui désigne un événement adressable par son kind, la clé de son auteur et son tag `d`, avec des relais facultatifs, pour que le lien mène à la dernière version qu'un relais a reçue d'un article ou d'une liste.

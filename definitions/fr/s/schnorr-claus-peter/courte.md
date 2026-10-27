@@ -1,0 +1,1 @@
+Mathématicien et cryptographe allemand de l'université de Francfort, il invente à la fin des années 1980 la signature de Schnorr, que `BIP-0340` adapte à la courbe SECP256K1 et que Taproot active au bloc 709632.

@@ -1,0 +1,1 @@
+Promesse de s'engager une seule fois sur un message encore inconnu, de sorte que le fait de l'engagement soit prouvable à une audience donnée. RGB s'en sert pour empêcher qu'un même actif soit dépensé deux fois.

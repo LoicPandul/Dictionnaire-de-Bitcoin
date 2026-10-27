@@ -1,0 +1,1 @@
+Sigle de *Hardware Wallet Interface*, bibliothèque Python et outil en ligne de commande qui font communiquer les logiciels de portefeuille avec les *hardware wallets*, au moyen de PSBT. Il a d'abord été développé pour Bitcoin Core.

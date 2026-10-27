@@ -1,0 +1,1 @@
+Mathématicien et ingénieur de l'université de Californie du Sud (1932-2016), auteur en 1966 du codage de Golomb, que BIP-0158 utilise sous sa forme de Golomb-Rice pour compresser les filtres de blocs des clients légers.

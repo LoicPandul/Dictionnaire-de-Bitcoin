@@ -1,0 +1,1 @@
+Suite de mots, en général 12 ou 24, qui encode l'entropie d'un portefeuille HD selon le BIP-0039. Avec l'éventuelle passphrase, elle permet de recréer toutes les clés du portefeuille et sert donc de sauvegarde.

@@ -73,3 +73,14 @@ Chaque définition se compose de :
 
 - Toujours en MAJUSCULES : `title: "ADAPTOR SIGNATURE"`
 - Le slug est en minuscules avec tirets : `slug: "adaptor-signature"`
+
+## 6. Version courte (`courte.md`)
+
+Chaque entrée a aussi une version courte, à côté de `definition.md` :
+
+- une ou deux phrases, 45 mots au plus, en un seul paragraphe ;
+- elle commence comme la définition développée (ce qu'est le terme), puis dit à quoi il sert ;
+- elle ne contient rien que la version développée ne dise pas ;
+- ni liste, ni image, ni formule, ni lien, ni gras.
+
+`python3 scripts/main.py check` vérifie que chaque entrée a ses deux versions et que la version courte respecte ces limites.

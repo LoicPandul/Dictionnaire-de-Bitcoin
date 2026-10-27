@@ -1,0 +1,1 @@
+Proposition qui définit un code de paiement publié par le destinataire, à partir duquel le payeur dérive des adresses uniques après une transaction de notification, pour éviter la réutilisation d'adresses.

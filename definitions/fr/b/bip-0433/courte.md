@@ -1,0 +1,1 @@
+Proposition informationnelle qui définit P2A (*Pay-to-Anchor*), une sortie standard que n'importe qui peut dépenser, pour servir d'ancre au CPFP et augmenter après coup les frais d'une transaction pré-signée.

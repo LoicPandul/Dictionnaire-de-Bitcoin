@@ -1,0 +1,1 @@
+Programmeur finlandais, collaborateur de Satoshi Nakamoto dès 2009. Il met en place le site et le forum du projet, et vend le 12 octobre 2009 5 050 bitcoins pour 5,02 dollars, première transaction connue contre des dollars.

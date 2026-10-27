@@ -1,0 +1,1 @@
+Processus par lequel un nœud Bitcoin trouve d'autres nœuds auxquels se connecter, en puisant dans son fichier `peers.dat`, auprès des DNS seeds, dans la liste de *seed nodes* intégrée à Bitcoin Core ou parmi des adresses ajoutées à la main.

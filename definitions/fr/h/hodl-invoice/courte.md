@@ -1,0 +1,1 @@
+Facture Lightning dont le destinataire retarde la révélation de la *preimage*, ce qui laisse le paiement suspendu dans les HTLC de la route. Il peut ensuite l'encaisser ou l'annuler, ce qui sert par exemple aux dépôts remboursables ou aux *escrows*.

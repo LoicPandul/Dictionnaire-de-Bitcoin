@@ -1,0 +1,1 @@
+Proposition d'amélioration de Bitcoin, formulée par Gregory Maxwell en 2018, qui étend Taproot en permettant aux détenteurs d'une clé agrégée de déléguer la dépense à des scripts arbitraires en les signant. Elle n'a jamais été formalisée en BIP.

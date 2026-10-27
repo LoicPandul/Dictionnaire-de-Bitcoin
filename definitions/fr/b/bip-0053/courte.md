@@ -1,0 +1,1 @@
+Proposition qui interdit, au niveau du consensus, les transactions de 64 octets, qu'on peut confondre avec un nœud interne d'un arbre de Merkle. Elle empêche de construire de fausses preuves SPV pour tromper les nœuds légers.

@@ -6,4 +6,6 @@ english_term: "COMMITMENT TRANSACTION"
 cross_references:
   - "45f431f2-f91e-4986-a2b3-968252720501"
   - "aab65e71-7454-4b5d-af76-bc038f9bd44c"
+assets:
+  - filename: "image-1.png"
 version: "1"

@@ -1,0 +1,1 @@
+Protocole externe à Bitcoin qui numérote chaque sat selon son ordre de minage et le suit de transaction en transaction. Il rend ainsi des sats non fongibles pour leur associer des contenus appelés « inscriptions ».

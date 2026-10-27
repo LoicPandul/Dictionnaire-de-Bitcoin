@@ -1,0 +1,1 @@
+Protocole de relais des transactions, proposé dans le BIP-0330, qui limite la diffusion directe à quelques pairs puis réconcilie les transactions manquantes avec *minisketch*. Il réduirait la bande passante d'un nœud et lui permettrait d'accepter bien plus de connexions.

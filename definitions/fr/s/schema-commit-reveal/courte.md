@@ -1,0 +1,1 @@
+Méthode de dépense en deux temps proposée pour Bitcoin : l'utilisateur publie d'abord un engagement sur sa transaction sans révéler sa clé publique, puis, après confirmation, la dévoile avec elle. Un attaquant quantique arrive alors trop tard pour la remplacer, sauf réorganisation profonde.

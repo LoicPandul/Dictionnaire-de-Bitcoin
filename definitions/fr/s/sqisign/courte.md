@@ -1,0 +1,1 @@
+Schéma de signature numérique post-quantique à base d'isogénies entre courbes elliptiques, dont la clé et la signature, cumulées, sont les plus petites que connaissent ses auteurs. Signer et vérifier y sont nettement plus lents qu'avec ML-DSA et Falcon.

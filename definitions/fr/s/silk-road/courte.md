@@ -1,0 +1,1 @@
+Place de marché du *dark web* fondée par Ross Ulbricht et lancée en 2011, où l'on payait en bitcoins sous couvert de Tor. Fermée en 2013, elle a contribué à faire connaître Bitcoin au début des années 2010.

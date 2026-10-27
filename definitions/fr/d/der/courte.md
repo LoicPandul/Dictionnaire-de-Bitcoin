@@ -1,0 +1,1 @@
+Sigle de *Distinguished Encoding Rules*, sous-ensemble strict des règles d'encodage ASN.1 qui encode les données en binaire de manière standard et prévisible. Bitcoin s'en sert pour encoder les signatures ECDSA.

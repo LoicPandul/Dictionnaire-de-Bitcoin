@@ -1,0 +1,1 @@
+Brouillon de BIP d'Agustin Cruz, présenté en février 2025 et jamais numéroté, qui imposerait une date limite pour migrer vers des adresses résistantes au quantique. Passé ce délai, les sorties classiques deviendraient indépensables.

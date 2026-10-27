@@ -1,0 +1,1 @@
+Branche du graphe orienté acyclique qui retrace l'historique des *State Transitions* d'un contrat RGB. Elle isole la partie de l'historique utile pour vérifier côté client la validité d'un actif depuis la *Genesis*.

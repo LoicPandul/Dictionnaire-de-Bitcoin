@@ -1,0 +1,1 @@
+Indicateur de confidentialité d'une transaction Bitcoin, qui mesure en bits d'entropie le nombre d'interprétations possibles entre ses entrées et ses sorties. Il sert notamment à évaluer l'efficacité d'un *coinjoin*.

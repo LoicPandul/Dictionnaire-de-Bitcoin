@@ -1,0 +1,1 @@
+Proposition qui étend les arbres de clés HD (BIP-0032) pour créer de nouveaux niveaux de dérivation à la demande. Elle a été fermée, les chemins standards des BIP-0044, BIP-0049 et BIP-0084 suffisant à la plupart des usages.

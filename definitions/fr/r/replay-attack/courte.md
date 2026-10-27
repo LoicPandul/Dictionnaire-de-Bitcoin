@@ -1,0 +1,1 @@
+Attaque qui consiste à rediffuser sur une autre blockchain une transaction valide sur la première, quand les deux chaînes partagent le même historique, typiquement après un *hard fork*. L'émetteur voit alors ses fonds dépensés aussi sur la seconde chaîne, sans son consentement.

@@ -1,0 +1,1 @@
+Algorithme de signature numérique sur courbe elliptique, utilisé sur Bitcoin avec la courbe `secp256k1` pour signer les transactions. Il est disponible sur Bitcoin depuis l'activation de Taproot en novembre 2021.

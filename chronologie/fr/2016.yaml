@@ -1,0 +1,253 @@
+# Chronologie de Bitcoin : 2016.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "2016-01-14"
+    title: "Version 0.5.9.2 du papier Lightning"
+    text: "Joseph Poon et Thaddeus Dryja publient la version 0.5.9.2 de leur papier *The Bitcoin Lightning Network*. Ils y décrivent un réseau de canaux de paiement hors chaîne, sécurisés par des *timelocks* décroissants. C'est encore cette version que diffuse le site lightning.network."
+    related: ["lightning-network", "canal-de-paiment", "timelock"]
+    sources:
+      - "https://lightning.network/lightning-network-paper.pdf"
+      - "https://web.archive.org/web/20160116023616/https://lightning.network/lightning-network-paper.pdf"
+      - "https://nakamotoinstitute.org/library/lightning-network/"
+  - date: "2016-01-14"
+    title: "Mike Hearn annonce l'échec de Bitcoin"
+    text: "Mike Hearn, développeur Bitcoin depuis plus de cinq ans, publie « The resolution of the Bitcoin experiment ». Il y juge l'expérience ratée, dénonce la limite de 1 Mo par bloc et annonce avoir vendu tous ses bitcoins."
+    related: ["blocksize-war"]
+    sources:
+      - "https://medium.com/@octskyward/the-resolution-of-the-bitcoin-experiment-dabb30201f7"
+      - "https://www.engadget.com/2016-01-15-mike-hearn-quits-bitcoin.html"
+  - date: "2016-01-15"
+    title: "Cryptsy avoue un vol de 13 000 BTC"
+    text: "La plateforme américaine Cryptsy révèle qu'un code malveillant caché dans le portefeuille d'une *altcoin* lui a permis de se faire voler environ 13 000 BTC et 300 000 litecoins en 2014. Elle gèle les échanges et menace de déposer le bilan si les fonds ne reviennent pas."
+    sources:
+      - "https://www.govinfosecurity.com/bitcoin-heist-steals-millions-from-exchange-a-8803"
+      - "https://news.bitcoin.com/cryptsy-bitcoin-exchange-announces-massive-theft-shuts-indefinitely/"
+  - date: "2016-02-03"
+    title: "Blockstream lève 55 millions USD"
+    text: "Blockstream, entreprise montréalaise qui développe les *sidechains*, annonce une levée de fonds de série A de 55 millions USD, menée par Horizons Ventures, AXA Strategic Ventures et Digital Garage. Le total de ses levées atteint 76 millions USD."
+    related: ["blockstream", "sidechain"]
+    sources:
+      - "https://blockstream.com/press-releases/2016-02-03-blockstream-announces-55-million-series-a-investment/"
+      - "https://betakit.com/blockstream-raises-55-million-series-a/"
+  - date: "2016-02-10"
+    title: "Première version de Bitcoin Classic"
+    text: "Bitcoin Classic publie sa version 0.11.2, la première du projet. Ce client compatible avec Bitcoin Core 0.11.2 ajoute une règle de consensus qui porte la taille maximale des blocs de 1 à 2 Mo, donc un *hard fork*."
+    related: ["bitcoin-classic", "hard-fork", "blocksize-war"]
+    sources:
+      - "https://github.com/bitcoinclassic/bitcoinclassic/releases/tag/v0.11.2.cl1"
+      - "https://forklog.com/en/bitcoin-classic-released/"
+  - date: "2016-02-21"
+    title: "Accord de Hong Kong"
+    text: "À Cyberport, des mineurs, des entreprises et cinq contributeurs de Bitcoin Core signent une feuille de route : sortie de SegWit, puis un *hard fork* proposé dans les trois mois suivants, avec environ 2 Mo de données hors témoin et 4 Mo au plus au total."
+    related: ["hong-kong-roundtable", "segwit", "hard-fork", "blocksize-war"]
+    sources:
+      - "https://medium.com/@bitcoinroundtable/bitcoin-roundtable-consensus-266d475a61ff"
+      - "https://cointelegraph.com/news/bitcoin-conference-hong-kong-hard-fork"
+  - date: "2016-02-23"
+    title: "Bitcoin Core 0.12.0"
+    text: "Bitcoin Core 0.12.0 vérifie les signatures avec libsecp256k1 au lieu d'OpenSSL, plus de cinq fois plus vite sur x86_64. Cette version plafonne aussi le mempool (300 Mo par défaut) et accepte le remplacement de transactions signalé selon le BIP-0125."
+    related: ["bitcoin-core", "libsecp256k1", "mempool", "bip-0125", "rbf-replace-by-fee"]
+    sources:
+      - "https://bitcoincore.org/en/releases/0.12.0/"
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/20160223111341.GA10783@amethyst.visucore.com/"
+  - date: "2016-04-04"
+    title: "Ouverture d'OpenBazaar"
+    text: "OpenBazaar, place de marché décentralisée où chacun ouvre sa boutique et vend des biens contre des bitcoins sans intermédiaire central, ouvre au public avec la version 1.1.0 de son client."
+    sources:
+      - "https://github.com/OpenBazaar/OpenBazaar-Client/releases/tag/v1.1.0"
+      - "https://www.financemagnates.com/cryptocurrency/education-center-2/went-shopping-drugs-fake-ids-guns-using-bitcoin-openbazaar/"
+      - "https://bitcoinist.com/washington-sanchez-speaks-about-ob-release/amp/"
+  - date: "2016-04-15"
+    title: "Bitcoin Core 0.12.1 et le soft fork CSV"
+    text: "Bitcoin Core 0.12.1 embarque le premier *soft fork* déployé avec les *version bits* du BIP-0009. Il regroupe les BIP-0068, BIP-0112 et BIP-0113, que les mineurs peuvent signaler du 1er mai 2016 au 1er mai 2017."
+    related: ["bitcoin-core", "bip-0009", "bip-0068", "bip-0112", "bip-0113", "soft-fork"]
+    sources:
+      - "https://bitcoincore.org/en/releases/0.12.1/"
+      - "https://forklog.com/en/new-bitcoin-core-release-timelocks-scripts-and-other-features-of-v-0-12-1/"
+  - date: "2016-04-25"
+    title: "Bitstamp obtient une licence au Luxembourg"
+    text: "Bitstamp annonce avoir reçu du ministère des Finances du Luxembourg une licence d'établissement de paiement, valable dans toute l'Union européenne. La presse y voit le premier établissement de paiement pour le bitcoin entièrement réglementé en Europe."
+    sources:
+      - "https://fortune.com/2016/04/25/bitcoin-exchange-eu-approval-bitstamp/"
+      - "https://www.cnbc.com/2016/04/26/europe-launches-its-first-licensed-bitcoin-exchange.html"
+  - date: "2016-04-28"
+    title: "Steam accepte le bitcoin"
+    text: "Valve ajoute le bitcoin aux moyens de paiement de Steam, sa plateforme de vente de jeux vidéo. Le prestataire BitPay convertit les bitcoins en monnaie classique avant de payer Valve, qui n'en détient jamais."
+    sources:
+      - "https://www.pcgamesn.com/buy-steam-games-bitcoin"
+      - "https://www.ubergizmo.com/2016/04/steam-now-accepts-bitcoin"
+  - date: "2016-05-02"
+    title: "Craig Wright se dit Satoshi Nakamoto"
+    text: "L'Australien Craig Wright affirme à la BBC, à The Economist et à GQ être Satoshi Nakamoto. Le même jour, Gavin Andresen écrit sur son blog qu'il le croit, après une démonstration privée à Londres."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://www.bbc.com/news/technology-36168863"
+      - "http://gavinandresen.ninja/satoshi"
+      - "https://www.theguardian.com/technology/2016/may/02/craig-wright-bitcoin-founder-satoshi-nakamoto-claim"
+  - date: "2016-05-02"
+    title: "Gavin Andresen perd ses droits sur le dépôt de Bitcoin Core"
+    text: "Dès la publication du billet où Gavin Andresen dit croire Craig Wright, les mainteneurs de Bitcoin Core lui retirent ses droits sur l'organisation « bitcoin » de GitHub, par crainte d'un piratage de son compte. Wladimir van der Laan refuse ensuite de les lui rendre."
+    related: ["bitcoin-core", "nakamoto-satoshi"]
+    sources:
+      - "https://laanwj.github.io/2016/05/06/hostility-scams-and-moving-forward.html"
+      - "https://bitcoinmagazine.com/?p=25127"
+      - "https://www.criptonoticias.com/comunidad/bitcoin-core-revoco-acceso-gavin-andresen-codigo-fuente-bitcoin"
+  - date: "2016-05-05"
+    title: "Craig Wright renonce à sa preuve"
+    text: "Craig Wright remplace le contenu de son blog par une lettre intitulée « I'm Sorry ». Il renonce à déplacer des bitcoins attribués à Satoshi Nakamoto, la preuve qu'il avait promise, faute d'en avoir « le courage »."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://www.bbc.com/news/technology-36213580"
+      - "https://betanews.com/2016/05/05/craig-wright-backs-out-of-bitcoin-claim/"
+  - date: "2016-05-25"
+    title: "Le Japon encadre les monnaies virtuelles"
+    text: "La Diète japonaise adopte une réforme de la loi bancaire qui donne une définition légale de la « monnaie virtuelle » et oblige les plateformes d'échange à s'enregistrer auprès de l'État."
+    sources:
+      - "https://www.jonesday.com/de/insights/2016/06/japan-legal-update-vol-15--june-2016"
+      - "https://www.bakermckenzie.co.jp/wp/wp-content/uploads/ClientAlert_201606_FinTech_No2_E.pdf"
+  - date: "2016-06-02"
+    title: "La CFTC sanctionne Bitfinex"
+    text: "La CFTC américaine inflige 75 000 USD d'amende à Bitfinex. La plateforme proposait à des particuliers des achats de bitcoins financés par emprunt, hors marché réglementé et sans livraison effective des bitcoins."
+    sources:
+      - "https://www.cftc.gov/PressRoom/PressReleases/7380-16"
+      - "https://www.coindesk.com/markets/2016/06/02/cftc-fines-bitcoin-exchange-bitfinex-75000-over-trading-violations/"
+  - date: "2016-06-20"
+    title: "Annonce du Ledger Nano S"
+    text: "Ledger ouvre les précommandes du Nano S, un portefeuille matériel doté d'un écran OLED sur lequel l'utilisateur vérifie et confirme chaque transaction."
+    related: ["ledger", "hardware-wallet"]
+    sources:
+      - "https://ledger.com/ledger-nano-s-secure-multi-currency-hardware-wallet"
+      - "https://finovate.com/?p=52943"
+  - date: "2016-06-24"
+    title: "SegWit fusionné dans Bitcoin Core"
+    text: "Wladimir van der Laan fusionne la *pull request* 8149 de Pieter Wuille : le code de SegWit entre dans la branche principale de Bitcoin Core. Ses paramètres d'activation sur le réseau principal restent à définir."
+    related: ["segwit", "bip-0141", "bitcoin-core"]
+    sources:
+      - "https://github.com/bitcoin/bitcoin/pull/8149"
+      - "https://bitcoinmagazine.com/technical/segregated-witness-will-be-merged-into-bitcoin-core-release-soon-1466787770"
+  - date: "2016-06-24"
+    title: "Le bitcoin grimpe après le vote du Brexit"
+    text: "Au lendemain du référendum où le Royaume-Uni choisit de quitter l'Union européenne, la livre sterling tombe à son plus bas niveau depuis 30 ans. Le bitcoin, qui valait moins de 600 USD la veille, dépasse 650 USD."
+    sources:
+      - "https://techcrunch.com/2016/06/23/bitcoin-surges-past-650-as-brexit-result-sends-uk-pound-tumbling-to-30-year-low/"
+      - "https://fortune.com/2016/06/24/bitcoin-exchange-rate/"
+  - date: "2016-07-01"
+    title: "Zug accepte le bitcoin pour ses services municipaux"
+    text: "La ville suisse de Zug lance un essai jusqu'à la fin de l'année : ses habitants peuvent régler certains services municipaux en bitcoins, jusqu'à 200 francs suisses par paiement."
+    sources:
+      - "https://www.swissinfo.ch/eng/business/crypto-valley_zug-first-to-accept-bitcoin-for-government-services/42143908"
+      - "https://bitcoinmagazine.com/culture/swiss-city-to-pilot-bitcoin-payments-for-public-services-1463066904"
+      - "https://bitcoinist.com/zug-swiss-bitcoin-payment-permanent/amp/"
+  - date: "2016-07-04"
+    title: "Activation du soft fork CSV"
+    text: "Le *soft fork* CSV, qui regroupe les BIP-0068, BIP-0112 et BIP-0113, devient actif au bloc 419 328. Il ajoute les verrous temporels relatifs, dont l'opcode `OP_CHECKSEQUENCEVERIFY`."
+    related: ["soft-fork", "bip-0068", "bip-0112", "bip-0113", "op-checksequenceverify-0xb2", "timelock"]
+    sources:
+      - "https://mempool.space/block/000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5"
+      - "https://blockstream.info/block/000000000000000004a1b34462cb8aeebd5799177f7a29cf28f2d1961716b5b5"
+      - "https://github.com/bitcoin/bitcoin/blob/master/src/kernel/chainparams.cpp"
+  - date: "2016-07-05"
+    title: "Bruxelles vise les plateformes d'échange"
+    text: "La Commission européenne propose d'étendre la directive antiblanchiment aux plateformes d'échange de monnaies virtuelles et aux fournisseurs de portefeuilles de garde, qui devront appliquer des mesures de vigilance envers leurs clients."
+    related: ["kyc-know-your-customer"]
+    sources:
+      - "https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2380"
+      - "https://www.coindesk.com/markets/2016/07/05/european-union-adopts-tighter-bitcoin-controls-amid-terrorism-crackdown/"
+  - date: "2016-07-09"
+    title: "Deuxième halving"
+    text: "Le bloc 420 000, miné à 16 h 46 UTC, déclenche le deuxième halving : la subvention de bloc passe de 25 à 12,5 BTC."
+    related: ["halving", "subvention-de-bloc", "recompense-de-bloc"]
+    sources:
+      - "https://mempool.space/block/000000000000000002cce816c0ab2c5c269cb081896b7dcb34b8422d6b74ffa1"
+      - "https://blockstream.info/block/000000000000000002cce816c0ab2c5c269cb081896b7dcb34b8422d6b74ffa1"
+  - date: "2016-07-21"
+    title: "Prison ferme pour le fondateur de Bitcoin Savings and Trust"
+    text: "La justice fédérale de New York condamne Trendon Shavers, alias « pirateat40 », à 18 mois de prison pour fraude en valeurs mobilières. Sa pyramide de Ponzi, Bitcoin Savings and Trust, avait collecté environ 146 000 BTC. C'est la première affaire fédérale de ce type liée au bitcoin."
+    sources:
+      - "https://www.justice.gov/usao-sdny/pr/texas-man-sentenced-operating-bitcoin-ponzi-scheme"
+      - "https://siliconangle.com/2016/07/22/bitcoin-savings-trust-ponzi-scammer-trendon-shavers-gets-18-months/"
+  - date: "2016-07-25"
+    title: "Pour une juge de Miami, le bitcoin n'est pas de la monnaie"
+    text: "Dans une ordonnance rendue publique ce jour-là, la juge Teresa Mary Pooler abandonne les poursuites pour blanchiment contre Michell Espinoza, qui avait vendu des bitcoins à des policiers infiltrés. Selon elle, le bitcoin a « encore beaucoup de chemin à faire » avant d'équivaloir à de la monnaie."
+    sources:
+      - "https://www.miamiherald.com/news/local/crime/article91682102.html"
+      - "https://bitcoinmagazine.com/culture/miami-judge-rules-bitcoin-is-not-money-dismisses-money-laundering-transmitting-charges-1469471625"
+      - "https://reason.com/2016/07/25/florida-judge-says-bitcoin-not-money-sel/"
+  - date: "2016-08-01"
+    title: "Publication de Mimblewimble"
+    text: "Un inconnu, « majorplayer », dépose sur le canal IRC #bitcoin-wizards le texte « Mimblewimble », signé Tom Elvis Jedusor. Il combine transactions confidentielles et agrégation pour masquer les montants et effacer de la chaîne les sorties déjà dépensées."
+    related: ["mimblewimble", "confidential-transactions"]
+    sources:
+      - "https://gnusha.org/bitcoin-wizards/2016-08-01.log"
+      - "https://docs.grin.mw/about-grin/story/"
+      - "https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt"
+  - date: "2016-08-02"
+    title: "Piratage de Bitfinex"
+    text: "Bitfinex, plateforme basée à Hong Kong, suspend ses échanges après un piratage : 119 756 BTC, environ 72 millions USD, sont dérobés dans les portefeuilles séparés de ses clients."
+    sources:
+      - "https://fortune.com/2016/08/03/bitcoin-stolen-bitfinex-hack-hong-kong"
+      - "https://www.pcworld.com/article/3103609/hacking/bitcoin-exchange-bitfinex-apparently-loses-63-million-to-hackers.html"
+  - date: "2016-08-06"
+    title: "Bitfinex répartit sa perte sur tous ses clients"
+    text: "Quatre jours après le piratage, Bitfinex inflige à tous ses clients, piratés ou non, une perte uniforme de 36,067 % de leurs avoirs. En échange, chacun reçoit des jetons BFX que la plateforme promet de racheter ou d'échanger contre des actions de sa société mère, iFinex."
+    sources:
+      - "https://mondovisione.com/news/bitfinex-interim-announcement-201687/"
+      - "https://fortune.com/2016/08/08/bitcoin-hack-exchange/"
+  - date: "2016-08-23"
+    title: "Bitcoin Core 0.13.0"
+    text: "Bitcoin Core 0.13.0 relaie les blocs au format compact du BIP-0152 et crée désormais des portefeuilles HD selon le BIP-0032. Il contient aussi le code de SegWit, sans activation sur le réseau principal."
+    related: ["bitcoin-core", "bip-0152", "compact-block-relay", "bip-0032", "hd-hierarchical-deterministic", "segwit"]
+    sources:
+      - "https://bitcoincore.org/en/releases/0.13.0/"
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/20160823152338.GA3176@amethyst.visucore.com/"
+  - date: "2016-09-15"
+    title: "Lancement d'OpenTimestamps"
+    text: "Peter Todd publie la version alpha d'OpenTimestamps, un service d'horodatage sans autorité de confiance qui regroupe un nombre illimité d'horodatages dans une seule transaction Bitcoin."
+    related: ["opentimestamps", "horodatage"]
+    sources:
+      - "https://petertodd.org/2016/opentimestamps-announcement"
+      - "https://lists.w3.org/Archives/Public/public-blockchain/2016Sep/0053.html"
+  - date: "2016-09-19"
+    title: "Une juge fédérale assimile le bitcoin à des fonds"
+    text: "La juge fédérale Alison Nathan refuse d'abandonner les poursuites contre Anthony Murgio, accusé d'avoir exploité la plateforme Coin.mx sans licence. Selon elle, les bitcoins sont des « funds » au sens de la loi fédérale sur la transmission d'argent."
+    sources:
+      - "https://clsbluesky.law.columbia.edu/2016/09/28/latham-watkins-discusses-ruling-that-bitcoins-are-funds-under-money-transmitting-laws/"
+      - "https://www.csmonitor.com/Business/2016/0920/US-judge-rules-that-Bitcoin-counts-as-money"
+  - date: "2016-10-10"
+    title: "Premier sommet du protocole Lightning à Milan"
+    text: "Les 10 et 11 octobre, au lendemain de Scaling Bitcoin Milan, une douzaine de développeurs d'ACINQ, Amiko Pay, Bitfury, Blockstream, Lightning Labs et Purse posent les bases d'une spécification commune pour que leurs implémentations de Lightning puissent communiquer."
+    related: ["lightning-network", "acinq", "blockstream", "lightning-labs"]
+    sources:
+      - "https://blog.blockstream.com/en-outcomes-from-lightning-protocol-summit-milan/"
+      - "https://bitcoinmagazine.com/technical/after-scaling-bitcoin-a-lightning-winter-release-is-now-within-reach-1476814566"
+      - "https://scalingbitcoin.org/milan2016/"
+  - date: "2016-10-27"
+    title: "Bitcoin Core 0.13.1 déploie SegWit"
+    text: "Bitcoin Core 0.13.1 fixe le déploiement de SegWit (BIP-0141). À partir du 15 novembre 2016, les mineurs le signalent avec le bit 1 ; si 95 % des blocs d'une période de 2 016 blocs le font, le *soft fork* se verrouille."
+    related: ["bitcoin-core", "segwit", "bip-0141", "bip-0009", "soft-fork"]
+    sources:
+      - "https://bitcoincore.org/en/releases/0.13.1/"
+      - "https://mailing-list.bitcoindevs.xyz/bitcoindev/20161027184235.GA30297@amethyst.visucore.com/"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+  - date: "2016-11-11"
+    title: "Du bitcoin aux guichets des CFF"
+    text: "Les Chemins de fer fédéraux suisses (CFF) vendent du bitcoin contre des francs suisses dans leurs plus de 1 000 distributeurs de billets, avec la société SweePay, jusqu'à 500 francs par opération."
+    sources:
+      - "https://railwaygazette.com/technology/bitcoin-to-be-sold-through-swiss-ticket-machines/43431.article"
+      - "https://fortune.com/2016/10/28/swiss-rail-operator-sbb-bitcoins"
+  - date: "2016-11-14"
+    title: "Le CME lance un cours de référence du bitcoin"
+    text: "Le CME Group, opérateur de marchés dérivés de Chicago, lance avec Crypto Facilities le CME CF Bitcoin Reference Rate, un cours quotidien du bitcoin en dollars, et un indice en temps réel. Tous deux agrègent les transactions de grandes plateformes d'échange."
+    sources:
+      - "https://www.cmegroup.com/education/bitcoin/infographic-cme-cf-brr-and-brti.html"
+      - "https://www.cfbenchmarks.com/blog/celebrating-nine-years-of-the-cme-cf-bitcoin-reference-rate-brr-the-bridge-to-institutional-crypto-adoption"
+      - "https://www.hedgeweek.com/cme-group-and-crypto-facilities-launch-bitcoin-reference-rate-and-real-time-index/"
+  - date: "2016-11-30"
+    title: "La justice autorise l'IRS à viser les clients de Coinbase"
+    text: "Un tribunal fédéral de Californie du Nord autorise l'IRS à adresser à Coinbase une *John Doe summons* : la plateforme doit livrer des informations sur ses clients américains qui ont utilisé une monnaie virtuelle entre 2013 et 2015."
+    related: ["coinbase", "kyc-know-your-customer"]
+    sources:
+      - "https://www.justice.gov/opa/pr/court-authorizes-service-john-doe-summons-seeking-identities-us-taxpayers-who-have-used"
+      - "https://reason.com/2016/12/02/court-allows-irs-to-order-bitcoin-exchan/"

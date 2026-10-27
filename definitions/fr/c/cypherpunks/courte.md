@@ -1,0 +1,1 @@
+Communauté informelle, née au début des années 1990, qui promeut la cryptographie pour défendre les libertés individuelles et la vie privée sur Internet. La création de Bitcoin est souvent vue comme l'une de ses réalisations majeures.

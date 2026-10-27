@@ -1,1 +1,1 @@
-Portefeuille Bitcoin axé sur la confidentialité offrant des fonctionnalités telles que le coinjoin.
+Portefeuille Bitcoin de bureau libre (licence MIT), axé sur la confidentialité et écrit en C#. Il intègre le coinjoin : la version 2.0, publiée en juin 2022, utilise le protocole WabiSabi. L'entreprise zkSNACKs, qui développe le logiciel, a annoncé le 2 mai 2024 la fermeture de son coordinateur de coinjoin au 1er juin 2024.

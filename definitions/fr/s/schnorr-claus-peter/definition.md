@@ -1,0 +1,7 @@
+Mathématicien et cryptographe allemand (1943-2025), professeur à l'université Goethe de Francfort, inventeur de la signature qui porte son nom.
+
+Né le 4 août 1943 à Völklingen, en Sarre, il devient professeur de mathématiques à Francfort en 1971. À la fin des années 1980, il met au point un schéma d'identification et de signature fondé sur le logarithme discret, aujourd'hui appelé signature de Schnorr (entrée SCHNORR). L'université de Francfort note en 2008 que ce schéma est entré de façon déterminante dans le Digital Signature Standard américain. Son brevet américain 4 995 082, qui décrit la méthode d'identification et de signature, est déposé avec une priorité du 24 février 1989 et délivré le 19 février 1991.
+
+Le `BIP-0340`, assigné le 19 janvier 2020 à Pieter Wuille, Jonas Nick et Tim Ruffing, spécifie des signatures de Schnorr de 64 octets sur la courbe SECP256K1 et les compare à l'ECDSA, qui utilise la même courbe. Il met en avant leur linéarité : plusieurs participants peuvent produire ensemble une signature valide pour la somme de leurs clés publiques, ce qui sert de base aux multisignatures comme MUSIG2 et aux signatures à seuil comme FROST. TAPROOT (`BIP-0341`) emploie ces signatures, de 64 octets par défaut (65 avec un octet sighash explicite), et s'est activé au bloc 709632.
+
+Il ne figure ni parmi les auteurs ni dans les remerciements de ces BIP : son lien avec Bitcoin passe par la construction mathématique qui porte son nom.

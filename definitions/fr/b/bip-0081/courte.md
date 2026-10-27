@@ -1,0 +1,1 @@
+Proposition qui étend le chemin de dérivation du BIP-0080 aux *voting pools* utilisant des *colored coins*, avec 5 niveaux supplémentaires pour encoder la définition de couleur. Elle n'a jamais été adoptée.

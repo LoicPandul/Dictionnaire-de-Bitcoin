@@ -1,0 +1,1 @@
+Partie d'une transaction qui contient les signatures et les clés publiques nécessaires pour dépenser les bitcoins. Avec SegWit, elle est séparée du reste de la transaction, ce qui supprime la malléabilité du TXID et augmente la capacité des blocs.

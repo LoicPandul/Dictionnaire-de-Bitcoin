@@ -1,0 +1,1 @@
+Système de contrats intelligents confidentiel qui fonctionne par-dessus Bitcoin et le Lightning Network grâce à la validation côté client. L'état des contrats reste hors chaîne, seuls des engagements cryptographiques sont ancrés sur la blockchain, ce qui permet notamment d'émettre des jetons.

@@ -1,0 +1,1 @@
+Application web custodiale qui permet d'envoyer, de recevoir et d'accepter des paiements en bitcoins *on-chain*, sur Lightning, sur Liquid et en Ecash depuis un navigateur. Elle s'adresse aux particuliers comme aux commerçants, avec un point de vente intégré.

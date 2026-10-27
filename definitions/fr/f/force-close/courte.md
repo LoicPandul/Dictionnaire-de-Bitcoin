@@ -1,0 +1,1 @@
+Fermeture unilatérale d'un canal Lightning, où un participant diffuse la dernière transaction d'engagement signée pour récupérer ses fonds *onchain*, plus lente et plus chère qu'une fermeture coopérative.

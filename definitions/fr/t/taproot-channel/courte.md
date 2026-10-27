@@ -1,0 +1,1 @@
+Canal Lightning ancré dans une sortie Taproot (P2TR) plutôt que dans une sortie P2WSH. Sa fermeture coopérative ressemble à une dépense Taproot ordinaire, ce qui la rend plus efficace et plus confidentielle.

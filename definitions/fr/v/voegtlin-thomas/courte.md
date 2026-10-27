@@ -1,0 +1,1 @@
+Créateur d'Electrum, portefeuille léger annoncé sur Bitcointalk le 5 novembre 2011, qui n'exige pas de télécharger la blockchain. Selon le site d'Electrum, il fonde ensuite Electrum Technologies, qui développe le logiciel.

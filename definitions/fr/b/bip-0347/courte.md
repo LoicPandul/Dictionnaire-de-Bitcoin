@@ -1,0 +1,1 @@
+Proposition d'Ethan Heilman et Armin Sabouri pour réactiver dans Tapscript l'opcode `OP_CAT`, désactivé par Satoshi Nakamoto en 2010, qui concatène deux éléments de la pile et servirait notamment à construire des covenants.

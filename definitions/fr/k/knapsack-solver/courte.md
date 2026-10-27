@@ -1,0 +1,1 @@
+Algorithme de sélection de pièces du portefeuille de Bitcoin Core, qui choisit des UTXO de manière itérative et aléatoire et les additionne par sous-ensembles pour atteindre le montant visé en limitant les frais et la taille de la transaction.

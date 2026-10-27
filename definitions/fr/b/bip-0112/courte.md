@@ -1,0 +1,1 @@
+Proposition de soft fork qui introduit l'opcode `OP_CHECKSEQUENCEVERIFY`, pour qu'un script n'autorise la dépense qu'après un délai relatif, en blocs ou en temps. Elle a été activée en 2016 avec les BIP-0068 et BIP-0113.

@@ -1,0 +1,1 @@
+Proposition expérimentale qui ajoute aux HTLC un signal d'endossement, pour collecter des données sur des algorithmes de réputation contre les attaques de *channel jamming* sans modifier le routage des paiements.

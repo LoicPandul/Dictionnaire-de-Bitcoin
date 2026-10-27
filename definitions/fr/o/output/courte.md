@@ -1,0 +1,1 @@
+Sortie d'une transaction, qui attribue un montant de bitcoins et fixe les conditions pour le dépenser. Tant qu'elle n'est pas dépensée, elle forme un UTXO qu'une transaction future pourra utiliser en entrée.

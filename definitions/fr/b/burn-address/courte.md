@@ -1,0 +1,1 @@
+Adresse Bitcoin dont personne ne détient la clé privée : les fonds qui y sont envoyés ne peuvent plus être dépensés, ce qui sert à détruire des bitcoins, par exemple pour une preuve de brûlage (*proof of burn*).

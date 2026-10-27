@@ -1,0 +1,1 @@
+Structure de données qui condense un ensemble d'éléments en un seul hachage, la racine de Merkle, en hachant les éléments par paires jusqu'au sommet. Dans Bitcoin, elle résume les transactions d'un bloc et permet de prouver qu'une transaction y figure.

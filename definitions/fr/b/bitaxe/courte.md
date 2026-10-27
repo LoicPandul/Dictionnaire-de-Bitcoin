@@ -1,0 +1,1 @@
+Mineur de Bitcoin miniature et *open source*, construit autour d'une puce ASIC et alimenté en USB-C, utilisé surtout pour apprendre ou pour le minage solo, faute de puissance face aux fermes industrielles.

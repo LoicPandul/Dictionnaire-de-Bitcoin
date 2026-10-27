@@ -1,0 +1,1 @@
+Attaque théorique sur l'ajustement de la difficulté de Bitcoin, où un mineur majoritaire alterne les horodatages des derniers blocs de chaque période pour faire chuter la difficulté. Le BIP-0054 (*Consensus Cleanup*) la corrige.

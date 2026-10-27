@@ -1,0 +1,1 @@
+Structure de données définie par le BIP-0037 qui prouve l'inclusion de transactions dans un bloc grâce à l'en-tête et à un arbre de Merkle partiel, pour que les portefeuilles SPV vérifient leurs transactions sans télécharger le bloc entier.

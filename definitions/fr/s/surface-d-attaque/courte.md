@@ -1,0 +1,1 @@
+Ensemble des points d'entrée qu'un attaquant peut viser pour accéder à un système : interfaces, services, ports, protocoles. Un *hardware wallet* a une surface d'attaque bien plus réduite qu'un portefeuille installé sur un ordinateur.

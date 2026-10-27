@@ -1,0 +1,1 @@
+Système de monnaie électronique fondé sur des jetons de preuve de travail réutilisables, lancé par Hal Finney en 2004. Ce prédécesseur de Bitcoin dépendait de serveurs centraux et n'ajustait pas la difficulté.

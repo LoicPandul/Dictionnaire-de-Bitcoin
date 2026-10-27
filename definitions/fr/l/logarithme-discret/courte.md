@@ -1,0 +1,1 @@
+Problème mathématique qui consiste à retrouver l'exposant à partir du résultat d'une exponentiation dans un groupe cyclique fini. Sa difficulté de calcul fonde la sécurité des signatures ECDSA et Schnorr utilisées par Bitcoin.

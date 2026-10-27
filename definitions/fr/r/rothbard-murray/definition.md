@@ -1,0 +1,7 @@
+Économiste américain de l'école autrichienne, théoricien de l'anarcho-capitalisme, auteur d'ouvrages sur la monnaie et la banque.
+
+Né à New York le 2 mars 1926, il lit *Human Action* de Ludwig von Mises en 1949, et suit son séminaire à l'université de New York à partir de l'automne 1949. À l'hiver 1949-1950, il conclut que la fourniture de la protection relève elle aussi du marché, et soutient qu'un monopole public sur ce service est illégitime : cette position est appelée anarcho-capitalisme. En 1962, il publie *Man, Economy, and State*, qui reprend l'approche de Mises, puis en 1963 *What Has Government Done to Our Money?*, court exposé sur la nature de la monnaie, la création monétaire des banques, le rôle des banques centrales et la fin de l'étalon-or. L'institut Mises le présente comme un manifeste de la monnaie saine.
+
+Il enseigne l'économie à l'institut polytechnique de Brooklyn du milieu des années 1960 au milieu des années 1980, publie *The Mystery of Banking* en 1983, puis occupe de 1986 à sa mort une chaire à l'université du Nevada à Las Vegas. Il est vice-président académique de l'institut Ludwig von Mises, fondé en 1982 à Auburn (Alabama). Il meurt à Manhattan le 7 janvier 1995.
+
+Il appartient à l'ÉCOLE AUTRICHIENNE, comme Mises. En 2014, Jeffrey Tucker, dans un article publié sur le site de la Foundation for Economic Education, voit dans Bitcoin un « rêve rothbardien » pour son mode de propriété, tout en notant que Rothbard préférait l'or. Rothbard est mort avant l'apparition de Bitcoin.

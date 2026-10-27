@@ -1,0 +1,1 @@
+*Share* envoyée par un mineur à sa pool après la découverte d'un nouveau bloc, donc calculée sur un bloc dépassé. La pool la rejette et ne la rémunère pas ; la latence réseau en est la cause habituelle.

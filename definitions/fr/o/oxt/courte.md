@@ -1,0 +1,1 @@
+Explorateur de la blockchain Bitcoin créé par LaurentMT puis acquis par Samourai Wallet, spécialisé dans l'analyse de la confidentialité des transactions. Le service est hors ligne depuis avril 2024, après les poursuites engagées contre les fondateurs de Samourai Wallet.

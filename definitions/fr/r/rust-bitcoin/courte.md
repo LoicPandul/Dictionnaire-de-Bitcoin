@@ -1,0 +1,1 @@
+Bibliothèque *open source* en Rust pour manipuler les données du protocole Bitcoin : transactions, blocs, messages réseau, clés, adresses et PSBT. Elle sert à construire des portefeuilles et des outils, pas à valider le consensus comme un nœud complet.

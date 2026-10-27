@@ -1,0 +1,1 @@
+Action, dans Git, d'intégrer les modifications d'une branche dans une autre, le plus souvent d'une branche secondaire vers la branche principale, en combinant leurs historiques et en résolvant les conflits.

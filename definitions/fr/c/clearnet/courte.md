@@ -1,0 +1,1 @@
+Internet conventionnel, où les communications circulent avec des adresses IP identifiables, par opposition aux réseaux superposés comme Tor ou I2P. Pour un nœud Bitcoin ou Lightning, utiliser le *clearnet* expose son adresse IP à ses pairs.

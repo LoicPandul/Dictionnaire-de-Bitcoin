@@ -1,0 +1,1 @@
+Engagement cryptographique homomorphe pour l'addition : il est possible de vérifier la somme de plusieurs engagements sans révéler les valeurs engagées. Il sert par exemple à masquer les montants échangés dans RGB.

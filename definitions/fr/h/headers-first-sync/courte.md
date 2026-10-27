@@ -1,0 +1,1 @@
+Méthode de synchronisation initiale introduite dans Bitcoin Core 0.10.0, qui télécharge d'abord les en-têtes de tous les blocs avant les blocs complets. Elle a remplacé la synchronisation *blocks-first*, qui récupérait les blocs un par un auprès d'un seul pair.

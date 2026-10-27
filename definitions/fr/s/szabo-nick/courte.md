@@ -1,0 +1,1 @@
+Informaticien, auteur du texte « Smart Contracts » (1994) qui définit le contrat intelligent, et concepteur de bit gold, monnaie à preuves de travail chaînées conçue selon lui en 1998 et décrite en détail en 2005.

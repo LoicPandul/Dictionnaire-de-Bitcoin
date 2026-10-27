@@ -1,0 +1,1 @@
+Variante de `SIGHASH_ANYPREVOUT` définie par le BIP-0118, dont la signature ne s'engage ni sur l'UTXO dépensé, ni sur son script, ni sur son montant. Elle peut servir pour tout UTXO dont les scripts utilisent la même clé publique BIP-0118.

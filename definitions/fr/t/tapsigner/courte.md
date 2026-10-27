@@ -1,0 +1,1 @@
+Carte NFC de Coinkite qui stocke une clé privée maîtresse et signe des transactions Bitcoin quand on l'approche d'un téléphone. Sans écran, elle sert de dispositif de signature abordable pour de petits montants ou au sein d'un multisig.

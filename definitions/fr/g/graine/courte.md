@@ -1,0 +1,1 @@
+Information de 512 bits dont un portefeuille HD dérive toutes ses clés, obtenue en passant la phrase mnémonique et l'éventuelle *passphrase* dans `PBKDF2`. Elle est souvent confondue avec la phrase de récupération elle-même.

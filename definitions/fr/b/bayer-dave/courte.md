@@ -1,0 +1,1 @@
+Mathématicien américain, professeur émérite à Barnard College, coauteur avec Stuart Haber et W. Scott Stornetta d'un article de 1993 qui regroupe les horodatages numériques dans des arbres de hachage, cité en référence [4] du livre blanc de Bitcoin.

@@ -1,0 +1,1 @@
+Informaticien des Bell Labs, auteur en 1996 d'un algorithme quantique de recherche au gain quadratique, qui ramènerait la recherche d'une préimage `SHA256` à environ 2^128 évaluations de la fonction et donnerait un avantage à un mineur quantique.

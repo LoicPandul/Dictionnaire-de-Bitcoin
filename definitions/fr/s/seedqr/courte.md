@@ -1,0 +1,1 @@
+Format qui représente une phrase de récupération BIP-0039 sous forme de QR code, en codant chaque mot par son index dans la liste. Il permet de sauvegarder la *seed* sur un support physique puis de l'importer dans un *signing device* sans saisie manuelle.

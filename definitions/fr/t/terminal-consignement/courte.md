@@ -1,0 +1,1 @@
+*Transfer consignment* du protocole RGB qui intègre l'état final d'un contrat, obtenu par la *State Transition* créée à partir de l'*Invoice* du destinataire. Il marque l'aboutissement d'un transfert et rassemble les données qui l'attestent.

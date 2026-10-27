@@ -1,0 +1,1 @@
+Principe économique inverse de la loi de Gresham, selon lequel « la bonne monnaie chasse la mauvaise » : quand une monnaie perd la confiance, souvent en hyperinflation, les agents la refusent au profit d'une monnaie plus fiable, malgré son cours légal.

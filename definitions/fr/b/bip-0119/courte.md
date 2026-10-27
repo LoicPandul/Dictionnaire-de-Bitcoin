@@ -1,0 +1,1 @@
+Proposition de soft fork qui introduit l'opcode `OP_CHECKTEMPLATEVERIFY` (CTV), pour créer des *covenants* non récursifs qui imposent à l'avance la façon dont une pièce pourra être dépensée, par exemple pour le contrôle de congestion ou les DLC.

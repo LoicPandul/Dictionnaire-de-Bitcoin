@@ -1,0 +1,1 @@
+Participation à la preuve de travail, le mécanisme qui permet aux nœuds de Bitcoin de s'accorder sur une version unique du registre : le mineur cherche une valeur dont le *hash* passe sous une cible. Chaque bloc trouvé lui rapporte la subvention et les frais.

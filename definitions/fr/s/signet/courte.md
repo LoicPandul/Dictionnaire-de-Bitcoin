@@ -1,0 +1,1 @@
+Réseau de test de Bitcoin dont la production de blocs est contrôlée par une ou plusieurs entités désignées. Il sert à tester de nouvelles fonctionnalités dans des conditions plus prévisibles que le *testnet*.

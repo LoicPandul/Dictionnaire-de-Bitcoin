@@ -1,0 +1,1 @@
+Bouton présent sur les ASIC qui permet de retrouver l'adresse IP de la machine sur le réseau local. Après un appui de quelques secondes, un logiciel dédié sur un ordinateur du même réseau affiche l'adresse du mineur.

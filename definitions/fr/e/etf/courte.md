@@ -1,0 +1,1 @@
+Sigle de *Exchange-Traded Fund*. Fonds coté en bourse qui réplique un actif, comme les ETF spot Bitcoin autorisés aux États-Unis en janvier 2024, qui exposent au cours du bitcoin sans détenir directement l'actif.

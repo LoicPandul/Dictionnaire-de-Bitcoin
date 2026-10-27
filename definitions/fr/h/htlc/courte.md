@@ -1,0 +1,1 @@
+Sigle de *Hashed Timelock Contract*, contrat qui conditionne un transfert de fonds à la révélation d'un secret, avec une condition de temps qui protège l'envoyeur en cas d'échec. Sur Lightning, il permet de router un paiement à travers plusieurs canaux sans confiance.

@@ -1,0 +1,1 @@
+Recalcul de la cible de difficulté du minage tous les 2016 blocs, selon le temps mis à les trouver, pour maintenir un rythme moyen d'un bloc toutes les 10 minutes quelle que soit la puissance de calcul des mineurs.

@@ -1,0 +1,1 @@
+Réseau Bitcoin séparé du *mainnet*, réservé aux tests et au développement, où les bitcoins n'ont aucune valeur. Il permet d'essayer des fonctionnalités, des applications et des mises à jour sans risque pour le réseau principal ni frais réels.

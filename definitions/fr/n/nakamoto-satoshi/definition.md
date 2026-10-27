@@ -1,1 +1,1 @@
-Pseudonyme de la personne ou du groupe qui a créé Bitcoin et écrit son livre blanc original en 2008 (White Paper). Nakamoto, qui a communiqué uniquement en ligne, a finalement disparu de la scène publique en 2011.
+Pseudonyme de la personne ou du groupe qui a créé Bitcoin et écrit son livre blanc original (*White Paper*), « *Bitcoin: A Peer-to-Peer Electronic Cash System* », publié le 31 octobre 2008. Nakamoto a ensuite miné le bloc de Genèse, le 3 janvier 2009. Il a communiqué uniquement en ligne, puis a disparu de la scène publique en 2011. Son identité reste inconnue.

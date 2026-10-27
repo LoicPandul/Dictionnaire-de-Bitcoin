@@ -1,0 +1,1 @@
+Opcode qui empêche de dépenser un UTXO avant une date ou une hauteur de bloc donnée, en imposant une valeur minimale au champ `nLockTime` de la transaction qui le dépense. On l'abrège souvent en CLTV.

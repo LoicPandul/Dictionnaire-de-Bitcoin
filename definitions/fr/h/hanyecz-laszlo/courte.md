@@ -1,0 +1,1 @@
+Développeur de la communauté Bitcoin des débuts. Le 22 mai 2010, il paie deux pizzas 10 000 bitcoins, premier achat documenté d'un bien, et il est la même année un pionnier du minage sur carte graphique.

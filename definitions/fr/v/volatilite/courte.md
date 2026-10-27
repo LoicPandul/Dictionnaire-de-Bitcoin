@@ -1,0 +1,1 @@
+Mesure de l'amplitude des variations du prix d'un actif sur une période donnée. Pour Bitcoin, elle désigne les fluctuations, parfois fortes, du cours du BTC face aux monnaies fiat comme le dollar ou l'euro.

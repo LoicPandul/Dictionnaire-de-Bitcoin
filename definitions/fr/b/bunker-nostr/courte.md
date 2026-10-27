@@ -1,0 +1,1 @@
+Signataire distant défini par NIP-46 : il garde la clé privée et signe sur demande d'un client, qui lui parle par des événements chiffrés transmis par des relais, après une connexion par URL `bunker://` ou `nostrconnect://`.

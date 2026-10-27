@@ -1,0 +1,1 @@
+Concept de l'économie autrichienne qui décrit la tendance à préférer une satisfaction immédiate à une satisfaction future. Une monnaie dure comme le bitcoin est souvent présentée comme un encouragement à une préférence temporelle basse, donc à l'épargne.

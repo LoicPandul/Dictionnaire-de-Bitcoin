@@ -1,0 +1,1 @@
+Acteur qui prend part aux opérations d'un contrat RGB : l'émetteur (*issuer*) qui crée la *Genesis*, les détenteurs de droits sur l'état du contrat et, si le contrat le permet, les *public parties* qui construisent des *State Extensions*.

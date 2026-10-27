@@ -1,0 +1,1 @@
+Règle de calcul du poids, introduite par SegWit, qui compte chaque octet du témoin d'une transaction pour 1 unité de poids, contre 4 pour les autres octets. Elle réduit de 75 % la place que le témoin occupe dans la limite d'un bloc.

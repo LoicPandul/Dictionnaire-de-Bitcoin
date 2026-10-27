@@ -1,0 +1,1 @@
+Processus périodique du protocole Ark au cours duquel l'*Ark Service Provider* (ASP) regroupe les échanges de VTXO des utilisateurs et ancre les nouveaux VTXO sur la blockchain Bitcoin dans une seule transaction.

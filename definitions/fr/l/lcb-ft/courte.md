@@ -1,0 +1,1 @@
+Ensemble des mesures réglementaires de lutte contre le blanchiment des capitaux et le financement du terrorisme, comme le KYC, la surveillance des transactions et le signalement aux autorités, imposées aux plateformes d'échange régulées.

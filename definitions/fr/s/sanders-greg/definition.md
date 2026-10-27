@@ -1,0 +1,7 @@
+Développeur de Bitcoin Core et auteur de propositions sur les frais et les contrats de seconde couche, connu sous le pseudonyme instagibbs. Il signe Gregory Sanders dans la plupart de ses BIP (Greg Sanders dans le BIP-0345).
+
+En février 2023, James O'Beirne publie le BIP-0345, qui propose `OP_VAULT` et `OP_VAULT_RECOVER`, deux opcodes destinés aux coffres (*vaults*) ; Gregory Sanders en devient coauteur en mars 2023 et soumet une conception alternative qui sépare la fonction en trois opcodes. Le BIP-0345 a depuis le statut Closed. Début 2024, il présente un prototype de LN-Symmetry (anciennement *eltoo*), construit sur une branche de Core Lightning.
+
+Dans Bitcoin Core, il écrit les deux changements de politique de relais qui permettent des ancres de frais plus simples. Le premier, fusionné le 2 août 2024, rend standard la dépense de la sortie P2A (*Pay to Anchor*), un script `OP_1 <0x4e73>` que n'importe qui peut dépenser pour augmenter les frais d'une transaction parente par CPFP. Le second, fusionné le 12 novembre 2024 (13 novembre en UTC), introduit la poussière éphémère (*ephemeral dust*) : une transaction sans frais peut porter une sortie sous le seuil de poussière si une transaction enfant la dépense dans le même paquet.
+
+Il formalise ensuite P2A dans le BIP-0433, dont le numéro est attribué le 8 décembre 2025. En 2026, il coécrit avec Antoine Poinsot et Steven Roose le BIP-0446 (`OP_TEMPLATEHASH`) et le BIP-0448 (transactions *(re)bindable* natives à Taproot), tous deux au statut Draft à la date de rédaction.

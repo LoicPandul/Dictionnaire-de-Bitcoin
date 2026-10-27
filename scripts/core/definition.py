@@ -3,47 +3,50 @@
 Classe représentant une définition du dictionnaire.
 """
 
-import re
-import yaml
-from pathlib import Path
+import unicodedata
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import List, Optional
+
+import yaml
 
 
 @dataclass
 class Definition:
-    """Représente une définition du dictionnaire."""
+    """Une entrée de definitions/fr/<lettre>/<slug>/."""
 
     uuid: str
     title: str
     slug: str
     category: str
-    content: str
+    content: str            # definition.md : version développée
     path: Path
 
+    short: Optional[str] = None   # courte.md : version courte (None si absente)
     english_term: Optional[str] = None
     french_term: Optional[str] = None
     cross_references: List[str] = field(default_factory=list)
     assets: List[dict] = field(default_factory=list)
-    created_at: Optional[str] = None
-    updated_at: Optional[str] = None
+    version: Optional[str] = None
+    part: Optional[str] = None    # renseignée par Dictionary à partir de la taxonomie
 
     @classmethod
     def load(cls, directory: Path) -> "Definition":
         """Charge une définition depuis un dossier."""
         metadata_path = directory / "metadata.yaml"
         content_path = directory / "definition.md"
+        short_path = directory / "courte.md"
 
         if not metadata_path.exists():
-            raise FileNotFoundError(f"Metadata file not found: {metadata_path}")
+            raise FileNotFoundError(f"metadata.yaml manquant : {metadata_path}")
         if not content_path.exists():
-            raise FileNotFoundError(f"Definition file not found: {content_path}")
+            raise FileNotFoundError(f"definition.md manquant : {content_path}")
 
         with open(metadata_path, "r", encoding="utf-8") as f:
-            metadata = yaml.safe_load(f)
+            metadata = yaml.safe_load(f) or {}
 
-        with open(content_path, "r", encoding="utf-8") as f:
-            content = f.read()
+        content = content_path.read_text(encoding="utf-8")
+        short = short_path.read_text(encoding="utf-8").strip() if short_path.exists() else None
 
         return cls(
             uuid=metadata.get("uuid", ""),
@@ -52,70 +55,24 @@ class Definition:
             category=metadata.get("category", ""),
             content=content,
             path=directory,
+            short=short,
             english_term=metadata.get("english_term"),
             french_term=metadata.get("french_term"),
-            cross_references=metadata.get("cross_references", []),
-            assets=metadata.get("assets", []),
-            created_at=metadata.get("created_at"),
-            updated_at=metadata.get("updated_at"),
+            cross_references=metadata.get("cross_references") or [],
+            assets=metadata.get("assets") or [],
+            version=metadata.get("version"),
         )
 
-    def to_markdown(self, format_type: str = "full", base_path: str = "") -> str:
-        """
-        Convertit la définition en markdown.
-
-        Args:
-            format_type: "full" pour le format complet, "body" pour le corps seul
-            base_path: Chemin de base pour les liens relatifs
-        """
-        lines = []
-
-        if format_type == "full":
-            # Titre
-            lines.append(f"## {self.title}")
-
-            # Catégorie
-            if self.category:
-                lines.append(f"▪ **{self.category}**")
-                lines.append("")
-
-            # Terme anglais/français
-            if self.english_term:
-                lines.append(f"► ***EN : {self.english_term}***")
-                lines.append("")
-            elif self.french_term:
-                lines.append(f"► ***FR : {self.french_term}***")
-                lines.append("")
-
-        # Contenu
-        content = self.content
-
-        # Ajuster les chemins des images si nécessaire
-        if base_path:
-            content = self._adjust_image_paths(content, base_path)
-
-        lines.append(content)
-
-        return "\n".join(lines)
-
-    def _adjust_image_paths(self, content: str, base_path: str) -> str:
-        """Ajuste les chemins des images dans le contenu."""
-        # Remplacer ./assets/ par le chemin absolu approprié
-        pattern = r'!\[\]\(\./assets/([^)]+)\)'
-        replacement = f'![]({base_path}/{self.path.name}/assets/\\1)'
-        return re.sub(pattern, replacement, content)
+    @property
+    def sort_key(self) -> str:
+        """Clé de tri alphabétique (sans accents, insensible à la casse)."""
+        normalized = unicodedata.normalize("NFKD", self.title)
+        return "".join(c for c in normalized if not unicodedata.combining(c)).upper()
 
     @property
     def first_letter(self) -> str:
-        """Retourne la première lettre (pour classement)."""
-        import unicodedata
-        normalized = unicodedata.normalize('NFKD', self.title)
-        first_char = ''.join(c for c in normalized if not unicodedata.combining(c))[0]
-        return first_char.upper()
-
-    def has_assets(self) -> bool:
-        """Vérifie si la définition a des assets."""
-        return len(self.assets) > 0
+        """Première lettre du titre, sans accent (pour le classement)."""
+        return self.sort_key[:1]
 
     def __repr__(self) -> str:
         return f"Definition(title={self.title!r}, slug={self.slug!r})"

@@ -1,0 +1,1 @@
+Version des paiements multichemins Lightning où chaque fragment porte un secret partiel distinct. Le destinataire ne peut réclamer le paiement qu'après avoir reçu tous les fragments, et les différentes routes ne partagent plus de lien visible.

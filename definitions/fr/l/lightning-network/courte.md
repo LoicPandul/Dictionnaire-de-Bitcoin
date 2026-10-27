@@ -1,0 +1,1 @@
+Protocole de couche supérieure construit sur Bitcoin, qui ouvre des canaux de paiement entre participants pour échanger presque instantanément et à faible coût. Seules l'ouverture et la clôture des canaux passent par la blockchain.

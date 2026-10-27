@@ -1,0 +1,1 @@
+Bloc en cours de construction par un mineur, qui contient les transactions choisies mais pas encore de preuve de travail valide. Le mineur fait varier son en-tête jusqu'à obtenir un hash sous la cible, puis le diffuse.

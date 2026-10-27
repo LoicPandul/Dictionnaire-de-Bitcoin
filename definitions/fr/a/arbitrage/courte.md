@@ -1,0 +1,1 @@
+Pratique qui consiste à acheter du bitcoin sur une plateforme où son prix est bas et à le revendre au même moment sur une autre où il est plus élevé, pour profiter de l'écart. Elle contribue à aligner les prix entre plateformes.

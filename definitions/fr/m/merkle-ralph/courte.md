@@ -1,0 +1,1 @@
+Cryptographe américain, coinventeur de la cryptographie à clé publique, dont la thèse de 1979 et le brevet décrivent l'arbre de hachage dit de Merkle. Le livre blanc de Bitcoin cite son article de 1980 en référence [7] pour résumer les transactions d'un bloc.

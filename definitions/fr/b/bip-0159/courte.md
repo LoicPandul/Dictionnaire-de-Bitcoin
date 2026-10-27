@@ -1,0 +1,1 @@
+Proposition qui définit le bit de service `NODE_NETWORK_LIMITED`, par lequel un nœud élagué annonce qu'il sert au moins les 288 derniers blocs, ce qui lui permet de participer au relais des blocs récents.

@@ -1,0 +1,1 @@
+Mécanisme où un utilisateur immobilise ou détruit des bitcoins pour rendre son identité coûteuse et dissuader les attaques Sybil, utilisé surtout dans JoinMarket pour choisir les *makers* des coinjoins.

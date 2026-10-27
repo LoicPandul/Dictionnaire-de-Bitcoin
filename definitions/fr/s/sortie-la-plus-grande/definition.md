@@ -1,3 +1,3 @@
 Heuristique d'analyse de chaîne interne. Lorsque l'on repère un écart suffisamment large entre 2 sorties de transaction sur un modèle de paiement simple, on peut estimer que la sortie la plus grande est vraisemblablement le change. Cette heuristique du plus gros output est sûrement la plus imprécise de toutes. Si on l'identifie seule, elle est assez faible. Toutefois, cette caractéristique peut être additionnée avec d'autres heuristiques, afin de réduire l'incertitude de notre interprétation.
 
-![Sortie la plus grande : un input de 451 458 sats donne 57 814 et 390 987, l'écart laissant supposer un change de 390 987.](./assets/image-1.png)
+![Une entrée de 451 458 sats se divise en deux sorties très inégales, 57 814 et 390 987 sats, les 2 657 sats restants payant les frais : la plus grande est lue comme le change probable, sans certitude.](./assets/image-1.png)

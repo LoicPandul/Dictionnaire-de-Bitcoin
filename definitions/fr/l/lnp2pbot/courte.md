@@ -1,0 +1,1 @@
+Bot Telegram *open source* qui permet d'acheter et de vendre des bitcoins en pair-à-pair contre des devises locales, avec des paiements sur le Lightning Network et un *escrow* qui bloque les sats du vendeur jusqu'au paiement de l'acheteur.

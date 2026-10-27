@@ -1,0 +1,1 @@
+Projet *open source* qui déploie sur un Raspberry Pi un nœud Bitcoin et Lightning préconfiguré, avec Bitcoin Core, une implémentation Lightning et des outils comme un explorateur de blocs ou un serveur Electrum.

@@ -1,0 +1,1 @@
+Sigle de *GNU General Public License*, famille de licences de logiciel libre de la Free Software Foundation qui imposent de distribuer tout logiciel dérivé sous la même licence. Bitcoin Core, lui, est publié sous licence MIT.

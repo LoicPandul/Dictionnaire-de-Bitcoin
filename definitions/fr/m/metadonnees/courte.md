@@ -1,0 +1,1 @@
+Données qui fournissent des informations sur d'autres données, comme leur format, leur structure ou leur auteur, par opposition à la charge utile. Bitcoin en utilise dans les adresses de réception, les clés étendues ou les blocs.

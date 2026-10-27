@@ -1,0 +1,1 @@
+Signature à base de hachage sans état, standardisée par le NIST dans FIPS 205 à partir de SPHINCS+. Le signataire n'a rien à retenir entre deux signatures, au prix de signatures de plusieurs kilo-octets.

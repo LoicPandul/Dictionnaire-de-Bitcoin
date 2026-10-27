@@ -1,0 +1,1 @@
+Proposition qui définit la structure des *compact block filters* utilisés par le BIP-0157 : des *Golomb-Coded Sets*, plus compacts que les filtres de Bloom, qui résument les scripts dépensés et créés dans chaque bloc.

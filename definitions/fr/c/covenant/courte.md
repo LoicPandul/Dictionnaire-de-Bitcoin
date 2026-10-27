@@ -1,0 +1,1 @@
+Mécanisme qui restreint la manière dont un UTXO pourra être dépensé, y compris dans les transactions suivantes, au-delà de la simple condition de déverrouillage. Plusieurs propositions visent à l'apporter à Bitcoin, notamment pour construire des *vaults*.

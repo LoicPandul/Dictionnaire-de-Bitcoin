@@ -4,4 +4,4 @@ Proposition rédigée par Nils Schneider et Matt Corallo, sur la base du BIP-002
 bitcoin:bc1qmp7emyf7un49eaz0nrxk9mdfrtn67v5y866fvs?amount=0.1&label=Pandul
 ``` 
 
-Cette standardisation améliore l'expérience utilisateur des transactions Bitcoin en permettant de cliquer sur un lien ou de scanner un QR code pour lancer les paramètres de celles-ci. La norme BIP-0021 est aujourd'hui largement adoptée dans les logiciels de portefeuilles Bitcoin.
+Cette standardisation améliore l'expérience utilisateur des transactions Bitcoin en permettant de cliquer sur un lien ou de scanner un QR code pour lancer les paramètres de celles-ci. Le BIP-0021 a le statut « *Closed* » : le BIP-0321, qui le remplace, reprend le même schéma d'URI.

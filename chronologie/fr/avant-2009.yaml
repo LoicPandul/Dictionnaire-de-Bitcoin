@@ -1,0 +1,253 @@
+# Chronologie de Bitcoin : avant 2009.
+# Chaque date est recoupée par au moins deux sources indépendantes (champ sources).
+# Point de départ : https://bitcointalk.org/index.php?topic=5187275.0
+
+events:
+  - date: "1976-11"
+    title: "Diffie et Hellman inventent la cryptographie à clé publique"
+    text: "Whitfield Diffie et Martin Hellman publient « New Directions in Cryptography » dans la revue IEEE Transactions on Information Theory. Ils y décrivent un échange de clés sur un canal non sécurisé et posent les bases de la cryptographie à clé publique."
+    related: ["diffie-hellman", "cle-publique"]
+    sources:
+      - "https://ee.stanford.edu/~hellman/publications/24.pdf"
+      - "https://api.crossref.org/works/10.1109/TIT.1976.1055638"
+      - "https://people.csail.mit.edu/rivest/Rsapaper.pdf"
+
+  - date: "1978-02"
+    title: "Publication de l'algorithme RSA"
+    text: "Ron Rivest, Adi Shamir et Leonard Adleman publient dans Communications of the ACM un système de chiffrement et de signature à clé publique, connu depuis sous le nom de RSA. La revue avait reçu l'article le 4 avril 1977."
+    related: ["signature-numerique", "cle-publique"]
+    sources:
+      - "https://people.csail.mit.edu/rivest/Rsapaper.pdf"
+      - "https://api.crossref.org/works/10.1145/359340.359342"
+      - "https://people.csail.mit.edu/rivest/pubs.html"
+
+  - date: "1979"
+    title: "Ralph Merkle décrit l'arbre de hachage"
+    text: "Dans sa thèse de Stanford datée de juin 1979, Ralph Merkle décrit l'authentification par arbre de hachage, puis dépose le brevet correspondant le 5 septembre 1979. Bitcoin utilise cette structure, l'arbre de Merkle, pour résumer les transactions de chaque bloc."
+    related: ["arbre-de-merkle", "racine-de-merkle"]
+    sources:
+      - "https://www.ralphmerkle.com/papers/Thesis1979.pdf"
+      - "https://patents.google.com/patent/US4309569A/en"
+
+  - date: "1982"
+    title: "David Chaum invente la signature aveugle"
+    text: "À la conférence Crypto 82, David Chaum présente « Blind Signatures for Untraceable Payments ». La signature aveugle permet à une banque de signer une pièce numérique sans en voir le contenu, ce qui rend le paiement électronique intraçable."
+    related: ["signature-aveugle", "ecash-david-chaum"]
+    sources:
+      - "https://chaum.com/publications/"
+      - "https://nakamotoinstitute.org/library/"
+      - "https://api.crossref.org/works/10.1007/978-1-4757-0602-4_18"
+
+  - date: "1982-07"
+    title: "Formalisation du problème des généraux byzantins"
+    text: "Leslie Lamport, Robert Shostak et Marshall Pease publient « The Byzantine Generals Problem » : comment des participants peuvent-ils s'accorder quand certains mentent ? En novembre 2008, Satoshi Nakamoto présentera la chaîne de preuve de travail comme une solution à ce problème."
+    related: ["prob-des-generaux-byzantins", "bft-byzantine-fault-tolerance"]
+    sources:
+      - "https://lamport.azurewebsites.net/pubs/pubs.html"
+      - "https://api.crossref.org/works/10.1145/357172.357176"
+      - "https://satoshi.nakamotoinstitute.org/emails/cryptography/11/"
+
+  - date: "1985"
+    title: "Naissance de la cryptographie sur courbes elliptiques"
+    text: "Victor Miller, à la conférence Crypto 85, et Neal Koblitz, de son côté, proposent d'utiliser les courbes elliptiques sur des corps finis en cryptographie. L'article de Koblitz paraît en 1987 dans Mathematics of Computation. Bitcoin signe ses transactions sur une courbe de ce type."
+    related: ["courbe-elliptique", "ecdsa"]
+    sources:
+      - "https://api.crossref.org/works/10.1007/3-540-39799-X_31"
+      - "https://www.secg.org/sec1-v2.pdf"
+      - "https://www.ams.org/journals/mcom/1987-48-177/S0025-5718-1987-0866109-5/"
+
+  - date: "1985-10"
+    title: "Chaum publie « Security without Identification »"
+    text: "David Chaum publie dans Communications of the ACM « Security without Identification: Transaction Systems to Make Big Brother Obsolete ». Il y défend des systèmes de transaction, dont le paiement, qui ne révèlent pas l'identité de l'utilisateur."
+    related: ["ecash-david-chaum"]
+    sources:
+      - "https://api.crossref.org/works/10.1145/4372.4373"
+      - "https://chaum.com/publications/"
+
+  - date: "1988"
+    title: "Timothy May rédige le manifeste crypto-anarchiste"
+    text: "Timothy C. May écrit « The Crypto Anarchist Manifesto » et le distribue à la conférence Crypto 88. Le texte annonce que l'informatique permettra bientôt de communiquer et d'échanger de façon totalement anonyme, hors de l'intervention des États."
+    related: ["cypherpunks"]
+    sources:
+      - "https://www.activism.net/cypherpunk/crypto-anarchy.html"
+      - "https://nakamotoinstitute.org/library/crypto-anarchist-manifesto/"
+
+  - date: "1989"
+    title: "Claus-Peter Schnorr présente sa signature"
+    text: "Claus-Peter Schnorr présente à Crypto 89 un schéma d'identification et de signature efficace, pensé pour les cartes à puce, qu'il protège par un brevet américain délivré le 19 février 1991. Bitcoin adopte une variante de ces signatures sur secp256k1 avec BIP-0340."
+    related: ["schnorr-protocole", "secp256k1"]
+    sources:
+      - "https://patents.google.com/patent/US4995082A/en"
+      - "https://api.crossref.org/works/10.1007/0-387-34805-0_22"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki"
+
+  - date: "1991-01"
+    title: "Haber et Stornetta horodatent les documents numériques"
+    text: "Stuart Haber et W. Scott Stornetta publient « How to Time-Stamp a Digital Document » dans le Journal of Cryptology. Le livre blanc de Bitcoin cite cet article dans sa section sur le serveur d'horodatage."
+    related: ["horodatage", "white-paper"]
+    sources:
+      - "https://api.crossref.org/works/10.1007/BF00196791"
+      - "https://bitcoin.org/bitcoin.pdf"
+
+  - date: "1991-06-05"
+    title: "Sortie de PGP 1.0"
+    text: "Phil Zimmermann envoie à des amis la première version de PGP, un logiciel de chiffrement à clé publique, pour qu'ils la mettent en ligne. Il écrira dix ans plus tard ne plus savoir si les premières publications sur Internet datent du 5 ou du 6 juin."
+    sources:
+      - "https://www.philzimmermann.com/text/PGP_10thAnniversary.txt"
+      - "https://static.lwn.net/2001/0607/a/pgp.php3"
+
+  - date: "1992-08"
+    title: "Dwork et Naor décrivent la preuve de travail"
+    text: "À la conférence Crypto 92, Cynthia Dwork et Moni Naor proposent d'exiger un calcul modérément coûteux pour accéder à une ressource, par exemple pour envoyer un e-mail, afin de freiner le spam. Adam Back reconnaîtra cette antériorité sur hashcash."
+    related: ["preuve-de-travail"]
+    sources:
+      - "https://www.wisdom.weizmann.ac.il/~naor/PAPERS/pvp_abs.html"
+      - "https://api.crossref.org/works/10.1007/3-540-48071-4"
+      - "http://www.hashcash.org/papers/hashcash.pdf"
+
+  - date: "1992-09"
+    title: "Fondation des cypherpunks"
+    text: "Eric Hughes, Timothy C. May et John Gilmore réunissent les premiers cypherpunks et lancent une liste de diffusion hébergée par Gilmore. Le groupe défend la vie privée par la cryptographie. C'est sur cette liste qu'Adam Back annoncera hashcash en 1997."
+    related: ["cypherpunks"]
+    sources:
+      - "https://www.activism.net/cypherpunk/crypto-anarchy.html"
+      - "https://www.theregister.com/2018/12/17/timothy_c_may/"
+
+  - date: "1993-03-09"
+    title: "Eric Hughes publie le manifeste cypherpunk"
+    text: "Eric Hughes signe « A Cypherpunk's Manifesto ». Il y écrit que la vie privée est nécessaire à une société ouverte à l'ère électronique, et que les cypherpunks écrivent du code pour la défendre."
+    related: ["cypherpunks"]
+    sources:
+      - "https://www.activism.net/cypherpunk/manifesto.html"
+      - "https://nakamotoinstitute.org/library/cypherpunk-manifesto/"
+
+  - date: "1994"
+    title: "Nick Szabo définit le contrat intelligent"
+    text: "Nick Szabo publie « Smart Contracts », où il définit le contrat intelligent comme un protocole de transaction informatisé qui exécute les termes d'un contrat, en réduisant le besoin d'intermédiaires de confiance."
+    related: ["contrat-intelligent"]
+    sources:
+      - "https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html"
+      - "https://nakamotoinstitute.org/library/smart-contracts/"
+
+  - date: "1995-10-23"
+    title: "Première banque à émettre l'ecash de DigiCash"
+    text: "La Mark Twain Bank de Saint-Louis commence à ouvrir des comptes pour retirer et déposer l'ecash de DigiCash en dollars américains, sous licence non exclusive. Jusque-là, l'ecash ne circulait que sous forme de monnaie fictive, les CyberBucks."
+    related: ["digicash", "ecash-david-chaum"]
+    sources:
+      - "https://mailing-list-archive.cryptoanarchy.wiki/archive/1995/10/aee9b53a2393284c1f48a579b9397449ae7751ee67a8f352d2cad58b30e08807"
+      - "https://diswww.mit.edu/MENELAUS.MIT.EDU/cpunks/43544"
+
+  - date: "1996"
+    title: "Publication de RIPEMD-160"
+    text: "Hans Dobbertin, Antoon Bosselaers et Bart Preneel publient la fonction de hachage RIPEMD-160. Bitcoin l'applique au résultat d'un SHA-256 pour obtenir le `HASH160` d'une clé publique, à la base des adresses classiques."
+    related: ["ripemd160", "sha256"]
+    sources:
+      - "https://homes.esat.kuleuven.be/~bosselae/ripemd160.html"
+      - "https://api.crossref.org/works/10.1007/3-540-60865-6_44"
+      - "https://github.com/bitcoin/bitcoin/blob/master/src/hash.h"
+
+  - date: "1997-03-28"
+    title: "Adam Back annonce hashcash"
+    text: "Adam Back publie sur la liste cypherpunks une première implémentation de hashcash, un timbre électronique fondé sur une collision partielle de hachage : coûteux à calculer, vérifiable instantanément. Bitcoin reprend ce principe pour sa preuve de travail."
+    related: ["hashcash", "preuve-de-travail"]
+    sources:
+      - "http://www.hashcash.org/papers/announce.txt"
+      - "https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block"
+
+  - date: "1998-11"
+    title: "Wei Dai publie b-money"
+    text: "Wei Dai décrit b-money, un système de monnaie électronique pour des entités pseudonymes, où chacun peut créer de la monnaie en diffusant la solution d'un problème de calcul. Satoshi Nakamoto citera ce texte dans le livre blanc."
+    related: ["b-money", "white-paper"]
+    sources:
+      - "https://nakamotoinstitute.org/library/b-money/"
+      - "https://bitcoinmagazine.com/technical/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it"
+      - "https://www.weidai.com/bmoney.txt"
+
+  - date: "1998-11-04"
+    title: "Faillite de DigiCash"
+    text: "DigiCash, l'entreprise de monnaie électronique fondée par David Chaum, se place sous la protection du chapitre 11 de la loi américaine sur les faillites, après avoir réduit ses effectifs à environ 6 personnes."
+    related: ["digicash", "ecash-david-chaum"]
+    sources:
+      - "https://nettime.org/Lists-Archives/nettime-l-9811/msg00008.html"
+      - "https://diswww.mit.edu/MENELAUS.MIT.EDU/cpunks/105164"
+
+  - date: "2000-09-20"
+    title: "Publication de la courbe secp256k1"
+    text: "Certicom publie la version 1.0 de SEC 2, qui recommande des paramètres de courbes elliptiques, dont secp256k1. Bitcoin utilisera cette courbe pour ses clés et ses signatures."
+    related: ["secp256k1", "courbe-elliptique"]
+    sources:
+      - "https://www.secg.org/SEC2-Ver-1.0.pdf"
+      - "https://www.rfc-editor.org/rfc/rfc4492.txt"
+      - "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
+
+  - date: "2002-08-01"
+    title: "Le NIST publie la norme de SHA-256"
+    text: "Le NIST publie la norme FIPS 180-2, qui définit les fonctions de hachage SHA-256, SHA-384 et SHA-512 aux côtés de SHA-1. Bitcoin utilise SHA-256 pour sa preuve de travail et l'identifiant de ses transactions."
+    related: ["sha256"]
+    sources:
+      - "https://csrc.nist.gov/pubs/fips/180-2/final"
+      - "https://www.rfc-editor.org/rfc/rfc4634.txt"
+
+  - date: "2004-08-15"
+    title: "Hal Finney lance RPOW"
+    text: "Hal Finney présente RPOW sur la liste cypherpunks. Son serveur reçoit un jeton hashcash et rend un jeton signé, transférable de personne en personne : chaque jeton ne sert qu'une fois, mais il donne naissance à un nouveau jeton de même valeur."
+    related: ["rpow", "finney-hal", "hashcash"]
+    sources:
+      - "https://www.metzdowd.com/pipermail/cryptography/2004-August/007362.html"
+      - "https://nakamotoinstitute.org/library/rpow/"
+
+  - date: "2005-12-29"
+    title: "Nick Szabo décrit bit gold"
+    text: "Nick Szabo publie sur son blog Unenumerated la description de bit gold : des chaînes de bits produites par preuve de travail, horodatées puis inscrites dans un registre de propriété distribué, chaque chaîne servant de défi à la suivante."
+    related: ["bit-gold", "preuve-de-travail"]
+    sources:
+      - "https://web.archive.org/web/20060329122942/http://unenumerated.blogspot.com/2005/12/bit-gold.html"
+      - "https://nakamotoinstitute.org/library/bit-gold/"
+
+  - date: "2008-07-21"
+    title: "E-gold plaide coupable"
+    text: "E-gold, service de monnaie numérique adossée à l'or, et sa maison mère Gold & Silver Reserve plaident coupables de blanchiment et de transmission d'argent sans licence. Leurs 3 dirigeants, inculpés le 24 avril 2007, plaident aussi coupables."
+    related: ["e-gold"]
+    sources:
+      - "https://www.justice.gov/archive/opa/pr/2008/July/08-crm-635.html"
+      - "https://www.theregister.com/2008/07/22/egold_pleads_guilty/"
+
+  - date: "2008-08-18"
+    title: "Enregistrement du domaine bitcoin.org"
+    text: "Le nom de domaine bitcoin.org est enregistré à 13 h 19 UTC. Il hébergera le livre blanc, puis le premier logiciel Bitcoin."
+    related: ["nakamoto-satoshi"]
+    sources:
+      - "https://rdap.publicinterestregistry.org/rdap/domain/bitcoin.org"
+      - "https://bitcoin.org/en/posts/ten-year-anniversary"
+
+  - date: "2008-08-22"
+    title: "Satoshi Nakamoto écrit à Wei Dai"
+    text: "Satoshi Nakamoto demande à Wei Dai comment citer b-money dans son article, alors intitulé « Electronic Cash Without a Trusted Third Party ». Il précise qu'Adam Back lui a signalé la ressemblance entre leurs idées."
+    related: ["nakamoto-satoshi", "b-money"]
+    sources:
+      - "https://www.metzdowd.com/pipermail/cryptography/2017-August/032664.html"
+      - "https://gwern.net/doc/bitcoin/2008-nakamoto"
+
+  - date: "2008-10-31"
+    title: "Satoshi Nakamoto annonce le livre blanc"
+    text: "À 18 h 10 UTC, Satoshi Nakamoto annonce sur la liste de diffusion Cryptography son article « Bitcoin: A Peer-to-Peer Electronic Cash System », qui décrit un système de monnaie électronique pair-à-pair sans tiers de confiance."
+    related: ["white-paper", "nakamoto-satoshi"]
+    sources:
+      - "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html"
+      - "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
+
+  - date: "2008-11-07"
+    title: "Hal Finney répond au livre blanc"
+    text: "Sur la liste Cryptography, Hal Finney juge Bitcoin « très prometteur ». Il apprécie que la sécurité repose sur l'hypothèse que la puissance de calcul des participants honnêtes dépasse celle de l'attaquant, et demande une description plus formelle des structures de données."
+    related: ["finney-hal", "white-paper"]
+    sources:
+      - "https://www.metzdowd.com/pipermail/cryptography/2008-November/014827.html"
+      - "https://diswww.mit.edu/bloom-picayune/crypto/137127"
+
+  - date: "2008-11-09"
+    title: "Le projet Bitcoin s'installe sur SourceForge"
+    text: "Le projet Bitcoin est enregistré sur SourceForge. La plateforme hébergera le code source et les téléchargements des premières versions du logiciel."
+    related: ["sourceforge"]
+    sources:
+      - "https://sourceforge.net/projects/bitcoin/"
+      - "https://web.archive.org/web/20091129231620/http://sourceforge.net:80/projects/bitcoin/"

@@ -1,0 +1,1 @@
+Implémentation de coinjoin développée en 2014, qui réunissait les bitcoins de plusieurs utilisateurs dans une transaction à sorties de montants identiques, sans tiers de confiance ni acteur central. Elle n'est plus utilisée.

@@ -1,0 +1,1 @@
+Portefeuille de Bitcoin Core qui définit les scripts qu'il possède par des descripteurs de scripts de sortie plutôt que par un ensemble de clés. Il est le type par défaut depuis la version 23.0 et le seul chargé depuis la 30.0.

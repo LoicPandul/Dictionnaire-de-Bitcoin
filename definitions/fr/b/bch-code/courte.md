@@ -1,0 +1,1 @@
+Classe de codes de correction d'erreurs, du nom de Bose, Ray-Chaudhuri et Hocquenghem, que Bitcoin utilise dans les adresses `Bech32` et `Bech32m` pour détecter les fautes de saisie, sans les corriger.

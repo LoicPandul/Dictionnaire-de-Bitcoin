@@ -1,0 +1,1 @@
+Remplacement d'une portion de la blockchain par une chaîne concurrente qui a accumulé plus de travail, après que deux mineurs ont trouvé un bloc presque en même temps. Les blocs abandonnés deviennent obsolètes et leurs transactions peuvent redevenir non confirmées.

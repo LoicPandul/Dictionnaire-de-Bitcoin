@@ -1,0 +1,1 @@
+Développeur d'eclair chez ACINQ, connu sous le pseudonyme t-bast, contributeur des BOLT, auteur des propositions de routage *trampoline* (2019, reprise en 2021) et coauteur avec Matt Corallo de BIP-0353 sur les instructions de paiement par DNS.

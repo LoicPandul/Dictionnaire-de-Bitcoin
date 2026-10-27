@@ -1,0 +1,1 @@
+Courbe elliptique de 256 bits définie par le standard du NIST et répandue dans de nombreux protocoles, mais que Bitcoin n'utilise pas : Satoshi Nakamoto lui a préféré `secp256k1`, aux paramètres plus simples.

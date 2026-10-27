@@ -1,0 +1,1 @@
+Terme qui désigne une scission du réseau en plusieurs blockchains, une modification des règles du protocole, ou les deux, et qui couvre l'embranchement naturel, le fork de code, le hard fork et le soft fork.

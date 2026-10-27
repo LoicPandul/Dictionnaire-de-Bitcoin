@@ -1,0 +1,1 @@
+Économiste de l'école autrichienne (1851-1914), auteur de *Capital et intérêt* (à partir de 1884), qui fonde l'intérêt sur la préférence temporelle. Il n'a pas connu Bitcoin, mais le discours bitcoiner invoque sa théorie.

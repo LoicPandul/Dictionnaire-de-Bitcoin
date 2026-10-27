@@ -1,0 +1,1 @@
+Concept qui applique la sélection naturelle à la monnaie : les monnaies aux propriétés les plus adaptées finissent par supplanter les autres. Ses partisans y voient Bitcoin s'imposer face aux monnaies fiat.

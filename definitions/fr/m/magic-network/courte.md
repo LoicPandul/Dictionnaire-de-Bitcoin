@@ -1,0 +1,1 @@
+Constante de 4 octets placée au début de chaque message échangé entre nœuds Bitcoin, qui indique le réseau concerné (*mainnet*, *testnet*, *regtest*) et aide à repérer les messages dans le flux de données.

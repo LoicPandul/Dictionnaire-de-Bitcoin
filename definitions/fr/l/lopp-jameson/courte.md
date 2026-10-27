@@ -1,0 +1,1 @@
+Cofondateur et directeur de la sécurité de Casa, auteur de Statoshi, un *fork* de Bitcoin Core qui mesure l'état d'un nœud, et premier auteur de BIP-0361, qui propose une migration post-quantique de Bitcoin.

@@ -1,0 +1,1 @@
+Phénomène, décrit par Richard Cantillon au XVIIIe siècle, par lequel les premiers à recevoir une monnaie nouvellement créée en profitent avant la hausse des prix, aux dépens des derniers. L'émission programmée de Bitcoin est parfois présentée comme une réponse.

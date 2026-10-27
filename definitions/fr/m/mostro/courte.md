@@ -1,0 +1,1 @@
+Protocole d'échange pair-à-pair de bitcoins sans KYC, construit sur Nostr, qui permet d'acheter et de vendre des bitcoins contre des monnaies fiat via Lightning, avec des *hold invoices* comme séquestre.

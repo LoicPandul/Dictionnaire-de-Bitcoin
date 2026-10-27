@@ -1,0 +1,1 @@
+Protocole de garde mutualisée de bitcoins, créé par Eric Sirion en 2021, où une fédération de gardiens détient les fonds d'une communauté et émet en échange des billets eCash chaumiens qui servent aux paiements.

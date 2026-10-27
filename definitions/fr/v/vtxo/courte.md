@@ -1,0 +1,1 @@
+Sigle de *Virtual Transaction Output*. Part virtuelle d'un UTXO partagé entre plusieurs utilisateurs dans le protocole Ark, gérée par un *Ark Service Provider*, que son détenteur peut à tout moment convertir en UTXO classique par une sortie unilatérale.

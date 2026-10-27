@@ -1,0 +1,5 @@
+Développeur, créateur d'Electrum, portefeuille Bitcoin léger. Selon le site d'Electrum, il a aussi fondé Electrum Technologies GmbH. Il signe ThomasV sur Bitcointalk et GitHub.
+
+Le 5 novembre 2011, il annonce Electrum sur Bitcointalk. Le logiciel ne télécharge pas la blockchain: il interroge des serveurs publics, ce qui évite l'attente de synchronisation, et il se restaure à partir d'une phrase secrète à noter sur papier. Depuis fin 2012, il vérifie les transactions confirmées par la vérification de paiement simplifiée (SPV).
+
+Electrum s'appuie sur des serveurs Electrum qui indexent la chaîne et répondent aux clients. Depuis, de nombreux développeurs ont contribué au code, et Thomas Voegtlin figure parmi les personnes qui disposent d'un accès en écriture au dépôt et qui signent les exécutables publiés. Le site officiel indique qu'Electrum Technologies, qu'il a fondée en 2013, développe, empaquette et distribue le logiciel; la société est domiciliée à Berlin (Electrum Technologies GmbH).

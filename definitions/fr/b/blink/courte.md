@@ -1,0 +1,1 @@
+Portefeuille Bitcoin mobile développé par Galoy, anciennement Bitcoin Beach Wallet, créé pour la communauté Bitcoin Beach d'El Zonte au Salvador, qui envoie et reçoit des paiements Lightning et *on-chain*.

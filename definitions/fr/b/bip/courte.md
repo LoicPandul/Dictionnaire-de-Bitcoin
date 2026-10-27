@@ -1,0 +1,1 @@
+Sigle de *Bitcoin Improvement Proposal*. Document formel qui propose une amélioration, une spécification ou une information sur Bitcoin, pour en débattre de façon structurée faute d'autorité centrale.

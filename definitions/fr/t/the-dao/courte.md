@@ -1,0 +1,1 @@
+Projet de fonds d'investissement autonome géré par des *smart contracts* sur Ethereum, piraté en juin 2016, ce qui a conduit à un *hard fork* d'Ethereum. L'épisode a servi d'argument aux *small blockers* contre les *hard forks* pendant la Blocksize War.

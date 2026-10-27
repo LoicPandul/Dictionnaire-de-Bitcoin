@@ -1,0 +1,1 @@
+Attaque qui envoie de minuscules montants à de nombreuses adresses, dans l'espoir que leurs propriétaires les fusionnent avec d'autres UTXO, afin de relier ces adresses à une même entité. On parle aussi de *dusting attack*.

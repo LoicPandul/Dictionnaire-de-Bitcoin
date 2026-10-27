@@ -1,0 +1,1 @@
+Ordinateur quantique capable de casser la cryptographie à clé publique, notamment de retrouver une clé privée depuis sa clé publique. Face à lui, les signatures ECDSA et Schnorr ne protègent plus les bitcoins dont la clé publique est connue.

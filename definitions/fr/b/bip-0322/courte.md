@@ -1,0 +1,1 @@
+Proposition qui remplace le BIP-0137 pour la signature de messages : la signature porte sur une transaction virtuelle, ce qui étend la preuve de possession à n'importe quel script que le portefeuille sait dépenser.

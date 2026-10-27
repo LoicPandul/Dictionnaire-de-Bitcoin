@@ -1,0 +1,1 @@
+Entreprise américaine de minage de Bitcoin cotée au NASDAQ, qui exploite des installations de minage au Texas et dans le Kentucky. Ancienne société de biotechnologies, elle s'est tournée vers le minage de Bitcoin en 2017.

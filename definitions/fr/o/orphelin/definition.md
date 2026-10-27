@@ -1,7 +1,7 @@
-Théoriquement, un bloc orphelin désigne un bloc valide réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Ce bloc, bien que valide, demeure isolé localement en tant qu'orphelin.
+Théoriquement, un bloc orphelin désigne un bloc réceptionné par un nœud qui n'a pas encore acquis le bloc parent, c'est-à-dire le précédent dans la chaîne. Les anciennes versions de Bitcoin Core le gardaient de côté en attendant le parent ; depuis la version 0.10, qui télécharge les en-têtes d'abord, le nœud rejette ce bloc (`prev-blk-not-found`).
 
 Cependant, dans l'usage courant, l'expression « bloc orphelin » fait souvent référence à un bloc sans enfant : un bloc valide, mais non retenu dans la chaîne principale de Bitcoin. Il se produit lorsque deux mineurs trouvent un bloc valide sur une même hauteur de chaîne durant un court laps de temps et le diffusent sur le réseau. Les nœuds finissent par choisir un seul bloc à inclure dans la chaîne, selon le principe de la chaîne avec le plus de travail accumulé, rendant l'autre « orphelin ».
 
-![Bifurcation après le bloc 144 : 145-B est suivi du bloc 146 et 145-A reste sans enfant, qualifié d'orphelin.](./assets/image-1.png)
+![Les deux sens de « bloc orphelin » : au sens strict, un nœud qui connaît la chaîne jusqu'au bloc 144 reçoit le bloc 146 sans connaître son parent 145 et réclame d'abord l'en-tête manquant ; dans l'usage courant, après une bifurcation à la hauteur 145, la chaîne retient 145-B puis 146 et 145-A reste sans enfant, dit orphelin ou obsolète.](./assets/image-1.png)
 
 *Personnellement, je préfère employer le terme de « bloc orphelin » pour parler d'un bloc sans parent et le terme de « bloc obsolète » (stale block) pour désigner un bloc qui n'a pas d'enfant. Je trouve cela plus logique et compréhensible, bien qu'une majorité de bitcoiners ne suivent pas cet usage.*

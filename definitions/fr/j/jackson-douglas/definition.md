@@ -1,0 +1,5 @@
+Dirigeant américain d'e-gold, système de monnaie numérique adossée à l'or, établi en 1996, dont il est le principal directeur et le PDG de la société mère Gold & Silver Reserve. Il n'a pas de lien direct avec Bitcoin : e-gold est un précurseur centralisé des monnaies numériques privées.
+
+Le 24 avril 2007, un grand jury fédéral inculpe e-gold et ses dirigeants. En juillet 2008, le département de la Justice annonce que Douglas Jackson, alors âgé de 51 ans, plaide coupable de complot de blanchiment de capitaux et d'exploitation d'une entreprise de transfert d'argent sans licence. Les deux sociétés plaident coupables des mêmes chefs, et deux autres dirigeants, Barry Downey et Reid Jackson, plaident coupables d'infractions au droit du district de Columbia pour transfert d'argent sans licence. Le 20 novembre 2008, la juge Rosemary Collyer le condamne à 300 heures de travaux d'intérêt général, 200 dollars d'amende et trois ans de mise à l'épreuve, alors que le maximum encouru pour le blanchiment était de 20 ans de prison. Les médias rapportent que la juge a retenu sa situation financière.
+
+Le système est détaillé dans l'entrée e-gold du dictionnaire.

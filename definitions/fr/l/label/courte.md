@@ -1,0 +1,1 @@
+Annotation attribuée à un UTXO dans un portefeuille pour se souvenir de sa provenance ou de sa destination. Avec le *coin control*, elle aide à ne pas fusionner des UTXO de sources différentes et protège ainsi la confidentialité.

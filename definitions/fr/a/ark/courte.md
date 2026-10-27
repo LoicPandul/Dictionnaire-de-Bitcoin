@@ -1,0 +1,1 @@
+Protocole de couche supérieure de type *joinpool*, proposé par Burak Keceli en 2023, qui permet à plusieurs utilisateurs de partager des UTXO sous forme de VTXO pour des paiements rapides et peu coûteux. Chaque utilisateur garde la possibilité de sortir seul *on-chain*.

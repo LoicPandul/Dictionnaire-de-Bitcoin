@@ -1,0 +1,1 @@
+Client Nostr pour le web, Android et iOS, avec un portefeuille Lightning intégré aux applications mobiles pour envoyer des zaps. Son éditeur héberge aussi un serveur BLOSSOM de médias, cité en exemple dans les NIP.

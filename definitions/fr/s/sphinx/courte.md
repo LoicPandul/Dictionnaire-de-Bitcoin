@@ -1,0 +1,1 @@
+Format de paquet chiffré en couches successives qu'utilise le Lightning Network pour le routage en oignon. Chaque nœud intermédiaire ne lit que sa couche et ne connaît que le saut suivant, ni l'expéditeur ni le destinataire.

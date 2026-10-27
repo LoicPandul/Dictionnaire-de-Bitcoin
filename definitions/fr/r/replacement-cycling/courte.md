@@ -1,0 +1,1 @@
+Attaque qui exploite les règles de remplacement des transactions (RBF) pour faire sortir des mempools la transaction de règlement d'une victime, sans rien laisser à sa place. Elle vise surtout les HTLC du Lightning Network, qui doivent être réglés avant un délai.
