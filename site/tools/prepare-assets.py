@@ -1,24 +1,18 @@
 #!/usr/bin/env python3
-"""Prépare les images du site tirées du livre imprimé et des pictogrammes. À relancer seulement si les sources changent.
+"""Prépare les images du site tirées du livre imprimé. À relancer seulement si le PDF change.
 
-- les 19 pictogrammes de catégorie (assets/pictograms), retracés en SVG d'un seul tracé ;
 - quatre pages intérieures et la boucle « feuilletage » (dictionnaire-de-bitcoin.pdf, édition 2026).
-La jaquette de l'accueil (banian 2027) est faite par tools/jaquette-2027.py, la carte sociale depuis
-tools/carte-sociale.html (capture 1200 × 630).
+Les pictogrammes 2027 sont lus tels quels dans assets/pictograms au build ; l'Allée des baobabs de
+l'accueil vient de tools/allee.py ; favicon et carte sociale sont ceux du script de couverture.
 
-Dépendances : poppler (pdftoppm), ffmpeg, Python 3 avec opencv-python-headless, numpy, pillow, potracer.
-    uv venv /tmp/venv && uv pip install --python /tmp/venv/bin/python opencv-python-headless numpy pillow potracer
-    node site/tools/raster-pictos.mjs /tmp/pictos      (lit les SVG d'origine dans un navigateur sans écran)
-    /tmp/venv/bin/python site/tools/prepare-assets.py /tmp/pictos
+Dépendances : poppler (pdftoppm), ffmpeg, Python 3 avec pillow.
+    python3 site/tools/prepare-assets.py
 """
 import os
 import subprocess
 import sys
 import tempfile
 
-import cv2
-import numpy as np
-import potrace
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -32,36 +26,6 @@ def run(*cmd):
     subprocess.run(cmd, check=True)
 
 
-def trace(mask, scale, turdsize=20, alphamax=1.0, tolerance=0.4):
-    """Bitmap booléen (True = encre) vers un attribut d de chemin SVG."""
-    path = potrace.Bitmap(~mask).trace(turdsize=turdsize, alphamax=alphamax, opticurve=True, opttolerance=tolerance)
-    f = lambda v: f'{v * scale:.2f}'.rstrip('0').rstrip('.')
-    parts = []
-    for curve in path:
-        s = curve.start_point
-        d = [f'M{f(s.x)} {f(s.y)}']
-        for seg in curve.segments:
-            if seg.is_corner:
-                d.append(f'L{f(seg.c.x)} {f(seg.c.y)}L{f(seg.end_point.x)} {f(seg.end_point.y)}')
-            else:
-                d.append(f'C{f(seg.c1.x)} {f(seg.c1.y)} {f(seg.c2.x)} {f(seg.c2.y)} {f(seg.end_point.x)} {f(seg.end_point.y)}')
-        parts.append(''.join(d) + 'Z')
-    return ''.join(parts)
-
-
-# 1. Pictogrammes : rendus en PNG 1024 px par raster-pictos.mjs, puis retracés.
-def pictos(raster_dir):
-    os.makedirs(os.path.join(OUT, 'pictos'), exist_ok=True)
-    for f in sorted(os.listdir(raster_dir)):
-        if not f.endswith('.png'):
-            continue
-        ink = cv2.imread(os.path.join(raster_dir, f), 0) < 128
-        d = trace(ink, 100 / 1024, turdsize=30, tolerance=0.35)
-        with open(os.path.join(OUT, 'pictos', f[:-4] + '.svg'), 'w') as fh:
-            fh.write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="{d}"/></svg>')
-
-
-# 2. Six pages intérieures du PDF (édition 2026).
 def pages():
     pdf = os.path.join(ROOT, 'dictionnaire-de-bitcoin.pdf')
     for n in (31, 212, 467, 516):
@@ -93,6 +57,4 @@ if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
     pages()
     riffle()
-    if len(sys.argv) > 1:
-        pictos(sys.argv[1])
     print('images prêtes dans', os.path.relpath(OUT, ROOT))
