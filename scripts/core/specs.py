@@ -13,7 +13,7 @@ from typing import Dict, List, Optional
 
 import yaml
 
-from ..config import SPECIFICATIONS_DIR
+from ..config import SPECIFICATIONS_DIR, SPECIFICATIONS_ROOT
 
 # Ordre des séries dans le livre, et leur nom affiché.
 SERIES = {
@@ -97,10 +97,18 @@ def load_series(series: str, base: Optional[Path] = None) -> Optional[SpecSeries
     )
 
 
-def load_all(base: Optional[Path] = None) -> Dict[str, SpecSeries]:
+def load_all(base: Optional[Path] = None, lang: str = "fr") -> Dict[str, SpecSeries]:
+    """Toutes les séries. Dans une langue traduite, le résumé vient de specifications/<lang>/
+    (un document sans résumé traduit garde un résumé vide)."""
     result = {}
     for series in SERIES:
         loaded = load_series(series, base)
+        if loaded and lang != "fr":
+            path = SPECIFICATIONS_ROOT / lang / f"{series}.yaml"
+            data = (yaml.safe_load(path.read_text(encoding="utf-8")) or {}) if path.exists() else {}
+            summaries = {str(e.get("id")): str(e.get("summary") or "").strip() for e in data.get("entries") or []}
+            for doc in loaded.entries:
+                doc.summary = summaries.get(doc.id, "")
         if loaded:
             result[series] = loaded
     return result

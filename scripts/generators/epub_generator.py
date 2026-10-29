@@ -20,9 +20,10 @@ from typing import Dict, List, Optional, Tuple
 import markdown as md
 from latex2mathml.converter import convert as latex_to_mathml
 
-from ..config import BUILD_DIR, TEXTS_DIR
+from ..config import BUILD_DIR
+from ..core import i18n
 from ..core.book import Book, Section
-from .pdf_generator import STATUS_FR, load_legal
+from .pdf_generator import load_legal
 
 NBSP = " "
 SPEC_CHUNK = 25
@@ -71,9 +72,10 @@ def _french_spaces(text: str) -> str:
 class _Converter:
     """Markdown du dictionnaire → XHTML (code, formules et images protégés)."""
 
-    def __init__(self, images: Dict[str, str]):
+    def __init__(self, images: Dict[str, str], lang: str = i18n.SOURCE_LANG):
         self.images = images          # chemin source → nom dans OEBPS/images
         self.has_math = False
+        self.spaces = _french_spaces if lang == i18n.SOURCE_LANG else (lambda text: text)
 
     def __call__(self, content: str, assets_dir: Optional[Path] = None, slug: str = "",
                  credits: Optional[Dict[str, str]] = None) -> str:
@@ -110,14 +112,14 @@ class _Converter:
             # La légende peut contenir du code ou une formule déjà protégés : texte brut pour
             # l'attribut alt, balisage conservé pour la légende visible.
             alt_plain = re.sub(r"\u0007(\d+)\u0007", lambda c: re.sub(r"<[^>]+>", "", store[int(c.group(1))]), m.group(1))
-            caption = f'<span class="legende">{_french_spaces(m.group(1))}</span>' if m.group(1).strip() else ""
+            caption = f'<span class="legende">{self.spaces(m.group(1))}</span>' if m.group(1).strip() else ""
             credit = (credits or {}).get(m.group(2))
             if credit:  # crédit d'une image de tiers, en petit sous l'image (texte secondaire, Écorce)
-                caption = f'<span class="credit">{_xml(_french_spaces(credit))}</span>' + caption
+                caption = f'<span class="credit">{_xml(self.spaces(credit))}</span>' + caption
             return "\n\n" + keep(f'<span class="figure"><img src="../images/{_xml(name)}" alt="{_xml(html.unescape(alt_plain))}"/>{caption}</span>') + "\n\n"
         content = IMAGE_RE.sub(image, content)
 
-        content = _french_spaces(content)
+        content = self.spaces(content)
         # Python-Markdown exige une ligne vide avant une liste ; le dictionnaire ne la met pas toujours.
         content = re.sub(r"(?m)^(?![ \t]*(?:[*\-]|\d+\.)[ \t])(\S.*)\n(?=[ \t]*(?:[*\-]|\d+\.)[ \t])", r"\1\n\n", content)
         out = md.markdown(content, extensions=["tables"], output_format="xhtml")
@@ -135,10 +137,10 @@ class _Doc:
         self.math = "<math" in body
 
 
-def _page(title: str, body: str) -> str:
+def _page(title: str, body: str, lang: str = i18n.SOURCE_LANG) -> str:
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE html>\n'
             '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" '
-            'xml:lang="fr" lang="fr">\n<head>\n<meta charset="UTF-8"/>\n'
+            f'xml:lang="{lang}" lang="{lang}">\n<head>\n<meta charset="UTF-8"/>\n'
             f'<title>{_xml(title)}</title>\n<link rel="stylesheet" type="text/css" href="../styles.css"/>\n'
             f'</head>\n<body>\n{body}\n</body>\n</html>\n')
 
@@ -146,8 +148,11 @@ def _page(title: str, body: str) -> str:
 class EpubBuilder:
     def __init__(self, book: Book):
         self.book = book
+        self.lang = book.lang
+        self.c = f"{NBSP}: " if self.lang == i18n.SOURCE_LANG else ": "
+        self.spaces = _french_spaces if self.lang == i18n.SOURCE_LANG else (lambda text: text)
         self.images: Dict[str, str] = {}
-        self.convert = _Converter(self.images)
+        self.convert = _Converter(self.images, self.lang)
         self.anchor_file: Dict[str, str] = {}   # ancre → fichier XHTML
         self.docs: List[_Doc] = []
 
@@ -190,31 +195,28 @@ class EpubBuilder:
             return ""
         label = one if len(targets) == 1 else many
         links = ", ".join(self._link(t.slug, t.title) for t in targets)
-        return f'<p class="renvois">{label}{NBSP}: {links}</p>'
+        return f'<p class="renvois">{label}{self.c}{links}</p>'
 
     # --- rendu ---------------------------------------------------------
 
     def _entry(self, s: Section, d) -> str:
         parts = [f'<section class="entree" id="{d.slug}">', f'<h3 class="vedette">{_xml(d.title)}</h3>']
-        meta = [_xml(d.category)] if d.category else []
+        meta = [_xml(self.book.category_label(d.category))] if d.category else []
         if d.english_term:
             meta.append(f"EN{NBSP}: {_xml(d.english_term)}")
         elif d.french_term:
             meta.append(f"FR{NBSP}: {_xml(d.french_term)}")
         if meta:
             parts.append(f'<p class="meta">{" · ".join(meta)}</p>')
-        parts.append(self.convert(self.book.body(d, s), d.path / "assets", d.slug, d.credits))
+        parts.append(self.convert(self.book.body(d, s), d.assets_path, d.slug, d.credits))
         if s.version == "developpee":
-            parts.append(self._see(self.book.cross_references(d), "Terme associé", "Termes associés"))
+            parts.append(self._see(self.book.cross_references(d), i18n.t(self.lang, "related_one"),
+                                   i18n.t(self.lang, "related_many")))
         parts.append("</section>")
         return "\n".join(p for p in parts if p)
 
     def _status(self, doc) -> str:
-        labels = []
-        for st in doc.status:
-            fr = STATUS_FR.get(st.lower())
-            labels.append(fr if fr and fr.lower() == st.lower() else f"{fr} ({st})" if fr else st)
-        return ", ".join(labels)
+        return ", ".join(i18n.status_label(self.lang, st) for st in doc.status)
 
     def _spec_entry(self, s: Section, doc) -> str:
         anchor = self.book.spec_anchor(doc)
@@ -224,28 +226,31 @@ class EpubBuilder:
         parts.append(f'<h3 class="vedette">{_xml(doc.id)}</h3>')
         meta = []
         if doc.status:
-            meta.append(f"Statut{NBSP}: {_xml(self._status(doc))}")
+            meta.append(f"{i18n.t(self.lang, 'status')}{self.c}{_xml(self._status(doc))}")
         if doc.type:
-            meta.append(f"Type{NBSP}: {_xml(doc.type)}")
+            meta.append(f"{i18n.t(self.lang, 'type')}{self.c}{_xml(doc.type)}")
         if doc.created:
-            meta.append(f"Créé le{NBSP}: {_xml(doc.created)}")
+            meta.append(f"{i18n.t(self.lang, 'created')}{self.c}{_xml(doc.created)}")
         if meta:
             parts.append(f'<p class="meta">{" · ".join(meta)}</p>')
         if doc.title:
-            parts.append(f'<p class="titre-doc" xml:lang="en" lang="en">{_xml(doc.title)}</p>')
+            lang_attr = ' xml:lang="en" lang="en"' if self.lang != "en" else ""
+            parts.append(f'<p class="titre-doc"{lang_attr}>{_xml(doc.title)}</p>')
         if doc.summary:
             parts.append(self.convert(doc.summary))
-        parts.append(self._see(self.book.related(doc.related), "Voir", "Voir"))
+        see = i18n.t(self.lang, "see")
+        parts.append(self._see(self.book.related(doc.related), see, see))
         linked = self.book.definition_for(doc)
         if s.detail and linked:
-            parts.append(self.convert(linked.content, linked.path / "assets", linked.slug, linked.credits))
+            parts.append(self.convert(linked.content, linked.assets_path, linked.slug, linked.credits))
         parts.append("</section>")
         return "\n".join(p for p in parts if p)
 
     def _event(self, ev) -> str:
-        parts = [f'<p class="date">{_xml(ev.date_fr())} · <em>{_xml(_french_spaces(ev.title))}</em></p>',
+        see = i18n.t(self.lang, "see")
+        parts = [f'<p class="date">{_xml(ev.date_label(self.lang))} · <em>{_xml(self.spaces(ev.title))}</em></p>',
                  self.convert(ev.text),
-                 self._see(self.book.related(ev.related), "Voir", "Voir")]
+                 self._see(self.book.related(ev.related), see, see)]
         return "\n".join(p for p in parts if p)
 
     def _front(self, legal: dict):
@@ -254,23 +259,27 @@ class EpubBuilder:
         self.docs.append(_Doc("titre.xhtml", e.title,
             f'<section epub:type="titlepage"><h1>{_xml(e.title)}</h1>'
             f'<p class="centre">{_xml(e.subtitle)}</p><p class="centre"><em>{_xml(legal.get("author", ""))}</em></p></section>'))
-        lines = [f"© {now.year} {legal.get('author', '')}", f"{e.title} : {e.subtitle}",
-                 f"Version du {now.day:02d}/{now.month:02d}/{now.year}",
-                 f"Cet ouvrage est sous licence {legal.get('license', '')}"]
+        version = (f"{now.day:02d}/{now.month:02d}/{now.year}" if self.lang == i18n.SOURCE_LANG
+                   else i18n.date_label(self.lang, now.year, now.month, now.day))
+        lines = [f"© {now.year} {legal.get('author', '')}", f"{e.title}{self.c.replace(NBSP, ' ')}{e.subtitle}",
+                 f"{i18n.t(self.lang, 'version_of')} {version}",
+                 f"{i18n.t(self.lang, 'licensed')} {legal.get('license', '')}"]
         links = [legal.get("github_url", ""), legal.get("license_url", ""), legal.get("website", "")]
-        body = "".join(f'<p class="centre">{_xml(_french_spaces(l))}</p>' for l in lines)
+        body = "".join(f'<p class="centre">{_xml(self.spaces(l))}</p>' for l in lines)
         body += "".join(f'<p class="centre"><a href="{_xml(u)}">{_xml(u)}</a></p>' for u in links if u)
-        body += f'<p class="centre">Lightning{NBSP}: {_xml(legal.get("lightning_address", ""))}</p>'
-        self.docs.append(_Doc("mentions.xhtml", "Mentions légales", f'<section epub:type="copyright-page">{body}</section>'))
-        for f, title, template in [("contributeurs.xhtml", "Contributeurs et remerciements", "contributors.md"),
-                                   ("note.xhtml", "Note de l'auteur", "introduction.md")]:
-            path = TEXTS_DIR / template
+        body += f'<p class="centre">Lightning{self.c}{_xml(legal.get("lightning_address", ""))}</p>'
+        self.docs.append(_Doc("mentions.xhtml", i18n.t(self.lang, "legal"),
+                              f'<section epub:type="copyright-page">{body}</section>'))
+        for f, key, template in [("contributeurs.xhtml", "contributors", "contributors.md"),
+                                 ("note.xhtml", "author_note", "introduction.md")]:
+            title = i18n.t(self.lang, key)
+            path = i18n.texts_dir(self.lang) / template
             text = path.read_text(encoding="utf-8") if path.exists() else ""
             text = re.sub(r"^# ", "## ", text, flags=re.MULTILINE)
             self.docs.append(_Doc(f, title, f"<h1>{_xml(title)}</h1>\n{self.convert(text)}", nav_title=title))
 
     def build(self) -> List[_Doc]:
-        legal = load_legal()
+        legal = load_legal(self.lang)
         self._front(legal)
         plan = self._plan()
         opened = set()
@@ -281,7 +290,7 @@ class EpubBuilder:
                 opened.add(s.id)
                 body.append(f'<h1 class="partie" id="partie-{s.id}">{_xml(s.title)}</h1>')
                 if s.intro:
-                    body.append(f'<p class="intro">{_xml(_french_spaces(" ".join(s.intro.split())))}</p>')
+                    body.append(f'<p class="intro">{_xml(self.spaces(" ".join(s.intro.split())))}</p>')
                 self.docs.append(_Doc(f"partie-{s.id}.xhtml", s.title, "\n".join(body), nav_title=s.title, level=1))
                 body = []
             if s.kind == "dictionary":
@@ -297,10 +306,12 @@ class EpubBuilder:
             else:
                 serie, chunk = payload
                 first, last = chunk[0].id, chunk[-1].id
-                body.append(f"<h2>{_xml(first)} à {_xml(last)}</h2>" if len(chunk) > 1 else f"<h2>{_xml(first)}</h2>")
+                to = i18n.t(self.lang, "range")
+                body.append(f"<h2>{_xml(first)} {to} {_xml(last)}</h2>" if len(chunk) > 1 else f"<h2>{_xml(first)}</h2>")
                 body += [self._spec_entry(s, doc) for doc in chunk]
-                nav_title = f"{first} à {last}" if len(chunk) > 1 else first
-            self.docs.append(_Doc(f, f"{s.title} : {nav_title}", "\n".join(body), nav_title=nav_title, level=2))
+                nav_title = f"{first} {to} {last}" if len(chunk) > 1 else first
+            self.docs.append(_Doc(f, f"{s.title}{self.c.replace(NBSP, ' ')}{nav_title}", "\n".join(body),
+                                  nav_title=nav_title, level=2))
         return self.docs
 
     # --- paquet ----------------------------------------------------------
@@ -326,12 +337,13 @@ class EpubBuilder:
         nav_list = "\n".join(items).replace("<ol></ol>", "")
         # Une partie sans sous-entrée laisse un <ol> vide, interdit en EPUB 3.
         nav_list = re.sub(r"<ol>\s*</ol>", "", nav_list)
+        contents = _xml(i18n.t(self.lang, "contents"))
         nav = ('<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE html>\n'
-               '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="fr" lang="fr">\n'
-               '<head><meta charset="UTF-8"/><title>Table des matières</title></head>\n<body>\n'
-               f'<nav epub:type="toc" id="toc"><h1>Table des matières</h1><ol>\n{nav_list}\n</ol></nav>\n'
+               f'<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="{self.lang}" lang="{self.lang}">\n'
+               f'<head><meta charset="UTF-8"/><title>{contents}</title></head>\n<body>\n'
+               f'<nav epub:type="toc" id="toc"><h1>{contents}</h1><ol>\n{nav_list}\n</ol></nav>\n'
                '<nav epub:type="landmarks" hidden="hidden"><ol>'
-               f'<li><a epub:type="bodymatter" href="text/{self._first_body()}">Début</a></li>'
+               f'<li><a epub:type="bodymatter" href="text/{self._first_body()}">{i18n.t(self.lang, "start")}</a></li>'
                '</ol></nav>\n</body>\n</html>\n')
         # toc.ncx pour les liseuses EPUB 2
         points, depth, stack = [], 1, []
@@ -353,9 +365,10 @@ class EpubBuilder:
     def write(self, path: Path) -> Path:
         self.build()
         e = self.book.edition
-        identifier = f"urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, 'dictionnaire-de-bitcoin/' + e.id)}"
+        key = e.id if self.lang == i18n.SOURCE_LANG else f"{self.lang}/{e.id}"
+        identifier = f"urn:uuid:{uuid.uuid5(uuid.NAMESPACE_URL, 'dictionnaire-de-bitcoin/' + key)}"
         modified = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        legal = load_legal()
+        legal = load_legal(self.lang)
         nav, ncx_points = self._nav()
 
         manifest = ['<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
@@ -373,12 +386,12 @@ class EpubBuilder:
             manifest.append(f'<item id="img{i}" href="images/{_xml(name)}" media-type="{mime}"/>')
 
         opf = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-               '<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="fr">\n'
+               f'<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="{self.lang}">\n'
                '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
                f'<dc:identifier id="bookid">{identifier}</dc:identifier>\n'
                f'<dc:title>{_xml(e.title)}</dc:title>\n'
                f'<dc:creator>{_xml(legal.get("author", ""))}</dc:creator>\n'
-               '<dc:language>fr</dc:language>\n'
+               f'<dc:language>{self.lang}</dc:language>\n'
                f'<dc:publisher>{_xml(legal.get("publisher", legal.get("author", "")))}</dc:publisher>\n'
                f'<dc:rights>{_xml(legal.get("license", ""))}</dc:rights>\n'
                f'<dc:description>{_xml(e.subtitle)}</dc:description>\n'
@@ -387,7 +400,7 @@ class EpubBuilder:
                f'<manifest>\n{chr(10).join(manifest)}\n</manifest>\n'
                f'<spine toc="ncx">\n{chr(10).join(spine)}\n</spine>\n</package>\n')
         ncx = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-               '<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="fr">\n'
+               f'<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="{self.lang}">\n'
                f'<head><meta name="dtb:uid" content="{identifier}"/><meta name="dtb:depth" content="{self._ncx_depth}"/>'
                '<meta name="dtb:totalPageCount" content="0"/><meta name="dtb:maxPageNumber" content="0"/></head>\n'
                f'<docTitle><text>{_xml(e.title)}</text></docTitle>\n<navMap>\n{ncx_points}\n</navMap>\n</ncx>\n')
@@ -406,7 +419,7 @@ class EpubBuilder:
             z.writestr("OEBPS/toc.ncx", ncx, compress_type=zipfile.ZIP_DEFLATED)
             z.writestr("OEBPS/styles.css", CSS, compress_type=zipfile.ZIP_DEFLATED)
             for d in self.docs:
-                z.writestr(f"OEBPS/text/{d.file}", _page(d.title, d.body), compress_type=zipfile.ZIP_DEFLATED)
+                z.writestr(f"OEBPS/text/{d.file}", _page(d.title, d.body, self.lang), compress_type=zipfile.ZIP_DEFLATED)
             for src, name in self.images.items():
                 z.write(src, f"OEBPS/images/{name}", compress_type=zipfile.ZIP_DEFLATED)
         shutil.move(str(tmp), path)

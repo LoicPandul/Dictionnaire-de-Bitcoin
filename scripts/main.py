@@ -23,7 +23,7 @@ from scripts.config import BUILD_DIR, find_epubcheck, find_tex_engine  # noqa: E
 from scripts.core.book import Book, load_editions  # noqa: E402
 from scripts.core.dictionary import Dictionary  # noqa: E402
 from scripts.generators import index_generator, pdf_generator, stats_generator  # noqa: E402
-from scripts.core import translations  # noqa: E402
+from scripts.core import translations, yaml_sync  # noqa: E402
 from scripts.validators import (  # noqa: E402
     content_validator, markdown_linter, metadata_validator, sync_checker, translation_checker)
 
@@ -94,17 +94,30 @@ def cmd_build(dictionary: Dictionary, args=None) -> bool:
         print("[ERREUR] Build interrompu : corrigez les erreurs ou relancez avec --force.")
         return False
 
+    languages = translations.load_languages()
+    lang_arg = args.lang if args and getattr(args, "lang", None) else languages["source"]
+    langs = [languages["source"], *languages["translations"]] if lang_arg == "all" else lang_arg.split(",")
+    for lang in langs:
+        if lang != languages["source"] and lang not in languages["translations"]:
+            print(f"[ERREUR] langue inconnue : {lang} (templates/languages.yaml)")
+            return False
+
     engine, _ = find_tex_engine()
     print(f"\nMoteur LaTeX : {engine or 'aucun'}")
     ok = True
     produced = []
-    for edition_id in wanted_editions:
-        book = Book(edition_id, dictionary, editions)
-        print(f"\n=== Édition « {edition_id} » : {book.entry_count()} entrées, "
+    for lang, edition_id in [(l, e) for l in langs for e in wanted_editions]:
+        source = lang == languages["source"]
+        book_dictionary = dictionary if source else Dictionary.load_translation(lang, dictionary)
+        book = Book(edition_id, book_dictionary, editions, lang=lang)
+        print(f"\n=== Édition « {edition_id} » ({lang}) : {book.entry_count()} entrées, "
               f"{len(book.edition.sections)} sections ===")
+        for w in book_dictionary.warnings[:5] if not source else []:
+            print(f"  [ATTENTION] {w}")
         for w in book.warnings:
             print(f"  [ATTENTION] {w}")
-        out_dir = (Path(args.output_dir) if args and args.output_dir else BUILD_DIR) / edition_id
+        out_root = Path(args.output_dir) if args and args.output_dir else BUILD_DIR
+        out_dir = (out_root if source else out_root / lang) / edition_id
         out_dir.mkdir(parents=True, exist_ok=True)
         if "pdf" in wanted_formats:
             path = pdf_generator.generate(book, out_dir)
@@ -149,15 +162,22 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
         if lang not in languages["translations"]:
             print(f"[ERREUR] langue inconnue : {lang} (templates/languages.yaml)")
             return False
-        scope = set(languages["translations"][lang].get("parts") or [])
-        exclude = set(languages["translations"][lang].get("exclude") or [])
-        all_pairs = translations.pairs(languages["source"], lang, part_of, exclude=exclude)
+        conf = languages["translations"][lang]
+        scope = set(conf.get("parts") or [])
+        all_pairs = translations.pairs(languages["source"], lang, part_of, **translation_checker.filters(conf))
+        items = yaml_sync.all_items(languages["source"], lang)
 
         if args and (args.mark or args.mark_unmarked):
             refs = list(args.mark or [])
             if args.mark_unmarked:
                 refs += [p.uuid for p in all_pairs if p.status == translations.UNMARKED]
+                refs += [it.label for it in items if it.status == translations.UNMARKED]
+            chosen = []
             for ref in refs:
+                found = [it for it in items if ref in (it.key, it.label) and it.translation is not None]
+                if found:
+                    chosen += found
+                    continue
                 p = _find_pair(all_pairs, ref)
                 if not p or not (p.source and p.translation):
                     print(f"[ERREUR] {ref} : pas de paire source/traduction à marquer")
@@ -167,6 +187,9 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
                 p.status = translations.UP_TO_DATE
                 print(f"  [{p.translation.lang}/{p.translation.slug}] synchro enregistrée "
                       f"({p.source.lang} {values['source_hash']} @ {values['source_commit'] or '?'})")
+            if chosen:
+                n = yaml_sync.mark(chosen, lang)
+                print(f"  {n} élément(s) de la chronologie ou des résumés marqués à jour")
             continue
 
         if args and args.new:
@@ -198,36 +221,46 @@ def cmd_sync(dictionary: Dictionary, args=None) -> bool:
             return r.returncode == 0
 
         by_part = {}
-        for p in all_pairs:
-            by_part.setdefault(p.part or "?", Counter())[p.status] += 1
+        for part, status in [(p.part or "?", p.status) for p in all_pairs] + [(it.kind, it.status) for it in items]:
+            by_part.setdefault(part, Counter())[status] += 1
         name = languages["translations"][lang].get("name", lang)
         print(f"\n{languages['source'].upper()} → {lang.upper()} ({name}), périmètre : {', '.join(sorted(scope)) or 'tout'}")
-        print(f"  {'partie':<16}{'traduites':>10}{'manquantes':>12}{'à jour':>8}{'en retard':>11}"
+        print(f"  {'partie':<24}{'traduites':>10}{'manquantes':>12}{'à jour':>8}{'en retard':>11}"
               f"{'à reporter':>12}{'conflits':>10}{'à marquer':>11}")
         for part, c in sorted(by_part.items(), key=lambda kv: -sum(kv[1].values())):
             missing = c[translations.MISSING] + c[translations.ORIGIN_MISSING]
-            done = sum(c.values()) - missing - c[translations.ORPHAN] - c[translations.EXCLUDED]
+            done = (sum(c.values()) - missing - c[translations.ORPHAN] - c[translations.EXCLUDED]
+                    - c[translations.PENDING])
             flag = "" if (not scope or part in scope) else "  (hors périmètre)"
-            print(f"  {part:<16}{done:>10}{missing:>12}{c[translations.UP_TO_DATE]:>8}"
+            if c[translations.PENDING]:
+                flag += f"  ({c[translations.PENDING]} en attente)"
+            if c[translations.ORPHAN]:
+                flag += f"  ({c[translations.ORPHAN]} orphelines)"
+            print(f"  {part:<24}{done:>10}{missing:>12}{c[translations.UP_TO_DATE]:>8}"
                   f"{c[translations.TRANSLATION_BEHIND]:>11}{c[translations.SOURCE_BEHIND]:>12}"
                   f"{c[translations.CONFLICT]:>10}{c[translations.UNMARKED]:>11}{flag}")
         counts, _ = translation_checker.summary(dictionary)[lang]
         print(f"  Dans le périmètre : {translation_checker.describe(lang, counts)}")
 
         listed = [s for s in translations.STATUSES if s not in (translations.UP_TO_DATE, translations.EXCLUDED)]
+        if args and args.list == translations.PENDING:
+            listed = [translations.PENDING]
         if args and args.list:
             # Les entrées manquantes se comptent par centaines : on les liste seulement sur demande.
             listed = [s for s in listed if s == args.list or (args.list == "all" and s != translations.MISSING)]
             for status in listed:
                 rows = [p for p in all_pairs if p.status == status
                         and (status != translations.MISSING or not scope or p.part in scope)]
-                if not rows:
+                lines = [f"{p.source.rel if p.source else '—'}  →  {p.translation.rel if p.translation else '—'}"
+                         for p in rows]
+                lines += [f"{yaml_sync.rel(it.kind, languages['source'], it.file)} {it.key}  →  "
+                          f"{yaml_sync.rel(it.kind, lang, it.file)}" for it in items if it.status == status
+                          and (status != translations.MISSING or not scope or it.kind in scope)]
+                if not lines:
                     continue
-                print(f"\n  {status} ({len(rows)}) :")
-                for p in rows:
-                    src = p.source.rel if p.source else "—"
-                    dst = p.translation.rel if p.translation else "—"
-                    print(f"    {src}  →  {dst}")
+                print(f"\n  {status} ({len(lines)}) :")
+                for line in lines:
+                    print(f"    {line}")
         pending = sum(counts[s] for s in listed if s not in (translations.MISSING, translations.ORIGIN_MISSING))
         if args and args.strict and (pending or counts[translations.MISSING] or counts[translations.ORIGIN_MISSING]):
             ok = False
@@ -285,6 +318,8 @@ def main() -> int:
             p.add_argument("--format", default="all", help="pdf, epub (séparés par des virgules) ou all")
             p.add_argument("--output-dir", help="dossier de sortie (défaut : build/)")
             p.add_argument("--force", action="store_true", help="générer même si la validation échoue")
+            p.add_argument("--lang", default="fr",
+                           help="langue du livre : fr (défaut), en, ou all ; une traduction sort dans build/<langue>/")
         if name == "sync":
             p.add_argument("--lang", help="langue cible (défaut : toutes celles de templates/languages.yaml)")
             p.add_argument("--list", nargs="?", const="all", metavar="STATUT",

@@ -13,7 +13,7 @@ import yaml
 
 @dataclass
 class Definition:
-    """Une entrée de definitions/fr/<lettre>/<slug>/."""
+    """Une entrée de definitions/<langue>/<lettre>/<slug>/."""
 
     uuid: str
     title: str
@@ -29,6 +29,8 @@ class Definition:
     assets: List[dict] = field(default_factory=list)
     version: Optional[str] = None
     part: Optional[str] = None    # renseignée par Dictionary à partir de la taxonomie
+    assets_dir: Optional[Path] = None  # images de l'entrée (celles de la source pour une traduction)
+    source_slug: Optional[str] = None  # traduction : slug de l'entrée d'origine
 
     @classmethod
     def load(cls, directory: Path) -> "Definition":
@@ -62,6 +64,10 @@ class Definition:
             assets=metadata.get("assets") or [],
             version=metadata.get("version"),
         )
+
+    @property
+    def assets_path(self) -> Path:
+        return self.assets_dir or self.path / "assets"
 
     @property
     def credits(self) -> Dict[str, str]:

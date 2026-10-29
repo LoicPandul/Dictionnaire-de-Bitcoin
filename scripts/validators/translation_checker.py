@@ -14,6 +14,7 @@ from collections import Counter
 from typing import Dict, List, Tuple
 
 from ..core import translations as tr
+from ..core import yaml_sync
 from ..core.dictionary import Dictionary
 from . import sync_checker
 
@@ -91,10 +92,30 @@ def validate(dictionary: Dictionary) -> List[str]:
             errors += [f"[{lang}/{e.slug}] {label} en double" for e in entries if counts[key(e)] > 1]
         for e in entries:
             errors += _check_entry(e, dictionary, languages)
+        errors += _check_yaml(languages["source"], lang)
     # Une entrée d'origine peut être la traduction d'une autre langue (source_lang dans definitions/fr).
     for e in tr.load_entries(languages["source"]).values():
         if e.is_translation:
             errors += _check_entry(e, dictionary, languages)
+    return errors
+
+
+def _check_yaml(origin: str, lang: str) -> List[str]:
+    """Chronologie et résumés traduits : chaque élément a sa source et ses champs."""
+    errors = []
+    for it in yaml_sync.all_items(origin, lang):
+        where = f"[{yaml_sync.rel(it.kind, lang, it.file)} {it.key}]"
+        if it.status == tr.ORPHAN:
+            errors.append(f"{where} source introuvable dans {yaml_sync.rel(it.kind, origin, it.file)}")
+        if it.translation is None:
+            continue
+        fields = ("summary",) if it.kind == yaml_sync.SUMMARIES else ("title", "text")
+        for k in fields:
+            if not str(it.translation.get(k) or "").strip():
+                errors.append(f"{where} {k} manquant ou vide")
+        for k in ("source_hash", "translation_hash"):
+            if it.translation.get(k) and not HASH_RE.match(str(it.translation[k])):
+                errors.append(f"{where} {k} invalide : {it.translation[k]!r}")
     return errors
 
 
@@ -106,19 +127,26 @@ def summary(dictionary: Dictionary) -> Dict[str, Tuple[Counter, Dict[str, Counte
     for lang, conf in languages["translations"].items():
         scope = set(conf.get("parts") or [])
         in_scope, by_part = Counter(), {}
-        for p in tr.pairs(languages["source"], lang, part_of, exclude=set(conf.get("exclude") or [])):
-            by_part.setdefault(p.part or "?", Counter())[p.status] += 1
-            if p.status != tr.EXCLUDED and (not scope or p.part in scope or p.status != tr.MISSING):
-                in_scope[p.status] += 1
+        rows = [(p.part or "?", p.status) for p in tr.pairs(languages["source"], lang, part_of, **filters(conf))]
+        rows += [(it.kind, it.status) for it in yaml_sync.all_items(languages["source"], lang)]
+        for part, status in rows:
+            by_part.setdefault(part, Counter())[status] += 1
+            if status not in (tr.EXCLUDED, tr.PENDING) and (not scope or part in scope or status != tr.MISSING):
+                in_scope[status] += 1
         result[lang] = (in_scope, by_part)
     return result
 
 
+def filters(conf: dict) -> dict:
+    """Arguments `exclude` et `pending` de tr.pairs pour une langue de templates/languages.yaml."""
+    return {"exclude": set(conf.get("exclude") or []), "pending": set(conf.get("pending") or [])}
+
+
 def describe(lang: str, counts: Counter) -> str:
-    total = sum(counts.values()) - counts[tr.ORPHAN]
+    total = sum(counts.values()) - counts[tr.ORPHAN] - counts[tr.PENDING] - counts[tr.EXCLUDED]
     done = total - counts[tr.MISSING] - counts[tr.ORIGIN_MISSING]
     parts = [f"{done}/{total} traduites", f"{counts[tr.UP_TO_DATE]} à jour"]
     for status in tr.STATUSES[1:]:
-        if counts[status]:
+        if counts[status] and status not in (tr.EXCLUDED, tr.PENDING):
             parts.append(f"{counts[status]} {status}")
     return f"{lang.upper()} : " + ", ".join(parts)

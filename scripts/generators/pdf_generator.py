@@ -25,7 +25,7 @@ import yaml
 
 from ..config import BASE_DIR, BUILD_DIR, DEFINITIONS_DIR, FONTS_DIR, PICTOGRAMS_DIR, TEMPLATES_DIR, TEXTS_DIR, find_tex_engine
 from ..core.book import Book, Section
-from ..core.chronology import MOIS_FR
+from ..core import i18n
 from . import images
 from .latex import clean_content, escape, inline, markdown_to_latex
 
@@ -94,17 +94,14 @@ FORMATS = {
     ),
 }
 
-STATUS_FR = {
-    # BIP (BIP-0003 et anciens statuts de BIP-0002)
-    "draft": "Brouillon", "complete": "Complet", "deployed": "Déployé", "closed": "Clos",
-    "final": "Final", "active": "Actif", "proposed": "Proposé", "withdrawn": "Retiré",
-    "replaced": "Remplacé", "rejected": "Rejeté", "obsolete": "Obsolète", "deferred": "Reporté",
-}
-
-
-def load_legal() -> dict:
-    with open(TEXTS_DIR / "legal.yaml", encoding="utf-8") as f:
-        return yaml.safe_load(f) or {}
+def load_legal(lang: str = i18n.SOURCE_LANG) -> dict:
+    """Mentions légales : templates/<langue>/legal.yaml, complété par celui de la langue d'origine."""
+    data = {}
+    for path in (TEXTS_DIR / "legal.yaml", i18n.texts_dir(lang) / "legal.yaml"):
+        if path.exists():
+            with open(path, encoding="utf-8") as f:
+                data.update(yaml.safe_load(f) or {})
+    return data
 
 
 def _colors(fmt: PdfFormat) -> str:
@@ -149,8 +146,8 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 
 \usepackage{{fontspec}}
 \usepackage{{polyglossia}}
-\setdefaultlanguage{{french}}
-\setotherlanguage{{english}}
+\setdefaultlanguage{{{"english" if book.lang == "en" else "french"}}}
+\setotherlanguage{{{"french" if book.lang == "en" else "english"}}}
 
 \usepackage[{fmt.geometry()}, includehead, includefoot]{{geometry}}
 
@@ -273,8 +270,10 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 # Pages liminaires et finales
 # --------------------------------------------------------------------------
 
-def _date_fr(now: datetime) -> str:
-    return f"{now.day:02d} {MOIS_FR[now.month]} {now.year}"
+def _date(now: datetime, lang: str) -> str:
+    if lang == "en":
+        return i18n.date_label(lang, now.year, now.month, now.day)
+    return f"{now.day:02d} {i18n.MONTHS['fr'][now.month - 1]} {now.year}"
 
 
 def _half_title(book: Book) -> str:
@@ -303,20 +302,22 @@ def _title_page(book: Book, legal: dict) -> str:
 def _legal_lines(book: Book, legal: dict, fmt: PdfFormat) -> List[str]:
     now = datetime.now()
     isbn = legal.get(fmt.isbn_key, "")
+    lang = book.lang
+    c = " : " if lang == i18n.SOURCE_LANG else ": "
     lines = [
         rf"\textbf{{© {now.year} {escape(legal.get('author', ''))}}}",
-        rf"\textbf{{\textit{{{escape(book.edition.title)} : {escape(book.edition.subtitle)}}}}}",
-        rf"Version du {_date_fr(now)}",
+        rf"\textbf{{\textit{{{escape(book.edition.title)}{c}{escape(book.edition.subtitle)}}}}}",
+        rf"{i18n.t(lang, 'version_of')} {_date(now, lang)}",
         rf"\cleanurl{{{legal.get('github_url', '')}}}",
-        rf"Cet ouvrage est sous licence {escape(legal.get('license', ''))}",
+        rf"{i18n.t(lang, 'licensed')} {escape(legal.get('license', ''))}",
         rf"\cleanurl{{{legal.get('license_url', '')}}}",
-        rf"Lightning : {escape(legal.get('lightning_address', ''))}",
-        rf"Email : {escape(legal.get('email', ''))}",
-        rf"Site web : \cleanurl{{{legal.get('website', '')}}}",
-        rf"GitHub : \cleanurl{{{legal.get('github_profile', '')}}}",
+        rf"Lightning{c}{escape(legal.get('lightning_address', ''))}",
+        rf"{i18n.t(lang, 'email')}{c}{escape(legal.get('email', ''))}",
+        rf"{i18n.t(lang, 'website')}{c}\cleanurl{{{legal.get('website', '')}}}",
+        rf"GitHub{c}\cleanurl{{{legal.get('github_profile', '')}}}",
     ]
     if isbn and book.edition.id == "complete":
-        lines.append(rf"ISBN : {isbn}")
+        lines.append(rf"ISBN{c}{isbn}")
     return lines
 
 
@@ -347,8 +348,8 @@ def _front_title(title: str) -> str:
     return rf"\begin{{center}}{{\titrefont\fontsize{{16}}{{20}}\selectfont\color{{figue}} {title}}}\end{{center}}\vspace{{0.4em}}"
 
 
-def _front_text(title: str, template: str) -> str:
-    path = TEXTS_DIR / template
+def _front_text(title: str, template: str, lang: str = i18n.SOURCE_LANG) -> str:
+    path = i18n.texts_dir(lang) / template
     content = path.read_text(encoding="utf-8") if path.exists() else ""
     latex = markdown_to_latex(clean_content(content))
     # Intertitres des textes liminaires : Archivo Vedette, comme les mots vedettes
@@ -369,7 +370,7 @@ def _toc(book: Book, fmt: PdfFormat) -> str:
     toc_font = _fs(*fmt.toc) + r"\addfontfeature{Numbers=Tabular}"
     out = [rf"""
 \clearpage\thispagestyle{{frontmatter}}
-{_front_title("Table des matières")}"""]
+{_front_title(i18n.t(book.lang, "contents"))}"""]
     out.append(r"{\small")
     for s in book.edition.sections:
         out.append(rf"\noindent\hyperlink{{part-{s.id}}}{{\vedette{{{escape(s.title.upper())}}}}}\dotfill\pageref*{{part:{s.id}}}\par")
@@ -448,20 +449,20 @@ def _meta_line(book: Book, d) -> str:
     return r"\noindent\categorie{" + r"\enspace·\enspace ".join(bits) + r"}\par\nopagebreak"
 
 
-def _see_also(targets, label: str = "Voir aussi") -> str:
+def _see_also(targets, label: str = "Voir aussi", lang: str = i18n.SOURCE_LANG) -> str:
     if not targets:
         return ""
     links = (r"\hspace{3mm}" + "\n").join(
         rf"\mbox{{\hyperlink{{{t.slug}}}{{{escape(t.title)}}}}}" for t in targets)
     return "\n".join([
         r"\par\nopagebreak\vspace{1pt}",
-        r"{\raggedright\renvoislabel " + label + r"\,: \renvoisfont " + links + r"\par}",
+        r"{\raggedright\renvoislabel " + label + i18n.t(lang, "colon") + r"\renvoisfont " + links + r"\par}",
     ])
 
 
 def _md(content: str, fmt: PdfFormat, d) -> str:
     """Markdown d'une entrée (images, crédits et largeur de code du format)."""
-    return markdown_to_latex(content, assets_dir=d.path / "assets", code_max_chars=fmt.code_max_chars,
+    return markdown_to_latex(content, assets_dir=d.assets_path, code_max_chars=fmt.code_max_chars,
                              color=fmt.color, credits=d.credits)
 
 
@@ -492,7 +493,7 @@ def _entry(book: Book, section: Section, d, fmt: PdfFormat) -> str:
     body = _body(text, d, fmt) if section.version == "developpee" else _md(clean_content(text), fmt, d)
     parts.append(body)
     if section.version == "developpee":
-        parts.append(_see_also(book.cross_references(d)))
+        parts.append(_see_also(book.cross_references(d), i18n.t(book.lang, "see_also"), book.lang))
     return "\n".join(p for p in parts if p)
 
 
@@ -512,20 +513,16 @@ def _chronology_section(book: Book, section: Section, fmt: PdfFormat) -> str:
         if ev.year != year:
             year = ev.year
             out.append(_letter_heading(str(year)))
-        date = escape(ev.date_fr())
+        date = escape(ev.date_label(book.lang))
         out.append(r"\par\needspace{3\baselineskip}\vspace{4pt}")
         out.append(rf"\markboth{{{year}}}{{{year}}}\noindent\vedette{{{date.upper()}}}\enspace{{\itshape {inline(ev.title)}}}\par\nopagebreak")
         out.append(markdown_to_latex(clean_content(ev.text), inline_only=True))
-        out.append(_see_also(book.related(ev.related), "Voir"))
+        out.append(_see_also(book.related(ev.related), i18n.t(book.lang, "see"), book.lang))
     return "\n".join(out)
 
 
-def _status_label(doc) -> str:
-    labels = []
-    for s in doc.status:
-        fr = STATUS_FR.get(s.lower())
-        labels.append(fr if fr and fr.lower() == s.lower() else f"{fr} ({s})" if fr else s)
-    return ", ".join(labels)
+def _status_label(doc, lang: str = i18n.SOURCE_LANG) -> str:
+    return ", ".join(i18n.status_label(lang, s) for s in doc.status)
 
 
 def _specs_section(book: Book, section: Section, fmt: PdfFormat) -> str:
@@ -544,20 +541,21 @@ def _specs_section(book: Book, section: Section, fmt: PdfFormat) -> str:
             out.append(rf"\markboth{{{ident}}}{{{ident}}}{anchors}")
             out.append(rf"\noindent\vedette{{{ident.upper()}}}\par\nopagebreak\vspace{{1pt}}")
             meta = []
-            status = _status_label(doc)
+            status = _status_label(doc, book.lang)
+            c = i18n.t(book.lang, "colon")
             if status:
-                meta.append(rf"Statut\,: {escape(status)}")
+                meta.append(rf"{i18n.t(book.lang, 'status')}{c}{escape(status)}")
             if doc.type:
-                meta.append(rf"Type\,: {escape(doc.type)}")
+                meta.append(rf"{i18n.t(book.lang, 'type')}{c}{escape(doc.type)}")
             if doc.created:
-                meta.append(rf"Créé le\,: {escape(doc.created)}")
+                meta.append(rf"{i18n.t(book.lang, 'created')}{c}{escape(doc.created)}")
             if meta:
                 out.append(r"\noindent\categorie{" + r"\enspace·\enspace ".join(meta) + r"}\par\nopagebreak")
             if doc.title:
                 out.append(rf"\noindent\textenglish{{\textit{{{inline(doc.title)}}}}}\par\nopagebreak")
             if doc.summary:
                 out.append(markdown_to_latex(clean_content(doc.summary), inline_only=True) + r"\par")
-            out.append(_see_also(book.related(doc.related), "Voir"))
+            out.append(_see_also(book.related(doc.related), i18n.t(book.lang, "see"), book.lang))
             linked = book.definition_for(doc)
             if section.detail and linked:
                 out.append(r"\vspace{0.2em}")
@@ -570,12 +568,12 @@ def _specs_section(book: Book, section: Section, fmt: PdfFormat) -> str:
 # --------------------------------------------------------------------------
 
 def build_latex(book: Book, fmt: PdfFormat, legal: Optional[dict] = None) -> str:
-    legal = legal or load_legal()
+    legal = legal or load_legal(book.lang)
     s = [_preamble(fmt, legal, book), r"\begin{document}", r"\frontmatter", r"\pagestyle{frontmatter}",
          _half_title(book), r"\cleardoublepage", _title_page(book, legal), _copyright_page(book, legal, fmt),
          r"\clearpage\thispagestyle{empty}\null",
-         _front_text("Contributeurs et remerciements", "contributors.md"),
-         _front_text("Note de l'auteur", "introduction.md"),
+         _front_text(i18n.t(book.lang, "contributors"), "contributors.md", book.lang),
+         _front_text(i18n.t(book.lang, "author_note"), "introduction.md", book.lang),
          r"\cleardoublepage", _toc(book, fmt),
          r"\mainmatter", r"\pagestyle{dictionary}", r"\setcounter{page}{1}"]
     for section in book.edition.sections:

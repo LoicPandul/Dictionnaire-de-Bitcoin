@@ -12,11 +12,13 @@ DEFINITIONS_ROOT = BASE_DIR / "definitions"   # une langue par sous-dossier (fr,
 DEFINITIONS_DIR = DEFINITIONS_ROOT / "fr"       # langue d'origine du livre
 TEMPLATES_DIR = BASE_DIR / "templates"         # configuration du livre commune aux langues
 LANGUAGES_FILE = TEMPLATES_DIR / "languages.yaml"
-CHRONOLOGY_DIR = BASE_DIR / "chronologie" / "fr"
+CHRONOLOGY_ROOT = BASE_DIR / "chronologie"      # une langue par sous-dossier
+CHRONOLOGY_DIR = CHRONOLOGY_ROOT / "fr"
 PICTOGRAMS_DIR = BASE_DIR / "assets" / "pictograms"
 
-SPECIFICATIONS_DIR = BASE_DIR / "specifications" / "fr"
-TEXTS_DIR = TEMPLATES_DIR / "fr"                # textes du livre en français
+SPECIFICATIONS_ROOT = BASE_DIR / "specifications"  # une langue par sous-dossier
+SPECIFICATIONS_DIR = SPECIFICATIONS_ROOT / "fr"
+TEXTS_DIR = TEMPLATES_DIR / "fr"                # textes du livre en français (templates/<langue>/)
 FONTS_DIR = BASE_DIR / "assets" / "fonts"
 
 # Sorties de build (ignorées par git) et outils locaux (.tools/, ignoré par git)

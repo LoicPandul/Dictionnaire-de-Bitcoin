@@ -46,8 +46,9 @@ CONFLICT = "conflit"              # les deux ont changé
 ORIGIN_MISSING = "absente de la langue d'origine"  # entrée écrite d'abord dans la langue cible
 ORPHAN = "orpheline"              # la source a été supprimée : supprimer ou rattacher la traduction
 EXCLUDED = "exclue"               # entrée sans objet dans la langue cible (templates/languages.yaml)
+PENDING = "en attente"            # traduction suspendue à une décision (`pending` de templates/languages.yaml)
 STATUSES = (UP_TO_DATE, TRANSLATION_BEHIND, SOURCE_BEHIND, CONFLICT, UNMARKED, MISSING, ORIGIN_MISSING, ORPHAN,
-            EXCLUDED)
+            EXCLUDED, PENDING)
 
 
 def load_languages(path: Path = None) -> dict:
@@ -164,12 +165,14 @@ def status_of(source: Entry, translation: Entry) -> str:
     return UP_TO_DATE
 
 
-def pairs(origin: str, target: str, part_of=None, root: Path = None, exclude=()) -> List[Pair]:
+def pairs(origin: str, target: str, part_of=None, root: Path = None, exclude=(), pending=()) -> List[Pair]:
     """Paires entre la langue d'origine du dépôt et une langue cible, par UUID.
 
     Le sens de chaque paire se lit dans les métadonnées : la version qui porte `source_lang`
     est la traduction. Une entrée écrite d'abord dans la langue cible (sans `source_lang`) a
-    donc pour traduction la version dans la langue d'origine.
+    donc pour traduction la version dans la langue d'origine. `exclude` (slugs) et `pending`
+    (slugs ou catégories) donnent leur statut aux entrées non traduites qu'on ne compte pas
+    comme manquantes.
     """
     a, b = load_entries(origin, root), load_entries(target, root)
     result = []
@@ -179,7 +182,9 @@ def pairs(origin: str, target: str, part_of=None, root: Path = None, exclude=())
             source, translation = (eb, ea) if ea.is_translation and not eb.is_translation else (ea, eb)
             status = status_of(source, translation)
         elif ea:
-            source, translation, status = ea, None, EXCLUDED if ea.slug in exclude else MISSING
+            status = (EXCLUDED if ea.slug in exclude
+                      else PENDING if ea.slug in pending or ea.meta.get("category") in pending else MISSING)
+            source, translation = ea, None
         elif eb.is_translation:
             source, translation, status = None, eb, ORPHAN
         else:
