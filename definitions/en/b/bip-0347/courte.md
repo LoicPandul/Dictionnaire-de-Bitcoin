@@ -1,0 +1,1 @@
+Proposal by Ethan Heilman and Armin Sabouri to re-enable in Tapscript the `OP_CAT` opcode, disabled by Satoshi Nakamoto in 2010, which concatenates two stack elements and could be used, among other things, to build covenants.

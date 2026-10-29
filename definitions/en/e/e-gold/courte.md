@@ -1,0 +1,1 @@
+Gold-backed digital money system founded in 1996 by Douglas Jackson and Barry Downey, which allowed instant transfers between accounts denominated in grams of metal. Prosecuted by the US government in 2007, it illustrates the fragility of centralized digital money.

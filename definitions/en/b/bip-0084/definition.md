@@ -1,0 +1,1 @@
+Derivation standard for SegWit v0 addresses (`bc1q...`) within a hierarchical deterministic wallet. It defines the index `84'`, which is to be used at the `purpose` depth of the HD wallet for P2WPKH script templates.

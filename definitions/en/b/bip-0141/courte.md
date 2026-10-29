@@ -1,0 +1,1 @@
+Proposal that defines SegWit (Segregated Witness), the soft fork that separates the witnesses (the signature data) from the rest of the transaction, fixing transaction malleability while remaining compatible with old nodes.

@@ -1,0 +1,3 @@
+Specification that defines the onion routing protocol of the Lightning Network. It describes how to build and process encrypted 1,366-byte packets containing an ephemeral key, nested routing instructions, and an integrity HMAC. Each intermediate node sees only the next hop, without knowing the sender or the final recipient.
+
+BOLT-04 also covers route blinding, which hides the identity of downstream nodes to protect the recipient's privacy, and the encrypted error return mechanism that lets the sender identify which node failed. Finally, it describes onion messages, which are used to exchange messages outside of payments, for example BOLT-12 invoice requests.

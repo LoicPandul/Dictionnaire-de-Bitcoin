@@ -1,0 +1,1 @@
+C library optimized for digital signatures and other cryptographic primitives on the `secp256k1` curve. Developed first and foremost for Bitcoin's needs, it aims to be the reference for use of this curve.

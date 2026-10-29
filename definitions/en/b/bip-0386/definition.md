@@ -1,0 +1,1 @@
+Proposal that introduces the descriptor functions for Taproot. It defines the `tr(KEY)` and `tr(KEY, TREE)` functions to describe Taproot outputs, where `KEY` is the internal key and `TREE` is an optional tree of script paths. BIP-0386 was implemented in Bitcoin Core version 22.0.

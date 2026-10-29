@@ -1,0 +1,1 @@
+Operating system for personal servers that makes it possible to self-host applications, including a Bitcoin node and a Lightning node, from a simple web interface. It runs on Umbrel hardware or on a compatible computer via umbrelOS.

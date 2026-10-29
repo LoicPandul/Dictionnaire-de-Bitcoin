@@ -1,0 +1,1 @@
+Author of PGP, an encryption program released for free in June 1991, which drew a US criminal investigation into cryptography exports, closed without indictment in January 1996. Hal Finney worked with him.

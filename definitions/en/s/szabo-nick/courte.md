@@ -1,0 +1,1 @@
+Computer scientist, author of the 1994 text "Smart Contracts" that defines the smart contract, and designer of bit gold, a currency based on chained proofs of work, conceived by his account in 1998 and described in detail in 2005.

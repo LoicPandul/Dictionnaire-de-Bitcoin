@@ -1,0 +1,1 @@
+Acronym for *Validating Lightning Signer*. Open-source Rust library that separates a Lightning node's private keys from the node software and refuses to sign any operation that would put the funds at risk.

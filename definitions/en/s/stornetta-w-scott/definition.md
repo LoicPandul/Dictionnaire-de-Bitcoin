@@ -1,0 +1,7 @@
+Researcher in cryptography and computer science, coinventor with Stuart Haber of digital timestamping by hash chaining. Three of their papers are references [3], [4], and [5] of the Bitcoin white paper. They carried out this work at Bellcore, in Morristown, New Jersey.
+
+In 1991, Haber and Stornetta published "How to Time-Stamp a Digital Document" in the *Journal of Cryptology*, received on August 19, 1990. To prove the date of a document without trusting the service that timestamps it, the certificate for each request includes information from the previous certificate, among it the hash of its linking information: a backdated timestamp would be contradicted by the following certificates, which already contain that information. US patent 5,136,646, filed on March 8, 1991 in the names of Stuart A. Haber and Wakefield S. Stornetta, Jr., was granted on August 4, 1992 to Bell Communications Research.
+
+In 1993, with Dave Bayer, they placed timestamps in hash trees, as Ralph Merkle had done for other purposes, to reduce the verification workload. In April 1997, they published "Secure names for bit-strings" at the ACM Conference on Computer and Communications Security. Stornetta then cofounded Surety with Haber, a Bellcore spin-off that sells timestamping.
+
+The "Timestamp Server" section of the white paper takes up their idea: each timestamp includes the previous one in its hash, which forms a chain. Bitcoin replaces the single service with a peer-to-peer network and proof of work.

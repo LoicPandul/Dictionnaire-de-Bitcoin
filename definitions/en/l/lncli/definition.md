@@ -1,0 +1,1 @@
+Command-line interface shipped with LND for administering a Lightning node. LNCLI (Lightning Network Command Line Interface) executes RPC calls to the LND daemon to manage channels, send and receive payments, check balances, adjust routing fees, and carry out all the usual operations of a node. Each command corresponds to an underlying gRPC call.

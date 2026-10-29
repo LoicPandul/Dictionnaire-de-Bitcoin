@@ -1,0 +1,1 @@
+Proposal that added the `OP_EVAL` opcode, able to execute a script supplied in the `scriptSig`, so that spending conditions are revealed only at spending time. BIP-0016 (P2SH) replaced it with a safer method.

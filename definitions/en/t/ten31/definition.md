@@ -1,0 +1,1 @@
+Venture capital fund specializing in investments in companies of the Bitcoin ecosystem. Founded in 2020, Ten31 takes its name from October 31 (10/31 in the US format), the date on which Satoshi Nakamoto published the white paper in 2008.

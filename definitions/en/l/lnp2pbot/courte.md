@@ -1,0 +1,1 @@
+Open-source Telegram bot for buying and selling bitcoin peer-to-peer for local currencies, with payments over the Lightning Network and an escrow that holds the seller's sats until the buyer has paid.

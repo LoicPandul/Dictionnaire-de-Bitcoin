@@ -1,0 +1,1 @@
+Proposal for HTLCCs (Hashed Time-Locked Collateral Contracts), an extension of HTLCs that locks bitcoin collateral to secure a loan denominated on another blockchain, liquidated or seized in case of non-repayment.

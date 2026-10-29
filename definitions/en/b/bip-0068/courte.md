@@ -1,0 +1,1 @@
+Soft fork proposal that makes the `nSequence` field a relative timelock: a transaction enters a block only after a delay, in blocks or in time, counted from an earlier transaction. It was activated in 2016 with BIP-0112 and BIP-0113.

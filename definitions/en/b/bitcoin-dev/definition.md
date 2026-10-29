@@ -1,0 +1,5 @@
+Email mailing list dedicated to the development of the Bitcoin protocol. Bitcoin-dev was created by Jeff Garzik in 2011 and initially hosted on Sourceforge.net. The mailing list was later moved to the Linux Foundation, then to Open Source Lab, and finally, since February 2024, it has been hosted on [Google Groups](https://groups.google.com/g/bitcoindev).
+
+The mailing list is a place of exchange for developers and researchers involved in the evolution of Bitcoin. Discussions there are strictly technical or academic. It is notably where drafts of BIPs (Bitcoin Improvement Proposals) are meant to be sent, before possibly being merged into the BIPs GitHub repository. When the list migrated to Google Groups in February 2024, its moderators were Ruben Somsen, Bryan Bishop, and Warren Togami.
+
+Participation in the list is open to all contributors, but it is aimed mainly at people with technical expertise in Bitcoin. Subscribing to the list delivers these discussions by email. A summary of the discussions is also published in the [Bitcoin Optech newsletter](https://bitcoinops.org/en/newsletters/).

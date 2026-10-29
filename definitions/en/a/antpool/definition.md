@@ -1,0 +1,1 @@
+Bitcoin mining pool founded in 2014 by Bitmain Technologies, the leading maker of ASIC mining hardware. Based in China, Antpool regularly ranks among the largest mining pools in the world by hashrate. It offers several payout methods and serves individual miners and professional mining operations alike.

@@ -1,0 +1,1 @@
+Proposal that defines the `musig()` key expression for output script descriptors. This expression represents a MuSig2 aggregate key within a descriptor, making it possible to describe in a standardized way a Taproot key path spend involving several signers. Without this expression, there was no standard way to describe a MuSig2 multisig in descriptors.

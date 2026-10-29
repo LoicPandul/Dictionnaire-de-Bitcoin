@@ -1,0 +1,7 @@
+Proposal by Paul Sztorc and CryptAxe defining the "Hashrate Escrows" mechanism, which is the first technical building block of drivechains.
+
+This BIP makes it possible to create sidechains whose two-way peg with Bitcoin is managed directly by miners, without relying on a federation of signers. Bitcoin sent to a sidechain is locked in a special output using `OP_DRIVECHAIN` (a redefinition of `OP_NOP5`). To withdraw funds to the main chain, a "withdrawal bundle" is proposed and then submitted to a miner vote spread over 26,300 blocks (about 6 months). Each miner can, block by block, vote in favor of a bundle, abstain, or trigger an alarm that lowers the score of all bundles. The withdrawal is executed only if the bundle reaches 13,150 favorable votes, or about 50% of the hashrate over the period. This slowness is deliberate: it makes any theft attempt publicly visible for months, leaving the community time to react.
+
+BIP-0300 defines six consensus messages (M1 to M6) covering the proposal and activation of new sidechains, deposits, and withdrawals.
+
+This BIP has been the subject of significant debate: its supporters see it as a way to add features (privacy, smart contracts, scalability) on sidechains without modifying the base layer; its detractors raise questions about the security model, since a 51% attack sustained long enough could allow the theft of all of a sidechain's funds, and about a risk of mining centralization. BIP-0300 therefore remains in draft.

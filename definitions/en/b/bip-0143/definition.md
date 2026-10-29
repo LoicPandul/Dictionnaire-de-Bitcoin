@@ -1,0 +1,4 @@
+Introduces a new way of hashing the transaction for signature verification in post-SegWit scripts. The goal is to minimize redundant operations during verification and to include the value of the input UTXOs in the signature. This solves two major problems of the original transaction hashing algorithm:
+* The quadratic growth of data hashing with the number of signatures;
+* The absence of the input's value from the signature, which posed a risk for hardware wallets, notably regarding knowing the fees committed in the transaction.
+Since the SegWit upgrade, explained in BIP-0141, introduces a new form of transactions whose script will not be verified by old nodes, BIP-0143 takes the opportunity to solve this problem without requiring a hard fork. BIP-0143 is therefore part of the SegWit soft fork.

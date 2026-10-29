@@ -1,0 +1,1 @@
+Proposal by Paul Sztorc and CryptAxe defining "Blind Merged Mining" (BMM), a blind merged mining mechanism for drivechains. BMM lets Bitcoin miners collect sidechain transaction fees in BTC on Bitcoin, without having to run each sidechain's software. BIP-0301 complements BIP-0300 to form the complete technical basis of drivechains.

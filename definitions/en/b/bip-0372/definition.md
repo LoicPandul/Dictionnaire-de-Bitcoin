@@ -1,0 +1,1 @@
+Proposal that adds PSBT fields (BIP-0174) dedicated to pay-to-contract tweaks. BIP-0372 lets signers know that a public key has been modified by a P2C tweak and sign the transaction correctly, taking this modification into account.

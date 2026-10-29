@@ -1,0 +1,1 @@
+Open-source software suite for managing Bitcoin wallets, centered on multisig. Specter Desktop relies on a personal Bitcoin Core node and on hardware wallets, and Specter DIY makes it possible to build one's own signing device.

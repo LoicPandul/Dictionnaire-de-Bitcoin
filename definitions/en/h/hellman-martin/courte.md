@@ -1,0 +1,1 @@
+American cryptographer, coauthor with Whitfield Diffie in 1976 of "New Directions in Cryptography," which laid the foundations of public-key cryptography and introduced the Diffie-Hellman key exchange, and 2015 Turing Award winner.

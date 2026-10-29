@@ -1,0 +1,1 @@
+Company specializing in Lightning payments, which develops Alby Hub, a browser extension, and the Alby Go mobile app, along with the Nostr Wallet Connect protocol for integrating Lightning into other applications.

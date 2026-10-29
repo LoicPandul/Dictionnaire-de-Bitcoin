@@ -1,0 +1,1 @@
+Hardware wallet dedicated to Bitcoin, made by the American company Foundation Devices. Fully air-gapped, it signs transactions by exchanging QR codes with wallet software such as Envoy or Sparrow Wallet.

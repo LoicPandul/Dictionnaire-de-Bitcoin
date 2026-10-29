@@ -1,0 +1,1 @@
+Proposal for a mechanism protecting against transaction replay in the event of a hard fork, by committing each transaction to a specific blockhash. BIP-0115 added an opcode that checks that a particular block exists in the active chain, making the transaction invalid on an alternative chain resulting from a fork. This proposal was never deployed.

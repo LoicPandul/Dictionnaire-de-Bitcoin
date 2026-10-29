@@ -1,0 +1,1 @@
+Open-source firmware that turns consumer devices built on the Kendryte K210 microcontroller into Bitcoin signing devices. It generates keys and signs offline, exchanging data with the coordinator wallet through QR codes or a microSD card.

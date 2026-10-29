@@ -1,0 +1,1 @@
+Proposal that replaced the `scriptSig` and `scriptPubKey` fields with `dataSig`, `scriptCheck`, and `hashScriptCheck`, reaching the same result as P2SH by overhauling the structure of inputs and outputs.

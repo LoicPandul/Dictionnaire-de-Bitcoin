@@ -1,0 +1,1 @@
+Proposal for a mechanism letting Bitcoin nodes announce and provide custom services over the peer-to-peer protocol. BIP-0036 aimed to extend the capabilities of the network by allowing specialized nodes to offer additional features beyond the standard relay of blocks and transactions. This proposal was never adopted.

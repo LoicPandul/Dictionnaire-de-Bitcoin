@@ -1,0 +1,1 @@
+Lightning Labs service that works as a liquidity marketplace on Lightning: it connects users who need liquidity with those who have capital to place in new channels, in exchange for payment in satoshis.

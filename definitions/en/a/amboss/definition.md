@@ -1,0 +1,1 @@
+Analytics and monitoring platform for the Lightning Network, founded in 2021 by Jesse Shrader and Anthony Potdevin. It provides detailed data on network topology, nodes, channels, and liquidity flows, which helps node operators manage their nodes more effectively. Amboss also offers Magma, a marketplace for Lightning liquidity, where operators can buy and sell channel capacity.

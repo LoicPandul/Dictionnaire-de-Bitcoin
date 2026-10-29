@@ -1,0 +1,1 @@
+Centralized digital currency service based in Costa Rica, founded in 2006 by Arthur Budovsky and seized by the US government in May 2013 for money laundering. Its shutdown illustrates the vulnerability of centralized digital currencies that Bitcoin seeks to avoid.

@@ -1,0 +1,1 @@
+Bitcoin wallet for desktop, Android, and iOS, developed by Blockstream since it acquired GreenAddress in 2016 and extended in 2025 by the Blockstream App. It offers multisig protection with two-factor authentication and works with most hardware wallets.

@@ -1,0 +1,1 @@
+Proposal that introduces Silent Payments: the recipient publishes a static address, and each payer derives a unique address from it, with no interaction and no visible link on the blockchain between payments.

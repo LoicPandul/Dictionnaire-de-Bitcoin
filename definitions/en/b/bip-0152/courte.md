@@ -1,0 +1,1 @@
+Proposal Compact Block Relay, which reduces the bandwidth of block propagation: a node sends short identifiers for the transactions its peers already have in their mempool, instead of the full transactions.

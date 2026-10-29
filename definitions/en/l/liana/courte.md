@@ -1,0 +1,1 @@
+Open-source Bitcoin wallet from Wizardsardine, built on Miniscript. It adds recovery keys to the primary key, which activate through timelocks after a period of inactivity, and supports inheritance and backup plans without a trusted third party.

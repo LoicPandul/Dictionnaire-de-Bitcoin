@@ -1,0 +1,1 @@
+Proposal that defines an interactive payment protocol: the merchant sends a payment request signed with its SSL certificate, and the customer's wallet fills it in automatically. It was never widely adopted.

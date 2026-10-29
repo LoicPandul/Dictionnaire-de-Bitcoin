@@ -1,0 +1,7 @@
+Austrian economist, a leading figure of the Austrian school, author of works on money, credit, and economic calculation.
+
+Born in Lemberg on September 29, 1881, he joined the Vienna Chamber of Commerce in 1909, where he became one of the leading economists and an economic adviser to the Austrian government. In 1912, he published *Theorie des Geldes und der Umlaufsmittel* (*The Theory of Money and Credit*), which applies marginal utility theory to money and sketches his theory of business cycles, which blames crises on the expansion of bank credit. In 1920, an article argued that economic calculation is impossible in a socialist economy, a thesis he developed in *Die Gemeinwirtschaft* (*Socialism*) in 1922.
+
+He left Vienna for Geneva in 1934, then settled in New York in 1940. There he was a visiting professor at New York University from 1945 to 1969. In 1949, he published *Human Action*, a treatise on economics founded on praxeology, the study of purposeful action. In it he defends the free market, private property, and a noninflationary gold standard. He died in New York on October 10, 1973.
+
+His ideas on money, credit, and inflation feed the Austrian school, of which he is one of the references. In 2014, Jeffrey Tucker, in an article published on the Foundation for Economic Education website, argues that Mises's regression theorem explains the value of Bitcoin, and judges that Mises would be surprised, but might be proud to see his monetary theory confirmed. Mises died before Bitcoin appeared and never spoke of it.

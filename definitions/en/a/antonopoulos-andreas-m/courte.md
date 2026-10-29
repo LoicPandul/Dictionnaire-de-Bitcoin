@@ -1,0 +1,1 @@
+Author of *Mastering Bitcoin* (O'Reilly, December 2014), a technical handbook reissued in a third edition in 2023 with David Harding. He testified on October 8, 2014, before the Canadian Senate banking committee.

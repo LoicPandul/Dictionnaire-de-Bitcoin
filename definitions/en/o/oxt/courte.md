@@ -1,0 +1,1 @@
+Bitcoin blockchain explorer created by LaurentMT and later acquired by Samourai Wallet, specialized in analyzing transaction privacy. The service has been offline since April 2024, after the legal action against Samourai Wallet's founders.

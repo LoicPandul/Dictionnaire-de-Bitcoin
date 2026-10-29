@@ -1,0 +1,1 @@
+Proposal by Mark Friedenbach that adds the `OP_MERKLEBRANCHVERIFY` opcode, to verify within a script that a value belongs to a Merkle tree. Designed to build MAST, it remained in `Draft` status, since Taproot natively integrates MAST.

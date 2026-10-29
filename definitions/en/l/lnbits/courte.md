@@ -1,0 +1,1 @@
+Open-source application that sits on top of a Lightning funding source to create isolated virtual wallets, each with its own API key. Extensions add features such as point of sale, payment links, and paywalls.

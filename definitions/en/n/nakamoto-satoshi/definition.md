@@ -1,0 +1,1 @@
+Pseudonym of the person or group who created Bitcoin and wrote its original white paper, *Bitcoin: A Peer-to-Peer Electronic Cash System*, published on October 31, 2008. Nakamoto then mined the genesis block on January 3, 2009. Nakamoto communicated only online, then disappeared from public view in 2011. The identity remains unknown.

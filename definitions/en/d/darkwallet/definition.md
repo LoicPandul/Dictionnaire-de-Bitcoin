@@ -1,0 +1,1 @@
+Privacy-focused Bitcoin wallet software, launched by Amir Taaki and Cody Wilson in 2014, running as an extension for the Google Chrome browser. DarkWallet had features to improve the privacy of Bitcoin users, such as stealth payments and coinjoins. Its development has been abandoned since January 2015.

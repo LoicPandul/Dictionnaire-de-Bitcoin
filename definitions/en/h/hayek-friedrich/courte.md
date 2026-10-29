@@ -1,0 +1,1 @@
+Austrian economist and 1974 Nobel laureate. In *Denationalisation of Money* (1976), he proposes ending the state monopoly on money in favor of competing private issuers, an idea that Bitcoin advocates invoke.

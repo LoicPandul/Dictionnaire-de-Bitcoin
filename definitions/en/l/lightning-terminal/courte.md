@@ -1,0 +1,1 @@
+Lightning Labs web interface for administering an LND node, showing channels, liquidity, and routed payments and bundling Loop, Pool, and Faraday. It runs through litd and can be reached remotely through Lightning Node Connect.

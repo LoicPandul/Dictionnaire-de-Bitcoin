@@ -1,0 +1,1 @@
+Web interface for JoinMarket focused on ease of use. JoinMarket is a coinjoin implementation for Bitcoin, but using it from the command line can intimidate beginners. JAM was created precisely to make JoinMarket's advanced features accessible to beginners.

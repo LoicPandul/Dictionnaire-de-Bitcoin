@@ -1,0 +1,1 @@
+New opcode, `OP_CHECKLOCKTIMEVERIFY`, that makes a UTXO unspendable until a given point in the future. Applying this BIP required a soft fork, which took place on December 14, 2015. It also introduced version 4 of blocks.

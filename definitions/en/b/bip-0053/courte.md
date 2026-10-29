@@ -1,0 +1,1 @@
+Proposal that forbids 64-byte transactions at the consensus level, since they can be mistaken for an internal node of a Merkle tree. It prevents the building of fake SPV proofs that fool light clients.

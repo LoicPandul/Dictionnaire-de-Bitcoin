@@ -1,0 +1,7 @@
+American economist of the Austrian School, theorist of anarcho-capitalism, author of works on money and banking.
+
+Born in New York on March 2, 1926, he read Ludwig von Mises's *Human Action* in 1949 and attended Mises's seminar at New York University starting in the fall of 1949. In the winter of 1949-1950, he concluded that the provision of protection also belongs to the market, and argued that a public monopoly on that service is illegitimate: this position is called anarcho-capitalism. In 1962, he published *Man, Economy, and State*, which takes up Mises's approach, then in 1963 *What Has Government Done to Our Money?*, a short account of the nature of money, the money creation of banks, the role of central banks, and the end of the gold standard. The Mises Institute presents it as a manifesto of sound money.
+
+He taught economics at the Polytechnic Institute of Brooklyn from the mid-1960s to the mid-1980s, published *The Mystery of Banking* in 1983, then held a chair at the University of Nevada, Las Vegas from 1986 until his death. He was academic vice president of the Ludwig von Mises Institute, founded in 1982 in Auburn, Alabama. He died in Manhattan on January 7, 1995.
+
+He belongs to the Austrian School, like Mises. In 2014, Jeffrey Tucker, in an article published on the website of the Foundation for Economic Education, saw in Bitcoin a "Rothbardian dream" for its mode of ownership, while noting that Rothbard preferred gold. Rothbard died before Bitcoin appeared.

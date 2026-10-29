@@ -1,0 +1,1 @@
+Open-source exchange platform for buying and selling bitcoin peer-to-peer over the Lightning Network, without KYC. It runs on Tor with ephemeral identities and uses hold invoices as escrow during the trade.

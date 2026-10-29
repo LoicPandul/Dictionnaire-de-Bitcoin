@@ -1,0 +1,1 @@
+Company cofounded by David Marcus, former PayPal executive and head of the Libra project at Meta, building payments infrastructure on Bitcoin, first on Lightning with UMA, then with Spark, a layer 2 protocol based on statechains.

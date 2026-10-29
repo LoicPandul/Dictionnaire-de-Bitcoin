@@ -1,0 +1,1 @@
+NFC bearer card developed by Satochip, a Belgian company. The Satodime supports up to three independent "vaults" for storing bitcoin. The private keys are generated and sealed inside a secure chip certified EAL6+ and are only revealed when the card is unsealed, so physical possession of the card is equivalent to ownership of the funds.

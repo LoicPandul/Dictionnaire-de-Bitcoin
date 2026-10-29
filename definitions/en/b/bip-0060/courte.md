@@ -1,0 +1,1 @@
+Proposal that fixes the size of the P2P `version` message and cleanly adds the `relay` field to it, to keep the handshake compatible across versions. It was closed because BIP-0037 had already broken that compatibility.

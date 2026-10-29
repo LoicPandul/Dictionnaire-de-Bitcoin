@@ -1,0 +1,1 @@
+NFC card made by Coinkite for signing Bitcoin transactions. The TapSigner stores a BIP-0032 master private key and signs transactions when the card is held against an NFC-capable phone, through a wallet such as Nunchuk. With no screen, the card is an affordable signing device, suited to small amounts or to use in a multisig.

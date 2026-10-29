@@ -1,0 +1,1 @@
+Bitcoin dice-gambling site launched in April 2012 by Erik Voorhees, which paid winners automatically. It was one of the first large-scale commercial services on Bitcoin and accounted for nearly half of the network's transactions.

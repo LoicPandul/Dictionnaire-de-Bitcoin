@@ -1,0 +1,1 @@
+Developer, coauthor with Joseph Poon of the Lightning Network white paper, then researcher at the MIT Digital Currency Initiative, where he designed Discreet Log Contracts and the Utreexo accumulator.

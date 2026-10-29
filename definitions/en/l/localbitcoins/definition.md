@@ -1,0 +1,3 @@
+Peer-to-peer bitcoin exchange platform founded in June 2012 by Jeremias Kangas in Finland. The service connected bitcoin buyers and sellers around the world, facilitating P2P trades. Users posted ads specifying the amounts, prices, and accepted payment methods (bank transfers, cash, online payment services...). An escrow system protected both parties during the trade. This model made it possible to exchange bitcoin for local currency in nearly every country, including those without conventional exchanges.
+
+LocalBitcoins shut down in February 2023 because of unfavorable market conditions and increasing regulation.

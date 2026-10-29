@@ -1,0 +1,1 @@
+Proposal that introduces the descriptor functions `addr(ADDR)` and `raw(HEX)`. The `addr(ADDR)` function describes an output script using a receiving address, while the `raw(HEX)` function specifies an output script using its raw hexadecimal representation. BIP-0385 was implemented, along with all the other descriptor-related BIPs (except BIP-0386), in Bitcoin Core version 0.17.

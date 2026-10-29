@@ -1,0 +1,1 @@
+Mobile wallet from JAN3 that brings Bitcoin, the Lightning Network, and the Liquid sidechain together in a single application. It uses atomic swaps for Lightning payments, with no embedded node and without entrusting funds to a third party.

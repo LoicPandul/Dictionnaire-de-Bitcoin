@@ -1,0 +1,1 @@
+Proposal that defines Taproot, the spending rules of SegWit v1: an output is spent with a simple Schnorr signature or by revealing a script from a Merkle tree, and all outputs look the same on the blockchain.

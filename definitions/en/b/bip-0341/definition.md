@@ -1,0 +1,3 @@
+Proposal that defines the spending rules of SegWit version 1, commonly known as "Taproot". This BIP introduces two distinct spending paths: the key path, which allows spending with a simple Schnorr signature, and the script path, which allows revealing and executing a script from a Merkle tree (MAST). Taproot outputs use "tweaked" public keys that combine an internal key with the root of the MAST tree.
+
+The advantage of this structure is that all Taproot outputs look identical on-chain (a simple 32-byte public key), which greatly improves user privacy. BIP-0341 was activated at block 709,632 in November 2021 through the Speedy Trial method.

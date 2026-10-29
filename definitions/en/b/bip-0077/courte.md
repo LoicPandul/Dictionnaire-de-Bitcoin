@@ -1,0 +1,1 @@
+Proposal that defines an asynchronous version of Payjoin (BIP-0078): the payer drops an encrypted PSBT on a relay server, which the receiver retrieves and cosigns later. Both parties no longer need to be online at the same time.

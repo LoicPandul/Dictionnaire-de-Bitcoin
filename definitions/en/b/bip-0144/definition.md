@@ -1,0 +1,1 @@
+Defines new network message formats and serializations for relaying transactions and blocks that include segregated witness (SegWit) structures. In particular, BIP-0144 establishes mechanisms that let peers signal their support for SegWit and relay witness structures without breaking compatibility with nodes that have not upgraded.

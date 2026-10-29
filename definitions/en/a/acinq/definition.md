@@ -1,0 +1,1 @@
+French company specializing in Lightning Network solutions. ACINQ is behind Eclair, a major implementation of the Lightning protocol written in Scala. The company also develops Phoenix, a self-custodial mobile wallet that runs a Lightning node directly on the user's phone. ACINQ also operates one of the largest Lightning nodes on the network.

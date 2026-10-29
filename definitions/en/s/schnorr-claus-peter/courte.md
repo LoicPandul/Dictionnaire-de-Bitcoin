@@ -1,0 +1,1 @@
+German mathematician and cryptographer at Goethe University Frankfurt, inventor in the late 1980s of the Schnorr signature, which `BIP-0340` adapts to the secp256k1 curve and which went live with Taproot at block 709,632.

@@ -1,0 +1,1 @@
+First open-source command-line software used to create custom receiving addresses (vanity addresses). It works by generating and testing key pairs by trial and error until it finds a receiving address that matches the criteria specified by the user (such as a particular sequence of characters). Vanitygen requires intensive computation, especially for long sequences.

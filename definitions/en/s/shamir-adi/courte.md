@@ -1,0 +1,1 @@
+Israeli cryptographer at the Weizmann Institute, coinventor of RSA and 2002 Turing Award winner. In November 1979, he published the threshold secret sharing used to split a seed in SLIP-39 and BIP-0093 (Codex32).

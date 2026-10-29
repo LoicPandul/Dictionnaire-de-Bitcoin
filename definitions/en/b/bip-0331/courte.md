@@ -1,0 +1,1 @@
+Proposal that describes a P2P protocol for relaying a low-fee parent transaction together with its child transaction, so that nodes evaluate the fee rate of the whole package and CPFP works at the relay level.

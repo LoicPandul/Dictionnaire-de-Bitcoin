@@ -1,0 +1,1 @@
+Cryptographer, inventor of mix networks (1981) and blind signatures (1982), and founder of DigiCash, which commercialized the eCash system. His blind signatures live on in Chaumian coinjoins, and his bearer tokens inspired the ecash mints Cashu and Fedimint.

@@ -1,0 +1,5 @@
+Privacy-focused Bitcoin wallet software for Android mobile devices. It offered advanced features such as Whirlpool coinjoins, Stonewall, StonewallX2, Ricochet, and Stowaway (payjoin). Samourai also implemented many protections to help users guard their privacy against chain analysis.
+
+On April 24, 2024, the US Department of Justice announced the arrest of the two cofounders, Keonne Rodriguez and William Lonergan Hill, and the seizure of the service's domain name and servers. Both pleaded guilty in July 2025 to conspiring to operate a money transmitting business. Keonne Rodriguez was sentenced on November 6, 2025 to 5 years in prison, and William Lonergan Hill on November 19, 2025 to 4 years.
+
+*On April 24, 2024, the two cofounders of Samourai Wallet were unjustly arrested for simply writing code. I want to express my unwavering support for them. Their commitment to privacy and freedom embodies the fundamental values of Bitcoin. These developers committed no crime; they only worked to provide tools that let everyone assert their natural rights. To support them through this ordeal, I invite everyone to sign the online petition: https://billandkeonne.org/.*

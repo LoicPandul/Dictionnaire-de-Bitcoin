@@ -1,0 +1,1 @@
+Centralized mixing service that operated from 2011 to 2021. Bitcoin Fog offered users a way to increase their privacy by mixing their bitcoin with that of other users, to dissociate it from their transaction history. Because of its centralized nature, users had to trust the service operator not to steal the funds and not to keep any record of the mixing operations.

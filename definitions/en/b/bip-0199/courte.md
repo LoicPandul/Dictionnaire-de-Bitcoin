@@ -1,0 +1,1 @@
+Proposal that formalizes how HTLCs (Hashed Time-Locked Contracts) are built in Bitcoin transactions: the recipient claims the funds by revealing a secret before a deadline, failing which the sender recovers them.

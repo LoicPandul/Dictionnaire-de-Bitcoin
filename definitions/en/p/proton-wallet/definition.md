@@ -1,0 +1,1 @@
+Open-source self-custody Bitcoin wallet developed by Proton, the Swiss company known for its privacy-focused services. Available as a web and mobile app, it is tied to a Proton account. Its distinctive feature is sending bitcoin to the recipient's email address: Proton automatically generates a fresh Bitcoin address associated with the recipient's wallet.

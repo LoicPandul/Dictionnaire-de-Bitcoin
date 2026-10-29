@@ -1,0 +1,1 @@
+Open-source Bitcoin hardware wallet developed by TwentyTwo Devices, which works entirely over NFC, with no cable or battery. The device is powered directly by the smartphone's NFC field. Its firmware is written in Rust with BDK (Bitcoin Dev Kit), and it is compatible with mobile wallets such as Nunchuk or Bitcoin Keeper for signing transactions.

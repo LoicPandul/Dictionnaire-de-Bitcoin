@@ -1,0 +1,1 @@
+Set reconciliation library developed mainly by Pieter Wuille, which lets two peers find the elements the other lacks without sending their complete lists. It is the basis of Erlay, which aims to reduce the bandwidth of transaction relay.

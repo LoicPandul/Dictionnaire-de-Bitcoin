@@ -1,0 +1,1 @@
+Online service, also called LN+, that organizes liquidity swaps on Lightning: several node operators open channels to each other in a circle, and each receives as much inbound liquidity as they commit.

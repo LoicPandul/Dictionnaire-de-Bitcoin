@@ -1,0 +1,1 @@
+Proposal that defines Signet, a type of test network where blocks must carry the signature of designated keys in addition to proof of work, which makes it more stable than testnet for developing and testing applications.

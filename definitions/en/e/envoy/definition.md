@@ -1,0 +1,1 @@
+Mobile app developed by Foundation Devices. Envoy serves both as a standalone Bitcoin wallet and as the companion interface for the Passport hardware wallet: it can set up the device, update its firmware, and sign transactions through QR codes exchanged with the Passport, which operates air-gapped.

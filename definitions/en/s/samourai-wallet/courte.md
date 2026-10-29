@@ -1,0 +1,1 @@
+Privacy-focused Bitcoin wallet for Android that offered tools against chain analysis, such as Whirlpool, Stonewall, and Ricochet coinjoins and Stowaway payjoin. Its cofounders, arrested in April 2024, were sentenced to prison in November 2025.

@@ -1,0 +1,1 @@
+Specification that defines the encrypted and authenticated transport layer of the Lightning Network. It relies on the Noise protocol, where the initiator must know the responder's public key before connecting. The handshake takes place in three acts, at the end of which the two peers share session keys.

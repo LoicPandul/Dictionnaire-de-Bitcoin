@@ -1,0 +1,1 @@
+Proposal by Paul Sztorc and CryptAxe that defines Blind Merged Mining, through which Bitcoin miners collect sidechain fees in BTC without running each sidechain's software. It complements BIP-0300 to form drivechains.

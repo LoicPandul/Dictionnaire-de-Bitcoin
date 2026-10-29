@@ -1,0 +1,1 @@
+American computer scientist, coinventor in 1977 with Ron Rivest and Adi Shamir of RSA, the first published public-key encryption and signature system usable in practice, which earned them the 2002 Turing Award.

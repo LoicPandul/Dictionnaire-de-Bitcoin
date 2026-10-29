@@ -1,0 +1,3 @@
+Specification that defines the peer-to-peer discovery protocol of the Lightning network. It describes the `node_announcement` messages (by which nodes broadcast their identity and connection addresses), `channel_announcement` messages (which prove the existence of a channel), and `channel_update` messages (which publish each channel's routing fees and expiry deltas).
+
+BOLT-07 establishes the rules for staggered broadcast of announcements (gossip), the mechanism for pruning channels that are stale or closed on-chain, and the query-based synchronization protocols that let nodes maintain a consistent view of the network topology.

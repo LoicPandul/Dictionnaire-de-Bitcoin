@@ -1,0 +1,1 @@
+Proposal that entrusted the acceptance or rejection of BIPs to a committee of appointed members, through a structured voting process. Judged contrary to Bitcoin's decentralized governance, it was rejected.

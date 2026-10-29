@@ -1,0 +1,1 @@
+Cryptography researcher at Blockstream, coauthor of MuSig, Bulletproofs, and the sidechains white paper, initiator of the scriptless scripts repository, and coauthor of BIP-0379 (Miniscript) and BIP-0093 (codex32).

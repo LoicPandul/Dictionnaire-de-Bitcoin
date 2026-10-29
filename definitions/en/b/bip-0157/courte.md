@@ -1,0 +1,1 @@
+Proposal that defines the peer-to-peer protocol by which light clients download compact block filters and their chained headers from full nodes, which makes it possible to verify the authenticity of the filters.

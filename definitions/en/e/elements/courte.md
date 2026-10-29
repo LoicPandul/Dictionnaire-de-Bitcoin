@@ -1,0 +1,1 @@
+Open-source platform built on the Bitcoin Core code for launching federated sidechains or standalone blockchains, with confidential transactions and asset issuance. Liquid Network is its main production implementation.

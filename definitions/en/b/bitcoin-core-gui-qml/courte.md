@@ -1,0 +1,1 @@
+Experimental project, launched in 2021, for a node and wallet application built on Bitcoin Core with a new graphical interface written in QML, to modernize Bitcoin Core's interface on desktop and mobile.

@@ -1,0 +1,1 @@
+Proposal that defines BSMS (Bitcoin Secure Multisig Setup), a protocol for setting up a multisig wallet across several hardware and software signers, ensuring that all cosigners agree on the same configuration.

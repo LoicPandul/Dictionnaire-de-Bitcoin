@@ -1,0 +1,1 @@
+Proposal that introduces the `wpkh(KEY)` (Pay-to-Witness-PubKey-Hash) and `wsh(SCRIPT)` (Pay-to-Witness-Script-Hash) functions for descriptors. These functions standardize how SegWit script types are described in descriptors. BIP-0382 was implemented, along with all the other descriptor-related BIPs (except BIP-0386), in Bitcoin Core version 0.17.

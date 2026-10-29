@@ -1,0 +1,1 @@
+French company founded in 2014 that makes hardware wallets to secure bitcoin private keys. Its devices embed a certified security chip (secure element) that isolates the keys from any environment connected to the internet.

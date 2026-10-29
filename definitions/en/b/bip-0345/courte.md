@@ -1,0 +1,1 @@
+Proposal by James O'Beirne and Greg Sanders that adds the `OP_VAULT` and `OP_VAULT_RECOVER` opcodes to create native vaults, where every withdrawal goes through a delay during which the owner can send the funds back to a recovery address.

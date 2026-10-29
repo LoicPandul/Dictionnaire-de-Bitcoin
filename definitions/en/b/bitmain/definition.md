@@ -1,0 +1,3 @@
+Chinese company founded in 2013 by Jihan Wu and Micree Zhan, specializing in the design of ASIC chips for Bitcoin mining and the production of mining machines. Bitmain sells the Antminer line, which has historically dominated the global mining hardware market in terms of market share. The company also founded AntPool in 2014, one of the largest mining pools, before separating from it in 2021 to refocus on chip design.
+
+Bitmain has played a central role in the industrialization of Bitcoin mining by making ASICs available at large scale. The company has nonetheless attracted controversy, notably over the secret use of AsicBoost (covert AsicBoost) in its machines and its opposition to the SegWit soft fork during the block size conflict of 2017.

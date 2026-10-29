@@ -1,0 +1,1 @@
+Soft fork proposal that introduces the `OP_CHECKTEMPLATEVERIFY` (CTV) opcode, to create non-recursive covenants that dictate in advance how a coin can be spent, for example for congestion control or DLCs.

@@ -1,0 +1,1 @@
+Proposal that defines, for SegWit v0 scripts, a new way of hashing the transaction during signature verification: it avoids the quadratic growth of computation and includes the amount of each input in the signature.

@@ -1,0 +1,1 @@
+Erlay proposal that reduces the bandwidth consumed by the propagation of unconfirmed transactions: a node announces them to a limited number of peers, then shares the missing transactions through a reconciliation mechanism.

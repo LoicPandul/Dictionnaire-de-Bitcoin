@@ -1,0 +1,1 @@
+Head of Mt. Gox after buying it from Jed McCaleb in 2011. The exchange sought civil rehabilitation in Tokyo on February 28, 2014; he received a suspended sentence on March 15, 2019, for data manipulation.

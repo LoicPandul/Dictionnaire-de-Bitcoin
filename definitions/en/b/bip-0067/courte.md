@@ -1,0 +1,1 @@
+Proposal that requires the public keys of a P2SH multisig `redeemScript` to be sorted in lexicographic order. All cosigners thus get the same address, whatever the order in which the keys are inserted.

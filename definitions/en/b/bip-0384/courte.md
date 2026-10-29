@@ -1,0 +1,1 @@
+Proposal that defines the descriptor function `combo()`, which describes at once the possible output scripts of a single public key: P2PK, P2PKH, and, if the key is compressed, P2WPKH and P2SH-P2WPKH.

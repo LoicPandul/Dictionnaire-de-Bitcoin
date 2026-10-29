@@ -1,0 +1,1 @@
+Bitcoin mining pool oriented mainly toward the Asian and Russian-speaking markets. SECPOOL offers the FPPS and PPLNS payout methods. According to mempool.space, it had found 4,890 blocks in total as of October 26, 2026.

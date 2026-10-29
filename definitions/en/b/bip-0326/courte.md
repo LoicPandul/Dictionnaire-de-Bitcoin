@@ -1,0 +1,1 @@
+Proposal that recommends wallets use the `nSequence` field of Taproot transactions rather than `nLocktime` against fee sniping, so that their spends are indistinguishable from those of second-layer protocols, which strengthens privacy.

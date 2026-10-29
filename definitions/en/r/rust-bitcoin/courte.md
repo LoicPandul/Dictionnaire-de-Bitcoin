@@ -1,0 +1,1 @@
+Open-source Rust library for handling Bitcoin protocol data: transactions, blocks, network messages, keys, addresses, and PSBTs. It is used to build wallets and tools, not to validate consensus like a full node.

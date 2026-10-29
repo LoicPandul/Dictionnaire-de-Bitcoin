@@ -1,0 +1,1 @@
+Proposal that defines a derivation path for the deterministic multisig wallets of voting pools without colored coins, where several participants manage funds in cold storage together. It was closed without wide adoption.

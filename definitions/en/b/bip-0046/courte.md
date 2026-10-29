@@ -1,0 +1,1 @@
+Proposal that defines a derivation path dedicated to JoinMarket fidelity bonds, addresses whose funds are locked by a timelock. The maker thus proves an economic sacrifice and recovers the bonds with the seed alone.

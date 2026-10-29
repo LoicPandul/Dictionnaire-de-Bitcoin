@@ -1,0 +1,1 @@
+Proposal that defines a standard JSON Lines format for exporting and importing a wallet's labels (transactions, addresses, xpubs, UTXOs), so they can be moved from one software to another without loss.

@@ -1,0 +1,1 @@
+Bellcore cryptographer, coinventor in 1991 with W. Scott Stornetta of digital timestamping in which each certificate includes the hash of the previous one, a chain that the Bitcoin white paper cites as references [3] to [5].

@@ -1,0 +1,1 @@
+Proposal that describes the Pay-to-Contract protocol, where the payer modifies the recipient's public key with the hash of a contract, to prove that a payment is tied to that contract without revealing it on the blockchain.

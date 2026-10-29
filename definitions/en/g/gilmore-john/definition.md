@@ -1,0 +1,7 @@
+American computer scientist and digital liberties activist, cofounder of the Electronic Frontier Foundation and host of the cypherpunks.
+
+One of the first employees of Sun Microsystems and a cofounder of Cygnus, he cofounded the Electronic Frontier Foundation (EFF) in July 1990 with Mitch Kapor and John Perry Barlow. The organization was created to defend civil liberties on networks, after the Secret Service seized the equipment of Steve Jackson Games: none of the existing organizations understood the technology well enough to defend it.
+
+In September 1992, he took part with Eric Hughes and Timothy May in the birth of the cypherpunks. He made the offices of his company, Cygnus, available to them for their monthly meetings, and his machine toad.com for the mailing list. This list, where Tim May, Hal Finney, Wei Dai, and others discussed cryptography, remailers, and electronic money, saw several ideas that predate Bitcoin go by; b-money, for example, was published there in November 1998, after he had left toad.com. In February 1997, after a highly controversial moderation experiment failed, Gilmore announced that he would no longer host the list; it was then spread over several interlinked servers.
+
+His link to Bitcoin is indirect: he did not write a money protocol, but from 1992 to 1997 he hosted the place where the idea of money without an intermediary began to circulate. He thus connects the Cypherpunks and b-money entries to the defense of privacy and open encryption for all.

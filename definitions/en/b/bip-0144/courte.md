@@ -1,0 +1,1 @@
+Proposal that defines the network messages and serialization of SegWit transactions and blocks, so that nodes signal their SegWit support and relay witnesses without disrupting nodes that have not upgraded.

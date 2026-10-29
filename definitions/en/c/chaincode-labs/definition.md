@@ -1,0 +1,1 @@
+Bitcoin research and development center founded in 2014 by Alex Morcos and Suhas Daftuar in New York. Chaincode Labs funds and employs Bitcoin Core developers, and runs training programs for open-source contributors to the Bitcoin protocol.

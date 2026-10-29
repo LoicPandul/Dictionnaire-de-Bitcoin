@@ -1,0 +1,1 @@
+NFC bearer card designed by Satochip that seals up to three bitcoin vaults in a secure chip. The private keys are only revealed when the card is unsealed, so holding the card amounts to holding the funds.

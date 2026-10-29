@@ -1,0 +1,1 @@
+Proposal that adds the `NODE_BLOOM` service bit, through which a node announces whether it supports the Bloom filters of BIP-0037. An operator can thus disable this service to limit denial-of-service risks.

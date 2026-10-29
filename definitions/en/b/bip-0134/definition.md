@@ -1,0 +1,1 @@
+Proposal by Tom Zander (Bitcoin Classic) introducing a new flexible transaction format ("Flexible Transactions") aimed at solving the transaction malleability problem. BIP-0134 was a direct competitor of SegWit, proposing a different approach based on tag encoding. It was never adopted, as the network activated SegWit (BIP-0141) instead.

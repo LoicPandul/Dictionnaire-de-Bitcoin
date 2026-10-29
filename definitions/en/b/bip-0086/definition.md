@@ -1,0 +1,1 @@
+Derivation standard for SegWit v1, or Taproot, addresses (`bc1p...`) within a hierarchical deterministic wallet. It defines the index `86'`, which is to be used at the `purpose` depth of the HD wallet for P2TR script templates.

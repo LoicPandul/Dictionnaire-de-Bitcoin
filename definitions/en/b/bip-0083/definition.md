@@ -1,0 +1,1 @@
+Proposal for an extension of hierarchical deterministic key trees (BIP-0032) that would allow new derivation levels to be created dynamically according to the needs of the application. BIP-0083 was closed, as the standard derivation paths defined by BIP-0044, BIP-0049, and BIP-0084 were judged sufficient for most use cases.

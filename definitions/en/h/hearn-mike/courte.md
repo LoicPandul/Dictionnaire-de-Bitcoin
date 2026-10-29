@@ -1,0 +1,1 @@
+Developer, author of the bitcoinj library, of BIP-0037 on Bloom filters, and of BIP-0070, then initiator of Bitcoin XT. On January 14, 2016, he announced he was leaving Bitcoin and had sold his bitcoin.

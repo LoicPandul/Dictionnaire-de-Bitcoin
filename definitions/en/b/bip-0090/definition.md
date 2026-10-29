@@ -1,0 +1,1 @@
+Proposal to simplify the handling of past soft fork activations by replacing the miner signaling mechanism based on block version numbers with simple block height checks. This change would remove the need to check the previous 1,000 blocks to activate consensus rules, which would reduce the technical debt associated with implementing these soft forks.

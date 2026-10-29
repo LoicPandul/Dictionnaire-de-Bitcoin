@@ -1,0 +1,1 @@
+Proposal aimed at improving how Bitcoin nodes manage the network. Before BIP-0031, Bitcoin nodes had no direct way of knowing whether their peers were still connected, functioning, and not overloaded. BIP-0031 introduced the use of a `pong` message, sent in response to the `ping` message, which allows an active check of connectivity between nodes.

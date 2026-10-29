@@ -1,0 +1,1 @@
+American computer scientist, 2013 Turing Award winner. Around 1975 he devised the one-time Lamport signature, and in 1982 he coauthored the Byzantine Generals Problem paper, which Satoshi Nakamoto said in 2008 the proof-of-work chain solves.

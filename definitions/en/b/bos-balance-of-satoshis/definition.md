@@ -1,0 +1,3 @@
+Command-line tool developed by Alex Bosworth to manage and optimize a Lightning node running LND. It installs through npm (`npm install -g balanceofsatoshis`) and offers a set of commands accessed with the `bos` prefix to view balances, adjust routing fees, rebalance liquidity between channels, open or close channels, and monitor node activity.
+
+Among its main features, `bos rebalance` moves liquidity between channels through circular payments, `bos fees` dynamically adjusts outbound fees with conditional formulas, and `bos accounting` produces an accounting statement of transactions. The tool also offers a Telegram integration for receiving notifications and interacting with the node remotely.

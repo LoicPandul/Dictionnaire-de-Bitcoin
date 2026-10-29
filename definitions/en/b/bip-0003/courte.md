@@ -1,0 +1,1 @@
+Proposal that updates the BIP process by replacing BIP-0002: four statuses instead of nine, the `Specification` type in place of `Standards Track`, and an editor role refocused on administrative work.

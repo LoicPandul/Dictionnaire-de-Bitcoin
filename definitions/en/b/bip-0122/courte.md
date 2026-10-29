@@ -1,0 +1,1 @@
+Proposal that defines a URI scheme to point to a block or a transaction of a given blockchain, identified by the hash of its genesis block, in order to harmonize links between block explorers and applications.

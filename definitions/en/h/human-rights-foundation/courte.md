@@ -1,0 +1,1 @@
+Nonprofit organization founded in 2005 by Thor Halvorssen to defend human rights, especially under authoritarian regimes. Since 2020, its Bitcoin Development Fund has financed open-source projects that improve Bitcoin's privacy and decentralization.

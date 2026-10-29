@@ -1,0 +1,1 @@
+Open-source implementation of Electrum Server written in Rust. The role of electrs is thus to maintain a complete index of Bitcoin addresses and transactions from the blockchain provided by a full node, so that wallet software (such as Electrum) can make queries easily and quickly.

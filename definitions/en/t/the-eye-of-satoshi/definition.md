@@ -1,0 +1,1 @@
+Open-source watchtower implementation for the Lightning Network. A watchtower continuously monitors the Bitcoin blockchain on behalf of a user and automatically steps in by broadcasting a penalty transaction if a counterparty tries to cheat by publishing an old channel state.

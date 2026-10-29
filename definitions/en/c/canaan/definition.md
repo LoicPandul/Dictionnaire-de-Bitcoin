@@ -1,0 +1,1 @@
+Company founded in 2013 by Nangeng Zhang, specializing in the manufacture of bitcoin mining machines. Canaan is behind the AvalonMiner, the very first ASIC designed specifically for Bitcoin mining. Based in Singapore, Canaan became in 2019 the first company in the mining ASIC industry to be listed on the NASDAQ.

@@ -1,0 +1,1 @@
+Android watch-only wallet app, originally developed by the Samourai Wallet team and now maintained by the community. Sentinel tracks the balances and transaction history of a Bitcoin wallet by importing its extended public keys (`xpub`, `ypub`, `zpub`), without ever exposing the private keys. The app supports PSBTs, connection over Tor, and pairing with a personal Dojo node.

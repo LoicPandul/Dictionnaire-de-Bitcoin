@@ -1,0 +1,1 @@
+Proposal for a mutual authentication mechanism between peers on the Bitcoin network, so that a node operator can reserve certain services for known peers and protect against man-in-the-middle attacks. Closed, it served as a lesson for BIP-0324.

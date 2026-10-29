@@ -1,0 +1,1 @@
+Proposal that sorts the inputs and outputs of a transaction in lexicographic order, so that transactions from different software look alike and reveal less about the wallet used. The sort can nonetheless become a fingerprint itself.

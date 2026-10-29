@@ -1,0 +1,1 @@
+Czech company founded in 2013 by Marek Palatinus and Pavol Rusnák, known for creating the Trezor, the very first hardware wallet in history. Based in Prague, SatoshiLabs has also contributed to the development of important standards for the Bitcoin ecosystem, including BIP-0039, which defines mnemonic phrases.

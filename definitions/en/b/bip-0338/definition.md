@@ -1,0 +1,1 @@
+Proposal for a `disabletx` P2P message that lets a node tell its peers it does not want to receive relayed transactions on that connection. BIP-0338 targeted connections dedicated solely to block relay, reducing bandwidth and attack surface. The proposal was closed, since the feature was integrated differently into Bitcoin Core's network protocol.

@@ -1,0 +1,1 @@
+Coinjoin implementation developed in 2014 that pooled the bitcoin of several users into a transaction with outputs of identical amounts, with no trusted third party or central party. It is no longer used.

@@ -1,0 +1,1 @@
+Proposal that introduces reusable payment codes: from the codes of the 2 parties, each derives unique addresses belonging to the other using ECDH. A user can thus receive many payments without reusing an address.

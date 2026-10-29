@@ -1,0 +1,3 @@
+Open-source payment processor that lets merchants and users accept bitcoin payments without relying on a third party to process transactions. Launched in 2017, BTCPay Server offers a bitcoin payment integration solution for e-commerce sites, with advanced features such as hardware wallet support, invoicing and accounting tools, and Lightning Network compatibility. Its development was initiated by Nicolas Dorier, in reaction to the actions of BitPay, which, in his view, had misled its users by pushing them toward adopting SegWit2x, which the company wrongly considered the "real" Bitcoin. This opposition crystallized in a now-famous tweet by Nicolas Dorier in August 2017:
+
+> "This is lies, my trust in you is broken, I will make you obsolete".

@@ -1,0 +1,3 @@
+Web graphical interface developed by Lightning Labs to administer a Lightning node. Lightning Terminal offers a visual dashboard to check the state of channels, liquidity, routed payments, and node performance. It integrates the Loop, Pool, and Faraday tools in a single interface.
+
+Lightning Terminal runs through the litd daemon and can be accessed remotely through the Lightning Node Connect (LNC) protocol, without needing a VPN or complex network configuration. It is designed to simplify the day-to-day management of an LND node, making accessible operations that usually require the command line.

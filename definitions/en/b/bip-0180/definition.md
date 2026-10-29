@@ -1,0 +1,1 @@
+Proposal for a fraud proof format for blocks exceeding the maximum allowed size or weight. BIP-0180 would let light nodes verify that a block respects the size and weight limits without having to download it in full, by receiving a compact proof of violation. This approach aimed to strengthen the security of light clients. The proposal was closed.

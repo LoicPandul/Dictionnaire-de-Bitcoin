@@ -1,0 +1,1 @@
+Proposal that defines a discrete logarithm equality (DLEQ) proof protocol for the secp256k1 curve. This cryptographic mechanism would make it possible to prove that two points on the elliptic curve share the same secret scalar, without revealing the value of that scalar.

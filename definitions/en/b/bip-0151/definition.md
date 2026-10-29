@@ -1,0 +1,1 @@
+Proposes a protocol to encrypt P2P communications between peers on the Bitcoin network, to strengthen security and privacy. Its goal is notably to prevent traffic manipulation and mass surveillance attacks. BIP-0151 was ultimately replaced by BIP-0324 (P2P transport V2), which has been enabled by default in Bitcoin Core since version 27.0.

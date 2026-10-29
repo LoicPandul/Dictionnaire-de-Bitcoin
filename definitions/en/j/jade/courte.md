@@ -1,0 +1,1 @@
+Open-source hardware wallet from Blockstream, compatible with Liquid, that replaces the secure element chip with a virtual secure element: the key can be decrypted only with a secret from the device and a secret held by a server.

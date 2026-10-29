@@ -1,0 +1,1 @@
+Proposal that introduces functions for descriptors, notably `pk(KEY)` (Pay-to-PubKey), `pkh(KEY)` (Pay-to-PubKey-Hash), and `sh(SCRIPT)` (Pay-to-Script-Hash). These functions standardize how legacy script types are described in descriptors. BIP-0381 was implemented, along with all the other descriptor-related BIPs (except BIP-0386), in Bitcoin Core version 0.17.

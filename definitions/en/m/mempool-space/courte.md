@@ -1,0 +1,1 @@
+Open-source block explorer and mempool visualizer that shows pending transactions in real time, estimates fees, and lets users browse blocks, transactions, and addresses, online or self-hosted on their own node.

@@ -1,0 +1,3 @@
+bLIP that standardizes the metadata format attached to Lightning payments in podcasting applications (Podcasting 2.0). It defines a JSON structure carried in a TLV record (type 7629169) that accompanies each payment. This metadata identifies the podcast, the episode, the playback timestamp, the amount in millisatoshis, the sender's information, and an optional message.
+
+The system supports two types of payments: streams (automatic micropayments per minute of listening) and boosts (manual contributions that can include a message called a "boostagram"). This standardization lets any compatible wallet send payments that any compatible podcast host can process in a uniform way.

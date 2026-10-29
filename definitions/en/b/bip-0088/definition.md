@@ -1,0 +1,1 @@
+Proposal defining a template format for BIP-0032 derivation paths. This format allows ranges and wildcards within paths, for example `m/49'/0'/0'/{0,1}/*` to indicate that the change level can be 0 or 1 and that the address index is free. These templates let wallets formally describe which derivation paths are allowed, making it easier to validate and verify wallet policies.

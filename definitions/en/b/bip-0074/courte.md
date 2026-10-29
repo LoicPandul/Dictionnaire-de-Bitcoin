@@ -1,0 +1,1 @@
+Proposal that allows zero-value `OP_RETURN` outputs in BIP-0070 payment requests, to carry data such as an order identifier. It was closed with the opinion "Unanimously Discourage for implementation".

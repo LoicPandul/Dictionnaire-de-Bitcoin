@@ -1,0 +1,1 @@
+Proposal that sets several rules against transaction malleability, such as strict DER encoding of signatures. Withdrawn as incomplete and too complex to impose by consensus, it prepared the way for SegWit, which solved the problem.

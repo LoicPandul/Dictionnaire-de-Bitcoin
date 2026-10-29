@@ -1,0 +1,1 @@
+Former Bitcoin wallet software, with Android, iOS, and Chrome apps and open source code on GitHub. Blockstream acquired it in July 2016, then rebuilt it in March 2019 as the Green wallet, described in the Green Wallet entry. It should not be confused with the concept of green addresses, which are addresses whose transactions are guaranteed by a trusted third party.

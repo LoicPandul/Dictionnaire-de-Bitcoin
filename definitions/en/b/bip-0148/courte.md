@@ -1,0 +1,1 @@
+Proposal by Shaolin Fry, published in March 2017, that organizes a UASF (User-Activated Soft Fork): nodes that enforce it reject blocks that do not signal SegWit, to force miners to activate this soft fork.

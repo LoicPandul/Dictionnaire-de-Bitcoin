@@ -1,0 +1,1 @@
+Proposal for extensions to the Stratum protocol between miners and pools, with a `mining.configure` message to negotiate features, including version rolling, which allows modifying certain bits of the `nVersion` field.

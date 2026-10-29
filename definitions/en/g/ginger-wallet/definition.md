@@ -1,0 +1,1 @@
+Open-source desktop Bitcoin wallet focused on privacy. It is a fork of Wasabi Wallet, launched in June 2024, a few days after zkSNACKs shut down its coinjoin coordination service. Ginger Wallet carries over Wasabi's privacy features, notably the integration of WabiSabi coinjoins.

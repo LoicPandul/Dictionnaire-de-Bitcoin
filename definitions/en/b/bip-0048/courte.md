@@ -1,0 +1,1 @@
+Proposal that defines the derivation path of multisignature wallets, `m/48'/coin_type'/account'/script_type'`, whose last level distinguishes P2SH-P2WSH from P2WSH. One hardware wallet can thus manage several multisig configurations.

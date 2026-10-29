@@ -1,0 +1,1 @@
+Proposal, never implemented, for an alias system of the form `alias@domain.com` that replaces Bitcoin addresses with readable names, resolved through FirstBits, DNS, HTTPS, Namecoin, or other schemes.

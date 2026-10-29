@@ -1,0 +1,1 @@
+Proposal presented by Jeff Garzik in June 2015 as part of the Blocksize War. It aimed to raise the maximum block size from 1 MB to 2 MB through a hard fork. This proposal later inspired BIP-0109 and the creation of Bitcoin Classic. It was never adopted.

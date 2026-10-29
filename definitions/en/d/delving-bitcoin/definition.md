@@ -1,0 +1,11 @@
+Technical discussion forum on Bitcoin, hosted at delvingbitcoin.org, where developers and researchers post their proposals and debate them in threads. It runs on Discourse, free forum software, and describes itself as "A place to dig deep into Bitcoin". The site carries a creation date of August 24, 2022; developer threads multiply there from August 2023.
+
+Its welcome message sets the tone. A thread should be at the level of a talk before an informed audience, such as a small research group or a developer meetup: the author has already thought about the subject and looked for prior work. Whoever replies tries to help the author, by asking questions about what is unclear, challenging the idea to see whether it holds, and pointing out a forgotten reference. Let's take an example. On November 2, 2023, Gregory Sanders posted "Segwit Ephemeral Anchors" there; the thread has 13 posts. Fifteen days later, Pieter Wuille laid out the definitions and theory of cluster mempool in a thread of 21 posts.
+
+The forum is public, and the same welcome message says so: it is not suited to secret discussions, for example about an undisclosed vulnerability (see responsible disclosure). It is organized into categories (Implementation, for example), unlike the bitcoin-dev mailing list. Anthony Towns and Ruben Somsen are its administrators as of October 26, 2026. On that date, the forum has 653 threads, 8,543 posts, and 1,326 users.
+
+Delving Bitcoin became a source of technical news when the future of the bitcoin-dev list became uncertain. In its newsletter of November 8, 2023, Bitcoin Optech notes that the host of the Bitcoin-Dev list will stop hosting lists at the end of the year and that well-known developers have started discussing on "DelvingBitcoin", and announces that it is now monitoring this forum. Since January 2024, Optech has linked to its threads in the great majority of its newsletters: 124 of the 146 published between January 3, 2024 and October 23, 2026.
+
+A public archive keeps the content from disappearing with the site: James O'Beirne requested it on September 5, 2023 and two days later published a repository that holds a copy; in June 2026, 0xB10C put online a mirror built from a forum archive.
+
+*Also written DelvingBitcoin, or simply Delving. Not to be confused with bitcoin-dev, the email mailing list, which has its own entry.*

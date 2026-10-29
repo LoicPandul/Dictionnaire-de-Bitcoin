@@ -1,0 +1,1 @@
+Proposal that defines hierarchical deterministic (HD) wallets, where a single seed derives a tree of key pairs and can regenerate all of them, which makes it easier to use a fresh address for each payment received.

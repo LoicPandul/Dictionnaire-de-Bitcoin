@@ -1,0 +1,1 @@
+Specification describing Chain Code Delegation, where one multisig participant holds the chain codes of the others and supplies them with tweaks at signing time. These cosigners then see neither the balance nor the other addresses of the wallet.

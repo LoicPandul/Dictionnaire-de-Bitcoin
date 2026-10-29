@@ -1,0 +1,3 @@
+Improvement proposal that introduces an encryption mechanism to add extra protection to private keys through a passphrase. BIP-0038 ensures that even if a third party physically obtains the encrypted private key, they cannot use it without knowing its passphrase. This adds a layer of security to protect bitcoin against theft, notably for the security of old paper wallets.
+
+*Although this proposal uses the term "passphrase", it is important not to confuse it with the passphrase presented in BIP-0039, which is, incidentally, far more commonly used. The underlying concept remains similar, however: whereas BIP-0038 secures an individual private key, BIP-0039 protects an entire HD wallet.*

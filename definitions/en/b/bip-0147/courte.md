@@ -1,0 +1,1 @@
+Proposal included in the SegWit soft fork that enforces the `NULLDUMMY` rule: the dummy element consumed by `OP_CHECKMULTISIG` and `OP_CHECKMULTISIGVERIFY` must be an empty byte array, which removes a malleability vector.

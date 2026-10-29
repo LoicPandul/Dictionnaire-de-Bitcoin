@@ -1,0 +1,1 @@
+Daemon that serves as the reference implementation of the Taproot Assets protocol, developed by Lightning Labs. `tapd` lets users mint, send, and receive digital assets encoded in Taproot outputs on the Bitcoin blockchain.

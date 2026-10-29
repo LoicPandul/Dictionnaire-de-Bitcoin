@@ -1,0 +1,1 @@
+Proposal for an extension of the WIF (Wallet Import Format) with an additional version byte indicating the script type associated with the private key. BIP-0178 would make it possible to automatically tell whether a key is meant to be used with P2PKH, P2SH-P2WPKH, P2WPKH, or another script type, thus avoiding errors when importing keys between wallets.

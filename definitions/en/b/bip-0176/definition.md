@@ -1,0 +1,1 @@
+Proposal to use the "bit" (100 satoshis, or one millionth of a bitcoin) as the standard denomination in user interfaces. BIP-0176 argues that the bit offers a good compromise between precision and readability for everyday amounts. This proposal competes with the movement toward the satoshi as the main reference unit, which is gaining more traction in the ecosystem.

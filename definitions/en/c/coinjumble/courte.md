@@ -1,0 +1,1 @@
+Software launched by Chris Belcher in August 2014 for making coinjoins from a graphical interface, exchanging the parts of the transaction asynchronously over external communication channels. It is no longer used.

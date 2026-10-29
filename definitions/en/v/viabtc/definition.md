@@ -1,0 +1,1 @@
+Bitcoin mining pool founded in 2016 in China. ViaBTC is among the largest mining pools in the world by hashrate. It stands out for the variety of its payout methods: PPS+, PPLNS, and solo mining, which let miners choose the model that best fits their risk profile.

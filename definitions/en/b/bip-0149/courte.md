@@ -1,0 +1,1 @@
+Proposal by Shaolin Fry for a second SegWit deployment using the BIP-0008 method, which would have activated it on July 4, 2018 even without miner signaling, in a less confrontational way than BIP-0148. It was never implemented.

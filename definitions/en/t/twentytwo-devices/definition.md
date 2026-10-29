@@ -1,0 +1,1 @@
+Company founded by Alekos Filini that develops the Portal, a flat hardware wallet that communicates with smartphones exclusively over NFC, with no cable or battery. The Portal's firmware is written entirely in Rust and is built on BDK. Both the hardware and the software are fully open source.

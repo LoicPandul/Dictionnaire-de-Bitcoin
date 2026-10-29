@@ -1,0 +1,1 @@
+Bitcoin mining pool founded in April 2013 in China by Chun Wang and Mao Shixing ("Discus Fish"). F2Pool is the very first mining pool created in China and one of the oldest still operating in the world. It regularly ranks among the largest pools by hashrate on the Bitcoin network, and serves individual miners and professional mining operations alike.

@@ -1,0 +1,1 @@
+Company founded in 1989 by cryptographer David Chaum, which developed eCash, an anonymous electronic payment system based on blind signatures. It went bankrupt in 1998, but its approach to privacy makes it a precursor of Bitcoin.

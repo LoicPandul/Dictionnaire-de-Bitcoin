@@ -1,0 +1,1 @@
+Proposal by Shinobius and Michael Folkson to activate Taproot according to BIP-0008 with `LOT=true`, which made miner signaling mandatory at the end of the period. Taproot was locked in earlier through Speedy Trial, making it obsolete.

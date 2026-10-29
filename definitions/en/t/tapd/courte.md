@@ -1,0 +1,1 @@
+Daemon from Lightning Labs that is the reference implementation of the Taproot Assets protocol. It is used to mint, send, and receive digital assets encoded in Taproot outputs on the Bitcoin blockchain.

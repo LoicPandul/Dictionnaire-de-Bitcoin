@@ -1,0 +1,1 @@
+Open-source Bitcoin wallet developed by BitHyve, specializing in multisig. The app lets users create multisig vaults by combining different hardware wallets and software keys. Bitcoin Keeper supports BIP-0085 for deriving sub-wallets, buying bitcoin directly into cold storage, and automatic transfers to multisig vaults. It is available on mobile (iOS, Android) and desktop.

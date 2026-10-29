@@ -1,0 +1,1 @@
+Custodial web application for sending, receiving, and accepting bitcoin payments on-chain, over Lightning, over Liquid, and in Ecash from a browser. It serves individuals and merchants, with a built-in point of sale.

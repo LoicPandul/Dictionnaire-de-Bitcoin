@@ -1,0 +1,1 @@
+Proposal by Mark Friedenbach that adds tail call execution to Script, to transfer execution to another script. Together with BIP-0116, it was meant to enable MAST, but it remained in `Draft` status, since Taproot natively integrates Merkle branches.

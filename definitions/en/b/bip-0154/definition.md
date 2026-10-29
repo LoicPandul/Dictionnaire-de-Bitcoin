@@ -1,0 +1,1 @@
+Proposal for a rate-limiting mechanism using cryptographic challenges imposed by peers on Bitcoin's P2P network. BIP-0154 aimed to mitigate denial-of-service attacks by requiring requesting nodes to solve a small proof-of-work challenge before getting a response. This approach was never deployed.

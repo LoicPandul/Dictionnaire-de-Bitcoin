@@ -1,0 +1,1 @@
+Researcher at Bellcore, coinventor in 1991 with Stuart Haber of digital timestamping in which each certificate includes the hash of the previous one's linking information; three of their papers are references [3] to [5] of the Bitcoin white paper.

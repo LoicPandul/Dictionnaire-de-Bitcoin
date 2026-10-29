@@ -1,0 +1,3 @@
+Canadian company founded in 2012, specializing in the manufacture of security hardware for Bitcoin. Coinkite is best known for the Coldcard, a hardware wallet designed specifically for secure key storage. The Coldcard stands out for its minimalist approach focused exclusively on Bitcoin, its air-gapped operation (disconnected from any network), and its many advanced security features.
+
+Coinkite also develops other products such as the Blockclock, a clock that displays the bitcoin price and the block height, as well as the SatsCard and the TapSigner, NFC cards for storing or signing Bitcoin transactions.

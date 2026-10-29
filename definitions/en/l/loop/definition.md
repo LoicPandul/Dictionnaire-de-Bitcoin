@@ -1,0 +1,1 @@
+Service developed by Lightning Labs to make it easier to rebalance liquidity in Lightning channels. Loop lets users move funds between the Bitcoin blockchain and the Lightning Network without closing or opening a channel. It helps optimize liquidity and reduce channel management costs.

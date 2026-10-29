@@ -1,0 +1,1 @@
+Open-source web interface for managing and monitoring Lightning Network nodes based on LND. The tool lets users manage payment channels, send and receive on-chain and Lightning payments, rebalance liquidity, and view detailed reports on node activity.

@@ -1,0 +1,3 @@
+bLIP that defines a private DNS resolution protocol over Lightning Network onion messages. It lets a node resolve domain names into TXT records with DNSSEC proofs, without going through a public DNS server. The protocol introduces two onion message types: `dnssec_query` (resolution request) and `dnssec_proof` (response with cryptographic proof).
+
+The main use case is resolving human-readable identifiers in the `user@domain` format into payment instructions, integrating with BOLT-12 offers. The recipient publishes their payment instructions in a DNS TXT record, and the payer retrieves them through the Lightning network without exposing the request to the public DNS infrastructure, thereby preserving their privacy.

@@ -1,0 +1,1 @@
+NFC card from Coinkite that stores a master private key and signs Bitcoin transactions when held against a phone. With no screen, it is an affordable signing device for small amounts or for use in a multisig.

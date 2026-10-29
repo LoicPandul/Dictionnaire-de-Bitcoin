@@ -1,0 +1,1 @@
+Proposal that standardizes signing messages with the private key of a Bitcoin address, to prove ownership of it, by explicitly distinguishing address types. BIP-0322 has since generalized this method to any type of script.

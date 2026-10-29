@@ -1,0 +1,1 @@
+Bitcoin mining pool based in Tokyo, operated by SBI Crypto, a subsidiary of the Japanese financial group SBI Holdings. SBI Holdings has mined for its own account since 2017, before opening its pool to the public in 2021. The pool serves individual miners and professional operators alike.

@@ -1,0 +1,1 @@
+Proposal that fixes two sources of signature malleability remaining after BIP-0066: the `LOW_S` rule requires a low S value in ECDSA signatures, and the `NULLFAIL` rule requires an empty signature on failure.

@@ -1,0 +1,1 @@
+Open-source project for deploying a Bitcoin and Lightning full node on a Raspberry Pi. RaspiBlitz provides a preconfigured system that includes Bitcoin Core, a Lightning implementation, and a suite of complementary tools such as a block explorer, an Electrum server, or node management interfaces.

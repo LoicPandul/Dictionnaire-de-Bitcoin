@@ -1,0 +1,1 @@
+bLIP that introduces a new tagged field `b` in BOLT-11 invoices to carry blinded payment paths. This extension makes it possible to use route blinding (defined in BOLT-04 and used natively by BOLT-12 offers) directly in existing BOLT-11 invoices, improving the recipient's privacy before BOLT-12 offers are fully deployed.

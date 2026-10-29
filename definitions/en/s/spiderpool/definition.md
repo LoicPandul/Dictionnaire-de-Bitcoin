@@ -1,0 +1,1 @@
+Bitcoin mining pool founded in China. SpiderPool is among the largest mining pools in the world by hashrate. It offers the FPPS and PPLNS payout methods and serves individual miners and professional mining farms alike.

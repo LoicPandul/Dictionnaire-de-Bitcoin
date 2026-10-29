@@ -1,0 +1,1 @@
+Proposal by Luke Dashjr that competed with BIP-0012 and BIP-0016. BIP-0017 introduced a new opcode, `OP_CHECKHASHVERIFY`, designed to verify a script present in the `scriptSig` against its hash present in the `scriptPubKey` before unlocking the funds. BIP-0016 (P2SH) was ultimately preferred to BIP-0017 (CHV) after a period of intense debate.

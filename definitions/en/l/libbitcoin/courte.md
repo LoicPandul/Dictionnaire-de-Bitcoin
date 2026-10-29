@@ -1,0 +1,1 @@
+Modular set of C++ libraries under the AGPL license for developing Bitcoin applications. Launched in 2011 by a team led by Amir Taaki, it became the second complete implementation of Bitcoin after Satoshi's client.

@@ -1,0 +1,1 @@
+American cryptographer, coinventor of public-key cryptography, whose 1979 thesis and patent describe the hash tree known as the Merkle tree. The Bitcoin white paper cites his 1980 paper as reference [7] for summarizing the transactions of a block.

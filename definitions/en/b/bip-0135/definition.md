@@ -1,0 +1,1 @@
+Proposal generalizing the version bits signaling mechanism defined in BIP-0009, with more flexibility in the activation parameters of soft forks. BIP-0135 made it possible to configure the activation thresholds, signaling periods, and expiration deadlines independently for each proposal. It was never deployed on Bitcoin.

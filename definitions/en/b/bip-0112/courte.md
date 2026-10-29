@@ -1,0 +1,1 @@
+Soft fork proposal that introduces the `OP_CHECKSEQUENCEVERIFY` opcode, so that a script allows spending only after a relative delay, in blocks or in time. It was activated in 2016 with BIP-0068 and BIP-0113.

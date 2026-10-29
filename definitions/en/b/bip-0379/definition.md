@@ -1,0 +1,3 @@
+Proposal that formalizes Miniscript, a structured representation of a subset of Bitcoin Script that allows analysis, composition, and generic signing of spending conditions. Miniscript maps Script opcodes to a system of composable types, where spending conditions can be combined using logical operators (AND, OR, thresholds) with correctness guarantees.
+
+This approach lets wallets automatically determine the signature requirements for a given output, estimate transaction fees precisely by computing the maximum witness size, and check that a spending policy can be satisfied. Miniscript was developed by Pieter Wuille, Andrew Poelstra, and Sanket Kanjalkar, then completed by Antoine Poinsot and Ava Chow, who are also the authors of the BIP.

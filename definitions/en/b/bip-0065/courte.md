@@ -1,0 +1,1 @@
+Soft fork proposal that introduces the `OP_CHECKLOCKTIMEVERIFY` opcode, which makes a UTXO unspendable until a given point in the future. Activated in December 2015, it also introduced version 4 of blocks.

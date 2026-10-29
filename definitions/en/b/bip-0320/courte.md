@@ -1,0 +1,1 @@
+Proposal that reserves certain bits of the block header's `nVersion` field for general use, outside the soft fork signaling of BIP-0009, so that miners can use Overt ASICBoost without disrupting that signaling.

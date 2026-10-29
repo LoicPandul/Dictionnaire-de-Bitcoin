@@ -1,0 +1,1 @@
+Proposal that defines wallet policies, a restricted descriptor format that separates the template from the list of keys, so that a hardware wallet displays the spending policy to check before signing.

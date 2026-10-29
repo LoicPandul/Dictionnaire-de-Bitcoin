@@ -1,0 +1,1 @@
+Lightning Labs daemon that bundles LND, Loop, Pool, Faraday, and Taproot Assets into a single process. It also provides the Lightning Terminal interface and remote access through Lightning Node Connect, with no VPN or port forwarding.

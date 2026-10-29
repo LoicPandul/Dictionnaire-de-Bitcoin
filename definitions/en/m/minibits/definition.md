@@ -1,0 +1,1 @@
+Mobile wallet dedicated to ecash, using the Cashu protocol. The digital tokens, backed by bitcoin, are issued by a mint, which the app funds and drains over the Lightning Network. The app can send and receive payments almost instantly with a high level of privacy, since ecash transactions are hard to trace.

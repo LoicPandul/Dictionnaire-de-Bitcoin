@@ -1,0 +1,1 @@
+Nonprofit organization founded in 2021, dedicated to funding free and open-source projects related to Bitcoin. Structured as a charity in the United States, OpenSats distributes grants to developers and projects that contribute to the Bitcoin ecosystem and its adjacent technologies.

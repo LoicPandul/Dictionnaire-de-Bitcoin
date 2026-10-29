@@ -1,0 +1,1 @@
+Proposal that defines codex32, a format inspired by bech32 for backing up the seed of an HD wallet and splitting it into shares with Shamir's Secret Sharing. A threshold of shares is enough to reconstruct it.

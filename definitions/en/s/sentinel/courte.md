@@ -1,0 +1,1 @@
+Android watch-only wallet app, from the Samourai Wallet team, that tracks the balances and transaction history of a Bitcoin wallet from its extended public keys, without ever handling the private keys.

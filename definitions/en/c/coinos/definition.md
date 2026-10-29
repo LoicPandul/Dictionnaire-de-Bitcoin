@@ -1,0 +1,1 @@
+Web application (PWA) for sending, receiving, and accepting bitcoin payments over on-chain, the Lightning Network, Liquid, and Ecash, directly from a browser. Coinos serves individuals and merchants, with point-of-sale features and Nostr integration. The platform is custodial.

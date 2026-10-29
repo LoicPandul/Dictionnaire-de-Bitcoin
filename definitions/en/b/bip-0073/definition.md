@@ -1,0 +1,1 @@
+Extension of the BIP-0070 payment protocol that uses the HTTP `Accept` header to negotiate the response format between the client and the merchant's server. BIP-0073 allowed the wallet to specify the content types it accepts. Deployed together with BIP-0070, it became obsolete when the payment protocol was abandoned across the board.

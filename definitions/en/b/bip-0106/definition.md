@@ -1,0 +1,1 @@
+Proposal for dynamic control of the maximum block size based on the fill history of previous blocks. BIP-0106 automatically adjusted the limit according to the actual demand for block space. Proposed during the Blocksize War, it was never adopted, as the community ultimately resolved the scalability problem by activating SegWit.

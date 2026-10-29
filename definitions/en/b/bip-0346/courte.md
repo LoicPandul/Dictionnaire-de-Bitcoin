@@ -1,0 +1,1 @@
+Proposal by Steven Roose and Brandon Black that adds the `OP_TXHASH` opcode to Tapscript, which pushes onto the stack the hash of chosen fields of the current transaction, to enable transaction introspection and covenants together with `OP_CHECKSIGFROMSTACK`.

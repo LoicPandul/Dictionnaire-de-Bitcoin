@@ -1,0 +1,3 @@
+Open-source interactive map listing businesses and services that accept bitcoin around the world. BTCMap relies on OpenStreetMap data and lets anyone report or update the points of sale that accept bitcoin payments, whether on-chain or over the Lightning Network.
+
+The tool is available through a website and lets users search for businesses by geographic location or by category (restaurants, hotels, shops). BTCMap helps raise the visibility of the merchants that accept bitcoin. Each point of sale can be verified by the community, and the information is timestamped to show when it was last verified.

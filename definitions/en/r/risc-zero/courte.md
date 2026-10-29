@@ -1,0 +1,1 @@
+Company and open-source framework that provides a RISC-V-based zkVM, able to cryptographically prove the correct execution of a program written in Rust, C, or C++. The Citrea rollup relies on it to prove the validity of its transaction batches.

@@ -1,0 +1,3 @@
+bLIP that defines NameDesc, a standardized format for structuring the descriptions of BOLT-11 invoices by including the recipient's name. The convention is to prefix the description with the name of the merchant or recipient, followed by a colon and two spaces (`:  `), then the description of the payment.
+
+Compatible wallets can thus extract and display the recipient's name separately. Wallets that are not compatible simply display the full text as a regular description, which guarantees full backward compatibility. This convention solves the problem of transaction histories where only a technical identifier or a product name appears, with no clear identification of the merchant.

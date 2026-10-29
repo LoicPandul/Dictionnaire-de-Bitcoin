@@ -1,0 +1,1 @@
+Informational proposal that describes transaction pinning attacks and defines TRUC transactions (`nVersion=3`), limited to one unconfirmed ancestor and one unconfirmed descendant, to make transaction replacement reliable, notably for Lightning.

@@ -1,0 +1,1 @@
+Proposal for hierarchical deterministic script templates extending BIP-0032. BIP-0124 aimed to standardize how HD wallets generate and manage different types of output scripts. Superseded by output script descriptors, which offer a more flexible and expressive approach to describing a wallet's output scripts.

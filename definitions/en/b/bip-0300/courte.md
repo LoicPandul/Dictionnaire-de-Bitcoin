@@ -1,0 +1,1 @@
+Proposal by Paul Sztorc and CryptAxe that defines Hashrate Escrows, the first building block of drivechains: sidechains whose withdrawals to Bitcoin are validated by a long miner vote rather than by a federation.

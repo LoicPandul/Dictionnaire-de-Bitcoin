@@ -1,0 +1,1 @@
+American company that develops StartOS, a free and open-source operating system for personal servers. It sells preconfigured servers for self-hosting applications such as Bitcoin Core or a Lightning node.

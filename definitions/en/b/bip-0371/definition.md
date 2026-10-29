@@ -1,0 +1,1 @@
+Proposal that adds Taproot-specific fields to the PSBT format (BIP-0174). These fields include the internal key, the Merkle path of the scripts, Schnorr signatures, and the Taproot leaf scripts. This extension is necessary for hardware wallets and multisig coordinators to correctly build, verify, and sign Taproot transactions through the PSBT format.

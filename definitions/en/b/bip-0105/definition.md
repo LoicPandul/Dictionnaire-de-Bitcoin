@@ -1,0 +1,1 @@
+Proposal for an algorithm to retarget the maximum block size based on miner consensus. BIP-0105 included a growth cap to prevent an excessive increase in block size. Proposed during the Blocksize War, it is one of the many attempts at dynamically adjusting the block size limit that were never deployed on Bitcoin.

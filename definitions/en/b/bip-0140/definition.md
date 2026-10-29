@@ -1,0 +1,1 @@
+Proposal for normalized txids that exclude signature data from the computation of the transaction identifier, in order to solve the malleability problem. BIP-0140 was an alternative to SegWit for obtaining stable transaction identifiers. It was closed because SegWit (BIP-0141) solved the malleability problem in a different way, while bringing other advantages.

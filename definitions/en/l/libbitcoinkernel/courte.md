@@ -1,0 +1,1 @@
+Bitcoin Core library that isolates its validation engine, so that other software can validate blocks and scripts with exactly Bitcoin Core's code. Its C interface, merged in November 2025, remains experimental.

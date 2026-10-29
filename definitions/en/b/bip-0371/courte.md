@@ -1,0 +1,1 @@
+Proposal that adds to the PSBT format the fields specific to Taproot (internal key, leaf scripts, Merkle paths, Schnorr signatures), so that hardware wallets and multisig coordinators can sign Taproot transactions.

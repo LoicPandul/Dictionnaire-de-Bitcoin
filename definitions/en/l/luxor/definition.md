@@ -1,0 +1,1 @@
+American company founded in 2017 by Nick Hansen, specializing in infrastructure services for Bitcoin mining. Luxor operates a mining pool, custom ASIC firmware (LuxOS), an analytics data platform (Hashrate Index), a hashrate derivatives desk, and a marketplace for ASIC machines. The company mainly targets professional and institutional miners in North America.

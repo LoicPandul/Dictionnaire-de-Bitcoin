@@ -1,0 +1,1 @@
+Proposal that defines the PSBT (Partially Signed Bitcoin Transaction) format, a standard for exchanging unfinalized transactions between wallets, hardware wallets, and multisig coordinators, separating creation, signing, and finalization.

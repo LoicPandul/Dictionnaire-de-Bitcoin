@@ -1,0 +1,3 @@
+Company specializing in bitcoin security and custody, founded in 2020 by Kevin Loaec and Antoine Poinsot and incorporated in the Azores (Portugal). Wizardsardine develops open-source Bitcoin wallet management solutions, with an emphasis on advanced security mechanisms such as vaults and configurable spending policies.
+
+The company is behind the Revault protocol, an institutional custody system that uses presigned transactions and watchtowers to secure organizations' funds. Wizardsardine also develops Liana, a Bitcoin wallet that uses Miniscript to offer recovery and inheritance setups based on timelocks.

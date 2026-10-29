@@ -1,0 +1,1 @@
+Proposal for a temporary soft fork, lasting about a year, that limits at the consensus level the size of arbitrary data inscribed in transactions, to curb the use of Bitcoin as a storage medium, notably by Ordinals inscriptions.

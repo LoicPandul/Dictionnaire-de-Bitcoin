@@ -1,0 +1,1 @@
+Smart card developed by Satochip for securely backing up mnemonic phrases and passwords. The secrets are stored in a secure element certified EAL6+ and protected by a PIN code. The SeedKeeper can hold at least 50 distinct secrets and can duplicate them onto a second card to create a backup.

@@ -1,0 +1,1 @@
+Proposal for rate limiting on Bitcoin's P2P network, where a node requires a requesting peer to solve a small proof-of-work challenge before answering it, against denial of service. It was never deployed.

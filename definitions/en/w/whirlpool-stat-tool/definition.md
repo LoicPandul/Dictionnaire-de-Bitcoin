@@ -1,0 +1,1 @@
+Command-line software developed by Samourai Wallet that provides the forward and backward anonsets of a coin mixed in Whirlpool, as well as its diffusion rate within the pool. WST uses the HyperLogLogPlusPlus algorithm, which estimates the number of distinct values in a very large data set.

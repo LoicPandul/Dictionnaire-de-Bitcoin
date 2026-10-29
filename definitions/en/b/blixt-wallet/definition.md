@@ -1,0 +1,1 @@
+Open-source, non-custodial Lightning wallet for Android and iOS. Blixt embeds an LND node directly on the user's phone, using Neutrino. The project is developed by Hampus Sjöberg and released under the MIT license.

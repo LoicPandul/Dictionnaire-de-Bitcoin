@@ -1,0 +1,1 @@
+Nickname given to the entrepreneur and investor Roger Ver, who promoted Bitcoin from the early 2010s. The nickname reflects his influential role in popularizing Bitcoin at its launch. He is also known for his support of the Bitcoin Cash (BCH) hard fork, which he considers more faithful to Bitcoin's original vision.

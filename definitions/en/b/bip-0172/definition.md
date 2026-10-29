@@ -1,0 +1,1 @@
+Proposal to officially define the satoshi (sat) as Bitcoin's standard subunit and to promote its use in user interfaces. BIP-0172 aims to clarify the denomination by establishing that 1 bitcoin = 100,000,000 satoshis, and recommends displaying amounts in satoshis for small values, to avoid the confusion caused by decimal numbers.

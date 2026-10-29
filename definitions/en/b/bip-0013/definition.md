@@ -1,0 +1,1 @@
+Standardized method for creating P2SH addresses. BIP-0013 specifies the P2SH address format, which starts with the prefix `3` and contains the hash of a script rather than the hash of a public key. This address type would long remain the preferred standard for multisig wallets.

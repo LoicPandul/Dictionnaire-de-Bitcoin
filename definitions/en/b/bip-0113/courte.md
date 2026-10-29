@@ -1,0 +1,1 @@
+Soft fork proposal that evaluates timelocks against the Median Time Past, the median of the timestamps of the last 11 blocks, instead of the current block's timestamp. Miners can thus manipulate the time reference less.

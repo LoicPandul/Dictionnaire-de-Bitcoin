@@ -1,0 +1,1 @@
+Bitcoin wallet founded in November 2011 by Thomas Voegtlin, which lets users manage their funds without downloading the entire blockchain, thanks to an SPV (Simplified Payment Verification) system. Because it has existed since the very beginning of the 2010s and has been involved in Bitcoin's development, Electrum holds a historic place among wallet software.

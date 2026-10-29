@@ -1,0 +1,1 @@
+Online forum dedicated to discussions about Bitcoin. Opened in November 2009 by Satoshi Nakamoto, the forum took over from the Bitcoin discussion space on sourceforge.net. It acquired its name when bitcoin.org migrated to bitcointalk.org in August 2011. BitcoinTalk serves as a platform for exchanging information and news, technical debates, and analysis.

@@ -1,0 +1,1 @@
+Collaborative transaction proposal, known as Bustapay or pay-to-endpoint, where the receiver adds one of its inputs to the payer's transaction to break the common-input-ownership heuristic. Payjoin (BIP-0078) replaced it.

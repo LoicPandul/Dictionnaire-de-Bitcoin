@@ -1,0 +1,1 @@
+Proposal for an optimized variant of Merkle trees for Bitcoin, offering faster and more compact inclusion proofs. BIP-0098 was initially designed as part of the first Merkelized Abstract Syntax Trees (MAST) proposals, which aimed to allow conditional execution of script branches. This preparatory work influenced later developments that led to Taproot (BIP-0341).

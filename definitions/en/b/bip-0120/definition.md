@@ -1,0 +1,1 @@
+Proposal for a "proof of payment" standard that makes it possible to prove that a Bitcoin transaction was indeed sent, by signing the inputs of the original transaction with the same keys. BIP-0120 aimed to provide a verifiable cryptographic proof that the payer controlled the funds used in a specific transaction. It was never widely adopted.

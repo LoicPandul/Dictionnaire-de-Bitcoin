@@ -1,0 +1,1 @@
+Proposes adding a service bit named `NODE_BLOOM` to let nodes explicitly signal their support for Bloom filters as described in BIP-0037. Introducing `NODE_BLOOM` lets node operators disable this service in order to reduce DoS risks. The BIP-0037 option is disabled by default in Bitcoin Core. To enable it, the parameter `peerbloomfilters=1` must be set in the configuration file.

@@ -1,0 +1,1 @@
+Proposal that added the `OP_CHECKHASHVERIFY` opcode, which verifies a script in the `scriptSig` against its hash placed in the `scriptPubKey`. A competitor of BIP-0016, it was set aside in favor of P2SH.

@@ -1,0 +1,1 @@
+Informational BIP reporting a bug related to the switch from BerkeleyDB to LevelDB that caused a split of the Bitcoin blockchain, followed by a major 24-block reorganization on March 12, 2013. This BIP details the incident and the corrective actions that were implemented.

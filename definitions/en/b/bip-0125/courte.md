@@ -1,0 +1,1 @@
+Proposal that defines Replace-by-Fee (RBF) through signaling: the sender marks their transaction as replaceable, then can replace it, as long as it is unconfirmed, with a version that pays higher fees. Since Bitcoin Core 28.0, nodes replace by default even without signaling.

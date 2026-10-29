@@ -1,0 +1,1 @@
+Open-source DIY hardware wallet built around a Raspberry Pi Zero, which signs Bitcoin transactions in an air-gapped way, through QR codes. It keeps no data between two uses: the mnemonic phrase is loaded at each session.

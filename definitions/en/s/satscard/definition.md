@@ -1,0 +1,1 @@
+NFC bearer card made by Coinkite. The Satscard allows bitcoin to be physically handed from person to person with no on-chain transaction at the time of the exchange. It holds 10 independent slots, each tied to a private key and a unique address: bitcoin is loaded onto a slot, then "unsealed" by the recipient using a PIN code and a compatible app such as Nunchuk.

@@ -1,0 +1,1 @@
+Finnish programmer, collaborator of Satoshi Nakamoto from 2009. He set up the project's site and forum, and on October 12, 2009, sold 5,050 bitcoin for 5.02 dollars, the first known trade for dollars.

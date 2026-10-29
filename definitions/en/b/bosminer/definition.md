@@ -1,0 +1,1 @@
+Open-source mining software developed in Rust by Braiins as a more modern alternative to CGMiner. BOSminer is designed specifically for ASICs. Integrated into the Braiins OS ecosystem, it provides advanced ASIC management, with features such as overclocking, detailed performance monitoring, and Stratum V2 support.

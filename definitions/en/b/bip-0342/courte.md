@@ -1,0 +1,1 @@
+Proposal that defines Tapscript, the scripting language of Taproot script path spends, with Schnorr signatures, the new `OP_CHECKSIGADD` opcode, and `OP_SUCCESS` opcodes reserved for future extensions.

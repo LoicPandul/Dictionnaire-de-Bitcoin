@@ -1,0 +1,1 @@
+Free and open-source desktop Bitcoin wallet (MIT license), focused on privacy and written in C#. It integrates coinjoin: version 2.0, released in June 2022, uses the WabiSabi protocol. The company zkSNACKs, which develops the software, announced on May 2, 2024 that it would shut down its coinjoin coordinator on June 1, 2024.

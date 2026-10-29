@@ -1,0 +1,1 @@
+Minimalist Linux environment designed for using JoinMarket. JoininBox has a terminal-based menu and provides all of JoinMarket's basic commands. It makes it possible to run the JoinMarket coinjoin implementation on a machine dedicated to that task, such as a Raspberry Pi.

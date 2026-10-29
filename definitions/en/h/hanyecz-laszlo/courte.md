@@ -1,0 +1,1 @@
+Developer from the early Bitcoin community. On May 22, 2010, he paid 10,000 bitcoin for two pizzas, the first documented purchase of a good, and the same year he was a pioneer of graphics card mining.

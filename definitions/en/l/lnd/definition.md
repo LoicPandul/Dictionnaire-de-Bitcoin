@@ -1,0 +1,1 @@
+Acronym for *Lightning Network Daemon*. Major implementation of the Lightning Network protocol, written in Go. Developed by Lightning Labs, LND handles the creation and management of payment channels and nodes on the Lightning Network.

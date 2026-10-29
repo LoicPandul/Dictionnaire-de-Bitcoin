@@ -1,0 +1,1 @@
+Canadian company founded in 2012 that makes security hardware for Bitcoin. It is best known for the Coldcard, a hardware wallet devoted exclusively to Bitcoin, and also makes the Blockclock, the SatsCard, and the TapSigner.
