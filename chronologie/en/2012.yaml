@@ -1,0 +1,19 @@
+# Bitcoin timeline: 2012.
+# Translation of chronologie/fr/2012.yaml: dates, related entries and sources live there.
+
+events:
+  - date: "2012-03-15"
+    title: "BIP-0030 activated"
+    text: "Nodes now reject blocks timestamped after March 15, 2012 at 00:00 UTC that contain a transaction with the same ID as an earlier transaction that is not fully spent. Pieter Wuille had chosen this date with the main mining pools."
+    source_hash: "116c60b992e3f0c5"
+    translation_hash: "455a586379574137"
+  - date: "2012-04-01"
+    title: "P2SH activated"
+    text: "Nodes enforce the rules of BIP-0016 on blocks timestamped from April 1, 2012. On March 16, Gavin Andresen had confirmed this date, with about 70% of the hashrate signaling its support. Pay to Script Hash (P2SH) simplifies sending to complex scripts such as multisig."
+    source_hash: "6d716f601a76ef7b"
+    translation_hash: "54fdef0f700684e6"
+  - date: "2012-11-28"
+    title: "First halving"
+    text: "Block 210,000, mined at 15:24 UTC, opens the second epoch of issuance: the block reward goes from 50 to 25 BTC."
+    source_hash: "0dc225440abeed76"
+    translation_hash: "61fa026ffa4c9cc5"

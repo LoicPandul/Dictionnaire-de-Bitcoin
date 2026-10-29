@@ -1,0 +1,19 @@
+# Bitcoin timeline: 2019.
+# Translation of chronologie/fr/2019.yaml: dates, related entries and sources live there.
+
+events:
+  - date: "2019-03-06"
+    title: "Great Consensus Cleanup proposed"
+    text: "Matt Corallo proposes a soft fork on bitcoin-dev to clean up the consensus rules. It fixes the time warp attack, reduces the worst-case validation cost of scripts, and closes a known attack against light clients. The proposal does not move forward in 2019."
+    source_hash: "0545c5333e712b3a"
+    translation_hash: "750b13b5247876e5"
+  - date: "2019-05-06"
+    title: "Pieter Wuille proposes Taproot"
+    text: "Pieter Wuille publishes on bitcoin-dev the bip-taproot and bip-tapscript proposals, which build on bip-schnorr. A Taproot output is spent with a single Schnorr signature or through a script branch hidden in a Merkle tree. These texts will become BIP-0340, BIP-0341, and BIP-0342."
+    source_hash: "4ad6d25ffe7c1a1f"
+    translation_hash: "f5a0d47168cf70dd"
+  - date: "2019-05-10"
+    title: "SIGHASH_ANYPREVOUT proposed"
+    text: "Anthony Towns proposes two new signature types for Tapscript, `SIGHASH_ANYPREVOUT` and `SIGHASH_ANYPREVOUTANYSCRIPT`, which do not commit to the UTXO being spent. Successors to `SIGHASH_NOINPUT` (BIP-0118), they mainly serve to make eltoo possible for Lightning."
+    source_hash: "b697e9e2bd1ed01f"
+    translation_hash: "b064008c8197610a"

@@ -1,0 +1,110 @@
+# English labels of the book. Ids stay those of templates/parts.yaml and templates/editions.yaml;
+# everything not listed here falls back to the French.
+
+parts:
+  technique:
+    title: "Technical dictionary"
+    intro: >
+      The terms of Bitcoin and of the protocols built on it, in alphabetical order. Each
+      entry shows its category, recognizable by its pictogram.
+  ecosysteme:
+    title: "Companies, applications, and software"
+    intro: >
+      The companies, associations, software, wallets, hardware, and services that make up
+      the Bitcoin ecosystem, in alphabetical order. The mechanisms they implement are
+      defined in the technical dictionary.
+  personnes:
+    title: "People"
+    intro: >
+      The historical figures of Bitcoin and of the cypherpunk movement, along with the main
+      personalities of the ecosystem, in alphabetical order. Each entry begins with the
+      person's role, then ties it to Bitcoin.
+  specifications:
+    title: "Specifications"
+
+categories:
+  PROTOCOLE: "Protocol"
+  TRANSACTIONS: "Transactions"
+  MEMPOOL ET FRAIS: "Mempool and fees"
+  ÉVOLUTION DU PROTOCOLE: "Protocol upgrades"
+  FONCTIONNEMENT DU NŒUD: "Node operation"
+  RÉSEAU: "Network"
+  SCRIPT: "Script"
+  OPCODES: "Opcodes"
+  COVENANTS: "Covenants"
+  CLÉS ET DÉRIVATION: "Keys and derivation"
+  PORTEFEUILLE: "Wallet"
+  MINAGE: "Mining"
+  POOLS DE MINAGE: "Mining pools"
+  CRYPTOGRAPHIE: "Cryptography"
+  INFORMATIQUE: "Computing"
+  INFORMATIQUE QUANTIQUE: "Quantum computing"
+  CONFIDENTIALITÉ: "Privacy"
+  ANALYSE DE CHAÎNE: "Chain analysis"
+  ATTAQUE: "Attack"
+  ÉCONOMIE ET RÉGULATION: "Economics and regulation"
+  ALTCOINS ET FORKS: "Altcoins and forks"
+  HISTOIRE ET CULTURE: "History and culture"
+  LIGHTNING NETWORK: "Lightning Network"
+  PAIEMENTS LIGHTNING: "Lightning payments"
+  ARK: "Ark"
+  SPARK ET STATECHAINS: "Spark and statechains"
+  SIDECHAIN: "Sidechain"
+  RGB: "RGB"
+  ACTIFS SUR BITCOIN: "Assets on Bitcoin"
+  ROLLUPS ET BITVM: "Rollups and BitVM"
+  NOSTR: "Nostr"
+  ECASH: "Ecash"
+  COUCHE SUPÉRIEURE: "Upper layers"
+  PORTEFEUILLE LOGICIEL: "Software wallet"
+  PORTEFEUILLE MATÉRIEL: "Hardware wallet"
+  IMPLÉMENTATION: "Implementation"
+  LOGICIEL LIGHTNING: "Lightning software"
+  OUTIL DE DÉVELOPPEMENT: "Development tool"
+  NŒUD ET EXPLORATEUR: "Node and explorer"
+  OUTIL DE CONFIDENTIALITÉ: "Privacy tool"
+  ACTEURS DU MINAGE: "Mining industry"
+  PLATEFORME D'ÉCHANGE: "Exchange"
+  SERVICE ET PAIEMENT: "Service and payment"
+  APPLICATION NOSTR: "Nostr app"
+  ENTREPRISE: "Company"
+  COMMUNAUTÉ ET FONDATION: "Community and foundation"
+  CYPHERPUNK: "Cypherpunk"
+  CRYPTOGRAPHE ET INFORMATICIEN: "Cryptographer and computer scientist"
+  ÉCONOMISTE: "Economist"
+  DÉVELOPPEUR BITCOIN: "Bitcoin developer"
+  DÉVELOPPEUR DE SURCOUCHES: "Layer 2 developer"
+  FIGURE DE L'ÉCOSYSTÈME: "Ecosystem figure"
+  BIP: "BIP"
+  BOLT: "BOLT"
+  BLIP: "bLIP"
+
+editions:
+  complete:
+    title: "Bitcoin Dictionary"
+    subtitle: "The complete technical vocabulary of Bitcoin"
+    file: "bitcoin-dictionary"
+    sections:
+      chronologie:
+        title: "Timeline"
+        intro: >
+          The major events of Bitcoin, of the cypherpunk movement, and of the cryptography
+          that matters to Bitcoin, in the order in which they happened. Each date is
+          cross-checked against at least 2 sources.
+      bip:
+        title: "BIP"
+        intro: >
+          BIPs (Bitcoin Improvement Proposals) are the documents that propose and describe
+          changes to Bitcoin. Each entry gives its number, its original title, its status,
+          and a summary, followed by the full definition when there is one.
+      bolt:
+        title: "BOLT and bLIP"
+        intro: >
+          BOLTs (Basis of Lightning Technology) make up the specification of the Lightning
+          Network, and bLIPs (Bitcoin Lightning Improvement Proposals) describe the optional
+          features proposed on top of it. Each entry gives its status and a summary,
+          followed by the full definition when there is one.
+  essentiel:
+    title: "Bitcoin Dictionary"
+    subtitle: "The essentials in short definitions"
+    file: "bitcoin-dictionary-essentials"

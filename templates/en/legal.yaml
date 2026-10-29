@@ -1,0 +1,9 @@
+# Legal information of the English edition. Fields not listed here come from
+# templates/fr/legal.yaml (author, license, links, contact).
+
+title: "Bitcoin Dictionary"
+subtitle: "The complete technical vocabulary of Bitcoin"
+
+# ISBN: the English books need their own (KDP gives one per book and per language).
+isbn_paperback: ""
+isbn_hardcover: ""

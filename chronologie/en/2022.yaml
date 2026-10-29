@@ -1,0 +1,24 @@
+# Bitcoin timeline: 2022.
+# Translation of chronologie/fr/2022.yaml: dates, related entries and sources live there.
+
+events:
+  - date: "2022-03-09"
+    title: "Joe Biden's executive order on digital assets"
+    text: "Joe Biden signs Executive Order 14067, \"Ensuring Responsible Development of Digital Assets\". It asks federal agencies to assess the risks of cryptocurrencies and how to regulate them, as well as the merits of a US central bank digital currency."
+    source_hash: "04bbfae83f11c8c6"
+    translation_hash: "d8c0573ba36f4719"
+  - date: "2022-03-28"
+    title: "Ruben Somsen proposes Silent Payments"
+    text: "Ruben Somsen publishes the Silent Payments scheme on the bitcoin-dev list: the recipient publishes a single static address, and each payer derives from it a different address that an observer cannot link to it, with no extra on-chain cost."
+    source_hash: "097cd012b6997f09"
+    translation_hash: "bd3985aa3f9075b4"
+  - date: "2022-04-27"
+    title: "Central African Republic adopts bitcoin as legal tender"
+    text: "The Central African presidency announces that Faustin-Archange Touadéra has signed into law a bill, passed unanimously by the National Assembly, that makes bitcoin legal tender alongside the CFA franc. The Central African Republic becomes the second country to do so, after El Salvador."
+    source_hash: "30ef0d0cef78243c"
+    translation_hash: "8c1f4301623a4eed"
+  - date: "2022-11-11"
+    title: "FTX files for bankruptcy"
+    text: "FTX, Alameda Research, FTX US, and their many subsidiaries file for protection under chapter 11 of US bankruptcy law. Sam Bankman-Fried resigns as chief executive."
+    source_hash: "8ec078844ef379d5"
+    translation_hash: "f7744c2b8479bec7"
