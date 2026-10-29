@@ -120,9 +120,9 @@ Il n'y a pas de limite de taille pour les définitions. Je préfère avoir une d
 
 ## Version anglaise
 
-La traduction anglaise du dictionnaire technique est en cours dans [definitions/en/](./definitions/en/). Chaque entrée anglaise garde l'empreinte de la version française qu'elle traduit, et `python3 scripts/main.py sync` signale les traductions manquantes, en retard ou à reporter en français. Si vous modifiez une définition qui existe dans les deux langues, suivez la règle de [CONTRIBUTING.md](./CONTRIBUTING.md) ; le détail est dans [docs/traduction.md](./docs/traduction.md).
+Le livre existe aussi en anglais, sous le titre *Bitcoin Dictionary* : définitions dans [definitions/en/](./definitions/en/), chronologie dans `chronologie/en/`, résumés des spécifications dans `specifications/en/`, textes du livre dans `templates/en/`. `python3 scripts/main.py build --lang en` le génère dans `build/en/`. Chaque texte anglais garde l'empreinte de la version française qu'il traduit, et `python3 scripts/main.py sync` signale les traductions manquantes, en retard ou à reporter en français. Si vous modifiez une définition qui existe dans les deux langues, suivez la règle de [CONTRIBUTING.md](./CONTRIBUTING.md) ; le détail est dans [docs/traduction.md](./docs/traduction.md).
 
-*The English translation of the technical dictionary is in progress in [definitions/en/](./definitions/en/). See [CONTRIBUTING.md](./CONTRIBUTING.md#contributing-to-the-bitcoin-dictionary) to keep French and English in sync.*
+*The whole dictionary is translated into English as the* Bitcoin Dictionary *([definitions/en/](./definitions/en/), `chronologie/en/`, `specifications/en/`); build it with `python3 scripts/main.py build --lang en`. See [CONTRIBUTING.md](./CONTRIBUTING.md#contributing-to-the-bitcoin-dictionary) to keep French and English in sync.*
 
 ## Structure du dépôt
 
@@ -144,20 +144,29 @@ Dictionnaire-de-Bitcoin/
 │           ├── definition.md
 │           └── courte.md
 │
-├── chronologie/fr/                 # Chronologie, un fichier par année (en/ plus tard)
-├── specifications/fr/              # BIP, BOLT et bLIP : numéro, titre, statut, résumé
+├── chronologie/
+│   ├── fr/                         # Chronologie, un fichier par année
+│   └── en/                         # Titres et textes traduits (dates, renvois, sources : fr/)
+├── specifications/
+│   ├── fr/                         # BIP, BOLT et bLIP : numéro, titre, statut, résumé
+│   └── en/                         # Résumés traduits
 │
 ├── templates/                      # Configuration du livre, commune aux langues
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
 │   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
 │   ├── languages.yaml              # Langues et périmètre de chaque traduction
-│   └── fr/                         # Textes du livre en français
-│       ├── introduction.md         # Note de l'auteur
-│       ├── contributors.md         # Contributeurs et remerciements
-│       ├── legal.yaml              # Mentions légales
-│       ├── excluded_words.yaml     # Mots exclus des statistiques
-│       └── pending_terms.yaml      # Termes en attente de définition
+│   ├── fr/                         # Textes du livre en français
+│   │   ├── introduction.md         # Note de l'auteur
+│   │   ├── contributors.md         # Contributeurs et remerciements
+│   │   ├── legal.yaml              # Mentions légales
+│   │   ├── excluded_words.yaml     # Mots exclus des statistiques
+│   │   └── pending_terms.yaml      # Termes en attente de définition
+│   └── en/                         # Textes du livre anglais
+│       ├── book.yaml               # Titres des parties et des éditions, noms des catégories
+│       ├── introduction.md
+│       ├── contributors.md
+│       └── legal.yaml              # Ce qui diffère du français (ISBN)
 │
 ├── assets/
 │   ├── images/                     # Images du README

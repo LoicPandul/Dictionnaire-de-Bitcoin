@@ -51,20 +51,29 @@ Dictionnaire-de-Bitcoin/
 │           ├── definition.md
 │           └── courte.md
 │
-├── chronologie/fr/                 # Chronologie, un fichier par année (en/ plus tard)
-├── specifications/fr/              # BIP, BOLT et bLIP : numéro, titre, statut, résumé
+├── chronologie/
+│   ├── fr/                         # Chronologie, un fichier par année
+│   └── en/                         # Titres et textes traduits (dates, renvois, sources : fr/)
+├── specifications/
+│   ├── fr/                         # BIP, BOLT et bLIP : numéro, titre, statut, résumé
+│   └── en/                         # Résumés traduits
 │
 ├── templates/                      # Configuration du livre, commune aux langues
 │   ├── categories.yaml             # Catégories et leur description
 │   ├── parts.yaml                  # Parties du livre et catégories de chaque partie
 │   ├── editions.yaml               # Éditions générées (complète en couleur, essentiel en poche)
 │   ├── languages.yaml              # Langues et périmètre de chaque traduction
-│   └── fr/                         # Textes du livre en français
-│       ├── introduction.md         # Note de l'auteur
-│       ├── contributors.md         # Contributeurs et remerciements
-│       ├── legal.yaml              # Mentions légales
-│       ├── excluded_words.yaml     # Mots exclus des statistiques
-│       └── pending_terms.yaml      # Termes en attente de définition
+│   ├── fr/                         # Textes du livre en français
+│   │   ├── introduction.md         # Note de l'auteur
+│   │   ├── contributors.md         # Contributeurs et remerciements
+│   │   ├── legal.yaml              # Mentions légales
+│   │   ├── excluded_words.yaml     # Mots exclus des statistiques
+│   │   └── pending_terms.yaml      # Termes en attente de définition
+│   └── en/                         # Textes du livre anglais
+│       ├── book.yaml               # Titres des parties et des éditions, noms des catégories
+│       ├── introduction.md
+│       ├── contributors.md
+│       └── legal.yaml              # Ce qui diffère du français (ISBN)
 │
 ├── assets/
 │   ├── images/                     # Images du README
@@ -105,7 +114,7 @@ Dictionnaire-de-Bitcoin/
 | `assets/` | images du README, pictogrammes, polices, couverture du broché | Tous les fichiers binaires communs au même endroit ; `fonts/` à la racine n'en était qu'un cas particulier. |
 | `docs/` | documentation des contributeurs, dossiers de travail des éditions | La racine reste lisible ; un nouveau contributeur trouve toute la documentation au même endroit. `docs/edition-2027/` garde la mémoire du chantier 2027 sans encombrer la racine. |
 | `scripts/` | outillage Python | Inchangé. `scripts/migrations/` reçoit les scripts de rangement à usage unique, gardés pour mémoire. |
-| `build/` | PDF, EPUB et sources LaTeX générés | Ignoré par git. Le livre anglais sortira dans `build/en/<édition>/` quand le générateur saura le construire. |
+| `build/` | PDF, EPUB et sources LaTeX générés | Ignoré par git. Le livre anglais sort dans `build/en/<édition>/` (`build --lang en`). |
 | racine | README, PDF, `INDEX.md`, `stats.md`, licences, `CONTRIBUTING.md` | Ce qu'un lecteur ou un contributeur ouvre en premier. GitHub affiche `CONTRIBUTING.md` à l'ouverture d'une pull request. |
 
 ## Ce qui change
@@ -139,27 +148,32 @@ document et lance `python3 scripts/main.py check`. Relancé, il ne change rien.
 Hors du dépôt, deux outils citent encore les anciens chemins et sont à mettre à jour :
 le skill `dictionnaire-definition` (`templates/pending_terms.yaml`, dans `scripts/doublons.py`)
 et le skill `dictionnaire-redaction` (mentions de `STYLE_GUIDE.md` et de `specifications/`).
-Le site (`site/`, branche `feat/site-dictionnaire`) a été écrit avant la migration. À sa
-prochaine fusion, trois chemins sont à suivre :
+Le site (`site/`, branche `feat/site-dictionnaire`) a été écrit avant la migration et avant la
+traduction de la chronologie et des résumés. À sa prochaine fusion, il doit suivre :
 
 - `site/lib/edition.mjs` : les séries de spécifications se lisent dans `specifications/fr/`
   (et `specifications/<langue>/` pour une traduction), plus dans `specifications/` ;
 - `site/build.mjs` : `edition-2027/reclassement.tsv` devient `docs/edition-2027/reclassement.tsv` ;
 - `site/README.md` : les polices viennent de `assets/fonts/`.
+- résumés anglais : le site attendait un champ `summary_en` dans le fichier français ; ils sont
+  dans `specifications/en/<série>.yaml` (`id`, `summary`), à joindre par l'identifiant ;
+- chronologie anglaise : `chronologie/en/<année>.yaml` ne porte que `date`, `title` et `text`, à
+  joindre à l'événement français de même date et de même rang dans le fichier
+  (`scripts/core/yaml_sync.py`) ; `related` et `sources` restent dans `chronologie/fr/` ;
+- slugs anglais : `definitions/en/` est rangé par slug anglais (`bearer-asset`, pas
+  `actif-au-porteur`) ; le dossier se retrouve par l'`uuid` ou par `source_slug`.
 
 Le reste de ce qu'il lit ne bouge pas (`definitions/`, `chronologie/fr/`, `templates/*.yaml`,
 `assets/pictograms/`).
 
 ## Plus tard
 
-Ces étapes viendront avec le livre anglais, pas avant :
+`templates/en/`, `specifications/en/` et `chronologie/en/` existent depuis le 29 octobre 2026,
+avec `python3 scripts/main.py build --lang en` (sorties dans `build/en/<édition>/`). Restent :
 
-- `templates/en/` : note de l'auteur, mentions légales et remerciements en anglais, et les noms
-  affichés des parties et des catégories (`parts.yaml` garde les identifiants communs).
-- `specifications/en/`, `chronologie/en/` : résumés et événements traduits, suivis par le même
-  mécanisme que les définitions.
 - `README.en.md` et un index anglais, générés comme `INDEX.md`.
 - Schémas en anglais : les traductions réutilisent aujourd'hui les images françaises
   (`../../../fr/<lettre>/<slug>/assets/…`) ; un schéma redessiné en anglais ira dans le dossier
   `assets/` de l'entrée anglaise.
-- `python3 scripts/main.py build --lang en` et les sorties dans `build/<langue>/<édition>/`.
+- Une entrée anglaise qui aurait ses propres images : le générateur lit aujourd'hui les images de
+  l'entrée française (`Dictionary.load_translation`).

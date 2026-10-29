@@ -15,7 +15,7 @@ python3 scripts/main.py check
 ## Garder le français et l'anglais synchronisés
 
 Le dictionnaire existe en français (`definitions/fr/`, langue d'origine) et en anglais
-(`definitions/en/`, le dictionnaire technique pour l'instant). Chaque fichier anglais garde
+(`definitions/en/`, `chronologie/en/`, `specifications/en/`). Chaque texte anglais garde
 l'empreinte de la version française qu'il traduit ; `python3 scripts/main.py sync` liste les
 traductions manquantes, en retard ou à reporter. Le détail est dans
 [docs/traduction.md](./docs/traduction.md).
@@ -36,8 +36,8 @@ traductions manquantes, en retard ou à reporter. Le détail est dans
 # Contributing to the *Bitcoin Dictionary*
 
 Contributions of every kind are welcome: a new term, a fix to a definition, a typo, a
-translation. The dictionary is written in French first; the English version currently covers
-the technical dictionary (`definitions/en/`).
+translation. The dictionary is written in French first; the English version translates the
+whole book (`definitions/en/`, `chronologie/en/`, `specifications/en/`).
 
 Run this before opening a pull request:
 

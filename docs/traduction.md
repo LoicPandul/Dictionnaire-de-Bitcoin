@@ -1,7 +1,8 @@
 # Traduction et synchro français / anglais
 
-Le dictionnaire est écrit en français ; la version anglaise traduit d'abord le dictionnaire
-technique (périmètre fixé dans `templates/languages.yaml`). Ce document explique comment une
+Le dictionnaire est écrit en français ; la version anglaise traduit tout le livre : les
+définitions des quatre parties, les résumés des spécifications et la chronologie (périmètre fixé
+dans `templates/languages.yaml`). Ce document explique comment une
 traduction garde la trace de sa source, comment le script repère ce qui est à refaire, et ce
 que fait un contributeur qui modifie l'une ou l'autre langue. La règle courte est aussi dans
 [CONTRIBUTING.md](../CONTRIBUTING.md).
@@ -30,6 +31,34 @@ Tout ce qui ne se traduit pas reste dans la version d'origine : catégorie, renv
 déclarées. Une traduction n'a donc rien à mettre à jour quand on change une catégorie ou un
 renvoi en français.
 
+### Chronologie et résumés des spécifications
+
+La chronologie (`chronologie/<langue>/<année>.yaml`) et les résumés des BIP, BOLT et bLIP
+(`specifications/<langue>/<série>.yaml`) se traduisent élément par élément. Le fichier traduit ne
+garde que le texte traduit ; dates, statuts, auteurs, renvois et sources restent dans le fichier
+français. Chaque élément porte ses deux empreintes :
+
+```yaml
+# chronologie/en/2009.yaml
+events:
+  - date: "2009-01-03"                 # retrouve l'événement français du même jour
+    title: "Genesis block mined"
+    text: "Block 0 of Bitcoin is timestamped 18:15:05 UTC. …"
+    source_hash: "9e246cbe1208d07d"     # empreinte du titre et du texte français
+    translation_hash: "4e56977270504ed5"
+
+# specifications/en/bolt.yaml
+entries:
+  - id: "BOLT-00"                       # retrouve le document français de même identifiant
+    summary: "Entry document of the BOLT specifications. …"
+    source_hash: "5d7cad98a596124f"
+    translation_hash: "9573cd541faf17be"
+```
+
+Un événement se reconnaît à sa date dans son fichier ; deux événements du même jour se
+distinguent par leur ordre (`2009-01-03`, puis `2009-01-03#2`). Le statut se calcule comme pour
+une définition.
+
 ## Les statuts
 
 `python3 scripts/main.py sync` compare chaque paire et lui donne un statut :
@@ -45,6 +74,7 @@ renvoi en français.
 | absente de la langue d'origine | entrée écrite d'abord en anglais | la traduire en français |
 | orpheline | l'entrée source a été supprimée | supprimer ou rattacher la traduction |
 | exclue | l'entrée n'a pas de sens dans la langue cible (`exclude` dans `templates/languages.yaml`) | rien |
+| en attente | la traduction attend une décision (`pending` dans `templates/languages.yaml`, par slug ou par catégorie) | rien, jusqu'à la décision |
 
 Les statuts se lisent dans les deux sens : « en retard » signale une traduction anglaise à
 mettre à jour, « à reporter » une modification anglaise que le français n'a pas encore.
@@ -59,10 +89,23 @@ python3 scripts/main.py sync --list "en retard"   # un seul statut
 python3 scripts/main.py sync --diff coinjoin      # ce qui a changé des deux côtés depuis la synchro
 python3 scripts/main.py sync --new adresse-de-reception --title "RECEIVING ADDRESS"
 python3 scripts/main.py sync --mark coinjoin      # enregistrer que la paire est à jour
+python3 scripts/main.py sync --mark BIP-0032 2009-01-03   # un résumé, un événement de la chronologie
 python3 scripts/main.py sync --strict             # échoue s'il reste du travail dans le périmètre
 ```
 
-`--mark`, `--diff` et `--new` acceptent le slug français, le slug anglais ou l'UUID.
+`--mark`, `--diff` et `--new` acceptent le slug français, le slug anglais ou l'UUID ; `--mark`
+accepte aussi l'identifiant d'un résumé (`BIP-0032`) ou la date d'un événement (`2009-01-03`).
+
+Le livre anglais se génère comme le français, dans `build/en/<édition>/` :
+
+```bash
+python3 scripts/main.py build --lang en                       # complet et poche, PDF et EPUB
+python3 scripts/main.py build --lang en --edition essentiel --format epub
+```
+
+Il ne contient que les entrées traduites. Titres et introductions des parties, noms des
+catégories et titres des éditions viennent de `templates/en/book.yaml` ; note de l'auteur,
+remerciements et mentions légales de `templates/en/`.
 
 `python3 scripts/main.py check` valide aussi la structure des traductions (métadonnées, version
 courte, markdown, images) et affiche une ligne d'état. Une traduction en retard ou manquante ne
@@ -90,6 +133,11 @@ fait pas échouer `check` : le français doit pouvoir avancer sans attendre l'an
    la décrit. Si elle ne touche qu'à l'anglais (tournure, coquille), le français n'a rien à
    changer.
 3. `sync --mark <slug>` une fois les deux versions d'accord.
+
+**Je modifie la chronologie ou un résumé de spécification.** Même règle que pour une définition :
+je reporte la modification dans `chronologie/en/` ou `specifications/en/` (même date, même
+identifiant), puis `sync --mark <date ou identifiant>`. Un nouvel événement ou un nouveau document
+s'ajoute aussi dans le fichier anglais, à la même place.
 
 **J'ajoute une entrée.** Je la crée en français (voir le README) ; la traduction viendra
 ensuite et `sync` la compte comme manquante. Une entrée peut aussi naître en anglais : son

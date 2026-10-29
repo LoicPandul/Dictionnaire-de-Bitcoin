@@ -40,6 +40,7 @@ python3 scripts/main.py check                     # tout valider, sans rien modi
 python3 scripts/main.py fix                       # corrections automatiques (listes, renvois invalides)
 python3 scripts/main.py build                     # toutes les éditions, tous les formats
 python3 scripts/main.py build --edition complete --format pdf,epub
+python3 scripts/main.py build --lang en             # livres anglais, dans build/en/<édition>/
 python3 scripts/main.py index                     # INDEX.md
 python3 scripts/main.py stats                     # stats.md et badge du README
 python3 scripts/main.py sync                      # état de la traduction anglaise (voir docs/traduction.md)
@@ -51,7 +52,9 @@ Sans argument, `python3 scripts/main.py` ouvre un menu.
 
 `build` lance d'abord `check` et s'arrête en cas d'erreur (`--force` pour passer outre). Les
 fichiers sortent dans `build/<édition>/` (ignoré par git), avec les sources LaTeX dans
-`build/<édition>/tex/` et le rapport d'epubcheck à côté de chaque EPUB.
+`build/<édition>/tex/` et le rapport d'epubcheck à côté de chaque EPUB. Le livre anglais (`--lang en`, ou `all`
+pour les deux langues) sort dans `build/en/<édition>/` : mêmes éditions, entrées traduites
+seulement, textes de `templates/en/`.
 
 ## Ce que vérifie `check`
 
