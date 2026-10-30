@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 896px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -77,8 +79,8 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="32" y="256" width="88" height="88"/>
     <rect class="structure" x="152" y="256" width="88" height="88"/>
     <path class="lien" style="marker-end:none" d="M120 300 H152"/>
-    <path class="lien" style="marker-end:none" d="M240 300 H276 V228 H312"/>
-    <path class="lien" style="marker-end:none" d="M276 300 V372 H312"/>
+    <path class="lien" style="marker-end:none" d="M240 300 L312 228"/>
+    <path class="lien" style="marker-end:none" d="M240 300 L312 372"/>
     <rect class="structure" x="312" y="184" width="88" height="88"/>
     <rect class="structure" x="432" y="184" width="88" height="88"/>
     <rect class="structure" x="552" y="184" width="88" height="88"/>
@@ -106,7 +108,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="152" y="776" width="88" height="88"/>
     <path class="lien" style="marker-end:none" d="M120 820 H152"/>
     <path class="lien" style="marker-end:none" d="M240 820 H312"/>
-    <path class="lien" style="marker-end:none" d="M276 820 V692 H312"/>
+    <path class="lien" style="marker-end:none" d="M240 820 L312 692"/>
     <rect class="structure" x="312" y="776" width="88" height="88"/>
     <rect class="structure" x="432" y="776" width="88" height="88"/>
     <rect class="structure" x="552" y="776" width="88" height="88"/>

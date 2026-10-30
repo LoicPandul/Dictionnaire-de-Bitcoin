@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 712px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -81,12 +83,12 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="flux" d="M312 360 H676"/>
     <text class="etiquette" x="326" y="338">Chemin de script</text>
     <g style="--x:0">
-    <path class="lien" style="marker-end:none" d="M790 392 V416 H590 V440"/>
-    <path class="lien" style="marker-end:none" d="M790 392 V416 H990 V440"/>
-    <path class="lien" style="marker-end:none" d="M590 504 V528 H490 V552"/>
-    <path class="lien" style="marker-end:none" d="M590 504 V528 H690 V552"/>
-    <path class="lien" style="marker-end:none" d="M990 504 V528 H890 V552"/>
-    <path class="lien" style="marker-end:none" d="M990 504 V528 H1090 V552"/>
+    <path class="lien" style="marker-end:none" d="M790 392 L590 440"/>
+    <path class="lien" style="marker-end:none" d="M790 392 L990 440"/>
+    <path class="lien" style="marker-end:none" d="M590 504 L490 552"/>
+    <path class="lien" style="marker-end:none" d="M590 504 L690 552"/>
+    <path class="lien" style="marker-end:none" d="M990 504 L890 552"/>
+    <path class="lien" style="marker-end:none" d="M990 504 L1090 552"/>
     </g>
     <rect class="structure" x="680" y="328" width="220" height="64" style="stroke-width:3"/>
     <text class="etiquette" x="790" y="371" text-anchor="middle">Racine M</text>

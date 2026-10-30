@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 640px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -75,22 +77,22 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 <path class="flux" d="M304 320 H356"/>
 <rect class="structure" x="360" y="272" width="176" height="96"/><text class="etiquette" x="448" y="330" text-anchor="middle">Racine</text>
 <rect class="structure" x="632" y="116" width="176" height="96"/><text class="etiquette" x="720" y="175" text-anchor="middle">Branche</text>
-<path class="hors-chaine lien" d="M536 320 H584 V164 H628"/>
+<path class="hors-chaine lien" d="M536 320 L628 164"/>
 <rect class="structure" x="632" y="428" width="176" height="96"/><text class="etiquette" x="720" y="487" text-anchor="middle">Branche</text>
-<path class="hors-chaine lien" d="M536 320 H584 V476 H628"/>
-<path class="hors-chaine lien" d="M808 164 H856 V144 H900"/>
+<path class="hors-chaine lien" d="M536 320 L628 476"/>
+<path class="hors-chaine lien" d="M808 164 L900 144"/>
 <rect class="sujet" x="904" y="112" width="144" height="64" rx="32"/><text class="nom-sujet" x="976" y="157" text-anchor="middle">VTXO</text>
 <path class="lien" d="M1048 144 H1112"/>
 <circle class="acteur" cx="1180" cy="144" r="56"/><text class="secondaire" x="1180" y="154" text-anchor="middle">Alice</text>
-<path class="hors-chaine lien" d="M808 164 H856 V280 H900"/>
+<path class="hors-chaine lien" d="M808 164 L900 280"/>
 <rect class="valeur" x="904" y="248" width="144" height="64" rx="32"/><text class="etiquette" x="976" y="291" text-anchor="middle">VTXO</text>
 <path class="lien" d="M1048 280 H1112"/>
 <circle class="acteur" cx="1180" cy="280" r="56"/><text class="secondaire" x="1180" y="290" text-anchor="middle">Bob</text>
-<path class="hors-chaine lien" d="M808 476 H856 V416 H900"/>
+<path class="hors-chaine lien" d="M808 476 L900 416"/>
 <rect class="valeur" x="904" y="384" width="144" height="64" rx="32"/><text class="etiquette" x="976" y="427" text-anchor="middle">VTXO</text>
 <path class="lien" d="M1048 416 H1112"/>
 <circle class="acteur" cx="1180" cy="416" r="56"/><text class="secondaire" x="1180" y="426" text-anchor="middle">Carole</text>
-<path class="hors-chaine lien" d="M808 476 H856 V552 H900"/>
+<path class="hors-chaine lien" d="M808 476 L900 552"/>
 <rect class="valeur" x="904" y="520" width="144" height="64" rx="32"/><text class="etiquette" x="976" y="563" text-anchor="middle">VTXO</text>
 <path class="lien" d="M1048 552 H1112"/>
 <circle class="acteur" cx="1180" cy="552" r="56"/><text class="secondaire" x="1180" y="562" text-anchor="middle">Dan</text>
