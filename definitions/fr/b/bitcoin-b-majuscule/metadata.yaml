@@ -8,4 +8,5 @@ cross_references:
 assets:
   - filename: "image-1.png"
     credit: "Emblème « B » de Bitcoin, par bitboy d'après le symbole ₿ de Satoshi Nakamoto, domaine public (en.bitcoin.it, Promotional graphics)"
+    credit_en: "Bitcoin “B” emblem, by bitboy, based on the ₿ symbol by Satoshi Nakamoto, public domain (en.bitcoin.it, Promotional graphics)"
 version: "1"

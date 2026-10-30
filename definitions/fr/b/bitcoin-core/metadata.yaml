@@ -8,4 +8,5 @@ cross_references:
 assets:
   - filename: "image-1.png"
     credit: "Logo Bitcoin Core, © Bitcoin Core, marque de ses titulaires, reproduit à titre d'illustration (bitcoincore.org)"
+    credit_en: "Bitcoin Core logo, © Bitcoin Core, trademark of its respective owners, reproduced for illustration purposes (bitcoincore.org)"
 version: "1"

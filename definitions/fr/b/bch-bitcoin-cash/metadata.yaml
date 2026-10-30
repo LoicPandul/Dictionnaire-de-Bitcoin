@@ -8,4 +8,5 @@ cross_references:
 assets:
   - filename: "image-1.png"
     credit: "Logo Bitcoin Cash, version de Georgstmk, licence CC BY-SA 4.0, marque de ses titulaires (commons.wikimedia.org, Bitcoin-cash-logo-horizontal.svg), passé en niveaux de gris"
+    credit_en: "Bitcoin Cash logo, version by Georgstmk, CC BY-SA 4.0 license, trademark of its respective owners (commons.wikimedia.org, Bitcoin-cash-logo-horizontal.svg), converted to grayscale"
 version: "1"

@@ -7,4 +7,5 @@ cross_references:
 assets:
   - filename: "image-1.png"
     credit: "Avatars PayNym, créés pour Samourai Wallet, marque de ses titulaires, reproduits à titre d'illustration (paynym.rs)"
+    credit_en: "PayNym avatars, created for Samourai Wallet, trademark of its respective owners, reproduced for illustration purposes (paynym.rs)"
 version: "1"

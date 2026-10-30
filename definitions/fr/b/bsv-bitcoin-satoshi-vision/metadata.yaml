@@ -8,4 +8,5 @@ cross_references:
 assets:
   - filename: "image-1.png"
     credit: "Logo Bitcoin SV, par bComm Association, licence CC0, marque de ses titulaires (commons.wikimedia.org, BSV nav bar logo.png), passé en niveaux de gris"
+    credit_en: "Bitcoin SV logo, by bComm Association, CC0 license, trademark of its respective owners (commons.wikimedia.org, BSV nav bar logo.png), converted to grayscale"
 version: "1"

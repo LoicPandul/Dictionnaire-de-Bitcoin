@@ -18,7 +18,9 @@ SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\(\./assets/([^)\s]+)\)")
 # Champs d'une image dans `assets:` : son fichier, et le crédit d'une image de tiers
 # (logo, capture…), imprimé en petit sous l'image : « Logo Bitcoin Core, © …, MIT ».
-ASSET_FIELDS = {"filename", "credit"}
+# `credit_en` est le même crédit pour le livre et le site en anglais.
+CREDIT_FIELDS = ("credit", "credit_en")
+ASSET_FIELDS = {"filename", *CREDIT_FIELDS}
 CREDIT_MAX_CHARS = 200
 
 
@@ -72,13 +74,17 @@ def validate(dictionary: Dictionary) -> List[str]:
                 continue
             for key in sorted(set(asset) - ASSET_FIELDS):
                 errors.append(f"{where} assets: champ inconnu « {key} » ({asset['filename']})")
-            if "credit" in asset:
-                credit = asset["credit"]
+            for key in CREDIT_FIELDS:
+                if key not in asset:
+                    continue
+                credit = asset[key]
                 if not isinstance(credit, str) or not credit.strip():
-                    errors.append(f"{where} assets: credit vide ou non textuel ({asset['filename']})")
+                    errors.append(f"{where} assets: {key} vide ou non textuel ({asset['filename']})")
                 elif "\n" in credit.strip() or len(credit) > CREDIT_MAX_CHARS:
-                    errors.append(f"{where} assets: credit sur une ligne, {CREDIT_MAX_CHARS} caractères au plus "
+                    errors.append(f"{where} assets: {key} sur une ligne, {CREDIT_MAX_CHARS} caractères au plus "
                                   f"({asset['filename']})")
+            if "credit_en" in asset and "credit" not in asset:
+                errors.append(f"{where} assets: credit_en sans credit ({asset['filename']})")
         declared = {a.get("filename") for a in d.assets if isinstance(a, dict)}
         used = set(IMAGE_RE.findall(d.content))
         for name in sorted(used - declared):

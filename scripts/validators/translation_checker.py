@@ -51,6 +51,11 @@ def _check_entry(e: tr.Entry, dictionary: Dictionary, languages: dict) -> List[s
             pass  # traduction vers la langue d'origine : la source est dans une autre langue
         elif dictionary.get_by_uuid(e.uuid) is None:
             errors.append(f"{where} source introuvable : aucun UUID {e.uuid} dans definitions/{m.get('source_lang')}/")
+        else:
+            # Le livre et le site traduits impriment le crédit des images de tiers dans leur langue.
+            for a in dictionary.get_by_uuid(e.uuid).assets:
+                if isinstance(a, dict) and a.get("credit") and not str(a.get(f"credit_{e.lang}") or "").strip():
+                    errors.append(f"{where} image de tiers sans credit_{e.lang} dans la source : {a.get('filename')}")
     elif e.lang != languages["source"]:
         # Entrée écrite d'abord dans cette langue : elle porte ses propres métadonnées.
         taxonomy = dictionary.taxonomy
