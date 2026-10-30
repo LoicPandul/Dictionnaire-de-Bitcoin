@@ -13,4 +13,4 @@ With these few pieces of information, the intermediate nodes can be computed all
 
 Merkle trees are notably used by light clients (so-called SPV nodes), which keep only block headers, not transactions. The structure is also found in the Utreexo protocol, a protocol for condensing nodes' UTXO set, and in Taproot's MAST.
 
-*The Merkle tree is named after Ralph Merkle, a cryptographer who designed this structure in 1979. A Merkle tree is also called a "hash tree".*
+*The Merkle tree is named after Ralph Merkle, a cryptographer who designed this structure in 1979. A Merkle tree is also called a “hash tree”.*

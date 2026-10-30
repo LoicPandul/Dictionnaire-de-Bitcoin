@@ -9,4 +9,4 @@ Initial connection points for new Bitcoin nodes joining the network. These seeds
 
 DNS seeds are the second means, in order of priority, for a Bitcoin node to establish connections. The first means is to use the `peers.dat` file that the node itself created. This file is naturally empty for a new node, unless the user has modified it manually.
 
-*Note that DNS seeds should not be confused with "seed nodes," which are the third way of establishing connections.*
+*Note that DNS seeds should not be confused with “seed nodes,” which are the third way of establishing connections.*

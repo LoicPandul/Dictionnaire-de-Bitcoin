@@ -2,4 +2,4 @@ Electronic device dedicated to securing and managing the private keys of a Bitco
 
 ![An unsigned transaction enters the hardware wallet, is signed there by the private key, then leaves signed toward the network, while the private key stays locked inside the device.](../../../fr/h/hardware-wallet/assets/image-1.png)
 
-*Some bitcoiners prefer the term "signing device", to avoid giving the impression that the bitcoin is physically stored in the wallet.*
+*Some bitcoiners prefer the term “signing device”, to avoid giving the impression that the bitcoin is physically stored in the wallet.*

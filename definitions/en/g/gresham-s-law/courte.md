@@ -1,1 +1,1 @@
-Economic principle stating that "bad money drives out good": when two currencies circulate with an imposed legal tender rate, people hoard the one that keeps its value and spend the one that loses it.
+Economic principle stating that “bad money drives out good”: when two currencies circulate with an imposed legal tender rate, people hoard the one that keeps its value and spend the one that loses it.

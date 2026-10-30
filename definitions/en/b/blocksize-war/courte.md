@@ -1,1 +1,1 @@
-Conflict that divided the Bitcoin community from 2015 to 2017 over raising the block size limit, between "big blockers" and "small blockers". It ended in 2017 with the activation of SegWit and the abandonment of SegWit2X.
+Conflict that divided the Bitcoin community from 2015 to 2017 over raising the block size limit, between “big blockers” and “small blockers”. It ended in 2017 with the activation of SegWit and the abandonment of SegWit2X.

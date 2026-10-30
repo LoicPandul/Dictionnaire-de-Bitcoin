@@ -4,9 +4,9 @@
 events:
   - date: "2022-03-09"
     title: "Joe Biden's executive order on digital assets"
-    text: "Joe Biden signs Executive Order 14067, \"Ensuring Responsible Development of Digital Assets\". It asks federal agencies to assess the risks of cryptocurrencies and how to regulate them, as well as the merits of a US central bank digital currency."
+    text: "Joe Biden signs Executive Order 14067, “Ensuring Responsible Development of Digital Assets”. It asks federal agencies to assess the risks of cryptocurrencies and how to regulate them, as well as the merits of a US central bank digital currency."
     source_hash: "04bbfae83f11c8c6"
-    translation_hash: "d8c0573ba36f4719"
+    translation_hash: "1ea4f95300e345da"
   - date: "2022-03-28"
     title: "Ruben Somsen proposes Silent Payments"
     text: "Ruben Somsen publishes the Silent Payments scheme on the bitcoin-dev list: the recipient publishes a single static address, and each payer derives from it a different address that an observer cannot link to it, with no extra on-chain cost."

@@ -1,3 +1,3 @@
 Element used in asymmetric cryptography, generated from a private key using an irreversible mathematical function. On Bitcoin, public keys are derived from their associated private key through the elliptic-curve digital signature algorithms ECDSA or Schnorr. The public key, unlike the private key, can be shared freely without compromising the security of funds. In the Bitcoin protocol, the public key is the basis for creating a Bitcoin address, which is then used to create spending conditions on a UTXO using a `scriptPubKey`. Public keys are frequently confused with the master key or with extended keys (`xpub`...). Yet these elements are quite different.
 
-*The term "public key" is sometimes abbreviated "pubkey" or "PK".*
+*The term “public key” is sometimes abbreviated “pubkey” or “PK”.*

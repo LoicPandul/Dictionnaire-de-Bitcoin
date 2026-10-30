@@ -2,4 +2,4 @@ General-purpose protocol for Bitcoin layer 2s that defines how to jointly manage
 
 ![With penalty, a published old state is punished by a penalty transaction; with Eltoo, the latest state directly spends any earlier state and the channel settles on the up-to-date balances.](../../../fr/e/eltoo/assets/image-1.png)
 
-*Eltoo is sometimes also called "LN-Symmetry."*
+*Eltoo is sometimes also called “LN-Symmetry.”*

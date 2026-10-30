@@ -1,3 +1,3 @@
 Software development kit (SDK) for Bitcoin wallets. BDK is a collection of libraries and tools for developers that simplifies building Bitcoin wallet applications. BDK provides modules for core features such as wallet management, transaction building, transaction signing, and key management. Developers can then build on these modules to design their own software. BDK's components are designed to be lightweight and modular, so that they can be adapted to most use cases. The goal of the tool is to centralize Bitcoin wallet development in order to concentrate efforts.
 
-*BDK was formerly called "Magical Bitcoin".*
+*BDK was formerly called “Magical Bitcoin”.*

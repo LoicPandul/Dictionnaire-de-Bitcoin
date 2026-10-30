@@ -4,4 +4,4 @@ Born in New York on March 2, 1926, he read Ludwig von Mises's *Human Action* in 
 
 He taught economics at the Polytechnic Institute of Brooklyn from the mid-1960s to the mid-1980s, published *The Mystery of Banking* in 1983, then held a chair at the University of Nevada, Las Vegas from 1986 until his death. He was academic vice president of the Ludwig von Mises Institute, founded in 1982 in Auburn, Alabama. He died in Manhattan on January 7, 1995.
 
-He belongs to the Austrian School, like Mises. In 2014, Jeffrey Tucker, in an article published on the website of the Foundation for Economic Education, saw in Bitcoin a "Rothbardian dream" for its mode of ownership, while noting that Rothbard preferred gold. Rothbard died before Bitcoin appeared.
+He belongs to the Austrian School, like Mises. In 2014, Jeffrey Tucker, in an article published on the website of the Foundation for Economic Education, saw in Bitcoin a “Rothbardian dream” for its mode of ownership, while noting that Rothbard preferred gold. Rothbard died before Bitcoin appeared.

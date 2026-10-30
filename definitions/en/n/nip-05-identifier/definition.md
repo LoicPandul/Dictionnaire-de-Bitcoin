@@ -20,4 +20,4 @@ The public key remains the true identity. NIP-05 asks clients to follow a key, n
 
 The first version of NIP-05, published by fiatjaf on June 18, 2021, associated a profile with a domain name through a `TXT` DNS record placed under `_nostrkey.<domain>`. On December 30, 2021, fiatjaf replaced it with the current scheme: an email-style identifier and a JSON file at `/.well-known/nostr.json`. NIP-05 reached final status on November 22, 2022.
 
-*It is also referred to by the name of its specification alone, "NIP-05". Not to be confused with an email address: the identifier only borrows its format, and the client simply makes an HTTPS request to the domain.*
+*It is also referred to by the name of its specification alone, “NIP-05”. Not to be confused with an email address: the identifier only borrows its format, and the client simply makes an HTTPS request to the domain.*

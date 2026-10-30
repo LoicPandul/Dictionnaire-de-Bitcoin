@@ -10,4 +10,4 @@ The volume involved is high, but hard to measure. According to BIP-0361, as of M
 
 A durably exposed key opens the door to the long-exposure attack. A key that appears only during spending falls under the short-exposure attack. BIP-0360 notes that protection against long exposure requires users not to expose their public keys, through key reuse or other risky practices, and proposes P2MR, an output type with no key path, whose script contains only the root of the script tree. Once exposed, a key can no longer be hidden: funds must move to a different output, and several proposals for post-quantum migration, including BIP-0361, deal precisely with the coins whose owners will not do so.
 
-*BIP-0360 and BIP-0361 use the term "exposed public key"; BIP-0361 also says that a key has been "revealed on-chain".*
+*BIP-0360 and BIP-0361 use the term “exposed public key”; BIP-0361 also says that a key has been “revealed on-chain”.*

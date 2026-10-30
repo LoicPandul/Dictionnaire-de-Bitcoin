@@ -1,4 +1,4 @@
-Theoretical concept describing a process of massive and irreversible adoption of Bitcoin as the dominant money worldwide, gradually replacing fiat currencies. The term was popularized by Daniel Krawisz in 2014, who described it as a voluntary transition from an inferior money to a superior one, or more precisely as "Bitcoin-induced currency demonetization".
+Theoretical concept describing a process of massive and irreversible adoption of Bitcoin as the dominant money worldwide, gradually replacing fiat currencies. The term was popularized by Daniel Krawisz in 2014, who described it as a voluntary transition from an inferior money to a superior one, or more precisely as “Bitcoin-induced currency demonetization”.
 
 Hyperbitcoinization assumes a scenario in which a loss of confidence in fiat currencies (due to inflation, financial control, or monetary instability) pushes individuals and institutions to adopt Bitcoin en masse. It would be a voluntary and decentralized movement, in which each individual freely chooses to migrate to a sounder monetary standard.
 

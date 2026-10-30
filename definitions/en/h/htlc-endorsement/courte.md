@@ -1,1 +1,1 @@
-Local reputation mechanism on Lightning against channel jamming, in which each node marks as "endorsed" the HTLCs coming from reliable peers. Only these HTLCs can access a reserved share of the slots and liquidity of its channels.
+Local reputation mechanism on Lightning against channel jamming, in which each node marks as “endorsed” the HTLCs coming from reliable peers. Only these HTLCs can access a reserved share of the slots and liquidity of its channels.

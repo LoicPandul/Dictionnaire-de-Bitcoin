@@ -1,3 +1,3 @@
-Practice of assigning an annotation or label to a specific UTXO in a Bitcoin wallet. For example, if Alice holds a UTXO from a P2P purchase on Bisq with Charles, she could give it the label "`Non-KYC Bisq Charles`".
+Practice of assigning an annotation or label to a specific UTXO in a Bitcoin wallet. For example, if Alice holds a UTXO from a P2P purchase on Bisq with Charles, she could give it the label “`Non-KYC Bisq Charles`”.
 
 Labeling is a good practice that helps remember the origin or intended destination of a UTXO, which makes fund management and privacy optimization easier. Labeling matters even more when it is used with coin control. By letting users distinguish and precisely select the UTXOs for their transactions, it helps avoid merging UTXOs from different sources. This limits the risks associated with the common-input-ownership heuristic (CIOH) of chain analysis, which can reveal the common ownership of a transaction's inputs.

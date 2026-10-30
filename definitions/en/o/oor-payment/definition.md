@@ -6,4 +6,4 @@ To make an OOR payment, the sender creates a transaction that reuses the forfeit
 
 The trust model differs, however, from payments made in a round. The recipient of an OOR payment must trust the sender and the ASP not to collude to carry out a double spend. In case of fraud, the signatures of both spends become public, which allows the recipient to prove the violation cryptographically. The user can at any time submit their OOR VTXO in the next round to refresh it into a regular, fully trustless VTXO.
 
-OOR payments are sometimes referred to as "arkoor".
+OOR payments are sometimes referred to as “arkoor”.

@@ -6,4 +6,4 @@ The absolute timelock can be set either as a date expressed in Unix time or as a
 
 ![Bitcoin's four timelocks arranged two by two: absolute or relative, transaction field or script opcode, with nLockTime, nSequence, OP_CHECKLOCKTIMEVERIFY, and OP_CHECKSEQUENCEVERIFY.](../../../fr/t/timelock/assets/image-1.png)
 
-*A timelock is sometimes also called a "locktime".*
+*A timelock is sometimes also called a “locktime”.*

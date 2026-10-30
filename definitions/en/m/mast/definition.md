@@ -2,4 +2,4 @@ Acronym for *Merklized Alternative Script Trees*. Technique that uses a Merkle t
 
 ![MAST tree of four scripts: at spending time, only script A is published in the clear, while scripts B, C, and D remain reduced to their hash in the Merkle tree whose root is committed to in the address.](../../../fr/m/mast/assets/image-1.png)
 
-*Originally, "MAST" stood for "Merklized Abstract Syntax Tree". The way it is used in Taproot no longer has anything to do with an "Abstract Syntax Tree". However, users kept using the term MAST. Anthony Towns therefore proposed changing the original meaning while keeping the widely used acronym, with "Merklized Alternative Script Trees".*
+*Originally, “MAST” stood for “Merklized Abstract Syntax Tree”. The way it is used in Taproot no longer has anything to do with an “Abstract Syntax Tree”. However, users kept using the term MAST. Anthony Towns therefore proposed changing the original meaning while keeping the widely used acronym, with “Merklized Alternative Script Trees”.*

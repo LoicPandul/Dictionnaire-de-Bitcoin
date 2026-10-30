@@ -2,4 +2,4 @@ Probabilistic data structure used to test whether an element belongs to a set. B
 
 ![A 16-bit Bloom filter: each insertion sets three bits to 1, a lookup that hits a 0 bit proves absence, and a lookup that hits only 1 bits may be a false positive.](../../../fr/b/bloom-filter/assets/image-1.png)
 
-*The use of Bloom filters specifically with Bitcoin transactions is sometimes called "transaction Bloom filtering".*
+*The use of Bloom filters specifically with Bitcoin transactions is sometimes called “transaction Bloom filtering”.*

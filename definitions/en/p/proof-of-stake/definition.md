@@ -1,4 +1,4 @@
-Consensus mechanism alternative to proof of work, in which validators are selected to propose and confirm blocks based on the amount of tokens they lock up ("stake") in the protocol. The more tokens a participant holds and locks up, the higher their probability of being chosen as a validator.
+Consensus mechanism alternative to proof of work, in which validators are selected to propose and confirm blocks based on the amount of tokens they lock up (“stake”) in the protocol. The more tokens a participant holds and locks up, the higher their probability of being chosen as a validator.
 
 This mechanism is used by several cryptocurrency systems, notably Ethereum since its transition on September 15, 2022. Its proponents argue that it consumes much less energy than proof of work. Its critics point out that it tends to concentrate validation power in the hands of the largest holders, reproducing a dynamic similar to traditional financial systems where wealth breeds control, in a fundamentally closed system, because it does not rely on a natural resource external to the protocol.
 

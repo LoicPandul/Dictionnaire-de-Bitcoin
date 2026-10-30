@@ -4,4 +4,4 @@ In the Bitcoin system, the private key is linked to a public key by a multiplica
 
 ![The seed gives the private key through HMAC-SHA512, the private key gives the public key through multiplication by the generator point G, then the public key gives the address through HASH160, and none of these computations can be reversed.](../../../fr/c/cle-privee/assets/image-1.png)
 
-*The term "private key" is sometimes abbreviated "privkey" or "PV".*
+*The term “private key” is sometimes abbreviated “privkey” or “PV”.*

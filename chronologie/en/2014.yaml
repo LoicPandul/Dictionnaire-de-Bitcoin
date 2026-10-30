@@ -34,6 +34,6 @@ events:
     translation_hash: "8af95db3dc620d67"
   - date: "2014-10-22"
     title: "Sidechains paper published"
-    text: "Adam Back, Gregory Maxwell, Pieter Wuille, and six coauthors publish \"Enabling Blockchain Innovations with Pegged Sidechains\". The paper describes separate chains, the sidechains, to which bitcoin can move and then return thanks to a two-way peg."
+    text: "Adam Back, Gregory Maxwell, Pieter Wuille, and six coauthors publish “Enabling Blockchain Innovations with Pegged Sidechains”. The paper describes separate chains, the sidechains, to which bitcoin can move and then return thanks to a two-way peg."
     source_hash: "f9a115c76680ed61"
-    translation_hash: "aa3263b5a77380e3"
+    translation_hash: "c01613522b05e482"

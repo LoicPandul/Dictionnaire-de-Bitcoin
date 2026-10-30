@@ -1,1 +1,1 @@
-Former name of Core-Lightning (CLN), the Lightning Network implementation developed by Blockstream and written in C. The project was renamed in 2022, and its official repository still describes it as "previously c-lightning". The main binary is called `lightningd`.
+Former name of Core-Lightning (CLN), the Lightning Network implementation developed by Blockstream and written in C. The project was renamed in 2022, and its official repository still describes it as “previously c-lightning”. The main binary is called `lightningd`.

@@ -2,7 +2,7 @@ Acronym for *Common Input Ownership Heuristic*. A heuristic used in Bitcoin chai
 
 This analysis heuristic was identified by Satoshi Nakamoto himself, who discusses it in section 10 of the white paper:
 
-> *"Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner. The risk is that if the owner of a key is revealed, linking could reveal other transactions that belonged to the same owner."* - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Retrieved from https://bitcoin.org/bitcoin.pdf.
+> *“Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner. The risk is that if the owner of a key is revealed, linking could reveal other transactions that belonged to the same owner.”* - Nakamoto, S. (2008). “Bitcoin: A Peer-to-Peer Electronic Cash System”. Retrieved from https://bitcoin.org/bitcoin.pdf.
 
 To this day, CIOH remains the main heuristic used by chain analysis firms, along with address reuse.
 

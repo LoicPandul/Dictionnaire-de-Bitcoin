@@ -1,4 +1,4 @@
-Acronym for *Pay to Script Hash - Pay to Witness Script Hash*. Standard script template used to set spending conditions on a UTXO, also known as "Nested SegWit".
+Acronym for *Pay to Script Hash - Pay to Witness Script Hash*. Standard script template used to set spending conditions on a UTXO, also known as “Nested SegWit”.
 
 P2SH-P2WSH was introduced with the implementation of SegWit in August 2017. This script describes a P2WSH wrapped inside a P2SH. It locks bitcoin based on the hash of a script. The difference from a regular P2WSH is that the script is here wrapped in the `redeemScript` of a regular P2SH.
 

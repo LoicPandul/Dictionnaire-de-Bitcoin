@@ -1,4 +1,4 @@
-Class of error-correcting codes used to detect and correct errors in a sequence of data. In other words, BCH error-correcting codes make it possible to find and correct random errors in transmitted information, so that it arrives intact at its destination. The acronym "BCH" stands for the initials of the codes' inventors: Bose, Ray-Chaudhuri, and Hocquenghem.
+Class of error-correcting codes used to detect and correct errors in a sequence of data. In other words, BCH error-correcting codes make it possible to find and correct random errors in transmitted information, so that it arrives intact at its destination. The acronym “BCH” stands for the initials of the codes' inventors: Bose, Ray-Chaudhuri, and Hocquenghem.
 
 This tool is used in many areas of computing, notably in SSDs, DVDs, and QR codes. For example, thanks to these error-correcting codes, even if a QR code is partially covered, the information it encodes can still be recovered.
 

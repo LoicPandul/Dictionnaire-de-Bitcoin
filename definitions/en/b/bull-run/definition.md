@@ -1,1 +1,1 @@
-Prolonged period during which the price of an asset such as bitcoin rises against a fiat currency, most often the US dollar. The expression "bull run" refers to the same phenomenon as "bull market", but in a more informal register.
+Prolonged period during which the price of an asset such as bitcoin rises against a fiat currency, most often the US dollar. The expression “bull run” refers to the same phenomenon as “bull market”, but in a more informal register.

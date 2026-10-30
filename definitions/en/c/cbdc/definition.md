@@ -1,4 +1,4 @@
-Acronym for "Central Bank Digital Currency". Digital form of fiat money issued and controlled directly by a central bank, unlike ordinary bank deposits, which are created by commercial banks.
+Acronym for “Central Bank Digital Currency”. Digital form of fiat money issued and controlled directly by a central bank, unlike ordinary bank deposits, which are created by commercial banks.
 
 CBDC projects are under development in many countries: the digital euro in Europe, the digital yuan (e-CNY) in China, and the Sand Dollar in the Bahamas. They can run on centralized ledgers or use technologies inspired by blockchains, but remain under the full control of the issuing authority.
 

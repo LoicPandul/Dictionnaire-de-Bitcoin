@@ -1,1 +1,1 @@
-Main component of a computer, responsible for executing the machine instructions of software. In the context of Bitcoin, the CPU was initially used by nodes for mining before being outclassed by GPU (graphics card) mining, then by specialized chips called "ASICs".
+Main component of a computer, responsible for executing the machine instructions of software. In the context of Bitcoin, the CPU was initially used by nodes for mining before being outclassed by GPU (graphics card) mining, then by specialized chips called “ASICs”.

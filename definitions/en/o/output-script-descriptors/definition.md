@@ -26,7 +26,7 @@ The descriptor also includes the extended public key used in this wallet:
 xpub6CUGRUonZSQ4TWtTMmzXdrXDtyPWKiKbERr4d5qkSmh5h17C1TjvMt7DJ9Qve4dRxm91CDv6cNfKsq2mK1rMsJKhtRUPZz7MQtp3y6atC1U
 ```
 
-Next, the notation `/<0;1>/*` specifies that the descriptor can generate addresses from the external keychain (`0`) and the internal keychain (`1`), with a wildcard (`*`) allowing the sequential derivation of multiple addresses in a configurable way, similar to managing a "gap limit" in conventional wallet software.
+Next, the notation `/<0;1>/*` specifies that the descriptor can generate addresses from the external keychain (`0`) and the internal keychain (`1`), with a wildcard (`*`) allowing the sequential derivation of multiple addresses in a configurable way, similar to managing a “gap limit” in conventional wallet software.
 
 Finally, `#jy0l7nr4` represents the checksum used to verify the integrity of the descriptor.
 

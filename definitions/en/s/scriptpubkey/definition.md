@@ -19,4 +19,4 @@ The corresponding `scriptSig` would be:
 <signature> <public key>
 ```
 
-*This script is also sometimes called a "locking script".*
+*This script is also sometimes called a “locking script”.*

@@ -1,1 +1,1 @@
-Updates the `getblocktemplate` JSON-RPC call to add SegWit support, in accordance with BIP-0141. This update lets miners build blocks that account for the new "weight" measure of transactions and blocks introduced by SegWit, as well as other parameters such as the sigops limit calculation.
+Updates the `getblocktemplate` JSON-RPC call to add SegWit support, in accordance with BIP-0141. This update lets miners build blocks that account for the new “weight” measure of transactions and blocks introduced by SegWit, as well as other parameters such as the sigops limit calculation.

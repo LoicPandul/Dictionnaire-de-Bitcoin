@@ -4,4 +4,4 @@ There are several types of nodes on Bitcoin, including full nodes and light clie
 
 ![What each type of node stores, as areas drawn to scale (end of 2026): about 780 GB of blocks for a full node, at least 550 MB of recent blocks for a pruned node, about 78 MB of headers for an SPV node.](../../../fr/n/noeud/assets/image-1.png)
 
-*Some also distinguish so-called "pruned nodes". These are full nodes that download and validate all blocks since the genesis block, but keep only the most recent blocks on disk.*
+*Some also distinguish so-called “pruned nodes”. These are full nodes that download and validate all blocks since the genesis block, but keep only the most recent blocks on disk.*

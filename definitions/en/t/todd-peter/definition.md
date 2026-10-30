@@ -6,4 +6,4 @@ He then coauthored BIP-0009, on version bits, with Pieter Wuille, Greg Maxwell, 
 
 On September 15, 2016, he announced the public alpha of OpenTimestamps, which he initiated, a timestamping protocol that anchors hashes in the Bitcoin blockchain.
 
-On October 8, 2024, the documentary "Money Electric: The Bitcoin Mystery" by Cullen Hoback, broadcast on HBO, put forward the claim that he is Satoshi Nakamoto. He publicly denied it. No evidence establishes it.
+On October 8, 2024, the documentary “Money Electric: The Bitcoin Mystery” by Cullen Hoback, broadcast on HBO, put forward the claim that he is Satoshi Nakamoto. He publicly denied it. No evidence establishes it.

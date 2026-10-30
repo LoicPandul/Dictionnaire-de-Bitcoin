@@ -4,4 +4,4 @@ The Payjoin transaction serves two purposes. First, it aims to mislead an outsid
 
 ![Payjoin transaction: the buyer (10,000 sats) and the baker (15,000 sats) each contribute an input, the outputs pay 21,000 sats to the baker and 4,000 sats minus fees to the buyer, and the real payment of 6,000 sats appears in no output.](../../../fr/p/payjoin/assets/image-1.png)
 
-*Payjoin is also sometimes called "P2EP (Pay-to-End-Point)", "Stowaway", or "steganographic transaction".*
+*Payjoin is also sometimes called “P2EP (Pay-to-End-Point)”, “Stowaway”, or “steganographic transaction”.*

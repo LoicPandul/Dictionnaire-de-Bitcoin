@@ -1,4 +1,4 @@
-Transaction pattern on the blockchain in which a large amount of bitcoin is gradually distributed through a long series of successive transactions. At each step, a fraction is sent to a recipient, while the remainder goes back to a new change address. The residual balance thus shrinks from transaction to transaction: each amount is "peeled" off the remaining total. The chain can extend over hundreds, even thousands, of transactions.
+Transaction pattern on the blockchain in which a large amount of bitcoin is gradually distributed through a long series of successive transactions. At each step, a fraction is sent to a recipient, while the remainder goes back to a new change address. The residual balance thus shrinks from transaction to transaction: each amount is “peeled” off the remaining total. The chain can extend over hundreds, even thousands, of transactions.
 
 ![In a peeling chain, an amount of 10 BTC passes through a series of transactions that each peel off a small portion for a recipient, with the rest going back as change to the next transaction.](../../../fr/p/peeling-chain/assets/image-1.png)
 

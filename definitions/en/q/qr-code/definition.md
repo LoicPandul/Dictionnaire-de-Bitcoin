@@ -2,4 +2,4 @@ Type of two-dimensional barcode that can be scanned quickly by mobile devices. T
 
 The QR code is widely used in Bitcoin to facilitate the transfer of information between two devices. It is mainly used to share receiving addresses, encoded in URI format according to BIP-0021. But its use extends also to extended keys, PSBTs, Lightning invoices, and more.
 
-*QR code stands for "Quick Response code."*
+*QR code stands for “Quick Response code.”*

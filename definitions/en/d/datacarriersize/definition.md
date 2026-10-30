@@ -12,4 +12,4 @@ Gregory Sanders's pull request #32406, merged on June 9, 2025, changed the defau
 
 A node that keeps 83 therefore continues to filter what it relays, whereas a node at the 30.0 default no longer filters, in practice, the size of `OP_RETURN` outputs. For the use of the word spam in these exchanges, see the SPAM entry.
 
-*The name comes from "data carrier". Not to be confused with a consensus limit, nor with a limit on witness data: the option counts only `OP_RETURN` outputs.*
+*The name comes from “data carrier”. Not to be confused with a consensus limit, nor with a limit on witness data: the option counts only `OP_RETURN` outputs.*

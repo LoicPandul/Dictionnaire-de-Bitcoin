@@ -17,6 +17,6 @@ Inside events, the same coordinate is written in an `a` tag, in the form `<kind>
 
 This stability has a downside. Whoever shares an `naddr` does not freeze what is being shared: the author can rewrite the article, and the reader will see the version in effect when the link is opened, not the one the sender had read. To designate a specific version, an `nevent` is needed, provided a relay still holds it.
 
-The `naddr` arrived in NIP-19 on February 3, 2023, along with NIP-23 and its long-form articles, under the name `nref`, to designate what was then called a "parameterized replaceable event" (NIP-33). On February 5, 2023, it became `nitem`, then the kind was added the next day, and on February 13, 2023 it took the name `naddr`, at the same time as the reference tag changed from `i` to `a`.
+The `naddr` arrived in NIP-19 on February 3, 2023, along with NIP-23 and its long-form articles, under the name `nref`, to designate what was then called a “parameterized replaceable event” (NIP-33). On February 5, 2023, it became `nitem`, then the kind was added the next day, and on February 13, 2023 it took the name `naddr`, at the same time as the reference tag changed from `i` to `a`.
 
 *Not to be confused with the NEVENT, which designates a specific version of an event by its identifier.*

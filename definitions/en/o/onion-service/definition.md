@@ -1,4 +1,4 @@
-Service hosted on the Tor network, accessible only through a `.onion` address, without exposing the server's IP address. Formerly called a "hidden service", it was officially renamed "onion service" by the Tor project. The server and the client communicate through Tor circuits, so that neither knows the IP address of its counterpart.
+Service hosted on the Tor network, accessible only through a `.onion` address, without exposing the server's IP address. Formerly called a “hidden service”, it was officially renamed “onion service” by the Tor project. The server and the client communicate through Tor circuits, so that neither knows the IP address of its counterpart.
 
 An onion service works by publishing introduction points in the distributed hash table of the Tor network. The client then chooses a rendezvous point and communicates it to the service via an introduction point. The client and the server each build a Tor circuit to this rendezvous point, in order to establish a mutual connection without any data passing in the clear over the internet.
 

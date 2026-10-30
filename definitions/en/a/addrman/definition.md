@@ -1,4 +1,4 @@
-Bitcoin Core module that manages the addresses of known peers on the network. It maintains two in-memory tables: the "new" table, which holds addresses that have been discovered but not yet tested (1,024 buckets of 64 entries), and the "tried" table, which holds addresses the node has already connected to successfully (256 buckets of 64 entries). These tables are serialized in the `peers.dat` file.
+Bitcoin Core module that manages the addresses of known peers on the network. It maintains two in-memory tables: the “new” table, which holds addresses that have been discovered but not yet tested (1,024 buckets of 64 entries), and the “tried” table, which holds addresses the node has already connected to successfully (256 buckets of 64 entries). These tables are serialized in the `peers.dat` file.
 
 ![Bitcoin Core's address manager (addrman) stores discovered addresses in the new table (1,024 buckets of 64 entries), moves them to the tried table (256 buckets of 64 entries) after a successful connection, and saves both tables in the peers.dat file.](../../../fr/a/addrman/assets/image-1.png)
 

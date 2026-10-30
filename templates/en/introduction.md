@@ -27,11 +27,11 @@ The first sentence of the definition says what the term is. The following paragr
 
 The entries of the other parts are read the same way. The entry for a person or a company begins with the role of the person or company it describes. The entry for a BIP, a BOLT, or a bLIP gives its identifier, its status, its original title, and its summary. A timeline event has a date, a short title, and a short text.
 
-To read efficiently, follow the "See also" terms: they link the concepts to one another, and you move from definition to definition.
+To read efficiently, follow the “See also” terms: they link the concepts to one another, and you move from definition to definition.
 
 # WRITING PRINCIPLES
 
-Publishing a dictionary means choosing the terms it contains. I include a term as soon as it has a link with Bitcoin or its ecosystem, because the ambition of this book is to cover the vocabulary of Bitcoin as exhaustively as possible, in the spirit of the professional dictionaries of other disciplines. In practice, the question is this: "*Could a beginner studying Bitcoin come across this term during their research and want to understand what it means?*"
+Publishing a dictionary means choosing the terms it contains. I include a term as soon as it has a link with Bitcoin or its ecosystem, because the ambition of this book is to cover the vocabulary of Bitcoin as exhaustively as possible, in the spirit of the professional dictionaries of other disciplines. In practice, the question is this: “*Could a beginner studying Bitcoin come across this term during their research and want to understand what it means?*”
 
 If the answer is yes, the term goes in, whether it is a technical notion, a piece of software, an algorithm, or a protocol related to Bitcoin, directly or not, including the protocols built on top of it (Lightning, RGB, Liquid, Ark, etc.). More general terms from computer science or cryptography go in only if a reader can come across them and Bitcoin cannot be understood without them. The Nostr specifications (the NIPs) are not in the book, but the notions of Nostr are defined in the technical dictionary.
 

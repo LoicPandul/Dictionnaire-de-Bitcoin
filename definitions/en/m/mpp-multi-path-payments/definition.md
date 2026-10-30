@@ -4,4 +4,4 @@ Generic term for all payment techniques on Lightning that split a transaction in
 
 Multi-path payments also offer slight privacy benefits, because it becomes harder for an observer to link each payment shard to the whole transaction. However, in the basic version, all the shards share the same secret for the HTLCs, which can make the transaction traceable if an observer is present on several routes. Moreover, because the secret is the same for all the shards of the payment, the payment is not atomic in the strict sense. The specifications require the recipient to reveal the preimage only after receiving all the shards, but nothing cryptographically forces it to: a dishonest recipient could claim only part of the payment. These drawbacks are fixed by Atomic Multi-Path Payments.
 
-*The same method is sometimes called "Multi-Part Payment".*
+*The same method is sometimes called “Multi-Part Payment”.*

@@ -4,4 +4,4 @@ This address encodes two spending paths: a cooperative path, in which Alice and 
 
 ![The swap-in address encodes two spending paths: Alice and the LSP sign together to move the deposit into a Lightning channel, or Alice alone takes her bitcoin back on-chain after a delay.](../../../fr/s/swap-in-potentiam/assets/image-1.png)
 
-The main advantage of swap-in potentiam is that it reduces trust requirements compared with other methods of instantly opening channels. The temporary co-ownership of the funds and the safety timelock guarantee that neither Alice nor the LSP can steal the funds. ACINQ's Phoenix wallet uses a variant of this protocol called "Swaproot", adapted to the constraints of mobile devices with intermittent connectivity.
+The main advantage of swap-in potentiam is that it reduces trust requirements compared with other methods of instantly opening channels. The temporary co-ownership of the funds and the safety timelock guarantee that neither Alice nor the LSP can steal the funds. ACINQ's Phoenix wallet uses a variant of this protocol called “Swaproot”, adapted to the constraints of mobile devices with intermittent connectivity.

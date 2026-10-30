@@ -9,4 +9,4 @@ If even one of these conditions is not met, the script containing the `OP_CHECKL
 
 ![For a script containing OP_CHECKLOCKTIMEVERIFY to be satisfied, its value must be less than or equal to the nLockTime of the spending transaction, and that nLockTime must be lower than the height of the block that includes the transaction.](../../../fr/o/op-checklocktimeverify-0xb1/assets/image-1.png)
 
-*This opcode is a replacement for `OP_NOP`. It was placed on `OP_NOP2`. It is often referred to by its acronym, "CLTV". Note that `OP_CLTV` must not be confused with the `nLockTime` field of a transaction. The former uses the latter, but their natures and actions are different.*
+*This opcode is a replacement for `OP_NOP`. It was placed on `OP_NOP2`. It is often referred to by its acronym, “CLTV”. Note that `OP_CLTV` must not be confused with the `nLockTime` field of a transaction. The former uses the latter, but their natures and actions are different.*

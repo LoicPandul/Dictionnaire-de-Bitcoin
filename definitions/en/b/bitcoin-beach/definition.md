@@ -1,5 +1,5 @@
 Community initiative launched in the village of El Zonte, on the Pacific coast of El Salvador, which turned this small town into the first circular economy running on Bitcoin. The project began in 2019 with a donation from an anonymous bitcoiner, with the aim of proving that Bitcoin could concretely improve the daily lives of people excluded from the traditional banking system.
 
-Bitcoin Beach let residents pay their bills (water, electricity, phone), their groceries, or even the hairdresser directly in bitcoin over the Lightning Network. The wallet developed for the project, originally called "Bitcoin Beach Wallet", was later renamed "Blink".
+Bitcoin Beach let residents pay their bills (water, electricity, phone), their groceries, or even the hairdresser directly in bitcoin over the Lightning Network. The wallet developed for the project, originally called “Bitcoin Beach Wallet”, was later renamed “Blink”.
 
 The El Zonte experiment played an important role in El Salvador's decision to adopt Bitcoin as legal tender in 2021, making it the first country to take that step. That status was removed in January 2025, after a vote by the Legislative Assembly (55 votes to 2) tied to an agreement with the IMF. The model has since inspired similar initiatives in other countries, notably Bitcoin Jungle in Costa Rica.

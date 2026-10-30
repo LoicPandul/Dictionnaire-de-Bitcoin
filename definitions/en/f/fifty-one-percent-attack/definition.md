@@ -2,4 +2,4 @@ Hypothetical scenario on the Bitcoin system in which a malicious actor controls 
 
 ![51% attack: the attacker's faster secret chain overtakes the public chain that contains the payment to the merchant, then replaces it once published.](../../../fr/a/attaque-des-51-pour-cent/assets/image-1.png)
 
-*When an attacker carries it out to destroy the value of Bitcoin, for example for a political motive or to profit from a short position, rather than to spend twice, it is called a "Goldfinger attack" (a term proposed by Kroll, Davey, and Felten in 2013).*
+*When an attacker carries it out to destroy the value of Bitcoin, for example for a political motive or to profit from a short position, rather than to spend twice, it is called a “Goldfinger attack” (a term proposed by Kroll, Davey, and Felten in 2013).*

@@ -8,6 +8,6 @@ BIP-0360 considers these attacks probably the first that Bitcoin would suffer, b
 
 For outputs that are already exposed, the situation is less straightforward. The owner can move the funds before the CRQC arrives, to an output type that hides the key. But dormant, lost, or forgotten coins will not move, and BIP-0361 notes that no known rescue protocol protects P2PK outputs, for lack of information that the owner would hold and the attacker would not. This is the core of the debate on post-quantum migration: burn these coins or let them be stolen, with or without an announced deadline.
 
-The name dates from BIP-0360. Up to its version 0.5.1, these attacks were called *long range attacks*, as in the Chaincode Labs report; version 0.6.0 of January 20, 2025 chose "long exposure" to avoid confusion with the vocabulary of block reorganization attacks.
+The name dates from BIP-0360. Up to its version 0.5.1, these attacks were called *long range attacks*, as in the Chaincode Labs report; version 0.6.0 of January 20, 2025 chose “long exposure” to avoid confusion with the vocabulary of block reorganization attacks.
 
 *Not to be confused with the short exposure attack, which targets a spend in progress.*

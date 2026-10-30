@@ -1,4 +1,4 @@
-In the context of Bitcoin, operation recorded on the blockchain (abbreviated "TX") that transfers ownership of bitcoin from one or more inputs to one or more outputs. Every transaction, except the coinbase transaction that creates the new bitcoin of the block, consumes UTXOs as inputs, which are outputs of previous transactions, and creates new UTXOs as outputs, which can be used as inputs in future transactions.
+In the context of Bitcoin, operation recorded on the blockchain (abbreviated “TX”) that transfers ownership of bitcoin from one or more inputs to one or more outputs. Every transaction, except the coinbase transaction that creates the new bitcoin of the block, consumes UTXOs as inputs, which are outputs of previous transactions, and creates new UTXOs as outputs, which can be used as inputs in future transactions.
 
 ![Output 1 of transaction 1 (60,000 sats) is consumed as an input by transaction 2, which designates it by txid:index and creates two new, still unspent outputs; the 1,000 sats gap goes to fees.](../../../fr/t/tx-transaction/assets/image-1.png)
 

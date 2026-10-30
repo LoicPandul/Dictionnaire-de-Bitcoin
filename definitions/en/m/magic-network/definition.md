@@ -27,4 +27,4 @@ fabfb5da
 
 On a custom signet, the value is derived from the network's challenge, which gives each signet its own identifier.
 
-*These 4 bytes are sometimes also called "magic number", "magic bytes", or "start string".*
+*These 4 bytes are sometimes also called “magic number”, “magic bytes”, or “start string”.*

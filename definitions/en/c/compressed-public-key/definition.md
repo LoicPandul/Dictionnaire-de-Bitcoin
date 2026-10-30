@@ -6,7 +6,7 @@ Simplified to the field of the reals, since the elliptic curve is symmetric abou
 
 To choose between the two potential points on the curve, a prefix specifying which `y` to pick is added to `x`. This method reduces the size of a public key from 520 bits to only 264 bits (8 prefix bits + 256 bits for `x`). This representation is known as the compressed form of the public key.
 
-However, elliptic curve cryptography does not use the reals but a finite field of order `p` (a prime number). In this context, the "sign" of `y` is determined by its parity, that is, whether `y` is even or odd. The prefix `0x02` then indicates an even `y`, while `0x03` indicates an odd `y`.
+However, elliptic curve cryptography does not use the reals but a finite field of order `p` (a prime number). In this context, the “sign” of `y` is determined by its parity, that is, whether `y` is even or odd. The prefix `0x02` then indicates an even `y`, while `0x03` indicates an odd `y`.
 
 Consider the following example of a raw public key (a point on the elliptic curve) in hexadecimal:
 ```plaintext

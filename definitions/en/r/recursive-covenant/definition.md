@@ -4,4 +4,4 @@ In short, a non-recursive covenant limits itself to the transaction that immedia
 
 ![A non-recursive covenant constrains only the outputs of the transaction that spends the UTXO, whereas a recursive covenant imposes the same constraint on all the outputs that follow.](../../../fr/r/recursif-covenant/assets/image-1.png)
 
-More generally, in computer science, "recursion" is the ability of a function to call itself, which creates a kind of endless nesting.
+More generally, in computer science, “recursion” is the ability of a function to call itself, which creates a kind of endless nesting.

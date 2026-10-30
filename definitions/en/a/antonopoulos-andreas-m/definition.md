@@ -4,6 +4,6 @@ Author and speaker specializing in Bitcoin, best known for the book *Mastering B
 
 On October 8, 2014, he testified before the Canadian Senate Standing Committee on Banking, Trade and Commerce, which was studying digital currency, its risks, and its benefits. He appeared there as an individual, as the author of *Mastering Bitcoin*.
 
-In late 2023, O'Reilly published the third edition, "Mastering Bitcoin: Programming the Open Blockchain," which he co-authored with David A. Harding.
+In late 2023, O'Reilly published the third edition, “Mastering Bitcoin: Programming the Open Blockchain,” which he co-authored with David A. Harding.
 
 The dictionary has entries on the private key, on key derivation in BIP-0032, and on the Lightning Network.

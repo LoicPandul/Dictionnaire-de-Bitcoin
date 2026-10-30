@@ -25,4 +25,4 @@ The XOR operation is used in many areas of computing, notably in cryptography, f
 
 In Bitcoin, the XOR operation is used in many places. For example, XOR is used extensively in the SHA256 function, itself widely used in the Bitcoin protocol. Some protocols, such as Coldcard's SeedXOR, also use this primitive for other applications. It is also found in BIP-0047, to encrypt the reusable payment code when it is transmitted.
 
-In the more general field of cryptography, XOR can be used as is as a symmetric encryption algorithm. This algorithm is called the "one-time pad" or the "Vernam cipher," after its inventor. Although useless in practice because of the key length, this algorithm is one of the only encryption algorithms recognized as unconditionally secure.
+In the more general field of cryptography, XOR can be used as is as a symmetric encryption algorithm. This algorithm is called the “one-time pad” or the “Vernam cipher,” after its inventor. Although useless in practice because of the key length, this algorithm is one of the only encryption algorithms recognized as unconditionally secure.

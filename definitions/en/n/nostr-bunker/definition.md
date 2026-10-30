@@ -12,6 +12,6 @@ The bunker keeps control of the relays: with `switch_relays`, it sends back its 
 
 Several signers offer it. Amber has offered bunker mode since its version 1.0.0 of May 10, 2024 (the beta of April 17, 2024 already announced it), and nsec.app (see nsec.app) runs its bunker in a browser service worker, which a server wakes up by notification when a request arrives.
 
-NIP-46 was added to the repository on February 20, 2023 under the title "Nostr Connect" (PR by Marco Argentieri). The `bunker://` URL replaced the old notation on February 6, 2024, the distinction between the bunker's key and the user's key was introduced on October 24, 2024, and the encryption of the exchanges moved from NIP-04 to NIP-44 on December 5, 2024 (the `nip04_encrypt` and `nip04_decrypt` methods are still offered to the client). The `logout` method was added on June 14, 2026.
+NIP-46 was added to the repository on February 20, 2023 under the title “Nostr Connect” (PR by Marco Argentieri). The `bunker://` URL replaced the old notation on February 6, 2024, the distinction between the bunker's key and the user's key was introduced on October 24, 2024, and the encryption of the exchanges moved from NIP-04 to NIP-44 on December 5, 2024 (the `nip04_encrypt` and `nip04_decrypt` methods are still offered to the client). The `logout` method was added on June 14, 2026.
 
 *Not to be confused with a browser extension or a local Android application, which are also signers but do not use relays.*

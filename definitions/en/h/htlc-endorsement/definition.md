@@ -1,4 +1,4 @@
-Local reputation mechanism on the Lightning Network designed to mitigate channel jamming attacks. Its principle is to let each routing node mark an incoming HTLC as "endorsed" or not, depending on the profitability history of the peer forwarding it.
+Local reputation mechanism on the Lightning Network designed to mitigate channel jamming attacks. Its principle is to let each routing node mark an incoming HTLC as “endorsed” or not, depending on the profitability history of the peer forwarding it.
 
 When a node receives an HTLC from a peer that has proven reliable and profitable in the past, it can pass this endorsement on to the next hop. Endorsed HTLCs then get priority access to two limited resources of each channel: HTLC slots (the maximum number of pending payments) and available liquidity. A share of these resources is reserved exclusively for endorsed HTLCs, while the rest remains available to everyone.
 

@@ -1,4 +1,4 @@
-Standardness rule used by network nodes to determine what they consider the "dust limit." This parameter sets a fee rate in sats per virtual kilobyte (sats/kvB) that serves as a reference to calculate whether a UTXO's value is lower than the fees needed to include it in a transaction. A UTXO is considered "dust" on Bitcoin if it requires more fees to be transferred than the value it represents. The limit is calculated as follows:
+Standardness rule used by network nodes to determine what they consider the “dust limit.” This parameter sets a fee rate in sats per virtual kilobyte (sats/kvB) that serves as a reference to calculate whether a UTXO's value is lower than the fees needed to include it in a transaction. A UTXO is considered “dust” on Bitcoin if it requires more fees to be transferred than the value it represents. The limit is calculated as follows:
 
 ```text
 limit = (input size + output size) * fee rate

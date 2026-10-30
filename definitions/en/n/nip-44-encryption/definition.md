@@ -10,6 +10,6 @@ NIP-44 also lists what it does not do. It offers no plausible deniability (a sig
 
 This format replaces the one in NIP-04, which encrypted with AES-256-CBC in an event of kind `4` and appended the initialization vector after the ciphertext (`?iv=`). The 2 formats are not interchangeable: NIP-44 states that it should not be used as is in place of NIP-04 payloads. NIP-04 carries the `unrecommended` warning, first in favor of NIP-44, then of NIP-17. The plaintext size limit was 65,535 bytes; since June 28, 2026, NIP-44 accepts up to 4,294,967,295 bytes, at the cost of a 6-byte prefix from 65,536 bytes. Signers also use it (see NOSTR SIGNER and NOSTR BUNKER).
 
-NIP-44 entered the NIPs repository on December 20, 2023, with the pull request "NIP44 encryption standard, revision 3", proposed by Paul Miller with Jon Staab. The same day, the NIP states that version 2 of the format was audited by Cure53 in December 2023.
+NIP-44 entered the NIPs repository on December 20, 2023, with the pull request “NIP44 encryption standard, revision 3”, proposed by Paul Miller with Jon Staab. The same day, the NIP states that version 2 of the format was audited by Cure53 in December 2023.
 
-*The official title of the NIP is "Encrypted Payloads (Versioned)". The name refers to an encryption format, not to a messaging protocol.*
+*The official title of the NIP is “Encrypted Payloads (Versioned)”. The name refers to an encryption format, not to a messaging protocol.*

@@ -1,3 +1,3 @@
 Method used for coin selection in the Bitcoin Core wallet since version 0.17, invented by Murch. BnB is a search for a set of UTXOs that matches the exact amount of the outputs to be funded in a transaction, in order to minimize change and the associated fees. Its goal is to minimize a waste metric that accounts for both the immediate cost and the expected future costs of change. The method is more accurate in terms of fees than earlier heuristics such as the knapsack solver. Branch-and-Bound is inspired by the problem-solving method of the same name, invented in 1960 by Ailsa Land and Alison Harcourt.
 
-*The method is also sometimes called "Murch's algorithm", after its inventor.*
+*The method is also sometimes called “Murch's algorithm”, after its inventor.*

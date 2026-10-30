@@ -2,4 +2,4 @@ Attack that consists of sending tiny amounts of bitcoin to a large number of rec
 
 ![An attacker sends dust to two of the victim's addresses; the victim spends it with another UTXO in a single transaction, thereby linking their three addresses.](../../../fr/d/dusting-attack/assets/image-1.png)
 
-*Some bitcoiners suggest no longer using the term "dusting attack" because it would be misleading. The term "dust" describes something very specific in Bitcoin Core. If a dusting attack really used dust as defined in Core, the attack would be ineffective. Some therefore suggest the term "forced address reuse" to describe the attack more precisely.*
+*Some bitcoiners suggest no longer using the term “dusting attack” because it would be misleading. The term “dust” describes something very specific in Bitcoin Core. If a dusting attack really used dust as defined in Core, the attack would be ineffective. Some therefore suggest the term “forced address reuse” to describe the attack more precisely.*

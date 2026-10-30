@@ -2,4 +2,4 @@ Maximum total amount of bitcoin a miner can collect upon finding a valid block o
 
 ![The block reward adds the subsidy and the sum of the fees of the block's transactions; the coinbase pays it to the miner.](../../../fr/r/recompense-de-bloc/assets/image-1.png)
 
-The block reward is distributed within a specific transaction called the "coinbase." The bitcoin it pays out are automatically locked for a period of 100 blocks. This is known as the maturity period. This reward is a ceiling: the coinbase can claim less, and the difference is then lost, but a block whose coinbase claims more is invalid (`bad-cb-amount`).
+The block reward is distributed within a specific transaction called the “coinbase.” The bitcoin it pays out are automatically locked for a period of 100 blocks. This is known as the maturity period. This reward is a ceiling: the coinbase can claim less, and the difference is then lost, but a block whose coinbase claims more is invalid (`bad-cb-amount`).

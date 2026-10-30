@@ -7,4 +7,4 @@ If one or more of these characteristics is observed, the script containing the `
 
 ![A UTXO locked by 144 OP_CHECKSEQUENCEVERIFY and confirmed at block N can be spent only in a block of height N + 144 or higher.](../../../fr/o/op-checksequenceverify-0xb2/assets/image-1.png)
 
-*This opcode is a replacement for `OP_NOP`. It was placed on `OP_NOP3`. It is often referred to by its acronym, "CSV". Note that `OP_CSV` must not be confused with the `nSequence` field of a transaction. The former uses the latter, but their natures and actions are different.*
+*This opcode is a replacement for `OP_NOP`. It was placed on `OP_NOP3`. It is often referred to by its acronym, “CSV”. Note that `OP_CSV` must not be confused with the `nSequence` field of a transaction. The former uses the latter, but their natures and actions are different.*

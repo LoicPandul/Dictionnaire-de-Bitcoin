@@ -15,4 +15,4 @@ In the end, Alice has sent 1 BTC to David through Bob and Carol (who can each ch
 
 ![The 1 BTC HTLCs are set up from Alice to David, then the preimage s revealed by David travels back from node to node to Alice and unlocks each HTLC.](../../../fr/h/htlc/assets/image-1.png)
 
-HTLCs thus enable so-called "atomic" operations: either the transfer fully succeeds, or it fails and the funds are returned. This keeps transactions secure even among several participants, with no need for trust.
+HTLCs thus enable so-called “atomic” operations: either the transfer fully succeeds, or it fails and the funds are returned. This keeps transactions secure even among several participants, with no need for trust.

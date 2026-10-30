@@ -1,1 +1,1 @@
-Economic principle that is the inverse of Gresham's law, stating that "good money drives out bad": when a currency loses confidence, often in hyperinflation, people refuse it for a more reliable one, despite its legal tender status.
+Economic principle that is the inverse of Gresham's law, stating that “good money drives out bad”: when a currency loses confidence, often in hyperinflation, people refuse it for a more reliable one, despite its legal tender status.

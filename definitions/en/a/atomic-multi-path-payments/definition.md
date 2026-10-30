@@ -8,4 +8,4 @@ In AMPs, a unique partial secret is used for each shard. Once all the shards are
 
 An advantage of AMPs is that they work even if only the receiver and the sender have implemented this method. Intermediate nodes handle these payments like regular transactions using HTLCs, without being aware that they are handling shards of a larger payment.
 
-*This method is also sometimes called "Atomic Multi-Part Payment".*
+*This method is also sometimes called “Atomic Multi-Part Payment”.*

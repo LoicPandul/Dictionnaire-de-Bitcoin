@@ -4,4 +4,4 @@ The fundamental principle of a joinpool-type system is therefore UTXO sharing to
 
 The Ark protocol can be considered a concrete implementation of the joinpool concept, in which an Ark Service Provider acts as coordinator and liquidity provider for the pool's participants.
 
-This type of system is sometimes also called a "coinpool" or "payment pool".
+This type of system is sometimes also called a “coinpool” or “payment pool”.

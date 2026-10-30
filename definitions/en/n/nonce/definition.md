@@ -6,4 +6,4 @@ Nonces are also used in the mining process on Bitcoin. Miners increment these mo
 
 *In 2010, researchers discovered that Sony's PlayStation 3 used the same nonce when signing different packages of code. This nonce reuse allowed attackers to compute the private key used to sign the software. With the private key in hand, the attackers could create valid signatures for any code, which let them run unauthorized software, including pirated games and custom operating systems, directly on the PS3.*
 
-*There is a common misconception about the origin of the term "nonce". Some claim that it is an abbreviation of "number only used once". In reality, the word dates back to the 12th century and comes from the semantic evolution of the Middle English phrase "for then anes", which meant "for this occasion".*
+*There is a common misconception about the origin of the term “nonce”. Some claim that it is an abbreviation of “number only used once”. In reality, the word dates back to the 12th century and comes from the semantic evolution of the Middle English phrase “for then anes”, which meant “for this occasion”.*

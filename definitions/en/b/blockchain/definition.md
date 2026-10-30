@@ -2,4 +2,4 @@ The blockchain is the name commonly given to the distributed timestamp server of
 
 ![A chain of three blocks where each contains the hash of the previous block: modifying block 1 invalidates the link of block 2, and each following block must then be redone.](../../../fr/b/blockchain/assets/image-1.png)
 
-*Following the many abusive marketing uses of the term "blockchain", especially in the late 2010s, many bitcoiners refuse to use the word. Some prefer to speak of the "timechain" for this concept. Others, referring to Satoshi Nakamoto's white paper, speak of a "proof-of-work chain".*
+*Following the many abusive marketing uses of the term “blockchain”, especially in the late 2010s, many bitcoiners refuse to use the word. Some prefer to speak of the “timechain” for this concept. Others, referring to Satoshi Nakamoto's white paper, speak of a “proof-of-work chain”.*

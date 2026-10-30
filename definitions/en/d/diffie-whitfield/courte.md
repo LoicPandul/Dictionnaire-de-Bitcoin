@@ -1,1 +1,1 @@
-American cryptographer, coauthor with Martin Hellman of "New Directions in Cryptography" (1976), which founded public-key cryptography and described the Diffie-Hellman key exchange, reused on elliptic curves by BIP-0324 and BIP-0352.
+American cryptographer, coauthor with Martin Hellman of “New Directions in Cryptography” (1976), which founded public-key cryptography and described the Diffie-Hellman key exchange, reused on elliptic curves by BIP-0324 and BIP-0352.

@@ -8,4 +8,4 @@ Unlike long exposure, no best practice avoids it: BIP-0360 states that wallet hy
 
 Another approach does not require replacing the signature of the spend itself. Martin Habovštiak described on the bitcoin-dev mailing list, according to Optech Newsletter #348 of April 4, 2025, a multi-step protocol, practically identical to a proposal by Tim Ruffing, known as the Guy Fawkes signature scheme. Alice first commits to her spend without revealing it, using a transaction protected by a post-quantum signature, then waits for that commitment to be deeply confirmed. Only then does she reveal the SHA256 preimage and the spend, and nodes execute the spend only if the first transaction that committed to this preimage also committed to the spend. Optech estimates that this protocol could be deployed by soft fork, but it assumes that the output contains a commitment to a preimage that is never revealed.
 
-*Chaincode Labs uses "short-range attack" for the same attack, a name that BIP-0360 replaced with "short exposure" on January 20, 2025.*
+*Chaincode Labs uses “short-range attack” for the same attack, a name that BIP-0360 replaced with “short exposure” on January 20, 2025.*

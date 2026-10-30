@@ -6,4 +6,4 @@ The mechanism is designed to preserve the node's privacy: at each channel update
 
 A watchtower is a minimally trusted third party: it can neither modify nor divert the funds, since the penalty transaction is already signed with outputs fixed in favor of the channel owner. The only risk for the node is relying on a watchtower that fails to fulfill its role at the moment it is truly needed. This is why a node can configure several, to make sure that at least one of them acts correctly when needed.
 
-Some watchtowers are called "altruistic": they are offered publicly and free of charge, and any Lightning node can also play this role for other nodes.
+Some watchtowers are called “altruistic”: they are offered publicly and free of charge, and any Lightning node can also play this role for other nodes.

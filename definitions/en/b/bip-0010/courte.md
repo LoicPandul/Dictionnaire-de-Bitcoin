@@ -1,1 +1,1 @@
-Proposal that defined a text format, the "Transaction Distribution Proposal", for passing a multisignature transaction between its signers and collecting their signatures, including on an offline device.
+Proposal that defined a text format, the “Transaction Distribution Proposal”, for passing a multisignature transaction between its signers and collecting their signatures, including on an offline device.

@@ -1,1 +1,1 @@
-Subunit of bitcoin equal to one thousandth of a bitcoin, or 0.001 BTC, or 100,000 satoshis. The millibitcoin is sometimes abbreviated "mBTC". This unit is used to express intermediate amounts more legibly than decimal fractions of a bitcoin, notably in wallet interfaces and on exchanges.
+Subunit of bitcoin equal to one thousandth of a bitcoin, or 0.001 BTC, or 100,000 satoshis. The millibitcoin is sometimes abbreviated “mBTC”. This unit is used to express intermediate amounts more legibly than decimal fractions of a bitcoin, notably in wallet interfaces and on exchanges.

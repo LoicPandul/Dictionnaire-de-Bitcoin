@@ -16,4 +16,4 @@ In addition to these three sighash flags, the `SIGHASH_ANYONECANPAY` modifier (`
 
 * `SIGHASH_SINGLE | SIGHASH_ANYONECANPAY` (`0x83`): The signature applies to a single input and only to the output with the same index as that input.
 
-*A synonym sometimes used for "sighash" is "signature hash types".*
+*A synonym sometimes used for “sighash” is “signature hash types”.*

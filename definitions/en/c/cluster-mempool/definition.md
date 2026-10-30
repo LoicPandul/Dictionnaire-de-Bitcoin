@@ -1,4 +1,4 @@
-Overhaul of mempool management, shipped in Bitcoin Core 31.0. The cluster mempool organizes unconfirmed transactions into "clusters": sets of transactions linked by parent-child relationships. Within each cluster, a linearization algorithm precomputes the optimal mining order and groups transactions into "chunks" sorted by decreasing fee rate.
+Overhaul of mempool management, shipped in Bitcoin Core 31.0. The cluster mempool organizes unconfirmed transactions into “clusters”: sets of transactions linked by parent-child relationships. Within each cluster, a linearization algorithm precomputes the optimal mining order and groups transactions into “chunks” sorted by decreasing fee rate.
 
 This overhaul fixes an inconsistency in the old mempool. Transaction selection for mining used the highest ancestor fee rate, while eviction used the lowest descendant fee rate. Since these two heuristics were not symmetric, the best transaction in the mempool could end up evicted first. With the cluster mempool, block building and eviction become exactly inverse operations: chunks are included from most to least profitable, and evicted in the reverse order.
 

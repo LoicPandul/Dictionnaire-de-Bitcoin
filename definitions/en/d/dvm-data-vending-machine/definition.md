@@ -1,6 +1,6 @@
 Nostr service that performs a computation on demand, often for payment, following the NIP-90 protocol: the customer publishes a request describing the desired result (transcription of an audio file, summary, translation, etc.), and a service provider processes it and publishes the response. The acronym DVM refers to this service provider.
 
-The principle rests on NIP-90's formula: "Money in, data out." The customer does not necessarily care about the identity of whoever does the work, only about the result, and several service providers can compete to supply it. NIP-90 therefore distinguishes two actors, customers (public keys that request work) and service providers (public keys that perform it), and reserves kinds `5000` to `7000`:
+The principle rests on NIP-90's formula: “Money in, data out.” The customer does not necessarily care about the identity of whoever does the work, only about the result, and several service providers can compete to supply it. NIP-90 therefore distinguishes two actors, customers (public keys that request work) and service providers (public keys that perform it), and reserves kinds `5000` to `7000`:
 
 * `5000` to `5999`: requests;
 * `6000` to `6999`: results, whose kind is always the request's kind plus 1,000;
@@ -12,4 +12,4 @@ The protocol provides for three notable extensions. A request's inputs and param
 
 This flexibility lets each service provider judge the risk in its own way. NIP-90 states that it is not its place to define how each service provider conducts its business, so nothing requires delivering after payment or paying after delivery.
 
-The first commit of NIP-90, signed by pablof7z, dates from July 3, 2023, and the PR "NIP-90: Data Vending Machines" was merged into the NIPs repository on October 29, 2023. It has since been marked `unrecommended`: in May 2026, the NIPs repository added the warning "this got totally out of control, prefer use-case-specific microstandards," meaning that it is better to write a small standard for each use case than to rely on this general framework. The protocol remains documented, and software can use it, but it is no longer recommended as the basis for new services.
+The first commit of NIP-90, signed by pablof7z, dates from July 3, 2023, and the PR “NIP-90: Data Vending Machines” was merged into the NIPs repository on October 29, 2023. It has since been marked `unrecommended`: in May 2026, the NIPs repository added the warning “this got totally out of control, prefer use-case-specific microstandards,” meaning that it is better to write a small standard for each use case than to rely on this general framework. The protocol remains documented, and software can use it, but it is no longer recommended as the basis for new services.

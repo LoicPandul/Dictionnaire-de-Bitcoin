@@ -2,4 +2,4 @@ Property of a computer network in which decision-making power and control are sh
 
 ![Three network topologies side by side: centralized around a single authority, decentralized around a few authorities, and distributed with no central node.](../../../fr/d/distribue/assets/image-1.png)
 
-*Some people call Bitcoin a decentralized system, and the two terms are often used interchangeably. A more evocative synonym of "distributed" is "peer-to-peer," sometimes abbreviated "P2P."*
+*Some people call Bitcoin a decentralized system, and the two terms are often used interchangeably. A more evocative synonym of “distributed” is “peer-to-peer,” sometimes abbreviated “P2P.”*

@@ -19,4 +19,4 @@ The system has its pitfalls. The sender must stick to the mints that the recipie
 
 NIP-61 was added to the NIP repository on October 25, 2024, along with NIP-60, in a commit by Pablo Fernandez, and has the status `draft`.
 
-*NIP-61 also uses the expression "Cashu zap".*
+*NIP-61 also uses the expression “Cashu zap”.*

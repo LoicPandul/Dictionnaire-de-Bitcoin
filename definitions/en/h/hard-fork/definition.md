@@ -1,4 +1,4 @@
-Change to the protocol rules that is not backward compatible. If part of the nodes do not adopt it, the change splits the network of Bitcoin nodes into two distinct groups: the nodes with the update and the nodes without it. The split shows up as the original blockchain dividing into two separate blockchains that still share a common history, hence the term "fork".
+Change to the protocol rules that is not backward compatible. If part of the nodes do not adopt it, the change splits the network of Bitcoin nodes into two distinct groups: the nodes with the update and the nodes without it. The split shows up as the original blockchain dividing into two separate blockchains that still share a common history, hence the term “fork”.
 
 ![After two common blocks, the Bitcoin chain splits into two branches: updated nodes follow the one with the new rules, while old nodes reject those blocks and stay on the one with the old rules.](../../../fr/h/hard-fork/assets/image-1.png)
 

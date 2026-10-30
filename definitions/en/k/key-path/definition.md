@@ -12,4 +12,4 @@ This path has a downside. The output key is public as soon as the funds are rece
 
 The key path dates from the Taproot soft fork, specified by BIP-0341 (Pieter Wuille, Jonas Nick, and Anthony Towns), whose rules apply starting at block 709,632.
 
-*Sometimes written "keypath". Not to be confused with the derivation path of an HD wallet, which also contains the word "path" in Bitcoin Core's code.*
+*Sometimes written “keypath”. Not to be confused with the derivation path of an HD wallet, which also contains the word “path” in Bitcoin Core's code.*

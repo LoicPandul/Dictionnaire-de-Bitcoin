@@ -10,4 +10,4 @@ The second (backward anonset, also called backward-looking metrics) indicates th
 
 ![Backward anonset: going back from the UTXO under study into the past, each stage of earlier coinjoins brings new Tx0 outputs, the possible sources of the coin, down to the genesis coinjoin.](../../../fr/a/anonsets-anonymity-sets/assets/image-2.png)
 
-*Anonsets are also sometimes called "scores" (forward score and backward score).*
+*Anonsets are also sometimes called “scores” (forward score and backward score).*
