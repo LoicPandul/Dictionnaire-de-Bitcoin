@@ -171,11 +171,9 @@ Le reste de ce qu'il lit ne bouge pas (`definitions/`, `chronologie/fr/`, `templ
 ## Plus tard
 
 `templates/en/`, `specifications/en/` et `chronologie/en/` existent depuis le 29 octobre 2026,
-avec `python3 scripts/main.py build --lang en` (sorties dans `build/en/<édition>/`). Restent :
+avec `python3 scripts/main.py build --lang en` (sorties dans `build/en/<édition>/`). Les schémas
+ont leur version anglaise depuis le 30 octobre 2026, dans le dossier `assets/` de l'entrée
+anglaise : le générateur la prend à la place de l'image française (`Dictionary.load_translation`),
+et les logos restent liés au français. Reste :
 
 - `README.en.md` et un index anglais, générés comme `INDEX.md`.
-- Schémas en anglais : les traductions réutilisent aujourd'hui les images françaises
-  (`../../../fr/<lettre>/<slug>/assets/…`) ; un schéma redessiné en anglais ira dans le dossier
-  `assets/` de l'entrée anglaise.
-- Une entrée anglaise qui aurait ses propres images : le générateur lit aujourd'hui les images de
-  l'entrée française (`Dictionary.load_translation`).
