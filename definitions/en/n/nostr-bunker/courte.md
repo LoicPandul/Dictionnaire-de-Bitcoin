@@ -1,1 +1,0 @@
-Remote signer defined by NIP-46: it keeps the private key and signs on request from a client, which talks to it through encrypted events carried by relays, after a connection via a `bunker://` or `nostrconnect://` URL.

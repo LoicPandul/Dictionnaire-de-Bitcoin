@@ -1,1 +1,0 @@
-Nostr event (kinds `30000` to `39999`) replaceable by author, kind, and `d` tag value, and so designated by a stable address rather than by its ID. It carries long-form articles and many lists, and is shared as a `naddr`.

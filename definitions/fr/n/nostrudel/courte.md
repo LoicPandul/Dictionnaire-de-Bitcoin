@@ -1,1 +1,0 @@
-Client Nostr web créé par hzrd149, l'auteur de Blossom, conçu pour explorer le protocole : il laisse voir les événements sous-jacents et sait se brancher sur un portefeuille Lightning et intègre un portefeuille Cashu.

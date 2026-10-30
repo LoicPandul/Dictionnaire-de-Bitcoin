@@ -1,1 +1,0 @@
-Identifier in the format of an email address (`name@domain`) declared in a Nostr profile, which the client checks by asking the domain for the public key associated with the name. It identifies an account without verifying the person behind it.

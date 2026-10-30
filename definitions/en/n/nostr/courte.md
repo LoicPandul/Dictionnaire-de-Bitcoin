@@ -1,1 +1,0 @@
-Open and decentralized communication protocol, created by fiatjaf in 2020, in which clients publish signed events to relays. It shares the secp256k1 curve with Bitcoin and integrates Lightning payments (zaps).

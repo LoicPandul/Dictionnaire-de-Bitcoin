@@ -1,1 +1,0 @@
-Événement Nostr de kind `1` qui porte un message texte court, l'équivalent d'une publication sur un réseau social. Par extension, le mot désigne aussi l'identifiant `note` de NIP-19, qui encode en Bech32 l'identifiant d'un événement pour le partager.

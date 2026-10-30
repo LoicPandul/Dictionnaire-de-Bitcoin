@@ -1,1 +1,0 @@
-Identifiant au format d'une adresse e-mail (`nom@domaine`) déclaré dans un profil Nostr, que le client contrôle en demandant au domaine la clé publique associée au nom. Il identifie un compte sans vérifier la personne qui le tient.

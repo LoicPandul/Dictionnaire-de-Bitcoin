@@ -1,1 +1,0 @@
-Identifiant partageable défini par NIP-19 qui encode en Bech32 l'identifiant d'un événement Nostr avec des indices facultatifs (relais, auteur, kind), pour qu'un autre client sache où aller le chercher.

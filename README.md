@@ -1,7 +1,7 @@
 [![Cover Image](./assets/images/cover.png)](https://github.com/LoicPandul/Dictionnaire-de-Bitcoin/blob/main/dictionnaire-de-bitcoin.pdf)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Nombre%20de%20d%C3%A9finitions-1536-1B3A4B?style=for-the-badge" alt="Nombre de définitions">
+  <img src="https://img.shields.io/badge/Nombre%20de%20d%C3%A9finitions-1492-1B3A4B?style=for-the-badge" alt="Nombre de définitions">
 </p>
 
 <p align="center">

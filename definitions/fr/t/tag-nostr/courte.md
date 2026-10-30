@@ -1,1 +1,0 @@
-Tableau de chaînes d'un événement Nostr qui le relie à un autre événement, à une clé publique ou à un événement adressable ; par convention, les relais indexent la première valeur des tags d'une lettre, ce qui permet de retrouver les réponses.

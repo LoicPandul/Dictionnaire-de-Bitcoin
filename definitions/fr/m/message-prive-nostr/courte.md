@@ -1,1 +1,0 @@
-Message direct chiffré défini par NIP-17 : un événement de kind `14` chiffré avec NIP-44 puis emballé par *gift wrap*, qui cache l'expéditeur, le contenu et l'heure aux relais, contrairement à NIP-04.

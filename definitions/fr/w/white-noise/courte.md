@@ -1,1 +1,0 @@
-Messagerie privée chiffrée de bout en bout, bâtie sur Nostr et sur le protocole Marmot (MLS), sans numéro de téléphone ni e-mail. Jeff Gardner, cofondateur du projet, a écrit NIP-EE avant de le remplacer par Marmot.

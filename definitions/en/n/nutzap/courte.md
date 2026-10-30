@@ -1,1 +1,0 @@
-Nostr payment defined by NIP-61: a Cashu token locked to its recipient, published in an event that serves as a receipt. Unlike a zap, it requires neither a Lightning invoice from the recipient nor an LNURL server.

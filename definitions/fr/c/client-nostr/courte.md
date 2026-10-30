@@ -1,1 +1,0 @@
-Application avec laquelle un utilisateur lit et publie sur Nostr : elle fait signer ses événements, les envoie à plusieurs relais, s'abonne à ceux des comptes suivis, vérifie leurs signatures et construit le fil.

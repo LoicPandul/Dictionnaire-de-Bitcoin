@@ -1,1 +1,0 @@
-Measure of trust computed from the relationships between accounts (follows, mutes), used to filter spam or rank accounts without a central authority. NIP-85 lets users delegate the heaviest computations to providers that publish signed scores.

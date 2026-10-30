@@ -1,1 +1,0 @@
-Shareable identifier defined by NIP-19 that designates an addressable event by its kind, its author's key, and its `d` tag, with optional relays, so the link leads to the latest version a relay has received of an article or list.

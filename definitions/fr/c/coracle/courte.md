@@ -1,1 +1,0 @@
-Client web de Nostr créé par Jon Staab (hodlbod), auteur de NIP-59 (*gift wrap*). Coracle se distingue par sa gestion des relais, sa toile de confiance et ses zaps, et s'utilise dans un navigateur ou sur Android.

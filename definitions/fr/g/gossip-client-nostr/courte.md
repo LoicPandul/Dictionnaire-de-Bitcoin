@@ -1,1 +1,0 @@
-Client Nostr de bureau écrit en Rust par Mike Dilger, auteur de NIP-65, dont le dépôt est déclaré inactif en 2026. Il a donné son nom au modèle *gossip*, ancêtre du modèle *outbox* : le client lit chaque personne sur les relais où elle publie.

@@ -1,1 +1,0 @@
-Logiciel ou appareil qui garde la clé privée d'un utilisateur Nostr et signe les événements à la demande d'un client, sans jamais la lui donner : extension de navigateur, application Android ou signataire distant.

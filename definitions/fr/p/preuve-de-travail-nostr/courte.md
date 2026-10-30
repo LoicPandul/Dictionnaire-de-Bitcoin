@@ -1,1 +1,0 @@
-Mécanisme anti-spam de NIP-13 où l'auteur d'un événement Nostr fait varier le compteur d'un tag `nonce` jusqu'à ce que l'identifiant commence par un nombre voulu de bits à zéro, sur le principe du minage de Bitcoin.

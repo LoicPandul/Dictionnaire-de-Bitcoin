@@ -1,1 +1,0 @@
-Protocole de communication ouvert et décentralisé, créé par fiatjaf en 2020, où des clients publient des événements signés vers des relais. Il partage la courbe secp256k1 avec Bitcoin et intègre les paiements Lightning (*zaps*).

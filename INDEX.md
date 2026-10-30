@@ -1,6 +1,6 @@
 # Index du Dictionnaire de Bitcoin
 
-Ce fichier liste les 1536 entrées du dictionnaire, partie par partie.
+Ce fichier liste les 1492 entrées du dictionnaire, partie par partie.
 Chaque entrée a une version développée (`definition.md`) et une version courte (`courte.md`).
 
 [Dictionnaire technique](#dictionnaire-technique) | [Entreprises, applications et logiciels](#entreprises-applications-et-logiciels) | [Personnes](#personnes) | [Spécifications](#spécifications)
@@ -9,7 +9,7 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 ## Dictionnaire technique
 
-1060 entrées.
+1027 entrées.
 
 ### Dictionnaire technique : A
 
@@ -128,7 +128,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [BLOCKSIGNERS](definitions/fr/b/blocksigners/definition.md) | SIDECHAIN | `eefc35f8-7b36-4cf0-a095-a4e353b6342f` |
 | [BLOCKSIZE WAR](definitions/fr/b/blocksize-war/definition.md) | HISTOIRE ET CULTURE | `5e8e92ec-5848-47bb-b47e-92f655ee1c7f` |
 | [BLOOM FILTER](definitions/fr/b/bloom-filter/definition.md) | RÉSEAU | `b365a328-efd9-4bf5-861c-4cab3cfbf9af` |
-| [BLOSSOM](definitions/fr/b/blossom/definition.md) | NOSTR | `30c76061-c76e-4403-a464-41a8f5ff8590` |
 | [BOLT](definitions/fr/b/bolt/definition.md) | LIGHTNING NETWORK | `b80ec0d7-d56f-46c4-a0b3-45a3144de0e5` |
 | [BORROMEAN RING SIGNATURES](definitions/fr/b/borromean-ring-signatures/definition.md) | CRYPTOGRAPHIE | `92d2e0f8-9f00-473b-8e39-279eed39973e` |
 | [BOUNTY](definitions/fr/b/bounty/definition.md) | ÉVOLUTION DU PROTOCOLE | `4bb65831-8540-4c8d-be14-1f834fe1afd8` |
@@ -150,7 +149,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [BULL MARKET](definitions/fr/b/bull-market/definition.md) | ÉCONOMIE ET RÉGULATION | `c0ae585c-1a11-451c-9324-b4e45792fbb8` |
 | [BULL RUN](definitions/fr/b/bull-run/definition.md) | ÉCONOMIE ET RÉGULATION | `d100a604-1b22-446d-872f-2dd642d6c81f` |
 | [BULLETPROOFS](definitions/fr/b/bulletproofs/definition.md) | CRYPTOGRAPHIE | `98218fd1-053e-45ac-8152-41e92e5ffb2b` |
-| [BUNKER NOSTR](definitions/fr/b/bunker-nostr/definition.md) | NOSTR | `21b226c3-4342-421b-9da4-cfecede2212a` |
 | [BURN ADDRESS](definitions/fr/b/burn-address/definition.md) | TRANSACTIONS | `c47a5a69-25e3-4600-b1ee-99e7c8ae53d1` |
 | [BUSINESS LOGIC](definitions/fr/b/business-logic/definition.md) | RGB | `e3b030f5-20e4-40f5-ba3f-3a5cbc376105` |
 
@@ -192,7 +190,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [CHEMIN DE DÉRIVATION](definitions/fr/c/chemin-de-derivation/definition.md) | CLÉS ET DÉRIVATION | `080efa61-7f74-4d60-9ee4-4fa10920b967` |
 | [CHEMIN DE RÉCUPÉRATION](definitions/fr/c/chemin-de-recuperation/definition.md) | PORTEFEUILLE | `9415129d-01e2-4e94-9bbd-49bb7b13e3ee` |
 | [CHEMIN PRIMAIRE](definitions/fr/c/chemin-primaire/definition.md) | PORTEFEUILLE | `b64a302d-cfea-4808-8ad2-68cf4ba5313f` |
-| [CHIFFREMENT NIP-44](definitions/fr/c/chiffrement-nip-44/definition.md) | NOSTR | `b80f0547-bc77-4ab1-9ce1-963095360db7` |
 | [CHIFFRER - CHIFFREMENT](definitions/fr/c/chiffrer-chiffrement/definition.md) | CRYPTOGRAPHIE | `d26600df-84f3-4dbf-8b3d-5822dd19f949` |
 | [CIBLE DE DIFFICULTÉ](definitions/fr/c/cible-de-difficulte/definition.md) | MINAGE | `c6775cf9-b4bd-404e-bd93-71dda95b0358` |
 | [CIOH](definitions/fr/c/cioh/definition.md) | ANALYSE DE CHAÎNE | `769b9c1b-03b7-4b00-8ed6-b2d8a0729506` |
@@ -210,7 +207,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [CLEARNET](definitions/fr/c/clearnet/definition.md) | RÉSEAU | `35e24419-afc6-4800-b48c-8233dcee342e` |
 | [CLEMENTINE](definitions/fr/c/clementine/definition.md) | ROLLUPS ET BITVM | `a3913f01-8ccd-4b0e-9e5d-bb5d3acc1289` |
 | [CLI](definitions/fr/c/cli/definition.md) | INFORMATIQUE | `2428e622-5cc7-40da-af61-d9df91119234` |
-| [CLIENT NOSTR](definitions/fr/c/client-nostr/definition.md) | NOSTR | `4a1d50aa-b7fd-498c-af70-318426d8e8c9` |
 | [CLIENT-SIDE VALIDATION](definitions/fr/c/client-side-validation/definition.md) | RGB | `853da785-8ace-4349-9a4e-8b8c5dcba606` |
 | [CLONE](definitions/fr/c/clone/definition.md) | INFORMATIQUE | `f642e13b-424f-415f-9e2f-39a0065a629d` |
 | [CLUSTER](definitions/fr/c/cluster/definition.md) | ANALYSE DE CHAÎNE | `fe3088e7-4183-4b62-8f88-da30dec601e3` |
@@ -248,7 +244,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [CONSIGNMENT](definitions/fr/c/consignment/definition.md) | RGB | `6d0005b3-5163-47fc-827d-6f842eaa00b2` |
 | [CONSOLIDATION](definitions/fr/c/consolidation/definition.md) | TRANSACTIONS | `d1af921f-2a71-4f7a-a6ae-ee425e64b289` |
 | [CONTENEUR](definitions/fr/c/conteneur/definition.md) | MINAGE | `2df24da2-a435-459a-8476-b00c90cd8a82` |
-| [CONTENU LONG NOSTR](definitions/fr/c/contenu-long-nostr/definition.md) | NOSTR | `79be120c-1622-4af1-9589-9a453dcfe746` |
 | [CONTRACT OPERATION](definitions/fr/c/contract-operation/definition.md) | RGB | `927b5e3d-e290-41e1-b6c0-ec86da69de6f` |
 | [CONTRACT PARTICIPANT](definitions/fr/c/contract-participant/definition.md) | RGB | `1c5cfca6-88b1-4560-a570-01fe897636a5` |
 | [CONTRACT RIGHTS](definitions/fr/c/contract-rights/definition.md) | RGB | `a63da214-1470-4dd7-aa04-8009088924d1` |
@@ -332,7 +327,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [DUST LIMIT](definitions/fr/d/dust-limit/definition.md) | MEMPOOL ET FRAIS | `e7264cc5-e0b9-4056-a9c2-4e82c658b4f9` |
 | [DUSTING ATTACK](definitions/fr/d/dusting-attack/definition.md) | ATTAQUE | `93cc6a17-c784-4674-b714-fe31d94db987` |
 | [DUSTRELAYFEE](definitions/fr/d/dustrelayfee/definition.md) | MEMPOOL ET FRAIS | `fcc6b84e-16b3-4b18-911e-da0abcad2845` |
-| [DVM - DATA VENDING MACHINE](definitions/fr/d/dvm-data-vending-machine/definition.md) | NOSTR | `6df54420-1fbc-4904-aef1-24a4c616a649` |
 | [DYNAFED - DYNAMIC FEDERATIONS](definitions/fr/d/dynamic-federations/definition.md) | SIDECHAIN | `d007d392-ba8d-431c-8efb-0d2049a1a122` |
 
 ### Dictionnaire technique : E
@@ -365,9 +359,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [ESTIMATION DES FRAIS](definitions/fr/e/estimation-des-frais/definition.md) | MEMPOOL ET FRAIS | `8089d4d6-bfae-48ae-9810-200c0abcc968` |
 | [ETF](definitions/fr/e/etf/definition.md) | ÉCONOMIE ET RÉGULATION | `376ea445-dbe9-4705-90fd-ee999096e9bd` |
 | [ÉTIQUETAGE](definitions/fr/e/etiquetage/definition.md) | PORTEFEUILLE | `589b71e6-7efb-41db-9186-5ad56e686a08` |
-| [ÉVÉNEMENT ADRESSABLE](definitions/fr/e/evenement-adressable/definition.md) | NOSTR | `512b870b-dd9a-4828-adb3-fd29975ae639` |
-| [ÉVÉNEMENT NOSTR](definitions/fr/e/evenement-nostr/definition.md) | NOSTR | `8c84c99c-fc27-4a7f-bdf7-b731df6adb01` |
-| [ÉVÉNEMENT REMPLAÇABLE](definitions/fr/e/evenement-remplacable/definition.md) | NOSTR | `b2a20a54-82b5-41a4-bad3-d584f4b0f714` |
 | [EXIT TRANSACTION](definitions/fr/e/exit-transaction/definition.md) | SPARK ET STATECHAINS | `ae239b0e-5722-4280-a3fa-7e41c73d6331` |
 | [EXPLORATEUR DE BLOC](definitions/fr/e/explorateur-de-bloc/definition.md) | FONCTIONNEMENT DU NŒUD | `bd2933e9-ee46-4cb5-925a-69f18c0f8eb7` |
 | [EXTENSION BLOCK](definitions/fr/e/extension-block/definition.md) | ÉVOLUTION DU PROTOCOLE | `f6f1e02f-a08f-4522-9312-02c99ac21fbd` |
@@ -423,7 +414,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [GENESIS](definitions/fr/g/genesis/definition.md) | RGB | `a64c6263-b1aa-423a-a1b4-3faeefb3decf` |
 | [GETBLOCKTEMPLATE](definitions/fr/g/getblocktemplate/definition.md) | MINAGE | `712e0d37-e2ec-400b-812b-15ce5211edca` |
 | [GETWORK](definitions/fr/g/getwork/definition.md) | MINAGE | `6d187b5f-46d2-4f57-be37-fab3fb93dfdf` |
-| [GIFT WRAP](definitions/fr/g/gift-wrap/definition.md) | NOSTR | `8b521c3e-a800-4e35-8738-399205900727` |
 | [GIT](definitions/fr/g/git/definition.md) | INFORMATIQUE | `684e2c16-bab8-402c-9c29-2fd6d214c92e` |
 | [GITHUB](definitions/fr/g/github/definition.md) | INFORMATIQUE | `6913b5ed-5b2f-448f-8e1e-b3399d321e45` |
 | [GITLAB](definitions/fr/g/gitlab/definition.md) | INFORMATIQUE | `6425380f-3375-4de1-9230-1415d23131b0` |
@@ -484,7 +474,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 |-------|-----------|------|
 | [I2P](definitions/fr/i/i2p/definition.md) | RÉSEAU | `fd043cb1-d219-4448-a4c8-ebe1de19a3f8` |
 | [IBD - INITIAL BLOCK DOWNLOAD](definitions/fr/i/ibd-initial-block-download/definition.md) | FONCTIONNEMENT DU NŒUD | `7a208ac3-224a-44c8-bf82-ac227941ae5d` |
-| [IDENTIFIANT NIP-05](definitions/fr/i/identifiant-nip-05/definition.md) | NOSTR | `68a71ac8-81b2-4c4d-a52f-8040656177a3` |
 | [IMMERSION COOLING](definitions/fr/i/immersion-cooling/definition.md) | MINAGE | `498eeb2f-8171-43dc-a934-02eeb8300459` |
 | [IMPLÉMENTATION DE BITCOIN](definitions/fr/i/implementation-de-bitcoin/definition.md) | PROTOCOLE | `dae51823-888b-4bef-bc16-e58cbb916b29` |
 | [INBOUND CAPACITY](definitions/fr/i/inbound-capacity/definition.md) | LIGHTNING NETWORK | `2b1186cb-b885-410f-983d-d2040a2f11ce` |
@@ -521,7 +510,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [KEYNÉSIANISME](definitions/fr/k/keynesianisme/definition.md) | ÉCONOMIE ET RÉGULATION | `d46c6972-591f-4b70-95d8-fa7e9584fd0e` |
 | [KEYSEND](definitions/fr/k/keysend/definition.md) | PAIEMENTS LIGHTNING | `7068dffb-5f16-4ad9-ab63-6581e745944d` |
 | [KEYSTORE](definitions/fr/k/keystore/definition.md) | PORTEFEUILLE | `9796a556-9f66-4a90-9295-d11042814c50` |
-| [KIND NOSTR](definitions/fr/k/kind-nostr/definition.md) | NOSTR | `364fa984-765c-4d66-9383-2ecdfadf124a` |
 | [KNAPSACK SOLVER](definitions/fr/k/knapsack-solver/definition.md) | PORTEFEUILLE | `3bded62b-9686-41e8-8f04-b0903f8d9482` |
 | [KYC - KNOW YOUR CUSTOMER](definitions/fr/k/kyc-know-your-customer/definition.md) | ÉCONOMIE ET RÉGULATION | `501e3e0a-3d9d-447b-82be-991828b5f05e` |
 
@@ -585,7 +573,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [MERGE](definitions/fr/m/merge/definition.md) | INFORMATIQUE | `5118f3a7-1b37-456f-9347-adf42a6e87dd` |
 | [MERKLE BLOCK](definitions/fr/m/merkle-block/definition.md) | RÉSEAU | `32b6f51a-5dfb-4897-ba70-ede0c158c719` |
 | [MERKLE SUM TREE](definitions/fr/m/merkle-sum-tree/definition.md) | INFORMATIQUE | `2c0377ac-5255-43f8-b437-22280380a4ea` |
-| [MESSAGE PRIVÉ NOSTR](definitions/fr/m/message-prive-nostr/definition.md) | NOSTR | `248b7420-32ab-4426-8687-8e8e097cde0e` |
 | [MESURE À LA PRISE](definitions/fr/m/mesure-a-la-prise/definition.md) | MINAGE | `c5465ec6-2f26-45f5-910b-a9dee66a2bd3` |
 | [MÉTADONNÉES](definitions/fr/m/metadonnees/definition.md) | INFORMATIQUE | `868a3dc9-9013-43e9-b79a-0264681c2689` |
 | [MÉTHODE D'ACTIVATION](definitions/fr/m/methode-d-activation/definition.md) | ÉVOLUTION DU PROTOCOLE | `40382fe3-b848-4e45-bfaa-1438b187b3ea` |
@@ -610,9 +597,7 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [ML-KEM](definitions/fr/m/ml-kem/definition.md) | INFORMATIQUE QUANTIQUE | `1cd99a57-6435-4764-90cf-106585bcd02f` |
 | [MODÈLE DE SCRIPT](definitions/fr/m/modele-de-script/definition.md) | SCRIPT | `a523b34d-5c65-4d56-9c60-e0117e659efc` |
 | [MODÈLE DE TRANSACTION](definitions/fr/m/modele-de-transaction/definition.md) | ANALYSE DE CHAÎNE | `11de35b9-e665-44db-808a-6133d55d209f` |
-| [MODÈLE OUTBOX](definitions/fr/m/modele-outbox/definition.md) | NOSTR | `026376cc-7ac1-4ce6-8815-67bb51271541` |
 | [MODÈLE TEMPOREL](definitions/fr/m/modele-temporel/definition.md) | ANALYSE DE CHAÎNE | `47d3dd40-f2cb-43b8-95b0-dff812552ad7` |
-| [MOSTRO](definitions/fr/m/mostro/definition.md) | NOSTR | `c5ad62f5-34ac-4692-aca9-f414370c3f48` |
 | [MPP - MULTI-PATH PAYMENTS](definitions/fr/m/mpp-multi-path-payments/definition.md) | PAIEMENTS LIGHTNING | `3324d1a5-005e-4453-809a-3c4ab2062282` |
 | [MS-SMT](definitions/fr/m/ms-smt/definition.md) | INFORMATIQUE | `d52a8910-78e2-42e2-82d0-3844ce5b202e` |
 | [MTP - MEDIAN TIME PAST](definitions/fr/m/mtp-median-time-past/definition.md) | PROTOCOLE | `a4857ce4-9b8e-4e26-9310-14acd52d1851` |
@@ -627,15 +612,11 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [NADDR](definitions/fr/n/naddr/definition.md) | NOSTR | `4d51823f-cfe9-4cbc-beee-f807c0803296` |
 | [NAMECOIN](definitions/fr/n/namecoin/definition.md) | ALTCOINS ET FORKS | `b45aaf58-7966-498d-aa66-37cbe79ef4ce` |
 | [NAT - NETWORK-ADJUSTED TIME](definitions/fr/n/nat-network-adjusted-time/definition.md) | PROTOCOLE | `5fc25ff3-922c-45b4-b717-cba463da9db1` |
 | [NBITS](definitions/fr/n/nbits/definition.md) | PROTOCOLE | `40d2f421-ceb0-4747-969a-39cfbf0089f7` |
-| [NCRYPTSEC](definitions/fr/n/ncryptsec/definition.md) | NOSTR | `bb945e15-d700-4e48-b17d-7ee82ae88918` |
 | [NESTED SEGWIT](definitions/fr/n/nested-segwit/definition.md) | SCRIPT | `cddd7a63-8d9c-4ca1-a782-3ce020275816` |
-| [NEVENT](definitions/fr/n/nevent/definition.md) | NOSTR | `e0a4c1ee-5117-4d83-8252-931cb01f52e6` |
 | [NFT](definitions/fr/n/nft/definition.md) | ACTIFS SUR BITCOIN | `61fed473-5d33-4ccd-b002-211472e796e7` |
-| [NIP](definitions/fr/n/nip/definition.md) | NOSTR | `5cb70b76-85fd-4db6-b48f-fcd610e7fef8` |
 | [NLOCKTIME](definitions/fr/n/nlocktime/definition.md) | TRANSACTIONS | `176da554-3dd4-41c2-bc3e-5b7f7a2bf34a` |
 | [NO2X](definitions/fr/n/no2x/definition.md) | HISTOIRE ET CULTURE | `d6599e15-5ee2-4069-9cef-913159ac2b90` |
 | [NOEUD](definitions/fr/n/noeud/definition.md) | FONCTIONNEMENT DU NŒUD | `8eb4d5df-2d8e-48ff-80f8-680a6a110d5d` |
@@ -645,17 +626,10 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [NOEUD SPV - NOEUD LÉGER](definitions/fr/n/noeud-spv-noeud-leger/definition.md) | FONCTIONNEMENT DU NŒUD | `14959673-c92d-4892-8e22-d30e0c3313a9` |
 | [NOISE](definitions/fr/n/noise/definition.md) | LIGHTNING NETWORK | `70c5818e-8783-406d-9bee-b6aea486e260` |
 | [NONCE](definitions/fr/n/nonce/definition.md) | CRYPTOGRAPHIE | `01676c23-17d9-48c4-8817-bf7be488b5e0` |
-| [NOSTR](definitions/fr/n/nostr/definition.md) | NOSTR | `02b92c71-1e90-4093-bb95-e26cba03d2e6` |
-| [NOTE NOSTR](definitions/fr/n/note-nostr/definition.md) | NOSTR | `faabbedc-2ab7-4e45-828e-e4f0220e534f` |
-| [NPROFILE](definitions/fr/n/nprofile/definition.md) | NOSTR | `e8afb6f4-6b55-4119-a1c8-856b129e42e7` |
-| [NPUB](definitions/fr/n/npub/definition.md) | NOSTR | `951960ee-7969-48b2-bde6-30ff3079ebc3` |
-| [NSEC](definitions/fr/n/nsec/definition.md) | NOSTR | `acd9c2e0-892d-47ee-b9cf-086ba4509aa8` |
 | [NSEQUENCE](definitions/fr/n/nsequence/definition.md) | TRANSACTIONS | `5a7fbfe3-ae1e-4275-83b6-dc07e0c8d2fe` |
 | [NULL DATA](definitions/fr/n/null-data/definition.md) | TRANSACTIONS | `61d08245-d158-41d5-a122-aff73bb866d5` |
 | [NULLDUMMY](definitions/fr/n/nulldummy/definition.md) | TRANSACTIONS | `f1764fe0-499b-42fa-8a51-aa8f7391178a` |
-| [NUTZAP](definitions/fr/n/nutzap/definition.md) | NOSTR | `2f8fbe59-2b83-446b-b198-86311acc1f4b` |
 | [NVERSION](definitions/fr/n/nversion/definition.md) | TRANSACTIONS | `a0570a67-2fb2-4cf7-8311-9e940fa93414` |
-| [NWC - NOSTR WALLET CONNECT](definitions/fr/n/nwc-nostr-wallet-connect/definition.md) | NOSTR | `762aca44-1acb-4dc6-b612-c334577ae902` |
 | [NYA - NEW YORK AGREEMENT](definitions/fr/n/nya-new-york-agreement/definition.md) | HISTOIRE ET CULTURE | `522111d1-498f-428c-a329-c9470e0d70e8` |
 | [NŒUD DE ROUTAGE](definitions/fr/n/noeud-de-routage/definition.md) | PAIEMENTS LIGHTNING | `0078e884-b7a8-4727-83cd-7f1945cca8a0` |
 
@@ -854,7 +828,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [PREUVE DE MERKLE](definitions/fr/p/preuve-de-merkle/definition.md) | CRYPTOGRAPHIE | `a757c7ff-611c-462e-8c3a-924aca2a2274` |
 | [PREUVE DE RÉSERVES](definitions/fr/p/preuve-de-reserves/definition.md) | ÉCONOMIE ET RÉGULATION | `67af30fd-2325-4ade-8db2-99bdc0370c0c` |
 | [PREUVE DE TRAVAIL](definitions/fr/p/preuve-de-travail/definition.md) | PROTOCOLE | `5cdf5d24-69b0-47c1-a25e-c929dccdcbb2` |
-| [PREUVE DE TRAVAIL NOSTR](definitions/fr/p/preuve-de-travail-nostr/definition.md) | NOSTR | `9e3f141b-b39a-46d3-ab61-83dbc5d5b660` |
 | [PRIME DE PROXIMITÉ](definitions/fr/p/prime-de-proximite/definition.md) | MINAGE | `e9b040b4-a7a7-4241-8b5e-a2b23a94c127` |
 | [PRIVATE CHANNEL](definitions/fr/p/private-channel/definition.md) | LIGHTNING NETWORK | `9ab60958-f206-42d9-8ad1-c902aeef62c3` |
 | [PROBING](definitions/fr/p/probing/definition.md) | PAIEMENTS LIGHTNING | `ab0ee3fe-8543-4ff3-afd6-1e5d79c3765e` |
@@ -901,7 +874,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [RÈGLES DE STANDARDISATION](definitions/fr/r/regles-de-standardisation/definition.md) | MEMPOOL ET FRAIS | `b7d0c86b-a0d1-4863-b72e-fb257b66d962` |
 | [REGTEST](definitions/fr/r/regtest/definition.md) | RÉSEAU | `028ffb5d-98f6-46c0-9d3e-317e7f06e03a` |
 | [RELAIS](definitions/fr/r/relais/definition.md) | MINAGE | `39b93449-45b4-4aea-818e-19de91e53578` |
-| [RELAIS NOSTR](definitions/fr/r/relais-nostr/definition.md) | NOSTR | `a9574625-3857-4ab8-b865-d10cb56ffab1` |
 | [RENDEZ-VOUS ROUTING](definitions/fr/r/rendez-vous-routing/definition.md) | PAIEMENTS LIGHTNING | `63f88ad6-90d1-4d06-a5f0-5a18f656b394` |
 | [REPLACEMENT CYCLING](definitions/fr/r/replacement-cycling/definition.md) | ATTAQUE | `82a7f942-2049-4e83-8841-e88807cf61f4` |
 | [REPLAY ATTACK](definitions/fr/r/replay-attack/definition.md) | ATTAQUE | `7224352d-189a-481e-98e6-6647b38010b7` |
@@ -991,10 +963,8 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [SIGHASH_SINGLE | SIGHASH_ACP](definitions/fr/s/sighash-single-sighash-acp/definition.md) | TRANSACTIONS | `2be92fa8-c7ad-4835-ba7f-2794b0e38765` |
 | [SIGN-TO-CONTRACT](definitions/fr/s/sign-to-contract/definition.md) | CRYPTOGRAPHIE | `a3559e0e-4bda-402c-8e4e-754d35e2eb1f` |
 | [SIGNALING](definitions/fr/s/signaling/definition.md) | ÉVOLUTION DU PROTOCOLE | `75770553-020d-4fbd-a072-694b31afd60b` |
-| [SIGNATAIRE NOSTR](definitions/fr/s/signataire-nostr/definition.md) | NOSTR | `fd6f119c-86ad-4d1c-be41-26d2884a3378` |
 | [SIGNATURE À BASE DE HACHAGE](definitions/fr/s/signature-a-base-de-hachage/definition.md) | INFORMATIQUE QUANTIQUE | `6baabd20-b51a-451d-8ec5-4770572121cc` |
 | [SIGNATURE AVEUGLE](definitions/fr/s/signature-aveugle/definition.md) | CRYPTOGRAPHIE | `51015851-5323-43ca-8d32-c7c1c1d9847f` |
-| [SIGNATURE D'ÉVÉNEMENT NOSTR](definitions/fr/s/signature-d-evenement-nostr/definition.md) | NOSTR | `861f834d-581b-4007-9df1-c069a625ca09` |
 | [SIGNATURE DE LAMPORT](definitions/fr/s/signature-de-lamport/definition.md) | INFORMATIQUE QUANTIQUE | `d1a7cd47-b06e-448c-a7dc-88643dbab42e` |
 | [SIGNATURE NUMÉRIQUE](definitions/fr/s/signature-numerique/definition.md) | CRYPTOGRAPHIE | `b24f7ccf-965a-4b03-b046-c3d74a0dca31` |
 | [SIGNATURE POST-QUANTIQUE](definitions/fr/s/signature-post-quantique/definition.md) | INFORMATIQUE QUANTIQUE | `532c9b4c-fdba-4324-97ad-28a232562945` |
@@ -1064,7 +1034,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [TAG NOSTR](definitions/fr/t/tag-nostr/definition.md) | NOSTR | `b5e6b9d2-e250-4713-94d7-c38c9fabc38d` |
 | [TAIL EMISSION](definitions/fr/t/tail-emission/definition.md) | PROTOCOLE | `b36f431e-8a5f-4d46-83f5-c2aee91b70b7` |
 | [TAPROOT](definitions/fr/t/taproot/definition.md) | ÉVOLUTION DU PROTOCOLE | `df9c07aa-a8ae-485a-8dfb-cd45d73ccdf6` |
 | [TAPROOT ASSETS PROTOCOL](definitions/fr/t/taproot-assets-protocol/definition.md) | ACTIFS SUR BITCOIN | `7e06f113-180b-4d77-abda-2a5be7fa9a25` |
@@ -1154,7 +1123,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [WATCH-ONLY WALLET](definitions/fr/w/watch-only-wallet/definition.md) | PORTEFEUILLE | `a3e9c07b-1076-4ab9-9695-c27cb52fe42f` |
 | [WATCHMEN](definitions/fr/w/watchmen/definition.md) | SIDECHAIN | `b0c41084-126c-4966-b40c-d1800cda9e4e` |
 | [WATCHTOWER](definitions/fr/w/watchtower/definition.md) | LIGHTNING NETWORK | `ffbbd17a-e7f1-4fe4-bc0b-3d9db3cf4a78` |
-| [WEB OF TRUST](definitions/fr/w/web-of-trust/definition.md) | NOSTR | `959495b8-3b60-49c0-a9ce-64ba7bde0ca3` |
 | [WEIGHT UNIT - WU](definitions/fr/w/weight-unit/definition.md) | TRANSACTIONS | `c42a4dc7-6cf2-4464-8898-ec512b10f4e2` |
 | [WHALE](definitions/fr/w/whale/definition.md) | ÉCONOMIE ET RÉGULATION | `54290c9a-e310-4935-88b4-e9db8f100845` |
 | [WHIRLPOOL](definitions/fr/w/whirlpool/definition.md) | CONFIDENTIALITÉ | `34d344e0-ddb8-4e09-828f-f5820377e360` |
@@ -1191,7 +1159,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [ZAP](definitions/fr/z/zap/definition.md) | NOSTR | `2f74b661-7b6d-4718-9076-697e7984eef3` |
 | [ZEROCONF](definitions/fr/z/zeroconf/definition.md) | MEMPOOL ET FRAIS | `3509bb0a-1f57-4784-905f-e08a03bd2d2a` |
 | [ZEROLINK](definitions/fr/z/zerolink/definition.md) | CONFIDENTIALITÉ | `ca5ac0f5-9195-41ba-b6dc-bfc0fc6f4f00` |
 | [ZEROSYNC](definitions/fr/z/zerosync/definition.md) | FONCTIONNEMENT DU NŒUD | `9fa0c2d1-1763-4c3b-a8c7-a6cb7db1fda0` |
@@ -1203,7 +1170,7 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 ## Entreprises, applications et logiciels
 
-208 entrées.
+197 entrées.
 
 ### Entreprises, applications et logiciels : A
 
@@ -1212,9 +1179,7 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [ACINQ](definitions/fr/a/acinq/definition.md) | ENTREPRISE | `c2643951-dea0-4c8b-8e49-40cf36218630` |
 | [ALBY](definitions/fr/a/alby/definition.md) | ENTREPRISE | `09891220-1ce7-4437-849c-1d3fd4f10f88` |
 | [ALBY HUB](definitions/fr/a/alby-hub/definition.md) | LOGICIEL LIGHTNING | `d2fb1930-f9b3-47f3-867b-527ba1a24d33` |
-| [AMBER](definitions/fr/a/amber/definition.md) | APPLICATION NOSTR | `d21eebdf-6cde-4d6c-b655-fe1311db3d9d` |
 | [AMBOSS](definitions/fr/a/amboss/definition.md) | LOGICIEL LIGHTNING | `ba33538f-40a4-41a6-8335-d13dec0df50a` |
-| [AMETHYST](definitions/fr/a/amethyst/definition.md) | APPLICATION NOSTR | `2d52885f-6ad4-454c-b0ec-3671bcc26503` |
 | [ANTPOOL](definitions/fr/a/antpool/definition.md) | ACTEURS DU MINAGE | `fe221820-ee07-4e49-a1a7-4a16b188bb33` |
 | [APERTURE](definitions/fr/a/aperture/definition.md) | LOGICIEL LIGHTNING | `f5d53aa0-c0e9-42c2-8795-80acdb50ddcb` |
 | [AQUA](definitions/fr/a/aqua/definition.md) | PORTEFEUILLE LOGICIEL | `a9e4c058-f48b-469d-880f-6f4fdfede65f` |
@@ -1280,7 +1245,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [CHAINCODE LABS](definitions/fr/c/chaincode-labs/definition.md) | COMMUNAUTÉ ET FONDATION | `2ad92c38-f85f-41c7-bbc8-f6eae56d88b9` |
 | [CHAINWAY LABS](definitions/fr/c/chainway-labs/definition.md) | ENTREPRISE | `ca4db974-f81c-4549-9ffb-4a97bd2832a2` |
 | [CHANTOOLS](definitions/fr/c/chantools/definition.md) | LOGICIEL LIGHTNING | `e6a04aad-5739-4b4b-85b0-d34036dcb728` |
-| [CLIENT GOSSIP](definitions/fr/g/gossip-client-nostr/definition.md) | APPLICATION NOSTR | `031ff079-aed5-4a55-9f05-d1c7443ab8db` |
 | [CLN - C-LIGHTNING](definitions/fr/c/cln-c-lightning/definition.md) | LOGICIEL LIGHTNING | `d65d6315-3cc2-4a3c-9473-3de32166f3cc` |
 | [CLN - CORE-LIGHTNING](definitions/fr/c/cln-core-lightning/definition.md) | LOGICIEL LIGHTNING | `453e3869-5a5c-4c62-a91a-460806590d7a` |
 | [COINJUMBLE](definitions/fr/c/coinjumble/definition.md) | OUTIL DE CONFIDENTIALITÉ | `27df859c-9af1-41c5-a9aa-161383ef616a` |
@@ -1288,13 +1252,11 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [COINMUX](definitions/fr/c/coinmux/definition.md) | OUTIL DE CONFIDENTIALITÉ | `06f855c0-b100-46f5-a5d1-fe43617968e1` |
 | [COINOS](definitions/fr/c/coinos/definition.md) | PORTEFEUILLE LOGICIEL | `86bd9870-a392-4090-8d80-818ac0f1265a` |
 | [COLDCARD](definitions/fr/c/coldcard/definition.md) | PORTEFEUILLE MATÉRIEL | `e58b2f20-6f9a-45e2-988c-e572f41ade0f` |
-| [CORACLE](definitions/fr/c/coracle/definition.md) | APPLICATION NOSTR | `fd64635e-5351-4f09-9e91-fa86e7091512` |
 
 ### Entreprises, applications et logiciels : D
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [DAMUS](definitions/fr/d/damus/definition.md) | APPLICATION NOSTR | `6525a7cf-4a98-4a2c-b1b5-b94754ea1769` |
 | [DARKWALLET](definitions/fr/d/darkwallet/definition.md) | PORTEFEUILLE LOGICIEL | `d4f54026-f93e-4a4c-9fc9-4aa546a1dbd3` |
 | [DELVING BITCOIN](definitions/fr/d/delving-bitcoin/definition.md) | COMMUNAUTÉ ET FONDATION | `24a2f7e8-0f76-4115-8646-54837a4e93b7` |
 | [DIGICASH](definitions/fr/d/digicash/definition.md) | ENTREPRISE | `b72a1cc0-9029-4bd8-b5ea-853e5c445b6d` |
@@ -1405,13 +1367,9 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 
 | Terme | Catégorie | UUID |
 |-------|-----------|------|
-| [NDK - NOSTR DEVELOPMENT KIT](definitions/fr/n/ndk-nostr-development-kit/definition.md) | OUTIL DE DÉVELOPPEMENT | `5a651454-a2ee-4fd9-85b0-343c9387907a` |
 | [NERDMINER](definitions/fr/n/nerdminer/definition.md) | ACTEURS DU MINAGE | `9f43fce7-aa0b-4b65-86e0-44b56c0c2135` |
 | [NEUTRINO](definitions/fr/n/neutrino/definition.md) | IMPLÉMENTATION | `027690a7-0005-4df0-ab40-0524604a91e5` |
 | [NODL](definitions/fr/n/nodl/definition.md) | ENTREPRISE | `4ea626f7-7f38-4581-b65a-0390b89fbc6c` |
-| [NOS2X](definitions/fr/n/nos2x/definition.md) | APPLICATION NOSTR | `a4ca65d4-9696-4860-9b47-76dd2f56ab82` |
-| [NOSTRUDEL](definitions/fr/n/nostrudel/definition.md) | APPLICATION NOSTR | `61d25f57-86b3-420e-8953-15b1b36183a5` |
-| [NSEC.APP](definitions/fr/n/nsec-app/definition.md) | APPLICATION NOSTR | `3f89f2e0-6b0e-48fa-9ae5-9c5e1c16fe10` |
 | [NUNCHUK](definitions/fr/n/nunchuk/definition.md) | PORTEFEUILLE LOGICIEL | `aa8d186e-25bc-4e88-be07-82d3477e1bca` |
 
 ### Entreprises, applications et logiciels : O
@@ -1435,7 +1393,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [POLAR](definitions/fr/p/polar/definition.md) | LOGICIEL LIGHTNING | `4efe0522-8f70-4263-abbd-5ad6116c3d46` |
 | [POOL - LIGHTNING](definitions/fr/p/pool-lightning/definition.md) | LOGICIEL LIGHTNING | `823330ef-0599-47fa-b4b9-dc7206206888` |
 | [PORTAL](definitions/fr/p/portal/definition.md) | PORTEFEUILLE MATÉRIEL | `bdb50a85-22c0-426c-9cb0-2083abb80255` |
-| [PRIMAL](definitions/fr/p/primal/definition.md) | APPLICATION NOSTR | `5f7af6f8-ff6f-4683-b2fa-94bffd9c0a66` |
 | [PROTON WALLET](definitions/fr/p/proton-wallet/definition.md) | PORTEFEUILLE LOGICIEL | `c9108dfb-a248-42dc-9f46-80e97c0592f4` |
 | [PUBLIC POOL](definitions/fr/p/public-pool/definition.md) | ACTEURS DU MINAGE | `92add8cd-72b6-4c34-a509-7276f202da78` |
 
@@ -1512,7 +1469,6 @@ Chaque entrée a une version développée (`definition.md`) et une version court
 | [WALLET OF SATOSHI](definitions/fr/w/wallet-of-satoshi/definition.md) | PORTEFEUILLE LOGICIEL | `2694e488-f505-4a76-9378-a55767b465ef` |
 | [WASABI WALLET](definitions/fr/w/wasabi-wallet/definition.md) | PORTEFEUILLE LOGICIEL | `230bebec-3a8b-4d46-9258-0e61e9674829` |
 | [WHIRLPOOL STAT TOOL](definitions/fr/w/whirlpool-stat-tool/definition.md) | OUTIL DE CONFIDENTIALITÉ | `7d7ea0c6-ff89-4f9f-9b31-c0f264739516` |
-| [WHITE NOISE](definitions/fr/w/white-noise/definition.md) | APPLICATION NOSTR | `b153ebb5-85b0-4077-8282-57a798a13884` |
 | [WIZARDSARDINE](definitions/fr/w/wizardsardine/definition.md) | ENTREPRISE | `ab9cf26b-816e-4718-b839-75bf7b9c132e` |
 
 ### Entreprises, applications et logiciels : Z

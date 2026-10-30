@@ -1,1 +1,0 @@
-Format défini par NIP-49 qui chiffre une clé privée Nostr avec un mot de passe et l'encode en Bech32 avec le préfixe `ncryptsec`, pour la sauvegarder ou la transférer sans l'exposer en clair comme le fait une `nsec`.

@@ -166,10 +166,6 @@ categories:
   # de fonctionnement, séquenceurs, ponts et réseaux déployés comme Citrea.
   - ROLLUPS ET BITVM
 
-  # Toutes les définitions spécifiques au protocole Nostr : événements, relais, clés et
-  # leurs encodages, le terme générique NIP, et les usages liés à Bitcoin (zaps, Nostr
-  # Wallet Connect).
-  - NOSTR
 
   # Les définitions des systèmes de monnaie électronique chaumienne construits sur
   # Bitcoin, comme Cashu et Fedimint : mints et fédérations de gardiens qui émettent des
@@ -229,10 +225,6 @@ categories:
   # commerce en ligne (e-gold, Silk Road).
   - SERVICE ET PAIEMENT
 
-  # Les applications construites sur le protocole Nostr : clients de réseau social,
-  # signataires et gestionnaires de clés, extensions de navigateur et messageries. Les
-  # concepts du protocole sont dans la catégorie « Nostr » du dictionnaire technique.
-  - APPLICATION NOSTR
 
   # Les entreprises qui développent des produits ou des services autour de Bitcoin,
   # quand la fiche porte sur l'entreprise plutôt que sur un produit précis.

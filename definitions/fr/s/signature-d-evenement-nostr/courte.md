@@ -1,1 +1,0 @@
-Signature Schnorr de BIP-0340 sur secp256k1, calculée par l'auteur sur l'identifiant d'un événement Nostr, qui permet à n'importe qui de vérifier son auteur et son intégrité sans faire confiance au relais qui le transmet.

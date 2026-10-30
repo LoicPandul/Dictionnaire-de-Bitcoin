@@ -1,1 +1,0 @@
-Format defined by NIP-49 that encrypts a Nostr private key with a password and encodes it in Bech32 with the `ncryptsec` prefix, to back it up or move it without exposing it in plaintext as an `nsec` does.

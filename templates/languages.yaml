@@ -21,9 +21,3 @@ translations:
     exclude:
       - crypter      # remarque sur l'usage du français (« crypter » n'existe pas, on dit « chiffrer »)
       - perime-bloc  # doublon de obsolete-bloc : un seul « stale block » en anglais
-    # Traductions suspendues à une décision de Loïc (slugs ou catégories de definitions/fr) :
-    # les entrées non traduites sont « en attente », pas « manquantes ».
-    pending:
-      - APPLICATION NOSTR             # garder ou retirer les applications Nostr (question du 29/10/2026)
-      - NOSTR                         # même question pour les notions Nostr (déjà traduites)
-      - ndk-nostr-development-kit     # outil de développement Nostr

@@ -1,1 +1,0 @@
-Mesure de confiance calculée à partir des relations entre les comptes (abonnements, mises en sourdine), pour filtrer le spam ou classer les comptes sans autorité centrale. NIP-85 permet de confier les calculs les plus lourds à des fournisseurs qui publient des scores signés.

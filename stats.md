@@ -1,55 +1,55 @@
 # Statistiques du Dictionnaire de Bitcoin
 
-*Dernière mise à jour : 27/10/2026*
+*Dernière mise à jour : 30/10/2026*
 
 ---
 
 ## Statistiques globales
 
-- **Nombre total de définitions** : 1536
+- **Nombre total de définitions** : 1492
 
 ## Définitions par lettre
 
 | Lettre | Nombre |
 |:------:|-------:|
-| A | 72 |
-| B | 338 |
-| C | 145 |
-| D | 56 |
-| E | 42 |
+| A | 70 |
+| B | 336 |
+| C | 140 |
+| D | 54 |
+| E | 39 |
 | F | 42 |
-| G | 32 |
+| G | 31 |
 | H | 40 |
-| I | 19 |
+| I | 18 |
 | J | 10 |
-| K | 10 |
+| K | 9 |
 | L | 53 |
-| M | 75 |
-| N | 40 |
+| M | 72 |
+| N | 25 |
 | O | 121 |
-| P | 100 |
+| P | 98 |
 | Q | 6 |
-| R | 52 |
-| S | 151 |
-| T | 50 |
+| R | 51 |
+| S | 149 |
+| T | 49 |
 | U | 13 |
 | V | 22 |
-| W | 25 |
+| W | 23 |
 | X | 7 |
 | Y | 2 |
-| Z | 13 |
+| Z | 12 |
 
 ## Top 5 des lettres les plus fournies
 
-1. **B** : 338 définitions
-2. **S** : 151 définitions
-3. **C** : 145 définitions
+1. **B** : 336 définitions
+2. **S** : 149 définitions
+3. **C** : 140 définitions
 4. **O** : 121 définitions
-5. **P** : 100 définitions
+5. **P** : 98 définitions
 
 ## Parties et catégories
 
-### Dictionnaire technique : 1060
+### Dictionnaire technique : 1027
 
 - **OPCODES** : 76
 - **INFORMATIQUE** : 66
@@ -67,7 +67,6 @@
 - **PORTEFEUILLE** : 35
 - **SCRIPT** : 33
 - **PAIEMENTS LIGHTNING** : 33
-- **NOSTR** : 33
 - **POOLS DE MINAGE** : 32
 - **INFORMATIQUE QUANTIQUE** : 32
 - **ATTAQUE** : 32
@@ -85,7 +84,7 @@
 - **ROLLUPS ET BITVM** : 8
 - **ECASH** : 2
 
-### Entreprises, applications et logiciels : 208
+### Entreprises, applications et logiciels : 197
 
 - **LOGICIEL LIGHTNING** : 30
 - **PORTEFEUILLE LOGICIEL** : 27
@@ -95,9 +94,8 @@
 - **PORTEFEUILLE MATÉRIEL** : 16
 - **COMMUNAUTÉ ET FONDATION** : 13
 - **SERVICE ET PAIEMENT** : 12
-- **OUTIL DE DÉVELOPPEMENT** : 10
 - **NŒUD ET EXPLORATEUR** : 10
-- **APPLICATION NOSTR** : 10
+- **OUTIL DE DÉVELOPPEMENT** : 9
 - **PLATEFORME D'ÉCHANGE** : 9
 - **OUTIL DE CONFIDENTIALITÉ** : 8
 
@@ -116,22 +114,22 @@
 - **BLIP** : 14
 - **BOLT** : 12
 
-Versions courtes : 1536 sur 1536.
+Versions courtes : 1492 sur 1492.
 
 ## Termes les plus fréquents
 
-- **bitcoin** : 2468 occurrences
-- **transaction** : 1923 occurrences
-- **bloc** : 1109 occurrences
-- **signature** : 898 occurrences
-- **adresse** : 620 occurrences
-- **protocole** : 612 occurrences
-- **script** : 571 occurrences
-- **publique** : 543 occurrences
-- **portefeuille** : 537 occurrences
-- **paiement** : 521 occurrences
-- **lightning** : 514 occurrences
-- **utilisateur** : 502 occurrences
-- **réseau** : 489 occurrences
-- **clés** : 455 occurrences
-- **sortie** : 455 occurrences
+- **bitcoin** : 2462 occurrences
+- **transaction** : 1990 occurrences
+- **bloc** : 1178 occurrences
+- **signature** : 867 occurrences
+- **adresse** : 614 occurrences
+- **protocole** : 583 occurrences
+- **script** : 580 occurrences
+- **paiement** : 515 occurrences
+- **portefeuille** : 512 occurrences
+- **lightning** : 490 occurrences
+- **publique** : 489 occurrences
+- **réseau** : 482 occurrences
+- **sortie** : 476 occurrences
+- **utilisateur** : 435 occurrences
+- **clés** : 430 occurrences

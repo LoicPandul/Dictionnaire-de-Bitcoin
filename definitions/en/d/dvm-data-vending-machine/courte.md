@@ -1,1 +1,0 @@
-Nostr service described by NIP-90 that performs a computation on demand, often for payment: the customer publishes a request, and a service provider responds. Since 2026, NIP-90 has been marked as not recommended, in favor of use-case-specific standards.

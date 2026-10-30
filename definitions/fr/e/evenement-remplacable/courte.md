@@ -1,1 +1,0 @@
-Événement Nostr (kinds `0`, `3` et `10000` à `19999`) dont les relais n'ont à garder que la dernière version pour un même auteur et un même kind, ce qui sert aux profils, aux listes de suivi ou à la liste de relais.
