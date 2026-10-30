@@ -2,7 +2,7 @@ Optional password that, combined with the mnemonic phrase, offers an extra layer
 
 It works in tandem with the mnemonic phrase, modifying the seed from which the keys are generated. Thus, even if someone obtains the mnemonic phrase, they cannot access the funds without the passphrase. Using a passphrase essentially creates a new wallet with distinct keys. Changing the passphrase, even slightly, generates a different wallet.
 
-![The same mnemonic phrase, combined with three different passphrases (none, “chat”, “Chat”), yields three unrelated seeds and therefore three distinct wallets.](../../../fr/p/passphrase-bip-0039/assets/image-1.png)
+![The same mnemonic phrase, combined with three different passphrases (none, “chat”, “Chat”), yields three unrelated seeds and therefore three distinct wallets.](./assets/image-1.png)
 
 The passphrase is arbitrary and can be any combination of characters chosen by the user. Using a passphrase offers several advantages. First, it reduces the risks tied to a compromise of the mnemonic phrase by requiring a second factor to access the funds. Second, it can be used strategically to create decoy wallets holding small amounts of bitcoin, in case of physical coercion to steal the funds. Finally, it is useful when the user wants to control the randomness of the HD wallet's seed generation. The passphrase must be complex enough to resist brute-force attacks and must be backed up reliably. Losing the passphrase can mean being unable to access the funds, just like losing the mnemonic phrase.
 

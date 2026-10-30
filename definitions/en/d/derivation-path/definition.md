@@ -13,4 +13,4 @@ For example, if a receiving address has the derivation path `m / 86' / 0' / 0' /
 * `0` indicates that it is an external address;
 * `5` indicates that it is the sixth external address of this account.
 
-![The derivation path m/86'/0'/0'/0/5 read as a descent through the HD tree: each index moves from one depth to the next, from the master key to the sixth external address of the first BIP-0086 account.](../../../fr/c/chemin-de-derivation/assets/image-1.png)
+![The derivation path m/86'/0'/0'/0/5 read as a descent through the HD tree: each index moves from one depth to the next, from the master key to the sixth external address of the first BIP-0086 account.](./assets/image-1.png)

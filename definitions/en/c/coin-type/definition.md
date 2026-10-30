@@ -5,4 +5,4 @@ In hierarchical deterministic (HD) wallets, the coin type is a derivation level 
 * Dogecoin: `0x80000003`;
 * Ethereum: `0x8000003c`...
 
-![The coin type sits at depth 2 of the derivation tree: index 0' (path m/84'/0') designates Bitcoin.](../../../fr/t/type-de-devise/assets/image-1.png)
+![The coin type sits at depth 2 of the derivation tree: index 0' (path m/84'/0') designates Bitcoin.](./assets/image-1.png)

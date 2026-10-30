@@ -6,7 +6,7 @@ Data structure that serves as the main component in the construction of a Bitcoi
 * The difficulty target;
 * The nonce.
 
-![The 80 bytes of the block header drawn to scale: version (4 bytes), previous block hash (32), Merkle root (32), timestamp (4), target in compact nBits format (4), and nonce (4).](../../../fr/e/entete-de-bloc/assets/image-1.png)
+![The 80 bytes of the block header drawn to scale: version (4 bytes), previous block hash (32), Merkle root (32), timestamp (4), target in compact nBits format (4), and nonce (4).](./assets/image-1.png)
 
 For example, here is the header of block 785,530 in hexadecimal format, mined by Foundry USA on April 15, 2023:
 

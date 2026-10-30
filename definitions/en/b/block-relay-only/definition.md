@@ -2,4 +2,4 @@ Type of outbound connection in Bitcoin Core that relays only blocks, without exc
 
 These connections strengthen resistance to network partitioning and protection against eclipse attacks, because they increase the node's connectivity without revealing information about the network topology. Transactions and addresses are the main vectors through which an adversary can map the links between nodes. The absence of these exchanges makes block-relay-only connections invisible to a spy who analyzes transaction propagation. They thus guarantee the node access to the legitimate blockchain even if all of its regular connections are compromised.
 
-![A Bitcoin Core node maintains 8 full outbound connections, which relay blocks, transactions, and addresses, and 2 block-relay-only connections, which relay only blocks and escape a spy who tracks transactions.](../../../fr/b/block-relay-only/assets/image-1.png)
+![A Bitcoin Core node maintains 8 full outbound connections, which relay blocks, transactions, and addresses, and 2 block-relay-only connections, which relay only blocks and escape a spy who tracks transactions.](./assets/image-1.png)

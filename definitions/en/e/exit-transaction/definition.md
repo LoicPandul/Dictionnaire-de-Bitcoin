@@ -2,4 +2,4 @@ Pre-signed Bitcoin transaction that lets a user unilaterally withdraw their fund
 
 The exit transaction is created and co-signed by the user and the SE when the user receives funds on Spark. Each new owner obtains an exit transaction with a shorter relative timelock than the previous owner's. This decreasing hierarchy of timelocks ensures that the current owner can always publish their transaction on-chain before the former owners, thereby preventing double-spend attempts. To exit, the user broadcasts the exit transaction, along with its parent transactions, on the Bitcoin network.
 
-![At each transfer on Spark, the new owner receives an exit transaction with a shorter relative timelock than the previous owner's, which lets the new owner exit first.](../../../fr/e/exit-transaction/assets/image-1.png)
+![At each transfer on Spark, the new owner receives an exit transaction with a shorter relative timelock than the previous owner's, which lets the new owner exit first.](./assets/image-1.png)

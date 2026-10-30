@@ -6,6 +6,6 @@ To solve these problems and allow a coinswap between parties who do not trust ea
 
 In a coinswap scenario using an HTLC or a PTLC between Alice and Bob, the swap is secure: either it succeeds and each receives the other's BTC, or it fails and each keeps their own BTC. It is therefore impossible for either party to cheat or steal the other's BTC.
 
-![In a coinswap using HTLCs or PTLCs, the atomic swap between Alice and Bob ends in both transfers if the secret is revealed, or in neither if the timeout expires.](../../../fr/c/coinswap/assets/image-1.png)
+![In a coinswap using HTLCs or PTLCs, the atomic swap between Alice and Bob ends in both transfers if the secret is revealed, or in neither if the timeout expires.](./assets/image-1.png)
 
 The use of adaptor signatures is particularly interesting in this context, because it makes it possible to do without traditional scripts (a mechanism sometimes referred to as “*scriptless scripts*”). This reduces the fees associated with the swap. Another major advantage of adaptor signatures is that they do not require a hash common to both parties of the transaction, which avoids revealing a direct link between them in certain types of swaps.

@@ -2,7 +2,7 @@ Method for using static Bitcoin addresses to receive payments without address re
 
 With Silent Payments, the payer uses the recipient's public keys (spend public key and scan public key) and the sum of the payer's own private keys for the inputs to generate a fresh address for each payment. Only the recipient, with their private keys, can compute the private key corresponding to this payment address. ECDH (Elliptic-Curve Diffie-Hellman), a cryptographic key exchange algorithm, establishes a shared secret, which is then used to derive the receiving address and the private key (on the recipient's side only). To identify the Silent Payments addressed to them, recipients must scan the blockchain and examine each transaction that meets the criteria of the protocol. Unlike BIP-0047, which uses a notification transaction to establish the payment channel, Silent Payments remove this step, which saves a transaction. The tradeoff, however, is that the recipient must scan all potential transactions to determine, by applying ECDH, whether each one is addressed to them.
 
-![Alice combines Bob's static address and the private keys of her inputs to create a unique payment address, which Bob finds by scanning with his scan key.](../../../fr/s/silent-payments/assets/image-1.png)
+![Alice combines Bob's static address and the private keys of her inputs to create a unique payment address, which Bob finds by scanning with his scan key.](./assets/image-1.png)
 
 For example, Bob's static address $B$ is the concatenation of his scan public key and his spend public key:
 $$B\ =\ B_{scan}\ \Vert\ B_{spend}$$

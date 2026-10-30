@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="768" viewBox="0 0 1280 768"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <style>.trait{fill:none;stroke:var(--encre);stroke-width:3;}</style>
+  <g id="schema">
+    <rect class="structure" x="40" y="600" width="136" height="64"/>
+    <text class="etiquette" x="108" y="643" text-anchor="middle">TX 1</text>
+    <rect class="structure" x="40" y="488" width="136" height="64"/>
+    <text class="etiquette" x="108" y="531" text-anchor="middle">HASH 1</text>
+    <path class="lien" d="M108 600 V554"/>
+    <rect class="structure" x="192" y="600" width="136" height="64"/>
+    <text class="etiquette" x="260" y="643" text-anchor="middle">TX 2</text>
+    <rect class="structure" x="192" y="488" width="136" height="64"/>
+    <text class="etiquette" x="260" y="531" text-anchor="middle">HASH 2</text>
+    <path class="lien" d="M260 600 V554"/>
+    <rect class="structure" x="344" y="600" width="136" height="64"/>
+    <text class="etiquette" x="412" y="643" text-anchor="middle">TX 3</text>
+    <rect class="structure" x="344" y="488" width="136" height="64"/>
+    <text class="etiquette" x="412" y="531" text-anchor="middle">HASH 3</text>
+    <path class="lien" d="M412 600 V554"/>
+    <rect class="structure" x="496" y="600" width="136" height="64"/>
+    <text class="etiquette" x="564" y="643" text-anchor="middle">TX 4</text>
+    <rect class="structure" x="496" y="488" width="136" height="64"/>
+    <text class="etiquette" x="564" y="531" text-anchor="middle">HASH 4</text>
+    <path class="lien" d="M564 600 V554"/>
+    <rect class="structure" x="648" y="600" width="136" height="64"/>
+    <text class="etiquette" x="716" y="643" text-anchor="middle">TX 5</text>
+    <rect class="structure" x="648" y="488" width="136" height="64"/>
+    <text class="etiquette" x="716" y="531" text-anchor="middle">HASH 5</text>
+    <path class="lien" d="M716 600 V554"/>
+    <rect class="structure" x="800" y="600" width="136" height="64"/>
+    <text class="etiquette" x="868" y="643" text-anchor="middle">TX 6</text>
+    <rect class="structure" x="800" y="488" width="136" height="64"/>
+    <text class="etiquette" x="868" y="531" text-anchor="middle">HASH 6</text>
+    <path class="lien" d="M868 600 V554"/>
+    <rect class="structure" x="952" y="600" width="136" height="64"/>
+    <text class="etiquette" x="1020" y="643" text-anchor="middle">TX 7</text>
+    <rect class="structure" x="952" y="488" width="136" height="64"/>
+    <text class="etiquette" x="1020" y="531" text-anchor="middle">HASH 7</text>
+    <path class="lien" d="M1020 600 V554"/>
+    <rect class="structure" x="1104" y="600" width="136" height="64"/>
+    <text class="etiquette" x="1172" y="643" text-anchor="middle">TX 8</text>
+    <rect class="structure" x="1104" y="488" width="136" height="64"/>
+    <text class="etiquette" x="1172" y="531" text-anchor="middle">HASH 8</text>
+    <path class="lien" d="M1172 600 V554"/>
+    <rect class="structure" x="68" y="352" width="232" height="64"/>
+    <text class="etiquette" x="184" y="395" text-anchor="middle">HASH 1-2</text>
+    <path class="trait" d="M108 488 V456"/>
+    <path class="trait" d="M260 488 V456"/>
+    <path class="trait" d="M108 456 H260"/>
+    <path class="lien" d="M184 456 V418"/>
+    <rect class="structure" x="372" y="352" width="232" height="64"/>
+    <text class="etiquette" x="488" y="395" text-anchor="middle">HASH 3-4</text>
+    <path class="trait" d="M412 488 V456"/>
+    <path class="trait" d="M564 488 V456"/>
+    <path class="trait" d="M412 456 H564"/>
+    <path class="lien" d="M488 456 V418"/>
+    <rect class="structure" x="676" y="352" width="232" height="64"/>
+    <text class="etiquette" x="792" y="395" text-anchor="middle">HASH 5-6</text>
+    <path class="trait" d="M716 488 V456"/>
+    <path class="trait" d="M868 488 V456"/>
+    <path class="trait" d="M716 456 H868"/>
+    <path class="lien" d="M792 456 V418"/>
+    <rect class="structure" x="980" y="352" width="232" height="64"/>
+    <text class="etiquette" x="1096" y="395" text-anchor="middle">HASH 7-8</text>
+    <path class="trait" d="M1020 488 V456"/>
+    <path class="trait" d="M1172 488 V456"/>
+    <path class="trait" d="M1020 456 H1172"/>
+    <path class="lien" d="M1096 456 V418"/>
+    <rect class="structure" x="196" y="216" width="280" height="64"/>
+    <text class="etiquette" x="336" y="259" text-anchor="middle">HASH 1-2-3-4</text>
+    <path class="trait" d="M184 352 V320"/>
+    <path class="trait" d="M488 352 V320"/>
+    <path class="trait" d="M184 320 H488"/>
+    <path class="lien" d="M336 320 V282"/>
+    <rect class="structure" x="804" y="216" width="280" height="64"/>
+    <text class="etiquette" x="944" y="259" text-anchor="middle">HASH 5-6-7-8</text>
+    <path class="trait" d="M792 352 V320"/>
+    <path class="trait" d="M1096 352 V320"/>
+    <path class="trait" d="M792 320 H1096"/>
+    <path class="lien" d="M944 320 V282"/>
+    <path class="trait" d="M336 216 V184"/>
+    <path class="trait" d="M944 216 V184"/>
+    <path class="trait" d="M336 184 H944"/>
+    <path class="lien" d="M640 184 V146"/>
+    <rect class="sujet" x="400" y="32" width="480" height="112"/>
+    <text class="nom-sujet" x="640" y="82" text-anchor="middle">Merkle root</text>
+    <text class="secondaire sur-sujet" x="640" y="124" text-anchor="middle">HASH 1-2-3-4-5-6-7-8</text>
+    <text class="annotation" x="40" y="64">concatenated pair,</text>
+    <text class="annotation" x="40" y="100">then double SHA-256</text>
+    <path class="fleche-note" d="M200 116 Q 230 176 326 184"/>
+    <rect class="structure" x="968" y="56" width="272" height="64"/>
+    <text class="etiquette" x="1104" y="99" text-anchor="middle">Block header</text>
+    <path class="lien" d="M880 88 H966"/>
+    <path class="trait" d="M40 680 V696 H1240 V680"/>
+    <text class="annotation" x="640" y="744" text-anchor="middle">8 transactions in the block</text>
+  </g>
+</svg>

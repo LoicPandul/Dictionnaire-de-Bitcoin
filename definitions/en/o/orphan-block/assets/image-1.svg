@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="728" viewBox="0 0 1280 728"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+<!-- Sens strict : sans parent -->
+<text class="etiquette" x="32" y="72">No parent</text>
+<text class="secondaire" x="232" y="72">strict sense</text>
+<rect class="structure" x="32" y="112" width="144" height="96"/>
+<text class="etiquette" x="104" y="171" text-anchor="middle">142</text>
+<rect class="structure" x="228" y="112" width="144" height="96"/>
+<text class="etiquette" x="300" y="171" text-anchor="middle">143</text>
+<rect class="structure" x="424" y="112" width="144" height="96"/>
+<text class="etiquette" x="496" y="171" text-anchor="middle">144</text>
+<path class="lien" d="M228 160 H177"/>
+<path class="lien" d="M424 160 H373"/>
+<text class="etiquette" x="692" y="171" text-anchor="middle">145 ?</text>
+<rect class="sujet" x="816" y="112" width="144" height="96"/>
+<text class="nom-sujet" x="888" y="173" text-anchor="middle">146</text>
+<path class="lien" d="M816 160 H758"/>
+<text class="annotation" x="992" y="150">awaiting</text>
+<text class="annotation" x="992" y="188">its parent</text>
+<text class="annotation" x="300" y="264" text-anchor="middle">chain known to the node</text>
+<text class="annotation" x="1248" y="264" text-anchor="end">the node first requests header 145</text>
+<path class="fleche-note" d="M716 240 Q700 226 694 196"/>
+<!-- Usage courant : sans enfant -->
+<text class="etiquette" x="32" y="376">No child</text>
+<text class="secondaire" x="232" y="376">common usage</text>
+<rect class="structure" x="620" y="408" width="144" height="96"/>
+<text class="etiquette" x="692" y="467" text-anchor="middle">145-A</text>
+<rect class="structure" x="32" y="504" width="144" height="96"/>
+<text class="etiquette" x="104" y="563" text-anchor="middle">142</text>
+<rect class="structure" x="228" y="504" width="144" height="96"/>
+<text class="etiquette" x="300" y="563" text-anchor="middle">143</text>
+<rect class="structure" x="424" y="504" width="144" height="96"/>
+<text class="etiquette" x="496" y="563" text-anchor="middle">144</text>
+<rect class="structure" x="620" y="600" width="144" height="96"/>
+<text class="etiquette" x="692" y="659" text-anchor="middle">145-B</text>
+<rect class="structure" x="816" y="600" width="144" height="96"/>
+<text class="etiquette" x="888" y="659" text-anchor="middle">146</text>
+<path class="lien" d="M228 552 H177"/>
+<path class="lien" d="M424 552 H373"/>
+<path class="lien" d="M692 504 V552 H569"/>
+<path class="lien" d="M692 600 V552 H569"/>
+<path class="lien" d="M816 648 H765"/>
+<text class="annotation" x="824" y="466">called orphaned, or stale</text>
+<path class="fleche-note" d="M816 454 Q796 436 772 450"/>
+<text class="annotation" x="560" y="674" text-anchor="end">retained chain</text>
+<path class="fleche-note" d="M566 684 Q592 696 612 674"/>
+</g>
+</svg>

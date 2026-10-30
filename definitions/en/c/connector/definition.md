@@ -2,4 +2,4 @@ Special output created in the round transaction of the Ark protocol to guarantee
 
 Concretely, in addition to the tree containing the output VTXOs, the round transaction generates a second tree of covenants with one leaf per input VTXO. These leaves are the connector outputs. They carry no significant economic value but serve as a cryptographic link: when a connector output is included as an input of a forfeit transaction, that transaction becomes valid only if the round transaction is confirmed on-chain. If the round fails, the forfeit transaction is invalid and the user keeps their original VTXO. This mechanism ensures that the two operations (forfeiture and creation) are inseparable.
 
-![The forfeit transaction spends Alice's old VTXO and the connector output of the round transaction: it is valid only if that round is confirmed.](../../../fr/c/connector/assets/image-1.png)
+![The forfeit transaction spends Alice's old VTXO and the connector output of the round transaction: it is valid only if that round is confirmed.](./assets/image-1.png)

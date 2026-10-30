@@ -6,6 +6,6 @@ Data structure in the Bitcoin system. A block contains a set of valid transactio
 * The difficulty target;
 * The nonce.
 
-![A block consists of a six-field header and a list of transactions; the previous block hash attaches the block to the preceding one, and the Merkle root summarizes the transactions.](../../../fr/b/bloc/assets/image-1.png)
+![A block consists of a six-field header and a list of transactions; the previous block hash attaches the block to the preceding one, and the Merkle root summarizes the transactions.](./assets/image-1.png)
 
 To be valid, a block must have a header that, once hashed with `SHA256d`, produces a hash digest less than or equal to the difficulty target.

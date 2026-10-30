@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- en-têtes de colonnes -->
+    <text class="etiquette" x="216" y="72" text-anchor="middle">Message</text>
+    <text class="etiquette" x="1040" y="72" text-anchor="middle">Hash, 256 bits</text>
+
+    <!-- messages -->
+    <rect class="structure" x="40" y="164" width="352" height="64"/>
+    <rect class="structure" x="265" y="172" width="34" height="48"/>
+    <text class="mono" x="216" y="207" text-anchor="middle">Alice pays <tspan font-weight="700">1</tspan> BTC</text>
+    <rect class="structure" x="40" y="460" width="352" height="64"/>
+    <rect class="structure" x="265" y="468" width="34" height="48"/>
+    <text class="mono" x="216" y="503" text-anchor="middle">Alice pays <tspan font-weight="700">2</tspan> BTC</text>
+
+    <!-- annotation : un caractère -->
+    <text class="annotation" x="56" y="352">only one character changes</text>
+    <path class="fleche-note" d="M320 366 Q 330 420 290 462"/>
+
+    <!-- flux -->
+    <path class="flux" d="M392 196 H478"/>
+    <path class="flux" d="M392 492 H478"/>
+
+    <!-- sujet -->
+    <rect class="sujet" x="480" y="144" width="280" height="400"/>
+    <text class="nom-sujet" x="620" y="330" text-anchor="middle">Hash</text>
+    <text class="nom-sujet" x="620" y="374" text-anchor="middle">function</text>
+    <text class="secondaire sur-sujet" x="620" y="426" text-anchor="middle">SHA-256</text>
+
+    <path class="flux" d="M760 196 H846"/>
+    <path class="flux" d="M760 492 H846"/>
+
+    <!-- empreintes -->
+    <rect class="structure" x="848" y="96" width="384" height="200"/>
+    <text class="mono" x="1040" y="146" text-anchor="middle">a4e3ca917c598ecc</text>
+    <text class="mono" x="1040" y="186" text-anchor="middle">0ec615575a563112</text>
+    <text class="mono" x="1040" y="226" text-anchor="middle">ac27ca080fb3894c</text>
+    <text class="mono" x="1040" y="266" text-anchor="middle">0ed5fe58da6c911c</text>
+
+    <rect class="structure" x="848" y="392" width="384" height="200"/>
+    <text class="mono" x="1040" y="442" text-anchor="middle">de13fb28c133f2c6</text>
+    <text class="mono" x="1040" y="482" text-anchor="middle">b9b4010c7364f43f</text>
+    <text class="mono" x="1040" y="522" text-anchor="middle">5892b5bbf6588316</text>
+    <text class="mono" x="1040" y="562" text-anchor="middle">355704bc4e53ba0c</text>
+
+    <text class="annotation" x="1040" y="354" text-anchor="middle">136 of 256 bits change</text>
+  </g>
+</svg>

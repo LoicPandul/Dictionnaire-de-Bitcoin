@@ -2,4 +2,4 @@ Schnorr threshold signature protocol proposed by Chelsea Komlo and Ian Goldberg 
 
 The protocol relies on a (t, n) threshold scheme: among n participants who each hold a share of the private key, at least t of them must cooperate to produce a valid signature. The resulting signature is a standard Schnorr signature compliant with BIP-0340, indistinguishable from a signature produced by a regular payment. This property is particularly valuable in the context of Taproot, because it makes on-chain multisignature operations possible without revealing the underlying threshold structure, which improves privacy and reduces transaction fees.
 
-![With FROST, three of the five holders of a key share jointly produce an ordinary BIP-0340 Schnorr signature, and the resulting transaction is indistinguishable from a single-key transaction.](../../../fr/f/frost/assets/image-1.png)
+![With FROST, three of the five holders of a key share jointly produce an ordinary BIP-0340 Schnorr signature, and the resulting transaction is indistinguishable from a single-key transaction.](./assets/image-1.png)

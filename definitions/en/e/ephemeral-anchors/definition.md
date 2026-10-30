@@ -1,6 +1,6 @@
 Relay policy that allows zero-fee transactions to be propagated across the network, provided they are accompanied by a child transaction that pays sufficient fees for both. The parent transaction contains a zero-value output with an anyone-can-spend script, which lets any participant on the network create a child transaction that spends this ephemeral output and attaches the appropriate fees at broadcast time.
 
-![A zero-fee parent transaction creates a 0-sat anchor output that anyone can spend in a child transaction paying the fees of both, all relayed as a single package.](../../../fr/e/ephemeral-anchors/assets/image-1.png)
+![A zero-fee parent transaction creates a 0-sat anchor output that anyone can spend in a child transaction paying the fees of both, all relayed as a single package.](./assets/image-1.png)
 
 This mechanism solves a fundamental problem of contract protocols like the Lightning Network: transactions are signed by the participants well before they are broadcast, which makes it impossible to determine in advance a fee rate suited to network conditions. Ephemeral anchors defer the choice of fees to publication time, offering a form of “fee sponsorship” open to any party, whether or not it is a beneficiary of the transaction's other outputs.
 

@@ -6,4 +6,4 @@ This analysis heuristic was identified by Satoshi Nakamoto himself, who discusse
 
 To this day, CIOH remains the main heuristic used by chain analysis firms, along with address reuse.
 
-![Three outputs from different transactions, grouped as inputs of a single transaction, are attributed to one owner.](../../../fr/c/cioh/assets/image-1.png)
+![Three outputs from different transactions, grouped as inputs of a single transaction, are attributed to one owner.](./assets/image-1.png)

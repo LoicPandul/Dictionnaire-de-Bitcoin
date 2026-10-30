@@ -1,3 +1,3 @@
 Cryptographic key exchange method based on the principles of the Diffie-Hellman key exchange, but using elliptic curves to provide a high level of security with smaller key sizes. This protocol lets two parties generate a shared secret from their public and private key pairs, without ever having to exchange the private keys themselves. The shared secret can then be used to encrypt later communication. This algorithm is sometimes found in Bitcoin Improvement Proposals (BIPs), notably BIP-0047 and BIP-0352, for deriving fresh receiving addresses from a static identifier.
 
-![Alice and Bob exchange their public keys, then each multiplies the public key received by their own private key and obtains the same shared secret.](../../../fr/e/ecdh/assets/image-1.png)
+![Alice and Bob exchange their public keys, then each multiplies the public key received by their own private key and obtains the same shared secret.](./assets/image-1.png)

@@ -3,7 +3,7 @@ Acronym for Partially Signed Bitcoin Transaction. Specification introduced with 
 * A partially signed transaction, where some inputs are signed while others are not yet;
 * Or a fully signed Bitcoin transaction, which can be converted into a transaction ready to be broadcast on the network.
 
-![A single PSBT, created by the software, receives Alice's signature, then Bob's, then is finalized into a broadcastable transaction.](../../../fr/p/psbt/assets/image-1.png)
+![A single PSBT, created by the software, receives Alice's signature, then Bob's, then is finalized into a broadcastable transaction.](./assets/image-1.png)
 
 The PSBT format facilitates interoperability between different wallet software and signing devices (hardware wallets). Version 0 of PSBTs is defined in BIP-0174, and version 2 in BIP-0370. Since Bitcoin Core 32.0, the PSBT RPCs create version 2 PSBTs by default.
 

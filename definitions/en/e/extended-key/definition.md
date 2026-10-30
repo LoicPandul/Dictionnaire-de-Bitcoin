@@ -8,6 +8,6 @@ String of characters that combines a key (public or private), its associated cha
 * The private key or the public key;
 * A checksum. This is the first 4 bytes of the `HASH256` of all the rest of the extended key.
 
-![Structure of an extended key, from the prefix to the checksum: eight fields lined up in order, each drawn at the width of its size in bytes.](../../../fr/c/cle-etendue/assets/image-1.png)
+![Structure of an extended key, from the prefix to the checksum: eight fields lined up in order, each drawn at the width of its size in bytes.](./assets/image-1.png)
 
 In practice, the extended public key is used to generate receiving addresses and to watch the transactions of an account, without exposing the associated private keys. This can allow, for example, the creation of a so-called “watch-only” wallet. It is important to note, however, that the extended public key is sensitive information for the user's privacy, since disclosing it can allow third parties to trace the transactions and see the balance of the associated account.

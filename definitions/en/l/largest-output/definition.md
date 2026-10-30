@@ -1,3 +1,3 @@
 Internal chain analysis heuristic. When a sufficiently wide gap is observed between 2 transaction outputs in a simple payment pattern, the largest output can be estimated to be, in all likelihood, the change. This largest-output heuristic is probably the least precise of all. Identified alone, it is rather weak. However, this characteristic can be combined with other heuristics to reduce the uncertainty of the interpretation.
 
-![An input of 451,458 sats splits into two very unequal outputs, 57,814 and 390,987 sats, with the remaining 2,657 sats paying the fees: the larger one is read as the probable change, without certainty.](../../../fr/s/sortie-la-plus-grande/assets/image-1.png)
+![An input of 451,458 sats splits into two very unequal outputs, 57,814 and 390,987 sats, with the remaining 2,657 sats paying the fees: the larger one is read as the probable change, without certainty.](./assets/image-1.png)

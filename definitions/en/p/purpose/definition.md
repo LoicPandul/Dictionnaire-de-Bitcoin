@@ -4,4 +4,4 @@ In hierarchical deterministic (HD) wallets, the purpose, defined by BIP-0043, is
 * For P2WPKH: `84'`;
 * For P2TR: `86'`.
 
-![The purpose sits at depth 1 of the derivation tree: the index 84' (path m/84') indicates that the wallet follows the BIP-0084 standard.](../../../fr/o/objectif/assets/image-1.png)
+![The purpose sits at depth 1 of the derivation tree: the index 84' (path m/84') indicates that the wallet follows the BIP-0084 standard.](./assets/image-1.png)

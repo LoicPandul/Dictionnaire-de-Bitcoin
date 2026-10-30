@@ -4,4 +4,4 @@ A single `xpub` can theoretically derive more than 4 billion receiving addresses
 
 If, for example, the gap limit is set to `20` and the address `m/84'/0'/0'/0/15/` is empty, the wallet derives addresses up to `m/84'/0'/0'/0/34/`. If that range of addresses stays unused, the search stops there. As a result, a transaction using the address `m/84'/0'/0'/0/40/` would not be detected in this example.
 
-![With a gap limit of 20, the wallet scans addresses up to index 34 after the last used one (14), then stops: address 40, although used, is never detected.](../../../fr/g/gap-limit/assets/image-1.png)
+![With a gap limit of 20, the wallet scans addresses up to index 34 after the last used one (14), then stops: address 40, although used, is never detected.](./assets/image-1.png)

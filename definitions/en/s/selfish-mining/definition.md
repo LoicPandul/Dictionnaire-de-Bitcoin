@@ -2,7 +2,7 @@ Mining strategy (or attack), described in 2013 by Ittay Eyal and Emin Gün Sirer
 
 This process creates a kind of secret fork of the blockchain, which remains unknown to the rest of the network until this alternative chain potentially overtakes the honest blockchain. Once the secret chain of the attacking miners becomes longer (that is, once it contains more accumulated work) than the honest, public chain, it is published to the whole network. At that point, the nodes of the network, which follow the chain with the most accumulated work, synchronize onto this new chain. A reorganization therefore occurs.
 
-![In selfish mining, the secretly mined branch is released all at once when it overtakes the public chain, and the nodes reorganize onto it.](../../../fr/s/selfish-mining/assets/image-1.png)
+![In selfish mining, the secretly mined branch is released all at once when it overtakes the public chain, and the nodes reorganize onto it.](./assets/image-1.png)
 
 Selfish mining is a problem for users, because it weakens the security of the system by wasting part of the network's computing power. When it succeeds, it also leads to reorganizations of the blockchain, which affects the reliability of transaction confirmations for users. The practice remains risky for the attacking miners, however, because it is often more profitable to mine normally on top of the latest publicly known block than to allocate computing power to a secret fork that will probably never overtake the honest blockchain. The larger the number of blocks in the reorganization, the lower the probability that the attack succeeds.
 

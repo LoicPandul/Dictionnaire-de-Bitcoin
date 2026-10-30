@@ -9,7 +9,7 @@ $$\underbrace{[t_0 \to t_1]}_{1},\ \underbrace{[t_1 \to t_2]}_{2},\ \ldots,\ \un
 That makes 2015 intervals. To get 2016, the last block of the previous period should have been used as the starting point:
 $$T_{correct}\ =\ t_{2015}\ -\ t_{-1}$$
 
-![Between the first and the last block of a 2,016-block period, the difficulty calculation measures only 2,015 intervals; it should start from the last block of the previous period to count 2,016.](../../../fr/o/oboe-off-by-one-error/assets/image-1.png)
+![Between the first and the last block of a 2,016-block period, the difficulty calculation measures only 2,015 intervals; it should start from the last block of the previous period to count 2,016.](./assets/image-1.png)
 
 Where $t_{-1}$ denotes the timestamp of the last block of the previous period (block $n - 1$ for a period that starts at block $n$). The algorithm therefore compares 2015 real intervals to the theoretical time of 2016 intervals. This offset introduces a bias of about $\frac{1}{2016} \approx 0.05\,\%$ toward a slightly overestimated difficulty.
 

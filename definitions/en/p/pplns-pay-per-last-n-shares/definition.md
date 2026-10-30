@@ -1,3 +1,3 @@
 Method of calculating miner payouts in mining pools. PPLNS rewards miners according to their contribution among the last N shares submitted to the pool, however long they took to produce. In PPLNS, payments are made only when the pool finds a block and are based on the number of shares submitted by the miner relative to these last N shares. This method favors steady, long-term active miners, because it discourages pool hopping (frequently switching pools). The payout varies with the probability of finding a block, which can reduce the consistency of the miner's income (more variance than piece-rate payment).
 
-![In PPLNS, only the last N shares submitted before the block is found split the reward, in proportion to their number.](../../../fr/p/pplns-pay-per-last-n-shares/assets/image-1.png)
+![In PPLNS, only the last N shares submitted before the block is found split the reward, in proportion to their number.](./assets/image-1.png)

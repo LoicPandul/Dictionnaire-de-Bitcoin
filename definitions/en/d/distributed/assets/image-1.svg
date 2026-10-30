@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="568" viewBox="0 0 1280 568"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+
+/* styles propres au schéma */
+.arete{stroke:var(--encre);stroke-width:3}.arete-sujet{stroke:var(--sujet-texte);stroke-width:3}.pivot{fill:var(--fond);stroke:var(--encre);stroke-width:7}.grand{font-size:36px}</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <rect class="structure" x="32" y="32" width="384" height="504"/>
+    <text class="etiquette grand" x="224" y="462" text-anchor="middle">Centralized</text>
+    <text class="secondaire" x="224" y="508" text-anchor="middle">one authority</text>
+    <line class="arete" x1="224" y1="232" x2="224" y2="92"/>
+    <line class="arete" x1="224" y1="232" x2="323" y2="133"/>
+    <line class="arete" x1="224" y1="232" x2="364" y2="232"/>
+    <line class="arete" x1="224" y1="232" x2="323" y2="331"/>
+    <line class="arete" x1="224" y1="232" x2="224" y2="372"/>
+    <line class="arete" x1="224" y1="232" x2="125" y2="331"/>
+    <line class="arete" x1="224" y1="232" x2="84" y2="232"/>
+    <line class="arete" x1="224" y1="232" x2="125" y2="133"/>
+    <circle class="acteur" cx="224" cy="92" r="18"/>
+    <circle class="acteur" cx="323" cy="133" r="18"/>
+    <circle class="acteur" cx="364" cy="232" r="18"/>
+    <circle class="acteur" cx="323" cy="331" r="18"/>
+    <circle class="acteur" cx="224" cy="372" r="18"/>
+    <circle class="acteur" cx="125" cy="331" r="18"/>
+    <circle class="acteur" cx="84" cy="232" r="18"/>
+    <circle class="acteur" cx="125" cy="133" r="18"/>
+    <circle class="pivot" cx="224" cy="232" r="34"/>
+    <rect class="structure" x="448" y="32" width="384" height="504"/>
+    <text class="etiquette grand" x="640" y="462" text-anchor="middle">Decentralized</text>
+    <text class="secondaire" x="640" y="508" text-anchor="middle">a few authorities</text>
+    <line class="arete" x1="640" y1="158" x2="566" y2="290"/>
+    <line class="arete" x1="640" y1="158" x2="714" y2="290"/>
+    <line class="arete" x1="566" y1="290" x2="714" y2="290"/>
+    <line class="arete" x1="640" y1="158" x2="579" y2="103"/>
+    <line class="arete" x1="640" y1="158" x2="640" y2="76"/>
+    <line class="arete" x1="640" y1="158" x2="701" y2="103"/>
+    <line class="arete" x1="566" y1="290" x2="513" y2="353"/>
+    <line class="arete" x1="566" y1="290" x2="484" y2="290"/>
+    <line class="arete" x1="566" y1="290" x2="505" y2="235"/>
+    <line class="arete" x1="714" y1="290" x2="775" y2="235"/>
+    <line class="arete" x1="714" y1="290" x2="796" y2="290"/>
+    <line class="arete" x1="714" y1="290" x2="767" y2="353"/>
+    <circle class="acteur" cx="579" cy="103" r="18"/>
+    <circle class="acteur" cx="640" cy="76" r="18"/>
+    <circle class="acteur" cx="701" cy="103" r="18"/>
+    <circle class="acteur" cx="513" cy="353" r="18"/>
+    <circle class="acteur" cx="484" cy="290" r="18"/>
+    <circle class="acteur" cx="505" cy="235" r="18"/>
+    <circle class="acteur" cx="775" cy="235" r="18"/>
+    <circle class="acteur" cx="796" cy="290" r="18"/>
+    <circle class="acteur" cx="767" cy="353" r="18"/>
+    <circle class="pivot" cx="640" cy="158" r="28"/>
+    <circle class="pivot" cx="566" cy="290" r="28"/>
+    <circle class="pivot" cx="714" cy="290" r="28"/>
+    <rect class="sujet" x="864" y="32" width="384" height="504"/>
+    <line class="arete-sujet" x1="974" y1="90" x2="1051" y2="100"/>
+    <line class="arete-sujet" x1="974" y1="90" x2="918" y2="188"/>
+    <line class="arete-sujet" x1="974" y1="90" x2="1017" y2="180"/>
+    <line class="arete-sujet" x1="1051" y1="100" x2="1148" y2="97"/>
+    <line class="arete-sujet" x1="1051" y1="100" x2="1017" y2="180"/>
+    <line class="arete-sujet" x1="1051" y1="100" x2="1097" y2="191"/>
+    <line class="arete-sujet" x1="1148" y1="97" x2="1097" y2="191"/>
+    <line class="arete-sujet" x1="1148" y1="97" x2="1194" y2="190"/>
+    <line class="arete-sujet" x1="918" y1="188" x2="1017" y2="180"/>
+    <line class="arete-sujet" x1="918" y1="188" x2="972" y2="273"/>
+    <line class="arete-sujet" x1="1017" y1="180" x2="1097" y2="191"/>
+    <line class="arete-sujet" x1="1017" y1="180" x2="972" y2="273"/>
+    <line class="arete-sujet" x1="1017" y1="180" x2="1050" y2="275"/>
+    <line class="arete-sujet" x1="1097" y1="191" x2="1194" y2="190"/>
+    <line class="arete-sujet" x1="1097" y1="191" x2="1050" y2="275"/>
+    <line class="arete-sujet" x1="1097" y1="191" x2="1147" y2="284"/>
+    <line class="arete-sujet" x1="1194" y1="190" x2="1147" y2="284"/>
+    <line class="arete-sujet" x1="972" y1="273" x2="1050" y2="275"/>
+    <line class="arete-sujet" x1="972" y1="273" x2="920" y2="364"/>
+    <line class="arete-sujet" x1="972" y1="273" x2="1018" y2="373"/>
+    <line class="arete-sujet" x1="1050" y1="275" x2="1147" y2="284"/>
+    <line class="arete-sujet" x1="1050" y1="275" x2="1018" y2="373"/>
+    <line class="arete-sujet" x1="1050" y1="275" x2="1095" y2="374"/>
+    <line class="arete-sujet" x1="1147" y1="284" x2="1095" y2="374"/>
+    <line class="arete-sujet" x1="1147" y1="284" x2="1190" y2="365"/>
+    <line class="arete-sujet" x1="920" y1="364" x2="1018" y2="373"/>
+    <line class="arete-sujet" x1="1018" y1="373" x2="1095" y2="374"/>
+    <line class="arete-sujet" x1="1095" y1="374" x2="1190" y2="365"/>
+    <circle class="acteur" cx="974" cy="90" r="18"/>
+    <circle class="acteur" cx="1051" cy="100" r="18"/>
+    <circle class="acteur" cx="1148" cy="97" r="18"/>
+    <circle class="acteur" cx="918" cy="188" r="18"/>
+    <circle class="acteur" cx="1017" cy="180" r="18"/>
+    <circle class="acteur" cx="1097" cy="191" r="18"/>
+    <circle class="acteur" cx="1194" cy="190" r="18"/>
+    <circle class="acteur" cx="972" cy="273" r="18"/>
+    <circle class="acteur" cx="1050" cy="275" r="18"/>
+    <circle class="acteur" cx="1147" cy="284" r="18"/>
+    <circle class="acteur" cx="920" cy="364" r="18"/>
+    <circle class="acteur" cx="1018" cy="373" r="18"/>
+    <circle class="acteur" cx="1095" cy="374" r="18"/>
+    <circle class="acteur" cx="1190" cy="365" r="18"/>
+    <text class="nom-sujet" x="1056" y="462" text-anchor="middle">Distributed</text>
+    <text class="secondaire sur-sujet" x="1056" y="508" text-anchor="middle">no authority</text>
+  </g>
+</svg>

@@ -4,4 +4,4 @@ Process by which the nodes of the Bitcoin network connect to other nodes to obta
 * If, after 60 seconds, the node still has no address for one of the networks it uses (for example because the DNS seeds did not respond), it can then turn to the seed nodes. These are public Bitcoin nodes listed in a static list of about 2,000 entries (2,057 in Bitcoin Core 32.1) built directly into the Bitcoin Core source code. The new node will use this list to establish a first connection to the network and obtain IP addresses of other nodes;
 * In the very unlikely case that all the previous methods fail, the node operator can always manually add IP addresses of nodes to establish a first connection.
 
-![Peer discovery tries its sources in order: the peers.dat file, then the DNS seeds, then the seed nodes after 60 seconds, and finally manual address entry by the operator.](../../../fr/p/peer-discovery/assets/image-1.png)
+![Peer discovery tries its sources in order: the peers.dat file, then the DNS seeds, then the seed nodes after 60 seconds, and finally manual address entry by the operator.](./assets/image-1.png)
