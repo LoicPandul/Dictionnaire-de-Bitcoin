@@ -27,7 +27,7 @@ from scripts.core import translations, yaml_sync  # noqa: E402
 from scripts.validators import (  # noqa: E402
     content_validator, markdown_linter, metadata_validator, sync_checker, translation_checker)
 
-FORMATS = ("pdf", "epub")
+FORMATS = ("pdf", "pdf-nb", "epub")
 
 
 def _report(title: str, errors: list, limit: int = 40) -> bool:
@@ -121,6 +121,11 @@ def cmd_build(dictionary: Dictionary, args=None) -> bool:
         out_dir.mkdir(parents=True, exist_ok=True)
         if "pdf" in wanted_formats:
             path = pdf_generator.generate(book, out_dir)
+            ok &= path is not None
+            produced += [path] if path else []
+        fmt = pdf_generator.FORMATS.get(book.edition.format)
+        if "pdf-nb" in wanted_formats and fmt and fmt.color:  # le poche est déjà en noir et blanc
+            path = pdf_generator.generate(book, out_dir, print_bw=True)
             ok &= path is not None
             produced += [path] if path else []
         if "epub" in wanted_formats:
@@ -315,7 +320,7 @@ def main() -> int:
         p = sub.add_parser(name, help=help_text)
         if name == "build":
             p.add_argument("--edition", default="all", help="éditions de templates/editions.yaml séparées par des virgules (complete, essentiel) ou all (défaut)")
-            p.add_argument("--format", default="all", help="pdf, epub (séparés par des virgules) ou all")
+            p.add_argument("--format", default="all", help="pdf, pdf-nb (impression noir et blanc d'une édition couleur), epub (séparés par des virgules) ou all")
             p.add_argument("--output-dir", help="dossier de sortie (défaut : build/)")
             p.add_argument("--force", action="store_true", help="générer même si la validation échoue")
             p.add_argument("--lang", default="fr",

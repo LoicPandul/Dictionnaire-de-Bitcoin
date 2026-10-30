@@ -40,6 +40,7 @@ python3 scripts/main.py check                     # tout valider, sans rien modi
 python3 scripts/main.py fix                       # corrections automatiques (listes, renvois invalides)
 python3 scripts/main.py build                     # toutes les éditions, tous les formats
 python3 scripts/main.py build --edition complete --format pdf,epub
+python3 scripts/main.py build --edition complete --format pdf-nb  # fichier d'impression noir et blanc du complet
 python3 scripts/main.py build --lang en             # livres anglais, dans build/en/<édition>/
 python3 scripts/main.py index                     # INDEX.md
 python3 scripts/main.py stats                     # stats.md et badge du README

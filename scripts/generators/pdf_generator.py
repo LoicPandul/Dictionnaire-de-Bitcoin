@@ -628,16 +628,24 @@ def _page_count(pdf: Path) -> int:
     return int(m.group(1)) if m else 0
 
 
-def generate(book: Book, output_dir: Optional[Path] = None) -> Optional[Path]:
-    """Génère le PDF d'une édition, au format qu'elle demande. Retourne le chemin, ou None en cas d'échec."""
+def generate(book: Book, output_dir: Optional[Path] = None, print_bw: bool = False) -> Optional[Path]:
+    """Génère le PDF d'une édition, au format qu'elle demande. Retourne le chemin, ou None en cas d'échec.
+
+    `print_bw` : fichier d'impression en noir et blanc d'une édition couleur (même mise en page,
+    schémas « -nb », Figue en noir), nommé `<fichier>-impression.pdf`. Le PDF couleur reste celui
+    de la lecture en ligne ; on n'envoie pas le fichier couleur à l'imprimeur pour qu'il le convertisse."""
     fmt = FORMATS.get(book.edition.format)
     if fmt is None:
         print(f"[ERREUR] format PDF inconnu : {book.edition.format} (formats : {', '.join(FORMATS)})")
         return None
+    suffix = ""
+    if print_bw and fmt.color:
+        fmt = replace(fmt, color=False, label=fmt.label.replace("couleur", "noir et blanc (impression)"))
+        suffix = "-impression"
     output_dir = output_dir or BUILD_DIR / book.edition.id
     workdir = output_dir / "tex"
     workdir.mkdir(parents=True, exist_ok=True)
-    name = book.edition.file
+    name = book.edition.file + suffix
     tex_path = workdir / f"{name}.tex"
     pdf = workdir / f"{name}.pdf"
     if fmt.color:
