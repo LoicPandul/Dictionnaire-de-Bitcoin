@@ -1,1 +1,1 @@
-Proposal that adds the SIGHASH modifiers `SIGHASH_ANYPREVOUT` and `SIGHASH_ANYPREVOUTANYSCRIPT`, whose signatures cover no input and can therefore be reused across several transactions. It would notably enable Eltoo on Lightning.
+Proposal that adds the SIGHASH modifiers `SIGHASH_ANYPREVOUT` and `SIGHASH_ANYPREVOUTANYSCRIPT`, whose signatures commit to no specific UTXO and can therefore be reused across several transactions. It would notably enable Eltoo on Lightning.
