@@ -60,8 +60,9 @@ seulement, textes de `templates/en/`.
 
 - **Métadonnées** : UUID et slugs uniques, dossier = slug, titres en majuscules, catégorie connue,
   renvois vers des UUID existants, images déclarées et présentes. Une image de `assets:` n'a que
-  deux champs : `filename`, et `credit` pour une image de tiers (logo, capture), sur une ligne de
-  200 caractères au plus ; ce crédit s'imprime en petit sous l'image, dans le PDF et l'EPUB.
+  trois champs : `filename`, et pour une image de tiers (logo, capture) `credit` et sa
+  traduction `credit_en`, chacun sur une ligne de 200 caractères au plus ; ce crédit s'imprime
+  en petit sous l'image, dans le PDF et l'EPUB de sa langue.
 - **Versions courtes** : chaque `definition.md` a sa `courte.md` (et inversement), qui tient en une
   ou deux phrases et 45 mots au plus, sans liste, image, formule, lien, gras ni titre.
 - **Markdown** : listes et citations au format du dépôt.

@@ -161,7 +161,9 @@ traduction de la chronologie et des résumés. À sa prochaine fusion, il doit s
   joindre à l'événement français de même date et de même rang dans le fichier
   (`scripts/core/yaml_sync.py`) ; `related` et `sources` restent dans `chronologie/fr/` ;
 - slugs anglais : `definitions/en/` est rangé par slug anglais (`bearer-asset`, pas
-  `actif-au-porteur`) ; le dossier se retrouve par l'`uuid` ou par `source_slug`.
+  `actif-au-porteur`) ; le dossier se retrouve par l'`uuid` ou par `source_slug` ;
+- crédits des images de tiers : la page anglaise affiche `credit_en`, à côté de `credit` dans
+  `assets:` du `metadata.yaml` français.
 
 Le reste de ce qu'il lit ne bouge pas (`definitions/`, `chronologie/fr/`, `templates/*.yaml`,
 `assets/pictograms/`).

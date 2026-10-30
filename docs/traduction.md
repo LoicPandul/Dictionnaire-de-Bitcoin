@@ -164,13 +164,16 @@ request : une traduction orpheline fait échouer `check`.
   (`fifty-one-percent-attack`). Le dossier de lettre est la première lettre du slug.
 - **Registre** : celui du dictionnaire français (phrase d'attaque sans sujet, voix impersonnelle,
   Alice et Bob), en anglais technique naturel, orthographe américaine. Pas de tiret cadratin ni
-  demi-cadratin, pas de gras, guillemets droits doubles, séparateur de milliers en virgule.
+  demi-cadratin, pas de gras, guillemets courbes doubles (“Merkle root”) dans le texte, droits
+  seulement dans le code, les formules et les liens, séparateur de milliers en virgule.
 - **Italique** : il marquait en français les termes anglais (*wallet*, *output*) ; en anglais,
   ces termes s'écrivent en romain. L'italique reste pour la note finale et les mots étrangers.
 - **Note finale** : elle se réécrit pour un lecteur anglophone (synonymes, confusions
   fréquentes) ; ce qui ne servait qu'au lecteur français (« en anglais, on dit… ») disparaît.
 - **Images** : la traduction réutilise l'image française avec un chemin relatif
   (`![Alt text in English.](../../../fr/c/coinjoin/assets/image-1.png)`) et traduit le texte
-  alternatif. Un schéma redessiné en anglais va dans `assets/` du dossier anglais.
+  alternatif. Un schéma redessiné en anglais va dans `assets/` du dossier anglais. Le crédit
+  d'une image de tiers se traduit dans le `metadata.yaml` français, champ `credit_en` sous
+  `credit` ; `check` signale une image créditée dont l'entrée est traduite sans ce champ.
 - **Version courte** : mêmes règles qu'en français (une ou deux phrases, 45 mots au plus, sans
   liste, lien, image, formule, gras ni titre).
