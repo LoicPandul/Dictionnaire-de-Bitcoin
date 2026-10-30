@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="704" viewBox="0 0 1280 704"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+
+/* styles propres au schéma */
+@page { size: 1280px 704px; margin: 0 } body { margin: 0 }</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- Couches de chiffrement imbriquées -->
+    <text class="secondaire" x="256" y="52">encrypted for A</text>
+    <path class="lien" style="marker-end:none" d="M248 64 H1248"/>
+    <text class="secondaire" x="516" y="100">encrypted for B</text>
+    <path class="lien" style="marker-end:none" d="M508 112 H1224"/>
+    <text class="secondaire" x="796" y="148">encrypted for Bob</text>
+    <path class="lien" style="marker-end:none" d="M788 160 H1200"/>
+    <!-- Le paquet -->
+    <rect class="sujet" x="248" y="192" width="1000" height="96"/>
+    <path style="stroke:var(--sujet-texte);stroke-width:3;fill:none" d="M508 192 V288 M788 192 V288 M1048 192 V288"/>
+    <text class="nom-sujet" x="378" y="253" text-anchor="middle">layer A</text>
+    <text class="nom-sujet" x="648" y="253" text-anchor="middle">layer B</text>
+    <text class="nom-sujet" x="918" y="253" text-anchor="middle">layer Bob</text>
+    <text class="secondaire sur-sujet" x="1148" y="251" text-anchor="middle">padding</text>
+    <text class="etiquette" x="32" y="232">Onion</text>
+    <text class="etiquette" x="32" y="272">packet</text>
+    <text class="secondaire" x="32" y="328">1,366 bytes,</text>
+    <text class="secondaire" x="32" y="364">fixed size</text>
+    <!-- Chaque nœud retire sa couche -->
+    <text class="annotation" x="394" y="364">peels off its layer</text>
+    <path class="lien" d="M378 288 V414"/>
+    <path class="lien" d="M648 288 V414"/>
+    <path class="lien" d="M918 288 V414"/>
+    <!-- Route -->
+    <circle class="acteur" cx="120" cy="472" r="56"/>
+    <text class="etiquette" x="120" y="483" text-anchor="middle">Alice</text>
+    <circle class="acteur" cx="378" cy="472" r="56"/>
+    <text class="etiquette" x="378" y="483" text-anchor="middle">A</text>
+    <circle class="acteur" cx="648" cy="472" r="56"/>
+    <text class="etiquette" x="648" y="483" text-anchor="middle">B</text>
+    <circle class="acteur" cx="918" cy="472" r="56"/>
+    <text class="etiquette" x="918" y="483" text-anchor="middle">Bob</text>
+    <path class="hors-chaine" style="marker-end:url(#tete-lien)" d="M176 472 H320"/>
+    <path class="hors-chaine" style="marker-end:url(#tete-lien)" d="M434 472 H590"/>
+    <path class="hors-chaine" style="marker-end:url(#tete-lien)" d="M704 472 H860"/>
+    <!-- Ce que chaque couche révèle -->
+    <rect class="structure" x="258" y="560" width="240" height="112"/>
+    <text class="secondaire" x="402" y="604" text-anchor="end">channel</text>
+    <path class="lien" d="M410 594 H432"/>
+    <text class="secondaire" x="440" y="604">B</text>
+    <text class="secondaire" x="378" y="644" text-anchor="middle">amount, CLTV</text>
+    <rect class="structure" x="528" y="560" width="240" height="112"/>
+    <text class="secondaire" x="656" y="604" text-anchor="end">channel</text>
+    <path class="lien" d="M664 594 H686"/>
+    <text class="secondaire" x="694" y="604">Bob</text>
+    <text class="secondaire" x="648" y="644" text-anchor="middle">amount, CLTV</text>
+    <rect class="structure" x="798" y="560" width="240" height="112"/>
+    <text class="secondaire" x="918" y="604" text-anchor="middle">recipient</text>
+    <text class="secondaire" x="918" y="644" text-anchor="middle">amount, CLTV</text>
+    <path class="lien" d="M378 528 V558"/>
+    <path class="lien" d="M648 528 V558"/>
+    <path class="lien" d="M918 528 V558"/>
+  </g>
+</svg>

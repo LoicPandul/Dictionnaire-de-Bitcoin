@@ -1,6 +1,6 @@
 Acronym for *Hashed Time-Locked Contract*. It is a smart contract mechanism used mainly on Lightning, and sometimes found in atomic swaps. An HTLC makes a transfer of funds conditional on a secret being revealed, and also includes a time condition to protect the sender's money if the transfer fails.
 
-![The HTLC locks 1 BTC that Alice has committed: Bob can spend it by revealing the preimage s whose hash is h, or Alice can reclaim it once block 900,000 is reached.](../../../fr/h/htlc/assets/image-2.png)
+![The HTLC locks 1 BTC that Alice has committed: Bob can spend it by revealing the preimage s whose hash is h, or Alice can reclaim it once block 900,000 is reached.](./assets/image-2.png)
 
 On Lightning, HTLCs let a sender pay a node it has no direct channel with, across several channels, with no trust needed along the route. The payment between each pair of nodes is conditional on providing a preimage (the secret that, when hashed, matches an agreed value). If the final recipient provides this preimage, it can claim the funds, which necessarily lets each intermediate node claim the funds too, in a cascade.
 
@@ -13,6 +13,6 @@ For example, if Alice wants to send 1 BTC to David but has no direct channel wit
 
 In the end, Alice has sent 1 BTC to David through Bob and Carol (who can each charge routing fees, left out of this example), without anyone having to trust anyone, because the HTLC conditions secure every step in a cascade.
 
-![The 1 BTC HTLCs are set up from Alice to David, then the preimage s revealed by David travels back from node to node to Alice and unlocks each HTLC.](../../../fr/h/htlc/assets/image-1.png)
+![The 1 BTC HTLCs are set up from Alice to David, then the preimage s revealed by David travels back from node to node to Alice and unlocks each HTLC.](./assets/image-1.png)
 
 HTLCs thus enable so-called “atomic” operations: either the transfer fully succeeds, or it fails and the funds are returned. This keeps transactions secure even among several participants, with no need for trust.

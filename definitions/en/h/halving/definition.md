@@ -6,6 +6,6 @@ The initial block subsidy was 50 bitcoin, and a halving occurs every 210,000 min
 * At block 630,000 on May 11, 2020, reducing the subsidy to 6.25 BTC;
 * At block 840,000 on April 20, 2024, reducing the subsidy to 3.125 BTC.
 
-![Staircase of the block subsidy: 50, 25, 12.5, 6.25, then 3.125 BTC, one step every 210,000 blocks, from 0 to 840,000.](../../../fr/h/halving/assets/image-1.png)
+![Staircase of the block subsidy: 50, 25, 12.5, 6.25, then 3.125 BTC, one step every 210,000 blocks, from 0 to 840,000.](./assets/image-1.png)
 
 Halvings will continue until the block subsidy reaches zero, at which point the maximum supply of about 21 million bitcoin will have been reached. The next Bitcoin halving is expected around spring 2028, although the exact date may vary slightly depending on block times. The block subsidy will then be cut from 3.125 to 1.5625 bitcoin. It will be the fifth halving in Bitcoin's history. As block subsidies fall, transaction fees become an increasingly important source of revenue for miners, which keeps them motivated to continue taking part in proof of work.

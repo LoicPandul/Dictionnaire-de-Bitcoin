@@ -1,3 +1,3 @@
 Backward-compatible change to the protocol rules. Unlike a hard fork, a soft fork does not split the network of Bitcoin nodes into two distinct groups, provided that a majority of the hash power is on the updated chain. If all goes well, nodes with the update and nodes without it therefore stay on the same blockchain. A change is backward-compatible when it adds or tightens certain protocol rules.
 
-![In a soft fork, the blocks that comply with the new rules form a subset of the blocks that comply with the old ones: a block containing a P2WPKH spend without a signature is accepted by an old node but rejected by an up-to-date node.](../../../fr/s/soft-fork/assets/image-1.png)
+![In a soft fork, the blocks that comply with the new rules form a subset of the blocks that comply with the old ones: a block containing a P2WPKH spend without a signature is accepted by an old node but rejected by an up-to-date node.](./assets/image-1.png)

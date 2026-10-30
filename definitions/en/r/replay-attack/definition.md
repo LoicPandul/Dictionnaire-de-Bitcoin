@@ -2,7 +2,7 @@ In the context of Bitcoin, attack in which a transaction valid on one blockchain
 
 Let's take the example of a hypothetical Bitcoin hard fork named “BitcoinBis”. If Alice pays in bitcoin to buy a baguette from a baker on the real Bitcoin blockchain, the same baker could replay this legitimate transaction on BitcoinBis to receive the same amount of cryptocurrency on that fork, without any action from Alice.
 
-![After the split between Bitcoin and BitcoinBis, the baker copies Alice's payment and rebroadcasts it on BitcoinBis, where the same transaction remains valid.](../../../fr/r/replay-attack/assets/image-1.png)
+![After the split between Bitcoin and BitcoinBis, the baker copies Alice's payment and rebroadcasts it on BitcoinBis, where the same transaction remains valid.](./assets/image-1.png)
 
 This type of attack can only occur when the blockchain splits into 2 independent chains that persist over time. Typically, this happens with a hard fork. For a replay attack to be possible, the 2 blockchains must share a common history, and the duplicated transaction must spend as inputs UTXOs created by earlier transactions that took place before the two chains split, or by earlier transactions that were themselves already replayed in a previous replay attack.
 

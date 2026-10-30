@@ -19,6 +19,6 @@ OP_EQUALVERIFY
 OP_CHECKSIG
 ```
 
-![The P2PKH scriptSig is evaluated first and pushes the signature, then the public key; the scriptPubKey of the spent output then runs on the same stack, which must end on true.](../../../fr/s/scriptsig/assets/image-1.png)
+![The P2PKH scriptSig is evaluated first and pushes the signature, then the public key; the scriptPubKey of the spent output then runs on the same stack, which must end on true.](./assets/image-1.png)
 
 *The `scriptSig` is also sometimes called the “unlocking script”.*

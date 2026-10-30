@@ -1,3 +1,3 @@
 Formal promise to commit only once to a message not yet known, so that the fact of the commitment is demonstrably known to a defined audience as a whole. This mechanism aims to prevent the creation of multiple competing commitments for the same seal, which guarantees the uniqueness of each validation. By imposing this single-use constraint, the single-use seal is used on RGB to prevent double spending.
 
-![A UTXO serves as a seal: the witness transaction that spends it closes it over the commitment to message A, and a competing transaction committed to a message B is rejected, because the UTXO is already spent.](../../../fr/s/single-use-seal/assets/image-1.png)
+![A UTXO serves as a seal: the witness transaction that spends it closes it over the commitment to message A, and a competing transaction committed to a message B is rejected, because the UTXO is already spent.](./assets/image-1.png)

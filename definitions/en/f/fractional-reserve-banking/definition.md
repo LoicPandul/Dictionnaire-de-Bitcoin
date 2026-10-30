@@ -1,3 +1,3 @@
 Principle of traditional finance under which banks keep only a fraction of their customers' deposits as available reserves and use the rest to make loans and generate profit. In the context of Bitcoin, although the money itself is not subject to bank credit creation, the concept of fractional reserve applies when an exchange holds only part of the BTC deposited by its users and uses the rest for other purposes. This creates a liquidity and solvency risk if all users decide to withdraw their funds at the same time. This is one of the reasons why it is essential to hold one's own bitcoin in self-custody.
 
-![On €100,000 of deposits, the bank keeps 10% in reserve for withdrawals and lends out the remaining 90%.](../../../fr/r/reserves-fractionnaires/assets/image-1.png)
+![On €100,000 of deposits, the bank keeps 10% in reserve for withdrawals and lends out the remaining 90%.](./assets/image-1.png)

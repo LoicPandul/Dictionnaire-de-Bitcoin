@@ -5,7 +5,7 @@ Piece of information used to receive bitcoin. An address is generally built by h
 * The payload: the hash digest of the public key (or the public key itself in the case of Taproot);
 * The checksum: a BCH code.
 
-![A SegWit address split into its five parts: the HRP “bc”, the separator “1”, the version “q”, the payload (the hash digest of the public key), and the checksum, a BCH code.](../../../fr/a/adresse-de-reception/assets/image-1.png)
+![A SegWit address split into its five parts: the HRP “bc”, the separator “1”, the version “q”, the payload (the hash digest of the public key), and the checksum, a BCH code.](./assets/image-1.png)
 
 But a receiving address can also represent something else, depending on the script template used. For example, P2SH addresses are built from the hash of the script. Taproot addresses, on the other hand, directly contain the tweaked public key, without hashing it.
 

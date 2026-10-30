@@ -4,4 +4,4 @@ Transactions with many inputs are heavier and therefore more expensive. Beyond t
 
 However, consolidation transactions are recognizable in chain analysis. Such a transaction signals a CIOH (common-input-ownership heuristic), meaning that the inputs of the consolidation transaction are owned by a single entity. This can have privacy implications for the user.
 
-![Consolidation transaction: five UTXOs of 50,000, 175,000, 8,000, 245,000, and 77,000 sats enter a single transaction that creates one UTXO of 550,000 sats sent back to the same wallet, with 5,000 sats going to fees.](../../../fr/c/consolidation/assets/image-1.png)
+![Consolidation transaction: five UTXOs of 50,000, 175,000, 8,000, 245,000, and 77,000 sats enter a single transaction that creates one UTXO of 550,000 sats sent back to the same wallet, with 5,000 sats going to fees.](./assets/image-1.png)

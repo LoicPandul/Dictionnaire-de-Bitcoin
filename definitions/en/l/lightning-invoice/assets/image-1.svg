@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="832" viewBox="0 0 1280 832"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema" transform="translate(56 0)">
+    <!-- Accolades des deux parties -->
+    <path class="structure" d="M272 40 H256 V168 H272" style="fill:none"/>
+    <text class="secondaire" x="236" y="114" text-anchor="end">human-readable part</text>
+    <path class="structure" d="M272 256 H256 V704 H272" style="fill:none"/>
+    <text class="secondaire" x="236" y="490" text-anchor="end">data part</text>
+
+    <!-- La facture BOLT-11 : une seule chaîne, lue de haut en bas -->
+    <path class="sujet" d="M280 32 H520 V784 L508 800 L496 784 L484 800 L472 784 L460 800 L448 784 L436 800 L424 784 L412 800 L400 784 L388 800 L376 784 L364 800 L352 784 L340 800 L328 784 L316 800 L304 784 L292 800 L280 784 Z"/>
+    <rect class="reserve" x="280" y="103" width="240" height="2"/>
+    <rect class="reserve" x="280" y="175" width="240" height="2"/>
+    <rect class="reserve" x="280" y="247" width="240" height="2"/>
+    <rect class="reserve" x="280" y="319" width="240" height="2"/>
+    <rect class="reserve" x="280" y="391" width="240" height="2"/>
+    <rect class="reserve" x="280" y="463" width="240" height="2"/>
+    <rect class="reserve" x="280" y="535" width="240" height="2"/>
+    <rect class="reserve" x="280" y="639" width="240" height="2"/>
+    <rect class="reserve" x="280" y="711" width="240" height="2"/>
+    <text class="mono sur-sujet" x="400" y="78" text-anchor="middle" style="font-weight:700">lnbc</text>
+    <text class="mono sur-sujet" x="400" y="150" text-anchor="middle" style="font-weight:700">2500u</text>
+    <text class="mono sur-sujet" x="400" y="222" text-anchor="middle">1</text>
+    <text class="mono sur-sujet" x="400" y="294" text-anchor="middle">pvjluez</text>
+    <text class="mono sur-sujet" x="400" y="366" text-anchor="middle">pp5qqqs…</text>
+    <text class="mono sur-sujet" x="400" y="438" text-anchor="middle">xqzpu</text>
+    <text class="mono sur-sujet" x="400" y="510" text-anchor="middle">…</text>
+    <text class="mono sur-sujet" x="400" y="598" text-anchor="middle">np4q…</text>
+    <text class="mono sur-sujet" x="400" y="686" text-anchor="middle">…</text>
+    <text class="mono sur-sujet" x="400" y="758" text-anchor="middle">…</text>
+
+    <!-- Les champs -->
+    <path class="lien" d="M528 68 H572"/>
+    <text class="etiquette" x="584" y="79">ln prefix</text>
+
+    <path class="lien" d="M528 140 H572"/>
+    <rect class="valeur" x="576" y="108" width="232" height="64" rx="32"/>
+    <text class="etiquette" x="692" y="151" text-anchor="middle">250,000 sats</text>
+    <text class="annotation" x="840" y="150">optional</text>
+
+    <path class="lien" d="M528 212 H572"/>
+    <text class="secondaire" x="584" y="222">separator</text>
+
+    <path class="lien" d="M528 284 H572"/>
+    <text class="secondaire" x="584" y="294">timestamp</text>
+
+    <path class="lien" d="M528 356 H572"/>
+    <text class="etiquette" x="584" y="367">hash of the secret</text>
+
+    <path class="lien" d="M528 428 H572"/>
+    <text class="etiquette" x="584" y="439">expiry: 60 s</text>
+    <text class="annotation" x="840" y="438">optional</text>
+
+    <path class="lien" d="M528 500 H572"/>
+    <text class="secondaire" x="584" y="510">payment secret, description, routing…</text>
+
+    <path class="lien" d="M528 572 H572"/>
+    <text class="etiquette" x="584" y="583">recipient public key</text>
+    <text class="annotation" x="584" y="621">optional: else via the signature</text>
+
+    <path class="lien" d="M528 676 H572"/>
+    <rect class="secret" x="576" y="644" width="200" height="64" rx="8"/>
+    <text class="etiquette" x="676" y="687" text-anchor="middle">signature</text>
+
+    <path class="lien" d="M528 748 H572"/>
+    <text class="secondaire" x="584" y="758">checksum</text>
+  </g>
+</svg>

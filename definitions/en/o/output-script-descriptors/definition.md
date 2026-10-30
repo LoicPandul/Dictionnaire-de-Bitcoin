@@ -30,4 +30,4 @@ Next, the notation `/<0;1>/*` specifies that the descriptor can generate address
 
 Finally, `#jf3mk4q0` represents the checksum used to verify the integrity of the descriptor.
 
-![A P2WPKH descriptor split into its parts: the script function wpkh, the fingerprint and derivation path, the extended public key, the chains and the index, then the checksum after the hash sign.](../../../fr/o/output-script-descriptors/assets/image-1.png)
+![A P2WPKH descriptor split into its parts: the script function wpkh, the fingerprint and derivation path, the extended public key, the keychains and the index, then the checksum after the hash sign.](./assets/image-1.png)

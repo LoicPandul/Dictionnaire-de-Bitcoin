@@ -4,6 +4,6 @@ The difficulty target is an adjustable 256-bit (32-byte) number that sets an acc
 
 This target is adjusted every 2016 blocks (about every two weeks), in an event called the “adjustment”. The difficulty factor is recomputed based on the time it took to mine the previous 2016 blocks. If the total time is less than two weeks, the difficulty increases by adjusting the target downward. If the total time is more than two weeks, the difficulty decreases by adjusting the target upward. The goal is to keep the average mining time per block at 10 minutes. This spacing between blocks helps avoid splits of the Bitcoin network, which waste computing power. The difficulty target is found in each block header, in the `nBits` field. Since this field is limited to 32 bits and the target is actually 256 bits, the target is compacted into a less precise scientific format.
 
-![A header hash is valid only if, placed on the scale of values, it falls below the target; above it, it is rejected.](../../../fr/c/cible-de-difficulte/assets/image-1.png)
+![A header hash is valid only if, placed on the scale of values, it falls below the target; above it, it is rejected.](./assets/image-1.png)
 
 *The difficulty target is sometimes also called the “difficulty factor”. By extension, it can be referred to through its encoding in block headers with the term “nBits”.*

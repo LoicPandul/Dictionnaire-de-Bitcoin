@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="584" viewBox="0 0 1280 584"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- Le sujet : le redeemScript révélé à la dépense -->
+    <rect class="sujet" x="352" y="32" width="576" height="96"/>
+    <text class="nom-sujet" x="640" y="93" text-anchor="middle">redeemScript</text>
+    <text class="annotation" x="32" y="72">revealed at spend time</text>
+    <path class="fleche-note" d="M200 88 Q240 120 344 96"/>
+
+    <!-- Temps 1 : haché, comparé -->
+    <path class="flux" d="M488 128 V252"/>
+    <text class="annotation" x="464" y="200" text-anchor="end">first</text>
+    <text class="mono" x="508" y="200">HASH160</text>
+    <rect class="structure" x="352" y="256" width="272" height="72"/>
+    <text class="mono" x="488" y="302" text-anchor="middle">3f2a91c0…b7e4</text>
+    <text class="etiquette" x="328" y="304" text-anchor="middle">=</text>
+    <rect class="structure" x="32" y="256" width="272" height="72"/>
+    <text class="mono" x="168" y="302" text-anchor="middle">3f2a91c0…b7e4</text>
+    <text class="mono" x="168" y="376" text-anchor="middle">scriptPubKey</text>
+
+    <!-- Passage au temps 2 -->
+    <path class="lien" d="M624 292 H764"/>
+    <text class="annotation" x="694" y="276" text-anchor="middle">if equal</text>
+
+    <!-- Temps 2 : exécuté avec les signatures -->
+    <path class="flux" d="M880 128 V252"/>
+    <text class="annotation" x="856" y="200" text-anchor="end">then</text>
+    <text class="secondaire" x="900" y="200">executed</text>
+    <rect class="structure" x="768" y="256" width="480" height="184"/>
+    <text class="mono" x="1008" y="336" text-anchor="middle">OP_2 &lt;A&gt; &lt;B&gt; &lt;C&gt; OP_3</text>
+    <text class="mono" x="1008" y="384" text-anchor="middle">OP_CHECKMULTISIG</text>
+    <rect class="secret" x="352" y="368" width="320" height="72" rx="8"/>
+    <text class="etiquette" x="512" y="415" text-anchor="middle">Signatures A, B</text>
+    <path class="flux" d="M672 404 H764"/>
+
+    <path class="flux" d="M1008 440 V500"/>
+    <text class="etiquette" x="1008" y="544" text-anchor="middle">Valid spend</text>
+  </g>
+</svg>

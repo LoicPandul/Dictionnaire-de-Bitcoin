@@ -1,3 +1,3 @@
 Merkle tree structure of the RGB protocol, abbreviated MPC, designed to embed, within a single Bitcoin transaction, several Transition Bundles from distinct contracts. This mechanism groups various commitments, corresponding to different contracts or assets, into a single anchor point. By consolidating these transitions in a hierarchical structure, the MPC optimizes the use of block space, reducing transaction fees and improving the efficiency of blockchain use.
 
-![The Transition Bundles of three RGB contracts and a random leaf form a Merkle tree of which only the root is recorded in an output of the Bitcoin transaction.](../../../fr/m/multi-protocol-commitment/assets/image-1.png)
+![The Transition Bundles of three RGB contracts and a random leaf form a Merkle tree of which only the root is recorded in an output of the Bitcoin transaction.](./assets/image-1.png)

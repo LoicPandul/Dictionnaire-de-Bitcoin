@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 824px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -80,7 +82,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="etiquette" x="612" y="460" text-anchor="middle">Bloc N+1</text>
     <rect class="structure" x="432" y="560" width="360" height="200"/>
     <text class="etiquette" x="612" y="606" text-anchor="middle">Bloc N</text>
-    <path class="lien" style="marker-end:none" d="M612 160 V208 M612 336 V384 M612 512 V560"/>
+    <path class="lien" style="marker-end:none" d="M612 160 V208"/>
+    <path class="lien" style="marker-end:none" d="M612 336 V384"/>
+    <path class="lien" style="marker-end:none" d="M612 512 V560"/>
     <!-- Sujet -->
     <rect class="sujet" x="464" y="632" width="296" height="96"/>
     <text class="nom-sujet" x="612" y="693" text-anchor="middle">Transaction</text>
@@ -92,10 +96,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="annotation" x="32" y="800">incluse par un mineur</text>
     <path class="fleche-note" d="M318 790 Q 392 780 394 694"/>
     <!-- Accolades de comptage -->
-    <path class="lien" style="marker-end:none" d="M816 32 H832 V760 H816"/>
-    <path class="lien" style="marker-end:none" d="M848 208 H864 V760 H848"/>
-    <path class="lien" style="marker-end:none" d="M880 384 H896 V760 H880"/>
-    <path class="lien" style="marker-end:none" d="M912 560 H928 V760 H912"/>
+    <path class="lien" style="marker-end:none" d="M832 32 V760"/>
+    <path class="lien" style="marker-end:none" d="M864 208 V760"/>
+    <path class="lien" style="marker-end:none" d="M896 384 V760"/>
+    <path class="lien" style="marker-end:none" d="M928 560 V760"/>
     <text class="etiquette" x="856" y="108">4 confirmations</text>
     <text class="etiquette" x="888" y="284">3 confirmations</text>
     <text class="etiquette" x="920" y="460">2 confirmations</text>

@@ -7,7 +7,7 @@ Standardness rules exist mainly for three reasons:
 
 Note that most nodes keep the default settings as pre-established in Bitcoin Core, which effectively makes the standardness rules homogeneous across the network. A transaction that complies with the consensus rules but not with these standardness rules will have difficulty propagating on the network. It can nevertheless be included in a valid block if it ever reaches a miner. In practice, these transactions, described as “non-standard,” are often sent directly to a miner through channels outside Bitcoin's peer-to-peer network. This is often the only way to get this type of transaction confirmed.
 
-![A transaction that complies with consensus but is non-standard is rejected by the nodes of the peer-to-peer network, then sent directly to a miner who includes it in a valid block.](../../../fr/r/regles-de-standardisation/assets/image-1.png)
+![A transaction that complies with consensus but is non-standard is rejected by the nodes of the peer-to-peer network, then sent directly to a miner who includes it in a valid block.](./assets/image-1.png)
 
 For example, a transaction that allocates no fees at all is both valid under the consensus rules and non-standard, because Bitcoin Core's default policy for the `minRelayTxFee` parameter is `0.000001` (in BTC/kvB).
 

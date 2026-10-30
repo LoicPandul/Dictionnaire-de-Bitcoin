@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 488px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -76,10 +78,10 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="secret" x="32" y="152" width="320" height="88" rx="8"/>
     <text class="etiquette" x="192" y="192" text-anchor="middle">Passphrase</text>
     <text class="secondaire" x="192" y="226" text-anchor="middle">(facultative)</text>
-    <path class="flux" d="M352 92 H396 V140 H636"/>
-    <path class="flux" d="M352 196 H396 V140 H636"/>
-    <text class="mono" x="516" y="124" text-anchor="middle">PBKDF2</text>
-    <text class="annotation" x="516" y="184" text-anchor="middle">2 048 tours</text>
+    <path class="flux" d="M352 92 L636 140"/>
+    <path class="flux" d="M352 196 L636 140"/>
+    <text class="mono" x="548" y="98" text-anchor="middle">PBKDF2</text>
+    <text class="annotation" x="546" y="214" text-anchor="middle">2 048 tours</text>
     <rect class="sujet" x="640" y="84" width="608" height="112" rx="8"/>
     <text class="nom-sujet" x="944" y="132" text-anchor="middle">Graine</text>
     <text class="secondaire sur-sujet" x="944" y="174" text-anchor="middle">512 bits</text>

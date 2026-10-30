@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 480px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -71,8 +73,8 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
   </defs>
   <g id="schema">
-    <rect class="secret" x="32" y="96" width="296" height="96" rx="8"/>
-    <text class="etiquette" x="180" y="154" text-anchor="middle">Clé parent</text>
+    <rect class="secret" x="32" y="80" width="296" height="96" rx="8"/>
+    <text class="etiquette" x="180" y="138" text-anchor="middle">Clé parent</text>
     <rect class="structure" x="32" y="216" width="296" height="96"/>
     <text class="etiquette" x="180" y="260" text-anchor="middle">Index</text>
     <text class="secondaire" x="180" y="294" text-anchor="middle">32 bits</text>
@@ -84,8 +86,8 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="flux" d="M328 384 H376"/>
     <rect class="structure" x="380" y="112" width="240" height="320"/>
     <text class="etiquette" x="500" y="282" text-anchor="middle">HMAC-SHA512</text>
-    <path class="flux" d="M620 272 H648 V164 H672"/>
-    <path class="flux" d="M648 272 V348 H672"/>
+    <path class="flux" d="M620 164 H672"/>
+    <path class="flux" d="M620 348 H672"/>
     <rect class="structure" x="676" y="112" width="152" height="104"/>
     <text class="etiquette" x="752" y="158" text-anchor="middle">256 bits</text>
     <text class="secondaire" x="752" y="196" text-anchor="middle">gauche</text>
@@ -96,7 +98,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <circle class="acteur" cx="888" cy="164" r="28"/>
     <text class="etiquette" x="888" y="177" text-anchor="middle">+</text>
     <path class="flux" d="M916 164 H952"/>
-    <path class="lien" d="M180 96 V52 H888 V134"/>
+    <path class="lien" d="M328 96 H888 V134"/>
     <text class="annotation" x="888" y="236" text-anchor="middle">modulo n</text>
     <rect class="sujet" x="956" y="112" width="292" height="104" rx="8"/>
     <text class="nom-sujet" x="1102" y="176" text-anchor="middle">Clé enfant</text>

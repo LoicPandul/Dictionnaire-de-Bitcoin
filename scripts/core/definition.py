@@ -29,7 +29,7 @@ class Definition:
     assets: List[dict] = field(default_factory=list)
     version: Optional[str] = None
     part: Optional[str] = None    # renseignée par Dictionary à partir de la taxonomie
-    assets_dir: Optional[Path] = None  # images de l'entrée (celles de la source pour une traduction)
+    assets_dir: Optional[Path] = None  # images de l'entrée (pour une traduction : les siennes, sinon celles de la source)
     source_slug: Optional[str] = None  # traduction : slug de l'entrée d'origine
 
     @classmethod

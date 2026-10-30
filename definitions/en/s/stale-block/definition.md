@@ -7,6 +7,6 @@ Block without a child: a valid block, but excluded from Bitcoin's main chain. It
 * Since nodes follow the chain with the most accumulated work, they conclude that `Chain B` is the one to follow;
 * They abandon `Block A`, which is no longer part of the main chain. It has therefore become a stale block.
 
-![After block 144, two valid blocks compete for height 145: only 145-B is extended by block 146 and joins the main chain, while 145-A, with no child, becomes a stale block.](../../../fr/o/obsolete-bloc/assets/image-1.png)
+![After block 144, two valid blocks compete for height 145: only 145-B is extended by block 146 and joins the main chain, while 145-A, with no child, becomes a stale block.](./assets/image-1.png)
 
 *Although I do not agree with this usage, some bitcoiners use the term “orphan block” to refer to what is in fact a stale block.*

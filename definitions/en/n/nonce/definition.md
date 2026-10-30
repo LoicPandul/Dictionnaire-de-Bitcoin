@@ -1,6 +1,6 @@
 Number used only once, then replaced. It is often random or pseudorandom. It is used in various cryptographic protocols to guarantee the security of the process. For example, the ECDSA signatures used within the Bitcoin protocol involve the use of a nonce. This means that this number must be new for each signature. If it is not, the private key used can be computed by comparing two signatures that use the same nonce.
 
-![Two ECDSA signatures produced with two different nonces reveal nothing about the private key; produced with the same nonce, they share the same r value and are enough to compute the private key.](../../../fr/n/nonce/assets/image-1.png)
+![Two ECDSA signatures produced with two different nonces reveal nothing about the private key; produced with the same nonce, they share the same r value and are enough to compute the private key.](./assets/image-1.png)
 
 Nonces are also used in the mining process on Bitcoin. Miners increment these modifiable values within their candidate blocks. They change the value of the nonce in order to find a hash less than or equal to the difficulty target. This process requires a great deal of computing power, since it is an exhaustive search through a large number of possible nonces. When a miner finds a nonce that, once included in their block, produces a hash meeting the difficulty criteria, the block is propagated to the network, and the miner earns the reward.
 

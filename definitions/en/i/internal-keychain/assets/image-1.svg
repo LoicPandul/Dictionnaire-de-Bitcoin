@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="928" viewBox="0 0 1280 928"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema" transform="translate(0 -32)">
+    <!-- Échelle des profondeurs et légende -->
+    <text class="secondaire" data-libelle="prof-titre" x="32" y="88">Depth</text>
+    <rect class="structure" x="496" y="62" width="48" height="32"/>
+    <text class="secondaire" x="560" y="88">= key + chain code</text>
+    <text class="secondaire" x="1248" y="88" text-anchor="end"><tspan class="mono" font-weight="700">'</tspan> = hardened derivation</text>
+    <!-- PROFONDEUR -->
+    <g class="profondeurs" text-anchor="middle">
+      <text class="etiquette" data-niveau="prof" x="68" y="179">0</text>
+      <text class="etiquette" data-niveau="prof" x="68" y="315">1</text>
+      <text class="etiquette" data-niveau="prof" x="68" y="451">2</text>
+      <text class="etiquette" data-niveau="prof" x="68" y="587">3</text>
+      <text class="etiquette" data-niveau="prof" x="68" y="723">4</text>
+      <text class="etiquette" data-niveau="prof" x="68" y="859">5</text>
+    </g>
+
+    <!-- Noms des niveaux -->
+    <text class="etiquette" x="136" y="179">Master key</text>
+    <text class="etiquette" x="136" y="315">Purpose</text>
+    <text class="etiquette" x="136" y="451">Coin type</text>
+    <text class="etiquette" x="136" y="587">Account</text>
+    <text class="etiquette" x="136" y="723">Keychain</text>
+    <text class="etiquette" x="136" y="859">Address</text>
+
+    <!-- Dérivations (parent vers enfant) -->
+    <path class="lien" d="M560 200 V270"/>
+    <path class="lien" d="M560 336 V406"/>
+    <path class="lien" d="M560 472 V542"/>
+    <path class="lien" d="M560 500 H1128 V542"/>
+    <path class="lien" style="marker-end:none" d="M560 608 V652"/>
+    <path class="lien" d="M560 652 H424 V678"/>
+    <path class="lien" d="M560 652 H1008 V678"/>
+    <path class="lien" d="M424 744 V814"/>
+    <path class="lien" d="M424 780 H336 V814"/>
+    <path class="lien" d="M424 780 H512 V814"/>
+    <path class="lien" d="M1008 744 V814"/>
+    <path class="lien" d="M1008 780 H920 V814"/>
+    <path class="lien" d="M1008 780 H1096 V814"/>
+
+    <!-- Profondeur 0 : clé maîtresse -->
+    <rect class="structure" data-niveau="m" x="512" y="136" width="96" height="64"/>
+    <text class="mono" font-weight="700" data-niveau="m" x="560" y="179" text-anchor="middle">m</text>
+    <!-- Profondeur 1 : objectif -->
+    <rect class="structure" data-niveau="objectif" x="512" y="272" width="96" height="64"/>
+    <text class="mono" font-weight="700" data-niveau="objectif" x="560" y="315" text-anchor="middle">84'</text>
+    <!-- Profondeur 2 : type de devise -->
+    <rect class="structure" data-niveau="devise" x="512" y="408" width="96" height="64"/>
+    <text class="mono" font-weight="700" data-niveau="devise" x="560" y="451" text-anchor="middle">0'</text>
+    <!-- Profondeur 3 : comptes -->
+    <rect class="structure" data-niveau="compte" x="512" y="544" width="96" height="64"/>
+    <text class="mono" font-weight="700" data-niveau="compte" x="560" y="587" text-anchor="middle">0'</text>
+    <rect class="structure" x="1080" y="544" width="96" height="64"/>
+    <text class="mono" font-weight="700" x="1128" y="587" text-anchor="middle">1'</text>
+    <text class="etiquette" x="1196" y="587">…</text>
+    <!-- Profondeur 4 : chaînes -->
+    <rect class="structure" data-niveau="externe" x="376" y="680" width="96" height="64"/>
+    <text class="mono" font-weight="700" data-niveau="externe" x="424" y="723" text-anchor="middle">0</text>
+    <text class="secondaire" data-libelle="externe" x="488" y="723">external</text>
+    <rect class="sujet" data-niveau="interne" x="960" y="680" width="96" height="64"/>
+    <text class="mono sur-sujet" font-weight="700" data-niveau="interne" x="1008" y="723" text-anchor="middle">1</text>
+    <text class="etiquette" data-libelle="interne" x="1072" y="723">internal</text>
+    <!-- Profondeur 5 : adresses -->
+    <g text-anchor="middle">
+      <rect class="structure" x="304" y="816" width="64" height="64"/><text class="mono" font-weight="700" x="336" y="859">0</text>
+      <rect class="structure" x="392" y="816" width="64" height="64"/><text class="mono" font-weight="700" x="424" y="859">1</text>
+      <rect class="structure" x="480" y="816" width="64" height="64"/><text class="mono" font-weight="700" x="512" y="859">2</text>
+      <text class="etiquette" x="580" y="859">…</text>
+      <rect class="structure" x="888" y="816" width="64" height="64"/><text class="mono" font-weight="700" x="920" y="859">0</text>
+      <rect class="structure" x="976" y="816" width="64" height="64"/><text class="mono" font-weight="700" x="1008" y="859">1</text>
+      <rect class="structure" x="1064" y="816" width="64" height="64"/><text class="mono" font-weight="700" x="1096" y="859">2</text>
+      <text class="etiquette" x="1164" y="859">…</text>
+      <text class="annotation" x="424" y="920">receiving</text>
+      <text class="annotation" x="1008" y="920">change</text>
+    </g>
+
+    <path class="fleche-note" d="M890 691 Q925 667 952 689"/><text class="mono" font-weight="700" text-anchor="end" x="880" y="711">m/84'/0'/0'/1</text><text class="annotation" text-anchor="end" x="880" y="745">change addresses</text>
+  </g>
+</svg>

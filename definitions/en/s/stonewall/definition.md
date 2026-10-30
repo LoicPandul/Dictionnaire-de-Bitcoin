@@ -6,7 +6,7 @@ There are therefore only 2 roles in a Stonewall transaction:
 * The sender, who makes the actual payment;
 * The recipient, who may be unaware of the specific nature of the transaction and simply expects a payment from the sender.
 
-![A Stonewall transaction spends two UTXOs from the same sender and creates four outputs: a 40,000 sat payment to the recipient, a decoy output of the same amount, and two change outputs that return to the sender, with 1,200 sats of fees.](../../../fr/s/stonewall/assets/image-1.png)
+![A Stonewall transaction spends two UTXOs from the same sender and creates four outputs: a 40,000 sat payment to the recipient, a decoy output of the same amount, and two change outputs that return to the sender, with 1,200 sats of fees.](./assets/image-1.png)
 
 Stonewall transactions were proposed by the Samourai Wallet application, which shut down on April 24, 2024, and they are still proposed in 2026 by the Sparrow Wallet software.
 

@@ -10,7 +10,7 @@ $$113 \times 4 + 110 \times 1 = 452 + 110 = 562\ WU$$
 
 This represents a reduction of about 38% compared with the equivalent legacy transaction, which makes it possible to include more transactions in a block.
 
-![At the same scale, a 226-byte legacy P2PKH transaction weighs 904 WU, while an equivalent P2WPKH SegWit transaction weighs 562 WU, because its 110 bytes of witness count only once.](../../../fr/w/weight-unit/assets/image-1.png)
+![At the same scale, a 226-byte legacy P2PKH transaction weighs 904 WU, while an equivalent P2WPKH SegWit transaction weighs 562 WU, because its 110 bytes of witness count only once.](./assets/image-1.png)
 
 The block limit is set at 4,000,000 WU. If a block contains only legacy transactions, this limit is equivalent to the old limit of 1,000,000 bytes ($1{,}000{,}000 \times 4 = 4{,}000{,}000$), which ensures backward compatibility with nodes that have not upgraded. In practice, with a majority of SegWit transactions, blocks reach about 2 to 3 MB in actual size. The theoretical maximum approaches 4 MB, but only in the pathological case of a block filled almost exclusively with witness data.
 

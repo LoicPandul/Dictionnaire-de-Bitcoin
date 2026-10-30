@@ -13,4 +13,4 @@ For example, if a receiving address has the derivation path `m / 86' / 0' / 0' /
 * `0` indicates that it is an external address;
 * `5` indicates that it is the sixth external address of this account.
 
-![The BIP-0044 tree in five named levels (purpose, coin_type, account, change, address_index), descended along the path m/86'/0'/0'/0/5 from the master key to the sixth external address of the first account, with the sibling keys at each level.](../../../fr/b/bip-0044/assets/image-1.png)
+![The BIP-0044 tree in five named levels (purpose, coin_type, account, change, address_index), descended along the path m/86'/0'/0'/0/5 from the master key to the sixth external address of the first account, with the sibling keys at each level.](./assets/image-1.png)

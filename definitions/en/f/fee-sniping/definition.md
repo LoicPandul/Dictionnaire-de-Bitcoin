@@ -2,7 +2,7 @@ Attack scenario in which miners try to rewrite a recently confirmed block in ord
 * Mining normally on top of the last block, with a high probability of winning a small reward;
 * Trying to mine an earlier block (fee sniping), with a low probability of winning a large reward.
 
-![Facing the latest block N, the miner can either mine block N+1 on top of it, with a high chance of collecting small fees, or rewrite block N from block N−1 (fee sniping), with a low chance of collecting the fees of N plus those of the transactions that have arrived since.](../../../fr/f/fee-sniping/assets/image-1.png)
+![Facing the latest block N, the miner can either mine block N+1 on top of it, with a high chance of collecting small fees, or rewrite block N from block N−1 (fee sniping), with a low chance of collecting the fees of N plus those of the transactions that have arrived since.](./assets/image-1.png)
 
 This attack is a risk to the Bitcoin system, because the more miners adopt it, the more the other, initially honest miners are incentivized to do the same. Each time a new miner joins those attempting fee sniping, the probability that one of the attacking miners succeeds rises, and the probability that one of the honest miners extends the chain falls accordingly. If this attack were carried out on a massive scale and sustained over time, block confirmations would no longer be a reliable indicator of the immutability of a Bitcoin transaction. This could potentially make the system unusable.
 

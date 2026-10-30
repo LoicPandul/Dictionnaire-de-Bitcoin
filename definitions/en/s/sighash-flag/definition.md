@@ -1,6 +1,6 @@
 Parameter in a Bitcoin transaction that determines which components of the transaction (inputs and outputs) are covered by the associated signature, and therefore become immutable. The sighash flag is a byte appended to the digital signature of each input. The choice of sighash flag thus directly affects which parts of the transaction are frozen by the signature and which can still be modified afterward. This mechanism ensures that signatures commit to transaction data precisely and securely, according to the signer's intent. Three main sighash flags exist:
 
-![The six sighash flag combinations (ALL, NONE, SINGLE, alone or with ANYONECANPAY) and, for each, the inputs and outputs of the transaction that the signature of an input freezes.](../../../fr/s/sighash-flag/assets/image-1.png)
+![The six sighash flag combinations (ALL, NONE, SINGLE, alone or with ANYONECANPAY) and, for each, the inputs and outputs of the transaction that the signature of an input freezes.](./assets/image-1.png)
 
 * `SIGHASH_ALL` (`0x01`): The signature applies to all inputs and outputs of the transaction, thus locking them completely;
 

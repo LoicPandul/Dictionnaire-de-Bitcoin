@@ -2,7 +2,7 @@ Cryptographic method for combining a valid signature with an additional signatur
 * Alice starts the atomic swap. She creates a transaction $m_A$ that sends 1 BTC to Bob. She creates a signature $s_A$ that authorizes this transaction using her private key $p_A$ ($P_A = p_A \cdot G$), a nonce $n_A$, and a secret $t$ ($N_A = n_A \cdot G$ and $T = t \cdot G$):
 $$s_A = n_A + t + H(N_A + T \parallel P_A \parallel m_A) \cdot p_A$$
 
-![Atomic swap with adaptor signatures: Bob subtracts his adaptor from the full signature published by Alice, learns the secret t, then adds it to Alice's adaptor to complete the signature of Alice's transaction.](../../../fr/a/adaptor-signature/assets/image-1.png)
+![Atomic swap with adaptor signatures: Bob subtracts his adaptor from the full signature published by Alice, learns the secret t, then adds it to Alice's adaptor to complete the signature of Alice's transaction.](./assets/image-1.png)
 
 * Alice computes the adaptor signature $s_A'$ from the secret $t$ and her valid signature $s_A$:
 $$s_A' = s_A - t$$

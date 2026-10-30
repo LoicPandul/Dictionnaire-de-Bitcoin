@@ -3,7 +3,7 @@ $$
 C\ =\ commit(m,\ r)
 $$
 
-![A commitment C is first computed from the message m and the randomness r, then published; later, revealing m and r lets anyone recompute commit(m, r) and compare it to C.](../../../fr/c/commitment/assets/image-1.png)
+![A commitment C is first computed from the message m and the randomness r, then published; later, revealing m and r lets anyone recompute commit(m, r) and compare it to C.](./assets/image-1.png)
 
 This mechanism comprises two main operations:
 * `Commit`: a cryptographic function is applied to a message $m$ and a random value $r$ to produce $C$;

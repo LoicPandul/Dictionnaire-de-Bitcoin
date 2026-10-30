@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 824px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -76,7 +78,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="92" y="414" width="22" height="106"/>
     <rect class="structure" x="122" y="414" width="22" height="106"/>
     <rect class="structure" x="152" y="414" width="22" height="106"/>
-    <rect class="sujet" x="182" y="414" width="22" height="106"/>
+    <path class="sujet" d="M182 414 h22 v106 h-22 Z M510 520 h22 v106 h-22 Z M838 255 h22 v265 h-22 Z M1166 228 h22 v292 h-22 Z"/>
     <rect class="structure" x="212" y="414" width="22" height="106"/>
     <rect class="structure" x="242" y="414" width="22" height="106"/>
     <path class="structure" d="M24 520 H270"/>
@@ -85,7 +87,6 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="420" y="414" width="22" height="106"/>
     <rect class="structure" x="450" y="414" width="22" height="106"/>
     <rect class="structure" x="480" y="414" width="22" height="106"/>
-    <rect class="sujet" x="510" y="520" width="22" height="106"/>
     <rect class="structure" x="540" y="414" width="22" height="106"/>
     <rect class="structure" x="570" y="414" width="22" height="106"/>
     <path class="structure" d="M352 520 H598"/>
@@ -94,7 +95,6 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="748" y="467" width="22" height="53"/>
     <rect class="structure" x="778" y="467" width="22" height="53"/>
     <rect class="structure" x="808" y="467" width="22" height="53"/>
-    <rect class="sujet" x="838" y="255" width="22" height="265"/>
     <rect class="structure" x="868" y="467" width="22" height="53"/>
     <rect class="structure" x="898" y="467" width="22" height="53"/>
     <path class="structure" d="M680 520 H926"/>
@@ -103,7 +103,6 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <rect class="structure" x="1076" y="520" width="22" height="26"/>
     <rect class="structure" x="1106" y="520" width="22" height="26"/>
     <rect class="structure" x="1136" y="520" width="22" height="26"/>
-    <rect class="sujet" x="1166" y="228" width="22" height="292"/>
     <rect class="structure" x="1196" y="520" width="22" height="26"/>
     <rect class="structure" x="1226" y="520" width="22" height="26"/>
     <path class="structure" d="M1008 520 H1254"/>
@@ -125,7 +124,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <path class="fleche-note" d="M400 372 Q390 410 368 434"/>
     <text class="annotation" x="544" y="584">signe</text>
     <text class="annotation" x="544" y="620">inversé</text>
-    <path class="flux" d="M728 544 V720 H436 V544"/>
+    <path class="flux" d="M912 534 V720 H372"/>
     <text class="annotation" x="756" y="584">les autres</text>
     <text class="annotation" x="756" y="620">baissent</text>
     <text class="secondaire" x="582" y="776" text-anchor="middle">répéter ≈ (π/4)√N tours</text>

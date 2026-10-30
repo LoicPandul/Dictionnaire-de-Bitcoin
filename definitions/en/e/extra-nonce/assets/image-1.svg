@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+
+/* styles propres au schéma */
+.modifie { stroke-width: 6 !important; }</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <!-- Transaction coinbase -->
+    <rect class="structure modifie" x="32" y="328" width="304" height="240"/>
+    <text class="etiquette" x="56" y="378">Coinbase</text>
+    <rect class="sujet" x="56" y="400" width="256" height="72"/>
+    <text class="nom-sujet" x="184" y="449" text-anchor="middle">Extra-nonce</text>
+    <rect class="structure" x="56" y="488" width="256" height="56"/>
+    <text class="secondaire" x="184" y="526" text-anchor="middle">Outputs</text>
+    <text class="annotation" x="40" y="216">+1 when the 4.3 billion</text>
+    <text class="annotation" x="40" y="256">nonces are exhausted</text>
+    <path class="fleche-note" d="M272 270 C 300 300, 300 340, 290 392"/>
+
+    <!-- Coinbase vers son txid -->
+    <path class="flux" d="M336 512 H382"/>
+
+    <!-- Arbre de Merkle -->
+    <rect class="structure modifie" x="384" y="480" width="104" height="64"/>
+    <text class="etiquette" x="436" y="523" text-anchor="middle">txid</text>
+    <rect class="structure" x="504" y="480" width="104" height="64"/>
+    <text class="secondaire" x="556" y="522" text-anchor="middle">tx 1</text>
+    <rect class="structure" x="624" y="480" width="104" height="64"/>
+    <text class="secondaire" x="676" y="522" text-anchor="middle">tx 2</text>
+    <rect class="structure" x="744" y="480" width="104" height="64"/>
+    <text class="secondaire" x="796" y="522" text-anchor="middle">tx 3</text>
+    <text class="annotation" x="676" y="592" text-anchor="middle">unchanged</text>
+
+    <rect class="structure modifie" x="416" y="352" width="160" height="64"/>
+    <text class="mono" x="496" y="394" text-anchor="middle">H01</text>
+    <rect class="structure" x="656" y="352" width="160" height="64"/>
+    <text class="mono" x="736" y="394" text-anchor="middle">H23</text>
+
+    <path class="flux" d="M436 480 V418"/>
+    <path class="lien" d="M556 480 V418"/>
+    <path class="lien" d="M676 480 V418"/>
+    <path class="lien" d="M796 480 V418"/>
+
+    <rect class="structure modifie" x="456" y="208" width="320" height="80"/>
+    <text class="etiquette" x="616" y="259" text-anchor="middle">Merkle root</text>
+    <path class="flux" d="M496 352 V290"/>
+    <path class="lien" d="M736 352 V290"/>
+
+    <!-- Racine vers l'en-tête -->
+    <path class="flux" d="M776 248 H878"/>
+
+    <!-- En-tête du bloc -->
+    <rect class="structure" x="880" y="48" width="368" height="396"/>
+    <text class="etiquette" x="1064" y="92" text-anchor="middle">Block header</text>
+    <line class="structure" x1="880" y1="108" x2="1248" y2="108"/>
+    <text class="secondaire" x="904" y="148">Version</text>
+    <line class="structure" x1="880" y1="164" x2="1248" y2="164"/>
+    <text class="secondaire" x="904" y="204">Previous block hash</text>
+    <rect class="structure modifie" x="880" y="220" width="368" height="56"/>
+    <text class="etiquette" x="904" y="260">Merkle root</text>
+    <text class="secondaire" x="904" y="316">Timestamp</text>
+    <line class="structure" x1="880" y1="332" x2="1248" y2="332"/>
+    <text class="secondaire" x="904" y="372">Target</text>
+    <line class="structure" x1="880" y1="388" x2="1248" y2="388"/>
+    <text class="secondaire" x="904" y="428">Nonce</text>
+    <text class="annotation" x="1064" y="500" text-anchor="middle">4.3 billion attempts</text>
+    <path class="fleche-note" d="M1180 474 C 1200 460, 1200 440, 1160 420"/>
+  </g>
+</svg>

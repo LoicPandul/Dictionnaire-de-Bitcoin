@@ -4,4 +4,4 @@ Concatenates the top two items of the stack (that is, joins them end to end). Th
 * The use of covenants;
 * Or the use of non-equivocation contracts.
 
-![OP_CAT pops the top two stack elements, a then b, and replaces them with a single element ab, their concatenation, which cannot exceed 520 bytes.](../../../fr/o/op-cat-0x7e/assets/image-1.png)
+![OP_CAT pops the top two stack elements, a then b, and replaces them with a single element ab, their concatenation, which cannot exceed 520 bytes.](./assets/image-1.png)

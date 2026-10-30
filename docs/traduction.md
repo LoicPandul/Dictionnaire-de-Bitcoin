@@ -170,9 +170,13 @@ request : une traduction orpheline fait échouer `check`.
   ces termes s'écrivent en romain. L'italique reste pour la note finale et les mots étrangers.
 - **Note finale** : elle se réécrit pour un lecteur anglophone (synonymes, confusions
   fréquentes) ; ce qui ne servait qu'au lecteur français (« en anglais, on dit… ») disparaît.
-- **Images** : la traduction réutilise l'image française avec un chemin relatif
-  (`![Alt text in English.](../../../fr/c/coinjoin/assets/image-1.png)`) et traduit le texte
-  alternatif. Un schéma redessiné en anglais va dans `assets/` du dossier anglais. Le crédit
+- **Images** : un schéma a sa version anglaise dans `assets/` du dossier anglais, sous le même
+  nom de fichier (`![Alt text in English.](./assets/image-1.png)`), avec les mêmes déclinaisons
+  qu'en français ; ses étiquettes emploient les termes de la définition anglaise, et le texte
+  alternatif, imprimé en légende, les mêmes. Une image sans texte à traduire (un logo) réutilise
+  l'image française avec un chemin relatif
+  (`![Alt text in English.](../../../fr/b/bitcoin-core/assets/image-1.png)`). Une entrée qui a
+  son dossier `assets/` y garde toutes ses images : le livre les y cherche toutes. Le crédit
   d'une image de tiers se traduit dans le `metadata.yaml` français, champ `credit_en` sous
   `credit` ; `check` signale une image créditée dont l'entrée est traduite sans ce champ.
 - **Version courte** : mêmes règles qu'en français (une ou deux phrases, 45 mots au plus, sans

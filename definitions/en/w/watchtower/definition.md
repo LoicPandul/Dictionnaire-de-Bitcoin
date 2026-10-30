@@ -2,7 +2,7 @@ External service that monitors the Bitcoin blockchain on behalf of a Lightning n
 
 The mechanism is designed to preserve the node's privacy: at each channel update, the node encrypts the presigned penalty transaction with the txid of the relevant commitment transaction, then sends the watchtower this encrypted blob along with a truncated portion of the txid. The watchtower can decrypt the transaction only if it observes a matching txid on the blockchain (spotted through the truncated portion), that is, in case of actual cheating. It therefore has no visibility into the identity of the peers, the balances, or the structure of the channels during normal operation. It learns this information only in case of cheating.
 
-![The node entrusts the watchtower with an encrypted blob along with the beginning of the TXID of the commitment transaction, and the watchtower can decrypt it only if that transaction appears in a block.](../../../fr/w/watchtower/assets/image-1.png)
+![The node entrusts the watchtower with an encrypted blob along with the beginning of the TXID of the commitment transaction, and the watchtower can decrypt it only if that transaction appears in a block.](./assets/image-1.png)
 
 A watchtower is a minimally trusted third party: it can neither modify nor divert the funds, since the penalty transaction is already signed with outputs fixed in favor of the channel owner. The only risk for the node is relying on a watchtower that fails to fulfill its role at the moment it is truly needed. This is why a node can configure several, to make sure that at least one of them acts correctly when needed.
 

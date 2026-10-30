@@ -4,4 +4,4 @@ The problem was quickly spotted by Jeff Garzik, who alerted the community on the
 
 The corrected chain overtook the chain containing the bug at block 74,691, after about 53 blocks of disruption. This episode, recorded as CVE-2010-5139, was the first major incident in Bitcoin's history.
 
-![The corrected chain, built from block 74,637, overtakes at block 74,691 the chain that contained the invalid transaction of block 74,638, after 53 blocks.](../../../fr/v/value-overflow-incident/assets/image-1.png)
+![The corrected chain, built from block 74,637, overtakes at block 74,691 the chain that contained the invalid transaction of block 74,638, after 53 blocks.](./assets/image-1.png)

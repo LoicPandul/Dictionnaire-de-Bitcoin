@@ -2,7 +2,7 @@ Lightning channel opened on the fly by a Lightning service provider (LSP) when a
 
 It relies on the LSPS2 protocol (bLIP-0052). The client asks the LSP for the opening fee parameters, then obtains a temporary short channel ID (SCID) that it includes in its Lightning invoice as a routing hint. When a payer sends the payment, the LSP intercepts the HTLC, opens a zero-confirmation channel to the client, and forwards the payment, deducting the opening fee from the amount received. The client claims the payment by revealing the preimage.
 
-![In a JIT channel, the LSP intercepts the payer's HTLC, opens a zero-confirmation channel to the client, then forwards the amount minus the opening fee.](../../../fr/j/jit-channel/assets/image-1.png)
+![In a JIT channel, the LSP intercepts the payer's HTLC, opens a zero-confirmation channel to the client, then forwards the amount minus the opening fee.](./assets/image-1.png)
 
 Two trust models exist:
 * in the default model, the LSP broadcasts the funding transaction before receiving the preimage, which gives the client the chance to check that it is valid;

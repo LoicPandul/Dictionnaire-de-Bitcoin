@@ -2,6 +2,6 @@ Type of smart contract on Bitcoin that imposes conditions not only on the curren
 
 In short, a non-recursive covenant limits itself to the transaction that immediately follows the one that established the rules. A recursive covenant, by contrast, can impose specific conditions on a bitcoin indefinitely. Transactions can follow one another, but the bitcoin in question always keeps the initial conditions attached to it. Technically, a non-recursive covenant is established when the `scriptPubKey` of a UTXO defines restrictions on the `scriptPubKey` of the outputs of a transaction that spends that UTXO. A recursive covenant, on the other hand, is established when the `scriptPubKey` of a UTXO defines restrictions on the `scriptPubKey` of the outputs of a transaction that spends that UTXO, and on all the `scriptPubKey` that will follow the spending of that UTXO.
 
-![A non-recursive covenant constrains only the outputs of the transaction that spends the UTXO, whereas a recursive covenant imposes the same constraint on all the outputs that follow.](../../../fr/r/recursif-covenant/assets/image-1.png)
+![A non-recursive covenant constrains only the outputs of the transaction that spends the UTXO, whereas a recursive covenant imposes the same constraint on all the outputs that follow.](./assets/image-1.png)
 
 More generally, in computer science, “recursion” is the ability of a function to call itself, which creates a kind of endless nesting.

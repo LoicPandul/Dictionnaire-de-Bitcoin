@@ -82,8 +82,10 @@ class Dictionary:
         Titre, slug et textes viennent de definitions/<lang>/ ; catégorie, renvois et images
         de l'entrée d'origine (même UUID). Les liens d'images vers le dossier d'origine
         (`../../../fr/<lettre>/<slug>/assets/x.png`) redeviennent `./assets/x.png`, résolus
-        dans ce dossier. Le crédit d'une image de tiers est celui de la langue (`credit_en`),
-        à défaut celui d'origine. Une entrée sans traduction n'est pas dans le livre de cette langue.
+        dans ce dossier. Une traduction qui a son propre dossier `assets/` (schémas traduits)
+        prend ses images là : elle y garde alors toutes celles de l'entrée. Le crédit d'une
+        image de tiers est celui de la langue (`credit_en`), à défaut celui d'origine. Une entrée
+        sans traduction n'est pas dans le livre de cette langue.
         """
         from ..config import DEFINITIONS_ROOT
         from . import i18n, translations as tr
@@ -96,7 +98,8 @@ class Dictionary:
                 continue
             content = re.sub(r"\]\((?:\.\./)+[a-z]{2}/[a-z0-9]/[^/)]+/assets/", "](./assets/", e.definition)
             definitions.append(replace(
-                src, title=e.title, slug=e.slug, path=e.path, assets_dir=src.assets_path, source_slug=src.slug,
+                src, title=e.title, slug=e.slug, path=e.path, source_slug=src.slug,
+                assets_dir=e.path / "assets" if (e.path / "assets").is_dir() else src.assets_path,
                 assets=[_localized_credit(a, lang) for a in src.assets],
                 content=i18n.smart_quotes(content), short=i18n.smart_quotes(e.short.strip()) or None,
                 english_term=None, french_term=None,

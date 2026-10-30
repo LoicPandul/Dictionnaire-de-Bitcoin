@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="744" viewBox="0 0 1280 744"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
+   Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
+   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
+
+
+
+
+
+
+
+svg {
+  --encre: #1E1A1D;          /* Encre : traits et textes */
+  --note: #6B6368;           /* Écorce : annotations */
+  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #F4E5C6;    /* Safran clair */
+  --valeur-trait: #956D28;   /* Safran */
+  --secret-fond: #D3EAEA;    /* Paon clair */
+  --secret-trait: #0B6B6E;   /* Paon */
+  --fond: #FFFFFF;
+}
+svg.nb {                    /* livre imprimé : N100, N12, N35 */
+  --encre: #000000;
+  --note: #000000;
+  --sujet-fond: #000000;
+  --sujet-texte: #FFFFFF;
+  --valeur-fond: #E0E0E0;
+  --valeur-trait: #000000;
+  --secret-fond: #A6A6A6;
+  --secret-trait: #000000;
+}
+
+html, body { margin: 0; background: var(--fond); }
+svg { display: block; background: var(--fond); }
+svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
+
+/* Textes : rien sous 30 px */
+.nom-sujet   { font-size: 36px; font-weight: 600; fill: var(--sujet-texte) !important; }
+.etiquette   { font-size: 32px; font-weight: 600; }
+.secondaire  { font-size: 30px; font-weight: 400; }
+.annotation  { font-size: 30px; font-weight: 400; font-style: italic; fill: var(--note) !important; }
+.mono        { font-family: "Atkinson Hyperlegible Mono", monospace !important; font-size: 30px; }
+.sur-sujet   { fill: var(--sujet-texte) !important; }   /* tout autre texte posé sur le sujet */
+
+/* Formes par rôle */
+.structure   { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* rectangle, angles vifs */
+.sujet       { fill: var(--sujet-fond); stroke: var(--sujet-fond); stroke-width: 3; }     /* garde la forme de son type */
+.valeur      { fill: var(--valeur-fond); stroke: var(--valeur-trait); stroke-width: 3; }  /* pilule : rx = hauteur / 2 */
+.secret      { fill: var(--secret-fond); stroke: var(--secret-trait); stroke-width: 3; }  /* rx = 8 */
+.acteur      { fill: var(--fond); stroke: var(--encre); stroke-width: 3; }                /* disque */
+.adversaire  { fill: url(#hachures); stroke: var(--encre); stroke-width: 3; }             /* hachures à 45° */
+.reserve     { fill: #FFFFFF; stroke: none; }        /* réserve blanche de 8 px sous un texte posé sur des hachures */
+
+/* Modificateur cumulable : hors chaîne (contour tireté, 3 px, motif 10 / 6) */
+.tirete      { stroke-dasharray: 10 6; }
+
+/* Traits */
+.flux        { fill: none; stroke: var(--encre); stroke-width: 5; marker-end: url(#tete-flux); }
+.lien        { fill: none; stroke: var(--encre); stroke-width: 3; marker-end: url(#tete-lien); }
+.hors-chaine { fill: none; stroke: var(--encre); stroke-width: 3; stroke-dasharray: 10 6; }
+.fleche-note { fill: none; stroke: var(--note); stroke-width: 2; marker-end: url(#tete-note); }
+.tete        { fill: var(--encre); }
+.tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
+.hachure     { stroke: var(--encre); stroke-width: 2; }
+</style>
+  <defs>
+    <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
+    <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
+    <marker id="tete-note" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path class="tete-note" d="M1 1 L10 6 L1 11"/></marker>
+    <pattern id="hachures" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line class="hachure" x1="0" y1="0" x2="0" y2="8"/></pattern>
+  </defs>
+  <g id="schema">
+    <line class="structure" x1="472" y1="416" x2="546" y2="446"/>
+    <line class="structure" x1="416" y1="472" x2="446" y2="546"/>
+    <line class="structure" x1="336" y1="472" x2="306" y2="546"/>
+    <line class="structure" x1="280" y1="416" x2="206" y2="446"/>
+    <line class="structure" x1="280" y1="336" x2="206" y2="306"/>
+    <line class="structure" x1="336" y1="280" x2="306" y2="206"/>
+    <line class="structure" x1="416" y1="280" x2="446" y2="206"/>
+    <line class="structure" x1="472" y1="336" x2="546" y2="306"/>
+    <line class="structure" x1="556" y1="499" x2="499" y2="556"/>
+    <line class="structure" x1="417" y1="590" x2="335" y2="590"/>
+    <line class="structure" x1="253" y1="556" x2="196" y2="499"/>
+    <line class="structure" x1="162" y1="417" x2="162" y2="335"/>
+    <line class="structure" x1="196" y1="253" x2="253" y2="196"/>
+    <line class="structure" x1="335" y1="162" x2="417" y2="162"/>
+    <line class="structure" x1="499" y1="196" x2="556" y2="253"/>
+    <line class="structure" x1="590" y1="335" x2="590" y2="417"/>
+    <circle class="adversaire" cx="590" cy="465" r="48"/>
+    <circle class="adversaire" cx="465" cy="590" r="48"/>
+    <circle class="adversaire" cx="287" cy="590" r="48"/>
+    <circle class="adversaire" cx="162" cy="465" r="48"/>
+    <circle class="adversaire" cx="162" cy="287" r="48"/>
+    <circle class="adversaire" cx="287" cy="162" r="48"/>
+    <circle class="adversaire" cx="465" cy="162" r="48"/>
+    <circle class="adversaire" cx="590" cy="287" r="48"/>
+    <line class="structure" x1="1043" y1="191" x2="1141" y2="169"/>
+    <line class="structure" x1="1187" y1="204" x2="1197" y2="332"/>
+    <line class="structure" x1="1162" y1="398" x2="1102" y2="434"/>
+    <line class="structure" x1="1028" y1="431" x2="964" y2="385"/>
+    <line class="structure" x1="946" y1="320" x2="982" y2="240"/>
+    <line class="structure" x1="1011" y1="243" x2="1053" y2="413"/>
+    <line class="structure" x1="1167" y1="201" x2="1081" y2="415"/>
+    <circle class="acteur" cx="1000" cy="200" r="44"/>
+    <circle class="acteur" cx="1184" cy="160" r="44"/>
+    <circle class="acteur" cx="1200" cy="376" r="44"/>
+    <circle class="acteur" cx="1064" cy="456" r="44"/>
+    <circle class="acteur" cx="928" cy="360" r="44"/>
+    <circle class="sujet" cx="376" cy="376" r="104"/>
+    <text class="nom-sujet" x="376" y="370" text-anchor="middle">Victim</text>
+    <text class="nom-sujet" x="376" y="414" text-anchor="middle">node</text>
+    <text class="etiquette" x="376" y="704" text-anchor="middle">Attacker's nodes</text>
+    <text class="etiquette" x="1064" y="576" text-anchor="middle">Honest network</text>
+    <text class="annotation" x="672" y="80" text-anchor="start">all its connections</text>
+    <text class="annotation" x="672" y="120" text-anchor="start">lead to the attacker</text>
+    <path class="fleche-note" d="M664 112 Q 548 152 516 296"/>
+    <text class="annotation" x="768" y="368" text-anchor="middle">no</text>
+    <text class="annotation" x="768" y="408" text-anchor="middle">connection</text>
+  </g>
+</svg>

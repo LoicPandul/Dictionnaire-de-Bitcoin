@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 552px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -98,7 +100,7 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
     <text class="annotation" x="848" y="144">valide, mais sans enfant</text>
 
     <!-- Accolade sous la chaîne principale -->
-    <path class="lien" d="M32 456 V472 H1096 V456" style="marker-end:none"/>
+    <path class="lien" d="M32 464 H1096" style="marker-end:none"/>
     <text class="annotation" x="564" y="520" text-anchor="middle">chaîne principale : le plus de travail cumulé</text>
   </g>
 </svg>

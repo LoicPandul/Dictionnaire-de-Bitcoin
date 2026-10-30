@@ -14,7 +14,7 @@ Signature            b0    a1    b2    b3
 
 Bob computes $H(b_0)$ and compares it with the hash published for a 1 at rank 0, then $H(a_1)$ with the hash published for a 0 at rank 1, and so on. The secrets $a_0$, $b_1$, $a_2$, and $a_3$ stay hidden.
 
-![Lamport signature on 4 bits: each bit of the hash `1011` selects one secret from its pair, Alice reveals b0, a1, b2, and b3, and Bob hashes each one to compare it with the public key.](../../../fr/s/signature-de-lamport/assets/image-1.png)
+![Lamport signature on 4 bits: each bit of the hash `1011` selects one secret from its pair, Alice reveals b0, a1, b2, and b3, and Bob hashes each one to compare it with the public key.](./assets/image-1.png)
 
 To forge a signature, an attacker would have to either produce a secret whose hash appears in the public key without ever having seen it, that is, find a preimage, or find another message with the same hash as an already signed message. The security of the scheme therefore rests only on the properties of the hash function: its preimage resistance and second-preimage resistance. Against a hash function, the known quantum attack is Grover's algorithm, which speeds up the search for a preimage only quadratically: according to the Chaincode report (Anthony Milton and Clara Shikhelman, May 2025), it weakens `SHA256` without breaking it. RFC 8554 likewise notes that hash-based signatures would remain secure against a quantum computer. Conversely, as BIP-0360 points out, Shor's algorithm, run on a sufficiently powerful quantum computer, would make it possible to recover an ECDSA or Schnorr private key from its public key.
 

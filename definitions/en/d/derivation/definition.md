@@ -4,4 +4,4 @@ Process of generating child key pairs from a parent key pair (private key and pu
 
 The HMAC-SHA512 result is split in two: the first 256 bits are added to the parent key to produce the child key (private, or public after multiplication by the generator point on the elliptic curve), and the remaining 256 bits become the child chain code.
 
-![Derivation of a child key: the parent key, the 32-bit index, and the parent chain code enter HMAC-SHA512, whose 512 bits split into two 256-bit halves, the left one being added to the parent key modulo n to give the child key, the right one becoming the child chain code.](../../../fr/d/derivation/assets/image-1.png)
+![Derivation of a child key: the parent key, the 32-bit index, and the parent chain code enter HMAC-SHA512, whose 512 bits split into two 256-bit halves, the left one being added to the parent key modulo n to give the child key, the right one becoming the child chain code.](./assets/image-1.png)

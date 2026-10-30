@@ -63,7 +63,9 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
 .tete        { fill: var(--encre); }
 .tete-note   { fill: none; stroke: var(--note); stroke-width: 2; }
 .hachure     { stroke: var(--encre); stroke-width: 2; }
-</style>
+
+/* styles propres au schéma */
+@page { size: 1280px 704px; margin: 0 } body { margin: 0 }</style>
   <defs>
     <marker id="tete-flux" viewBox="0 0 18 14" refX="17" refY="7" markerWidth="18" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L18 7 L0 14 Z"/></marker>
     <marker id="tete-lien" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="12" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="tete" d="M0 0 L12 5 L0 10 Z"/></marker>
@@ -73,11 +75,11 @@ svg text { font-family: "Archivo Schema", sans-serif; fill: var(--encre); }
   <g id="schema">
     <!-- Couches de chiffrement imbriquées -->
     <text class="secondaire" x="256" y="52">chiffré pour A</text>
-    <path class="lien" style="marker-end:none" d="M248 192 V64 H1248 V192"/>
+    <path class="lien" style="marker-end:none" d="M248 64 H1248"/>
     <text class="secondaire" x="516" y="100">chiffré pour B</text>
-    <path class="lien" style="marker-end:none" d="M508 192 V112 H1224 V192"/>
+    <path class="lien" style="marker-end:none" d="M508 112 H1224"/>
     <text class="secondaire" x="796" y="148">chiffré pour Bob</text>
-    <path class="lien" style="marker-end:none" d="M788 192 V160 H1200 V192"/>
+    <path class="lien" style="marker-end:none" d="M788 160 H1200"/>
     <!-- Le paquet -->
     <rect class="sujet" x="248" y="192" width="1000" height="96"/>
     <path style="stroke:var(--sujet-texte);stroke-width:3;fill:none" d="M508 192 V288 M788 192 V288 M1048 192 V288"/>

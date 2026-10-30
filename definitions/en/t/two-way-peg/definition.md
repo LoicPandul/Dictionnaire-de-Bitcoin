@@ -3,4 +3,4 @@ Mechanism that establishes a connection between Bitcoin's main system and a side
 * A federation of entities;
 * The miners of the main chain (drivechain).
 
-![Two-way peg: depositing bitcoin locks the BTC on the Bitcoin blockchain and issues an equal amount of tokens on the sidechain; destroying the tokens unlocks the BTC.](../../../fr/a/ancrage-bilateral/assets/image-1.png)
+![Two-way peg: depositing bitcoin locks the BTC on the Bitcoin blockchain and issues an equal amount of tokens on the sidechain; destroying the tokens unlocks the BTC.](./assets/image-1.png)
