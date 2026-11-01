@@ -74,6 +74,11 @@
     }, { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
     aVoir.forEach((el) => io.observe(el));
   } else aVoir.forEach((el) => el.classList.add('vu'));
+  // La loupe de la barre s'efface tant que le champ de la couverture est à l'écran.
+  const champCouv = d.querySelector('.couv-recherche');
+  if (barre && champCouv && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => barre.classList.toggle('champ-visible', e.isIntersecting), { rootMargin: `-${barre.offsetHeight}px 0px 0px 0px` }).observe(champCouv);
+  }
 
   // ------------------------------------------------------------ Boucles vidéo : lues seulement à l'écran, jamais en mouvement réduit
   const boucles = d.querySelectorAll('video[data-boucle]');
@@ -135,10 +140,11 @@
 
   // ------------------------------------------------------------ Schémas : agrandis en plein écran au clic ou au toucher
   d.addEventListener('click', (e) => {
-    const a = e.target.closest('.prose .figure a');
-    if (!a || e.metaKey || e.ctrlKey) return;
+    // L'image elle-même, ou le lien « Agrandir le schéma » sous la figure : la même loupe.
+    const a = e.target.closest('.prose .figure-cadre a, .prose .figure-ouvrir');
+    const img = a?.closest('.figure')?.querySelector('img');
+    if (!a || !img || e.metaKey || e.ctrlKey) return;
     e.preventDefault();
-    const img = a.querySelector('img');
     const loupe = d.createElement('dialog');
     loupe.className = 'loupe';
     loupe.innerHTML = `<div class="loupe-panneau"><div class="loupe-tete"><p class="loupe-legende">${esc(img.alt || tx('schema'))}${a.closest('.figure')?.querySelector('.figure-credit') ? `<span class="figure-credit">${esc(a.closest('.figure').querySelector('.figure-credit').textContent)}</span>` : ''}</p><p class="loupe-boutons"><button class="recherche-fermer" type="button" data-zoom aria-pressed="false">${tx('agrandir')}</button> <button class="recherche-fermer" type="button" data-fermer>${tx('fermer')}</button></p></div><div class="loupe-zone"><img src="${esc(a.getAttribute('href'))}" alt="${esc(img.alt || '')}"></div></div>`;
@@ -477,9 +483,13 @@
     // Le champ de la couverture s'ouvre en fenêtre (plein écran sur téléphone) avec ce qui est déjà tapé.
     const heros = d.querySelector('[data-hero-search]');
     if (heros) {
+      // Ouverture au toucher, au clic ou à la première frappe, jamais au simple focus : à la fermeture,
+      // le focus revient dans le champ sans rouvrir la fenêtre.
       const input = heros.querySelector('input');
-      input.addEventListener('focus', () => { ouvrir(input.value, heros); input.value = ''; });
-      heros.addEventListener('submit', (e) => { e.preventDefault(); ouvrir(input.value, heros); });
+      const ouvrirDepuis = () => { const v = input.value; input.value = ''; ouvrir(v, heros); };
+      input.addEventListener('click', ouvrirDepuis);
+      input.addEventListener('input', ouvrirDepuis);
+      heros.addEventListener('submit', (e) => { e.preventDefault(); ouvrirDepuis(); });
     }
     // Préchargement discret de l'index quand on survole un bouton de recherche.
     d.addEventListener('pointerover', (e) => { if (e.target.closest('[data-search-open], [data-hero-search]')) charger(); }, { passive: true });

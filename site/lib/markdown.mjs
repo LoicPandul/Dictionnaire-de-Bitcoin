@@ -62,6 +62,8 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
   marked.use({
     renderer: {
       image({ href, title, text }) {
+        // Le texte alternatif est lu tel quel : sans les accents graves du Markdown (`1011`).
+        text = text.replace(/`/g, '');
         // Le fichier est cherché depuis le dossier du texte rendu : ./assets/… en français, et pour
         // une traduction ../../../fr/<lettre>/<slug>/assets/… (le schéma de l'entrée française) ou
         // ./assets/… (un schéma redessiné dans sa langue). Il est servi depuis /<slug>/assets/

@@ -215,8 +215,10 @@ for (const code of Object.keys(LANGUES)) {
   }
 
   // Accueil (le mot du jour du build ; le script le remplace par celui du jour du lecteur), recherche et 404.
-  const dayIndex = Math.floor(Date.now() / 86400000) % total;
-  write(`${P.accueil().slice(1)}index.html`, homePage({ definitions, categories: ordreCats, letters, featured: definitions[dayIndex], notes, parts: partsL, chrono, specs }, {
+  // Le mot du jour est pris parmi les entrées écrites dans la langue de la page (les traduites, en anglais).
+  const duJour = definitions.filter((d) => d.lang === code);
+  const featured = (duJour.length ? duJour : definitions)[Math.floor(Date.now() / 86400000) % (duJour.length || total)];
+  write(`${P.accueil().slice(1)}index.html`, homePage({ definitions, categories: ordreCats, letters, featured, notes, parts: partsL, chrono, specs }, {
     assets,
     jsonLd: homeJsonLd({ total, description: L.descAccueil(total), L }),
   }));

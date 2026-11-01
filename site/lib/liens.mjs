@@ -10,6 +10,9 @@
 // - un lien par terme, huit liens au plus par définition.
 import { escapeHtml as h } from './markdown.mjs';
 
+// Le nom tel que les listes l'affichent (capitales des données, tiret demi-cadratin).
+const nom = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
+
 const LETTRE = '\\p{L}\\p{N}_';
 const MOTS_LIENS = new Set(['de', 'du', 'des', 'la', 'le', 'les', 'en', 'et', 'à', 'au', 'aux', 'd', 'l', 'of', 'the', 'a', 'an', 'to']);
 const MAX_LIENS = 8;
@@ -77,7 +80,7 @@ export function createLinker(definitions) {
       deja.add(trouve.def.slug);
       n++;
       const def = trouve.def;
-      return `<a class="renvoi-texte renvoi-code" href="${base}/${def.slug}/" data-apercu="${h(def.resume || def.description || '')}" data-apercu-cat="${h(label(def.category))}"><code>${code}</code></a>`;
+      return `<a class="renvoi-texte renvoi-code" href="${base}/${def.slug}/" data-apercu="${h(def.resume || def.description || '')}" data-apercu-cat="${h(label(def.category))}" data-apercu-nom="${h(nom(def.title))}"><code>${code}</code></a>`;
     });
     return html.replace(/(<[^>]+>)|([^<]+)/g, (m, tag, text) => {
       if (tag) {
@@ -110,7 +113,7 @@ export function createLinker(definitions) {
           deja.add(def.slug);
           n++;
           out += h(brut.slice(pos, debut));
-          out += `<a class="renvoi-texte" href="${base}/${def.slug}/" data-apercu="${h(def.resume || def.description || '')}" data-apercu-cat="${h(label(def.category))}">${h(extrait)}</a>`;
+          out += `<a class="renvoi-texte" href="${base}/${def.slug}/" data-apercu="${h(def.resume || def.description || '')}" data-apercu-cat="${h(label(def.category))}" data-apercu-nom="${h(nom(def.title))}">${h(extrait)}</a>`;
           pos = fin;
           i += k - 1;
           break;

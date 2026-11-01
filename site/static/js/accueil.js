@@ -23,6 +23,8 @@
     });
 
   // ------------------------------------------------------------ Le mot du jour
+  // Parmi les entrées écrites dans la langue de la page (en anglais, les traduites seulement).
+  const ecrits = () => { const e = termes.filter((t) => !t.lang); return e.length ? e : termes; };
   const nomJour = sectionJour?.querySelector('[data-jour-nom]');
   function poserMot(t, anime) {
     if (!sectionJour) return;
@@ -32,7 +34,9 @@
     lien.href = lire.href = `${B}/${t.slug}/`;
     cat.href = t.cat[2] || cat.href;
     cat.innerHTML = `${picto(t.cat[1])}<span>${esc(t.cat[0])}</span>`;
-    sectionJour.querySelector('[data-jour-desc]').textContent = t.desc.replace(/'/g, '’');
+    const desc = sectionJour.querySelector('[data-jour-desc]');
+    desc.textContent = t.desc.replace(/'/g, '’');
+    if (t.lang) desc.lang = t.lang; else desc.removeAttribute('lang');
     if (!anime || reduit.matches) { nomJour.innerHTML = coupe(t.title); return; }
     // Les lettres du nouveau mot roulent en place, l'une après l'autre.
     nomJour.innerHTML = [...affiche(t.title)].map((c, i) => (c === ' ' ? ' ' : `<span class="roule" style="--r:${i}">${esc(c)}</span>`)).join('');
@@ -42,7 +46,8 @@
   }
   sectionJour?.querySelector('[data-jour-autre]')?.addEventListener('click', () => {
     (termes ? Promise.resolve() : charger()).then(() => {
-      poserMot(termes[Math.floor(Math.random() * termes.length)], true);
+      const choix = ecrits();
+      poserMot(choix[Math.floor(Math.random() * choix.length)], true);
     });
   });
 
@@ -255,7 +260,8 @@
   // ------------------------------------------------------------ Démarrage
   // Le mot du jour du lecteur (le HTML porte celui du jour du build).
   const demarrer = () => charger().then(() => {
-    const t = termes[jour() % termes.length];
+    const choix = ecrits();
+    const t = choix[jour() % choix.length];
     const lien = sectionJour?.querySelector('[data-jour-lien]');
     if (t && lien && lien.getAttribute('href') !== `${B}/${t.slug}/`) {
       poserMot(t, false);

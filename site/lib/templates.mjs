@@ -195,12 +195,15 @@ function menuDialog(alt) {
   const lettres = [...NAV.letters.entries()]
     .map(([l, d]) => (d.length ? `<li><a href="${lien.lettre(l)}" aria-label="${t.lettreAria(l, plural(d.length, t.mot))}">${l}</a></li>` : `<li><span aria-hidden="true">${l}</span></li>`))
     .join('');
+  // Les catégories, repliées par partie : le menu tient en un écran.
   const parties = NAV.parts
     .filter((p) => p.cats.length)
-    .map((p) => `<h3 class="menu-sous">${h(partieTitre(p))}</h3>
-    <ul class="menu-cats">${p.cats
-      .map((c) => `<li><a href="${lien.categorie(c)}"><svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${c.slug}"/></svg><span>${h(categoryLabel(c.name))}</span><span class="menu-n">${num(c.defs.length)}</span></a></li>`)
-      .join('')}</ul>`)
+    .map((p) => `<details class="menu-partie">
+      <summary><span>${h(partieTitre(p))}</span><span class="menu-n">${num(p.cats.reduce((n, c) => n + c.defs.length, 0))}</span></summary>
+      <ul class="menu-cats">${p.cats
+        .map((c) => `<li><a href="${lien.categorie(c)}"><svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${c.slug}"/></svg><span class="menu-nom">${h(categoryLabel(c.name))}</span><span class="menu-n">${num(c.defs.length)}</span></a></li>`)
+        .join('')}</ul>
+    </details>`)
     .join('\n    ');
   return `<dialog class="menu" id="menu" aria-labelledby="menu-titre">
   <div class="menu-panneau">
@@ -210,17 +213,20 @@ function menuDialog(alt) {
     </div>
     <button class="menu-cherche" type="button" data-search-open>${loupe}<span>${t.rechercherMot}</span></button>
     <ul class="menu-liens menu-liens--haut">
+      <li><a href="${lien.accueil()}">${t.accueil}</a></li>
       <li><a href="${lien.chronologie()}">${t.chronologie}</a></li>
       <li><a href="${lien.specs()}">${t.specifications}</a></li>
+      <li><a href="${lien.accueil()}#livre">${t.livreImprime}</a></li>
       <li><a href="${alt || autres().accueil()}" hreflang="${t.code === 'fr' ? 'en' : 'fr'}">${t.autreLangue}</a></li>
       <li><button class="menu-theme" type="button" data-theme-toggle>${t.theme}</button></li>
     </ul>
     <h3 class="menu-sous">${t.lesLettres}</h3>
     <ol class="abc">${lettres}</ol>
+    <h3 class="menu-sous">${t.categories}</h3>
+    <div class="menu-parties">
     ${parties}
+    </div>
     <ul class="menu-liens">
-      <li><a href="${lien.accueil()}">${t.accueil}</a></li>
-      <li><a href="${lien.accueil()}#livre">${t.livreImprime}</a></li>
       <li><a href="${site.pdf}" download>${t.pdfGratuit}</a></li>
       <li><a href="${site.github}" rel="noopener">GitHub</a></li>
     </ul>
@@ -321,7 +327,7 @@ const apercuAttr = (d) => (resumeDe(d) ? ` data-apercu="${hd(resume(resumeDe(d),
 function entry(def, picto, { showCategory = true } = {}) {
   const bip = /^BIP-\d/.test(def.titleFr || def.title);
   const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.titleFr || r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
-  return `<li><a class="entree" href="${lien.def(def.slug)}"${apercuAttr(def)}>
+  return `<li><a class="entree" href="${lien.def(def.slug)}">
   <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}</span>${sujet ? `<span class="entree-sujet">${sujet}</span>` : ''}
   ${resumeDe(def) ? `<span class="entree-desc"${langAttr(def)}>${hd(resume(resumeDe(def), 120))}</span>` : ''}
 </a></li>`;
@@ -492,7 +498,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   <a class="reperes-lettre" href="${lien.lettre(letter)}" aria-label="${t.lettreAria(letter, plural(letterCount, t.mot))}">${letter}</a>
   ${def.alphaNext ? `<a class="reperes-suiv" href="${lien.def(def.alphaNext.slug)}" data-turn="next"${apercuAttr(def.alphaNext)}><span class="masque">${t.motSuivant} : </span><span class="reperes-nom">${breakable(def.alphaNext.title)}</span><span class="reperes-court" aria-hidden="true">${t.suivant}</span></a>` : '<span></span>'}
 </nav>
-<article class="mot${related ? '' : ' mot--seul'}" data-mot="${h(def.slug)}" data-titre="${h(affiche(def.title))}">
+<article class="mot${related ? '' : ' mot--seul'}${def.body.length < 360 && !def.assets.length ? ' mot--bref' : ''}" data-mot="${h(def.slug)}" data-titre="${h(affiche(def.title))}">
   <header class="mot-tete">
     <div class="mot-titre">
       <h1 class="vedette${def.title.includes('_') ? ' vedette--bas' : ''}" style="--em:${headwordEm(def.title)}">${headwordWords(def.title)}</h1>
@@ -547,9 +553,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
 export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   const picto = pictoCollector();
   const keys = [...letters.keys()].filter((l) => letters.get(l).length);
-  const i = keys.indexOf(letter);
-  const prev = keys[i - 1];
-  const next = keys[i + 1];
+  const next = keys[keys.indexOf(letter) + 1];
   const groups = defs.length > 40 ? groupEntries(defs, 'deux') : [];
   const sousIndex = groups.length > 1
     ? `<nav class="sous-index" aria-label="${t.groupesLettre(letter)}">
@@ -562,10 +566,6 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   <div class="lettre-info">
     <h1 class="titre lettre-titre">${t.motsEn(letter)}</h1>
     <p class="enonce">${t.motsDuDico(plural(defs.length, t.mot), insecable(defs[0].title), insecable(defs.at(-1).title))}</p>
-    <nav class="lettres-voisines" aria-label="${t.lettresVoisines}">
-      ${prev ? `<a href="${lien.lettre(prev)}" rel="prev"><span class="masque">${t.lettrePrecedente}</span>${prev}</a>` : ''}
-      ${next ? `<a href="${lien.lettre(next)}" rel="next"><span class="masque">${t.lettreSuivante}</span>${next}</a>` : ''}
-    </nav>
   </div>
 </header>
 <div class="liste-bloc">
@@ -718,7 +718,7 @@ export function homePage(data, { assets, jsonLd }) {
   for (const c of categories) picto.use(c.slug);
 
   const catRow = (c) => `<li class="index-ligne">
-  <a class="index-nom" href="${lien.categorie(c)}">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="index-n">${num(c.defs.length)}</span></a>
+  <a class="index-nom" href="${lien.categorie(c)}">${picto.use(c.slug)}<span class="index-nom-texte">${h(categoryLabel(c.name))}</span><span class="index-n">${num(c.defs.length)}</span></a>
 </li>`;
   // Les parties du livre (hors spécifications, qui ont leur propre section) ; à défaut, toutes les catégories.
   const partsDico = parts.filter((p) => p.id !== 'specifications' && p.cats.length);
