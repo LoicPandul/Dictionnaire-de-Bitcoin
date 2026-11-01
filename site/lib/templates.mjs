@@ -165,7 +165,7 @@ const lune = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable=
 function langue(alt) {
   const autre = t.code === 'fr' ? LANGUES.en : LANGUES.fr;
   const href = alt || autres().accueil();
-  return `<a class="bouton-langue" href="${href}" hreflang="${autre.code}" lang="${autre.code}" data-langue="${autre.code}"><span class="masque">${h(t.autreLangue)} : </span><span aria-hidden="true">${t.court}<span class="langue-sep">/</span><b>${autre.court}</b></span></a>`;
+  return `<a class="bouton-langue" href="${href}" hreflang="${autre.code}" lang="${autre.code}" data-langue="${autre.code}"><span class="masque">${h(t.autreLangue)}</span><span aria-hidden="true">${autre.court}</span></a>`;
 }
 
 function bar({ home = false, current = '', alt = null } = {}) {
@@ -213,6 +213,7 @@ function menuDialog(alt) {
       <li><a href="${lien.chronologie()}">${t.chronologie}</a></li>
       <li><a href="${lien.specs()}">${t.specifications}</a></li>
       <li><a href="${alt || autres().accueil()}" hreflang="${t.code === 'fr' ? 'en' : 'fr'}">${t.autreLangue}</a></li>
+      <li><button class="menu-theme" type="button" data-theme-toggle>${t.theme}</button></li>
     </ul>
     <h3 class="menu-sous">${t.lesLettres}</h3>
     <ol class="abc">${lettres}</ol>
@@ -259,7 +260,7 @@ function searchDialog() {
 }
 
 // ---------------------------------------------------------------- Le dos (pied de page)
-function footer(letters, total, { home = false } = {}) {
+function footer(letters, total) {
   const year = new Date().getFullYear();
   const items = [...letters.entries()]
     .map(([l, defs], i) =>
@@ -268,16 +269,9 @@ function footer(letters, total, { home = false } = {}) {
         : `<li><span class="dos-vide" aria-hidden="true"><span class="dos-l">${l}</span></span></li>`,
     )
     .join('');
-  // L'accueil garde le grand alphabet animé ; ailleurs, une rangée compacte (la barre A–Z ou le menu font le reste).
-  const tete = home
-    ? `<div class="dos-tete">
-    <h2 class="dos-titre">${t.deAaZ}</h2>
-    <p class="dos-phrase">${t.dosPhrase(num(total))}</p>
-  </div>`
-    : `<h2 class="dos-court">${t.toutesLettres}</h2>`;
-  return `<footer class="dos${home ? '' : ' dos--court'}" id="lettres">
-  ${tete}
-  <nav class="alphabet${home ? '' : ' alphabet--court'}" aria-label="${t.toutesLettres}"><ol class="abc">${items}</ol></nav>
+  return `<footer class="dos dos--court" id="lettres">
+  <h2 class="dos-court">${t.toutesLettres}</h2>
+  <nav class="alphabet alphabet--court" aria-label="${t.toutesLettres}"><ol class="abc">${items}</ol></nav>
   <div class="dos-pied">
     <p class="dos-marque">${h(t.marque)}, ${h(site.author)}, ${t.edition(site.edition)}</p>
     <ul class="dos-liens">
@@ -305,7 +299,7 @@ ${bar({ home, current, alt })}
 <main id="contenu">
 ${body}
 </main>
-${footer(letters, total, { home })}
+${footer(letters, total)}
 ${searchDialog()}
 ${menuDialog(alt)}
 <script type="application/json" id="i18n">${JSON.stringify(t.js).replace(/</g, '\\u003c')}</script>
@@ -556,13 +550,7 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
   const i = keys.indexOf(letter);
   const prev = keys[i - 1];
   const next = keys[i + 1];
-  const max = Math.sqrt(Math.max(...defs.map((d) => d.body.length)));
-  const pas = 6;
-  const trancheLettre = defs
-    .map((d, k) => `<a href="${lien.def(d.slug)}" tabindex="-1"><title>${h(affiche(d.title))}</title><rect x="${k * pas}" y="${(100 - Math.max(8, (Math.sqrt(d.body.length) / max) * 100)).toFixed(1)}" width="${pas - 2}" height="${Math.max(8, (Math.sqrt(d.body.length) / max) * 100).toFixed(1)}"/></a>`)
-    .join('');
   const groups = defs.length > 40 ? groupEntries(defs, 'deux') : [];
-  const vedetteLettre = [...defs].sort((a, b) => b.citedBy.length - a.citedBy.length)[0];
   const sousIndex = groups.length > 1
     ? `<nav class="sous-index" aria-label="${t.groupesLettre(letter)}">
   <ul>${groups.map((g, k) => `<li><a href="#groupe-${k + 1}">${h(g.label)}</a></li>`).join('')}</ul>
@@ -578,17 +566,6 @@ export function letterPage(letter, defs, letters, { assets, jsonLd, total }) {
       ${prev ? `<a href="${lien.lettre(prev)}" rel="prev"><span class="masque">${t.lettrePrecedente}</span>${prev}</a>` : ''}
       ${next ? `<a href="${lien.lettre(next)}" rel="next"><span class="masque">${t.lettreSuivante}</span>${next}</a>` : ''}
     </nav>
-  </div>
-  <div class="lettre-tranche">
-    <div class="apercu-lettre" aria-live="polite" data-apercu-lettre>
-      <p class="apercu-lettre-nom"><a href="${lien.def(vedetteLettre.slug)}">${breakable(vedetteLettre.title)}</a></p>
-      <p class="apercu-lettre-cat">${h(categoryLabel(vedetteLettre.category))}</p>
-      <p class="apercu-lettre-desc"${langAttr(vedetteLettre)}>${hd(resume(resumeDe(vedetteLettre)))}</p>
-    </div>
-    <figure class="tranche-lettre">
-      <svg viewBox="0 0 ${defs.length * pas} 100" preserveAspectRatio="none" aria-hidden="true" data-tranche-lettre>${trancheLettre}</svg>
-      <figcaption class="note" data-tranche-legende>${t.trancheLegende} <span data-geste>${t.survolez}</span></figcaption>
-    </figure>
   </div>
 </header>
 <div class="liste-bloc">
@@ -740,11 +717,8 @@ export function homePage(data, { assets, jsonLd }) {
   const picto = pictoCollector();
   for (const c of categories) picto.use(c.slug);
 
-  // Les trois mots les plus cités de chaque catégorie.
-  const topWords = (c) => [...c.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareTitres(a.title, b.title)).slice(0, 3);
   const catRow = (c) => `<li class="index-ligne">
   <a class="index-nom" href="${lien.categorie(c)}">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="index-n">${num(c.defs.length)}</span></a>
-  <p class="index-mots">${topWords(c).map((d) => `<a href="${lien.def(d.slug)}">${breakable(d.title)}</a>`).join(', ')}</p>
 </li>`;
   // Les parties du livre (hors spécifications, qui ont leur propre section) ; à défaut, toutes les catégories.
   const partsDico = parts.filter((p) => p.id !== 'specifications' && p.cats.length);
@@ -774,20 +748,20 @@ export function homePage(data, { assets, jsonLd }) {
   const avecSchema = definitions.filter((d) => d.assets.some((x) => !x.credit));
   const schema = avecSchema.find((d) => d.slugs.fr === 'double-depense') || avecSchema[0];
   const cartes = [
-    nEvenements ? { href: lien.chronologie(), titre: t.chronologie, texte: t.chronoCarte(num(nEvenements), premiere, derniere), grand: true,
-      frise: (() => { const m = Math.max(...chrono.map((a) => a.events.length)); return `<span class="carte-frise" aria-hidden="true">${chrono.map((a) => `<span style="--h:${(a.events.length / m).toFixed(3)}"></span>`).join('')}</span>`; })() } : null,
+    nEvenements ? { href: lien.chronologie(), titre: t.chronologie, texte: t.chronoCarte(num(nEvenements), premiere, derniere) } : null,
     nSpecs ? { href: lien.specs(), titre: t.specifications, texte: t.specsCarte(num(nSpecs), nomsSeries(specs.flatMap((g) => g.series.map((se) => se.id)))) } : null,
     nPartie('personnes') ? { href: lien.partie('personnes'), titre: partieTitre(partie('personnes')), texte: t.personnesCarte(num(nPartie('personnes'))) } : null,
     nPartie('ecosysteme') ? { href: lien.partie('ecosysteme'), titre: partieTitre(partie('ecosysteme')), texte: t.ecoCarte(num(nPartie('ecosysteme'))) } : null,
     schema ? { href: lien.def(schema.slug), titre: t.schemas, texte: t.schemasCarte(num(avecSchema.length)) } : null,
   ].filter(Boolean);
+  // Le sommaire des nouveautés : une ligne par contenu, son nom puis ce qu'il contient.
   const nouveautes = cartes.length
     ? `<section class="nouveautes" aria-labelledby="nouveautes-titre">
   <div class="nouveautes-tete">
     <h2 class="titre" id="nouveautes-titre">${t.nouveautes}</h2>
     <p class="enonce">${t.nouveautesEnonce}</p>
   </div>
-  <ul class="cartes">${cartes.map((c, k) => `<li class="carte${c.grand ? ' carte--grande' : ''}" style="--k:${k}"><a href="${c.href}">${c.frise || ''}<span class="carte-titre">${h(c.titre)}</span><span class="carte-texte">${c.texte}</span></a></li>`).join('')}</ul>
+  <ul class="sommaire">${cartes.map((c, k) => `<li style="--k:${k}"><a href="${c.href}"><span class="sommaire-nom">${h(c.titre)}</span><span class="sommaire-texte">${c.texte}</span></a></li>`).join('')}</ul>
 </section>`
     : '';
 
@@ -800,30 +774,27 @@ export function homePage(data, { assets, jsonLd }) {
     body: `${exemple.body.trim().split(/(?<=\.)\s+/).slice(0, 3).join(' ')} […]`,
   };
   const [l1, l2] = t.couvTitre;
-  const body = `<section class="jaquette" aria-labelledby="titre">
-  <div class="jaquette-objet">
-    <div class="jaquette-avant" data-allee>
-      ${allee()}
-      <div class="jaquette-couv">
-        <h1 class="couv-titre" id="titre"><span class="ligne ligne-1"><span>${h(l1)}</span></span> <span class="ligne ligne-2"><span>${h(l2)}</span></span></h1>
-        <p class="couv-sous">${h(t.sousTitre)}</p>
-        <p class="couv-auteur"><span>${h(site.author)}</span> <span>${t.editionCap(site.edition)}</span></p>
-      </div>
-    </div>
-    <div class="jaquette-tranche" aria-hidden="true"><span class="tranche-titre">${h(t.marque)}</span><span class="tranche-an">${site.edition}</span></div>
-    <section class="jaquette-dos jour" aria-labelledby="jour-titre" data-jour>
-      <form class="couv-recherche" role="search" action="${lien.recherche()}" method="get" data-hero-search>
-        <label class="masque" for="couv-q">${t.chercherParmi(num(total))}</label>
-        <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${t.exemple}">
-        <button type="submit">${t.chercher}</button>
-      </form>
-      <h2 class="jour-titre" id="jour-titre">${t.motDuJour}</h2>
-      <p class="jour-mot"><a href="${lien.def(f.slug)}" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
-      <p class="jour-cat"><a href="${lien.categorie({ name: f.category, slug: f.categorySlug })}" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
-      <p class="jour-desc" data-jour-desc${langAttr(f)}>${hd(resumeDe(f))}</p>
-      <p class="jour-actions"><a class="bouton bouton--clair" href="${lien.def(f.slug)}" data-jour-lire>${t.lireDef}</a> <button class="bouton bouton--trait" type="button" data-jour-autre>${t.autreMot}</button></p>
-      <p class="jour-pied">${t.jourPied(num(total), categories.length)}</p>
-    </section>
+  const body = `<section class="couverture" aria-labelledby="titre">
+  <div class="couverture-texte">
+    <h1 class="couv-titre" id="titre"><span class="ligne"><span>${h(l1)}</span></span> <span class="ligne"><span>${h(l2)}</span></span></h1>
+    <p class="couv-sous">${h(t.sousTitre)}</p>
+    <form class="couv-recherche" role="search" action="${lien.recherche()}" method="get" data-hero-search>
+      <label class="masque" for="couv-q">${t.chercherParmi(num(total))}</label>
+      <input id="couv-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${t.exemple}">
+      <button type="submit">${t.chercher}</button>
+    </form>
+    <p class="couv-meta">${t.couvMeta(num(total), h(site.author), site.edition)}</p>
+  </div>
+  <div class="couverture-image" aria-hidden="true">${allee()}</div>
+</section>
+
+<section class="jour" aria-labelledby="jour-titre" data-jour>
+  <h2 class="titre jour-titre" id="jour-titre">${t.motDuJour}</h2>
+  <div class="jour-corps">
+    <p class="jour-mot"><a href="${lien.def(f.slug)}" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
+    <p class="jour-cat"><a class="etiquette" href="${lien.categorie({ name: f.category, slug: f.categorySlug })}" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
+    <p class="jour-desc" data-jour-desc${langAttr(f)}>${hd(resumeDe(f))}</p>
+    <p class="jour-actions"><a class="bouton" href="${lien.def(f.slug)}" data-jour-lire>${t.lireDef}</a> <button class="bouton bouton--doux" type="button" data-jour-autre>${t.autreMot}</button></p>
   </div>
 </section>
 
@@ -846,7 +817,7 @@ ${nouveautes}
 <section class="categories" id="categories" aria-labelledby="categories-titre">
   <div class="categories-tete">
     <h2 class="titre" id="categories-titre">${partsDico.length ? t.partiesTitre : t.categories}</h2>
-    <p class="enonce">${t.partiesEnonce}<span class="sans-mobile"> ${t.plusRenvoyes}</span></p>
+    <p class="enonce">${t.partiesEnonce}</p>
   </div>
   <div class="parties">${blocsParties}</div>
 </section>
@@ -861,11 +832,6 @@ ${nouveautes}
       <p>${t.pdfReste}<a class="lien" href="${site.pdf}" download>${t.telechargerPdf}</a> (2,7${NB}Mo).</p>
       <p class="note">${t.isbn(site.isbnPaperback, site.isbnHardcover)}</p>
     </div>
-  </div>
-  <div class="pages" aria-label="${t.pagesInterieures}">
-    ${[31, 212, 467, 516]
-      .map((n, i) => `<figure class="page-livre" style="--i:${i}"><img src="/img/page-${n}.webp" width="600" height="927" alt="${h(t.pagesAlt[i])}" loading="lazy" decoding="async" lang="fr"></figure>`)
-      .join('\n    ')}
   </div>
 </section>
 
@@ -947,12 +913,11 @@ export function searchPage({ assets, letters, total, categories }) {
 // ---------------------------------------------------------------- 404
 export function notFoundPage({ assets, letters, total }) {
   const picto = pictoCollector();
-  const body = `<section class="perdu" aria-labelledby="perdu-titre">
-  <div class="perdu-arbre" aria-hidden="true">${allee('allee allee--perdu')}</div>
-  <div class="perdu-texte">
+  const body = `<section class="couverture perdu" aria-labelledby="perdu-titre">
+  <div class="couverture-texte perdu-texte">
     <h1 class="perdu-titre" id="perdu-titre">${t.introuvable}</h1>
-    <p class="enonce">${t.introuvableEnonce}</p>
-    <form class="couv-recherche perdu-recherche" role="search" action="${lien.recherche()}" method="get" data-perdu-champ>
+    <p class="couv-sous">${t.introuvableEnonce}</p>
+    <form class="couv-recherche" role="search" action="${lien.recherche()}" method="get" data-perdu-champ>
       <label class="masque" for="perdu-q">${t.chercherTerme}</label>
       <input id="perdu-q" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="${t.exemple}" aria-controls="perdu-resultats">
       <button type="submit">${t.chercher}</button>
@@ -961,8 +926,9 @@ export function notFoundPage({ assets, letters, total }) {
       <h2 class="perdu-sous" data-suggestions-titre>${t.vouliezVous}</h2>
       <ul class="perdu-liste" id="perdu-resultats" data-suggestions-liste></ul>
     </div>
-    <p class="perdu-actions"><a class="lien lien--os" href="${lien.accueil()}">${t.retourAccueil}</a> <a class="lien lien--os" href="#lettres">${t.parLettre}</a></p>
+    <p class="perdu-actions"><a href="${lien.accueil()}">${t.retourAccueil}</a> <a href="#lettres">${t.parLettre}</a></p>
   </div>
+  <div class="couverture-image" aria-hidden="true">${allee()}</div>
 </section>`;
   return page({
     headOpts: { title: t.titre404, description: t.desc404, path: `${t.base}/404.html`, robots: 'noindex', assets, themeColor: palette.figue },

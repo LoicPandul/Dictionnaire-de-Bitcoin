@@ -29,16 +29,20 @@
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
   // ------------------------------------------------------------ Thème
-  const themeBtn = d.querySelector('[data-theme-toggle]');
+  // Deux boutons : l'icône de la barre, et une ligne du menu sur les petits téléphones.
+  const themeBtns = d.querySelectorAll('[data-theme-toggle]');
   const sombre = () => root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
-  const majTheme = () => themeBtn?.setAttribute('aria-label', sombre() ? tx('themeClair') : tx('themeSombre'));
+  const majTheme = () => themeBtns.forEach((b) => {
+    const nom = sombre() ? tx('themeClair') : tx('themeSombre');
+    if (b.classList.contains('menu-theme')) b.textContent = nom; else b.setAttribute('aria-label', nom);
+  });
   majTheme();
-  themeBtn?.addEventListener('click', () => {
+  themeBtns.forEach((b) => b.addEventListener('click', () => {
     const t = sombre() ? 'light' : 'dark';
     root.dataset.theme = t;
     try { localStorage.setItem('theme', t); } catch {}
     majTheme();
-  });
+  }));
 
   // ------------------------------------------------------------ Barre : se cache en descendant, revient en remontant
   const barre = d.querySelector('[data-barre]');
@@ -57,19 +61,10 @@
     addEventListener('scroll', () => { if (!enAttente) { enAttente = true; requestAnimationFrame(majBarre); } }, { passive: true });
     barre.addEventListener('focusin', () => barre.classList.remove('est-cachee'));
   }
-  // Accueil : la barre prend la couleur du papier après la jaquette ; le bouton de recherche
-  // n'apparaît qu'une fois le champ de la couverture sorti de l'écran.
-  const jaquette = d.querySelector('.jaquette');
-  if (jaquette && barre) {
-    const champ = jaquette.querySelector('.couv-recherche');
-    new IntersectionObserver(([e]) => barre.classList.toggle('est-passee', !e.isIntersecting), { rootMargin: `-${barre.offsetHeight}px 0px 0px 0px` }).observe(jaquette);
-    if (champ) new IntersectionObserver(([e]) => barre.classList.toggle('champ-visible', e.isIntersecting)).observe(champ);
-  }
-
   // ------------------------------------------------------------ Apparitions, une fois
-  const aVoir = d.querySelectorAll('.feuilleter, .categories, .pages, .alphabet');
+  const aVoir = d.querySelectorAll('.feuilleter, .categories');
   for (const el of aVoir) {
-    const enfants = el.matches('.feuilleter') ? el.querySelectorAll('.blocs li') : el.matches('.categories') ? el.querySelectorAll('.index-ligne') : el.matches('.alphabet') ? el.querySelectorAll('li') : [];
+    const enfants = el.matches('.feuilleter') ? el.querySelectorAll('.blocs li') : el.querySelectorAll('.index-ligne');
     // Décalage plafonné : au-delà de douze lignes, tout arrive ensemble.
     enfants.forEach((c, i) => c.style.setProperty('--k', Math.min(i, 12)));
   }
@@ -90,105 +85,6 @@
       }
     }, { threshold: 0.25 });
     boucles.forEach((v) => iov.observe(v));
-  }
-
-  // ------------------------------------------------------------ Tranche d'une lettre : le trait visé donne son mot
-  // Souris : survol et clic. Doigt : on glisse sur les traits, l'aperçu suit, on touche le mot pour l'ouvrir.
-  const tl = d.querySelector('[data-tranche-lettre]');
-  if (tl) {
-    const traits = [...tl.querySelectorAll('a')];
-    const hauteurs = traits.map((a) => Number(a.querySelector('rect').getAttribute('height')));
-    const fiches = new Map([...d.querySelectorAll('.entree')].map((a) => [a.getAttribute('href'), a.dataset]));
-    const boite = d.querySelector('[data-apercu-lettre]');
-    const geste = d.querySelector('[data-geste]');
-    const tactile = matchMedia('(pointer: coarse)').matches;
-    if (geste) geste.textContent = tactile ? tx('gesteTactile') : tx('gesteSouris');
-    const NS = 'http://www.w3.org/2000/svg';
-    const vb = tl.viewBox.baseVal;
-    // Le trait visé : une colonne d'or d'au moins 4 px, quelle que soit la densité de la lettre.
-    const marque = d.createElementNS(NS, 'rect');
-    marque.setAttribute('class', 'vise-lettre');
-    marque.setAttribute('y', '0');
-    marque.setAttribute('height', '100');
-    tl.prepend(marque);
-    // Au doigt : une loupe des 21 traits autour du doigt.
-    const loupe = d.createElement('div');
-    loupe.className = 'loupe-traits';
-    loupe.setAttribute('aria-hidden', 'true');
-    loupe.innerHTML = Array.from({ length: 21 }, () => '<span></span>').join('');
-    loupe.hidden = true;
-    tl.parentElement.style.position = 'relative';
-    tl.parentElement.prepend(loupe);
-    let vise = -1;
-    let cacher = 0;
-    const viser = (k) => {
-      k = Math.max(0, Math.min(traits.length - 1, k));
-      if (k === vise) return;
-      vise = k;
-      const pas = vb.width / traits.length;
-      const min = (4 * vb.width) / Math.max(1, tl.clientWidth);
-      const w = Math.max(pas, min);
-      marque.setAttribute('x', String(k * pas + pas / 2 - w / 2));
-      marque.setAttribute('width', String(w));
-      const a = traits[k];
-      const f = fiches.get(a.getAttribute('href')) || {};
-      const lien = boite.querySelector('a');
-      lien.href = a.getAttribute('href');
-      lien.textContent = f.apercuNom || a.querySelector('title').textContent;
-      boite.querySelector('.apercu-lettre-cat').textContent = f.apercuCat || '';
-      boite.querySelector('.apercu-lettre-desc').textContent = resume(f.apercu);
-      [...loupe.children].forEach((sp, j) => {
-        const i = k - 10 + j;
-        sp.style.height = i >= 0 && i < traits.length ? `${Math.max(8, hauteurs[i])}%` : '0';
-        sp.classList.toggle('est-vise', j === 10);
-      });
-    };
-    const depuis = (e) => {
-      const r = tl.getBoundingClientRect();
-      viser(Math.floor(((e.clientX - r.left) / r.width) * traits.length));
-      if (e.pointerType === 'touch') {
-        clearTimeout(cacher);
-        loupe.hidden = false;
-        loupe.style.left = `${Math.min(Math.max(0, e.clientX - r.left - 105), r.width - 210)}px`;
-      }
-    };
-    tl.addEventListener('pointermove', depuis);
-    tl.addEventListener('pointerdown', depuis);
-    const finir = () => { cacher = setTimeout(() => (loupe.hidden = true), 700); };
-    tl.addEventListener('pointerup', finir);
-    tl.addEventListener('pointercancel', finir);
-    tl.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (!tactile && vise > -1) location.href = traits[vise].getAttribute('href');
-    });
-  }
-
-  // ------------------------------------------------------------ L'Allée des baobabs : profondeur au pointeur ou au défilement
-  // Souris : chaque plan suit le curseur selon sa distance (soleil, arbres du fond, grand baobab).
-  // Doigt ou pavé : le soleil descend derrière l'horizon pendant qu'on fait défiler la page.
-  const allee = d.querySelector('[data-allee]');
-  if (allee && !reduit.matches) {
-    let raf = 0;
-    const poser = (x, y) => { allee.style.setProperty('--px', x.toFixed(3)); allee.style.setProperty('--py', y.toFixed(3)); };
-    if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
-      const objet = allee.closest('.jaquette-objet') || allee;
-      objet.addEventListener('pointermove', (e) => {
-        cancelAnimationFrame(raf);
-        raf = requestAnimationFrame(() => {
-          const r = objet.getBoundingClientRect();
-          poser((e.clientX - r.left) / r.width - 0.5, (e.clientY - r.top) / r.height - 0.5);
-        });
-      });
-      objet.addEventListener('pointerleave', () => poser(0, 0));
-    }
-    const defiler = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const r = allee.getBoundingClientRect();
-        allee.style.setProperty('--defil', Math.min(1, Math.max(0, -r.top / Math.max(1, r.height))).toFixed(3));
-      });
-    };
-    addEventListener('scroll', defiler, { passive: true });
   }
 
   // ------------------------------------------------------------ Renvois entrants repliés au-delà de 8
@@ -739,7 +635,8 @@
       if (puce === marque) return;
       marque?.removeAttribute('aria-current');
       marque = puce;
-      if (!puce) return;
+      // Revenu au-dessus du premier groupe : la rangée repart de son début.
+      if (!puce) { sousIndex.scrollLeft = 0; return; }
       puce.setAttribute('aria-current', 'location');
       centrer(sousIndex, puce);
     };

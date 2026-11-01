@@ -117,7 +117,7 @@ Toutes viennent du livre et du dépôt, aucune image extérieure :
 
 - l'Allée des baobabs de la couverture 2027, calculée par le générateur de la couverture ;
 - les pictogrammes 2027 de `assets/pictograms` ;
-- quatre pages intérieures et la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendues depuis le PDF de l'édition 2026 ;
+- la boucle « feuilletage » (`static/video/feuilletage.mp4`), rendue depuis le PDF de l'édition 2026 ;
 - le favicon et la carte sociale du script de couverture ;
 - le portrait de Loïc Morel ;
 - les schémas des définitions, copiés depuis leurs dossiers.
