@@ -40,10 +40,13 @@
     if (!anime || reduit.matches) { nomJour.innerHTML = coupe(t.title); return; }
     // Les lettres du nouveau mot roulent en place, l'une après l'autre.
     nomJour.innerHTML = [...affiche(t.title)].map((c, i) => (c === ' ' ? ' ' : `<span class="roule" style="--r:${i}">${esc(c)}</span>`)).join('');
-    nomJour.querySelectorAll('.roule').forEach((s, i) => {
-      s.animate([{ transform: 'translateY(0.9em)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 420, delay: Math.min(i * 22, 400), easing: 'cubic-bezier(0.16, 1, 0.3, 1)', fill: 'backwards' });
-    });
+    const jeton = ++tirage;
+    const anims = [...nomJour.querySelectorAll('.roule')].map((s, i) =>
+      s.animate([{ transform: 'translateY(0.9em)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 420, delay: Math.min(i * 22, 400), easing: 'cubic-bezier(0.16, 1, 0.3, 1)', fill: 'backwards' }));
+    // L'animation finie, le mot redevient du texte : le soulignement du lien court de nouveau sous tout le mot.
+    Promise.all(anims.map((a) => a.finished)).then(() => { if (jeton === tirage) nomJour.innerHTML = coupe(t.title); }, () => {});
   }
+  let tirage = 0;
   sectionJour?.querySelector('[data-jour-autre]')?.addEventListener('click', () => {
     (termes ? Promise.resolve() : charger()).then(() => {
       const choix = ecrits();
@@ -156,13 +159,13 @@
 
   // Téléphone : toute la tranche défile sous une aiguille fixe (défilement natif, inertie).
   const PAS = 4;
-  function brancherDoigt() {
-    mode = 'doigt';
+  let aiguille = null;
+  // Dessine la tranche entière et place l'aiguille ; refait à chaque changement de largeur (rotation de la tablette).
+  function dessinerDoigt() {
     const H = bande.clientHeight;
     const W = bande.clientWidth;
     const n = termes.length;
     const largeur = n * PAS + W;
-    bande.classList.add('bande-defile');
     const s = d.createElementNS(NS, 'svg');
     s.setAttribute('width', String(largeur));
     s.setAttribute('height', String(H));
@@ -179,17 +182,24 @@
     p.setAttribute('class', 'trait');
     p.setAttribute('d', path);
     s.append(p);
-    const aiguille = d.createElement('span');
-    aiguille.className = 'aiguille';
     const piste = d.createElement('div');
     piste.className = 'bande-piste';
     piste.append(s);
     bande.replaceChildren(piste);
-    bande.parentElement.style.position = 'relative';
-    bande.after(aiguille);
     aiguille.style.top = `${bande.offsetTop - 8}px`;
     aiguille.style.bottom = 'auto';
     aiguille.style.height = `${H + 16}px`;
+    bande.scrollLeft = courant * PAS;
+  }
+  function brancherDoigt() {
+    mode = 'doigt';
+    const n = termes.length;
+    bande.classList.add('bande-defile');
+    aiguille = d.createElement('span');
+    aiguille.className = 'aiguille';
+    bande.parentElement.style.position = 'relative';
+    bande.after(aiguille);
+    dessinerDoigt();
     let attente = false;
     bande.addEventListener('scroll', () => {
       if (attente) return;
@@ -200,7 +210,6 @@
         if (i !== courant) montrer(i);
       });
     }, { passive: true });
-    bande.scrollLeft = courant * PAS;
     montrer(courant);
     blocs.forEach((b) => {
       b.addEventListener('click', (e) => {
@@ -254,6 +263,7 @@
       if (Math.abs(innerWidth - largeurPrec) < 40) return;
       largeurPrec = innerWidth;
       if (mode === 'bureau' && lettreActive) { dessinerLettre(lettreActive); viser(courant); }
+      else if (mode === 'doigt') { const i = courant; dessinerDoigt(); montrer(i); }
     });
   }
 

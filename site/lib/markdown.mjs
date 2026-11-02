@@ -28,6 +28,15 @@ function renderMath(tex, displayMode) {
   });
 }
 
+// La ponctuation qui suit une formule entre dans la dernière boîte de KaTeX : elle ne peut plus partir seule
+// en début de ligne, et la formule garde ses propres points de coupure. Une copie masquée la garde lisible
+// pour les lecteurs d'écran (le rendu visuel de KaTeX leur est caché).
+const FIN_KATEX = '</span></span></span>';
+function collerPonct(html, ponct) {
+  if (!ponct || !html.endsWith(FIN_KATEX)) return html + (ponct || '');
+  return `${html.slice(0, -FIN_KATEX.length)}<span class="formule-ponct">${ponct}</span>${FIN_KATEX}<span class="masque">${ponct}</span>`;
+}
+
 // Remplace les formules par des jetons inertes, hors des blocs et spans de code.
 function protectMath(source) {
   const formulas = [];
@@ -37,7 +46,7 @@ function protectMath(source) {
     if (i % 2 === 1) return part;
     return part
       .replace(/\$\$([\s\S]+?)\$\$/g, (_, tex) => token(renderMath(tex, true)))
-      .replace(/(?<![\\$])\$([^$\n]+?)\$/g, (_, tex) => token(renderMath(tex, false)));
+      .replace(/(?<![\\$])\$([^$\n]+?)\$([,.;:!?)\]]+)?/g, (_, tex, ponct) => token(collerPonct(renderMath(tex, false), ponct)));
   });
   return { text: out.join(''), formulas };
 }

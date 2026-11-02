@@ -75,7 +75,7 @@
     aVoir.forEach((el) => io.observe(el));
   } else aVoir.forEach((el) => el.classList.add('vu'));
   // La loupe de la barre s'efface tant que le champ de la couverture est à l'écran.
-  const champCouv = d.querySelector('.couv-recherche');
+  const champCouv = d.querySelector('.couv-recherche, .cherche-form');
   if (barre && champCouv && 'IntersectionObserver' in window) {
     new IntersectionObserver(([e]) => barre.classList.toggle('champ-visible', e.isIntersecting), { rootMargin: `-${barre.offsetHeight}px 0px 0px 0px` }).observe(champCouv);
   }
@@ -91,6 +91,12 @@
     }, { threshold: 0.25 });
     boucles.forEach((v) => iov.observe(v));
   }
+
+  // ------------------------------------------------------------ Blocs de code plus larges que la colonne : un filet Figue au bord droit tant qu'il reste à voir
+  const larges = d.querySelectorAll('.prose pre');
+  const aSuivre = (el) => el.classList.toggle('a-suivre', el.scrollWidth - el.clientWidth - el.scrollLeft > 2);
+  larges.forEach((el) => { aSuivre(el); el.addEventListener('scroll', () => aSuivre(el), { passive: true }); });
+  if (larges.length) addEventListener('resize', () => larges.forEach(aSuivre), { passive: true });
 
   // ------------------------------------------------------------ Renvois entrants repliés au-delà de 8
   for (const ul of d.querySelectorAll('[data-repliable]')) {
@@ -633,6 +639,25 @@
     for (const a of sousIndex.querySelectorAll('a')) if (!puces.has(a.hash.slice(1))) puces.set(a.hash.slice(1), a);
     const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
     let marque = null;
+    // La hauteur de la rangée (une ou deux lignes selon la largeur) règle les en-têtes collants et les ancres.
+    const rangee = sousIndex.closest('nav');
+    const majRangee = () => root.style.setProperty('--rangee', `${rangee.offsetHeight}px`);
+    majRangee();
+    if ('ResizeObserver' in window) new ResizeObserver(majRangee).observe(rangee);
+    // Un clic sur une puce pose le groupe juste sous la rangée : la barre se range pour ne rien masquer.
+    sousIndex.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      const cible = a && d.getElementById(a.hash.slice(1));
+      if (!cible || e.metaKey || e.ctrlKey) return;
+      e.preventDefault();
+      if (barre) { barre.classList.add('est-cachee'); root.style.setProperty('--haut', '0px'); }
+      const y = Math.max(0, cible.getBoundingClientRect().top + scrollY - rangee.offsetHeight - 16);
+      dernierY = y;
+      scrollTo({ top: y, behavior: 'auto' });
+      history.replaceState(null, '', a.hash);
+      if (!cible.hasAttribute('tabindex')) cible.setAttribute('tabindex', '-1');
+      cible.focus({ preventScroll: true });
+    });
     const marquer = () => {
       const haut = parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0;
       const ligne = Math.max(haut + 120, innerHeight * 0.45);

@@ -168,11 +168,14 @@ function langue(alt) {
   return `<a class="bouton-langue" href="${href}" hreflang="${autre.code}" lang="${autre.code}" data-langue="${autre.code}"><span class="masque">${h(t.autreLangue)}</span><span aria-hidden="true">${autre.court}</span></a>`;
 }
 
+// La loupe vient avant la navigation : quand elle s'efface (champ de la couverture à l'écran),
+// sa place se fond dans l'espace libre laissé par la marque, sans trou entre les liens.
 function bar({ home = false, current = '', alt = null } = {}) {
   const cur = (k) => (current === k ? ' aria-current="page"' : '');
   return `<a class="evitement" href="#contenu">${t.allerContenu}</a>
 <header class="barre${home ? ' barre--jaquette' : ''}" data-barre>
   <a class="marque" href="${lien.accueil()}"${home ? ' aria-current="page"' : ''}>${h(t.marque)}</a>
+  <button class="bouton-recherche" type="button" data-search-open aria-haspopup="dialog" aria-controls="recherche" aria-label="${t.rechercherMot}">${loupe}<span class="bouton-recherche-mot">${t.rechercher}</span><kbd data-kbd>Ctrl${NB}K</kbd></button>
   <nav class="nav" aria-label="${t.navPrincipale}">
     <a href="${lien.accueil()}#categories"${cur('categories')}>${t.categories}</a>
     <a href="${lien.chronologie()}"${cur('chronologie')}>${t.chronologie}</a>
@@ -180,7 +183,6 @@ function bar({ home = false, current = '', alt = null } = {}) {
     <a href="${lien.accueil()}#livre">${t.livre}</a>
   </nav>
   <div class="barre-actions">
-    <button class="bouton-recherche" type="button" data-search-open aria-haspopup="dialog" aria-controls="recherche" aria-label="${t.rechercherMot}">${loupe}<span class="bouton-recherche-mot">${t.rechercher}</span><kbd data-kbd>Ctrl${NB}K</kbd></button>
     ${langue(alt)}
     <button class="bouton-theme" type="button" data-theme-toggle aria-label="${t.theme}">${lune}</button>
     <button class="bouton-menu" type="button" data-menu-open aria-haspopup="dialog" aria-controls="menu" aria-label="${t.menuAria}"><span class="bouton-menu-traits" aria-hidden="true"></span><span class="bouton-menu-mot">${t.menu}</span></button>
@@ -493,6 +495,8 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
   const avis = nonTraduite ? `<p class="avis-langue" role="note"><span class="avis-langue-cle">${t.nonTraduitCourt}</span> ${t.nonTraduit}</p>` : '';
+  // Le texte vient avant la marge dans le HTML : le clavier et les lecteurs d'écran lisent la définition
+  // d'abord ; dès 1 024 px, la grille place la marge à droite, et sur téléphone elle suit le texte.
   const body = `<nav class="reperes" aria-label="${t.motsVoisins}">
   ${def.alphaPrev ? `<a class="reperes-prec" href="${lien.def(def.alphaPrev.slug)}" data-turn="prev"${apercuAttr(def.alphaPrev)}><span class="masque">${t.motPrecedent} : </span><span class="reperes-nom">${breakable(def.alphaPrev.title)}</span><span class="reperes-court" aria-hidden="true">${t.precedent}</span></a>` : '<span></span>'}
   <a class="reperes-lettre" href="${lien.lettre(letter)}" aria-label="${t.lettreAria(letter, plural(letterCount, t.mot))}">${letter}</a>
@@ -505,6 +509,10 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
       <ul class="etiquettes">${tags}</ul>
     </div>
   </header>
+  <div class="mot-corps">
+    ${avis}
+    <div class="prose"${langAttr(def)}>${html}</div>
+  </div>
   <div class="mot-marge">
     <figure class="signet" style="--pos:${((def.n - 0.5) / total * 100).toFixed(3)}%">
       <div class="signet-tranche" role="img" aria-label="${t.placeLivre(num(def.n), num(total))}"><span class="signet-ruban"></span></div>
@@ -512,10 +520,6 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
     </figure>
     ${spec}
     ${related}
-  </div>
-  <div class="mot-corps">
-    ${avis}
-    <div class="prose"${langAttr(def)}>${html}</div>
   </div>
   ${chrono}
   ${citedHtml}
