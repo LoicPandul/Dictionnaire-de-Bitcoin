@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { Marked, Renderer } from 'marked';
 import katex from 'katex';
+import { unites, dates } from './typo.mjs';
 
 export const escapeHtml = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -66,9 +67,9 @@ const apostrophes = (html) =>
 // et les guillemets prennent l'espace fine insécable : jamais de deux-points en début de ligne.
 // Espaces insécables d'un texte brut (aussi pour un attribut, comme le texte alternatif d'un schéma).
 export const espaces = (t, francais) => {
-  // Un nombre ne se sépare pas de son unité (« 256 bits », « 80 octets »).
-  let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%').replace(/(\d) (bits?|octets?|bytes?|vbytes?|sats?|satoshis?|BTC)\b/g, '$1\u00a0$2');
-  if (francais) x = x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»');
+  let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%');
+  x = unites(x);
+  if (francais) x = dates(x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»'));
   return x;
 };
 const typo = (html, francais) =>

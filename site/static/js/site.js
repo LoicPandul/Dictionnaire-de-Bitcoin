@@ -287,7 +287,10 @@
   // (code, schéma), focus ou dernier clic dedans, elles le font défiler.
   const dansDefileur = (el) => {
     for (; el && el !== d.body && el.nodeType === 1; el = el.parentElement) {
-      if (el.scrollWidth > el.clientWidth + 1 && /auto|scroll/.test(getComputedStyle(el).overflowX)) return true;
+      if (el.scrollWidth > el.clientWidth + 1 && /auto|scroll/.test(getComputedStyle(el).overflowX)) {
+        const r = el.getBoundingClientRect();
+        return r.bottom > 0 && r.top < innerHeight;
+      }
     }
     return false;
   };

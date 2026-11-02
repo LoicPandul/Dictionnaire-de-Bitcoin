@@ -507,7 +507,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (max-width: 479px) { .apercu { min-height: calc(var(--t-titre) * 3.15 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); } }
 @media (max-width: 374px) { .apercu { min-height: calc(var(--t-titre) * 4.2 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); } }
 .apercu-nom { font: 800 var(--t-titre) / 1.05 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; text-wrap: balance; overflow-wrap: anywhere; }
-.apercu-nom a { display: inline-block; padding-block: 8px; }
+.apercu-nom a { display: inline-block; min-width: 44px; padding-block: 8px; }
 .apercu-cat { font-size: var(--t-note); font-weight: 600; color: var(--doux); }
 .apercu-desc { font-size: var(--t-lecture); line-height: 1.5; max-width: 40em; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 @media (max-width: 1023px), (pointer: coarse) {
@@ -587,7 +587,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 /* ---------------------------------------------------------------- Page de définition */
 .reperes { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 16px; padding: 12px var(--m) 0; font-size: var(--t-note); font-weight: 600; }
-.reperes a { min-width: 0; max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-stretch: 75%; font-weight: 750; }
+.reperes a { min-width: 44px; max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-stretch: 75%; font-weight: 750; }
 .reperes a wbr { display: none; }
 .reperes-prec, .reperes-suiv { display: block; line-height: 44px; min-height: 44px; }
 .reperes-prec { justify-self: start; }
@@ -668,6 +668,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .prose pre code { font-size: 14px; }
   .prose .figure-cadre { border-right: 4px solid transparent; }
   .prose .figure-cadre.a-suivre { border-right-color: var(--lien); }
+  /* Bord à bord : l'anneau de focus du bloc reste dans l'écran. */
+  .prose pre:focus-visible, .prose .figure-cadre:focus-visible { outline-offset: -3px; }
 }
 /* Une référence « BIP-0347 » ne se coupe pas à son trait d'union. */
 .insec { white-space: nowrap; }
@@ -716,7 +718,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 .cites-titre, .renvois-titre { font-size: var(--t-nom); font-weight: 700; line-height: 1.3; margin-bottom: 14px; }
 .cites-liste { display: flex; flex-wrap: wrap; gap: 6px; }
-.cites-liste a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 12px; background: var(--surface); font-size: var(--t-note); overflow-wrap: anywhere; }
+.cites-liste a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 8px 12px; background: var(--surface); font-size: var(--t-note); overflow-wrap: anywhere; }
 @media (hover: hover) { .cites-liste a:hover { background: var(--marque); color: var(--sur-marque); } }
 .cites-plus { margin-top: 8px; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: var(--lien); font-size: var(--t-note); font-weight: 600; text-decoration: underline; text-underline-offset: 0.2em; }
 .cites-liste.replie li:nth-child(n + 9) { display: none; }
@@ -892,7 +894,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 /* La partie trouvée passe à l'encre, le reste du nom reste Figue : lisible sur tous les fonds, sélection comprise. */
 .resultat mark { background: none; color: var(--texte); }
 .resultat[aria-selected='true'] a { background: var(--surface); box-shadow: inset 4px 0 0 var(--lien); }
-@media (hover: hover) { .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
+@media (hover: hover) { .resultats--page .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
 .suggestions-vides { padding: 8px 16px 16px; display: grid; gap: 12px; }
 .suggestions-vides p { font-size: var(--t-note); color: var(--doux); }
 .suggestions-vides .abc > * { min-height: 44px; font-size: 20px; }
@@ -916,7 +918,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 }
 @media (max-width: 359px) { .recherche-champ { gap: 8px; padding-left: 12px; } .recherche-champ input { font-size: 18px; } }
 .recherche .resultat[aria-selected='true'] a { background: color-mix(in srgb, var(--lien) 14%, var(--flottant)); }
-@media (hover: hover) { .recherche .resultat:not([aria-selected='true']) a:hover { background: color-mix(in srgb, var(--lien) 8%, var(--flottant)); } }
+/* Dans la feuille, la souris choisit la ligne qu'elle survole (pas de second fond de survol à côté du choix clavier). */
 
 .cherche-tete { padding: clamp(24px, 4vw, 56px) var(--m) 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
 @media (min-width: 1024px) {
@@ -1216,6 +1218,11 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .sous-index ul, .filtres { flex-wrap: wrap; overflow: visible; }
 }
 @media (min-width: 1280px) and (min-height: 501px) { .index-az ol { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); } }
+/* Années de la chronologie : des étiquettes de longueurs différentes (« Avant 2009 ») ; une seule ligne, chaque case à
+   la largeur de la sienne, qui défile quand elle ne tient pas : sa hauteur ne change pas et les ancres restent justes. */
+.index-annees { padding-inline: 0; padding-block: 0; }
+.index-annees ol { display: flex; overflow-x: auto; padding: 6px var(--m); scroll-padding-inline: var(--m); }
+.index-annees a { min-width: 56px; }
 
 /* Alphabets sous 360 px : six colonnes, chaque case garde ses 44 px de large. Après les règles de base. */
 @media (max-width: 359px) { .abc, .menu .abc, .blocs ol { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
