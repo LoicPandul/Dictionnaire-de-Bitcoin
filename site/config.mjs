@@ -26,22 +26,21 @@ export const site = {
 
 // Palette du site : la seule source des couleurs. Le build en écrit les jetons CSS (bloc « palette »
 // en tête de static/css/site.css), la couleur de la barre des navigateurs et le manifeste.
-// Charte officielle de l'édition 2027 (charte-officielle.md, palette et mode sombre) : Figue #AA226A, validée par Loïc, banian.
-// Paires de texte interdites par la charte : Écorce sur Rose, Figue sur Nuit, tout texte sur Galet.
+// Palette de l'édition 2027 (design/charte-2027.md, branche feat/couverture-2027) : Mandarine #FD550A,
+// Forêt #015D47 et Crête #E0F354 ; les neutres sont dérivés de ces trois couleurs.
 export const palette = {
-  blanc: '#FFFFFF', // fond du site, texte sur Figue
-  brume: '#FBF2F6', // surface secondaire (encadrés, code en ligne)
-  rose: '#F6D3E2', // fond léger d'un élément mis en avant, sélection de texte, correspondances
-  galet: '#D8D0D4', // champs et séparateurs de tableaux (jamais sous du texte)
-  encre: '#1E1A1D', // texte
-  ecorce: '#6B6368', // texte secondaire (5,82 : 1 sur Blanc)
-  figue: '#AA226A', // couleur de l'édition : liens, bouton, jaquette (6,67 : 1 avec Blanc)
-  figueSombre: '#691E47', // survol des liens et des boutons (11,19 : 1 avec Blanc)
-  canopee: '#4B2034', // feuillage le plus sombre : pied de page (13,50 : 1 avec Blanc)
-  figueVive: '#E12789', // figues ; grands textes seulement
-  figueClaire: '#F07DB8', // liens et bouton du mode sombre (7,30 : 1 sur Nuit)
-  nuit: '#2B0618', // fond du mode sombre
-  surfaceSombre: '#3B1026', // surfaces du mode sombre (Brume dessus 14,85 : 1)
-  ecorceSombre: '#A8979F', // texte secondaire du mode sombre (6,65 : 1 sur Nuit)
-  ombre: '#1E1A1D', // teinte des voiles des fenêtres
+  blanc: '#FFFFFF', // fond clair, texte sur les aplats sombres
+  brume: '#F6F9E4', // surface claire ; texte du mode sombre
+  galet: '#D2D9C9', // champs et séparateurs (jamais sous du texte)
+  encre: '#0B231D', // texte
+  ecorce: '#4F5F58', // texte secondaire
+  foret: '#015D47', // couleur de travail : liens, boutons, focus
+  foretSombre: '#013D2F', // survol des liens et des boutons
+  canopee: '#0B2E25', // aplat le plus sombre : pied de page, sol de la couverture, bouton « Chercher »
+  mandarine: '#FD550A', // couleur de l'édition : couverture, pastille choisie, barre des navigateurs
+  crete: '#E0F354', // accent clair : survols, sélection, soleil de la couverture ; liens et focus du mode sombre
+  nuit: '#031B15', // fond du mode sombre
+  surfaceSombre: '#0C3229', // surfaces du mode sombre
+  ecorceSombre: '#A2B4AB', // texte secondaire du mode sombre
+  ombre: '#0B231D', // teinte des voiles
 };

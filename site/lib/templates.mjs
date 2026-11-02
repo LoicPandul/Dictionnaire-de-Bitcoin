@@ -879,7 +879,7 @@ ${nouveautes}
       alt: autres().accueil(),
       jsonLd,
       assets,
-      themeColor: palette.figue,
+      themeColor: palette.mandarine,
       extraJs: assets.home,
     },
     body,
@@ -948,7 +948,7 @@ export function notFoundPage({ assets, letters, total }) {
   <div class="couverture-image" aria-hidden="true">${allee()}</div>
 </section>`;
   return page({
-    headOpts: { title: t.titre404, description: t.desc404, path: `${t.base}/404.html`, robots: 'noindex', assets, themeColor: palette.figue },
+    headOpts: { title: t.titre404, description: t.desc404, path: `${t.base}/404.html`, robots: 'noindex', assets, themeColor: palette.mandarine },
     body,
     bodyClass: 'p-perdu',
     picto,

@@ -1,6 +1,7 @@
-/* Dictionnaire de Bitcoin : « Le livre ouvert », charte de l'édition 2027 (Figue, banian, Archivo).
+/* Dictionnaire de Bitcoin : « Le livre ouvert », charte de l'édition 2027 (Mandarine, Forêt, Crête ; baobabs ; Archivo).
    Direction : site/design/direction.md. Charte : design/charte-2027.md (branche feat/couverture-2027).
-   Blanc domine ; la Figue ne sert qu'aux liens, au bouton principal et à la jaquette. Liens toujours soulignés. */
+   Blanc domine ; la Forêt sert aux liens et au bouton principal, la Mandarine à la couverture et à la pastille choisie.
+   Liens toujours soulignés. */
 
 /* ---------------------------------------------------------------- Polices */
 @font-face {
@@ -30,20 +31,19 @@
 :root {
   /* palette:début. Bloc réécrit par build.mjs depuis `palette` dans config.mjs : changer les couleurs là-bas. */
   --blanc: #FFFFFF;
-  --brume: #FBF2F6;
-  --rose: #F6D3E2;
-  --galet: #D8D0D4;
-  --encre: #1E1A1D;
-  --ecorce: #6B6368;
-  --figue: #AA226A;
-  --figue-sombre: #691E47;
-  --canopee: #4B2034;
-  --figue-vive: #E12789;
-  --figue-claire: #F07DB8;
-  --nuit: #2B0618;
-  --surface-sombre: #3B1026;
-  --ecorce-sombre: #A8979F;
-  --ombre: #1E1A1D;
+  --brume: #F6F9E4;
+  --galet: #D2D9C9;
+  --encre: #0B231D;
+  --ecorce: #4F5F58;
+  --foret: #015D47;
+  --foret-sombre: #013D2F;
+  --canopee: #0B2E25;
+  --mandarine: #FD550A;
+  --crete: #E0F354;
+  --nuit: #031B15;
+  --surface-sombre: #0C3229;
+  --ecorce-sombre: #A2B4AB;
+  --ombre: #0B231D;
   /* palette:fin */
 
   /* Rôles (mode clair). Le mode sombre ne change que ce bloc. */
@@ -51,22 +51,30 @@
   --surface: var(--brume);
   --texte: var(--encre);
   --doux: var(--ecorce);
-  --lien: var(--figue);
-  --lien-survol: var(--figue-sombre);
-  --bouton: var(--figue);
+  --lien: var(--foret);
+  --lien-survol: var(--foret-sombre);
+  --bouton: var(--foret);
   --sur-bouton: var(--blanc);
-  --bouton-survol: var(--figue-sombre);
-  --anneau: var(--figue);
-  --marque: var(--rose);
+  --bouton-survol: var(--foret-sombre);
+  --anneau: var(--foret);
+  --marque: var(--crete);
   --sur-marque: var(--encre);
   --trait: var(--galet);
   --flottant: var(--blanc);
-  --choisi: var(--figue);
-  --sur-choisi: var(--blanc);
+  --choisi: var(--mandarine);
+  --sur-choisi: var(--encre);
   --bande: var(--canopee);
   --sur-bande: var(--blanc);
-  --sur-bande-doux: var(--rose);
-  --jaquette: var(--figue);
+  --sur-bande-doux: var(--crete);
+  /* Couverture et 404 (essai B) : aplat, texte, sous-titre, soleil, arbres lointains, sol, bouton « Chercher ». */
+  --jaquette: var(--mandarine);
+  --sur-jaquette: var(--encre);
+  --sur-jaquette-doux: var(--encre);
+  --jaquette-soleil: var(--crete);
+  --jaquette-loin: var(--foret);
+  --jaquette-sol: var(--canopee);
+  --jaquette-bouton: var(--canopee);
+  --jaquette-bouton-survol: var(--foret);
   --voile: color-mix(in srgb, var(--ombre) 55%, transparent);
 
   --archivo: 'Archivo', 'Archivo repli', Arial, sans-serif;
@@ -107,18 +115,21 @@
     --surface: var(--surface-sombre);
     --texte: var(--brume);
     --doux: var(--ecorce-sombre);
-    --lien: var(--figue-claire);
-    --lien-survol: var(--rose);
-    --bouton: var(--figue-claire);
+    --lien: var(--crete);
+    --lien-survol: var(--blanc);
+    --bouton: var(--crete);
     --sur-bouton: var(--nuit);
-    --bouton-survol: var(--rose);
-    --anneau: var(--figue-claire);
-    --marque: var(--figue-sombre);
+    --bouton-survol: var(--blanc);
+    --anneau: var(--crete);
+    --marque: var(--foret);
     --sur-marque: var(--brume);
     --trait: var(--surface-sombre);
     --flottant: var(--surface-sombre);
-    --choisi: var(--figue-claire);
+    --choisi: var(--mandarine);
     --sur-choisi: var(--nuit);
+    --bande: var(--canopee);
+    --sur-bande: var(--blanc);
+    --sur-bande-doux: var(--crete);
     color-scheme: dark;
   }
 }
@@ -127,18 +138,21 @@
   --surface: var(--surface-sombre);
   --texte: var(--brume);
   --doux: var(--ecorce-sombre);
-  --lien: var(--figue-claire);
-  --lien-survol: var(--rose);
-  --bouton: var(--figue-claire);
+  --lien: var(--crete);
+  --lien-survol: var(--blanc);
+  --bouton: var(--crete);
   --sur-bouton: var(--nuit);
-  --bouton-survol: var(--rose);
-  --anneau: var(--figue-claire);
-  --marque: var(--figue-sombre);
+  --bouton-survol: var(--blanc);
+  --anneau: var(--crete);
+  --marque: var(--foret);
   --sur-marque: var(--brume);
   --trait: var(--surface-sombre);
   --flottant: var(--surface-sombre);
-  --choisi: var(--figue-claire);
+  --choisi: var(--mandarine);
   --sur-choisi: var(--nuit);
+  --bande: var(--canopee);
+  --sur-bande: var(--blanc);
+  --sur-bande-doux: var(--crete);
   color-scheme: dark;
 }
 
@@ -174,7 +188,7 @@ button, input, select { font: inherit; color: inherit; }
 button { cursor: pointer; }
 h1, h2, h3, p, ul, ol, figure, dl { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
-::selection { background: var(--rose); color: var(--encre); }
+::selection { background: var(--crete); color: var(--encre); }
 :focus-visible { outline: 3px solid var(--anneau); outline-offset: 2px; }
 input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
 
@@ -211,7 +225,7 @@ a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1
 p, li, figcaption { text-wrap: pretty; }
 .note { font-size: var(--t-note); color: var(--doux); line-height: 1.5; }
 
-/* Boutons : angles vifs, fond Figue, texte Blanc 16 px graisse 600, 12 × 20 px ; survol Figue sombre. */
+/* Boutons : angles vifs, fond Forêt, texte Blanc 16 px graisse 600, 12 × 20 px ; survol Forêt sombre. */
 .bouton {
   display: inline-flex;
   align-items: center;
@@ -226,13 +240,13 @@ p, li, figcaption { text-wrap: pretty; }
   transition: transform var(--d-press) var(--ease-out), background-color var(--d-hover) ease, color var(--d-hover) ease;
 }
 .bouton:active { transform: scale(0.97); }
-.bouton--clair { background: var(--blanc); color: var(--figue); }
+.bouton--clair { background: var(--blanc); color: var(--foret); }
 .bouton--trait { background: transparent; color: var(--blanc); box-shadow: inset 0 0 0 2px currentColor; }
 .bouton--doux { background: transparent; color: var(--texte); box-shadow: inset 0 0 0 2px var(--texte); }
 @media (hover: hover) {
   .bouton:hover { background: var(--bouton-survol); color: var(--sur-bouton); }
-  .bouton--clair:hover { background: var(--rose); color: var(--figue-sombre); }
-  .bouton--trait:hover { background: var(--blanc); color: var(--figue); }
+  .bouton--clair:hover { background: var(--crete); color: var(--foret-sombre); }
+  .bouton--trait:hover { background: var(--blanc); color: var(--foret); }
   .bouton--doux:hover { background: var(--marque); color: var(--sur-marque); }
 }
 
@@ -375,7 +389,7 @@ p, li, figcaption { text-wrap: pretty; }
 @media (hover: hover) { .abc a:not([aria-current]):hover { background: var(--marque); color: var(--sur-marque); } }
 
 /* ---------------------------------------------------------------- Accueil : la couverture
-   Un bandeau Figue repris de la première du broché 2027 : le titre en Archivo 62/900, le champ de
+   Un bandeau Mandarine repris de la première du broché 2027 : le titre en Archivo 62/900, le champ de
    recherche, et l'Allée des baobabs posée sur un sol Canopée qui court sur toute la largeur.
    Le titre se règle sur la largeur de sa colonne (unités de conteneur) : « DICTIONNAIRE » mesure
    5,35 em, il tient donc sur sa ligne à toutes les tailles. Téléphone : l'allée au-dessus du titre,
@@ -388,24 +402,24 @@ p, li, figcaption { text-wrap: pretty; }
   column-gap: var(--g);
   padding: 16px var(--m) var(--sol);
   background: var(--jaquette);
-  color: var(--blanc);
+  color: var(--sur-jaquette);
   overflow: clip;
 }
 /* Le sol, sur toute la largeur ; il recouvre de 2 px le bas de l'allée pour qu'aucun liseré ne passe. */
-.couverture::after { content: ''; position: absolute; inset: auto 0 0; height: calc(var(--sol) + 2px); background: var(--canopee); }
+.couverture::after { content: ''; position: absolute; inset: auto 0 0; height: calc(var(--sol) + 2px); background: var(--jaquette-sol); }
 .couverture-texte { container-type: inline-size; display: grid; grid-template-columns: minmax(0, 1fr); align-content: center; justify-items: start; min-width: 0; padding: 16px 0 32px; }
 .couverture-image { order: -1; display: grid; align-items: end; justify-items: center; min-width: 0; }
 .allee { display: block; width: 100%; height: auto; max-height: min(280px, 32svh); overflow: visible; }
-.a-soleil { fill: var(--rose); }
-.a-arbre, .a-sol { fill: var(--canopee); }
-.a-fond, .a-clair { fill: var(--figue-sombre); }
+.a-soleil { fill: var(--jaquette-soleil); }
+.a-arbre, .a-sol { fill: var(--jaquette-sol); }
+.a-fond, .a-clair { fill: var(--jaquette-loin); }
 .allee-arbre { transform-box: fill-box; transform-origin: 50% 100%; }
 .couv-titre { font: 900 min(18cqi, 132px) / 0.9 var(--archivo); font-stretch: 62%; letter-spacing: -0.005em; text-transform: uppercase; }
 .couv-titre .ligne { display: block; white-space: nowrap; overflow: clip; overflow-clip-margin: 0.1em; }
 .couv-titre .ligne > span { display: block; }
-.couv-sous { margin-top: 14px; color: var(--rose); font: 500 var(--t-enonce) / 1.3 var(--archivo); font-stretch: 75%; text-wrap: balance; }
-.couv-meta { margin-top: 16px; font-size: var(--t-note); line-height: 1.5; color: var(--blanc); }
-.couverture :focus-visible { outline-color: var(--blanc); }
+.couv-sous { margin-top: 14px; color: var(--sur-jaquette-doux); font: 500 var(--t-enonce) / 1.3 var(--archivo); font-stretch: 75%; text-wrap: balance; }
+.couv-meta { margin-top: 16px; font-size: var(--t-note); line-height: 1.5; color: var(--sur-jaquette); }
+.couverture :focus-visible { outline-color: var(--sur-jaquette); }
 /* Deux colonnes dès 720 px, et sur un téléphone en paysage. */
 .couverture::after { display: none; }
 @media (min-width: 720px), (orientation: landscape) and (min-width: 560px) and (max-height: 500px) {
@@ -440,17 +454,17 @@ p, li, figcaption { text-wrap: pretty; }
   appearance: none;
 }
 .couv-recherche input::placeholder { color: var(--ecorce); opacity: 1; }
-.couv-recherche input:focus-visible { outline: 3px solid var(--blanc); outline-offset: 2px; }
+.couv-recherche input:focus-visible { outline: 3px solid var(--sur-jaquette); outline-offset: 2px; }
 /* Le champ et son bouton forment un bloc : l'anneau l'entoure en entier au lieu de mordre sur le bouton. */
 @supports selector(:has(*)) {
-  .couv-recherche:has(input:focus-visible) { outline: 3px solid var(--blanc); outline-offset: 2px; }
+  .couv-recherche:has(input:focus-visible) { outline: 3px solid var(--sur-jaquette); outline-offset: 2px; }
   .couv-recherche input:focus-visible { outline: none; }
 }
-.couv-recherche button { flex: none; height: 56px; padding: 0 22px; border: 2px solid var(--encre); border-left: 0; background: var(--canopee); color: var(--blanc); font-weight: 600; font-size: var(--t-ui); transition: background-color var(--d-hover) ease, transform var(--d-press) var(--ease-out); }
+.couv-recherche button { flex: none; height: 56px; padding: 0 22px; border: 2px solid var(--encre); border-left: 0; background: var(--jaquette-bouton); color: var(--blanc); font-weight: 600; font-size: var(--t-ui); transition: background-color var(--d-hover) ease, transform var(--d-press) var(--ease-out); }
 .couv-recherche button:active { transform: scale(0.97); }
 /* L'anneau du bouton reste dans le bouton : il ne mord pas sur le champ voisin. */
 .couv-recherche button:focus-visible { outline-offset: -7px; }
-@media (hover: hover) { .couv-recherche button:hover { background: var(--nuit); } }
+@media (hover: hover) { .couv-recherche button:hover { background: var(--jaquette-bouton-survol); } }
 
 /* Le mot du jour : le titre à gauche, le mot et sa définition à droite. */
 .jour { display: grid; gap: 20px; padding: var(--section) var(--m) 0; }
@@ -660,7 +674,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .formule-ponct { font: 400 calc(1em / 1.21) / 1 var(--archivo); }
 .prose pre code { padding: 0; background: none; font-size: 15px; line-height: 1.55; overflow-wrap: normal; }
 /* Bloc de code (à toutes les largeurs) ou schéma (sur téléphone, seul cas où il défile) plus large que sa boîte :
-   un filet Figue au bord droit tant qu'il reste à voir (une bordure, que le contenu qui défile ne recouvre pas). */
+   un filet de la couleur des liens au bord droit tant qu'il reste à voir (une bordure, que le contenu qui défile ne recouvre pas). */
 .prose pre { border-right: 4px solid transparent; }
 .prose pre.a-suivre { border-right-color: var(--lien); }
 /* Téléphone : le bloc de code va jusqu'au bord, en 14 px. */
@@ -705,7 +719,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 .loupe { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 0; border: 0; background: var(--blanc); color: var(--encre); }
 /* Le schéma est dessiné sur blanc : la loupe garde les couleurs du thème clair, boutons et anneau compris. */
-.loupe { --fond: var(--blanc); --surface: var(--brume); --texte: var(--encre); --doux: var(--ecorce); --anneau: var(--figue); --lien: var(--figue); }
+.loupe { --fond: var(--blanc); --surface: var(--brume); --texte: var(--encre); --doux: var(--ecorce); --anneau: var(--foret); --lien: var(--foret); }
 .loupe::backdrop { background: var(--blanc); }
 .loupe-panneau { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; }
 .loupe-tete { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding: 8px var(--marge); min-height: 60px; }
@@ -894,7 +908,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .resultat-cat .picto { width: 15px; height: 15px; }
 .resultat-desc { grid-column: 1 / -1; font-size: var(--t-ui); line-height: 1.45; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .resultat-alt { grid-column: 1 / -1; font-size: var(--t-note); color: var(--doux); overflow-wrap: anywhere; }
-/* La partie trouvée passe à l'encre, le reste du nom reste Figue : lisible sur tous les fonds, sélection comprise. */
+/* La partie trouvée passe à l'encre, le reste du nom garde la couleur des liens : lisible sur tous les fonds, sélection comprise. */
 .resultat mark { background: none; color: var(--texte); }
 .resultat[aria-selected='true'] a { background: var(--surface); box-shadow: inset 4px 0 0 var(--lien); }
 @media (hover: hover) { .resultats--page .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
@@ -959,13 +973,13 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .perdu-suggestions { margin-top: 28px; width: 100%; }
 .perdu-sous { font-size: var(--t-nom); font-weight: 700; margin-bottom: 4px; }
 .perdu-liste { display: grid; max-width: 34rem; }
-.perdu-liste a { display: grid; gap: 2px; padding: 10px 0; color: var(--blanc); text-decoration: none; }
+.perdu-liste a { display: grid; gap: 2px; padding: 10px 0; color: var(--sur-jaquette); text-decoration: none; }
 .perdu-nom { font-size: var(--t-nom); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
-.perdu-desc { font-size: var(--t-ui); color: var(--blanc); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.perdu-desc { font-size: var(--t-ui); color: var(--sur-jaquette); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .perdu-liste a:hover .perdu-nom { text-decoration-thickness: 2px; } }
 .perdu-actions { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 24px; }
 .perdu-actions a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
-.perdu a { color: var(--blanc); }
+.perdu a { color: var(--sur-jaquette); }
 
 /* ---------------------------------------------------------------- Le dos (pied de page) : Canopée */
 .dos { background: var(--bande); color: var(--sur-bande); padding: clamp(64px, 7vw, 112px) var(--m) 36px; }
@@ -975,8 +989,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .alphabet .dos-l { display: block; font: 900 24px / 1 var(--archivo); font-stretch: 62%; }
 .alphabet .dos-n { display: none; }
 .alphabet .dos-vide { color: var(--sur-bande-doux); opacity: 0.4; }
-.alphabet ol.abc a:active { background: var(--figue); }
-@media (hover: hover) { .alphabet ol.abc a:hover { background: var(--figue); color: var(--blanc); } }
+.alphabet ol.abc a:active { background: var(--foret); }
+@media (hover: hover) { .alphabet ol.abc a:hover { background: var(--foret); color: var(--blanc); } }
 .dos--court { padding-top: 40px; }
 .dos-court { font-size: var(--t-nom); font-weight: 700; margin-bottom: 12px; }
 .dos-pied { display: grid; gap: 18px; margin-top: 48px; font-size: var(--t-ui); }
@@ -1133,7 +1147,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .spec-titre { font: 700 var(--t-nom) / 1.3 var(--archivo); font-stretch: 85%; min-width: 0; overflow-wrap: anywhere; }
 .spec-statuts { grid-column: 2; display: flex; flex-wrap: wrap; gap: 4px; }
 .statut { padding: 3px 8px; font-size: 13px; font-weight: 700; line-height: 1.3; background: var(--surface); color: var(--texte); }
-.statut--actif { background: var(--rose); color: var(--encre); }
+.statut--actif { background: var(--crete); color: var(--encre); }
 .statut--clos { color: var(--doux); }
 .spec-resume { max-width: 40em; font-size: var(--t-lecture); line-height: 1.55; text-wrap: pretty; }
 .spec-meta { display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: var(--t-note); line-height: 1.45; }

@@ -114,7 +114,7 @@
     boucles.forEach((v) => iov.observe(v));
   }
 
-  // ------------------------------------------------------------ Blocs de code plus larges que la colonne : un filet Figue au bord droit tant qu'il reste à voir
+  // ------------------------------------------------------------ Blocs de code plus larges que la colonne : un filet de la couleur des liens au bord droit tant qu'il reste à voir
   const larges = d.querySelectorAll('.prose pre, .prose .figure-cadre');
   // Un dépassement qui ne mord que sur la marge intérieure droite ne cache rien : pas de filet.
   const aSuivre = (el) => el.classList.toggle('a-suivre', el.scrollWidth - el.clientWidth - el.scrollLeft > Math.max(2, (parseFloat(getComputedStyle(el).paddingRight) || 0) - 1));
