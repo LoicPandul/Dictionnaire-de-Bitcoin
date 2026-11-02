@@ -732,9 +732,14 @@
   if (filtreStatut) {
     filtreStatut.hidden = false;
     const fiches = [...d.querySelectorAll('.spec[data-statut]')];
+    const pucesSpecs = [...d.querySelectorAll('.sous-index--specs a')];
+    const series = [...d.querySelectorAll('.serie-bloc')];
     filtreStatut.addEventListener('change', (e) => {
       const v = e.target.value;
       for (const f of fiches) f.hidden = !!v && !f.dataset.statut.split(' ').includes(v);
+      // La rangée des numéros et les séries suivent le filtre : aucune pastille ne mène à une fiche masquée.
+      for (const a of pucesSpecs) a.parentElement.hidden = !!d.getElementById(a.hash.slice(1))?.hidden;
+      for (const s of series) s.hidden = !s.querySelector('.spec:not([hidden])');
     });
   }
 
@@ -754,7 +759,7 @@
     const puces = new Map();
     for (const a of sousIndex.querySelectorAll('a')) if (!puces.has(a.hash.slice(1))) puces.set(a.hash.slice(1), a);
     // Chaque groupe (ou année de la chronologie) et l'ancre de sa pastille.
-    const titres = [...puces.keys()].map((id) => [d.getElementById(id)?.closest('.groupe, .annee'), id]).filter(([g]) => g);
+    const titres = [...puces.keys()].map((id) => [d.getElementById(id)?.closest('.groupe, .annee, .spec'), id]).filter(([g]) => g);
     let marque = null;
     const rangee = sousIndex.closest('nav');
     // Une rangée qui ne colle pas (grille des BIP sur grand écran) ne cache rien : elle ne compte pas.
@@ -770,7 +775,7 @@
     sousIndex.addEventListener('click', (e) => {
       const a = e.target.closest('a[href^="#"]');
       const cible = a && d.getElementById(a.hash.slice(1));
-      if (!cible || e.metaKey || e.ctrlKey) return;
+      if (!cible || !cible.getClientRects().length || e.metaKey || e.ctrlKey) return;
       e.preventDefault();
       if (barre) { barre.classList.add('est-cachee'); root.style.setProperty('--haut', '0px'); }
       // On mesure le groupe, qui ne colle pas (son en-tête collant peut être poussé en bas du groupe) ;
@@ -795,7 +800,10 @@
       // Le groupe lu est celui dont le haut a passé le bas de l'en-tête de groupe collant.
       const ligne = haut + hRangee() + 56;
       let actif = null;
-      for (const [g, id] of titres) { if (g.getBoundingClientRect().top <= ligne) actif = id; else break; }
+      for (const [g, id] of titres) {
+        if (!g.getClientRects().length) continue; // fiche masquée par un filtre
+        if (g.getBoundingClientRect().top <= ligne) actif = id; else break;
+      }
       // Une pastille qui mène déjà au groupe lu reste marquée (lettre touchée d'un groupe « D – G »).
       if (marque && actif && marque.hash.slice(1) === actif) return;
       const puce = actif ? puces.get(actif) : null;

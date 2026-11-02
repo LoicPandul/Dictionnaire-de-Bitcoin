@@ -423,9 +423,9 @@ function groupedList(defs, picto, { mode, showCategory = true, labelPrefix = '' 
 
 // Texte court en Markdown d'une ligne (chronologie, résumés de spécifications) : italique, code, liens.
 const enLigne = (s) =>
-  h(fr(s))
+  insec(h(fr(s))
     .replace(/`([^`]+)`/g, '<code>$1</code>')
-    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>'));
 
 // Date de la chronologie : « 2015-01-04 » -> « 4 janvier 2015 », « 1978-02 » -> « février 1978 ».
 export function dateLisible(d) {
@@ -995,7 +995,7 @@ export function chronologyPage(annees, { assets, letters, total, bySlug, jsonLd 
   <figure class="chrono-frise" aria-hidden="true"><ol>${annees.map((a) => `<li style="--h:${(a.events.length / max).toFixed(3)}"><a href="#a-${a.id}" tabindex="-1"><span class="frise-barre"></span><span class="frise-an">${a.avant ? '<2009' : `’${a.id.slice(2)}`}</span></a></li>`).join('')}</ol></figure>
 </header>
 <div class="liste-bloc">
-<nav class="index-az index-annees" aria-label="${t.annees}"><ol>${annees.map((a) => `<li><a href="#a-${a.id}">${h(nomAnnee(a))}</a></li>`).join('')}</ol></nav>
+<nav class="index-az index-annees" aria-label="${t.annees}"><ol style="--n:${annees.length + 1};--n2:${Math.ceil((annees.length + 1) / 2)}">${annees.map((a) => `<li><a href="#a-${a.id}">${h(nomAnnee(a))}</a></li>`).join('')}</ol></nav>
 <div class="chrono">
 ${annees.map((a) => `<section class="annee" id="a-${a.id}" aria-labelledby="t-${a.id}">
   <div class="annee-tete"><h2 class="annee-titre" id="t-${a.id}">${h(nomAnnee(a))}</h2><p class="groupe-n">${plural(a.events.length, t.date)}</p></div>

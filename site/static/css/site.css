@@ -146,7 +146,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 * { -webkit-tap-highlight-color: transparent; }
 [hidden] { display: none !important; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 120px; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 120px; scroll-padding-bottom: 16px; }
 /* Pages catégorie et lettre : au clavier, l'entrée atteinte reste sous la barre, la rangée et l'en-tête de groupe collants. */
 html:has(body.p-cat), html:has(body.p-lettre) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 64px); }
 html:has(body.p-chrono) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 16px); }
@@ -1064,7 +1064,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .chrono-frise a { position: relative; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding-bottom: 20px; color: var(--doux); text-decoration: none; }
 .frise-barre { display: block; height: calc(var(--h) * 100%); min-height: 4px; background: var(--lien); transform-origin: 50% 100%; }
 .frise-an { position: absolute; bottom: 0; left: 50%; translate: -50% 0; font: 700 12px / 1 var(--archivo); font-variant-numeric: tabular-nums; white-space: nowrap; }
-@media (max-width: 639px) { .frise-an { font-size: 0; } .chrono-frise li:nth-child(4n + 1) .frise-an { font-size: 11px; } .chrono-frise ol { height: 84px; gap: 2px; } }
+@media (max-width: 639px) { .chrono-frise li:first-child .frise-an { left: 0; translate: none; } .frise-an { font-size: 0; } .chrono-frise li:nth-child(4n + 1) .frise-an { font-size: 11px; } .chrono-frise ol { height: 84px; gap: 2px; } }
 @media (hover: hover) { .chrono-frise a:hover .frise-barre { background: var(--lien-survol); } .chrono-frise a:hover { color: var(--texte); } }
 .index-annees a { min-width: 56px; padding: 0 10px; font: 800 18px / 1 var(--archivo); font-stretch: 75%; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .chrono { padding: 0 var(--m); }
@@ -1084,7 +1084,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .evt-sources a { color: var(--doux); text-decoration-color: currentColor; overflow-wrap: anywhere; }
 @media (pointer: coarse), (max-width: 1023px) {
   .evt-liens, .evt-sources, .spec-liens { row-gap: 0; }
-  .evt-liens a, .evt-sources a, .spec-liens a { display: inline-flex; align-items: center; min-height: 44px; }
+  .evt-liens a, .evt-sources a, .spec-liens a, .spec-meta dd a, .mot-spec-liens a { display: inline-flex; align-items: center; column-gap: 0.3em; min-width: 44px; min-height: 44px; }
+  .mot-spec-liens { row-gap: 0; }
 }
 .evt-cle { font-weight: 700; color: var(--doux); }
 @media (min-width: 1024px) {
@@ -1233,11 +1234,13 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .index-annees ol { display: flex; overflow-x: auto; padding: 6px var(--m); scroll-padding-inline: var(--m); }
 .index-annees a { min-width: 56px; }
 @media (min-width: 640px) and (min-height: 501px) {
-  /* Ailleurs que sur téléphone, elle tient entière : cases égales, « Avant 2009 » sur deux cases, deux lignes au besoin. */
-  .index-annees ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(56px, 1fr)); overflow: visible; }
+  /* Ailleurs que sur téléphone, elle tient entière, en cases égales (« Avant 2009 » sur deux cases) : deux lignes
+     équilibrées, puis une seule dès que chaque case garde 48 px. --n et --n2 (cases, moitié) viennent du build. */
+  .index-annees ol { display: grid; grid-template-columns: repeat(var(--n2, 10), minmax(0, 1fr)); overflow: visible; }
   .index-annees li:first-child { grid-column: span 2; }
-  .index-annees a { min-width: 0; padding: 0 6px; }
+  .index-annees a { min-width: 0; padding: 0 4px; }
 }
+@media (min-width: 1120px) and (min-height: 501px) { .index-annees ol { grid-template-columns: repeat(var(--n, 20), minmax(0, 1fr)); } }
 
 /* Alphabets sous 360 px : six colonnes, chaque case garde ses 44 px de large. Après les règles de base. */
 @media (max-width: 359px) { .abc, .menu .abc, .blocs ol { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
@@ -1246,7 +1249,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
    Sur écran tactile, le survol n'existe pas : chaque cible répond à la pression comme elle répond à la souris. */
 .entree:active .entree-nom, .renvoi:active .renvoi-nom, .sommaire a:active .sommaire-nom, .tourner-lien:active .tourner-nom, .perdu-liste a:active .perdu-nom { color: var(--lien-survol); text-decoration-thickness: 2px; }
 .partie-cats a:active, .cat-partie a:active { background: var(--marque); }
-.resultat a:active, .tourner-lien:active, .bouton-theme:active, .bouton-menu:active, .bouton-langue:active, .menu-cats a:active, .menu-liens a:active, .serie:active { background: var(--surface); }
+.resultat a:active, .tourner-lien:active, .bouton-theme:active, .bouton-menu:active, .bouton-langue:active, .menu-cats a:active, .menu-liens a:active { background: var(--surface); }
+.serie:active { background: var(--marque); }
 .sous-index a:active, .rayon a:not([aria-current]):active, .cites-liste a:active, a.etiquette:active, .filtre input:not(:checked) + span:active, .blocs a:not([aria-current='true']):active, .cats-mini a:active, .citer:active, .bouton--doux:active { background: var(--marque); color: var(--sur-marque); }
 .menu-partie summary:active { color: var(--lien); }
 .reperes-lettre:active { background: var(--lien-survol); color: var(--fond); }

@@ -53,6 +53,7 @@ export function loadChronology(repoRoot, lang = 'fr') {
 // (templates/editions.yaml : BOLT et bLIP ensemble) ; une série inconnue forme son propre groupe.
 // Les séries viennent de specifications/fr/ (docs/structure.md) ; specifications/en/, s'il existe,
 // donne le résumé anglais de chaque document (même fichier, même id), sinon le champ summary_en.
+const STATUT_EN = { Actif: 'Active', 'Retiré': 'Closed' };
 export function loadSpecifications(repoRoot) {
   const racine = path.join(repoRoot, 'specifications');
   const dir = fs.existsSync(path.join(racine, 'fr')) ? path.join(racine, 'fr') : racine;
@@ -68,7 +69,8 @@ export function loadSpecifications(repoRoot) {
       id: e.id,
       number: e.number ?? e.sort_key ?? null,
       title: e.title || '',
-      status: Array.isArray(e.status) ? e.status : e.status ? [e.status] : [],
+      // Les BOLT n'ont pas de statut et le YAML en écrit un en français : le site garde le vocabulaire anglais des BIP.
+      status: (Array.isArray(e.status) ? e.status : e.status ? [e.status] : []).map((x) => STATUT_EN[x] || x),
       type: e.type || null,
       layer: e.layer || null,
       authors: e.authors || [],
