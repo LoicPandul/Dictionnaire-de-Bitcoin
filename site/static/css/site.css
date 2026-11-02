@@ -257,6 +257,8 @@ p, li, figcaption { text-wrap: pretty; }
   transition: transform var(--d-ui) var(--ease-out);
 }
 .barre.est-cachee { transform: translateY(-100%); }
+/* Un filet sous la barre dès que la page a défilé : le texte ne passe plus dessous sans séparation. */
+.barre.est-defilee { box-shadow: 0 1px 0 var(--trait); }
 .marque { display: inline-flex; align-items: center; min-height: 44px; margin-right: auto; color: var(--texte); font: 800 22px/1 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
 @media (hover: hover) { .marque:hover { color: var(--texte); text-decoration: underline; text-decoration-thickness: 2px; } }
 .nav { display: flex; gap: 4px; }
@@ -448,7 +450,6 @@ p, li, figcaption { text-wrap: pretty; }
 .jour-mot { font: 800 clamp(2.125rem, 1.5rem + 2.6vw, 3.75rem) / 0.98 var(--archivo); font-stretch: 75%; letter-spacing: -0.02em; overflow-wrap: anywhere; text-wrap: balance; max-width: 100%; }
 .jour-mot a { display: inline-block; min-width: 44px; padding-block: 6px; color: var(--texte); text-decoration-color: var(--lien); text-decoration-thickness: 3px; text-underline-offset: 0.12em; }
 @media (hover: hover) { .jour-mot a:hover { color: var(--lien-survol); } }
-.jour-mot .roule { display: inline-block; }
 .jour-desc { font-size: var(--t-enonce); line-height: 1.4; max-width: 36em; }
 .jour-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 @media (max-width: 639px) { .jour-actions { justify-self: stretch; } .jour-actions > * { flex: 1 1 auto; } }
@@ -496,7 +497,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   /* Hauteur réservée pour un nom sur deux lignes, la catégorie et trois lignes de définition : la page ne saute pas au glissé. */
   min-height: calc(var(--t-titre) * 2.1 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); }
 /* Téléphone : les noms longs (OP_CHECKLOCKTIMEVERIFY…) prennent jusqu'à quatre lignes. */
-@media (max-width: 479px) { .apercu { min-height: calc(var(--t-titre) * 4.2 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); } }
+@media (max-width: 479px) { .apercu { min-height: calc(var(--t-titre) * 3.15 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); } }
+@media (max-width: 374px) { .apercu { min-height: calc(var(--t-titre) * 4.2 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); } }
 .apercu-nom { font: 800 var(--t-titre) / 1.05 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; text-wrap: balance; overflow-wrap: anywhere; }
 .apercu-nom a { display: inline-block; padding-block: 8px; }
 .apercu-cat { font-size: var(--t-note); font-weight: 600; color: var(--doux); }
@@ -717,7 +719,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .renvoi-nom { justify-self: start; color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .renvoi-cat { display: inline-flex; align-items: center; gap: 6px; font-size: var(--t-note); color: var(--doux); }
 .renvoi-cat .picto { width: 15px; height: 15px; }
-.renvoi-desc { max-width: 40em; color: var(--texte); font-size: var(--t-ui); line-height: 1.45; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.renvoi-desc { max-width: 40em; color: var(--texte); font-size: var(--t-ui); line-height: 1.45; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .renvoi:hover .renvoi-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 
 @media (min-width: 1024px) {
@@ -842,7 +844,9 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .entree-nom { justify-self: start; color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .entree-nom .picto { display: inline-block; width: 18px; height: 18px; margin-right: 8px; vertical-align: -0.14em; color: var(--texte); }
 .entree-sujet { font-size: var(--t-note); font-weight: 600; font-stretch: 87.5%; letter-spacing: 0.01em; color: var(--doux); }
-.entree-desc { font-size: var(--t-ui); line-height: 1.45; color: var(--texte); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+/* Les résumés sont coupés au mot au build (120 caractères) ; la limite de lignes ne sert que de filet, avec deux lignes de marge
+   pour les colonnes étroites (320 px, deux colonnes en paysage) : elle ne coupe jamais au milieu d'un mot. */
+.entree-desc { font-size: var(--t-ui); line-height: 1.45; color: var(--texte); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .entree:hover .entree-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 .p-lettre .liste { padding-bottom: 56px; }
 .p-cat .liste { padding-bottom: 0; }
@@ -871,7 +875,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .resultat-nom { color: var(--lien); font-size: var(--t-nom); line-height: 1.25; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
 .resultat-cat { display: inline-flex; align-items: center; gap: 6px; font-size: var(--t-note); color: var(--doux); justify-self: end; }
 .resultat-cat .picto { width: 15px; height: 15px; }
-.resultat-desc { grid-column: 1 / -1; font-size: var(--t-ui); line-height: 1.45; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.resultat-desc { grid-column: 1 / -1; font-size: var(--t-ui); line-height: 1.45; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .resultat-alt { grid-column: 1 / -1; font-size: var(--t-note); color: var(--doux); overflow-wrap: anywhere; }
 /* La partie trouvée passe à l'encre, le reste du nom reste Figue : lisible sur tous les fonds, sélection comprise. */
 .resultat mark { background: none; color: var(--texte); }
@@ -940,7 +944,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .perdu-liste { display: grid; max-width: 34rem; }
 .perdu-liste a { display: grid; gap: 2px; padding: 10px 0; color: var(--blanc); text-decoration: none; }
 .perdu-nom { font-size: var(--t-nom); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
-.perdu-desc { font-size: var(--t-ui); color: var(--blanc); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.perdu-desc { font-size: var(--t-ui); color: var(--blanc); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 @media (hover: hover) { .perdu-liste a:hover .perdu-nom { text-decoration-thickness: 2px; } }
 .perdu-actions { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 24px; }
 .perdu-actions a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }

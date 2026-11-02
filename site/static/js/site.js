@@ -58,6 +58,7 @@
     if (cacher) barre.classList.add('est-cachee');
     else if (y < dernierY - 4 || y <= 200) barre.classList.remove('est-cachee');
     root.style.setProperty('--haut', barre.classList.contains('est-cachee') ? '0px' : `${barre.offsetHeight}px`);
+    barre.classList.toggle('est-defilee', y > 0);
     dernierY = y;
   };
   if (barre) {
@@ -682,6 +683,14 @@
     });
   }
 
+  // La hauteur de la rangée collante (une ou deux lignes selon la largeur) règle les en-têtes collants et les ancres,
+  // sur toute page de liste : sous-groupes d'une lettre, alphabet d'une catégorie ou d'une lettre sans sous-groupes.
+  const rangeeCollante = d.querySelector('.sous-index') || d.querySelector('.p-lettre .index-az, .p-cat .index-az');
+  if (rangeeCollante) {
+    const majRangee = () => root.style.setProperty('--rangee', `${getComputedStyle(rangeeCollante).position === 'sticky' ? rangeeCollante.offsetHeight : 0}px`);
+    majRangee();
+    if ('ResizeObserver' in window) new ResizeObserver(majRangee).observe(rangeeCollante);
+  }
   // ------------------------------------------------------------ Rangée collante d'une liste (sous-groupes d'une lettre, alphabet d'une catégorie) :
   // le groupe lu est marqué, et la rangée le garde en vue.
   const sousIndex = d.querySelector('.liste-bloc .sous-index ul, .liste-bloc .index-az ol');
@@ -691,11 +700,7 @@
     for (const a of sousIndex.querySelectorAll('a')) if (!puces.has(a.hash.slice(1))) puces.set(a.hash.slice(1), a);
     const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
     let marque = null;
-    // La hauteur de la rangée (une ou deux lignes selon la largeur) règle les en-têtes collants et les ancres.
     const rangee = sousIndex.closest('nav');
-    const majRangee = () => root.style.setProperty('--rangee', `${rangee.offsetHeight}px`);
-    majRangee();
-    if ('ResizeObserver' in window) new ResizeObserver(majRangee).observe(rangee);
     const poser = (puce) => {
       marque?.removeAttribute('aria-current');
       marque = puce;

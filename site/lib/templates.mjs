@@ -840,7 +840,7 @@ ${nouveautes}
       <h2 class="titre" id="livre-titre">${t.livreTitre}</h2>
       <p class="enonce">${t.livreEnonce}</p>
       <p class="livre-actions"><a class="bouton" href="${site.bitcoinBazar}" rel="noopener">${t.commander}</a> <a class="lien" href="${site.amazon}" rel="noopener">${t.ouAmazon}</a></p>
-      <p>${t.pdfReste}<a class="lien" href="${site.pdf}" download>${t.telechargerPdf}</a> (2,7${NB}Mo).</p>
+      <p>${t.pdfReste}<a class="lien" href="${site.pdf}" download>${t.telechargerPdf}</a> (${t.taillePdf}).</p>
       <p class="note">${t.isbn(site.isbnPaperback, site.isbnHardcover)}</p>
     </div>
   </div>

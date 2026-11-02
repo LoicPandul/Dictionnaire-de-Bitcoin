@@ -39,16 +39,11 @@
     const desc = sectionJour.querySelector('[data-jour-desc]');
     desc.textContent = t.desc.replace(/'/g, '’');
     if (t.lang) desc.lang = t.lang; else desc.removeAttribute('lang');
-    if (!anime || reduit.matches) { nomJour.innerHTML = coupe(t.title); return; }
-    // Les lettres du nouveau mot roulent en place, l'une après l'autre.
-    nomJour.innerHTML = [...affiche(t.title)].map((c, i) => (c === ' ' ? ' ' : `<span class="roule" style="--r:${i}">${esc(c)}</span>`)).join('');
-    const jeton = ++tirage;
-    const anims = [...nomJour.querySelectorAll('.roule')].map((s, i) =>
-      s.animate([{ transform: 'translateY(0.9em)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 420, delay: Math.min(i * 22, 400), easing: 'cubic-bezier(0.16, 1, 0.3, 1)', fill: 'backwards' }));
-    // L'animation finie, le mot redevient du texte : le soulignement du lien court de nouveau sous tout le mot.
-    Promise.all(anims.map((a) => a.finished)).then(() => { if (jeton === tirage) nomJour.innerHTML = coupe(t.title); }, () => {});
+    nomJour.innerHTML = coupe(t.title);
+    if (!anime || reduit.matches) return;
+    // Le nouveau mot monte en place, d'un bloc : il garde son soulignement et ses coupures de ligne.
+    nomJour.closest('a').animate([{ transform: 'translateY(0.4em)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 420, easing: 'cubic-bezier(0.16, 1, 0.3, 1)' });
   }
-  let tirage = 0;
   sectionJour?.querySelector('[data-jour-autre]')?.addEventListener('click', () => {
     (termes ? Promise.resolve() : charger()).then(() => {
       const choix = ecrits();
@@ -77,6 +72,7 @@
     apercu.lien.href = `${B}/${t.slug}/`;
     apercu.cat.textContent = t.cat[0];
     couperAuMot(apercu.desc, t.desc.replace(/'/g, '’').replace(/\s*\.\.\.$/, '…'));
+    if (t.lang) apercu.desc.lang = t.lang; else apercu.desc.removeAttribute('lang');
     const l = lettreDe(i);
     blocs.forEach((b) => b.setAttribute('aria-current', String(b.dataset.lettre === l.l)));
     bande.setAttribute('aria-valuenow', String(i + 1));
@@ -87,7 +83,7 @@
   let lettreDuMot = [];
   const lettreDe = (i) => lettreDuMot[i] || lettres[0];
   // Coupe au mot un texte limité en lignes par le CSS (line-clamp) : jamais au milieu d'un mot ni sur un mot-outil.
-  const OUTILS = /\s(\S{1,3}|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|the|and|with|from|that|which|into|their)$/i;
+  const OUTILS = /\s(\S{1,3}|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|the|and|with|from|that|which|into|their|despite|while|whose|also)$/i;
   function couperAuMot(el, texte) {
     el.textContent = texte;
     if (el.scrollHeight <= el.clientHeight + 1) return;
@@ -100,8 +96,13 @@
       if (el.scrollHeight <= el.clientHeight + 1) bas = m; else haut = m - 1;
     }
     let debut = mots.slice(0, bas).join(' ');
-    while (OUTILS.test(debut) && debut.lastIndexOf(' ') > debut.length / 2) debut = debut.slice(0, debut.lastIndexOf(' '));
-    el.textContent = `${debut.replace(/[\s,;:\u202f–-]+$/, '')}…`;
+    // Une phrase entière qui tient finit sur son point, sans points de suspension (comme les résumés du build).
+    const fin = Math.max(...[...debut.matchAll(/[.!?](?=\s|$)/g)].map((m) => m.index));
+    if (fin > debut.length * 0.3) { el.textContent = debut.slice(0, fin + 1); return; }
+    const nettoyer = (x) => x.replace(/[\s,;:\u202f–-]+$/, '');
+    debut = nettoyer(debut);
+    while (OUTILS.test(debut) && debut.lastIndexOf(' ') > debut.length / 2) debut = nettoyer(debut.slice(0, debut.lastIndexOf(' ')));
+    el.textContent = `${debut}…`;
   }
   const hauteur = (i, H) => Math.max(6, Math.round((Math.sqrt(longueurs[i]) / Math.sqrt(maxLen)) * H));
   let maxLen = 1;
@@ -291,8 +292,8 @@
       else if (mode === 'bureau' && arriere) i = l.ids[pos - 1] ?? lettres[k - 1]?.ids.at(-1) ?? i;
       else if (avant) i++;
       else if (arriere) i--;
-      else if (e.key === 'PageDown') i = (lettres[k + 1] || l).debut;
-      else if (e.key === 'PageUp') i = (lettres[k - 1] || l).debut;
+      else if (e.key === 'PageDown') i = lettres[k + 1]?.debut ?? i;
+      else if (e.key === 'PageUp') i = lettres[k - 1]?.debut ?? i;
       else if (e.key === 'Home') i = 0;
       else if (e.key === 'End') i = termes.length - 1;
       else if (e.key === 'Enter') { location.href = `${B}/${termes[courant].slug}/`; return; }
