@@ -72,7 +72,7 @@ export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0
 const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
 // Les groupes de chiffres (« 100 000 000 ») ne se séparent jamais en fin de ligne : espace fine insécable.
-export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1').replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%');
+export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1').replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%').replace(/(\d) (bits?|octets?|bytes?|vbytes?|sats?|satoshis?|BTC)\b/g, '$1\u00a0$2');
 const hd = (t) => h(fr(t));
 // Texte courant (jamais dans un attribut) : une référence « BIP-0347 » ne se coupe pas à son trait d'union.
 export const insec = (html) => html.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');

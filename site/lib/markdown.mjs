@@ -66,7 +66,8 @@ const apostrophes = (html) =>
 // et les guillemets prennent l'espace fine insécable : jamais de deux-points en début de ligne.
 // Espaces insécables d'un texte brut (aussi pour un attribut, comme le texte alternatif d'un schéma).
 export const espaces = (t, francais) => {
-  let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%');
+  // Un nombre ne se sépare pas de son unité (« 256 bits », « 80 octets »).
+  let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%').replace(/(\d) (bits?|octets?|bytes?|vbytes?|sats?|satoshis?|BTC)\b/g, '$1\u00a0$2');
   if (francais) x = x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»');
   return x;
 };

@@ -298,7 +298,8 @@
       else if (avant) i++;
       else if (arriere) i--;
       else if (e.key === 'PageDown') i = lettres[k + 1]?.debut ?? i;
-      else if (e.key === 'PageUp') i = lettres[k - 1]?.debut ?? i;
+      // Page↑ revient d'abord au début de la lettre en cours, puis à celui de la lettre d'avant.
+      else if (e.key === 'PageUp') i = i !== l.debut ? l.debut : lettres[k - 1]?.debut ?? i;
       else if (e.key === 'Home') i = 0;
       else if (e.key === 'End') i = termes.length - 1;
       else if (e.key === 'Enter') { location.href = `${B}/${termes[courant].slug}/`; return; }

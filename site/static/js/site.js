@@ -64,10 +64,14 @@
   const majBarre = () => {
     enAttente = false;
     const y = scrollY;
-    if (performance.now() < gelFocus) { barre.classList.toggle('est-defilee', y > 0); dernierY = y; return; }
-    const cacher = y > 200 && y > dernierY + 4 && !d.querySelector('dialog[open]');
-    if (cacher) barre.classList.add('est-cachee');
-    else if (y < dernierY - 4 || y <= 200) barre.classList.remove('est-cachee');
+    if (performance.now() < gelFocus) {
+      // En haut de page, la barre est toujours là.
+      if (y <= 200) barre.classList.remove('est-cachee');
+    } else {
+      const cacher = y > 200 && y > dernierY + 4 && !d.querySelector('dialog[open]');
+      if (cacher) barre.classList.add('est-cachee');
+      else if (y < dernierY - 4 || y <= 200) barre.classList.remove('est-cachee');
+    }
     root.style.setProperty('--haut', barre.classList.contains('est-cachee') ? '0px' : `${barre.offsetHeight}px`);
     barre.classList.toggle('est-defilee', y > 0);
     dernierY = y;
@@ -146,7 +150,13 @@
   if (citer) {
     citer.hidden = false;
     const confirmer = (ok) => {
-      if (ok) { citer.textContent = tx('copiee'); setTimeout(() => (citer.textContent = tx('citer')), 2400); return; }
+      if (ok) {
+        if (citer.nextElementSibling?.matches('.citer-secours')) citer.nextElementSibling.remove();
+        citer.style.minWidth = `${citer.offsetWidth}px`;
+        citer.textContent = tx('copiee');
+        setTimeout(() => { citer.textContent = tx('citer'); citer.style.minWidth = ''; }, 2400);
+        return;
+      }
       // Copie refusée : la citation s'affiche sous le bouton, sélectionnée, à copier à la main (le bouton garde sa taille).
       let s = citer.nextElementSibling?.matches('.citer-secours') ? citer.nextElementSibling : null;
       if (!s) { s = d.createElement('span'); s.className = 'citer-secours'; citer.after(s); }
@@ -273,10 +283,20 @@
     root.classList.remove('vt-tour');
     d.querySelectorAll('[style*="view-transition-name"]').forEach((el) => el.style.removeProperty('view-transition-name'));
   });
-  // Flèches du clavier : mot précédent ou suivant dans l'ordre du livre.
+  // Flèches du clavier : mot précédent ou suivant dans l'ordre du livre ; dans un bloc qui défile en largeur
+  // (code, schéma), focus ou dernier clic dedans, elles le font défiler.
+  const dansDefileur = (el) => {
+    for (; el && el !== d.body && el.nodeType === 1; el = el.parentElement) {
+      if (el.scrollWidth > el.clientWidth + 1 && /auto|scroll/.test(getComputedStyle(el).overflowX)) return true;
+    }
+    return false;
+  };
+  let dernierAppui = null;
+  d.addEventListener('pointerdown', (e) => { dernierAppui = e.target; }, { passive: true });
   d.addEventListener('keydown', (e) => {
     if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
     if (e.target.closest('input, textarea, select, [contenteditable], [role="slider"], dialog')) return;
+    if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && (dansDefileur(e.target) || (e.target === d.body && dansDefileur(dernierAppui)))) return;
     const sens = e.key === 'ArrowLeft' ? 'prev' : e.key === 'ArrowRight' ? 'next' : null;
     if (!sens) return;
     const a = d.querySelector(`.reperes a[data-turn="${sens}"]`);
@@ -408,6 +428,7 @@
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
   <a href="${B}/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${insec(esc(affiche(t.alt)))}</span>` : ''}${t.desc ? `<span class="resultat-desc"${t.lang ? ` lang="${t.lang}"` : ''}>${insec(esc(resume(t.desc)))}</span>` : ''}</a></li>`;
+  const point = (s) => (/[.!?…]$/.test(s) ? '' : '.');
   const pluriel = (n, [un, plusieurs] = ['', '']) => `${n.toLocaleString(loc)} ${n > 1 ? plusieurs : un}`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
@@ -438,7 +459,7 @@
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="${B}/${T.lettre || 'lettre'}/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
     const cats = avecCategories && index?.categories ? `<p>${tx('parCategorie')}</p><div class="cats-mini">${[...index.categories].sort((a, b) => a[0].localeCompare(b[0], d.documentElement.lang)).map(([label, slug, chemin]) => `<a href="${chemin}">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
-    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>${tx('derniers')} ${derniers.map((m) => `<a class="lien" href="${B}/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>${tx('motDuJour')} <a class="lien" href="${B}/${n.slug}/">${esc(affiche(n.title))}</a>. ${tx('auHasard')} <a class="lien" href="${B}/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>${tx('parLettre')}</p><div class="abc">${lettres}</div>${cats}</li>`;
+    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>${tx('derniers')} ${derniers.map((m) => `<a class="lien" href="${B}/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}${point(derniers.at(-1)[1])}</p>` : ''}${n ? `<p>${tx('motDuJour')} <a class="lien" href="${B}/${n.slug}/">${esc(affiche(n.title))}</a>${point(n.title)} ${tx('auHasard')} <a class="lien" href="${B}/${h.slug}/">${esc(affiche(h.title))}</a>${point(h.title)}</p>` : ''}<p>${tx('parLettre')}</p><div class="abc">${lettres}</div>${cats}</li>`;
   }
 
   function vide() {
@@ -683,7 +704,7 @@
     if (q0.length > 1 && q0 !== '404') champPerdu.value = q0;
     const montrer404 = () => {
       const q = champPerdu.value;
-      if (q.trim().length < 2) { sugg.hidden = true; return; }
+      if (q.trim().length < 2) { sugg.hidden = true; liste404.innerHTML = ''; return; }
       let { res } = chercher(q, { limite: 5 });
       if (res.length < 3) {
         const vus = new Set(res.map((r) => r.t.slug));
@@ -695,9 +716,11 @@
     };
     charger().then(montrer404);
     champPerdu.addEventListener('input', () => index && montrer404());
+    // « Chercher » mène à la première suggestion affichée ; sans suggestion, à la page de recherche ; champ vide : rien.
     form.addEventListener('submit', (e) => {
-      const a = liste404.querySelector('a');
+      const a = !sugg.hidden && liste404.querySelector('a');
       if (a) { e.preventDefault(); a.click(); }
+      else if (!champPerdu.value.trim()) e.preventDefault();
     });
   }
 

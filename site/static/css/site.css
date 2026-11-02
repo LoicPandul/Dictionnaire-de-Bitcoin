@@ -447,6 +447,8 @@ p, li, figcaption { text-wrap: pretty; }
 }
 .couv-recherche button { flex: none; height: 56px; padding: 0 22px; border: 2px solid var(--encre); border-left: 0; background: var(--canopee); color: var(--blanc); font-weight: 600; font-size: var(--t-ui); transition: background-color var(--d-hover) ease, transform var(--d-press) var(--ease-out); }
 .couv-recherche button:active { transform: scale(0.97); }
+/* L'anneau du bouton reste dans le bouton : il ne mord pas sur le champ voisin. */
+.couv-recherche button:focus-visible { outline-offset: -7px; }
 @media (hover: hover) { .couv-recherche button:hover { background: var(--nuit); } }
 
 /* Le mot du jour : le titre à gauche, le mot et sa définition à droite. */

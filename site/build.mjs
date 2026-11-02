@@ -240,7 +240,7 @@ for (const code of Object.keys(LANGUES)) {
       // Le résumé avec la typographie des pages (espaces fines insécables, en français la ponctuation haute) :
       // le JS l'affiche tel quel dans la tranche, la recherche et « Un autre mot ».
       const resume = d.resume || '';
-      const ligne = [d.title, d.slug, catPos.get(d.category), autresNoms(d), d.lang === 'fr' ? fr(resume) : resume.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f')];
+      const ligne = [d.title, d.slug, catPos.get(d.category), autresNoms(d), d.lang === 'fr' ? fr(resume) : resume.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) (bits?|octets?|bytes?|vbytes?|sats?|satoshis?|BTC)\b/g, '$1\u00a0$2')];
       if (d.lang !== code) ligne.push(d.lang);
       return ligne;
     }),
