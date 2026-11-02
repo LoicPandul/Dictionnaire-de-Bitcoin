@@ -93,7 +93,7 @@
   }
 
   // ------------------------------------------------------------ Blocs de code plus larges que la colonne : un filet Figue au bord droit tant qu'il reste à voir
-  const larges = d.querySelectorAll('.prose pre');
+  const larges = d.querySelectorAll('.prose pre, .prose .figure-cadre');
   const aSuivre = (el) => el.classList.toggle('a-suivre', el.scrollWidth - el.clientWidth - el.scrollLeft > 2);
   larges.forEach((el) => { aSuivre(el); el.addEventListener('scroll', () => aSuivre(el), { passive: true }); });
   if (larges.length) addEventListener('resize', () => larges.forEach(aSuivre), { passive: true });
@@ -372,7 +372,7 @@
   const surligner = (title, at, len) => { title = affiche(title); return at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`; };
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
-  <a href="${B}/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(t.alt.replace(/'/g, '’'))}</span>` : ''}${t.desc ? `<span class="resultat-desc"${t.lang ? ` lang="${t.lang}"` : ''}>${esc(resume(t.desc))}</span>` : ''}</a></li>`;
+  <a href="${B}/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(affiche(t.alt))}</span>` : ''}${t.desc ? `<span class="resultat-desc"${t.lang ? ` lang="${t.lang}"` : ''}>${esc(resume(t.desc))}</span>` : ''}</a></li>`;
   const pluriel = (n, [un, plusieurs] = ['', '']) => `${n.toLocaleString(loc)} ${n > 1 ? plusieurs : un}`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
@@ -383,6 +383,7 @@
   const etat = dialog?.querySelector('.recherche-etat');
   let actif = -1;
   let declencheur = null;
+  let retour = null;
 
   function selectionner(i) {
     const items = liste.querySelectorAll('.resultat');
@@ -394,7 +395,10 @@
   }
 
   function suggestions(avecCategories) {
-    const n = index ? index[jour() % index.length] : null;
+    // Le même mot du jour que l'accueil : parmi les entrées écrites dans la langue de la page.
+    const ecrits = index ? index.filter((t) => !t.lang) : [];
+    const pool = ecrits.length ? ecrits : index || [];
+    const n = pool.length ? pool[jour() % pool.length] : null;
     const h = index ? index[Math.floor(Math.random() * index.length)] : null;
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="${B}/${T.lettre || 'lettre'}/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
@@ -428,6 +432,7 @@
   function ouvrir(valeur = '', depuis = null) {
     if (!dialog || dialog.open) return;
     declencheur = depuis;
+    retour = d.activeElement !== d.body ? d.activeElement : null;
     champ.value = valeur;
     dialog.showModal();
     champ.focus();
@@ -469,7 +474,8 @@
     dialog.addEventListener('click', (e) => {
       if (e.target === dialog || e.target.closest('[data-search-close]')) dialog.close();
     });
-    dialog.addEventListener('close', () => { declencheur?.focus?.({ preventScroll: true }); });
+    // À la fermeture, le focus revient là où il était (ou au bouton qui a ouvert), s'il est encore visible.
+    dialog.addEventListener('close', () => { [retour, declencheur].find((el) => el?.isConnected && el.getClientRects().length)?.focus?.({ preventScroll: true }); });
     d.addEventListener('click', (e) => {
       const b = e.target.closest('[data-search-open]');
       if (!b) return;
@@ -535,6 +541,8 @@
     input.value = params.get('q') || '';
     let cat = params.get('cat') || '';
     let tout = false;
+    let qFiltres = null;
+    let refaireFiltres = false;
     // Les étiquettes de catégorie montrent combien de résultats chacune contient ; seules celles qui en ont restent.
     const etiquettes = (tous) => {
       const n = new Map();
@@ -556,13 +564,26 @@
       if (!q.trim()) {
         sortie.innerHTML = '';
         filtres.innerHTML = '';
+        qFiltres = null;
         statut.textContent = tx('tapez', { n: index.length.toLocaleString(loc) });
         sortie.innerHTML = suggestions(true);
         return;
       }
-      const tous = chercher(q, { limite: 2000 });
-      etiquettes(tous.tous || []);
-      const { res, approx, total } = chercher(q, { cat, limite: 200 });
+      // Une seule recherche : les filtres comptent ses résultats et le filtre choisi la découpe, jamais une autre liste.
+      const trouve = chercher(q, { limite: 2000 });
+      const tousRes = trouve.tous || [];
+      // Les filtres ne sont refaits que si la requête change : changer de filtre garde le focus du clavier.
+      if (q !== qFiltres || refaireFiltres) {
+        const plus = refaireFiltres;
+        etiquettes(tousRes);
+        qFiltres = q;
+        refaireFiltres = false;
+        if (plus) filtres.querySelectorAll('input')[9]?.focus();
+      }
+      const choisis = cat ? tousRes.filter((r) => r.t.cat[1] === cat) : tousRes;
+      const res = choisis.slice(0, 200);
+      const { approx } = trouve;
+      const total = choisis.length;
       if (!res.length) {
         const p = proches(q, 5);
         statut.innerHTML = tx(p.length ? 'aucunProches' : 'aucunPage', { q: esc(q.trim()) });
@@ -584,7 +605,7 @@
     charger().then(() => { lancer(); if (!input.value) input.focus(); });
     input.addEventListener('input', () => index && lancer());
     filtres.addEventListener('change', (e) => { cat = e.target.value; index && lancer(); });
-    filtres.addEventListener('click', (e) => { if (e.target.closest('[data-filtres-plus]')) { tout = true; index && lancer(); } });
+    filtres.addEventListener('click', (e) => { if (e.target.closest('[data-filtres-plus]')) { tout = true; refaireFiltres = true; index && lancer(); } });
     select?.addEventListener('change', () => { cat = select.value; index && lancer(); });
     pageForm.addEventListener('submit', (e) => { e.preventDefault(); index && lancer(); });
   }
@@ -644,6 +665,13 @@
     const majRangee = () => root.style.setProperty('--rangee', `${rangee.offsetHeight}px`);
     majRangee();
     if ('ResizeObserver' in window) new ResizeObserver(majRangee).observe(rangee);
+    const poser = (puce) => {
+      marque?.removeAttribute('aria-current');
+      marque = puce;
+      puce.setAttribute('aria-current', 'location');
+      centrer(sousIndex, puce);
+    };
+    let figeJusqua = 0;
     // Un clic sur une puce pose le groupe juste sous la rangée : la barre se range pour ne rien masquer.
     sousIndex.addEventListener('click', (e) => {
       const a = e.target.closest('a[href^="#"]');
@@ -651,31 +679,37 @@
       if (!cible || e.metaKey || e.ctrlKey) return;
       e.preventDefault();
       if (barre) { barre.classList.add('est-cachee'); root.style.setProperty('--haut', '0px'); }
-      const y = Math.max(0, cible.getBoundingClientRect().top + scrollY - rangee.offsetHeight - 16);
+      // On mesure le groupe, qui ne colle pas (son en-tête collant peut être poussé en bas du groupe) ;
+      // le titre arrive 16 px sous la rangée (8 px de marge haute dans l'en-tête). En bas de page, la position est bornée.
+      const groupe = cible.closest('.groupe') || cible;
+      const y = Math.min(Math.max(0, groupe.getBoundingClientRect().top + scrollY - rangee.offsetHeight - 8), d.documentElement.scrollHeight - innerHeight);
       dernierY = y;
       scrollTo({ top: y, behavior: 'auto' });
       history.replaceState(null, '', a.hash);
+      // La puce touchée reste marquée, même si un groupe court laisse le suivant entrer dans l'écran.
+      poser(a);
+      figeJusqua = performance.now() + 400;
       if (!cible.hasAttribute('tabindex')) cible.setAttribute('tabindex', '-1');
       cible.focus({ preventScroll: true });
     });
     const marquer = () => {
       const haut = parseFloat(getComputedStyle(d.documentElement).getPropertyValue('--haut')) || 0;
-      const ligne = Math.max(haut + 120, innerHeight * 0.45);
       // Ombre de la rangée seulement quand elle colle.
       const barreCollante = sousIndex.closest('nav');
       barreCollante.classList.toggle('est-collee', barreCollante.getBoundingClientRect().top <= haut + 1 && scrollY > 0 && barreCollante.parentElement.getBoundingClientRect().top < haut);
+      if (performance.now() < figeJusqua) return;
+      // Le groupe lu est celui dont le haut a passé le bas de l'en-tête de groupe collant.
+      const ligne = haut + rangee.offsetHeight + 56;
       let actif = null;
       for (const g of titres) { if (g.getBoundingClientRect().top <= ligne) actif = g; else break; }
       const puce = actif ? puces.get(actif.getAttribute('aria-labelledby')) : null;
       if (puce === marque) return;
-      marque?.removeAttribute('aria-current');
-      marque = puce;
       // Revenu au-dessus du premier groupe : la rangée repart de son début.
-      if (!puce) { sousIndex.scrollLeft = 0; return; }
-      puce.setAttribute('aria-current', 'location');
-      centrer(sousIndex, puce);
+      if (!puce) { marque?.removeAttribute('aria-current'); marque = null; sousIndex.scrollLeft = 0; return; }
+      poser(puce);
     };
     addEventListener('scroll', () => requestAnimationFrame(marquer), { passive: true });
+    addEventListener('resize', () => requestAnimationFrame(marquer), { passive: true });
   }
   if (d.querySelector('.liste')) {
     const haut = d.createElement('button');

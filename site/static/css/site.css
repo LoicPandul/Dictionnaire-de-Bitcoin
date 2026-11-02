@@ -147,6 +147,8 @@
 * { -webkit-tap-highlight-color: transparent; }
 [hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 120px; }
+/* Page catégorie : au clavier, l'entrée atteinte reste sous la barre, la rangée et l'en-tête de groupe collants. */
+html:has(body.p-cat) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 64px); }
 body {
   margin: 0;
   background: var(--fond);
@@ -178,6 +180,8 @@ input[type='search']::-webkit-search-cancel-button, input[type='search']::-webki
 /* Liens : toujours soulignés (charte, section 2), navigation comprise. */
 a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; transition: color var(--d-hover) ease, text-decoration-thickness var(--d-hover) ease; }
 @media (hover: hover) { a:hover { color: var(--lien-survol); text-decoration-thickness: 2px; } }
+/* Au doigt, la pression répond comme le survol. Spécificité basse : boutons, pastilles et bandeaux gardent leurs couleurs. */
+:where(a):active { color: var(--lien-survol); text-decoration-thickness: 2px; }
 .lien { font-weight: 600; }
 
 .masque { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
@@ -186,6 +190,7 @@ a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1
 .evitement:focus { clip-path: none; width: auto; height: auto; }
 .picto { width: 1.1em; height: 1.1em; flex: none; fill: currentColor; }
 .ico { width: 22px; height: 22px; flex: none; }
+.barre .bouton-recherche { flex: none; }
 
 /* Titres : Archivo Titre (largeur 75, graisse 800). */
 .titre, .titre-page, .jour-titre, .menu-titre {
@@ -609,7 +614,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 /* Le signet : la tranche du livre, et un ruban posé à la place du mot. */
 .signet-tranche { position: relative; height: 52px; }
 .signet-tranche::before { content: ''; position: absolute; inset: 0; background: var(--doux); -webkit-mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; }
-.signet-ruban { position: absolute; top: -10px; left: var(--pos); width: 14px; height: calc(100% + 22px); margin-left: -7px; background: var(--lien); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 7px), 0 100%); }
+.signet-ruban { position: absolute; top: -10px; left: clamp(7px, var(--pos), calc(100% - 7px)); width: 14px; height: calc(100% + 22px); margin-left: -7px; background: var(--lien); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 7px), 0 100%); }
 .signet-legende { font-size: var(--t-note); color: var(--texte); line-height: 1.4; }
 .signet-legende sup { font-size: 0.7em; line-height: 0; }
 
@@ -621,6 +626,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .prose a.renvoi-texte { color: var(--texte); text-decoration-color: var(--lien); text-decoration-thickness: 1.5px; text-underline-offset: 0.18em; }
 .prose a.renvoi-code { text-decoration-thickness: 1px; }
 @media (hover: hover) { .prose a.renvoi-texte:hover { color: var(--lien); } }
+.prose a.renvoi-texte:active { color: var(--lien); }
 .prose strong { font-weight: 650; }
 .prose em { font-style: italic; }
 .prose ul { padding-left: 1.2em; list-style: disc; }
@@ -630,11 +636,17 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .prose code { font: 400 16px/1.4 var(--mono); padding: 0.1em 0.35em; background: var(--surface); overflow-wrap: anywhere; hyphens: none; }
 .prose a code { background: transparent; padding: 0; }
 .prose pre { padding: 16px 18px; background: var(--surface); overflow-x: auto; hyphens: none; }
-.prose pre.a-suivre { box-shadow: inset -4px 0 0 var(--lien); }
 /* Ponctuation logée dans la formule : le texte courant, pas la police de KaTeX (corps 1,21 em). */
 .formule-ponct { font: 400 calc(1em / 1.21) / 1 var(--archivo); }
-@media (max-width: 639px) { .prose pre { margin-inline: calc(-1 * var(--marge)); padding-inline: var(--marge); } .prose pre code { font-size: 14px; } }
 .prose pre code { padding: 0; background: none; font-size: 15px; line-height: 1.55; overflow-wrap: normal; }
+/* Téléphone : le bloc de code va jusqu'au bord, en 14 px. Bloc de code ou schéma plus large que l'écran :
+   un filet Figue au bord droit tant qu'il reste à voir (une bordure, que le contenu qui défile ne recouvre pas). */
+@media (max-width: 639px) {
+  .prose pre { margin-inline: calc(-1 * var(--marge)); padding-inline: var(--marge); }
+  .prose pre code { font-size: 14px; }
+  .prose pre, .prose .figure-cadre { border-right: 4px solid transparent; }
+  .prose pre.a-suivre, .prose .figure-cadre.a-suivre { border-right-color: var(--lien); }
+}
 .prose blockquote { margin: 1.4em 0; padding: 16px 20px; background: var(--surface); }
 .prose blockquote p { margin: 0; }
 /* Schémas : posés sur le fond ; en mode sombre, sur une carte blanche de 16 px de marge (charte). */
@@ -672,10 +684,11 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .loupe-tete { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding: 8px var(--marge); min-height: 60px; }
 .loupe-legende { font-size: var(--t-note); color: var(--ecorce); flex: 1 1 260px; }
 .loupe-boutons { display: flex; gap: 8px; }
-.loupe-zone { display: grid; align-content: safe center; overflow: auto; padding: 0 var(--marge) var(--marge); }
-.loupe--zoom .loupe-zone { align-content: start; }
-.loupe-zone img { width: max(100%, 640px); max-width: none; height: auto; margin: 0 auto; }
-.loupe--zoom .loupe-zone img { width: max(200%, 1280px); }
+/* À l'ouverture, le schéma entier tient dans l'écran ; « Agrandir » le porte au double (1 280 px au moins). */
+.loupe-zone { display: grid; grid-template-rows: minmax(0, 1fr); overflow: auto; padding: 0 var(--marge) var(--marge); }
+.loupe-zone img { width: 100%; height: 100%; max-width: none; object-fit: contain; }
+.loupe--zoom .loupe-zone { grid-template-rows: auto; align-content: start; }
+.loupe--zoom .loupe-zone img { width: max(200%, 1280px); height: auto; margin: 0 auto; }
 
 .cites-titre, .renvois-titre { font-size: var(--t-nom); font-weight: 700; line-height: 1.3; margin-bottom: 14px; }
 .cites-liste { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -719,7 +732,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (hover: hover) { .tourner-lien:hover { background: var(--marque); } .tourner-lien:hover .tourner-nom { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 .colophon { margin: 28px var(--m) var(--section); font-size: var(--t-note); color: var(--doux); max-width: 70ch; }
 .colophon a { font-weight: 600; }
-.citer { display: block; margin-top: 12px; min-height: 44px; padding: 8px 14px; border: 0; background: transparent; box-shadow: inset 0 0 0 2px var(--texte); color: var(--texte); font-size: var(--t-ui); font-weight: 600; }
+.citer { display: block; margin-top: 12px; min-height: 48px; padding: 8px 14px; border: 0; background: transparent; box-shadow: inset 0 0 0 2px var(--texte); color: var(--texte); font-size: var(--t-ui); font-weight: 600; }
 @media (hover: hover) { .citer:hover { background: var(--marque); color: var(--sur-marque); } }
 
 /* Carte d'aperçu d'un renvoi : seule surface qui flotte avec les fenêtres. */
@@ -799,7 +812,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 .liste { padding: 0 var(--m); }
 .groupe + .groupe { margin-top: 40px; }
-.groupe-tete { position: sticky; top: calc(var(--haut, 0px) + var(--rangee, 56px) - 4px); z-index: 5; display: flex; align-items: baseline; gap: 14px; padding: 8px 0 10px; margin-bottom: 4px; background: var(--fond); transition: top var(--d-ui) var(--ease-out); }
+.groupe-tete { position: sticky; top: calc(var(--haut, 0px) + var(--rangee, 56px) - 4px); z-index: 5; display: flex; align-items: baseline; gap: 14px; padding: 8px 0 10px; margin-bottom: 4px; border-bottom: 1px solid var(--trait); background: var(--fond); transition: top var(--d-ui) var(--ease-out); }
 
 .groupe-titre { font: 900 var(--t-repere) / 1 var(--archivo); font-stretch: 62%; }
 .groupe-titre { scroll-margin-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 16px); }
