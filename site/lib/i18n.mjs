@@ -178,7 +178,7 @@ const FR = {
   groupesLettre: (l) => `Groupes de la lettre ${l}`,
   motsEn: (l) => `Les mots en ${l}`,
   motsDuDico: (n, a, b) => `${n} du dictionnaire, de ${a} à ${b}.`,
-  lettreSuivante: 'Lettre suivante : ',
+  lettreSuivante: 'Lettre suivante\u202f: ',
   groupe: 'Groupe ',
   titreLettre: (l, n) => `Lettre ${l} : ${n} définitions | Dictionnaire de Bitcoin`,
   descLettre: (n, l, a, b) => `Les ${n} termes du Dictionnaire de Bitcoin qui commencent par la lettre ${l}, de ${a} à ${b}.`,
@@ -295,7 +295,7 @@ const FR = {
     themeSombre: 'Passer en thème sombre',
     voirAutres: 'Voir les {n} autres',
     copiee: 'Citation copiée',
-    copiez: 'Copiez : ',
+    copiez: 'Copiez\u202f: ',
     citer: 'Citer cette définition',
     schema: 'Schéma',
     agrandir: 'Agrandir',
@@ -315,7 +315,7 @@ const FR = {
     indexErreur: 'L’index de recherche n’a pas pu être chargé. Vérifiez la connexion, ou parcourez par lettre.',
     filtrer: 'Filtrer par catégorie',
     toutes: 'Toutes',
-    tapez: 'Tapez un terme : la recherche porte sur les {n} définitions, leur terme anglais et leur description.',
+    tapez: 'Tapez un terme\u202f: la recherche porte sur les {n} définitions, leur terme anglais et leur description.',
     chargement: 'Chargement de l’index…',
     vouliez: 'Vouliez-vous dire\u202f?',
     resultats: 'Résultats',
@@ -575,9 +575,10 @@ export const chemins = (L) => ({
 export const lien = new Proxy({}, { get: (_, k) => chemins(t)[k] });
 
 // Nom affiché d'une catégorie dans la langue courante (ou dans L).
+// Apostrophe typographique, comme les titres (« Plateforme d’échange »).
 export function categoryLabel(name, L = t) {
-  if (L.code === 'en' && CATEGORIES_EN[name]) return CATEGORIES_EN[name];
-  return labelFr(name);
+  if (L.code === 'en' && CATEGORIES_EN[name]) return CATEGORIES_EN[name].replace(/'/g, '’');
+  return labelFr(name).replace(/'/g, '’');
 }
 // Slug d'une catégorie : le slug français (contrat d'URL), ou le nom anglais en anglais.
 export function catSlug(cat, L = t) {

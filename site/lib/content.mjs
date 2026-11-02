@@ -231,7 +231,8 @@ export function loadDictionary(repoRoot, { lang = 'fr', reserves = [] } = {}) {
         categorySlug: slugify(meta.category || 'sans categorie'),
         englishTerm: meta.english_term || null,
         frenchTerm: meta.french_term || null,
-        letter: meta.slug[0].toUpperCase(),
+        // La lettre suit l'initiale du titre, comme l'ordre du livre (« ALGORITHME DE GROVER », slug grover-…, est en A).
+        letter: (meta.title.normalize('NFD').replace(/[^A-Za-z]/g, '')[0] || meta.slug[0]).toUpperCase(),
         assets: Array.isArray(meta.assets) ? meta.assets : [],
         crossRefUuids: Array.isArray(meta.cross_references) ? meta.cross_references : [],
         sourceDir: defDir,

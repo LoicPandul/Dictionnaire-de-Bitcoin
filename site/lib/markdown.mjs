@@ -70,7 +70,7 @@ const typo = (html, francais) =>
     .map((part, i) => (i % 2 ? part : part.replace(/(^|>)([^<]*)/g, (m, a, t) => {
       let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f');
       if (francais) x = x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»');
-      return a + x.replace(/\b(BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)-(\d+)\b/g, '<span class="insec">$1-$2</span>');
+      return a + x.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');
     })))
     .join('');
 

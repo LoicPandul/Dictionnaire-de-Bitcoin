@@ -44,6 +44,9 @@
     majTheme();
   }));
 
+  // Safari iOS n'applique :active au toucher que si la page écoute touchstart.
+  d.addEventListener('touchstart', () => {}, { passive: true });
+
   // ------------------------------------------------------------ Barre : se cache en descendant, revient en remontant
   const barre = d.querySelector('[data-barre]');
   let dernierY = scrollY;
@@ -59,6 +62,8 @@
   };
   if (barre) {
     addEventListener('scroll', () => { if (!enAttente) { enAttente = true; requestAnimationFrame(majBarre); } }, { passive: true });
+    // Rotation : la hauteur de la barre change, les éléments collants suivent tout de suite.
+    addEventListener('resize', () => requestAnimationFrame(majBarre), { passive: true });
     barre.addEventListener('focusin', () => barre.classList.remove('est-cachee'));
   }
   // ------------------------------------------------------------ Apparitions, une fois
@@ -587,6 +592,8 @@
       // Les filtres ne sont refaits que si la requête change : changer de filtre garde le focus du clavier.
       if (q !== qFiltres || refaireFiltres) {
         const plus = refaireFiltres;
+        // Une nouvelle requête repart des huit premiers filtres et de « + N ».
+        if (!plus) tout = false;
         etiquettes(tousRes);
         qFiltres = q;
         // Sur téléphone, la rangée défile jusqu'au filtre choisi.

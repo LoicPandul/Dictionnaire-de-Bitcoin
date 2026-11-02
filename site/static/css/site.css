@@ -187,7 +187,9 @@ a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1
 .masque { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .defs { position: absolute; width: 0; height: 0; overflow: hidden; }
 .evitement { position: absolute; left: var(--m); top: 8px; z-index: 100; padding: 12px 16px; background: var(--bouton); color: var(--sur-bouton); font-weight: 600; clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; white-space: nowrap; }
-/* Au focus, le lien d'évitement couvre toute la barre : rien ne dépasse derrière lui. */
+/* Au focus, le lien d'évitement couvre toute la barre : rien ne dépasse derrière lui ; la souris posée dessus ne change pas sa couleur. */
+.evitement:hover, .evitement:focus { color: var(--sur-bouton); }
+.evitement:focus-visible { outline: 3px solid var(--sur-bouton); outline-offset: -7px; }
 .evitement:focus { clip-path: none; top: 0; left: 0; right: 0; width: auto; height: var(--barre); display: flex; align-items: center; padding: 0 var(--m); }
 .picto { width: 1.1em; height: 1.1em; flex: none; fill: currentColor; }
 .ico { width: 22px; height: 22px; flex: none; }
@@ -487,11 +489,13 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .bande-defile::-webkit-scrollbar { display: none; }
 .aiguille { position: absolute; left: 50%; width: 3px; margin-left: -1px; background: var(--lien); pointer-events: none; }
 .aiguille::after { content: ''; position: absolute; top: -10px; left: -6px; border: 7px solid transparent; border-top-color: var(--lien); }
-.apercu { display: grid; gap: 6px; align-content: start; min-height: 120px; max-width: 52rem; }
+.apercu { display: grid; gap: 6px; align-content: start; max-width: 52rem;
+  /* Hauteur réservée pour un nom sur deux lignes, la catégorie et trois lignes de définition : la page ne saute pas au glissé. */
+  min-height: calc(var(--t-titre) * 2.1 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); }
 .apercu-nom { font: 800 var(--t-titre) / 1.05 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; text-wrap: balance; overflow-wrap: anywhere; }
 .apercu-nom a { display: inline-block; padding-block: 8px; }
 .apercu-cat { font-size: var(--t-note); font-weight: 600; color: var(--doux); }
-.apercu-desc { font-size: var(--t-lecture); line-height: 1.5; max-width: 40em; }
+.apercu-desc { font-size: var(--t-lecture); line-height: 1.5; max-width: 40em; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 @media (max-width: 1023px), (pointer: coarse) {
   .blocs ol { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
   .blocs a { height: 48px; }
@@ -636,7 +640,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .prose li::marker { color: var(--doux); }
 .prose code { font: 400 16px/1.4 var(--mono); padding: 0.1em 0.35em; background: var(--surface); overflow-wrap: anywhere; hyphens: none; }
 .prose a code { background: transparent; padding: 0; }
-.prose pre { padding: 16px 18px; background: var(--surface); overflow-x: auto; hyphens: none; }
+.prose pre { padding: 16px 14px 16px 18px; background: var(--surface); overflow-x: auto; hyphens: none; scrollbar-width: thin; scrollbar-color: var(--doux) var(--surface); }
 /* Ponctuation logée dans la formule : le texte courant, pas la police de KaTeX (corps 1,21 em). */
 .formule-ponct { font: 400 calc(1em / 1.21) / 1 var(--archivo); }
 .prose pre code { padding: 0; background: none; font-size: 15px; line-height: 1.55; overflow-wrap: normal; }
@@ -646,7 +650,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .prose pre.a-suivre { border-right-color: var(--lien); }
 /* Téléphone : le bloc de code va jusqu'au bord, en 14 px. */
 @media (max-width: 639px) {
-  .prose pre { margin-inline: calc(-1 * var(--marge)); padding-inline: var(--marge); }
+  .prose pre { margin-inline: calc(-1 * var(--marge)); padding-inline: var(--marge) calc(var(--marge) - 4px); }
   .prose pre code { font-size: 14px; }
   .prose .figure-cadre { border-right: 4px solid transparent; }
   .prose .figure-cadre.a-suivre { border-right-color: var(--lien); }
@@ -845,6 +849,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 /* ---------------------------------------------------------------- Recherche */
 .recherche { width: min(760px, calc(100% - 2 * var(--marge))); max-width: none; max-height: min(78svh, 760px); margin: 9svh auto auto; padding: 0; border: 0; background: var(--flottant); color: var(--texte); box-shadow: 0 0 0 1px var(--trait); overflow: hidden; }
+/* Dans la feuille, les surfaces (alphabet, catégories, Fermer) se détachent du fond, aussi en sombre. */
+.recherche { --surface: color-mix(in srgb, var(--lien) 12%, var(--flottant)); }
 .recherche::backdrop { background: var(--voile); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .recherche-panneau { display: flex; flex-direction: column; max-height: inherit; }
 .recherche-champ { display: flex; align-items: center; gap: 12px; margin: 16px; padding: 0 8px 0 14px; border: 2px solid var(--texte); background: var(--fond); flex: none; }
@@ -1195,7 +1201,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 /* ---------------------------------------------------------------- Pression au doigt
    Sur écran tactile, le survol n'existe pas : chaque cible répond à la pression comme elle répond à la souris. */
 .entree:active .entree-nom, .renvoi:active .renvoi-nom, .sommaire a:active .sommaire-nom, .tourner-lien:active .tourner-nom, .perdu-liste a:active .perdu-nom { color: var(--lien-survol); text-decoration-thickness: 2px; }
-.resultat a:active, .tourner-lien:active, .partie-cats a:active, .cat-partie a:active, .bouton-theme:active, .bouton-menu:active, .bouton-langue:active, .menu-cats a:active, .menu-liens a:active, .serie:active { background: var(--surface); }
+.partie-cats a:active, .cat-partie a:active { background: var(--marque); }
+.resultat a:active, .tourner-lien:active, .bouton-theme:active, .bouton-menu:active, .bouton-langue:active, .menu-cats a:active, .menu-liens a:active, .serie:active { background: var(--surface); }
 .sous-index a:active, .rayon a:not([aria-current]):active, .cites-liste a:active, a.etiquette:active, .filtre input:not(:checked) + span:active, .blocs a:not([aria-current='true']):active, .cats-mini a:active, .citer:active, .bouton--doux:active { background: var(--marque); color: var(--sur-marque); }
 .menu-partie summary:active { color: var(--lien); }
 .reperes-lettre:active { background: var(--lien-survol); color: var(--fond); }

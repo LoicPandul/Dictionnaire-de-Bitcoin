@@ -75,7 +75,7 @@ const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1').replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f');
 const hd = (t) => h(fr(t));
 // Texte courant (jamais dans un attribut) : une référence « BIP-0347 » ne se coupe pas à son trait d'union.
-export const insec = (html) => html.replace(/\b(BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)-(\d+)\b/g, '<span class="insec">$1-$2</span>');
+export const insec = (html) => html.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');
 const hdt = (t) => insec(hd(t));
 // Résumé coupé au mot, jamais sur un mot-outil, un nombre entamé ni une lettre seule (« que… », « 500 00… », « et M… »).
 // La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.

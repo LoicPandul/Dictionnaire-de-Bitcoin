@@ -10,7 +10,7 @@ import { loadDictionary, loadCategoryNotes, slugify } from './lib/content.mjs';
 import { loadParts, loadChronology, loadSpecifications } from './lib/edition.mjs';
 import { createRenderer } from './lib/markdown.mjs';
 import { createLinker } from './lib/liens.mjs';
-import { definitionPage, letterPage, categoryPage, partPage, homePage, searchPage, notFoundPage, chronologyPage, specsHubPage, specsPage, ancreEvenement, categoryLabel, pictoSprite, setNavigation, setPictos } from './lib/templates.mjs';
+import { definitionPage, letterPage, categoryPage, partPage, homePage, searchPage, notFoundPage, chronologyPage, specsHubPage, specsPage, ancreEvenement, categoryLabel, pictoSprite, setNavigation, setPictos, fr } from './lib/templates.mjs';
 import { LANGUES, setLangue, chemins, setAffichage } from './lib/i18n.mjs';
 import { homeJsonLd, definitionJsonLd, listJsonLd, sitemap, robots } from './lib/seo.mjs';
 import { headers, redirects } from './lib/cloudflare.mjs';
@@ -233,7 +233,10 @@ for (const code of Object.keys(LANGUES)) {
   write(`${nIndex(L).slice(1)}${code === 'fr' ? '' : '/'}recherche.json`, JSON.stringify({
     categories: catIndex,
     terms: definitions.map((d) => {
-      const ligne = [d.title, d.slug, catPos.get(d.category), autresNoms(d), d.resume || ''];
+      // Le résumé avec la typographie des pages (espaces fines insécables, en français la ponctuation haute) :
+      // le JS l'affiche tel quel dans la tranche, la recherche et « Un autre mot ».
+      const resume = d.resume || '';
+      const ligne = [d.title, d.slug, catPos.get(d.category), autresNoms(d), d.lang === 'fr' ? fr(resume) : resume.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f')];
       if (d.lang !== code) ligne.push(d.lang);
       return ligne;
     }),
