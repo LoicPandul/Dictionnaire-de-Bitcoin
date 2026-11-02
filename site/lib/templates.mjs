@@ -72,7 +72,7 @@ export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0
 const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
 // Les groupes de chiffres (« 100 000 000 ») ne se séparent jamais en fin de ligne : espace fine insécable.
-export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1').replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f');
+export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1').replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%');
 const hd = (t) => h(fr(t));
 // Texte courant (jamais dans un attribut) : une référence « BIP-0347 » ne se coupe pas à son trait d'union.
 export const insec = (html) => html.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');
@@ -797,12 +797,15 @@ export function homePage(data, { assets, jsonLd }) {
 </section>
 
 <section class="jour" aria-labelledby="jour-titre" data-jour>
-  <h2 class="titre jour-titre" id="jour-titre">${t.motDuJour}</h2>
+  <div class="jour-tete">
+    <h2 class="titre jour-titre" id="jour-titre">${t.motDuJour}</h2>
+    <button class="bouton bouton--doux" type="button" data-jour-autre>${t.autreMot}</button>
+  </div>
   <div class="jour-corps">
     <p class="jour-mot"><a href="${lien.def(f.slug)}" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
     <p class="jour-cat"><a class="etiquette" href="${lien.categorie({ name: f.category, slug: f.categorySlug })}" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
     <p class="jour-desc" data-jour-desc${langAttr(f)}>${hd(resumeDe(f))}</p>
-    <p class="jour-actions"><a class="bouton" href="${lien.def(f.slug)}" data-jour-lire>${t.lireDef}</a> <button class="bouton bouton--doux" type="button" data-jour-autre>${t.autreMot}</button></p>
+    <p class="jour-actions"><a class="bouton" href="${lien.def(f.slug)}" data-jour-lire>${t.lireDef}</a></p>
   </div>
 </section>
 

@@ -229,7 +229,11 @@ for (const code of Object.keys(LANGUES)) {
   // [titre, slug, catégorie, autres noms, résumé, langue du résumé si ce n'est pas celle de la page]
   const catIndex = categories.map((c) => [categoryLabel(c.name), c.slug, P.categorie(c)]);
   const catPos = new Map(categories.map((c, i) => [c.name, i]));
-  const autresNoms = (d) => [d.englishTerm, d.frenchTerm, d.titleFr !== d.title ? d.titleFr : ''].filter((x, i, a) => x && a.indexOf(x) === i).join(' · ');
+  // Les autres noms d'un terme, sans répéter son titre (comparés sans la casse).
+  const autresNoms = (d) => {
+    const vus = new Set([d.title.toLocaleLowerCase('fr')]);
+    return [d.englishTerm, d.frenchTerm, d.titleFr].filter((x) => x && !vus.has(x.toLocaleLowerCase('fr')) && vus.add(x.toLocaleLowerCase('fr'))).join(' · ');
+  };
   write(`${nIndex(L).slice(1)}${code === 'fr' ? '' : '/'}recherche.json`, JSON.stringify({
     categories: catIndex,
     terms: definitions.map((d) => {

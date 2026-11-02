@@ -76,7 +76,7 @@
     apercu.lien.innerHTML = coupe(t.title);
     apercu.lien.href = `${B}/${t.slug}/`;
     apercu.cat.textContent = t.cat[0];
-    apercu.desc.textContent = t.desc.replace(/'/g, '’').replace(/\s*\.\.\.$/, '…');
+    couperAuMot(apercu.desc, t.desc.replace(/'/g, '’').replace(/\s*\.\.\.$/, '…'));
     const l = lettreDe(i);
     blocs.forEach((b) => b.setAttribute('aria-current', String(b.dataset.lettre === l.l)));
     bande.setAttribute('aria-valuenow', String(i + 1));
@@ -86,6 +86,23 @@
   // de sa plus longue série consécutive, là où l'aiguille se pose quand on choisit la lettre.
   let lettreDuMot = [];
   const lettreDe = (i) => lettreDuMot[i] || lettres[0];
+  // Coupe au mot un texte limité en lignes par le CSS (line-clamp) : jamais au milieu d'un mot ni sur un mot-outil.
+  const OUTILS = /\s(\S{1,3}|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|the|and|with|from|that|which|into|their)$/i;
+  function couperAuMot(el, texte) {
+    el.textContent = texte;
+    if (el.scrollHeight <= el.clientHeight + 1) return;
+    const mots = texte.split(' ');
+    let bas = 1;
+    let haut = mots.length - 1;
+    while (bas < haut) {
+      const m = Math.ceil((bas + haut) / 2);
+      el.textContent = `${mots.slice(0, m).join(' ')}…`;
+      if (el.scrollHeight <= el.clientHeight + 1) bas = m; else haut = m - 1;
+    }
+    let debut = mots.slice(0, bas).join(' ');
+    while (OUTILS.test(debut) && debut.lastIndexOf(' ') > debut.length / 2) debut = debut.slice(0, debut.lastIndexOf(' '));
+    el.textContent = `${debut.replace(/[\s,;:\u202f–-]+$/, '')}…`;
+  }
   const hauteur = (i, H) => Math.max(6, Math.round((Math.sqrt(longueurs[i]) / Math.sqrt(maxLen)) * H));
   let maxLen = 1;
 
@@ -269,8 +286,9 @@
       const pos = l.ids.indexOf(i);
       const avant = e.key === 'ArrowRight' || e.key === 'ArrowUp';
       const arriere = e.key === 'ArrowLeft' || e.key === 'ArrowDown';
-      if (mode === 'bureau' && avant) i = l.ids[pos + 1] ?? (lettres[k + 1] || l).ids[0];
-      else if (mode === 'bureau' && arriere) i = l.ids[pos - 1] ?? (lettres[k - 1] || l).ids.at(-1);
+      // Aux deux bouts de la tranche, le curseur reste en place (modèle ARIA du curseur).
+      if (mode === 'bureau' && avant) i = l.ids[pos + 1] ?? lettres[k + 1]?.ids[0] ?? i;
+      else if (mode === 'bureau' && arriere) i = l.ids[pos - 1] ?? lettres[k - 1]?.ids.at(-1) ?? i;
       else if (avant) i++;
       else if (arriere) i--;
       else if (e.key === 'PageDown') i = (lettres[k + 1] || l).debut;

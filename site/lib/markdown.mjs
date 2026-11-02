@@ -64,12 +64,17 @@ const apostrophes = (html) =>
 // Espaces et coupures, sur le texte seul (ni balises, ni code) : une référence « BIP-0347 » ne se coupe pas à
 // son trait d'union, les groupes de chiffres restent ensemble, et en français la ponctuation haute (; : ! ?)
 // et les guillemets prennent l'espace fine insécable : jamais de deux-points en début de ligne.
+// Espaces insécables d'un texte brut (aussi pour un attribut, comme le texte alternatif d'un schéma).
+export const espaces = (t, francais) => {
+  let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f').replace(/(\d) %/g, '$1\u202f%');
+  if (francais) x = x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»');
+  return x;
+};
 const typo = (html, francais) =>
   html
     .split(/(<pre[\s\S]*?<\/pre>|<code[\s\S]*?<\/code>)/)
     .map((part, i) => (i % 2 ? part : part.replace(/(^|>)([^<]*)/g, (m, a, t) => {
-      let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f');
-      if (francais) x = x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»');
+      const x = espaces(t, francais);
       return a + x.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');
     })))
     .join('');
@@ -85,7 +90,7 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
     renderer: {
       image({ href, title, text }) {
         // Le texte alternatif est lu tel quel : sans les accents graves du Markdown (`1011`).
-        text = text.replace(/`/g, '');
+        text = espaces(text.replace(/`/g, '').replace(/'/g, '’'), (current?.lang || 'fr') === 'fr');
         // Le fichier est cherché depuis le dossier du texte rendu : ./assets/… en français, et pour
         // une traduction ../../../fr/<lettre>/<slug>/assets/… (le schéma de l'entrée française) ou
         // ./assets/… (un schéma redessiné dans sa langue). Il est servi depuis /<slug>/assets/

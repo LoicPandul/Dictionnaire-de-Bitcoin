@@ -278,7 +278,8 @@ p, li, figcaption { text-wrap: pretty; }
 }
 .bouton-recherche:active { transform: scale(0.97); }
 .bouton-recherche kbd { padding: 3px 7px; background: var(--surface); font: 500 14px/1 var(--mono); color: var(--doux); }
-@media (hover: none), (pointer: coarse) { .bouton-recherche kbd { display: none; } }
+/* Le raccourci n'est montré qu'avec une souris et la place de le montrer (dès 1 280 px). */
+@media (hover: none), (pointer: coarse), (max-width: 1279px) { .bouton-recherche kbd { display: none; } }
 /* Tant que le champ de la couverture est à l'écran, la barre ne double pas la recherche. */
 .barre.champ-visible .bouton-recherche { visibility: hidden; }
 .bouton-theme { display: grid; place-items: center; width: 44px; height: 44px; border: 0; background: transparent; color: var(--texte); }
@@ -451,9 +452,11 @@ p, li, figcaption { text-wrap: pretty; }
 .jour-desc { font-size: var(--t-enonce); line-height: 1.4; max-width: 36em; }
 .jour-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 @media (max-width: 639px) { .jour-actions { justify-self: stretch; } .jour-actions > * { flex: 1 1 auto; } }
+/* « Un autre mot » se tient à côté du titre de la section : il ne bouge pas quand le mot change de longueur. */
+.jour-tete { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
 @media (min-width: 1024px) {
   .jour { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g); }
-  .jour-titre { grid-column: 1 / 5; }
+  .jour-tete { grid-column: 1 / 5; flex-direction: column; align-items: flex-start; justify-content: flex-start; align-self: start; gap: 24px; }
   .jour-corps { grid-column: 5 / -1; }
 }
 
@@ -492,6 +495,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .apercu { display: grid; gap: 6px; align-content: start; max-width: 52rem;
   /* Hauteur réservée pour un nom sur deux lignes, la catégorie et trois lignes de définition : la page ne saute pas au glissé. */
   min-height: calc(var(--t-titre) * 2.1 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); }
+/* Téléphone : les noms longs (OP_CHECKLOCKTIMEVERIFY…) prennent jusqu'à quatre lignes. */
+@media (max-width: 479px) { .apercu { min-height: calc(var(--t-titre) * 4.2 + 16px + var(--t-note) * 1.5 + var(--t-lecture) * 4.5 + 12px); } }
 .apercu-nom { font: 800 var(--t-titre) / 1.05 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; text-wrap: balance; overflow-wrap: anywhere; }
 .apercu-nom a { display: inline-block; padding-block: 8px; }
 .apercu-cat { font-size: var(--t-note); font-weight: 600; color: var(--doux); }
@@ -868,7 +873,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .resultat-cat .picto { width: 15px; height: 15px; }
 .resultat-desc { grid-column: 1 / -1; font-size: var(--t-ui); line-height: 1.45; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .resultat-alt { grid-column: 1 / -1; font-size: var(--t-note); color: var(--doux); overflow-wrap: anywhere; }
-.resultat mark { background: color-mix(in srgb, var(--lien) 22%, transparent); color: inherit; }
+/* La partie trouvée passe à l'encre, le reste du nom reste Figue : lisible sur tous les fonds, sélection comprise. */
+.resultat mark { background: none; color: var(--texte); }
 .resultat[aria-selected='true'] a { background: var(--surface); box-shadow: inset 4px 0 0 var(--lien); }
 @media (hover: hover) { .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
 .suggestions-vides { padding: 8px 16px 16px; display: grid; gap: 12px; }

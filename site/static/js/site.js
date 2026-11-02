@@ -420,6 +420,7 @@
   function vide() {
     etat.textContent = '';
     liste.innerHTML = suggestions(false);
+    liste.scrollTop = 0;
     champ.setAttribute('aria-expanded', 'false');
     actif = -1;
   }
@@ -431,6 +432,7 @@
     if (!res.length) {
       etat.innerHTML = tx('aucun', { q: esc(q.trim()) });
       liste.innerHTML = suggestions(true);
+      liste.scrollTop = 0;
       champ.setAttribute('aria-expanded', 'false');
       return;
     }
@@ -499,7 +501,10 @@
       const k = e.key.toLowerCase();
       if ((k === 'k' && (e.ctrlKey || e.metaKey)) || (k === '/' && !e.target.closest('input, textarea, [contenteditable]'))) {
         e.preventDefault();
-        if (dialog.open) champ.select(); else ouvrir('', d.querySelector('[data-search-open]'));
+        // Sur la page de recherche, le raccourci mène à son propre champ.
+        const champPage = d.querySelector('[data-search-page] input');
+        if (champPage && !dialog.open) { champPage.focus(); champPage.select(); }
+        else if (dialog.open) champ.select(); else ouvrir('', d.querySelector('[data-search-open]'));
       }
     });
     if (/Mac|iPhone|iPad/.test(navigator.platform)) d.querySelectorAll('[data-kbd]').forEach((k) => (k.textContent = '⌘ K'));
@@ -526,6 +531,8 @@
       else if (e.target === menu || e.target.closest('[data-menu-close]')) menu.close();
     });
     menu.addEventListener('close', () => d.querySelector('[data-menu-open]')?.focus({ preventScroll: true }));
+    // Le menu n'existe que sous 1 024 px : une tablette tournée en paysage le referme.
+    addEventListener('resize', () => { if (menu.open && matchMedia('(min-width: 1024px)').matches) menu.close(); }, { passive: true });
   }
 
   // Mots les plus proches à l'orthographe, quand rien ne correspond (404, recherche sans résultat).
@@ -556,6 +563,8 @@
     let refaireFiltres = false;
     // Les étiquettes de catégorie montrent combien de résultats chacune contient ; seules celles qui en ont restent.
     const etiquettes = (tous) => {
+      // Aucun résultat : pas de rangée de filtres (une pastille « Toutes 0 » seule ne dit rien).
+      if (!tous.length) { filtres.innerHTML = ''; return; }
       const n = new Map();
       for (const r of tous) n.set(r.t.cat[1], (n.get(r.t.cat[1]) || 0) + 1);
       const liste = index.categories.filter(([, slug]) => n.has(slug) || slug === cat).sort((a, b) => (n.get(b[1]) || 0) - (n.get(a[1]) || 0));
