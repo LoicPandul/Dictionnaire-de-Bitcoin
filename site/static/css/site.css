@@ -1083,10 +1083,15 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .evt-liens a { font-weight: 650; color: var(--texte); text-decoration-color: var(--lien); }
 .evt-sources a { color: var(--doux); text-decoration-color: currentColor; overflow-wrap: anywhere; }
 @media (pointer: coarse), (max-width: 1023px) {
-  .evt-liens, .evt-sources, .spec-liens { row-gap: 0; }
-  .evt-liens a, .evt-sources a, .spec-liens a, .spec-meta dd a, .mot-spec-liens a { display: inline-flex; align-items: center; column-gap: 0.3em; min-width: 44px; min-height: 44px; }
-  .mot-spec-liens { row-gap: 0; }
+  /* Cible de 44 px sans rien décaler : 12 px de marge intérieure en haut et en bas (le texte garde sa ligne de base
+     et ses espaces), et un nom court s'élargit par ::after, centré, sans pousser ses voisins. Dans les métadonnées
+     d'une fiche, une marge négative garde le pas des lignes. */
+  .evt-liens, .evt-sources, .spec-liens, .mot-spec-liens { row-gap: 0; align-items: baseline; }
+  .evt-liens a, .evt-sources a, .spec-liens a, .spec-meta dd a, .mot-spec-liens a { position: relative; display: inline-block; padding-block: 12px; }
+  .spec-meta dd a { margin-block: -12px; }
+  .evt-liens a::after, .evt-sources a::after, .spec-liens a::after, .spec-meta dd a::after, .mot-spec-liens a::after { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: max(100%, 44px); translate: -50% 0; }
 }
+.spec-meta div { align-items: baseline; }
 .evt-cle { font-weight: 700; color: var(--doux); }
 @media (min-width: 1024px) {
   .evt { grid-template-columns: 12em minmax(0, 1fr); }
