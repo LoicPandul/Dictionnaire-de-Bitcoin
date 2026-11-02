@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="552" viewBox="0 0 1280 552"><style>/* charte.css : rôles des schémas du Dictionnaire de Bitcoin 2027, en couleur et en noir et blanc.
    Source : design/charte-2027.md, section 6 « Les schémas » (branche feat/couverture-2027,
-   commit f5a3a13b). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
+   commit 84e3e8f2, palette Mandarine, Forêt et Crête). Un schéma n'écrit aucune couleur en dur : il pose des classes de rôle, et la
    classe `nb` sur &lt;html&gt; (ajoutée par rendre.mjs) bascule tout le schéma dans sa version imprimée. */
 
 
@@ -10,14 +10,14 @@
 
 
 svg {
-  --encre: #1E1A1D;          /* Encre : traits et textes */
-  --note: #6B6368;           /* Écorce : annotations */
-  --sujet-fond: #AA226A;     /* Figue : LE sujet de la définition, un seul par schéma */
-  --sujet-texte: #FFFFFF;
-  --valeur-fond: #F4E5C6;    /* Safran clair */
-  --valeur-trait: #956D28;   /* Safran */
-  --secret-fond: #D3EAEA;    /* Paon clair */
-  --secret-trait: #0B6B6E;   /* Paon */
+  --encre: #0B231D;          /* Encre : traits et textes */
+  --note: #4F5F58;           /* Écorce : annotations */
+  --sujet-fond: #FD550A;     /* Mandarine : LE sujet de la définition, un seul par schéma */
+  --sujet-texte: #0B231D;    /* Encre sur Mandarine, 5,09 : 1 */
+  --valeur-fond: #E0F354;    /* Crête */
+  --valeur-trait: #656D26;   /* Olive */
+  --secret-fond: #CCDFDA;    /* Forêt clair */
+  --secret-trait: #015D47;   /* Forêt */
   --fond: #FFFFFF;
 }
 svg.nb {                    /* livre imprimé : N100, N12, N35 */
