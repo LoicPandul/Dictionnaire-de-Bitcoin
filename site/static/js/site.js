@@ -740,7 +740,7 @@
 
   // La hauteur de la rangée collante (une ou deux lignes selon la largeur) règle les en-têtes collants et les ancres,
   // sur toute page de liste : sous-groupes d'une lettre, alphabet d'une catégorie ou d'une lettre sans sous-groupes.
-  const rangeeCollante = d.querySelector('.sous-index') || d.querySelector('.p-lettre .index-az, .p-cat .index-az');
+  const rangeeCollante = d.querySelector('.sous-index') || d.querySelector('.p-lettre .index-az, .p-cat .index-az, .p-chrono .index-annees');
   if (rangeeCollante) {
     const majRangee = () => root.style.setProperty('--rangee', `${getComputedStyle(rangeeCollante).position === 'sticky' ? rangeeCollante.offsetHeight : 0}px`);
     majRangee();
@@ -753,9 +753,12 @@
     // Plusieurs lettres peuvent mener au même groupe (« J – L ») : on garde la première.
     const puces = new Map();
     for (const a of sousIndex.querySelectorAll('a')) if (!puces.has(a.hash.slice(1))) puces.set(a.hash.slice(1), a);
-    const titres = [...puces.keys()].map((id) => d.getElementById(id)?.closest('.groupe')).filter(Boolean);
+    // Chaque groupe (ou année de la chronologie) et l'ancre de sa pastille.
+    const titres = [...puces.keys()].map((id) => [d.getElementById(id)?.closest('.groupe, .annee'), id]).filter(([g]) => g);
     let marque = null;
     const rangee = sousIndex.closest('nav');
+    // Une rangée qui ne colle pas (grille des BIP sur grand écran) ne cache rien : elle ne compte pas.
+    const hRangee = () => (getComputedStyle(rangee).position === 'sticky' ? rangee.offsetHeight : 0);
     const poser = (puce) => {
       marque?.removeAttribute('aria-current');
       marque = puce;
@@ -773,7 +776,7 @@
       // On mesure le groupe, qui ne colle pas (son en-tête collant peut être poussé en bas du groupe) ;
       // le titre arrive 16 px sous la rangée (8 px de marge haute dans l'en-tête). En bas de page, la position est bornée.
       const groupe = cible.closest('.groupe') || cible;
-      const y = Math.min(Math.max(0, groupe.getBoundingClientRect().top + scrollY - rangee.offsetHeight - 8), d.documentElement.scrollHeight - innerHeight);
+      const y = Math.min(Math.max(0, groupe.getBoundingClientRect().top + scrollY - hRangee() - 8), d.documentElement.scrollHeight - innerHeight);
       dernierY = y;
       scrollTo({ top: y, behavior: 'auto' });
       history.replaceState(null, '', a.hash);
@@ -790,12 +793,12 @@
       barreCollante.classList.toggle('est-collee', barreCollante.getBoundingClientRect().top <= haut + 1 && scrollY > 0 && barreCollante.parentElement.getBoundingClientRect().top < haut);
       if (performance.now() < figeJusqua) return;
       // Le groupe lu est celui dont le haut a passé le bas de l'en-tête de groupe collant.
-      const ligne = haut + rangee.offsetHeight + 56;
+      const ligne = haut + hRangee() + 56;
       let actif = null;
-      for (const g of titres) { if (g.getBoundingClientRect().top <= ligne) actif = g; else break; }
+      for (const [g, id] of titres) { if (g.getBoundingClientRect().top <= ligne) actif = id; else break; }
       // Une pastille qui mène déjà au groupe lu reste marquée (lettre touchée d'un groupe « D – G »).
-      if (marque && actif && marque.hash.slice(1) === actif.getAttribute('aria-labelledby')) return;
-      const puce = actif ? puces.get(actif.getAttribute('aria-labelledby')) : null;
+      if (marque && actif && marque.hash.slice(1) === actif) return;
+      const puce = actif ? puces.get(actif) : null;
       if (puce === marque) return;
       // Revenu au-dessus du premier groupe : la rangée repart de son début.
       if (!puce) { marque?.removeAttribute('aria-current'); marque = null; sousIndex.scrollLeft = 0; return; }

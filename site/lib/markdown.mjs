@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { Marked, Renderer } from 'marked';
 import katex from 'katex';
-import { unites, dates } from './typo.mjs';
+import { unites, unitesHtml, dates } from './typo.mjs';
 
 export const escapeHtml = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -135,7 +135,7 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
     let html = marked.parse(text);
     if (linker) html = linker(html, def, { label, base });
     html = apostrophes(html);
-    html = typo(html, (def.lang || 'fr') === 'fr');
+    html = unitesHtml(typo(html, (def.lang || 'fr') === 'fr'));
     html = restoreMath(html, formulas);
     // Une figure seule dans un paragraphe : on retire le <p> qui l'enveloppe.
     html = html.replace(/<p>\s*(<figure class="figure[^"]*">[\s\S]*?<\/figure>)\s*<\/p>/g, '$1');

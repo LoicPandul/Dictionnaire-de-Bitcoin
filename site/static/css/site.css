@@ -149,6 +149,7 @@
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 120px; }
 /* Pages catégorie et lettre : au clavier, l'entrée atteinte reste sous la barre, la rangée et l'en-tête de groupe collants. */
 html:has(body.p-cat), html:has(body.p-lettre) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 64px); }
+html:has(body.p-chrono) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 16px); }
 body {
   margin: 0;
   background: var(--fond);
@@ -1059,6 +1060,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .chrono-frise { width: 100%; margin-top: 8px; }
 .chrono-frise ol { display: flex; align-items: flex-end; gap: 3px; height: 120px; }
 .chrono-frise li { flex: 1 1 0; height: 100%; min-width: 0; }
+.chrono-frise li:first-child { flex-grow: 2; }
 .chrono-frise a { position: relative; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding-bottom: 20px; color: var(--doux); text-decoration: none; }
 .frise-barre { display: block; height: calc(var(--h) * 100%); min-height: 4px; background: var(--lien); transform-origin: 50% 100%; }
 .frise-an { position: absolute; bottom: 0; left: 50%; translate: -50% 0; font: 700 12px / 1 var(--archivo); font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -1066,7 +1068,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (hover: hover) { .chrono-frise a:hover .frise-barre { background: var(--lien-survol); } .chrono-frise a:hover { color: var(--texte); } }
 .index-annees a { min-width: 56px; padding: 0 10px; font: 800 18px / 1 var(--archivo); font-stretch: 75%; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .chrono { padding: 0 var(--m); }
-.annee { padding-top: 40px; scroll-margin-top: calc(var(--haut, 0px) + 56px); }
+.annee { padding-top: 40px; }
 .annee-tete { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--texte); }
 .annee-titre { font: 900 var(--t-titre) / 1 var(--archivo); font-stretch: 62%; letter-spacing: -0.01em; }
 .evts { display: grid; }
@@ -1079,7 +1081,11 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .evt-texte code, .spec-resume code { font: 400 0.9em/1.4 var(--mono); padding: 0.05em 0.3em; background: var(--surface); }
 .evt-liens, .evt-sources { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; font-size: var(--t-note); line-height: 1.5; }
 .evt-liens a { font-weight: 650; color: var(--texte); text-decoration-color: var(--lien); }
-.evt-sources a { color: var(--doux); text-decoration-color: var(--trait); overflow-wrap: anywhere; }
+.evt-sources a { color: var(--doux); text-decoration-color: currentColor; overflow-wrap: anywhere; }
+@media (pointer: coarse), (max-width: 1023px) {
+  .evt-liens, .evt-sources, .spec-liens { row-gap: 0; }
+  .evt-liens a, .evt-sources a, .spec-liens a { display: inline-flex; align-items: center; min-height: 44px; }
+}
 .evt-cle { font-weight: 700; color: var(--doux); }
 @media (min-width: 1024px) {
   .evt { grid-template-columns: 12em minmax(0, 1fr); }
@@ -1088,15 +1094,18 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 /* ---------------------------------------------------------------- Spécifications */
 .specs-series { display: grid; gap: 8px; padding: 0 var(--m) var(--section); }
-@media (min-width: 1024px) { .specs-series { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .specs-series { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); } }
 .serie { display: grid; align-content: start; gap: 8px; height: 100%; padding: 28px 24px 30px; background: var(--surface); color: var(--texte); text-decoration: none; transition: background-color var(--d-hover) ease; }
 .serie .picto { width: 32px; height: 32px; }
 .serie-titre { font: 900 var(--t-titre) / 1 var(--archivo); font-stretch: 62%; color: var(--lien); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
 .serie-long { font-size: var(--t-ui); font-weight: 600; }
 .serie-n { font-size: var(--t-note); color: var(--doux); }
+.serie:active .serie-n { color: inherit; }
+@media (hover: hover) { .serie:hover .serie-n { color: inherit; } }
 .serie-intro { font-size: var(--t-ui); line-height: 1.5; }
 @media (hover: hover) { .serie:hover { background: var(--marque); } }
 .sous-index--specs a { min-width: 44px; justify-content: center; font-variant-numeric: tabular-nums; }
+@media (min-width: 640px) and (min-height: 501px) { .sous-index.sous-index--specs { position: static; } }
 .specs { padding: 0 var(--m) var(--section); }
 .serie-bloc + .serie-bloc { margin-top: 56px; }
 .specs-liste { display: grid; }
@@ -1223,6 +1232,12 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .index-annees { padding-inline: 0; padding-block: 0; }
 .index-annees ol { display: flex; overflow-x: auto; padding: 6px var(--m); scroll-padding-inline: var(--m); }
 .index-annees a { min-width: 56px; }
+@media (min-width: 640px) and (min-height: 501px) {
+  /* Ailleurs que sur téléphone, elle tient entière : cases égales, « Avant 2009 » sur deux cases, deux lignes au besoin. */
+  .index-annees ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(56px, 1fr)); overflow: visible; }
+  .index-annees li:first-child { grid-column: span 2; }
+  .index-annees a { min-width: 0; padding: 0 6px; }
+}
 
 /* Alphabets sous 360 px : six colonnes, chaque case garde ses 44 px de large. Après les règles de base. */
 @media (max-width: 359px) { .abc, .menu .abc, .blocs ol { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
