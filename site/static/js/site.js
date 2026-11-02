@@ -242,6 +242,8 @@
     let minuteur = 0;
     let lien = null;
     const montrer = (a) => {
+      // Le focus ou la souris passe à un autre lien : l'ancienne carte part tout de suite, elle ne couvre jamais le nouveau.
+      if (lien && lien !== a) cacher();
       clearTimeout(minuteur);
       minuteur = setTimeout(() => {
         lien = a;
@@ -689,7 +691,13 @@
     statut.textContent = tx('chargement');
     charger().then(() => { lancer(); if (!input.value) input.focus(); });
     input.addEventListener('input', () => index && lancer());
-    filtres.addEventListener('change', (e) => { cat = e.target.value; index && lancer(); });
+    // Un filtre touché à moitié visible au bord de la rangée revient entier dans l'écran.
+    const amener = (rangee, el) => {
+      const r = el.getBoundingClientRect(), g = rangee.getBoundingClientRect(), m = 16;
+      const dx = r.left < g.left + m ? r.left - g.left - m : r.right > g.right - m ? r.right - g.right + m : 0;
+      if (dx) rangee.scrollBy({ left: dx, behavior: reduit.matches ? 'auto' : 'smooth' });
+    };
+    filtres.addEventListener('change', (e) => { cat = e.target.value; amener(filtres, e.target.closest('.filtre')); index && lancer(); });
     filtres.addEventListener('click', (e) => { if (e.target.closest('[data-filtres-plus]')) { tout = true; refaireFiltres = true; index && lancer(); } });
     select?.addEventListener('change', () => { cat = select.value; index && lancer(); });
     pageForm.addEventListener('submit', (e) => { e.preventDefault(); index && lancer(); });
