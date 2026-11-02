@@ -83,7 +83,9 @@
   let lettreDuMot = [];
   const lettreDe = (i) => lettreDuMot[i] || lettres[0];
   // Coupe au mot un texte limité en lignes par le CSS (line-clamp) : jamais au milieu d'un mot ni sur un mot-outil.
-  const OUTILS = /\s(\S{1,3}|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|the|and|with|from|that|which|into|their|despite|while|whose|also)$/i;
+  // Même règle que lib/templates.mjs (resume) : mots-outils, élisions, nombres ; une initiale n'est pas une fin de phrase.
+  const OUTILS = /\s((?:[dljnmstc]|qu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its)$/i;
+  const FIN_PHRASE = /(?<!(?:^|[\s(])[A-Z])(?<!\bInc)[.!?](?=\s|$)/g;
   function couperAuMot(el, texte) {
     el.textContent = texte;
     if (el.scrollHeight <= el.clientHeight + 1) return;
@@ -97,9 +99,9 @@
     }
     let debut = mots.slice(0, bas).join(' ');
     // Une phrase entière qui tient finit sur son point, sans points de suspension (comme les résumés du build).
-    const fin = Math.max(...[...debut.matchAll(/[.!?](?=\s|$)/g)].map((m) => m.index));
+    const fin = Math.max(...[...debut.matchAll(FIN_PHRASE)].map((m) => m.index));
     if (fin > debut.length * 0.3) { el.textContent = debut.slice(0, fin + 1); return; }
-    const nettoyer = (x) => x.replace(/[\s,;:\u202f–-]+$/, '');
+    const nettoyer = (x) => x.replace(/[\s,;:.\u202f–-]+$/, '');
     debut = nettoyer(debut);
     while (OUTILS.test(debut) && debut.lastIndexOf(' ') > debut.length / 2) debut = nettoyer(debut.slice(0, debut.lastIndexOf(' ')));
     el.textContent = `${debut}…`;

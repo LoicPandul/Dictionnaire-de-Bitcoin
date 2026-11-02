@@ -147,8 +147,8 @@
 * { -webkit-tap-highlight-color: transparent; }
 [hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 120px; }
-/* Page catégorie : au clavier, l'entrée atteinte reste sous la barre, la rangée et l'en-tête de groupe collants. */
-html:has(body.p-cat) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 64px); }
+/* Pages catégorie et lettre : au clavier, l'entrée atteinte reste sous la barre, la rangée et l'en-tête de groupe collants. */
+html:has(body.p-cat), html:has(body.p-lettre) { scroll-padding-top: calc(var(--haut, 0px) + var(--rangee, 56px) + 64px); }
 body {
   margin: 0;
   background: var(--fond);
@@ -258,7 +258,7 @@ p, li, figcaption { text-wrap: pretty; }
 }
 .barre.est-cachee { transform: translateY(-100%); }
 /* Un filet sous la barre dès que la page a défilé : le texte ne passe plus dessous sans séparation. */
-.barre.est-defilee { box-shadow: 0 1px 0 var(--trait); }
+.barre.est-defilee:not(.est-cachee) { box-shadow: 0 1px 0 var(--trait); }
 .marque { display: inline-flex; align-items: center; min-height: 44px; margin-right: auto; color: var(--texte); font: 800 22px/1 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
 @media (hover: hover) { .marque:hover { color: var(--texte); text-decoration: underline; text-decoration-thickness: 2px; } }
 .nav { display: flex; gap: 4px; }
@@ -739,6 +739,9 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .tourner-lien { display: grid; align-content: start; gap: 8px; min-height: 150px; padding: 24px clamp(20px, 3vw, 36px) 28px; background: var(--surface); color: var(--texte); text-decoration: none; transition: background-color var(--d-hover) ease; }
 
 .tourner-sens { font-size: var(--t-note); font-weight: 600; color: var(--doux); }
+/* Sur un fond de survol ou de pression, les textes secondaires passent à l'encre (le gris n'y tient pas 4,5:1). */
+.tourner-lien:active .tourner-sens, .filtre input:not(:checked) + span:active b, .partie-cats a:active .menu-n, .cat-partie a:active .menu-n { color: var(--texte); }
+@media (hover: hover) { .tourner-lien:hover .tourner-sens, .filtre input:not(:checked) + span:hover b, .partie-cats a:hover .menu-n, .cat-partie a:hover .menu-n { color: inherit; } .tourner-lien:hover .tourner-sens { color: var(--texte); } .bouton-recherche:hover kbd { background: var(--fond); } }
 .tourner-lien--prev .tourner-sens::before { content: '← '; }
 .tourner-lien--next .tourner-sens::after { content: ' →'; }
 .tourner-nom { color: var(--lien); font-size: var(--t-enonce); line-height: 1.15; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; overflow-wrap: anywhere; }

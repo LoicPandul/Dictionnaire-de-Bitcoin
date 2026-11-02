@@ -79,15 +79,20 @@ export const insec = (html) => html.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|
 const hdt = (t) => insec(hd(t));
 // Résumé coupé au mot, jamais sur un mot-outil, un nombre entamé ni une lettre seule (« que… », « 500 00… », « et M… »).
 // La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.
+// Jamais de coupe sur un mot-outil, une élision (« d’une »), un nombre ou une lettre seule ; une initiale (« W. »)
+// n'est pas une fin de phrase. Même règle dans static/js/site.js et static/js/accueil.js.
+export const MOTS_OUTILS = /\s((?:[dljnmstc]|qu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its)$/i;
+export const FIN_PHRASE = /(?<!(?:^|[\s(])[A-Z])(?<!\bInc)[.!?](?=\s|$)/g;
 export const resume = (t, n = 84) => {
   t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
   if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
   // Une phrase entière qui tient, même courte, vaut mieux qu'une coupe : pas de points de suspension.
-  const fin = Math.max(...[...t.slice(0, n + 1).matchAll(/[.!?](?=\s)/g)].map((m) => m.index));
+  const fin = Math.max(...[...t.slice(0, n + 1).matchAll(FIN_PHRASE)].map((m) => m.index));
   if (fin > n * 0.3) return t.slice(0, fin + 1);
   let s = t.slice(0, n + 1);
   s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
-  while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
+  s = s.replace(/[\s,;:(«–-]+$/, '');
+  while (MOTS_OUTILS.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' ')).replace(/[\s,;:(«–-]+$/, '');
   // Une parenthèse ouverte et pas refermée : on coupe avant elle.
   if ((s.match(/\(/g) || []).length > (s.match(/\)/g) || []).length && s.lastIndexOf('(') > n / 2) s = s.slice(0, s.lastIndexOf('('));
   return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
@@ -266,7 +271,7 @@ function searchDialog() {
       <button class="recherche-fermer" type="button" data-search-close>${t.fermer}</button>
     </form>
     <p class="recherche-etat" role="status" aria-live="polite"></p>
-    <ul class="resultats" id="recherche-resultats" role="listbox" aria-label="${t.resultats}"></ul>
+    <ul class="resultats" id="recherche-resultats" role="listbox" aria-label="${t.resultats}" tabindex="-1"></ul>
   </div>
 </dialog>`;
 }
@@ -813,7 +818,7 @@ ${nouveautes}
 
 <section class="feuilleter" aria-labelledby="feuilleter-titre" data-tranche>
   <div class="feuilleter-tete">
-    <h2 class="titre" id="feuilleter-titre">${t.feuilleter(num(total))}</h2>
+    <h2 class="titre" id="feuilleter-titre">${t.feuilleter(num(total).replace(/\u202f/g, '\u00a0'))}</h2>
     <p class="enonce">${t.feuilleterEnonce}</p>
   </div>
   <nav class="blocs" aria-label="${t.lettresTranche}"><ol>${letterBlocks}</ol></nav>

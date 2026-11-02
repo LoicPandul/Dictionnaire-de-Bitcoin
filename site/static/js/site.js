@@ -14,15 +14,19 @@
   window.dicoTexte = tx;
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
   // Résumé coupé au mot (même règle que lib/templates.mjs, resume).
+  // Même règle que lib/templates.mjs : jamais de coupe sur un mot-outil, une élision, un nombre ; une initiale n'est pas une fin de phrase.
+  const MOTS_OUTILS = /\s((?:[dljnmstc]|qu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its)$/i;
+  const FIN_PHRASE = /(?<!(?:^|[\s(])[A-Z])(?<!\bInc)[.!?](?=\s|$)/g;
   const resume = (t, n = 84) => {
     t = String(t || '').replace(/'/g, '’').replace(/\s*(\.\.\.|…)$/, '');
     if (t.length <= n) return t === '' ? '' : /[.!?)»]$/.test(t) ? t : `${t}…`;
     // Une phrase entière qui tient, même courte, vaut mieux qu'une coupe : pas de points de suspension.
-    const fin = Math.max(...[...t.slice(0, n + 1).matchAll(/[.!?](?=\s)/g)].map((m) => m.index));
+    const fin = Math.max(...[...t.slice(0, n + 1).matchAll(FIN_PHRASE)].map((m) => m.index));
     if (fin > n * 0.3) return t.slice(0, fin + 1);
     let s = t.slice(0, n + 1);
     s = s.slice(0, Math.max(s.lastIndexOf(' '), 1));
-    while (/\s(\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très)$/i.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' '));
+    s = s.replace(/[\s,;:(«–-]+$/, '');
+    while (MOTS_OUTILS.test(s) && s.lastIndexOf(' ') > n / 2) s = s.slice(0, s.lastIndexOf(' ')).replace(/[\s,;:(«–-]+$/, '');
     if ((s.match(/\(/g) || []).length > (s.match(/\)/g) || []).length && s.lastIndexOf('(') > n / 2) s = s.slice(0, s.lastIndexOf('('));
     return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
   };
@@ -414,7 +418,7 @@
     const h = index ? index[Math.floor(Math.random() * index.length)] : null;
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="${B}/${T.lettre || 'lettre'}/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
-    const cats = avecCategories && index?.categories ? `<p>${tx('parCategorie')}</p><div class="cats-mini">${index.categories.map(([label, slug, chemin]) => `<a href="${chemin}">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
+    const cats = avecCategories && index?.categories ? `<p>${tx('parCategorie')}</p><div class="cats-mini">${[...index.categories].sort((a, b) => a[0].localeCompare(b[0], d.documentElement.lang)).map(([label, slug, chemin]) => `<a href="${chemin}">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
     return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>${tx('derniers')} ${derniers.map((m) => `<a class="lien" href="${B}/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}.</p>` : ''}${n ? `<p>${tx('motDuJour')} <a class="lien" href="${B}/${n.slug}/">${esc(affiche(n.title))}</a>. ${tx('auHasard')} <a class="lien" href="${B}/${h.slug}/">${esc(affiche(h.title))}</a>.</p>` : ''}<p>${tx('parLettre')}</p><div class="abc">${lettres}</div>${cats}</li>`;
   }
 
@@ -489,7 +493,11 @@
       if (e.target === dialog || e.target.closest('[data-search-close]')) dialog.close();
     });
     // À la fermeture, le focus revient là où il était (ou au bouton qui a ouvert), s'il est encore visible.
-    dialog.addEventListener('close', () => { [retour, declencheur].find((el) => el?.isConnected && el.getClientRects().length)?.focus?.({ preventScroll: true }); });
+    dialog.addEventListener('close', () => {
+      // Ouverte depuis le champ de la couverture : ce qui a été tapé y revient.
+      if (declencheur?.matches?.('[data-hero-search]')) declencheur.querySelector('input').value = champ.value;
+      [retour, declencheur].find((el) => el?.isConnected && el.getClientRects().length)?.focus?.({ preventScroll: true });
+    });
     d.addEventListener('click', (e) => {
       const b = e.target.closest('[data-search-open]');
       if (!b) return;
