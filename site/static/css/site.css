@@ -1088,10 +1088,18 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
      d'une fiche, une marge négative garde le pas des lignes. */
   .evt-liens, .evt-sources, .spec-liens, .mot-spec-liens { row-gap: 0; align-items: baseline; }
   .evt-liens a, .evt-sources a, .spec-liens a, .spec-meta dd a, .mot-spec-liens a { position: relative; display: inline-block; padding-block: 12px; }
-  .spec-meta dd a { margin-block: -12px; }
+  /* Métadonnées : un pas de 44 px pour toutes les lignes ; la zone d'un lien (44 px, marge négative) touche celle
+     de la ligne voisine sans la chevaucher, et son anneau ne barre pas le texte d'à côté. */
+  .spec .spec-meta { row-gap: 22px; }
+  .spec-meta dd a { padding-block: 11px; margin-block: -11px; }
+  /* Sous une définition de BIP, la carte garde ses marges : la marge intérieure des liens est reprise. */
+  .mot-spec-liens { margin-top: 2px; margin-bottom: -12px; }
   .evt-liens a::after, .evt-sources a::after, .spec-liens a::after, .spec-meta dd a::after, .mot-spec-liens a::after { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: max(100%, 44px); translate: -50% 0; }
 }
 .spec-meta div { align-items: baseline; }
+/* Rangées serrées (cases à 3 ou 4 px) : la case qui a le focus passe au-dessus de ses voisines, son anneau reste entier. */
+.index-az a:focus-visible, .blocs a:focus-visible, .abc a:focus-visible { position: relative; z-index: 1; }
+.index-az li:has(> a:focus-visible), .blocs li:has(> a:focus-visible), .abc li:has(> a:focus-visible) { position: relative; z-index: 1; }
 .evt-cle { font-weight: 700; color: var(--doux); }
 @media (min-width: 1024px) {
   .evt { grid-template-columns: 12em minmax(0, 1fr); }
