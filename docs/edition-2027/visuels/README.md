@@ -38,7 +38,7 @@ Logos et captures : 94 logos, 34 captures. 100 lignes citent une licence ou des 
 
 1. Inventaire des 1 408 entrées (catégorie, partie d'après `templates/parts.yaml`, nombre de mots, images existantes).
 2. Lecture des définitions en quatre lots (protocole et script ; clés, minage, confidentialité et attaques ; Lightning, surcouches, économie et histoire ; écosystème), plus les spécifications.
-3. Un schéma seulement quand il montre ce que la prose ne donne pas : un ordre, une structure, une simultanéité, une proportion, un avant/après. Il doit tenir dans la charte (un sujet en Figue, quatre rôles au plus, 40 mots au plus, rien sous 30 px). Priorité A aux notions qu'un débutant cherche.
+3. Un schéma seulement quand il montre ce que la prose ne donne pas : un ordre, une structure, une simultanéité, une proportion, un avant/après. Il doit tenir dans la charte (un sujet en Mandarine, quatre rôles au plus, 40 mots au plus, rien sous 30 px). Priorité A aux notions qu'un débutant cherche.
 4. Pas de doublon : quand deux entrées voisines expliquent le même mécanisme, le schéma va à l'entrée de référence.
 5. Les 52 entrées déjà illustrées : chaque image de 2026 a été ouverte et comparée à la définition.
 6. Contrôle par script (`/tmp/ed2027/t10-plan-visuels/controle.py`, hors dépôt) : chaque slug existe, la catégorie correspond, chaque `apres` fait 6 à 10 mots et ouvre exactement un paragraphe de `definition.md`, les rôles sont pris dans la liste de la charte, au plus deux lignes par entrée. Résultat : 277 lignes, 0 erreur.

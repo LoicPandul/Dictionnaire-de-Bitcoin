@@ -97,8 +97,8 @@ def _convert_table(table_text: str) -> Optional[str]:
         r"\par\vspace{0.25em}",
         r"{\tablesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.3}\setlength{\arrayrulewidth}{0.3pt}",
         r"\noindent\begin{xltabular}{\linewidth}{" + col_spec + "}",
-        # Filets de 0,3 pt : ceux de l'en-tête en Figue, ceux des lignes en noir
-        r"\arrayrulecolor{figue}\hline",
+        # Filets de 0,3 pt : ceux de l'en-tête en Forêt, ceux des lignes en noir
+        r"\arrayrulecolor{foret}\hline",
         " & ".join(rf"\textbf{{{_cell(h)}}}" for h in header) + r" \\ \hline\arrayrulecolor{black}",
     ]
     for row in rows:

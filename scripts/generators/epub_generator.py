@@ -49,7 +49,7 @@ blockquote { margin: 0.6em 1.5em; font-size: 0.95em; }
 img { max-width: 100%; }
 span.figure { display: block; text-align: center; margin: 0.8em 0; }
 span.legende { display: block; font-size: 0.8em; font-style: italic; margin-top: 0.3em; }
-span.credit { display: block; font-size: 0.7em; color: #6B6368; margin-top: 0.2em; }
+span.credit { display: block; font-size: 0.7em; color: #4F5F58; margin-top: 0.2em; }
 span.math-bloc { display: block; text-align: center; margin: 0.4em 0; }
 table { border-collapse: collapse; margin: 0.6em auto; font-size: 0.85em; }
 th, td { border: 1px solid #000; padding: 0.2em 0.4em; }

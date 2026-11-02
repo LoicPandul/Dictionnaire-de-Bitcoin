@@ -9,7 +9,7 @@ l'édition (clé `format` de templates/editions.yaml) :
   - `couleur` : 7 × 10 po (17,78 × 25,4 cm), intérieur couleur premium, papier blanc,
     24 à 828 pages ; l'édition complète ;
   - `poche` : 5 × 8 po (12,7 × 20,32 cm), intérieur noir et blanc ; l'édition « essentiel ».
-La couleur suit la charte (section 2) en recettes CMJN ; en noir et blanc, la Figue devient
+La couleur suit la charte (section 2) en recettes CMJN ; en noir et blanc, la Forêt devient
 du noir et les schémas passent en version « -nb ».
 """
 
@@ -109,18 +109,20 @@ def load_legal() -> dict:
 
 def _colors(fmt: PdfFormat) -> str:
     """Couleurs de la charte (section 2). Couleur : recettes CMJN de la charte, écrites telles
-    quelles (convertir l'hexadécimal donnerait une Figue plus terne). Noir et blanc : la Figue
-    devient du noir, l'Écorce garde son N70."""
+    quelles (convertir l'hexadécimal donnerait des teintes plus ternes). La Forêt, couleur de
+    travail de la charte, s'imprime exactement (7,90 : 1 sur Blanc). Noir et blanc : la Forêt
+    devient du noir, l'Écorce passe en N70 (en couleur, sa recette verte garde 4,5 : 1 sur le gris
+    du code, que le N70 n'atteint pas : 4,27)."""
     if fmt.color:
         return "\n".join([
-            "% Charte 2027 : Figue (C0 M100 J0 N35), Écorce (N70), gris 8 % du code ; texte en noir pur",
-            r"\definecolor{figue}{cmyk}{0,1,0,0.35}",
-            r"\definecolor{ecorce}{cmyk}{0,0,0,0.70}",
+            "% Charte 2027 : Forêt (C90 M0 J70 N65), Écorce (C40 M15 J35 N65), gris 8 % du code ; texte en noir pur",
+            r"\definecolor{foret}{cmyk}{0.90,0,0.70,0.65}",
+            r"\definecolor{ecorce}{cmyk}{0.40,0.15,0.35,0.65}",
             r"\definecolor{codebg}{cmyk}{0,0,0,0.08}",
         ])
     return "\n".join([
-        "% Charte 2027, intérieur noir et blanc : Figue en noir, Écorce N70, gris 8 % du code",
-        r"\definecolor{figue}{gray}{0}",
+        "% Charte 2027, intérieur noir et blanc : Forêt en noir, Écorce N70, gris 8 % du code",
+        r"\definecolor{foret}{gray}{0}",
         r"\definecolor{ecorce}{gray}{0.30}",
         r"\definecolor{codebg}{gray}{0.92}",
     ])
@@ -230,15 +232,15 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 \usepackage{{needspace}}
 
 % En-têtes : folio et titre courant en Archivo Catégorie, mots vedettes en capitales ;
-% titre courant en Figue, comme les mots vedettes qu'il reprend, folio en noir
+% titre courant en Forêt, comme les mots vedettes qu'il reprend, folio en noir
 \usepackage{{fancyhdr}}
 \newcommand{{\currentletter}}{{}}
 \newcommand{{\foliofont}}{{\categoriefont{_fs(fmt.folio)}}}
 \fancypagestyle{{dictionary}}{{
   \fancyhf{{}}
-  \fancyhead[CE,CO]{{\foliofont\color{{figue}}\currentletter}}
-  \fancyhead[LE]{{\foliofont\color{{figue}}\rightmark}}
-  \fancyhead[RO]{{\foliofont\color{{figue}}\leftmark}}
+  \fancyhead[CE,CO]{{\foliofont\color{{foret}}\currentletter}}
+  \fancyhead[LE]{{\foliofont\color{{foret}}\rightmark}}
+  \fancyhead[RO]{{\foliofont\color{{foret}}\leftmark}}
   \fancyfoot[C]{{\foliofont\thepage}}
   \renewcommand{{\headrulewidth}}{{0pt}}
   \renewcommand{{\footrulewidth}}{{0pt}}
@@ -256,14 +258,14 @@ def _preamble(fmt: PdfFormat, legal: dict, book: Book) -> str:
 \renewcommand{{\cleardoublepage}}{{\clearpage\if@twoside\ifodd\c@page\else\hbox{{}}\thispagestyle{{empty}}\newpage\fi\fi}}
 \makeatother
 
-\newcommand{{\cleanurl}}[1]{{{{\color{{figue}}\textenglish{{\url{{#1}}}}}}}}
+\newcommand{{\cleanurl}}[1]{{{{\color{{foret}}\textenglish{{\url{{#1}}}}}}}}
 
-% Mot vedette : Archivo Vedette, capitales, interlettrage +1 %, sans cartouche, en Figue
-\newcommand{{\vedette}}[1]{{{{\vedettefont{_fs(fmt.vedette)}\color{{figue}}#1}}}}
+% Mot vedette : Archivo Vedette, capitales, interlettrage +1 %, sans cartouche, en Forêt
+\newcommand{{\vedette}}[1]{{{{\vedettefont{_fs(fmt.vedette)}\color{{foret}}#1}}}}
 % Catégorie : Archivo Catégorie, casse de phrase
 \newcommand{{\categorie}}[1]{{{{\categoriefont{_fs(fmt.categorie)}#1}}}}
-% Renvois : « Voir aussi : » puis les titres en Archivo Vedette, séparés de 3 mm, en Figue (liens)
-\newcommand{{\renvoisfont}}{{\vedettefont{_fs(fmt.renvois)}\color{{figue}}}}
+% Renvois : « Voir aussi : » puis les titres en Archivo Vedette, séparés de 3 mm, en Forêt (liens)
+\newcommand{{\renvoisfont}}{{\vedettefont{_fs(fmt.renvois)}\color{{foret}}}}
 \newcommand{{\renvoislabel}}{{{_fs(fmt.renvois)}}}
 \newcommand{{\entrygap}}{{\vspace{{{fmt.entry_gap}}}}}
 """
@@ -281,7 +283,7 @@ def _half_title(book: Book) -> str:
     return rf"""
 \clearpage\thispagestyle{{empty}}
 \vspace*{{\fill}}
-\begin{{center}}{{\titrefont\fontsize{{20}}{{24}}\selectfont\color{{figue}} {escape(book.edition.title)}}}\end{{center}}
+\begin{{center}}{{\titrefont\fontsize{{20}}{{24}}\selectfont\color{{foret}} {escape(book.edition.title)}}}\end{{center}}
 \vspace*{{\fill}}
 \clearpage"""
 
@@ -291,7 +293,7 @@ def _title_page(book: Book, legal: dict) -> str:
 \clearpage\thispagestyle{{empty}}
 \vspace*{{3cm}}
 \begin{{center}}
-{{\couverturefont\fontsize{{30}}{{32}}\selectfont\color{{figue}} {escape(book.edition.title.upper())}}}\\[0.6cm]
+{{\couverturefont\fontsize{{30}}{{32}}\selectfont\color{{foret}} {escape(book.edition.title.upper())}}}\\[0.6cm]
 {{\categoriefont\fontsize{{11}}{{14}}\selectfont {escape(book.edition.subtitle)}}}
 \end{{center}}
 \vfill
@@ -344,7 +346,7 @@ def _final_page(book: Book, legal: dict, fmt: PdfFormat) -> str:
 
 
 def _front_title(title: str) -> str:
-    return rf"\begin{{center}}{{\titrefont\fontsize{{16}}{{20}}\selectfont\color{{figue}} {title}}}\end{{center}}\vspace{{0.4em}}"
+    return rf"\begin{{center}}{{\titrefont\fontsize{{16}}{{20}}\selectfont\color{{foret}} {title}}}\end{{center}}\vspace{{0.4em}}"
 
 
 def _front_text(title: str, template: str) -> str:
@@ -404,7 +406,7 @@ def _part_opener(section: Section, fmt: PdfFormat) -> str:
 \renewcommand{{\currentletter}}{{}}
 \phantomsection\hypertarget{{part-{section.id}}}{{}}\label{{part:{section.id}}}
 \vspace*{{4cm}}
-\noindent{{\couverturefont\fontsize{{{fmt.part}}}{{{fmt.part}}}\selectfont\raggedright\color{{figue}} {escape(section.title.upper())}\par}}
+\noindent{{\couverturefont\fontsize{{{fmt.part}}}{{{fmt.part}}}\selectfont\raggedright\color{{foret}} {escape(section.title.upper())}\par}}
 {intro}
 \clearpage"""
 
@@ -415,7 +417,7 @@ def _letter_page(letter: str, fmt: PdfFormat) -> str:
 \thispagestyle{{letterpage}}
 \renewcommand{{\currentletter}}{{{letter}}}
 \vspace*{{\fill}}
-\begin{{center}}{{\couverturefont\fontsize{{{fmt.letter}}}{{{fmt.letter}}}\selectfont\color{{figue}} {letter}}}\end{{center}}
+\begin{{center}}{{\couverturefont\fontsize{{{fmt.letter}}}{{{fmt.letter}}}\selectfont\color{{foret}} {letter}}}\end{{center}}
 \vspace*{{\fill}}
 \clearpage
 \pagestyle{{dictionary}}"""
@@ -425,7 +427,7 @@ def _letter_heading(letter: str) -> str:
     return rf"""
 \renewcommand{{\currentletter}}{{{letter}}}
 \par\needspace{{6\baselineskip}}\vspace{{1.2em}}
-\noindent{{\couverturefont\fontsize{{28}}{{30}}\selectfont\color{{figue}} {letter}}}\par\nopagebreak
+\noindent{{\couverturefont\fontsize{{28}}{{30}}\selectfont\color{{foret}} {letter}}}\par\nopagebreak
 \vspace{{0.3em}}"""
 
 

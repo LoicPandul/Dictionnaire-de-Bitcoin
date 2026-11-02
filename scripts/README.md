@@ -10,7 +10,7 @@ EPUB, pour deux éditions décrites dans `templates/editions.yaml` :
 
 Le format vient de la clé `format` de l'édition (`couleur` par défaut, ou `poche`). La mise en
 page suit la charte graphique 2027 : polices Archivo et Atkinson Hyperlegible Mono (`assets/fonts/`),
-couleurs de la charte en recettes CMJN pour le livre couleur (Figue pour les titres, les mots
+couleurs de la charte en recettes CMJN pour le livre couleur (Forêt pour les titres, les mots
 vedettes, les renvois et les titres courants ; texte courant en noir). Le livre couleur prend les
 schémas en couleur : le SVG de chaque schéma est converti en PDF vectoriel par Chrome sans
 interface (cache dans `build/cache/schemas/`), à défaut le PNG couleur ; le poche prend les
