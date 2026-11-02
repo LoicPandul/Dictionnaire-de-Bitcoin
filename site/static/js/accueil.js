@@ -16,10 +16,12 @@
 
   let termes = null;
   let longueurs = null;
+  let lettresMots = '';
   const charger = () =>
     Promise.all([window.dicoIndex(), fetch(`${B}/tranche.json`).then((r) => r.json())]).then(([idx, tranche]) => {
       termes = idx;
       longueurs = tranche.longueurs;
+      lettresMots = tranche.lettres || '';
     });
 
   // ------------------------------------------------------------ Le mot du jour
@@ -80,7 +82,10 @@
     bande.setAttribute('aria-valuenow', String(i + 1));
     bande.setAttribute('aria-valuetext', `${t.title}, ${t.cat[0]}`);
   }
-  const lettreDe = (i) => lettres.find((l) => i >= l.debut && i < l.fin) || lettres[0];
+  // Chaque lettre réunit ses mots (ids, dans l'ordre du livre), comme sa page de lettre ; debut est le premier mot
+  // de sa plus longue série consécutive, là où l'aiguille se pose quand on choisit la lettre.
+  let lettreDuMot = [];
+  const lettreDe = (i) => lettreDuMot[i] || lettres[0];
   const hauteur = (i, H) => Math.max(6, Math.round((Math.sqrt(longueurs[i]) / Math.sqrt(maxLen)) * H));
   let maxLen = 1;
 
@@ -92,7 +97,7 @@
     lettreActive = l;
     const W = bande.clientWidth;
     const H = bande.clientHeight;
-    const n = l.fin - l.debut;
+    const n = l.ids.length;
     const pas = Math.min(28, W / n);
     const larg = Math.max(1.5, Math.min(pas * 0.5, 6));
     const x0 = (W - pas * n) / 2;
@@ -106,7 +111,7 @@
     svg.append(vise);
     const frag = d.createDocumentFragment();
     for (let k = 0; k < n; k++) {
-      const i = l.debut + k;
+      const i = l.ids[k];
       const h = hauteur(i, H - 8);
       const r = d.createElementNS(NS, 'rect');
       r.setAttribute('class', 'trait');
@@ -126,12 +131,12 @@
     bande.replaceChildren(svg);
   }
   function viser(i) {
-    if (!lettreActive || i < lettreActive.debut || i >= lettreActive.fin) {
+    if (!lettreActive || lettreDe(i) !== lettreActive) {
       dessinerLettre(lettreDe(i));
     }
     const pas = Number(svg.dataset.pas);
     const x0 = Number(svg.dataset.x0);
-    const k = i - lettreActive.debut;
+    const k = lettreActive.ids.indexOf(i);
     vise.setAttribute('x', (x0 + k * pas).toFixed(2));
     vise.setAttribute('width', pas.toFixed(2));
     montrer(i);
@@ -150,7 +155,7 @@
       if (mode !== 'bureau' || !svg) return;
       const rect = bande.getBoundingClientRect();
       const k = Math.floor((e.clientX - rect.left - Number(svg.dataset.x0)) / Number(svg.dataset.pas));
-      const i = Math.min(lettreActive.fin - 1, Math.max(lettreActive.debut, lettreActive.debut + k));
+      const i = lettreActive.ids[Math.min(lettreActive.ids.length - 1, Math.max(0, k))];
       if (i !== courant) viser(i);
     });
     bande.addEventListener('click', () => { if (mode === 'bureau') location.href = `${B}/${termes[courant].slug}/`; });
@@ -222,13 +227,28 @@
 
   function brancherTranche() {
     // Les lettres de la tranche : début et fin de chaque lettre dans l'index alphabétique.
-    lettres = [];
+    const parLettre = new Map();
+    let prec = 'A';
     termes.forEach((t, i) => {
-      const l = t.slug[0].toUpperCase();
-      const last = lettres.at(-1);
-      if (last && last.l === l) last.fin = i + 1;
-      else lettres.push({ l, debut: i, fin: i + 1 });
+      // La lettre des pages de lettre ; à défaut (ancien tranche.json, chiffre), l'initiale du titre ou la précédente.
+      let l = (lettresMots[i] || t.title.normalize('NFD').replace(/[^A-Za-z]/g, '')[0] || '').toUpperCase();
+      if (!/^[A-Z]$/.test(l)) l = prec;
+      prec = l;
+      if (!parLettre.has(l)) parLettre.set(l, []);
+      parLettre.get(l).push(i);
     });
+    lettres = [...parLettre.keys()].sort().map((l) => {
+      const ids = parLettre.get(l);
+      let debut = ids[0];
+      let meilleure = 0;
+      for (let k = 0, depart = 0; k < ids.length; k++) {
+        if (k > 0 && ids[k] !== ids[k - 1] + 1) depart = k;
+        if (k - depart + 1 > meilleure) { meilleure = k - depart + 1; debut = ids[depart]; }
+      }
+      return { l, ids, debut };
+    });
+    lettreDuMot = [];
+    for (const l of lettres) for (const i of l.ids) lettreDuMot[i] = l;
     maxLen = Math.max(...longueurs);
     // Départ sur un mot au hasard, différent du mot du jour affiché juste au-dessus.
     const duJour = jour() % termes.length;
@@ -245,8 +265,14 @@
       let i = courant;
       const l = lettreDe(i);
       const k = lettres.indexOf(l);
-      if (e.key === 'ArrowRight' || e.key === 'ArrowUp') i++;
-      else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') i--;
+      // Bureau : les flèches parcourent les mots de la lettre affichée, puis passent à la lettre voisine.
+      const pos = l.ids.indexOf(i);
+      const avant = e.key === 'ArrowRight' || e.key === 'ArrowUp';
+      const arriere = e.key === 'ArrowLeft' || e.key === 'ArrowDown';
+      if (mode === 'bureau' && avant) i = l.ids[pos + 1] ?? (lettres[k + 1] || l).ids[0];
+      else if (mode === 'bureau' && arriere) i = l.ids[pos - 1] ?? (lettres[k - 1] || l).ids.at(-1);
+      else if (avant) i++;
+      else if (arriere) i--;
       else if (e.key === 'PageDown') i = (lettres[k + 1] || l).debut;
       else if (e.key === 'PageUp') i = (lettres[k - 1] || l).debut;
       else if (e.key === 'Home') i = 0;

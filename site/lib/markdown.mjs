@@ -61,6 +61,19 @@ const apostrophes = (html) =>
     .map((part, i) => (i % 2 ? part : part.replace(/&#39;/g, '’').replace(/(^|>)([^<]*)/g, (m, a, t) => a + t.replace(/'/g, '’'))))
     .join('');
 
+// Espaces et coupures, sur le texte seul (ni balises, ni code) : une référence « BIP-0347 » ne se coupe pas à
+// son trait d'union, les groupes de chiffres restent ensemble, et en français la ponctuation haute (; : ! ?)
+// et les guillemets prennent l'espace fine insécable : jamais de deux-points en début de ligne.
+const typo = (html, francais) =>
+  html
+    .split(/(<pre[\s\S]*?<\/pre>|<code[\s\S]*?<\/code>)/)
+    .map((part, i) => (i % 2 ? part : part.replace(/(^|>)([^<]*)/g, (m, a, t) => {
+      let x = t.replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f');
+      if (francais) x = x.replace(/ ([;:!?])/g, '\u202f$1').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»');
+      return a + x.replace(/\b(BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)-(\d+)\b/g, '<span class="insec">$1-$2</span>');
+    })))
+    .join('');
+
 // linker (facultatif) : ajoute les renvois dans le texte, avant que les formules soient remises en place.
 // base : préfixe de langue des liens (« » ou « /en »). texts : libellés (agrandir le schéma).
 // Les schémas pointent vers /<slug>/assets/ (le seul exemplaire des fichiers, partagé par les langues),
@@ -115,6 +128,7 @@ export function createRenderer({ linker = null, label = (x) => x, base = '', agr
     let html = marked.parse(text);
     if (linker) html = linker(html, def, { label, base });
     html = apostrophes(html);
+    html = typo(html, (def.lang || 'fr') === 'fr');
     html = restoreMath(html, formulas);
     // Une figure seule dans un paragraphe : on retire le <p> qui l'enveloppe.
     html = html.replace(/<p>\s*(<figure class="figure[^"]*">[\s\S]*?<\/figure>)\s*<\/p>/g, '$1');

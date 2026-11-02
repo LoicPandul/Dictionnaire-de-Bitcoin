@@ -187,7 +187,8 @@ a { color: var(--lien); text-decoration: underline; text-decoration-thickness: 1
 .masque { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .defs { position: absolute; width: 0; height: 0; overflow: hidden; }
 .evitement { position: absolute; left: var(--m); top: 8px; z-index: 100; padding: 12px 16px; background: var(--bouton); color: var(--sur-bouton); font-weight: 600; clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; white-space: nowrap; }
-.evitement:focus { clip-path: none; width: auto; height: auto; }
+/* Au focus, le lien d'évitement couvre toute la barre : rien ne dépasse derrière lui. */
+.evitement:focus { clip-path: none; top: 0; left: 0; right: 0; width: auto; height: var(--barre); display: flex; align-items: center; padding: 0 var(--m); }
 .picto { width: 1.1em; height: 1.1em; flex: none; fill: currentColor; }
 .ico { width: 22px; height: 22px; flex: none; }
 .barre .bouton-recherche { flex: none; }
@@ -639,14 +640,19 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 /* Ponctuation logée dans la formule : le texte courant, pas la police de KaTeX (corps 1,21 em). */
 .formule-ponct { font: 400 calc(1em / 1.21) / 1 var(--archivo); }
 .prose pre code { padding: 0; background: none; font-size: 15px; line-height: 1.55; overflow-wrap: normal; }
-/* Téléphone : le bloc de code va jusqu'au bord, en 14 px. Bloc de code ou schéma plus large que l'écran :
+/* Bloc de code (à toutes les largeurs) ou schéma (sur téléphone, seul cas où il défile) plus large que sa boîte :
    un filet Figue au bord droit tant qu'il reste à voir (une bordure, que le contenu qui défile ne recouvre pas). */
+.prose pre { border-right: 4px solid transparent; }
+.prose pre.a-suivre { border-right-color: var(--lien); }
+/* Téléphone : le bloc de code va jusqu'au bord, en 14 px. */
 @media (max-width: 639px) {
   .prose pre { margin-inline: calc(-1 * var(--marge)); padding-inline: var(--marge); }
   .prose pre code { font-size: 14px; }
-  .prose pre, .prose .figure-cadre { border-right: 4px solid transparent; }
-  .prose pre.a-suivre, .prose .figure-cadre.a-suivre { border-right-color: var(--lien); }
+  .prose .figure-cadre { border-right: 4px solid transparent; }
+  .prose .figure-cadre.a-suivre { border-right-color: var(--lien); }
 }
+/* Une référence « BIP-0347 » ne se coupe pas à son trait d'union. */
+.insec { white-space: nowrap; }
 .prose blockquote { margin: 1.4em 0; padding: 16px 20px; background: var(--surface); }
 .prose blockquote p { margin: 0; }
 /* Schémas : posés sur le fond ; en mode sombre, sur une carte blanche de 16 px de marge (charte). */
@@ -790,6 +796,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (max-width: 639px) { .cat-note-premiere { display: none; } .cat-note.deplie .cat-note-premiere { display: inline; } }
 .cat-note.deplie .cat-note-suite { display: inline; }
 .lire-suite { justify-self: start; min-height: 44px; padding: 8px 0; border: 0; background: none; color: var(--lien); font-size: var(--t-ui); font-weight: 600; text-decoration: underline; text-underline-offset: 0.2em; }
+.lire-suite:active { color: var(--lien-survol); text-decoration-thickness: 2px; }
+@media (hover: hover) { .lire-suite:hover { color: var(--lien-survol); text-decoration-thickness: 2px; } }
 .cat-choix { display: none; }
 .rayon { padding: var(--section) var(--m); }
 .rayon-titre { font-size: var(--t-nom); font-weight: 700; margin-bottom: 14px; }
@@ -977,6 +985,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .partie-entete { display: grid; gap: 2px; padding-bottom: 12px; border-bottom: 2px solid var(--texte); margin-bottom: 8px; }
 .partie-titre { font: 800 var(--t-titre) / 1 var(--archivo); font-stretch: 75%; letter-spacing: -0.015em; }
 .partie-titre a { display: inline-block; padding-block: 8px; color: var(--texte); text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+.partie-titre a:active { color: var(--lien-survol); text-decoration-thickness: 3px; }
+@media (hover: hover) { .partie-titre a:hover { color: var(--lien-survol); text-decoration-thickness: 3px; } }
 .partie-n { font-size: var(--t-note); color: var(--doux); font-variant-numeric: tabular-nums; }
 @media (min-width: 1280px) {
   .parties { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--g); row-gap: 72px; }

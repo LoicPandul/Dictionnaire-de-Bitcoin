@@ -71,8 +71,12 @@ export function headwordEm(raw) {
 export const affiche = (title) => String(title).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
 const breakable = (title) => h(affiche(title)).replace(/_/g, '_<wbr>');
 // Espaces fines insécables de la typographie française dans les textes affichés (descriptions).
-export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1');
+// Les groupes de chiffres (« 100 000 000 ») ne se séparent jamais en fin de ligne : espace fine insécable.
+export const fr = (t = '') => String(t).replace(/'/g, '’').replace(/\.\.\./g, '…').replace(/« /g, '«\u202f').replace(/ »/g, '\u202f»').replace(/ ([;:!?])/g, '\u202f$1').replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u202f');
 const hd = (t) => h(fr(t));
+// Texte courant (jamais dans un attribut) : une référence « BIP-0347 » ne se coupe pas à son trait d'union.
+export const insec = (html) => html.replace(/\b(BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)-(\d+)\b/g, '<span class="insec">$1-$2</span>');
+const hdt = (t) => insec(hd(t));
 // Résumé coupé au mot, jamais sur un mot-outil, un nombre entamé ni une lettre seule (« que… », « 500 00… », « et M… »).
 // La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.
 export const resume = (t, n = 84) => {
@@ -331,7 +335,7 @@ function entry(def, picto, { showCategory = true } = {}) {
   const sujet = bip ? def.related.filter((r) => !/^BIP(-\d|$)/.test(r.titleFr || r.title)).slice(0, 2).map((r) => breakable(r.title)).join(', ') : '';
   return `<li><a class="entree" href="${lien.def(def.slug)}">
   <span class="entree-nom" data-vt-nom>${showCategory && !bip ? picto.use(def.categorySlug) : ''}${breakable(def.title)}</span>${sujet ? `<span class="entree-sujet">${sujet}</span>` : ''}
-  ${resumeDe(def) ? `<span class="entree-desc"${langAttr(def)}>${hd(resume(resumeDe(def), 120))}</span>` : ''}
+  ${resumeDe(def) ? `<span class="entree-desc"${langAttr(def)}>${hdt(resume(resumeDe(def), 120))}</span>` : ''}
 </a></li>`;
 }
 
@@ -444,7 +448,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
   const renvoi = (r) => `<li><a class="renvoi" href="${lien.def(r.slug)}">
   <span class="renvoi-nom" data-vt-nom>${breakable(r.title)}</span>
   <span class="renvoi-cat">${picto.use(r.categorySlug)}${h(categoryLabel(r.category))}</span>
-  ${resumeDe(r) ? `<span class="renvoi-desc"${langAttr(r)}>${hd(resume(resumeDe(r), 120))}</span>` : ''}
+  ${resumeDe(r) ? `<span class="renvoi-desc"${langAttr(r)}>${hdt(resume(resumeDe(r), 120))}</span>` : ''}
 </a></li>`;
   const related = def.related.length
     ? `<aside class="renvois" aria-labelledby="renvois-titre">
@@ -490,7 +494,7 @@ export function definitionPage(def, { html, math, assets, jsonLd, total, letters
     return `<a class="tourner-lien tourner-lien--${dir}" href="${lien.def(d.slug)}" rel="${dir}" data-turn="${dir}">
   <span class="tourner-sens">${label}</span>
   <span class="tourner-nom">${breakable(d.title)}</span>
-  ${resumeDe(d) ? `<span class="tourner-desc"${langAttr(d)}>${hd(resume(resumeDe(d), 120))}</span>` : ''}
+  ${resumeDe(d) ? `<span class="tourner-desc"${langAttr(d)}>${hdt(resume(resumeDe(d), 120))}</span>` : ''}
 </a>`;
   };
   const editUrl = `${site.github}/blob/main/${def.sourcePath}`;
@@ -629,7 +633,7 @@ export function categoryPage(cat, note, { assets, jsonLd, letters, total, catego
   <p class="enonce cat-note">${t.defsDuDico(plural(cat.defs.length, t.definition))}${premiere ? `<span class="cat-note-premiere"> ${h(premiere)}</span>` : ''}${suite ? `<span class="cat-note-suite" data-repliable-suite> ${h(suite)}</span>` : ''}</p>
   <section class="cat-debut" aria-labelledby="debut-titre">
     <h2 class="cat-debut-titre" id="debut-titre">${t.pourCommencer}</h2>
-    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareTitres(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="${lien.def(d.slug)}"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${resumeDe(d) ? `<span class="renvoi-desc"${langAttr(d)}>${hd(resume(resumeDe(d)))}</span>` : ''}</a></li>`).join('')}</ul>
+    <ul>${[...cat.defs].sort((a, b) => b.citedBy.length - a.citedBy.length || compareTitres(a.title, b.title)).slice(0, 4).map((d) => `<li><a class="renvoi" href="${lien.def(d.slug)}"><span class="renvoi-nom" data-vt-nom>${breakable(d.title)}</span>${resumeDe(d) ? `<span class="renvoi-desc"${langAttr(d)}>${hdt(resume(resumeDe(d)))}</span>` : ''}</a></li>`).join('')}</ul>
   </section>
 </header>
 <div class="liste-bloc">

@@ -94,9 +94,15 @@
 
   // ------------------------------------------------------------ Blocs de code plus larges que la colonne : un filet Figue au bord droit tant qu'il reste à voir
   const larges = d.querySelectorAll('.prose pre, .prose .figure-cadre');
-  const aSuivre = (el) => el.classList.toggle('a-suivre', el.scrollWidth - el.clientWidth - el.scrollLeft > 2);
+  // Un dépassement qui ne mord que sur la marge intérieure droite ne cache rien : pas de filet.
+  const aSuivre = (el) => el.classList.toggle('a-suivre', el.scrollWidth - el.clientWidth - el.scrollLeft > Math.max(2, (parseFloat(getComputedStyle(el).paddingRight) || 0) - 1));
   larges.forEach((el) => { aSuivre(el); el.addEventListener('scroll', () => aSuivre(el), { passive: true }); });
-  if (larges.length) addEventListener('resize', () => larges.forEach(aSuivre), { passive: true });
+  if (larges.length) {
+    addEventListener('resize', () => larges.forEach(aSuivre), { passive: true });
+    // La police à chasse fixe arrive après le premier calcul : on recompte une fois chargée.
+    d.fonts?.ready.then(() => larges.forEach(aSuivre));
+    addEventListener('load', () => larges.forEach(aSuivre));
+  }
 
   // ------------------------------------------------------------ Renvois entrants repliés au-delà de 8
   for (const ul of d.querySelectorAll('[data-repliable]')) {
@@ -548,19 +554,23 @@
       const n = new Map();
       for (const r of tous) n.set(r.t.cat[1], (n.get(r.t.cat[1]) || 0) + 1);
       const liste = index.categories.filter(([, slug]) => n.has(slug) || slug === cat).sort((a, b) => (n.get(b[1]) || 0) - (n.get(a[1]) || 0));
-      const visibles = tout ? liste : liste.slice(0, 8);
+      // Le filtre choisi reste toujours visible, même au-delà des huit premiers.
+      const visibles = tout ? liste : liste.slice(0, 8).concat(liste.slice(8).filter(([, slug]) => slug === cat));
       filtres.innerHTML = `<legend class="masque">${tx('filtrer')}</legend>
         <label class="filtre"><input type="radio" name="cat" value=""${cat ? '' : ' checked'}><span>${tx('toutes')} <b>${tous.length}</b></span></label>
         ${visibles.map(([label, slug]) => `<label class="filtre"><input type="radio" name="cat" value="${slug}"${slug === cat ? ' checked' : ''}><span>${picto(slug)}${esc(label)} <b>${n.get(slug) || 0}</b></span></label>`).join('')}
         ${liste.length > visibles.length ? `<button class="filtre-plus" type="button" data-filtres-plus>+ ${liste.length - visibles.length}</button>` : ''}`;
       if (select) select.innerHTML = `<option value="">${tx('toutes')} (${tous.length})</option>${liste.map(([label, slug]) => `<option value="${slug}"${slug === cat ? ' selected' : ''}>${esc(label)} (${n.get(slug) || 0})</option>`).join('')}`;
     };
-    const lancer = () => {
-      const q = input.value;
+    const adresse = (q) => {
       const u = new URL(location.href);
       u.searchParams.set('q', q);
       if (cat) u.searchParams.set('cat', cat); else u.searchParams.delete('cat');
       history.replaceState(null, '', u);
+    };
+    const lancer = () => {
+      const q = input.value;
+      adresse(q);
       if (!q.trim()) {
         sortie.innerHTML = '';
         filtres.innerHTML = '';
@@ -572,11 +582,16 @@
       // Une seule recherche : les filtres comptent ses résultats et le filtre choisi la découpe, jamais une autre liste.
       const trouve = chercher(q, { limite: 2000 });
       const tousRes = trouve.tous || [];
+      // Le filtre choisi n'a plus rien pour la nouvelle requête : retour à « Toutes ».
+      if (cat && !tousRes.some((r) => r.t.cat[1] === cat)) { cat = ''; qFiltres = null; adresse(q); }
       // Les filtres ne sont refaits que si la requête change : changer de filtre garde le focus du clavier.
       if (q !== qFiltres || refaireFiltres) {
         const plus = refaireFiltres;
         etiquettes(tousRes);
         qFiltres = q;
+        // Sur téléphone, la rangée défile jusqu'au filtre choisi.
+        const choisi = filtres.querySelector('input:checked')?.closest('.filtre');
+        if (choisi && filtres.scrollWidth > filtres.clientWidth) centrer(filtres, choisi);
         refaireFiltres = false;
         if (plus) filtres.querySelectorAll('input')[9]?.focus();
       }
@@ -702,6 +717,8 @@
       const ligne = haut + rangee.offsetHeight + 56;
       let actif = null;
       for (const g of titres) { if (g.getBoundingClientRect().top <= ligne) actif = g; else break; }
+      // Une pastille qui mène déjà au groupe lu reste marquée (lettre touchée d'un groupe « D – G »).
+      if (marque && actif && marque.hash.slice(1) === actif.getAttribute('aria-labelledby')) return;
       const puce = actif ? puces.get(actif.getAttribute('aria-labelledby')) : null;
       if (puce === marque) return;
       // Revenu au-dessus du premier groupe : la rangée repart de son début.

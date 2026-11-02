@@ -240,7 +240,8 @@ for (const code of Object.keys(LANGUES)) {
   }));
   // La tranche : longueur de chaque définition, dans le même ordre que l'index.
   // Avec le nombre de renvois reçus, qui départage les résultats de recherche de même rang.
-  write(`${nIndex(L).slice(1)}${code === 'fr' ? '' : '/'}tranche.json`, JSON.stringify({ longueurs: definitions.map((d) => d.body.length), renvois: definitions.map((d) => d.citedBy.length) }));
+  // Et la lettre de chaque mot, celle des pages de lettre : la tranche de l'accueil groupe ses traits de la même façon.
+  write(`${nIndex(L).slice(1)}${code === 'fr' ? '' : '/'}tranche.json`, JSON.stringify({ longueurs: definitions.map((d) => d.body.length), renvois: definitions.map((d) => d.citedBy.length), lettres: definitions.map((d) => d.letter).join('') }));
   if (code === 'fr') {
     // La tranche dessinée, en masque teintable pour le signet des pages de définition :
     // un trait par mot, hauteur en racine carrée de la longueur, étirée à la largeur du bloc.

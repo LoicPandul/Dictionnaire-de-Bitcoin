@@ -172,7 +172,8 @@ for (const letter of fs.readdirSync(sourceDir).filter((d) => /^[a-z]$/.test(d)))
 const apos = (x) => x.replace(/['’]/g, '’');
 const slugEn = new Map(en.map((d) => [d.slugs.fr, d.slug]));
 const sansCredit = credits.filter(([slug, c]) => [['', slug], ['en', slugEn.get(slug)]].filter(([, s]) => s).some(([l, s]) => {
-  const html = apos(lire(page(l, s)));
+  // Les espaces fines insécables posées au build (« B », 1 000) comptent comme des espaces.
+  const html = apos(lire(page(l, s))).replace(/\u202f/g, ' ');
   return !html.includes(apos(`class="figure-credit">`)) || !html.includes(apos(`<span lang="fr">${esc(c)}</span>`));
 }));
 (sansCredit.length === 0 ? ok : ko)(`${credits.length} image(s) créditée(s), crédit affiché sous l'image en français et en anglais${sansCredit.length ? ` ; manquant : ${sansCredit.map(([s]) => s).join(', ')}` : ''}`);
