@@ -215,5 +215,14 @@ for (const page of pages) {
 (casses.size === 0 ? ok : ko)(`${nLiens} liens internes dans ${pages.length} pages, ${casses.size} cassé(s)`);
 for (const [k, p] of [...casses].slice(0, 15)) console.log(`       ${k} dans ${p}`);
 
+// 7. Coupe des résumés : la règle des mots-outils et celle des références sont recopiées dans les scripts du navigateur.
+console.log('Règles recopiées');
+const sources = ['lib/templates.mjs', 'static/js/site.js', 'static/js/accueil.js'].map((f) => [f, fs.readFileSync(path.join(here, f), 'utf8')]);
+for (const [nom, motif] of [['mots-outils', /\/\\s\(\(\?:\[dljnmstc\][^\n]*?\)\$\/i/], ['références insécables', /\/\\b\(\?:\(\?:BIP[^\n]*?\\b\/g/]]) {
+  const vus = sources.map(([f, s]) => [f, s.match(motif)?.[0]]);
+  const pareils = vus.every(([, m]) => m && m === vus[0][1]);
+  (pareils ? ok : ko)(`règle des ${nom} identique dans ${vus.map(([f]) => f).join(', ')}`);
+}
+
 console.log(failures ? `\n${failures} échec(s).` : '\nTout est conforme.');
 process.exit(failures ? 1 : 0);

@@ -3,6 +3,9 @@
   const d = document;
   const reduit = matchMedia('(prefers-reduced-motion: reduce)');
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  // Une référence ne se coupe pas (même règle que lib/templates.mjs, insec).
+  const insec = (html) => html.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');
+  const poserTexte = (el, s) => { el.innerHTML = insec(esc(s)); };
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
   const coupe = (s) => esc(affiche(s)).replace(/_/g, '_<wbr>');
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
@@ -37,7 +40,7 @@
     cat.href = t.cat[2] || cat.href;
     cat.innerHTML = `${picto(t.cat[1])}<span>${esc(t.cat[0])}</span>`;
     const desc = sectionJour.querySelector('[data-jour-desc]');
-    desc.textContent = t.desc.replace(/'/g, '’');
+    poserTexte(desc, t.desc.replace(/'/g, '’'));
     if (t.lang) desc.lang = t.lang; else desc.removeAttribute('lang');
     nomJour.innerHTML = coupe(t.title);
     if (!anime || reduit.matches) return;
@@ -84,27 +87,27 @@
   const lettreDe = (i) => lettreDuMot[i] || lettres[0];
   // Coupe au mot un texte limité en lignes par le CSS (line-clamp) : jamais au milieu d'un mot ni sur un mot-outil.
   // Même règle que lib/templates.mjs (resume) : mots-outils, élisions, nombres ; une initiale n'est pas une fin de phrase.
-  const OUTILS = /\s((?:[dljnmstc]|qu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its)$/i;
+  const OUTILS = /\s((?:[dljnmstc]|qu|lorsqu|puisqu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|moins|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|ainsi|alors|aussi|autre|autres|aucun|aucune|avant|après|auprès|depuis|chez|lors|lorsque|puisque|quand|tandis|notamment|sont|était|étaient|sera|seront|être|avoir|peut|peuvent|doit|doivent|permet|permettent|permettant|permettre|fait|font|tous|tout|toute|toutes|même|mêmes|bien|encore|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its|after|before|other|others|another|both|most|more|less|only|same|being|been|have|must|will|would|could|should|lets|allows|allow|over|onto|upon|within|because|since|either|neither|whether|some|many|every|very|just|even|then|once|like|unlike|using|including|whereas|although|though|instead|rather|well)$/i;
   const FIN_PHRASE = /(?<!(?:^|[\s(])[A-Z])(?<!\bInc)[.!?](?=\s|$)/g;
   function couperAuMot(el, texte) {
-    el.textContent = texte;
+    poserTexte(el, texte);
     if (el.scrollHeight <= el.clientHeight + 1) return;
     const mots = texte.split(' ');
     let bas = 1;
     let haut = mots.length - 1;
     while (bas < haut) {
       const m = Math.ceil((bas + haut) / 2);
-      el.textContent = `${mots.slice(0, m).join(' ')}…`;
+      poserTexte(el, `${mots.slice(0, m).join(' ')}…`);
       if (el.scrollHeight <= el.clientHeight + 1) bas = m; else haut = m - 1;
     }
     let debut = mots.slice(0, bas).join(' ');
     // Une phrase entière qui tient finit sur son point, sans points de suspension (comme les résumés du build).
     const fin = Math.max(...[...debut.matchAll(FIN_PHRASE)].map((m) => m.index));
-    if (fin > debut.length * 0.3) { el.textContent = debut.slice(0, fin + 1); return; }
+    if (fin > debut.length * 0.3) { poserTexte(el, debut.slice(0, fin + 1)); return; }
     const nettoyer = (x) => x.replace(/[\s,;:.\u202f–-]+$/, '');
     debut = nettoyer(debut);
     while (OUTILS.test(debut) && debut.lastIndexOf(' ') > debut.length / 2) debut = nettoyer(debut.slice(0, debut.lastIndexOf(' ')));
-    el.textContent = `${debut}…`;
+    poserTexte(el, `${debut}…`);
   }
   const hauteur = (i, H) => Math.max(6, Math.round((Math.sqrt(longueurs[i]) / Math.sqrt(maxLen)) * H));
   let maxLen = 1;

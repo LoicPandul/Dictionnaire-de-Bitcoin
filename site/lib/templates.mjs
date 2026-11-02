@@ -81,7 +81,7 @@ const hdt = (t) => insec(hd(t));
 // La longueur est choisie pour tenir dans les lignes que la mise en page lui laisse : la coupe CSS ne sert que de filet.
 // Jamais de coupe sur un mot-outil, une élision (« d’une »), un nombre ou une lettre seule ; une initiale (« W. »)
 // n'est pas une fin de phrase. Même règle dans static/js/site.js et static/js/accueil.js.
-export const MOTS_OUTILS = /\s((?:[dljnmstc]|qu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its)$/i;
+export const MOTS_OUTILS = /\s((?:[dljnmstc]|qu|lorsqu|puisqu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|moins|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|ainsi|alors|aussi|autre|autres|aucun|aucune|avant|après|auprès|depuis|chez|lors|lorsque|puisque|quand|tandis|notamment|sont|était|étaient|sera|seront|être|avoir|peut|peuvent|doit|doivent|permet|permettent|permettant|permettre|fait|font|tous|tout|toute|toutes|même|mêmes|bien|encore|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its|after|before|other|others|another|both|most|more|less|only|same|being|been|have|must|will|would|could|should|lets|allows|allow|over|onto|upon|within|because|since|either|neither|whether|some|many|every|very|just|even|then|once|like|unlike|using|including|whereas|although|though|instead|rather|well)$/i;
 export const FIN_PHRASE = /(?<!(?:^|[\s(])[A-Z])(?<!\bInc)[.!?](?=\s|$)/g;
 export const resume = (t, n = 84) => {
   t = String(t || '').replace(/\s*(\.\.\.|…)$/, '');
@@ -809,7 +809,7 @@ export function homePage(data, { assets, jsonLd }) {
   <div class="jour-corps">
     <p class="jour-mot"><a href="${lien.def(f.slug)}" data-jour-lien><span data-jour-nom>${breakable(f.title)}</span></a></p>
     <p class="jour-cat"><a class="etiquette" href="${lien.categorie({ name: f.category, slug: f.categorySlug })}" data-jour-cat>${picto.use(f.categorySlug)}<span>${h(categoryLabel(f.category))}</span></a></p>
-    <p class="jour-desc" data-jour-desc${langAttr(f)}>${hd(resumeDe(f))}</p>
+    <p class="jour-desc" data-jour-desc${langAttr(f)}>${hdt(resumeDe(f))}</p>
     <p class="jour-actions"><a class="bouton" href="${lien.def(f.slug)}" data-jour-lire>${t.lireDef}</a></p>
   </div>
 </section>
@@ -826,7 +826,7 @@ ${nouveautes}
   <div class="apercu" aria-live="polite" data-apercu>
     <p class="apercu-nom"><a href="${lien.def(f.slug)}" data-apercu-lien>${breakable(f.title)}</a></p>
     <p class="apercu-cat" data-apercu-cat>${h(categoryLabel(f.category))}</p>
-    <p class="apercu-desc" data-apercu-desc>${hd(resumeDe(f))}</p>
+    <p class="apercu-desc" data-apercu-desc>${hdt(resumeDe(f))}</p>
   </div>
 </section>
 

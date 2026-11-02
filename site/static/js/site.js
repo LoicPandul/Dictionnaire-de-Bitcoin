@@ -15,7 +15,7 @@
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');
   // Résumé coupé au mot (même règle que lib/templates.mjs, resume).
   // Même règle que lib/templates.mjs : jamais de coupe sur un mot-outil, une élision, un nombre ; une initiale n'est pas une fin de phrase.
-  const MOTS_OUTILS = /\s((?:[dljnmstc]|qu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its)$/i;
+  const MOTS_OUTILS = /\s((?:[dljnmstc]|qu|lorsqu|puisqu)['’]\S{0,4}|\S{1,3}|\S*\d\S*|que|qui|dont|dans|pour|avec|sans|sous|leur|leurs|cette|entre|plus|moins|très|comme|selon|grâce|afin|parmi|vers|contre|chaque|plusieurs|jusqu['’]à|puis|donc|mais|ainsi|alors|aussi|autre|autres|aucun|aucune|avant|après|auprès|depuis|chez|lors|lorsque|puisque|quand|tandis|notamment|sont|était|étaient|sera|seront|être|avoir|peut|peuvent|doit|doivent|permet|permettent|permettant|permettre|fait|font|tous|tout|toute|toutes|même|mêmes|bien|encore|the|and|with|from|that|which|into|their|without|through|such|than|each|between|under|where|when|until|about|them|those|this|these|despite|while|whose|also|its|after|before|other|others|another|both|most|more|less|only|same|being|been|have|must|will|would|could|should|lets|allows|allow|over|onto|upon|within|because|since|either|neither|whether|some|many|every|very|just|even|then|once|like|unlike|using|including|whereas|although|though|instead|rather|well)$/i;
   const FIN_PHRASE = /(?<!(?:^|[\s(])[A-Z])(?<!\bInc)[.!?](?=\s|$)/g;
   const resume = (t, n = 84) => {
     t = String(t || '').replace(/'/g, '’').replace(/\s*(\.\.\.|…)$/, '');
@@ -31,6 +31,9 @@
     return `${s.replace(/[\s,;:.(«–-]+$/, '')}…`;
   };
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  // Une référence ne se coupe pas (même règle que lib/templates.mjs, insec) ; à appliquer sur du texte déjà échappé.
+  const insec = (html) => html.replace(/\b(?:(?:BIP|BOLT|bLIP|SLIP|RFC|NIP|LUD)[- ]\d+|SHA-(?:1|2|3|224|256|384|512))\b/g, '<span class="insec">$&</span>');
+  window.dicoInsec = insec;
 
   // ------------------------------------------------------------ Thème
   // Deux boutons : l'icône de la barre, et une ligne du menu sur les petits téléphones.
@@ -55,9 +58,13 @@
   const barre = d.querySelector('[data-barre]');
   let dernierY = scrollY;
   let enAttente = false;
+  // Défilement causé par le focus (Tab, Maj+Tab) : la barre garde son état. La page a placé l'élément d'après
+  // --haut ; si la barre revenait à ce moment, elle pousserait la pile collante sur lui.
+  let gelFocus = 0;
   const majBarre = () => {
     enAttente = false;
     const y = scrollY;
+    if (performance.now() < gelFocus) { barre.classList.toggle('est-defilee', y > 0); dernierY = y; return; }
     const cacher = y > 200 && y > dernierY + 4 && !d.querySelector('dialog[open]');
     if (cacher) barre.classList.add('est-cachee');
     else if (y < dernierY - 4 || y <= 200) barre.classList.remove('est-cachee');
@@ -69,7 +76,8 @@
     addEventListener('scroll', () => { if (!enAttente) { enAttente = true; requestAnimationFrame(majBarre); } }, { passive: true });
     // Rotation : la hauteur de la barre change, les éléments collants suivent tout de suite.
     addEventListener('resize', () => requestAnimationFrame(majBarre), { passive: true });
-    barre.addEventListener('focusin', () => barre.classList.remove('est-cachee'));
+    barre.addEventListener('focusin', () => { barre.classList.remove('est-cachee'); root.style.setProperty('--haut', `${barre.offsetHeight}px`); });
+    d.addEventListener('focusin', (e) => { if (!barre.contains(e.target)) gelFocus = performance.now() + 250; });
   }
   // ------------------------------------------------------------ Apparitions, une fois
   const aVoir = d.querySelectorAll('.feuilleter, .categories');
@@ -138,8 +146,15 @@
   if (citer) {
     citer.hidden = false;
     const confirmer = (ok) => {
-      citer.textContent = ok ? tx('copiee') : tx('copiez') + citer.dataset.citer;
-      setTimeout(() => (citer.textContent = tx('citer')), ok ? 2400 : 8000);
+      if (ok) { citer.textContent = tx('copiee'); setTimeout(() => (citer.textContent = tx('citer')), 2400); return; }
+      // Copie refusée : la citation s'affiche sous le bouton, sélectionnée, à copier à la main (le bouton garde sa taille).
+      let s = citer.nextElementSibling?.matches('.citer-secours') ? citer.nextElementSibling : null;
+      if (!s) { s = d.createElement('span'); s.className = 'citer-secours'; citer.after(s); }
+      s.innerHTML = `${esc(tx('copiez'))}<span class="citer-texte">${esc(citer.dataset.citer)}</span>`;
+      const r = d.createRange();
+      r.selectNodeContents(s.lastChild);
+      getSelection().removeAllRanges();
+      getSelection().addRange(r);
     };
     const secours = () => {
       const t = d.createElement('textarea');
@@ -195,12 +210,14 @@
     centrer(ol, courante);
   }
   const motCourant = d.querySelector('[data-mot]');
-  const lireDerniers = () => { try { return JSON.parse(localStorage.getItem('derniers') || '[]'); } catch { return []; } };
+  // Une liste par langue : un mot lu en français n'a pas la même adresse en anglais.
+  const cleDerniers = `derniers-${root.lang || 'fr'}`;
+  const lireDerniers = () => { try { return JSON.parse(localStorage.getItem(cleDerniers) || '[]'); } catch { return []; } };
   if (motCourant) {
     try {
       const liste = lireDerniers().filter((m) => m[0] !== motCourant.dataset.mot);
       liste.unshift([motCourant.dataset.mot, motCourant.dataset.titre]);
-      localStorage.setItem('derniers', JSON.stringify(liste.slice(0, 8)));
+      localStorage.setItem(cleDerniers, JSON.stringify(liste.slice(0, 8)));
     } catch {}
   }
 
@@ -218,7 +235,7 @@
       clearTimeout(minuteur);
       minuteur = setTimeout(() => {
         lien = a;
-        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.querySelector('.reperes-nom')?.textContent || a.textContent)}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${esc(a.dataset.apercu.replace(/'/g, '’').replace(/\.\.\./g, '…'))}</p>`;
+        carte.innerHTML = `<p class="carte-nom">${esc(a.dataset.apercuNom || a.querySelector('.reperes-nom')?.textContent || a.textContent)}</p><p class="carte-cat">${esc(a.dataset.apercuCat || '')}</p><p class="carte-desc">${insec(esc(a.dataset.apercu.replace(/'/g, '’').replace(/\.\.\./g, '…')))}</p>`;
         carte.hidden = false;
         a.setAttribute('aria-describedby', 'carte-apercu');
         const r = a.getBoundingClientRect();
@@ -349,6 +366,8 @@
       else if ((at = t.pt.indexOf(` ${pq}`)) > -1) { rang = 5; at += 1; }
       else if (alt && alt.includes(` ${pq}`)) rang = 4;
       else if (mots.length > 1 && mots.every((m) => t.pt.includes(` ${m}`) || t.pt.startsWith(m))) rang = 4;
+      // Trouvé par un autre nom ou en compact (« nip-4 ») : la partie du titre qui correspond passe quand même à l'encre.
+      if (rang && at < 0) at = t.pt.indexOf(pq);
       if (rang) { forts.push({ t, rang, at, len: pq.length }); continue; }
       if ((at = t.pt.indexOf(pq)) > -1) faibles.push({ t, rang: 2, at, len: pq.length });
       else if (mots.length > 1 && mots.every((m) => ` ${t.pt} ${t.pa} ${t.pd}`.includes(` ${m}`))) {
@@ -388,7 +407,7 @@
   const surligner = (title, at, len) => { title = affiche(title); return at < 0 ? esc(title) : `${esc(title.slice(0, at))}<mark>${esc(title.slice(at, at + len))}</mark>${esc(title.slice(at + len))}`; };
   const picto = (slug) => `<svg class="picto" aria-hidden="true" focusable="false"><use href="/img/pictos.svg#p-${slug}"/></svg>`;
   const ligne = ({ t, at, len }, i, prefix) => `<li class="resultat" role="option" id="${prefix}-${i}" aria-selected="false">
-  <a href="${B}/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${esc(affiche(t.alt))}</span>` : ''}${t.desc ? `<span class="resultat-desc"${t.lang ? ` lang="${t.lang}"` : ''}>${esc(resume(t.desc))}</span>` : ''}</a></li>`;
+  <a href="${B}/${t.slug}/" tabindex="-1"><span class="resultat-nom" data-vt-nom>${surligner(t.title, at, len)}</span><span class="resultat-cat">${picto(t.cat[1])}${esc(t.cat[0])}</span>${t.alt ? `<span class="resultat-alt">${insec(esc(affiche(t.alt)))}</span>` : ''}${t.desc ? `<span class="resultat-desc"${t.lang ? ` lang="${t.lang}"` : ''}>${insec(esc(resume(t.desc)))}</span>` : ''}</a></li>`;
   const pluriel = (n, [un, plusieurs] = ['', '']) => `${n.toLocaleString(loc)} ${n > 1 ? plusieurs : un}`;
   const jour = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
 
@@ -479,6 +498,7 @@
       if (e.key === 'ArrowDown') { e.preventDefault(); selectionner(actif + 1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); selectionner(actif - 1); }
       else if (e.key === 'Enter') {
+        if (!champ.value.trim()) { e.preventDefault(); return; }
         const a = liste.querySelectorAll('.resultat a')[Math.max(actif, 0)];
         if (a) { e.preventDefault(); a.click(); }
       }
@@ -525,7 +545,8 @@
       const input = heros.querySelector('input');
       const ouvrirDepuis = () => { const v = input.value; input.value = ''; ouvrir(v, heros); };
       input.addEventListener('click', ouvrirDepuis);
-      input.addEventListener('input', ouvrirDepuis);
+      // Champ vidé (deuxième Échap, croix du champ « search », dernier caractère effacé) : rien ne s'ouvre.
+      input.addEventListener('input', () => { if (input.value) ouvrirDepuis(); });
       heros.addEventListener('submit', (e) => { e.preventDefault(); ouvrirDepuis(); });
     }
     // Préchargement discret de l'index quand on survole un bouton de recherche.
@@ -669,7 +690,7 @@
         res = res.concat(proches(q, 3 - res.length, vus));
       }
       titre404.textContent = q === q0 ? tx('vouliez') : tx('resultats');
-      liste404.innerHTML = res.map(({ t }) => `<li><a href="${B}/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${esc(resume(t.desc))}</span>` : ''}</a></li>`).join('');
+      liste404.innerHTML = res.map(({ t }) => `<li><a href="${B}/${t.slug}/"><span class="perdu-nom">${esc(affiche(t.title))}</span>${t.desc ? `<span class="perdu-desc">${insec(esc(resume(t.desc)))}</span>` : ''}</a></li>`).join('');
       sugg.hidden = !res.length;
     };
     charger().then(montrer404);

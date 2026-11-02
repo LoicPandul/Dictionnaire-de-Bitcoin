@@ -440,6 +440,11 @@ p, li, figcaption { text-wrap: pretty; }
 }
 .couv-recherche input::placeholder { color: var(--ecorce); opacity: 1; }
 .couv-recherche input:focus-visible { outline: 3px solid var(--blanc); outline-offset: 2px; }
+/* Le champ et son bouton forment un bloc : l'anneau l'entoure en entier au lieu de mordre sur le bouton. */
+@supports selector(:has(*)) {
+  .couv-recherche:has(input:focus-visible) { outline: 3px solid var(--blanc); outline-offset: 2px; }
+  .couv-recherche input:focus-visible { outline: none; }
+}
 .couv-recherche button { flex: none; height: 56px; padding: 0 22px; border: 2px solid var(--encre); border-left: 0; background: var(--canopee); color: var(--blanc); font-weight: 600; font-size: var(--t-ui); transition: background-color var(--d-hover) ease, transform var(--d-press) var(--ease-out); }
 .couv-recherche button:active { transform: scale(0.97); }
 @media (hover: hover) { .couv-recherche button:hover { background: var(--nuit); } }
@@ -627,7 +632,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .signet-tranche { position: relative; height: 52px; }
 .signet-tranche::before { content: ''; position: absolute; inset: 0; background: var(--doux); -webkit-mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; mask: url('/img/tranche.svg') 0 0 / 100% 100% no-repeat; }
 .signet-ruban { position: absolute; top: -10px; left: clamp(7px, var(--pos), calc(100% - 7px)); width: 14px; height: calc(100% + 22px); margin-left: -7px; background: var(--lien); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 7px), 0 100%); }
-.signet-legende { font-size: var(--t-note); color: var(--texte); line-height: 1.4; }
+.signet-legende { font-size: var(--t-note); color: var(--texte); line-height: 1.4; text-wrap: pretty; }
 .signet-legende sup { font-size: 0.7em; line-height: 0; }
 
 .prose { min-width: 0; max-width: 34em; font-size: var(--t-lecture); line-height: 1.55; hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 10 4 4; overflow-wrap: break-word; }
@@ -753,6 +758,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .colophon { margin: 28px var(--m) var(--section); font-size: var(--t-note); color: var(--doux); max-width: 70ch; }
 .colophon a { font-weight: 600; }
 .citer { display: block; margin-top: 12px; min-height: 48px; padding: 8px 14px; border: 0; background: transparent; box-shadow: inset 0 0 0 2px var(--texte); color: var(--texte); font-size: var(--t-ui); font-weight: 600; }
+.citer-secours { display: block; margin-top: 8px; font-size: var(--t-note); line-height: 1.5; overflow-wrap: break-word; }
+.citer-texte { user-select: all; }
 @media (hover: hover) { .citer:hover { background: var(--marque); color: var(--sur-marque); } }
 
 /* Carte d'aperçu d'un renvoi : seule surface qui flotte avec les fenêtres. */
