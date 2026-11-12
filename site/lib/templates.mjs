@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { url, site, palette } from '../config.mjs';
 import { escapeHtml as h } from './markdown.mjs';
 import { t, lien, chemins, LANGUES, categoryLabel, partieTitre, partieIntro, nomsSeries } from './i18n.mjs';
-import { unites, dates } from './typo.mjs';
+import { unites, dates, exposants } from './typo.mjs';
 
 export { categoryLabel };
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -315,7 +315,7 @@ function page({ headOpts, body, bodyClass, picto, letters, total, home = false, 
 ${picto.defs()}
 ${bar({ home, current, alt })}
 <main id="contenu">
-${body}
+${t.code === 'fr' ? exposants(body) : body}
 </main>
 ${footer(letters, total)}
 ${searchDialog()}

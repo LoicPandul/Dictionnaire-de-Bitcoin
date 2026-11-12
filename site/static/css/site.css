@@ -651,6 +651,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .signet-ruban { position: absolute; top: -10px; left: clamp(7px, var(--pos), calc(100% - 7px)); width: 14px; height: calc(100% + 22px); margin-left: -7px; background: var(--lien); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 7px), 0 100%); }
 .signet-legende { font-size: var(--t-note); color: var(--texte); line-height: 1.4; text-wrap: pretty; }
 .signet-legende sup { font-size: 0.7em; line-height: 0; }
+sup.ordinal { font-size: 0.72em; line-height: 0; vertical-align: super; }
 
 .prose { min-width: 0; max-width: 34em; font-size: var(--t-lecture); line-height: 1.55; hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 10 4 4; overflow-wrap: break-word; }
 .prose > * + * { margin-top: 1em; }

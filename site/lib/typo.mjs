@@ -16,3 +16,26 @@ const MOIS = 'janvier|février|mars|avril|mai|juin|juillet|août|septembre|octob
 const JOUR_MOIS = new RegExp(`\\b(\\d{1,2}|1er) (${MOIS})\\b`, 'g');
 const MOIS_AN = new RegExp(`\\b(${MOIS}) (\\d{4})\\b`, 'g');
 export const dates = (t) => t.replace(JOUR_MOIS, '$1 $2').replace(MOIS_AN, '$1 $2');
+
+// Ordinaux français en exposant (« 1er », « 1re », « 2e », « XVIIIe siècle »), dans le HTML des pages seulement :
+// titres, balises meta, données structurées et index de recherche gardent le texte brut (« 1er »).
+// Seuls les nœuds de texte changent ; le code, les formules, les scripts et les attributs ne sont pas touchés.
+const ORDINAL = /(?<![\p{L}\d_./‑-])(1)(ers?|res?)(?![\p{L}\d_])|(?<![\p{L}\d_./‑-])(\d{1,3}(?:[   ]\d{3})*)(es?)(?![\p{L}\d_])|(?<![\p{L}\d_])([IVXL]{2,}|[IVX])(es?)(?=[  ]siècles?\b)/gu;
+const SAUTE = /^<(code|pre|script|style|textarea|annotation|math|kbd|title|svg)\b/i;
+export function exposants(html) {
+  let saute = null, prof = 0;
+  return html.split(/(<[^>]*>)/).map((bout) => {
+    if (bout.startsWith('<')) {
+      if (saute) {
+        if (new RegExp(`^<${saute}\\b`, 'i').test(bout) && !bout.endsWith('/>')) prof++;
+        else if (new RegExp(`^</${saute}\\s*>`, 'i').test(bout) && --prof === 0) saute = null;
+      } else {
+        const m = bout.match(SAUTE) || (/^<span\b[^>]*\bclass="katex/.test(bout) && [bout, 'span']);
+        if (m && !bout.endsWith('/>')) { saute = m[1].toLowerCase(); prof = 1; }
+      }
+      return bout;
+    }
+    if (saute || !bout) return bout;
+    return bout.replace(ORDINAL, (_, a1, s1, a2, s2, a3, s3) => `${a1 ?? a2 ?? a3}<sup class="ordinal">${s1 ?? s2 ?? s3}</sup>`);
+  }).join('');
+}
