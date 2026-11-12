@@ -765,8 +765,8 @@ sup.ordinal { font-size: 0.72em; line-height: 0; vertical-align: super; }
 
 .tourner-sens { font-size: var(--t-note); font-weight: 600; color: var(--doux); }
 /* Sur un fond de survol ou de pression, les textes secondaires passent à l'encre (le gris n'y tient pas 4,5:1). */
-.tourner-lien:active .tourner-sens, .filtre input:not(:checked) + span:active b, .partie-cats a:active .menu-n, .cat-partie a:active .menu-n { color: var(--texte); }
-@media (hover: hover) { .tourner-lien:hover .tourner-sens, .filtre input:not(:checked) + span:hover b, .partie-cats a:hover .menu-n, .cat-partie a:hover .menu-n { color: inherit; } .tourner-lien:hover .tourner-sens { color: var(--texte); } .bouton-recherche:hover kbd { background: var(--fond); } }
+.tourner-lien:active .tourner-sens, .filtre input:not(:checked) + span:active b, .cat-partie a:active .menu-n { color: var(--texte); }
+@media (hover: hover) { .tourner-lien:hover .tourner-sens, .filtre input:not(:checked) + span:hover b, .cat-partie a:hover .menu-n { color: inherit; } .tourner-lien:hover .tourner-sens { color: var(--texte); } .bouton-recherche:hover kbd { background: var(--fond); } }
 .tourner-lien:focus-visible { position: relative; z-index: 1; }
 .tourner-lien--prev .tourner-sens::before { content: '← '; }
 .tourner-lien--next .tourner-sens::after { content: ' →'; }
@@ -1053,28 +1053,13 @@ sup.ordinal { font-size: 0.72em; line-height: 0; vertical-align: super; }
 /* ---------------------------------------------------------------- Page d'une partie */
 .partie-tete { display: grid; gap: 20px; padding: clamp(24px, 3vw, 48px) var(--m) 24px; }
 .titre-page { font: 800 var(--t-page) / 0.95 var(--archivo); font-stretch: 75%; letter-spacing: -0.02em; text-wrap: balance; }
-.partie-cats ul { display: flex; flex-wrap: wrap; gap: 4px; }
-.partie-cats a, .cat-partie a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 12px; background: var(--surface); color: var(--texte); font-size: var(--t-note); font-weight: 600; text-decoration: none; }
-.partie-cats .picto { width: 16px; height: 16px; }
-.partie-cats .menu-n { margin-left: 4px; }
-@media (min-width: 640px) and (min-height: 501px) {
-  .partie-cats ul, .cats-mini { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-  .partie-cats a { display: flex; height: 100%; }
-  .partie-cats .menu-n { margin-left: auto; padding-left: 8px; font-variant-numeric: tabular-nums; }
-}
-@media (max-width: 639px), (max-height: 500px) {
-  .partie-cats { min-width: 0; margin-inline: calc(-1 * var(--m)); }
-  .partie-cats ul { flex-wrap: nowrap; overflow-x: auto; padding: 6px var(--m); scroll-padding-inline: var(--m); scrollbar-width: none; }
-  .partie-cats ul::-webkit-scrollbar { display: none; }
-  .partie-cats li { flex: none; }
-  .partie-cats a { white-space: nowrap; }
-}
-@media (hover: hover) { .partie-cats a:hover, .cat-partie a:hover { background: var(--marque); } }
+.cat-partie a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 12px; background: var(--surface); color: var(--texte); font-size: var(--t-note); font-weight: 600; text-decoration: none; }
+/* L'index des catégories : la même liste que sur l'accueil, à la largeur de la page. */
+.partie-index { padding: 8px var(--m) var(--section); }
+/* Catégories proposées quand une recherche ne trouve rien : colonnes égales dès 640 px. */
+@media (min-width: 640px) and (min-height: 501px) { .cats-mini { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); } }
+@media (hover: hover) { .cat-partie a:hover { background: var(--marque); } }
 .cat-partie a { padding: 6px 12px; text-decoration: underline; text-underline-offset: 0.2em; }
-.partie-liste { padding: 0 var(--m); }
-.groupe-titre--cat { display: flex; align-items: center; gap: 10px; }
-.groupe-titre--cat .picto { width: 22px; height: 22px; }
-.groupe-titre--cat a { color: var(--texte); }
 
 /* ---------------------------------------------------------------- Définition : chronologie et spécification liées */
 .mot-chrono { order: 5; margin-top: 56px; min-width: 0; }
@@ -1300,7 +1285,7 @@ sup.ordinal { font-size: 0.72em; line-height: 0; vertical-align: super; }
 /* ---------------------------------------------------------------- Pression au doigt
    Sur écran tactile, le survol n'existe pas : chaque cible répond à la pression comme elle répond à la souris. */
 .entree:active .entree-nom, .renvoi:active .renvoi-nom, .sommaire a:active .sommaire-nom, .tourner-lien:active .tourner-nom, .perdu-liste a:active .perdu-nom { color: var(--lien-survol); text-decoration-thickness: 2px; }
-.partie-cats a:active, .cat-partie a:active { background: var(--marque); }
+.cat-partie a:active { background: var(--marque); }
 .resultat a:active, .tourner-lien:active, .bouton-theme:active, .bouton-menu:active, .bouton-langue:active, .menu-cats a:active, .menu-liens a:active { background: var(--surface); }
 .serie:active { background: var(--marque); }
 .sous-index a:active, .rayon a:not([aria-current]):active, .cites-liste a:active, a.etiquette:active, .filtre input:not(:checked) + span:active, .blocs a:not([aria-current='true']):active, .cats-mini a:active, .citer:active, .bouton--doux:active { background: var(--marque); color: var(--sur-marque); }

@@ -91,7 +91,8 @@ export function definitionJsonLd(def) {
   ]);
 }
 
-export function listJsonLd({ path, name, defs }) {
+export function listJsonLd({ path, name, defs = [], items = null }) {
+  const liste = items || defs.map((d) => ({ url: lien.def(d.slug), name: d.title }));
   const pageUrl = `${url}${path}`;
   return graph([
     {
@@ -103,8 +104,8 @@ export function listJsonLd({ path, name, defs }) {
       isPartOf: { '@id': SET_ID },
       mainEntity: {
         '@type': 'ItemList',
-        numberOfItems: defs.length,
-        itemListElement: defs.map((d, i) => ({ '@type': 'ListItem', position: i + 1, url: `${url}${lien.def(d.slug)}`, name: d.title })),
+        numberOfItems: liste.length,
+        itemListElement: liste.map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: `${url}${x.url}`, name: x.name })),
       },
     },
     crumbs(pageUrl, [

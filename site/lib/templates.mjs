@@ -670,21 +670,22 @@ ${rayon}`;
 }
 
 // ---------------------------------------------------------------- Partie du livre
-// Une partie (technique, écosystème, personnes) : ses catégories, chacune avec toutes ses entrées.
+// Une partie (technique, écosystème, personnes) : l'index de ses catégories, chacune avec son effectif et sa page.
+// Chaque ligne garde l'ancre de l'ancienne section (#c-<slug>) ; site.js y renvoie vers la page de la catégorie.
 export function partPage(part, { assets, letters, total, jsonLd }) {
   const picto = pictoCollector();
   const n = part.cats.reduce((s, c) => s + c.defs.length, 0);
   const body = `<header class="partie-tete">
   <h1 class="titre-page">${h(partieTitre(part))}</h1>
   <p class="enonce">${h(fr(partieIntro(part)))}</p>
-  <nav class="partie-cats" aria-label="${t.categories}"><ul>${part.cats.map((c) => `<li><a href="#c-${c.slug}">${picto.use(c.slug)}<span>${h(categoryLabel(c.name))}</span><span class="menu-n">${num(c.defs.length)}</span></a></li>`).join('')}</ul></nav>
 </header>
-<div class="partie-liste">
-${part.cats.map((c) => `<section class="groupe" id="c-${c.slug}" aria-labelledby="t-${c.slug}">
-  <div class="groupe-tete"><h2 class="groupe-titre groupe-titre--cat" id="t-${c.slug}">${picto.use(c.slug)}<a href="${lien.categorie(c)}">${h(categoryLabel(c.name))}</a></h2><p class="groupe-n">${plural(c.defs.length, t.definition)}</p></div>
-  <ul class="entrees">${c.defs.map((d) => entry(d, picto, { showCategory: false })).join('\n')}</ul>
-</section>`).join('\n')}
-</div>`;
+<section class="partie-index" aria-labelledby="partie-index-titre">
+  <div class="partie-entete">
+    <h2 class="partie-titre" id="partie-index-titre">${t.nCategories(part.cats.length)}</h2>
+    <p class="partie-n">${plural(n, t.definition)}</p>
+  </div>
+  <ul class="index">${part.cats.map((c) => `<li class="index-ligne" id="c-${c.slug}"><a class="index-nom" href="${lien.categorie(c)}">${picto.use(c.slug)}<span class="index-nom-texte">${h(categoryLabel(c.name))}</span><span class="index-n">${num(c.defs.length)}</span></a></li>`).join('\n')}</ul>
+</section>`;
   return page({
     headOpts: {
       title: t.titrePartie(partieTitre(part), n),

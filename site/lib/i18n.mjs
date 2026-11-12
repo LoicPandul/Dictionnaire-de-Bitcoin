@@ -186,6 +186,7 @@ const FR = {
   // Catégorie
   lettresCategorie: (c) => `Lettres de la catégorie ${c}`,
   lesNCategories: (n) => `Les ${n} catégories`,
+  nCategories: (n) => `${n} catégories`,
   defsDuDico: (n) => `${n} du dictionnaire.`,
   pourCommencer: 'Pour commencer',
   lettre: 'Lettre ',
@@ -417,6 +418,7 @@ const EN = {
   nomLettre: (l) => `Letter ${l}`,
   lettresCategorie: (c) => `Letters in ${c}`,
   lesNCategories: (n) => `All ${n} categories`,
+  nCategories: (n) => `${n} categories`,
   defsDuDico: (n) => `${n} in the dictionary.`,
   pourCommencer: 'Start here',
   lettre: 'Letter ',

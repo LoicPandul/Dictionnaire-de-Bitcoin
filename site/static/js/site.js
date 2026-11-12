@@ -10,6 +10,12 @@
   let T = {};
   try { T = JSON.parse(d.getElementById('i18n')?.textContent || '{}'); } catch {}
   const tx = (k, v = {}) => String(T[k] ?? k).replace(/\{(\w+)\}/g, (_, x) => v[x] ?? '');
+  // Les catégories d'une partie avaient leur section dans sa page (/partie/technique/#c-protocole) ; elles ont
+  // maintenant leur page : une ancienne ancre y mène. Les fragments n'arrivent pas au serveur, d'où ce renvoi ici.
+  if (d.body?.classList.contains('p-partie') && location.hash.startsWith('#c-')) {
+    const cible = d.getElementById(decodeURIComponent(location.hash.slice(1)))?.querySelector('a[href]');
+    if (cible) { location.replace(cible.href); return; }
+  }
   const loc = T.locale || 'fr-FR';
   window.dicoTexte = tx;
   const affiche = (t) => String(t).replace(/\b0X([0-9A-F]+)\b/g, '0x$1').replace(/ - /g, '\u00a0– ').replace(/'/g, '’');

@@ -205,7 +205,7 @@ for (const code of Object.keys(LANGUES)) {
   }
   for (const part of partsL.filter((x) => x.cats.length && x.id !== 'specifications')) {
     const p = P.partie(part.id);
-    write(`${p.slice(1)}index.html`, partPage(part, { assets, letters, total, jsonLd: listJsonLd({ path: p, name: part.title, defs: part.cats.flatMap((c) => c.defs), L }) }));
+    write(`${p.slice(1)}index.html`, partPage(part, { assets, letters, total, jsonLd: listJsonLd({ path: p, name: part.title, items: part.cats.map((c) => ({ url: P.categorie(c), name: categoryLabel(c.name) })), L }) }));
   }
 
   // Chronologie et spécifications
