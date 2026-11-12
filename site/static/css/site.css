@@ -573,7 +573,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (max-width: 639px) { .livre-actions { flex-direction: column; align-items: flex-start; gap: 18px; } }
 @media (min-width: 1024px) {
   .livre-haut { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g); }
-  .livre-volume { grid-column: 2 / 6; width: 100%; max-width: 340px; justify-self: start; }
+  .livre-volume { grid-column: 1 / 5; width: 100%; max-width: 340px; justify-self: start; }
   .livre-texte { grid-column: 7 / -1; }
 }
 
@@ -914,6 +914,9 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 @media (hover: hover) { .resultats--page .resultat:not([aria-selected='true']) a:hover { background: var(--surface); } }
 .suggestions-vides { padding: 8px 16px 16px; display: grid; gap: 12px; }
 .suggestions-vides p { font-size: var(--t-note); color: var(--doux); }
+.suggestions-vides .suggestions-sous { margin-top: 8px; font-size: var(--t-ui); font-weight: 700; color: var(--texte); }
+.recherche-etat.etat-vide { padding-block: 4px 12px; font-size: var(--t-nom); line-height: 1.4; color: var(--texte); text-wrap: pretty; }
+.cherche-etat.etat-vide { max-width: 42em; padding-block: 8px 4px; font-size: var(--t-enonce); line-height: 1.35; color: var(--texte); text-wrap: pretty; }
 .suggestions-vides .abc > * { min-height: 44px; font-size: 20px; }
 .cats-mini { display: flex; flex-wrap: wrap; gap: 4px; }
 .cats-mini a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 6px 10px; background: var(--surface); color: var(--texte); font-size: var(--t-note); font-weight: 600; }
@@ -970,6 +973,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 /* ---------------------------------------------------------------- 404 : la couverture, avec un mot introuvable */
 .perdu-titre { font: 800 var(--t-page) / 0.95 var(--archivo); font-stretch: 75%; letter-spacing: -0.02em; text-wrap: balance; }
 .perdu .couv-recherche { margin-top: 28px; }
+.perdu .couv-sous { max-width: 34em; text-wrap: pretty; }
 .perdu-suggestions { margin-top: 28px; width: 100%; }
 .perdu-sous { font-size: var(--t-nom); font-weight: 700; margin-bottom: 4px; }
 .perdu-liste { display: grid; max-width: 34rem; }
@@ -1013,9 +1017,12 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .nouveautes { display: grid; gap: 32px; padding: var(--section) var(--m) 0; }
 .nouveautes-tete { display: grid; gap: 16px; align-content: start; }
 .sommaire { display: grid; }
-.sommaire a { display: grid; gap: 4px; padding: 16px 0 18px; color: var(--texte); text-decoration: none; }
-.sommaire-nom { justify-self: start; font: 800 var(--t-repere) / 1.1 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; color: var(--lien); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.14em; }
-.sommaire-texte { font-size: var(--t-ui); line-height: 1.5; max-width: 34em; }
+.sommaire { border-bottom: 1px solid var(--trait); }
+.sommaire li + li { border-top: 1px solid var(--trait); }
+.sommaire a { display: grid; gap: 6px; padding: 20px 0; color: var(--texte); text-decoration: none; }
+.sommaire-nom { justify-self: start; font: 800 var(--t-enonce) / 1.15 var(--archivo); font-stretch: 75%; letter-spacing: -0.01em; color: var(--lien); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.14em; }
+.sommaire-texte { font-size: var(--t-ui); line-height: 1.5; max-width: 34em; color: var(--doux); }
+@media (hover: hover) { .sommaire a:hover .sommaire-texte { color: var(--texte); } }
 @media (hover: hover) { .sommaire a:hover .sommaire-nom { color: var(--lien-survol); text-decoration-thickness: 3px; } }
 @media (min-width: 720px) {
   .sommaire a { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: var(--g); align-items: baseline; }
@@ -1024,7 +1031,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
   .nouveautes { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--g); }
   .nouveautes-tete { grid-column: 1 / 5; }
   .nouveautes-tete .enonce { font-size: var(--t-lecture); }
-  .sommaire { grid-column: 5 / -1; margin-top: -16px; }
+  .sommaire { grid-column: 5 / -1; border-top: 1px solid var(--trait); }
 }
 
 /* ---------------------------------------------------------------- Accueil : les parties du livre */
@@ -1049,6 +1056,18 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .partie-cats a, .cat-partie a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 12px; background: var(--surface); color: var(--texte); font-size: var(--t-note); font-weight: 600; text-decoration: none; }
 .partie-cats .picto { width: 16px; height: 16px; }
 .partie-cats .menu-n { margin-left: 4px; }
+@media (min-width: 640px) and (min-height: 501px) {
+  .partie-cats ul, .cats-mini { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .partie-cats a { display: flex; height: 100%; }
+  .partie-cats .menu-n { margin-left: auto; padding-left: 8px; font-variant-numeric: tabular-nums; }
+}
+@media (max-width: 639px), (max-height: 500px) {
+  .partie-cats { min-width: 0; margin-inline: calc(-1 * var(--m)); }
+  .partie-cats ul { flex-wrap: nowrap; overflow-x: auto; padding: 6px var(--m); scroll-padding-inline: var(--m); scrollbar-width: none; }
+  .partie-cats ul::-webkit-scrollbar { display: none; }
+  .partie-cats li { flex: none; }
+  .partie-cats a { white-space: nowrap; }
+}
 @media (hover: hover) { .partie-cats a:hover, .cat-partie a:hover { background: var(--marque); } }
 .cat-partie a { padding: 6px 12px; text-decoration: underline; text-underline-offset: 0.2em; }
 .partie-liste { padding: 0 var(--m); }
@@ -1058,7 +1077,7 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 
 /* ---------------------------------------------------------------- Définition : chronologie et spécification liées */
 .mot-chrono { order: 5; margin-top: 56px; min-width: 0; }
-.mot-chrono ol { display: grid; gap: 2px; max-width: 46em; }
+.mot-chrono ol { display: grid; gap: 2px; max-width: calc(34 * var(--t-lecture)); }
 .mot-chrono a { display: grid; grid-template-columns: minmax(0, 11em) minmax(0, 1fr); gap: 4px 16px; padding: 12px 0; border-top: 1px solid var(--trait); color: var(--texte); text-decoration: none; font-size: var(--t-ui); line-height: 1.45; }
 .mot-chrono time { font: 750 var(--t-ui) / 1.45 var(--archivo); font-stretch: 75%; color: var(--doux); font-variant-numeric: tabular-nums; }
 .mot-chrono a span { text-decoration: underline; text-decoration-color: var(--lien); text-underline-offset: 0.18em; }
@@ -1082,6 +1101,8 @@ a.etiquette { text-decoration: underline; text-decoration-thickness: 1px; }
 .frise-an { position: absolute; bottom: 0; left: 50%; translate: -50% 0; font: 700 12px / 1 var(--archivo); font-variant-numeric: tabular-nums; white-space: nowrap; }
 @media (max-width: 639px) { .chrono-frise li:first-child .frise-an { left: 0; translate: none; } .frise-an { font-size: 0; } .chrono-frise li:nth-child(4n + 1) .frise-an { font-size: 11px; } .chrono-frise ol { height: 84px; gap: 2px; } }
 @media (hover: hover) { .chrono-frise a:hover .frise-barre { background: var(--lien-survol); } .chrono-frise a:hover { color: var(--texte); } }
+/* Dès que la rangée des années tient sur une ligne, ses cases sont sous les barres : les années abrégées feraient doublon. */
+@media (min-width: 1120px) and (min-height: 501px) { .chrono-frise a { padding-bottom: 0; } .frise-an { display: none; } .chrono-frise ol { height: 96px; } .chrono-tete:has(.chrono-frise) { padding-bottom: 0; } }
 .index-annees a { min-width: 56px; padding: 0 10px; font: 800 18px / 1 var(--archivo); font-stretch: 75%; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .chrono { padding: 0 var(--m); }
 .annee { padding-top: 40px; }

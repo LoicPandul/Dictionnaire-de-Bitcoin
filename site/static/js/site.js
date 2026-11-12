@@ -463,12 +463,13 @@
     const h = index ? index[Math.floor(Math.random() * index.length)] : null;
     const lettres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => `<a href="${B}/${T.lettre || 'lettre'}/${l.toLowerCase()}/">${l}</a>`).join('');
     const derniers = lireDerniers().filter((m) => !motCourant || m[0] !== motCourant.dataset.mot).slice(0, 5);
-    const cats = avecCategories && index?.categories ? `<p>${tx('parCategorie')}</p><div class="cats-mini">${[...index.categories].sort((a, b) => a[0].localeCompare(b[0], d.documentElement.lang)).map(([label, slug, chemin]) => `<a href="${chemin}">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
-    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>${tx('derniers')} ${derniers.map((m) => `<a class="lien" href="${B}/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}${point(derniers.at(-1)[1])}</p>` : ''}${n ? `<p>${tx('motDuJour')} <a class="lien" href="${B}/${n.slug}/">${esc(affiche(n.title))}</a>${point(n.title)} ${tx('auHasard')} <a class="lien" href="${B}/${h.slug}/">${esc(affiche(h.title))}</a>${point(h.title)}</p>` : ''}<p>${tx('parLettre')}</p><div class="abc">${lettres}</div>${cats}</li>`;
+    const cats = avecCategories && index?.categories ? `<p class="suggestions-sous">${tx('parCategorie')}</p><div class="cats-mini">${[...index.categories].sort((a, b) => a[0].localeCompare(b[0], d.documentElement.lang)).map(([label, slug, chemin]) => `<a href="${chemin}">${picto(slug)}${esc(label)}</a>`).join('')}</div>` : '';
+    return `<li class="suggestions-vides" role="presentation">${derniers.length ? `<p>${tx('derniers')} ${derniers.map((m) => `<a class="lien" href="${B}/${esc(m[0])}/">${esc(m[1])}</a>`).join(', ')}${point(derniers.at(-1)[1])}</p>` : ''}${n ? `<p>${tx('motDuJour')} <a class="lien" href="${B}/${n.slug}/">${esc(affiche(n.title))}</a>${point(n.title)} ${tx('auHasard')} <a class="lien" href="${B}/${h.slug}/">${esc(affiche(h.title))}</a>${point(h.title)}</p>` : ''}<p class="suggestions-sous">${tx('parLettre')}</p><div class="abc">${lettres}</div>${cats}</li>`;
   }
 
   function vide() {
     etat.textContent = '';
+    etat.classList.remove('etat-vide');
     liste.innerHTML = suggestions(false);
     liste.scrollTop = 0;
     champ.setAttribute('aria-expanded', 'false');
@@ -481,11 +482,13 @@
     const { res, approx, total } = chercher(q);
     if (!res.length) {
       etat.innerHTML = tx('aucun', { q: esc(q.trim()) });
+      etat.classList.add('etat-vide');
       liste.innerHTML = suggestions(true);
       liste.scrollTop = 0;
       champ.setAttribute('aria-expanded', 'false');
       return;
     }
+    etat.classList.remove('etat-vide');
     etat.textContent = approx ? tx('aucunExact') : total > res.length ? tx('premiers', { total: pluriel(total, T.resultat), n: res.length }) : pluriel(total, T.resultat);
     liste.innerHTML = res.map((r, i) => ligne(r, i, 'res')).join('');
     champ.setAttribute('aria-expanded', 'true');
@@ -645,6 +648,7 @@
         sortie.innerHTML = '';
         filtres.innerHTML = '';
         qFiltres = null;
+        statut.classList.remove('etat-vide');
         statut.textContent = tx('tapez', { n: index.length.toLocaleString(loc) });
         sortie.innerHTML = suggestions(true);
         return;
@@ -674,8 +678,10 @@
       if (!res.length) {
         const p = proches(q, 5);
         statut.innerHTML = tx(p.length ? 'aucunProches' : 'aucunPage', { q: esc(q.trim()) });
+        statut.classList.add('etat-vide');
         sortie.innerHTML = p.map((r, i) => ligne(r, i, 'page')).join('') + suggestions(true);
       } else {
+        statut.classList.remove('etat-vide');
         statut.textContent = approx ? tx('aucunExact') : pluriel(total, T.resultat);
         sortie.innerHTML = res.map((r, i) => ligne(r, i, 'page')).join('');
         // Premier affichage : les rangées arrivent l'une après l'autre (une fois, pas à chaque frappe).
