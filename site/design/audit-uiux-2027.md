@@ -8,7 +8,7 @@ Passe du skill `design-ui` sur le site de la branche `feat/site-dictionnaire`, a
 - **Pile** : générateur statique Node (`build.mjs`, `lib/templates.mjs`), HTML, CSS et deux scripts sans framework. Pas de React, pas de shadcn ajouté ; shadcn sert seulement de référence pour les états.
 - **Genre** : retouche d'un site déjà construit, sur toutes ses pages types.
 - **Mode** : Lire (le visiteur cherche un mot et comprend sa définition) ; Opérer pour la recherche.
-- **Contenu** : définitions de 1 ligne (`/crypter/`) à environ 5 000 px de texte (`/signature-de-lamport/`) ; lettre B de 338 mots ; partie technique de 1 060 mots et 37 catégories ; chronologie de 160 dates ; 214 BIP.
+- **Contenu** : définitions de 1 ligne (`/crypter/`) à environ 5 000 px de texte (`/signature-de-lamport/`) ; lettre B de 338 mots ; partie technique de 1 060 mots et 33 catégories ; chronologie de 160 dates ; 214 BIP.
 
 ## Méthode
 
@@ -38,7 +38,7 @@ Phase 1 : gêne l'usage. Phase 2 : sous le niveau voulu. Phase 3 : finition.
 | 1440 et 390 | Mots-repères (précédent, lettre, suivant) petits et aux deux bords, en double des cartes du bas. | — | Laissé : ce sont les mots-repères du livre (section 8 de la direction) ; leurs zones tactiles font 44 px (vérifié). |
 | 1440 | Fiche BIP : statuts en anglais (« Deployed »). | — | Laissé : choix écrit en section 19 (« les statuts gardent le vocabulaire anglais des BIP »). |
 | 390 | Définition courte (`/crypter/`) au corps de l'énoncé, plus grand que les autres. | — | Laissé : choix de la section 19 (moins de 360 caractères sans schéma). |
-| 1440 et 390 | Chronologie : « 1er mai 2021 » sans « er » en exposant. | 3 | Reste à faire : `dateLisible` sert aussi en texte brut (titres, JSON-LD) ; à traiter avec un rendu HTML à part. |
+| 1440 et 390 | Chronologie : « 1er mai 2021 » sans « er » en exposant. | 3 | **Corrigé** (décision de Loïc) : rendu à part, `exposants` dans `lib/typo.mjs`, appliqué au texte du `<main>` des pages françaises. « 1er », « 1re », « 2e », « 100 000e » et « XVIIIe siècle » passent en exposant ; le code, les formules, les scripts et les attributs n'y passent pas ; titres, balises meta, JSON-LD, index de recherche et cartes d'aperçu (attribut `data-apercu`) gardent le texte brut. |
 
 ### Recherche (page et fenêtre)
 
@@ -66,9 +66,8 @@ Phase 1 : gêne l'usage. Phase 2 : sous le niveau voulu. Phase 3 : finition.
 
 | Largeur | Constat | Phase | Suite |
 | --- | --- | --- | --- |
-| 1440 | Les 37 catégories forment sept rangées de pastilles aux bords irréguliers, effectif collé au nom : on ne parcourt pas la liste d'un coup d'œil. | 1 | **Corrigé** : colonnes égales (4 à 1 440 px, 260 px au moins chacune), effectif aligné à droite en chiffres tabulaires ; aucun nom ne passe sur deux lignes. |
-| 390 | Les mêmes 37 pastilles occupent environ 1 800 px avant le premier mot. | 1 | **Corrigé** : règle des rangées de la section 19, une ligne qui défile bord à bord ; le premier mot arrive au premier écran. |
-| 390 | Page de 124 653 px (1 060 mots). | — | Laissé : le bouton « ↑ » des listes et les en-têtes collants existent ; découper la page changerait les adresses. |
+| 1440 | Les 33 catégories forment sept rangées de pastilles aux bords irréguliers, effectif collé au nom : on ne parcourt pas la liste d'un coup d'œil. | 1 | **Corrigé** : d'abord en colonnes égales (commit `2d4200bb`), puis remplacé par l'index ci-dessous. |
+| 390 | Les mêmes pastilles occupent environ 1 800 px avant le premier mot ; page de 124 653 px (1 060 mots, tous les mots de la partie). | 1 | **Corrigé** (décision de Loïc) : la page d'une partie devient l'index de ses catégories (le composant `.index` de l'accueil : pictogramme, nom, effectif), chacune menant à sa page `/categorie/<slug>/`, qui existait déjà avec toutes ses définitions. La page technique passe de 46 020 à 1 403 px à 1 440, et de 124 653 à 2 391 px à 390 ; de même en anglais et pour les deux autres parties. |
 
 ### Chronologie
 
@@ -96,10 +95,16 @@ Phase 1 : gêne l'usage. Phase 2 : sous le niveau voulu. Phase 3 : finition.
 | 390 | « EN » et le menu sans boîte, la loupe encadrée. | — | Laissé : zones de 44 px vérifiées ; la loupe encadrée est le seul champ de la barre. |
 | 1440 | Lettres du pied centrées dans leur case, donc 46 px à droite de la marge. | 3 | Laissé : la case entière est la cible et se remplit au survol. |
 
+## Adresses après l'index des parties
+
+- Les adresses des parties (`/partie/<id>/`, `/en/part/<id>/`) et des catégories ne changent pas ; seules les ancres des anciennes sections (`/partie/technique/#c-protocole`) disparaissent. Un fragment n'arrive jamais au serveur, donc `_redirects` ne peut pas le rediriger : chaque ligne de l'index garde l'ancre `c-<slug>`, et `static/js/site.js` remplace l'adresse par la page de la catégorie (vérifié : `/partie/technique/#c-protocole` mène à `/categorie/protocole/`, `/en/part/technical/#c-protocole` à `/en/category/protocol/`). Sans script, l'ancre pose la page sur la bonne ligne de l'index.
+- Liens internes : aucun lien du site ne visait ces ancres (seule la page de la partie les produisait). `npm run check` : 0 lien cassé.
+- Sitemap : inchangé, il listait déjà les parties et les 55 catégories.
+- Données structurées : la `CollectionPage` d'une partie liste ses catégories (33 pour la partie technique) au lieu de ses 1 060 mots.
+
 ## Ce qui reste à décider
 
-- « 1er » en exposant dans les dates de la chronologie (rendu HTML distinct du texte brut).
-- La longueur de la page d'une partie au téléphone (1 060 mots sur une page) : la découper par catégorie changerait les adresses.
+Rien pour ces pages.
 
 ## Contrôles après correction
 
